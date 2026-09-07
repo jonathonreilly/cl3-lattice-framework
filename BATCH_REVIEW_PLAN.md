@@ -6,9 +6,10 @@ Independent examination of surviving source claims still precedes landing.
 
 ## Actual backlog
 
-Current refresh: 191 open PRs, zero drafts. Of the original 254, 21 draft PRs
-closed, seven science PRs landed and closed, and 38 duplicates consolidated;
-16 drafts became ready. Three new successors (#8003/#8004/#8005) also opened.
+Current refresh: 191 open PRs, zero drafts. There have been 21 draft closures,
+eight science landings with PR closure, and 38 duplicate consolidations;
+16 drafts became ready. The original 254 PRs gained four new successors
+(#8003/#8004/#8005/#8006); #8003 is included in the eight landed closures.
 The ancestry counts below describe the original snapshot, not this refresh.
 
 The snapshot contains 254 PRs. 129 name another open branch as their GitHub
@@ -46,7 +47,7 @@ This changes the review unit and placement of repeated mechanical work, not
 which scientific claims require scrutiny. The executable seven-file contract has now passed independent adversarial
 review and same-session confirmation after a successive-manifest-conflict
 repair. It landed at `2d0f551dcd8bd444daee85b97811cda53da0661e` and remains
-unchanged in current main `a8f84aaad75fdcb790ba6ba094e4275e237d9a5a`.
+unchanged in current main `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac`.
 
 ## Integration
 
@@ -135,5 +136,11 @@ mechanical PASS tokens and introduces no new scientific status.
 The third combined landing is the 47-path conditional light-germ source unit
 at `16c2d6860e168ec8e5e8f66296410265e5d7226d`. Its eleven constituent PRs were already
 closed as duplicates; the successor remains open for the remaining science.
-Three complete mechanical runs have served three source batches, with zero
+Four complete mechanical runs have served four source batches, with zero
 integration retries and no formal audit.
+
+The fourth landing at `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac` integrates
+corrected #8003. Parent proof context and complete independent source coverage
+were reused only after actual input and current-main preservation checks; the
+coordinator inspected correction and integration changes. No duplicate full
+review or second pipeline was added to the confirmed unit.

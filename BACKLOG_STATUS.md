@@ -6,7 +6,7 @@ them with a concrete disposition. Formal audit is deferred until a solid TOE.
 The coordinator owns GitHub changes and landing; reviewers return evidence.
 
 The original 13:57 UTC routing refresh had 254 open PRs: 217 non-draft and 37 draft.
-The verified post-triage refresh has 191 open PRs and 0 drafts: 66 original PRs closed and three new successors opened.
+The verified post-triage refresh has 191 open PRs and 0 drafts: 66 original PRs and one new successor closed; four new successors opened.
 All 37 original drafts were explicitly in triage scope and are now resolved. Marking ready means reviewable,
 not scientifically accepted. A still-draft PR does not land. The standing
 reservations #6379, #6858 and #6859 are all non-draft and remain in force.
@@ -125,8 +125,8 @@ mutation authority; formal audit remains deferred.
 All 38 further duplicate closures are complete and verified against both the
 parent and successor heads before and after each action. Every original branch
 still exists at its frozen head. The current queue has 191 open PRs and zero
-drafts. Relative to the starting 254: 21 draft closures, seven landed science
-closures and 38 further duplicate consolidations, plus three new PRs; the 16 ready transitions do
+drafts. Relative to the starting 254: 21 draft closures, eight landed science
+closures and 38 further duplicate consolidations, plus four new PRs; the 16 ready transitions do
 not change the open count. The five consolidation successors remain open for their complete
 scientific review; no inherited obligation is discharged by consolidation.
 
@@ -144,15 +144,15 @@ consolidations and #8005 arrival now give 191 open after 66 original closures.
 
 The admissibility reviewer found five P2 groups in #8003: opposite-corner
 law equality, monotone path scope, common-row-sum normalization, an inverted
-class-sufficiency statement and stale live planning. A separate author is
-fixing only that original delta on corrected current main; the same reviewer
-will confirm it. #8004 now has an independent inventory/source review in
+class-sufficiency statement and stale live planning. All five are now fixed
+and confirmed by the same independent reviewer; the corrected source landed
+at `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac` and #8003 is closed. #8004 now has an independent inventory/source review in
 progress with the earlier Record reviewer. The curved reserved-source hold
 remains; no full curved-unit PASS is claimed. Light-germ F1–F8 corrections
 are independently confirmed and landed on main.
 
 See `backlog_evidence/wave2` for the complete landed source map, gate logs'
-hashes and closure receipts. Across three landing batches: three full validation
+hashes and closure receipts. Across four landing batches: four full validation
 runs, zero integration retries, no formal audit or status application.
 The reviewed coordinator-coverage clarification is in `AGENTS.md` and
 `backlog_evidence/coordinator-efficiency`; it preserves all independent review
@@ -210,9 +210,36 @@ paths were preserved externally and stripped; every authored hash and the
 landed tree match the tested candidate. No audit or status application occurred.
 Receipts: `backlog_evidence/wave3`.
 
-Next: #8003's fifteen authored paths are corrected and undergoing original-
-reviewer confirmation on current main; the light-backreaction unit has six
-new notes/runners with only already-reviewed light parents in its screened
-actual import closure; #8004's moved-head source is being rebound and
-reviewed; the Eta pair-process partition is in source/dependency review.
+Next: seven light-backreaction findings are frozen; a separate author is
+repairing them for the original reviewer. The same reviewer is inspecting the
+six-path light-ice unit while fixes proceed. #8004 source
+review continues after explicit moved-head binding. Eta heavy checks are held
+for current-premise reconciliation and historical-authority classification.
 The three reserved PRs and the curved-covariance dependency hold remain.
+
+### Monotone formation source landed — 2026-09-07 16:38 UTC
+
+Commit `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac` lands all fifteen reviewed
+authored paths plus a regenerated manifest (+1 node, +3 edges). Complete
+original/final content and actual input closure were verified. All five existing
+shared source-planning files preserve their complete corrected-main prefixes.
+The original reviewer confirmed all five finding groups; 39 fresh runner checks
+pass, supplemented by independent exact four-corner enumeration and actual
+source/claim mutations. The finite opposite-corner identities survive; exactly
+two distinct laws is scoped to the two executed finite examples. Physical
+formation-law selection remains open.
+
+One combined pipeline, strict lint and changed-evidence run passed; 1,467
+generated paths were preserved externally and stripped. All sixteen final
+hashes were verified on remote main before #8003 closed, with its branch kept.
+Four source batches have landed through four full validation runs and zero
+integration retries. No audit was invoked and no status applied. Exact evidence:
+`backlog_evidence/wave4`.
+
+The live refresh now includes #8006 (`38b5bf39c90576ecd98a0b6c2c2aaf2525839ac0`,
+39 paths), based on the moved #8005 head
+`fb81c52351baea499c81f517a3d32ef8db10d065`. #8005 now uses #8004 head
+`5bd7f234bd185eceaeb36e496a5b6bf4c69a1835`; both successors remain queued,
+without inherited review coverage. The queue remains 191 open and zero drafts:
+254 original + 4 arrivals - 67 total closures. Earlier as-of counts and heads
+above remain historical evidence, not the current inventory.

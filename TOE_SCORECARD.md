@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
 Verified source/status snapshot: 2026-09-07, main
-`16c2d6860e168ec8e5e8f66296410265e5d7226d`. This is a planning map, not
+`e6a50983b4d4b40ff4faf63a6d5edb0545a769ac`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -16,8 +16,8 @@ finite additivity and I(empty)=0. Older proofs requiring those clauses need
 an explicit supplier. README paraphrases and old skills are not substitutes.
 
 The tracked ledger contains 4,475 rows: 4,105 non-meta science rows and 370
-meta rows. The latest eighteen source notes have not been added to the applied
-ledger: mechanical validation generated eighteen unaudited rows locally, then
+meta rows. The latest nineteen source notes have not been added to the applied
+ledger: mechanical validation generated nineteen unaudited rows locally, then
 stripped those generated files. No audit status was applied. Every tracked science row has audit_status and effective_status
 `unaudited`. Counts were computed from every tracked shard; see
 [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
@@ -35,7 +35,7 @@ all source has been reviewed. The campaign record tracks actual inspection.
 
 | Interface | Open evidence to inspect | Exact next question |
 |---|---|---|
-| Local admissibility and formation | #7998/#7999/#8000/#8002 corrected source now on main; new #8003 and campaign formation note | A supplied iid-priority Z3 formation process and static/formation discriminator are now independently checked. Which law/mechanism physics supplies remains open. |
+| Local admissibility and formation | #7998/#7999/#8000/#8002/#8003 corrected source now on main; campaign formation checkpoint remains unlanded | A supplied iid-priority Z3 formation process and static/formation discriminator are now independently checked. Which law/mechanism physics supplies remains open. |
 | Record matter and energy apparatus | #7983/#7996/#8001 reviewed source now on main; campaign finite-patch note remains a checkpoint | Finite-patch approximation now has explicit conditional channel, boundary-energy and cap bounds. Supply spatial battery communication, preparation and autonomous occurrence. |
 | Finite-spin electromagnetic response | #7941/#7943/#7945/#7946/#7952/#7953/#7955, then #7963/#7966; campaign source note | Independent checks confirm a source mismatch. Repair the uniform-K/UK interpretation, define the flux-sector target, then resolve estimator and infrared control. |
 | Conditional Maxwell dynamics | #7976/#7980/#7984 and their source chain | Which dynamics-class, payload, support and conservation clauses are derived, and which supplied? |
@@ -72,5 +72,12 @@ The eleven-note conditional light-germ/local-dynamics unit is now source-reviewe
 and landed at `16c2d6860e168ec8e5e8f66296410265e5d7226d`. Its original constituent sources came
 from eleven already-consolidated PRs; #7937 remains open for its other science.
 The selected action, physical electromagnetic interpretation, matter/gauge speed
-bridge, microscopic readout and time selection remain open. Three source
+bridge, microscopic readout and time selection remain open. Four source
 landing batches passed combined validation with zero integration retries.
+
+The corrected monotone formation result is on current main: opposite corners
+share a law under its stated finite symmetric common-row-sum premises. Exactly
+two distinct laws is established for the two executed finite cases, not every
+nonconstant rule. Light-backreaction review has concrete charged-sign, live-
+current coverage and rotor-limit findings; Eta review is held for premise
+epoch reconciliation. Neither held scope has source PASS.

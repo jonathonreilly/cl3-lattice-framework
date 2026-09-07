@@ -70,3 +70,6 @@ git worktree remove /tmp/ai-exec-wt
 The third reviewed source landing and its exact validation/provenance receipts
 are in [backlog_evidence/wave3](backlog_evidence/wave3). Shared statuses keep
 landed source, pending review and applied audit standing separate.
+
+The fourth reviewed source landing (#8003) and complete source, validation and
+closure receipts are in [backlog_evidence/wave4](backlog_evidence/wave4).

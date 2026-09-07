@@ -11,8 +11,9 @@ Science branch: physics-loop/toe-campaign-20260907, based on main
 unlanded. Separately, reviewed backlog Record/battery science and the revised
 review process landed at `2d0f551dcd8bd444daee85b97811cda53da0661e`; the
 corrected four-note admissibility unit then landed at
-`a8f84aaad75fdcb790ba6ba094e4275e237d9a5a`; the eleven-note conditional light unit now lands at
-current main `16c2d6860e168ec8e5e8f66296410265e5d7226d`.
+`a8f84aaad75fdcb790ba6ba094e4275e237d9a5a`; the eleven-note conditional light unit landed at
+`16c2d6860e168ec8e5e8f66296410265e5d7226d`; corrected monotone formation
+now lands at current main `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac`.
 
 ## Common evidence
 
@@ -27,7 +28,7 @@ current main `16c2d6860e168ec8e5e8f66296410265e5d7226d`.
 
 | Owner | Target | Current evidence/next check |
 |---|---|---|
-| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 38 further duplicates consolidated; three science batches landed; coordinating light-backreaction review, admissibility successor fixes and autonomous Record review; curved dependencies held |
+| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 38 further duplicates consolidated; four source batches landed; coordinating light-backreaction repairs and autonomous Record review; Eta premise and curved dependency holds |
 | Formation author + independent checker | Formation/static interface | Conditional Z3 law constructed with finite ancestry and certified window/correlation bounds; independent static/formation and adaptive-scheduling checks pass |
 | Matter author + independent checker | Native Record shared energy apparatus | Conditional finite-patch instrument proved with volume-uniform channel/full mean-energy error bounds; independent shared-battery/free-dwell calculation passes |
 | Field author + independent checker | Consistent physical field source/response | Source convention mismatch confirmed independently; exact finite invariant, corrected finite curvature and full-flux endpoint theorem packaged and checked |
@@ -72,8 +73,11 @@ question; no blanket disposition of that PR is asserted.
    then land its independently reviewed source unit through one combined gate.
    Both Record/battery (#7983/#7996/#8001) and admissibility
    (#7998/#7999/#8000/#8002) are landed and closed; receipts are in
-   `backlog_evidence/wave1` and `wave2`. Review the new admissibility successor
-   #8003 with existing parent context; five P2 corrections are underway. #8004 is in independent review; #8005 is queued. Preserve the curved
+   `backlog_evidence/wave1` and `wave2`. #8003 is also corrected, independently confirmed, landed and closed; see
+   `backlog_evidence/wave4`. #8004 is in independent review; moved #8005
+   and new #8006 are queued. Hold Eta heavy execution until current-premise
+   reconciliation; repair the light charged-sign, current-test and rotor-limit
+   findings before landing. Preserve the curved
    unit's reserved-source dependency hold while assessing standalone salvage.
 2. Repair the field source interpretation in its coherent PR group before
    spending more computation on a physical UK comparison. Define the actual
