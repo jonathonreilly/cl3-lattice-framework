@@ -1,0 +1,3 @@
+# Exact imported surface
+
+The spatial-mixing parent supplies the open two-slice cube, normalized Haar on 24 temporal-gauge links, ten spatial halfweights and twelve temporal plaquettes, and I*f(Wbottom) with constant spectators. The marked spatial factors are stripped on the full class-function space. Standard finite-dimensional SU3 representation calculus supplies dimensions and tensor character bounds. No observation fixes beta, no fitted action, no dressed source or infinite-volume law is imported. Compact concentration was prior work; the explicit rate, complex character estimate and exact omitted-face word are the new calculation. These premises support a conditional theorem, not axiom-derived Wilson dynamics.

@@ -1,0 +1,3 @@
+# Preserved boundaries
+
+The dimension outer product is a fixed finite-window result; treating it as a bounded rank-one operator on the whole character space is false. The fixed vacuum output norm instead diverges. Removing a cap side changes the action and invalidates missing-face control; the exact altered-model witness is retained. Generic compact Laplace concentration was already known and is not relabeled a new theorem. No beta6 accuracy, monotonicity, high-label uniformity, gap, dressed source, or thermodynamic conclusion follows. These are scoped failed inferences, not a universal negative theorem.

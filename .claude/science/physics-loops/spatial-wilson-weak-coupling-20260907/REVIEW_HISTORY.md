@@ -1,0 +1,3 @@
+# Review chronology
+
+The native author froze DERIVATION with prefix043f68fb before primary independent proof review; immutable originals are in native-originals. INDEPENDENT_REVIEW.md records that review. The noncommutative disk and separate norm corollary remain identifiable supplements. Canonical port changes metadata to conditional-support, adds an explicit body Type and runner/dependency fields, and declares the existing 180-second contract. Mathematical text and original twelve checks are preserved; four adverse checks remain explicitly separate. Root will perform cold port review and repository validation. This file is a retrospective index, not preregistration.
