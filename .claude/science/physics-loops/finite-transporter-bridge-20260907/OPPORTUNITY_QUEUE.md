@@ -1,0 +1,1 @@
+Further finite hardware static-source upper bounds require kinetic-form approximation or an independently constructed finite trial. Repeated-link paths and inputs outside cutoff need separate estimates. No claim of an implemented dilation or state preparation.

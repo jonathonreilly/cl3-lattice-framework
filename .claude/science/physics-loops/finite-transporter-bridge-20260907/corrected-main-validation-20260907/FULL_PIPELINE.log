@@ -1,0 +1,216 @@
+began full build 8ec71311426f
+==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)
+cache rematerialized
+==> 0/18 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)
+  OK   minimal_axioms (docs/MINIMAL_AXIOMS_2026-06-29.md): pure premise content
+  OK   scale_reference_primitive (docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md): pure premise content
+  OK   kinetic_isotropy_primitive (docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md): pure premise content
+  OK   realized_state_primitive (docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md): pure premise content
+==> 0a/18 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)
+audit_model_family_normalization_guard: PASS
+==> 1/18 run_citation_graph_build.py (serialized graph build)
+Waiting for serialized citation-graph build lock /var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/citation-graph-build-f471c760dcaaaf04b9c2.lock
+Wrote docs/audit/data/citation_graph.json
+  nodes: 4824  edges: 12021
+  roots: 1989  leaves: 2118
+  runners attached: 3693
+  claim_type_seed_hint_counts: {'meta': 377, 'bounded_theorem': 2898, 'open_gate': 240, 'no_go': 356, 'positive_theorem': 676, 'none': 274, 'decoration': 3}
+==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)
+Wrote docs/audit/data/citation_graph_manifest.json (4824 nodes, 12021 edges)
+==> 1c/18 compute_load_bearing.py pre-seed topology refresh
+Updated docs/audit/data/audit_ledger.json
+Wrote   docs/audit/data/load_bearing_summary.json
+  thresholds: {'critical_in_degree': 15, 'critical_descendants': 250, 'high_in_degree': 5, 'high_descendants': 100, 'medium_in_degree': 2, 'medium_descendants': 5}
+  criticality (topology-only): {'leaf': 2583, 'critical': 742, 'medium': 1191, 'high': 308}
+==> 2/18 seed_audit_ledger.py
+Wrote docs/audit/data/audit_ledger.json
+  rows: 4538
+  newly seeded: 63
+  preserved (audit kept): 4475
+  migrated path aliases: 0
+  preserved archived failed: 0
+  re-audit required (hash changed): 0
+  dropped (note removed): 0
+  dropped (gated source): 286
+==> 3/18 sanitize_legacy_audit_artifacts.py
+Sanitized docs/audit/data/audit_ledger.json
+==> 5/18 compute_load_bearing.py
+Updated docs/audit/data/audit_ledger.json
+Wrote   docs/audit/data/load_bearing_summary.json
+  thresholds: {'critical_in_degree': 15, 'critical_descendants': 250, 'high_in_degree': 5, 'high_descendants': 100, 'medium_in_degree': 2, 'medium_descendants': 5}
+  criticality (topology-only): {'leaf': 2583, 'critical': 742, 'medium': 1191, 'high': 308}
+==> 3a/18 seed_audit_ledger.py fixed-point receipt
+Wrote docs/audit/data/audit_ledger.json
+  rows: 4538
+  newly seeded: 0
+  preserved (audit kept): 4538
+  migrated path aliases: 0
+  preserved archived failed: 0
+  re-audit required (hash changed): 0
+  dropped (note removed): 0
+  dropped (gated source): 286
+==> 3b/18 static_pipeline_checkpoint.py prepare (fresh graph/seed proof)
+prepared classifier inputs 21a216f3c68f
+==> 4/18 classify_runner_passes.py
+Wrote docs/audit/data/runner_classification.json
+  runners classified: 3483
+  runners with (C) first-principles compute hits: 1847
+  runners with (D) external comparator hits: 1151
+  decoration candidates (no C, no D): 724
+  dominant class distribution: {'B': 630, 'C': 1344, 'A': 543, 'none': 470, 'D': 496}
+==> 4b/18 static_pipeline_checkpoint.py capture (fresh classifier proof)
+captured full-build caches 21a216f3c68f
+==> 6/18 compute_effective_status.py
+Updated docs/audit/data/audit_ledger.json
+Wrote   docs/audit/data/effective_status_summary.json
+  effective_status counts: {'meta': 370, 'unaudited': 4168}
+  retained pending chain: 0
+  cycles detected: 59
+==> 7/18 invalidate_stale_audits.py + restore loop
+invalidate_stale_audits: scanned 4538 rows
+  evidence-universe re-audit targets: 0
+  invalidated (hard reset): 0
+==> 7a/18 compute_load_bearing.py post-status fixed point
+Updated docs/audit/data/audit_ledger.json
+Wrote   docs/audit/data/load_bearing_summary.json
+  thresholds: {'critical_in_degree': 15, 'critical_descendants': 250, 'high_in_degree': 5, 'high_descendants': 100, 'medium_in_degree': 2, 'medium_descendants': 5}
+  criticality (topology-only): {'leaf': 2583, 'critical': 742, 'medium': 1191, 'high': 308}
+==> 7b/18 compute_lane_certification.py post-invalidation fixed point
+lane_certification: charged_lepton_koide_value: 39 blocking (closure 40)
+lane_certification: acphilambda_retirement_basis: 2 blocking (closure 2)
+lane_certification: rule_universality_grain: 18 blocking (closure 19)
+lane_certification: theta_retirement: 714 blocking (closure 717)
+==> 8/18 build_cycle_inventory.py
+Wrote docs/audit/data/cycle_inventory.json
+  cycles: 59
+  by length: {2: 9, 3: 1, 5: 2, 6: 2, 7: 3, 8: 4, 9: 5, 11: 1, 12: 2, 13: 16, 14: 11, 30: 1, 31: 1, 32: 1}
+==> 9/18 compute_audit_queue.py
+Wrote docs/audit/data/audit_queue.json
+Wrote docs/audit/AUDIT_QUEUE.md
+  total pending: 4168
+  ready: 1558
+  by criticality: {'critical': 711, 'high': 295, 'medium': 1053, 'leaf': 2109}
+  cycle break targets: 59
+==> 10/18 compute_reaudit_candidates.py
+Wrote docs/audit/data/reaudit_candidates.json
+  total candidates (dep ratified): 0
+  by criticality: {'critical': 0, 'high': 0, 'medium': 0, 'leaf': 0}
+  runner drift candidates: 0
+  by criticality (runner drift): {'critical': 0, 'high': 0, 'medium': 0, 'leaf': 0}
+  runner stdout transport candidates: 0
+==> 11/18 compute_audit_dispatch_queue.py
+Wrote docs/audit/data/audit_dispatch_queue.json
+Wrote docs/audit/AUDIT_DISPATCH_QUEUE.md
+  live dispatch entries: 12
+  ready dispatch entries: 3
+  resolved (post-manifest re-audit) entries: 0
+  retired dispatch entries: 19
+==> 12/18 compute_auditor_reliability.py
+Wrote docs/audit/data/auditor_reliability.json
+  auditor families observed: 0
+  total audits: 0
+  total third-pass decisions: 0
+  total cross-confirmation pairs: 0
+==> 13/18 audit_lint.py
+audit_lint: 4538 rows checked
+  12 warnings:
+    claim_type_defaulted: 12
+      WARN: ckm_atlas_axiom_closure_note: claim_type silently defaulted to positive_theorem; add an explicit 'Type:' header to docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md, or register the path in docs/audit/data/meta_source_patterns.txt (catalog/index) or docs/audit/data/excluded_source_patterns.txt (non-claim infra)
+      WARN: flavor_carrier_not_derived_two_inputs_2026-05-31: claim_type silently defaulted to positive_theorem; add an explicit 'Type:' header to docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md, or register the path in docs/audit/data/meta_source_patterns.txt (catalog/index) or docs/audit/data/excluded_source_patterns.txt (non-claim infra)
+      WARN: gauge_vacuum_plaquette_constant_lift_obstruction_note: claim_type silently defaulted to positive_theorem; add an explicit 'Type:' header to docs/GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md, or register the path in docs/audit/data/meta_source_patterns.txt (catalog/index) or docs/audit/data/excluded_source_patterns.txt (non-claim infra)
+      ... and 9 more
+  1453 notices:
+    archived_invalid_no_go_packet: 233
+      NOTICE: acphilambda_hw_complementation_equivariance_support_note_2026-06-09: previous_audits[2] invalid no_go_discipline packet: N1 route 2.route_class='alternate_observable_or_readout' is not supported by its evidenced mechanism/attempt/outcome vocabulary
+      NOTICE: acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04: previous_audits[0] invalid no_go_discipline packet: N3.scanned_evidence_paths must be a list of packet paths
+      NOTICE: acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04: previous_audits[0] invalid no_go_discipline packet: N1 route 4.route_class='algebraic_rearrangement' is not supported by its evidenced mechanism/attempt/outcome vocabulary
+      ... and 230 more
+    derivation_obligation_registry_note_divergence_advisory: 6
+      NOTICE: ac_orbit_occupancy_statistical_grain_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md (content-word grounding 0.36 vs 0.18); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]
+      NOTICE: ac_reta_hclass_hunit_readout_derivation_obligation: registry target does not match '## Exact target' in docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md.
+        registry: Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class, identity-read in h-units as the eta angle, with no extra normalization or transport factor.
+        note:     Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class h, identity-read in h-units as the eta angle, with no extra clock-rate, transport, or normalization factor. [advisory: this finding interprets note prose, so it is reported every run and is never an error]
+      NOTICE: ac_reta_hclass_hunit_readout_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md (content-word grounding 0.45 vs 0.27); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]
+      ... and 3 more
+    excluded_path_row_grandfathered: 21
+      NOTICE: ai_methodology.ai_accountability_and_disclosure_note_2026-04-25: docs/ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md matches data/excluded_source_patterns.txt but carries audit history, so history-preserving exclusion keeps it (should_gate_node); retiring it is an owner/audit-lane decision
+      NOTICE: ai_methodology.raw.canonical_framing_paragraph: docs/ai_methodology/raw/canonical_framing_paragraph.md matches data/excluded_source_patterns.txt but carries audit history, so history-preserving exclusion keeps it (should_gate_node); retiring it is an owner/audit-lane decision
+      NOTICE: ai_methodology.raw.prompts_session_04c820e1: docs/ai_methodology/raw/prompts_session_04c820e1.md matches data/excluded_source_patterns.txt but carries audit history, so history-preserving exclusion keeps it (should_gate_node); retiring it is an owner/audit-lane decision
+      ... and 18 more
+    graph_cycles: 1
+      NOTICE: graph contains 59 back-edges (cycles)
+    no_go_clean_verdict_reset_by_packet_gate: 1
+      NOTICE: 157 no_go rows are unaudited today but hold an archived audited_clean reset by a no_go_discipline_packet_* reason; these are re-audit targets, not fresh rows
+    no_go_grade_path_unreached: 1
+      NOTICE: 355 rows carry claim_type no_go and none currently reaches effective_status retained_no_go
+    no_go_legacy_evidence_snapshot: 1
+      NOTICE: 38 no_go rows carry an archived evidence snapshot the current reader cannot authenticate; run no_go_discipline_gate.evidence_snapshot_schema_defect on the archived packet for the specific reason. Their forensic evidence is not restorable in place
+    prose_retained_no_go_attribution: 35
+      NOTICE: docs/ANOMALY_FORCES_TIME_THEOREM.md:113: prose labels 'no_per_site_chirality_theorem_note_2026-05-02' `retained_no_go`, whose live effective_status is 'unaudited'. retained_no_go requires claim_type=no_go, audited_clean, and a current No-Go Discipline packet; state the cited content instead of a grade. Grandfathered in prose_retained_no_go_attribution_baseline.txt; drain by removing the label.
+      NOTICE: docs/BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md:248: prose labels 'gauge_vacuum_plaquette_constant_lift_obstruction_note' `retained_no_go`, whose live effective_status is 'unaudited'. retained_no_go requires claim_type=no_go, audited_clean, and a current No-Go Discipline packet; state the cited content instead of a grade. Grandfathered in prose_retained_no_go_attribution_baseline.txt; drain by removing the label.
+      NOTICE: docs/BETA_EFF_TWO_WITNESS_REFRESH_ASSESSMENT_NOTE_2026-06-12.md:47: prose labels 'gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03' `retained_no_go`, whose live effective_status is 'unaudited'. retained_no_go requires claim_type=no_go, audited_clean, and a current No-Go Discipline packet; state the cited content instead of a grade. Grandfathered in prose_retained_no_go_attribution_baseline.txt; drain by removing the label.
+      ... and 32 more
+    prose_retained_no_go_attribution_baseline_stale: 6
+      NOTICE: docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_source_domain_bridge_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH
+      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH
+      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_exact_readout_map_note_2026-04-19: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH
+      ... and 3 more
+    prose_status_attribution: 542
+      NOTICE: docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md:96: prose labels 'single_axiom_information_note' `retained`, but its live effective_status is 'meta'
+      NOTICE: docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md:154: prose labels 'i3_zero_exact_theorem_note' `retained`, but its live effective_status is 'unaudited'
+      NOTICE: docs/A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md:201: prose labels 'cl3_color_automorphism_theorem' `retained_bounded`, but its live effective_status is 'unaudited'
+      ... and 539 more
+    runner_pin_baseline_stale: 207
+      NOTICE: action_power_note: runner_pin_baseline.json entry has drained (row is now pinned or reset); drop it so the recorded debt keeps shrinking
+      NOTICE: action_power_scaling_sweep_note: runner_pin_baseline.json entry has drained (row is now pinned or reset); drop it so the recorded debt keeps shrinking
+      NOTICE: alpha_lm_geometric_mean_identity_theorem_note_2026-04-24: runner_pin_baseline.json entry has drained (row is now pinned or reset); drop it so the recorded debt keeps shrinking
+      ... and 204 more
+    unregistered_runner_bearing_note: 104
+      NOTICE: docs/ai_methodology/METHODOLOGY_CASE_STUDIES_2026-04-25.md: names runner(s) ['scripts/verify_cl3_sm_embedding.py'] but matches data/excluded_source_patterns.txt, so seeding creates no ledger row; grandfathered in unregistered_runner_bearing_note_baseline.txt and drainable by moving the note onto an auditable path
+      NOTICE: docs/ai_methodology/skills/physics-loop/references/long-running-execution.md: names runner(s) ['scripts/automation_lock.py'] but matches data/excluded_source_patterns.txt, so seeding creates no ledger row; grandfathered in unregistered_runner_bearing_note_baseline.txt and drainable by moving the note onto an auditable path
+      NOTICE: docs/ai_methodology/skills/review-loop/SKILL.md: names runner(s) ['scripts/vocab_lint.py'] but matches data/excluded_source_patterns.txt, so seeding creates no ledger row; grandfathered in unregistered_runner_bearing_note_baseline.txt and drainable by moving the note onto an auditable path
+      ... and 101 more
+    unregistered_runner_bearing_note_baseline_stale: 289
+      NOTICE: docs/BRANCH_SUMMARY_DISTRACTED_NAPIER.md: listed in unregistered_runner_bearing_note_baseline.txt but no longer an unregistered runner-bearing note; prune the baseline entry
+      NOTICE: docs/PHYSICS_CRITIC_TRACKER.md: listed in unregistered_runner_bearing_note_baseline.txt but no longer an unregistered runner-bearing note; prune the baseline entry
+      NOTICE: docs/SESSION_SUMMARY_2026-04-04.md: listed in unregistered_runner_bearing_note_baseline.txt but no longer an unregistered runner-bearing note; prune the baseline entry
+      ... and 286 more
+    unregistered_runner_bearing_note_unbaselined: 6
+      NOTICE: docs/ai_methodology/skills/audit-loop/SKILL.md: names runner(s) ['scripts/codex_audit_runner.py', 'scripts/runner_cache.py'] but matches data/excluded_source_patterns.txt, so seed_audit_ledger.should_gate_node drops it and the result can never acquire a claim id, note hash, runner pin, queue entry, or verdict. Not in unregistered_runner_bearing_note_baseline.txt, so it postdates the rule. Move the note onto an auditable docs/ path, or register the exact path in docs/audit/data/never_gate_source_paths.txt, or drop the runner reference if the note is narrative only.
+      NOTICE: docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md: names runner(s) ['scripts/sync_methodology_skills.py'] but matches data/excluded_source_patterns.txt, so seed_audit_ledger.should_gate_node drops it and the result can never acquire a claim id, note hash, runner pin, queue entry, or verdict. Not in unregistered_runner_bearing_note_baseline.txt, so it postdates the rule. Move the note onto an auditable docs/ path, or register the exact path in docs/audit/data/never_gate_source_paths.txt, or drop the runner reference if the note is narrative only.
+      NOTICE: docs/repo/SCIENCE_CENSUS_FULL_HISTORY_2026-08-05.md: names runner(s) ['scripts/census_index_rebuild_2026_08_05.py'] but matches data/excluded_source_patterns.txt, so seed_audit_ledger.should_gate_node drops it and the result can never acquire a claim id, note hash, runner pin, queue entry, or verdict. Not in unregistered_runner_bearing_note_baseline.txt, so it postdates the rule. Move the note onto an auditable docs/ path, or register the exact path in docs/audit/data/never_gate_source_paths.txt, or drop the runner reference if the note is narrative only.
+      ... and 3 more
+  OK: no errors
+==> 14/18 render_audit_ledger.py
+Wrote docs/audit/AUDIT_LEDGER.md
+==> 15/18 render_publication_effective_status.py
+publication package deferred (archive/publication/ci3_z3); nothing to render
+==> 16/18 compute_dispatch_shadow.py (shadow lane + churn state; no dispatch effect)
+dispatch shadow: lane=25 gap_available=True manifest=ok prior_state=True
+==> 17/18 render_front_door_status.py
+Wrote docs/repo/FRONT_DOOR_STATUS.md
+Wrote docs/repo/RETAINED_BACKBONE.md
+==> 18/18 repo_invariants_check.py (authority-link guard)
+INFO: attested 0 seed-pruned tracked ledger shards from the captured full-build checkpoint
+PASS rows=4475 retained_grade=0 link_violations=0 class_f_violations=0 graph_delta=acknowledged (enforced)
+==> 18a/18 generate_skill_axiom_baselines.py --check (skill axiom-baseline guard)
+  OK   docs/ai_methodology/skills/physics-loop/SKILL.md: axiom-baseline block in sync
+  OK   docs/ai_methodology/skills/review-loop/SKILL.md: axiom-baseline block in sync
+  OK   docs/ai_methodology/skills/audit-loop/SKILL.md: axiom-baseline block in sync
+  OK   docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md: axiom-baseline block in sync
+  OK   docs/audit/data/skill_axiom_baseline_manifest.json: source acknowledgment current
+==> 18b/18 check_review_loop_skill_contract.py (review quality/safety guard)
+check_review_loop_skill_contract: OK (29 families)
+==> 18c/18 static_pipeline_checkpoint.py finalize (successful full-build checkpoint)
+finalized full checkpoint 21a216f3c68f
+
+Pipeline complete.
+  Read docs/audit/AUDIT_LEDGER.md for the rendered ledger.
+  Read docs/audit/AUDIT_QUEUE.md   for the next-up audit queue.
+  Read docs/repo/FRONT_DOOR_STATUS.md for the front-door status snapshot.
+  Read docs/audit/data/reaudit_candidates.json for unblocked re-audit candidates.
+  Read docs/audit/AUDIT_DISPATCH_QUEUE.md for dispatcher-only targeted re-audits.
+  Read docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md for the
+    audit-vs-publication-tables gap report.
+  Read docs/publication/ci3_z3/<NAME>_EFFECTIVE_STATUS.md for the audit-
+    derived view of each publication table.

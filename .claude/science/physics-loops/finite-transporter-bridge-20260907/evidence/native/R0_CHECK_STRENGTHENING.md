@@ -1,0 +1,2 @@
+# Check-strengthening history
+The first R0 finite control tested the supplied scalar zero against itself. It was not a meaningful independent matrix operation. Before exposing this run as final evidence, replace it with the literal vacuum-color block Pv U Pv of the constructed57 matrix. Original source/raw are preserved; geometry, coefficients,17 count and all scientific outputs remain unchanged. The analytic Haar first-moment identity is still an input, not proved by either check.

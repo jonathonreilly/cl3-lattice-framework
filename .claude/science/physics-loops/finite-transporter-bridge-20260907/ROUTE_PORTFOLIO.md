@@ -1,0 +1,1 @@
+Cartan trace-square closes the finite exact-unitarity boundary. Actual highest-weight shell vector proves sharp defect. Fundamental/conjugate fusion proves interior exactness. Distinct-link projection union bound gives total-energy error without an unnecessary extra path-length factor.
