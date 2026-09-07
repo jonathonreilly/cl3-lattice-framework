@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_wilson_perron_correction_negative_sign_check_2026_09_07.py
+runner_sha256: d046ca8f4c322cb46f2dab1009640956eb62bdfe31e6df93437b0486e1457a84
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS exact native Wilson Perron negative-sign arithmetic certificate
+RESULT {"absolute_upper_bound": "-1/216", "assertion_count": 14, "checks": ["low radial integral ceiling squared", "sqrt6 ceiling squared", "sqrt3 ceiling squared", "positive Taylor lower bound exp6", "high polynomial moment", "high radial ceiling", "weighted trace ceiling", "Perron moment upper bound", "absolute insertion upper bound", "pointwise polynomial minimum", "radial H normalization rational factor", "heat trial quotient rational factor", "middle interval low endpoint negative", "middle interval high endpoint negative"], "exp6_partial_sum": "353291401/875875", "relative_lower_bound": "-49/16", "relative_upper_bound": "-9/16", "resources": {"rss_limit_MiB": 180, "timeout_seconds": 180}, "rss_MiB": 20.140625, "runtime_input_files": [], "scope": "Exact scalar arithmetic supporting the analytical positive-operator/heat-kernel proof; no floating Perron data used", "seconds": 0.006149416993139312, "source_sha256": "d046ca8f4c322cb46f2dab1009640956eb62bdfe31e6df93437b0486e1457a84"}
+per_element: exact rational bounds and positive exponential-series lower bound checked.
+per_site: chamber radial normalization and nonempty positive/negative multiplier regions are analytical source premises.
+per_mode: actual normalized Perron correction bounded; no fitted eigenvector or eigenvalue input.
+per_block: bounded multiplier truncation, positive-operator trace and Rayleigh trial are proved in the source, not numerically inferred.
+lattice_wide: checked and not executed -- no explicit finite-beta onset, excited/ground ratio sign or physical mass-gap claim.
+TOTAL: PASS FAIL=0 ASSERTIONS=14
+
+----- stderr -----
+
