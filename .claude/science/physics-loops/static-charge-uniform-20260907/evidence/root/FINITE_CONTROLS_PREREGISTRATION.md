@@ -1,0 +1,5 @@
+# Root38 prospective exact SU3 and dressing controls
+
+Proof e6b48a8f froze before controls. Construct all8 Hermitian traceless Gell-Mann generators normalized by Tr(TA TB)=deltaAB. On an actual finite path-product frame with rational SU3 matrices check left and inverse-link derivative insertions, each trace cross term zero and summed normalized derivative norm8/3, hence energy4/a for a=1. Include the identity-generator U1 adverse case with nonzero trace cross term; this distinguishes why the color-trace argument is special to the supplied SU3 carrier.
+
+Independently check finite creation operators and ghost projection commutation on a two-bit actual/ghost toy carrier, and a two-site U1 charge toy: invariant creation coefficient commutes with the charge, while a charged coefficient does not. These are adverse controls for necessary algebra, not substitutes for the imported infinite-dimensional operator/domain theorem. Preserve all failed attempts, named checks and resources. Native independently owns source-threshold/ghost-graph/resolvent controls, avoiding duplicated matrix fixtures.

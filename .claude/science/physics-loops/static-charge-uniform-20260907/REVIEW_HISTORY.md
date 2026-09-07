@@ -1,0 +1,2 @@
+# History
+Original prospective contract preceded source reading/proof work. Ghost/upper candidates arrived later; their analytic timing is honestly recorded, with no retrospective preregistration claim. Both full derivations froze before cross-reading, then mutual and third reviews passed. New finite control contract preceded computation. Port changes only interface/resources/metadata; all scientific fields match the frozen raw outputs.

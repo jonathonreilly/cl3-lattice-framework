@@ -1,0 +1,9 @@
+# Root prospective hard static-charge uniform bound, block38
+
+2026-09-07 about20:48UTC. Root and native independently investigate a new use of the explicitly imported dressed-coordinate estimate in Yarotsky0411042 Section2 eq8–15. The global spectral inclusion cannot simply be relabeled as a charge-sector theorem. Need derive equivariant ground dressing, charged coefficient-space invariant decomposition, uniform l1 relative estimate with finite9-dimensional source tensor amplification, and a sector-restricted resolvent exclusion below a multiple of the free charged minimum.
+
+Use scaled onsite h_x=(a/4)Kcell uniquevacuumgap1 and grouped plaquette normepsilon<=3av/4. Ground dressing S=exp(sum vhat_I) from neutral full-link ground may commute with every gauge transformation because each cell vacuum/excitation projection and unique ground are invariant, though S is not unitary. Extend S trivially over fixed endpoint source dimension9. Coordinate norms sum_I ||u_I||; a componentwise source extension may cost sqrt9=3 or at worst9, independent of volume/separation. Do not assume complete boundedness for free.
+
+If exact charged free minimum isL=ManhattanDistance in scaled units, same restricted resolvent estimate could yield E_xy-E_vac >=(4/a)(1-Cepsilon)L, hence >=2L/a at sufficiently small suppliedav. Must establish domain preservation for S, coefficient projection onto source singlets/isotypic subspace, correct energy subtraction and finite ordinary boundary completion without allowing ghost shortcuts. Infinite-volume potential existence and temporal Wilson relation are separate and should remain open unless actually proved.
+
+This is a prospective candidate, not a conclusion. Root36 and primary37 conclusions are not substitute evidence for the sector similarity argument. Explicit imported general theorem and additional static sources preclude claiming native TOE confinement.
