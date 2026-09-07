@@ -1,0 +1,5 @@
+# Separate block23: first odd correction of the actual cube marginal
+
+Frozen before derivation/computation on 2026-09-07. Keep the exact 32-link, 22-face SU(3) cube, weights, adapted literal two-source chord tree, and beta scaling from frozen structural proof 86be606d. No fixture change. Investigate whether the beta^-1/2 coefficient of its normalized two-source marginal vanishes, and whether the existing qualitative dilated Hilbert-Schmidt convergence improves to O(beta^-1) with an unspecified finite constant.
+
+Proposed mechanism to test, not assumed: the cubic action is made solely of invariant alternating Lie-bracket tensors; conditional nuisance Gaussian means span the two source color vectors, and color covariances are scalar delta tensors. Haar has no linear term. Falsifiers include a symmetric d-tensor cubic in the real Wilson action, nonlinear source-coordinate contributions, a nonzero conditional cubic expectation, or lack of a uniform weighted Taylor remainder. Preserve current theorem unchanged. No explicit finite-beta onset, coefficient sign, numerical fit, physical beta selection or all-source-count extension.

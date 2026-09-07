@@ -1,0 +1,3 @@
+# Route portfolio
+
+The selected route is exact conditional Gaussian cubic cancellation in the actual adapted two-source Wilson cube, followed by a uniform weighted Taylor remainder. Alternatives explicitly excluded are cancellation inferred only after integrating sources, replacing ordered Wilson factors by commuting scalars, and promoting weak convergence alone to a kernel norm bound. The preserved proof implements the selected route. Later coefficient and anisotropic routes are separate blocks, not additions here. This index is assembled after proof review and is not a new prospective declaration.

@@ -1,0 +1,5 @@
+# Block23 package
+
+The canonical source, exact SU(3) tensor helper, raw result, primary hash-specific review and port receipt are retained here. Original DERIVATION.md, original preregistration and certificate preregistration remain above this directory. No unchanged structural helper was rerun for this package.
+
+N1: Positive conditional asymptotic theorem; no universal no-go quota asserted. N2: Exact supplied cube/action and bare-Haar embedding imported explicitly. N3: Original and certificate preregistrations retained. N4: Finite tensor checks separated from analytic weighted bounds. N5: No finite-beta onset or physical coupling claim; the three-source adverse case prevents extending the two-source cancellation indiscriminately. N6: Independent primary review retained. N7: Frozen5df246ae proof unchanged; only chart clarification added in canonical port. N8: Dependencies run from structural and exact Gaussian parents to this source, with no reverse import or fabricated runtime dependency.

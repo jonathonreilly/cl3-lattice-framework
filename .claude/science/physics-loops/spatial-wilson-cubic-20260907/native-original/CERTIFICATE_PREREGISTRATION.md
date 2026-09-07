@@ -1,0 +1,3 @@
+# Canonical tensor certificate preregistration
+
+Before execution: use the trace-orthonormal eight Gell-Mann matrices. Compute the commutator f tensor exactly. Check trace orthonormality, f norm48, full antisymmetry, cubic real-Wilson identity, conditional mean cancellation for three arbitrary linear combinations of two symbolic eight-component vectors, zero-source and one-source cases, all three color-isotropic covariance contractions, and the adverse three-source case T1,T2,T3 with nonzero f. This certifies the actual SU(3) tensor and two-source algebra, not the nonlinear saddle bounds or actual cube geometry. Keep180seconds/180MiB, strictJSON and explicit check counts; no runtime file dependencies.

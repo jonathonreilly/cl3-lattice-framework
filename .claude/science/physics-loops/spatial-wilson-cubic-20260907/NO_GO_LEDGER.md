@@ -1,0 +1,3 @@
+# No-go and adverse memory
+
+This positive conditional theorem does not constitute a universal no-go. The actual SU3 three-source countercase is nonzero; two-source cancellation cannot simply be extended to arbitrary source count. Probability-tail smallness alone does not prove an L2 kernel bound, so the source explicitly prices nuisance fiber tails. A zero ground expectation alone would not prove whole-kernel cancellation; the source proves the latter identically for each fixed source pair. Heavy negative packet remains NOT PASS. See FAILURES.md for interface corrections and preserved originals.
