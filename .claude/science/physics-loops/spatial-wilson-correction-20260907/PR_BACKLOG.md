@@ -1,3 +1,3 @@
-# Publication plan
+# Draft publication
 
-Draft PR will be stacked on codex/spatial-wilson-cubic-block23-20260907 / PR8017 after validation. Publication has not yet been attempted; append exact errors/recovery commands here only if an attempt fails. No merge is authorized by this block.
+Published https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8018 stacked on PR8017. Verified open/draft and expected base. No publication backlog remains. No merge or audit verdict is assigned.

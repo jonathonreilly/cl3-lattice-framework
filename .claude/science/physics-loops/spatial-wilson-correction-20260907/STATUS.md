@@ -1,3 +1,3 @@
 # Status
 
-Reviewed source is byte-identical to frozen9aeeb4d5. Final runner deltas add only readable resource-contract lines, with scientific AST and JSON branches unchanged. Both required actual stdout caches have executed and are explicitly staged. The claim-local builder change preserves every other normalized AST node. Root final frozen-port review passed. Graph and full validation are now running; completion, commit and publication are not yet claimed.
+Full pipeline730741eaf1a2, strict lint and six cumulative readiness rows pass against b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92. Scientific commit65027efae4; draft PR8018 stacked on8017. Source and both runners remain frozen. Canonical caches and original evidence preserved. No audit verdict or merge performed.

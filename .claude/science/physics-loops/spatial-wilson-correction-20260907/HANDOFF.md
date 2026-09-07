@@ -7,3 +7,7 @@ Root should review the frozen integration before graph. After PASS run graph/man
 ## Completed root validation
 
 Root final port review and pipeline 730741eaf1a2, strict lint and 6-claim readiness passed against b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92. See FINAL_VALIDATION.md and the pre-cleanup receipts. Actual stdout caches are staged. Review publication is the next action; no science merge or audit verdict is performed.
+
+## Draft published
+
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8018 is open/draft stacked on PR8017. Scientific commit65027efae4 has full validation and a clean post-cleanup tree. Continue independent review; no merge is performed.
