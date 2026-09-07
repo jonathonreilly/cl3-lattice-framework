@@ -1,0 +1,1 @@
+The model and uniform weak-ground theorem are upstream. No new external theorem is needed for this local finite-dimensional Rayleigh argument. Quantum-link covariance distinction remains as documented in41.

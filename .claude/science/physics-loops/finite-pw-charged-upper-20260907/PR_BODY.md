@@ -1,0 +1,11 @@
+This block repairs the energy-form gap left by finite-transporter norm estimates. For the actual finite Peter–Weyl Hamiltonian and its full tensor-carrier neutral ground, a compressed distinct-link charged-path trial obeys an ambient-volume-independent energy upper bound. At each fixed path the bound approaches the full-unitary trial cost 4d/a as the cutoff grows, subject to a nonzero acceptance budget.
+
+The derivative and local commutator estimates are explicit. The result does not identify that trial cost with an exact charged spectral minimum, add a confinement lower bound, prove convergence of finite charged minima, or provide deterministic nonunitary preparation. The full-carrier ground premise is essential and is not replaced by minimization only in a constrained sector.
+
+Live canonical caches contain 40 support controls and 22 actual R=1 Haar controls, with the latter registered in both graph and diagnostic packet consumers. The fixed single-plaquette trial exceeds four at a=1, so naive transfer of the exact full-unitary identity fails. The sharper local-energy estimate succeeds while the optional crude sufficient budget fails. These outcomes and the corrected generator convention are preserved without retuning.
+
+Stacked on #8031. [Theorem](docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md), [support runner](scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py), [actual R1 runner](scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py), [handoff](.claude/science/physics-loops/finite-pw-charged-upper-20260907/HANDOFF.md), [trace](.claude/science/physics-loops/finite-pw-charged-upper-20260907/TRACE_GATE.md), [imports](.claude/science/physics-loops/finite-pw-charged-upper-20260907/ASSUMPTIONS_AND_IMPORTS.md), [validation](.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_VALIDATION.md).
+
+Full pipeline c2e688342131 and strict lint passed; all 19 affected readiness rows passed with zero failures against corrected main7887b4481feae2800c04c7c42ddac9554f2c2b9f. No main sync during validation. Conditional-support only; no merge or audit verdict.
+
+Completed parent delivery metadata was incorporated after validation, with all canonical docs, scripts, registries and caches byte-identical.

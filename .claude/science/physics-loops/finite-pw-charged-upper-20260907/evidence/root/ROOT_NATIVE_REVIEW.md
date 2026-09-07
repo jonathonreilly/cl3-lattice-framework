@@ -1,0 +1,7 @@
+# Root cold review of native42
+
+PASS for55f5a4e94d945cc30ad2d00718378e0f92559106bd94039c40cbfc55dc59955d. Read the complete proof after freezing root's own full derivation. Shared candidate exposure preceded both writeups; native and primary independently caught root's displayed generator-normalization inconsistency, now preserved and corrected separately.
+
+The full-carrier minimization premise is used precisely where needed for the mixed replacement trial. Scalar source-color normalization is consistent. The kinetic error estimate pairs discarded amplitude with an explicitly controlled derivative norm, so it does not repeat the invalid inference from norm convergence to unbounded energy. Far-face commutators vanish by actual tensor support. The touching-face leakage annihilation follows from complete fundamental/antifundamental fusion on each of four links. The vacuum energy is subtracted before bounds, avoiding ambient-volume normalization terms. The explicit dimensionless formula agrees with root's dimensional version, including the requirement theta<1 and the distinction between fixed path and distance growing at fixed cutoff.
+
+No new lower confinement theorem, generic hardware compiler, arbitrary constrained-ground replacement, or axiom-selected dynamics is claimed. The result is a valid conditional finite-PW energy-form bridge, with its numerical sufficient constants deliberately conservative.

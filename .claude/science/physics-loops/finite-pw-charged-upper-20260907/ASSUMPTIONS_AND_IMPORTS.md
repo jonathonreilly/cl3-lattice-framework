@@ -1,0 +1,1 @@
+Actual compact SU3 Hamiltonian, complete-irrep cutoffR>=1, a>0,v>=0, at most4faces/link, distinct-link path and full tensor-carrier neutral physical ground.34 supplies that ground in a uniform small-av regime.41 supplies exact shell leakage. Mixed replacement uses full-carrier minimality. No prescribed weak threshold or compiler is derived.

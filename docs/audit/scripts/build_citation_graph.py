@@ -151,6 +151,7 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": ["scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"],
     "gauge_wilson_uniform_weak_continuum_correlation_boundary_bounded_theorem_note_2026-09-07": [
         "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
     ],

@@ -1,0 +1,1 @@
+Full-ground mixed replacement supplies local8v budget. Exact charged Rayleigh commutator subtracts neutral energy before bounds. Row-Casimir estimate repairs kinetic form control; actual face fusion and disjoint support remove volume-sized magnetic terms.

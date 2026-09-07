@@ -1,0 +1,1 @@
+Conditional-support finite-cutoff upper-energy theorem. Explicit denominator requiresEpath/eR<1. Fixed-path cutoff convergence is uniform ambient volume. No charged lower-bound or infinite-volume-minimum claim.
