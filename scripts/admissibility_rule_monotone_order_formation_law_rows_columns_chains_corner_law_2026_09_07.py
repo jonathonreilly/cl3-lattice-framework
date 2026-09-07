@@ -497,7 +497,7 @@ def family_b(checks: Checks, report: dict) -> None:
         laws_ok = laws_ok and all(l == laws[0] for l in laws)
         one_law[tr] = laws[0]
     report["muP_2x3"] = one_law
-    checks.check("B3", laws_ok, "P1 executed: the 5 extensions of 2x3 give one formation law on all 46656 configurations at both declared triples")
+    checks.check("B3", laws_ok, "P1 executed: the 5 extensions of 2x3 give one formation law on all 46656 configurations at both triples")
     other_ok = True
     for kind, phi in (("sum", phi_table((3, 1, 2))), ("product", phi_asymmetric())):
         r = rule_function(kind, phi)
@@ -532,7 +532,7 @@ def family_c(checks: Checks, report: dict) -> None:
                 for s in range(M):
                     rhs = ker.K[a][s] * ker.K[s][b] / (ker.K2[a][a] if mut("bridge_identity_broken") else ker.K2[a][b])
                     ok = ok and r(s, (a, b)) == rhs
-    checks.check("C1", ok, "P2: r(s | a, b) = K(a->s) K(s->b) / K^2(a, b) on all 216 triples at (3,1,2) and (5,2,4)")
+    checks.check("C1", ok, "P2: r(s | a, b) = K(a->s) K(s->b)/K^2(a, b) on all 216 triples at both declared triples")
     ra = rule_function("product", phi_asymmetric())
     sym = all(ra(s, (a, b)) == ra((s + 1) % M if mut("asymmetric_bridge_symmetry_forged") else s, (b, a)) for a in range(M) for b in range(M) for s in range(M))
     checks.check("C2", sym, "r(s | a, b) = r(s | b, a) by the product form alone: executed on 216 triples for the asymmetric phi")
@@ -652,10 +652,10 @@ def family_d(checks: Checks, report: dict, exact: bool) -> None:
             diag_ok = diag_ok and any(ker.K2[a][b] != ker.K[a][b] for a in range(M) for b in range(M))
     orth_note = "K^2 = K on the orthogonal orbit iff p + q = 2r: true at (3,1,2), false at (5,2,4)"
     orth_ok = Kernels(phi_table((3, 1, 2))).K2[0][2] == Kernels(phi_table((3, 1, 2))).K[0][2] and Kernels(phi_table((5, 2, 4))).K2[0][2] != Kernels(phi_table((5, 2, 4))).K[0][2]
-    checks.check("D6", diag_ok and orth_ok, f"E4 recovered from pi: the diagonal pair (a, b) has the law (1/6) K^2(a, b), a different law from (1/6) K ({orth_note})")
+    checks.check("D6", diag_ok and orth_ok, f"E4 from pi: the diagonal pair (a, b) has the law (1/6) K^2(a, b), a different law from (1/6) K ({orth_note})")
     ker, p0, P, cols, _, _ = data[((3, 1, 2), 3)]
     alt = n_row_marginal(p0, [P, P], 3, [(0, 1), (1, 1), (2, 1)])
-    checks.check("D7", alt == cols[1], "the column-projected row transfer (carried values) and the middle-row contraction agree on column 1 of 3x3")
+    checks.check("D7", alt == cols[1], "the carried-value row transfer and the middle-row contraction agree on column 1 of 3x3")
     if exact:
         for (tr, W), (ker, _, _, _, _, _) in data.items():
             print(f"exact K at {tr}: rows " + "; ".join(" ".join(str(ker.K[a][b]) for b in range(M)) for a in range(M)) + f"; K^2 numerators over {ker.Z1 ** 2}: par {ker.K2n[0][0]} anti {ker.K2n[0][1]} orth {ker.K2n[0][2]}")
@@ -708,7 +708,7 @@ def family_e(checks: Checks, report: dict, exact: bool) -> None:
     report["staircase_defects"] = defects
     fail_ok = all((d == 0) if mut("staircase_claimed_chain") else (d > 0) for d in defects.values())
     checks.check("E2", fail_ok, "P6 executed: all six staircases of 3x3 have a positive total-variation defect from the K-chain at both triples")
-    checks.check("E3", pairs_ok, "the premise of P6: along every staircase every consecutive pair has the law (1/6) K and every site marginal is uniform (a chain along it would have kernel K)")
+    checks.check("E3", pairs_ok, "the premise of P6: along every staircase every consecutive pair has the law (1/6) K and every site marginal is uniform")
     muP = report["muP_2x3"][(3, 1, 2)]
     lawM = formation_law(2, 3, mirror_order(2, 3), rule_function("product", ker.phi))
     diff = sum(1 for k in muP if muP[k] != lawM[k])
@@ -746,15 +746,15 @@ def family_e(checks: Checks, report: dict, exact: bool) -> None:
         snake_data[tr] = (kr, {j: tv(cols3[j], kr.chain) for j in range(3)}, {j: tv(cols4[j], kr.chain) for j in range(3)}, vert)
     report["snake"] = snake_data
     checks.check("E5", inv_ok, "P7(b): the reversed row kernel P_rl is row-stochastic and p_0 P_rl = p_0 on all 216 row states at both triples")
-    checks.check("E6", snake_def_ok, "the snake's law on 2x3 from block 01's definition equals p_0(row 0) P_rl(row 0 -> row 1) entrywise at both triples")
+    checks.check("E6", snake_def_ok, "the snake's law on 2x3 from the definition equals p_0(row 0) P_rl(row 0 -> row 1) entrywise at both triples")
     d3 = snake_data[(3, 1, 2)][1]
     lits = tuple(SNAKE_LITERALS)
     if mut("snake_column_claimed_chain"):
         lits = (Fraction(0), Fraction(0), Fraction(0))
     snake3_ok = tuple(d3[j] for j in range(3)) == lits and d3[0] == 0 and d3[1] > 0 and d3[2] > 0 and all(snake_data[tr][3] for tr in TRIPLES) and snake_data[(5, 2, 4)][1][0] == 0 and snake_data[(5, 2, 4)][1][1] > 0 and snake_data[(5, 2, 4)][1][2] > 0
-    checks.check("E7", snake3_ok, f"P7(b): snake proper on 3x3 (rows left-to-right, right-to-left, left-to-right): column 0 is the K-chain, columns 1, 2 are not: TV defects {d3[0]}, {d3[1]}, {d3[2]} at (3,1,2); vertical pairs (1/6) K")
+    checks.check("E7", snake3_ok, f"P7(b): snake proper on 3x3 (rows left-to-right, right-to-left, left-to-right): column 0 the K-chain, columns 1, 2 not: TV defects {d3[0]}, {d3[1]}, {d3[2]} at (3,1,2); vertical pairs (1/6) K")
     snake4_ok = all(snake_data[tr][2][j] > 0 for tr in TRIPLES for j in range(3))
-    checks.check("E8", snake4_ok, "P7(b): snake proper on 4x3 (rows alternating): no column is the K-chain at either triple (column-projected row transfer carrying the column values so far)")
+    checks.check("E8", snake4_ok, "P7(b): snake proper on 4x3 (rows alternating): no column is the K-chain at either triple (row transfer carrying the column values)")
     kc = Kernels(phi_table(CONSTANT))
     q0, Qlr, Qrl = p0_num(kc, 3), row_kernel_num(kc, 3, "lr"), row_kernel_num(kc, 3, "rl")
     const_defects = [tv(three_row_marginal(q0, Qlr, Qlr, 3, list(s)), kc.chain) for s in STAIRCASES.values()]
@@ -764,6 +764,13 @@ def family_e(checks: Checks, report: dict, exact: bool) -> None:
     const_mirror = formation_law(2, 3, mirror_order(2, 3), rc) == formation_law(2, 3, row_order(2, 3), rc)
     const_ok = (any(d > 0 for d in const_defects)) if mut("constant_rule_defect_claimed") else (all(d == 0 for d in const_defects) and const_mirror)
     checks.check("E9", const_ok, "the variation clause: at (2,2,2) every staircase and snake-column defect is zero and the mirror law equals mu_P")
+    grid_ok, grid_n = True, 0
+    for tr in product(range(1, 7), repeat=3):
+        kg = Kernels(phi_table(tr))
+        v = minimal_staircase_conditional(kg, 0, 0, 0)
+        grid_n += 1
+        grid_ok = grid_ok and ((v == kg.K[0][0]) if tr[0] == tr[1] == tr[2] else (v > kg.K[0][0]))
+    checks.check("E10", grid_ok and grid_n == 216, "P6 for every triple: P(c | c, c) > K(c->c) at all 210 non-constant triples in {1..6}^3 and = at the 6 constant ones")
     if exact:
         for (tr, name), d in defects.items():
             print(f"exact staircase {name} at {tr}: TV defect {d}")
@@ -824,7 +831,7 @@ def family_f(checks: Checks, note_text: str) -> None:
     checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
     bad = needle_outside_allowed(text, AUTHOR_NEEDLE) + needle_outside_allowed(text, LABEL_NEEDLE)
     named = AUTHOR_NEEDLE in text.lower()
-    checks.check("F3", not bad and named, f"the literature name of the structure appears only in the Prior art and Imports sections (violations: {bad})")
+    checks.check("F3", not bad and named, f"the literature name of the structure appears only in Prior art and Imports (violations: {bad})")
     source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
     scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
     float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
@@ -872,7 +879,7 @@ def main(argv) -> int:
     for p in AUDIT_INPUT_PATHS:
         print(f"  {p}")
     print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
-    print("scope: the monotone-order class on rectangles: one law mu_P (P1), bridge factor (P2), transpose (P3), rows and columns chains (P4), corner law (P5), staircases (P6), mirror and snake (P7); exact")
+    print("scope: the monotone-order class on rectangles: one law mu_P, bridge, transpose, rows and columns chains, corner law, staircases, mirror and snake; exact")
     print(f"mutation: {ACTIVE_MUTATION or 'none'}")
     report: dict = {}
     family_a(checks, note_text, axiom_text, b01_text, b02_text)
