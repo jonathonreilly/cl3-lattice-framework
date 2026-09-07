@@ -1,0 +1,26 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "blocking": true,
+    "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+    "line": 758,
+    "paired_path": "scripts/open_pr_science_coverage.py",
+    "problem": "The skill invokes the helper directly, but the shipped Git mode100644 produces PermissionError even for --help.",
+    "test": "DOCUMENTED_DIRECT_CLI.json",
+    "fix": "Use full python3 scripts/open_pr_science_coverage.py subcommands in guidance or deliberately make the helper executable; exercise the exact documented invocation with --help and local fixtures."
+  },
+  {
+    "id": "F2",
+    "priority": "P3",
+    "blocking": false,
+    "path": "scripts/open_pr_science_coverage.py",
+    "lines": [
+      213,
+      229
+    ],
+    "problem": "Invalid UTF-8 input raises uncaught UnicodeDecodeError and exits1 rather than documented invalid-input2. No false success.",
+    "test": "cli_invalid_utf8.stderr",
+    "fix": "Catch UnicodeError at CLI boundary and add invalid-byte CLI fixtures for inventory and receipt paths."
+  }
+]

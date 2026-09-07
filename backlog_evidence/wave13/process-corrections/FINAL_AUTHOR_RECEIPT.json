@@ -1,0 +1,94 @@
+{
+  "pr": 7972,
+  "original_base": "e249016f759f224d9b429932cd0d1db4d452dc1a",
+  "original_head": "5be9bdb9206019ddfecec7e5e59814d30173f64d",
+  "base": "66b1b4f8a964f4011a3f4e7876369b7daf8e1834",
+  "source_tree": "9d19ab56c1d33d0fc3b04f700527451072eb72e9",
+  "paths": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "original_base": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "7b9663eb7f9d52c1f53a43d61b1997cebcbaa6c1"
+      },
+      "original_head": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "b0b785590921927351c82fd361f58e0fba7ba447"
+      },
+      "current_main": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "2658a54d3acf1855f76619c6f7c4040bed8a216a"
+      },
+      "final": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "9992e45e99004dbe5eb8f55db3fc3f98e693ac54"
+      },
+      "final_sha256": "d7ee071464e8e782fbec3eb9b54a242cae445dcd3824ceeb1c423b439360b3f0",
+      "disposition": "Keep all current-main skill bytes; adapt original26-line addition to36 lines of relevant-source prior-art coverage, optional tooling, honest declared coverage and fixed owner cutoff. No global all-PR gate.; F1 full explicit Python CLI commands, F2 malformed text exits2, actual CLI regressions added as applicable."
+    },
+    {
+      "path": "scripts/open_pr_science_coverage.py",
+      "original_base": null,
+      "original_head": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "54b15da42f0371a2db7da71ff36247645ff58d60"
+      },
+      "current_main": null,
+      "final": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "b7073910d92f4f6cad07c804d6b7b0077596fe5e"
+      },
+      "final_sha256": "9600bf08300a3879031ab5acf01aadcfe9e9b4ebc44d1a10d75f877a5c317739",
+      "disposition": "Exact original addition retained; F1 full explicit Python CLI commands, F2 malformed text exits2, actual CLI regressions added as applicable."
+    },
+    {
+      "path": "tests/test_open_pr_science_coverage.py",
+      "original_base": null,
+      "original_head": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "20631e24016ab484ed2a9ea007f03ddf0b304439"
+      },
+      "current_main": null,
+      "final": {
+        "mode": "100644",
+        "type": "blob",
+        "blob": "88e36d12ad0337692963e7bf7bb1851817dd3018"
+      },
+      "final_sha256": "de1d710077b46949238beabda5e3e51290eb9a96596f0c3b2ece8df635aebec0",
+      "disposition": "Exact original addition retained; F1 full explicit Python CLI commands, F2 malformed text exits2, actual CLI regressions added as applicable."
+    }
+  ],
+  "all_current_main_paths": 28531,
+  "unchanged_current_main_paths": 28530,
+  "complete_map_rows": 28978,
+  "complete_map_sha256": "39bb9f8f739000e9635a2495d11263af9fc37c8be019084eb8d5536b5a734e09",
+  "patch_sha256": "2b3d9ffff0b3306dd27e0077f50115aa176e77145d9c8e2e6ba6d3248f358c76",
+  "live_pr": {
+    "baseRefName": "main",
+    "baseRefOid": "e249016f759f224d9b429932cd0d1db4d452dc1a",
+    "headRefName": "workflow/open-pr-science-coverage-20260904",
+    "headRefOid": "5be9bdb9206019ddfecec7e5e59814d30173f64d",
+    "isDraft": false,
+    "number": 7972,
+    "state": "OPEN"
+  },
+  "full_added_or_changed_diff_read": true,
+  "tool_and_tests_exact_original": false,
+  "original_tests_passed": 13,
+  "scope": "Process/tooling; root cold-read complete correction and current-main context. Independent original-session final review pending; no scientific/audit grade.",
+  "commits_pushes_or_PR_mutations": false,
+  "correction_patch_sha256": "a414bcbb8a35e01ea057fdbd2d4cf04c92c1d95011c0093577e7f85cef69b084",
+  "total_tests_passed": 15,
+  "original_review_receipt_sha256": "dc0a6e6637e676a9c46036f1d3d90e9e995f06d57e9c5dc4f0cc83e0cdf64cbb",
+  "findings": {
+    "F1": "All3 documented invocations explicitly use python3; mode100644 retained; actual command help and offline roundtrip pass.",
+    "F2": "CLI catches UnicodeError; all4 malformed text input positions exit2 without traceback."
+  }
+}

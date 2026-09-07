@@ -1,0 +1,100 @@
+diff --git a/docs/ai_methodology/skills/physics-loop/SKILL.md b/docs/ai_methodology/skills/physics-loop/SKILL.md
+index e3e1a762f0..9992e45e99 100644
+--- a/docs/ai_methodology/skills/physics-loop/SKILL.md
++++ b/docs/ai_methodology/skills/physics-loop/SKILL.md
+@@ -755,13 +755,13 @@ For publication-facing or quantitative work, also inspect
+    outstanding obligations; refresh only the authorized proposals as needed.
+ 
+    When a complete new intake is authorized, the optional helper
+-   `scripts/open_pr_science_coverage.py capture --repo OWNER/REPO --output current.json`
++   `python3 scripts/open_pr_science_coverage.py capture --repo OWNER/REPO --output current.json`
+    checks the total open count, binds head/base commits and proposal metadata,
+    recovers paginated changed-file lists, and rejects observed capture drift.
+    Preserve that snapshot. After an actual read, use
+-   `receipt --reviewed current.json --number N --read-coverage 'Surfaces read and limits'`
++   `python3 scripts/open_pr_science_coverage.py receipt --reviewed current.json --number N --read-coverage 'Surfaces read and limits'`
+    to emit its JSONL receipt. The offline
+-   `check --current current.json --reviewed reviewed.json --receipts reads.jsonl`
++   `python3 scripts/open_pr_science_coverage.py check --current current.json --reviewed reviewed.json --receipts reads.jsonl`
+    compares declared coverage with both saved inventories. It does not fetch
+    new proposals. These commands accept this helper's versioned inventory
+    schema; another planning inventory is not interchangeable merely because it
+diff --git a/scripts/open_pr_science_coverage.py b/scripts/open_pr_science_coverage.py
+index 54b15da42f..b7073910d9 100644
+--- a/scripts/open_pr_science_coverage.py
++++ b/scripts/open_pr_science_coverage.py
+@@ -226,7 +226,7 @@ def main() -> int:
+             args.output.write_text(encoded)
+         print(encoded, end="")
+         return 0 if result["complete"] else 1
+-    except (CoverageError, OSError, json.JSONDecodeError) as exc:
++    except (CoverageError, OSError, UnicodeError, json.JSONDecodeError) as exc:
+         print(f"open-pr-science-coverage: {exc}", file=sys.stderr)
+         return 2
+ 
+diff --git a/tests/test_open_pr_science_coverage.py b/tests/test_open_pr_science_coverage.py
+index 20631e2401..88e36d12ad 100644
+--- a/tests/test_open_pr_science_coverage.py
++++ b/tests/test_open_pr_science_coverage.py
+@@ -2,6 +2,7 @@
+ from copy import deepcopy
+ import json
+ from pathlib import Path
++import subprocess
+ import sys
+ import tempfile
+ import unittest
+@@ -149,5 +150,53 @@ class CoverageTests(unittest.TestCase):
+         self.assertIn("not scientific validity", report["meaning"])
+ 
+ 
++class CoverageCliTests(unittest.TestCase):
++    def run_cli(self, *args):
++        return subprocess.run(
++            [sys.executable, str(Path(coverage.__file__).resolve()), *map(str, args)],
++            capture_output=True, text=True, check=False,
++        )
++
++    def test_documented_python_entry_points_and_offline_round_trip(self):
++        for command in ("capture", "receipt", "check"):
++            with self.subTest(command=command):
++                result = self.run_cli(command, "--help")
++                self.assertEqual(result.returncode, 0, result.stderr)
++        with tempfile.TemporaryDirectory() as directory:
++            snapshot = Path(directory) / "inventory.json"
++            snapshot.write_text(json.dumps(inventory(pr())), encoding="utf-8")
++            result = self.run_cli("receipt", "--reviewed", snapshot, "--number", 7,
++                                  "--read-coverage", "Fixture read; no scientific grade.")
++            self.assertEqual(result.returncode, 0, result.stderr)
++            receipts = Path(directory) / "reads.jsonl"
++            receipts.write_text(result.stdout, encoding="utf-8")
++            result = self.run_cli("check", "--current", snapshot, "--reviewed", snapshot,
++                                  "--receipts", receipts)
++            self.assertEqual(result.returncode, 0, result.stderr)
++            self.assertEqual(json.loads(result.stdout)["matched_review_receipts"], [7])
++
++    def test_invalid_utf8_cli_inputs_return_invalid_input_without_traceback(self):
++        with tempfile.TemporaryDirectory() as directory:
++            directory = Path(directory)
++            snapshot = directory / "inventory.json"
++            snapshot.write_text(json.dumps(inventory(pr())), encoding="utf-8")
++            receipts = directory / "reads.jsonl"
++            receipts.write_text(json.dumps(receipt(pr())) + "\n", encoding="utf-8")
++            invalid = directory / "invalid-utf8"
++            invalid.write_bytes(b"\xff\xfe\xff")
++            cases = [
++                ("receipt", "--reviewed", invalid, "--number", 7, "--read-coverage", "Read"),
++                ("check", "--current", invalid, "--reviewed", snapshot, "--receipts", receipts),
++                ("check", "--current", snapshot, "--reviewed", invalid, "--receipts", receipts),
++                ("check", "--current", snapshot, "--reviewed", snapshot, "--receipts", invalid),
++            ]
++            for args in cases:
++                with self.subTest(args=args):
++                    result = self.run_cli(*args)
++                    self.assertEqual(result.returncode, 2, result.stderr)
++                    self.assertIn("open-pr-science-coverage:", result.stderr)
++                    self.assertNotIn("Traceback", result.stderr)
++
++
+ if __name__ == "__main__":
+     unittest.main()

@@ -1,25 +1,29 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-07T23:24:23.981326+00:00 after wave13 against main `47da12268436ee1843e822386477aa2c829d95a9`. Scope remains the original 254 identities. Prior reconciliation, routing obligations and heads remain in `history/before-wave13-20260907`.
+Updated 2026-09-07T22:24:51.564736+00:00 after wave12 against main `66b1b4f8a964f4011a3f4e7876369b7daf8e1834`. Scope remains the original 254 PR identities in `BACKLOG_CUTOFF.json`. The complete initial reconciliation and prior heads remain in `history/before-wave12-20260907`.
 
-**31 original scientific scopes newly landed: nine direct science closures and twenty-two earlier consolidated constituents. One process PR landed separately.** Of 110 other closures, 84 scientific scopes remain pending at 10 open successors. Consolidation preserves source and transfers unresolved obligations; it is not scientific acceptance.
+**29 original PR-authored scientific scopes have reviewed corrected dispositions newly landed on main: eight direct landing closures and twenty-one constituents closed earlier for consolidation.** Of the original 110 other closures, 85 scientific scopes remain pending at 11 open successors. No source-loss closure required reopening on the verified evidence.
 
 | Of the original 110 other closures | PRs |
 | --- | ---: |
-| Reviewed corrected scientific scope subsequently landed |22|
-| Scientific scope pending in an open successor |84|
-| Superseded by science already on starting main |2|
-| Empty source delta |1|
-| Unexecuted plan preserved |1|
-| Total |110|
+| Reviewed corrected original scientific scope subsequently landed | 21 |
+| Scientific scope pending in an open successor | 85 |
+| Narrowed result superseded by science already on starting main | 2 |
+| Empty source delta | 1 |
+| Unexecuted plan preserved; no completed science result | 1 |
+| Total | 110 |
 
-There are 120 closed and 134 open originals, including all three reservations; zero original drafts. Seven new-arrival PRs landed before the cutoff remain excluded. Counts are original scopes, not breakthroughs, proof of withdrawn assertions or formal audit grades. No source-loss closure required reopening on the verified evidence.
+These counts are original PR scopes, not independent breakthroughs, proof of withdrawn assertions, GitHub merge counts or formal audit grades. Supplied premises and unproved physical/limit claims remain explicit in accepted source. Seven new-arrival PRs landed before the cutoff remain excluded from the original-backlog count. There are 118 closed originals and 136 open originals, including all three reservations, with zero original drafts.
 
-Wave13 verifies original #7850/#7851 and #7972 heads/branches and their complete corrected source at `47da12268436ee1843e822386477aa2c829d95a9`. Earlier closure recovery and #8002 historical head transition remain bound by prior evidence, not relabeled as a fresh global check.
+Wave12 verifies both original #7980/#7984 heads and preserved branches, and lands their corrected complete source at `66b1b4f8a964f4011a3f4e7876369b7daf8e1834`. The earlier reconciliation independently established recovery for the preceding 117 closures; #8002 retains its documented four-file historical head transition. Prior evidence is preserved, not relabeled as a fresh global check.
+
+The twenty-one later-landed original scopes are #7840, #7884, #7886, #7887, #7906, #7907, #7913, #7915, #7917, #7920, #7921, #7922, #7923, #7924, #7927, #7930, #7932, #7936, #7937, #7941, #7980. #6104 and #6113 were semantically covered on starting main; #7872 was empty; #7873 was an unexecuted plan.
 
 ## Pending closed scopes remain research obligations
 
-| Open successor | Pending closed originals |
+Each successor carries all original proof, premise, runner and evidence obligations. A successor closes only after explicit reviewed dispositions or complete preserved transfer.
+
+| Open successor | Pending closed original PRs |
 | --- | --- |
 | #5966 | #5950, #5952 |
 | #6358 | #6280, #6345, #6352, #6354 |
@@ -30,13 +34,14 @@ Wave13 verifies original #7850/#7851 and #7972 heads/branches and their complete
 | #7359 | #7330, #7331, #7336, #7337, #7340, #7343, #7345, #7347, #7350, #7351, #7353, #7355 |
 | #7827 | #7813, #7819, #7820, #7821, #7822, #7823, #7824, #7825, #7826, #7853, #7854, #7855, #7856, #7857, #7859, #7860, #7861, #7862, #7863, #7864, #7865, #7866, #7867 |
 | #7847 | #7846 |
+| #7851 | #7850 |
 | #7966 | #7943, #7945, #7946, #7952, #7953, #7955, #7963 |
 
 ## Per-PR outcomes
 
-Full source recovery, original/reviewed heads and obligations are in [the JSON ledger](BACKLOG_CLOSURE_RECONCILIATION.json). Current acceptance is bound by [wave13 evidence](backlog_evidence/wave13/INDEX.json); prior evidence and historical routing remain preserved.
+Full heads, branches, source recovery, obligations and accepted commits are in [the machine-readable reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json). Initial independent evidence remains in [the shared reconciliation directory](backlog_evidence/closure-reconciliation/README.md); current wave12 acceptance is bound by [its evidence index](backlog_evidence/wave12/INDEX.json).
 
-| Original PR | Closure action | Current scope status | Accepted main or open successor |
+| Original PR | Closure action | Current scientific status | Accepted main commit or open successor |
 | --- | --- | --- | --- |
 | #5950 | source_consolidation_exact | pending_on_open_successor | #5966 |
 | #5952 | source_consolidation_exact | pending_on_open_successor | #5966 |
@@ -104,8 +109,7 @@ Full source recovery, original/reviewed heads and obligations are in [the JSON l
 | #7826 | source_consolidation_exact | pending_on_open_successor | #7827 |
 | #7840 | draft_disposition | reviewed_corrected_scope_on_main | `16c2d6860e168ec8e5e8f66296410265e5d7226d` |
 | #7846 | draft_disposition | pending_on_open_successor | #7847 |
-| #7850 | draft_disposition | reviewed_corrected_scope_on_main | `47da12268436ee1843e822386477aa2c829d95a9` |
-| #7851 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `47da12268436ee1843e822386477aa2c829d95a9` |
+| #7850 | draft_disposition | pending_on_open_successor | #7851 |
 | #7853 | draft_disposition | pending_on_open_successor | #7827 |
 | #7854 | draft_disposition | pending_on_open_successor | #7827 |
 | #7855 | draft_disposition | pending_on_open_successor | #7827 |
@@ -148,7 +152,6 @@ Full source recovery, original/reviewed heads and obligations are in [the JSON l
 | #7953 | source_consolidation_exact | pending_on_open_successor | #7966 |
 | #7955 | source_consolidation_exact | pending_on_open_successor | #7966 |
 | #7963 | source_consolidation_exact | pending_on_open_successor | #7966 |
-| #7972 | closed_directly_after_landing | reviewed_process_scope_on_main | `47da12268436ee1843e822386477aa2c829d95a9` |
 | #7980 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `66b1b4f8a964f4011a3f4e7876369b7daf8e1834` |
 | #7983 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2d0f551dcd8bd444daee85b97811cda53da0661e` |
 | #7984 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `66b1b4f8a964f4011a3f4e7876369b7daf8e1834` |
