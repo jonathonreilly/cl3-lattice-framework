@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py
+runner_sha256: 57a840346f74b10ae5e9f5a518c62f358d4767034144c860dd389280adc04997
+input_fingerprint_sha256: b5a5caa473ef094e41da23da07a4ac5a7a057d7d277da668f5f6c9e18aa7565c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 64.33
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
+AUDIT_TIMEOUT_SEC: 900
+scope: the six-projector menu, the product rule at two exact triples; the static strips of widths 4 and 5 (widths 2, 3 as controls); exact arithmetic; no plane, no wider strip, no monotonicity in the width, no order selected
+mutation: none
+PASS: A1 the three declared inputs exist (this note, the axiom memo, block 02)
+PASS: A2 the six axiom sentences used are present verbatim in the axiom memo
+PASS: A3 block 02's claim id and deep-row fragment present
+PASS: A4 this note carries its claim id and names this runner
+PASS: A5 blocks 03-05 are not inputs
+PASS: B1 row orbits under G (order 48): 3, 8, 38, 178 at widths 2-5, both triples
+PASS: B2 T(g rho, g rho') = T(rho, rho'), all 48 maps: every representative x all 1296 rows (W=4); two representatives x 7776 rows (W=5)
+PASS: B3 Q representative-independent (second representative of every orbit); R_OO' |O'| = |O| Q_OO'; sizes sum to 6^W, parallel counts to 6^(W-1)
+PASS: B4 the tensor-structured full-state transfer equals the explicit T on three vectors, both actions, W=4
+PASS: B5 sector center-row statistics = full-state ones: W=4 at n = 3, 5, 7; W=5 at n = 3, 5; both pairs, both triples (20 equalities)
+PASS: C1 w_O Q_OO' = w_O' Q_O'O on every orbit pair (38^2, 178^2), both triples: Q self-adjoint for w = |O| A
+PASS: C2 tr(Q^2) = 28006524928, 250087391159985, 16238809878528, 1948759036672266913
+PASS: C3 ratio bounds after 40 powers: 0 < lo <= mu <= hi; 18-digit outward labels of lambda_1 are the contract's, four cases
+PASS: C4 Krylov dimension of Q on 1 = 8, 30, 16, 111 (ranks mod 2^61-1, 2^89-1; integer dependency m_1(Q) 1 = 0 verified on every orbit, four cases)
+PASS: C5 W=4: charpoly factor degrees [1, 1, 2, 8] and [1, 1, 1, 5, 30]; m_1 is the factor of degree d
+PASS: C6 m_1 irreducible over Q at d = 8, 30, 16; at d = 111 factorization not attempted, nothing claimed
+PASS: C7 d = 8, 30, 16: exactly one real root of m_1 in [lo, hi], none above hi (Sturm counts)
+PASS: D1 four cases: y > 0, delta = mu - lambda_2bound > 0, lo > lambda_2bound, square-root bounds are upper bounds, residual recomputed
+PASS: D2 enclosures [s(y) - 2 eps, s(y) + 2 eps] of width < 10^-50; 22-digit outward labels are the contract's (four cases, both pairs)
+PASS: D3 no enclosure contains f = 1/4 or 5/23 (eight enclosures)
+PASS: D4 sector center-row statistics at n = 3, 5, 9, 17, 33, 65: strictly decreasing distances to the enclosure, both pairs, four cases
+PASS: D5 end records P(e_y) on both end rows at n = 33 (full state via the tensor structure; orbit-averaged in the sector): within 10^-6 of the enclosures
+PASS: D6 widths 2, 3 by the same route: block 02's F4 digits (18 and 22) reproduced, f excluded, innermost pair = edge pair
+PASS: D7 d <= 16: Q x = lambda_1 x in Q[lam]/(m_1) on every orbit, x one-signed; one irreducible factor of the resultant with one root in the enclosure for s_inner, s_edge; field image meets the enclosure
+W=2 (3, 1, 2): s_edge 0.2559430889.. s_inner 0.2559430889.. minus f: 0.00594308.. 0.00594308..
+W=2 (5, 2, 4): s_edge 0.2198741761.. s_inner 0.2198741761.. minus f: 0.00248287.. 0.00248287..
+W=3 (3, 1, 2): s_edge 0.2561109872.. s_inner 0.2561109872.. minus f: 0.00611098.. 0.00611098..
+W=3 (5, 2, 4): s_edge 0.2199151616.. s_inner 0.2199151616.. minus f: 0.00252385.. 0.00252385..
+W=4 (3, 1, 2): s_edge 0.2561162479.. s_inner 0.2562841851.. minus f: 0.00611624.. 0.00628418..
+W=4 (5, 2, 4): s_edge 0.2199158620.. s_inner 0.2199567765.. minus f: 0.00252455.. 0.00256547..
+W=5 (3, 1, 2): s_edge 0.2561164296.. s_inner 0.2562896288.. minus f: 0.00611642.. 0.00628962..
+W=5 (5, 2, 4): s_edge 0.2199158748.. s_inner 0.2199574883.. minus f: 0.00252457.. 0.00256618..
+PASS: E1 s - f > 10^-3 at widths 2, 3, 4, 5, both pairs, both triples; 8-digit labels at widths 4, 5 are the contract's
+PASS: E2 s_inner > s_edge strictly at widths 4, 5, both triples (lower endpoint above the upper endpoint)
+PASS: E3 the width-4 and width-5 values differ at (3,1,2) by s_inner: [0.0000054436, 0.0000054437] and s_edge: [0.00000018169, 0.00000018170] (outward labels; two data points)
+PASS: E4 lambda_2bound/lo <= 0.05538, 0.03301, 0.06932, 0.04150 (rounded up; bounds the executed ratio, not the true lambda_2/lambda_1)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (hits: [])
+PASS: F3 runner source: no floating-point literal, conversion, evaluation call or array library (0 hits)
+PASS: F4 classical names only in Prior art, Imports and the verbatim fence (offenders: [])
+PASS: F5 every decimal label in this stdout came from the integer-arithmetic dec() (32 labels; stray: [])
+per_element: executed — every row state of the width-2, 3, 4, 5 strips enters the orbit reduction, the quotients and the full-state checks, both triples, exact
+per_site: executed — the edge pair (0, 1) and the innermost pair of every row; the end-row records on every site of both end rows in the boundary check
+per_mode: executed — the Perron root by the ratio bounds, every other eigenvalue by the trace bound, the Perron vector by the residual-gap bound, the Krylov degree exactly; minimal polynomials where the degree allows
+per_block: executed — the finite-n center rows for n = 3 to 65 in the sector and n = 3 to 7 (width 4) and 3 to 5 (width 5) on the full state; the characteristic polynomial at width 4
+lattice_wide: checked and not executed — strips of widths 2 to 5 only; the plane and wider strips are named, not computed, and no monotonicity in the width is stated
+PASS: G1 the five N5 resolution lines are printed (each >= 40 characters)
+elapsed_s: 64
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

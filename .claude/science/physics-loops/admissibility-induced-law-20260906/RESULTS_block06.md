@@ -7,8 +7,9 @@ On the open-boundary static strips of widths 4 and 5 (1296 and 7776 row states; 
 ## Run record
 
 - Runner `scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py`: 34 checks in families A (5), B (5), C (7), D (7), E (4), F (5), G (1); 26 declared mutations (4 B, 6 C, 9 D, 3 E, 4 F). Baseline about 60 s uncontended (the largest items: the width-5 quotient builds, the degree-111 modular solve, the `n = 33` full-state boundary check at width 5 through the tensor structure of `V`, the degree-30 Sturm counts).
+- Cache: runner sha256 `57a840346f74b10ae5e9f5a518c62f358d4767034144c860dd389280adc04997`, input fingerprint `b5a5caa473ef094e41da23da07a4ac5a7a057d7d277da668f5f6c9e18aa7565c`, exit 0, elapsed 64.33 s, `TOTAL: PASS=34 FAIL=0` (written by `execute_and_write_cache(<runner>, 900)` after the final note edit and after the census had finished; uncontended).
 - Control reproduction before any theorem sentence (own code, scratch `control_repro.py`, 23 s): orbit counts 38/178; Krylov dimensions 8/30/16/111 with the exact dependency verified on all orbits at every case; `λ_1` to 18 digits at all four cases; `tr(Q^2)` at all four; the 22-digit enclosures of `s_edge` and `s_inner` at all four; the ratio bounds `0.05538, 0.03301, 0.06932, 0.04150`; the innermost sector values at `W = 5`, `(3,1,2)`, `n = 3, 5, 9, 17, 33, 65` (`n = 33`: `0.2562896288160817584176711…`, `1.49 × 10^-25` from the enclosure). All equal to the supervisor's controls.
-- Note `docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md`: 634 lines; `vocab_lint --report-only` 0 violations; the classical names appear only in Prior art, Imports and the verbatim third fence in Boundaries (runner F4 strips that fence before scanning Boundaries).
+- Note `docs/ADMISSIBILITY_RULE_STATIC_STRIP_WIDTHS_4_5_RIGOROUS_ENCLOSURE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-09-07.md`: 546 lines (reflowed from 634 after the census, whitespace only); `vocab_lint --report-only` 0 violations; the classical names appear only in Prior art, Imports and the verbatim third fence in Boundaries (runner F4 strips that fence before scanning Boundaries).
 
 ## Defects fixed while executing
 
@@ -133,3 +134,38 @@ PASS: G1 the five N5 resolution lines are printed (each >= 40 characters)
 elapsed_s: 63
 TOTAL: PASS=34 FAIL=0
 ```
+
+## Mutation census (26 mutations, one helper invocation each, 4 in parallel; expected/observed read from raw stdout at the final runner sha256 57a840346f74b10a…; the note reflowed to 546 lines afterwards with byte-identical normalized text, which the F-family checks normalize before comparing)
+
+| mutation | expected | observed | PASS | FAIL | failing checks | single family |
+|---|---|---|---|---|---|---|
+| `boundary_dependence_forged` | D | D | 33 | 1 | D5 | yes |
+| `charpoly_factor_mismatch` | C | C | 33 | 1 | C5 | yes |
+| `claim_classical_name_in_theorem` | F | F | 33 | 1 | F4 | yes |
+| `claim_monotone_in_W` | F | F | 33 | 1 | F2 | yes |
+| `claim_plane_limit` | F | F | 33 | 1 | F2 | yes |
+| `claim_washes_out` | F | F | 33 | 1 | F2 | yes |
+| `commutation_broken` | B | B | 33 | 1 | B2 | yes |
+| `cw_interval_forged` | C | C | 33 | 1 | C3 | yes |
+| `dependency_not_verified` | C | C | 33 | 1 | C4 | yes |
+| `field_vector_not_eigen` | D | D | 33 | 1 | D7 | yes |
+| `finite_n_sequence_shuffled` | D | D | 33 | 1 | D4 | yes |
+| `inner_edge_order_flipped` | E | E | 33 | 1 | E2 | yes |
+| `krylov_dimension_off` | C | C | 33 | 1 | C4 | yes |
+| `largest_root_outside_interval` | C | C | 33 | 1 | C7 | yes |
+| `orbit_count_wrong` | B | B | 33 | 1 | B1 | yes |
+| `quotient_row_identity_broken` | B | B | 33 | 1 | B3 | yes |
+| `ratio_bound_too_small` | E | E | 33 | 1 | E4 | yes |
+| `residual_forged` | D | D | 33 | 1 | D1 | yes |
+| `residual_gap_ignored` | D | D | 33 | 1 | D1 | yes |
+| `resultant_factor_wrong` | D | D | 33 | 1 | D7 | yes |
+| `s_enclosure_contains_formation_value` | D | D | 33 | 1 | D3 | yes |
+| `sector_full_mismatch` | B | B | 33 | 1 | B5 | yes |
+| `self_adjointness_broken` | C | C | 33 | 1 | C1 | yes |
+| `separation_sign_flipped` | E | E | 33 | 1 | E1 | yes |
+| `trace_bound_forged` | D | D | 33 | 1 | D1 | yes |
+| `w2_w3_literals_off` | D | D | 33 | 1 | D6 | yes |
+
+26 of 26 mutations fail in exactly their declared family
+
+Each mutated run reports `TOTAL: PASS=33 FAIL=1` with the single failing check in the declared family; the mutation `field_vector_not_eigen` is the slowest (the perturbed field vector defeats the cancellation in the resultant's interpolation), about four minutes four-wide; every other run about 60–100 s four-wide.
