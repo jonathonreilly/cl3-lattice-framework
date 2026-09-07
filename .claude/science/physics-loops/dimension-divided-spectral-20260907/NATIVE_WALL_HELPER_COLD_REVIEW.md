@@ -1,0 +1,9 @@
+# Independent cold review of wall-grid helper
+
+PASS for the diagnostic scope. Reviewed original source SHA7212789c92fd504dd10afc204b42538a656e5cfc632ecad19ae988d55e5d8aee and frozen preregistration/raw receipt, without rerunning the two primary certificates.
+
+The LinearOperator implements beta(J-I), with all six axial/opposed-diagonal shifts paired with their adjoints and no boundary renormalization. Source index0 is label(0,0); exactly two live offdiagonal neighbors survive there. Time is1. Endpoints, box ceil(8sqrtbeta)+1 and three betas match the preregistration. Dimension(p+1)(q+1)(p+q+2)/2 is exact, and the common exponential coefficient factor cancels in the origin-column/return ratio. Vacuum ratio is1 by identical numerator and denominator, a normalization control rather than an independent return test.
+
+For the unrestricted coordinate walk the exponent is(2beta/3)(cosh(theta)-1). Maximal Chernoff plus two upper-coordinate exits gives epsilon=2exp[-theta N+rate(cosh(theta)-1)]. Added-square killing can only lower each positive kernel entry. Writing infinite numerator/return as a+u,b+v with u,v in[0,epsilon] yields |(a+u)/(b+v)-a/b|<=epsilon/b+a epsilon/b², with no n<=c0 assumption. The original erroneous wording and corrected pre-run preregistration remain preserved. This bound is analytic; the reported epsilon, a and b are floating evaluations and do not constitute a certified enclosure.
+
+The code has47 actual ck calls over21 distinct frozen rows, including7 theorem-domain diagnostics only at2048, plus resource checks. It retains all residuals without filtering for improvement. The original receipt reports8.816seconds139.906MiB, not a current-port result. The canonical port changes only timeout naming and default output labels/TOTAL, preserving all calculations, parameters and47 assertions; canonical execution is separately recorded. No runtime input files or independent eigenvalue test are claimed.

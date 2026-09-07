@@ -1,0 +1,3 @@
+# Primary cache landing repair
+
+After the full pipeline and generated-output cleanup, root found the two primary default stdout caches had not been staged for publication, although the frozen pure-JSON execution receipts and the independent helper cache were present. Both unchanged primary scripts were rerun through execute_and_write_cache with180-second limits, and their actual canonical cache files are now staged. This is a delivery repair, with no changes to proof, scientific parameters, check counts or runner hashes. The helper and parent runners were not rerun. The complete invocation receipts are preserved separately.
