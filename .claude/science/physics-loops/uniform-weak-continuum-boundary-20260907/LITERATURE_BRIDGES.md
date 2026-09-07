@@ -1,0 +1,2 @@
+# Mathematical provenance
+Yarotsky0411042 Section2 equation16 and fixed small-parameter convention: https://arxiv.org/pdf/math-ph/0411042 . This directly matches the selected whole-range state. Yarotsky0412040 Theorem1(3)/Section2: https://arxiv.org/pdf/math-ph/0412040 , separate periodic-selected version. Exponential clustering and elementary exponential-versus-polynomial/characteristic-function principles are prior mathematics, not claimed general novelty. Full copyrighted papers are not copied into the packet.
