@@ -14,8 +14,9 @@ reservations #6379, #6858 and #6859 are all non-draft and remain in force.
 | Work | Frozen source / owner | Status |
 |---|---|---|
 | First cumulative science unit | #8001 at `707d7a9c7f929c1c2c16078dfed76acb786e5f3b`, carrying #7983/#7996; Astra xhigh independent reviewer | Independent source review PASS after one confirmed preparation-memo correction: all 97 paths classified, seven runners passed, 19 semantic mutations rejected. Mechanical landing checks pending. |
+| Next science unit | #7998/#7999/#8000/#8002, frozen terminal `726bafb889a85efadc62dbd81d51efb66c2cdf90`; original #8001 reviewer, separate worktree | Full cumulative source review in progress; exact finite/static/strip/uniqueness/two-site claims and appended consumer probes. Initial proof findings awaiting final scoped fixes. |
 | All draft PRs | 37 frozen heads in OPEN_PR_INVENTORY.json; separate Astra xhigh reviewer | All 37 source/delta dispositions reviewed: 21 close, 16 ready. All 37 actions verified: 21 closed, 16 marked ready; exact-head checks before and after every action. |
-| Faster review contract | `process/coherent-backlog-review-20260907`, base `f6f861e8f0c7870b3a9a200a020ec5ca0b14be38`; separate Astra xhigh author | Seven-file candidate complete; 133 focused tests passed. Fresh Astra xhigh adversarial review in progress before use. |
+| Faster review contract | `process/coherent-backlog-review-20260907`, base `f6f861e8f0c7870b3a9a200a020ec5ca0b14be38`; separate Astra xhigh author | Seven-file candidate complete; 133 initial focused tests passed. Fresh Astra xhigh adversarial review found a successive-manifest-conflict retry bug. Author fix passes 70 contract tests and is in same-session confirmation. |
 
 No backlog science has yet landed. All 37 draft actions are verified in
 [DRAFT_DISPOSITIONS.json](DRAFT_DISPOSITIONS.json); all 37 reviewed dispositions
