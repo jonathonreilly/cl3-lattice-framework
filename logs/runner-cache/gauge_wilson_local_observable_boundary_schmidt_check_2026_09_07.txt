@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_local_observable_boundary_schmidt_check_2026_09_07.py
+runner_sha256: 2a86bc2a69def144d9db2066f07f13ad335ebd0a2aeb6d7b8852ae5c223214c0
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+PASS TOTAL=28 unique named checks
+per_element: PASS 3 exact nine-mode Schmidt density and purity checks
+per_site: PASS 10 endpoint-generator and boundary-singlet adverse checks
+per_mode: PASS 2 whole-boundary-state retention and kinetic-energy checks
+per_block: PASS 12 tail coefficient, integration, normalization and zero-coupling checks
+lattice_wide: PASS 1 resource control; all-orders Haar/domain proofs remain analytical
+DATA: {"R1_retention_probability": 1, "Schmidt_coefficient": "1/3", "Schmidt_dimension": 9, "TOTAL": 28, "endpoint_Gauss_Casimir": "16/3", "integrated_boundary_coefficient": "1/4", "local_singlet_probability": 0, "rho_eigenvalues": ["1/9", "1/9", "1/9", "1/9", "1/9", "1/9", "1/9", "1/9", "1/9"], "rho_purity": "1/9", "scope": "Actual Wilson-loop Schmidt/Haar consequence and exact finite coefficient checks; analytic Haar orthogonality, all-orders propagation and domain proofs remain separate."}
+RESOURCE: seconds=0.29855954201775603 rss_MiB=61.765625 limits=180sec/180MiB
+SOURCE_SHA256: 2a86bc2a69def144d9db2066f07f13ad335ebd0a2aeb6d7b8852ae5c223214c0
+
+----- stderr -----
+
