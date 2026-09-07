@@ -16,7 +16,7 @@ corrected four-note admissibility unit then landed at current main
 ## Common evidence
 
 - [TOE_SCORECARD.md](TOE_SCORECARD.md): actual premise epoch, standing and questions.
-- [OPEN_PR_INVENTORY.json](OPEN_PR_INVENTORY.json): 202 current open PRs, zero drafts, exact heads
+- [OPEN_PR_INVENTORY.json](OPEN_PR_INVENTORY.json): 191 current open PRs, zero drafts, exact heads
   and complete file lists. The original 254-PR snapshot is archived under
   `backlog_evidence/`; closures and transferred obligations are fully recorded.
 - [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json): exact main ledger counts.
@@ -26,7 +26,7 @@ corrected four-note admissibility unit then landed at current main
 
 | Owner | Target | Current evidence/next check |
 |---|---|---|
-| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 26 further duplicates consolidated; two science batches landed; coordinating light-germ corrections, curved reserved-dependency mapping and the new admissibility successor |
+| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 38 further duplicates consolidated; two science batches landed; coordinating light integration, admissibility successor fixes and autonomous Record review; curved dependencies held |
 | Formation author + independent checker | Formation/static interface | Conditional Z3 law constructed with finite ancestry and certified window/correlation bounds; independent static/formation and adaptive-scheduling checks pass |
 | Matter author + independent checker | Native Record shared energy apparatus | Conditional finite-patch instrument proved with volume-uniform channel/full mean-energy error bounds; independent shared-battery/free-dwell calculation passes |
 | Field author + independent checker | Consistent physical field source/response | Source convention mismatch confirmed independently; exact finite invariant, corrected finite curvature and full-flux endpoint theorem packaged and checked |
@@ -72,7 +72,7 @@ question; no blanket disposition of that PR is asserted.
    Both Record/battery (#7983/#7996/#8001) and admissibility
    (#7998/#7999/#8000/#8002) are landed and closed; receipts are in
    `backlog_evidence/wave1` and `wave2`. Review the new admissibility successor
-   #8003 with existing parent context; #8004 is queued. Preserve the curved
+   #8003 with existing parent context; five P2 corrections are underway. #8004 is in independent review; #8005 is queued. Preserve the curved
    unit's reserved-source dependency hold while assessing standalone salvage.
 2. Repair the field source interpretation in its coherent PR group before
    spending more computation on a physical UK comparison. Define the actual

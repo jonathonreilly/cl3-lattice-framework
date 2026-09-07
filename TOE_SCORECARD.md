@@ -29,7 +29,7 @@ planning refresh. Candidate dependencies retain their open conditions.
 
 ## Current open-work interfaces
 
-The complete [open-PR inventory](OPEN_PR_INVENTORY.json) pins 202 current open heads and
+The complete [open-PR inventory](OPEN_PR_INVENTORY.json) pins 191 current open heads and
 changed-file sets. These entries locate evidence; they do not assert that
 all source has been reviewed. The campaign record tracks actual inspection.
 

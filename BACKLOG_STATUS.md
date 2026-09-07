@@ -6,7 +6,7 @@ them with a concrete disposition. Formal audit is deferred until a solid TOE.
 The coordinator owns GitHub changes and landing; reviewers return evidence.
 
 The original 13:57 UTC routing refresh had 254 open PRs: 217 non-draft and 37 draft.
-The verified post-triage refresh has 202 open PRs and 0 drafts: 54 original PRs closed and two new successors opened.
+The verified post-triage refresh has 191 open PRs and 0 drafts: 66 original PRs closed and three new successors opened.
 All 37 original drafts were explicitly in triage scope and are now resolved. Marking ready means reviewable,
 not scientifically accepted. A still-draft PR does not land. The standing
 reservations #6379, #6858 and #6859 are all non-draft and remain in force.
@@ -94,9 +94,10 @@ dependencies. Shared history and exact copied files are not scientific PASS.
 
 ## Further consolidation and review assignments
 
-[BACKLOG_CONSOLIDATIONS.json](BACKLOG_CONSOLIDATIONS.json) records 26 completed exact
+[BACKLOG_CONSOLIDATIONS.json](BACKLOG_CONSOLIDATIONS.json) records 38 completed exact
 duplicate consolidations, with before/after head and state receipts: nine source/Eta
-parents into open #7827 and 17 light-sector parents into open #7937. Root
+parents into open #7827, 17 light-sector parents into open #7937, six older
+Record/admissibility parents into #6358/#6371 and six field parents into #7966. Root
 independently checked every authored original delta and complete inherited
 source (Eta) or whole parent tree (light), including file modes and blobs.
 Every scientific and evidence obligation transfers to the open successor;
@@ -107,21 +108,26 @@ or declared landed by these duplicate closures.
 across 35 original open constituents. They are initial review scopes, not a
 claim that all inherited tower content has been reviewed. The light germ /
 finite-depth dynamics unit (47 source paths, 11 notes and 11 runners) is now
-in independent Astra xhigh review against #7937's frozen head. Findings include
-incomplete cache import pins, a generator orientation convention, an unsupported
-gauge-speed use of the matter kinetic primitive and a Gaussian harmonic-mode
-boundary. A separate author is assigned narrow fixes after the review freezes.
+confirmed PASS by its original reviewer against #7937's frozen head. The separate
+fix author froze 37 corrections within the 47-path unit; 287 fresh checks,
+six actual scientific mutations and 73 actual cache-input mutations pass.
+The coordinator read every correction diff and independently verified all
+47 original/final paths, all 11 original constituent deltas and complete
+actual helper closure. Every existing main path is preserved. The original
+#7840 ancestry is recovered from an isolated raw-object view: unique merge
+base `36fe57a7a784df31bc2178c4b94dfc7caaa5d094`, 17 source additions and
+one generated manifest. The whole #7937 tower remains outside this unit.
 The curved-covariance unit (initial 78 paths, seven notes/runners plus mandatory
 helper/premise closure) is assigned independent review at
 `774374271180405d5c2522010511adbd2c906236`. No author or reviewer has GitHub
 mutation authority; formal audit remains deferred.
 
-All 26 further duplicate closures are complete and verified against both the
+All 38 further duplicate closures are complete and verified against both the
 parent and successor heads before and after each action. Every original branch
-still exists at its frozen head. The current queue has 202 open PRs and zero
+still exists at its frozen head. The current queue has 191 open PRs and zero
 drafts. Relative to the starting 254: 21 draft closures, seven landed science
-closures and 26 further duplicate consolidations, plus two new PRs; the 16 ready transitions do
-not change the open count. The two successors remain open for their complete
+closures and 38 further duplicate consolidations, plus three new PRs; the 16 ready transitions do
+not change the open count. The five consolidation successors remain open for their complete
 scientific review; no inherited obligation is discharged by consolidation.
 
 ## New successors and efficient review routing — 2026-09-07
@@ -133,14 +139,17 @@ extends the monotone formation/corner law; #8004
 (`6de34919a2a3ef09198c4149906664acfda0d195`, 114 paths) extends the autonomous
 Record apparatus. Both still name their original uncorrected parent branches;
 review must use current-main parent corrections and preserve them on integration.
-The new arrivals explain the live count of 202 after 54 original closures.
+Those two arrivals gave 202 open after 54 original closures; the later twelve
+consolidations and #8005 arrival now give 191 open after 66 original closures.
 
-The admissibility reviewer is checkpointing the curved unit's actual reserved
-Block105 dependency and possible self-contained conditional salvage, then
-reviewing #8003 with its existing parent context. Reserved source cannot enter
-through copied helpers or raw ancestry; no full curved-unit PASS is claimed.
-#8004 is queued for independent review. Light-germ F1-F8 corrections are in
-progress with a separate author; the original reviewer owns confirmation.
+The admissibility reviewer found five P2 groups in #8003: opposite-corner
+law equality, monotone path scope, common-row-sum normalization, an inverted
+class-sufficiency statement and stale live planning. A separate author is
+fixing only that original delta on corrected current main; the same reviewer
+will confirm it. #8004 now has an independent inventory/source review in
+progress with the earlier Record reviewer. The curved reserved-source hold
+remains; no full curved-unit PASS is claimed. Light-germ F1–F8 corrections
+are independently confirmed and entering current-main combined validation.
 
 See `backlog_evidence/wave2` for the complete landed source map, gate logs'
 hashes and closure receipts. Across two landing batches: two full validation
@@ -162,3 +171,25 @@ unread-scope ledger, not rejection of all seven claims or a gravity result.
 Recovery and original path dispositions are in
 `backlog_evidence/curved-reserved-checkpoint`. Heavy benchmark reruns were
 avoided because they could not lift the source reservation.
+
+### Twelve further source consolidations — 2026-09-07
+
+#6280/#6345/#6352/#6354 are closed into open #6358; #6339/#6368 into
+#6371; #7943/#7945/#7946/#7952/#7953/#7955 into #7966. The coordinator
+independently recomputed every complete authored/inherited source-tree map,
+including modes, blobs, the full original delta and deletion handling, then
+verified original and target heads before and after every close. All original
+branches remain at their frozen heads. Exact source coverage grants no
+scientific PASS. The field successor retains the checkerboard-versus-uniform
+source-identification and convergence obligations. Current queue: 191 open,
+zero drafts; 66 original closures and three new arrivals relative to 254.
+Detailed receipts and transferred review obligations are in
+`BACKLOG_CONSOLIDATIONS.json` and `backlog_evidence/additional-consolidations`.
+
+#8004 advanced to `5bd7f234bd185eceaeb36e496a5b6bf4c69a1835` during review;
+the original reviewer must inspect the moved-head delta and rebind coverage.
+#8005 still uses the earlier #8004 head, so no correction is assumed inherited.
+
+New #8005 (`462a58a883d266076ed9d4866a510ad980680c00`, 80 paths) extends
+#8004 with finite-reservoir and cell-isometry conditional source. It is queued;
+#8004's frozen review scope remains unchanged. No inherited PASS is assumed.

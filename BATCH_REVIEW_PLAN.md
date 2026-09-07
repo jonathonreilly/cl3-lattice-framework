@@ -6,9 +6,9 @@ Independent examination of surviving source claims still precedes landing.
 
 ## Actual backlog
 
-Current refresh: 202 open PRs, zero drafts. Of the original 254, 21 draft PRs
-closed, seven science PRs landed and closed, and 26 duplicates consolidated;
-16 drafts became ready. Two new successors (#8003/#8004) then opened.
+Current refresh: 191 open PRs, zero drafts. Of the original 254, 21 draft PRs
+closed, seven science PRs landed and closed, and 38 duplicates consolidated;
+16 drafts became ready. Three new successors (#8003/#8004/#8005) also opened.
 The ancestry counts below describe the original snapshot, not this refresh.
 
 The snapshot contains 254 PRs. 129 name another open branch as their GitHub

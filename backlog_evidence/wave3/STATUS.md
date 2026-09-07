@@ -1,0 +1,1 @@
+Corrected47-path light-germ source is independently confirmed. Integration and exact-base/tree mechanical validation are in progress; no landing or audit verdict is claimed. The remainder of #7937 stays open.
