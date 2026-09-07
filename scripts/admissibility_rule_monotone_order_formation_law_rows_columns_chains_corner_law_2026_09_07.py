@@ -70,7 +70,7 @@ MUTATION_GATE = {
     "claim_static_equals_formation": "F",
     "claim_all_orders_same_law": "F",
     "claim_staircases_chains": "F",
-    "claim_unilateral-field_in_theorem": "F",
+    "claim_author_in_theorem": "F",
 }
 ACTIVE_MUTATION: str | None = None
 
@@ -823,7 +823,7 @@ def family_f(checks: Checks, note_text: str) -> None:
     for name, phrase in CLAIM_INJECTIONS.items():
         if mut(name):
             text = text + "\n" + phrase
-    if mut("claim_unilateral-field_in_theorem"):
+    if mut("claim_author_in_theorem"):
         text = text.replace("\n## Falsifiers", f"\nBy the {AUTHOR_NEEDLE} field theorem the corner law holds.\n## Falsifiers", 1)
     flat = normalize_text(text)
     checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
@@ -848,7 +848,7 @@ N5_LINES = (
     "per_site: executed — every site of every linear extension of 2x3, 3x3, 3x4 (509 orders) records exactly its left and above neighbors; the declared sites of the i-j, j-i sweeps and the snake",
     "per_mode: executed — every column and row of 3x3 (both triples) and 3x4 as three-site joints; every 2x2 block position against the corner law; the six staircases and the snake columns as exact defects",
     "per_block: executed — the row kernels P and P_rl on all 216 x 216 entries against the definition; p_0 P = p_0 and p_0 P_rl = p_0 on all 216 row states; the 4x3 snake by the carried-value transfer",
-    "lattice_wide: not claimed — P1 is proved for every rectangle and every rule; P4, P5 on the infinite strip and the quadrant follow from finite rectangles by block 02's limit arguments; nothing on the static law, the plane or orders outside the class beyond the witnesses",
+    "lattice_wide: not claimed — P1 proved for every rectangle and rule; P4, P5 on the infinite strip and the quadrant by block 02's limit arguments; nothing on the static law, the plane or orders outside the class beyond the witnesses",
 )
 
 
@@ -879,7 +879,7 @@ def main(argv) -> int:
     for p in AUDIT_INPUT_PATHS:
         print(f"  {p}")
     print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
-    print("scope: the monotone-order class on rectangles: one law mu_P, bridge, transpose, rows and columns chains, corner law, staircases, mirror and snake; exact")
+    print("scope: the monotone-order class on rectangles: one law mu_P, bridge, transpose, rows and columns chains, corner law, staircases, mirror, snake; exact")
     print(f"mutation: {ACTIVE_MUTATION or 'none'}")
     report: dict = {}
     family_a(checks, note_text, axiom_text, b01_text, b02_text)

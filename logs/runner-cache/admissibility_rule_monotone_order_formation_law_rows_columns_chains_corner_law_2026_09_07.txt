@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_2026_09_07.py
-runner_sha256: 73ae26a5dfaf71694fa299d8734cafbf74b7eebc8ce2e84a7e7d8daee10a1f22
+runner_sha256: 5104a93e01aa413390030eeb8193040e203a0646910461de9b0af00d7400407e
 input_fingerprint_sha256: 1a49b041364505ca04c08d5a2ea09b76fe03b3eab5f4d3eb1fa17d6e6d8e51cf
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 54.84
+elapsed_sec: 40.55
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -13,7 +13,7 @@ AUDIT_INPUT_PATHS:
   docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
   docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
 AUDIT_TIMEOUT_SEC: 900
-scope: the monotone-order class on rectangles: one law mu_P, bridge, transpose, rows and columns chains, corner law, staircases, mirror and snake; exact
+scope: the monotone-order class on rectangles: one law mu_P, bridge, transpose, rows and columns chains, corner law, staircases, mirror, snake; exact
 mutation: none
 PASS: A1 the four declared audit inputs exist
 PASS: A2 axiom memo: the Admissibility and Record sentences verbatim
@@ -56,7 +56,7 @@ per_element: executed — every configuration of 2x3 (46656) for the 5 extension
 per_site: executed — every site of every linear extension of 2x3, 3x3, 3x4 (509 orders) records exactly its left and above neighbors; the declared sites of the i-j, j-i sweeps and the snake
 per_mode: executed — every column and row of 3x3 (both triples) and 3x4 as three-site joints; every 2x2 block position against the corner law; the six staircases and the snake columns as exact defects
 per_block: executed — the row kernels P and P_rl on all 216 x 216 entries against the definition; p_0 P = p_0 and p_0 P_rl = p_0 on all 216 row states; the 4x3 snake by the carried-value transfer
-lattice_wide: not claimed — P1 is proved for every rectangle and every rule; P4, P5 on the infinite strip and the quadrant follow from finite rectangles by block 02's limit arguments; nothing on the static law, the plane or orders outside the class beyond the witnesses
+lattice_wide: not claimed — P1 proved for every rectangle and rule; P4, P5 on the infinite strip and the quadrant by block 02's limit arguments; nothing on the static law, the plane or orders outside the class beyond the witnesses
 PASS: G1 the five N5 resolution lines are printed
 TOTAL: PASS=38 FAIL=0
 
