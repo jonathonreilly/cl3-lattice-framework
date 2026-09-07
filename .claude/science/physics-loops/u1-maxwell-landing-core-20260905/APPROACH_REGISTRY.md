@@ -1,0 +1,9 @@
+# Approach registry — light lane
+| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
+|---|---|---|---|---|---|---|---|
+| G1 | #7917 declared generator class | per-item adjudication against the axiom sentences with exact existence witnesses | which items follow from the axioms given the compilation | comparable (sharpened residual) | candidate-complete (block 02) | exact classification: items 4/5 mutually redundant; 1,2,6,7 supplies with witnesses; 3 conditional on IP-B | a fifth covariant coupling or a non-curl gauge-plus-chain nullspace vector |
+| G1-a | item 6 from Record permanence / no-privileged-state / sampling identification | reversibility, attractor exclusion, Gibbs mean map | conservation from an axiom sentence | target-equivalent | blocked-equivalent (block 02 N1 routes R1-R3, R6, R7 executed) | damped, overdamped, same-sign, unoriented witnesses; Gauss-Seidel decrease | a new invariant not reducible to an axiom sentence |
+| G1-b | item 6 via reflection positivity of a supplied transfer interpretation | OS reconstruction along a declared axis | self-adjoint generator on the edge/face payload | comparable | unexplored (live; needs two supplied structures) | block 02 N7 | a proof of reflection positivity for the compiled static law with the path-product and axis supplied |
+| G2 | Yee time-selection fork (#7915) | Record tick order | time selection supplied by records | comparable | unexplored | #7915 fork statement | — |
+| G3 | transverse mode exponent (ice) | finite-size scaling | linear vs quadratic origin | comparable | unexplored | #7945 5-6 sigma; #7959 quadratic L<=12 | — |
+| G4 | Maxwell germ kappa > 0 | representation positivity of Record kernels | germ hypothesis derived | weaker (one link) | provisional | #7886, #7887 | — |
