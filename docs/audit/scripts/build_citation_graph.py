@@ -154,6 +154,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "native_edge_record_z4_flux_bridge_capacity_bounded_theorem_note_2026-09-07": [
         "scripts/native_edge_record_z4_flux_five_event_check_2026_09_07.py",
     ],
+    "native_edge_record_reduced_cell_autonomous_clock_bounded_theorem_note_2026-09-07": [
+        "scripts/native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07.py",
+        "scripts/native_edge_record_reduced_cell_full_isometry_2026_09_07.py",
+        "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+    ],
     "native_edge_record_reduced_cell_full_isometry_bounded_theorem_note_2026-09-07": [
         "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py",
         "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
