@@ -1,0 +1,1 @@
+Reapply cutoff-local imported coordinates rather than compare uncutvacuum. Full-irrep center support yields exact free threshold; sourceamplification remains3. Jointghostvacuum restriction preservesactualgraph.42upper provides conditionalenvelope. EACH-fixedR GNS support uses weakresolvent and boundedlocaltrial, no doublelimit.

@@ -1,0 +1,5 @@
+# Prospective finite controls
+
+Frozen before execution. Actual cube1-skeleton:8binary vertices,12positive-axis edges, R1 labels0,+fund,-fund represented by Z3triality0,1,2. Solve all affine center-flow equations for sources000 to100 and000 to111, enumerate3^5=243solutions for each; verify every occupied support connects endpoints and minimum supports1,3. Center conservation is necessary, not sufficient for arbitrary assignments' SU3 intertwiners. Bare shortest paths are independently known actual invariant states. Add one expressly nonphysical direct ghost edge000→111: unrestricted flows have minimum1, ghostvacuum restriction restores3. Remove endpoint Gauss rows: zero flow survives, demonstrating the boundary premise.
+
+Wrong-vacuum subtraction adverse: K=diag(0,1,10), H=[[2,-1,0],[-1,2,0],[0,0,10]], cutoff retainsfirst/thirdcoordinates, firsttwo neutral and thirdcharged. V=H-K is positive and cutoffcommutesK, both Ritz energies are nondecreasing but charged gap drops9→8. This is an abstract exact logical counterexample, not a supplied SU3 model. No fit, changed geometry or theorem constants.

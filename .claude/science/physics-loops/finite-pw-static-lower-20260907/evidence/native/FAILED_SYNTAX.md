@@ -1,0 +1,1 @@
+First execution stopped at Python parsing: token `else2` in the modular pivot inverse was missing a space. No calculation ran. Original source retained; changed only `else2` to `else 2` and reran unchanged fixtures.
