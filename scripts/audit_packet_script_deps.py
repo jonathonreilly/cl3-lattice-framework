@@ -45,6 +45,13 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "native_gauge_transfer_killed_heat_second_order_kernel_bounded_theorem_note_2026-09-07": [
+        "scripts/native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07.py",
+    ],
+    "native_gauge_transfer_wilson_second_order_multiplier_bounded_theorem_note_2026-09-07": [
+        "scripts/native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07.py",
+        "scripts/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.py",
+    ],
     "spin_half_cartesian_plaquette_source_note_2026-09-07": [
         "scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py",
     ],
