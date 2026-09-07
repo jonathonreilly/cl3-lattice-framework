@@ -1,0 +1,11 @@
+# Block30 prospective finite-cube electric-gap contract
+
+Root supplied candidate free levels16/a and24/a, multiplicity12 of the first level, a two-dimensional Ritz matrix and its proposed coupling threshold before this calculation. Those candidates are not blind targets. No numerical eigenvalue fit or parameter optimization is permitted.
+
+Domain: the full physical vertex-Gauss invariant subspace of L2(SU3^12), normalized product Haar on the open three-dimensional cube with8 vertices,12 edges and6 square faces. H=K+V, K=-(3/2a)Delta_tot with Tr(TaTb)=delta_ab, V=v sum6(1-ReTr Uface/3), a>0,v>=0, imported from the prospective full compact-Hamiltonian block29. This is not a bare source compression or boundary Gaussian model.
+
+Before executing: reconstruct cube edges by lex binary vertices and positive coordinate axes. Enumerate all4096 edge supports, retaining nonempty supports with no degree-one incident vertex. Determine complete support-size census, all size4 and6 cases, and explicit no-size5 test. This finite census supplements, not replaces, the analytic Peter-Weyl/Gauss support argument and all-representation Casimir bound. Derive Casimir from the SU3 weight metric, not a bounded representation truncation.
+
+Reconstruct six oriented square boundaries. Enumerate all12 signed fundamental face characters in ordered triples (1728 patterns), recording each edge's center exponent modulo3. Check which triples survive independent edge-center selection. For surviving same-oriented-face triples, prove actual Haar integral1 via the unique SU3 epsilon invariant; center selection alone is not a Haar proof. Also enumerate pair patterns for norm/orthogonality. Derive the exact2D Ritz entries and its positivity threshold algebraically without fitting. Preserve all raw supports, faces, signed patterns, survivors and exact symbolic checks.
+
+If the same triple calculation determines the first-level perturbation matrix, derive only the local small-av asymptotic branches with their proper degenerate-perturbation scope. No global sharpness, thermodynamic/QCD mass gap, physical parameter choice or finite-volume continuum extrapolation. All new adverse failures remain preserved. Resource target180seconds/180MiB, one BLAS thread; no dense ambient Hilbert-space allocation.
