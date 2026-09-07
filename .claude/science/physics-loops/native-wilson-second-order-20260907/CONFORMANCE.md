@@ -1,0 +1,3 @@
+# Conformance
+
+Three source notes remain conditional support, with author proposals and independent audit clearly separated. Heavy five-family negative packet NOT PASS is explicit. Five canonical runners retain180-second/180-MiB limits, actual counts, strict JSON and truthful absence of runtime file dependencies. The graph helper registry is only additive and claim-local. Original compact target, loose-bound proof, failed or incomplete analytic routes, quadrature/recurrence evidence and diagnostic-before-proof history are retained. Shared validation of this coherent main-based unit follows source freeze; it does not assign an independent audit verdict.
