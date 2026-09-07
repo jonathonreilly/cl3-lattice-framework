@@ -114,3 +114,8 @@ Every mutation exits 1 and fails exactly one check in its declared family; the t
 | `claim_staircases_chains` | F | F | 1 | F2 the | 1 | yes |
 | `claim_author_in_theorem` | F | F | 1 | F3 the | 1 | yes |
 in-family: 23/23
+
+## Refuting checker and the second fold (2026-09-07) — final certificate
+
+- Checker (Opus 5; `CHECKER_block05_findings.md`): FIX FIRST on one sentence — the P7(b) mechanism sentence, forbidden by the contract's addendum A1 and false (site `(1,0)` of the `3×3` snake records two neighbors); two wording items (staircase definition; P4's infinite-strip wording). Everything else confirmed on direct summations (all four block positions of `3×3` by full `6^9` summation; every literal verbatim; the P5 and P6 proofs re-derived; 12 mutations in family).
+- Fold: the sentence deleted; staircases defined from any site; P4 stated for finite initial segments; the Review record carries the checker's verdict and the independence class. Cache re-pinned: runner sha256 `5104a93e01aa413390030eeb8193040e203a0646910461de9b0af00d7400407e` (unchanged), input fingerprint `515e1b01a3b5cc9da4b062b9f60c431fc0b288d673df09c474254f8ce9c467ee`, exit 0, elapsed 41.86 s, `TOTAL: PASS=38 FAIL=0`; note 591 lines, vocab lint 0; the census (23/23) stands at the unchanged runner sha. Gates re-run on the final tree: pipeline PASS, changed-evidence `checked=5 failures=0`, audit_lint strict OK, diff --check clean.
