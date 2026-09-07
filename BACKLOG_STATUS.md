@@ -148,3 +148,17 @@ runs, zero integration retries, no formal audit or status application.
 The reviewed coordinator-coverage clarification is in `AGENTS.md` and
 `backlog_evidence/coordinator-efficiency`; it preserves all independent review
 and integration gates while avoiding a duplicate identical full-body reading.
+
+### Curved-covariance checkpoint
+
+The initial seven-PR packet is held with no source PASS. Static local import
+reachability covers 52 modules, 45 outside the selected unit, and reaches all
+three reservations; direct Block105 assembler/Hodge calls are demonstrably
+load-bearing. The full 91,107-line static closure was not reviewed or executed.
+The reviewer identified a possible standalone supplied-matrix determinant
+lemma, plus an exact counterexample to the general single-branch rescaling
+claim and two narrower source errors. This is a partial review with a precise
+unread-scope ledger, not rejection of all seven claims or a gravity result.
+Recovery and original path dispositions are in
+`backlog_evidence/curved-reserved-checkpoint`. Heavy benchmark reruns were
+avoided because they could not lift the source reservation.

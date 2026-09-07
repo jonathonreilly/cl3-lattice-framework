@@ -1,0 +1,29 @@
+{
+  "scope": "arbitrary supplied finite matrices only; no repository imports or benchmark provenance",
+  "sympy": "1.14.0",
+  "checks": {
+    "exterior_nilpotence": true,
+    "H_positive_definite": true,
+    "D07_M_congruence": true,
+    "D07_H_schur_shift": true,
+    "predicted_zero_form_branch_not_eigenvalue": true,
+    "block_det_odd_dimension_counterexample": true,
+    "onsite_polynomial_det_identity": true
+  },
+  "semantic_mutants_rejected": {
+    "wedge_insertion_sign": true,
+    "D07_congruence_sign": true,
+    "cone_signature_erased": true
+  },
+  "D07_counterexample": {
+    "H": "I8 + (E07+E70)/4 + (E16+E61)/3",
+    "k": [
+      1,
+      2,
+      3
+    ],
+    "claimed_eigenvalue": "224/15",
+    "det_L_minus_claimed": "528724036/455625",
+    "actual_charpoly": "(8*lambda**2 - 238*lambda + 1719)**2*(15*lambda**2 - 434*lambda + 3056)**2/14400"
+  }
+}
