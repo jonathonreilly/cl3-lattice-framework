@@ -356,9 +356,9 @@ at `(5; 3,1,2)`, `111` at `(5; 5,2,4)`. The integer coefficients of `m_1` are fo
 multi-modular solve on `d` rows independent modulo `2^{61} − 1` (a search step, no authority) and
 the dependency `m_1(Q) 1 = 0` is then verified exactly in integer arithmetic on every orbit at all
 four cases — at `d = 111` with coefficients of up to 526 digits, in about ten seconds (C4); the
-contract lens's independent exact construction of the same degree-111 polynomial
-(pack `specs/supervisor_control_block06_krylov_d111_exact.out.txt`) is a
-recorded control, not an input. At width 4 the characteristic polynomial of `Q` factors with degrees
+supervisor's independent exact construction of the same degree-111 polynomial (pack
+`specs/supervisor_control_block06_krylov_d111_exact.out.txt`, 795 s), and the contract lens's
+earlier one, are recorded controls, not inputs. At width 4 the characteristic polynomial of `Q` factors with degrees
 `[1, 1, 2, 8]` and `[1, 1, 1, 5, 30]` and `m_1` is its factor of degree `d` (C5). `m_1` is
 irreducible at `d = 8, 30, 16`
 (sympy `factor_list`, C6); by Sturm counts exactly one real root lies in
