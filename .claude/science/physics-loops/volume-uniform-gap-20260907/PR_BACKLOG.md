@@ -1,2 +1,3 @@
-# Publication queue
-One coherent conditional-support review PR for block34 after changed-section review. Suggested title: [physics-loop] volume-uniform-gap block34 conditional-support. No repository branch has been created by this worker.
+# Review publication
+
+Draft PR8024 published and verified OPEN/MERGEABLE/CLEAN, stacked on8023. No publication backlog remains.
