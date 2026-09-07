@@ -21,8 +21,7 @@ meta rows. Every science row has audit_status and effective_status
 [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
 
-**Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE
-candidate is ready. Continue discovery, focused independent checks and
+**Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
 reviewed integration. Do not start an audit drain from a PR review or
 planning refresh. Candidate dependencies retain their open conditions.
 
@@ -34,9 +33,9 @@ all source has been reviewed. The campaign record tracks actual inspection.
 
 | Interface | Open evidence to inspect | Exact next question |
 |---|---|---|
-| Local admissibility and formation | #7998 → #7999 → #8000 → #8002 | Which formation process realizes which law? Distinguish finite formation, static specification, infinite-volume existence and sufficient uniqueness criteria. |
-| Record matter and energy apparatus | #7983 → #7996 → #8001 | Can the shared spectral battery be implemented with controlled spatial locality, coherence, memory and energy costs? Preparation, occurrence and schedule remain supplied. |
-| Finite-spin electromagnetic response | #7941/#7943/#7945/#7946/#7952/#7953/#7955, then #7963/#7966 | Do magnetic, electric and spectral probes use the same physical field? Then resolve estimator and infrared control. |
+| Local admissibility and formation | #7998 → #7999 → #8000 → #8002; campaign formation note | A supplied iid-priority Z3 formation process and static/formation discriminator are now independently checked. Which law/mechanism physics supplies remains open. |
+| Record matter and energy apparatus | #7983 → #7996 → #8001; campaign finite-patch note | Finite-patch approximation now has explicit conditional channel, boundary-energy and cap bounds. Supply spatial battery communication, preparation and autonomous occurrence. |
+| Finite-spin electromagnetic response | #7941/#7943/#7945/#7946/#7952/#7953/#7955, then #7963/#7966; campaign source note | Independent checks confirm a source mismatch. Repair the uniform-K/UK interpretation, define the flux-sector target, then resolve estimator and infrared control. |
 | Conditional Maxwell dynamics | #7976/#7980/#7984 and their source chain | Which dynamics-class, payload, support and conservation clauses are derived, and which supplied? |
 | Gravity and source/action | #7981/#7988/#7992/#7993/#7994/#7995/#7997 and predecessors | Connect the conditional finite-carrier kernel to a sourced physical field and action; larger benches alone do not establish that identification. |
 | Handedness and matter content | #7989/#7991 and related matter constructions | Distinguish parity-odd rule texture, motion direction, a chiral mode and selected physical matter representation. |

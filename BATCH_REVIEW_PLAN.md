@@ -1,7 +1,7 @@
 # Faster review and integration of open science
 
 Planning proposal, 2026-09-07. The owner wants the open science integrated
-more efficiently and defers formal audit until a solid TOE candidate.
+more efficiently and defers formal audit until a solid TOE.
 Independent examination of surviving source claims still precedes landing.
 
 ## Actual backlog
@@ -9,7 +9,9 @@ Independent examination of surviving source claims still precedes landing.
 The snapshot contains 254 PRs. 129 name another open branch as their GitHub
 base. Actual Git history yields 144 nearest-open-head ancestry edges and
 110 connected groups; the largest contain 97, 19, 11 and 7 PRs. These are
-routing facts, not scientific equivalence. The 97-member group must be split
+routing facts over the available local history, not scientific equivalence
+or an exhaustive ancestry proof: the object store is shallow. Unknown
+merge-bases need recovery, not an empty-delta assumption. The 97-member group must be split
 by coherent arguments and includes owner-reserved material.
 
 The current review-loop batches only the landing tail. It still requires
@@ -62,6 +64,9 @@ complete final packet can cover those inherited claims without treating the
 older parent verdicts as current. Verify the content/disposition map before
 closing covered parents. This existing cumulative-submission route does not
 require waiting for the broader review-contract proposal to be implemented.
+The exact six-path comparison is in
+[BATTERY_PR_SOURCE_MAP.json](BATTERY_PR_SOURCE_MAP.json); its scientific
+dispositions remain pending complete final-source review.
 
 | Group | PRs | Why together / required check |
 |---|---|---|
@@ -69,6 +74,28 @@ require waiting for the broader review-contract proposal to be implemented.
 | Native Record energy apparatus | #7983, #7996, #8001 | Final proposal carries both parent packets. Verify CAR/instrument hypotheses, dwell convention, energy/coherence cost and shared memory. |
 | Finite-spin field response | #7941, #7943, #7945, #7946, #7952, #7953, #7955; later #7963/#7966 | Shared Hamiltonian and observables. Verify physical source conventions before response joins; preserve convergence failures. |
 | Curved-cell/source-action | Split the 97-member group | Separate old premise epochs, conditional kernels, action identification and reserved components; do not bulk approve history. |
+
+## Campaign finding that changes the field group
+
+An independent reconstruction of frozen #7946 and its electric/spectral
+parents confirms a source mismatch. With their physical electric map
+`E_i(r)=(-1)^sum(r)(n_i(r)-1/2)`, the old plaquette phase probes a checkerboard
+source. A uniform Cartesian source needs the root-parity factor. Exact L2
+fourth-trace polynomials distinguish the resulting matrix families.
+
+The held scope is the identification of the original response with uniform
+magnetic K and the downstream UK interpretations. Preserve the original
+matrix response, electric data, spectral data, conditional kernel theorems,
+and their separate estimator limitations. Do not rerun every inherited
+calculation or delay unrelated groups. The final packaged correction passed
+focused independent confirmation on the campaign branch, bound by the source
+hashes in its field review receipt. It has not yet repaired the original PRs.
+
+A second exact source identity equates the fully relaxed spectrum at a whole
+background flux quantum with the zero-source spectrum. This leaves a separate
+branch/sector definition and limit obligation before identifying infinitesimal
+source curvature with magnetic-flux-sector stiffness. It is not evidence that
+the physical phase has been ruled out.
 
 PRs #6379, #6858 and #6859 remain reserved under the standing defaults in
 main's docs/repo/DEFERRED_DECISIONS.md. This proposal does not change that.

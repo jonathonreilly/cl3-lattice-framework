@@ -32,12 +32,17 @@ briefs, dispatch specs, strategy notes. Established at owner request
 ## Read (from any checkout, without touching your working tree)
 
 Start active campaign work from `TOE_SCORECARD.md` and `CAMPAIGN_STATUS.md`.
+Use `BACKLOG_STATUS.md` for current review, draft-triage and landing assignments.
+`DRAFT_DISPOSITIONS.json` preserves exact source comparisons, reasons, open
+review obligations and completed ready/close actions as triage progresses.
 `OPEN_PR_INVENTORY.json` captures the open science, frozen heads, changed files
 and ancestry; `MAIN_STATUS_SNAPSHOT.json` records exact ledger counts on main.
 `BATCH_REVIEW_PLAN.md` proposes coherent review groups and removal of repeated
 mechanical work. The older scorecard is retained under `history/`.
+`BATTERY_PR_SOURCE_MAP.json` pins the first cumulative review candidate's
+inherited science blobs without assigning scientific acceptance.
 
-The owner has deferred formal audit until a solid TOE candidate is ready.
+The owner has deferred formal audit until a solid TOE is ready.
 Focused independent checks and reviewed science integration continue. A
 planning refresh must not launch an audit or promote scientific standing.
 
