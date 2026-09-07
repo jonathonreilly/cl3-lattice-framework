@@ -7,3 +7,7 @@ Parent40 published at ea8f1170fb3fe19348fa43ec3ea76f30ff07d55b, PR8030. Root can
 ## Completed root validation
 
 Root final port review and pipeline cb1041e826ab, strict lint and 19-claim readiness passed against b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92. See FINAL_VALIDATION.md and the pre-cleanup receipts. Actual stdout caches are staged. Review publication is the next action; no science merge or audit verdict is performed.
+
+## Draft publication
+
+Draft PR8031 stacked on PR8030, science commit22a6434f3d9dceea99d07e00e81fc46a01970163. GitHub reports MERGEABLE/CLEAN; no remote checks were listed at receipt time. Local full pipeline cb1041e826ab, strict lint and19 readiness rows passed. Exact worktree lock released. No merge or audit verdict.
