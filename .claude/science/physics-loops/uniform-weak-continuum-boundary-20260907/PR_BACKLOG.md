@@ -1,2 +1,3 @@
-# PR backlog
-One coherent40 claim with two helpers staged; no integration worktree or PR created here. Root/orbital choose the planned linear stack containing39 and relevant34/35 parents.
+# Review backlog
+
+Draft PR8030 is open, stacked on PR8029. Await independent review; no merge or audit verdict. Pipeline f78a9d514ccb, strict lint and all18 readiness rows passed against pinned b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92.
