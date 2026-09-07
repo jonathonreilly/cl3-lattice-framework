@@ -24,7 +24,7 @@ review process landed on main `2d0f551dcd8bd444daee85b97811cda53da0661e`.
 
 | Owner | Target | Current evidence/next check |
 |---|---|---|
-| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 26 further duplicates consolidated; coordinating admissibility repairs and light-germ review |
+| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 26 further duplicates consolidated; validating the independently confirmed admissibility integration; coordinating light-germ corrections and curved-covariance review |
 | Formation author + independent checker | Formation/static interface | Conditional Z3 law constructed with finite ancestry and certified window/correlation bounds; independent static/formation and adaptive-scheduling checks pass |
 | Matter author + independent checker | Native Record shared energy apparatus | Conditional finite-patch instrument proved with volume-uniform channel/full mean-energy error bounds; independent shared-battery/free-dwell calculation passes |
 | Field author + independent checker | Consistent physical field source/response | Source convention mismatch confirmed independently; exact finite invariant, corrected finite curvature and full-flux endpoint theorem packaged and checked |

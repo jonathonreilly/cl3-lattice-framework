@@ -14,7 +14,7 @@ reservations #6379, #6858 and #6859 are all non-draft and remain in force.
 | Work | Frozen source / owner | Status |
 |---|---|---|
 | First cumulative science unit | #8001 at `707d7a9c7f929c1c2c16078dfed76acb786e5f3b`, carrying #7983/#7996; Astra xhigh independent reviewer | Independent source review PASS after one confirmed preparation-memo correction: all 97 paths classified, seven runners passed, 19 semantic mutations rejected. Integrated as source-only commit `bc116666469ed260ab53413898480d471c9c4d18`; all 97 reviewed hashes match. Landed on main `2d0f551dcd8bd444daee85b97811cda53da0661e`; all three constituent PRs closed with branches preserved. |
-| Next science unit | #7998/#7999/#8000/#8002, frozen terminal `726bafb889a85efadc62dbd81d51efb66c2cdf90`; original #8001 reviewer, separate worktree | Full cumulative source review in progress; exact finite/static/strip/uniqueness/two-site claims and appended consumer probes. Initial proof findings awaiting final scoped fixes. |
+| Next science unit | #7998/#7999/#8000/#8002, frozen terminal `726bafb889a85efadc62dbd81d51efb66c2cdf90`; original #8001 reviewer, separate worktree | Corrected final source PASS from original reviewer: all ten P2 groups resolved, 155 focused checks pass, full 71-path coverage bound. Current-main candidate `a8f84aaad75fdcb790ba6ba094e4275e237d9a5a` is in one shared mechanical validation; not landed yet. |
 | All draft PRs | 37 frozen heads in OPEN_PR_INVENTORY.json; separate Astra xhigh reviewer | All 37 source/delta dispositions reviewed: 21 close, 16 ready. All 37 actions verified: 21 closed, 16 marked ready; exact-head checks before and after every action. |
 | Faster review contract | `process/coherent-backlog-review-20260907`, base `f6f861e8f0c7870b3a9a200a020ec5ca0b14be38`; separate Astra xhigh author | Seven-file candidate complete; 133 initial focused tests passed. Fresh Astra xhigh adversarial review found a successive-manifest-conflict retry bug. Author fix passes 70 contract tests and same-session adversarial confirmation, including 17 real shell/Git scenarios. Final seven-file patch SHA256 `104d16e39fbf5736bc5cad1f5475872160803d892ebab6a737d9b4229191853e`; committed and combined with the first science unit. |
 
@@ -74,10 +74,15 @@ Frozen maps, gate results and verified landing/closure receipts are in
 verdict application occurred. Current ledger counts still describe the applied
 main ledger; source readiness does not promote those counts or statuses.
 
-The next review has found errors in the strip Perron proof normalization,
-the pair-block supremum inequality and finite-window contraction scope, plus
-unsupported larger-block and Gaussian-consumer claims. These are repair
-obligations; the four-PR unit remains held until final source confirmation.
+The admissibility review found ten groups of source errors, including strip Perron
+normalization and spectral scope, the pair-block supremum inequality and
+finite-window contraction scope, plus unsupported larger-block and
+Gaussian-consumer claims. Narrow corrections are independently confirmed;
+155 focused checks pass. Its 70 authored paths are exact reviewed bytes on
+current main, with a regenerated graph acknowledgment (+4 nodes, +9 edges;
+no changed or removed existing nodes). Candidate
+`a8f84aaad75fdcb790ba6ba094e4275e237d9a5a` remains unlanded pending the
+combined validation and final provenance checks.
 
 Read-only tower routing found that #7827 and #7813 both contain source from
 all three owner-reserved PRs. Neither raw tower is a permissible whole landing
@@ -99,9 +104,14 @@ or declared landed by these duplicate closures.
 across 35 original open constituents. They are initial review scopes, not a
 claim that all inherited tower content has been reviewed. The light germ /
 finite-depth dynamics unit (47 source paths, 11 notes and 11 runners) is now
-in independent Astra xhigh review against #7937's frozen head. Admissibility
-repairs are assigned to a separate implementation worker; the original
-reviewer owns confirmation. No author or reviewer has GitHub mutation authority.
+in independent Astra xhigh review against #7937's frozen head. Findings include
+incomplete cache import pins, a generator orientation convention, an unsupported
+gauge-speed use of the matter kinetic primitive and a Gaussian harmonic-mode
+boundary. A separate author is assigned narrow fixes after the review freezes.
+The curved-covariance unit (initial 78 paths, seven notes/runners plus mandatory
+helper/premise closure) is assigned independent review at
+`774374271180405d5c2522010511adbd2c906236`. No author or reviewer has GitHub
+mutation authority; formal audit remains deferred.
 
 All 26 further duplicate closures are complete and verified against both the
 parent and successor heads before and after each action. Every original branch
