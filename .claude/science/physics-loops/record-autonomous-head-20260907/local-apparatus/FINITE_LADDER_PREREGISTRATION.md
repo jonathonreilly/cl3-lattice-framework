@@ -1,0 +1,16 @@
+# Fixed native noncommensurate rounding witness
+
+Preregistered before computing this new fixture's outputs. This is scratch scientific verification, not a replacement or retuning of the frozen cube campaign.
+
+- Native physical square edges01,12,23,03, initial cycle+ code, original N2 dictionary, one head initially0, four live fuel bits with Delta1.
+- Nonzero hopping coefficients: a01=1, a23=sqrt(2)/3; other two coefficients zero. Keep whole native hopping operators. Spectra are deliberately not commensurate with the battery grid.
+- Initial matter state: lowest-energy state of the full live Hamiltonian, then pulse exp[-i(.37(n0-n1)+.23(n2-n3))]. Prepare independently of battery.
+- Exact continuous reference battery: normalized sine on[4,5], width1. Positive cap[0,12]. No parameter changes based on measured outcomes.
+- Finite battery cells of width delta1/4, centers(j+1/2)delta for j0..47. Initialize using normalized cell-average projection of that SAME sine packet. Round FULL sector energies to nearest delta multiple, with ties toward positive infinity. Fuel is included once.
+- Retain the same finite battery through selected incident head path01,12,23, with free dwells(.2,.3,.4) before successive events. Include BOTH native Record signs at each event, old Records, nonbridge/bridge source codes, and ONE combined-sign absorbing refusal. Rejected histories remain absorbing. This is a fixed three-event instrument sequence; it is not a claimed all-path finite-time GKSL simulation.
+- Free evolution uses the ORIGINAL unrounded source A plus finite battery-center energy. Since rounded A is a spectral function of this same A, rounded total energy must still be conserved; the test must not silently replace free A by rounded A.
+- Separately test a deliberately unsafe input using the highest battery cell11.875 with the same matter state. Measure nonzero refusal and rounded energy-distribution invariance on the completed channel.
+- Test literal finite matrix energy intertwiners for rounded H_total, original-energy intertwining defect, source/target native code and N/old Records, sign-summed completeness, joint refusal commutation and absorption, retained prefix energy distributions and original mean drift.
+- Where feasible, compare the prepared branch vectors embedded as cellwise constant functions with direct continuous energy-domain integration for the original three-event process. Split at all shifted sine endpoints and cell boundaries, Gauss16 with Gauss32 refinement. Keep coherent initial spectral groups and full accumulated original free phases. Report subnormalized branch data and total mass; no favorable-sign normalization.
+- Controls: omit/double fuel shift, replace original-energy invariance by rounded-energy invariance, reset battery between events, per-sign refusal completion, and uniformization on a coherent two-rate-sector input. Count only mutations actually executed and detected.
+- Hard resource envelope:180seconds, one BLAS thread, RSS below180MiB. Use finite code blocks and matrix-column checks, never a full fuel/head/native/battery tensor square. If independent continuous comparison exceeds the envelope, retain the matrix witness and report the remaining comparison honestly rather than altering the fixture.
