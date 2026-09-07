@@ -1,0 +1,9 @@
+# Root review of native43
+
+PASS for2037554d8fffef48606b1d866567e007ea28446d068723e43f0f6f12ab028c05. Read complete native proof after freezing root's full verification. Native explicitly includes isolated endpoints in the center-component proof and correctly allows triality-zero nontrivial occupied links: the proof uses cancellation of endpoint center factors within a component, not a claim that every nontrivial irrep has nonzero triality.
+
+The cutoff has gap1 after scaling for everyR>=1, fixed local geometry and bounded compressed interactions. The imported column constant is dimension-independent under the stated theorem hypotheses. Source amplification is3 from the fixed9-dimensional endpoint tensor, not a factor growing with PW dimension. Gauge equivariance holds for the creation operators themselves, allowing a charged coordinate resolvent centered on E0_R. Ghost-vacuum projection remains part of the restriction, so the free floor uses the actual graph distance. The argument does not subtract two unrelated variational energy inequalities.
+
+The combined dimensionless upper bound agrees with42 after dividing by4d/a. At fixed positive coupling its upper envelope tends to1 under h_R/d tending to infinity while the lower envelope remains1-kappa; no equality or convergence of charged minima is inferred. FixedR all-distance upper control is explicitly not claimed.
+
+The optional infinite paragraph is scoped to each fixedR and one selected whole-range family. Finite local matrix algebras make normality immediate. Dense finite gauge averages transfer lower spectral exclusion; a nonzero bounded local trial and uniformly bounded first moments give the upper bound under theta_bar<1. Outside that condition it does not assert general nonemptiness. No R-volume interchange or representation independence is imported. Ready for finite controls, full canonical port and repository checks, with all mathematical imports retained as conditional support.

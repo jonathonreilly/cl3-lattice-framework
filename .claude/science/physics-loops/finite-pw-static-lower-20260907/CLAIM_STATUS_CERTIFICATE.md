@@ -1,0 +1,1 @@
+Conditional-support. Lower bound uniformR/volume/d; upper bound onlyunderacceptance. No unused hardware sectors, temporal potential, continuum identification, eigenvector or finite charged-minimum convergence.

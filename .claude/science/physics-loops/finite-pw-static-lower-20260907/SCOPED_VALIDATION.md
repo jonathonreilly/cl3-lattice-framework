@@ -1,0 +1,1 @@
+Canonical --json/default/unknownflag passed. All18scientificcheck fields and486centerflows unchanged after declared metadata and platformRSS key normalization. Rawtimerafterimports preserved; canonicalbeforeimports. No graph/fullpipeline/audit run in scratch.

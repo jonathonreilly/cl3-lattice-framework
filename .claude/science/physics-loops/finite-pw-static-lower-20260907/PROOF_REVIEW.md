@@ -1,0 +1,1 @@
+Native2037554d: rootf233708b and primary4cc3d748 PASS. Root593c0cf5: nativeef7eea3a and primaryfb0ff14 PASS. Full files retained under evidence.18exactcontrols PASS with unchanged scientific canonical payload. Canonical-port review pending.

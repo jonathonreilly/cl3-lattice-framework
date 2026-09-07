@@ -1,0 +1,1 @@
+Explicit mathematical import: Yarotsky, https://arxiv.org/pdf/math-ph/0411042 , local hypotheses/Theorem1 andSection2equations8–15; optionalfixedR selectedsector usesTheorems2–3. Primarysource re-read during this block. Its constants are not fitted; no generic confinement novelty claimed. Full copyrighted paper is not copied into this packet.

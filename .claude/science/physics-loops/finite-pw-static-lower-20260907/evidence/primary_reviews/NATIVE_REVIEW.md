@@ -1,0 +1,15 @@
+# Native43 independent cold review
+
+PASS for DERIVATION.md SHA2037554d8fffef48606b1d866567e007ea28446d068723e43f0f6f12ab028c05. Read full native proof after completing my root593c0cf review. Candidate exposure is shared and disclosed; this is a cold verification, not a claim of independent discovery. No source edits.
+
+The cutoff local gap remains exactly1 forR>=1; the centered perturbation norm3u/4 and range are unchanged. The dimension-independent coordinate estimate is correctly attributed to the primary theorem/proof's arbitrary onsite spaces, gap lower bound and operator-norm machinery. It is not deduced merely from the full spectral circles. Fixing the auxiliary decay parameter before varyingR is load bearing and explicit.
+
+All-representation component-center selection includes isolated endpoint vertices and correctly allows triality-zero but nontrivial link labels. Internal center phases cancel for any irrep, whereas a component with exactly one source is forbidden. Thus actual occupied-link count, not cell count, yields the free floord. Fundamental path states remain retained atR1 and establish finite-sector nonemptiness separately from interacting acceptance.
+
+The gauge-equivariant creation logarithm and Q_I decomposition permit restricting the coefficient norm before using the resolvent. Tensoring the endpoint dimension9 costs3, not a representation-dependent factor. H_(I,0)>=|I| and the stronger charged floor give exactly the norm ratio used for z below(1-kappa)d. The inverse is centered on this cutoff's E0,R, avoiding invalid subtraction of two ordinary variational inequalities. Finite-dimensional norm equivalence need not be uniform for spectral invertibility.
+
+Ghost padding uses same-R decoupled links and an inhomogeneous fixed-range perturbation. The unique ground/log factorization fixes all ghost vacua, and the joint Gauss/ghost restriction therefore retains the actual graph distance. No artificial occupied shortcut or varying-family thermodynamic theorem is inserted.
+
+The combined upper envelope agrees algebraically with reviewed42. At fixedu, h_R/d tending to infinity is sufficient for the upper envelope to approach1; the lower stays1-kappa. Neither ratio convergence nor a fixed-R all-distance upper bound follows, and both exclusions are explicit. The u0 exact free threshold is properly separate.
+
+The optional fixed-R GNS statement uses full local finite matrix algebras, exact finite gauge averages, dense charged local tuples and local-vector weak resolvents. For theta_bar<1, q_Lambda has a positive convergent lower bound, so normalized spectral measures converge and their nonnegative first moments are lower semicontinuous. This proves nonemptiness and the upper form bound under the stated acceptance condition. Outside it the proof does not assert general nonemptiness of that selected fixed space. No charged bottom eigenvector, finite-minima convergence, R/volume interchange or physical continuum interpretation is claimed. No correction requested.

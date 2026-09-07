@@ -1,0 +1,3 @@
+# Final main66 full-pipeline checkpoint
+
+All19 child branches8015–8033 are published with main66 ancestry, same-byte source/helper/cache/registry checks, strict lint and nonempty live readiness replays of explicitly historical unaudited rows. These are not new full pipelines. Their historical full-pipeline pins remain preserved. Top branches8013/8014 science ancestors are aa30a25fc0f75bee3d2c6a0fd8056e0af44e7fd3 and bbd45b6aade388c03b7be5a8e795769fb22ef47c; later packet-only validation receipts are not recursively caught up. A single additional final43 full pipeline is now attempted against66b after this report freeze, bounded to stop at22:57UTC. Completion or partial status will be recorded separately; no success is asserted here.

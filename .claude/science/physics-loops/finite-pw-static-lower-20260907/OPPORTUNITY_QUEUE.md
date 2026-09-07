@@ -1,0 +1,1 @@
+FixedR upper control for arbitrary long paths is not supplied by42acceptance. Hardwareunusedstates, nativepreparation and couplingselection remain separate. No additional numerical threshold or optimalcutoffcost claimed.

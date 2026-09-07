@@ -1,0 +1,1 @@
+One bounded-theorem source retaining the complete native proof, one18-control helper, full root proof and all independent reviews in evidence. No invented runtime dependencies. Optional fixedR GNS statement explicitly separated from finite theorem.

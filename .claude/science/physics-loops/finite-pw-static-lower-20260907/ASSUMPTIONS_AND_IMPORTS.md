@@ -1,0 +1,1 @@
+Actual full-irrep R>=1 carriers; supplied compact SU3 Hamiltonian; full boundary Gauss; external fundamental pair; fixed geometry; imported0411042 Section2 column estimate with dimension-independent gap/norm hypotheses. Same smallu window, no numerical threshold.42upper needs theta<1. Optional GNS fixesR and whole-range interaction before volume limit.
