@@ -1,0 +1,185 @@
+# Finite local ladder with unchanged global free dynamics
+
+## Verdict and distinct conservation scope
+
+The proposed second construction is valid: retain the entire native matter
+system and its full global free Hamiltonian, localize/round ONLY the event
+fibers, then discretize and cap the shared battery. It gives a finite positive
+battery apparatus approximating the globally free local-continuous-jump law,
+and can be composed with the earlier locality estimate. Exact rounded GLOBAL
+energy conservation does not follow and is not asserted. This is distinct from
+the matched finite-patch theorem in FINITE_LADDER_APPROXIMATION.md.
+
+## Physical local controls, not global-history measurements
+
+Write the free system Hamiltonian as Aglob on the native matter/head/fuel/Record
+space. It preserves the declared classical head/fuel sector projectors and acts
+trivially on the degenerate history labels. For each legal oriented edge e,
+let E_e be its head-and-live-fuel legality effect, and K_e the complete sign
+column, K_e*K_e=E_e. At most D edges are legal on any source sector.
+
+Choose a ball B_R containing the entire physical support of K_e, its head/fuel
+transition and the deleted hopping. Truncate full local interaction TERMS by
+support to obtain Ain,R and Aout,R. For all included source patterns require
+ Hrem,out,R K_e=K_e Hrem,in,R, and ||h_e||<=t.
+Then the local transfer defect is at most c=Delta+t. These are the same ambient
+native-algebra assumptions as before, checked termwise on surviving physical
+hoppings. A CAR-only matrix identification does not prove this property.
+
+The controlled local Hamiltonians may depend on fuel/Record patterns INSIDE
+B_R. Implement that control with local pattern projectors; all other source
+sectors see the same local operator tensored with identity outside B_R. Rounding
+each local pattern block spectrally keeps this support. Include all local
+patterns, not a selected favorable global history. Updating the head, selected
+fuel and Record label is injective on the remaining source-pattern labels;
+retain distinct sign/direction channel labels so column norms do not acquire
+coherent interference between different source patterns.
+
+A mathematical direct-sum decomposition by global histories may be used to
+prove uniform bounds, but must not be implemented as a physical projector
+measuring the entire history. A fine-grained generator with separate global-
+history environment labels can dephase history coherences differently from a
+local grouped generator. Equivalence on arbitrary coherent histories requires
+an actual proof; alternatively restrict the comparison input to the supplied
+initial definite-history sector, whose jump process remains a classical mixture.
+The locality claim applies to genuinely locally controlled jumps, not to an
+unjustified replacement of a globally measuring instrument.
+
+## Local rounding and complete effects
+
+Round the local block eigenvalues to delta Z, preserving their projectors, so
+||Ain,R-Ain,R^delta|| and ||Aout,R-Aout,R^delta|| are <=delta/2. Use full local
+fuel energies once, or a compatible mesh preserving Delta separately. Define
+ W_R(tau)=exp(-i tau Aout,R)K_e exp(i tau Ain,R),
+ W_R^delta(tau)=exp(-i tau Aout,R^delta)K_e exp(i tau Ain,R^delta).
+The local input blocks commute with their legality effect E_e. Thus BOTH
+columns have effect E_e, and
+ ||W_R(tau)-W_R^delta(tau)||<=delta|tau|,
+ ||[EB^delta,W_R^delta]||<=c+delta.                       (1)
+The latter follows by adding the two local spectral-rounding errors to the
+local transfer defect. It does not require rounded surviving terms still to
+commute individually with K_e. Different local truncations for different edges
+cause no problem: each has the same corresponding legality effect E_e.
+
+Because E_e depends on conserved head/fuel data, it commutes with the full
+Aglob. The total outgoing effect is R=gamma sum_e E_e<=gamma D I. Uniformization
+at Lambda=gamma D therefore has the same null block in both laws. In fact
+Fourier marginal transport below only needs trace preservation, but this effect
+identity makes the unchanged rate/degree interpretation explicit.
+
+## Finite ladder, keeping global matter untouched
+
+Embed ladder level j as the normalized constant function on
+[j delta,(j+1)delta), with battery energy E_j=(j+1/2)delta. Let
+EB^delta(E)=delta(floor(E/delta)+1/2).
+Rounded local differences are integer delta shifts, so W_R^delta preserves the
+step-function battery subspace. The unchanged Aglob acts only on the system
+and also preserves that subspace. Replace ONLY free EB by EB^delta; then the
+full free Hamiltonian is Aglob+EB^delta. No global matter spectrum is rounded.
+Its free propagation commutes strongly with EB^delta and its cap projection,
+although it generally does not commute with the local jumps.
+
+For C=M delta retain j=0,...,M-1, all strictly positive. Cap each combined edge
+column once and add F_e=(E_e-S_e*S_e)^(1/2) into an absorbing refusal sector.
+The effect identity restores E_e and hence the exact original degree rate,
+while every matrix acting on matter is still supported within B_R: functional
+calculus for F_e occurs on the same local matter tensor factor and finite
+battery. No external global-history projector is introduced by this square
+root. The refusing state then evolves with the stipulated full free Aglob on
+its absorbing copy, with physical outgoing jumps disabled.
+
+This is a finite-dimensional battery apparatus of M levels plus a refusal flag.
+The original global matter Hilbert space is NOT replaced by a local d-dimensional
+patch. Total dimension is at most2 d_global M when the global finite native
+system dimension is d_global; additional storage capacity is ceil(log2 M)+1
+qubits. This is a capacity count, not an explicit locality-preserving hardware
+encoding or synthesis of the bath. Existing head/fuel/Record resources remain.
+
+## Why the Fourier comparison still works
+
+Before EB is discretized or capped, both globally free laws have jumps that
+multiply in tau and free Hamiltonian Aglob-i partial_tau. Their dissipators
+annihilate every multiplication projector1_B(tau), regardless of whether the
+jumps intertwine Aglob+EB. Therefore p_t(tau)=p_0(tau-t) in BOTH laws, including
+correlated system/battery states. Energy covariance is not needed for this
+marginal identity. An arbitrary untouched reference is allowed.
+
+On the initial band|tau0|<=Tcut and interval[0,T], the column difference from
+local rounding is bounded by delta(Tcut+t). The same bounded-generator
+calculation as before gives integrated jump-channel error
+ 4Lambda delta(T Tcut+T²/2).
+Changing only EB to EB^delta costs delta T in diamond norm, because its bounded
+operator difference is <=delta/2. There is NO free-A rounding term here.
+The EB change is handled after the Fourier-band comparison by a separate
+bounded-perturbation estimate; pure Fourier transport is not assumed after it.
+
+## Explicit retained-output bound and composition
+
+Initial beta is sine on[b,b+w], b>0, with u=C-b-w>0. Its normalized cell
+projection beta_delta costs at most2delta/w in initial trace norm. Let
+ eta<=32pi/[3(w Tcut)^3], Tcut>=sqrt(2)pi/w,
+ lambda=Lambda T, P(lambda)=lambda+(3/2)lambda²+(1/3)lambda³,
+ B_delta=(c+delta)²[(b-delta/2)^-2+(u-delta/2)^-2]P(lambda),
+with delta<min(w,b,u).
+The local-continuous globally free process and the finite-ladder capped one
+then satisfy
+ distance<=min{2,
+  2delta/w+4Lambda delta(T Tcut+T²/2)+delta T
+                  +4sqrt(eta)+4sqrt(B_delta)}.           (2)
+The last term is the repeated-intermediate-cap bound, not final leakage used
+as first-exit probability. It remains valid because free Aglob+EB^delta commutes
+with EB^delta and the uniformized rounded local column obeys(1). Poisson ticks
+are interleaved with actual global free propagation. Null ticks neither move
+battery energy nor create extra refusal on an accepted state.
+
+If the exact global lift and the local continuous lift obey the uniform
+finite-time locality hypothesis
+ ||W_global(tau)-W_R(tau)||
+ <=epsilon_R=C_R exp[-mu(R-a-v(Tcut+T))]
+on the enlarged band and every required history, a direct common-band comparison
+gives the stronger composed estimate
+ distance(Exact_global,Finite_local_ladder)
+ <=min{2,2delta/w+4Lambda T epsilon_R
+       +4Lambda delta(T Tcut+T²/2)+delta T
+       +4sqrt(eta)+4sqrt(B_delta)}.                      (3)
+Only one Fourier-tail term is needed when applying the common-band proof to
+the SUM of locality and rounding column errors. Applying the two separate
+triangle inequalities is also valid but pays the tail twice. Equation(3)
+keeps global matter/free propagation and the original initial matter input.
+
+The target-epsilon recipe of the matched-patch memo applies with its error
+coefficient replaced by
+ Aerr=2/w+4Lambda(T Tcut+T²/2)+T,
+and a separately allocated locality budget4Lambda T epsilon_R. The cap term
+still requires an explicit margin check; fixed cap leakage is not eliminated
+by mesh refinement. All parameters are theoretical resource variables, not a
+retuning of a frozen science fixture.
+
+## Energy statement: exact conservation is intentionally absent
+
+The local-rounded lift intertwines Ain,R^delta+EB^delta with Aout,R^delta+EB^delta.
+The process uses Aglob+EB^delta as its free Hamiltonian. These are different
+system operators, so neither accepted jumps nor refusal complements need
+intertwine GLOBAL total energy. Cap completion ensures CPTP and the original
+degree effect, not global energy covariance. The original matched-patch mean
+energy bound3delta+2delta²/w cannot be copied to this model.
+
+A separate energy analysis would have to bound the total-energy defect for
+every relevant column, AND the refusal-channel generator contribution:
+ (Aglob,out+EB^delta)W_R^delta-W_R^delta(Aglob,in+EB^delta).
+The local exact-lift relation cancels local rounded terms; what remains includes
+commutators with boundary-crossing global interactions and local rounding errors.
+Distant terms with disjoint support cancel, so a separate local boundary estimate
+may be feasible, but it is not automatically small and must include F_e. A small
+trace error against an unbounded global energy observable does not replace this
+calculation. No physical global-energy error is asserted in(2)–(3).
+
+## Scope
+
+This construction composes finite-neighborhood jump approximation with a finite
+positive battery while retaining the full global free matter dynamics. It is an
+explicit finite-dimensional GKSL apparatus model, still using a supplied Markov
+reservoir, preparation, memory and local spectral controls. It does not derive
+native one-site/Z3 admissibility, a local bath Hamiltonian, entropy reset,
+closed-unitary implementation or renewal. Completeness, legal local controls
+and uniform all-history locality estimates remain the stated prerequisites.

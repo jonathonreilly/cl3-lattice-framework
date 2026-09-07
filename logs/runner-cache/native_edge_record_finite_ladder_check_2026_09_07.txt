@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_finite_ladder_check_2026_09_07.py
+runner_sha256: 5f799032e85286ac0f511dd0073c95869830779de2306f6a9daae62ce7d80091
+input_fingerprint_sha256: 664588b2ce05af43aa6aaf422f6e3c9c9f78068f44110f342c81cc1b8df1b35d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+PASS: native noncommensurate finite-ladder complete Record witness
+519 checks; worst residual 2.38e-14; 0.447 s; 128.33 MiB
+N5 scope: Fixed three-event complete Record sequence on a native N2 square, not all-path finite-time GKSL, not the cube, not a local physical implementation; one retained battery and one combined-sign refusal.
+Parameters: {"alpha": 0.47140452079103173, "delta": 0.25, "cap": 12.0, "packet": [4, 5], "levels": 48, "path": [0, 1, 2], "dwells": [0.2, 0.3, 0.4], "free": "original A plus center EB"}
+Original free A is retained; rounded total-energy distribution is invariant.
+Original energy drift: -0.0256230505631; unsafe refusal: 0.130765720635
+Retained trace NORM error: 0.490317785609; conventional trace distance is half this value.
+Detected mutations: omit_fuel, double_fuel, separate_sign_refusals, claim_original_energy_invariance, reset_retained_battery, unrestricted_two_rate_uniformization
+Source SHA256: 5f799032e85286ac0f511dd0073c95869830779de2306f6a9daae62ce7d80091
+Dependency SHA256: {"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py": "fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af"}
+per_element: both native Record signs, finite translated-battery matrix columns and one combined refusal are checked.
+per_site: four native square vertices, old Records and directed head path01,12,23 are explicit.
+per_mode: noncommensurate sector spectra, rounded total-energy indicators and direct continuous-energy quadrature are checked.
+per_block: all three prescribed event prefixes retain the battery; unsafe completion and six adverse controls are executed.
+lattice_wide: checked and not executed -- no all-path GKSL cube simulation, infinite-volume claim or physical bath realization.
+RESOURCES {"blas_threads": 1, "rss_limit_MiB": 180, "timeout_seconds": 180}
+TOTAL: PASS FAIL=0
+
+----- stderr -----
+

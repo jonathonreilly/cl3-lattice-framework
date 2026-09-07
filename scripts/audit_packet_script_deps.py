@@ -45,6 +45,22 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "native_edge_record_local_quench_finite_ladder_bounded_theorem_note_2026-09-07": [
+        "scripts/native_edge_record_quench_orbital_check_2026_09_07.py",
+        "scripts/native_edge_record_finite_ladder_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+    ],
+    "native_edge_record_occupation_feedback_shared_battery_bounded_theorem_note_2026-09-07": [
+        "scripts/native_edge_record_occupation_feedback_orbital_check_2026_09_07.py",
+        "scripts/native_edge_record_occupation_feedback_native_ladder_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+    ],
+    "native_edge_record_autonomous_head_shared_battery_bounded_theorem_note_2026-09-07": [
+        "scripts/native_edge_record_autonomous_head_orbital_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_ablation_diagnosis_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_ablation_orbital_check_2026_09_07.py",
+    ],
     # This sibling checker independently recomputes every listed exact-algebra
     # unit and fresh-executes the primary before validating its emitted payload.
     "circulant_spectral_fold_exact_algebra_support_note_2026-08-09": [

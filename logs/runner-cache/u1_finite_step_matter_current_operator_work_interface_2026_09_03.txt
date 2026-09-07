@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/u1_finite_step_matter_current_operator_work_interface_2026_09_03.py
+runner_sha256: a35025492b6c0e8c7628f2c0b01f86d103c3a4c43d73c6ccc9c0f6015e12c184
+input_fingerprint_sha256: 71f34ef6e96914271b4960803e4e30ad03ff3b7233503b8d70412cef0bcc9c3b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[PASS] 01 every charged bond Hamiltonian is Hermitian and every finite hop is unitary
+[PASS] 02 the finite bond hop conserves total matter charge exactly
+[PASS] 03 the integrated oriented current obeys exact endpoint continuity
+[PASS] 04 the finite-step current is Hermitian and traceless throughout the grid
+[PASS] 05 the analytic sine-cosine current formula matches the unitary definition
+[PASS] 06 the exact integrated current approaches the midpoint current quadratically
+[PASS] 07 using the instantaneous endpoint current instead leaves a first-order tick error
+[PASS] 08 the finite-step correction is nonzero at a resolved tick and cannot be dropped
+[PASS] 09 the finite-step current covaries with the charged hop under endpoint gauge phases
+[PASS] 10 reversing the bond orientation reverses the integrated current
+[PASS] 11 a zero hopping coefficient produces exactly zero finite-step current
+[PASS] 12 two overlapping colored bond layers compose to an exact unitary
+[PASS] 13 the two-layer three-site hop obeys exact finite-step continuity at every vertex
+[PASS] 14 the colored matter schedule preserves total charge
+[PASS] 15 using the integrated layer currents preserves the electric Gauss residual exactly
+[PASS] 16 each operational current is confined to its active two-site bond layer
+[PASS] 17 aggregating layers in the initial frame spreads support, so local field coupling must follow the layers
+[PASS] 18 the L=4 cubic torus decomposes all 192 bonds into six local matching layers
+[PASS] 19 the six-layer cubic matter tick obeys finite-step continuity at all 64 vertices
+[PASS] 20 the field-energy change equals anticommutator midpoint work for noncommuting currents
+[PASS] 21 the symmetrized operator work is Hermitian
+[PASS] 22 the unsymmetrized classical product fails as a noncommuting work observable
+[PASS] 23 commuting field and current operators reduce to the classical midpoint law
+[PASS] 24 the operator work identity agrees in a nontrivial matter-state expectation value
+per_element: the oriented bond phase, finite current, and operator anticommutator coefficients are checked
+per_site: exact tail/head continuity and each operational two-site current support are checked
+per_mode: instantaneous, midpoint, and integrated current orders are separated on a refinement ladder
+per_block: one-bond gauge covariance, three-site colored continuity, Gauss preservation, and operator work are checked
+lattice_wide: the layerwise construction generalizes by finite edge coloring; no global solve or all-at-once current is used
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+
