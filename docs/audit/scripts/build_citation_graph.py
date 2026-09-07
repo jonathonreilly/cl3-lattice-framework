@@ -157,6 +157,10 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "native_edge_record_local_cycle_transport_and_ledger_bounded_theorem_note_2026-09-05": [
         "scripts/native_edge_record_local_cycle_transport_independent_check_2026_09_05.py",
     ],
+    "native_edge_record_local_quench_finite_ladder_bounded_theorem_note_2026-09-07": [
+        "scripts/native_edge_record_quench_orbital_check_2026_09_07.py",
+        "scripts/native_edge_record_finite_ladder_check_2026_09_07.py",
+    ],
     "native_edge_record_occupation_feedback_shared_battery_bounded_theorem_note_2026-09-07": [
         "scripts/native_edge_record_occupation_feedback_orbital_check_2026_09_07.py",
         "scripts/native_edge_record_occupation_feedback_native_ladder_check_2026_09_07.py",

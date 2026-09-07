@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_quench_orbital_check_2026_09_07.py
+runner_sha256: 8b5070cb511dad23814c7b0de65013dd0306f63919df698999d5bc991416ab56
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+PASS independent exterior-spectral quench witness: 32 cut/time rows satisfy echo and energy-defect bounds.
+per_element: six eigenvalues generate all 64 exterior subset products and all-N Hermitian subset sums.
+per_site: six chain modes, five weighted edges and the central seed are explicit; no ambient native-code matrix is simulated.
+per_mode: only 6x6 one-particle exponentials and spectra are used; no full-Fock matrix or primary imports.
+per_block: four whole-hop truncations at eight Fourier times; actual locality orders 1,2,2,infinity are checked.
+lattice_wide: not executed; this finite CAR witness does not simulate a cube device or a local Markov bath.
+SOURCE_SHA256 8b5070cb511dad23814c7b0de65013dd0306f63919df698999d5bc991416ab56
+DEPENDENCIES {}
+RESOURCES {"blas_threads": 1, "rss_MiB": 54.15625, "rss_limit_MiB": 180, "seconds": 0.1334962499968242, "timeout_seconds": 180}
+TOTAL: PASS FAIL=0
+
+----- stderr -----
+
