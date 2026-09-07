@@ -13,6 +13,11 @@ SKILL_REL = "docs/ai_methodology/skills/review-loop/SKILL.md"
 COMMAND_REL = ".claude/commands/review-loop.md"
 GENERATOR_REL = "docs/audit/scripts/generate_skill_axiom_baselines.py"
 PIPELINE_REL = "docs/audit/scripts/run_pipeline.sh"
+PLACEMENT_REFERENCES = {
+    "preflight": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+    "conformance": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+    "workflow": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+}
 FENCE_OPEN_RE = re.compile(r"^ {0,3}(?P<fence>`{3,}|~{3,})(?P<info>.*)$")
 REFERENCE_START_RE = re.compile(r"^ {0,3}\[[^\]\n]+\]:")
 PIPELINE_CONTRACT_LINE = (
@@ -29,14 +34,20 @@ python3 docs/audit/scripts/check_review_loop_skill_contract.py
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then"""
 TRAIN_VALIDATION_CONTEXT = """   TRAIN_COMBINED_VALIDATION_SCOPE=integrated-candidate
-   bash docs/audit/scripts/run_pipeline.sh
-   python3 docs/audit/scripts/audit_lint.py --strict
-   python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main"""
+   if ! { bash docs/audit/scripts/run_pipeline.sh \\
+          && python3 docs/audit/scripts/audit_lint.py --strict \\
+          && python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main; }; then
+     echo "FAILED: combined validation; preserve log and do not land" >&2
+     exit 1
+   fi"""
 TRAIN_CLEAN_CONTEXT = """   TRAIN_COMBINED_CLEAN_SCOPE=integrated-candidate
-   review_base=$(git merge-base origin/main HEAD)
-   git diff --check "$review_base"..HEAD
-   git diff --check
-   git diff --cached --check"""
+   if ! { review_base=$(git merge-base origin/main HEAD) \\
+          && git diff --check "$review_base"..HEAD \\
+          && git diff --check \\
+          && git diff --cached --check; }; then
+     echo "FAILED: candidate diff checks; do not land" >&2
+     exit 1
+   fi"""
 TRAIN_HEAD_FUNCTION_CONTEXT = """   verify_frozen_pr_head() {
      local pr="$1" expected="$2" live_ref actual
      case "$pr" in
@@ -177,9 +188,9 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"fail closed and do not land",
     ),
     "landing_train_scheduler": (
-        r"Land confirmed PRs in continuously collected trains of at most eight",
-        r"normal departure boundary is 60 minutes",
-        r"absolute 75-minute boundary",
+        r"Land confirmed units in continuously collected trains of at most eight",
+        r"depart with the useful ready batch as soon as the coordinator is available",
+        r"do not wait for an arbitrary collection deadline or an unfinished reviewer",
         r"open the next empty\s+collecting train immediately",
         r"one-component trains",
     ),
@@ -219,6 +230,15 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"write_citation_graph_manifest\.py",
         r"citation_graph_manifest\.json",
     ),
+    "manifest_sequencer_progress": (
+        r'while \[ -z "\$cherry_pick_complete" \]; do',
+        r'if ! conflicts="\$\(git diff --name-only --diff-filter=U\)"; then',
+        r'if ! conflicted_commit="\$\(git rev-parse --verify CHERRY_PICK_HEAD\)"; then',
+        r'if \[ "\$conflicted_commit" = "\$last_conflicted_commit" \]; then',
+        r"FAILED: manifest repair made no sequencer progress",
+        r"FAILED: source conflict or sequencer failure",
+        r"FAILED: manifest generation or staging during cherry-pick",
+    ),
     "disk_and_worktree_guards": (
         r"5242880",
         r"mktemp -d",
@@ -232,6 +252,43 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"refs/heads/main:refs/remotes/origin/main",
         r'^\s*if ! git merge-base --is-ancestor "\$landed" origin/main; then\s*$',
         r"landing did not complete after 4 attempts",
+    ),
+}
+
+# These clauses are prose obligations, not an automated scheduler or a proof
+# that a real unit's dispositions/receipts are complete. Keep positive clauses
+# visible and anchored; adversarial methodology review still checks behavior.
+UNIT_PROSE_RULES: dict[str, tuple[str, ...]] = {
+    "coherent_unit_coverage": (
+        r"^A review unit is one frozen, reviewable source argument\. It may be one PR or\s+"
+        r"several cumulative/dependent PRs",
+        r"^For every constituent, freeze its PR number, original head SHA, declared base,",
+        r"Record every source path and claim\s+in a complete disposition map: accepted unchanged, narrowed, superseded,\s+rejected, or deferred",
+        r"Unmapped content\s+blocks unit confirmation\.",
+        r"^Run every applicable reviewer lens on the complete final unit and its\s+interactions\.",
+    ),
+    "unit_provenance_and_recheck": (
+        r"^Freeze the disposition map hash, source/dependency/input blob hashes, original",
+        r"A changed PR head fails the provenance\s+gate even if source bytes look identical\.",
+        r"A changed premise, input, source byte,\s+or semantic interaction reopens the affected conclusion",
+        r"Both require renewed frozen provenance and same-session confirmation\.",
+    ),
+    "shared_validation_placement": (
+        r"^Perform focused source, runner, premise, vocabulary, and all three diff checks\s+per unit before freezing it\.",
+        r"^The full pipeline, strict lint, and changed-evidence gates run once on the exact\s+integrated current-main candidate, covering all units\.",
+        r"They are not required\s+again on each constituent or unit before enrollment\.",
+        r"^Reuse successful validation only for an identical frozen base and candidate\s+tree, command/options, tool/runtime versions, declared inputs, and evidence\s+scope, with accessible successful logs and their hashes\.",
+        r"already validated unit whose raw tree equals the whole integrated candidate",
+        r"A missing receipt, failed\s+command, changed base/tree/input, or changed validation scope invalidates reuse\.",
+        r"verify all non-generated bytes stayed identical\.",
+    ),
+    "unit_scope_and_close": (
+        r"^Exclude drafts by default\. Explicit owner-directed draft triage may review a",
+        r"mark-ready is not PASS, and a still-draft PR cannot land\.",
+        r"Exclude owner-reserved\s+PRs from units and their inherited content unless that reservation is explicitly\s+lifted\.",
+        r"^   Before closing each constituent, verify its accepted/narrowed/superseding\s+source and evidence on current `origin/main` against the disposition map;",
+        r"never delete its recovery branch for partial salvage\.",
+        r"review-loop must\s+not invoke an auditor or apply a scientific verdict/status\.",
     ),
 }
 
@@ -257,6 +314,13 @@ COMMAND_RULES: dict[str, tuple[str, ...]] = {
         r"verifies every frozen PR head\s+immediately before push",
         r"rechecks each head immediately before its own close",
         r"force-with-lease=<ref>:<frozen-head-sha>",
+    ),
+    "command_unit_validation": (
+        r"complete constituent\s+claim/content disposition map",
+        r"perform one full `docs/audit/scripts/run_pipeline\.sh`",
+        r"do not require duplicate per-PR or per-unit full runs",
+        r"no fixed\s+collection wait",
+        r"Mark-ready is not PASS and still-draft PRs cannot\s+land",
     ),
 }
 
@@ -872,6 +936,7 @@ def validate_texts(
     generator: str,
     pipeline: str,
     command: str | None = None,
+    placement_references: dict[str, str] | None = None,
 ) -> list[str]:
     """Return invariant-family names that are absent from the supplied texts."""
     scan = _markdown_scan(skill)
@@ -882,6 +947,7 @@ def validate_texts(
     active_pipeline = pipeline_scan.active
     missing = (
         _missing(active_skill, SKILL_RULES)
+        + _missing(scan.prose, UNIT_PROSE_RULES)
         + _missing(generator, GENERATOR_RULES)
         + _missing(active_pipeline, PIPELINE_RULES)
         + (_missing(active_command, COMMAND_RULES) if command_scan is not None else [])
@@ -904,6 +970,20 @@ def validate_texts(
         _append_once(missing, "landing_train_head_guard")
     if not _context_is_top_level(pipeline, PIPELINE_CONTRACT_CONTEXT):
         _append_once(missing, "pipeline_contract_registration")
+    if placement_references is not None:
+        placement_clauses = {
+            "preflight": r"refer to one shared pass on the exact integrated\s+"
+            r"current-main candidate, not a separate full run per constituent or unit",
+            "conformance": r"Full pipeline, strict lint, and changed-evidence checks below are one\s+"
+            r"shared pass on the exact integrated current-main candidate; they are not\s+"
+            r"additional per-PR or per-unit pre-review runs",
+            "workflow": r"then one full mechanical\s+pipeline, strict lint, and changed-evidence validation on the exact integrated\s+"
+            r"current-main candidate",
+        }
+        for name, clause in placement_clauses.items():
+            reference_scan = _markdown_scan(placement_references.get(name, ""))
+            if reference_scan.errors or not re.search(clause, reference_scan.prose):
+                _append_once(missing, f"shared_validation_reference_{name}")
     return missing
 
 
@@ -913,6 +993,8 @@ def validate_repo(repo_root: Path) -> list[str]:
         (repo_root / GENERATOR_REL).read_text(encoding="utf-8"),
         (repo_root / PIPELINE_REL).read_text(encoding="utf-8"),
         (repo_root / COMMAND_REL).read_text(encoding="utf-8"),
+        {name: (repo_root / path).read_text(encoding="utf-8")
+         for name, path in PLACEMENT_REFERENCES.items()},
     )
 
 
@@ -929,9 +1011,11 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     family_count = (
         len(SKILL_RULES)
+        + len(UNIT_PROSE_RULES)
         + len(GENERATOR_RULES)
         + len(PIPELINE_RULES)
         + len(COMMAND_RULES)
+        + len(PLACEMENT_REFERENCES)
     )
     print(
         "check_review_loop_skill_contract: OK "

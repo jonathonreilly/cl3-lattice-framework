@@ -1,0 +1,87 @@
+# Source-review correction below supersedes historical queue/closure interpretations.
+slug: admissibility-induced-law-20260906
+block: 1
+branch: physics-loop/admissibility-induced-law-static-vs-formation-20260906
+base_commit: 341511a74e (origin/main)
+mode: run
+runtime: one interactive session (target: one block with PR)
+start_time: "2026-09-06T17:30+00:00"
+checkpoint_interval: 30m
+deep_block: 90m
+target_status: best-honest-status
+lock: "scripts/automation_lock.py owner=fable-supervisor, ttl 8h from 2026-09-06T17:35+00:00"
+cycle: 1
+active_route: "block 01 = the static law versus the formation law of a nearest-neighbor rule on finite windows (GOAL.md)"
+approach_family_coverage: [F1 static-law existence (Brook + canonical potential) active, F2 non-existence certificates active, F3 positivity necessity active, F4 formation law active, F5 five coincidence routes active, F6 infinite volume queued]
+strongest_unresolved_proof_obligation: "the infinite-volume static specification (existence/uniqueness) — outside the block; the absence-extension route G(3) exact solution set — inside the block, may end as a could-not"
+hard_residual: "what the Admissibility rule induces on the infinite lattice; this block states the two finite-window objects and their exact relation"
+files_touched: [pack files, specs/primary.md, specs/supervisor_control_verify_core.py]
+open_imports: [records-only extension (named premise); formation order (unsupplied, quantified over); positivity (named hypothesis)]
+no_go_routes: [see NO_GO_LEDGER.md]
+trace_class: upstream_support
+review_findings: "panel pending; primary pending; checker pending"
+pr_status: not opened
+next_exact_action: "synthesize the four panel lenses; amend GOAL.md/specs/primary.md if a lens finds a defect; launch the Fable primary on specs/primary.md (120 min); on delivery: supervisor line-by-line review with the control script; Opus refuting checker on disjoint machinery; fold; V1-V5 and N1-N8 in the note; conformance gate 1-12; cache re-pin; manifest; PR off main"
+stop_condition: "block 01 PR opened, or a defect the panel/checker finds that the supervisor cannot repair in-session (then a documented stop with the pack checkpointed)"
+
+# 2026-09-06 block 01 CLOSED — primary (Fable, 26 min) delivered runner 53/0 (7.8 s) + note 643 lines + RESULTS + V1-V5; 41 mutations 41/41; supervisor line-by-line review (F-S1..F-S4 applied); Opus refuting checker PASS-NO-BLOCKER (CK-01..CK-12 confirmed; five editorial findings folded); cache re-pinned (runner sha 48272bc7d58cadfd5aa59d8631021825b12dfae4b81f3282d6565c7e68065b61, input fingerprint fe6d62e4e8fad0112fa0dae849b45f27b9233899c98d2649f3670918ae2ad328); conformance gate 1-12 PASS; pipeline exit 0; manifest +1 node; PR #7998 opened off main (https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7998; never merged by the campaign). pr_status: OPENED — hand-off to the owner-operated review-loop. Next block candidates in OPPORTUNITY_QUEUE.md (refresh 2026-09-06).
+
+# ---------------------------------------------------------------- block 02 (2026-09-06)
+# block: 2
+# branch: physics-loop/admissibility-induced-law-block02-infinite-strip-sweep-20260906 (stacked on block 01, PR #7998, tip 8b26a1c59a)
+# base_commit: 341511a74e (origin/main)
+# lock: owner fable-supervisor, ttl 6h from 2026-09-06T21:20+00:00
+# active_route: "block 02 = the specification, an infinite-volume static law, the exactly solvable row sweep on strips, the static infinite strip enclosed (GOAL_block02.md)"
+# approach_family_coverage: [C1 specification consistency executed, C2 existence proved (compactness), E row-sweep solvability proved (telescoping) + executed widths 2-3(4), F transfer-matrix enclosure executed widths 2-3 with Perron-Frobenius re-proved; Dobrushin uniqueness region deferred to block 03]
+# strongest_unresolved_proof_obligation: "uniqueness of the infinite-volume static law on Z^3 (block 03: the exact Dobrushin region — control values 6C = 1620/989 at (3,1,2), 51900000/40615109 at (5,2,4), 12/13 at (2,1,2)); the plane's static law"
+# hard_residual: "what the rule induces on the infinite lattice: a specification with at least one static law; on an infinite window the formation law is exactly not that law"
+# files_touched: [GOAL_block02.md, specs/primary_block02.md, specs/supervisor_control_block02_*, ROUTE_PORTFOLIO.md, STATE.yaml, HANDOFF.md]
+# open_imports: [carried from block 01; the row sweep as a declared order]
+# trace_class: upstream_support
+# review_findings: "supervisor controls done (row-law invariance exact; 8 orbits; the cubic Perron polynomial; s_inf numeric 0.256111/0.219915); one Opus refuter lens on the contract launched in parallel with the primary"
+# pr_status: not opened
+# next_exact_action: "Fable primary on specs/primary_block02.md (150 min); on delivery: supervisor line-by-line review; Opus refuting checker; fold; conformance gate; PR stacked on #7998"
+
+# 2026-09-06 block 02 CLOSED — primary (Fable, 28 min) delivered runner 37/0 + note 650 lines + RESULTS_block02 + V1-V5; contract refuter lens (Opus) before the build, 11 scoping findings folded; supervisor review (F-S1..F-S4 applied; D9/E11 added; the adjacent-column restriction observation); Opus refuting checker FIX FIRST with nothing refuted (both fixes and all recommendations folded); final runner 39/0 (26.9 s), 30 mutations 30/30; cache re-pinned (runner sha abbd76127f42d3d5e9b895c451d0f2c31899e0afeb949c7a8f812bb1f65f98c2, fingerprint 9ac6e0846636b72e1ccb6ab28df2efc123feac25cb978b26010b27fd7418eaf3); conformance gate 1-12 PASS; pipeline exit 0; manifest +1 node; PR #7999 opened, stacked on #7998 (https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7999; never merged by the campaign). pr_status: OPENED — hand-off to the owner-operated review-loop. Next: OPPORTUNITY_QUEUE.md refresh (block 02 closing) — the exact contraction region on Z^3 first.
+
+# ---------------------------------------------------------------- block 03 (2026-09-06)
+# block: 3
+# branch: physics-loop/admissibility-induced-law-block03-uniqueness-region-20260906 (stacked on block 02, PR #7999, tip bf1710f71f)
+# lock: owner fable-supervisor, ttl 6h
+# active_route: "block 03 = the exact uniqueness region on Z^3 by the one-site contraction criterion, re-proved by coupling (GOAL_block03.md)"
+# approach_family_coverage: [G the coefficient exactly (grid, lines, algebraic thresholds); H finite-window comparison by random-scan coupling, executed on the plaquette and the 3x3 window; I the corollary on Z^3; sharper two-site criteria named as leads]
+# strongest_unresolved_proof_obligation: "uniqueness or not at the silent triples (3,1,2), (5,2,4): needs a sharper criterion (two-site condition, disagreement percolation) or a transfer-matrix/expansion route"
+# hard_residual: "one law or several on Z^3 outside the contraction region"
+# review_findings: "supervisor controls done (coefficient at seven triples; the diamond; three algebraic thresholds; the 3x3 window bound holds with room); Opus contract refuter lens launched in parallel with the Fable primary"
+# pr_status: not opened
+# next_exact_action: "Fable primary on specs/primary_block03.md (150 min); on delivery: supervisor line-by-line review; Opus refuting checker; fold; conformance gate; PR stacked on #7999"
+
+# ---------------------------------------------------------------- block 03 close (2026-09-06)
+# pr_status: opened — PR #8000 (stacked on #7999; base = block 02's branch), hand-off to the owner review-loop; never merged by the campaign
+# final_certificate: "TOTAL: PASS=41 FAIL=0; runner sha a2da7fbe…; 31 mutations, census 31/31 in-family at that sha; note 756 lines; gates: vocab 0, pipeline PASS, audit_lint strict OK, changed-evidence 3/0, diff --check clean"
+# seats: "Fable primary (38.6 min); Opus contract refuter lens (seven contract defects, three false as written; all folded); Opus refuting checker PASS-NO-BLOCKER (two presentational findings, folded exactly)"
+# review_findings: "the contract's 'second real root' was wrong (three real roots); every line crosses 6c_1 = 1 twice — region on a line is a bounded open interval with algebraic ends (√30 − 5 and the roots of t^5 + 7t − 5, 5t^5 − 7t^4 − 1); the window coefficient is not bounded by c_1 ((2,5,3)); a Lipschitz lemma along a line (Σ|a_s'| ≤ 6/t) gives exact certificates"
+# strongest_unresolved_proof_obligation: "one law or several at the silent triples (3,1,2), (5,2,4), (7,3,5): a sharper criterion (two-site block, disagreement percolation) or an expansion/transfer route"
+# next_exact_action: "queue refresh: (1) the two-site block criterion at the silent triples; (2) the Pickard column theorem under the row sweep; (3) static strip widths 4–5 toward the plane; (4) the Gaussian instance on the gravity fixture; (5) formation-law uniqueness on Z^3"
+# lock: released
+
+# ---------------------------------------------------------------- block 04 close (2026-09-07)
+# block: 4
+# branch: physics-loop/admissibility-induced-law-block04-two-site-block-criterion-20260907 (stacked on block 03, PR #8000, tip d61adbe4cb)
+# pr_status: opened — PR #8002 (base = block 03's branch), hand-off to the owner review-loop; never merged by the campaign
+# final_certificate: "TOTAL: PASS=22 FAIL=0; runner sha 50b47ce6…; 17 mutations, census 17/17 in-family; note 483 lines; gates: vocab 0, pipeline PASS, audit_lint strict OK, changed-evidence 4/0, diff --check clean"
+# seats: "supervisor-authored (Fable) from the controls; Opus refuting checker: FIX FIRST on the draft (the sup-of-sums step), nothing refuted in the conclusion; folded as Theorem N' with the exact block sums"
+# review_findings: "the pair block's marginal is as sensitive as a lone site (rho/c_1 ≈ 1); B_V = 10 sigma = 3.17, 2.24, 2.38 > 2 exactly at all three silent triples, for every coupling (W_1 = TV(m_x)+TV(m_y) exactly): the tested two-site unit-site-cost Hamming criterion is silent at these three triples; Theorem M's finite boundary gaps and Z^3 implication need their stated conditions"
+# gravity_probes: "PROBES_gravity_consumer_20260907.md — queue item 4's hypothesis false (Q complex, non-Hermitian); the lane's fixture is not on main (22 open PRs); block 03 is conditional on the supplied six-menu product rule; Gaussian comparison is open and the proposed twin classification is refuted on one edge (see corrected probe)"
+# strongest_unresolved_proof_obligation: "one law or several at (3,1,2), (5,2,4), (7,3,5): larger rational finite blocks, other costs/schedules, transfer/expansion routes and ordering arguments remain open"
+# next_exact_action: "queue refresh below; the campaign's critical path now runs through the Pickard column theorem, the plane widths, and the self-made Gaussian instance"
+# lock: released
+
+# ---------------------------------------------------------------- source-review corrigendum (2026-09-07)
+source_review_correction:
+  original_head: 726bafb889a85efadc62dbd81d51efb66c2cdf90
+  current_queue: OPPORTUNITY_QUEUE.md final corrected block-04 refresh
+  provenance: "Earlier block close/PASS receipts are historical handoff records, not current source approval or main landing. REVIEW_HISTORY.md records the exact corrections."
+  closed_scope: "Only the tested two-site unit-site-cost Hamming criterion is silent at (3,1,2), (5,2,4), (7,3,5), for every coupling. No larger-block or other-metric closure follows."
+  open_obligations: "Finite-window contraction needs positive coverage-minus-sensitivity gap at every site; whole-line contraction-region exclusion is unproved outside checked values; broader formation uniqueness needs an order/initial-law contract; the Gaussian twin is refuted and any gravity probability/record map remains open."
+  next_exact_action: "Return corrected source and focused evidence to the same independent reviewer; the coordinator owns current-main integration. No formal audit or status application."
