@@ -1,0 +1,13 @@
+# Author port notes: compact preregistration and later global extension
+
+The author role is non-independent: I derived the initial multiplier proof and wrote the exact certificate. Independent native/root reviews supply the external proof checks. No staged primary or original source draft has been rewritten in this step.
+
+The original frozen target is Omega=[1/4,2]^2, W2=(3−7Q/4+Q²/4)Hexp(−Q), with a beta^-2 absolute remainder. Original huge constants, the clarified sixth-moment proof, refinement preregistration, C29/beta0=2048 proof, exact receipts and actual-torus diagnostics remain preserved. The staged THEOREM_SOURCE_DRAFT.md remains the compact-window version.
+
+After that proof, the native reviewer derived a genuine stronger domain statement in /private/tmp/toe-autonomous-native-ladder-20260907/wilson-operator/DERIVED_EXTENSION.md. The numerator remainder removes x only by |exp(−iz.x)|=1; the denominator has no x; and the final multiplier bounds were proved globally for x,y>0. Therefore the same29 and2048 extend to every dominant label p,q>=0. This is an analytic domain extension discovered after preregistration, not a retuned endpoint experiment, new fitted coefficient, or retroactive claim that the initial preregistration covered all endpoints.
+
+Suggested source wording: “The compact-window statement was preregistered and proved first. Inspection of the completed estimates then gave the following separately derived global endpoint extension, because no window restriction remains in any constant.” Cite both the preserved initial contract and the independent extension proof. Keep all beta restrictions and the unchanged conditional exact native Fourier identity.
+
+The exact primary's4 symbolic and22 rational checks already verify the scalar inequalities used by the global extension; it does not execute infinitely many endpoints. Do not inflate its counts or imply a new global numerical census. The quadrature helper remains only its frozen4 beta/endpoint cases, below2048, with its original scope. If the separate operator insertion note is packaged, its algebra and common-space argument are new analytic work; do not attribute them to the existing26 certificate assertions.
+
+The extension's same-lattice operator estimate keeps P_beta=exp[(beta/2)(J-I)] EXACT. It is distinct from a second-order expansion of the heat operator around the Dirichlet continuum semigroup. The final normalized-difference convergence is operator norm; only the inserted weighted sandwiches separately have trace-norm convergence. Preserve these norm distinctions and the absence of a full saddle spectral coefficient/sign claim.

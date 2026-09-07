@@ -1,0 +1,3 @@
+# Trace gate
+
+Classification upstream support; actual status conditional-support; target bounded_theorem. The exact native multiplier correction supports the existing conditional gauge transfer packet. Its same-lattice insertion and leading-mode difference follow from the explicit heat/Perron parent, then a positive-operator trace argument proves a negative sign against the exact sampled shifted saddle. Physical Wilson-convolution identification, continuum field interpretation and observational content remain unresolved. The next heat-side coefficient is a separate dependent block. Independent mathematical reviews and three-row mechanical readiness pass; audit is unset.

@@ -1,3 +1,5 @@
-# Publication checkpoint
+# Review publication
 
-Block22 is not yet published: integration stops before its full pipeline as directed. Parent block20 is draft PR8013 stacked on8009. Root should cold-review this two-source port, then authorize or perform validation and coherent stacked PR creation. No permission question or network failure blocks the current work.
+Published draft PR8016: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8016
+
+Stacked on8013; no merge or audit verdict. See FINAL_VALIDATION.md for pipeline9f024167191b, strict PASS and4ready against94e, then frozen-science sync to mainb965.
