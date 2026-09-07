@@ -73,11 +73,10 @@ remain in the linked per-wave directories and history snapshots.
 
 | Owner | Unit | Current state and next step |
 | --- | --- | --- |
-| Original reviewer | #7851 including #7850 | Four repairs frozen; combined final confirmation active on science, current-main composition and manifest. |
-| Repair author, then original reviewer | #7847 including #7846 | Six narrow repairs active after one P1 and five P2 findings. |
-| Original reviewer | #7972 process helper | CLI invocation and malformed-text corrections frozen; 15 tests pass. Combined final confirmation with paired science; process scope counted separately. |
-| Repair author, then independent reviewer | #7976 landing-core synthesis | Narrow historical/current-status, interpretation and exact attribution corrections active; preserve wave12 history and separate 31 quoted members from new proof imports. |
-| Prepared, unaccepted | #7892/#7893/#7903 matter and U1 links | Nine exact original authored files prepared together; full independent source/proof review and real execution remain pending. |
+| Repair author, then original reviewer | #7851 including #7850 | Four review findings are in narrow repair; original reviewer retains final confirmation. |
+| Independent reviewer | #7847 including #7846 | Full source/proof review active on the prepared binary-qubit/readout unit and actual helper closure. |
+| Independent reviewer | #7972 process helper | Three-path candidate in behavioral review; 13 existing tests pass. Selective prior-art guidance and owner cutoff preserved. |
+| Prepared, unaccepted | #7976 landing-core synthesis | Unique source remains. Narrow historical/current-status and attribution corrections required; preserve wave12 history and separate 31 quoted members from new proof imports. |
 | Reconciliation complete | Eight direct landings and 110 other closures | All 118 closed originals retain recoverable source; 85 pending closed scopes remain obligations at 11 open successors. No reopening indicated. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
