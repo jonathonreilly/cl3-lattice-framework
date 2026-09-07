@@ -151,6 +151,10 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "native_gauge_transfer_wilson_second_order_multiplier_bounded_theorem_note_2026-09-07": [
+        "scripts/native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07.py",
+        "scripts/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.py",
+    ],
     "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05": [
         "scripts/native_edge_record_matter_instrument_independent_check_2026_09_05.py",
     ],

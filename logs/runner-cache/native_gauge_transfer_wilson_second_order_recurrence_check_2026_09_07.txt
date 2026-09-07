@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.py
+runner_sha256: ff5c589ebe6be535c70411713bb00e74bddebb8e85acef25900ee158da46f01c
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.24
+status: ok
+----- stdout -----
+PASS native killed-recurrence falsifier:47 actual checks,3 frozen cases,18 rows
+BETA 128 R 128 return_scaled_beta4 14.768039597757324
+GRID 4 4 beta2_residual 0.23140670368721672
+GRID 10 10 beta2_residual 0.0932231699382467
+GRID 15 4 beta2_residual 0.06173995908098032
+GRID 4 15 beta2_residual 0.06173995908132138
+GRID 21 10 beta2_residual 0.009159802479781654
+GRID 21 21 beta2_residual 0.0012869206735816596
+BETA 256 R 192 return_scaled_beta4 14.827349893682424
+GRID 7 7 beta2_residual 0.22418817729127838
+GRID 15 15 beta2_residual 0.096091452037399
+GRID 23 7 beta2_residual 0.07040129673422085
+GRID 7 23 beta2_residual 0.07040129673535772
+GRID 31 15 beta2_residual 0.0044866163913610535
+GRID 31 31 beta2_residual 0.0014266815388649379
+BETA 512 R 256 return_scaled_beta4 14.856711084646834
+GRID 10 10 beta2_residual 0.22637956893169076
+GRID 21 21 beta2_residual 0.09029620495126545
+GRID 32 10 beta2_residual 0.06741637646913617
+GRID 10 32 beta2_residual 0.06741637647095516
+GRID 44 21 beta2_residual 0.0062072681474489855
+GRID 44 44 beta2_residual 0.0014115091198723673
+per_element: actual six-neighbor1/6 killed walk, native coefficients without Gaussian fitting
+per_site:18 frozen grid labels at their actual shifted coordinates
+per_mode: three finite sparse squares with analytic first-exit kernel tail<1e-30
+per_block: beta128/256/512 below2048 theorem threshold; floating exponential not interval-certified
+lattice_wide: checked and not executed -- no finite-packet spectrum or physical Wilson/gap claim
+SOURCE_SHA256 ff5c589ebe6be535c70411713bb00e74bddebb8e85acef25900ee158da46f01c
+
+----- stderr -----
+
