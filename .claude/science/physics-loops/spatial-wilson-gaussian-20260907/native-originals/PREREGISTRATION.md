@@ -1,0 +1,9 @@
+# Nonlinear SU3 cube-slab saddle: independent proof lane
+
+Freeze2026-09-07. Exact open tesseract32link16vertex Wilson/Haar integral with22weightedfaces (two xy z0 faces omitted), isotropic beta, spatial coefficient1/2 andtemporal1. Restoretemporal links as in reviewed source, then fix a spanningtree of15edges, leaving17SU3variables. The tree is deterministic coordinate-parent: each nonzero bitvertex connects by deleting its largest-index nonzero coordinate. No physicalpreferredtree is claimed; this is integrationgauge.
+
+Primary owns independent exact cycle Hessian/covariance computation. This lane must prove actual nonlinear obligations without importing that numerical/algebraic answer: unique gauged actionminimum, Hessianpositivity from exactlinearcell topology, compact localization, localHaarJacobian and BCH remainder, and convergence of beta^1/2 principal logarithms of the two markedholonomies under normalized exactSU3Gibbs law.
+
+Initial rigorous target is finite-dimensional weak convergence (and, if directly justified, totalvariation of gauge-coordinate densities after scaling) to the nondegenerate Gaussian determined by the cycle quadratic form. Markedholonomy limits are pushforwards of that Gaussian with explicitlinearloopmaps, with no assumed independent coordinates. Fixed boundedcontinuous tests are the initial observable class. Do not claim a global rescaled source-operator norm limit, beta4norm growth rate, Mehler spectrum or high-representation asymptotics from this weak limit alone.
+
+Adverse controls: remove enough faceconstraints to retain a nonflat gaugedmaximum, or select a non-spanning gaugeforest and falselyclaimisolatedsaddle. Such cases must fail Hessian/flatness arguments. No parameterfit or Gaussianproxy is evidence for nonlinearconvergence. Exactcompactgroup/Wilsonaction remains supplied, notaxiom-derived. Scratchonly, no repowrites. Aim actualprooflemmas before any further operator target.

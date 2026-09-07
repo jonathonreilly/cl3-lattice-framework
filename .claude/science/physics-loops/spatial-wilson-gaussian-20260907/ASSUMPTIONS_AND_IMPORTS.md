@@ -1,0 +1,5 @@
+# Premise and dependency map
+
+The actual spatial-mixing parent supplies the open finite two-slice Wilson cube,32 restored links/16 vertices/22 weighted faces, normalized Haar, and constant-spectator central source embedding with both marked face weights stripped. Spatial coefficient1/2 and temporal1 are supplied. Tree Haar gauge fixing, finite exponential coordinates, compactness and finite Taylor bounds underlie the structural proof. It needs the matrix definitions H=B*WB and Sigma=3SH^-1S*, not their numerical values.
+
+The companion imports that structural HS limit and derives detH=55/2, source covariance, normalized Haar density and the Gaussian spectrum. Independent Ad averages are essential: a frame-aligned Gaussian is not the central source kernel. Exact Weyl/Mehler and invariant-polynomial calculations apply to this Gaussian after the actual operator identification. No action selector, observed constant, thermodynamic passage or high-label uniform expansion is assumed. The finite-beta6 check is an adverse accuracy boundary, not an empirical fit or chosen physical beta.

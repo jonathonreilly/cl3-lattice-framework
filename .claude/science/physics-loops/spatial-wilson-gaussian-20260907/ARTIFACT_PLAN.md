@@ -1,0 +1,3 @@
+# Two-source canonical unit
+
+Structural source and its24-check helper:7 geometry checks and17 positive LDL pivots. Exact covariance/spectrum source and its28-check primary:17 frozen matrix checks,8 normalization controls and3 separately preregistered beta6 sanity checks. Neither numerical helper proves the nonlinear analytic convergence. Both live canonical caches are generated through execute_and_write_cache under180seconds and positive RSS below180MiB, and staged before any generated cleanup. Neither runner imports a result file or calls the other. Each source has its own primary runner, so no claim-helper map is required.

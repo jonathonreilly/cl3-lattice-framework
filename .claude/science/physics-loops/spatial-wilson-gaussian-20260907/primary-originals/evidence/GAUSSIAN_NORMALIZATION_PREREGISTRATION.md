@@ -1,0 +1,5 @@
+# Separate normalization and spectral supplement
+
+After frozen rational covariance, before symbolic normalization checks: retain Sigma=[[192,138],[138,192]]/11 in TrTaTb=delta convention. Test normalized SU3 Haar local constant j0=1/(16sqrt3 pi5) using the normalized Weyl formula and a Gaussian integral, not fitted volume. Candidate local unitary dilation makes beta^-4(D/D00) approach the correlated Gaussian probability-density kernel divided by j0, restricted to Ad-invariant functions. The raw cross-color covariance is gauge-frame dependent; central observables require relative-conjugation averaging.
+
+Independently verify Mehler theta=(32-3sqrt55)/23 and invariant Hermite degree spectrum2a+3b, first/top ratio theta². Radial Weyl transform shifts polynomial degree by3 and the two-dimensional oscillator base contributes1, agreeing with the eight-dimensional ground power4; no extra Weyl factor6. Absolute Gaussian ground eigenvalue candidate sqrt3*pi*((32-3sqrt55)/270)^4. These are exact facts about the computed Gaussian operator; identification as a nonlinear SU3 limit is a separate proof obligation and must be reviewed independently.
