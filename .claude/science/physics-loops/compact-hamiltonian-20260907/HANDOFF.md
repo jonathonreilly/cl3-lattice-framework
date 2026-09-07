@@ -5,3 +5,5 @@ One full compact Hamiltonian theorem is ready for canonical validation, stacked 
 ## Completed root validation
 
 Root final port review and pipeline 4ba17a1dcb0a, strict lint and 7-claim readiness passed against b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92. See FINAL_VALIDATION.md and the pre-cleanup receipts. Actual stdout caches are staged. Review publication is the next action; no science merge or audit verdict is performed.
+
+Draft PR8021 is published stacked on8020; OPEN/MERGEABLE/CLEAN verified. Science commit7fd184b2ad93d7e688f2b9df1e28642266599661. Exact worktree lock released after publication. No merge or main push. Parent coordinates further blocks.
