@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py
+runner_sha256: d842c8025bddbece5fb92a325333d3912ec5fd1379d320a7e4e2a05c896b0824
+input_fingerprint_sha256: ebec9fc1698ccd8280a94199448d3c98440c18a41541eaab53ab32a7aec75a5a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.78
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md
+AUDIT_TIMEOUT_SEC: 900
+scope: a self-made Hermitian Gaussian instance on the path, the plaquette and the 2x3 rectangle: the formation law's precision L^H D L, the recorded-set class, the separation from P, Hadamard, the three read-slice covariances; exact; no external fixture
+mutation: none
+PASS: A1 the four declared audit inputs exist
+PASS: A2 axiom memo: the Admissibility and Record sentences verbatim
+PASS: A3 block 01's note: claim id and the one-recorded-neighbor fragment
+PASS: A4 block 05's note: claim id and the every-rule fragment
+PASS: A5 this note carries its claim id
+PASS: B1 both instances on the three windows are Hermitian with positive leading principal minors (positive definite)
+PASS: B2 G1: the product of the conditional densities has the quadratic form L^H D L, Hermitian, on every order of the path and plaquette and two orders of 2x3, both instances
+PASS: B3 G1: det L = 1 and det P_sigma = prod_k P_kk (the formation normalizer is order-independent)
+PASS: B4 G2: the 24 orders of the plaquette fall into 14 recorded-set classes and P_sigma is constant on each
+PASS: B5 G2: the 5 monotone orders of 2x3 give one P_sigma; the snake and the mirror give different ones
+PASS: C1 G3: P_sigma = P + diag(c) + F on 62 (instance, window, order) cases
+PASS: C2 G3(a): P_sigma differs from P on every order of every window (each has a recorded neighbor)
+PASS: C3 G3(b): support(P_sigma) = support(P) exactly when every site records at most one neighbor (then F = 0)
+PASS: C4 G3: on the path, the end-to-end order keeps P's support with corrections [5/48, 5/48, 0]; the middle-out order fills in the end pair
+PASS: C5 G3(c): 2x3 monotone class: corrections [5/24, 5/24, 5/48, 5/48, 5/48, 0]; fill-in on the anti-diagonal pairs (((0, 1), (1, 0)), ((0, 2), (1, 1)))
+PASS: D1 G4: det P < prod_k P_kk (Hadamard) on the three windows, both instances; det P real and positive
+PASS: D2 G4: equality det P = prod P_kk for a diagonal P
+PASS: E1 G5: on 2x3 the static marginal, the pinned-static conditional and the formation read-slice covariances of row 1 are pairwise different
+PASS: E2 G5: the formation precision's row-1 block differs from P_11: diagonal [149/48, 149/48, 3] against [3, 3, 3]
+PASS: E3 G5 remark: herm(Q^-1) != (herm Q)^-1 for the non-Hermitian witness Q = [[1,1],[-1,1]]
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+per_element: executed — every order of the path (6) and the plaquette (24), the five monotone orders, the snake and the mirror of 2x3, both instances
+per_site: executed — the recorded set of every site in every order; the diagonal correction and the fill-in at every site and pair
+per_mode: executed — the quadratic form of the conditional product against L^H D L; det L = 1; the leading principal minors; the three read-slice covariances
+per_block: executed — the row-1 block of P, of P_sigma and of the three covariances on 2x3; the determinants on the three windows
+lattice_wide: not claimed — three finite windows of a declared instance; nothing about larger windows, the plane or any external fixture
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+
