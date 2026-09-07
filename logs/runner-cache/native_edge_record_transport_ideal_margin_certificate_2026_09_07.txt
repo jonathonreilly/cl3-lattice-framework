@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_transport_ideal_margin_certificate_2026_09_07.py
+runner_sha256: 1d4ab304a51c8bf3095499e5f1fde8e934a4623b9e1de6e312b6c6a468680ec5
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+[PASS] signed cube has h0^2=3I exactly
+[PASS] degree-three operator-norm bound
+[PASS] integer-certified sqrt(3) enclosure
+[PASS] initial pulsed energy below -1e-6
+initial_pulsed_negative_energy_slack>=5.9059088308
+[PASS] all rational covariances exactly Hermitian
+[PASS] every prescribed deletion leaves graph connected
+[PASS] all five pre-event fourth-current slacks strictly positive
+[PASS] all five additional post-event fourth-current slacks strictly positive
+[PASS] all post-event densities strictly within [0.1,0.9]
+[PASS] all post-event energies below -1e-6 (stronger than parent minimum gate)
+[PASS] one pre-event selected-front current exceeds 0.05
+prefix=1 chosen_four=(2, 1, 4, 3) current_slack>=0.0605543062 post_chosen_four=(2, 1, 4, 3) post_current_slack>=0.0605543062 density_slack>=0.0253038929 negative_energy_slack>=5.7489311145 covariance_error<1e-22=True
+prefix=2 chosen_four=(4, 3, 2, 1) current_slack>=0.2362774875 post_chosen_four=(4, 2, 1, 8) post_current_slack>=0.0114396402 density_slack>=0.0993008023 negative_energy_slack>=5.3309600002 covariance_error<1e-22=True
+prefix=3 chosen_four=(4, 2, 1, 8) current_slack>=0.0492056499 post_chosen_four=(4, 2, 1, 8) post_current_slack>=0.0492056499 density_slack>=0.1903481533 negative_energy_slack>=4.7681208706 covariance_error<1e-22=True
+prefix=4 chosen_four=(4, 1, 2, 8) current_slack>=0.1732355474 post_chosen_four=(4, 1, 2, 8) post_current_slack>=0.1732355474 density_slack>=0.2731483199 negative_energy_slack>=4.1773993562 covariance_error<1e-22=True
+prefix=5 chosen_four=(4, 8, 1, 2) current_slack>=0.1376858185 post_chosen_four=(4, 8, 1, 2) post_current_slack>=0.1376858185 density_slack>=0.2472171339 negative_energy_slack>=3.5838388966 covariance_error<1e-22=True
+front_witness step=2 edge=3 slack>=0.2062774875
+[PASS] covariance errors bounded strictly below 1e-22
+[PASS] chosen integer width strictly exceeds every sufficient bound
+[PASS] original-only integer width strictly exceeds its sufficient bounds
+ORIGINAL_GATES_SUFFICIENT_WIDTH=125 bottleneck=pre-current-3 support=[24,149] mean=173/2 cap=173
+ADDED_POST_GATE_SUFFICIENT_WIDTH=260 derived_from=ideal_slacks_and_pi_squared_less_than_16 bottleneck=post-current-2
+BATTERY support=[24,284] mean=154 cap=308; one retained continuous battery, no reset; width-one result unchanged
+Scope: original pre-current/front gates, added post-current gate, and post-density/all-prefix-negative-energy gates; no optimum-width claim
+[PASS] execution stays within 180 seconds and 180 MiB
+runtime_seconds=0.02 peak_rss_mib=17.9
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+
