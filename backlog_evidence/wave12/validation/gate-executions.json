@@ -1,0 +1,37 @@
+[
+  {
+    "name": "pipeline",
+    "command": [
+      "bash",
+      "docs/audit/scripts/run_pipeline.sh"
+    ],
+    "exit_code": 0,
+    "elapsed_sec": 231.493,
+    "log_sha256": "51ac145fdbb0d1a28b66328a97c055fcff8541ad10f906b3de80aa99e6775607"
+  },
+  {
+    "name": "strict-lint",
+    "command": [
+      "python3",
+      "-B",
+      "docs/audit/scripts/audit_lint.py",
+      "--strict"
+    ],
+    "exit_code": 0,
+    "elapsed_sec": 3.398,
+    "log_sha256": "8f946b4bc44947f001520a4115c97a338cb5ce529d100d4c10efc810246ab48d"
+  },
+  {
+    "name": "changed-evidence",
+    "command": [
+      "python3",
+      "-B",
+      "docs/audit/scripts/check_changed_audit_evidence.py",
+      "--base",
+      "7887b4481feae2800c04c7c42ddac9554f2c2b9f"
+    ],
+    "exit_code": 0,
+    "elapsed_sec": 1.055,
+    "log_sha256": "eb0311193e0251f1d6c2a5b46fa8d1ed6889c59a32032273b4a3f6f1223e43ea"
+  }
+]

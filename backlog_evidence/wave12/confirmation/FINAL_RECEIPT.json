@@ -1,0 +1,140 @@
+{
+  "verdict": "PASS",
+  "scope": "one combined affected-science plus current-main integration and manifest confirmation; not formal audit",
+  "base": "7887b4481feae2800c04c7c42ddac9554f2c2b9f",
+  "source_tree": "4e43f743e30de667b0b938910df959b2ebca6d22",
+  "final_tree": "9ad35f944f2b9c0b98454f890ec2c996af1a8a02",
+  "manifest_sha256": "9b84e14114ccfbf90ee04429d5d23212e5570c9159d788f7df70937bca162944",
+  "original_full_review_report_sha256": "6cbfb19a4083fe2efea7740c084d994273cc03c535fd911729f378897ef52fad",
+  "original_full_review_receipt_sha256": "d297cdd763c8fbdb25b8d59c9a77dc5217708ac2dd266cd6a9e886bca410e915",
+  "author_receipt_sha256": "07e93a9f3490115fcf5c41427fb3af41d320dcc5217c653b4e62f6f841f26b9b",
+  "resolved_findings": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8"
+  ],
+  "remaining_findings": [],
+  "full_runner_receipts_verified": {
+    "block02": [
+      110,
+      0
+    ],
+    "block03": [
+      98,
+      0
+    ]
+  },
+  "fresh_pristine_source_controls": [
+    8,
+    3,
+    8
+  ],
+  "fresh_actual_source_mutants_rejected": 9,
+  "fresh_actual_cache_drifts_rejected": 7,
+  "actual_consumer_api_calls": 4,
+  "graph_added_nodes": 2,
+  "graph_added_edges": 3,
+  "graph_old_records_exact": 4806,
+  "full_main_paths_preserved_except_manifest": 28508,
+  "history_bodies_exact": 15,
+  "protected_context_paths_exact": 82,
+  "scientific_grade_or_formal_audit_applied": false,
+  "source_edits_or_git_PR_planning_actions": false,
+  "artifacts": [
+    {
+      "path": "ACTUAL_IO_CLOSURE.json",
+      "sha256": "48fb5f8e6ad69841f9441d7d91d7f704c88603ef7c685c7161bc3475bbed76ce",
+      "bytes": 1313
+    },
+    {
+      "path": "AUTHOR_ANCHOR_BINDING.json",
+      "sha256": "5fd27b9427f7c01ed7de1f5ea9dd30681393695a8e32144ffa820bf441c51942",
+      "bytes": 77
+    },
+    {
+      "path": "CACHE_AND_EXECUTION_BINDING.json",
+      "sha256": "fc2297a39c2514c0b8d68708970b77e35bb546be7ac0ed76a9df3d5002124a57",
+      "bytes": 3337
+    },
+    {
+      "path": "CONSUMERS_AND_GRAPH.json",
+      "sha256": "e11910b991e9469eaf1b4afec95afad051113350e9f99884e17a6f0cf42154bd",
+      "bytes": 1096
+    },
+    {
+      "path": "INDEPENDENT_MATH_CONTROLS.json",
+      "sha256": "04c62c0daa5c641fa79ec5b8cbddeb4e49388ae3a4c8b202c636107e956aedd3",
+      "bytes": 3678
+    },
+    {
+      "path": "ORIGINAL_FINAL_CHECK.json",
+      "sha256": "d7ee018a9f72b1da2077076f4f85a92cf98af36d222978ff3a673999d5aa8170",
+      "bytes": 26726
+    },
+    {
+      "path": "REEXECUTED_SOURCE_MUTATIONS.json",
+      "sha256": "b22a70292ea2ae230aefe79314eb252bd7ed14f9865b11e6ec0fc9db5258a1f2",
+      "bytes": 14348
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "9983d4fcc48eab7586dd9bccd07aa973d0f5595af3046ebb34c3e1560da54777",
+      "bytes": 10901
+    },
+    {
+      "path": "SOURCE_BINDING.json",
+      "sha256": "b3d2828ff53ca802f9ef7de71a91f9b6afcc6361552b078405ec585e0aaea5c1",
+      "bytes": 19048
+    },
+    {
+      "path": "block02.diff",
+      "sha256": "f11dedea365279166458d8e0a3e3218b9b0958f340ee57ed3b7eff18ef8aea88",
+      "bytes": 66956
+    },
+    {
+      "path": "block03.diff",
+      "sha256": "1c7163cfb2d93bca26a27962ae8413a330e806732000cd633d8445913e7232f7",
+      "bytes": 52261
+    },
+    {
+      "path": "independent-math.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent-math.stdout",
+      "sha256": "04c62c0daa5c641fa79ec5b8cbddeb4e49388ae3a4c8b202c636107e956aedd3",
+      "bytes": 3678
+    },
+    {
+      "path": "independent_math_controls.py",
+      "sha256": "7133a83c64728de127a15052e2f54f68da960d5fcd187e8b727bf22172e51111",
+      "bytes": 9710
+    },
+    {
+      "path": "reexecute_source_mutations.py",
+      "sha256": "77fd1096a8daa89b76d17ff2ef57b0c10463c888002bedcaccb7e1c62a71ee7b",
+      "bytes": 4711
+    },
+    {
+      "path": "reexecuted-mutations.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "reexecuted-mutations.stdout",
+      "sha256": "a693d732fc4142006fc0beaf28e4ade6373244992cf7a63b447f8205f6cd88ec",
+      "bytes": 355
+    },
+    {
+      "path": "verify_integration.py",
+      "sha256": "f67624d90ba3bd9caba88560a8f8b947cf8f2816e9d97ab5fc64b6dcb27736df",
+      "bytes": 10578
+    }
+  ]
+}

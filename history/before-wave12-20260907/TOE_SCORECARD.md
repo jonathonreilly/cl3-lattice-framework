@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
 Verified source/status snapshot: 2026-09-07, main
-`66b1b4f8a964f4011a3f4e7876369b7daf8e1834`. This is a planning map, not
+`7887b4481feae2800c04c7c42ddac9554f2c2b9f`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -16,8 +16,8 @@ finite additivity and I(empty)=0. Older proofs requiring those clauses need
 an explicit supplier. README paraphrases and old skills are not substitutes.
 
 The tracked ledger contains 4,475 rows: 4,105 non-meta science rows and 370
-meta rows. The latest forty-seven source notes have not been added to the applied
-ledger: mechanical validation generated forty-seven unaudited rows locally, then
+meta rows. The latest forty-four source notes have not been added to the applied
+ledger: mechanical validation generated forty-four unaudited rows locally, then
 stripped those generated files. No audit status was applied. Every tracked science row has audit_status and effective_status
 `unaudited`. Counts were computed from every tracked shard; see
 [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
@@ -38,7 +38,7 @@ all source has been reviewed. The campaign record tracks actual inspection.
 | Local admissibility and formation | #7998/#7999/#8000/#8002/#8003 corrected source now on main; campaign formation checkpoint remains unlanded | A supplied iid-priority Z3 formation process and static/formation discriminator are now independently checked. Which law/mechanism physics supplies remains open. |
 | Record matter and energy apparatus | #7983/#7996/#8001/#8004/#8005/#8006 reviewed source now on main; campaign finite-patch note remains a checkpoint | Finite-patch approximation now has explicit conditional channel, boundary-energy and cap bounds. Supply spatial battery communication, preparation and autonomous occurrence. |
 | Finite-spin electromagnetic response | #7966 preserves the consolidated field chain; standalone source/receipt and selected finite-projector corrections are independently reviewed and landed | Independent checks confirm a source mismatch. Repair the uniform-K/UK interpretation, define the flux-sector target, then resolve estimator and infrared control. |
-| Conditional Maxwell dynamics | #7984/#7980 corrected conditional dynamics/support source is on main; #7976 remains separate | Which dynamics-class, payload, support and conservation clauses are derived, and which supplied? |
+| Conditional Maxwell dynamics | #7984 carries preserved #7980 source and review obligations; #7976 remains separate | Which dynamics-class, payload, support and conservation clauses are derived, and which supplied? |
 | Gravity and source/action | #7981/#7988/#7992/#7993/#7994/#7995/#7997 and predecessors | Connect the conditional finite-carrier kernel to a sourced physical field and action; larger benches alone do not establish that identification. |
 | Native transfer and spatial gauge models | #8007/#8008/#8009 corrected mathematical source is on main; later spatial successors are outside this backlog cleanup | Keep exact discrete-saddle and continuum-limit coefficients distinct. Supply the physical action, coupling identification and volume/continuum bridges before inferring a physical mass gap. |
 | Handedness and matter content | #7989/#7991 and related matter constructions | Distinguish parity-odd rule texture, motion direction, a chiral mode and selected physical matter representation. |

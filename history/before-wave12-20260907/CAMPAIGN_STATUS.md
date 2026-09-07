@@ -49,8 +49,8 @@ question; no blanket disposition of that PR is asserted.
 
 ## Next scientific decisions
 
-1. Repair four #7851/#7850 findings and continue #7847/#7846 review; the corrected
-   #7984/#7980 scope is now landed. Closure/content reconciliation is complete in
+1. Repair the eight frozen #7984/#7980 findings and continue original backlog
+   science. Closure/content reconciliation is complete in
    `BACKLOG_CLOSURE_RECONCILIATION.md`; pending closed scopes remain obligations
    at their named open successors. Preserve all premise and reserved-source holds.
 2. For field response, choose the actual physical source/sector and estimator
