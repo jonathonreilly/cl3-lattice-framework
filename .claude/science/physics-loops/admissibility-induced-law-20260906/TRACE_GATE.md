@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) and an exact boundary; next per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+# Trace gate — block 06, at landing (PR #8034)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 02's refresh item 3: the width-W enclosures for W = 4, 5 and the static pair statistic versus the width-independent formation value"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "widths 4 and 5 rigorously enclosed by a field-free self-adjoint route that scales with the orbit count; next per the queue refresh: the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the monotone class; width 6 with an interior pair two steps in; consumers: the parked bridge material (read-only, not fired), the record-matter lane's formation-order supply"
+```
