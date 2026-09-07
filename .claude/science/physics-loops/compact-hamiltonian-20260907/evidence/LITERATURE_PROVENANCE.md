@@ -1,0 +1,3 @@
+# Primary literature boundary
+
+Verified official APS abstracts on2026-09-07: [Kogut and Susskind1975](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.11.395) presents Wilson lattice gauge theory in Hamiltonian form. [Creutz1977](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.15.1128) specifically relates the Wilson transfer matrix to the Kogut–Susskind Hamiltonian through vanishing temporal spacing. The present route must credit this established result. These are historical/conceptual anchors; no coefficient or numerical comparator is imported from the abstracts, and their full paywalled text was not read. The local proof derives coefficients and domains independently.
