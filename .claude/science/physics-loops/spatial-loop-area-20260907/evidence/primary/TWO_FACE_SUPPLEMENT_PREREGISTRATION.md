@@ -1,0 +1,3 @@
+# Analytic two-face candidate frozen before exact checks
+
+From independent Rayleigh-Schrödinger algebra, centered V=-S/6, psi1=S/96, and psi2=R0 S²/576. For the six-link rectangle W=(chi_C+bar chi_C)/6, its free energy is24. Thus the u² coefficient is I(1/9216+1/6912), I=Haar integral W S². Independent shared-link integration predicts I=2/9, yielding7/124416. This candidate was derived without a supplied root/native two-face value. Check actual20link/11face two-cube geometry center survivors at order2, exact shared-link Haar index contraction, all rational factors, and an adverse replacement of the final resolvent energy24 by16. Do not fit the candidate if a check fails.

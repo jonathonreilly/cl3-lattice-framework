@@ -1,0 +1,2 @@
+# Scoped validation
+Live canonical --json and default executions passed for both helpers. Exact scientific payload equality against original raw output holds after only declared metadata exclusions in PORT_RECEIPT.json. Unknown CLI flags fail. No graph, claim-audit verdict, readiness or full pipeline has been run in scratch. Cache-ready output is preserved; integrator must execute actual canonical paths.

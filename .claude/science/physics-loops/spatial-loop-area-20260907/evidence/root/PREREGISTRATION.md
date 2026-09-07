@@ -1,0 +1,13 @@
+# Root prospective spatial-loop area route
+
+Hard block36 begins20:16UTC. Native/root independently found the same marked-polymer route in primary arXivmath-ph/0412040; primary independently owns all-order center selection and exact low-order contractions. This records candidates before a canonical proof/check or claim of area suppression.
+
+The paper's actual range-vacuum premise requires h_range,x=sum_(y in x+Lambda0)h_site,y. On a periodic box this sums to4 times the onsite model, so use the whole normalized physical Hamiltonian aH; grouped centered perturbation norm<=3|u|, u=av. Do not silently reuse the3u/4 threshold from34.
+
+Ordinary polymer weights and counts obey |w_gamma|<=epsilon^|support| and at mostc^n containing one spacetime point. Marked-observable weights obey ||A||epsilon^(n-m), m=|S|. For a rectangularloop choose S to be all perimeter vertices asoutgoing-linkcells, including anunusedcorner ifnecessary, so S is connected and m=perimeter. Establish marked count<=c_mark^n; choosea singlec dominating both, epsilon<=1/(4ce). KP pinned-cluster bound then yields ordinary-decoration factor e^n. Sum marked supports n>=m to get |F_A(z)|<=||A||(ce)^m/(1-ceepsilon)<=||A||(2ce)^m, uniformlytime/volume on a fixedcomplexdisk. This needs actual complex norm estimates and normalized marked-cluster identity; bare real-axis analyticity is insufficient.
+
+Ground expectation must be continued holomorphically with <Omega|e^(-NH(z)) A e^(-NH(z))|Omega>/Z_(2N)(z), with no conjugation of z on the left. At realz this is the normal ground expectation; complex values are analytic continuations, not physical probabilities. Closed-disk control mayrequire choosing a smallerdisk inside the admissible neighborhood.
+
+For coefficient selection, avoid tracing an unbounded non-trace-class resolvent series termwise. Near0 in each finitevolume, use the rank-one holomorphic Riesz projection P(z_f^+,z_f^-) and center covariance, so F=Tr(W_C P) has a well-defined holomorphic multivariate expansion. Center charge forces sum(kplus-kminus)boundary(f)=-boundary(C) modulo3 for each monomial. Project the2chain onto the rectangleplane. In a finite openplane the only compact filling is the rectangle; in a periodicLxLyplane fillings differ byconstantk∈Z3, withsupportatleastmin(A,LxLy-A). RestrictA<=LxLy/2. Thus vanishingorder>=A.
+
+If the analytic bound holds, the higher-order Schwarz lemma directly gives |F_C(u)|<=C0^P (|u|/u0)^A, with no unnecessary1/(1-q) factor. This is spatialWilsonloop suppression; do notclaimtemporalstringpotential, actualphysicalconfinement, arbitrarycoupling orcontinuumclosure. Newexternalcluster/KPimports mustbeexplicit andverifiedfromprimarysources.
