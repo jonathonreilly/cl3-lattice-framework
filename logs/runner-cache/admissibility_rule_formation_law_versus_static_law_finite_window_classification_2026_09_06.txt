@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_formation_law_versus_static_law_finite_window_classification_2026_09_06.py
+runner_sha256: 48272bc7d58cadfd5aa59d8631021825b12dfae4b81f3282d6565c7e68065b61
+input_fingerprint_sha256: 0559d8935e06ca3b5a2f85fd11038730b3db9da80c5c931ec8d05fb7f210725d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 10.91
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 600
+scope: finite windows, six-projector menu, exact arithmetic; no infinite-volume claim
+mutation: none
+PASS: A1 both declared audit inputs exist
+PASS: A2 axiom memo contains: There is one fixed nearest-neighbor ad
+PASS: A3 axiom memo contains: is determined by, and varies with, the
+PASS: A4 axiom memo contains: Records form.
+PASS: A5 axiom memo contains: records are permanent
+PASS: A6 axiom memo contains: Only records are readable.
+PASS: A7 axiom memo contains: A site with no record cannot be read.
+PASS: A8 the note carries its claim id
+PASS: A9 upstream binary note exists (presence only)
+PASS: B1 six projectors Hermitian, idempotent, trace one (sympy exact)
+PASS: B2 pair orbits by Tr(PP') in (1, 0, 1/2): census (6, 6, 24)
+PASS: B3 24 proper signed axis permutations: det +1, closed, order 24
+PASS: B4 every rotation permutes the menu; action transitive
+PASS: B5 U_z spinor: P(e_x)->P(e_y), P(e_y)->P(-e_x), fixes P(+-e_z)
+PASS: B6 U_3 = (I - i(sx+sy+sz))/2 unitary, cycles P(e_x)->P(e_y)->P(e_z)
+PASS: B7 covariant site weight: solution space dimension 1 (constant)
+PASS: B8 covariant symmetric pair weight: exactly three orbit values
+PASS: B9 edge flip t_{e1} o R_{e2,pi} is in the group, swaps 0 and e1; phi(a,b) = phi(rho b, rho a) = phi(b,a) on 36 pairs
+PASS: B10 positivity: every r(s | eta) > 0 for every partial eta at the declared triples
+PASS: C1 Theorem A: full conditionals of the static law equal the rule on path3/P4/star4/cycle4 (all v, x, s; both triples)
+PASS: C2 cycle4 with exterior records P(+e_x), P(-e_y): full conditionals equal the rule with exterior records
+PASS: C3 cube8: full-conditional identity on the family (741 near-reference + 300 LCG), with and without exterior
+PASS: C4 positive rule => positive static law on the declared windows (cube8 on its family)
+PASS: C5 Brook uniqueness on path3 (3,1,2): 648x216 compatibility system, exact rank 215 (Bareiss), mu spans the nullspace, positive
+PASS: C6 sum rule inconsistent on path3: compatibility rank (216, 216) = 216 at lambda 1/4, -1/8 (|lambda| < 1/deg)
+PASS: C7 single edge: the sum rule is consistent (nullity 1, law (1 + lambda<s,t>)/36) at both couplings
+PASS: C8 sum-rule Brook cycle: R(1/4) = 27/25, R - 1 = -4*lambda**3/((lambda + 1)**2*(2*lambda - 1)); lambda^2 divides, no other root in |lambda| < 1/6
+PASS: C9 the same Brook cycle for the product rule with symbolic (p, q, r) is exactly 1
+PASS: D1 B1 identity mu_sigma prod Z_k = mu Z_W for every order, v, window, triple
+PASS: D2 every formation law sums to one
+PASS: D3 consistency line Z_W = sum_v mu_sigma prod Z_k (not a theorem)
+PASS: D4 B2: mu_sigma = mu iff max|A_k| <= 1; equal orders path3/P4/star4/cycle4 = (4, 8, 12, 0)
+PASS: D5 B5 census of distinct formation laws path3/P4/star4/cycle4 = (2, 3, 5, 4); class sizes [4, 2]; [8, 8, 8]; [12, 6, 2, 2, 2]; [8, 8, 4, 4]
+PASS: D6 f_j formulas and factorizations symbolic, j = 1..5; at p = q: 2(p-r)(p^j-r^j)
+PASS: D7 one-neighbor normalizer p + q + 4r for every menu value (symbolic)
+PASS: D8 cube8: all 40320 orders have some |A_k| >= 2; max|A_k| distribution {3: 40320}
+PASS: D9 cube8 six declared orders: identity on the family; single-site variation: three values = const * prod f_j
+PASS: D10 B4 constant rule (2,2,2): uniform under every 1- and 2-neighbor condition; mu_sigma = mu for all orders of path3, cycle4
+PASS: D11 menu witness f(x) = 1 + x^2(1-x^2) at (1,-1,0,1/2) = ('1', '1', '1', '19/16'), x^2 = 1/2: 5/4; induced (1,1,1); mu_sigma = mu on cycle4
+PASS: D12 asymmetric pair weight on path3: the identity fails for 5 of 6 orders
+PASS: E1 route 1: the (3,1,2) rule varies between the conditions P(+e_x) and P(+e_y) on the menu; the constant rule does not
+PASS: E2 route 2: non-constant psi breaks covariance; Z_2-constant system in psi has rank [6, 6] (both triples)
+PASS: E3 route 3: a direction-blind absence factor is forced constant by covariance (dimension 1)
+PASS: E4a route 4 path3 (0,2,1): 8 eqs, r=c=1; Groebner basis contains (a-1)u,(b-1)u,(p-q)^2u,(q-1)^3u, u=(p+q+4)^2: a=b=c, p=q=r; verified
+PASS: E4b route 4 cycle4 (0,1,2,3): uniform static marginal vs first-site marginal (ac,bc,ac,bc,c^2,c^2) forces a=b=c; reduced 3 eqs give p=q=r; verified
+PASS: E4c route 4 factorized: rank Z_2 = [4, 6] at (3,1,2),(5,2,4); det Phi = (p+q+4r)(p+q-2r)^2(p-q)^3; minors symbolic: rank >= 2 unless p=q=r
+PASS: E5 route 5 cycle4 mixture: max |avg - mu| = 899/2341664 (3,1,2), 3478458125/23066700436908 (5,2,4); control (2,3,5) 1585133/10007780364
+PASS: E6a route 6: static one-neighbor conditional = rule on path3, not on cycle4 (219/866, 71/866, 72/433 x4 vs 1/4, 1/12, 1/6 x4)
+PASS: E6b route 6 chain rule on cycle4: given all earlier records mu_sigma = mu for 24/24 orders; given recorded neighbors only 0/24
+PASS: F1 the note carries the four fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (hits: [])
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+per_element: executed — every menu value, every configuration of path3/P4/star4/cycle4, every order, both triples, exact
+per_site: executed — the full conditional at every site of every declared window; cube8 on the declared configuration family
+per_mode: checked and not executed — no spectral decomposition in the theorem; det Phi factorization is symbolic
+per_block: executed — every order's normalizer history block by block; cube8: 40320 orders combinatorially, six exactly
+lattice_wide: checked and not executed — finite windows only; the infinite-volume specification is named, not computed
+PASS: G1 the five N5 resolution lines are printed (each >= 40 characters)
+TOTAL: PASS=53 FAIL=0
+
+----- stderr -----
+
