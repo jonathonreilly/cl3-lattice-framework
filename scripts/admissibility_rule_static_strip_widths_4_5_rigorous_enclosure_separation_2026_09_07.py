@@ -1025,7 +1025,7 @@ def family_e(checks: Checks, enc: dict, report: dict) -> None:
 FENCES = (
     "This note encloses the static strip's deep-row pair statistics exactly at widths four and five and compares them with the formation value; it states nothing about the plane's static law beyond these widths, and no monotonicity in the width is claimed.",
     "No order is selected as physical; no plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
-    "The transfer-matrix and Perron–Frobenius machinery is cited from block 02, and the Collatz–Wielandt, trace, Davis–Kahan and Krylov steps are proved here at the scope used; the spectral theorem for self-adjoint operators is cited scaffolding; no value, constant or theorem is imported as authority.",
+    "The transfer-matrix and positive-matrix machinery is cited from block 02, and the two-sided ratio, trace, residual–gap and Krylov steps are proved here at the scope used; the spectral theorem for self-adjoint operators is cited scaffolding; no value, constant or theorem is imported as authority.",
 )
 FORBIDDEN = (
     "the plane's static law is", "toward the plane", "approaches", "converges", "convergence", "the plane's value",
@@ -1068,11 +1068,9 @@ def family_f(checks: Checks, note_text: str) -> None:
     for sec in sections[1:]:
         title = sec.splitlines()[0].strip()
         body = sec
-        if title.startswith("Boundaries"):
-            body = body.replace(FENCES[2], "")
         if any(nm in body for nm in CLASSICAL_NAMES) and not any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
             offenders.append(title[:30])
-    checks.check("F4", not offenders and any(nm in text for nm in CLASSICAL_NAMES), f"classical names only in Prior art, Imports and the verbatim fence (offenders: {offenders})")
+    checks.check("F4", not offenders and any(nm in text for nm in CLASSICAL_NAMES), f"classical names only in Prior art and Imports (offenders: {offenders})")
     decimals = set()
     for ln in OUT_LINES:
         for m_ in re.finditer(r"\d+\.\d+", ln):

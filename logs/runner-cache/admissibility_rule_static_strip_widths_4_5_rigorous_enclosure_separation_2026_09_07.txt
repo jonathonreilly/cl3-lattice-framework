@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_2026_09_07.py
-runner_sha256: 57a840346f74b10ae5e9f5a518c62f358d4767034144c860dd389280adc04997
-input_fingerprint_sha256: b5a5caa473ef094e41da23da07a4ac5a7a057d7d277da668f5f6c9e18aa7565c
+runner_sha256: 9b05b6d8b81fdf529885ac1e0a31922557889e255260ac6e9f17e600c875d315
+input_fingerprint_sha256: 53bf61e9c45e7d08b1d52ad75445da812aadf6a9055304fcfe6b86393de09e19
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 64.33
+elapsed_sec: 87.89
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -53,7 +53,7 @@ PASS: E4 lambda_2bound/lo <= 0.05538, 0.03301, 0.06932, 0.04150 (rounded up; bou
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (hits: [])
 PASS: F3 runner source: no floating-point literal, conversion, evaluation call or array library (0 hits)
-PASS: F4 classical names only in Prior art, Imports and the verbatim fence (offenders: [])
+PASS: F4 classical names only in Prior art and Imports (offenders: [])
 PASS: F5 every decimal label in this stdout came from the integer-arithmetic dec() (32 labels; stray: [])
 per_element: executed — every row state of the width-2, 3, 4, 5 strips enters the orbit reduction, the quotients and the full-state checks, both triples, exact
 per_site: executed — the edge pair (0, 1) and the innermost pair of every row; the end-row records on every site of both end rows in the boundary check
@@ -61,7 +61,7 @@ per_mode: executed — the Perron root by the ratio bounds, every other eigenval
 per_block: executed — the finite-n center rows for n = 3 to 65 in the sector and n = 3 to 7 (width 4) and 3 to 5 (width 5) on the full state; the characteristic polynomial at width 4
 lattice_wide: checked and not executed — strips of widths 2 to 5 only; the plane and wider strips are named, not computed, and no monotonicity in the width is stated
 PASS: G1 the five N5 resolution lines are printed (each >= 40 characters)
-elapsed_s: 64
+elapsed_s: 87
 TOTAL: PASS=34 FAIL=0
 
 ----- stderr -----

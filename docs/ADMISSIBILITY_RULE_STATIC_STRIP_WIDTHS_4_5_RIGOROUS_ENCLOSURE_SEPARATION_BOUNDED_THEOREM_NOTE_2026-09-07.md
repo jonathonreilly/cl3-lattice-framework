@@ -23,7 +23,7 @@ On strips four and five sites wide, the single static pattern law gives neighbou
 matching that sit a fixed step away from the odds the order-built law gives them, both at the edge
 of the strip and one step in. We pinned those odds down with rigorous bounds far tighter than the
 question needs, and where the algebra is small enough we identified them as exact algebraic numbers.
-The step is present, and of the same size, at every width we computed: two, three, four and five.
+The step is present, and of about the same size, at every width we computed: two, three, four and five.
 Nothing is said here about wider strips or about the infinite plane.
 
 Exactly: on the open-boundary strip `S_{W,n}` of width `W = 4` or `5`, the static law's center-row
@@ -479,7 +479,7 @@ This note encloses the static strip's deep-row pair statistics exactly at widths
 
 No order is selected as physical; no plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision.
 
-The transfer-matrix and Perron–Frobenius machinery is cited from block 02, and the Collatz–Wielandt, trace, Davis–Kahan and Krylov steps are proved here at the scope used; the spectral theorem for self-adjoint operators is cited scaffolding; no value, constant or theorem is imported as authority.
+The transfer-matrix and positive-matrix machinery is cited from block 02, and the two-sided ratio, trace, residual–gap and Krylov steps are proved here at the scope used; the spectral theorem for self-adjoint operators is cited scaffolding; no value, constant or theorem is imported as authority.
 
 Further: the deep-row law is block 02's F3 object (the center-row law of the `n`-row strip as `n`
 grows, end-record independent), cited, not re-proved; the finite-`n` sequences and the `n = 33`
@@ -522,7 +522,7 @@ the same bounds normalized
 the single record `P(e_y)` on every site of both end rows through the tensor structure of `V` (the
 contract said "sector"; a single record is not `G`-invariant, so the sector version uses the
 orbit-averaged record and is executed as well); the degree-111 dependency, which the contract left
-to the lens's 791-second control, is verified exactly by the runner itself in about ten seconds by a
+to the lens's and the supervisor's 13-minute controls, is verified exactly by the runner itself in about ten seconds by a
 multi-modular search and an integer verification; the resultant is computed by exact evaluation and
 interpolation rather than a bivariate call. The supervisor's control numbers (orbit counts, Krylov
 dimensions, `λ_1` to eighteen digits at four cases, the innermost enclosure and the `n = 33` sector
