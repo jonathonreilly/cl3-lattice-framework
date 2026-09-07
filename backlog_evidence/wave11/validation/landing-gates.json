@@ -1,0 +1,51 @@
+{
+  "head": "7887b4481feae2800c04c7c42ddac9554f2c2b9f",
+  "tree": "8914ba25301109889874de9573ac4650a13b13c9",
+  "base": "60b98160bdab0a4aed2069da47bb8e1ed674c29d",
+  "gates": [
+    {
+      "name": "pipeline",
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 223.126,
+      "log_sha256": "1f17d2ff28235008da474949e031aacd42ad66e614dd8c056a5540438098d632"
+    },
+    {
+      "name": "strict-lint",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/audit_lint.py",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 3.232,
+      "log_sha256": "a0b5f0de1fd766788689b25b67014735f6d4a1abbfe2d78bc7c6dcdf99874eee"
+    },
+    {
+      "name": "changed-evidence",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/check_changed_audit_evidence.py",
+        "--base",
+        "60b98160bdab0a4aed2069da47bb8e1ed674c29d"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 1.003,
+      "log_sha256": "c6517ef556b1b66c7dd75b216de8e887113aa9802dea48c7f86f44136862bc00"
+    }
+  ],
+  "full_validation_runs": 1,
+  "integration_retries": 0,
+  "generated_paths_preserved_and_stripped": 1501,
+  "generated_untracked_paths": 45,
+  "generated_patch_sha256": "fa37bd702d2e536f2c227e08095317c5d41b2ce3371ab1e4579561fee7811525",
+  "source_hashes_unchanged": true,
+  "clean_after": true,
+  "formal_audit_invoked": false,
+  "audit_verdict_applied": false
+}

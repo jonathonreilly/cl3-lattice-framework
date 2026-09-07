@@ -1,0 +1,15 @@
+# Required obligation transfer for any #7980 → #7984 consolidation
+
+1. Preserve and route the entire original block02 adjudication: all seven declared dynamics-class items, the conditional compatibility/covariance results, and payload/transformation/time/locality/conservation residual. #7984 carries the note verbatim; its later Gauss refinement is an additional conditional result, not deletion or approval of block02.
+
+2. Preserve all exact alternative-law witnesses, finite-size/domain limits, orientation-law distinctions, target-equivalent IP-B and LR/SI assumptions, no-go route boundaries and the live reflection-positivity/readout/time forks. A routing closure proves none of these scientific claims.
+
+3. Preserve block02 checker findings CK-01..CK-08, primary/checker mutant provenance, results, trace and NO_GO_LEDGER. Later appended block03 findings CK-01..CK-07, zero/all-charge and coin distinctions, and quoted-PR corrections remain separate evidence and obligations.
+
+4. Keep the original axiom memo epoch, exact runner/cache bytes and quoted September 5 PR scope. The memo itself is byte-identical on current main; corrected/landed light-lane sources and changed historical PR status still require an explicit current-source comparison before scientific reuse. An evidence-address assertion is not automatic proof-input clearance.
+
+5. Review the complete frozen scientific bodies, mathematical hypotheses, actual runtime/helper closure and bounded adversarial controls before any landing. This routing task inspected scopes and actual static input boundaries, not the full 803/1293-line block02 or 863/1333-line block03 proof/runner bodies.
+
+6. Preserve original source branch physics-loop/u1-maxwell-landing-core-block02-dynamics-class-20260905 at 11fdd471a5dbe4ae9bce07bc56b9385fdd9c74c7 and successor branch at 3e229941150157c67e2a7192b7f1242f77313ec4. Root must recheck both live open heads and route every inherited obligation explicitly if it closes #7980. No reserved #6379/#6858/#6859 action or inherited scientific acceptance follows.
+
+7. Neither canonical block02 source nor its runner/cache is on current main. Do not say merged, landed, proved, or science-complete. Any later integration must independently preserve current main and regenerate/validate controlled topology against that exact candidate.

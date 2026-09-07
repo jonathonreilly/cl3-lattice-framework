@@ -48,8 +48,8 @@ question; no blanket disposition of that PR is asserted.
 
 ## Next scientific decisions
 
-1. Correct the older #7984/#7980 adjudication while the next bounded spatial
-   successor is independently reviewed. Preserve current-premise and reserved-source holds.
+1. Finish the bounded independent source review of #8009 while other coherent
+   backlog units are prepared. Preserve current-premise and reserved-source holds.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
