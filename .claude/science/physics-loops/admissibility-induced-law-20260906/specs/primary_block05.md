@@ -8,7 +8,7 @@ Your complete science contract is `GOAL_block05.md` in this pack, INCLUDING its 
 - OUTPUT DISCIPLINE: no single tool call may write more than 250 lines; commit after every coherent append with explicit paths and the prefix `ail05:`. Reads ≤ 250 lines per call. Every Bash call under 10 minutes; long runs in the background writing to S, polled.
 - Budget 120 minutes; at 100 minutes stop adding and certify.
 - Exact arithmetic only: `fractions.Fraction`, Python ints (`sympy` only if needed). No `float`, `numpy`, `nsimplify`, `evalf`, `N(`. The runner self-scans its source as blocks 01–04 do. Integer numerators over common denominators in the hot loops (the `3 × 3` row-transfer contractions with `216^3` terms take ~10 s with Fractions; keep the baseline under 300 s).
-- The lane's forbidden-phrase scan is a SUBSTRING match: never write "certified"/"uncertified" (use "verified"), "phase transition", "several static laws", "the physical order", "washes out"; the name "unilateral-field" only inside the `## Prior art` and `## Imports` sections.
+- The lane's forbidden-phrase scan is a SUBSTRING match: never write "certified"/"uncertified" (use "verified"), "phase transition", "several static laws", "the physical order", "washes out"; the literature author's surname (the unilateral-field structure's name) only inside the `## Prior art` and `## Imports` sections.
 
 ## Read caps
 1. This pack: `GOAL_block05.md` (complete, with the addendum), this spec, the two controls.
