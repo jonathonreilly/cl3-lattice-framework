@@ -41,3 +41,13 @@ Block 04 landed (PR #8002): the two-site block criterion is silent at the three 
 3. **The Gaussian instance, self-made** (re-scoped from "on the gravity fixture", see `PROBES_gravity_consumer_20260907.md`): the static/formation distinction for a Hermitian positive-definite precision on the smallest window with a plaquette, the disconnection rule as the record reading, exact over the Gaussian rationals; the Gaussian twin of block 01's Theorem B; one small block. Consumer: the gravity lane's K2 sentence, the day its chain is on main.
 4. **Formation-law uniqueness on Z^3** (unchanged).
 5. **The silent triples by a non-criterion route**: a transfer-matrix or expansion route, or an ordering (contour) argument on the other side — each heavy; not before 1–3. Exactly computable block criteria are closed (block 04).
+
+## Refresh at block 05 close (2026-09-07)
+
+Block 05 landed (PR #8003): the monotone-order class is one law with rows and columns as path chains and the corner law; staircases are not chains; the class boundary is exact. Ranked next:
+
+1. **Static strip widths 4–5 toward the plane** (unchanged from the block-02 refresh): the width-3 algebraic enclosure of the static pair statistic is the template; the trend in `W` against the width-independent formation value `p/(p+q+4r)`; one block.
+2. **The self-made Hermitian Gaussian instance** (re-scoped by `PROBES_gravity_consumer_20260907.md`): the static/formation distinction for a Hermitian positive-definite precision on the smallest window with a plaquette, the disconnection rule as the record reading; the Gaussian twin of block 01's Theorem B; one small block.
+3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; whether the plane's monotone-class law (all four corner classes) is one object or four, and its relation to the static law of the plane; one block.
+4. **The silent triples by a non-criterion route** (unchanged; heavy).
+5. **Non-monotone orders with chain columns** (a characterization; low priority; the snake's `4×3` failure suggests none besides the corner classes).
