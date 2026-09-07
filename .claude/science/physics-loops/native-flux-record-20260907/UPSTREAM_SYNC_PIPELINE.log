@@ -1,4 +1,4 @@
-began full build f6486e91aa02
+began full build fe769556b2ba
 ==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)
 cache rematerialized
 ==> 0/18 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)
@@ -11,21 +11,21 @@ audit_model_family_normalization_guard: PASS
 ==> 1/18 run_citation_graph_build.py (serialized graph build)
 Waiting for serialized citation-graph build lock /var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/citation-graph-build-f471c760dcaaaf04b9c2.lock
 Wrote docs/audit/data/citation_graph.json
-  nodes: 4807  edges: 11987
-  roots: 1989  leaves: 2114
-  runners attached: 3676
-  claim_type_seed_hint_counts: {'meta': 377, 'bounded_theorem': 2881, 'open_gate': 240, 'no_go': 356, 'positive_theorem': 676, 'none': 274, 'decoration': 3}
+  nodes: 4809  edges: 11990
+  roots: 1989  leaves: 2115
+  runners attached: 3678
+  claim_type_seed_hint_counts: {'meta': 377, 'bounded_theorem': 2883, 'open_gate': 240, 'no_go': 356, 'positive_theorem': 676, 'none': 274, 'decoration': 3}
 ==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)
-Wrote docs/audit/data/citation_graph_manifest.json (4807 nodes, 11987 edges)
+Wrote docs/audit/data/citation_graph_manifest.json (4809 nodes, 11990 edges)
 ==> 1c/18 compute_load_bearing.py pre-seed topology refresh
 Updated docs/audit/data/audit_ledger.json
 Wrote   docs/audit/data/load_bearing_summary.json
   thresholds: {'critical_in_degree': 15, 'critical_descendants': 250, 'high_in_degree': 5, 'high_descendants': 100, 'medium_in_degree': 2, 'medium_descendants': 5}
-  criticality (topology-only): {'leaf': 2575, 'critical': 742, 'medium': 1183, 'high': 307}
+  criticality (topology-only): {'leaf': 2577, 'critical': 742, 'medium': 1183, 'high': 307}
 ==> 2/18 seed_audit_ledger.py
 Wrote docs/audit/data/audit_ledger.json
-  rows: 4521
-  newly seeded: 46
+  rows: 4523
+  newly seeded: 48
   preserved (audit kept): 4475
   migrated path aliases: 0
   preserved archived failed: 0
@@ -38,43 +38,43 @@ Sanitized docs/audit/data/audit_ledger.json
 Updated docs/audit/data/audit_ledger.json
 Wrote   docs/audit/data/load_bearing_summary.json
   thresholds: {'critical_in_degree': 15, 'critical_descendants': 250, 'high_in_degree': 5, 'high_descendants': 100, 'medium_in_degree': 2, 'medium_descendants': 5}
-  criticality (topology-only): {'leaf': 2575, 'critical': 742, 'medium': 1183, 'high': 307}
+  criticality (topology-only): {'leaf': 2577, 'critical': 742, 'medium': 1183, 'high': 307}
 ==> 3a/18 seed_audit_ledger.py fixed-point receipt
 Wrote docs/audit/data/audit_ledger.json
-  rows: 4521
+  rows: 4523
   newly seeded: 0
-  preserved (audit kept): 4521
+  preserved (audit kept): 4523
   migrated path aliases: 0
   preserved archived failed: 0
   re-audit required (hash changed): 0
   dropped (note removed): 0
   dropped (gated source): 286
 ==> 3b/18 static_pipeline_checkpoint.py prepare (fresh graph/seed proof)
-prepared classifier inputs c080a436de6a
+prepared classifier inputs 056a72406788
 ==> 4/18 classify_runner_passes.py
 Wrote docs/audit/data/runner_classification.json
-  runners classified: 3467
-  runners with (C) first-principles compute hits: 1845
-  runners with (D) external comparator hits: 1151
-  decoration candidates (no C, no D): 719
-  dominant class distribution: {'B': 630, 'C': 1343, 'A': 537, 'none': 461, 'D': 496}
+  runners classified: 3469
+  runners with (C) first-principles compute hits: 1846
+  runners with (D) external comparator hits: 1152
+  decoration candidates (no C, no D): 720
+  dominant class distribution: {'B': 630, 'C': 1343, 'A': 539, 'none': 461, 'D': 496}
 ==> 4b/18 static_pipeline_checkpoint.py capture (fresh classifier proof)
-captured full-build caches c080a436de6a
+captured full-build caches 056a72406788
 ==> 6/18 compute_effective_status.py
 Updated docs/audit/data/audit_ledger.json
 Wrote   docs/audit/data/effective_status_summary.json
-  effective_status counts: {'meta': 370, 'unaudited': 4151}
+  effective_status counts: {'meta': 370, 'unaudited': 4153}
   retained pending chain: 0
   cycles detected: 59
 ==> 7/18 invalidate_stale_audits.py + restore loop
-invalidate_stale_audits: scanned 4521 rows
+invalidate_stale_audits: scanned 4523 rows
   evidence-universe re-audit targets: 0
   invalidated (hard reset): 0
 ==> 7a/18 compute_load_bearing.py post-status fixed point
 Updated docs/audit/data/audit_ledger.json
 Wrote   docs/audit/data/load_bearing_summary.json
   thresholds: {'critical_in_degree': 15, 'critical_descendants': 250, 'high_in_degree': 5, 'high_descendants': 100, 'medium_in_degree': 2, 'medium_descendants': 5}
-  criticality (topology-only): {'leaf': 2575, 'critical': 742, 'medium': 1183, 'high': 307}
+  criticality (topology-only): {'leaf': 2577, 'critical': 742, 'medium': 1183, 'high': 307}
 ==> 7b/18 compute_lane_certification.py post-invalidation fixed point
 lane_certification: charged_lepton_koide_value: 39 blocking (closure 40)
 lane_certification: acphilambda_retirement_basis: 2 blocking (closure 2)
@@ -87,9 +87,9 @@ Wrote docs/audit/data/cycle_inventory.json
 ==> 9/18 compute_audit_queue.py
 Wrote docs/audit/data/audit_queue.json
 Wrote docs/audit/AUDIT_QUEUE.md
-  total pending: 4151
-  ready: 1558
-  by criticality: {'critical': 711, 'high': 294, 'medium': 1045, 'leaf': 2101}
+  total pending: 4153
+  ready: 1559
+  by criticality: {'critical': 711, 'high': 294, 'medium': 1045, 'leaf': 2103}
   cycle break targets: 59
 ==> 10/18 compute_reaudit_candidates.py
 Wrote docs/audit/data/reaudit_candidates.json
@@ -112,7 +112,7 @@ Wrote docs/audit/data/auditor_reliability.json
   total third-pass decisions: 0
   total cross-confirmation pairs: 0
 ==> 13/18 audit_lint.py
-audit_lint: 4521 rows checked
+audit_lint: 4523 rows checked
   12 warnings:
     claim_type_defaulted: 12
       WARN: ckm_atlas_axiom_closure_note: claim_type silently defaulted to positive_theorem; add an explicit 'Type:' header to docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md, or register the path in docs/audit/data/meta_source_patterns.txt (catalog/index) or docs/audit/data/excluded_source_patterns.txt (non-claim infra)
@@ -202,7 +202,7 @@ PASS rows=4475 retained_grade=0 link_violations=0 class_f_violations=0 graph_del
 ==> 18b/18 check_review_loop_skill_contract.py (review quality/safety guard)
 check_review_loop_skill_contract: OK (29 families)
 ==> 18c/18 static_pipeline_checkpoint.py finalize (successful full-build checkpoint)
-finalized full checkpoint c080a436de6a
+finalized full checkpoint 056a72406788
 
 Pipeline complete.
   Read docs/audit/AUDIT_LEDGER.md for the rendered ledger.
