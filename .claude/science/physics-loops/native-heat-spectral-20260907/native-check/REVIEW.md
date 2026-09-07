@@ -1,0 +1,11 @@
+# Native recurrence diagnostic receipt
+
+The frozen 36 two-endpoint cases pass. The actual killed native generator is applied as six vector shifts with coefficient beta/6 and diagonal -beta, retaining the loss at each wall. expm_multiply acts on this generator, independently of the six-image continuum formula. The source is nonorigin and scales to an interior point; endpoints include both boundary layers and distinct interior locations. The L² Gaussian polynomial is derived from the second time derivative: (r²-4r+2)/t², r=Q/t.
+
+At beta2048, maximum absolute leading residual is 0.0002656078329613676, corrected residual 0.0000003001788856504405. Maximum scaled finite-box truncation bound is 0.000000003415595033636358, below the margin to 18/beta². Lower-beta controls are outside the theorem's beta domain. Every leading and corrected residual is retained, including signed values; no correction-improvement filter was imposed.
+
+The Chernoff estimate bounds the probability of an upper-wall crossing of the unrestricted walk, hence dominates entry loss due to the extra upper boundaries. Each coordinate has independent-increment MGF exp[(2 beta t/3)(cosh theta-1)]; exponential-martingale maximal inequality with theta=asinh(d/(2 beta t/3)) yields the stated bound. The lower walls are the desired native killing and are not truncation errors. Floating exponential evaluation remains uncertified; this is a falsifier diagnostic, not an independent proof of the theorem constant or a spectral fit.
+
+Two earlier allocation implementations completed their scientific assertions but exceeded the unchanged 180 MiB cap. Their sources are retained. The final implementation uses the identical frozen geometry, coefficients and cases, with a matrix-free six-shift action. No raw scientific results from the failed runs were emitted because the resource assertion preceded JSON. No peak RSS value was printed in those failures, so none is invented here.
+
+The standalone runner has no runtime file inputs. Mathematical provenance is the native six-step generator and reflected heat source; no artificial AUDIT_INPUT_PATHS dependency is declared. Source SHA and resource measurements are emitted live, with finite and duplicate-key case guards and 180-second/180-MiB rejection.

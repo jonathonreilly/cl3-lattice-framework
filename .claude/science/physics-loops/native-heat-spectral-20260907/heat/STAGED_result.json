@@ -1,0 +1,39 @@
+{
+  "checks": {
+    "prefactor_pi22over7": true,
+    "low_lt_14over5": true,
+    "exp64over3_gt_billion": true,
+    "exp32_gt_trillion": true,
+    "exact_tail_lt_21over1000": true,
+    "approx_tail_lt_1over1000": true,
+    "total_lt3": true,
+    "reflection_constant": true,
+    "cut_inside_torus": true,
+    "tail_monotonic_threshold": true
+  },
+  "rational_assertion_count": 10,
+  "low_bound": "449888256/160908575",
+  "exact_tail_bound": "196608/9765625",
+  "approx_tail_bound": "141833/3662109375",
+  "beta0": 2048,
+  "time_interval": [
+    "1/2",
+    "1"
+  ],
+  "uniform_reflected_constant": 18,
+  "correction_coefficient": "t/4 times L_x^2 s_t^C",
+  "shift": [
+    1,
+    1
+  ],
+  "dependencies": {},
+  "source_sha256": "af625ffe8bce798fef38c56f262fe819717c51534a0c66a9d4e750c2067cb54f",
+  "seconds": 0.0061891670047771186,
+  "rss_MiB": 19.203125,
+  "resources": {
+    "timeout_seconds": 180,
+    "rss_limit_MiB": 180,
+    "blas_threads": 1
+  },
+  "scope": "Ten exact rational comparisons supporting the source Fourier/reflection proof. All shifted endpoints, beta>=2048, t in[1/2,1]; two-sided weighted same-grid HS bound. No bare-heat norm or second-order cell-embedding expansion; no spectral coefficient certified by this runner."
+}
