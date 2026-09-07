@@ -1,0 +1,3 @@
+# Queue
+
+See OPPORTUNITY_QUEUE.md.
