@@ -1,0 +1,31 @@
+{
+  "execution": "Actual unmodified producer run_population_core Numba dispatcher, explicit NUMBA_BOUNDSCHECK=1; copied exact current main helper bytes; all files/cache external",
+  "numba_version": "0.65.1",
+  "numba_boundscheck": 1,
+  "elapsed_sec": 2.027600708999671,
+  "records": [
+    {
+      "burn": 0,
+      "samples": 2,
+      "result": "returned",
+      "sample_values": [
+        7.018453297127881,
+        10.0
+      ]
+    },
+    {
+      "burn": 1,
+      "samples": 2,
+      "result": "IndexError",
+      "message": "index is out of bounds",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-field-projector-review/compiled_bounds_probe.py\", line 10, in <module>\n    x=m.run_population_core(m.initial_ice(2).ravel(),g.plaquette_links,g.affected_plaquettes,g.affected_counts,-.05,2,0,burn,samples,16,1731);row={'burn':burn,'samples':samples,'result':'returned','sample_values':x[0].tolist()}\nIndexError: index is out of bounds\n"
+    },
+    {
+      "burn": 2,
+      "samples": 3,
+      "result": "IndexError",
+      "message": "index is out of bounds",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-field-projector-review/compiled_bounds_probe.py\", line 10, in <module>\n    x=m.run_population_core(m.initial_ice(2).ravel(),g.plaquette_links,g.affected_plaquettes,g.affected_counts,-.05,2,0,burn,samples,16,1731);row={'burn':burn,'samples':samples,'result':'returned','sample_values':x[0].tolist()}\nIndexError: index is out of bounds\n"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source_sha256": "8becfe5e91a731e38bc056b69044f03f8c40ced504641ba6893f3410893c1706",
+  "execution": "Exact original function ASTs with njit decorators disabled in external namespace, ordinary NumPy bounds checking; two walkers and at most five L2 sweeps. No original production execution.",
+  "records": [
+    {
+      "burn": 0,
+      "samples": 2,
+      "result": "returned",
+      "sample_values": [
+        7.018453297127881,
+        10.0
+      ]
+    },
+    {
+      "burn": 1,
+      "samples": 2,
+      "result": "IndexError",
+      "message": "index 2 is out of bounds for axis 0 with size 2",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-field-projector-review/closure_and_bounds.py\", line 26, in <module>\n    x=ns['run_population_core'](ns['initial_ice'](2).ravel(),g.plaquette_links,g.affected_plaquettes,g.affected_counts,-.05,2,0,burn,samples,16,1731);record={'burn':burn,'samples':samples,'result':'returned','sample_values':x[0].tolist()}\n  File \"scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py\", line 314, in run_population_core\nIndexError: index 2 is out of bounds for axis 0 with size 2\n"
+    },
+    {
+      "burn": 2,
+      "samples": 3,
+      "result": "IndexError",
+      "message": "index 3 is out of bounds for axis 0 with size 3",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-field-projector-review/closure_and_bounds.py\", line 26, in <module>\n    x=ns['run_population_core'](ns['initial_ice'](2).ravel(),g.plaquette_links,g.affected_plaquettes,g.affected_counts,-.05,2,0,burn,samples,16,1731);record={'burn':burn,'samples':samples,'result':'returned','sample_values':x[0].tolist()}\n  File \"scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py\", line 314, in run_population_core\nIndexError: index 3 is out of bounds for axis 0 with size 3\n"
+    }
+  ],
+  "cause": "Positive burn includes first_sample_step itself and requested later sampling endpoints: sample_sweeps+1 stores into sample_sweeps-sized arrays. Numba unchecked execution may write beyond the allocated arrays.",
+  "required_fix": "Choose an explicit exclusive burn boundary or stop after exactly requested samples, assert count, and test actual compiled function with bounds checking plus sentinel/reference controls before any production rerun."
+}

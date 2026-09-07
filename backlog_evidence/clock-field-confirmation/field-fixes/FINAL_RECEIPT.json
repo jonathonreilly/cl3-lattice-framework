@@ -1,0 +1,54 @@
+{
+  "status": "AUTHORED CANDIDATE; independent final-source review required; no scientific grade or applied audit",
+  "base": "94e90cbf928cb35fa1b50e894cd897c94b73077f",
+  "candidate_tree": "6897e916e4fd30ce408853f287f3d3f9ebada070",
+  "source_checkpoint": "e3d28020b5fbe5f8c7c00bd030aba991abb364d3",
+  "frozen_original_field_successor": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+  "path_count": 11,
+  "new_paths": 9,
+  "modified_main_paths": [
+    "docs/audit/scripts/build_citation_graph.py",
+    "scripts/audit_packet_script_deps.py"
+  ],
+  "deleted_paths": [],
+  "candidate_patch_sha256": "f3427b04f97f40d8c919433c1f793a410a98c113e8d9c7dc3a4629c895a6561b",
+  "final_inventory_sha256": "84db965ee33660fd846f15e5dbe11a8bf7413be5e007ea74b61180c6493addb0",
+  "fixture_sha256": "d2af311b8fd4f1b5bef0f026f3b0e7fdda26faee95f49a1ab0f0f9124293c665",
+  "checks": {
+    "primary": {
+      "pass": 19,
+      "fail": 0
+    },
+    "independent": {
+      "pass": 55,
+      "fail": 0
+    },
+    "diagnostic": {
+      "pass": 12,
+      "fail": 0
+    },
+    "adverse_fixture_files": 28,
+    "source_semantic_mutants": 7,
+    "actual_consumer_omission_mutants": 2,
+    "source_input_cache_mutants": 10,
+    "actual_rows_independently_recomputed": 8
+  },
+  "exact_base_paths_preserved_except_two_registries": 28240,
+  "deferred_original_source_paths": 57,
+  "runtime_scope": "three bounded finite/source-data runners, 120-second limits; no production sampler",
+  "graph_boundary": "manifest unchanged; intended two new nodes with diagnostic->source and source->minimal_axioms only; no source proof dependency on downstream diagnostic",
+  "reservations": "#6379/#6858/#6859 excluded; no reserved code import/copy",
+  "artifacts": {
+    "DIAGNOSTIC_CONTROLS.json": "6286709f8197d9270bd22c8d65011681d184cb337e1c2305783b9c75d34e6a2e",
+    "SOURCE_MUTATION_CONTROLS.json": "698a38840174c4c30bfe95f23f3c97981e6ab11c3bb3c5b2c22e70ad2bd4825b",
+    "CONSUMER_CONTROLS.json": "ccc898302e81deee8c78b8afe2d0704523ba9b78118a6e38f172aff037f32b69",
+    "ACTUAL_INPUT_CLOSURE.json": "ee24994667e4c086b1073fe381e0ea3fe579e73d4b0fe4d28ec246ae38b5a3c5",
+    "MAIN_PRESERVATION.json": "3535eb7011422066dff843a0b37557777999e87ce48922926ac7a842ba177acc",
+    "ORIGINAL_FINAL_CONTENT_DISPOSITIONS.json": "bc5804e62180e02eaeb2716b969efbb0690c925416609ae569be0f2cad498e2f",
+    "EXACT_FIXTURE_PRESERVATION.json": "782a9e1f71c4dd880bbf192e5107150403ffbb2003e60f23dc8ac03c7e3255fd",
+    "checkpoint-correction.diff": "9dd218edef5811959b621fe2158d3859ef79449b30dd8fe9df67c73369b23fe2",
+    "HANDOFF.md": "e314bc866a923c417fa99629d9777124cd6bdbb0fb95358098e1ae697d1cfbd8",
+    "FINAL_CACHE_IDENTITIES.json": "a823f679597aedaa30f35af70c1c573521d1e72c56b98c622b85f150f733db95",
+    "vocab.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  }
+}

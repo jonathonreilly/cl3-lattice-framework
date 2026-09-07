@@ -1,0 +1,82 @@
+[
+  {
+    "name": "first_cut",
+    "path": "scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+    "before": "if j!=cut:",
+    "after": "if j!=cut or cut==0:",
+    "source_sha256": "bd789b05343ec90da9aa5656a95ef7630243151753e5ca12ea117ef1030b116a",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "-B",
+      "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-record-clock-fixes/controlled-source/scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+      "--json"
+    ],
+    "exit_code": 1,
+    "elapsed_sec": 2.668068792001577,
+    "stderr_sha256": "390a1d045908641f850e87eab8abdd6f1163b617f4e3f988e02ede1913c26137"
+  },
+  {
+    "name": "last_cut",
+    "path": "scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+    "before": "if j!=cut:",
+    "after": "if j!=cut or cut==2:",
+    "source_sha256": "cdef1f50732ba7bb58a19f8b6b61b15fb056291df7bc9bf0daffe5f375e93fd6",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "-B",
+      "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-record-clock-fixes/controlled-source/scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+      "--json"
+    ],
+    "exit_code": 1,
+    "elapsed_sec": 2.5296242499898653,
+    "stderr_sha256": "52da1085e4ec418bd74995870165126ac3aa6899b6ab50672fcc1d686e6adeb1"
+  },
+  {
+    "name": "missing_full_support",
+    "path": "scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+    "before": "results=[solve(m) for m in (1,2,3,4)]",
+    "after": "results=[solve(m) for m in (1,2,3)]",
+    "source_sha256": "38073ae4d052eede727a390f4cecc66282a8703f0b9c0c6409298d26f4cf3734",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "-B",
+      "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-record-clock-fixes/controlled-source/scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+      "--json"
+    ],
+    "exit_code": 1,
+    "elapsed_sec": 0.1274896659888327,
+    "stderr_sha256": "62e94c872b2532a795024696db898613e93427306351675043adf6edf07270ea"
+  },
+  {
+    "name": "missing_severed",
+    "path": "scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+    "before": "results += [solve(m,m-1) for m in (1,2,3)]",
+    "after": "results += [solve(m,m-1) for m in (1,2)]",
+    "source_sha256": "89dd7ba7398c3af3556eb260a11fd5cd41543e5969bcecdb40d3e103321e3e87",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "-B",
+      "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-record-clock-fixes/controlled-source/scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+      "--json"
+    ],
+    "exit_code": 1,
+    "elapsed_sec": 2.5264709999901243,
+    "stderr_sha256": "cec9db45cf0193361b4692bbb00a44f20ec57c33bfb990d97b51ab85b3e68235"
+  },
+  {
+    "name": "wrong_clock_cutoff",
+    "path": "scripts/native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07.py",
+    "before": "completed[9:]=amp[9:]",
+    "after": "completed[10:]=amp[10:]",
+    "source_sha256": "01df7d248dbeeb9072fc044b94982b6b8d1f796565ef92f38ca842866f822195",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "-B",
+      "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-record-clock-fixes/controlled-source/scripts/native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07.py",
+      "--json"
+    ],
+    "exit_code": 1,
+    "elapsed_sec": 0.46647504199063405,
+    "stderr_sha256": "1fe65a4c67688e93bf8283ed90270030ab0937a93ddaf697881bf8f2c36431ef"
+  }
+]

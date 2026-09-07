@@ -28,7 +28,7 @@ landed at `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac`; the four-note autonomous R
 
 | Owner | Target | Current evidence/next check |
 |---|---|---|
-| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 85 further source consolidations; seven source batches landed; coordinating Record clock review and the field source/receipt repair; Eta premise and curved dependency holds |
+| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 85 further source consolidations; seven source batches landed; coordinating final Record clock confirmation, complete field source/receipt review and bounded projector repairs; Eta premise and curved dependency holds |
 | Formation author + independent checker | Formation/static interface | Conditional Z3 law constructed with finite ancestry and certified window/correlation bounds; independent static/formation and adaptive-scheduling checks pass |
 | Matter author + independent checker | Native Record shared energy apparatus | Conditional finite-patch instrument proved with volume-uniform channel/full mean-energy error bounds; independent shared-battery/free-dwell calculation passes |
 | Field author + independent checker | Consistent physical field source/response | Source convention mismatch confirmed independently; exact finite invariant, corrected finite curvature and full-flux endpoint theorem packaged and checked |
@@ -73,7 +73,7 @@ question; no blanket disposition of that PR is asserted.
    Both Record/battery (#7983/#7996/#8001) and admissibility
    (#7998/#7999/#8000/#8002) are landed and closed; receipts are in
    `backlog_evidence/wave1` and `wave2`. #8003 is also corrected, independently confirmed, landed and closed; see
-   `backlog_evidence/wave4`. #8004 is also independently confirmed, landed and closed; see `backlog_evidence/wave5`; #8005 is landed and closed; #8006 is in independent review and #8007–#8010 are queued. Hold Eta heavy execution until current-premise
+   `backlog_evidence/wave4`. #8004 is also independently confirmed, landed and closed; see `backlog_evidence/wave5`; #8005 is landed and closed; #8006 corrections are frozen for same-session confirmation; the eleven-path field diagnostic is in independent final review and the deferred projector is in bounded repair. #8007–#8010 are queued. Hold Eta heavy execution until current-premise
    reconciliation; the light charged-sign, current-test and rotor-limit findings are corrected and landed. Preserve the curved
    unit's reserved-source dependency hold while assessing standalone salvage.
 2. Repair the field source interpretation in its coherent PR group before

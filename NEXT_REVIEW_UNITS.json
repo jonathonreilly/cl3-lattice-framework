@@ -3911,16 +3911,29 @@
     },
     {
       "unit_id": "record_clock_8006",
-      "science_review_status": "independent_original_review_in_progress",
+      "science_review_status": "original_changes_requested_fixes_frozen_same_session_confirmation_pending",
       "target_pr": 8006,
       "target_head": "fcea79f576bd276004d33306a487cfb7577d418e",
       "current_parent_main": "94e90cbf928cb35fa1b50e894cd897c94b73077f",
       "reviewer": "/root/backlog_batch_contract",
-      "finding_checkpoint": "Possible helper-packet omission and reproduced missing complete chain case/contrast assertions. Clock proof and bounded checks continue; no full PASS."
+      "finding_checkpoint": "Possible helper-packet omission and reproduced missing complete chain case/contrast assertions. Clock proof and bounded checks continue; no full PASS.",
+      "author_source_tree": "4ab5a22789b384edc16835463711ea3b7e4de1d7",
+      "author_path_count": 52,
+      "current_assignments": {
+        "author": "coordinator; frozen",
+        "independent_reviewer": "backlog_batch_contract"
+      },
+      "findings": [
+        "F1 complete four-helper registries in both actual consumers",
+        "F2 every chain case and explicit severed witnesses",
+        "F3 meaningful-leakage clock reference control"
+      ],
+      "independent_final_pass": false,
+      "landed": false
     },
     {
       "unit_id": "field_source_and_receipt_diagnostic",
-      "science_review_status": "authoring_with_independent_source_review",
+      "science_review_status": "frozen_eleven_path_candidate_in_complete_independent_final_review",
       "target_pr": 7966,
       "target_head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
       "base": "94e90cbf928cb35fa1b50e894cd897c94b73077f",
@@ -3928,8 +3941,42 @@
       "reviewer": "/root/backlog_draft_triage",
       "allowed_source_paths": 11,
       "specification": "backlog_evidence/field-repair-spec/REPORT.md",
-      "scope": "Standalone checkpoint source plus historical receipt diagnostic. Preserve all57 original field source obligations on7966; no production import tower or long sampler. Additional Ritz-separation/minimum-gap mislabel under correction; no final source PASS."
+      "scope": "Standalone checkpoint source plus historical receipt diagnostic. Preserve all57 original field source obligations on7966; no production import tower or long sampler. Additional Ritz-separation/minimum-gap mislabel under correction; no final source PASS.",
+      "author_source_tree": "6897e916e4fd30ce408853f287f3d3f9ebada070",
+      "author_path_count": 11,
+      "current_assignments": {
+        "author": "backlog_8001_review; frozen, available for corrections",
+        "independent_reviewer": "backlog_draft_triage"
+      },
+      "independent_final_pass": false,
+      "landed": false
+    },
+    {
+      "unit_id": "field_projector_7941",
+      "target_pr": 7966,
+      "target_head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+      "original_pr": 7941,
+      "original_head": "8ac1ccdfa1735fd6facdf910defb964469fba35a",
+      "original_base": "2814c6768e4d7b38048f70ad7883b4951cb12da3",
+      "current_main": "94e90cbf928cb35fa1b50e894cd897c94b73077f",
+      "science_review_status": "full_original_three_source_review_changes_requested_bounded_author_repairs",
+      "author": "backlog_8001_review",
+      "original_reviewer": "backlog_draft_triage",
+      "report": "backlog_evidence/clock-field-confirmation/projector/REPORT.md",
+      "findings": [
+        "P1 positive-burn sample-array overflow, actual Python and bounds-checked Numba",
+        "shared-reference covariance omitted",
+        "bare microscopic E squared is constant; coarse-field coefficient must be qualified",
+        "stale current-input cache",
+        "compound protocol control does not isolate convergence",
+        "inherited magnetic/per-flip execution overclaims",
+        "current claim/trace and N1/N2 scope"
+      ],
+      "allowed_scope": "original three source paths; tiny deterministic controls and preservation externally; no long production run or fabricated fresh cache",
+      "independent_final_pass": false,
+      "landed": false
     }
   ],
-  "current_main": "94e90cbf928cb35fa1b50e894cd897c94b73077f"
+  "current_main": "94e90cbf928cb35fa1b50e894cd897c94b73077f",
+  "current_assignment_update_utc": "2026-09-07T18:34:08.200123+00:00"
 }

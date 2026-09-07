@@ -1,0 +1,90 @@
+{
+  "verdict": "CHANGES_REQUESTED",
+  "review_kind": "independent conditional mathematical source review; formal audit deferred",
+  "base": "94e90cbf928cb35fa1b50e894cd897c94b73077f",
+  "tree": "1af8eb5e31f3c31aa7b1a46898ae6ed7e41e6ddf",
+  "source_patch_sha256": "9107e42365c03ade7e8e70a23374d8dadf36b056a637356c1254ab8c8cc335a4",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P2",
+      "title": "Register complete clock packet helpers in both consumers",
+      "file": "docs/audit/scripts/build_citation_graph.py",
+      "lines": [
+        154,
+        156
+      ],
+      "coupled_path": "scripts/audit_packet_script_deps.py",
+      "actual_effect": "Graph returns only clock helper, diagnostic returns none; three/four actual load-bearing helper sources omitted respectively",
+      "required_helpers": [
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+        "scripts/native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07.py",
+        "scripts/native_edge_record_reduced_cell_full_isometry_2026_09_07.py",
+        "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py"
+      ],
+      "fix": "Mirror complete four-helper claim-specific sets in both consumers; keep all old entries/functions and actual governed normalized hash unchanged",
+      "verification": [
+        "both actual APIs return exact complete sets",
+        "each source-omission control fails closed",
+        "prior registrations and governed normalized hash preserved"
+      ],
+      "evidence": [
+        "HELPER_PACKET_FINDING.json",
+        "FINAL_INPUT_CLOSURE.json"
+      ]
+    },
+    {
+      "id": "F2",
+      "priority": "P2",
+      "title": "Require complete chain fixture set and each scope contrast",
+      "file": "scripts/native_edge_record_connected_chain_boundary_commutant_2026_09_07.py",
+      "lines": [
+        65,
+        74
+      ],
+      "actual_effect": "Ignoring cut0 or cut2 and omitting full-support case all exit0 despite contradicting declared complete contrasts",
+      "fix": "Assert exact seven case keys, every connected proper case, each severed and full-support nonidentity result; add actual specified witnesses per prefix without changing Hamiltonian/ansatz. Update live counts/cache; preserve historical356 captures",
+      "verification": [
+        "actual no-cut0 mutation rejected",
+        "actual no-cut2 mutation rejected",
+        "missing-full-support mutation rejected",
+        "all seven original exact bases/dimensions preserved",
+        "current note/count/cache consistent"
+      ],
+      "evidence": [
+        "CHAIN_EXECUTION.json",
+        "INDEPENDENT_CHAIN_MATRIX.json",
+        "severed_first_bond_not_cut.stdout",
+        "severed_last_bond_not_cut.stdout",
+        "missing_full_support_fixture.stdout"
+      ]
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "title": "Exercise completed-clock reference at meaningful nonzero leakage",
+      "file": "scripts/native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07.py",
+      "lines": [
+        52,
+        63
+      ],
+      "actual_effect": "Changing completed tail from9 to10 still passes56 near-arrival checks; analytic proof remains valid",
+      "fix": "Add meaningful-leakage reference comparison such as t0.5 as diagnostic, not a new completion window; update current count/helper cache while preserving historical capture",
+      "verification": [
+        "original helper passes added t0.5 diagnostic",
+        "same actual wrong-completed-cut mutation rejected at reference overlap",
+        "existing window/native/free-evolution/resource checks preserved"
+      ],
+      "evidence": [
+        "CLOCK_EXECUTION.json",
+        "OFFWINDOW_REFERENCE_CONTROL.json",
+        "wrong_completed_cut.stdout",
+        "offwindow_wrong_completed_cut.stderr"
+      ]
+    }
+  ],
+  "additional_battery_projector_finding": null,
+  "no_go_packet_status": "NOT_PASS: N1<5 and N2 not a full independence certificate, already disclosed in source; no fourth source correction or invented family requirement for this narrow partial-support handoff",
+  "science_fixes_made": false,
+  "originals_frozen_safe_to_author": true
+}

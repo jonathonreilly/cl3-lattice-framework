@@ -1,0 +1,45 @@
+{
+  "cache": {
+    "tool_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "status_on_current_main_helpers": "input_mismatch",
+    "original_header": {
+      "runner_path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+      "runner_sha256": "8becfe5e91a731e38bc056b69044f03f8c40ced504641ba6893f3410893c1706",
+      "input_fingerprint_sha256": "3c58cd9e3a66fa268a03c885c7305ba4d1c4a505800468e4342a58d8e4625766",
+      "status": "ok",
+      "exit_code": "0"
+    },
+    "current_input_fingerprint": "bb0a58f1b1281afad25fa19f5b2be9f1b68b9699df901ec519cfa963e862aa95",
+    "declared_inputs": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+      "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py"
+    ]
+  },
+  "fit_control": {
+    "execution": "Actual original fit_flux_curve with synthetic independent energy errors and shared zero-flux subtraction; no source modification or sampler",
+    "reported_U": 1.0,
+    "reported_nominal_U_error": 0.17142857142857146,
+    "actual_variance_of_same_linear_estimator_U_error": 0.20995626366712955,
+    "underestimation_factor": 1.224744871391589,
+    "covariance": [
+      [
+        0.020000000000000004,
+        0.010000000000000002,
+        0.010000000000000002
+      ],
+      [
+        0.010000000000000002,
+        0.020000000000000004,
+        0.010000000000000002
+      ],
+      [
+        0.010000000000000002,
+        0.010000000000000002,
+        0.020000000000000004
+      ]
+    ],
+    "formula": "Cov(E_i-E_0,E_j-E_0)=delta_ij*sigma_i^2+sigma_0^2 under independent underlying energy estimates. Current fit omits the off-diagonal common-reference terms."
+  },
+  "microscopic_E2_identity": "For the supplied E=epsilon(n-1/2), E_link^2=1/4 on every occupation basis state, so (U/2)sum_links E_link^2=3 U L^3/8 is independent of electric flux. A flux-cost fit requires a coarse field/energy comparison, not this bare microscopic operator."
+}

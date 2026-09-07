@@ -1,0 +1,75 @@
+{
+  "verdict": "CORRECTIONS REQUIRED; NO SOURCE PASS",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "P1",
+      "start": 309,
+      "end": 329,
+      "title": "Sample array overflow at positive burn",
+      "path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py"
+    },
+    {
+      "id": "F2",
+      "severity": "P2",
+      "start": 490,
+      "end": 527,
+      "title": "Shared reference covariance omitted",
+      "path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py"
+    },
+    {
+      "id": "F3",
+      "severity": "P1",
+      "start": 245,
+      "end": 255,
+      "title": "Bare microscopic electric square is flux independent",
+      "path": "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_PROJECTOR_MAXWELL_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    },
+    {
+      "id": "F4",
+      "severity": "P1",
+      "start": 38,
+      "end": 42,
+      "title": "Historical receipt mismatches current helper inputs",
+      "path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py"
+    },
+    {
+      "id": "F5",
+      "severity": "P2",
+      "start": 723,
+      "end": 738,
+      "title": "Combined protocol change does not isolate convergence",
+      "path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py"
+    },
+    {
+      "id": "F6",
+      "severity": "P2",
+      "start": 879,
+      "end": 881,
+      "title": "Executed resolution and inherited magnetic interpretation overstated",
+      "path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py"
+    },
+    {
+      "id": "F7",
+      "severity": "P2",
+      "start": 348,
+      "end": 379,
+      "title": "Claim and route/wall classifications need current scope",
+      "path": "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_PROJECTOR_MAXWELL_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    }
+  ],
+  "artifacts": {
+    "REPORT.md": "6081c32757a657b720ec81bc67e6d71c94eb388dc3155911e0a50f10d9abc243",
+    "ORIGINAL_SCOPE.json": "b69a574012dcb6fee20e120f248ca1a238cf88fcbfe776e6a6d921fc339ee804",
+    "CLOSURE.json": "11986fc0929bc2cf50dece4e188716c3a058a1ee078ef684b62345dcab74a863",
+    "BOUNDS_PROBE.json": "f6df7540b93d9a7548c43ea073552e094a8eda60af9d87a766d1cb063b3e320b",
+    "COMPILED_BOUNDS_PROBE.json": "496b917132f602248e4425f4c344cc8cf6d4838e12150e4e3f120c2003eb74ee",
+    "CACHE_AND_FIT_PROBE.json": "8e509a33420fb2304e4250faf5be112a135ee1a396e1d34531af33026933550f",
+    "closure_and_bounds.py": "d78a344710134052312bb2e28d62b5f780ffee1c234a911f95dc724b8bb41155",
+    "compiled_bounds_probe.py": "5d74189c96805da98b2a7510908ead41221a3a44d8c14930b22e874854ef5e8e",
+    "cache_and_fit_probe.py": "523d817e60632b3dd39cd2f2c6db2aeb2eee29cbd5ddfc4e5cb145420b96e73a"
+  },
+  "full_original_source_lines_read": 1433,
+  "production_runs": 0,
+  "actual_compiled_bounds_probe": true
+}
