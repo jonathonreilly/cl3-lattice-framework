@@ -1,0 +1,11 @@
+# Root independent Schur/min-max proof review
+
+PASS for native DERIVATION.md d561d424a646d21cb11f53a074d0f294c4b276032de34f58293c9b0055947bdc and inspected full scratch checker. Root independently reconstructed the strict eigenvalue-count inequalities, monotone inverse endpoint and both ground/excited subtraction signs before reading this proof; no numerical result was fitted. The checker was read, not rerun.
+
+D-z is positive for z<g and the bounded off-diagonal coupling maps through its inverse into the operator/form domain. Completing the square is therefore a valid invertible form transformation, not a formal inverse at an H eigenvalue. Negative-inertia monotonicity gives N_A(z)<=N_H(z)<=N_A(z+b²/(g-z)) with strictly-below counts. Taking z down to E_j proves both index existence and the claimed one-sided Ritz error, including multiplicities. Above-threshold index matching is explicitly rejected by an actual zero-coupling adverse matrix.
+
+The increasing map E->E+b²/(g-E) has the stated smaller-root inverse ell. A computed mu_j<g ensures the exact E_j<g by min-max, and certified Ritz intervals may be propagated by monotonicity. The fixed-energy estimate is conditional on a justified E ceiling, not a data-selected exact energy. Nested projectors are a form core since they commute with K and exhaust its representation blocks.
+
+The gap bounds subtract opposite endpoints for E1 and E0. Either Ritz shift can dominate; both adverse matrices support this, so no erroneous one-sided gap ordering is claimed. The absolute gap error is bounded by the common one-sided eigenvalue error, rather than twice it. Centering 0<=V<=M gives ||PVQ||<=M/2, while the actual physical rank-one R0 bound uses the full v²/3 coupling norm and asserts no nonexistent second Ritz level. Four-register cutoff storage is not a diagonalization or compiler guarantee.
+
+All finite fixtures are described as abstract spectral controls. Only the R0 Haar coupling is actual-model finite data. No whole-cube numerical spectrum, thermodynamic gap or axiom-selected Hamiltonian is claimed. Canonical port needs the usual strict CLI, alarm and cross-platform positive resource scopes; those are reporting/runtime requirements, not science changes. No mathematical correction requested.

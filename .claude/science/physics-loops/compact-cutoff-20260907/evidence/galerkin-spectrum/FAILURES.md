@@ -1,0 +1,1 @@
+First checker run failed before completion because Python sum over SymPy BooleanAtom values is invalid. Preserved original source. Fixed only conversion to int(bool(...)) in eigenvalue count; no matrix, threshold, theorem condition or tolerance changed.

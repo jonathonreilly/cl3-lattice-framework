@@ -1,0 +1,314 @@
+{
+  "checks": [
+    "two_level_positive_V",
+    "two_level_kinetic_commutes",
+    "two_level_centered_coupling",
+    "two_level_minmax",
+    "two_level_computed_lower_endpoints",
+    "two_level_exact_energy_bound",
+    "two_level_count_1/2",
+    "two_level_count_3",
+    "two_level_count_9",
+    "three_level_positive_V",
+    "three_level_kinetic_commutes",
+    "three_level_centered_coupling",
+    "three_level_minmax",
+    "three_level_computed_lower_endpoints",
+    "three_level_exact_energy_bound",
+    "three_level_gap_interval",
+    "three_level_positive_certified_gap",
+    "three_level_Ritz_gap_not_lower_bound",
+    "three_level_count_1/2",
+    "three_level_count_3",
+    "three_level_count_9",
+    "threshold_failure_positive_V",
+    "threshold_failure_kinetic_commutes",
+    "threshold_failure_centered_coupling",
+    "threshold_failure_minmax",
+    "threshold_failure_low_Ritz_hypothesis_fails",
+    "threshold_failure_missing_gap_index",
+    "threshold_failure_quadratic_lower_vacuous",
+    "ground_only_coupling_positive_V",
+    "ground_only_coupling_kinetic_commutes",
+    "ground_only_coupling_centered_coupling",
+    "ground_only_coupling_minmax",
+    "ground_only_coupling_computed_lower_endpoints",
+    "ground_only_coupling_exact_energy_bound",
+    "ground_only_coupling_gap_interval",
+    "ground_only_coupling_positive_certified_gap",
+    "ground_only_coupling_Ritz_gap_not_upper_bound",
+    "ground_only_coupling_count_1/2",
+    "ground_only_coupling_count_3",
+    "ground_only_coupling_count_9",
+    "uncoupled_above_threshold_index_adverse",
+    "actual_R0_Haar_bound_improves_generic",
+    "resource"
+  ],
+  "TOTAL": 43,
+  "fixtures": {
+    "two_level": {
+      "K": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "10"
+        ]
+      ],
+      "V": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "g": "10",
+      "b_squared": "1",
+      "M": "2",
+      "exact_eigen_intervals": [
+        [
+          "1040300/1154631",
+          "946571/1050601"
+        ],
+        [
+          "11660641/1050601",
+          "12815272/1154631"
+        ]
+      ],
+      "Ritz_intervals": [
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "Ritz_dimension": 1,
+      "conservative_delta": [
+        "1/9"
+      ]
+    },
+    "three_level": {
+      "K": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "10"
+        ]
+      ],
+      "V": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1"
+        ]
+      ],
+      "g": "10",
+      "b_squared": "2",
+      "M": "3",
+      "exact_eigen_intervals": [
+        [
+          "656165/1767793",
+          "578907/1559650"
+        ],
+        [
+          "2950400/1229791",
+          "4238111/1766537"
+        ],
+        [
+          "7955445/708428",
+          "20362922/1813307"
+        ]
+      ],
+      "Ritz_intervals": [
+        [
+          "317811/832040",
+          "514229/1346269"
+        ],
+        [
+          "3524578/1346269",
+          "2178309/832040"
+        ]
+      ],
+      "Ritz_dimension": 2,
+      "conservative_delta": [
+        "2692538/12948461",
+        "1664080/6142091"
+      ],
+      "exact_gap_interval": [
+        "3889656741563/1918043533150",
+        "6332963208418/3122871742841"
+      ],
+      "Ritz_gap_interval": [
+        "3010349/1346269",
+        "930249/416020"
+      ],
+      "certified_gap_interval": [
+        "16249538182239/8268906708479",
+        "13165442555549/5386818745220"
+      ]
+    },
+    "threshold_failure": {
+      "K": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/4"
+        ]
+      ],
+      "V": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "g": "1/4",
+      "b_squared": "1",
+      "M": "2",
+      "exact_eigen_intervals": [
+        [
+          "203043/1732186",
+          "132610/1131313"
+        ],
+        [
+          "3261329/1529143",
+          "2130016/998703"
+        ]
+      ],
+      "Ritz_intervals": [
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "Ritz_dimension": 1
+    },
+    "ground_only_coupling": {
+      "K": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "10"
+        ]
+      ],
+      "V": [
+        [
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "1"
+        ]
+      ],
+      "g": "10",
+      "b_squared": "1",
+      "M": "2",
+      "exact_eigen_intervals": [
+        [
+          "1040300/1154631",
+          "946571/1050601"
+        ],
+        [
+          "2",
+          "2"
+        ],
+        [
+          "11660641/1050601",
+          "12815272/1154631"
+        ]
+      ],
+      "Ritz_intervals": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "2"
+        ]
+      ],
+      "Ritz_dimension": 2,
+      "conservative_delta": [
+        "1/9",
+        "1/8"
+      ],
+      "exact_gap_interval": [
+        "1154631/1050601",
+        "1268962/1154631"
+      ],
+      "Ritz_gap_interval": [
+        "1",
+        "1"
+      ],
+      "certified_gap_interval": [
+        "7/8",
+        "10/9"
+      ]
+    },
+    "uncoupled_above_threshold": {
+      "Ritz_second": 20,
+      "exact_second": 10,
+      "coupling": 0,
+      "g": 10,
+      "interpretation": "No equal-index exactness above the omitted threshold even at zero coupling."
+    }
+  },
+  "actual_R0": {
+    "mu0": "6v",
+    "b_squared": "v\u00b2/3",
+    "g0": "4/a",
+    "condition": "6v<4/a; no second Ritz eigenvalue at R=0"
+  },
+  "seconds": 0.13769362500170246,
+  "rss_MiB": 59.671875,
+  "source_sha256": "42984690cabf406df56040377b3b0b358535661ddbc23d7f98922d840aa7d226",
+  "scope": "Exact abstract spectral controls plus imported actual R0 Haar coupling; no finite cutoff eigenvalue computation of the full cube."
+}
