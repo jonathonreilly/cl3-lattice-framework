@@ -6,7 +6,7 @@ them with a concrete disposition. Formal audit is deferred until a solid TOE.
 The coordinator owns GitHub changes and landing; reviewers return evidence.
 
 The original 13:57 UTC routing refresh had 254 open PRs: 217 non-draft and 37 draft.
-The verified refresh has 173 open PRs and 0 drafts: 85 original PRs and one new successor closed; five new successors opened.
+The verified refresh has 172 open PRs and 0 drafts: 85 original PRs and two new successors closed; five new successors opened.
 All 37 original drafts were explicitly in triage scope and are now resolved. Marking ready means reviewable,
 not scientifically accepted. A still-draft PR does not land. The standing
 reservations #6379, #6858 and #6859 are all non-draft and remain in force.
@@ -94,7 +94,7 @@ dependencies. Shared history and exact copied files are not scientific PASS.
 
 ## Further consolidation and review assignments
 
-[BACKLOG_CONSOLIDATIONS.json](BACKLOG_CONSOLIDATIONS.json) records 38 completed exact
+The earlier consolidation wave in [BACKLOG_CONSOLIDATIONS.json](BACKLOG_CONSOLIDATIONS.json) records 38 completed exact
 duplicate consolidations, with before/after head and state receipts: nine source/Eta
 parents into open #7827, 17 light-sector parents into open #7937, six older
 Record/admissibility parents into #6358/#6371 and six field parents into #7966. Root
@@ -124,8 +124,8 @@ mutation authority; formal audit remains deferred.
 
 All 57 further duplicate closures are complete and verified against both the
 parent and successor heads before and after each action. Every original branch
-still exists at its frozen head. The current queue has 173 open PRs and zero
-drafts. Relative to the starting 254: 21 draft closures, eight landed science
+still exists at its frozen head. The current queue has 172 open PRs and zero
+drafts. Relative to the starting 254: 21 draft closures, nine landed science
 closures and 57 further duplicate consolidations, plus five new PRs; the 16 ready transitions do
 not change the open count. The nine consolidation successors remain open for their complete
 scientific review; no inherited obligation is discharged by consolidation.
@@ -152,7 +152,7 @@ remains; no full curved-unit PASS is claimed. Light-germ F1–F8 corrections
 are independently confirmed and landed on main.
 
 See `backlog_evidence/wave2` for the complete landed source map, gate logs'
-hashes and closure receipts. Across four landing batches: four full validation
+hashes and closure receipts. Across five landing batches: five full validation
 runs, zero integration retries, no formal audit or status application.
 The reviewed coordinator-coverage clarification is in `AGENTS.md` and
 `backlog_evidence/coordinator-efficiency`; it preserves all independent review
@@ -274,3 +274,11 @@ authority classification must be repaired before expensive execution; no full
 review is claimed. Light-backreaction repairs are active. Initial light-ice
 review found a trial-state upper bound promoted to positive physical magnetic
 stiffness; preserve the finite variational response while holding that inference.
+
+### Current handoff — 2026-09-07 17:15 UTC
+
+Main is `12d9c77c0605276b82eb9fcb8cf05cdaf3e40f56`. The fifth batch lands all 114 reviewed authored paths of #8004 plus the regenerated manifest (+4 nodes, +9 edges; all old nodes unchanged). Four conditional Record notes survive complete independent source review. The sole P2 correction completes actual helper closure in both tool consumers, with every scientific byte unchanged. One pipeline, strict lint and four changed-evidence checks pass. All 115 final hashes match remote main; all 1,471 generated validation paths were preserved externally and stripped. #8004 is closed and its branch preserved. No audit or status application occurred. Receipts: `backlog_evidence/wave5`.
+
+Current queue: 172 open, zero drafts, 87 total closures (85 original and two new successors), five new arrivals. Source landing is distinct from duplicate consolidation. Twenty-three new source notes now sit on main with unchanged applied-ledger status. Five combined validations have served five landings, with zero retries. Earlier heads, counts and assignment paragraphs above are dated history; this handoff and the JSON inventory give current state.
+
+#8005 is in independent review against actual corrected main; #8006 and #8007 remain queued. #8007 moved to `93b701e8f80860685ff5e3536e2d750f49a03618` (79 paths); its inventory is rebound without assuming review coverage. Light-backreaction F1-F7 repairs are frozen after 139 checks, three correction mutants and 120 cache-edge controls; the same original reviewer is confirming them. Light-ice has a complete five-finding review, and separate six-path author corrections are underway. Its positive trial expectation remains useful without establishing physical magnetic stiffness. #7315 routing is paused for priority source confirmation; no additional semantic consolidation is yet authorized by evidence. Eta and curved holds are unchanged.
