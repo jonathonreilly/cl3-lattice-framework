@@ -20,7 +20,8 @@ independent audit lane owns any verdict.
 ## Result up front
 
 On strips four and five sites wide, the single static pattern law gives neighbouring pairs odds of
-matching that sit a fixed step away from the odds the order-built law gives them, both at the edge
+matching that sit a step away from the odds the order-built law gives them, a step of about the same
+size at every width, both at the edge
 of the strip and one step in. We pinned those odds down with rigorous bounds far tighter than the
 question needs, and where the algebra is small enough we identified them as exact algebraic numbers.
 The step is present, and of about the same size, at every width we computed: two, three, four and five.
@@ -200,10 +201,12 @@ vector `v`, `(Tv)(gρ) = Σ_{ρ'} T(gρ, ρ') v(ρ') = Σ_{ρ'} T(gρ, gρ') v(g
 `R_{OO'} = A_{O'} Σ_{ρ∈O} V(ρ, ρ_{O'})`, and the transitivity of `G` on `O` and `O'` gives `Σ_{ρ∈O,
 ρ'∈O'} V(ρ, ρ') = |O| Σ_{ρ'∈O'} V(ρ_O, ρ') =
 |O'| Σ_{ρ∈O} V(ρ, ρ_{O'})`, i.e. `R_{OO'} |O'| = |O| Q_{OO'}`. The pair
-indicator `[ρ_a = ρ_b]` is `G`-invariant for the edge pair and for the innermost pair (a rotation
-preserves equality of entries; the reversal maps `(0, 1)` to `(W−1, W−2)`, whose indicator has the
-same orbit sums since the reversal is in `G`, and maps the innermost pair to itself), so the sum
-over an orbit of a `G`-invariant weight times the indicator is `|O| c_O` times the weight. ∎
+indicator `[ρ_a = ρ_b]` is not itself `G`-invariant, but its orbit sums are: a rotation preserves
+equality of entries, and the reversal maps the pair `(a, b)` to `(W−1−b, W−1−a)` — `(0, 1)` to
+`(W−2, W−1)` and the innermost pair `(1, 2)` of width 5 to `(2, 3)` — whose indicator has the same
+sum over every orbit because the reversal is in `G`; so `n_O = #{ρ ∈ O : ρ_a = ρ_b}` is the same for
+a pair and its mirror image, and the sum over an orbit of a `G`-invariant weight times the indicator
+is `|O| c_O` times the weight (executed: the two counts agree on every orbit at widths 4 and 5). ∎
 
 *Executed.* Orbit counts `3, 8, 38, 178` at widths `2, 3, 4, 5`, the same at
 both triples (B1). `T(gρ, gρ') = T(ρ, ρ')` for all 48 maps, every orbit representative against all
@@ -358,8 +361,10 @@ the dependency `m_1(Q) 1 = 0` is then verified exactly in integer arithmetic on 
 four cases — at `d = 111` with coefficients of up to 526 digits, in about ten seconds (C4); the
 supervisor's independent exact construction of the same degree-111 polynomial (pack
 `specs/supervisor_control_block06_krylov_d111_exact.out.txt`, 795 s), and the contract lens's
-earlier one, are recorded controls, not inputs. At width 4 the characteristic polynomial of `Q` factors with degrees
-`[1, 1, 2, 8]` and `[1, 1, 1, 5, 30]` and `m_1` is its factor of degree `d` (C5). `m_1` is
+earlier one, are recorded controls, not inputs. At width 4 the characteristic polynomial of `Q` has distinct irreducible factors of degrees
+`1, 1, 2, 8` (the linear factor `λ` with multiplicity `27`, the others simple; `27 + 1 + 2 + 8 = 38`)
+at `(3,1,2)` and `1, 1, 1, 5, 30` (all simple) at `(5,2,4)`, and `m_1` is its factor of degree `d`
+(C5). `m_1` is
 irreducible at `d = 8, 30, 16`
 (sympy `factor_list`, C6); by Sturm counts exactly one real root lies in
 `[lo, hi]` and none above `hi` at those degrees (C7). At `d = 8` and `16`: `Q x = λ_1 x` holds
