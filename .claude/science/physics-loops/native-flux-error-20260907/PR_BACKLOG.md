@@ -1,3 +1,3 @@
-# Publication pending validated port
+# Publication complete
 
-Prepare a draft review PR stacked on codex/native-flux-record-block21-20260907 only after root confirms the frozen port and the full validation passes. No GitHub or permission failure has occurred. The parent five-event construction remains visible in scope and PR description. Independent audit still owns effective status.
+Open draft PR8015: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8015, base codex/native-flux-record-block21-20260907 (PR8014). Full validation and exact two-claim readiness passed. No publication backlog remains; review and independent audit are pending.
