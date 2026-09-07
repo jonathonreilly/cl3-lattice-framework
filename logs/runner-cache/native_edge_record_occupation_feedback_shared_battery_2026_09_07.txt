@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_occupation_feedback_shared_battery_2026_09_07.py
+runner_sha256: e6710fc3faf6f81110917d0d61251a2d587bcfa989db0608b1c49f59154bd02f
+input_fingerprint_sha256: 442a82cbe6ccd5c76edc9fb54fc30aa060b780585fbf5fb7fcd4b1bac3ab8c3e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 9.26
+status: ok
+----- stdout -----
+OCCUPATION FEEDBACK: Post-event conditional states; all reach/dark/trap mass retained. Headempty dark refers to the TOTAL-ENERGY-FIBER occupation dictionary, not bare physical occupation. Supplied changed law, no optimization or nonnegative battery drift theorem.
+DATA post1 prefixes=3 mass=0.4999999999999987
+DATA post2 prefixes=6 mass=0.3434064769414073
+DATA post3 prefixes=12 mass=0.19580265253619697
+DATA post4 prefixes=24 mass=0.13330265253619702
+VALIDATION {"rows": 45, "configuration_records": 292, "trap_prefixes": 46, "maximum_residual": 1.2576606422953773e-12, "minimum_current_threshold_margin": 0.0010624033632697927, "mutations": {"missing_row": true, "NaN": true, "wrong_conditionalQ": true, "current_difference": true, "lost_dark_mass": true, "wrong_CAR_sign": true, "wrong_scope": true, "bool_threads": true, "float_basis": true, "missing_time_certificates": true, "duplicate_time_certificate": true, "invented_time_rate": true, "untrue_max_residual": true, "terminal_depth12": true, "duplicate_terminal": true, "omitted_terminal": true}, "live_checker_sha256": "84338de0461f472ebdba013c2924fb57be918c62e1cab6f73fcda17a6d4cc387"}
+per_element: checked all live-edge currents on all45 post-event conditioned prefixes.
+per_site: checked all eight densities and fixedN4 on every positive-probability prefix.
+per_mode: checked full fixedN occupation/spectral coherences and all zero-gap rate-tuple terms.
+per_block: checked conditioned totalQ and direct battery energy, all292 exact configuration-prefix records and complete dark/trap census.
+lattice_wide: checked and not executed -- finite supplied feedback law does not resolve infinite-lattice formation, locality, entropy or renewal.
+SOURCE_SHA256 e6710fc3faf6f81110917d0d61251a2d587bcfa989db0608b1c49f59154bd02f
+TIMING {"seconds": 8.925657707994105, "peak_rss_MiB": 104.296875, "timeout_seconds": 180, "blas_threads": 1, "rss_limit_MiB": 180}
+TOTAL: PASS FAIL=0
+
+----- stderr -----
+

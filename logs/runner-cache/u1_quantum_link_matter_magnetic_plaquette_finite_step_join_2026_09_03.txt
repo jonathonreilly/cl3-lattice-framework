@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/u1_quantum_link_matter_magnetic_plaquette_finite_step_join_2026_09_03.py
+runner_sha256: 45d9f9689c0b16d949f6a983ac93c621ecd4bad2c64a07d1da424ba638cb43f4
+input_fingerprint_sha256: 20bfc43ed85c5354444fba5e49cd2ee12a8368139d766c4f3736289639aa5c29
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+[PASS] 01 each hard-cutoff link obeys [E,U]=U exactly
+[PASS] 02 the finite link exposes its one top-flux raising boundary
+[PASS] 03 electric, charged-hop, magnetic, and summed generators are Hermitian
+[PASS] 04 electric-matter and magnetic layers separately commute with all four Gauss generators
+[PASS] 05 the overlapping electric-matter and magnetic layers genuinely do not commute
+[PASS] 06 the magnetic layer circulates one divergence-free flux around the face
+[PASS] 07 the pure magnetic circulation leaves matter charge unchanged
+[PASS] 08 one finite current equals flux gain, head gain, and negative tail gain in the active layer
+[PASS] 09 the active matter layer changes no spectator face-edge flux
+[PASS] 10 the electric-matter layer closes exact opposite work and its local energy
+[PASS] 11 the unsplit matter-electric-magnetic evolution is unitary and preserves every Gauss operator
+[PASS] 12 the unsplit joint evolution exactly conserves the full Hamiltonian
+[PASS] 13 the full flux change splits exactly into matter transfer plus a divergence-free face circulation
+[PASS] 14 the palindromic matter/magnetic tick is exactly reversible and Gauss preserving
+[PASS] 15 the reversible tick's full-Hamiltonian drift is cubic per step
+[PASS] 16 the reversible tick approaches exact joint evolution at third order per step
+[PASS] 17 the tick has a branch-resolved Hermitian Floquet generator that exactly preserves Gauss and itself
+[PASS] 18 the exact Floquet generator differs from the simple Hamiltonian at quadratic order
+[PASS] 19 the resolved double-commutator term predicts the Floquet generator through quadratic order
+[PASS] 20 finite stepping generates quadratic correlated matter-plus-plaquette transitions absent from the summed law
+[PASS] 21 removing either charged hopping or magnetic curvature removes the correlated-transition effect
+[PASS] 22 the separate continuous-phase comparison has one positive curl curvature and three curl-flat directions
+[PASS] 23 the separate phase-comparison curvature is covariant under all eight square symmetries
+[PASS] 24 the Wilson magnetic potential approaches the Maxwell curl quadratic at fourth-order remainder
+diagnostic energy-drift ratios: 7.966286 7.991559 7.997889
+diagnostic Floquet-deviation ratios: 4.015643 4.003899 4.000974
+diagnostic combined-entry maxima: 1.42330388e-03 3.53553904e-04 8.82470787e-05 2.20529418e-05
+per_element: finite electric shifts, charged hopping, and face circulation are checked
+per_site: four vertex Gauss generators and exact matter continuity are checked
+per_mode: separate phase-comparison curl curvature and finite-operator Floquet refinement orders are resolved
+per_block: the 162-state spin-one four-link face plus one charged edge is checked
+lattice_wide: the local junction is compatible; photon survival on an extended quantum-link lattice is not claimed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/u1_quantum_link_exact_backreaction_colored_floquet_2026_09_03.py
+runner_sha256: 08ff02370571441046a783f9d7064c737648d762f7dfb605e82e5948fdf85f62
+input_fingerprint_sha256: 5696dec93b9161e5e8eeed961c122032eb38f9aa07c4cf1b2b418fd5d8065ca6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+[PASS] 01 the hard-cutoff quantum link obeys [E,U]=U exactly
+[PASS] 02 finite flux has one explicit nonunitary raising boundary at its top state
+[PASS] 03 both endpoint Gauss generators commute with every one-bond Hamiltonian
+[PASS] 04 each finite link decomposes into paired transfer sectors plus two boundary dark states
+[PASS] 05 the joint matter-flux evolution is unitary throughout the parameter grid
+[PASS] 06 the finite joint unitary preserves both endpoint Gauss operators
+[PASS] 07 one integrated current equals electric-flux gain and both matter endpoint transfers
+[PASS] 08 electric energy gain equals the anticommutator midpoint work
+[PASS] 09 the active matter hopping energy loses exactly the electric work
+[PASS] 10 the complete one-bond matter-plus-electric Hamiltonian is exactly conserved
+[PASS] 11 the exact flux current approaches its instantaneous commutator linearly in the step
+[PASS] 12 each adjacent bond Hamiltonian commutes with all three shared-vertex Gauss generators
+[PASS] 13 each operational adjacent-bond layer closes charge and opposite electric work exactly
+[PASS] 14 the palindromic adjacent-bond tick is exactly Gauss preserving and reversible
+[PASS] 15 the unsplit two-bond exponential exactly conserves the summed Hamiltonian
+[PASS] 16 a nonpalindromic two-color product has a quadratic one-tick energy drift
+[PASS] 17 the palindromic two-color product suppresses summed-energy drift to cubic order
+[PASS] 18 Lie and palindromic products approach the exact joint flow at orders two and three
+[PASS] 19 the principal palindromic Floquet generator is Hermitian and exactly conserved
+[PASS] 20 the conserved Floquet generator differs from the summed Hamiltonian at quadratic order
+[PASS] 21 the exact Floquet energy acquires resolved cross-bond entries at quadratic order
+[PASS] 22 disjoint colored bonds commute and conserve the summed energy exactly
+[PASS] 23 shared matter makes neighboring bond energies noncommute and exposes the splitting residual
+per_element: finite flux raising, matter transfer, current, and anticommutator work are checked
+per_site: both endpoint Gauss generators and the shared middle-vertex generator are checked
+per_mode: instantaneous-current and Lie/Strang/Floquet refinement orders are resolved
+per_block: one-bond exact backreaction and two-bond overlapping/disjoint controls are checked
+lattice_wide: colored local layers preserve Gauss by composition; exact summed energy versus Floquet energy remains the global schedule choice
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+
