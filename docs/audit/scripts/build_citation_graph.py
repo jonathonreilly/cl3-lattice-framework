@@ -151,6 +151,9 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "native_gauge_transfer_dimension_divided_wilson_second_order_bounded_theorem_note_2026-09-07": [
+        "scripts/native_gauge_transfer_dimension_divided_origin_recurrence_check_2026_09_07.py",
+    ],
     "native_gauge_transfer_killed_heat_second_order_kernel_bounded_theorem_note_2026-09-07": [
         "scripts/native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07.py",
     ],

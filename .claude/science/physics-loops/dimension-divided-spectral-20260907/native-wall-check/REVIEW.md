@@ -1,0 +1,11 @@
+# Frozen physical-normalization recurrence diagnostic
+
+47 checks pass on21 fixed endpoints, beta128/512/2048, in8.816seconds and139.906MiB. No allocation failure, box retuning or tolerance change occurred. Source and prerun wording correction are preserved. The correction removed an unnecessary false n≤c0 premise before any computation; the ratio bound itself was unchanged and does not use that premise.
+
+The native coefficient ratio is obtained from the actual origin column of exp[beta(J-I)], divided by its origin return and the exact integer Weyl dimension. The common e^-beta scalar cancels. At beta2048, return8.457508191587346e-13; upper box-entry truncation bound2.242078304687764e-21; tail/return2.650991585107717e-9. The maximum resulting dimension-divided ratio error bound is5.301983170215434e-9. This explicitly prices the exit tail against the small return, rather than treating an absolute small tail as sufficient.
+
+For finite numerator a and return b, the infinite entries are a+u,b+v with0≤u,v≤epsilon. Direct subtraction bounds the ratio error by epsilon/b+a epsilon/b², divided by d. The bound needs neither numerator≤return nor an estimate of their unknown infinite values. The Chernoff maximal inequality uses the unrestricted coordinate walk MGF with rate2beta/3; upper exit is sufficient to bound loss from the added square boundaries.
+
+At beta2048, worst leading residual is0.0014637713900712557 and worst corrected residual is0.000002321440233603051. All21 signed residual pairs are retained, with no improvement filter. The exact vacuum ratio control equals1 at every beta. Lower-beta rows lie outside the theorem's beta domain and are marked accordingly.
+
+Floating expm_multiply and Chernoff exponential evaluation remain uncertified; these are concrete falsifier diagnostics, not a proof of1710/beta², an eigenvalue fit, or a certified enclosure of the physical coefficient. No runtime source dependencies exist: the six native shifts and integer dimensions are independently constructed here. The script prints sourceSHA and rejects nonfinite, duplicate-case, resource and theorem-domain diagnostic failures. Default output is PASS plus fiveN5 scope lines; --json is pure strict JSON.

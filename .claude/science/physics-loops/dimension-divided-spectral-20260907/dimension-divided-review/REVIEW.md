@@ -1,0 +1,15 @@
+# Independent cold review: dimension-divided Wilson multiplier
+
+Reviewed primary DERIVATION.md SHA c833ae25b30a2767a32b1a136846adb4ea2f9a3de32e229fb2006cd56c85508e and check.py. Live certificate passes45exact checks; receipt live-certificate.json. Verdict: proof sound on the stated shifted integer-label domain, conditional on the parent exact Fourier identity. No correction required.
+
+The written three-wall FTC proof is stronger than the alternative origin-path argument: F=xy B follows from the two coordinate walls; B(x,-x)=0 follows from the third wall for x≠0 and at0 by continuity. In particular Fxy(0,0)=B(0,0)=0 is justified, not assumed. Holding x fixed and integrating B_y from -x to y gives F=xy(x+y) times an integral bounded by(1/2)sup|Fxyy|. Therefore |F|/H≤sup|Fxyy|, including arbitrarily small positive endpoints. The derivative of B is valid globally since F is a finite smooth exponential sum. Negative intermediate y is harmless. No separate Fxxy bound is needed in this written route; the symmetric route would give the same bound. Both third derivatives are bounded by6(4a/3)^(3/2)=16a^(3/2)/sqrt3<10a^(3/2), because all dual Weyl coordinates obey the same square bound. There is no unproved positive integral representation.
+
+The1/6 averaging is indispensable and correct. At the actual x=(p+rho)/sqrtbeta, every phase is periodic on the scaled torus; the integral unimodular dual matrices are torus automorphisms. The EXACT product iDelta B is the scaled periodic alternating trigonometric polynomial, even though its polynomial and sinc factors individually are not periodic. The low ellipse is preserved and its dual images lie within the chosen square; this also makes its complement invariant on the torus. Thus both parts may be averaged. For arbitrary real x the torus claim would fail, and the proof explicitly does not make it. Gaussian integrals on the full plane have no periodicity obligation.
+
+Small x=epsilon rho gives A=-i epsilon³Delta+O(epsilon5); multiplication by iDelta and division by6H gives Delta²/6, matching D0. The certificate checks the actual six matrices and sign, not a stipulated normalization.
+
+Independently checked the remainder factors: |Delta A/H|/6≤5a³, radial prefactor<1/10, hence(1/2) times the PN moments. The low moment powers5,6,7 are correct. Exact high-tail polynomial has maximum beta degree5 and decreases from beta2048. Gaussian high tail follows from beta²≤4a² and beta≤2a, giving(9/2)a5+a6/18 after the extra a³ factor. The rational low value plus both tails, not merely the rounded low ceiling, is below21201.
+
+The denominator import remains2618/beta² in unnormalized units, D0>14, D/D0>.999. The final subtraction is rN+D0P2E/beta²−rD(E+P2E/beta); all factors and signs agree. The bound |P2E|<4 is globally valid, and the final rational coefficient is below1710. Since d_p=beta^(3/2)H(x), the ratio is exactly c_p/(d_p c0), with no residual beta scaling.
+
+This supplies a new uniform one-link normalized multiplier estimate. It supplies neither spatial compression diagonality nor a physical continuum gap. The failed naive division of29/beta² is correctly preserved and not used.
