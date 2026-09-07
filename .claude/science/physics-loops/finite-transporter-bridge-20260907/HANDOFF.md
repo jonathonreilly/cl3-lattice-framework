@@ -11,3 +11,7 @@ Root final port review and pipeline cb1041e826ab, strict lint and 19-claim readi
 ## Draft publication
 
 Draft PR8031 stacked on PR8030, science commit22a6434f3d9dceea99d07e00e81fc46a01970163. GitHub reports MERGEABLE/CLEAN; no remote checks were listed at receipt time. Local full pipeline cb1041e826ab, strict lint and19 readiness rows passed. Exact worktree lock released. No merge or audit verdict.
+
+## Corrected-main validation
+
+Fresh pipeline 8ec71311426f, strict lint and18 ready rows passed against7887b4481feae2800c04c7c42ddac9554f2c2b9f after corrected-parent sync062191. See corrected-main-validation-20260907. Historical b965 results remain separate. Child science unchanged.
