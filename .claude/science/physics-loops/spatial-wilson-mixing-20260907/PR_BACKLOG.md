@@ -1,3 +1,5 @@
 # Review publication
 
-Full current-main validation is running. Next: preserve one affected claim's readiness before generated cleanup, commit the bounded theorem packet, push the isolated branch and open one review PR against main. Never merge or push science directly to main.
+Published: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8009
+
+Conditional bounded theorem, independent audit still required; no merge performed. Latest main synchronization is recorded separately from the pinned full-pipeline receipt.
