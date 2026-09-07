@@ -1,0 +1,36 @@
+{
+  "source_sha256": "b8c14302200be820a6d14357939bd7a35c19a0602192c80df0669ad8241d4a41",
+  "runs": [
+    {
+      "mutation": "drop_boundary",
+      "exit_code": 1,
+      "failed_checks": [
+        "native_localization_and_boundary_work"
+      ]
+    },
+    {
+      "mutation": "reverse_shift",
+      "exit_code": 1,
+      "failed_checks": [
+        "global_energy_and_nonvacuous_local_bounds"
+      ]
+    },
+    {
+      "mutation": "reset_shared",
+      "exit_code": 1,
+      "failed_checks": [
+        "joint_energy_integral_local_w1",
+        "joint_energy_integral_local_w8",
+        "joint_energy_integral_local_w32",
+        "retained_battery_is_not_reset_batteries"
+      ]
+    },
+    {
+      "mutation": "fourier_half",
+      "exit_code": 1,
+      "failed_checks": [
+        "sine_packet_and_Fourier_normalization"
+      ]
+    }
+  ]
+}

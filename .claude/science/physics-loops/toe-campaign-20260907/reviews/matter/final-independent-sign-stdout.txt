@@ -1,0 +1,41 @@
+{
+  "scope": "Read-only counterexample to original Eq. (6); no audit verdict",
+  "fixture": {
+    "sites": [
+      0,
+      1,
+      2
+    ],
+    "X": [
+      0
+    ],
+    "patch": [
+      0,
+      1
+    ],
+    "radius": 1,
+    "interaction_range": 1,
+    "deleted": "X_0",
+    "patch_remaining": "-Z_0 X_1 + 2 Y_1 - Z_0 Z_1",
+    "exterior": "3 Z_1 X_2",
+    "Record": "(I +/- Z_0)/2",
+    "tau": 0.4
+  },
+  "termwise_Record_commutator_residual": 0.0,
+  "exterior_deleted_commutator": 0.0,
+  "actual_cocycle_difference": 0.1377215580103315,
+  "basis_column_lower_bound": 0.13490234032812187,
+  "incorrect_positive_time_integral": 0.056125643916922055,
+  "positive_quadrature_estimate": 5.769854879633163e-14,
+  "correct_negative_time_integral": 0.13795572848301063,
+  "negative_quadrature_estimate": 1.5316162614077492e-15,
+  "corrected_symmetric_integral": 0.13795572848301063,
+  "symmetric_quadrature_estimate": 1.5316162614077492e-15,
+  "positive_midpoint_integral": 0.05612564493000154,
+  "positive_midpoint_analytic_discretization_error": 0.0006171077723098716,
+  "positive_midpoint_upper": 0.05674275270231142,
+  "source_equation_6_is_violated": true,
+  "violation_survives_basis_column_and_Lipschitz_midpoint_bounds": true,
+  "corrected_bounds_hold": true,
+  "numerics_note": "The midpoint discretization remainder is analytically bounded; matrix arithmetic is ordinary double precision, not interval-certified."
+}

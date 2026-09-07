@@ -1,0 +1,78 @@
+occupation_sign 1.0 {'E0': -6.073757574327769e-16, 'gap': 0.9696236167954155, 'K': 0.1051214021546868, 'direct_over_volume': 0.33333333333333304, 'relaxation_over_volume': 0.22821193117864624, 'ground_residual': 7.289293632633564e-15, 'solve_residual': 3.342172564010345e-15, 'FD': [{'theta': 0.02, 'K_real': 0.1051196977508991, 'K_imag': 0.10512310628757246}, {'theta': 0.01, 'K_real': 0.10512097608017136, 'K_imag': 0.1051218282130402}]}
+occupation_sign 0.95 {'E0': -0.40273650590973115, 'gap': 1.2244543292624046, 'K': 0.10753911172903904, 'direct_over_volume': 0.3377544967177531, 'relaxation_over_volume': 0.23021538498871405, 'ground_residual': 5.804928316787796e-15, 'solve_residual': 3.4744648207739226e-15, 'FD': [{'theta': 0.02, 'K_real': 0.10753760405834284, 'K_imag': 0.10754061917486735}, {'theta': 0.01, 'K_real': 0.10753873482732823, 'K_imag': 0.10753948861436102}]}
+occupation_sign 0.9 {'E0': -0.8108224119397499, 'gap': 1.09159046361238, 'K': 0.10973442221925245, 'direct_over_volume': 0.341812867273074, 'relaxation_over_volume': 0.23207844505382152, 'ground_residual': 7.580309683174397e-15, 'solve_residual': 3.60065010155294e-15, 'FD': [{'theta': 0.02, 'K_real': 0.10973308968889595, 'K_imag': 0.10973575456499352}, {'theta': 0.01, 'K_real': 0.10973408910569526, 'K_imag': 0.10973475531583787}]}
+cartesian_curl 1.0 {'E0': -6.073757574327769e-16, 'gap': 0.9696236167954155, 'K': 0.1051214021546868, 'direct_over_volume': 0.33333333333333304, 'relaxation_over_volume': 0.22821193117864624, 'ground_residual': 7.289293632633564e-15, 'solve_residual': 3.342172564010345e-15, 'FD': [{'theta': 0.02, 'K_real': 0.1051196977508991, 'K_imag': 0.10512310628757246}, {'theta': 0.01, 'K_real': 0.10512097608017136, 'K_imag': 0.1051218282130402}]}
+cartesian_curl 0.95 {'E0': -0.40273650590973115, 'gap': 1.2244543292624046, 'K': 0.10753911172903904, 'direct_over_volume': 0.3377544967177531, 'relaxation_over_volume': 0.23021538498871405, 'ground_residual': 5.804928316787796e-15, 'solve_residual': 3.4744648207739226e-15, 'FD': [{'theta': 0.02, 'K_real': 0.10753760405834284, 'K_imag': 0.10754061917486735}, {'theta': 0.01, 'K_real': 0.10753873482732823, 'K_imag': 0.10753948861436102}]}
+cartesian_curl 0.9 {'E0': -0.8108224119397499, 'gap': 1.09159046361238, 'K': 0.10973442221925245, 'direct_over_volume': 0.341812867273074, 'relaxation_over_volume': 0.23207844505382152, 'ground_residual': 7.580309683174397e-15, 'solve_residual': 3.60065010155294e-15, 'FD': [{'theta': 0.02, 'K_real': 0.10973308968889595, 'K_imag': 0.10973575456499352}, {'theta': 0.01, 'K_real': 0.10973408910569526, 'K_imag': 0.10973475531583787}]}
+[FAIL] result['quantized_uniform_source']['matrix_rotation_residual']<1e-11
+[FAIL] exact Cartesian fourth-trace Laurent polynomial
+{
+  "independence": "No imports from frozen or author code; axis-major edge indexing; BFS on bits.",
+  "N": 864,
+  "directed_moves": 6912,
+  "mean_degree": 8.0,
+  "min_degree": 4,
+  "max_degree": 16,
+  "electric_update_max_error": 0,
+  "reverse_move_errors": 0,
+  "gauss_errors": 0,
+  "flux_errors": 0,
+  "trace_H4_V1": {
+    "occupation_sign": {
+      "0": 8975616
+    },
+    "cartesian_curl": {
+      "0": 8975616
+    }
+  },
+  "matrix_checks": {
+    "occupation_sign": {
+      "hermitian_residual": 0.0,
+      "imaginary_transpose_residual": 0.0,
+      "trace_H4_at_theta_0p37_V1": 8975616.0
+    },
+    "cartesian_curl": {
+      "hermitian_residual": 0.0,
+      "imaginary_transpose_residual": 0.0,
+      "trace_H4_at_theta_0p37_V1": 8975616.0
+    }
+  },
+  "all_root_orientation_algebra": {
+    "2": {
+      "checked": 48,
+      "failures": 0
+    },
+    "4": {
+      "checked": 384,
+      "failures": 0
+    },
+    "6": {
+      "checked": 1296,
+      "failures": 0
+    },
+    "8": {
+      "checked": 3072,
+      "failures": 0
+    },
+    "10": {
+      "checked": 6000,
+      "failures": 0
+    },
+    "12": {
+      "checked": 10368,
+      "failures": 0
+    },
+    "3": {
+      "checked": 162,
+      "failures": 90
+    }
+  },
+  "quantized_uniform_source": {
+    "theta": 1.5707963267948966,
+    "matrix_rotation_residual": 67.88225099390856,
+    "energy_difference": 0.7866458247236053
+  },
+  "checks_passed": 53,
+  "checks_failed": 2
+}
+TOTAL: PASS=53 FAIL=2

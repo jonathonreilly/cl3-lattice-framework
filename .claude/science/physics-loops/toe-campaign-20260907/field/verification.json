@@ -1,0 +1,128 @@
+{
+  "primary": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/scripts/spin_half_cartesian_plaquette_source_2026_09_07.py",
+      "--json",
+      "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/.claude/science/physics-loops/toe-campaign-20260907/field/primary.json"
+    ],
+    "returncode": 0,
+    "sha256": "935553580b57a2ab1d5e0dd89f8bcc419e2a005b5c089e04b42ed13baf1445d5"
+  },
+  "independent": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py",
+      "--json",
+      "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/.claude/science/physics-loops/toe-campaign-20260907/field/independent.json"
+    ],
+    "returncode": 0,
+    "sha256": "2b21ba485d696599af74d5fed7077997a202423a800fee0d21cd24c96cdf0a62"
+  },
+  "cross_check": {
+    "max_curvature_difference": 6.6058269965196814e-15,
+    "trace_H4_second_derivatives": {
+      "occupation_sign": 0,
+      "cartesian_curl": -38912
+    }
+  },
+  "mutations": [
+    {
+      "name": "primary_drop_source_parity",
+      "returncode": 1,
+      "detected": true,
+      "failure_labels": [
+        "[FAIL] full uniform-source flux quantum is unitarily equivalent to zero at L2",
+        "[FAIL] exact trace-H4 derivatives distinguish source families (independent Laurent-polynomial cross-check)"
+      ],
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/.claude/science/physics-loops/toe-campaign-20260907/field/mutants/primary_drop_source_parity.py"
+      ]
+    },
+    {
+      "name": "primary_drop_general_source_parity",
+      "returncode": 1,
+      "detected": true,
+      "failure_labels": [
+        "[FAIL] arbitrary-source link-rephasing identity H[b+curl(a)]=D H[b] D* at L2",
+        "[FAIL] exact-curl source is a basis rotation of zero source"
+      ],
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/.claude/science/physics-loops/toe-campaign-20260907/field/mutants/primary_drop_general_source_parity.py"
+      ]
+    },
+    {
+      "name": "primary_reverse_one_boundary_edge",
+      "returncode": 1,
+      "detected": true,
+      "failure_labels": [
+        "[FAIL] electric update equals -epsilon*s*oriented boundary on every move",
+        "[FAIL] even-periodic local identities at every root and both occupation signs",
+        "[FAIL] arbitrary-source link-rephasing identity H[b+curl(a)]=D H[b] D* at L2",
+        "[FAIL] exact-curl source is a basis rotation of zero source",
+        "[FAIL] full-flux seam construction at every plaquette of L2/L4/L6",
+        "[FAIL] unwrapped local update and reversed ordered-axis conventions, including negative roots"
+      ],
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/.claude/science/physics-loops/toe-campaign-20260907/field/mutants/primary_reverse_one_boundary_edge.py"
+      ]
+    },
+    {
+      "name": "primary_omit_full_flux_seam",
+      "returncode": 1,
+      "detected": true,
+      "failure_labels": [
+        "[FAIL] full uniform-source flux quantum is unitarily equivalent to zero at L2"
+      ],
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/.claude/science/physics-loops/toe-campaign-20260907/field/mutants/primary_omit_full_flux_seam.py"
+      ]
+    },
+    {
+      "name": "primary_wrong_response_relaxation_sign",
+      "returncode": 1,
+      "detected": true,
+      "failure_labels": [
+        "[FAIL] V=1.00, occupation_sign: positive finite curvature; independent finite differences converge quadratically",
+        "[FAIL] V=1.00, cartesian_curl: positive finite curvature; independent finite differences converge quadratically",
+        "[FAIL] V=0.95, occupation_sign: positive finite curvature; independent finite differences converge quadratically",
+        "[FAIL] V=0.95, cartesian_curl: positive finite curvature; independent finite differences converge quadratically",
+        "[FAIL] V=0.90, occupation_sign: positive finite curvature; independent finite differences converge quadratically",
+        "[FAIL] V=0.90, cartesian_curl: positive finite curvature; independent finite differences converge quadratically"
+      ],
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/.claude/science/physics-loops/toe-campaign-20260907/field/mutants/primary_wrong_response_relaxation_sign.py"
+      ]
+    },
+    {
+      "name": "independent_drop_source_parity",
+      "returncode": 1,
+      "detected": true,
+      "failure_labels": [
+        "[FAIL] result['quantized_uniform_source']['matrix_rotation_residual']<1e-11",
+        "[FAIL] exact Cartesian fourth-trace Laurent polynomial"
+      ],
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/.claude/science/physics-loops/toe-campaign-20260907/field/mutants/independent_drop_source_parity.py"
+      ]
+    },
+    {
+      "name": "independent_omit_full_flux_seam",
+      "returncode": 1,
+      "detected": true,
+      "failure_labels": [
+        "[FAIL] result['quantized_uniform_source']['matrix_rotation_residual']<1e-11"
+      ],
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Projects/Physics-worktrees/toe-campaign-20260907/.claude/science/physics-loops/toe-campaign-20260907/field/mutants/independent_omit_full_flux_seam.py"
+      ]
+    }
+  ]
+}

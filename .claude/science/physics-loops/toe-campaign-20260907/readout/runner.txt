@@ -1,0 +1,42 @@
+PASS proper_cubic_group_size
+PASS all_partial_multiset_odds: conditions=924
+PASS all_partial_multiset_covariance: comparisons=133056
+PASS ancestor_equals_sorted_cube
+PASS pathwise_race_covariance: 24 rotations; marks relabeled with effects
+PASS pathwise_translation
+PASS on_demand_z3_certificate: ancestors=7; queried=25; root_label=1
+PASS priority_order_vs_flow_path3: configurations=216
+PASS priority_order_vs_flow_cycle4: configurations=1296
+PASS exact_boundary_escape: escape=4/24
+PASS exact_boundary_cancellation: sites 0,1: pair_TV=0 despite escape=1/6
+PASS exact_boundary_nonzero_tv: sites 0,2: pair_TV=1/8424; escape=T_2>T_3 has probability 1/2
+PASS plaquette_spectral_control_(3, 1, 2)
+PASS plaquette_envelope_(3, 1, 2): static=81/3464; envelope=9/416; gap=315/180128
+PASS plaquette_spectral_control_(5, 2, 4)
+PASS plaquette_envelope_(5, 2, 4): static=625/46681; envelope=625/49197; gap=1572500/2296565157
+PASS plaquette_spectral_control_(2, 1, 2)
+PASS plaquette_envelope_(2, 1, 2): static=16/2441; envelope=16/2541; gap=1600/6202581
+PASS plaquette_spectral_control_(2, 2, 1)
+PASS plaquette_envelope_(2, 2, 1): static=1/43; envelope=1/48; gap=5/2064
+PASS plaquette_spectral_control_(2, 2, 2)
+PASS plaquette_envelope_(2, 2, 2): static=1/216; envelope=1/216; gap=0
+PASS adaptive_history_dependent_control: 1296 pointwise envelopes; scheduler sees formed values
+PASS path_order_factorial_1
+PASS path_order_factorial_2
+PASS path_order_factorial_3
+PASS path_order_factorial_4
+PASS path_order_factorial_5
+PASS path_order_factorial_6
+PASS tail_ratio_10: b_10=78125/266112
+PASS tail_ratio_20: b_20=30517578125/13624251245789184
+PASS tail_ratio_40: b_40=931322574615478515625/2854615604323311539897178628560277475426304
+PASS spin_bond_partition_4: Z=258
+PASS spin_bond_covariance_4: cov=11/387
+PASS bond_insertion_floor_4: minimum=1/4
+PASS spin_bond_partition_8: Z=219042
+PASS spin_bond_covariance_8: cov=2632/109521
+PASS bond_insertion_floor_8: minimum=1/4
+PASS static_path_lower_bound_cube: cov=2632/109521; lower=1/288
+PASS infinite_discriminator_integer: distance=512; radius=255; p=q=2,r=1
+PASS infinite_discriminator_margin: 10^-21 < formation_bound/static_lower < 10^-20
+TOTAL: PASS=41 FAIL=0
