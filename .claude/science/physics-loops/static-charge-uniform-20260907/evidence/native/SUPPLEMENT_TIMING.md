@@ -1,0 +1,3 @@
+# Scope and timing of supplements
+
+The original PREREGISTRATION preceded reading Section2 and deriving the sector restriction. Root subsequently proposed ghost-vacuum padding and an open-line upper bound. This lane derived both analytically after that exposure and before writing this receipt; they are NOT represented as prospectively blind discoveries. No finite calculation has yet been run. Any subsequent exact finite control requires its own prospective inputs. The root completed proof has not been read. The upper argument is an exact trial-state identity and does not use the small-coupling dressing estimate. The ghost supplement extends the literal whole-range finite-cell family to an arbitrary finite actual cubic subgraph without allowing ghost shortcuts.

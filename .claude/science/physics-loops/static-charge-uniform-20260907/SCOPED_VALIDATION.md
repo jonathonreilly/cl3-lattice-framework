@@ -1,0 +1,2 @@
+# Validation scope
+Both canonical --json/default executions passed; unknown flags fail. PORT_RECEIPT records exact scientific equality after only declared source/resource/interface metadata normalization. Root original check_count42 is retained and TOTAL42 is an interface alias, not added checks. Actual canonical-cache execution and graph/full pipeline remain integration tasks. No audit verdict applied.

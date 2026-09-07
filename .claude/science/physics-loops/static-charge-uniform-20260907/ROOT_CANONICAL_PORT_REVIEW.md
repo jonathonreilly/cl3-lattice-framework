@@ -1,0 +1,5 @@
+# Root canonical port review, block38
+
+Read the staged canonical source SHA3898f9c48a6d3424eec39d90f21df8a9970bb31cd1f6fdec6443736a6a57a42b. Verified its complete native ad23675f proof is present byte-for-byte after the preface. PASS for faithful port and scope, following root cebaa3f3 mathematical review and primary0fc6723f third review. No source edit requested.
+
+The preface correctly distinguishes actual graph distance from an assumed Manhattan path, the finite static sector from an infinite potential limit, and the fixed source norm factor from the Banach amplification factor3. It retains all boundary Gauss constraints, ghost-vacuum restriction, domain/equivariance argument, exact neutral subtraction and all-coupling upper trial. Existential constants and the supplied model/source assumptions remain explicit. Both helpers32/42 are scoped as finite graph/algebra adverse checks, not proofs of the imported coordinate theorem. Original syntax failure and timing disclosures remain in the packet. Integrate both real caches and claim-local secondary-helper mapping before the normal frozen full pipeline.

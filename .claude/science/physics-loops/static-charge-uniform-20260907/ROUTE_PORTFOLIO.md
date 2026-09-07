@@ -1,0 +1,2 @@
+# Actual routes
+The unlabelled-circle shortcut was rejected. Equivariant creation-log coordinates preserve the charged sector and permit a restricted resolvent with a volume-independent relative constant. Ghost-vacuum padding extends the literal finite cell family without changing graph distance. The exact open-transporter trial supplies the independent all-coupling upper bound. No numerical spectral fit is used.
