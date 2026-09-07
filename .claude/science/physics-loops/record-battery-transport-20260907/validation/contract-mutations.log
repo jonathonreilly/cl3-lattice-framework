@@ -1,0 +1,25 @@
+primary_physics_map
+returncode=
+1
+FAIL live_independent_agreement NUMERIC all 40 pre/post surfaces: ValueError: root.surfaces[0].densities[0]: disagreement 7.693e-04
+SUMMARY validation_fail=5 numerical_fail=5 physical_fail=3 initial_E=-5.905910 initial_EB=24.500000
+TOTAL: PASS=8 FAIL=5
+malformed_checker_json
+returncode=
+1
+FAIL live_independent_agreement NUMERIC all 40 pre/post surfaces: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+SUMMARY validation_fail=1 numerical_fail=1 physical_fail=3 initial_E=-5.905910 initial_EB=24.500000
+TOTAL: PASS=12 FAIL=1
+checker_child_failure
+returncode=
+1
+FAIL live_independent_agreement NUMERIC all 40 pre/post surfaces: CalledProcessError: Command '['/usr/local/bin/python3', '/private/tmp/toe-record-campaign-20260907/validation/contract_mutations/checker_child_failure/native_edge_record_shared_battery_transport_independent_check_2026_09_07.py', '--json']' returned non-zero exit status 7.
+SUMMARY validation_fail=1 numerical_fail=1 physical_fail=3 initial_E=-5.905910 initial_EB=24.500000
+TOTAL: PASS=12 FAIL=1
+checker_status_false
+returncode=
+1
+FAIL live_independent_agreement NUMERIC all 40 pre/post surfaces: ValueError: root.validation_ok: discrete/status value differs
+SUMMARY validation_fail=1 numerical_fail=1 physical_fail=3 initial_E=-5.905910 initial_EB=24.500000
+TOTAL: PASS=12 FAIL=1
+JSON schema valid; 40 unique surfaces; validation_ok=true

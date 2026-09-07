@@ -1,0 +1,13 @@
+# Narrow cold review: native physical-code scratch-memory repair
+
+Disposition: PASS. No blocking finding in the memory-only delta at SHA-256 bb5ace7229147ba38d4f864c71ecc4a1b3a0ee5e9107783f91aa1cbd06b28263.
+
+Reviewed the actual native-runner diff, construct_faithful_code and apply_pauli lifecycle, the repair report, comparison program and its recorded output. No campaign-tree edits or full-runner repetitions were performed.
+
+The independent algebra check is column restriction: for each column interval I, (F G)[:,I] = F @ G[:,I], while a physical Pauli acting on rows satisfies (P F)[:,I] = P(F[:,I]). The code slices only the output columns of the CAR operator; it retains all 128 indices in the matrix product. Taking the maximum over all blockwise entry residuals equals the original maximum over the full comparison matrix. range(0,128,8) and min(start+8,128) cover all 128 columns exactly once, including columns 120 through 127. Every block executes all 8 B, 12 A, 5 fundamental stabilizer, and 1 six-cycle comparisons. The separate direct six-cycle product and residual are unchanged.
+
+In-place phase alignment starts only after raw Gram and phase-consistency computations finish. raw is local, with no saved downstream consumer requiring its unaligned contents. All phases are normalized to unit modulus before use, so right multiplication by their diagonal preserves the already verified isometry. apply_pauli allocates its output and does not mutate the column view; matrix products likewise leave aligned unchanged. Returning aligned therefore preserves the previous dense isometry lifecycle without retaining the redundant raw copy.
+
+No thresholds, residual families, source/domain guards, physical state space, branch coverage, timeout, or RSS cap changed. The worker's exact full-isometry/four-residual comparison and identical scientific stdout are consistent with this independent algebra/lifecycle inspection. Recorded final-column corruption touches every one of the 26 comparisons and increases generator/loop/six residuals above the unchanged tolerance. Forced RSS 181 MiB remains an envelope failure and nonzero exit. Recorded repaired native/local peaks of 104.2/107.5 MiB satisfy the unchanged 180 MiB limits.
+
+The local runner source is unchanged but its declared native input changed; both native and local canonical input-bound receipts must therefore be regenerated, as root is doing. Prior failed receipts remain historical evidence. This source-code PASS does not substitute for those final canonical executions or assign an audit verdict. The earlier integration memo predates this repair.
