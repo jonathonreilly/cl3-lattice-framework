@@ -38,6 +38,22 @@ ck('two stripped source faces',len(missing)==2 and {f['base'] for f in missing}=
 ck('twenty-two actual action faces',len(kept)==22)
 ck('ten cross couplings',len(cross)==10)
 ck('six spatial four temporal cross weights',sum(f['kind']=='spatial' for f in cross)==6 and sum(f['kind']=='temporal' for f in cross)==4)
+matching_edges={(u,v) for u,v,a in matching}
+half_edges={(u,v) for h in half for u,v,a in h}
+reduced_cross=[];coupled_left_edges=[]
+for f in cross:
+ word=[(u,v,sgn) for u,v,sgn in f['word'] if (u,v) not in matching_edges]
+ label=f"cross face {f['axes']} base {f['base']}"
+ ck(label+' has two legitimate half edges',len(word)==2 and all((u,v) in half_edges for u,v,sgn in word))
+ (u,v,sgn),(r,s,other_sgn)=word
+ left=(u,v) if not u&1 else (r,s)
+ axis=next(a for a in f['axes'] if a!=0)
+ ck(label+' pairs its declared reflected endpoints',(u^1,v^1)==(r,s) and left==(f['base'],f['base']+(1<<axis)))
+ ck(label+' has opposite unit orientations',sgn in (-1,1) and other_sgn==-sgn)
+ coupled_left_edges.append(left)
+ reduced_cross.append(dict(axes=f['axes'],base=f['base'],kind=f['kind'],word=word,left_edge=left))
+expected_coupled={(u,v) for u,v,a in half[0]}-{(0,2),(8,10)}
+ck('complete cross pairs exclude exactly the two source y pairs',len(coupled_left_edges)==len(expected_coupled)==10 and set(coupled_left_edges)==expected_coupled)
 ck('two identical six-face halfactions',all(len(h)==6 and sum(f['kind']=='spatial' for f in h)==2 for h in internal))
 ck('reflection bijects half faces',{(tuple(f['axes']),f['base']^1) for f in internal[0]}=={(tuple(f['axes']),f['base']) for f in internal[1]})
 source=next(f for f in missing if f['base']==0)
@@ -56,13 +72,14 @@ ck('actual isotropic action bound coefficient seventeen',spatial_total==5 and te
 ck('scalar matrix trace normalization',sum(F(1,3) for _ in range(3))==1)
 rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1024**2 if sys.platform=='darwin' else 1024);elapsed=time.monotonic()-started
 if not(math.isfinite(rss) and 0<rss<180 and math.isfinite(elapsed) and 0<=elapsed<180):raise AssertionError('resource contract')
-out=dict(checks=checks,check_count=len(checks),vertex_dictionary='v=x+2y+4z+8time',edges=edges,faces=faces,matching=matching,half_links=half,cross_faces=cross,internal_faces=internal,reduced_source_word=reduced_source,reduced_half_action=reduced_half,spatial_total=str(spatial_total),temporal_total=temporal_total,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),dependencies={},seconds=elapsed,rss_MiB=rss,resources=dict(timeout_seconds=180,rss_limit_MiB=180,blas_threads=1),scope='Exact finite graph, action weights and reduced words only. Haar gauge changes, Peter-Weyl injectivity and strict nonzero averaged amplitude are analytic source proof, not numerically tested positivity. No dressed-source or physical environment identification.')
+out=dict(checks=checks,check_count=len(checks),vertex_dictionary='v=x+2y+4z+8time',edges=edges,faces=faces,matching=matching,half_links=half,cross_faces=cross,reduced_cross_words=reduced_cross,expected_coupled_left_edges=sorted(expected_coupled),internal_faces=internal,reduced_source_word=reduced_source,reduced_half_action=reduced_half,spatial_total=str(spatial_total),temporal_total=temporal_total,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),dependencies={},seconds=elapsed,rss_MiB=rss,resources=dict(timeout_seconds=180,rss_limit_MiB=180,blas_threads=1),scope='Exact finite graph, action weights and reduced words only. Haar gauge changes, Peter-Weyl injectivity and strict nonzero averaged amplitude are analytic source proof, not numerically tested positivity. No dressed-source or physical environment identification.')
 if args.json:print(json.dumps(out,indent=2,allow_nan=False))
 else:
  print('PASS independent cube-slab reflection geometry:',len(checks),'named exact checks')
  print('per_element:32 links,24 faces,22 action faces after two marked weights are stripped.')
  print('per_site:8-link matching forest, two12-link halfcubes; reflection bijections checked.')
  print('per_mode:10 cross convolutions have6 spatial halfweights and4 temporal weights;2 bottom ylinks omitted.')
+ print('per_face: actual reduced cross words',reduced_cross,'; expected coupled left edges',sorted(expected_coupled))
  print('per_block: source word',reduced_source,'; half-action reduced words',reduced_half)
  print('lattice_wide: graph bookkeeping is executed; all-coupling strict positivity remains the analytic Haar/reflection proof.')
  print('SOURCE_SHA256',out['source_sha256']);print('DEPENDENCIES {}')
