@@ -31,9 +31,20 @@ briefs, dispatch specs, strategy notes. Established at owner request
 
 ## Read (from any checkout, without touching your working tree)
 
+Start active campaign work from `TOE_SCORECARD.md` and `CAMPAIGN_STATUS.md`.
+`OPEN_PR_INVENTORY.json` captures the open science, frozen heads, changed files
+and ancestry; `MAIN_STATUS_SNAPSHOT.json` records exact ledger counts on main.
+`BATCH_REVIEW_PLAN.md` proposes coherent review groups and removal of repeated
+mechanical work. The older scorecard is retained under `history/`.
+
+The owner has deferred formal audit until a solid TOE candidate is ready.
+Focused independent checks and reviewed science integration continue. A
+planning refresh must not launch an audit or promote scientific standing.
+
 ```bash
 git fetch origin ai/execution --quiet
 git show origin/ai/execution:TOE_SCORECARD.md
+git show origin/ai/execution:CAMPAIGN_STATUS.md
 ```
 
 ## Edit flow

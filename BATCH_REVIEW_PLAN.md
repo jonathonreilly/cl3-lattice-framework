@@ -1,0 +1,82 @@
+# Faster review and integration of open science
+
+Planning proposal, 2026-09-07. The owner wants the open science integrated
+more efficiently and defers formal audit until a solid TOE candidate.
+Independent examination of surviving source claims still precedes landing.
+
+## Actual backlog
+
+The snapshot contains 254 PRs. 129 name another open branch as their GitHub
+base. Actual Git history yields 144 nearest-open-head ancestry edges and
+110 connected groups; the largest contain 97, 19, 11 and 7 PRs. These are
+routing facts, not scientific equivalence. The 97-member group must be split
+by coherent arguments and includes owner-reserved material.
+
+The current review-loop batches only the landing tail. It still requires
+per-PR review, per-PR full pipelines, and another full pipeline on the batch;
+it excludes stacked PRs from sharing a batch. Eight components can therefore
+require nine full pipeline runs before retries, despite repeated context.
+
+## Proposed review unit
+
+Review a coherent argument at its final source state, which may combine
+multiple dependent PRs. Require:
+
+1. Frozen PR heads, starting main and source provenance.
+2. A mapping of every constituent claim to final source, or an explicit
+   narrowing, supersession, rejection or deferral. Do not silently drop science.
+3. An integrated source delta preserving current-main content, excluding
+   branch-authored generated audit/status outputs.
+4. Independent examination of every surviving claim and interacting premise.
+   Reuse earlier checks only when their source and hypotheses match exactly.
+5. Changed-runner reproductions and focused premise/evidence/source checks;
+   findings fixed and confirmed on final source.
+6. One full mechanical validation on the frozen integrated landing batch,
+   followed by source/hash verification and generated-output cleanup.
+   This validation does not invoke a scientific auditor or assign a verdict.
+
+This changes the review unit and placement of repeated mechanical work, not
+which scientific claims require scrutiny. Amend and adversarially check the
+executable review contract before using this alternative to its current
+per-PR pipeline requirements.
+
+## Integration
+
+Review independent units in parallel within actual resource limits. A
+conflict, moving head or unproved identification holds only the affected
+unit. Integrate compatible confirmed units and check their interactions;
+changed source returns for focused confirmation. Run full validation on that
+exact tree. If main moves, preserve current science and refresh the affected
+integration evidence. Close a constituent PR only after its accepted science
+is verified on main and its disposition recorded.
+
+Do not make one giant batch of 254 PRs. Avoid arbitrary waiting once a useful
+checked batch is ready. No batch operation promotes audit status.
+
+## Initial groups
+
+Immediate consolidation candidate: #8001 is already based on main and carries
+the #7983/#7996 source packets. Direct blob comparison finds all six parent
+science paths present: three unchanged and three updated. Reviewing #8001's
+complete final packet can cover those inherited claims without treating the
+older parent verdicts as current. Verify the content/disposition map before
+closing covered parents. This existing cumulative-submission route does not
+require waiting for the broader review-contract proposal to be implemented.
+
+| Group | PRs | Why together / required check |
+|---|---|---|
+| Admissibility/static/formation | #7998, #7999, #8000, #8002 | Shared six-state rule. Keep formation, static existence, sufficient contraction criteria and physical law selection distinct. |
+| Native Record energy apparatus | #7983, #7996, #8001 | Final proposal carries both parent packets. Verify CAR/instrument hypotheses, dwell convention, energy/coherence cost and shared memory. |
+| Finite-spin field response | #7941, #7943, #7945, #7946, #7952, #7953, #7955; later #7963/#7966 | Shared Hamiltonian and observables. Verify physical source conventions before response joins; preserve convergence failures. |
+| Curved-cell/source-action | Split the 97-member group | Separate old premise epochs, conditional kernels, action identification and reserved components; do not bulk approve history. |
+
+PRs #6379, #6858 and #6859 remain reserved under the standing defaults in
+main's docs/repo/DEFERRED_DECISIONS.md. This proposal does not change that.
+Other unresolved-base or historical branches need content/landing comparison.
+
+## Measure the improvement
+
+Record reviewer time, distinct source reviewed, runner time, full pipeline
+count, integration retries and scientific findings per unit. Compare the first
+small group with former per-PR execution. A reduction in mechanical runs alone
+does not establish a whole-campaign speedup.

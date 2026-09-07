@@ -87,7 +87,25 @@ are retrieval aids; confirm current source and status before citing them.
 
 ## Planning surfaces
 
+Owner direction for the active campaign (2026-09-07): formal audit waits until
+a solid TOE candidate is ready. Continue focused independent checks and
+reviewed source integration; do not start an audit drain from discovery or PR
+review. Mechanical integration validation is distinct from invoking an auditor
+or applying verdicts. No candidate or planning entry grants retained status.
+
+Before assigning new science, read `TOE_SCORECARD.md`, `CAMPAIGN_STATUS.md`,
+and the relevant entries in `OPEN_PR_INVENTORY.json` from this branch. Search
+actual open-PR science as well as main; verify changed heads before reuse.
+The campaign coordinator maintains the shared status and assignments. Workers
+return evidence in assigned artifacts rather than concurrently rewriting them.
+`BATCH_REVIEW_PLAN.md` is a planning proposal, not a waiver of the current
+review contract or a PASS for any PR.
+
 - `TOE_SCORECARD.md`: as-of target map; check its revision before relying on it.
+- `CAMPAIGN_STATUS.md`: common campaign assignments and current evidence.
+- `OPEN_PR_INVENTORY.json`: complete pinned open-PR routing snapshot, with
+  actual Git ancestry and source-file coverage; no scientific authority.
+- `BATCH_REVIEW_PLAN.md`: concrete backlog grouping and efficiency proposal.
 - `README.md`: branch contract and edit flow.
 - `prompt_profiles/CODEX_GLOBAL.md`: versioned local Codex prompt profile.
 - `PROMPT_REVIEW_2026-09-07.md`: prompt-review scope and runtime boundaries.
