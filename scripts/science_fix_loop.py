@@ -16,8 +16,10 @@ Designed to be run as a background loop. It will:
     parallel workers do not claim the same row
   - guard each attempt with stale, edit-deadline, and absolute-max timeouts
     (`--codex-timeout-sec` defaults to 1800s = 30 min)
-  - if codex makes ANY edit, commit it, push the branch, and open a PR
+  - if codex completes successfully with edits, commit and push the branch and open a PR
     titled `science-fix: <claim_id>` so the user can review
+  - preserve edits from interrupted attempts as recovery checkpoints, without
+    publishing an unfinished worker result as a ready PR
 
 It deliberately does NOT try to:
 
@@ -87,7 +89,6 @@ import hashlib
 import json
 import os
 import re
-import shutil
 import signal
 import io
 import subprocess
@@ -142,6 +143,26 @@ DIFFICULTY_ORDER = {"easy": 0, "medium": 1, "hard": 2, "unknown": 3}
 # can record the decline as outcome=declined_too_hard without burning
 # subscription minutes.
 DECLINE_MARKER = "SCIENCE_FIX_DECLINED"
+WORKER_LIFECYCLE_PREAMBLE = """EDIT-ONLY WORKER CONTRACT
+
+You are a scoped worker inside the existing attempt worktree. Edit only the
+assigned source, runner, test, and handoff paths. Use local reads and the
+assigned verification commands. Do not stage or commit changes, switch or
+create branches/worktrees, fetch or push, create or update PRs, run review or
+landing, launch an audit lane, or apply audit verdicts. Do not invoke any
+publication or repair-loop controller, including science_fix_loop.py itself.
+The controller owns later commits, pushes, PR creation, review/landing handoff,
+and independent audit orchestration; you must not perform those steps.
+
+When using physics-loop, its scope is --no-commit --no-pr --no-review-loop:
+use its scientific reasoning and author-check procedures in THIS worktree,
+not its campaign setup, delivery, review, landing, or audit lifecycle.
+Checkpoint progress by writing assigned files. Return the exact checks and
+remaining obligations; a useful counterexample or incomplete result is valid.
+These restrictions also apply to operational workers and any worker you could
+otherwise delegate. The repair evidence below does not expand this contract.
+
+"""
 SCREENING_PREAMBLE = f"""You are about to attempt a missing-derivation closure as part of an
 autonomous science-fix loop. Hard physics problems that need >15 min
 of focused human-level analysis BEFORE writing any file edit should be
@@ -165,9 +186,9 @@ single line and STOP without making any file edits:
 
 If your honest answer is YES, proceed to STEP 2.
 
-STEP 2. Begin the prompt below. Use the physics-loop skill. Make
-real edits. Do not over-prescribe approach — explore the framework
-and let the skill drive.
+STEP 2. Begin the prompt below. Use physics-loop with --no-commit --no-pr
+--no-review-loop under the edit-only worker contract above. Make scoped source
+edits and run the assigned checks; the controller owns the later lifecycle.
 
 ============================== PROMPT ==============================
 """
@@ -1065,9 +1086,9 @@ def reclaim_stale_in_progress(stale_after_sec: int) -> int:
     return reclaimed
 
 
-def git(*args, cwd=None, check=True):
+def git(*args, cwd=None, check=True, env=None):
     return subprocess.run(["git", *args], cwd=cwd or REPO_ROOT,
-                          capture_output=True, text=True, check=check)
+                          capture_output=True, text=True, check=check, env=env)
 
 
 def make_worktree(claim_id: str, run_id: str) -> tuple[Path, str]:
@@ -1081,32 +1102,50 @@ def make_worktree(claim_id: str, run_id: str) -> tuple[Path, str]:
     path = WORKTREE_BASE / f"{slug}-{run_id}"
     WORKTREE_BASE.mkdir(parents=True, exist_ok=True)
     if path.exists():
-        # Stale leftover; force-remove
-        try:
-            git("worktree", "remove", "--force", str(path), check=False)
-        except Exception:
-            pass
-        if path.exists():
-            shutil.rmtree(path, ignore_errors=True)
-    git("fetch", "origin", "main", check=False)
+        raise RuntimeError(f"worktree already exists; preserve for recovery: {path}")
+    git("fetch", "origin", "main")
     git("worktree", "add", "-b", branch, str(path), "origin/main")
     return path, branch
 
 
-def cleanup_worktree(path: Path, branch: str | None = None) -> None:
-    """Remove the attempt worktree AND its local branch registration.
-
-    Every attempt creates a fresh local branch (make_worktree -b); pushed
-    branches live on as remotes, but the LOCAL branch is disposable on every
-    path — leaving it behind accumulates hundreds of dead branch refs in the
-    clone (confirmed by an end-to-end race-skip probe). Branch deletion must
-    follow worktree removal (a branch checked out in a live worktree cannot
-    be deleted)."""
-    git("worktree", "remove", "--force", str(path), check=False)
-    if path.exists():
-        shutil.rmtree(path, ignore_errors=True)
+def cleanup_worktree(path: Path, branch: str | None = None) -> tuple[bool, str]:
+    """Remove only clean work whose HEAD survives on main or its pushed ref."""
+    status = git("status", "--porcelain", "--untracked-files=all", cwd=path, check=False)
+    if status.returncode != 0:
+        return False, "cannot verify worktree state"
+    if status.stdout.strip():
+        return False, "uncommitted work remains"
+    ignored = git("ls-files", "--others", "--ignored", "--exclude-standard", "-z",
+                  cwd=path, check=False)
+    if ignored.returncode != 0:
+        return False, "cannot verify ignored worktree artifacts"
+    valuable_ignored = [
+        rel for rel in ignored.stdout.split("\0") if rel
+        and not (
+            "__pycache__" in Path(rel).parts
+            and Path(rel).suffix == ".pyc"
+            and (path / rel).is_file()
+            and not (path / rel).is_symlink()
+        )
+    ]
+    if valuable_ignored:
+        return False, f"ignored artifacts require recovery: {valuable_ignored[:3]}"
+    saved_refs = ["refs/remotes/origin/main"]
     if branch:
-        git("branch", "-D", branch, check=False)
+        saved_refs.append(f"refs/remotes/origin/{branch}")
+    if not any(
+        git("merge-base", "--is-ancestor", "HEAD", ref, cwd=path, check=False).returncode == 0
+        for ref in saved_refs
+    ):
+        return False, "HEAD is not preserved on main or the pushed branch"
+    removed = git("worktree", "remove", str(path), check=False)
+    if removed.returncode != 0:
+        return False, f"worktree removal failed: {(removed.stderr or '').strip()[:200]}"
+    if branch:
+        deleted = git("branch", "-D", branch, check=False)
+        if deleted.returncode != 0:
+            return True, f"worktree removed; local branch retained: {branch}"
+    return True, "clean, preserved worktree removed"
 
 
 def _newest_mtime(worktree: Path) -> float:
@@ -1169,7 +1208,7 @@ def run_codex(prompt_body: str, worktree: Path, timeout_sec: int,
         if worker_mode == "science"
         else OPERATIONAL_SCREENING_PREAMBLE
     )
-    wrapped_prompt = preamble + prompt_body
+    wrapped_prompt = WORKER_LIFECYCLE_PREAMBLE + preamble + prompt_body
     cmd = [
         "codex", "exec",
         "-C", str(worktree),
@@ -1387,27 +1426,146 @@ def target_settled_on_main(claim_id: str) -> tuple[bool, str]:
     return status in SETTLED_CLEAN_AUDIT_STATUSES, status
 
 
+# Generated authority outputs are distinct from reviewed source-side dispatch
+# manifests and other controlled data in this directory. The citation graph
+# manifest is also deliberately excluded: review-loop permits its topology delta.
+GENERATED_AUDIT_DATA_NAMES = frozenset({
+    "audit_ledger.json", "ledger_meta.json", "ledger_cache_manifest.json",
+    "citation_graph.json", "runner_classification.json", "audit_queue.json",
+    "audit_dispatch_queue.json", "effective_status_summary.json",
+    "load_bearing_summary.json", "cycle_inventory.json", "reaudit_candidates.json",
+    "auditor_reliability.json", "lane_certification.json", "dispatch_shadow_state.json",
+    "publication_gap.json", "audit_publication_lane.json", "science_fix_backlog.json",
+    "no_go_index_growth_targets.json", "static_pipeline_checkpoint.json",
+    "static_pipeline_checkpoint.lock",
+})
+GENERATED_AUDIT_DOCS = frozenset({
+    "docs/audit/AUDIT_LEDGER.md", "docs/audit/AUDIT_QUEUE.md",
+    "docs/audit/AUDIT_DISPATCH_QUEUE.md", "docs/audit/MISSING_DERIVATION_PROMPTS.md",
+    "docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md",
+    "docs/repo/FRONT_DOOR_STATUS.md", "docs/repo/RETAINED_BACKBONE.md",
+})
+
+
+def generated_audit_output(path: str) -> bool:
+    if path.startswith("docs/audit/data/ledger/") or path in GENERATED_AUDIT_DOCS:
+        return True
+    if path.startswith("docs/audit/data/"):
+        name = path.removeprefix("docs/audit/data/")
+        return name in GENERATED_AUDIT_DATA_NAMES or name.startswith("static_pipeline_receipt_")
+    return (
+        path.startswith("docs/publication/ci3_z3/")
+        and path.endswith("_EFFECTIVE_STATUS.md")
+    )
+
+
+def publication_changed_paths(worktree: Path) -> set[str]:
+    """Freeze tracked and untracked edits without Git's filename quoting."""
+    changed = git("diff", "--no-renames", "--name-only", "-z", "HEAD", cwd=worktree)
+    staged = git("diff", "--cached", "--no-renames", "--name-only", "-z", "HEAD", cwd=worktree)
+    untracked = git("ls-files", "--others", "--exclude-standard", "-z", cwd=worktree)
+    return set(filter(None, (changed.stdout + staged.stdout + untracked.stdout).split("\0")))
+
+
+def reject_generated_transfers(worktree: Path, changed: set[str], *, staged: bool = False) -> None:
+    """Preview staged and working bytes before any destructive cleanup.
+
+    An alternate index includes untracked destinations without changing the
+    real index. Rename and exact-copy detection are separate: combining their
+    similarity flags can hide edited moves. Ambiguous cross-boundary deletion
+    plus addition/modification is refused even when similarity detection fails.
+    """
+    specs = {
+        "docs/audit/data/ledger/",
+        *(f"docs/audit/data/{name}" for name in GENERATED_AUDIT_DATA_NAMES),
+        *GENERATED_AUDIT_DOCS,
+        *changed,
+    }
+    pathspecs = [*(f":(literal){rel}" for rel in sorted(specs)),
+                 ":(glob)docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md"]
+
+    def examine(env=None):
+        plain = git("diff", "--cached", "--no-renames", "--name-status", "-z",
+                    "HEAD", "--", *pathspecs, cwd=worktree, env=env)
+        fields = iter(filter(None, plain.stdout.split("\0")))
+        changes = [(status, next(fields)) for status in fields]
+        source_deletions = [path for status, path in changes if status == "D" and not generated_audit_output(path)]
+        generated_deletions = [path for status, path in changes if status == "D" and generated_audit_output(path)]
+        source_outputs = [path for status, path in changes if status != "D" and not generated_audit_output(path)]
+        generated_outputs = [path for status, path in changes if status != "D" and generated_audit_output(path)]
+        if (source_deletions and generated_outputs) or (generated_deletions and source_outputs):
+            raise RuntimeError(
+                "publication crosses generated authority boundary or contains an uncertain transfer: "
+                f"source deletions={source_deletions[:3]}, generated outputs={generated_outputs[:3]}, "
+                f"generated deletions={generated_deletions[:3]}, source outputs={source_outputs[:3]}; "
+                "preserve and review the transfer explicitly"
+            )
+        for detection in (("--find-renames",), ("--find-copies=100%", "--find-copies-harder")):
+            result = git("diff", "--cached", "--name-status", "-z", *detection,
+                         "HEAD", "--", *pathspecs, cwd=worktree, env=env)
+            fields = iter(filter(None, result.stdout.split("\0")))
+            for status in fields:
+                source = next(fields)
+                if not status.startswith(("R", "C")):
+                    continue
+                target = next(fields)
+                if generated_audit_output(source) == generated_audit_output(target):
+                    continue
+                raise RuntimeError(
+                    f"publication crosses generated authority boundary: {source} -> {target}; "
+                    "preserve and review the transfer explicitly"
+                )
+
+    examine()  # Preserve unique staged bytes as well as current working files.
+    if staged or not changed:
+        return
+    with tempfile.TemporaryDirectory(prefix="science-fix-transfer-") as temp:
+        preview_env = dict(os.environ, GIT_INDEX_FILE=str(Path(temp) / "index"))
+        git("read-tree", "HEAD", cwd=worktree, env=preview_env)
+        # This stages only the frozen scope into the disposable index. It sees
+        # untracked destinations and does not touch the worktree or real index.
+        git("add", "-A", "--", *(f":(literal){path}" for path in sorted(changed)),
+            cwd=worktree, env=preview_env)
+        examine(preview_env)
+
+
+def strip_generated_audit_outputs(worktree: Path, changed: set[str]) -> None:
+    """Restore generated edits to this branch's HEAD, never moving origin/main."""
+    reject_generated_transfers(worktree, changed)
+    generated = sorted(path for path in changed if generated_audit_output(path))
+    if not generated:
+        return
+    specs = [f":(literal){path}" for path in generated]
+    head_files = set(filter(None, git(
+        "ls-tree", "-r", "--name-only", "-z", "HEAD", "--", *specs, cwd=worktree,
+    ).stdout.split("\0")))
+    if head_files:
+        git("restore", "--source=HEAD", "--staged", "--worktree", "--",
+            *(f":(literal){path}" for path in sorted(head_files)), cwd=worktree)
+    for rel in sorted(set(generated) - head_files):
+        # Staged additions need an index reset before removing their bytes.
+        git("reset", "-q", "HEAD", "--", f":(literal){rel}", cwd=worktree)
+        path = worktree / rel
+        if path.is_symlink() or path.is_file():
+            path.unlink()
+        elif path.exists():
+            raise RuntimeError(f"generated output is not a regular file: {rel}")
+
+
 def commit_and_push(claim_id: str, worktree: Path, branch: str,
                     summary: str, prompt_source: str,
                     category: str,
-                    target_note_path: str = "") -> tuple[bool, str]:
+                    target_note_path: str = "",
+                    expected_head: str | None = None) -> tuple[bool, str]:
+    try:
+        if expected_head is not None:
+            current_head = git("rev-parse", "HEAD", cwd=worktree).stdout.strip()
+            if current_head != expected_head:
+                return False, "worker changed HEAD; preserve its commits for explicit review"
+        changed = publication_changed_paths(worktree)
+    except subprocess.CalledProcessError as exc:
+        return False, f"cannot inventory publication changes: {exc}"
     if category.startswith("campaign_"):
-        changed = {
-            line.strip()
-            for line in git(
-                "diff", "--name-only", "HEAD",
-                cwd=worktree, check=False,
-            ).stdout.splitlines()
-            if line.strip()
-        }
-        changed.update(
-            line.strip()
-            for line in git(
-                "ls-files", "--others", "--exclude-standard",
-                cwd=worktree, check=False,
-            ).stdout.splitlines()
-            if line.strip()
-        )
         forbidden = forbidden_operational_science_paths(
             changed, target_note_path
         )
@@ -1416,47 +1574,33 @@ def commit_and_push(claim_id: str, worktree: Path, branch: str,
                 "operational campaign repair modified scientific note path(s) "
                 f"{forbidden}; incident evidence cannot authorize those edits"
             )
-    # Framework PRs are forbidden from landing audit-lane outputs (rationale:
-    # the audit lane on main is the sole authority over these surfaces; PRs
-    # that ship them overwrite ratified state at merge). The codex run may
-    # have invoked `bash docs/audit/scripts/run_pipeline.sh` for validation
-    # and left regenerated outputs in the worktree; restore them from
-    # origin/main before staging.
-    audit_lane_paths = [
-        "docs/audit/data/",
-        "docs/audit/AUDIT_QUEUE.md",
-        "docs/audit/MISSING_DERIVATION_PROMPTS.md",
-        "docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md",
-    ]
-    git("checkout", "origin/main", "--", *audit_lane_paths,
-        cwd=worktree, check=False)
-    git("clean", "-fd", "--", "docs/audit/data/",
-        cwd=worktree, check=False)
-    # Glob the effective-status surfaces separately so a missing file does
-    # not abort the multi-path checkout above. Also remove untracked generated
-    # effective-status files that a checkout cannot restore.
-    eff_status_dir = worktree / "docs" / "publication" / "ci3_z3"
-    if eff_status_dir.is_dir():
-        eff_status_files = [
-            str(p.relative_to(worktree))
-            for p in eff_status_dir.glob("*_EFFECTIVE_STATUS.md")
-        ]
-        if eff_status_files:
-            git("checkout", "origin/main", "--", *eff_status_files,
-                cwd=worktree, check=False)
-        for p in eff_status_dir.glob("*_EFFECTIVE_STATUS.md"):
-            rel = str(p.relative_to(worktree))
-            tracked = git("ls-files", "--error-unmatch", rel,
-                          cwd=worktree, check=False)
-            if tracked.returncode != 0:
-                p.unlink()
-
-    add = git("add", "-A", cwd=worktree, check=False)
+    try:
+        strip_generated_audit_outputs(worktree, changed)
+    except (subprocess.CalledProcessError, OSError, RuntimeError) as exc:
+        return False, f"cannot strip generated audit outputs: {exc}"
+    intended = sorted(path for path in changed if not generated_audit_output(path))
+    if not intended:
+        return False, "nothing to commit after stripping generated audit outputs"
+    add = git("add", "-A", "--", *(f":(literal){path}" for path in intended),
+              cwd=worktree, check=False)
     if add.returncode != 0:
         return False, f"git add failed: {(add.stderr or '').strip()[:200]}"
+    try:
+        reject_generated_transfers(worktree, set(intended), staged=True)
+    except (subprocess.CalledProcessError, RuntimeError) as exc:
+        return False, f"cannot validate publication transfers: {exc}"
+    staged = git("diff", "--cached", "--no-renames", "--name-only", "-z",
+                 cwd=worktree, check=False)
+    if staged.returncode != 0:
+        return False, "cannot verify staged publication paths"
+    staged_paths = set(filter(None, staged.stdout.split("\0")))
+    if not staged_paths.issubset(intended):
+        return False, f"unexpected staged publication paths: {sorted(staged_paths - set(intended))}"
     diff = git("diff", "--cached", "--quiet", cwd=worktree, check=False)
     if diff.returncode == 0:
         return False, "nothing to commit"
+    if diff.returncode != 1:
+        return False, "cannot verify staged publication diff"
     subject = (
         f"repair {claim_id} audit campaign blocker"
         if category.startswith("campaign_")
@@ -1786,6 +1930,8 @@ def main() -> int:
 
         try:
             worktree, branch = make_worktree(cid, run_id)
+            attempt_head = git("rev-parse", "HEAD", cwd=worktree).stdout.strip()
+            outcome["base_commit"] = attempt_head
         except Exception as e:
             print(f"  ! worktree create failed: {e!r}")
             outcome["outcome"] = "error"
@@ -1837,13 +1983,21 @@ def main() -> int:
             outcome["codex_stop_reason"] = stop_reason
             outcome["codex_stdout_tail"] = (stdout or "")[-1000:]
             outcome["codex_stderr_tail"] = (stderr or "")[-500:]
+            worker_head = git("rev-parse", "HEAD", cwd=worktree).stdout.strip()
 
             # Decide whether this attempt produced anything worth promoting
             # to a PR. Order: codex's self-screen decline first (cheap
             # exit), then structural codex failures, then check the
             # worktree state.
             promote_edits = False
-            if decline_match is not None:
+            if worker_head != attempt_head:
+                outcome["outcome"] = "worker_changed_head"
+                outcome["worker_head"] = worker_head
+                outcome["recovery_reason"] = "worker changed HEAD outside the edit-only contract"
+                print(f"  WORKER CONTRACT: HEAD changed to {worker_head}; "
+                      "preserving committed work for explicit recovery review")
+                errored += 1
+            elif decline_match is not None:
                 print(f"  DECLINED self-screen ({elapsed:.0f}s): {decline_match}")
                 outcome["outcome"] = "declined_too_hard"
                 outcome["decline_reason"] = decline_match
@@ -1856,27 +2010,22 @@ def main() -> int:
                 print(f"  codex exec failed (rc!=0): {(stderr or '').strip()[:200]}")
                 outcome["outcome"] = "codex_failed"
                 errored += 1
-            else:
-                # stop_reason in {ok, timeout, stalled, thinking_only}
-                # — codex either finished or was killed early. Any of
-                # these can still have produced useful partial edits.
+            elif stop_reason in {"timeout", "stalled", "thinking_only"}:
                 worktree_has_changes = has_changes(worktree)
-                if stop_reason == "stalled" and not worktree_has_changes:
-                    print(f"  STALLED with no edits after {elapsed:.0f}s — "
-                          f"likely a HARD physics problem")
-                    outcome["outcome"] = "stalled_no_edits"
-                    punted += 1
-                elif stop_reason == "thinking_only" and not worktree_has_changes:
-                    # By definition: no file edit by edit_deadline_sec.
-                    print(f"  THINKING-ONLY past {elapsed:.0f}s — codex "
-                          f"never started editing; treating as HARD")
-                    outcome["outcome"] = "thinking_only"
-                    punted += 1
-                elif stop_reason == "timeout" and not worktree_has_changes:
-                    print(f"  ABSOLUTE MAX with no edits after {elapsed:.0f}s")
-                    outcome["outcome"] = "timeout_no_edits"
-                    punted += 1
-                elif not worktree_has_changes:
+                outcome["outcome"] = (
+                    f"incomplete_{stop_reason}" if worktree_has_changes
+                    else f"{stop_reason}_no_edits"
+                )
+                outcome["incomplete_reason"] = (
+                    f"worker terminated with {stop_reason}; completion is unconfirmed"
+                )
+                print(f"  INCOMPLETE after {elapsed:.0f}s ({stop_reason}); "
+                      "preserving available work without publishing a PR")
+                punted += 1
+            else:
+                # Only a successfully completed worker can enter publication.
+                worktree_has_changes = has_changes(worktree)
+                if not worktree_has_changes:
                     print(f"  no edits (codex punted) in {elapsed:.0f}s")
                     outcome["outcome"] = "no_edits"
                     punted += 1
@@ -1901,11 +2050,7 @@ def main() -> int:
 
             if promote_edits:
                 summary = diff_summary(worktree)
-                tag = {"ok": "edits made",
-                       "stalled": "STALLED but partial edits",
-                       "thinking_only": "THINKING-ONLY but partial edits",
-                       "timeout": "ABSOLUTE MAX but partial edits"}[stop_reason]
-                print(f"  {tag} in {elapsed:.0f}s; diff:\n    {summary}")
+                print(f"  edits completed in {elapsed:.0f}s; diff:\n    {summary}")
                 racing_pr = open_science_fix_pr(cid)
                 if racing_pr:
                     print(f"  skip pre-push: another workspace opened a PR "
@@ -1920,6 +2065,7 @@ def main() -> int:
                 ok2, msg = commit_and_push(
                     cid, worktree, branch, summary, prompt_source,
                     r["category"], r.get("note_path", ""),
+                    expected_head=attempt_head,
                 )
                 if not ok2:
                     print(f"  push failed: {msg}")
@@ -1940,11 +2086,7 @@ def main() -> int:
                         outcome["branch"] = branch
                         pr_failed += 1
                     else:
-                        # If codex was stalled or hard-timed-out but produced
-                        # edits, the PR is real but the verdict_rationale that
-                        # attached can record it as a partial attempt for the
-                        # human reviewer.
-                        verdict = "pr_opened" if stop_reason == "ok" else f"pr_opened_partial_{stop_reason}"
+                        verdict = "pr_opened"
                         print(f"  PR opened ({verdict}): {pr_msg}")
                         outcome["outcome"] = verdict
                         outcome["pr_url"] = pr_msg
@@ -1956,11 +2098,27 @@ def main() -> int:
             outcome["error"] = repr(e)
             errored += 1
         finally:
+            if outcome.get("outcome") == "worker_changed_head":
+                outcome["recovery_worktree"] = str(worktree)
+                outcome["branch"] = branch
+                print(f"  retained for recovery: {worktree} ({outcome['recovery_reason']})")
+            elif args.keep_worktrees:
+                outcome["recovery_worktree"] = str(worktree)
+                outcome["branch"] = branch
+                outcome["recovery_reason"] = "--keep-worktrees requested"
+            else:
+                try:
+                    removed, reason = cleanup_worktree(worktree, branch)
+                except Exception as exc:
+                    removed, reason = False, f"cleanup could not verify preservation: {exc!r}"
+                if not removed:
+                    outcome["recovery_worktree"] = str(worktree)
+                    outcome["branch"] = branch
+                    outcome["recovery_reason"] = reason
+                    print(f"  retained for recovery: {worktree} ({reason})")
             with run_log.open("a", encoding="utf-8") as f:
                 f.write(json.dumps({"claim_id": cid, **outcome}) + "\n")
             record_outcome(state_key, outcome)
-            if not args.keep_worktrees:
-                cleanup_worktree(worktree, branch)
 
     print(f"\nDone. attempted={len(targets)} pr_opened={applied} punted={punted} errored={errored} pr_failed={pr_failed}")
     print(f"State: {STATE_FILE.relative_to(REPO_ROOT)}")

@@ -7,10 +7,11 @@ description: Use when an LLM agent needs to synthesize raw prompt captures, repo
 
 ## Skill Freshness
 
-Before applying this skill, perform the repo skill freshness check described in
-`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
-this `SKILL.md` exists on `origin/main`, follow that version for the current
-task.
+Before using this workflow, inspect its applicability and correctness and use
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` to select one consistent
+source revision, including references. Ordinary operation uses current main;
+a user-requested prompt review/test uses the identified candidate under review
+without automatically executing the workflow or replacing it with old main text.
 
 Use this skill to turn raw AI/repo evidence into paper-ready methodology
 material without confusing raw prompt history with public authority.
@@ -28,15 +29,18 @@ language where evidence would do the work.
    `METHODOLOGY_SYNTHESIS_2026-04-25.md` and
    `METHODOLOGY_CASE_STUDIES_2026-04-25.md` if present, then verify against raw
    evidence.
-3. **Define the derivation story.** For each case study, identify the hard
-   physics target, why it was difficult, what AI made tractable, and which repo
-   skill kept the result honest.
+3. **Frame the case neutrally.** Identify the physics target, difficulty,
+   observed outcome, and evidence for what the AI or process contributed or
+   failed to catch. Do not assume a skill improved correctness or made the
+   problem tractable. Negative, failed, and inconclusive cases are valid evidence.
 4. **Trace the evidence chain.** Connect prompt/session evidence, branch or
    worktree evidence, review findings, landed artifacts, and final public
    status.
-5. **Select representative evidence.** Use small, sanitized excerpts or
-   paraphrased summaries. Keep machine-local paths and long raw outputs in the
-   annex unless they are necessary evidence.
+5. **State evidence selection.** Explain the eligible case set, selection
+   criteria, omitted or unavailable records, and whether the cases are
+   representative. Include counterexamples and failure cases relevant to the
+   methodology claim. Use small sanitized excerpts or paraphrases; keep
+   machine-local paths and long raw outputs in the annex unless necessary.
 6. **Separate method from science.** Explain the workflow without promoting
    raw scientific claims beyond the current publication surface.
 7. **Write as methods plus case studies.** State what another group can reuse:
@@ -55,6 +59,8 @@ Use this structure:
 - why the target was difficult;
 - AI/repo move;
 - artifact outcome;
+- evidence of process contribution or failure, and limits on attribution;
+- case-selection criteria and relevant counterexamples;
 - current claim boundary;
 - reusable lesson.
 
@@ -73,4 +79,7 @@ Use this structure:
 - Do not expose unnecessary machine-local or private prompt material in polished
   prose.
 - Do not let the methodology paper widen the physics claim boundary.
+- Do not infer workflow efficacy from selected success stories, review
+  agreement, or retained-row counts. Distinguish observed association from a
+  justified causal comparison, and say when the evidence cannot decide.
 - Do not imply AI authorship; keep human responsibility explicit.

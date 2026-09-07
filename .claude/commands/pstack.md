@@ -50,7 +50,7 @@ axiom framework (four axioms: Lattice, Qubit, Admissibility, Record; see
 ### Loops & Gates (repo-native skills)
 | Skill | Role | What It Does |
 |-------|------|-------------|
-| `/physics-loop` | Physics Loop Lead | Long-running stateful loop on a hard lane: route portfolios, trace gates, V1–V5/N1–N8 gates, checkpoints, one review PR per science block |
+| `/physics-loop` | Physics Loop Lead | Continuous discovery with explicit provisional dependencies, selective critical checks, and milestone PRs; optional per-block delivery |
 | `/review-loop` | Review Board | Pre-landing gate: parallel physics reviewers, narrow honest fixes, audit-system compatibility without applying verdicts |
 
 ## Science Pipeline
@@ -69,8 +69,8 @@ axiom framework (four axioms: Lattice, Qubit, Admissibility, Record; see
                                           v
                                       /write-up
                                           v
-                  distill to landing shape: 1 note (docs/) + 1 runner (scripts/)
-                            + 1 cached output (logs/runner-cache/)
+                    assemble a coherent milestone with source notes
+                    and applicable proof/runner/cache evidence
                                           v
               science branch off origin/main --> PR --> /review-loop (gate)
                                           v
@@ -82,8 +82,9 @@ Side channels (run anytime): `/frontier`, `/progress`, `/ledger`,
 
 ## Core Principles
 
-1. **Exhaust the Parameter Space** — AI makes sweeps cheap. Run the full
-   scan, not spot checks.
+1. **Design Discriminating Computation** — Choose the smallest scan that can
+   answer the question within the resource budget. Record coverage, uncertainty,
+   controls, and untested regions; use an exhaustive scan when the claim needs it.
 2. **Import Discipline** — Derive from approved axioms and approved primitive
    registry entries when making framework claims; use known physics and
    literature only as disclosed comparators, targets, or external context that
@@ -93,16 +94,26 @@ Side channels (run anytime): `/frontier`, `/progress`, `/ledger`,
    granted. The kinetic-isotropy primitive supplies only structural OS0
    kinetic-form isotropy `c_t = c_s`, not dynamics, Lorentz closure, scale,
    selector, or empirical content.
-3. **Nature Decides** — Artifacts are ground truth. When theory and a
-   verified runner disagree, investigate the runner first, then the theory.
+3. **Evidence Must Be Checked** — A runner is an implementation of a model,
+   not ground truth about nature. Investigate discrepancies against the source
+   mathematics, independent calculations, and relevant empirical comparisons;
+   neither a passing runner nor prior theory is immune from error.
 4. **The Ledger Is Authoritative** — the tracked claim shards under
    `docs/audit/data/ledger/` on `origin/main` are the only source of
    retained-grade status. Note headers, memory, and prose go stale.
 5. **Propose, Never Ratify** — Author-side surfaces use `proposed_*` /
    `support` / `bounded` / `open` vocabulary. Audit verdicts come only from
    the independent audit lane; nothing in this stack runs it.
-6. **Negative Claims Are Claims** — A no-go forecloses routes permanently;
-   it passes `/no-go-gate` (N1–N8) or it does not ship.
+6. **Negative Claims Are Claims** — A no-go rules out its stated conclusion
+   under its proved premises and domain. It does not permanently foreclose
+   untested families or corrected formulations; apply the scoped `/no-go-gate`
+   requirements before shipping.
+
+Continuous discovery may compose provisional lemmas on a coherent campaign
+branch with inherited gaps explicit. Independently check critical steps before
+extensive reuse. Deliver review-ready milestones through PR and formal audit;
+do not require either for each intermediate lemma. `--delivery block` remains
+available when requested.
 
 ## Lock & Worktree Protocol
 
@@ -138,17 +149,8 @@ the note + runner + cache shape and goes through a science-branch PR and
 
 Print this index when invoked. Ask the user which skill to run.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution Mechanism
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use the current `docs/ai_methodology/skills/workhorse/SKILL.md` for worker
+profiles, task boundaries, neutral checks, and handoff. This index does not
+dispatch work or authorize a lane merely by listing it.

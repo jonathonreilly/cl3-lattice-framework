@@ -7,7 +7,7 @@ Run the repo-native physics loop skill from:
 ## Invocation
 
 ```text
-/physics-loop "<science goal>" [--mode plan|run|resume|status|campaign] [--runtime DURATION] [--target STATUS] [--literature] [--max-cycles N] [--deep-block DURATION] [--no-pr]
+/physics-loop "<science goal>" [--mode plan|run|resume|status|campaign] [--runtime DURATION] [--delivery milestone|block] [--target STATUS] [--literature] [--max-cycles N] [--deep-block DURATION] [--no-pr]
 ```
 
 Examples:
@@ -34,9 +34,11 @@ execution requests even when the user says only `run`.
 4. Ground in current repo authority surfaces, retained work, no-go history,
    atlas/tool surfaces, approved primitive registry entries, and relevant
    publication tables before route selection.
-5. For science execution, fetch `origin`, create clean dedicated science block
-   branches from `origin/main`, commit coherent science artifacts there, and
-   push those branches to `origin`.
+5. For science execution, fetch `origin` and create a clean dedicated campaign
+   branch from `origin/main`. Default to `--delivery milestone`: related blocks
+   may compose on that branch with explicit provisional dependencies. Commit
+   coherent artifacts and preserve incomplete work durably. Use block branches
+   when `--delivery block` was requested.
 6. Build an assumption/import ledger before new derivation work. Read
    `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` and enumerate
    approved primitives from `docs/audit/data/axiom_premise_nodes.json` before
@@ -47,19 +49,23 @@ execution requests even when the user says only `run`.
    Execute only a route that can move claim state, retire an import, close a
    blocker, prove a no-go, create a decisive artifact, or make a recorded
    first-principles stretch attempt on a named hard residual.
-8. Apply the skill's pre-PR gates in writing: the V1-V5 Promotion Value Gate
-   for any retained-positive proposal, and the N1-N8 No-Go Discipline Gate
-   (`no-go-discipline` skill) for any negative claim. Record both in the
-   block's certificate/queue files and PR body as the skill specifies.
+8. Apply the skill's pre-PR gates in writing: V1-V5 for retained-positive
+   proposals and frontier questions as scoped in the skill, and N1-N8 for
+   negative claims covered by `no-go-discipline`. The N1-N8 record must land
+   in the source note or a linked committed sidecar, with the required N5
+   execution evidence in cached stdout. Branch-local certificates and PR text
+   alone are not the binding packet. Record V1-V5 in the queue/review history.
 9. Add a trace gate for each serious route in `TRACE_GATE.md`: name the exact
    claim/blocker/import the artifact is meant to move, or classify it as
    `frontier_discovery` when it is pure science with no known downstream
    blocker yet. Frontier discovery is valid output, but it must not be framed
    as closing, promoting, or retiring an existing lane.
 10. For unattended runs longer than one major cycle, build
-   `OPPORTUNITY_QUEUE.md` and keep selecting the next ranked retained-positive
-   opportunity until runtime/max cycles expires or the refreshed queue is
-   globally exhausted.
+   `OPPORTUNITY_QUEUE.md` and rank unresolved obligations and decisive
+   discriminators by expected evidence value for the user's objective. Continue
+   until runtime/max cycles expires or the skill's documented quality/queue
+   exhaustion conditions apply. Positive answers and PR counts are not progress
+   criteria.
 11. Write `CLAIM_STATUS_CERTIFICATE.md` for each science block. Do not use bare
    `retained` / `promoted` status language in branch-local source notes. Use
    `proposed_retained` / `proposed_promoted` only when the certificate supports
@@ -68,17 +74,23 @@ execution requests even when the user says only `run`.
    comparator-dependent, or Axiom* consequences to the narrowest honest status.
 12. Checkpoint `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md` throughout
    unattended work.
-13. After two audit/no-go/blocker cycles in a row, run a stretch attempt before
-   declaring a route blocked. If stuck, fan out 3-5 orthogonal premises with
-   neutral early briefs, concrete-return requirements, and delayed
-   cross-pollination. Mark routes ending at target-equivalent missing lemmas
-   `blocked-equivalent` until a materially new mechanism appears.
-14. Run `review-loop` after each major artifact unless explicitly disabled.
-   Treat review demotions/blockers as block-level demotion/pivot events, not
-   campaign stops.
-15. At each coherent science-block closure, open or prepare one review PR
-    unless `--no-pr` was supplied; do not wait until the 12-hour campaign ends
-    if the block is already coherent.
+13. Repeated audit/no-go/blocker cycles trigger a search-depth checkpoint.
+   Attempt an underexplored mechanism when useful; 3-5 independent attack
+   frames and `--deep-block` are planning allocations, not output or time quotas.
+   Use neutral briefs, concrete returns, and delayed cross-pollination. Never
+   invent frames or prolong an exhausted route; pivot to useful work within the
+   authorized budget. Mark target-equivalent missing lemmas `blocked-equivalent`
+   until a materially new mechanism appears.
+14. Perform the skill's author milestone checks after each major artifact.
+   Label these as author checks and hand the PR to a fresh `review-loop` for
+   independent review; no author check grants review PASS or audit status.
+   Treat local demotions/blockers as block-level demotion/pivot events.
+15. Open a PR at a review-ready scientific milestone, an explicit handoff
+    request, or budget-end handoff when coherent and ready; `--delivery block`
+    retains per-block PRs. Do not force incomplete work or a routine checkpoint
+    into a PR. Before extensive reuse of a load-bearing provisional lemma, obtain
+    a focused independent check; formal leaf-by-leaf audit is not required for
+    discovery. Propagate every unresolved condition to downstream conclusions.
 16. Keep science runs science-only. Record proposed repo weaving in
    `HANDOFF.md`; do not update repo-wide authority surfaces until later review
    and backpressure integration.
@@ -89,8 +101,9 @@ If the user asks for a 12-hour unattended run, do not exit early just because a
 lane hits a no-go, support-only boundary, human-judgment blocker, failed
 retained-proposal certificate, dirty PR, or missing GitHub auth. Checkpoint/demote or
 backlog the current block, refresh the opportunity queue, and continue on the
-next science target. Stop early only for runtime/max-cycle exhaustion, unsafe
-worktree/lock conflict, or documented global queue exhaustion.
+next science target. The skill's Stop Conditions govern early completion,
+including documented value-gate/corollary exhaustion and global queue or tooling
+exhaustion; do not fill the remaining budget with already implied results.
 
 ## Non-Negotiables
 
@@ -106,28 +119,25 @@ worktree/lock conflict, or documented global queue exhaustion.
 - No Nature-grade or retained-grade proposal language without decisive artifact
   support, a passing retained-proposal certificate, review-loop backpressure,
   and explicit independent-audit handoff.
-- Do not re-open prior no-go routes unless a new premise is named.
+- Reopen a prior no-go route only with a material reason: a new compatible
+  mechanism, changed obligation map, scope correction, counterexample, or
+  justified premise change. Verify the original quantified proof first;
+  another label or worker does not reopen it.
 - Do not run low-value churn: more prose, nearby scripts, or repeated wording
   passes are not major loop progress.
 - Do not write bare `retained` / `promoted`, `retained branch-local`, or
   hypothetical/Axiom* consequences as retained on the actual current surface.
   `proposed_retained` / `proposed_promoted` are allowed only as audit-ready
   author proposals, never as audit-ratified retained status.
-- Push only dedicated science block branches. Do not push science work to
+- Push only dedicated science campaign/block branches. Do not push science work to
   `main`, merge PRs, or open PRs without enough review surface for
   `review-loop`.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution Mechanism
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use the current `docs/ai_methodology/skills/workhorse/SKILL.md` for worker
+profiles, neutral dispatch, independent checking, and owned-worker recovery.
+The science run prepares source artifacts and author checks. It does not land
+its own science or apply audit verdicts; later authorized review and audit lanes
+own those actions. Plan against the no-go's primary proof and exact scope,
+including live escape routes, rather than its title or a secondary summary.

@@ -1,97 +1,52 @@
-# /framework-refresher — Orient Before Physics Work
+# /framework-refresher — Orient before physics work
 
-Run this orientation before any derivation, hypothesis, experiment design,
-analysis, review prep, or science write-up in this repo. Do not work from
-memory of the framework: the axiom set, the primitive registry, and claim
-statuses all change; only current repo surfaces are authoritative.
+Read the task and `docs/ai_methodology/SCIENCE_WORKFLOW.md` first. For a process
+review, examine instructions as material under review; do not execute a science
+workflow merely because it is mentioned. For science, use the current source
+revision, not a remembered axiom summary.
 
-## Required Reads (in order)
+## Current authorities
 
-1. The current minimal-axioms memo. Resolve it through
-   `docs/audit/data/axiom_premise_nodes.json` → `minimal_axioms.current_path`
-   (currently `docs/MINIMAL_AXIOMS_2026-06-29.md`) so a re-dated memo cannot
-   leave you on a stale axiom set.
-2. `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`, then the
-   registry `docs/audit/data/axiom_premise_nodes.json` and each approved
-   primitive's source note.
-3. `docs/audit/data/derivation_obligations.json` — exact zero-weight open
-   targets. These never satisfy a dependency; decision history is provenance
-   only.
-4. `docs/repo/CONTROLLED_VOCABULARY.md` — status taxonomy, claim-strength
-   labels, science naming rules, filename taxonomy. Skim the sections
-   relevant to the task.
-5. `docs/audit/README.md` — the propose/ratify split: what authors may
-   write versus what only the independent audit lane may write.
-6. For the specific lane: the relevant notes and runners, plus
-   `docs/repo/LANE_REGISTRY.yaml` and `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
+1. Resolve the minimal-axioms memo through
+   `docs/audit/data/axiom_premise_nodes.json` → `minimal_axioms.current_path`.
+   Read that memo's exact grants and exclusions.
+2. Read `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`, the primitive
+   registry, and the relevant primitive source notes. A registry name does not
+   supply more than its current source grants.
+3. Read the relevant source notes, runner evidence, and tracked claim shards
+   from the same current `origin/main` revision. Use
+   `docs/audit/data/derivation_obligations.json` to locate open targets; it does
+   not satisfy them. Do not mix one revision's premise text with another's status.
+4. Use `docs/repo/CONTROLLED_VOCABULARY.md`, `docs/repo/LANE_REGISTRY.yaml`, and
+   `docs/repo/ACTIVE_REVIEW_QUEUE.md` for the relevant lane. Historical boards
+   and publication archives are retrieval aids, not current status sources.
 
-## The Four Axioms (use the names, not letter codes)
+Fetch when available and record the revision read. When offline, identify the
+local snapshot and the unverified freshness; do not silently label it current.
+Avoid rereading unchanged material without need, but refresh when another
+worker or remote change may affect the task.
 
-- **Lattice** — physical sites are the points of the cubic lattice `Z^3`,
-  with nearest-neighbor adjacency, standard translations, and proper cubic
-  rotations about each site; no site is privileged, and sites are
-  distinguished by the supplied lattice structure alone.
-- **Qubit** — each site has a domain of local possibilities; the full one-site
-  possibility domain has algebraic presentation `M_2(ℂ)`, with `Cl(3,0)` as
-  equivalent real-algebra notation only; no possibility is privileged, and
-  possibilities are distinguished by the supplied algebraic structure alone.
-- **Admissibility** — one fixed nearest-neighbor admissibility rule, covariant
-  under lattice translations and proper cubic rotations; for each site, the
-  probability distribution over the possibilities is determined by, and
-  varies with, the nearest-neighbor conditions; availability is its support.
-- **Record** — a site need not carry a record; when present, a record locks
-  exactly one available local possibility. Only records are readable; readout
-  value is determined by record content alone; a site with no record cannot be
-  read. No named scalar collection functional, finite additivity, or value for
-  the absence of a record is supplied by Record.
-- **Qualification** — a state is a configuration of records. A law privileges
-  no states; its domain is a supplied condition, and where that condition holds
-  it gives exactly one answer.
+## Scientific boundaries
 
-The minimal-axioms memo states explicitly what the axiom baseline does NOT
-supply (specific distribution values, dynamics, readout context, species
-identification, gauge group, time metric, unit conversion, ...). Treat those
-exclusion lists as binding: anything on them enters only through a named
-derivation lane with retained status or an approved primitive; otherwise it
-remains conditional/open.
-
-## Standing Discipline
-
-- **No new axioms, no new primitives, no new imports** without explicit user
-  approval. A route whose closure requires one is infeasible as stated. The
-  legitimate import-bearing shape is: explicit named import with a narrow
-  role → bounded result → import-retirement audit queued.
-- **The ledger is authoritative.** Before citing or building on any result
-  as retained-grade, check its `effective_status` in the claim's tracked
-  `docs/audit/data/ledger/<claim-id-prefix>/<claim-id>.json` shard on
-  `origin/main` (retained-grade =
-  `retained`, `retained_bounded`, `retained_no_go`). In-file `Status:`
-  headers and session memory go stale. Use `/ledger`.
-- **Author-side status vocabulary only.** Never write bare `retained` /
-  `promoted` in Status lines; use `proposed_retained` / `proposed_promoted` /
-  `support` / `bounded` / `open`. `audit_status` and `effective_status` are
-  set only by the independent audit lane on `main`.
-- **Comparator rule.** Established physics (QM/QFT/GR results, PDG values,
-  literature) may name a target or serve as a disclosed comparator; it must
-  never be a step in a derivation.
-- **Negative claims need the gate.** Run `/no-go-gate` (N1–N8) before
-  shipping any no-go, stretch-attempt-negative, or walls-naming bounded
-  claim. Do not re-open a prior no-go route without naming a new premise.
-- **Landing shape.** Science lands as one source note (`docs/`) + one runner
-  (`scripts/`) + one cached output (`logs/runner-cache/`) per coherent claim,
-  on a dedicated science branch off `origin/main`, via PR, with
-  `/review-loop` as the pre-landing gate. Never push science to `main`.
-  `.claude/science/` holds branch-local working state only — the citation
-  graph scans `docs/` exclusively.
-- **Do not audit.** The independent audit lane is operated separately from
-  authoring sessions (see `docs/audit/FRESH_LOOK_REQUIREMENTS.md`). Never run
-  the audit loop, write audit verdicts, or edit generated audit surfaces.
-- **Isolated worktrees.** When other sessions may be active, do science work
-  in a dedicated git worktree, not the shared checkout.
+- Distinguish approved axioms/primitives, audited theorems, provisional lemmas,
+  extra conditions, and empirical inputs. Use standard mathematics with checked
+  hypotheses; do not confuse a mathematical tool with a new physical premise.
+- New framework axioms or primitives require explicit owner approval. An extra
+  hypothetical condition may support a disclosed conditional theorem without
+  becoming accepted or establishing that nature satisfies the condition.
+- Discovery may compose provisional results on a working branch with explicit
+  open dependencies and selective independent checks before extensive reuse.
+  Formal retained status comes only through independent audit and closure.
+- Check a prior no-go's proof and exact scope. A new mechanism, changed domain,
+  or discovered proof defect may reopen a route without a new axiom. A failed
+  search alone is not a no-go theorem.
+- Compare empirical predictions with uncertainty and input provenance. Known
+  physics may motivate a target or be disclosed as conditional input; it cannot
+  silently serve as a derivation of itself.
+- Authoring, independent review/landing, and formal audit are separate roles.
+  This orientation command does not launch a review or audit lane.
 
 ## Output
 
-Confirm in one short block: current axiom memo path read, approved primitives
-list, any conditional/open dependencies relevant to the task, and the lane
-surfaces read.
-Then proceed to the actual task.
+Give a short grounding record: revision, authority paths actually read, relevant
+provisional or conditional inputs, and exact target. Then proceed with the task.

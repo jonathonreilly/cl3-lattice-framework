@@ -20,8 +20,9 @@ Malformed, stale, locally fabricated, or schema-invalid audit output is never
 eligible: it is not a current scientific verdict and cannot authorize source
 edits.
 
-Designed to chip through the medium-difficulty backlog autonomously
-while leaving the hard problems for a human. The loop only makes
+This is an explicitly invoked repair queue, not the default discovery
+scheduler. Continuous research may pursue hard open targets and batch delivery
+at coherent milestones; use `docs/ai_methodology/SCIENCE_WORKFLOW.md`. The loop only makes
 candidate PRs. Those PRs still require review-loop before landing, and
 the independent audit lane verifies correctness after merge.
 
@@ -47,12 +48,33 @@ For each prompt the loop:
    (`claude/science-fix/<claim-slug>-<run-id>`)
 3. Runs `codex exec -C <worktree> -s workspace-write -m gpt-5.6-sol
    --config model_reasoning_effort=xhigh "<prompt body>"`
+   with an explicit edit-only contract in both scientific and operational modes.
+   Workers use physics-loop only with `--no-commit --no-pr --no-review-loop`;
+   they do not stage, commit, change branches/worktrees, fetch/push, create PRs,
+   run review/landing, or launch/apply audits. The controller owns that lifecycle.
 4. After codex returns:
    - If no edits were made (codex punted) → record `no_edits`, move on
-   - If timeout → record `timeout`, move on
-   - If edits were made → commit, push, `gh pr create`, record
-     `pr_opened` with the PR URL
-5. State is persisted to `logs/science-fix-state.json`, so the same
+   - If timeout/stall/edit deadline interrupts the worker → record an incomplete
+     result and preserve available edits with recovery paths; do not publish a PR
+   - Only a successfully completed worker with edits enters candidate publication;
+     completion is not a success or science verdict
+   - Restore identified generated audit residue to the attempt's own `HEAD`,
+     preserving controlled sidecars; reject an unexpected worker commit or a
+     rename/copy crossing the generated-authority boundary
+   - Before any restore/reset/unlink, preview staged and untracked destinations
+     in a temporary index. Refuse uncertain source deletion/output transfers
+     without changing the real index or deleting recovery bytes
+   - Record a changed worker HEAD as `worker_changed_head`, even when its
+     worktree is clean; preserve its commit, edits, and recovery path for review
+   - Stage explicit source paths, commit, push, and prepare the PR; record
+     `pr_opened` only after PR creation succeeds
+   - On failure preserve dirty or unpushed work; record `recovery_worktree`,
+     `branch`, and `recovery_reason` rather than deleting the only copy
+5. Cleanup removes only clean work whose HEAD survives on main or the pushed
+   branch. Unknown ignored artifacts also require preservation; ordinary regular
+   `.pyc` files under `__pycache__` are disposable. An existing attempt directory
+   is a recovery item, never discarded merely because its name collides.
+6. State is persisted to `logs/science-fix-state.json`, so the same
    row is not re-attempted unless `--retry-failed` is passed
 
 ## State file

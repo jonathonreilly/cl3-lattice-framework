@@ -7,10 +7,11 @@ description: Use when an LLM agent needs to run `/review-loop`, review branch ch
 
 ## Skill Freshness
 
-Before applying this skill, perform the repo skill freshness check described in
-`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
-this `SKILL.md` exists on `origin/main`, follow that version for the current
-task.
+Before using this workflow, inspect its applicability and correctness and use
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` to select one consistent
+source revision, including references. Ordinary operation uses current main;
+a user-requested prompt review/test uses the identified candidate under review
+without automatically executing the workflow or replacing it with old main text.
 
 Run a local review/fix/re-review loop for this physics repo. This is not a
 generic software review. Its job is to protect the live claim boundary:
@@ -21,8 +22,9 @@ be explicit, and support-only results must not be promoted by prose.
 
 Review-loop is a text/code/math review path. Run it with the user's configured
 highest-tier Codex reviewer model and maximum available reasoning for this
-repo (currently GPT-5.6-Sol; use the maximum available reasoning tier unless
-the owner directs a specific tier for the episode). Do not switch to lower-reasoning models for convenience, and
+repo. Resolve the current model from the active configuration; dated model
+names in process prose are not configuration. Respect an explicit owner
+choice of model or reasoning tier for the episode. Do not switch to lower-reasoning models for convenience, and
 do not use image-generation, image-editing, presentation, document-rendering,
 or visual-generation tools unless the user explicitly asks for a separate
 visual artifact task.
@@ -134,8 +136,9 @@ readout/scale/unit bridges, and empirical matches remain separate
 bounded/open inputs unless they have their own retained-grade derivation and
 independent audit closure.
 
-The bar is intentionally high: if review-loop is doing its job, the later
-fresh-context audit should be mostly confirmatory. Do not pass branches that
+Review must remove preventable source and packaging defects. The later
+fresh-context audit independently tests the claim and may disagree; agreement
+is not its objective. Do not pass branches that
 leave the audit lane to discover basic claim-boundary, dependency-graph,
 status-vocabulary, or runner-validity defects. Do not lose durable science
 when a PR fails that bar: before closing or rejecting a branch, run the
@@ -220,17 +223,16 @@ review-only flags contradict the drain's land-end-to-end contract).
 
    WT=$(mktemp -d "$REVIEW_TMP_ROOT/rev-<N>.XXXXXX")
    cleanup_review_wt() {
-     if [ -e "$WT" ]; then
-       if ! dirty=$(git -C "$WT" status --porcelain 2>/dev/null); then
-         echo "cleanup retained unverifiable worktree: $WT" >&2
-         return
-       fi
-       if [ -n "$dirty" ]; then
-         echo "cleanup retained dirty worktree for recovery: $WT" >&2
-         return
-       fi
-     fi
-     git -C "$REPO_ROOT" worktree remove --force "$WT" >/dev/null 2>&1 || true
+     [ -e "$WT" ] || return
+     python3 - "$REPO_ROOT" "$WT" <<'PY_REVIEW_CLEAN'
+   from pathlib import Path
+   import sys
+   sys.path.insert(0, str(Path(sys.argv[1]) / "scripts"))
+   from science_fix_loop import cleanup_worktree
+   removed, reason = cleanup_worktree(Path(sys.argv[2]))
+   if not removed:
+       print(f"cleanup retained worktree for recovery: {sys.argv[2]}: {reason}", file=sys.stderr)
+   PY_REVIEW_CLEAN
      git -C "$REPO_ROOT" worktree prune
    }
    trap cleanup_review_wt EXIT
@@ -248,9 +250,10 @@ review-only flags contradict the drain's land-end-to-end contract).
    not from counting the shared Git object store as part of every checkout.
 
    The `trap` is not optional: it removes a verified-clean worktree on normal
-   exit and catchable INT/TERM termination. It deliberately retains a dirty or
-   unverifiable tree and prints its recovery path rather than destroying
-   findings or fixes. `git worktree prune` at the start of a drain clears
+   exit and catchable INT/TERM termination. The shared cleanup helper preserves
+   dirty work, valuable ignored artifacts, unverifiable trees, and any HEAD not
+   yet preserved on main. It prints the recovery path and never force-removes a
+   worktree. This review trap does not delete local branches. `git worktree prune` at the start of a drain clears
    stale metadata whose directories are already gone. Neither mechanism can
    catch `SIGKILL` or remove an abandoned directory that still exists, so
    inventory such directories separately instead of claiming that the trap
@@ -290,8 +293,10 @@ review-only flags contradict the drain's land-end-to-end contract).
    confirmation MUST resume the reviewer thread/session that issued the
    findings. That same reviewer thread/session must confirm fixes;
    do not launch a new reviewer process to confirm fixes.
-   Give that reviewer only the fixed files, prior findings, and interacting
-   files already inside the frozen review scope. If the session cannot be
+   Give that reviewer the fixed files, prior findings, and necessary interacting
+   context. Record any newly necessary source inspection or edit as a scope
+   expansion; a new edit needs confirmation before the component is frozen again.
+   If the session cannot be
    recovered, the PR head moved, any frozen value no longer matches, or the
    reviewer did not explicitly pass the final state, fail closed and do not land
    that component; do not enroll it.
@@ -678,8 +683,11 @@ focus-text-only forms select the backlog drain.
    - if the current branch is the base branch, use `HEAD~1`.
 3. Compute the review base with `git merge-base HEAD <base-ref>`.
 4. Build the original changed-file set from committed, staged, unstaged, and
-   untracked changes. Do not review outside this set except interacting files
-   that are also in this original set.
+   untracked changes. This is the primary review scope. Read necessary unchanged
+   dependencies, callers, schemas, and policy sources from the same snapshot to
+   judge those changes; record each contextual path and why it is needed. Context
+   inspection does not authorize unrelated edits. If a confirmed fix requires
+   another file, record the bounded scope expansion and review its new delta.
 5. Record whether the worktree was initially clean. If it was dirty, do not
    auto-commit without explicit user permission unless the slash-command
    invocation clearly requested commit-producing fixes.
@@ -1186,7 +1194,10 @@ audit-lane changes from a PR are reviewed source/tooling repairs and
 machine-readable audit/re-audit targeting metadata, such as dispatcher
 sidecars, that do not assert a verdict. After applying the source repair, run
 the local pipeline to verify the row is queued or re-queued as intended, then
-restore generated audit outputs from `origin/main` before committing. Pipeline
+restore only generated audit residue to the branch's own `HEAD` before
+committing; preserve reviewed source, controlled data, and dispatcher sidecars.
+Importing moving `origin/main` into the index of a stale branch stages unrelated
+audit changes. Pipeline
 regeneration of `docs/audit/data/`, the generated audit queue/dispatch Markdown,
 and `docs/repo/FRONT_DOOR_STATUS.md` / `docs/repo/RETAINED_BACKBONE.md` is a
 VALIDATION step only; framework PRs must never ship these files because the
@@ -1231,7 +1242,7 @@ review-loop PASS.
 pipeline has executed or refreshed every changed runner, run:
 
 ```bash
-python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main
+python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main --include-worktree
 ```
 
 This gate is mechanical preparation, not an audit. It must pass for every
@@ -1245,6 +1256,16 @@ independent audit discover a deterministic compute omission after spending a
 seat. The cache/result used here is non-authoritative review evidence only.
 The audit lane must still execute the current runner live and authenticate its
 invocation-bound stdout before applying a verdict.
+
+`--include-worktree` covers the committed delta plus staged, unstaged, and
+untracked candidate paths. Use it for author preflight and review fixes,
+including `--no-commit` sessions; the default CLI scope covers committed
+changes only and cannot establish evidence readiness for an uncommitted fix.
+The gate reads working-copy bytes. A path with both staged and unstaged changes
+blocks candidate PASS: stage its intended final bytes, or unstage that path for
+working-copy review, then rerun. Never use a clean working copy to certify a
+different staged version. Recheck after any later source edit or staging change
+that changes the bytes proposed for landing.
 
 **`note_hash` drift is a notice for non-retained rows, an error only for
 retained-grade rows.** `note_hash` is a *source-content* hash, not an audit
@@ -1301,13 +1322,8 @@ title/body names the row or quotes its audit repair target):
    merge. The following must hold for review-loop to issue PASS:
 
 ```bash
-# Must produce no output EXCEPT, when the landing changes citation-graph
-# dependencies, exactly one staged line for
-# docs/audit/data/citation_graph_manifest.json (the stage-18 delta
-# acknowledgment, which MUST co-land per the landing loop's proactive
-# rule). Any other change here means the working tree has
-# pipeline-regenerated audit-lane outputs left over from validation;
-# drop them (see below) before recommitting.
+# Inventory data changes: distinguish forbidden generated authority from
+# reviewed controlled sidecars and the intended topology acknowledgment.
 git status --porcelain docs/audit/AUDIT_DISPATCH_QUEUE.md \
                        docs/audit/AUDIT_QUEUE.md \
                        docs/audit/MISSING_DERIVATION_PROMPTS.md \
@@ -1316,26 +1332,24 @@ git status --porcelain docs/audit/AUDIT_DISPATCH_QUEUE.md \
                        docs/repo/RETAINED_BACKBONE.md
 ```
 
-If this command prints any line OTHER than the single allowed staged
-`docs/audit/data/citation_graph_manifest.json` entry (allowed only when the
-landed commits change graph topology), BLOCK PASS and instruct the
-operator to DROP the regenerated files before recommitting. The drop
-sequence deliberately erases everything — including the manifest — and then
-deterministically regenerates and re-stages the manifest when (and only
-when) the landing changes graph topology. Drop by restoring the branch's own
-committed state: `git checkout origin/main -- <paths>` writes the index too,
-so on a stale or stacked branch it stages current-`main`'s generated deltas
-relative to the branch head.
+Inspect every listed change. Generated verdict/ledger/queue/status changes
+block PASS and must be stripped. Reviewed controlled data and dispatcher
+sidecars are allowed when they assert no verdict; the topology manifest is
+allowed when the source changes graph topology. Do not erase the entire data
+directory or untracked files indiscriminately. The shared helper below
+restores only identified generated residue to the branch's own `HEAD`, fails
+on errors, and preserves source-side sidecars. Inspect the remaining diff and
+regenerate the manifest from the final intended topology before staging.
 
 ```bash
-git restore --source=HEAD --staged --worktree -- \
-    docs/audit/data/ \
-    docs/audit/AUDIT_DISPATCH_QUEUE.md \
-    docs/audit/AUDIT_QUEUE.md \
-    docs/audit/MISSING_DERIVATION_PROMPTS.md \
-    docs/repo/FRONT_DOOR_STATUS.md \
-    docs/repo/RETAINED_BACKBONE.md
-git clean -fd -- docs/audit/data/
+python3 - <<'PY_CLEAN'
+from pathlib import Path
+import sys
+sys.path.insert(0, "scripts")
+from science_fix_loop import publication_changed_paths, strip_generated_audit_outputs
+root = Path.cwd()
+strip_generated_audit_outputs(root, publication_changed_paths(root))
+PY_CLEAN
 # Only when the landed commits add/remove a graph node or rewire an edge:
 python3 docs/audit/scripts/run_citation_graph_build.py
 python3 docs/audit/scripts/write_citation_graph_manifest.py
@@ -1397,7 +1411,8 @@ For every match, the NoGoDisciplineReviewer must output `PASS` (N1-N8 walk
 complete and no failure condition hit) before review-loop issues PASS. A
 `FAIL` from NoGoDisciplineReviewer blocks PASS regardless of how other
 reviewers voted. An unscrutinized no-go that ships through review cements
-the overclaim at audit time and forecloses investigation paths permanently.
+the overclaim at audit time and can wrongly discourage later investigation. Retained no-go conclusions
+remain revisable when a proof defect, changed domain, or new mechanism is shown.
 
 If NoGoDisciplineReviewer outputs FAIL, apply the narrowest honest fix per
 Fix Policy step 2 (demote to a narrower honest claim that passes N1-N8) and
@@ -1440,7 +1455,7 @@ PR, not live in its body. For every branch-changed note or runner whose row
 the audit lane will consume, run
 
 ```bash
-python3 docs/audit/scripts/check_changed_audit_evidence.py
+python3 docs/audit/scripts/check_changed_audit_evidence.py --include-worktree
 ```
 
 and treat any reported `forensic_evidence_ready: false` on an affected row as
@@ -1553,7 +1568,8 @@ check. Report it as not run with the reason.
 
 ## Re-Review Tracking
 
-Never re-review unchanged files.
+Do not routinely repeat clean reviews of unchanged files. Reopen a prior
+conclusion when a fix changes its relevant assumptions or interactions.
 
 After each fix pass:
 
@@ -1561,9 +1577,11 @@ After each fix pass:
 2. If committing is allowed, create one iteration commit:
    `fix: address physics review findings (iteration N)`.
 3. Set `files_to_review` to the files modified by the fix pass.
-4. Add interacting files only if they are also in the original changed-file
-   set. Find interactions through imports, runner/note pairs, canonical harness
-   rows, publication tables, and explicit cross-links.
+4. Inspect needed interacting files, including unchanged context, through
+   imports, runner/note pairs, canonical harness rows, publication tables, and
+   explicit cross-links. Record the affected prior conclusion and reason for
+   reopening it. A newly necessary edit expands the recorded changed-file set
+   and receives review; it is not covered by an earlier PASS.
 5. Loop until clean, no files changed, or max iterations reached.
 
 ## Final Report

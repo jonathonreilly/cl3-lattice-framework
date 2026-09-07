@@ -40,7 +40,8 @@ routes fail; this gate makes that gap explicit.
 
 ## Non-Negotiables
 
-- Do not weaken the gate to pass a claim; a correctly scoped narrow no-go
-  passes N1–N8 by being narrow.
+- Do not fabricate coverage to pass a claim. Narrow scope alone does not
+  satisfy the current five-route packet requirement; a packet limitation is
+  distinct from the validity of the mathematical theorem.
 - A FAIL means demote and reship narrower — never ship the original framing
   with the checklist attached as decoration.

@@ -7,14 +7,24 @@ description: Drain cl3-lattice-framework science-repair work without weakening r
 
 ## Skill Freshness
 
-Before applying this skill, perform the repo skill freshness check described in
-`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
-this `SKILL.md` exists on `origin/main`, follow that version for the current
-task.
+Before using this workflow, inspect its applicability and correctness and use
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` to select one consistent
+source revision, including references. Ordinary operation uses current main;
+a user-requested prompt review/test uses the identified candidate under review
+without automatically executing the workflow or replacing it with old main text.
 
 Close source-side defects exposed by independent audit and return repaired rows
 to audit. Treat every quarantine and skip as a routed work item, never as a
 scientific verdict and never as a reason to lower the Nature-grade bar.
+
+## Scope and cadence
+
+Use this lane when source repair or an end-to-end repair drain is requested.
+A general discovery task follows `docs/ai_methodology/SCIENCE_WORKFLOW.md`: keep
+coherent candidate work moving with selective checks and milestone PRs/audits.
+For a request to repair source only, complete the source and reviewable handoff;
+do not automatically launch review, landing, or a new audit campaign. The full
+drain steps below apply when that end-to-end operation is in scope.
 
 ## Authority boundary
 
@@ -179,7 +189,9 @@ Each worker must:
    before the PR exists, and apply the cure that document states for anything
    it covers; its sections may be cited by number in worker instructions and
    findings, with the skill or script that section cites as the authority.
-7. Open one PR for one coherent science block.
+7. Deliver one coherent repair milestone for review. Related source changes
+   can share a milestone; incomplete exploratory blocks remain checkpointed
+   with their open obligations, rather than forcing a low-value PR.
 
 If the physics cannot close, retain a bounded theorem, explicit open gate, or
 no-go result as appropriate. Do not promote a partial attempt.
@@ -196,9 +208,11 @@ record `fresh_seat_required` and move it to the next campaign.
 
 ### Review and landing
 
-For every source-side PR:
+For every source-side PR in an authorized review-and-land operation:
 
-1. Take it out of draft.
+1. Verify it is ready for review. Draft status is not permission to promote
+   it: leave unrelated or unfinished drafts alone. Mark only this task's own
+   completed authoring PR ready when the requested handoff includes review.
 2. Pre-fix mechanical non-conformance against
    `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` before a reviewer
    seat is spent on the PR, then run a fresh `review-loop` agent at the best
@@ -214,7 +228,9 @@ For every source-side PR:
    finding, then re-review changed files, validate, and land through
    the review-loop cherry-pick path onto current `main`.
 4. Close the PR/delete its branch only after containment on `main` is proven.
-5. Start a fresh audit campaign for repaired rows. Never reuse the old
+5. At the requested audit milestone, start a fresh audit campaign for repaired
+   rows. Until then record re-audit targets and keep source repair distinct from
+   ratification. Never reuse the old
    campaign workdir; its exclusions are intentionally durable.
 
 Limit aggregate Codex concurrency to the measured safe range. Audit seats,
@@ -239,7 +255,9 @@ is new evidence and is reclassified normally.
 
 ## Completion
 
-Stop only when one of these is evidenced:
+For a source-only request, completion is the reviewable source handoff and named
+re-audit targets, with ratification explicitly pending. For an end-to-end drain,
+stop only when one of these is evidenced:
 
 - no applied scientific repairs remain, every campaign exclusion and selector
   skip has a typed disposition, all actionable PRs have completed

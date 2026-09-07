@@ -63,8 +63,9 @@ the immune system against self-deception.
 ### 4. Limit Behavior
 - What happens at extreme parameter values (zero, large-N, degenerate,
   identity)? Does the result reduce correctly to trivial cases?
-- **RED FLAG:** Result persists unchanged at extreme limits (likely an
-  artifact).
+- **RED FLAG:** Result contradicts a derived limit within the claimed domain.
+  An invariant may correctly remain unchanged; a singular limit may be expected.
+  State the predicted limit and assumptions before judging the result.
 
 ### 5. Numerical Artifact Check
 - Floating-point precision? Integer overflow? Hash/dict ordering? RNG
@@ -123,7 +124,10 @@ CLEAN / SUSPICIOUS / CONTAMINATED
 - No lock needed — this is a read-only sanity pass.
 - Be adversarial. Your job is to FIND problems, not to validate feelings.
 - Every FLAG must name the specific concern and what would resolve it.
-- A result with 2+ FLAGs is SUSPICIOUS regardless of how exciting it is.
+- Assess flags by whether they affect a load-bearing step and by the strength
+  of their evidence. One demonstrated contradiction can defeat a claim;
+  several speculative concerns do not establish one. Report unresolved concerns
+  without turning their count into a scientific verdict.
 - Judge against the framework's own axioms, approved primitives, and
   retained surface. Known-physics values are disclosed comparators only: a
   comparator mismatch is information, but an undisclosed comparator

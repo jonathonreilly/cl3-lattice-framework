@@ -1,5 +1,9 @@
 # Physics Science Worker Protocol
 
+> Historical protocol. Do not execute its old landing, scheduling, or status
+> instructions. Current operation is defined by
+> `docs/ai_methodology/SCIENCE_WORKFLOW.md` and the applicable reviewed skill.
+
 This file is the stable operating protocol for the hourly science automation.
 
 ## Goal

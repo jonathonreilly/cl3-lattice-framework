@@ -39,8 +39,8 @@ Independent scientific audit is still required for all proposed claims.
 
 ## Next action
 
-Finish the main-based review PR, then start the fixed head/fuel generator
-block. Read AUTONOMOUS_SHARED_APPARATUS_ROUTE.md and the independent memo
+PR #8001 is open at https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8001.
+The fixed head/fuel generator block is running in the autonomous campaign worktree. Read AUTONOMOUS_SHARED_APPARATUS_ROUTE.md and the independent memo
 reviews/NEXT_GENERATOR_PREPARATION.md. Freeze gamma=1, fuel gap=1 and battery
 [48,49] with cap97 before executing. Use full bridge/parity branches in the
 law, analyze all four-event paths, and keep event-epoch averages distinct from
@@ -66,4 +66,6 @@ parameter, check tolerance, branch coverage or memory cap was changed.
 
 Final integration passed at 2026-09-07T12:36:56Z. See FINAL_VALIDATION.md for exact checks,
 registered packet scope and preserved historical failures. Next action is PR
-publication followed by the next substantive science block.
+continued autonomous science. Main f6f861e8f0 adds the owner-selected milestone
+workflow; this branch integrates it with a deterministically regenerated
+citation manifest. It changes no scientific source. Independent audit remains pending.

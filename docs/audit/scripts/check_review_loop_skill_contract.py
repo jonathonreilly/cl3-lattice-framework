@@ -105,10 +105,10 @@ REVIEWER_DISABLE_RE = re.compile(
 SKILL_RULES: dict[str, tuple[str, ...]] = {
     "freshness": (
         r"^## Skill Freshness\s*$",
-        r"^Before applying this skill, perform the repo skill freshness check "
-        r"described in\s+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK\.md`\. "
-        r"If a newer version of\s+this `SKILL\.md` exists on `origin/main`, "
-        r"follow that version for the current\s+task\.$",
+        r"^Before using this workflow, inspect its applicability and correctness and use\s+"
+        r"`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK\.md` to select one consistent\s+"
+        r"source revision, including references\.",
+        r"a user-requested prompt review/test uses the identified candidate under review",
     ),
     "mandatory_authority_reads": (
         r"^## Premise Authority\s*$",
@@ -123,9 +123,9 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
     "reviewer_model_and_effort": (
         r"^Review-loop is a text/code/math review path\. Run it with the user's "
         r"configured\s+highest-tier Codex reviewer model "
-        r"and maximum available reasoning for this\s+repo \(currently "
-        r"GPT-5\.6-Sol; use the maximum available reasoning tier unless\s+the "
-        r"owner directs a specific tier for the episode\)\.",
+        r"and maximum available reasoning for this\s+repo\.",
+        r"\.\s+Resolve the current model from the active configuration;",
+        r"\.\s+Respect an explicit owner\s+choice of model or reasoning tier for the episode\.",
     ),
     "reviewer_lenses": (
         r"^- `CodeRunnerReviewer`\s*$",
@@ -223,7 +223,8 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"5242880",
         r"mktemp -d",
         r"trap cleanup_review_wt EXIT",
-        r"retained dirty worktree for recovery",
+        r"retained worktree for recovery",
+        r"from science_fix_loop import cleanup_worktree",
     ),
     "fail_closed_landing": (
         r"for attempt in 1 2 3 4",

@@ -37,8 +37,10 @@ results get MORE scrutiny, not less.
 Do NOT proceed to Phase 2 until the anomaly is precisely characterized with
 numbers.
 
-### Phase 2: Hypothesize Three Candidates
-Generate exactly three candidate explanations:
+### Phase 2: Generate Discriminating Explanations
+Consider these three classes; develop the plausible mechanisms within each
+and explain exclusions. They are prompts for coverage, not an exhaustive or
+mutually exclusive taxonomy:
 
 1. **BUG** — A coding error in the script or runner.
    - Name the specific function and the specific bug type (off-by-one, sign
@@ -64,9 +66,11 @@ For each candidate:
 - What specific test would rule it out?
 - Run the tests. Collect evidence.
 
-**Three-strike rule:** If three consecutive hypotheses fail (neither
-confirmed nor ruled out), STOP and escalate to the user. Do not keep
-guessing.
+If tests remain inconclusive, identify what measurement, construction, or
+independent route would discriminate the live explanations. Continue or pivot
+within the authorized budget when that test is available. Escalate only for a
+necessary missing input, resource decision, or unresolved choice; report the
+inconclusive state without treating an arbitrary hypothesis count as evidence.
 
 ### Phase 4: Resolve
 Based on Phase 3 evidence:
@@ -122,26 +126,19 @@ python3 scripts/automation_lock.py release --owner pstack-investigate
 ## Rules
 
 - Phase 1 MUST complete before Phase 2. No skipping.
-- Always generate all three candidate types. "It's obviously a bug" still
-  requires stating the artifact and genuine candidates.
-- The three-strike rule is absolute. Do not burn context on a spiral.
+- Consider bug, numerical artifact, and model mechanism without inventing
+  candidates. Stop repeating a test when it cannot change the next decision.
 - Scope lock: only modify files in the affected module. No drive-by fixes.
 - Explain anomalies inside the framework's own rules (axioms, approved
   primitives, retained theorems, named lanes). Known-physics expectations
   may motivate WHERE to look, as disclosed comparators — they are not
   themselves explanations.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

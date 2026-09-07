@@ -17,11 +17,12 @@ external context and never as a framework premise.
    - `NO_GO_LEDGER.md` files under `.claude/science/physics-loops/*/`;
    - relevant runners in `scripts/` (`frontier_*` is the active namespace).
 
-## Interrogation (one question at a time)
+## Frame the question
 
-Work through these in order. If the user is present, use AskUserQuestion one
-question at a time; in unattended mode, answer each yourself from repo
-evidence and mark weak answers LOW-CONFIDENCE.
+Answer these from the request and available evidence. Ask the user only for
+material information that cannot be inferred, combining related questions.
+For a mathematical hypothesis, use an exact target and counterexample/proof
+conditions; empirical claims require observables and comparison criteria.
 
 1. **What specific prediction does this hypothesis make?**
    - Quantitative, or at minimum binary (effect exists / does not exist).
@@ -45,7 +46,7 @@ evidence and mark weak answers LOW-CONFIDENCE.
 
 5. **What existing results bear on this?**
    - Cite specific notes, ledger rows, and runners found in preflight.
-   - If a prior no-go covers part of the territory, name the new premise
+   - If a prior no-go covers part of the territory, name the changed mechanism, scope, premise, or counterexample
      that justifies re-entry, or reframe to avoid the retired route.
 
 6. **Is this question well-posed in framework terms?**
@@ -109,22 +110,17 @@ Create the directory if it does not exist.
 - Challenge vague hypotheses. Push for specificity.
 - If no falsification criterion can be stated, the hypothesis is not ready.
 - Established physics may supply the comparator or target (disclosed); it may
-  not supply the justification. No new axioms, primitives, or imports
-  without explicit user approval.
+  not silently supply a framework conclusion. Standard mathematics may be used
+  with its hypotheses checked. Disclosed extra conditions support conditional
+  theorems; new framework axioms or primitives require explicit owner approval.
 - This is a branch-local working document; landing any resulting science
   follows the note + runner + cache shape through `/review-loop`.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

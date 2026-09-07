@@ -47,10 +47,12 @@ repo has very high commit volume, and science PRs may stay open while
 `main` moves. Review-loop is the pre-merge gate — it applies the source
 delta to current `main`, reruns the pipeline and strict lint in a clean
 worktree, and strips generated audit outputs before landing. A separate
-lightweight `pr-smoke` workflow (byte-compile of changed Python plus the
-audit-tooling unit tests when `docs/audit/scripts/**` changes) provides
-PR-time breakage signal; it is not the audit pipeline and applies no
-verdicts.
+lightweight `.github/workflows/pr-smoke.yml` runs for process/prompt/tooling
+changes. It checks the review and premise prompt contracts, focused review,
+science-fix, skill-sync, and uncommitted-evidence scope regressions, and
+live/template workflow agreement (including template-only edits).
+It uses read-only permissions, performs no audit, and writes no status. It does
+not claim to validate every physics runner on arbitrary science-only PRs.
 
 On `schedule` and `workflow_dispatch` runs the workflow auto-commits the
 regenerated audit-data and publication-facing effective-status views back

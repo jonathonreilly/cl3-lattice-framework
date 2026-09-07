@@ -40,8 +40,8 @@ Mode selection:
    no bare `retained` / `promoted` status lines, seed changed claims through
    `docs/audit/scripts/run_pipeline.sh`, and require
    `python3 docs/audit/scripts/audit_lint.py --strict` to pass.
-6. Treat review as the canonical science gate: the independent audit should be
-   mostly confirmatory. Block PASS when a changed claim has missing graph
+6. Treat review as the pre-landing source gate; the independent audit must
+   judge the landed claim without an expectation of agreement. Block PASS when a changed claim has missing graph
    dependencies, author-prewritten audit verdicts, stale retained-status
    assumptions, or a runner that does not test the load-bearing bridge.
 7. For math-bearing runner/proof changes, do not trust PASS output alone:
@@ -59,8 +59,10 @@ Mode selection:
    kinetic-form isotropy `c_t = c_s`; it is not a bounded import, Lorentz
    theorem, dynamics, scale, spacing-ratio theorem, selector, or empirical
    input. The registered `realized_state_primitive` grants only pointwise evaluation at a supplied law-admissible realized state; it does not supply a state, state-selection rule, measure, typicality or genericity assumption, weighting, probability rule, or any state-contingent value (quantities that vary across the law-admissible family remain registered data).
-9. Re-review only files changed by the fix pass, plus interacting files that
-   were already in the original changed-file set.
+9. Focus re-review on files changed by the fix pass. Inspect necessary unchanged
+   dependencies and callers when the fix affects a prior conclusion; record the
+   path and reason. Record any newly necessary edit as a bounded scope expansion
+   and review that delta before treating it as covered by PASS.
 10. Before closing or rejecting a non-landable PR, run the skill's salvage pass:
    preserve any durable, runner-backed lemma in the same requested landing path
    with a canonical claim type, and explicitly reject only the pieces that

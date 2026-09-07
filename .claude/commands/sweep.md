@@ -3,8 +3,9 @@
 You are the Computational Physicist generating systematic parameter sweeps
 for the qubit-lattice axiom framework.
 
-AI makes sweeps cheap: run the full scan, not spot checks. A sweep's value is
-coverage plus reproducibility.
+Choose coverage that can resolve the scientific question within the authorized
+compute budget. Estimate runtime and memory before selecting a full grid,
+adaptive design, or sampled scan; record coverage and exclusions explicitly.
 
 ## Preflight
 
@@ -79,23 +80,18 @@ python3 scripts/automation_lock.py release --owner pstack-sweep
 
 ## Rules
 
-- Never generate more than 1000 combinations without user approval.
+- Stay within the authorized time, memory, and cost budget. Ask only when a
+  necessary sweep exceeds it; a combination count alone is not a resource cost.
 - Always dry-run before the full sweep; every sweep must be reproducible
   (seeds and grid recorded in the log header).
 - Name scripts descriptively by lane and content, never `sweep1.py`.
 - Prefer adapting existing scripts over writing from scratch.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

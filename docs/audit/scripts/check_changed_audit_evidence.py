@@ -45,13 +45,18 @@ def merge_base_commit(base: str) -> str:
     return merge_base
 
 
-def changed_paths(base: str) -> set[str]:
+def changed_paths(base: str, *, include_worktree: bool = False) -> set[str]:
     merge_base = merge_base_commit(base)
-    return {
-        line.strip()
-        for line in _git("diff", "--name-only", f"{merge_base}...HEAD").splitlines()
-        if line.strip()
-    }
+    commands = [("diff", "--no-renames", "--name-only", "-z", f"{merge_base}...HEAD")]
+    if include_worktree:
+        # Review includes the index and working copy separately: an unstaged
+        # reversal must not hide a staged change from the evidence gate.
+        commands.extend([
+            ("diff", "--cached", "--no-renames", "--name-only", "-z", "HEAD"),
+            ("diff", "--no-renames", "--name-only", "-z"),
+            ("ls-files", "--others", "--exclude-standard", "-z"),
+        ])
+    return {path for command in commands for path in _git(*command).split("\0") if path}
 
 
 def immutable_control_failures(base: str, paths: set[str]) -> list[dict]:
@@ -82,6 +87,40 @@ def immutable_control_failures(base: str, paths: set[str]) -> list[dict]:
     }]
 
 
+def candidate_version_conflicts() -> list[dict]:
+    """Do not certify index bytes using a different working-copy version."""
+    staged = set(filter(None, _git(
+        "diff", "--cached", "--no-renames", "--name-only", "-z", "HEAD"
+    ).split("\0")))
+    unstaged = set(filter(None, _git(
+        "diff", "--no-renames", "--name-only", "-z"
+    ).split("\0")))
+    # A staged deletion followed by file recreation is untracked, not an
+    # index-to-worktree diff. Those bytes also cannot certify the index.
+    unstaged.update(filter(None, _git(
+        "ls-files", "--others", "--exclude-standard", "-z"
+    ).split("\0")))
+    for path in filter(None, _git(
+        "diff", "--cached", "--no-renames", "--diff-filter=D", "--name-only", "-z", "HEAD"
+    ).split("\0")):
+        # Recreated ignored files are absent even from ls-files --others.
+        target = REPO_ROOT / path
+        if target.exists() or target.is_symlink():
+            unstaged.add(path)
+    ambiguous = sorted(staged & unstaged)
+    if not ambiguous:
+        return []
+    return [{
+        "control": "mixed_candidate_versions",
+        "changed_surfaces": ambiguous,
+        "issue": (
+            "paths_have_conflicting_staged_and_working_versions; readiness reads working-copy "
+            "bytes, not a different index version. Stage the intended bytes or unstage "
+            "these paths for working-copy review, then rerun the gate"
+        ),
+    }]
+
+
 def affected_rows(
     rows: dict[str, dict],
     paths: set[str],
@@ -103,12 +142,14 @@ def affected_rows(
     return affected
 
 
-def build_report(base: str) -> dict:
+def build_report(base: str, *, include_worktree: bool = False) -> dict:
     ledger_io.ensure_cache()
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
     rows = ledger.get("rows") or {}
-    paths = changed_paths(base)
+    paths = changed_paths(base, include_worktree=include_worktree)
     control_failures = immutable_control_failures(base, paths)
+    if include_worktree:
+        control_failures.extend(candidate_version_conflicts())
     checked: list[dict] = []
     failures: list[dict] = []
     for claim_id, row, overlap in affected_rows(rows, paths):
@@ -131,6 +172,7 @@ def build_report(base: str) -> dict:
     return {
         "schema": "changed_audit_evidence_readiness_v1",
         "base": base,
+        "diff_scope": "committed_and_worktree" if include_worktree else "committed",
         "changed_path_count": len(paths),
         "checked": checked,
         "failures": failures,
@@ -141,10 +183,14 @@ def build_report(base: str) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--base", default="origin/main")
+    parser.add_argument(
+        "--include-worktree", action="store_true",
+        help="Also inspect staged, unstaged, and untracked candidate changes (use before committing or with --no-commit review).",
+    )
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
     try:
-        report = build_report(args.base)
+        report = build_report(args.base, include_worktree=args.include_worktree)
     except (OSError, ValueError, RuntimeError, json.JSONDecodeError) as exc:
         print(f"changed-audit-evidence: ERROR: {exc}")
         return 2

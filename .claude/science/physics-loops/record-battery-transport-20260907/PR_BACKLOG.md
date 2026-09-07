@@ -1,13 +1,12 @@
 # PR delivery status
 
-The reviewed block targets main and carries source dependencies from PR #7983
-and #7996. Both original heads remain unmodified. Source, evidence and review
-checks have passed; final integration replay and manifest acknowledgment run
-before creation. Independent scientific audit is still required.
+[PR #8001](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8001)
+is open against main, carrying source dependencies from PR #7983 and #7996.
+Both original parent heads remain unmodified. Source commit 7800e788cfc1
+passed formal source-side review and validation; independent scientific audit
+is pending. Main f6f861e8f0 is integrated for its milestone workflow and checks.
 
-Recovery command after final checks:
-`gh pr create --base main --head codex/record-battery-transport-block01-20260907 --title "[physics-loop] record-battery transport bounded_theorem conditional-support" --body-file .claude/science/physics-loops/record-battery-transport-20260907/PR_BODY.md`
-
-Do not merge this science PR or push science changes directly to main. After
-verified creation, continue the autonomous head/fuel block within the same
-12-hour budget; no route completion ends the campaign early.
+Do not merge this science PR or push science changes directly to main.
+The autonomous head/fuel milestone proceeds on
+`codex/record-autonomous-head-block02-20260907`, within the same campaign ending
+2026-09-07T22:59:43Z. No route completion ends the campaign early.

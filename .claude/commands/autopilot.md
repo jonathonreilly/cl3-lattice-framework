@@ -15,32 +15,41 @@ is the status dashboard across all of it.
 
 ## /autopilot status
 
+Freeze a current `origin/main` SHA when available and report its freshness.
+Read main queue/status surfaces at that revision. Keep candidate campaign
+branches separate; neither the current checkout nor an open PR is main.
+
 1. Lock state:
    ```bash
    python3 scripts/automation_lock.py status
    ```
    Report holder, purpose, TTL remaining, or "free".
-2. Active loops — for each pack under `.claude/science/physics-loops/*/`
-   with a recent `STATE.yaml`, report: slug, current route/target, last
-   checkpoint time, stop condition. Flag stale packs (no checkpoint in
-   > 7 days) as dormant, not active.
+2. Candidate loops — for each relevant campaign branch/pack, report its revision,
+   slug, route/target, delivery mode, next milestone, provisional dependency
+   checks, last checkpoint, and stop condition. A recent checkpoint is historical
+   evidence, not proof a worker is running. Use an owned task/lease status when
+   available; otherwise mark activity unverified. Flag old packs as stale without
+   claiming that their process is alive or dead.
 3. In-flight science: `gh pr list --state open` — group science /
    physics-loop / methodology PRs; flag drafts (out of review-loop scope)
    and PRs with unresolved review findings.
-4. Audit lane: queue depth from `docs/audit/AUDIT_QUEUE.md`, plus the last
-   few `audit:` commits (`git log --oneline -5 --grep="^audit" main`) to
-   confirm the lane is moving.
+4. Audit lane: queue depth from `docs/audit/AUDIT_QUEUE.md` at the pinned main
+   revision, plus recent audit commits at that revision. A past audit commit
+   does not prove that an audit process is currently running; report its timestamp.
 5. Any `PR_BACKLOG.md` entries in loop packs (deliveries that need a human
    or auth to complete).
 
 ## /autopilot history
 
-1. `git log --oneline --since="7 days ago" -- docs/ scripts/` — landed
-   science.
+1. Freeze and report `origin/main`'s SHA and freshness. Use
+   `git log <MAIN_SHA> --oneline --since="7 days ago" -- docs/ scripts/` for
+   landed-main history. If the main ref is unavailable, say so; never substitute
+   unmerged current-branch commits as landed work. Report useful candidate
+   branch progress separately with its own source revision.
 2. `gh pr list --state merged --search "merged:>={date-7d}"` and recently
    closed PRs (review-loop closes-with-salvage rather than merges; check
    `gh pr list --state closed` for salvaged content).
-3. Audit movement: `git log --oneline --since="7 days ago" -- docs/audit/`.
+3. Audit movement: `git log <MAIN_SHA> --oneline --since="7 days ago" -- docs/audit/`.
 4. For pre-April-2026 history, the legacy `AUTOPILOT_WORKLOG.md` remains as
    an archival record.
 
@@ -52,9 +61,10 @@ campaign continuation). Before redirecting, run the safety checks:
 
 1. Lock free or owned by a finished session? If held by an active owner,
    report and stop — do not compete.
-2. Any active (non-dormant) loop pack already working the same target? If
-   so, point at its `STATE.yaml` / `HANDOFF.md` instead of starting a
-   duplicate.
+2. A loop pack or live task already covers the same target? Inspect its exact
+   scope and recorded activity; point at its `STATE.yaml` / `HANDOFF.md` for
+   resume or coordination. A recently edited file alone does not establish
+   exclusive ownership of the target.
 
 ## Rules
 
@@ -67,17 +77,11 @@ campaign continuation). Before redirecting, run the safety checks:
   not "landed", and a landed note is not "retained" until the ledger says
   so.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

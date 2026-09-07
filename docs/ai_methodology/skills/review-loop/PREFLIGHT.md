@@ -91,15 +91,16 @@ confirms nothing. Record the mutations you ran in the PR body.
 
 After the full pipeline refreshes changed-runner caches, run
 `python3 docs/audit/scripts/check_changed_audit_evidence.py --base
-origin/main`. Fix every named missing runner/input/current compute result or
+origin/main --include-worktree`. This includes staged, unstaged, and untracked
+author changes before committing. Fix every named missing runner/input/current compute result or
 incomplete N5 certificate before requesting review. This is preflight only:
 the independent audit reruns the exact runner live and does not inherit a PR
 author's verdict.
 
 ## 9. Clean-state validation
 
-From a worktree with no untracked pipeline residue (`git clean` generated
-caches first): `python3 scripts/vocab_lint.py --fix` on changed files; full
+Identify generated residue separately from source and recovery artifacts;
+never blanket-clean a data directory. Then run: `python3 scripts/vocab_lint.py --fix` on changed files; full
 `bash docs/audit/scripts/run_pipeline.sh` exit 0; `python3
 docs/audit/scripts/audit_lint.py --strict` exits 0 with no errors
 (warnings and notices may remain). Then restore

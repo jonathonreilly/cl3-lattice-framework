@@ -50,9 +50,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          fi
+          pip install -r requirements-release.txt
 
       - name: Repair missing dependency edges
         run: python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
@@ -142,7 +140,7 @@ jobs:
             docs/audit/data/science_fix_backlog.json
             docs/audit/data/effective_status_summary.json
             docs/audit/data/cycle_inventory.json
-            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+            docs/repo/FRONT_DOOR_STATUS.md
           if-no-files-found: warn
           retention-days: 14
 

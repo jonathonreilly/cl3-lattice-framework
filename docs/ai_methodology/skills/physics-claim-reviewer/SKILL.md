@@ -7,10 +7,11 @@ description: Use when an LLM agent needs to adversarially review a candidate phy
 
 ## Skill Freshness
 
-Before applying this skill, perform the repo skill freshness check described in
-`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
-this `SKILL.md` exists on `origin/main`, follow that version for the current
-task.
+Before using this workflow, inspect its applicability and correctness and use
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` to select one consistent
+source revision, including references. Ordinary operation uses current main;
+a user-requested prompt review/test uses the identified candidate under review
+without automatically executing the workflow or replacing it with old main text.
 
 Use this skill to apply reviewer pressure before a claim lands on the live
 surface. The raw synthesis shows that the most common failure is not bad prose;
@@ -170,18 +171,20 @@ object plateaus instead of converging) and explicit wrong-value discriminators
 (e.g. gate that the `-1/11` competitor is rejected by `>>` the tolerance) over
 algebraic identities that hold by construction.
 
-**Externally-anchored targets resist fabrication.** A claim pinned to a hard
-external anchor (an exact landed value, an independent exact diagonalization, a
-known a-priori constant) cannot be faked — a wrong derivation will not match it,
-so the executor reports an honest residual instead of fudging. Favor reviewing
-(and commissioning) externally-anchored claims; treat self-anchored ones with
-extra suspicion.
+**Keep validation targets independent of the prediction.** An exact landed
+value, independent computation, or known constant can expose an error, but a
+worker can still fit or copy a known target. Trace every numerical input and
+the computation that produces the prediction. Disclose targets known during
+development and any search over formulas or parameters; use held-out cases,
+independent derivations, or preregistered checks when applicable. A match is a
+comparison result until the derivation and physical identification are
+supported. Do not prefer a target merely because its desired answer is known.
 
-**Independent-model verification.** A single reviewer — even one actively
-hunting for these patterns — misses tautological gates and over-stated framing,
-because reading a gate and trusting its label is the same cognitive act that
-wrote it. An *independent model* re-deriving the load-bearing step and
-re-running the gate with a term dropped catches what one reviewer's eyes do not.
+**Independent verification.** A single reviewer can miss tautological gates
+and overstated framing. Have a separate pass re-derive the load-bearing step
+using different machinery and test whether the gate detects relevant defects.
+Different model families can reduce correlated errors but do not guarantee
+independence or correctness; report shared inputs and context limits.
 This applies to the reviewer's own synthesis too: even when the artifact is
 honest and correctly scoped, the carried-forward summary can overstate (claiming
 a convergence study "confirms" a gap it never measured; quoting a residual the
