@@ -2,7 +2,7 @@
 
 Standing NON-science branch: the durable, versioned home for AI
 planning/targeting surfaces — agent instructions (`AGENTS.md`, canonical home),
-TOE closure scorecard (`TOE_SCORECARD.md`), and (as they accrue) campaign
+TOE closure scorecard (`TOE_SCORECARD.md`), versioned local prompt profiles, and (as they accrue) campaign
 briefs, dispatch specs, strategy notes. Established at owner request
 2026-08-07. Root docs on `main` (`CLAUDE.md`, pointer `AGENTS.md`) point here.
 
@@ -13,7 +13,10 @@ briefs, dispatch specs, strategy notes. Established at owner request
   guard, not just a convention. `main` remains the sole authority for science
   content and audit status; everything here is derived, non-authoritative
   planning material.
-- **Direct pushes are allowed here; `main` stays PR-only.** Commit messages
+- **Direct pushes are allowed here.** Science authors propose on branches/PRs;
+  reviewed source lands through the independent review path. Routine audit
+  application and mechanical refresh may push directly to `main` under their
+  existing lane contracts. Commit messages
   carry `[skip ci]` so branch pushes don't trigger workflow runs.
 - **The audit pipeline reads `main`'s tree only** — files here are invisible
   to the citation graph BY DESIGN. Never copy or check these files out into a
