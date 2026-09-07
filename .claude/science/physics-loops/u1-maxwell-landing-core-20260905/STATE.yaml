@@ -1,0 +1,70 @@
+slug: u1-maxwell-landing-core-20260905
+block: 1
+branch: physics-loop/u1-maxwell-landing-core-block01-20260905
+base_commit: e249016f75 (origin/main)
+mode: campaign
+runtime: 12h
+start_time: "2026-09-04T21:04+00:00"
+target_stop_time: "2026-09-05T09:04+00:00"
+checkpoint_interval: 30m
+deep_block: 90m
+target_status: best-honest-status
+lock: "shared with the gravity-weighted-kernel campaign (scripts/automation_lock.py owner=fable-supervisor, acquired 2026-09-04T22:24+00:00, ttl 12h, expires 2026-09-05T10:24+00:00)"
+cycle: 1
+active_route: block 01 = landing core + supplied-input ledger (meta); block 02 selected from the ledger ranking
+approach_family_coverage: [G1 class-restriction derivation unexplored, G2 time-selection fork unexplored, G3 3D photon dispersion exponent unexplored, G4 germ-from-Record-overlap partially covered by #7886/#7887]
+strongest_unresolved_proof_obligation: "which supplied input of the #7917 class restriction is derivable from the tick/Record structure"
+hard_residual: "the 3D photon: quadratic (pure spin-half) vs linear (finite detuning) — is the Maxwell photon a supplied detuning or a derived object?"
+files_touched: [pack files, inputs/]
+open_imports: [declared link roles; supplied Record overlap law; declared generator class; supplied detuning]
+no_go_routes: [see NO_GO_LEDGER.md]
+trace_class: upstream_support
+review_findings: "checker CH-01..CH-14 applied (fix pass baf24571d5); blind-ledger findings F-B1..F-B3 carried; conformance gate sections 1-12 PASS/NA in REVIEW_HISTORY.md"
+pr_status: "OPENED — #7976 (2026-09-04T22:35+00:00), hand-off to the owner-operated review-loop; never merged by the campaign"
+next_exact_action: "block 02 (the #7917 dynamics class against the four axioms, per-item derived/conditional/supply with existence witnesses): Fable primary in flight on GOAL_block02.md in worktree loop-u1-block02, branch physics-loop/u1-maxwell-landing-core-block02-dynamics-class-20260905 stacked on this branch; on delivery: supervisor line-by-line review, Opus refuting checker (disjoint machinery, mutation probes on the runner), V1-V5 in writing, N1-N8 for any negative sentence, conformance gate, PR stacked on #7976"
+stop_condition: "runtime exhausted, or corollary/value-gate exhaustion documented in OPPORTUNITY_QUEUE.md"
+
+# DEGRADED WORKER MODE (2026-09-04T21:32+00:00): the gpt-5.6-sol seats died at the codex account usage limit (reset Sep 6 22:27); block continues on Fable worker seats (single-family) under the workhorse robustness conditions: refuting checker on disjoint machinery, mutation probes, supervisor hand-verification; independence class = cross-context; disclosed in the note/receipt/PR. Sol narration salvaged to specs/SALVAGE_sol_primary_narration.md as untrusted draft input.
+# WORKER PROFILE UPDATE (owner 2026-09-05): Opus 5 seats permitted for physics work conditional on supervisor checking; profile = Fable primary + Opus blind/refuting seats (cross-model within family) + supervisor line-by-line.
+
+# 2026-09-04T21:45+00:00: blind Opus ledger checked 8/8; awaiting Fable primary (landing core + meta note) and lane-A seats.
+
+# 2026-09-04T22:17+00:00: block 01 CLOSING — checker FIX FIRST applied (baf24571d5), conformance gate recorded, certificate final; awaiting pipeline exit code, then manifest + PR. Block 02 selected (ledger row 1).
+
+# 2026-09-04T22:35+00:00: block 01 CLOSED — pipeline rerun on the final tree exit 0; manifest byte-identical on regeneration; PR #7976 opened (meta — open). Block 02 primary (Fable) launched 2026-09-04T22:20+00:00 on the stacked branch. Lane A (gravity b213) primary still running.
+
+# ---------------------------------------------------------------- block 02 (2026-09-05)
+# block: 2
+# branch: physics-loop/u1-maxwell-landing-core-block02-dynamics-class-20260905 (stacked on block 01)
+# base_commit: e249016f75 (origin/main), block-01 head be4fa51f32
+# active_route: G1 class-restriction adjudication (the #7917 class against the axioms, per item, with existence witnesses)
+# approach_family_coverage: [G1 executed as an exact adjudication (items 4/5 mutually redundant; 1,2,6,7 supplies with witnesses; 3 conditional), G2 time-selection fork touched (the sampling identification selects the diffusive branch), G3 untouched, G4 untouched]
+# strongest_unresolved_proof_obligation: "item 6 (positive diagonal conservation) from the axioms: the only live route is reflection positivity of a supplied transfer interpretation along a declared axis (two supplied structures)"
+# hard_residual: "payload + transformation law, time rule, locality, conservation: the exact supplied residual of the light lane's terminal"
+# files_touched: [scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py, docs/U1_DYNAMICS_CLASS_AXIOM_ADJUDICATION_BOUNDED_NOTE_2026-09-05.md, RESULTS_block02.md, ROUTE_PORTFOLIO.md, REVIEW_HISTORY.md, NO_GO_LEDGER.md, APPROACH_REGISTRY.md, TRACE_GATE.md, CLAIM_STATUS_CERTIFICATE.md, HANDOFF.md, OPPORTUNITY_QUEUE.md]
+# open_imports: [the role compilation; the named premises LR, IP-A, IP-B, OL, SI]
+# trace_class: upstream_support (consumer: the light lane's terminal)
+# review_findings: self-review pending the checker seat; V1-V5 answered; N1-N8 landed in the note
+# pr_status: not opened (worker never pushes)
+# next_exact_action: "supervisor review; refuting checker on the exact classification (a fifth coupling? a non-curl nullspace vector?); then conformance gate, cache, manifest, PR stacked on block 01"
+
+# 2026-09-05T03:25+00:00: block 02 CLOSED — supervisor line-by-line review (no defects beyond the checker's); Opus refuting checker FIX FIRST with no verdict refuted, CK-01..CK-08 verified and applied; runner 100/0, cache re-pinned; PR #7980 opened, stacked on block 01 (#7976; block 01's précis-as-quote corrected on its branch and pushed). Block 03 SELECTED: the Gauss rows as support forcing on the extended payload class (GOAL_block03.md) — chosen over the reflection-positivity route (its two supplies are target-equivalent within the remaining budget) and the photon-stiffness computation (a sampler question the exact block format cannot settle). Branch physics-loop/u1-maxwell-landing-core-block03-gauss-support-20260905, stacked on block 02. Budget ends 2026-09-05T09:04+00:00; lock (owner fable-supervisor) expires 10:24+00:00.
+
+# ---------------------------------------------------------------- block 03 (2026-09-05)
+# block: 3
+# branch: physics-loop/u1-maxwell-landing-core-block03-gauss-support-20260905 (stacked on block 02, PR #7980)
+# base_commit: e249016f75 (origin/main), block-02 head 11fdd471a5
+# active_route: the Gauss rows as support forcing on the extended (phi, E, B, psi) payload class (GOAL_block03.md)
+# approach_family_coverage: [G1 payload wall split — vertex/cube clause of item 7 DERIVED-CONDITIONAL-ON(SF-all, EC, CONS), coin/hidden-time clause GENUINE SUPPLY with the exact coin cut 16 -> 6 -> 4; G2 untouched; G3 untouched; G4 untouched]
+# strongest_unresolved_proof_obligation: "the one-component clause (the coin): its only axiom contact is Qubit's capacity bound; the live route is a retained readout bridge from recorded values to a one-real-coordinate payload (N7); conservation remains the lane's load-bearing residual"
+# hard_residual: "payload one-component clause + OL, time rule, locality, conservation; the Gauss rows' content and background charges are supplied"
+# files_touched: [scripts/u1_gauss_support_forcing_extended_class_2026_09_05.py, docs/U1_GAUSS_SUPPORT_FORCING_EXTENDED_PAYLOAD_CLASS_BOUNDED_NOTE_2026-09-05.md, logs/runner-cache/u1_gauss_support_forcing_extended_class_2026_09_05.txt, RESULTS_block03.md, ROUTE_PORTFOLIO.md, REVIEW_HISTORY.md, STATE.yaml, HANDOFF.md]
+# open_imports: [the role compilation; the two Gauss rows and their background charges (content supplied, shape = Admissibility's support clause); the readings SF-all / SF-0; the premises EC (with OL), CONS]
+# trace_class: upstream_support (consumer: the light lane's terminal via block 02's residual)
+# review_findings: "primary self-review; V1-V5 answered; N1-N8 landed; fourteen mutations caught; refuting checker pending; quote-fidelity finding on ledger row 4 / GOAL_block03 ('order-independent site-level support forcing among corner records' is not in PR #7893's body or head note) carried to the supervisor"
+# pr_status: not opened (worker never pushes)
+# next_exact_action: "supervisor line-by-line review; Opus refuting checker on disjoint machinery (an eleventh covariant pattern? a non-constant harmonic vertex field? a coin member the rows cut that is not an onsite mixing? the charged-surface emptiness by a different route?); then conformance gate, manifest (+1 node), PR stacked on #7980"
+
+# 2026-09-05 block 03 (Fable primary) deliverables committed at 13accb8c03: runner 89/0 (49.7 s, cache pinned), note, RESULTS, V1-V5; not pushed.
+
+# 2026-09-05T04:50+00:00: block 03 CLOSED — supervisor line-by-line review; Opus refuting checker FIX FIRST with no verdict refuted, CK-01..CK-07 verified and applied; runner 91/0, cache re-pinned; manifest +1 node/+1 edge; PR #7984 opened, stacked on block 02 (#7980). Two upstream précis-as-quote defects corrected on the block-01 branch (#7976). CAMPAIGN STOP FOR THIS LANE (budget-bounded, not queue-exhausted): the remaining candidates cannot complete honestly in the exact block format before the 09:04+00:00 stop — conservation via a reflection-positive transfer (two supplied structures, target-equivalent unless carried to the payload level), the photon stiffness of the ring-exchange-alone law (a sampler question), and the one-component clause (whose live route is the readout bridge, not a computation). The lane resumes from OPPORTUNITY_QUEUE.md.
