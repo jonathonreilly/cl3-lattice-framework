@@ -1,2 +1,3 @@
-# PR backlog
-One coherent block36 source with two helpers is prepared in scratch. No PR/worktree created by this lane. Root/orbital select the isolated integration base containing compact Hamiltonian29 and spectrum30.
+# Review publication
+
+Draft PR8026 published and verified OPEN/MERGEABLE/CLEAN, stacked on8025. GitHub process_contracts passed. No publication backlog remains.
