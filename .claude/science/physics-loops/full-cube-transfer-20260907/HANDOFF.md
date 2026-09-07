@@ -1,0 +1,3 @@
+# Block28 handoff
+
+Isolated worktree /private/tmp/toe-full-transfer-campaign-20260907, branch codex/full-cube-transfer-block28-20260907, based on block22dea3aa0d82. Only new28 files are owned by this worker. Freeze canonical source/helper/cache/protocol, report hashes to root BEFORE graph. After root confirmation run full required mechanical pipeline against pinnedmainb965, expecting six affected claims (physicalparent8009, weakcoupling20, two22 and two28), strict lint and readiness. Preserve receipts before restoring only generated residue to this branch's HEAD. No audit application or science merge.

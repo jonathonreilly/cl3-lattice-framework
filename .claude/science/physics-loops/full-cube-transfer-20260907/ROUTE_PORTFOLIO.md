@@ -1,0 +1,3 @@
+# Actual route history
+
+The prior22face marked-loop compression proved source mixing and a source-operator saddle but required a supplied reset/compression interpretation for repeated powers. The distinct full-boundary route retains all physical cycle degrees and proves the gauge-coordinate map onto, removing that composition obstruction for the supplied action. Orbital independently reconstructed integer geometry; native independently proved uniform136/80/56 marginal estimates; root independently derived the full geometry and metric interface. These are complementary proof mechanisms, not fabricated failed-route families.
