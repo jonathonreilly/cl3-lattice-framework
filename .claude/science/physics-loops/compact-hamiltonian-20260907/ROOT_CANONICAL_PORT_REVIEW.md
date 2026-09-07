@@ -1,0 +1,7 @@
+# Root canonical29 port review
+
+PASS after reading the complete canonical source and helper in /private/tmp/toe-compact-hamiltonian-campaign-20260907. Source SHA f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69; helper c4ba66af265f24ea4090186e278f2588a378d16fca3469f0cc2a24f96f076b00. No files in the frozen graph worktree were edited for this review.
+
+The source accurately incorporates root's graph-norm proof and explicitly separates operator square H² from Sobolev regularity. Actual normalized Wilson moments, odd chart symmetry, complement estimate, strong directional Taylor in L², bounded nonlinear multiplication and D(H²)=H_Sob4 justify the local O(h²) graph bound. Contractive telescoping prices right-input cutoff energy; no repeated cutoff or all-input operator-norm claim appears. The exact exp(-6hv)c0^-12 scalar and all twelve internal link integrations preserve the full slab identification.
+
+The helper independently certifies the trace-normalized generators, Casimir, cube incidence, actual Wilson directional coefficients, Gaussian moment arithmetic, scalar normalization and nonquadratic potential controls. It has31 explicit science checks, strict CLI,180s alarm, positive180MiB/time assertions, five literal accounting scopes, stdout resource values and actual raw data. It does not claim finite calculations establish the infinite-dimensional theorem. Sources and original alternative proof/freeze/provenance remain preserved; supplied clock/action/finite cube are explicit. No blocking finding.

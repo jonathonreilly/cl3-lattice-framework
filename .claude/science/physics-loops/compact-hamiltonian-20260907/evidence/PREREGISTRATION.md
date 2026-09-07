@@ -1,0 +1,9 @@
+# Block29 independent compact interacting Hamiltonian limit
+
+Freeze before deriving/reading root proof. Same full physical cube Hilbert space as block28, but a NEW supplied anisotropic action/time scaling: h=t/n, one-link temporal weight normalized Wilson p_(a/h), fixed a>0, and spatial halfmultiplication exp(-h V/2), V=v sum_(six faces)(1-ReTr(Uface)/3), v>=0 fixed. No weak-field localization of the boundary state. No physical selector of a,v or time is derived.
+
+Independently derive normalized one-link exponential-coordinate moments, retaining actual Haar density and partition normalization: covariance3h/a plusO(h²), odd moments vanish on a symmetric logarithm chart by inversion, fourth momentO(h²), off-chart exponentially small. Check trace-orthonormal generator convention and fundamental kinetic4/a explicitly; preserve any coefficient mismatch.
+
+Use Taylor's integral remainder for unitary group translations in L2, with graph Sobolev H4 rather than pointwise/Sobolev embedding. Extend to12 link product and derive one-step consistency for F(h)=exp(-hV/2)C_(a/h)^tensor12 exp(-hV/2). Establish the selfadjoint H=-(3/(2a))Delta_total+V domain and H4 stability of its semigroup, then telescope only on regular vectors to O_T(n^-1)||f||H4. Use contraction/density for allL2 strong convergence. A norm convergence rate on allL2 is not promised. Gauge invariance and exact full transfer gluing must remain explicit.
+
+Falsifiers: wrong normalized covariance or Casimir factor; log cut producing non-negligible odd/tail terms; unbounded generator remainder on H4; multiplication not preserving required domain; unjustified H4 semigroup estimate or operator-norm telescope; accidental reset/source compression. Keep failure history. Standard Wilson-to-lattice Hamiltonian provenance must be disclosed; no continuum-space or physical Yang–Mills gap claim. Scratch only; do not read root new proof until independent derivation is frozen.
