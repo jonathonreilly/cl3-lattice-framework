@@ -143,29 +143,7 @@ source/proof coverage, exact-input controls and the combined landing gate; avoid
 a separate later handoff for an otherwise unchanged manifest.
 
 BACKLOG_STATUS.md owns current counts and assignments. Preserve earlier snapshots
-under history and bind detailed evidence by hashes. New submissions remain outside this cleanup inventory under the owner cutoff. Follow the established
+under history and bind detailed evidence by hashes. New submissions enter the
+inventory separately from original backlog reduction. Follow the established
 continuous-discovery, selective-check, milestone-PR cadence; a research block or
 passing runner alone is not a publication milestone.
-
-## Owner cutoff — original backlog only
-
-The cleanup includes only the original 254 PR identities and original scientific
-scopes captured at 13:10:39 UTC on 2026-09-07. `BACKLOG_CUTOFF.json` pins membership,
-original heads and the source snapshot. New-arrival PRs are excluded from review,
-draft triage, repairs and landing for this task. Preserve their partial work with
-an owner-cutoff deferral and no new verdict. Do not treat a post-cutoff successor
-as permission to expand the cleanup's scientific scope.
-
-Prioritize bounded units that complete an original PR's scientific disposition.
-Keep full science landings, partial source extractions and draft/preservation
-closures separate in throughput reports. `OPEN_PR_INVENTORY.json` now contains
-only the still-open members of the fixed original set. Refresh their actual heads
-and necessary source maps; do not ingest new arrivals. Existing source and
-reservation standards remain in force, and formal audit stays deferred.
-
-`BACKLOG_CLOSURE_RECONCILIATION.json` tracks scientific content separately from
-GitHub actions. Later reviewed extractions must update each original constituent's
-scientific disposition even if its PR was already closed. A consolidation retains
-every unresolved proof, premise and evidence obligation at its named open
-successor. Closing that successor requires explicit dispositions or another
-fully preserved transfer; reducing visible PR count alone cannot retire the work.

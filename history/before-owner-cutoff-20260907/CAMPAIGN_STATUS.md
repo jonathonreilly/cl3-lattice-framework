@@ -1,7 +1,6 @@
 # TOE campaign — 2026-09-07
 
-The active work is cleanup of the fixed original 254 PR backlog. New arrivals are
-excluded by the owner cutoff in BACKLOG_CUTOFF.json. Read
+The active work is the owner-authorized review and landing backlog. Read
 [BACKLOG_STATUS.md](BACKLOG_STATUS.md) for current main, queue counts and assignments,
 [NEXT_REVIEW_UNITS.json](NEXT_REVIEW_UNITS.json) for exact units, and
 [TOE_SCORECARD.md](TOE_SCORECARD.md) for physical obligations. Formal audit is
@@ -49,10 +48,8 @@ question; no blanket disposition of that PR is asserted.
 
 ## Next scientific decisions
 
-1. Repair the eight frozen #7984/#7980 findings and continue original backlog
-   science. Closure/content reconciliation is complete in
-   `BACKLOG_CLOSURE_RECONCILIATION.md`; pending closed scopes remain obligations
-   at their named open successors. Preserve all premise and reserved-source holds.
+1. Correct the older #7984/#7980 adjudication while the next bounded spatial
+   successor is independently reviewed. Preserve current-premise and reserved-source holds.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

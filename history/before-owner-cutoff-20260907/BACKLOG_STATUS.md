@@ -1,42 +1,24 @@
 # Backlog review and landing — current handoff
 
-Updated after the 2026-09-07 closure/content reconciliation. Main is `7887b4481feae2800c04c7c42ddac9554f2c2b9f`.
-The owner has fixed this cleanup to the **original 254 PRs**, captured at
-13:10:39 UTC. Exact membership and original heads are in `BACKLOG_CUTOFF.json`.
-New arrivals are excluded. Formal audit waits until a solid TOE.
+Updated 2026-09-07T20:46:18.246773+00:00. Main is `7887b4481feae2800c04c7c42ddac9554f2c2b9f`.
+This page owns current backlog counts and assignments. Older snapshots are in
+`history/`; other planning documents link here instead of repeating current counts.
+The owner authorized review, source repair, direct main landing and draft triage.
+Formal audit waits until a solid TOE.
 
-## Original backlog outcomes
+## Queue and landed work
 
-| Disposition | Original PRs |
-| --- | ---: |
-| PR closed directly after its reviewed landing | **7** |
-| Closed by draft cleanup or source-preserving consolidation | **110** |
-| Still open, including the three owner-reserved PRs | **137** |
-| Original total | **254** |
+**153 open PRs, 3 drafts awaiting ready-or-close triage.** The original 254 plus 23 arrivals
+minus 124 closures reconcile exactly. The closures comprise 117 original PRs and
+seven arrivals: 21 draft closures, 14 closures after source landing and 89 further
+consolidations (64 exact-source and 25 with explicitly reviewed content or premise
+dispositions). 26 drafts became ready, including the two drafts in the previous
+snapshot (#8021/#8022). Readiness and consolidation do not constitute scientific acceptance.
 
-**27 original PR-authored scientific scopes now have reviewed corrected dispositions
-newly landed on main:** seven direct landing closures plus twenty constituents
-closed earlier for consolidation. The seven direct closures are #7983, #7996,
-#8001, #7998, #7999, #8000 and #8002.
-
-Of the **110 other closures**, **20** subsequently had their corrected scientific
-scope landed, **86** remain scientifically pending at **12 open successors**,
-**2** were semantically superseded by results already on starting main,
-**1** was empty and **1** held an unexecuted plan. Source and obligation checks
-found no closure requiring reopening. This count accepts reviewed corrections
-and narrowing; it does not prove every withdrawn raw assertion or count
-independent breakthroughs. See [the complete reconciliation](BACKLOG_CLOSURE_RECONCILIATION.md)
-and its per-PR JSON for both initial and reviewed heads, recovery and obligations.
-There are **zero remaining drafts within the original snapshot**.
-
-Before this cutoff, seven newly arrived PRs (#8003–#8009) were also fully landed.
-Thus the all-session totals are **14 PR closures directly after landing, 11 science batches and
-45 new source notes**, including partial extractions from still-open original
-PRs. These are different measures; neither note counts nor routing closures are
-counts of original scientific scopes covered on main. Every science batch used one combined validation;
-zero gate retries. The applied ledger remains unchanged.
-
-## Landed source history
+Eleven science batches have landed 45 new source notes. Each used one combined
+mechanical validation; zero gate retries. Full independent source/proof coverage,
+same-reviewer correction confirmation, actual input closure and preservation of
+current main remain required. The applied ledger is unchanged: no audit grade landed.
 
 | Landed unit | Main commit | Evidence |
 | --- | --- | --- |
@@ -71,9 +53,9 @@ together. That consolidation is not a scientific verdict or source landing.
 
 | Owner | Unit | Current state and next step |
 | --- | --- | --- |
-| Repair author, then original reviewer | #7984 including #7980 | Full review found eight corrections; narrow repairs are active on current main. Compose source and manifest before one combined affected confirmation. |
-| Reconciliation complete | Seven direct landings and 110 other closures | All 117 closed originals retain recoverable source; 86 pending closed scopes remain obligations at 12 open successors. No reopening indicated. |
-| Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
+| Independent reviewer and repair author | #7984 including #7980 | Full source/proof review found scope corrections; freeze findings and apply narrow fixes, then confirm affected source and integration. |
+| Separate preparer and independent reviewer | #8013 | Bounded closure prepared; independent full review of the new weak-coupling claim is active. Corrected #8009 is on main. |
+| Coordinator and draft reviewer | New submissions through #8025 | Current heads/files captured. Drafts through #8022 are ready or closed; later drafts remain to triage. Readiness is not science PASS. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
 | Held | Eta pair-process | Old additivity-registry pins and historical Git/status fixtures require current-premise reconciliation. No full source PASS. |
 | Held | Curved covariance | Actual closure reaches reserved science. No raw tower landing or full source PASS. |
@@ -97,17 +79,12 @@ gaps remain unknown rather than empty deltas.
 - Reuse full independent review only for exact unchanged source and premises;
   confirm affected corrections and interactions. Ready compatible batches depart
   without waiting for unrelated work or a collection timer.
-- Keep cleanup membership fixed to `BACKLOG_CUTOFF.json`; prioritize complete
-  original-PR science dispositions and report them separately from routing closures.
-- Update `BACKLOG_CLOSURE_RECONCILIATION.json` when a consolidated constituent
-  later lands. A closure action never permanently determines scientific coverage.
-  Carry every unresolved constituent obligation forward before closing a successor.
 - Compose corrected source and the manifest before the final affected review,
   so repairs and integration receive one confirmation handoff.
 
 These are observed repair patterns, not added audit stages. The measured gain is
 fewer repeated gates and reviews; queue reduction alone does not measure scientific
-progress. Incoming submissions are outside this cleanup; they do not expand its queue or completion target.
+progress. Incoming submissions are counted separately from original backlog work.
 
 ## Shared evidence
 
