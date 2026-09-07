@@ -1,0 +1,11 @@
+# Native heat source correction — 2026-09-07
+
+The original review of #8008 at `6da2088d2c379839b2dca3977843b33264cd8e30` found two narrow source issues. This dated correction preserves all51 original packet files, including failed allocation programs and historical review/specification/results, as provenance. No independent audit or retained status is assigned here.
+
+The arbitrary-weight Hilbert–Schmidt bound (D) now uses a nonstrict inequality. If either sampled weight is zero, both sides are zero; the previous strict statement would require0<0. The constant18, beta>=2048, t in[1/2,1], shifted endpoints and finite quadrature-norm hypotheses are unchanged. The actual sqrtW specialization stays strict because h²sumW<1, so the downstream heat and full top-eigenvalue arguments do not change.
+
+The killed-heat claim's native recurrence sibling is now registered in the diagnostic consumer, matching the existing graph entry. Current-main field and prior Record registrations, the complete two-sibling #8007 mapping, all prior functions and the governed normalized graph policy hash remain unchanged apart from this additive entry.
+
+No mathematical runner or cache changed: the three source files and all three canonical caches remain byte-identical to the original reviewed source. Their runtime closure remains self-contained; each reads only its own source hash. The source-only norm correction is therefore outside their execution inputs. Their original fresh151-check review run remains bound to the same bytes. Exact zero-weight and nonzero finite-matrix controls check the repaired general inequality and reject restoring the strict comparator; these are finite controls, with the general analytical proof in the note.
+
+The dependent proof uses the complete corrected #8007 unit, not a partial two-note import or historical review label. The multiplier evidence/label corrections preserve its mathematical statement and constants; the insertion note is unchanged. Final independent confirmation must bind the complete corrected parent and current-main source together. No new physical Wilson interpretation, spectrum, onset, excited-branch coefficient or numerical error certification is introduced.

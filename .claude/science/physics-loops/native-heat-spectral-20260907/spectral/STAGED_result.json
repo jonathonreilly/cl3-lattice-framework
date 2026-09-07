@@ -1,0 +1,39 @@
+{
+  "scope": "Exact symbolic support for full normalized native top coefficient; functional analytic heat/quadrature/Perron proof remains in source; no numerical eigenvalue or excited/physical-gap claim",
+  "checks": [
+    "native harmonic cubic",
+    "diffusion quadratic normalization",
+    "Gaussian generator normalization",
+    "actual harmonic Gaussian heat PDE",
+    "six-step leading diffusion symbol",
+    "six-step quartic heat correction",
+    "wrong half heat coefficient rejected",
+    "actual dilated multiplier derivative",
+    "wrong dilation sign rejected",
+    "shifted saddle subtraction",
+    "virial full coefficient substitution",
+    "full coefficient nonnegative decomposition",
+    "missing saddle factor rejected",
+    "Bernoulli critical points complete",
+    "Bernoulli fourth remainder supremum",
+    "Euler Maclaurin fourth constant",
+    "cell projection first moment",
+    "cell projection variance",
+    "cubic wall first boundary jet",
+    "cubic wall fourth order leading term",
+    "fourth derivative polynomial Gaussian envelope",
+    "nonvanishing wall derivative adverse control"
+  ],
+  "check_count": 22,
+  "relative_coefficient_lower": "7/16",
+  "spectral_remainder": "o(beta^-1)",
+  "source_sha256": "f36564244394ff196ffcc17e94f1a26d97c5055c586fabe2f4aebca7a7336790",
+  "dependencies": {},
+  "resources": {
+    "timeout_seconds": 180,
+    "rss_limit_MiB": 180,
+    "blas_threads": 1
+  },
+  "seconds": 1.138567999994848,
+  "rss_MiB": 65.296875
+}
