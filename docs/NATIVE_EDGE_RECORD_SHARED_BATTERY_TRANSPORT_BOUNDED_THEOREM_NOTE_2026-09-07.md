@@ -1,7 +1,7 @@
 ---
 claim_id: native_edge_record_shared_battery_transport_bounded_theorem_note_2026-09-07
 claim_type: bounded_theorem
-claim_scope: "Conditional shared continuous-battery dynamics for the fixed five-event open-cube native Record/CAR fixture with arbitrary nonstationary input and directly contracted battery energy. Controlled matter-only and laboratory-free dwells are distinguished. A dimension-independent observable bound and exact-rational ideal margins give sufficient controlled-protocol widths125 and260 for the stated current, density and energy tests. Width-one outcomes are finite observations. The carrier, preparation, apparatus, event model and schedule are supplied; spatially local autonomous realization and continuum matter are outside this theorem."
+claim_scope: "Conditional shared continuous-battery dynamics for the fixed five-event open-cube native Record/CAR fixture with arbitrary nonstationary input and directly contracted battery energy. Controlled matter-only and laboratory-free dwells are distinguished. A dimension-independent observable bound and exact-rational ideal margins give sufficient controlled-protocol widths 125 and 260 for the stated current, density and energy tests. Width-one outcomes are finite observations. The carrier, preparation, apparatus, event model and schedule are supplied; spatially local autonomous realization and continuum matter are outside this theorem."
 upstream_dependencies:
   - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
   - native_edge_record_local_cycle_transport_and_ledger_bounded_theorem_note_2026-09-05
@@ -33,6 +33,7 @@ packet_helper_runner:
   - scripts/native_edge_record_shared_battery_transport_independent_check_2026_09_07.py
   - scripts/native_edge_record_transport_ideal_margin_certificate_2026_09_07.py
 actual_current_surface_status: conditional-support
+conditional_surface_status: conditional-support
 target_claim_type: bounded_theorem
 claim_type_reason: "Explicit conditional apparatus formula and finite transport computation."
 trace_class: upstream_support
@@ -58,9 +59,10 @@ admitted_observation_status: null
 
 These are a dependency account, not a claim of five independent impossibility
 walls. No new axiom, primitive, empirical value or fitted selector is used.
-The inherited carrier and schedule are unratified parent dependencies; they
-must land before this stacked delta is reviewed, or be included in the same
-reviewed landing delta.
+The inherited carrier and schedule are unratified parent dependencies. Their
+source notes, runners and evidence are carried in this main-based landing
+delta and were included in the independent conditional-algebra review.
+Their original proposals are PR #7983 and PR #7996; no parent branch is edited.
 
 ## Frozen fixture and measurement times
 
@@ -501,7 +503,17 @@ reservoir and autonomous-generator routes remain constructive next work.
 
 ## Review record and reproducibility
 
-Review is in progress. The source-side record does not set an audit grade.
+Independent cold proof and code reviews found no blocking mathematical
+defect in equations (1)-(7), the rational enclosure, or the two finite
+representations. The code reviewer additionally integrated a nonstationary
+two-level joint wavefunction directly in battery energy, retaining the
+laboratory free phase. Density differences were below 1.3e-15 and direct
+battery-energy differences below 5e-14. The reviewers used GPT-6-Astra at
+low reasoning, following the user's setting. The final comparison interface passed incremental review, including malformed
+and failed subprocess controls. Initial repository pipeline, strict lint and
+changed-evidence readiness passed; final landing checks are recorded in the
+campaign review packet. This source-side
+record does not set an audit grade.
 The load-bearing runners are the declared primary, the independent
 one-particle/fixed-N checker, and the exact-rational ideal-margin certificate.
 All use a declared 180-second timeout. The primary and rational certificate
@@ -520,12 +532,29 @@ It belongs in `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
 `docs/audit/scripts/build_citation_graph.py`. The current
 `audit_science_fingerprint.py` contains the owner-approved claim-scoped
 registry normalization; every other builder byte remains governed. The
-review must verify the additive mapping and unchanged policy fingerprint
-before it is applied. Parent dependencies must be part of the reviewed
+review approved the additive mapping. Root integration verified its exact
+installation, preservation of every other registration, and unchanged
+governed builder fingerprint
+`235e8b82fd460d29f0798f13df129d2f896aa31d4c14566f179e200dc6194c5b`.
+Parent dependencies must be part of the reviewed
 landing tree. No audit ledger or effective-status surface is an author output.
 
 Canonical caches are generated only through
 `scripts/runner_cache.py` `execute_and_write_cache`, using each runner's
-declared timeout and final source bytes. The primary's exploratory threshold
-failures and their exit status must remain visible in the corresponding
-receipt; a failed invocation is not relabeled as successful evidence.
+declared timeout and final source bytes. The exploratory experiment source
+and its machine-written `nonzero_exit` receipt from commit `c1b7b95e8a`
+are preserved unchanged under
+`.claude/science/physics-loops/record-battery-transport-20260907/primary/historical/`.
+That invocation recorded three unmet width-one physical thresholds and zero
+numerical failures; it is not relabeled as successful evidence.
+
+The reviewed remedy gives the final primary a comparison-validation
+contract: numerical validity, the proved wider-packet requirements, and
+live agreement with the independently implemented checker on all forty
+prefix surfaces. The three width-one threshold failures remain printed
+as benchmark outcomes. Malformed or missing checker output, a failed
+checker execution, or a numerical disagreement is a validation failure.
+The primary's declared input closure binds the checker source bytes.
+A new receipt for this new contract is separate from the historical
+failed experiment receipt. Physical benchmark outcomes and successful
+comparison validation must not be conflated.

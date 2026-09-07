@@ -660,50 +660,36 @@ def construct_faithful_code(graph: Graph, bksf: BKSF, car: EvenCAR) -> FaithfulC
     if len(phases) != car.dimension:
         raise AssertionError("edge-pair flips did not connect the even sector")
 
-    # Raw-column checks are complete; phase alignment can reuse their storage.
-    aligned = raw
+    aligned = raw.copy()
     for column, bits in enumerate(car.basis):
         aligned[:, column] *= phases[bits]
 
-    # Check every matrix entry in column blocks.  The physical code has many
-    # more rows than columns; retaining full physical/direct comparison arrays
-    # unnecessarily multiplies its dense storage at the memory high-water mark.
-    column_block = 8
     generator_residual = 0.0
+    for vertex, physical_B in enumerate(bksf.B):
+        physical = apply_pauli(physical_B, aligned, dimension)
+        direct = aligned @ car.B[vertex]
+        generator_residual = max(generator_residual, float(np.max(np.abs(physical - direct))))
+    for edge_index, physical_A in enumerate(bksf.A_forward):
+        physical = apply_pauli(physical_A, aligned, dimension)
+        direct = aligned @ car.A_forward[edge_index]
+        generator_residual = max(generator_residual, float(np.max(np.abs(physical - direct))))
+
     loop_residual = 0.0
+    for stabilizer in stabilizers:
+        loop_residual = max(
+            loop_residual,
+            float(np.max(np.abs(apply_pauli(stabilizer, aligned, dimension) - aligned))),
+        )
+
     six_vertices = [0, 1, 3, 7, 6, 4]
     six_stabilizer = bksf.cycle(six_vertices)
-    physical_six_residual = 0.0
-    for start in range(0, car.dimension, column_block):
-        stop = min(start + column_block, car.dimension)
-        columns = aligned[:, start:stop]
-        for vertex, physical_B in enumerate(bksf.B):
-            physical = apply_pauli(physical_B, columns, dimension)
-            direct = aligned @ car.B[vertex][:, start:stop]
-            generator_residual = max(
-                generator_residual, float(np.max(np.abs(physical - direct)))
-            )
-        for edge_index, physical_A in enumerate(bksf.A_forward):
-            physical = apply_pauli(physical_A, columns, dimension)
-            direct = aligned @ car.A_forward[edge_index][:, start:stop]
-            generator_residual = max(
-                generator_residual, float(np.max(np.abs(physical - direct)))
-            )
-        for stabilizer in stabilizers:
-            loop_residual = max(
-                loop_residual,
-                float(np.max(np.abs(apply_pauli(stabilizer, columns, dimension) - columns))),
-            )
-        physical_six_residual = max(
-            physical_six_residual,
-            float(np.max(np.abs(apply_pauli(six_stabilizer, columns, dimension) - columns))),
-        )
+    physical_six = apply_pauli(six_stabilizer, aligned, dimension)
     direct_six = np.eye(car.dimension, dtype=np.complex128)
     for index, vertex in enumerate(six_vertices):
         direct_six = direct_six @ car.A(vertex, six_vertices[(index + 1) % 6])
     direct_six *= (1j) ** 6
     six_cycle_residual = max(
-        physical_six_residual,
+        float(np.max(np.abs(physical_six - aligned))),
         float(np.max(np.abs(direct_six - np.eye(car.dimension)))),
     )
     return FaithfulCode(

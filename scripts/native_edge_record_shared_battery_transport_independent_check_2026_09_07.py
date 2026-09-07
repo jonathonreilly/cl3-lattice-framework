@@ -16,11 +16,16 @@ uncontrolled laboratory evolution under H_j + H_B.  A separately
 preregistered FREE comparison uses that laboratory evolution and the derived
 endpoint map exp(-i t_j H_surface).  No battery reset occurs in either lane.
 
+--json emits unrounded measurements of all 40 surfaces and numerical validation
+status for live comparison; default text and exit semantics are unchanged.
+
 Declared execution envelope: one BLAS thread, 180 seconds, 256 MiB RSS.
 """
 
 from __future__ import annotations
 
+import json
+import sys
 import math
 import os
 import resource
@@ -443,6 +448,9 @@ def format_surface(surface: Surface) -> str:
 
 
 def main() -> int:
+    if sys.argv[1:] not in ([], ["--json"]):
+        raise SystemExit("usage: independent_check.py [--json]")
+    json_output = sys.argv[1:] == ["--json"]
     started = time.perf_counter()
     report = Report()
     full_mask = (1 << len(EDGES)) - 1
@@ -1060,7 +1068,32 @@ def main() -> int:
         f"elapsed={elapsed:.2f}s rss={rss:.1f}MiB limits={TIME_LIMIT_SECONDS:.0f}s/{RSS_LIMIT_MIB:.0f}MiB",
     )
     report.lines.append(f"TOTAL: PASS={report.passes} FAIL={report.failures}")
-    print("\n".join(report.lines))
+    if json_output:
+        payload = {
+            "schema": "shared-battery-surfaces-v1",
+            "validation_ok": report.failures == 0,
+            "surfaces": [
+                {
+                    "protocol": "free" if surface.label.startswith("FREE") else "controlled",
+                    "width": surface.packet_width,
+                    "step": surface.step,
+                    "edge": surface.edge,
+                    "side": "pre" if surface.label.endswith("_PRE") else "post",
+                    "resource": {"low": BATTERY_PACKET_LOW,
+                                 "mean": packet_mean(surface.packet_width),
+                                 "cap": packet_cap_high(surface.packet_width)},
+                    "densities": list(surface.densities),
+                    "currents": {str(edge): value for edge, value in surface.currents},
+                    "matter_energy": surface.matter_energy,
+                    "battery_energy": surface.battery_energy,
+                    "support": surface.support,
+                }
+                for surface in surfaces
+            ],
+        }
+        print(json.dumps(payload, allow_nan=False))
+    else:
+        print("\n".join(report.lines))
     return 1 if report.failures else 0
 
 

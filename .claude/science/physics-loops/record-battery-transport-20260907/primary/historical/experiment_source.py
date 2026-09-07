@@ -10,17 +10,10 @@ scalar reserve recurrence.
 
 The result is a conditional finite-fixture test.  It does not derive Record
 formation, the scheduler, the carrier, the battery preparation, or renewal.
-Exit status validates numerics, live independent agreement on all 40 surfaces,
-and the preregistered wide-packet guarantees. Width-one transport failures
-remain measured BENCHMARK outcomes; validation success does not assert those
-failed physical targets.
 """
 
 from __future__ import annotations
 
-import json
-import subprocess
-from pathlib import Path
 import math
 import os
 import resource
@@ -42,8 +35,6 @@ from scipy.integrate import quad
 from scipy.linalg import eigh
 
 
-AUDIT_INPUT_PATHS = ("scripts/native_edge_record_shared_battery_transport_independent_check_2026_09_07.py",)
-COMPARISON_TOL = 5.0e-8
 AUDIT_TIMEOUT_SEC = 180
 RSS_LIMIT_MIB = 180.0
 NUM_TOL = 3.0e-9
@@ -125,12 +116,11 @@ class Report:
     ) -> None:
         status = "PASS" if condition else "FAIL"
         kind = "PHYSICS" if physics else "NUMERIC"
-        prefix = "BENCHMARK " if physics else ""
-        self.lines.append(f"{prefix}{status} {family} {kind} {description}: {detail}")
+        self.lines.append(f"{status} {family} {kind} {description}: {detail}")
         if condition:
-            self.passes += int(not physics)
+            self.passes += 1
         else:
-            self.failures += int(not physics)
+            self.failures += 1
             if physics:
                 self.physics_failures += 1
             else:
@@ -718,87 +708,6 @@ def run_protocol(
     }
 
 
-def comparison_payload(results: list[dict[str, object]]) -> dict[str, object]:
-    """Export primary measurements without reading the independent measurements."""
-    surfaces = []
-    for result in results:
-        for row in result["rows"]:
-            for side, name in (("pre", "minus"), ("post", "plus")):
-                observed = row[name]
-                surfaces.append({
-                    "protocol": result["convention"],
-                    "width": result["packet_width"],
-                    "step": row["step"],
-                    "edge": row["edge"],
-                    "side": side,
-                    "resource": {"low": PACKET_LOW, "mean": result["packet_mean"],
-                                 "cap": result["battery_cap"]},
-                    "densities": list(observed["densities"]),
-                    "currents": {str(edge): value for edge, value in observed["currents"].items()},
-                    "matter_energy": observed["energy"],
-                    "battery_energy": row[name + "_surface"].battery_energy,
-                    "support": observed["support"],
-                })
-    return {"schema": "shared-battery-surfaces-v1", "validation_ok": True,
-            "surfaces": surfaces}
-
-
-def compare_payload(expected: object, actual: object, path: str = "root") -> float:
-    """Fail closed on schema, coverage, exact discrete fields, or nonfinite values."""
-    if isinstance(expected, dict):
-        if not isinstance(actual, dict) or expected.keys() != actual.keys():
-            raise ValueError(f"{path}: field/resource/current keys differ")
-        return max((compare_payload(value, actual[key], f"{path}.{key}")
-                    for key, value in expected.items()), default=0.0)
-    if isinstance(expected, list):
-        if not isinstance(actual, list) or len(expected) != len(actual):
-            raise ValueError(f"{path}: surface/observable count differs")
-        return max((compare_payload(a, b, f"{path}[{index}]")
-                    for index, (a, b) in enumerate(zip(expected, actual))), default=0.0)
-    if isinstance(expected, float):
-        if (type(actual) not in (float, int) or not math.isfinite(expected)
-                or not math.isfinite(actual)):
-            raise ValueError(f"{path}: nonfinite or nonnumeric value")
-        residual = abs(expected - actual)
-        # Packet resource declarations and widths are fixture keys, not estimates.
-        exact = ".resource." in path or path.endswith(".width")
-        if residual > (0.0 if exact else COMPARISON_TOL):
-            raise ValueError(f"{path}: disagreement {residual:.3e}")
-        return residual
-    if type(expected) is not type(actual) or expected != actual:
-        raise ValueError(f"{path}: discrete/status value differs")
-    return 0.0
-
-
-def validate_independent(results: list[dict[str, object]], started: float, report: Report) -> None:
-    try:
-        remaining = AUDIT_TIMEOUT_SEC - (time.perf_counter() - started)
-        if remaining <= 0:
-            raise ValueError("no time remains for independent checker")
-        child = subprocess.run(
-            [sys.executable, str(Path(__file__).resolve().parent / Path(AUDIT_INPUT_PATHS[0]).name), "--json"],
-            capture_output=True, text=True, timeout=remaining, check=True,
-        )
-        # Duplicate keys must not silently overwrite a failed status or measurement.
-        def unique_object(pairs):
-            result = {}
-            for key, value in pairs:
-                if key in result:
-                    raise ValueError(f"duplicate JSON key: {key}")
-                result[key] = value
-            return result
-        actual = json.loads(child.stdout, object_pairs_hook=unique_object)
-        expected = comparison_payload(results)
-        if len(expected["surfaces"]) != 40:
-            raise ValueError("primary fixture does not contain all 40 surfaces")
-        residual = compare_payload(expected, actual)
-        report.check("live_independent_agreement", "all 40 pre/post surfaces",
-                     True, f"max_residual={residual:.3e} tolerance={COMPARISON_TOL:.1e}; exact supports/resource keys")
-    except (OSError, ValueError, subprocess.SubprocessError) as error:
-        report.check("live_independent_agreement", "all 40 pre/post surfaces", False,
-                     f"{type(error).__name__}: {error}")
-
-
 def main() -> int:
     started = time.perf_counter()
     if any(argument != "--detail" for argument in sys.argv[1:]) or sys.argv[1:].count("--detail") > 1:
@@ -1018,6 +927,7 @@ def main() -> int:
             "preregistered sufficient-width gate",
             declared_gate,
             f"packet=[24,{24 + width}] pre={result['minus_supports']} post={result['plus_supports']} front={float(result['front_max']):.6f} rho=[{float(result['minus_density_min']):.4f},{float(result['minus_density_max']):.4f};{float(result['plus_density_min']):.4f},{float(result['plus_density_max']):.4f}] Emax={float(result['all_energy_max']):+.5f} original={original_gate} post={post_gate}",
+            physics=True,
         )
     report.lines.append(
         "INHERITED RECORD parent Q/code isometries give persistent labels and "
@@ -1042,7 +952,6 @@ def main() -> int:
                 "lattice_wide: checked and not executed - this finite one-cube fixture makes no multicell, thermodynamic, or continuum-matter claim.",
             )
         )
-    validate_independent(results + control_results, started, report)
     elapsed = time.perf_counter() - started
     rss = float(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
     if sys.platform == "darwin":
@@ -1067,7 +976,7 @@ def main() -> int:
         f"elapsed={elapsed:.2f}s timeout=180s rss={rss:.1f}MiB cap=180MiB",
     )
     report.lines.append(
-        f"SUMMARY validation_fail={report.failures} numerical_fail={report.numerical_failures} physical_fail={report.physics_failures} initial_E={initial_energy:+.6f} initial_EB=24.500000"
+        f"SUMMARY numerical_fail={report.numerical_failures} physics_fail={report.physics_failures} initial_E={initial_energy:+.6f} initial_EB=24.500000"
     )
     report.lines.append(f"TOTAL: PASS={report.passes} FAIL={report.failures}")
     print("\n".join(report.lines))

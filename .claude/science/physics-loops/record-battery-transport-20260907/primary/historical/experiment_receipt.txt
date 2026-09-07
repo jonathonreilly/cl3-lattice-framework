@@ -1,21 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/native_edge_record_shared_battery_transport_2026_09_07.py
-runner_sha256: 50d8a0f9812fd0b0d67b2735b133b396f75c819b10a375ebdba2e47727a05fea
-input_fingerprint_sha256: a54d0a4fc80176581c07f17f6dabbfb1c545c898803377391f91a218d09e1e17
+runner_sha256: ab0ae23cfdbd084dd3d6043c9bc94560d7b8160925d39a9083dcd8a9f3be4750
 timeout_sec: 180
-exit_code: 0
-elapsed_sec: 9.03
-status: ok
+exit_code: 1
+elapsed_sec: 1.23
+status: nonzero_exit
 ----- stdout -----
 PASS kernel_moments NUMERIC analytic sine overlap and mixed energy moment: quadrature_crosscheck=6.750e-14 width=1 mean=24.5
 PASS sector_spectrum NUMERIC fixed sector and spectral resolutions: dimension=70 groups=[5, 23, 23, 41, 41, 27] residual=3.609e-14
 PASS nonbridge_path NUMERIC frozen local path has five nonbridge events: order=(0, 3, 5, 6, 9) components=[1, 1, 1, 1, 1, 1]
 PASS controlled_shared_composition NUMERIC sequential energy-resolved and endpoint controls: component=3.89e-16 dwell=8.37e-17
 PASS controlled_state_ledger NUMERIC state, cap, battery moment and fixed-N checks: state=8.44e-15 deg=1.07e-14 first=1.12e-16 excess=0.607119 support=[10.144,38.856] drift=3.91e-14
-BENCHMARK FAIL controlled_pre_transport PHYSICS event-minus transport gate: supports=[7, 6, 5, 0, 2] front_max=0.135911
-BENCHMARK FAIL controlled_post_transport PHYSICS event-plus surviving-current gate: supports=[0, 5, 6, 5, 5] floor=0.02
-BENCHMARK PASS controlled_density PHYSICS event-minus and event-plus density window: minus=[0.1253,0.8747] plus=[0.4477,0.5498]
-BENCHMARK PASS controlled_negative_energy PHYSICS all event-minus and event-plus matter energies negative: all_max=-3.598118 post=[-5.738552,-3.598118]
+FAIL controlled_pre_transport PHYSICS event-minus transport gate: supports=[7, 6, 5, 0, 2] front_max=0.135911
+FAIL controlled_post_transport PHYSICS event-plus surviving-current gate: supports=[0, 5, 6, 5, 5] floor=0.02
+PASS controlled_density PHYSICS event-minus and event-plus density window: minus=[0.1253,0.8747] plus=[0.4477,0.5498]
+PASS controlled_negative_energy PHYSICS all event-minus and event-plus matter energies negative: all_max=-3.598118 post=[-5.738552,-3.598118]
 DATA controlled k=1 e=0 Jpre=+0.56895 Jm=+0.03575 S=7/0 E=-5.90591/-5.73855 EB=24.50000/24.33264 X=0.72555
 DATA controlled k=2 e=3 Jpre=-0.00400 Jm=+0.02593 S=6/5 E=-5.73855/-5.30647 EB=24.33264/23.90056 X=0.60712
 DATA controlled k=3 e=5 Jpre=+0.11051 Jm=+0.13591 S=5/6 E=-5.30647/-4.78321 EB=23.90056/23.37730 X=0.71075
@@ -23,19 +22,19 @@ DATA controlled k=4 e=6 Jpre=+0.00004 Jm=+0.00578 S=0/5 E=-4.78321/-4.19350 EB=2
 DATA controlled k=5 e=9 Jpre=+0.03856 Jm=-0.01900 S=2/5 E=-4.19350/-3.59812 EB=22.78759/22.19221 X=0.72541
 PASS free_shared_composition NUMERIC spectral endpoint and reduced free-dwell controls: component=2.66e-15 dwell=3.58e-16
 PASS free_state_ledger NUMERIC state, cap, battery moment and fixed-N checks: state=8.88e-15 deg=1.07e-14 first=1.12e-16 excess=0.582008 support=[10.144,38.856] drift=3.91e-14
-BENCHMARK PASS free_pre_transport PHYSICS event-minus transport gate: supports=[7, 6, 5, 4, 5] front_max=0.134999
-BENCHMARK FAIL free_post_transport PHYSICS event-plus surviving-current gate: supports=[0, 5, 7, 1, 4] floor=0.02
-BENCHMARK PASS free_density PHYSICS event-minus and event-plus density window: minus=[0.1253,0.8747] plus=[0.4420,0.5457]
-BENCHMARK PASS free_negative_energy PHYSICS all event-minus and event-plus matter energies negative: all_max=-3.564919 post=[-5.738552,-3.564919]
+PASS free_pre_transport PHYSICS event-minus transport gate: supports=[7, 6, 5, 4, 5] front_max=0.134999
+FAIL free_post_transport PHYSICS event-plus surviving-current gate: supports=[0, 5, 7, 1, 4] floor=0.02
+PASS free_density PHYSICS event-minus and event-plus density window: minus=[0.1253,0.8747] plus=[0.4420,0.5457]
+PASS free_negative_energy PHYSICS all event-minus and event-plus matter energies negative: all_max=-3.564919 post=[-5.738552,-3.564919]
 DATA free k=1 e=0 Jpre=+0.56895 Jm=+0.03575 S=7/0 E=-5.90591/-5.73855 EB=24.50000/24.33264 X=0.72555
 DATA free k=2 e=3 Jpre=+0.00185 Jm=+0.02670 S=6/5 E=-5.73855/-5.33158 EB=24.33264/23.92567 X=0.58201
 DATA free k=3 e=5 Jpre=+0.13987 Jm=+0.13500 S=5/7 E=-5.33158/-4.71962 EB=23.92567/23.31371 X=0.77434
 DATA free k=4 e=6 Jpre=+0.00171 Jm=-0.00301 S=4/1 E=-4.71962/-4.14227 EB=23.31371/22.73636 X=0.83597
 DATA free k=5 e=9 Jpre=-0.01988 Jm=-0.07972 S=5/4 E=-4.14227/-3.56492 EB=22.73636/22.15901 X=0.75861
 PASS controlled_width125_numerics NUMERIC independently priced width control: mean=86.5 cap=173 spectral_enclosure=[10.14,162.86] excess=0.5827 drift=7.82e-13
-PASS controlled_width125_physics NUMERIC preregistered sufficient-width gate: packet=[24,149] pre=[7, 6, 4, 6, 7] post=[6, 5, 4, 6, 6] front=0.255986 rho=[0.1253,0.8747;0.1259,0.8741] Emax=-3.58389 original=True post=True
+PASS controlled_width125_physics PHYSICS preregistered sufficient-width gate: packet=[24,149] pre=[7, 6, 4, 6, 7] post=[6, 5, 4, 6, 6] front=0.255986 rho=[0.1253,0.8747;0.1259,0.8741] Emax=-3.58389 original=True post=True
 PASS controlled_width260_numerics NUMERIC independently priced width control: mean=154.0 cap=308 spectral_enclosure=[10.14,297.86] excess=0.5827 drift=1.51e-12
-PASS controlled_width260_physics NUMERIC preregistered sufficient-width gate: packet=[24,284] pre=[7, 6, 4, 6, 7] post=[6, 5, 4, 6, 6] front=0.256209 rho=[0.1253,0.8747;0.1254,0.8746] Emax=-3.58385 original=True post=True
+PASS controlled_width260_physics PHYSICS preregistered sufficient-width gate: packet=[24,284] pre=[7, 6, 4, 6, 7] post=[6, 5, 4, 6, 6] front=0.256209 rho=[0.1253,0.8747;0.1254,0.8746] Emax=-3.58385 original=True post=True
 INHERITED RECORD parent Q/code isometries give persistent labels and 32 weight-1/32 histories; not counted as a fixed-N numerical check
 INHERITED FREE exact total-energy intertwining gives exp[-id*a]=exp[-id*(b+a-b)]; this algebraic identity is not a numerical check
 SCOPE controlled=supplied D_matter tensor I_battery; free=total H_matter+E_battery; sine[24,25], width1, cap49; --detail emits densities/currents x1e-4 (x=deleted)
@@ -44,10 +43,9 @@ per_site: checked - all eight site-number expectations are evaluated at every ev
 per_mode: checked - all grouped energy eigenspaces and their nonzero battery translations enter the continuum trace.
 per_block: checked - both five-event dwell conventions and the two preregistered controlled-width blocks are evaluated.
 lattice_wide: checked and not executed - this finite one-cube fixture makes no multicell, thermodynamic, or continuum-matter claim.
-PASS live_independent_agreement NUMERIC all 40 pre/post surfaces: max_residual=4.547e-13 tolerance=5.0e-08; exact supports/resource keys
-PASS execution_envelope NUMERIC runtime, memory and fixed thread limits: elapsed=8.70s timeout=180s rss=110.3MiB cap=180MiB
-SUMMARY validation_fail=0 numerical_fail=0 physical_fail=3 initial_E=-5.905910 initial_EB=24.500000
-TOTAL: PASS=13 FAIL=0
+PASS execution_envelope NUMERIC runtime, memory and fixed thread limits: elapsed=0.84s timeout=180s rss=116.8MiB cap=180MiB
+SUMMARY numerical_fail=0 physics_fail=3 initial_E=-5.905910 initial_EB=24.500000
+TOTAL: PASS=17 FAIL=3
 
 ----- stderr -----
 

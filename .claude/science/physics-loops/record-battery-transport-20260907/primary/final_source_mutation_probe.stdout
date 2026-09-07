@@ -1,0 +1,29 @@
+SCOPE mutations are wrong formulas/models on the frozen fixture; no parameter search or retuning
+MAP historical B0-B7=kernel,spectrum,path,dwell,degeneracy,moment,first-dwell,envelope; P2=density; P3=energy
+VARIANT stationary_dephase caught=True max_rho_distance=2.517582e-01 post_supports=[0, 0, 0, 0, 0]
+VARIANT fresh_reset_each_event caught=True max_rho_distance=2.011572e-01 minus_supports=[7, 6, 0, 0, 0] plus_supports=[0, 1, 0, 0, 0]
+VARIANT reverse_shift_battery_moment caught=True max_EB_deviation=4.615584e+00 max_ledger_drift=4.615584e+00
+VARIANT overlap_one_ideal distinct=True max_rho_distance=7.576185e-01 minus_supports=[7, 6, 4, 6, 7] plus_supports=[6, 5, 4, 6, 6] baseline_failures_remain_visible=P0,P1
+MUTATION B0 caught=True omit_sine_term_residual=3.183099e-01
+MUTATION B1 caught=True spectral_energy_shift_residual=7.812500e-03
+MUTATION B2 caught=True wrong_order=(1, 3, 5, 6, 9)
+MUTATION B3 caught=True reverse_dwell_phase_residual=2.511671e-01
+MUTATION B4 caught=True split_degenerate_energy_distance=3.696931e-02
+MUTATION B5 caught=True reverse_shift_ledger_drift=4.615584e+00
+MUTATION B6 caught=True anti_dwell_control_residual=1.467519e-01
+MUTATION B7 caught=True synthetic_elapsed=181s scope=predicate_only
+MUTATION P2 caught=True double_norm_density_range=[0.973596,1.026404]
+MUTATION P3 caught=True fixed_plus6_max=+2.401882 target_remains_Elt0
+MUTATION free_phase_sign caught=True endpoint_residual=4.075204e-01 forward_dwell_residual=1.467519e-01 max_rho_distance=1.260658e+00 minus_supports=[7, 6, 5, 4, 5] plus_supports=[0, 5, 7, 1, 4] front_max=0.134999 exact_prefix_changed=True self_consistent_ledger_drift=3.908e-14 limitation=ledger_alone_does_not_detect
+MUTATION free_input_output_swap caught=True endpoint_residual=1.732724e-01 forward_dwell_residual=3.357372e-02 max_rho_distance=3.906154e-01 minus_supports=[7, 5, 5, 7, 4] plus_supports=[0, 5, 6, 6, 2] front_max=0.429628 exact_prefix_changed=True self_consistent_ledger_drift=2.842e-14 limitation=ledger_alone_does_not_detect
+MUTATION width125_mean_as_width1 caught=True ledger_drift=62.000000 expected_center_error=62.000000 state_density_unchanged=True
+MUTATION width125_cap_as_49 caught=True spectral_high=162.856406 wrong_cap=49 excess_over_cap=113.856406
+MUTATION width125_kernel_as_width1 caught=True max_rho_distance=7.564556e-01 minus_supports=[7, 6, 5, 0, 2] plus_supports=[0, 5, 6, 5, 5] declared_gate_pass=False limitation=self_consistent_state_and_ledger_checks_do_not_identify_packet_width
+MUTATION width260_mean_as_width1 caught=True ledger_drift=129.500000 expected_center_error=129.500000 state_density_unchanged=True
+MUTATION width260_cap_as_49 caught=True spectral_high=297.856406 wrong_cap=49 excess_over_cap=248.856406
+MUTATION width260_kernel_as_width1 caught=True max_rho_distance=7.573471e-01 minus_supports=[7, 6, 5, 0, 2] plus_supports=[0, 5, 6, 5, 5] declared_gate_pass=False limitation=self_consistent_state_and_ledger_checks_do_not_identify_packet_width
+CONTROL broad_packet_to_ideal caught=True final_rho_distances=w1:7.459812e-01,w125:1.586766e-03,w260:3.713112e-04 criterion=d260<d125<d1 widths_are_only_preregistered_values
+LIMITATIONS internal physics thresholds need not catch every phase/timing mutation; exact prefix and composition controls are load-bearing
+HASH primary=ab0ae23cfdbd084dd3d6043c9bc94560d7b8160925d39a9083dcd8a9f3be4750
+HASH legacy_probe=8eb4614cc8bd3974d52acafcd7aea83b32fb479961891d5f7b7f6fddb08e002a
+HASH scratch=410644a929ade4f241fd7673c8430c98c0466abc13b125947a00d2eeb066a6cd

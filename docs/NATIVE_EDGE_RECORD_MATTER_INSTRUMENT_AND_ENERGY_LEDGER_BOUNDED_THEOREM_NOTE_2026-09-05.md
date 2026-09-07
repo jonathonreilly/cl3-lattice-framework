@@ -12,7 +12,7 @@ runner: scripts/native_edge_record_matter_instrument_2026_09_05.py
 
 **Type:** bounded_theorem
 
-**Status:** conditional-support; independent audit unset
+**Status:** proposed_retained
 
 **Audit:** unset; the independent audit lane owns any verdict.
 
@@ -522,19 +522,33 @@ mutation passed on its half-filled fixture and is explicitly excluded from the
 eleven effective mutations; the checker tests the full number dictionary and
 detects that defect. No unexecuted planned mutation is counted.
 
-Final source SHA-256 values are
+The original reviewed source SHA-256 values were
 `05bc527d2d865acca27f55ce66b909eee8aa136eb7ab8d6d337b210addcfcf56`
 (primary) and
 `ebfef71248595e1cf621ee0464622fbc1d104f8028595d5334a30eab2ad314df`
 (checker). Sources were committed before canonical execution. Root review
 corrected an open-box versus finite-regular-graph conflation and required
 conditional matter blocks to be normalized separately for the coherence
-witness. All reported results use the corrected final source bytes.
+witness. The shared carrier allocation repair below preserves every scientific output.
+
+The main-based integration evaluates every physical/direct comparison in
+eight-column blocks and reuses the raw isometry after its raw-column checks.
+All 128 columns, every generator and stabilizer, and the six-cycle remain
+checked at the original tolerances. Independent comparison gives bitwise
+equal full isometries and identical residuals/scientific stdout; corruption
+of the last column is detected in all 26 comparisons. A forced 181 MiB
+measurement still fails the unchanged 180 MiB envelope. Before repair a
+canonical replay failed only that envelope at 247.3 MiB. The new canonical
+replay is PASS=9 FAIL=0 at 103.5 MiB. Current primary source SHA-256 is
+`bb5ace7229147ba38d4f864c71ecc4a1b3a0ee5e9107783f91aa1cbd06b28263`; the independent checker source is unchanged. Original source and failed
+machine receipt remain in the integration packet.
 
 ## Review record and hard landing condition
 
-The reviewed scope and corrections are recorded above. Outstanding at landing:
-add the following exact claim-scoped helper entry to
+The reviewed scope and corrections are recorded above. This self-contained
+main-based integration carries the source from original PR #7983 at
+`4248f6f8a7ffc707d8e4b9bb8f7c0a798eda35c1`; it does not update that parent branch.
+The integration supplies the following reviewed claim-scoped helper entry to
 `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
 `docs/audit/scripts/build_citation_graph.py`:
 
@@ -544,9 +558,10 @@ add the following exact claim-scoped helper entry to
 ],
 ```
 
-This is a hard landing condition; the author branch does not edit the registry.
-Before publication the complete delta plus this literal mapping is tested in a
-disposable current-main tree. Readiness must name both changed sources and a
+This literal mapping remains a hard landing condition. The integration supplies
+it under the landed claim-scoped helper carveout, without changing audit policy.
+Before publication the complete delta plus this mapping must be tested against
+current main. Readiness must name both changed sources and a
 nonempty helper list containing the independent checker. It is a packet
 completeness check, not an audit verdict. The independent audit lane owns any
 scientific grade.

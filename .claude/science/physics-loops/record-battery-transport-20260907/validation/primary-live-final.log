@@ -1,12 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/native_edge_record_shared_battery_transport_2026_09_07.py
-runner_sha256: 50d8a0f9812fd0b0d67b2735b133b396f75c819b10a375ebdba2e47727a05fea
-input_fingerprint_sha256: a54d0a4fc80176581c07f17f6dabbfb1c545c898803377391f91a218d09e1e17
-timeout_sec: 180
-exit_code: 0
-elapsed_sec: 9.03
-status: ok
------ stdout -----
 PASS kernel_moments NUMERIC analytic sine overlap and mixed energy moment: quadrature_crosscheck=6.750e-14 width=1 mean=24.5
 PASS sector_spectrum NUMERIC fixed sector and spectral resolutions: dimension=70 groups=[5, 23, 23, 41, 41, 27] residual=3.609e-14
 PASS nonbridge_path NUMERIC frozen local path has five nonbridge events: order=(0, 3, 5, 6, 9) components=[1, 1, 1, 1, 1, 1]
@@ -45,9 +36,6 @@ per_mode: checked - all grouped energy eigenspaces and their nonzero battery tra
 per_block: checked - both five-event dwell conventions and the two preregistered controlled-width blocks are evaluated.
 lattice_wide: checked and not executed - this finite one-cube fixture makes no multicell, thermodynamic, or continuum-matter claim.
 PASS live_independent_agreement NUMERIC all 40 pre/post surfaces: max_residual=4.547e-13 tolerance=5.0e-08; exact supports/resource keys
-PASS execution_envelope NUMERIC runtime, memory and fixed thread limits: elapsed=8.70s timeout=180s rss=110.3MiB cap=180MiB
+PASS execution_envelope NUMERIC runtime, memory and fixed thread limits: elapsed=8.34s timeout=180s rss=119.8MiB cap=180MiB
 SUMMARY validation_fail=0 numerical_fail=0 physical_fail=3 initial_E=-5.905910 initial_EB=24.500000
 TOTAL: PASS=13 FAIL=0
-
------ stderr -----
-

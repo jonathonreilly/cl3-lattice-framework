@@ -1,8 +1,9 @@
 ---
 claim_id: native_edge_record_local_cycle_transport_and_ledger_bounded_theorem_note_2026-09-05
 claim_type: bounded_theorem
-claim_scope: "Conditional on the finite native edge/CAR carrier supplied by the stacked parent block, a supplied oriented endpoint-star port order, a supplied local phase pulse, supplied nonbridge Born/Lueders Record events, and five supplied dwell times, the open 2x2x2 fixed-N=4 CAR state has a five-event local Record front whose every prefix stays connected, obeys exact local continuity, retains at least four live edges with current magnitude at least 0.02, stays in the declared site-density range with negative energy and nonnegative fixed-N excess, and has exact scalar system-plus-ledger energy accounting (battery 4 to 1.677930). This is a finite existence/support probe; it does not derive event formation, a scheduler, renewal, a physical battery, continuum behavior, or TOE closure."
-upstream_dependencies: []
+claim_scope: "Conditional on the finite native edge/CAR carrier supplied by the carried parent source, a supplied oriented endpoint-star port order, a supplied local phase pulse, supplied nonbridge Born/Lueders Record events, and five supplied dwell times, the open 2x2x2 fixed-N=4 CAR state has a five-event local Record front whose every prefix stays connected, obeys exact local continuity, retains at least four live edges with current magnitude at least 0.02, stays in the declared site-density range with negative energy and nonnegative fixed-N excess, and has exact scalar system-plus-ledger energy accounting (battery 4 to 1.677930). This is a finite existence/support probe; it does not derive event formation, a scheduler, renewal, a physical battery, continuum behavior, or TOE closure."
+upstream_dependencies:
+  - native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05
 runner: scripts/native_edge_record_local_cycle_transport_2026_09_05.py
 ---
 
@@ -10,7 +11,7 @@ runner: scripts/native_edge_record_local_cycle_transport_2026_09_05.py
 
 **Date:** 2026-09-05
 **Type:** bounded_theorem
-**Status:** conditional-support; independent audit unset
+**Status:** proposed_retained
 **Audit:** unset; the independent audit lane owns any verdict.
 
 ## Target and scope
@@ -18,7 +19,7 @@ runner: scripts/native_edge_record_local_cycle_transport_2026_09_05.py
 The user's decisive test is whether repeated local Record formation can
 sustain a viable matter background with consistent energy accounting. This
 block packages a finite stress test of that question on the native physical
-edge carrier from the stacked parent work (PR #7983). It follows one supplied
+edge carrier from the original parent work (PR #7983). It follows one supplied
 local endpoint-star front through five nonbridge edge events, evolves the
 surviving CAR state between events, checks the local continuity identity, and
 keeps one scalar system-plus-ledger energy balance.
@@ -51,14 +52,18 @@ hypothetical_axiom_status: null
 admitted_observation_status: null
 ~~~
 
-The parent source is the native edge Record/CAR construction in PR #7983;
-the present branch is stacked on its head. No audit verdict, effective grade,
+The scientific carrier dependency is the
+[native edge Record/CAR construction](NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md)
+from original PR #7983 at `4248f6f8a7ffc707d8e4b9bb8f7c0a798eda35c1`.
+This local-cycle source originated in PR #7996 at
+`2ca16ee74d7a19b04b741e83be80434feb1cbe5b`. Both sources are carried in
+the self-contained main-based integration delta; neither parent branch is updated. No audit verdict, effective grade,
 axiom edit, primitive edit, fitted parameter, or empirical identification is
 introduced here.
 
 | Input or bridge | Treatment in this block | What remains open |
 |---|---|---|
-| Open 2x2x2 cube, BKSF edge carrier, CAR dictionary, real hopping coefficients | Inherited finite carrier from the stacked parent source | Derivation or selection of the carrier and a continuum limit |
+| Open 2x2x2 cube, BKSF edge carrier, CAR dictionary, real hopping coefficients | Inherited finite carrier from the carried parent source | Derivation or selection of the carrier and a continuum limit |
 | Local endpoint-star port order | Supplied table below | A physical local selector and its law |
 | Initial state and local phase pulse | Supplied finite preparation | Vacuum/preparation selection |
 | Five dwell times | Supplied finite schedule | Clock, rate, and autonomous scheduling |
@@ -117,7 +122,15 @@ dynamics, or an energy source model.
 
 ## Finite result
 
-The canonical primary execution reports TOTAL: PASS=8 FAIL=0. It finds
+The historical cached primary execution reports TOTAL: PASS=8 FAIL=0.
+A fresh execution on 2026-09-07 reports TOTAL: PASS=7 FAIL=1 solely because
+peak RSS was 191.1 MiB against the 180 MiB runner limit; all physics checks
+passed. The fresh independent checker reports TOTAL: PASS=5 FAIL=0.
+A second pre-repair canonical run also failed its memory check at 214.5 MiB.
+The reviewed allocation repair in the shared carrier now gives a fresh
+canonical PASS=8 FAIL=0 at 102.2 MiB, with the same 180 MiB limit and
+identical scientific outputs. Original source and failed receipts are
+preserved in the integration packet. The finite computation finds
 32 nonzero terminal Record-history branches, 31 nonbridge events, and maximum
 native history residual 1.066 times 10^-13. Every selected prefix is
 connected; seven live edges remain after the fifth deletion. The local
@@ -125,13 +138,18 @@ continuity residual is exactly zero.
 
 The transport and matter/ledger rows are:
 
-| step | edge | dwell | current before | current after | live support | energy before to after | battery after | density range |
+| step | edge | dwell | current before dwell | current after dwell, before deletion | live support before deletion | energy before to after | battery after | density range |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | 0 | 0.41 | +0.568950 | +0.035746 | 7 | -5.905910 to -5.748932 | 3.843022 | [0.1253, 0.8747] |
 | 2 | 3 | 0.37 | -0.080554 | +0.256277 | 6 | -5.748932 to -5.330961 | 3.425051 | [0.1993, 0.8007] |
 | 3 | 5 | 0.29 | +0.031440 | -0.005250 | 4 | -5.330961 to -4.768122 | 2.862212 | [0.3797, 0.7097] |
-| 4 | 6 | 0.23 | approximately 0 | -0.001859 | 4 | -4.768122 to -4.177400 | 2.271491 | [0.3892, 0.6269] |
-| 5 | 9 | 0.19 | +0.002007 | -0.030297 | 4 | -4.177400 to -3.583840 | 1.677930 | [0.3472, 0.6035] |
+| 4 | 6 | 0.23 | approximately 0 | -0.001859 | 6 | -4.768122 to -4.177400 | 2.271491 | [0.3892, 0.6269] |
+| 5 | 9 | 0.19 | +0.002007 | -0.030297 | 7 | -4.177400 to -3.583840 | 1.677930 | [0.3472, 0.6035] |
+
+The current and support columns are measured after dwell and before deletion,
+except the explicitly labeled pre-dwell current. Restricting each current-support set
+to surviving edges gives surviving-edge supports 6, 5, 4, 6, 6; their
+minimum is four. The deleted hopping carries no post-deletion current.
 
 Across the five post-event states, the minimum site density is 0.125304, the
 maximum is 0.874696, the minimum post-event energy is -5.748932, and the
@@ -156,7 +174,7 @@ The executable evidence is pinned in the
 and
 [checker cache](../logs/runner-cache/native_edge_record_local_cycle_transport_independent_check_2026_09_05.txt).
 The packet bookkeeping is in the
-[block06 pack](../.claude/science/physics-loops/record-matter-block06-local-cycle-20260905/).
+[block06 handoff](../.claude/science/physics-loops/record-matter-block06-local-cycle-20260905/HANDOFF.md).
 
 The finite witness does not establish any of the following:
 
@@ -173,3 +191,21 @@ The finite witness does not establish any of the following:
 The next unlock is therefore an autonomous formation/renewal mechanism and a
 physical energy apparatus tested on this same carrier. Those are explicit
 follow-on obligations, not hidden assumptions promoted by this result.
+
+## Reviewed helper mapping and hard landing condition
+
+The self-contained integration supplies this reviewed literal claim-scoped
+entry in `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
+`docs/audit/scripts/build_citation_graph.py` under the landed helper carveout:
+
+```python
+"native_edge_record_local_cycle_transport_and_ledger_bounded_theorem_note_2026-09-05": [
+    "scripts/native_edge_record_local_cycle_transport_independent_check_2026_09_05.py",
+],
+```
+
+This mapping is a hard landing condition, with no audit-policy change. Before
+publication the complete delta and mapping must pass packet completeness
+checks against current main, identifying both source runners and a nonempty
+helper list containing the independent checker. These checks assign no audit
+verdict; the independent audit lane owns the scientific grade.
