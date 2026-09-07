@@ -1,0 +1,2 @@
+# History
+Root and native proofs froze independently after candidate exposure. Boundary alignment switched root from periodic0412040 to0411042eq16 for the same selected state, preserving earlier bytes. Native original contact wording was clarified to FDD/no topology and real tests, preserving original and exact diff. Independent primary and root contact proofs use spacing3, native spacing2; no retuning or numerical fit. All originals and latest versions preserved.

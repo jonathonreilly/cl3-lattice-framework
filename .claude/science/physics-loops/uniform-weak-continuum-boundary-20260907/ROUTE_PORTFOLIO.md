@@ -1,0 +1,2 @@
+# Routes
+Uniform exponential clustering plus polynomial normalization closes the separated-correlation boundary. Pairwise smearing preserves polynomial weights. Exact Haar disjoint plaquettes provide the positive contact sharpness route. Gap/LR ratio yields only a conditional clock-scale tradeoff, not actual speed identification. Leaving the uniform window is a possible next hypothesis change, not a demonstrated continuum solution.
