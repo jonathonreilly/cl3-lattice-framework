@@ -1,38 +1,38 @@
-# Autonomous campaign handoff
+# Continuous autonomous formation campaign
 
-Campaign active until2026-09-07T22:59:43Z. All subagents use Astra low per
-user steering; runtime permits three workers alongside root. Original dirty
-workspace remains untouched. First milestone PR8001 is open and main workflow
-f6f861e8f0 is integrated in707d7a9c7f. This second branch is its successor.
+Active until2026-09-07T22:59:43Z. All subagents are GPT-6-Astra low; three
+workers run alongside root. Original dirty workspace is untouched. PR8001
+is open; main workflow f6f861e8f0 is integrated. This successor branch carries
+committed block02 at986c69c5b6 and is assembling related science before its
+next milestone PR. No audit verdict or science merge is authorized by these
+source-side validations.
 
-The fixed head/fuel generator proof and all90transport surfaces have been
-independently checked. Native finite ladder checks actual full energy
-distribution invariance and bridge/refusal cases. The sign-summed battery
-positivity lemma is safe-domain only. The frozen actual generator fails all
-24complete-path pre-support comparators, while its front maximum passes24/24.
-Matched A/B/C/D comparisons independently agree on360surfaces: allpre support
-passes0/24,24/24,16/24,12/24. This nonadditivity is the next scientific discriminator.
+Block02 is complete: full pipeline24e2e9fb54e6, strict lint and development
+readiness passed. Five canonical runners bind the fixed generator,90baseline
+surfaces and360ablation surfaces. Actual baseline complete pre-support passes
+remain0/24; A/B/C/D passes remain0/24,24/24,16/24,12/24. See FINAL_VALIDATION.md.
 
-Source note proposes a conditional bounded theorem; no audit verdict is set.
-Five executable sources and canonical receipts are being finalized. Native,
-transport and note-proof reviews pass; portable ablation interface review
-found narrow exact-type checks now being repaired. Root appended stdout-only
-resolution scope lines to baseline primary, leaving physics and JSON unchanged.
-The graph builder has one additive four-helper registration; the manifest and
-full pipeline are not yet regenerated for this new note. Do not label them passed.
+Block03 uses K_ez c_w†c_v with all original numerical parameters fixed. Three
+canonical runners now pass: live independent45post states,292configuration
+records and46trap classes, direct waiting/energy quadratures, and120new native
+finite-ladder assertions. Independent methods agree on diagnostic observables,
+not the complete70-by70 density matrices. Initial dark mass is1/2; event4
+reach is0.133302652536 and support-passing unconditional mass0.094475375268.
+Negative battery drift and conditionalQ filtering are checked directly.
+No pre-event instrument convention is supplied. Source scope was corrected
+after cold proof review; full pipeline0d6e1463cb0c, strict lint and both
+source-readiness rows pass. See occupation-feedback/FINAL_VALIDATION.md.
 
-Related discovery block3 now changes the operator law to K_ez c_w†c_v, coupling
-formation to occupation. Independent derivations agree on total-energy-fiber
-reduction, dark mass and state-dependent path weights. Previous positive
-battery drift does not transfer; an actual native finite-ladder witness gives
-negative drift(1-sqrt2)/2. The45post-event primary is complete in scratch; its
-independent orbital/quadrature checker is running. No pre-event instrument
-convention is adopted, no parameters tuned, and all dark/trapped mass stays
-visible. Conditional path energy is conditioned rather than equated to the
-unconditional initial mean. Review those exact obligations before packaging.
+Block04 is provisional constructive work in scratch. A common ambient native
+Hamiltonian removes explicit chronological system storage by CPTP erasure,
+retaining environmental timed records. Local whole-hopping truncation has LR
+and sine-battery tail bounds. Complete-instrument energy transfer has a norm
+bound Delta+t independent of matter volume. Exact positive-cap completion has
+refusal; local approximation generally changes exact energy conservation.
+These are separate guarantees. Independent cross-review, explicit uniform LR
+constants and repeated intermediate-cap refusal control are active. Continuous
+battery, head/fuel preparation, bath and renewal remain supplied or open.
 
-Keep related discoveries together until the next meaningful milestone.
-Next action: finish independent occupation-feedback check and inspect whether
-its current support trades against reached mass; then decide the strongest
-physical locality/renewal residual. Do not stop merely because one finite route
-traps or one review PR is complete.
+Continue meaningful science; do not stop at a finite failure or a ready PR.
+Heavy negative-packet five-family quota is not satisfied and is not claimed;
+ordinary conditional development readiness is a separate mechanical contract.

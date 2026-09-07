@@ -26,6 +26,6 @@ contracts pass under180seconds and180MiB per scientific runner. Baseline
 71support-surface failures and0/24complete pre-support passes remain visible.
 A/B/C/D complete pre-support passes remain0/24,24/24,16/24,12/24.
 
-Related occupation-feedback calculations agree independently but remain
-provisional preparation in this commit; their portable source integration
-and new scientific note are the next coherent campaign work.
+Occupation-feedback source integration is now separately validated; see
+occupation-feedback/FINAL_VALIDATION.md. This file preserves the block02
+validation scope and checkpoint.

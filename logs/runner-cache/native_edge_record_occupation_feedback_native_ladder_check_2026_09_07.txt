@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_occupation_feedback_native_ladder_check_2026_09_07.py
+runner_sha256: 14fcd9f3d7c1ee22c5df85698af2056b327ac40244b32e7d6b3a4bf81a1f417c
+input_fingerprint_sha256: 664588b2ce05af43aa6aaf422f6e3c9c9f78068f44110f342c81cc1b8df1b35d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+NATIVE OCCUPATION FEEDBACK: square, opposite unit dimers, fuel gap1, retained battery0..33; no identity refusal
+STATE {"occupations_x0": [1, 0, 0, 1], "occupations_x1": [0, 1, 0, 1], "relative_phase": "x1=T01*x0", "coefficients": [-0.3826834323650898, 0.9238795325112867], "joint_embedding": "sum_a Pi_a chi tensor |20-a>, with full system A=H_live+4 I", "total_energy": 20, "particle_number": 2, "fuel_gap": 1, "battery_levels": [0, 33], "hopping_edges": [[0, 1], [2, 3]], "head": 0, "rayleigh_expected": [[1, 0.5], [0.5, 0]], "no_jump_time": 0.73}
+DRIFT {"actual_matrix": [[1.0000000000000029, 0.5000000000000002], [0.5000000000000002, -7.563394355258882e-16]], "negative_eigenvalue": -0.2071067811865479, "battery_rate_commutator": 1.0}
+NOJUMP {"time": 0.73, "physical_matrix_exponential_matches_fiber": true, "dark_survival": 0.8535533905932742}
+CONDITIONAL_ENERGY {"model": {"input_A": [[1.0, 1.0], [1.0, 1.0]], "output_A": [[0.0, 0.0], [0.0, 0.0]], "directed_J": [[0.0, 0.0], [1.0, 0.0]], "active_total_energy": 10, "dark_total_energy": 20, "mixture_weights": [0.5, 0.5]}, "observations": {"unconditional": 14.999999999999993, "first_event": 10.0, "event_probability": 0.4999999999999996}}
+PASS literal total-energy matrix intertwiners and every spectral-indicator GKSL adjoint; native N/old Records and post-hop bridge parity
+MUTATIONS {"wrong_scalar_degree_nojump": "wrong_scalar_degree_nojump: 0.23932684001688218", "fake_identity_refusal_rate": "fake_identity_refusal_rate: 2.0", "omit_battery_anticommutator": "omit_battery_anticommutator: 2.696699141100902"}
+PASS new_assertions=120 carrier_assertions=40 worst=1.112e-14
+COUNTER_SCOPE On-demand assertions inside imported branches/lift functions only; baseline main and its full census were not executed.
+per_element: checked native directed-edge effects and actual energy-shifted jump matrix entries on the finite ladder.
+per_site: checked all four native occupation labels for the N2 witness and old physical edge Record persistence.
+per_mode: checked commensurate sector spectra and every modeled total-energy spectral indicator on the finite battery.
+per_block: checked initial and reachable bridge sectors, actual no-jump matrices, and separate correlated two-state energy filtering.
+lattice_wide: checked and not executed -- this finite square witness does not compute the full cube or an infinite-lattice feedback law.
+RESOURCES {"seconds": 0.3536810420046095, "rss_MiB": 107.796875, "contract": {"timeout_seconds": 180, "blas_threads": 1, "rss_limit_MiB": 180}}
+SOURCE_SHA256 14fcd9f3d7c1ee22c5df85698af2056b327ac40244b32e7d6b3a4bf81a1f417c
+DEPENDENCIES {"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py": "fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af"}
+SCOPE Native square N2, opposite dimer hopping, fuel gap1, retained ladder0..33; separate two-state correlated selection; not full cube computation
+
+----- stderr -----
+

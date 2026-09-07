@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_occupation_feedback_orbital_check_2026_09_07.py
+runner_sha256: 84338de0461f472ebdba013c2924fb57be918c62e1cab6f73fcda17a6d4cc387
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.06
+status: ok
+----- stdout -----
+OCCUPATION FEEDBACK: Post-event conditional states; all reach/dark/trap mass retained. Headempty dark refers to the TOTAL-ENERGY-FIBER occupation dictionary, not bare physical occupation. Supplied changed law, no optimization or nonnegative battery drift theorem.
+DATA post1 prefixes=3 mass=0.4999999999999994
+DATA post2 prefixes=6 mass=0.34340647694140747
+DATA post3 prefixes=12 mass=0.19580265253619694
+DATA post4 prefixes=24 mass=0.13330265253619705
+VALIDATION {}
+per_element: checked all live-edge currents on all45 post-event conditioned prefixes.
+per_site: checked all eight densities and fixedN4 on every positive-probability prefix.
+per_mode: checked full fixedN occupation/spectral coherences and all zero-gap rate-tuple terms.
+per_block: checked conditioned totalQ and direct battery energy, all292 exact configuration-prefix records and complete dark/trap census.
+lattice_wide: checked and not executed -- finite supplied feedback law does not resolve infinite-lattice formation, locality, entropy or renewal.
+SOURCE_SHA256 84338de0461f472ebdba013c2924fb57be918c62e1cab6f73fcda17a6d4cc387
+TIMING {"seconds": 4.953752708999673, "peak_rss_MiB": 96.296875, "timeout_seconds": 180, "blas_threads": 1, "rss_limit_MiB": 180}
+TOTAL: PASS FAIL=0
+
+----- stderr -----
+
