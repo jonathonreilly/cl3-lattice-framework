@@ -12,24 +12,22 @@ reservations #6379, #6858 and #6859 are all non-draft and remain in force.
 
 | Work | Frozen source / owner | Status |
 |---|---|---|
-| First cumulative science unit | #8001 at `707d7a9c7f929c1c2c16078dfed76acb786e5f3b`, carrying #7983/#7996; Astra xhigh independent reviewer | Full source, inherited claims, runners and supporting-tool delta under review. No final acceptance yet. |
-| All draft PRs | 37 frozen heads in OPEN_PR_INVENTORY.json; separate Astra xhigh reviewer | Actual source/delta triage underway; ready-or-close recommendations need coordinator verification and current-head checks before action. |
-| Faster review contract | `process/coherent-backlog-review-20260907`, base `f6f861e8f0c7870b3a9a200a020ec5ca0b14be38`; separate Astra xhigh author | Candidate implementation/testing in progress. Fresh adversarial review required before use. |
+| First cumulative science unit | #8001 at `707d7a9c7f929c1c2c16078dfed76acb786e5f3b`, carrying #7983/#7996; Astra xhigh independent reviewer | Independent source review PASS after one confirmed preparation-memo correction: all 97 paths classified, seven runners passed, 19 semantic mutations rejected. Mechanical landing checks pending. |
+| All draft PRs | 37 frozen heads in OPEN_PR_INVENTORY.json; separate Astra xhigh reviewer | All 37 source/delta dispositions reviewed: 21 close, 16 ready. First 19 actions verified (16 closed, three ready); remaining actions use exact-head guards. |
+| Faster review contract | `process/coherent-backlog-review-20260907`, base `f6f861e8f0c7870b3a9a200a020ec5ca0b14be38`; separate Astra xhigh author | Seven-file candidate complete; 133 focused tests passed. Fresh Astra xhigh adversarial review in progress before use. |
 
-No backlog PR has yet been landed or closed by this campaign. Completed
-actions and their exact main commits/PR heads will replace this statement.
+No backlog science has yet landed. The first 19 draft actions are verified in
+[DRAFT_DISPOSITIONS.json](DRAFT_DISPOSITIONS.json); all 37 reviewed dispositions
+and exact heads are recorded there. The coordinator independently checked 396
+source blobs across 17 duplicate drafts against their frozen successors. Two
+additional old drafts are semantically covered by stronger current-main Cycles
+979/983. An empty status reversal and an unexecuted plan complete the 21 planned
+closures. Preserve all branches; duplicate closure does not mean source landed.
+
+The 16 ready decisions open reviewable archive/science packets, with source
+repair obligations carried forward. In particular #7870, #7871, #7836 and
+#7966 have material findings. Queue readiness grants no scientific PASS.
 Review findings hold the affected claim or unit, not unrelated checked work.
-
-The first 19 draft dispositions are recorded in
-[DRAFT_DISPOSITIONS.json](DRAFT_DISPOSITIONS.json), pending current-head
-verification/action. The coordinator independently compared all 337
-non-generated changed files of 14 duplicate source/Eta drafts with the frozen
-non-draft #7827 successor: every blob matches. Closing those review duplicates
-preserves their original branches and does not mean their source landed.
-The other decisions close one empty status reversal and one unexecuted plan,
-and mark three useful archive/science packets ready with explicit repair
-obligations. Drafts #7870 and #7871 have material scope/stale-source hazards
-to fix during full review; their queue readiness is not a scientific PASS.
 
 ## Preservation and routing
 
