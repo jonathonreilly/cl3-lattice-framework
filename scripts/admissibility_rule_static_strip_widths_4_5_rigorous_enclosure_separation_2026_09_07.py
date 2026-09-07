@@ -687,14 +687,14 @@ def identify(S: Strip, mc, vecs, E: dict, cap_sec: int = 60) -> dict:
 
 # ==================================================================== family A
 def family_a(checks: Checks, note_text: str, axiom_text: str, parent_text: str) -> None:
-    checks.check("A1", all((ROOT / p).is_file() for p in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 3, "the three declared audit inputs exist (this note, the axiom memo, block 02's note)")
+    checks.check("A1", all((ROOT / p).is_file() for p in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 3, "the three declared inputs exist (this note, the axiom memo, block 02)")
     flat_ax = normalize_text(axiom_text)
     checks.check("A2", all(nd in flat_ax for nd in AXIOM_NEEDLES), "the six axiom sentences used are present verbatim in the axiom memo")
     flat_parent = normalize_text(parent_text)
-    checks.check("A3", PARENT_CLAIM_ID in flat_parent and PARENT_FRAGMENT in flat_parent and "deep-row" in PARENT_FRAGMENT, "block 02's claim id and its deep-row-law fragment are present in block 02's note")
+    checks.check("A3", PARENT_CLAIM_ID in flat_parent and PARENT_FRAGMENT in flat_parent and "deep-row" in PARENT_FRAGMENT, "block 02's claim id and deep-row fragment present")
     flat_note = normalize_text(note_text)
     checks.check("A4", CLAIM_ID in flat_note and Path(__file__).name in flat_note, "this note carries its claim id and names this runner")
-    checks.check("A5", not any("TWO_SITE_BLOCK" in p or "MONOTONE_ORDER" in p or "UNIQUENESS_REGION" in p for p in AUDIT_INPUT_PATHS), "blocks 03-05 are not inputs (the premises are blocks 01-02's only)")
+    checks.check("A5", not any("TWO_SITE_BLOCK" in p or "MONOTONE_ORDER" in p or "UNIQUENESS_REGION" in p for p in AUDIT_INPUT_PATHS), "blocks 03-05 are not inputs")
 
 
 # ==================================================================== family B
@@ -703,7 +703,7 @@ def family_b(checks: Checks, strips: dict) -> None:
     same = all(strips[(W, TRIPLES[0])].n == strips[(W, TRIPLES[1])].n for W in (2, 3, 4, 5))
     if mut("orbit_count_wrong"):
         counts[5] += 1
-    checks.check("B1", counts == {2: 3, 3: 8, 4: 38, 5: 178} and same, f"row orbits under G (order 48): {counts[2]}, {counts[3]}, {counts[4]}, {counts[5]} at widths 2, 3, 4, 5, the same at both triples")
+    checks.check("B1", counts == {2: 3, 3: 8, 4: 38, 5: 178} and same, f"row orbits under G (order 48): {counts[2]}, {counts[3]}, {counts[4]}, {counts[5]} at widths 2-5, both triples")
     comm = True
     for tr in TRIPLES:
         S = strips[(4, tr)]
@@ -724,7 +724,7 @@ def family_b(checks: Checks, strips: dict) -> None:
                 img = S5.T_row(act(e, rep))
                 if any(img[S5.index[act(e, r2)]] != base[k] for k, r2 in enumerate(S5.rows)):
                     comm = False
-    checks.check("B2", comm, "T(g rho, g rho') = T(rho, rho') for all 48 maps: every orbit representative against all 1296 rows at width 4; two representatives against all 7776 rows at width 5; both triples")
+    checks.check("B2", comm, "T(g rho, g rho') = T(rho, rho'), all 48 maps: every representative x all 1296 rows (W=4); two representatives x 7776 rows (W=5)")
     rid = True
     for W in (4, 5):
         for tr in TRIPLES:
@@ -746,7 +746,7 @@ def family_b(checks: Checks, strips: dict) -> None:
                     rid = False
             if sum(S.sizes) != M ** W or sum(S.n_edge) != M ** (W - 1) or sum(S.n_inner) != M ** (W - 1):
                 rid = False
-    checks.check("B3", rid, "Q is representative-independent (rebuilt from a second representative of every orbit), R_OO' |O'| = |O| Q_OO' on every pair, orbit sizes sum to 6^W, parallel counts to 6^(W-1); widths 4, 5, both triples")
+    checks.check("B3", rid, "Q representative-independent (second representative of every orbit); R_OO' |O'| = |O| Q_OO'; sizes sum to 6^W, parallel counts to 6^(W-1)")
     sec_ok = True
     kron_ok = True
     for tr in TRIPLES:
@@ -768,8 +768,8 @@ def family_b(checks: Checks, strips: dict) -> None:
             fi, fe = full_center_value(S5, n_rows)
             if si != fi or se != fe:
                 sec_ok = False
-    checks.check("B4", kron_ok, "the tensor-structured full-state transfer equals the explicit T on three vectors (left and right actions), width 4, both triples")
-    checks.check("B5", sec_ok, "the sector's finite-n center-row statistics equal the full-state ones: width 4 at n = 3, 5, 7 and width 5 at n = 3, 5; edge and innermost pairs; both triples (20 exact equalities)")
+    checks.check("B4", kron_ok, "the tensor-structured full-state transfer equals the explicit T on three vectors, both actions, W=4")
+    checks.check("B5", sec_ok, "sector center-row statistics = full-state ones: W=4 at n = 3, 5, 7; W=5 at n = 3, 5; both pairs, both triples (20 equalities)")
 
 
 # ================================================== the contract's literals (integers at a stated scale; no floats)
@@ -811,7 +811,7 @@ def family_c(checks: Checks, strips: dict, enc: dict, report: dict) -> None:
             Q[0][1] += 1
         if not all(S.w[o] * Q[o][q] == S.w[q] * Q[q][o] for o in range(S.n) for q in range(S.n)):
             sa = False
-    checks.check("C1", sa, "w_O Q_OO' = w_O' Q_O'O on every pair of orbits (38^2 and 178^2), both triples: Q is self-adjoint for the weights w = |O| A")
+    checks.check("C1", sa, "w_O Q_OO' = w_O' Q_O'O on every orbit pair (38^2, 178^2), both triples: Q self-adjoint for w = |O| A")
     checks.check("C2", all(enc[c]["trQ2"] == TRQ2_LIT[c] for c in CASES), "tr(Q^2) = 28006524928, 250087391159985, 16238809878528, 1948759036672266913")
     cw = True
     for c in CASES:
@@ -821,7 +821,7 @@ def family_c(checks: Checks, strips: dict, enc: dict, report: dict) -> None:
             lo, hi = hi + 1, hi + 2
         if not (lo > 0 and lo <= mu <= hi and floor_scaled(lo, 18) == LAM_LIT[c][0] and ceil_scaled(hi, 18) == LAM_LIT[c][1]):
             cw = False
-    checks.check("C3", cw, "the two-sided ratio bounds after 40 powers: 0 < lo <= mu <= hi, and the 18-digit outward labels of lambda_1 are the contract's at all four cases")
+    checks.check("C3", cw, "ratio bounds after 40 powers: 0 < lo <= mu <= hi; 18-digit outward labels of lambda_1 are the contract's, four cases")
     kr = True
     for c in CASES:
         W, tr = c
@@ -837,7 +837,7 @@ def family_c(checks: Checks, strips: dict, enc: dict, report: dict) -> None:
         report[("krylov", c)] = {"d": d, "mc": mc, "vecs": vecs, "verified": verified, "primes": nprimes, "digits": max(len(str(abs(x))) for x in mc)}
         if d_rep != KRYLOV_LIT[c] or not verified:
             kr = False
-    checks.check("C4", kr, "the Krylov dimension of Q on 1 is 8, 30, 16, 111 (independence mod 2^61-1 and 2^89-1; the integer dependency m_1(Q) 1 = 0 verified exactly on every orbit at all four cases)")
+    checks.check("C4", kr, "Krylov dimension of Q on 1 = 8, 30, 16, 111 (ranks mod 2^61-1, 2^89-1; integer dependency m_1(Q) 1 = 0 verified on every orbit, four cases)")
     cp_ok = True
     for tr in TRIPLES:
         S = strips[(4, tr)]
@@ -850,7 +850,7 @@ def family_c(checks: Checks, strips: dict, enc: dict, report: dict) -> None:
             m1 = m1 + sp.Poly(lam ** (K["d"] - 1), lam, domain="QQ")
         if degs != sorted(CHARPOLY_DEGREES_LIT[tr]) or not any(P_ == m1 for P_ in factors):
             cp_ok = False
-    checks.check("C5", cp_ok, "width 4: the characteristic polynomial of Q factors with degrees [1, 1, 2, 8] and [1, 1, 1, 5, 30], and the relative minimal polynomial m_1 is its factor of degree d")
+    checks.check("C5", cp_ok, "W=4: charpoly factor degrees [1, 1, 2, 8] and [1, 1, 1, 5, 30]; m_1 is the factor of degree d")
     irr = True
     for c in CASES:
         K = report[("krylov", c)]
@@ -863,7 +863,7 @@ def family_c(checks: Checks, strips: dict, enc: dict, report: dict) -> None:
         K["irreducible"] = len(fl) == 1 and sp.Poly(fl[0][0], lam).degree() == K["d"]
         if not K["irreducible"]:
             irr = False
-    checks.check("C6", irr and report[("krylov", (5, (5, 2, 4)))]["irreducible"] is None, "m_1 is irreducible over Q at d = 8, 30, 16 (executed); at d = 111 factorization is not attempted and nothing is claimed")
+    checks.check("C6", irr and report[("krylov", (5, (5, 2, 4)))]["irreducible"] is None, "m_1 irreducible over Q at d = 8, 30, 16; at d = 111 factorization not attempted, nothing claimed")
     roots_ok = True
     for c in CASES:
         K = report[("krylov", c)]
@@ -877,7 +877,7 @@ def family_c(checks: Checks, strips: dict, enc: dict, report: dict) -> None:
         K["root_counts"] = (inside, above)
         if inside != 1 or above != 0:
             roots_ok = False
-    checks.check("C7", roots_ok, "at d = 8, 30, 16 exactly one real root of m_1 lies in [lo, hi] and none lies above hi (Sturm counts): the largest root is the Perron root")
+    checks.check("C7", roots_ok, "d = 8, 30, 16: exactly one real root of m_1 in [lo, hi], none above hi (Sturm counts)")
 
 
 # ==================================================================== family D
@@ -898,7 +898,7 @@ def family_d(checks: Checks, strips: dict, enc: dict, report: dict, exact: bool)
             side = False
         if exact:
             say(f"exact W={c[0]} {c[1]}: lambda_1 in [{E['lo']}, {E['hi']}]; mu = {E['mu']}; r^2 = {E['res2']}; lambda_2 bound = {E['lam2b']}; eps = {E['eps']}")
-    checks.check("D1", side, "side conditions at all four cases: y > 0, delta = mu - lambda_2bound > 0, lo > lambda_2bound, the square-root bounds are upper bounds, the residual is the recomputed one")
+    checks.check("D1", side, "four cases: y > 0, delta = mu - lambda_2bound > 0, lo > lambda_2bound, square-root bounds are upper bounds, residual recomputed")
     lit = True
     for c in CASES:
         E = enc[c]
@@ -908,7 +908,7 @@ def family_d(checks: Checks, strips: dict, enc: dict, report: dict, exact: bool)
                 lit = False
             if exact:
                 say(f"exact W={c[0]} {c[1]}: s_{name} in [{a}, {b}]")
-    checks.check("D2", lit, "every enclosure [s(y) - 2 eps, s(y) + 2 eps] has width below 10^-50 and its 22-digit outward labels are the contract's (four cases, both pairs)")
+    checks.check("D2", lit, "enclosures [s(y) - 2 eps, s(y) + 2 eps] of width < 10^-50; 22-digit outward labels are the contract's (four cases, both pairs)")
     excl = True
     for c in CASES:
         f = formation_value(c[1])
@@ -918,7 +918,7 @@ def family_d(checks: Checks, strips: dict, enc: dict, report: dict, exact: bool)
                 a, b = a - Fraction(1, 10), b + Fraction(1, 10)
             if a <= f <= b:
                 excl = False
-    checks.check("D3", excl, "no enclosure contains the formation value f = 1/4 or 5/23 (eight enclosures)")
+    checks.check("D3", excl, "no enclosure contains f = 1/4 or 5/23 (eight enclosures)")
     seq_ok = True
     for c in CASES:
         S = strips[c]
@@ -932,7 +932,7 @@ def family_d(checks: Checks, strips: dict, enc: dict, report: dict, exact: bool)
                 seq_ok = False
         if exact:
             say(f"exact W={c[0]} {c[1]}: finite n (n, s_inner, s_edge): {[(n_, str(a), str(b)) for n_, a, b in vals]}")
-    checks.check("D4", seq_ok, "the sector's center-row statistics at n = 3, 5, 9, 17, 33, 65 have strictly decreasing distances to the enclosure, both pairs, all four cases")
+    checks.check("D4", seq_ok, "sector center-row statistics at n = 3, 5, 9, 17, 33, 65: strictly decreasing distances to the enclosure, both pairs, four cases")
     bnd = True
     for c in CASES:
         S = strips[c]
@@ -946,7 +946,7 @@ def family_d(checks: Checks, strips: dict, enc: dict, report: dict, exact: bool)
         report[("boundary", c)] = (fi, fe, si, se, dists)
         if not all(x < Fraction(1, 10 ** 6) for x in dists):
             bnd = False
-    checks.check("D5", bnd, "boundary independence at n = 33: P(e_y) records on every site of both end rows (full state through the tensor structure) and the orbit-averaged record in the sector; all within 10^-6 of the enclosures")
+    checks.check("D5", bnd, "end records P(e_y) on both end rows at n = 33 (full state via the tensor structure; orbit-averaged in the sector): within 10^-6 of the enclosures")
     b02 = True
     for (W, tr), (la, lb, k) in B02_LIT.items():
         E = enc[(W, tr)]
@@ -955,7 +955,7 @@ def family_d(checks: Checks, strips: dict, enc: dict, report: dict, exact: bool)
             la += 1
         if not (floor_scaled(a, k) == la and ceil_scaled(b, k) == lb and not (a <= formation_value(tr) <= b) and E["inner"] == E["edge"]):
             b02 = False
-    checks.check("D6", b02, "widths 2 and 3 by the same route: the enclosures carry block 02's F4 digits (18 and 22 digits) and exclude f; the innermost pair is the edge pair there")
+    checks.check("D6", b02, "widths 2, 3 by the same route: block 02's F4 digits (18 and 22) reproduced, f excluded, innermost pair = edge pair")
     ident = True
     for c in CASES:
         K = report[("krylov", c)]
@@ -975,7 +975,7 @@ def family_d(checks: Checks, strips: dict, enc: dict, report: dict, exact: bool)
                 say(f"exact W={c[0]} {c[1]}: minimal polynomial of s_{name} (degree {I[name]['minpoly'].degree() if I[name]['minpoly'] is not None else None}) = {I[name]['minpoly'].as_expr() if I[name]['minpoly'] is not None else None}")
                 img = I["images"][name]
                 say(f"exact W={c[0]} {c[1]}: image of N/D for s_{name} on the refined isolating interval: [{dec(img[0], 40)}, {dec(img[1], 40, up=True)}]; N, D have {len(I[name]['N'])} integer coefficients of up to {max(len(str(abs(v))) for v in I[name]['N'] + I[name]['D'])} digits")
-    checks.check("D7", ident, "where d <= 16: x = p(Q) 1 satisfies Q x = lambda_1 x in Q[lam]/(m_1) on every orbit and is one-signed; the resultant's irreducible factor with exactly one root in the enclosure identifies s_inner and s_edge; the field image meets the enclosure")
+    checks.check("D7", ident, "d <= 16: Q x = lambda_1 x in Q[lam]/(m_1) on every orbit, x one-signed; one irreducible factor of the resultant with one root in the enclosure for s_inner, s_edge; field image meets the enclosure")
 
 
 # ==================================================================== family E
@@ -992,10 +992,10 @@ def family_e(checks: Checks, enc: dict, report: dict) -> None:
                 sep = False
             if (W, tr) in SEP_LIT and (floor_scaled(d_ed, 8), floor_scaled(d_in, 8)) != SEP_LIT[(W, tr)]:
                 sep = False
-            rows_out.append(f"W={W} {tr}: s_edge {dec(E['edge'][0], 12)}.. s_inner {dec(E['inner'][0], 12)}.. s_edge-f {dec(d_ed, 8)}.. s_inner-f {dec(d_in, 8)}..")
+            rows_out.append(f"W={W} {tr}: s_edge {dec(E['edge'][0], 10)}.. s_inner {dec(E['inner'][0], 10)}.. minus f: {dec(d_ed, 8)}.. {dec(d_in, 8)}..")
     for line in rows_out:
         say(line)
-    checks.check("E1", sep, "s - f > 10^-3 at every executed width 2, 3, 4, 5, both pairs, both triples; the 8-digit labels of s - f at widths 4, 5 are the contract's")
+    checks.check("E1", sep, "s - f > 10^-3 at widths 2, 3, 4, 5, both pairs, both triples; 8-digit labels at widths 4, 5 are the contract's")
     order = True
     for c in CASES:
         E = enc[c]
@@ -1003,13 +1003,13 @@ def family_e(checks: Checks, enc: dict, report: dict) -> None:
         report[("inner_minus_edge", c)] = gap
         if not gap > 0:
             order = False
-    checks.check("E2", order, "s_inner > s_edge strictly at widths 4 and 5, both triples (lower endpoint of s_inner above the upper endpoint of s_edge)")
+    checks.check("E2", order, "s_inner > s_edge strictly at widths 4, 5, both triples (lower endpoint above the upper endpoint)")
     e4, e5 = enc[(4, (3, 1, 2))], enc[(5, (3, 1, 2))]
     din = (e5["inner"][0] - e4["inner"][1], e5["inner"][1] - e4["inner"][0])
     ded = (e5["edge"][0] - e4["edge"][1], e5["edge"][1] - e4["edge"][0])
     report["w45_diff"] = (din, ded)
     diff_ok = floor_scaled(din[0], 10) == 54436 and ceil_scaled(din[1], 10) == 54437 and floor_scaled(ded[0], 11) == 18169 and ceil_scaled(ded[1], 11) == 18170
-    checks.check("E3", diff_ok, f"the width-4 and width-5 values differ at (3,1,2) by s_inner: [{dec(din[0], 10)}, {dec(din[1], 10, up=True)}] and s_edge: [{dec(ded[0], 11)}, {dec(ded[1], 11, up=True)}] (outward labels; two data points, no statement about other widths)")
+    checks.check("E3", diff_ok, f"the width-4 and width-5 values differ at (3,1,2) by s_inner: [{dec(din[0], 10)}, {dec(din[1], 10, up=True)}] and s_edge: [{dec(ded[0], 11)}, {dec(ded[1], 11, up=True)}] (outward labels; two data points)")
     rb = True
     for c in CASES:
         E = enc[c]
@@ -1018,7 +1018,7 @@ def family_e(checks: Checks, enc: dict, report: dict) -> None:
         if ceil_scaled(ratio, 5) != RATIO_LIT[c]:
             rb = False
     labels = ", ".join(dec(report[("ratio", c)], 5, up=True) for c in CASES)
-    checks.check("E4", rb, f"lambda_2bound/lo <= {labels} (rounded up from the exact rationals; a bound on the executed ratio, not the true lambda_2/lambda_1)")
+    checks.check("E4", rb, f"lambda_2bound/lo <= {labels} (rounded up; bounds the executed ratio, not the true lambda_2/lambda_1)")
 
 
 # ==================================================================== family F
@@ -1072,20 +1072,20 @@ def family_f(checks: Checks, note_text: str) -> None:
             body = body.replace(FENCES[2], "")
         if any(nm in body for nm in CLASSICAL_NAMES) and not any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
             offenders.append(title[:30])
-    checks.check("F4", not offenders and any(nm in text for nm in CLASSICAL_NAMES), f"the classical names appear only in the Prior art and Imports sections (and the verbatim fence); theorem sections use the object names (offenders: {offenders})")
+    checks.check("F4", not offenders and any(nm in text for nm in CLASSICAL_NAMES), f"classical names only in Prior art, Imports and the verbatim fence (offenders: {offenders})")
     decimals = set()
     for ln in OUT_LINES:
         for m_ in re.finditer(r"\d+\.\d+", ln):
             decimals.add(m_.group(0))
     stray = sorted(x for x in decimals if x not in DEC_LABELS)
-    checks.check("F5", not stray and len(decimals) > 20, f"every decimal label in this stdout was produced by the integer-arithmetic dec() ({len(decimals)} labels; stray: {stray[:3]})")
+    checks.check("F5", not stray and len(decimals) > 20, f"every decimal label in this stdout came from the integer-arithmetic dec() ({len(decimals)} labels; stray: {stray[:3]})")
 
 
 # ==================================================================== family G
 N5_LINES = (
-    "per_element: executed — every row state of the width-2, 3, 4 and 5 strips enters the orbit reduction, the quotients and the full-state transfer checks, both triples, exact",
+    "per_element: executed — every row state of the width-2, 3, 4, 5 strips enters the orbit reduction, the quotients and the full-state checks, both triples, exact",
     "per_site: executed — the edge pair (0, 1) and the innermost pair of every row; the end-row records on every site of both end rows in the boundary check",
-    "per_mode: executed — the Perron root by the two-sided ratio bounds, every other eigenvalue by the trace bound, the Perron vector by the residual-gap bound, the Krylov degree by modular ranks and an exact dependency; the minimal polynomials where the degree allows",
+    "per_mode: executed — the Perron root by the ratio bounds, every other eigenvalue by the trace bound, the Perron vector by the residual-gap bound, the Krylov degree exactly; minimal polynomials where the degree allows",
     "per_block: executed — the finite-n center rows for n = 3 to 65 in the sector and n = 3 to 7 (width 4) and 3 to 5 (width 5) on the full state; the characteristic polynomial at width 4",
     "lattice_wide: checked and not executed — strips of widths 2 to 5 only; the plane and wider strips are named, not computed, and no monotonicity in the width is stated",
 )
