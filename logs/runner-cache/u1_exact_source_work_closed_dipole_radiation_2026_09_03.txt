@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/u1_exact_source_work_closed_dipole_radiation_2026_09_03.py
+runner_sha256: 50dc48da6cca75be70746df52cf67309c5e4fffe0910fb3c17feadb73604ec74
+input_fingerprint_sha256: 45b98a21c84de9104f7ad794ff07e9fe6bd0c80d0ded81573727554a11ad7c4b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+[PASS] 01 the work and radiation checks use the exact physical incidence complex
+[PASS] 02 the source-work cross term holds exactly as an integer matrix identity
+[PASS] 03 the source-work quadratic term holds exactly as an integer matrix identity
+[PASS] 04 deterministic full-field trials reproduce midpoint source work
+[PASS] 05 zero source reduces the work theorem to exact parent field-energy conservation
+[PASS] 06 the first pulse creates a unit nearest-neighbor charge dipole
+[PASS] 07 the reversed second pulse returns every vertex charge exactly to zero
+[PASS] 08 the closed two-tick pulse has the derived curl/co-curl field formula exactly
+[PASS] 09 the post-dipole radiation packet obeys both Gauss laws exactly
+[PASS] 10 the returned charge leaves a nonzero field wholly in the transverse incidence images
+[PASS] 11 the pulse leaves no constant harmonic electric or magnetic field
+[PASS] 12 the unit-dipole radiation packet has positive modified energy exactly one half
+[PASS] 13 accumulated midpoint work equals the complete residual radiation energy
+[PASS] 14 reversing time and the ordered source history returns the packet to zero exactly
+[PASS] 15 reversing the dipole orientation reverses the field and keeps its energy
+[PASS] 16 the sparse large-volume propagator is byte-identical to the dense role curl at L=3
+[PASS] 17 the emitted packet conserves its exact modified energy for eight source-free cycles
+[PASS] 18 the radiation support advances on the exact finite causal ladder 3,5,...,19
+[PASS] 19 the squared-field centroid moves monotonically away from the closed source
+[PASS] 20 more than 99.8 percent of squared field amplitude leaves the radius-three source neighborhood
+[PASS] 21 source work and the driven field covary under all 48 cubic transformations
+[PASS] 22 simultaneous opposite currents cancel while a one-tick-separated pair radiates
+per_element: each source coefficient, incidence sign, and exact work numerator is checked
+per_site: one edge pulse creates and erases charges only on its two neighboring vertices
+per_mode: the residual field lies in curl/co-curl images with no longitudinal or harmonic component
+per_block: exact work, Gauss laws, reversal, cubic covariance, and dipole controls are checked
+lattice_wide: an L=20 sparse block conserves energy and carries the packet from support radius 3 through 19
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

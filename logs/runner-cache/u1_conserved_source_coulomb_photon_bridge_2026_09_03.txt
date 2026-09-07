@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/u1_conserved_source_coulomb_photon_bridge_2026_09_03.py
+runner_sha256: e69a545f21718ddc85ccd74c96a654a2d6a80ee2413129ed2598c7f193a03a11
+input_fingerprint_sha256: 1634eb744274ee05a88162776dac20ea7c66db64fad929f04cb43b48b3171273
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+[PASS] 01 the source bridge uses the exact vertex-edge-face-cube incidence complex
+[PASS] 02 the electric Gauss law and discrete continuity equation agree exactly over integers
+[PASS] 03 magnetic Gauss remains exact during both sourced magnetic half-steps
+[PASS] 04 incidence continuity conserves total charge on the periodic lattice
+[PASS] 05 the actual nonzero-current tick matches independent full-field rational numerators and all Gauss rows
+[PASS] 06 zero current reduces exactly to the parent finite-depth photon tick
+[PASS] 07 one oriented edge current transports one unit charge to its neighboring vertex exactly
+[PASS] 08 the actual one-edge source coefficient is one and doubling it fails charged Gauss
+[PASS] 09 the finite-torus Poisson solve reconstructs the neutral Gauss field
+[PASS] 10 the Poisson field is orthogonal to curl variations and minimizes electric energy
+[PASS] 11 each FFT Green function solves the neutralized cubic Poisson equation
+[PASS] 12 the lattice Coulomb Green function agrees on all three coordinate axes
+[PASS] 13 fitted Green coefficient errors decrease across the named ladder toward 1/(4 pi)
+[PASS] 14 a gradient current changes charge but has exactly zero transverse curl
+[PASS] 15 a co-curl current is charge-neutral and couples nontrivially to photon fields
+[PASS] 16 longitudinal Coulomb and transverse photon source sectors are orthogonal
+[PASS] 17 the Fourier source split leaves exactly two curl-coupled transverse components
+[PASS] 18 a local current impulse has a strict one-cycle and two-cycle causal support cone
+[PASS] 19 the sourced tick covaries under all 48 cubic transformations with polar current
+per_element: every incidence sign, one-edge charge transfer, and source coefficient is checked
+per_site: vertex charge, edge current, edge electric field, and face magnetic updates are local
+per_mode: longitudinal and rank-two transverse source projectors are checked at generic momenta
+per_block: exact continuity, Hodge separation, Poisson minimization, cubic covariance, and causal support are checked
+lattice_wide: full incidence blocks and L=48,64,96,128 Green functions recover the three-dimensional Coulomb coefficient
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

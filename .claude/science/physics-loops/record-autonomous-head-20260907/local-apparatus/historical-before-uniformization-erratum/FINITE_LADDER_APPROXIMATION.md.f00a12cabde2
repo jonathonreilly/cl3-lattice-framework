@@ -1,0 +1,223 @@
+# Finite positive-ladder approximation at finite laboratory time
+
+## Conditional construction and the obstruction at a fixed cap
+
+A finite-dimensional GKSL approximation can be constructed for a finite-sector,
+finite-neighborhood COMPLETE native instrument, with an explicit retained-output
+trace bound. The construction needs no commensurability of the original spectra:
+rounding is part of the approximation. It conserves the ROUNDED modeled energy
+exactly, including absorbing refusal. It does not exactly conserve the original
+unrounded energy distribution. A small bound for original mean-energy error is
+available separately.
+
+A prescribed finite cap cannot guarantee arbitrary accuracy solely by taking
+a finer mesh: actual ideal leakage outside that cap can be nonzero. Measuring
+outside the cap gives a trace-norm lower bound twice that leakage against ANY
+normalized output strictly supported in the cap (with refusal in an orthogonal
+flag). Thus mesh refinement removes discretization error, not physical cap
+error. The sufficient construction below is conditional on a displayed cap
+margin inequality. Failure of that conservative inequality is not a no-go;
+one may need a larger priced cap or a sharper leakage estimate.
+
+## Target and hypotheses
+
+Take a finite direct sum Hsys of all physically needed head/history/Record
+sectors, total dimension d. Source Hamiltonians A_s are bounded self-adjoint
+operators on this finite matter-neighborhood model. Complete edge/sign columns
+K_e have norm1, at most D outgoing edges per sector, and gamma is fixed. The
+full-line target jumps are their exact spectral energy lifts, with common free
+Hamiltonian A direct_sum + EB. Assume the complete-native local transfer bound
+ ||K_e A_s-A_target K_e||<=c
+uniformly; c=Delta+t when the native surviving-Hamiltonian identity applies.
+Let Lambda=gamma D, lambda=Lambda T, and
+ P(lambda)=lambda+(3/2)lambda²+(1/3)lambda³.
+
+This theorem starts from a finite-neighborhood target whose free Hamiltonian
+and sector dimensions are actually specified. If distant free-Hamiltonian
+couplings remain in the target, replacing the whole system by a finite patch
+requires a separate locality comparison. Merely having local jump support does
+not license deleting those couplings. Native tensor-product placement and
+locality of the physical K_e remain hypotheses, not consequences of d.
+
+Initial battery is the normalized sine on[b,b+w], with b>0. A requested cap C
+has u=C-b-w>0. The input system/reference state is arbitrary and uncorrelated
+with this fixed battery. All results retain the battery at output.
+
+## Rounding and a positive ladder embedding
+
+Choose a mesh delta>0. Round every eigenvalue of every A_s to the nearest point
+of delta Z, keeping the same projectors; fix one tie convention. Call the result
+A_s^delta. Uniformly,
+ ||A_s-A_s^delta||<=delta/2.
+Round FULL sector energies once, including any declared fuel contribution;
+never add the fuel gap a second time. If exact fuel spacing Delta is required,
+choose delta=Delta/m and round only the matter spectra; this preserves fuel
+spacing. The simplest general construction below allows full-sector rounding,
+so its exact conservation law is explicitly for A^delta.
+
+Use ladder centers E_j=(j+1/2)delta, j in Z. Isometrically embed |j> as the
+normalized constant function on[j delta,(j+1)delta) in L2(R,dE). Let J_delta
+be this embedding, P_delta its range projection, and
+ EB^delta(E)=delta(floor(E/delta)+1/2).
+Then ||EB-EB^delta||<=delta/2 on the full continuous space. Integer translations
+m delta preserve the step-function subspace, and EB^delta preserves it as well.
+Because rounded system-energy differences are integer multiples of delta,
+every rounded lifted jump preserves that subspace EXACTLY. Its restriction is
+an ordinary shift on the integer ladder with the same system spectral matrices.
+
+For C=M delta, restrict to j=0,...,M-1. These are strictly positive battery
+levels delta/2,...,C-delta/2. The embedded cells fill[0,C]; there is no negative
+half-cell at the origin. Using integer-centered cells without correcting the
+zero-energy cell would not have this property. Given an upper cap C, exact
+alignment can always be obtained by choosing delta=C/M with sufficiently large
+integer M. If exact Delta commensurability is also demanded, use an aligned
+cap at or below C and price its slightly smaller upper margin separately.
+
+## Initial packet error
+
+Let beta_delta=P_delta beta/||P_delta beta||. On each cell the mean-zero
+Poincare inequality gives
+ ||beta-P_delta beta||<=delta ||beta'||/pi=delta/w.
+The sine extended by zero belongs to H1, including when b or b+w lies inside
+a cell. Thus its normalized projection has pure-state trace distance
+ || |beta><beta|-|beta_delta><beta_delta| ||_1
+ =2||beta-P_delta beta||<=2delta/w.                      (1)
+Take delta<w so the projection is nonzero. The projected packet's LADDER
+energies lie in[b-delta/2,b+w+delta/2]; its embedded continuous support lies
+in[b-delta,b+w+delta]. Require delta<=min(b,u), so it fits strictly inside the
+chosen positive cap. No product/reset condition is imposed after initialization.
+
+## Full-line dynamical comparison before any cap
+
+For an edge/sign COLUMN and arbitrary tau, rounding gives
+ ||exp(-i tau Aout)K exp(i tau Ain)
+   -exp(-i tau Aout^delta)K exp(i tau Ain^delta)||
+ <=delta |tau|.                                         (2)
+The two exponential errors each cost(delta/2)|tau|. This estimate preserves
+all signs in one column. It does not multiply the bound by their number.
+Completeness is exact for the rounded lift, because the same rounded input
+and output Hamiltonians appear across its sign column.
+
+First compare exact and rounded jumps while keeping the continuous free EB.
+On initial Fourier band |tau0|<=Tcut, free transport visits tau0+t, so the
+Duhamel jump cost over[0,T] is at most
+ 4 Lambda delta (T Tcut+T²/2).                           (3)
+Changing free A to A^delta costs at most delta T in diamond norm. Changing free
+EB to EB^delta costs another delta T, because their difference is bounded by
+delta/2 even though EB itself is unbounded. The latter comparison is an
+unrestricted bounded-Hamiltonian-perturbation estimate; it does NOT assume
+pure Fourier translation after EB is rounded.
+
+For the original sine packet,
+ eta(Tcut)<=32pi/[3(w Tcut)^3], Tcut>=sqrt(2)pi/w.
+The retained-output band truncation costs4sqrt(eta), as in the fixed-time
+locality proof. Combining it with(1)–(3) gives the unconditioned full-line bound
+ E_disc=2delta/w +4 Lambda delta(T Tcut+T²/2)+2delta T
+                      +4sqrt(eta(Tcut)).                 (4)
+This compares the continuous target with the embedded UNBOUNDED integer-ladder
+model initialized in beta_delta. The intermediate continuous-space comparison
+can start from beta; only afterwards is its initial input replaced by beta_delta.
+This ordering avoids assuming that rounding EB preserves Fourier marginal
+translation. Every triangle step is CPTP and uses one retained battery.
+
+## Cap completion and repeated refusal
+
+For the rounded full-line column,
+ ||[EB^delta,V_e^delta]||
+ =||K_e A_s^delta-A_target^delta K_e||<=c+delta.          (5)
+The equality follows directly from integer shifts; the inequality adds the two
+rounding errors to the original transfer defect. It does NOT require the
+rounded surviving Hamiltonian to commute with K_e.
+
+Let P_M project to the M positive ladder levels. For each edge take the combined
+accepted column S_e=P_M V_e^delta P_M, and ONE absorbing refusal complement
+F_e=(I_cap-S_e*S_e)^(1/2). All these are finite matrices. The cap commutes with
+A^delta+EB^delta, the lift intertwines that energy, and F_e commutes with the
+source rounded total energy. Use the same source Hamiltonian on its refusal
+copy. The resulting finite GKSL process is CPTP and exactly preserves the
+ROUNDED total-energy distribution, despite nonzero refusal.
+
+Put b_delta=b-delta/2, u_delta=u-delta/2, and
+ B_delta=(c+delta)² (b_delta^-2+u_delta^-2) P(lambda).
+The repeated-cap quantum union bound, including Poisson null ticks and actual
+interleaved free evolutions, gives
+ refusal probability by T<=min{1,4B_delta},
+ full capped-versus-full-line ladder channel distance
+                     <=min{2,4sqrt(B_delta)}.             (6)
+Here the ladder free Hamiltonian commutes with its energy projection. Null
+ticks cause no additional refusal on accepted inputs. No Fourier-translation
+argument is applied after capping;(6) uses the separate commutator/union proof.
+
+Therefore the finite positive-ladder process, embedded in a common output
+space with the continuous target and orthogonal refusal labels, satisfies
+ ||Finite_T-Continuous_T||_diamond,fixed beta
+ <=min{2,E_disc+4sqrt(B_delta)}.                          (7)
+The diamond norm has arbitrary system/reference input but the declared initial
+battery fixed in each map (beta versus its projected preparation). No conditional
+rare-success normalization is hidden in(7).
+
+## Explicit resource choice for a target epsilon
+
+For 0<epsilon<1, choose
+ Tcut=max{sqrt(2)pi/w, [8192pi/(3epsilon²)]^(1/3)/w}.
+Then4sqrt(eta)<=epsilon/4. Define
+ Aerr=2/w+4Lambda(T Tcut+T²/2)+2T.
+Choose delta_max=min{w/2,b,u,1,epsilon/(4Aerr)} and an integer
+ M>=ceil(C/delta_max), setting delta=C/M.
+This makes the discretization part excluding the Fourier tail<=epsilon/4.
+Check the explicit remaining condition
+ 4(c+delta)sqrt(P(lambda)[(b-delta/2)^-2+(u-delta/2)^-2])
+ <=epsilon/2.                                          (8)
+When(8) holds, (7)<=epsilon. All constants and the dimension are explicit.
+If(8) fails, mesh refinement alone is not certified to attain epsilon at that
+cap. A simple sufficient margin criterion, using delta<=min(1,b,u), is
+ 8(c+1)sqrt(P(lambda)(b^-2+u^-2))<=epsilon/2.
+For symmetric margins b=u=m, it suffices to price
+ m>=16sqrt(2)(c+1)sqrt(P(lambda))/epsilon, C=2m+w.
+These are conservative resource THEOREMS, not a sweep or retuning of any
+frozen scientific experiment. At T=0 the cap cost vanishes and no positive
+margin enlargement is demanded by this dynamical term.
+
+An accepted system dimension d with ONE absorbing copy needs at most2dM
+Hilbert dimensions; distinct edge refusals can share that copy while their
+Lindblad/environment labels stay separate. It can be stored in
+ceil(log2(2dM)) abstract qubits. This is a dimension count, not a locality-
+preserving native encoding. Keeping a given q_sys-qubit native representation
+instead gives q_sys+ceil(log2 M)+1 storage qubits with unused code states.
+The external Markov reservoir/unraveling is still supplied; a finite GKSL
+state space is not a finite CLOSED unitary dilation for arbitrary time.
+
+## Original energy error, separately from trace error
+
+Under the cell embedding, ||A-A^delta||<=delta/2 and
+||EB-EB^delta||<=delta/2. Since the finite process exactly conserves the rounded
+energy, its drift in ORIGINAL modeled total-energy mean is at most2delta
+between its own initial and final states. This holds also in refusal sectors,
+whose original/rounded source Hamiltonians are paired consistently.
+
+The original sine and projected preparation have supports contained in
+[b-delta,b+w+delta]. Centering EB at b+w/2 and applying(1) bounds their initial
+battery mean difference by delta+2delta²/w. The matter input is identical.
+Thus relative to the continuous target's conserved original total-energy mean,
+ |Etotal,finite(T)-Etotal,target(T)|<=3delta+2delta²/w.    (9)
+This is not inferred from a trace bound against an unbounded observable; it
+uses exact rounded conservation and bounded energy-operator differences.
+
+If R_A=(max spectrum A-min spectrum A)/2 across the finite system/refusal
+sectors, battery mean error also satisfies
+ |EBfinite(T)-EBtarget(T)|
+ <=3delta+2delta²/w + R_A times the trace bound in(7).   (10)
+R_A is a finite-neighborhood energy scale, not an assumed global volume-uniform
+constant. Exact original energy-distribution conservation is not claimed;
+(9) is a mean estimate only.
+
+## What remains unsolved
+
+The result supplies explicit finite matrices, a positive finite ladder, a
+CPTP absorbing-refusal GKSL law and a retained-output finite-time error bound.
+It does not supply native one-site/Z3 admissibility, spatially local realization
+of spectral rounding within a patch, a local bath, entropy/memory reset,
+preparation or indefinite renewal. The integer ladder can require many levels;
+no optimal resource claim is made. A whole-lattice application requires the
+separate finite-neighborhood comparison and its surviving ambient-algebra
+assumptions. Feedback/noncomplete KJ columns are outside this construction.

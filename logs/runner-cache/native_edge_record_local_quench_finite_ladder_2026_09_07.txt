@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_local_quench_finite_ladder_2026_09_07.py
+runner_sha256: 2acd42de00726da4c1d3cf39149725fd4d4b059033be3403ba7dd0b9c0d7d17d
+input_fingerprint_sha256: 552fca00741e10cab44572e90b566ad676df0f098c3f0f8aca95e017d14fa673
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+PASS native-CAR quench and conditional finite-ladder resource certificate
+CHECKS 169 residual identities; 96 further physical bound assertions; all32 live independent norm rows agree.
+INDEPENDENT {"max_residual": 2.220446049250313e-15, "rows": 32, "scope": "Independent comparison covers complete echo and global energy-defect norms, not feedback norm or a 48-qubit dynamical simulation."}
+CERTIFICATE {"battery_levels": 31040, "battery_storage_qubits": 15, "cap": 97, "coefficient_upper": "221/7", "delta": "1/320", "lab_time": 1, "mean_energy_upper": "481/51200", "source": "Conditional safe-cap finite-ladder theorem; no many-qubit numerical propagation", "supplied_markov_bath_included": false, "total_native_storage_qubits": 48, "total_rate_bound": 3, "trace_upper": "221/2240", "width": 1}
+MALFORMED_CONTROLS {"NaN_JSON": true, "NaN_norm": true, "bool_order": true, "bool_threads": true, "bool_time": true, "duplicate_JSON_key": true, "duplicate_row": true, "exceeded_RSS": true, "extra_top_status": true, "missing_resources": true, "missing_row": true, "overflow_JSON": true, "wrong_hash": true, "wrong_norm": true, "wrong_scope": true, "zero_RSS": true}
+per_element: explicit CAR matrices and all five whole hopping terms; all32 cut/time echo and drift norms.
+per_site: six chain modes and four omitted-edge distance calculations; no ambient edge-qubit matrix claim.
+per_mode: full64-Fock matrices versus independent6x6 exterior spectral identities over all occupation subsets.
+per_block: four truncations, eight Fourier times, evolved-feedback control and exact rational resource arithmetic.
+lattice_wide: checked and not executed -- no infinite-volume dynamics, full48-qubit numerical evolution or physical bath realization.
+SOURCE_SHA256 2acd42de00726da4c1d3cf39149725fd4d4b059033be3403ba7dd0b9c0d7d17d
+DEPENDENCIES {"scripts/native_edge_record_quench_orbital_check_2026_09_07.py": "8b5070cb511dad23814c7b0de65013dd0306f63919df698999d5bc991416ab56"}
+RESOURCES {"resources": {"blas_threads": 1, "rss_limit_MiB": 180, "timeout_seconds": 180}, "rss_MiB": 58.203125, "seconds": 0.2660234590002801}
+TOTAL: PASS FAIL=0
+
+----- stderr -----
+

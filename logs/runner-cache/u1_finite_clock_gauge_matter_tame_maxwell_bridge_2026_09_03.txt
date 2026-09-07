@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.py
+runner_sha256: ebc57398ab35d5585baf91f94c2b83b4396d7be45a90e8bf53c7dd6afb46095e
+input_fingerprint_sha256: cafbf778afefbe3a698f7122daf4522aa895adb31f79c2d9406bdc226c52e982
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+[PASS] 01 K-state link clocks obey the exact Weyl relation Z X = omega X Z
+[PASS] 02 both finite link generators are unitary and cyclic with no dark boundary states
+[PASS] 03 the exact face-plus-matter Hilbert spaces and all three Hamiltonian components are well formed
+[PASS] 04 electric, Wilson-face, and charged-hop terms separately preserve all four modular Gauss symmetries
+[PASS] 05 the commuting unitary Gauss generators multiply to the one-unit total-charge sector phase
+[PASS] 06 electric, magnetic, and matter terms are all nontrivial across the finite-order grid
+[PASS] 07 exact finite-clock matter evolution preserves both modular Gauss generators and total charge
+[PASS] 08 electric and hopping components exchange equal and opposite energy at finite step
+[PASS] 09 the actual charged Fourier hop raises electric flux and head number with the parent orientation
+[PASS] 10 the charged hop preserves its explicit non-neutral modular Gauss sector
+[PASS] 11 the actual charged wrap preserves modular Gauss but rejects a globally additive flux increment
+[PASS] 12 the complete finite-clock matter-electric-magnetic face has exact unitary energy evolution
+[PASS] 13 the complete face evolution preserves every modular Gauss generator
+[PASS] 14 orders K=2^q use exactly q qubits per collective link for q=2 through 10
+[PASS] 15 clock phase factorization and cyclic increment are exact reversible maps on the q-qubit register
+[PASS] 16 the exact clock electric cosine converges to E squared with K^-2 tame error
+[PASS] 17 the exact Wilson magnetic cosine has a fourth-order remainder about the curl quadratic
+[PASS] 18 inside the charged no-wrap window modular Gauss equals div E-rho-background=0
+[PASS] 19 outside that window a resolved modular alias prevents an unqualified additive reading
+[PASS] 20 the three-dimensional tame Maxwell tangent has exactly two transverse branches at every nonzero tested momentum
+[PASS] 21 reciprocal electric and magnetic coefficients make the photon frequency coupling independent
+[PASS] 22 the forward-difference photon symbol has no extra zero at the Brillouin-zone corner
+[PASS] 23 both transverse branches approach unit-speed linear infrared dispersion
+[PASS] 24 the transverse clock-Maxwell tangent is covariant under all 48 cubic signed permutations
+[PASS] 25 the named finite-clock comparison ladder decreases its harmonic gap discrepancy below 0.3 percent
+[PASS] 26 fixed-g rotor gaps are cutoff-stable below the harmonic targets and the clock ladder approaches those rotor gaps
+[PASS] 27 the K=1024 mode ground states are angle-localized with negligible branch-edge weight
+diagnostic tame electric relative errors: 5.03587964e-02 1.27851692e-02 3.20863596e-03 8.02932461e-04
+diagnostic L=8 clock-mode relative gap errors: 6.94580460e-02 1.68331356e-02 4.59881151e-03 1.58788685e-03
+diagnostic L=8 fixed-g rotor gap=0.764916599742; clock-to-rotor relative errors=6.89102863e-02 1.62543985e-02 4.01287272e-03 1.00017569e-03; K=1024 angle second moment=2.35084163e-03
+diagnostic L=16 clock-mode relative gap errors: 3.48413709e-02 9.35239660e-03 3.19127208e-03 1.66301815e-03
+diagnostic L=16 fixed-g rotor gap=0.389730123464; clock-to-rotor relative errors=3.37256660e-02 8.20722692e-03 2.03898026e-03 5.08959693e-04; K=1024 angle second moment=4.61622385e-03
+diagnostic L=32 clock-mode relative gap errors: 1.88568917e-02 6.38668596e-03 3.31910053e-03 2.55519183e-03
+diagnostic L=32 fixed-g rotor gap=0.195583241400; clock-to-rotor relative errors=1.65942538e-02 4.09529019e-03 1.02063053e-03 2.54960152e-04; K=1024 angle second moment=9.20088033e-03
+per_element: exact finite Weyl links, cyclic unitaries, and tame cosine errors are checked
+per_site: modular Gauss generators, charged transport, and the no-wrap additive limit are checked
+per_mode: two transverse branches, infrared speed, cubic covariance, and reduced clock spectra are checked
+per_block: exact bond exchange and the complete K=3 matter-electric-magnetic face are checked
+lattice_wide: the 3D quadratic tame tangent is resolved; the exact clock law's thermodynamic Coulomb phase is not executed
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_ambient_generator_erasure_2026_09_07.py
+runner_sha256: 8577ad66f72d708b7ec57952f082f160a689caaa5bc404c69f2e92fd38d1f70a
+input_fingerprint_sha256: 664588b2ce05af43aa6aaf422f6e3c9c9f78068f44110f342c81cc1b8df1b35d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+PASS native ambient/history erasure: all-column energy lifts, sign-summed code loss and actual merging trajectories
+RESULT {"branch_restriction_cases": 8, "carrier_checks": 72, "checks": 417, "coherent_history_addition_error": 0.2865047968601898, "dependencies": {"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py": "fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af"}, "distinct_time_state_trace_norm": 0.9588510772084062, "individual_loss_code_leak": 0.3535533905932739, "merging_paths": [[0, 1, 2, 3], [3, 2, 1, 0]], "rate_tuple": [2, 1, 1, 1], "record_signs": {"0": 1, "1": -1, "2": 1, "3": 1}, "resources": {"blas_threads": 1, "rss_limit_MiB": 180, "timeout_seconds": 180}, "rss_MiB": 126.0625, "safe_total_energies": [19, 20], "same_total_time": 1.0, "scope": "Actual native square with opposite dimers, fixed N2 merging paths; ambient block matrices vs separate history-code lifts. No full cube computation.", "seconds": 0.32925212499685585, "sign_summed_loss_code_leak": 4.2117038240549247e-16, "source_sha256": "8577ad66f72d708b7ec57952f082f160a689caaa5bc404c69f2e92fd38d1f70a", "timed_probability_ratio": 0.7408182206817174, "times_a": [0.1, 0.2, 0.3, 0.4], "times_b": [0.4, 0.3, 0.2, 0.1], "worst": 3.553069838302329e-15}
+COUNTER_SCOPE On-demand imported carrier assertions only; the parent main/full census is not rerun.
+per_element: checked all native directed edges and both sign branches in the declared capped restriction cases.
+per_site: checked all four native occupations, head routing and old/new Record roles on the square.
+per_mode: checked grouped energy projectors and every column of total-energy intertwiners, including safe Q19/Q20 coherence.
+per_block: checked initial and bridge source codes, summed loss/refusal effects and two complete merging histories.
+lattice_wide: checked and not executed -- finite witness does not prove local bath, infinite-lattice formation or renewal.
+SOURCE_SHA256 8577ad66f72d708b7ec57952f082f160a689caaa5bc404c69f2e92fd38d1f70a
+DEPENDENCIES {"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py": "fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af"}
+TOTAL: PASS FAIL=0
+
+----- stderr -----
+
