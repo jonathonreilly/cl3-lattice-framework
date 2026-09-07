@@ -1,0 +1,5 @@
+# Review history
+
+Original ground coefficients froze before native values were read, then agreed exactly across distinct adapted trees despite different component pieces. Primary cold-reviewed native's analytic interface; native cold-reviewed primary's interface. The alternative excited computation froze before opening orbital code/raw, but candidate numeric values had already arrived by message; the disclosure is explicit. Its different-tree scalar derivative calculation agrees exactly with the independently differentiated jet result.
+
+Root independently reviewed the final canonical source and mathematical proof, memo bc5e1f4991b57ba6a6a25eaf87651a50f8e8f65fe2e31102a63fc377be659df8, copied here. The original staging PACK_INDEX enumerates these reviews and does not falsely call an authored port independently reviewed. The owned integration adds only the default resource reporting and claim-local helper registry; its final root review is pending. No review is fabricated for unchanged code.

@@ -1,0 +1,7 @@
+# Independent different-tree excited coefficient
+
+Freeze before computation. Use ONLY primary's frozen different-tree ground result and per-face expansions as input, with its exact hashes. Orbital sent its candidate values in a message before this task, so this is not claimed blind to values; its source, result file and four-component jet implementation will not be read before own raw result freezes. No coefficient is inserted as an expectation or implementation parameter.
+
+Use a direct inverse-matrix/product-derivative route. For precisionH/3+2aPu+2bPv, evaluate at a=b=omega/2. DerivativesGa=-2GPuG, Gb=-2GPvG, Gab=4(GPuGPvG+GPvGPuG). Expand the frozen cubic determinant and quartic Wick expectations into scalar covariance monomials. Differentiate each monomial by the explicit product rule, not a generic four-component jet algebra. Add Haar/sourcehalf terms unchanged.
+
+For normalized Gaussian prefactorGamma, logGamma_a=-8Guu, logGamma_b=-8Gvv, logGamma_ab=16Guv². D=(4+omega da)(4+omega db) corresponds to the true first invariant excited mode(4-omegaQ)phi0. Compute D(Gamma K)/D(Gamma)-Z1 and compare ground K-Z1 with the frozen ownk0. Check D(Gamma)/Gamma=4theta² exactly. Preserve derivative matrices, monomial coefficients, Gamma derivatives and all intermediate exact values. Validate inverse-matrix derivative equations and an independent symbolic2x2 source covariance derivative. No finite-beta onset, fitted parameters, ratio sign from diagnostics, or reading the other implementation. Resource180seconds180MiB.

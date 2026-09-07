@@ -1,0 +1,7 @@
+# Block24 integration protocol
+
+Keep block22 and block23 as explicit logical parents; this package is a dependent science milestone. No graph, cache, claim verdict or repo authority edits have been made in scratch. Root should register the independent helper only to this new claim, execute both canonical stdout caches under 180-second/180-MiB limits, stage those caches before generated-output cleanup, and run its normal source/graph/readiness review.
+
+PORT_RECEIPT.json verifies every frozen scientific payload field unchanged. The primary merges the original ground and excited computations through an in-memory object and accounts for all 23 actual assertions. No saved JSON is a runtime dependency. The independent helper adds only canonical reporting and an explicitly counted positive resource check, for seven actual assertions. The source and helper names are in scripts/. Native and primary per-tree components intentionally differ; assembled Z1 and k0 agree exactly. The excited candidate values had been received in messages before the alternative implementation, disclosed; the orbital source/jet implementation was opened only after alternative raw freeze.
+
+Preserve the entire evidence/ tree, including frozen preregistrations, hash-specific reviews, raw coefficients, original failed and corrected controls, nonzero-cubic supplement, and original proof wording. No failed control is silently erased. The proof requires whole-kernel cancellation and does not supply finite-beta onset or a full physical gap.

@@ -1,0 +1,3 @@
+# Additional ordered-word falsifier, frozen before its computation
+
+Keep the already frozen expansion result unchanged. Assign chord e the fixed traceless Hermitian integer matrix (e+1)diag(1,-1,0)+(1+e mod3) sigma_x(01)+(1+e mod2) sigma_y(12). Independently multiply the truncated matrix exponential series for each actual face, retaining degrees0..4. Compare the full weighted deficit cubic and quartic against the frozen canonical C and quartic coefficients using direct traces. This checks all original noncommuting face orders and factorials, not the Gaussian expectation or eigenvalue theorem. No random sampling or parameter retuning.
