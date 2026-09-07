@@ -7,9 +7,10 @@ Scope.  Block 03 named the two-site block criterion as the cheapest sharper rout
 sensitivity rho to one outer slot and the second-order sensitivity rho' of the y-marginal are computed exactly; the
 whole-block total variation under a change at an x-slot equals the x-marginal's (the block law factors as marginal times a
 conditional that does not see the slot); for every coupling of the two block laws the expected Hamming distance is at
-least the sum of the marginal total variations (Theorem N), so the block sum B_V is at least 10 (rho + rho'), which exceeds
-the block size 2 at each silent triple: the criterion is silent there for every coupling.  The explicit sequential
-coupling gives the upper bound 10 rho (1 + c_1).  Along the lines (t,1,1) and (t,t,1) the sequential number 5 rho (1 + c_1)
+least the sum of the marginal total variations (Theorem N), and the disjoint-support coupling attains that sum, so
+W_1 = TV(m_x) + TV(m_y) exactly (Theorem N'); the block sum B_V = 10 sigma with sigma the supremum of that sum over the
+boundary instances is an exact rational, above the block size 2 at each silent triple: the criterion is silent there for
+every coupling.  The sequential coupling (x first, then y) is a valid coupling with a weaker bound, recorded.  Along the lines (t,1,1) and (t,t,1) the sequential number 5 rho (1 + c_1)
 crosses 1 in the same scan cell as 6 c_1, and rho exceeds c_1 at strong couplings.  Nothing about uniqueness on Z^3 is
 claimed from the block contraction (its Z^3 implication is not proved here).  Exact integer and rational arithmetic only;
 the runner scans its own source for floating-point literals and conversion calls.
@@ -52,7 +53,8 @@ MUTATION_GATE = {
     "rho_literal_off": "C",
     "rho_prime_literal_off": "C",
     "ratio_bounded_by_one_claimed": "C",
-    "silent_lower_bound_below_two": "C",
+    "block_sum_literal_off": "C",
+    "optimal_coupling_not_optimal": "B",
     "region_upper_bound_forged": "C",
     "c1_literal_off": "C",
     "crossing_cell_wrong": "D",
@@ -119,6 +121,10 @@ RHO_LITERALS = {
     (3, 1, 2): Fraction(2168397, 7948400), (5, 2, 4): Fraction(271059507090000, 1298168979740633),
     (7, 3, 5): Fraction(239957740750, 1121635870169), (2, 1, 2): Fraction(67715, 446034),
     (3, 2, 2): Fraction(1471549788, 11145302999), (5, 4, 4): Fraction(81847628000000, 1305850357630907),
+}
+SIGMA_LITERALS = {
+    (3, 1, 2): Fraction(15220386, 48008647), (5, 2, 4): Fraction(24971992461, 111254785334), (7, 3, 5): Fraction(1462764714390, 6157201570091),
+    (2, 1, 2): Fraction(14803, 90094), (3, 2, 2): Fraction(31495356, 211495159), (5, 4, 4): Fraction(261542884000000, 3917551072892721),
 }
 RHO_PRIME_LITERALS = {
     (3, 1, 2): Fraction(1350, 26077), (5, 2, 4): Fraction(1915425000, 55627392667), (7, 3, 5): Fraction(856455908, 27833079009),
@@ -209,6 +215,74 @@ def rho_prime_of(triple) -> Fraction:
                 if v > best:
                     best = v
     return best
+
+
+def sigma_of(triple):
+    """sup over the boundary instances of TV(m_x, m_x') + TV(m_y, m_y') under a change at one outer x-slot (one supremum)."""
+    phi = phi_table(triple)
+    best, arg = Fraction(0), None
+    for eta_y in SHELLS5:
+        for eta_x in SHELLS4:
+            ms = []
+            for t in range(M):
+                J = block_joint(phi, eta_y, eta_x + (t,))
+                Z = sum(map(sum, J))
+                ms.append(([sum(J[a]) for a in range(M)], [sum(J[a][b] for a in range(M)) for b in range(M)], Z))
+            for t, t2 in PAIRS:
+                v = tv_frac(ms[t][0], ms[t][2], ms[t2][0], ms[t2][2]) + tv_frac(ms[t][1], ms[t][2], ms[t2][1], ms[t2][2])
+                if v > best:
+                    best, arg = v, (eta_y, eta_x, t, t2)
+    return best, arg
+
+
+def optimal_coupling(J, J2):
+    """The disjoint-support coupling (Theorem N'): the x values by the maximal coupling of the x-marginals; on the common x mass
+    the y values agree (the same kernel K); on the residual x mass the y values are drawn from the maximal coupling of the two
+    residual y-measures R = sum_a (m_x - m_x')^+(a) K(.|a) and R' = sum_a (m_x' - m_x)^+(a) K(.|a), with the x values assigned
+    from their posteriors given y — the residual x supports are disjoint, so x always differs there.  Returns (coupling, mu,
+    nu, E d_H)."""
+    Z, Z2 = sum(map(sum, J)), sum(map(sum, J2))
+    mu = {(a, b): Fraction(J[a][b], Z) for a in range(M) for b in range(M)}
+    nu = {(a, b): Fraction(J2[a][b], Z2) for a in range(M) for b in range(M)}
+    mx = [sum(mu[(a, b)] for b in range(M)) for a in range(M)]
+    nx = [sum(nu[(a, b)] for b in range(M)) for a in range(M)]
+    K = [[mu[(a, b)] / mx[a] for b in range(M)] for a in range(M)]
+    cp: dict = {}
+    for a in range(M):
+        c = min(mx[a], nx[a])
+        for b in range(M):
+            if c * K[a][b] > 0:
+                cp[((a, b), (a, b))] = cp.get(((a, b), (a, b)), 0) + c * K[a][b]
+    pe = [max(mx[a] - nx[a], 0) for a in range(M)]
+    qe = [max(nx[a] - mx[a], 0) for a in range(M)]
+    Rm = [sum(pe[a] * K[a][b] for a in range(M)) for b in range(M)]
+    Rn = [sum(qe[a] * K[a][b] for a in range(M)) for b in range(M)]
+    mass = sum(pe)
+    if mass > 0:
+        m = [min(Rm[b], Rn[b]) for b in range(M)]
+        cm = sum(m)
+        ycp: dict = {}
+        for b in range(M):
+            if m[b] > 0:
+                ycp[(b, b)] = ycp.get((b, b), 0) + m[b]
+        rest = mass - cm
+        if rest > 0:
+            for b in range(M):
+                for b2 in range(M):
+                    if Rm[b] - m[b] > 0 and Rn[b2] - m[b2] > 0:
+                        ycp[(b, b2)] = ycp.get((b, b2), 0) + (Rm[b] - m[b]) * (Rn[b2] - m[b2]) / rest
+        for (b, b2), p in ycp.items():
+            for a in range(M):
+                if pe[a] * K[a][b] == 0:
+                    continue
+                pa = pe[a] * K[a][b] / Rm[b]
+                for a2 in range(M):
+                    if qe[a2] * K[a2][b2] == 0:
+                        continue
+                    pa2 = qe[a2] * K[a2][b2] / Rn[b2]
+                    cp[((a, b), (a2, b2))] = cp.get(((a, b), (a2, b2)), 0) + p * pa * pa2
+    dH = sum(p * ((u[0] != v[0]) + (u[1] != v[1])) for (u, v), p in cp.items())
+    return cp, mu, nu, dH
 
 
 def sequential_coupling(J, J2):
@@ -310,18 +384,25 @@ def family_b(checks: Checks, report: dict) -> None:
             break
     checks.check("B1", factor_ok, f"Theorem O: TV(block law) = TV(x-marginal) under a change at an x-slot on all {count} instances, (3,1,2)")
     # B2-B4: the sequential coupling on the declared family
-    fam = lcg_instances(200) + [(RHO_ARG[0], RHO_ARG[1], RHO_ARG[2], RHO_ARG[3])]
-    marg_ok, lower_ok, upper_ok = True, True, True
+    fam = lcg_instances(200) + [(RHO_ARG[0], RHO_ARG[1], RHO_ARG[2], RHO_ARG[3]), (SIGMA_ARG[0], SIGMA_ARG[1], SIGMA_ARG[2], SIGMA_ARG[3])]
+    marg_ok, lower_ok, upper_ok, opt_marg_ok, opt_eq_ok, opt_le_ok = True, True, True, True, True, True
     cK = c1 / 2 if mut("sequential_upper_bound_forged") else c1
     for eta_y, eta_x, t, t2 in fam:
         J, J2 = block_joint(phi, eta_y, eta_x + (t,)), block_joint(phi, eta_y, eta_x + (t2,))
         coupling, mu, nu, dH = sequential_coupling(J, J2)
+        opt, _mu2, _nu2, dH_opt = optimal_coupling(J, J2)
         left = {}
         right = {}
         for (u, v), p in coupling.items():
             left[u] = left.get(u, 0) + p
             right[v] = right.get(v, 0) + p
         marg_ok = marg_ok and all(left.get(k, 0) == mu[k] for k in mu) and all(right.get(k, 0) == nu[k] for k in nu) and all(p >= 0 for p in coupling.values())
+        oleft = {}
+        oright = {}
+        for (u, v), p in opt.items():
+            oleft[u] = oleft.get(u, 0) + p
+            oright[v] = oright.get(v, 0) + p
+        opt_marg_ok = opt_marg_ok and all(oleft.get(k, 0) == mu[k] for k in mu) and all(oright.get(k, 0) == nu[k] for k in nu) and all(p >= 0 for p in opt.values())
         mx = [sum(mu[(a, b)] for b in range(M)) for a in range(M)]
         nx = [sum(nu[(a, b)] for b in range(M)) for a in range(M)]
         my = [sum(mu[(a, b)] for a in range(M)) for b in range(M)]
@@ -329,19 +410,24 @@ def family_b(checks: Checks, report: dict) -> None:
         tvx = sum(abs(p - q) for p, q in zip(mx, nx)) / 2
         tvy = sum(abs(p - q) for p, q in zip(my, ny)) / 2
         lower = 2 * (tvx + tvy) if mut("lower_bound_lemma_forged") else tvx + tvy
-        lower_ok = lower_ok and dH >= lower
+        lower_ok = lower_ok and dH >= lower and dH_opt >= lower
         upper_ok = upper_ok and dH <= tvx * (1 + cK)
-    checks.check("B2", marg_ok, f"the sequential coupling is a coupling (both marginals exact, nonnegative) on {len(fam)} instances")
-    checks.check("B3", lower_ok, "Theorem N: E d_H >= TV(m_x) + TV(m_y) on every instance (the marginal lower bound)")
-    checks.check("B4", upper_ok, "sequential bound: E d_H <= TV(m_x) (1 + c_1) on every instance")
+        target = tvx if mut("optimal_coupling_not_optimal") else tvx + tvy
+        opt_eq_ok = opt_eq_ok and dH_opt == target
+        opt_le_ok = opt_le_ok and dH_opt <= dH
+    checks.check("B2", marg_ok and opt_marg_ok, f"both couplings are couplings (marginals exact, entries nonnegative) on {len(fam)} instances")
+    checks.check("B3", lower_ok, "Theorem N: E d_H >= TV(m_x) + TV(m_y) for both couplings on every instance (the marginal lower bound)")
+    checks.check("B4", opt_eq_ok and opt_le_ok, "Theorem N': the disjoint-support coupling attains E d_H = TV(m_x) + TV(m_y) exactly on every instance, and never exceeds the sequential one")
+    checks.check("B5", upper_ok, "the sequential coupling's bound E d_H <= TV(m_x) (1 + c_1) on every instance")
 
 
 RHO_ARG = None
+SIGMA_ARG = None
 
 
 # ============================================================================================ family C
 def family_c(checks: Checks, report: dict, exact: bool) -> None:
-    global RHO_ARG
+    global RHO_ARG, SIGMA_ARG
     c1 = {tr: c1_of(tr) for tr in SILENT + REGION}
     c1_lit = dict(C1_LITERALS)
     if mut("c1_literal_off"):
@@ -367,22 +453,27 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
         rp_lit[(3, 1, 2)] = Fraction(1351, 26077)
     checks.check("C4", all(rp[tr] == rp_lit[tr] for tr in rp), "rho' (the y-marginal's sensitivity to an x-slot) at the three silent triples equals the literals")
     print("info rho': " + " ".join(f"({tr[0]},{tr[1]},{tr[2]})={rp[tr]}" for tr in SILENT))
-    lower = {tr: 10 * (rho[tr] + rp[tr]) for tr in SILENT}
-    upper = {tr: 10 * rho[tr] * (1 + c1[tr]) for tr in SILENT}
+    sig, sargs = {}, {}
+    for tr in SILENT + REGION:
+        sig[tr], sargs[tr] = sigma_of(tr)
+    SIGMA_ARG = sargs[(3, 1, 2)]
+    sig_lit = dict(SIGMA_LITERALS)
+    if mut("block_sum_literal_off"):
+        sig_lit[(5, 2, 4)] = Fraction(24971992462, 111254785334)
+    BV = {tr: 10 * sig[tr] for tr in sig}
     two = Fraction(2)
-    silent_ok = all(lower[tr] > (two + 1 if mut("silent_lower_bound_below_two") else two) for tr in SILENT) and all(lower[tr] <= upper[tr] for tr in SILENT)
-    print("info B_V bounds at the silent triples: " + "; ".join(f"({tr[0]},{tr[1]},{tr[2]}) [{dec(lower[tr], 4)}, {dec(upper[tr], 4)}]" for tr in SILENT))
-    checks.check("C5", silent_ok, "Theorem N: B_V >= 10(rho + rho') > 2 = |V| at each silent triple: the two-site criterion is silent for every coupling")
-    region_upper = {tr: 10 * rho[tr] * (1 + c1[tr]) for tr in REGION}
+    print("info B_V = 10 sigma: " + "; ".join(f"({tr[0]},{tr[1]},{tr[2]}) {BV[tr]} = {dec(BV[tr], 6)}" for tr in SILENT))
+    print("info B_V = 10 sigma: " + "; ".join(f"({tr[0]},{tr[1]},{tr[2]}) {dec(BV[tr], 6)}" for tr in REGION))
+    silent_ok = all(sig[tr] == sig_lit[tr] for tr in sig) and all(BV[tr] > two for tr in SILENT) and all(sig[tr] <= rho[tr] + rp[tr] for tr in SILENT) and all(sig[tr] <= rho[tr] * (1 + c1[tr]) for tr in sig)
+    checks.check("C5", silent_ok, "Theorem N': B_V = 10 sigma exactly (the literals); > 2 = |V| at each silent triple; sigma <= rho + rho' and <= rho (1 + c_1)")
     bound = Fraction(1) if mut("region_upper_bound_forged") else two
-    print("info B_V upper bound at the region triples: " + "; ".join(f"({tr[0]},{tr[1]},{tr[2]}) {dec(region_upper[tr], 4)}" for tr in REGION))
-    checks.check("C6", all(region_upper[tr] < bound for tr in REGION), "the sequential upper bound 10 rho (1 + c_1) is below 2 at the three region triples")
+    checks.check("C6", all(BV[tr] < bound for tr in REGION), "B_V = 10 sigma is below 2 at the three region triples (exact)")
     if exact:
         for tr in SILENT + REGION:
-            print(f"exact rho{tr} = {rho[tr]} argmax {args[tr]} c_1 = {c1[tr]} ratio = {ratios[tr]}")
+            print(f"exact rho{tr} = {rho[tr]} argmax {args[tr]} c_1 = {c1[tr]} ratio = {ratios[tr]}; sigma = {sig[tr]} argmax {sargs[tr]}; B_V = {BV[tr]}")
         for tr in SILENT:
-            print(f"exact rho'{tr} = {rp[tr]}; B_V in [{lower[tr]}, {upper[tr]}]")
-    report["C"] = {"c1": c1, "rho": rho, "rp": rp}
+            print(f"exact rho'{tr} = {rp[tr]}; rho + rho' = {rho[tr] + rp[tr]}; sequential bound 10 rho (1 + c_1) = {10 * rho[tr] * (1 + c1[tr])}")
+    report["C"] = {"c1": c1, "rho": rho, "rp": rp, "sigma": sig}
 
 
 # ============================================================================================ family D
@@ -476,7 +567,7 @@ def family_e(checks: Checks, note_text: str) -> None:
 N5_LINES = (
     "per_element: executed — every boundary instance (252 x 126 multisets x 15 pairs) at each triple for rho and rho'; the factorization on every instance at (3,1,2)",
     "per_site: executed — the x-marginal and the y-marginal sensitivities separately; the coupling's x and y disagreement probabilities",
-    "per_mode: executed — the sequential coupling built explicitly on 201 instances with exact marginals and Hamming distance",
+    "per_mode: executed — the disjoint-support (optimal) and the sequential couplings built explicitly on 202 instances with exact marginals and Hamming distances",
     "per_block: executed — the two-site block with its ten boundary slots; the block sum bounds at six triples; the scans on two lines",
     "lattice_wide: not claimed — the block contraction's implication on Z^3 is not proved here; the silence at the three triples is a finite exact statement for every coupling",
 )
@@ -508,7 +599,7 @@ def main(argv) -> int:
     for p in AUDIT_INPUT_PATHS:
         print(f"  {p}")
     print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
-    print("scope: the two-site block of the covariant product rule; rho, rho' exactly; B_V >= 10(rho + rho') > 2 at (3,1,2), (5,2,4), (7,3,5): silent for every coupling; nothing on Z^3 uniqueness")
+    print("scope: the two-site block of the covariant product rule; rho, rho', sigma exactly; B_V = 10 sigma > 2 at (3,1,2), (5,2,4), (7,3,5): silent for every coupling; nothing on Z^3 uniqueness")
     print(f"mutation: {ACTIVE_MUTATION or 'none'}")
     report: dict = {}
     family_a(checks, note_text, axiom_text, b03_text)

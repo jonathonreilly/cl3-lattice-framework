@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07
 claim_type: bounded_theorem
-claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r): the two-site block V = {x, y} of Z^3 with its ten boundary slots; the block law's x-marginal sensitivity rho to one outer slot and the y-marginal's second-order sensitivity rho', exactly, at (3,1,2), (5,2,4), (7,3,5), (2,1,2), (3,2,2), (5,4,4); the factorization of the block law under a change at an x-slot (Theorem O); the lower bound of the Hamming coupling distance by the marginal total variations for every coupling (Theorem N), hence the block sum B_V >= 10(rho + rho') > 2 = |V| at each of the three silent triples: the two-site block criterion is silent there for every coupling; the explicit sequential coupling and its upper bound 10 rho (1 + c_1); the block-scan contraction on a finite window (Theorem M) with its infinite-lattice implication left unproved; the scans along (t,1,1) and (t,t,1); nothing about one law or several at the silent triples; exact arithmetic throughout."
+claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r): the two-site block V = {x, y} of Z^3 with its ten boundary slots; the block law's x-marginal sensitivity rho to one outer slot and the y-marginal's second-order sensitivity rho', exactly, at (3,1,2), (5,2,4), (7,3,5), (2,1,2), (3,2,2), (5,4,4); the factorization of the block law under a change at an x-slot (Theorem O); the lower bound of the Hamming coupling distance by the marginal total variations for every coupling (Theorem N) and its attainment by an explicit coupling, so that W_1 = TV(m_x) + TV(m_y) exactly for a change at an x-slot (Theorem N'); hence the block sum B_V = 10 sigma exactly, with sigma the supremum of that sum, equal to 3.1703…, 2.2445…, 2.3756… > 2 = |V| at the three silent triples: the two-site block criterion is silent there for every coupling; the sequential coupling as a weaker recorded bound; the block-scan contraction on a finite window (Theorem M, sufficiency) with its infinite-lattice implication left unproved; the scans along (t,1,1) and (t,t,1); nothing about one law or several at the silent triples; exact arithmetic throughout."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06
@@ -31,9 +31,9 @@ computed the pair's sensitivities exactly. Averaging over one partner barely
 helps: the pair's marginal is as sensitive to an outer neighbour as a lone site
 is, and at one coupling slightly more. Every way of matching up the pair's two
 laws must disagree at each site at least as often as that site's own marginal
-does, so the pair total is at least ten times the marginal sensitivity, which is
-above two at all three couplings. The pair test is silent there no matter how it
-is run. Nothing is said about whether one law or several exist at those
+does, and one explicit matching does exactly that well, so the pair total is an
+exact number: 3.17, 2.24 and 2.38, above two at all three couplings. The pair
+test is silent there no matter how it is run. Nothing is said about whether one law or several exist at those
 couplings.
 
 Exactly: for the pair block `V = {x, y}` with boundary `∂V` (five outer slots
@@ -44,17 +44,21 @@ outer `x`-slot is `2168397/7948400 ≈ 0.27281` at `(3, 1, 2)` (`c_1 = 270/989 �
 `0.9992`, `0.9804`, `1.0024`. The second-order sensitivity `ρ'` of the
 `y`-marginal to an `x`-slot is `1350/26077`, `1915425000/55627392667`,
 `856455908/27833079009`. For every coupling of the two block laws the expected
-Hamming distance is at least `TV(m_x) + TV(m_y)` (Theorem N), so the block sum
-`B_V = Σ_{z ∈ ∂V} sup W_1 ≥ 10(ρ + ρ') = 3.2457…, 2.4323…, 2.4470…`, above the
-block size `2`: the two-site block criterion is silent at the three silent
-triples for every coupling. The explicit sequential coupling gives `B_V ≤ 10ρ(1
-+ c_1) = 3.4728…, 2.5327…, 2.5959…`; at the region triples that upper bound is
-`1.7517…, 1.4966…, 0.6676…`, below `2`. On a finite window the random block
-scan contracts the total disagreement exactly when `B_V < 2` (Theorem M); its
+Hamming distance is at least `TV(m_x) + TV(m_y)` (Theorem N), and the
+disjoint-support coupling attains it, so `W_1 = TV(m_x) + TV(m_y)` exactly for
+a change at an `x`-slot (Theorem N'). Hence the block sum is exact: `B_V = 10σ`
+with `σ = sup (TV(m_x) + TV(m_y))` over the boundary instances, equal to
+`152203860/48008647 ≈ 3.1703`, `124859962305/55627392667 ≈ 2.2445`,
+`14627647143900/6157201570091 ≈ 2.3756` at `(3, 1, 2)`, `(5, 2, 4)`, `(7, 3,
+5)`, above the block size `2`: the two-site block criterion is silent at the
+three silent triples for every coupling. At the region triples `B_V = 74015/45047
+≈ 1.6430`, `314953560/211495159 ≈ 1.4891`, `≈ 0.6676`, below `2`. On a finite
+window the random block scan contracts the total disagreement when `B_V < 2`
+(Theorem M); its
 infinite-lattice implication is not proved here and nothing on `Z^3` is claimed
 from it. Along `(t, 1, 1)` and `(t, t, 1)` the sequential number `5ρ(1 + c_1)`
 crosses `1` in the same scan cell as `6c_1`, and `ρ` exceeds `c_1` from `t =
-39/20` and `t = 3/2`. Executed with exact arithmetic: 21 checks, 16 mutations.
+39/20` and `t = 3/2`. Executed with exact arithmetic: 22 checks, 17 mutations.
 
 ## Machine status and trace
 
@@ -68,12 +72,12 @@ source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the two-site route is closed for every coupling; the remaining routes to the silent triples are larger planar blocks (not exactly computable at this menu), a transfer-matrix or expansion route, or an ordering argument on the other side; consumers: the campaign's queue and the parked statistical-bridge decision material (read-only)"
-conditional_surface_status: "exact at the six triples and on the declared scans; Theorem N and Theorem O proved for the pair block; Theorem M proved on finite windows only; nothing at the silent triples about one law or several; no plane, no formation law, no bridge"
+conditional_surface_status: "exact at the six triples and on the declared scans; Theorems N, N' and O proved for the pair block; Theorem M (sufficiency) proved on finite windows only; nothing at the silent triples about one law or several; no plane, no formation law, no bridge"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-claim_type_reason: "the sensitivities are exact executed computations; Theorem N is a two-line coupling inequality executed on the declared family; Theorem O is an exact factorization executed on every instance at one triple; Theorem M is a finite-window contraction statement with its Z^3 implication explicitly left open; the silence at the silent triples is a finite exact statement for every coupling; nothing about several laws, a transition, a physical rule, the plane, the bridge, the Born form or gravity is claimed."
+claim_type_reason: "the sensitivities are exact executed computations; Theorem N is a two-line coupling inequality and Theorem N' its attainment by an explicit coupling, both executed on the declared family, so the block sum is an exact rational; Theorem O is an exact factorization executed on every instance at one triple; Theorem M is a finite-window contraction statement (sufficiency) with its Z^3 implication explicitly left open; the silence at the silent triples is a finite exact statement for every coupling; nothing about several laws, a transition, a physical rule, the plane, the bridge, the Born form or gravity is claimed."
 ```
 
 ## Premises and declared objects
@@ -118,14 +122,16 @@ each shell). `c_1` is block 03's coefficient, recomputed (C1).
 **Couplings and the block sum.** `d_H` is the Hamming distance on `M^V`;
 `W_1(μ, ν) = min_π E_π d_H` over couplings `π` (a minimum: the couplings form
 a compact polytope and `E_π d_H` is linear); `b_V(z) = sup_{ω ~ ω' at z} W_1(μ_V^ω,
-μ_V^{ω'})`; `B_V = Σ_{z ∈ ∂V} b_V(z)`. `W_1` is not computed exactly; it is
-bounded below (Theorem N) and above (the sequential coupling).
+μ_V^{ω'})`; `B_V = Σ_{z ∈ ∂V} b_V(z)`. For a change at an `x`-slot `W_1` is computed
+exactly (Theorem N'); `σ = sup (TV(m_x^ω, m_x^{ω'}) + TV(m_y^ω, m_y^{ω'}))`
+over the same instances as `ρ`, one supremum of the sum (not the sum of the
+suprema `ρ + ρ'`, which is larger).
 
 **The declared instance family.** `200` boundary instances from a fixed linear
 congruential generator (seed `20260907`, multiplier `1103515245`, increment
 `12345`, modulus `2^31`, eleven draws per instance, `(state >> 16) mod 6`, the
-pair at the varied slot required distinct) plus the maximizing instance of `ρ`
-at `(3, 1, 2)`.
+pair at the varied slot required distinct) plus the maximizing instances of `ρ`
+and of `σ` at `(3, 1, 2)`.
 
 ## Prior art and what is new
 
@@ -142,9 +148,9 @@ criterion's in-repo uses, all on other carriers.
 
 New here: the exact pair-block sensitivities and their ratio to the one-site
 coefficient; the factorization theorem (O); the marginal lower bound for every
-coupling (N) and its consequence, the silence of the two-site criterion at the
-three silent triples independent of any proof of the criterion; the explicit
-sequential coupling with its exact upper bound; the finite-window block-scan
+coupling (N), its attainment (N'), hence the exact block sum and the silence of
+the two-site criterion at the three silent triples independent of any proof of
+the criterion; the sequential coupling as a recorded weaker bound; the finite-window block-scan
 contraction (M) with its implication left open; the scans along two lines.
 
 ## Exact target and obligation graph
@@ -158,10 +164,10 @@ silent there — with the sensitivities and bounds exact.
 | the block law with exterior records and its uniqueness among laws with those full conditionals (Theorem A) | cited (block 01 through block 03, unaudited) |
 | the one-site coefficient `c_1` at the six triples | recomputed here (C1) |
 | `TV(μ_V^ω, μ_V^{ω'}) = TV(m_x^ω, m_x^{ω'})` for a change at an `x`-slot (O) | proved; executed on all `476,280` instances at `(3, 1, 2)` (B1) |
-| `P_π(η_x ≠ η'_x) ≥ TV(m_x, m'_x)` for every coupling (N) | proved; the sequential coupling executed on `201` instances (B2, B3) |
-| the sequential coupling's upper bound `W_1 ≤ TV(m_x)(1 + c_1)` | proved; executed (B4) |
-| `ρ`, `ρ'` exactly; `B_V ∈ [10(ρ + ρ'), 10ρ(1 + c_1)]`; `> 2` at the silent triples, `< 2` at the region triples | executed (C2–C6) |
-| the finite-window block-scan contraction iff `B_V < 2` (M) | proved on the interior of a finite window; the `Z^3` implication open |
+| `P_π(η_x ≠ η'_x) ≥ TV(m_x, m'_x)` for every coupling (N) | proved; both couplings executed on `202` instances (B2, B3) |
+| `W_1 = TV(m_x) + TV(m_y)` for a change at an `x`-slot (N') | proved by the disjoint-support coupling; executed (B4); the sequential coupling's weaker bound executed (B5) |
+| `ρ`, `ρ'`, `σ` exactly; `B_V = 10σ`; `> 2` at the silent triples, `< 2` at the region triples | executed (C2–C6) |
+| the finite-window block-scan contraction when `B_V < 2` (M) | proved on the interior of a finite window; the `Z^3` implication open |
 | the scans along `(t, 1, 1)`, `(t, t, 1)` | executed (D1, D2) |
 | a criterion deciding the silent triples | open; not this note |
 
@@ -187,17 +193,48 @@ TV(μ|_x, ν|_x)` and `W_1(μ, ν) ≥ Σ_x TV(μ|_x, ν|_x)`. Consequently `b_V
 *Proof.* For any set `A ⊂ M`, `μ|_x(A) − ν|_x(A) = P_π(η_x ∈ A) − P_π(η'_x ∈ A)
 = P_π(η_x ∈ A, η'_x ∉ A) − P_π(η_x ∉ A, η'_x ∈ A) ≤ P_π(η_x ≠ η'_x)`; taking `A`
 the set where `μ|_x ≥ ν|_x` gives `TV`. Summing over `x` and taking the minimum
-over `π` gives the `W_1` bound; the supremum over pairs at a slot gives `b_V(z)
-≥ ρ_z + ρ'_z`, and the slot symmetry gives the sum. ∎
+over `π` gives the `W_1` bound. ∎ (The supremum of the sum over the boundary
+instances is `σ`, not `ρ + ρ'`: the two marginal suprema are attained at
+different instances, and `σ ≤ ρ + ρ'` strictly at every triple executed.)
 
-**Consequence (the silence).** `10(ρ + ρ') = 3.2457…, 2.4323…, 2.4470…` at
-`(3, 1, 2)`, `(5, 2, 4)`, `(7, 3, 5)` (C5), all above `2 = |V|`. Whatever
+## Theorem N' — the lower bound is attained: `W_1 = TV(m_x) + TV(m_y)` exactly
+
+**Statement.** For `z ∈ ∂x` and `ω ~ ω'` at `z`, `W_1(μ_V^ω, μ_V^{ω'}) =
+TV(m_x^ω, m_x^{ω'}) + TV(m_y^ω, m_y^{ω'})`. Consequently `b_V(z) = σ` for every
+slot and `B_V = 10σ`, with `σ = sup_{ω ~ ω'} (TV(m_x) + TV(m_y))`.
+
+*Proof.* Write `a = m_x^ω`, `b = m_x^{ω'}`, and `K` for the common conditional
+(Theorem O). Couple `(s_x, s'_x)` by the maximal coupling of `a, b`: on the
+common mass `min(a, b)` set `s_x = s'_x` and draw one `y` value from `K(· |
+s_x)` for both copies, so `y` agrees there. The residual masses `(a − b)^+` and
+`(b − a)^+` have disjoint supports and equal total `TV(a, b)`; push each
+through `K` to the residual `y`-measures `R = Σ_s (a − b)^+(s) K(· | s)` and
+`R' = Σ_s (b − a)^+(s) K(· | s)`, of equal mass. On the residual branch draw
+`(s_y, s'_y)` from the maximal coupling of `R` and `R'` (as measures of equal
+mass) and then assign `s_x` from the posterior `(a − b)^+(s) K(s_y | s)/R(s_y)`
+and `s'_x` from the corresponding posterior under `R'`, independently. The
+marginals are `μ_V^ω` and `μ_V^{ω'}` (on each branch the `(x, y)` law is the
+push-forward of the correct sub-measure). The `x` values differ exactly on the
+residual branch, with probability `TV(a, b)`, because the residual supports are
+disjoint; the `y` values differ exactly where the residual `y`-coupling does,
+with probability the total-variation distance of `R` and `R'`, which equals
+`TV(m_y^ω, m_y^{ω'})` since `m_y^ω − m_y^{ω'} = Σ_s (a − b)(s) K(· | s) = R −
+R'`. So `E d_H = TV(m_x) + TV(m_y)`, which by Theorem N is the minimum. The
+supremum over the instances at a slot is `σ`, the same for every slot of `∂x`
+and of `∂y` by the block's symmetries. ∎ Executed: the coupling built as an
+exact table on the `202` declared instances at `(3, 1, 2)`, both marginals
+exact, every entry nonnegative, `E d_H = TV(m_x) + TV(m_y)` on every instance
+and never above the sequential coupling's (B2, B4).
+
+**Consequence (the silence).** `B_V = 10σ = 152203860/48008647 ≈ 3.1703`,
+`124859962305/55627392667 ≈ 2.2445`, `14627647143900/6157201570091 ≈ 2.3756`
+at `(3, 1, 2)`, `(5, 2, 4)`, `(7, 3, 5)` (C5), all above `2 = |V|`. Whatever
 coupling a proof of the block criterion may use, and whatever the criterion's
 infinite-lattice consequence, the two-site block sum exceeds the block size at
 each silent triple: the two-site block criterion decides nothing there. This is
 a finite exact statement, not a route no-go beyond the two-site block.
 
-**The sequential coupling (the upper bound).** Given `ω ~ ω'` at `z ∈ ∂x`,
+**The sequential coupling (recorded; not optimal).** Given `ω ~ ω'` at `z ∈ ∂x`,
 draw `(s_x, s'_x)` from the maximal coupling of `m_x^ω, m_x^{ω'}` (block 03,
 Step 0), then `(s_y, s'_y)` from the maximal coupling of `K(· | s_x)` and
 `K(· | s'_x)` (the same kernel, by Theorem O). Both marginals are the block
@@ -206,12 +243,13 @@ coincide and `s_y = s'_y`; when `s_x ≠ s'_x`, `P(s_y ≠ s'_y) = TV(K(· | s_x
 K(· | s'_x)) ≤ sup_{s ≠ s'} TV(K(· | s), K(· | s')) ≤ c_1`, since `K(· | s)` is
 the six-slot conditional of `y` with the `x`-slot at `s` and the other five
 slots fixed, and `c_1` is the supremum over one-slot changes. Hence `E d_H ≤
-TV(m_x)(1 + c_1)`, `b_V(z) ≤ ρ(1 + c_1)`, `B_V ≤ 10ρ(1 + c_1)`. Executed: the
-coupling built as an exact `36 × 36` table on the `201` declared instances,
-both marginals exact and all entries nonnegative (B2); `E d_H ≥ TV(m_x) +
-TV(m_y)` (B3) and `E d_H ≤ TV(m_x)(1 + c_1)` (B4) on every instance.
+TV(m_x)(1 + c_1)` and `B_V ≤ 10ρ(1 + c_1)`, a weaker bound than Theorem N'
+(`3.4728…` against `3.1703…` at `(3, 1, 2)`). Executed: the coupling built as an
+exact table on the `202` declared instances, both marginals exact and all
+entries nonnegative (B2); `E d_H ≥ TV(m_x) + TV(m_y)` (B3) and `E d_H ≤
+TV(m_x)(1 + c_1)` (B5) on every instance.
 
-## Theorem M — the block scan contracts the total disagreement iff `B_V < 2` (finite windows)
+## Theorem M — the block scan contracts the total disagreement when `B_V < 2` (finite windows)
 
 **Statement.** Let `Λ ⊂ Z^3` be a finite window with exterior records and
 `n = |Λ|`. The random block scan picks `a ∈ Λ` uniformly and resamples
@@ -225,8 +263,9 @@ updates in which `z` is a boundary slot of their `W_1` sensitivities to `z`.
 For sites `x` with `x ± e ∈ Λ`, `κ_x = 2`; for sites `z` whose neighbors and
 their `e`-translates lie in `Λ`, `β_z = B_V` (the ten translates of `V`
 adjacent to `z`, by translation covariance). On such an interior the
-coefficient of `u_z` is `1 − (2 − B_V)/n`: the scan contracts the interior
-total disagreement exactly when `B_V < 2`.
+coefficient of `u_z` is `1 − (2 − B_V)/n`: the bound contracts the interior
+total disagreement when `B_V < 2` (sufficiency; whether the scan fails to
+contract when `B_V ≥ 2` is not asserted).
 
 *Proof.* Condition on the current pair and the chosen `a`. The sites outside
 the update keep their disagreement; for the update `W = (V + a) ∩ Λ`, the
@@ -247,25 +286,27 @@ per-site decay (the matrix `D_Λ` and the walk-count bound). The block scan
 bounds the sum over the block, not each site, so the passage to `Z^3` needs a
 block-level version of that decay; it is not proved here, and this note claims
 nothing on `Z^3` from Theorem M. The silence of Theorem N does not depend on
-it: at the silent triples the interior coefficient `1 − (2 − B_V)/n` is at
-least `1` for every coupling.
+it: at the silent triples the interior coefficient `1 − (2 − B_V)/n` of the
+bound is at least `1` for every coupling, so Theorem M gives nothing there.
 
 ## The sensitivities, exactly (executed)
 
-| triple | `c_1` | `ρ` | `ρ/c_1` | `ρ'` | `B_V` lower `10(ρ + ρ')` | `B_V` upper `10ρ(1 + c_1)` |
+| triple | `c_1` | `ρ` | `ρ/c_1` | `ρ'` | `σ` | `B_V = 10σ` |
 |---|---|---|---|---|---|---|
-| `(3, 1, 2)` | `270/989` | `2168397/7948400` | `0.9992` | `1350/26077` | `3.2457…` | `3.4728…` |
-| `(5, 2, 4)` | `8650000/40615109` | `271059507090000/1298168979740633` | `0.9804` | `1915425000/55627392667` | `2.4323…` | `2.5327…` |
-| `(7, 3, 5)` | `6391462/29948925` | `239957740750/1121635870169` | `1.0024` | `856455908/27833079009` | `2.4470…` | `2.5959…` |
-| `(2, 1, 2)` | `2/13` | `67715/446034` | `0.9868` | — | — | `1.7517…` |
-| `(3, 2, 2)` | `2079/15566` | `1471549788/11145302999` | `0.9885` | — | — | `1.4966…` |
-| `(5, 4, 4)` | `4000000/61385721` | `81847628000000/1305850357630907` | `0.9618` | — | — | `0.6676…` |
+| `(3, 1, 2)` | `270/989` | `2168397/7948400` | `0.9992` | `1350/26077` | `15220386/48008647` | `3.1703…` |
+| `(5, 2, 4)` | `8650000/40615109` | `271059507090000/1298168979740633` | `0.9804` | `1915425000/55627392667` | `24971992461/111254785334` | `2.2445…` |
+| `(7, 3, 5)` | `6391462/29948925` | `239957740750/1121635870169` | `1.0024` | `856455908/27833079009` | `1462764714390/6157201570091` | `2.3756…` |
+| `(2, 1, 2)` | `2/13` | `67715/446034` | `0.9868` | — | `14803/90094` | `1.6430…` |
+| `(3, 2, 2)` | `2079/15566` | `1471549788/11145302999` | `0.9885` | — | `31495356/211495159` | `1.4891…` |
+| `(5, 4, 4)` | `4000000/61385721` | `81847628000000/1305850357630907` | `0.9618` | — | `261542884000000/3917551072892721` | `0.6676…` |
 
-The maximizing instances (lexicographically first over multisets, the `∂y`
-multiset, the other four `∂x` values and the pair, under `--exact`): at
+The maximizing instances of `ρ` (lexicographically first over multisets, the
+`∂y` multiset, the other four `∂x` values and the pair, under `--exact`): at
 `(3, 1, 2)` the `∂y` slots `(+x, +x, +x, +y, +y)`, the `∂x` slots `(+x, +x, +x,
 −y)`, the pair `+x ↔ −x`; at `(5, 2, 4)` and `(5, 4, 4)` all ten slots `+x` with
-the pair `+x ↔ −x`. Why averaging over the partner barely helps: the
+the pair `+x ↔ −x`. The maximizers of `σ` differ (at `(3, 1, 2)`: `∂y` `(+x,
++x, +x, +y, −y)`, `∂x` four `−x`, the pair `+x ↔ −x`), which is why `σ < ρ +
+ρ'`. Why averaging over the partner barely helps: the
 `x`-marginal is the one-site conditional with the `y`-slot's factor `φ(s_x,
 η_y)` replaced by the effective factor `h(s_x) = Σ_{s_y} φ(s_x, s_y) w_y(s_y)`,
 and at the maximizing `∂y` shells `h` is as steep across the menu as a single
@@ -292,7 +333,7 @@ route closure at the scope of the two-site block, so the gate is answered.
 
 | route | what it would attempt | its terminal obligation | marker |
 |---|---|---|---|
-| 1 the two-site block (this note) | `B_V < 2` | exact `ρ, ρ'`; the `W_1` lower bound | executed: `B_V ≥ 2.43` at every silent triple; closed for every coupling |
+| 1 the two-site block (this note) | `B_V < 2` | exact `ρ, ρ'`; the `W_1` lower bound | executed: `B_V = 3.17, 2.24, 2.38 > 2` exactly; closed for every coupling |
 | 2 larger blocks (a planar `k × k` window) | per-site boundary influence below one, volume beating surface | exact block sensitivities for `6^{|∂V|}` boundary shells — not exactly computable beyond a plaquette at this menu; and the block-level decay of Theorem M's open implication | not attempted; obligation named |
 | 3 a transfer-matrix route on slabs | a spectral gap uniform in the slab width | uniformity in the width | not attempted |
 | 4 a convergent expansion around the constant rule | convergence at `(3,1,2)` etc. | a convergent polymer bound at couplings far from constant | not attempted |
@@ -328,7 +369,7 @@ and M is written; the open implication of M is named as open, not assumed.
 
 | phrase | per-element | per-site | per-mode | per-block | lattice-wide |
 |---|---|---|---|---|---|
-| "the two-site block criterion is silent at the three silent triples for every coupling" | executed: every boundary instance for `ρ`, `ρ'`; the factorization on every instance at `(3,1,2)` | executed: `x`- and `y`-marginal sensitivities separately; the coupling's `x` and `y` disagreements | executed: the sequential coupling built explicitly on `201` instances | executed: the pair block with its ten slots; the bounds at six triples; two line scans | not claimed: the block contraction's `Z^3` implication is not proved; the silence is a finite exact statement |
+| "the two-site block criterion is silent at the three silent triples for every coupling" | executed: every boundary instance for `ρ`, `ρ'`; the factorization on every instance at `(3,1,2)` | executed: `x`- and `y`-marginal sensitivities separately; the coupling's `x` and `y` disagreements | executed: the optimal and the sequential couplings built explicitly on `202` instances | executed: the pair block with its ten slots; the bounds at six triples; two line scans | not claimed: the block contraction's `Z^3` implication is not proved; the silence is a finite exact statement |
 
 The runner prints matching `per_element:` … `lattice_wide:` lines.
 
@@ -348,8 +389,8 @@ sensitivities alone, the block sum at `(5, 2, 4)` might fall below two." Reply
 at scope: any coupling of the two block laws disagrees at `x` with probability
 at least `TV(m_x)` (Theorem N), so any criterion of the form "the sum over
 boundary slots of a per-slot coupling cost, counted per site, is below the block
-size" inherits the lower bound `10(ρ + ρ')/2 = 1.22, 1.22, 1.62 > 1`
-per site at the silent triples; a criterion using marginal sensitivities alone
+size" inherits the exact per-site value `B_V/2 = 1.5852, 1.1223, 1.1878 > 1`
+at the silent triples (for the Hamming cost this is the minimum itself, by N'); a criterion using marginal sensitivities alone
 with a different normalization is a different theorem, whose proof is not
 available here — named as route 2's obligation. Conceded: nothing here says the
 silent triples are not unique.
@@ -368,11 +409,13 @@ finite; nothing is claimed at the silent triples in either direction.
 
 The theorems fail if any of these finite statements fails: a boundary
 instance at `(3, 1, 2)` where `TV(μ_V) ≠ TV(m_x)` under a change at an `x`-slot;
-a sequential coupling with a wrong marginal or a negative entry; an instance
-with `E d_H < TV(m_x) + TV(m_y)` or `E d_H > TV(m_x)(1 + c_1)`; a `c_1`, `ρ` or
-`ρ'` literal differing from the recomputation; a ratio `ρ/c_1` at `(7, 3, 5)`
-at most `1` or a ratio above `1` at the other five triples; `10(ρ + ρ') ≤ 2` at
-a silent triple; `10ρ(1 + c_1) ≥ 2` at a region triple; a crossing of `5ρ(1 +
+a coupling with a wrong marginal or a negative entry; an instance with
+`E d_H < TV(m_x) + TV(m_y)` for either coupling, with the disjoint-support
+coupling's `E d_H ≠ TV(m_x) + TV(m_y)`, or with the sequential coupling's
+`E d_H > TV(m_x)(1 + c_1)`; a `c_1`, `ρ`, `ρ'` or `σ` literal differing from the
+recomputation; `σ > ρ + ρ'` or `σ > ρ(1 + c_1)` at a triple; a ratio `ρ/c_1` at `(7, 3, 5)`
+at most `1` or a ratio above `1` at the other five triples; `10σ ≤ 2` at a silent
+triple; `10σ ≥ 2` at a region triple; a crossing of `5ρ(1 +
 c_1)` or `6c_1` outside the declared scan cells; `ρ/c_1 ≤ 1` at or beyond the
 declared points on the scans.
 
@@ -384,9 +427,10 @@ No formation order, formation law, plane, bridge, Born or gravity statement ente
 
 The block criterion and the Hamming coupling distance are classical references re-proved here at the scope used; no value, constant or theorem is imported as authority.
 
-Further: `W_1` is bounded, not computed; the sequential coupling is one
-coupling, not the optimal one; Theorem M holds on the interior of a finite
-window and its boundary terms are not analyzed; the scans on the lines are at
+Further: `W_1` is computed exactly only for changes at one slot of the block
+boundary (the objects the criterion uses); the sequential coupling is recorded
+as a valid but weaker bound; Theorem M is a sufficiency statement on the
+interior of a finite window and its boundary terms are not analyzed; the scans on the lines are at
 the declared rational points only and no threshold of the two-site number is
 isolated; the maximizing instances are lexicographically first among ties; the
 parent is proposed and unaudited; no axiom or primitive is changed.
@@ -407,8 +451,18 @@ constant enters.
 Supervisor-authored (Fable) from the supervisor's controls
 `specs/supervisor_control_block04_two_site.py` and
 `specs/supervisor_control_block04_lines.py`, which computed every number here
-before the contract `GOAL_block04.md` was written; refuting checker: pending;
-independence class: to be filled after the checker. Settled while executing:
+before the contract `GOAL_block04.md` was written. Refuting checker (Opus 5,
+disjoint machinery; `CHECKER_block04_findings.md`): FIX FIRST — the first
+draft's consequence "`b_V(z) ≥ ρ + ρ'`" added two separate suprema (the wrong
+direction: the maximizers are different instances) and its three headline
+numbers were false; the checker proved and verified on `5,406` exact
+min-cost-flow solves that `W_1 = TV(m_x) + TV(m_y)` exactly, so the block sum
+is the exact `10σ` stated here; folded as Theorem N', the `σ` column, the
+corrected N7 figures, the sufficiency wording of Theorem M, and the runner's
+optimal-coupling checks (`specs/supervisor_control_block04_after_checker.py`
+reproduced the checker's three fractions and the coupling before the fold).
+Everything else the checker attacked held. Independence class: single family
+(Claude), cross-model — Fable supervisor-author, Opus 5 refuting checker. Settled while executing:
 the block is small because the controls showed `ρ/c_1 ≈ 1` at every silent
 triple, so the contract was written for the obstruction, not for a decision.
 
@@ -420,10 +474,10 @@ python3 scripts/admissibility_rule_two_site_block_criterion_exact_silent_for_eve
 python3 scripts/admissibility_rule_two_site_block_criterion_exact_silent_for_every_coupling_2026_09_07.py --mutation lower_bound_lemma_forged
 ```
 
-Families: A authority and inputs; B the factorization, the sequential coupling
-and the two bounds (O, N); C the sensitivities, ratios and block-sum bounds; D
+Families: A authority and inputs; B the factorization, the two couplings and
+the bounds (O, N, N'); C the sensitivities, ratios and block-sum bounds; D
 the line scans; E fences, the author-name section rule and the floating-point
-self-scan; F the resolution certificate. Each of the 16 declared mutations
+self-scan; F the resolution certificate. Each of the 17 declared mutations
 perturbs one object at construction time and fails in exactly one family;
 `--exact` prints the maximizing instances and the scans. Expected final line:
-`TOTAL: PASS=21 FAIL=0`.
+`TOTAL: PASS=22 FAIL=0`.
