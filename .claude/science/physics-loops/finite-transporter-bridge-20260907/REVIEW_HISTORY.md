@@ -1,0 +1,1 @@
+Exposed root candidate preceded native prospective contract. Native complete proof froze before root completed verification was read. Root verification explicitly informed by stronger native bound. Primary cold review found no correction. First R0 tautology strengthened before final raw exposure; original bytes retained.

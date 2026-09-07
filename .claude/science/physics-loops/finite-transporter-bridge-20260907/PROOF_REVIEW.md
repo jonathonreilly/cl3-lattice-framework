@@ -1,0 +1,1 @@
+Native frozen proof90f8a663: primaryd5e40b00 PASS and root ROOT_NATIVE_REVIEW PASS. Root verification82081e42: native ROOT_REVIEW PASS. Root received the stronger native path-bound summary before writing; timing is explicit. Canonical port review remains pending.

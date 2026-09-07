@@ -1,0 +1,1 @@
+Conditional-support. Exact finite matrix-unitarity exclusion paired with a positive low-energy approximation theorem. No general finite quantum-link, gauge covariance, unitary time evolution, compiler or continuum no-go.

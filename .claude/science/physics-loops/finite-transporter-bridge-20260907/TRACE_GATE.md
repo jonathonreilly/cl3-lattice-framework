@@ -1,0 +1,1 @@
+Conditional upstream support only. The theorem distinguishes exact covariance from matrix unitarity and supplies a bounded-energy approximation; no physical parameters, compiler or axioms are derived.

@@ -1,0 +1,1 @@
+Canonical --json/default and unknown-flag adverse runs passed. All raw scientific fields equal after declared metadata normalization.17 actual checks; exact57matrix sparse entries emitted. No graph/full pipeline/audit verdict run in scratch.

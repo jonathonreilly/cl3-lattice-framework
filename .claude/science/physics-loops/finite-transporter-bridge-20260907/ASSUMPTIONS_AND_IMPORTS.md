@@ -1,0 +1,1 @@
+Normalized SU3 Haar multiplication, complete irreps p+q<=R, exact endpoint covariance, supplied electric spectrum and initial cutoff support. Path links must be distinct. Total and per-link energy budgets are separate. Prior quantum-link literature supplies context only; all mathematical claims are proved in the source.

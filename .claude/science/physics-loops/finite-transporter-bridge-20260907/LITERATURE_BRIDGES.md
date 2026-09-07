@@ -1,0 +1,1 @@
+Primary quantum-link context: https://arxiv.org/abs/hep-lat/9609042 and https://arxiv.org/abs/2107.09335 . Exact gauge covariance in finite carriers is established prior art; no novelty claim for generic quantum-link principles. Full copyrighted papers are not copied.
