@@ -1,0 +1,7 @@
+# Analytic Perron insertion investigation
+
+2026-09-07, before evaluating a sign identity. Keep exactly the Dirichlet positive chamber C, L=(dxx-dxy+dyy)/3, S=exp(L/2), W=H exp(-Q), H=xy(x+y)/2,Q=x²+xy+y², T0=S M_W S and its normalized positive Perron vector phi. Write psi=Sphi, mu=<psi,Wpsi>, f=Q(Q-7)W/4 and d0=<psi,fpsi>. No trial function will be identified as phi and no coefficient will be fitted numerically.
+
+Attempt1: cone-preserving unitary dilations U_a u(x)=a u(ax). Derive a valid stationary-eigenvalue/virial identity, checking the unbounded dilation/Dirichlet domains through bounded-operator differentiation rather than assuming phi lies in every generator domain. Determine exactly which first/second weighted radial moments it constrains. Attempt2: test whether positivity, log-concavity or radial comparison yields a rigorous second-moment inequality sufficient for d0's sign. Any unproved radial monotonicity of psi/H is recorded as an obstruction, not promoted to a lemma. Attempt3: report unconditional quantitative constraints from the positive probability measure W|psi|²/mu even if sign remains open.
+
+The independent native agent explores the positive kernel sqrt(W)e^Lsqrt(W); do not read its new result before deriving these identities. No source edits, new numerical eigenfunction, continuum-domain claim or external physical interpretation. Preserve failed argument steps. A valid outcome is a domain-safe identity and rigorous constraints without a sign determination.

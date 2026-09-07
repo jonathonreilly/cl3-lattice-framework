@@ -1,0 +1,7 @@
+# Root proof and source review
+
+Root independently checked the Fourier scaling, low-frequency damping and high-tail constants, six reflected endpoint images and weighted Hilbert–Schmidt scaling. The full top coefficient is obtained through the spectrum-equivalent two-sided weighted kernel. Cubic wall vanishing applies to the smooth kernel/eigenvector product and squared eigenvector, not the fractional-regularity eigenvector alone. Uniform fourth derivative Gaussian envelopes justify tensor Euler–Maclaurin and an O(h4) sampled quasimode residual; qualitative compact convergence and the simple gap identify the top branch. Root verified the domain-safe dilation identity and coefficient lower bound7/16. The final spectral remainder is onlyo(beta^-1); the orderh cell projection obstruction is preserved.
+
+Cross-reviews are hash-specific. Root recopied the final fulltop source after the sole T/T0 notation repair. The native helper cold review required distinguishing the analytic Chernoff inequality from its uncertified floating evaluation; root made that reporting clarification and canonical N5 labels without changing119assertions,36rows, parameters or matrix-free native generator. Original scratch and both memory-failed allocations are retained. Canonical runners are rerun after this source freeze.
+
+Canonical native default output also emits all36kernel rows so the cache retains actual numerical resolution, in addition to pure --json. This reporting-only change preserves every assertion and parameter.

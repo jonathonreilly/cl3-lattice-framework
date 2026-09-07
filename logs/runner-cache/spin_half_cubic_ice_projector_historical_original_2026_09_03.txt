@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py
+runner_sha256: 8becfe5e91a731e38bc056b69044f03f8c40ced504641ba6893f3410893c1706
+input_fingerprint_sha256: 3c58cd9e3a66fa268a03c885c7305ba4d1c4a505800468e4342a58d8e4625766
+timeout_sec: 480
+exit_code: 0
+elapsed_sec: 266.42
+status: ok
+----- stdout -----
+[PASS] 01 the L=2,4,6,8,10 projector geometries contain exactly 3L^3 four-link square moves
+[PASS] 02 opposite noncontractible line pairs provide three nonlocal zero-flux initialization controls
+[PASS] 03 the exact L=2 eigenvectors satisfy the constant-trial mixed-estimator identity in both flux sectors
+[PASS] 04 the stochastic projector reproduces four exact L=2 ground energies at V=0.95 and V=0.90
+[PASS] 05 every projector population preserves exact local flippability, three-of-six Gauss charge, and assigned flux
+[PASS] 06 all populations retain effective weight and final-state diversity above the declared collapse controls
+[PASS] 07 every L=4,6,8 finite-detuning flux ladder has resolved positive electric stiffness
+[PASS] 08 Phi^2/L beats a linear-in-|Phi| curve separately on every full flux ladder
+[PASS] 09 the shrinking-density L=10 endpoints independently retain positive stiffness
+[PASS] 10 doubled L=8 populations reproduce the positive endpoint stiffness within fifteen percent
+[PASS] 11 the joint L=4,6,8,10 data prefer Maxwell Phi^2/L scaling over four named controls
+[PASS] 12 the volume ladder is stable and remains near the independent first-order U/|delta V| coefficient
+EXACT V=0.95 Phi=0 E0=-0.402736506 projector=-0.402717719+/-0.000143474
+EXACT V=0.95 Phi=1 E0=-0.328353309 projector=-0.328269366+/-0.000095120
+EXACT V=0.90 Phi=0 E0=-0.810822412 projector=-0.810989837+/-0.000199869
+EXACT V=0.90 Phi=1 E0=-0.664101443 projector=-0.663706429+/-0.000116271
+CURVE V=0.95 L=4 U=0.162431+/-0.002836 rss_quad=0.00000758 rss_linear=0.00043585
+CURVE V=0.95 L=6 U=0.158859+/-0.003556 rss_quad=0.00000179 rss_linear=0.00096923
+CURVE V=0.95 L=8 U=0.158029+/-0.004098 rss_quad=0.00005171 rss_linear=0.00216498
+CURVE V=0.90 L=4 U=0.323246+/-0.005698 rss_quad=0.00000678 rss_linear=0.00149915
+CURVE V=0.90 L=6 U=0.316443+/-0.008214 rss_quad=0.00001294 rss_linear=0.00421991
+CURVE V=0.90 L=8 U=0.327441+/-0.007456 rss_quad=0.00000206 rss_linear=0.00875919
+POPULATION_CONTROL V=0.95 U_256=0.156557 U_512=0.161363+/-0.003361
+POPULATION_CONTROL V=0.90 U_256=0.327962 U_512=0.321798+/-0.006029
+DATA V=0.95 U_L=4:0.162431,6:0.158859,8:0.161363,10:0.167899 U/|deltaV|=3.252761 global_rss=0.00014972
+MODEL_CONTROL V=0.95 rss=quadratic_over_length:0.00014972,linear:0.00482474,linear_over_length:0.01507353,quadratic:0.00423395,step:0.04087815
+DATA V=0.90 U_L=4:0.323246,6:0.316443,8:0.321798,10:0.322970 U/|deltaV|=3.211140 global_rss=0.00007401
+MODEL_CONTROL V=0.90 rss=quadratic_over_length:0.00007401,linear:0.01707266,linear_over_length:0.05625386,quadratic:0.01900005,step:0.15655303
+CERTIFICATE: exact_stoquastic_green_function=True constant_trial_mixed_estimator=True finite_population=True finite_imaginary_time=True thermodynamic_limit=False real_time_spectrum=False
+RESOLUTION: per_element=every accepted square flip; per_site=all final walkers preserve Gauss; per_mode=electric topological flux; per_block=exact L2 plus projector L4,6,8,10; lattice_wide=finite-volume finite-detuning stiffness, not a thermodynamic phase proof
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+
