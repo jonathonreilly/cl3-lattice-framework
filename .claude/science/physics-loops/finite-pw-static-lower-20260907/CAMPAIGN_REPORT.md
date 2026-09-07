@@ -1,5 +1,7 @@
 # TOE campaign: scientific progress and the next highest-value work
 
+> Delivery status: [Final delivery receipt](DELIVERY_RECEIPT.md) supersedes the checkpoint status below. The reviewed scientific discussion is unchanged.
+
 Campaign window:2026-09-07 10:59:43–22:59:43 UTC. This report is an in-progress checkpoint; the final delivery receipt will state the actual finish time and publication state. Three GPT-6-Astra low workers ran alongside the coordinator, within the environment's four simultaneous-agent slots. The user's original dirty checkout was preserved. Science was developed and reviewed in isolated branches. We performed no science merges to main and assigned no audit verdicts; external integrations are distinguished below.
 
 ## What improved
