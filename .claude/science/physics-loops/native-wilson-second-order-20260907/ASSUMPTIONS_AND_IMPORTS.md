@@ -1,0 +1,7 @@
+# Assumptions and imports
+
+Both sources are conditional support; author proposals are proposed_retained and independent audit remains unset. The multiplier uses the exact six-neighbor native recurrence and Weyl reflection identity from the September2 parent, including its Fourier phase and orbit factor1/6. The common-space insertion also imports the parent local heat-kernel CLT, uniform return bound and compact weighted-sandwich argument. The leading-eigenvalue comparison imports the parent strictly positive compact kernel and simple isolated Perron eigenvalue. The source dependency graph names that direct parent explicitly.
+
+The native packet is not identified with physical Wilson group convolution. No Wilson action, supplied environment, formation primitive, continuum field-theory limit or mass gap is derived. beta is an analytic model parameter. Independent recurrence and quadrature are floating diagnostic falsifiers below the theorem threshold, not certified enclosures. Exact rational checks certify arithmetic margins; the infinite-dimensional statements require the displayed proofs.
+
+Root port review found one presentation-level import omission in the introductory summary and graph of the operator note; both now explicitly include the heat-kernel and Perron parent facts already used in its detailed proof. The source title now reflects the final global multiplier theorem. Runner bytes and scientific formulas are unchanged. Original source bytes and independent reviews are preserved; no audit verdict is assigned.
