@@ -1,0 +1,3 @@
+# Prospective exact scalar supplement for the coherent anisotropic package
+
+Freeze before running new scalar checks: certify detH>=k^12 and detH<=(55/2)k^12 for k>=1; 24/(11k)<=sigma_minus<=6/k; exact normalization power48+2+2=52; beta exponent108 gives accumulated power1+2*52-108=-3; its threshold power108-2*52=4 is positive; and the normalized Gaussian ground prefactor simplifies to16sqrt3 pi/(sqrt(sigma_plus)+sqrt(sigma_minus))^8. Use polynomial nonnegative coefficients after k=u+1 where appropriate. These eight checks supplement the original14geometry/OU checks without changing their fixed data. Count one additional positive resource guard separately. No numerical onset or model constant is evaluated.

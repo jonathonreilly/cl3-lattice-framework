@@ -1,0 +1,3 @@
+# N1–N8 scope
+
+N1: Positive conditional construction on the exact declared source map. N2: Positive anisotropy and22 weighted faces; no zero-anisotropy endpoint. N3: Actual Gaussian normalization and chart tail estimates, no replacement model. N4: All scale powers derive from136/16 dimensions and determinant degree12. N5:23 finite exact checks; no executed many-step lattice or numeric onset. N6: Repeated compressed-source composition remains supplied. N7: Independent trees and independent98/52 derivations, with hash-specific reviews and failed controls. N8: Full gauge transfer and physical time selection are separate next tasks. Heavy universal-negative packet NOT PASS and not claimed.

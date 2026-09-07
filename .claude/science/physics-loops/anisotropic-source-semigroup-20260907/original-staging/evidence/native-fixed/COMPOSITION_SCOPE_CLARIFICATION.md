@@ -1,0 +1,3 @@
+# Additional composition clarification; frozen proof8363d46a unchanged
+
+The powers in that proof are powers of the supplied compressed central source operator A=D/D00. This is an additional composition contract. It is not an identification with a longer microscopic slab: generally (I* T I)^n differs from I* T^n I, and omitted environmental variables are projected/reinserted under repeated source compression. Thus “actual operator powers” refers to exact powers of this actual finite source operator, not a derived physical-time or n-layer gauge transfer law. The mathematical norm-limit statements remain the explicitly written powers of A. This clarification must be carried into any canonical source.

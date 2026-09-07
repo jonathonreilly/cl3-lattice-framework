@@ -1,0 +1,5 @@
+# Root final port review
+
+PASS for the canonical source/runner hashes in CANONICAL_HASHES.json. Root reviewed both complete frozen mathematical derivations independently, then checked the source headers, explicit dependencies, covariance factors, oscillator unitary and composition disclaimer in this port. The canonical uniform proof preserves the exact normalized-Gaussian identity and all k52/beta, n108 estimates; the first note retains the fixed-k iterated result and OU invariant generator without implying a full-slab composition law. Root proof and primary cold-review memos are preserved with hashes.
+
+The helper is the independently constructed geometry plus prospective exact scalar supplement. Its actual23-control JSON is unchanged by the appended resource stdout line except source hash and runtime measurements; the new canonical stdout cache is staged. Five literal scope labels remain present. Analytic constants and onset are not numerically evaluated. No new audit verdict or actual-space dynamics claim is introduced.

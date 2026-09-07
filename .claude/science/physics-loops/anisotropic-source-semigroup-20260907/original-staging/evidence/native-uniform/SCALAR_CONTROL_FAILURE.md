@@ -1,0 +1,1 @@
+The first canonical supplement run reached the last scalar check, where SymPy factor returned unevaluated 0*sqrt(3), structurally unequal to integer0. The exact expression is identically zero. Preserve original checker; fix only applies simplify to the factored residual before equality. No bound, fixture, expected coefficient or scientific output changed.
