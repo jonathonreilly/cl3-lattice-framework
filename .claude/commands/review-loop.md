@@ -10,9 +10,9 @@ Run the repo-native physics review loop from:
 
 Mode selection:
 - **Zero arguments** (`/review-loop`): the parallel open-PR backlog drain
-  per the skill's Default Entry — enumerate open non-draft PRs, one
-  reviewer slot per PR, and land independently confirmed PRs through the
-  skill's continuously collected trains of at most eight.
+  per the skill's Default Entry — enumerate open non-draft, non-reserved PRs,
+  form coherent frozen review units, and land independently confirmed units
+  through the skill's continuously collected trains of at most eight.
 - **Named `[target]`** (a branch or PR): focused mode — review only that
   target's changes against `origin/main` or `main`.
 - **Free-text `[focus]` without a target** (e.g. `/review-loop imports`):
@@ -37,9 +37,12 @@ Mode selection:
 4. Fix only verified, narrow findings. Demote overclaims instead of patching
    missing science with prose.
 5. Enforce audit-system compatibility without running the independent audit:
-   no bare `retained` / `promoted` status lines, seed changed claims through
-   `docs/audit/scripts/run_pipeline.sh`, and require
-   `python3 docs/audit/scripts/audit_lint.py --strict` to pass.
+   no bare `retained` / `promoted` status lines. Run focused source/runner/
+   premise checks per unit; perform one full `docs/audit/scripts/run_pipeline.sh`,
+   `python3 docs/audit/scripts/audit_lint.py --strict`, and changed-evidence
+   validation on the exact integrated current-main candidate. Reuse an identical
+   successful base/tree receipt only under the skill's full provenance rule;
+   do not require duplicate per-PR or per-unit full runs.
 6. Treat review as the pre-landing source gate; the independent audit must
    judge the landed claim without an expectation of agreement. Block PASS when a changed claim has missing graph
    dependencies, author-prewritten audit verdicts, stale retained-status
@@ -72,22 +75,28 @@ Mode selection:
    or audit-readiness repairs into source/tooling/pipeline changes and
    regenerate generated surfaces instead of rejecting them just because they
    are not theorem science.
-11. Draft PRs are out of scope for `/review-loop`: ignore draft-status PRs and
-   never land them unless the user explicitly asks for draft inspection without
-   landing.
+11. Draft PRs are excluded by default. Explicit owner-directed draft triage
+    permits review and a close-with-reason or mark-ready disposition after
+    exact-head verification. Mark-ready is not PASS and still-draft PRs cannot
+    land. Preserve owner-reserved exclusions, including inherited content.
 12. End with a concise report covering imports/support status, retained/bounded
     disposition, salvage disposition, audit-readiness, commits, checks, and
     remaining manual science.
-13. After final PASS, freeze the component provenance in its worker and enroll
-    it in the skill's double-buffered landing train. A train holds at most eight
-    independently passed components, reruns the enumerated combined mechanical
-    gate in one clean integration worktree, verifies every frozen PR head
+13. After final source confirmation, freeze each unit's complete constituent
+    claim/content disposition map, PR heads, source/input hashes, reviewed
+    commits/tree/base, findings hash, and original reviewer session. Enroll it
+    in the skill's double-buffered landing train of at most eight units. Depart
+    with a useful ready batch as soon as the coordinator is available; no fixed
+    collection wait. The combined mechanical gate runs once in one clean
+    integration worktree, verifies every frozen PR head
     immediately before push, pushes atomically, verifies containment, and
     rechecks each head immediately before its own close. The next empty train
-    opens as soon as the old membership freezes. Source conflicts and moved
-    heads return only the affected component to its original worker and
-    reviewer session. A named focused target flushes as a one-component train
-    once confirmed unless it was explicitly added to an ongoing backlog drain.
+    opens as soon as the old membership freezes. Source conflicts, moving heads,
+    or changed semantic interactions hold the affected unit and its dependents
+    for original-session confirmation. Verify accepted constituent source on
+    current main before closing and preserve rejected/deferred recovery handles.
+    A named focused target flushes as a one-component train once confirmed
+    unless explicitly added to an ongoing backlog drain.
 
 ## Non-Negotiables
 
@@ -155,9 +164,9 @@ Mode selection:
   no grade language. Verify with the validation pipeline that the row
   re-enters the queue, then restore generated audit outputs per the
   pipeline-output-stripped gate.
-- `/review-loop` must ignore draft-status PRs. Drafts are not candidates for
-  landing, review-loop comments, or salvage unless the user explicitly asks for
-  draft inspection without landing.
+- `/review-loop` excludes drafts by default; explicit draft-triage authorization
+  permits inspection and close/ready decisions, never still-draft landing or a
+  shortcut from mark-ready to source PASS. Owner reservations remain in force.
 - When integrating PRs, `/review-loop` must not checkout whole files from a
   stale PR head over current `main`. Compute the PR merge base, detect overlap
   between files changed on current `main` and files changed by the PR, and use
@@ -196,7 +205,8 @@ Mode selection:
   source/tooling/pipeline repair when it strengthens auditability, but never
   treat hand-authored generated status as the authority.
 - Delete a closed PR's head branch **only if durable content actually landed**
-  (salvaged to `main`, or merged) and a just-fetched head still equals the
+  (salvaged to `main`, or merged), no deferred content still needs its recovery
+  handle, and a just-fetched head still equals the
   frozen reviewed SHA. For a same-repository branch, require an exact
   `--force-with-lease=<ref>:<frozen-head-sha>` deletion and close only after it
   succeeds; leave fork heads intact. If the head moved, leave both PR and branch
