@@ -1,0 +1,3 @@
+# Preserved failures
+
+See frozen-staging/evidence/native-ground/WORD_CONTROL_PREREGISTRATION.md and WORD_CONTROL_NONCOMMUTING_SUPPLEMENT.md plus original word receipts: the original cubic diagnostic had zero amplitude and was not counted as a noncommuting witness; a separately preregistered supplement checks a nonzero one. Primary raw records nonzero dropped-crossface/middle-quartic/Haar/sourcehalf mutations. Original reporting variants and receipts are under frozen-staging/reporting-history. No source parameter or exact coefficient is retuned. Candidate values were exposed before the alternative excited run and are not falsely described as blind.

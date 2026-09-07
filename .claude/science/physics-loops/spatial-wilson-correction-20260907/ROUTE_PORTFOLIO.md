@@ -1,0 +1,3 @@
+# Route portfolio
+
+Selected: exact noncommuting face-word expansion, explicit SU3 color traces, rational Wick contractions, two adapted gauge trees, and a separately differentiated source Gaussian for the radial excited branch. Rejected shortcuts: replacing the action by its Hessian, omitting cross-face cubic correlations, treating a ground-only cancellation as a whole-operator cancellation, or fitting finite-beta eigenvalues. The independent excited calculation uses scalar covariance monomial derivatives, while orbital uses four-component jets with declared shared native tensor inputs. Candidate numbers arrived by message before the alternative excited run; that exposure is retained explicitly.

@@ -1,0 +1,3 @@
+# Artifact plan
+
+This retrospective integration plan does not replace the preserved prospective preregistrations. Deliver one source, one self-contained primary combining the original alternative-tree ground and scalar-derivative excited calculations, and one independent different-tree ground helper. Register that helper to this claim only. Preserve all exact raw fields, matrices, word coefficients, proofs, failures and reviews. Execute and stage both actual canonical caches before generated cleanup. After root final port review, graph/full pipeline/strict/readiness should cover six cumulative claims against pinned main. Publish a draft stacked on PR8017; no merge.
