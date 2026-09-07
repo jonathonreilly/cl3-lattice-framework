@@ -59,7 +59,7 @@ D_(s,t)=S_s^-1 I* T I S_s^-1=I* Menv C_t Menv I.
 
 This identity uses full multiplication before any character-window compression. It is not an identity obtained by replacing S_s with the exponential of a finite compressed recurrence J_N. A finite-window matrix element is taken only after the displayed full-space stripping; inversion and compression are not interchanged.
 
-Independent graph support: [gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.py](../scripts/gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.py) reconstructs the actual32links,24faces,22remaining faces, matching-forest cuts, reduced source words and the10crosscouplings. Its sixteen geometry/action checks do not numerically prove positivity. Strict positivity follows from the analytic Haar and Peter–Weyl argument below. The older973017-subset and243-affine-solution runners remain specifically perturbative certificates.
+Independent graph support: [gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.py](../scripts/gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.py) reconstructs the actual32links,24faces,22remaining faces, matching-forest cuts, reduced source words and the10crosscouplings. Its47 geometry/action checks include every reflected cross-pair endpoint and orientation and the complete coupled-pair set excluding exactly the two omitted source pairs. They do not numerically prove positivity. Strict positivity follows from the analytic Haar and Peter–Weyl argument below. The older973017-subset and243-affine-solution runners remain specifically perturbative certificates.
 
 ## All-positive-coupling proof: gauge restoration and change of reflection plane
 
