@@ -1,0 +1,39 @@
+# Campaign PR inventory
+
+Snapshot: 2026-09-07T22:46:01.444115+00:00
+
+Own campaign PRs; external8002/8003 excluded. Live heads may advance during final synchronization.
+
+| PR | State | Title | Head | Base |
+|---|---|---|---|---|
+| [8001](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8001) | CLOSED | [physics-loop] record-battery transport bounded_theorem conditional-support | `707d7a9c7f929c1c2c16078dfed76acb786e5f3b` | `main` |
+| [8004](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8004) | CLOSED | [physics-loop] record-autonomous-02-04 bounded_theorem conditional-support | `5bd7f234bd185eceaeb36e496a5b6bf4c69a1835` | `main` |
+| [8005](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8005) | CLOSED | [physics-loop] record-collision-control-05-07 bounded_theorem conditional-support | `fb81c52351baea499c81f517a3d32ef8db10d065` | `codex/record-autonomous-head-block02-20260907` |
+| [8006](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8006) | CLOSED | [physics-loop] record-clock-chain-08-09 bounded_theorem conditional-support | `fcea79f576bd276004d33306a487cfb7577d418e` | `codex/record-collision-control-block05-20260907` |
+| [8007](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8007) | CLOSED | [physics-loop] native-wilson-10-12 bounded_theorem conditional-support | `9450957fc039bf362bd2ca3d71d301d35d55cf40` | `main` |
+| [8008](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8008) | CLOSED | [physics-loop] native-heat-spectral-13-14 bounded_theorem conditional-support | `6da2088d2c379839b2dca3977843b33264cd8e30` | `codex/native-wilson-second-order-block10-20260907` |
+| [8009](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8009) | CLOSED | [physics-loop] spatial-wilson-mixing bounded_theorem conditional-support | `05f324c9fbfaaecc8f4038d6e9a6b037570e56d0` | `main` |
+| [8010](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8010) | OPEN | [physics-loop] dimension-divided-spectral-16-17 bounded_theorem conditional-support | `c25bc0ec41ca60a04cd62668669ee1bb36c22ac7` | `main` |
+| [8011](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8011) | OPEN | [physics-loop] record-priority-formation bounded_theorem conditional-support | `f4759f292f9cddd4fbaf568244a1f6a2f47d0a8e` | `main` |
+| [8012](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8012) | OPEN | [physics-loop] record-profile-tradeoff bounded_theorem conditional-support | `c76c70c497c06cba2291be9f4bcd9c46d3c1e2e0` | `main` |
+| [8013](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8013) | OPEN | [physics-loop] block20: actual Wilson weak-coupling windows (conditional-support) | `aa30a25fc0f75bee3d2c6a0fd8056e0af44e7fd3` | `main` |
+| [8014](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8014) | OPEN | [physics-loop] native-flux block21 bounded-support | `bbd45b6aade388c03b7be5a8e795769fb22ef47c` | `main` |
+| [8015](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8015) | OPEN | [physics-loop] block25: native one-shot flux error bound (conditional-support) | `99bf0f1984aff1a9cd1fde5cc1ef4f667a046544` | `codex/native-flux-record-block21-20260907` |
+| [8016](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8016) | OPEN | [physics-loop] spatial-wilson-gaussian bounded_theorem conditional-support | `2343266be6c4faf3ba9112ec1cab56b00c471c52` | `codex/spatial-wilson-weak-coupling-block20-20260907` |
+| [8017](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8017) | OPEN | [physics-loop] spatial-wilson-cubic block23 bounded-support | `5680b56f4205536f746340d1f2070e243820981c` | `codex/spatial-wilson-gaussian-block22-20260907` |
+| [8018](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8018) | OPEN | [physics-loop] spatial-wilson-correction block24 bounded-support | `fa8cabc8b6f394a4acfcbc7c2be96c3e22ae6307` | `codex/spatial-wilson-cubic-block23-20260907` |
+| [8019](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8019) | OPEN | [physics-loop] anisotropic-source-semigroup bounded_theorem conditional-support | `d57943620edd5098df7b6410f952d569730276f5` | `codex/spatial-wilson-cubic-block23-20260907` |
+| [8020](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8020) | OPEN | [physics-loop] full-cube-transfer block28 conditional-support | `4cc26738a6c0c9dbf67e537ca79fef70ad3cb758` | `codex/spatial-wilson-gaussian-block22-20260907` |
+| [8021](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8021) | OPEN | [physics-loop] compact-hamiltonian block29 bounded-support | `160ae74530c0293b7efb5decc12b523290faa39b` | `codex/full-cube-transfer-block28-20260907` |
+| [8022](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8022) | OPEN | [physics-loop] compact-gap block30 conditional-support | `7a6531b33d5155cfb910ec89618ff171a5590d90` | `codex/compact-hamiltonian-block29-20260907` |
+| [8023](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8023) | OPEN draft | [physics-loop] compact-cutoff block32 conditional-support | `44d13932eb9ce473a13b211aa0a803a4b5e6a500` | `codex/compact-gap-block30-20260907` |
+| [8024](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8024) | OPEN draft | [physics-loop] volume-uniform-gap block34 conditional-support | `b87b22b2d7ed58306954dd77b2f438a0f70b5a5b` | `codex/compact-cutoff-block32-20260907` |
+| [8025](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8025) | OPEN draft | [physics-loop] local-observable block35 conditional-support | `7d9789c38f11d6487d49005d3a42a286a0ac21c2` | `codex/volume-uniform-gap-block34-20260907` |
+| [8026](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8026) | OPEN draft | [physics-loop] spatial-area block36 conditional-support | `075643ff32e9f5014163ee646a0f303c3e780198` | `codex/local-observable-block35-20260907` |
+| [8027](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8027) | OPEN draft | [physics-loop] static-geodesic block37 conditional-support | `1648059977581dbd47047c7e341d0b0b702f5421` | `codex/spatial-area-block36-20260907` |
+| [8028](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8028) | OPEN draft | [physics-loop] static-uniform block38 conditional-support | `7a9eb15bbb7b73c149ee3fa69cd60e69a5313baa` | `codex/static-geodesic-block37-20260907` |
+| [8029](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8029) | OPEN draft | [physics-loop] infinite-static block39 conditional-support | `774dd12497461650026dacf1df4dd2d713852e60` | `codex/static-uniform-block38-20260907` |
+| [8030](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8030) | OPEN draft | [physics-loop] continuum-boundary block40 conditional-support | `9cf17f541e0a0a9d9d591ecd2a189e6fc33bfdd8` | `codex/infinite-static-block39-20260907` |
+| [8031](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8031) | OPEN draft | [physics-loop] finite-transporter block41 conditional-support | `37505acec4df300c438fa7e39dcdc85477198d38` | `codex/continuum-boundary-block40-20260907` |
+| [8032](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8032) | OPEN draft | [physics-loop] finite-pw-energy block42 conditional-support | `beb6005d0a1eb373c0fa4cc513b29b87c4af2dfc` | `codex/finite-transporter-block41-20260907` |
+| [8033](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8033) | OPEN draft | [physics-loop] finite-pw-confinement block43 conditional-support | `3ef6100bc473d91e48a78053e235957f1ba3414d` | `codex/finite-pw-energy-block42-20260907` |
