@@ -1,0 +1,15 @@
+# Actual spatial Wilson slab: frozen model before coefficient computation
+
+2026-09-07. Independent bounded counterexample target; no stipulated diagonal D.
+
+Spatial graph is the boundary edge graph of one cubic cell: vertices (i,j,k) in{0,1}³, twelve positively oriented nearest-neighbor edges. Marked source face is k=0. Environment consists of the other FIVE faces (four sides and top). Two time slices carry independent SU(3) matrices U_e,V_e and normalized product Haar measures. Temporal gauge vertical links are identity, giving twelve temporal plaquette factors w_t(V_e U_e^-1). All six spatial faces at each endpoint carry halfweight w_(s/2)(Wface), w_b(G)=exp[b(chi3(G)+chibar3(G))/6]. This is a supplied anisotropic finite Wilson action; no axiom selection or infinite-volume identification.
+
+Hilbert space is product-link L² Haar. Source isometry I:f↦f(W_bottom), for central f with Haar character norm, with the other link variables carrying the constant function. Exact full transfer is multiplication by all spatial halfweights, then product temporal convolution, then the same spatial multiplication. Strip the marked face halfweights using the FULL source multiplication inverse, not exponential of a finite compressed recurrence. This leaves exact compressed D=I* M_env C_t M_env I. Test matrix element <chi0,D chi3>. It is defined for all s,t≥0. At t=0, temporal kernel equals1; test exact factorization into the two one-slice environment marginals. Freeze target of a nonzero Taylor coefficient in s, or exact nonzero analytic expression; do not infer all-t diagonality from zero low orders.
+
+The five-face environment is a disk spanning all four source boundary edges; its eight non-source edges are shared by environment faces. This avoids a dangling independent source edge and the independent-neighbor trap. The source is not itself included in M_env. The full spatial action still includes the source face before stripping.
+
+Control: omit environment entirely; four source temporal convolutions should give diagonal a_lambda(t)^4 times trivial-channel scalars from eight non-source links. Secondary structural control: omit one source-adjacent face while leaving an untouched source edge; test the representation orthogonality mechanism, not merely numerical zero.
+
+A result at t=0 must be explicitly labeled a degenerate temporal action. Only analyticity/continuity with a strictly nonzero value permits a nonempty positive-t interval; no beta6 or isotropic conclusion without additional proof. Algebraic residual R=(Dloc)^-1 D at t>0 has the same zero/nonzero off-diagonal pattern because Dloc has strictly positive diagonal entries. No inversion at t=0 is allowed.
+
+Before extensive calculation, compare against prior cube-graph/static-rim fixtures. Distinguish the TWO-SLICE SOURCE OPERATOR off-diagonal from static plaquette expectation, scalar rho, supplied tensor words and historical Schur cube diagonal packets. Exact Haar/Schur contractions preferred, no floating fit. Scratch only.

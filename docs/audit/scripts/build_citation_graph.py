@@ -151,6 +151,10 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "gauge_wilson_cube_slab_character_mixing_bounded_theorem_note_2026-09-07": [
+        "scripts/gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.py",
+        "scripts/native_gauge_transfer_spatial_wilson_cube_slab_f3_check_2026_09_07.py",
+    ],
     "native_gauge_transfer_killed_heat_second_order_kernel_bounded_theorem_note_2026-09-07": [
         "scripts/native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07.py",
     ],
