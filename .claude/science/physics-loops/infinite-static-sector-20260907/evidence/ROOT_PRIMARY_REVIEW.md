@@ -1,0 +1,9 @@
+# Root cold review of primary39
+
+Read primary DERIVATION.md SHAd82ddb5165688622c3d6e7a110274f61b0fa3db4a9b1a386bbb8ba07c187b98b after root independently froze868eed1d. PASS for the selected charged GNS-sector statement. The shared candidate route and imported theorem were exposed before independent derivations; no independent-discovery claim is made.
+
+The proof uses one fixed interaction and its exact finite whole-range restriction, with physical-unit rescaling explicit. Removing one cell and at most four touching groups gives the correct8delta local energy bound. Finite-cell compact resolvent and the tail bound imply trace-norm precompactness of local density matrices, not just weak-star convergence. It correctly promotes local state normality to normal local GNS representations on a dense local-vector domain. This supplies strong gauge continuity without asserting norm continuity on every bounded operator.
+
+Finite gauge averages of local operator tuples remain local and exactly charged; averaging fixes an already charged target and contracts approximation error, proving density. Theorem3 resolvent convergence passes the finite charged spectral support exclusion to these vectors, and then to the whole closed reducing fixed space. No whole-spectrum label inference or charged-minimum convergence is used.
+
+The path trial has norm1 by the operator identity sum_ab A_ab^*A_ab=I. Its finite spectral first moments equal4d/a; the limiting vector also has norm1, so probability measures converge weakly. Bounded min(E,R) followed by monotone convergence gives only the justified upper inequality on the limiting first moment. This suffices for form-domain membership and the upper variational bound; it does not assume energy uniform integrability or equality. The proof retains the distinction between this selected GNS bottom and a thermodynamic limit of finite charged minima, an attained eigenvalue, temporal Wilson potential or continuum statement.

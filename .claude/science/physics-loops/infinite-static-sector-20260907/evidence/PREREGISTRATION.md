@@ -1,0 +1,7 @@
+# Prospective contract: selected infinite static sector
+
+Frozen before proof. Root exposed the candidate finite-to-GNS route, the local-energy tightness argument, and the warning that finite charged minima need not converge. I will not read root's draft before freezing my derivation.
+
+Fix one infinite cubic compact interaction and nested whole-range finite restrictions, fixed distinct vertices x,y and their graph distance d. Retain the same weak-coupling assumptions and finite charged bound of block38. Define the neutral ground GNS dynamics and the combined local-gauge fixed subspace after tensoring the external fundamental/antifundamental nine-dimensional space. Seek a lower spectral bound 2d/a and an upper variational bound 4d/a in this selected representation only.
+
+Obligations: establish local normality and strongly continuous gauge implementation; prove bounded local covariant vectors dense in the charged subspace; transfer resolvent spectral exclusion on these vectors using the actual Theorem3 local-vector statement; produce a nonzero normalized path vector with limiting first spectral moment at most4d/a; justify all domain/weak-measure steps. Check that finite-volume ground vectors, not arbitrary finite charged minimizers, are used. Preserve an explicit nonclaim of convergence of finite charged bottoms, of a charged eigenvector, and of a temporal static-potential limit. No numerical fitting or new interaction family.
