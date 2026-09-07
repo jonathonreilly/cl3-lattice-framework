@@ -1,0 +1,7 @@
+# Root Perron sign review
+
+PASS. Root independently recomputed the metric-polar H and H² measures, exact Gaussian heat action, trial quotient, low-tail integral and high-tail polynomial moment80. The positive-operator inequality concerns the actual Perron vector; bounded truncations justify the unbounded weight. The trial state is used only for an eigenvalue lower bound. The strict bounds −49/16<d0/mu0<−9/16 and d0<−1/216 follow without floating Perron input. Two independent hash-specific cold reviews agree and are preserved.
+
+Canonical source and14-check arithmetic runner match the staged port. The14checks retain original10arithmetic statements and add four explicit normalization/endpoint checks; no check count is disguised as independent infinite-dimensional proofs. The numerical Nyström exploration preceded the analytic argument and is preserved with its frozen preregistration. Its value is diagnostic only. No finite-beta onset, excited-mode sign or full fixed-heat expansion is claimed.
+
+The canonical sign runner had one extra blank line at EOF. Removed only that whitespace, retained the original staged hash/receipt in perron-sign/PORT_RECEIPT.json, and reran the canonical certificate successfully. The final hash is in CANONICAL_RUNNERS.json. A pipeline that had begun graph construction was stopped before validation for this source freeze repair. All14assertions are unchanged.
