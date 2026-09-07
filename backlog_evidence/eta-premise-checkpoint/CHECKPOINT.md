@@ -1,0 +1,48 @@
+# Eta pair-process: dependency and current-main hold
+
+This is a bounded checkpoint, not a completed scientific review. **Disposition: HOLD before heavy execution.** The unit cannot be enrolled or landed from this packet. No science PASS, audit verdict, retention change, new primitive, or physics-bridge approval is issued.
+
+## Frozen source and complete original disposition
+
+The review base is `16c2d6860e168ec8e5e8f66296410265e5d7226d`. The raw cumulative successor is #7827 at `17357c3714c3b3196c6b8fdc9b1a3bb300044181`. The planning snapshot is pinned in START.json. Live GitHub reads confirm the target remains open/non-draft at the same head; the six original constituent PRs are now closed at their unchanged frozen heads, with source still preserved in #7827. No PR action was taken by this reviewer.
+
+The selected unit is exactly 148 paths: six notes, six runners, six historical caches, and130 packet/history paths; 809,801 bytes and18,294 lines. Every path is absent on the review base, and every overlaid byte equals the frozen raw successor. All original base→head deltas of #7813/#7819/#7820/#7821/#7822/#7823 are accounted for in constituent_provenance.json. They contain149 total paths; the only excluded original path is #7813's generated citation manifest. Every one of148 authored source blobs exactly matches the successor. This is content preservation, not an ancestry/title inference or science approval.
+
+The isolated worktree contains only those148 source additions over the pinned main. No raw foundation, process, audit-state, or reserved source file was overlaid. All original histories and caches remain unchanged.
+
+## Actual dependency boundary
+
+Complete AST inspection of the six runners resolves an eight-script executable import closure, 15,099 lines. The two additional off-main helpers are:
+
+- Block23 `scripts/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30.py`, 2,096 lines, SHA256426488df2a431cb7d415d5e933013f7ce0826cc9514f96cd041b9fc6ff49742a. Original PR#7809 head6d54198a05b92c2bd8c7007c27086821a7a5b781, base82406881682cc6c31d1cdee5fd159fc43b24e73c.
+- Block24 `scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py`, 2,611 lines, SHA256f98534f07655e0de296f2060932e34aa7a600f08545f3661be2843d05accc15d. Original PR#7810 heada06606830f9e2350c2540f89e43ce661f01a5c2a, base6d54198a05b92c2bd8c7007c27086821a7a5b781.
+
+Their actual effect/positive-root, pointer/Record-word, geometry, and append-factor functions are used by the selected source. They are not already reviewed dependencies on main. The complete original23- and32-path helper-PR deltas are preserved in helper_constituent_provenance.json: all non-manifest blobs match the raw successor. Neither helper nor its packet has been enrolled/overlaid; external dependency snapshots preserve exact content for a later resumed review.
+
+Blocks28/30/31/32 use those helpers; Block31 additionally pins a current-main NN circuit-core file as provenance rather than importing it. Block33 independently reconstructs its classical law, with parent source/notes pinned for provenance. Block34 reconstructs its moment/score/Ward algebra locally, reads parent counts from Block32 source/note, and pins historical authority bytes through Git. The local imports do not reach the separate eta_affine_repeat partition. No coherent join with its108 paths is justified by this scan.
+
+The frontmatter premise graph names15 notes, 5,171 lines including the six selected notes and current minimal axioms. It reaches the Block23/24 finite Record/append notes, Block22 supplied14-effect POVM/radial-writer construction, and older Block09/Block21/Block08 context. Block26 supplies the returned-tip target/renewal question; the Block28 packet explicitly does not import its convex law to choose q. Block29 is expressly timeout/route-selection provenance, with no successful science terminal imported by Blocks30/32/33. Thus neither Block26 nor29 runner is in executable closure. This declared graph is a conservative inspection inventory, not a claim that every old theorem must be admitted as proof. Full proof-role reduction is unfinished because the current-main hold was found first.
+
+#6269 is frozen at eb0ea60817a7489d2ed435780ffb5354b0e06045. The precise comparator is its note Section2, equation(7): for a supplied symmetric spatial S and nonzero frequency, mixed/time components Sq/omega and q^T S q/omega^2 satisfy the Ward contractions. Block34 implements those formulas independently and explicitly withholds physical source typing, cadence, zero-mode, local lattice stress and physical gravity. It does not import #6269's Regge/carrier helpers. No mathematical authority is inferred from that PR's open status.
+
+## Reservations
+
+The raw #7827 tree contains12 source/history/cache paths belonging to reserved #6379/#6858/#6859, so raw landing is prohibited. The selected148 paths, eight-script import closure and15-note declared graph have no reserved-path intersection. Scanning those script/note bodies finds no named reserved path or PR reference. This establishes no discovered execution dependency on reserved source; it is not a full semantic clearance of every old proof or the raw tower. No reserved helper was copied or its output assumed. reservation_reachability.json records the exact boundary and live reserved heads are preserved in live_pr_metadata.json.
+
+## Findings requiring repair before expensive checks
+
+**F1, P2: current-main registry mismatch.** Block32 source line54 pins SHA56fde9133eb35f4c5ad8c38829904737771242d7c0188b55b7c03b4d6eb9b535. That raw registry changes the minimal-axiom summary to add disjoint-record scalar additivity. Frozen main contains SHA615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37, with the owner's no-unrecorded-readout wording. The four actual foundation notes are identical. Preserve main, inspect uses and repair the declaration/current-scope account; never restore the stale registry to satisfy a hash. The displayed A(g)+B(h) expectation can remain a conditional observable-family calculation; no theorem refutation is inferred merely from the pin mismatch.
+
+The independent fast replay uses the exact source frozen_hashes_ok function and the actual current-main runner_cache parser in an external fixture. All original raw inputs: gate true/cache fresh. Changing only the registry to current-main bytes: gate false/cache input_mismatch. This isolates the genuine blocker from the intentionally absent helper files in the isolated worktree. No science body was executed. Record, command and fixture are registry_pin_replay.json/check_registry_pin.py/registry-pin-fixture.
+
+**F2, P2: historical versus live authority.** Block34's11 old Git blobs are valid immutable historical inputs at aa7338d1fbc34a4b92205182b26793194e4727b6. Eight are identical to current main. The Planck ledger differs only in graph metrics, with its status still unaudited. The source-measure/RN note and its ledger are absent from current main. The note's lines331–343 nevertheless call all three old mechanisms live, while runner authority_result (lines966–985) combines old status fields with premise checks. The old snapshot is legitimate dated provenance; it is not current status or a proof supplier. Keep it historical, correct live claims and bind any current-authority assertion to current source. Do not resurrect removed source/ledger or use audit status as mathematical evidence. The underlying four canonical foundation documents and registry match current main, so this does not itself falsify the conditional tensor/score calculation.
+
+F1 source repairs propagate through Blocks33/34's exact source pins/caches. F2 repairs should preserve historical preregistration and output receipts, adding dated correction witnesses. Author changes must return to this original reviewer session with affected source/input closure; no blanket restart or automatic PASS is warranted.
+
+## Coverage, execution and resume recommendation
+
+All148 paths have exact content dispositions and hashes. partial_path_coverage.json explicitly distinguishes identity-only, targeted reading and full reading. The complete Block31/32/34 notes and Block34 runner have been read, with premise/scope and input/guard portions of remaining source inspected. Full all-lens semantic reading of the remaining runners/helpers/notes and130 historical packet files has not been completed. No science runner, expensive control, full mechanical pipeline, audit executor or audit-status application ran. The only executable evidence is the subsecond source hash-gate/cache-parser compatibility replay above, plus Git/hash/AST inventory tools.
+
+The manageable future upper inspection inventory is eight scripts (15,099 lines) plus15 notes (5,171 lines), with the actual dependency proof subset to be resolved explicitly and any necessary helper packets declared. This does not authorize copying the entire ancestor tower. First make F1/F2 corrections against preserved main, freeze the exact selected and additional dependency source, and resume this same review session for complete proof/physics/numerical/code/foundations/no-go/current-source scrutiny and decisive actual controls. The alternative is a separately authored standalone conditional algebra result with explicit supplied q_lambda and conventional linear Ward assumptions; that would have a new source scope and require review, not inherit approval from this checkpoint.
+
+**FINAL DISPOSITION: HOLD — current-main premise compatibility and authority-scope corrections required; full scientific review incomplete.**

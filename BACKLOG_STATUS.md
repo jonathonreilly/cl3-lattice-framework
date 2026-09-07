@@ -6,7 +6,7 @@ them with a concrete disposition. Formal audit is deferred until a solid TOE.
 The coordinator owns GitHub changes and landing; reviewers return evidence.
 
 The original 13:57 UTC routing refresh had 254 open PRs: 217 non-draft and 37 draft.
-The verified post-triage refresh has 191 open PRs and 0 drafts: 66 original PRs and one new successor closed; four new successors opened.
+The verified refresh has 173 open PRs and 0 drafts: 85 original PRs and one new successor closed; five new successors opened.
 All 37 original drafts were explicitly in triage scope and are now resolved. Marking ready means reviewable,
 not scientifically accepted. A still-draft PR does not land. The standing
 reservations #6379, #6858 and #6859 are all non-draft and remain in force.
@@ -122,12 +122,12 @@ helper/premise closure) is assigned independent review at
 `774374271180405d5c2522010511adbd2c906236`. No author or reviewer has GitHub
 mutation authority; formal audit remains deferred.
 
-All 38 further duplicate closures are complete and verified against both the
+All 57 further duplicate closures are complete and verified against both the
 parent and successor heads before and after each action. Every original branch
-still exists at its frozen head. The current queue has 191 open PRs and zero
+still exists at its frozen head. The current queue has 173 open PRs and zero
 drafts. Relative to the starting 254: 21 draft closures, eight landed science
-closures and 38 further duplicate consolidations, plus four new PRs; the 16 ready transitions do
-not change the open count. The five consolidation successors remain open for their complete
+closures and 57 further duplicate consolidations, plus five new PRs; the 16 ready transitions do
+not change the open count. The nine consolidation successors remain open for their complete
 scientific review; no inherited obligation is discharged by consolidation.
 
 ## New successors and efficient review routing — 2026-09-07
@@ -243,3 +243,34 @@ The live refresh now includes #8006 (`38b5bf39c90576ecd98a0b6c2c2aaf2525839ac0`,
 without inherited review coverage. The queue remains 191 open and zero drafts:
 254 original + 4 arrivals - 67 total closures. Earlier as-of counts and heads
 above remain historical evidence, not the current inventory.
+
+### Nineteen older consolidations and active source review
+
+Nineteen more exact-source duplicates are closed: twelve into #7359, four
+into #6377, two into #6282, one into #6515. Complete original deltas,
+inherited source, modes/blobs and deletions were checked; every original and
+target head was rechecked before/after action and every original branch remains.
+Twenty-two other screened pairs had authored differences and were kept open.
+All scientific and evidence obligations transfer, including separate counting,
+reflection, Ward, source/quotient and sector limitations. Reserved inherited
+source remains excluded from raw landings. These closures grant no science PASS.
+See `backlog_evidence/older-consolidations` and `BACKLOG_CONSOLIDATIONS.json`.
+
+Current open count is 173 with zero drafts: 254 + 5 arrivals - 86 closures.
+The count includes new #8007 (`2558f2efa0c05021cfc91eb6eb5cb389e9910517`,
+79 paths), a native Wilson second-order packet. #8006 moved to
+`fcea79f576bd276004d33306a487cfb7577d418e` with 51 paths. Both are queued
+and carry no inherited review coverage; #8005 remains separately queued.
+
+The #8004 complete independent review found only one P2 packaging issue:
+new helper registrations omitted a transitive native carrier and disagreed
+across two consumers. The two-tool correction preserves every scientific byte;
+actual consumer controls pass and six source-omission mutations are rejected.
+Same-session correction confirmation is complete; the combined gate is running
+on candidate `12d9c77c0605276b82eb9fcb8cf05cdaf3e40f56`. The original
+reviewer has moved to #8005 against that exact reviewed parent.
+Eta's partial hold is frozen: current registry compatibility and historical
+authority classification must be repaired before expensive execution; no full
+review is claimed. Light-backreaction repairs are active. Initial light-ice
+review found a trial-state upper bound promoted to positive physical magnetic
+stiffness; preserve the finite variational response while holding that inference.

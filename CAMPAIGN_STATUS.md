@@ -18,7 +18,7 @@ now lands at current main `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac`.
 ## Common evidence
 
 - [TOE_SCORECARD.md](TOE_SCORECARD.md): actual premise epoch, standing and questions.
-- [OPEN_PR_INVENTORY.json](OPEN_PR_INVENTORY.json): 191 current open PRs, zero drafts, exact heads
+- [OPEN_PR_INVENTORY.json](OPEN_PR_INVENTORY.json): 173 current open PRs, zero drafts, exact heads
   and complete file lists. The original 254-PR snapshot is archived under
   `backlog_evidence/`; closures and transferred obligations are fully recorded.
 - [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json): exact main ledger counts.
@@ -28,7 +28,7 @@ now lands at current main `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac`.
 
 | Owner | Target | Current evidence/next check |
 |---|---|---|
-| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 38 further duplicates consolidated; four source batches landed; coordinating light-backreaction repairs and autonomous Record review; Eta premise and curved dependency holds |
+| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 57 further duplicates consolidated; four source batches landed; coordinating light-backreaction repairs and autonomous Record review; Eta premise and curved dependency holds |
 | Formation author + independent checker | Formation/static interface | Conditional Z3 law constructed with finite ancestry and certified window/correlation bounds; independent static/formation and adaptive-scheduling checks pass |
 | Matter author + independent checker | Native Record shared energy apparatus | Conditional finite-patch instrument proved with volume-uniform channel/full mean-energy error bounds; independent shared-battery/free-dwell calculation passes |
 | Field author + independent checker | Consistent physical field source/response | Source convention mismatch confirmed independently; exact finite invariant, corrected finite curvature and full-flux endpoint theorem packaged and checked |
@@ -74,8 +74,8 @@ question; no blanket disposition of that PR is asserted.
    Both Record/battery (#7983/#7996/#8001) and admissibility
    (#7998/#7999/#8000/#8002) are landed and closed; receipts are in
    `backlog_evidence/wave1` and `wave2`. #8003 is also corrected, independently confirmed, landed and closed; see
-   `backlog_evidence/wave4`. #8004 is in independent review; moved #8005
-   and new #8006 are queued. Hold Eta heavy execution until current-premise
+   `backlog_evidence/wave4`. #8004 has source PASS and its landing gate is
+   running; #8005 is in independent review and #8006/#8007 are queued. Hold Eta heavy execution until current-premise
    reconciliation; repair the light charged-sign, current-test and rotor-limit
    findings before landing. Preserve the curved
    unit's reserved-source dependency hold while assessing standalone salvage.
