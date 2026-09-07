@@ -1,62 +1,72 @@
 # Review Feedback Workflow
 
-**Purpose:** define the canonical process for landing, reviewing, triaging, and
-closing repo feedback on `main`
+**Claim type:** meta
+**Purpose:** route review findings from a candidate PR through correction,
+reviewed landing, and independent audit.
 
-## Canonical Files
+The current lifecycle and division of responsibility are in
+[`SCIENCE_WORKFLOW.md`](../ai_methodology/SCIENCE_WORKFLOW.md). The detailed
+review procedure is the repo-native
+[`review-loop` skill](../ai_methodology/skills/review-loop/SKILL.md).
 
-- active queue:
-  [`ACTIVE_REVIEW_QUEUE.md`](./ACTIVE_REVIEW_QUEUE.md)
-- historical detailed packets:
-  [`docs/work_history/repo/review_feedback/README.md`](../work_history/repo/review_feedback/README.md)
-- historical planning backlogs:
-  [`docs/work_history/repo/backlog/README.md`](../work_history/repo/backlog/README.md)
+## Before Landing
 
-## Default Process
+1. Develop the candidate on a branch based on current `origin/main`. Pair the
+   source note with its evidence, explicit dependencies, and remaining gaps.
+2. The author prepares the PR and runs the
+   [author preflight](../ai_methodology/skills/review-loop/PREFLIGHT.md).
+3. Review-loop checks the candidate before landing. It records exact findings,
+   fixes or narrows verified defects in the existing PR path, and re-reviews
+   those changes. Missing science stays explicit; wording cannot discharge it.
+4. Land only the reviewed candidate after the current review-loop confirmation
+   and mechanical gates pass. Preserve current-main changes and the evidence
+   tying the review to the landed revision.
+5. Hand the landed claim IDs and source/evidence changes to the independent
+   audit lane. Review PASS and landing are not audit verdicts or retained status.
 
-1. Land the candidate work on `main` if it is already honest enough to keep.
-2. Have the reviewer check the landed surface or the clean science-only review
-   branch.
-3. Record any actionable finding in
-   [`ACTIVE_REVIEW_QUEUE.md`](./ACTIVE_REVIEW_QUEUE.md).
-4. If the review needs more than a short bullet list, add a detailed packet in
-   [`docs/work_history/repo/review_feedback/`](../work_history/repo/review_feedback/README.md)
-   and link it from the queue.
-5. Triage each item into one of five buckets:
-   - `fix on main`
-   - `support-only demotion`
-   - `science-needed`
-   - `reject`
-   - `historical only`
-6. Resolve the item on `main` if it is wording, packaging, code, or honest
-   demotion work.
-7. Remove the item from the active queue once the repo-facing state is correct.
+PR-local findings remain with that PR until resolved or handed off. Findings
+that affect current `main`, survive a PR's closure, or need another source-side
+repair belong in [`ACTIVE_REVIEW_QUEUE.md`](./ACTIVE_REVIEW_QUEUE.md). This
+queue records actionable feedback; it does not replace the generated audit
+queue or the science-fix backlog.
 
-## Decision Rule
+## Findings On Current Main
 
-Use the narrowest honest fix:
+Record a short, actionable entry in the active review queue with the affected
+claim/file, observed defect, evidence or reproduction command, intended
+disposition, and next action. Link a detailed packet under
+`docs/work_history/repo/review_feedback/` when needed; the active queue remains
+the routing surface.
 
-- if the issue is wording, packaging, stale status language, or a reproducible
-  code bug, fix it on `main`
-- if the issue is a real missing theorem step or unjustified selector, do not
-  fake closure; either demote the claim or keep the science off-main until the
-  derivation exists
-- if the issue concerns a historical lane that is no longer part of the live
-  evidence chain, classify it as `historical only` rather than treating it as a
-  live blocker
+Use the narrowest honest disposition:
 
-## Placement Rule
+- **Source or tooling repair:** fix wording, packaging, reproducible code
+  defects, or dependency declarations on a repair branch and submit it for
+  review before landing.
+- **Claim narrowing:** make the supported scope explicit in source prose and
+  request re-audit when the audited claim or evidence changed. Reviewers do
+  not hand-edit audit grades or effective status.
+- **Science needed:** state the missing theorem, selector, or physical bridge
+  and send it to a science task. Keep the unresolved claim explicit.
+- **Reject or historical only:** explain why the candidate cannot land or why
+  the issue no longer affects the live evidence chain, preserving useful
+  evidence and the unresolved branch where required by review-loop.
 
-- do **not** put new review packets in the front-door `docs/` root unless they
-  are themselves part of the live science package
-- do **not** create new free-floating backlog files for current review work
-- do **not** use branch-local notes as the long-term review source of truth
+Audit findings enter the source-repair path through
+[`science-fix-loop`](../ai_methodology/skills/science-fix-loop/SKILL.md).
+Auditors judge the restricted claim packet independently; source repairs
+return through PR review and fresh re-audit.
 
-## What Belongs Where
+## Closing Feedback
 
-- `docs/repo/ACTIVE_REVIEW_QUEUE.md`
-  current actionable review state
-- `docs/work_history/repo/review_feedback/`
-  older audit notes, detailed review packets, and resolved review histories
-- `docs/work_history/repo/backlog/`
-  planning/backlog notes that are not current review truth surfaces
+Close an item only when its stated action is complete. Record the disposition,
+landed revision or rejection reason, and any separate re-audit target in the
+queue history or linked packet before removing it from the open list. A
+source fix may complete its review item while the claim still awaits audit;
+report those states separately.
+
+Keep detailed or resolved packets in
+[`review_feedback/`](../work_history/repo/review_feedback/README.md) and old
+planning material in [`backlog/`](../work_history/repo/backlog/README.md).
+Do not create another live feedback queue or use a branch-local memo as the
+long-term routing surface for an unresolved current-main defect.

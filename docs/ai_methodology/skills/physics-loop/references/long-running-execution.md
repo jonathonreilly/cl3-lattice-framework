@@ -15,9 +15,9 @@ default runtime for execution. If the user asked only for a plan or status, do
 not ask.
 
 For a request such as "run for 12 hours unattended", treat the duration as a
-campaign work budget. Keep selecting new science opportunities until the
-deadline or max-cycle limit is reached unless a global safety/tooling condition
-makes continuation unsafe.
+campaign work budget. Keep selecting useful science opportunities until the
+deadline or max-cycle limit, subject to the parent skill's quality-exhaustion
+and safety/tooling stop conditions. Runtime is not a production quota.
 
 ## Preflight
 
@@ -29,7 +29,9 @@ Before modifying files or running long tasks:
    dirty or contains unrelated work, create a separate clean worktree from
    `origin/main` before launching unattended science. Stop only if a clean
    independent worktree cannot be created.
-4. Use dedicated science block branches such as
+4. Default to `--delivery milestone`: related blocks may compose on one
+   isolated campaign branch with a provisional dependency map. When
+   `--delivery block` is requested, use branches such as
    `physics-loop/<slug>-blockNN-YYYYMMDD`.
 5. Check the cooperative lock if available:
    `python3 scripts/automation_lock.py status`.
@@ -40,8 +42,8 @@ Before modifying files or running long tasks:
    branch-local supervisor lock. Lock unavailability is not a campaign stop
    unless another active worker owns the same repo/task and no independent
    worktree is possible.
-8. Record start time, runtime, target stop time, branch, and checkpoint interval in
-   `STATE.yaml`.
+8. Record start time, runtime, target stop time, branch, delivery mode, next
+   milestone, and checkpoint interval in `STATE.yaml`.
 
 ## Checkpoints
 
@@ -53,7 +55,7 @@ Checkpoint:
 - before and after stuck fan-out synthesis;
 - before and after long scripts;
 - after every artifact;
-- after every review-loop pass;
+- after every author or independent check;
 - at least once per checkpoint interval;
 - before any authorized campaign stop.
 
@@ -61,6 +63,8 @@ Each checkpoint updates `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md` with:
 
 - current cycle and route;
 - current science block and branch;
+- provisional dependencies, inherited hypotheses, focused independent checks,
+  and conclusions affected by changed premises;
 - current hard residual, `A_min`, and forbidden imports when in stretch mode;
 - files changed;
 - commands run and results;
@@ -86,11 +90,15 @@ Avoid mid-run questions. When a decision is needed:
   attempt;
 - choose the highest-scoring route that passes the dramatic-step gate;
 - maintain `OPPORTUNITY_QUEUE.md`; after one lane blocks, pivot to the next
-  retained-positive candidate while runtime remains;
-- after two audit/no-go/blocker cycles in a row, force a stretch attempt from
-  minimal premises before more audit cycles;
-- before declaring global queue exhaustion, run or emulate stuck fan-out across
-  3-5 orthogonal premises and synthesize the result;
+  useful unresolved obligation or discriminator while runtime remains;
+- after repeated audit/no-go/blocker cycles, reassess underexplored hard
+  mechanisms and attempt one if it can add evidence;
+- before declaring global queue exhaustion, inspect materially different live
+  routes and synthesize the evidence. Three to five frames is a planning target
+  when useful routes exist, not permission to manufacture nominal alternatives;
+- treat `--deep-block` as a protected work allocation, not minimum elapsed time.
+  A decisive result or exhausted mechanism justifies pivoting; use remaining
+  authorized runtime for useful independent work, never busy-waiting;
 - skip ambiguous fixes that need human physics judgment for the current lane,
   then checkpoint and pivot;
 - treat review `demote`/`block`, failed retained-proposal certification, and
@@ -109,7 +117,9 @@ When a block reaches a local stop:
    `proposed_retained` / `proposed_promoted` only for audit-ready author
    proposals and never as audit-ratified status;
 2. run the smallest relevant checks;
-3. commit, push, and open a PR, or write a complete `PR_BACKLOG.md`;
+3. preserve the checkpoint and coherent source work on the campaign branch;
+   open a PR only at a review-ready milestone, or a review-ready block in block
+   mode, and record actual delivery failures in `PR_BACKLOG.md`;
 4. refresh `OPPORTUNITY_QUEUE.md`;
 5. start a new science block for the next ranked opportunity.
 
@@ -118,6 +128,7 @@ Only stop the whole campaign before the deadline if:
 - a clean independent worktree cannot be maintained;
 - all viable queued opportunities are globally blocked and documented in
   `OPPORTUNITY_QUEUE.md`;
+- the parent skill's corollary/value-gate exhaustion conditions are evidenced;
 - core local tooling needed for every viable route is unavailable;
 - another active worker owns the same task and no non-overlapping target can be
   selected.
@@ -125,30 +136,33 @@ Only stop the whole campaign before the deadline if:
 ## Commits And Pushes
 
 Create incremental commits only for coherent science artifacts when the user
-requested a run and did not pass `--no-commit`. Use one branch per science
-block when practical, and one or more focused commits inside that branch. Do
+requested a run and did not pass `--no-commit`. Related provisional blocks may
+share a coherent campaign branch; maintain exact dependency revisions and
+inherited conditions. Use block branches when block delivery is requested. Do
 not commit unrelated pre-existing changes.
 
-Physics-loop delivery requires pushing each dedicated science block branch to
+Physics-loop delivery preserves dedicated campaign or science block branches on
 `origin`. Do not push science to `main`. Do not merge or weave the science
 through repo-wide authority surfaces during the loop run.
 
 ## Review PR Backlog
 
-At each science-block closure, and again at final loop stop to catch any
-missed blocks, unless `--no-pr` was supplied:
+At a review-ready milestone, or each review-ready block under `--delivery block`,
+and at an explicit or final handoff when coherent work is ready, unless `--no-pr`
+was supplied:
 
-1. For each coherent science block branch, run the smallest relevant checks
+1. For each review-ready campaign or science block branch, run the required checks
    that fit remaining runtime.
 2. Push the branch to `origin`.
-3. Open one PR per block with `gh pr create`.
+3. Open one PR per coherent milestone (or block in block mode) with `gh pr create`.
 4. Base independent block PRs on `main`; base dependent block PRs on the prior
    block branch and mark them as stacked.
 5. Include links to `HANDOFF.md`, `TRACE_GATE.md`, `REVIEW_HISTORY.md`,
    theorem notes, runners, logs, verification commands/results, imports
    retired/exposed, trace reachability, and remaining blockers.
-6. Label or title the PR for review backlog, e.g.
-   `[physics-loop][review-loop] <slug> block NN: <honest status>`.
+6. Use the parent skill's title contract, with both intended claim type and
+   honest author support status, e.g.
+   `[physics-loop] <slug> milestone NN: bounded_theorem bounded-support`.
 7. Never merge the PR. The review-loop/backpressure process decides landing.
 
 If `gh` is unavailable or not authenticated, write `PR_BACKLOG.md` immediately
@@ -168,8 +182,9 @@ At stop:
 1. Run the smallest relevant checks that fit the remaining runtime.
 2. Update `REVIEW_HISTORY.md` and `HANDOFF.md`.
 3. Commit coherent work if allowed and appropriate.
-4. Push science block branches to `origin` if they have commits.
-5. Open or prepare the review PR backlog unless `--no-pr` was supplied.
+4. Push dedicated campaign/block branches to `origin` if they have commits.
+5. Open or prepare review-ready milestone PRs unless `--no-pr` was supplied;
+   preserve incomplete work with its exact next step without forcing a PR.
 6. Release the lock if held and no child process is running.
 7. Report status, branch/PR names, artifacts, remaining blockers, and exact resume
    command.

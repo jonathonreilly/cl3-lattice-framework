@@ -7,12 +7,93 @@ description: Run the cl3-lattice-framework audit lane as an adversarial Nature-g
 
 ## Skill Freshness
 
-Before applying this skill, perform the repo skill freshness check described in
-`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
-this `SKILL.md` exists on `origin/main`, follow that version for the current
-task.
+Before using this workflow, inspect its applicability and correctness and use
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` to select one consistent
+source revision, including references. Ordinary operation uses current main;
+a user-requested prompt review/test uses the identified candidate under review
+without automatically executing the workflow or replacing it with old main text.
 
 Use this skill to audit one claim at a time from the repository audit queue and land the audit result. The standard is hostile field review: the claim must survive an adversarial physicist looking for hidden imports, circular logic, definition-as-derivation, stale numerics, misidentified observables, and overstated closure.
+
+## Scope and research cadence
+
+An explicit audit request invokes this lane. Mentioning audit in a science,
+planning, or process-review task does not. The default research cadence in
+`docs/ai_methodology/SCIENCE_WORKFLOW.md` is continuous discovery with selective
+checks and milestone audits. Formal audit of every provisional leaf is not a
+prerequisite for further work on a candidate branch. An explicit backlog drain
+retains the full drain behavior below.
+
+Resolve the user's target scope before selecting an execution path. A named
+claim, commit, PR, source set, milestone, lane, or candidate file is a bounded
+request even when it contains no literal claim ID. Use the bounded path below;
+prioritizing such targets inside a global drain does not respect that boundary.
+Keep queues and checkpoints durable so discovery can continue independently of
+audit throughput. Neither speed nor agreement with an earlier reviewer is a
+verdict criterion. Do not claim an unexamined candidate is retained.
+
+Use the standard invocation-bound runner/application path for automated
+verdicts. Legacy/manual `apply_audit.py` calls do not universally enforce the
+same transport provenance for ordinary rows; do not describe a manual apply as
+authenticated runner evidence. A new automated workflow must use the standard
+path rather than treating that compatibility route as a shortcut.
+
+### Bounded audit requests
+
+1. Pin the requested commit/PR/source revision and the canonical main snapshot
+   used for selection. Verify Git containment and map the requested landed
+   source paths to exact canonical ledger claim IDs. Record that allowlist and
+   the source revisions in the session handoff. For a milestone or lane name,
+   resolve its actual source set; a title match alone is not a claim mapping.
+   PR metadata may locate sources but must not enter the restricted auditor
+   packet as scientific evidence. Unlanded candidate work is a source-review
+   handoff, not an applied main audit.
+2. Include critical dependency IDs only when the request includes them, using
+   the actual dependency graph and stated scientific obligation. Record why
+   each dependency belongs. Do not silently expand a bounded request to every
+   ancestor, descendant, queue row, or future milestone. If the source mapping
+   or dependency boundary is ambiguous, ask for the missing scope and continue
+   independent source mapping/readiness work or already-unambiguous authorized
+   targets. An absent source or empty allowlist is a scoped blocker, never
+   permission to fall back to a global queue.
+3. Use supported invocation-bound commands with a nonempty explicit selector:
+   - Eligible development-tier claims:
+     `python3 docs/audit/scripts/orchestrate_audit_batch.py --claims 'id1,id2' --max-workers 4`.
+   - Required judicial confirmation for selected claims:
+     `python3 docs/audit/scripts/orchestrate_judicial_panel.py --claims 'id1,id2' --max-workers 4`.
+     Pass only the in-scope disagreement/reseat IDs. Omission of `--claims`
+     selects unrelated disagreements and is forbidden in this mode.
+   - A selected forensic claim uses the authenticated single-claim runner:
+     `python3 scripts/codex_audit_runner.py --claim-id 'id1' --push-mode per-verdict`.
+     Preserve the forensic tier's packet, evidence, timeout and completion
+     requirements. When the claim comes from dispatch or cascade selection,
+     retain the matching `--from-dispatch` or `--from-reaudit-candidates`
+     provenance selector. Do not force a forensic or unsupported claim type
+     into the development batch, bypass eligibility, or use legacy/manual
+     apply to evade a missing supported transport path.
+4. Supervise the bounded batch/panel/resume sequence explicitly. Required
+   independent second seats, judicial panels and reseats stay within the
+   allowlist and retain all existing evidence, independence, application and
+   transaction gates. A batch exit or skipped row does not establish audit
+   completion. Revalidate the remaining selected IDs, source fingerprints and
+   eligibility before each continuation; never substitute new queue members.
+   If a requested exact source revision has changed on main, report the drift
+   and resolve the requested version before judging different bytes.
+5. Stop when the selected set is complete or its remaining rows need user,
+   source, evidence or tooling action; report completed, pending and blocked
+   IDs separately. A blocker outside the selected dependency set is a named
+   follow-up, not authority to expand the audit. Continue useful work within
+   scope while possible. If no available invocation-bound path can enforce
+   the requested scope or support an eligible claim, report that concrete
+   limitation and preserve the handoff.
+
+`orchestrate_audit_loop.py` has no top-level claim-set selector. Its lane and
+runtime options do not confine every dispatch, cascade, panel and forensic
+phase to a milestone. Do not launch it for a bounded target request. All later
+queue-fallthrough, retry, recovery and "continue unrelated rows" instructions
+remain inside the frozen allowlist in bounded mode. Unrestricted-drain commands
+and selection snippets below apply only to a truly unscoped invocation or an
+explicit full-backlog request, subject to any additional user constraints.
 
 ## Non-Negotiables
 
@@ -360,10 +441,12 @@ certification.
 
 ## Default Entry: Do The Right Thing, In Parallel (owner-directed 2026-07-17)
 
-Invoking this skill WITHOUT a specific named claim — including a bare,
-argument-less invocation — means: drain the backlog, in parallel, with the
-canonical machinery — no topology decisions required from the invoker. The
-default session is:
+A bare, argument-less audit-loop invocation retains the standing full-backlog
+drain contract. The same path serves an explicit full-backlog request. Any
+named commit, PR, source set, milestone, lane or other target constraint instead
+uses the bounded audit path above, even without literal claim IDs. Mentioning
+this skill during a process review invokes neither path. For a truly unscoped
+or explicitly full-backlog audit, the default session is:
 
 1. Setup per "Setup For Each Session" below (fetch, clean worktree,
    pipeline, strict lint).
@@ -375,7 +458,7 @@ default session is:
 
    The canonical command has no wall-clock limit and keeps draining until its
    governed fixed point or a verified resource/integrity blocker. When the
-   operator explicitly requests a bounded campaign, add
+   operator explicitly requests a runtime-limited full-backlog campaign, add
    `--max-runtime-hours 12` (or the requested duration). The limit is checked
    only between completed batch/panel/canary phases, so it never interrupts a
    claim transaction, pipeline, lint, or push. The bound must be finite and
@@ -408,10 +491,12 @@ default session is:
    did not land, and advances to the next non-excluded forensic row. Unknown
    execution failures and apply,
    propagation, or push failures still fail closed.
-3. If the user names a lane, pass `--lane <name>`. Otherwise the orchestrator
-   iterates lanes from `docs/audit/data/lane_certification_config.json`,
+3. The full-backlog orchestrator iterates lanes from
+   `docs/audit/data/lane_certification_config.json`,
    selecting entries whose generated `lane_certification.json` record still
-   has blocking rows.
+   has blocking rows. Its `--lane` option controls configured lane phases,
+   not the membership of every other phase; a lane-only request uses the
+   bounded path above.
 
 When multiple employees or Codex accounts participate, read and follow
 [`references/distributed-drain.md`](references/distributed-drain.md). Every
@@ -423,14 +508,15 @@ fast-forward transaction may land. Each zero-work exit is a worker-local
 observation, never a global certification. Confirm the backlog from a fresh
 canonical status/pipeline read after all visible workers have quiesced.
 
-Do not detach `orchestrate_audit_batch.py` as the whole `/audit-loop`
+Do not detach `orchestrate_audit_batch.py` as the whole unrestricted `/audit-loop`
 campaign. A batch is one inner development-tier step and intentionally yields
 when cross-seat disagreement appears. Only `orchestrate_audit_loop.py` owns
 the automatic panel-and-resume edge; treating `judicial_panel_required` as a
 terminal campaign failure is an orchestration defect.
 
-The single-claim manual procedure later in this skill remains the special
-case for targeted rows; it is not the default.
+The bounded path above supervises targeted rows without launching the global
+drainer. The later single-claim judgment and application requirements still
+apply; they do not authorize a legacy/manual transport shortcut.
 
 ## Progress Reports (every 15 minutes)
 
@@ -512,9 +598,11 @@ least every 15 minutes — never silence for a long run.
   every in-flight claim transaction and user-authored change.
 - If a supervisor exits after a transaction has committed and pushed, verify
   process absence and exact local/remote synchronization, repair only the
-  mechanically verified generated-state condition, and relaunch exactly one
-  canonical top-level drainer. Do not leave a recoverable sync condition as a
-  parked audit campaign.
+  mechanically verified generated-state condition, and resume exactly one
+  supervisor for the original scope: the canonical top-level drainer for a
+  full-backlog session, or the remaining allowlisted batch/panel/forensic path
+  for a bounded session. Do not leave a recoverable sync condition as a parked
+  audit campaign or expand the campaign during recovery.
 
 ## Campaign Failure Taxonomy And Persistence
 
@@ -909,6 +997,12 @@ After bulk cache refresh, commit `logs/runner-cache/*.txt` and the mechanical sh
 - If the new restricted-input audit changes the actual clean/non-clean verdict, or if `apply_audit.py` records a real cross-confirmation disagreement, follow the normal escalation path.
 
 ## Pick The Next Claim
+
+For a bounded request, select only from the frozen allowlist established above.
+All dispatch, cascade and queue fallthrough below is restricted to those IDs.
+The unfiltered selection snippets are for full-backlog sessions only; never
+run them as selectors for a bounded session. Missing or ineligible selected
+rows remain explicitly unresolved rather than being replaced by other work.
 
 If the user names a candidate file or other constrained selection source, that source is authoritative. After the pipeline, check the exact path exists. If it is absent, stop and report the missing file; do not search for substitutes or fall back to the default queue unless the user explicitly authorizes that fallback.
 
@@ -1402,7 +1496,7 @@ new parent.
 After each successful direct-main push:
 
 1. Report the claim id, verdict, and one-sentence reason.
-2. If time and user intent allow, fetch `origin/main`, refresh the queue, exclude any session-local blocked/skip rows, and start the next claim.
+2. If time and user intent allow, fetch `origin/main`, refresh the queue, exclude any session-local blocked/skip rows, and start the next claim within the authorized scope. A bounded session stops at its selected set; it never continues into the global queue after completing or blocking those IDs.
 3. Stop if there is an ambiguous independence issue, source-note hash drift that cannot be resolved mechanically, or an audit requiring domain expertise beyond the provided authorities.
 
 For unresolved global hard tooling or policy blockers listed above, do not

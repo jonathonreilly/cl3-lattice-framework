@@ -1,138 +1,82 @@
 # Repo Organization
 
-> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+**Claim type:** meta
+**Purpose:** navigate current science, work in progress, process instructions,
+and historical evidence without confusing their authority.
 
-**Date:** 2026-04-11  
-**Purpose:** stable navigation layer over a large, active research repo
+For term meanings, use [`KEY_TERMINOLOGY.md`](../KEY_TERMINOLOGY.md). For the
+end-to-end working process, start with
+[`SCIENCE_WORKFLOW.md`](../ai_methodology/SCIENCE_WORKFLOW.md).
 
-## Why This Exists
+## Current Entry Points
 
-The repo has accumulated:
+| Need | Surface | How to use it |
+|---|---|---|
+| Read the current scientific package | [`README.md`](../../README.md), then [`START_HERE.md`](../START_HERE.md) | Follow the current science entry points. |
+| Verify a claim's standing | Shards under `docs/audit/data/ledger/` on `origin/main` | Check the exact scoped row and its current dependencies. |
+| Orient across audited results | [`FRONT_DOOR_STATUS.md`](./FRONT_DOOR_STATUS.md), [`RETAINED_BACKBONE.md`](./RETAINED_BACKBONE.md) | Generated views; verify the relevant shard before relying on a grade. |
+| Find source notes | [`KEY_SCIENCE.md`](../KEY_SCIENCE.md) | Navigation to claims and open obligations; the index does not confer standing. |
+| Develop, review, audit, or repair work | [AI methodology](../ai_methodology/README.md) | Select the current skill and follow its freshness procedure. |
+| Track current-main review defects | [`ACTIVE_REVIEW_QUEUE.md`](./ACTIVE_REVIEW_QUEUE.md) | Actionable findings and repair handoffs, not audit verdicts. |
+| Plan the next research target | `AGENTS.md`, `README.md`, and `TOE_SCORECARD.md` on `origin/ai/execution` | Planning only; reverify scorecard evidence against current `origin/main`. |
 
-- many historical architecture lanes
-- many similarly named runner scripts
-- notes that mix retained, bounded, and exploratory claims
-- repeated semantic bugs in observables and runner assumptions
+The `ai/execution` branch never merges into `main`. Read it with `git show`;
+keep planning files on that branch or in branch-local working space rather
+than copying them into the live science tree.
 
-The correct fix is a stable control plane:
+## Layout And Ownership
 
-- one lane board
-- one canonical harness index
-- one retest playbook
-- one machine-readable lane registry
-- one active review queue
+- `docs/` contains source notes, scientific indexes, and policy documents.
+  A file's presence here does not make its claim retained.
+- `scripts/` contains runners and probes. Use each current claim's declared
+  runner and evidence; filename prefixes and age do not establish authority.
+- `docs/audit/` contains audit policy, tooling, controlled inputs, tracked
+  claim shards, and generated views. Only the independent audit lane applies
+  verdicts; regeneration alone does not perform a scientific audit.
+- `docs/ai_methodology/` contains the workflow and canonical methodology
+  skills. `.claude/commands/` provides command entry points into that process.
+- `docs/repo/` contains navigation, active feedback, and governance surfaces.
+- `docs/lanes/` and `docs/CANONICAL_HARNESS_INDEX.md` help locate lane history
+  and runners. Verify their prose against the current scoped ledger before
+  using it to select evidence or describe standing.
+- `docs/work_history/` preserves earlier notes, reviews, lane boards, and
+  backlogs. `archive/` is the record tier; its rules are in `archive/README.md`.
+  The deferred publication package lives at `archive/publication/ci3_z3/`.
+- `.claude/science/`, `outputs/`, and `logs/` hold branch-local working
+  material or runtime output under the applicable skill's placement rules.
+  Distill landable evidence into the source packet rather than treating a
+  working log as science authority.
 
-## Actual Layout
+## Historical Navigation
 
-- `scripts/`
-  - all runners and probes
-  - `frontier_*` is the current frontier namespace
-  - older non-`frontier_` scripts are often historical or lane-specific
-- `docs/`
-  - retained notes, synthesis notes, and current control-plane docs
-- `docs/repo/`
-  - navigation/control-plane docs added specifically to keep the repo usable
-- `docs/lanes/`
-  - lane-level manifests for the whole repo
-- `docs/work_history/`
-  - explicit historical bucket for archived review packets, backlogs, and
-    older lane material
-- `outputs/`, `logs/`
-  - run artifacts and transient output
+The [Historical Lane Status Board](../work_history/repo/LANE_STATUS_BOARD.md)
+and [`LANE_REGISTRY.yaml`](./LANE_REGISTRY.yaml) preserve the earlier lane
+taxonomy. Their `primary-retained`, `retained-companion`, and related labels
+are historical navigation labels, not current audit `effective_status`.
+Do not update these snapshots as a required step for every new result.
 
-## Status Meanings
+The [retest playbook](./RETEST_PLAYBOOK.md) and old harness/lane manifests
+can suggest reproductions for a historical bug. Select the actual rerun from
+the affected current claim and source packet before executing it.
+Legacy root `AUTOPILOT_*` protocols describe an earlier automation setup;
+current work follows the lifecycle and refreshed skills above.
 
-Repo-wide status language now lives in
-[`CONTROLLED_VOCABULARY.md`](./CONTROLLED_VOCABULARY.md).
-The labels below are the historical lane-board subset of that vocabulary.
+## Adding Or Correcting Work
 
-- `primary-retained`
-  - current best-supported lane
-  - this is where new readers should start
-- `retained-companion`
-  - real, replayable, and worth citing
-  - but not the single top-level entrypoint
-- `open-blocker`
-  - a real missing piece that currently limits the main claim boundary
-- `exploratory-reopen`
-  - partially positive but not yet promoted
-- `historical-control`
-  - useful for comparison, methodology, or negative controls
-- `historical-retained`
-  - older retained major program still worth navigating directly
-- `historical-bounded`
-  - scientifically useful but no longer a current main lane
-- `historical-blocked`
-  - a lane with a diagnosed mechanism-level blocker
+1. State one scientific target, the supporting authorities, and the exact
+   missing step the task will address. Keep campaign plans outside the live
+   science tree.
+2. Use clear lane-specific filenames for source notes and runners; preserve
+   existing names unless a reviewed move is necessary. Record explicit
+   dependencies, claim scope, and executable or other permitted evidence.
+3. Prepare a focused PR and route it through review-loop before landing.
+   Corrections to current-main science follow the same source-side path.
+4. Update a live index only when navigation actually changed. Do not refresh
+   dated historical syntheses or hand-author generated status summaries.
+5. Hand landed claim/evidence changes to independent audit or re-audit.
+   Update planning from the observed result and current status, keeping
+   landed evidence distinct from audit-ratified standing.
 
-## Navigation Files
-
-- [`docs/work_history/repo/LANE_STATUS_BOARD.md`](../work_history/repo/LANE_STATUS_BOARD.md)
-  - where each lane across the whole repo sits now
-- [`docs/repo/CONTROLLED_VOCABULARY.md`](./CONTROLLED_VOCABULARY.md)
-  - repo-wide status taxonomy and wording rules
-- [`docs/repo/ACTIVE_REVIEW_QUEUE.md`](./ACTIVE_REVIEW_QUEUE.md)
-  - single live queue for current-main review feedback
-- [`docs/repo/REVIEW_FEEDBACK_WORKFLOW.md`](./REVIEW_FEEDBACK_WORKFLOW.md)
-  - process for landing, reviewing, triaging, and closing feedback
-- [`docs/CANONICAL_HARNESS_INDEX.md`](../CANONICAL_HARNESS_INDEX.md)
-  - which scripts to rerun first
-- [`docs/lanes/README.md`](../lanes/README.md)
-  - lane-by-lane manifests for the full repo
-- [`docs/POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`](../work_history/POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md)
-  - cumulative paper-seed / discovery ledger
-- [`docs/work_history/repo/review_feedback/PUBLICATION_DISCOVERY_AUDIT_2026-04-11.md`](../work_history/repo/review_feedback/PUBLICATION_DISCOVERY_AUDIT_2026-04-11.md)
-  - historical lane-by-lane publication-candidate audit
-- [`docs/repo/RETEST_PLAYBOOK.md`](RETEST_PLAYBOOK.md)
-  - how to handle runner bugs or claim changes
-- [`docs/repo/LANE_REGISTRY.yaml`](LANE_REGISTRY.yaml)
-  - machine-readable registry for automation and future tooling
-- [`docs/repo/ROOT_FILE_GUIDE.md`](ROOT_FILE_GUIDE.md)
-  - what the remaining top-level files are
-
-## File-Naming Rules Going Forward
-
-- New current-program runners should stay in `scripts/` and use a clear,
-  lane-specific prefix:
-  - `frontier_staggered_*`
-  - `frontier_two_field_*`
-  - `frontier_emergent_geometry_*`
-- Historical lanes should not be renamed just to fit the current taxonomy.
-  They should be indexed in the lane board and registry instead.
-- New retained notes should be explicit about the runner they interpret.
-- New strategy or synthesis notes should not silently replace retained notes.
-- If a lane is historical, mark that in the lane board and registry instead of
-  renaming dozens of files.
-
-## How To Add New Work
-
-When a new runner lands:
-
-1. Decide which lane it belongs to.
-2. Add or update its retained note if the result is promotable.
-3. Update the relevant lane entry in:
-   - [`docs/work_history/repo/LANE_STATUS_BOARD.md`](../work_history/repo/LANE_STATUS_BOARD.md)
-   - [`docs/repo/LANE_REGISTRY.yaml`](LANE_REGISTRY.yaml)
-4. If the result changes the retained program surface, also update:
-   - [`docs/SESSION_SYNTHESIS_2026-04-10_FINAL.md`](../SESSION_SYNTHESIS_2026-04-10_FINAL.md)
-
-Operational review packets and planning backlogs were intentionally moved out of
-the front-door `docs/` surface. Use the active review queue for current work
-and the work-history archive for older detailed packets.
-
-- [`docs/work_history/repo/evaluation_tools/README.md`](../work_history/repo/evaluation_tools/README.md)
-- [`docs/work_history/repo/review_feedback/README.md`](../work_history/repo/review_feedback/README.md)
-- [`docs/work_history/repo/backlog/README.md`](../work_history/repo/backlog/README.md)
-
-Do not treat those scorecards, old audit packets, or backlog notes as part of
-the live control plane.
-
-## What This Organization Deliberately Does Not Do
-
-- It does **not** pretend every note in `docs/` is equally current.
-- It does **not** merge exact-lattice force claims with irregular-graph proxy
-  claims.
-- It does **not** let a runner become “canonical” just because it exists.
-
-This is a navigation and governance layer first. Physical file moves can come
-later, after the active frontier stabilizes.
+[`REVIEW_FEEDBACK_WORKFLOW.md`](./REVIEW_FEEDBACK_WORKFLOW.md) describes
+feedback placement and closure. [`ROOT_FILE_GUIDE.md`](./ROOT_FILE_GUIDE.md)
+explains the remaining root files.

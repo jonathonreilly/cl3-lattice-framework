@@ -37,16 +37,19 @@ disclosed conditional target itself.
 ## Derivation Protocol
 
 ### 1. State the Target
-- What exact structure or behavior are you deriving? Quote the quantitative
-  characterization and its source (note, runner output, ledger row).
+- What exact structure or behavior are you deriving? State the mathematical
+  proposition or quantitative physical characterization, with its source
+  (note, runner output, ledger row) and domain/quantifiers.
 - Established physics may NAME the target (disclosed comparator). It may
   never justify a derivation step.
 
 ### 2. Build the Premise Ledger
 - List every axiom, approved primitive, retained theorem (with
   `effective_status`), and open obligation the derivation will encounter.
-- Anything not on the allowed list above is a new import: stop and flag it
-  for explicit user approval instead of using it silently.
+- Standard mathematical tools may be used with their hypotheses checked.
+  Disclose extra physical conditions and keep conclusions conditional on them;
+  do not treat those conditions as accepted framework premises. New framework
+  axioms or primitives require explicit owner approval.
 
 ### 3. Identify the Minimal Mechanism
 - Which premises are actually load-bearing? Find the minimum set.
@@ -64,9 +67,13 @@ disclosed conditional target itself.
   choice, or readout assumption. Those are exactly where hidden imports
   hide and where hostile review will attack the semantic bridge.
 
-### 5. Make a New Prediction
-- State a quantitative consequence that was not part of the target's
-  original characterization. This is mandatory — it is the falsifier.
+### 5. State the Decisive Check
+- For an exact theorem, give the proof obligations, counterexample conditions,
+  and any exhaustive certificate. A theorem need not invent an empirical
+  prediction to be a valid derivation.
+- For an empirical identification, state a quantitative prediction, comparison
+  criterion, and uncertainty treatment. Separate calibration from validation
+  and disclose exposure to the target; do not invent novelty after the fact.
 
 ### 6. Name the Weakest Link
 - Which step is least certain, and what exact runner or proof artifact would
@@ -77,8 +84,9 @@ disclosed conditional target itself.
 A failed attempt with the exact load-bearing wall named is valid output —
 record it. Do not blur it into vague prose, and do not declare
 "import-required" or "no-go" from one failed route: run `/no-go-gate`
-(N1–N8) before any negative claim ships, and do not re-open a previously
-retired no-go route without naming a new premise.
+(N1–N8) before any negative claim ships, and reopen a previously
+closed route only with a concrete changed mechanism, scope, premise, or
+counterexample that addresses the original proof.
 
 ## Output
 
@@ -91,7 +99,7 @@ Write the derivation to `.claude/science/derivations/{slug}-{date}.md`:
 {date}
 
 ## Target
-{what is being derived, with quantitative characterization and source}
+{exact proposition or quantitative physical target, with domain/quantifiers and source}
 
 ## Premise Ledger
 {axioms / approved primitives / retained deps with effective_status / open obligations}
@@ -104,8 +112,8 @@ Write the derivation to `.claude/science/derivations/{slug}-{date}.md`:
 ### ...
 ### Step N: Therefore {target}
 
-## Novel Prediction
-{mandatory falsifier}
+## Decisive Check
+{proof obligations/counterexample, or empirical prediction and uncertainty}
 
 ## Weakest Link
 {least certain step and the artifact that would test it}
@@ -114,36 +122,40 @@ Write the derivation to `.claude/science/derivations/{slug}-{date}.md`:
 PROPOSED / TESTED / CONFIRMED / REFUTED / BLOCKED (named wall)
 ```
 
-This is a branch-local working document. If the result is theorem-grade,
-distill it to the landing shape — one source note (`docs/`) + one runner
-(`scripts/`) + one cached output (`logs/runner-cache/`) — on a science branch,
-using author-side status vocabulary only (`proposed_retained` at most), and
-route it through `/review-loop`.
+This is a branch-local working document. At a review-ready milestone, distill
+the result to a scientific source note with the evidence appropriate to its
+claim: a complete proof with checked hypotheses, an exhaustive certificate,
+or a runner and authentic cached output checking the load-bearing step. Keep
+open obligations and independent verification state explicit, use author-side
+status vocabulary only (`proposed_retained` at most), and prepare the authorized
+review handoff. Follow the actual evidence-registration/publication contract
+for the submitted class. If that gate requires an unavailable artifact, report
+the packaging limitation separately from mathematical validity; do not invent
+a runner or silently waive the gate.
 
 ## Rules
 
-- Elegance is not evidence. A clean derivation still needs its decisive
-  artifact: a runner that checks the load-bearing step, not downstream
-  arithmetic after the premise is assumed.
-- The novel prediction in step 5 is mandatory; without it the derivation is
-  not falsifiable and not ready.
-- No new axioms, primitives, or imports without explicit user approval.
+- Elegance is not evidence. An exact derivation needs a complete proof with
+  checked hypotheses and independent verification appropriate to the claim;
+  naming a proof obligation does not discharge it. A computational or empirical
+  check must test the load-bearing step, not downstream arithmetic after that
+  step is assumed. A valid counterexample refutes the stated scope; finite
+  examples establish an infinite-domain claim only with a justified reduction.
+- The decisive check in step 5 must match the claim. Numerical agreement is
+  not a general proof, and an exact proof is not an empirical identification.
+- No new framework axioms or primitives without explicit user approval.
+  A hypothetical premise may support a clearly stated conditional theorem;
+  it does not become accepted because the theorem is useful.
 - If you catch yourself writing "this is the framework's version of
   {entanglement / gravity / inertia / confinement}" as an argument — stop
   and rephrase as a structural statement or a disclosed comparator.
 - No lock needed — this is a thinking exercise until a runner is built.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

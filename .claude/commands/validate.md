@@ -62,28 +62,39 @@ apply later; failing here is far cheaper than failing there.
 
 ## Stochastic/Numerical Battery
 
+Predeclare criteria matched to the claim: estimand, sampling or optimization
+procedure, tolerances, uncertainty, convergence diagnostics, and relevant
+size/parameter range. No universal seed count, effect prevalence, or percentage
+perturbation establishes validity. Mark underpowered or unrun tests INCONCLUSIVE.
+
 ### Seed Robustness
-- Re-run with 5 different seeds. **PASS:** CV < 0.2 and effect direction
-  consistent 5/5. **FAIL:** effect disappears or reverses in any seed.
+- Use independent seeds and sufficient effective sample size for the claimed
+  uncertainty. Account for autocorrelation and optimization failures. Report
+  the distribution and convergence, including sign changes; judge them against
+  the predeclared claim, not a requirement that every realization agree.
 
 ### Parameter Sensitivity
-- Perturb key parameters ±10%. **PASS:** smooth degradation.
-  **FAIL:** effect vanishes at small perturbations.
+- Probe the claim's stated parameter domain, including thresholds and singular
+  limits. Test sensitivity of the conclusion and its uncertainty. Smoothness
+  is required only if the claim asserts it; a physical transition may be real.
 
 ### Finite-Size Check
-- Run at 0.5x, 1x, 2x the original size. **PASS:** effect persists or
-  strengthens. **FAIL:** weakens or vanishes at larger size.
+- Test the expected finite-size/scaling law at feasible sizes and identify
+  extrapolation assumptions and errors. A decreasing finite-size correction
+  can support a claim. Persistence or growth is not a universal criterion.
 
 ### Initialization Independence
-- ≥3 different initial conditions. **PASS:** effect appears regardless.
-  **FAIL:** depends on a specific initialization.
+- Test initialization or basin dependence where relevant. Distinguish an
+  equilibrium/ergodic claim from a conditional-state or metastability claim;
+  disclose any restriction instead of assuming initialization independence.
 
 ### Stochastic Script Logic Check
 - Same as Exact Script Logic Check.
 
 ### Cherry-Pick Check
-- Re-analyze ALL runs including failures. **PASS:** effect in ≥80% of the
-  full ensemble. **FAIL:** < 50% (likely cherry-picked).
+- Account for all runs, exclusions, failed solves, stopping decisions, and
+  searched observables/parameters. Check selection bias and multiple testing
+  where applicable. Effect prevalence alone does not establish cherry-picking.
 
 ## Output
 
@@ -101,7 +112,7 @@ exact-deterministic | stochastic-numerical
 ## Results
 | Check | Result | Details |
 |-------|--------|---------|
-| ...   | PASS/FAIL | quantitative detail |
+| ...   | PASS/FAIL/INCONCLUSIVE/NOT RUN | quantitative detail |
 
 ## Overall Confidence
 HIGH / MEDIUM / LOW / FAILED
@@ -110,7 +121,7 @@ HIGH / MEDIUM / LOW / FAILED
 {weaknesses even if overall PASS}
 
 ## Status
-VALIDATED / FRAGILE / REFUTED
+VALIDATED / FRAGILE / REFUTED / INCONCLUSIVE
 ```
 
 Create the directory if it does not exist.
@@ -130,17 +141,11 @@ Create the directory if it does not exist.
   proposal vocabulary, and ratification belongs to the independent audit
   lane.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

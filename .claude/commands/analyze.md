@@ -25,7 +25,9 @@ qubit-lattice axiom framework.
 
 ### 2. Statistical Summary
 For each observable: mean, median, std, min/max, distribution shape,
-outliers (> 3 sigma). For exact (integer/rational/symbolic) outputs, state
+potential outliers using criteria suited to the distribution and sampling
+model. An outlier flag is descriptive, not permission to exclude a run or a
+significance claim. For exact (integer/rational/symbolic) outputs, state
 exactness explicitly instead of fabricating error bars.
 
 ### 3. Trend Detection
@@ -69,17 +71,11 @@ sections above. Create the directory if it does not exist.
 - An exciting match to a known constant is a comparator observation, not a
   derivation — say which one it is.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

@@ -1,0 +1,53 @@
+name: process-pr-smoke
+
+# Fast mechanical signal for process/tooling edits. No audit execution,
+# generated status updates, deployment credentials, or pushes.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+      - '.claude/commands/**'
+      - 'AGENTS.md'
+      - 'CLAUDE.md'
+      - 'docs/ai_methodology/**'
+      - 'docs/audit/scripts/**'
+      - 'docs/audit/templates/**'
+      - 'docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md'
+      - 'scripts/science_fix_loop.py'
+      - 'scripts/sync_methodology_skills.py'
+      - 'requirements*.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: process-pr-smoke-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  process_contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Install test dependencies
+        run: python -m pip install -r requirements-release.txt
+      - name: Check review and premise prompt contracts
+        run: |
+          python docs/audit/scripts/check_review_loop_skill_contract.py
+          python docs/audit/scripts/generate_skill_axiom_baselines.py --check
+      - name: Check focused process regressions
+        run: |
+          python -m unittest discover -s docs/audit/scripts/tests -p test_review_loop_skill_contract.py
+          python -m unittest discover -s docs/audit/scripts/tests -p test_skill_axiom_baselines.py
+          python -m unittest discover -s docs/audit/scripts/tests -p test_science_fix_priority.py
+          python -m unittest discover -s docs/audit/scripts/tests -p test_sync_methodology_skills.py
+          python -m unittest discover -s docs/audit/scripts/tests -p test_changed_audit_evidence.py
+      - name: Verify workflow distribution copy
+        run: diff -u .github/workflows/audit.yml docs/audit/templates/audit_workflow.yml

@@ -7,10 +7,11 @@ description: Use when an LLM agent is about to ship a no-go, stretch-attempt-neg
 
 ## Skill Freshness
 
-Before applying this skill, perform the repo skill freshness check described in
-`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
-this `SKILL.md` exists on `origin/main`, follow that version for the current
-task.
+Before using this workflow, inspect its applicability and correctness and use
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` to select one consistent
+source revision, including references. Ordinary operation uses current main;
+a user-requested prompt review/test uses the identified candidate under review
+without automatically executing the workflow or replacing it with old main text.
 
 A structured gate for negative claims. The symmetric counterpart of the V1-V5
 Promotion Value Gate in `physics-loop` — V1-V5 prevents overclaiming positives;
@@ -75,8 +76,16 @@ object/formulation, load-bearing mechanism or invariant, or terminal proof
 obligation. Different agents, notation, or artifact types do not make distinct
 routes.
 
-**Failure condition:** if you can name fewer than 5 distinct routes, the
-no-go is premature. List what you can and stop; do not ship.
+**Packet failure condition:** fewer than 5 distinct routes cannot receive
+packet PASS under the current schema. List the real routes and distinguish
+the submission limitation from the theorem's mathematical validity. Never
+manufacture route families or describe the count itself as disproof.
+
+This five-family minimum is the current packet validator's procedural rule,
+not a proof of exhaustiveness. Do not manufacture families or infer that a
+mathematical theorem is false because its packet cannot meet the quota. Report
+the packet limitation separately; do not claim PASS. The rule must be changed
+in the validator and auditor schema before using a different packet contract.
 
 **Why 5:** small enough to be achievable in one cycle, large enough to force
 agents off the "I tried one obvious route" failure mode that produced three
@@ -90,7 +99,9 @@ a pairwise table. For each pair `(W_i, W_j)`:
 
 - does closing `W_i` automatically close `W_j`? (yes / no);
 - does closing `W_j` automatically close `W_i`? (yes / no);
-- independent? (only if both above are no).
+- independent? Only assert this when both non-implications are justified;
+  absence of a known implication is not proof of independence. Record
+  unknown relations as unresolved, without inventing a wall count.
 
 Collapse all pairs where one wall follows from another. The claim must use
 the **collapsed** wall set, not the inflated raw set.
@@ -202,11 +213,14 @@ If you can write a convincing steelman, the no-go is premature: there is
 at least one route you have not closed. Demote to partial-attempt and ship
 the steelman as the next cycle's target.
 
-If you cannot write a steelman after honest effort, the no-go is solid.
+Failure to find a counterargument supplies no evidence of impossibility.
+The scoped negative theorem still requires a valid proof or a certificate
+that exhausts its stated domain. Report an unresolved search as unresolved.
 
-**Failure condition:** failing to produce a steelman because "I can't think
-of any counter-argument" usually means you have not tried — not that no
-counter-argument exists. Try harder; if still nothing, the no-go is solid.
+**Failure condition:** an admissible counter-route inside the claimed domain
+remains unclosed, or the negative conclusion rests on inability to think of
+an alternative. An out-of-domain escape narrows the conclusion; it does not
+refute an otherwise proved theorem inside its stated domain.
 
 ### N8 — Cross-cycle echo
 
@@ -332,8 +346,9 @@ The cases illustrate:
 - Do not weaken the gate by lowering the failure thresholds. If a cycle
   cannot pass N1-N8, the negative claim is not yet ready to ship; that is
   the gate working correctly.
-- This gate does not prevent shipping; it prevents OVERCLAIMING. A correctly
-  scoped narrow no-go passes N1-N8 by being narrow.
+- This gate checks scope and packet completeness. Narrowing an overclaim may
+  repair its science, but does not automatically satisfy the five-route schema.
+  Report any remaining packet limitation separately and do not claim PASS.
 - This gate is also not a substitute for honest physics work. Passing N1-N8
   on a real no-go just records the discipline; the no-go itself stands or
   falls on its science content.

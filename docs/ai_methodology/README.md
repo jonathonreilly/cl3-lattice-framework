@@ -1,5 +1,7 @@
 # AI Methodology Lane
 
+**Claim type:** meta
+
 This directory is the front door for the repository's AI-methodology surface.
 
 Use it to answer:
@@ -15,7 +17,36 @@ Use it to answer:
 > Orientation memos and methodology prose carry no premise or interpretive
 > weight; premises cite axiom sentences, registrations, or audited scopes.
 
-## Start Here
+## Current Working Process
+
+Start with [`SCIENCE_WORKFLOW.md`](./SCIENCE_WORKFLOW.md) for target selection,
+the author → PR → review → landing → independent audit → repair cycle, and
+the division between science authority and planning. Agent instructions and
+the TOE scorecard live on `origin/ai/execution`; read them with `git show` and
+reverify any planning claims against current `origin/main`.
+
+Before applying a skill, follow
+[`SKILL_FRESHNESS_CHECK.md`](./skills/SKILL_FRESHNESS_CHECK.md). The repo skill
+and its referenced procedures are the working instructions; an installed
+copy or a dated methodology narrative can be stale.
+
+| Task | Current skill or procedure |
+|---|---|
+| Develop a scientific target | [`physics-loop`](./skills/physics-loop/SKILL.md), [`ai-physics-lane-builder`](./skills/ai-physics-lane-builder/SKILL.md) |
+| Execute a bounded spec | [`workhorse`](./skills/workhorse/SKILL.md) |
+| Reframe a blocked investigation | [`exercise`](./skills/exercise/SKILL.md) |
+| Stress-test a claim or negative result | [`physics-claim-reviewer`](./skills/physics-claim-reviewer/SKILL.md), [`no-go-discipline`](./skills/no-go-discipline/SKILL.md) |
+| Prepare and review a PR | [`author preflight`](./skills/review-loop/PREFLIGHT.md), [`review-loop`](./skills/review-loop/SKILL.md) |
+| Apply an independent claim verdict | [`audit-loop`](./skills/audit-loop/SKILL.md) |
+| Repair audit findings and readiness defects | [`science-fix-loop`](./skills/science-fix-loop/SKILL.md) |
+| Resolve review feedback | [`reviewer-backpressure-integrator`](./skills/reviewer-backpressure-integrator/SKILL.md), [`feedback workflow`](../repo/REVIEW_FEEDBACK_WORKFLOW.md) |
+| Synthesize methodology evidence | [`methodology-paper-synthesizer`](./skills/methodology-paper-synthesizer/SKILL.md) |
+
+Review acceptance records what may land. Audit standing comes from the scoped
+ledger on `origin/main`; neither this navigation page nor a planning scorecard
+grants it.
+
+## Methodology Evidence And Disclosure
 
 1. `../AI_METHODOLOGY_NOTE_2026-04-25.md` (sibling artifact;
    cross-reference only — not a one-hop dep of this note)
@@ -89,7 +120,8 @@ Use it to answer:
 - branch-side retainability examples:
   [`../CLAUDE_BRANCH_RETAINABILITY_NOTE.md`](../CLAUDE_BRANCH_RETAINABILITY_NOTE.md),
   [`../UNPROMOTED_BRANCH_RETAINABILITY_AUDIT_NOTE.md`](../UNPROMOTED_BRANCH_RETAINABILITY_AUDIT_NOTE.md)
-- automation / hygiene protocols:
+- historical automation / hygiene protocols (earlier setup; current operations
+  follow the lifecycle and refreshed skills above):
   [`../../AUTOPILOT_PROTOCOL.md`](../../AUTOPILOT_PROTOCOL.md),
   [`../../AUTOPILOT_JANITOR_PROTOCOL.md`](../../AUTOPILOT_JANITOR_PROTOCOL.md),
   [`../../AUTOPILOT_SUMMARY_PROTOCOL.md`](../../AUTOPILOT_SUMMARY_PROTOCOL.md)

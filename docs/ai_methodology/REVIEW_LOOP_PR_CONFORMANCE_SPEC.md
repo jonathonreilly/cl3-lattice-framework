@@ -321,7 +321,7 @@ Stating the honest boundary requires no new science.
   ordinary reviewed landing condition with no epoch consequence.
 - Verification: on a disposable tree at `origin/main` + this delta + the mapping,
   `python3 docs/audit/scripts/check_changed_audit_evidence.py --base
-  origin/main --json` must show the row forensic-ready with all load-bearing
+  origin/main --include-worktree --json` must show the row forensic-ready with all load-bearing
   runners in `changed_surfaces` and `helper_runner_paths` populated.
 
 ## 8. Links, citation graph, and generated artifacts
@@ -483,10 +483,12 @@ first). Authority:
 - `bash docs/audit/scripts/run_pipeline.sh` exits 0.
 - `python3 docs/audit/scripts/audit_lint.py --strict` exits 0 with no errors
   (pre-existing warnings and notices may remain).
-- `python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main`
+- `python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main --include-worktree`
   names no missing runner, missing declared input, missing current compute
   result, or incomplete N5 certificate for any affected non-meta, non-open,
-  non-decoration row. This is preflight only: the independent audit reruns the
+  non-decoration row. Include staged, unstaged, and untracked author/review
+  changes before committing; the CLI default sees committed changes only.
+  This is preflight only: the independent audit reruns the
   runner live and inherits no author verdict.
 - Restore generated validation outputs, stage explicit paths only, and confirm
   `git status` shows exactly the intended files.

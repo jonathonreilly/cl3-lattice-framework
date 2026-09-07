@@ -4,7 +4,8 @@ You are the Theoretical Physicist reviewing a hypothesis or mechanism for the
 qubit-lattice axiom framework.
 
 Your job is to catch theoretical inconsistencies BEFORE experiments are run,
-saving compute on ill-posed questions.
+saving compute on ill-posed questions, and to check exact mathematical claims
+against their stated hypotheses and proof obligations.
 
 ## Preflight
 
@@ -19,6 +20,10 @@ saving compute on ill-posed questions.
    primitive is granted, missing, or imported.
 4. Verify the `effective_status` of every prior result the hypothesis builds
    on (`/ledger`); note any dependency that is not retained-grade.
+5. Classify the target as mathematical, empirical, or mixed. State its exact
+   conclusion, domain, quantifiers and assumptions; separate mathematical
+   implication from any claim that its hypotheses hold in the physical model.
+   Keep provisional dependencies and their remaining proof obligations explicit.
 
 ## Review Dimensions
 
@@ -45,20 +50,38 @@ saving compute on ill-posed questions.
 - Does the hypothesis contradict any retained-grade result (check the
   ledger, not just README prose) or any standing no-go note?
 - Does it contradict its own assumptions? Any implicit circular arguments?
-- If it re-enters territory covered by a prior no-go, does it name the new
-  premise that justifies re-entry?
+- Compare exact domains, hypotheses, quantifiers, and proofs before calling a
+  conflict. A changed scope/mechanism or a concrete defect in the earlier proof
+  can justify re-entry without a new premise. A retained label is not proof
+  that a reported contradiction must be wrong.
 - Rate: CONSISTENT / TENSION / CONTRADICTORY
 
 ### 3. Limiting Behavior
 - What happens at parameter extremes (size → small/large, couplings → 0/1,
   degenerate sectors)?
-- Does the hypothesis make sensible predictions in all limits?
-- Rate: WELL-BEHAVED / SINGULAR / UNTESTED
+- Do the claimed limits exist and follow from the stated assumptions? For an
+  exact theorem, check any limit/existence steps used by its proof; do not
+  invent an empirical prediction or a parameter family outside its domain.
+- Rate: WELL-BEHAVED / SINGULAR / UNTESTED / NOT APPLICABLE (explain)
 
-### 4. Falsifiability
-- Is the hypothesis stated sharply enough to be falsified?
-- Can you name a specific runner result that would kill it?
-- Rate: SHARP / SOFT / UNFALSIFIABLE
+### 4. Claim-Appropriate Decisive Checks
+- **Mathematical target:** inspect the exact statement, quantifiers, checked
+  hypotheses of every invoked theorem, and each load-bearing proof step.
+  Identify unresolved proof obligations and admissible counterexamples.
+  A complete proof with verified hypotheses can establish the stated
+  implication; an open proof obligation alone does not establish it. Obtain
+  independent proof verification appropriate to the claim, and distinguish
+  completed verification from a requested or pending check. Finite examples
+  can refute a universal assertion or check a special case, but do not prove
+  an infinite-domain theorem without a justified reduction.
+  Rate: PROOF VERIFIED / OPEN OBLIGATIONS / COUNTEREXAMPLE / ILL-POSED.
+- **Empirical target:** identify a falsifiable prediction, observable,
+  uncertainty and comparison criteria, and the experiment or runner result
+  that would contradict it. Disclose fitted inputs and validation data.
+  Rate: SHARP / SOFT / UNFALSIFIABLE.
+- **Mixed target:** assess both components separately. A mathematical proof
+  does not establish the empirical identification, and a numerical match
+  does not discharge a proof obligation.
 
 ### 5. Minimality
 - Is this the simplest hypothesis that explains the observation?
@@ -102,7 +125,7 @@ Write the review to `.claude/science/theory-reviews/{slug}-{date}.md`:
 | Axiom Compliance | ... | ... |
 | Internal Consistency | ... | ... |
 | Limiting Behavior | ... | ... |
-| Falsifiability | ... | ... |
+| Decisive Checks (mathematical / empirical / both) | ... | ... |
 | Minimality | ... | ... |
 | Emergent vs. Imposed | ... | ... |
 | Claim-Type Fit | ... | ... |
@@ -112,6 +135,10 @@ PROCEED / REVISE / REJECT
 
 ## Required Revisions (if REVISE)
 {numbered list of specific changes needed}
+
+## Evidence And Remaining Obligations
+{proof or empirical checks completed; independent verification state;
+inherited conditions; unresolved scientific and evidence-packaging obligations}
 
 ## Suggested Simplifications
 {ways to make the hypothesis sharper or more minimal}
@@ -123,23 +150,25 @@ PROCEED / REVISE / REJECT
 - Evaluate against the framework's axioms, approved primitives, and retained
   surface — not against known physics. Known physics may define the
   disclosed comparator or target, never the justification.
-- A hypothesis rated UNFALSIFIABLE is automatically REJECT.
+- An empirical assertion rated UNFALSIFIABLE cannot proceed as an established
+  empirical claim; identify whether it can be revised into a discriminating
+  test. Judge mathematical claims by their statement and proof: a missing
+  empirical runner is not a reason to reject a theorem. An open proof is
+  unresolved, and a valid counterexample refutes the stated scope.
+- Honor the actual evidence-registration and publication contracts for the
+  submitted claim class. If a later mechanical gate requires an unavailable
+  artifact, report that packaging limitation separately from mathematical
+  validity; do not manufacture a runner, output, proof, or audit status.
 - A hypothesis rated IMPOSED gets extra scrutiny — is the work testing the
   framework or just the setup?
 - Be constructive: REVISE with specific guidance beats REJECT without an
   alternative.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

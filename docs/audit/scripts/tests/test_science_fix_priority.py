@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 import io
+import contextlib
 import json
+import subprocess
 import sys
 import tarfile
 import tempfile
@@ -661,8 +663,10 @@ class OperationalAuthorityBoundaryTest(unittest.TestCase):
 
     def test_compute_quarantine_cannot_authorize_claim_note_commit(self):
         def fake_git(*args, **kwargs):
-            if args[:3] == ("diff", "--name-only", "HEAD"):
-                return mock.Mock(stdout="docs/CLAIM_NOTE.md\n", returncode=0)
+            if args[:5] == ("diff", "--no-renames", "--name-only", "-z", "HEAD"):
+                return mock.Mock(stdout="docs/CLAIM_NOTE.md\0", returncode=0)
+            if args[:3] == ("diff", "--cached", "--no-renames"):
+                return mock.Mock(stdout="", returncode=0)
             if args[:3] == ("ls-files", "--others", "--exclude-standard"):
                 return mock.Mock(stdout="", returncode=0)
             raise AssertionError(f"unexpected git call: {args}")
@@ -683,26 +687,387 @@ class OperationalAuthorityBoundaryTest(unittest.TestCase):
 
 
 
-class CleanupWorktreeBranchTest(unittest.TestCase):
-    def test_cleanup_removes_worktree_and_local_branch(self):
-        import subprocess
+class PublicationRecoveryTest(unittest.TestCase):
+    """Use disposable local Git histories; never fetch or mutate the real repo."""
 
-        path, branch = sfl.make_worktree("cleanup_probe_claim", "testrun0")
-        try:
-            self.assertTrue(path.exists())
-            listed = subprocess.run(
-                ["git", "branch", "--list", branch],
-                cwd=sfl.REPO_ROOT, capture_output=True, text=True,
-            ).stdout
-            self.assertIn(branch, listed)
-        finally:
-            sfl.cleanup_worktree(path, branch)
+    def setUp(self):
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        self.root = Path(directory.name) / "repo"
+        self.root.mkdir()
+        self._git("init", "-q")
+        self._git("config", "user.name", "Test")
+        self._git("config", "user.email", "test@example.invalid")
+        self._git("config", "core.hooksPath", "/dev/null")
+        self._git("config", "commit.gpgsign", "false")
+        self.note = "docs/Claim with spaces.md"
+        self.shard = "docs/audit/data/ledger/cl/claim.json"
+        self.sidecar = "docs/audit/data/claim_reaudit_queue.json"
+        self._write(self.note, "source baseline\n")
+        self._write(self.shard, "audit baseline\n")
+        self._write(self.sidecar, "controlled baseline\n")
+        self._git("add", ".")
+        self._git("commit", "-qm", "base")
+        self.base = self._git("rev-parse", "HEAD").stdout.strip()
+        self._git("update-ref", "refs/remotes/origin/main", self.base)
+        self.patch = mock.patch.object(sfl, "REPO_ROOT", self.root)
+        self.patch.start()
+        self.addCleanup(self.patch.stop)
+
+    def _git(self, *args, cwd=None):
+        return subprocess.run(["git", *args], cwd=cwd or self.root,
+                              capture_output=True, text=True, check=True)
+
+    def _write(self, rel, content, root=None):
+        path = (root or self.root) / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content)
+
+    def _publish(self, side_effect=None):
+        real_git = sfl.git
+        self.publication_pushes = []
+
+        def guarded_git(*args, **kwargs):
+            if args[0] == "push":
+                self.publication_pushes.append(args)
+                return subprocess.CompletedProcess(args, 0, "", "")
+            if side_effect:
+                response = side_effect(args, kwargs)
+                if response is not None:
+                    return response
+            return real_git(*args, **kwargs)
+
+        with mock.patch.object(sfl, "git", side_effect=guarded_git):
+            return sfl.commit_and_push("claim", self.root, "repair", "summary",
+                                       "test", "failed")
+
+    def test_moving_main_does_not_import_audit_and_controlled_sidecars_survive(self):
+        self._write(self.shard, "new independent main audit\n")
+        self._git("add", self.shard)
+        self._git("commit", "-qm", "main advanced")
+        self._git("update-ref", "refs/remotes/origin/main", "HEAD")
+        self._git("checkout", "-qb", "repair", self.base)
+        self._write(self.note, "source repair\n")
+        self._write(self.shard, "local pipeline churn\n")
+        self._write(self.sidecar, "controlled dispatch repair\n")
+        self._write("docs/audit/data/new_reaudit_queue.json", "new controlled target\n")
+        self._write("docs/audit/data/effective_status_summary.json", "untracked output\n")
+        self._git("add", "docs/audit/data/effective_status_summary.json")
+        ok, reason = self._publish()
+        self.assertTrue(ok, reason)
+        self.assertEqual(self._git("show", f"HEAD:{self.shard}").stdout, "audit baseline\n")
+        self.assertEqual(self._git("show", f"HEAD:{self.sidecar}").stdout, "controlled dispatch repair\n")
+        paths = set(self._git("diff", "--name-only", "HEAD^", "HEAD").stdout.splitlines())
+        self.assertEqual(paths, {self.note, self.sidecar, "docs/audit/data/new_reaudit_queue.json"})
+        self.assertFalse((self.root / "docs/audit/data/effective_status_summary.json").exists())
+
+    def test_restore_failure_stops_before_commit(self):
+        self._write(self.note, "source repair\n")
+        self._write(self.shard, "pipeline churn\n")
+
+        def fail_restore(args, kwargs):
+            if args[0] == "restore":
+                raise subprocess.CalledProcessError(1, args, stderr="index locked")
+        ok, reason = self._publish(fail_restore)
+        self.assertFalse(ok)
+        self.assertIn("cannot strip", reason)
+        self.assertEqual(self._git("rev-parse", "HEAD").stdout.strip(), self.base)
+        self.assertEqual((self.root / self.note).read_text(), "source repair\n")
+
+    def test_file_created_after_inventory_is_not_staged(self):
+        self._write(self.note, "source repair\n")
+
+        def inject_file(args, kwargs):
+            if args[0] == "add":
+                self._write("unrelated scratch.txt", "not in frozen scope\n")
+        ok, reason = self._publish(inject_file)
+        self.assertTrue(ok, reason)
+        paths = self._git("diff", "--name-only", "HEAD^", "HEAD").stdout.splitlines()
+        self.assertEqual(paths, [self.note])
+        self.assertIn("unrelated scratch.txt", self._git("status", "--porcelain").stdout)
+
+    def test_worker_commits_are_preserved_for_review_before_publication(self):
+        self._write(self.shard, "worker-minted audit\n")
+        self._git("add", self.shard)
+        self._git("commit", "-qm", "unexpected worker commit")
+        self._write(self.note, "source edit after unexpected commit\n")
+        ok, reason = sfl.commit_and_push(
+            "claim", self.root, "repair", "summary", "test", "failed",
+            expected_head=self.base,
+        )
+        self.assertFalse(ok)
+        self.assertIn("worker changed HEAD", reason)
+        self.assertEqual((self.root / self.shard).read_text(), "worker-minted audit\n")
+
+    def test_renamed_authority_cannot_escape_generated_boundary(self):
+        moved = "docs/moved_claim.json"
+        self._git("mv", self.shard, moved)
+        self.assertEqual(sfl.publication_changed_paths(self.root), {self.shard, moved})
+        ok, reason = self._publish()
+        self.assertFalse(ok)
+        self.assertIn("crosses generated authority boundary", reason)
+        self.assertEqual(self._git("rev-parse", "HEAD").stdout.strip(), self.base)
+        self.assertEqual((self.root / moved).read_text(), "audit baseline\n")
+
+    def test_source_renamed_into_generated_output_is_preserved_for_review(self):
+        # Use an actual recognized generated output, not arbitrary controlled data.
+        moved = "docs/audit/data/effective_status_summary.json"
+        self._git("mv", self.note, moved)
+        self.assertEqual(sfl.publication_changed_paths(self.root), {self.note, moved})
+        ok, reason = self._publish()
+        self.assertFalse(ok)
+        self.assertIn("crosses generated authority boundary", reason)
+        self.assertEqual(self._git("rev-parse", "HEAD").stdout.strip(), self.base)
+        self.assertEqual((self.root / moved).read_text(), "source baseline\n")
+
+    def test_untracked_authority_copy_is_rejected_before_publication(self):
+        copied = "docs/copied_verdict.json"
+        self._write(copied, (self.root / self.shard).read_text())
+        ok, reason = self._publish()
+        self.assertFalse(ok)
+        self.assertIn("crosses generated authority boundary", reason)
+        self.assertEqual(self._git("rev-parse", "HEAD").stdout.strip(), self.base)
+        self.assertEqual((self.root / self.shard).read_text(), "audit baseline\n")
+        self.assertEqual((self.root / copied).read_text(), "audit baseline\n")
+
+    def _assert_strip_refuses_without_mutating(self):
+        changed = sfl.publication_changed_paths(self.root)
+        before_files = {
+            path: (self.root / path).read_bytes() if (self.root / path).is_file() else None
+            for path in changed
+        }
+        before_staged = self._git("diff", "--cached", "--binary", "HEAD").stdout
+        with self.assertRaisesRegex(RuntimeError, "generated authority boundary"):
+            sfl.strip_generated_audit_outputs(self.root, changed)
+        self.assertEqual(self._git("diff", "--cached", "--binary", "HEAD").stdout, before_staged)
+        self.assertEqual({
+            path: (self.root / path).read_bytes() if (self.root / path).is_file() else None
+            for path in changed
+        }, before_files)
+        self.assertEqual(self._git("rev-parse", "HEAD").stdout.strip(), self.base)
+
+    def test_unstaged_exact_source_move_preserved_before_strip(self):
+        destination = "docs/audit/data/effective_status_summary.json"
+        (self.root / self.note).rename(self.root / destination)
+        self._assert_strip_refuses_without_mutating()
+
+    def test_unstaged_edited_source_move_preserved_before_strip(self):
+        destination = "docs/audit/data/effective_status_summary.json"
+        self._write(self.note, "source baseline\nunique uncommitted repair proof\n")
+        (self.root / self.note).rename(self.root / destination)
+        self._assert_strip_refuses_without_mutating()
+
+    def test_staged_edited_source_move_preserved_before_strip(self):
+        destination = "docs/audit/data/effective_status_summary.json"
+        self._git("mv", self.note, destination)
+        self._write(destination, "completely rewritten repair with unique new evidence\n")
+        self._git("add", destination)
+        self._assert_strip_refuses_without_mutating()
+
+    def test_unstaged_source_move_onto_existing_generated_output_is_preserved(self):
+        # A modified existing output is as uncertain as an added output when
+        # source disappears; restoring it could otherwise erase the repair.
+        (self.root / self.note).replace(self.root / self.shard)
+        self._assert_strip_refuses_without_mutating()
+
+    def test_unstaged_authority_move_preserved_before_standalone_strip(self):
+        (self.root / self.shard).rename(self.root / "docs/moved_claim.json")
+        self._assert_strip_refuses_without_mutating()
+
+    def test_unstaged_edited_authority_move_preserved_before_standalone_strip(self):
+        destination = "docs/moved_claim.json"
+        (self.root / self.shard).rename(self.root / destination)
+        self._write(destination, "rewritten relocated verdict and unique evidence\n")
+        self._assert_strip_refuses_without_mutating()
+
+    def test_staged_edited_authority_move_preserved_before_standalone_strip(self):
+        destination = "docs/moved_claim.json"
+        self._git("mv", self.shard, destination)
+        self._write(destination, "rewritten relocated verdict and unique evidence\n")
+        self._git("add", destination)
+        self._assert_strip_refuses_without_mutating()
+
+    def test_unstaged_authority_copy_preserved_before_standalone_strip(self):
+        self._write("docs/copied_verdict.json", (self.root / self.shard).read_text())
+        self._assert_strip_refuses_without_mutating()
+
+    def test_unstaged_edited_move_cannot_publish_source_deletion(self):
+        destination = "docs/audit/data/effective_status_summary.json"
+        self._write(self.note, "source baseline\nunique repair proof\n")
+        (self.root / self.note).rename(self.root / destination)
+        before = (self.root / destination).read_bytes()
+        ok, reason = self._publish()
+        self.assertFalse(ok)
+        self.assertIn("generated authority boundary", reason)
+        self.assertEqual(self.publication_pushes, [])
+        self.assertEqual((self.root / destination).read_bytes(), before)
+        self.assertEqual(self._git("rev-parse", "HEAD").stdout.strip(), self.base)
+
+    def _worktree(self):
+        path = self.root.parent / "worktree"
+        self._git("worktree", "add", "-qb", "repair", str(path), self.base)
+        return path
+
+    def test_cleanup_removes_clean_worktree_and_local_branch(self):
+        path = self._worktree()
+        removed, reason = sfl.cleanup_worktree(path, "repair")
+        self.assertTrue(removed, reason)
         self.assertFalse(path.exists())
-        listed = subprocess.run(
-            ["git", "branch", "--list", branch],
-            cwd=sfl.REPO_ROOT, capture_output=True, text=True,
-        ).stdout
-        self.assertNotIn(branch, listed)
+        self.assertEqual(self._git("branch", "--list", "repair").stdout, "")
+
+    def test_cleanup_preserves_uncommitted_repair_after_commit_failure(self):
+        path = self._worktree()
+        self._write(self.note, "uncommitted repair\n", path)
+        removed, reason = sfl.cleanup_worktree(path, "repair")
+        self.assertFalse(removed)
+        self.assertIn("uncommitted", reason)
+        self.assertEqual((path / self.note).read_text(), "uncommitted repair\n")
+
+    def test_cleanup_preserves_ignored_scientific_artifact(self):
+        path = self._worktree()
+        ignore = self.root.parent / "ignore"
+        ignore.write_text("precious-scratch.txt\n")
+        self._git("config", "core.excludesFile", str(ignore))
+        self._write("precious-scratch.txt", "unpublished computation\n", path)
+        self.assertEqual(self._git("status", "--porcelain", cwd=path).stdout, "")
+        removed, reason = sfl.cleanup_worktree(path, "repair")
+        self.assertFalse(removed)
+        self.assertIn("ignored artifacts", reason)
+        self.assertEqual((path / "precious-scratch.txt").read_text(), "unpublished computation\n")
+
+    def test_cleanup_can_remove_reproducible_python_bytecode(self):
+        path = self._worktree()
+        ignore = self.root.parent / "ignore"
+        ignore.write_text("__pycache__/\n")
+        self._git("config", "core.excludesFile", str(ignore))
+        self._write("scripts/__pycache__/runner.cpython-313.pyc", "reproducible bytecode", path)
+        removed, reason = sfl.cleanup_worktree(path, "repair")
+        self.assertTrue(removed, reason)
+        self.assertFalse(path.exists())
+
+    def test_cleanup_preserves_committed_repair_after_push_failure(self):
+        path = self._worktree()
+        self._write(self.note, "unpushed repair\n", path)
+        self._git("add", self.note, cwd=path)
+        self._git("commit", "-qm", "repair", cwd=path)
+        removed, reason = sfl.cleanup_worktree(path, "repair")
+        self.assertFalse(removed)
+        self.assertIn("HEAD is not preserved", reason)
+        self.assertTrue(path.exists())
+        self.assertIn("repair", self._git("branch", "--list", "repair").stdout)
+
+    def test_cleanup_removes_pushed_repair_after_pr_creation_failure(self):
+        path = self._worktree()
+        self._write(self.note, "pushed repair\n", path)
+        self._git("add", self.note, cwd=path)
+        self._git("commit", "-qm", "repair", cwd=path)
+        head = self._git("rev-parse", "HEAD", cwd=path).stdout.strip()
+        self._git("update-ref", "refs/remotes/origin/repair", head)
+        removed, reason = sfl.cleanup_worktree(path, "repair")
+        self.assertTrue(removed, reason)
+        self.assertFalse(path.exists())
+        self.assertEqual(self._git("rev-parse", "refs/remotes/origin/repair").stdout.strip(), head)
+
+    def _exercise_main_worker_exit(self, stop_reason, worker_commit=None):
+        path = self._worktree()
+        state_file = self.root / "logs/science-fix-state.json"
+        row = {**_row("claim", "failed"), "prompt_body": "Repair the assigned claim.",
+               "prompt_source": "fixture"}
+
+        def worker(*args, **kwargs):
+            self._write(self.note, "worker result requiring review\n", path)
+            if worker_commit:
+                self._git("add", self.note, cwd=path)
+                self._git("commit", "-qm", "unexpected worker checkpoint", cwd=path)
+                if worker_commit == "dirty":
+                    self._write(self.note, "worker result requiring review\nextra handoff edit\n", path)
+            return stop_reason == "ok", "worker output", "", 20.0, stop_reason
+
+        with contextlib.ExitStack() as stack:
+            stack.enter_context(mock.patch.object(sys, "argv", ["science_fix_loop.py", "--n", "1"]))
+            stack.enter_context(mock.patch.object(sfl, "STATE_FILE", state_file))
+            stack.enter_context(mock.patch.object(sfl, "LOG_DIR", self.root / "logs/runs"))
+            stack.enter_context(mock.patch.object(sfl, "parse_prompts", return_value=[row]))
+            stack.enter_context(mock.patch.object(sfl, "open_science_fix_pr", return_value=None))
+            stack.enter_context(mock.patch.object(sfl, "make_worktree", return_value=(path, "repair")))
+            stack.enter_context(mock.patch.object(sfl, "run_codex", side_effect=worker))
+            settled = stack.enter_context(mock.patch.object(sfl, "target_settled_on_main", return_value=(False, "unaudited")))
+            publish = stack.enter_context(mock.patch.object(sfl, "commit_and_push", return_value=(True, "pushed")))
+            pr = stack.enter_context(mock.patch.object(sfl, "open_pr", return_value=(True, "https://example.invalid/pull/1")))
+            stack.enter_context(contextlib.redirect_stdout(io.StringIO()))
+            self.assertEqual(sfl.main(), 0)
+        outcome = json.loads(state_file.read_text())["attempts"]["claim"]
+        return path, outcome, publish, pr, settled
+
+    def _assert_incomplete_worker_not_published(self, stop_reason):
+        path, outcome, publish, pr, settled = self._exercise_main_worker_exit(stop_reason)
+        publish.assert_not_called()
+        pr.assert_not_called()
+        settled.assert_not_called()
+        self.assertEqual(outcome["outcome"], f"incomplete_{stop_reason}")
+        self.assertEqual(outcome["recovery_worktree"], str(path))
+        self.assertEqual(outcome["branch"], "repair")
+        self.assertIn("completion is unconfirmed", outcome["incomplete_reason"])
+        self.assertEqual((path / self.note).read_text(), "worker result requiring review\n")
+
+    def test_main_timeout_edits_are_checkpointed_without_publication(self):
+        self._assert_incomplete_worker_not_published("timeout")
+
+    def test_main_stalled_edits_are_checkpointed_without_publication(self):
+        self._assert_incomplete_worker_not_published("stalled")
+
+    def test_main_edit_deadline_edits_are_checkpointed_without_publication(self):
+        self._assert_incomplete_worker_not_published("thinking_only")
+
+    def test_main_completed_worker_still_enters_normal_publication(self):
+        _, outcome, publish, pr, settled = self._exercise_main_worker_exit("ok")
+        settled.assert_called_once_with("claim")
+        publish.assert_called_once()
+        self.assertEqual(publish.call_args.kwargs["expected_head"], self.base)
+        pr.assert_called_once()
+        self.assertEqual(outcome["outcome"], "pr_opened")
+
+    def _assert_main_worker_commit_is_recovery(self, kind):
+        path, outcome, publish, pr, settled = self._exercise_main_worker_exit("ok", worker_commit=kind)
+        publish.assert_not_called()
+        pr.assert_not_called()
+        settled.assert_not_called()
+        self.assertEqual(outcome["outcome"], "worker_changed_head")
+        self.assertEqual(outcome["base_commit"], self.base)
+        self.assertEqual(outcome["worker_head"], self._git("rev-parse", "HEAD", cwd=path).stdout.strip())
+        self.assertNotEqual(outcome["worker_head"], self.base)
+        self.assertEqual(outcome["recovery_worktree"], str(path))
+        self.assertIn("edit-only contract", outcome["recovery_reason"])
+        self.assertTrue((path / self.note).is_file())
+
+    def test_main_clean_worker_commit_is_not_misclassified_as_no_edits(self):
+        self._assert_main_worker_commit_is_recovery("clean")
+
+    def test_main_dirty_worker_commit_is_recovered_without_publication(self):
+        self._assert_main_worker_commit_is_recovery("dirty")
+
+    def _assert_actual_worker_prompt_is_edit_only(self, mode):
+        process = types.SimpleNamespace(returncode=0, wait=lambda timeout: 0)
+        with mock.patch.object(sfl.subprocess, "Popen", return_value=process) as launch:
+            result = sfl.run_codex("Assigned repair record.", self.root, 60,
+                                   "fixture-model", "fixture-reasoning",
+                                   self.root / "run.log", worker_mode=mode)
+        self.assertTrue(result[0], result)
+        prompt = launch.call_args.args[0][-1]
+        self.assertTrue(prompt.startswith("EDIT-ONLY WORKER CONTRACT"))
+        for restriction in (
+            "Do not stage or commit changes", "create branches/worktrees", "fetch or push",
+            "create or update PRs", "run review or", "landing", "launch an audit lane",
+            "apply audit verdicts", "--no-commit --no-pr --no-review-loop",
+            "The controller owns later commits", "Assigned repair record.",
+        ):
+            self.assertIn(restriction, prompt)
+
+    def test_actual_scientific_worker_prompt_scopes_physics_loop_to_edits(self):
+        self._assert_actual_worker_prompt_is_edit_only("science")
+
+    def test_actual_operational_worker_prompt_has_same_lifecycle_boundary(self):
+        self._assert_actual_worker_prompt_is_edit_only("operational")
 
 if __name__ == "__main__":
     unittest.main()

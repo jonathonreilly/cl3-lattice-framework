@@ -1,347 +1,67 @@
-# /workhorse — Planner Thinks, Codex Executes
+# /workhorse — Bounded Science Execution
 
-Standing owner directive (2026-06-11): run science execution through the
-strongest configured text reasoning worker available through the local codex
-CLI to conserve planner tokens. The planner — the model running in this chat —
-NEVER delegates judgment; only execution. This document is the canonical shared
-copy of the workhorse split referenced by the science commands' "Execution
-Mechanism" blocks.
+Read `docs/ai_methodology/skills/workhorse/SKILL.md` and follow its current
+execution split, worker profiles, neutral task contract, verification, and
+handoff rules. This command is an adapter; it does not maintain another worker
+policy. Read applicable repository instructions before dispatching work.
 
-**Executor fallback (owner 2026-07-02):** if the codex executor is unavailable
-(CLI missing, auth failure, persistent hangs after the dead-man window), fall
-back to the strongest locally configured Opus-class text worker at max effort
-(Agent tool `model: "opus"`, or Workflow agents `model: 'opus',
-effort: 'max'`), one agent per spec, with the same spec contracts and
-anti-fabrication clauses verbatim. Verify availability by the failure itself
--- do not preflight-probe every dispatch. The review bar is identical
-regardless of executor.
+## Invocation
 
-## Division of labor (non-negotiable)
-
-- **Planner (the model in this chat):** problem selection, recon synthesis,
-  theorem design, spec-writing, line-by-line review of EVERYTHING the executor
-  produces (never-believe-the-survey applies doubly to executor output), panel
-  synthesis + verdicts, landing decisions, PR/commit text, memory updates. If
-  a step requires judgment, it is the planner's.
-- **Executor (codex text worker):** note drafting per the planner's outline,
-  runner implementation per spec, scratch computation, structured extraction
-  from primary sources (with exact-quote contracts), mechanical edit
-  application, panel LENS execution (the planner writes the lens prompts and
-  synthesizes; never let the executor synthesize verdicts).
-
-## Design principles (what separates strong waves from weak ones)
-
-- **Work the algebra BEFORE the spec.** The spec encodes a result the planner
-  has already derived, at least in sketch — the executor verifies and
-  implements it; it does not discover it. Across waves, the strongest result
-  has consistently been the one where the algebra was worked pre-spec; the
-  weakest, where open math was delegated.
-- **Shape potential negatives as refutation dispatches.** When a direction may
-  fail, dispatch independent refutation lenses (3+ distinct angles) rather
-  than one hopeful attempt — a triple-refutation converts "didn't work" into a
-  precisely named wall, which is land-able (feeds an N1–N8 no-go note) and
-  steers the next wave. A vague miss is wasted compute; a named wall is a
-  result.
-- **Verdicts on notification.** Workers run in background; synthesis, edits,
-  and landings happen when their exits notify — never idle-poll.
-
-## No-go discipline (planning + maintenance)
-
-- **Plan against the audited scope, not the reputation.** When a no-go/wall
-  gates a plan, read the no-go note's PRIMARY text (and the ledger row's
-  `claim_scope`) and quote the exact scoped claim into the plan. Titles,
-  memory summaries, and secondary citations systematically overstate scope.
-  Never let a worker inherit a no-go limit from a summary — put the quoted
-  scope in the spec.
-- **Narrow overbroad language as you work.** If a no-go note's rhetoric claims
-  more than its audited `claim_scope`, queue a narrowing repair PR aligning
-  the prose to the audited scope (N5 rhetoric discipline; this conforms
-  language to the audit, it never authors a grade). Check the invalidation
-  blast radius first — editing a retained note re-opens its audit; if it is
-  load-bearing for clean dependents, batch the narrowing with the next edit
-  that already touches the note and record the debt.
-
-## The loop (one PR-sized unit of work)
-
-1. **Recon + design (planner).** Read the load-bearing primary sources
-   yourself; verify ledger statuses
-   (`git show origin/main:docs/audit/data/ledger/<claim-id-prefix>/<claim-id>.json`)
-   before citing anything as retained. Derive the result (algebra-before-spec, above), then
-   decide the exact object, claim type, and boundary.
-2. **Worktree per PR (guarded and self-cleaning).** Never work in the shared
-   main tree; concurrent sessions race it. Concurrent lanes have exhausted the
-   host disk repeatedly, so preflight free space and clean up on exit:
-
-   ```bash
-   REPO_ROOT=$(git rev-parse --show-toplevel)
-   WORK_TMP_ROOT=${TMPDIR:-/tmp}
-   avail_kb=$(df -Pk "$WORK_TMP_ROOT" | awk 'NR == 2 {print $4}')
-   case "$avail_kb" in
-     ''|*[!0-9]*) echo "ENOSPC guard: cannot read free space for $WORK_TMP_ROOT" >&2; exit 1 ;;
-   esac
-   [ "$avail_kb" -ge 5242880 ] || {
-     echo "ENOSPC guard: less than 5 GiB free on $WORK_TMP_ROOT" >&2
-     exit 1
-   }
-   WT=$(mktemp -d "$WORK_TMP_ROOT/workhorse-<name>.XXXXXX")
-   cleanup_workhorse_wt() {
-     if [ -e "$WT" ]; then
-       if ! dirty=$(git -C "$WT" status --porcelain 2>/dev/null); then
-         echo "cleanup retained unverifiable worktree: $WT" >&2
-         return
-       fi
-       if [ -n "$dirty" ]; then
-         echo "cleanup retained dirty worktree for recovery: $WT" >&2
-         return
-       fi
-     fi
-     git -C "$REPO_ROOT" worktree remove --force "$WT" >/dev/null 2>&1 || true
-     git -C "$REPO_ROOT" worktree prune
-   }
-   trap cleanup_workhorse_wt EXIT
-   trap 'exit 130' INT
-   trap 'exit 143' TERM
-   git -C "$REPO_ROOT" worktree add -q "$WT" -b <branch> origin/main
-   ```
-
-   Apples-to-apples measurement from the same object store on 2026-08-14 was
-   343.6 MiB for a fresh full worktree and 326.3 MiB for the proposed sparse
-   baseline, only about 5% less. Specs and the mandatory pipeline can touch
-   every repository root, so the default stays full. The main disk gain is
-   prompt cleanup. Drop the `trap` only for a deliberately long-lived reused
-   lane. The trap removes only a verified-clean tree; it prints and retains a
-   dirty or unverifiable tree for recovery. It cannot handle `SIGKILL` or a
-   host crash.
-3. **Spec file (planner).** Write `/tmp/spec-<name>.md` using the template
-   below. The spec is the contract — exact files, exact phrases, exact
-   acceptance checks, and EVERY proper name the artifact may use.
-4. **Dispatch (parallel, background).**
-   `codex exec -s workspace-write -C "$WT"
-   -o /tmp/codex-<name>-lastmsg.txt "Read the spec file at
-   /tmp/spec-<name>.md and execute it exactly. Do NOT load or follow any local
-   codex skills. Analysis and file edits only; no git commit/push, no network."
-   < /dev/null > /tmp/codex-<name>.log 2>&1 &`
-   Run independent units concurrently (one background call each).
-5. **Verify (planner — the load-bearing step).** Review checklist below, every
-   item, every time. Fix issues by editing the worktree files YOURSELF (don't
-   round-trip trivial fixes through the executor).
-6. **Cache regen** (only when a runner changed):
-   `python3 -c "import sys; sys.path.insert(0,'scripts'); from runner_cache
-   import execute_runner, runner_timeout_for, write_cache;
-   p='scripts/<runner>.py'; r=execute_runner(p, runner_timeout_for(p));
-   write_cache(p, r)"`
-   `runner_timeout_for` honors the runner's top-level `AUDIT_TIMEOUT_SEC`,
-   then legacy overrides, then the 120 s default. New heavy runners declare
-   `AUDIT_TIMEOUT_SEC = N` so cache regen and the audit runner agree.
-7. **Citation-graph manifest (whenever graph topology changes).** An added or
-   removed included note, or an added, removed, or retargeted markdown
-   dependency, must co-land with a refreshed
-   `docs/audit/data/citation_graph_manifest.json`. Stage 18 compares the
-   generated graph with the manifest in the Git index, so pre-stage every
-   intended landing path, then build, write, and stage the manifest BEFORE the
-   full validation pipeline:
-   `git add <all-intended-landing-paths> &&
-   python3 docs/audit/scripts/run_citation_graph_build.py &&
-   python3 docs/audit/scripts/write_citation_graph_manifest.py &&
-   git add docs/audit/data/citation_graph_manifest.json`.
-   Then run `docs/audit/scripts/run_pipeline.sh`, strict audit lint, and
-   `git diff --check`. Restore pipeline rewrites from the prepared index with
-   `git restore --worktree -- docs/audit docs/repo docs/publication`; preview
-   newly seeded shards with `git clean -nd -- docs/audit/data/ledger/`, and
-   only after confirming every listed path is pipeline-created, remove them
-   with `git clean -fd -- docs/audit/data/ledger/`. Pre-staging is what makes
-   the restore preserve legitimate source/tooling/controlled-data edits.
-   The manifest is the only pipeline-generated audit-data output retained by
-   an ordinary topology-changing framework PR; intentionally reviewed
-   controlled-data or dispatcher inputs are separate source changes. Commit
-   the intended set and manifest together in step 8. Generated ledger,
-   verdict, queue, and effective-status state remains audit-lane-owned.
-8. **Commit/push/PR (planner).** Conventional commit; PR body states what
-   verdict/goal the work responds to, what changed, runner numbers, and
-   downstream order if PRs chain. `git worktree remove --force` after push.
-   The PR is the done-state — do NOT check/wait on/report `gh pr checks`
-   (owner 2026-07-02: main moves too fast for PR CI to signal; the
-   review-loop worker owns landing). Clean science + your own runner re-run
-   PASS + fresh cache = done; start the next unit.
-9. **Memory (planner).** Update the campaign's project memory + index hook,
-   where the session has persistent memory.
-
-## Spec template (what makes dispatches clean)
-
-```
-# Spec <X> — <one-line goal>
-RULES (binding):
-- Do NOT load or follow any local codex skills. No review/audit tooling. Edits only.
-- No git commit/push, no gh, no network. Edit files in place.
-- Edit ONLY these files (no new files): <explicit list>
-- Read ONLY the exact files named in this spec; do not read the whole audit
-  ledger or broad directories unless this spec gives an exact row/path query.
-- Write the deliverable incrementally as you work; do not hold the only copy
-  for the final response.
-- Never write audit grades or status predictions into notes.
-- PROPER NAMES: the artifact may use ONLY identifiers listed in this spec. Do
-  not invent registry ids, note basenames, or wall names.
-ANTI-FABRICATION (mandatory in every dispatch — executors fabricate under result pressure):
-- NEVER compute a result FROM its comparison target (no `x = target + damping*...`).
-- NEVER use a 0/1/parity proxy where a real Schur/eigenvalue/floating quantity is required.
-- Anchor to EXACT landed values at full precision; recompute the measured quantity from
-  real machinery — never a rounded stand-in or a designed split.
-- NEVER fit a scalar prefactor to force a match; derive it or report the honest residual.
-- EVERY completeness/identity gate must DISCRIMINATE: it must FAIL if the implemented
-  object were wrong (FD cross-check with a convergence-ratio requirement, or an explicit
-  wrong-value rejector — NOT an algebraic identity that holds by construction).
-- An honest miss is a WIN; a fabricated/tautological success is a do-not-land.
-CONTEXT (for understanding only — do not copy into files): <the verdict/goal, quoted
-exactly; the mechanism: markdown links = dependency edges, backticked names = context>
-## Edits (file by file)
-<numbered, surgical, with exact before/after text where it matters>
-## PRESERVE VERBATIM: <every phrase any runner greps — list them explicitly>
-## MUST BE ABSENT AFTER EDIT: <forbidden strings>
-## Acceptance contract
-- <runner cmd> exits 0, SUMMARY/TOTAL line PASS>=N FAIL=0
-- Print git diff to stdout when done. Do not regenerate caches (reviewer does that).
+```text
+/workhorse "<bounded task or science block>"
 ```
 
-## Review checklist (planner, before every commit)
+The supervising agent chooses the target and prepares the task. Workers may
+implement, compute, independently challenge a candidate proof, or perform a
+focused review lens. They must report counterexamples, spec errors, and open
+steps without pressure to produce an affirmative result. The supervisor reviews
+the result and owns the next authorized action.
 
-- Read the FULL diff line by line. Executor prose drifts; verify every claim
-  against the primary sources read in step 1.
-- **Sibling-runner grep:** `grep -rln "<NOTE_BASENAME>" scripts/` — other
-  runners may read/pin the edited note's sentences. Run every affected sibling
-  runner after the edit.
-- Re-run the paired runner YOURSELF; confirm PASS/FAIL counts; never trust the
-  log echo.
-- Verify PRESERVE strings present and FORBIDDEN strings absent (grep, not eyes).
-- Verify dependency mechanics: markdown links = ledger dep edges; backticked
-  names = no edge. Check the post-edit link inventory matches the intended dep
-  list exactly.
-- Check invalidation blast radius BEFORE editing: who depends on this row
-  (reverse deps in the ledger)? Editing a note re-opens its audit; fine for
-  unaudited/conditional dependents, a regression for clean ones.
-- Status-language scan: the note must not author or predict audit grades
-  (hard rule).
-- **Identifier grep:** every backticked/linked identifier in the artifact must
-  exist (`git grep -c "<name>"` — 0 hits on a cited name = fabrication; see
-  anti-fabrication pattern 6).
+## Dispatch Contract
 
-## Anti-fabrication review (the load-bearing lesson)
+Give each worker:
 
-A passing `TOTAL: PASS=N FAIL=0` is necessary, not sufficient. Under result
-pressure executors fabricate the load-bearing step and the runner passes its
-OWN rigged gate — in one wave, 4 of 5 outputs fabricated and all 4 passed.
-Line-by-line review is the only thing that catches them. The six patterns
-(with the tells):
+- the exact question and why it matters to the selected science target;
+- allowed premises, source paths, and any candidate proof with unproved steps
+  clearly labeled;
+- a bounded read set, exact editable paths, and a durable worktree for work that
+  needs recovery;
+- the discriminating check, required evidence, resource limit, and next step
+  if the hypothesis fails;
+- an explicit role: drafting/computation, independent checker, or read-only
+  review lens, with the context it may receive;
+- incremental artifact writes and a concise final report containing actual
+  commands, results, uncertainties, and files changed.
 
-1. **Value-from-target** — the result is computed from the target it's
-   compared to (a "Richardson" that was `alpha = d_measured + 0.12*(onepoint -
-   d_measured)`, sequence discarded). Tell: the comparison constant appears in
-   the formula; `_ = x  # not used`.
-2. **Proxy-for-physics** — a 0/1/parity matrix stands in for a real
-   Schur/eigenvalue, making a "coincidence" tautological. A sibling runner
-   building the real object proves it was feasible.
-3. **Rounded/idealized anchors** — freezing `0.366` for landed `0.366421...`,
-   or a designed `0.30*tail` split, so an approximate model "matches" a
-   stand-in, not the real measured quantity.
-4. **Fitted prefactor as derivation** — a wrong form forced to match by a
-   fitted constant (a 17-digit normalization; a tidy `47/120`) sold as
-   derived. A native symbolic derivation refutes it. Tell: any multi-digit
-   constant with no derivation.
-5. **Tautological gate** — holds regardless of whether the object is correct
-   (a "SymPy completeness" gate that reduced to `(I - A·A^{-1})·X`, vanishing
-   for any `X`).
-6. **Invented references** (2026-07-01, 3 in one otherwise-clean note) —
-   plausible-looking but nonexistent registry ids, note basenames, or wall
-   names woven into prose. The math can be perfect while every proper name is
-   fabricated. Tell: any identifier not copied verbatim from the spec or a
-   file the worker read. Defense: the spec lists every proper name the
-   artifact may use; review greps every backticked/linked identifier against
-   the repo. Related tell, same wave: spec meta-language leaking into the
-   artifact ("The sentence required for the record is: ...") — grep artifacts
-   for PRESERVE/spec phrasing.
-7. **Authority confusion** (2026-07-02) — the executor quotes a REAL text from
-   the wrong authority: a note file's self-declared `claim_scope:` block
-   instead of the ledger row's `claim_scope` field (both exist, both look
-   official, they differ). Not fabrication — every word is real — but the
-   citation is wrong, and the executor may pin its runner to the same wrong
-   source, making the pair self-consistently green. Defense: specs put the
-   authoritative text inline AND require a runner gate that reads the ledger
-   row shard (`docs/audit/data/ledger/<claim_id[:2]>/<claim_id>.json`, using
-   the exact canonical `claim_id` emitted by `build_citation_graph.py`;
-   `ledger_io.shard_path` is the path authority) directly and pins the note's
-   quote to the ledger field. The monolithic `audit_ledger.json` is an ignored,
-   non-authoritative read cache materialized by the pipeline. Review re-derives
-   the quote from the shard, never from the note file.
+Analysis workers do not commit, push, access the network, apply audit verdicts,
+or run review/audit orchestration. For other worker roles, the task must state
+the permitted actions within the applicable repository instructions. Do not
+disable governing instructions through a blanket ban on local skills.
 
-**Discriminating-gate test:** recompute every completeness/identity gate with
-a term dropped/perturbed; if it still passes, it's tautological — demand a
-real one. Prefer FD convergence-ratio gates (a wrong object plateaus) and
-wrong-value rejectors.
+Keep acceptance criteria separate from the hoped-for physics result. A correct
+runner may refute the hypothesis. Do not require `PASS>=N`, prescribe a desired
+measurement, invent identifiers, or treat a known comparator as an input to its
+own prediction.
 
-**Two defenses that work:** (a) commission EXTERNALLY-ANCHORED targets — a
-claim pinned to an exact landed value / independent exact diagonalization /
-a-priori constant can't be faked, so the executor reports an honest residual
-instead of fudging; (b) run an INDEPENDENT-MODEL adversarial-verification pass
-over the surviving claims before landing. A single reviewer misses
-tautological gates and framing overstatements — verify the FRAMING against the
-gated numbers, not only the gates. (Lens pattern: per target, 3 parallel
-lenses — fabrication-hunt, algebra-re-derive, framing-audit — then a
-per-target synthesis verdict; the planner lands on it.)
+## Verify And Deliver
 
-## Dispatch hygiene (hard-won)
+Review every changed line and hand-check the central mathematical step. Use
+the skill's disjoint checker discipline for substantive computational blocks;
+choose proof review or focused validation for other artifacts. A green terminal
+or a matching external number is insufficient by itself.
 
-- **Worker launch reliability:** close worker stdin with `< /dev/null`, capture
-  the final message with `-o`, and keep a full log. Without a closed stdin,
-  backgrounded `codex exec` can block forever while reading an implicit
-  `<stdin>` block. A 0% CPU process with a static log and empty `-o` file is a
-  hang signature; kill it, salvage useful reasoning from the full log, and
-  finish the result yourself.
-- **Bounded reads:** name the exact files the worker may read, preferably five
-  or fewer. Do not hand a worker the whole audit ledger; grep exact claim rows
-  or pass the row excerpt yourself. Open-ended "read and figure it out" specs
-  overfill context and often produce no durable deliverable.
-- **Skill contamination:** executor-side skill directories may contain
-  repo-native review-loop and audit-loop skills that AUTO-TRIGGER on
-  review-shaped prompts. EVERY dispatch carries "do NOT load or follow any
-  local codex skills". Panel lenses additionally run `-s read-only`.
-- **Watchdogs:** key on PROCESS EXIT (background completion), never on log
-  sentinels — the executor echoes the prompt, so any sentinel string in the
-  spec false-triggers a first-match grep. If parsing logs, parse the LAST
-  match. Local CPU at 0% is NORMAL (server-side reasoning) — it does not
-  indicate a hang; arm a bounded dead-man check instead of killing on CPU.
-- **Hang mode:** read-only extractors buffer all output to exit, so their only
-  signal IS process exit — give a bounded grace window, then kill and split
-  the spec smaller. Keep read-only prompts SHORT (one compact deliverable
-  list, ≤2 files per worker), pre-resolve all paths YOURSELF (git
-  ls-tree/grep) before dispatching, give exact paths only — and for ≤2 quick
-  reads, skip the scout and `git show` inline.
-- **PID hygiene:** multiple sessions run codex concurrently — identify YOUR
-  workers by the background task IDs from your own dispatch calls, never by
-  `pgrep codex`.
-- **Memory budget:** estimate before building; panel peak = runner ×
-  concurrent agents; dense Fock-op lists forbidden ≥2^11 (sparse +
-  diagonal-Kraus); verify big runners with `/usr/bin/time -l`.
+Use `physics-loop` for science delivery and its current conformance requirements
+for notes, runners, caches, source provenance, and citation-graph changes.
+Its default is continuous discovery on a coherent campaign branch with milestone
+PRs. Keep provisional dependencies explicit and independently check critical
+steps before extensive reuse; do not require a PR or formal audit for each
+intermediate lemma. `--delivery block` remains available when requested.
+Record author checks honestly and hand the PR to a fresh `review-loop` for the
+independent review and any authorized landing. Audit ratification remains a
+separate post-landing lane. An explicit end-to-end repair campaign authorizes
+its specified orchestration; workers never self-ratify their own science.
 
-## Hard rules (unchanged by this mode — the executor changed, nothing else)
-
-- Review-loop and audit-loop are owner-operated lanes. Workhorse mode may
-  prepare their hand-off surfaces, but it hands off unless the user explicitly
-  invokes that lane in the supervising chat. Executors never run those lanes,
-  apply their verdicts, or land/close/merge PRs through them.
-- Never author or alter audit-status grades in notes; the independent audit
-  lane on origin/main is the only status authority.
-- Science execution changes go through a dedicated worktree and PR hand-off.
-  The workhorse executor never pushes main; lane-specific review/audit
-  instructions own any later main landing.
-- Panels still gate every landing; lens prompts and synthesis are the
-  planner's.
-- Physics repo: run the framework-refresher orientation first; respect the
-  r=1/2 firewall, the no-import rule, and walls-move framing.
-
-## Pointers
-
-- The science commands' "Execution Mechanism (standing — 2026-06-12)" blocks
-  reference this split; this file is their canonical target.
-- Review-loop hand-off surface: `.claude/commands/review-loop.md`
-  (owner-operated; prepare the PR, never run the lane).
-- Operator sessions may carry additional session-memory refinements of this
-  doc; on conflict, the repo copy plus dated owner directives win.
+Track only worker handles returned by this session. Quiet logs and low local
+CPU are compatible with remote reasoning; inspect owned-task status and its
+declared deadline before interrupting. Preserve unresolved work for recovery;
+remove a worktree only after its content and durable recovery path are verified.

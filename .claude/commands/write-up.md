@@ -58,10 +58,13 @@ Write to `.claude/science/write-ups/{slug}-{date}.md`. Create the directory
 if it does not exist.
 
 This is a branch-local working document. If the result should land on main,
-distill it to the landing shape — one source note (`docs/`) + one runner
-(`scripts/`) + one cached output (`logs/runner-cache/`) — on a science branch
-off `origin/main`, and route it through `/review-loop`. Working write-ups,
-synthesis packets, and certificates do not land.
+distill a coherent milestone into source notes and their load-bearing proof
+or computation artifacts on a science branch. Include the runners and cached
+outputs required by the applicable evidence gate; do not invent a runner or
+split one argument merely to satisfy a one-note/one-runner count. Prepare it
+for `/review-loop` at the requested milestone. Branch-local working write-ups
+and status certificates are not authority. A properly scoped synthesis source
+may land through review, but cannot promote its component results.
 
 ## Rules
 
@@ -79,17 +82,11 @@ synthesis packets, and certificates do not land.
 - If the investigation is incomplete, say so. Do not write a conclusion that
   outruns the evidence.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

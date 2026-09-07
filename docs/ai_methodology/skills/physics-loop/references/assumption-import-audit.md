@@ -90,11 +90,15 @@ Definitions:
 - **Direction it opens**: does the alternative admit simpler closure,
   escape a known no-go, change the headline number, reveal a new
   bridge, or expose a hidden no-go? One sentence.
-- **Feasibility**: `live` (worth pursuing), `infeasible`
-  (contradicts retained theorem — name it), or `falsified`
-  (contradicts observed/computed data — name it).
-- **Score**: retained-positive probability × verifiability,
-  rough 0-3.
+- **Feasibility**: `live` (worth pursuing), `infeasible` (violates the fixed
+  task premises, or an applicable proved result under matching hypotheses),
+  `falsified` (contradicted by a verified decisive test), or `unresolved`.
+  A disputed prior proof or mismatch of scope is a repair or investigation
+  target, not evidence that the alternative is impossible. Cite the exact
+  evidence and its domain.
+- **Score**: qualitative expected evidential value for the named target,
+  considering the first discriminator, downstream reuse, and cost. Explain the
+  ranking; do not manufacture numerical success probabilities.
 
 ### Allowed counterfactual outcomes
 
@@ -138,12 +142,12 @@ new candidate routes. The `infeasible` and `falsified` rows are not
 new routes, but their elimination clarifies what's actually
 constrained vs chosen — which itself sharpens future stretch attempts.
 
-If every counterfactual scores `0` or is `infeasible`/`falsified`, the
-lane's framework choices are genuinely forced and the blocker is in
-the load-bearing imports, not the surrounding choices. That itself
-is a useful finding: it narrows the next campaign to either an
-import-retirement audit or a deep stretch attempt within the existing
-axiom stack.
+If no generated counterfactual remains promising, report the examined family,
+evidence, and unexamined alternatives. This establishes a search outcome, not
+that the framework choices are logically forced or that every obstruction is
+an import. A necessity claim needs an exhaustive argument under explicit
+quantifiers. Use the strongest demonstrated residual to choose the next
+import-retirement attempt, alternative formulation, or bounded checkpoint.
 
 ### When to run
 

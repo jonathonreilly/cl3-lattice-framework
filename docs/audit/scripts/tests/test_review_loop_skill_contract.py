@@ -84,7 +84,7 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertIn("freshness", self.missing(skill=mutated))
 
     def test_multiline_reference_definition_cannot_supply_freshness(self):
-        start = self.skill.index("Before applying this skill")
+        start = self.skill.index("Before using this workflow")
         end = self.skill.index("## Model And Tool Boundary", start)
         positive = self.skill[start:end].rstrip()
         mutated = (
@@ -97,7 +97,7 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertIn("freshness", self.missing(skill=mutated))
 
     def test_next_line_reference_layouts_cannot_supply_freshness(self):
-        start = self.skill.index("Before applying this skill")
+        start = self.skill.index("Before using this workflow")
         end = self.skill.index("## Model And Tool Boundary", start)
         positive = self.skill[start:end].rstrip()
         for prefix in (
@@ -116,8 +116,8 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
 
     def test_negated_freshness_is_fail_closed(self):
         mutated = self.skill.replace(
-            "Before applying this skill, perform",
-            "Before applying this skill, do not perform",
+            "Before using this workflow, inspect",
+            "Before using this workflow, do not inspect",
             1,
         )
         self.assertNotEqual(mutated, self.skill)
@@ -138,7 +138,9 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertIn("mandatory_authority_reads", self.missing(skill=mutated))
 
     def test_model_and_effort_are_fail_closed(self):
-        self.assert_skill_mutation_fails("GPT-5.6-Sol", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("highest-tier", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("maximum available reasoning", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("Resolve the current model", "reviewer_model_and_effort")
 
     def test_negated_model_and_effort_are_fail_closed(self):
         mutated = self.skill.replace(
@@ -148,6 +150,28 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         )
         self.assertNotEqual(mutated, self.skill)
         self.assertIn("reviewer_model_and_effort", self.missing(skill=mutated))
+
+    def test_negated_configuration_clause_is_fail_closed(self):
+        mutated = self.skill.replace(
+            "Resolve the current model", "Do not Resolve the current model", 1
+        )
+        self.assertNotEqual(mutated, self.skill)
+        self.assertIn("reviewer_model_and_effort", self.missing(skill=mutated))
+
+    def test_negated_owner_choice_clause_is_fail_closed(self):
+        mutated = self.skill.replace(
+            "Respect an explicit owner", "Do not Respect an explicit owner", 1
+        )
+        self.assertNotEqual(mutated, self.skill)
+        self.assertIn("reviewer_model_and_effort", self.missing(skill=mutated))
+
+    def test_soft_wrapped_negations_cannot_supply_affirmative_clauses(self):
+        for clause in ["Resolve the current model", "Respect an explicit owner"]:
+            for prefix in ["Do not\n ", "Never\n  ", "Do not\n"]:
+                with self.subTest(clause=clause, prefix=prefix):
+                    mutated = self.skill.replace(clause, prefix + clause, 1)
+                    self.assertNotEqual(mutated, self.skill)
+                    self.assertIn("reviewer_model_and_effort", self.missing(skill=mutated))
 
     def test_each_reviewer_lens_is_fail_closed(self):
         for reviewer in (

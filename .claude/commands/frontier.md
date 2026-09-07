@@ -5,30 +5,49 @@ the qubit-lattice axiom framework.
 
 ## Data Collection
 
-1. Ledger statistics — counts by `effective_status` and `claim_type`:
+1. Freeze `origin/main` after a best-effort fetch when allowed, and report its
+   SHA and freshness. Read status counts from that exact committed snapshot,
+   without materializing or mutating audit outputs in the candidate checkout:
    ```bash
-   python3 docs/audit/scripts/ledger_io.py --materialize
    python3 - <<'PY'
-   import json, collections
-   rows = json.load(open("docs/audit/data/audit_ledger.json"))["rows"]
-   eff = collections.Counter(r.get("effective_status") for r in rows.values())
-   ct  = collections.Counter(r.get("claim_type") for r in rows.values())
+   import collections, io, json, subprocess, tarfile
+   revision = subprocess.check_output(
+       ['git', 'rev-parse', '--verify', 'origin/main^{commit}'], text=True).strip()
+   payload = subprocess.check_output(
+       ['git', 'archive', revision, 'docs/audit/data/ledger'])
+   eff, ct = collections.Counter(), collections.Counter()
+   with tarfile.open(fileobj=io.BytesIO(payload)) as archive:
+       for member in archive:
+           if member.isfile() and member.name.endswith('.json'):
+               with archive.extractfile(member) as source:
+                   row = json.load(source)
+               eff[row.get('effective_status')] += 1
+               ct[row.get('claim_type')] += 1
+   print('snapshot:', revision)
    print("effective_status:", dict(eff))
    print("claim_type:", dict(ct))
    PY
    ```
+   If `origin/main` is unavailable or the archive cannot be read, report lookup
+   failure; do not substitute candidate HEAD as main. A cached remote ref with
+   failed fetch is usable only with its remote freshness explicitly unverified.
 2. Audit-lane backlog: `docs/audit/AUDIT_QUEUE.md` depth and
-   `docs/audit/data/reaudit_candidates.json`.
+   `docs/audit/data/reaudit_candidates.json` at the same printed snapshot SHA.
 3. Lane surfaces: `docs/repo/LANE_REGISTRY.yaml`,
    `docs/work_history/repo/LANE_STATUS_BOARD.md`,
    `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
-4. Loop state: `OPPORTUNITY_QUEUE.md`, `NO_GO_LEDGER.md`, and `HANDOFF.md`
-   files under `.claude/science/physics-loops/*/` and
-   `.claude/science/research-lanes/*/`.
+4. Candidate loop state: `OPPORTUNITY_QUEUE.md`, `NO_GO_LEDGER.md`, and
+   `HANDOFF.md` on relevant campaign branches. Identify branch/revision,
+   uncommitted state, inherited hypotheses, completed critical checks, open
+   obligations, and the next milestone. Candidate progress is separate from
+   landed-main and audit-ratified state.
 5. In-flight work: `gh pr list --state open` (science and physics-loop
    branches), plus recent landings:
-   `git log --oneline --since="2 weeks ago" -- docs/ scripts/ | head -40`.
-6. `README.md` current package state.
+   `git log <MAIN_SHA> --oneline --since="2 weeks ago" -- docs/ scripts/`.
+   Never use unqualified current-branch history as evidence of landing.
+6. `README.md` package state at the pinned main revision. Read the main lane
+   surfaces in item 3 at that same revision, treating historical boards as
+   history; candidate packs are planning evidence, not status authority.
 
 ## Analysis
 
@@ -41,7 +60,9 @@ the qubit-lattice axiom framework.
 - Which open gates, unaudited rows, and `audited_conditional` blockers sit
   upstream of the most downstream work? Use the ledger `deps` graph (and
   load-bearing/descendant fields where present) to rank blockers by how much
-  they unblock. Closing a high-fanout root beats closing a leaf.
+  they could unblock. Verify that these are actual scientific dependencies;
+  raw citation fanout is a planning signal, not automatic priority. Compare the
+  exact physical obligation, first decisive check, uncertainty, and cost.
 
 ### 3. Premise Coverage
 - Which named conditional inputs and imports are still load-bearing, and
@@ -50,19 +71,21 @@ the qubit-lattice axiom framework.
   species identification, ...) have no active work at all?
 
 ### 4. Confirmed vs. Unvalidated
-- Landed-and-audited (retained-grade) vs. landed-but-unaudited vs.
-  branch-local working results. Only the ledger separates these — list each
-  bucket explicitly.
+- Landed-and-audited (retained-grade), landed-but-unaudited, and candidate
+  working results are separate. Use Git containment for landing, the ledger
+  for ratification, and campaign evidence for provisional checks. A retained
+  label never supplies hypotheses beyond the exact audited scope.
 
 ### 5. Dead Ends
-- Standing no-go notes and `NO_GO_LEDGER.md` routes. Mark clearly: "do not
-  re-attack without a new named premise" — and name what kind of premise
-  would qualify, since retired walls do get retired by reframes.
+- Read standing no-go proofs and `NO_GO_LEDGER.md` routes at exact scope.
+  Re-entry needs material evidence: a compatible new mechanism, changed
+  obligation map, scope correction, counterexample, or justified premise
+  change. A new label or worker alone does not reopen a route.
 
 ### 6. Highest-Value Gaps
 Rank the top 5 unexplored or under-explored targets by:
-- expected claim-state movement (could it retire an import, close a gate,
-  unblock a high-fanout chain, or prove a useful no-go?);
+- expected evidence value for a physical target (could it retire an import,
+  discharge an obligation, discriminate alternatives, or prune a proved family?);
 - feasibility with existing runners vs. new code;
 - estimated effort (interactive / unattended block / multi-day campaign).
 
@@ -89,32 +112,27 @@ Write to `.claude/science/frontier/{date}-frontier-map.md`:
 1. {gap} — {why it matters} — {effort}
 ...
 
-## Dead Ends (do not revisit without a new named premise)
-- {route} — {wall} — {what kind of premise would reopen it}
+## Scoped Obstructions And Reopen Conditions
+- {route} — {proved scope or attempted-search limit} — {material evidence needed to reopen}
 ```
 
 ## Rules
 
 - No lock needed — read-only analysis.
 - Do not fabricate coverage. If a lane has no artifacts, say so.
-- Distinguish "unexplored" (never attacked) from "exhausted" (attacked,
-  walled, no-go on record).
+- Distinguish unexamined routes, bounded searches with unresolved alternatives,
+  and proved obstructions at stated scope. A no-go title or lack of a successful
+  attempt does not establish global exhaustion.
 - The gap ranking is the most important output — spend the most thought
   there. This skill pairs naturally with `/progress`.
 - Mapping only: this skill proposes targets, it does not move claim states.
   Execution belongs to `/physics-loop` or an interactive science session.
 
-## Execution Mechanism (standing — 2026-06-12)
+## Execution and authority
 
-All execution under this command runs through the workhorse split (see the
-`workhorse` skill): the model running in this chat plans, writes specs, reviews every diff
-line-by-line, and lands; the strongest configured text worker via `codex exec`
-executes bounded note/runner drafting, scratch computation, structured
-extraction, and panel lens execution (lenses run `-s read-only`; verdict
-synthesis is never delegated).
-No-go planning discipline applies: read the actual no-go note's primary text
-and plan against its exact audited scope, never its title or a secondary
-summary; if work reveals no-go language broader than its audited
-`claim_scope`, queue a narrowing repair PR. Where this command references
-review-loop or audit steps, those lanes are owner-operated (standing rule
-2026-06-11): prepare the PR/review surface and hand off; never run them.
+Use `docs/ai_methodology/SCIENCE_WORKFLOW.md` for the current task and handoff
+boundaries. Do the authorized analysis directly or use a scoped worker when
+independent work is useful; this command does not require a worker process or
+automatically authorize landing or audit. Continuous discovery uses selective
+checks and milestone delivery. Inspect a referenced skill for applicability
+and correctness before using it. An author-side check never grants audit status.

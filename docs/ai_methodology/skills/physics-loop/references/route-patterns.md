@@ -54,18 +54,21 @@ Prefer routes that can produce one durable output:
 The dramatic-step gate should not reward only easy exits. When a lane has
 named residuals, assign a separate **hard-residual pressure** score:
 
-- `0`: restates a known dependency or no-go without trying a new premise.
+- `0`: restates a known dependency or no-go without a new mechanism or evidence.
 - `1`: audits a blocker and tightens the import ledger.
 - `2`: makes a real first-principles attempt on one named residual and records
   the exact obstruction.
 - `3`: introduces a new structure, derivation path, or falsifier that could
   plausibly retire the blocker.
 
-After two cycles scoring `0-1`, the next cycle must target a `2-3` route even
-if the expected deliverable is partial progress rather than closure.
+Repeated cycles scoring `0-1` trigger a search-depth checkpoint. Prefer an
+underexplored `2-3` route when it has a concrete mechanism, even if partial
+progress is the likely output. These scores guide planning, not result quotas;
+do not invent a route or continue an exhausted one to satisfy them.
 
-Before declaring no route viable, run stuck fan-out across 3-5 orthogonal
-attack frames. Use neutral route-local briefs for independent early passes and
+Before declaring no route viable, inspect materially different attack frames.
+Three to five is a planning target when useful distinct routes exist, not a
+minimum requiring invented families. Use neutral route-local briefs for independent early passes and
 record the normalized families in `APPROACH_REGISTRY.md`. Examples:
 
 - derive from the smallest algebraic surface, with all phenomenological values
@@ -101,7 +104,8 @@ Reject or reframe routes that only:
 
 - add smoother prose with the same hidden import;
 - create another nearby runner without checking the decisive bridge;
-- re-open a no-go route without a new premise;
+- re-open a no-go route without new mechanism, changed obligation map, scope
+  correction, counterexample, or justified premise change;
 - review arithmetic while ignoring symbol-to-physics identification;
 - weaken wording repeatedly without deciding the claim status;
 - chase literature similarities without classifying their import role.

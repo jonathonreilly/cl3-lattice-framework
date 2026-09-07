@@ -1,16 +1,17 @@
 ---
 name: physics-loop
-description: Use when an LLM agent needs to plan, launch, resume, or package a long-running theoretical-physics loop on a major hard open lane/problem, with repo grounding, assumption/import audits, no-go memory, deep first-principles stretch attempts, stuck fan-out, unattended checkpoints, review-loop backpressure, and one review PR per science block.
+description: Use when an LLM agent needs to plan, launch, resume, or package theoretical-physics discovery on a hard open lane/problem, with explicit premises, provisional dependency tracking, decisive checks, durable checkpoints, and review PRs at coherent science milestones.
 ---
 
 # Physics Loop
 
 ## Skill Freshness
 
-Before applying this skill, perform the repo skill freshness check described in
-`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
-this `SKILL.md` exists on `origin/main`, follow that version for the current
-task.
+Before using this workflow, inspect its applicability and correctness and use
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` to select one consistent
+source revision, including references. Ordinary operation uses current main;
+a user-requested prompt review/test uses the identified candidate under review
+without automatically executing the workflow or replacing it with old main text.
 
 Run a stateful theoretical-physics loop that can make a major lane move:
 retire a load-bearing import, close an exact support gate, prove a useful
@@ -19,7 +20,8 @@ no-go, add a decisive artifact, or isolate the remaining Nature-grade blocker.
 This skill is not a bigger `/autopilot` and not a factory for easy audit
 artifacts. It is a claim-state machine for hard physics. It must spend real
 time on named hard residuals before a route can be declared blocked or the
-campaign can end, and it must leave reviewable PRs for the backlog.
+campaign can end. Preserve useful work durably and prepare reviewable PRs at
+coherent milestones; unfinished research does not need a forced PR.
 
 When launched for a long unattended run, the default posture is a **campaign**:
 keep working until the runtime or max-cycle budget is exhausted. If one route
@@ -30,9 +32,11 @@ human-judgment blocker.
 
 For a request like "run for 12 hours unattended", treat the runtime as a work
 budget, not a maximum that can be abandoned after the first clean stop. The
-agent should spend the allotted time unless a global safety/tooling condition
-makes safe continuation impossible. Per-route blockers, review demotions,
-dirty PRs, missing retained proof, unavailable optional literature, or failed
+agent should spend the allotted time while a scientifically useful route remains.
+The quality-exhaustion conditions in Stop Conditions also permit ending a
+campaign; elapsed time, cycle counts, and PR counts are never evidence of
+progress. Per-route blockers, review demotions, dirty PRs, missing retained
+proof, unavailable optional literature, or failed
 PR creation are not global stop conditions; they trigger demotion/backlog,
 checkpoint, and pivot.
 
@@ -52,10 +56,13 @@ Parse:
 - `--literature`: allow targeted physics/math literature review;
 - `--max-cycles N`: optional cap on major execution cycles;
 - `--checkpoint-interval DURATION`: optional, default `30m`;
-- `--deep-block DURATION`: optional sustained hard-problem block, default
-  `90m`;
+- `--deep-block DURATION`: optional planning allocation for sustained work on
+  a hard problem, default `90m`; evidence may justify an earlier route pivot;
+- `--delivery milestone|block`: optional, default `milestone`; `block` preserves
+  the earlier per-block delivery cadence when requested;
 - `--no-pr`: do not open review PRs;
-- `--no-review-loop`: skip milestone `/review-loop` only if the user asked;
+- `--no-review-loop`: skip optional author milestone review only if the user
+  asked; this never waives independent review before landing;
 - `--no-commit`: do not create commits.
 
 If `--runtime` is absent and the user wants execution, ask how long to run
@@ -69,22 +76,29 @@ queue exhaustion condition is reached.
 
 ## Science Delivery And PR Policy
 
-For science loops, execute on clean remote branches and open review PRs for
-each coherent block. Do not merge those PRs and do not push science work
-directly to `main`.
-No supervisor prompt may override this by telling the worker not to open PRs
-unless the user explicitly supplied `--no-pr`.
+For science loops, work on an isolated coherent campaign branch. The default
+`--delivery milestone` supports continuous discovery, selective independent
+checks, and PRs/audits at meaningful milestones. `--delivery block` opens a PR
+for each review-ready coherent block. Neither mode permits merging science PRs
+or pushing science directly to `main` as part of the author run.
+
+A milestone is an independently reviewable theorem or construction, a decisive
+empirical result, a scoped negative theorem, a repaired source defect, or a
+synthesis that closes a named obligation. Open its PR when the evidence and
+conformance requirements are satisfied, at an explicit user handoff request,
+or at the end of the authorized budget if the work is review-ready. An
+incomplete block, routine checkpoint, or exhausted runtime does not force a PR.
 
 - Start science execution from current `origin/main` after `git fetch origin`.
 - Use a dedicated branch namespace such as `physics-loop/<slug>-YYYYMMDD`.
 - If the current worktree is dirty or not disposable, create a clean worktree
   from `origin/main` instead of mixing loop output with other changes.
-- Treat each coherent major cycle as a **science block**. Prefer one branch per
-  science block:
-  `physics-loop/<slug>-blockNN-YYYYMMDD`.
+- Treat each coherent major cycle as a **science block**. In milestone mode,
+  related blocks may compose on one campaign branch with a recorded dependency
+  map. In block mode, prefer `physics-loop/<slug>-blockNN-YYYYMMDD`.
 - If a block depends on prior unmerged block output, create a stacked PR whose
   base is the prior block branch. If independent, base it on `main`.
-- Commit coherent science artifacts to the block branch and push it to
+- Commit coherent science artifacts to the dedicated campaign/block branch and push it to
   `origin`.
 - Before each commit, run `scripts/vocab_lint.py --fix` on the files
   being committed. The repo's process vocabulary is canonical in
@@ -99,8 +113,8 @@ unless the user explicitly supplied `--no-pr`.
   ([`docs/repo/vocab_extension_queue.json`](../../../repo/vocab_extension_queue.json))
   independent of audit rows; they do not block the physics block from
   landing. Vocabulary drift is never a stop condition for a physics loop.
-- At each science-block closure, unless `--no-pr` was supplied, open one review
-  PR for that block before pivoting to the next opportunity. Use
+- At a review-ready milestone (or each review-ready block in block mode), unless
+  `--no-pr` was supplied, open the PR without waiting for campaign completion. Use
   `gh pr create` when authenticated; otherwise write `PR_BACKLOG.md` with
   exact commands and reasons PR creation failed.
 - After opening a PR, verify it with `gh pr view` or `gh pr list`. If the PR is
@@ -125,6 +139,27 @@ unless the user explicitly supplied `--no-pr`.
   retired/exposed, trace reachability, and remaining blockers.
 - Do not merge, push science to `main`, or update repo-wide authority surfaces
   as part of the science run.
+
+### Provisional Composition And Selective Checks
+
+Discovery may build on unmerged or unaudited lemmas. Record each premise's
+exact source revision, hypotheses, proof gaps, author checks, independent check
+state, and dependents in the campaign pack. Derived consequences inherit every
+unresolved condition; a coherent branch, passing runner, or reviewer agreement
+does not make them retained framework authority.
+
+Before extensive downstream reuse of a load-bearing provisional result, obtain
+a focused independent check of its contested step. Prioritize high-fanout
+dependencies, physical-identification bridges, unexpected matches, and changes
+whose failure would invalidate substantial work. If the check is unavailable,
+checkpoint the dependency and continue independent work or a small explicitly
+conditional probe. Do not deepen a large unverified dependency chain.
+
+Formal review and audit are milestone activities, or targeted checks requested
+for a critical dependency; formal audit of every leaf is not a prerequisite for
+exploration. The independent audit lane alone ratifies status after landing.
+When a premise changes or fails, mark its provisional descendants affected and
+recheck them before carrying their conclusions forward.
 
 **Conformance gate — verify before the PR is opened, not after review says
 so.** A block PR is not ready to request review until it has been checked,
@@ -171,13 +206,14 @@ under the parallel landing contract — it silently STAGES current-`main`'s
 deltas on those generated surfaces relative to your HEAD.
 
 ```bash
-git restore --source=HEAD --staged --worktree -- \
-    docs/audit/data/ \
-    docs/audit/AUDIT_QUEUE.md \
-    docs/audit/MISSING_DERIVATION_PROMPTS.md \
-    'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
-    docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
-git clean -fd -- docs/audit/data/
+python3 - <<'PY_CLEAN'
+from pathlib import Path
+import sys
+sys.path.insert(0, "scripts")
+from science_fix_loop import publication_changed_paths, strip_generated_audit_outputs
+root = Path.cwd()
+strip_generated_audit_outputs(root, publication_changed_paths(root))
+PY_CLEAN
 ```
 
 The one carve-out is `docs/audit/data/citation_graph_manifest.json`, and it is
@@ -241,7 +277,8 @@ Create or update a durable pack under:
 Legacy packs under `.claude/science/frontier-workstreams/<slug>/` may be read
 for resume/migration, but new loop state should use `physics-loops`.
 
-Use `STATE.yaml` as the resume surface: current goal, target status, runtime,
+Use `STATE.yaml` as the resume surface: current goal, delivery mode, next
+milestone, provisional dependency/check state, target status, runtime,
 cycle/block count, active route, approach-family coverage, strongest unresolved
 proof obligation, hard residual being attacked, files touched, open imports,
 no-go routes, trace-gate classification, review findings, PR status, next exact
@@ -253,15 +290,26 @@ target contract in `GOAL.md` and maintain `APPROACH_REGISTRY.md` using
 Keep mathematical approach families separate from artifact types recorded in
 `ROUTE_PORTFOLIO.md`.
 
-Use `OPPORTUNITY_QUEUE.md` in campaign mode. It must rank candidate science
-targets by:
+Use `OPPORTUNITY_QUEUE.md` in campaign mode. Rank candidate science targets by
+the evidence they could add to the user's objective:
 
-- retained-positive probability;
-- missing-import count;
-- runner/test availability;
-- review landability;
-- blast radius and branch size;
-- whether the target is independent of the just-blocked lane.
+- the exact unresolved proof obligation, empirical discriminator, or reusable
+  construction and its path to a named downstream physical target;
+- expected reduction of uncertainty or retirement of a load-bearing import,
+  including a counterexample or a properly scoped negative result;
+- verified downstream obligations unlocked, prioritizing shared upstream
+  bottlenecks over extra instances of already established results;
+- the first decisive check, estimated work and review cost, and available
+  computation;
+- premise risk, invalidation blast radius, branch size, and overlap with work
+  already active or awaiting review.
+
+Use qualitative estimates with reasons, not invented success probabilities.
+Distinguish scientific dependency edges from mere citations when estimating
+downstream value. A high row count, easier retained label, positive answer, or
+new filename does not by itself move the TOE objective. Preserve an exploratory
+route when it offers a concrete discriminator even if its chance of closure is
+uncertain. Re-rank after new evidence rather than forcing a positive outcome.
 
 Use `CLAIM_STATUS_CERTIFICATE.md` for every science block. It must record the
 actual current-surface status, any conditional/hypothetical status, dependency
@@ -595,9 +643,15 @@ accepted new axiom; not retained on the actual current surface."
 ## Claim-Type Certificate
 
 Bare `retained` / `promoted` is an audit-ratified effective status, not a
-branch-local author status. A physics-loop PR, note, runner, or status line may
-set `target_claim_type: positive_theorem`, `bounded_theorem`, or `no_go` only
-after all of these are true:
+branch-local author status. `target_claim_type` describes the intended source
+claim even while it is open, conditional, or awaiting review. It must not be
+withheld or replaced by a status enum because retention is unproved. In
+particular, a `bounded_theorem` names its hypotheses and does not claim their
+framework derivation. Type, author support status, independent review, and audit
+ratification are separate fields.
+
+Before claiming `candidate-retained-grade` support for an unconditional
+framework target, verify all of these:
 
 1. `CLAIM_STATUS_CERTIFICATE.md` names the intended `target_claim_type`.
 2. No open imports remain for the claimed target.
@@ -610,13 +664,16 @@ after all of these are true:
 6. `TRACE_GATE.md` gives a direct blocker/import closure path for the proposed
    target; frontier-discovery/support-only trace classes cannot certify
    retained-grade proposal language by themselves.
-7. Review-loop disposition is `pass`; `pending`, `passed_with_notes`,
-   `demote`, or `block` cannot certify a retained-grade proposal.
+7. Author artifact checks are complete with no unresolved blocker to that
+   proposal. Record independent review as pending until a fresh review-loop
+   actually completes; an author `pass` is not its receipt.
 8. The PR body and handoff explicitly say independent audit is still required
    before the repo may treat the claim as retained-grade.
 
-If any item fails, use `open`, `exact-support`, `bounded-support`,
-`conditional-support`, `no-go`, or `demotion` instead.
+If any item fails, keep the intended claim type and use `open`, `exact-support`,
+`bounded-support`, `conditional-support`, `no-go`, or `demotion` for the honest
+support status instead. A correctly scoped bounded result remains eligible for
+review under its explicit hypotheses; it does not pass as unconditional closure.
 
 ## Campaign Continuation Policy
 
@@ -638,9 +695,12 @@ Required response to a nonfatal event:
 1. demote or archive the current artifact honestly;
 2. checkpoint `STATE.yaml`, `HANDOFF.md`, `REVIEW_HISTORY.md`,
    `TRACE_GATE.md`, and `CLAIM_STATUS_CERTIFICATE.md`;
-3. commit/push/open PR or write `PR_BACKLOG.md` for the coherent block;
+3. preserve coherent work in the campaign branch; open a PR only when the
+   selected delivery cadence and review-readiness conditions are met, or record
+   an actionable delivery failure in `PR_BACKLOG.md`;
 4. refresh `OPPORTUNITY_QUEUE.md`;
-5. choose the next highest-ranked retained-positive opportunity and continue.
+5. choose the next highest-ranked science opportunity by expected evidence
+   value and continue.
 
 Global stop is allowed only when:
 
@@ -651,7 +711,9 @@ Global stop is allowed only when:
 - a lock conflict means another active worker owns the same repo/task and no
   clean independent worktree can be created;
 - the refreshed opportunity queue proves every viable target is blocked and no
-  independent retained-positive candidate remains.
+  independent useful candidate remains;
+- the documented corollary/value-gate exhaustion conditions in Stop Conditions
+  are met after the required substantive search.
 
 ## Required Grounding
 
@@ -817,8 +879,9 @@ For publication-facing or quantitative work, also inspect
 7. **Build the opportunity queue.** In campaign mode or unattended runs longer
    than one major cycle, create `OPPORTUNITY_QUEUE.md` and keep at least three
    ranked science opportunities unless the repo has fewer viable open targets.
-   Prefer retained-positive opportunities over more audit churn after one or
-   two no-go/support-only cycles.
+   Prefer unresolved upstream obligations or decisive discriminators over more
+   audit churn after one or two no-go/support-only cycles. Evaluate the
+   information gained without requiring an affirmative result.
 8. **Apply the dramatic-step gate.** Execute only routes that can change the
    lane state: import retired, exact support added, no-go proven, major blocker
    isolated, or novel structure introduced with a falsifier. Apply the
@@ -843,15 +906,18 @@ For publication-facing or quantitative work, also inspect
 
    | # | Question | Required answer to allow PR |
    |---|---|---|
-   | V1 | What SPECIFIC verdict-identified obstruction does this PR close? | Quote the exact obstruction text from the parent row's `verdict_rationale`. "The upstream is unratified" does NOT qualify — that's a dependency-chain issue, not a derivation gap. |
-   | V2 | What NEW derivation does this PR contain that the audit lane doesn't already have, and **what repo search did you run to establish that** (step 2)? | One paragraph describing genuinely new content. "Sympy-exact verification of the existing primary runner's identities" is NOT new derivation. "Pattern A narrow rescope of the algebraic core" is NOT new derivation if the audit lane already understands the algebra; it just creates a new audit-pending row with no closer derivation. Quote the step-2 prior-art search commit, commands, hits, and matched-hit classifications; an unevidenced novelty claim fails this question. |
-   | V3 | Could the audit lane already complete this derivation from existing retained primitives + standard math machinery (Schur complement, cube-root-of-unity arithmetic, Casimir formulas, Pauli matrix algebra, etc.)? | "No" — explain why the framework's retained primitives are necessary. If "yes", the cycle is performative and the PR must not be opened. |
-   | V4 | Is the marginal content non-trivial (not a textbook identity, not a definition restated)? | "Yes" with one-sentence justification. Examples that fail: "real shifts don't change imaginary parts", "(1/sqrt(N)) * I has matrix elements 1/sqrt(N)", "scaling by mu preserves slope". |
+   | V1 | What exact unresolved obligation or discriminating question does this PR address? | State the target and cite its current source: a primary note, derivation obligation, validated science-fix handoff, review finding, or explicit user goal. For a repair, reproduce the defect on current main. An existing audit verdict is not required for new science. Mere upstream non-ratification is an audit scheduling issue unless an actual missing upstream derivation is supplied. |
+   | V2 | What evidence does this PR add beyond the existing repo, and **what repo search established that** (step 2)? | Describe the new proof, construction, counterexample, decisive computation, or repair. Record the searched commit, commands, matching hits, and scope comparison. Re-checking an already supported identity does not become a new derivation; independent verification is legitimate when it resolves a named reproducibility or correctness concern and is described as such. |
+   | V3 | Does the artifact actually discharge the named obligation using justified premises, or provide the declared decisive discriminator? | "Yes" with the exact proof step or evidence path and every remaining gap. Standard mathematical tools are valid when their hypotheses are checked and their import role is explicit. Do not reject a missing derivation because an auditor could in principle carry it out; the author must supply that derivation. A proof is not new merely because it uses unusual machinery. |
+   | V4 | Is there a concrete scientific or evidential gain beyond restating a definition or established consequence? | "Yes" with the before/after obligation or uncertainty. A short proof can close a hard gap; length and apparent sophistication are not acceptance criteria. Pure arithmetic or renaming without a new obligation discharged fails this question. |
    | V5 | Is this a one-step variant of an already-landed cycle in this campaign, **or of anything already on `origin/main`**? | "No" — name the closest prior cycle and explain the structural distinction. "Same matrix structure, different physical interpretation" is NOT a structural distinction; it's relabeling. Refresh and check `origin/main`, not only the campaign's own cycles, and record the searched commit — a landed note you did not know about still counts, and a more general landed version outranks your special case. |
 
-   A `frontier_discovery` route satisfies this gate only if it introduces a
-   genuinely new structure, falsifier, or hard-premise test; it must not be
-   sold as closure.
+   A `frontier_discovery` route answers V1 with its explicit open question and
+   V3 with its declared discriminator or construction. It need not invent an
+   existing audit obstruction, but it must add new evidence and must not be sold
+   as closure. Source-repair authors may use validated applied-audit feedback;
+   never pass prior verdict rationales or expected outcomes to a restricted
+   independent audit seat.
 
    Review-loop triage of the 2026-05-02 audit-backlog campaign found too many
    branches whose marginal repo value was review-prep rather than new science.
@@ -882,7 +948,7 @@ For publication-facing or quantitative work, also inspect
 
    | # | Check | Failure condition |
    |---|---|---|
-   | N1 | Alternative route enumeration: name ≥5 distinct attack routes against the no-go, each with what it would attempt, why it fails (with retained-authority citation), and `ATTEMPTED` vs `RULED OUT BY PRIOR` marker. | Fewer than 5 distinct routes named — the no-go is premature. |
+   | N1 | Alternative route enumeration: name ≥5 distinct attack routes against the no-go, each with what it would attempt, why it fails (with retained-authority citation), and `ATTEMPTED` vs `RULED OUT BY PRIOR` marker. | Fewer than 5 distinct routes named — packet PASS is unavailable under the current schema; this count does not decide theorem validity. |
    | N2 | Wall-independence audit: pairwise table for all named walls/open conditions; collapse any wall that follows from another. | Source-note presents walls as independent when one follows from another. |
    | N3 | Hidden-wall scan: grep the proof for "we assume", "by construction", "bridge context", "naturally", "standard QFT", "registered", "canonical"; classify each hit as cited authority, hidden condition, or non-load-bearing context. | Any hidden condition found that should have been promoted to an explicit wall. |
    | N4 | Residual matching: for every prior no-go/wall/campaign cited as a witness, verify the residual matches exactly. Drop non-matching citations. | Witness count after dropping non-matches falls below what the claim needs. |
@@ -895,7 +961,8 @@ For publication-facing or quantitative work, also inspect
    `partial-narrowing`, `bounded-with-corrected-wall-count`, or
    `stretch-attempt-with-honest-residual`. Record the failing checklist items
    in `NO_GO_LEDGER.md`. Do not weaken the gate by lowering the failure
-   thresholds — a correctly scoped narrow no-go passes N1-N8 by being narrow.
+   thresholds or fabricate coverage. Narrowing can repair the scientific scope
+   while the packet remains incomplete; report those facts separately.
 
    See [`docs/ai_methodology/skills/no-go-discipline/SKILL.md`](../no-go-discipline/SKILL.md)
    for the full skill plus archetypal failure-mode case studies from the
@@ -914,10 +981,10 @@ For publication-facing or quantitative work, also inspect
 9. **Execute one major cycle.** Produce a theorem note, runner/log pair,
    import-retirement audit, literature bridge, no-go packet, or demotion
    packet. Keep edits scoped to the chosen route.
-10. **Run deep-work pressure when stuck.** If the last two cycles were
-   audit/no-go/blocker-isolation outputs, or if no easy route passes the gate,
-   run a stretch-attempt cycle before declaring the active route blocked. See
-   **Deep Work Rules** below.
+10. **Reassess search depth when stuck.** Repeated audit/no-go/blocker-isolation
+   outputs trigger a check for an underexplored hard residual and a concrete
+   mechanism to try. Prefer a substantive stretch attempt when one exists;
+   otherwise record the search limits and pivot. See **Deep Work Rules** below.
 11. **Certify status and trace.** Before committing a block, write or update
     `CLAIM_STATUS_CERTIFICATE.md` and `TRACE_GATE.md`. Demote any title,
     status line, table row, runner printout, or handoff sentence that fails
@@ -925,13 +992,15 @@ For publication-facing or quantitative work, also inspect
 12. **Checkpoint.** Update `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md`
    at least every checkpoint interval, before long scripts, after long
    scripts, and before any authorized campaign stop.
-13. **Review at milestones.** After each major artifact, run the `review-loop`
-   skill unless disabled. In science-run mode, record findings in branch-local
-   `REVIEW_HISTORY.md` and `HANDOFF.md`; do not update the live active review
-   queue or other repo-wide authority surfaces before the later review and
-   integration process. The local disposition must be one of `pass`, `demote`,
-   or `block`; `self-review pending` is not enough to push a PR. Either fix
-   locally, demote locally, archive locally, or select a new route.
+13. **Check artifacts at milestones.** Apply the relevant `physics-claim-reviewer`
+   checks and review-loop conformance requirements to the author artifact.
+   `--no-review-loop` may skip this optional milestone pass; required pre-PR
+   conformance and later independent review still apply.
+   Record findings in branch-local `REVIEW_HISTORY.md` and `HANDOFF.md`; do not
+   update live review queues, land, or run the independent audit. A local
+   `pass`, `demote`, or `block` is an author check, never an independent review
+   receipt. Fix, narrow, or checkpoint incomplete work before requesting review.
+   The later fresh review-loop owns the PR's review and any authorized landing.
 14. **Close the cycle honestly.** Use the narrowest honest status inside the
     branch artifacts: candidate retained-grade only when the certificate names
     an audit-ready `claim_type`; otherwise exact support, bounded support,
@@ -939,12 +1008,13 @@ For publication-facing or quantitative work, also inspect
     theorem step with prose. Put
     any proposed repo-wide weaving in `HANDOFF.md` for later review and
     backpressure integration.
-15. **Open review PRs.** At each block closure, run the conformance gate in
-    Science Delivery And PR Policy against
+15. **Deliver coherent milestones.** At a milestone (or review-ready block in
+    block mode), run the conformance gate in Science Delivery And PR Policy against
     `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md` and fix what it
-    catches, then open or prepare one PR for the coherent science block unless
-    `--no-pr` was supplied. In campaign mode, a missing PR must become
-    `PR_BACKLOG.md` and the campaign must continue if runtime remains.
+    catches, then open or prepare the coherent PR unless `--no-pr` was supplied.
+    Record failed delivery in `PR_BACKLOG.md`. Between milestones, commit useful
+    coherent work and checkpoint incomplete work without forcing a PR; continue
+    discovery while a useful route and authorized budget remain.
 16. **Continue the campaign or stop.** After PR/backlog handling, if runtime
     remains and the current lane is blocked or closed, pick the next
     `OPPORTUNITY_QUEUE.md` item and continue. Stop the whole campaign only
@@ -960,16 +1030,19 @@ For publication-facing or quantitative work, also inspect
 The loop must not stop merely because audit-grade routes are easy and hard
 routes are risky.
 
-- **Audit quota:** after two consecutive cycles whose main output is a no-go,
-  demotion, dependency firewall, or blocker-isolation artifact, the next cycle
-  must be a stretch attempt on a named hard residual.
-- **Positive-retention pivot:** after a stretch attempt and one no-go/support
+- **Search-depth checkpoint:** two consecutive cycles dominated by no-go,
+  demotion, dependency firewall, or blocker isolation are a planning signal to
+  reassess useful hard routes. They are not a quota requiring a nominal stretch
+  attempt or an affirmative result. Try a concrete new mechanism when available;
+  otherwise record why it is exhausted and pivot to useful independent work.
+- **Evidence-value pivot:** after a stretch attempt and one no-go/support
   cycle on the same lane, campaign mode must check the opportunity queue and
-  prefer a different retained-positive candidate unless the current lane has a
-  concrete next route with higher retained-positive probability.
+  prefer a different unresolved target unless the current lane has a concrete
+  next route with higher expected evidential value for the user's objective.
 - **Stretch attempt:** choose one blocker from `STATE.yaml` or `HANDOFF.md` and
-  work it from minimal repo primitives for at least one `--deep-block`
-  interval when runtime allows. A valid output may be partial structure,
+  allocate a `--deep-block` interval for sustained work from the allowed premises.
+  Continue while the next step can add evidence; a decisive result or exhausted
+  mechanism may justify an earlier checkpoint and pivot. A valid output may be partial structure,
   a sharper obstruction, a falsified premise, or a worked failed derivation
   with the exact load-bearing wall named.
 - **First-principles reset:** before the stretch attempt, write the minimal
@@ -983,8 +1056,10 @@ routes are risky.
   above. Counterfactual-pass output (see
   references/assumption-import-audit.md) is a useful stretch input
   here.
-- **Stuck fan-out:** before declaring "no route passes the gate", generate
-  3-5 orthogonal premises/attack frames. If the active tool policy and user
+- **Stuck fan-out:** before declaring "no route passes the gate", search for
+  materially distinct attack frames; 3-5 is a planning target when that many
+  useful routes exist, not a required count. Do not invent families or repeat
+  equivalent attempts to fill it. If the active tool policy and user
   authorization allow parallel agents, run them in parallel; otherwise emulate
   the fan-out sequentially in separate notes/sections. Give early passes
   neutral route-local briefs without the favored approach or other passes'
@@ -997,12 +1072,15 @@ routes are risky.
   that family until a new invariant, construction, decomposition, premise, or
   proof mechanism changes the obligation map.
 - **Longer cadence:** checkpoint every `--checkpoint-interval`, but do not turn
-  every checkpoint into a polished artifact. Sustained 90-120 minute hard
-  attempts are preferred over several shallow audit cycles.
-- **No shallow stop:** after the most recent blocker, do not stop until at
-  least one stretch attempt and one stuck fan-out synthesis have been recorded,
-  unless runtime is exhausted or required core tooling fails for every viable
-  queued route.
+  every checkpoint into a polished artifact. Protect sustained reasoning from
+  unnecessary packaging; use the next scientific decision rather than elapsed
+  minutes to decide when a route needs to change.
+- **No shallow stop:** inspect live alternatives and underexplored mechanisms
+  before declaring a route exhausted. Record the attempted work, decisive
+  evidence, and search limits. Honor an explicit runtime budget by pivoting to
+  useful independent work; do not busy-wait or manufacture attempts merely to
+  satisfy a duration or route count. Global quality-exhaustion conditions still
+  apply when no useful candidate remains.
 - **No all-lane stop without queue evidence:** do not create a global stop
   marker such as `STOP_ALL_LANES_REQUESTED` unless `OPPORTUNITY_QUEUE.md` was
   refreshed in the same checkpoint and records why each viable next target is
@@ -1127,8 +1205,9 @@ In short:
   remains;
 - stop cleanly only when runtime, max cycles, global queue exhaustion, or a
   global safety/tooling condition dictates;
-- push only dedicated science block branches;
-- open or prepare one review PR per science block at block closure;
+- push only dedicated science campaign/block branches;
+- open or prepare PRs at review-ready milestones, or at review-ready block
+  closures when `--delivery block` was requested;
 - never push science work to `main`.
 
 ## Stop Conditions
@@ -1190,9 +1269,14 @@ ground rather than re-mining the already-covered surface.
 Report:
 
 - loop slug and target;
+- delivery mode, milestones reached, and provisional dependencies awaiting
+  focused independent checks or formal audit;
 - remote science branch;
 - runtime used and cycles completed;
-- claim-state movement achieved;
+- scientific evidence gained: strongest proved result, counterexample,
+  discriminator, import retired, or uncertainty reduced, with exact paths;
+- claim-state movement achieved, separating author proposals, landed work,
+  independent review, and audit-ratified status;
 - trace-gate classification and whether the artifact reaches a known blocker
   or is frontier-only;
 - imports retired or newly exposed;

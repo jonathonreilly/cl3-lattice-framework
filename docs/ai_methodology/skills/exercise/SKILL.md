@@ -7,10 +7,11 @@ description: "Use when an LLM agent hits a hard wall in repo physics work and ne
 
 ## Skill Freshness
 
-Before applying this skill, perform the repo skill freshness check described in
-`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
-this `SKILL.md` exists on `origin/main`, follow that version for the current
-task.
+Before using this workflow, inspect its applicability and correctness and use
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md` to select one consistent
+source revision, including references. Ordinary operation uses current main;
+a user-requested prompt review/test uses the identified candidate under review
+without automatically executing the workflow or replacing it with old main text.
 
 Run this skill when a physics lane is stuck and the goal is to discover new
 routes, not to defend the current framework story. This is a thought-heavy
@@ -210,7 +211,8 @@ Do not import a literature theorem as a repo result. The acceptable pattern is:
 1. extract the proof skeleton;
 2. rewrite it in repo-native objects and assumptions;
 3. implement the finite or symbolic check when possible;
-4. review-loop the resulting theory surface;
+4. prepare the resulting evidence for independent review at the requested
+   milestone; this exercise does not automatically invoke review or landing;
 5. cite the external paper as inspiration or precedent, not as the proof
    authority unless the row is explicitly an imported bounded theorem.
 

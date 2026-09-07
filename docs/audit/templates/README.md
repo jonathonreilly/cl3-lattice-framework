@@ -37,5 +37,5 @@ git push
 Once installed, the workflow runs on the nightly `06:00 UTC` cron (with
 auto-commit of regenerated audit data back to `main`) and on manual
 `workflow_dispatch`. It has no pull-request trigger: review-loop is the
-pre-merge gate, and the separate `pr-smoke` workflow carries PR-time
-compile/test signal.
+pre-merge gate, and the separate `pr-smoke.yml` workflow carries focused PR-time
+process/tooling contract and regression signal with read-only permissions.
