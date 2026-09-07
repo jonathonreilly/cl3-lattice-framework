@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/u1_record_distribution_overlap_maxwell_germ_2026_09_03.py
+runner_sha256: db523208f850ea9eb0028e028b9fcadffe65a8a1d35a71535fa7a9dd6b345e3b
+input_fingerprint_sha256: b288e2cff099809be5874ccb59693675e1bdc9379c8206ed34c90e44018b6ac0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+[PASS] 01 input U1 probability densities normalize against Haar measure
+[PASS] 02 tested densities are strictly positive without a Fourier-sign restriction
+[PASS] 03 shifted conditional distributions vary with neighboring phase conditions
+[PASS] 04 direct distribution overlaps equal squared-Fourier reconstructions
+[PASS] 05 overlap kernels normalize against Haar measure
+[PASS] 06 overlap kernels are nonnegative probability densities
+[PASS] 07 distribution overlap removes drift and is even and periodic
+[PASS] 08 Cauchy-Schwarz puts a global overlap maximum at identity
+[PASS] 09 all overlap representation coefficients are modulus squares
+[PASS] 10 every tested nonuniform density gives positive log curvature
+[PASS] 11 curvature equals derivative norm divided by density norm
+[PASS] 12 closed overlap curvature matches finite differences
+[PASS] 13 negative-log overlap has a stable flat local minimum
+[PASS] 14 32 signed asymmetric eight-harmonic densities obey the overlap theorem
+[PASS] 15 asymmetric non-polynomial density obeys the overlap norm-ratio curvature
+[PASS] 16 autocorrelation repairs a positive density whose raw identity germ is unstable
+[PASS] 17 uniform-distribution mutation has zero overlap curvature and no shift variation
+[PASS] 18 pairwise Record-distribution comparison depends only on relative neighbor condition
+[PASS] 19 deterministic count rounding at fixed 256 uniform bins approaches the finite-bin overlap
+[PASS] 20 equal Haar-bin refinement at a fixed physical shift converges to the independent density integral
+[PASS] 21 nonuniform refining bins give a different unweighted overlap despite vanishing mesh size
+[PASS] 22 supplied factorized overlap weights give an additive negative-log action
+[PASS] 23 overlap potentials converge at second order to Maxwell actions
+[PASS] 24 overlap forces converge at second order to the Maxwell operator
+[PASS] 25 curvature-normalized overlap laws converge independently of input-distribution shape
+[PASS] 26 overlap-induced smooth branch inherits the exact zero-monopole Bianchi identity
+[PASS] 27 orientation-completed overlap germ has the isotropic Maxwell spectrum
+[PASS] 28 orientation-completed overlap germ preserves the exact gauge null
+[PASS] 29 orientation completion leaves exactly two transverse local modes
+[PASS] 30 Record-distribution overlap alone remains temporal and lacks magnetic stiffness
+[PASS] 31 unequal spatial completion remains physically visible in the infrared cone
+per_element: every Fourier component of each input density is squared analytically in the overlap kernel
+per_site: shifted neighbor-conditioned distributions and finite Record histograms are compared directly
+per_mode: every nonzero Fourier momentum on L=3,4,5 is checked after orientation completion
+per_block: raw-sign, uniform, temporal-only, isotropic, and anisotropic blocks are contrasted
+lattice_wide: fixed-volume action/operator refinements and zero-monopole cube identities run on four-lattices
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+
