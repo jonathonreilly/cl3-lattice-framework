@@ -6,4 +6,4 @@ Blocks05–07: finite fresh-ancilla collision approximation with actual-free spl
 
 Next in worker scratch: block08 replaces the timed pulse sequence with a supplied finite autonomous clock and finite completion window, retaining free evolution and recurrence. A connected-chain boundary commutant attempt tests what the isolated cell omits. A separate deep native-transfer lane derives the actual Wilson multiplier second-order coefficient with an explicit provisional remainder; cold review remains necessary and no physical spectral-sign conclusion is claimed.
 
-The new milestone is ready to commit/push and open as a review PR stacked on8004. No merge or audit verdict. Continue the allotted campaign after publication.
+The milestone is committed at c7556c6c64 and open as PR8005, stacked on8004: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8005. No merge or audit verdict. Continue the allotted campaign after publication.
