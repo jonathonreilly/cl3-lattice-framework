@@ -1,0 +1,3 @@
+# Artifacts
+
+Canonical note: docs/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md. Canonical exact runner: scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py. Preserve native-originals including original preregistration, frozen DERIVATION, 12-check raw script/result, DISK_WORD_CERTIFICATE, UNTRUNCATED_NORM_COROLLARY and staged independent review. The canonical runner adds four declared adverse checks, for TOTAL16; execution uses execute_and_write_cache with 180 seconds and measured positive RSS below 180 MiB. No companion helper is live-called, so no helper-map mutation is required.

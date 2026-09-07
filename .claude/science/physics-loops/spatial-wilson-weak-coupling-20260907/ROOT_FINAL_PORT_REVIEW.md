@@ -1,0 +1,7 @@
+# Root final port review
+
+PASS for the supplied finite Wilson/Haar model. Root independently checked the noncommutative five-face norm inequality, normalized Gibbs deficit and ambient18-dimensional Haar-ball packing, the24-link beta^-216 partition lower bound, the global quadratic complex-character estimate and finite-window norm bound. The principal-log branch at ||I-U||op<1 is traceless; the trace of every Lie representation generator vanishes, making the quadratic rather than linear character estimate valid.
+
+The normalized fundamental entry is real by complex conjugation, has exact deficit one-half the expected squared Frobenius distance, is positive by the previously reviewed reflection theorem and is strictly below3 at finite beta by full positive Haar density. No monotonicity follows. Root also checked the separate full-space corollary: fixed-vacuum coefficients approach dimensions, and finite Bessel sums diverge as more irreducibles are included, so the vacuum-output norm diverges without an illicit growing-window limit.
+
+All16 exact checks and both freegroup words retain the reviewed scientific payload. The four additional adverse checks remove matching side factors at both slices, respecting the actual two-slice fixture. Canonical stdout is staged; final source and runner match FINAL_PORT_RECEIPTS.json. No source or runner changes were needed during root review. Independent math reviews are preserved; the heavy general negative packet remains NOT PASS. Graph/full pipeline and nonempty evidence readiness follow this freeze.
