@@ -1,0 +1,3 @@
+# No-go memory
+
+The exact theorem prunes only character-diagonal compression for the stated bare-Haar finite slab. An untouched boundary edge can force diagonality on smaller fixtures, so such fixtures cannot test the complete environment. Positive injectivity of the cross convolution is sufficient; no bounded inverse or uniform coercive constant is inferred. The invertible stripped operator is bounded spatial multiplication S_s. Thermodynamic limits, dressed source maps and selected physical action remain open. The N1-N8 checklist is committed separately; the heavy five-family campaign-wide negative packet is NOT PASS.
