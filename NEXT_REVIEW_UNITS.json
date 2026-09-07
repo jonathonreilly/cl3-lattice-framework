@@ -4107,15 +4107,16 @@
       "current_main": "66b1b4f8a964f4011a3f4e7876369b7daf8e1834",
       "active": true,
       "reviewer": "backlog_8001_review",
-      "science_review_status": "original_review_FIXES_REQUIRED_one_P1_five_P2",
+      "science_review_status": "original_reviewer_final_corrections_and_composition_review_active",
       "independent_final_pass": false,
       "landed": false,
       "prepared_boundary_paths": 40,
       "preparation_evidence": "backlog_evidence/wave12/preparation-7847/REPORT.md",
       "scope": "Complete original authored science and actual transitive proof/runtime inputs; all inherited obligations and exclusions explicitly mapped. No scientific PASS from preparation.",
       "repair_author": "backlog_draft_triage",
-      "repair_status": "six_repairs_frozen_parent_context_archival_correction_active",
-      "report": "backlog_evidence/wave13/review-7847/REPORT.md"
+      "repair_status": "six_repairs_and_parent_archive_placement_frozen",
+      "report": "backlog_evidence/wave13/review-7847/REPORT.md",
+      "integration_tree": "50a712441881007f9544279066e06b732aac472d"
     },
     {
       "unit_id": "open_pr_science_coverage_7972",
@@ -4143,7 +4144,7 @@
       "target_head": "d2dd83da37f6ebe03c7075a218f9cbdff8a3efe9",
       "review_base": "66b1b4f8a964f4011a3f4e7876369b7daf8e1834",
       "kind": "meta_synthesis",
-      "science_review_status": "bounded_meta_corrections_frozen_independent_review_pending",
+      "science_review_status": "complete_independent_meta_review_active",
       "independent_final_pass": false,
       "landed": false,
       "active": true,
@@ -4152,7 +4153,8 @@
       "scope": "24 original authored sources: 15 absent on main, 9 later historical overlaps. Preserve provenance and qualify current source/UK/gauge/rotor/sampling boundaries and #7893 attribution. 31 members are quotation frontier, not 31 new proof imports; no raw merge or duplicate closure.",
       "author": "backlog_8001_review",
       "source_tree": "907a921754f43257b7a75658a30d4ff11ed554d4",
-      "author_evidence": "backlog_evidence/wave13/synthesis-corrections/HANDOFF.md"
+      "author_evidence": "backlog_evidence/wave13/synthesis-corrections/HANDOFF.md",
+      "integration_tree": "50a712441881007f9544279066e06b732aac472d"
     },
     {
       "unit_id": "u1_matter_links_7892_7893_7903",
@@ -4179,12 +4181,28 @@
       "reviewer": "backlog_batch_contract",
       "evidence": "backlog_evidence/wave13-review-handoff/u1-matter-links-preparation/PREPARATION_NOTE.md",
       "scope": "Three exact complete3-path original authored scopes. Shared finite Pauli/role conventions can be reviewed together. Full source/proof/current-premise closure and actual runner execution remain pending. Raw self-contained labels are not proof coverage. No source edits beyond extraction or accepted parent science."
+    },
+    {
+      "unit_id": "pure_link_7911_7959",
+      "target_pr": 7911,
+      "target_prs": [
+        7911,
+        7959
+      ],
+      "base": "47da12268436ee1843e822386477aa2c829d95a9",
+      "prepared_tree": "2d9b707b4707cd8253bdb9152cfb970a55162f9d",
+      "selected_paths": 6,
+      "science_review_status": "prepared_unaccepted_next_for_backlog_batch_contract",
+      "reviewer": "backlog_batch_contract",
+      "active": false,
+      "preparation": "backlog_evidence/wave14-review-handoff/pure-link/PREPARATION.json",
+      "scope": "Two supplied pure-link geometries/projector notes, runners and historical caches. Exact original additions only. Full source and true input closure review plus bounded actual execution required; quoted large-torus production is not new accepted evidence."
     }
   ],
   "current_main": "47da12268436ee1843e822386477aa2c829d95a9",
-  "current_assignment_update_utc": "2026-09-07T23:24:23.981326+00:00",
+  "current_assignment_update_utc": "2026-09-07T23:40:40.924797+00:00",
   "cleanup_scope": "original254_only",
   "owner_cutoff_file": "BACKLOG_CUTOFF.json",
-  "immediate_priority": "Wave13 lands complete #7851/#7850 corrected science and #7972 process helper. The six #7847/#7846 repairs are frozen; a narrow publication correction is archiving unaccepted parent context. Bounded #7976 synthesis corrections and independent original #7892/#7893/#7903 review remain active. Final review is pending. Fixed original254 only; all reserved/current-premise holds preserved.",
+  "immediate_priority": "Complete separate final reviews on frozen #7847/#7846 corrections and #7976 meta synthesis, followed by one combined wave14 gate. Original #7892/#7893/#7903 review has concrete repair findings pending final report. The next original #7911/#7959 pair is prepared for independent review. Fixed original254 only; no formal audit.",
   "closure_reconciliation_file": "BACKLOG_CLOSURE_RECONCILIATION.json"
 }
