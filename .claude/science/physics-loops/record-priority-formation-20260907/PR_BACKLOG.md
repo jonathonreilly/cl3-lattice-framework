@@ -1,3 +1,5 @@
-# Publication pending
+# Review publication
 
-Root reviews this isolated package before its dedicated PR. No commit or push in this dispatch. It must remain separate from the other formation/profile package; their physical premises differ.
+Published: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8011
+
+Conditional bounded theorem, independent audit still required; no merge performed. Latest main synchronization is recorded separately from the pinned full-pipeline receipt.
