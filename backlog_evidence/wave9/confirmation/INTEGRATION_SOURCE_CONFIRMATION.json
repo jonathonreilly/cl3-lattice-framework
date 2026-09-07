@@ -1,0 +1,92 @@
+{
+  "verdict": "PASS source integration; manifest pending",
+  "base": "b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92",
+  "source_tree": "5611799ed8628944711a87b11616cba9682a66d5",
+  "source_paths": {
+    "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md": {
+      "mode": "100644",
+      "blob": "ad0d07f307ff506d173bc80691a46bfbbb16ed43",
+      "sha256": "80ab2512f0f7706be19b87a2db8da34aa287be103715fdce9130072d6c4ce360"
+    },
+    "scripts/spin_half_cartesian_plaquette_source_2026_09_07.py": {
+      "mode": "100644",
+      "blob": "1360eaea4e87c8fb5fb354bf0b925ec61ee4a241",
+      "sha256": "180945dc3994d84c9051f700e0634212e4856a5bec0be8b5192e93463686b4cd"
+    },
+    "scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py": {
+      "mode": "100644",
+      "blob": "7d01d3ee1e01e9843a326317df19a82ba6f517a5",
+      "sha256": "7d9dbc10f7e7284eed26571b3a2ac45b0b8b03a1321d356100f0c8b38cc7669b"
+    },
+    "logs/runner-cache/spin_half_cartesian_plaquette_source_2026_09_07.txt": {
+      "mode": "100644",
+      "blob": "9b2afab116ecfc21ec33c806cb41c34e05803826",
+      "sha256": "e2976ebb888419f0a78f6402430641207c1bd1caeec1f684b8e0418b85387040"
+    },
+    "logs/runner-cache/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.txt": {
+      "mode": "100644",
+      "blob": "326718aa6fc94565151843933110fd8ec371af13",
+      "sha256": "9d7403c49af9c023e5e70b2cab60c40e454c74d4ac512c6faf61fe4fab4872e9"
+    },
+    "docs/SPIN_HALF_CUBIC_ICE_SOURCE_RECEIPT_DIAGNOSTIC_NOTE_2026-09-07.md": {
+      "mode": "100644",
+      "blob": "ddf73924f7f36dedc3765199c580e5778aecb680",
+      "sha256": "b76318e2800e8fe66a6fe5e1716d7d0bef1ec13344801b5d95ac9713c3352d91"
+    },
+    "scripts/spin_half_cubic_ice_source_receipt_diagnostic_2026_09_07.py": {
+      "mode": "100644",
+      "blob": "04c3b0fff4949ff0d102f33263607182d4367e55",
+      "sha256": "eb1af4a896c7179aedbc1b68d0a1266fea1158b4ad398d37017617341b56d49e"
+    },
+    "data/field/spin_half_cubic_ice_historical_receipts_2026_09_07.json": {
+      "mode": "100644",
+      "blob": "143caa02df284b88b1101fed4eb47e002f819868",
+      "sha256": "d2af311b8fd4f1b5bef0f026f3b0e7fdda26faee95f49a1ab0f0f9124293c665"
+    },
+    "logs/runner-cache/spin_half_cubic_ice_source_receipt_diagnostic_2026_09_07.txt": {
+      "mode": "100644",
+      "blob": "5c04a621bffceac95be73708780cf927cbc4074e",
+      "sha256": "ba9dc43e8402e0a59f2956310728af0523f9ee973afe13f035f52700214cca77"
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "mode": "100755",
+      "blob": "5e0e4b33c7d4d6039f896d07bb784210081c5a31",
+      "sha256": "ec055d00101766d247849d57d450e71996cc3ec204354acaf77c18eb6aaaf581"
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "mode": "100644",
+      "blob": "db25ea59059e9b33e2631d6c2dd3b8a6a9b365e4",
+      "sha256": "1b4ac5af4c24106ca453c4f3c4a7b8ee7c9d72516d7afc5d206210caa5817a6a"
+    }
+  },
+  "other_main_paths_exact": 28290,
+  "all_scientific_inputs_exact": true,
+  "old_registry_entries_and_functions_exact": true,
+  "actual_consumer_checks": [
+    {
+      "note": "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md",
+      "claim_id": "spin_half_cartesian_plaquette_source_note_2026-09-07",
+      "primary": "scripts/spin_half_cartesian_plaquette_source_2026_09_07.py",
+      "graph_helpers": [
+        "scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py"
+      ],
+      "packet_helpers": [
+        "scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py"
+      ],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ]
+    },
+    {
+      "note": "docs/SPIN_HALF_CUBIC_ICE_SOURCE_RECEIPT_DIAGNOSTIC_NOTE_2026-09-07.md",
+      "claim_id": "spin_half_cubic_ice_source_receipt_diagnostic_note_2026-09-07",
+      "primary": "scripts/spin_half_cubic_ice_source_receipt_diagnostic_2026_09_07.py",
+      "graph_helpers": [],
+      "packet_helpers": [],
+      "citations": [
+        "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md"
+      ]
+    }
+  ],
+  "actual_governed_policy_hash": "235e8b82fd460d29f0798f13df129d2f896aa31d4c14566f179e200dc6194c5b"
+}

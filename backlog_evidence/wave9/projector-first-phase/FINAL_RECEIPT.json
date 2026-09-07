@@ -1,0 +1,50 @@
+{
+  "status": "FIRST-PHASE AUTHOR CORRECTION; independent source confirmation and fresh production evidence remain pending; no scientific grade",
+  "base": "94e90cbf928cb35fa1b50e894cd897c94b73077f",
+  "candidate_tree": "02303154dee28d8cea2ef7b3089eee45247c6e2a",
+  "path_count": 3,
+  "candidate_patch_sha256": "4d081ae9ec8ba2bc36ca4aabce9f26fcbb67f8b3410e0a930812d9ce2d71c5a5",
+  "inventory_sha256": "db57e021c9c1099fed6d603388e5a1a290dc2b7444ee13bdc794012dc2e2d3a4",
+  "runner_sha256": "a710a92baaaa7492cfeb7eaaa8db1e88cf902b6abc3531d4d9031a90310e3210",
+  "all_existing_main_paths_preserved": 28242,
+  "original_production_cache_verbatim": true,
+  "actual_historical_cache_status": "sha_mismatch",
+  "production_runs": 0,
+  "fresh_production_cache_created": false,
+  "controls": {
+    "complete_zero_flux_states": 864,
+    "complete_one_flux_states": 464,
+    "detunings": [
+      -0.05,
+      -0.1
+    ],
+    "incremental_moves": 9920,
+    "compiled_sample_and_sentinel_protocols": 4,
+    "compiled_resampling_reference_seeds": 3,
+    "same_estimator_covariance_error": 0.20995626366712958,
+    "semantic_mutants_rejected": 6,
+    "actual_source_input_drift_controls": 8
+  },
+  "production_protocol_preserved": "all run_population call ASTs, all12 check condition ASTs and480-second budget unchanged; only sample convention, covariance propagation, input binding and scoped labels repaired",
+  "findings_dispositions": {
+    "F1": "strict post-burn sampling with prewrite and exact-final-count guards; compiled bounds/sentinel controls",
+    "F2": "unchanged weighted point estimator; full nominal shared-reference covariance; no calibration claim",
+    "F3": "bare E_link^2 identity explicit; U_fit only a supplied coarse-field finite-protocol comparison",
+    "F4": "old cache preserved/stale; seven actual context inputs declared/read; production still required",
+    "F5": "compound population/start/warmup/burn/sample/seed control; no isolated convergence or component claim",
+    "F6": "parent phase/magnetic interpretation narrowed; sampled/final instrumentation distinguished from local proof",
+    "F7": "current canonical author metadata and trace; N1 separates evidence states, N2 implications unresolved"
+  },
+  "artifacts": {
+    "TINY_CONTROLS.json": "e04fb91dd34e45263f3a081a7b311dcd10dae789a09eeb622555fb03976c4204",
+    "MUTATION_CONTROLS.json": "3dd22b16b9f8515d379b46325f1068d773dbea83017c09b7a5f3dfe605cd3818",
+    "INPUT_AND_PROTOCOL_CONTROLS.json": "781bb3341a480559b11ad0c5c11e1490c9cf98a35a575af047ef90546516bb94",
+    "FINAL_INPUT_CLOSURE.json": "7778c05a4643413a867bf80b175eca9e3adebd5a22076675ac98e617ca6c6ee3",
+    "MAIN_PRESERVATION.json": "241a5732afd4e4fcaac2f0acf03847c820092e20f06d93211dc192679948b5f9",
+    "ORIGINAL_FINAL_CONTENT_DISPOSITIONS.json": "64ddb03fc36dbc80a25971f6a8a0c6aa93c6eed749ca8f1b2ecc9d70c5ae8b8f",
+    "original-source-correction.diff": "b61709354a37cfce8cfc05bb435d17e2e0e4f852577c272c52a42d7159569514",
+    "runner-correction.diff": "fa09fc644ff587f1f569eb8133c36cd26abd4b165e3defe84c71cd699c1da865",
+    "vocab.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+    "HANDOFF.md": "f34e84b8bc4eb7e4f4ca2ce9c84ab2e3774eaf2c71f3791f05566f0068e37cba"
+  }
+}

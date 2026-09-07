@@ -1,0 +1,56 @@
+{
+  "verdict": "PASS first-phase exact source correction and bounded controls",
+  "production_decision": "READY for unchanged480-second bounded recipe; outcome pending",
+  "tree": "02303154dee28d8cea2ef7b3089eee45247c6e2a",
+  "base": "94e90cbf928cb35fa1b50e894cd897c94b73077f",
+  "current_main_inputs": "b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92",
+  "patch_sha256": "4d081ae9ec8ba2bc36ca4aabce9f26fcbb67f8b3410e0a930812d9ce2d71c5a5",
+  "corrected_source_sha256": "a710a92baaaa7492cfeb7eaaa8db1e88cf902b6abc3531d4d9031a90310e3210",
+  "paths": 3,
+  "declared_inputs": 7,
+  "actual_modules": 3,
+  "all_findings": [
+    "F1 closed",
+    "F2 nominal-covariance correction confirmed",
+    "F3 interpretation narrowed",
+    "F4 historical stale/pending-production disposition confirmed",
+    "F5 compound-control scope corrected",
+    "F6 parent/instrumentation scope corrected",
+    "F7 status/trace corrected"
+  ],
+  "unresolved_source_blockers": [],
+  "production_runs": 0,
+  "fresh_production_cache": false,
+  "historical_cache_status": "sha_mismatch",
+  "controls": {
+    "compiled_sample_schedules": 4,
+    "complete_tiny_states": [
+      864,
+      464
+    ],
+    "detunings": [
+      -0.05,
+      -0.1
+    ],
+    "incremental_moves": 9920,
+    "compiled_resampling_offsets": 3,
+    "actual_semantic_mutants": 6,
+    "own_source_input_controls": 8,
+    "own_invalid_protocol_guards": 7,
+    "own_rational_variance": "54/1225"
+  },
+  "harness_provenance": "full author harness read and independent external execution; separate own rational/input/argument controls",
+  "scientific_audit_grade": null,
+  "artifacts": {
+    "REPORT.md": "39c1e9cdc5a25c5da120629949424bdaeaf2c3a72bd8418343e8d48d841236da",
+    "SOURCE_SCOPE.json": "13bcca8078c87cc2b22751ddce4319b229e0d437de7edff37a95d50a4d589cfa",
+    "INPUT_CLOSURE.json": "7fcd35944dda476527099e8e1e7e6e2e552b19652f445ec6b14988d9299035a4",
+    "BINDING.json": "d5bd81fe93c588a493b08b45c587e734e9a4225d391861182f88984ab2c8fe42",
+    "TINY_CONTROLS.json": "e2657eb3b82e2c80bf15e7466071cdee24dc4e118ee1d71aa51f4cc8947ba139",
+    "MUTATION_CONTROLS.json": "3dd22b16b9f8515d379b46325f1068d773dbea83017c09b7a5f3dfe605cd3818",
+    "OWN_INPUT_RESOURCE_CONTROLS.json": "3c256e2fb3ce3f806c19d25837e702f5ce1655e23628493178c72e112f4c804b",
+    "tiny_controls.py": "ad40a6d0198855064d575d8983db138ba9e4c21afc951d8615322957cf1f6e9b",
+    "mutation_controls.py": "2fc940677d0d813a3685080c7e943d1be0ad3feef6a20eee32131fe74580e444",
+    "own_input_and_resource_controls.py": "20dc01fe8a3e324c3136e9c51de9f900b21fda4c6302b192f59eb19f6d282189"
+  }
+}

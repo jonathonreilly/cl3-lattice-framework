@@ -1,0 +1,45 @@
+{
+  "verdict": "PASS exact integrated source and manifest",
+  "base": "b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92",
+  "source_tree": "5611799ed8628944711a87b11616cba9682a66d5",
+  "integrated_tree": "61d50938bc7783eac02259041fbbbfbbe1221681",
+  "manifest_sha256": "67a0927f5d30e9bfa3ee3fd4c3f29344d6cfe98d357d9bd18108d18ab9599695",
+  "added_nodes": {
+    "spin_half_cartesian_plaquette_source_note_2026-09-07": {
+      "claim_id": "spin_half_cartesian_plaquette_source_note_2026-09-07",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": null,
+      "claim_type_seed_hint": null,
+      "deps": [
+        "minimal_axioms"
+      ],
+      "helper_runner_paths": [
+        "scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py"
+      ],
+      "note_hash": "80ab2512f0f7706be19b87a2db8da34aa287be103715fdce9130072d6c4ce360",
+      "path": "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md",
+      "runner_path": "scripts/spin_half_cartesian_plaquette_source_2026_09_07.py",
+      "title": "Cartesian plaquette sources for the supplied spin-half cubic-ice carrier"
+    },
+    "spin_half_cubic_ice_source_receipt_diagnostic_note_2026-09-07": {
+      "claim_id": "spin_half_cubic_ice_source_receipt_diagnostic_note_2026-09-07",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": null,
+      "claim_type_seed_hint": null,
+      "deps": [
+        "spin_half_cartesian_plaquette_source_note_2026-09-07"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "b76318e2800e8fe66a6fe5e1716d7d0bef1ec13344801b5d95ac9713c3352d91",
+      "path": "docs/SPIN_HALF_CUBIC_ICE_SOURCE_RECEIPT_DIAGNOSTIC_NOTE_2026-09-07.md",
+      "runner_path": "scripts/spin_half_cubic_ice_source_receipt_diagnostic_2026_09_07.py",
+      "title": "A bounded diagnostic for the historical cubic-ice source and receipts"
+    }
+  },
+  "added_edges": 2,
+  "all_old_manifest_entries_exact": true,
+  "all11_source_and_inputs_unchanged": true,
+  "graph_json_sha256": "795e7e40758566e36b5318d22f9c6c33c0039513325d04534d77c618c56d648c",
+  "full_graph_manifest_recomputation_matches": true,
+  "gate": "root-owned pending; no audit or physical certificate"
+}

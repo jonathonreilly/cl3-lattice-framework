@@ -6,11 +6,11 @@ Independent examination of surviving source claims still precedes landing.
 
 ## Actual backlog
 
-Current refresh: 151 open PRs, zero drafts. There have been 21 draft closures,
-11 science landings with PR closure, 85 further source consolidations and 20
-draft-to-ready actions. The 254 original PRs gained 14 successors (#8003–#8016);
-#8003–#8006 are included in the 11 landed closures. The ancestry counts below
-describe the original snapshot, not this refresh.
+Current refresh: 146 open PRs, zero drafts. There have been 21 draft closures,
+ten science landings with PR closure, and 85 further source consolidations;
+16 drafts became ready. The original 254 PRs gained eight new successors
+(#8003–#8010); #8003, #8004 and #8005 are included in the ten landed closures.
+The ancestry counts below describe the original snapshot, not this refresh.
 
 The snapshot contains 254 PRs. 129 name another open branch as their GitHub
 base. Actual Git history yields 144 nearest-open-head ancestry edges and
@@ -47,7 +47,7 @@ This changes the review unit and placement of repeated mechanical work, not
 which scientific claims require scrutiny. The executable seven-file contract has now passed independent adversarial
 review and same-session confirmation after a successive-manifest-conflict
 repair. It landed at `2d0f551dcd8bd444daee85b97811cda53da0661e` and remains
-unchanged in current main `b0f7089ea5dd6e26e0d58a8a36a77d36c50a8e7a`.
+unchanged in current main `94e90cbf928cb35fa1b50e894cd897c94b73077f`.
 
 ## Integration
 
@@ -136,7 +136,7 @@ mechanical PASS tokens and introduces no new scientific status.
 The third combined landing is the 47-path conditional light-germ source unit
 at `16c2d6860e168ec8e5e8f66296410265e5d7226d`. Its eleven constituent PRs were already
 closed as duplicates; the successor remains open for the remaining science.
-Nine complete mechanical runs have served nine source batches, with zero
+Seven complete mechanical runs have served seven source batches, with zero
 integration retries and no formal audit.
 
 The fourth landing at `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac` integrates
@@ -150,8 +150,3 @@ The fifth landing at `12d9c77c0605276b82eb9fcb8cf05cdaf3e40f56` integrates #8004
 The sixth landing at `e043c95b37bd46d80e97c39f36c8b3cb7643c62f` integrates the six corrected backreaction notes. Current status is in BACKLOG_STATUS.md; dated counts below earlier landing paragraphs are historical. Twenty-one additional parents are consolidated into open #7315 with complete inherited source and all review obligations preserved.
 
 Wave7 at `94e90cbf928cb35fa1b50e894cd897c94b73077f` combines two independently reviewed compatible source units in one gate: five notes,87 authored paths and one manifest. It passed without a gate retry. New arrivals and moved heads join their own review queue; they do not force repeating unchanged completed science. Observed helper-registration, case-assertion and Ritz-gap pitfalls are summarized in BACKLOG_STATUS.md for authors.
-
-Wave8 and wave9 separately depart as soon as confirmed: Record clock/chain and
-the bounded field source/receipt unit. No collection timer or unrelated projector
-run delays them. Each used one combined current-main gate. The actual note-path
-canonical-ID check now prevents a reproduced helper-registration false positive.

@@ -1,0 +1,89 @@
+{
+  "status": "AUTHORED CANDIDATE; independent final-source review required; no scientific grade or applied audit",
+  "base": "94e90cbf928cb35fa1b50e894cd897c94b73077f",
+  "candidate_tree": "0d5d92ff8e97dfcf670d4b64457b0bd7527886de",
+  "source_checkpoint": "e3d28020b5fbe5f8c7c00bd030aba991abb364d3",
+  "frozen_original_field_successor": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+  "path_count": 11,
+  "new_paths": 9,
+  "modified_main_paths": [
+    "docs/audit/scripts/build_citation_graph.py",
+    "scripts/audit_packet_script_deps.py"
+  ],
+  "deleted_paths": [],
+  "candidate_patch_sha256": "1712d768e66f123e42f2e86d94d2b1020981b835e8722f3874ebb0fbe1c7c1fd",
+  "final_inventory_sha256": "07bbb56bbddce6fc3cdbf08da0e78ce104c766bee9ed20bc375a94ae9c9959bd",
+  "fixture_sha256": "d2af311b8fd4f1b5bef0f026f3b0e7fdda26faee95f49a1ab0f0f9124293c665",
+  "checks": {
+    "primary": {
+      "pass": 19,
+      "fail": 0
+    },
+    "independent": {
+      "pass": 55,
+      "fail": 0
+    },
+    "diagnostic": {
+      "pass": 12,
+      "fail": 0
+    },
+    "adverse_fixture_files": 28,
+    "source_semantic_mutants": 7,
+    "actual_consumer_omission_or_wrong_alias_mutants": 4,
+    "source_input_cache_mutants": 10,
+    "actual_rows_independently_recomputed": 8
+  },
+  "exact_base_paths_preserved_except_two_registries": 28240,
+  "deferred_original_source_paths": 57,
+  "runtime_scope": "three bounded finite/source-data runners, 120-second limits; no production sampler",
+  "graph_boundary": "manifest unchanged; intended two new nodes with diagnostic->source and source->minimal_axioms only; no source proof dependency on downstream diagnostic",
+  "reservations": "#6379/#6858/#6859 excluded; no reserved code import/copy",
+  "artifacts": {
+    "DIAGNOSTIC_CONTROLS.json": "6286709f8197d9270bd22c8d65011681d184cb337e1c2305783b9c75d34e6a2e",
+    "SOURCE_MUTATION_CONTROLS.json": "698a38840174c4c30bfe95f23f3c97981e6ab11c3bb3c5b2c22e70ad2bd4825b",
+    "CONSUMER_CONTROLS.json": "31a1b5047c10bede038609a12bf6ad876d0a1f2077a543575915bd200c341d70",
+    "ACTUAL_INPUT_CLOSURE.json": "045c1e1de81c74ec60de03597dda01759c1782e37ff3c4a539cde5b5beea6b16",
+    "MAIN_PRESERVATION.json": "5cf230693fe1e65324ca7658865bfae7980c5a9621e66a85a9687de412d93739",
+    "ORIGINAL_FINAL_CONTENT_DISPOSITIONS.json": "bc5804e62180e02eaeb2716b969efbb0690c925416609ae569be0f2cad498e2f",
+    "EXACT_FIXTURE_PRESERVATION.json": "782a9e1f71c4dd880bbf192e5107150403ffbb2003e60f23dc8ac03c7e3255fd",
+    "checkpoint-correction.diff": "d2d184488de4529bbc1f0e6f0bcb49e235b4613bd21a241faf2c29bf1d3c0525",
+    "HANDOFF.md": "10726d38a840b846114307efefb7afd24f8d6fa991b39e04d3038e92a53d5215",
+    "FINAL_CACHE_IDENTITIES.json": "1f87dbc010f84b91d22f93c140a5e7c827417083cbfc7eb1704fefaf57180c2f",
+    "CANONICAL_ID_CORRECTION.json": "ab361b6df8737d36a13ca039fcfddad83ec45449eac344e43f8e48fa3b621ae8",
+    "canonical-id-correction.patch": "0ec5299d560312aa64958e28e1d02ed9ec3420076e92ba0b7d38acd1393a4d8c",
+    "canonical-id-source.diff": "5784d2315a715afc89166f6c301d831d1727bc98fb10c0921c34c071496cab69",
+    "vocab.json": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+  },
+  "canonical_id_correction": {
+    "original_candidate_tree": "6897e916e4fd30ce408853f287f3d3f9ebada070",
+    "corrected_candidate_tree": "0d5d92ff8e97dfcf670d4b64457b0bd7527886de",
+    "changed_paths": [
+      "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md",
+      "logs/runner-cache/spin_half_cartesian_plaquette_source_2026_09_07.txt",
+      "logs/runner-cache/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.txt",
+      "docs/SPIN_HALF_CUBIC_ICE_SOURCE_RECEIPT_DIAGNOSTIC_NOTE_2026-09-07.md",
+      "logs/runner-cache/spin_half_cubic_ice_source_receipt_diagnostic_2026_09_07.txt",
+      "docs/audit/scripts/build_citation_graph.py",
+      "scripts/audit_packet_script_deps.py"
+    ],
+    "correction_patch_sha256": "0ec5299d560312aa64958e28e1d02ed9ec3420076e92ba0b7d38acd1393a4d8c",
+    "all_three_runner_sources_and_fixture_unchanged": true,
+    "cache_bodies": [
+      {
+        "path": "logs/runner-cache/spin_half_cartesian_plaquette_source_2026_09_07.txt",
+        "body_identity": "byte-identical after replacing only changed note SHA256 strings"
+      },
+      {
+        "path": "logs/runner-cache/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.txt",
+        "body_identity": "byte-identical after replacing only changed note SHA256 strings"
+      },
+      {
+        "path": "logs/runner-cache/spin_half_cubic_ice_source_receipt_diagnostic_2026_09_07.txt",
+        "body_identity": "byte-identical after replacing only changed note SHA256 strings"
+      }
+    ],
+    "actual_canonical_id_control": "CONSUMER_CONTROLS.json",
+    "historical_failure_preserved": true,
+    "scientific_grade": null
+  }
+}
