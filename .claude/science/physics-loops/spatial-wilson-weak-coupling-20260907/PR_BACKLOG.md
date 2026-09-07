@@ -1,3 +1,3 @@
-# Delivery responsibility
+# Review publication complete
 
-Root is coordinating publication after cold port review. No commit, push, PR or full pipeline was requested from this worker. This is a delegated delivery checkpoint, not a network failure or abandoned science block. Root should cite this packet, source, exact runner and canonical text cache in the coherent review PR.
+Draft PR8013: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8013, base codex/spatial-wilson-mixing-block15-20260907 (PR8009). Verified open draft. Validation pin and post-validation main synchronization are distinguished in HANDOFF.md. No delivery failure remains.
