@@ -64,3 +64,26 @@ in-family: 16/16
 - Supervisor control before the fold (`specs/supervisor_control_block04_after_checker.py`): the three exact block sums reproduced digit for digit; `σ` at the three region triples computed (`14803/90094`, `31495356/211495159`, `261542884000000/3917551072892721`); the disjoint-support coupling built and verified on 300 instances at `(5,2,4)` (exact marginals, `E d_H = TV(m_x) + TV(m_y)` on every one).
 - Fold: runner — `sigma_of` (one supremum of the sum), `optimal_coupling` (the disjoint-support construction), checks B4 (equality on every instance, never above the sequential coupling) and C5/C6 (exact `B_V = 10σ` against the literals; `σ ≤ ρ + ρ'` and `≤ ρ(1 + c_1)`), mutations `block_sum_literal_off` and `optimal_coupling_not_optimal`; note — Theorem N's consequence corrected, Theorem N' added with its proof, the `σ` column and exact `B_V` throughout, the N7 figures `1.5852, 1.1223, 1.1878`, Theorem M reworded as sufficiency, Boundaries, Falsifiers, Review record; the contract `GOAL_block04.md` carries an addendum.
 - Final certificate: `TOTAL: PASS=22 FAIL=0`; runner sha256 `50b47ce6041d0b4bfdfe798de577965f749b7c118ff567f144d6b406b13d7652`; input fingerprint `7ac6dc97ce219f64436a2e5ad46b7da83ff1a09f828f230e176bc8a5e83ecec6`; exit 0; elapsed 52.9 s; unmutated stdout 4,068 characters; note 483 lines, vocab lint 0; 17 mutations, census re-run at this sha (table below).
+
+## Final census (17 mutations, one helper invocation each, 4 in parallel; expected/observed read from raw stdout at the final runner sha 50b47ce6…)
+
+| mutation | expected | observed | FAIL count | failing checks | exit | in-family |
+|---|---|---|---|---|---|---|
+| `block_law_factorization_broken` | B | B | 1 | B1 The | 1 | yes |
+| `coupling_marginals_broken` | B | B | 1 | B2 bot | 1 | yes |
+| `lower_bound_lemma_forged` | B | B | 1 | B3 The | 1 | yes |
+| `sequential_upper_bound_forged` | B | B | 1 | B5 the | 1 | yes |
+| `rho_literal_off` | C | C | 1 | C2 rho | 1 | yes |
+| `rho_prime_literal_off` | C | C | 1 | C4 rho | 1 | yes |
+| `ratio_bounded_by_one_claimed` | C | C | 1 | C3 rho | 1 | yes |
+| `block_sum_literal_off` | C | C | 1 | C5 The | 1 | yes |
+| `optimal_coupling_not_optimal` | B | B | 1 | B4 The | 1 | yes |
+| `region_upper_bound_forged` | C | C | 1 | C6 B_V | 1 | yes |
+| `c1_literal_off` | C | C | 1 | C1 c_1 | 1 | yes |
+| `crossing_cell_wrong` | D | D | 1 | D1 the | 1 | yes |
+| `ratio_beyond_one_denied` | D | D | 1 | D2 rho | 1 | yes |
+| `claim_two_site_decides` | E | E | 1 | E2 the | 1 | yes |
+| `claim_nonunique_at_silent` | E | E | 1 | E2 the | 1 | yes |
+| `claim_phase_transition` | E | E | 1 | E2 the | 1 | yes |
+| `claim_author_in_theorem` | E | E | 1 | E3 the | 1 | yes |
+in-family: 17/17
