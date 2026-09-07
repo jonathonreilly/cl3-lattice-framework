@@ -11,6 +11,17 @@ the only authorities, and a clean pre-flight grants a change no standing.
 Reviewers may cite a skipped pre-flight item as a finding when the defect it
 would have caught is present.
 
+## Validation placement
+
+Use the coherent-unit and validation-placement contract in `SKILL.md`.
+Run focused source, runner, premise, vocabulary, and diff checks for each unit.
+References below to a full pipeline, strict lint, graph/queue inspection, and
+changed-evidence validation refer to one shared pass on the exact integrated
+current-main candidate, not a separate full run per constituent or unit.
+Reuse an identical successful base/tree receipt only with the skill's complete
+input/tool/evidence provenance; record pending integration validation honestly.
+These checks confer no scientific verdict or independent reviewer PASS.
+
 ## 1. Sources, not memory
 
 Every sentence that characterizes a claim, a note, or a status is written
@@ -64,8 +75,8 @@ seed edges you must intend.
 
 ## 6. Graph topology
 
-Run the pipeline. If the citation-graph delta gate (stage 18 vs the tracked
-manifest, stage 1b) names nodes your change adds, removes, or rewires
+During the shared full validation pass, if the citation-graph delta gate
+(stage 18 vs the tracked manifest, stage 1b) names nodes your change adds, removes, or rewires
 (rewiring surfaces as a changed node; read your source diff and the manifest
 diff for the edge identities): confirm each is intended, then acknowledge by
 staging the refreshed `docs/audit/data/citation_graph_manifest.json`. Generated status surfaces and
@@ -89,21 +100,23 @@ mutation per check family (on a scratch copy or reverted immediately), and
 the check must fail. A check that asserts the formula it is supposed to test
 confirms nothing. Record the mutations you ran in the PR body.
 
-After the full pipeline refreshes changed-runner caches, run
+In that same combined pass, after the full pipeline refreshes changed-runner
+caches, run
 `python3 docs/audit/scripts/check_changed_audit_evidence.py --base
 origin/main --include-worktree`. This includes staged, unstaged, and untracked
-author changes before committing. Fix every named missing runner/input/current compute result or
-incomplete N5 certificate before requesting review. This is preflight only:
+author changes before committing. Fix every named missing runner/input/current
+compute result or incomplete N5 certificate before landing; report pending
+combined validation when requesting review after focused source checks. This is preflight only:
 the independent audit reruns the exact runner live and does not inherit a PR
 author's verdict.
 
 ## 9. Clean-state validation
 
 Identify generated residue separately from source and recovery artifacts;
-never blanket-clean a data directory. Then run: `python3 scripts/vocab_lint.py --fix` on changed files; full
-`bash docs/audit/scripts/run_pipeline.sh` exit 0; `python3
-docs/audit/scripts/audit_lint.py --strict` exits 0 with no errors
-(warnings and notices may remain). Then restore
+never blanket-clean a data directory. Run `python3 scripts/vocab_lint.py --fix`
+on changed files. Satisfy the full pipeline, strict lint, and changed-evidence
+checks in the shared combined pass above (warnings and notices may remain;
+errors block landing). Then restore
 generated outputs, stage explicit paths only, and confirm `git status` shows
 exactly your intended files.
 

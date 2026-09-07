@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_infinite_strip_row_sweep_formation_versus_static_law_2026_09_06.py
+runner_sha256: abbd76127f42d3d5e9b895c451d0f2c31899e0afeb949c7a8f812bb1f65f98c2
+input_fingerprint_sha256: 6266262bb6fe4f2f04c64df163b15b2cfc337cadbdd3af3c1cdaebfc5d831960
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 37.74
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+AUDIT_TIMEOUT_SEC: 900
+scope: the six-projector menu, the product rule at two exact triples; strips of widths 2, 3, 4 (sweep) and 2, 3 (static); exact arithmetic; no plane, no cubic-lattice uniqueness, no order selected
+mutation: none
+PASS: A1 the three declared audit inputs exist
+PASS: A2 axiom memo: both Admissibility sentences verbatim
+PASS: A3 axiom memo: the four Record sentences verbatim
+PASS: A4 parent note carries its claim id and the parent theorem sentence
+PASS: A5 this note carries its claim id
+PASS: B1 K = phi/Z_1 symmetric, rows and columns sum to one (symbolic), Z_1 = p+q+4r
+PASS: B2 E1: Z_2(a,b) = Z_1^2 (K^2)(a,b) symbolic for all 36 pairs
+PASS: B3 the uniform law is K-invariant (symbolic)
+PASS: B4 p_0 = (1/6) prod K equals the end-swept path formation law, W = 2, 3, both triples
+PASS: C1 cube face (sites 0-3): conditional = mu_Delta^{omega'} for all 6^4 complements, both triples
+PASS: C2 cube edge (sites 0,1): all 6^6 complements, both triples
+PASS: C3 cube site 0: all 6^7 complements, both triples
+PASS: C4 plaquette edge with exterior (P(e_x), P(-e_y)): all 36 complements, both triples
+PASS: C5 plaquette site with exterior: all 216 complements, both triples
+PASS: C6 finite range: cube edge 1296 adjacent-record classes (2 non-adjacent sites), site 216 classes (4), plaquette site (1)
+PASS: D9 restriction lemma: width-3 two-row joint on columns 0,1 equals the width-2 joint, both triples
+PASS: D1 E2 row kernel from the formula equals the kernel from the definition entrywise, W = 2, 3, both triples; rows sum to one
+PASS: D2 E3: p_0 P = p_0 exactly for W = 2, 3, both triples (all 6^W row states)
+PASS: D3 E4: every vertical and horizontal nearest-neighbor pair has law (1/6) K; the diagonal pair (alpha_0, beta_1) has law (1/6) K^2
+PASS: D4 direct finite-strip formation law (W=2: n=2,3; W=3: n=2) = p_0 P^(n-1) on every row marginal and row-pair joint
+PASS: D5 width 4: p_0 P = p_0 exactly on all 1296 row states (integer numerators), both triples
+PASS: D6 constant rule (2,2,2): K uniform, p_0 uniform on 6^W states, p_0 P = p_0, W = 2, 3
+PASS: D7 asymmetric-weight control: p_0 P != p_0 on 36/36 (W=2) and 216/216 (W=3) row states
+PASS: D8 cube sweep 0..7 at (3,1,2): joint law of the last site's three recorded neighbors is not proportional to Z_3 (210/216 triples off)
+PASS: E1 row orbits under G: 8 at W = 3, 3 at W = 2
+PASS: E2 T(g rho, g rho') = T(rho, rho') for all 48 g: exhaustive at W = 2, orbit representatives x all rows at W = 3
+PASS: E3 charpoly of Q at W = 3, (3,1,2) = lam^5 (lam^3 - 7312 lam^2 + 2578432 lam - 221134848)
+PASS: E4 Perron root: minimal polynomial degrees W3 3,8 W2 2,3; isolating widths < 10^-30
+PASS: E5 Perron vector of Q over Q(lam_1): Q x = lam_1 x on every row, all entries positive on the interval
+PASS: E6 lift: T rho_1 = lam_1 rho_1 and (A rho_1)^T T = lam_1 (A rho_1)^T exactly in Q(lam_1), 216 and 36 rows
+PASS: E7 s_inf: one irreducible factor of the resultant has exactly one root in the enclosure; width < 10^-30
+info W=3 (3, 1, 2): lam_1 = 6945.337824257111..; s_inf in [0.2561109872857786908612, 0.2561109872857786908613] (rounded outward), formation value 1/4
+info W=3 (3, 1, 2): finite n center row: n=3 0.2559429133, n=5 0.2561061627, n=7 0.2561108435, n=9 0.2561109828, n=11 0.2561109871, n=13 0.2561109872
+info W=3 (3, 1, 2): |lam_j| <= m = 225.413932 for all non-Perron roots (all roots real); |lam_2/lam_1| <= 0.0324554308
+info W=3 (5, 2, 4): lam_1 = 179107.428802830185..; s_inf in [0.2199151616870197815075, 0.2199151616870197815076] (rounded outward), formation value 5/23
+info W=3 (5, 2, 4): finite n center row: n=3 0.2198741514, n=5 0.2199144959, n=7 0.2199151505, n=9 0.2199151614, n=11 0.2199151616, n=13 0.2199151616
+info W=3 (5, 2, 4): |lam_j| <= m = 3376.351458 for all non-Perron roots (all roots real); |lam_2/lam_1| <= 0.0188509851
+info W=2 (3, 1, 2): s_inf in [0.255943088901618766, 0.255943088901618767]; |lam_2/lam_1| <= 0.02534244; min poly degree 2
+info W=2 (5, 2, 4): s_inf in [0.219874176124090031, 0.219874176124090032]; |lam_2/lam_1| <= 0.01491179; min poly degree 3
+PASS: E8 the enclosure of s_inf excludes the formation value p/(p+q+4r) at W = 2, 3, both triples
+PASS: E9 finite-n center-row values n = 3..13: distance to the enclosure strictly decreasing, final < 10^-6
+PASS: E10 second eigenvalue: all charpoly roots real; every non-Perron root in [-m, m] with rational m < lam_1 (Sturm)
+PASS: E11 boundary independence: end records P(e_y) on both end rows, n = 13 center-row value within 10^-6 of the enclosure, W = 2, 3, both triples
+PASS: F1 the note carries the four fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (hits: [])
+PASS: F3 runner source: no floating-point literal, conversion or evaluation call (0 hits)
+per_element: executed — every row state of the width-2, 3 and 4 strips, every configuration of the cube and plaquette sub-window checks, both triples, exact
+per_site: executed — the sub-window conditional at every site class (face, edge, site) of the cube and the plaquette; every column of every row of the strip pair laws
+per_mode: executed — the quotient transfer matrix's characteristic polynomial, its Perron root, eigenvector and second-eigenvalue bound, all exact (Sturm, resultant, Q(lam_1))
+per_block: executed — the row-to-row kernel block by block for widths 2, 3, 4; the finite-n center-row values for n = 3..13; the cube's three-neighbor witness
+lattice_wide: checked and not executed — strips of widths 2 and 3 only for the static law; the plane and the cubic lattice's infinite-volume law are named, not computed
+PASS: G1 the five N5 resolution lines are printed (each >= 40 characters)
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

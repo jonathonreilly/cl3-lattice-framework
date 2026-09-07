@@ -1,0 +1,44 @@
+D1 (t,1,1): real roots = 3; positive = [1.6097023277858491081]
+D1 (t,t,1): real roots = 3; positive = [1.4775394549213483031]
+D1 (1,1,t): real roots = 3; positive = [0.67680087774930621902]
+D3 (2,5,3): c1 = 1629375/6780002, c4 = 14250/59251, c4 > c1: True
+D2 ('1', '1', 't') t=36/25: 6c1 = 110854656/112222201 (0.987813953) <1
+D2 ('1', '1', 't') t=29/20: 6c1 = 12731058/12618923 (1.008886258) >=1
+D2 ('t', '1', '1') t=47/100: 6c1 = 31800/31009 (1.025508723) >=1
+D2 ('t', '1', '1') t=1/2: 6c1 = 12/13 (0.923076923) <1
+(t,1,1) crossing 1: crossing in (8/5,33/20); pattern eta=(0, 0, 0, 1, 1) pair=(0,1) ties=30; polynomial (numerator of 6TV-1) = 2*(t**7 - 2*t**5 + 5*t**4 - 8*t**3 - t**2 - 4); real roots total 3; in bracket: [1.6097023277858491081]
+   endpoint t=1.6097023277858484: 6c1-1 = -1.196e-15; argmax ((0, 0, 0, 1, 1), 0, 1) (ties 30)
+   endpoint t=1.6097023277858493: 6c1-1 = +3.925e-16; argmax ((0, 0, 0, 1, 1), 0, 1) (ties 30)
+   sweep (t,1,1) crossing 1 isolating on [1.609702327785848,1.609702327785849]: certified below 3750 (3750 subintervals), identical-to-displayed 30, uncertified distinct 0  [1s]
+   -> threshold crossing 1 = root of the displayed polynomial; competitor sweep on the isolating interval: PASS
+(t,1,1) crossing 2: crossing in (1/2,19/40); pattern eta=(0, 0, 1, 2, 3) pair=(4,5) ties=60; polynomial (numerator of 6TV-1) = -t**2 - 10*t + 5; real roots total 2; in bracket: [0.47722557505166113457]
+   endpoint t=0.4772255750516611: 6c1-1 = +1.390e-16; argmax ((0, 0, 1, 2, 3), 4, 5) (ties 60)
+   endpoint t=0.4772255750516620: 6c1-1 = -3.051e-15; argmax ((0, 0, 1, 2, 3), 4, 5) (ties 60)
+   sweep (t,1,1) crossing 2 isolating on [0.477225575051661,0.477225575051662]: certified below 3720 (3720 subintervals), identical-to-displayed 60, uncertified distinct 0  [1s]
+   -> threshold crossing 2 = root of the displayed polynomial; competitor sweep on the isolating interval: PASS
+   sweep (t,1,1) region on [0.477225575051662,1.609702327785848]: certified below 3780 (180780 subintervals), identical-to-displayed 0, uncertified distinct 0  [130s]
+(t,1,1): REGION on the line = (0.477225575052.., 1.609702327786..) ; certificate 6c1<1 on [0.477225575052,1.609702327786]: PASS  [134s]
+(t,t,1) crossing 1: crossing in (29/20,3/2); pattern eta=(0, 0, 0, 2, 2) pair=(0,2) ties=288; polynomial (numerator of 6TV-1) = 4*t**7 - 8*t**5 + 5*t**4 - 8*t**3 - t**2 - 1; real roots total 3; in bracket: [1.4775394549213483031]
+   endpoint t=1.4775394549213479: 6c1-1 = -8.033e-16; argmax ((0, 0, 0, 2, 2), 0, 2) (ties 288)
+   endpoint t=1.4775394549213483: 6c1-1 = +5.264e-17; argmax ((0, 0, 0, 2, 2), 0, 2) (ties 288)
+   sweep (t,t,1) crossing 1 isolating on [1.477539454921348,1.477539454921348]: certified below 3492 (3492 subintervals), identical-to-displayed 288, uncertified distinct 0  [1s]
+   -> threshold crossing 1 = root of the displayed polynomial; competitor sweep on the isolating interval: PASS
+(t,t,1) crossing 2: crossing in (7/10,27/40); pattern eta=(0, 0, 0, 0, 0) pair=(2,4) ties=72; polynomial (numerator of 6TV-1) = -t**5 - 7*t + 5; real roots total 1; in bracket: [0.69167061103656469381]
+   endpoint t=0.6916706110365644: 6c1-1 = +1.631e-15; argmax ((0, 0, 0, 0, 0), 2, 4) (ties 72)
+   endpoint t=0.6916706110365651: 6c1-1 = -1.824e-15; argmax ((0, 0, 0, 0, 0), 2, 4) (ties 72)
+   sweep (t,t,1) crossing 2 isolating on [0.691670611036564,0.691670611036565]: certified below 3708 (3708 subintervals), identical-to-displayed 72, uncertified distinct 0  [1s]
+   -> threshold crossing 2 = root of the displayed polynomial; competitor sweep on the isolating interval: PASS
+   sweep (t,t,1) region on [0.691670611036565,1.477539454921348]: certified below 3780 (390006 subintervals), identical-to-displayed 0, uncertified distinct 0  [393s]
+(t,t,1): REGION on the line = (0.691670611037.., 1.477539454921..) ; certificate 6c1<1 on [0.691670611037,1.477539454921]: PASS  [397s]
+(1,1,t) crossing 1: crossing in (7/10,27/40); pattern eta=(0, 0, 0, 2, 2) pair=(0,2) ties=288; polynomial (numerator of 6TV-1) = -t**7 - t**5 - 8*t**4 + 5*t**3 - 8*t**2 + 4; real roots total 3; in bracket: [0.67680087774930621902]
+   endpoint t=0.6768008777493062: 6c1-1 = +5.264e-17; argmax ((0, 0, 0, 2, 2), 0, 2) (ties 288)
+   endpoint t=0.6768008777493064: 6c1-1 = -8.033e-16; argmax ((0, 0, 0, 2, 2), 0, 2) (ties 288)
+   sweep (1,1,t) crossing 1 isolating on [0.676800877749306,0.676800877749306]: certified below 3492 (3492 subintervals), identical-to-displayed 288, uncertified distinct 0  [2s]
+   -> threshold crossing 1 = root of the displayed polynomial; competitor sweep on the isolating interval: PASS
+(1,1,t) crossing 2: crossing in (7/5,29/20); pattern eta=(0, 0, 0, 0, 0) pair=(2,4) ties=72; polynomial (numerator of 6TV-1) = 5*t**5 - 7*t**4 - 1; real roots total 1; in bracket: [1.4457748877046558277]
+   endpoint t=1.4457748877046557: 6c1-1 = -3.855e-16; argmax ((0, 0, 0, 0, 0), 2, 4) (ties 72)
+   endpoint t=1.4457748877046566: 6c1-1 = +1.631e-15; argmax ((0, 0, 0, 0, 0), 2, 4) (ties 72)
+   sweep (1,1,t) crossing 2 isolating on [1.445774887704656,1.445774887704657]: certified below 3708 (3708 subintervals), identical-to-displayed 72, uncertified distinct 0  [2s]
+   -> threshold crossing 2 = root of the displayed polynomial; competitor sweep on the isolating interval: PASS
+   sweep (1,1,t) region on [0.676800877749306,1.445774887704656]: certified below 3780 (651180 subintervals), identical-to-displayed 0, uncertified distinct 0  [987s]
+(1,1,t): REGION on the line = (0.676800877749.., 1.445774887705..) ; certificate 6c1<1 on [0.676800877749,1.445774887705]: PASS  [991s]

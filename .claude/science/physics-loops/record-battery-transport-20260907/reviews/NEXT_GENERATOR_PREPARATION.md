@@ -8,7 +8,9 @@ No fatal algebraic obstruction found in the shared-apparatus construction when f
 
 ## Complete jump definition
 
-Let s label a legal history, head v, mask R and compatible Record code. Put H_s = H_R + Delta |R| I. For an incident live edge e=(v,w), let K_{s,e,z}: H_s -> H_{s'} be the native branch map, including head move, fuel lowering and history append. Require sum_z K_z^* K_z = I_s, preserving total N and old Records. Nonbridges have K_z=J_z/sqrt(2), J_z^*J_z=I. Bridges instead have K_z=(I+z s_C parity_C)/2 in the appropriate input/output dictionaries; their sum is complete without inserting another 1/sqrt(2).
+Let s label a legal history, head v, recorded/deleted mask R and compatible Record code, with L initial edges. Put H_s = H_R + Delta (L-|R|) I, counting the live fuel units. For an incident live edge e=(v,w), let K_{s,e,z}: H_s -> H_{s'} be the native branch map, including head move, fuel lowering and history append. Require sum_z K_z^* K_z = I_s, preserving total N and old Records. Nonbridges have K_z=J_z/sqrt(2), J_z^*J_z=I. Bridges instead have K_z=(I+z s_C parity_C)/2 in the appropriate input/output dictionaries; their sum is complete without inserting another 1/sqrt(2).
+
+Correction from the 2026-09-07 backlog review: the initial preparation memo wrote `Delta |R|` in this equation while using a positive `Delta` battery shift below. That combination would increase total energy by `2 Delta` per event. Counting live fuel as `L-|R|` restores the intended fuel lowering and agrees with AUTONOMOUS_SHARED_APPARATUS_ROUTE.md. The three current source theorems and their runners do not use this future-route fuel term.
 
 On a full-line battery define A_z=sum_{a,b} Pi_out(b) K_z Pi_in(a) tensor T_{a-b}, using FULL system energies including fuel. Equivalently, if a,b name matter energies, the shift is a-b+Delta. Do not include Delta twice. With T_u|E>=|E+u>, (H_out+E_B)A_z=A_z(H_in+E_B). Fourier fibers are exp(-i tau H_out)K_z exp(i tau H_in), hence sum_z A_z^*A_z=I_s even for bridge instruments. This is the exact justification of rate gamma per legal edge.
 

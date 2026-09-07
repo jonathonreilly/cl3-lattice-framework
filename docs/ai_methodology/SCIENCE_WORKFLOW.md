@@ -55,6 +55,25 @@ launch them. The old per-block delivery mode remains opt-in.
 | Repair | Source fix or justified re-audit request | Exact defect addressed; affected row is discoverably requeueable | Repair cannot prewrite the verdict it requests |
 | Synthesize | Candidate assembly or account of established results | Candidate: explicit provisional dependency graph and gaps; established result: audited dependency closure | A summary cannot promote its sources |
 
+For authorized backlog integration, a coherent final argument may be reviewed
+as one frozen unit across cumulative/dependent PRs. Preserve every constituent's
+source/head provenance and explicit claim/content disposition; every applicable
+science lens and the original reviewer's final-source confirmation still apply.
+Perform focused source/runner/premise checks per unit, then one full mechanical
+pipeline, strict lint, and changed-evidence validation on the exact integrated
+current-main candidate. Reuse identical successful base/tree validation only
+with matching input/tool/scope receipts. Integrate useful ready batches without
+a fixed collection wait. The detailed contract and fail-closed landing guards
+live in `skills/review-loop/SKILL.md`; grouping confers no blanket approval.
+
+Active campaign direction (2026-09-07): formal audit waits until a solid TOE
+candidate is ready. Continue independent scientific checks and reviewed source
+integration; mechanical validation neither invokes an auditor nor grants status.
+Drafts stay excluded by default. Explicit draft-triage authorization permits
+review and close/ready decisions after exact-head verification; still-draft
+landing is forbidden, and marking ready does not grant PASS. Owner-reserved
+content remains excluded until its reservation is explicitly lifted.
+
 The mechanical audit pipeline prepares and propagates data. A pipeline PASS,
 runner PASS, reviewer PASS, and scientific audit verdict answer different
 questions. None substitutes for the others. Audit must be free to disagree
