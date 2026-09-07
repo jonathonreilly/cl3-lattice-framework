@@ -1,2 +1,3 @@
-# PR backlog
-One coherent block38 source with two helpers awaits root canonical-port review and isolated integration on the planned linear stack. No PR/worktree created by this lane.
+# Review publication
+
+Draft PR8028 published and verified OPEN/MERGEABLE/CLEAN, stacked on8027. GitHub process_contracts passed. No publication backlog remains.
