@@ -68,3 +68,13 @@ remain source proposals; formal audit is deferred. Current open targets:
    weights has finite exact sums and rational transport problems; their cost
    can grow rapidly, but no uncomputability result was proved. Only the
    tested two-site Hamming criterion is closed at the three declared triples.
+
+## Refresh at block 05 review handoff (2026-09-07)
+
+Block 05 opened for review (PR #8003): the monotone-order class has one law with rows and columns as path chains and the corner law; right/down turning staircases in site values fail the first-order Markov property under the declared positive nonconstant orbit rule. Opposite corner classes give identical finite laws; distinctness and snake failures are scoped witnesses. Orders outside these classes are not characterized. Ranked next:
+
+1. **Static strip widths 4–5 toward the plane** (unchanged from the block-02 refresh): the width-3 algebraic enclosure of the static pair statistic is the template; the trend in `W` against the width-independent formation value `p/(p+q+4r)`; one block.
+2. **The self-made Hermitian Gaussian instance** (re-scoped by `PROBES_gravity_consumer_20260907.md`): a separate supplied Hermitian positive-definite Gaussian comparison with its precision, conditioning and readout declared; no formation/static identity with block 01's Theorem B2 and no gravity-weight identification. The existing one-edge calculation supplies only its stated Gaussian example; any plaquette extension needs its own derivation.
+3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+4. **The silent triples by a non-criterion route** (unchanged; heavy).
+5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.

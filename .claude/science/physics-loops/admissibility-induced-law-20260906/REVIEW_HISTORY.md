@@ -149,3 +149,53 @@ their declared note inputs changed. Original cache bytes and all historical
 receipts remain recoverable at the original head above; exact originals are
 also preserved in that handoff. A fresh runner PASS addresses only the
 assertions actually executed, not the whole prose proof or scientific status.
+
+## block 05 — V1-V5 (primary)
+- V1: agrees — block 02's refresh, item 2, names the objects (rows and columns as path chains; the column statement from the corner-pair condition; the monotone-order class); no `verdict_rationale` names them.
+- V2: new — P1's class statement (one law for every linear extension, for every rule), P2–P5 as proved theorems with exact executions on `2×3`, `2×4`, `3×3`, `3×4`, P6 as a theorem for every non-constant positive triple (from P5 by a Cauchy–Schwarz step; executed on `{1..6}^3` and on the six staircases of `3×3`), P7 as exact witnesses with the snake convention declared and the `3×3`/`4×3` executions; nothing landed states any of them for this rule.
+- V3: not an audit-lane object.
+- V4: non-trivial — the column theorem and the corner law are the complete finite-dimensional description of `μ_P`'s row/column structure; the staircase theorem fixes where the Markov structure stops.
+- V5: extends block 02's Theorem E (rows) to columns and blocks and to the whole monotone class; not a variant.
+Could-nots: `3×4` at `(3,1,2)` only; the other two corner classes by reflection only; P6 for first-order chains in the site values only; no characterization of non-monotone orders with chain columns; refuting checker pending. Contract lens A1–A8 folded (listed in the note's Review record).
+
+## block 05 — contract refuter lens (Opus 5, before the build) and the supervisor fold (2026-09-07)
+Lens verdict: build with changes. P1–P6 reproduced exactly on independent code at three triples; P7(b) refuted as written — the supervisor's snake control had rows 0 and 1 left-to-right (not the snake), so the column indices were wrong; for the snake proper column 0 is the chain and columns 1, 2 fail, and on 4×3 no column is a chain, so the "turning column" explanation was withdrawn. Gaps: P5's proof needed the n-row reduction (stationarity above, row-stochasticity below, row-Markov); P4's infinite-strip sentence transposed an infinite object (replaced by the projective-limit route on finite rectangles); "diagonal sweep" was undefined (the `i + j` sweep is a linear extension, the `i − j` sweep is not); the literature label sat in the branch and control filenames (renamed). Strengthenings: P1 needs no rule form; P3 needs only the product form; P6 is a theorem (the minimal staircase's conditional 227/858 vs 1/4). All folded as the contract's addendum A1–A8 and verified by `specs/supervisor_control_block05_after_lens.py` before the primary launched. Fable primary (27 min): 38 checks, 23 mutations in family, note 578 lines; it strengthened P6 to every non-constant positive triple by a Cauchy–Schwarz step and executed it on `{1..6}^3`. Supervisor fold: stdout trimmed under the cap, one mutation renamed, cache re-pinned at sha `5104a93e…`; the P6 algebra re-derived by hand (the orbit equalities `p + q = 2r` and `q(q − p) + 4r(r − p) = 0` force `p = q = r`).
+
+## block 05 — refuting checker (Opus 5, disjoint machinery) and the second fold (2026-09-07)
+Verdict FIX FIRST on one sentence, nothing refuted in the theorems: the primary's P7(b) carried a mechanism sentence ("each site below the first has the site above as its sole recorded neighbor") that the contract's addendum A1 had forbidden and that is false — site `(1, 0)` of the `3×3` snake records `(0, 0)` and `(1, 1)`; the supervisor's line-by-line review had missed it. Two wording items: the staircase definition (top-left start) narrower than P6's scope (now: staircases start at any site; the corner law holds at every block position); P4's "of finite length" on infinite objects (now: finite initial segments). Everything else confirmed on the checker's own direct summations — all four `2×2` block positions of `3×3` by full `6^9 = 10,077,696` summation; the transpose on `2×4` by direct summation over `1,679,616` configurations; every staircase, snake and mirror literal verbatim; `P(c | c, c) > K(c → c)` on the 210 non-constant integer triples and 400 random rational ones; the P5 partial sums and the P6 Cauchy–Schwarz step re-derived character for character; 12 mutations in family; the cache sha reproduced (the input fingerprint's scheme lives in the harness; CANNOT-REACH, as at every block). Folded: the sentence deleted, the two wordings fixed, the Review record updated; cache re-pinned (runner sha unchanged `5104a93e…`, fingerprint `515e1b01…`); the census stands at the unchanged runner sha. Misses by the cheaper tier: none. Lesson recorded: a forbidden "mechanism" sentence must be given to the runner as a check (a forbidden fragment), not left to the reviewers' eyes.
+
+## block 05 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12), 2026-09-07
+1 self-containment: PASS — declared inputs: this note, the axioms memo (main), block 01's and block 02's notes (the stacked base branches' reviewed deltas); nothing pinned from a rejected branch. 2 cache/execution: PASS — cache by `execute_and_write_cache` (timeout 900 declared), re-pinned after each fold; four declared inputs; own source for the float scan. 3 claim-scope honesty: PASS — scope, title, headline, docstring, checks, status fields and fences consistent; no order selected as physical; nothing beyond the witnesses for non-monotone orders; the literature surname only in Prior art and Imports (F3, with the needle assembled from character codes); forbidden phrases absent (F2). 4 N-gate: PASS — P6 carries N1–N8; P7 as witnesses; N5 lines match the runner. 5 proof obligations: PASS — target in one sentence; obligation graph; P1–P6 proved with the lens's and checker's corrections; the strongest missing lemma named (orders outside the class with chain columns). 6 runner validity: PASS — 23 mutations each in its family (census 23/23 at the final runner sha `5104a93e…`, every exit 1); independent math: four supervisor controls, the contract lens, the refuting checker's direct summations. 7 packet completeness: PASS — one runner, no helpers. 8 links/manifest: PASS — links to the axioms and both parents (tracked in the stacked deltas); manifest regenerated on the final tree (+1 node: 4765 nodes, 11868 edges), staged and committed. 9 note structure: PASS — machine-status block with the standard field set; imports; review record with the lens, the primary, the checker and both folds. 10 propose/ratify: PASS — no audit field written; generated outputs restored. 11 sourced facts: PASS — every count recomputed at this HEAD. 12 pre-review gates: PASS — vocab lint 0; pipeline exit 0 on the final tree (`graph_delta=acknowledged`); audit_lint strict OK; changed-evidence check `checked=5 failures=0`; explicit-path staging; `git diff --check` clean; `py_compile` ok; the diff read cold.
+
+## block 05 — original-source review corrigendum, 2026-09-07
+
+Original source `f911b0e73d97b40710477f8985e14c3bd94420cf` received FIX FIRST
+on five P2 groups. The original GOAL, primary spec, supervisor controls,
+checker findings, RESULTS and earlier history entries remain historical
+captures at their original hashes; their four-law statement, broad turning-
+path wording, old counts and historical gate receipts do not describe the
+corrected source. The current-main block-01–04 corrections remain intact.
+
+- F1: four order classes yield two opposite-corner equality pairs on every
+  finite rectangle by the edge/plaquette proof; exactly two distinct laws is
+  asserted only at the two executed nonconstant `2×3` witnesses. The runner
+  compares all four actual formation dictionaries and adds an actual
+  bottom-origin reversal mutation.
+- F2: P6 concerns right/down paths, first-order chains in site values and
+  the declared positive nonconstant orbit product-rule law. The turning
+  non-monotone path `a → c → b` remains a chain. Snake failures are finite
+  witnesses, preserving the surviving `3×3` column.
+- F3: P2/P4/P5 retain symmetry, positivity and a common row sum. P3's
+  arbitrary-positive extension uses per-parent one-neighbor normalization.
+- F4: class membership suffices for rows and columns; row chains alone do
+  not suffice for column chains. No outside-class characterization is made.
+- F5: live block-05 entries say opened for review. The Gaussian comparison
+  remains separately supplied, without the withdrawn B2 identity or any
+  gravity-weight identification. Only the new appendices were applied to
+  corrected current main; no raw parent source was restored.
+
+Author validation: the corrected runner/cache and new corner mutation are
+executed against the four declared inputs on current main. The original
+23-mutation census and historical pipeline receipts are not claimed as
+fresh checks. Original-reviewer confirmation is pending; no audit status is
+applied, and only the coordinator may perform authorized integration.
