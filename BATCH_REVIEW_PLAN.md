@@ -110,3 +110,21 @@ Record reviewer time, distinct source reviewed, runner time, full pipeline
 count, integration retries and scientific findings per unit. Compare the first
 small group with former per-PR execution. A reduction in mechanical runs alone
 does not establish a whole-campaign speedup.
+
+## Coordinator efficiency clarification — 2026-09-07
+
+The current-main review contract already makes the coordinator an integration
+function, while independent reviewers inspect the complete frozen source unit.
+The shared `AGENTS.md` now makes that division explicit: preserve author cold
+diff reading, full independent source/lens coverage and same-session correction
+confirmation; verify complete original/final claim and content maps and actual
+input closure; read every correction and additional integration change; check
+current-main science preservation and all semantic interactions. Verified,
+unchanged source bodies need no second identical coordinator reading.
+
+A missing helper pin, omitted inherited/deleted content, a changed premise, a
+moved head or new interaction holds the affected conclusions and dependents.
+The one combined exact-base/tree mechanical gate remains mandatory. This is an
+interpretation of the existing landed contract, independently challenged by
+two Astra xhigh agents; it does not replace full review with summaries or
+mechanical PASS tokens and introduces no new scientific status.

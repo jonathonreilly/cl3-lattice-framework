@@ -64,8 +64,34 @@ verification, and external-action permissions. An analysis dispatch is read-only
 except for explicitly assigned output paths and has no implicit commit, push,
 or network authorization. Explicitly authorized implementation workers may
 edit their assigned files. Independent reviewers receive raw artifacts and a
-neutral task, not the author's desired conclusion. The coordinator reads the
-full relevant diff and resolves evidenced findings before landing.
+neutral task, not the author's desired conclusion. Independent reviewers read the complete final source of each frozen unit,
+with explicit path, claim, premise, transitive input and applicable-lens
+coverage, and confirm corrections in the same reviewer session. Only their
+source-bound final PASS supplies reusable review coverage. Authors still read
+their complete cold diff before requesting review.
+
+Before landing, the coordinator independently verifies the complete original
+constituent and current-main path/claim disposition map, including deleted and
+inherited content, actual transitive helper/premise closure and source hashes.
+Hashes alone do not prove that inventory complete. The coordinator reads all
+author correction diffs, all finding dispositions and proof-critical context,
+and every additional integration change relative to the frozen reviewed
+sources. It checks the effective current-main delta for science loss and
+cross-unit semantic interactions, including interactions across disjoint files.
+An unchanged source body with verified complete independent review coverage
+need not receive a second identical line-by-line read by the coordinator.
+A summary, PASS label, ancestry relation, cache-freshness result or file count
+alone is not coverage.
+
+The coordinator directly inspects additional source whenever coverage,
+provenance, a discrepancy or an interaction is uncertain. New source/input or
+premise bytes, a moved PR head even with identical bytes, new semantic
+interactions, incomplete provenance or missing same-session confirmation hold
+the affected conclusions and dependents for the original reviewer. Reopen the
+affected closure, not automatically every unrelated claim. The exact-current-
+main science-loss check and combined base/tree validation gate remain
+mandatory. This clarifies the current-main separation of review and integration;
+it does not grant an automated coverage, receipt or scientific verdict.
 
 Science authors do not apply audit verdicts. Review may regenerate audit data
 for validation but does not grant status. Only the independent audit application
