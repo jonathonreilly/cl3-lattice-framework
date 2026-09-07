@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py
+runner_sha256: a710a92baaaa7492cfeb7eaaa8db1e88cf902b6abc3531d4d9031a90310e3210
+input_fingerprint_sha256: 405e65592ecf0d02766ca25a7e57979d539f06caea093510a1b07e61fc6a0c18
+timeout_sec: 480
+exit_code: 0
+elapsed_sec: 375.64
+status: ok
+----- stdout -----
+BOUND_INPUTS_SHA256 {"docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753", "docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md": "0d40064ad01d7754e65b787c2697c248b206624844a7098d83ebf7834cbc4b04", "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_PROJECTOR_MAXWELL_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md": "c1cc8df7ae97504527fd26195e65670ad6ccf4e01982d0665040662b22ba0d7e", "docs/SPIN_HALF_CUBIC_ICE_POSITIVE_TOPOLOGICAL_ELECTRIC_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md": "38aeb623dcec523202326e4b4e2c30cd05a2a612d8bcd81216599a038b91fcaa", "docs/U1_ROLE_ENCODED_DOUBLED_INCIDENCE_NEAREST_NEIGHBOR_GAUGE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md": "b8a6f37dff7ab8c7263ff8b8cd27faf549b268c3ac79a6a4ba26d56e38b8fe77", "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py": "d10e0a59dedf58df6a23b9a08162a7b8bff58f55fd00ecdfb68e5ad7e5eda5d8", "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py": "405acaa8d0e7cd0e2621fc1bc188dce61fd42ae60bb9d44b58bce65e37175300"}
+[PASS] 01 the L=2,4,6,8,10 projector geometries contain exactly 3L^3 four-link square moves
+[PASS] 02 opposite noncontractible line pairs provide three nonlocal zero-flux initialization controls
+[PASS] 03 the exact L=2 eigenvectors satisfy the constant-trial mixed-estimator identity in both flux sectors
+[PASS] 04 the stochastic projector reproduces four exact L=2 ground energies at V=0.95 and V=0.90
+[PASS] 05 sampled/final flippability checks and all final walkers satisfy Gauss charge and assigned flux
+[PASS] 06 all populations retain effective weight and final-state diversity above the declared collapse controls
+[PASS] 07 every L=4,6,8 finite-protocol flux coefficient exceeds six nominal shared-reference errors
+[PASS] 08 Phi^2/L beats a linear-in-|Phi| curve separately on every full flux ladder
+[PASS] 09 the shrinking-density L=10 endpoint coefficients exceed six nominal errors
+[PASS] 10 the compound L=8 population/start/warmup/burn/sample/seed control agrees within fifteen percent
+[PASS] 11 the joint finite-protocol data prefer the coarse-field Phi^2/L comparison over four named controls
+[PASS] 12 the declared finite volume-spread and historical first-order central-coefficient comparisons pass
+EXACT V=0.95 Phi=0 E0=-0.402736506 projector=-0.402722211+/-0.000144974
+EXACT V=0.95 Phi=1 E0=-0.328353309 projector=-0.328255401+/-0.000097605
+EXACT V=0.90 Phi=0 E0=-0.810822412 projector=-0.810995305+/-0.000196212
+EXACT V=0.90 Phi=1 E0=-0.664101443 projector=-0.663724496+/-0.000124465
+CURVE V=0.95 L=4 U=0.162286+/-0.003139 rss_quad=0.00000771 rss_linear=0.00043636
+CURVE V=0.95 L=6 U=0.158899+/-0.004577 rss_quad=0.00000194 rss_linear=0.00096899
+CURVE V=0.95 L=8 U=0.158073+/-0.005504 rss_quad=0.00005270 rss_linear=0.00212763
+CURVE V=0.90 L=4 U=0.322930+/-0.006160 rss_quad=0.00000860 rss_linear=0.00152119
+CURVE V=0.90 L=6 U=0.316983+/-0.010710 rss_quad=0.00000933 rss_linear=0.00416532
+CURVE V=0.90 L=8 U=0.327044+/-0.009823 rss_quad=0.00000346 rss_linear=0.00888100
+COMPOUND_PROTOCOL_CONTROL V=0.95 U_256=0.156561 U_512=0.161307+/-0.003327
+COMPOUND_PROTOCOL_CONTROL V=0.90 U_256=0.327833 U_512=0.321400+/-0.006087
+DATA V=0.95 U_L=4:0.162286,6:0.158899,8:0.161307,10:0.168024 U/|deltaV|=3.252584 global_rss=0.00015126
+MODEL_CONTROL V=0.95 rss=quadratic_over_length:0.00015126,linear:0.00478511,linear_over_length:0.01506905,quadratic:0.00423061,step:0.04085784
+DATA V=0.90 U_L=4:0.322930,6:0.316983,8:0.321400,10:0.323517 U/|deltaV|=3.212072 global_rss=0.00006440
+MODEL_CONTROL V=0.90 rss=quadratic_over_length:0.00006440,linear:0.01723317,linear_over_length:0.05650828,quadratic:0.01890629,step:0.15691555
+CERTIFICATE: exact_stoquastic_green_function=True constant_trial_mixed_estimator=True finite_population=True finite_imaginary_time=True thermodynamic_limit=False real_time_spectrum=False
+RESOLUTION: per_element=geometry and sampled/final count checks, not every flip instrumented; per_site=all final walkers checked for Gauss; per_mode=finite-protocol electric-flux fit; per_block=exact L2 plus finite projectors; lattice_wide=selected-start finite-protocol flux coefficient; convergence and physical identification unproved
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+
