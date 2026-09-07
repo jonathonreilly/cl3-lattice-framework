@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
 Verified source/status snapshot: 2026-09-07, main
-`60b98160bdab0a4aed2069da47bb8e1ed674c29d`. This is a planning map, not
+`b0f7089ea5dd6e26e0d58a8a36a77d36c50a8e7a`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -16,8 +16,8 @@ finite additivity and I(empty)=0. Older proofs requiring those clauses need
 an explicit supplier. README paraphrases and old skills are not substitutes.
 
 The tracked ledger contains 4,475 rows: 4,105 non-meta science rows and 370
-meta rows. The latest forty-four source notes have not been added to the applied
-ledger: mechanical validation generated forty-four unaudited rows locally, then
+meta rows. The latest thirty-eight source notes have not been added to the applied
+ledger: mechanical validation generated thirty-eight unaudited rows locally, then
 stripped those generated files. No audit status was applied. Every tracked science row has audit_status and effective_status
 `unaudited`. Counts were computed from every tracked shard; see
 [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
@@ -29,18 +29,17 @@ planning refresh. Candidate dependencies retain their open conditions.
 
 ## Current open-work interfaces
 
-The complete [open-PR inventory](OPEN_PR_INVENTORY.json) pins the current open heads and
-changed-file sets; counts and assignments are in [BACKLOG_STATUS.md](BACKLOG_STATUS.md). These entries locate evidence; they do not assert that
+The complete [open-PR inventory](OPEN_PR_INVENTORY.json) pins 151 current open heads and
+changed-file sets. These entries locate evidence; they do not assert that
 all source has been reviewed. The campaign record tracks actual inspection.
 
 | Interface | Open evidence to inspect | Exact next question |
 |---|---|---|
 | Local admissibility and formation | #7998/#7999/#8000/#8002/#8003 corrected source now on main; campaign formation checkpoint remains unlanded | A supplied iid-priority Z3 formation process and static/formation discriminator are now independently checked. Which law/mechanism physics supplies remains open. |
 | Record matter and energy apparatus | #7983/#7996/#8001/#8004/#8005/#8006 reviewed source now on main; campaign finite-patch note remains a checkpoint | Finite-patch approximation now has explicit conditional channel, boundary-energy and cap bounds. Supply spatial battery communication, preparation and autonomous occurrence. |
-| Finite-spin electromagnetic response | #7966 preserves the consolidated field chain; standalone source/receipt and selected finite-projector corrections are independently reviewed and landed | Independent checks confirm a source mismatch. Repair the uniform-K/UK interpretation, define the flux-sector target, then resolve estimator and infrared control. |
+| Finite-spin electromagnetic response | #7966 preserves the consolidated field chain; standalone source/receipt correction is independently reviewed and landed | Independent checks confirm a source mismatch. Repair the uniform-K/UK interpretation, define the flux-sector target, then resolve estimator and infrared control. |
 | Conditional Maxwell dynamics | #7976/#7980/#7984 and their source chain | Which dynamics-class, payload, support and conservation clauses are derived, and which supplied? |
 | Gravity and source/action | #7981/#7988/#7992/#7993/#7994/#7995/#7997 and predecessors | Connect the conditional finite-carrier kernel to a sourced physical field and action; larger benches alone do not establish that identification. |
-| Native transfer and spatial gauge models | #8007/#8008 corrected mathematical source is on main; #8009 and successors are under review | Keep exact discrete-saddle and continuum-limit coefficients distinct. Supply the physical action, coupling identification and volume/continuum bridges before inferring a physical mass gap. |
 | Handedness and matter content | #7989/#7991 and related matter constructions | Distinguish parity-odd rule texture, motion direction, a chiral mode and selected physical matter representation. |
 | Readout weights | #7990 and predecessors, with main prior-art search | Separate mathematical characterization from supply of the menu, independence, normalization and formation semantics. |
 
@@ -69,8 +68,25 @@ above have not thereby closed or disappeared.
 - Changed source or PR heads require affected-scope reinspection, not a
   mandatory reread of unrelated unchanged material.
 
-Reviewed finite Record clocks and batteries retain supplied preparation/control.
-Finite ice and projector results retain convergence, source matching and physical
-interpretation obligations. The historical receipt diagnostic preserves failed
-evidence and unresolved uncertainty. Full scopes and final reports are indexed
-by BACKLOG_STATUS.md; previous per-wave narratives remain archived in history.
+The eleven-note conditional light-germ/local-dynamics unit is now source-reviewed
+and landed at `16c2d6860e168ec8e5e8f66296410265e5d7226d`. Its original constituent sources came
+from eleven already-consolidated PRs; #7937 is consolidated into open #7966 for its remaining source obligations.
+The selected action, physical electromagnetic interpretation, matter/gauge speed
+bridge, microscopic readout and time selection remain open. Nine source
+landing batches passed combined validation with zero integration retries.
+
+The corrected monotone formation result is on current main: opposite corners
+share a law under its stated finite symmetric common-row-sum premises. Exactly
+two distinct laws is established for the two executed finite cases, not every
+nonconstant rule. Light-backreaction charged-sign, live-current coverage and rotor-limit corrections are confirmed and landed. Eta review remains held for premise epoch reconciliation, with no full source PASS.
+
+The four newly landed autonomous Record notes establish conditional head/fuel/battery, occupation feedback, present-state generator and finite local-quench/ladder results. Complete modeled energy conservation and approximation bounds use their stated supplied apparatus and safe domains; spatial battery communication, bath/control supply, preparation and physical law selection remain open. Light-backreaction corrections are confirmed and landed; the ice trial-state/physical-stiffness distinction is corrected and independently confirmed on main.
+
+The six newly landed source/current/work/backreaction notes preserve exact finite identities under supplied laws. Charged modular sectors include explicit background labels; fixed-g clock refinement compares with a cosine rotor and retains its anharmonic floor. Finite quantum-link algebra does not itself supply the separate scalar phase Hessian or a many-link photon phase. Those physical joins remain open.
+
+The latest finite collision/control/isometry results preserve exact conditional energy and coherent sign/refusal statements. Physical control, clock and preparation supply remain open. The two ice notes establish finite component/trial mathematics and limited finite-protocol fits, with no physical positive U/K or phase certificate. Field receipt diagnostics and source interpretation must precede further expensive comparison runs.
+
+The finite Record clock and chain-support results and field source/receipt unit
+are also on main. A supplied clock construction does not derive its preparation.
+The historical field diagnostic preserves failed producer evidence and unresolved
+uncertainty; its passing arithmetic is no positive physical phase certificate.

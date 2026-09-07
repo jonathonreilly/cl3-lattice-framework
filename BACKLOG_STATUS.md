@@ -1,24 +1,24 @@
 # Backlog review and landing — current handoff
 
-Updated 2026-09-07T19:12:15.774567+00:00. Main is `b0f7089ea5dd6e26e0d58a8a36a77d36c50a8e7a`.
-Owner authority covers backlog review, narrow source repairs, direct main landing
-and draft ready-or-close triage. Formal audit waits until a solid TOE. No review
-or planning receipt applies an audit grade.
+Updated 2026-09-07T20:03:23.761576+00:00. Main is `60b98160bdab0a4aed2069da47bb8e1ed674c29d`.
+This page owns current backlog counts and assignments. Older snapshots are in
+`history/`; other planning documents link here instead of repeating current counts.
+The owner authorized review, source repair, direct main landing and draft triage.
+Formal audit waits until a solid TOE.
 
 ## Queue and landed work
 
-**151 open PRs, zero drafts at this capture.** The 254 starting PRs plus 14
-arrivals minus 117 closures reconcile exactly. Closures comprise 113 original PRs
-and four new successors: 21 draft closures, 11 closures after source landing and 85
-further consolidations (64 exact-source, 21 with reviewed arithmetic/history
-differences). Twenty drafts became ready; all 37 original drafts and four later
-draft arrivals have a ready-or-close disposition.
+**152 open PRs, 2 drafts awaiting ready-or-close triage.** The original 254 plus 20 arrivals
+minus 122 closures reconcile exactly. The closures comprise 116 original PRs and
+six arrivals: 21 draft closures, 13 closures after source landing and 88 further
+consolidations (64 exact-source and 24 with explicitly reviewed content or premise
+dispositions). 24 drafts became ready. Readiness and consolidation do not
+constitute scientific acceptance.
 
-Nine science batches have landed, containing 38 new source notes. Each used one
-combined mechanical validation; there have been zero gate retries. Complete
-independent source review, same-reviewer corrections, actual input/premise closure
-and current-main preservation remain required. Duplicate closure alone is not
-science landing or acceptance; ready status is not scientific PASS.
+Ten science batches have landed 44 new source notes. Each used one combined
+mechanical validation; zero gate retries. Full independent source/proof coverage,
+same-reviewer correction confirmation, actual input closure and preservation of
+current main remain required. The applied ledger is unchanged: no audit grade landed.
 
 | Landed unit | Main commit | Evidence |
 | --- | --- | --- |
@@ -31,69 +31,60 @@ science landing or acceptance; ready status is not scientific PASS.
 | Two finite ice and three finite Record collision/control results | `94e90cbf928cb35fa1b50e894cd897c94b73077f` | `backlog_evidence/wave7` |
 | Finite Record clock and chain-support obstruction | `b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92` | `backlog_evidence/wave8` |
 | Cartesian field source and historical-receipt diagnostic | `b0f7089ea5dd6e26e0d58a8a36a77d36c50a8e7a` | `backlog_evidence/wave9` |
+| Five native transfer corrections and finite projector evidence | `60b98160bdab0a4aed2069da47bb8e1ed674c29d` | `backlog_evidence/wave10` |
 
-Wave8 lands 52 reviewed Record paths plus manifest, with all 53 hashes verified
-on remote main before closing #8006. Complete chain-case and meaningful clock
-leakage controls and both helper consumers were repaired and independently
-confirmed. The finite clock construction retains supplied preparation/control;
-the proper-prefix commutant obstruction has its own exact support domain.
-
-Wave9 lands 11 field source/receipt paths plus manifest. All 12 remote hashes and
-all prior manifest entries are verified. The actual note-path-derived IDs bind
-both helper consumers. Diagnostic -> source -> minimal_axioms adds exactly two
-nodes/two edges. The source corrects uniform-versus-checkerboard interpretation;
-the diagnostic preserves failed production, genealogy/span failures and an
-unresolved hybrid uncertainty. No long sampler was run for this unit and #7966
-stays open for its 57 original source obligations. No audit or verdict landed.
+Wave10 adds five conditional native-transfer mathematical notes and the corrected
+projector note. The negative correction relative to an exact discrete saddle and
+the positive full correction relative to the continuum limit use different
+baselines. They do not establish a physical Wilson law or a physical mass gap.
+The projector's corrected bounds and shared-reference covariance passed the
+actual final 12-check run in 375.64 seconds within 480 seconds. Its nominal errors
+are uncalibrated; convergence and physical identification remain open. Exact
+original and first-run evidence is preserved. All 148 source/manifest hashes were
+verified on remote main before closing #8007/#8008. #7966 remains open for its
+unreviewed remainder; the selected projector landing does not approve that remainder.
 
 ## Current assignments and holds
 
-| Owner | Unit | State and next step |
+| Owner | Unit | Current state and next step |
 | --- | --- | --- |
-| Original Wilson reviewer + separate author | #8007 | Complete original review found three P2: missing helper registration, numerical falsifiers that accept wrong coefficients, and canonical draft wording. Narrow repairs are in progress; unchanged conditional mathematics is separately supported. |
-| Same Wilson reviewer | #8008 | Bounded original source/proof review and controls active; two #8007 premises remain provisional until final correction confirmation. Combine for one gate if both are ready. |
-| Field author + original reviewer | Deferred #7941 projector, exact on #7966 | Three-path first-phase repair frozen: compiled sample bounds and shared-reference covariance corrected, physical/convergence claims narrowed. Original cache remains historical/stale. Independent source confirmation passed; one unchanged 480-second production attempt is authorized with bounds checking and no expected outcome. |
-| Coordinator queue | #8009–#8016 | Exact new/moved heads and file inventories captured. Four later drafts (#8013–#8016) are ready for ordinary review; no inherited scientific PASS. |
-| Held | Eta pair-process | Partial review only: old additivity-registry pins and historical Git/status fixtures need reconciliation with current premises. |
-| Held | Curved covariance | Actual 52-module closure reaches reserved science; no raw tower landing or full source PASS. |
+| Separate preparer and independent reviewer | #8009 | Complete selected-source mapping; full proof/source review and decisive checks active. Its successors remain separate obligations. |
+| Coordinator and draft reviewer | New submissions through #8022 | Exact heads/file inventories captured. Triage each draft to ready or close; ready proposals still need scientific review. |
+| Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
+| Held | Eta pair-process | Old additivity-registry pins and historical Git/status fixtures require current-premise reconciliation. No full source PASS. |
+| Held | Curved covariance | Actual closure reaches reserved science. No raw tower landing or full source PASS. |
+| Open | #7966 field remainder | Preserve failed production and exact source/sector/estimator distinctions. Review actual remaining closure before further computation. |
 
-Standing reservations **#6379, #6858 and #6859** remain, including inherited
-content. The 57 original field source paths on #7966 still need complete science
-review; the standalone diagnostic does not represent them as landed. All original
-branches, dirty worktrees and historical receipts are preserved.
+Reservations **#6379, #6858 and #6859** apply to inherited content too. Preserve
+original branches, dirty author worktrees and historical receipts. Shallow-history
+gaps remain unknown rather than empty deltas.
 
-## Avoid recurring review work
+## Avoid recurring work
 
-- For a new claim packet, discover actual helper imports and file reads, then
-  register the complete helper set in both packet consumers. Check their actual
-  outputs and pin mutable cache inputs; a sibling-only list can omit its carrier.
-- Start helper coverage tests from the real note path, derive its canonical ID
-  and primary runner, then call both consumers. A hand-supplied metadata alias
-  can make a test pass while actual packaging omits the helper.
-- Enforce each claimed case or invariant before reporting PASS. An aggregate
-  `any()` or a printed boolean does not validate every named fixture.
-- Distinguish a sampled Ritz separation from the smallest spectral gap. A small
-  residual alone does not show that a Krylov start reached every relevant sector.
+- Freeze the final publication note and its provenance links before an expensive
+  cache execution. Changing a declared note input afterward requires an actual
+  fresh run. Preserve every earlier attempt; never restamp it.
+- Derive helper coverage from the actual note path, canonical ID and primary
+  runner, then call both real consumers. Pin every mutable execution input.
+- Make each claimed invariant a failing assertion. Exercise actual altered
+  source that violates it; aggregate success and printed booleans are insufficient.
+- Check compiled sampling bounds and the covariance from shared reference data.
+  Keep sampled Ritz separations, minimum gaps and convergence claims distinct.
+- Reuse full independent review only for exact unchanged source and premises;
+  confirm affected corrections and interactions. Ready compatible batches depart
+  without waiting for unrelated work or a collection timer.
+- Compose corrected source and the manifest before the final affected review,
+  so repairs and integration receive one confirmation handoff.
 
-- Check sampling boundaries under actual compiled bounds checking before long
-  population runs. A historical zero exit does not establish memory-safe sampling.
-- Propagate the covariance introduced by a common reference subtraction in the
-  actual estimator; marginal errors alone are insufficient.
-
-These are observed repair patterns, not extra formal audit stages. Reuse complete
-independent review for unchanged source, confirm only the affected corrections,
-and run one combined current-main gate for a ready compatible batch.
+These are observed repair patterns, not added audit stages. The measured gain is
+fewer repeated gates and reviews; queue reduction alone does not measure scientific
+progress. Incoming submissions are counted separately from original backlog work.
 
 ## Shared evidence
 
-`OPEN_PR_INVENTORY.json` pins captured queue heads/files; `NEXT_REVIEW_UNITS.json`
-holds assignments and source dispositions. `BACKLOG_CONSOLIDATIONS.json` records
-transferred obligations. `MAIN_STATUS_SNAPSHOT.json` records the unchanged 4475-row
-ledger; all science remains unaudited. All 38 newly generated rows were stripped.
-`backlog_evidence/wave8` and `wave9` bind the latest landings. Older snapshots,
-including the first field-ID candidate and projector findings, remain historical
-evidence. New or moved heads need affected-source checks, not blanket re-review.
-
-All branches, dirty worktrees and failed receipts are preserved. Shallow-history
-gaps are unknown, never empty deltas. Coordinator owns shared planning and GitHub;
-workers write their assigned evidence. Source counts are not TOE completion.
+`OPEN_PR_INVENTORY.json` pins queue heads/files; `NEXT_REVIEW_UNITS.json` holds
+assignments; `BACKLOG_CONSOLIDATIONS.json` records complete transferred obligations.
+`MAIN_STATUS_SNAPSHOT.json` records the unchanged applied ledger. New generated
+rows and all other generated audit/status output were preserved externally and
+stripped. `backlog_evidence/wave10/INDEX.json` binds final reviews, validation and
+closures. Source counts and unaudited planning records are not TOE completion.

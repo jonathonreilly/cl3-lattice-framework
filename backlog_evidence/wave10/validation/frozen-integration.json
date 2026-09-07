@@ -1,0 +1,648 @@
+{
+  "base": "b0f7089ea5dd6e26e0d58a8a36a77d36c50a8e7a",
+  "head": "60b98160bdab0a4aed2069da47bb8e1ed674c29d",
+  "tree": "e5fffce9a5780afc2d8c63a94ce81804bacc0ba9",
+  "frozen_utc": "2026-09-07T19:54:44.891428+00:00",
+  "original_prs": [
+    {
+      "baseRefName": "main",
+      "baseRefOid": "e043c95b37bd46d80e97c39f36c8b3cb7643c62f",
+      "headRefName": "codex/native-wilson-second-order-block10-20260907",
+      "headRefOid": "9450957fc039bf362bd2ca3d71d301d35d55cf40",
+      "isDraft": false,
+      "number": 8007,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "codex/native-wilson-second-order-block10-20260907",
+      "baseRefOid": "9450957fc039bf362bd2ca3d71d301d35d55cf40",
+      "headRefName": "codex/native-heat-spectral-block13-20260907",
+      "headRefOid": "6da2088d2c379839b2dca3977843b33264cd8e30",
+      "isDraft": false,
+      "number": 8008,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "physics-loop/spin-half-cubic-ice-infrared-maxwell-join-20260904",
+      "baseRefOid": "0b63aebcf9df437a95ac23f56b2981ea80e2be6c",
+      "headRefName": "physics-loop/spin-half-cubic-ice-infrared-forward-replay-20260904",
+      "headRefOid": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+      "isDraft": false,
+      "number": 7966,
+      "state": "OPEN"
+    }
+  ],
+  "source_paths": {
+    ".claude/science/physics-loops/native-heat-spectral-20260907/APPROACH_REGISTRY.md": {
+      "sha256": "08753f928f3f225edd6557c6f411b1072ffa6a8126e2991d26c471c788fdc79a",
+      "blob": "231750150b10d3dde4921e49f50e4f18db5d287b"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/ARTIFACT_PLAN.md": {
+      "sha256": "a1f94c87f36c6da4723bad4fc4a65da0074cbdf02c761bef1fc2e9b7cacbe2a5",
+      "blob": "a915595c8e69c7e1b6ebf02e5c700f314fb976ef"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "33650ada35272fc1714c9be63ca66a7c24de459afdff348de3865322bf1380c8",
+      "blob": "3ee1ff586120461d78494ac2e7ab2fa754013d11"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/CANONICAL_RUNNERS.json": {
+      "sha256": "bd52d67f5ac62d505b7ee2818d67169f732e0c4014dd8dfc1cef8ef1c429a0e1",
+      "blob": "fad5386d47b18b51e12f549830c6b0cd38cdc8df"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "64533f5d50381fa4a4f7b2f7a6e1c03c6d58b872da124a5b4c3f4e304a953d98",
+      "blob": "3f6d7febe5c4867d8535a03320341caf415a52be"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/CONFORMANCE.md": {
+      "sha256": "a44c8e712dc5a5f472803d615a9ed486bace230e6573620fff33551049ae5e00",
+      "blob": "5418362b7e2cce7273148e4e2506d8622d1c99a5"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/FINAL_VALIDATION.md": {
+      "sha256": "f369e534d5ac9fe9ba9475263105e67fbb5f44d8a2a350428699ddf3fcc78d1b",
+      "blob": "e25380310222b433cc1336107920b10983bb2394"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/FULLTOP_PORT_REVIEW.md": {
+      "sha256": "618a3530c882c000e38119f4e96c47d4f348c7344572b426dab923ad45f196a5",
+      "blob": "971706c2ca265f618eca8d3530a6b2b15d3baf34"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/GOAL.md": {
+      "sha256": "69b5c8a70283d7007d6f27432e9c4ae3315f2cd3f2e44082531acdd90f4a2fd5",
+      "blob": "03a47c0881718e3661281d220ec6be6fb1d44f38"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/HANDOFF.md": {
+      "sha256": "f8e8ebc0a9b983e3a6befb7800da9562dc623f251dc4e662deff14aa003dc092",
+      "blob": "b5de3d329db1e64dc42d9319c84c41dda803e98d"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/INDEPENDENT_ASSEMBLY_REVIEW.md": {
+      "sha256": "e812fa9a7cfc00c1b12e6f320e6c1875f3db59b60ae27f4a72b7e72a19144bc8",
+      "blob": "80b5e7f850e57f1706bc223730619023bd73d9e4"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/LITERATURE_BRIDGES.md": {
+      "sha256": "611e2f58ae6c151ade228ba0e95c35de85d647492bffa6ebd1039df18f3c0e4a",
+      "blob": "a559a3f51de6982758a112c224095c7ef0d81da2"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/NATIVE_HELPER_COLD_REVIEW.md": {
+      "sha256": "cf32e30bd3ee7a5f8aa7463148c763697755d6fc6facd731dae0f2673e16e515",
+      "blob": "8ce1835b476f81556ee79e59ed5e2943a0b9f188"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "sha256": "80c8c9860c5286d25131ed7d7ec917e707e8c0bcfbe39186d4024e25eede646c",
+      "blob": "2088e8a73e600fb2f48059e1007fa1d63ac08fee"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/NO_GO_LEDGER.md": {
+      "sha256": "4ac30663ac603c8145fce155105f1816972fc228e73b2a7653d9e522e43e436c",
+      "blob": "10f69a3344d807c6e5c28d782d05785216de70db"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/OPPORTUNITY_QUEUE.md": {
+      "sha256": "85896f47a22b7a3c6639784efb76c7d6d16995277a5c0432dcabbfd2bff84491",
+      "blob": "806b2f2a8e5ccfc2f7f484b3c82f6ffc278a1315"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/PIPELINE_PASS.log": {
+      "sha256": "b413340167da8d62e902f3cd5f151e5e81c08930af7cccd94fb9d2c6e178feab",
+      "blob": "636dd4850fdde90c436403bf83bfd6d4874f1f1c"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/PRESERVED_VIRIAL_ATTEMPT.md": {
+      "sha256": "02d8b5d8085d9618b308dabfe2dd90a578cc0a2749c1ff9845f7ccbbb828284d",
+      "blob": "f609c43ec945263055f09745b54ecc6a76c38fe6"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/PR_BACKLOG.md": {
+      "sha256": "c0e82cf1f8719c5e8f03cbcf2ddcc225a06c2b8114e149db0279836948bad0d8",
+      "blob": "c852b6cef09254917446e13678b69c196523980d"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/PR_BODY.md": {
+      "sha256": "9c991167c25bdd09168d1b17981e83fe40e0e3920369cfa8b211e16d3aaee14d",
+      "blob": "90ced68aa00056591bc58e339c9199be16bc43e7"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/REVIEW_HISTORY.md": {
+      "sha256": "1be056f690d8b371ce297493e19eea3687e398411cf3e1451a85ff5feb3c9fe7",
+      "blob": "6374532e2df57f88b9443b175f78a68dab5ff4a0"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/ROOT_REVIEW.md": {
+      "sha256": "3e9cf92685f1e91be75aa6e76d9145dee1aecf7cd34292271616cca37ed05d90",
+      "blob": "969af5d519c937aeb1c5ba900f9ffc64e88d9cd0"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/ROUTE_PORTFOLIO.md": {
+      "sha256": "5d238570fbfd945412a75cb7153c5e257f5c7e6aed420a8dfb2e31f16b8fafec",
+      "blob": "4e32ddc92146f2753f81c93404d9fc5f2d396adc"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/SOURCE_CORRECTION_2026-09-07.md": {
+      "sha256": "e6dbcb0ea962ea432a1b69adc6bd0107905fc6466605efaec1846a9805f77b87",
+      "blob": "84d695b68f389b406e7cfaa20b0ac7afd79367be"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/STATE.yaml": {
+      "sha256": "fb177bca727ce310f290123df8cf70299d3af368575baa1b06d93ad51b31995b",
+      "blob": "a69661346c198e526da79c9ba598d0fed9b14f89"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/STRICT_LINT_PASS.log": {
+      "sha256": "31e6ac5c752133cf2dac982382ec3eaba28e5938ab720b975ad46b48f3fd5e04",
+      "blob": "6cec7256698ebb74093b605c37c693c8c1b91c14"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/TRACE_GATE.md": {
+      "sha256": "4b104bbc73f46d63fe0993ebb14ed63b8677bafca69e4c4aa07238bb61a88966",
+      "blob": "cccb9d6a47febf38ec498d4afbf80f327ca5745c"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/VIRIAL_PREREGISTRATION.md": {
+      "sha256": "0baecc3a39f2827e76d338078c6358c1641a1ab549df88c65d16243815a6d449",
+      "blob": "e06bdab159018b9fc4c30dc57783a150cd8adea0"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/heat/DERIVATION.md": {
+      "sha256": "80d5a3f5c01256b002b00c1947d81aa857b449e11ef4d8a8b3e7e0b7b86dceec",
+      "blob": "f43c548ad54a2d2ba62f7a7735b999449b26e656"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/heat/FULLTOP_PORT_RESULT.json": {
+      "sha256": "cefa6a90e4e8239e737c01bb99e7124d38f3d424a70eb223613a271c7a5ad8cd",
+      "blob": "7d171019090cb717c3b70c127a61795b13ac4450"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/heat/FULLTOP_PORT_REVIEW.md": {
+      "sha256": "618a3530c882c000e38119f4e96c47d4f348c7344572b426dab923ad45f196a5",
+      "blob": "971706c2ca265f618eca8d3530a6b2b15d3baf34"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/heat/PREREGISTRATION.md": {
+      "sha256": "e4f7bc53c7aa8619e6f3d094e1acfc691a2dc6ed2e35d2fa422e02ceeb6b1eb1",
+      "blob": "e3a15e17f2ceec289ebd2e112f10112057919cc1"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/heat/PRIMARY_QUADRATURE_REVIEW.md": {
+      "sha256": "7307853bc5bc266b5c3fed41115cf507716db39bbc57224a7d7d2a9759a83b30",
+      "blob": "98a123faa77f6d90ce8ae19505f1b07c4bec787a"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/heat/STAGED_SOURCE_RECEIPTS.json": {
+      "sha256": "330752d370cc3a36151070b2110bfbb63d8f345940239e6324d59eea62268ff8",
+      "blob": "72c92dffba6de245eb8a340ee048f2aa7151cd4c"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/heat/STAGED_result.json": {
+      "sha256": "139edd3de4374857d6ce3185c162640fa50a05feaff74188417cc69602b60b45",
+      "blob": "188d9af4814d5e19b6c24d78ac0fa4bae15a3d9f"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/heat/certificate.json": {
+      "sha256": "4a2611414ff87a2cfd156b75448910c840e3f6dfa35aa51bfdacec1b7c979430",
+      "blob": "e394b7f4f98d2394b6bd95603ca7d6627ac2b765"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/heat/certificate.py": {
+      "sha256": "7f695357c9ccdd939c85fe289e18ab5e76d399294d90c25062fc25acce0c5719",
+      "blob": "ffe6f23a1a02b1514b3be530abda78f2a398f01d"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/native-check/PREREGISTRATION.md": {
+      "sha256": "2a2f3e62596bf0604b1cc723b1f4c418f5d1272018cf0c85732cd6fa44b956fc",
+      "blob": "e47077f050499feaeb8801781d95c9527cdffa52"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/native-check/REVIEW.md": {
+      "sha256": "3eba0f430090ebf55d8c013251568183a73538794f35465af9c6c3912ec200ad",
+      "blob": "37c887304ab2d4b2752296e2daaf6f1ae34fe99b"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/native-check/SOURCE_RECEIPT.json": {
+      "sha256": "70bc830f3521b164acd52bd1e1d02db87aa680f999f50d37ef5970024de711b1",
+      "blob": "7cb522d6aa04f1ae83adb993d1ac35d19bfde215"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/native-check/resource-failed-diagonal-source.py": {
+      "sha256": "9be827f1ce7f506e44a929e8d46ed38b2776e31e8f8ed139311ba411713db6f3",
+      "blob": "8f05df5a1b5a849199a8772094485acd0d2bc880"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/native-check/resource-failed-source.py": {
+      "sha256": "e57c9fc6949d348caa4b8a364fafaeefb02b23633de74eea95f565b5264cffcd",
+      "blob": "167ab57d4ee1bafa2fdc24e4ea328bf05b9b61f8"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/native-check/result.json": {
+      "sha256": "4b8ae1c840a338791c3bbd7e8aa473167a2dbbbe0347cdc811767586ceafe44b",
+      "blob": "dfb104e453cc697b70ed352b29dafcc168ccddef"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/spectral/ASSEMBLED_SPECTRAL_PROOF.md": {
+      "sha256": "518013a88c74d549e77879d2b2f5e638ab3054a6eb5717d9fd8eb933d0a0dff8",
+      "blob": "72f112490b7f9f7cc6abb445ac02b6beec71b7e5"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/spectral/CERTIFICATE_PREREGISTRATION.md": {
+      "sha256": "a3d570eedb0f0d0f7f9841214e8ecb5de9626da2debdeb76d9c41367cdded6fd",
+      "blob": "152597c2baf9837088b04af4d775dec0c81d3dd0"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/spectral/DERIVATION.md": {
+      "sha256": "7be320cfd46226588ff81ef895f880519bef5c12c4c205f5ba6da674754921ba",
+      "blob": "8933426cc9bcf32484ba508450de440fcb6c6690"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/spectral/HEAT_LEMMA_REVIEW.md": {
+      "sha256": "a84ccf22b1f7223c47c9ccd55cdeec8b1ada8cd783caf2f1cfde1e1ddfb33a16",
+      "blob": "56fc2ed939482dbae2d9d4420c57a726bd2ccd63"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/spectral/HEAT_REVIEW_CHECKS.json": {
+      "sha256": "45dd8c142c05f7783f83f6c946f6b99b1a9aee6ec7972c74a095bd2acb292a8e",
+      "blob": "49b5f97160df437b0f0be01ffc5b04068afabd2b"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/spectral/PREREGISTRATION.md": {
+      "sha256": "2b1172872c29dc8c93085066f21b2f8d2ea71337c24797e0c329f47d1761b8f1",
+      "blob": "ea348dae3f1395001f06f1da65493df694fbc253"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/spectral/STAGED_HASHES.json": {
+      "sha256": "d9cdf975bd210c2cfc71e3c96cc4efdc37c0aeec9e13697d9dc20cf416a46f9c",
+      "blob": "1a9959fd8e9c8a23e981fdbe97f9f33f1657f01e"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/spectral/STAGED_result.json": {
+      "sha256": "8fe59b1c0204b7ffb40f56df4b458b77ff1327eb5f3a65ad6aa67ad16954c428",
+      "blob": "f2113394940793cc80bc926c2aac4944e5fe3780"
+    },
+    ".claude/science/physics-loops/native-heat-spectral-20260907/validated_readiness_before_generated_cleanup.json": {
+      "sha256": "896e9265c5f7f860b7a4367efa72e9060fe8202d101a3826cb8b1bbc7a89e10b",
+      "blob": "85f86d9749f5b17c9ea2dc71b331518627a4c9b6"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/APPROACH_REGISTRY.md": {
+      "sha256": "289b81380ff2277a0d07769d9f5ee83d10b904be434d67a131c9724df14ff729",
+      "blob": "d6172d1611ee21fd5ad162069b76f3bbaad6adae"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/ARTIFACT_PLAN.md": {
+      "sha256": "5adcef7bf69dc9f5cc4592569a4bb389c388feb6e86faabe53aebd311de76afa",
+      "blob": "8da2d3d76e4a3231ff47110edbecc5f532b2d647"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "6fd85cd0452daa01f2d960d7cbf6bbf014bd54af68c20aa1c4c4b5fcb38af85c",
+      "blob": "ff42d7b5896afc4d325cfffb87761001fb3f289c"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/AUTHOR_PORT_NOTES.md": {
+      "sha256": "009a493565bc246bd9a6f4812b2e8d7ce1aa72267345e3763ff3352de007a059",
+      "blob": "1e23e6f46f74fc9fe02ca58cec1e7d3e3b91d092"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/CANONICAL_RUNNERS.json": {
+      "sha256": "c501ea1a4da6f8494ccc0448a8969a7dde9273fe7488b30a0442122c4598b4b6",
+      "blob": "0d1f0690cc1f22c8b7b0c2345b99598f667e520c"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "28e3f1624fb9ca5840e8ae65a73372752a9febe162863df625bd118574a599a3",
+      "blob": "513940242c5c3fdbd1450de0d6aea6a50a9b730a"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/CONFORMANCE.md": {
+      "sha256": "ecd7f5f06e97dafba73e273ec8dd25308c4817e5623be886ee94950fa3574305",
+      "blob": "7b14dd4fc450f5badd4c6aa58af3f1f70a037825"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/DERIVATION-before-sixth-clarification.md": {
+      "sha256": "a1ff40154c0429f9e3d7c1e1ca1978d7a053ca45aaee1bf05cae06ceef4a80ad",
+      "blob": "ddbcc6428ec44a676f83ba07beffb5e9aa366338"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/DERIVATION.md": {
+      "sha256": "2f269c57d61a364ecacf117020ba9c1726c52d5582a3a6b06f0eb703dd8dcdd1",
+      "blob": "ae9d1b63c83fb7e2fccfc75525d0e19d17151cf1"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/DERIVED_EXTENSION.md": {
+      "sha256": "c935c8e6c75f97b80e48a3a2d9e9b55898b76823f4fcd38ac322caa08679c7e8",
+      "blob": "eae114a648eadb2abe9453101bf7b4327517a103"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/FINAL_VALIDATION.md": {
+      "sha256": "464e4180f6b7e9323e7a8c2539d7cd3f984d8a85a59f5ffa271bd2d05b142b8f",
+      "blob": "aceddc808ac200fd2bbf8407b07bdbbc68152813"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/GOAL.md": {
+      "sha256": "200d2702044ecc04c677ac986fc37240ef03077ed420110ee72332bfeb715364",
+      "blob": "f63b3a373ef6d950cfa4e39b81a0631b9bf8de1e"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/HANDOFF.md": {
+      "sha256": "845b332b81e8640bdf11b56e51af53f6e4182625953b204ab61512250f08bfe1",
+      "blob": "1752c0bcbfe24d1b20f72c8e62c80d728dbe7167"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/LITERATURE_BRIDGES.md": {
+      "sha256": "40e82a4262f093a0e871c75525ef5ad346c35018289970c5f6589cded49e2ad9",
+      "blob": "b30e6a2b9dc8bc5b5e68fdb5ea506a42651c66e9"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/NATIVE_REFINED_REVIEW.md": {
+      "sha256": "aca5e864d8bbc3f2763851601b8ab7c3ae12455e230577bf5eaaff4b8995f641",
+      "blob": "ec8dd2b199fd86f52da48c770a15d1eaf774a6d6"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "sha256": "2086612914e64fabf832cd5785caad1710e53a8de773fd8e74fb4adbae0fafa7",
+      "blob": "3835e3cb67955d9f4a4168be80e9ebadf7d65e1c"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/NO_GO_LEDGER.md": {
+      "sha256": "fc0e05c141658b6fe115b8a0ddb0b4e4f1590478e73346dca5a7ed2bfef03526",
+      "blob": "b5b2188a23b1dc7001c289373f337c82c0335497"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/OPPORTUNITY_QUEUE.md": {
+      "sha256": "0d106414a5cee27b6e0c6bba5ed58d8e62c02908532ff68120205bde33f904c9",
+      "blob": "5b8155d02088bf957914871a36c33f4caf524d0e"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/ORIGINAL_COMPACT_SOURCE_DRAFT.md": {
+      "sha256": "79a0499b3581e863058a79905b45898e7cdbc08df2834f6b6a975e25b69e5270",
+      "blob": "cb5b53c04f7de4092afb9050d5c517df1d72defb"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/PIPELINE_PASS.log": {
+      "sha256": "ab29095d7f05a93ef427f9af5327f663711e8a7ec62fdf9571a3674db3cf609b",
+      "blob": "3dd7648c5759fc35a306d1348fc5505f7f4b8f51"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/PORT_SHAS.json": {
+      "sha256": "e4c8108fcf5b4cfe7dd3488559878b88da68fedfbf1098603c55eddb3a702355",
+      "blob": "497ed6ed25b717caaf55535fc712c4f2f1500f5c"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/PREREGISTRATION.md": {
+      "sha256": "51e96b194e9af5dac27467097b4a9ea835477e4329b7f258c6e7409bdd6ca5d2",
+      "blob": "7c4465f941ee5ddc2d0e08f724c4bee5fd2d213c"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/PRIMARY_OPERATOR_REVIEW.md": {
+      "sha256": "76aeb4245f44ecb402dbe81374ab3e0379347cde27b6284816bd88e421b453d3",
+      "blob": "4f7d87d7abd9f424ecedcb8709a037b3a8724f53"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/PRIMARY_REFINED_REVIEW.md": {
+      "sha256": "b69dd2b32b07cc1b07f146f645aed1afdb6a73e5ccdd7ba1c13fc14e6bc1d936",
+      "blob": "d093aa8eea12b81ff8bd92e7eb22d0cf36445287"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/PRIMARY_STRUCTURAL_REVIEW.md": {
+      "sha256": "055eea596a2616f87538c0a5936c1e98bfca34133f8fa265656dadf133e40bf1",
+      "blob": "3e06f3739fd8cbed75d8e2bc4fd81311b2dce8fe"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/PR_BACKLOG.md": {
+      "sha256": "961787a5afd902dc02ef6d105afe18baefd0bef2753d09298758452fe0bc0582",
+      "blob": "cfb38e068b40d7cf22410cd4a6b0d4f6a9323f01"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/PR_BODY.md": {
+      "sha256": "86bac42bcf24c8ef99b8de6572cdb6df5591137586c7d286639ca0113f1c234a",
+      "blob": "4397752123f75f7511bede14bff188c01e4ed6a6"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/QUADRATURE_PREREG.md": {
+      "sha256": "3bcfa578586e8e6176a3422bc8700e543f301a28a578f4964ce2916c7441cdc5",
+      "blob": "b4e17cdb1f68566a25ae84a9ed0ed26baf457133"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/REFINED_BOUND.md": {
+      "sha256": "497aa10ffed66c77cd8a5011eb27b880713ab49e65f71b51562818a73f47c415",
+      "blob": "2be59cf93b4f69833880dc99754870503b44c54d"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/REFINEMENT_PREREGISTRATION.md": {
+      "sha256": "cc3678698b2132cf20b8ae061de5c2de82152c16eda1e8f85e99a3c6f9e61fd2",
+      "blob": "caed407ee6ff22fa4d10bce669ff0917c235170b"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/REVIEW_HISTORY.md": {
+      "sha256": "df846f69ef91d1c3e5b544affbd6cab2ba4057692267f6306863959af47fcbdd",
+      "blob": "36d366e85b7e986c92622a1145b8896c73401321"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/ROOT_FINAL_SOURCE_SHAS.json": {
+      "sha256": "48b342a245fd414f48408bb4535977d264348cac2887a78eb71ea7d988029958",
+      "blob": "686c5ead0c55fb0a2b905b7b872db4647f52e5f1"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/ROOT_PERRON_SIGN_REVIEW.md": {
+      "sha256": "f267d484489e1258a0d16f206ba078926fe8d2ac24b7a13287f3c646d08d37c1",
+      "blob": "b749c4cb109329d8e556fbf4ef10775c901168e7"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/ROOT_PORT_REVIEW.md": {
+      "sha256": "68186aa45aebb26b80fa1befa3bf4c9d4e1669893adada68fe0886668aae2849",
+      "blob": "ced959f5baea0ee94feda4019ca9d77306c4a684"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/ROOT_SCOPE_REPAIR_REVIEW.md": {
+      "sha256": "8dbad4a2db935593febb357a43964ec62ddb18c9badb948a4a88ad5b397580e4",
+      "blob": "c2dba76ab2d5a39f6cdc99313410ca7ddc679388"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/ROUTE_PORTFOLIO.md": {
+      "sha256": "e0cbec6ae2264f5880acc73e86803ccd804c15f7caf33a63cb9c03dfda7fc8ef",
+      "blob": "e662fa24a972fc969d03064ee6dce2d1c9e28e77"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/SOURCE_CORRECTION_2026-09-07.md": {
+      "sha256": "6e8620ffc8d270b3cda92df2562e0f06be4312e6dfee33ee1d8ada5ac1998793",
+      "blob": "e82b20c75604fb3294b491aaf9052ac09f996981"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/STATE.yaml": {
+      "sha256": "55dc4fb6a87348b4ab0394020b23e4252f577de827ce4a4102c50a2c033cc47e",
+      "blob": "9d6631d0a749ace6c59edba35ad72b1d0be1d6de"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/STRICT_LINT_PASS.log": {
+      "sha256": "f5b5fdde951c588897e0c9a031fb23826c15d5e360e1158302d6782fd89f12d0",
+      "blob": "f6a3d1dbc4309bbfe5e039f3cb7dd736f68d1fbf"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/STRUCTURAL_APPENDIX.md": {
+      "sha256": "d8fca7c058b1fafc4d7b3d1ead1f5a9cec6da6c6dbc6443e88f9efd99d8902b0",
+      "blob": "aa0717b1c35af129ceddb9b34f1628c2b3d25af7"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/TRACE_GATE.md": {
+      "sha256": "cef3de79682d77033c07065cf6a300fcaa5be127dab609727162d4be1fc435c7",
+      "blob": "f59c63bae7373eddfa9b3b2b6c3d69407252ab19"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/certificate.json": {
+      "sha256": "37f7c47664bf94e446ea2628fe9dbd3334e87e54e04c26a0476c5ad8f8ed1f2e",
+      "blob": "0bba7553b4044858bf06019a5d79a58fc836bf1e"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/certificate.py": {
+      "sha256": "105d88fedb50f4053cc7e81881e5a3f6114bcf2f9796390a076bb2436e8ed1a5",
+      "blob": "a0f588ebb95c15c0518af2786416a37f002a0f13"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/operator-certificate.json": {
+      "sha256": "0cbc05939a9a2bcc159c73fd995b67632fb22c472649a6b019e03488ef309a0d",
+      "blob": "6324e106c3a5800d055f86eba37e512fec26808b"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/operator_certificate.py": {
+      "sha256": "aa80b3b79b18c4e24b6493ce18dc62011917c6094d05b378df5aa78d6c169f34",
+      "blob": "4c4c8a209024409e36e627b2e1b406a6d4998f82"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/HASHES.json": {
+      "sha256": "10029bec7aa833b3146a444a3ca672d3011eb4b0fb0f6d78f995baed40e1f3ec",
+      "blob": "e35ede5819417680454240d2104bdd523f350df0"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/NEGATIVE_SIGN_PROOF.md": {
+      "sha256": "9d9997c41bc5f99b76a0f2274a0c7f0d7836c83ca261099a5fc2080c3bbc3629",
+      "blob": "0396b7794d2f98ff534dffcee280f3f5583cbdf6"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/ORBITAL_INDEPENDENT_PRECHECK.md": {
+      "sha256": "06e03abced43b884bda581e25c1dbd51c0f1daab8ae8d94e7eec574d5a8c3f43",
+      "blob": "cde306bca48b832bfea523c443106463958c6e94"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/ORBITAL_REVIEW.md": {
+      "sha256": "388f580b114336c3c2115ee2b682f54197566180d66edddc64060ecba4a059bd",
+      "blob": "efd270f318b244c97ba87ff9ff0055de9c78e6ab"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/ORBITAL_check.json": {
+      "sha256": "5ebd42c6eda7cf6b03b43430247bd09089d6fc3b5dcf0cf7679ab52f19168262",
+      "blob": "c9b1fd122baff9fe0917286d3eab1b4c70ebfe41"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/ORBITAL_check.py": {
+      "sha256": "dfe3aec16e1ab178f59f1c2601e91c750b2572182e632abdae1076db3464e13e",
+      "blob": "06401c6c1c5f0735ad42f89649fe94e57b6ab3d2"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/PORT_RECEIPT.json": {
+      "sha256": "0e694d7bfc50f6b19e60f77d4f60d70962e3f983cbe189e7b5682aaf89c603a8",
+      "blob": "804897cee67c9edfb43244f14ac6268a5a55a02f"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/PREREGISTRATION.md": {
+      "sha256": "9b56838247929dd7e4cfde0bd4a35b9bd248cc72142a1d1f56f23aff28a73a90",
+      "blob": "15b46817f7fba1f10edc9e936466fee9c3833e63"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/PRIMARY_REVIEW.md": {
+      "sha256": "1b0028cce3d012cf45973eb51bb8aa26310a38af1b4bec5961d252da086fd5a9",
+      "blob": "6e7b678ca813e82e9b3a9d7191807d9447ce4dd1"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/PRIMARY_check.py": {
+      "sha256": "2aa1b24f242039c4e64f6ca4d1780485a2e909f17c974c1b135235b9a750dfaa",
+      "blob": "cf10661071e2a658aac603a4e351305275d96a0a"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/PRIMARY_result.json": {
+      "sha256": "920d88ebba08125e7fb45a379ef53c773f34d4e5373a9694125ca6e4cc605ed6",
+      "blob": "ac12ec4ee85b5983049e9b19584eb1c91ef4562c"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/nystrom.json": {
+      "sha256": "71873eea9ef00dc54ccdc3c06ad91ff2b89682e25530177f33ac57875ac850b3",
+      "blob": "7dd47fcdb0f4f904b3598cde38f6555310f8cb2c"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/nystrom.py": {
+      "sha256": "040dfcfa33e1ead3a9040ba9957e336d8b4f77e587b926f69aefae9ee3d4dd40",
+      "blob": "c7f5465ff15561fa9aa5e490f6d6d13cf0687525"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/sign-certificate.json": {
+      "sha256": "77052e2af6beed70fb583a077d516a1db1795a331de11d4a412bad39a871eef8",
+      "blob": "9f5ee30fbeb431de85676e1c2d9421fd0f7719bb"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/perron-sign/sign_certificate.py": {
+      "sha256": "952bb4eb3b92f1577b9991f9795389de597af1ab893149a264b7855e315f5193",
+      "blob": "73cd69231fba6f1f6426a0e9d04dcac4c5291a74"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/quadrature.json": {
+      "sha256": "e65b86acb95e83883263f743d626951c7fe0650efd21f02c00f48ba2a92386e3",
+      "blob": "95317b1b7d84d170a396145ee5178443ca7568a0"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/quadrature.py": {
+      "sha256": "74d7d61b9e70b922a09711843b0d731f889f600ae555af14ed03f3fd1c7cb60c",
+      "blob": "682947637165e61a41e2885b067ce4617ececa7e"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/refined_certificate.json": {
+      "sha256": "edcff23d3ce41fb69e8af5ff006f955ce2e3265dee31c62ac00f19ee79d40725",
+      "blob": "e8d81a7de7132af93fff701f755e053c72f04e87"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/refined_certificate.py": {
+      "sha256": "7e36ba8b47d64215c362d37f87c203a5a8bdede18361c21ad604e787e31194a1",
+      "blob": "22ddb7d629a582397413936e98767e7cd7652174"
+    },
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/validated_readiness_before_generated_cleanup.json": {
+      "sha256": "50b575fa39b23772630b048d393cecce5f973c2138c8c0043cefd292c2d729cd",
+      "blob": "fbca45fc2d245ad5ee587fd5cf832d79392f66a2"
+    },
+    ".claude/science/review-fixes/field-projector-20260907/PUBLICATION_CORRECTION.md": {
+      "sha256": "ab4214eb8e7fc22b6e84e44792b7837512106b889da823db0559fec1b950e05a",
+      "blob": "71e18c9a5005bc6c0dd104914b4322728d509032"
+    },
+    ".claude/science/review-fixes/field-projector-20260907/first-phase-note.md": {
+      "sha256": "57f775e9bb6812937837a5b716acf489a48d02816e0d0743ff20d53ccd4b05dd",
+      "blob": "07241265637c4454ed4458f6a736500fbb69f0cc"
+    },
+    "docs/NATIVE_GAUGE_TRANSFER_FULL_TOP_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "873e6895b04641fff4aaf353889ddd6bdfa85ffe79f71b43fcd2746c588b35e9",
+      "blob": "1b4c6321b4e10b15091b0100f5ee0e0dc7294059"
+    },
+    "docs/NATIVE_GAUGE_TRANSFER_KILLED_HEAT_SECOND_ORDER_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "59ebec33acc714c7267d7b3398284810de01687e76f67b32e0a1d98f7af6f289",
+      "blob": "06f9f82cc24254f82a1e345974d0c95c4eaa165c"
+    },
+    "docs/NATIVE_GAUGE_TRANSFER_WILSON_DISCRETE_HEAT_INSERTION_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "6ac606cf7120b90f2061c65aad6ba6cea0d17d0e13a116dfafc01f8f662df8c3",
+      "blob": "1e98f6b0fd8c213fd735dd3b6e3b7f809e94c757"
+    },
+    "docs/NATIVE_GAUGE_TRANSFER_WILSON_PERRON_CORRECTION_NEGATIVE_SIGN_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "1b96035dedad44e65b29d2024ffbd27c96076255d415d9b6a4c05379abe4b7d4",
+      "blob": "5d77723f0def67ffc41175e229e2c1bdf2b03903"
+    },
+    "docs/NATIVE_GAUGE_TRANSFER_WILSON_SECOND_ORDER_MULTIPLIER_BOUNDED_THEOREM_NOTE_2026-09-07.md": {
+      "sha256": "b6268763cf6dd9ee4dd6c010557d01cc0e3965a43b5e87b73047f9f058d0f2b5",
+      "blob": "fac69d63e40e8d6d4363daa8218e0dda3ea5f417"
+    },
+    "docs/SPIN_HALF_CUBIC_ICE_FINITE_DETUNING_PROJECTOR_MAXWELL_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "c1cc8df7ae97504527fd26195e65670ad6ccf4e01982d0665040662b22ba0d7e",
+      "blob": "0c847a5b10928b4d3bf0eb35b30e523b52468d8d"
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "2aaadaac5b151b70b3da99609dde9cd601bfbd9280a175cdcad0f7b5470a7e3c",
+      "blob": "def332b4959aa359caaafb8bdea3f06d528381eb"
+    },
+    "logs/runner-cache/native_gauge_transfer_full_top_second_order_2026_09_07.txt": {
+      "sha256": "667f5551f91aa77739824047e983787747dd20651eee9637d1a3513f5c5b94c0",
+      "blob": "fa4240d30b523cd8ff38dc5de9151a277b6b5551"
+    },
+    "logs/runner-cache/native_gauge_transfer_killed_heat_second_order_kernel_2026_09_07.txt": {
+      "sha256": "79297cb0b9342a52d3ba5d2822156a04d3146a17b824edc97571ca4d8df27567",
+      "blob": "fe1772612b492699fc28b042b7917b702d5b33d9"
+    },
+    "logs/runner-cache/native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07.txt": {
+      "sha256": "01c1c1a21c7f8004d68c068c9b83aa28e97b7f24a174f3e59e5479a633f947fd",
+      "blob": "ed4b9b39f6f78ad5e6fb008a12a93d7463e2596a"
+    },
+    "logs/runner-cache/native_gauge_transfer_wilson_discrete_heat_insertion_2026_09_07.txt": {
+      "sha256": "edb5b32a90dbb7ef03db998c95e29b4e93f9d8f345d973faa43e73f372a79e8a",
+      "blob": "9d8b70769454963e480da4e9a9a047e2b3b253e8"
+    },
+    "logs/runner-cache/native_gauge_transfer_wilson_perron_correction_negative_sign_check_2026_09_07.txt": {
+      "sha256": "ae01d3c4d45712c24a41fc306eda10c38a52bc1d3d899ac9013d085004cc983b",
+      "blob": "54d1bb3fb202ba8bc6a90e7cb132ad352d8966ed"
+    },
+    "logs/runner-cache/native_gauge_transfer_wilson_second_order_multiplier_2026_09_07.txt": {
+      "sha256": "74a3cd38afd69d58a5dda752642e75551dd068a4db2ae8d7c492deb82e07edcf",
+      "blob": "9a801153115f6e618ea66072084be8454a26aac5"
+    },
+    "logs/runner-cache/native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07.txt": {
+      "sha256": "c59b3962a947d1e9f85cc86d7bbd7fe8e2e01d695ec345ab383872cdf64e1a6d",
+      "blob": "ccc4e9afe85178ba588c6788f4e192e518d21760"
+    },
+    "logs/runner-cache/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.txt": {
+      "sha256": "727dffe2ba61951b221a9429de6e0a533a127e794dab73b89604f8e593ffdf1f",
+      "blob": "49d412bed2f6cc9deb5204d427c62f5919b4f27c"
+    },
+    "logs/runner-cache/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.txt": {
+      "sha256": "2f91ad06c0f82d679398cc23682d275024e1ca268453597ed85b6d9fd02e1c10",
+      "blob": "6b0aded4933078ce975f3a454f06e2710cba2aa4"
+    },
+    "logs/runner-cache/spin_half_cubic_ice_projector_first_corrected_2026_09_07.txt": {
+      "sha256": "77c66806bb32d168fb54c3ee7fa4fc0a1678254fc69be59a0fb6d6f039e77547",
+      "blob": "37d1931dbb792f617e4f6093ddf4f04e8a82d510"
+    },
+    "logs/runner-cache/spin_half_cubic_ice_projector_historical_original_2026_09_03.txt": {
+      "sha256": "de9be2beb26b671baed19e836ade9f0277fa6d0783863244da5684282e1c069d",
+      "blob": "949ccd32a16d9e4a3b5eee9220563976612b0ad8"
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "0dbb2960d9a88320751fe791080e0e92e383cad9f64eac3efca3ef5c001b35ec",
+      "blob": "10a76af6469ae844a3ebd0fad20bbfc0d878132e"
+    },
+    "scripts/native_gauge_transfer_full_top_second_order_2026_09_07.py": {
+      "sha256": "f36564244394ff196ffcc17e94f1a26d97c5055c586fabe2f4aebca7a7336790",
+      "blob": "026d3332fe8cad9223b714161f4a180fe792f972"
+    },
+    "scripts/native_gauge_transfer_killed_heat_second_order_kernel_2026_09_07.py": {
+      "sha256": "af625ffe8bce798fef38c56f262fe819717c51534a0c66a9d4e750c2067cb54f",
+      "blob": "339e6043f26a1a340f3dff560f713b4ee1562303"
+    },
+    "scripts/native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07.py": {
+      "sha256": "5e145a61c42e63066045a17a4715143a78a496710e5a1abf9daa4b506f25f8a1",
+      "blob": "5a64019900500c3ed904ee0b5ce7ba108302c86b"
+    },
+    "scripts/native_gauge_transfer_wilson_discrete_heat_insertion_2026_09_07.py": {
+      "sha256": "e6b8f38402ebe9a50196d7251ec52068deadb7222f5165945d10a589d99d66a2",
+      "blob": "8b5a081f8b4ceac97456417e625559e2045b235a"
+    },
+    "scripts/native_gauge_transfer_wilson_perron_correction_negative_sign_check_2026_09_07.py": {
+      "sha256": "d046ca8f4c322cb46f2dab1009640956eb62bdfe31e6df93437b0486e1457a84",
+      "blob": "9ab7403d40dc070f18f3fddbecaf9169dfe02fab"
+    },
+    "scripts/native_gauge_transfer_wilson_second_order_multiplier_2026_09_07.py": {
+      "sha256": "c5d3ae664927ae3fb89ad015c9d5e568f9b1ae407260808cb99daacd088cf5b9",
+      "blob": "444e939534c7be52bacf0e91d04b56924536a441"
+    },
+    "scripts/native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07.py": {
+      "sha256": "0964be30e2570d0c3d6d4f509269028e654390e611ef00a7fbb326344ae9c321",
+      "blob": "2ad66e6d6fcd4f15f09da5984849927565a709f9"
+    },
+    "scripts/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.py": {
+      "sha256": "8d6216ecb280a1d0e42ede4a8c969f05c452b88887a506a8f962d3ea58799fac",
+      "blob": "ec91917355ba2e3c2896779a072b5478b5181cc6"
+    },
+    "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py": {
+      "sha256": "a710a92baaaa7492cfeb7eaaa8db1e88cf902b6abc3531d4d9031a90310e3210",
+      "blob": "0224e34b3416ec59e5b9357936d5b58135f0dfe9"
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "sha256": "b899691f91d16882204ee4d814ecd25b58cadcd7525f1c87ecf9540992c2f2cd",
+      "blob": "da9399eecb722d6a8cfb1cc1d25e568c15533fb4"
+    }
+  },
+  "science_review_reports": {
+    "backlog-native-wilson-review/confirmation/REPORT.md": "fdb410d5b5b6dc69dab8ff573efdb071a341c8cac5f95725725f464d3fe81619",
+    "backlog-native-wilson-review/confirmation/RECEIPT.json": "450871592b33998e8c453e7544b1a3e6fac0bd31f23a4c651b4bef49d2267919",
+    "backlog-8008-review/confirmation/REPORT.md": "9b23ebe1eb0939bc10b4fbde198e8bf1722cf1dfb26bea07f3331bc8d5e328af",
+    "backlog-8008-review/confirmation/RECEIPT.json": "f1fa478561131a6b671abd99a8190dacf65d05082b847f040fdf9f29c5ad578a",
+    "backlog-field-projector-review/confirmation/publication/production-attempt-final/REPORT.md": "fddf2519e2d3f295b4d87e10364035771151589a3826d5ff810e2623884fcecf",
+    "backlog-field-projector-review/confirmation/publication/production-attempt-final/FINAL_RECEIPT.json": "c0672dc7bf2e50044f83e735b911288da7d26706fc8ef6cac116e9ecad4cf938",
+    "backlog-8008-review/confirmation/wave10/ACKNOWLEDGMENT.json": "6e772075490b610fc91a042d8e1cad46fa8a851a60985da2970b88d141708012",
+    "backlog-field-projector-review/confirmation/publication/integration-wave10/MANIFEST_CONFIRMATION.json": "e0a53475fde72ccb05041cd7a16bdaf9b865cd683773d527c2faf4ebd9fa0246",
+    "backlog-field-projector-review/confirmation/publication/integration-wave10/MANIFEST_CONFIRMATION.md": "39b821ce92ad4e4a5b6aa3eec205a7ccc02f4a6a51718d80a308d94ddd8692df"
+  },
+  "full_validation_runs": 1,
+  "integration_retries": 0,
+  "audit_requested_or_invoked": false,
+  "units": [
+    "native_wilson_8007",
+    "native_heat_8008",
+    "finite_protocol_projector"
+  ]
+}

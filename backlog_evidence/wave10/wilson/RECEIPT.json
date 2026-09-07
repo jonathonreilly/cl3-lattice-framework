@@ -1,0 +1,78 @@
+{
+  "verdict": "PASS",
+  "scope": "bounded conditional mathematical source only; no audit status",
+  "reviewer_session": "/root/backlog_batch_contract",
+  "author_session": "/root/backlog_8001_review",
+  "confirmed_utc": "2026-09-07T19:33:18.948894+00:00",
+  "base": "b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92",
+  "current_main_binding": "b0f7089ea5dd6e26e0d58a8a36a77d36c50a8e7a",
+  "raw_head": "9450957fc039bf362bd2ca3d71d301d35d55cf40",
+  "candidate_tree": "2a4c88424c328e3c093d57db1044b7bb4dfe4fc8",
+  "candidate_patch_sha256": "8c1f2877dbf7a2d300aa56921bb4c81de0c057629707ec6d7f83d63003240c20",
+  "author_correction_patch_sha256": "c03125e5dc9c0adfd67c290827410938dda5d049c00fcf50494b12eeb9234fba",
+  "author_receipt_sha256": "589225c2a092dde252dc7caae0c7bf4ac6ea057cc9db5b364c45728a9d5a8ae0",
+  "original_review_receipt_sha256": "8d0977aec9cbc0d991fbf694892ef5e586f375c49941d10b39d91c90209f0b17",
+  "final_inventory_sha256": "adc83b8956cce8297a34836f26adfddc009f205c0e61abdf77d07072e7e6f6ae",
+  "final_input_closure_sha256": "620946b48457256a032038ceb4f3e5b457514c5bbd618bf52aadaa87b008cf26",
+  "findings": {
+    "F1": "CLOSED",
+    "F2": "CLOSED",
+    "F3": "CLOSED"
+  },
+  "complete_final_paths": 80,
+  "correction_paths": [
+    ".claude/science/physics-loops/native-wilson-second-order-20260907/SOURCE_CORRECTION_2026-09-07.md",
+    "docs/NATIVE_GAUGE_TRANSFER_WILSON_SECOND_ORDER_MULTIPLIER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "logs/runner-cache/native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07.txt",
+    "logs/runner-cache/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.txt",
+    "scripts/audit_packet_script_deps.py",
+    "scripts/native_gauge_transfer_wilson_second_order_multiplier_quadrature_check_2026_09_07.py",
+    "scripts/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.py"
+  ],
+  "all64_historical_paths_unchanged": true,
+  "current_main_additive_registries_require_final_integration_binding": true,
+  "independent_checks": {
+    "affected_runners": 2,
+    "affected_counted_checks": 132,
+    "actual_affected_mutants_rejected": 9,
+    "original_false_negatives_rejected": 5,
+    "real_consumer_pristine": 2,
+    "real_consumer_adverse": 10,
+    "affected_actual_source_cache_drift": 2,
+    "independent_native_comparisons": 22,
+    "quadrature_mesh_records_preserved": 12
+  },
+  "final_notes": [
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_WILSON_DISCRETE_HEAT_INSERTION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "6ac606cf7120b90f2061c65aad6ba6cea0d17d0e13a116dfafc01f8f662df8c3",
+      "git_blob": "1e98f6b0fd8c213fd735dd3b6e3b7f809e94c757"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_WILSON_PERRON_CORRECTION_NEGATIVE_SIGN_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "1b96035dedad44e65b29d2024ffbd27c96076255d415d9b6a4c05379abe4b7d4",
+      "git_blob": "5d77723f0def67ffc41175e229e2c1bdf2b03903"
+    },
+    {
+      "path": "docs/NATIVE_GAUGE_TRANSFER_WILSON_SECOND_ORDER_MULTIPLIER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "b6268763cf6dd9ee4dd6c010557d01cc0e3965a43b5e87b73047f9f058d0f2b5",
+      "git_blob": "fac69d63e40e8d6d4363daa8218e0dda3ea5f417"
+    }
+  ],
+  "evidence_sha256": {
+    "REPORT.md": "fdb410d5b5b6dc69dab8ff573efdb071a341c8cac5f95725725f464d3fe81619",
+    "BINDINGS.json": "72ab53ba1b22ffee5589aab14cb8be6158b95ac4fbbb846c27f0051934e95a13",
+    "AFFECTED_EXECUTION.json": "c23ab7069bf5f59f8844962c2aa5e99634e6c29f3319506f3417e0d330ec3858",
+    "ACTUAL_MUTANTS.json": "60121ab40a340c2f7c5d841491bf1d62923bedd2b377075c9b020cdab2279e80",
+    "CONSUMER_CONTROLS.json": "dfe20f78361d071abac08e839af1087e1f22a3d764a02950bab84c75bbcd27b8",
+    "CACHE_CONTROLS.json": "8f98d6d910cd29ad90f84b2114b6eaf6fce2bf475a3c6eeb3f9dd46ae1dc5241",
+    "INDEPENDENT_NATIVE.json": "31b714c9dff35ffb6193b78c2e3448b7f5b262e08937a4efe4df3cfcb06e84fd",
+    "ALL_MESH_CONFIRMATION.json": "9447464aa18546cbc5b77069d84fad9f53136e43fed17a0744618d9006759eca",
+    "FINAL_NOTE_BINDINGS.json": "22d1bdaabb1efe93a32309eeedc15bfeb28b2fd58a450d537ef71950044d9c3c",
+    "confirm.py": "80014498d3166191ef806ee72b96c0cf1226835da2f3b95fea29237216d5d09e",
+    "controls.py": "22fb73e7d965f56d8200218692403f9145e4120b932ac6f2c1d39954fe502494",
+    "replay_consumers.py": "7cbb7520a72582d4071991f8cda4f76d752aea8fa9db04fd8fe6acd2e108691e",
+    "replay_independent_native.py": "797d2c413add4618e0e36e82b81a0cefc0d10de1ba431ca68511831ca9663af8"
+  },
+  "no_source_gate_audit_or_external_mutation": true
+}
