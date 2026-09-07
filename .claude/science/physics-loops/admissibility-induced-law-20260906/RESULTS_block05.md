@@ -79,3 +79,38 @@ Every linear extension of the product partial order on a rectangle — every ord
 23 of 23 mutations fail in exactly their expected family.
 
 Every mutation exits 1 and fails exactly one check in its declared family; the three F-family claim injections are caught by the forbidden-phrase scan (F2) and the name injection by the section scan (F3). Raw per-mutation stdout in the seat's scratch directory (`census/<mutation>.txt`).
+
+## Supervisor fold (2026-09-07) — final certificate before the checker
+
+- Line-by-line review of the runner (901 lines) and the note (578 lines): the P6 algebra re-derived (`P(c | c, c) = K(c → c) Σ_a K(c → a)^2/(K^2)(a, c) ≥ K(c → c)` by Cauchy–Schwarz, equality iff `K(c → ·) = (K^2)(c → ·)`, which forces `p = q = r` through the orthogonal and parallel orbit equalities); the P5 partial sums checked in the corrected order; the runner's surname needle assembled from character codes (no label in the runner); F3 verified.
+- Fold: the certified stdout was 6,031 characters (31 over the cap) — the `lattice_wide` N5 line and the scope line shortened to 5,989; the mutation `claim_unilateral-field_in_theorem` renamed `claim_author_in_theorem`. Cache re-pinned: runner sha256 `5104a93e01aa413390030eeb8193040e203a0646910461de9b0af00d7400407e`, input fingerprint `1a49b041364505ca04c08d5a2ea09b76fe03b3eab5f4d3eb1fa17d6e6d8e51cf`, exit 0, elapsed 40.55 s, `TOTAL: PASS=38 FAIL=0`.
+- Gates on the final tree: vocab lint 0; pipeline PASS (`graph_delta=acknowledged`, two passes: the first rebuilds the citation graph and rewrites the manifest, the second acknowledges it); changed-evidence `checked=5 failures=0`; audit_lint strict OK; `git diff --check` clean; manifest 4765 nodes, 11868 edges (+1 node).
+
+## Final census (23 mutations, one helper invocation each, 4 in parallel; expected/observed read from raw stdout at the final runner sha 5104a93e…)
+
+| mutation | expected | observed | FAIL count | failing checks | exit | in-family |
+|---|---|---|---|---|---|---|
+| `extension_count_wrong` | B | B | 1 | B1 lin | 1 | yes |
+| `recorded_set_forged` | B | B | 1 | B2 eve | 1 | yes |
+| `nonmonotone_order_accepted` | B | B | 1 | B6 the | 1 | yes |
+| `antidiagonal_sweep_accepted` | B | B | 1 | B5 the | 1 | yes |
+| `bridge_identity_broken` | C | C | 1 | C1 P2: | 1 | yes |
+| `transpose_symmetry_broken` | C | C | 1 | C3 P3: | 1 | yes |
+| `product_formula_mismatch` | C | C | 1 | C4 P2: | 1 | yes |
+| `asymmetric_bridge_symmetry_forged` | C | C | 1 | C2 r(s | 1 | yes |
+| `column_chain_forged` | D | D | 1 | D2 P4: | 1 | yes |
+| `corner_law_wrong_denominator` | D | D | 1 | D4 P5: | 1 | yes |
+| `corner_independence_forged` | D | D | 1 | D5 P5: | 1 | yes |
+| `diagonal_pair_law_wrong` | D | D | 1 | D6 E4 | 1 | yes |
+| `row_kernel_wrong` | D | D | 1 | D1 the | 1 | yes |
+| `staircase_claimed_chain` | E | E | 1 | E2 P6 | 1 | yes |
+| `mirror_law_equal_claimed` | E | E | 1 | E4 P7( | 1 | yes |
+| `snake_column_claimed_chain` | E | E | 1 | E7 P7( | 1 | yes |
+| `snake_row_kernel_not_invariant` | E | E | 1 | E5 P7( | 1 | yes |
+| `minimal_staircase_conditional_off` | E | E | 1 | E1 P6: | 1 | yes |
+| `constant_rule_defect_claimed` | E | E | 1 | E9 the | 1 | yes |
+| `claim_static_equals_formation` | F | F | 1 | F2 the | 1 | yes |
+| `claim_all_orders_same_law` | F | F | 1 | F2 the | 1 | yes |
+| `claim_staircases_chains` | F | F | 1 | F2 the | 1 | yes |
+| `claim_author_in_theorem` | F | F | 1 | F3 the | 1 | yes |
+in-family: 23/23
