@@ -1,0 +1,13 @@
+# Independent cold comparison of full-cube geometry import
+
+Reviewed orbital DERIVATION.md SHA256 541ec391d4a51b2a6996a5f9b9db2677eb40332f5db9df47b29574a2cc78df58, after freezing our analytical proof6058464c. Verdict: PASS. This is a proof/interface comparison, not a claim to have independently rerun orbital's28 finite assertions.
+
+The onto gauge-tree isometry is exactly the full invariant boundary space, with one simultaneous conjugation acting on all five based loops. The seven normalized Haar tree integrations give1. Gauge invariance of the full spatial multiplication and central edge convolution proves a reducing restriction, so the transfer powers glue all intermediate boundary links without the earlier marked-source projection. The24-face action and scaling differ correctly from the22-face source model.
+
+Independently, before reading the orbital text, I derived the cycle-space interpretation and sent it to root: in orthonormal cycle coordinates the temporal nuisance minimization removes link gradients, leaving k||zR-zL||². With outward face orientations, the six-face Gram is4I minus octahedron adjacency, giving nonzero4×3 and6×2. Orbital's exact metric M=(CC*)^-1, K=B*B and projection identity J*Pcycle J=M implement precisely this statement in its tree-chord coordinates. The generalized eigenvalue problem, rather than ordinary eigenvalues of K, is essential. Its full17-variable Schur comparison supports that distinction.
+
+The two-boundary mode precisions are lambda/2 and lambda/2+2k, so covariance3H^-1 gives6/lambda and6/(lambda+4k). The Gaussian coefficients A=(lambda+2k)/12 and B=k/3, width sqrt(lambda(lambda+4k))/6, and equivalent artanh/asinh Mehler time expressions all agree. Fixed metric and oscillator unitaries preserve the simultaneous adjoint action.
+
+The lowest singlet count is also correct. There is no invariant adjoint vector. The unique invariant symmetric color bilinear gives Sym² of the three lowest-frequency species, dimension6; separate class-function projections would incorrectly discard the three mixed-species states. This is a property of the limiting supplied model, not a physical gap identification.
+
+The dimensions and analytical handoff are exact:136 total,80 joint boundary,56 nuisance, beta^-20 operator amplitude. Our uniform proof independently retains the first marginal Taylor term, so it does not import an inapplicable two-source cancellation. The covariance import pending in our frozen proof is supplied by this reviewed exact geometry. No mathematical correction found. Original proofs remain unchanged; this sidecar records the completed interface.

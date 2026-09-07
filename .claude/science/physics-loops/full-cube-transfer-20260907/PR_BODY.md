@@ -1,0 +1,9 @@
+The earlier marked-character operator required an additional compression/reset contract when taking powers. This block treats the full gauge-invariant cube transfer with all 24 faces: its physical Hilbert space reduces the supplied transfer, so powers genuinely glue the intermediate link variables.
+
+The first note derives the exact 5+5+7 chord geometry, modal covariance, Haar metric factor, and global-singlet oscillator spectrum. The second proves a uniform kernel bound and the simultaneous sequence kappa=n²/t², beta=n^204. Actual norm-normalized powers converge under the specified chart and oscillator identification to exp(-t[2(N1+N2+N3)+sqrt(6)(N4+N5)]). The first positive limiting singlet energy is 4 with multiplicity 6.
+
+This is conditional mathematics for the supplied finite Wilson model. It does not select physical time, action, continuum space, or a Yang–Mills gap. The constants and onset are finite but not numerically certified. The chart map is a partial isometry, with omitted-power error explicitly controlled.
+
+Validation and independent review receipts are preserved in the block28 packet. The shared exact runner checks 31 geometric, metric, and dimensional identities under a 180-second/180-MiB cap; the analytic uniform theorem is not represented as a finite numerical simulation. Full pipeline and strict lint passed. Changed-science readiness passed all six affected claims against b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92 with no failures. Vocabulary lint and diff checks passed. The first pipeline attempt was stopped by its source-stability guard after packet writes; that orchestration failure is preserved, and the frozen retry passed. Generated audit authority is stripped; no audit verdict is applied.
+
+Stacked on #8016. The source delta is two notes and one shared runner, with source-local provenance, preserved failures, independent proof reviews, and an actual SHA/input-bound cache.

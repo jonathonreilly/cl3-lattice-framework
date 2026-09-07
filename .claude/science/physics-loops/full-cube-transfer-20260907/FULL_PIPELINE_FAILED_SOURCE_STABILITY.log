@@ -1,0 +1,52 @@
+began full build 194241ef3948
+==> 0-ledger/18 ledger_io.py --materialize (sharded ledger -> monolith read cache)
+cache already current
+==> 0/18 check_axiom_premise_clean.py (guard: axiom/primitive premise docs stay pure)
+  OK   minimal_axioms (docs/MINIMAL_AXIOMS_2026-06-29.md): pure premise content
+  OK   scale_reference_primitive (docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md): pure premise content
+  OK   kinetic_isotropy_primitive (docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md): pure premise content
+  OK   realized_state_primitive (docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md): pure premise content
+==> 0a/18 audit_model_family_normalization_guard.py (guard: model/family provenance stays compatible)
+audit_model_family_normalization_guard: PASS
+==> 1/18 run_citation_graph_build.py (serialized graph build)
+Wrote docs/audit/data/citation_graph.json
+  nodes: 4803  edges: 11981
+  roots: 1989  leaves: 2111
+  runners attached: 3672
+  claim_type_seed_hint_counts: {'meta': 377, 'bounded_theorem': 2880, 'open_gate': 240, 'no_go': 356, 'positive_theorem': 676, 'none': 271, 'decoration': 3}
+==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)
+Wrote docs/audit/data/citation_graph_manifest.json (4803 nodes, 11981 edges)
+==> 1c/18 compute_load_bearing.py pre-seed topology refresh
+Updated docs/audit/data/audit_ledger.json
+Wrote   docs/audit/data/load_bearing_summary.json
+  thresholds: {'critical_in_degree': 15, 'critical_descendants': 250, 'high_in_degree': 5, 'high_descendants': 100, 'medium_in_degree': 2, 'medium_descendants': 5}
+  criticality (topology-only): {'leaf': 2573, 'critical': 742, 'medium': 1182, 'high': 306}
+==> 2/18 seed_audit_ledger.py
+Wrote docs/audit/data/audit_ledger.json
+  rows: 4517
+  newly seeded: 42
+  preserved (audit kept): 4475
+  migrated path aliases: 0
+  preserved archived failed: 0
+  re-audit required (hash changed): 0
+  dropped (note removed): 0
+  dropped (gated source): 286
+==> 3/18 sanitize_legacy_audit_artifacts.py
+Sanitized docs/audit/data/audit_ledger.json
+==> 5/18 compute_load_bearing.py
+Updated docs/audit/data/audit_ledger.json
+Wrote   docs/audit/data/load_bearing_summary.json
+  thresholds: {'critical_in_degree': 15, 'critical_descendants': 250, 'high_in_degree': 5, 'high_descendants': 100, 'medium_in_degree': 2, 'medium_descendants': 5}
+  criticality (topology-only): {'leaf': 2573, 'critical': 742, 'medium': 1182, 'high': 306}
+==> 3a/18 seed_audit_ledger.py fixed-point receipt
+Wrote docs/audit/data/audit_ledger.json
+  rows: 4517
+  newly seeded: 0
+  preserved (audit kept): 4517
+  migrated path aliases: 0
+  preserved archived failed: 0
+  re-audit required (hash changed): 0
+  dropped (note removed): 0
+  dropped (gated source): 286
+==> 3b/18 static_pipeline_checkpoint.py prepare (fresh graph/seed proof)
+full-build source inputs changed during graph generation
