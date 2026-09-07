@@ -52,3 +52,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the two-site route is closed for every coupling (exact block sums 3.17, 2.24, 2.38 > 2); next per the queue refresh: the Pickard column theorem, the plane widths, the self-made Hermitian Gaussian instance (gravity consumer, re-scoped by PROBES_gravity_consumer_20260907.md)"
 ```
+
+# Trace gate — block 05, opened for review (PR #8003)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 02's refresh item 2: rows and columns as path chains; the column statement from the corner-pair condition; the monotone-order class"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+```
