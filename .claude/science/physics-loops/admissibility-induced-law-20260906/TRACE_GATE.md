@@ -41,3 +41,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the silent triples (3,1,2), (5,2,4), (7,3,5) by the two-site block criterion (OPPORTUNITY_QUEUE item 1); consumers: the parked bridge decision material (not fired), the gravity lane's action question (in the region the static law is one object)"
 ```
+
+# Trace gate — block 04, at landing (PR #8002)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "block 03's next question: the silent triples (3,1,2), (5,2,4), (7,3,5) under a sharper criterion"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "the two-site route is closed for every coupling (exact block sums 3.17, 2.24, 2.38 > 2); next per the queue refresh: the Pickard column theorem, the plane widths, the self-made Hermitian Gaussian instance (gravity consumer, re-scoped by PROBES_gravity_consumer_20260907.md)"
+```

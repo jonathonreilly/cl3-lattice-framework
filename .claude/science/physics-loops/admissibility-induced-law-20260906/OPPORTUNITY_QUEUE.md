@@ -31,3 +31,13 @@ Block 03 landed (PR #8000): the exact region of the one-site criterion, with the
 3. **Static strip widths 4–5 toward the plane** (unchanged; the width-3 algebraic enclosure is the template).
 4. **The Gaussian instance on the gravity fixture** (unchanged).
 5. **Formation-law uniqueness on Z^3** (unchanged; the row-sweep formation law is a Markov chain of rows — its uniqueness is the Perron–Frobenius statement of block 02 extended to the plane).
+
+## Refresh at block 04 close (2026-09-07)
+
+Block 04 landed (PR #8002): the two-site block criterion is silent at the three silent triples for every coupling (exact obstruction). The gravity probes re-scoped item 4. Ranked next:
+
+1. **The Pickard column theorem under the row sweep** (from the block-02 refresh): rows AND columns are path chains; prove the column statement from the corner-pair condition and execute it; one block, exact.
+2. **Static strip widths 4–5 toward the plane**: the width-3 algebraic enclosure is the template; the trend in W; one block.
+3. **The Gaussian instance, self-made** (re-scoped from "on the gravity fixture", see `PROBES_gravity_consumer_20260907.md`): the static/formation distinction for a Hermitian positive-definite precision on the smallest window with a plaquette, the disconnection rule as the record reading, exact over the Gaussian rationals; the Gaussian twin of block 01's Theorem B; one small block. Consumer: the gravity lane's K2 sentence, the day its chain is on main.
+4. **Formation-law uniqueness on Z^3** (unchanged).
+5. **The silent triples by a non-criterion route**: a transfer-matrix or expansion route, or an ordering (contour) argument on the other side — each heavy; not before 1–3. Exactly computable block criteria are closed (block 04).
