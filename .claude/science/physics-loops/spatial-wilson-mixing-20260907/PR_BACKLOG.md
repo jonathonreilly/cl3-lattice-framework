@@ -1,3 +1,3 @@
 # Review publication
 
-Full current-main validation is running. Next: preserve one affected claim's readiness before generated cleanup, commit the bounded theorem packet, push the isolated branch and open one review PR against main. Never merge or push science directly to main.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8009 is open and mergeable. process_contracts passed on the verified publication head. Source and runner science remains frozen; later current-main synchronization preserved it. The full pipeline receipt retains its actual e6a50983b4 pin. No science PR was merged by this campaign.
