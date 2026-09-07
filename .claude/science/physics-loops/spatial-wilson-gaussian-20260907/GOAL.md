@@ -1,0 +1,3 @@
+# Actual nonlinear cube saddle and exact central Gaussian spectrum
+
+Block22 joins two reviewed theorems for the same supplied finite Wilson/Haar cube. The structural source proves beta^-4 dilated HS convergence with a symbolic positive covariance. The downstream source computes that covariance, normalized Haar chart density and central invariant Gaussian spectrum. It thereby identifies fixed actual eigenbranch limits. No reverse numerical dependency, physical beta, finite-beta onset, dressed embedding or thermodynamic claim is introduced. This packet is a retrospective index; original preregistrations are preserved. Model Astra low, campaign deadline22:59:43UTC.

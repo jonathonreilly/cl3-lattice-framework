@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/matrices/inverse.py", line 326, in _inv_DM
+    dMi, den = dM.inv_den()
+               ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/polys/matrices/domainmatrix.py", line 2743, in inv_den
+    return self.solve_den(I, method=method)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/polys/matrices/domainmatrix.py", line 2883, in solve_den
+    xnum, xden = self.solve_den_rref(b)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/polys/matrices/domainmatrix.py", line 2935, in solve_den_rref
+    raise DMNonInvertibleMatrixError("Non-unique solution.")
+sympy.polys.matrices.exceptions.DMNonInvertibleMatrixError: Non-unique solution.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-autonomous-primary-20260907/cube-source-gaussian/check.py", line 50, in <module>
+    ck('different tree',set(tr)!=set(tr2));ck('gauge independent covariance',ss2*h2.inv()*ss2.T==C)
+                                                                                 ^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/matrices/matrixbase.py", line 5223, in inv
+    return _inv(self, method=method, iszerofunc=iszerofunc,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/matrices/inverse.py", line 504, in _inv
+    rv = _inv_DM(dM)
+         ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/matrices/inverse.py", line 328, in _inv_DM
+    raise NonInvertibleMatrixError("Matrix det == 0; not invertible.")
+sympy.matrices.exceptions.NonInvertibleMatrixError: Matrix det == 0; not invertible.

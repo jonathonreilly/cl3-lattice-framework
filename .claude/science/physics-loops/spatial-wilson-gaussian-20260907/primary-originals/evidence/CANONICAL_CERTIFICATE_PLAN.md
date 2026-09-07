@@ -1,0 +1,3 @@
+# Canonical certificate plan
+
+Before canonical merge execution: combine the independently frozen17 exact graph/elimination controls and8 exact normalization/spectral controls into one self-contained25-check runner. No imported scratch execution or hidden runtime helper. Preserve all raw graph/H/inverse/Schur/determinant fields and normalization output; the17-check list remains the first portion and the8-check list the final portion. Default per_* andTOTAL output stays concise; --json emits all exact data. Start180second alarm and one-BLAS-thread environment before symbolic imports, require positive RSS below180MiB and total elapsedbelow180. Preserve original sources, both failed controls and receipts. No new numerical saddle fit or result-dependent fixtures.
