@@ -131,3 +131,9 @@ The one combined exact-base/tree mechanical gate remains mandatory. This is an
 interpretation of the existing landed contract, independently challenged by
 two Astra xhigh agents; it does not replace full review with summaries or
 mechanical PASS tokens and introduces no new scientific status.
+
+The third combined landing is the 47-path conditional light-germ source unit
+at `16c2d6860e168ec8e5e8f66296410265e5d7226d`. Its eleven constituent PRs were already
+closed as duplicates; the successor remains open for the remaining science.
+Three complete mechanical runs have served three source batches, with zero
+integration retries and no formal audit.

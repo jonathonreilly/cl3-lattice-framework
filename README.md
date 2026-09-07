@@ -66,3 +66,7 @@ git -C /tmp/ai-exec-wt commit -am "chore(ai): <what moved> [skip ci]"
 git -C /tmp/ai-exec-wt push origin ai/execution
 git worktree remove /tmp/ai-exec-wt
 ```
+
+The third reviewed source landing and its exact validation/provenance receipts
+are in [backlog_evidence/wave3](backlog_evidence/wave3). Shared statuses keep
+landed source, pending review and applied audit standing separate.

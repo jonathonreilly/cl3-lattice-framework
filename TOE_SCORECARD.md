@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
 Verified source/status snapshot: 2026-09-07, main
-`a8f84aaad75fdcb790ba6ba094e4275e237d9a5a`. This is a planning map, not
+`16c2d6860e168ec8e5e8f66296410265e5d7226d`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -16,8 +16,8 @@ finite additivity and I(empty)=0. Older proofs requiring those clauses need
 an explicit supplier. README paraphrases and old skills are not substitutes.
 
 The tracked ledger contains 4,475 rows: 4,105 non-meta science rows and 370
-meta rows. The latest seven source notes have not been added to the applied
-ledger: mechanical validation generated seven unaudited rows locally, then
+meta rows. The latest eighteen source notes have not been added to the applied
+ledger: mechanical validation generated eighteen unaudited rows locally, then
 stripped those generated files. No audit status was applied. Every tracked science row has audit_status and effective_status
 `unaudited`. Counts were computed from every tracked shard; see
 [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
@@ -67,3 +67,10 @@ above have not thereby closed or disappeared.
   in their assigned artifacts instead of racing to edit shared status.
 - Changed source or PR heads require affected-scope reinspection, not a
   mandatory reread of unrelated unchanged material.
+
+The eleven-note conditional light-germ/local-dynamics unit is now source-reviewed
+and landed at `16c2d6860e168ec8e5e8f66296410265e5d7226d`. Its original constituent sources came
+from eleven already-consolidated PRs; #7937 remains open for its other science.
+The selected action, physical electromagnetic interpretation, matter/gauge speed
+bridge, microscopic readout and time selection remain open. Three source
+landing batches passed combined validation with zero integration retries.

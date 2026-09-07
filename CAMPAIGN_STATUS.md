@@ -10,8 +10,9 @@ Science branch: physics-loop/toe-campaign-20260907, based on main
 `f6f861e8f0c7870b3a9a200a020ec5ca0b14be38`; that campaign checkpoint remains
 unlanded. Separately, reviewed backlog Record/battery science and the revised
 review process landed at `2d0f551dcd8bd444daee85b97811cda53da0661e`; the
-corrected four-note admissibility unit then landed at current main
-`a8f84aaad75fdcb790ba6ba094e4275e237d9a5a`.
+corrected four-note admissibility unit then landed at
+`a8f84aaad75fdcb790ba6ba094e4275e237d9a5a`; the eleven-note conditional light unit now lands at
+current main `16c2d6860e168ec8e5e8f66296410265e5d7226d`.
 
 ## Common evidence
 
@@ -26,7 +27,7 @@ corrected four-note admissibility unit then landed at current main
 
 | Owner | Target | Current evidence/next check |
 |---|---|---|
-| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 38 further duplicates consolidated; two science batches landed; coordinating light integration, admissibility successor fixes and autonomous Record review; curved dependencies held |
+| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 38 further duplicates consolidated; three science batches landed; coordinating light-backreaction review, admissibility successor fixes and autonomous Record review; curved dependencies held |
 | Formation author + independent checker | Formation/static interface | Conditional Z3 law constructed with finite ancestry and certified window/correlation bounds; independent static/formation and adaptive-scheduling checks pass |
 | Matter author + independent checker | Native Record shared energy apparatus | Conditional finite-patch instrument proved with volume-uniform channel/full mean-energy error bounds; independent shared-battery/free-dwell calculation passes |
 | Field author + independent checker | Consistent physical field source/response | Source convention mismatch confirmed independently; exact finite invariant, corrected finite curvature and full-flux endpoint theorem packaged and checked |
@@ -67,7 +68,7 @@ question; no blanket disposition of that PR is asserted.
 
 ## Next bounded work
 
-1. Finish the light-germ corrections and original-reviewer confirmation,
+1. The light-germ unit is landed; continue the light-backreaction review,
    then land its independently reviewed source unit through one combined gate.
    Both Record/battery (#7983/#7996/#8001) and admissibility
    (#7998/#7999/#8000/#8002) are landed and closed; receipts are in

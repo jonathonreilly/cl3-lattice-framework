@@ -108,7 +108,7 @@ or declared landed by these duplicate closures.
 across 35 original open constituents. They are initial review scopes, not a
 claim that all inherited tower content has been reviewed. The light germ /
 finite-depth dynamics unit (47 source paths, 11 notes and 11 runners) is now
-confirmed PASS by its original reviewer against #7937's frozen head. The separate
+landed at `16c2d6860e168ec8e5e8f66296410265e5d7226d` after source PASS and combined validation. The separate
 fix author froze 37 corrections within the 47-path unit; 287 fresh checks,
 six actual scientific mutations and 73 actual cache-input mutations pass.
 The coordinator read every correction diff and independently verified all
@@ -149,10 +149,10 @@ fixing only that original delta on corrected current main; the same reviewer
 will confirm it. #8004 now has an independent inventory/source review in
 progress with the earlier Record reviewer. The curved reserved-source hold
 remains; no full curved-unit PASS is claimed. Light-germ F1–F8 corrections
-are independently confirmed and entering current-main combined validation.
+are independently confirmed and landed on main.
 
 See `backlog_evidence/wave2` for the complete landed source map, gate logs'
-hashes and closure receipts. Across two landing batches: two full validation
+hashes and closure receipts. Across three landing batches: three full validation
 runs, zero integration retries, no formal audit or status application.
 The reviewed coordinator-coverage clarification is in `AGENTS.md` and
 `backlog_evidence/coordinator-efficiency`; it preserves all independent review
@@ -193,3 +193,26 @@ the original reviewer must inspect the moved-head delta and rebind coverage.
 New #8005 (`462a58a883d266076ed9d4866a510ad980680c00`, 80 paths) extends
 #8004 with finite-reservoir and cell-isometry conditional source. It is queued;
 #8004's frozen review scope remains unchanged. No inherited PASS is assumed.
+
+### Light-germ source landed — 2026-09-07 16:24 UTC
+
+Commit `16c2d6860e168ec8e5e8f66296410265e5d7226d` lands all 47 reviewed
+source paths plus the regenerated manifest (+11 nodes, +31 edges). Source
+coverage includes all original deltas from #7840/#7884/#7886/#7887/#7906/
+#7907/#7913/#7915/#7917/#7920/#7921; these PRs were already closed during
+consolidation, so this landing does not change the open count. The remainder
+of #7937 is still open and carries its unreviewed obligations.
+
+The original reviewer confirmed the complete final source, all correction
+findings and exact committed integration. The pipeline, strict lint and eleven
+changed-evidence checks passed once, with zero retries. All 1,466 generated
+paths were preserved externally and stripped; every authored hash and the
+landed tree match the tested candidate. No audit or status application occurred.
+Receipts: `backlog_evidence/wave3`.
+
+Next: #8003's fifteen authored paths are corrected and undergoing original-
+reviewer confirmation on current main; the light-backreaction unit has six
+new notes/runners with only already-reviewed light parents in its screened
+actual import closure; #8004's moved-head source is being rebound and
+reviewed; the Eta pair-process partition is in source/dependency review.
+The three reserved PRs and the curved-covariance dependency hold remain.
