@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_2026_09_07.py
+runner_sha256: 73ae26a5dfaf71694fa299d8734cafbf74b7eebc8ce2e84a7e7d8daee10a1f22
+input_fingerprint_sha256: 39ea974b711e25e87a9afeeb0507749f8db1ac34e398c7fc3fc285de793f503d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 40.48
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
+AUDIT_TIMEOUT_SEC: 900
+scope: the monotone-order class on rectangles: one law mu_P, bridge, transpose, rows and columns chains, corner law, staircases, mirror and snake; exact
+mutation: none
+PASS: A1 the four declared audit inputs exist
+PASS: A2 axiom memo: the Admissibility and Record sentences verbatim
+PASS: A3 block 01's note: claim id and the formation-law fragment
+PASS: A4 block 02's note: claim id and the invariance fragment p_0 P = p_0
+PASS: A5 this note carries its claim id
+PASS: B1 linear extensions: 5, 42, 462, 24024 for 2x3, 3x3, 3x4, 4x4 (enumerated and counted)
+PASS: B2 every site of every extension (509 orders) forms with exactly its left and above neighbors
+PASS: B3 P1 executed: the 5 extensions of 2x3 give one formation law on all 46656 configurations at both triples
+PASS: B4 P1 for every rule: the sum rule and the asymmetric phi also give one law on the 5 extensions of 2x3
+PASS: B5 the i+j sweep of 3x3 is a linear extension; the i-j and j-i sweeps are not: (0,1) records {(0,2)}, (1,0) records {(2,0)}
+PASS: B6 the snake on 2x3 is outside the class: site (1,1) records {(0,1), (1,2)}
+PASS: C1 P2: r(s | a, b) = K(a->s) K(s->b)/K^2(a, b) on all 216 triples at both declared triples
+PASS: C2 r(s | a, b) = r(s | b, a) by the product form alone: executed on 216 triples for the asymmetric phi
+PASS: C3 P3: mu_P(2x3)(v) = mu_P(3x2)(v^T) on all 46656 configurations at both triples and for the asymmetric phi
+PASS: C4 P2: the product formula (first row and column K-chains, bridges elsewhere) equals block 01's definition on 2x3 entrywise at both triples
+PASS: C5 P3: mu_P(2x4)(v) = mu_P(4x2)(v^T) on all 1679616 configurations by the row-kernel form of the product formula (one denominator; sums to one)
+PASS: D1 the row kernel P (block 02's E2, rebuilt) equals the definition entrywise on 216 x 216 at both triples; every row sums to one
+PASS: D2 P4: every column of 3x3 (both triples) and of 3x4 is the K-chain on its three-site joint (middle-row contraction)
+PASS: D3 every row of 3x3 and 3x4 (rows 1, 2 by the transfer: p_0 P = p_0) and every row and column of 2x3 (from the definition) is the K-chain
+PASS: D4 P5: the corner law pi(c,b,a,d) = (1/6) K(c,a) K(c,b) K(a,d) K(d,b)/K^2(a,b) at all 4 block positions of 3x3 (both triples) and 6 of 3x4
+PASS: D5 P5: from the computed blocks, P(a, b | c) = K(c->a) K(c->b) (independent given the corner; P(c) = 1/6) and P(d | c, b, a) is the bridge
+PASS: D6 E4 from pi: the diagonal pair (a, b) has the law (1/6) K^2(a, b), a different law from (1/6) K (K^2 = K on the orthogonal orbit iff p + q = 2r: true at (3,1,2), false at (5,2,4))
+PASS: D7 the carried-value row transfer and the middle-row contraction agree on column 1 of 3x3
+PASS: E1 P6: the minimal staircase's conditional P(d | c, b) from the corner law equals the direct marginal (216 triples); at c = b = d = P(e_x) it is 227/858 against K(b->d) = 1/4
+PASS: E2 P6 executed: all six staircases of 3x3 have a positive total-variation defect from the K-chain at both triples
+PASS: E3 the premise of P6: along every staircase every consecutive pair has the law (1/6) K and every site marginal is uniform
+PASS: E4 P7(a): the mirror class's law differs from mu_P on 32616 of 46656 configurations of 2x3 (TV 2764753/79505712); rows p_0, columns (1/6) K
+PASS: E5 P7(b): the reversed row kernel P_rl is row-stochastic and p_0 P_rl = p_0 on all 216 row states at both triples
+PASS: E6 the snake's law on 2x3 from the definition equals p_0(row 0) P_rl(row 0 -> row 1) entrywise at both triples
+PASS: E7 P7(b): snake proper on 3x3 (rows left-to-right, right-to-left, left-to-right): column 0 the K-chain, columns 1, 2 not: TV defects 0, 3161/7227792, 3583442207/7981260404832 at (3,1,2); vertical pairs (1/6) K
+PASS: E8 P7(b): snake proper on 4x3 (rows alternating): no column is the K-chain at either triple (row transfer carrying the column values)
+PASS: E9 the variation clause: at (2,2,2) every staircase and snake-column defect is zero and the mirror law equals mu_P
+PASS: E10 P6 for every triple: P(c | c, c) > K(c->c) at all 210 non-constant triples in {1..6}^3 and = at the 6 constant ones
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 the literature name of the structure appears only in Prior art and Imports (violations: [])
+PASS: F4 runner source: no floating-point literal or conversion call (0 hits)
+per_element: executed — every configuration of 2x3 (46656) for the 5 extensions, the mirror, the snake, the sum rule and the asymmetric phi; every configuration of 2x4 against 4x2; every (a, b, s) triple for the bridge
+per_site: executed — every site of every linear extension of 2x3, 3x3, 3x4 (509 orders) records exactly its left and above neighbors; the declared sites of the i-j, j-i sweeps and the snake
+per_mode: executed — every column and row of 3x3 (both triples) and 3x4 as three-site joints; every 2x2 block position against the corner law; the six staircases and the snake columns as exact defects
+per_block: executed — the row kernels P and P_rl on all 216 x 216 entries against the definition; p_0 P = p_0 and p_0 P_rl = p_0 on all 216 row states; the 4x3 snake by the carried-value transfer
+lattice_wide: not claimed — P1 is proved for every rectangle and every rule; P4, P5 on the infinite strip and the quadrant follow from finite rectangles by block 02's limit arguments; nothing on the static law, the plane or orders outside the class beyond the witnesses
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+
