@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_finite_collision_check_2026_09_07.py
+runner_sha256: 8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5
+input_fingerprint_sha256: 664588b2ce05af43aa6aaf422f6e3c9c9f78068f44110f342c81cc1b8df1b35d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+PASS native finite collision fixtures: actual unitary versus independent GKSL exponential
+DISCRIMINATOR Original edge01 deletes unit hopping; irrational23 spectator survives, so the attempted nonzero original-free jump commutator control fails. The separately preregistered post-inspection supplement deletes irrational23 and detects it. Both fixtures are preserved.
+RESULT {"dependencies": {"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py": "fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af"}, "discriminator": "Original edge01 deletes unit hopping; irrational23 spectator survives, so the attempted nonzero original-free jump commutator control fails. The separately preregistered post-inspection supplement deletes irrational23 and detects it. Both fixtures are preserved.", "original_commuting_fixture": {"checks": 18, "deleted_edge": 0, "noncommuting_control_detected": false, "original_jump_commutator": 2.471883660883624e-15, "refusal_probability": 0.02255755146465527, "rows": [{"dissipative_trace_norm_error": 0.0005178843017615524, "h": 0.04, "split_full_trace_norm_error": 0.0005178843017617774}, {"dissipative_trace_norm_error": 0.0001313900429847006, "h": 0.02, "split_full_trace_norm_error": 0.0001313900429849842}, {"dissipative_trace_norm_error": 3.3089657094560487e-05, "h": 0.01, "split_full_trace_norm_error": 3.308965709514472e-05}], "rss_MiB": 93.1875, "seconds": 0.04807466600323096, "source_sha256": "8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5", "system_dimension": 72, "unitary_dimension": 288, "worst": 5.329097002610779e-15}, "parameters": {"battery_centers": [0.5, 1.5, 2.5], "cap": 3.0, "fuel_delta": 1.0, "gamma": 1.0, "grid_spacing": 1.0, "hopping01": 1.0, "hopping23": 0.47140452079103173, "particle_number": 2, "refusal_numerical_null_cutoff": 1e-10, "state": "original source ground state pulsed by exp[-i(.37 n0+.23 n2)], uniform real battery superposition"}, "resources": {"blas_threads": 1, "rss_limit_MiB": 180, "timeout_seconds": 180}, "rss_MiB": 102.28125, "scope": "Actual native N2 square, three battery cells, one completed edge event and 288-dimensional collision unitary; not an all-path cube or 48-qubit simulation. Trace errors are unhalved trace norms.", "seconds": 0.0990696249937173, "separately_preregistered_noncommuting_supplement": {"checks": 18, "deleted_edge": 2, "noncommuting_control_detected": true, "original_jump_commutator": 0.333333333333334, "refusal_probability": 0.3333333333333329, "rows": [{"dissipative_trace_norm_error": 0.0005178843017618032, "h": 0.04, "split_full_trace_norm_error": 0.0005510939586005912}, {"dissipative_trace_norm_error": 0.00013139004298473714, "h": 0.02, "split_full_trace_norm_error": 0.00013976036417180185}, {"dissipative_trace_norm_error": 3.308965709459446e-05, "h": 0.01, "split_full_trace_norm_error": 3.519076586611407e-05}], "rss_MiB": 102.28125, "seconds": 0.050287459016544744, "source_sha256": "8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5", "system_dimension": 72, "unitary_dimension": 288, "worst": 5.329097002610779e-15}, "source_sha256": "8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5"}
+per_element: both native Record signs and ONE absorbing refusal enter each actual star coupling.
+per_site: native square N2, deleted edge01 original fixture and separately preregistered edge23 supplement.
+per_mode: full rounded total-energy matrices, original-free commutator and three-cell battery are checked.
+per_block: actual288-dimensional unitary and reduced CPTP channel compared at h=.04,.02,.01; 18 assertions per fixture.
+lattice_wide: checked and not executed -- no all-path cube, 48-qubit simulation, local bath or autonomous clock claim.
+SOURCE_SHA256 8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5
+DEPENDENCIES {"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py": "fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af"}
+TOTAL: PASS FAIL=0; original attempted noncommuting discriminator remains false as explicitly reported.
+
+----- stderr -----
+

@@ -1,0 +1,12 @@
+# Full native sign/refusal isometry result
+
+PASS for all eight computational matter/battery input columns, with exact symbolic amplitude equality. The frozen nine-pulse sequence implements the complete native isometry, including both sign amplitudes and ONE combined refusal branch. No selected outcome is normalized. Exact column orthonormality establishes V†V=I8; linearity gives the same action on every allowed mixed input and arbitrary reference entanglement. Each column also satisfies exact full energy intertwining, old Record and one-head conservation.
+
+The cap refusal projector is p+ n_b1. Upper-half bright components remain in the source fuel/head sector and acquire label11; accepted dark and bright-low components have their correct0/2 battery shifts, fuel0 and head01. The native Z projection coefficients, including interference between Y-bright/dark inputs, agree exactly. A sign-relative-phase mutation and dropping refusal are detected; an additional coherent input also matches. All Hamiltonians are globally K-commuting complete Pauli sums of weight at most3. Exact polynomial unitarity is verified for every pulse.
+
+Resource inventory: same nine reduced physical/workspace qubits; zero additional ancillas; nine supplied pulses with angles eight times pi/2 and once pi. Complete interaction graph is supplied. The two label qubits are initialized00 and retained as coherent accepted/refusal labels; a formation/readout law is not derived. The old Record sentinel is unchanged. No generic universal compiler, gate library or ancilla uncomputation premise was used: every generator is explicitly listed in the raw receipt.
+
+This retires the all-input isometry gap for this fixed reduced one-edge cell, not the full square/cube, all repeated events, exact star unitary on arbitrary non-ready labels, nearest-neighbor routing, physical role formation, clock, supplied interaction law or ancilla renewal. The constructed full ambient pulse unitary is an energy-preserving extension whose ready-input columns equal the desired Stinespring isometry; it need not equal the earlier small-angle collision star on every ancillary input. The mathematical control assumption remains conditional.
+
+Exact assertion calls: 163. Runtime 1.437054s; RSS 66.047MiB.
+Source SHA c2ffa0c8202d2001d1218567e1ff0023e54a51a9a94fb8ca0ceffa26151d8ff6; declared scratch Pauli-helper source SHA 09a327db5234f7e362d9c0bce3690848cbcb8e8918c2c614d95738809cc8447e. Original preregistration SHA06b4c905094f823c8776d825b4036679dbcb87fb820fbb4d81833c18cebf1ca8.
