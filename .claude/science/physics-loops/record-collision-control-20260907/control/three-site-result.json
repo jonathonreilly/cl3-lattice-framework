@@ -1,0 +1,62 @@
+{
+  "scope": "Exact state transfer under supplied complete-graph at-most-three-site controls, not full instrument or NN synthesis",
+  "rows": [
+    {
+      "pulse": 1,
+      "hamiltonian": {
+        "IIIIXIXII": "1/4",
+        "IIIIYIYII": "1/4",
+        "IIIYXIXII": "1/4",
+        "IIIYYIYII": "1/4"
+      },
+      "angle": "pi/2",
+      "max_pauli_weight": 3,
+      "state": {
+        "010000100": "-sqrt(2)*I/2",
+        "010100100": "sqrt(2)/2"
+      }
+    },
+    {
+      "pulse": 2,
+      "hamiltonian": {
+        "IIIXIIIII": "1/2",
+        "IIIXZIIII": "1/2"
+      },
+      "angle": "pi/4",
+      "max_pauli_weight": 2,
+      "state": {
+        "010000100": "-I"
+      }
+    },
+    {
+      "pulse": 3,
+      "hamiltonian": {
+        "IXXIIIIII": "1/2",
+        "IYYIIIIII": "1/2"
+      },
+      "angle": "pi/2",
+      "max_pauli_weight": 2,
+      "state": {
+        "001000100": "-1"
+      }
+    },
+    {
+      "pulse": 4,
+      "hamiltonian": {
+        "IIIIIIIIX": "1"
+      },
+      "angle": "pi/2",
+      "max_pauli_weight": 1,
+      "state": {
+        "001000101": "I"
+      }
+    }
+  ],
+  "final_phase": "I",
+  "all_exact_checks_pass": true,
+  "uncontrolled_exchange_energy_mutation_rejected": true,
+  "source_sha256": "29e444b97e4dd4a317b0c2019b933fa5cdccb53c03f1d9e9560982d72f3a8a22",
+  "dependency_sha256": "a99d7178db5a8a6483e5a8d8df4de9b827cdc20e03955838421bdb06af9288e7",
+  "rss_MiB": 62.421875,
+  "seconds": 0.19344608299434185
+}

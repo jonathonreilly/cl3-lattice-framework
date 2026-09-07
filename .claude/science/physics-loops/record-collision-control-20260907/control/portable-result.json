@@ -1,0 +1,848 @@
+{
+  "schema": "native-reduced-cell-two-site-exact-commutant-v1",
+  "qubit_order": [
+    "r",
+    "head_v",
+    "head_w",
+    "edge",
+    "fuel",
+    "battery_low",
+    "battery_high",
+    "label0",
+    "label1"
+  ],
+  "coordinates": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0
+    ]
+  ],
+  "scope": "Reduced square-boundary odd carrier; expanded workspace; supplied energy-preserving controls; complete graph versus fixed NN path; no full collision implementation",
+  "constraints": [
+    "[H,K]=0",
+    "[H,Z_r]=0",
+    "[H,N_head]=0"
+  ],
+  "dependencies": {},
+  "resources": {
+    "timeout_seconds": 180,
+    "rss_limit_MiB": 180,
+    "blas_threads": 1
+  },
+  "results": {
+    "complete_at_most_two": {
+      "columns": 352,
+      "rank": 258,
+      "nullity": 94,
+      "all_commute_active_energy": true,
+      "fuel_noncommuting_generators": 4,
+      "basis": [
+        {
+          "IIIIIIIII": "1"
+        },
+        {
+          "ZIIIIIIII": "1"
+        },
+        {
+          "IZIIIIIII": "1"
+        },
+        {
+          "IIZIIIIII": "1"
+        },
+        {
+          "IIIYIIIII": "1"
+        },
+        {
+          "IIIIZIIII": "1"
+        },
+        {
+          "IIIIIZIII": "1"
+        },
+        {
+          "IIIIIIZII": "1"
+        },
+        {
+          "IIIIIIIXI": "1"
+        },
+        {
+          "IIIIIIIYI": "1"
+        },
+        {
+          "IIIIIIIZI": "1"
+        },
+        {
+          "IIIIIIIIX": "1"
+        },
+        {
+          "IIIIIIIIY": "1"
+        },
+        {
+          "IIIIIIIIZ": "1"
+        },
+        {
+          "ZZIIIIIII": "1"
+        },
+        {
+          "ZIZIIIIII": "1"
+        },
+        {
+          "ZIIYIIIII": "1"
+        },
+        {
+          "ZIIIZIIII": "1"
+        },
+        {
+          "ZIIIIZIII": "1"
+        },
+        {
+          "ZIIIIIZII": "1"
+        },
+        {
+          "ZIIIIIIXI": "1"
+        },
+        {
+          "ZIIIIIIYI": "1"
+        },
+        {
+          "ZIIIIIIZI": "1"
+        },
+        {
+          "ZIIIIIIIX": "1"
+        },
+        {
+          "ZIIIIIIIY": "1"
+        },
+        {
+          "ZIIIIIIIZ": "1"
+        },
+        {
+          "IYXIIIIII": "1",
+          "IXYIIIIII": "-1"
+        },
+        {
+          "IYYIIIIII": "1",
+          "IXXIIIIII": "1"
+        },
+        {
+          "IZZIIIIII": "1"
+        },
+        {
+          "IZIYIIIII": "1"
+        },
+        {
+          "IZIIZIIII": "1"
+        },
+        {
+          "IZIIIZIII": "1"
+        },
+        {
+          "IZIIIIZII": "1"
+        },
+        {
+          "IZIIIIIXI": "1"
+        },
+        {
+          "IZIIIIIYI": "1"
+        },
+        {
+          "IZIIIIIZI": "1"
+        },
+        {
+          "IZIIIIIIX": "1"
+        },
+        {
+          "IZIIIIIIY": "1"
+        },
+        {
+          "IZIIIIIIZ": "1"
+        },
+        {
+          "IIZYIIIII": "1"
+        },
+        {
+          "IIZIZIIII": "1"
+        },
+        {
+          "IIZIIZIII": "1"
+        },
+        {
+          "IIZIIIZII": "1"
+        },
+        {
+          "IIZIIIIXI": "1"
+        },
+        {
+          "IIZIIIIYI": "1"
+        },
+        {
+          "IIZIIIIZI": "1"
+        },
+        {
+          "IIZIIIIIX": "1"
+        },
+        {
+          "IIZIIIIIY": "1"
+        },
+        {
+          "IIZIIIIIZ": "1"
+        },
+        {
+          "IIIXZIIII": "1",
+          "IIIXIIIII": "1"
+        },
+        {
+          "IIIYXIIII": "1",
+          "IIIIXIIII": "-1"
+        },
+        {
+          "IIIYYIIII": "1",
+          "IIIIYIIII": "-1"
+        },
+        {
+          "IIIYZIIII": "1"
+        },
+        {
+          "IIIZXIIII": "1",
+          "IIIXYIIII": "-1"
+        },
+        {
+          "IIIZYIIII": "1",
+          "IIIXXIIII": "1"
+        },
+        {
+          "IIIZZIIII": "1",
+          "IIIZIIIII": "1"
+        },
+        {
+          "IIIYIZIII": "1"
+        },
+        {
+          "IIIYIIZII": "1"
+        },
+        {
+          "IIIYIIIXI": "1"
+        },
+        {
+          "IIIYIIIYI": "1"
+        },
+        {
+          "IIIYIIIZI": "1"
+        },
+        {
+          "IIIYIIIIX": "1"
+        },
+        {
+          "IIIYIIIIY": "1"
+        },
+        {
+          "IIIYIIIIZ": "1"
+        },
+        {
+          "IIIIZZIII": "1"
+        },
+        {
+          "IIIIZIZII": "1"
+        },
+        {
+          "IIIIZIIXI": "1"
+        },
+        {
+          "IIIIZIIYI": "1"
+        },
+        {
+          "IIIIZIIZI": "1"
+        },
+        {
+          "IIIIZIIIX": "1"
+        },
+        {
+          "IIIIZIIIY": "1"
+        },
+        {
+          "IIIIZIIIZ": "1"
+        },
+        {
+          "IIIIIZZII": "1"
+        },
+        {
+          "IIIIIZIXI": "1"
+        },
+        {
+          "IIIIIZIYI": "1"
+        },
+        {
+          "IIIIIZIZI": "1"
+        },
+        {
+          "IIIIIZIIX": "1"
+        },
+        {
+          "IIIIIZIIY": "1"
+        },
+        {
+          "IIIIIZIIZ": "1"
+        },
+        {
+          "IIIIIIZXI": "1"
+        },
+        {
+          "IIIIIIZYI": "1"
+        },
+        {
+          "IIIIIIZZI": "1"
+        },
+        {
+          "IIIIIIZIX": "1"
+        },
+        {
+          "IIIIIIZIY": "1"
+        },
+        {
+          "IIIIIIZIZ": "1"
+        },
+        {
+          "IIIIIIIXX": "1"
+        },
+        {
+          "IIIIIIIXY": "1"
+        },
+        {
+          "IIIIIIIXZ": "1"
+        },
+        {
+          "IIIIIIIYX": "1"
+        },
+        {
+          "IIIIIIIYY": "1"
+        },
+        {
+          "IIIIIIIYZ": "1"
+        },
+        {
+          "IIIIIIIZX": "1"
+        },
+        {
+          "IIIIIIIZY": "1"
+        },
+        {
+          "IIIIIIIZZ": "1"
+        }
+      ],
+      "basis_sha256": "ccd85b8ed22c007b46b4b79bcdf60df142103fb7af4b4d779d79ee3142599665"
+    },
+    "path_at_most_two": {
+      "columns": 100,
+      "rank": 60,
+      "nullity": 40,
+      "all_commute_active_energy": true,
+      "fuel_noncommuting_generators": 4,
+      "basis": [
+        {
+          "IIIIIIIII": "1"
+        },
+        {
+          "ZIIIIIIII": "1"
+        },
+        {
+          "IZIIIIIII": "1"
+        },
+        {
+          "IIZIIIIII": "1"
+        },
+        {
+          "IIIYIIIII": "1"
+        },
+        {
+          "IIIIZIIII": "1"
+        },
+        {
+          "IIIIIZIII": "1"
+        },
+        {
+          "IIIIIIZII": "1"
+        },
+        {
+          "IIIIIIIXI": "1"
+        },
+        {
+          "IIIIIIIYI": "1"
+        },
+        {
+          "IIIIIIIZI": "1"
+        },
+        {
+          "IIIIIIIIX": "1"
+        },
+        {
+          "IIIIIIIIY": "1"
+        },
+        {
+          "IIIIIIIIZ": "1"
+        },
+        {
+          "ZZIIIIIII": "1"
+        },
+        {
+          "IYXIIIIII": "1",
+          "IXYIIIIII": "-1"
+        },
+        {
+          "IYYIIIIII": "1",
+          "IXXIIIIII": "1"
+        },
+        {
+          "IZZIIIIII": "1"
+        },
+        {
+          "IIZYIIIII": "1"
+        },
+        {
+          "IIIXZIIII": "1",
+          "IIIXIIIII": "1"
+        },
+        {
+          "IIIYXIIII": "1",
+          "IIIIXIIII": "-1"
+        },
+        {
+          "IIIYYIIII": "1",
+          "IIIIYIIII": "-1"
+        },
+        {
+          "IIIYZIIII": "1"
+        },
+        {
+          "IIIZXIIII": "1",
+          "IIIXYIIII": "-1"
+        },
+        {
+          "IIIZYIIII": "1",
+          "IIIXXIIII": "1"
+        },
+        {
+          "IIIZZIIII": "1",
+          "IIIZIIIII": "1"
+        },
+        {
+          "IIIIZZIII": "1"
+        },
+        {
+          "IIIIIZZII": "1"
+        },
+        {
+          "IIIIIIZXI": "1"
+        },
+        {
+          "IIIIIIZYI": "1"
+        },
+        {
+          "IIIIIIZZI": "1"
+        },
+        {
+          "IIIIIIIXX": "1"
+        },
+        {
+          "IIIIIIIXY": "1"
+        },
+        {
+          "IIIIIIIXZ": "1"
+        },
+        {
+          "IIIIIIIYX": "1"
+        },
+        {
+          "IIIIIIIYY": "1"
+        },
+        {
+          "IIIIIIIYZ": "1"
+        },
+        {
+          "IIIIIIIZX": "1"
+        },
+        {
+          "IIIIIIIZY": "1"
+        },
+        {
+          "IIIIIIIZZ": "1"
+        }
+      ],
+      "basis_sha256": "4e87dc1344e5e479a8112e2e2efbd3c3025924c5c3368a5375277ea2f02c8a98"
+    },
+    "complete_exactly_two": {
+      "columns": 324,
+      "rank": 248,
+      "nullity": 76,
+      "all_commute_active_energy": true,
+      "fuel_noncommuting_generators": 2,
+      "basis": [
+        {
+          "ZZIIIIIII": "1"
+        },
+        {
+          "ZIZIIIIII": "1"
+        },
+        {
+          "ZIIYIIIII": "1"
+        },
+        {
+          "ZIIIZIIII": "1"
+        },
+        {
+          "ZIIIIZIII": "1"
+        },
+        {
+          "ZIIIIIZII": "1"
+        },
+        {
+          "ZIIIIIIXI": "1"
+        },
+        {
+          "ZIIIIIIYI": "1"
+        },
+        {
+          "ZIIIIIIZI": "1"
+        },
+        {
+          "ZIIIIIIIX": "1"
+        },
+        {
+          "ZIIIIIIIY": "1"
+        },
+        {
+          "ZIIIIIIIZ": "1"
+        },
+        {
+          "IYXIIIIII": "1",
+          "IXYIIIIII": "-1"
+        },
+        {
+          "IYYIIIIII": "1",
+          "IXXIIIIII": "1"
+        },
+        {
+          "IZZIIIIII": "1"
+        },
+        {
+          "IZIYIIIII": "1"
+        },
+        {
+          "IZIIZIIII": "1"
+        },
+        {
+          "IZIIIZIII": "1"
+        },
+        {
+          "IZIIIIZII": "1"
+        },
+        {
+          "IZIIIIIXI": "1"
+        },
+        {
+          "IZIIIIIYI": "1"
+        },
+        {
+          "IZIIIIIZI": "1"
+        },
+        {
+          "IZIIIIIIX": "1"
+        },
+        {
+          "IZIIIIIIY": "1"
+        },
+        {
+          "IZIIIIIIZ": "1"
+        },
+        {
+          "IIZYIIIII": "1"
+        },
+        {
+          "IIZIZIIII": "1"
+        },
+        {
+          "IIZIIZIII": "1"
+        },
+        {
+          "IIZIIIZII": "1"
+        },
+        {
+          "IIZIIIIXI": "1"
+        },
+        {
+          "IIZIIIIYI": "1"
+        },
+        {
+          "IIZIIIIZI": "1"
+        },
+        {
+          "IIZIIIIIX": "1"
+        },
+        {
+          "IIZIIIIIY": "1"
+        },
+        {
+          "IIZIIIIIZ": "1"
+        },
+        {
+          "IIIYZIIII": "1"
+        },
+        {
+          "IIIZXIIII": "1",
+          "IIIXYIIII": "-1"
+        },
+        {
+          "IIIZYIIII": "1",
+          "IIIXXIIII": "1"
+        },
+        {
+          "IIIYIZIII": "1"
+        },
+        {
+          "IIIYIIZII": "1"
+        },
+        {
+          "IIIYIIIXI": "1"
+        },
+        {
+          "IIIYIIIYI": "1"
+        },
+        {
+          "IIIYIIIZI": "1"
+        },
+        {
+          "IIIYIIIIX": "1"
+        },
+        {
+          "IIIYIIIIY": "1"
+        },
+        {
+          "IIIYIIIIZ": "1"
+        },
+        {
+          "IIIIZZIII": "1"
+        },
+        {
+          "IIIIZIZII": "1"
+        },
+        {
+          "IIIIZIIXI": "1"
+        },
+        {
+          "IIIIZIIYI": "1"
+        },
+        {
+          "IIIIZIIZI": "1"
+        },
+        {
+          "IIIIZIIIX": "1"
+        },
+        {
+          "IIIIZIIIY": "1"
+        },
+        {
+          "IIIIZIIIZ": "1"
+        },
+        {
+          "IIIIIZZII": "1"
+        },
+        {
+          "IIIIIZIXI": "1"
+        },
+        {
+          "IIIIIZIYI": "1"
+        },
+        {
+          "IIIIIZIZI": "1"
+        },
+        {
+          "IIIIIZIIX": "1"
+        },
+        {
+          "IIIIIZIIY": "1"
+        },
+        {
+          "IIIIIZIIZ": "1"
+        },
+        {
+          "IIIIIIZXI": "1"
+        },
+        {
+          "IIIIIIZYI": "1"
+        },
+        {
+          "IIIIIIZZI": "1"
+        },
+        {
+          "IIIIIIZIX": "1"
+        },
+        {
+          "IIIIIIZIY": "1"
+        },
+        {
+          "IIIIIIZIZ": "1"
+        },
+        {
+          "IIIIIIIXX": "1"
+        },
+        {
+          "IIIIIIIXY": "1"
+        },
+        {
+          "IIIIIIIXZ": "1"
+        },
+        {
+          "IIIIIIIYX": "1"
+        },
+        {
+          "IIIIIIIYY": "1"
+        },
+        {
+          "IIIIIIIYZ": "1"
+        },
+        {
+          "IIIIIIIZX": "1"
+        },
+        {
+          "IIIIIIIZY": "1"
+        },
+        {
+          "IIIIIIIZZ": "1"
+        }
+      ],
+      "basis_sha256": "a93548a8f794d8d3cbf9de86d5d35219b5d1da8c99907726aa25d2cbd25ad17c"
+    },
+    "path_exactly_two": {
+      "columns": 72,
+      "rank": 50,
+      "nullity": 22,
+      "all_commute_active_energy": true,
+      "fuel_noncommuting_generators": 2,
+      "basis": [
+        {
+          "ZZIIIIIII": "1"
+        },
+        {
+          "IYXIIIIII": "1",
+          "IXYIIIIII": "-1"
+        },
+        {
+          "IYYIIIIII": "1",
+          "IXXIIIIII": "1"
+        },
+        {
+          "IZZIIIIII": "1"
+        },
+        {
+          "IIZYIIIII": "1"
+        },
+        {
+          "IIIYZIIII": "1"
+        },
+        {
+          "IIIZXIIII": "1",
+          "IIIXYIIII": "-1"
+        },
+        {
+          "IIIZYIIII": "1",
+          "IIIXXIIII": "1"
+        },
+        {
+          "IIIIZZIII": "1"
+        },
+        {
+          "IIIIIZZII": "1"
+        },
+        {
+          "IIIIIIZXI": "1"
+        },
+        {
+          "IIIIIIZYI": "1"
+        },
+        {
+          "IIIIIIZZI": "1"
+        },
+        {
+          "IIIIIIIXX": "1"
+        },
+        {
+          "IIIIIIIXY": "1"
+        },
+        {
+          "IIIIIIIXZ": "1"
+        },
+        {
+          "IIIIIIIYX": "1"
+        },
+        {
+          "IIIIIIIYY": "1"
+        },
+        {
+          "IIIIIIIYZ": "1"
+        },
+        {
+          "IIIIIIIZX": "1"
+        },
+        {
+          "IIIIIIIZY": "1"
+        },
+        {
+          "IIIIIIIZZ": "1"
+        }
+      ],
+      "basis_sha256": "5b996050e43b9ae880cb9007a6cce8de2ec5a54872ecc2a63272c3e1b0bdd13a"
+    }
+  },
+  "controls": {
+    "sum_cancellation_allowed": true,
+    "fuel_flip_rejected": true,
+    "old_record_flip_rejected": true,
+    "identity_and_energy_allowed": true,
+    "path_subset": true
+  },
+  "source_active_energy": 2,
+  "target_active_energy": 0,
+  "source_target_total_energy": "5/2",
+  "source_sha256": "6001d6d8aa1feb05c1a5eaad3ba04b33a4c2abf83622bbeee25b9060201e9a57",
+  "seconds": 0.035224499995820224,
+  "rss_MiB": 17.75
+}

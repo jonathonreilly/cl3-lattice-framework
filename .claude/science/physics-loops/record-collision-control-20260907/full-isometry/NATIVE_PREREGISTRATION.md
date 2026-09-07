@@ -1,0 +1,11 @@
+# Independent full-isometry construction: fixed before matrix computation
+
+Same reduced native odd-pair boundary carrier, active x Pauli Y hopping, charged fuel q, four battery levels .5,1.5,2.5,3.5, one-hot source/destination heads10/01, two label bits l0l1 with vacuum00, plus01, minus10, refusal11, fixed old Record r0. Energy K=q(I+Yx)+.5+nb0+2nb1. All eight matter×battery source columns have f1,head10,label00. Preserve the exact native signed accepted edge output P_Zz and ONE combined refusal F=Pi_Y+ n_b1. No postselection.
+
+Allowed supplied controls: globally K-commuting Hermitian sums of Pauli support at most3, complete interaction graph; oldZ and head number commute. Identity phases are allowed. Fixed workspace may leave the old combined source/accepted/refusal projector. No extra ancillas beyond the two zero-energy output labels are used. This is not an axiom-derived primitive, NN synthesis, clockless dynamics, permanent Record law or all-input channel equality outside the source subspace.
+
+Explicit proposal before values: Hbright=Pi_Y+ (|01><10|+h.c.)_(f,b1), duration pi/2; Hdark=Pi_Y- Xf, duration pi/2. Bright lower-battery inputs transfer fuel and raise highbit; dark inputs lower fuel without battery change; bright upper-battery inputs remain charged as refusal. Accepted amplitudes acquire -i, refusal1.
+
+Next Hhead=(1-q) swap_(hv,hw), duration pi/2. Hplus=(1-q)P_Z+ X_l1 and Hminus=(1-q)P_Z- X_l0, each duration pi/2. Href0=q X_l0 and Href1=q X_l1, each duration pi/2. Final Hphase=I+q, duration pi/2. Accepted phase is(-i)^3*(-i)=1; refusal phase(-i)^2*(-1)=1. Freeze this eight-pulse sequence without phase fitting.
+
+Target isometry is assembled independently by native sign projectors and literal four-cell translation T2, with accepted operators P_Zz(Pi_Y+ tensor T2+Pi_Y- tensor I), and refused operatorPi_Y+ tensor upper-two-cell projector. Verify target completeness and literal energy intertwining, all eight complex columns against the pulse product, each control's global energy/head/oldRecord commutation, support<=3, and polynomial/unitarity checks. Exact x/y/battery input coherences retained; test pure-state selected-target claims nowhere substitutes for all-column equality. Fixed r0 may be factored out explicitly. One BLAS thread,180seconds/180MiB. Preserve discrepancies, no phase or parameter retuning.
