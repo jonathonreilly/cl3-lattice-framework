@@ -155,6 +155,9 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.py",
         "scripts/native_gauge_transfer_spatial_wilson_cube_slab_f3_check_2026_09_07.py",
     ],
+    "spin_half_cartesian_plaquette_source_note_2026-09-07": [
+        "scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py",
+    ],
     "native_edge_record_reduced_cell_autonomous_clock_bounded_theorem_note_2026-09-07": [
         "scripts/native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07.py",
         "scripts/native_edge_record_reduced_cell_full_isometry_2026_09_07.py",

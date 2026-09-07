@@ -1,0 +1,617 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_source_receipt_diagnostic_2026_09_07.py
+runner_sha256: eb1af4a896c7179aedbc1b68d0a1266fea1158b4ad398d37017617341b56d49e
+input_fingerprint_sha256: c33b4fb27616202aff6066d3a5adc12533436bf043c87fd50a8afab7791e4b54
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+[PASS] checkerboard historical response fails uniform source guard
+[PASS] historical replay exit remains failed
+[PASS] fixed genealogy floor still fails
+[PASS] both primary spans are tested against fixed 0.05
+[PASS] paired significance diagnostics pass without a coverage assertion
+[PASS] statistical guard independently rejects unchanged replay
+[PASS] four singular RK common-mode controls require no inverse
+[PASS] both detuned primary spans exceed 0.05
+[PASS] electric uncertainty remains an unresolved hybrid
+[PASS] preserved historical benchmark central arithmetic
+[PASS] preserved historical hybrid arithmetic
+[PASS] diagnostic success grants no physical certificate
+{
+  "bound_inputs_sha256": {
+    "data/field/spin_half_cubic_ice_historical_receipts_2026_09_07.json": "d2af311b8fd4f1b5bef0f026f3b0e7fdda26faee95f49a1ab0f0f9124293c665",
+    "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md": "80ab2512f0f7706be19b87a2db8da34aa287be103715fdce9130072d6c4ce360",
+    "docs/SPIN_HALF_CUBIC_ICE_SOURCE_RECEIPT_DIAGNOSTIC_NOTE_2026-09-07.md": "b76318e2800e8fe66a6fe5e1716d7d0bef1ec13344801b5d95ac9713c3352d91"
+  },
+  "checks_failed": 0,
+  "checks_passed": 12,
+  "diagnostic_consistency_pass": true,
+  "health": [
+    {
+      "L": 16,
+      "V": 1.0,
+      "min_ess": 1.0,
+      "min_forward_count": 1536,
+      "min_origin_count": 1536
+    },
+    {
+      "L": 18,
+      "V": 1.0,
+      "min_ess": 1.0,
+      "min_forward_count": 1536,
+      "min_origin_count": 1536
+    },
+    {
+      "L": 16,
+      "V": 0.95,
+      "min_ess": 0.96021,
+      "min_forward_count": 74,
+      "min_origin_count": 118
+    },
+    {
+      "L": 18,
+      "V": 0.95,
+      "min_ess": 0.943968,
+      "min_forward_count": 36,
+      "min_origin_count": 57
+    }
+  ],
+  "historical_benchmark": {
+    "U_charge": 0.160609,
+    "U_flux": 0.162638,
+    "U_flux_uncertainty_supplied": false,
+    "borrowed_U_charge_error": 0.015345,
+    "checkerboard_K": 0.075561,
+    "checkerboard_K_error": 0.000915,
+    "historical_hybrid_error": 0.0011689942811097837,
+    "historical_product": 0.012289089918,
+    "hybrid_uncertainty_resolved": false,
+    "scope": "historical arithmetic only; neither uniform-source UK nor a physical prediction"
+  },
+  "historical_statuses": {
+    "charge": {
+      "elapsed_exceeds_declared_timeout": false,
+      "failed": 0,
+      "header": {
+        "elapsed_sec": "313.19",
+        "exit_code": "0",
+        "input_fingerprint_sha256": "8c73f95d6cbc4086e5243f01b3bf9c82bf3811f2add654e12ed6844b1b2fcb0e",
+        "runner": "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+        "runner_sha256": "97881c8721ee3177aeaa610a59f139ef44be809b49bc9c6ed9f0490fe6b10418",
+        "status": "ok",
+        "timeout_sec": "480"
+      },
+      "passed": 15
+    },
+    "infrared": {
+      "elapsed_exceeds_declared_timeout": true,
+      "failed": 1,
+      "header": {
+        "elapsed_sec": "26040.72",
+        "exit_code": "1",
+        "input_fingerprint_sha256": "535d78a5839e9248fddf6f57407fa898e16f5b6bb4362f041776b0e2c93b9672",
+        "runner": "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+        "runner_sha256": "80108851a3d3a77e8e2593502abfa17ee72eab7174ad7043f039afe2e5133867",
+        "status": "nonzero_exit",
+        "timeout_sec": "21600"
+      },
+      "passed": 2
+    },
+    "late_time": {
+      "elapsed_exceeds_declared_timeout": false,
+      "failed": 0,
+      "header": {
+        "elapsed_sec": "8850.46",
+        "exit_code": "0",
+        "input_fingerprint_sha256": "9b6a38f0f540e8d85aaa89948de6e23724f6cf104375d98e08670fe33935cf36",
+        "runner": "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+        "runner_sha256": "8cea10e54e91b643a39d2a757eb120ee992197defdf45dce4cac98e36d5197cd",
+        "status": "ok",
+        "timeout_sec": "10800"
+      },
+      "passed": 11
+    },
+    "magnetic": {
+      "elapsed_exceeds_declared_timeout": false,
+      "failed": 0,
+      "header": {
+        "elapsed_sec": "1139.22",
+        "exit_code": "0",
+        "input_fingerprint_sha256": "1660a34646f70428d69a0109352991d6656c1fe479c7cec7d9d6f3665c22447a",
+        "runner": "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+        "runner_sha256": "a61b5ca89ea5b39ac932744b12e3af46167d81fd4ed5eb52acdb08644f74b28b",
+        "status": "ok",
+        "timeout_sec": "1800"
+      },
+      "passed": 13
+    },
+    "projector": {
+      "elapsed_exceeds_declared_timeout": false,
+      "failed": 0,
+      "header": {
+        "elapsed_sec": "266.42",
+        "exit_code": "0",
+        "input_fingerprint_sha256": "3c58cd9e3a66fa268a03c885c7305ba4d1c4a505800468e4342a58d8e4625766",
+        "runner": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "runner_sha256": "8becfe5e91a731e38bc056b69044f03f8c40ced504641ba6893f3410893c1706",
+        "status": "ok",
+        "timeout_sec": "480"
+      },
+      "passed": 12
+    },
+    "replay": {
+      "elapsed_exceeds_declared_timeout": false,
+      "failed": 1,
+      "header": {
+        "elapsed_sec": "20807.00",
+        "exit_code": "1",
+        "input_fingerprint_sha256": "527397dd8844b51564d926123284452445b7be28b5ea01aaed5f8c6b3ca007ee",
+        "runner": "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py",
+        "runner_sha256": "8d87b4c4ffc219e7557cf0ad19213842738f8f8a2879493612e3740fd19d26da",
+        "status": "nonzero_exit",
+        "timeout_sec": "64800"
+      },
+      "passed": 3
+    }
+  },
+  "input_provenance": {
+    "charge": {
+      "scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "snapshot_inputs_match_historical_header": true
+    },
+    "infrared": {
+      "scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "snapshot_inputs_match_historical_header": true
+    },
+    "late_time": {
+      "scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "snapshot_inputs_match_historical_header": true
+    },
+    "magnetic": {
+      "scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "snapshot_inputs_match_historical_header": true
+    },
+    "projector": {
+      "scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "snapshot_inputs_match_historical_header": true
+    },
+    "replay": {
+      "scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "snapshot_inputs_match_historical_header": true
+    }
+  },
+  "paired_rows": [
+    {
+      "L": 16,
+      "V": 1.0,
+      "contrast_covariance": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "contrasts": [
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          1.021270401734e-07,
+          1.021270401734e-07,
+          1.021270401734e-07
+        ],
+        [
+          1.021270401734e-07,
+          1.021270401734e-07,
+          1.021270401734e-07
+        ],
+        [
+          1.021270401734e-07,
+          1.021270401734e-07,
+          1.021270401734e-07
+        ]
+      ],
+      "errors": [
+        0.00031957,
+        0.00031957,
+        0.00031957
+      ],
+      "gaps": [
+        0.04668739,
+        0.04668739,
+        0.04668739
+      ],
+      "hotelling_diagnostic": null,
+      "relative_span": 0.0,
+      "rk_identity": true,
+      "significance_cutoffs_pass": true,
+      "span_cutoff_pass": true,
+      "student_diagnostic": null,
+      "window": "2-6"
+    },
+    {
+      "L": 16,
+      "V": 1.0,
+      "contrast_covariance": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "contrasts": [
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          8.107349362024e-08,
+          8.107349362024e-08,
+          8.107349362024e-08
+        ],
+        [
+          8.107349362024e-08,
+          8.107349362024e-08,
+          8.107349362024e-08
+        ],
+        [
+          8.107349362024e-08,
+          8.107349362024e-08,
+          8.107349362024e-08
+        ]
+      ],
+      "errors": [
+        0.00028473,
+        0.00028473,
+        0.00028473
+      ],
+      "gaps": [
+        0.04595709,
+        0.04595709,
+        0.04595709
+      ],
+      "hotelling_diagnostic": null,
+      "relative_span": 0.0,
+      "rk_identity": true,
+      "significance_cutoffs_pass": true,
+      "span_cutoff_pass": true,
+      "student_diagnostic": null,
+      "window": "8-14"
+    },
+    {
+      "L": 18,
+      "V": 1.0,
+      "contrast_covariance": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "contrasts": [
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          4.427919972333e-08,
+          4.427919972333e-08,
+          4.427919972333e-08
+        ],
+        [
+          4.427919972333e-08,
+          4.427919972333e-08,
+          4.427919972333e-08
+        ],
+        [
+          4.427919972333e-08,
+          4.427919972333e-08,
+          4.427919972333e-08
+        ]
+      ],
+      "errors": [
+        0.00021043,
+        0.00021043,
+        0.00021043
+      ],
+      "gaps": [
+        0.03681395,
+        0.03681395,
+        0.03681395
+      ],
+      "hotelling_diagnostic": null,
+      "relative_span": 0.0,
+      "rk_identity": true,
+      "significance_cutoffs_pass": true,
+      "span_cutoff_pass": true,
+      "student_diagnostic": null,
+      "window": "2-6"
+    },
+    {
+      "L": 18,
+      "V": 1.0,
+      "contrast_covariance": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "contrasts": [
+        0.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          6.354112850067e-08,
+          6.354112850067e-08,
+          6.354112850067e-08
+        ],
+        [
+          6.354112850067e-08,
+          6.354112850067e-08,
+          6.354112850067e-08
+        ],
+        [
+          6.354112850067e-08,
+          6.354112850067e-08,
+          6.354112850067e-08
+        ]
+      ],
+      "errors": [
+        0.00025207,
+        0.00025207,
+        0.00025207
+      ],
+      "gaps": [
+        0.03700905,
+        0.03700905,
+        0.03700905
+      ],
+      "hotelling_diagnostic": null,
+      "relative_span": 0.0,
+      "rk_identity": true,
+      "significance_cutoffs_pass": true,
+      "span_cutoff_pass": true,
+      "student_diagnostic": null,
+      "window": "8-14"
+    },
+    {
+      "L": 16,
+      "V": 0.95,
+      "contrast_covariance": [
+        [
+          2.02912171747e-06,
+          3.1011426844029997e-06
+        ],
+        [
+          3.1011426844029997e-06,
+          1.1688264982728999e-05
+        ]
+      ],
+      "contrasts": [
+        -0.004021949999999996,
+        -0.00036637000000000475
+      ],
+      "covariance": [
+        [
+          2.454917168427e-06,
+          1.775489077296e-06,
+          3.762819757954e-06
+        ],
+        [
+          1.775489077296e-06,
+          3.125182703635e-06,
+          6.184534351226e-06
+        ],
+        [
+          3.762819757954e-06,
+          6.184534351226e-06,
+          1.675898733021e-05
+        ]
+      ],
+      "errors": [
+        0.00156682,
+        0.00176782,
+        0.00409377
+      ],
+      "gaps": [
+        0.08917261,
+        0.08515066,
+        0.08880624
+      ],
+      "hotelling_diagnostic": 12.780546784023656,
+      "relative_span": 0.045855176030997015,
+      "rk_identity": false,
+      "significance_cutoffs_pass": false,
+      "span_cutoff_pass": true,
+      "student_diagnostic": 2.823466359739995,
+      "window": "2-6"
+    },
+    {
+      "L": 16,
+      "V": 0.95,
+      "contrast_covariance": [
+        [
+          1.3824437945554003e-05,
+          1.6242651079875002e-05
+        ],
+        [
+          1.6242651079875e-05,
+          3.2318518914695994e-05
+        ]
+      ],
+      "contrasts": [
+        0.004642430000000003,
+        0.00515061
+      ],
+      "covariance": [
+        [
+          6.095839378994e-06,
+          9.982588243765e-06,
+          4.353249249504e-06
+        ],
+        [
+          9.982588243765e-06,
+          2.769377505409e-05,
+          2.448264919415e-05
+        ],
+        [
+          4.353249249504e-06,
+          2.448264919415e-05,
+          3.492917803471e-05
+        ]
+      ],
+      "errors": [
+        0.00246898,
+        0.00526249,
+        0.00591009
+      ],
+      "gaps": [
+        0.08539755,
+        0.09003998,
+        0.09054816
+      ],
+      "hotelling_diagnostic": 1.56596743660934,
+      "relative_span": 0.05809271167933883,
+      "rk_identity": false,
+      "significance_cutoffs_pass": true,
+      "span_cutoff_pass": false,
+      "student_diagnostic": 1.2485950887389898,
+      "window": "8-14"
+    },
+    {
+      "L": 18,
+      "V": 0.95,
+      "contrast_covariance": [
+        [
+          4.837583442729e-06,
+          -1.24062699784e-06
+        ],
+        [
+          -1.24062699784e-06,
+          4.479250799809e-06
+        ]
+      ],
+      "contrasts": [
+        -0.005112950000000005,
+        -0.0012398299999999973
+      ],
+      "covariance": [
+        [
+          6.129424284189e-06,
+          6.482728379095e-06,
+          5.087313112796e-06
+        ],
+        [
+          6.482728379095e-06,
+          1.167361591673e-05,
+          4.199990209862e-06
+        ],
+        [
+          5.087313112796e-06,
+          4.199990209862e-06,
+          8.524452741212e-06
+        ]
+      ],
+      "errors": [
+        0.00247577,
+        0.00341667,
+        0.00291967
+      ],
+      "gaps": [
+        0.07547634,
+        0.07036339,
+        0.07423651
+      ],
+      "hotelling_diagnostic": 6.968004127607409,
+      "relative_span": 0.069697891966893,
+      "rk_identity": false,
+      "significance_cutoffs_pass": true,
+      "span_cutoff_pass": false,
+      "student_diagnostic": 2.324648589652253,
+      "window": "2-6"
+    },
+    {
+      "L": 18,
+      "V": 0.95,
+      "contrast_covariance": [
+        [
+          3.56755921998e-05,
+          5.469097934381e-05
+        ],
+        [
+          5.4690979343809994e-05,
+          0.00011076865008583
+        ]
+      ],
+      "contrasts": [
+        -0.0009747100000000036,
+        0.009452799999999997
+      ],
+      "covariance": [
+        [
+          2.478333948187e-05,
+          2.665567075158e-05,
+          3.503151810752e-05
+        ],
+        [
+          2.665567075158e-05,
+          6.420359422109e-05,
+          9.159482872104e-05
+        ],
+        [
+          3.503151810752e-05,
+          9.159482872104e-05,
+          0.000156048346819
+        ]
+      ],
+      "errors": [
+        0.00497829,
+        0.00801271,
+        0.01249193
+      ],
+      "gaps": [
+        0.07442854,
+        0.07345383,
+        0.08388134
+      ],
+      "hotelling_diagnostic": 4.477107360947317,
+      "relative_span": 0.1349759632342786,
+      "rk_identity": false,
+      "significance_cutoffs_pass": true,
+      "span_cutoff_pass": false,
+      "student_diagnostic": 0.898156542395534,
+      "window": "8-14"
+    }
+  ],
+  "physical_certificate": false,
+  "source_match": false,
+  "statistics": {
+    "coverage": "predeclared diagnostic cutoffs; no calibrated confidence coverage asserted",
+    "eligible_under_fixed_protocol": false,
+    "genealogy_pass": false,
+    "historical_producer_ok": false,
+    "primary_significance_cutoffs_pass": true,
+    "primary_span_pass": false
+  }
+}
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+
