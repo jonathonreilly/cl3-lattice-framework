@@ -1,0 +1,3 @@
+# Additive latest-main delivery validation
+
+Main 66b1b4f8a964f4011a3f4e7876369b7daf8e1834 is an ancestor. Sync science head ead25147ee452e044a661d2218898362f7a218b6 preserves every existing canonical source/helper/cache and both registry bytes. Captured historical unaudited rows were explicitly rehydrated only for live readiness and then removed by generated cleanup; hashes/statuses were not rewritten. Strict lint and 14 nonempty affected readiness rows pass with zero failures against that pin. Historical full pipeline receipts remain at their actual pins; this child has NOT been represented as receiving a new full pipeline at66b. The final chain tip may receive a separately documented full pipeline. No audit verdict or science merge to main.
