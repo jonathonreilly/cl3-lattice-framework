@@ -1,0 +1,3 @@
+# Actual route history
+
+Generic Toffoli/modular-addition was rejected before implementation: it imports the desired gate family. Direct native low-bit bridge succeeds. One Gaussian-preprocessed high-bit bridge fails by an exterior-square triangle contradiction on all256 inputs. A separate direct second-event conditional-sector attempt also fails by even/odd occupation restrictions; its proof and16-state raw table are preserved, not absorbed into the first proof. A weaker read-all-data controller/writer account exposed the work import. The final positive route uses four low-prefix Records and one native conditional hopping pulse, then an actual fifth physical Record. No failed route is erased or counted as an independent physical theorem.

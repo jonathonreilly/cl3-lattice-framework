@@ -1,0 +1,3 @@
+# Immutable review chain
+
+The one-event proof SHA612bf0a75361f0889fe437286bbf36ec587e43a1d7262a4da06933b1029b1d87 is preserved in author-originals/frozen-one-event and independently reviewed in native-review/REVIEW.md. The positive proof SHAe7852a0c4b168df912725a097e64213c72860de8e966f394c7e3769121a0f96b is preserved in author-originals/adaptive and reviewed in ROOT_POSITIVE_ESCAPE_REVIEW.md. Original preregistration precedes its raw fixture. Canonical output wrappers preserve all original scientific fields; added8 diagonal-sign controls are declared separately. Author source assembly is not an independent cold review. Root handles the final port review.

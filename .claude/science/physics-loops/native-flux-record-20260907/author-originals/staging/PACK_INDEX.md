@@ -1,0 +1,3 @@
+# Staged native flux unit
+
+Source: NATIVE_EDGE_RECORD_Z4_FLUX_BRIDGE_CAPACITY_BOUNDED_THEOREM_NOTE_2026-09-07.md. Two exact support scripts and pure JSON outputs are listed in PORT_RECEIPTS.json. Original one-event256 rows and36 pairs and all five-event raw fields compare identically; the one-event runner additionally enumerates8 explicit diagonal-sign controls. No numerical assertion counts as proof over all Gaussian unitaries. The single-event theorem has native independent review; the positive construction has root independent review. Original proofs/preregs/raws remain immutable in parent directories. Source assembly is author work, not independent review. No repo files or caches created.

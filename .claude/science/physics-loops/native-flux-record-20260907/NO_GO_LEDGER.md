@@ -1,0 +1,3 @@
+# Scoped negative memory
+
+Nine-mode one-shot Gaussian-plus-parity failure is exact on the complete declared256-codeword domain. Its proof uses the full36-dimensional two-particle sector; it cannot automatically be reused after an earlier parity measurement. Nonbridge sign strings are fair but final matter/apparatus correlations may carry information. Old eight-mode N4 dimension70 or even-parity128 cannot encode256 labels with fixed ready factors; larger carriers remain valid. Direct two-event failure and the generic-gate rejection are preserved in author-originals/adaptive. Heavy universal compiler-negative packet: NOT PASS and not claimed. The five-event positive route explicitly escapes one-shot quantifiers.

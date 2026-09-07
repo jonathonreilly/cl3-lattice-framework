@@ -1,0 +1,7 @@
+# Input and control ledger
+
+The September5 native instrument supplies physical Q=(I+zZ)/2, legal BKSF code, nonbridge fair effect and bridge component-parity effect. Occupation preparation and port roles are supplied. Four independent Z4 labels are represented by256 orthogonal occupation codewords, not an arbitrary set injection. The nine-mode code has8 edge qubits; the positive twelve-mode code has11 edge qubits and includes q0,qbar1, parity reference and occupied anchor. These correlated encoding references are preparation assumptions, not fixed independent ready data.
+
+The negative result permits arbitrary number-conserving Gaussian preprocessing as an enlargement of native path controls. It excludes input-correlated apparatus, extra intermediate measurements and alternative output observables. Its product-ready full-line battery extension has the same sharp native-sign readout only.
+
+The positive result supplies four sign readings, a sixteen-history controller, schedule, selective Hamiltonian gT8 for duration pi/(2g), bond switching and sharp Record occurrences. T8 has physical support on3 consecutive edge sites, not a two-site gate. The work/energy apparatus is unconstructed; no exact finite-battery realization is claimed. Extra low records destroy flux-only Lüders coherence. The current finite U1 work and quantum-link sources leave these suppliers open; neither supplies a native modular gate here.
