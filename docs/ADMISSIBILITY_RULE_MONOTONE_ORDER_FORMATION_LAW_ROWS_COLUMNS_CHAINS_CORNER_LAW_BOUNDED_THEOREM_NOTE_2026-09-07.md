@@ -154,9 +154,11 @@ the conditional law of the middle point of a two-step `K`-chain given its
 ends. On a `2×2` block with top-left `c`, top-right `b`, bottom-left `a`,
 bottom-right `d`:
 `π(c, b, a, d) = (1/6) K(c → a) K(c → b) K(a → d) K(d → b)/(K^2)(a, b)`.
-A **staircase** is a path of right and down steps from the top-left site; a
-**turn** is a right step followed by a down step or a down step followed by a
-right step; the **minimal staircase** is `(0,0)(0,1)(1,1)` (sites `c, b, d`).
+A **staircase** is a path of right and down steps starting at any site of
+the rectangle (the six staircases executed on `3×3` start at the top-left
+site); a **turn** is a right step followed by a down step or a down step
+followed by a right step; the **minimal staircase** is `(0,0)(0,1)(1,1)`
+(sites `c, b, d`).
 "Is a `K`-chain" for a list of sites means its joint law is
 `(1/6) Π K(v_t → v_{t+1})` along the list; "is a Markov chain" means the
 sequence of values along the list is Markov in that order with some kernel.
@@ -279,8 +281,9 @@ denominator (C5).
 
 **Statement.** Under `μ_P` on `S_{W,n}` every row and every column has the
 law `p_0` (the `K`-chain from its first site with the uniform start). On the
-infinite strip `S_W` and on the quadrant every row and every column of finite
-length has the same law.
+infinite strip `S_W` every row is `p_0` and every finite initial segment of
+every column is the `K`-chain of its length; on the quadrant the same holds
+for every finite initial segment of every row and of every column.
 
 *Proof.* Rows: `μ_P` is the row sweep's law (P1), whose every row is `p_0`
 by block 02's E3. Columns on finite rectangles: by P3 the column `j` of
@@ -410,12 +413,11 @@ from the `K`-chain (column `0` is the chain, columns `1` and `2` are not; at
 (E7); on `4×3` no column is a chain — at `(3, 1, 2)` the defects are
 `3583442207/7981260404832`, `23960429927/34827318130176`, `3583442207/7981260404832`
 (E8), computed by the column-projected row transfer whose state carries the
-full current row and the column values recorded so far. The executed
-pattern: on `3×3` column `0` is a chain and it is the column where row `2`
-starts, so that each of its sites below the first has the site above as its
-sole recorded neighbor; on `4×3` no column has that property in every row.
-Nothing beyond these executions is claimed about the snake or any other
-order outside the class. At `(2, 2, 2)` every snake-column defect is zero
+full current row and the column values recorded so far. Nothing beyond
+these executions is claimed about the snake or any other order outside the
+class; no mechanism is stated (the refuting checker found the first draft's
+mechanism sentence false: site `(1, 0)` of the `3×3` snake records two
+neighbors, `(0, 0)` and `(1, 1)`). At `(2, 2, 2)` every snake-column defect is zero
 (E9).
 
 ## No-Go Discipline Gate
@@ -539,7 +541,17 @@ enters.
 ## Review record
 
 Fable primary seat (own 23-mutation census, read from raw per-mutation
-stdout); the contract refuter lens (Opus 5) BEFORE the build, folded: A1 the
+stdout). Refuting checker (Opus 5, disjoint machinery; `CHECKER_block05_findings.md`):
+FIX FIRST on one sentence — the first draft's P7(b) mechanism sentence ("each
+site below the first has the site above as its sole recorded neighbor") was
+false and had been forbidden by the contract's addendum A1; deleted. Two
+wording items folded: staircases start at any site (P6 covers every turning
+monotone path, since the corner law holds at every block position), and the
+infinite-strip statement of P4 speaks of finite initial segments. Everything
+else reproduced on the checker's own direct summations (all four block
+positions of `3×3` by full `6^9` summation; every staircase, snake and mirror
+literal; the P5 and P6 proofs re-derived character for character; 12
+mutations in family). The contract refuter lens (Opus 5) BEFORE the build, folded: A1 the
 snake convention corrected and the "turning column" explanation withdrawn
 (P7b executes `3×3` and `4×3` with the convention declared); A2 P6 stated as
 a theorem from P5 (here strengthened to every non-constant positive triple by
@@ -549,8 +561,9 @@ P5 with its three steps; A5 the `i + j` sweep as the class's third member and
 the `i − j` sweep outside it; A6 the labels (the literature name only in
 Prior art and Imports); A7 P1 for every rule and P3 for asymmetric `φ`, with
 the product-form reason; A8 the executed extras (the mirror count, `2×4`
-against `4×2`, `3×4`). Refuting checker: pending. The supervisor's control
-numbers (the bridge identity, the five-extension law equality, the `3×3`
+against `4×2`, `3×4`). Independence class: single family (Claude), cross-model — Fable primary,
+Opus 5 contract lens, Opus 5 refuting checker, supervisor hand-verification.
+The supervisor's control numbers (the bridge identity, the five-extension law equality, the `3×3`
 column chain, the corner law at two blocks, the staircase defect and the
 snake defects) were reproduced in the seat's own code before any theorem
 sentence was written. Facts settled while executing: at `(3, 1, 2)` the
