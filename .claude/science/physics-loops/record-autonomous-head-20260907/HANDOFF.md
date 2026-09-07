@@ -42,8 +42,9 @@ preregistered supplement. Reservoir/controller resources remain explicit.
 Physical control admissibility/compilation is now being grounded in actual
 repo premises before attempting to retire that larger import.
 
-Next: finish block04 validation, retain actual pre-cleanup readiness evidence,
-commit/push coherent milestone and prepare a review PR. Then continue the
-physical apparatus campaign. No science merge or audit verdict is performed.
+Milestone committed as 53e2d20be0 and pushed. PR8004 is open at
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8004
+stacked on PR8001. Continue the finite collision and physical-control campaign
+in a successor discovery branch; keep this reviewed science milestone stable. No science merge or audit verdict is performed.
 Heavy negative-packet five-family quota is not claimed; this is conditional
 development source readiness and constructive science.
