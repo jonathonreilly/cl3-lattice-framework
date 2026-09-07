@@ -1,0 +1,69 @@
+audit_lint: 4524 rows checked
+  9 warnings:
+    claim_type_defaulted: 9
+      WARN: ckm_atlas_axiom_closure_note: claim_type silently defaulted to positive_theorem; add an explicit 'Type:' header to docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md, or register the path in docs/audit/data/meta_source_patterns.txt (catalog/index) or docs/audit/data/excluded_source_patterns.txt (non-claim infra)
+      WARN: flavor_carrier_not_derived_two_inputs_2026-05-31: claim_type silently defaulted to positive_theorem; add an explicit 'Type:' header to docs/FLAVOR_CARRIER_NOT_DERIVED_TWO_INPUTS_2026-05-31.md, or register the path in docs/audit/data/meta_source_patterns.txt (catalog/index) or docs/audit/data/excluded_source_patterns.txt (non-claim infra)
+      WARN: gauge_vacuum_plaquette_constant_lift_obstruction_note: claim_type silently defaulted to positive_theorem; add an explicit 'Type:' header to docs/GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md, or register the path in docs/audit/data/meta_source_patterns.txt (catalog/index) or docs/audit/data/excluded_source_patterns.txt (non-claim infra)
+      ... and 6 more
+  1453 notices:
+    archived_invalid_no_go_packet: 233
+      NOTICE: acphilambda_hw_complementation_equivariance_support_note_2026-06-09: previous_audits[2] invalid no_go_discipline packet: N1 route 2.route_class='alternate_observable_or_readout' is not supported by its evidenced mechanism/attempt/outcome vocabulary
+      NOTICE: acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04: previous_audits[0] invalid no_go_discipline packet: N3.scanned_evidence_paths must be a list of packet paths
+      NOTICE: acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04: previous_audits[0] invalid no_go_discipline packet: N1 route 4.route_class='algebraic_rearrangement' is not supported by its evidenced mechanism/attempt/outcome vocabulary
+      ... and 230 more
+    derivation_obligation_registry_note_divergence_advisory: 6
+      NOTICE: ac_orbit_occupancy_statistical_grain_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md (content-word grounding 0.36 vs 0.18); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]
+      NOTICE: ac_reta_hclass_hunit_readout_derivation_obligation: registry target does not match '## Exact target' in docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md.
+        registry: Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class, identity-read in h-units as the eta angle, with no extra normalization or transport factor.
+        note:     Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class h, identity-read in h-units as the eta angle, with no extra clock-rate, transport, or normalization factor. [advisory: this finding interprets note prose, so it is reported every run and is never an error]
+      NOTICE: ac_reta_hclass_hunit_readout_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md (content-word grounding 0.45 vs 0.27); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]
+      ... and 3 more
+    excluded_path_row_grandfathered: 21
+      NOTICE: ai_methodology.ai_accountability_and_disclosure_note_2026-04-25: docs/ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md matches data/excluded_source_patterns.txt but carries audit history, so history-preserving exclusion keeps it (should_gate_node); retiring it is an owner/audit-lane decision
+      NOTICE: ai_methodology.raw.canonical_framing_paragraph: docs/ai_methodology/raw/canonical_framing_paragraph.md matches data/excluded_source_patterns.txt but carries audit history, so history-preserving exclusion keeps it (should_gate_node); retiring it is an owner/audit-lane decision
+      NOTICE: ai_methodology.raw.prompts_session_04c820e1: docs/ai_methodology/raw/prompts_session_04c820e1.md matches data/excluded_source_patterns.txt but carries audit history, so history-preserving exclusion keeps it (should_gate_node); retiring it is an owner/audit-lane decision
+      ... and 18 more
+    graph_cycles: 1
+      NOTICE: graph contains 59 back-edges (cycles)
+    no_go_clean_verdict_reset_by_packet_gate: 1
+      NOTICE: 157 no_go rows are unaudited today but hold an archived audited_clean reset by a no_go_discipline_packet_* reason; these are re-audit targets, not fresh rows
+    no_go_grade_path_unreached: 1
+      NOTICE: 355 rows carry claim_type no_go and none currently reaches effective_status retained_no_go
+    no_go_legacy_evidence_snapshot: 1
+      NOTICE: 38 no_go rows carry an archived evidence snapshot the current reader cannot authenticate; run no_go_discipline_gate.evidence_snapshot_schema_defect on the archived packet for the specific reason. Their forensic evidence is not restorable in place
+    prose_retained_no_go_attribution: 35
+      NOTICE: docs/ANOMALY_FORCES_TIME_THEOREM.md:113: prose labels 'no_per_site_chirality_theorem_note_2026-05-02' `retained_no_go`, whose live effective_status is 'unaudited'. retained_no_go requires claim_type=no_go, audited_clean, and a current No-Go Discipline packet; state the cited content instead of a grade. Grandfathered in prose_retained_no_go_attribution_baseline.txt; drain by removing the label.
+      NOTICE: docs/BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md:248: prose labels 'gauge_vacuum_plaquette_constant_lift_obstruction_note' `retained_no_go`, whose live effective_status is 'unaudited'. retained_no_go requires claim_type=no_go, audited_clean, and a current No-Go Discipline packet; state the cited content instead of a grade. Grandfathered in prose_retained_no_go_attribution_baseline.txt; drain by removing the label.
+      NOTICE: docs/BETA_EFF_TWO_WITNESS_REFRESH_ASSESSMENT_NOTE_2026-06-12.md:47: prose labels 'gauge_scalar_temporal_observable_bridge_no_go_theorem_note_2026-05-03' `retained_no_go`, whose live effective_status is 'unaudited'. retained_no_go requires claim_type=no_go, audited_clean, and a current No-Go Discipline packet; state the cited content instead of a grade. Grandfathered in prose_retained_no_go_attribution_baseline.txt; drain by removing the label.
+      ... and 32 more
+    prose_retained_no_go_attribution_baseline_stale: 6
+      NOTICE: docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_source_domain_bridge_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH
+      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH
+      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_exact_readout_map_note_2026-04-19: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH
+      ... and 3 more
+    prose_status_attribution: 542
+      NOTICE: docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md:96: prose labels 'single_axiom_information_note' `retained`, but its live effective_status is 'meta'
+      NOTICE: docs/A1_QUBIT_INTERPRETATION_NOTE_2026-05-20.md:154: prose labels 'i3_zero_exact_theorem_note' `retained`, but its live effective_status is 'unaudited'
+      NOTICE: docs/A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md:201: prose labels 'cl3_color_automorphism_theorem' `retained_bounded`, but its live effective_status is 'unaudited'
+      ... and 539 more
+    runner_pin_baseline_stale: 207
+      NOTICE: action_power_note: runner_pin_baseline.json entry has drained (row is now pinned or reset); drop it so the recorded debt keeps shrinking
+      NOTICE: action_power_scaling_sweep_note: runner_pin_baseline.json entry has drained (row is now pinned or reset); drop it so the recorded debt keeps shrinking
+      NOTICE: alpha_lm_geometric_mean_identity_theorem_note_2026-04-24: runner_pin_baseline.json entry has drained (row is now pinned or reset); drop it so the recorded debt keeps shrinking
+      ... and 204 more
+    unregistered_runner_bearing_note: 104
+      NOTICE: docs/ai_methodology/METHODOLOGY_CASE_STUDIES_2026-04-25.md: names runner(s) ['scripts/verify_cl3_sm_embedding.py'] but matches data/excluded_source_patterns.txt, so seeding creates no ledger row; grandfathered in unregistered_runner_bearing_note_baseline.txt and drainable by moving the note onto an auditable path
+      NOTICE: docs/ai_methodology/skills/physics-loop/references/long-running-execution.md: names runner(s) ['scripts/automation_lock.py'] but matches data/excluded_source_patterns.txt, so seeding creates no ledger row; grandfathered in unregistered_runner_bearing_note_baseline.txt and drainable by moving the note onto an auditable path
+      NOTICE: docs/ai_methodology/skills/review-loop/SKILL.md: names runner(s) ['scripts/vocab_lint.py'] but matches data/excluded_source_patterns.txt, so seeding creates no ledger row; grandfathered in unregistered_runner_bearing_note_baseline.txt and drainable by moving the note onto an auditable path
+      ... and 101 more
+    unregistered_runner_bearing_note_baseline_stale: 289
+      NOTICE: docs/BRANCH_SUMMARY_DISTRACTED_NAPIER.md: listed in unregistered_runner_bearing_note_baseline.txt but no longer an unregistered runner-bearing note; prune the baseline entry
+      NOTICE: docs/PHYSICS_CRITIC_TRACKER.md: listed in unregistered_runner_bearing_note_baseline.txt but no longer an unregistered runner-bearing note; prune the baseline entry
+      NOTICE: docs/SESSION_SUMMARY_2026-04-04.md: listed in unregistered_runner_bearing_note_baseline.txt but no longer an unregistered runner-bearing note; prune the baseline entry
+      ... and 286 more
+    unregistered_runner_bearing_note_unbaselined: 6
+      NOTICE: docs/ai_methodology/skills/audit-loop/SKILL.md: names runner(s) ['scripts/codex_audit_runner.py', 'scripts/runner_cache.py'] but matches data/excluded_source_patterns.txt, so seed_audit_ledger.should_gate_node drops it and the result can never acquire a claim id, note hash, runner pin, queue entry, or verdict. Not in unregistered_runner_bearing_note_baseline.txt, so it postdates the rule. Move the note onto an auditable docs/ path, or register the exact path in docs/audit/data/never_gate_source_paths.txt, or drop the runner reference if the note is narrative only.
+      NOTICE: docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md: names runner(s) ['scripts/sync_methodology_skills.py'] but matches data/excluded_source_patterns.txt, so seed_audit_ledger.should_gate_node drops it and the result can never acquire a claim id, note hash, runner pin, queue entry, or verdict. Not in unregistered_runner_bearing_note_baseline.txt, so it postdates the rule. Move the note onto an auditable docs/ path, or register the exact path in docs/audit/data/never_gate_source_paths.txt, or drop the runner reference if the note is narrative only.
+      NOTICE: docs/repo/SCIENCE_CENSUS_FULL_HISTORY_2026-08-05.md: names runner(s) ['scripts/census_index_rebuild_2026_08_05.py'] but matches data/excluded_source_patterns.txt, so seed_audit_ledger.should_gate_node drops it and the result can never acquire a claim id, note hash, runner pin, queue entry, or verdict. Not in unregistered_runner_bearing_note_baseline.txt, so it postdates the rule. Move the note onto an auditable docs/ path, or register the exact path in docs/audit/data/never_gate_source_paths.txt, or drop the runner reference if the note is narrative only.
+      ... and 3 more
+  OK: no errors

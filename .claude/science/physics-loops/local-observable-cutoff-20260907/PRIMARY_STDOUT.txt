@@ -1,0 +1,9 @@
+PASS TOTAL=29 unique named checks
+per_element: PASS 4 actual cubic incidence and adjacent-tail controls
+per_site: PASS 16 radius0..3 ball, crossing-distance and face-count controls
+per_mode: PASS 5 balanced omitted Peter-Weyl threshold controls
+per_block: PASS 3 projection normalization and zero-coupling/time controls
+lattice_wide: PASS 1 resource control; all-volume propagation remains analytical
+DATA: {"TOTAL": 29, "rows": [{"crossing_faces": 4, "links": 1, "polynomial_link_bound": 3, "radius": 0, "retained_faces": 0}, {"crossing_faces": 28, "links": 13, "polynomial_link_bound": 81, "radius": 1, "retained_faces": 4}, {"crossing_faces": 76, "links": 63, "polynomial_link_bound": 375, "radius": 2, "retained_faces": 32}, {"crossing_faces": 148, "links": 173, "polynomial_link_bound": 1029, "radius": 3, "retained_faces": 108}]}
+RESOURCE: seconds=0.012124457978643477 rss_MiB=22.25 limits=180sec/180MiB
+SOURCE_SHA256: 5bb71d6bd4c5633a28278081d9c4cbc3ba6911e92374e7eaa0fe14c3989830d0
