@@ -1,3 +1,3 @@
-# Publication pending
+# Review publication
 
-No commit, push or PR creation in this integration dispatch. Root will review and publish the dependent milestone after the heat unit. This is a temporary review stage, not abandonment of delivery.
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8010 is open and mergeable. process_contracts passed on the verified publication head. Source and runner science remains frozen; later current-main synchronization preserved it. The full pipeline receipt retains its actual e6a50983b4 pin. No science PR was merged by this campaign.
