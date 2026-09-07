@@ -1,3 +1,3 @@
-# Publication backlog
+# Review publication
 
-Not yet attempted: parent29 integration/publication must be available first. This is scratch staging only. One coherent two-source draft review PR is intended, with no merge.
+Draft PR8022 published and verified OPEN/MERGEABLE/CLEAN, stacked on8021. No publication backlog remains.
