@@ -1,0 +1,198 @@
+{
+  "pass": true,
+  "base": "e043c95b37bd46d80e97c39f36c8b3cb7643c62f",
+  "source_preservation": [
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "09e6657022b3828b0867e28f9e9984e8e948e8892cc3dd6aa22f321baf16e0ad",
+      "all_old_entries_and_nonregistry_AST_identical": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "39f29c0e5b4dcf82973e0f6bc9749cb65f8ec48394298f80e6c45ab618b1cb70",
+      "all_old_entries_and_nonregistry_AST_identical": true
+    }
+  ],
+  "actual_cases": [
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "claim": "native_edge_record_finite_collision_apparatus_bounded_theorem_note_2026-09-07",
+      "actual": [
+        "scripts/native_edge_record_finite_collision_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_sibling_carrier_import_verified": true
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "claim": "native_edge_record_reduced_cell_control_support_bounded_theorem_note_2026-09-07",
+      "actual": [
+        "scripts/native_edge_record_reduced_cell_control_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_sibling_carrier_import_verified": true
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "claim": "native_edge_record_reduced_cell_full_isometry_bounded_theorem_note_2026-09-07",
+      "actual": [
+        "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_sibling_carrier_import_verified": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "claim": "native_edge_record_finite_collision_apparatus_bounded_theorem_note_2026-09-07",
+      "actual": [
+        "scripts/native_edge_record_finite_collision_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_sibling_carrier_import_verified": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "claim": "native_edge_record_reduced_cell_control_support_bounded_theorem_note_2026-09-07",
+      "actual": [
+        "scripts/native_edge_record_reduced_cell_control_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_sibling_carrier_import_verified": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "claim": "native_edge_record_reduced_cell_full_isometry_bounded_theorem_note_2026-09-07",
+      "actual": [
+        "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py",
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_sibling_carrier_import_verified": true
+    }
+  ],
+  "actual_source_omission_mutants": [
+    {
+      "source_consumer": "docs/audit/scripts/build_citation_graph.py",
+      "claim": "native_edge_record_finite_collision_apparatus_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_finite_collision_check_2026_09_07.py",
+      "mutant_source_sha256": "6f80313ef6514281fba0371615f88abded7e1b25013d5a479acad071676519d2",
+      "missing": [
+        "scripts/native_edge_record_finite_collision_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "docs/audit/scripts/build_citation_graph.py",
+      "claim": "native_edge_record_finite_collision_apparatus_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+      "mutant_source_sha256": "c4198425bf9a060f82fa98d111906d1bd95e376210ff6cdf68633834f1d9787b",
+      "missing": [
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "docs/audit/scripts/build_citation_graph.py",
+      "claim": "native_edge_record_reduced_cell_control_support_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+      "mutant_source_sha256": "6a19850afefc93ba8e2ed7a95e4b6c82bb2ccca9873e942dcc6093f426107c7d",
+      "missing": [
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "docs/audit/scripts/build_citation_graph.py",
+      "claim": "native_edge_record_reduced_cell_control_support_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_reduced_cell_control_check_2026_09_07.py",
+      "mutant_source_sha256": "4d5fea468a54d93845e3a47cecb7da507d5ce7bc2ab78d8e387286fae4fa4692",
+      "missing": [
+        "scripts/native_edge_record_reduced_cell_control_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "docs/audit/scripts/build_citation_graph.py",
+      "claim": "native_edge_record_reduced_cell_full_isometry_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py",
+      "mutant_source_sha256": "ee331b52001757685314878bdf97bbb7084769865312f752b6b96f852db75f6d",
+      "missing": [
+        "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "docs/audit/scripts/build_citation_graph.py",
+      "claim": "native_edge_record_reduced_cell_full_isometry_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+      "mutant_source_sha256": "013297de07a18327b0f64342c5d38d060ac3687b0f21a847aff803de181b7c95",
+      "missing": [
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "scripts/audit_packet_script_deps.py",
+      "claim": "native_edge_record_finite_collision_apparatus_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_finite_collision_check_2026_09_07.py",
+      "mutant_source_sha256": "d1c236f56d9503c237b7def0798efa6d9290a11486bb1432d4eb80e24deae7f8",
+      "missing": [
+        "scripts/native_edge_record_finite_collision_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "scripts/audit_packet_script_deps.py",
+      "claim": "native_edge_record_finite_collision_apparatus_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+      "mutant_source_sha256": "46f28e16e68bdd1dd68efaf1a99739c6554dd5292942e7d6db2aa15bbe143508",
+      "missing": [
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "scripts/audit_packet_script_deps.py",
+      "claim": "native_edge_record_reduced_cell_control_support_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+      "mutant_source_sha256": "1e549c7b4d3a0f8c2a765c10863ec8dcbdc6171b5cd40f67712e1c99b0f9190b",
+      "missing": [
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "scripts/audit_packet_script_deps.py",
+      "claim": "native_edge_record_reduced_cell_control_support_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_reduced_cell_control_check_2026_09_07.py",
+      "mutant_source_sha256": "b2c31c1a870754d8e57471cf83b34ad2be14e563104bbbe5e18e99ee49422503",
+      "missing": [
+        "scripts/native_edge_record_reduced_cell_control_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "scripts/audit_packet_script_deps.py",
+      "claim": "native_edge_record_reduced_cell_full_isometry_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py",
+      "mutant_source_sha256": "b9a782ba42b62f61d9c4ba7f2c3f453980f7da9404c7d11fce3ed78f9112c186",
+      "missing": [
+        "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    },
+    {
+      "source_consumer": "scripts/audit_packet_script_deps.py",
+      "claim": "native_edge_record_reduced_cell_full_isometry_bounded_theorem_note_2026-09-07",
+      "deleted_source": "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py",
+      "mutant_source_sha256": "3d96831988785927755b0d61c047b87f4a50f7b34459896939e528259667701a",
+      "missing": [
+        "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py"
+      ],
+      "actual_consumer_rejects_complete_set": true
+    }
+  ],
+  "governed_hash_before": "235e8b82fd460d29f0798f13df129d2f896aa31d4c14566f179e200dc6194c5b",
+  "governed_hash_after": "235e8b82fd460d29f0798f13df129d2f896aa31d4c14566f179e200dc6194c5b",
+  "actual_producer_sha256": "ab604aa6fad2a1a8697698efda93f758c769203c1dfc16d09b614c3198214250",
+  "full_graph_build_or_audit_invoked": false
+}

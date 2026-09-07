@@ -1,24 +1,23 @@
 # Backlog review and landing — current handoff
 
-Updated 2026-09-07T17:35:49.146411+00:00. Main is `e043c95b37bd46d80e97c39f36c8b3cb7643c62f`.
-Owner authority covers backlog review, narrow source repairs, direct main landings,
+Updated 2026-09-07T18:08:52.314391+00:00. Main is `94e90cbf928cb35fa1b50e894cd897c94b73077f`.
+Owner authority covers backlog review, narrow source repairs, direct main landing
 and draft ready-or-close triage. Formal audit waits until a solid TOE. No review
 or planning receipt applies an audit grade.
 
 ## Queue and landed work
 
-The live inventory has **152 open PRs and zero drafts**, from 254 starting PRs,
-six new arrivals and 108 closures. Of those closures,106 were original PRs and
-two were new successors. The actions comprise21 draft closures, nine PR closures
-after source landing and 78 further consolidations (57 exact-source and 21 with
-four explicitly reconciled arithmetic/append-only versions). Sixteen other
-drafts were marked ready. All 37 original drafts are resolved.
+**146 open PRs, zero drafts.** The 254 starting PRs plus eight arrivals minus
+116 closures reconcile exactly. Closures comprise 113 original PRs and three
+new successors: 21 draft closures, ten closures after source landing and 85
+further consolidations (64 exact-source, 21 with four reviewed arithmetic/history
+differences). Sixteen drafts became ready; all 37 original drafts are resolved.
 
-Six science batches have landed:29 new source notes (28 conditional bounded
-theorems and one scoped no-go), with six combined validation runs, zero retries,
-no formal audit and no applied verdict. Each batch preserves the complete reviewed
-source, checks actual premises/helper closure and current-main interactions, and
-verifies exact hashes on remote main. Duplicate closure alone is not landing.
+Seven science batches have landed: 34 new source notes (33 conditional bounded
+theorems and one scoped no-go), with seven combined validation runs and zero
+gate retries. Complete independent source review, same-reviewer corrections,
+actual input/premise closure and current-main preservation remain required.
+Duplicate consolidation alone is not science landing or acceptance.
 
 | Landed unit | Main commit | Evidence |
 | --- | --- | --- |
@@ -28,55 +27,59 @@ verifies exact hashes on remote main. Duplicate closure alone is not landing.
 | Monotone formation/corner result | `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac` | `backlog_evidence/wave4` |
 | Four autonomous Record/apparatus results | `12d9c77c0605276b82eb9fcb8cf05cdaf3e40f56` | `backlog_evidence/wave5` |
 | Six charged-source/current/work/backreaction results | `e043c95b37bd46d80e97c39f36c8b3cb7643c62f` | `backlog_evidence/wave6` |
+| Two finite ice and three finite Record collision/control results | `94e90cbf928cb35fa1b50e894cd897c94b73077f` | `backlog_evidence/wave7` |
 
-The latest batch resolves the charged clock sign/background, actual live-current
-test, fixed-g rotor boundary, complete cache inputs, status/trace and finite-link
-versus continuous-phase interpretation. All 139 fresh checks pass; the original
-reviewer confirmed the precise corrections and committed integration. One
-pipeline, strict lint and six changed-evidence checks passed. All 19 final hashes
-match remote main; all 1477 generated validation paths were preserved externally
-and stripped. No other current-main source changed. Its six original PRs were
-already closed during consolidation; #7937 remains open for its other science.
+Wave7 combines two independently confirmed units: 81 Record source paths and six
+ice paths, plus the regenerated manifest. All 88 file hashes match remote main.
+The graph adds five claims and 13 edges with every old entry unchanged. One
+pipeline, strict lint and five changed-evidence checks pass; all 1482 generated
+paths were preserved externally and stripped. No audit or verdict was applied.
+#8005 is closed after landing; its branch remains. #7937 is now consolidated
+into open #7966, retaining every inherited source and review obligation.
+
+The exact finite ice component derivatives and trial-state mathematics remain
+separate from physical positive U/K and phase claims. Record collision/control
+results retain supplied preparation, clock, interaction and tensor assumptions.
 
 ## Current assignments and holds
 
-| Owner | Unit | Current state / next step |
+| Owner | Unit | State and next step |
 | --- | --- | --- |
-| Record reviewer | #8005 at `fb81c52351baea499c81f517a3d32ef8db10d065` | Complete original source review found two P2 issues: helper registrations and an unasserted reported energy invariant. Separate author is implementing the narrow fixes; original reviewer will confirm. |
-| Separate author, then original light reviewer | Six-path light-ice unit from #7936/#7937 | Five findings corrected within the six original paths;27 fresh checks pass, sampling protocol preserved. Original reviewer is confirming the exact correction. Variational K and sampled U_fit remain explicitly conditional; no source PASS yet. |
-| Light reviewer, after ice priority | #7966 field repair specification | Identify coherent interpretation/estimator unit and actual source/premise closure before expensive sampling. Checkerboard versus uniform source and convergence obligations remain. |
-| Coordinator queue | #8006/#8007/#8008 | New or moved source needs its own review. #8008 at `b5575ba59ed120c81efe8f546c8244a18baf3db1` has61 paths and extends #8007. No inherited PASS. |
-| Held | Eta pair-process | Partial review only: reconcile old additivity-registry pins with current main; classify historical Git/status fixtures. Heavy execution paused until those source issues resolve. |
-| Held | Curved covariance | Actual52-module/91107-line closure reaches reserved science. No raw tower landing or full source PASS. Standalone salvage remains only a proposal. |
+| Record clock reviewer | #8006 at `fcea79f576bd276004d33306a487cfb7577d418e` | Full coherent source review in progress on the landed Record parent. Reproduced missing chain case/contrast assertions and possible helper registration omission; no full PASS. |
+| Field author and separate reviewer | Standalone source and receipt diagnostic for #7966 | Eleven-path candidate in progress. Preserve checkerboard versus uniform source, failed historical replay/spans and unresolved hybrid U uncertainty; reject conflicting receipt records. A newly reproduced Ritz-separation/minimum-gap mislabel is under narrow correction. No production tower import or long sampler. |
+| Coordinator queue | #8007/#8008/#8009/#8010 | Fresh heads and complete changed-file lists captured. New or moved source has no inherited PASS. |
+| Held | Eta pair-process | Partial review only: old additivity-registry pins and historical Git/status fixtures need reconciliation with current premises. |
+| Held | Curved covariance | Actual52-module closure reaches reserved science; no raw tower landing or full source PASS. |
 
-Standing owner reservations **#6379, #6858 and #6859** remain in force, including
-inherited source. No raw #7827, #7937, #7315 or other cumulative tower gains
-landing authority from ancestry, consolidation, an old label or a three-file
-successor diff. Remaining inherited source/claim/input obligations stay explicit.
+Standing reservations **#6379, #6858 and #6859** remain, including inherited
+content. The 57 original field source paths on #7966 still need complete science
+review; the standalone diagnostic does not represent them as landed. All original
+branches, dirty worktrees and historical receipts are preserved.
 
-The 21 latest parent closures into open #7315 preserve all 85 unique original
-authored source paths and every inherited source path. The coordinator independently
-checked 407016 mode/blob rows,86 authored change records, four differing versions
-and deletion handling. Every live head/state was checked before and after each
-closure, and branches remain. Exact arithmetic substitutions preserve assertions,
-results and limitations; they are not an arbitrary-input equivalence theorem.
-The successor still needs complete inherited science review. See
-`BACKLOG_CONSOLIDATIONS.json` and `backlog_evidence/7315-consolidations`.
+## Avoid recurring review work
 
-## Shared evidence and working rules
+- For a new claim packet, discover actual helper imports and file reads, then
+  register the complete helper set in both packet consumers. Check their actual
+  outputs and pin mutable cache inputs; a sibling-only list can omit its carrier.
+- Enforce each claimed case or invariant before reporting PASS. An aggregate
+  `any()` or a printed boolean does not validate every named fixture.
+- Distinguish a sampled Ritz separation from the smallest spectral gap. A small
+  residual alone does not show that a Krylov start reached every relevant sector.
 
-- `OPEN_PR_INVENTORY.json`: current exact heads and complete changed-file lists.
-- `DRAFT_DISPOSITIONS.json`: all 37 draft decisions and verified actions.
-- `NEXT_REVIEW_UNITS.json`: source partitions, current status and explicit holds.
-- `MAIN_STATUS_SNAPSHOT.json`: applied ledger 4475 rows, all science unaudited;
-  the 29 new source rows generated by validation were stripped before landing.
-- `BATCH_REVIEW_PLAN.md` and current-main review contract: independent full source
-  review once, same-reviewer correction confirmation, affected-closure rechecks,
-  and one combined current-main gate for each ready coherent batch.
-- `history/BACKLOG_ACTIVITY_THROUGH_WAVE5_2026-09-07.md`: preserved detailed prior
-  activity, including historical queue counts and superseded assignments.
+These are observed repair patterns, not extra formal audit stages. Reuse complete
+independent review for unchanged source, confirm only the affected corrections,
+and run one combined current-main gate for a ready compatible batch.
 
-The repo has shallow history. Missing merge-base evidence is unknown, never an
-empty delta. Preserve original branches/worktrees and original/final/deleted
-source maps. Coordinator owns GitHub actions and shared planning; workers return
-evidence in assigned artifacts. Formal audit is outside this backlog run.
+## Shared evidence
+
+`OPEN_PR_INVENTORY.json` pins current queue heads/files; `NEXT_REVIEW_UNITS.json`
+holds assignments and landed source maps. `BACKLOG_CONSOLIDATIONS.json` records
+all transferred obligations. `MAIN_STATUS_SNAPSHOT.json` records the unchanged
+4475-row applied ledger; all science remains unaudited. The 34 new rows generated
+by validation were stripped. `backlog_evidence/wave7` binds the latest landing;
+`remaining-exact-consolidations` binds seven latest duplicate closures, including
+135661 independently checked inherited/source rows and 40 authored paths.
+
+Older activity and raw source inventories are preserved under `history/`.
+Shallow-history gaps are unknown, never empty deltas. Coordinator owns shared
+planning and GitHub actions; workers write their assigned evidence only.

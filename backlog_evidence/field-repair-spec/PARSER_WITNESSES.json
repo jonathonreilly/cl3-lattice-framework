@@ -1,0 +1,20 @@
+{
+  "execution_scope": "only isolated actual parser functions; no production import or sampler",
+  "source_hashes": {
+    "scripts/spin_half_cubic_ice_infrared_forward_replay_join_2026_09_04.py": "b0556cf80af1a4515ca1a134c435dd40c011f0dfb058acd743c2948522e12af8",
+    "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py": "fdb9e0d0de5d10282c782cd888a9e3823c76a9c2a253887e76ae8a686de8da1f"
+  },
+  "strict_original": "high-genealogy replay receipt is not green",
+  "diagnostic_rows": 8,
+  "conflicting_footer_strict_accepted_rows": 8,
+  "green_status_after_conflicting_footer": true,
+  "static_target": [
+    0.012289089918,
+    0.0011689942811097837
+  ],
+  "actual_electric_reference_line": "AXIAL_FIT V=0.95 U_charge=0.160609+/-0.015345 U_flux=0.162638 A_1overR=0.016382 U_flux/(4pi)=0.012942 rss=coulomb:0.00003535,inverse_distance:0.00003263,linear_distance:0.00010862,quadratic_distance:0.00015186,constant:0.00018761",
+  "electric_central_source": "U_flux=0.162638",
+  "electric_error_source": "U_charge error=0.015345",
+  "statistical_disposition": "hybrid uncertainty needs an explicit justified prescription; no claimed U_flux uncertainty supplied by this parser",
+  "mandatory_repair": "Parse one canonical header/status block and exact source/input/log hashes; reject conflicting/duplicate status and rows. Never infer source identity or acceptance from substrings in an appended historical receipt."
+}

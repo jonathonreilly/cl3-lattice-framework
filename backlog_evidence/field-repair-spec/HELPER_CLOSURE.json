@@ -1,0 +1,369 @@
+{
+  "recommended_unit": {
+    "existing_standalone_modules": {
+      "scripts/spin_half_cartesian_plaquette_source_2026_09_07.py": {
+        "imports": [
+          "__future__",
+          "argparse",
+          "collections",
+          "itertools",
+          "json",
+          "numpy",
+          "pathlib",
+          "scipy",
+          "scipy.linalg",
+          "scipy.sparse.linalg"
+        ],
+        "repository_science_imports": [],
+        "current_declaration": [],
+        "mandatory_final_declaration": [
+          "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md"
+        ],
+        "top_level_execution": false
+      },
+      "scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py": {
+        "imports": [
+          "argparse",
+          "collections",
+          "itertools",
+          "json",
+          "numpy",
+          "pathlib",
+          "scipy",
+          "scipy.sparse.linalg"
+        ],
+        "repository_science_imports": [],
+        "current_declaration": [],
+        "mandatory_final_declaration": [
+          "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md"
+        ],
+        "top_level_execution": true
+      }
+    },
+    "diagnostic_repo_science_imports_permitted": [],
+    "diagnostic_inputs": [
+      "docs/SPIN_HALF_CARTESIAN_PLAQUETTE_SOURCE_NOTE_2026-09-07.md",
+      "docs/SPIN_HALF_CUBIC_ICE_SOURCE_RECEIPT_DIAGNOSTIC_NOTE_2026-09-07.md",
+      "data/field/spin_half_cubic_ice_historical_receipts_2026_09_07.json"
+    ],
+    "additional_evidence_helpers": [
+      "scripts/spin_half_cartesian_plaquette_source_independent_check_2026_09_07.py"
+    ],
+    "requirements": "Register independent checker in both actual consumers. Declare every file actually read and every load-bearing proof context. Keep primary and independent implementations computationally independent; do not import the top-level executing checker. New fixture fully pins historical receipt content, original head/path/mode/blob/SHA256, producer hashes and known declared inputs; historical consistency is not live receipt authentication."
+  },
+  "legacy_reuse_requires_review": {
+    "direct_join_and_magnetic_module_closure": [
+      "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+      "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+      "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+      "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py",
+      "scripts/spin_half_cubic_ice_infrared_forward_replay_join_2026_09_04.py",
+      "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+      "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py",
+      "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+      "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+      "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py"
+    ],
+    "complete_constituent_module_closure": {
+      "scripts/spin_half_cubic_ice_forward_length_finite_sample_reanalysis_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_forward_length_convergence_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_forward_length_convergence_join_2026_09_04.py": [],
+      "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_join_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_quadratic_gauge_kernel_uniqueness_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_quadratic_gauge_kernel_uniqueness_2026_09_04.py": [],
+      "scripts/spin_half_cubic_ice_infrared_maxwell_health_reanalysis_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+        "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py": [
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py": [],
+      "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py": [
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py": [
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py": [
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_forward_length_high_stat_join_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_forward_length_convergence_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_forward_replay_join_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py",
+        "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py",
+        "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_forward_length_high_stat_extension_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_cubic_orbit_scout_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.py",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_staggered_orbit_scout_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_off_axis_cubic_orbit_scout_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_high_q_localization_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_join_2026_09_04.py",
+        "scripts/spin_half_cubic_ice_quadratic_gauge_kernel_uniqueness_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_maxwell_failure_localization_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_infrared_maxwell_health_reanalysis_2026_09_04.py",
+        "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ]
+    },
+    "raw_declared_inputs": {
+      "scripts/spin_half_cubic_ice_forward_length_finite_sample_reanalysis_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_forward_length_ladder_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_forward_length_convergence_join_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_forward_length_convergence_join_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_forward_length_convergence_join_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_forward_length_ladder_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_join_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_quadratic_gauge_kernel_uniqueness_2026_09_04.py",
+        "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.txt",
+        "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_off_axis_maxwell_isotropy_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_quadratic_gauge_kernel_uniqueness_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_maxwell_health_reanalysis_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_infrared_ladder_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.txt",
+        "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.txt",
+        "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_infrared_ladder_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "scripts/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.py",
+        "scripts/u1_role_encoded_nearest_neighbor_gauge_law_2026_09_03.py",
+        "scripts/u1_local_reversible_yee_leapfrog_tick_2026_09_03.py",
+        "scripts/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+        "scripts/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_forward_length_high_stat_join_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_forward_length_ladder_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_forward_length_high_stat_extension_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_forward_length_high_stat_extension_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_forward_replay_join_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_infrared_ladder_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.txt",
+        "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_forward_length_high_stat_extension_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_cubic_orbit_scout_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_staggered_orbit_scout_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_off_axis_cubic_orbit_scout_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_off_axis_cubic_orbit_scout_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_high_q_localization_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_quadratic_gauge_kernel_uniqueness_2026_09_04.py",
+        "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.txt",
+        "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_off_axis_maxwell_isotropy_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_join_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_off_axis_maxwell_isotropy_join_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_maxwell_failure_localization_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_infrared_maxwell_health_reanalysis_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_infrared_maxwell_health_reanalysis_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_infrared_ladder_2026_09_04.txt",
+        "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+        "logs/runner-cache/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.txt"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_2026_09_04.py": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py"
+      ]
+    },
+    "missing_direct_input_pins": {
+      "scripts/spin_half_cubic_ice_forward_length_high_stat_join_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_forward_length_convergence_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_forward_replay_join_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_transverse_scout_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_cubic_orbit_scout_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ],
+      "scripts/spin_half_cubic_ice_infrared_maxwell_failure_localization_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py"
+      ],
+      "scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_2026_09_04.py": [
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py"
+      ]
+    },
+    "source_snapshot_paths": 65,
+    "limit": "65 raw paths include source union, actual static-import closure and those modules direct declarations. This is not recursive proof closure for all note citations and is not a full source review. Dynamic-I/O candidates in SOURCE_MAP are a syntactic screen, not proof of no runtime I/O."
+  }
+}
