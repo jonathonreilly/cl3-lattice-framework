@@ -1,0 +1,46 @@
+{
+  "completed_at": "2026-09-07T14:50:14.232495+00:00",
+  "base": "f6f861e8f0c7870b3a9a200a020ec5ca0b14be38",
+  "candidate_commit": "2d0f551dcd8bd444daee85b97811cda53da0661e",
+  "tested_source_tree": "7061435ae51a63dae71c4b7f873b4ec4f1f7f4c0",
+  "cleaned_landing_tree": "7061435ae51a63dae71c4b7f873b4ec4f1f7f4c0",
+  "all_104_reviewed_source_hashes_unchanged": true,
+  "full_pipeline_runs": 1,
+  "integration_retries": 0,
+  "commands": [
+    [
+      "bash",
+      "docs/audit/scripts/run_pipeline.sh"
+    ],
+    [
+      "python3",
+      "docs/audit/scripts/audit_lint.py",
+      "--strict"
+    ],
+    [
+      "python3",
+      "docs/audit/scripts/check_changed_audit_evidence.py",
+      "--base",
+      "origin/main"
+    ]
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "log_hashes": {
+    "pipeline.log": "ddeed60a21365e6665cb82c488cdfab50125b2335d9e493f86ccc3a7903c1406",
+    "strict-lint.log": "5b0507d7c2758fd6a3504d0ce0381a591ee388a51585400137991f62da23062a",
+    "changed-evidence.log": "ff851df931d0021115f9637b04619e5759bf9b053ad915677979f3c3f27baa6c"
+  },
+  "notices": "Strict lint reports existing notice classes, zero errors. Three changed evidence rows passed, zero control failures.",
+  "generated_outputs": "1438 generated ledger/queue/status paths preserved externally and stripped to candidate HEAD; no verdict applied or landed.",
+  "source_review_addenda": {
+    "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-8001-review/COMMITTED_BINDING.md": "758f16cf3b166c377e1d70c111f59ba912b318b46ba2a3ee08f71eca898f64b4",
+    "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-batch-adversarial-review/INTEGRATION_CONFIRMATION.md": "fc14772a502217b60f1e847941109e9e055959fece63269d90bb8ceb649a03d3"
+  },
+  "original_heads_reverified": true,
+  "main_reverified": true,
+  "formal_audit": "deferred"
+}

@@ -1,0 +1,3731 @@
+{
+  "captured_utc": "2026-09-07T14:42:45.091662+00:00",
+  "main_sha": "f6f861e8f0c7870b3a9a200a020ec5ca0b14be38",
+  "units": [
+    {
+      "unit_id": "eta_affine_repeat",
+      "review_recommendation": "Follow the pair/context review: affine response, explicit randomizer, local compiler and repeatability selector. Keep the supplied preparation/renewal/attachment/repeatability premises separate from any four-axiom claim.",
+      "science_review_status": "not_performed",
+      "target_pr": 7827,
+      "target_head": "17357c3714c3b3196c6b8fdc9b1a3bb300044181",
+      "constituents": [
+        {
+          "pr": 7824,
+          "head": "ef94ebb12c490474e843c257b60090faa3720f27",
+          "base": "8ecca1f3e92adef2903563d0ae2ef92ac0a18256",
+          "merge_base": "8ecca1f3e92adef2903563d0ae2ef92ac0a18256",
+          "original_delta_paths": 25
+        },
+        {
+          "pr": 7825,
+          "head": "235000daafd4d3aa1b1cc590aebc0efd177df089",
+          "base": "ef94ebb12c490474e843c257b60090faa3720f27",
+          "merge_base": "ef94ebb12c490474e843c257b60090faa3720f27",
+          "original_delta_paths": 31
+        },
+        {
+          "pr": 7826,
+          "head": "a67fe3bfeb884936ed7eb16ba1e7f6e3931dd86d",
+          "base": "235000daafd4d3aa1b1cc590aebc0efd177df089",
+          "merge_base": "235000daafd4d3aa1b1cc590aebc0efd177df089",
+          "original_delta_paths": 29
+        },
+        {
+          "pr": 7827,
+          "head": "17357c3714c3b3196c6b8fdc9b1a3bb300044181",
+          "base": "a67fe3bfeb884936ed7eb16ba1e7f6e3931dd86d",
+          "merge_base": "a67fe3bfeb884936ed7eb16ba1e7f6e3931dd86d",
+          "original_delta_paths": 26
+        }
+      ],
+      "closed_parent_packets_in_scope": [],
+      "final_source_files": {
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "bb4377cd5b814a08786db355720257877146cba1",
+          "bytes": 2722,
+          "lines": 18,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "3204a44d1ece424c9beffe79206b6cd1c884225c",
+          "bytes": 836,
+          "lines": 13,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "2b3a4663c46c88298ec4ea04f88d78d2d3edb795",
+          "bytes": 2078,
+          "lines": 27,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "a0f81b53de540ae3f3274043340df952e5cace26",
+          "bytes": 834,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/CANONICAL_MAIN_AUTHORITY_MANIFEST.md": {
+          "mode": "100644",
+          "blob": "2fc22740d3f2bd8f2441973e5484ec3cb973000f",
+          "bytes": 1743,
+          "lines": 31,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/EXACT_TARGET_CONTRACT.md": {
+          "mode": "100644",
+          "blob": "74b72c2b3cbf489fc311940bb211384aa8383959",
+          "bytes": 2046,
+          "lines": 16,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "46239889fc5610cad05f737b7925e514af8d6119",
+          "bytes": 5042,
+          "lines": 110,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/GOAL.md": {
+          "mode": "100644",
+          "blob": "301498f68e03f34d65a7c064eb6a7ce839795eaa",
+          "bytes": 1044,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/INDEPENDENT_STATIC_ATTACK_FINAL.md": {
+          "mode": "100644",
+          "blob": "18d0ec7fa4b44b6de3d22f241a3e37f506086d5c",
+          "bytes": 5036,
+          "lines": 90,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "062fcca329941db3b7bc086f55b6ca0fb7b98b68",
+          "bytes": 1128,
+          "lines": 21,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "fd92e4af9abaccfee812de6dd7d804da136438e3",
+          "bytes": 1460,
+          "lines": 31,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "ca0dc5a7ea0c5803dfed0473372558927b72c847",
+          "bytes": 582,
+          "lines": 10,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "1e4592a8947cb336d67216f4eec8512ddf9ecdb9",
+          "bytes": 797,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/POSTEXECUTION_EXPECTED_TERMINAL.txt": {
+          "mode": "100644",
+          "blob": "26d1c2828425da3d1f7a99c29d80cb3241af1fbe",
+          "bytes": 750,
+          "lines": 1,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/POSTEXECUTION_NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "b3b7970f3b6146271e2e8c3e06e8b0375b975c51",
+          "bytes": 18196,
+          "lines": 185,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/POSTEXECUTION_STATE.yaml": {
+          "mode": "100644",
+          "blob": "66cde50d99977c24290cbec83a97c5dc9f6222c0",
+          "bytes": 1359,
+          "lines": 29,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "e3d4ed5e00fa778d85f28a4ed1ac318989230b68",
+          "bytes": 1071,
+          "lines": 19,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "25ab0a8f336dcad1cf9a1555ae3a1eee71166471",
+          "bytes": 1096,
+          "lines": 20,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/RUNNER_SOURCE_PIN.md": {
+          "mode": "100644",
+          "blob": "aa24ed7490f81b29579b144b47b8b702c330576b",
+          "bytes": 1479,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/STATE.yaml": {
+          "mode": "100644",
+          "blob": "bf1f83ce953eea5c5fe484825fbbb250c0c72222",
+          "bytes": 824,
+          "lines": 19,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/TOE_LANE_UPDATE.md": {
+          "mode": "100644",
+          "blob": "685ae37f5a414699675b3274b59d60bcb2b0663a",
+          "bytes": 3834,
+          "lines": 57,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block35-opus-affine-born-evidence-gate-20260901/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "dbf343a15d8e9894260ce51e81ac85726858078b",
+          "bytes": 834,
+          "lines": 16,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "a7f96e0cf88e610d7269f781cfaf96baa319d2df",
+          "bytes": 3651,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "741f60c8fb9c66f5ebda496ba4094ee459d343f7",
+          "bytes": 1148,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "4c687662e7c65f30865da280232f6fafd12cea0f",
+          "bytes": 5059,
+          "lines": 35,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "1b27a7e001e4f94a13983a53b96aadd196426abc",
+          "bytes": 1275,
+          "lines": 21,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/CANONICAL_MAIN_AUTHORITY_MANIFEST.md": {
+          "mode": "100644",
+          "blob": "64b0efc6c939987153a464c97524c418ccd58c4f",
+          "bytes": 4582,
+          "lines": 58,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/CLAIM_STATUS_CERTIFICATE.md": {
+          "mode": "100644",
+          "blob": "23cd7eb1241bcb814cc755941d8e39a5353efbaf",
+          "bytes": 1492,
+          "lines": 26,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/EXACT_TARGET_CONTRACT.md": {
+          "mode": "100644",
+          "blob": "37f629e46433451dc185826948569162c6265af2",
+          "bytes": 3096,
+          "lines": 16,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "a2aae44855ed3558e62f31dbae3bb1d9b5091de2",
+          "bytes": 4065,
+          "lines": 88,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/FIRST_PRINCIPLES_RESET.md": {
+          "mode": "100644",
+          "blob": "ccf673eb302b937a786f05dd831732c8e895c930",
+          "bytes": 1128,
+          "lines": 27,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/GOAL.md": {
+          "mode": "100644",
+          "blob": "cfa1dbe18c1e4abbf5e63aec364fb2f6395a423d",
+          "bytes": 1355,
+          "lines": 29,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/HANDOFF.md": {
+          "mode": "100644",
+          "blob": "6a30495c280cf2f541dbbfd4ae1f8640c589ff1b",
+          "bytes": 1380,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/INDEPENDENT_STATIC_ATTACK_FINAL.md": {
+          "mode": "100644",
+          "blob": "1ab4acdf55dd30602f0aea14eb1460a9ff9a99b7",
+          "bytes": 5059,
+          "lines": 88,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/LITERATURE_BRIDGES.md": {
+          "mode": "100644",
+          "blob": "1fff2099b1d9e5e531db2ddf1a33afa1b350349a",
+          "bytes": 561,
+          "lines": 10,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "f940ea9a8759f20bbc4e5d15cd703d5302125eb5",
+          "bytes": 1720,
+          "lines": 31,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/NO_GO_LEDGER.md": {
+          "mode": "100644",
+          "blob": "5877367569bdc7f24e1bb682ed03d35577e599d0",
+          "bytes": 2276,
+          "lines": 34,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "02beeacac1fe13ca63935eb13aa1fb3bb62189e3",
+          "bytes": 3600,
+          "lines": 52,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "09d446aa90f6643add2586b5084d8c0e39cc9ed2",
+          "bytes": 2433,
+          "lines": 47,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/POSTEXECUTION_STATE.yaml": {
+          "mode": "100644",
+          "blob": "4346b47779006e605504896de8568bb9a774e6da",
+          "bytes": 1602,
+          "lines": 34,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "8f68a1dbed60f0bd7363fdd742bc7e88f7fec3b4",
+          "bytes": 1832,
+          "lines": 24,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/PRIOR_ART_SEARCH.md": {
+          "mode": "100644",
+          "blob": "d6452014d13456873327c9a6fba03cca1adea595",
+          "bytes": 2798,
+          "lines": 39,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/PR_BACKLOG.md": {
+          "mode": "100644",
+          "blob": "0b1aec5f1a9c652b637faa9f4de3f7127913103b",
+          "bytes": 670,
+          "lines": 13,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/REVIEW_HISTORY.md": {
+          "mode": "100644",
+          "blob": "91d170bd163f108ed817b6e41269ad672e8200de",
+          "bytes": 2762,
+          "lines": 42,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "9c93edfa83eaa8e55c62560b009e5408464b7e60",
+          "bytes": 4533,
+          "lines": 64,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/RUNNER_SOURCE_PIN.md": {
+          "mode": "100644",
+          "blob": "10cd111a36324d093c4f2284f0ea9cf131354e70",
+          "bytes": 1307,
+          "lines": 20,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/STATE.yaml": {
+          "mode": "100644",
+          "blob": "caff7af059e46a774c9da2bf5c8ec51a9b48fe08",
+          "bytes": 2889,
+          "lines": 51,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/TOE_LANE_UPDATE.md": {
+          "mode": "100644",
+          "blob": "e70ad8349f42a89d850650a9d8aab15061dd7486",
+          "bytes": 4064,
+          "lines": 59,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block36-autonomous-randomizer-typed-factor-reset-20260901/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "3fb7bc5c283e03a762afbe6ebc9ad5bd34724e67",
+          "bytes": 2535,
+          "lines": 51,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "92c40d4c204af2ab9534d15d428d3c9f4d9f2345",
+          "bytes": 2008,
+          "lines": 16,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "073a8c22c3fa2765e069998d4f6dfd8e6767198b",
+          "bytes": 840,
+          "lines": 13,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "cc1bc05bb3bce28bf1b9a5a55d221c3a78c0b7b9",
+          "bytes": 3076,
+          "lines": 29,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "179189d289d7379d84e0952f3435aab72fdeb1d0",
+          "bytes": 894,
+          "lines": 16,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/CANONICAL_MAIN_AUTHORITY_MANIFEST.md": {
+          "mode": "100644",
+          "blob": "087fa3ee39808a7708e28778d1e711b6eebf89f6",
+          "bytes": 3377,
+          "lines": 56,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/CLAIM_STATUS_CERTIFICATE.md": {
+          "mode": "100644",
+          "blob": "e4da0bd28fbf5bbc9ca53b8ee0d43a8fa509b072",
+          "bytes": 1597,
+          "lines": 26,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/EXACT_TARGET_CONTRACT.md": {
+          "mode": "100644",
+          "blob": "bdbee2a11e509bae1030a0128bdcabb579e31367",
+          "bytes": 3013,
+          "lines": 19,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "73e9a3e4d61131b1edc92a2eaf766e428879f92d",
+          "bytes": 5651,
+          "lines": 95,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/GOAL.md": {
+          "mode": "100644",
+          "blob": "a789500765add2d3fb0c2b5a415da65405ab7ffb",
+          "bytes": 1593,
+          "lines": 33,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/HANDOFF.md": {
+          "mode": "100644",
+          "blob": "0dc9b84d4b97cd05698b2fd51d19ad0b2fd65cfd",
+          "bytes": 2372,
+          "lines": 39,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/LITERATURE_BRIDGES.md": {
+          "mode": "100644",
+          "blob": "446b6fbae637bd0a540380ae3e32df7c5b6b7f44",
+          "bytes": 741,
+          "lines": 13,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "83fd69e9cbdbf5d592c71f02b69aa552beed9d19",
+          "bytes": 1459,
+          "lines": 25,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/NO_GO_LEDGER.md": {
+          "mode": "100644",
+          "blob": "9974a09029ed36dd056f6a01fd9bd3c2de463e3e",
+          "bytes": 2274,
+          "lines": 39,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "93cb3fcc3ef0e055c7fc18e429c8e1d58090574d",
+          "bytes": 1244,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "41209008954aa8407cf3ad829a130412fe0e08f3",
+          "bytes": 2265,
+          "lines": 44,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/POSTEXECUTION_STATE.yaml": {
+          "mode": "100644",
+          "blob": "8f3cd97b7189f273e98020a8cea5cbc7d113b1a1",
+          "bytes": 1775,
+          "lines": 37,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "2961712da88882fee06eb64e5eebbabacab1cd2c",
+          "bytes": 1063,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/PRIOR_ART_SEARCH.md": {
+          "mode": "100644",
+          "blob": "d750bc35ed84400a2bcc32dfd731a77e2e843826",
+          "bytes": 1080,
+          "lines": 26,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/PR_BACKLOG.md": {
+          "mode": "100644",
+          "blob": "e48dda947aa3dc6276696a98dd227f080540045d",
+          "bytes": 553,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/REVIEW_HISTORY.md": {
+          "mode": "100644",
+          "blob": "bae4318cd9ff9ea4f2d60d47456e3c19f1ed1d47",
+          "bytes": 5398,
+          "lines": 82,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "998e1bfb80ffe269816ce6aaa05d686d9b9470c9",
+          "bytes": 2983,
+          "lines": 38,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/RUNNER_SOURCE_PIN.md": {
+          "mode": "100644",
+          "blob": "65d43ee4d8b08b46ee41c325c67229815eb03bd7",
+          "bytes": 695,
+          "lines": 12,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/STATE.yaml": {
+          "mode": "100644",
+          "blob": "55a0e847ec6b40690fb7ef371d73e263bb7a75fe",
+          "bytes": 3011,
+          "lines": 53,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/TOE_LANE_UPDATE.md": {
+          "mode": "100644",
+          "blob": "5d47b7ba53dd0b851699abe8a762a828c61ceceb",
+          "bytes": 4658,
+          "lines": 68,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block37-full-local-compiler-active-quotient-worldtube-20260901/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "83950d15c3e4ec9059d7e7deb543653523fb1977",
+          "bytes": 1275,
+          "lines": 25,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "f18291f47dab9e7b104f7d6c2f8497ca33765131",
+          "bytes": 1468,
+          "lines": 9,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "3e4e3d66d016d3534c3eb2d2ff83350b032bd4f9",
+          "bytes": 732,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "b5912ab64bae5196a11d98453039366b92c4b493",
+          "bytes": 3439,
+          "lines": 55,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "a4daa627582062b2048bd78226998f61d143fe4f",
+          "bytes": 634,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/CANONICAL_MAIN_AUTHORITY_MANIFEST.md": {
+          "mode": "100644",
+          "blob": "2c5eee0f63d64d9696b311e3e38f2f982b2cf987",
+          "bytes": 629,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/CLAIM_STATUS_CERTIFICATE.md": {
+          "mode": "100644",
+          "blob": "153bd6a61a8090d7f4b584c36f82c4c9f3e89a09",
+          "bytes": 1330,
+          "lines": 20,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/EXACT_TARGET_CONTRACT.md": {
+          "mode": "100644",
+          "blob": "c0433904fcd335e75a99aacce421d0783f9d5297",
+          "bytes": 4926,
+          "lines": 104,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "a8f69fc1b59a9b78f22699ffafe0ff8e669cb081",
+          "bytes": 4954,
+          "lines": 88,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/GOAL.md": {
+          "mode": "100644",
+          "blob": "3f72fa6921ed503e1015ef08c7c126511370dfb6",
+          "bytes": 1217,
+          "lines": 21,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/HANDOFF.md": {
+          "mode": "100644",
+          "blob": "3693f8e1c4f7d2de6bcbc2985d05e21287d024c3",
+          "bytes": 2205,
+          "lines": 38,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/LITERATURE_BRIDGES.md": {
+          "mode": "100644",
+          "blob": "6e7e6d35d8f463f6750bd3a098f1a63cb7ec694b",
+          "bytes": 341,
+          "lines": 7,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "c1bf4221324a89a47bd348c5d0982ab475dffd79",
+          "bytes": 1211,
+          "lines": 22,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/NO_GO_LEDGER.md": {
+          "mode": "100644",
+          "blob": "a07c148f98856d2d4ffe01ae9ae1a20f012e6630",
+          "bytes": 1189,
+          "lines": 24,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "88f9e1a2691d6a6b64318bebf6ad575c3f479fde",
+          "bytes": 1157,
+          "lines": 21,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "3d2051022de3f4e56852b1a3b9424d04848fb878",
+          "bytes": 1200,
+          "lines": 25,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "72e25149df918edd15c8a76ebbd576418e4ed5e8",
+          "bytes": 666,
+          "lines": 13,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/PRIOR_ART_SEARCH.md": {
+          "mode": "100644",
+          "blob": "54a3501dad18f3737b5ba4003edd0835d1cbb7c4",
+          "bytes": 2443,
+          "lines": 45,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/PR_BACKLOG.md": {
+          "mode": "100644",
+          "blob": "8499b411e786014121fd277b0c64b34e8770c848",
+          "bytes": 1158,
+          "lines": 22,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/REVIEW_HISTORY.md": {
+          "mode": "100644",
+          "blob": "a791afb25ad7d9c25cefc1fddbec71a7df3a8a49",
+          "bytes": 2587,
+          "lines": 43,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "ff7ad2bde5e0d8cd68231a6a65a7546027376710",
+          "bytes": 2080,
+          "lines": 25,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/STATE.yaml": {
+          "mode": "100644",
+          "blob": "95ad6e07783d6e636ea8de555a2f5424e19da675",
+          "bytes": 3019,
+          "lines": 53,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block38-random-axis-repeatability-matter-selector-20260901/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "b4a0ad49533063702a78e79c188691ea3cabc8d8",
+          "bytes": 998,
+          "lines": 16,
+          "kind": "planning_packet"
+        },
+        "docs/ADMISSIBILITY_BLOCK36_SPECIFIC_NN_ACTIVE_CUT_RECORD_FRONT_BOUNDED_THEOREM_NOTE_2026-09-01.md": {
+          "mode": "100644",
+          "blob": "1c7784485c1ae581c8a05db463ed78c55e84257b",
+          "bytes": 37264,
+          "lines": 689,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_GAUSSIAN_FAIR_RECORD_MIDPOINT_AFFINITY_HAAR_EDGE_FACTOR_FRESH_PORT_RESET_BOUNDED_THEOREM_NOTE_2026-09-01.md": {
+          "mode": "100644",
+          "blob": "93aca5052adfde9ada5325d1058bf5507d85333a",
+          "bytes": 55113,
+          "lines": 1147,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_OPUS_AFFINE_BORN_PUBLIC_EVIDENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-01.md": {
+          "mode": "100644",
+          "blob": "833232ecc6a8231c59f16b1af819c47c0eeb2bde",
+          "bytes": 20516,
+          "lines": 498,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_RANDOM_AXIS_M2_MATTER_REPEAT_SELECTOR_LOCAL_COMPILER_BOUNDED_THEOREM_NOTE_2026-09-01.md": {
+          "mode": "100644",
+          "blob": "881b2359752a002dbfd744e932dd0112d8f55a9e",
+          "bytes": 18063,
+          "lines": 382,
+          "kind": "source_document"
+        },
+        "logs/runner-cache/admissibility_block36_specific_nn_active_cut_record_front_2026_09_01.txt": {
+          "mode": "100644",
+          "blob": "7cf2f5b582b72d2251fc08da1f9dda13b6c29dff",
+          "bytes": 6507,
+          "lines": 42,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_gaussian_fair_record_affinity_haar_factor_fresh_port_reset_2026_09_01.txt": {
+          "mode": "100644",
+          "blob": "20e8c031bb528a3575a316f8bf10f4ec4c97ccb3",
+          "bytes": 5607,
+          "lines": 43,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_opus_affine_born_public_evidence_gate_2026_09_01.txt": {
+          "mode": "100644",
+          "blob": "92649402f6b60c0d77d96f6f407738f3569fe3e3",
+          "bytes": 4618,
+          "lines": 33,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_random_axis_m2_matter_repeat_selector_local_compiler_2026_09_01.txt": {
+          "mode": "100644",
+          "blob": "eac3a8d2dc8b5ff10eac71e0a6aee8c8fee3bf90",
+          "bytes": 3499,
+          "lines": 27,
+          "kind": "evidence_output"
+        },
+        "scripts/admissibility_block36_specific_nn_active_cut_record_front_2026_09_01.py": {
+          "mode": "100644",
+          "blob": "6c956094bd28d5648a3bfe1ae896715837f138a1",
+          "bytes": 169172,
+          "lines": 4204,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_gaussian_fair_record_affinity_haar_factor_fresh_port_reset_2026_09_01.py": {
+          "mode": "100644",
+          "blob": "dca30de9b8074b4c88c7a975e51cf7b031346b97",
+          "bytes": 67561,
+          "lines": 1824,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_opus_affine_born_public_evidence_gate_2026_09_01.py": {
+          "mode": "100644",
+          "blob": "6c8ccb862ecd9dbc03c67ebe059ed6645b3defdd",
+          "bytes": 28333,
+          "lines": 694,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_random_axis_m2_matter_repeat_selector_local_compiler_2026_09_01.py": {
+          "mode": "100644",
+          "blob": "afe2e079494eba64d3bd68026070b1cf611cb626",
+          "bytes": 76860,
+          "lines": 2157,
+          "kind": "runner_or_tool"
+        }
+      },
+      "missing_final_paths": [],
+      "file_counts_by_kind": {
+        "planning_packet": 96,
+        "source_document": 4,
+        "evidence_output": 4,
+        "runner_or_tool": 4
+      },
+      "total_final_source_paths": 108,
+      "total_final_source_bytes": 711254,
+      "total_final_source_lines": 15082,
+      "raw_target_main_merge_base": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+      "selected_path_reserved_intersection": [],
+      "raw_target_reserved_paths_present": [
+        ".claude/science/physics-loops/toe-axiom-closure-block105-shifted-origin-frame-gauge-20260814/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/toe-axiom-closure-block142-carrier-reflection-blocker-20260819/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/toe-axiom-closure-block143-staggered-hermitian-pairing-20260819/NO_GO_LEDGER.md",
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_CARRIER_REFLECTION_BLOCKER_BOUNDED_THEOREM_NOTE_2026-08-19.md",
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_STAGGERED_HERMITIAN_PAIRING_BOUNDED_THEOREM_NOTE_2026-08-19.md",
+        "logs/runner-cache/admissibility_dirac_kahler_carrier_reflection_blocker_2026_08_19.txt",
+        "logs/runner-cache/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.txt",
+        "logs/runner-cache/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.txt",
+        "scripts/admissibility_dirac_kahler_carrier_reflection_blocker_2026_08_19.py",
+        "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+        "scripts/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.py"
+      ],
+      "direct_static_context_scan": {
+        "docs/ADMISSIBILITY_D4_BLOCK208_AFFINE_SIX_RECORD_H1_DECODER_CENTER_CORNER_QND_DILATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-28.md": {
+          "blob": "95e67961ffe80fb89b6c0ef7f37337ca0aa5099d",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_D4_CLASSICAL_SCREENING_CAUSE_PERSISTENCE_RENEWAL_LOCUS_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+          "blob": "65f3b60162bcef562eee705f49e6ef76faf5f2df",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_D4_OUTPUT_STATUS_NN_ORDERED_PAIR_TRANSDUCER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+          "blob": "c45ad2907b5184ac8156558ef25eeaa0fa3fdfe2",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_D4_SYMBOLIC_LAMBDA_GUARDED_FINITE_SUCCESSOR_TRANSACTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+          "blob": "b0fb6544e274cc6b762ea11f0d7817558229f5dc",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_GAUSSIAN_CONTENT_ONLY_UNIFORMIZER_WEIERSTRASS_DECODER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md": {
+          "blob": "210266f880c3660f686d573e96478eb886e75835",
+          "main_blob": "0800e5b08af198f83d4e8f6656a6baa9f914b005",
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_PHYSICAL_STATE_TO_RECORD_ATTACHMENT_SELECTION_CUT_BOUNDED_THEOREM_NOTE_2026-08-12.md": {
+          "blob": "6bcca990308cacc2ec32c3c7a8547089cb8bc133",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_STRICT_NEAREST_NEIGHBOR_STATE_DEPENDENT_RECORD_BORN_HISTORY_SINGLE_FRONT_POSITIVE_THEOREM_NOTE_2026-08-12.md": {
+          "blob": "494ed4d1be589e7f2a37cf79f65997504de4579c",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md": {
+          "blob": "a497717d101cfbc197f42393800e845283b155af",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md": {
+          "blob": "62303ec3bcfcfbb9da1aa34fefb7347263c0ccd2",
+          "main_blob": "62303ec3bcfcfbb9da1aa34fefb7347263c0ccd2",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "main_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/POVM_OBSERVATION_COMPARATOR_EXACT_ARITHMETIC_BOUNDED_THEOREM_NOTE_2026-07-30.md": {
+          "blob": "ba400506335a5f8a30f45cf5c9912e8887db6ab1",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md": {
+          "blob": "e3519460794d1547b9bad7d095740cfd26827fb4",
+          "main_blob": "e3519460794d1547b9bad7d095740cfd26827fb4",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md": {
+          "blob": "259d10937fd1b346cb2ca6f85035e3829acaaa5e",
+          "main_blob": "259d10937fd1b346cb2ca6f85035e3829acaaa5e",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md": {
+          "blob": "5112dc29485ee33f3b6bb548d29ce0c4a0e6a267",
+          "main_blob": "5112dc29485ee33f3b6bb548d29ce0c4a0e6a267",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/ai_methodology/skills/physics-loop/SKILL.md": {
+          "blob": "ab1d8941a5509f08296a841d307077dd171256d1",
+          "main_blob": "2658a54d3acf1855f76619c6f7c4040bed8a216a",
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/work_history/repo/review_feedback/COMPLETE_CANDIDATE_LSTAR_ASSEMBLY_CYCLE41_NOTE_2026-07-14.md": {
+          "blob": "fec025c7bb98b51fdbf16465a4fce3938ab27c98",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/work_history/repo/review_feedback/OPERATIONAL_QUOTIENT_BORN_AFFINITY_CYCLE20_NOTE_2026-07-14.md": {
+          "blob": "d6d2bda3d5cd8063479270c7ce462e1faee5b660",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/work_history/repo/review_feedback/RECORD_INSTRUMENT_SELECTION_LUDERS_PRIMARY_SOURCE_AUDIT_NOTE_2026-07-14.md": {
+          "blob": "dc5d118a905fbf8ec24fd4360e167086885bb85e",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/admissibility_strict_nearest_neighbor_state_dependent_record_born_history_single_front_2026_08_12.py": {
+          "blob": "33aa40c6696ad1889de916193e616aa28ed260a5",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/cached_runner_output.py": {
+          "blob": "1d2b569f4e568a5d225df63bd07df3af3974f1e9",
+          "main_blob": "1d2b569f4e568a5d225df63bd07df3af3974f1e9",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "scripts/operational_quotient_born_affinity_cycle20_2026_07_14.py": {
+          "blob": "14522a8b1582cbea393709ea3db159c28a29353e",
+          "main_blob": "14522a8b1582cbea393709ea3db159c28a29353e",
+          "same_as_frozen_main": true,
+          "reserved": false
+        }
+      },
+      "context_scan_boundary": "Imports, named scripts/docs and Markdown links only. This is a routing lower bound, not complete premise/input/dependency closure. Reviewer must inspect dynamic helper loads, declared source-bound input arrays, the complete source contract and current premise authority before freezing scope."
+    },
+    {
+      "unit_id": "eta_pair_process",
+      "review_recommendation": "First source/Eta unit: supplied-q instruments, conditional finite successor/nearest-neighbor transducer, guarded lambda process, screening and the source-amplitude boundary. Explicitly add the Block23/24 helper source and Block26/29 interfaces before review freeze.",
+      "science_review_status": "not_performed",
+      "target_pr": 7827,
+      "target_head": "17357c3714c3b3196c6b8fdc9b1a3bb300044181",
+      "constituents": [
+        {
+          "pr": 7813,
+          "head": "482978e4d1d3739653e0a605b331d907f4aecc52",
+          "base": "83b607eb6a3040b831809389711e886f7b934488",
+          "merge_base": "83b607eb6a3040b831809389711e886f7b934488",
+          "original_delta_paths": 30
+        },
+        {
+          "pr": 7819,
+          "head": "54a580291ef81b5cf3af18bfc71b38644c12340d",
+          "base": "053108b6b65236d24e78c98ebcf614f9e26aae3f",
+          "merge_base": "053108b6b65236d24e78c98ebcf614f9e26aae3f",
+          "original_delta_paths": 23
+        },
+        {
+          "pr": 7820,
+          "head": "030570b0ff1ba850e64846dc298504261e518cc1",
+          "base": "54a580291ef81b5cf3af18bfc71b38644c12340d",
+          "merge_base": "54a580291ef81b5cf3af18bfc71b38644c12340d",
+          "original_delta_paths": 24
+        },
+        {
+          "pr": 7821,
+          "head": "4a536e2f70c4778c0c822f45f0dd6713010ad02b",
+          "base": "030570b0ff1ba850e64846dc298504261e518cc1",
+          "merge_base": "030570b0ff1ba850e64846dc298504261e518cc1",
+          "original_delta_paths": 23
+        },
+        {
+          "pr": 7822,
+          "head": "7dc9582f49153e438918e88cff72cfe4d2bc6421",
+          "base": "4a536e2f70c4778c0c822f45f0dd6713010ad02b",
+          "merge_base": "4a536e2f70c4778c0c822f45f0dd6713010ad02b",
+          "original_delta_paths": 23
+        },
+        {
+          "pr": 7823,
+          "head": "8ecca1f3e92adef2903563d0ae2ef92ac0a18256",
+          "base": "7dc9582f49153e438918e88cff72cfe4d2bc6421",
+          "merge_base": "7dc9582f49153e438918e88cff72cfe4d2bc6421",
+          "original_delta_paths": 26
+        }
+      ],
+      "closed_parent_packets_in_scope": [],
+      "final_source_files": {
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "de376c33b8eadba2f0998de43520ad7b805895f5",
+          "bytes": 882,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "14489869e7e14ea850984e7e2a69892b3039cde8",
+          "bytes": 950,
+          "lines": 18,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "0ce0d2c591d01ad388da9e01a01a4d26629d34e1",
+          "bytes": 1540,
+          "lines": 21,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "79501e0b105b094d4271422cb259d2aeb412f0ea",
+          "bytes": 1817,
+          "lines": 41,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/CLAIM_STATUS_CERTIFICATE.md": {
+          "mode": "100644",
+          "blob": "a1a9869aaa166e72d11b2809c18e479e7f61d229",
+          "bytes": 2292,
+          "lines": 53,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "1c3e0deda0a87912413a72f5050194d28eb981ae",
+          "bytes": 3471,
+          "lines": 79,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/GOAL.md": {
+          "mode": "100644",
+          "blob": "f35b945da089e5235f09a13ab8147d80ec5c42ca",
+          "bytes": 2382,
+          "lines": 57,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/HANDOFF.md": {
+          "mode": "100644",
+          "blob": "9f84d33e085d77e804f48f20f07651978db2b8ee",
+          "bytes": 2948,
+          "lines": 57,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/INDEPENDENT_STATIC_ATTACK_FINAL.md": {
+          "mode": "100644",
+          "blob": "f137c251b3a06cbd090f91f00a151d2df5bbc4af",
+          "bytes": 2498,
+          "lines": 47,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "f8bf3ada11b22fb2274159279c3f12cc37e40cbb",
+          "bytes": 1281,
+          "lines": 25,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "b252db9eacc9573a6e78174f7915fdbaa6c2597d",
+          "bytes": 1984,
+          "lines": 55,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "3794168a5aa73c7c5d6ccd4ef64a45492f249925",
+          "bytes": 1014,
+          "lines": 19,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "a02c637f3da1e318161abfd8345c9bcb319c9e85",
+          "bytes": 907,
+          "lines": 17,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/POSTEXECUTION_NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "52aac71869792bea7996e683b3f98c56f101e23d",
+          "bytes": 12239,
+          "lines": 181,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/POSTEXECUTION_PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "6606400890677bdcc1bfea1a790f41ca43613bdf",
+          "bytes": 5686,
+          "lines": 129,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/POSTEXECUTION_STATE.yaml": {
+          "mode": "100644",
+          "blob": "5865ed7eb7072f9a0eca40432144de32ba6fc0ff",
+          "bytes": 1174,
+          "lines": 29,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/POSTEXECUTION_TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "00e2eea35f62d452b8f34100ea3150df423d619a",
+          "bytes": 1711,
+          "lines": 28,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "aad3314a0236356d5c5456311365682b2c6cef80",
+          "bytes": 2141,
+          "lines": 54,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/PREREG_AMENDMENT_1.md": {
+          "mode": "100644",
+          "blob": "d74b886804fb39b753a377b441cc2ddb26a296cb",
+          "bytes": 3741,
+          "lines": 74,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/PR_BACKLOG.md": {
+          "mode": "100644",
+          "blob": "8c9ee75f89184061db2215c6f793b56bff79243c",
+          "bytes": 1019,
+          "lines": 26,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/REVIEW_HISTORY.md": {
+          "mode": "100644",
+          "blob": "c6d03838c41e54cfe249c60aee3c6f322a0a891d",
+          "bytes": 5897,
+          "lines": 125,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "b5c1acc34d5acb720ac1244037d9557a497dec5d",
+          "bytes": 1157,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/RUNNER_SOURCE_PIN.md": {
+          "mode": "100644",
+          "blob": "339768fa53e35f4ddc141ea5f19de5176e2b9c4b",
+          "bytes": 636,
+          "lines": 12,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/STATE.yaml": {
+          "mode": "100644",
+          "blob": "5088314943fe183774ca3fe881fe7b0f3d2cf79e",
+          "bytes": 1687,
+          "lines": 34,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/TOE_LANE_UPDATE.md": {
+          "mode": "100644",
+          "blob": "ddd5411996b543827e419b1f77d34dfef4de3821",
+          "bytes": 1334,
+          "lines": 27,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block28-returned-tip-strict-support-analytic-20260830/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "57fc92d8773117fbb78d9a15051f7edb47ce03e8",
+          "bytes": 1270,
+          "lines": 18,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "82599e38a88c4453473e0f0865ff35b6ff36dcf1",
+          "bytes": 923,
+          "lines": 13,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "8129b0ecd8105fd4662427d3fe415c2df9302ca3",
+          "bytes": 542,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "b69d0e0491723c7c93ffed9b4733e0e9c101639f",
+          "bytes": 1581,
+          "lines": 21,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "18dc9cfc2010584412e6a0c9692fa57387123779",
+          "bytes": 906,
+          "lines": 18,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "44448a7f9d8a4eaf8077ae178fd9aa19132c188c",
+          "bytes": 3403,
+          "lines": 74,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/GOAL.md": {
+          "mode": "100644",
+          "blob": "ae5fbd801df70e6f92b7ce6329669d78ce9b7589",
+          "bytes": 1669,
+          "lines": 32,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/INDEPENDENT_STATIC_ATTACK_FINAL.md": {
+          "mode": "100644",
+          "blob": "8aa457e90fdb858b81bd99c6490844ea6b9e6cff",
+          "bytes": 3193,
+          "lines": 62,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "a61d51afcb0395d61ea4c93b04e389e4561238ab",
+          "bytes": 1190,
+          "lines": 26,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "8f2fb01245e3bf7e779eec8e50ea45e0d03d5bdd",
+          "bytes": 458,
+          "lines": 9,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "889487c92a87e839194aaf974dcfc705b4f6c7bf",
+          "bytes": 447,
+          "lines": 10,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "259be6d3ec605a9652b2c3a0df5d8663d65c1643",
+          "bytes": 1168,
+          "lines": 19,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/POSTEXECUTION_PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "47d21eaa9bb50985d13c18069291bfcd954e321f",
+          "bytes": 4619,
+          "lines": 81,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/POSTEXECUTION_STATE.yaml": {
+          "mode": "100644",
+          "blob": "75b3ef9436f6b7a7634893149f1c1788ffd73757",
+          "bytes": 1245,
+          "lines": 29,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "ec4a7ebe9768aeb707804308f4644e3a101a14b9",
+          "bytes": 1108,
+          "lines": 22,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/PREREG_AMENDMENT_SUCCESSOR_CARRIER.md": {
+          "mode": "100644",
+          "blob": "07b9290fb6ae5c17971228ae104ef91ba812f14a",
+          "bytes": 3319,
+          "lines": 68,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "36071c922056f83e288a222418ef34dcd89c56d2",
+          "bytes": 1489,
+          "lines": 35,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/RUNNER_SOURCE_PIN.md": {
+          "mode": "100644",
+          "blob": "6ad345894a65ee7adc6baef4b6a40cc3c2cf2970",
+          "bytes": 798,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/STATE.yaml": {
+          "mode": "100644",
+          "blob": "25b6e540205785f9453235a8718fa3375cb6f921",
+          "bytes": 1336,
+          "lines": 33,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/TOE_LANE_UPDATE.md": {
+          "mode": "100644",
+          "blob": "4aaf5278c5a9e9c079c0a11acad9aeafecf78dc3",
+          "bytes": 1780,
+          "lines": 47,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block30-physical-successor-handoff-20260831/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "739a9c0b227885ac7e9ce9e404565ea0cb383102",
+          "bytes": 1322,
+          "lines": 29,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "9c2f08cc667d2460567dbbf18aac13f934bd181f",
+          "bytes": 1267,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "f45020070f075d8da985a234c8668960e6e61391",
+          "bytes": 559,
+          "lines": 16,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "ae19434e21d27bdc1e75c7e091fa7d53c87f6380",
+          "bytes": 1818,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "5c96dd4662a4e2bd2619edbe045f7d6b2c6d1e92",
+          "bytes": 1060,
+          "lines": 21,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "110cee864e3512cf3075b8b5f6ba6b43b7d07cfe",
+          "bytes": 2918,
+          "lines": 68,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/GOAL.md": {
+          "mode": "100644",
+          "blob": "60a0160187601b71bb41dd2abdafde8840a7e203",
+          "bytes": 1987,
+          "lines": 34,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/INDEPENDENT_STATIC_ATTACK_FINAL.md": {
+          "mode": "100644",
+          "blob": "3e14c6ecbe31fe80c8da7b9b0e17d35dfeb8813e",
+          "bytes": 4019,
+          "lines": 74,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "782cca43d566eac9c61574b38412082d5f55fd34",
+          "bytes": 1709,
+          "lines": 35,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "073014a2a6003a0649983260ace292cf54cdc313",
+          "bytes": 585,
+          "lines": 11,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "07451324c8c3d7c531981c8bb38c3337d16bf227",
+          "bytes": 1523,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/POSTEXECUTION_PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "1822bb22397b7252955b260d13738e0b624311a1",
+          "bytes": 1651,
+          "lines": 25,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/POSTEXECUTION_STATE.yaml": {
+          "mode": "100644",
+          "blob": "9d5a0f504e0479ed43598a12e614608e0a0db54c",
+          "bytes": 1315,
+          "lines": 37,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "702727736286802c2f075fc3b9308c61417ebd29",
+          "bytes": 1272,
+          "lines": 26,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/PREREG_AMENDMENT_FINAL_SCOPE_RECONCILIATION.md": {
+          "mode": "100644",
+          "blob": "7f5be348b036e475e0b89e1d7b6c9aaf16b05fff",
+          "bytes": 1898,
+          "lines": 33,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/PREREG_AMENDMENT_SIDE_EXCHANGE.md": {
+          "mode": "100644",
+          "blob": "782c27573361f45e449e6f6c57d8f432c0c0e900",
+          "bytes": 1181,
+          "lines": 21,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/PREREG_AMENDMENT_VALIDATOR_AND_CARRIER.md": {
+          "mode": "100644",
+          "blob": "a4165e927fe1ac3290715994425d6c25dfacd129",
+          "bytes": 3179,
+          "lines": 57,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "34ffaa97e14511744af3bfff759737e215179127",
+          "bytes": 1641,
+          "lines": 34,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/RUNNER_SOURCE_PIN.md": {
+          "mode": "100644",
+          "blob": "a169921a6c23457b72b7876fe09912b588a8a97d",
+          "bytes": 728,
+          "lines": 13,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/STATE.yaml": {
+          "mode": "100644",
+          "blob": "5aa6191e89a3c7f9ead7ffeb1c6aea07c02731ac",
+          "bytes": 1584,
+          "lines": 36,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/TOE_LANE_UPDATE.md": {
+          "mode": "100644",
+          "blob": "0ce52ac3f15f79505fb70dd9f25ace4ecf12698b",
+          "bytes": 1202,
+          "lines": 27,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block31-nn-relation-transducer-trigger-20260831/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "5574806012be2361e65afbf401429d667829fe9b",
+          "bytes": 1620,
+          "lines": 34,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "4d81adc9b6f35e3343ff51167a94f31625b119f1",
+          "bytes": 1907,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "bc50c9b86860d53b5c99342cd37c9a6416d84c04",
+          "bytes": 810,
+          "lines": 18,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "7ab9714314043a7ebc84635c32e44562e5f1e2b7",
+          "bytes": 1850,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "f6d72abdb20740612d53c2db768c823f9c454c60",
+          "bytes": 1037,
+          "lines": 20,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "0a2f199680600b3e277db2357595e85832354101",
+          "bytes": 4663,
+          "lines": 95,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/GOAL.md": {
+          "mode": "100644",
+          "blob": "ee2474a27de0b4a345712ee14918cf7248e695ba",
+          "bytes": 2028,
+          "lines": 49,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/INDEPENDENT_STATIC_ATTACK_FINAL.md": {
+          "mode": "100644",
+          "blob": "66c4a78c615909addeb5a08f504bbf1555eb8953",
+          "bytes": 6440,
+          "lines": 111,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "29a58f4e793d82e698343692d7cfdac3d2d67ab0",
+          "bytes": 1542,
+          "lines": 32,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "c00aa5758c390e82d639e1f113d9a764527b9773",
+          "bytes": 16274,
+          "lines": 194,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "b23e8f0f4060bfe93379ec06782aa8b77ca51bf3",
+          "bytes": 600,
+          "lines": 11,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "b3be23ad3029504a2798a2a22969d61945369df0",
+          "bytes": 1552,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/POSTEXECUTION_PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "90924a05df0c36c3a59042805c6430a88d3bad47",
+          "bytes": 2566,
+          "lines": 36,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/POSTEXECUTION_STATE.yaml": {
+          "mode": "100644",
+          "blob": "6243a335ec97ecc76dd4545f6893aa2cf30f353c",
+          "bytes": 1758,
+          "lines": 48,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "c1f9f53e34dae2e2d91418930d8c3e5999402056",
+          "bytes": 1310,
+          "lines": 33,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/PREREG_AMENDMENT_UNCOMPUTE_ORDER.md": {
+          "mode": "100644",
+          "blob": "d3eaaf78c84cd2cbd763f0a7886cb63608a6c73d",
+          "bytes": 2835,
+          "lines": 62,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "1cf0f62e6c774501c6fdc0493547b2087d42761a",
+          "bytes": 1559,
+          "lines": 34,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/RUNNER_SOURCE_PIN.md": {
+          "mode": "100644",
+          "blob": "dd461d745a5ddd8ddad074e3c605ce0c4b6e91e9",
+          "bytes": 841,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/STATE.yaml": {
+          "mode": "100644",
+          "blob": "1ce9d88549e7907872d1ad65c869c09c4ad8c9ba",
+          "bytes": 1465,
+          "lines": 34,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/TOE_LANE_UPDATE.md": {
+          "mode": "100644",
+          "blob": "d240d386162e23dd7bac6a8229e69ce03778540b",
+          "bytes": 2109,
+          "lines": 43,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block32-symbolic-lambda-guarded-successor-20260831/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "c0ab4c61d371b788b431fa25c896aac789225953",
+          "bytes": 1665,
+          "lines": 37,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "7e1b0cc8498f67886730b1f004263d4d90be1b8d",
+          "bytes": 2669,
+          "lines": 19,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "5e4964292aba0caea0ddb86ef76b774cd31004c6",
+          "bytes": 1616,
+          "lines": 36,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "d19de32ee84eb929a7bad21ff44fdcde026a5cde",
+          "bytes": 3156,
+          "lines": 37,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "582d43235d6f22db80f9e51be25af8a234951502",
+          "bytes": 1290,
+          "lines": 24,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "75fb7519d1c5859153e93a7693a27534bf410519",
+          "bytes": 3738,
+          "lines": 92,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/GOAL.md": {
+          "mode": "100644",
+          "blob": "d872e60be111cd7d036be556dfc34e7218c1fe01",
+          "bytes": 2329,
+          "lines": 50,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/INDEPENDENT_STATIC_ATTACK_FINAL.md": {
+          "mode": "100644",
+          "blob": "f4ba2a5c69e494016f6df5dd4a0ffce2e9b5e4ae",
+          "bytes": 5209,
+          "lines": 93,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "625f9322319056c7757d0ba590b10822ed8f3d8c",
+          "bytes": 3123,
+          "lines": 49,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "d60888d91ad768133e107cf240ba2637afb8533d",
+          "bytes": 5242,
+          "lines": 95,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "ccb28e431ec53492c4c7fdb20cc137bfc59022b3",
+          "bytes": 1254,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "beac11673a0ff7491f1facf49ff9f0a28d92e301",
+          "bytes": 1679,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/POSTEXECUTION_NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "4b498a52b1aea6949a571a46d7f387039b31d65d",
+          "bytes": 13243,
+          "lines": 217,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/POSTEXECUTION_PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "802d3a28b49dbb0082e4e27529fa092d3abc81a5",
+          "bytes": 4290,
+          "lines": 99,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/POSTEXECUTION_STATE.yaml": {
+          "mode": "100644",
+          "blob": "650c281cf0bb286b7862695cb02252e69ed27e64",
+          "bytes": 1267,
+          "lines": 29,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "9944add724c460d4c645a469eeaea0eaf77964ee",
+          "bytes": 3812,
+          "lines": 116,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "e944b275009402e561f73d1002ef818efa1143cd",
+          "bytes": 2187,
+          "lines": 44,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/RUNNER_SOURCE_PIN.md": {
+          "mode": "100644",
+          "blob": "d1999d99fdb27f06f8e7d7bac955b93e3b58bc85",
+          "bytes": 854,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/STATE.yaml": {
+          "mode": "100644",
+          "blob": "c08f894c5389f395d6ad528679baf1ee02a3ef1d",
+          "bytes": 1521,
+          "lines": 35,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/TOE_LANE_UPDATE.md": {
+          "mode": "100644",
+          "blob": "466ae3303eef6e0ba7d97056919a5bf1724365cc",
+          "bytes": 2964,
+          "lines": 56,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block33-common-dilation-renewal-locus-20260831/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "56a86d8f05fc6d0c6f2c262cc9ceb0e5e89bea60",
+          "bytes": 2373,
+          "lines": 43,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "162c2a5dbd7e26e265555e248eff60804d526cd9",
+          "bytes": 1342,
+          "lines": 16,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "0364e29fc56875d2bf367ecb08a0511f5ad6354e",
+          "bytes": 852,
+          "lines": 20,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "cb270458bb613f37aa9511930f90d9deefbe678b",
+          "bytes": 1671,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/AUTHORITY_GATE.md": {
+          "mode": "100644",
+          "blob": "1dbd89bdf828006a31f1be5778b2300d21ce698d",
+          "bytes": 3294,
+          "lines": 53,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/CANONICAL_MAIN_AUTHORITY_MANIFEST.md": {
+          "mode": "100644",
+          "blob": "74e2d9c5530cbaa88cc3c3a395ec98659d5a5949",
+          "bytes": 2496,
+          "lines": 24,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/EXECUTION_HISTORY.md": {
+          "mode": "100644",
+          "blob": "88e3f05280e029fa0263e98bbf989deb6751aa31",
+          "bytes": 5236,
+          "lines": 118,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/GOAL.md": {
+          "mode": "100644",
+          "blob": "a132747173bf1f0b9661de6897a92af6946732d7",
+          "bytes": 1407,
+          "lines": 28,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/INDEPENDENT_STATIC_ATTACK_FINAL.md": {
+          "mode": "100644",
+          "blob": "3f3e8a8c8afba701b0aa4316c0674e51c94b4f24",
+          "bytes": 6315,
+          "lines": 142,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/MUTATION_PLAN.md": {
+          "mode": "100644",
+          "blob": "e954a33b0b33db2aef5a306edbea492e7ba78528",
+          "bytes": 1687,
+          "lines": 38,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "9ba49f6687d2dc2737d909fdc126296423429ff3",
+          "bytes": 4449,
+          "lines": 84,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "87de9ac510bc67ee06cef9865298ec568c2a7f49",
+          "bytes": 808,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "36dffebf5ef86dc284a31715cc502950b178cd32",
+          "bytes": 1219,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/POSTEXECUTION_EXPECTED_TERMINAL.txt": {
+          "mode": "100644",
+          "blob": "aef59118fe9013af67d5de479dc1df7175bc72d5",
+          "bytes": 704,
+          "lines": 1,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/POSTEXECUTION_NO_GO_DISCIPLINE_CHECKLIST.md": {
+          "mode": "100644",
+          "blob": "a16e20b3c207f837d96055098de647c9665878b3",
+          "bytes": 14376,
+          "lines": 179,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/POSTEXECUTION_PANEL_RETURN.md": {
+          "mode": "100644",
+          "blob": "2b1d0ac44f9de4dc058eba63f28d416def811e45",
+          "bytes": 6750,
+          "lines": 123,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/POSTEXECUTION_STATE.yaml": {
+          "mode": "100644",
+          "blob": "522c391ccc8e8631b7f09a3873db9af70516073b",
+          "bytes": 963,
+          "lines": 25,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/PREFLIGHT_WITNESSES.md": {
+          "mode": "100644",
+          "blob": "652e2d0f7a990ea7f7448bad862d7a2553217ddc",
+          "bytes": 1907,
+          "lines": 66,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/PREREG_AMENDMENT_WARD_COMPLETION_AND_COUNT_ONCE.md": {
+          "mode": "100644",
+          "blob": "69d0e60ee1840ebcac12f138ad99a91b62468f05",
+          "bytes": 2537,
+          "lines": 82,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "fbd05a11cb23d22ccf8b4f9942e83ae7917cded6",
+          "bytes": 1387,
+          "lines": 22,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/RUNNER_SOURCE_PIN.md": {
+          "mode": "100644",
+          "blob": "9626693b5257f75dc6f916498de53bb60e3b0505",
+          "bytes": 701,
+          "lines": 12,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/STATE.yaml": {
+          "mode": "100644",
+          "blob": "1ddb435064abe6e77e88ca19fed3dde88bcbd297",
+          "bytes": 704,
+          "lines": 17,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/TOE_LANE_UPDATE.md": {
+          "mode": "100644",
+          "blob": "5e58c13d1d65465193ee177d8ab478c033762cbc",
+          "bytes": 4762,
+          "lines": 82,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-source-eta-ownership-block34-normalized-pair-source-gravity-pincer-20260831/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "d69ad387612e623b1104751f75a22ddc086ca3a0",
+          "bytes": 1710,
+          "lines": 34,
+          "kind": "planning_packet"
+        },
+        "docs/ADMISSIBILITY_D4_CLASSICAL_SCREENING_CAUSE_PERSISTENCE_RENEWAL_LOCUS_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+          "mode": "100644",
+          "blob": "65f3b60162bcef562eee705f49e6ef76faf5f2df",
+          "bytes": 9980,
+          "lines": 292,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_D4_NORMALIZED_RECORD_PAIR_SOURCE_GRAVITY_PINCER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+          "mode": "100644",
+          "blob": "4bd930d1bd4c6a57af68d66c42a8501fdc0b65c6",
+          "bytes": 12454,
+          "lines": 377,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_D4_OUTPUT_CONDITIONED_PAIR_SUCCESSOR_COMMON_TWO_USE_CYLINDER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+          "mode": "100644",
+          "blob": "1cb7b167bc20e8db1129f03c790365ab67c6ac7d",
+          "bytes": 14233,
+          "lines": 238,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_D4_OUTPUT_STATUS_NN_ORDERED_PAIR_TRANSDUCER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+          "mode": "100644",
+          "blob": "c45ad2907b5184ac8156558ef25eeaa0fa3fdfe2",
+          "bytes": 3768,
+          "lines": 78,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_D4_RETURNED_TIP_SUPPLIED_Q_CONDITIONAL_PAIR_INSTRUMENT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-30.md": {
+          "mode": "100644",
+          "blob": "ad74cf795c24ad113b350417b9fe06bb2a6f4140",
+          "bytes": 20855,
+          "lines": 408,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_D4_SYMBOLIC_LAMBDA_GUARDED_FINITE_SUCCESSOR_TRANSACTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+          "mode": "100644",
+          "blob": "b0fb6544e274cc6b762ea11f0d7817558229f5dc",
+          "bytes": 10137,
+          "lines": 206,
+          "kind": "source_document"
+        },
+        "logs/runner-cache/admissibility_d4_classical_screening_cause_renewal_locus_gate_2026_08_31.txt": {
+          "mode": "100644",
+          "blob": "5f7ba2f2415431f1a3379a7a3b13c59051865565",
+          "bytes": 4825,
+          "lines": 76,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_d4_nn_record_relation_transducer_dispatch_gate_2026_08_31.txt": {
+          "mode": "100644",
+          "blob": "99fce78da8dbbbea6aca294637095c63d17bfc06",
+          "bytes": 4954,
+          "lines": 68,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_d4_normalized_record_pair_source_gravity_pincer_gate_2026_08_31.txt": {
+          "mode": "100644",
+          "blob": "c40f7040864198ddbf7b26c36aaebbe77e116ac6",
+          "bytes": 4381,
+          "lines": 33,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_d4_output_conditioned_pair_successor_handoff_gate_2026_08_31.txt": {
+          "mode": "100644",
+          "blob": "637b59a4a27ea343f72279ecc2ba39b88a75286d",
+          "bytes": 4563,
+          "lines": 60,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30.txt": {
+          "mode": "100644",
+          "blob": "d2cf9c009e264c724ab933e29b5183077ea4a431",
+          "bytes": 4223,
+          "lines": 56,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_d4_symbolic_lambda_guarded_state_carrier_successor_gate_2026_08_31.txt": {
+          "mode": "100644",
+          "blob": "509b459ae1f8650314e85b00d0d2a4b92c44a634",
+          "bytes": 6317,
+          "lines": 84,
+          "kind": "evidence_output"
+        },
+        "scripts/admissibility_d4_classical_screening_cause_renewal_locus_gate_2026_08_31.py": {
+          "mode": "100644",
+          "blob": "1e5da6d975fa34c13be34088333c26d101cbe2f6",
+          "bytes": 58945,
+          "lines": 1485,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_d4_nn_record_relation_transducer_dispatch_gate_2026_08_31.py": {
+          "mode": "100644",
+          "blob": "03a4f88d0ebbfb38e577eac09ce42697d096fbb5",
+          "bytes": 52366,
+          "lines": 1427,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_d4_normalized_record_pair_source_gravity_pincer_gate_2026_08_31.py": {
+          "mode": "100644",
+          "blob": "22a67fcff24507049358608f0ad58162c7ece227",
+          "bytes": 58678,
+          "lines": 1426,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_d4_output_conditioned_pair_successor_handoff_gate_2026_08_31.py": {
+          "mode": "100644",
+          "blob": "027b845edcabf727e3c05bb6195d1e349c16234e",
+          "bytes": 46349,
+          "lines": 1216,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30.py": {
+          "mode": "100644",
+          "blob": "3dc5d98a94ee960a93f1f0747f33a92d0ea449f4",
+          "bytes": 67336,
+          "lines": 1957,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_d4_symbolic_lambda_guarded_state_carrier_successor_gate_2026_08_31.py": {
+          "mode": "100644",
+          "blob": "3c72d12fb431fe9a3d31cd807640db1da89e0bbd",
+          "bytes": 108663,
+          "lines": 2881,
+          "kind": "runner_or_tool"
+        }
+      },
+      "missing_final_paths": [],
+      "file_counts_by_kind": {
+        "planning_packet": 130,
+        "source_document": 6,
+        "evidence_output": 6,
+        "runner_or_tool": 6
+      },
+      "total_final_source_paths": 148,
+      "total_final_source_bytes": 809801,
+      "total_final_source_lines": 18294,
+      "raw_target_main_merge_base": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+      "selected_path_reserved_intersection": [],
+      "raw_target_reserved_paths_present": [
+        ".claude/science/physics-loops/toe-axiom-closure-block105-shifted-origin-frame-gauge-20260814/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/toe-axiom-closure-block142-carrier-reflection-blocker-20260819/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/toe-axiom-closure-block143-staggered-hermitian-pairing-20260819/NO_GO_LEDGER.md",
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_CARRIER_REFLECTION_BLOCKER_BOUNDED_THEOREM_NOTE_2026-08-19.md",
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_STAGGERED_HERMITIAN_PAIRING_BOUNDED_THEOREM_NOTE_2026-08-19.md",
+        "logs/runner-cache/admissibility_dirac_kahler_carrier_reflection_blocker_2026_08_19.txt",
+        "logs/runner-cache/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.txt",
+        "logs/runner-cache/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.txt",
+        "scripts/admissibility_dirac_kahler_carrier_reflection_blocker_2026_08_19.py",
+        "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+        "scripts/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.py"
+      ],
+      "direct_static_context_scan": {
+        "docs/ADMISSIBILITY_D4_EXISTING_QUBIT_FINITE_LEASE_TENSOR_PHYSICAL_CONVEX_COLLISION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-08-30.md": {
+          "blob": "98d1491f5ada9926ac64133e7d02677ad0bec4db",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_D4_PRIOR_LOCKED_RECORD_BLANKSTAR_TWO_EVENT_PREFIX_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-30.md": {
+          "blob": "9fb1588538a7e31c0c081ac523374f04f3d3d8ba",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_D4_SELF_DELIMITING_FORWARD_RECORD_APPEND_FINITE_HISTORY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-30.md": {
+          "blob": "b8cbac48f27c5ecf67773fdcfe727a6855f3b113",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md": {
+          "blob": "d587d82e7af8af8e1535ca00f400cc577f5edefd",
+          "main_blob": "d587d82e7af8af8e1535ca00f400cc577f5edefd",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+          "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+          "main_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "main_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/PLANCK_SOURCE_UNIT_NORMALIZATION_SUPPORT_THEOREM_NOTE_2026-04-25.md": {
+          "blob": "86186442c2e6d1b46187e89a5e7b0dda9af25738",
+          "main_blob": "86186442c2e6d1b46187e89a5e7b0dda9af25738",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md": {
+          "blob": "4e668b24dfc4e42540408e63315b12846672981a",
+          "main_blob": "4e668b24dfc4e42540408e63315b12846672981a",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+          "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+          "main_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+          "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+          "main_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md": {
+          "blob": "dd16bfd11824165f712d397d68aa976d64ec09df",
+          "main_blob": "dd16bfd11824165f712d397d68aa976d64ec09df",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30.md": {
+          "blob": "47f02e1fe7cfcc54afbfcb6b137727b2e9ae2cb1",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30.py": {
+          "blob": "42b33136816759c36566b8fae62a249602d067ea",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py": {
+          "blob": "6b5d730a4af5f73e557bc47d2312e9314781d961",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": {
+          "blob": "313a3d4960620cf28cfc9022d5fe36d0c9922e1e",
+          "main_blob": "313a3d4960620cf28cfc9022d5fe36d0c9922e1e",
+          "same_as_frozen_main": true,
+          "reserved": false
+        }
+      },
+      "context_scan_boundary": "Imports, named scripts/docs and Markdown links only. This is a routing lower bound, not complete premise/input/dependency closure. Reviewer must inspect dynamic helper loads, declared source-bound input arrays, the complete source contract and current premise authority before freezing scope."
+    },
+    {
+      "unit_id": "light_germ",
+      "review_recommendation": "Review the source-free static-measure-to-time-evolution argument as one packet, preserving the strict radius-one no-go versus finite-depth positive construction. Include the closed #7840 parent packet and check every supplied action/measure/role/time-selection hypothesis.",
+      "science_review_status": "not_performed",
+      "target_pr": 7937,
+      "target_head": "2814c6768e4d7b38048f70ad7883b4951cb12da3",
+      "constituents": [
+        {
+          "pr": 7884,
+          "head": "aaad414fd0402831fa48de39a8bcd4049507bc48",
+          "base": "a664eea7a8d867e1e3ddc3759ce0d26d097e262f",
+          "merge_base": "a664eea7a8d867e1e3ddc3759ce0d26d097e262f",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7886,
+          "head": "ed02f78ad6058baabc0e97c408ba289f3939ee9d",
+          "base": "aaad414fd0402831fa48de39a8bcd4049507bc48",
+          "merge_base": "aaad414fd0402831fa48de39a8bcd4049507bc48",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7887,
+          "head": "e488e405f44dae61e3b4f6517558f904c07c3d46",
+          "base": "ed02f78ad6058baabc0e97c408ba289f3939ee9d",
+          "merge_base": "ed02f78ad6058baabc0e97c408ba289f3939ee9d",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7906,
+          "head": "aa23a599667bcb9d4db849ed9a52d7d198957d87",
+          "base": "e488e405f44dae61e3b4f6517558f904c07c3d46",
+          "merge_base": "e488e405f44dae61e3b4f6517558f904c07c3d46",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7907,
+          "head": "53ac72ce49cbb12ed4faa26755301f9afa71f877",
+          "base": "aa23a599667bcb9d4db849ed9a52d7d198957d87",
+          "merge_base": "aa23a599667bcb9d4db849ed9a52d7d198957d87",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7913,
+          "head": "a46da5be561a47c44f01f74cff88ae98a6613967",
+          "base": "53ac72ce49cbb12ed4faa26755301f9afa71f877",
+          "merge_base": "53ac72ce49cbb12ed4faa26755301f9afa71f877",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7915,
+          "head": "6a1ded74a768ebd3863c1c6b4c0fae5d37ac31a5",
+          "base": "a46da5be561a47c44f01f74cff88ae98a6613967",
+          "merge_base": "a46da5be561a47c44f01f74cff88ae98a6613967",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7917,
+          "head": "1a57defc02b715f7b8995465668012b0df1d8319",
+          "base": "6a1ded74a768ebd3863c1c6b4c0fae5d37ac31a5",
+          "merge_base": "6a1ded74a768ebd3863c1c6b4c0fae5d37ac31a5",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7920,
+          "head": "b5a12da4ac7c39cc9a2ead0816fc44cb78674a15",
+          "base": "1a57defc02b715f7b8995465668012b0df1d8319",
+          "merge_base": "1a57defc02b715f7b8995465668012b0df1d8319",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7921,
+          "head": "987416e12bfb91a315cca8f17ba0a425c1244367",
+          "base": "b5a12da4ac7c39cc9a2ead0816fc44cb78674a15",
+          "merge_base": "b5a12da4ac7c39cc9a2ead0816fc44cb78674a15",
+          "original_delta_paths": 4
+        }
+      ],
+      "closed_parent_packets_in_scope": [
+        7840
+      ],
+      "final_source_files": {
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "84bd94db56c41e6ce15e61dcbfac094cb2330997",
+          "bytes": 1465,
+          "lines": 10,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "f2cc061713fb76a0c35b75960103e6ef14b764e1",
+          "bytes": 931,
+          "lines": 18,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "fd945b4b70afe384c338ebba4eb1a696991560ac",
+          "bytes": 3892,
+          "lines": 32,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/CLAIM_STATUS_CERTIFICATE.md": {
+          "mode": "100644",
+          "blob": "ad96e5cc87c2881c9101721d9d02d39bcc40ccb8",
+          "bytes": 1222,
+          "lines": 26,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/GOAL.md": {
+          "mode": "100644",
+          "blob": "108b7618550d07a11a62f6dbd117c53f17f146ff",
+          "bytes": 2935,
+          "lines": 56,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/HANDOFF.md": {
+          "mode": "100644",
+          "blob": "0fb31dcf80fce13dde2151c7e5269c1d6d7ebe94",
+          "bytes": 1737,
+          "lines": 32,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/LITERATURE_BRIDGES.md": {
+          "mode": "100644",
+          "blob": "6506911bb01bb4cf87ff78c64a62d203b1c4ce97",
+          "bytes": 272,
+          "lines": 6,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/NO_GO_LEDGER.md": {
+          "mode": "100644",
+          "blob": "bc46ad19bb2860d73c479336648ee75f19a2e97e",
+          "bytes": 708,
+          "lines": 14,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "ea086cddc6f999017b58a7f09a12876af78dca9f",
+          "bytes": 2781,
+          "lines": 39,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/PR_BACKLOG.md": {
+          "mode": "100644",
+          "blob": "d1ebb22f6f9f2c7ce9993b9a9c5f2752609ec224",
+          "bytes": 409,
+          "lines": 10,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/REVIEW_HISTORY.md": {
+          "mode": "100644",
+          "blob": "4b0270818be4088a769a3a4c060b836e9dc735a3",
+          "bytes": 2430,
+          "lines": 45,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "74851a600ead801c4d04d65f6734818fcde5487d",
+          "bytes": 2342,
+          "lines": 29,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/STATE.yaml": {
+          "mode": "100644",
+          "blob": "74be1d54cd467e787a8a33acdfd5fbae99d13641",
+          "bytes": 2294,
+          "lines": 50,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/toe-light-maxwell-20260902/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "8a75f68784678596971ad7e4a3acd46b58a3cb09",
+          "bytes": 881,
+          "lines": 18,
+          "kind": "planning_packet"
+        },
+        "docs/COMPACT_U1_QUADRATIC_BASIN_SOURCE_FREE_MAXWELL_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "60c6fe3df730f0b124569a9d7fd1f4d7b43699e2",
+          "bytes": 17929,
+          "lines": 436,
+          "kind": "source_document"
+        },
+        "docs/COMPACT_U1_WILSON_TO_SOURCE_FREE_MAXWELL_BOUNDED_THEOREM_NOTE_2026-09-02.md": {
+          "mode": "100644",
+          "blob": "e55f048e958f85026c5acf846d3195437faad111",
+          "bytes": 11209,
+          "lines": 327,
+          "kind": "source_document"
+        },
+        "docs/U1_AUXILIARY_FACE_LOCAL_CONDITIONALS_UNCONDITIONAL_GAUGE_MEASURE_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "62e2cb4750dee6c00fc18b6e30a4c64a5ad3441f",
+          "bytes": 26953,
+          "lines": 595,
+          "kind": "source_document"
+        },
+        "docs/U1_LOCAL_REVERSIBLE_YEE_LEAPFROG_TICK_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "0d94dbd13dfdf892edafdc45958096b5d7f7f24a",
+          "bytes": 19360,
+          "lines": 521,
+          "kind": "source_document"
+        },
+        "docs/U1_MINIMAL_PHYSICAL_NEIGHBOR_CONSERVATIVE_GAUGE_DYNAMICS_UNIQUELY_MAXWELL_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "f2656b8d672eac5492932d1ce5b43eeb3529eaad",
+          "bytes": 20478,
+          "lines": 538,
+          "kind": "source_document"
+        },
+        "docs/U1_RADIUS_ONE_ONSITE_UNITARY_MINIMAL_MAXWELL_TICK_BOUNDED_NO_GO_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "609db0ff6a84e44cbcd1b5b62dc7cbdc973d748d",
+          "bytes": 23917,
+          "lines": 474,
+          "kind": "source_document"
+        },
+        "docs/U1_RECORD_DISTRIBUTION_OVERLAP_POSITIVE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "07493d95535e9031c4bdf6b6dc1dad8bc7d3b76f",
+          "bytes": 21362,
+          "lines": 512,
+          "kind": "source_document"
+        },
+        "docs/U1_RECORD_FACE_LIKELIHOOD_SPATIAL_GAUGE_AND_PHOTON_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "45267f5d456feed3aab11a7c7a3945ab211676bc",
+          "bytes": 27754,
+          "lines": 612,
+          "kind": "source_document"
+        },
+        "docs/U1_REPRESENTATION_POSITIVE_REGISTRATION_KERNEL_TO_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "aecd5b9f1e7b3f319414d6627d9a44edc47a3a78",
+          "bytes": 20208,
+          "lines": 444,
+          "kind": "source_document"
+        },
+        "docs/U1_ROLE_COMPILED_YEE_MAXWELL_GENERATOR_AND_TIME_SELECTION_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "cd6c719200d280c1c5b2bf81c02aa0e6c2f5295b",
+          "bytes": 24473,
+          "lines": 621,
+          "kind": "source_document"
+        },
+        "docs/U1_ROLE_ENCODED_DOUBLED_INCIDENCE_NEAREST_NEIGHBOR_GAUGE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "d91a893dc60b8bfd4dd9d7e53562f1111f91192b",
+          "bytes": 24863,
+          "lines": 539,
+          "kind": "source_document"
+        },
+        "logs/runner-cache/compact_u1_quadratic_basin_maxwell_universality_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "4b1b09eb68fe1adf157fac9d6884938e04c9fa24",
+          "bytes": 2995,
+          "lines": 45,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/compact_u1_wilson_to_source_free_maxwell_2026_09_02.txt": {
+          "mode": "100644",
+          "blob": "291a669cf1e82e66367a00aad49d19d339de058a",
+          "bytes": 2496,
+          "lines": 42,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_auxiliary_face_local_conditionals_gauge_measure_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "8f4d9af83ef1fe03a82eec927eaa7c9d3971fae2",
+          "bytes": 2637,
+          "lines": 37,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_local_reversible_yee_leapfrog_tick_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "b276f849640e5194211340f088b34389a254ce07",
+          "bytes": 3263,
+          "lines": 45,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_minimal_maxwell_generator_uniqueness_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "227ef4c5c05f3244953eb183a23956f9df6cb32b",
+          "bytes": 2863,
+          "lines": 42,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_radius_one_onsite_unitary_maxwell_obstruction_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "dc2439e7577f578695cca5e0819201c2b7bfa746",
+          "bytes": 2637,
+          "lines": 37,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_record_distribution_overlap_maxwell_germ_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "0c2e1131b184521925f20ae06a6a460952aada99",
+          "bytes": 3147,
+          "lines": 47,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_record_face_likelihood_spatial_gauge_photon_germ_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "44d159a19334f03f5ecc706fa6b858da1b763227",
+          "bytes": 2874,
+          "lines": 42,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_representation_positive_record_kernel_maxwell_germ_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "40c206eb3112e6784b3956393d64e37759b59741",
+          "bytes": 3444,
+          "lines": 48,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "7308dd5182395d833f8db0ebd76ced16bde9f482",
+          "bytes": 3420,
+          "lines": 47,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_role_encoded_nearest_neighbor_gauge_law_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "3d585e4da2fcb2627efb172c52bcbf3f396e3d67",
+          "bytes": 2900,
+          "lines": 41,
+          "kind": "evidence_output"
+        },
+        "scripts/compact_u1_quadratic_basin_maxwell_universality_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "6ec1eb7a24007ef3d8fd0bca606193e49f798785",
+          "bytes": 16722,
+          "lines": 387,
+          "kind": "runner_or_tool"
+        },
+        "scripts/compact_u1_wilson_to_source_free_maxwell_2026_09_02.py": {
+          "mode": "100644",
+          "blob": "c2f66134e55566baa65fc729c542d5de61b5b003",
+          "bytes": 18206,
+          "lines": 438,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_auxiliary_face_local_conditionals_gauge_measure_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "cd0b46c0e85249e9f232349eb98d0c22f1356689",
+          "bytes": 24237,
+          "lines": 644,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_local_reversible_yee_leapfrog_tick_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "00fc848f821d3a96f720d8375a5cee181139f0ce",
+          "bytes": 18544,
+          "lines": 524,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_minimal_maxwell_generator_uniqueness_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "b7c0845bc189855e695ef9c54681f52d94de6431",
+          "bytes": 17435,
+          "lines": 498,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_radius_one_onsite_unitary_maxwell_obstruction_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "5fe32ace80f1787fbd85f84c25d4e0c08c9e990c",
+          "bytes": 16355,
+          "lines": 470,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_record_distribution_overlap_maxwell_germ_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "18808b55fdb3a22f5526bd9b74ff17bafde64894",
+          "bytes": 19537,
+          "lines": 458,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_record_face_likelihood_spatial_gauge_photon_germ_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "82346686388bbb836d8187c8a31dabf41f8bc76e",
+          "bytes": 26901,
+          "lines": 736,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_representation_positive_record_kernel_maxwell_germ_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "cbb2dffb030d6a5ee14d56e35d0b117e1d7c5cb9",
+          "bytes": 18742,
+          "lines": 389,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "0201f845355da875e8f4da6d9c94be3574823789",
+          "bytes": 20530,
+          "lines": 579,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_role_encoded_nearest_neighbor_gauge_law_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "b9c8f221325f982a1730c34c502b15860af16ea3",
+          "bytes": 28875,
+          "lines": 791,
+          "kind": "runner_or_tool"
+        }
+      },
+      "missing_final_paths": [],
+      "file_counts_by_kind": {
+        "planning_packet": 14,
+        "source_document": 11,
+        "evidence_output": 11,
+        "runner_or_tool": 11
+      },
+      "total_final_source_paths": 47,
+      "total_final_source_bytes": 521565,
+      "total_final_source_lines": 12391,
+      "raw_target_main_merge_base": null,
+      "selected_path_reserved_intersection": [],
+      "raw_target_reserved_paths_present": [],
+      "direct_static_context_scan": {
+        "docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md": {
+          "blob": "6efd15c28c435362517dd6d6cf9b7921775d6c2f",
+          "main_blob": "6efd15c28c435362517dd6d6cf9b7921775d6c2f",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md": {
+          "blob": "5dcff503dc34b95976a270af7a1620e3dfe1747e",
+          "main_blob": "5dcff503dc34b95976a270af7a1620e3dfe1747e",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md": {
+          "blob": "3aef735e5ca83c8bf0b387eb577dbd480e42e754",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+          "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+          "main_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/MICROCAUSALITY_MANY_BODY_NESTED_COMMUTATOR_LIGHTCONE_BOUNDED_THEOREM_NOTE_2026-07-18.md": {
+          "blob": "5fcc712350b661e5211260b2ce085e6103f77ade",
+          "main_blob": "5fcc712350b661e5211260b2ce085e6103f77ade",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "main_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md": {
+          "blob": "019c1c2c526ef23824aefcfcb765c0517d1a6702",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/gauge_link_central_registration_induced_bi_invariant_step_kernel_2026_07_02.py": {
+          "blob": "26e7cbd707edc7e253c59e206684a67d32c59234",
+          "main_blob": "26e7cbd707edc7e253c59e206684a67d32c59234",
+          "same_as_frozen_main": true,
+          "reserved": false
+        }
+      },
+      "context_scan_boundary": "Imports, named scripts/docs and Markdown links only. This is a routing lower bound, not complete premise/input/dependency closure. Reviewer must inspect dynamic helper loads, declared source-bound input arrays, the complete source contract and current premise authority before freezing scope."
+    },
+    {
+      "unit_id": "light_backreaction",
+      "review_recommendation": "Then review the dependent source/current/work/backreaction/finite-clock join. Its finite-step energy convention and the tame/no-wrap limits must stay distinct. Reuse light_germ source checks only when exact premises/bytes match.",
+      "science_review_status": "not_performed",
+      "target_pr": 7937,
+      "target_head": "2814c6768e4d7b38048f70ad7883b4951cb12da3",
+      "constituents": [
+        {
+          "pr": 7922,
+          "head": "58d7d3d28b1b52b82001630b9531a2ad0e5eb2f4",
+          "base": "987416e12bfb91a315cca8f17ba0a425c1244367",
+          "merge_base": "987416e12bfb91a315cca8f17ba0a425c1244367",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7923,
+          "head": "92dc42c76a07b6be7441232dcc09dda658a09aee",
+          "base": "58d7d3d28b1b52b82001630b9531a2ad0e5eb2f4",
+          "merge_base": "58d7d3d28b1b52b82001630b9531a2ad0e5eb2f4",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7924,
+          "head": "e8902a80693472c883620bd5ac5eae5fb398e852",
+          "base": "92dc42c76a07b6be7441232dcc09dda658a09aee",
+          "merge_base": "92dc42c76a07b6be7441232dcc09dda658a09aee",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7927,
+          "head": "25382996df8fecfe38dd8f2b32d84d419c01439b",
+          "base": "e8902a80693472c883620bd5ac5eae5fb398e852",
+          "merge_base": "e8902a80693472c883620bd5ac5eae5fb398e852",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7930,
+          "head": "13819f17587edb3abb2d49d5b28b3bcf964efe81",
+          "base": "25382996df8fecfe38dd8f2b32d84d419c01439b",
+          "merge_base": "25382996df8fecfe38dd8f2b32d84d419c01439b",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7932,
+          "head": "0516b896161a4f10afa33610ce0e779a697b7ce3",
+          "base": "13819f17587edb3abb2d49d5b28b3bcf964efe81",
+          "merge_base": "13819f17587edb3abb2d49d5b28b3bcf964efe81",
+          "original_delta_paths": 4
+        }
+      ],
+      "closed_parent_packets_in_scope": [],
+      "final_source_files": {
+        "docs/U1_CONSERVED_VERTEX_CHARGE_EDGE_CURRENT_COULOMB_PHOTON_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "245d2cb1a358da6d14592f69a9611f417962b1a4",
+          "bytes": 21172,
+          "lines": 528,
+          "kind": "source_document"
+        },
+        "docs/U1_EXACT_MIDPOINT_SOURCE_WORK_CLOSED_DIPOLE_PURE_RADIATION_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "b077040edf97d4c8246dafe7b2a61c26c68e7a19",
+          "bytes": 20771,
+          "lines": 584,
+          "kind": "source_document"
+        },
+        "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "0c6bdfe74a403d83b6f41156bdc9f837ea58ddf6",
+          "bytes": 22459,
+          "lines": 556,
+          "kind": "source_document"
+        },
+        "docs/U1_FINITE_STEP_GAUGE_COVARIANT_MATTER_CURRENT_OPERATOR_WORK_INTERFACE_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "ffb199e0ff8ae24b5e1c840ffafe615a21c60101",
+          "bytes": 20872,
+          "lines": 553,
+          "kind": "source_document"
+        },
+        "docs/U1_QUANTUM_LINK_EXACT_LOCAL_BACKREACTION_AND_COLORED_FLOQUET_ENERGY_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "3d9abdb120e44c16894a5526d15136640ec37b26",
+          "bytes": 21417,
+          "lines": 603,
+          "kind": "source_document"
+        },
+        "docs/U1_QUANTUM_LINK_MATTER_MAGNETIC_PLAQUETTE_FINITE_STEP_JOIN_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "a0c85f5e9750182d36f56db26af7289728fe6304",
+          "bytes": 20289,
+          "lines": 489,
+          "kind": "source_document"
+        },
+        "logs/runner-cache/u1_conserved_source_coulomb_photon_bridge_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "e3c3217d072765e03604ca9cbffee8649800f40a",
+          "bytes": 2362,
+          "lines": 35,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_exact_source_work_closed_dipole_radiation_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "250deb5b98f8a9a07bfe2bbe5fbfe5b7c3b31a54",
+          "bytes": 2749,
+          "lines": 40,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "be41df06ff12d2e2cab3036cb25c72c6c7465e29",
+          "bytes": 3548,
+          "lines": 45,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_finite_step_matter_current_operator_work_interface_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "390219c92f22a378d535cc50021c643dd35eb0bf",
+          "bytes": 2951,
+          "lines": 42,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_quantum_link_exact_backreaction_colored_floquet_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "afd4dfa4aacaf10ed3aed88565a52a9805d45bb8",
+          "bytes": 2902,
+          "lines": 41,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/u1_quantum_link_matter_magnetic_plaquette_finite_step_join_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "c53eb9434de2b630acfdca818c6bd117d151db05",
+          "bytes": 3213,
+          "lines": 45,
+          "kind": "evidence_output"
+        },
+        "scripts/u1_conserved_source_coulomb_photon_bridge_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "4b1bb8a3bb2d9151488b511dc28a6d5f640c82aa",
+          "bytes": 15446,
+          "lines": 427,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_exact_source_work_closed_dipole_radiation_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "7c27522e6c771562f157c0dd6d9df53203fbe476",
+          "bytes": 20098,
+          "lines": 590,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "c1145a8cea60f5651fe4dbbbb746582876fc347c",
+          "bytes": 26623,
+          "lines": 796,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_finite_step_matter_current_operator_work_interface_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "56b1b356c51b2be5a6769aa94e2ba089ab6ece11",
+          "bytes": 26178,
+          "lines": 795,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_quantum_link_exact_backreaction_colored_floquet_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "b8984231f2c00d2cf5f19186d14db5150d800832",
+          "bytes": 22650,
+          "lines": 670,
+          "kind": "runner_or_tool"
+        },
+        "scripts/u1_quantum_link_matter_magnetic_plaquette_finite_step_join_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "d89882f2ebb6e764f8dff04232d6379028a2128d",
+          "bytes": 22192,
+          "lines": 630,
+          "kind": "runner_or_tool"
+        }
+      },
+      "missing_final_paths": [],
+      "file_counts_by_kind": {
+        "source_document": 6,
+        "evidence_output": 6,
+        "runner_or_tool": 6
+      },
+      "total_final_source_paths": 18,
+      "total_final_source_bytes": 277892,
+      "total_final_source_lines": 7469,
+      "raw_target_main_merge_base": null,
+      "selected_path_reserved_intersection": [],
+      "raw_target_reserved_paths_present": [],
+      "direct_static_context_scan": {
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+          "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+          "main_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "main_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/U1_LOCAL_REVERSIBLE_YEE_LEAPFROG_TICK_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "blob": "0d94dbd13dfdf892edafdc45958096b5d7f7f24a",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/U1_RADIUS_ONE_ONSITE_UNITARY_MINIMAL_MAXWELL_TICK_BOUNDED_NO_GO_NOTE_2026-09-03.md": {
+          "blob": "609db0ff6a84e44cbcd1b5b62dc7cbdc973d748d",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/U1_ROLE_COMPILED_YEE_MAXWELL_GENERATOR_AND_TIME_SELECTION_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "blob": "cd6c719200d280c1c5b2bf81c02aa0e6c2f5295b",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/U1_ROLE_ENCODED_DOUBLED_INCIDENCE_NEAREST_NEIGHBOR_GAUGE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "blob": "d91a893dc60b8bfd4dd9d7e53562f1111f91192b",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/u1_local_reversible_yee_leapfrog_tick_2026_09_03.py": {
+          "blob": "00fc848f821d3a96f720d8375a5cee181139f0ce",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/u1_radius_one_onsite_unitary_maxwell_obstruction_2026_09_03.py": {
+          "blob": "5fe32ace80f1787fbd85f84c25d4e0c08c9e990c",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.py": {
+          "blob": "0201f845355da875e8f4da6d9c94be3574823789",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        }
+      },
+      "context_scan_boundary": "Imports, named scripts/docs and Markdown links only. This is a routing lower bound, not complete premise/input/dependency closure. Reviewer must inspect dynamic helper loads, declared source-bound input arrays, the complete source contract and current premise authority before freezing scope."
+    },
+    {
+      "unit_id": "light_ice",
+      "review_recommendation": "Review the finite-spin/RK electric-stiffness packet separately from the subsequent magnetic-source response group. Route finite-volume Monte Carlo and physical observable identifications to the existing campaign field corrections; do not inherit downstream response claims.",
+      "science_review_status": "not_performed",
+      "target_pr": 7937,
+      "target_head": "2814c6768e4d7b38048f70ad7883b4951cb12da3",
+      "constituents": [
+        {
+          "pr": 7936,
+          "head": "6914c77224839488f74c4b84d8eae1747a56ed6b",
+          "base": "0516b896161a4f10afa33610ce0e779a697b7ce3",
+          "merge_base": "0516b896161a4f10afa33610ce0e779a697b7ce3",
+          "original_delta_paths": 4
+        },
+        {
+          "pr": 7937,
+          "head": "2814c6768e4d7b38048f70ad7883b4951cb12da3",
+          "base": "6914c77224839488f74c4b84d8eae1747a56ed6b",
+          "merge_base": "6914c77224839488f74c4b84d8eae1747a56ed6b",
+          "original_delta_paths": 4
+        }
+      ],
+      "closed_parent_packets_in_scope": [],
+      "final_source_files": {
+        "docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "545a08d1294ddab39b0b5af67ddb77d53055359c",
+          "bytes": 26231,
+          "lines": 577,
+          "kind": "source_document"
+        },
+        "docs/SPIN_HALF_CUBIC_ICE_POSITIVE_TOPOLOGICAL_ELECTRIC_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "mode": "100644",
+          "blob": "200500bec71b51886fa3d4989e2111cf3471a018",
+          "bytes": 23069,
+          "lines": 531,
+          "kind": "source_document"
+        },
+        "logs/runner-cache/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "b724b32994ba9659a8e68d872a827b9daa9f7dc3",
+          "bytes": 3737,
+          "lines": 44,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.txt": {
+          "mode": "100644",
+          "blob": "d3bf83acc6893930b0e46ff15a961165182337bf",
+          "bytes": 3658,
+          "lines": 39,
+          "kind": "evidence_output"
+        },
+        "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "e1c12280074e84f99f53361b1b0ce686417b94d9",
+          "bytes": 32085,
+          "lines": 891,
+          "kind": "runner_or_tool"
+        },
+        "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py": {
+          "mode": "100644",
+          "blob": "8fd0b9b611943c336265116329d6c4e69051b91f",
+          "bytes": 19416,
+          "lines": 578,
+          "kind": "runner_or_tool"
+        }
+      },
+      "missing_final_paths": [],
+      "file_counts_by_kind": {
+        "source_document": 2,
+        "evidence_output": 2,
+        "runner_or_tool": 2
+      },
+      "total_final_source_paths": 6,
+      "total_final_source_bytes": 108196,
+      "total_final_source_lines": 2660,
+      "raw_target_main_merge_base": null,
+      "selected_path_reserved_intersection": [],
+      "raw_target_reserved_paths_present": [],
+      "direct_static_context_scan": {
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+          "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+          "main_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "main_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "docs/U1_FINITE_CLOCK_GAUGE_MATTER_AND_CONTROLLED_TAME_MAXWELL_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "blob": "0c6bdfe74a403d83b6f41156bdc9f837ea58ddf6",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/U1_LOCAL_REVERSIBLE_YEE_LEAPFROG_TICK_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "blob": "0d94dbd13dfdf892edafdc45958096b5d7f7f24a",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/U1_ROLE_COMPILED_YEE_MAXWELL_GENERATOR_AND_TIME_SELECTION_FORK_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "blob": "cd6c719200d280c1c5b2bf81c02aa0e6c2f5295b",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/U1_ROLE_ENCODED_DOUBLED_INCIDENCE_NEAREST_NEIGHBOR_GAUGE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+          "blob": "d91a893dc60b8bfd4dd9d7e53562f1111f91192b",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.py": {
+          "blob": "c1145a8cea60f5651fe4dbbbb746582876fc347c",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/u1_local_reversible_yee_leapfrog_tick_2026_09_03.py": {
+          "blob": "00fc848f821d3a96f720d8375a5cee181139f0ce",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.py": {
+          "blob": "0201f845355da875e8f4da6d9c94be3574823789",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/u1_role_encoded_nearest_neighbor_gauge_law_2026_09_03.py": {
+          "blob": "b9c8f221325f982a1730c34c502b15860af16ea3",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        }
+      },
+      "context_scan_boundary": "Imports, named scripts/docs and Markdown links only. This is a routing lower bound, not complete premise/input/dependency closure. Reviewer must inspect dynamic helper loads, declared source-bound input arrays, the complete source contract and current premise authority before freezing scope."
+    },
+    {
+      "unit_id": "curved_covariance",
+      "review_recommendation": "Later, after premise/import extraction: seven conditional matrix/bench claims on common cell helpers. Preserve covariance as the stated antecedent, assemble onsite and overlap results separately, and require actual Blocks105/201/209/211 helper inspection. Exclude reserved raw ancestry.",
+      "science_review_status": "not_performed",
+      "target_pr": 7997,
+      "target_head": "774374271180405d5c2522010511adbd2c906236",
+      "constituents": [
+        {
+          "pr": 7981,
+          "head": "851aff9b3f950e5f08b0bd0878df2e1992bbe15b",
+          "base": "4e9931a970ded94f769553da9e6d77770d612f64",
+          "merge_base": "4e9931a970ded94f769553da9e6d77770d612f64",
+          "original_delta_paths": 22
+        },
+        {
+          "pr": 7988,
+          "head": "1dc2ae2557a22ef188f344665bc00edc2593d113",
+          "base": "851aff9b3f950e5f08b0bd0878df2e1992bbe15b",
+          "merge_base": "851aff9b3f950e5f08b0bd0878df2e1992bbe15b",
+          "original_delta_paths": 12
+        },
+        {
+          "pr": 7992,
+          "head": "d386a1be41ab8a26e9a4a2e5258f841bf1dbc2cc",
+          "base": "1dc2ae2557a22ef188f344665bc00edc2593d113",
+          "merge_base": "1dc2ae2557a22ef188f344665bc00edc2593d113",
+          "original_delta_paths": 24
+        },
+        {
+          "pr": 7993,
+          "head": "fa610e595f47792beec65d246fda1c8993155fcc",
+          "base": "d386a1be41ab8a26e9a4a2e5258f841bf1dbc2cc",
+          "merge_base": "d386a1be41ab8a26e9a4a2e5258f841bf1dbc2cc",
+          "original_delta_paths": 13
+        },
+        {
+          "pr": 7994,
+          "head": "163b48814f67f22baca4fca3eabec3b458c9dd41",
+          "base": "fa610e595f47792beec65d246fda1c8993155fcc",
+          "merge_base": "fa610e595f47792beec65d246fda1c8993155fcc",
+          "original_delta_paths": 13
+        },
+        {
+          "pr": 7995,
+          "head": "39b3fd0acb53b8c3279234b04ac6a68b7a83d811",
+          "base": "163b48814f67f22baca4fca3eabec3b458c9dd41",
+          "merge_base": "163b48814f67f22baca4fca3eabec3b458c9dd41",
+          "original_delta_paths": 13
+        },
+        {
+          "pr": 7997,
+          "head": "774374271180405d5c2522010511adbd2c906236",
+          "base": "39b3fd0acb53b8c3279234b04ac6a68b7a83d811",
+          "merge_base": "39b3fd0acb53b8c3279234b04ac6a68b7a83d811",
+          "original_delta_paths": 12
+        }
+      ],
+      "closed_parent_packets_in_scope": [],
+      "final_source_files": {
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "daf13c4a5e80a4fe73283aa27595e285e90c6dc5",
+          "bytes": 1526,
+          "lines": 13,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "8d4d81c8076877e1ef2c71fc0d78d8fc903c8cc9",
+          "bytes": 889,
+          "lines": 6,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "a667530db8ef36ee8d3bbb5f80ae03c2381ff62d",
+          "bytes": 2751,
+          "lines": 23,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/CHECKER_block215_findings.md": {
+          "mode": "100644",
+          "blob": "5f9ebad7a3bc4fc20cf8bb0d3842b80a649ba596",
+          "bytes": 15256,
+          "lines": 244,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/CHECKER_block216_findings.md": {
+          "mode": "100644",
+          "blob": "5baa84d0f52a1cd2d640d9f0410a78c92dc7f9cf",
+          "bytes": 22850,
+          "lines": 324,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/CHECKER_block217_findings.md": {
+          "mode": "100644",
+          "blob": "f83807a45fae051d86e5fa05f296b970a7379006",
+          "bytes": 20127,
+          "lines": 322,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/CHECKER_block218_findings.md": {
+          "mode": "100644",
+          "blob": "3d4aa5346d71e58450af13c53aa6b12f49edaba4",
+          "bytes": 16438,
+          "lines": 243,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/CHECKER_block219_findings.md": {
+          "mode": "100644",
+          "blob": "774e375962649d2c769aaf7a58e8466e206dc7f6",
+          "bytes": 30550,
+          "lines": 506,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/CLAIM_STATUS_CERTIFICATE.md": {
+          "mode": "100644",
+          "blob": "89b7d32e5b2b40ec790db7947badc07b68085362",
+          "bytes": 3233,
+          "lines": 15,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/F3_blind_covariance_prediction.md": {
+          "mode": "100644",
+          "blob": "2cc53efac70a97f02bdc8820156d29730f7288ff",
+          "bytes": 27461,
+          "lines": 531,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/GOAL.md": {
+          "mode": "100644",
+          "blob": "f7d23deee700849628cb67bcea171c6cb5fbf4db",
+          "bytes": 10262,
+          "lines": 111,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/GOAL_block216.md": {
+          "mode": "100644",
+          "blob": "e0de90d8da15fbdcaee23ffae54ae02d062cd89b",
+          "bytes": 5587,
+          "lines": 59,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/GOAL_block217.md": {
+          "mode": "100644",
+          "blob": "9a1785cafbff49f8f5a69186a7c46acee211ca4c",
+          "bytes": 5533,
+          "lines": 57,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/GOAL_block218.md": {
+          "mode": "100644",
+          "blob": "05787a8c9f2d249e42831f92212417d1c001e182",
+          "bytes": 5379,
+          "lines": 52,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/GOAL_block219.md": {
+          "mode": "100644",
+          "blob": "29f490ed5fd96619e524f0ee2bd5b9b0a8599d8f",
+          "bytes": 5647,
+          "lines": 56,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/HANDOFF.md": {
+          "mode": "100644",
+          "blob": "f3b78950f508ab69f88b954e36ec6957daef3cfb",
+          "bytes": 16463,
+          "lines": 62,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/LITERATURE_BRIDGES.md": {
+          "mode": "100644",
+          "blob": "45aa9ce0c77600d7bd6a073f644a71d8f46c39bb",
+          "bytes": 188,
+          "lines": 1,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/NO_GO_LEDGER.md": {
+          "mode": "100644",
+          "blob": "8ba888e4392ce595cd8597440d709e217ae18401",
+          "bytes": 1549,
+          "lines": 10,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "5de5f05a9c41a22edb250a14799f251546596306",
+          "bytes": 9916,
+          "lines": 46,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/PR_BACKLOG.md": {
+          "mode": "100644",
+          "blob": "e705e4b8875ca0cbb8de17b6eab6175653cebc7e",
+          "bytes": 42,
+          "lines": 1,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/RESULTS_block215.md": {
+          "mode": "100644",
+          "blob": "01883c55119a20a7ef7776be3e1154fc1ace7c3e",
+          "bytes": 19575,
+          "lines": 169,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/RESULTS_block216.md": {
+          "mode": "100644",
+          "blob": "e476971a913242186ccb1d39e9974c5aea0107f9",
+          "bytes": 19563,
+          "lines": 174,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/RESULTS_block217.md": {
+          "mode": "100644",
+          "blob": "7873207a1eb5ac346ab5b5c4d435ab575a88e4b1",
+          "bytes": 21497,
+          "lines": 187,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/RESULTS_block218.md": {
+          "mode": "100644",
+          "blob": "c4e0742b11aedf8817ddca44b1cec9876c50468e",
+          "bytes": 20436,
+          "lines": 176,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/RESULTS_block219.md": {
+          "mode": "100644",
+          "blob": "73c19956c6eb25418f17efb6166025066b272e1f",
+          "bytes": 23842,
+          "lines": 198,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/REVIEW_HISTORY.md": {
+          "mode": "100644",
+          "blob": "03caad6c4a95288b358ba54ee9afd059edab8203",
+          "bytes": 91650,
+          "lines": 345,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "6fd39366e42a30c907777d3b74ede960deae3409",
+          "bytes": 3925,
+          "lines": 24,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/STATE.yaml": {
+          "mode": "100644",
+          "blob": "5f29ff014c613cc4f628ec6af5084d3a19777c8e",
+          "bytes": 8155,
+          "lines": 49,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "f2b6ec34ec932265648f9482552c1a25f7c82728",
+          "bytes": 1432,
+          "lines": 11,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/specs/block215_blind.md": {
+          "mode": "100644",
+          "blob": "96d8fba3851c092a923354b4dff03dcd8eebcae2",
+          "bytes": 5978,
+          "lines": 22,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/specs/block215_primary.md": {
+          "mode": "100644",
+          "blob": "85eb82c4d6e9ea5a96dce51f645b733aa3d87866",
+          "bytes": 8884,
+          "lines": 33,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/specs/block216_primary.md": {
+          "mode": "100644",
+          "blob": "ebed9217e67dadf816f1a31946b696853914c675",
+          "bytes": 8453,
+          "lines": 33,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/specs/block217_primary.md": {
+          "mode": "100644",
+          "blob": "c10445836987dd3a24c953bd489ce1998e6ad5ff",
+          "bytes": 8030,
+          "lines": 33,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/specs/block218_primary.md": {
+          "mode": "100644",
+          "blob": "9ff664a666c5b170aba9cefc8cc8adb754960a4d",
+          "bytes": 8230,
+          "lines": 33,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-duality-covariance-20260905/specs/block219_primary.md": {
+          "mode": "100644",
+          "blob": "3095b7356ade87dbd9cd870801edbd16420a73dc",
+          "bytes": 8597,
+          "lines": 33,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/APPROACH_REGISTRY.md": {
+          "mode": "100644",
+          "blob": "b425d16c2f5ad6b5e35c0467e5dc3f3ccb82fc44",
+          "bytes": 1064,
+          "lines": 8,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/ARTIFACT_PLAN.md": {
+          "mode": "100644",
+          "blob": "95d76a09ada7885fe836d8e7431bfab4770a8870",
+          "bytes": 662,
+          "lines": 4,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/ASSUMPTIONS_AND_IMPORTS.md": {
+          "mode": "100644",
+          "blob": "4d362f5d5ebe4b313268441238bd6a33ae298321",
+          "bytes": 2374,
+          "lines": 40,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/CHECKER_block213_findings.md": {
+          "mode": "100644",
+          "blob": "10f64ea0bb48789bd992b68cdc601eb3a4c4d9a1",
+          "bytes": 26607,
+          "lines": 400,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/CHECKER_block214_findings.md": {
+          "mode": "100644",
+          "blob": "d1251e5d62a2a53c9275d3bc637d92f2809c4595",
+          "bytes": 21139,
+          "lines": 376,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/CLAIM_STATUS_CERTIFICATE.md": {
+          "mode": "100644",
+          "blob": "2e69d26ac99f8b926101ea0b5afdab11d99d2f9f",
+          "bytes": 4667,
+          "lines": 31,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/F2_blind_metric_prediction.md": {
+          "mode": "100644",
+          "blob": "1f103c236c9e22d790485737c8a5ec6ed8a6a9d0",
+          "bytes": 56283,
+          "lines": 1074,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/GOAL.md": {
+          "mode": "100644",
+          "blob": "fc8518a97c5f9ab56b3ab59496fad8f1764be024",
+          "bytes": 4425,
+          "lines": 69,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/GOAL_block214.md": {
+          "mode": "100644",
+          "blob": "3b05cdb38de63de3907d4a83d584b61c89c3cfb5",
+          "bytes": 6325,
+          "lines": 73,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/HANDOFF.md": {
+          "mode": "100644",
+          "blob": "0b3d34a2b892669f1e4eae25df7431376914b3e1",
+          "bytes": 10718,
+          "lines": 36,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/LITERATURE_BRIDGES.md": {
+          "mode": "100644",
+          "blob": "f33ab4b423935f8af80ed45a5c3c8f4af9acdbd1",
+          "bytes": 79,
+          "lines": 1,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/NO_GO_LEDGER.md": {
+          "mode": "100644",
+          "blob": "8952f9e69b87ea1e140576b714ab153af988bfc8",
+          "bytes": 1162,
+          "lines": 17,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/OPPORTUNITY_QUEUE.md": {
+          "mode": "100644",
+          "blob": "90dc2f17b654e871ad5f38ddce19003aef2ca36e",
+          "bytes": 4194,
+          "lines": 28,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/PR_BACKLOG.md": {
+          "mode": "100644",
+          "blob": "095d345a6d1e784789ae46824e6d547fc6d61e99",
+          "bytes": 22,
+          "lines": 1,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/RESULTS_block213.md": {
+          "mode": "100644",
+          "blob": "74d20fef7e273cac20561e3411d337abb28099e7",
+          "bytes": 74798,
+          "lines": 467,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/RESULTS_block214.md": {
+          "mode": "100644",
+          "blob": "c56bc0232b857de45472b1015bea98f882f9a17f",
+          "bytes": 18241,
+          "lines": 160,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/REVIEW_HISTORY.md": {
+          "mode": "100644",
+          "blob": "ae139bf3cd979e6e759b0f5e0dc8e561ab8bd7ff",
+          "bytes": 35616,
+          "lines": 161,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/ROUTE_PORTFOLIO.md": {
+          "mode": "100644",
+          "blob": "1e7bbc568c650149da7c171770feaaa532792d4f",
+          "bytes": 3846,
+          "lines": 40,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/STATE.yaml": {
+          "mode": "100644",
+          "blob": "31da94c76ff7b73dec51b44690cdfaf4462acbd5",
+          "bytes": 9383,
+          "lines": 47,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/TRACE_GATE.md": {
+          "mode": "100644",
+          "blob": "132f1e777d63f3f53c28b96b7d4765bafb516fe8",
+          "bytes": 570,
+          "lines": 11,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/specs/SALVAGE_sol_primary_narration.md": {
+          "mode": "100644",
+          "blob": "bbd186ea1c66f73446abbf3d0644c0a2deabfedf",
+          "bytes": 1713,
+          "lines": 16,
+          "kind": "planning_packet"
+        },
+        ".claude/science/physics-loops/gravity-weighted-kernel-20260905/specs/block213_primary.md": {
+          "mode": "100644",
+          "blob": "e26ae080d9ede019da2719a019caa48b94046bdb",
+          "bytes": 3656,
+          "lines": 9,
+          "kind": "planning_packet"
+        },
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_COVARIANT_CURVED_CELL_CONE_BOUNDED_THEOREM_NOTE_2026-09-05.md": {
+          "mode": "100644",
+          "blob": "7b55a41befe0a90ba06c15122fee2f9ad07ed2d5",
+          "bytes": 48527,
+          "lines": 628,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_DUALITY_COVARIANCE_LOCUS_BOUNDED_THEOREM_NOTE_2026-09-05.md": {
+          "mode": "100644",
+          "blob": "4131aab00624434be10dbd798aea193ecd9cfc37",
+          "bytes": 49870,
+          "lines": 710,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_DUALITY_PARAMETERS_PRINCIPAL_PART_BOUNDED_THEOREM_NOTE_2026-09-05.md": {
+          "mode": "100644",
+          "blob": "467b2c2eea9bdaca3fb8baa6855a33b8386211a3",
+          "bytes": 46597,
+          "lines": 708,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_OVERLAP_ASSEMBLY_COVARIANT_CELLS_BOUNDED_THEOREM_NOTE_2026-09-05.md": {
+          "mode": "100644",
+          "blob": "494dc4e2c9a7acd85ca962385a28d0ddee373f02",
+          "bytes": 51174,
+          "lines": 619,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_THREE_DIRECTION_BENCH_COVARIANT_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-05.md": {
+          "mode": "100644",
+          "blob": "4e925f98876cf160d1a98bf0ea66ff200cc432e3",
+          "bytes": 55036,
+          "lines": 599,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_TWO_DIRECTION_BENCH_COVARIANT_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-05.md": {
+          "mode": "100644",
+          "blob": "75b23ae3658091f488ddb771a0111b329b92c987",
+          "bytes": 50718,
+          "lines": 600,
+          "kind": "source_document"
+        },
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_WEIGHTED_KERNEL_DISPERSION_BOUNDED_THEOREM_NOTE_2026-09-05.md": {
+          "mode": "100644",
+          "blob": "07acf91561b76946587787b58918e1b8dd03575e",
+          "bytes": 77716,
+          "lines": 1054,
+          "kind": "source_document"
+        },
+        "logs/runner-cache/admissibility_dirac_kahler_covariant_curved_cell_cone_2026_09_05.txt": {
+          "mode": "100644",
+          "blob": "14123862312347a8bb1b28e62002028e131c0b17",
+          "bytes": 34244,
+          "lines": 274,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.txt": {
+          "mode": "100644",
+          "blob": "8e1595a1d85c286782a71e03177e9197a1c8d182",
+          "bytes": 35654,
+          "lines": 294,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_dirac_kahler_duality_parameters_principal_part_2026_09_05.txt": {
+          "mode": "100644",
+          "blob": "97f4b16913f852e627cfc556fa504a8de91238f6",
+          "bytes": 16411,
+          "lines": 139,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_dirac_kahler_overlap_assembly_covariant_cells_2026_09_05.txt": {
+          "mode": "100644",
+          "blob": "a1066b91964958a3eca4a6be5371cc7a7298506e",
+          "bytes": 38147,
+          "lines": 259,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05.txt": {
+          "mode": "100644",
+          "blob": "16d298fc4832b156012448d01eee88b2295d0351",
+          "bytes": 68671,
+          "lines": 420,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05.txt": {
+          "mode": "100644",
+          "blob": "726fff03943b16fe90919114874f3b315add18f9",
+          "bytes": 55536,
+          "lines": 325,
+          "kind": "evidence_output"
+        },
+        "logs/runner-cache/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.txt": {
+          "mode": "100644",
+          "blob": "a885303ef1f3e1b6a97b91f65b861ecf914a9faa",
+          "bytes": 63150,
+          "lines": 338,
+          "kind": "evidence_output"
+        },
+        "scripts/admissibility_dirac_kahler_covariant_curved_cell_cone_2026_09_05.py": {
+          "mode": "100644",
+          "blob": "a9429465498b23d06da568f7f7ed7a9d9bb0dddd",
+          "bytes": 80105,
+          "lines": 1202,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_dirac_kahler_duality_covariance_locus_2026_09_05.py": {
+          "mode": "100644",
+          "blob": "99715185762fa254ec7a26d752b366f7e6e0fb98",
+          "bytes": 78412,
+          "lines": 1343,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_dirac_kahler_duality_parameters_principal_part_2026_09_05.py": {
+          "mode": "100644",
+          "blob": "7cbd27e40d101a383cfb651fc8144bd94762023b",
+          "bytes": 65649,
+          "lines": 1115,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_dirac_kahler_overlap_assembly_covariant_cells_2026_09_05.py": {
+          "mode": "100644",
+          "blob": "b6527dc679844cab369c6c1c593da384b68266ac",
+          "bytes": 75519,
+          "lines": 1148,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05.py": {
+          "mode": "100644",
+          "blob": "03a677c8494b861ae4d7d565ecfe9f184ad66ab6",
+          "bytes": 84387,
+          "lines": 1129,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05.py": {
+          "mode": "100644",
+          "blob": "0216289cf16cbd2102ebb7b6d66d91781ed0f0ef",
+          "bytes": 72777,
+          "lines": 1038,
+          "kind": "runner_or_tool"
+        },
+        "scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py": {
+          "mode": "100644",
+          "blob": "e708803abd3539187dd00f5c088abc96f838dc59",
+          "bytes": 179477,
+          "lines": 3074,
+          "kind": "runner_or_tool"
+        }
+      },
+      "missing_final_paths": [],
+      "file_counts_by_kind": {
+        "planning_packet": 57,
+        "source_document": 7,
+        "evidence_output": 7,
+        "runner_or_tool": 7
+      },
+      "total_final_source_paths": 78,
+      "total_final_source_bytes": 2075215,
+      "total_final_source_lines": 24287,
+      "raw_target_main_merge_base": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+      "selected_path_reserved_intersection": [],
+      "raw_target_reserved_paths_present": [
+        ".claude/science/physics-loops/toe-axiom-closure-block105-shifted-origin-frame-gauge-20260814/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/toe-axiom-closure-block142-carrier-reflection-blocker-20260819/NO_GO_LEDGER.md",
+        ".claude/science/physics-loops/toe-axiom-closure-block143-staggered-hermitian-pairing-20260819/NO_GO_LEDGER.md",
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_CARRIER_REFLECTION_BLOCKER_BOUNDED_THEOREM_NOTE_2026-08-19.md",
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_STAGGERED_HERMITIAN_PAIRING_BOUNDED_THEOREM_NOTE_2026-08-19.md",
+        "logs/runner-cache/admissibility_dirac_kahler_carrier_reflection_blocker_2026_08_19.txt",
+        "logs/runner-cache/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.txt",
+        "logs/runner-cache/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.txt",
+        "scripts/admissibility_dirac_kahler_carrier_reflection_blocker_2026_08_19.py",
+        "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+        "scripts/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.py"
+      ],
+      "direct_static_context_scan": {
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_COVARIANT_RULE_IDENTIFICATION_BOUNDED_THEOREM_NOTE_2026-08-26.md": {
+          "blob": "5455d48a8edbb9eab1a76aad1d4e804c3dd18838",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_JOINT_PIN_ORDER_EXTENDED_ALPHABET_BOUNDED_THEOREM_NOTE_2026-08-27.md": {
+          "blob": "58e987946738e7f76c960ebfd01e4f810c949453",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/ADMISSIBILITY_DIRAC_KAHLER_SIX_FACE_POSITIVITY_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-08-27.md": {
+          "blob": "8d0874e632285b2b15ed0a43216a32844d2e8590",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "main_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "same_as_frozen_main": true,
+          "reserved": false
+        },
+        "scripts/admissibility_dirac_kahler_covariant_rule_identification_2026_08_26.py": {
+          "blob": "ffbb8fd19247f8938261a868783e86d302ec8aea",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py": {
+          "blob": "90f9b53b2ef499367f2f65fd8314a13137af203b",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/admissibility_dirac_kahler_joint_pin_order_extended_alphabet_2026_08_27.py": {
+          "blob": "eddb3f69647876ba7fa03890f3294f355fa52fde",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py": {
+          "blob": "4870f31b5880028ad4f1f3095aad4d0820e4668f",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": true
+        },
+        "scripts/admissibility_dirac_kahler_six_face_positivity_classification_2026_08_27.py": {
+          "blob": "5ad74997bb99388ab4503598c6f1b977d80ccc6c",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        },
+        "scripts/admissibility_dirac_kahler_three_direction_rule_geometry_2026_08_26.py": {
+          "blob": "af2672f13ba633bac9bcaabb393548e2d16a8915",
+          "main_blob": null,
+          "same_as_frozen_main": false,
+          "reserved": false
+        }
+      },
+      "context_scan_boundary": "Imports, named scripts/docs and Markdown links only. This is a routing lower bound, not complete premise/input/dependency closure. Reviewer must inspect dynamic helper loads, declared source-bound input arrays, the complete source contract and current premise authority before freezing scope."
+    }
+  ]
+}

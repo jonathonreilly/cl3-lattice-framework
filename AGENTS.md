@@ -100,8 +100,10 @@ from this branch. Search
 actual open-PR science as well as main; verify changed heads before reuse.
 The campaign coordinator maintains the shared status and assignments. Workers
 return evidence in assigned artifacts rather than concurrently rewriting them.
-`BATCH_REVIEW_PLAN.md` is a planning proposal, not a waiver of the current
-review contract or a PASS for any PR.
+`BATCH_REVIEW_PLAN.md` summarizes the reviewed batching process now landed
+on main; follow current main for the executable contract. The plan and
+`NEXT_REVIEW_UNITS.json` grant no scientific PASS. `BACKLOG_CONSOLIDATIONS.json`
+records duplicate closures and transferred obligations, not landed science.
 
 The owner explicitly authorized the coordinator to manage review, fixes and
 landing of the backlog on main. All 37 draft PRs are included for actual

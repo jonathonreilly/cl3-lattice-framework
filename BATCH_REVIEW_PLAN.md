@@ -1,12 +1,12 @@
 # Faster review and integration of open science
 
-Reviewed candidate procedure, 2026-09-07; first combined validation in progress. The owner wants the open science integrated
+Landed review procedure, 2026-09-07; first combined validation passed. The owner wants the open science integrated
 more efficiently and defers formal audit until a solid TOE.
 Independent examination of surviving source claims still precedes landing.
 
 ## Actual backlog
 
-After completed draft triage: 233 open PRs, zero drafts (21 closed, 16 ready).
+After completed draft triage: 230 open PRs, zero drafts after the first science landing (21 closed, 16 ready).
 The ancestry counts below describe the original snapshot, not this refresh.
 
 The snapshot contains 254 PRs. 129 name another open branch as their GitHub
@@ -43,8 +43,7 @@ multiple dependent PRs. Require:
 This changes the review unit and placement of repeated mechanical work, not
 which scientific claims require scrutiny. The executable seven-file contract has now passed independent adversarial
 review and same-session confirmation after a successive-manifest-conflict
-repair. It is included in the first exact combined landing candidate; it is
-not yet current main.
+repair. It is now current main at `2d0f551dcd8bd444daee85b97811cda53da0661e`.
 
 ## Integration
 
@@ -69,8 +68,8 @@ older parent verdicts as current. Verify the content/disposition map before
 closing covered parents. This existing cumulative-submission route does not
 require waiting for the broader review-contract proposal to be implemented.
 The exact six-path comparison is in
-[BATTERY_PR_SOURCE_MAP.json](BATTERY_PR_SOURCE_MAP.json); its scientific
-dispositions remain pending complete final-source review.
+[BATTERY_PR_SOURCE_MAP.json](BATTERY_PR_SOURCE_MAP.json); its initial six-path comparison is superseded for landing by the complete
+23/21/97-path maps and confirmations in `backlog_evidence/wave1`.
 
 | Group | PRs | Why together / required check |
 |---|---|---|
