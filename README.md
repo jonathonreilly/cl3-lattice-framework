@@ -41,7 +41,9 @@ ledger counts on main, separate from newly landed source.
 `BATCH_REVIEW_PLAN.md` summarizes the landed coherent-unit review process.
 `NEXT_REVIEW_UNITS.json` freezes proposed source partitions;
 `BACKLOG_CONSOLIDATIONS.json` records duplicate closures and transferred
-obligations. `backlog_evidence/wave1/` contains the first landing receipts. The older scorecard is retained under `history/`.
+obligations. `backlog_evidence/wave1/` and `wave2/` contain verified landing receipts.
+`backlog_evidence/coordinator-efficiency/` records the independent review of
+the coverage/reuse clarification. The older scorecard is retained under `history/`.
 `BATTERY_PR_SOURCE_MAP.json` pins the first cumulative review candidate's
 inherited science blobs without assigning scientific acceptance.
 

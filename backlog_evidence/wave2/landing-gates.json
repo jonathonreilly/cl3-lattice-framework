@@ -1,0 +1,57 @@
+{
+  "completed_at": "2026-09-07T15:34:05.505673+00:00",
+  "base": "2d0f551dcd8bd444daee85b97811cda53da0661e",
+  "candidate_commit": "a8f84aaad75fdcb790ba6ba094e4275e237d9a5a",
+  "tested_source_tree": "f394c1f6033be8acd57d08962491cfcff34c559c",
+  "cleaned_landing_tree": "f394c1f6033be8acd57d08962491cfcff34c559c",
+  "all_71_source_hashes_unchanged": true,
+  "full_pipeline_runs": 1,
+  "integration_retries": 0,
+  "commands": [
+    {
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh"
+      ],
+      "exit_code": 0,
+      "log": "pipeline.log",
+      "sha256": "0e2f15e42fbc13e9411a0b5064cc571f4965eb638b3437eb6f9cf64481f86328"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/audit_lint.py",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "log": "strict-lint.log",
+      "sha256": "c29664db7d353d88311d2929871b6f1c2e805baffd6dcdb3d16c3dce644d746d"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/check_changed_audit_evidence.py",
+        "--base",
+        "2d0f551dcd8bd444daee85b97811cda53da0661e"
+      ],
+      "exit_code": 0,
+      "log": "changed-evidence.log",
+      "sha256": "e10943922cd6b7aba81469f2c3b8a2bffc8a06cc0a1179c7db899fe11b0bfead"
+    }
+  ],
+  "generated_outputs": {
+    "path_count": 1443,
+    "untracked_count": 7,
+    "patch_sha256": "538ecec9e1f9be808e620d65445095efcb802ab3bb28b39db098db4e4f1c1f3c",
+    "no_non_generated_change": true,
+    "all_stripped": true
+  },
+  "affected_rows": 4,
+  "source_review_addenda": {
+    "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-admissibility-review/INTEGRATION_CONFIRMATION.md": "b88cb12b28ede116d518a96ee0f4b2403b8fd4ec97dd483ab5321ec535e8f87b",
+    "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-admissibility-review/INTEGRATION_CONFIRMATION.json": "5e9b0450dc7ea2a0c3455932fbcb175d4f30adef94837401c806ecdb2d3e7dab"
+  },
+  "formal_audit": "deferred;noneperformed"
+}

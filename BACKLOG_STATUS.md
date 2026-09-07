@@ -6,7 +6,7 @@ them with a concrete disposition. Formal audit is deferred until a solid TOE.
 The coordinator owns GitHub changes and landing; reviewers return evidence.
 
 The original 13:57 UTC routing refresh had 254 open PRs: 217 non-draft and 37 draft.
-The verified post-triage refresh has 204 open PRs and 0 drafts after the first science landing and duplicate consolidations.
+The verified post-triage refresh has 202 open PRs and 0 drafts: 54 original PRs closed and two new successors opened.
 All 37 original drafts were explicitly in triage scope and are now resolved. Marking ready means reviewable,
 not scientifically accepted. A still-draft PR does not land. The standing
 reservations #6379, #6858 and #6859 are all non-draft and remain in force.
@@ -14,8 +14,8 @@ reservations #6379, #6858 and #6859 are all non-draft and remain in force.
 | Work | Frozen source / owner | Status |
 |---|---|---|
 | First cumulative science unit | #8001 at `707d7a9c7f929c1c2c16078dfed76acb786e5f3b`, carrying #7983/#7996; Astra xhigh independent reviewer | Independent source review PASS after one confirmed preparation-memo correction: all 97 paths classified, seven runners passed, 19 semantic mutations rejected. Integrated as source-only commit `bc116666469ed260ab53413898480d471c9c4d18`; all 97 reviewed hashes match. Landed on main `2d0f551dcd8bd444daee85b97811cda53da0661e`; all three constituent PRs closed with branches preserved. |
-| Next science unit | #7998/#7999/#8000/#8002, frozen terminal `726bafb889a85efadc62dbd81d51efb66c2cdf90`; original #8001 reviewer, separate worktree | Corrected final source PASS from original reviewer: all ten P2 groups resolved, 155 focused checks pass, full 71-path coverage bound. Current-main candidate `a8f84aaad75fdcb790ba6ba094e4275e237d9a5a` is in one shared mechanical validation; not landed yet. |
-| All draft PRs | 37 frozen heads in OPEN_PR_INVENTORY.json; separate Astra xhigh reviewer | All 37 source/delta dispositions reviewed: 21 close, 16 ready. All 37 actions verified: 21 closed, 16 marked ready; exact-head checks before and after every action. |
+| Admissibility unit | #7998/#7999/#8000/#8002, frozen terminal `726bafb889a85efadc62dbd81d51efb66c2cdf90`; original #8001 reviewer, separate worktree | Corrected final source PASS from original reviewer: all ten P2 groups resolved, 155 focused checks pass, full 71-path coverage bound. Landed on main `a8f84aaad75fdcb790ba6ba094e4275e237d9a5a` after one combined pipeline, strict lint and four evidence checks; all four PRs closed and branches preserved. |
+| All draft PRs | 37 frozen heads in DRAFT_DISPOSITIONS.json; separate Astra xhigh reviewer | All 37 source/delta dispositions reviewed: 21 close, 16 ready. All 37 actions verified: 21 closed, 16 marked ready; exact-head checks before and after every action. |
 | Faster review contract | `process/coherent-backlog-review-20260907`, base `f6f861e8f0c7870b3a9a200a020ec5ca0b14be38`; separate Astra xhigh author | Seven-file candidate complete; 133 initial focused tests passed. Fresh Astra xhigh adversarial review found a successive-manifest-conflict retry bug. Author fix passes 70 contract tests and same-session adversarial confirmation, including 17 real shell/Git scenarios. Final seven-file patch SHA256 `104d16e39fbf5736bc5cad1f5475872160803d892ebab6a737d9b4229191853e`; committed and combined with the first science unit. |
 
 The first three-PR science unit and seven-file review process have landed. All 37 draft actions are verified in
@@ -81,8 +81,11 @@ Gaussian-consumer claims. Narrow corrections are independently confirmed;
 155 focused checks pass. Its 70 authored paths are exact reviewed bytes on
 current main, with a regenerated graph acknowledgment (+4 nodes, +9 edges;
 no changed or removed existing nodes). Candidate
-`a8f84aaad75fdcb790ba6ba094e4275e237d9a5a` remains unlanded pending the
-combined validation and final provenance checks.
+`a8f84aaad75fdcb790ba6ba094e4275e237d9a5a` is now landed after the combined
+validation and final provenance checks. Four changed evidence rows passed;
+strict lint had zero errors. All 1,443 generated paths were preserved outside
+main and stripped; the tested and landed source trees are identical. All four
+original heads were rechecked before push and each close; branches remain.
 
 Read-only tower routing found that #7827 and #7813 both contain source from
 all three owner-reserved PRs. Neither raw tower is a permissible whole landing
@@ -115,8 +118,33 @@ mutation authority; formal audit remains deferred.
 
 All 26 further duplicate closures are complete and verified against both the
 parent and successor heads before and after each action. Every original branch
-still exists at its frozen head. The current queue has 204 open PRs and zero
-drafts. Relative to the starting 254: 21 draft closures, three landed science
-closures and 26 further duplicate consolidations; the 16 ready transitions do
+still exists at its frozen head. The current queue has 202 open PRs and zero
+drafts. Relative to the starting 254: 21 draft closures, seven landed science
+closures and 26 further duplicate consolidations, plus two new PRs; the 16 ready transitions do
 not change the open count. The two successors remain open for their complete
 scientific review; no inherited obligation is discharged by consolidation.
+
+## New successors and efficient review routing — 2026-09-07
+
+The four admissibility PRs are closed after verified source landing, not by a
+raw merge of their stale branches. Two new non-draft PRs arrived during that
+validation: #8003 (`f911b0e73d97b40710477f8985e14c3bd94420cf`, 16 paths)
+extends the monotone formation/corner law; #8004
+(`6de34919a2a3ef09198c4149906664acfda0d195`, 114 paths) extends the autonomous
+Record apparatus. Both still name their original uncorrected parent branches;
+review must use current-main parent corrections and preserve them on integration.
+The new arrivals explain the live count of 202 after 54 original closures.
+
+The admissibility reviewer is checkpointing the curved unit's actual reserved
+Block105 dependency and possible self-contained conditional salvage, then
+reviewing #8003 with its existing parent context. Reserved source cannot enter
+through copied helpers or raw ancestry; no full curved-unit PASS is claimed.
+#8004 is queued for independent review. Light-germ F1-F8 corrections are in
+progress with a separate author; the original reviewer owns confirmation.
+
+See `backlog_evidence/wave2` for the complete landed source map, gate logs'
+hashes and closure receipts. Across two landing batches: two full validation
+runs, zero integration retries, no formal audit or status application.
+The reviewed coordinator-coverage clarification is in `AGENTS.md` and
+`backlog_evidence/coordinator-efficiency`; it preserves all independent review
+and integration gates while avoiding a duplicate identical full-body reading.

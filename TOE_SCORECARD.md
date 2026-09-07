@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
 Verified source/status snapshot: 2026-09-07, main
-`2d0f551dcd8bd444daee85b97811cda53da0661e`. This is a planning map, not
+`a8f84aaad75fdcb790ba6ba094e4275e237d9a5a`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -16,8 +16,8 @@ finite additivity and I(empty)=0. Older proofs requiring those clauses need
 an explicit supplier. README paraphrases and old skills are not substitutes.
 
 The tracked ledger contains 4,475 rows: 4,105 non-meta science rows and 370
-meta rows. The latest three source notes have not been added to the applied
-ledger: mechanical validation generated three unaudited rows locally, then
+meta rows. The latest seven source notes have not been added to the applied
+ledger: mechanical validation generated seven unaudited rows locally, then
 stripped those generated files. No audit status was applied. Every tracked science row has audit_status and effective_status
 `unaudited`. Counts were computed from every tracked shard; see
 [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
@@ -29,13 +29,13 @@ planning refresh. Candidate dependencies retain their open conditions.
 
 ## Current open-work interfaces
 
-The complete [open-PR inventory](OPEN_PR_INVENTORY.json) pins 204 current open heads and
+The complete [open-PR inventory](OPEN_PR_INVENTORY.json) pins 202 current open heads and
 changed-file sets. These entries locate evidence; they do not assert that
 all source has been reviewed. The campaign record tracks actual inspection.
 
 | Interface | Open evidence to inspect | Exact next question |
 |---|---|---|
-| Local admissibility and formation | #7998 → #7999 → #8000 → #8002; campaign formation note | A supplied iid-priority Z3 formation process and static/formation discriminator are now independently checked. Which law/mechanism physics supplies remains open. |
+| Local admissibility and formation | #7998/#7999/#8000/#8002 corrected source now on main; new #8003 and campaign formation note | A supplied iid-priority Z3 formation process and static/formation discriminator are now independently checked. Which law/mechanism physics supplies remains open. |
 | Record matter and energy apparatus | #7983/#7996/#8001 reviewed source now on main; campaign finite-patch note remains a checkpoint | Finite-patch approximation now has explicit conditional channel, boundary-energy and cap bounds. Supply spatial battery communication, preparation and autonomous occurrence. |
 | Finite-spin electromagnetic response | #7941/#7943/#7945/#7946/#7952/#7953/#7955, then #7963/#7966; campaign source note | Independent checks confirm a source mismatch. Repair the uniform-K/UK interpretation, define the flux-sector target, then resolve estimator and infrared control. |
 | Conditional Maxwell dynamics | #7976/#7980/#7984 and their source chain | Which dynamics-class, payload, support and conservation clauses are derived, and which supplied? |

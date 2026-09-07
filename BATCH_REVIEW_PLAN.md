@@ -6,7 +6,9 @@ Independent examination of surviving source claims still precedes landing.
 
 ## Actual backlog
 
-After completed draft triage: 204 open PRs, zero drafts after the first science landing and consolidation (21 closed, 16 ready).
+Current refresh: 202 open PRs, zero drafts. Of the original 254, 21 draft PRs
+closed, seven science PRs landed and closed, and 26 duplicates consolidated;
+16 drafts became ready. Two new successors (#8003/#8004) then opened.
 The ancestry counts below describe the original snapshot, not this refresh.
 
 The snapshot contains 254 PRs. 129 name another open branch as their GitHub
@@ -43,7 +45,8 @@ multiple dependent PRs. Require:
 This changes the review unit and placement of repeated mechanical work, not
 which scientific claims require scrutiny. The executable seven-file contract has now passed independent adversarial
 review and same-session confirmation after a successive-manifest-conflict
-repair. It is now current main at `2d0f551dcd8bd444daee85b97811cda53da0661e`.
+repair. It landed at `2d0f551dcd8bd444daee85b97811cda53da0661e` and remains
+unchanged in current main `a8f84aaad75fdcb790ba6ba094e4275e237d9a5a`.
 
 ## Integration
 
