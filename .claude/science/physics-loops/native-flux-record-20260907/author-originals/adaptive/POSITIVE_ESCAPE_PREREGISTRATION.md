@@ -1,0 +1,7 @@
+# Native feedforward physical-Record escape, frozen before fixture
+
+Use12path vertices/modes ordered(a0,b0,c0,d0,a1,b1,c1,d1,q,qbar,r,anchor). Prepare data bits freely, q0,qbar1,r=parity(data),anchor1; total parity is even. The path has11actual BKSF edge qubits; physical Z_j is prefix occupation parity throughmodej. The original boundary data are unrecorded prepared orthogonal code states, not arbitrary set labels or mutable old Records.
+
+Native event sequence: Record edges0,1,2,3 in that order, no intervening data hop. Four actual Record bits determine the four low occupations; edge3 is LSB. A supplied16-state finite controller determines q_target=low_parity XOR high_bit((a0+b0-c0-d0)mod4). If q_target1, apply exp[-i(pi/2)T_(8,9)] using the native whole hopping operator on edge8; otherwise do nothing. Record edge8. Its physical prefix parity is low_parity XOR high_parity XOR q_target, hence proposed MSB. Verify actual physical Pauli matrices rather than only CAR arithmetic.
+
+All old recorded edges must remain fixed and every selected edge a live bridge. The native hopping has physical support edges7,8,9, a bounded three-site term, not an asserted two-site nearest-neighbor gate. Native Hamiltonian selection, pulse timing, controller transition and record occurrence remain supplied. The ideal instrument is exact; an energy-conserving apparatus must be separately assessed and not inferred from the ideal truth table. No full Hilbert matrix beyond2048basis states; no genericToffoli.
