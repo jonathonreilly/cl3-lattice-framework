@@ -1,0 +1,3 @@
+# Root independent review attribution
+
+Parent message in the active campaign states that root fully read block25 source/helper and independently rederived the principal3 contraction score and fixed-subset saturating table; mathematics PASS. Root confirmed missing Type/status/claim/runner/import metadata and missing literal per_element/per_site/per_mode/per_block/lattice_wide, TOTAL and resource stdout in the actual5d316027 helper. Root authorized precisely these reporting repairs and exact count/resource guards, preservation of original bytes and all scientific JSON, and requested frozen port hashes before graph/full pipeline. This is a faithful record of the supplied review message, not an invented separately hashed proof memo or audit verdict.

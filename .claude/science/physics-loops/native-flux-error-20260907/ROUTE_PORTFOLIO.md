@@ -1,0 +1,3 @@
+# Actual calculation route
+
+The deterministic exterior-square contradiction suggested a robust score. Root derived Tr(T Lambda²A)<=1 from two sign cases for the eigenvalues of a Hermitian contraction. This yields a three-pair probability sum, then a vacuum/orientation argument gives the common-mixture four-test bound. Native independently reviewed the analytic proof and froze six rational spectra, a literal9mode dilation and mixture controls afterwards. Orbital cold review independently rederived the score and inspected the helper. No fictitious five-route no-go history or floating optimization occurred.

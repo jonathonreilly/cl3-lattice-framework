@@ -1,0 +1,1 @@
+First run passed all mathematical assertions but JSON emission failed: tuple eigenvalue triples were not recursively converted, leaving Fraction values. The original source is retained; the initial stdout file was empty, and no scientific JSON was emitted. Fix only extends recursive conversion from list to (list,tuple); no cases or arithmetic change.

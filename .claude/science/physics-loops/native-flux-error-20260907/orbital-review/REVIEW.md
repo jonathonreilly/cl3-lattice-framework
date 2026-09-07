@@ -1,0 +1,36 @@
+# Block25 cold review: quantitative native one-shot error
+
+Reviewed source SHA256 f2004149280c6d8ef2a8df2e173fa71d5168838992a5b4ea3a8a8dfefa5f3f90 and helper SHA256 5d316027423caeaafabf551036662ecd4dc3554b1a718c505ce0e20d5ea623b1 in native robust-one-shot-review/staging. Also read the prospective FINITE_CHECK_CONTRACT. This reviewer authored the underlying encoding/one-event capacity result but did not author this quantitative contraction proof or its helper; that background is disclosed. Verdict: mathematical proof and scientific helper scope PASS. Two narrow output/registration items should be repaired at canonical integration; no scientific formula or fixture change is needed.
+
+## Independent analytic check
+
+On the nine-mode even code every coordinate two-particle input is legal. A number-conserving Gaussian unitary followed by the declared bridge measures eta Gamma(R), R Hermitian unitary. For the three coordinate modes0,1,2, its principal block A is a Hermitian contraction: -I<=R<=I implies -I3<=A<=I3. The three coordinate pair amplitudes are exactly the corresponding principal minors of R, hence the diagonal entries of Lambda²A. The full three-pair compression also equals Lambda²A because every exterior entry uses only those coordinate indices. No eigenvector/deterministic-output assumption is involved.
+
+In pair order01,02,12 the actual target signs are(-,+,+). Thus S=Tr B-2 B_01,01 <= Tr B-2 lambda_min(B), B=Lambda²A. Exterior eigenvalues are all pair products of the real eigenvalues of A. For same-sign absolute eigenvalues0<=a<=b<=c<=1, the upper expression is ac+bc-ab<=a+b-ab=1-(1-a)(1-b)<=1. For mixed signs, simultaneous sign reversal leaves all pair products invariant; the eigenvalues may be written -a,b,c with0<=b<=c<=1 and0<=a<=1. The minimum product is -ac, and the upper expression is a(c-b)+bc<=c-b+bc<=c<=1. Boundary zeros cause no discontinuity. This independently checks the optimization over the entire Hermitian-contraction class, not just six sampled spectra.
+
+Each binary wrong probability is(1-t expectation)/2. Therefore the three-pair error sum is(3-S)/2>=1 for positive orientation. Negative orientation makes the vacuum wrong with certainty because Gaussian second quantization fixes it. Pair errors remain nonnegative. Every oriented rule therefore has four-test error sum>=1, and any common input-independent mixture preserves it. Worst error on those tests is>=1/4. A fixed positive orientation mixture retains mean pair error>=1/3. No error lower bound on every individual input is being inferred.
+
+## Actual instrument and battery domain
+
+The input code, parity reference and four test fluxes match the frozen native encoding exactly. The bridge rank may be fixed (e.g. rank4): the contraction inequality holds on a larger class, so that restriction cannot weaken the lower bound. Gaussian preprocessing is a declared enlargement of native path controls, not a derived universal local gate set. Known old-Record sign/outcome naming is included in eta, but the rule cannot depend on the unknown input or a selectively observed prior parity.
+
+The standard independent-ready full-line battery effect is a positive common Fourier mixture of incoming Gaussian conjugations of the bridge parity. Fuel scalars cancel. Thus the same convex inequality applies. Its use requires the same battery measure for every input; initially input-correlated preparation or extra battery/refusal readout falls outside it. Exact cap-safe agreement on all four tested states transfers the bound; generic truncated instruments do not. The source states all these qualifications. Multiple events and the existing controlled five-event positive construction are not obstructed.
+
+## Helper audit
+
+The declared41 scientific checks are the actual sum1+24+5+10+1: one rational Householder identity; four checks for each of six frozen spectra; five dilation/native/exterior checks; two checks for each of four rules plus two averaged-error checks; and one input-dependent oracle adverse control. The rational Householder is orthogonal since v*v=9. The last spectrum has complementary Pythagorean coordinates4/5,12/13,15/17. The block reflection [[A,S],[S,-A]] squares toI since A and S share the same orthogonal diagonalization and each paired squared eigenvalue sums to1. Its six-dimensional block has three negative eigenvalues; adding(-,+,+) gives exactly four. Trace1 together with Hermitian involution on nine modes independently fixes that rank.
+
+The36-by36 exterior matrix orthogonality check tests every column, accurately described as one aggregate check rather than36 separately named checks. The four diagonal rank4 reflections yield errors on pair01, pair02, pair12 and vacuum respectively. Their uniform common mixture saturates1/4 only on this subset; the first three uniformly saturate1/3 on the three pairs with positive orientation. This is neither a global256-input minimax calculation nor a claim that a specific physical nearest-neighbor schedule realizes all Gaussian rules. The oracle control violates the explicitly common-mixture premise, as intended.
+
+The source preserves derivation-before-finite-contract timing and the serialization-only failure. Neither an after-the-fact contract nor the finite exact matrices are presented as proving the analytic universal inequality.
+
+## Narrow canonical-port repairs
+
+1. The staged source frontmatter currently has only claim_type/bodyType/status, without claim_id, runner, explicit upstream_dependencies, the body **Type:** line or the usual actual_current_surface_status: conditional-support block. Add these registration fields at port; the two real scientific parents are already correctly linked in its prose. Do not add an audit verdict.
+2. The runner enforces upper time/RSS bounds and JSON finiteness, but lacks the literal AUDIT_TIMEOUT_SEC=180 declaration used by runner_cache; its RSS guard also accepts zero. Add the declared timeout and require0<rss<180 with0<=seconds<180. Its final TOTAL assertion only restates its own accumulated count; optionally freeze TOTAL==41 and exact group counts, and reject duplicate names in check, so the explicit finite-check contract is mechanically bound. These are interface-hardening changes, not flaws in the current41 checks or mathematical result.
+
+No additional scientific mutation family or optimization experiment is needed to accept the source proof. Preserve the reviewed bytes before these canonical-only repairs and refresh their identity receipts.
+
+## Additional root-observed output contract, independently confirmed
+
+The actual reviewed helper5d316027 emits generic N5 lines, not the literal per_element/per_site/per_mode/per_block/lattice_wide resolution labels expected by the canonical evidence interface. Its first line embeds41 but there is no explicit TOTAL line, and default output does not display measured time/RSS. Canonical port must add those five literal resolution fields, explicit TOTAL PASS/FAIL count and resource line, retaining the present scientific domain statements. This is an output/registration repair, not a mathematical failure. The JSON already contains the underlying raw counts and resources; preserve its scientific fields and frozen fixtures through the interface change.
