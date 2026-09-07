@@ -1,0 +1,9 @@
+This block applies an explicitly imported Yarotsky stability theorem to the supplied electric-dominated compact SU(3) lattice Hamiltonian. It gives a gap of at least2/a at sufficiently small av, uniformly in volume and separately across full local Peter–Weyl cutoffs R>=1. A declared penalty on unused qubit-code states extends the finite-register statement.
+
+The threshold av<(4/3)min(c1,1/(2c2)) is existential: the positive stability constants are not numerically certified. The external stability theorem is a load-bearing mathematical import. The result does not select a framework-native action, physical coupling/time, a spatial continuum, or an arbitrary-coupling gap.
+
+The source preserves the clarified all-label proof and separately frozen cutoff/penalty extensions. Root and primary reviews pass. The exact runner has35 named finite geometry/scalar checks, including seven prospective supplement checks; it does not prove the imported theorem numerically. Its canonical stdout cache was actually executed and staged.
+
+Stacked on #8023. [Theorem](docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md), [certificate](scripts/gauge_wilson_electric_dominated_volume_uniform_gap_check_2026_09_07.py), [handoff](.claude/science/physics-loops/volume-uniform-gap-20260907/HANDOFF.md), [trace](.claude/science/physics-loops/volume-uniform-gap-20260907/TRACE_GATE.md), [imports](.claude/science/physics-loops/volume-uniform-gap-20260907/ASSUMPTIONS_AND_IMPORTS.md), [validation](.claude/science/physics-loops/volume-uniform-gap-20260907/FINAL_VALIDATION.md).
+
+Full pipeline9697e49cb959 and strict lint passed. All twelve affected claims are forensic-evidence ready with zero evidence/control failures against pinned b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92. Generated audit authority is removed after receipt capture. Status remains conditional-support; no audit verdict or merge is performed.

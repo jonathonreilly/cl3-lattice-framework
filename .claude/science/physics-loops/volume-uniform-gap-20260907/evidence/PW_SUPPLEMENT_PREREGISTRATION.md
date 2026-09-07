@@ -1,0 +1,5 @@
+# Prospective finite-Peter–Weyl supplement
+
+Root supplied the extension candidate after the original28-control result was frozen. Before new checks: apply the same dimension-independent stability import independently for each fixed local cutoff R>=1, using block32's full matrix-coefficient irrep projector and exact Gauss action. Derive the unchanged onsite gap1 and compressed perturbation norm. Do not infer simultaneous R/volume convergence.
+
+Five additional exact controls are frozen: enumerate full per-link dimensions and minimum scaled electric energy at R=1,2,3 (expected19,155,805 and gap1); R=0 has only the constant and no excited vector; at R=1, a five-qubit embedding has thirteen unused levels, and assigning all of them inert zero dynamics yields ground multiplicity14 rather than1. This last control limits the gap claim to the encoded carrier, not an unpenalized entire qubit register. Preserve the original28 checks and raw unchanged; label the added five separately, canonical TOTAL33 if all pass. No finite matrix approximation proves the imported stability theorem.

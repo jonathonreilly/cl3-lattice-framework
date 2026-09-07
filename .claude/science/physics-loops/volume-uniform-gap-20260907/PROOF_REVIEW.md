@@ -1,0 +1,2 @@
+# Proof review
+Primary applicability and clarified untruncated mapping review: evidence/PRIMARY_CLARIFIED_PROOF_REVIEW.md, hash c5953f7eb7d01f8afe7d27a23b0f69aced95558eab00987f8923bc91ebeaf615. Root independent derivation is preserved and separately credits the native padding candidate. The original all-label omission and correction are retained. This review is not a ratified audit. Independent changed-section review of finite-PW and penalty supplements is still pending; no canonical mathematical PASS is claimed for those pending additions here.

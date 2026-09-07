@@ -1,0 +1,7 @@
+# Prospective boundary and assumption check contract
+
+Root hypothesis, before new finite checks and before native34 independent proof: an explicit map of the infinite cubic SU3 link Hamiltonian to the hypotheses of Yarotsky's primary math-ph/0411042 Theorems1–3 yields a sufficiently-small-av uniform lattice gap. This imports an established mathematical stability theorem and does not independently reprove it or derive the Wilson action from Record axioms.
+
+Map three outgoing links to each Z3 cell, kinetic rescaling a/4 gives onsite gap1, three centered plaquettes per anchor give local norm<=3av/4 on common shape{0,e1,e2,e3}. Use the theorem's exact common-anchor empty-boundary family; reject equality with every usual open physical box at its boundary. Verify actual plaquette registers, common support, number of missing boundary terms, all-label onsite Casimir lower bound and volume-independent local perturbation norm. No floating fit supplies c1,c2 or a numerical coupling threshold. Independently prove gauge invariant ground/physical restriction and inherited GNS gap, carefully distinguish finite-volume uniformity from a spatial continuum or arbitrary-coupling gap.
+
+Adverse controls: global perturbation norm grows with volume and cannot replace local norm; a face supported on three cells can survive when the fourth common-shape cell is absent, so naive standard-open-box identification is false; v fixed with a->infinity exits the small-av domain. If source assumptions fail, retain an honest literature bridge/boundary rather than force a theorem.

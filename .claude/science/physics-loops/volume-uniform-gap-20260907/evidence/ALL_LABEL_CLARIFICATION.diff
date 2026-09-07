@@ -1,0 +1,21 @@
+--- frozen_a8921b35
++++ clarified_proof
+@@ -1,8 +1,8 @@
+ # A conditional volume-uniform electric-dominated gap for the actual compact SU(3) plaquette Hamiltonian
+
+-This is an application of an external stability theorem, not a new proof of generic gap stability. The supplied compact Hamiltonian and its trace convention come from block29. The fixed lattice spacing, a>0, v>=0 and mathematical time remain supplied. Put u=av. No spatial-continuum or arbitrary-coupling assertion is made.
++This is an application of an external stability theorem, not a new proof of generic gap stability. The supplied compact Hamiltonian and its trace convention come from block29. The lattice remains fixed. Here a>0 is the supplied temporal-scaling kinetic parameter from block29, not a spatial lattice spacing; v>=0 and mathematical time also remain supplied. Put u=av. No spatial-continuum or arbitrary-coupling assertion is made.
+
+-## 1. Audited external import
++## 1. Explicit mathematical import
+
+ Source: D.A. Yarotsky, *Quasi-particles in weak perturbations of non-interacting quantum lattice systems*, arXiv:math-ph/0411042v1, https://arxiv.org/pdf/math-ph/0411042. The assumptions and Theorems1–3 appear on printed pages2–4. They allow infinite-dimensional local Hilbert spaces, unbounded nonnegative selfadjoint onsite operators with a unique zero vector and gap at least1, and bounded selfadjoint perturbations of a fixed finite support range. The finite-volume restriction is exactly the whole-range inclusion rule in equation(3). The constants c1,c2 depend only on that range. Theorem1 supplies a unique finite-volume ground and excitation gap at least1-c2 epsilon when epsilon=sup||phi_x||<c1. Theorems2–3 supply the thermodynamic ground-state limit and its GNS Hamiltonian with the same gap.
+
+@@ -12,7 +12,7 @@
+
+ At x in Z^3 take H_x=L2(SU3)^tensor3, with factors U_(x,i), i=1,2,3, representing the positively oriented links from x to x+e_i. Every cubic-lattice oriented link appears once. This is a regrouping of link Hilbert spaces, not a restriction to class functions or gauge singlets at each cell.
+
+-In the trace-orthonormal convention of block29, K_e=(3/(2a))(-Delta_e). The fundamental Casimir is8/3, so a single link has its unique constant ground and first nonzero energy4/a. Consequently
++In the trace-orthonormal convention of block29, K_e=(3/(2a))(-Delta_e). The all-representation Casimir result in block30, Section2, gives C(p,q)=(2/3)(p²+pq+q²+3p+3q), hence E(p,q)=[p²+pq+q²+3p+3q]/a for every p,q>=0. For a nonzero label this polynomial is at least4, with equality only at (1,0) and (0,1): it is strictly increasing under either coordinate increment, and those are the two minimal nonzero labels. Thus no unexamined representation lies below the fundamental/antifundamental energy. A single link has its unique constant ground and first nonzero energy4/a. Consequently
+
+  h_x=(a/4)sum_i K_(x,i)=(3/8)sum_i(-Delta_(x,i))
