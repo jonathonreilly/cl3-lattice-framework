@@ -1,0 +1,3 @@
+# Review and port chronology
+
+Root derived the analytic inequality before the finite-check contract, then native independently reviewed it. Frozen canonical-source precursor f2004149280c6d8ef2a8df2e173fa71d5168838992a5b4ea3a8a8dfefa5f3f90 and helper5d316027423caeaafabf551036662ecd4dc3554b1a718c505ce0e20d5ea623b1 are preserved in native-originals/staging. Orbital cold review0e5cad0d942a6a1b1d910ba28f1fde7090e2d62d330e96bec845a001bf199ca7 passed math and identified reporting/registration repairs; its initial review is also retained. Root independently rederived the proof and inspected source/helper, confirming these repairs. Canonical changes are metadata, exact count/uniqueness/resource guards and stdout labels only; no scientific fixture changes.

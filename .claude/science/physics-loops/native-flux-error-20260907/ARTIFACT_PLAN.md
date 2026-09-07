@@ -1,0 +1,3 @@
+# Canonical evidence
+
+One source and one primary exact helper. TOTAL41 is now bound to exact groups1 geometry+24 contraction+5 native+10 mixture+1 adverse; duplicate check names are rejected. The six spectra, rational Householder,9mode reflection,36 exterior columns and complete four-test errors are unchanged. The output contract adds literal resolution labels, TOTAL and time/RSS; it declares180seconds and requires positive RSS below180MiB. Pure JSON preserves all scientific fields. Canonical cache must be actually executed and staged before generated cleanup. No live companion or helper-map change is needed.

@@ -1,0 +1,3 @@
+# Quantifiers and preserved failure
+
+This is a one-shot native-sign bound, not a compiler or apparatus impossibility. Intermediate parity conditioning, adaptive multiple events, nonquadratic controls, input-correlated apparatus and different answer observables change the class. A common mixture cannot choose its rule according to the unknown label; the explicit oracle control violates this premise. Four-test saturation is not global256-input tightness. The only helper failure was tuple-held Fraction JSON serialization after assertions passed; its original source and account are preserved without scientific retuning. Heavy universal-negative readiness NOT PASS and not claimed.
