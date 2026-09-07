@@ -1,10 +1,13 @@
 # Faster review and integration of open science
 
-Planning proposal, 2026-09-07. The owner wants the open science integrated
+Reviewed candidate procedure, 2026-09-07; first combined validation in progress. The owner wants the open science integrated
 more efficiently and defers formal audit until a solid TOE.
 Independent examination of surviving source claims still precedes landing.
 
 ## Actual backlog
+
+After completed draft triage: 233 open PRs, zero drafts (21 closed, 16 ready).
+The ancestry counts below describe the original snapshot, not this refresh.
 
 The snapshot contains 254 PRs. 129 name another open branch as their GitHub
 base. Actual Git history yields 144 nearest-open-head ancestry edges and
@@ -14,9 +17,9 @@ or an exhaustive ancestry proof: the object store is shallow. Unknown
 merge-bases need recovery, not an empty-delta assumption. The 97-member group must be split
 by coherent arguments and includes owner-reserved material.
 
-The current review-loop batches only the landing tail. It still requires
+The previous review-loop batched only the landing tail. It required
 per-PR review, per-PR full pipelines, and another full pipeline on the batch;
-it excludes stacked PRs from sharing a batch. Eight components can therefore
+it excludes stacked PRs from sharing a batch. Eight components could therefore
 require nine full pipeline runs before retries, despite repeated context.
 
 ## Proposed review unit
@@ -38,9 +41,10 @@ multiple dependent PRs. Require:
    This validation does not invoke a scientific auditor or assign a verdict.
 
 This changes the review unit and placement of repeated mechanical work, not
-which scientific claims require scrutiny. Amend and adversarially check the
-executable review contract before using this alternative to its current
-per-PR pipeline requirements.
+which scientific claims require scrutiny. The executable seven-file contract has now passed independent adversarial
+review and same-session confirmation after a successive-manifest-conflict
+repair. It is included in the first exact combined landing candidate; it is
+not yet current main.
 
 ## Integration
 
@@ -52,7 +56,7 @@ exact tree. If main moves, preserve current science and refresh the affected
 integration evidence. Close a constituent PR only after its accepted science
 is verified on main and its disposition recorded.
 
-Do not make one giant batch of 254 PRs. Avoid arbitrary waiting once a useful
+Do not make one giant batch of the whole backlog. Avoid arbitrary waiting once a useful
 checked batch is ready. No batch operation promotes audit status.
 
 ## Initial groups
