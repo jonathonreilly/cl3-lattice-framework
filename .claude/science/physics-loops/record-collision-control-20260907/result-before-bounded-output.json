@@ -1,0 +1,136 @@
+{
+  "certificate": {
+    "delta": "1/320",
+    "Lambda": "3",
+    "T": "1",
+    "collision_budget": "1/100",
+    "local_coefficient": "8643/160",
+    "collisions": 5402,
+    "collision_upper": "8643/864320",
+    "ancilla_qubits_per_collision": 7,
+    "total_storage_plus_ancilla_qubits": 37862,
+    "separate_finite_battery_upper": "221/2240",
+    "combined_upper": "1217/11200",
+    "commutator_upper": "3/80",
+    "splitting_coefficient": "3/160"
+  },
+  "rational_assertions": 14,
+  "malformed_controls": [
+    "dropped row",
+    "NaN error",
+    "Inf residual",
+    "swapped fixtures",
+    "false original claim",
+    "wrong supplement commutator",
+    "wrong energy residual",
+    "wrong error",
+    "wrong hash",
+    "wrong resource",
+    "strict JSON {\"a\":1,\"a\":2}",
+    "strict JSON {\"a\":NaN}",
+    "strict JSON {\"a\":Infinity}"
+  ],
+  "native_witness": {
+    "original_commuting_fixture": {
+      "checks": 18,
+      "worst": 5.329097002610779e-15,
+      "system_dimension": 72,
+      "unitary_dimension": 288,
+      "rows": [
+        {
+          "h": 0.04,
+          "dissipative_trace_norm_error": 0.0005178843017615524,
+          "split_full_trace_norm_error": 0.0005178843017617774
+        },
+        {
+          "h": 0.02,
+          "dissipative_trace_norm_error": 0.0001313900429847006,
+          "split_full_trace_norm_error": 0.0001313900429849842
+        },
+        {
+          "h": 0.01,
+          "dissipative_trace_norm_error": 3.3089657094560487e-05,
+          "split_full_trace_norm_error": 3.308965709514472e-05
+        }
+      ],
+      "original_jump_commutator": 2.471883660883624e-15,
+      "refusal_probability": 0.02255755146465527,
+      "seconds": 0.04916233298717998,
+      "rss_MiB": 94.328125,
+      "source_sha256": "8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5",
+      "deleted_edge": 0,
+      "noncommuting_control_detected": false
+    },
+    "separately_preregistered_noncommuting_supplement": {
+      "checks": 18,
+      "worst": 5.329097002610779e-15,
+      "system_dimension": 72,
+      "unitary_dimension": 288,
+      "rows": [
+        {
+          "h": 0.04,
+          "dissipative_trace_norm_error": 0.0005178843017618032,
+          "split_full_trace_norm_error": 0.0005510939586005912
+        },
+        {
+          "h": 0.02,
+          "dissipative_trace_norm_error": 0.00013139004298473714,
+          "split_full_trace_norm_error": 0.00013976036417180185
+        },
+        {
+          "h": 0.01,
+          "dissipative_trace_norm_error": 3.308965709459446e-05,
+          "split_full_trace_norm_error": 3.519076586611407e-05
+        }
+      ],
+      "original_jump_commutator": 0.333333333333334,
+      "refusal_probability": 0.3333333333333329,
+      "seconds": 0.0497754999960307,
+      "rss_MiB": 102.578125,
+      "source_sha256": "8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5",
+      "deleted_edge": 2,
+      "noncommuting_control_detected": true
+    },
+    "parameters": {
+      "hopping01": 1.0,
+      "hopping23": 0.47140452079103173,
+      "fuel_delta": 1.0,
+      "gamma": 1.0,
+      "battery_centers": [
+        0.5,
+        1.5,
+        2.5
+      ],
+      "cap": 3.0,
+      "grid_spacing": 1.0,
+      "particle_number": 2,
+      "state": "original source ground state pulsed by exp[-i(.37 n0+.23 n2)], uniform real battery superposition",
+      "refusal_numerical_null_cutoff": 1e-10
+    },
+    "source_sha256": "8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5",
+    "dependencies": {
+      "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py": "fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af"
+    },
+    "resources": {
+      "timeout_seconds": 180,
+      "rss_limit_MiB": 180,
+      "blas_threads": 1
+    },
+    "seconds": 0.09975816600490361,
+    "rss_MiB": 102.578125,
+    "discriminator": "Original edge01 deletes unit hopping; irrational23 spectator survives, so the attempted nonzero original-free jump commutator control fails. The separately preregistered post-inspection supplement deletes irrational23 and detects it. Both fixtures are preserved.",
+    "scope": "Actual native N2 square, three battery cells, one completed edge event and 288-dimensional collision unitary; not an all-path cube or 48-qubit simulation. Trace errors are unhalved trace norms."
+  },
+  "dependencies": {
+    "scripts/native_edge_record_finite_collision_check_2026_09_07.py": "8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5",
+    "scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py": "fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af"
+  },
+  "source_sha256": "81d7923949b96a0d7e74d9d7e71f52b134359d69304f0d67b5d80a76d9a761fa",
+  "resources": {
+    "timeout_seconds": 180,
+    "rss_limit_MiB": 180,
+    "blas_threads": 1
+  },
+  "seconds": 0.2693457920104265,
+  "rss_MiB": 19.90625
+}

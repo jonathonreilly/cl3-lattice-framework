@@ -1,0 +1,11 @@
+# Three-site constructive result
+
+The frozen sequence passes exact symbolic Pauli and sparse-state checks. Its four controls commute with the modeled total energy, old Record Z and head number as complete sums. Polynomial exponential and unitarity identities are exact. Intermediate states equal the preregistered states and retain total energy5/2. Final output is exactly i times the accepted-plus target: fuel is lowered, battery rises1/2 to5/2, head moves and the label is01. Removing the Y+ conditioning from the first exchange fails energy conservation.
+
+The first Hamiltonian has Pauli weight3; subsequent controls have weights2,2,1. Together with the prior at-most-two-site common invariant, this establishes a sharp support threshold for this particular state-transfer objective, fixed encoding and supplied complete-graph energy-preserving control family. It is not a full coherent instrument or nearest-neighbor implementation and does not derive any control primitive, schedule or fresh Record formation law.
+
+The native reviewer independently checked the phase i, all four pulse formulas and the uncontrolled-exchange failure. It also proved that arbitrary additional zero-energy spectator ancillas do not remove the two-site obstruction: battery flips paired with an ancilla remain nonresonant, and the resonant matter/fuel-battery pair still cannot depend on the omitted third spectator. Thus the active-energy charge commutes with every extended two-site control and its Lie algebra. This statement assumes K is unchanged except tensoring identity on ancillas; energetic mediators or changed interactions are outside it.
+
+The standalone native_reduced_cell_exact_commutant.py has no file dependencies, explicit support/coordinate/constraint metadata, readable default and strict JSON output, source and canonical exact-basis hashes, and unchanged180second/180MiB contracts. Its four bases, ranks, nullities and invariants compare exactly equal to the original frozen result. The old source/result are preserved. three_site.py reuses only the old exact Pauli arithmetic/fixture module, declares its hash, and uses independent exact symbolic polynomial/state evaluation for the constructive sequence.
+
+Three-site runner reported 0.193446seconds and 62.422MiB.
