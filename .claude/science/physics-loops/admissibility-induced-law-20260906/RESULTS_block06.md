@@ -176,3 +176,35 @@ Each mutated run reports `TOTAL: PASS=33 FAIL=1` with the single failing check i
 - Supervisor line-by-line review of the primary's runner (1148 lines) and note (546 lines): the enclosure code read against the contract's four steps (the weighted quotient, the upward-rounded square roots at scale 10^80, `δ = μ − λ_2bound`, `ε = √2·r/δ`, the 2ε bound on both statistics), the decimal-label scan (F5), the classical-name placement (F4). Fold 1: the third fence reworded without the classical names (the runner's constant and its F4 exception removed), the degree-111 control attribution, "about the same size".
 - Refuting checker (Opus 5, disjoint machinery; `CHECKER_block06_findings.md`): PASS-NO-BLOCKER, nothing refuted; every quantitative literal reproduced, including all eight enclosures to 22 digits from an independent full-state route at width 4; three wording findings folded (fold 2: the orbit-sum justification of the innermost pair, the width-4 factor multiplicities, one lay phrase; the mirror-count verification attributed to the checker).
 - Final certificate: `TOTAL: PASS=34 FAIL=0`; runner sha256 `9b05b6d8b81fdf529885ac1e0a31922557889e255260ac6e9f17e600c875d315` (unchanged by the note-only folds); input fingerprint `48aebbe9db08ce9d78d0373eeda8f381d035594ab280c4bb46f7520f4c4bbc39`; exit 0; elapsed 79.6 s; unmutated stdout 5,945 characters; note 551 lines, vocab lint 0; 26 mutations, census at this runner sha (table below). Gates on the final tree: pipeline PASS (`graph_delta=acknowledged`, two passes), changed-evidence `checked=6 failures=0`, audit_lint strict OK, diff --check clean, manifest 4766 nodes, 11870 edges (+1 node).
+
+## Final census (26 mutations, one helper invocation each, 4 in parallel; expected/observed read from raw stdout at the final runner sha 9b05b6d8…)
+
+| mutation | expected | observed | FAIL count | failing checks | exit | in-family |
+|---|---|---|---|---|---|---|
+| `orbit_count_wrong` | B | B | 1 | B1 row | 1 | yes |
+| `commutation_broken` | B | B | 1 | B2 T(g | 1 | yes |
+| `sector_full_mismatch` | B | B | 1 | B5 sec | 1 | yes |
+| `quotient_row_identity_broken` | B | B | 1 | B3 Q r | 1 | yes |
+| `self_adjointness_broken` | C | C | 1 | C1 w_O | 1 | yes |
+| `krylov_dimension_off` | C | C | 1 | C4 Kry | 1 | yes |
+| `dependency_not_verified` | C | C | 1 | C4 Kry | 1 | yes |
+| `cw_interval_forged` | C | C | 1 | C3 rat | 1 | yes |
+| `charpoly_factor_mismatch` | C | C | 1 | C5 W=4 | 1 | yes |
+| `largest_root_outside_interval` | C | C | 1 | C7 d = | 1 | yes |
+| `trace_bound_forged` | D | D | 1 | D1 fou | 1 | yes |
+| `residual_gap_ignored` | D | D | 1 | D1 fou | 1 | yes |
+| `residual_forged` | D | D | 1 | D1 fou | 1 | yes |
+| `s_enclosure_contains_formation_value` | D | D | 1 | D3 no | 1 | yes |
+| `finite_n_sequence_shuffled` | D | D | 1 | D4 sec | 1 | yes |
+| `boundary_dependence_forged` | D | D | 1 | D5 end | 1 | yes |
+| `resultant_factor_wrong` | D | D | 1 | D7 d < | 1 | yes |
+| `w2_w3_literals_off` | D | D | 1 | D6 wid | 1 | yes |
+| `field_vector_not_eigen` | D | D | 1 | D7 d < | 1 | yes |
+| `separation_sign_flipped` | E | E | 1 | E1 s - | 1 | yes |
+| `ratio_bound_too_small` | E | E | 1 | E4 lam | 1 | yes |
+| `inner_edge_order_flipped` | E | E | 1 | E2 s_i | 1 | yes |
+| `claim_plane_limit` | F | F | 1 | F2 the | 1 | yes |
+| `claim_monotone_in_W` | F | F | 1 | F2 the | 1 | yes |
+| `claim_washes_out` | F | F | 1 | F2 the | 1 | yes |
+| `claim_classical_name_in_theorem` | F | F | 1 | F4 cla | 1 | yes |
+in-family: 26/26
