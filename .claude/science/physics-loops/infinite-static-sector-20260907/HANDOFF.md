@@ -9,3 +9,7 @@ Parent38 published atb2bb6c866d173eca1c29cbf7e82386dbad9b84f8, PR8028. Root cano
 ## Completed root validation
 
 Root final port review and pipeline 5b096452caa0, strict lint and 17-claim readiness passed against b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92. See FINAL_VALIDATION.md and the pre-cleanup receipts. Actual stdout caches are staged. Review publication is the next action; no science merge or audit verdict is performed.
+
+## Draft publication
+
+Published draft PR8029 stacked on PR8028. Science commit 820fc31ebcdd3fa54bac442fe4089b8e5ff7dfbb. GitHub reports MERGEABLE/CLEAN; no check runs were listed at receipt time. The full local pipeline and strict/readiness checks passed as recorded. Exact worktree lock released. No merge or audit verdict.
