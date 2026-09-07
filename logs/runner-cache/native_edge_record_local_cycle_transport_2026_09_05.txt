@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/native_edge_record_local_cycle_transport_2026_09_05.py
+runner_sha256: 002bf0c89c5a331a9708c0ef5167d7d7d4f611c00c59642dc768f618492a2a0a
+input_fingerprint_sha256: d3219a61403899ffeb29b373bb7321a18042b1c247dec9017d1d65d7c6168538
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.56
+status: ok
+----- stdout -----
+PASS L0 endpoint-star scheduler: order=(0, 3, 5, 6, 9) adjacency_only=yes events=5
+PASS L1 native no-reset Record histories: final_branches=32 nonbridge_events=31 max_res=1.066e-13
+PASS L2 connected local prefixes: min_components=1 final_live_edges=7
+PASS L3 local continuity equation: max_operator_residual=0.000e+00
+PASS L4 transport survives every local prefix: min_live_edges_above_0.02=4 front_current_max=0.256277
+PASS L5 half-filled matter background remains viable: density=[0.125304,0.874696] min_E=-5.748932 min_fixedN_excess=0.582630
+PASS L6 one persistent scalar energy reserve: start=4.000000 final=1.677930 cap=8.000000 max_drift=0.000e+00 reset=no
+ROW step=1 edge=0 dwell=0.41 Jpre=+0.568950 Jpost=+0.035746 support=7 E=-5.905910->-5.748932 dE=+0.156978 battery=3.843022 rho=[0.1253,0.8747]
+ROW step=2 edge=3 dwell=0.37 Jpre=-0.080554 Jpost=+0.256277 support=6 E=-5.748932->-5.330961 dE=+0.417971 battery=3.425051 rho=[0.1993,0.8007]
+ROW step=3 edge=5 dwell=0.29 Jpre=+0.031440 Jpost=-0.005250 support=4 E=-5.330961->-4.768122 dE=+0.562839 battery=2.862212 rho=[0.3797,0.7097]
+ROW step=4 edge=6 dwell=0.23 Jpre=-0.000000 Jpost=-0.001859 support=6 E=-4.768122->-4.177400 dE=+0.590722 battery=2.271491 rho=[0.3892,0.6269]
+ROW step=5 edge=9 dwell=0.19 Jpre=+0.002007 Jpost=-0.030297 support=7 E=-4.177400->-3.583840 dE=+0.593560 battery=1.677930 rho=[0.3472,0.6035]
+SCOPE local endpoint-star scheduler with supplied oriented port order and phase pulse are finite dynamics; scalar battery is an exact resource ledger, not a quantum-battery or endogenous Record-formation derivation
+PASS L7 execution envelope: elapsed=2.25s timeout=180s rss=134.8MiB
+IDENTITY native_source=05bc527d2d865acc path=0-3-5-6-9 boost=0.70 no_fresh_state_reset=yes
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+
