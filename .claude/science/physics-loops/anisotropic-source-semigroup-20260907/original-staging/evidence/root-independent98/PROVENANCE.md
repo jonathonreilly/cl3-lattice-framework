@@ -1,0 +1,3 @@
+# Provenance and prospective scope
+
+Root proposed the uniform derivative/partition route to native at approximately18:52UTC, after the isotropic and anisotropic exact covariance calculations but before any uniform numerical experiment. Root then independently derived the crude exponent98 bound analytically, before reading native uniform work. No new numerical experiment has yet been performed. The next proof review must verify all losses, chart removal, normalization and compression-power domains. The deliberately large exponent200 is an analytic sufficient construction, not a fitted practical onset.
