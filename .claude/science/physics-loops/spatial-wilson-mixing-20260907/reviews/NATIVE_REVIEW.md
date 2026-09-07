@@ -1,0 +1,13 @@
+# Native cube-slab derivation cold review
+
+PASS on native spatial-wilson-seam/DERIVATION.md SHA256 c544e653bce6fc96db907bf4422e2d226d0e8167ab909bb134a75f051e531fe0. Independent graph preregistration, projector criterion, gauge-tree integral and positive-time bound were written in this directory before reading the author's full proof; messages exchanged disclosed the candidate common graph and constants.
+
+The source embedding is Haar-isometric and gauge invariant. The marked source factor can be stripped exactly on the full source class space via M0 I=I m0; this is not finite-section inverse stripping. At temporal coupling0 the actual tensor kernel is the constant projection, making the compressed operator |g><g|. No positive-temporal inverse is used at0.
+
+I independently reconstructed the tree of three bottom and four vertical links and the explicit remaining integral integral w(a)w(b)w(c)w(Wd^-1)w(abcd). Four Schur integrations give c_lambda^5/d_lambda^4. SU(3) inversion symmetry removes the orientation ambiguity; source dual coefficients are equal. Representation-ring positivity and the identity-value sum justify uniform character-series integration. The fundamental dimension factor is81, and the lower coefficient is(s/12)^5, not a missing factor2 or3.
+
+Both source characters are gauge singlets. Gauge projection does not forbid their mixing. An untouched source edge WOULD preserve its Peter–Weyl sector and force diagonality, but every source edge belongs to one of this cap's faces. This is only a sufficient diagonality criterion; merely touching all edges is not its converse. The author correctly calculates the cap instead of treating geometric coverage as proof.
+
+At positive temporal coupling the bound3exp(5s)(exp(12t)-1) follows directly from the ten spatial halfweights, twelve temporal plaquettes and character bound3. Independently certified exp5<149 by Taylor plus a geometric remainder; at s1,t10^-12 the perturbation10728/10^12 is less than1/20155392. Thus the claimed nonzero off-diagonal is rigorous at a supplied strictly positive anisotropic parameter. A positive scalar normalization or finite-row inverse positive local diagonal cannot make that entry vanish. No all-weight bounded inverse is inferred.
+
+The no-environment diagonal control c0(t)^8[c_lambda(t)/d_lambda]^4 is correct, with normalized a_lambda^4. Scope is honest: this is an existence counterexample for the stated Wilson/Haar/source map, not an isotropic result, beta6 approximation, physical action selection, or every-environment non-diagonality theorem. The static cube cap alone was old; using it in the actual rank-one temporal kernel and proving positive-time persistence is the new bounded connection. No correction required.
