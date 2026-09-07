@@ -1,0 +1,3 @@
+Norm approximation alone cannot control kinetic energy. Total potential norm would introduce forbidden ambient-volume cost; only touching compressed commutators are estimated. Restricted-sector minimum does not permit the link-vacuum replacement. Root displayed trace2delta normalization was inconsistent and corrected with originals retained. First scalar restricted-minimum control strengthened to actual2x2 matrix. No fabricated route families.
+
+Actual R1 trial energy exceeds the full-unitary exact4 cost. Its actual-energy acceptance succeeds but the crude v-only sufficient condition fails. Both are preserved as genuine adverse controls, with no fixture retuning.

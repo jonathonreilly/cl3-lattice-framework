@@ -1,0 +1,138 @@
+{
+  "N5_scopes": {
+    "lattice_wide": {
+      "checks": 2,
+      "scope": "restricted-ground premise adverse and generator convention discriminator; no numerical SU3 spectral validation"
+    },
+    "per_block": {
+      "checks": 3,
+      "scope": "sufficient and insufficient normalization budgets, positive denominator"
+    },
+    "per_element": {
+      "checks": 20,
+      "scope": "exact shell minimum for each R=1..20"
+    },
+    "per_mode": {
+      "checks": 6,
+      "scope": "exact nonzero compression commutator and sign/naive commutation adverse"
+    },
+    "per_site": {
+      "checks": 9,
+      "scope": "actual three cubic boxes: incidence, touching faces and distinct paths"
+    }
+  },
+  "TOTAL": 40,
+  "checks": [
+    "box2_maximum_four_faces",
+    "box2_touch_budget",
+    "box2_distinct_path",
+    "box3_maximum_four_faces",
+    "box3_touch_budget",
+    "box3_distinct_path",
+    "box4_maximum_four_faces",
+    "box4_touch_budget",
+    "box4_distinct_path",
+    "shell_R1",
+    "shell_R2",
+    "shell_R3",
+    "shell_R4",
+    "shell_R5",
+    "shell_R6",
+    "shell_R7",
+    "shell_R8",
+    "shell_R9",
+    "shell_R10",
+    "shell_R11",
+    "shell_R12",
+    "shell_R13",
+    "shell_R14",
+    "shell_R15",
+    "shell_R16",
+    "shell_R17",
+    "shell_R18",
+    "shell_R19",
+    "shell_R20",
+    "full_multiplications_commute",
+    "compression_commutator_identity",
+    "naive_compressed_commutation_rejected",
+    "wrong_compression_sign_rejected",
+    "projection_and_unitary",
+    "positive_face_norm_bound",
+    "R10_normalization_budget",
+    "R1_insufficient_budget_rejected",
+    "denominator_positive",
+    "restricted_ground_replacement_adverse",
+    "generator_normalization_discriminator"
+  ],
+  "compression_commutator": [
+    [
+      "0",
+      "-4/9",
+      "4/9"
+    ],
+    [
+      "4/9",
+      "0",
+      "-4/9"
+    ],
+    [
+      "-4/9",
+      "4/9",
+      "0"
+    ]
+  ],
+  "geometry": {
+    "2": {
+      "faces": 6,
+      "links": 12,
+      "max_incidence": 2,
+      "path": 3,
+      "touching": 4
+    },
+    "3": {
+      "faces": 36,
+      "links": 54,
+      "max_incidence": 4,
+      "path": 6,
+      "touching": 10
+    },
+    "4": {
+      "faces": 108,
+      "links": 144,
+      "max_incidence": 4,
+      "path": 9,
+      "touching": 16
+    }
+  },
+  "resource_limits": {
+    "rss_MiB": 180,
+    "seconds": 180
+  },
+  "rss_MiB": 59.5,
+  "scope": "Exact geometry, shell, budget and abstract compression controls; not a SU3 spectral trial or proof of the analytical bound.",
+  "seconds": 0.1820454590197187,
+  "shell_energies_R1_to20": [
+    4,
+    9,
+    16,
+    24,
+    34,
+    45,
+    58,
+    72,
+    88,
+    105,
+    124,
+    144,
+    166,
+    189,
+    214,
+    240,
+    268,
+    297,
+    328,
+    360
+  ],
+  "source_sha256": "2007377e37c26a7e2903332fe1c48388b6ac124bc95e7e71e3f9d6fcfb436433",
+  "theta_R10_a_v_d1": "8/105"
+}

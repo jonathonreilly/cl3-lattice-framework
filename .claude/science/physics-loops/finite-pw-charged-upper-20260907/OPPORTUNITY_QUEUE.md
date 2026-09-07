@@ -1,0 +1,1 @@
+General finite-cutoff upper energy bridge and one actual R1 case are closed within explicit premises. Repeated-link paths, nonunitary preparation/channel cost, charged lower bounds and infinite-volume charged-minimum convergence remain separate.

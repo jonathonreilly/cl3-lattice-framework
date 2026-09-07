@@ -1,0 +1,7 @@
+# Root block42 cold review
+
+Native complete proof55f5a4e9 froze before root completed proof224fa648 was read. The original root Section3 incorrectly combined Tr(T_A T_B)=2delta_AB with sum T_A²=8I/3. I identified this normalization inconsistency; primary independently identified it as well. Root preserved original bytes and changed only the trace normalization to delta_AB, yielding corrected proof9ef44bb2da9d373c72bc79fadf1c283fca6fe7d0fce64416df3c3a3a200913ce.
+
+PASS on the corrected proof. Independently checked: mixed replacement uses full-carrier minimality, not constrained singlet minimization; normalization is the9-component source Hilbert–Schmidt trace/3; actual finite PW functions give the required kinetic domain; row Casimir estimate and cross-term trace yield the stated constants; exact compression commutator has the displayed signs; actual face fusion kills all-interior leakage; only touching faces remain. Dividing the nonnegative numerator by q>=1-theta is legitimate. The resulting fixed-path energy estimate is uniform in ambient volume and tends to4d/a; no unbounded kinetic expectation was inferred from norm convergence.
+
+The correction changes a genuine displayed convention error, not the subsequent formulas, which already used the delta normalization. Root's exposed prospective candidate preceded both completed writeups; no blind-discovery claim is made. No other correction requested.

@@ -1,0 +1,7 @@
+# Prospective block42 contract
+
+2026-09-07. Root candidate and constants were exposed before this contract; no completed root proof has been read. Independently examine the actual finite full-irrep PW Hamiltonian H_R=P(K+V)P on the FULL link tensor carrier, with normalized ground Omega_R, supplied SU3 electric spectrum and 0<=V_f<=2v. At most four faces touch a link. R>=1, distinct-link path of length d; charged trial is the compressed actual transporter applied to the neutral physical ground, normalized in Hilbert–Schmidt color norm.
+
+Targets: volume-independent single-link ground kinetic bound8v; local top-shell leakage; genuine form-energy/Rayleigh control via kinetic and local potential commutators, with explicit acceptance denominator. Check all constants from SU3 derivatives and scalar/color trace. Reject any use of global ||V||, unrestricted finite energy from norm convergence, or a replacement trial confined incorrectly to a physical singlet sector. No claim for arbitrary R/d, repeated links, continuum, hardware implementation or unrestricted coupling physical ground.
+
+Falsifiers: failure of replacement in a constrained sector; loss of exact full-color trace identity; insufficient derivative regularity; hidden ambient-volume factor; face multiplication changing a link cutoff by more than one; invalid q normalization. Any exact checks will be separately declared and are support only. Freeze proof before reading root completed derivation; no canonical/repo edits before review.

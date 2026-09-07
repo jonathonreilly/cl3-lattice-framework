@@ -45,6 +45,7 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": ["scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"],
     'gauge_wilson_uniform_weak_continuum_correlation_boundary_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py'],
     'gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py'],
     'gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07': ['scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py'],

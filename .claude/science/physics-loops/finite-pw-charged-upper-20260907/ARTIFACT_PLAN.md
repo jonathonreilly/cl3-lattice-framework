@@ -1,0 +1,1 @@
+One bounded-theorem source retaining full native general proof and full root actual R1 proof. Two canonical helpers:40 exact geometry/shell/commutator controls and22 actual SU3 Haar/charged-energy controls. Both self-contained; no invented runtime file dependencies.

@@ -1,0 +1,7 @@
+# Root canonical port review: block42
+
+PASS for canonical source cbddff81440b3c199dd1bda76db586da489a99dc1dbfe8d192e3dc908646b51b. Read the preface, import and limitation statements and mechanically verified that the full native analytical proof55f5a4e9 and the full actual R1 proofddcf0e74 are retained verbatim. The40 abstract support controls and22 actual Haar controls are clearly distinguished.
+
+The preface identifies the limiting upper bound as the full-unitary path TRIAL cost4d/a, not as an asserted exact charged spectral minimum. It preserves the full tensor-ground premise, the nonzero acceptance budget, the fixed-path quantifier and the need for an actual derivative estimate. The actual finite fixture demonstrates both the failure of an unqualified exact-four energy identity and the conservatism of the optional worst-case sufficient condition. The source does not hide either result by retuning a parameter.
+
+Original root normalization inconsistency, its corrected convention and all cold reviews are retained. No new lower confinement theorem, convergence of finite charged minima, deterministic nonunitary preparation, or axiom-selected action is claimed. Ready for actual canonical caching and both claim-local helper registries, then full pipeline/strict/nonempty readiness against the explicit corrected-main pin. This review does not itself assert repository validation or an audit verdict.
