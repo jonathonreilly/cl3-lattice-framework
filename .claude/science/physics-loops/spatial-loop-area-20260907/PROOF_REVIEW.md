@@ -1,0 +1,2 @@
+# Proof reviews
+Native original721889e7: root4adc34aa and primary07acf6f2 PASS. Root original3d2d8694: native d6efd424 and primary07acf6f2 PASS; latestc419 only clarifies connected marked components and time-limit identity, with old bytes and diff retained. Primary selectiond632c8e8: native57ff99a4 and rootc98d4158 PASS. All exact review files are under evidence. These are independent cold reviews of supplied proofs, not claims to reprove the imported general theorems. Final canonical port remains subject to root review.

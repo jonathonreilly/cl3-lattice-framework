@@ -1,0 +1,2 @@
+# Review history
+Both uniform proofs froze before reading the other completed proof, after shared candidate exposure. Primary selection froze independently before reading either uniform proof. Root and native use different safe KP reserves. Two root wording clarifications preserve the earlier proof. The helper port changes only interface/resources/source metadata; scientific payload comparisons are exact.

@@ -1,0 +1,2 @@
+# Actual routes
+The local center-selection route proves a necessary Taylor order but does not supply a uniform radius. The complex marked-polymer route closes that residual using explicit external mathematics. Exact low-order Haar/resolvent coefficients provide distinct normalization evidence. Periodic projection supplies a boundary qualification and a genuine complement adverse case. No route is represented as an axiom-derived confinement theorem.

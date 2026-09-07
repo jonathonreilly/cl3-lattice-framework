@@ -1,0 +1,7 @@
+# Cold comparison of primary selection proof
+
+Reviewed 2026-09-07 after freezing own DERIVATION.md SHA721889e76b351390a016374434ae3708c9d16e3d9bfe097333381bd1c08c070e. Target primary/wilson-area-selection/DERIVATION.md SHAd632c8e8d95d41cb9fb6e0cb0a14dd9272cd3c27cd6ecb1718c092be832fd5e4.
+
+PASS. The contour argument first removes the all-Q analytic term, leaving finite-rank factors before taking traces; this correctly avoids an unjustified trace-class resolvent premise. The F3 projection and periodic constant-sheet kernel agree with the independent proof and finite controls. The observable in this source is the real normalized trace, whereas own proof states the complex normalized trace; charge selection and the norm bound apply to either. The same real-coupling expectation also follows by conjugation invariance, but that equality is unnecessary for the upper bound.
+
+The single-face coefficient is 2*(2/6)/96=1/144. For two adjacent faces the shared-link contraction is Tr(AB)/3, giving I=2/9; I/96²+2I/(576*24)=7/124416. The endpoint free energy24 is essential. At order two a projected two-square support must consist of two horizontal faces; vertical boundaries of their exterior edges then force their actual height to equal that of the loop. Thus no displaced or nonplanar two-face filling was omitted. The primary calculation is a genuine finite coefficient, not an argument for a uniform analytic radius. No correction requested.

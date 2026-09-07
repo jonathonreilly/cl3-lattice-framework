@@ -1,0 +1,3 @@
+# Preserved Haar-index checker repair
+
+Before exposing results, self-inspection found the original81-index check used the same incorrect transposed condition on both sides: delta_jl delta_ik instead of delta_jk delta_il for A_ij B_kl. It therefore falsely passed a mirrored expression. The original runner/raw are preserved. The mathematical shared-link identity integral Tr(AU)Tr(U†B)=Tr(AB)/3 was unchanged; corrected indices and an E01/E10 adverse test now distinguish the wrong transpose. All center-census and proposed physical coefficients are unchanged. This is a checker defect, not evidence that a failed mathematical coefficient was retuned.

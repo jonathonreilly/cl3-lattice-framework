@@ -1,0 +1,7 @@
+# Root canonical staging review, block36
+
+Read the complete staged canonical source SHA315ec680293c1d646860044d3ce1ff51ef8efe0a5975430d110a167e96f28b72, both proof parts and wrapper. PASS. This is a cold port/scope review after independent mathematical reviews4adc34aa andc98d4158; the imported convergence proofs remain explicit. Canonical modifications to the native frozen proof clarify attachment of marked components and time-limit Riesz identification without changing mathematics.
+
+The wrapper correctly allows both normalized complex and real trace in the area bound and explicitly restricts the one/two-face coefficients to the real trace and open geometry. It preserves the periodic half-area condition, fixed supplied a versus spatial spacing distinction, existential constants and separate conservative root/native reserves. The complete primary selection/coefficient proof is retained, including its correctly repaired Haar-index defect. Its final sentence about the extra theorem not being proved there is scoped to Part II by the explicit two-part provenance introduction; Part I supplies that theorem. Neither finite runner is presented as proving an imported cluster theorem.
+
+No canonical source edit requested. Integration must retain source hash, both actual runner caches and a claim-local secondary-helper registry entry. Review packet controls and source-side unaudited status must remain unchanged until the normal separate audit process.

@@ -1,0 +1,2 @@
+# Artifacts
+One bounded-theorem source and two self-contained finite helpers: chain19 and coefficient33. The source imports compact Hamiltonian29 and all-label spectrum30, plus explicitly named external mathematical theorems. No runtime file dependencies are invented. Register the coefficient helper as claim-local if the integration validator requires helper mapping. No graph/pipeline or repository write has occurred in this staging lane.

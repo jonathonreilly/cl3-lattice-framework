@@ -1,0 +1,9 @@
+# Root cold review of primary block36 selection and coefficients
+
+Reviewed primary DERIVATION.md SHAd632c8e8d95d41cb9fb6e0cb0a14dd9272cd3c27cd6ecb1718c092be832fd5e4. PASS for finite-volume selection and its two exact coefficients. Root had exposed the one-face candidate before derivation; the two-face coefficient was independently calculated by primary. The original self-confirming Haar-index checker defect is disclosed and preserved, not counted as independent validation.
+
+The rank-one Riesz trace is well-defined: after expanding resolvents into P0/z and Q terms, the all-Q contour integral vanishes analytically and all remaining products contain a finite-rank factor. Independent edge-center phases enforce the F3 boundary equation. Projection of vertical faces cancels and finite planar two-cycles vanish, giving n>=RS. Periodic fillings differ by a constant sheet, so the half-area condition and complement adverse case are required.
+
+Checked the exact character algebra: Vc=-S/6, elementary-face energy16 gives psi1=S/96 and psi2=R0S²/576. The one-face overlap gives1/144. The two-face loop energy is24, not16. Four charge-surviving terms each contract to1/3, hence integral W_C S²=2/9. Middle contribution1/41472 plus endpoint contribution1/31104 equals7/124416. Normalization contributes nothing at order2 because vacuum and first-order expectations vanish. Shared-link Haar indices delta_jk delta_il/3 produce Tr(AB), and E01/E10 distinguishes the erroneous transpose. These are actual noncommuting electric resolvents and Haar contractions, not a classical plaquette replacement.
+
+The proof properly stops short of uniform analyticity or area suppression by itself. Its coefficients concern open geometry; small periodic boxes may have additional minimal fillings. Canonical integration must retain that qualification and distinguish its real normalized Wilson trace from native's complex normalized trace.
