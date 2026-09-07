@@ -332,7 +332,8 @@ Stating the honest boundary requires no new science.
   git-tracked regular file or a web URL — directory targets, untracked targets,
   absolute paths, and paths outside the repository are all violations
   (`docs/ai_methodology/skills/review-loop/PREFLIGHT.md:56-64`).
-- Run the pipeline and read the citation-graph delta gate (stage 18 against the
+- In the shared combined pass in section 12, run the pipeline and read the
+  citation-graph delta gate (stage 18 against the
   tracked manifest at stage 1b). For every node your change adds, removes, or
   rewires, confirm the edge identity is intended — read your source diff against
   the manifest diff — BEFORE acknowledging it. Acknowledgment is staging the
@@ -471,11 +472,20 @@ statements. Authority:
   its pin. A generator that re-states author-supplied values reproduces nothing;
   the alternative is an honest dated stamp, not a decorative script.
 
-## 12. Pre-review gates
+## 12. Focused pre-review and combined landing gates
 
-Run from a worktree with no untracked pipeline residue (clean generated caches
-first). Authority:
-`docs/ai_methodology/skills/review-loop/PREFLIGHT.md:92-107`.
+Run focused source/runner/premise/vocabulary/diff checks per coherent review
+unit. Full pipeline, strict lint, and changed-evidence checks below are one
+shared pass on the exact integrated current-main candidate; they are not
+additional per-PR or per-unit pre-review runs. A source verdict may enroll a
+unit while combined validation is pending, but nothing lands before all gates
+pass. Successful validation can be reused for an identical base/tree only with
+the complete input/tool/evidence receipt specified in the review skill.
+
+Use a worktree with identified generated residue separated from source and
+recovery artifacts; do not indiscriminately delete caches. Authority:
+`docs/ai_methodology/skills/review-loop/SKILL.md` (Coherent review units and
+validation placement) and `docs/ai_methodology/skills/review-loop/PREFLIGHT.md`.
 
 - `python3 scripts/vocab_lint.py --fix` on the changed files, then
   `python3 scripts/vocab_lint.py --report-only <delta files>` reports zero
@@ -500,9 +510,13 @@ first). Authority:
   block); the merge-base strengthening is the owner directive of 2026-08-09.
 - `python3 -m py_compile` on every added or modified Python file
   (`docs/ai_methodology/skills/review-loop/SKILL.md` Smoketest).
-- Prep sanity for stacked PRs: the reviewed delta must equal
-  `merge-base(base-branch, head)..head`, and its file count must match an
-  independently computed delta before any reviewer is launched. The
+- Prep sanity for stacked PRs: record each original constituent delta as
+  `merge-base(base-branch, head)..head` and independently verify its file count.
+  For a cumulative/dependent unit, also verify the complete final source delta
+  against frozen current main and map every constituent claim/content item to
+  final source or explicit narrowing, supersession, rejection, or deferral.
+  Review that complete unit and all interacting premises; inherited content is
+  not covered merely because its ancestor had an earlier PASS. The
   merge-base review base is owned by
   `docs/ai_methodology/skills/review-loop/SKILL.md` (Setup step 3) and the
   stale/stacked overlap check by its Stale PR Integration Guard; the

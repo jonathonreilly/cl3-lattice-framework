@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_two_site_block_criterion_exact_silent_for_every_coupling_2026_09_07.py
+runner_sha256: 50b47ce6041d0b4bfdfe798de577965f749b7c118ff567f144d6b406b13d7652
+input_fingerprint_sha256: d6a58dee32e60f340b3b48411ca60185b99d24eafa6faf4dc3bbc7527281d271
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 69.89
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_TWO_SITE_BLOCK_CRITERION_EXACT_AND_SILENT_FOR_EVERY_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-07.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md
+AUDIT_TIMEOUT_SEC: 900
+scope: the two-site block of the covariant product rule; rho, rho', sigma exactly; B_V = 10 sigma > 2 at (3,1,2), (5,2,4), (7,3,5): silent for every coupling; nothing on Z^3 uniqueness
+mutation: none
+PASS: A1 the three declared audit inputs exist
+PASS: A2 axiom memo: the Admissibility and Record sentences verbatim
+PASS: A3 block 03's note: claim id and the silence fragment
+PASS: A4 this note carries its claim id
+PASS: C1 c_1 at the six triples equals block 03's literals (recomputed)
+PASS: C2 rho (the x-marginal's one-slot sensitivity) at the six triples equals the literals
+info rho: (3,1,2)=2168397/7948400 (5,2,4)=271059507090000/1298168979740633 (7,3,5)=239957740750/1121635870169
+info rho: (2,1,2)=67715/446034 (3,2,2)=1471549788/11145302999 (5,4,4)=81847628000000/1305850357630907
+info rho/c_1: (3,1,2)=0.9992 (5,2,4)=0.9804 (7,3,5)=1.0024 (2,1,2)=0.9868 (3,2,2)=0.9885 (5,4,4)=0.9618
+PASS: C3 rho/c_1 < 1 at five triples and > 1 at (7,3,5): the pair block is not uniformly less sensitive than a site
+PASS: C4 rho' (the y-marginal's sensitivity to an x-slot) at the three silent triples equals the literals
+info rho': (3,1,2)=1350/26077 (5,2,4)=1915425000/55627392667 (7,3,5)=856455908/27833079009
+info B_V = 10 sigma: (3,1,2) 152203860/48008647 = 3.170342; (5,2,4) 124859962305/55627392667 = 2.244576; (7,3,5) 14627647143900/6157201570091 = 2.375697
+info B_V = 10 sigma: (2,1,2) 1.643061; (3,2,2) 1.489176; (5,4,4) 0.667618
+PASS: C5 Theorem N': B_V = 10 sigma exactly (the literals); > 2 = |V| at each silent triple; sigma <= rho + rho' and <= rho (1 + c_1)
+PASS: C6 B_V = 10 sigma is below 2 at the three region triples (exact)
+PASS: B1 Theorem O: TV(block law) = TV(x-marginal) under a change at an x-slot on all 476280 instances, (3,1,2)
+PASS: B2 both couplings are couplings (marginals exact, entries nonnegative) on 202 instances
+PASS: B3 Theorem N: E d_H >= TV(m_x) + TV(m_y) for both couplings on every instance (the marginal lower bound)
+PASS: B4 Theorem N': the disjoint-support coupling attains E d_H = TV(m_x) + TV(m_y) exactly on every instance, and never exceeds the sequential one
+PASS: B5 the sequential coupling's bound E d_H <= TV(m_x) (1 + c_1) on every instance
+info (t,1,1): 6c_1 and 5rho(1+c_1) both cross 1 in (8/5, 33/20); rho/c_1 > 1 from t = 39/20
+info (t,t,1): 6c_1 and 5rho(1+c_1) both cross 1 in (29/20, 3/2); rho/c_1 > 1 from t = 3/2
+PASS: D1 the sequential number 5rho(1+c_1) crosses 1 in the same scan cell as 6c_1 on (t,1,1) and (t,t,1)
+PASS: D2 rho/c_1 exceeds 1 from t = 39/20 on (t,1,1) and from t = 3/2 on (t,t,1) on the declared scan
+PASS: E1 the note carries the three fence sentences verbatim
+PASS: E2 the note contains no forbidden phrase (hits: [])
+PASS: E3 the criterion's author is named only in the Prior art and Imports sections (violations: [])
+PASS: E4 runner source: no floating-point literal or conversion call (0 hits)
+per_element: executed — every boundary instance (252 x 126 multisets x 15 pairs) at each triple for rho and rho'; the factorization on every instance at (3,1,2)
+per_site: executed — the x-marginal and the y-marginal sensitivities separately; the coupling's x and y disagreement probabilities
+per_mode: executed — the disjoint-support (optimal) and the sequential couplings built explicitly on 202 instances with exact marginals and Hamming distances
+per_block: executed — the two-site block with its ten boundary slots; the block sum bounds at six triples; the scans on two lines
+lattice_wide: not claimed — the block contraction's implication on Z^3 is not proved here; the silence at the three triples is a finite exact statement for every coupling
+PASS: F1 the five N5 resolution lines are printed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

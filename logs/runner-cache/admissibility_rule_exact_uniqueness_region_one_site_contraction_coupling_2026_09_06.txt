@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_2026_09_06.py
+runner_sha256: ed4b6f2ac5b2ec59bb40afbbe44563edf8ca2482bac2b49e6a4b9fdd9cfb4faf
+input_fingerprint_sha256: 270c70a58d07ec4ab80fdbfcbc2703ab250409e92f5543bf0bea8863e4b103ed
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 126.93
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
+AUDIT_TIMEOUT_SEC: 900
+scope: six-projector menu, covariant product rule; c_1 exactly, the lines' two thresholds with certificates; the coupling bound on two windows; uniqueness only where 6c_1 < 1; silent at (3,1,2), (5,2,4)
+mutation: none
+PASS: A1 the four declared audit inputs exist
+PASS: A2 axiom memo: both Admissibility sentences verbatim
+PASS: A3 axiom memo: the four Record sentences verbatim
+PASS: A4 block 01's note: claim id and the finite-window uniqueness fragment
+PASS: A5 block 02's note: claim id and the existence fragment
+PASS: A6 this note carries its claim id
+PASS: B1 G1: the same coefficient 270/989 with the flipped neighbor in each of the six directions, (3,1,2)
+PASS: B2 G2: c_1(3,1,2) = c_1(1,3,2) and c_1(5,2,4) = c_1(2,5,4) exactly
+PASS: B3 G2: r_(3,1,2)(-s | eta) = r_(1,3,2)(s | eta) on all 46656 shells and six values
+PASS: B4 G3: c_1 = 0 at (2,2,2); c_1 > 0 at the six non-constant triples
+PASS: C1 G4: exact c_1 at the eight triples = the literals; the 252-multiset supremum agrees
+info c_1: (3,1,2)=270/989 (5,2,4)=8650000/40615109 (2,1,2)=2/13 (3,2,2)=2079/15566
+info c_1: (5,4,4)=4000000/61385721 (11,10,10)=98241110000/4544062780611 (7,3,5)=6391462/29948925
+PASS: C2 G4: 6c_1 < 1 at the four region triples; >= 1 at (3,1,2), (5,2,4)
+PASS: C3 G2/G4: c_1(p,q,4) = c_1(q,p,4) on all 144 grid points, p, q in 1..12
+PASS: C4 G4: the r = 4 grid's 6c_1 < 1 cells are the diamond (15 cells)
+info line (t,1,1): 3/2..13/8 eta=00011 pair=01 t*=[1.60970232778584,1.60970232778585]
+info line (t,t,1): 11/8..3/2 eta=00022 pair=02 t*=[1.47753945492134,1.47753945492135]
+info line (1,1,t): 5/8..3/4 eta=00022 pair=02 t*=[0.67680087774930,0.67680087774931]
+PASS: C5 G5: crossings at the declared brackets; sign pattern of the six differences fixed at both
+PASS: C6 G5: numerator of 6TV(t) - 1 at the pattern = the contract's degree-7 polynomial up to a constant
+PASS: C7 G5: Sturm: one positive root each, isolated to width < 10^-20, sign change at the endpoints
+PASS: C8 G5: at both endpoints the sup over all 7776 x 15 choices is the displayed pattern's value
+PASS: C9 G5: 6c_1 - 1 negative below, positive above t* on (t,1,1), (t,t,1); reversed on (1,1,t)
+info line2 (t,1,1): 1/2..19/40 eta=00123 pair=45 t2=[0.47722557505166,0.47722557505167]
+info line2 (t,t,1): 7/10..27/40 eta=00000 pair=24 t2=[0.69167061103656,0.69167061103657]
+info line2 (1,1,t): 7/5..29/20 eta=00000 pair=24 t2=[1.44577488770465,1.44577488770466]
+PASS: C10 G5: second crossing per line at its bracket; numerator = the displayed polynomial; one positive root isolated to width < 10^-20; endpoint suprema; sign change
+PASS: C11 G5: six isolating intervals: every 252 x 15 choice verified below (Lipschitz) or a sign-constant copy of the displayed maximizer ([30, 288, 288, 60, 72, 72])
+PASS: C12 G6: 6c_1 < 1 verified for every real t between the two thresholds, each line (subintervals [2395, 1782, 1715])
+PASS: C13 G2/G6: c_1(t,t,1) = c_1(1,1,1/t) executed; the (1,1,t) polynomials are the (t,t,1) reciprocals
+PASS: C14 c_1^(4)(2,5,3) = 14250/59251 > c_1(2,5,3) = 1629375/6780002: a window coefficient can exceed c_1; (7,3,5) silent
+PASS: D1 H1: plaquette one-step inequality TV <= c_1^(4) sum[differ] + b_x, 223616 pairs x 4 sites
+PASS: D2 H1: maximal coupling identity sum_s min(a_s,b_s) = 1 - TV on 5184 instances, four triples
+PASS: D3 H2: c_1^(4) = 1/8, 1404/11431, 10000/175641, 918/3431; 3x3 row sums < 1 at region triples, >= 1 at (3,1,2)
+PASS: D4 H2: D = (I - C)^{-1} exact: D(I - C) = I, D >= 0, three region triples
+PASS: D5 H2: damped iterates from u^0 = 1 nonincreasing, >= u* = D b, within 10^-4 at step 200
+PASS: D6 H2: fixed-point identity u* = (8/9) u* + (1/9)(C u* + b) exact
+info 3x3 TV<=bound: (2,1,2) 0.0090109<=1/56; (3,2,2) 0.0073929<=1971216/114898033; (5,4,4) 0.0016901<=100000000/30049760881
+PASS: D7 H3: center-site TV <= (D b)_center at the three region triples; the literals
+PASS: D8 H3: (3,1,2): 4c_1^(4) = 3672/3431 > 1; window bound not asserted; TV(center)=0.0346753 recorded only
+PASS: E1 I: sum_y N_n(0,y) = 6^n on Z^3, n = 1..4, by walk enumeration
+PASS: E2 I: table alpha^L/(1-alpha), L = 1..12, exact at the four region triples
+PASS: E3 I: least L with alpha^L/(1-alpha) < 10^-3 (>= at L-1): L=119, L=39, L=8, L=4
+PASS: E4 region: 6c_1 < 1 at the region triples and the line points; >= 1 at (3,1,2), (5,2,4)
+PASS: F1 the note carries the four fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (hits: [])
+PASS: F3 the criterion's author is named only in the Prior art and Imports sections (violations: [])
+PASS: F4 runner source: no floating-point literal or conversion call (0 hits)
+per_element: executed — all 7776 x 15 pattern-and-pair choices at every triple, grid point, scan point and endpoint (252 multisets x 15 pairs in the certificates); every plaquette pair
+per_site: executed — the flipped neighbor in each of six directions; the plaquette inequality at each site; the 3x3 row sums and center marginals
+per_mode: executed — D = (I - C)^{-1} exactly with the damped iterates; Sturm isolation of each threshold as the unique positive root
+per_block: executed — the 3x3 window by integer row transfer under two exterior assignments; walk counts n <= 4; the table alpha^L/(1-alpha)
+lattice_wide: proved, not executed — uniqueness on Z^3 where 6c_1 < 1 is the corollary of the window and walk-count bounds; the silent triples are named, not decided
+PASS: G1 the five N5 resolution lines are printed (each >= 40 chars)
+TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+
