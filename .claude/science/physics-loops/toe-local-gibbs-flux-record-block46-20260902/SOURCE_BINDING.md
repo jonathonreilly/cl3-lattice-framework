@@ -1,0 +1,42 @@
+# Source binding
+
+The execution is bound to:
+
+- `origin/main`: `2cea9a595ee2f0a6c47096de6f821b905182f48c`
+- preregistration: `1a053d816230f013d049bda2cfefe98a76db1ff1`
+- minimal-axioms blob: `bc23300becfe4e4db57153c0e94cfcdf2338da71`
+
+Frozen preregistration blobs:
+
+| Path | Blob |
+|---|---|
+| `GOAL.md` | `e70a07aa50cec79f10805646e42a41e4929650d1` |
+| `EXACT_TARGET_CONTRACT.md` | `5bb70397368f02f8cdcb29681c6e6c6cbf49aac0` |
+| `ASSUMPTIONS_AND_IMPORTS.md` | `f819db070aa9ae2a1adcc28c7e2e40d2132e5e83` |
+| `MUTATION_PLAN.md` | `5a1ad7c7d5423e1bddcd4ae198fd25bf3658c9d9` |
+| `PRIOR_ART_SEARCH.md` | `778ac72c220b6dd94ad9830cfadeee5fe95b72c6` |
+| `ROUTE_PORTFOLIO.md` | `9129fe3b3104b45ce91d9b24036af4ae0cb727cb` |
+| `TRACE_GATE.md` | `9ab01180692a8dc3a7b42cb5695642409f624140` |
+
+Pinned nearest prior-art blobs on `origin/main`:
+
+| Path | Blob |
+|---|---|
+| `docs/STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md` | `717f145739244195da6db7bf05a8ff75b59bc980` |
+| `docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md` | `f29dd373f25367fade34253ae3ff842a2a24c80f` |
+| `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | `2a872e2476d99c252db0a166c4803723fed60c53` |
+| `docs/ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md` | `b3cd51ea85d6091f4802539350fa40f0b1bd9536` |
+| `docs/P_FLUX_SELECTION_VIA_FSB_K_AND_Z_CERTIFICATE_CONDITIONAL_THEOREM_NOTE_2026-06-11.md` | `6163d93174d5efe0ba0d5ba865720d31564258d6` |
+| `docs/work_history/repo/review_feedback/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md` | `d21f8cca433154577d43a1a7166614d70f4f276c` |
+
+Open-PR heads refreshed immediately before execution:
+
+| PR | Head |
+|---:|---|
+| `#7828` | `3fada70dd5a0429c4e12dc8ae79f6b11b555443a` |
+| `#7829` | `551dfd9f317a36db050dffa0d717764f9af9f291` |
+| `#7830` | `f8581d80efdd0856aa1a64078a48931a763765e9` |
+| `#7831` | `ff8573cf054125db0dd0fcf07dba131280b6b736` |
+| `#7832` | `9301c509842ea4835def91ad50f41bfd4f80ab1c` |
+
+No `review-loop` result is imported.

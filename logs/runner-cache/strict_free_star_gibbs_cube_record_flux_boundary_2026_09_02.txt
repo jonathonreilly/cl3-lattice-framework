@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/strict_free_star_gibbs_cube_record_flux_boundary_2026_09_02.py
+runner_sha256: a13be4b639d6843ef8ccf43558c40bf6575efd09701d58628d886f01961d1fde
+input_fingerprint_sha256: 42fc74aff3162b9012368316689c9ffab22cb9fc3c4c667c0ff9032fc5a72777
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.22
+status: ok
+----- stdout -----
+PASS sources, preregistration, and adjacent PR heads are pinned :: prereg=True main=True open_prs=5/5
+PASS tree gauge removes every link phase for all spectral preparations :: h(t)=D h(1) D^-1; h^3=6h; occupation effects commute with diagonal D
+PASS strict Fock-Gibbs principal minors give the exact six-leaf law :: 320 leaf configurations, both center alternatives; sum_S det(L_S)=det(I+L)
+PASS the normalized law is positive, varying, and common to K0/K1 :: C=5/4; endpoints=(5/9,4/9)
+PASS tracing blank leaves gives all 729 normalized neighboring Record laws :: shells=729 rotations=24 blank is traced, not valued
+PASS the translated star law fails the global pairwise-Markov compatibility test :: r0*r2-r1^2=2*q**3*(q + 2)/((q + 3)*(q + 6)**2)
+PASS a distinct edge-factor law is globally consistent and fully positive :: two-site exp gives (1,E,E,1); ternary snapshot exact; hidden binary marginal distinct
+PASS Jordan-Wigner hopping is strict quadratic CAR and number conserving :: CAR=True no_density_term=True [H,N]=0:True
+PASS bare hopping cannot preserve an occupation Record on the same carrier :: [H,n0] is nonzero, so a decoupled pointer or post-write gate is required
+PASS one common CP instrument assigns every star weight to exclusive branches :: weights=736 blank/0/1 distinct; gated site and pointer persist
+PASS the cube actions have commuting versus Clifford generators and opposite face flux :: signed NN adjacency lift=True; K0_flux=(1, 1, 1, 1, 1, 1) K1_flux=(-1, -1, -1, -1, -1, -1)
+PASS one common body-diagonal target gives a sharp Record transcript separator :: computed p_target=(1,0); pointer weights=(0, 1, 1, 0)
+PASS all 24 proper rotations preserve the action/protocol family up to gauge :: rotations=24 K0 exact, K1 gauge-equivalent, opposite_pairs=8
+PASS the honest isolated-cube finite-volume Gibbs law detects loop flux :: one-particle kernels and full-Fock empty-Record probability split at beta^4
+PASS closing the tree through one cubic plaquette restores phase sensitivity :: (h_flux+^4)_00=8; (h_flux-^4)_00=4
+PASS N1-N8 discipline and conditional claim custody are explicit :: narrow star-diagonal pruning; cube escape retained; zero score/obligation claim
+per_element: exact two-site CAR, edge weights, and face signs certified
+per_site: all 729 partial neighboring Record shells certified
+per_mode: strict quadratic hopping and same-carrier nonpermanence certified
+per_block: star blindness, DLR fork, writer, and cube separator certified
+lattice_wide: global edge-factor escape separated from finite-volume quantum Gibbs
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

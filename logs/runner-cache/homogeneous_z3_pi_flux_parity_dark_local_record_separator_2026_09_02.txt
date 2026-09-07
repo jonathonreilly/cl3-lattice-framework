@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/homogeneous_z3_pi_flux_parity_dark_local_record_separator_2026_09_02.py
+runner_sha256: 612a791565bb9d0def84d692a80ee659044fe8be13d05762eef923dd0470af12
+input_fingerprint_sha256: 370a441eeeaa08f8c53d8cd88e7411cea38750c2b85d43687a2bc1f95b1459ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.65
+status: ok
+----- stdout -----
+PASS source, parent, preregistration, and adjacent PR heads are pinned :: prereg=True main=True parent_original=True parent_current=True binding=True PR_names=5/5 PR_commits=5/5 direct_base=5/5 parent_rows=5/5
+PASS the two self-adjoint NN link fields carry uniform +1/-1 face flux :: K0_flux=[1] K1_flux=[-1]; KS unitary equivalence=True
+PASS Clifford cancellation gives H1^2=6I+sum(Tj^2+Tj^-2) :: anticommutators=True mixed_shifts_absent=True; unequal_weights=True
+PASS the simultaneous H1 propagator is dark at parity distance two or three for all time :: 8 sectors: Q_preserves=True, H1_flips_one=True; powers 0..9=True
+PASS the uniform walk reaches the body diagonal with a strict fixed-time Bessel bound :: Z3 counts=(6, 180, 5040, 143640, 4199580); J1 endpoints derived=7/16,169/384; at t=1/2, (7/16)^6 < p0 < (1/2)^6
+PASS the supplied common local occupation-Record protocol keeps every exterior bond active :: common=True; PVM_idempotent=True; exterior=True; [H,n*]!=0 prewrite=True; gated permanence=True
+PASS magnetic translations are exact; a finite box checks the note's global cubic gauge proof :: bare symmetries=(False,False,True); magnetic=True; finite_rotation_witnesses=24
+PASS ordered direction pulses escape the static-simultaneous darkness theorem :: ordered=-1; swapped=1; simultaneous=0; nonscalar onsite n6=-32
+PASS N1-N8 headings and zero-closure claim custody are present for postexecution audit :: homogeneity trade only; I-4 and Record-process ownership remain open
+per_element: link signs, face flux, and shift/parity relations certified
+per_site: one local target occupation effect and exterior bonds certified
+per_mode: one-particle signed adjacency checked; strict-free lift is explicitly supplied
+per_block: common supplied source/cadence/PVM/writer/gate declarations scope-checked
+lattice_wide: infinite-Z3 parity theorem exact; finite rotation witness supports the global note proof
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

@@ -740,6 +740,42 @@ For publication-facing or quantitative work, also inspect
 2. **Ground, then sweep for prior art.** Build the current lane map from repo
    authority surfaces rather than memory.
 
+   **Include relevant open PR science.** Main owns adopted premises and status;
+   open proposals may contain newer results, counterexamples or stronger versions
+   of the target. Use the PR inventory to locate relevant proposals, then read
+   their bodies, changed primary science, evidence, substantive review findings
+   and actual dependencies before claiming novelty or reusing a result. Record
+   the exact revisions and what was actually read, including limits. Reuse
+   matching coverage and inspect affected changes; a title or matching receipt
+   alone establishes no scientific conclusion. Do not make complete reading of
+   every unrelated open PR a prerequisite for a bounded research block.
+
+   Respect the owner's intake scope. A fixed backlog cutoff does not authorize
+   a global capture or review of new arrivals. Keep the frozen inventory and its
+   outstanding obligations; refresh only the authorized proposals as needed.
+
+   When a complete new intake is authorized, the optional helper
+   `python3 scripts/open_pr_science_coverage.py capture --repo OWNER/REPO --output current.json`
+   checks the total open count, binds head/base commits and proposal metadata,
+   recovers paginated changed-file lists, and rejects observed capture drift.
+   Preserve that snapshot. After an actual read, use
+   `python3 scripts/open_pr_science_coverage.py receipt --reviewed current.json --number N --read-coverage 'Surfaces read and limits'`
+   to emit its JSONL receipt. The offline
+   `python3 scripts/open_pr_science_coverage.py check --current current.json --reviewed reviewed.json --receipts reads.jsonl`
+   compares declared coverage with both saved inventories. It does not fetch
+   new proposals. These commands accept this helper's versioned inventory
+   schema; another planning inventory is not interchangeable merely because it
+   lists the same PRs.
+
+   Exit 0 means matching declared coverage, 1 means missing/stale receipts, and
+   2 means invalid inputs. The helper cannot verify reading or understanding;
+   partial declared coverage remains partial even if it matches. Its result is
+   an optional planning aid, not a universal research gate, scientific grade,
+   proof review or landing permission. `updatedAt` is a conservative metadata
+   signal, not a stored review-discussion transcript; inspect relevant discussion
+   when refreshing. Proposed results remain provisional under their actual
+   premises and review state.
+
    **Then search the repo for the result you are about to produce, before you
    produce it.** This is a hard prerequisite, not a courtesy. The failure mode
    was observed on 2026-07-25: a cycle derived that a finite-dimensional
