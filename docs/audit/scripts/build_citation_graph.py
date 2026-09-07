@@ -151,6 +151,9 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "native_edge_record_reduced_cell_autonomous_clock_bounded_theorem_note_2026-09-07": [
+        "scripts/native_edge_record_reduced_cell_autonomous_clock_check_2026_09_07.py",
+    ],
     "native_edge_record_reduced_cell_full_isometry_bounded_theorem_note_2026-09-07": [
         "scripts/native_edge_record_reduced_cell_full_isometry_check_2026_09_07.py",
     ],
