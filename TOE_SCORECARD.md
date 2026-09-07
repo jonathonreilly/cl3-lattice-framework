@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
 Verified source/status snapshot: 2026-09-07, main
-`12d9c77c0605276b82eb9fcb8cf05cdaf3e40f56`. This is a planning map, not
+`e043c95b37bd46d80e97c39f36c8b3cb7643c62f`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -16,8 +16,8 @@ finite additivity and I(empty)=0. Older proofs requiring those clauses need
 an explicit supplier. README paraphrases and old skills are not substitutes.
 
 The tracked ledger contains 4,475 rows: 4,105 non-meta science rows and 370
-meta rows. The latest twenty-three source notes have not been added to the applied
-ledger: mechanical validation generated twenty-three unaudited rows locally, then
+meta rows. The latest twenty-nine source notes have not been added to the applied
+ledger: mechanical validation generated twenty-nine unaudited rows locally, then
 stripped those generated files. No audit status was applied. Every tracked science row has audit_status and effective_status
 `unaudited`. Counts were computed from every tracked shard; see
 [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
@@ -29,7 +29,7 @@ planning refresh. Candidate dependencies retain their open conditions.
 
 ## Current open-work interfaces
 
-The complete [open-PR inventory](OPEN_PR_INVENTORY.json) pins 172 current open heads and
+The complete [open-PR inventory](OPEN_PR_INVENTORY.json) pins 152 current open heads and
 changed-file sets. These entries locate evidence; they do not assert that
 all source has been reviewed. The campaign record tracks actual inspection.
 
@@ -72,14 +72,14 @@ The eleven-note conditional light-germ/local-dynamics unit is now source-reviewe
 and landed at `16c2d6860e168ec8e5e8f66296410265e5d7226d`. Its original constituent sources came
 from eleven already-consolidated PRs; #7937 remains open for its other science.
 The selected action, physical electromagnetic interpretation, matter/gauge speed
-bridge, microscopic readout and time selection remain open. Five source
+bridge, microscopic readout and time selection remain open. Six source
 landing batches passed combined validation with zero integration retries.
 
 The corrected monotone formation result is on current main: opposite corners
 share a law under its stated finite symmetric common-row-sum premises. Exactly
 two distinct laws is established for the two executed finite cases, not every
-nonconstant rule. Light-backreaction review has concrete charged-sign, live-
-current coverage and rotor-limit findings; Eta review is held for premise
-epoch reconciliation. Neither held scope has source PASS.
+nonconstant rule. Light-backreaction charged-sign, live-current coverage and rotor-limit corrections are confirmed and landed. Eta review remains held for premise epoch reconciliation, with no full source PASS.
 
-The four newly landed autonomous Record notes establish conditional head/fuel/battery, occupation feedback, present-state generator and finite local-quench/ladder results. Complete modeled energy conservation and approximation bounds use their stated supplied apparatus and safe domains; spatial battery communication, bath/control supply, preparation and physical law selection remain open. Light-backreaction corrections are under same-reviewer confirmation; the ice trial-state/physical-stiffness distinction is under repair.
+The four newly landed autonomous Record notes establish conditional head/fuel/battery, occupation feedback, present-state generator and finite local-quench/ladder results. Complete modeled energy conservation and approximation bounds use their stated supplied apparatus and safe domains; spatial battery communication, bath/control supply, preparation and physical law selection remain open. Light-backreaction corrections are confirmed and landed; the ice trial-state/physical-stiffness distinction is under repair.
+
+The six newly landed source/current/work/backreaction notes preserve exact finite identities under supplied laws. Charged modular sectors include explicit background labels; fixed-g clock refinement compares with a cosine rotor and retains its anharmonic floor. Finite quantum-link algebra does not itself supply the separate scalar phase Hessian or a many-link photon phase. Those physical joins remain open.

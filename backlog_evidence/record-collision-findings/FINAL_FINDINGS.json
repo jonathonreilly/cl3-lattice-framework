@@ -1,0 +1,31 @@
+{
+  "original_review_complete": true,
+  "safe_to_edit": true,
+  "verdict": "CHANGES REQUIRED: two P2 source/evidence-validation findings",
+  "raw_head": "fb81c52351baea499c81f517a3d32ef8db10d065",
+  "integration_base": "12d9c77c0605276b82eb9fcb8cf05cdaf3e40f56",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": 2,
+      "title": "Register the complete imported carrier closure in both packet consumers",
+      "file": "docs/audit/scripts/build_citation_graph.py",
+      "line": 154,
+      "end_line": 162,
+      "detail": "Each of the three new mappings lists only its sibling checker. Every sibling actually imports native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py; the graph explicit mapping does not recurse. The separate diagnostic consumer has no entries for any of the three claims. Six actual calls reproduce missing load-bearing sources. A passing historical helper_count=1/readiness capture does not establish complete evidence.",
+      "fix": "Add the native carrier alongside the existing sibling in all three new graph mappings; mirror all three complete sets in scripts/audit_packet_script_deps.py. Preserve every parent and unrelated entry and function. Run both real consumers for all three claims and source-omission adverse controls. Preserve original helper_mapping/readiness receipts as historical evidence and append the correction receipt.",
+      "evidence": "packet_helper_results.json"
+    },
+    {
+      "id": "F2",
+      "priority": 2,
+      "title": "Assert the decisive active-energy invariant before reporting success",
+      "file": "scripts/native_edge_record_reduced_cell_control_2026_09_07.py",
+      "line": 70,
+      "end_line": 73,
+      "detail": "solve returns all_commute_active_energy but no ck/assert consumes it. Replacing its tested charge Qa by Zf makes all four returned values false while the actual script exits zero and reports the same successful exact-check packet. The invariant is the decisive obstruction certificate and the original supplement specifies an alternate cyclic/Lie route if it fails. Independent symplectic arithmetic confirms the real invariant, so this is a validation defect, not a rejected theorem.",
+      "fix": "Require the returned all_commute_active_energy value for every one of the four families before PASS, using four counted ck calls or an equivalent genuinely asserted predicate. Re-run the actual wrong-charge source mutation and reject it. Refresh the affected canonical cache/source inventory and any current note count (396 becomes400 with four calls); preserve historical396 transcripts/checker receipts and append explanation. Other computational runners need no science edit.",
+      "evidence": "source_mutations.json; independent_control_space.json"
+    }
+  ]
+}

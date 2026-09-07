@@ -6,10 +6,10 @@ Independent examination of surviving source claims still precedes landing.
 
 ## Actual backlog
 
-Current refresh: 172 open PRs, zero drafts. There have been 21 draft closures,
-nine science landings with PR closure, and 57 duplicate consolidations;
-16 drafts became ready. The original 254 PRs gained five new successors
-(#8003/#8004/#8005/#8006/#8007); #8003 and #8004 are included in the nine landed closures.
+Current refresh: 152 open PRs, zero drafts. There have been 21 draft closures,
+nine science landings with PR closure, and 78 further source consolidations;
+16 drafts became ready. The original 254 PRs gained six new successors
+(#8003/#8004/#8005/#8006/#8007/#8008); #8003 and #8004 are included in the nine landed closures.
 The ancestry counts below describe the original snapshot, not this refresh.
 
 The snapshot contains 254 PRs. 129 name another open branch as their GitHub
@@ -47,7 +47,7 @@ This changes the review unit and placement of repeated mechanical work, not
 which scientific claims require scrutiny. The executable seven-file contract has now passed independent adversarial
 review and same-session confirmation after a successive-manifest-conflict
 repair. It landed at `2d0f551dcd8bd444daee85b97811cda53da0661e` and remains
-unchanged in current main `12d9c77c0605276b82eb9fcb8cf05cdaf3e40f56`.
+unchanged in current main `e043c95b37bd46d80e97c39f36c8b3cb7643c62f`.
 
 ## Integration
 
@@ -136,7 +136,7 @@ mechanical PASS tokens and introduces no new scientific status.
 The third combined landing is the 47-path conditional light-germ source unit
 at `16c2d6860e168ec8e5e8f66296410265e5d7226d`. Its eleven constituent PRs were already
 closed as duplicates; the successor remains open for the remaining science.
-Five complete mechanical runs have served five source batches, with zero
+Six complete mechanical runs have served six source batches, with zero
 integration retries and no formal audit.
 
 The fourth landing at `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac` integrates
@@ -146,3 +146,5 @@ coordinator inspected correction and integration changes. No duplicate full
 review or second pipeline was added to the confirmed unit.
 
 The fifth landing at `12d9c77c0605276b82eb9fcb8cf05cdaf3e40f56` integrates #8004 after complete independent review, a narrow helper-registration correction and one combined validation. All 115 final source/manifest hashes were verified on remote main before closing the PR. No audit status landed. The 172 remaining PRs include the separately reviewed successor chain; ready corrected units depart without waiting for unrelated repairs.
+
+The sixth landing at `e043c95b37bd46d80e97c39f36c8b3cb7643c62f` integrates the six corrected backreaction notes. Current status is in BACKLOG_STATUS.md; dated counts below earlier landing paragraphs are historical. Twenty-one additional parents are consolidated into open #7315 with complete inherited source and all review obligations preserved.
