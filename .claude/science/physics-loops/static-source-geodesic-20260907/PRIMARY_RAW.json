@@ -1,0 +1,498 @@
+{
+  "checks": [
+    "source matrix normalization",
+    "actual one-square normalized Haar coefficient",
+    "omitting external source normalization is adverse",
+    "fundamental character Haar norm all diagonal pairs",
+    "fundamental square zero by triality",
+    "all-label first increment",
+    "all-label second increment",
+    "fundamental energy4",
+    "complete shortest path count (1, 1)",
+    "actual edge-charge flip matrix (1, 1)",
+    "symmetric actual adjacency (1, 1)",
+    "fixed number fermion adjacency (1, 1)",
+    "full planar fermion spectrum (1, 1)",
+    "complete shortest path count (1, 2)",
+    "actual edge-charge flip matrix (1, 2)",
+    "symmetric actual adjacency (1, 2)",
+    "fixed number fermion adjacency (1, 2)",
+    "full planar fermion spectrum (1, 2)",
+    "complete shortest path count (2, 2)",
+    "actual edge-charge flip matrix (2, 2)",
+    "symmetric actual adjacency (2, 2)",
+    "fixed number fermion adjacency (2, 2)",
+    "full planar fermion spectrum (2, 2)",
+    "complete shortest path count (1, 3)",
+    "actual edge-charge flip matrix (1, 3)",
+    "symmetric actual adjacency (1, 3)",
+    "fixed number fermion adjacency (1, 3)",
+    "full planar fermion spectrum (1, 3)",
+    "complete shortest path count (2, 3)",
+    "actual edge-charge flip matrix (2, 3)",
+    "symmetric actual adjacency (2, 3)",
+    "fixed number fermion adjacency (2, 3)",
+    "full planar fermion spectrum (2, 3)",
+    "positive resources"
+  ],
+  "TOTAL": 34,
+  "rows": [
+    {
+      "R": 1,
+      "S": 1,
+      "length": 2,
+      "paths": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "characteristic_polynomial": "z**2 - 1",
+      "fermion_eigenvalues": [
+        "1",
+        "-1"
+      ]
+    },
+    {
+      "R": 1,
+      "S": 2,
+      "length": 3,
+      "paths": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "characteristic_polynomial": "z**3 - 2*z",
+      "fermion_eigenvalues": [
+        "sqrt(2)",
+        "0",
+        "-sqrt(2)"
+      ]
+    },
+    {
+      "R": 2,
+      "S": 2,
+      "length": 4,
+      "paths": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "characteristic_polynomial": "z**6 - 6*z**4 + 5*z**2",
+      "fermion_eigenvalues": [
+        "sqrt(5)",
+        "1",
+        "0",
+        "0",
+        "-1",
+        "-sqrt(5)"
+      ]
+    },
+    {
+      "R": 1,
+      "S": 3,
+      "length": 4,
+      "paths": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "characteristic_polynomial": "z**4 - 3*z**2 + 1",
+      "fermion_eigenvalues": [
+        "1/2 + sqrt(5)/2",
+        "-1/2 + sqrt(5)/2",
+        "1/2 - sqrt(5)/2",
+        "-sqrt(5)/2 - 1/2"
+      ]
+    },
+    {
+      "R": 2,
+      "S": 3,
+      "length": 5,
+      "paths": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "adjacency": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "characteristic_polynomial": "z**10 - 12*z**8 + 39*z**6 - 40*z**4 + 12*z**2",
+      "fermion_eigenvalues": [
+        "1 + sqrt(3)",
+        "sqrt(3)",
+        "-1 + sqrt(3)",
+        "0",
+        "1",
+        "0",
+        "1 - sqrt(3)",
+        "-1",
+        "-sqrt(3)",
+        "-sqrt(3) - 1"
+      ]
+    }
+  ],
+  "plaquette_flip_coefficient": "1/18",
+  "seconds": 0.28489633300341666,
+  "rss_MiB": 61.078125,
+  "source_sha256": "3e66256f8b201a3ac8b2391060d50f38158e09640b3d3d6623ede5ed6081b564"
+}

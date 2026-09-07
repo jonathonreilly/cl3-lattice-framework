@@ -151,6 +151,9 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07": [
+        "scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py",
+    ],
     "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07": [
         "scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py",
     ],

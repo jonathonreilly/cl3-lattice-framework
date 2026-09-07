@@ -1,0 +1,3 @@
+# Source convention and analytically derived coefficient, before checks
+
+Use matrix-valued F(U) with norm integral Tr(F†F), external3 at s and bar3 at t, total gauge action F(U)→g_s F(g^-1·U)g_t†. A path state is F_P=W_P/sqrt3 and is invariant. For a square flip, Tr(W_P'†W_P) is one oriented fundamental plaquette character. Therefore the independent predicted projected normalized real trace is (1/3)*(1/6)*Haar(chi bar chi)=1/18, and first-order V=v[Ffaces I-Adj/18]. No root coefficient has been read. For planar displacement(R,S), Adj is binary nearest-neighbor exchange on length R+S, with fermion eigenvalues2 sum of R distinct cos(k pi/(R+S+1)). Check small matrices exactly where possible, preserve any failure rather than tuning coefficient.

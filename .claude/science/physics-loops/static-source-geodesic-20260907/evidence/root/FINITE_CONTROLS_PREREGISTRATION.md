@@ -1,0 +1,7 @@
+# Frozen finite controls for root37
+
+Root derivation72f6063439086729c18af629aea3001d5b61a9fde011e818b2602f3bb02946b4 froze before these controls. Check actual link/face geometry for displacements(1,1,0),(2,1,0),(2,2,0),(2,1,1): every pair of monotone paths and face orientations must satisfy the F3 selection iff an elementary adjacent-swap flip, and integer cancellation must agree. Build true path adjacency from those geometric constraints and compare to independent word swaps. For planar cases compare full exact characteristic polynomials to the exterior-chain hopping operator, and largest-eigenvalue formulas for(1,1),(2,1),(2,2). No approximate fitted eigenvalues count as proof.
+
+Enumerate all4096 occupied subgraphs of the actual cube for opposite-corner source pair: component triality requires both sources in one component; minimum allowed edge count3 and exactly6 equality supports. This is a finite adverse/control census supporting the all-graph center proof, not a replacement for Gauss tensors. Check normalized single-link Haar trace orthogonality from explicit fundamental Kronecker indices, source norm and1/18 flip factor; wrong1/6 factor must differ. Check nonlinear all-label electric minimum for a finite rectangle of labels only as arithmetic consistency, with all-label proof kept analytical.
+
+Record named checks, resources, actual graph sizes and source hash; do not claim uniform interacting string tension or numerical full-Hamiltonian eigenvalues.
