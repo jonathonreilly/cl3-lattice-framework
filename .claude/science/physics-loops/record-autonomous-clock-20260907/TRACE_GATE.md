@@ -1,0 +1,3 @@
+# Trace gate
+
+Classification: upstream support, actual status conditional-support, target claim type bounded_theorem. Clock construction supports the complete reduced-cell isometry by replacing external switching with a supplied autonomous controller. Chain boundary stripping explains an exact locality/energy limitation under a fixed Hamiltonian. Shared validation also covers the unchanged PR8004/8005 apparatus parents; it does not grant them retained authority. Remaining TOE blockers are derived physical interactions, preparation, locality, stable records and renewal. No audit verdict is assigned.
