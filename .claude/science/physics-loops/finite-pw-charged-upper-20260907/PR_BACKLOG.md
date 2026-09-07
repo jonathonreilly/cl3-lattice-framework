@@ -1,1 +1,3 @@
-One coherent42claim with two helpers ready on41. Orbital owns integration on the corrected current-main baseline; no worktree edits by this lane.
+# Review backlog
+
+Draft PR8032 is open on PR8031. Full pipelinec2e688342131, strict lint,19ready claims against7887 passed. Await independent review; no merge or audit verdict.
