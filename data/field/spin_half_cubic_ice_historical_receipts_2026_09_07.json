@@ -1,0 +1,404 @@
+{
+  "schema": "spin-half-ice-historical-receipts-v1",
+  "role": "Inert exact historical receipt payloads; no code evaluation, production execution, current-cache freshness or scientific approval.",
+  "source_head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+  "protocol": {
+    "forward_lengths": [
+      6,
+      12,
+      20
+    ],
+    "windows": [
+      [
+        2,
+        6
+      ],
+      [
+        8,
+        14
+      ]
+    ],
+    "primary_window": [
+      8,
+      14
+    ],
+    "couplings": [
+      0.95,
+      1.0
+    ],
+    "lengths": [
+      16,
+      18
+    ],
+    "replicas": 6,
+    "min_ess_strict": 0.85,
+    "min_origin_count": 40,
+    "min_forward_count": 40,
+    "relative_span_strict": 0.05,
+    "hotelling_strict": 17.361,
+    "student_strict": 2.571,
+    "threshold_interpretation": "Predeclared diagnostic cutoffs, not exact Hotelling/Student coverage: covariance comes from six leave-one-replica-out nonlinear fitted-gap vectors.",
+    "gap_error_printing_absolute_tolerance": 5.001e-09,
+    "covariance_relative_tolerance": 2e-12,
+    "covariance_absolute_tolerance": 1e-18
+  },
+  "electric_uncertainty": {
+    "central_estimator": "U_flux",
+    "borrowed_error_estimator": "U_charge",
+    "status": "unresolved hybrid; no supplied U_flux uncertainty"
+  },
+  "required_physical_source_family": "uniform_cartesian_response",
+  "records": [
+    {
+      "id": "projector",
+      "source_family": "electric_flux_projector",
+      "capture": {
+        "successor_pr": 7966,
+        "head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+        "original_constituents": [
+          {
+            "pr": 7941,
+            "head": "8ac1ccdfa1735fd6facdf910defb964469fba35a",
+            "base": "2814c6768e4d7b38048f70ad7883b4951cb12da3"
+          }
+        ],
+        "path": "logs/runner-cache/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.txt",
+        "mode": "100644",
+        "blob": "949ccd32a16d9e4a3b5eee9220563976612b0ad8",
+        "sha256": "de9be2beb26b671baed19e836ade9f0277fa6d0783863244da5684282e1c069d",
+        "bytes": 3451
+      },
+      "producer": {
+        "path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+        "mode": "100644",
+        "blob": "63c57626a6d31a2241996e99b6af603280111d6b",
+        "sha256": "8becfe5e91a731e38bc056b69044f03f8c40ced504641ba6893f3410893c1706",
+        "bytes": 30679
+      },
+      "available_declared_inputs": [
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "mode": "100644",
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+          "mode": "100644",
+          "blob": "e1c12280074e84f99f53361b1b0ce686417b94d9",
+          "sha256": "8411d756971f60838c962dc6b0fcc022a2eff553d3c9df608b1283503af90700",
+          "bytes": 32085
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py",
+          "mode": "100644",
+          "blob": "8fd0b9b611943c336265116329d6c4e69051b91f",
+          "sha256": "54cecc6ee35910254cc56d2b7378234651260334795d0ee35614f0924c030189",
+          "bytes": 19416
+        }
+      ],
+      "available_declared_input_fingerprint_sha256": "3c58cd9e3a66fa268a03c885c7305ba4d1c4a505800468e4342a58d8e4625766",
+      "historical_header_input_fingerprint_sha256": "3c58cd9e3a66fa268a03c885c7305ba4d1c4a505800468e4342a58d8e4625766",
+      "snapshot_inputs_match_historical_header": true,
+      "input_scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "payload": "===== runner cache v1 =====\nrunner: scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py\nrunner_sha256: 8becfe5e91a731e38bc056b69044f03f8c40ced504641ba6893f3410893c1706\ninput_fingerprint_sha256: 3c58cd9e3a66fa268a03c885c7305ba4d1c4a505800468e4342a58d8e4625766\ntimeout_sec: 480\nexit_code: 0\nelapsed_sec: 266.42\nstatus: ok\n----- stdout -----\n[PASS] 01 the L=2,4,6,8,10 projector geometries contain exactly 3L^3 four-link square moves\n[PASS] 02 opposite noncontractible line pairs provide three nonlocal zero-flux initialization controls\n[PASS] 03 the exact L=2 eigenvectors satisfy the constant-trial mixed-estimator identity in both flux sectors\n[PASS] 04 the stochastic projector reproduces four exact L=2 ground energies at V=0.95 and V=0.90\n[PASS] 05 every projector population preserves exact local flippability, three-of-six Gauss charge, and assigned flux\n[PASS] 06 all populations retain effective weight and final-state diversity above the declared collapse controls\n[PASS] 07 every L=4,6,8 finite-detuning flux ladder has resolved positive electric stiffness\n[PASS] 08 Phi^2/L beats a linear-in-|Phi| curve separately on every full flux ladder\n[PASS] 09 the shrinking-density L=10 endpoints independently retain positive stiffness\n[PASS] 10 doubled L=8 populations reproduce the positive endpoint stiffness within fifteen percent\n[PASS] 11 the joint L=4,6,8,10 data prefer Maxwell Phi^2/L scaling over four named controls\n[PASS] 12 the volume ladder is stable and remains near the independent first-order U/|delta V| coefficient\nEXACT V=0.95 Phi=0 E0=-0.402736506 projector=-0.402717719+/-0.000143474\nEXACT V=0.95 Phi=1 E0=-0.328353309 projector=-0.328269366+/-0.000095120\nEXACT V=0.90 Phi=0 E0=-0.810822412 projector=-0.810989837+/-0.000199869\nEXACT V=0.90 Phi=1 E0=-0.664101443 projector=-0.663706429+/-0.000116271\nCURVE V=0.95 L=4 U=0.162431+/-0.002836 rss_quad=0.00000758 rss_linear=0.00043585\nCURVE V=0.95 L=6 U=0.158859+/-0.003556 rss_quad=0.00000179 rss_linear=0.00096923\nCURVE V=0.95 L=8 U=0.158029+/-0.004098 rss_quad=0.00005171 rss_linear=0.00216498\nCURVE V=0.90 L=4 U=0.323246+/-0.005698 rss_quad=0.00000678 rss_linear=0.00149915\nCURVE V=0.90 L=6 U=0.316443+/-0.008214 rss_quad=0.00001294 rss_linear=0.00421991\nCURVE V=0.90 L=8 U=0.327441+/-0.007456 rss_quad=0.00000206 rss_linear=0.00875919\nPOPULATION_CONTROL V=0.95 U_256=0.156557 U_512=0.161363+/-0.003361\nPOPULATION_CONTROL V=0.90 U_256=0.327962 U_512=0.321798+/-0.006029\nDATA V=0.95 U_L=4:0.162431,6:0.158859,8:0.161363,10:0.167899 U/|deltaV|=3.252761 global_rss=0.00014972\nMODEL_CONTROL V=0.95 rss=quadratic_over_length:0.00014972,linear:0.00482474,linear_over_length:0.01507353,quadratic:0.00423395,step:0.04087815\nDATA V=0.90 U_L=4:0.323246,6:0.316443,8:0.321798,10:0.322970 U/|deltaV|=3.211140 global_rss=0.00007401\nMODEL_CONTROL V=0.90 rss=quadratic_over_length:0.00007401,linear:0.01707266,linear_over_length:0.05625386,quadratic:0.01900005,step:0.15655303\nCERTIFICATE: exact_stoquastic_green_function=True constant_trial_mixed_estimator=True finite_population=True finite_imaginary_time=True thermodynamic_limit=False real_time_spectrum=False\nRESOLUTION: per_element=every accepted square flip; per_site=all final walkers preserve Gauss; per_mode=electric topological flux; per_block=exact L2 plus projector L4,6,8,10; lattice_wide=finite-volume finite-detuning stiffness, not a thermodynamic phase proof\nTOTAL: PASS=12 FAIL=0\n\n----- stderr -----\n\n"
+    },
+    {
+      "id": "charge",
+      "source_family": "electric_charge_response",
+      "capture": {
+        "successor_pr": 7966,
+        "head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+        "original_constituents": [
+          {
+            "pr": 7943,
+            "head": "dfc2fb96e9d4ee971dc88e02f70078148114a27e",
+            "base": "8ac1ccdfa1735fd6facdf910defb964469fba35a"
+          }
+        ],
+        "path": "logs/runner-cache/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.txt",
+        "mode": "100644",
+        "blob": "3cad2b804d9b93ab9b6cae8a1b44da2aa22b4ccd",
+        "sha256": "992136071fbd1f87efbae5daec0689ce7309913ccc12fd294bdfc39a54ae569f",
+        "bytes": 3148
+      },
+      "producer": {
+        "path": "scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py",
+        "mode": "100644",
+        "blob": "a78d8d2c72399d459c4c524c6258afa85a1ca31e",
+        "sha256": "97881c8721ee3177aeaa610a59f139ef44be809b49bc9c6ed9f0490fe6b10418",
+        "bytes": 22256
+      },
+      "available_declared_inputs": [
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "mode": "100644",
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+          "mode": "100644",
+          "blob": "e1c12280074e84f99f53361b1b0ce686417b94d9",
+          "sha256": "8411d756971f60838c962dc6b0fcc022a2eff553d3c9df608b1283503af90700",
+          "bytes": 32085
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_topological_electric_stiffness_2026_09_03.py",
+          "mode": "100644",
+          "blob": "8fd0b9b611943c336265116329d6c4e69051b91f",
+          "sha256": "54cecc6ee35910254cc56d2b7378234651260334795d0ee35614f0924c030189",
+          "bytes": 19416
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+          "mode": "100644",
+          "blob": "63c57626a6d31a2241996e99b6af603280111d6b",
+          "sha256": "8becfe5e91a731e38bc056b69044f03f8c40ced504641ba6893f3410893c1706",
+          "bytes": 30679
+        }
+      ],
+      "available_declared_input_fingerprint_sha256": "8c73f95d6cbc4086e5243f01b3bf9c82bf3811f2add654e12ed6844b1b2fcb0e",
+      "historical_header_input_fingerprint_sha256": "8c73f95d6cbc4086e5243f01b3bf9c82bf3811f2add654e12ed6844b1b2fcb0e",
+      "snapshot_inputs_match_historical_header": true,
+      "input_scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "payload": "===== runner cache v1 =====\nrunner: scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py\nrunner_sha256: 97881c8721ee3177aeaa610a59f139ef44be809b49bc9c6ed9f0490fe6b10418\ninput_fingerprint_sha256: 8c73f95d6cbc4086e5243f01b3bf9c82bf3811f2add654e12ed6844b1b2fcb0e\ntimeout_sec: 480\nexit_code: 0\nelapsed_sec: 313.19\nstatus: ok\n----- stdout -----\n[PASS] 01 axial and off-axis directed paths leave exactly one positive and one negative unit charge\n[PASS] 02 the periodic Coulomb plus harmonic coordinate is cubic- and inversion-invariant\n[PASS] 03 the complete 508-state charged L=2 orbit obeys the mixed-estimator identity at both detunings\n[PASS] 04 the charged projector reproduces both exact L=2 finite-detuning ground energies\n[PASS] 05 every projector population preserves its exact charge pattern and local flippability count\n[PASS] 06 all charged populations retain effective weight and final-state diversity\n[PASS] 07 every separated charge pair has a resolved positive creation energy above its vacuum component\n[PASS] 08 opposite-charge energy rises from one-link separation to the half-box endpoint on every volume\n[PASS] 09 the periodic Coulomb coordinate has a resolved positive coefficient at both detunings\n[PASS] 10 periodic and raw 1/R Coulomb forms remain near-degenerate and beat confining or constant controls\n[PASS] 11 charge-response and topological-flux determinations of U agree within twenty-five percent\n[PASS] 12 the raw 1/R amplitude tracks the independently fixed U/(4 pi) normalization within thirty percent\n[PASS] 13 off-axis charge geometries keep a positive flux-matched Coulomb coefficient and reject string growth\n[PASS] 14 path-order and cubic-rotation controls reproduce equal charge energies within four errors\n[PASS] 15 doubled L=8 populations reproduce the positive long-distance charge-energy rise\nEXACT_CHARGE V=0.95 orbit=508 E0=-0.349861309 projector=-0.350107486+/-0.000109301\nEXACT_CHARGE V=0.90 orbit=508 E0=-0.706280403 projector=-0.706326091+/-0.000283532\nAXIAL_FIT V=0.95 U_charge=0.160609+/-0.015345 U_flux=0.162638 A_1overR=0.016382 U_flux/(4pi)=0.012942 rss=coulomb:0.00003535,inverse_distance:0.00003263,linear_distance:0.00010862,quadratic_distance:0.00015186,constant:0.00018761\nAXIAL_FIT V=0.90 U_charge=0.301440+/-0.026769 U_flux=0.321114 A_1overR=0.030903 U_flux/(4pi)=0.025553 rss=coulomb:0.00022624,inverse_distance:0.00019146,linear_distance:0.00047988,quadratic_distance:0.00070220,constant:0.00100906\nOFF_AXIS_FIT U_charge=0.272689+/-0.029369 U_flux=0.321114 rss_coulomb=0.00032930 rss_linear=0.00047687\nPOPULATION_CONTROL primary_rise=0.028208333 doubled_rise=0.026075000\nCERTIFICATE: fixed_opposite_unit_charges=True finite_population=True finite_imaginary_time=True component_complete=False thermodynamic_limit=False real_time_spectrum=False\nRESOLUTION: per_element=directed path and square flips; per_site=two fixed charges and exact Gauss; per_mode=periodic Coulomb kernel plus harmonic sector; per_block=L2 exact and L4,6,8 projector; lattice_wide=finite-volume static response, not an infinite-volume potential theorem\nTOTAL: PASS=15 FAIL=0\n\n----- stderr -----\n\n"
+    },
+    {
+      "id": "magnetic",
+      "source_family": "checkerboard_cartesian_response",
+      "capture": {
+        "successor_pr": 7966,
+        "head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+        "original_constituents": [
+          {
+            "pr": 7946,
+            "head": "4b4919dc58cb35d51ed675ba69ec9431e319d338",
+            "base": "ecbea1587cf8c29e94caf8eaa3eb28fab2558b5f"
+          }
+        ],
+        "path": "logs/runner-cache/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.txt",
+        "mode": "100644",
+        "blob": "d36383857f9c264e12b988467c886d2a8bed165a",
+        "sha256": "2e483ff3d5bc34e7fdde41b8ab06790be1ea487a167bb10b33936e35ff22c894",
+        "bytes": 3716
+      },
+      "producer": {
+        "path": "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+        "mode": "100644",
+        "blob": "6e84fb7ee3751d4855253c76e45bb4e716061d71",
+        "sha256": "a61b5ca89ea5b39ac932744b12e3af46167d81fd4ed5eb52acdb08644f74b28b",
+        "bytes": 32589
+      },
+      "available_declared_inputs": [
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "mode": "100644",
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py",
+          "mode": "100644",
+          "blob": "e1c12280074e84f99f53361b1b0ce686417b94d9",
+          "sha256": "8411d756971f60838c962dc6b0fcc022a2eff553d3c9df608b1283503af90700",
+          "bytes": 32085
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+          "mode": "100644",
+          "blob": "63c57626a6d31a2241996e99b6af603280111d6b",
+          "sha256": "8becfe5e91a731e38bc056b69044f03f8c40ced504641ba6893f3410893c1706",
+          "bytes": 30679
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+          "mode": "100644",
+          "blob": "a5133f6b3a369fa78808be7cc46d92e892da425d",
+          "sha256": "5bb190ef328d095d83eacf927e2c3964499f178e6f41254368047957a893227d",
+          "bytes": 44866
+        }
+      ],
+      "available_declared_input_fingerprint_sha256": "1660a34646f70428d69a0109352991d6656c1fe479c7cec7d9d6f3665c22447a",
+      "historical_header_input_fingerprint_sha256": "1660a34646f70428d69a0109352991d6656c1fe479c7cec7d9d6f3665c22447a",
+      "snapshot_inputs_match_historical_header": true,
+      "input_scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "payload": "===== runner cache v1 =====\nrunner: scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py\nrunner_sha256: a61b5ca89ea5b39ac932744b12e3af46167d81fd4ed5eb52acdb08644f74b28b\ninput_fingerprint_sha256: 1660a34646f70428d69a0109352991d6656c1fe479c7cec7d9d6f3665c22447a\ntimeout_sec: 1800\nexit_code: 0\nelapsed_sec: 1139.22\nstatus: ok\n----- stdout -----\n[PASS] 01 exact L=2 analytic continuation reproduces the positive Hermitian twist curvature\n[PASS] 02 every finite-volume imaginary-twist pair resolves positive physical magnetic curvature\n[PASS] 03 two continuation radii reproduce the zero-angle curvature within twenty percent\n[PASS] 04 the stochastic L=2 twist curvatures reproduce exact diagonalization\n[PASS] 05 the L=4,6,8,10 magnetic response is volume-stable at both detunings\n[PASS] 06 the relaxed RK twist curvature is positive and stable across L=4,6,8,10\n[PASS] 07 the relaxed RK stiffness is strictly below the older flippability variational upper cost\n[PASS] 08 the relaxed magnetic stiffness changes by less than ten percent across the two finite detunings\n[PASS] 09 three independently sampled cubic orientations reproduce one magnetic response\n[PASS] 10 doubled L=8 populations reproduce the primary magnetic response within eight percent\n[PASS] 11 the same-detuning Maxwell comparison localizes a weak-detuning spectral-normalization tension while the stronger detuning remains statistically compatible\n[PASS] 12 every twisted projector preserves exact local weights, Gauss charge, flux, and valid transition probabilities\n[PASS] 13 every twisted population retains the declared weight and diversity floors\nEXACT_CONTINUATION V=1.00 K_real=0.105119698 K_imag=0.105123106\nEXACT_CONTINUATION V=0.95 K_real=0.107537604 K_imag=0.107540619\nEXACT_CONTINUATION V=0.90 K_real=0.109733090 K_imag=0.109735755\nTWIST V=0.90 L=2 eta=0.10 K=0.120745+/-0.016791\nTWIST V=0.90 L=2 eta=0.16 K=0.115056+/-0.008840\nTWIST V=0.90 L=4 eta=0.10 K=0.085277+/-0.006352\nTWIST V=0.90 L=4 eta=0.16 K=0.078927+/-0.002422\nTWIST V=0.90 L=6 eta=0.10 K=0.073549+/-0.004170\nTWIST V=0.90 L=6 eta=0.16 K=0.075582+/-0.001913\nTWIST V=0.90 L=8 eta=0.10 K=0.078774+/-0.003241\nTWIST V=0.90 L=8 eta=0.16 K=0.076419+/-0.001540\nTWIST V=0.90 L=10 eta=0.10 K=0.073076+/-0.002947\nTWIST V=0.90 L=10 eta=0.16 K=0.074934+/-0.001525\nTWIST V=0.95 L=2 eta=0.10 K=0.082390+/-0.017101\nTWIST V=0.95 L=2 eta=0.16 K=0.094147+/-0.008488\nTWIST V=0.95 L=4 eta=0.10 K=0.080811+/-0.003702\nTWIST V=0.95 L=4 eta=0.16 K=0.075051+/-0.002509\nTWIST V=0.95 L=6 eta=0.10 K=0.078690+/-0.002839\nTWIST V=0.95 L=6 eta=0.16 K=0.076810+/-0.001539\nTWIST V=0.95 L=8 eta=0.10 K=0.071645+/-0.001754\nTWIST V=0.95 L=8 eta=0.16 K=0.073934+/-0.001054\nTWIST V=0.95 L=10 eta=0.10 K=0.074463+/-0.001492\nTWIST V=0.95 L=10 eta=0.16 K=0.074956+/-0.000948\nSUMMARY V=0.95 K=0.075561+/-0.000915 K_L=4:0.076864,6:0.077237,8:0.073327,10:0.074815\nSUMMARY V=0.90 K=0.076589+/-0.001155 K_L=4:0.079733,6:0.075228,8:0.076852,10:0.074541\nRK_RELAXED K=0.073357+/-0.000881 K_L=4:0.075488,6:0.072042,8:0.072466,10:0.073433 variational_upper=0.259800\nORIENTATION_CONTROL axis=0:0.077130,axis=1:0.073878,axis=2:0.075619\nPOPULATION_CONTROL V=0.95 primary=0.073327 doubled=0.076116+/-0.000736\nMAXWELL_JOIN V=0.95 UK=0.012289+/-0.001169 c2_dynamic=0.027162+/-0.005322 difference_sigma=2.729\nPOPULATION_CONTROL V=0.90 primary=0.076852 doubled=0.075662+/-0.000900\nMAXWELL_JOIN V=0.90 UK=0.024594+/-0.002083 c2_dynamic=0.032683+/-0.005489 difference_sigma=1.378\nHEALTH min_ess=0.946030 min_unique=0.705078\nCERTIFICATE: exact_L2_real_twist=True imaginary_twist_positive_projector=True finite_population=True finite_imaginary_time=True thermodynamic_limit=False\nTOTAL: PASS=13 FAIL=0\n\n----- stderr -----\n\n"
+    },
+    {
+      "id": "late_time",
+      "source_family": "transverse_electric_spectrum",
+      "capture": {
+        "successor_pr": 7966,
+        "head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+        "original_constituents": [
+          {
+            "pr": 7952,
+            "head": "48790c92bec9287e4a30f1e6595afa1d076b8998",
+            "base": "4b4919dc58cb35d51ed675ba69ec9431e319d338"
+          }
+        ],
+        "path": "logs/runner-cache/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.txt",
+        "mode": "100644",
+        "blob": "0a432eb97ba04f68695fcd6cbe742a73dd115ddd",
+        "sha256": "17345ac4bd2839c8d0cd315fdc0d5c6126e3b8879f1b3f49bd055c637d0ec481",
+        "bytes": 4692
+      },
+      "producer": {
+        "path": "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+        "mode": "100644",
+        "blob": "4a9d83e9405a4a41e97706971a8863bc233ea78e",
+        "sha256": "8cea10e54e91b643a39d2a757eb120ee992197defdf45dce4cac98e36d5197cd",
+        "bytes": 19470
+      },
+      "available_declared_inputs": [
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "mode": "100644",
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+          "mode": "100644",
+          "blob": "a5133f6b3a369fa78808be7cc46d92e892da425d",
+          "sha256": "5bb190ef328d095d83eacf927e2c3964499f178e6f41254368047957a893227d",
+          "bytes": 44866
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py",
+          "mode": "100644",
+          "blob": "6e84fb7ee3751d4855253c76e45bb4e716061d71",
+          "sha256": "a61b5ca89ea5b39ac932744b12e3af46167d81fd4ed5eb52acdb08644f74b28b",
+          "bytes": 32589
+        }
+      ],
+      "available_declared_input_fingerprint_sha256": "9b6a38f0f540e8d85aaa89948de6e23724f6cf104375d98e08670fe33935cf36",
+      "historical_header_input_fingerprint_sha256": "9b6a38f0f540e8d85aaa89948de6e23724f6cf104375d98e08670fe33935cf36",
+      "snapshot_inputs_match_historical_header": true,
+      "input_scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "payload": "===== runner cache v1 =====\nrunner: scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py\nrunner_sha256: 8cea10e54e91b643a39d2a757eb120ee992197defdf45dce4cac98e36d5197cd\ninput_fingerprint_sha256: 9b6a38f0f540e8d85aaa89948de6e23724f6cf104375d98e08670fe33935cf36\ntimeout_sec: 10800\nexit_code: 0\nelapsed_sec: 8850.46\nstatus: ok\n----- stdout -----\nROW_DONE V=0.95 L=8 gaps=2-6:0.227459+/-0.002105,6-12:0.225571+/-0.005920,8-14:0.212142+/-0.013521,10-16:0.200953+/-0.015134\nROW_DONE V=0.95 L=10 gaps=2-6:0.166280+/-0.001541,6-12:0.165382+/-0.003382,8-14:0.175927+/-0.007154,10-16:0.170540+/-0.012352\nROW_DONE V=0.95 L=12 gaps=2-6:0.122942+/-0.002131,6-12:0.123095+/-0.004222,8-14:0.127920+/-0.004748,10-16:0.127187+/-0.004562\nROW_DONE V=0.95 L=14 gaps=2-6:0.103678+/-0.004344,6-12:0.103133+/-0.001913,8-14:0.105330+/-0.002852,10-16:0.104357+/-0.002551\nROW_DONE V=1.00 L=8 gaps=2-6:0.177175+/-0.001295,6-12:0.175196+/-0.000501,8-14:0.173903+/-0.003220,10-16:0.175827+/-0.005392\nROW_DONE V=1.00 L=10 gaps=2-6:0.116420+/-0.000780,6-12:0.115841+/-0.001432,8-14:0.115427+/-0.001709,10-16:0.114165+/-0.001761\nROW_DONE V=1.00 L=12 gaps=2-6:0.082318+/-0.000478,6-12:0.081900+/-0.000480,8-14:0.082161+/-0.000786,10-16:0.082688+/-0.001188\nROW_DONE V=1.00 L=14 gaps=2-6:0.060838+/-0.000154,6-12:0.060587+/-0.000435,8-14:0.060326+/-0.000346,10-16:0.059544+/-0.000840\n[PASS] 01 every late-time population preserves exact flippability, Gauss charge, and zero electric flux\n[PASS] 02 late-time populations retain effective weight and at least forty independent genealogy labels\n[PASS] 03 every cubic-average correlator remains positive through tau=16 with a bounded imaginary residual\n[PASS] 04 both early and late transverse excess fits retain a positive q-squared coefficient\n[PASS] 05 late-time projection leaves the two-term infrared coefficient statistically unchanged\n[PASS] 06 the q-squared plus q-fourth truncation rejects fixed c-squared=U K at late time\n[PASS] 07 free q-sixth fits at both late windows are compatible with the independent U K prediction\n[PASS] 08 fixed c-squared=U K plus q-fourth and q-sixth fits every projection window without a significant penalty\n[PASS] 09 fixed-U K late fits resolve positive q-fourth and negative q-sixth corrections\n[PASS] 10 the terminal and primary late-time windows give compatible infrared coefficients\n[PASS] 11 the exact L=2 Green correlator retains positive early and late decay scales\nEXCESS_FIT window=2-6 c2=0.03268505+/-0.00323266 q4=0.00549301+/-0.00765140 chi2=5.1505 fixed_UK_q4=0.05162424+/-0.00225498 fixed_chi2=44.9584 fixed_delta_chi2=39.8079\nEXCESS_FIT window=6-12 c2=0.03455281+/-0.00370799 q4=0.00113067+/-0.01176775 chi2=1.0403 fixed_UK_q4=0.06607307+/-0.00463601 fixed_chi2=37.0914 fixed_delta_chi2=36.0511\nEXCESS_FIT window=8-14 c2=0.04011421+/-0.00648317 q4=-0.00995362+/-0.02345506 chi2=3.1486 fixed_UK_q4=0.08415560+/-0.00832706 fixed_chi2=21.5690 fixed_delta_chi2=18.4204\nEXCESS_FIT window=10-16 c2=0.04554496+/-0.00667277 q4=-0.04051973+/-0.02625616 chi2=1.4603 fixed_UK_q4=0.08285248+/-0.00875200 fixed_chi2=26.2987 fixed_delta_chi2=24.8384\nHIGHER_GRADIENT_FIT window=2-6 c2=0.01524209+/-0.01192865 q4=0.09523790+/-0.05957030 q6=-0.10526357+/-0.06929243 chi2=2.8427 fixed_UK_q4=0.10980592+/-0.01090123 fixed_UK_q6=-0.12177535+/-0.01988332 fixed_chi2=2.9040 fixed_delta_chi2=0.0613\nHIGHER_GRADIENT_FIT window=6-12 c2=0.03335328+/-0.01183785 q4=0.00887585+/-0.07353607 q6=-0.01051084+/-0.09850836 chi2=1.0289 fixed_UK_q4=0.13756763+/-0.01509577 fixed_UK_q6=-0.17697496+/-0.03220922 fixed_chi2=4.1951 fixed_delta_chi2=3.1662\nHIGHER_GRADIENT_FIT window=8-14 c2=0.01488249+/-0.02148720 q4=0.15557378+/-0.13642424 q6=-0.22958916+/-0.18640501 chi2=1.6316 fixed_UK_q4=0.17183688+/-0.02256032 fixed_UK_q6=-0.25103881+/-0.05706755 fixed_chi2=1.6462 fixed_delta_chi2=0.0146\nHIGHER_GRADIENT_FIT window=10-16 c2=0.02667354+/-0.02425021 q4=0.08420992+/-0.15631409 q6=-0.17053766+/-0.21068521 chi2=0.8051 fixed_UK_q4=0.17612503+/-0.02187288 fixed_UK_q6=-0.29068512+/-0.05878938 fixed_chi2=1.1570 fixed_delta_chi2=0.3518\nMAXWELL_TARGET UK=0.012289+/-0.001169 early_c2=0.032685+/-0.003233 late_c2=0.040114+/-0.006483 terminal_c2=0.045545+/-0.006673\nGENEALOGY min_ess=0.972682 min_origin_tau16=91 min_forward=352\nCERTIFICATE: exact_positive_green=True paired_RK_control=True finite_population=True finite_imaginary_time=True thermodynamic_limit=False\nTOTAL: PASS=11 FAIL=0\n\n----- stderr -----\nRECOVERY_PROVENANCE: complete live stdout preserved before the cache wrapper rejected changed parent-directory stat tokens; launch and completion runner/input content identities were identical. Elapsed time is derived from live-log timestamps.\n"
+    },
+    {
+      "id": "infrared",
+      "source_family": "transverse_electric_spectrum",
+      "capture": {
+        "successor_pr": 7966,
+        "head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+        "original_constituents": [
+          {
+            "pr": 7963,
+            "head": "0b63aebcf9df437a95ac23f56b2981ea80e2be6c",
+            "base": "3cd24f9ea3a962088cd285b85a862c591d97b374"
+          }
+        ],
+        "path": "logs/runner-cache/spin_half_cubic_ice_infrared_ladder_2026_09_04.txt",
+        "mode": "100644",
+        "blob": "ab7f6ab668c71968f0d1ceaa2dc9d82ba982546b",
+        "sha256": "09f1e590b9cf2cade315bca1a854156a42faba262d22b55f21167bad7a6b798c",
+        "bytes": 1626
+      },
+      "producer": {
+        "path": "scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py",
+        "mode": "100644",
+        "blob": "7b8e9344a9a7855677c7660d2cf5a64c7bc3bda2",
+        "sha256": "80108851a3d3a77e8e2593502abfa17ee72eab7174ad7043f039afe2e5133867",
+        "bytes": 2904
+      },
+      "available_declared_inputs": [
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "mode": "100644",
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+          "mode": "100644",
+          "blob": "a5133f6b3a369fa78808be7cc46d92e892da425d",
+          "sha256": "5bb190ef328d095d83eacf927e2c3964499f178e6f41254368047957a893227d",
+          "bytes": 44866
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py",
+          "mode": "100644",
+          "blob": "4a9d83e9405a4a41e97706971a8863bc233ea78e",
+          "sha256": "8cea10e54e91b643a39d2a757eb120ee992197defdf45dce4cac98e36d5197cd",
+          "bytes": 19470
+        }
+      ],
+      "available_declared_input_fingerprint_sha256": "535d78a5839e9248fddf6f57407fa898e16f5b6bb4362f041776b0e2c93b9672",
+      "historical_header_input_fingerprint_sha256": "535d78a5839e9248fddf6f57407fa898e16f5b6bb4362f041776b0e2c93b9672",
+      "snapshot_inputs_match_historical_header": true,
+      "input_scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "payload": "===== runner cache v1 =====\nrunner: scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py\nrunner_sha256: 80108851a3d3a77e8e2593502abfa17ee72eab7174ad7043f039afe2e5133867\ninput_fingerprint_sha256: 535d78a5839e9248fddf6f57407fa898e16f5b6bb4362f041776b0e2c93b9672\ntimeout_sec: 21600\nexit_code: 1\nelapsed_sec: 26040.72\nstatus: nonzero_exit\n----- stdout -----\nROW_DONE V=0.95 L=16 gaps=2-6:0.084514+/-0.003244,6-12:0.086122+/-0.004536,8-14:0.081119+/-0.004585,10-16:0.077796+/-0.007371\nROW_DONE V=0.95 L=18 gaps=2-6:0.066003+/-0.004320,6-12:0.068902+/-0.003290,8-14:0.065730+/-0.003097,10-16:0.064071+/-0.004577\nROW_DONE V=1.00 L=16 gaps=2-6:0.046070+/-0.000380,6-12:0.046677+/-0.000399,8-14:0.046648+/-0.000423,10-16:0.047072+/-0.000347\nROW_DONE V=1.00 L=18 gaps=2-6:0.036044+/-0.000274,6-12:0.037248+/-0.000252,8-14:0.037106+/-0.000337,10-16:0.037170+/-0.000372\n[PASS] 01 every infrared population preserves exact counts, Gauss charge, and zero electric flux\n[FAIL] 02 infrared populations retain the declared weight and genealogy floors\n[PASS] 03 every infrared correlator remains positive through tau=16 with bounded imaginary residual\nINFRARED_HEALTH min_ess=0.939055 min_origin_tau16=18 min_forward=92\nCERTIFICATE: lower_momenta=L16,L18 outer_populations=True finite_population=True finite_imaginary_time=True thermodynamic_limit=False\nTOTAL: PASS=2 FAIL=1\n\n----- stderr -----\nRECOVERY_PROVENANCE: complete live stdout preserved before the cache wrapper rejected changed parent-directory stat tokens; launch and completion runner/input content identities were identical. Elapsed time is derived from live-log timestamps.\n"
+    },
+    {
+      "id": "replay",
+      "source_family": "transverse_electric_spectrum",
+      "capture": {
+        "successor_pr": 7966,
+        "head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+        "original_constituents": [
+          {
+            "pr": 7966,
+            "head": "369f785003f19c1ec5e8c4a6f1155c2827a7986b",
+            "base": "0b63aebcf9df437a95ac23f56b2981ea80e2be6c"
+          }
+        ],
+        "path": "logs/runner-cache/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.txt",
+        "mode": "100644",
+        "blob": "aa47208e8dd299b04e558fa5254d4ecf9aceb791",
+        "sha256": "849646d782df0c360fd1d180b4d966b3499979b43d1c709b11b5c1e43c2a92e0",
+        "bytes": 5718
+      },
+      "producer": {
+        "path": "scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py",
+        "mode": "100644",
+        "blob": "204e66cbe037cbd806e44abd6260c31fc751dbf3",
+        "sha256": "8d87b4c4ffc219e7557cf0ad19213842738f8f8a2879493612e3740fd19d26da",
+        "bytes": 17573
+      },
+      "available_declared_inputs": [
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "mode": "100644",
+          "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "bytes": 11333
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03.py",
+          "mode": "100644",
+          "blob": "63c57626a6d31a2241996e99b6af603280111d6b",
+          "sha256": "8becfe5e91a731e38bc056b69044f03f8c40ced504641ba6893f3410893c1706",
+          "bytes": 30679
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py",
+          "mode": "100644",
+          "blob": "a5133f6b3a369fa78808be7cc46d92e892da425d",
+          "sha256": "5bb190ef328d095d83eacf927e2c3964499f178e6f41254368047957a893227d",
+          "bytes": 44866
+        },
+        {
+          "path": "scripts/spin_half_cubic_ice_forward_length_ladder_2026_09_04.py",
+          "mode": "100644",
+          "blob": "eba71153ee5166951ab6e9ea75691e9ef3b7f748",
+          "sha256": "7ac21e04324b48c9215524d1e889693ee329a5fe0e3495d1a8c14832249bd953",
+          "bytes": 14379
+        }
+      ],
+      "available_declared_input_fingerprint_sha256": "527397dd8844b51564d926123284452445b7be28b5ea01aaed5f8c6b3ca007ee",
+      "historical_header_input_fingerprint_sha256": "527397dd8844b51564d926123284452445b7be28b5ea01aaed5f8c6b3ca007ee",
+      "snapshot_inputs_match_historical_header": true,
+      "input_scope": "Declared inputs at the frozen successor only; undeclared helper closure and production validity remain unreviewed.",
+      "payload": "===== runner cache v1 =====\nrunner: scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py\nrunner_sha256: 8d87b4c4ffc219e7557cf0ad19213842738f8f8a2879493612e3740fd19d26da\ninput_fingerprint_sha256: 527397dd8844b51564d926123284452445b7be28b5ea01aaed5f8c6b3ca007ee\ntimeout_sec: 64800\nexit_code: 1\nelapsed_sec: 20807.00\nstatus: nonzero_exit\n----- stdout -----\nREPLICA_DONE V=1.00 L=16 replica=1/6\nREPLICA_DONE V=1.00 L=16 replica=2/6\nREPLICA_DONE V=1.00 L=18 replica=1/6\nREPLICA_DONE V=1.00 L=18 replica=2/6\nREPLICA_DONE V=1.00 L=16 replica=3/6\nREPLICA_DONE V=1.00 L=16 replica=4/6\nREPLICA_DONE V=1.00 L=16 replica=5/6\nREPLICA_DONE V=1.00 L=16 replica=6/6\nPAIRED_ROW V=1.00 L=16 window=2-6 gaps=6:0.04668739+/-0.00031957,12:0.04668739+/-0.00031957,20:0.04668739+/-0.00031957 cov=1.021270401734e-07,1.021270401734e-07,1.021270401734e-07,1.021270401734e-07,1.021270401734e-07,1.021270401734e-07,1.021270401734e-07,1.021270401734e-07,1.021270401734e-07\nPAIRED_ROW V=1.00 L=16 window=8-14 gaps=6:0.04595709+/-0.00028473,12:0.04595709+/-0.00028473,20:0.04595709+/-0.00028473 cov=8.107349362024e-08,8.107349362024e-08,8.107349362024e-08,8.107349362024e-08,8.107349362024e-08,8.107349362024e-08,8.107349362024e-08,8.107349362024e-08,8.107349362024e-08\nROW_HEALTH V=1.00 L=16 min_ess=1.000000 min_origin_tau16=1536 min_forward=1536\nREPLICA_DONE V=1.00 L=18 replica=3/6\nREPLICA_DONE V=1.00 L=18 replica=4/6\nREPLICA_DONE V=1.00 L=18 replica=5/6\nREPLICA_DONE V=1.00 L=18 replica=6/6\nPAIRED_ROW V=1.00 L=18 window=2-6 gaps=6:0.03681395+/-0.00021043,12:0.03681395+/-0.00021043,20:0.03681395+/-0.00021043 cov=4.427919972333e-08,4.427919972333e-08,4.427919972333e-08,4.427919972333e-08,4.427919972333e-08,4.427919972333e-08,4.427919972333e-08,4.427919972333e-08,4.427919972333e-08\nPAIRED_ROW V=1.00 L=18 window=8-14 gaps=6:0.03700905+/-0.00025207,12:0.03700905+/-0.00025207,20:0.03700905+/-0.00025207 cov=6.354112850067e-08,6.354112850067e-08,6.354112850067e-08,6.354112850067e-08,6.354112850067e-08,6.354112850067e-08,6.354112850067e-08,6.354112850067e-08,6.354112850067e-08\nROW_HEALTH V=1.00 L=18 min_ess=1.000000 min_origin_tau16=1536 min_forward=1536\nREPLICA_DONE V=0.95 L=16 replica=1/6\nREPLICA_DONE V=0.95 L=16 replica=2/6\nREPLICA_DONE V=0.95 L=18 replica=1/6\nREPLICA_DONE V=0.95 L=18 replica=2/6\nREPLICA_DONE V=0.95 L=16 replica=3/6\nREPLICA_DONE V=0.95 L=16 replica=4/6\nREPLICA_DONE V=0.95 L=16 replica=5/6\nREPLICA_DONE V=0.95 L=16 replica=6/6\nPAIRED_ROW V=0.95 L=16 window=2-6 gaps=6:0.08917261+/-0.00156682,12:0.08515066+/-0.00176782,20:0.08880624+/-0.00409377 cov=2.454917168427e-06,1.775489077296e-06,3.762819757954e-06,1.775489077296e-06,3.125182703635e-06,6.184534351226e-06,3.762819757954e-06,6.184534351226e-06,1.675898733021e-05\nPAIRED_ROW V=0.95 L=16 window=8-14 gaps=6:0.08539755+/-0.00246898,12:0.09003998+/-0.00526249,20:0.09054816+/-0.00591009 cov=6.095839378994e-06,9.982588243765e-06,4.353249249504e-06,9.982588243765e-06,2.769377505409e-05,2.448264919415e-05,4.353249249504e-06,2.448264919415e-05,3.492917803471e-05\nROW_HEALTH V=0.95 L=16 min_ess=0.960210 min_origin_tau16=118 min_forward=74\nREPLICA_DONE V=0.95 L=18 replica=3/6\nREPLICA_DONE V=0.95 L=18 replica=4/6\nREPLICA_DONE V=0.95 L=18 replica=5/6\nREPLICA_DONE V=0.95 L=18 replica=6/6\nPAIRED_ROW V=0.95 L=18 window=2-6 gaps=6:0.07547634+/-0.00247577,12:0.07036339+/-0.00341667,20:0.07423651+/-0.00291967 cov=6.129424284189e-06,6.482728379095e-06,5.087313112796e-06,6.482728379095e-06,1.167361591673e-05,4.199990209862e-06,5.087313112796e-06,4.199990209862e-06,8.524452741212e-06\nPAIRED_ROW V=0.95 L=18 window=8-14 gaps=6:0.07442854+/-0.00497829,12:0.07345383+/-0.00801271,20:0.08388134+/-0.01249193 cov=2.478333948187e-05,2.665567075158e-05,3.503151810752e-05,2.665567075158e-05,6.420359422109e-05,9.159482872104e-05,3.503151810752e-05,9.159482872104e-05,1.560483468190e-04\nROW_HEALTH V=0.95 L=18 min_ess=0.943968 min_origin_tau16=57 min_forward=36\n[PASS] 01 every replay population preserves exact counts, Gauss charge, and zero electric flux\n[FAIL] 02 every replay population satisfies the pre-existing weight and genealogy floors\n[PASS] 03 every paired-forward correlator, gap, and covariance is finite and positive\n[PASS] 04 detuned primary covariances are full rank and RK forward identity is exact\nCERTIFICATE: lower_momenta=L16,L18 replicas=6 detuned_population=6144 rk_population=1536 paired_forward_lengths=6,12,20 measurement_origins=4 primary_window=8-14 finite_volume=True thermodynamic_limit=False\nTOTAL: PASS=3 FAIL=1\nRECOVERY_N5_EXECUTION_CERTIFICATE (post-run scope annotation; numerical stdout above is unchanged)\nper_element: checked and not executed — the replay evolves population states and emits no per-element Record formation observable, so this resolution was not exercised.\nper_site: checked and not executed — no site-local Record or matter-response measurement is part of this transverse correlator runner, so site resolution remains open.\nper_mode: checked — paired forward endpoints F=6,12,20 were evaluated as separate endpoint modes; the reported residual is the aggregate descendant-count guard.\nper_block: checked and not executed — four measurement-origin blocks were sampled, but no Record compiler or energy-ledger block was executed in this campaign.\nlattice_wide: checked — full-row counts, Gauss charge, zero flux, gaps, covariance finiteness, and health minima were evaluated; L=18 V=0.95 reached min_forward=36.\n\n----- stderr -----\nRECOVERY_PROVENANCE: clean canonical replay captured from session 44554; row-parallel mode uses the unchanged predeclared seeds, populations, checks, and thresholds.\nRECOVERY_N5_NOTE: scope certificate appended after capture; no numerical runner line was edited.\n"
+    }
+  ]
+}
