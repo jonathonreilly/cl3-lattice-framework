@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/u1_minimal_maxwell_generator_uniqueness_2026_09_03.py
+runner_sha256: d5963665437c2bec0af54dc64f9c27ba6c3a714c96f32843ad89125b712dc0c9
+input_fingerprint_sha256: 039be0e0e15bb24559f2ae68c432433715e263aceddb4217b5566600eb30e680
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+[PASS] 01 gauge invariance leaves exactly the oriented curl in one face star
+[PASS] 02 all 625 small integer face stencils are invariant exactly when proportional to curl
+[PASS] 03 a one-entry boundary-sign mutation is rejected by the gauge equations
+[PASS] 04 gauge invariance alone leaves one curl coefficient per face orientation
+[PASS] 05 proper-cubic orientation equality reduces the three coefficients to one scalar
+[PASS] 06 the proper cubic group is transitive on all six oriented face normals
+[PASS] 07 the role geometry permits no nearest-neighbor edge-edge or face-face linear coupling
+[PASS] 08 each dynamical site has exactly four opposite-role dynamical neighbors
+[PASS] 09 the unique local stencil assembles into the exact global incidence complex
+[PASS] 10 positive diagonal energy conservation kills every real scalar onsite term
+[PASS] 11 energy conservation fixes the reverse stencil as the weighted negative adjoint
+[PASS] 12 the complete positive coefficient family conserves its diagonal energy
+[PASS] 13 the complete coefficient family preserves both Gauss rows
+[PASS] 14 after field normalization the sole dynamical scalar is speed sqrt(alpha beta)
+[PASS] 15 positive field rescaling normalizes the positive-orientation family to one Yee speed
+[PASS] 16 negative coupling preserves gauge and energy; magnetic reversal, not positive scaling alone, fixes its orientation
+[PASS] 17 the classified generator has exactly the two Maxwell branches on every tested mode
+[PASS] 18 orientation-dependent coefficients violate cubic degeneracy
+[PASS] 19 using the same adjoint sign violates conservative skewness
+[PASS] 20 a diffusive damping term lies outside the conservative class
+[PASS] 21 deleting one orientation exits the cubic class and loses one branch
+[PASS] 22 the explicit one-step Euler map is local but not exactly norm preserving
+[PASS] 23 the exact Cayley tick is norm preserving but spreads beyond one physical star
+[PASS] 24 the two-reflection sampler lift exits the minimal E-plus-B payload class
+[PASS] 25 supplied reciprocal coefficients give unit speed; the conservative gauge class also permits other speeds
+per_element: all 625 small face stencils and every exact gauge constraint row are classified
+per_site: the full L3 role geometry excludes same-role neighbors and leaves four edge-face couplings
+per_mode: every momentum on L=3,4,5,7 is checked for the unique two-branch spectrum
+per_block: gauge, cubic, energy-adjoint, field-rescaling, Euler, and Cayley blocks are contrasted
+lattice_wide: the global 81-by-81 curl and 162-variable generator are assembled from the unique stencil
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+
