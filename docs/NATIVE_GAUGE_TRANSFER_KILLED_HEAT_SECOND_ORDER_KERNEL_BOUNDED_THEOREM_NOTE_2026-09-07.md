@@ -94,9 +94,9 @@ C_h(p,q)=h²(t/4)L_x²s_t^C(x_p,x_q).
 Then(A) implies
 
 ||M_a[K_(beta t)-G_h-h²C_h]M_b||HS
-<18h^4 (h²sum|a_p|²)^(1/2)(h²sum|b_p|²)^(1/2). (D)
+<=18h^4 (h²sum|a_p|²)^(1/2)(h²sum|b_p|²)^(1/2). (D)
 
-Thus (D) also bounds the operator norm. It requires two-sided summable weights; an unweighted or one-sided estimate does not follow from(A).
+The nonstrict form includes the case where either weight is identically zero. Thus (D) also bounds the operator norm. It requires two-sided summable weights; an unweighted or one-sided estimate does not follow from(A).
 
 For the actual W=xy(x+y)e^-Q/2, use Q>=x²+y² and (x+y)^3<=4(x³+y³) to obtain
 W(x,y)<=0.5(x³+y³)exp(-x²-y²).

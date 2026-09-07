@@ -1,0 +1,9 @@
+# Follow-on exact energy-preserving control family
+
+2026-09-07, before nullspace execution. Preserve original fixture and obstruction; this is a separately motivated supplement, not part of its original preregistration.
+
+Change ONLY the requirement [H,P_legal]=0: remove it, allowing intermediate fuel/head/label workspace states. Keep the same nine-qubit coordinates, target/source, K=q(I+Yx)+EB, old Record [H,Zr]=0, and [H,Nhead]=0. Keep both complete-graph and fixed path at-most-two Pauli Hamiltonian families (report strictly weight-two subset as well). Constraints act on each complete linear combination, not separately on summands. No physical interaction or gate primitive is inferred.
+
+Use exact sparse rational row reduction of Pauli-dictionary commutators. First report ranks/nullities and exact basis residuals. Then test whether every allowed basis Hamiltonian commutes with the active energy Qactive=q(I+Yx), equivalently its spectral projector onto energy2. This candidate invariant is frozen before computation: if true, initial active energy2 and target0 prove all concatenations impossible, with no direct-element shortcut. If false, use the preregistered cyclic/Lie procedure instead; do not infer failure merely from lack of direct source-target elements. Also report fuel commutation separately: fuel itself need not be invariant because the zero-active-energy subspace admits fuel changes.
+
+Controls: identity and K commute; a one-site fuel flip fails; Xf(I-Yx) is a sum-level allowed energy-preserving candidate (and must not be discarded term-by-term); the active energy charge must distinguish source and target exactly. Verify complete-graph inclusion of path controls. Output full exact nullspace basis and hashes. One BLAS thread,180seconds/180MiB. No parameter, encoding or graph change after results; no complete collision or axiomatic controllability claim.

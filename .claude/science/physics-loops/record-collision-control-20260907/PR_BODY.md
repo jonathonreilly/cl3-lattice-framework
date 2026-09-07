@@ -1,0 +1,9 @@
+This implements the complete native sign/refusal isometry on a reduced one-edge cell with explicit energy-conserving pulses. Independent nine-pulse and eight-pulse constructions agree on all eight matter/battery input columns, including sign interference and one cap refusal. The result covers arbitrary mixed and reference-entangled ready inputs.
+
+A separate finite-reservoir theorem approximates the parent rounded cube generator with explicit unitary collisions while retaining its original free Hamiltonian. The sufficient construction uses 5,402 fresh collisions and 37,862 system-storage-plus-ancilla qubits. Its collision error is below 0.01; combined with the parent battery bound, the error is below 1217/11200. Clock, preparation and physical coupling hardware remain excluded from that count.
+
+The intermediate control result distinguishes an encoding obstruction from a global-energy two-site invariant. Both failed families are preserved alongside constructive three-site and fixed-input two-site escapes. The fixed-input escape conserves energy throughout its occupied evolution but does not commute with energy globally. It is not used to contradict the stronger invariant.
+
+Three conditional bounded-theorem sources and six canonical runners pass full pipeline f59be4bccee8, strict lint and all three changed-evidence rows. Exact symbolic checks and independent native matrices preserve frozen parameters, phases, resource limits and unsuccessful discriminators. The helper registry change is additive and claim-local.
+
+The pulse constructions use supplied complete-graph controls on a reduced boundary encoding. They do not implement the full cube, derive nearest-neighbor dynamics, or supply role creation, timing and renewal. Sources remain conditional-support/proposed_retained; no audit verdict or heavy five-family negative-packet PASS is assigned. This PR is stacked on #8004.

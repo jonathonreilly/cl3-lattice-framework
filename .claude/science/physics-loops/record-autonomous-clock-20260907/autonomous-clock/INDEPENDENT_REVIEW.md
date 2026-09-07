@@ -1,0 +1,27 @@
+# Independent finite autonomous clock review and actual native matrix witness
+
+Read the frozen primary clock fixture before independent numerical execution. L=17 edges,18 positions,nine exact native gates followed by eight identities,g=pi/2,t=1 and window±.01 are unchanged. The derivation and error constants are sound with the specified completed-clock comparator.
+
+## Exact gauge, free evolution and all-input comparison
+
+For Wj=Uj...U1 and W0=I, D=sum_j |j><j| tensor Wj is unitary. Direct multiplication gives Hc=D(hspin tensor I)D^dagger, with hspin's offdiagonal gj=g sqrt((j+1)(17-j)). This is2gJx for spin17/2. Every actual native Uj commutes with the original K, so [D,I tensor K]=0 and Htot=D(hspin tensor I+I tensor K)D^dagger. The propagated source therefore has clock amplitudes aj(t)=sqrt(C(17,j))cos(gt)^(17-j)(-i sin(gt))^j and native prefix Wj exp(-itK) on each component. Original free evolution is retained, not dropped or undone.
+
+All padded prefixes j>=9 equal the target native ready-input isometry V. Let eta=sum_{j<9}|aj|² and c(t) be the normalized clock tail on j>=9. The actual isometry has overlap sqrt(1-eta) I with the target exp(-itK)V tensor c(t). The unfinished part is orthogonal in clock position. Thus pure inputs, including arbitrary reference entanglement, have retained trace-norm difference exactly2sqrt(eta), and mixed inputs satisfy the same bound. This is a channel/diamond bound on the ready eight-dimensional input, not on arbitrary preexisting clock or native label/fuel inputs. The normalized tail is time-dependent but independent of matter/reference input.
+
+After discarding the clock, completed components give the same ideal channel with weight1-eta; the remaining CP mixture has total weighteta. Therefore the system-only trace-norm/diamond bound is2eta. One must not substitute this linear bound for the retained-clock bound or compare against the unnormalized completed tail.
+
+## Uniform window and resources
+
+For j<9 the missing-step count17-j is at least9. Its expectation is17cos²(gt), so Markov gives eta<=17cos²(gt)/9. In the specified window cos²(gt)=sin²(g(t-1))<=pi²/40000, yielding eta<=17pi²/360000. Replacing pi by22/7 gives2057/4410000≈.0004664399093<1/2000. Hence retained error<1/20 and system-only error<1/1000. These intentionally conservative analytic certificates hold throughout the window, rather than only at sampled times.
+
+The exact legal-clock spectrum is g times(-17,-15,...,17), so ||Hc||=17g=26.7035376. The largest edge coefficient is9g=14.1371669. Original ||K||=5.5 gives legal ||Htot||<=32.2035376<33. The natural multi-clock-excitation extension has a different bound: triangle sum of edge norms is197.0980379 for Hc, rather than26.7; a simple rational bound is17*9g. It is incorrect to transfer the one-hot norm to all unused register states or claim a globally conditioned inert extension is automatically a five-site local law.
+
+Each actual Uj has union support at most three native registers; exponentiation of a generator on those same registers does not expand that union. Consequently Uj tensor sigma+_(j+1)sigma-_j plus its adjoint has support at most five on a one-hot physical-clock extension. This is complete-connectivity support counting, not spatial nearest-neighbor geometry or gate synthesis. The27-qubit count is the stated reduced nine-register carrier plus18 one-hot clock registers. It is not the full parent-square count including boundary qubits omitted by fixed-sector reduction, nor a simulation of2^27 amplitudes. Static engineered couplings, coherent operator types and initial pure |clock0> preparation remain supplied resources.
+
+## Actual native-plus-clock matrix checks
+
+Independent check.py reconstructs the NINE native gates from projector formulas, using the separately frozen independent full-isometry carrier matrices. It imports no primary checker. It verifies their exact all-eight-column target, builds the literal sparse4608x4608 originalK+clock Hamiltonian, checks its original-energy commutator, and tests a full144-column ready-input gauge embedding across all18 positions. The actual matrix Hamiltonian intertwining residual is zero. expm_multiply of this joint matrix at .99,1,1.01,2 agrees with the independently factored native-prefix/binomial-amplitude construction to2.34e-15 or better. At the peak the actual native isometry with clock17 and phase(-i)^17 is checked directly. The original free phase appears in every comparison.
+
+The spectrum residual is1.25e-14; actual joint energy commutator residual1.78e-15. Runtime .420seconds and RSS132.84MiB, under180/180. Source SHA256 d0bf6a22b1ca61fcfffeeccf8d8625faaa5021a3abd4768b6f5456c5eb2cbe32. The analytic binomial formula evaluates unfinished probability≈8.22e-29 at window endpoints; this is NOT a numerically resolved trace-distance measurement, since matrix evolution roundoff is much larger. The claimed certificates use the rational uniform bound. At t=1 the tiny nonzero floating sine/cosine artifact is likewise not physical leakage: exact trigonometry gives eta=0.
+
+At t=2 the clock returns to0 with phase(-1)^17 and the native source prefix is restored, with original free evolution retained. The actual joint matrix verifies this recurrence. The result is a finite autonomous computation window, not terminal trapping, irreversible new-Record formation, a perpetual clock or a reset-free recurrent instrument on fresh inputs. No invariant terminal/permanence claim follows.

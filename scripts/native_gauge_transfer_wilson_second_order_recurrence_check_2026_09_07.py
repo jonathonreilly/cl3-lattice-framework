@@ -6,6 +6,10 @@ signal.alarm(180);start=time.monotonic();AUDIT_TIMEOUT_SEC=180
 import numpy as np
 from scipy.sparse import coo_matrix,eye
 from scipy.sparse.linalg import expm_multiply
+# Finite diagnostic margin separating W2 from W2-W, whose distance is W.
+# This is not an interval error bound or a theorem below beta2048.
+COEFFICIENT_MARGIN=0.25
+D0=27*math.sqrt(3)/math.pi
 checks=0
 def ck(v):
  global checks
@@ -36,27 +40,35 @@ for beta,R,theta in [(128,128,F(1)),(256,192,F(9,10)),(512,256,F(2,3))]:
  A=J-eye(R*R,format='csr');v=np.zeros(R*R);v[0]=1
  k=expm_multiply(beta*A,v,traceA=-beta*R*R)
  ck(np.all(np.isfinite(k)));ck(k.min()>=-1e-14);ck(0<k.sum()<=1+1e-12);ck(k[0]>0)
+ denominator_first_error=beta*(beta**4*k[0]/D0-1)+1
+ ck(abs(denominator_first_error)<COEFFICIENT_MARGIN)
  rows=[]
  for xn,yn in grid:
   p=math.floor(xn*math.sqrt(beta))-1;q=math.floor(yn*math.sqrt(beta))-1;ck(0<=p<R and 0<=q<R)
   x=(p+1)/math.sqrt(beta);y=(q+1)/math.sqrt(beta);Q=x*x+x*y+y*y;W=x*y*(x+y)/2*math.exp(-Q);W2=(3-7*Q/4+Q*Q/4)*W
+  ck(abs(x*math.sqrt(beta)-p-1)<1e-12 and abs(y*math.sqrt(beta)-q-1)<1e-12)
   val=beta**-1.5*k[p*R+q]/k[0]
+  coefficient_error=(beta*(val-W)-W2)/W
+  alternative_error=(beta*(val-W)-(W2-W))/W
+  ck(abs(coefficient_error)<COEFFICIENT_MARGIN)
+  ck(abs(alternative_error)>1-COEFFICIENT_MARGIN)
   # Certified entry-tail with floating denominator scale; NOT a total numerical error bound.
   ratio_tail_scale=beta**-1.5*1e-30/k[0]*(1+k[p*R+q]/k[0])
-  rows.append({'p':p,'q':q,'x':x,'y':y,'kernel_entry':float(k[p*R+q]),'kernel_return':float(k[0]),'v':float(val),'W':W,'W2':W2,'leading_residual':float(val-W),'second_order_residual':float(val-W-W2/beta),'scaled_second_order_residual':float(beta**2*(val-W-W2/beta)),'conditional_truncation_ratio_scale':float(ratio_tail_scale)})
+  rows.append({'relative_coefficient_error':float(coefficient_error),'relative_alternative_error':float(alternative_error),'p':p,'q':q,'x':x,'y':y,'kernel_entry':float(k[p*R+q]),'kernel_return':float(k[0]),'v':float(val),'W':W,'W2':W2,'leading_residual':float(val-W),'second_order_residual':float(val-W-W2/beta),'scaled_second_order_residual':float(beta**2*(val-W-W2/beta)),'conditional_truncation_ratio_scale':float(ratio_tail_scale)})
  opt=math.asinh(3*R/(2*beta));optlog=math.log(2)-opt*R+(2*beta/3)*(math.cosh(opt)-1)
- cases.append({'beta':beta,'R':R,'dimension':R*R,'J_nnz':J.nnz,'survival_mass':float(k.sum()),'return_scaled_beta4':float(beta**4*k[0]),'analytic_certificate':cert,'optimized_tail_log_numeric_only':optlog,'rows':rows})
+ cases.append({'denominator_first_error':float(denominator_first_error),'beta':beta,'R':R,'dimension':R*R,'J_nnz':J.nnz,'survival_mass':float(k.sum()),'return_scaled_beta4':float(beta**4*k[0]),'analytic_certificate':cert,'optimized_tail_log_numeric_only':optlog,'rows':rows})
  del J,A,v,k;gc.collect()
 rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1024**2 if sys.platform=='darwin' else 1024);ck(0<rss<180);ck(time.monotonic()-start<180)
-payload={'scope':'Independent killed six-neighbor recurrence falsifier; analytic truncation certificate but floating expm not interval-certified; beta values below refined theorem threshold','checks':checks,'cases':cases,'source_sha256':hashlib.sha256(open(__file__,'rb').read()).hexdigest(),'seconds':time.monotonic()-start,'rss_MiB':rss,'dependencies':{},'resources':{'timeout_seconds':180,'rss_limit_MiB':180,'blas_threads':1}}
+payload={'scope':'Independent killed six-neighbor recurrence falsifier; analytic truncation certificate but floating expm not interval-certified; beta values below refined theorem threshold','checks':checks,'coefficient_margin':COEFFICIENT_MARGIN,'cases':cases,'source_sha256':hashlib.sha256(open(__file__,'rb').read()).hexdigest(),'seconds':time.monotonic()-start,'rss_MiB':rss,'dependencies':{},'resources':{'timeout_seconds':180,'rss_limit_MiB':180,'blas_threads':1}}
 if '--json' in sys.argv:print(json.dumps(payload,indent=2,allow_nan=False))
 else:
- print('PASS native killed-recurrence falsifier:47 actual checks,3 frozen cases,18 rows')
+ print(f'PASS native killed-recurrence falsifier:{checks} actual checks,3 frozen cases,18 rows')
+ print('RESULT '+json.dumps(payload,sort_keys=True,allow_nan=False))
  for case in cases:
   print('BETA',case['beta'],'R',case['R'],'return_scaled_beta4',case['return_scaled_beta4'])
   for row in case['rows']:print('GRID',row['p'],row['q'],'beta2_residual',row['scaled_second_order_residual'])
  print('per_element: actual six-neighbor1/6 killed walk, native coefficients without Gaussian fitting')
- print('per_site:18 frozen grid labels at their actual shifted coordinates')
+ print('per_site:18 frozen grid labels bound to their actual shifted coordinates; quarter-W coefficient and alternative comparisons checked')
  print('per_mode: three finite sparse squares with analytic first-exit kernel tail<1e-30')
  print('per_block: beta128/256/512 below2048 theorem threshold; floating exponential not interval-certified')
  print('lattice_wide: checked and not executed -- no finite-packet spectrum or physical Wilson/gap claim')

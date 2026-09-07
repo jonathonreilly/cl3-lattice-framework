@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_rk_coulomb_photon_phase_bridge_2026_09_03.py
+runner_sha256: d10e0a59dedf58df6a23b9a08162a7b8bff58f55fd00ecdfb68e5ad7e5eda5d8
+input_fingerprint_sha256: dcbccb62d42153b5049f63cd4bf1c4d849430ea61702e991ab767137106bd210
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 11.13
+status: ok
+----- stdout -----
+[PASS] 01 one link qubit with three occupied links per cubic vertex realizes the exact ice Gauss sector
+[PASS] 02 every tested alternating square move flips four qubits and preserves all vertex charges
+[PASS] 03 the full L=2 zero-flux sector is 864 connected mobile states plus 16 frozen states
+[PASS] 04 the RK graph Hamiltonian is positive with one exact equal-amplitude ground state on the connected orbit
+[PASS] 05 the actual L=2 twisted trial has the exact expectation, nonzero variance and nonzero RK-ground overlap
+[PASS] 06 all deterministic Monte Carlo chains remain exactly inside their charge-free Gauss sectors
+[PASS] 07 the sampled electric structure factor has an exact longitudinal pinch-point zero
+[PASS] 08 the two axial transverse structure-factor polarizations are ensemble-degenerate
+[PASS] 09 off-axis low-momentum covariance has one exact null and an isotropic transverse pair
+[PASS] 10 an independent L=12 seed reproduces the Gauss, tensor, and flippability diagnostics
+[PASS] 11 the first two sampled momenta retain finite comparable transverse weight rather than a massive collapse
+[PASS] 12 a fixed opposite-charge orbit has an exact equal-amplitude zero of the RK ring Hamiltonian
+[PASS] 13 the RK ensemble retains a positive size-stable density of magnetic ring moves
+[PASS] 14 the sampled-density trial formula has positive expectations and the declared finite 1/L ratios
+[PASS] 15 the conditional positive-stiffness Maxwell kernel has exactly two linearly dispersing polarizations
+diagnostic RK orbit size: 864
+diagnostic actual L=2 twisted trial: energy=2.666666666667 variance=4.888888888889 ground_overlap_squared=0.062500000000
+diagnostic full L=2 sector: all_fluxes=9600 zero_flux=880 mobile=864 frozen=16
+diagnostic RK lowest eigenvalues: 2.88742275e-15 9.69623617e-01 9.69623617e-01 1.16086551e+00 1.16086551e+00
+diagnostic L=6 structure: long=2.250e-34 T1=0.374607 T2=0.378074 split=0.023701 tensor_null=2.161e-15 tensor_split=0.037922 tensor_spread=0.040172
+diagnostic L=8 structure: long=7.810e-34 T1=0.392316 T2=0.374549 split=0.021190 tensor_null=7.524e-16 tensor_split=0.045965 tensor_spread=0.051068
+diagnostic L=10 structure: long=1.233e-33 T1=0.375298 T2=0.369906 split=0.039420 tensor_null=3.637e-16 tensor_split=0.069363 tensor_spread=0.068189
+diagnostic L=12 structure: long=1.663e-33 T1=0.363418 T2=0.366912 split=0.037253 tensor_null=5.144e-16 tensor_split=0.080406 tensor_spread=0.083249
+diagnostic independent L=12 replica: density=0.260018 split=0.029464 tensor_null=8.835e-16 tensor_split=0.094743 tensor_spread=0.035387
+diagnostic charged RK orbit: states=508 signature=((3, 6), (4, 2)) lowest=-1.88944223e-15 5.76723509e-01 6.00870583e-01
+diagnostic flippability densities: L=6:0.262313+/-0.000310 L=8:0.260063+/-0.000155 L=10:0.259975+/-0.000183 L=12:0.259755+/-0.000105
+diagnostic trial-formula L*E ratios: L=6:0.99746410 L=8:0.99919707 L=10:0.99967106 L=12:0.99984136
+diagnostic infrared omega/|k| ratios: L=8:0.97449536 L=16:0.99358685 L=32:0.99839439 L=64:0.99959845 L=128:0.99989960
+per_element: one occupation qubit per link and every four-link alternating plaquette move are checked
+per_site: exact three-of-six Gauss constraints and a fixed opposite-charge sector are checked
+per_mode: longitudinal pinch suppression, transverse weights, and conditional Maxwell polarizations are checked
+per_block: the complete 864-state L=2 RK orbit and L=6 through L=12 Monte Carlo tori are checked
+lattice_wide: finite tensor data and magnetic trial expectations are checked; renormalized stiffness and the thermodynamic phase are not proved
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+
