@@ -315,16 +315,22 @@ row-stochastic; (iii) the joint law of rows `(i−1, i)` is `p_0(β) P(β → α
 because the row chain is Markov (row `i`'s conditional given all earlier rows
 depends only on row `i−1`). Write `β` for row `i−1` and `α` for row `i`, with
 `c = β_{j−1}`, `b = β_j`, `a = α_{j−1}`, `d = α_j`. The partial sums of E3's
-telescoping proof give the joint law of `(α_0, …, α_{j−1}, β_{j−1})` as
-`(1/6) Π_{l<j−1} K(α_{l−1} → α_l) · K(α_{j−1} → β_{j−1})`, so the vertical
-pair `(c, a)` at column `j−1` has the law `(1/6) K(c → a)` (E4). The factors
-of `p_0(β) P(β → α)` at columns `≥ j` depend on the columns `< j` only through
-`(c, a)`: at column `j` they are `K(c → b)` (from `p_0(β)`) and
-`β(d | a, b) = K(a → d) K(d → b)/(K^2)(a, b)` (from `P`); the columns `> j`
-carry the remaining factors of `p_0(β)` and of `P`, which by the same
-telescoping (summed from the right end: `Σ_{β_{W−1}} K(α_{W−1} → β_{W−1}) = 1`
-and downward) sum to one given `(α_j, β_j)`. Hence the marginal on `(c, b, a, d)`
-is `(1/6) K(c → a) K(c → b) K(a → d) K(d → b)/(K^2)(a, b) = π`. Summing `π`
+telescoping proof (summing `β_0, …, β_{j−2}` in order; nothing to sum when
+`j = 1`) leave the weight
+`(1/6) Π_{1≤l≤j−1} K(α_{l−1} → α_l) · K(α_{j−1} → β_{j−1}) · K(β_{j−1} → β_j) · K(α_{j−1} → α_j) K(α_j → β_j)/(K^2)(α_{j−1}, β_j) · R`,
+where `R` collects the factors of the columns `> j` (each `(K^2)(α_{l−2}, β_{l−1})`
+produced by summing `β_{l−2}` cancels the column-`(l−1)` denominator).
+Summing `α_0, …, α_{j−2}` — a `K`-chain with the uniform start; the columns
+of `K` sum to one — leaves `(1/6) K(a → c)`, the vertical pair law of E4,
+times the column-`j` factors `K(c → b)` (from `p_0(β)`) and
+`β(d | a, b) = K(a → d) K(d → b)/(K^2)(a, b)` (from `P`), times `R`. The
+factors of `R` depend on the columns `≤ j` only through `(α_j, β_j)`, and they
+sum to one: summing `α_{W−1}, α_{W−2}, …, α_{j+1}` in that order, each
+`Σ_{α_l} K(α_{l−1} → α_l) K(α_l → β_l) = (K^2)(α_{l−1}, β_l)` cancels the
+column-`l` denominator (the conditional factors of the later-formed sites
+sum to one), and then `Π_{l>j} K(β_{l−1} → β_l)` sums to one over
+`β_{W−1}, …, β_{j+1}` (the rows of `K` sum to one). Hence the marginal on
+`(c, b, a, d)` is `(1/6) K(c → a) K(c → b) K(a → d) K(d → b)/(K^2)(a, b) = π`. Summing `π`
 over `d` gives `(1/6) K(c → a) K(c → b)` (the bridge sums to one), whence
 `P(c) = 1/6` and the two conditionals; summing over `c` and `d` gives
 `(1/6) (K^2)(a, b)`. ∎ Executed at all four block positions of `3×3` (both
