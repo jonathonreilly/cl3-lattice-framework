@@ -1,0 +1,9 @@
+# Block37 prospective static-source electric string route
+
+Start2026-09-07 20:39UTC, after spatial-area candidate36; no string-potential claim is inferred from spatial loops. Investigate actual external fundamental/antifundamental charge sector in the supplied compact cubic Hamiltonian on finite open boxes. New imported objects are static source representation spaces at two vertices; they are not native dynamical matter.
+
+Candidate: at v=0 the minimum electric energy is4 times Manhattan distance/a, with ground space indexed by shortest oriented paths and unique fundamental line contraction along each. Need prove no baryonic branching/other SU3 representations can beat or supplement the minimal space. Cut/flux argument or occupied graph/path extraction required; naive degree-two assumption alone is insufficient with charged degree-three vertices.
+
+Candidate first-order centered perturbation restricted to geodesic space is -u times an elementary-square path-flip adjacency matrix times a universal rational Haar coefficient. Do not freeze coefficient until actual normalized open-line contraction derived. Root's provisional expectation1/18 may be wrong: must compute complete source-index inner product and Haar integration independently. ScalaruF cancels against vacuum at first order, leaving finite-volume static excitation derivative determined by this matrix. This is a local perturbative finite-volume statement, not a volume-uniform interacting string tension.
+
+Attempt useful exact classification/diagonalization of monotone-path flip graph (possibly exclusion chain for two coordinate directions). Need preserve degeneracies, source-representation convention, normalization and actual noncommuting Hamiltonian perturbation. No direct claim of continuum confinement or axiom-generated matter/coupling.

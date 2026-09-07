@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_static_source_geodesic_2026_09_07.py
+runner_sha256: 3e66256f8b201a3ac8b2391060d50f38158e09640b3d3d6623ede5ed6081b564
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+PASS TOTAL=34 unique named checks
+per_element: PASS 5 source/Haar normalization and adverse-factor checks
+per_site: PASS 10 actual planar path-count and edge-charge matrix checks
+per_mode: PASS 8 all-label increment and complete planar spectrum checks
+per_block: PASS 10 adjacency symmetry and fixed-number fermion matrix checks
+lattice_wide: PASS 1 resource guard; no uniform interacting remainder
+DATA: {"TOTAL": 34, "plaquette_flip_coefficient": "1/18", "rows": [{"R": 1, "S": 1, "adjacency": [[0, 1], [1, 0]], "characteristic_polynomial": "z**2 - 1", "fermion_eigenvalues": ["1", "-1"], "length": 2, "paths": [[1, 0], [0, 1]]}, {"R": 1, "S": 2, "adjacency": [[0, 1, 0], [1, 0, 1], [0, 1, 0]], "characteristic_polynomial": "z**3 - 2*z", "fermion_eigenvalues": ["sqrt(2)", "0", "-sqrt(2)"], "length": 3, "paths": [[1, 0, 0], [0, 1, 0], [0, 0, 1]]}, {"R": 2, "S": 2, "adjacency": [[0, 1, 0, 0, 0, 0], [1, 0, 1, 1, 0, 0], [0, 1, 0, 0, 1, 0], [0, 1, 0, 0, 1, 0], [0, 0, 1, 1, 0, 1], [0, 0, 0, 0, 1, 0]], "characteristic_polynomial": "z**6 - 6*z**4 + 5*z**2", "fermion_eigenvalues": ["sqrt(5)", "1", "0", "0", "-1", "-sqrt(5)"], "length": 4, "paths": [[1, 1, 0, 0], [1, 0, 1, 0], [1, 0, 0, 1], [0, 1, 1, 0], [0, 1, 0, 1], [0, 0, 1, 1]]}, {"R": 1, "S": 3, "adjacency": [[0, 1, 0, 0], [1, 0, 1, 0], [0, 1, 0, 1], [0, 0, 1, 0]], "characteristic_polynomial": "z**4 - 3*z**2 + 1", "fermion_eigenvalues": ["1/2 + sqrt(5)/2", "-1/2 + sqrt(5)/2", "1/2 - sqrt(5)/2", "-sqrt(5)/2 - 1/2"], "length": 4, "paths": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]}, {"R": 2, "S": 3, "adjacency": [[0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 1, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 1, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 1, 0, 0, 0], [0, 1, 0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0, 1, 1, 0, 0], [0, 0, 0, 1, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1, 1, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]], "characteristic_polynomial": "z**10 - 12*z**8 + 39*z**6 - 40*z**4 + 12*z**2", "fermion_eigenvalues": ["1 + sqrt(3)", "sqrt(3)", "-1 + sqrt(3)", "0", "1", "0", "1 - sqrt(3)", "-1", "-sqrt(3)", "-sqrt(3) - 1"], "length": 5, "paths": [[1, 1, 0, 0, 0], [1, 0, 1, 0, 0], [1, 0, 0, 1, 0], [1, 0, 0, 0, 1], [0, 1, 1, 0, 0], [0, 1, 0, 1, 0], [0, 1, 0, 0, 1], [0, 0, 1, 1, 0], [0, 0, 1, 0, 1], [0, 0, 0, 1, 1]]}]}
+RESOURCE: seconds=0.19477504197857343 rss_MiB=63.90625 limits=180sec/180MiB
+SOURCE_SHA256: 3e66256f8b201a3ac8b2391060d50f38158e09640b3d3d6623ede5ed6081b564
+
+----- stderr -----
+

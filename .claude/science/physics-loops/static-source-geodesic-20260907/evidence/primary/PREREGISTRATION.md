@@ -1,0 +1,7 @@
+# Prospective static-source geodesic lane37
+
+Supplied finite open cubic graph and compact link Hamiltonian K=-3Delta/(2a), V=v sum_faces(1-ReTr/3). Add explicit finite external fundamental/antifundamental color spaces at two distinct vertices s,t, chosen so a fundamental oriented open Wilson line s→t contracts to a gauge-invariant state. Fix convention by an actual normalized matrix-valued wavefunction before coefficients. This is a new supplied source sector, not a consequence of spatial area suppression.
+
+Prove all-representation lower electric energy4d(s,t)/a and classify its full minimum eigenspace, including why triality/baryon branches cannot be cheaper. Anticipated minimizers are normalized shortest open Wilson lines; do not assume completeness without graph/representation proof. Derive every first-order plaquette matrix element by Haar integration. Root has disclosed only a path-flip adjacency hypothesis, not its coefficient. For planar displacement test a binary-word/exclusion-chain identification and spectral formula after derivation; no uniform remainder is assumed.
+
+Prospective checks: exact small shortest-path census, charge-flow/cut lower bound, matrix-line normalization, one-square Haar off-diagonal amplitude, no diagonal center-neutral insertion, square-flip adjacency, and planar free-fermion spectrum. Any failed coefficient/control is preserved. Known prior art Kogut etal1981 fluctuating strings/fermion formulation must be credited. No temporal-confinement, all-volume perturbation, physical-source selection or continuum claim.
