@@ -36,9 +36,12 @@ Use `BACKLOG_STATUS.md` for current review, draft-triage and landing assignments
 `DRAFT_DISPOSITIONS.json` preserves exact source comparisons, reasons, open
 review obligations and completed ready/close actions as triage progresses.
 `OPEN_PR_INVENTORY.json` captures the open science, frozen heads, changed files
-and ancestry; `MAIN_STATUS_SNAPSHOT.json` records exact ledger counts on main.
-`BATCH_REVIEW_PLAN.md` proposes coherent review groups and removal of repeated
-mechanical work. The older scorecard is retained under `history/`.
+and known ancestry limits; `MAIN_STATUS_SNAPSHOT.json` records exact applied
+ledger counts on main, separate from newly landed source.
+`BATCH_REVIEW_PLAN.md` summarizes the landed coherent-unit review process.
+`NEXT_REVIEW_UNITS.json` freezes proposed source partitions;
+`BACKLOG_CONSOLIDATIONS.json` records duplicate closures and transferred
+obligations. `backlog_evidence/wave1/` contains the first landing receipts. The older scorecard is retained under `history/`.
 `BATTERY_PR_SOURCE_MAP.json` pins the first cumulative review candidate's
 inherited science blobs without assigning scientific acceptance.
 

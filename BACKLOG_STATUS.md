@@ -6,8 +6,8 @@ them with a concrete disposition. Formal audit is deferred until a solid TOE.
 The coordinator owns GitHub changes and landing; reviewers return evidence.
 
 The original 13:57 UTC routing refresh had 254 open PRs: 217 non-draft and 37 draft.
-The verified post-triage refresh has 230 open PRs and 0 drafts after the first three science closures.
-All 37 drafts are explicitly in triage scope. Marking ready means reviewable,
+The verified post-triage refresh has 204 open PRs and 0 drafts after the first science landing and duplicate consolidations.
+All 37 original drafts were explicitly in triage scope and are now resolved. Marking ready means reviewable,
 not scientifically accepted. A still-draft PR does not land. The standing
 reservations #6379, #6858 and #6859 are all non-draft and remain in force.
 
@@ -86,8 +86,8 @@ dependencies. Shared history and exact copied files are not scientific PASS.
 
 ## Further consolidation and review assignments
 
-[BACKLOG_CONSOLIDATIONS.json](BACKLOG_CONSOLIDATIONS.json) records 26 exact
-duplicate-consolidation decisions awaiting coordinator actions: nine source/Eta
+[BACKLOG_CONSOLIDATIONS.json](BACKLOG_CONSOLIDATIONS.json) records 26 completed exact
+duplicate consolidations, with before/after head and state receipts: nine source/Eta
 parents into open #7827 and 17 light-sector parents into open #7937. Root
 independently checked every authored original delta and complete inherited
 source (Eta) or whole parent tree (light), including file modes and blobs.
@@ -102,3 +102,11 @@ finite-depth dynamics unit (47 source paths, 11 notes and 11 runners) is now
 in independent Astra xhigh review against #7937's frozen head. Admissibility
 repairs are assigned to a separate implementation worker; the original
 reviewer owns confirmation. No author or reviewer has GitHub mutation authority.
+
+All 26 further duplicate closures are complete and verified against both the
+parent and successor heads before and after each action. Every original branch
+still exists at its frozen head. The current queue has 204 open PRs and zero
+drafts. Relative to the starting 254: 21 draft closures, three landed science
+closures and 26 further duplicate consolidations; the 16 ready transitions do
+not change the open count. The two successors remain open for their complete
+scientific review; no inherited obligation is discharged by consolidation.

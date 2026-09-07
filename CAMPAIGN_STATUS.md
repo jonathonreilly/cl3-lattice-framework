@@ -7,22 +7,24 @@ Formal audit is deferred until a solid TOE is ready.
 
 Mode: focused interactive campaign; no unattended duration selected.
 Science branch: physics-loop/toe-campaign-20260907, based on main
-`f6f861e8f0c7870b3a9a200a020ec5ca0b14be38`. No science landing is claimed.
+`f6f861e8f0c7870b3a9a200a020ec5ca0b14be38`; that campaign checkpoint remains
+unlanded. Separately, reviewed backlog Record/battery science and the revised
+review process landed on main `2d0f551dcd8bd444daee85b97811cda53da0661e`.
 
 ## Common evidence
 
 - [TOE_SCORECARD.md](TOE_SCORECARD.md): actual premise epoch, standing and questions.
-- [OPEN_PR_INVENTORY.json](OPEN_PR_INVENTORY.json): all 254 open PRs captured,
-  exact heads and complete file lists. Initial count was 253; #8002 appeared
-  during inspection. Metadata coverage is complete; scientific review is selective.
+- [OPEN_PR_INVENTORY.json](OPEN_PR_INVENTORY.json): 204 current open PRs, zero drafts, exact heads
+  and complete file lists. The original 254-PR snapshot is archived under
+  `backlog_evidence/`; closures and transferred obligations are fully recorded.
 - [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json): exact main ledger counts.
-- [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md): proposed execution changes and groups.
+- [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md): landed process and frozen review groups.
 
 ## Assignments
 
 | Owner | Target | Current evidence/next check |
 |---|---|---|
-| Coordinator | Shared map, review groups, campaign selection and independent confirmation | Publishing the source/evidence checkpoint; no unattended continuation selected |
+| Coordinator | Shared map, review groups, campaign selection and independent confirmation | First three-PR batch landed; 37 drafts resolved; 26 further duplicates consolidated; coordinating admissibility repairs and light-germ review |
 | Formation author + independent checker | Formation/static interface | Conditional Z3 law constructed with finite ancestry and certified window/correlation bounds; independent static/formation and adaptive-scheduling checks pass |
 | Matter author + independent checker | Native Record shared energy apparatus | Conditional finite-patch instrument proved with volume-uniform channel/full mean-energy error bounds; independent shared-battery/free-dwell calculation passes |
 | Field author + independent checker | Consistent physical field source/response | Source convention mismatch confirmed independently; exact finite invariant, corrected finite curvature and full-flux endpoint theorem packaged and checked |
@@ -63,10 +65,11 @@ question; no blanket disposition of that PR is asserted.
 
 ## Next bounded work
 
-1. Begin complete final-source review of cumulative #8001 using
-   [BATTERY_PR_SOURCE_MAP.json](BATTERY_PR_SOURCE_MAP.json). All six parent
-   science paths survive, three modified. Older parent checks do not transfer
-   automatically. Close parents only after accepted source is verified on main.
+1. Complete the four-PR admissibility corrections and original-reviewer
+   confirmation, then its integrated mechanical gates. The Record/battery
+   unit #7983/#7996/#8001 is already landed and closed with all 104 combined
+   source hashes verified; receipts are in `backlog_evidence/wave1`. The light
+   germ / finite-depth dynamics unit is under separate independent review.
 2. Repair the field source interpretation in its coherent PR group before
    spending more computation on a physical UK comparison. Define the actual
    response/sector target and estimator success criteria first.

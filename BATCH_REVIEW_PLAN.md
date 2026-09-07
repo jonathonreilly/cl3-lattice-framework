@@ -6,7 +6,7 @@ Independent examination of surviving source claims still precedes landing.
 
 ## Actual backlog
 
-After completed draft triage: 230 open PRs, zero drafts after the first science landing (21 closed, 16 ready).
+After completed draft triage: 204 open PRs, zero drafts after the first science landing and consolidation (21 closed, 16 ready).
 The ancestry counts below describe the original snapshot, not this refresh.
 
 The snapshot contains 254 PRs. 129 name another open branch as their GitHub
