@@ -51,3 +51,12 @@ Block 05 landed (PR #8003): the monotone-order class is one law with rows and co
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; whether the plane's monotone-class law (all four corner classes) is one object or four, and its relation to the static law of the plane; one block.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (a characterization; low priority; the snake's `4×3` failure suggests none besides the corner classes).
+
+## Refresh at block 06 close (2026-09-07)
+
+Block 06 landed (PR #8034): widths 4 and 5 rigorously enclosed; the separation holds at every executed width; the method scales with the orbit count. Ranked next:
+
+1. **The self-made Hermitian Gaussian instance** (from `PROBES_gravity_consumer_20260907.md`): the static/formation distinction for a Hermitian positive-definite precision on the smallest window with a plaquette; the Gaussian twin of block 01's Theorem B; one small block.
+2. **Formation-law uniqueness on Z^3 for the monotone class**: block 05's quadrant law as a projective limit; the four corner classes' laws on the plane — one object or four; relation to the static law of the plane; one block.
+3. **Width 6 and the innermost pair two steps in** (the method of block 06 at 46656 states / ~1000 orbits; the first width where an interior pair sits two steps from the boundary); one block, if the orbit count fits.
+4. **The silent triples by a non-criterion route** (unchanged; heavy).
