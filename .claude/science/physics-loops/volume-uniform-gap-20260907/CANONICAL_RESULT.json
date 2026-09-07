@@ -1,0 +1,287 @@
+{
+  "TOTAL": 35,
+  "checks": [
+    "group_count_1",
+    "individual_count_1",
+    "omitted_boundary_1",
+    "all_loop_supports_1",
+    "group_count_2",
+    "individual_count_2",
+    "omitted_boundary_2",
+    "all_loop_supports_2",
+    "group_count_3",
+    "individual_count_3",
+    "omitted_boundary_3",
+    "all_loop_supports_3",
+    "open_edges_1",
+    "open_faces_1",
+    "padded_range_1",
+    "no_ghost_interaction_1",
+    "three_terms_per_anchor_1",
+    "open_edges_2",
+    "open_faces_2",
+    "padded_range_2",
+    "no_ghost_interaction_2",
+    "three_terms_per_anchor_2",
+    "electric_gap_normalization",
+    "perturbation_norm_coefficient",
+    "gap_rescaling",
+    "onsite_incidence_bound",
+    "local_energy_coefficient",
+    "PW_dimension_gap_1",
+    "penalty_full_register_1",
+    "PW_dimension_gap_2",
+    "penalty_full_register_2",
+    "PW_dimension_gap_3",
+    "PW_R0_no_excitation",
+    "PW_inert_padding_adverse",
+    "resource"
+  ],
+  "geometry": {
+    "cells_1": {
+      "cells": 1,
+      "link_factors": 3,
+      "whole_group_plaquettes": 0,
+      "individually_supported_plaquettes": 0,
+      "omitted_individual_plaquettes": []
+    },
+    "cells_2": {
+      "cells": 8,
+      "link_factors": 24,
+      "whole_group_plaquettes": 3,
+      "individually_supported_plaquettes": 6,
+      "omitted_individual_plaquettes": [
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          0,
+          2
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          1,
+          2
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          0,
+          1
+        ]
+      ]
+    },
+    "cells_3": {
+      "cells": 27,
+      "link_factors": 81,
+      "whole_group_plaquettes": 24,
+      "individually_supported_plaquettes": 36,
+      "omitted_individual_plaquettes": [
+        [
+          [
+            2,
+            1,
+            0
+          ],
+          1,
+          2
+        ],
+        [
+          [
+            0,
+            2,
+            1
+          ],
+          0,
+          2
+        ],
+        [
+          [
+            2,
+            0,
+            1
+          ],
+          1,
+          2
+        ],
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          0,
+          1
+        ],
+        [
+          [
+            1,
+            2,
+            1
+          ],
+          0,
+          2
+        ],
+        [
+          [
+            0,
+            2,
+            0
+          ],
+          0,
+          2
+        ],
+        [
+          [
+            1,
+            1,
+            2
+          ],
+          0,
+          1
+        ],
+        [
+          [
+            2,
+            0,
+            0
+          ],
+          1,
+          2
+        ],
+        [
+          [
+            2,
+            1,
+            1
+          ],
+          1,
+          2
+        ],
+        [
+          [
+            1,
+            2,
+            0
+          ],
+          0,
+          2
+        ],
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          0,
+          1
+        ],
+        [
+          [
+            1,
+            0,
+            2
+          ],
+          0,
+          1
+        ]
+      ]
+    },
+    "open_box_1": {
+      "vertices": 8,
+      "real_links": 12,
+      "plaquettes": 6,
+      "padded_cells": 27,
+      "extra_decoupled_links": 69
+    },
+    "open_box_2": {
+      "vertices": 27,
+      "real_links": 54,
+      "plaquettes": 36,
+      "padded_cells": 64,
+      "extra_decoupled_links": 138
+    },
+    "finite_PW_supplement": {
+      "1": {
+        "dimension": 19,
+        "qubits_per_link": 5,
+        "unused_levels": 13,
+        "scaled_gap": 1
+      },
+      "2": {
+        "dimension": 155,
+        "qubits_per_link": 8,
+        "unused_levels": 101,
+        "scaled_gap": 1
+      },
+      "3": {
+        "dimension": 805,
+        "qubits_per_link": 10,
+        "unused_levels": 219,
+        "scaled_gap": 1
+      }
+    }
+  },
+  "source_sha256": "171bba5a78bc4124744245e36f69a09dc3c52a9cdf8a2e7c0a72dd09680b53a0",
+  "seconds": 0.011314874980598688,
+  "rss_MiB": 18.609375,
+  "scope": "Finite geometry and rational normalization checks only; imported stability theorem supplies the volume-uniform gap, with no computed c1 or c2.",
+  "scope_checks": {
+    "per_element": [
+      "open_edges_1",
+      "open_faces_1",
+      "open_edges_2",
+      "open_faces_2"
+    ],
+    "per_site": [
+      "padded_range_1",
+      "no_ghost_interaction_1",
+      "three_terms_per_anchor_1",
+      "padded_range_2",
+      "no_ghost_interaction_2",
+      "three_terms_per_anchor_2",
+      "onsite_incidence_bound",
+      "local_energy_coefficient"
+    ],
+    "per_mode": [
+      "electric_gap_normalization",
+      "PW_dimension_gap_1",
+      "penalty_full_register_1",
+      "PW_dimension_gap_2",
+      "penalty_full_register_2",
+      "PW_dimension_gap_3",
+      "PW_R0_no_excitation",
+      "PW_inert_padding_adverse"
+    ],
+    "per_block": [
+      "perturbation_norm_coefficient",
+      "gap_rescaling"
+    ],
+    "lattice_wide": [
+      "group_count_1",
+      "individual_count_1",
+      "omitted_boundary_1",
+      "all_loop_supports_1",
+      "group_count_2",
+      "individual_count_2",
+      "omitted_boundary_2",
+      "all_loop_supports_2",
+      "group_count_3",
+      "individual_count_3",
+      "omitted_boundary_3",
+      "all_loop_supports_3",
+      "resource"
+    ]
+  },
+  "audit_timeout_sec": 180,
+  "audit_memory_mib": 180
+}

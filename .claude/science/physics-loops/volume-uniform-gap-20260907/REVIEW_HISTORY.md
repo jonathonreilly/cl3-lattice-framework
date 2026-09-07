@@ -1,0 +1,4 @@
+# Review history
+Original a8921b35 proof froze before root final read. Root found an omitted explicit all-label Casimir lower-bound step; original preserved, corrected23de61b4 proof imports block30 and proves the minimum. Primary independently read the paper and reviewed corrected proof PASS (c5953f7e...). Root independently derived the mapping before reading the final native proof; padding candidate exposure is declared. PW supplement1f3b0584 and penalty supplement3f6bb29c froze separately after root candidates and before their additional checks. Their changed-section independent review is pending at this staging checkpoint.
+
+Integration: root and primary changed-section reviews PASS, in ROOT_FINAL_MATHEMATICAL_REVIEW.md and PRIMARY_EXTENSIONS_REVIEW.md. Final canonical port review remains a separate required step before graph.

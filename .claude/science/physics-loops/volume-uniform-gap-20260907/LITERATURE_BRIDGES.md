@@ -1,0 +1,2 @@
+# Explicit mathematical bridge
+Primary source: https://arxiv.org/pdf/math-ph/0411042, D.A. Yarotsky, v1, Theorems1–3 and Section2. The theorem is imported explicitly; its constants are not evaluated. No quasi-particle or scattering theorem is imported. SOURCE_RECEIPT is in PORT_RECEIPT.json, including the downloaded PDF SHA; the copyrighted full PDF is retained only in scratch, not copied into the repository packet.

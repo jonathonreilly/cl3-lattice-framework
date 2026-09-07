@@ -1,0 +1,2 @@
+# Trace gate
+The exact plaquette and electric operators come from the compact Hamiltonian source. The all-label bound excludes missing low irreps. Full-irrep cutoff preserves endpoint group actions. Volume-uniform stability is supplied by the explicit external theorem, not by finite geometry checks. No retained verdict, native axiom closure, physical parameter identification or continuum Yang–Mills result is claimed.
