@@ -206,7 +206,7 @@ equality of entries, and the reversal maps the pair `(a, b)` to `(W−1−b, W�
 `(W−2, W−1)` and the innermost pair `(1, 2)` of width 5 to `(2, 3)` — whose indicator has the same
 sum over every orbit because the reversal is in `G`; so `n_O = #{ρ ∈ O : ρ_a = ρ_b}` is the same for
 a pair and its mirror image, and the sum over an orbit of a `G`-invariant weight times the indicator
-is `|O| c_O` times the weight (executed: the two counts agree on every orbit at widths 4 and 5). ∎
+is `|O| c_O` times the weight (the refuting checker verified that the two counts agree on every orbit at widths 4 and 5; the runner's B3 checks the pair counts against `6^{W−1}`). ∎
 
 *Executed.* Orbit counts `3, 8, 38, 178` at widths `2, 3, 4, 5`, the same at
 both triples (B1). `T(gρ, gρ') = T(ρ, ρ')` for all 48 maps, every orbit representative against all
