@@ -5,3 +5,7 @@ Worktree /private/tmp/toe-native-flux-campaign-20260907; branch codex/native-flu
 ## Completed root validation
 
 Root final port review and pipeline ace9cb1df9ba, strict lint and 1-claim readiness passed against e043c95b37bd46d80e97c39f36c8b3cb7643c62f. See FINAL_VALIDATION.md and the pre-cleanup receipts. Actual stdout caches are staged. Review publication is the next action; no science merge or audit verdict is performed.
+
+## Draft publication
+
+Published https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8014 with base main. The post-validation main sync preserves the frozen scientific source and both runners exactly; the full validation pin remains e043c95b37bd46d80e97c39f36c8b3cb7643c62f. No merge or newer robust-error extension is included.
