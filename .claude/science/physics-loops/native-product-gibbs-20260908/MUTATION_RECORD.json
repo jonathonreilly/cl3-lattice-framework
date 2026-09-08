@@ -1,0 +1,119 @@
+[
+  {
+    "name": "native_hopping_cubic",
+    "source": "native_product_gibbs_dimer_2026_09_08.py",
+    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
+    "mutant_sha256": "216f91bdaccf9db5ec7e461ca0d71c5cb3ce253dc2b39abb1ac4ec56a7d19303",
+    "old": "T.append(s.I*a*(B[i]-B[j])/2)",
+    "new": "T.append(s.I*a*(B[i]-B[j])/4)",
+    "expected_failure": "hopping_0_cubic",
+    "exit_code": 1,
+    "failed_as_expected": true,
+    "elapsed": 0.2023238750116434
+  },
+  {
+    "name": "physical_midpoint_collision",
+    "source": "native_product_gibbs_dimer_2026_09_08.py",
+    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
+    "mutant_sha256": "3518e9cf4e7a9d1974667c3f38dd85561bef587de7010b2e908eee112e066a4d",
+    "old": "(0,0,1)]",
+    "new": "(0,1,0)]",
+    "expected_failure": "physical_centers_distinct",
+    "exit_code": 1,
+    "failed_as_expected": true,
+    "elapsed": 0.16632970797945745
+  },
+  {
+    "name": "ready_leaf_swap",
+    "source": "native_product_gibbs_dimer_2026_09_08.py",
+    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
+    "mutant_sha256": "98834e96e398f8f38884791deca7ee5ba8ea84304a5377e11e4a1926edafbdba",
+    "old": "P=(Id-n[2])*n[3]",
+    "new": "P=(Id-n[2])*(Id-n[3])",
+    "expected_failure": "success_actual_Kraus_operator",
+    "exit_code": 1,
+    "failed_as_expected": true,
+    "elapsed": 0.3256334589968901
+  },
+  {
+    "name": "attenuation_control",
+    "source": "native_product_gibbs_dimer_2026_09_08.py",
+    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
+    "mutant_sha256": "88d524a30999f71f55cc1efcc91321e3cea0d47a145ad51dc62072589f4d3ed2",
+    "old": "Ua=pulse(T[1],r,v)",
+    "new": "Ua=pulse(T[1],v,r)",
+    "expected_failure": "success_actual_Kraus_operator",
+    "exit_code": 1,
+    "failed_as_expected": true,
+    "elapsed": 0.35619437499553896
+  },
+  {
+    "name": "lost_failure_outcome",
+    "source": "native_product_gibbs_dimer_2026_09_08.py",
+    "source_sha256": "cdb34f3e3a58f4969c0823e64b2fa471cee0ea66a9be8a4b704afdd4f4f01d50",
+    "mutant_sha256": "01d6c436b60c40be31781c9f1e4373c885c8daafe0d0c11781abb9f5ff53c19c",
+    "old": "Qb=(Id-n[3]) if b==0 else n[3]",
+    "new": "Qb=(Id-n[3]) if b==0 else (Id-n[3])",
+    "expected_failure": "complete_instrument_on_ready_inputs",
+    "exit_code": 1,
+    "failed_as_expected": true,
+    "elapsed": 0.3195886250177864
+  },
+  {
+    "name": "givens_phase_orientation",
+    "source": "native_product_gibbs_path_2026_09_08.py",
+    "source_sha256": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
+    "mutant_sha256": "68831d95f3c2f948fe8e27d1a2ccb13233d8d53a8d9c2a4a9798b49fc7725b5e",
+    "old": "gate=R@pulse(T[j],c,s)@R.conj().T",
+    "new": "gate=R.conj().T@pulse(T[j],c,s)@R",
+    "expected_failure": "phase_compilation",
+    "exit_code": 1,
+    "failed_as_expected": true,
+    "elapsed": 0.09945074998540804
+  },
+  {
+    "name": "paired_sign_resource",
+    "source": "native_product_gibbs_path_2026_09_08.py",
+    "source_sha256": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
+    "mutant_sha256": "27ad1267c49b04aa47d3b0de827b53de572d94f8e286048fadd685125cdd7a17",
+    "old": "pulse(n[j]-n[j+1],-1.,0.)",
+    "new": "pulse(n[j]-n[j+1],1.,0.)",
+    "expected_failure": "direct_pair_sign_0_1",
+    "exit_code": 1,
+    "failed_as_expected": true,
+    "elapsed": 0.07556425000075251
+  },
+  {
+    "name": "thermal_prefactor",
+    "source": "native_product_gibbs_path_2026_09_08.py",
+    "source_sha256": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
+    "mutant_sha256": "a1f81b914cf87ec7679236d79b0810e43499164aaba353c5f84a60f5535c5d22",
+    "old": "pref=np.exp(-beta*np.sum(abs(eps[eps<0]))/2)",
+    "new": "pref=np.exp(-beta*np.sum(abs(eps[eps<0])))",
+    "expected_failure": "actual_Kraus_vs_H_exponential",
+    "exit_code": 1,
+    "failed_as_expected": true,
+    "elapsed": 0.16298733299481682
+  },
+  {
+    "name": "thermal_energy_formula",
+    "source": "native_product_gibbs_path_2026_09_08.py",
+    "source_sha256": "c9c7dc4eb23c04ed7bfe2d09a241f6bd5377f57d9b01ab71f0b3fcd39d5d6021",
+    "mutant_sha256": "a93895e68198860ae310a5445fffd9eb394b2725d68423099a9d4727ddd7aca8",
+    "old": "np.sum(eps/(1+np.exp(beta*eps)))",
+    "new": "np.sum(eps/(1+np.exp(beta*abs(eps))))",
+    "expected_failure": "thermal_energy",
+    "exit_code": 1,
+    "failed_as_expected": true,
+    "elapsed": 0.1635620419983752
+  },
+  {
+    "mutation": "encoded_modal_attenuation",
+    "old": "enumerate((r*r,S.Integer(1),r))",
+    "new": "enumerate((r,S.Integer(1),r))",
+    "source_sha256": "9fcc14cfbe903e35ac1077034e7b027e21f9c30f38b9f41e5e8ac49ea102704b",
+    "mutant_sha256": "63e8f7c7e74ab7ca2c7953ec0dedcdf23fc76c2a7c52205c0a49a902d28c36bf",
+    "exit_code": 1,
+    "failed_as_expected": true
+  }
+]
