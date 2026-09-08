@@ -1,0 +1,20 @@
+{
+  "checks": 215,
+  "K": {
+    "1": "0",
+    "2": "-f(q)**2/2",
+    "3": "0",
+    "4": "(f(q)**3 + Derivative(f(q), (q, 2)))*f(q)/8"
+  },
+  "generators": {
+    "1": "Matrix([[0], [-f(q)/2], [0]])",
+    "2": "Matrix([[Derivative(f(q), q)/4], [0], [0]])",
+    "3": "Matrix([[0], [f(q)**3/6 + Derivative(f(q), (q, 2))/8], [0]])",
+    "4": "Matrix([[-f(q)**2*Derivative(f(q), q)/3 - Derivative(f(q), (q, 3))/16], [0], [0]])"
+  },
+  "distinct_edge_pairs": 18336,
+  "distinct_ice_returns": 0,
+  "seconds": 0.5118477920186706,
+  "rss_mib": 89.109375,
+  "scope": "Independent Pauli-vector arbitrary-profile algebra plus full graph support controls; not a dynamical simulation."
+}

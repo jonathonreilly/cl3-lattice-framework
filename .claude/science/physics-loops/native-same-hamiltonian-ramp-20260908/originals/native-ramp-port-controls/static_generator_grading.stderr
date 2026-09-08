@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-ramp-port-controls/mutant_static_generator_grading.py", line 101, in <module>
+    signal.alarm(AUDIT_TIMEOUT_SEC);parser=argparse.ArgumentParser();parser.add_argument('--json',action='store_true');parser.parse_args();print(json.dumps(run(),sort_keys=True,indent=2))
+                                                                                                                                                            ^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-ramp-port-controls/mutant_static_generator_grading.py", line 66, in run
+    for n in range(1,5):req(actual[n]==(Z,Z,k[n]),'correct moving-frame cancellation '+str(n))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-ramp-port-controls/mutant_static_generator_grading.py", line 62, in req
+    if not v:raise RuntimeError(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: correct moving-frame cancellation 2
