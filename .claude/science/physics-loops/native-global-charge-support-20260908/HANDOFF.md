@@ -1,0 +1,11 @@
+# Global charge support author handoff
+
+One coherent conditional theorem combines full D2 position/configuration connectivity and its finite Perron consequence with a global D4 exchange witness. The new canonical note is docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md. Parent branch HEAD is2699dd9a380178ca79f4626f5a978d169f1a07b9 (reviewed PR8040), with PR8038 native dictionary inherited. No parent science is changed.
+
+The paired primary executes three portable helpers, 328357 actual predicates, preserving full scientific payloads from the research originals. LIVE.stdout records the actual optimized execution, including five cost scopes. ISOLATED_CLOSURE.json records an isolated -OO run of the complete ten-file runtime/premise closure. PORT_RECEIPT.json verifies scientific payload equality excluding runtime/resource/source identity fields. MUTATIONS.json binds three actually executed semantic mutants and their failures. No unrelated parent runner was rerun.
+
+The earlier reachability proof left full connectivity open; originals preserve that state and the separately frozen closure, research timing, original negative control, independent proofs, and independent CAR replay. The canonical text supersedes the open claim only with its explicit cycle proof. General tools are standard; no historical novelty claim is made.
+
+Author packaging and independent canonical science review are complete (REVIEW.md); root independently read the note, primary and exact helper port diffs. The graph acknowledgment adds one node and two edges, with no existing-node changes. The full combined pipeline, strict lint and changed-evidence check remain deferred to the actual landing candidate under the current workflow. No audit verdict or authority status is granted by this packet. Review publication is stacked on PR8040; main is unchanged.
+
+Source hashes are recorded in SOURCE_FREEZE.json and the independent READ_HASHES.json; final graph-only confirmation is attached to the same review. Remaining physics includes supplied domain/gates/couplings and actual physical preparation/occurrence. Full D4 connectivity, deconfinement, transport rates and thermodynamic gaps remain outside scope.

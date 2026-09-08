@@ -1,0 +1,1 @@
+Future work, not claims here: (1) determine the physical supply of the low-charge projector and Hamiltonian; (2) quantify finite dynamics without inferring it from connectivity; (3) investigate higher-charge configuration structure while retaining exchange phases. The coordinator selects subsequent work.

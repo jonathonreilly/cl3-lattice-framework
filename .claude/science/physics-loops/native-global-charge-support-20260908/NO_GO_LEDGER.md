@@ -1,0 +1,1 @@
+Position reachability alone did not prove configuration connectivity; the original gap is preserved. Chord induction and induced-cycle parking now supply the missing operation. A D4 negative loop excludes only diagonal uniform-sign rephasing on its containing component. It does not forbid non-diagonal representations, different domains or physical unification.

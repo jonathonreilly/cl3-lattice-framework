@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-global-charge-support-20260908/.claude/science/physics-loops/native-global-charge-support-20260908/mutations/missing_parking_return.py", line 98, in <module>
+    reverse(C);results.append(dict(cycle=C,initial_bits=format(initial,'0192b'),final_bits=format(z,'0192b'),branches=branches,hops=len(tape),tape=tape))
+    ^^^^^^^^^^
+  File "/private/tmp/toe-native-global-charge-support-20260908/.claude/science/physics-loops/native-global-charge-support-20260908/mutations/missing_parking_return.py", line 97, in reverse
+    mask=sum(1<<edge(a,b) for a,b in zip(C,C[1:]+C[:1]));req(z==before^mask);req(Q(z)==q0)
+                                                         ^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-global-charge-support-20260908/.claude/science/physics-loops/native-global-charge-support-20260908/mutations/missing_parking_return.py", line 17, in req
+    if not x:raise RuntimeError('connectivity certificate failed')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: connectivity certificate failed

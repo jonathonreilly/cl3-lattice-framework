@@ -1,0 +1,1 @@
+Completed: directed cut argument for positions; chord induction/parking for whole configurations; exact bipartite flow plus native phases for global exchange. Rejected inference: positions alone imply connectivity. Not attempted: quantum transport rate, arbitrary D connectivity or thermodynamic spectral estimates.

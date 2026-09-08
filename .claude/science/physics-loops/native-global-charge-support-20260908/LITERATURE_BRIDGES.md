@@ -1,0 +1,1 @@
+Finite Perron–Frobenius and balanced directed-cycle decomposition are standard mathematical tools, proved/applied under finite hypotheses in the note. No newly fetched external paper, numerical parameter, deconfinement criterion or physical literature value is used as evidence in this package. Upstream dictionary sources retain their own provenance.
