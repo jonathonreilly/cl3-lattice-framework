@@ -1,0 +1,5 @@
+# Prospective arithmetic proof scope
+
+Root exposed the21-mode Γ-action and four-action pair-Hamiltonian target before derivation. This task derives a deterministic floating arithmetic envelope, without any physical vector action, solve, eigenspectrum or coefficient measurement. Inputs are arbitrary exact dyadic vectors and independently enclosed Q(i,sqrt2,sqrt3) coefficients. The source-specific pair formula must be bound separately when supplied. No claim that a future residual is certified follows from this lemma alone.
+
+Use binary64 round-to-nearest, no fast-math reassociation, deterministic term order, explicit finite guards, and either gradual underflow with an absolute rounding term or stronger intermediate normality checks. Prove an operator bound using CAR normalization plus a componentwise arithmetic bound; preserve the distinction between sampled-coordinate validation and full-vector certification. Optional exact scalar controls are bounded30s384MiB and may test only the rounding lemma, not physical dynamics.

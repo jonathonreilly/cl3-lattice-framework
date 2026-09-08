@@ -1,0 +1,32 @@
+# Prospective full-vector versus Gaussian residual route
+
+No physical vector action, inverse, spectrum, Gaussian optimization or new timing was executed. This is a source-level fixed cost contract, to be frozen with implementation and independently reviewed before execution.
+
+## Full-vector operator and honest memory
+
+The exact42-real-mode carrier has21 complex modes, each parity2^20. A real binary64 vector is8MiB; a complex128 vector is16MiB. The existing paired frame need not put every r_i on the same sublattice, so do not assume a real coordinate operator merely from a real skew K. A separately checked black-frame construction could make a real implementation possible. Budget the initial backend as complex.
+
+In canonical occupation coordinates H0-E0 is diagonal, with diagonal sum_i sqrt(lambda_i)*b_i, lambda_i in12,24,36,48. It is NOT a constant times particle count. For a two-edge flipped prefix, Delta H is the sum of two changed-edge Majorana bilinears. Each endpoint Majorana is a linear combination of21 creation and21 annihilation pieces, equivalently21 bit toggles with bit-dependent complex coefficients. Apply gamma_v followed by gamma_u in the declared order, using a parity-changing scratch vector. Each bilinear therefore needs two such actions; two edges need four. A prefix action costs roughly84*2^20 contributions plus one diagonal multiplication/addition, with fixed ordering. This is about88million contributions per pair, not a small dense21-matrix multiplication.
+
+Eight complex vectors cost128MiB. A float diagonal costs8MiB. Do not materialize21 full permutation/sign/index tables (which could add hundreds of MiB). Generate contiguous bit blocks and signs per mode, or use compiled scalar loops with constant-size metadata. Stream final residual certification, source vectors and solutions to disk as necessary; retaining all30 complex vectors is480MiB and violates the cap. A first-stage fifteen-vector store is240MiB before working buffers and is also unattractive. Keep first vectors disk-backed, form one odd source at a time from six reads; no segments become independent data.
+
+## Certification distinct from a candidate CG
+
+CG may propose vectors only after a positive wrong-flux gap is bound to the EXACT two-edge mask, units and full bath offset. The full prefix scan is a possible source; its applicability must be checked, not assumed from the class name. Rounding coefficients and vectors gives exact dyadic candidates. The solve certificate is ||B x-b||/gap, with incoming source errors included.
+
+An implementable float residual certificate must use explicitly ordered scalar real/imag operations (or a reviewed compiled loop, no fastmath/FMA assumptions hidden). Each Majorana contribution has a bounded number of multiply/add operations, summed in a fixed21-term order. Use coefficient intervals from the integer frame and exact square-root brackets, componentwise gamma_n/underflow terms, and a Euclidean residual norm enclosure. For a bilinear composition, propagate the first action's error through ||gamma_v||=1 before adding the second rounding error; changed-edge coefficients and both bilinears contribute their exact norms. The canonical diagonal coefficients require independent exact bounds for every distinct four-frequency occupancy sum. A generic BLAS accuracy statement is not a proof.
+
+A stronger independent replay can use blocked exact dyadic integer accumulation for the same fixed candidate, with exact algebraic coefficient intervals; it must replay ALL vector coordinates or price a rigorous global remainder. Random coordinate samples cannot certify the norm. Exact field arithmetic for every million-vector entry is potentially expensive and must be costed. Reserve an independently implemented full residual replay before accepting any vertex result. An approximate candidate's successful CG residual is not that replay.
+
+## Fixed costpilot source contract, no launch
+
+Prospective first implementation has two explicit actions only, for pairs(+x,+y) and(+x,-x), in that order. Use one predetermined bounded dyadic vector in each initial EVEN parity block, e.g. x_b=((b mod17)-8)/16, no normalization or favorable-state selection. Apply the complete shifted operator once per pair. Retain exact source hashes, input formula, full output floathex or binary lossless array hash, action/component timings and peakRSS. There are no iterations, solutions, adaptive tolerances or spectral calls. A second independent arithmetic replay is a separate reserved phase, not silently included in these two timings.
+
+Proposed external cap30s,384MiB, one attempt; include interpreter/import/frame loading and serialization. Internal action deadline should leave the whole-job reserve. No fallback to smaller vectors after failure. If the interpreted/NumPy prototype exceeds the forecast, record failure and consider a frozen compiled scalar implementation as a new prospective version. The benchmark must explicitly state backend operation order before any arithmetic certificate is claimed. Freeze the implementation, numerical-library/interpreter bindings, exact frame and gap-input membership before root execution decision.
+
+## Ranking and decision gate
+
+1. Full-vector action costpilot first: exact finite space is manageable in memory with streaming, source/odd-state handling is direct, no Gaussian-rank hypothesis. Main risks are88million contributions per action and independent error certification. This route is now more direct than starting a21-mode Gaussian optimizer.
+2. Gaussian dictionary as fallback/complement:42/44/52 Pfaffian sizes fit comfortably, but useful dictionary rank and cancellation-certified residual cost are unmeasured. Its representation error is a real extra obligation. Tiny exact CAR/odd-overlap primitives remain worthwhile without physical evaluation.
+
+A successful two-action timing alone cannot forecast30 inverses: iteration count depends on gap/conditioning and preconditioner. Before any full inverse campaign, freeze a bounded candidate iteration cap and charge independent replay, disk source assembly and all30 exact source combinations. Signed magnetic transports can reduce work only after their actual vector phases are proved. The15+15 source algorithm remains the default count. Neither route establishes L6 linearity until its complete transition and higher-particle residual are certified.

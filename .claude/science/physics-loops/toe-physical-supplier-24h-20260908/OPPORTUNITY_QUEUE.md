@@ -1,9 +1,9 @@
 # Ranked remaining physics
 
-1. Complete frozen L6nonadjacent4986prefix gaps: retire all finite wrong-flux denominator imports for the six spectator coefficient classes. Fixed source450fe and cost/cold pass; exact positive probability high but signedfailure retained. Root clock1800s, one science block; no actualsixcoefficients yet.
-2. Deliver weak-electric mean-density theorem including quadratic ground and thermal-root bounds: exact positive support beyondU0, no spectralgap assumption, finalcold passed, high landability but suppliedmodel import remains. Finishgraph/PR8057.
-3. Deliver finite third-order active/spectator vertex and nonlinear fulloperator distinction: actual30solves, independentCAR residuals andtwo-modeproof complete. Separate singleton coefficient from fullsixth; canonicalpacket undernative.
-4. L6one-star Gaussianresidual route: primary exactcarriergeometry andminimalpairclasses now. Seek smallest genuine vacuum-multiparticle test beyondflatL4, avoid infeasible68–80realpairdenseFockvectors. No uncontrolled Gaussiantruncation ornative runbeforefrozenbudget.
-5. Sharper nonzero-U local-history/contour stability: currentmean-density bounds alone insufficient; seek local insertion inequalities without substituting ground denominators for arbitrary gapless excitations. Independently tractable analytic target after currentpositive deliveries.
+1. Deliver full finite L6 six-support denominator certificate: completed6489mask union, pending final independent portable replay of allmasks after fixed25 rank6 cost. Canonical draft prepared; no missing coefficient implied.
+2. L6third-order vacuum interaction: exact42real carrier, symmetry reduces30solves tofour. Measure frozen two-action and transport costs, then residual-certified fixed-iteration contract. Test whether L4vacuumlinear cancellation survives beyondflat spectrum. No CG before cost/certification source review and remote checkpoint.
+3. If tractable, derive allsix L6spectator coefficients via certified Gaussian/residual factorization; full densepair68-80real infeasible. Thirdvertex alone determines only singleton part.
+4. Nonzero-U local contour bounds beyond delivered mean density: needs direct quantum local insertion control, not global spectralgap or arbitrary excited-state denominators. Analytic fallback if vector costs fail.
+5. Indexed CTsampler integration remains engineering alternative after reference L4forecastFAIL129329seconds; no fullproduction without implementation and fixedcost.
 
-Independent CTindexedintegration remains available after referenceL4costFAIL129329s; fullsamplerproduction held. SuppliedHamiltonianselection, Lorentz/SM/gravity connection and TOEclosure remain open. No audit/mainlanding in this campaign.
+Supplied-Hamiltonian selection, continuum/Lorentz/SM/gravity links and TOEclosure remain open. No mainlanding/formalaudit in this campaign.

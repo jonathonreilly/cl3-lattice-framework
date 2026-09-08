@@ -1,0 +1,13 @@
+# Fixed two-action cost contract — UNLAUNCHED
+
+Exactly one even deterministic dyadic vector x_b=((b mod17)-8)/16 in compressed parity order, with the high bit determined by even parity. Two fixed prefixes: (+x,+y), then(+x,-x) at vertex0 on actual canonical L6. No CG, inverse, eigensolver, physical optimization or adaptive selection. Shifted H0 is the exact canonical sum of21 unequal frequencies; each changed edge contributes -i*Kij*gamma_i gamma_j, right factor applied first. No flatL4 factor is reused.
+
+Pinned42-real frame has21 pairs r,Kr with lambda12/24/36/48. Normalized endpoint coefficients use r/sqrt(d),Kr/sqrt(lambda*d). Ordinary math.sqrt supplies candidate coefficients; no accuracy claim is made. Independent future certificate must price coefficient intervals and fixed-order componentwise floating errors. There is no BLAS call in operator actions: NumPy uses elementwise operations and bit-index blocks; its generated kernels still require their own arithmetic assumptions. No current output is a rigorous residual.
+
+Complex vectors are16MiB. The action uses x,out,one intermediate,one term, then reload output; no21 permutation tables. Chunk32768 temporary indexes/signs bound transient workspace. Two lossless .npy arrays plus hashes and all action/I/O timings are retained. Input vector is fixed by formula. All initialization, imports and final serialization must be included in external runtime.
+
+Proposed one attempt30s384MiB, external process-group watchdog and /usr/bin/time required by root before launch;29s internal alarm and observed RSS supplement it. No retries/replacement/smaller-vector fallback. Timeout may bypass Python failure handler, so external receipt is mandatory. Freeze membership and interpreter/dependencies checked before core import. Output outside source only.
+
+Forecast rule: after acceptance of this cost-only attempt, use max(two action times), plus complete external overhead and serialization. No inverse campaign forecast without a separately preregistered iteration cap. A hypothetical30-inverse upper scheduling estimate uses30*(iteration_cap+1)*max_action, with factor2headroom plus all source I/O/startup. Independent full residual replay is separately reserved at least30*max_action*4 until independently measured; this multiplier is a conservative planning placeholder, not a certification-cost measurement. If total exceeds the next authorized budget, do not launch. Current scope authorizes no such next campaign.
+
+Before physical cost execution, reviewer must validate gamma signs, parity compression, unequal diagonal, changed-edge factor and source/runtime bindings. Toy-only controls below do not establish physical action correctness.

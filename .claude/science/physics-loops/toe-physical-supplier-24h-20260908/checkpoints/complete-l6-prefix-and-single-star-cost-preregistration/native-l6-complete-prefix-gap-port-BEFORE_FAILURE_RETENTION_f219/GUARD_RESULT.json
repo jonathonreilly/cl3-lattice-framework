@@ -1,0 +1,44 @@
+[
+  {
+    "name": "valid",
+    "returncode": 0,
+    "stdout": "{\"status\": \"PASS\", \"no_baseline_or_gap_calls\": true, \"scope\": \"import and hash closure only\"}\n",
+    "stderr": ""
+  },
+  {
+    "name": "added.py",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 10, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 8, in main\n    v=load('verify');f=v.verify();load('replay_core');load('run');v.verify_loaded(f)\n                       ^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 12, in verify\n    require(actual==f['membership'],'executable membership')\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 6, in require\n    if not c:raise ValueError(m)\n             ^^^^^^^^^^^^^^^^^^^\nValueError: executable membership\n"
+  },
+  {
+    "name": "added.pyc",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 10, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 8, in main\n    v=load('verify');f=v.verify();load('replay_core');load('run');v.verify_loaded(f)\n                       ^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 12, in verify\n    require(actual==f['membership'],'executable membership')\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 6, in require\n    if not c:raise ValueError(m)\n             ^^^^^^^^^^^^^^^^^^^\nValueError: executable membership\n"
+  },
+  {
+    "name": "added.so",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 10, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 8, in main\n    v=load('verify');f=v.verify();load('replay_core');load('run');v.verify_loaded(f)\n                       ^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 12, in verify\n    require(actual==f['membership'],'executable membership')\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 6, in require\n    if not c:raise ValueError(m)\n             ^^^^^^^^^^^^^^^^^^^\nValueError: executable membership\n"
+  },
+  {
+    "name": "added.dylib",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 10, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 8, in main\n    v=load('verify');f=v.verify();load('replay_core');load('run');v.verify_loaded(f)\n                       ^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 12, in verify\n    require(actual==f['membership'],'executable membership')\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 6, in require\n    if not c:raise ValueError(m)\n             ^^^^^^^^^^^^^^^^^^^\nValueError: executable membership\n"
+  },
+  {
+    "name": "[]",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 10, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 8, in main\n    v=load('verify');f=v.verify();load('replay_core');load('run');v.verify_loaded(f)\n                       ^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 9, in verify\n    require(sys.flags.isolated and sys.dont_write_bytecode,'requires -I -B')\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 6, in require\n    if not c:raise ValueError(m)\n             ^^^^^^^^^^^^^^^^^^^\nValueError: requires -I -B\n"
+  },
+  {
+    "name": "['-I']",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 10, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/preflight.py\", line 8, in main\n    v=load('verify');f=v.verify();load('replay_core');load('run');v.verify_loaded(f)\n                       ^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 9, in verify\n    require(sys.flags.isolated and sys.dont_write_bytecode,'requires -I -B')\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-complete-prefix-gap-port/verify.py\", line 6, in require\n    if not c:raise ValueError(m)\n             ^^^^^^^^^^^^^^^^^^^\nValueError: requires -I -B\n"
+  },
+  {
+    "name": "negative-flag-bytecode",
+    "files": [
+      "verify.cpython-312.pyc"
+    ]
+  }
+]

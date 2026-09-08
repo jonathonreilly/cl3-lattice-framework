@@ -1,0 +1,1 @@
+Reviewer found failed equality/floor rows were checked before persistence. Originalf219 preserved externally. The actual rational, denominator bits, time and both flags are now appended and written before requires. Arithmetic and selection unchanged. No baseline/gap execution.
