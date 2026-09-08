@@ -1,29 +1,31 @@
 {
   "checked_utc": "2026-09-07T21:23:22.013652+00:00",
-  "current_main": "47da12268436ee1843e822386477aa2c829d95a9",
+  "current_main": "2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f",
   "initial_snapshot_commit": "8eb102f8fe545b458ede8f1a63121d9bfde103a4",
   "summary": {
     "original_snapshot": 254,
-    "original_closed": 120,
-    "original_open": 134,
+    "original_closed": 122,
+    "original_open": 132,
     "original_drafts": 0,
-    "original_direct_landing_closures": 10,
-    "original_scientific_scopes_reviewed_and_newly_landed": 31,
-    "closed110_scientific_scopes_newly_landed": 22,
-    "closed110_scientific_scopes_pending": 84,
+    "original_direct_landing_closures": 12,
+    "original_scientific_scopes_reviewed_and_newly_landed": 33,
+    "closed110_scientific_scopes_newly_landed": 23,
+    "closed110_scientific_scopes_pending": 83,
     "closed110_preexisting_main_supersessions": 2,
     "closed110_empty": 1,
     "closed110_unexecuted_plan": 1,
     "closures_requiring_reopening": 0,
-    "pending_closed_scopes_open_successors": 10,
-    "original_process_scopes_reviewed_and_landed": 1
+    "pending_closed_scopes_open_successors": 9,
+    "original_process_scopes_reviewed_and_landed": 1,
+    "original_meta_synthesis_scopes_reviewed_and_landed": 1
   },
   "definitions": {
     "scientific_scope": "The original PR-authored scientific claim, runner and evidence scope, with its actual dependencies and reviewed corrections/narrowing; not the whole inherited repository tree and not proof of every superseded original assertion.",
     "closure": "A GitHub disposition; consolidation transfers review obligations without scientific acceptance.",
     "partial_context": "Historical fixture copies and corrected comparator quotations do not count as accepted original scientific scope.",
     "successor_chain": "Full ordered route including the original PR as first entry and current open successor as final entry; null when there is no successor route.",
-    "process_scopes": "Process/tooling landing is counted separately from original scientific scopes."
+    "process_scopes": "Process/tooling landing is counted separately from original scientific scopes.",
+    "meta_synthesis_scopes": "Meta synthesis source reviewed and landed separately; its quoted members receive no new proof acceptance from that action."
   },
   "original110_ids": [
     5950,
@@ -147,7 +149,9 @@
     8002,
     7984,
     7851,
-    7972
+    7972,
+    7847,
+    7976
   ],
   "pending_closed_scope_transfer": {
     "5966": [
@@ -241,9 +245,6 @@
       7865,
       7866,
       7867
-    ],
-    "7847": [
-      7846
     ],
     "7966": [
       7943,
@@ -1956,7 +1957,7 @@
       "original_head": "26209dd0d09a58dc5a4fb21358968d4acefb5885",
       "original_branch": "physics-loop/toe-source-eta-ownership-block42-support-faithful-law-selection-decision-20260901",
       "closure_action": "draft_disposition",
-      "scientific_status": "pending_on_open_successor",
+      "scientific_status": "reviewed_corrected_scope_on_main",
       "original_branch_preserved": true,
       "successor_chain": [
         7846,
@@ -1964,18 +1965,43 @@
       ],
       "final_successor": 7847,
       "successor_head": "3c375f8cfa2b3423cd80974a2fa075f3b8b9824d",
-      "successor_state": "OPEN",
-      "accepted_landing_commit": null,
-      "remaining_obligations": [
-        "Carry the repeatability theorem and both calibration clauses into #7847 review; do not import the proposed calibration primitive or silently change axioms.",
-        "Preserve original branch/head; closing is consolidation into an open review surface, not a claim of landing or scientific PASS."
-      ],
+      "successor_state": "CLOSED",
+      "accepted_landing_commit": "2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f",
+      "remaining_obligations": "Complete original authored science has reviewed corrected disposition. Calibration uses an explicitly supplied positive full formation domain; joint-trial formulas require the stated kernels/reset. Exact CP, finite typed/local and two-mode even-code results retain their scope. No complete four-axiom model, selected statistics or physical readout, independent-wall count, owner axiom adoption or TOE follows. Four exact archived parent bodies support only named used premises; their broader claims remain on #7827. All original histories and branches preserved.",
       "disposition_reason": "Block 42 derives sharpness and the rank-one reduced instrument from exact repeatability for the displayed binary effects, then separates label orientation, typed Block-38 attachment and conditional calibration/affinity. All 14 non-generated changed paths are byte-identical in #7847 at 3c375f8cfa2b3423cd80974a2fa075f3b8b9824d. Close this duplicate recovery surface, retaining the branch and successor. The source is not on main. ",
-      "destination": "open PR#7847; full original claim/review obligations remain",
+      "destination": "reviewed corrected source on main; historical routing preserved at previous planning commit",
       "reopen_required": false,
       "evidence_group": "drafts",
       "initial_snapshot_head": "26209dd0d09a58dc5a4fb21358968d4acefb5885",
-      "closure_review_head": "26209dd0d09a58dc5a4fb21358968d4acefb5885"
+      "closure_review_head": "26209dd0d09a58dc5a4fb21358968d4acefb5885",
+      "historical_routing_obligations_at_closure": [
+        "Carry the repeatability theorem and both calibration clauses into #7847 review; do not import the proposed calibration primitive or silently change axioms.",
+        "Preserve original branch/head; closing is consolidation into an open review surface, not a claim of landing or scientific PASS."
+      ],
+      "accepted_unit": "record_calibration_even_code_7847",
+      "current_acceptance_evidence": "backlog_evidence/wave14/INDEX.json",
+      "acceptance_update_utc": "2026-09-08T00:31:50.569685+00:00"
+    },
+    {
+      "pr": 7847,
+      "original_head": "3c375f8cfa2b3423cd80974a2fa075f3b8b9824d",
+      "initial_snapshot_head": "3c375f8cfa2b3423cd80974a2fa075f3b8b9824d",
+      "closure_review_head": "3c375f8cfa2b3423cd80974a2fa075f3b8b9824d",
+      "original_branch": "physics-loop/toe-source-eta-ownership-block43-matter-record-grading-compatibility-decision-20260901",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f",
+      "accepted_unit": "record_calibration_even_code_7847",
+      "remaining_obligations": "Complete original authored science has reviewed corrected disposition. Calibration uses an explicitly supplied positive full formation domain; joint-trial formulas require the stated kernels/reset. Exact CP, finite typed/local and two-mode even-code results retain their scope. No complete four-axiom model, selected statistics or physical readout, independent-wall count, owner axiom adoption or TOE follows. Four exact archived parent bodies support only named used premises; their broader claims remain on #7827. All original histories and branches preserved.",
+      "reopen_required": false,
+      "evidence_group": "wave14",
+      "current_acceptance_evidence": "backlog_evidence/wave14/INDEX.json",
+      "acceptance_update_utc": "2026-09-08T00:31:50.569685+00:00"
     },
     {
       "pr": 7850,
@@ -3200,6 +3226,27 @@
       "acceptance_update_utc": "2026-09-07T23:24:23.981326+00:00"
     },
     {
+      "pr": 7976,
+      "original_head": "d2dd83da37f6ebe03c7075a218f9cbdff8a3efe9",
+      "initial_snapshot_head": "d2dd83da37f6ebe03c7075a218f9cbdff8a3efe9",
+      "closure_review_head": "d2dd83da37f6ebe03c7075a218f9cbdff8a3efe9",
+      "original_branch": "physics-loop/u1-maxwell-landing-core-block01-20260905",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_meta_synthesis_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f",
+      "accepted_unit": "light_lane_meta_7976",
+      "remaining_obligations": "Historical quotation-frontier meta synthesis reviewed with current source/status/attribution corrections. All 31 members retain their separate as-of dispositions and conditional limits. This lands no previously unaccepted member proof, empirical photon, physical UK identification, dynamics-class derivation or formal audit status.",
+      "reopen_required": false,
+      "evidence_group": "wave14",
+      "current_acceptance_evidence": "backlog_evidence/wave14/INDEX.json",
+      "acceptance_update_utc": "2026-09-08T00:31:50.569685+00:00"
+    },
+    {
       "pr": 7980,
       "original_head": "11fdd471a5dbe4ae9bce07bc56b9385fdd9c74c7",
       "original_branch": "physics-loop/u1-maxwell-landing-core-block02-dynamics-class-20260905",
@@ -3407,5 +3454,5 @@
       }
     }
   ],
-  "last_scientific_disposition_update_utc": "2026-09-07T23:24:23.981326+00:00"
+  "last_scientific_disposition_update_utc": "2026-09-08T00:31:50.569685+00:00"
 }

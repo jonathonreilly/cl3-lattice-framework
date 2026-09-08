@@ -1,0 +1,410 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "title": "Carry the supplied hopping scale and actual incident-star size into every equivalent current claim",
+    "anchors": [
+      {
+        "path": "docs/CHARGE_CONJUGATION_AND_THE_CONSERVED_U1_CURRENT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          4,
+          122,
+          123,
+          125,
+          184,
+          191,
+          255,
+          261,
+          263
+        ]
+      },
+      {
+        "path": "scripts/charge_conjugation_and_conserved_u1_current_check_2026_09_03.py",
+        "lines": [
+          604,
+          608
+        ]
+      }
+    ],
+    "problem": "The first current formula includes t, but all three equivalent forms omit it although T has no t. The runner fixes t=1. At t=0 the current is zero, so the two-monomial/full-support and nonzero naive-current residual statements also require a nonzero-t domain. The reported cube ground energy is the t=1 fixture. The 2x2x2 cube has three incident edges at each corner, not the six repeatedly claimed for its Q readout.",
+    "narrow_fix": "Restore t in J=i t eta T B_j=-i t eta T B_i=(t eta/4)A(B_i-B_j)^2 throughout live prose, claim_scope, check descriptions and executable block. State real parameter domains and which counts require t!=0; identify numerical t=1 fixtures. Use z_v incident records (three on the cube, six only in the bulk). Preserve the operator definitions and exact continuity proof.",
+    "required_affected_confirmation": "Run actual generalized-current checks at t=0,2,-3/2 as well as t=1; a dropped t must fail at a nonunit value. Verify charge readout using the actual incident-edge list and retain all original checks.",
+    "evidence": [
+      "INDEPENDENT_CHECKS.json",
+      "original-7892.stdout"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F2",
+    "priority": "P2",
+    "title": "State the sea boundary/zero-mode and conjugation-sector hypotheses",
+    "anchors": [
+      {
+        "path": "docs/CHARGE_CONJUGATION_AND_THE_CONSERVED_U1_CURRENT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          153,
+          165,
+          195,
+          197,
+          207,
+          223,
+          262
+        ]
+      },
+      {
+        "path": "scripts/charge_conjugation_and_conserved_u1_current_check_2026_09_03.py",
+        "lines": [
+          526,
+          547,
+          625
+        ]
+      }
+    ],
+    "problem": "The one-particle fixture has antiperiodic seam signs in all three directions, omitted from the theorem. With the same 4^3 lattice and periodic seams, eight zero modes make the strictly negative projector rank28 and eps(I-P)eps-P has residual0.125, rather than rank32/residual0. The finite C-invariant ground state does not select a unique physical vacuum. The T-join sufficiency requires each connected component even; perfect matchings are explicit witnesses on these named connected graphs. The matching test compares conjugation on the encoded algebra, not scalar equality on the full edge register: Cx Cy is nonscalar ambiently, scalar on the cube +face code.",
+    "narrow_fix": "Declare the executed antiperiodic torus and a zero-mode-free negative-spectral-projector statement, or supply an explicit valid zero-mode occupation convention and limit its claim. Keep the physical vacuum-selection question open. State connected/named graph and fixed code-cycle-sector scope for T-join/matching assertions; do not generalize two tested matchings into an unrestricted torus-sector phase claim.",
+    "required_affected_confirmation": "Retain the actual periodic-seam negative control; add a genuinely asymmetric/zero-mode boundary control to the corrected acceptance conditions. For phase language, distinguish equal conjugation from scalar-on-code and check the claimed sector rather than ambient masks alone.",
+    "evidence": [
+      "INDEPENDENT_CHECKS.json",
+      "CODE_BOUNDARY_CONTROLS.json",
+      "ACTUAL_SOURCE_MUTANTS.json"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F3",
+    "priority": "P2",
+    "title": "Replace the tautological many-body spectral-reflection check",
+    "anchors": [
+      {
+        "path": "scripts/charge_conjugation_and_conserved_u1_current_check_2026_09_03.py",
+        "lines": [
+          706,
+          708,
+          709
+        ]
+      },
+      {
+        "path": "docs/CHARGE_CONJUGATION_AND_THE_CONSERVED_U1_CURRENT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          199,
+          263
+        ]
+      }
+    ],
+    "problem": "dsym=abs(sort(w0)+sort(-w0)[::-1]).max() is identically zero for every real spectrum. It does not test E -> -E. An actual source mutation w0[-1]+=1 after eigh(H0) still prints32/0 and exits0.",
+    "narrow_fix": "Compare sort(w0) with -sort(w0)[::-1], and tie spectral reflection to the actual chiral operator that anticommutes with H at the stated parameters. C itself commutes with H at m=0, which alone does not imply spectral reflection. Preserve the valid unmutated finite theorem.",
+    "required_affected_confirmation": "The preserved excited-eigenvalue mutation must fail the corrected real runner; an asymmetric spectrum must give nonzero residual. Confirm the actual chiral anticommutation independently from the eigenspectrum.",
+    "evidence": [
+      "ACTUAL_SOURCE_MUTANTS.json",
+      "INDEPENDENT_CHECKS.json",
+      "source-mutants/7892-corrupt_excited_spectrum.stdout"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F4",
+    "priority": "P2",
+    "title": "Separate one-corner conditional projections from global and framework formation",
+    "anchors": [
+      {
+        "path": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          4,
+          25,
+          168,
+          172,
+          234,
+          288,
+          311,
+          321
+        ]
+      },
+      {
+        "path": "scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py",
+        "lines": [
+          822,
+          835,
+          867,
+          910,
+          933
+        ]
+      },
+      {
+        "path": "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          90,
+          92,
+          222
+        ]
+      }
+    ],
+    "problem": "Group F projects a supplied one-corner valid relation, considers only its occurring prefixes, and then reconstructs the same relation in each order. This finite identity holds for any nonempty relation and is not a proof that local corner rules glue globally, respect fine-lattice nearest-neighbor support, or implement the Record axiom. On the actual plaquette the prefix with all four fermion edge records0 has a local completion at every corner but no global Gauss completion. A locally permitted prefix can also reach empty support. The corner-table staggered convention is not independently bound to G_v: reversing 1-eps to1+eps in that actual table still yields31/0. The equation is linear in n_v and flux, not in the individual fermion-record bits because n_v is a parity product.",
+    "narrow_fix": "Keep the exact finite one-corner conditional-projection and census results with their occurring-prefix domain. Remove the claimed derivation of arbitrary-order global/fine-site formation and the assertion that the joint restriction is thereby obtained from the approved axiom. Explicitly leave global compatibility, admissibility probabilities, fine-role locality and physical formation as obligations. Bind the table directly to the declared G_v and label the parity dependence correctly. Carry this same boundary into #7903 Setting and its framework analogy.",
+    "required_affected_confirmation": "The exact wrong-staggering table mutation must fail. Preserve both explicit global-prefix counterexamples as boundary controls; do not make them pass by adding an undeclared nonlocal global-completion oracle. Check all original one-corner counts against the actual Gauss relation.",
+    "evidence": [
+      "INDEPENDENT_CHECKS.json",
+      "ACTUAL_SOURCE_MUTANTS.json",
+      "source-mutants/7893-wrong_local_staggered_support.stdout"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F5",
+    "priority": "P2",
+    "title": "Qualify electric Ampere evolution by the Hamiltonian actually checked",
+    "anchors": [
+      {
+        "path": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          4,
+          185,
+          289
+        ]
+      },
+      {
+        "path": "scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py",
+        "lines": [
+          30,
+          630
+        ]
+      }
+    ],
+    "problem": "The declared coupled law includes optional lambda sum P_f, but Group C checks only the hopping part. For nonzero lambda, i[H_full,E_e]=-J_e^g+lambda i[sum P_f,E_e]; the magnetic term is nonzero. On the actual plaquette at lambda1, every link has eight nonzero Pauli residual terms. Its divergence vanishes, so Gauss conservation and matter continuity survive.",
+    "narrow_fix": "Either name H_hop^g explicitly for the existing electric equation and restrict it to lambda=0, or include the full magnetic curl term. Propagate the distinction to claim_scope, check labels, executable block and the interpretation that only matter current changes a link. Do not change hopping, magnetic coefficients or the valid conservation algebra.",
+    "required_affected_confirmation": "Check an actual nonzero-lambda face, including its nonzero electric curl and zero divergence; omitting the magnetic term from a full-H assertion must fail.",
+    "evidence": [
+      "INDEPENDENT_CHECKS.json",
+      "independent_checks.py"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F6",
+    "priority": "P2",
+    "title": "Replace finite-quantum/classical Wilson identity with the actual compression and comparison boundary",
+    "anchors": [
+      {
+        "path": "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          4,
+          128,
+          137,
+          161,
+          167,
+          170,
+          176,
+          177,
+          180,
+          228,
+          279,
+          287
+        ]
+      },
+      {
+        "path": "scripts/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.py",
+        "lines": [
+          35,
+          586,
+          1070,
+          1079
+        ]
+      }
+    ],
+    "problem": "At finite S the link shift is nonunitary and its C=U+Udag, S=(U-Udag)/i do not commute. The finite-dimensional magnetic operator is not literally multiplication by the scalar periodic function V(theta) used by the current #7884 theorem. Taking Maclaurin coefficients of an auxiliary scalar function cannot identify this truncated quantum Hamiltonian with a supplied isotropic four-dimensional Euclidean action. The source acknowledges the distinction and then still asserts membership. The two stated truncation identities are two listed defects, not an exhaustive count of everything truncation changes.",
+    "narrow_fix": "State the exact finite flux compression of the Wilson operator, with the scalar/untruncated-rotor symbol as a separate comparison. For supplied real g with g^2>0 its scalar function has kappa=1/g^2. Keep #7884 classical C4 smooth-refinement/isotropic/temporal assumptions explicit; no transfer of its two-mode result, quantum photon or framework bridge. Say two listed truncation identities and, if using the Kogut-Susskind label, call the finite model its specified truncation.",
+    "required_affected_confirmation": "Retain actual finite nonunitarity and noncommutativity controls; independently verify the compressed face operator or restrict the prose to the scalar comparison that is actually established. Check the exact current #7884 quote and domain rather than importing absent parents.",
+    "evidence": [
+      "INDEPENDENT_CHECKS.json",
+      "CURRENT_PREMISE_BINDING.json",
+      "CURRENT_MAIN_REBINDING.json"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F7",
+    "priority": "P2",
+    "title": "Keep local integer parity separate from global solvability and a changed flux carrier",
+    "anchors": [
+      {
+        "path": "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          26,
+          139,
+          142,
+          147,
+          148,
+          156,
+          281
+        ]
+      },
+      {
+        "path": "scripts/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.py",
+        "lines": [
+          944
+        ]
+      }
+    ],
+    "problem": "Integer flux removes the local coordination-parity obstruction for staggered charge; it does not make every named block globally solvable. On the closed-boundary open3x3x3 encoded graph, product_v B_v=I forces even N while sum divE=0 and staggered Gauss require N=13, so the joint sector is empty for every S. A half-integer background translation with div c=-eps/2 relates divergence equations, but changes the integer-link spectrum/window and transforms E^2 by 2cE+c^2. It does not give the same fixed integer-truncated Hamiltonian.",
+    "narrow_fix": "Claim local parity compatibility plus the explicitly verified finite global censuses, and state the global total-charge/code-parity/boundary constraints. Describe the background shift as a change of variables with a shifted carrier and transformed Hamiltonian, rather than equivalence of the two conventions on the same prescribed link law. Preserve the exact spanning-tree and census results.",
+    "required_affected_confirmation": "Add the named3x3x3 global-parity obstruction, without enumerating a huge space. Check S1,c=1/2: spectrum[-1,0,1] moves to[-1/2,1/2,3/2], and the squared-energy differences are[-3/4,1/4,5/4]. Retain all balanced/unbalanced divergence checks.",
+    "evidence": [
+      "INDEPENDENT_CHECKS.json"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F8",
+    "priority": "P2",
+    "title": "Bind plaquette gap and cosine claims to a code sector and a ground-state convention",
+    "anchors": [
+      {
+        "path": "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          188,
+          191,
+          192,
+          195,
+          196,
+          197,
+          199,
+          200,
+          209
+        ]
+      },
+      {
+        "path": "scripts/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.py",
+        "lines": [
+          1106,
+          1176,
+          1199,
+          1325
+        ]
+      }
+    ],
+    "problem": "The numerical Hamiltonian is diagonalized over the whole26/50-dimensional Gauss sector, including both fermion face-code sectors. Its zero gap without H_B is a cross-sector degeneracy, not the gap of the13/25-dimensional +code fermion. In that degenerate raw ground space <cos_f>=0 is also an eigensolver-selected mixture, not a state-independent theorem. Independent ordinary Fock construction gives, at g^2=1 without H_B, +code gaps0.978328969369697 and0.956978271110297, and cosines0.231098453222353 and0.251307918584951 for S1/S2. Ground energies agree with the original. With H_B the +code gaps are1.787323468929332 and1.687818382305960, not the raw cross-sector gaps. Ring calculations likewise include two loop sectors; the independently checked ground energies agree in both at the sampled endpoints, so this is not a blanket rejection of their finite energy comparison. Ordinary90-degree rotation exchanges the staggered background; the stated +a,-a,-a,+a charge pattern needs an actual combined symmetry argument or a numerical label.",
+    "narrow_fix": "Keep all original raw-Gauss numerical receipts as such. For physical encoded-fermion claims use an explicitly selected code/cycle sector; alternatively narrow the theorem to raw Gauss spectral data and remove physical-gap and state-independent-cosine implications. State how any degenerate ground expectation is chosen and include actual +code branch comparisons. Limit the finite ring screening conclusion to its stated sector, parameters and sizes. Label the computed charge pattern honestly unless the required combined transformation is supplied.",
+    "required_affected_confirmation": "Compare a complete +code restriction with an independent occupation/flux construction at least at both S and g^2=1, with and without H_B. A change of basis within the degenerate raw ground subspace must not change a purported invariant expectation. Preserve all original energies and finite ring evidence; no thermodynamic or photon theorem is requested.",
+    "evidence": [
+      "INDEPENDENT_FOCK.json",
+      "INDEPENDENT_CHECKS.json",
+      "independent_fock.py"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F9",
+    "priority": "P2",
+    "title": "Do not identify off-diagonal current with correlations of the same fixed records",
+    "anchors": [
+      {
+        "path": "docs/CHARGE_CONJUGATION_AND_THE_CONSERVED_U1_CURRENT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          137,
+          216,
+          246,
+          288
+        ]
+      },
+      {
+        "path": "scripts/charge_conjugation_and_conserved_u1_current_check_2026_09_03.py",
+        "lines": [
+          621
+        ]
+      },
+      {
+        "path": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          240
+        ]
+      }
+    ],
+    "problem": "Zero record-diagonal part establishes that the current is not a function of the fixed Z records. It does not establish that correlations among those same records read it. On the named2x2x2 cube there are two states in the +face code with exactly identical full joint Z-record probabilities but current expectations+1 and-1. Every correlation of those fixed records is therefore identical despite different current. The analogous inference in #7893 is unsupported as well.",
+    "narrow_fix": "Retain the exact zero-diagonal result and say that no fixed-record readout is provided. Leave any additional measurement basis, dynamics or new-record protocol open. Do not describe changing already permanent records as established physical dynamics, and do not infer a vacuum-selection or physical measurement law from this algebra.",
+    "required_affected_confirmation": "Preserve the named code-state counterexample or an equivalent independent pair with identical complete diagonal statistics and different current. Distinguish formal current-current operator correlators from correlations of recorded Z outcomes.",
+    "evidence": [
+      "CODE_BOUNDARY_CONTROLS.json",
+      "code_boundary_controls.py"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F10",
+    "priority": "P2",
+    "title": "Separate printed precision, test tolerance and finite numerical scope",
+    "anchors": [
+      {
+        "path": "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          4,
+          191,
+          193,
+          200,
+          211
+        ]
+      },
+      {
+        "path": "docs/CHARGE_CONJUGATION_AND_THE_CONSERVED_U1_CURRENT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          199,
+          263
+        ]
+      }
+    ],
+    "problem": "The compact-link note prints energies to six decimal places but says these values hold to1e-9. For example -2.152012 differs from the fresh value by3.5926e-7. Other rounded profiles and gaps share the same issue. The code compares more precise literals, so this is a live reporting overclaim rather than evidence that the unmodified eigensolver energies are wrong. The cube decimal -6.928203230 is also an approximation, not exactly -4sqrt3.",
+    "narrow_fix": "Use honest rounding labels or sufficiently precise reported values, separate them from actual assertion tolerances, and identify finite t,g,S,boundary/code-sector fixtures. Preserve original numeric receipts and constants unless correcting a demonstrably wrong acceptance condition. Do not present the few tested couplings as a proved strong-coupling limit; label any unsupplied limit argument as outside the executed result.",
+    "required_affected_confirmation": "Compare every live displayed numerical payload against the final reported sector/output with its claimed digits. Keep exact arithmetic, float checks, achieved residuals and extrapolation boundaries distinct.",
+    "evidence": [
+      "original-7892.stdout",
+      "original-7903.stdout",
+      "INDEPENDENT_FOCK.json"
+    ],
+    "status": "OPEN; source unchanged"
+  },
+  {
+    "id": "F11",
+    "priority": "P3",
+    "title": "Align current source status and next action with supplied-model scope and deferred audit",
+    "anchors": [
+      {
+        "path": "docs/CHARGE_CONJUGATION_AND_THE_CONSERVED_U1_CURRENT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          14,
+          30,
+          33,
+          39,
+          40
+        ]
+      },
+      {
+        "path": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          14,
+          31,
+          34,
+          40,
+          41
+        ]
+      },
+      {
+        "path": "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          14,
+          32,
+          35,
+          41,
+          42
+        ]
+      }
+    ],
+    "problem": "All three machine blocks still use bounded-support/frontier/null-target traces and schedule independent audit as the next action. The active task is a conditional supplied-model source review under an explicit owner audit deferral. The notes also refer to #7884 as open although its corrected content is on current main. The current bodies must not imply a derived framework result, current scientific acceptance or permission to run an auditor from these stale labels.",
+    "narrow_fix": "Use the approved current conditional source/trace vocabulary and a truthful review or missing-consumer next action. Keep formal audit unset/deferred, preserve dated prior records as history, and distinguish historical PR context from the exact current governing memo and comparator. Register actual load-bearing semantic links if used; no need to invent runtime dependencies for these self-contained programs.",
+    "required_affected_confirmation": "Check only affected live metadata/prose and exact current source references; do not run or apply formal audit and do not rewrite history into a new verdict.",
+    "evidence": [
+      "CURRENT_PREMISE_BINDING.json",
+      "CURRENT_MAIN_REBINDING.json",
+      "SOURCE_READ_LEDGER.json"
+    ],
+    "status": "OPEN; source unchanged"
+  }
+]

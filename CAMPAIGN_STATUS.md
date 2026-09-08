@@ -43,18 +43,17 @@ including all draft PRs; see [BACKLOG_STATUS.md](BACKLOG_STATUS.md).
   physical flux-sector claim still needs its sector/branch and limit proof.
 
 A suggested Born proof target was screened out because main already contains
-a more general characterization on matching menus. The separate #7990
-indexed-effects versus Record-content support issue remains an inspection
-question; no blanket disposition of that PR is asserted.
+a more general characterization on matching menus. The complete original review of #7990 confirms an indexed-effects versus Record-content mismatch
+and unsupplied joint-law assumptions. Narrow repairs preserve its conditional mathematics.
 
 ## Next scientific decisions
 
-1. Confirm the wave14 helper-declaration repair after the actual integration-check
-   failure; main and closure counts remain unchanged. Continue the narrow matter/U1
-   repairs and #7990 review, hand off the completed pure-link findings for repair,
-   and prepare #6358/#6371 with their six consolidated constituents.
-   Closure/content reconciliation remains complete; pending scopes stay obligations
-   at named open successors. Preserve all premise and reserved-source holds.
+1. Complete the narrow matter/U1, pure-link and #7990 repairs, then obtain
+   the respective original reviewers’ confirmations. Begin the smaller #6371 selector/shell
+   review from the completed source preparation; #6358 remains prepared.
+   #7847/#7846 science and #7976 meta synthesis now join the previous landings.
+   Closure/content reconciliation is complete; pending closed scopes remain
+   obligations at their named open successors. Preserve all premise and reserved-source holds.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
