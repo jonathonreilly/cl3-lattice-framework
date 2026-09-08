@@ -1,0 +1,1 @@
+The incorrect-flux-scope mutant failed as intended, at K4 scalar E/2 rather than the anticipated earlier non-scalar check. The verifier expected-message string was corrected; no scientific source or mutant changed. Original verifier preserved.

@@ -1,0 +1,3 @@
+# Independent review controls
+
+Read full b1561c33 proof and helper before execution. Do not rerun its small-subset census. Check the arbitrary-subset slicing premise through complete4x4 binary two-dimensional functions; verify no nonconstant function has fewer than four mixed lines. Check adjacency-pair matching obstruction and six-insertion support on unequal4x6x8, plus complete-cycle/cut equivalence through a separately constructed spanning-tree cycle basis. Use deterministic cuts containing large slabs and complements, not only tiny supports. Controls supplement the written universal proof; they do not establish full-H0 isolation or a nonzero sixth coefficient.

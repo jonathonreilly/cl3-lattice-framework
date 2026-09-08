@@ -1,0 +1,7 @@
+# Root complete canonical review
+
+PASS for final note08e1ff0b and primary4c6dbb59 with all three portable helpers. Root read the complete original first-order, spectator-selection and actual L4 isolation proofs and helpers, then the complete final integrated note, primary, all helper diffs, closure and actual mutant receipts. Independent canonical review02789f3d confirms the source-bound scope.
+
+The actual finite L4 isolation closes the general theorem spectral hypotheses. Constant-square equality includes every square and straight winding; strict concavity proves a unique flux orbit while spectator multiplicity remains2^31. The |t|/432 gap applies to the entire complementary space. The arbitrary-subset cut classification and incident-pair parity obstruction make every canonical coefficient through five scalar. Sixth-order support is possible but no coefficient or splitting is asserted. Finite analytic O(u^6) has no claimed explicit radius. No larger-volume isolation, selected Hamiltonian, phase or TOE closure follows.
+
+Live93564 predicates, eight-file isolated closure and three actual semantic mutants pass. Portable edits affect only output/alarm/RSS; original scientific payloads agree. Graph generation adds exactly one node and three explicit links, with all prior manifest entries unchanged. Formal audit and full combined landing checks remain pending for an actual main-landing candidate; this is a review PR.

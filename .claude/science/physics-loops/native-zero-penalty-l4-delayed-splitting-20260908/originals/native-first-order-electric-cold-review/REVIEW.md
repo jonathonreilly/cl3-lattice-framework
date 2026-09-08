@@ -1,0 +1,13 @@
+# Cold review: fixed-flux first-order electric penalty
+
+Verdict: PASS at DERIVATION.md b17fbf7ea58ac5d6a2cd227f9d0503a3daa2d8414cde36661304410ce78cb76a. No correction requested.
+
+Read the complete proof and final checker, inspected raw count/value fields, and checked the actual full dictionary Z/Gauss/flux premise and prior U0 sector proof. READ_HASHES binds source-directory bytes. No author program was imported or rerun.
+
+The expansion of Q² has scalar3/2 per cubic vertex and coefficient1/2 per unordered incident edge pair. The full dictionary retains electric Z exactly. Since Z_F toggles X-signs by F, the fixed-flux selection rule is exactly F in the cut space; it is not merely a statement that F changes some arbitrarily selected plaquette. This treats winding characters as well. On a cut delta(S), Gauss gives Z_F=product_{v in S}P_v, with complementary S equivalent by even total parity. Thus the small-graph exception is a genuine within-sector operator, and not an omitted flux average.
+
+The detour proof is sufficient: the four transverse +/- square paths are edge-disjoint, avoid the original edge, and connect its endpoints for all extents>=4, including seams. A cut containing that edge must contain at least one distinct edge from each path. This proves size at least five and hence excludes the only size-two supports appearing in D. It need not prove the sharp six-edge connectivity. The consequence Pi_phi D Pi_phi=(3N/2)Pi_phi holds on the entire sector, independently of spectator multiplicities.
+
+The perturbative corollary is correctly conditional. Scalar compression onto one flux sector is not scalar compression onto a degenerate eigenspace spanning several sectors. The text explicitly requires the selected full eigenspace to lie in one sector and excludes coincident energies elsewhere. An energy gap to distinct eigenvalues alone would not remove a coincident-flux degeneracy; the additional exclusion already written is load-bearing. Off-flux virtual higher-order processes remain possible. No global ground-manifold splitting or cubic flux minimum is inferred.
+
+Independent controls explicitly form the Gauss-averaged states in the X-link basis and apply every centered-penalty electric toggle, rather than reusing the author's cut-membership summation. On square they give4,2,2,2,2,2,2,0; on K4 they give eight3s. Orbit norms are checked. Separately all four detours for every edge of a4x6x4 torus are literally checked disjoint, including seams. Total1184 predicates,0.00276 seconds. These verify conventions and exceptions; the general proof supplies the theorem. No production or old-proof rerun occurred.

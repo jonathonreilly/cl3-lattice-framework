@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/delayed-isolated-p_9zdeiq/scripts/native_zero_penalty_l4_delayed_splitting_2026_09_08.py", line 10, in <module>
+    part=runpy.run_path(str(root/f'scripts/native_zero_penalty_{key}_exact_2026_09_08.py'))['out']
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/delayed-isolated-p_9zdeiq/scripts/native_zero_penalty_electric_exact_2026_09_08.py", line 36, in <module>
+    if name=='K4':need(set(vals)=={F(3)},'K4 scalar E/2')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/delayed-isolated-p_9zdeiq/scripts/native_zero_penalty_electric_exact_2026_09_08.py", line 9, in need
+    if not c:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: K4 scalar E/2
