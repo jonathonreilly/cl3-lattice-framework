@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/berezin_c4_action_to_fock_record_decision_surface_2026_09_01.py
+runner_sha256: 3ed3f1e510c41f7732336081694c56dbd0168e67206259e501f8e7c5edb31679
+input_fingerprint_sha256: 5a5463be544b6682151a23cfcba556dd10dc3375c426a95cfa856493b9d52a14
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.14
+status: ok
+----- stdout -----
+PASS preregistration, parent science, and Block 44 comparison are source-bound :: prereg=8/8 unchanged=8/8 main=9/9 block44=2/2
+PASS one positive D4 action kernel exactly recovers the local C4 generator :: B2=K:True positive=(True,True) recover_g=True D4=True
+PASS the action cross-kernel coefficients derive normalized Gamma(K) and its composition law :: det_coeff=True vacuum=True GammaI=True GammaB2=True trace=True
+PASS the same action has a Theta-symmetric reflection-positive rank-16 OS reconstruction :: eps=-1 theta=True PSD=True rank=16 occupation_rank=16 error=None
+PASS the two-slice coefficient array is OS Gram data, not a nontrivial time-translation operator :: C=G:True G^-1C=I:True C_nontrivial=True target_closed=False
+PASS the reflected functional fixes K^-1 covariance and B-normalized CAR :: covariance=True CAR_aa=True CAR_ad=True
+PASS the reconstructed dictionary is uniquely CAR and excludes the hard-core frame :: JW_nullity=1 rank=16 metric=True hard_core_nullity=0
+PASS the flat-boundary coefficient matrix has the exterior-power spectrum tied to the reconstructed bilinear :: Gamma=4^-dGamma(g):True intertwining=True creator_covariance=True positive=True
+PASS the boundary-coefficient logarithm reduces to the same local hopping law in the fixed Q=2 sector :: g2=h2+6I:True reconstructed=True U1=True
+PASS Peierls differentiation of that generator gives exact four-site continuity :: link_derivatives=4/4 continuity=4/4
+PASS the action-derived CAR law is all-time dark where the same supplied hard-core hopping is deterministic :: CAR_dark=True HCB_amplitude=-1 polynomials=(True,True)
+PASS one common even CPTP writer turns the exact support difference into fixed pointer Records :: common=True isometry=(True,True) even=True weights=((1, 0),(0, 1)) permanent=True
+PASS claim custody leaves physical-functional selection, time, and Record formation open :: boundaries=True I4_overclaim=False Born_overclaim=False
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

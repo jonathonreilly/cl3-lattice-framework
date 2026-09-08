@@ -1,0 +1,16 @@
+PASS preregistration and foundation are source-bound :: prereg=7/7 unchanged=7/7 minimal=True
+PASS hostile twins share all declared local and one-particle input data :: nilpotent=True number_equal=True one_particle_equal=True
+PASS all 24 Jordan-Wigner orders retain CAR, the spectrum, and the dark opposite-corner amplitude :: orders=24/24
+PASS the one supplied hopping expression conserves total U(1) charge in both realizations :: charge_commutators=[True, True]
+PASS every oriented bond current tJ is the link-phase derivative of that same action tH :: exact_link_derivatives=8/8
+PASS operator continuity closes at all four vertices in both product theories :: continuity_identities=8/8
+PASS the law, oriented current, and opposite-corner event pair are covariant under all eight plaquette frames :: law=16/16 current=16/16 events=16/16
+PASS within scalar nearest-neighbor quadratic actions D4 fixes the real uniform hopping ray up to t :: frames=8 CAR={(r3, r3, r3, r3, 0, 0, 0, 0)} HCB={(r3, r3, r3, r3, 0, 0, 0, 0)}
+PASS the exact two-particle blocks have their claimed minimal-polynomial and spectral data :: CAR_poly=True HCB_poly=True spectra=True
+PASS opposite-corner transfer is CAR-dark for all cadence and HCB-deterministic at one exact cadence :: A_CAR=0 A_HCB=cos(2*sqrt(2)*z)/2 - 1/2 A_HCB(z*)=-1
+PASS the deterministic target Record is reached by the exactly integrated action-derived current :: delta_n=(-1, 1, -1, 1) integrated_J=(1/2, -1/2, 1/2, -1/2) continuity=[True, True, True, True]
+PASS the target event is the same even charge-spectral projector in both theories :: common=True rank=1 even=True
+PASS one common even Kraus/Choi Record writer reports the exact 0-versus-1 action signal :: common=True complete=(True,True) Choi_factor_PSD=(True,True) correlation=(True,True) weights=(0,1) pure_pointer=True
+PASS all later evolution under the same matter law fixes the written pointer Record projectors :: Heisenberg_fixed=[True, True]
+PASS actual pointer-label relabeling and the claim firewall preserve weights without promoting calibration or a full response family :: label_invariant=True calibration_conditional=True relative_probability_overclaim=False full_K_claim=False
+TOTAL: PASS=15 FAIL=0
