@@ -35,7 +35,13 @@ Mode selection:
    `LabelingConventionReviewer` (when bounded-theorem candidates changed),
    `RepoGovernanceReviewer`, and optionally `MethodologySkillReviewer`.
 4. Fix only verified, narrow findings. Demote overclaims instead of patching
-   missing science with prose.
+   missing science with prose. Use the skill's overlap-repairs guidance for
+   authorized early finding handoffs against immutable originals, safe-boundary
+   priority for same-session final confirmations, early publication/input checks,
+   and reuse of verified mechanical facts. Early handoffs are provisional;
+   complete final source review, independent mathematics and exact current-main
+   integration remain required. Preserve owner-frozen backlog membership and
+   actual execution/attempt limits; never restamp evidence after an input change.
 5. Enforce audit-system compatibility without running the independent audit:
    no bare `retained` / `promoted` status lines. Run focused source/runner/
    premise checks per unit; perform one full `docs/audit/scripts/run_pipeline.sh`,

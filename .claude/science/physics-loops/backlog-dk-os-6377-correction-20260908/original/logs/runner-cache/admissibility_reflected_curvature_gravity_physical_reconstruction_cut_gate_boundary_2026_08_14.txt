@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_reflected_curvature_gravity_physical_reconstruction_cut_gate_boundary_2026_08_14.py
+runner_sha256: cd7dde6546d422097103e55b01eacb6e68d9989667c6e9287649291d20e1bbc1
+input_fingerprint_sha256: 9b63bbdeb7cce81ff651b19ce3384414bc33af5e4bb893108e0adf2e7fb5485b
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 5.59
+status: ok
+----- stdout -----
+[PASS] A-authority-and-parent-bindings: the actual axiom boundary and Blocks 49, 50, 53, 68, and 74 are bound without dynamics p...
+[PASS] B-exact-axis-sector-and-gauge-split: the reflected action has exact 16+6 edge and 3+1 gauge y/z sectors on the analytic axis
+       sector dims=(16, 6)/(3, 1); symmetry error=1.776e-15
+[PASS] C-two-real-pole-pairs-are-complete-edge-nulls: two isolated real even-sector poles exist on each side of the hostile collision band
+       frequencies=1.118170153,1.159172956,1.116229737,1.159620477; max null=5.208e-17
+[PASS] D-open-sampled-complex-pole-band: the two real poles leave the real axis as a conjugate pair at four interior momenta
+       |Im omega|=0.00813229,0.01236130,0.01180658,0.00538686; conjugacy=5.421e-13
+[PASS] E-opposite-residue-companion-and-sign-exchange: the local cross observable has one positive and one negative spectral weight which excha...
+       -Res_E C=0.806663005,-0.065788193,-0.053645577,0.752428552; side error=3.815e-06
+[PASS] F-repair-loses-einstein-hamiltonian-constraint: the constant-complement metric Schur has only a gauge lapse null while Einstein has one ...
+       ranks=(18, 12, 6, 3, 3); repaired constraint=3.377e-16; Einstein=0.056568542
+[PASS] G-extra-indefinite-source-coupled-channel: the three-channel quotient is indefinite, mixes TT with scalar, and the conserved static...
+       eig=-0.018017087,0.025847716,0.038727100; source eig=0.314648,0.000000,0.147511
+[PASS] H-exact-line-metric-gauge-and-two-tt-interface: the raw-momentum metric gauge identity and two-dimensional analytic TT quotient hold on ...
+       modes=728; gauge identity=4.518e-16; TT dims=(2,)
+[PASS] I-full-zone-canonical-schur-positivity-killed: the orthogonal metric Schur has the same broad negative static and kinetic census at thr...
+       counts=((276, 174), (276, 174), (276, 174)); hostile B=(-47.03380526326737, 0.5998320680300548); hostile A=(-3496.805578054081, 0.16229808283052913)
+[PASS] J-cubic-corner-two-tt-carrier-alias: both site-TT directions map into exact edge gauge at the cubic corner while the metric c...
+       rank(M/F)=(8, 2); gauge residual=1.271e-16; QF=3.476e-15
+[PASS] K-rank-three-connection-rewrite-is-exact-marginal: the exact triangle-connection stencil and rank-three positive auxiliary Schur reduce bac...
+       rank D0=3; Schur=4.965e-16; stencil=2.220e-16
+[PASS] L-physical-boundary-and-no-go-discipline: the narrow route retirement passes N1 through N8 and preserves changed-action and change...
+N5_CERTIFICATE: 22 edges, four exact gauge columns, two axis sectors, twelve nonmetric directions, 12 hostile poles, 728 spatial modes, three mu values, and two TT coordinates are resolved
+per_element: checked every reflected edge, gauge column, metric coordinate, auxiliary row, and local TT observable
+per_site: the supplied translation-invariant reflected Block-74 action and Block-49 line-metric chart are used unchanged
+per_mode: checked the explicit pole-collision sample and all nonzero L=9 spatial momenta at three coefficients
+per_block: checked analytic poles/residues, Dirac ranks, source coupling, full-zone TT Schurs, corner alias, and auxiliary elimination
+lattice_wide: no continuum momentum theorem, nonlinear constraint algebra, selected clock, physical inner product, or complete Record dynamics is inferred
+scope_boundary: route cut for the supplied Q_mu raw-edge marginal and two declared canonical charts; not canonical/connection gravity, axiom, or TOE closure
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+
