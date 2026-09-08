@@ -1,0 +1,12 @@
+--- frozen8d2/runtime.py
++++ pinned/runtime.py
+@@ -36,6 +36,9 @@
+ class Runtime:
+  def __init__(self,oracle_dir=ORACLE):
+   self.g=Geometry(2);base=Path(oracle_dir)
++  expected={'BACKWARD_POWERS.json':'43da459cf1493c30ca0313de27083bf35ae3bdcf96d88143c75e0723af080d2c','ORACLE.json':'d9a99e5c41d6d7ce7b22bdf8ec9fc85175a3fef7c85444dd7c706f81366cf25a'}
++  for name,digest in expected.items():
++   if hashlib.sha256((base/name).read_bytes()).hexdigest()!=digest:raise ValueError('oracle pin '+name)
+   self.raw=json.loads((base/'BACKWARD_POWERS.json').read_text());self.oracle=json.loads((base/'ORACLE.json').read_text())
+   self.states=self.raw['states'];self.index={x:i for i,x in enumerate(self.states)}
+   self.witnesses=[]

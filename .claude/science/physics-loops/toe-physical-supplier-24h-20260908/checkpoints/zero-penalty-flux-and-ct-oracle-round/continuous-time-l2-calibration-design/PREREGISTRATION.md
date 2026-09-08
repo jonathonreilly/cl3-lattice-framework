@@ -1,0 +1,7 @@
+# CT L2 calibration oracle and design only
+
+No stochastic launch or cost profile. Root supplied uniformization stationary-start proposal before this derivation. Read prospective diagnostic1eeb and native-alias correction: actual L2 has864 seed-component states,24 unique geometric masks. Choose the proposed target grid V19/20, TOTAL path T1/2 and2. These short times are finite-projector calibration parameters, not ground-state times. Production chain/sweep counts remain provisional until a separate cost forecast.
+
+Before deterministic computation: build actual component and integer B=480G=480I-20H, diagonal480-19Nf and20 for each legal flip. Compute integer backward powers and exact rational finite-uniformization count weights. Choose the smallest cutoff K satisfying the fixed explicit geometric-series tail bound <=1e-14; this depends only on supplied T,M,V, never sampled outcomes. Compare exact recurrence, positivity and symmetry. Retain exact rational oracle moments for midpoint NF/X, endpoint h, hLhR, Xh, X², all-time average NF, endpoint spin overlap and physical-event activity. Report bounded-observable tail errors and a separate event-count tail bound. Do not call the finite-cutoff initializer exact CT. Full source/oracle readout and additional independent review precede any stochastic implementation.
+
+Resources180seconds384MiB per deterministic command. No L4/L8 enumeration or production. Fixed conditional-tape checks, if any, are algebra controls only. Failures remain preserved; no tuned target or favorable channel selection.

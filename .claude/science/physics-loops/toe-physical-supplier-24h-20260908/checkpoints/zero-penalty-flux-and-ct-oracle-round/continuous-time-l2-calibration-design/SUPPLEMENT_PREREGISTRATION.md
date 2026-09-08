@@ -1,0 +1,3 @@
+# Independent algebra route before additional controls
+
+After the exact oracle completed, verify midpoint moments by a different construction: independently truncated half-time exponential vectors, squared and normalized. Conditioning both half-counts<=K removes only a subset of the total-count>K tail, so each bounded-observable discrepancy must be <=2*range*the original TV bound. Also check the full CT count/energy/time-average identity within the explicit truncation error, and the stationary-start integer transition telescoping identity. Derive D/R/residual targets by interval propagation from the frozen raw moments; this is a predetermined algebraic readout, not a new precision threshold selected from outcomes. No stochastic execution.

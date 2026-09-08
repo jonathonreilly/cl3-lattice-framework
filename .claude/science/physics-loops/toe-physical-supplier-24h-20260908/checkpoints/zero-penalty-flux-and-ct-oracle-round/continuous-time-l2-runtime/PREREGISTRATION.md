@@ -1,0 +1,7 @@
+# Deterministic runtime construction before timing or stochastic data
+
+Root prepares exact-integer auxiliary-count/path initialization from reviewed CT L2 oracle8b5661b7 and floating continuous-time face conditionala18312e. This work adds lazy finite-budget random variate plumbing, canonical BFS witness replacement, all physical measurements and lossless trajectory serialization. No stochastic calibration or end-to-end timing profile is authorized by this file. All deterministic fixtures use fixed supplied integer/uniform tapes; comparisons are to frozen source and exact simple-path expectations.
+
+The ideal initializer has the reviewed bounded auxiliary-count truncation. Unbiased integer rejection is exact only under ideal independent random bits. Finite rejection budget fails the whole job. Finite-grid event times do not inherit the ideal total-variation statement. Reject collisions/boundary/zero events by whole-job failure, never replacement or success conditioning. Per-block event/variate budgets and float bracket tolerance are declared implementation limits, not distribution-error bounds.
+
+After source and independent review, freeze a separate complete prospective cost fixture with all overhead, measured work, storage and failure rules. Only then may a fixed timing fixture run. A physics calibration requires its own prospective coverage and decision gates. Existing finiteG and CT ideal proofs remain unchanged.

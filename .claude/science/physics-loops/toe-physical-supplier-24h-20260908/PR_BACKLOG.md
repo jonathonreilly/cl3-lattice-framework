@@ -9,3 +9,5 @@ The research branch checkpoints all exploratory outcomes, including failures. No
 Synchronization: PR8036 current head6067254e3bca867aa6e737f7aa2bb6078e5d622d incorporates main7517b4a95f860fec43251c0281a981e6bb1f34d6. The regenerated citation manifest resolves the only conflict; source-bound cache remainsfresh. PR reportsMERGEABLE. Combined landing checks remainpending.
 
 PR8037 delivered andverifiedOPEN/MERGEABLE at9ae85474d22ed4a987508293b60bed48f9108a43: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8037 . Canonicalentanglerincludesmain8257. Nextaffirmativewhole-carrierdictionaryPR ispreparedinitsowncleanworktreeawaitingfinaltimer/sourceclosure review; noGitHubdeliveryblock.
+
+PR8048 fullH6 and PR8049 U0endpoint delivered OPEN/MERGEABLE; no main landing.

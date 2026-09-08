@@ -1,0 +1,15 @@
+# Sixteenth campaign checkpoint
+
+UTC 2026-09-08T19:26:13.418800+00:00. Active48-hour campaign ends2026-09-10 10:27:17UTC, subject to usable quota. Fourteen review PRs8036–8049 open; no main landing or audit verdict.
+
+PR8048 cdb5b89190 delivers full H6 coefficients, exact sign obstruction reached from the numerical L6 seed, and coarse finite canonical sign-persistence bound. PR8049 8decd37d32 delivers the exact U0 fixedflux even-Fock endpoint. Both OPEN/MERGEABLE and source-reviewed.
+
+New research independently verifies an explicit leadingH4 diagonal gauge. On even extents>=6 it maps the supplied leading coefficient to ordinary negative plaquette adjacency V0; L4 retains extra winding4 terms. Diagonal measurements are preserved, but coherent initial states transform: numerical freeendpoint1 corresponds native U†1. No equality of full finite-coupling models is claimed.
+
+At U0 a new source-audited mathematical bridge applies Macris–Nachtergaele's flux theorem. Exact physical/auxiliary objective identities include the parity/spectator factors and the correct full-Fock thermal trace. The candidate πplaquette background with positive native magnetic windings realizes canonical hopping fluxes on all basic cycles, including the three torus windings. Independent6590 controls and primary-theorem review PASS. This identifies a minimizing sector of the supplied cubic endpoint; it does not prove uniqueness, a flux gap, thermal concentration or stability to nonzeroU. Exact finite dispersion in that sector accounts for antiperiodic canonical seams;97author controls pass, independent dispersion review in progress.
+
+The first electric correction compresses to3N/2 in every cubic fixedflux sector; all pair terms change flux. Independentcut/Gauss controls PASS, with explicit nonscalar smallgraph exceptions. Application to a full eigenspace requires excluding crossflux degeneracy. Further spectator-splitting orders are now being investigated, not yet results.
+
+The new CT sampler has an exact864state oracle, rational ideal-count truncation bounds<1e-14, and independently checked12-observable runtime with lossless path storage. Runtime2901fixed controls and4337cold controls are not stochastic data. A local-event index proof and185fixtures show how distant events can remain stored while omitted from conditional computation; a complete efficient sampler is not yet built. Fourcase CTL2 cost fixture62961e is frozen but NOTLAUNCHED. Before any CT timing, root prospectively expanded the suggested calibration envelope600→3600s within the48h allocation; physical precision/failure criteria remain unchanged. L8oldproduction remains failed diagnostics; no V0or CT scientificcalibration launched.
+
+Disk63GiBfree;35inactive worktrees already removed with exactremote recovery branches retained. No new deletion this checkpoint. Useful new evidence now joins the remote campaign snapshot. Weeklyquota53%used/47%remaining; noresetredemptionauthorized. Lockvalidthrough20:50:19UTC. Snapshot150files,32460305bytes, excludingbytecode andthirdpartyPDF/fulltext.

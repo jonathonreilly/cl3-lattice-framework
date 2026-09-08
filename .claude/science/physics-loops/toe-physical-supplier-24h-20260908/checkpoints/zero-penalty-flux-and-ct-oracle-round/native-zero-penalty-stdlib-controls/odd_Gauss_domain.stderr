@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-zero-penalty-stdlib-controls/mutant_odd_Gauss_domain.py", line 83, in <module>
+    signal.alarm(AUDIT_TIMEOUT_SEC);p=argparse.ArgumentParser();p.add_argument('--json',action='store_true');p.parse_args();print(json.dumps(run(),indent=2))
+                                                                                                                                             ^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-zero-penalty-stdlib-controls/mutant_odd_Gauss_domain.py", line 61, in run
+    req(sum((-1)**n.bit_count() for n in even)==len(even),'global Gauss product enforces even matter')
+  File "/private/tmp/toe-24h-probes-20260908/native-zero-penalty-stdlib-controls/mutant_odd_Gauss_domain.py", line 41, in req
+    if not v:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: global Gauss product enforces even matter

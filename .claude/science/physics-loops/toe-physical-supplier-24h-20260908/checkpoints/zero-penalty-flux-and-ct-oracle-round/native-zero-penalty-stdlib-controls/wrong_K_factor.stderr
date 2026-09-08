@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-zero-penalty-stdlib-controls/mutant_wrong_K_factor.py", line 83, in <module>
+    signal.alarm(AUDIT_TIMEOUT_SEC);p=argparse.ArgumentParser();p.add_argument('--json',action='store_true');p.parse_args();print(json.dumps(run(),indent=2))
+                                                                                                                                             ^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-zero-penalty-stdlib-controls/mutant_wrong_K_factor.py", line 71, in run
+    req(charpoly(ik)==list(map(G,expected)),'frequency square and factor two')
+  File "/private/tmp/toe-24h-probes-20260908/native-zero-penalty-stdlib-controls/mutant_wrong_K_factor.py", line 41, in req
+    if not v:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: frequency square and factor two

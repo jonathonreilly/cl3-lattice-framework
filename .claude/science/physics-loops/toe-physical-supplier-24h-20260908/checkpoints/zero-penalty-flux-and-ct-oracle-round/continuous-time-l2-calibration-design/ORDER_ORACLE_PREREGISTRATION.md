@@ -1,0 +1,3 @@
+# Two bounded order readouts, before their computation
+
+The prospective diagnostic design includes spatial-order signals. Add exactly electric corner intensity sum_a m_a(pi,pi,pi)^2 and plane flippability anisotropy sum_plane(f_plane-mean_f)^2. At L2 their exact diagonal numerators are sum_a(sum_edges_axis(2bit-1))²/256 and (3 sum_plane N_plane²-Nf²)/192. Bounds3/4 and2/3 respectively. Use the already independently constructed half-time polynomial vector; its total-auxiliary-count error is bounded by the original total>K event as explained in the derivation. Preserve the previous supplement. Also serialize previously computed ratio intervals as exact rational strings, rather than rely on rounded displayed float bounds. No sampled outcomes or precision threshold changes.
