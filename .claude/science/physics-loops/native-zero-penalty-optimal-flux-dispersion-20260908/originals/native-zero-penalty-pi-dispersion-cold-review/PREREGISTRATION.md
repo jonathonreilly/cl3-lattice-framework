@@ -1,0 +1,3 @@
+# Independent deterministic review controls
+
+Before execution: read full candidate f37822 and endpoint parent, checker and raw. Candidate seam/nullity supplied. Independently build canonical-edge K at t=1 on unequal4x6x8, all twists. Gaussian elimination modulo1000003 gives a rigorous rational-rank lower bound; explicit eight parity functions in all-periodic kernel give matching upper bound. No floating eigenvalues. Check literal plaquette/winding products and Fourier-block generators derived from momentum-bit action. Check symbolic polynomial Clifford relations and parity multiplicity. No sampling or source edits; <=180s384MiB.

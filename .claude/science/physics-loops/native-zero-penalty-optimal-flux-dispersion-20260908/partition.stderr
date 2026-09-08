@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/u0flux-isolated-qdj42l9c/scripts/native_zero_penalty_optimal_flux_dispersion_2026_09_08.py", line 8, in <module>
+    flux=runpy.run_path(str(root/'scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py'))['out']
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/u0flux-isolated-qdj42l9c/scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py", line 24, in <module>
+    need(squared==Counter({k:2**(vertices-1)*v for k,v in aux.items()}),'physical versus auxiliary partition')
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/u0flux-isolated-qdj42l9c/scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py", line 9, in need
+    if not c:raise ValueError(m)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: physical versus auxiliary partition

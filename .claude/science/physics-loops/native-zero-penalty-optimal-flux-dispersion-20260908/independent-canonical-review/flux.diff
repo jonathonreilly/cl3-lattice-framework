@@ -1,0 +1,24 @@
+--- /private/tmp/toe-native-zero-penalty-optimal-flux-dispersion-20260908/.claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-flux-selection-root/check.py
++++ /private/tmp/toe-native-zero-penalty-optimal-flux-dispersion-20260908/scripts/native_zero_penalty_optimal_flux_exact_2026_09_08.py
+@@ -1,8 +1,9 @@
+ from itertools import product,combinations
+ from collections import Counter
+ from pathlib import Path
+-import json,time,resource,signal
+-N=0;start=time.monotonic();signal.alarm(180)
++import json,time,resource,signal,sys
++N=0;start=time.monotonic()
++if __name__=='__main__':signal.alarm(180)
+ def need(c,m):
+  global N;N+=1
+  if not c:raise ValueError(m)
+@@ -63,6 +64,7 @@
+      need(ce==rc,'every crossing basic circuit invariant');crossings+=1
+    reflections+=1
+  fixtures.append(dict(extents=dims,vertices=len(vs),basic_cycles=len(cycles),reflections=reflections,crossing_invariances=crossings,wrong_trivial_background_cycles=wrong))
+-rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576
++rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024)
+ need(rss<384,'RSS cap')
+-print(json.dumps(dict(checks=N,partition_controls=patterns,torus_controls=fixtures,seconds=time.monotonic()-start,rss_mib=rss,scope='exact objective identity and theorem assumption fixtures; no numerical optimization or phase claim'),indent=2))
++out=dict(checks=N,partition_controls=patterns,torus_controls=fixtures,seconds=time.monotonic()-start,rss_mib=rss,scope='exact objective identity and theorem assumption fixtures; no numerical optimization or phase claim')
++if __name__=='__main__':print(json.dumps(out,indent=2))
