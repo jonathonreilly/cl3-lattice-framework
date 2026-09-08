@@ -50,12 +50,12 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. Selector/channel/resource #6371 and #6339/#6368 science is on main. Finish
-   independent confirmation of the composed #6358 source; continue #7942 and
-   #7848/#7849 author repairs plus #7888/#7890 original matter review. #5966 keeps its old Record-additivity
-   premise hold; #6515 keeps its actual reserved-source dependency hold.
-   Closure reconciliation is complete; 81 pending closed scopes remain at eight
-   successors. Preserve the fixed original 254 membership and all reservations.
+1. The #6371 and #6358 consolidated Record units are on main with their
+   corrected constituents. Finish independent confirmation of the composed
+   #7848/#7849 source; complete #7942 evidence recovery and the #7888/#7890 review/repair handoff.
+   #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
+   reserved-source hold. Closure reconciliation is complete; 77 pending closed
+   scopes remain at seven successors. Preserve the fixed 254 and all reservations.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
