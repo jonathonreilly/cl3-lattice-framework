@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/sea_cancellation_zeros_determinant_criterion_check_2026_09_03.py
+runner_sha256: 61e851285555d541c55127cc96c40ac49d6da0410ffa4f85699e48846b10f165
+input_fingerprint_sha256: ce981188291ad4a429d9326e404c5a4dd33ae855af1ab2f790b4d5e7a24ffb8c
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 16.86
+status: ok
+----- stdout -----
+SOURCE_INPUTS: exact own-note and current-memo pins verified; physical suppliers remain conditional
+PASS A1 [exact] cube 2x2x2: V=8, E=12, cycle dim E-V+1=5 so each corner pattern carries a coset of 32 records, all 6 face fluxes -1, |J|=2240
+PASS A2 [numerical, 1e-11] cube sea E_sea=-6.928203230276=-4 sqrt3 (one-particle sum to 3.6e-15, H-residual 3.8e-14), Fermi gap 3.464101615=2 sqrt3 so unique, stabilised by all 5 generators to 0.0e+00
+PASS A3 [numerical, exact] the odds are constant on cycle-space cosets: max relative spread within a coset 0.000e+00, so every zero is a whole coset of 32 records
+PASS A4 [numerical, 1e-20 relative] cube p/p_max over 2240 positive entries is bimodal: 256 below 1e-30 (smallest 4.09e-34), 1984 at or above 1e-2, 0 in the 28 decades between
+PASS A5 [numerical, 1e-20 relative] cube census over all 2^12 records: support 1984, charge zeros 1856 (every N != 4), cancellation zeros 256
+PASS A6 [exact] the 256 cancellation zeros are 8 corner patterns x 32 records
+PASS A7 [exact] those 8 patterns are exactly the 8 closed corner stars {v} u N(v), each labelled twice: star(v) all-occupied and star(v-bar) all-empty
+PASS B1 [exact] slab 2x2x3 open in z: V=12 (8 of degree 3 at the z-boundaries, 4 of degree 4 in the middle), E=20, cycle dim 9, coset 512 records, all 11 face fluxes -1, |J|=473088
+PASS B2 [numerical, 1e-10] slab sea E_sea=-10.828427124746=-(8+2 sqrt2) (sum to 2.3e-14, residual 4.7e-13), spectrum (-2)^4 (-sqrt2)^2 | (+sqrt2)^2 (+2)^4, gap 2.828427125=2 sqrt2 so unique, stabilised by all 9 generators to 0.0e+00
+PASS B3 [numerical, exact] the odds are constant on cosets here too: max relative spread 0.000e+00 over cosets of 512
+PASS B4 [numerical, 1e-20 relative] slab p/p_max over 473088 positive entries: 61440 below 1e-30 (smallest 2.13e-35), 0 in the 26 decades to 1e-4, 96256 in [1e-4,1e-2), 315392 above
+PASS B5 [numerical, 1e-20 relative] slab census over all 2^20 records: support 411648, charge zeros 575488 (every N != 6), cancellation zeros 61440
+PASS B6 [exact] 61440 cancellation zeros = 120 corner patterns x 512; those 120 of the 924 at N=6 reproduce the determinantal note's "120 of 924", from the many-body vector and not from the determinant
+PASS C1 [exact] the closed-star rule (a pattern vanishes when it holds some closed star all-occupied or all-empty) predicts 324 slab patterns against the 120 that vanish: 204 false positives, 0 false negatives, over-predicting by 2.7
+PASS C2 [numerical, 1e-12] the slab's eight degree-3 closed stars are NOT singular: det P_star=1.340413e-03 at every one, well above the declared 1e-12 cutoff; the four degree-4 stars are singular, max 6.9e-18
+PASS C3 [numerical, 1e-12] no slab corner set of size <= 4 is singular (0 of 12, 66, 220, 495); the minimal zero-carrying sets among sizes <= N=6 are 12 of size 5 and 36 of size 6, 48 in all
+PASS C4 [exact] each of the 12 minimal five-corner sets is a full z-column plus the two in-plane neighbours of one of its three sites (4 columns x 3 heights); only the 4 middle-height ones are closed stars, the other 8 are stars of nothing
+PASS C5 [exact] each of the 36 minimal six-corner sets meets exactly 3 of the 4 z-columns, each in exactly 2 of its 3 heights: 9 signatures x 4 column triples
+PASS C6 [numerical, 1e-9] of the 48 minimal sets only 8 have a single-band kernel direction (4 pure +2, 4 pure +sqrt2) and 40 mix the +sqrt2 and +2 bands
+PASS D1 [numerical, 1e-13] det P_S = det (I-P)_{S^c} on all 70 cube and 924 slab patterns (max difference 1.1e-16, 3.1e-17), and the singular patterns equal the Born zeros of A and B as sets, no tolerance slack: True, True
+PASS D2 [exact + numerical, 1e-13] det P_T = det(W_T W_T^dag) vanishes iff the rows of W on T are dependent, i.e. iff some c supported on T has Pc = 0: on all 56 minimal singular sets of the two clusters supp(c) = T exactly and ||Pc|| <= 6.3e-16
+PASS D3 [exact] the cube's band is flat: ||h^2 - 3I|| = 0.0e+00, each face's two 2-paths cancelling under flux -1
+PASS D4 [exact] the slab's band is not flat: h^2 has diagonal deg(v) in [3.0, 4.0] and exactly 8 off-diagonal entries, all 1, at [(0, 2), (3, 5), (6, 8), (9, 11)] -- the two ends of each open z-column joined by one uncancelled 2-path; the column block [[3,0,1],[0,4,0],[1,0,3]] has eigenvalues [2.0, 4.0, 4.0] so spec(h^2) = 2^4 4^8
+PASS D5 [exact + numerical, 1e-9] flat-band corollary: h^2 = cI makes the empty band the +sqrt c eigenspace, so det P_T = 0 <=> lambda_max(h_T) = sqrt c (forward by restriction, back because the padded top eigenvector of h_T is a global maximiser of the Rayleigh quotient). The two sides agree on all 162 cube sets of size <= N, 0 mismatches
+PASS D6 [numerical, 1e-13] and the minimal solutions are realised: (sqrt c + h) e_v is an h-eigenvector at +sqrt c supported exactly on star(v), since h^2 e_v = c e_v. All 8 cube corners: max relative residual 1.8e-16, support = the star every time (True), max |det P_star| 2.2e-17
+PASS E1 [exact] antiperiodic 4^3 (twist (1,1,1), links crossing each boundary negated): all 192 fluxes -1, Polyakov loops [-1, -1, -1], ||h^2 - 6I|| = 0.0e+00. At L=4, v+2e_a and v-2e_a are one vertex, so the two 2-paths to it multiply to the a-Polyakov loop, -1: they cancel
+PASS E2 [numerical, 1e-9] gapped: spectrum +-sqrt6, 32 each, Fermi gap 4.898979486 = 2 sqrt6, so the sea is a unique Slater determinant and the criterion has one P
+PASS E3 [numerical, 1e-12] all 64 closed corner stars (7 corners each) are singular, max |det P_star| = 3.759e-18
+PASS E4 [numerical, complete enumeration, 1e-9] all 1391280 connected corner sets of size 2..7 ({2: 192, 3: 960, 4: 5360, 5: 31680, 6: 191104, 7: 1161984}): max lambda_max(h_T) = sqrt(k-1) at every size k, so nothing of size <= 6 attains sqrt6 and the minimum singular support is 7
+EXECUTED_CENSUS_KEYS [(2, 192, True, True), (3, 960, True, True), (4, 5360, True, True), (5, 31680, True, True), (6, 191104, True, True), (7, 1161984, True, True)]
+PASS E5 [exact set equality] at size 7 exactly 64 of the 1161984 connected sets attain sqrt6 and they are precisely the 64 closed corner stars: True
+PASS E6 [numerical, 1e-9] the periodic 4^3 sector has no unique sea to ask about: Polyakov loops [1, 1, 1], 8 exact zero modes at q = (pi,pi,pi), Fermi gap 1.5e-16, so no single P
+PASS E7 [exact] minimum cardinality is not all inclusion-minimal supports: eleven-site T=(0, 2, 3, 4, 5, 12, 13, 16, 17, 48, 49), det=0, positive deletion minors={0: '3125/7962624', 2: '125/7962624', 3: '125/1327104', 4: '125/1327104', 5: '125/7962624', 12: '125/1327104', 13: '125/7962624', 16: '125/1327104', 17: '125/7962624', 48: '125/1327104', 49: '125/7962624'}, no contained star=True
+PASS F1 [numerical, 1e-9] the gapped sector is twist (0, 0, 0) at 6^3 (gap 3.464101615) and (1, 1, 1) at 8^3 (gap 2.651308592), the other twist giving 8 and 8 zero modes at gap 0 -- an independent reproduction of the determinantal note's optimal twists (1,1,1),(0,0,0),(1,1,1)
+PASS F2 [numerical, 1e-9] neither gapped sector is flat: ||offdiag(h^2)|| = 3.600e+01 on 6^3 and 5.543e+01 on 8^3. For L >= 6, v+2e_a and v-2e_a differ and each is reached by one 2-path, so nothing cancels
+PASS F3 [numerical, 1e-12] all closed corner star minors exceed the declared cutoff in either gapped sector: det P_star is uniformly 3.323e-04 over all 216 stars of 6^3 and 3.756e-04 over all 512 of 8^3, and (lambda_max + h) e_v fails with relative residual 1.528 and 1.216
+PASS F4 [numerical, complete enumeration] every connected corner set of size <= 5 on 6^3 ([648, 3240, 18576, 115344]) and <= 4 on 8^3 ([1536, 7680, 44032]): min |det P_T| = ['2.101e-01', '8.511e-02', '2.897e-02', '1.107e-02'] and ['2.103e-01', '8.534e-02', '2.913e-02'], per-corner geometric mean |det P_T|^(1/|T|) never below 0.406 -- preserved finite determinant data; historical geometric-mean diagnostic only; not exact-zero exclusion
+PASS F5 [numerical, declared fixed family, no random draw] BALLS(m) = the m corners nearest a corner in the order (L1 distance, then index), m = 7,10,15,20, and COLUMN+ = a whole z-column plus the two in-plane neighbours of one of its sites, one set per corner: min |det P_T| = ['3.32e-04', '1.01e-05', '3.34e-09', '2.83e-13', '5.82e-04'] on 6^3 and ['3.76e-04', '1.16e-05', '4.71e-09', '5.03e-13', '9.54e-05'] on 8^3, per-corner geometric mean never below 0.236 -- historical geometric-mean diagnostic only; not exact-zero exclusion
+PASS F6 [numerical, historical cutoff retained] actual BALLS20 minors below DET_TOL=1e-12: [(6, 36), (8, 56)]; these contradict the old universal cutoff claim, despite positive geometric means
+PASS F7 [numerical, NEW post-review margin diagnostic] every declared larger-family principal eigenvalue exceeds 1e-8; all eigensystem/projector residual diagnostics <1e-10; no directed-rounding or exact nonsingularity certificate is claimed
+PRINCIPAL_MARGIN_ROWS [(6, 'ball7', 216, 7, 0, 0.010749314070091876, 1.0981874850590536e-15, 2.7858839340565546e-15, 5.3952576899819704e-14, 1.2648525708869833e-14), (6, 'ball10', 216, 10, 0, 0.0067107865487248414, 1.870224102353272e-15, 4.5539755078462684e-15, 5.3952576899819704e-14, 1.2648525708869833e-14), (6, 'ball15', 216, 15, 0, 0.002359464139256585, 2.2774085336539212e-15, 5.52994594867228e-15, 5.3952576899819704e-14, 1.2648525708869833e-14), (6, 'ball20', 216, 20, 36, 0.00012412091120830987, 2.6446856368558935e-15, 6.034904441618124e-15, 5.3952576899819704e-14, 1.2648525708869833e-14), (6, 'column+', 216, 8, 0, 0.08534136846943352, 1.94800937620903e-15, 4.808625384541031e-15, 5.3952576899819704e-14, 1.2648525708869833e-14), (8, 'ball7', 512, 7, 0, 0.012165803679591969, 1.4629398050158146e-15, 2.869884976114285e-15, 1.1826173133115145e-13, 3.125461683527829e-14), (8, 'ball10', 512, 10, 0, 0.0075144434228017875, 1.8888899000019294e-15, 4.2926849288522556e-15, 1.1826173133115145e-13, 3.125461683527829e-14), (8, 'ball15', 512, 15, 0, 0.002669553227223653, 2.392802501568312e-15, 6.770621719749125e-15, 1.1826173133115145e-13, 3.125461683527829e-14), (8, 'ball20', 512, 20, 56, 0.00023462874034337666, 3.004372571865215e-15, 6.097641903316359e-15, 1.1826173133115145e-13, 3.125461683527829e-14), (8, 'column+', 512, 10, 0, 0.08589229178601797, 1.7958432808158378e-15, 4.319127034351297e-15, 1.1826173133115145e-13, 3.125461683527829e-14)]
+SUMMARY: a corner set has zero odds for the all-occupied pattern exactly when det P_T = 0, flatness supplies stars but not all minimal supports. The old determinant cutoff flags BALLS20; the separate margin diagnostic is numerical only.
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+
