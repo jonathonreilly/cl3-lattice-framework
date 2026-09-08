@@ -1,0 +1,9 @@
+# Exact trigonometric provider cold review
+
+PASS for make_inputs0f2c03c0 and INPUTS5a86aeb933f692017a610aa4c4b5e55c5226acf908106d57e6cd951787034db7, proof41c6cbb1. Full source, proof, input and freeze read. No physical spectral call.
+
+Machin's tangent identity is valid on the stated branch:4atan(1/5)-atan(1/239) is positive and below pi/2, and its tangent is1. The48-term sums end with negative terms; the next positive term brackets the exact arctangent, and subtracting the second interval reverses its endpoints correctly. In the sine expansion, the polynomial through79 is also the Taylor polynomial through80 because the80th coefficient vanishes. The order81 Lagrange bound is therefore valid. The argument-interval radius is covered by the global sine Lipschitz constant. The subsequent factor two, dyadic floor/ceiling and exact binary64-center containment have the correct directions. Reflection intersections are integrity checks, not the proof of the input bounds.
+
+I independently replayed all32 rows using pi=4[atan(1/2)+atan(1/3)],112 terms, outward160-bit rounding, and monotone folded arguments in(0,pi/2). Fifty alternating sine terms at the two endpoints give a separate interval. Every such interval lies inside the supplied100-bit enclosure. Every actual hexadecimal binary64 center covers that supplied enclosure at radius2^-48. The97 exact predicates pass. This alternate replay does not call the author's source or libm sine. Its first run encountered only a large-Fraction receipt string limit; the source and failure are preserved, and the final receipt uses outward120-bit dyadics without changing any mathematical predicate.
+
+The matrix input allowance of three times2^-48 follows because each coefficient matrix has norm one. Additional matrix-assembly error, if any, must still be accounted for by the consumer; this provider alone does not certify a floating assembled D. No eigenvalue, quadrature, or density-sign result is implied.

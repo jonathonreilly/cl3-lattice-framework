@@ -1,3 +1,17 @@
+# Current campaign opportunity queue
+
+## Current ranking — 2026-09-08 21:55 UTC
+
+1. **Certify uniform local flux-defect stiffness for the supplied native model.** Highest current positive-result probability: reviewed reflection reduction, exact64→16 algebra, and a newly independently checked semiconvex quadrature bound reduce the missing theorem to five certified density differences. The96-spectrum cost fixture completed; its rough positive signs are not certificates. Remaining imports are the supplied Hamiltonian and previously reviewed auxiliary/reflection dictionary. Missing work is exact arithmetic certification, bounded cost forecast, full fixed-grid coverage and independent review. One coherent PR should include the decisive certificate and complete proofs, stacked on8055; no main landing.
+
+2. **Complete the larger-lattice weak-electric spectator operator.** Six coefficients remain at L6. Adjacent proper-prefix denominators are certified, but the other pair supports need their own gap bindings. Exact Krylov dimensions rule out the direct parity-vector method. A new rational Gaussian/Pfaffian residual-DP design avoids certifying five-dimensional quadrature, with finite-rank approximation and kernel cost still open. This has higher computational uncertainty than rank1 but directly tests whether the finite4³ unique ground result scales. Keep genuine low-rank failures and do not infer coefficient signs from a negative Gram operator.
+
+3. **Make the independent continuous-time finite-projection probe affordable.** The reviewed L4 adapter passed its complete16-path/240-readout cost replay, but its frozen forecast fails at roughly129330seconds. A local-index integration design targets full-tape and global-flippability scans, while preserving variate consumption, midpoint convention and all readouts. Deterministic equivalence controls and a new predata cost contract are required before any new stochastic attempt. This is an independent phase-discrimination route; a faster sampler would not itself prove mixing or a ground phase.
+
+4. **Return to physical preparation, source response and model selection after these hard residuals.** The extensive native-model results remain conditional on the supplied dynamics. The original Record/formation and action/measure supplier obligations below are still open; no mathematical phase result selects their physical interpretation. A next attempt must derive a specific mechanism or correspondence and avoid another generic underdetermination witness.
+
+The semiconvex and Clifford steps are an ongoing positive stretch on a named hard residual, not grounds to end the campaign. Original ranking and source-grounding history follow for context; their older priorities are superseded by this timestamped list.
+
 # Source-bound opportunity ranking — 2026-09-08
 
 Recommendation: keep the native Record supplier as the lead **only when it means deriving or falsifying a concrete preparation/condition or closure mechanism**. Another generic prepared-state mismatch, programmable writer, relay, Born grading theorem, or bigger gravity bench should not be the campaign's main result. The strongest alternative is an actual sourced variational-response bridge, but the inspected gravity chain is farther from physical identification than a “metric already obtained” summary would suggest.

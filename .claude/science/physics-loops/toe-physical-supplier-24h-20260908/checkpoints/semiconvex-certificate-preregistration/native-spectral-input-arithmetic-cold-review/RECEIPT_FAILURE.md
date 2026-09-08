@@ -1,0 +1,1 @@
+First alternate replay reached an output-only failure while converting a large exact Fraction to decimal text: Python4300-digit limit. Original checker preserved. The mathematical interval checks are unchanged; receipts now store outward120-bit dyadic enclosures. No author file was changed.

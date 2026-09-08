@@ -1,0 +1,21 @@
+# Independent Clifford reduction review
+
+PASS at DERIVATION aa2ac5c326a11eb0eeab87d5f00c5bc67b636e056fae202e52f0858ee73ce631. The full proof, both actual checkers, preregistration, source/freeze records and result scopes were inspected. No source correction requested. I authored the earlier tiling/input construction; that upstream reuse is explicit. I did not reuse the new author's sparse matrix functions and ran no eigensolver or integral.
+
+## Independent sensitive control
+
+The new check.py rebuilds the64-dimensional square directly in original site coordinates, from the bound Laurent inputs. It constructs the predicted terms as coordinate actions of two cube hops and the mixed cube/block flip, avoiding the author's tensor permutation/matrix implementation. All32 classes were checked at THREE DISTINCT unit phases (39+52i)/65,(25+60i)/65,(-39+52i)/65. Multiplying h by65 makes every operation a small Gaussian integer, exactly represented; no numerical tolerance is used. All32 exact square identities pass, and changing the sine term's sign fails all32, for64 predicates. The adverse case is an actual alternate matrix, not a subprocess mutation or a spectral certificate.
+
+## Analytical multiplicities and signs
+
+The crossing operators' block strings give pairwise anticommutation even with their y-dependent projectors: different-axis projectors commute. The mixed internal/crossing anticommutator vanishes for different axes because the crossing block operator anticommutes with Z_b, while the cube coordinates commute. The same-axis term carries the stated A_a and the sign of -sin(k_a)X. This is precisely the term exercised by the independent rational-phase controls.
+
+Each Gamma_a has square4sin²(k_a/2), and the three nonzero normalized generators are Hermitian Clifford generators. Their product chirality is traceless in the8-dimensional block space (its Pauli string contains a flipped coordinate), so the two complex Clifford irreducibles have equal multiplicity two. Thus h² gives two copies of each16-dimensional sign choice. Cube parity conjugates one choice to the other because C² is even and A_a odd. The characteristic-polynomial identity therefore has four equal factors, and continuity extends it through q_a=0 without using a singular rotation. Coordinate-dependent rotations need not be periodic or globally chosen smoothly to prove this pointwise polynomial/trace identity.
+
+The antiunitary I tensor iY followed by complex conjugation squares to -I. C² is real, A_a is purely imaginary, and spin time reversal changes every Pauli sign, so their two minus signs cancel. Kramers doubling applies to this finite Hermitian D. This is algebraic degeneracy, not an asserted physical symmetry or species count. Its half trace power sums give the monic degree-eight polynomial by Newton identities. Each coefficient has q-degree at most its index; spin rotations and cube parity make it even separately in each q, proving the floor(j/2) degree bound in q². No eigenvalue ordering or root branch is needed for that claim.
+
+For the canonical cube, A_a anticommute. The three A_a tensor sigma_a then commute and square to identity. Every nonempty product has zero trace, since its cube part flips a nonempty set of cube bits. Their eight joint spectral projectors therefore each have trace16/8=2. This independently fixes all signs and multiplicities of6+sum epsilon_a q_a. Nonnegativity follows for q in[0,2]^3; the all2 corner can have zero and requires no fictitious positive gap.
+
+Finally Tr64|h|=4 Tr16 sqrt(D), giving auxiliary density -Tr16 sqrt(D)/32 and -sum8 sqrt(root)/16 after Kramers doubling. The native half factor is unchanged. The q=2sin(theta),theta in[0,pi/2] uniform normalized measure follows by folding k/2 in[0,pi] about pi/2 in each coordinate. There is no missing Jacobian because the integration variable is theta, not q itself.
+
+The resulting small algebraic comparison problem is valid. No positive density difference, quadrature error estimate, semiconvex theorem, or runtime feasibility is certified by this review; those are subsequent tasks. All original source hashes were checked against the freeze and are recorded in READ_HASHES.json. No author or canonical file was edited.

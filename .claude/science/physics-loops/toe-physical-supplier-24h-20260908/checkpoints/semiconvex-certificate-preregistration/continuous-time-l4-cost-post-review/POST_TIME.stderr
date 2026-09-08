@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/continuous-time-l4-cost-post-review/review.py", line 45, in <module>
+    require(len(sys.argv)==2,'one output directory');print(json.dumps(main(Path(sys.argv[1])),indent=2))
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/continuous-time-l4-cost-post-review/review.py", line 25, in main
+    receipt((out/'worker.time.stderr').read_text());elapsed=receipt(Path(str(out)+'.outer-time.txt').read_text())
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/continuous-time-l4-cost-post-review/review.py", line 12, in receipt
+    require(len(rr)==len(tt)==1,'time receipt');require(0<rr[0]<=384*1048576 and 0<tt[0]<=30,'external caps');return tt[0]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/continuous-time-l4-cost-post-review/literal.py", line 12, in require
+    if not ok:raise ValueError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: time receipt
+real 0.02
+user 0.02
+sys 0.00
+            20004864  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2240  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                   9  involuntary context switches
+           318140347  instructions retired
+           108780055  cycles elapsed
+            10240432  peak memory footprint

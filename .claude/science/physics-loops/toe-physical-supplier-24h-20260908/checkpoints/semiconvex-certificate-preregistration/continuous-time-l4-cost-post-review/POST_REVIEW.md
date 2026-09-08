@@ -1,0 +1,9 @@
+# Single profile postreview
+
+Data/resource validation PASS; prospective forecast FAIL unchanged. The original frozen harness883236 ran exactly once and stopped at its macOS time parser (expected value-real, actual real-value). Original output/stderr/source/freeze retained. Separate review_RECEIPT_REPAIR.py changes that parser only and completes the same raw review; no physical rerun.
+
+All16 full paths, their seed witnesses and every intermediate legal event/degree, all240 physical readout values,4 final path duplicates,512 synthetic rows/64batches, source/runtime/parent/output hashes and receipts pass independent reconstruction. The replay imports no producer code. Physical paths support only the16 actual vectors; synthetic rows are repeated serialization data.
+
+Actual saved shell receipt says0.45s; OUTER.json says0.485121792s observed whole-tree74,530,816B. These exact receipts differ from the informal0.51s message and are retained without rewriting. Resource gates pass. Forecast129329.64229444042s exceeds2880s; maximum chain2298.9809338530176s exceeds150s. Both gates fail. The full30s profile charge remains unchanged.
+
+Slowest block: case3, totalT2, propagated RK128 start, face191:0.030339791992446408s. That case's final path has106 events. Maximum measurement0.00988170801429078s, maximum initializer0.02661387500120327s, maximum combined full I/O0.10302912397310138s all occur there. The maximum block is extrapolated to36864 blocks for burn64+128measurements; with factor2 it contributes2236.892184019089s per chain. This is the dominant forecast term. Unallocated30s-envelope overhead29.64761087516672s is charged twice per chain, as preregistered. These are aggregate block timings, not an internal bridge-versus-scan profiler: cannot attribute all30.34ms to a full-tape scan or promise an index makes the study feasible.
