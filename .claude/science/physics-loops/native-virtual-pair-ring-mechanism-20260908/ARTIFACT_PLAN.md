@@ -1,0 +1,1 @@
+One canonical note, paired primary, four live exact helpers, complete paired JSON and research packet. The later floating spectral supplement stays archived and excluded. Nine runtime/premise/input files form the isolated closure. Root handles publication after canonical review.

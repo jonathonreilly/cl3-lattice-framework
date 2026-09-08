@@ -1,0 +1,13 @@
+# Independent cold review
+
+PASS for complete source DERIVATION.md SHA44bc39bbd5fde8c779d219062bf46d54385637ddc2d3b582ae44567b346eed5e. No mathematical correction required. This review independently rederived the Schur bounds and scalar normalization, using the already independently established fourth-order operator; it did not assume a raw resolvent truncation alone was an effective Hamiltonian.
+
+For d=2U and a<=d/8, Weyl separates exactly dim(P) low eigenvalues from the rest, and min-max on the entire P space makes all low eigenvalues nonpositive. The Q block at each such E is bounded below by d-a. A low eigenvector cannot have zero P component, since then its eigenvalue would be at least d-a>0. The Schur norm gives |E|<=a²/(d-a). These steps do not require eigenvalue simplicity or resolve multiplicity within the low cluster.
+
+The symmetrized inverse expansion has parameter k<1, specifically k<=a/(d-a)<=1/7. P has a single total occupied-bit parity, so every odd-V P-to-P word vanishes even with arbitrary interspersed R and Q factors. At inverse orders0..3, the surviving inner words are respectively empty; E; VV,EE; VVE,VEV,EVV,EEE. The signs of the two retained terms are -c/d and -Ec/d², and the VV term is -g⁴A4. The three stated error bounds correspond exactly to EE, the three VVE placements plus EEE, and the complete order>=4 Neumann tail. No unproved commutation is used.
+
+Putting h=c/d² gives (1+h)E. Direct subtraction from K4 gives [h g⁴A4-c h²/d]/(1+h); both numerator terms are bounded by a⁶/d⁵. The actual normalized remainder is at most Rerr/(1+h), so replacing it by Rerr is safe. Since K4 is Hermitian on P, applying the spectral residual inequality to the nonzero vector p proves one-sided distance without a lower bound on ||p||: every operator error already carries its factor ||p||. No eigenvector or multiplicity matching follows, and none is claimed.
+
+Independent exact rational controls give 1286/147<9 for the advertised dimensionless sum at r=1/8. The tail term is 1/[(1-r)³(1-2r)], not a missing power of r; dividing by a⁶/d⁵ cancels those powers correctly. All five terms are nondecreasing on the interval, and d⁵=32U⁵ makes the stated a⁶/U⁵ bound conservative. The a=0 case is exact.
+
+The physical imports and finite-volume scope are accurately retained. The bound applies to the actual native fourth-order operator including extent-four winding cycles; it does not add an RK diagonal potential, control a thermodynamic limit, or select a coupling regime. CONTROL.json records the source-bound rational and parity enumeration, not a numerical proof of operator estimates. No stochastic or author production was rerun.

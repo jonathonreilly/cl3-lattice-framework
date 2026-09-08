@@ -1,0 +1,1 @@
+Completed: all24 fourth-order native orderings; repeated-edge folded diagonal; sixth-order forest extraction and ice motif cancellation; rigorous finite Schur residual bound. Open: sixth-order off-diagonals, higher-order diagonal terms, physical coupling supply and bulk phase. No additional computation is authorized by these open items.
