@@ -1,0 +1,7 @@
+# Independent full-grid replay, preregistered before data
+
+Use pinned Python -I -OO replay.py --job J --production ABS --output REPLAYS/jobJJ.json for J0..23, sequentially. Each checks all1024 exact raw vectors, residual/Gram/input/root data and sums its intervals. No eigenvalue routine is imported. Then replay.py --aggregate --production ABS --replays REPLAYS --output FINAL.json checks24 exact sums, original analysis, all five comparisons/signs and normalizations. All output paths must be new. Sourcefreeze09bc556a and unchanged independent.py are pinned here.
+
+Root runs every call under180s384MiB external supervision and shared3600-second campaign epoch; each helper also has170s alarm and RSS guard. Root retains shell/status/hash receipts, including failure/partial logs. No automatic retry or data replacement. A failed sign is a valid certified negative outcome, not a replay failure. A failed arithmetic/source/resource check closes the run. Final helper explicitly leaves combined external resource reconciliation to root. Existing96 replay measured3.60s; factor-two projection is76.8s/shard,1843.2s total, with2000s reserved including finalization. This is empirical scheduling, not a runtime theorem. Source verification/runtime bytes and serialization costs remain charged.
+
+Six synthetic final-aggregation controls pass; the independent Fraction kernel is byte-identical to the actual successful96 replay. Synthetic placeholders do not constitute physical certificate replay. No full grid data existed or was read during preparation.
