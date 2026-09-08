@@ -1,0 +1,3 @@
+# Prospective operational followup
+
+Keep prior3qubit entangler proof/check frozen. Prove nonbridgeZ branch is1/sqrt2 times an isometry by nativecycle anticommutation and equal code dimensions; distinguish represented-algebra identification from a physical unitary chosen after outcomes. For bridge-success Bell test downstream local native whole-hop rotations plus terminalZ settings at angles0,pi/4 onleft and±pi/8 onright. Compute actual CHSH sign convention rather than importing a Bell label; both outcomes retained, successful herald precedes supplied setting choices. No communication-assisted state-transfer/universalgate claim or rejoining cuts. Full8physical matrices only, no stochastic jobs.

@@ -1,0 +1,2 @@
+# Milestone target
+Construct and independently check an affirmative native parity heralding mechanism with readable post-cut entanglement. Domain: supplied three-edge tree, even four-mode code, crossed input rails and regrouped output rails, arbitrary input/reference. Success: full Kraus columns, complete failure branch, product preparation and native post-cut CHSH. Main base7517b4a95f860fec43251c0281a981e6bb1f34d6. No formation/universal-gate claim. This index is packaging after the original independent derivations, not a retroactive preregistration.

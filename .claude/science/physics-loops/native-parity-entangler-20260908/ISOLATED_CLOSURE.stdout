@@ -1,0 +1,232 @@
+{
+  "status": "PASS",
+  "classification": "conditional-support",
+  "parts": {
+    "numeric": {
+      "status": "PASS",
+      "checks": {
+        "fullsuccesscolumns": true,
+        "completeinstrument": true,
+        "oddparityprojector": true,
+        "surviving_local_readout": true,
+        "independent_input_rotations": true,
+        "input_rotations_preserve_each_rail_number": true,
+        "prep_stays_inputdomain": true,
+        "success_half": true,
+        "output_Bell_concurrence": true,
+        "readable_coherence": true,
+        "operational_hop_then_Z_readout": true,
+        "readout_preserves_cut": true,
+        "forbidden_bridge_reuse": true,
+        "permanent_both_outcomes": true,
+        "full_failure_columns": true,
+        "full_complex_K_diagonal": true,
+        "full_complex_prepared_input": true,
+        "full_complex_Bell_output": true,
+        "actual_CHSH_matrix": true,
+        "actual_CHSH_value": true,
+        "all_settings_preserve_Record": true,
+        "all_settings_local_commute": true
+      },
+      "input_real": [
+        0.4999999999999999,
+        0.4999999999999999,
+        0.4999999999999999,
+        0.4999999999999999
+      ],
+      "input_imag": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "K_real": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "K_imag": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "Kplus": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "output_real": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "output_imag": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "success_probability": 0.4999999999999998,
+      "CHSH_real": [
+        [
+          0.7071067811865476,
+          0.7071067811865476
+        ],
+        [
+          0.7071067811865478,
+          -0.7071067811865476
+        ]
+      ],
+      "CHSH_imag": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "source_sha256": "e2b6d162788a25e8d5d7d8518f3c7f2542409890274043da7b22253906d42931"
+    },
+    "exact": {
+      "status": "PASS",
+      "checks": {
+        "fullcomplex_K": true,
+        "fullcomplex_input": true,
+        "fullcomplex_output": true,
+        "full_input_complete": true,
+        "ownrail_preservation": true,
+        "unitaries": true,
+        "probhalf": true,
+        "bare_ZZ_sign": true,
+        "rotated_XX_exact": true,
+        "oldrecord_permanent": true,
+        "witness2": true,
+        "witness_spectrum": true,
+        "exact_full_failure_columns": true,
+        "exact_CHSH_matrix": true,
+        "exact_CHSH_local_commutation": true
+      },
+      "input_complex": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "K_complex": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "Kplus": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "CHSH_exact": [
+        [
+          "sqrt(2)/2",
+          "sqrt(2)/2"
+        ],
+        [
+          "sqrt(2)/2",
+          "-sqrt(2)/2"
+        ]
+      ],
+      "witness_eigenvalues": {
+        "-2": 1,
+        "0": 2,
+        "2": 1
+      },
+      "source_sha256": "399e7dcc6d29ddf992b194c04a5bd7d044239dfce262b0acc4b5958fb9b824ee"
+    }
+  },
+  "executed_assertions": 37,
+  "elapsed_seconds": 1.1183925420045853,
+  "peak_rss_mib": 104.765625,
+  "source_sha256": "2cdf699df61e34371417016bbe628f554771f21ef9b7bd2078925042c82f9b61",
+  "scope": "Finite native physical matrix construction; preparation, signed hopping controls, Born Record schedule and CHSH settings supplied. Nonbridge lemma is analytic."
+}

@@ -1,0 +1,2 @@
+# Actual routes
+Original crossed rails aftercut lose their accessible cross-cut hopping. Successful route regroups odd branch into one rail pair per component. Even branch retains0/2particlefailure. Additional proof shows nonbridgebypass changes paritymeasurement tofairflag; not universal obstruction. Exacttwo-setting witness andfour-settingCHSH make resource operational. These are actual derivations, not manufactured route count.
