@@ -1,0 +1,378 @@
+[
+  {
+    "id": "F1",
+    "priority": 2,
+    "pr": 7896,
+    "title": "Cell momentum is not coarse-site momentum",
+    "anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 123
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 155
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 430
+      }
+    ],
+    "finding": "The transverse Bloch phase crosses two coarse sites, so q=2 k_coarse=4 k_fine. The fitted coefficient 0.9997 is a velocity in two-coarse-site cell units, not velocity1 in coarse-site units. The stated conjugate length and downstream speed interpretation miss a factor2 (factor4 in fine-site units).",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json:momentum_units",
+      "SUPPLEMENTAL_ALGEBRA.json"
+    ],
+    "narrow_fix": "Retain the original fit and energy convention, explicitly define cell/coarse/fine momenta and convert the reported speed. Update frontmatter, definitions, conclusions, executable block and runner labels consistently.",
+    "expected_controls": "Assert the actual Bloch displacement/phase convention and the transverse squared-dispersion identity; no physical time calibration is supplied.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F2",
+    "priority": 2,
+    "pr": 7896,
+    "title": "Wall localization length is not the zero-energy bulk kernel length",
+    "anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 162
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 216
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 400
+      }
+    ],
+    "finding": "The printed fits are useful, but the conclusion that the bound state is bound on the sea’s own length is false as an exact identification. The uniform far recurrence at energy E has xi(E)=2/acosh(1+(m²−E²)/2). For the sharp fitted E=sqrt(1+m²)−1, xi=2/asinh(m), giving4.1562,2.2692,1.3854, rather than the zero-energy kernel4.0410,2.0781,1.1346. The differences reach22.1%; the resolved3.1% agreement is a finite-window numerical comparison.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json:spatial_decay",
+      "baseline/7896/stdout.txt"
+    ],
+    "narrow_fix": "Keep all fits, windows and original tolerances, call the two lengths distinct, and retain only the measured finite-window agreement for resolved profiles. Do not infer an exact common decay scale or a physical correlation supplier.",
+    "expected_controls": "Use the independent uniform recurrence and at least one actual sharp-mode tail control to reject restoring the false exact identification.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F3",
+    "priority": 2,
+    "pr": 7896,
+    "title": "Resolved profiles do not establish exact zero modes or a four-mode complete census",
+    "anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 165
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 220
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 215
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 451
+      }
+    ],
+    "finding": "The resolved finite spectra are small but nonzero, including2.132099e−5 at m1,w4 and0.00119758 at m2,w4. The sampled tanh wall center is half-integral: m1,w4 has minimum absolute sampled mass0.124352944, so no lattice plane actually has zero mass. Moreover split_walls selects only the lowest8 eigenstates: at L64,m1,w4 the complete |E|<m census has24 states; m2,w4 has72. B2/B3 check sharp profiles only. Broad both-profile four-modes/exact-zero summaries overstate those results.",
+    "evidence": [
+      "EXTRA_SPECTRAL_CONTROLS.json:resolved_spatial_full_gap_census",
+      "INDEPENDENT_CONTROLS.json:wall_projection",
+      "baseline/7896/captured-globals.json"
+    ],
+    "narrow_fix": "Describe near-zero finite low modes and a smooth interpolant crossing zero between sites. Restrict the sharp complete census to its actual fixtures; label resolved results as properties of the selected lowest subspace unless a complete census is added. Withdraw exact zero/gapless claims throughout and preserve numerical residuals.",
+    "expected_controls": "A complete actual resolved spectrum must reveal the extra in-gap states; retain the nonzero mass/energy witness. Do not repair by loosening a threshold to rename the modes exact zeros.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F4",
+    "priority": 2,
+    "pr": 7896,
+    "title": "Anticommutation does not map the selected wall subspaces or prove the anomaly claim",
+    "anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 181
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 188
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 475
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 500
+      }
+    ],
+    "finding": "The implication {W,X}=0 ⇒ P_A X P_A=0 requires an invariant W-eigenspace, which the selected wall space is not. At m1 sharp, ||(I−P_A)W P_A||=0.7071; X maps almost wholly outside the combined light space, with ||P_B X P_A||=2.40e−5 and outside norm0.9999999997, contradicting the claimed map onto the other wall. An explicit state with the exact anticommutator zero has <W>=<X>=1/sqrt2. The sampled compression P_A X P_A≈0 and paired mass coefficients remain valid numerical results. D3/D4 only evaluate sharp profiles; F_b tracelessness alone does not establish identical position profiles, and a one-particle mass decomposition without a regulator/measure/background-response calculation is not NET PARITY ANOMALY ZERO.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json:wall_projection",
+      "INDEPENDENT_CONTROLS.json:anticommutation_does_not_force_zero_mean",
+      "PROOF_REVIEW.md"
+    ],
+    "narrow_fix": "Remove the false wall-to-wall proof and index interpretation of a nonquantized W expectation. Retain the actual compressed-operator result on its declared selected spaces. Scope the decomposition to the actual sharp fixtures, or add resolved checks explicitly. Either check each position-projector compression to support identical density, or narrow that inference. State the paired finite taste coefficients and leave the physical parity anomaly unproved.",
+    "expected_controls": "Retain the actual W/X leakage and anticommuting-state counterexamples; assert actual projected X, mass reconstruction and any retained density identity. No many-body anomaly campaign is required for a narrow honest correction.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F5",
+    "priority": 2,
+    "pr": 7896,
+    "title": "Even massive line dispersion permits motion and does not classify the resolved crossing",
+    "anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 200
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 208
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 313
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 531
+      }
+    ],
+    "finding": "The runner itself prints increasing line energies. Evenness implies zero derivative at the massive minimum, not no left/right movers or a nondispersing band: actual derivatives at pi±.08 are ±0.24383155. The exact staggered square relation gives E(q)²=E0²+4sin²(q/2). E3 checks only two minimum energies, which cannot establish that the resolved crossing has only plane modes and no additional line band. Matching two finite sizes to1e−6 also is not by itself a proof that no finite-size splitting exists.",
+    "evidence": [
+      "EXTRA_SPECTRAL_CONTROLS.json:line_group_velocity",
+      "SUPPLEMENTAL_ALGEBRA.json",
+      "baseline/7896/stdout.txt"
+    ],
+    "narrow_fix": "Retain the gapped line band, its opposite group velocities, sampled evenness, finite-size agreement and density enhancement. Withdraw nondispersing/no-left-or-right-movers language and the complete resolved-line classification. Label the two resolved minima and finite-size evidence accurately, or supply a separate proof if a stronger claim is retained.",
+    "expected_controls": "Check the actual squared dispersion and nonzero off-node derivatives; no need to expand into three-wall or many-body calculations.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F6",
+    "priority": 2,
+    "pr": 7896,
+    "title": "The line fixture can change its quoted scientific result while every check passes",
+    "anchors": [
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 514
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 519
+      }
+    ],
+    "finding": "Changing the actual supplied line mass from1 to1.05 in MG[L] changes the computed scientific energies/density while the whole original runner still returns22/0. E1 checks degeneracy, relative ordering and two-size agreement but neither the declared m=1 fixture nor the claimed0.317837 reference. This is a demonstrated false positive, not merely a missing redundant unit test.",
+    "evidence": [
+      "MUTANT_CONTROLS.json:7896_line_mass_five_percent",
+      "mutants/7896_line_mass_five_percent/source.patch",
+      "mutants/7896_line_mass_five_percent/stdout.txt"
+    ],
+    "narrow_fix": "Bind the actual constructed mass field, its stated amplitude and the retained numeric line conclusions to substantive assertions; preserve all original checks/data. State numerical tolerances at their actual precision, not a literal exactness claim.",
+    "expected_controls": "The original +5% whole-source mutant must fail an actual scientific assertion. Include an independent dispersion/reference construction instead of a source-text-only fence.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F7",
+    "priority": 2,
+    "pr": 7909,
+    "title": "Finite open-interval modes are exponentially small, not exact zeros or exact Weyl cones",
+    "anchors": [
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 135
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 144
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 243
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 624
+      }
+    ],
+    "finding": "At p0, a spin-independent change to the tau1 eigenbasis reduces the actual interval Hamiltonian to a balanced chiral block with triangular bidiagonal B. Its diagonal is1+m(s), or1/2+m at free endpoints. Every declared diagonal is nonzero, so detH=det(B)^4≠0 at finiteN. Independent80-digit intended-rational calculations give positive energies3.44969e−23 (hard one-wall),5.04983e−23 (free) and1.77089e−45 (uniform topological), below binary64 resolution but not zero. At nonzero q the shifted finite chiral block leaves a residual gap above |sin q|; agreement to8decimals is not equality.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json:record_interval_determinants",
+      "SUPPLEMENTAL_ALGEBRA.json:actual_binary64_det_nonzero",
+      "PROOF_REVIEW.md"
+    ],
+    "narrow_fix": "Replace exact-zero/exact-cone language with finite near-zero levels, numerical resolution and sampled dispersion agreement. Preserve the exact finite balanced-sector pairing and every original number. Define the limit separately; do not assert no finite zero for all parameters (m=−1 is a special exact-zero example).",
+    "expected_controls": "Use the actual chiral-block determinant and a high-precision/recurrence control to distinguish below-resolution splitting from exact zero; no repeated full baseline is needed.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F8",
+    "priority": 2,
+    "pr": 7909,
+    "title": "Window-tracker sign switches are not exact Callan–Harvey spectral flow",
+    "anchors": [
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 143
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 151
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 435
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 471
+      }
+    ],
+    "finding": "For the actual Ns16,+one-flux open geometry, H(k)²=[H0+(1−cosk)Gamma_m]²+sin²k I. Zeros can only occur at k0 or pi; complete finite diagonalizations give min|E|0.00407991368 and1.60326484 there, with eigen-residuals≈1.55e−14. There is therefore an avoided crossing, not an eigenvalue branch crossing zero. The localized-window tracker switches branches across it. In addition B11 does not bind wall/partner orientation or the flux sign: reversing the actual flux for one original geometry still passes its actual predicate.",
+    "evidence": [
+      "EXTRA_SPECTRAL_CONTROLS.json:flux_continuous_gap",
+      "EXTRA_SPECTRAL_CONTROLS.json:flux_avoided_crossing",
+      "MUTANT_CONTROLS.json:7909_reverse_actual_flux"
+    ],
+    "narrow_fix": "Retain all historical tracking integers as the specified finite window diagnostic, including pinned-window ambiguity. Withdraw exact spectral-flow/inflow/anomaly language unless a new justified limiting spectral-flow construction is supplied. Bind actual flux orientation and the exact label dictionary of every retained diagnostic geometry.",
+    "expected_controls": "Preserve the avoided-crossing countercontrol. The actual reversed-flux mutant must fail the retained orientation assertion (or be explicitly evaluated as a distinct signed control); a tally of one+1 and one−1 is insufficient.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F9",
+    "priority": 2,
+    "pr": 7909,
+    "title": "The family checks count a cutoff spectrum, not every localized chiral species or the exact finite window",
+    "anchors": [
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 157
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 523
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 530
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 547
+      }
+    ],
+    "finding": "C2 compares number of |E|<.25 eigenstates with twice a tau-transition count; C3 checks total chi. They do not classify localization/chirality at every interface over2592 members. C1 constructs1296 profiles but C2/C3 never assert all were executed: restricting the actual loop to6profiles still passes4/0. C4 samples8masses at cutoff.30; it does not prove four light states throughout−2<m<0 and none outside. At N48,m=−2.01,−1.99,−.01,+.01 the same cutoff has20states, on both sides of the bulk transition.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json:finite_uniform_cutoff_scan",
+      "MUTANT_CONTROLS.json:7909_skip_1290_family_members",
+      "MUTANT_CONTROLS.json:7909_wrong_bulk_window"
+    ],
+    "narrow_fix": "Keep the exact profile enumeration, numerical cutoff-count equality on the actual finite family, net-chi result and eight uniform samples. Assert full executed key/count coverage for both boundary conditions. Name the bulk/semi-infinite band-inversion interval separately from the finite cutoff census. Retain localized/Weyl classification only for the individually checked geometries.",
+    "expected_controls": "The6-profile omission must fail; actual near-transition20-state examples must remain compatible with the corrected scope. The wrong-bulk-window mutant already fails and should remain rejected.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F10",
+    "priority": 2,
+    "pr": 7909,
+    "title": "The seven-item independence and withdrawal claims change domains",
+    "anchors": [
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 180
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 598
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 606
+      }
+    ],
+    "finding": "A supplied-item list and nonzero term norms do not prove seven independent necessary inputs. Coordinate/length/boundary are encoded in K,L,m, unbounded length is not used by these finite matrices, and a sign-changing profile is not necessary for the note’s own uniform-topological pair. The Gamma_s withdrawal norm is||Gamma_s||=2 rather than the actual removed||K⊗Gamma_s||=11.22497. Removing record-coordinate terms leaves a4component spatial Wilson operator; the separately constructed2component naive operator also removes the spatial Wilson term and changes the embedding. Its eight Weyl windings do not mean no local handedness anywhere.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json:withdrawal_domain",
+      "baseline/7909/captured-globals.json"
+    ],
+    "narrow_fix": "Keep a transparent, nonindependent inventory of stipulated data and actual term-removal comparisons. Correct the full-operator norm, distinguish the separate naive comparison from literal withdrawal, and replace no-handedness-anywhere by its balanced winding count. No independent-wall quota should be invented.",
+    "expected_controls": "Construct the actual remaining4×4 operator at generic p and compare it to the separate2×2 comparator; keep the unequal-spectrum witness and the uniform-profile counterexample.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F11",
+    "priority": 2,
+    "pr": "both",
+    "title": "Record readability and supplier boundaries must agree with the conditional model",
+    "anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 22
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 224
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 82
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 203
+      }
+    ],
+    "finding": "The notes correctly disclose supplied one-particle matrices, but #7896 also calls mode density a record-readable modulation without a record-content/readout instrument or coarse-to-fine locality supplier. The fine physical lattice has unit nearest-neighbour edges while the selected coarse bonds span2fine sites. #7909 changes “at most one” record into a singleton even at unformed sites, and a one-dimensional supplied coordinate’s balanced finite chiral model is not a theorem about all physical record-time laws. These strong summaries conflict with the useful declared conditional boundary.",
+    "evidence": [
+      "PREFLIGHT.json",
+      "CURRENT_CONTEXT_BINDING.json",
+      "PROOF_REVIEW.md"
+    ],
+    "narrow_fix": "State the optional supplied occupation/readout interpretation and missing formation/locality/time mechanism explicitly; keep ordinary composition and the selected matrices as hypotheses. Say empty-or-singleton records, and restrict the negative conclusion to this finite model/checked geometries. Preserve every named live alternative and the distinction between species label, projected Weyl sign and physical anomaly.",
+    "expected_controls": "Bind the actual current memo as semantic boundary and check the final summary/proof/runner claims for the corrected domains; no physical formation law or extra primitive should be manufactured.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  },
+  {
+    "id": "F12",
+    "priority": 3,
+    "pr": "both",
+    "title": "Current trace, citation and exactness labels need a narrow publication correction",
+    "anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 39
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 129
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 357
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 63
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 286
+      }
+    ],
+    "finding": "Both next_trace_action fields direct an independent audit despite the current owner deferral. #7896 names the current memo only as plaintext, so the actual citation API yields no premise edge; #7909 has three stale active-path links to exact archived context notes. No helper is actually missing. The blanket Clifford anticommutator at a=b needs2delta_ab I (or a≠b), and labels such as B2[1e−10] or C2[exact] mix construction counts with much looser numerical predicates. “No hypothesis adopted” should distinguish no new axiom adoption from explicitly stipulated model hypotheses.",
+    "evidence": [
+      "PREFLIGHT.json",
+      "planning/PROCEDURE_BINDING.json"
+    ],
+    "narrow_fix": "Update the current trace to source review with formal audit deferred, add accurate current memo citation/semantic binding, point archival context links at preserved archive bodies with context-only status, and correct false exactness/diagonal-index labels throughout current surfaces. Preserve original cached bytes externally; refresh only genuinely changed final runners.",
+    "expected_controls": "Use real note-derived IDs, extract_runner and both helper APIs; require zero invented helper edges. Verify actual citation targets and cache identities after the final source is frozen.",
+    "scope": "Original source finding; no correction applied by reviewer."
+  }
+]

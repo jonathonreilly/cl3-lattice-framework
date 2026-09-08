@@ -147,6 +147,8 @@ modulo-sum proxy, finite code sectors and stated n<=6 domains remain distinct;
 physical formation, general limits and support-selected probabilities remain open.
 No audit ran; the procedural route quota remains explicitly unresolved.
 
+Assignments refreshed 2026-09-08T05:45:23.799387+00:00; queue counts below remain the landed wave21 counts. [Handoff evidence](backlog_evidence/wave22-assignments/INDEX.json).
+
 ## Current assignments and holds
 
 | Owner | Unit | Current state and next step |
@@ -165,9 +167,10 @@ No audit ran; the procedural route quota remains explicitly unresolved.
 | Landed | #7848/#7849 finite Noether and transfer results | Complete conditional algebra and Gram/instrument boundaries accepted with all 46 histories preserved. No physical dynamics or Record law supplied. |
 | Landed | #7888/#7890 finite matter kinematics | Complete corrected finite source accepted with all 46 original checks retained. Physical suppliers, asymptotic/ordering and historical-parent obligations remain explicit. |
 | Landed | #7889/#7891 shifting records and confinement | Complete corrected conditional scope accepted; all 44 original checks and finite positive results retained. Physical/model/limit obligations remain explicit. |
-| Original reviewer backlog_8001_review | #7896/#7909 spatial and record-time walls | Original review resumed sealing. Exact author preparation is checkpointed unchanged; scientific repair awaits root verification and author availability. |
-| Author backlog_batch_contract; original reviewer backlog_draft_triage | #7894/#7897 discrete symmetries and Hartree mass | Root verified sealed 86-artifact original review, 30,088 map rows and 52 source anchors. Twelve findings are in narrow author repair; no final PASS. |
-| Original reviewer backlog_draft_triage | #7895/#7899 relaxation and neighbourhood hierarchy | Complete original source/premise review active at fresh verified heads; supplied model and physical formation boundaries remain under review. |
+| Author backlog_draft_triage; original reviewer backlog_8001_review | #7896/#7909 spatial and record-time walls | Root verified sealed137-artifact review,82,046 actual map rows and44 source anchors. Twelve findings are in narrow author repair, with all48 original checks preserved. No final PASS. |
+| Author backlog_batch_contract; original reviewer backlog_draft_triage | #7894/#7897 discrete symmetries and Hartree mass | Final author executions37/0 and28/0 preserve all56 original checks. Packet sealing and root composition precede original-reviewer confirmation; no final independent PASS. |
+| Original reviewer backlog_draft_triage | #7895/#7899 relaxation and neighbourhood hierarchy | Verified25-artifact checkpoint preserves complete original source reads and maps. No baseline or science control has run. Resume after priority walls author work and symmetry confirmation. |
+| Original reviewer backlog_8001_review | #7883/#7900/#7902/#7904 sea and corner criteria | Four-PR original review active at fresh verified heads. Full determinant, conditioning, flat-band and finite-census scopes remain under review. |
 | Reconciliation complete | Twenty-seven direct landings and 110 other closures | All 137 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
