@@ -8,8 +8,10 @@ records-only reading).  G1: the formation law is the complex Gaussian with preci
 triangular in the order with L_ky = P_ky/P_kk on the recorded neighbors, D = diag P_kk), normalizer prod P_kk.  G2: P_sigma
 depends on the order only through the recorded sets; the monotone class of the rectangle gives one law.  G3: P_sigma = P +
 diag(c) + F with c_x = sum over later recording sites of |P_kx|^2/P_kk and the fill-in F between pairs recorded together;
-P_sigma = P never on a window with an edge; support(P_sigma) = support(P) iff every site records at most one neighbor
-(block 01's Theorem B condition); the fill-in sits on the anti-diagonal pairs of the plaquettes.  G4: det P_sigma = prod
+P_sigma = P never on a window with an edge; if every site records at most one neighbor then support(P_sigma) = support(P)
+(block 01's Theorem B condition), and on the declared grid instances the converse holds as an executed fact, while in
+general it is false (the checker's exact witnesses: cancelling fill-in on a plaquette; fill-in on an edge of a triangle);
+on the grid the fill-in sits on the anti-diagonal pairs of the plaquettes.  G4: det P_sigma = prod
 P_kk > det P (Hadamard), equality iff P is diagonal.  G5: the three read-slice covariances (static marginal, pinned-static
 conditional, formation) are pairwise different on 2x3; the formation law given the pinned row is not the static
 conditional; for a non-Hermitian Q, herm(Q^-1) != (herm Q)^-1.  Exact rational-complex arithmetic only (sympy Rational and
@@ -61,6 +63,7 @@ MUTATION_GATE = {
     "fillin_pairs_wrong": "C",
     "correction_literal_off": "C",
     "equality_with_static_claimed": "C",
+    "cancellation_witness_denied": "C",
     "hadamard_reversed": "D",
     "hadamard_equality_case_wrong": "D",
     "read_slices_equal_claimed": "E",
@@ -319,10 +322,12 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
                 same = support(Ps) == support(P)
                 if mut("support_condition_forged"):
                     same = not same
+                # G3(b): <= 1 recorded neighbor => same support and F = 0 (a theorem); on the declared instances of the grid
+                # the converse holds as an executed fact (no cancellation); the general converse is false (C6).
                 support_ok = support_ok and (same == le1) and (not le1 or is_zero_matrix(F))
     checks.check("C1", formula_ok, f"G3: P_sigma = P + diag(c) + F on {n_orders} (instance, window, order) cases")
     checks.check("C2", never_equal, "G3(a): P_sigma differs from P on every order of every window (each has a recorded neighbor)")
-    checks.check("C3", support_ok, "G3(b): support(P_sigma) = support(P) exactly when every site records at most one neighbor (then F = 0)")
+    checks.check("C3", support_ok, "G3(b): <= 1 recorded neighbor => support(P_sigma) = support(P) and F = 0 (theorem); on the declared grid instances the converse holds too (executed)")
     sites, idx, edges, P = precision(1, 3, "declared")
     ends = ldl_factors(P, sites, idx, edges, ((0, 0), (0, 1), (0, 2)))
     mid = ldl_factors(P, sites, idx, edges, ((0, 0), (0, 2), (0, 1)))
@@ -337,6 +342,44 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
     fill = tuple(sorted((sites[i], sites[j]) for i in range(6) for j in range(i + 1, 6) if (i, j) not in edge_set and sp.simplify(Pm0[i, j]) != 0))
     expected_fill = FILLIN_PAIRS_23 if not mut("fillin_pairs_wrong") else (((0, 0), (1, 1)),)
     checks.check("C5", corr == CORRECTIONS_23 and fill == expected_fill, f"G3(c): 2x3 monotone class: corrections {corr}; fill-in on the anti-diagonal pairs {fill}")
+    # C6: the boundary of G3(b) — the refuting checker's exact witnesses: the general converse is false
+    def custom(N, entries):
+        Pc = sp.zeros(N, N)
+        for k in range(N):
+            Pc[k, k] = R(3)
+        for (a, b), v in entries.items():
+            Pc[a, b] = v
+            Pc[b, a] = sp.conjugate(v)
+        return Pc
+    def ldl_custom(Pc, order, adj):
+        N = Pc.rows
+        pos = {x: t for t, x in enumerate(order)}
+        L = sp.eye(N)
+        D = sp.zeros(N, N)
+        rec = {}
+        for x in order:
+            D[x, x] = Pc[x, x]
+            A = [y for y in adj[x] if pos[y] < pos[x]]
+            rec[x] = A
+            for y in A:
+                L[x, y] = Pc[x, y] / Pc[x, x]
+        return L.H * D * L, rec
+    # (i) plaquette a=0,b=1,c=2,d=3 with edges ab, ac, bd, cd and P_cd = -1/2: order (a, d, b, c) records two neighbors at b and at c, the fill-in on (a, d) cancels
+    Pw = custom(4, {(0, 1): R(1, 2), (0, 2): R(1, 2), (1, 3): R(1, 2), (2, 3): R(-1, 2)})
+    adj4 = {0: [1, 2], 1: [0, 3], 2: [0, 3], 3: [1, 2]}
+    Psw, recw = ldl_custom(Pw, (0, 3, 1, 2), adj4)
+    w1 = leading_minors_positive(Pw) and max(len(A) for A in recw.values()) == 2 and support(Psw) == support(Pw) and is_zero_matrix(Psw - Pw - sp.diag(R(1, 6), 0, 0, R(1, 6)))
+    # (ii) the triangle K3: fill-in on an adjacent pair, support unchanged with two recorded neighbors
+    Pt = custom(3, {(0, 1): R(1, 2), (0, 2): R(1, 2), (1, 2): R(1, 2)})
+    Pst, rect = ldl_custom(Pt, (0, 1, 2), {0: [1, 2], 1: [0, 2], 2: [0, 1]})
+    w2 = leading_minors_positive(Pt) and len(rect[2]) == 2 and support(Pst) == support(Pt) and sp.simplify(Pst[0, 1] - Pt[0, 1]) != 0
+    # (iii) a triangle where the fill-in cancels an existing edge entry: the support shrinks
+    Ps3 = custom(3, {(0, 1): R(1, 4), (0, 2): R(1, 2), (1, 2): R(-3, 2)})
+    Pss, recs = ldl_custom(Ps3, (0, 1, 2), {0: [1, 2], 1: [0, 2], 2: [0, 1]})
+    w3 = leading_minors_positive(Ps3) and sp.simplify(Pss[0, 1]) == 0 and sp.simplify(Ps3[0, 1]) != 0
+    if mut("cancellation_witness_denied"):
+        w1 = not w1
+    checks.check("C6", w1 and w2 and w3, "the boundary of G3(b): a plaquette precision with P_cd = -1/2 keeps P's support under an order recording two neighbors (fill-in cancels); on K3 the fill-in lands on an edge; a triangle precision loses an edge entry (checker's witnesses)")
     if exact:
         print(f"exact 2x3 monotone P_sigma = {Pm0.tolist()}")
         print(f"exact 2x3 P = {P.tolist()}")
@@ -433,7 +476,7 @@ def family_f(checks: Checks, note_text: str) -> None:
     numeric = "N" + "("  # float-scan-marker-line
     nsimp = "nsimp" + "lify("  # float-scan-marker-line
     bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln or nsimp in ln]
-    checks.check("F3", not bad and len(scan) > 250, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
+    checks.check("F3", not bad and len(scan) > 280, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
 
 
 # ============================================================================================ family G

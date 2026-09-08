@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py
-runner_sha256: 18605022a5a5cffedc5a178ee516a52ff23098962100fe798542d7e800fd5077
-input_fingerprint_sha256: ebec9fc1698ccd8280a94199448d3c98440c18a41541eaab53ab32a7aec75a5a
+runner_sha256: 19254f5f535645be9a30944aaf3a3b3241174e8dc95cb8420ee102f5e3074c5f
+input_fingerprint_sha256: 8375780418b4b24a55a0fe066514883452b8ef4c8699154ca850a8150fe1f2d3
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.82
+elapsed_sec: 1.78
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -27,9 +27,10 @@ PASS: B4 G2: the 24 orders of the plaquette fall into 14 recorded-set classes an
 PASS: B5 G2: the 5 monotone orders of 2x3 give one P_sigma; the snake and the mirror give different ones
 PASS: C1 G3: P_sigma = P + diag(c) + F on 62 (instance, window, order) cases
 PASS: C2 G3(a): P_sigma differs from P on every order of every window (each has a recorded neighbor)
-PASS: C3 G3(b): support(P_sigma) = support(P) exactly when every site records at most one neighbor (then F = 0)
+PASS: C3 G3(b): <= 1 recorded neighbor => support(P_sigma) = support(P) and F = 0 (theorem); on the declared grid instances the converse holds too (executed)
 PASS: C4 G3: on the path, the end-to-end order keeps P's support with corrections [5/48, 5/48, 0]; the middle-out order fills in the end pair
 PASS: C5 G3(c): 2x3 monotone class: corrections [5/24, 5/24, 5/48, 5/48, 5/48, 0]; fill-in on the anti-diagonal pairs (((0, 1), (1, 0)), ((0, 2), (1, 1)))
+PASS: C6 the boundary of G3(b): a plaquette precision with P_cd = -1/2 keeps P's support under an order recording two neighbors (fill-in cancels); on K3 the fill-in lands on an edge; a triangle precision loses an edge entry (checker's witnesses)
 PASS: D1 G4: det P < prod_k P_kk (Hadamard) on the three windows, both instances; det P real and positive
 PASS: D2 G4: equality det P = prod P_kk for a diagonal P
 PASS: E1 G5: on 2x3 the static marginal, the pinned-static conditional and the formation read-slice covariances of row 1 are pairwise different
@@ -44,7 +45,7 @@ per_mode: executed — the quadratic form of the conditional product against L^H
 per_block: executed — the row-1 block of P, of P_sigma and of the three covariances on 2x3; the determinants on the three windows
 lattice_wide: not claimed — three finite windows of a declared instance; nothing about larger windows, the plane or any external fixture
 PASS: G1 the five N5 resolution lines are printed
-TOTAL: PASS=24 FAIL=0
+TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----
 

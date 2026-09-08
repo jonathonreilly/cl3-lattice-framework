@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07
 claim_type: bounded_theorem
-claim_scope: "A self-made Hermitian positive-definite nearest-neighbor precision P over the Gaussian rationals (the declared instance P_xx = 3, P_xy = (1 + 2i)/4 horizontal, (2 - i)/4 vertical; and a real instance with 1/2 on every edge) on the path 1x3, the plaquette 2x2 and the rectangle 2x3, with complex record variables; the static law the complex Gaussian with precision P and the formation law along an order the product of the rule's conditionals given the recorded neighbors only (block 01's definition): the formation law is the complex Gaussian with precision P_sigma = L^H D L and normalizer prod P_kk (G1, proved; executed on every order of the path and plaquette and on declared orders of 2x3); P_sigma depends on the order only through the recorded sets, so the monotone class of the rectangle gives one law (G2, proved; executed); P_sigma = P + diag(c) + F with the corrections c >= 0 and the fill-in F between pairs recorded together, so P_sigma is never P on a window with an edge, keeps P's support exactly when every site records at most one neighbor, and otherwise fills in the anti-diagonal pairs of the plaquettes (G3, proved; executed); det P_sigma = prod P_kk > det P with equality only for a diagonal P (G4, Hadamard, re-proved; executed); on 2x3 the static marginal, the pinned-static conditional and the formation read-slice covariances of the read row are pairwise different (G5, executed), and herm(Q^-1) != (herm Q)^-1 for a non-Hermitian witness. The instance is declared, not derived; nothing is claimed about any external fixture, committed action or bridge; exact arithmetic throughout."
+claim_scope: "A self-made Hermitian positive-definite nearest-neighbor precision P over the Gaussian rationals (the declared instance P_xx = 3, P_xy = (1 + 2i)/4 horizontal, (2 - i)/4 vertical; and a real instance with 1/2 on every edge) on the path 1x3, the plaquette 2x2 and the rectangle 2x3, with complex record variables; the static law the complex Gaussian with precision P and the formation law along an order the product of the rule's conditionals given the recorded neighbors only (block 01's definition): the formation law is the complex Gaussian with precision P_sigma = L^H D L and normalizer prod P_kk (G1, proved; executed on every order of the path and plaquette and on declared orders of 2x3); P_sigma depends on the order only through the recorded sets, so the monotone class of the rectangle gives one law (G2, proved; executed); P_sigma = P + diag(c) + F with the corrections c >= 0 and the fill-in F between pairs recorded together, so P_sigma is never P on a window with an edge (proved for every finite graph); if every site records at most one neighbor then P_sigma keeps P's support (proved), the converse holding on the declared grid instances as an executed fact and failing in general (the refuting checker's exact witnesses, executed: a plaquette precision whose fill-in cancels, a triangle whose fill-in lands on an edge or cancels an edge entry); on the grid the fill-in sits on the anti-diagonal pairs of the plaquettes (G3); det P_sigma = prod P_kk > det P with equality only for a diagonal P (G4, Hadamard, re-proved; executed); on 2x3 the static marginal, the pinned-static conditional and the formation read-slice covariances of the read row are pairwise different (G5, executed), and herm(Q^-1) != (herm Q)^-1 for a non-Hermitian witness. The instance is declared, not derived; nothing is claimed about any external fixture, committed action or bridge; exact arithmetic throughout."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
@@ -53,9 +53,7 @@ precision `P_σ = L_σ† D L_σ`, `L_σ` unit lower triangular in the order wit
 `Π_k P_kk`; (G2) `P_σ` depends on `σ` only through the recorded sets, so every
 monotone order of a rectangle gives one law (block 05, P1); (G3)
 `P_σ = P + diag(c) + F_σ` with `c_x = Σ_{k: x∈A_k} |P_kx|^2/P_kk ≥ 0` and
-`(F_σ)_{xy} = Σ_{k: x,y∈A_k} P_xk P_ky/P_kk`, so `P_σ = P` only when no site
-records a neighbor, `support(P_σ) = support(P)` exactly when every site records
-at most one neighbor, and a site recording two neighbors couples them; (G4)
+`(F_σ)_{xy} = Σ_{k: x,y∈A_k} P_xk P_ky/P_kk`, so `P_σ = P` only when no site records a neighbor; if every site records at most one neighbor, `P_σ` keeps `P`'s support, and on the declared instances a site recording two neighbors couples them (in general the fill-in, a sum, can cancel — the checker's witnesses); (G4)
 `det P_σ = Π_k P_kk > det P` unless `P` is diagonal; (G5) on `2×3` with the
 top row pinned, the three read-slice covariances of the bottom row are
 pairwise different. Executed on the declared instance (`P_xx = 3`, horizontal
@@ -64,7 +62,7 @@ the correction per recording neighbor is `5/48`; on the `2×3` monotone class
 the corrections are `[5/24, 5/24, 5/48, 5/48, 5/48, 0]` and the fill-in sits on
 the anti-diagonal pairs `((0,1),(1,0))`, `((0,2),(1,1))`; the formation
 precision's bottom-row block has diagonal `149/48, 149/48, 3` against `P`'s
-`3, 3, 3`. Exact arithmetic: 24 checks, 18 mutations.
+`3, 3, 3`. Exact arithmetic: 25 checks, 19 mutations.
 
 ## Machine status and trace
 
@@ -78,7 +76,7 @@ source_of_blocker_text: handoff
 reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "consumer: the gravity/source lane's chain-rule-versus-one-shot-joint sentence (block 171 on its branch), which this note states exactly for a Hermitian precision the day the lane's chain is on main; next in the campaign: formation-law uniqueness on Z^3 for the monotone class; width 6"
-conditional_surface_status: "exact on the declared instance and windows; G1-G4 are proved for every Hermitian positive-definite nearest-neighbor precision on every finite graph; G5 is an executed instance; no external fixture, no bridge, no order selected"
+conditional_surface_status: "exact on the declared instance and windows; G1, G2, G3(a), G4 and the forward half of G3(b) are proved for every Hermitian positive-definite nearest-neighbor precision on every finite graph; the converse of G3(b) and G3(c) are executed on the declared grid instances and fail in general (executed witnesses); G5 is an executed instance; no external fixture, no bridge, no order selected"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 audit_required_before_effective_retained: true
@@ -119,9 +117,7 @@ record variables `z_x`. The **declared instance**: `P_xx = 3`; on a
 horizontal edge with `x` left of `y`, `P_xy = (1 + 2i)/4` and `P_yx` its
 conjugate; on a vertical edge with `x` above `y`, `P_xy = (2 − i)/4`; all
 other entries `0`. The **real instance**: `P_xx = 3`, `P_xy = 1/2` on every
-edge. Both are Hermitian; positive definiteness follows from Gershgorin (each
-site has at most three neighbors, each entry of modulus `√5/4 < 1`, so
-`3 > 3 · √5/4`) and is executed by the leading principal minors (B1).
+edge. Both are Hermitian; positive definiteness follows from Gershgorin (each site has at most three neighbors, each off-diagonal entry of modulus `√5/4` for the declared instance and `1/2` for the real one, both below `1`, so `3 > 3 · √5/4`) and is executed by the leading principal minors (B1).
 
 **The static law and the rule.** The complex Gaussian with density
 `(det P/π^N) exp(−z† P z)`. Its one-site conditional given all the neighbors'
@@ -171,10 +167,7 @@ factorization of a product of Gaussian conditionals and Hadamard's inequality
 are elementary linear algebra, re-proved here where used.
 
 New here: G1 (the formation law's precision as an explicit triangular
-factorization), G2 (the class statement for the Gaussian rule), G3 (the exact
-separation with its two parts — diagonal corrections and fill-in — and the
-reading of block 01's one-recorded-neighbor condition as the sparsity
-condition), G4 (the normalizer twin of block 02's normalizer history by
+factorization), G2 (the class statement for the Gaussian rule), G3 (the exact separation with its two parts — diagonal corrections and fill-in — and the reading of block 01's one-recorded-neighbor condition as a sparsity condition, sufficient in general and necessary on the declared grid instances), G4 (the normalizer twin of block 02's normalizer history by
 Hadamard's inequality), G5 (the three read-slice covariances told apart on an
 instance).
 
@@ -241,11 +234,7 @@ mirror (rows right to left) give different ones (B5).
 
 **Statement.** `P_σ = P + diag(c) + F_σ` with `c_x = Σ_{k: x∈A_k}
 |P_kx|^2/P_kk ≥ 0` and `(F_σ)_{xy} = Σ_{k: x,y∈A_k} P_xk P_ky/P_kk` for
-`x ≠ y`. Hence: (a) `P_σ = P` if and only if every `A_k` is empty — on a
-connected graph with at least two sites, never; (b) `support(P_σ) =
-support(P)` if and only if every `|A_k| ≤ 1`, and then `P_σ = P + diag(c)`;
-(c) if some `|A_k| ≥ 2`, `F_σ` couples the pairs of `A_k`, which are not
-adjacent (two neighbors of one site are at distance two on the grid).
+`x ≠ y`. Hence: (a) `P_σ = P` if and only if every `A_k` is empty — on a connected graph with at least two sites, never; (b) if every `|A_k| ≤ 1` then `F_σ = 0`, `P_σ = P + diag(c)` and `support(P_σ) = support(P)`; on the grid with the declared instances the converse also holds (executed: every order with a site recording two neighbors has nonzero fill-in), but it is not a theorem — `(F_σ)_{xy}` is a sum over the sites recording both `x` and `y` and can vanish, and off the grid it can land on an edge or cancel an edge entry (the refuting checker's exact witnesses, executed in C6); (c) on the grid (bipartite) two neighbors of one site are at distance two, so a nonzero fill-in entry lies off `P`'s support: a site recording two neighbors couples a non-adjacent pair.
 
 *Proof.* Expand `(L_σ† D L_σ)_{xy} = Σ_k P_kk (L_σ)̄_{kx} (L_σ)_{ky}`. The
 terms: `k = x = y` gives `P_xx`; `k = y ≠ x` gives `P_yy · (P̄_yx/P_yy) · 1 =
@@ -261,12 +250,8 @@ corrections. (a): `c_x > 0` whenever `x ∈ A_k` for some `k`, because
 P`; and on a connected graph with two or more sites the second site of any
 order records the first when they are adjacent, or some later site records an
 earlier neighbor — in every case some `A_k ≠ ∅` (executed: every order of
-every window has a nonempty recorded set). (b), (c): the support of `F_σ` is
-exactly the set of pairs recorded together by some site; it is empty if and
-only if every `|A_k| ≤ 1`; a pair recorded together is two neighbors of one
-site, hence non-adjacent on the grid. ∎ Executed: the formula on 62
-(instance, window, order) cases (C1); `P_σ ≠ P` on every one (C2); the
-support condition on every one (C3); the path: the end-to-end order keeps
+every window has a nonempty recorded set). (b): if every `|A_k| ≤ 1` no pair is recorded together, `F_σ = 0`, and `diag(c)` touches the diagonal only. The support of `F_σ` is contained in the set of pairs recorded together by some site, and each entry is a sum that can vanish, so the converse is an instance statement: on the declared grid instances no cancellation occurs (C3), while a plaquette precision with `P_cd = −1/2` under the order `(a, d, b, c)` keeps `P`'s support although two sites record two neighbors, the triangle `K_3` with `1/2` on every edge puts its fill-in on an edge, and a triangle precision `[[3, 1/4, 1/2], [1/4, 3, −3/2], [1/2, −3/2, 3]]` loses its `(0,1)` entry (C6). (c): on a bipartite graph two neighbors of one site are non-adjacent. ∎ Executed: the formula on 62
+(instance, window, order) cases (C1); `P_σ ≠ P` on every one (C2); the support condition on every one (C3) and its boundary (C6); the path: the end-to-end order keeps
 `P`'s support with corrections `[5/48, 5/48, 0]` (each recording neighbor
 contributes `|P_kx|^2/P_kk = (5/16)/3 = 5/48` at the declared instance), the
 middle-out order records two neighbors at the middle site and fills in the
@@ -278,8 +263,7 @@ law carries its `K^2` denominator.
 
 **Reading.** Block 01's condition "every site records at most one neighbor"
 is, for the discrete product rule, the condition for equality of the two
-laws; here it is the condition for the two precisions to have the same
-support, while equality fails already at one recorded neighbor: the discrete
+laws; here it is a sufficient condition for the two precisions to have the same support (and on the declared grid instances the necessary one), while equality fails already at one recorded neighbor: the discrete
 rule's normalizer `Z_1` is constant, which hides the diagonal correction that
 the Gaussian rule's fixed variance `1/P_kk` exposes.
 
@@ -301,7 +285,7 @@ normalizer `det P` differ on every window with an edge.
 
 ## G5 — the three read-slice covariances (executed)
 
-On `2×3` with row `0` pinned: the static marginal covariance of row `1` (the
+On `2×3`, with row `0` the pinned row for object (ii) and row `1` the read slice: the static marginal covariance of row `1` (the
 block of `P^{-1}`), the pinned-static conditional covariance `(P_{11})^{-1}`
 and the formation covariance (the block of `P_σ^{-1}` for the monotone class)
 are pairwise different exact matrices (E1; printed under `--exact`). The
@@ -385,9 +369,7 @@ form not equal to `L_σ† D L_σ`, or not Hermitian; `det L_σ ≠ 1` or
 `det P_σ ≠ Π P_kk`; two orders with the same recorded sets and different
 `P_σ`; a plaquette class count other than 14; two monotone orders of `2×3`
 with different `P_σ`, or the snake or mirror equal to the class; a case where
-`P_σ ≠ P + diag(c) + F_σ`; an order with `P_σ = P`; a support equality with a
-site recording two neighbors, or a support difference with every site
-recording at most one; path corrections other than `[5/48, 5/48, 0]`; `2×3`
+`P_σ ≠ P + diag(c) + F_σ`; an order with `P_σ = P`; a support difference with every site recording at most one, or, on the declared grid instances, a support equality with a site recording two; a witness of C6 failing (the plaquette cancellation, the triangle's edge fill-in, the triangle's lost entry); path corrections other than `[5/48, 5/48, 0]`; `2×3`
 corrections or fill-in pairs other than the literals; `det P ≥ Π P_kk` on a
 window with an edge; two of the three read-slice covariances equal; the
 formation row-`1` block diagonal other than `149/48, 149/48, 3`;
@@ -405,7 +387,7 @@ Further: the instance's off-diagonal entries are one value per edge
 direction, not a general nearest-neighbor precision, though G1–G4 are proved
 for every Hermitian positive-definite nearest-neighbor `P`; the executed
 orders of `2×3` are the monotone class, the snake and the mirror (and two
-orders for G1); G5 is an executed instance, not a theorem; the complex record
+orders for G1); G5 is an executed instance, not a theorem; the converse of G3(b) and G3(c) are statements about the grid and the declared instances, not theorems for every graph (the executed witnesses show the boundary); the complex record
 variable is a modelling choice of the instance (the real instance shows the
 same structure); no formation site, probability or rate is supplied; no
 axiom or primitive is changed.
@@ -427,8 +409,7 @@ constant enters.
 Supervisor-authored (Fable) from the supervisor's control
 `specs/supervisor_control_block07_gaussian.py` (with its output), which
 computed every number here before the contract `GOAL_block07.md` was written;
-refuting checker: pending; independence class: to be filled after the
-checker. Settled while executing: the runner's term-by-term quadratic form
+Refuting checker (Opus 5, disjoint machinery; `CHECKER_block07_findings.md`): FIX FIRST on one theorem — the first draft's G3(b) claimed the support condition as an equivalence for every finite graph; the checker showed by exact witnesses (a plaquette precision whose fill-in cancels, a triangle whose fill-in lands on an edge, a triangle that loses an edge entry) that only the forward direction is a theorem; folded: G3(b), (c) restated, the witnesses executed (C6), the scope lines corrected; also a mutation that leaked across families (localized), the Gershgorin sentence and the G5 heading. Everything else confirmed on its own machinery — the conditional densities integrated in real coordinates, the 14 classes, the 62 cases, the Schur pivots, the three covariances by its own elimination, and the pinned-static conditional precision derived as `P_{11}`. Independence class: single family (Claude), cross-model — Fable supervisor-author, Opus 5 refuting checker. Settled while executing: the runner's term-by-term quadratic form
 had a stray transpose in its first draft (caught by B2 against `L† D L`);
 the plaquette's 24 orders give 14 recorded-set classes (not 24 laws), the
 executed content of G2.
@@ -445,7 +426,5 @@ python3 scripts/admissibility_rule_hermitian_gaussian_instance_formation_precisi
 Families: A authority and inputs; B the formation law's precision and the
 class (G1, G2); C the separation (G3); D the normalizers (G4); E the read
 slices (G5); F fences, forbidden phrases and the floating-point self-scan; G
-the resolution certificate. Each of the 18 declared mutations perturbs one
-object or injects one claim and fails in exactly one family; `--exact` prints
-`P`, `P_σ` and the three read-slice covariances of `2×3`. Expected final
-line: `TOTAL: PASS=24 FAIL=0`.
+the resolution certificate. Each of the 19 declared mutations perturbs one object or injects one claim and fails in exactly one family; `--exact` prints
+`P`, `P_σ` and the three read-slice covariances of `2×3`. Expected final line: `TOTAL: PASS=25 FAIL=0`.
