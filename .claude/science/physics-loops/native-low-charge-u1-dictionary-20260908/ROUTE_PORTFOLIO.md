@@ -1,0 +1,1 @@
+Completed: unique constrained basis matching; source W plus particle-hole/species phase; projected hopping and gated rings. Corrected: absolute hole basis. Excluded: using Gauss alone as proof of hopping signs, projected fullCAR, rotor interpretation or physical role retirement.

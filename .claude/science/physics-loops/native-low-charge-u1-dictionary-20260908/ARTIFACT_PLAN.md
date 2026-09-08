@@ -1,0 +1,1 @@
+One note, paired primary, four helpers, live JSON, full historical packet. Actual closure has ten files. Preserve both independent implementation and original failed prose, not only summaryPASS. Root owns publication after review.

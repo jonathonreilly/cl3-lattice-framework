@@ -1,0 +1,1 @@
+Before new domain-control execution: enumerate all64 six-edge bit patterns on both sublattices; check divE and unique Gauss/no-double matter labels, exclusion of |Q|>1, and the explicit vacuum/double charge-zero collision without the exclusion. Actual wrong-Gauss and removed-no-double function mutants must fail. This is finite algebra support, not a new physical claim.

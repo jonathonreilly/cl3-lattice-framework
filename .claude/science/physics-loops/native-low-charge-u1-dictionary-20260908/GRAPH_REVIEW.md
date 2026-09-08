@@ -1,0 +1,3 @@
+# Independent graph-only review
+
+PASS for manifest `4b06eb72c4bb68f68752ae7d187246498385734070a3983f3d05f9d92aad761e` against parent `86e03ef9a8eaafb9106304bf54cc0a991c758001`. Independently compared every existing manifest node: none changed or disappeared. Exactly one new node and three outgoing edges were added. Recomputed the sorted dependency digest from the three named existing parents (native dictionary, native instrument, earlier U1 support construction); it matches the manifest. Verified all seven SOURCE_FREEZE entries against actual bytes, including the already reviewed source and five runners. No scientific rerun or new science verdict is implied. The initial one-edge expectation was mistaken; the corrected three-edge receipt is consistent.
