@@ -1,0 +1,1 @@
+Next choices belong to coordinator: physical supply of the restricted domain; native implementation/occurrence; dynamics within the supplied model. No further physics claim is made by this packaging task.

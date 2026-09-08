@@ -1,0 +1,11 @@
+# Canonical U1 port review
+
+PASS for source 9735ef75d76f16ca7f4b7202b9401f3b60012df2e8cd8af84f27e57ebd8b7bf4 and primary 4b2244f5878a03a53f3c67fe291c118e26f67f32b9e0af59f8ae547d061c276c, with all four helpers and fixture/output hashes in CANONICAL_COVERAGE.json. Read the full canonical note, full primary and every helper. This is an independent port review of the previously reviewed corrected science, not an audit verdict or a fresh full pipeline run.
+
+The note preserves the actual finite even cubic low-charge domain, relaxed cycle constraints, redundant no-double basis, black-to-white E convention, corrected absolute s0 and optional bD distinction. The native projected hopping/ring proof, ordinary ambient CAR versus projected operators, different old Noether charge, and no-new-physical-role/no-formation/continuum scope are all retained. No mathematical strengthening relative to reviewed a70724ba was found.
+
+The author/independent helper arithmetic and fixture geometry remain the previously read implementations; the port replaces disappearing assertions/conditional-raises with explicit counted predicates and removes scratch writes. The copied D4 seed is byte-identical to the actual original global exchange RESULT.json. Absolute-phase controls separately preserve the old error. New domain controls enumerate all64 star patterns on both sublattices and correctly retain the neutral vacuum/double collision. Predicates are not mislabeled independent states.
+
+The primary reads/hashes all listed sources, helpers and actual seed, executes all four helper bodies with runpy, validates nonempty coverage and fixed column counts, rejects nonfinite JSON and enforces180s/384MiB. Helper standalone alarm/CLI blocks are guarded by __name__=='__main__'; runpy's default name does not reset the primary alarm. The five literal reporting scopes and total are present. Delivered output has31232 predicates, matching the four reported subtotals. I did not rerun unchanged helpers or a pipeline.
+
+No correction requested. The independent prior-art memo is accurately cited as a bounded source comparison rather than a complete literature or novelty claim. Source closure is explicit for these pure-Python finite helpers; mathematical dependencies remain conditional sources rather than runtime-oracle inputs.

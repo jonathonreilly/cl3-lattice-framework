@@ -1,0 +1,1 @@
+Original error: absolute hole basis incorrectly included a D-dependent factor. D-preserving operator checks cannot detect a constant sector phase. Correct s0 is derived by rightmost-first Fock action; b_D is optional and separate. Also, without no-double neutral Gauss matter is not unique. Neither boundary is a universal physical no-go.

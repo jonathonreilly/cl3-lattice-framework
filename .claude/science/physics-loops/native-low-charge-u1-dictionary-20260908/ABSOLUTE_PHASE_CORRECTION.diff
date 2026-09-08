@@ -1,0 +1,40 @@
+--- original incorrect absolute-basis prose
++++ corrected reviewed proof
+@@ -34,12 +34,12 @@
+ 
+ where d(x) is its source-defined quadratic native phase. Set h_v†=c_v, h_v=c_v† and use the filled electron state |F> as the hole vacuum. For an increasing list I of hole sites define |I>_h=product_{v in I increasing} c_v |F>. Relative to the ordinary electron occupation basis,
+ 
+-    |I>_h = s(I)|n_c>,
+-    s(I)=(-1)^(sum_{v in I}v-|I|(|I|-1)/2).
++    |I>_h = s0(I)|n_c>,
++    s0(I)=(-1)^(sum_{v in I}v).
+ 
+-The finite ordered product acts rightmost first. Map this hole basis to the species basis by replacing each occupied hole site v with the unique species sign Q_v, retaining site-major order. Therefore an explicit unitary onto the constrained enlarged space is
++The finite ordered product acts rightmost first: each removed larger index leaves the lower occupied indices intact, so its annihilation sign is (-1)^v. Map this hole basis to the species basis by replacing each occupied hole site v with the unique species sign Q_v, retaining site-major order. One may additionally choose an arbitrary constant phase on each D block. To preserve the originally tested map, choose b_D=(-1)^{D(D-1)/2}. This is an optional block phase, not the hole-basis identity. Therefore an explicit unitary onto the constrained enlarged space is
+ 
+-    mathcal W|x> = d(x)s(I(x)) |{n_{v,+}=1_{Q_v=+1},
++    mathcal W|x> = d(x)s0(I(x))b_D |{n_{v,+}=1_{Q_v=+1},
+                                      n_{v,-}=1_{Q_v=-1}}> tensor |x>.
+ 
+ This is an all-D formula. It does not use the exceptional D2 charge-first ordering and does not erase same-species fermionic exchange signs. Diagonal identities include physical Z_e=-2E_e, Q_v=rho_v, D=sum rho_v²=N++N-, B_v=2rho_v²-1 and original native number N_c=|V|-D.
+@@ -55,7 +55,7 @@
+ 
+     mathcal W (P_low T_e P_low) mathcal W† = K_e.
+ 
+-Proof: the source W gives electron hopping (c_i†c_j+c_j†c_i)X_e. Electron-to-hole conversion gives c_i†c_j=-h_j†h_i for i!=j. A legal low-charge hop moves one hole from charged source to neutral target and preserves its signed Q. On no-double site-major states, the f-species hopping sign is exactly the one-hole CAR sign: every intervening occupied site contributes one fermion, independent of species; the unused species slot at each endpoint is empty. Thus the bilinear replaces h_j†h_i with f†_{j,s}f_{i,s} without a new sign. Moving charge s from black to white changes E by -s, selecting L^- for positive and L^+ for negative. The reverse is the Hermitian adjoint. This proves every nonzero column and support refusal; both charged endpoints or a doubly occupied target are excluded by fermion/no-double support and Gauss. Phases are retained in d*s and in ordinary species CAR.
++Proof: the source W gives electron hopping (c_i†c_j+c_j†c_i)X_e. Electron-to-hole conversion gives c_i†c_j=-h_j†h_i for i!=j. A legal low-charge hop moves one hole from charged source to neutral target and preserves its signed Q. On no-double site-major states, the f-species hopping sign is exactly the one-hole CAR sign: every intervening occupied site contributes one fermion, independent of species; the unused species slot at each endpoint is empty. Thus the bilinear replaces h_j†h_i with f†_{j,s}f_{i,s} without a new sign. Moving charge s from black to white changes E by -s, selecting L^- for positive and L^+ for negative. The reverse is the Hermitian adjoint. This proves every nonzero column and support refusal; both charged endpoints or a doubly occupied target are excluded by fermion/no-double support and Gauss. Phases are retained in d*s0*b_D and in ordinary species CAR. The optional b_D cancels because every listed hop and gated ring preserves D.
+ 
+ Unprojected f operators obey CAR on the enlarged Fock space. Their projections into no-double or Gauss space do not themselves obey full CAR and are not claimed to. K_e is an even projected bilinear with local endpoint no-double factors; a global projector notation can be replaced by endpoint factors on the restricted domain. This does not imply a fine-lattice admissible native circuit for the redundant representation.
+ 
+@@ -73,6 +73,10 @@
+ 
+ ## Finite controls and boundaries
+ 
+-The preregistered checker independently computes direct native Pauli-string phases and compares them to the proposed species-CAR/link-ladder operator with the full d*s map. It checks24 actual L4 configurations across D=0,2,4,6,8,10,12,14,16,64, including the delivered globally supported same-sign exchange witness;256 allowed hop columns and2348 alternating ring columns agree exactly. A missing electron-to-hole minus fails all256 hop comparisons. An independent complete six-site three-label enumeration checks4860 species hopping columns against single-hole CAR signs. These are selected physical columns, not a full L4 census or proof by enumeration. The general basis and operator argument supplies the all-sector statement.
++The preregistered checker independently computes direct native Pauli-string phases and compares them to the proposed species-CAR/link-ladder operator with the full d*s0*b_D map. It checks24 actual L4 configurations across D=0,2,4,6,8,10,12,14,16,64, including the delivered globally supported same-sign exchange witness;256 allowed hop columns and2348 alternating ring columns agree exactly. A missing electron-to-hole minus fails all256 hop comparisons. An independent complete six-site three-label enumeration checks4860 species hopping columns against single-hole CAR signs. These are selected physical columns, not a full L4 census or proof by enumeration. The general basis and operator argument supplies the all-sector statement.
+ 
+ No new stochastic production, physical preparation, occurrence law, local schedule or coupling selection is supplied. Existing low-charge/projector, graph placement, ordinary composition and Hamiltonian use remain conditional premises. Exact state encoding is not an implementation of arbitrary classical injection: it is a specified unitary between the source physical subspace and a redundant constrained basis, with its intertwining algebra proved above.
++
++## Preserved absolute-phase correction
++
++Root independent review found that the original prose incorrectly assigned the D-dependent block factor to the increasing-order hole-basis identity. The earlier bytes are preserved. The correct identity is s0=(-1)^sumI; for I={0,1}, c0c1|11>=-|00>. The tested operator map is unchanged by explicitly retaining its extra b_D as an optional sector phase. Original hop/ring controls could not detect this absolute-basis error because they preserve D. A separate direct hole-vacuum control now tests all subsets for one through eight modes. No off-diagonal-in-D operator identity is claimed from the old controls.
