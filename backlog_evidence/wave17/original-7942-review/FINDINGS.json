@@ -1,0 +1,217 @@
+[
+  {
+    "id": "F1",
+    "severity": "P2",
+    "title": "Required compiler/engine errors produce successful full-unit caches",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 289
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1074
+      }
+    ],
+    "evidence": [
+      "FAILURE_CONTROLS.json"
+    ],
+    "minimal_fix": "Make required missing/failed/invalid/timed-out execution fail closed; preserve partial outputs and historical caches.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  },
+  {
+    "id": "F2",
+    "severity": "P2",
+    "title": "Complete Gauss and run-wide invariant claims exceed actual checks",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 124
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 775
+      }
+    ],
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json",
+      "ENGINE_CONTROLS.json"
+    ],
+    "minimal_fix": "Check all states and actual C Gauss equations, cumulative warmup/production/terminal invariants, positive counts and real violation rejection.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  },
+  {
+    "id": "F3",
+    "severity": "P2",
+    "title": "Equal-time normalization cannot certify the time map",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 174
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1159
+      }
+    ],
+    "evidence": [
+      "ENGINE_CONTROLS.json"
+    ],
+    "minimal_fix": "Narrow to the equal-time identity or provide an independent positive-lag control that rejects the actual collapse mutant.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  },
+  {
+    "id": "F4",
+    "severity": "P2",
+    "title": "Winding classes, components and observable rates are conflated",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 122
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 853
+      }
+    ],
+    "evidence": [
+      "SPECTRAL_CONTROLS.json",
+      "ALL_COMPONENT_SPECTRA.json",
+      "CONTEXT_CONTROLS.json"
+    ],
+    "minimal_fix": "Distinguish125windingclasses from937components; verify actual first-level winding and condition rates on observable/ensemble/temperature.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  },
+  {
+    "id": "F5",
+    "severity": "P2",
+    "title": "Parity index does not establish weighted dominance or exclusive cause",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 150
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 932
+      }
+    ],
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json"
+    ],
+    "minimal_fix": "Retain rank10and the failed seeded sampler witness; narrow weighted dominance, equilibration and code-correctness claims.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  },
+  {
+    "id": "F6",
+    "severity": "P2",
+    "title": "Cube selection and timing do not prove sampler necessity or phase cost",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 187
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1185
+      }
+    ],
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json",
+      "ADDITIONAL_CONTROLS.json"
+    ],
+    "minimal_fix": "Retain geometric factor as such; require actual legality/proposal scope; leave unwritten algorithm/mixing/phase cost open.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  },
+  {
+    "id": "F7",
+    "severity": "P2",
+    "title": "Fixed-Z records do not determine off-diagonal expectations",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 85
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 8
+      }
+    ],
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json",
+      "ADDITIONAL_CONTROLS.json"
+    ],
+    "minimal_fix": "Keep supplied mathematical model; declare off-diagonal measurement and physical Record bridge open.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  },
+  {
+    "id": "F8",
+    "severity": "P2",
+    "title": "L20value is promoted to an infinite-size limit",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 168
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 991
+      }
+    ],
+    "evidence": [
+      "CONTEXT_CONTROLS.json"
+    ],
+    "minimal_fix": "Quote .6035607as L20finite value; retain L8result; distinguish total energy from density.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  },
+  {
+    "id": "F9",
+    "severity": "P2",
+    "title": "Cache does not bind source note/current quoted premise",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 321
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 70
+      }
+    ],
+    "evidence": [
+      "CONTEXT_CONTROLS.json"
+    ],
+    "minimal_fix": "Bind actual canonical note and used current inputs before final execution; verify real consumers and reject source/input drift.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  },
+  {
+    "id": "F10",
+    "severity": "P2",
+    "title": "Negative-claim scope packet and audit trace are not current",
+    "locations": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 41
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1230
+      }
+    ],
+    "evidence": [
+      "PROOF_REVIEW.md"
+    ],
+    "minimal_fix": "Honest N1-N8/N5 scope record; no invented wall/family count; scope declaration is not an exact test; audit stays deferred.",
+    "status": "open_original_source",
+    "scope": "independent original review; no author implementation"
+  }
+]
