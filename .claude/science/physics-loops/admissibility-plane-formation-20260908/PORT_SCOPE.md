@@ -1,0 +1,1 @@
+Fresh base8257bddfc9. Staging only; root owns commits/publication. No pipeline, strict lint, changed-evidence, graph or authority modifications. Original163-check scientific calculation retained; wrapper adds CLI, source hashes and resource enforcement. Historical handoff four-law statement already corrected on main; no duplicate repair claim.
