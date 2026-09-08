@@ -1,0 +1,7 @@
+# Portable flux robustness controls
+
+Primary and two helper scripts are ported. Original helper bytes and minimal output-only diffs are preserved. The geometry helper runs91395 exact predicates; the independent run/reflection combinatorics helper runs14218. Primary adds one fixed-coverage and one resource predicate, totaling105615. These are finite geometry/combinatorial controls, not numerical verification of the reflection energy theorem or Fourier asymptotic.
+
+One actual isolated closure copied only primary plus six declared inputs: canonical note, three upstream notes and two helpers. Python-I-OO ran successfully with standard-library dependencies only; exact scientific helper payloads match staging, excluding elapsed timing. The isolated output was copied to the canonical output path; the runner was not separately rerun in the worktree. Source and input hashes bind that actual result. Full stdout/stderr and seven-file membership are retained.
+
+Strict unknown CLI input exits2. An actual canonical isolated helper mutation removes the seam correction and fails the canonical real-hopping winding predicate. This runner reports current input hashes rather than imposing a stale hash gate, so the mutant reaches mathematics with the changed helper; altered bytes/hash and logs are retained. No graph, commit or publication was performed. Root owns the canonical note and its analytical review.

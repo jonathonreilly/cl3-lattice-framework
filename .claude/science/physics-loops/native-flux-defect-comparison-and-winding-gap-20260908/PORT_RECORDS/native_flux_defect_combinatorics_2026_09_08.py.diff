@@ -1,0 +1,8 @@
+--- /private/tmp/toe-24h-probes-20260908/native-3d-chessboard-cold-review/check.py
++++ native_flux_defect_combinatorics_2026_09_08.py
+@@ -25,4 +25,4 @@
+  for s,b in product(range(n),repeat=2):
+   image=(2*s-1-b)%n;ck(image%2==1-b%2)
+ result=dict(predicates=checks,seconds=time.monotonic()-start,scope='finite run-extension/empirical-count/twist controls; no energy computation')
+-Path(__file__).with_name('RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(result)
++if __name__=='__main__':print(json.dumps(result,indent=2))

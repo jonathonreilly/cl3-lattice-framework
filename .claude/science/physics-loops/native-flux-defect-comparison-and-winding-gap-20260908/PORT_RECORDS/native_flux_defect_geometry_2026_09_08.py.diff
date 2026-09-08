@@ -1,0 +1,8 @@
+--- /private/tmp/toe-24h-probes-20260908/native-3d-chessboard-dissemination/check.py
++++ native_flux_defect_geometry_2026_09_08.py
+@@ -63,4 +63,4 @@
+    ck(sum(v[a]%2==s[a] and v[b]%2==s[b] for s in verts)==2,'eight-partition multiplicity')
+ ck((-1)**(8//4)!=-1,'seam omission is discriminating at L8')
+ result={'status':'PASS','predicates':count,'seconds':time.monotonic()-start,'classes':len(classes),'rows':rows,'scope':'exact compatible tiling/Bianchi/winding/counting; analytical energy inequality not numerically tested'}
+-print(json.dumps(result,indent=2))
++if __name__=='__main__':print(json.dumps(result,indent=2))
