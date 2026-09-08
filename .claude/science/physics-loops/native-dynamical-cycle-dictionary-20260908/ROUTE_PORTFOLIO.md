@@ -1,0 +1,2 @@
+# Route record
+The fixed-code CAR dictionary did not by itself cover physical electric Z on the full ambient carrier. The selected constructive route enlarges mathematically and imposes all Gauss constraints, then integrates the exact edge-toggle phase. A direct quadratic phase removes the global sign ambiguity. The gated ice and low-charge routes become conditional corollaries. No generic numerical fit or phase inference is used.

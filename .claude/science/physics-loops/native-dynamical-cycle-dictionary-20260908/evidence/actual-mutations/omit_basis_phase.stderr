@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-dynamical-cycle-dictionary-20260908/.claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/actual-mutations/omit_basis_phase.py", line 87, in <module>
+    fixtures.append(build(3,[(0,1),(1,2),(2,0)],[[0,1,2]]))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-dynamical-cycle-dictionary-20260908/.claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/actual-mutations/omit_basis_phase.py", line 50, in build
+    require(phase[x]==(-1j)**x.bit_count()*(-1)**q,'closed-quadratic-phase')
+  File "/private/tmp/toe-native-dynamical-cycle-dictionary-20260908/.claude/science/physics-loops/native-dynamical-cycle-dictionary-20260908/evidence/actual-mutations/omit_basis_phase.py", line 12, in require
+    if not ok: raise RuntimeError(name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: closed-quadratic-phase
