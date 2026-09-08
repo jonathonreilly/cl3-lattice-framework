@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py
+runner_sha256: da6fe79c99dec1fe4501f941c41366b5c55c99c0d1286fd5195f156ef309e382
+input_fingerprint_sha256: 596080d5f798e73a9b648033801a021073b690e196b22a64a8985eb3d951b5ce
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 33.88
+status: ok
+----- stdout -----
+PASS A1 [exact] open 2x2x2 cube, 6 faces of F2 rank 5: exactly 32 of 64 face assignments are consistent sectors, flux counts 0/2/4/6, each realised by a link field of that holonomy
+   A2 cube N=4, g:margin of all-(-1) to the next sector -- -2:0.192 -1:0.344 -0.5:0.408 0:0.456 0.5:0.483 1:0.485 2:0.407 4:0.158 8:0.025
+PASS A2 [numerical, 1e-10] cube N = 4 (70-dim), H(g) = -sum eta_ij (c^dag c + h.c.) + g sum n_i n_j: all-(-1) is the UNIQUE minimiser of all 32 at each g above
+   A3 min poly of E_0 over Z, plain g=2: x**3 - 10*x**2 - 16*x + 48 ; staggered g=0: x**2 - 48
+     deg +: 333414334444 deg -: 555525555555 at g = -8,-4,-2,-1,0,1,2,4,8,16,32,64
+PASS A3 [exact, sympy over Z] the 70x70 integer characteristic polynomials at those twelve g give minimal polynomials of E_0 over Z for both uniform sectors, degrees above
+PASS A4 [exact, CRootOf comparison, no floating point] E_0(-) < E_0(+) strictly at all 12, 0 ties: the ordering is exact over Z, not a tolerance
+   B1 cube N=2, g:minimiser flux class/rank of all-(-1) of 32 -- -2:2/31 -1:2/31 -0.5:2/31 0:2/31 0.5:2/31 1:2/31 2:2/31 4:2/30 8:2/27
+PASS B1 [numerical, 1e-10] the same cube off half filling, N = 2 and N = 6 (28-dim): the minimiser is the two-flux class (3 tied) at every g above, never all-(-1)
+   B2 cube N=2 charpoly factors -- plain -g*x**2 + 8*g + x**3 - 16*x ; staggered x**2 - 12
+PASS B2 [exact, symbolic g] complete N=2 polynomials; minus ground is constant only for g>=0; g=-4 gives -6; pair equalities at 2sqrt3 and -sqrt6
+PASS C1 [exact] open 2x2x3 block, 12 sites, 20 bonds, 11 faces of F2 rank 9: exactly 512 of 2048 assignments are consistent sectors; the N = 6 sector has dimension 924
+   C2 2x2x3 N=6, 512 sectors, g:margin/plain rank/degeneracies -- 0:0.381/500/1/2 0.5:0.401/500/1/2 1:0.401/509/1/2 2:0.311/511/1/2 4:0.0581/511/1/2 8:0.0048/511/1/2 16:0.000491/511/1/2
+PASS C2 [numerical, 1e-9] 2x2x3, N = 6 (924-dim), all 512 sectors: all-(-1) is the UNIQUE minimiser at every g above, non-degenerate, the plain sector 2-fold throughout
+   C3 attractive, g:tied minimisers/flux count/rank of all-(-1) -- -1:1/11/0 -2:1/11/0 -2.3:1/11/0 -2.4:8/8/8
+PASS C3 [numerical, 1e-9] attractive side (above): all-(-1) is still unique at g = -1, -2, -2.3, but at -2.4 an 8-flux class of 8 tied sectors takes over -- flip window -2.4 < g_c < -2.3
+PASS C4 [numerical, 1e-9] the uniform PAIR has no crossing at the fifteen sampled points in [-64,64]: E_0(-) - E_0(+) < 0 at all 15 couplings there, largest -4.53e-05 -- the -2.4 flip is a third sector passing both
+   D1 tori L = 4, 6, 8, 10, 12; e_free/V: -1.0607/-1.2247 -1.0119/-1.1984 -1.0096/-1.1949 -1.0075/-1.1942 -1.0042/-1.1940
+      gap: 2.83/4.90 0.54/3.46 0.63/2.65 0.47/2.14 0.14/1.79 ; A/V: 0.65625/0.62500 0.66427/0.63032 0.66505/0.63101 0.66541/0.63116 0.66592/0.63120
+PASS D1 [numerical, 1e-9] first order in V about the twist-minimised free sea, tori 4^3 ... 12^3, A = sum_bonds (P_ii P_jj - P_ij^2) by Wick (above): A/V is SMALLER in the staggered sector at every L
+   D2 4^3 exact: A(+) = 42 = 21/32/site, A(-) = 40 = 5/8/site, dE_free = -32*sqrt(6) + 48*sqrt(2), g_c = -16*sqrt(6) + 24*sqrt(2)
+PASS D2 [exact, integer certificates + surds] on 4^3 at the optimal twist M^6 - 52 M^4 + 676 M^2 = 1152 I and M^2 = 6 I, so both projectors are polynomials in M with rational squared entries: the values above are exact
+   D3 BZ quadrature M=800: e/V = -1.00241976, -1.19380112; A/V = 0.666263, 0.631237; g_c = -5.4639
+PASS D3 [numerical finite quadrature, no certified remainder] the closed forms P_ij = <cos q_1>_occ and P_ij = +-(h(0) + h(2e_1))/2 with h = (6 + W)^(-1/2) give the estimates above: the first-order polynomial root is attractive
+   D4 4^3 MBPT2 dE(g) = -10.50142 -2.00000 g +0.44685 g^2, roots -3.1015 and 7.5773
+PASS D4 [numerical, caution only] the MBPT2 truncation above has a positive root g = 7.58 predicting a repulsive flip; no same-torus nonperturbative conclusion follows from other open clusters
+   E1 cube N=4, g: m^2 then Neel weight, (+,-) each, against 1/4 and 1 -- 4: 0.2181 0.1999 0.8347 0.7504 | 8: 0.2414 0.2396 0.9545 0.9458 | 16: 0.2478 0.2477 0.9884 0.9878 | 32: 0.2495 0.2494 0.9971 0.9970
+PASS E1 [numerical, 1e-9] finite Neel moments/weights approach classical values but differ between sectors (above): <n_i> = 1/2 on every cube site in both to 5e-14, m^2 and the Neel weight rising together, here and on 2x2x3
+   E2 cube, g: g E_0 (+,-) then g^2 dE -- 64: -5.9995 -6.0061 -0.4216 | 128: -5.9999 -6.0015 -0.2109 | 256: -6.0000 -6.0004 -0.1055
+PASS E2 [numerical finite g samples] the t^2/V exchange is sector-INDEPENDENT (above): g E_0 -> -6 in both sectors, g^2 (E_0(-) - E_0(+)) -> 0
+   E3 cube g^3 dE: 64:-26.9815477888 128:-26.9953982475 256:-26.9988502688 512:-26.9997126114; exponents 2.99926 2.99982 2.99995; Richardson limit -26.9999999999
+PASS E3 [numerical, mpmath 60 digits] the surviving difference is order t^4/V^3 (above): E_0(-) - E_0(+) = -27 t^4/V^3 leading coefficient on the cube, independently certified by the full two-state matrix R4
+   E4 2x2x3 g^3 dE: 16:-12.12629 32:-11.92143 64:-11.86931 128:-11.85622 256:-11.85294
+PASS E4 [numerical finite g samples] 2x2x3 finite samples (above), ending near -11.8529; historical -320/27 guess unproved, only the negative sampled sign is shared
+PASS R4 [exact rational] cube K2=-6I, K3=0, full fourth-order diagonal/tunnelling matrices; ground split -27=-12-15
+   R4 actual fourth-order matrices: +:Matrix([[17/2, 13/2], [13/2, 17/2]]) ; -:Matrix([[-7/2, -43/2], [-43/2, -7/2]])
+PASS R1 [exact] actual edge-star product is identity: only even-N Fock sectors have this carrier interpretation
+SUMMARY: with this interaction present the staggered sector stays the unique many-body ground sector at half filling on both exhaustive clusters at every repulsive coupling tested, the cube fourth-order difference including both diagonal and tunnelling terms; no physical sector-selection law derived.
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

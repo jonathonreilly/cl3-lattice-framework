@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py
+runner_sha256: 7ab9ea5d57fc03ce5a8d7af09b1685a50c04a2fd9347d76550e541f5ba09d5d7
+input_fingerprint_sha256: 53be1a9440ba386259f25337033fc24bc3ed8888b10a278336e91c65fbd6f815
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 3.11
+status: ok
+----- stdout -----
+SOURCE_INPUTS: exact declared note/memo/comparator inputs verified; physical suppliers remain conditional
+PASS A1 [exact] GLUED, single ticks on the L = 8 torus: the glued DIMER is FROZEN -- C_comp and C_rig each admit 0 shifts from 1 class, 0 Fraction-certificate inconsistencies, cage width 0, so D_group = 0 EXACTLY
+PASS A2 [exact] the glued BENT TRIMER is CAGED, not frozen: C_comp gives 4 classes, 8 shifts, 0 coboundary inconsistencies and CoM spread (1/3, 1/3, 0) -- three corners of one FIXED unit square forever, D_group = 0; C_rig gives 0
+PASS A3 [exact] NEIGHBOURHOOD tick KB(r): over 3072 block shifts per group per reach the internal pattern survives EXACTLY, 0 violations in all four censuses, E|dCoM|^2 = 1 and 4, so D_block = D_1 EXACTLY at reach 1 and 4 D_1 at reach 2
+PASS A4 [exact argument, numerical 1e-12] MIXED tick KM(q): a block shift leaves the shape fixed and the K1 increment is the exact coboundary Phi, so it telescopes -- D(q) = q D_1 EXACTLY, the trace-covariance slope matching q to 0.00e+00 in all ten cells
+PASS A5 [exact] REACH decides mobility, not condition strength: the same glue at reach 2 leaves the dimer 2 shifts and 2 coboundary inconsistencies -- a self-loop of nonzero CoM increment, so the cage FAILS; both are LEAPFROGS with trace D = D_1, axis diffusion 1/2, and the trimer stays caged at 2/3
+PASS B1 [exact] BREAKABLE, on the exact 511-state relative chain (6 intact, 505 broken): pi(S) ~ e^{-g B(S)} is EXACTLY stationary, |pi P - pi| <= 2.8e-17, and the intact fraction 6/(6 + 505 e^{-g}) runs 0.0117, 0.3935, 1.0000 at g = 0, 4, 16 (closed form to 7.8e-16)
+PASS B2 [exact] the TRIMER census by translation class: A = 2, 1, 0 give 15, 1500, 41920 classes, 43435 = C(512,3)/512 in all, so the intact fraction 15/(15 + 1500 e^{-g} + 41920 e^{-2g}) runs 0.000345 at g = 0 to 0.999989 at g = 16
+PASS B3 [exact] closed-form LIFETIMES, against absorbing solves to 1.7e-11: 10 of the dimer's 12 proposals are unblocked and every registered one breaks it, so its lifetime is (6/5) e^{g}; the trimer's 18 split 4 null, 2 caged, 8 at dB = 1 and 4 at dB = 2, giving 18/(8 e^{-g} + 4 e^{-2g})
+PASS B4 [exact] D_intact = 0 EXACTLY at EVERY g, both groups, g = 0 included: while intact the dimer has NO admissible single shift at all (0) and the trimer's 8 are exactly the A2 cage (spread 1/3), so the CoM stays bounded -- a bound pair transports ONLY by breaking
+PASS B5 [numerical, 1e-9] the unconditional D_group(g), Markov-additive on the exact chain: 6 D_group = 0.2495, 0.2446, 0.2321, 0.1531, 0.006933, 2.391e-06 at g = 0, 1, 2, 4, 8, 16 -- from 0.998043 to 9.6e-06 of D_free(2) = D_1/4, with large-g asymptotic proportional to e^{-g}, not an exact inverse lifetime at all g
+PASS B8 [exact argument/numerical1e-12] zero conditional lift drift at every relative state; stationary one-step trace and original finite recursion match 6D=127.5exp(-g)/(6+505exp(-g))
+MARTINGALE_ROWS [{"conditional_drift": 0.0, "exact_formula": 0.24951076320939333, "finite_recursion": 0.24951076320928678, "g": 0.0, "one_step_trace": 0.24951076320939333}, {"conditional_drift": 0.0, "exact_formula": 0.2445763088780807, "finite_recursion": 0.244576308878095, "g": 1.0, "one_step_trace": 0.24457630887808057}, {"conditional_drift": 0.0, "exact_formula": 0.23209909067513615, "finite_recursion": 0.23209909067509216, "g": 2.0, "one_step_trace": 0.23209909067513612}, {"conditional_drift": 0.0, "exact_formula": 0.15313680012974756, "finite_recursion": 0.15313680012974373, "g": 4.0, "one_step_trace": 0.15313680012974762}, {"conditional_drift": 0.0, "exact_formula": 0.006932833865105719, "finite_recursion": 0.006932833865105792, "g": 8.0, "one_step_trace": 0.006932833865105724}, {"conditional_drift": 0.0, "exact_formula": 2.391349812611034e-06, "finite_recursion": 2.3913498126111946e-06, "g": 16.0, "one_step_trace": 2.391349812611034e-06}]
+PASS B6 [exact reason, numerical 1e-12] RE-BINDING is certain and the cost does not touch it: the chain is finite and irreducible, so P(re-bind) = 1 at every finite g; once broken every proposal has dB <= 0 and registers with odds 1, so the mean recurrence is exactly 101 = 505/5 ticks at every g (101.000000000, max 204.706)
+PASS B7 [exact boundary] as g -> infinity INTACT starts freeze and stationary weights concentrate there; broken states remain in the 511-state kernel. At g = 0 (FREE) the pair is intact 1.17 % of ticks and the trimer 0.035 %, with D_group = 0.998043 D_free(2), the rest exclusion
+PASS C1 [exact formula] a UNIFORM TILT leaves positive rupture; the intact single-step dimer does not translate. Lifetime is exactly 2 e^{g}(5+e^{h})/(9+e^{h}) aligned and e^{g}(5+e^{h})/(4+e^{h}) transverse (chain agrees to 2.3e-16 over 30 cells), so it stays inside [0.8336, 1.6644] of its zero-field value -- limits 5/6 and 5/3 -- and RISES with h when aligned
+PASS C2 [exact formula] MEAN lifetime versus inverse drift under tilted qKB+(1-q)BR, transverse dimer: single ticks cannot move it intact; the declared mean-time equality is e^{h*} = [4(1-q) + q e^{g}]/[q e^{g} - (1-q)] (bisection to 4.4e-16), falling from 1.363508 at g = 1 to 0.000001 at g = 16 (q = 0.5); h>h* compares means, not a probability-one survival regime
+PASS C3 [exact] a COLLISION on the 16-site ring, 1820 configurations: the cyclic order of the four records survives all 11648 admissible shifts, 0 violations, so P(pass) = 0 EXACTLY at every g; from(0,1,4,5), first A=0 versus first A=3, P(A=0 first) = 0.919, 0.778, 0.54, 0.0977, 0.00161, 5.38e-07 at g = 0, 1, 2, 4, 8, 16; A=3 is a stopping set, not an absorbing state of the original finite-g kernel
+PASS C5 [numerical1e-12] tilted transverse cell q=.5,g=1,h=2 has positive rupture and first crossing before rupture strictly between 0 and 1
+PASS C6 [numerical1e-14] original finite-g ring kernel leaves compact A=3 state at g=4
+STOPPING_BOUNDARY {"crossing_before_rupture": 0.6177573221458358, "g": 1.0, "h": 2.0, "q": 0.5, "ring_compact_escape": 0.004578909722183545, "ring_g": 4, "rupture": 0.1690927686374127}
+PASS C4 [exact] REACH leaves the BREAK RATE alone: a reach-2 single tick breaks a breakable dimer at exactly the reach-1 rate (5/6) e^{-g}, agreeing to 0.0e+00 at all six g, since 10 of 12 proposals still carry dB = +1 -- what a longer reach changes is the cage (A5), not the break
+PASS D1 [exact] the supplied finite Gauss relation, on a redeclared 2x2x2 cube with a fermion and a link record per edge: G_v = (div E)_v - rho_v = 0 at all 8 corners (sea convention) admits 14400 of 2^24 joint record patterns, on 2240 fermion patterns, ALL at N = 4
+PASS D2 [exact] NO SINGLE RECORD CHANGE IS ADMISSIBLE: over 14400 patterns x 12 edges a fermion record alone is admissible in 0 of 172800 cases and a link record alone in 0 of 172800 -- odds exactly 0, since flipping y_e complements n_v at BOTH endpoints and flipping l_e reverses E_e at both
+PASS D3 [exact] the PAIRED change IS admissible -- fermion record and link record on the SAME edge, together: 79872 of 172800, census 768 x 4, 6144 x 5, 6912 x 6, 576 x 8 -- and ALL carry the charge WITH its flux (occupations swap, E_e reverses), 0 violations; 79872 is the oriented HOPPING support count after the specified parent convention map, not full H_g
+PASS D4 [exact] the three levels on ONE object: the FREE fermion sector admits all 49152 single edge-record changes, the ambient N=2 union (not a fixed parity sector) 4608 over 896 patterns (census {4: 384, 6: 512}, recomputed not quoted), the GLUED Gauss sector 0
+PASS D6 [exact] all 14400 states obey actual parent edge permutation PLUS link inversion; all 172800 same-edge memberships equal oriented nonzero hopping support only
+PASS D7 [exact] link-only face-cycle alternative preserves Gauss; full ring-exchange support is not exhausted by the same-edge paired hop census
+PARENT_SUPPORT_MAP {"edge_permutation": [0, 3, 5, 7, 1, 4, 8, 10, 2, 6, 9, 11], "face_witness": [3425, 600, 360], "hopping_cases": 172800, "link_inversion": 4095, "mismatches": 0, "states": 14400}
+PASS D5 [exact] a needed CLARIFICATION: there is no one-charge configuration on the cube -- the Gauss sector is exactly half filled, so all 14400 patterns carry 4 corners at rho_v = +1/2 and 4 at -1/2, total charge 0; 'one charge' is read as one corner at +1/2
+PASS E2 [exact argument/numerical1e-12] declared unbiased qKB+(1-q)BR has 6D=q+(1-q)6D_BR, not glued q; q=.5,g=0 actual two-step trace
+MIXED_BR_TRACE {"actual": 0.6247553816046965, "formula": 0.6247553816046967, "g": 0, "q": 0.5}
+PASS E1 [exact] THE HIERARCHY in one table: GLUED gives D = 0 under single ticks, D = D_1 under its supplied torus block tick, preserving its supplied support; Gauss block motion is uncomputed. BREAKABLE BR gives bounded intact centroid, mean lifetime (6/5) e^{g}, transport only by breaking; FREE gives D_free(2) = D_1/4 (0.998)
+SUMMARY: the declared nearest-neighbour glued dimer/trimer are caged; their supplied block tick has D_1. BR dimer mean lifetime is (6/5)e^g; its long-range transport requires breaks. In the finite Gauss relation no single record change is admissible at all.
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

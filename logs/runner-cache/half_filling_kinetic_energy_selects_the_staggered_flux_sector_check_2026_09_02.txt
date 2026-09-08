@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/half_filling_kinetic_energy_selects_the_staggered_flux_sector_check_2026_09_02.py
+runner_sha256: 5c1f6ced136e15223a5feae933f24471dbb7a89a9baecaea945972991f080180
+input_fingerprint_sha256: 80c2b772b846399e17e236f426a94956866d78493e96138adac783847f849366
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 20.70
+status: ok
+----- stdout -----
+PASS A1 [exact count; numerical spectral constancy] open 2x2x2 cube, 6 faces with one F2 relation: 32 of 64 face assignments are consistent sectors, flux counts [0, 2, 4, 6]; the 4096 link fields realise exactly those 32 patterns, spectrum constant on each (4e-15)
+PASS A2 [exact, sympy] uniform sectors on the cube, exact integer 8x8 matrices: E_N(+1) = 0, -3, -4, -5, -6, -5, -4, -3, 0; E_N(-1) = -N sqrt3 for N <= 4 and its mirror
+   N=0..8 min E_N: 0.000 -3.000 -4.828 -5.878 -6.928 -5.878 -4.828 -3.000 -0.000
+   ties/flux     : 32/all 1/0 3/2 12/4 1/6 12/4 3/2 1/0 32/all
+PASS A3 [numerical margins/ties; analytic uniqueness in note] at N = 4 the all-(-1) sector UNIQUELY minimises all 32: margin 0.456067 to the next value, 4 sqrt3 - 6 = 0.928203 to plain. Minimiser: plain at N = 1, 7; two-flux at N = 2, 6; four-flux at N = 3, 5; all 32 tie at N = 0, 8
+PASS B1 [exact, sympy] torus 4^3: integer minimal-polynomial and trace witnesses fix both spectra. E_32 = -60 (plain) and -24*sqrt(2) - 24 - 8*sqrt(3) (staggered); E_N(-) - E_N(+) = c - 24sqrt2 - 8sqrt3 with c = 48 at N = 16 (+0.2025), 36 at N = 32 (-11.7975), 46 at the first sign change N* = 23 (-1.7975)
+   name     V |  E(+) floor(V/4,V/2,3V/4) |  E(-) same        |  N*
+   T4^3    64 |  -48.0  -60.0  -48.0 |  -47.8  -71.8  -47.8 |  23
+   T4x4x6  96 |  -76.0  -96.0  -76.0 |  -69.4 -112.3  -69.4 |  30
+   T6^3   216 | -168.0 -216.0 -168.0 | -149.5 -258.9 -149.5 |  71
+   T8^3   512 | -400.5 -506.6 -400.5 | -357.4 -609.4 -357.4 | 171
+   B3^3    27 |  -15.6  -21.2  -17.0 |  -13.8  -26.0  -15.8 |  10
+   B4^3    64 |  -42.8  -56.0  -42.8 |  -39.7  -66.0  -39.7 |  22
+PASS B2 [numerical, 1e-9] tori 4^3, 4x4x6, 6^3, 8^3 (Bloch) and open blocks 3^3, 4^3: staggered strictly lower at floor(V/2) on all six, higher at floor(V/4) and floor(3V/4); odd-V entries are not exact fractional fillings; the sector read off S_f matches KS spectrally where formed
+PASS B3 [numerical, 1e-9] sign(E_N(-) - E_N(+)) is + below N*, - on all of [N*, V - N*], + above -- one contiguous window, symmetric under N -> V - N -- with N* = (23, 30, 71, 171, 10, 22) in table order
+PASS C1 [numerical, 1e-9] the S_f fix no Wilson line, so fixed face data leave8 Wilson gauge classes (2^(V-1) fields each). Minimised over8 representatives: -78.384 vs -67.882 (4^3, staggered W=---), -116.809 vs -99.882 (4x4x6), -258.858 vs -218.564 (6^3); staggered at its WORST twist beats plain at its best by 3.92, 10.15, 36.58
+PASS C2 [numerical, 1e-9] the Bloch formulas +-sqrt(6 + 2 sum cos q_a) and 2 sum cos q_a, with a half-integer shift per twisted axis, reproduce all 48 twisted real-space spectra of the three tori, max deviation 2.7e-14
+PASS D1 [exact, integer] the 4^3 torus is bipartite (colour (-1)^{|v|}), every degree 6, so ANY link-sign field has tr M^2 = 2|E| = 6V = 384 and D M D = -M, a spectrum symmetric about 0 -- zero-tolerance integer identities on 52 fields
+PASS D2 [exact] the V/2 lowest levels are minus the V/2 highest, so their squares sum to (1/2) tr M^2 = 3V = 192 and Cauchy-Schwarz gives E_{V/2} >= -V sqrt(3/2) = -32 sqrt6 = -78.383672 on 4^3, equality iff every |lambda| = sqrt6
+PASS D3 [exact, integer] the all-(-1) sector at its optimal twist has M^2 = 6 I EXACTLY (64x64 integer identity), spectrum +-sqrt6 x32 each, so E_32 = -32 sqrt6 = -78.383672 attains the bound: a GLOBAL minimiser over all 2^192 link-sign fields
+PASS D4 [numerical, 1e-9] elsewhere the spectrum is not flat and the bound is missed: -117.58 vs -116.81 on 4x4x6 (gap 0.766), -264.54 vs -258.86 on 6^3 (gap 5.687), -627.07 vs -611.81 on 8^3 (gap 15.26)
+PASS E1 [numerical, 1e-9] 2000 random link fields per torus: E_{V/2} min/med/max as drawn -69.5/-67.6/-66.0 (4^3), -103.7/-101.4/-99.2 (4x4x6), and -69.5/-68.0/-66.7, -103.7/-101.8/-99.9 over 500-field Wilson-minimised subsamples; 0 of 2500 beats all-(-1)
+PASS E2 [numerical, 1e-9] structured sectors -- flux only on xy, xz or yz plaquettes, xy on alternating x planes, xz+yz -- are consistent and all above all-(-1); even-parity-face flux, alternating xz+yz and a one-face flip are inconsistent
+PASS E3 [numerical, 1e-9] greedy single-link descent, 24 random restarts per torus, never beats the Wilson-minimised all-(-1) field: best -78.384 on 4^3, that field's energy within tolerance (3 of 24 reach that energy); best -116.134 on 4x4x6, above -116.809
+PASS E4 [numerical, 1e-9] the all-(-1) field at its optimal twist is a strict local minimum of E_{V/2}: all 192 and all 288 single-link flips raise it, by at least 0.426844 (4^3) and 0.365352 (4x4x6)
+   L=4..96 e(+)1/2: -0.93750 -0.98937 -1.00075 -1.00217 -1.00238 -1.00240
+           e(-)1/2: -1.12184 -1.19015 -1.19359 -1.19379 -1.19380 -1.19380
+PASS F1 [numerical, 1e-9] exact Bloch formulas at L = 4..96 (above): at half filling staggered is lower at every listed L, with L=96 e(-) = -1.19380096 vs e(+) = -1.00240220; at quarter filling higher at every L, by +0.07909 per site
+PASS F2 [numerical finite quadrature; no certified error] the BZ integrals of |2 sum cos q| and sqrt(6 + 2 sum cos q) on reduced grids M = 600, 1200, 2400 estimate e(+) = -1.00241973, e(-) = -1.19380112 at half filling; difference -0.19138139 |t| per site
+PASS R3 [finite interpolation] displayed L=96 crossing solves its actual two-point equation; no limit-error certificate
+   discrete first-negative N*/V by L: 4:0.3594 8:0.3340 32:0.3394 96:0.3397
+PASS F3 [finite L=96 interpolation, no limit accuracy] crossing n* is 0.339659 (above), the window ending at the mirror 1 - n* = 0.660341; no universal one-third threshold follows
+SUMMARY: for the declared free Hamiltonian, all-(-1) has lower supplied half-filled energy on tested even graphs; odd-N entries are abstract Fock data; no physical selection law or limiting crossing is derived.
+PASS R1 [exact] product of actual edge stars is identity; fixed-loop cube code128 equals even Fock128, not full256
+PASS R2 [exact] actual spanning-tree minus field is diagonally sign-gauge conjugate to KS
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+
