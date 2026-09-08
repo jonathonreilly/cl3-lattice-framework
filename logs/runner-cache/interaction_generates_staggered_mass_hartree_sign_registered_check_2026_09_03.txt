@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py
+runner_sha256: 3c21b773f6f6334ee0beca676695e89555a1357cda66c4a65e19d5fb83d9adf5
+input_fingerprint_sha256: 5951c35552969c5677b77dae0e0172edd3b6f7d63f71bb98263b41316813c53a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 9.00
+status: ok
+----- stdout -----
+PASS A1 [exact] torus 4^3, z = 6: sum_{j~i}<n_j> = z(1/2 - eps_i O), so the supplied Hartree ansatz gives exactly H_MF = H_0 + m* sum eps_v n_v + const, m* = -zVO: the locally declared mass operator, the const even in O (0.0e+00)
+PASS A2 [1e-9] antiperiodic 8^3: the locally rederived response O(m) = -(m/2)c(m), c(m) = [(M^2+m^2)^-1/2]_vv, holds at m = 0.3 (-0.066175285) and 1.0 (-0.200251524), residual 5.6e-17
+PASS A3 [1e-12] closed 1-D form: <e^{-s(6+2 sum cos q_a)}>_BZ = (e^{-2s}I_0(2s))^3 on a 64^3 grid at s = 0.1, 0.5, 2 (3.3e-16), so c(m) = (1/sqrt pi) int ds s^-1/2 e^{-s m^2}(e^{-2s}I_0(2s))^3
+PASS A4 [numerical] bulk c_inf(0) = 0.455344052, chi = c(0)/2 = 0.227672 vs historical 0.227671, V_c^MF = 2/(z c(0)) = 0.732047 t [mean field]; L = 8, 12, 16 give 0.747072, 0.738124, 0.735366, from above
+PASS A5 [1e-9] the gap equation 1 = (zV/2)c(m*) and the self-consistency m* = -zVO(m*) close on a nonzero minimizing branch; zero also solves the undivided equation. Checks at V = 0.8, 1, 2, 4 t (1.8e-15); below V_c^MF only m* = 0
+PASS B1 [numerical] bulk integral diagnostic (asymptotic proof is in the note): c(0)-c(m) ~ A m^2 ln(1/m) + B m^2: (c0-c(m))/(m^2 ln(1/m)) = 0.0399, 0.0444, 0.0501 at m = 0.02, 0.05, 0.1
+PASS B2 [numerical] bulk finite-difference slopes: beta_eff = dln m*/dln(V-V_c) drifts 0.5991 -> 0.5378 over (V-V_c) 1e-1 -> 1e-5 [mean field]: beta = 1/2 with a logarithm, not 1
+PASS B3 [numerical] at V = 2, 4, 6 t the Hartree state approaches the classical checkerboard, not exactly: m*/3V = 0.915, 0.979, 0.991; 2m* = 10.98, 23.50, 35.67 t above the bandwidth 6.928; xi = 0.58, 0.40, 0.35, below one spacing
+PASS B4 [numerical] illustrative bulk small-mass samples above 0.732, no exclusive window: m* = 0.365, 0.802, 1.397, 1.877 and xi = 5.51, 2.56, 1.54, 1.19 at V = 0.75, 0.8, 0.9, 1 t
+  Bulk Hartree functional roots, distinct from finite antiperiodic tests (not a physical transition):
+     V    m*(inf)     2m*    O=-m*c/2    xi
+   0.732  0.000000  0.000000  0.000000      inf
+   0.800  0.802440  1.604881 -0.167175   2.5564
+   1.000  1.876516  3.753032 -0.312753   1.1947
+   2.000  5.488652 10.977303 -0.457388   0.5766
+PASS C1 [exact] cube 2x2x2 open (degree 3, dim 70) and slab 2x2x4 periodic z (degree 4, dim 12870), every face flux -1: C^2 = I, [C,H_0] = 0, d(~b)-d(b) = 0 on all basis states (0.0e+00); free E_0(cube) = -6.928203 = -4 sqrt3
+PASS C2 [1e-9] on BOTH clusters at every tested V the lowest excitation has opposite C parity: gap = Delta_C to 1.2e-14, ground state C-even; Delta_C falls to 7.8163e-02 (cube) and 9.5445e-05 (slab) by V = 8 t
+  exact clusters, C-resolved; O = (1/N) sum eps_v (n_v - 1/2), S = <O^2>:
+     V  E0(cube) Delta_C(c)  S(cube)  E0(slab) Delta_C(s)  S(slab)
+    0.0 -6.928203 3.4641e+00 0.062500 -15.454813 2.8284e+00 0.031250
+    2.0 -3.538207 1.5382e+00 0.123521 -5.526154 4.3541e-01 0.138291
+    4.0 -1.776766 4.8526e-01 0.199939 -2.669957 9.7748e-03 0.225239
+    8.0 -0.795961 7.8163e-02 0.239558 -1.333152 9.5445e-05 0.243913
+PASS C3 [1e-12] the free half-filled sea's staggered fluctuation is shot noise: at V = 0 both clusters give S = 1/(2N) exactly (1/16, 1/32) and odds over O of Binomial(N/2, 1/2) exactly (1.7e-16)
+PASS C4 [numerical] the odds over O go bimodal: cube at V = 8 t, 0.4729 + 0.4729 on O = -1/2 and +1/2 against 0.0043 on O = 0; the two staggered patterns carry 0.945751 of the weight
+PASS C5 [numerical, h = 1e-4 t] the central difference for chi is size-flat at V = 0 (0.28868 -> 0.27884) and explodes with size once V grows: 6.52 -> 717.3 at V = 4, 48.64 -> 4920.8 at V = 8 t (cube -> slab), the last already saturation
+PASS C6 [numerical] the S-doubling crossover FALLS with size: V* = 2.03411 t (cube, N = 8) -> 1.14065 t (slab, N = 16)
+PASS C7 [numerical] S(V=0) = 1/(2N); two differently coordinated shapes have a crossing V_x = 1.76598 t against V_c^MF = 0.732047 t, 2.41x. No critical estimate or mean-field error factor
+PASS D1 [1e-9] +-m* are EXACTLY degenerate at Hartree level: E_MF(+m*) - E_MF(-m*) = 4.5e-13, 0.0e+00, 0.0e+00 at V = 2, 4, 6 t on the antiperiodic 8^3, O(+m*) = -O(-m*); the functional holds O only through O^2
+PASS D2 [1e-9] in every finite cluster <O> = 0 at h = 0 while <O^2> is large: <O> = -1.5e-16 / 5.3e-13 against <O^2> = 0.1999 / 0.2252 (cube / slab, V = 4 t); C-even ground state, not an exact two-configuration cat
+PASS D3 [numerical] a SUPPLIED field h sum_v eps_v n_v gives a finite-field response, not a singular limit: slab at V = 8 t, h = -+0.001 t saturates <O> at +0.492970 / -0.492970, while <O>|_{h=0} = 0
+PASS D4 [exact] O is the Fock staggered occupation, weighted by supplied eps_v; joint Born readout, 5 and 9 readable values, C: O -> -O entry by entry (0.0e+00); Q is identically 0 here
+PASS D5 [exact] the law holds only t and V, both eps-EVEN: C H(t,V) C^-1 = H(t,V) exactly at V = 1, 3 t on both clusters while C H_m C^-1 = -H_m (0.0e+00), so the Hamiltonian is even; no physical sign selection or permanent Record follows
+PASS E1 [exact] the OPEN 2x2x4 has degrees [3, 4], so d(~b)-d(b) is not constant (9 values) and V breaks C there (C H C^-1 - H = 4.0 at V = 1 t): no C-odd gap is definable, so periodic z is used
+PASS E2 [1e-10] the PERIODIC 8^3 torus carries 8 exact zero modes (parent note T3), so c(0) diverges and V_c^MF = 0, an artefact; the ANTIPERIODIC sector, min|E| = 1.325654 at L = 8, is used for finite response/energy; bulk integral results are separate
+PASS R1 [1e-8] actual below-gap slab fields tend toward zero, with opposite signs and converged eigenpairs
+PASS R2 [1e-9] actual cube Cg=g, first excitation C-odd/orthogonal, and two-string weight is below one
+PASS R3 [numerical] bulk and finite thresholds differ; zero remains an undivided stationary root
+PASS R4 [numerical] original finite strong-coupling ratios remain strictly below classical saturation; xi is one-body
+PASS R5 [exact] same site means do not fix joint O law; diagonal interaction does not make the full hopping law Record-preserving
+CORRECTION_DATA: [(1e-07, -0.008146900091394488, 8.213322505075143e-14), (1e-09, -8.148013179073987e-05, 3.082621304290776e-14), (-1e-09, 8.148014011619131e-05, 3.208882805417144e-14)] Cground_error 5.847698602912741e-16 first_C_overlap 2.220446049250313e-16 two_string_weight 0.9457509493983371 joint_O2 ['0', '1/4']
+SUMMARY: supplied bulk Hartree minimization, finite Fock spectra and joint Born readout are distinct; fixed finite h->0 gives zero. No physical sign registration or critical point is proved.
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

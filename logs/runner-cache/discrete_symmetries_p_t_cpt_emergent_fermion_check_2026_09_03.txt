@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py
+runner_sha256: fd53bf2252114fdd51f1895448924a5852cc1a1ac98d91a2346e7982a028a41d
+input_fingerprint_sha256: 70e4691ce978c51f6ea3841c819143b6655c781ee305485755783b612100d913
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 1.90
+status: ok
+----- stdout -----
+H(t,m) = -t sum eta_ij T_ij - (m/2) sum eps_v B_v, open 2x2x2 cube and 4^3 torus. The Lattice axiom names PROPER rotations only: every P-line is CONDITIONAL.
+PASS A1 [exact] 4 of the 10 point maps are automorphisms of the open cube and all 10 of the torus; each PERMUTES the code qubits
+PASS A2 [exact] inversion shifts the direction order -x<-y<-z<+x<+y<+z by three, so V_P leaves a PURE Z factor on all 192 torus bonds
+PASS A3 [exact] a Z-Pauli only SIGNS A_e, so no Z product repairs it; the factor is the 3 +edges above and the 3 -edges below the image edge (degree [6])
+PASS A4 [exact] that adjacency is SYMMETRIC and LOOP-FREE for every map, so the diagonal Clifford D_CZ = prod CZ_ef is legal
+PASS A5 [exact] U_P = G_g D_CZ V_P gives U_P A_ij U_P^-1 = sigma_ij A_{P(i)P(j)} with sigma_ij = eta_ij eta_{P(i)P(j)} on every bond
+PASS A6 [exact] the Z-mask of G_g is a CUT, prod_{v in S} B_v with |S| = 32: a Z2 gauge factor, DIAGONAL in the record basis
+PASS A7 [exact] U_P B_v U_P^-1 = +B_{P(v)}, no sign ever (Q -> +Q), and U_P S_f U_P^-1 = +S_{P(f)}: legal in the pi-flux code space
+PASS A8 [exact] U_P J_ij U_P^-1 = o_ij J_{P(i)P(j)}: the inversions reverse all 192 bonds, the x-mirrors only 64 -- J is POLAR
+PASS B1 [exact] CORNER inversion: sigma = +1 on all 192 bonds; the cube centre -1 on 64 and the x=1/2 mirror on 128
+PASS B2 [exact] corner inversion carries eta to ITSELF bond by bond, 0 of 192 differing; the odd-shift maps differ on 64 and 128
+PASS B3 [exact] U_P H_hop U_P^-1 = H_hop EXACTLY for every map on both geometries
+PASS B4 [exact] eps_{P(v)} = (-1)^{sum c} eps_v at every corner: the rule depends only on the SHIFT parity
+PASS B5 [exact] so H(t,m) is EXACTLY P-symmetric at every t and m about a corner, and only with m -> -m about a cube centre
+PASS C1 [exact] every A_ij is REAL, so K A_ij K = +A_ij and K H_hop K = -H_hop: bare conjugation is an ANTI-symmetry of the hop
+PASS C2 [exact] Z_E = prod_e Z_e = prod over the corners with eps_v = -1 of B_v: bipartite, so every edge is covered once
+PASS C3 [exact] Z_E is the UNIQUE pure-Z choice: A_ij has X-support exactly its own edge and the bond-to-edge map is onto
+PASS C4 [exact] T = Z_E K: A_ij -> -A_ij, B_v -> +B_v (records T-EVEN), T_ij -> +T_ij, S_f -> +S_f -- the code space is T-invariant
+PASS C5 [exact] T H(t,m) T^-1 = H(t,m) for EVERY t and EVERY m: time reversal is exact at every mass, with no m -> -m
+PASS C6 [exact] T J_ij T^-1 = -J_ij on every bond (the current is T-ODD) and T Q T^-1 = +Q
+PASS C7 [1e-12] Z_E is a real diagonal involution (T^2 = +I); the 4096-dim space's code projector is real of rank 128 and commutes with it; T H T^-1 = H (0e+00)
+PASS D1 [1e-12] the 4^3 one-particle operator is real symmetric with {h_0, Eps} = 0 (0.0e+00) and EXACTLY 8 zero modes gapped to exactly 2m (6e-15)
+PASS D2 [1e-12] the cell basis psi_s(v) = (-1)^{sum(v div 2)} delta_{v mod 2, s} is an orthonormal REAL kernel basis and the q = (pi,pi,pi) block (1e-16)
+PASS D3 [1e-12] the chirality X = -(Y x X x Y) has spectrum {+1 x4, -1 x4}: 2 right- and 2 left-handed doublets; the mass eps = Z1 Z2 Z3 ANTIcommutes (1e-16)
+PASS D4 [1e-12] one-particle: U h_0 U^T = h_0 and U Eps U^T = (-1)^{sum c} Eps (0.0e+00); 0 flipped corners at a corner, 32 at a cube centre
+PASS D5 [1e-12] CORNER inversion IS the staggered-mass matrix eps = Z1 Z2 Z3 (1.1e-16): the emergent gamma^0, ANTIcommuting with the chirality
+PASS D6 [1e-12] spectral BDI at m=0 only: T = K with T^2 = +1, C = Eps.K with C^2 = +1, chiral S = CT = Eps; no Kramers sign from T alone
+PASS D7 [1e-10] CPT from corner inversion is +1 times the IDENTITY on the Dirac point (2.2e-16); no other of the four listed improper restrictions gives a scalar
+PASS D8 [1e-10] half-cell negative squares (all m), with Hamiltonian domains checked separately: (PT)^2 = -1 (cube centre), (CP)^2 = -1 (x=1/2), +1/+1 at a corner
+TABLE, 4^3 torus. Pcor/Pcen = corner/cube-centre inversion, Ref = the x=1/2 mid-plane; CP, PT, CPT use Pcor; e.e' = sigma_ij = eta_ij eta_{P(i)P(j)}; -m = m -> -m.
+       C    Pcor Pcen Ref  T    CP   CT   PT   CPT
+B_v    -1   +1   +1   +1   +1   -1   -1   +1   -1
+n_v    1-nP n_P  n_P  n_P  n_P  1-nP 1-nP n_P  1-nP
+A_ij   -1   +1   e.e' e.e' -1   -1   +1   -1   +1
+S_f    +1   +1   +1   +1   +1   +1   +1   +1   +1
+T_ij   +1   +1   e.e' e.e' +1   +1   +1   +1   +1
+H_hop  +1   +1   +1   +1   +1   +1   +1   +1   +1
+H_m    -1   +1   -1   -1   +1   -1   -1   +1   -1
+H(t,m) -m   inv  -m   -m   inv  -m   -m   inv  -m
+J_ij   -1   +1   e.e' e.e' -1   -1   +1   -1   +1
+Q      -1   +1   +1   +1   +1   -1   -1   +1   -1
+eps_v  +1   +1   -1   -1   +1   +1   +1   +1   +1
+PASS E1 [exact] every entry is a sign on the SAME operator at the image index; B_v, S_f, H_hop, H_m, Q and eps_v are uniform in every column
+PASS E2 [exact] the odd-shift columns Pcen, Ref carry sigma_ij = eta_ij eta_{P(i)P(j)} on A_ij, T_ij and J_ij, at -1 on 64 of 192 bonds and on 128
+PASS E3 [exact] H(t,m) is INVARIANT under Pcor, T and PT and goes to H(t,-m) under C, Pcen, Ref, CP, CT and CPT; mass-flipping maps are not fixed-m symmetries
+PASS E4 [exact] S_f -> +S_f in every column: each operation carries the code space to itself with no sign; the encoding obstructs none
+PASS E5 [exact] B_v, Q and H_m are pure Z, so record-diagonal, carrying the table's signs; A_ij, S_f, T_ij, J_ij have zero fixed-Z diagonal; this supplies no off-diagonal measurement
+PASS R1 [1e-10] negative-m gaps are 2|m|; spectral particle-hole at fixed m fails by 2|m|
+PASS R2 [1e-12] cube-centre PT commutes only at m0; x-half C_spec P anticommutes all tested m; both square -I
+PASS R3 [1e-12] identical complete Z laws have opposite X expectations; fixed-Z correlations do not determine X
+PASS R4 [exact] unitary many-body C times either odd-shift parity preserves both hop and mass
+DOMAIN_DATA: [(0.0, 0.0, 0.0), (0.0, 0.0, 1.4)] [('cube-centre PT', 0.0, 0.0, 0.0, 2.0), ('cube-centre PT', 0.7, 0.0, 1.4, 2.0), ('x-half C_spec P', 0.0, 0.0, 2.0, 0.0), ('x-half C_spec P', 0.7, 0.0, 2.0, 0.0)] scalar choices ['corner inversion']
+SUMMARY: conditional finite corner P and encoded T preserve all masses; specified spectral BDI is massless; many-body CPT flips m. Fixed-Z diagonality does not supply physical Records.
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+
