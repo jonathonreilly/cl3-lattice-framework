@@ -1,0 +1,97 @@
+===== runner cache v1 =====
+runner: scripts/role_pattern_next_nearest_neighbour_rule_roles_not_records_check_2026_09_04.py
+runner_sha256: 39649b8601da8ac88b96fc3d94dc44a720e48b590af17be031b60879c9966155
+input_fingerprint_sha256: 34d922565079200c0cc1ff263d4234efa81d03ef139cb4b111faddc6447550ce
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 11.34
+status: ok
+----- stdout -----
+external_scientific_inputs: none; every number is recomputed here
+integrity_reads: axioms, deep probe, law pair, this note
+construction: exact enumeration over roles and over binary records
+negative_scope: finite non-pinning statements on the named tori
+AUDIT_INPUT_PATHS:
+  docs/THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md
+  docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md
+AUDIT_TIMEOUT_SEC: 300
+cache_write: false
+scientific_dependency: minimal_axioms Lattice, Qubit, Admissibility
+declared_math: cubic rotations, role subshifts, binary record windows
+solver_mode: pysat present; CaDiCaL on the 4x4x4 torus, and the complete solver-free enumeration on the 4x2x2 torus
+PASS: audit-input-paths declared inputs exist and are unique
+PASS: audit-timeout the declared timeout is 300 seconds
+PASS: axiom-lattice nearest-neighbor adjacency is quoted
+PASS: axiom-admissibility the one fixed nearest-neighbor rule is quoted
+PASS: axiom-qubit the M_2(C) presentation is quoted
+PASS: axiom-support admissible read as the support
+PASS: parent-deep-probe the deep probe is live
+PASS: parent-law-pair the 2026-08-13 law pair is live
+PASS: T1-pairs the pattern realises 18 (role, profile) pairs
+PASS: T1-profiles 17 profiles of the 5^6 = 15625
+PASS: T1-orbits 6 rotation orbits of 800
+PASS: T1-covariance one covariant rule = 48 sectors
+PASS: T1-table the table has 17 nonempty rows
+PASS: T2-corner-profile every corner carries EEEEEE
+PASS: T2-corner-menu so its menu holds C0 and C1
+PASS: T2-edge-pins edges realise all 4 corner-pin pairs
+PASS: T2-refinements 0 refinements unrealised
+ladder  torus        NN   NN+AX3  NN+DIAG2   NN+AX2  NN+BODY    L1<=2    3x3x3    5x5x5  sectors
+        4x2x2        32       32       32       16       16       16       16       16       16
+        4x4x4      2048     2048       64       48       48       48       48       48       48
+        8x4x4    524288     2048      160       48       48       48       48       48       48
+        5x4x4         0        0        0        0        0        0        0        0        0
+        7x4x4         0        0        0        0        0        0        0        0        0
+PASS: T2-nn-counts NN admits 8 x 2^corners: 32, 2048, 524288
+PASS: T2-skeleton NN pins the (2,2,2) skeleton, 8 of it
+PASS: T2-incommensurate 0 on 5x4x4 and 7x4x4, at every rung
+PASS: T2-sectors against 16, 48 and 48 sectors
+PASS: T3-pins-4x4x4 NN+{+-2e} = the 48 sectors on 4x4x4, as a set
+PASS: T3-pins-8x4x4 and the 48 sectors on 8x4x4, as a set
+PASS: T3-pins-4x2x2 and the 16 sectors 4x2x2 holds
+PASS: T3-pins-incommensurate and 0 on 5x4x4 and 7x4x4
+PASS: T3-ax3-fails NN+{+-3e} admits 2048 on 4x4x4 and 8x4x4
+PASS: T3-diag-fails NN+diag admits 64 on 4x4x4, 160 on 8x4x4
+PASS: T3-minimal-orbits size-6 orbits in 5x5x5: {+-e}, {+-2e} only
+PASS: T3-twelve-of-124 so the support is 12 of the window's 124
+PASS: T3-nesting nested rungs contain what they refine
+PASS: T3-upper-rungs L1<=2, 3x3x3, 5x5x5, body give the sector set
+PASS: T3-defect-free NN admits every pin field: 2^16 = 65536
+PASS: T3-defect-laminar NN+diag admits the laminar fields, 8 x 20
+PASS: T3-defect-striped NN+{+-2e} admits the striped fields, 8 x 6
+records 4x2x2 complete enumeration (no solver): NN=64512  NN+AX2=13981  L1<=2=186  3x3x3=154  5x5x5=0  outside all cylinders
+PASS: T4-enum-small 4x2x2: the four smaller windows leave cylinder-free rows
+PASS: T4-enum-5x5x5 4x2x2: 5x5x5 leaves none, 1024 = 16 x 2^6
+records 4x4x4 CaDiCaL: NN=SAT  NN+AX2=SAT  L1<=2=SAT  3x3x3=SAT  5x5x5=UNSAT
+PASS: T4-sat-small 4x4x4: star, NN+{+-2e}, L1<=2, 3x3x3 all SAT
+PASS: T4-sat-5x5x5 only 5x5x5 UNSAT: Theorem 2 confirmed
+PASS: T4-star-census all 128 binary stars realised
+role from records: NN=no  NN+AX2=no  L1<=2=no  3x3x3=no  5x5x5=yes
+PASS: T4-role-radius a role is read from records only at radius 2
+PASS: T4-role-bits a role costs 3 bits where M_2(C) gives one
+PASS: T4-record-radius so a NN role rule is a radius-3 record rule
+readability: complete 6/800   partial 61/2226 = 2.7403%
+PASS: T5-complete 6 of 800 orbit entries exercised complete
+PASS: T5-partial 61 of 2226 partially, from 794 pairs
+PASS: T5-fraction 2.74 per cent of the role law exercised
+PASS: T5-decomposition the note separates the law's three parts
+PASS: T5-category-error readability misses the Hamiltonian terms
+PASS: note-length the note stays under 330 lines
+PASS: note-registry-id the note declares its registry id
+PASS: note-vocabulary the note avoids the banned vocabulary
+PASS: note-wording and says superlattice role pattern
+PASS: note-scope no law selected; bounded scope stated
+PASS: note-exclusion the unreconciled counts are excluded
+PASS: note-parents the note names both parent sources
+PASS: note-numbers the note carries its counts
+per_element: 5 role symbols, 17 profiles, 800 orbits
+per_site: every site of every named torus, at every rung
+per_mode: checked and not executed - no spectral decomposition here
+per_block: 48 sectors, 8 skeletons, 12 pinning offsets of 124
+lattice_wide: five named tori; the record rows complete on 4x2x2
+TOTAL: PASS=55 FAIL=0
+
+----- stderr -----
+
