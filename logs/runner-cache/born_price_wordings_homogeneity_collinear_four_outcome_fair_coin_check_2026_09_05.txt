@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/born_price_wordings_homogeneity_collinear_four_outcome_fair_coin_check_2026_09_05.py
+runner_sha256: 321d0b14edccd687f05648be69f20c62f4a7281d0ec69c2d61a63864c8d2fcd9
+input_fingerprint_sha256: c2f097737565ae8018d22fef5263e6ad6f38ca2bdcbfdab7725ca919bcb3678c
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 105.34
+status: ok
+----- stdout -----
+INPUT_SHA256 {"docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753", "docs/THE_BORN_PRICE_WORDINGS_HOMOGENEITY_IS_PAYABLE_ON_THE_CONTINUUM_LAW_AS_IT_STANDS_THE_COLLINEAR_MENUS_NEED_A_SCALE_READING_RULE_THE_FOUR_OUTCOME_MENU_PAYS_WITH_NO_CLAUSE_AND_NONE_REMOVES_THE_FAIR_COIN_BOUNDED_NOTE_2026-09-05.md": "0e53d6d06a179b1f990130b3e15eb516043f917096097fb55b90ccdd1b28ca1c"}
+PASS Q0 [source] paired proof readable; current Record memo retains permanence
+PASS C0 [exact] alphabet: 21 letters per slot (blank, I, I/2, cP(d), c in {1,1/2,1/4}, 6 unit directions)
+     counts over 21^6: L_CONT bin 26244 coin 284310 bal3 87480 | L_A +col3 17496 +mix3 38880 (bin 13608) | L_4 +col4 21870
+PASS C1 [exact] complete census: 230230 multisets of 6 letters = 21^6 = 85766121 conditions
+PASS C2 [exact] L_CONT realises exactly {I, binary, coin, balanced3}: col3, mix3, col4 never occur
+PASS C3 [exact] L_CONT is scale-blind: indexed output tuple unchanged with all scales set to 1, 0/85766121 failures
+PASS C4 [exact] L_A realises exactly {I, binary, coin, balanced3, collinear3, mixed3}
+PASS C5 [exact] L_4 realises that family plus collinear4
+PASS C6 [exact] L_A differs from L_CONT exactly on 1-record c<1 (17496) and 2-antipodal (43740)
+PASS C7 [exact] L_4 differs from L_A exactly on 2-equal-direction c1+c2<=1 conditions (29160)
+PASS C8 [exact] echo lemma, all three laws: every indexed-output direction is recorded or its antipode, 0 fails
+PASS C9 [exact] all 18^6 = 34012224 fully direction-recorded conditions give {I}, all three laws
+PASS C10 [exact] every realised indexed output tuple of every law resolves I_2 exactly
+PASS C11 [exact] L_A: col3 only at kP=1 (17496), mix3 only at kP=2 (38880); L_4: col4 only at kP=2 (21870)
+PASS C12 [exact] multiplicity-preserving indexed-menu covariance S(g.n) = g.S(n): 684024 checks, 0 mismatches, L_A and L_4
+PASS C13a [exact] 80 declared rational unit directions (PR #7926's table)
+PASS C13b [exact] abundance kept: every binary is the unit-record output tuple, L_A and L_4, 160/160
+PASS C13c [exact] abundance kept: 378 balanced ternaries, 756/756 at unit and 756/756 at 1/3 scales
+PASS C13d [exact] abundance kept: coin branch unchanged and scale-blind, 77 distinct exact a
+PASS C13e [exact] col3 sweeps the grid: 1840/1840 over 23 scales j/24 x 80 directions
+PASS C13f [exact] mix3 at c = (c1+c2)/2: 529/529 grid pairs, 45 distinct c
+PASS C13g [exact] col4 under L_4: 253/253 grid pairs with a+b<1
+PASS C14a [exact] parity: dipole sum = recorded slots mod 2; unpadded e_x reaches only the odd-arity menus
+PASS C14b [exact] with one I-record pad every menu type reaches fibre e_x and the invariant fibre 0
+PASS C14c [exact] witnesses: mix3 and col4 at e_x with an I pad, col3 at e_x unpadded and at fibre 0
+PASS C15 [exact] col3 outcomes 1/4 and 3/4 share the direction: the record registers a scale, and a sampled sign, not a forced sign
+PASS R0 [exact] 48 perimeter-2 triangles on the grid j/24 (PR #7950's 44 plus 4 isosceles)
+     mode nullity k=0..12: F_CONT 13 3 1 2 1 2 1 2 1 2 1 2 1 | F_A = F_4 = M_all 0 1 0 0 0 0 0 0 0 0 0 0 0
+PASS R1 [exact] control, triangle rows alone: nullities [3, 3, 2, 2, 2] at k = 0, 1, 3, 5, 7
+PASS R2 [exact] F_CONT k=0 nullity 13 holds the counting rogue c - 2/3; 11 are free coin values
+PASS R3 [exact] F_A: nullity 0 at every mode k <= 12 but k = 1, kernel exactly the Born vector h_1(c) = c
+PASS R4 [exact] F_4: the same, nullity 0 at every mode but the Born vector at k = 1
+PASS R5 [exact] M_all agrees with F_A mode by mode: the ternary coin adds nothing
+PASS R6 [exact] the rogue is outside F_A's k=0 kernel; radius 1/24 is covered by the collinear row
+PASS R9 [exact] F_4 on one ray, no ansatz: 23 + 132 rows, 24 unknowns, rank 23, nullity 1, kernel W(c) = cW(1)
+PASS R10 [exact] the collinear rows alone leave nullity 12: F_A's ray content fixes no scale law
+PASS R12 [exact] 52 directions, 5200 balanced ternaries, rank 50, nullity 2, kernel span{x, y}
+PASS S1 [exact] every fully recorded condition has dipole (0, 0, 0); stacked R - 1 has rank 3, so the bulk fibre is rho = I/2
+PASS S2a [exact] L_A bulk {cP(m), five I}: col3 odds (c/2, (1-c)/2, 1/2); +m total 1/2, -m 1/2
+PASS S2b [exact] L_A bulk {(1/4)P(m), (3/4)P(-m), four I}: mix3 odds ['1/4', '1/4', '1/2']
+PASS S2c [exact] L_4 bulk {(1/4)P(m), (1/2)P(m), four I}: odds ['1/8', '1/4', '1/8', '1/2'], +m total 1/2
+PASS S2d [exact] six direction records give {I}: no direction and no sign is registered
+PASS S3 [exact] 5 states x 7 scales: rank-one refinements have raw +m odds tr(rho P(m)); mixed menus have those odds only conditional on a directional outcome
+PASS S4 [supplied independent readout, float log10] (1/2)^(N^2) = 10^-173.4, 10^-308.3, 10^-693.6 at N = 24, 32, 48
+PASS S5 [exact] tilt t: sign odds (1+t)/2, antipode (1-t)/2 > 0 at t = 0, 2/3, 9/10, 99/100, so t < 1
+PASS S5a [supplied independent readout, float log10] at t = 2/3 the all-plus event has probability (5/6)^N^2 = 10^-45.6, 10^-81.1, 10^-182.4
+PASS S6a [float64, model] the 24x24 relaxed vortex is an L_HYB fixed point: residual 9.9e-15, 960 sites, min n.vhat +1.0000
+FULL_WINDOW {"core_count": 2, "core_weights": [0.06405960712393548, 0.06405960712393464, 0.0031151850827040094, 0.0031151850827039673, 0.0007084890790081163, 0.000708489079008131, 0.00043916829705147997, 0.00043916829705147986, 0.8714354857896783, 0.8714354857896786, 0.0005241860320990606, 0.0005241860320990842, 0.0025873754132613954, 0.0025873754132614574, 0.05471856993648288, 0.05471856993648311], "dimension": 1152, "eigenpairs": 1152, "energies": [-0.6577749277425281, -0.6577749277425278, -0.5861884398814188, -0.5861884398814183, -0.46116684129142343, -0.4611668412914221, -0.09988350806414921, -0.09988350806414756, 0.09988350806414698, 0.09988350806414971, 0.4611668412914221, 0.46116684129142277, 0.5861884398814177, 0.586188439881419, 0.6577749277425267, 0.657774927742527], "flip_count": 0, "hermiticity_max_abs": 0.0, "orthogonality_max_abs": 5.10702591327572e-15, "pattern": "none", "residual_max_abs": 2.323457954376596e-15, "window": 0.6859999999999999, "window_count": 16}
+PASS S6c_none [float64] full 1152-state eigensystem and complete fixed window
+FULL_WINDOW {"core_count": 2, "core_weights": [0.10926340367872868, 0.13406167261914068, 0.14180441363296062, 0.15650012178344175, 0.1862935899595831, 0.11294869179380379, 0.1751233642333838, 0.24619775362730778, 0.20459370158550036, 0.12407031792426558, 0.13080207625354798, 0.01094466292545056, 0.0067493120047727685, 0.01955136675743535, 0.007177599977591532, 0.010901041647139172, 0.005777694222792526, 0.737182835249836, 0.7501309004727895, 0.004735787654330052, 0.01440248788753644, 0.006639152615867406, 0.011097948601807692, 0.10463708969855993, 0.09948475790924427, 0.17874298319231363, 0.21083202346124347, 0.15716818332826787, 0.0994587060074693, 0.1616905666834247, 0.13696183022958475, 0.13272438674970238, 0.12347455041837041, 0.09505252592292847], "dimension": 1152, "eigenpairs": 1152, "energies": [-0.6791639085438607, -0.6701216467045251, -0.6605744473005204, -0.6083195291591502, -0.5980436847545342, -0.5910287763422339, -0.5818103203689884, -0.5799517636977948, -0.5531697266980641, -0.5163351404387431, -0.49996513681013005, -0.4598543023173433, -0.42112948972212616, -0.37912222795647954, -0.3114158739609951, -0.10169689986693958, -0.10094986353651894, 0.10094986353651872, 0.10169689986693897, 0.31141587396099546, 0.3791222279564813, 0.4211294897221254, 0.45985430231734387, 0.49996513681013005, 0.5163351404387438, 0.5531697266980643, 0.579951763697795, 0.5818103203689888, 0.591028776342234, 0.5980436847545344, 0.6083195291591504, 0.6605744473005204, 0.6701216467045255, 0.6791639085438606], "flip_count": 128, "hermiticity_max_abs": 0.0, "orthogonality_max_abs": 3.6637359812630166e-15, "pattern": "1/9", "residual_max_abs": 2.290027502518223e-15, "window": 0.6859999999999999, "window_count": 34}
+PASS S6c_1/9 [float64] full 1152-state eigensystem and complete fixed window
+FULL_WINDOW {"core_count": 0, "core_weights": [0.10486777783972276, 0.08642308716549156, 0.1182386871281199, 0.12070877372396767, 0.13335166708270138, 0.09163417856952556, 0.14852834396524123, 0.11449261598742036, 0.14594401679215194, 0.16276737013576872, 0.21899878678706425, 0.17814727580206943, 0.1715582645193587, 0.12390945966339428, 0.15443726033721575, 0.08364886990600139, 0.09134441571308112, 0.09542115334017756, 0.08428671220614502, 0.09671529895574679, 0.11147685505637316, 0.1534130039471713, 0.14533643994185957, 0.09899685777747473, 0.0888873875158431, 0.13621581248081477, 0.13365424305015672, 0.13204238342672364, 0.17146096849786638, 0.11793692752990656, 0.15681112014488374, 0.13729945853135345, 0.1339881574647535, 0.16469634972672048, 0.1664618160702365, 0.14971690892605452, 0.14683579218030252, 0.154539494940062, 0.11856526127414044, 0.18317036404096565, 0.14165833414000611, 0.10633308769188961, 0.1512417125298475, 0.1030736616940022, 0.08762890562202193, 0.14003824062032483, 0.13680725586130554, 0.11185278301325018, 0.08695338933045012, 0.08282939816575206, 0.09094294715380616, 0.09107427614055713, 0.08583326487755776, 0.15136080532379087, 0.12408578290083162, 0.16829334410292904, 0.19142429699798275, 0.2051473170764614, 0.16500512464737319, 0.15245260461904148, 0.11184164229663639, 0.13897407334543832, 0.09356166296500398, 0.13246340361995143, 0.12289495970838674, 0.10759162100931395, 0.0854327724927553, 0.10299007241647347], "dimension": 1152, "eigenpairs": 1152, "energies": [-0.6849373612404264, -0.6777062541722128, -0.6740811491516259, -0.6637420107668789, -0.6440829403553281, -0.6316234065374425, -0.6267334302929383, -0.6204565808859674, -0.6052519385257374, -0.5941785172897869, -0.5788818945523203, -0.5712509699831584, -0.5590377837341101, -0.5510541703867696, -0.5430536108915125, -0.5331616193429206, -0.5199578473396457, -0.5125267465025953, -0.49435856454471083, -0.47887604377855025, -0.458822204177768, -0.4277932350109137, -0.404237990853168, -0.3911745056621709, -0.38025318260231517, -0.37250348441953796, -0.3610727335593664, -0.35072419778212494, -0.3377382183539187, -0.320111907536366, -0.22671642615542736, -0.21942921972354296, -0.1945698569784661, -0.17919090155328538, 0.17919090155328513, 0.19456985697846527, 0.21942921972354285, 0.2267164261554278, 0.32011190753636626, 0.33773821835391865, 0.3507241977821245, 0.36107273355936614, 0.3725034844195375, 0.38025318260231494, 0.39117450566217016, 0.4042379908531678, 0.4277932350109139, 0.4588222041777685, 0.47887604377855053, 0.4943585645447112, 0.5125267465025949, 0.5199578473396451, 0.5331616193429208, 0.5430536108915132, 0.5510541703867692, 0.5590377837341102, 0.5712509699831587, 0.5788818945523211, 0.5941785172897875, 0.6052519385257374, 0.6204565808859676, 0.6267334302929382, 0.6316234065374424, 0.6440829403553281, 0.663742010766879, 0.6740811491516251, 0.6777062541722121, 0.6849373612404263], "flip_count": 576, "hermiticity_max_abs": 0.0, "orthogonality_max_abs": 4.114846359232839e-15, "pattern": "1/2", "residual_max_abs": 3.043636481661798e-15, "window": 0.6859999999999999, "window_count": 68}
+PASS S6c_1/2 [float64] full 1152-state eigensystem and complete fixed window
+FULL_WINDOW {"core_count": 2, "core_weights": [0.11711717548893033, 0.10047083206510939, 0.09253527814402837, 0.10227642694417181, 0.15644050350291364, 0.08746104904742799, 0.13664692359692526, 0.1507751559587499, 0.13212030441576478, 0.13270181911025974, 0.0881495791866798, 0.12833883637144394, 0.1065338097453007, 0.24672394793120178, 0.23420384303157307, 0.21736450723670792, 0.11207213944911841, 0.1527903033706976, 0.04059950683135852, 0.025899026777912754, 0.03733277972343766, 0.012306703902113785, 0.02628323752882245, 0.02151453316567362, 0.641154211282802, 0.6637305178165821, 0.00792187128630417, 0.02512167292699751, 0.02277804031145175, 0.03940693350970966, 0.1218957219721152, 0.08502225885717728, 0.17993040596523946, 0.19444868559215828, 0.20661794707841694, 0.09713804713511817, 0.10714986777370893, 0.08667477601408519, 0.12411621960192146, 0.12491362935588843, 0.1408702555581405, 0.13663524988791134, 0.07591944622324934, 0.16482957557228173, 0.10323316755553384, 0.09466134442728694, 0.09812490635865895, 0.11708419405084691], "dimension": 1152, "eigenpairs": 1152, "energies": [-0.6781186512861304, -0.6729514668506111, -0.6693314024222747, -0.6578011288719172, -0.6442644186148044, -0.6256870710224933, -0.6167236305118097, -0.6110307206079555, -0.5994403948168096, -0.5965083485717227, -0.5564561151093051, -0.5468903923484921, -0.5295473726612356, -0.5171960348433385, -0.5125975579927238, -0.5046797384963522, -0.4497716675407292, -0.4411841722473624, -0.4157339405804297, -0.3827522813180936, -0.3546784148195871, -0.29673093921756916, -0.10545610038213439, -0.10362105358485446, 0.10362105358485431, 0.1054561003821342, 0.2967309392175687, 0.354678414819588, 0.38275228131809186, 0.4157339405804285, 0.4411841722473621, 0.4497716675407284, 0.5046797384963513, 0.5125975579927234, 0.5171960348433388, 0.5295473726612352, 0.5468903923484913, 0.5564561151093045, 0.5965083485717232, 0.5994403948168093, 0.6110307206079555, 0.6167236305118087, 0.6256870710224931, 0.644264418614804, 0.6578011288719164, 0.669331402422275, 0.6729514668506111, 0.6781186512861305], "flip_count": 194, "hermiticity_max_abs": 0.0, "orthogonality_max_abs": 4.551914400963142e-15, "pattern": "1/6", "residual_max_abs": 2.2350409116265045e-15, "window": 0.6859999999999999, "window_count": 48}
+PASS S6c_1/6 [float64] full 1152-state eigensystem and complete fixed window
+PASS S6b [float64, model] flip density 1/2 (mean +0.000) leaves 0 core modes; none, 1/9, ~1/6 keep 2, 2, 2
+PASS R13 [exact] L_CONT + L_FIB satisfies the clause in fibre e_x on all 126 ternaries and their binaries
+PASS R14 [exact] the counting rogue violates it, 2/3 against 1/2, while normalised on all 126 ternaries
+PASS R15 [exact] L_BIN with c(1 + u_z^3)/2: homogeneous, normalised on every binary, not Born (64/125 against 4/5)
+PASS R17 [exact] finite certificates only: F_CONT rogue, F_A mode kernels, F_4 ray rank; continuum conclusions require the separate stated proof and hypotheses
+PASS Q1_L_CONT [exact] indexed mass 1; content mass 1 after multiplicity pushforward; one-grade-per-distinct-effect mass 1/2
+PASS Q1_L_A [exact] indexed mass 1; content mass 1 after multiplicity pushforward; one-grade-per-distinct-effect mass 3/4
+PASS Q1_L_4 [exact] indexed mass 1; content mass 1 after multiplicity pushforward; one-grade-per-distinct-effect mass 7/8
+PASS Q2 [exact] actual duplicate menu detects the multiplicity lost by set comparison
+PASS Q3 [exact] scale-blind collinear competitor: a=1/5, all 6 orders x 24 rotations; not a classification or physical selection
+PASS Q4 [exact] actual mixed menu raw odds 1/4,1/4,1/2; conditional + is 1/2
+PASS Q5 [exact] every bit conditional on any six is fair, but even-parity all-zero mass 1/128 differs from independent 1/256
+TOTAL: PASS=61 FAIL=0
+
+----- stderr -----
+

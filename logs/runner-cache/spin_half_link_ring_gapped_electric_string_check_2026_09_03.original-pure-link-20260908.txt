@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_link_ring_gapped_electric_string_check_2026_09_03.py
+runner_sha256: 33da4839064e8d76233bff94dd6ed475b2b82089445b2fc9eab1350c7dd9536f
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 4.14
+status: ok
+----- stdout -----
+H = -lambda sum_f P_f on the height-1 ring of L plaquettes; E_e = Z^L_e/2, U_e = sigma^+_e; G_v = (div E)_v - rho_v; lambda = 1
+PASS A1 [exact] the ring, L = 4..20 even: L rungs + 2L rails = 3L links, 2L vertices at coordination z_v = 3, L faces. z_v odd forces 2 rho_v odd; neutrality sum_v rho_v = 0 then forces a staggered sign
+PASS A2 [exact] the declared matter-free background: staggered 2rho(t_i) = (-1)^i, 2rho(b_i) = -(-1)^i, parity-admissible and neutral, used throughout. Columnar (+1/2 top, -1/2 bottom) is admissible too but gives dim 4 with H = 0 at every L; uniform rho = -1/2 is not neutral, so its sector is empty
+PASS A3 [exact] dim(Gauss) = Lucas(L) + 2 exactly at L = 4..20: 9,20,49,125,324,845,2209,5780,15129; every listed state re-verified against G_v = 0 at all 2L vertices, max |G_v| = 0
+PASS A4 [exact] the cut flux Phi_i = E_{T_i} + E_{B_i} is the same at all L cuts in every sector state, so Phi in {-1,0,+1} labels three winding sectors: dim(Phi = 0) = Lucas(L) = 7,18,47,123,322,843,2207,5778,15127; Phi = +-1 one-dimensional
+PASS B1 [exact] basis bijection at L = 4,6,8,10,12,14,16: x_i = (1 + e_{T_i})/2, z_i = 1 - x_i (i even) and x_i (i odd), carries the Phi = 0 Gauss basis one-to-one onto the L-ring configurations with no two adjacent 1s
+PASS B2 [exact] under it the matrices agree entry by entry, not merely in spectrum: -lambda sum_f P_f = -lambda sum_i P_{i-1} X_i P_{i+1} on L periodic sites, max |difference| = 0 at L = 4..16. The ring's Gauss sector IS the zero-detuning constrained chain (PXP in the literature; a pointer, not authority)
+PASS B3 [1e-13] full spectra agree at every L = 4..16 to max |difference| = 7.6e-14
+PASS C1 [1e-8] the glide S = T_1 . C is a symmetry with S^L = 1; at every L = 4..20 the ground state is unique at k = 0 and the first excitation a single zone-boundary level at k = pi: no degeneracy
+PASS C2 [1e-9] Delta_1(L) = 1.0352762,0.9845253,0.9726558,0.9694746,0.9685697,0.9683035,0.9682236,0.9681992,0.9681917 at L = 4..20
+PASS C3 [1e-6] L Delta_1 at L = 14,16,18,20 = 13.556,15.492,17.428,19.364, rising by 1.936 per two columns and constant to 3.9e-04: linear in L, not constant, so Delta_1 is not of the gapless 1/L form
+PASS C4 [1e-4] d ln Delta_1 / dL = -1.86e-05 on L = 14..20: flat to five digits, so Delta_1 is not of the exponentially small e^{-L} form either. The gap is a constant
+PASS C5 [1e-3] the finite-size correction is exponential: Delta_1(L) - Delta_1(L-2) falls by a settled factor 3.244 per two columns, ln of it linear with slope -0.5945, xi_gap = 1.682 columns (the scale of C7); Richardson Delta_1(inf) = 0.9681883 lambda
+PASS C6 [1e-9] the vacuum plaquette value is uniform over the L faces to 4.4e-15, <P_f> = 0.6035607, the sum rule E_0 = -lambda L <P_f> closes to 3.7e-14, and the energy density E_0/L converges to -0.6035607 lambda
+PASS C7 [1e-3] short-ranged: at L = 20 the connected face correlator alternates in sign and decays with xi_P = 1.597 columns, the connected rung-flux one with xi_E = 1.518, fitted on d = 4..8
+PASS C8 [1e-12] <E_{T_i}> alternates by +-0.3042 and <E_{R_i}> by +-0.1083, period 2, zero mean, in step with the declared background sign; every other Fourier component, the period-4 columnar one included, vanishes to 6.0e-16: the explicit background, not order
+PASS D1 [exact] the Phi = +-1 sectors are one-dimensional with no flippable face, so H = 0 there exactly at every L = 4..20 and they lie |E_0| = 0.60356 lambda L above the Phi = 0 ground state: a linear splitting, not an exponentially small one
+PASS D2 [1e-7] static two-charge potential at L = 20, the pair inserted by reversing the background half-charge at t_0 and t_d (neutrality, parity and |2 rho| = 1 all preserved; d odd): V(d) = 0.317041, 1.524151, 2.731236, 3.938250, 5.145046
+PASS D3 [1e-3] the potential is exactly linear, with no 1/d piece at any d: successive slopes 0.603555,0.603543,0.603507,0.603398 agree to 1.6e-04; the linear fit V = sigma d + c gives sigma = 0.6035055 at residual 1.2e-04, and a Coulomb term added to it returns -0.0004
+PASS D4 [1e-4] the string tension is the vacuum face energy density: sigma = 0.603505 against |E_0|/L = 0.603561 lambda, agreeing to 5.5e-05
+PASS E1 [exact] the 2x2xL tube, open in x and y, periodic in z, has z_v = 4 everywhere -- even, so rho = 0 is admissible and neutral -- with 8L links and 5L faces; dim(Gauss) at L = 2..6 is 114,548,2970,16892,98466, by slab sweep at peak 134742 partial states
+PASS E2 [1e-7] on the tube Delta_1 does not settle: 1.1260,1.1034,0.5834,0.9025,0.4623 at L = 2..6, oscillating with the parity of L: a commensuration effect of the 2x2 cross-section, two points per parity class. No fit is claimed
+PASS E3 [1e-7] the periodic 2x2x2 torus (z_v = 6, 24 links, 24 faces, each pair carrying two links at period 2): dim(Gauss) = 9600, E_0 = -9.026720914, Delta_1 = 1.627609934. At linear size 2 every direction admits only k = 0, pi: no dispersion there
+PASS E4 [exact] at z = 6 the Gauss sector obeys a 3-in/3-out ice rule, whose Pauling estimate 2.5^N gives 1526 at N = 8 against the exact 9600, so it is conservative here. At N = 4^3 = 64 it gives 2.9e+25 states against a 2^18 = 262144 budget, ~10^19 times over; 8^3 is ~10^63
+PASS E5 [exact] in the Gauss basis every off-diagonal element of -lambda sum_f P_f is -lambda <= 0 and every diagonal element 0, on the ring at L = 4..20 and on every 3D block here, so exp(-beta H) has non-negative matrix elements: the model carries no sign problem and sampling is available
+SUMMARY: on the height-1 ring the pure spin-1/2 link sector is gapped at 0.9681883 lambda with a unique short-ranged ground state, and two static charges are held by an exactly linear string of tension 0.6035 lambda = the vacuum face energy density; its Gauss sector is exactly the zero-detuning constrained chain. The ring has no transverse direction, so this prices the electric excitation gap and says nothing either way about three dimensions, where sampling is the tool.
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+
