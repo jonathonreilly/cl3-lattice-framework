@@ -1,0 +1,1 @@
+The original face-parity mutant passed because the lower bound alone also admitted the large complement count. Preserved original source/mutant/result. Added exact geometric identity flipped=8-2*shared to distinguish the physical face count. Repaired mutant returncode 1. No theorem or physical result was changed.

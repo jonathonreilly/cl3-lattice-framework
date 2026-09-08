@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-weak-electric-local-stability-design/native_half_MUTANT.py", line 41, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--json',action='store_true');p.parse_args();print(json.dumps(check(),indent=2))
+                                                                                                             ^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-weak-electric-local-stability-design/native_half_MUTANT.py", line 32, in check
+    require(delta==F(1161,25600) and F(3,2)/kappa==F(102400,387),'sharp normalization');count+=1
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-weak-electric-local-stability-design/native_half_MUTANT.py", line 7, in require
+    if not c:raise ValueError(s)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: sharp normalization

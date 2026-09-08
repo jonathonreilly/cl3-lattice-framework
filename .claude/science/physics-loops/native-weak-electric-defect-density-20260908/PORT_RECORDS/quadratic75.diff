@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -51,7 +51,7 @@
+    k=F(2,5);h0=k*x;D=F(9)*(1-x)
+    require(h0+u*D>=k*x,'positive perturbation');count+=1
+  # Derive75 from measured geometric multiplicities, not a string comparison.
+- prefactor=F(pc,6)+F(oc,8);bound_coefficient=75
++ prefactor=F(pc,6)+F(oc,8);bound_coefficient=74
+  require(prefactor*prefactor*3==bound_coefficient,'quadratic coefficient');quadratic_checks+=1
+  # Mixed qubit states rho=[[p,c],[c,1-p]], S=Z,W=X.
+  for prob in (F(1,4),F(1,2),F(3,4)):

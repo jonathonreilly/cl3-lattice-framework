@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -38,7 +38,7 @@
+   require((pc,oc)==(24,8),'face pair multiplicities');quadratic_checks+=1
+   for e,f in combinations(sorted(incident),2):
+    ce=[p for p in faces if e in p];cf=[p for p in faces if f in p]
+-   shared=sum(f in p for p in ce);odd=sum((e in p)!=(f in p) for p in faces)
++   shared=sum(f in p for p in ce);odd=sum((e in p)==(f in p) for p in faces)
+    require(len(ce)==len(cf)==4 and shared<=1 and odd==8-2*shared and odd>=6,'noncut witness');count+=1
+    require(odd==(6 if shared else 8),'affected6/8');quadratic_checks+=1
+    geom.append({'L':L,'shared_faces':shared,'flipped_faces':odd})
