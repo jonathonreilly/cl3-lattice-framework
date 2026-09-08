@@ -1,0 +1,3 @@
+# Preserved deterministic development failure
+
+The first frame_control.py failed the floating vacuum-sign identity guard set at3e-15, with RuntimeError('vacuum sign'). Complete predecessor is frame_control_BEFORE_ROUNDING_GUARD.py. The measured residual is3.552713678800501e-15. The revised check records this value and uses1e-13 for this non-certifying numerical construction check; exact rational Gram checks and literal JW column identities are unchanged. This is not a widened coefficient acceptance tolerance: no coefficient or certified solve has yet been computed. The original command's stdout was empty. No stochastic data or physics estimate was selected or discarded.

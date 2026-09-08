@@ -1,0 +1,1 @@
+Initial decoder control failed with ValueError duplicate key. PREFIXES already includes vacuum; the synthetic fixture prepended another. Preserved predecessor controls_BEFORE_SYNTHETIC_FIX.py. Decoder rejection was correct. No physical solver data or computation was used.

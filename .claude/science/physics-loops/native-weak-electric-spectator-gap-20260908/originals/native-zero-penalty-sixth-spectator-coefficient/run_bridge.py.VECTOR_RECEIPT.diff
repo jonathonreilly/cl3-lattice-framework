@@ -1,0 +1,27 @@
+--- a19d/run_bridge.py
++++ current/run_bridge.py
+@@ -6,15 +6,22 @@
+ for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS'):
+  if os.environ.get(key)!='1':raise RuntimeError('one thread required: '+key)
+ a=argparse.ArgumentParser();a.add_argument('--bridge',type=int,required=True,choices=(0,3,9,12,36,96));a.add_argument('--output',type=Path,required=True);args=a.parse_args()
+-if args.output.exists():raise RuntimeError('refuse output overwrite')
++vector_path=args.output.with_suffix('.npz')
++if args.output.exists() or vector_path.exists():raise RuntimeError('refuse output overwrite')
+ f=json.loads((p/'COMPUTATION_FREEZE.json').read_text())
+ for name,sha in f['inputs'].items():
+  if hashlib.sha256((p/name).read_bytes()).hexdigest()!=sha:raise RuntimeError('changed source '+name)
++import runtime_binding
++runtime_sha=runtime_binding.verify(p/'RUNTIME.json')
+ import solver_core as c
+ raw=json.loads((p/'PREFIXES.json').read_text());model=c.Model(raw);row=next(x for x in raw['rows'] if x['bridge_edge']==args.bridge);result=c.solve_bridge(model,row)
++vectors=result.pop('_vectors');args.output.parent.mkdir(parents=True,exist_ok=True)
++with vector_path.open('xb') as stream:
++ c.np.savez(stream,vectors=c.np.stack([x[5] for x in vectors]),k=c.np.array([x[0] for x in vectors],dtype=c.np.uint8),boundary_used_hex=c.np.array([hex(x[1]) for x in vectors]),bridge_count=c.np.array([x[2] for x in vectors],dtype=c.np.uint8),toggle_hex=c.np.array([hex(x[3]) for x in vectors]),word_count=c.np.array([x[4] for x in vectors],dtype=c.np.uint64))
++result['vector_artifact']={'filename':vector_path.name,'sha256':hashlib.sha256(vector_path.read_bytes()).hexdigest(),'bytes':vector_path.stat().st_size,'shape':[len(vectors),512],'dtype':'float64','coordinates':'physical orthonormal active even-Fock basis; occupation states in ascending even-bit order','includes_initial_and_target':True}
+ seconds=time.monotonic()-START;rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024)
+ if seconds>=180 or not 0<rss<384:raise RuntimeError('resource cap')
+-result.update(seconds=seconds,rss_mib=rss,input_hashes=f['inputs'],numpy_version=c.np.__version__,numpy_init_sha256=hashlib.sha256(Path(c.np.__file__).read_bytes()).hexdigest(),python_executable=sys.executable,freeze_sha256=hashlib.sha256((p/'COMPUTATION_FREEZE.json').read_bytes()).hexdigest())
++result.update(runtime_sha256=runtime_sha,seconds=seconds,rss_mib=rss,input_hashes=f['inputs'],numpy_version=c.np.__version__,numpy_init_sha256=hashlib.sha256(Path(c.np.__file__).read_bytes()).hexdigest(),python_executable=sys.executable,freeze_sha256=hashlib.sha256((p/'COMPUTATION_FREEZE.json').read_bytes()).hexdigest())
+ args.output.parent.mkdir(parents=True,exist_ok=True)
+ with args.output.open('x') as q:json.dump(result,q,indent=2,allow_nan=False);q.write('\n')
+ print(json.dumps({'bridge':args.bridge,'coefficient':result['coefficient'],'error':result['absolute_error_bound'],'interval':result['interval'],'seconds':seconds,'rss_mib':rss,'output_sha256':hashlib.sha256(args.output.read_bytes()).hexdigest()},allow_nan=False))

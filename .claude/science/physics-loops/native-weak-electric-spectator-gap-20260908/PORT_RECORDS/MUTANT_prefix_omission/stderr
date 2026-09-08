@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-weak-electric-spectator-gap-20260908/.claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/scripts/native_weak_electric_spectator_gap_2026_09_08.py", line 65, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-native-weak-electric-spectator-gap-20260908/.claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/scripts/native_weak_electric_spectator_gap_2026_09_08.py", line 45, in main
+    parts=[certify(data/f'bridge_{b}.json',frame,prefix) for b in (0,3,9,12,36,96)]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-weak-electric-spectator-gap-20260908/.claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/scripts/native_weak_electric_rational_replay_2026_09_08.py", line 11, in certify
+    model=ExactModel(frame,prefix);z,row,saved=load(file,prefix);bridge=row['bridge_edge'];boundary=prefix['boundary_edges'];terms=[(a,b) for a,b in combinations(sorted(boundary+[bridge]),2) if set(model.edges[a])&set(model.edges[b])]
+                                               ^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-weak-electric-spectator-gap-20260908/.claude/science/physics-loops/native-weak-electric-spectator-gap-20260908/PORT_RECORDS/MUTANT_prefix_omission/scripts/native_weak_electric_candidate_decoder_2026_09_08.py", line 75, in load
+    if set(rows)!={(0,0),*expected}:raise ValueError('prefix coverage')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: prefix coverage
+real 1.40
+user 1.38
+sys 0.01
+            93569024  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6864  page reclaims
+                   5  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 190  involuntary context switches
+         34156630673  instructions retired
+          5569321880  cycles elapsed
+            67453480  peak memory footprint

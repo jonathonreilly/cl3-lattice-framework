@@ -1,0 +1,1 @@
+Prospective rank supplement: fixed displacement representatives (1,0,0),(1,1,1),(2,1,0),(2,2,1), using actualL4 canonical K. Compute exact rational rank of W from both complete stars and cross Gram of the separate star invariant spaces. No eigensolver, coefficient solve or timing extrapolation. This ranks cost/connectedness routes only.
