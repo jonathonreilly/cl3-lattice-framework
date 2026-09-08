@@ -56,8 +56,10 @@ joint-law selection remain open.
    Role-law #7939/#7977/#7982 has a sealed original review with fourteen findings;
    backlog_batch_contract authors repairs and backlog_draft_triage retains final
    confirmation. backlog_8001_review resumes original #5966 source/premise work;
-   no prior partial preparation grants PASS. Bounded new original review proceeds
-   with safe-boundary priority for ready confirmations. Sixty-six closed scopes
+   no prior partial preparation grants PASS. Root prepares provisional Cycle904
+   fixes while that review continues. backlog_draft_triage reviews the bounded
+   original nonabelian plaquette pair #7908/#7914, with safe-boundary priority
+   for ready role-law confirmation. Sixty-six closed scopes
    remain pending at six open successors. Fixed 254 membership, all transitive
    reservations and formal audit deferral remain.
 2. For field response, choose the actual physical source/sector and estimator
