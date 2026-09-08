@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/delayed-isolated-p_9zdeiq/scripts/native_zero_penalty_l4_delayed_splitting_2026_09_08.py", line 10, in <module>
+    part=runpy.run_path(str(root/f'scripts/native_zero_penalty_{key}_exact_2026_09_08.py'))['out']
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/delayed-isolated-p_9zdeiq/scripts/native_zero_penalty_spectator_exact_2026_09_08.py", line 60, in <module>
+    if mask.bit_count()%2:need(all(z==0 for row in B for z in row),'odd-cut active parity exclusion')
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/delayed-isolated-p_9zdeiq/scripts/native_zero_penalty_spectator_exact_2026_09_08.py", line 9, in need
+    if not c:raise RuntimeError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: odd-cut active parity exclusion
