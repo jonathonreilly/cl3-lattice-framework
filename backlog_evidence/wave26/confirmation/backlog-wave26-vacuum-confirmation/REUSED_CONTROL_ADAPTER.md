@@ -1,0 +1,1 @@
+The two author control adapters were fully read and copied byte-exact except the target-worktree literal. They now execute the integrated final bytes and write new reviewer results here. These are actual affected AST/prefix and actual cache CLI controls; no whole primary or original baseline is executed. Independent disjoint matrix checks are separate.

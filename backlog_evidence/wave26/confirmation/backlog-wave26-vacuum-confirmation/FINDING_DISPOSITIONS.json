@@ -1,0 +1,568 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "original_title": "Apply the carrier parity constraint before identifying the unrestricted filling functional with record number",
+    "original_narrow_fix": "Keep the original unrestricted Fock tables and checks as explicitly identified mathematical comparisons. Declare and enforce the encoded even-N domain separately before any record-carrier statement, including zero-mode/tie conventions. Add a decisive actual Wm/domain/threshold countercontrol, preserving its original false PASS. Do not silently assert odd code sectors, unrestricted code equivalence or recompute a different model while calling its results original. The valid even N=4 cube and N=32 flat-twist certificate can remain.",
+    "action": "Original unrestricted Wm remains unchanged. Actual even functional/threshold, ties and complete32 polynomial classes separately enforce domain; cube J1.4 odd N1 witness retained, even bound(1+sqrt2)/2 supplied with exact proof.",
+    "final_anchors": [
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 24,
+        "text": "Retain the original unrestricted functional W_all(J)=min_{N=0,...,V}(E_N+2JN). Define the constrained comparison W_even(J)=min_{N even}(E_N+2JN) separately. The latter enforces the necessary carrier parity; identifying every such state with a particular encoded sector remains conditional on its encoding. The original Wm tables evaluate W_all, with an eigensolver zero threshold1e-9 and the lowest-occupation tie representative. They are never relabeled as even-carrier tables. R1 explicitly tests both domains and their different cube threshold.",
+        "line_sha256": "4bee936675cfc9391a6ce5d6ab8995b7c7a5cad1642517e98c02e165f5ec21dc",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 52,
+        "text": "For any ordered finite spectrum, the even emptying threshold is max over positive even N of -E_N/(2N), clipped below at0. At threshold N=0 may tie with positive N; above it the empty representative minimizes. R1 computes this quantity from the actual32 cube sign-sector representatives, whose gauge equivalence covers the4096 edge-sign assignments. Its maximum is (1+sqrt(2))/2, not3/2. The maximum over even N occurs at N=2 because the mean of the first N sorted levels is nondecreasing. Fixing seven spanning-tree edge signs to+1 by vertex signs leaves five free signs; those32 classes cover4096 fields. Exact characteristic polynomials give the following six classes (x is the one-particle eigenvalue):",
+        "line_sha256": "1aae5f12299a188d8f41a41a001c8d50a9d1de378df35618eb7342b6108e6d51",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 835,
+        "text": "def W_even(ev,J):",
+        "line_sha256": "b82846ef3c85ca962c1cdb6fdd1748174307ece7a18567d47272ce3d8065b099",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 846,
+        "text": "check(\"R1 [actual occupation domains] unrestricted plain J1.4 W=%.9f,N%d; cube even minimum %.9f; even threshold %.12f; below/above minima %.3e/%.3e\" % (WE_PLAIN[0],WE_PLAIN[1],WE_MIN,WE_LIMIT,WE_BELOW,WE_ABOVE), abs(WE_PLAIN[0]+.2)<1e-12 and WE_PLAIN[1]==1 and all(n%2==0 for _,n in WE_RESULTS) and abs(WE_MIN)<1e-12 and abs(WE_LIMIT-WE_COUNTER)<1e-12 and WE_BELOW<0 and abs(WE_ABOVE)<1e-12)",
+        "line_sha256": "92cb4018d79e583a956a084cf4f6de0a3795277738e3a789b4548a2f1ba25e9d",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 861,
+        "text": "check('R5 [exact actual cube polynomials] all32 gauge classes give counts1,1,3,3,12,12 and the stated even-domain threshold proof',POLY_COUNTS==POLY_EXPECTED)",
+        "line_sha256": "e60db336db31621331b57c7d8f4d6b6b800a7645254745d9c981db852dd62996",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      }
+    ],
+    "controls": [
+      "7885_wrong_even_domain",
+      "7885_raw_bottom_threshold",
+      "7885_missing_cube_family"
+    ],
+    "original_preserved": "Pauli commutation, unrestricted free-Fock spectra, all original numeric tables, exact cube J=0 result and the 4^3 Cauchy certificate.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Independent complete4096-field gauge reduction and block determinant proof establish all32 classes and exact even threshold. Actual final W_even, threshold and census predicates reject odd-domain, raw-bottom and omitted-family mutants. Full code/Fock equivalence remains conditional."
+  },
+  {
+    "id": "F2",
+    "priority": "P2",
+    "original_title": "Compare the actual extended-source force with the point law; H3 currently checks a tautological sign identity",
+    "original_narrow_fix": "Retain the correct stationary-action identity and sign reversal F_U=-F_num. State the point law as a point-source/leading approximation or supplied test-body convention, and give the exact extended-source convolution response. Make H3 test the claimed actual objects and retain measured finite discrepancies rather than weaken a false equality tolerance. Relabel the existing C5 numbers as the x component, preserving their original values and the c7-to-live force/action correction provenance.",
+    "action": "H3 now compares actual extended FU and point FN, reports0.040047771 rather than falsezero, and guards exact extended convolution. H1/H2 retained; x-component labels corrected and both old7881 action revisions preserved.",
+    "final_anchors": [
+      {
+        "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 50,
+        "text": "## Theorem 3b — action sign and actual operands (H1–H3)",
+        "line_sha256": "537d6657fbc2e430d1a64cd3e69b054077cd8ce1137e08f82a4e8ee6c02c0dbf",
+        "source_sha256": "0ea261e4f84fbb86b0ef4537ade32d32e485f61a9d960691ce63d08daefbdeea"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 629,
+        "text": "    NDEV = max(NDEV, float(np.max(np.abs(FU - FN))))",
+        "line_sha256": "9d99ce4bc4147212091b4c20acaf6a808ac1d6025c8765e9ba735aafb38be944",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 632,
+        "text": "    FEXT = np.array([np.sum(rho2 * (np.roll(phiR,-1,axis=a)-np.roll(phiR,1,axis=a))/2) for a in range(3)])",
+        "line_sha256": "443ea2790494512c450eebe95b2d519d812d17562655184a0375993c513759c6",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 640,
+        "text": "check(\"H3 [actual operands] extended FU versus point FN has nonzero discrepancy %.9f; exact extended convolution matches FU to %.1e; no false point equality\" % (NDEV,EXTDEV), NDEV>1e-3 and EXTDEV<1e-14)",
+        "line_sha256": "1fad05f165f12b742d619c936051cf782a41143c4bbb654c7977c1e68b012664",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 506,
+        "text": "check('C5 [finite x-component diagnostic] 4 pi D^2 F_num,x/(E1 E2) = %.4f/%.4f/%.4f/%.4f/%.4f/%.4f; not vector norm or a certified inverse-square law; historical point rows1.0194/1.0064/1.0009/0.9963 remain comparison only'",
+        "line_sha256": "7d1449ffac494ce38cf0d4f9f353ceccbb7d859ef873f59c913e20da9a0fbebf",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      }
+    ],
+    "controls": [
+      "7881_restore_tautology",
+      "7881_extended_replaced_by_point",
+      "7881_wrong_action_sign"
+    ],
+    "original_preserved": "H1/H2, all original force ratios/angles and source tables; attractive sign conditional on taking U=A* and a test-force convention.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Actual H3 now compares FU-FN and FU-FEXT. Independent rational coordinate force identity and actual restored-tautology/point-convolution/wrong-sign mutations support closure; numerical x-component labels and original action-sign history are consistent."
+  },
+  {
+    "id": "F3",
+    "priority": "P2",
+    "original_title": "Distinguish the classical summed source from the nonadditive joint Slater density",
+    "original_narrow_fix": "Use distinct symbols for the actual joint determinant density and the classical summed response source throughout T2/H1, claim_scope, labels and executable block. Explicitly bind each reported quadratic table to the latter. Preserve the genuine nonadditivity data and add a small countercontrol so the joint density cannot silently replace the classical sum in an exact claim.",
+    "action": "Actual joint Slater density retained and differentiated from classical sum at source, formula, table and cache levels. Independent same-box residual−0.284741566 versus classical~1e-16 is now a source predicate.",
+    "final_anchors": [
+      {
+        "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 34,
+        "text": "## Theorem 2 — classical-sum response (B1–B6)",
+        "line_sha256": "be0fd30852d2ebdfed90e0bd9f07c8fcc2e74ace60ecda6313566e89d1cc4a44",
+        "source_sha256": "0ea261e4f84fbb86b0ef4537ade32d32e485f61a9d960691ce63d08daefbdeea"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 295,
+        "text": "                              r1=r1, r2=r2, r12=r12, e_joint=e12)",
+        "line_sha256": "60cb46983a227bbdca69f1761cb42312e4e86c20c6d670a66e3155e391e91926",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 649,
+        "text": "CLASSICAL_RES=_same_box_bilinear(J1+J2,J1+J2)-_same_box_bilinear(J1,J1)-_same_box_bilinear(J2,J2)-2*_same_box_bilinear(J1,J2)",
+        "line_sha256": "5183da320595171bb0903beb7b14bd39cdf62aee8ce6494313b0dc2784f554e5",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 650,
+        "text": "JOINT_RES=_same_box_bilinear(JJ,JJ)-_same_box_bilinear(J1,J1)-_same_box_bilinear(J2,J2)-2*_same_box_bilinear(J1,J2)",
+        "line_sha256": "5a0eb29f9282c5ad5b22cc72e42f6cb57d0452be198796985f4b7dbe15a59213",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      }
+    ],
+    "controls": [
+      "7881_joint_replaced_by_classical"
+    ],
+    "original_preserved": "Both the determinant projector/additivity-defect evidence and the exact classical quadratic identity.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Final ST retains e_joint, and actual R1 checks its density and same-box quadratic defect separately from classical-sum bilinearity. Replacing it by the sum fails. No joint source additivity is inherited."
+  },
+  {
+    "id": "F4",
+    "priority": "P2",
+    "original_title": "Restrict neutral particle-hole claims to the selected fixed-number preparation",
+    "original_narrow_fix": "Keep all zero-charge and conjugation identities for the selected fixed-N particle-hole family, but distinguish even global parity, delta N=0 preparation, and field zero-mode subtraction. Preserve charged even excitations as a live alternative; narrow the empty-vacuum statement to absence of kinetic sector selection at N=0, rather than absence of Dirac band structure. Carry this through the 7885 inherited quotation/current interpretation without rewriting the historical quotation as if it had always been correct.",
+    "action": "Fixed-number neutral preparation, even carrier parity and response P0 are separate. Actual34-particle even projector retains charged+2 alternative; empty source does not remove a supplied Dirac band.",
+    "final_anchors": [
+      {
+        "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 34,
+        "text": "## Theorem 2 — selected fixed-number pairs (B1–B5, R1/R3)",
+        "line_sha256": "48ffad2e27348c4698842c953bfccdc617da10da8469b2d740a866682e82dded",
+        "source_sha256": "5fd4d2f12542b11716dfdfe8dfecc523b714af38e6102d324b3ea716891ec771"
+      },
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 79,
+        "text": "## Corollary and interfaces",
+        "line_sha256": "60b7e14092ef0d807e784b634e6d20ce91aef82248f93511a25567d2b302de97",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 663,
+        "text": "    check(\"R1 [actual even alternative] adding two empty orbitals gives deltaN=%.12f, even total N34, projector residual %.1e\" % (charge,residue), abs(charge-2)<1e-12 and residue<1e-12 and (s[\"N\"]+2)%2==0)",
+        "line_sha256": "ea2542f54a8990a96d71bd7f4c503da71d8f99e85032c8b888a089dde4255daf",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      }
+    ],
+    "controls": [
+      "7879_charged_one_orbital"
+    ],
+    "original_preserved": "Finite half-filled projectors, each original neutral pair table, and ordinary even-parity charged alternatives.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Rank-preserving one-pair preparation is explicitly fixedN. The actual two-empty-orbital projector confirms an even charged alternative and rejects one-orbital substitution. P0 and empty-state dispersion are separately scoped."
+  },
+  {
+    "id": "F5",
+    "priority": "P2",
+    "original_title": "Keep state, readout, source, force and vacuum selections as separate supplied hypotheses",
+    "original_narrow_fix": "State the fixed-record parity versus expectation distinction, and declare preparation/measurement, energy-source choice, ground-state selection, action-to-interaction-energy identification and test-body response separately. Narrow all sole-vacuum/one-coefficient explanatory claims to the supplied free model. State real-profile scope or use an explicit Hermitian local energy for complex states. Correct D2's factor label; preserve all measured energy/profile/count data and all open physical supplier boundaries. Do not create a primitive, physical scale, APS carrier or force law.",
+    "action": "Physical law, preparation, readout, response, U=A* and units remain supplied. Real-state row domain and complex counterexample explicit; PSD is a quadratic property, cross-source bilinear can be negative. Energy factor~1.56/product2.425 correctly labeled; shape also changes.",
+    "final_anchors": [
+      {
+        "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 50,
+        "text": "## Theorem 5 — readout clauses and actual covariance (E1–E4, R2/R4)",
+        "line_sha256": "004b14ade4dfd3d16f4cab9342b313f1f1cc0cc80ab0e367cffc9416ffc05f03",
+        "source_sha256": "5fd4d2f12542b11716dfdfe8dfecc523b714af38e6102d324b3ea716891ec771"
+      },
+      {
+        "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 58,
+        "text": "## Theorem 4 — energy and count choices (D1–D4)",
+        "line_sha256": "59c2a0f9055fb5f50c66ba6f2eb89dd6ac843e122aba4aeea2304857d75cc240",
+        "source_sha256": "0ea261e4f84fbb86b0ef4537ade32d32e485f61a9d960691ce63d08daefbdeea"
+      },
+      {
+        "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 64,
+        "text": "## Units and corollary",
+        "line_sha256": "affec5b707e5d197bc770930bde050e3f945e41c1119d24aeebcf4ede81c1682",
+        "source_sha256": "0ea261e4f84fbb86b0ef4537ade32d32e485f61a9d960691ce63d08daefbdeea"
+      },
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 79,
+        "text": "## Corollary and interfaces",
+        "line_sha256": "60b7e14092ef0d807e784b634e6d20ce91aef82248f93511a25567d2b302de97",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 666,
+        "text": "    check(\"R2 [readout counterexample] identical fixed-Z probabilities, offdiagonal energies %.12f / %.12f\" % es, np.array_equal(a*a,b*b) and abs(es[0]-1)<1e-12 and abs(es[1]+1)<1e-12)",
+        "line_sha256": "b7d357236533d3c8bc47c821f5bfe69c516b2129dccbd7bb434bea26d88d7b49",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 668,
+        "text": "    check(\"R3 [domain counterexample] complex pair gives max imaginary row %.6f while total imaginary %.1e; original source restricted to real states\" % (np.max(abs(row.imag)),abs(row.sum().imag)), np.max(abs(row.imag))>.1 and abs(row.sum().imag)<1e-14)",
+        "line_sha256": "ed569cdd33a5d6b62caa45ff478a75095c5b977409fe5dd0bb063766721e7246",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 664,
+        "text": "check(\"R3 [PSD is quadratic] Q(e1)=%.9f positive but B(e1,-e1)=%.9f negative\" % (POS,CROSS), POS>0 and CROSS<0 and abs(POS+CROSS)<1e-14)",
+        "line_sha256": "fba19191dcd52d7e3d909f6413d43952db62d5fe4b9632c89104161e887b025c",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      }
+    ],
+    "controls": [
+      "7879_energy_readout_zero"
+    ],
+    "original_preserved": "Conditional source/response algebra, explicit absence of G_Newton or physical units, and all original finite comparison outcomes.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Complete notes/runners distinguish supplied law, state, fixed-record probabilities, offdiagonal readout, real row source, action-to-energy identification, force convention and units. Actual opposite-energy/complex-row/PSD-cross controls and unchanged filter-profile data support these distinctions."
+  },
+  {
+    "id": "F6",
+    "priority": "P2",
+    "original_title": "Label the incomplete torus gauge map accurately; its seam residual is removable",
+    "original_narrow_fix": "Either keep the original rows explicitly as incomplete-map diagnostics and withdraw the claimed irreducible covariance caveat, or add the complete seam-aware actual map with all-edge assertions. Preserve naive/KS-only results and guard against omitted seam factors. Do not infer a locality/no-go wall from this comparison.",
+    "action": "Old naive/KS-bulk-only residuals kept as incomplete-map diagnostics; both actual full seam-aware3072 directed-edge solutions have zero matrix residual and energy covariance~1e-16. No covariance no-go remains.",
+    "final_anchors": [
+      {
+        "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 50,
+        "text": "## Theorem 5 — readout clauses and actual covariance (E1–E4, R2/R4)",
+        "line_sha256": "004b14ade4dfd3d16f4cab9342b313f1f1cc0cc80ab0e367cffc9416ffc05f03",
+        "source_sha256": "5fd4d2f12542b11716dfdfe8dfecc523b714af38e6102d324b3ea716891ec771"
+      },
+      {
+        "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 42,
+        "text": "## Theorem 3 — extended versus point response (C1–C5)",
+        "line_sha256": "225b71a46fa989b4c105d34461476a6ba21c62ee0b54b25633f57a8fa6d3a0ec",
+        "source_sha256": "0ea261e4f84fbb86b0ef4537ade32d32e485f61a9d960691ce63d08daefbdeea"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 680,
+        "text": "    check(\"R4 [actual full gauge] all %d directed edge equations, matrix residual %.0e and real energy translation %.1e; twist seam included\" % (edges,mr,er), edges==3072 and consistent and np.all(abs(gauge)==1) and mr==0 and er<1e-14)",
+        "line_sha256": "1f282914758cd3d855a20243e384b7f22e6c8d4afc44413713d5fe73eb148af2",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 662,
+        "text": "check(\"R2 [complete actual translation] %d directed equations, matrix residual %.0e, row-energy residual %.1e; old KS-only residual retained separately\" % (edge_count,mr,cov), edge_count==3072 and consistent and np.all(abs(GG)==1) and mr==0 and cov<1e-14)",
+        "line_sha256": "8ffba30173e23b74a320d464bccc1c9462f3f405344aa8ae67c7203445b5f3e9",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      }
+    ],
+    "controls": [
+      "7879_omit_full_gauge",
+      "7881_omit_full_gauge"
+    ],
+    "original_preserved": "Exact gauge covariance with full seam carry; all originally recorded limited-map residuals as history.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Both actual seam-aware edge systems verify3072 directed equations and exact matrix covariance; missing-gauge mutants fail. Old incomplete-map residuals are retained under correct labels and supply no torus obstruction."
+  },
+  {
+    "id": "F7",
+    "priority": "P2",
+    "original_title": "Separate the historical exponent tolerance from the new amplitude diagnostic and finite fits",
+    "original_narrow_fix": "Preserve the original 0.02 threshold and every original result, but label it as the explicitly chosen amplitude diagnostic and keep the exponent quote in its original meaning. Identify the actual fit and Richardson protocol, with finite-window/finite-box scope; do not silently change thresholds or advertise a validated infinite-volume uncertainty.",
+    "action": "Original amplitude0.02 and all finite reference rows unchanged; exponent tolerance distinct, actual log fit/Richardson named, zero-total leading dipole does not erase higher multipoles.",
+    "final_anchors": [
+      {
+        "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 44,
+        "text": "## Theorem 4 — finite response protocols (D1–D6)",
+        "line_sha256": "fb5cedf00ddf08a2ab7e532e3e8e6955df44bc9c647fbf1d5c9fb237833f5718",
+        "source_sha256": "5fd4d2f12542b11716dfdfe8dfecc523b714af38e6102d324b3ea716891ec771"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 465,
+        "text": "    check('D3 [numerical] fixed-N number source: total %.0e, star monopole %.0e at r = 16, dipole |p| = %.3f at d = 4, actual fitted log-log slope %.2f, 4 pi r^2 antisym_x phi / p_x = %s at r = 5/8/10; higher multipoles not excluded'",
+        "line_sha256": "b4f89ccf4726fc263df346813648fe27eb4b3b6ad210ee87d58616f6f7445c55",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 483,
+        "text": "    check('D4 [numerical, chosen amplitude band0.02] real energy source: 4 pi r phi at r = Lb/4 is %s at Lb = 8/16/32/64, outside the chosen band about0.3267 at8,16 and inside at32,64; the historical exponent tolerance is a distinct quantity'",
+        "line_sha256": "cfc5bed951018a20e6b4538b2e468e7dce264af66b42ae4b21b0c1ca0985fa45",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 503,
+        "text": "    check('D5 [numerical, finite Richardson protocol] 2 f_64 - f_32 gives coefficients %s at dd = 4/6/8/10 against the matched point control %s, agreeing to0.01 on these points only'",
+        "line_sha256": "25b73c1b234ff7e63afbfc30be16a33192fa95a1c9b310456f85a46115799609",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      }
+    ],
+    "controls": [],
+    "original_preserved": "Original finite monopole/dipole responses, numeric reference rows and pre-execution diagnostic values.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "The0.02 amplitude criterion is preserved as chosen, not attributed to the historical exponent tolerance. Actual log fit, Richardson combination and finite window are labeled, with no error certificate or pure-dipole exclusivity."
+  },
+  {
+    "id": "F8",
+    "priority": "P2",
+    "original_title": "Do not infer the APS orientation label from bulk holonomy invariance",
+    "original_narrow_fix": "Keep the finite algebra and exact two-component linear-span obstruction under an explicit imposed parity label. Withdraw the inference that preserved bulk flux fixes an independently defined APS chi_eta, and keep boundary/source transport and alternative odd readouts unresolved. Update the dependent P6/summary/no-go language without inventing independent walls.",
+    "action": "Finite imposed [1,1] versus [1,-1] span and conjugation survive; no APS boundary operator, chi_eta transport, independence wall or universal odd-source exclusion.",
+    "final_anchors": [
+      {
+        "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 56,
+        "text": "## Theorem 6 — imposed two-component span (F1–F2)",
+        "line_sha256": "3e05c85dc837fcb79aa9522c2aaebcf48c883e3aa59f8d3b0f7047091680151c",
+        "source_sha256": "5fd4d2f12542b11716dfdfe8dfecc523b714af38e6102d324b3ea716891ec771"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 646,
+        "text": "    check('F1 [finite imposed-label span] manually supplied [+1,+1] has least-squares residual %.6f = sqrt2 to [+1,-1]; no APS boundary/operator/orientation map constructed' % resid,",
+        "line_sha256": "81c23d49946570a88961c274cc0eba5444763f2cf8a2e176d1037c6e46ad8bf8",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 654,
+        "text": "    check('F2 [finite chiral identity] conjugated empty orbital is in occupied shell (%.12f), energy negated (%.0e); bulk holonomies stay fixed, while an independently defined APS label remains untested'",
+        "line_sha256": "a7f1913dcc92f82b0264a32c3fa6b36532191f7cf16941b9bede22f717194e25",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      }
+    ],
+    "controls": [],
+    "original_preserved": "Bulk conjugation identities and exact least-squares residual for the stated finite coefficient space.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "The real grading and imposed two-vector span survive; no boundary APS operator or chi_eta transport is inferred. Current no-go prose keeps alternative readouts and physical supplier open."
+  },
+  {
+    "id": "F9",
+    "priority": "P2",
+    "original_title": "State actual bipartite, degree, zero-mode and discrete-filling domains",
+    "original_narrow_fix": "Describe the four algebra fixtures separately from the even bipartite spectral fixtures. State floor/ceiling/zero-mode occupations and then the admissible parity restriction. Present T5's continuous m minimization as a rigorous lower bound, retaining the exact attained even 4^3 case. Never infer density-half or unique vacuum from zero-mode ties.",
+    "action": "Four algebra fixtures distinguished from bipartite spectral ones; oddV/zero-mode/even-occupation ties explicit. Continuous real-m lower bound separated from discrete optimum, exact evenN32 certificate retained.",
+    "final_anchors": [
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 32,
+        "text": "## Theorem 2 — J=0 spectra and geometry (B1–B5)",
+        "line_sha256": "79d6d9dd51c2a367564fa906b24291e6b1a69dc1f1c9a5800f17c13970e09250",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 67,
+        "text": "## Theorem 5 — a valid all-field lower bound (D1–D3)",
+        "line_sha256": "dc6b53b788dd42741da24ec659bcc7711417cd4e6e66cbac349b6492f2e3a90a",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 854,
+        "text": "check(\"R4 [actual domain ties] plain4^3 unrestricted22..42; even subfamily22,24,...,42; odd openV27 is not integer half filling\", ZTIE==list(range(22,43)) and EVTIE==TRANGE and len(L3.V)==27 and len(Lc.V)==8)",
+        "line_sha256": "8d205e560f9b748040e71a7b3b63d633caac84f049773b871285aa70072df8a4",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      }
+    ],
+    "controls": [],
+    "original_preserved": "Chiral symmetry on genuinely bipartite fixtures, exact tie characterization in unrestricted Fock space, and the valid relaxed Cauchy bound.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Algebra geometry is separate from bipartite spectral geometry; zero-mode and even-domain ties are explicit. Independent Cauchy differentiation confirms a real relaxation lower bound, with the exact N32 equality case only on its stated interval."
+  },
+  {
+    "id": "F10",
+    "priority": "P2",
+    "original_title": "Keep uniform-sector crossings and half-filling scans distinct from a global phase diagram",
+    "original_narrow_fix": "Label every finite table/crossing/window by its actual field/twist comparison class and give tie conventions. Keep the exact all-field certificate on its stated interval and cube exhaustive results at their verified domain. Describe the continuous thermodynamic formula separately from finite occupancy steps; retain unknown nonuniform competitors and unresolved vacuum-selection hypotheses.",
+    "action": "Uniform-family/eight-twist crossings and half-filling windows labeled by actual domain, finite lower envelope/ties stated, nonuniform competitors unresolved outside finite all-field certificate.",
+    "final_anchors": [
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 40,
+        "text": "## Theorem 3 — finite uniform-family comparisons (C1–C3, F1–F2)",
+        "line_sha256": "5beeba8a5ea4e4fb7bd40f47eef0305f5fee10c8aaf0f29eb5de3efb0baeaef1",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 73,
+        "text": "## Theorem 6 — finite windows and the small-J integral (E1–E2, F3)",
+        "line_sha256": "117aa22d3b9240ca3e664d898a696d8680c2a8d7a71721c7407ef8161aa7f45e",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 659,
+        "text": "check('C3 [numerical, 1e-9] original unrestricted two-uniform-family crossings sqrt3/2=%.9f (4^3), %.6f (6^3), %.6f (8^3); no untested-field certificate'",
+        "line_sha256": "c2997ffb1be7be48e410394390d8e20365c685da3bcd495c0f1606fb704e778c",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 751,
+        "text": "check('E1 [eight-staggered-twist unrestricted family] 4^3 half-filled branch below %.6f, fixed selected twist below %.6f; not an all-field or general even-domain window' % (p4, gap4),",
+        "line_sha256": "33b35faa3c34c8f1631d18af8c03f2476560992878b0d49d2e96f925af7f4d98",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      }
+    ],
+    "controls": [],
+    "original_preserved": "All original uniform-sector tables, symbolic crossing arithmetic and finite certified global interval.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Every finite crossing/window is tied to the actual uniform or eight-twist comparison. Finite occupation is a step/tie set. The valid all-field certificate does not certify untested higher-J phases."
+  },
+  {
+    "id": "F11",
+    "priority": "P2",
+    "original_title": "Restrict the chemical-potential no-dynamics statement to fixed N or N-commuting observables",
+    "original_narrow_fix": "State exact fixed-N evolution up to global phase and invariance of N-commuting observable dynamics. Preserve coherent even-N sectors as a distinct domain; do not turn number conservation into a general channel or fixed-record readout theorem.",
+    "action": "-JV+2JN is scalar only on fixedN, or invisible to N-commuting observables. Explicit evenN0/N2 coherence cos4Jt counters channel-invariance overreach.",
+    "final_anchors": [
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 26,
+        "text": "## Theorem 1 — occupancy algebra and dynamics (A1–A5, R2)",
+        "line_sha256": "0dcbc56955f422bee67a72d9da6f4269596ebf570353ea677435e4e641bbf288",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 849,
+        "text": "check(\"R2 [even-sector coherence] pair observable %.12f equals cos4Jt and differs from initial1\" % coherence, abs(coherence-np.cos(4*JCO*TCO))<1e-14 and abs(coherence-1)>.1)",
+        "line_sha256": "1cd40682e7de4e2f787ae55d859615291f5ce84412c5e76b25efe2e452ff7ed1",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      }
+    ],
+    "controls": [],
+    "original_preserved": "Exact Pauli conservation, chemical-potential identity and no induced hopping inside fixed N.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "The corrected channel domain is fixedN or N-commuting observables. Independent symbolic evenN0/N2 coherence calculation confirms the retained cos4Jt counterexample."
+  },
+  {
+    "id": "F12",
+    "priority": "P2",
+    "original_title": "Bind the quoted crossover uncertainty to an executed convergence control or narrow it to L224",
+    "original_narrow_fix": "Preserve the L224 root/table and label them finite quadrature with explicit discretization/zero-level ambiguity. Withdraw the undocumented convergence sequence/error bar unless its actual immutable evidence is supplied and reviewed. Keep the separately derived small-J limit and its finite-grid resolution warning; no gratuitous larger-grid campaign is needed for a narrow honest repair.",
+    "action": "One original L224 quadrature retained, historical undocumented convergence/error sequence withdrawn;3e-6 retained as reference-match criterion. Exact small-J half-band coefficient2/(3pi²) retained independently.",
+    "final_anchors": [
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 44,
+        "text": "Only the original L_B=224 Bloch quadrature is executed for the large-grid table. Its root is approximately0.8654029 and is compared arithmetically with the historical quoted0.8654003. The old claimed128/160/192/224 convergence sequence and +/-3e-6 uncertainty have no bound execution evidence here and are withdrawn. The original numerical tolerance around the quoted number remains a reference diagnostic, not a quadrature-error estimate. No additional grid is run to manufacture a limit.",
+        "line_sha256": "6e724bcf7113e63bf930897d386620b93a03e00216c90af6443dc12981217e04",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 77,
+        "text": "For the supplied gapless staggered Bloch integral, the negative band has half the site-normalized weight. Near its cone, the removed region has radius2J, giving (1/2)(4pi/3)(2J)^3/(2pi)^3=2J^3/(3pi^2), with higher-order correction O(J^5). This analytic coefficient is retained separately from the finite L224 samples. Tiny J can be below that grid's level spacing, and numerical zero levels affect the J=0 count. Those limitations prevent using the table as a certified continuum error bar.",
+        "line_sha256": "242c3602bbcdd9f2dec374fb3f9ed163cfade0af82a058a95a38a5de66c039ac",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 810,
+        "text": "check('F2 [single L224 quadrature] J*=%.7f, fillings %.4f staggered/%.4f plain; old3e-6 reference-match tolerance retained, no discretization error estimate' % (Jl, ns, nq),",
+        "line_sha256": "a5e96b8337bbc83d3d3385f7c56b77cc4b0d8c1c2766b55c990a2993221e4a61",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 852,
+        "text": "check(\"R3 [analytic cone normalization] negative-band half weight yields coefficient2/(3pi^2), separate from finite quadrature\", sp.simplify(removed/jj**3-2/(3*sp.pi**2))==0)",
+        "line_sha256": "3d4768340254bcee21d42efb9af2485bf7bf7a0cf9d29a993c0afc4b0a02d8c3",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      }
+    ],
+    "controls": [
+      "7885_wrong_cone_weight"
+    ],
+    "original_preserved": "Finite L224 data, real-space/Bloch spectrum parity checks and the analytic J^3 coefficient.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Only the actual L224 table/reference match remains numerical. The undocumented grid sequence/error bar is withdrawn. Independent negative-band normalization and actual doubled-weight mutation enforce the separate analytic coefficient."
+  },
+  {
+    "id": "F13",
+    "priority": "P3",
+    "original_title": "Bind current claim and premise text to the evidence and remove stale audit routing",
+    "original_narrow_fix": "Add literal current own-note/memo and genuinely used proof/interpretation inputs and direct semantic citation links as appropriate, with actual content checks and cache-first drift/removal controls. Keep historical quotations clearly historical, avoid promoting all cited parent campaigns, and do not invent helper registrations (actual local helper closure is empty). Route current trace to source review under the owner audit deferral, with preserved original caches and quotations. Refresh changed primaries only after notes/declared inputs freeze.",
+    "action": "All three canonical filename IDs and primaries derived through both APIs, zero helpers; eight own-note/memo/bridge edges literal,pinned,guarded and genuinely cached. Five intended Markdown citations only; historical record outside discovery. Formal audit deferred.",
+    "final_anchors": [
+      {
+        "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 10,
+        "text": "**Claim type:** bounded_theorem",
+        "line_sha256": "c3634a47ba5723aaf289d74555a19401e45f8d0592a7419dd68fa2e921f67792",
+        "source_sha256": "5fd4d2f12542b11716dfdfe8dfecc523b714af38e6102d324b3ea716891ec771"
+      },
+      {
+        "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 10,
+        "text": "**Claim type:** bounded_theorem",
+        "line_sha256": "c3634a47ba5723aaf289d74555a19401e45f8d0592a7419dd68fa2e921f67792",
+        "source_sha256": "0ea261e4f84fbb86b0ef4537ade32d32e485f61a9d960691ce63d08daefbdeea"
+      },
+      {
+        "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 10,
+        "text": "**Claim type:** bounded_theorem",
+        "line_sha256": "c3634a47ba5723aaf289d74555a19401e45f8d0592a7419dd68fa2e921f67792",
+        "source_sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8"
+      },
+      {
+        "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "line": 24,
+        "text": "AUDIT_INPUT_PATHS = ['docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md']",
+        "line_sha256": "0dea3034d9d920368b48fe9eac785737a887aa9ec96c4f67596bb672023baea2",
+        "source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+      },
+      {
+        "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "line": 23,
+        "text": "AUDIT_INPUT_PATHS = ['docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md']",
+        "line_sha256": "a552c92b0342e8627790712d09595e3dff103c7e88b0b5568d308b4c27ab93d0",
+        "source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+      },
+      {
+        "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "line": 28,
+        "text": "AUDIT_INPUT_PATHS = ['docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md']",
+        "line_sha256": "94e7983b256d0934678b90fd71f5c96b6ea80d1124a6739101360b502ab7a7e8",
+        "source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+      }
+    ],
+    "controls": [],
+    "original_preserved": "Original three caches and all predecessor provenance; present review is source review only, not applied audit or retention.",
+    "final_status": "independently confirmed closed at exact integrated source",
+    "independent_confirmation": "Actual filename-derived IDs, primaries, both helper consumers,8 input edges,5 citations and genuine cache identities agree. All36 cache cases/24 source guards have expected outcomes. History is outside note discovery and audit deferral is explicit."
+  }
+]

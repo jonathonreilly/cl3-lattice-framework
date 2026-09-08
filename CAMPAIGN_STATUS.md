@@ -51,16 +51,16 @@ joint-law selection remain open.
 ## Next scientific decisions
 
 1. Reviewed corrected Record, Noether, matter, shifting, symmetry/Hartree,
-   walls, sea/corner, flux and relaxation source are on main. BACKLOG_STATUS.md
-   records exact scopes and commits. Vacuum/energy corrections are frozen for
-   final confirmation by the original reviewer. Carrier/role #7869/#7880 repairs
-   are active after original review; #7918/#7928/#7934 support/readout originals
-   are under joint source review. The #6377 successor and eleven consolidated
-   originals are checkpointed for resumption after vacuum confirmation. Stale historical authority and moved OS-note guards
-   are preserved as failures; no supplier tower or full scientific PASS is accepted.
-   #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
-   reserved-source hold. Closure reconciliation is complete; 77 pending closed
-   scopes remain at seven successors. Preserve the fixed 254 and all reservations.
+   walls, sea/corner, flux, relaxation and vacuum/energy source are on main.
+   BACKLOG_STATUS.md records exact scopes and commits. Carrier/role #7869/#7880
+   author repairs continue after original review; #7918/#7928/#7934 support/readout
+   originals are under joint source review. The #6377 successor and eleven
+   consolidated originals resume complete source/dependency review from checkpoint.
+   Stale authority and moved OS-note guards remain recorded failures; no supplier
+   tower or full scientific PASS is accepted. #5966 retains its old Record premise
+   hold and #6515 its actual reserved-source hold. Closure reconciliation remains
+   complete: 77 pending closed scopes at seven successors. Fixed254 only; all
+   reservations and formal audit deferral remain.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

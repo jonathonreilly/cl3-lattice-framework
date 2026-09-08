@@ -1,0 +1,1 @@
+The initial local composition summary said 94 lines for the final prose/display delta. Its hash-bound read receipt correctly records all 100 lines. Corrected the summary and reusable script before final dispatch; no science source, check, cache or graph changed.

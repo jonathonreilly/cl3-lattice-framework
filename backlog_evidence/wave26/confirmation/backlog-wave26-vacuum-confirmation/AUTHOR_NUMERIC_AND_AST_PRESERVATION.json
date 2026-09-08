@@ -1,0 +1,1360 @@
+[
+  {
+    "pr": "7879",
+    "runner": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+    "original_count": 24,
+    "final_count": 28,
+    "checks": [
+      {
+        "id": "A1",
+        "old_condition": "Compare(left=Name(id='dev', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-06)])",
+        "final_condition": "Compare(left=Name(id='dev', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-06)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "-78.383672",
+          "-258.857540",
+          "-611.811768"
+        ],
+        "final_payload": [
+          "-78.383672",
+          "-258.857540",
+          "-611.811768"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='flat', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0.0)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='perE', ctx=Load()), op=Add(), right=BinOp(left=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='sqrt', ctx=Load()), args=[Constant(value=6)]), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='flat', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0.0)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='perE', ctx=Load()), op=Add(), right=BinOp(left=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='sqrt', ctx=Load()), args=[Constant(value=6)]), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0",
+          "-1.224744871",
+          "0e+00"
+        ],
+        "final_payload": [
+          "0",
+          "-1.224744871",
+          "0e+00"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A3",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='dev_b', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Name(id='dev_c', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Subscript(value=Name(id='gaps', ctx=Load()), slice=Constant(value=4), ctx=Load()), ops=[Gt(), Gt(), Gt()], comparators=[Subscript(value=Name(id='gaps', ctx=Load()), slice=Constant(value=6), ctx=Load()), Subscript(value=Name(id='gaps', ctx=Load()), slice=Constant(value=8), ctx=Load()), Constant(value=0)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='dev_b', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Name(id='dev_c', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Subscript(value=Name(id='gaps', ctx=Load()), slice=Constant(value=4), ctx=Load()), ops=[Gt(), Gt(), Gt()], comparators=[Subscript(value=Name(id='gaps', ctx=Load()), slice=Constant(value=6), ctx=Load()), Subscript(value=Name(id='gaps', ctx=Load()), slice=Constant(value=8), ctx=Load()), Constant(value=0)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "4.898979",
+          "3.464102",
+          "2.651309",
+          "8e-15"
+        ],
+        "final_payload": [
+          "4.898979",
+          "3.464102",
+          "2.651309",
+          "8e-15"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A4",
+        "old_condition": "Name(id='par', ctx=Load())",
+        "final_condition": "Name(id='par', ctx=Load())",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A5",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='worst_n', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Name(id='worst_chi', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0.0)]), Compare(left=Name(id='worst_ph', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='worst_n', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Name(id='worst_chi', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0.0)]), Compare(left=Name(id='worst_ph', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "8e-16",
+          "0",
+          "2e-15"
+        ],
+        "final_payload": [
+          "8e-16",
+          "0",
+          "2e-15"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B1",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='Ee_o', ctx=Load()), op=Sub(), right=BinOp(left=Subscript(value=Subscript(value=Name(id='S', ctx=Load()), slice=Constant(value='w'), ctx=Load()), slice=Subscript(value=Name(id='S', ctx=Load()), slice=Constant(value='N'), ctx=Load()), ctx=Load()), op=Sub(), right=Subscript(value=Subscript(value=Name(id='S', ctx=Load()), slice=Constant(value='w'), ctx=Load()), slice=BinOp(left=Subscript(value=Name(id='S', ctx=Load()), slice=Constant(value='N'), ctx=Load()), op=Sub(), right=Constant(value=1)), ctx=Load())))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Name(id='ip', ctx=Load()), ops=[Gt()], comparators=[Constant(value=150)]), Compare(left=Name(id='ih', ctx=Load()), ops=[Gt()], comparators=[Constant(value=150)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='Ee_o', ctx=Load()), op=Sub(), right=BinOp(left=Subscript(value=Subscript(value=Name(id='S', ctx=Load()), slice=Constant(value='w'), ctx=Load()), slice=Subscript(value=Name(id='S', ctx=Load()), slice=Constant(value='N'), ctx=Load()), ctx=Load()), op=Sub(), right=Subscript(value=Subscript(value=Name(id='S', ctx=Load()), slice=Constant(value='w'), ctx=Load()), slice=BinOp(left=Subscript(value=Name(id='S', ctx=Load()), slice=Constant(value='N'), ctx=Load()), op=Sub(), right=Constant(value=1)), ctx=Load())))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Name(id='ip', ctx=Load()), ops=[Gt()], comparators=[Constant(value=150)]), Compare(left=Name(id='ih', ctx=Load()), ops=[Gt()], comparators=[Constant(value=150)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "2.651309",
+          "171",
+          "176",
+          "3.64",
+          "3.63"
+        ],
+        "final_payload": [
+          "2.651309",
+          "171",
+          "176",
+          "3.64",
+          "3.63"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='sums', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Call(func=Name(id='float', ctx=Load()), args=[Call(func=Attribute(value=Name(id='rho_o', ctx=Load()), attr='sum', ctx=Load()))])]), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Constant(value=1.5), ops=[Lt()], comparators=[Call(func=Name(id='min', ctx=Load()), args=[Name(id='rmss', ctx=Load())])]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='rmss', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1.9)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='sums', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Call(func=Name(id='float', ctx=Load()), args=[Call(func=Attribute(value=Name(id='rho_o', ctx=Load()), attr='sum', ctx=Load()))])]), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Constant(value=1.5), ops=[Lt()], comparators=[Call(func=Name(id='min', ctx=Load()), args=[Name(id='rmss', ctx=Load())])]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='rmss', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1.9)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1e-14",
+          "1.60",
+          "1.77"
+        ],
+        "final_payload": [
+          "1e-14",
+          "1.60",
+          "1.77"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B3",
+        "old_condition": "Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='devs', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-14)])",
+        "final_condition": "Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='devs', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-14)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "2e-15",
+          "2.6513",
+          "4.5163"
+        ],
+        "final_payload": [
+          "2e-15",
+          "2.6513",
+          "4.5163"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B4",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Name(id='neg_o', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-15)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Name(id='neg_4', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-15)]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='neg4', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=0.4)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Name(id='neg_o', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-15)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Name(id='neg_4', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-15)]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='neg4', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=0.4)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0e+00",
+          "0e+00",
+          "0.2",
+          "0.3"
+        ],
+        "final_payload": [
+          "0e+00",
+          "0e+00",
+          "0.2",
+          "0.3"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B5",
+        "old_condition": "Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='abs_sums', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=2.0)])",
+        "final_condition": "Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='abs_sums', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=2.0)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1.12",
+          "1.94"
+        ],
+        "final_payload": [
+          "1.12",
+          "1.94"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C1",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='dr', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-15)]), Compare(left=Name(id='de', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-15)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='dr', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-15)]), Compare(left=Name(id='de', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-15)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "6e-17",
+          "0e+00"
+        ],
+        "final_payload": [
+          "6e-17",
+          "0e+00"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C2",
+        "old_condition": "BoolOp(op=And(), values=[Name(id='flips', ctx=Load()), Compare(left=Call(func=Name(id='int', ctx=Load()), args=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='max', ctx=Load()), args=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='abs', ctx=Load()), args=[BinOp(left=Name(id='h0', ctx=Load()), op=Sub(), right=Name(id='h1', ctx=Load()))])])]), ops=[Eq()], comparators=[Constant(value=0)]), Name(id='same_wl', ctx=Load())])",
+        "final_condition": "BoolOp(op=And(), values=[Name(id='flips', ctx=Load()), Compare(left=Call(func=Name(id='int', ctx=Load()), args=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='max', ctx=Load()), args=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='abs', ctx=Load()), args=[BinOp(left=Name(id='h0', ctx=Load()), op=Sub(), right=Name(id='h1', ctx=Load()))])])]), ops=[Eq()], comparators=[Constant(value=0)]), Name(id='same_wl', ctx=Load())])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1536",
+          "1536",
+          "0",
+          "True"
+        ],
+        "final_payload": [
+          "1536",
+          "1536",
+          "0",
+          "True"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D1",
+        "old_condition": "Name(id='ok_row', ctx=Load())",
+        "final_condition": "Name(id='ok_row', ctx=Load())",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.190/0.432/0.568"
+        ],
+        "final_payload": [
+          "0.190/0.432/0.568"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D2",
+        "old_condition": "Compare(left=Name(id='devp', ctx=Load()), ops=[Lt()], comparators=[Constant(value=0.0001)])",
+        "final_condition": "Compare(left=Name(id='devp', ctx=Load()), ops=[Lt()], comparators=[Constant(value=0.0001)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.4065/0.3468/0.3307/0.3275",
+          "5e-05"
+        ],
+        "final_payload": [
+          "0.4065/0.3468/0.3307/0.3275",
+          "5e-05"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D3",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Name(id='q_a', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Name(id='mono16', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=0.001)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='slope', ctx=Load()), op=Add(), right=Constant(value=2.0))]), ops=[Lt()], comparators=[Constant(value=0.05)]), Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='rats', ctx=Load()), slice=Name(id='r', ctx=Load()), ctx=Load()), op=Sub(), right=Constant(value=1.0))]), ops=[Lt()], comparators=[Constant(value=0.01)]), generators=[comprehension(target=Name(id='r', ctx=Store()), iter=Name(id='rats', ctx=Load()), is_async=0)])])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Name(id='q_a', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Name(id='mono16', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=0.001)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='slope', ctx=Load()), op=Add(), right=Constant(value=2.0))]), ops=[Lt()], comparators=[Constant(value=0.05)]), Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='rats', ctx=Load()), slice=Name(id='r', ctx=Load()), ctx=Load()), op=Sub(), right=Constant(value=1.0))]), ops=[Lt()], comparators=[Constant(value=0.01)]), generators=[comprehension(target=Name(id='r', ctx=Store()), iter=Name(id='rats', ctx=Load()), is_async=0)])])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1e-14",
+          "4e-05",
+          "3.206",
+          "-1.99",
+          "1.0003/1.0061/0.9940"
+        ],
+        "final_payload": [
+          "1e-14",
+          "4e-05",
+          "3.206",
+          "-1.99",
+          "1.0003/1.0061/0.9940"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D4",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value=8), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[Gt()], comparators=[Name(id='NOTE_BAND', ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value=16), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[Gt()], comparators=[Name(id='NOTE_BAND', ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value=32), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[LtE()], comparators=[Name(id='NOTE_BAND', ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value=64), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[LtE()], comparators=[Name(id='NOTE_BAND', ctx=Load())])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value=8), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[Gt()], comparators=[Name(id='NOTE_BAND', ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value=16), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[Gt()], comparators=[Name(id='NOTE_BAND', ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value=32), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[LtE()], comparators=[Name(id='NOTE_BAND', ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='b', ctx=Load()), slice=Constant(value=64), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[LtE()], comparators=[Name(id='NOTE_BAND', ctx=Load())])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.2534/0.3529/0.3335/0.3282"
+        ],
+        "final_payload": [
+          "0.2534/0.3529/0.3335/0.3282"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D5",
+        "old_condition": "Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='rich', ctx=Load()), slice=Name(id='dd', ctx=Load()), ctx=Load()), op=Sub(), right=Subscript(value=Name(id='ctrl', ctx=Load()), slice=Name(id='dd', ctx=Load()), ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=0.01)]), generators=[comprehension(target=Name(id='dd', ctx=Store()), iter=Name(id='rich', ctx=Load()), is_async=0)])])",
+        "final_condition": "Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='rich', ctx=Load()), slice=Name(id='dd', ctx=Load()), ctx=Load()), op=Sub(), right=Subscript(value=Name(id='ctrl', ctx=Load()), slice=Name(id='dd', ctx=Load()), ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=0.01)]), generators=[comprehension(target=Name(id='dd', ctx=Store()), iter=Name(id='rich', ctx=Load()), is_async=0)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1.0096/0.9941/0.9741/0.9427",
+          "1.0166/0.9966/0.9766/0.9456"
+        ],
+        "final_payload": [
+          "1.0096/0.9941/0.9741/0.9427",
+          "1.0166/0.9966/0.9766/0.9456"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D6",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Subscript(value=Name(id='mono', ctx=Load()), slice=Constant(value='c'), ctx=Load()), slice=Constant(value=64), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[LtE()], comparators=[Name(id='NOTE_BAND', ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Subscript(value=Name(id='mono', ctx=Load()), slice=Constant(value='d'), ctx=Load()), slice=Constant(value=64), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[LtE()], comparators=[Name(id='NOTE_BAND', ctx=Load())])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Subscript(value=Name(id='mono', ctx=Load()), slice=Constant(value='c'), ctx=Load()), slice=Constant(value=64), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[LtE()], comparators=[Name(id='NOTE_BAND', ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Subscript(value=Name(id='mono', ctx=Load()), slice=Constant(value='d'), ctx=Load()), slice=Constant(value=64), ctx=Load()), op=Sub(), right=Name(id='NOTE_STABLE', ctx=Load()))]), ops=[LtE()], comparators=[Name(id='NOTE_BAND', ctx=Load())])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.3283",
+          "0.3282",
+          "0.3275"
+        ],
+        "final_payload": [
+          "0.3283",
+          "0.3282",
+          "0.3275"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "E1",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='bx', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), Compare(left=Name(id='nsupp', ctx=Load()), ops=[Eq()], comparators=[Constant(value=6)]), Compare(left=Name(id='gauge_res', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0.0)]), Compare(left=Name(id='tr_rho', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Name(id='spec', ctx=Load()), ops=[Eq()], comparators=[List(elts=[UnaryOp(op=USub(), operand=Constant(value=0.5)), Constant(value=0.5)], ctx=Load())]), Compare(left=Name(id='tot', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='bx', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), Compare(left=Name(id='nsupp', ctx=Load()), ops=[Eq()], comparators=[Constant(value=6)]), Compare(left=Name(id='gauge_res', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0.0)]), Compare(left=Name(id='tr_rho', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Name(id='spec', ctx=Load()), ops=[Eq()], comparators=[List(elts=[UnaryOp(op=USub(), operand=Constant(value=0.5)), Constant(value=0.5)], ctx=Load())]), Compare(left=Name(id='tot', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0",
+          "6",
+          "0",
+          "6e-16",
+          "-0.5",
+          "+0.5",
+          "1e-14"
+        ],
+        "final_payload": [
+          "0",
+          "6",
+          "0",
+          "6e-16",
+          "-0.5",
+          "+0.5",
+          "1e-14"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "E2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='ax', ctx=Load()), ops=[NotEq()], comparators=[Constant(value=0)]), Compare(left=Name(id='cut_res', ctx=Load()), ops=[Gt()], comparators=[Constant(value=1e-09)]), Compare(left=Name(id='cutx', ctx=Load()), ops=[Eq()], comparators=[List(elts=[Constant(value=0), Constant(value=1), Constant(value=7)], ctx=Load())])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='ax', ctx=Load()), ops=[NotEq()], comparators=[Constant(value=0)]), Compare(left=Name(id='cut_res', ctx=Load()), ops=[Gt()], comparators=[Constant(value=1e-09)]), Compare(left=Name(id='cutx', ctx=Load()), ops=[Eq()], comparators=[List(elts=[Constant(value=0), Constant(value=1), Constant(value=7)], ctx=Load())])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1",
+          "3",
+          "4.4e-02",
+          "[0, 1, 7]"
+        ],
+        "final_payload": [
+          "1",
+          "3",
+          "4.4e-02",
+          "[0, 1, 7]"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "E3",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='gapl', ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.001)]), Compare(left=Call(func=Name(id='float', ctx=Load()), args=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='max', ctx=Load()), args=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='abs', ctx=Load()), args=[Name(id='rho_mix', ctx=Load())])])]), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='gapl', ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.001)]), Compare(left=Call(func=Name(id='float', ctx=Load()), args=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='max', ctx=Load()), args=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='abs', ctx=Load()), args=[Name(id='rho_mix', ctx=Load())])])]), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.1208"
+        ],
+        "final_payload": [
+          "0.1208"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "E4",
+        "old_condition": "Constant(value=True)",
+        "final_condition": "Constant(value=True)",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "F1",
+        "old_condition": "Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='resid', ctx=Load()), op=Sub(), right=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='sqrt', ctx=Load()), args=[Constant(value=2)]))]), ops=[Lt()], comparators=[Constant(value=1e-12)])",
+        "final_condition": "Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='resid', ctx=Load()), op=Sub(), right=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='sqrt', ctx=Load()), args=[Constant(value=2)]))]), ops=[Lt()], comparators=[Constant(value=1e-12)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1.414214"
+        ],
+        "final_payload": [
+          "1.414214"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "F2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='occ', ctx=Load()), op=Sub(), right=Constant(value=1.0))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Name(id='flip', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='occ', ctx=Load()), op=Sub(), right=Constant(value=1.0))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Name(id='flip', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1.000000000000",
+          "4e-16"
+        ],
+        "final_payload": [
+          "1.000000000000",
+          "4e-16"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      }
+    ],
+    "original_functions_exact_ignoring_strings_except": [
+      "main"
+    ],
+    "new_functions": [
+      "_source_input_guard",
+      "group_R"
+    ],
+    "old_source_sha256": "6dd961e2a4ace198d7fc6d882a688477c6f875c96c9d654f6a35a8853ef73012",
+    "final_source_sha256": "47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de"
+  },
+  {
+    "pr": "7881",
+    "runner": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+    "original_count": 25,
+    "final_count": 28,
+    "checks": [
+      {
+        "id": "A1",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='E_SEA', ctx=Load()), op=Sub(), right=Name(id='NOTE_E_SEA_8', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=1e-06)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='GAP', ctx=Load()), op=Sub(), right=BinOp(left=Constant(value=2), op=Mult(), right=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='sqrt', ctx=Load()), args=[BinOp(left=Constant(value=6), op=Sub(), right=BinOp(left=Constant(value=3), op=Mult(), right=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='sqrt', ctx=Load()), args=[Constant(value=2)])))])))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Name(id='HALF_RES', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-15)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='GAP', ctx=Load()), op=Sub(), right=Name(id='NOTE_GAP_8', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=1e-06)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='E_SEA', ctx=Load()), op=Sub(), right=Name(id='NOTE_E_SEA_8', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=1e-06)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='GAP', ctx=Load()), op=Sub(), right=BinOp(left=Constant(value=2), op=Mult(), right=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='sqrt', ctx=Load()), args=[BinOp(left=Constant(value=6), op=Sub(), right=BinOp(left=Constant(value=3), op=Mult(), right=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='sqrt', ctx=Load()), args=[Constant(value=2)])))])))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Name(id='HALF_RES', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-15)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='GAP', ctx=Load()), op=Sub(), right=Name(id='NOTE_GAP_8', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=1e-06)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "-611.811768",
+          "3.5e-07",
+          "2.651309",
+          "5.3e-15",
+          "7.8e-16"
+        ],
+        "final_payload": [
+          "-611.811768",
+          "3.5e-07",
+          "2.651309",
+          "5.3e-15",
+          "7.8e-16"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='E_ORB', ctx=Load()), op=Sub(), right=Name(id='NOTE_GAP_8', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=1e-06)]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Subscript(value=Name(id='r', ctx=Load()), slice=Constant(value=1), ctx=Load()), generators=[comprehension(target=Name(id='r', ctx=Store()), iter=Name(id='VAL', ctx=Load()), is_async=0)])]), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Subscript(value=Name(id='r', ctx=Load()), slice=Constant(value=0), ctx=Load()), generators=[comprehension(target=Name(id='r', ctx=Store()), iter=Name(id='VAL', ctx=Load()), is_async=0)])]), op=Sub(), right=Constant(value=4.5163))]), ops=[Lt()], comparators=[Constant(value=0.001)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='E_ORB', ctx=Load()), op=Sub(), right=Name(id='NOTE_GAP_8', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=1e-06)]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Subscript(value=Name(id='r', ctx=Load()), slice=Constant(value=1), ctx=Load()), generators=[comprehension(target=Name(id='r', ctx=Store()), iter=Name(id='VAL', ctx=Load()), is_async=0)])]), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Subscript(value=Name(id='r', ctx=Load()), slice=Constant(value=0), ctx=Load()), generators=[comprehension(target=Name(id='r', ctx=Store()), iter=Name(id='VAL', ctx=Load()), is_async=0)])]), op=Sub(), right=Constant(value=4.5163))]), ops=[Lt()], comparators=[Constant(value=0.001)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "2.651309",
+          "4.3614",
+          "4.5163",
+          "0e+00"
+        ],
+        "final_payload": [
+          "2.651309",
+          "4.3614",
+          "4.5163",
+          "0e+00"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A3",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='MAXIDEM', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)]), Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Subscript(value=Name(id='r', ctx=Load()), slice=Constant(value='tr'), ctx=Load()), ops=[Eq()], comparators=[Constant(value=256)]), generators=[comprehension(target=Name(id='r', ctx=Store()), iter=Name(id='A_ROWS', ctx=Load()), is_async=0)])])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='MAXIDEM', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)]), Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Subscript(value=Name(id='r', ctx=Load()), slice=Constant(value='tr'), ctx=Load()), ops=[Eq()], comparators=[Constant(value=256)]), generators=[comprehension(target=Name(id='r', ctx=Store()), iter=Name(id='A_ROWS', ctx=Load()), is_async=0)])])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "2e-15",
+          "256"
+        ],
+        "final_payload": [
+          "2e-15",
+          "256"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A4",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='op'), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.35)]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='op'), ctx=Load()), ops=[Lt()], comparators=[Constant(value=0.05)]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='oh'), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.37)]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='oh'), ctx=Load()), ops=[Lt()], comparators=[Constant(value=0.002)]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='op'), ctx=Load()), ops=[Gt(), Gt()], comparators=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='op'), ctx=Load()), Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='op'), ctx=Load())])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='op'), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.35)]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='op'), ctx=Load()), ops=[Lt()], comparators=[Constant(value=0.05)]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='oh'), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.37)]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='oh'), ctx=Load()), ops=[Lt()], comparators=[Constant(value=0.002)]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='op'), ctx=Load()), ops=[Gt(), Gt()], comparators=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='op'), ctx=Load()), Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='op'), ctx=Load())])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.37",
+          "0.15",
+          "0.044",
+          "0.014",
+          "0.38",
+          "0.021",
+          "0.0013",
+          "0.0036"
+        ],
+        "final_payload": [
+          "0.37",
+          "0.15",
+          "0.044",
+          "0.014",
+          "0.38",
+          "0.021",
+          "0.0013",
+          "0.0036"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A5",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='rel'), ctx=Load())]), ops=[Gt()], comparators=[BinOp(left=Constant(value=8), op=Mult(), right=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='rel'), ctx=Load())]))]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='rel'), ctx=Load())]), ops=[Gt()], comparators=[BinOp(left=Constant(value=8), op=Mult(), right=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='rel'), ctx=Load())]))]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='dev'), ctx=Load()), ops=[Gt()], comparators=[BinOp(left=Constant(value=8), op=Mult(), right=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='dev'), ctx=Load()))]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='dev'), ctx=Load()), ops=[Gt()], comparators=[BinOp(left=Constant(value=8), op=Mult(), right=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='dev'), ctx=Load()))])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='rel'), ctx=Load())]), ops=[Gt()], comparators=[BinOp(left=Constant(value=8), op=Mult(), right=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='rel'), ctx=Load())]))]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='rel'), ctx=Load())]), ops=[Gt()], comparators=[BinOp(left=Constant(value=8), op=Mult(), right=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='rel'), ctx=Load())]))]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=0), ctx=Load()), slice=Constant(value='dev'), ctx=Load()), ops=[Gt()], comparators=[BinOp(left=Constant(value=8), op=Mult(), right=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='dev'), ctx=Load()))]), Compare(left=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=1), ctx=Load()), slice=Constant(value='dev'), ctx=Load()), ops=[Gt()], comparators=[BinOp(left=Constant(value=8), op=Mult(), right=Subscript(value=Subscript(value=Name(id='d1', ctx=Load()), slice=Constant(value=2), ctx=Load()), slice=Constant(value='dev'), ctx=Load()))])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "-2.1e-02",
+          "-2.3e-03",
+          "-2.7e-04",
+          "-5.8e-05",
+          "-2.3e-03",
+          "-2.7e-04",
+          "2.1e-01",
+          "2.4e-02",
+          "2.7e-03"
+        ],
+        "final_payload": [
+          "-2.1e-02",
+          "-2.3e-03",
+          "-2.7e-04",
+          "-5.8e-05",
+          "-2.3e-03",
+          "-2.7e-04",
+          "2.1e-01",
+          "2.4e-02",
+          "2.7e-03"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A6",
+        "old_condition": "Compare(left=Name(id='MAXCNT', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)])",
+        "final_condition": "Compare(left=Name(id='MAXCNT', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1e-14"
+        ],
+        "final_payload": [
+          "1e-14"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B1",
+        "old_condition": "Compare(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='PC', ctx=Load()), slice=Name(id='Lb', ctx=Load()), ctx=Load()), op=Sub(), right=Subscript(value=Name(id='NOTE_POINT_CONTROL', ctx=Load()), slice=Name(id='Lb', ctx=Load()), ctx=Load()))]), generators=[comprehension(target=Name(id='Lb', ctx=Store()), iter=Tuple(elts=[Constant(value=32), Constant(value=64)], ctx=Load()), is_async=0)])]), ops=[Lt()], comparators=[Constant(value=0.0001)])",
+        "final_condition": "Compare(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='PC', ctx=Load()), slice=Name(id='Lb', ctx=Load()), ctx=Load()), op=Sub(), right=Subscript(value=Name(id='NOTE_POINT_CONTROL', ctx=Load()), slice=Name(id='Lb', ctx=Load()), ctx=Load()))]), generators=[comprehension(target=Name(id='Lb', ctx=Store()), iter=Tuple(elts=[Constant(value=32), Constant(value=64)], ctx=Load()), is_async=0)])]), ops=[Lt()], comparators=[Constant(value=0.0001)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.3307",
+          "0.3275",
+          "5e-06"
+        ],
+        "final_payload": [
+          "0.3307",
+          "0.3275",
+          "5e-06"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='min', ctx=Load()), args=[Subscript(value=Name(id='r64', ctx=Load()), slice=Slice(lower=Constant(value=1)), ctx=Load())]), ops=[Gt()], comparators=[Constant(value=0.9)]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='r64', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1.0)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='min', ctx=Load()), args=[Subscript(value=Name(id='r64', ctx=Load()), slice=Slice(lower=Constant(value=1)), ctx=Load())]), ops=[Gt()], comparators=[Constant(value=0.9)]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Name(id='r64', ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1.0)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.8517",
+          "0.9043",
+          "0.9650",
+          "0.9540"
+        ],
+        "final_payload": [
+          "0.8517",
+          "0.9043",
+          "0.9650",
+          "0.9540"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B3",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='r64b', ctx=Load()), slice=Constant(value=1), ctx=Load()), op=Sub(), right=Constant(value=0.8757))]), ops=[Lt()], comparators=[Constant(value=0.005)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='r64b', ctx=Load()), slice=Constant(value=2), ctx=Load()), op=Sub(), right=Constant(value=0.9188))]), ops=[Lt()], comparators=[Constant(value=0.005)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='r32', ctx=Load()), slice=Constant(value=2), ctx=Load()), op=Sub(), right=Constant(value=0.9575))]), ops=[Lt()], comparators=[Constant(value=0.005)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='r32b', ctx=Load()), slice=Constant(value=2), ctx=Load()), op=Sub(), right=Constant(value=0.8997))]), ops=[Lt()], comparators=[Constant(value=0.005)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='r64b', ctx=Load()), slice=Constant(value=1), ctx=Load()), op=Sub(), right=Constant(value=0.8757))]), ops=[Lt()], comparators=[Constant(value=0.005)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='r64b', ctx=Load()), slice=Constant(value=2), ctx=Load()), op=Sub(), right=Constant(value=0.9188))]), ops=[Lt()], comparators=[Constant(value=0.005)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='r32', ctx=Load()), slice=Constant(value=2), ctx=Load()), op=Sub(), right=Constant(value=0.9575))]), ops=[Lt()], comparators=[Constant(value=0.005)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='r32b', ctx=Load()), slice=Constant(value=2), ctx=Load()), op=Sub(), right=Constant(value=0.8997))]), ops=[Lt()], comparators=[Constant(value=0.005)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.8757",
+          "0.9188",
+          "0.9575",
+          "0.8997"
+        ],
+        "final_payload": [
+          "0.8757",
+          "0.9188",
+          "0.9575",
+          "0.8997"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B4",
+        "old_condition": "Compare(left=Name(id='SYMMAX', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)])",
+        "final_condition": "Compare(left=Name(id='SYMMAX', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1e-15"
+        ],
+        "final_payload": [
+          "1e-15"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B5",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='m64', ctx=Load()), slice=Name(id='i', ctx=Load()), ctx=Load()), op=Sub(), right=Subscript(value=Name(id='r64', ctx=Load()), slice=Name(id='i', ctx=Load()), ctx=Load()))]), generators=[comprehension(target=Name(id='i', ctx=Store()), iter=Tuple(elts=[Constant(value=1), Constant(value=2), Constant(value=3)], ctx=Load()), is_async=0)])]), ops=[Lt()], comparators=[Constant(value=0.03)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='m64', ctx=Load()), slice=Constant(value=1), ctx=Load()), op=Sub(), right=Constant(value=0.9146))]), ops=[Lt()], comparators=[Constant(value=0.005)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='m64', ctx=Load()), slice=Name(id='i', ctx=Load()), ctx=Load()), op=Sub(), right=Subscript(value=Name(id='r64', ctx=Load()), slice=Name(id='i', ctx=Load()), ctx=Load()))]), generators=[comprehension(target=Name(id='i', ctx=Store()), iter=Tuple(elts=[Constant(value=1), Constant(value=2), Constant(value=3)], ctx=Load()), is_async=0)])]), ops=[Lt()], comparators=[Constant(value=0.03)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='m64', ctx=Load()), slice=Constant(value=1), ctx=Load()), op=Sub(), right=Constant(value=0.9146))]), ops=[Lt()], comparators=[Constant(value=0.005)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.9380",
+          "0.9146",
+          "0.9773",
+          "0.9576"
+        ],
+        "final_payload": [
+          "0.9380",
+          "0.9146",
+          "0.9773",
+          "0.9576"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B6",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=3), ctx=Load()), slice=Constant(value=2), ctx=Load()), ops=[Lt(), Lt(), Lt()], comparators=[Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=4), ctx=Load()), slice=Constant(value=2), ctx=Load()), Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=8), ctx=Load()), slice=Constant(value=2), ctx=Load()), Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=16), ctx=Load()), slice=Constant(value=2), ctx=Load())]), Compare(left=Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=16), ctx=Load()), slice=Constant(value=2), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.998)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=3), ctx=Load()), slice=Constant(value=2), ctx=Load()), ops=[Lt(), Lt(), Lt()], comparators=[Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=4), ctx=Load()), slice=Constant(value=2), ctx=Load()), Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=8), ctx=Load()), slice=Constant(value=2), ctx=Load()), Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=16), ctx=Load()), slice=Constant(value=2), ctx=Load())]), Compare(left=Subscript(value=Subscript(value=Name(id='BIG', ctx=Load()), slice=Constant(value=16), ctx=Load()), slice=Constant(value=2), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.998)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.9462",
+          "0.9736",
+          "0.9938",
+          "0.9986"
+        ],
+        "final_payload": [
+          "0.9462",
+          "0.9736",
+          "0.9938",
+          "0.9986"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C1",
+        "old_condition": "Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Constant(value=0.8), ops=[Lt(), Lt()], comparators=[Subscript(value=Subscript(value=Name(id='CR', ctx=Load()), slice=Name(id='k', ctx=Load()), ctx=Load()), slice=Constant(value=0), ctx=Load()), Constant(value=1.0)]), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=Name(id='CR', ctx=Load()), is_async=0)])])",
+        "final_condition": "Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Constant(value=0.8), ops=[Lt(), Lt()], comparators=[Subscript(value=Subscript(value=Name(id='CR', ctx=Load()), slice=Name(id='k', ctx=Load()), ctx=Load()), slice=Constant(value=0), ctx=Load()), Constant(value=1.0)]), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=Name(id='CR', ctx=Load()), is_async=0)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.8271",
+          "0.9719",
+          "0.8568",
+          "0.9209"
+        ],
+        "final_payload": [
+          "0.8271",
+          "0.9719",
+          "0.8568",
+          "0.9209"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C2",
+        "old_condition": "Compare(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Subscript(value=Subscript(value=Name(id='CR', ctx=Load()), slice=Name(id='k', ctx=Load()), ctx=Load()), slice=Constant(value=1), ctx=Load()), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=Name(id='CR', ctx=Load()), is_async=0)])]), ops=[Lt()], comparators=[Constant(value=10.0)])",
+        "final_condition": "Compare(left=Call(func=Name(id='max', ctx=Load()), args=[GeneratorExp(elt=Subscript(value=Subscript(value=Name(id='CR', ctx=Load()), slice=Name(id='k', ctx=Load()), ctx=Load()), slice=Constant(value=1), ctx=Load()), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=Name(id='CR', ctx=Load()), is_async=0)])]), ops=[Lt()], comparators=[Constant(value=10.0)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "5.7",
+          "6.5",
+          "1.9",
+          "0.1"
+        ],
+        "final_payload": [
+          "5.7",
+          "6.5",
+          "1.9",
+          "0.1"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C3",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='TR_NAIVE', ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.3)]), Compare(left=Name(id='TR_GAUGE', ctx=Load()), ops=[Lt()], comparators=[Constant(value=0.005)]), Compare(left=Name(id='TR_NAIVE', ctx=Load()), ops=[Gt()], comparators=[BinOp(left=Constant(value=100), op=Mult(), right=Name(id='TR_GAUGE', ctx=Load()))])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='TR_NAIVE', ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.3)]), Compare(left=Name(id='TR_GAUGE', ctx=Load()), ops=[Lt()], comparators=[Constant(value=0.005)]), Compare(left=Name(id='TR_NAIVE', ctx=Load()), ops=[Gt()], comparators=[BinOp(left=Constant(value=100), op=Mult(), right=Name(id='TR_GAUGE', ctx=Load()))])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "3.96e-01",
+          "2.10e-03"
+        ],
+        "final_payload": [
+          "3.96e-01",
+          "2.10e-03"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C4",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=3), ctx=Load()), slice=Constant(value=0), ctx=Load()), ops=[Lt(), Lt()], comparators=[Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=4), ctx=Load()), slice=Constant(value=0), ctx=Load()), Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=6), ctx=Load()), slice=Constant(value=0), ctx=Load())]), Compare(left=Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=16), ctx=Load()), slice=Constant(value=0), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.999)]), Compare(left=Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=16), ctx=Load()), slice=Constant(value=1), ctx=Load()), ops=[Lt()], comparators=[Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=3), ctx=Load()), slice=Constant(value=1), ctx=Load())])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=3), ctx=Load()), slice=Constant(value=0), ctx=Load()), ops=[Lt(), Lt()], comparators=[Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=4), ctx=Load()), slice=Constant(value=0), ctx=Load()), Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=6), ctx=Load()), slice=Constant(value=0), ctx=Load())]), Compare(left=Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=16), ctx=Load()), slice=Constant(value=0), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.999)]), Compare(left=Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=16), ctx=Load()), slice=Constant(value=1), ctx=Load()), ops=[Lt()], comparators=[Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Constant(value=3), ctx=Load()), slice=Constant(value=1), ctx=Load())])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.8981",
+          "0.9854",
+          "0.9982",
+          "0.9992",
+          "0.9997",
+          "1.0000",
+          "7.3",
+          "1.8"
+        ],
+        "final_payload": [
+          "0.8981",
+          "0.9854",
+          "0.9982",
+          "0.9992",
+          "0.9997",
+          "1.0000",
+          "7.3",
+          "1.8"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C5",
+        "old_condition": "Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Name(id='d', ctx=Load()), ctx=Load()), slice=Constant(value=2), ctx=Load()), op=Sub(), right=Subscript(value=Name(id='NOTE_T4_COEFF', ctx=Load()), slice=Name(id='d', ctx=Load()), ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=0.03)]), generators=[comprehension(target=Name(id='d', ctx=Store()), iter=Tuple(elts=[Constant(value=4), Constant(value=6), Constant(value=8), Constant(value=10)], ctx=Load()), is_async=0)])])",
+        "final_condition": "Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Subscript(value=Name(id='FS', ctx=Load()), slice=Name(id='d', ctx=Load()), ctx=Load()), slice=Constant(value=2), ctx=Load()), op=Sub(), right=Subscript(value=Name(id='NOTE_T4_COEFF', ctx=Load()), slice=Name(id='d', ctx=Load()), ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=0.03)]), generators=[comprehension(target=Name(id='d', ctx=Store()), iter=Tuple(elts=[Constant(value=4), Constant(value=6), Constant(value=8), Constant(value=10)], ctx=Load()), is_async=0)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.9711",
+          "1.0398",
+          "1.0216",
+          "1.0060",
+          "0.9924",
+          "0.9260"
+        ],
+        "final_payload": [
+          "0.9711",
+          "1.0398",
+          "1.0216",
+          "1.0060",
+          "0.9924",
+          "0.9260"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D1",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='E_RISE', ctx=Load()), ops=[Gt()], comparators=[Constant(value=2.4)]), Compare(left=Name(id='P_RISE', ctx=Load()), ops=[Gt()], comparators=[Constant(value=2.4)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=BinOp(left=Name(id='E_RISE', ctx=Load()), op=Div(), right=Name(id='P_RISE', ctx=Load())), op=Sub(), right=Constant(value=1.0))]), ops=[Lt()], comparators=[Constant(value=0.06)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='E_RISE', ctx=Load()), ops=[Gt()], comparators=[Constant(value=2.4)]), Compare(left=Name(id='P_RISE', ctx=Load()), ops=[Gt()], comparators=[Constant(value=2.4)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=BinOp(left=Name(id='E_RISE', ctx=Load()), op=Div(), right=Name(id='P_RISE', ctx=Load())), op=Sub(), right=Constant(value=1.0))]), ops=[Lt()], comparators=[Constant(value=0.06)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "3.8766",
+          "4.5998",
+          "5.3655",
+          "5.8591",
+          "6.0461",
+          "2.525",
+          "2.425",
+          "1.041"
+        ],
+        "final_payload": [
+          "3.8766",
+          "4.5998",
+          "5.3655",
+          "5.8591",
+          "6.0461",
+          "2.525",
+          "2.425",
+          "1.041"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D2",
+        "old_condition": "Compare(left=Name(id='C_SPREAD', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)])",
+        "final_condition": "Compare(left=Name(id='C_SPREAD', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-12)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.0655525",
+          "0e+00"
+        ],
+        "final_payload": [
+          "0.0655525",
+          "0e+00"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D3",
+        "old_condition": "Compare(left=Name(id='MAXCNT', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)])",
+        "final_condition": "Compare(left=Name(id='MAXCNT', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1e-14",
+          "32.25"
+        ],
+        "final_payload": [
+          "1e-14",
+          "32.25"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D4",
+        "old_condition": "Constant(value=True)",
+        "final_condition": "Constant(value=True)",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "E1",
+        "old_condition": "Constant(value=True)",
+        "final_condition": "Constant(value=True)",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "H1",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='ONSH', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)]), Compare(left=Name(id='XTRM', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='ONSH', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)]), Compare(left=Name(id='XTRM', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "5e-15",
+          "-0.522027",
+          "6e-15"
+        ],
+        "final_payload": [
+          "5e-15",
+          "-0.522027",
+          "6e-15"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "H2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='FDEV', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)]), Compare(left=Name(id='MDEV', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Call(func=Attribute(value=Name(id='FUX', ctx=Load()), attr='values', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=0.0)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='FDEV', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)]), Compare(left=Name(id='MDEV', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)]), Compare(left=Call(func=Name(id='max', ctx=Load()), args=[Call(func=Attribute(value=Name(id='FUX', ctx=Load()), attr='values', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=0.0)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "4e-16",
+          "4e-16",
+          "-2.808e-01",
+          "-9.413e-03"
+        ],
+        "final_payload": [
+          "4e-16",
+          "4e-16",
+          "-2.808e-01",
+          "-9.413e-03"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "H3",
+        "old_condition": "Compare(left=Name(id='NDEV', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='NDEV', ctx=Load()), ops=[Gt()], comparators=[Constant(value=0.001)]), Compare(left=Name(id='EXTDEV', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-14)])])",
+        "condition_exact": false,
+        "format_operands_exact": false,
+        "original_payload": [
+          "0e+00"
+        ],
+        "final_payload": [
+          "0.040047771",
+          "4.0e-16"
+        ],
+        "payload_exact": false,
+        "disposition": "actual FU-FN replaces false point tautology; original0 preserved in dated history; extended convolution added"
+      }
+    ],
+    "original_functions_exact_ignoring_strings_except": [],
+    "new_functions": [
+      "_same_box_bilinear",
+      "_source_input_guard"
+    ],
+    "old_source_sha256": "b7d36311c3ae65187b5e4a27f8eb5f7b9a18462fccf0c4d12389b2a63d679374",
+    "final_source_sha256": "5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6"
+  },
+  {
+    "pr": "7885",
+    "runner": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+    "original_count": 24,
+    "final_count": 29,
+    "checks": [
+      {
+        "id": "A1",
+        "old_condition": "BoolOp(op=And(), values=[Name(id='sq_ok', ctx=Load()), Name(id='comm_ok', ctx=Load())])",
+        "final_condition": "BoolOp(op=And(), values=[Name(id='sq_ok', ctx=Load()), Name(id='comm_ok', ctx=Load())])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='wrong', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), Compare(left=Name(id='pairs', ctx=Load()), ops=[Eq()], comparators=[Constant(value=16029)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='wrong', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), Compare(left=Name(id='pairs', ctx=Load()), ops=[Eq()], comparators=[Constant(value=16029)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0",
+          "16029"
+        ],
+        "final_payload": [
+          "0",
+          "16029"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A3",
+        "old_condition": "Compare(left=Name(id='bsq', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)])",
+        "final_condition": "Compare(left=Name(id='bsq', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0"
+        ],
+        "final_payload": [
+          "0"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A4",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='tot', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0.0)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='ind', ctx=Load()), op=Sub(), right=Constant(value=2.0))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Name(id='herm', ctx=Load())])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='tot', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0.0)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='ind', ctx=Load()), op=Sub(), right=Constant(value=2.0))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Name(id='herm', ctx=Load())])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "A5",
+        "old_condition": "BoolOp(op=And(), values=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='all', ctx=Load()), args=[Compare(left=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='abs', ctx=Load()), args=[BinOp(left=Name(id='nspec', ctx=Load()), op=Sub(), right=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='round', ctx=Load()), args=[Name(id='nspec', ctx=Load())]))]), ops=[Lt()], comparators=[Constant(value=1e-12)])]), Compare(left=Call(func=Attribute(value=Name(id='nspec', ctx=Load()), attr='min', ctx=Load())), ops=[GtE()], comparators=[UnaryOp(op=USub(), operand=Constant(value=1e-12))]), Compare(left=Call(func=Attribute(value=Name(id='nspec', ctx=Load()), attr='max', ctx=Load())), ops=[LtE()], comparators=[BinOp(left=Attribute(value=Name(id='Ld', ctx=Load()), attr='nv', ctx=Load()), op=Add(), right=Constant(value=1e-12))])])",
+        "final_condition": "BoolOp(op=And(), values=[Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='all', ctx=Load()), args=[Compare(left=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='abs', ctx=Load()), args=[BinOp(left=Name(id='nspec', ctx=Load()), op=Sub(), right=Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='round', ctx=Load()), args=[Name(id='nspec', ctx=Load())]))]), ops=[Lt()], comparators=[Constant(value=1e-12)])]), Compare(left=Call(func=Attribute(value=Name(id='nspec', ctx=Load()), attr='min', ctx=Load())), ops=[GtE()], comparators=[UnaryOp(op=USub(), operand=Constant(value=1e-12))]), Compare(left=Call(func=Attribute(value=Name(id='nspec', ctx=Load()), attr='max', ctx=Load())), ops=[LtE()], comparators=[BinOp(left=Attribute(value=Name(id='Ld', ctx=Load()), attr='nv', ctx=Load()), op=Add(), right=Constant(value=1e-12))])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0,2,4"
+        ],
+        "final_payload": [
+          "0,2,4"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B1",
+        "old_condition": "Compare(left=Name(id='sym', ctx=Load()), ops=[Lt()], comparators=[Constant(value=4e-14)])",
+        "final_condition": "Compare(left=Name(id='sym', ctx=Load()), ops=[Lt()], comparators=[Constant(value=4e-14)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "3.4e-14"
+        ],
+        "final_payload": [
+          "3.4e-14"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='bad_half', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), Compare(left=Subscript(value=Name(id='ties', ctx=Load()), slice=Tuple(elts=[Constant(value='t4'), Tuple(elts=[Constant(value='plain'), Tuple(elts=[Constant(value=0), Constant(value=0), Constant(value=0)], ctx=Load())], ctx=Load())], ctx=Load()), ctx=Load()), ops=[Eq()], comparators=[Tuple(elts=[Constant(value=22), Constant(value=20)], ctx=Load())])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='bad_half', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), Compare(left=Subscript(value=Name(id='ties', ctx=Load()), slice=Tuple(elts=[Constant(value='t4'), Tuple(elts=[Constant(value='plain'), Tuple(elts=[Constant(value=0), Constant(value=0), Constant(value=0)], ctx=Load())], ctx=Load())], ctx=Load()), ctx=Load()), ops=[Eq()], comparators=[Tuple(elts=[Constant(value=22), Constant(value=20)], ctx=Load())])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "20",
+          "22",
+          "42"
+        ],
+        "final_payload": [
+          "20",
+          "22",
+          "42"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B3",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='len', ctx=Load()), args=[Name(id='cube', ctx=Load())]), ops=[Eq()], comparators=[Constant(value=32)]), Compare(left=Name(id='winners', ctx=Load()), ops=[Eq()], comparators=[List(elts=[Name(id='allm', ctx=Load())], ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='gm', ctx=Load()), op=Add(), right=BinOp(left=Constant(value=4), op=Mult(), right=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S3', ctx=Load())])))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='margin', ctx=Load()), op=Sub(), right=Constant(value=0.456067275))]), ops=[Lt()], comparators=[Constant(value=1e-08)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='len', ctx=Load()), args=[Name(id='cube', ctx=Load())]), ops=[Eq()], comparators=[Constant(value=32)]), Compare(left=Name(id='winners', ctx=Load()), ops=[Eq()], comparators=[List(elts=[Name(id='allm', ctx=Load())], ctx=Load())]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='gm', ctx=Load()), op=Add(), right=BinOp(left=Constant(value=4), op=Mult(), right=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S3', ctx=Load())])))]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='margin', ctx=Load()), op=Sub(), right=Constant(value=0.456067275))]), ops=[Lt()], comparators=[Constant(value=1e-08)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "32",
+          "-6.928203",
+          "0.456067"
+        ],
+        "final_payload": [
+          "32",
+          "-6.928203",
+          "0.456067"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B4",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='b4', ctx=Load()), op=Sub(), right=Name(id='floor4', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='b4', ctx=Load()), op=Add(), right=BinOp(left=Constant(value=32), op=Mult(), right=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S6', ctx=Load())])))]), ops=[Lt()], comparators=[Constant(value=1e-09)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='b4', ctx=Load()), op=Sub(), right=Name(id='floor4', ctx=Load()))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='b4', ctx=Load()), op=Add(), right=BinOp(left=Constant(value=32), op=Mult(), right=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S6', ctx=Load())])))]), ops=[Lt()], comparators=[Constant(value=1e-09)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "B5",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='b6', ctx=Load()), op=Add(), right=Constant(value=258.85754))]), ops=[Lt()], comparators=[Constant(value=1e-05)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='b8', ctx=Load()), op=Add(), right=Constant(value=611.811768))]), ops=[Lt()], comparators=[Constant(value=1e-05)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Call(func=Name(id='E0', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='DATA', ctx=Load()), slice=Constant(value='o333'), ctx=Load()), slice=Tuple(elts=[Constant(value='stag'), Tuple(ctx=Load())], ctx=Load()), ctx=Load())]), op=Add(), right=Constant(value=26.0406))]), ops=[Lt()], comparators=[Constant(value=1e-05)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Call(func=Name(id='E0', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='DATA', ctx=Load()), slice=Constant(value='o333'), ctx=Load()), slice=Tuple(elts=[Constant(value='plain'), Tuple(ctx=Load())], ctx=Load()), ctx=Load())]), op=Add(), right=Constant(value=21.213203))]), ops=[Lt()], comparators=[Constant(value=1e-05)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='b6', ctx=Load()), op=Add(), right=Constant(value=258.85754))]), ops=[Lt()], comparators=[Constant(value=1e-05)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='b8', ctx=Load()), op=Add(), right=Constant(value=611.811768))]), ops=[Lt()], comparators=[Constant(value=1e-05)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Call(func=Name(id='E0', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='DATA', ctx=Load()), slice=Constant(value='o333'), ctx=Load()), slice=Tuple(elts=[Constant(value='stag'), Tuple(ctx=Load())], ctx=Load()), ctx=Load())]), op=Add(), right=Constant(value=26.0406))]), ops=[Lt()], comparators=[Constant(value=1e-05)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Call(func=Name(id='E0', ctx=Load()), args=[Subscript(value=Subscript(value=Name(id='DATA', ctx=Load()), slice=Constant(value='o333'), ctx=Load()), slice=Tuple(elts=[Constant(value='plain'), Tuple(ctx=Load())], ctx=Load()), ctx=Load())]), op=Add(), right=Constant(value=21.213203))]), ops=[Lt()], comparators=[Constant(value=1e-05)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "-258.857540",
+          "-611.811768",
+          "-26.040600",
+          "-21.213203"
+        ],
+        "final_payload": [
+          "-258.857540",
+          "-611.811768",
+          "-26.040600",
+          "-21.213203"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C1",
+        "old_condition": "Compare(left=Call(func=Name(id='len', ctx=Load()), args=[Name(id='tw_seen', ctx=Load())]), ops=[GtE()], comparators=[Constant(value=2)])",
+        "final_condition": "Compare(left=Call(func=Name(id='len', ctx=Load()), args=[Name(id='tw_seen', ctx=Load())]), ops=[GtE()], comparators=[Constant(value=2)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "2"
+        ],
+        "final_payload": [
+          "2"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C2",
+        "old_condition": "BoolOp(op=And(), values=[Name(id='ok_s', ctx=Load()), Name(id='ok_p', ctx=Load()), Compare(left=Name(id='wit', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Name(id='diff', ctx=Load()), ops=[Eq()], comparators=[BinOp(left=BinOp(left=Constant(value=16), op=Mult(), right=Name(id='J', ctx=Load())), op=Sub(), right=BinOp(left=Constant(value=8), op=Mult(), right=Name(id='S3', ctx=Load())))]), Compare(left=Call(func=Attribute(value=Name(id='sp', ctx=Load()), attr='solve', ctx=Load()), args=[Call(func=Attribute(value=Name(id='sp', ctx=Load()), attr='Eq', ctx=Load()), args=[Name(id='diff', ctx=Load()), Constant(value=0)]), Name(id='J', ctx=Load())]), ops=[Eq()], comparators=[List(elts=[BinOp(left=Name(id='S3', ctx=Load()), op=Div(), right=Constant(value=2))], ctx=Load())])])",
+        "final_condition": "BoolOp(op=And(), values=[Name(id='ok_s', ctx=Load()), Name(id='ok_p', ctx=Load()), Compare(left=Name(id='wit', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-13)]), Compare(left=Name(id='diff', ctx=Load()), ops=[Eq()], comparators=[BinOp(left=BinOp(left=Constant(value=16), op=Mult(), right=Name(id='J', ctx=Load())), op=Sub(), right=BinOp(left=Constant(value=8), op=Mult(), right=Name(id='S3', ctx=Load())))]), Compare(left=Call(func=Attribute(value=Name(id='sp', ctx=Load()), attr='solve', ctx=Load()), args=[Call(func=Attribute(value=Name(id='sp', ctx=Load()), attr='Eq', ctx=Load()), args=[Name(id='diff', ctx=Load()), Constant(value=0)]), Name(id='J', ctx=Load())]), ops=[Eq()], comparators=[List(elts=[BinOp(left=Name(id='S3', ctx=Load()), op=Div(), right=Constant(value=2))], ctx=Load())])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "16*J - 8*sqrt(3)"
+        ],
+        "final_payload": [
+          "16*J - 8*sqrt(3)"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C3",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='x4', ctx=Load()), op=Sub(), right=BinOp(left=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S3', ctx=Load())]), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-08)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='x6', ctx=Load()), op=Sub(), right=Constant(value=0.849332))]), ops=[Lt()], comparators=[Constant(value=1e-05)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='x8', ctx=Load()), op=Sub(), right=Constant(value=0.867676))]), ops=[Lt()], comparators=[Constant(value=1e-05)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='x4', ctx=Load()), op=Sub(), right=BinOp(left=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S3', ctx=Load())]), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-08)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='x6', ctx=Load()), op=Sub(), right=Constant(value=0.849332))]), ops=[Lt()], comparators=[Constant(value=1e-05)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='x8', ctx=Load()), op=Sub(), right=Constant(value=0.867676))]), ops=[Lt()], comparators=[Constant(value=1e-05)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.866025404",
+          "0.849332",
+          "0.867676"
+        ],
+        "final_payload": [
+          "0.866025404",
+          "0.849332",
+          "0.867676"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C4",
+        "old_condition": "BoolOp(op=And(), values=[Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='emp', ctx=Load()), slice=Tuple(elts=[Name(id='k', ctx=Load()), Constant(value='plain')], ctx=Load()), ctx=Load()), op=Sub(), right=Constant(value=3.0))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=Tuple(elts=[Constant(value='t4'), Constant(value='t6'), Constant(value='t8')], ctx=Load()), is_async=0)])]), Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='emp', ctx=Load()), slice=Tuple(elts=[Name(id='k', ctx=Load()), Constant(value='stag')], ctx=Load()), ctx=Load()), op=Sub(), right=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S3', ctx=Load())]))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=Tuple(elts=[Constant(value='t4'), Constant(value='t6'), Constant(value='t8')], ctx=Load()), is_async=0)])]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='op', ctx=Load()), op=Sub(), right=BinOp(left=BinOp(left=Constant(value=3), op=Mult(), right=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S2', ctx=Load())])), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='os_', ctx=Load()), op=Sub(), right=BinOp(left=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S6', ctx=Load())]), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='cempty', ctx=Load()), op=Sub(), right=Constant(value=1.5))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), Name(id='tie32', ctx=Load())])",
+        "final_condition": "BoolOp(op=And(), values=[Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='emp', ctx=Load()), slice=Tuple(elts=[Name(id='k', ctx=Load()), Constant(value='plain')], ctx=Load()), ctx=Load()), op=Sub(), right=Constant(value=3.0))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=Tuple(elts=[Constant(value='t4'), Constant(value='t6'), Constant(value='t8')], ctx=Load()), is_async=0)])]), Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Subscript(value=Name(id='emp', ctx=Load()), slice=Tuple(elts=[Name(id='k', ctx=Load()), Constant(value='stag')], ctx=Load()), ctx=Load()), op=Sub(), right=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S3', ctx=Load())]))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), generators=[comprehension(target=Name(id='k', ctx=Store()), iter=Tuple(elts=[Constant(value='t4'), Constant(value='t6'), Constant(value='t8')], ctx=Load()), is_async=0)])]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='op', ctx=Load()), op=Sub(), right=BinOp(left=BinOp(left=Constant(value=3), op=Mult(), right=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S2', ctx=Load())])), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='os_', ctx=Load()), op=Sub(), right=BinOp(left=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S6', ctx=Load())]), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='cempty', ctx=Load()), op=Sub(), right=Constant(value=1.5))]), ops=[Lt()], comparators=[Constant(value=1e-09)]), Name(id='tie32', ctx=Load())])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "C5",
+        "old_condition": "Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='jcube', ctx=Load()), op=Sub(), right=Call(func=Name(id='float', ctx=Load()), args=[BinOp(left=Name(id='S3', ctx=Load()), op=Sub(), right=BinOp(left=BinOp(left=Constant(value=1), op=Add(), right=Name(id='S2', ctx=Load())), op=Div(), right=Constant(value=2)))]))]), ops=[Lt()], comparators=[Constant(value=1e-08)])",
+        "final_condition": "Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='jcube', ctx=Load()), op=Sub(), right=Call(func=Name(id='float', ctx=Load()), args=[BinOp(left=Name(id='S3', ctx=Load()), op=Sub(), right=BinOp(left=BinOp(left=Constant(value=1), op=Add(), right=Name(id='S2', ctx=Load())), op=Div(), right=Constant(value=2)))]))]), ops=[Lt()], comparators=[Constant(value=1e-08)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.524944"
+        ],
+        "final_payload": [
+          "0.524944"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D1",
+        "old_condition": "BoolOp(op=And(), values=[Name(id='trm', ctx=Load()), Name(id='invol', ctx=Load())])",
+        "final_condition": "BoolOp(op=And(), values=[Name(id='trm', ctx=Load()), Name(id='invol', ctx=Load())])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='slack', ctx=Load()), ops=[LtE()], comparators=[Constant(value=7e-15)]), Compare(left=Call(func=Attribute(value=Name(id='sp', ctx=Load()), attr='simplify', ctx=Load()), args=[BinOp(left=Name(id='Wexact', ctx=Load()), op=Sub(), right=BinOp(left=BinOp(left=Constant(value=64), op=Mult(), right=Name(id='J', ctx=Load())), op=Sub(), right=BinOp(left=Constant(value=32), op=Mult(), right=Name(id='S6', ctx=Load()))))]), ops=[Eq()], comparators=[Constant(value=0)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Name(id='slack', ctx=Load()), ops=[LtE()], comparators=[Constant(value=7e-15)]), Compare(left=Call(func=Attribute(value=Name(id='sp', ctx=Load()), attr='simplify', ctx=Load()), args=[BinOp(left=Name(id='Wexact', ctx=Load()), op=Sub(), right=BinOp(left=BinOp(left=Constant(value=64), op=Mult(), right=Name(id='J', ctx=Load())), op=Sub(), right=BinOp(left=Constant(value=32), op=Mult(), right=Name(id='S6', ctx=Load()))))]), ops=[Eq()], comparators=[Constant(value=0)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "64*J - 32*sqrt(6)",
+          "0.0e+00"
+        ],
+        "final_payload": [
+          "64*J - 32*sqrt(6)",
+          "0.0e+00"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "D3",
+        "old_condition": "Compare(left=Name(id='viol', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)])",
+        "final_condition": "Compare(left=Name(id='viol', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "1021",
+          "0"
+        ],
+        "final_payload": [
+          "1021",
+          "0"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "E1",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='p4', ctx=Load()), op=Sub(), right=Call(func=Name(id='float', ctx=Load()), args=[BinOp(left=BinOp(left=BinOp(left=BinOp(left=Constant(value=4), op=Mult(), right=Name(id='S6', ctx=Load())), op=Sub(), right=Constant(value=3)), op=Sub(), right=BinOp(left=Constant(value=3), op=Mult(), right=Name(id='S2', ctx=Load()))), op=Sub(), right=Name(id='S3', ctx=Load()))]))]), ops=[Lt()], comparators=[Constant(value=1e-08)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='gap4', ctx=Load()), op=Sub(), right=BinOp(left=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S6', ctx=Load())]), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-09)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='p4', ctx=Load()), op=Sub(), right=Call(func=Name(id='float', ctx=Load()), args=[BinOp(left=BinOp(left=BinOp(left=BinOp(left=Constant(value=4), op=Mult(), right=Name(id='S6', ctx=Load())), op=Sub(), right=Constant(value=3)), op=Sub(), right=BinOp(left=Constant(value=3), op=Mult(), right=Name(id='S2', ctx=Load()))), op=Sub(), right=Name(id='S3', ctx=Load()))]))]), ops=[Lt()], comparators=[Constant(value=1e-08)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='gap4', ctx=Load()), op=Sub(), right=BinOp(left=Call(func=Name(id='float', ctx=Load()), args=[Name(id='S6', ctx=Load())]), op=Div(), right=Constant(value=2)))]), ops=[Lt()], comparators=[Constant(value=1e-09)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.823267",
+          "1.224745"
+        ],
+        "final_payload": [
+          "0.823267",
+          "1.224745"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "E2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='p6', ctx=Load()), op=Sub(), right=Call(func=Name(id='float', ctx=Load()), args=[BinOp(left=BinOp(left=Constant(value=2), op=Mult(), right=Name(id='S3', ctx=Load())), op=Sub(), right=Constant(value=3))]))]), ops=[Lt()], comparators=[Constant(value=1e-08)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='p8', ctx=Load()), op=Sub(), right=Constant(value=0.306846))]), ops=[Lt()], comparators=[Constant(value=1e-05)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='p6', ctx=Load()), op=Sub(), right=Call(func=Name(id='float', ctx=Load()), args=[BinOp(left=BinOp(left=Constant(value=2), op=Mult(), right=Name(id='S3', ctx=Load())), op=Sub(), right=Constant(value=3))]))]), ops=[Lt()], comparators=[Constant(value=1e-08)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='p8', ctx=Load()), op=Sub(), right=Constant(value=0.306846))]), ops=[Lt()], comparators=[Constant(value=1e-05)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.464102",
+          "0.306846"
+        ],
+        "final_payload": [
+          "0.464102",
+          "0.306846"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "F1",
+        "old_condition": "Compare(left=Name(id='bl', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-09)])",
+        "final_condition": "Compare(left=Name(id='bl', ctx=Load()), ops=[Lt()], comparators=[Constant(value=1e-09)])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "2.7e-14"
+        ],
+        "final_payload": [
+          "2.7e-14"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "F2",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='Jl', ctx=Load()), op=Sub(), right=Constant(value=0.8654003))]), ops=[Lt()], comparators=[Constant(value=3e-06)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='ns', ctx=Load()), op=Sub(), right=Constant(value=0.4417))]), ops=[Lt()], comparators=[Constant(value=0.0005)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='nq', ctx=Load()), op=Sub(), right=Constant(value=0.2521))]), ops=[Lt()], comparators=[Constant(value=0.0005)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='Jl', ctx=Load()), op=Sub(), right=Constant(value=0.8654003))]), ops=[Lt()], comparators=[Constant(value=3e-06)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='ns', ctx=Load()), op=Sub(), right=Constant(value=0.4417))]), ops=[Lt()], comparators=[Constant(value=0.0005)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='nq', ctx=Load()), op=Sub(), right=Constant(value=0.2521))]), ops=[Lt()], comparators=[Constant(value=0.0005)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [
+          "0.8654029",
+          "0.4417",
+          "0.2521"
+        ],
+        "final_payload": [
+          "0.8654029",
+          "0.4417",
+          "0.2521"
+        ],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "F3",
+        "old_condition": "BoolOp(op=And(), values=[Name(id='gapless', ctx=Load()), Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='a', ctx=Load()), op=Sub(), right=Constant(value=1.0))]), ops=[Lt()], comparators=[Constant(value=0.06)]), generators=[comprehension(target=Name(id='a', ctx=Store()), iter=Name(id='asym', ctx=Load()), is_async=0)])]), Compare(left=Name(id='n001', ctx=Load()), ops=[LtE()], comparators=[Constant(value=0.5)])])",
+        "final_condition": "BoolOp(op=And(), values=[Name(id='gapless', ctx=Load()), Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[BinOp(left=Name(id='a', ctx=Load()), op=Sub(), right=Constant(value=1.0))]), ops=[Lt()], comparators=[Constant(value=0.06)]), generators=[comprehension(target=Name(id='a', ctx=Store()), iter=Name(id='asym', ctx=Load()), is_async=0)])]), Compare(left=Name(id='n001', ctx=Load()), ops=[LtE()], comparators=[Constant(value=0.5)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      },
+      {
+        "id": "F4",
+        "old_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Call(func=Name(id='w_of', ctx=Load()), args=[Name(id='pl', ctx=Load()), Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='array', ctx=Load()), args=[List(elts=[Constant(value=3.0)], ctx=Load())])]), slice=Constant(value=1), ctx=Load()), slice=Constant(value=0), ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Call(func=Name(id='w_of', ctx=Load()), args=[Name(id='pim', ctx=Load()), Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='array', ctx=Load()), args=[List(elts=[Call(func=Name(id='float', ctx=Load()), args=[Name(id='S3', ctx=Load())])], ctx=Load())])]), slice=Constant(value=1), ctx=Load()), slice=Constant(value=0), ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Subscript(value=Subscript(value=Call(func=Name(id='w_of', ctx=Load()), args=[Name(id='pl', ctx=Load()), Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='array', ctx=Load()), args=[List(elts=[Constant(value=2.999)], ctx=Load())])]), slice=Constant(value=1), ctx=Load()), slice=Constant(value=0), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0)]), Compare(left=Subscript(value=Subscript(value=Call(func=Name(id='w_of', ctx=Load()), args=[Name(id='pim', ctx=Load()), Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='array', ctx=Load()), args=[List(elts=[Constant(value=1.731)], ctx=Load())])]), slice=Constant(value=1), ctx=Load()), slice=Constant(value=0), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0)])])",
+        "final_condition": "BoolOp(op=And(), values=[Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Call(func=Name(id='w_of', ctx=Load()), args=[Name(id='pl', ctx=Load()), Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='array', ctx=Load()), args=[List(elts=[Constant(value=3.0)], ctx=Load())])]), slice=Constant(value=1), ctx=Load()), slice=Constant(value=0), ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Call(func=Name(id='abs', ctx=Load()), args=[Subscript(value=Subscript(value=Call(func=Name(id='w_of', ctx=Load()), args=[Name(id='pim', ctx=Load()), Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='array', ctx=Load()), args=[List(elts=[Call(func=Name(id='float', ctx=Load()), args=[Name(id='S3', ctx=Load())])], ctx=Load())])]), slice=Constant(value=1), ctx=Load()), slice=Constant(value=0), ctx=Load())]), ops=[Lt()], comparators=[Constant(value=1e-12)]), Compare(left=Subscript(value=Subscript(value=Call(func=Name(id='w_of', ctx=Load()), args=[Name(id='pl', ctx=Load()), Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='array', ctx=Load()), args=[List(elts=[Constant(value=2.999)], ctx=Load())])]), slice=Constant(value=1), ctx=Load()), slice=Constant(value=0), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0)]), Compare(left=Subscript(value=Subscript(value=Call(func=Name(id='w_of', ctx=Load()), args=[Name(id='pim', ctx=Load()), Call(func=Attribute(value=Name(id='np', ctx=Load()), attr='array', ctx=Load()), args=[List(elts=[Constant(value=1.731)], ctx=Load())])]), slice=Constant(value=1), ctx=Load()), slice=Constant(value=0), ctx=Load()), ops=[Gt()], comparators=[Constant(value=0)])])",
+        "condition_exact": true,
+        "format_operands_exact": true,
+        "original_payload": [],
+        "final_payload": [],
+        "payload_exact": true,
+        "disposition": "original condition and numerical operands preserved; label narrowed where required"
+      }
+    ],
+    "original_functions_exact_ignoring_strings_except": [],
+    "new_functions": [
+      "W_even",
+      "_source_input_guard",
+      "even_empty_threshold"
+    ],
+    "old_source_sha256": "e7555a77393e22ce41e8dfa119befd0db6c3603dd950fc6c33b8abc8de31335d",
+    "final_source_sha256": "10e21b5727a1f09bf06422ca8facb06d657689611665180910a6f130e350cfba"
+  }
+]

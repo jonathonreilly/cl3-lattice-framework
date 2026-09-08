@@ -1,0 +1,9 @@
+# Preserved review incidents and execution boundaries
+
+1. `verify_bindings.py` initially required the endpoint keys on each complete-map row to equal the full endpoint set. The map correctly omits absent original paths on later-main additions. The first assertion stopped before any scientific execution or source change. `first-map-schema-verify_bindings.py` and its stdout/stderr are preserved. The repaired comparison iterates every real endpoint and compares `row.endpoints.get(key)` with actual `git ls-tree` absence/content. All30147 rows then passed.
+
+2. The copied, fully read affected-AST adapter was executed once before explicit thread environment or a watchdog was added. The same-shell environment inspection shows all five BLAS thread variables unset. `/usr/bin/time -l` measured1.58 seconds and148668416-byte maximum RSS, with no failure or retry. This is reported as a completed small focused control, not as enforced BLAS1/cap execution. No whole primary, original baseline or large L224 array was invoked. Its exact adapter, outputs and actual-source variants remain preserved. The subsequent independent exact construction and cache controls set the thread variables explicitly to1. The genuine original and author final primary executions retain their separately reviewed bounded execution receipts.
+
+3. Original review failures, the original H3 false acceptance and the author's preparation incidents remain in their sealed packets. This review neither overwrites them nor rewrites their outcomes. Author source/final cache bytes did not change during confirmation.
+
+4. The sealed author prose describes its final pre-execution diff as94 lines. The actual hash-bound file has100 lines and was fully read here; its contents are comments/labels, C1–C2 reference and the corresponding note pin. The coordinator recorded the external metadata erratum. No source or scientific outcome differs.
