@@ -1,0 +1,40 @@
+--- reviewed22ab conditional
++++ verified-path conditional
+@@ -25,25 +25,7 @@
+  if any(math.isfinite(z) and a==0 for row,aa in zip(logs,A) for z,a in zip(row,aa)):raise ValueError('transfer underflow')
+  return A
+ 
+-@dataclass
+-class Trajectory:
+- g:object
+- initial:int
+- events:list
+- T:float
+- witness:list
+- def check(self):
+-  if not math.isfinite(self.T) or self.T<=0:raise ValueError('total time')
+-  x=self.g.seed
+-  for p in self.witness:
+-   if type(p) is not int or not 0<=p<self.g.M or not self.g.legal(x,p):raise ValueError('seed witness')
+-   x^=self.g.masks[p]
+-  if type(self.initial) is not int or x!=self.initial:raise ValueError('initial witness')
+-  self.g.validate(x);last=0.
+-  for t,p in self.events:
+-   if not math.isfinite(t) or not last<t<self.T or type(p) is not int or not 0<=p<self.g.M or not self.g.legal(x,p):raise ValueError('ordered legal event')
+-   x^=self.g.masks[p];self.g.validate(x);last=t
+-  return x
++from verified_path import Trajectory
+ 
+ class Conditional:
+  def __init__(self,path,p,V):
+@@ -112,9 +94,7 @@
+   if i<len(c.C):
+    nxt=choose([product(c.C[i][end][j],c.h[i+1][j]) for j in range(len(c.orbits[i+1]))],tape)
+    events.append(c.retained[i]);start=nxt
+- witness=list(c.path.witness)
+- if initial!=c.path.initial:witness.append(c.p)
+- out=Trajectory(c.g,initial,events,c.path.T,witness);out.check()
++ out=Trajectory.from_conditional(c.path,initial,events,c.p);out.check()
+  if Conditional(out,c.p,c.V).partition_signature()!=c.partition_signature():raise ValueError('quotient changed')
+  return out,dict(tape_used=tape.index,selected_events=newp,sum_local_bracket_widths=error,scope='ordinary floating inverse; width sum is not a rigorous global distribution error')
+ 

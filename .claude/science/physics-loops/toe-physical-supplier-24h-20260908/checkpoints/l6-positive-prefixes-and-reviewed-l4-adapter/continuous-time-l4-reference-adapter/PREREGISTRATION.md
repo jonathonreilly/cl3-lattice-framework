@@ -1,0 +1,3 @@
+# Before-execution contract
+
+Implement the verified L4 reference adapter from design e7e1daa, no stochastic profile or production. Bridge and conditional mathematics remain the reviewed22ab implementation; only path validation/witness plumbing changes. Test finite supplied tapes on L2/L4, compare full reference outputs, direct complex Fourier sums and physical scalar normalizations, witness/serialized corruption, immutable state, and actual forbidden event rejection. No statistical sampling or timing extrapolation from these controls. Each deterministic command <=180s/384MiB. Preserve failures and source before corrections. Production/profile remains unlaunched.

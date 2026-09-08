@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -41,7 +41,7 @@
+   self.g=g;self.initial=initial;self.events=events;self.T=T;self._witness=node;self._final=final;self._sealed=True
+  @property
+  def witness(self):return labels(self._witness)
+- def check(self):return self._final
++ def check(self):return self.initial
+  def full_check(self):
+   x=self.g.seed
+   for p in self.witness:

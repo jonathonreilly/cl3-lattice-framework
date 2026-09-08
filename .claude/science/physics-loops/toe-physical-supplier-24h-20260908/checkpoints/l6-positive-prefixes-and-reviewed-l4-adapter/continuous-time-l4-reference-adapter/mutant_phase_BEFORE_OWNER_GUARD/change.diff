@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -56,7 +56,7 @@
+      for e,(r,c) in enumerate(g.links):
+       if c!=b:continue
+       # L2/L4 phases are exact fourth roots of unity.
+-      phase=(4*h*r[a]//g.L)%4;sgn=(-1)**sum(r)*(2*((x>>e)&1)-1)
++      phase=(2*h*r[a]//g.L)%4;sgn=(-1)**sum(r)*(2*((x>>e)&1)-1)
+       re+=sgn*(1,0,-1,0)[phase];im+=sgn*(0,1,0,-1)[phase]
+      total+=re*re+im*im
+    result.append(Fraction(total,4*v))

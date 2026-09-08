@@ -1,0 +1,12 @@
+--- 
++++ 
+@@ -1,6 +1,9 @@
+ from types import MappingProxyType
+ from geometry_reference import Geometry
+ class FrozenGeometry(Geometry):
++ def __getattribute__(self,k):
++  value=object.__getattribute__(self,k)
++  return MappingProxyType(value) if k=='__dict__' else value
+  def __delattr__(self,k):raise AttributeError('immutable object deletion')
+  def __setattr__(self,k,v):
+   if getattr(self,'_sealed',False):raise AttributeError('immutable geometry')

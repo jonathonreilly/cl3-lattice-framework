@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -24,6 +24,7 @@
+ 
+ class Trajectory:
+  __slots__=('g','initial','events','T','_witness','_final','_sealed')
++ def __delattr__(self,k):raise AttributeError('immutable object deletion')
+  def __setattr__(self,k,v):
+   if getattr(self,'_sealed',False):raise AttributeError('immutable verified path')
+   object.__setattr__(self,k,v)

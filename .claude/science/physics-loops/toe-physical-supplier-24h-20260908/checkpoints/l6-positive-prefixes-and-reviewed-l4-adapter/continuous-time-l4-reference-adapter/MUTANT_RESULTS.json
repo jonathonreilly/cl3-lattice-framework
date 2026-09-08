@@ -1,0 +1,18 @@
+[
+  {
+    "mutation": "phase",
+    "returncode": 1,
+    "failure": "independent complex sources",
+    "source_sha": "9eea3ef72c77dfbc39f6c92c32456b94e4e08c53066491e4bb1a322fab131d61",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/continuous-time-l4-reference-adapter/mutant_phase/controls.py\", line 51, in <module>\n    for state in (actual.initial,actual.check()):ck(a.sources(state)==literal_sources(g,state),'independent complex sources')\n                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/continuous-time-l4-reference-adapter/mutant_phase/controls.py\", line 14, in ck\n    if not c:raise RuntimeError(label)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: independent complex sources\n",
+    "diff_sha": "365a82898996679eca590c0687241410218756f5febf9930d6c1ac7862e277aa"
+  },
+  {
+    "mutation": "cache",
+    "returncode": 1,
+    "failure": "cached endpoint matches",
+    "source_sha": "deaf4f7bee832686250b133dbcd2574f9ff05e3929c44057dbc457ac0ac72ac7",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/continuous-time-l4-reference-adapter/mutant_cache/controls.py\", line 49, in <module>\n    ck(actual.check()==expected.check(),'cached endpoint matches')\n  File \"/private/tmp/toe-24h-probes-20260908/continuous-time-l4-reference-adapter/mutant_cache/controls.py\", line 14, in ck\n    if not c:raise RuntimeError(label)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: cached endpoint matches\n",
+    "diff_sha": "6a8f0829771b477eb073aafe65a1e78354f3b69c3fac050eb8910b335ff66f40"
+  }
+]
