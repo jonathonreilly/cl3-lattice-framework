@@ -1,13 +1,15 @@
-# Twelfth campaign checkpoint
+# Physics campaign status
 
-UTC 2026-09-08T17:09:13.116696+00:00. Deadline 2026-09-10 10:27:17 UTC. Campaign continues.
+UTC 2026-09-08T17:55:24.049925+00:00. Deadline 2026-09-10 10:27:17 UTC. Campaign continues.
 
-Nine science review PRs open, latest8044 at3e08a48f4a2f6e2c209dbda365c393f2f46f7145. Full-carrier ring mechanism, scalar fourth/sixth diagonal and one-sided finite spectral error independently reviewed. No main landing/audit verdict.
+Ten review PRs open. Latest8045 at31abab83cbec35bac1ad69db1e3e82d1f8e92447 proves a conditional local ring-time expectation theorem with O(epsilon squared) error, supplied H/dressed preparation/readout. Eleven thousand ninety-one exact predicates, four actual mutation failures and complete independent source/graph review. No main landing or audit verdict.
 
-Two independent volume-independent local finite-Lie proofs agree. Root controls36 and native40; stronger radius proposal has20 controls. The fifth-order generic dynamical bound alone does not control a natural ring period; separate higher-order/two-comparison proofs are actively being developed. Root natural-timescale draft is unreviewed here.
+The same supplied Hamiltonian under a smooth endpoint-flat ramp appears sufficient to start from the original ordinary ice state, without applying a separate dressing unitary. Root/cold proofs and arbitrary-profile ff''/8 controls agree; standard-library port has18626 predicates and3actual mutant failures. Canonical package is in progress. This does not derive the Hamiltonian, initial ice, ramp schedule, a ground state or an electromagnetic phase.
 
-L8 117/128 segments completed without failure. No interim physics analysis. Paired V0/.95 deterministic stage0 and145-entry order module independently reviewed. One authorized capped profile completed8.698581292s,50.5625MiB, forecast8777.56s/max86.78s. Postprofile/production review still required; no new production authorized.
+L8 finished128/128 segments,48chains,4946.132charged seconds. Fixed analysis fails diagnostics:4/6precision targets; longest armC chain11 retains32.8157% initial path. Zero comparison flags do not establish convergence. All residual/energy variance estimates unresolved. All chains, negative variance plugin estimates and failed gates retained; independent full checkpoint/hash/analysis replay passes reporting. Full V0 paired study and smaller V0 memory pilot not launched.
 
-Disk64GiB free; no deletion needed. Useful unique evidence remote via science PR or this archive branch before local removal. Snapshot excludes third-party PDFs/full article text; original research and source receipts retained. 603 files, 10533548 bytes.
+Replacement whole-time single-face block Gibbs sampler has an exact finite-projector conditional law and irreducibility proof on the seed component, plus68868author and648independent deterministic checks. No mixing-rate result. Uniform singleton alias duplication is harmless after pushforward, a preserved corrected hypothesis. Efficient initializer and prospective capped cost profile are being prepared; no sampling authorized yet.
 
-See STATE.yaml, HANDOFF.md and TWELFTH_SHA256.json for SSH recovery.
+Disk63GiB free. Useful unique evidence is preserved on science PRs or this remote archive before local deletion; no deletion needed. Latest usage44% weekly consumed. No reset credits authorized. Snapshot 725files,12153685bytes; excludes cache bytecode and third-party article PDFs/text.
+
+For exact metadata see STATE.yaml, THIRTEENTH_SHA256.json and checkpoint directories. Active original workspace remains untouched.

@@ -1,0 +1,3 @@
+# Independent algorithm panel
+
+No production or micro. Root requested a population-free exact finite-projector alternative after fixed .95 L8 memory failure; root independently evaluates bridge primitives. Before reading that work, derive local interior Gibbs and endpoint moves for productG target; prove support/reversibility or expose failure. Quantify discrete-self-weight suppression and cost before recommending a numerical pilot. Separate a continuous-time/SSE target from finiteG. Do not claim that eliminating a tag diagnostic proves physical decorrelation. Exact L2 calibration and general-L source review would be required before execution.

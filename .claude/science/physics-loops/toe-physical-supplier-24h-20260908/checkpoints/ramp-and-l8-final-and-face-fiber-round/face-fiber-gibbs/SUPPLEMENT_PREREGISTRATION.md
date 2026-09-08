@@ -1,0 +1,3 @@
+# Deterministic support and alias supplement
+
+The first 6352 controls passed and are preserved unchanged. Before these additional controls, enumerate the complete literal L2 seed component to confirm 864 states, compare every Nf and allowed geometric move, and test L4 packed/cache/flux updates on a fixed legal walk. Verify fixed other-face bond support from actual transfer entries. Root independently pointed out that duplicating every singleton representation uniformly multiplies all physical weights by the same factor; this is not a bias mutant. Test that cancellation explicitly rather than manufacture a failure. No stochastic execution.

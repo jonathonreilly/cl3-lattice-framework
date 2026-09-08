@@ -1,0 +1,3 @@
+# Singleton-alias clarification
+
+Original DERIVATION.md SHA2311f3d28d336fe0179117e2f0fb2a4232ebfd8dba19074b71ef856dc78771b2 is preserved. Root independently pointed out that uniformly duplicating each fixed-slice singleton introduces the same factor 2^k for every physical path in that fiber, hence cancels after normalization. Deduplication is the chosen clean representation, not an algebraic necessity. The prospective request to kill a duplicated-singleton bias mutant is withdrawn; the actual deterministic supplement verifies harmless pushforward cancellation. Wrong transition weights and incorrectly pinned endpoints are the genuinely biased mutants used instead. All target, partition, and irreducibility arguments remain unchanged.

@@ -1,0 +1,11 @@
+# Hash-specific root ramp comparison
+
+PASS for the complete root DERIVATION.md SHA3ca63ae9588468eee976173a03d1ccf75e2fb5ea1dd986843c9a8f7fab7b0257. My independent derivation a2d072aabaee4e2db86755bc09dd76c70fc6c6620cdea2e4d472de150d77595f was frozen before reading it. Both prove the same finite-order conditional mechanism without a volume-uniform ice gap.
+
+Checked the positive i epsilon derivative term, triangular order recursion, endpoint matching, and complete-protocol light-cone accounting. The factorial derivative seminorm in the root proof makes the finite smoothness induction more explicit than my derivation. Keeping N+1-j derivatives leaves the first derivative of S_N needed for the exact derivative-exponential bound. The fixed polynomial schedule supplies all required finite derivatives; endpoint derivatives through14 suffice.
+
+The actual order15 local remainder integrated over the ramp and propagated through the later ring time scales as epsilon^5, not merely its immediate-end epsilon^14 error. The subsequent hold scales as epsilon² using full-carrier effective strength epsilon and three-dimensional light-cone volume epsilon^-9. The separate slow local extension inside ice is essential for the final order6 truncation error to remain epsilon²; using the full-carrier velocity for that step would not suffice. Root explicitly invokes that extension and does not compress local observables into an unjustified tensor-product ice space.
+
+The stated laboratory observable Y_static† O Y_static yields the corresponding ring expectation of O. This is equivalent to my convention of a bare laboratory O and dressed ring observable Y_static O Y_static†. Both retain the generic O(epsilon) bare-observable correction. The effective ramp state is fixed by the supplied conserving time-ordered evolution and remains ice-supported; it is not asserted to equal the initial state or a ground state.
+
+No mathematical blocker found. Constants are finite existence constants requiring sufficiently small epsilon, not practical rate estimates. Initial bare ice, tunable common coupling and schedule remain supplied. No sampling, canonical edits, general adiabatic-ground-state claim or external theorem substitution was performed.

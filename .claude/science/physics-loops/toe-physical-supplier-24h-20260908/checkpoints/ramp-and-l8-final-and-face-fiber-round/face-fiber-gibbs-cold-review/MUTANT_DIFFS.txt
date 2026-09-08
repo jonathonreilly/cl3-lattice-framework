@@ -1,0 +1,21 @@
+--- core.py
++++ wrong_matrix.py
+@@ -29,7 +29,7 @@
+   return nf+sum(int(self.legal(y,q))-int(self.legal(x,q)) for q in self.affected[p])
+  def weight(self,x,y,nf,V):
+   if x==y:return 1-V*nf/self.M
+-  return sum(self.legal(x,p) for p in self.by_mask.get(x^y,()))/self.M if not isinstance(V,Fraction) else Fraction(sum(self.legal(x,p) for p in self.by_mask.get(x^y,())),self.M)
++  return sum(self.legal(x,p) for p in self.by_mask.get(x^y,()))/self.M if not isinstance(V,Fraction) else Fraction(2*sum(self.legal(x,p) for p in self.by_mask.get(x^y,())),self.M)
+  def flux(self,x):
+   return tuple(sum((-1)**sum(r)*(2*((x>>e)&1)-1) for e,(r,b) in enumerate(self.links) if b==a and r[a]==0) for a in range(3))
+ 
+--- core.py
++++ pinned_endpoint.py
+@@ -62,6 +62,7 @@
+  def draw(self,p,uniforms):
+   if len(uniforms)!=len(self.states) or any(not math.isfinite(u) or not 0<=u<1 for u in uniforms):raise ValueError('variates')
+   O,N,T=self.fiber(p);h=[[1.]*len(z) for z in O]
++  h[-1]=[1.]+[0.]*(len(O[-1])-1)
+   for i in range(len(T)-1,-1,-1):
+    h[i]=[sum(float(t)*h[i+1][j] for j,t in enumerate(row)) for row in T[i]]
+    scale=max(h[i])
