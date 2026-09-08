@@ -1,12 +1,12 @@
 # Physics campaign status
 
-Updated 2026-09-08T16:09:08.796036+00:00. Active until September10 10:27UTC (6:27a.m. Eastern), subject to available usage. Weekly remaining65%; no reset credits authorized.
+Updated 2026-09-08T16:41:34.971161+00:00. Active until September10 10:27UTC (6:27a.m. Eastern), subject to available usage. Weekly remaining62%; no reset credits authorized.
 
-Six conditional science review PRs are open,8036–8041. The latest proves complete charge-pair configuration connectivity in the stated model and verifies a full-lattice fermionic exchange witness. An exact charged-fermion/U1 representation has passed independent review and is being packaged. These are model-level bridges, not TOE completion.
+Eight conditional science review PRs are open,8036–8043. We now have exact charge/fermion dictionaries, pair channels and connectivity results. The newest research derives a ring interaction from virtual defects on the full native carrier, removing the hard charge cutoff from that mechanism. Its energy corrections do not generate the RK flippability term through sixth order. A finite small-coupling error bound is independently checked. These remain supplied-model results, not TOE completion.
 
-L4 passed planned precision/cross-arm checks, but remaining projection-error diagnostics are unresolved. L8 is now running fixed production: 42/128 segments completed at this checkpoint, no failures. No interim physics comparisons or sample replacements. Concurrent proofs examine pair creation and whether virtual pairs generate ring dynamics.
+L8 .95 production: 84/128 segments completed at this checkpoint, no failed exits. No interim physics analysis or replacements. V0 model comparison is at deterministic preparation stage only; new sampling requires a frozen reviewed plan and cost forecast.
 
-Disk about65GiB free.31old worktrees were removed only after exact remote-HEAD verification; their recovery map is disk-cleanup-20260908/FINAL_CLEANUP_REPORT.md. Useful evidence must be remote before local deletion.
+Disk64GiB free.31old worktrees were removed after exact remote-HEAD checks. Recovery map: disk-cleanup-20260908/FINAL_CLEANUP_REPORT.md. Useful evidence must be remote before local deletion.
 
 SSH:
 
@@ -17,4 +17,4 @@ SSH:
     df -h /private/tmp
     git -C /private/tmp/toe-physical-supplier-24h-20260908 log -5 --oneline
 
-Keep the machine powered on and desktop app running for local scheduled continuation, as in the [scheduled-task documentation](https://learn.chatgpt.com/docs/automations?surface=app). System sleep is disabled. Do not launch a duplicate supervisor. No main merge or formal audit verdict has been applied.
+Keep the machine powered on and desktop app running for local scheduled continuation ([documentation](https://learn.chatgpt.com/docs/automations?surface=app)). System sleep is disabled. Do not launch a duplicate supervisor. No main merge or formal audit verdict has been applied.

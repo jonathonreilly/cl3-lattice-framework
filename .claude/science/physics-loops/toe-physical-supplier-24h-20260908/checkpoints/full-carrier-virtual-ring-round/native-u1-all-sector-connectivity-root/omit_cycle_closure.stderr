@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-u1-all-sector-connectivity-root/omit_cycle_closure.py", line 71, in <module>
+    y,t,p=reduce(x);u,c=join(y,ice);req(len(t)+len(u)<=sum(v*v for v in Q(x))*63//2+192,'full route bound')
+                        ^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-u1-all-sector-connectivity-root/omit_cycle_closure.py", line 60, in join
+    req(not any(Q(x)),'cycle returns ice');cycles.append(C)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-u1-all-sector-connectivity-root/omit_cycle_closure.py", line 10, in req
+    if not c:raise RuntimeError(label)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cycle returns ice

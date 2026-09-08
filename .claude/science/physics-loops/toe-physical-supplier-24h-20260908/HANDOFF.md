@@ -61,3 +61,6 @@ Frozen membership is NINTH_SHA256.json. Active proof/design directories are excl
 
 
 Tenth checkpoint 2026-09-08T16:09:08.796036+00:00: see TENTH_RESULTS.md/TENTH_SHA256.json and current STATUS.md. PR8041 delivered; L8 PID30888 running at 42/128 segments. Corrected U1 dictionary and all-low A connectivity independently reviewed; virtual-pair mechanism active.48h deadline unchanged. Lock refreshed through18:01UTC.
+
+
+Eleventh checkpoint 2026-09-08T16:41:34.971161+00:00: see ELEVENTH_RESULTS.md/SHA256 and currentSTATUS. PR8042/8043 delivered. Fullcarrier virtual-ring proof and finiteerror reviewed; nohardlowgate neededforH4, H6scalar coefficient changes. Canonicalfullmodelrewrite active. L884/128success,PID30888. V0onlydeterministicStage0 authorized. Deadline48h unchanged.

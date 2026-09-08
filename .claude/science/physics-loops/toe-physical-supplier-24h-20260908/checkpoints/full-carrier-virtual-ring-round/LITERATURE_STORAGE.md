@@ -1,0 +1,1 @@
+Retain the original analysis, read coverage, primary URLs and downloaded-source SHA receipts. Publicly retrievable third-party article PDFs and their full-text extracts remain local reading caches and are not republished in this science archive. These are not unique campaign evidence.
