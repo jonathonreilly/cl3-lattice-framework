@@ -1,0 +1,3 @@
+# Independent prospective ramp proof
+
+Before reading root ramp derivation, derive finite-order time-dependent local elimination for h(s)=D+epsilon f(s)V with s=epsilon U t. Track derivative term and endpoint gauge, then bound ramp errors transported through a subsequent U epsilon^4 time scale. Reuse the independently checked strong-support algebra and local finite-order static elimination only. No stochastic/numerical execution. Desired state is an explicitly evolved ice state, not the ground state. Separate final observable dressing from physical preparation. A formal series without a finite remainder estimate will not be reported as a theorem.
