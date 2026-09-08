@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/emergent_lorentz_invariance_at_the_dirac_point_and_the_taste_census_check_2026_09_03.py
+runner_sha256: 49c0974ad1981e3319d9aa8d692f918a26b5eb428e912a5b0686c2be19bfe28f
+input_fingerprint_sha256: 33613139e01e4e44a92551ed98a4bbf1d12fdac316e7a44010ec1ec3aa09004e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.25
+status: ok
+----- stdout -----
+PASS Z1 [input identity] final own-note/current memo/quoted gate pinned; no parent campaign approval
+--- A  magnetic cell ---
+PASS A1 [exact, sympy] the 2x2x1 magnetic cell (4 coarse sites) has H4(Q)^2 = (6 + 2cosQ1 + 2cosQ2 + 2cos2Q3) I and tr H4 = 0: two doubly degenerate bands +-E4
+PASS A2 [exact] direction 3 has one site per cell, so its hop is diagonal and enters squared: 4cos^2 Q3 = 2 + 2cos 2Q3.  Q = (pi,pi,pi) is NOT a node: spectrum [-2.,-2., 2., 2.]
+PASS A3 [exact + exhaustive 60^3 scan] E4 = 0 iff cosQ1 = cosQ2 = cos2Q3 = -1: exactly TWO nodes, Q = (pi,pi,pi/2) and (pi,pi,3pi/2), each 4-fold (degeneracies [4, 4])
+PASS A4 [numerical, 1e-11] the 2x2x2 cell folds both onto q = (pi,pi,pi): its spectrum at (Q1,Q2,2Q3) is the union of the 2x2x1 spectra at Q3, Q3+pi (dev 3.6e-15), one 8-fold touching
+
+--- B  chirality census ---
+PASS B1 [exact, sympy] at q = (pi,pi,pi), M_a = dH/dp_a = -Gamma_a exactly, speeds all 1, X = -i m1 m2 m3 spectrum +1 x4, -1 x4: 2R + 2L Weyl (2 components each) = N_f = 2 four-component Dirac fields, net chirality 0 (Nielsen-Ninomiya)
+PASS B2 [numerical, 1e-12] each 2x2x1 node is a 4-component Dirac point, 1R + 1L, speeds (1,1,2) in that cell's coordinates; the two are 2R + 2L, the same vector-like N_f = 2
+  node (cell)              speeds                   chi+ chi-
+  (pi,pi,pi/2) 2x2x1       (1.0000,1.0000,2.0000)    2    2
+  (pi,pi,3pi/2) 2x2x1      (1.0000,1.0000,2.0000)    2    2
+  (pi,pi,pi) 2x2x2         (1.0000,1.0000,1.0000)    4    4
+PASS B3 [exact] in the branch U Gamma_a U^dag = -sigma_a x T the transported M_a are exactly sigma_a x T, so H(pi+p) = sum_a p_a (sigma_a x T) + O(p^2) (res/|p|^2 -> 0.49) and X = I x T EXACTLY: T = +1 is two RIGHT-handed Weyl (det v = +1), T = -1 two LEFT-handed (det v = -1), a branch swap only exchanging the labels
+  RELABELLING: the historical, unaccepted 'two-component spin x four-component taste' counts 8 = 2 x 4;
+  the census reads the same 8 as 2 (Weyl) x 2 (chiralities) x 2 (tastes), same multiplicities.
+PASS B4 [numerical, 1e-9] tori L = 4, 6, 8 carry 8, 0, 8 zero modes: the cell momenta q_a = 4 pi m / L hit pi iff 4 | L, and then all 8 modes of the touching are on the grid
+
+--- C  one velocity ---
+PASS C1 [exact, sympy] E(pi+p)^2 = sum_a (2 - 2 cos p_a) exactly (residual 0), expanding as |p|^2 - (1/12) sum_a p_a^4 + (1/360) sum_a p_a^6 + O(p^8): the O(p^2) term is exactly isotropic; the anisotropic quartic class modulo |p|^4 has coefficient EXACTLY -1/12
+PASS C2 [exact, sympy] hence phase velocity v = E/|p| = 1 - (|p|^2/24) sum_a nhat_a^4 + O(p^4): ONE velocity v -> 1 in every direction, every taste, both chiralities, supplied cell/hopping/time units (unit-sphere residual to O(p^2): 0)
+  |p|     v[100]      v[110]      v[111]      spread      36 spread/|p|^2
+  0.8000  0.97354586  0.98671990  0.99113478  1.7589e-02  0.98938
+  0.4000  0.99334665  0.99667000  0.99777926  4.4326e-03  0.99734
+  0.1000  0.99958339  0.99979168  0.99986112  2.7773e-04  0.99983
+  0.0500  0.99989584  0.99994792  0.99996528  6.9442e-05  0.99996
+  0.0125  0.99999349  0.99999674  0.99999783  4.3403e-06  1.00000
+PASS C3 [numerical] the [100]/[111] spread is |p|^2/36 + O(p^4) (max rel dev 1.06e-02), log-log anisotropy exponent 1.9978 [exact 2]: isotropy fails only at relative order p^2
+PASS C4 [numerical, 4e-16] U H(pi+p) U^dag = sum_a sin p_a (sigma_a x T) + sum_a (1 - cos p_a)(I x B_a) to 4.1e-16; the taste-mixing term is O(p^2) (norm/|p|^2 -> 0.50) and commutes with every spin generator -- a singlet, so it leaves the leading velocity; mixing is not band splitting
+
+--- D  propagator ---
+PASS D1 [exact] every entry of Xi_a, Gamma_a with popcount(s XOR s') != 1 vanishes, so P(q)_{ss'} = delta/2 - H(q)_{ss'}/(2E) is zero off the one-odd-component set except the contact and P_ss = 1/2: the selection rule is an identity of the projector, not asymptotics
+  |P_vu| |r|^3, 288^3 grid, stride-subsampled shells
+  shell |r|  measured   mean (4/pi^2)|nhat_a|  pairs
+  6-24       0.21145    0.21018                2994
+  30-50      0.20353    0.20340                2718
+  60-90      0.20213    0.20202                4137
+PASS D2 [numerical, 288^3 momentum grid] finite |P_vu| |r|^3 compared with (4/pi^2)|nhat_a| = 0.405285 |nhat_a|: axis ratios 1.0049, 1.0024, 1.0019 at n = 41, 61, 81, approaching 1 with |r|
+PASS D3 [numerical] each shell mean tracks the mean of (4/pi^2)|nhat_a| over the same separations, finite means compared with sphere average 2/pi^2 = 0.202642 (measured 0.21145 -> 0.20353 -> 0.20213); no infinite-distance proof or endorsement of historical 0.21
+
+--- E  sum rule ---
+  torus                    V zero P_vv       sum rule       max excess
+  8^3 antiperiodic x_3   512    0 0.5000000  0.2500000000   0.0e+00
+  6^3 periodic           216    0 0.5000000  0.2500000000   0.0e+00
+  8^3 periodic           512    8 0.4921875  0.2499389648   0.0e+00
+PASS E1 [numerical, 1e-15] on the 8^3 torus with one antiperiodic direction (zero modes lifted, an exact half-filled projector) P_vv = 1/2 at every site (dev 1.0e-15) and sum_{u != v} P_vu^2 = P_vv - P_vv^2 = 1/4 exactly (dev 6.7e-16): Var N = 0 under supplied Slater/Born law.   6^3 periodic gives the same 1/4
+PASS E2 [numerical] Hermitian idempotent projectors and distinct-site Slater/Born pair probabilities; original 262144 ordered-entry determinant diagnostic max excess 0.0e+00 (diagonal occupation uses n_v^2=n_v); no general Record negative-association claim
+PASS E3 [numerical, reported as ambiguous] on the 8^3 PERIODIC torus the zero modes make half filling ambiguous: proj(E < 0) has rank 252, P_vv = 252/512, and the sum rule closes at 0.2499390, not 1/4 (identity dev 4.4e-16).  Reported, not used
+
+PASS E4 [bounded joint-law control] supplied Slater minors normalize and give distinct-site Cov=-|P_uv|^2, diagonal Var=n(1-n); same-marginal alternative has Cov(0,1)=+1/4; nonprojector rejected
+PASS E5 [bounded zero-mode control] periodic 4^3 permits a supplied rank32 half-filled projector with uniform diagonal1/2; strict-negative convention remains separate
+PASS C5 [normalization control] axis phase/group corrections -p^2/24 and -p^2/8; G(-iD)G^dag=M/2, cell p=2k; speed1 per cell or2 per coarse site in supplied units
+TOTAL: PASS=22 FAIL=0   runtime 4.8 s
+
+----- stderr -----
+
