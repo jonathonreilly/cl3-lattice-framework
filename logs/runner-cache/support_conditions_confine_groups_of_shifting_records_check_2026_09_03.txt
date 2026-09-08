@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py
+runner_sha256: e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223
+input_fingerprint_sha256: d22aa0019c3dcdfb6b5afb5ed6b9b5d9ea49192c7966e739ec155b2fae93bfb5
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 9.51
+status: ok
+----- stdout -----
+PASS I1 [source binding] final own note and current memo match declared input hashes
+PASS A1 [exact] the L = 6 torus is bipartite by coordinate-sum parity: all 1296 bonds join opposite classes (0 violations), so no triangle closes -- two neighbours of a site are never adjacent (0 over 6480 pairs)
+PASS A2 [exact] so at each of the 1296 shifts x -> y there N(x), N(y) are DISJOINT (max overlap 0) and no companion of x survives at y (0): an occupied member shifted one step loses EVERY companion at once
+PASS B1 [exact] fixed polycubes of size 1..6 in Z^3: 1, 3, 15, 86, 534, 3481. Admissible ONE-STEP shifts under C_comp, by shape: dimer 0, straight trimer 0, bent trimer 2, square 0, straight-4 0, L 1, T 4, S 2, skew 2, tripod 6
+PASS B2 [exact] C_comp admits NO singleton configuration -- no isolated occupied site; over the 3/15/86/990/11851 groups reachable mod translation at n = 2..6 and their 0/24/192/3372/52320 shifts occupation number is conserved (0 violations, 0 off-condition)
+PASS B3 [exact] splitting shifts: 0, 0, 0 at n = 2, 3, 4 -- a group of size <= 4 can NEVER split. At n = 5 there are 336, witness [(0,0,0),(1,0,0),(2,0,0),(3,0,0),(3,1,0)] splitting into [2,3]; every part of a split at n <= 6 holds >= 2 occupied sites; merges are as many (336/4440 at n = 5/6)
+PASS B4 [exact] the CAGE: for n = 3, 4, 5, 6 an exact RATIONAL potential Phi of the SHAPE has physical (y-x)/n = Phi(c)-Phi(S) on the complete n<=6 closure -- 0/0/0/0 inconsistencies over 24/192/3372/52320 shifts, 6/13/34/40 components -- so the lab centre of mass takes finitely many values: D_group = 0 EXACTLY
+PASS B5 [exact] CENTROID coordinate range: Phi is fixed up to a constant per component, so its within-component spread bounds centroid excursion, not group diameter -- 1/3, 1/2, 4/5, 4/3 lattice units at n = 3, 4, 5, 6. The BENT TRIMER's orbit is 4 configurations in one FIXED unit square: three of its corners, forever
+PASS C1 [exact] under C_rig a ONE-STEP shift is frozen: over ALL 104 connected groups of size 2, 3, 4 they number 0 -- by A1 the target is non-adjacent to x's other neighbours, so an occupied member with a companion cannot move alone
+PASS C2 [exact] under C_rig with the SIMULTANEOUS tick and STRICT occupancy the only admissible whole-group moves are RIGID UNIT TRANSLATIONS: 0 non-translations over the 8 named groups; free directions 4/4/2/2/4/2/2/0
+PASS C3 [exact] the ISOMETRY form with PERMISSIVE occupancy enumerates the admitted rigid rotations and reflections: all 160 admissible assignments over 10 groups land on a CONGRUENT copy (0 violations), 70 of them translations, 7 per group
+PASS C5 [exact] same permissive support, explicit uniform16 labelled-isometry law: D/D1=5/8, not1; translations+stay=6/7, six-only=1, stay=0
+PASS C4 [exact] the OCCUPANCY convention is load-bearing: PERMISSIVE admits all 6 unit translations; under SIX UNIFORM PROPOSALS/rejected stay D_group=D_1; STRICT blocks ones -- dimer 4/6, bent trimer 2/6, 2x2x2 block 0/6, i.e. D_group/D_1 0.667, 0.333, 0.000
+PASS D1 [exact] the cube's 4096 patterns split into 128 parity sectors of 32. In the VACUUM no single edge-BIT complement is admissible (0 of 12): one complement flips BOTH its corners. The sector-preserving sets are a subspace of 32, weights {0: 1, 4: 6, 6: 16, 8: 9}
+PASS D2 [exact] that subspace is EXACTLY the span of the six face 4-cycles (32 elements, True) and EXACTLY the cube's cycle space, dim E - V + 1 = 5 (True): admissible fixed-coset complement masks are cycles; no physical Record update inferred
+PASS D6 [exact] all128 FIXED parity cosets admit zero single-edge complements; N=2 union is different
+PASS D3 [exact] in the N=2 UNION (initial odd corners u,w), the retained single complements are EXACTLY the edges incident to exactly one of u, w -- 0 mismatches over 28 pairs: 4 N=2 hops; 1 formal annihilation OUTSIDE N=2 at distance1 (12 pairs), 6 hops at distance 2 (12) and 3 (4)
+PASS D4 [exact] at every such hop exactly 1 edge BIT changes its VALUE and exactly 1 odd corner moves, to an adjacent corner: the geometric star does NOT translate -- the odd corner does, and what moves is the parity pattern
+PASS D5 [exact] and all 24 adjacent TWO-edge complements -- formal algebraic operations, not asserted hopping -- LEAVE the vacuum sector: odd-corner counts {2: 24}
+PASS E1 [numerical, 1e-9] the HARD-ADJACENCY pair: on the L = 6 and L = 8 pi-flux tori the 22572 and 129280 non-adjacent two-record configurations carry odds 0, leaving 648 and 1536; the tick kernel is translation covariant to 1.9e-16, so the class chain is exact
+PASS E6 [numerical, 1e-10] postselection masses/orientation entries positive; Poisson/centering residual small in all four cases
+PASS E7 [numerical] actual half-period event has positive conditional weight 0.000329643 but proxy0; one separated free amplitude is zero
+PASS E2 [numerical, 1e-3 targets, 5e-3 masses] POSTSELECTED modulo-sum PROXY ratio = 0.5016, 0.5075 at tau = 0.5 and 0.1058, 0.1453 at tau = 1 (L = 6, 8) against the reference1/2 (no half-speed theorem); the odds on the admissible set before renormalising, 0.31 and 0.28 (wrap <= 1.5e-02, drift <= 1.0e-02)
+PASS E3 [numerical, 1e-9 stationary/rows, 1e-3 change targets] P(adjacent) = 1 at EVERY tick by construction -- absolute, not statistical (rows sum to 1 to 3.3e-16); the orientation is a 3-state chain on the relative axis, stationary odds exactly (1/3, 1/3, 1/3) (7.8e-16), P(axis changes) 0.475, 0.476 at tau = 0.5 and 0.079, 0.072 at 1
+PASS E4 [numerical, 2e-3 targets, 1e-9 normalization] finite joint-move weights: the joint-move census at L = 8, tau = 0.5 from an axis-1 pair reads one member shifts 0.540, rigid translation 0.239, same sites 0.218, non-rigid 0.002 (sum 1.000000)
+PASS E5 [numerical, 1e-3 endpoints] finite independently redeclared pair contrast: with positive ADJACENT DETUNING g=32 and no support condition P(adjacent) at ticks 1, 2, 5, 10, 20, 40 runs 0.978, 0.957, 0.896, 0.804, 0.648, 0.424 toward uniform 0.0279 -- sampled leakage only, no all-strength claim
+SUMMARY: complete n<=6 CENTROID certificate, named support censuses and explicit probability laws; N=2 union differs from fixed cosets. KT is global postselection with a modulo-sum PROXY rate. No all-strength, arbitrary-n or physical Record theorem.
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

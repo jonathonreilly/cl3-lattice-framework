@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py
+runner_sha256: c0c3968f69be591b5c37bcc4f1505c2883295d812f21bc2be392b717f04e9628
+input_fingerprint_sha256: 3ba859611562e391890d89d31cd1579364dc2da7cc9dc61c9ce163ff61dee11e
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 22.16
+status: ok
+----- stdout -----
+PASS I1 [source binding] final own note and current memo match declared input hashes
+PASS A4 [exact] actual hopping: 24576 nonzero exclusion-conditioned events, 0 mismatches; equal parities have zero amplitude
+PASS A1 [exact] cube, 8 corners and 12 edge sites of degree 3: over all 4096 bit patterns x 12 sites (49152 cases) a FORMAL X complement on e is y -> y XOR e, complementing n_v and n_w alone: 0 violations
+PASS A2 [exact] the formal complement changes one BIT value: minus-bit weight |y| moves by exactly +-1 in all 49152 cases (24576 up, 24576 down), never by 0: 0 violations
+PASS A3 [exact] parity occupation number: sum_v n_v is conserved exactly when one endpoint is occupied (24576 cases, 0 violations), else moves by +-2 (24576 cases, 0 violations)
+PASS B1 [numerical, monotonicity and 1e-3 ratio] M0 on the L = 32 pi-flux torus: sigma^2(t) = 0.0592, 0.3453, 1.0890, 2.1365, 5.8574, 12.0704, 32.2419, 125.5190 at t = .1, .25, .5, 1, 2, 3, 5, 10 and sigma/t falls 2.4332 -> 1.1204 -- finite-time rows, no ballistic limit inferred
+PASS B2 [numerical, 1e-7] finite size: m_2(tau) on L = 16 and L = 32 agree to 1.4e-17, 4.1e-13, 1.7e-08 at tau = 0.1, 0.5, 1.0, at these three times only; no volume-independent interval theorem
+PASS B3 [numerical, 1e-15] M1, the supplied deleted-bond convention: its H_R deletes the 6 bonds at the recorded corner, H_R e_v = 0 identically (max 0.0e+00), sigma^2 = 0.0e+00 and leakage 0.0e+00 at t = .5, 1, 5, 20, 100 -- pinned
+PASS C1 [numerical, 1e-20 covariance/evenness, 1e-12 mean] M2's one-tick kernel p_tau(r) = |<v + r| e^{-i tau H} |v>|^2 at tau = 0.5 is translation covariant to 1.5e-31 and even to 3.3e-24 with |E[r]| <= 2.6e-13: group covariance; representative mean is measured, not identically zero
+PASS C2 [numerical, 1e-11] screened finite rows: the n-fold FFT convolution of the tick kernel: torus variance agrees with n*m2 to max 2.0e-12 over the 17 (tau, n) pairs with tau <= 2, n <= 50 and wrap mass below 1e-14
+PASS C3 [numerical, 1e-4 rounded targets] centered additive-lift D(tau) = m_2(tau)/(6 tau) = 0.0987, 0.2302, 0.3630, 0.3860, 0.3561, 0.3479, 0.4881, 0.6706, 1.0747 at tau = .1, .25, .5, .7, 1, 1.2, 2, 3, 5
+PASS C4 [exact + numerical] Zeno limit: m_2 = z tau^2 - a tau^4 + O(tau^6), z = sum_w |H_wv|^2 |w - v|^2 = 6 exactly (the coordination), a -> 7.99984 at tau = 0.005 (8, independently proved below), so D = tau - (4/3) tau^3 + ...: fast ticks pin
+PASS C5 [numerical, 1e-3] uncontrolled four-time quadratic fit: c_2 = 1.2437 on times 3,4,5,6; c_2/6=0.2073: no long-time claim; sampled D_lift extrema, max 0.3860 at tau = 0.70, min 0.3474 at tau = 1.15
+PASS C6 [numerical] n=2000: actual torus variance 255.749733 <768, additive lift 2177.989610 >768
+PASS C7 [exact] local signed-walk coefficients (6,-8), enumerated endpoints (zeros retained) [1, 6, 19, 44]; no long-time fit proof
+PASS D1 [exact ages; numerical 1e-12 variance sum] renewal: ages carry P_n(a) = (1-p)^a p (a < n), (1-p)^n (a = n), summing to 1 exactly as Fractions at every n <= 12, and centered SEGMENT-LIFT variance = E[V_n] + sum_a P_n(a) m_2(a tau) matches enumeration of all 2^n histories to 7.7e-13
+PASS D4 [numerical, 1e-9] independent rational fit binding: coefficient error 6.6e-14, actual tail error 7.1e-14; no extrapolation guarantee
+PASS D2 [diagnostic, 2 percent comparison; no tail error bound] fitted-tail sum (actual m2 only through time6) = 0.3630, 0.9942, 4.0735, 3.9700, 16.1936 at (tau, p) = (.5, 1), (.5, .2), (.5, .05), (1, .1), (2, .05), against c_2 tau (2-p)/(6p) = 0.1036, 0.9328, 4.0421, 3.9385, 16.1685
+PASS D3 [diagnostic, spread<9 percent; no crossover theorem] shared mean-duration cases: (0.5, 0.05), (1, 0.1) and (2, 0.2) share tau/p = 10 and give fitted-tail diagnostic= 4.0735, 3.9700, 3.7625, within 8.3%, while their p tau = 0.025, 0.1, 0.4 spans 16x (D_M2(0.5) = 0.3630)
+PASS E1 [numerical, 1e-9] M4 on the 6^3 torus: 23220 two-particle configurations reduce by translation covariance to an EXACT 111-class relative chain, rows summing to 1 (max 3.6e-13); uniform gives P(adjacent) = 0.0279, mean 4.5209
+PASS E2 [numerical, monotonic sampled rows; 1e-3 endpoint] tau=.5 positive ADJACENT DETUNING at FIVE g: P(adjacent) over ticks 1..40 runs 0.3092->0.0279 (0); 0.4588->0.0279 (4); 0.7368->0.0279 (8); 0.9285->0.0766 (16); 0.9783->0.4235 (32), toward the uniform 0.0279
+PASS E3 [numerical, 1e-3 ratio] finite leakage/local-variance PROXY: tick-40 mean distance 4.5209, 4.5209, 4.5208, 4.3187, 3.0338 at g = 0, 4, 8, 16, 32 against uniform reference4.5209 (historical scale half-band scale 3.4641); local modulo-sum-variance ratio 0.4910 at g=0, not physical CoM
+PASS E4 [numerical, 1e-3 endpoint] cube +code preparation in ambient896 started ADJACENT under the same tick at tau = 0.5, g = 32 carry P(d = 1) = 0.9880, 0.9762, 0.9423, 0.8905, 0.6726 at ticks 1, 2, 5, 10, 40, toward 0.4286
+PASS F6 [exact loop; numerical 1e-12 code] distinct stationary (I+S)/896, trace distance1/2; ambient min -4.828427, +code dim28 and U(pi)=I
+PASS F1 [numerical, 1e-14] M5's tick map rho -> mask(U(tau) rho U(tau)^dag), mask = Lueders on the 28 corner patterns, agrees with EXPLICIT coarse-outcome trees -- 312 branches after tick 1, 5824 after tick 2 -- to L1 = 2.6e-16 and 6.0e-16
+PASS F2 [numerical, 1e-3 rounded targets] sampled marginal from chosen +code ground vector the forbidden mass at ticks 1, 2, 5, 8 is 0.2655, 0.3430, 0.4161, 0.4267 (tau = 0.5); 0.3101, 0.3638, 0.4228, 0.4280 (1); 0.2148, 0.3065, 0.4016, 0.4223 (2)
+PASS F3 [numerical, 1e-15] I/896 is an EXACT fixed point: max |map(I/896) - I/896| = 5.6e-18, 6.3e-18, 4.8e-18 at tau = 0.5, 1, 2, odds uniform on the 28 corner pairs to 6.6e-16, forbidden mass exactly 12/28 = 0.428571429
+PASS F4 [numerical, 5e-3 rounded targets] sampled tick12/tick11 MARGINAL L1 ratios at 0.5294, 0.4560, 0.6156 for tau = 0.5, 1, 2, no all-time rate or full-state attraction follows
+PASS F5 [numerical, 1e-12] for the tabulated cap-bounded marginals: L1 from the coarse odds to the pre-record Born diagonal (1/16 on 16 pairs, 0 on 12) is exactly 2x the forbidden mass at all 24 ticks (max residual 1.9e-15)
+SUMMARY: finite torus position is bounded; centered additive lifts are separate. Fits remain uncontrolled diagnostics; five adjacent-detuning rows and coarse +code marginals give no all-strength, physical-CoM or unique full-state-attractor theorem.
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+
