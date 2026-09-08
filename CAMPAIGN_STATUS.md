@@ -55,13 +55,13 @@ joint-law selection remain open.
    The corrected #7888/#7890 finite matter source is also on main, alongside
    the corrected #7889/#7891 source, now independently reviewed and landed.
    The corrected #7894/#7897 symmetry/Hartree source is also landed.
-   Walls author repair resumes and will return to its original independent reviewer.
-   The four-PR sea/corner original review is sealed with changes required; a
-   separate author is queued after finishing the active flux-sector review.
-   The next vacuum/energy-response original review is assigned while walls
-   corrections finish; it preserves priority for the original walls confirmation.
-   Relaxation/neighbourhood review is checkpointed
-   before its first baseline and will resume in the same reviewer session.
+   Walls corrections are sealed and the exact composition is with its original
+   independent reviewer. The sea/corner author is actively repairing all four
+   units. Relaxation/neighbourhood original review has resumed; afterward its
+   reviewer will author the separately reviewed flux-sector repairs. Flux original
+   review is sealed with changes required. Vacuum/energy is checkpointed after
+   73 original checks and provisional decisive findings, to resume after walls
+   confirmation. No new scientific scope has landed in this assignment refresh.
    #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
    reserved-source hold. Closure reconciliation is complete; 77 pending closed
    scopes remain at seven successors. Preserve the fixed 254 and all reservations.

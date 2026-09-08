@@ -1,0 +1,80 @@
+diff --git a/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md b/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md
+index 4042fae9c7..3571b15818 100644
+--- a/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md
++++ b/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md
+@@ -100,7 +100,7 @@ For the **sharp** L64 fixtures only, projection onto M2D and M2D F_b reconstruct
+ 
+ ## T5 — massive dispersing line band (E1–E4)
+ 
+-The supplied field is exactly m(x,y)=sgn(L/2-x)sgn(L/2-y) with sampled amplitude 1, on L=24,32 tori and a two-site z cell. At kz=pi the lowest eight absolute-energy states are degenerate to 1e-6 with minimum .317837 at both lengths (historical difference 2.2e-16), below the sharp single-wall .414214 and bulk 1. The field itself and the quoted numerical minimum are now checked; multiplying the actual field by 1.05 must fail.
++Define the sampled step s_L(x)=+1 for 0<=x<L/2 and s_L(x)=-1 for L/2<=x<L. The supplied field is exactly m(x,y)=s_L(x)s_L(y), with amplitude 1 including the integer interface sites, on L=24,32 tori and a two-site z cell. At kz=pi the lowest eight absolute-energy states are degenerate to 1e-6 with minimum .317837 at both lengths (historical difference 2.2e-16), below the sharp single-wall .414214 and bulk 1. The field itself and the quoted numerical minimum are now checked; multiplying the actual field by 1.05 must fail.
+ 
+ The old dispersion rows remain .327745 at dk=.08 and .355761 at .16, equal at pi±dk within 1e-9. Squaring gives `H(kz)^2=H(pi)^2+4cos²(kz/2)I`, hence the positive low branch `E(pi+dk)=sqrt(E0²+4sin²(dk/2))`. Its derivative is `sin(dk)/E`, nonzero and opposite at ±.08 (about ±.24383155). Evenness sets the derivative to zero only at the minimum; the band disperses. No complete absence-of-movers or chiral-wire theorem follows.
+ 
+diff --git a/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md b/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md
+index 14780988bc..7e34d4eb42 100644
+--- a/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md
++++ b/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md
+@@ -119,13 +119,13 @@ The original seven-item list names coordinate/order/adjacency, K_s, r_sL_s, Gamm
+ 
+ Reconstruction at p0 has residual zero. Frobenius norms of the actual removed terms for Ns64 are 11.224972 (K⊗Gamma_s),19.544820 (r_sL⊗Gamma_m),11.224972 again when removing Gamma_s's full coupled term, and12.8 (diag m⊗Gamma_m). The original standalone ||Gamma_s||=2 remains a historical algebra norm, not the removed operator norm.
+ 
+-Literal removal of record-coordinate terms leaves the **four-component spatial Wilson matrix** `sum sin p_i Gamma_i + r sum(1-cos p_i) Gamma_m` per remaining spatial block. The separately constructed naive two-component comparator `D=i sum sigma_i sin p_i` also removes the spatial Wilson term and changes the embedding. Its eight local zero windings are four positive and four negative, net zero; local winding is present. At p=(.2,.3,.25) the Hermitian four-component remaining spectrum is ±.460294987 twice, while the Hermitian naive comparator has ±.448422635. They are different domains/operators, not the same withdrawal.
++Literal removal of record-coordinate terms leaves the **four-component spatial Wilson matrix** `sum sin p_i Gamma_i + r sum(1-cos p_i) Gamma_m` per remaining spatial block. The separately constructed naive two-component comparator `D=i sum sigma_i sin p_i` also removes the spatial Wilson term and changes the embedding. Its eight local zero windings are four positive and four negative, net zero; local winding is present. At p=(.4,.2,.1) the Hermitian four-component remaining spectrum is ±.460294987 twice, while the Hermitian naive comparator has ±.448422635. They are different domains/operators, not the same withdrawal.
+ 
+ The elementary spatial sharp-wall parity identity is independently reconstructed here and retained as a comparison only. It does not prove the spatial unit's projection claims or a common physical no-go. A per-site record set is empty or singleton; the memo supplies no rereadable changing stack, but that fact does not prohibit every possible emergent temporal construction.
+ 
+ ## Interpretation, alternatives and executable scope
+ 
+-Original A1–E4 and all26 check IDs/numerical payloads are preserved, with corrected labels and added F controls. The dated history contains every old note and cache body verbatim; the final genuine cache governs only its own exact note/source/input freeze. No archived claim or earlier PASS becomes a current theorem by quotation.
++Original A1–E4 and all26 check IDs are preserved, with corrected labels and added F controls. The active E2 Gamma_s-withdrawal norm is explicitly corrected from the standalone algebra norm 2 to the full coupled-operator norm 11.224972; every original numerical payload, including 2, remains verbatim in the historical cache below the dated record. The dated history contains every old note and cache body verbatim; the final genuine cache governs only its own exact note/source/input freeze. No archived claim or earlier PASS becomes a current theorem by quotation.
+ 
+ N1: actual families are periodic/open/pinned/uniform finite spectra, the four flux-window diagnostics, the 2592 cutoff census and finite window/length probes. Alternate ends, smooth fronts, other sizes/alphabets, branching/higher-dimensional carriers, interactions, measures and dynamical gauge couplings remain open. N2: supplied items are not pairwise independent walls. N3: coordinate, metric, embedding, regulator, cutoffs, windows and physical interpretation remain explicit choices. N4: finite residuals, intended-rational references and exact bidiagonal/balanced-pairing proofs have separate scope. N5: exact-zero/cone/inflow, all-species and universal physical claims are withdrawn. N6: positive localized low spaces and balanced pairing survive. N7: very weakly overlapping local modes remain a useful conditional construction. N8: archived comparisons are historical only; repetition does not confer independent acceptance.
+ 
+diff --git a/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py b/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py
+index 7b3367d17a..c77fc2ccd3 100755
+--- a/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py
++++ b/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py
+@@ -47,11 +47,13 @@ AUDIT_TIMEOUT_SEC = 150
+ # Semantic input identity: the model is self-contained; these are the current
+ # note and exact quoted ontology/comparison boundaries, not parent campaigns.
+ AUDIT_INPUT_PATHS = ('docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md')
+-EXPECTED_INPUT_SHA256 = {'docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md': 'da1bd4f81a17f99259c9aaa216dc94f46e9177749ebb5a628118cbe39dd732f3', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md': '03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef'}
++EXPECTED_INPUT_SHA256 = {'docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md': 'ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md': '03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef'}
+ 
+ def current_input_guard():
+     root = Path(__file__).resolve().parents[1]
+     errors = []
++    if set(AUDIT_INPUT_PATHS) != set(EXPECTED_INPUT_SHA256):
++        errors.append("declared semantic input set differs from pinned set")
+     for rel in AUDIT_INPUT_PATHS:
+         try:
+             actual = hashlib.sha256((root / rel).read_bytes()).hexdigest()
+@@ -733,7 +735,7 @@ for mass in (-2.01,-1.99,-.01,.01):
+ check("F3 [finite cutoff counterexamples] all four near-boundary Ns48 fixtures have 20 |E|<.30 states on BOTH sides of bulk window",
+       [x[1] for x in NEAR_WINDOW]==[0,1,1,0] and [x[2] for x in NEAR_WINDOW]==[20]*4)
+ 
+-p0=(.2,.3,.25)
++p0=(.4,.2,.1)
+ remaining=sum(np.sin(x)*G_SP[i] for i,x in enumerate(p0))+sum(1-np.cos(x) for x in p0)*G_M
+ full_delta=hamiltonian(4,profile_flip(4),"open","hard",p0)-hamiltonian(4,profile_flip(4),"open","hard")
+ naive=sum(np.sin(x)*SIG[i] for i,x in enumerate(p0))
+diff --git a/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py b/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py
+index d514ae51cc..6d2a71eb30 100644
+--- a/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py
++++ b/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py
+@@ -48,11 +48,13 @@ AUDIT_TIMEOUT_SEC = 120
+ # Semantic input identity: the model is self-contained; these are the current
+ # note and exact quoted ontology/comparison boundaries, not parent campaigns.
+ AUDIT_INPUT_PATHS = ('docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md')
+-EXPECTED_INPUT_SHA256 = {'docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md': '3a4d93eaf83521c015a49204c2421f492270d2af650d4f7967fcf5c0e4894c39', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md': '67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90'}
++EXPECTED_INPUT_SHA256 = {'docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md': '1e8d8bafdf7d72a8ed54a579b454d799051518bb5f2a8cd737f8a67f8d225949', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md': '67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90'}
+ 
+ def current_input_guard():
+     root = Path(__file__).resolve().parents[1]
+     errors = []
++    if set(AUDIT_INPUT_PATHS) != set(EXPECTED_INPUT_SHA256):
++        errors.append("declared semantic input set differs from pinned set")
+     for rel in AUDIT_INPUT_PATHS:
+         try:
+             actual = hashlib.sha256((root / rel).read_bytes()).hexdigest()

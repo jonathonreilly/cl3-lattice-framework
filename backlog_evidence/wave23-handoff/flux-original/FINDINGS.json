@@ -1,0 +1,626 @@
+{
+  "verdict": "CHANGES_REQUIRED",
+  "base": "efa1126d20be562976ef8e06a6be16a4e22575e9",
+  "tree": "d00764f7a1fb71c41e45a07b430cee0a8c9eed2e",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P2",
+      "title": "Separate the abstract Fock problem from the edge-code parity and gauge domain",
+      "anchors": [
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 94,
+          "end": 121,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "Everything below reads those sign fields on the coarse lattice `2Z^3`, one fermionic mode per coarse vertex, with free nearest-neighbour hopping and nothing else.\nComposition is **ordinary** throughout: the algebra of a region is the tensor product of its sites' algebras and no graded clause is used anywhere.\n\n## Obligation graph\n\nThe proof is acyclic and each node after `P0` is checked by the correspondingly lettered runner group. `P0`, declared here, is the coarse lattice, the two uniform\nsign fields on it, the superfast encoding, the face stabilizers, the flux sectors and the filling functional `E_N`. `P1` (`A`) is the exhaustive `2x2x2` cube; `P2`\n(`B`) the uniform sectors on the named tori and blocks and the shape of the difference; `P3` (`C`) the Wilson-line freedom; `P4` (`D`) the Cauchy-Schwarz bound and\nits equality case; `P5` (`E`) the searches; `P6` (`F`) the thermodynamic limit. `P4` uses nothing from `P3` but its numbers; `P5` and `P6` use nothing from each\nother. The strongest supported scope is precisely `P0`-`P6`.\n\n## Definitions\n\nThe **coarse lattice** is `2Z^3`; a coarse vertex `v` sits at the fine site `2v`, and the coarse edge from `v` along `e_a` sits at the fine site `2v + e_a`. The\n**KS sign** of the coarse bond `(v, v + e_a)` is `eta_1 = 1`, `eta_2(v) = (-1)^{v_1}`, `eta_3(v) = (-1)^{v_1 + v_2}`, the clause's phases read in coarse\ncoordinates; the **plain sign** is `+1` on every bond. The **encoding** is the Bravyi-Kitaev superfast encoding on the coarse lattice, code qubits on the coarse\nedges, direction order `-x < -y < -z < +x < +y < +z`, with\n\n```text\nA_ij = X(edge (i,j)) * prod Z(edges ordered before it at i) * prod Z(edges ordered before it at j),  A_ji = -A_ij\nB_i  = product of the Z's on the edges incident to i,   S_f = the ordered product of the four A's around a coarse face f\n```\n\nA **flux sector** is a choice of eigenvalue `+-1` for every `S_f` consistent with the `F2` relations among them; a sector is realised as a link-sign field `eta` by\nspanning-tree gauge fixing followed by fundamental-cycle transport, and the plaquette holonomy of that field reproduces the sector face by face. The **hopping\nmatrix** is `M_ij = eta_ij` on nearest-neighbour coarse bonds and `0` elsewhere; `E_N` is the sum of its `N` lowest eigenvalues, the ground-state kinetic energy of\n`N` spinless fermions, and the **filling** is `n = N/V`. On a torus the three **Wilson lines** -- the products of `eta` around the three non-contractible loops --\nare gauge-invariant data that no `S_f` fixes; a **twist** flips the signs on one cut plane and changes one Wilson line without changing any face.",
+          "excerpt_sha256": "86e44e2548a2765a473f0fade45b96148118edf95fba4272a4e508d08af2abaf"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 145,
+          "end": 158,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "**Conclusion.** For the two uniform sectors on the coarse tori `4^3`, `4x4x6`, `6^3` and `8^3` and the open blocks `3^3` and `4^3`:\n\n1. `sign(E_N(-) - E_N(+))` over `N = 1..V-1` is `+` below `N*`, `-` on the whole of `[N*, V - N*]` and `+` above: one contiguous window, and the difference is\n   symmetric under `N -> V - N`. The values are `N* = 23, 30, 71, 171, 10, 22` in that order.\n2. At `L = 4` both spectra are fixed exactly by an integer minimal-polynomial witness and integer power traces: `0 x20, +-2 x15, +-4 x6, +-6 x1` for the plain\n   sector and `0 x8, +-2 x12, +-2sqrt2 x12, +-2sqrt3 x4` for the staggered one. Hence `E_32(-) - E_32(+) = 36 - 24 sqrt2 - 8 sqrt3 < 0` at half filling,\n   `E_16(-) - E_16(+) = 48 - 24 sqrt2 - 8 sqrt3 > 0` at quarter filling, and the first sign change is at `N* = 23`, where the difference is\n   `46 - 24 sqrt2 - 8 sqrt3`.\n3. Where the sector is small enough to be formed from the `S_f` directly, the field read off the all-`(-1)` sector has holonomy `-1` on every plaquette and the same\n   one-particle spectrum as the KS field, so the two labels name the same object here.\n\n**Proof.** Item 2 evaluates the claimed minimal polynomial at the exact integer matrix, which vanishes over `Z`, and checks `tr M^k` for `k = 1..8` against the\nclaimed multiset, which fixes the multiplicities; the ladders and their difference are then exact sums of surds. Item 1 is `[numerical, 1e-9]` away from `L = 4`,\nwith `E_N = E_{V-N}` from the symmetry of a bipartite spectrum; item 3 likewise, and the `8^3` torus is evaluated from the Bloch formula, not a matrix.",
+          "excerpt_sha256": "9fdb90a248a79c7868b40a47e12d63a44490a22786b8afc543cbde51b3a44c7e"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 165,
+          "end": 166,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "**Conclusion.** The face stabilizers fix none of the three torus Wilson lines, so each sector is a family of eight link-sign fields, related by twists that change no\nface. Minimising each uniform sector over its eight twists gives `E_{V/2} = -78.383672` against `-67.882251` on `4^3`, `-116.809009` against `-99.882251` on",
+          "excerpt_sha256": "605a3187bb630ce7bb53eb895b3d9a6ea0ea9d9e819ace2e85ae89ee5a4d2af4"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 105,
+          "end": 121,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "\nThe **coarse lattice** is `2Z^3`; a coarse vertex `v` sits at the fine site `2v` and the coarse edge from `v` along `e_a` at `2v + e_a`. The **KS sign** of the coarse bond\n`(v, v + e_a)` is `eta_1 = 1`, `eta_2(v) = (-1)^{v_1}`, `eta_3(v) = (-1)^{v_1 + v_2}`; the **plain sign** is `+1` on every bond. The **encoding** is the Bravyi-Kitaev superfast\nencoding on the coarse lattice, code qubits on the coarse edges, direction order `-x < -y < -z < +x < +y < +z`, with `A_ij` the encoded hop generator and `S_f` the ordered\nproduct of the four `A`s around a coarse face. A **flux sector** is a choice of eigenvalue `+-1` for every `S_f` consistent with the `F2` relations among them, realised as a\nlink-sign field by spanning-tree gauge fixing then fundamental-cycle transport, its plaquette holonomy reproducing the sector face by face.\n\nThe **record-number sector** at particle number `N` is the span of the occupation patterns with `N` sites occupied, of dimension `C(V, N)`. On it the law reads\n\n```text\nH(g) = - sum_bonds eta_ij (c_i^dag c_j + c_j^dag c_i) + g sum_bonds n_i n_j,     g = V/t at t = 1,\n```\n\nwith `c` the Jordan-Wigner ladders in the fixed site order, so the hopping carries the string sign and the interaction is diagonal. `E_0(g)` is the lowest eigenvalue of `H(g)` in\nthat sector, `E_0(-)` and `E_0(+)` its values in the all-`(-1)` and all-`(+1)` sectors, and **half filling** is `N = V/2`. On a torus the three **Wilson lines** are\ngauge-invariant data no `S_f` fixes and a **twist** flips the signs on one cut plane; every torus statement is minimised over the eight twists. `P` is the occupied one-particle\nprojector of the free sea and `A = sum_bonds (P_ii P_jj - P_ij^2)` the Wick value of `sum_bonds n_i n_j` in that determinant, so the first-order energy in `V` is `E_free + g A`.",
+          "excerpt_sha256": "6165f573f03d98f05100a1236f527f31ce523cf6886e6e6d6d2c59bb0426816e"
+        }
+      ],
+      "issue": "The notes identify every C(V,N) Fock sector with one edge-qubit BK encoding. But the declared B_i stars satisfy product_i B_i=I, so this carrier fixes even total occupation; the free N=1,3,... ladders are valid abstract Fock comparisons, not odd states of that carrier. Face data on a connected torus give eight gauge classes/twist representatives, not eight literal sign fields. The open 3^3 graph has 27 sites and the code uses floor(V/2)=13, not an exact half-filled state.",
+      "evidence": [
+        "ACTUAL_PREFIX_CONTROLS.json: actual source stars multiply to identity.",
+        "ADDITIONAL_CONTROLS.json: cube fixed-face code dimension128, full Fock dimension256, even Fock dimension128; explicit gauge and filling arguments in PROOF_REVIEW.md."
+      ],
+      "narrow_repair": "Keep all abstract signed-adjacency and fixed-N Fock data. State their domain before claiming an encoded interpretation; restrict that interpretation to the compatible parity sector unless a separately supplied encoding is proved. Do not add an implicit spectator or new primitive. Say eight gauge-inequivalent twist classes; name N=13 and its mirror14 for the odd block and distinguish floor-quarter values when used.",
+      "decisive_recheck": [
+        "Check the actual star product and code/Fock dimensions or carry the short parity proof with an actual source control.",
+        "Keep both odd-block particle counts visible and do not label N=13 as N=27/2."
+      ],
+      "positive_scope_to_preserve": "All signed one-particle matrices, even-sector finite results, Wilson-class counts, and free Fock ladders remain useful.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F2",
+      "priority": "P2",
+      "title": "Keep energetic comparisons conditional and reconcile the current Record/model boundary",
+      "anchors": [
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 22,
+          "end": 26,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "A separate construction puts one fermionic mode on each vertex of the coarse lattice `2Z^3` and shows that transport of one encoded excitation around a coarse face\nequals that face's stabilizer `S_f`, so the framework's staggered kinetic sign field is the sector in which every `S_f` is `-1` and the plain field is the sector in\nwhich every one is `+1`. That construction states its own limit: the law as written attaches no coefficient to any face term, so the sector is a free choice under\nthe law. This note refines that statement. The law's hopping term *is* supplied, and it is not indifferent: on the finite clusters named below the hopping energy of\na filled Fermi sea distinguishes the two sectors, strictly, and which one it prefers depends on how much matter is present.",
+          "excerpt_sha256": "a735fdcd68f8a0c26d9d8545c4e12c711734aca017d0ad98d819c85725dac29b"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 237,
+          "end": 250,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "Within the setting declared above, and on the finite blocks and tori named:\n\n1. The law's own hopping term selects the framework's staggered kinetic form at half filling. No face term is supplied, and none is needed: the term already in the\n   law does the selecting, uniquely on the `2x2x2` cube, provably against all link-sign fields on the `4^3` torus, and by a fixed amount per site in the limit.\n2. The selection is a property of the **matter density**. Below `n* ~ 0.3397` and above `1 - n*` the plain sector is cheaper; between them the staggered sector is.\n   At `N = 0` -- the record vacuum, no matter present -- every sector ties exactly, and at `N = V` they tie again.\n3. So the question \"which sector\" is answered by \"how much matter\", and the filling is a supplied datum, not something this note derives. What the face-transport\n   note calls a free choice under the law as written is free only until a matter density is named; once one is, the hopping term already in the law fixes the sector.\n4. The `-J sum_f S_f` term that note describes is not needed for the half-filled case and is not supplied here. Nothing below the level of the hopping term is\n   added, and no coefficient, coupling, rate or unit appears anywhere in this note.\n\n**Reading, not theorem.** With no matter present, the sign on the squares costs nothing either way. Put in enough matter, about a third of the sites or more, and\nthe arrangement with a minus on every square is the cheapest by a fixed amount per site. That arrangement is the framework's staggered kinetic form: it is not\nchosen by the law's wording; it is chosen by the matter's own energy.",
+          "excerpt_sha256": "25c441283cb703622321a91a8a418cdde1a2e39442b4efb2c8e9ed1edc90922d"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 87,
+          "end": 95,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "\n> The **law family** is one expression read on either composition, `H(t, V) = -t sum_bonds (x_i^dag x_j + x_j^dag x_i) + V sum_bonds n_i n_j,   x = b or x = c,` with the same\n> real `t` and `V` on every bond. **Cubic-covariant** means exactly that: one bond expression, identical on every bond, symmetric under reversing a bond, commuting with\n> `sum_i n_i`.\n\nand, from the same note, \"So the record statistics depend on the single ratio `g = V/t`, taken at `t = 1`.\" Everything below reads that family on the graded composition `x = c`,\nwith the bond sign field `eta_ij` restored on the hopping term so the flux sector is still a free label. Composition is **ordinary**: a region's algebra is the tensor product of\nits sites' algebras and no graded clause is used.\n",
+          "excerpt_sha256": "e7c0f3faffa5c770c22a3cf6209c00597575b00c35082f201fa51f259a835e62"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 112,
+          "end": 119,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "The **record-number sector** at particle number `N` is the span of the occupation patterns with `N` sites occupied, of dimension `C(V, N)`. On it the law reads\n\n```text\nH(g) = - sum_bonds eta_ij (c_i^dag c_j + c_j^dag c_i) + g sum_bonds n_i n_j,     g = V/t at t = 1,\n```\n\nwith `c` the Jordan-Wigner ladders in the fixed site order, so the hopping carries the string sign and the interaction is diagonal. `E_0(g)` is the lowest eigenvalue of `H(g)` in\nthat sector, `E_0(-)` and `E_0(+)` its values in the all-`(-1)` and all-`(+1)` sectors, and **half filling** is `N = V/2`. On a torus the three **Wilson lines** are",
+          "excerpt_sha256": "e1dbbc5c82519e506ebe650e341abf896ef0de2bece86590db8d297b1f87d78f"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 225,
+          "end": 245,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "Within the setting declared above, and on the finite clusters named:\n\n1. For the record-conserving family at half filling, the interaction does **not** reorder the sectors on any cluster or coupling tested on the repulsive side: the cube's ordering\n   is exact over `Z` at twelve integer couplings, the block's all-`(-1)` sector is the unique minimiser of all `512` at seven, and five tori agree at first order.\n2. The reason at large coupling is structural. The density profile, the Neel weight and the `t^2/V` exchange are all sector-independent, so the sign on a plaquette enters the\n   energy only through the ring exchange around it -- and that prefers the staggered sign, `-27 t^4/V^3` on the cube and `~ -320/27` on the block.\n3. So the staggered kinetic form remains the choice of the matter's own energy with the discriminator's interaction present; the free result did not need its absence.\n4. Away from half filling (`T2`) and on the attractive side (`T3`) the ordering **is** cluster- and coupling-dependent, with an exact crossing at `g_c = 2 sqrt3` for the cube's\n   uniform pair at `N = 2` and a flip window `-2.4 < g_c < -2.3` for the block. That sharpens the statement: half filling on the repulsive side is the robust point.\n5. No coefficient, coupling, rate, mass or absolute unit is fixed anywhere. `g` is a ratio scanned over a declared list, and the filling is supplied.\n\n**Reading, not theorem.** Adding the repulsion between neighbours does not change which sign pattern is cheapest when half the sites carry matter; at strong repulsion the matter\nfreezes into a checkerboard in either pattern, and the only thing that still tells the patterns apart is how the particles go once around a square, which still favours the minus\nsign. With fewer particles, or with attraction, the answer can change.\n\n## What does not move\n\n- No axiom text is amended, extended, reworded, or reinterpreted, no hypothesis is adopted, no status value is set, predicted or implied, and no premise registry, citation\n  manifest, or axiom-premise node is created or edited.\n- Nothing here is derived from the axioms. The coarse lattice, the encoding, the sign fields, the filling and the interaction family are declared objects, and the family is not\n  proposed, preferred, or fixed by this note: it is quoted from the composition discriminator's note and scanned in `g`.",
+          "excerpt_sha256": "9eee7b5b7b6f1caa644f455f30e8b36d07fe39c5438d34129b5b1555a2ba05f9"
+        }
+      ],
+      "issue": "The free corollary says the law fixes a sector once density is named. Energetic ordering requires a supplied Hamiltonian and a ground-state selection convention; the hopping preserves the chosen flux and supplies no cross-sector formation or relaxation. Away from half filling the two-uniform comparison does not establish global selection (the cube already has lower two-/four-flux competitors). The interacting expression conserves total occupation, while its hopping does not commute with each n_i; permanent fine-site Records cannot simply be called particles hopping between sites. The composition quote is from older bytes: current main explicitly calls this a supplied subfamily, uses nonzero-t normalization g=V/abs(t), and leaves Born/state-selection and occupation-to-Record bridges open.",
+      "evidence": [
+        "ADDITIONAL_CONTROLS.json: exact two-site [H,n_0] nonzero and [H,N_total]=0.",
+        "CONTEXT_COMPLETION.json binds both historical composition text and corrected current-main text; full current269-line note read.",
+        "Independent cube sector enumeration gives competing flux classes off half filling."
+      ],
+      "narrow_repair": "Name signed-hopping/Jordan-Wigner/Fock matrices, fixed N, energy units, ground-state choice and any Born/readout interpretation as supplied mathematical inputs. Interpret selection as a minimum in the exact declared comparison set, with no physical density/formation/sector-transition inference. Distinguish number conservation and diagonal density interaction from permanent local Record conservation. Attribute old quotations as dated historical context, preserving the current corrected subfamily and physical-bridge limits; do not revive completeness of the full covariant law or t=0 coverage.",
+      "decisive_recheck": [
+        "Retain an actual [H,n_i] versus [H,N_total] control and an off-half-filling competitor witness.",
+        "Check every frontmatter, theorem/corollary, reading paragraph, executable block and runner summary for the same supplied-model boundary."
+      ],
+      "positive_scope_to_preserve": "The finite energy rankings, fixed-N Hamiltonians and quoted interaction expression survive as declared conditional constructions.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "title": "Make the free exhaustive/numerical and tie-count scope agree with the executed search",
+      "anchors": [
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 50,
+          "end": 52,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "The target is the conjunction of the six statements below, exactly the runner's check groups `A`-`F`. Group `A`, the `L = 4` content of `B` and the whole of `D` are\nexact -- exhaustive enumeration, `sympy` surds, integer matrix arithmetic at zero tolerance, `F2`/`Z4` symplectic bit arithmetic -- and the items tagged\n`[numerical]` are floating-point statements at the stated tolerance. Groups `C` and `E` are search results and are labelled as such wherever they appear.",
+          "excerpt_sha256": "0e467e2e889358686f66ab4aebe897b1a4cb71afad0e746089d6129109a2bfd7"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 129,
+          "end": 137,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "2. `E_N` of the all-`(+1)` sector is `0, -3, -4, -5, -6, -5, -4, -3, 0` and of the all-`(-1)` sector is `-N sqrt3` for `N <= 4` with its mirror, both exact.\n3. At half filling `N = 4` the all-`(-1)` sector is the **unique** minimiser of all `32`, by `0.456067` to the next distinct value and by `4 sqrt3 - 6` to the plain\n   sector. The unique minimiser is the plain sector at `N = 1, 7`, the two-flux class at `N = 2, 6` and the four-flux class at `N = 3, 5`; all `32` tie at `N = 0`\n   and `N = 8`.\n\n**Proof.** Item 1 solves the `F2` relations among the six face generators, realises each consistent assignment as a sign field and checks its holonomy face by face,\nthen enumerates the `4096` sign fields directly, `[numerical, 1e-12]` for the constancy of the spectrum within a pattern and exact for the pattern count. Item 2\ndiagonalises the two exact integer `8x8` matrices in `sympy` and sums the surds. Item 3 compares the `32` exact ladders entry by entry, with the tie counts\n`32, 1, 3, 12, 1, 12, 3, 1, 32` and the minimiser's flux count `all, 0, 2, 4, 6, 4, 2, 0, all` printed by the runner.",
+          "excerpt_sha256": "49d455e058184cbf28144e8bbf1d9b52e931d1211f1a3b555aed88c4a101d54e"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 201,
+          "end": 206,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "**Conclusion.** At half filling on the tori `4^3` and `4x4x6`, all `[numerical, 1e-9]` and all **search results, not theorems**:\n\n1. `2000` random link-sign fields per torus, each realising a consistent sector as drawn, and a `500`-field subsample with each field minimised over its own eight\n   twists: `0` of `2500` beats the all-`(-1)` sector on either torus.\n2. The structured sectors with flux only on the `xy`, `xz` or `yz` plaquettes, `xy` flux on alternating `x` planes, and flux on the `xz` and `yz` plaquettes\n   together are consistent and all strictly above the all-`(-1)` sector. Flux on the even-parity faces, `xz+yz` on alternating planes, and a single-face flip off",
+          "excerpt_sha256": "a291ffc9e2bf4292de5d544609a284ceb273349f9601cc8553594d2d3464fa6a"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 300,
+          "end": 304,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "\nGlobal minimality over all link-sign fields is a **theorem on exactly two clusters**: the open `2x2x2` cube, by exhaustion of all `2^12` fields, and the `4^3`\ncoarse torus, by the Cauchy-Schwarz certificate whose equality case the all-`(-1)` sector meets. On `4x4x6`, `6^3` and `8^3` the bound is missed by the stated gaps\nand the corresponding statement is a **search result** -- a statement about the samples drawn and the descent runs made at the runner's fixed seeds, not about the\nwhole space. Theorem 3 and Theorem 5 are search results throughout and are labelled so wherever they are used.",
+          "excerpt_sha256": "d397ee40bcedff2f4991bfb130d95a17d43d842066659c7cadb002ce75717931"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 317,
+          "end": 319,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "An honest auditor should come away with: one exhaustive finite-cluster theorem naming the staggered sector as the unique half-filling minimiser on the `2x2x2`\ncube; one exact-surd statement of where the two uniform sectors cross on four tori and two open blocks, with a single contiguous window symmetric about half\nfilling; one genuine certificate -- a Cauchy-Schwarz bound whose equality case the staggered sector meets exactly on the `4^3` torus, making it a global minimiser",
+          "excerpt_sha256": "b2aa1bb77618421c5ef3a65e94d4701767f25d47b6dd2506db678432340c1242"
+        }
+      ],
+      "issue": "The proof calls all32 cube ladders exact although the exhaustive ladder comparison uses eigvalsh; only the two uniform ladders are computed in exact surds. The unique-minimizer wording at N=2,6 and N=3,5 needs to distinguish a minimizing symmetry class from its3 or12 member sectors, which the actual tie counts already disclose. The Wilson eight-twist enumeration is a complete finite comparison, not random search. The existing2000-draw plus500-subset wording is correctly explicit; retain this accounting, without promoting it to2500 independent/distinct random fields. The concluding exact-surd label also spills beyond the one exact L=4 torus.",
+      "evidence": [
+        "ORIGINAL_CHECK_LEDGER.json and full free source: A2 exact uniform spectra; A3 floating32-class comparison; B1 L=4 integer certificate; E random protocol.",
+        "ADDITIONAL_CONTROLS.json independently enumerates all32 cube classes and ties32,1,3,12,1,12,3,1,32."
+      ],
+      "narrow_repair": "Preserve the numerical ladders and label them correctly, or add the short independent cube equality/uniqueness proof already supplied here without relabeling every numerical margin exact. Say minimizing class with its3/12 members away from half filling. Distinguish complete finite twist enumeration, exact L=4 identities, floating named-cluster comparisons, and repeated/subsample searches. Preserve the original draws and seeds.",
+      "decisive_recheck": [
+        "Check tie counts and actual number of initial fields/subsample reevaluations.",
+        "Retain the integer flat-certificate test: its actual sign mutation already fails D3."
+      ],
+      "positive_scope_to_preserve": "The cube unique half-filled minimum and 4^3 Cauchy-Schwarz global minimum are supported; the original numerical sample values remain valid diagnostics.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F4",
+      "priority": "P2",
+      "title": "A g-independent polynomial factor does not identify the ground branch for every g",
+      "anchors": [
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 144,
+          "end": 153,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "\n**Conclusion.** On the same cube at `N = 2` and `N = 6`, the record-number sector having dimension `28`:\n\n1. At every `g` in the list of Theorem 1 the minimiser of all `32` sectors is the **two-flux class**, three tied sectors, and the all-`(-1)` sector is never it: it sits at rank\n   `31, 31, 31, 31, 31, 31, 31, 30, 27` of `32`.\n2. Exactly, with symbolic `g`: at `N = 2` the staggered sector's characteristic polynomial carries the `g`-free factor `x^2 - 12`, so `E_0(-) = -2 sqrt3` at **every** `g`, while\n   `E_0(+)` is the least root of `x^3 - g x^2 - 16 x + 8 g`. The two are equal exactly at `g_c = 2 sqrt3`, the plain sector lower below it and the staggered sector lower above.\n\n**Proof.** Item 1 diagonalises all `32` sectors at each `g` and `N`, `[numerical, 1e-10]`. Item 2 builds the `28x28` matrix over `Z[g]`, factors its characteristic polynomial in\n`sympy` and reads off the two factors named; the crossing is `sympy`'s exact solution of the cubic evaluated at `x = -2 sqrt3`.",
+          "excerpt_sha256": "dc8feb9929340c3cf3e1411c8909ea69a77438dbb55cb71445e32f5a83d9abc9"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 275,
+          "end": 276,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "cube_off_half_filling: N = 2 and N = 6, dim 28; minimiser is the two-flux class (3 tied) at every g, all-(-1) at rank 31,31,31,31,31,31,31,30,27 of 32\ncube_off_exact: N = 2 staggered charpoly factor x^2 - 12, so E_0(-) = -2 sqrt3 for all g; plain E_0(+) least root of x^3 - g x^2 - 16 x + 8 g; equality exactly at g_c = 2 sqrt3",
+          "excerpt_sha256": "a4e1de95e5b0e4d3b245abd71bfba3f2a74f3009cc8b7dd5ad022b377d516fbc"
+        },
+        {
+          "path": "scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+          "start": 597,
+          "end": 613,
+          "source_sha256": "b9d666ae0ca2dace54609dc814cc440da0f8e2c347387798561a8c9677022eb4",
+          "excerpt": "S2 = Sector(CUBE, 2)\nFACP = sp.factor_list(S2.sym(np.rint(CVEC[IP]).astype(int), GSYM).charpoly(X).as_expr(), X)[1]\nFACM = sp.factor_list(S2.sym(np.rint(CVEC[IM]).astype(int), GSYM).charpoly(X).as_expr(), X)[1]\nPSET = {sp.expand(f.as_expr() if isinstance(f, sp.Poly) else f) for f, _ in FACP}\nMSET = {sp.expand(f.as_expr() if isinstance(f, sp.Poly) else f) for f, _ in FACM}\nPLAIN_CUBIC = X ** 3 - GSYM * X ** 2 - 16 * X + 8 * GSYM\nE0M = -2 * sp.sqrt(3)\nE0P = min(r for r in sp.real_roots(sp.Poly(PLAIN_CUBIC.subs(GSYM, 0), X)))\nCROSS = sp.solve(sp.Eq(PLAIN_CUBIC.subs(X, E0M), 0), GSYM)\nprint(\"   B2 cube N=2 charpoly factors -- plain %s ; staggered %s\"\n      % (PLAIN_CUBIC, X ** 2 - 12))\ncheck(\n    \"B2 [exact, sympy, symbolic g] cube N = 2: the staggered factor x^2 - 12 is g-free, so E_0(-) = -2 sqrt3 at \"\n    \"EVERY g and the pair crosses exactly at g_c = 2 sqrt3\",\n    (X ** 2 - 12) in MSET and PLAIN_CUBIC in PSET and CROSS == [2 * sp.sqrt(3)]\n    and bool(E0P < E0M),\n)",
+          "excerpt_sha256": "dc82abc58025fdf8031f104d37f2ca156a793078331b3bb0f5ac513919da45e8"
+        }
+      ],
+      "issue": "B2 infers E_0(-)=-2sqrt3 for every real g from the presence of x^2-12. This is false: at g=-4 the actual28-dimensional matrix has exact ground energy -6. There is an additional ground-energy equality at g=-sqrt6, E=-2sqrt6. The factor-only assertion also passes when the actual staggered symbolic matrix is built with -g instead of g.",
+      "evidence": [
+        "ACTUAL_PREFIX_CONTROLS.json: actual original source at g=-4, full characteristic polynomial and exact least root -6.",
+        "INDEPENDENT_CUBE.json: complete independent symbolic characteristic polynomials for both sectors.",
+        "ADDITIONAL_CONTROLS.json / PROOF_REVIEW.md: negative crossing and branch proof.",
+        "ACTUAL_MUTANTS.json: wrong-symbolic-coupling runs the entire original checker and still returns18/0 exit0."
+      ],
+      "narrow_repair": "Correct all all-g wording. A narrow repair can prove and state the constant staggered branch only for g>=0, retain the positive crossing2sqrt3, and explicitly disclose the attractive counterexample/extra crossing; alternatively include the complete honest piecewise lowest-root proof. Bind the full factored polynomial including g-dependent coefficients and multiplicities, and compare its actual lowest root to the stated branch instead of checking just one surviving factor.",
+      "decisive_recheck": [
+        "Actual doubled/sign-changed g polynomial must fail the final assertion.",
+        "Use actual matrices at g=-4 and0 plus the positive crossing; if retaining the negative crossing, bind exact equality and lowest-root status."
+      ],
+      "positive_scope_to_preserve": "All original sampled off-half-filling sector data and the repulsive-domain positive crossing remain valid.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F5",
+      "priority": "P2",
+      "title": "Restrict interacting ordering to the actual competitor sets and sampled couplings",
+      "anchors": [
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 125,
+          "end": 138,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "**Conclusion.** On the open `2x2x2` coarse cube, `8` sites, `12` bonds, `6` faces of `F2` rank `5`, at half filling `N = 4`, the record-number sector having dimension `70`:\n\n1. Exactly `32` of the `64` face assignments are consistent flux sectors, flux counts `0, 2, 4, 6`, each realised by a link-sign field of that holonomy.\n2. Comparing all `32` at `g = -2, -1, -0.5, 0, 0.5, 1, 2, 4, 8`, the all-`(-1)` sector is the **unique** minimiser at every one, by\n   `0.192, 0.344, 0.408, 0.456, 0.483, 0.485, 0.407, 0.158, 0.025` to the next distinct sector.\n3. At the twelve integer `g = -8, -4, -2, -1, 0, 1, 2, 4, 8, 16, 32, 64` the `70x70` integer characteristic polynomials give minimal polynomials of `E_0` over `Z` for both\n   uniform sectors, of degrees `3, 3, 3, 4, 1, 4, 3, 3, 4, 4, 4, 4` (plain) and `5, 5, 5, 5, 2, 5, 5, 5, 5, 5, 5, 5` (staggered) -- for instance `x^3 - 10x^2 - 16x + 48` for the\n   plain sector at `g = 2` and `x^2 - 48` for the staggered sector at `g = 0`. A `CRootOf` comparison of those algebraic numbers gives `E_0(-) < E_0(+)` strictly at all twelve,\n   with no tie and no floating point anywhere.\n\n**Proof.** Item 1 solves the `F2` relations among the six face generators, realises each consistent assignment as a sign field and checks its holonomy face by face, exactly. Item\n2 builds the `70x70` real matrix of each sector at each `g` and compares lowest eigenvalues, `[numerical, 1e-10]`. Item 3 builds the matrix over `Z`, takes its characteristic\npolynomial in `sympy`, extracts the least real root as a `CRootOf` with its minimal polynomial over `Z` (domain checked to be `ZZ`), and compares the two roots symbolically.\n",
+          "excerpt_sha256": "071fbd810f564cd58a47b63487debfb8b8d4cc2eb33f686d8e4ae74ce889c4fb"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 164,
+          "end": 176,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "2. At `g = 0, 0.5, 1, 2, 4, 8, 16` the all-`(-1)` sector is the **unique** minimiser of all `512`, by `0.381, 0.401, 0.401, 0.311, 0.058, 0.0048, 0.00049` to the next distinct\n   sector. Its ground state is non-degenerate at every one; the plain sector's is `2`-fold at every one, and the plain sector ranks `500, 500, 509, 511, 511, 511, 511` of `512`.\n3. On the attractive side the all-`(-1)` sector is still the unique minimiser at `g = -1, -2, -2.3`, and at `g = -2.4` it is beaten by an `8`-flux class of `8` tied sectors,\n   falling to rank `8`. The flip window is `-2.4 < g_c < -2.3`.\n4. The uniform **pair** itself never crosses on `[-64, 64]`: `E_0(-) - E_0(+) < 0` at all `15` couplings scanned, the largest value being `-4.53e-05`. The attractive flip of item\n   3 is a third sector overtaking both, not the pair reordering.\n\n**Proof.** Item 1 is the `F2` relation count, exact. Items 2-4 assemble each sector's sparse `924x924` matrix from one precomputed hopping graph and take its lowest levels by\nLanczos at tolerance `1e-12`, `[numerical, 1e-9]`; the degeneracies are read from the three lowest levels.\n\n**Reading, not theorem.** A second, longer box with a different number of squares, and the same answer: with the price switched on, the minus-on-every-square arrangement is the\nsingle cheapest of all five hundred and twelve, and its cheapest state is unique while the plain one's is doubled. Turn the price into a reward and there is a strength --\nsomewhere between minus two point three and minus two point four -- past which a different arrangement wins instead.",
+          "excerpt_sha256": "f5d973d0491d95a9bfffdd7d7150a1a00460378dcebaf6c03effbf85d72a5155"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 274,
+          "end": 278,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "cube_exact: integer g = -8, -4, -2, -1, 0, 1, 2, 4, 8, 16, 32, 64; min polys of E_0 over Z, degrees 3,3,3,4,1,4,3,3,4,4,4,4 (plain) and 5,5,5,5,2,5,5,5,5,5,5,5 (staggered); plain g=2 is x^3 - 10x^2 - 16x + 48, staggered g=0 is x^2 - 48; CRootOf gives E_0(-) < E_0(+) at all 12, 0 ties\ncube_off_half_filling: N = 2 and N = 6, dim 28; minimiser is the two-flux class (3 tied) at every g, all-(-1) at rank 31,31,31,31,31,31,31,30,27 of 32\ncube_off_exact: N = 2 staggered charpoly factor x^2 - 12, so E_0(-) = -2 sqrt3 for all g; plain E_0(+) least root of x^3 - g x^2 - 16 x + 8 g; equality exactly at g_c = 2 sqrt3\nblock: 2x2x3, N = 6, dim 924, 11 faces of F2 rank 9, exactly 512 of 2048 assignments consistent; all-(-1) unique minimiser at g = 0, 0.5, 1, 2, 4, 8, 16 with margins 0.381, 0.401, 0.401, 0.311, 0.058, 0.0048, 0.00049; deg(-) = 1 and deg(+) = 2 throughout; plain rank 500, 500, 509, 511, 511, 511, 511 of 512\nblock_attractive: all-(-1) unique at g = -1, -2, -2.3; beaten at g = -2.4 by an 8-flux class of 8 tied sectors, rank 8; flip window -2.4 < g_c < -2.3; uniform pair never crosses on [-64, 64], largest E_0(-) - E_0(+) = -4.53e-05",
+          "excerpt_sha256": "b2b889b66f4c171965f41f2a0e19779ca225f12cd07b278674d87effe8a1ad52"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 309,
+          "end": 312,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "An honest auditor should come away with: two exhaustive interacting finite-cluster theorems naming the staggered sector as the unique many-body ground sector at half filling, one\nexact over `Z` at twelve integer couplings by minimal polynomials and a `CRootOf` comparison; one exactly located reordering away from half filling at `g_c = 2 sqrt3` and one\nattractive flip window on the larger block, both stated as results; a first-order torus computation pointing the same way, exact on `4^3` by two integer matrix identities; a\nlarge-coupling structure in which only a plaquette ring exchange separates the sectors; and one honest limit, that nothing here is a global-minimality claim.",
+          "excerpt_sha256": "b1a7492e8ec027a6a650b27e139f9b54f8def378638a67429b4a76313de76755"
+        },
+        {
+          "path": "scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+          "start": 540,
+          "end": 569,
+          "source_sha256": "b9d666ae0ca2dace54609dc814cc440da0f8e2c347387798561a8c9677022eb4",
+          "excerpt": "GZ = [-8, -4, -2, -1, 0, 1, 2, 4, 8, 16, 32, 64]\nMINPOLY, EXROOT = {}, {}\nfor lab, si in ((\"+\", IP), (\"-\", IM)):\n    v = np.rint(CVEC[si]).astype(np.int64)\n    for g in GZ:\n        H = S4.idense(v, g)\n        poly = sp.Poly(sp.Matrix(H.tolist()).charpoly(X).as_expr(), X)\n        roots = sp.real_roots(poly)\n        e0 = min(roots)\n        EXROOT[(lab, g)] = e0\n        MINPOLY[(lab, g)] = sp.Poly(sp.minimal_polynomial(e0, X), X)\nprint(\"   A3 min poly of E_0 over Z, plain g=2: %s ; staggered g=0: %s\"\n      % (MINPOLY[(\"+\", 2)].as_expr(), MINPOLY[(\"-\", 0)].as_expr()))\nprint(\"     deg +: \" + \"\".join(str(MINPOLY[(\"+\", g)].degree()) for g in GZ)\n      + \" deg -: \" + \"\".join(str(MINPOLY[(\"-\", g)].degree()) for g in GZ)\n      + \" at g = \" + \",\".join(str(g) for g in GZ))\ncheck(\n    \"A3 [exact, sympy over Z] the 70x70 integer characteristic polynomials at those twelve g give minimal \"\n    \"polynomials of E_0 over Z for both uniform sectors, degrees above\",\n    MINPOLY[(\"+\", 2)].as_expr() == X ** 3 - 10 * X ** 2 - 16 * X + 48\n    and MINPOLY[(\"-\", 0)].as_expr() == X ** 2 - 48\n    and all(MINPOLY[(l, g)].domain == sp.ZZ for l in \"+-\" for g in GZ),\n)\n\nLT = [bool(EXROOT[(\"-\", g)] < EXROOT[(\"+\", g)]) for g in GZ]\nEQ = [bool(sp.Eq(EXROOT[(\"-\", g)], EXROOT[(\"+\", g)])) for g in GZ]\ncheck(\n    \"A4 [exact, CRootOf comparison, no floating point] E_0(-) < E_0(+) strictly at all %d, 0 ties: the \"\n    \"ordering is exact over Z, not a tolerance\" % sum(LT),\n    all(LT) and not any(EQ),",
+          "excerpt_sha256": "c7038340f769671eece6f4f6c120df0f2754169a0c1bcf2ee8777d912e66b489"
+        },
+        {
+          "path": "scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+          "start": 677,
+          "end": 683,
+          "source_sha256": "b9d666ae0ca2dace54609dc814cc440da0f8e2c347387798561a8c9677022eb4",
+          "excerpt": "GW = [-64.0, -32.0, -16.0, -8.0, -4.0, -2.0, -1.0, 0.0, 1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 64.0]\nWPAIR = [(g, float(S6.low(BVEC[JM], g, k=1)[0] - S6.low(BVEC[JP], g, k=1)[0])) for g in GW]\ncheck(\n    \"C4 [numerical, 1e-9] the uniform PAIR never crosses on [-64, 64]: E_0(-) - E_0(+) < 0 at all %d couplings \"\n    \"there, largest %.2e -- the -2.4 flip is a third sector passing both\" % (len(GW), max(d for _, d in WPAIR)),\n    all(d < -1e-9 for _, d in WPAIR),\n)",
+          "excerpt_sha256": "2788d3fab183daebe752bd13f2d1656e8b7d738bde3355d08085046cf52df880"
+        }
+      ],
+      "issue": "The twelve integer exact root comparisons cover only the two uniform sectors, not all32 cube sectors; exhaustive all32 ordering is computed at the separate nine-point GA list. C4 checks15 values but prints that the pair never crosses on [-64,64]. The attractive endpoint change supplies a continuity bracket for at least one loss of optimality, not a unique global critical value or a statement about all couplings past it. None of these finite samples proves all-strength repulsive ordering.",
+      "evidence": [
+        "ORIGINAL_CHECK_LEDGER.json and actual original snapshots distinguish GA9, GZ12, GC7, GN4 and GW15.",
+        "Complete original A/C loops read; all512 energies retained at each sampled block coupling."
+      ],
+      "narrow_repair": "State all32 numerical results at GA separately from the exact two-uniform GZ result. Replace interval/noncrossing language with the exact15-point observation. Keep the attractive bracket with continuity/at-least-one wording and no unproved monotonicity or unique transition. Propagate to frontmatter, theorem, reading, executable and review sections and labels.",
+      "decisive_recheck": [
+        "Final labels enumerate the actual coupling sets and distinguish two-uniform versus all-sector comparisons.",
+        "Do not satisfy a continuous-interval claim with a sampled boolean."
+      ],
+      "positive_scope_to_preserve": "The named all32/all512 finite comparisons, exact uniform-pair root orderings, and endpoint observations are preserved.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F6",
+      "priority": "P2",
+      "title": "Equal one-site means do not make the finite Neel states or order parameters equal",
+      "anchors": [
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 203,
+          "end": 207,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "**Conclusion.** At strong repulsion on the cube at half filling:\n\n1. `<n_i> = 1/2` on every site in **both** sectors, to `5e-14`, at `g = 4, 8, 16, 32`; the staggered moment `m^2` rises to `0.24945` (plain) and `0.24944` (staggered) against the\n   Neel value `1/4` and the weight on the two Neel patterns to `0.99708` and `0.99704`, and the same rise holds on the `2x2x3` block, where the plain ground space is `2`-fold and\n   the densities are degeneracy-averaged. The order parameter does not tell the sectors apart.",
+          "excerpt_sha256": "8623b4d41fb347f14b210db7e13040400ac11afd40177013420d30ead17de2c5"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 219,
+          "end": 221,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "**Reading, not theorem.** Push the price up and the particles stop moving: they settle into a checkerboard, identically in both arrangements, so nothing about where they sit\ndistinguishes the arrangements any more. What is left is small residual motion, and a particle stepping onto its neighbour's site and back costs the same in both. The first thing\nthat does not is a particle going once around a square and returning, which picks up the sign on that square; and that trip is cheaper when the sign is minus.",
+          "excerpt_sha256": "db96c8aa9b0ec09ca621194762e06b4929f4c8a2bcd1ff1e302a9259ff9f75f6"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 229,
+          "end": 238,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "2. The reason at large coupling is structural. The density profile, the Neel weight and the `t^2/V` exchange are all sector-independent, so the sign on a plaquette enters the\n   energy only through the ring exchange around it -- and that prefers the staggered sign, `-27 t^4/V^3` on the cube and `~ -320/27` on the block.\n3. So the staggered kinetic form remains the choice of the matter's own energy with the discriminator's interaction present; the free result did not need its absence.\n4. Away from half filling (`T2`) and on the attractive side (`T3`) the ordering **is** cluster- and coupling-dependent, with an exact crossing at `g_c = 2 sqrt3` for the cube's\n   uniform pair at `N = 2` and a flip window `-2.4 < g_c < -2.3` for the block. That sharpens the statement: half filling on the repulsive side is the robust point.\n5. No coefficient, coupling, rate, mass or absolute unit is fixed anywhere. `g` is a ratio scanned over a declared list, and the filling is supplied.\n\n**Reading, not theorem.** Adding the repulsion between neighbours does not change which sign pattern is cheapest when half the sites carry matter; at strong repulsion the matter\nfreezes into a checkerboard in either pattern, and the only thing that still tells the patterns apart is how the particles go once around a square, which still favours the minus\nsign. With fewer particles, or with attraction, the answer can change.",
+          "excerpt_sha256": "ac2fb54780c590afe6ca12ab67d51adc5183ef0100433084fe0059533e0a148f"
+        },
+        {
+          "path": "scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+          "start": 830,
+          "end": 861,
+          "source_sha256": "b9d666ae0ca2dace54609dc814cc440da0f8e2c347387798561a8c9677022eb4",
+          "excerpt": "    w, U = np.linalg.eigh(S.dense(v, g))\n    d = int(np.sum(w < w[0] + tol))\n    diag = np.sum(U[:, :d] ** 2, axis=1) / d\n    n = diag @ S.occ\n    sgn3 = np.array([1 - 2 * ((x + y + z) & 1) for (x, y, z) in L.V], dtype=float)\n    mvec = (S.occ - 0.5) @ sgn3 / L.nv\n    neel = float(np.sum(diag[np.abs(np.abs(mvec) - 0.5) < 1e-12]))\n    return w[0], d, float(n.min()), float(n.max()), float(diag @ mvec ** 2), neel\n\n\nGE = [4.0, 8.0, 16.0, 32.0]\nEROW = {}\nfor lab, si in ((\"+\", IP), (\"-\", IM)):\n    for g in GE:\n        EROW[(lab, g)] = order(S4, CUBE, CVEC[si], g)\nprint(\"   E1 cube N=4, g: m^2 then Neel weight, (+,-) each, against 1/4 and 1 -- \"\n      + \" | \".join(\"%g: %.4f %.4f %.4f %.4f\"\n                   % (g, EROW[(\"+\", g)][4], EROW[(\"-\", g)][4],\n                      EROW[(\"+\", g)][5], EROW[(\"-\", g)][5]) for g in GE))\nBROWE = {}\nfor lab, si in ((\"+\", JP), (\"-\", JM)):\n    for g in GE:\n        BROWE[(lab, g)] = order(S6, BLK, BVEC[si], g)\ncheck(\n    \"E1 [numerical, 1e-9] both sectors freeze into the SAME Neel doublet (above): <n_i> = 1/2 on every cube \"\n    \"site in both to %.0e, m^2 and the Neel weight rising together, here and on 2x2x3\"\n    % max(max(abs(r[2] - 0.5), abs(r[3] - 0.5)) for r in EROW.values()),\n    all(abs(r[2] - 0.5) < 1e-9 and abs(r[3] - 0.5) < 1e-9 for r in EROW.values())\n    and all(EROW[(l, 32.0)][4] > 0.2494 and EROW[(l, 32.0)][5] > 0.996 for l in \"+-\")\n    and all(BROWE[(l, 32.0)][4] > 0.2494 for l in \"+-\")\n    and all(EROW[(l, g)][4] < EROW[(l, h)][4] for l in \"+-\" for g, h in zip(GE, GE[1:]))\n    and all(BROWE[(l, g)][4] < BROWE[(l, h)][4] for l in \"+-\" for g, h in zip(GE, GE[1:])),",
+          "excerpt_sha256": "c7850b77824b3c652c716be84ee579dd074cfe40fa99183f3feca76c4a6705ac"
+        }
+      ],
+      "issue": "The note claims the same Neel doublet, sector-independent Neel weight, and an order parameter that cannot distinguish sectors. Its own g=4 cube rows instead give m^2 approximately0.2181 versus0.1999 and Neel weights0.8347 versus0.7504. Equal n_i=1/2 is only a marginal identity. Nonzero hopping gives finite admixture; a finite ground vector/projector is not a frozen checkerboard or a dynamically formed permanent pattern.",
+      "evidence": [
+        "original-execution/7878/stdout.txt and snapshot/values.json EROW/BROWE preserve the unequal joint observables.",
+        "INDEPENDENT_CUBE.json fourth-order two-dimensional effective matrices also differ by sector."
+      ],
+      "narrow_repair": "Retain equal one-site means, the sampled distinct m^2/Neel weights and their approach toward checkerboard limits. Distinguish exact finite degeneracy from the two classical configurations spanning the unperturbed large-g subspace. Remove finite equality/freezing, SSB and Record-formation implications; any limiting statement needs its stated conditional asymptotic proof.",
+      "decisive_recheck": [
+        "Keep the actual g=4 unequal joint observables visible; do not replace them by marginal-only tests.",
+        "A finite-state equality label may not pass merely because n_i=1/2."
+      ],
+      "positive_scope_to_preserve": "The original density means, monotone sampled moment growth, ground-space averaging and numerical limiting trends remain.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F7",
+      "priority": "P2",
+      "title": "Separate an energy asymptotic from an unproved per-face ring operator",
+      "anchors": [
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 208,
+          "end": 217,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "2. The `t^2/V` exchange is sector-**independent**: `g E_0 -> -6` in both sectors, and `g^2 (E_0(-) - E_0(+)) -> 0` along `-0.4216, -0.2109, -0.1055` at `g = 64, 128, 256`.\n3. The whole surviving difference is order `t^4/V^3`. In `60`-digit arithmetic `g^3 (E_0(-) - E_0(+)) = -26.9815477888, -26.9953982475, -26.9988502688, -26.9997126114` at\n   `g = 64, 128, 256, 512`, with local exponent `2.99926, 2.99982, 2.99995` and Richardson limit `-26.9999999999`. So `E_0(-) - E_0(+) = -27 t^4/V^3 + O(V^-4)`: a plaquette ring\n   exchange of `9/4` per face entering with the sign `S_f`, hence `-9/4` per face in the staggered sector and `+9/4` in the plain one.\n4. The same structure holds on the `2x2x3` block with its own coefficient, `g^3 (E_0(-) - E_0(+))` running `-12.126, -11.921, -11.869, -11.856, -11.853` at `g = 16, ..., 256`,\n   settling near `-11.853 ~ -320/27`. The coefficient is a cluster number; the **sign** is what the two clusters share.\n\n**Proof.** Items 1 and 2 are direct diagonalisation, `[numerical, 1e-9]` and converged in `1/g`. Item 3 diagonalises the exact `70x70` integer matrices in `mpmath` at `60`\ndigits, so the difference of two nearly equal energies is not a double-precision cancellation; the exponent comes from successive ratios and the limit from Richardson\nextrapolation in `1/g^2`. Item 4 is the double-precision `924x924` computation, converged in `1/g`.",
+          "excerpt_sha256": "5c5aff82997da27c121a1f1bd3548bd392bd648593e361a94727cbee834d9284"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 229,
+          "end": 230,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "2. The reason at large coupling is structural. The density profile, the Neel weight and the `t^2/V` exchange are all sector-independent, so the sign on a plaquette enters the\n   energy only through the ring exchange around it -- and that prefers the staggered sign, `-27 t^4/V^3` on the cube and `~ -320/27` on the block.",
+          "excerpt_sha256": "96d91034e46a4d0e6f3f68ea22a6a92f11818ab68b1d96846868c9e9f5477c6d"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 256,
+          "end": 257,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "- **Exact derivation of the ring-exchange coefficient.** The `-27` is a high-precision numerical limit, not a degenerate-perturbation-theory derivation. A lane wanting the\n  coefficient from the algebra must supply that derivation; the sign is what this note carries.",
+          "excerpt_sha256": "c4c6c2f5e4bcf80dbef525aeeb6036ebf2288f5c6445e252f7fd0432b0def028"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 284,
+          "end": 284,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "ring_exchange: g^3 dE = -26.9815477888, -26.9953982475, -26.9988502688, -26.9997126114 at g = 64, 128, 256, 512 (mpmath, 60 digits), exponents 2.99926, 2.99982, 2.99995, Richardson -26.9999999999; E_0(-) - E_0(+) = -27 t^4/V^3 + O(V^-4), i.e. 9/4 per face carrying the sign S_f; on 2x2x3 the same quantity settles near -11.853 ~ -320/27",
+          "excerpt_sha256": "bc0a557fa29a511188ef8ed47e3f485166220e1906dbd714f01d12b45c34420c"
+        },
+        {
+          "path": "scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+          "start": 888,
+          "end": 910,
+          "source_sha256": "b9d666ae0ca2dace54609dc814cc440da0f8e2c347387798561a8c9677022eb4",
+          "excerpt": "GH = [64, 128, 256, 512]\nHR = [(g, (e0_mp(IVM, g) - e0_mp(IVP, g)) * g ** 3) for g in GH]\nEXPO = [float(mp.log(HR[k][1] / HR[k + 1][1]) / mp.log(2)) + 3 for k in range(len(HR) - 1)]\nAMAT = mp.matrix([[mp.mpf(1), mp.mpf(1) / g ** 2, mp.mpf(1) / g ** 3, mp.mpf(1) / g ** 4] for g in GH])\nC3 = mp.lu_solve(AMAT, mp.matrix([r[1] for r in HR]))[0]\nprint(\"   E3 cube g^3 dE: \" + \" \".join(\"%d:%s\" % (g, mp.nstr(s, 12)) for g, s in HR)\n      + \"; exponents \" + \" \".join(\"%.5f\" % e for e in EXPO)\n      + \"; Richardson limit \" + mp.nstr(C3, 12))\ncheck(\n    \"E3 [numerical, mpmath 60 digits] the surviving difference is order t^4/V^3 (above): E_0(-) - E_0(+) = \"\n    \"-27 t^4/V^3 on the cube -- a ring exchange of 9/4 a face carrying the sign S_f\",\n    all(s < 0 for _, s in HR) and abs(EXPO[-1] - 3) < 2e-3\n    and abs(float(C3) + 27) < 1e-6 and abs(float(HR[-1][1]) + 27) < 1e-3,\n)\n\nGB = [16.0, 32.0, 64.0, 128.0, 256.0]\nBR = [(g, g ** 3 * float(S6.low(BVEC[JM], g, k=1)[0] - S6.low(BVEC[JP], g, k=1)[0])) for g in GB]\nprint(\"   E4 2x2x3 g^3 dE: \" + \" \".join(\"%g:%.5f\" % r for r in BR))\ncheck(\n    \"E4 [numerical, converged in 1/g] the same ring exchange on 2x2x3 with its own coefficient (above), near \"\n    \"%.4f ~ -320/27: that number is cluster data, its SIGN is what is shared\" % BR[-1][1],\n    all(s < 0 for _, s in BR) and abs(BR[-1][1] + 320 / 27) < 5e-3\n    and abs(BR[-1][1] - BR[-2][1]) < abs(BR[1][1] - BR[0][1]),",
+          "excerpt_sha256": "9a0a00c40fe8bd5fc58b4c42a3e0e966aeb6b140c87d1b88dee6e9451b8824f4"
+        }
+      ],
+      "issue": "Four high-precision energy samples and a fitted extrapolation do not alone prove an asymptotic remainder or identify a plaquette operator. The asserted9/4 per-face explanation of the entire -27 difference omits degenerate checkerboard tunnelling. The independent exact fourth-order matrices give diagonal difference -12 and a further lowest-eigenvalue tunnelling contribution -15. The block value near -11.853 is not an exact identification with -320/27. The note itself later admits the missing derivation, contradicting earlier theorem/runner claims.",
+      "evidence": [
+        "INDEPENDENT_CUBE.json and PROOF_REVIEW.md: K2=-6I, K3=0, K4(+)=[[17/2,13/2],[13/2,17/2]], K4(-)=[[-7/2,-43/2],[-43/2,-7/2]], lowest coefficients2 and-25.",
+        "Original HR/AMAT/BR and full cache retained: AMAT fits1,1/g^2,1/g^3,1/g^4 to four samples."
+      ],
+      "narrow_repair": "Either keep all large-g numbers as explicitly finite high-precision diagnostics with no derived ring-amplitude claim, or incorporate a correct finite degenerate-perturbation proof including both diagonal and tunnelling terms and the appropriate positive-g remainder. Do not attribute all -27 to a scalar9/4 per face or promote the block rational guess. Preserve the numerical samples and model; no parent campaign is needed for the narrow proof.",
+      "decisive_recheck": [
+        "If the exact cube coefficient is retained as theorem, verify the full two-by-two effective matrices and lowest eigenvalues, with a source coefficient/tunnelling mutation that fails.",
+        "Otherwise narrow every theorem/label/executable occurrence to numerical diagnostics and leave the operator derivation unresolved."
+      ],
+      "positive_scope_to_preserve": "The independently confirmed cube leading difference -27 is recoverable conditionally; all original high-precision and block samples survive as history/evidence.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F8",
+      "priority": "P2",
+      "title": "A different cluster cannot refute the torus MBPT root; bind the actual coefficient",
+      "anchors": [
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 190,
+          "end": 199,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "4. Second-order many-body perturbation theory on `4^3` gives `dE(g) = -10.50142 - 2.00000 g + 0.44685 g^2`, whose positive root `g = 7.577` would predict a repulsive-side flip;\n   it is contradicted by Theorem 1 at `g = 8, 16, 32, 64`, where the ordering is exact over `Z`, and by Theorem 3 at `g = 8, 16`. Recorded as a **caution about the truncation**.\n\n**Proof.** Item 1 diagonalises each twisted real-space hopping matrix, forms `P` from the occupied columns and sums the bond terms, `[numerical, 1e-9]`. Item 2 verifies the two\ninteger identities at zero tolerance and evaluates `A` in exact rational arithmetic from the polynomial projectors. Item 3 is converged quadrature, `M = 400` and `M = 800`\nagreeing to `1e-5`. Item 4 is a standard antisymmetrised second-order sum over the free orbitals.\n\n**Reading, not theorem.** Perturbation theory in the price, on boxes far bigger than the ones that can be solved outright, agrees: the first correction is smaller for the\nminus-on-every-square arrangement, so switching the price on widens the gap rather than closing it. One order further on the smallest box suggests a strength at which the order\nwould flip; the boxes that can be solved exactly say it does not.",
+          "excerpt_sha256": "86fc3fd2f23d61435a4f7e93a9b85f8457224e88f59c295205b21f83fde131fd"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 282,
+          "end": 282,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "mbpt2_caution: 4^3 second order gives -10.50142 - 2.00000 g + 0.44685 g^2, positive root 7.577, refuted by cube_exact at g = 8, 16, 32, 64 and by block at g = 8, 16",
+          "excerpt_sha256": "a3e301efbbef1c8760868b90dd5e2e3b38e8e311713fe7758196030358f94c95"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 314,
+          "end": 316,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "The four things most likely to be over-read are flagged in the proof boundary: exhaustive means two open clusters and no torus; the half-filling statement is repulsive-side only,\nwith `T2` and `T3` marking where it ends; the second-order torus root at `g = 7.58` is a truncation artefact and is reported as one; and the ring-exchange coefficients are\ncluster numbers whose transferable content is their sign. This note is self-contained: `upstream_dependencies` is empty, every object is declared in \"Definitions\", no hypothesis",
+          "excerpt_sha256": "d846a69608edc4693515afcec02e1af7541b71b71cfc32f7c8c9cd9b49f777f7"
+        },
+        {
+          "path": "scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+          "start": 799,
+          "end": 821,
+          "source_sha256": "b9d666ae0ca2dace54609dc814cc440da0f8e2c347387798561a8c9677022eb4",
+          "excerpt": "C2 = {}\nfor kind in (\"+\", \"-\"):\n    w, C = np.linalg.eigh(-T4.mat(vec_of(T4, twisted(T4, kind, (-1, -1, -1)))))\n    No = 32\n    Y = np.einsum(\"mi,ma->iam\", C[:, :No], C[:, No:])\n    Yf = Y.reshape(No * (64 - No), 64)\n    Mm = (Yf @ W4 @ Yf.T).reshape(No, 64 - No, No, 64 - No)\n    anti = Mm - np.transpose(Mm, (0, 3, 2, 1))\n    eo, ev = w[:No], w[No:]\n    den = (eo[:, None, None, None] - ev[None, :, None, None]\n           + eo[None, None, :, None] - ev[None, None, None, :])\n    C2[kind] = 0.25 * float(np.sum(anti ** 2 / den))\nQA = C2[\"-\"] - C2[\"+\"]\nQB = float(AEX[\"-\"] - AEX[\"+\"])\nQC = float(DEEX)\nDISC = QB * QB - 4 * QA * QC\nROOTS = sorted([(-QB + np.sqrt(DISC)) / (2 * QA), (-QB - np.sqrt(DISC)) / (2 * QA)])\nprint(\"   D4 4^3 MBPT2 dE(g) = %+.5f %+.5f g %+.5f g^2, roots %.4f and %.4f\"\n      % (QC, QB, QA, ROOTS[0], ROOTS[1]))\ncheck(\n    \"D4 [numerical, caution only] the MBPT2 truncation above has a positive root g = %.2f predicting a \"\n    \"repulsive flip; REFUTED by the exact cube (A3, A4) and the 2x2x3 block (C2)\" % ROOTS[1],\n    QA > 0 and 7.0 < ROOTS[1] < 8.2 and ROOTS[0] < 0,",
+          "excerpt_sha256": "36f0a4c6a2dd8e09489403c41ee1f09ddc886bf75de050b7f06491822424d178"
+        }
+      ],
+      "issue": "The positive root of the4^3, N=32 truncated series is labelled REFUTED by8-site/N=4 and12-site/N=6 open clusters. Those are different Hamiltonians and do not refute this torus root. No same-torus interacting solution or remainder bound is supplied. Also the full runner accepts changing the actual second-order prefactor0.25 to0.253, shifting DeltaC2 from0.44685218 to0.45221441 and the positive root from7.5773 to7.5134 while retaining18/0.",
+      "evidence": [
+        "ACTUAL_MUTANTS.json: wrong-MBPT-coefficient false negative.",
+        "INDEPENDENT_TORUS.json: independent unordered occupied/virtual-pair bond-wedge sum gives C2(+)=-1.8076798162013128 and C2(-)=-1.3608276348795436, Delta=0.4468521813217692.",
+        "ADDITIONAL_CONTROLS.json: singles vanish at the declared references; first-order values42/40 independently agree."
+      ],
+      "narrow_repair": "Describe the second-order polynomial and its roots as finite perturbative diagnostics whose nonperturbative validity is unestablished; small-cluster comparisons are contrast only. Retain the true original coefficients and add a decisive actual numerical coefficient check at an honestly justified finite tolerance, preferably with the disjoint unordered-pair formula. Do not invent a large torus run or assert the root is physically realized.",
+      "decisive_recheck": [
+        "The actual0.253 prefactor mutation must fail the final coefficient assertion.",
+        "Keep every original second-order output and all roots; do not use the broad7\u20138.2 root window as precision validation."
+      ],
+      "positive_scope_to_preserve": "The stated finite MBPT2 coefficients and first-order exact42/40 values are correct within the declared supplied reference calculation.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F9",
+      "priority": "P2",
+      "title": "Label finite-grid crossing and quadrature precision honestly",
+      "anchors": [
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 222,
+          "end": 233,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "one -- evaluated at `L = 4, 8, 16, 32, 64, 96` and by converged Brillouin-zone quadrature:\n\n1. At half filling `e(+) = -1.00241973` and `e(-) = -1.19380112`, a difference of `-0.19138139 |t|` per coarse site in favour of the staggered sector.\n2. At quarter filling the difference is `+0.07909` per coarse site at `L = 96`, in favour of the plain sector.\n3. The crossing filling `n* = N*/V` settles to `0.339659` along the sequence `0.3594, 0.3287, 0.3340, 0.3380, 0.3411, 0.3398, 0.3394, 0.3397, 0.3396, 0.3397` at\n   `L = 4, 6, 8, 12, 16, 24, 32, 48, 64, 96`, and the window ends at the mirror `1 - n* = 0.660341`.\n\n**Proof.** Item 1 is `[numerical]` at converged quadrature: the reduced-grid Brillouin-zone integrals at `M = 600, 1200, 2400` agree to `1e-8` in `e(-)` and settle\nto the digits quoted in `e(+)`. Items 2 and 3 are `[numerical, 1e-9]` on the `L = 96` Bloch grid, `n*` read off it by linear interpolation of the difference.\n\n**Reading, not theorem.** In a large box the two arrangements differ by a fixed amount per site, not a vanishing one. Fill a third of the sites or fewer and the\nplain arrangement is cheaper; fill more, up to two thirds, and the other is cheaper, by about a fifth of a hopping unit per site at half filling.",
+          "excerpt_sha256": "72fbd58f69018b10682ff3ae49be2b3ba16b2010aa4665d306940f997f6b68bf"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 291,
+          "end": 291,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "thermodynamic: e(+) = -1.00241973, e(-) = -1.19380112 at half filling, difference -0.19138139 |t| per coarse site; +0.07909 at quarter filling at L = 96; n* -> 0.339659, mirror 0.660341",
+          "excerpt_sha256": "60053bbabf0fb9038a77930f8c66e666a47b536fcb53634d57f4d893e514a3b4"
+        },
+        {
+          "path": "scripts/half_filling_kinetic_energy_selects_the_staggered_flux_sector_check_2026_09_02.py",
+          "start": 829,
+          "end": 880,
+          "source_sha256": "311a6a400423359d23bca50786976a0746e5ed45858b97a0347a5df54467eb8b",
+          "excerpt": "check(\n    \"F1 [numerical, 1e-9] exact Bloch formulas at L = 4..96 (above): at half filling staggered is lower at \"\n    \"every L, settling at e(-) = %.8f vs e(+) = %.8f; at quarter filling higher at every L, by +%.5f per site\"\n    % (half[96][1], half[96][0], quarter[96][1] - quarter[96][0]),\n    all(half[L][1] < half[L][0] for L in half) and all(quarter[L][1] > quarter[L][0] for L in quarter)\n    and abs(quarter[96][1] - quarter[96][0] - 0.07908) < 5e-5,\n)\n\nQUAD = []\nfor M in (600, 1200, 2400):\n    h = M // 2\n    v = np.cos(2 * np.pi * np.arange(h + 1) / M)\n    w = np.full(h + 1, 2.0)\n    w[0] = w[h] = 1.0\n    W2 = w[:, None] * w[None, :]\n    S2 = v[:, None] + v[None, :]\n    ap = am = 0.0\n    for i in range(h + 1):\n        s = v[i] + S2\n        ap += w[i] * float(np.sum(W2 * np.abs(2 * s)))\n        am += w[i] * float(np.sum(W2 * np.sqrt(np.maximum(6 + 2 * s, 0.0))))\n    QUAD.append((M, -ap / (2 * M ** 3), -am / (2 * M ** 3)))\nep, em = QUAD[-1][1], QUAD[-1][2]\ncheck(\n    \"F2 [numerical, converged quadrature] the BZ integrals of |2 sum cos q| and sqrt(6 + 2 sum cos q) on reduced \"\n    \"grids M = 600, 1200, 2400 converge to e(+) = %.8f, e(-) = %.8f at half filling; difference %.8f |t| per site\"\n    % (ep, em, em - ep),\n    abs(ep + 1.00241973) < 5e-8 and abs(em + 1.19380112) < 5e-8\n    and abs(em - ep + 0.19138139) < 5e-8\n    and abs(QUAD[1][2] - QUAD[2][2]) < 1e-8,\n)\n\nNSEQ, dd = [], None\nfor L in (4, 6, 8, 12, 16, 24, 32, 48, 64, 96):\n    V = L ** 3\n    d = ladder(bloch_minus((L, L, L))) - ladder(bloch_plus((L, L, L)))\n    neg = np.where(d[1:V] < -1e-9)[0] + 1\n    NSEQ.append((L, int(neg[0]), int(neg[0]) / V, int(neg[-1]) / V))\n    if L == 96:\n        dd, i0 = d, int(neg[0])\nnst = ((i0 - 1) + (0 - dd[i0 - 1]) / (dd[i0] - dd[i0 - 1])) / 96 ** 3\nprint(\"   n* by L: \" + \" \".join(\"%d:%.4f\" % (L, n) for L, _, n, _ in NSEQ if L in (4, 8, 32, 96)))\ncheck(\n    \"F3 [numerical, 1e-9] the crossing filling n* = N*/V settles to %.6f (above), the window ending at the \"\n    \"mirror 1 - n* = %.6f: plain is cheaper below about a third filling and above its mirror\"\n    % (nst, 1 - nst),\n    abs(nst - 0.339659) < 2e-5 and all(abs(r[3] - (1 - r[2])) < 1e-12 for r in NSEQ)\n    and abs(NSEQ[-1][2] - 0.339660) < 1e-5,\n)\n\nprint(\n    \"SUMMARY: the law's hopping term is not indifferent to the sector -- at half filling the all-(-1) (staggered) \"",
+          "excerpt_sha256": "d4550377fe0406d6362fb08c304a6bf81bdfc12df51250e820c23474acf53f69"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 188,
+          "end": 195,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "3. By converged Brillouin-zone quadrature, using the closed forms `P_ij = <cos q_1>_occ` for the plain sea and `P_ij = +-(h(0) + h(2e_1))/2` with `h = (6 + W)^{-1/2}` for the\n   staggered one, the limiting values are `A/V = 0.666263` and `0.631237` and the limiting first-order crossing is `g_c = -5.4639`.\n4. Second-order many-body perturbation theory on `4^3` gives `dE(g) = -10.50142 - 2.00000 g + 0.44685 g^2`, whose positive root `g = 7.577` would predict a repulsive-side flip;\n   it is contradicted by Theorem 1 at `g = 8, 16, 32, 64`, where the ordering is exact over `Z`, and by Theorem 3 at `g = 8, 16`. Recorded as a **caution about the truncation**.\n\n**Proof.** Item 1 diagonalises each twisted real-space hopping matrix, forms `P` from the occupied columns and sums the bond terms, `[numerical, 1e-9]`. Item 2 verifies the two\ninteger identities at zero tolerance and evaluates `A` in exact rational arithmetic from the polynomial projectors. Item 3 is converged quadrature, `M = 400` and `M = 800`\nagreeing to `1e-5`. Item 4 is a standard antisymmetrised second-order sum over the free orbitals.",
+          "excerpt_sha256": "00f8e07e85aeffa88e6226998651f2826df7ab11bfee209acbc2211d3049784e"
+        },
+        {
+          "path": "scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+          "start": 784,
+          "end": 794,
+          "source_sha256": "b9d666ae0ca2dace54609dc814cc440da0f8e2c347387798561a8c9677022eb4",
+          "excerpt": "_, EPI, CPI, EMI, CMI = QUAD[-1]\nAPI, AMI = 0.75 - 3 * CPI ** 2, 0.75 - 3 * CMI ** 2\nGCI = -(EMI - EPI) / (AMI - API)\nprint(\"   D3 BZ quadrature M=%d: e/V = %.8f, %.8f; A/V = %.6f, %.6f; g_c = %.4f\"\n      % (QUAD[-1][0], EPI, EMI, API, AMI, GCI))\ncheck(\n    \"D3 [numerical, converged quadrature] the closed forms P_ij = <cos q_1>_occ and P_ij = +-(h(0) + h(2e_1))/2 \"\n    \"with h = (6 + W)^(-1/2) give the limiting A/V above: one crossing, attractive\",\n    abs(API - 0.66626) < 3e-4 and abs(AMI - 0.6312) < 3e-4 and AMI < API\n    and -5.6 < GCI < -5.3 and abs(QUAD[1][4] - QUAD[2][4]) < 1e-5,\n)",
+          "excerpt_sha256": "500d7ee927a1483a1aeb37f1228a1231ef37fdcf1e45e14e35cd9a7b126f2939"
+        }
+      ],
+      "issue": "The six-digit n*=0.339659 is the L=96 linearly interpolated crossing, not a proved limiting constant or whole-density unique-window theorem. F3 calls its result numerical1e-9 but accepts an actual1e-5 change to n*, printing0.339669 with19/0. Two or three quadrature resolutions do not certify every quoted limiting digit; interacting D3 only bounds one sampled quantity and broad coefficient/root windows. Limit integral existence and numerical approximation must be distinguished.",
+      "evidence": [
+        "ACTUAL_MUTANTS.json: crossing-digit-drift false negative.",
+        "INDEPENDENT_TORUS.json: independent reduced2D quadrature agrees with the half-filled integrals (plain converges toward -1.0024197357, staggered -1.19380112143), but supplies no interval error certificate.",
+        "Original GRID/QUAD/curve arrays and prescribed finite grids retained."
+      ],
+      "narrow_repair": "State the actual finite L/grid/interpolation and observed numerical sequence, with unproved limit/uniqueness or digit accuracy left open. Derive only the elementary continuous-dispersion integral limit if desired; label evaluated decimals as approximations. Bind the displayed finite crossing to the actual interpolation with a meaningful tolerance so the planted1e-5 drift fails, or reduce the claimed precision consistently. Do not invent convergence bounds or larger-grid campaigns.",
+      "decisive_recheck": [
+        "Reject the original n* drift in the actual full source.",
+        "Check finite-grid output versus independent interpolation and clearly separate rounding, solver tolerance and finite-volume error."
+      ],
+      "positive_scope_to_preserve": "Exact Bloch formulas, existence of the half-filled dispersion integrals, actual finite values and observed limiting trends remain useful.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F10",
+      "priority": "P3",
+      "title": "Correct the background description of Lieb\u2019s theorem without importing it",
+      "anchors": [
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 64,
+          "end": 67,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "Imported scientific authority: none load-bearing. The Bravyi-Kitaev superfast encoding, the Kawamoto-Smit staggering and the tight-binding dispersion are standard\nmethodology; every object is redeclared here and the runner recomputes every statement. Lieb's flux-phase theorem is named only as background -- it fixes the\noptimal flux of half-filled bipartite *planar* lattices, is not proved for the cubic lattice, and nothing below uses it or claims a cubic analogue. No observational\nvalue, no fitted number and no framework premise enters any proof. Non-load-bearing pointers, carrying no grade and no dependency weight:",
+          "excerpt_sha256": "10a4999e3ce2954d35d8410eecc9184dab634123d49e08e925b0c93b024580c3"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 306,
+          "end": 306,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "No Lieb-type flux-phase theorem is claimed for the cubic lattice. Lieb's theorem is planar; it is named as background only and no step below invokes it.",
+          "excerpt_sha256": "583f1235e88b51ce19f597666ca5f196eaa7622afef0436265e853dd8d9a9a14"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 61,
+          "end": 64,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "Imported scientific authority: none load-bearing. The Bravyi-Kitaev superfast encoding, the Kawamoto-Smit staggering, Wick's theorem for a Slater determinant and\nRayleigh-Schrodinger perturbation theory are standard methodology; every object is redeclared here and the runner recomputes every statement. Lieb's flux-phase theorem is named\nonly as background -- it is planar and free, is not proved for the cubic lattice, and nothing below uses it. No observational value, no fitted number and no framework premise\nenters any proof. Non-load-bearing pointers, carrying no grade and no dependency weight:",
+          "excerpt_sha256": "347a014b5188c2e8efef88893d8fc915833c62ee3c062487e4be3420953d2e76"
+        }
+      ],
+      "issue": "The blanket description as planar/free and not proved for the cubic lattice is inaccurate. The primary author abstract explicitly names interacting and higher-dimensional periodic extensions, including cubic pi flux. This affects novelty/background framing; it is not an instruction to assume those hypotheses hold for the present spinless fixed-N boundary conditions.",
+      "evidence": [
+        "LITERATURE_CHECK.json: E.H. Lieb, The Flux-Phase of the Half-Filled Band, Phys. Rev. Lett.73(1994),2158\u20132161; https://arxiv.org/abs/cond-mat/9410025."
+      ],
+      "narrow_repair": "Replace the false exclusion by a precise background citation and retain non-use of the external theorem, or remove the unnecessary characterization. A future application would require a separate exact hypothesis/domain check.",
+      "decisive_recheck": [
+        "Review the final background statement against the primary source; no external theorem may silently certify this candidate."
+      ],
+      "positive_scope_to_preserve": "The candidate\u2019s self-contained finite proofs do not depend on Lieb\u2019s theorem.",
+      "status": "CHANGES_REQUIRED"
+    },
+    {
+      "id": "F11",
+      "priority": "P2",
+      "title": "Bind publication IDs, current authority and mutable claim inputs through the real consumers",
+      "anchors": [
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 2,
+          "end": 6,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "claim_id: half_filling_kinetic_energy_selects_staggered_flux_sector\nclaim_type: bounded_theorem\nclaim_scope: \"On the coarse cubic lattice 2Z^3, carrying one fermionic mode per coarse vertex in the Bravyi-Kitaev superfast encoding written on it, with free nearest-neighbour hopping sum_ij eta_ij c_i^dag c_j and no other term, the flux sector of a face being the eigenvalue of that face's stabilizer S_f and E_N the sum of the N lowest one-particle levels, on the named finite blocks and tori only: (T1) the open 2x2x2 coarse cube has exactly 32 consistent flux sectors of the 64 face assignments -- six faces with one F2 relation, so an even number of -1 faces -- confirmed by enumerating all 2^12 link-sign fields, which realise exactly those 32 holonomy patterns with the one-particle spectrum constant on each; the all-(+1) sector has E_N = 0, -3, -4, -5, -6, -5, -4, -3, 0 and the all-(-1) sector E_N = -N sqrt3 for N <= 4 with its mirror, both exact over the integers; at N = 4 the all-(-1) sector is the unique minimiser of all 32, by 0.456067 to the next distinct value and by 4 sqrt3 - 6 to the plain sector, while the unique minimiser is the plain sector at N = 1, 7, the two-flux class at N = 2, 6 and the four-flux class at N = 3, 5, and all 32 tie at N = 0 and 8. (T2) On the coarse tori 4^3, 4x4x6, 6^3 and 8^3 and the open blocks 3^3 and 4^3, sign(E_N(-) - E_N(+)) is + below N*, - on the whole of [N*, V - N*] and + above -- one contiguous window, the difference symmetric under N -> V - N -- with N* = 23, 30, 71, 171, 10, 22 respectively; at L = 4 the spectra are fixed exactly by integer minimal-polynomial and power-trace witnesses, E_32(-) - E_32(+) = 36 - 24 sqrt2 - 8 sqrt3 < 0, E_16(-) - E_16(+) = 48 - 24 sqrt2 - 8 sqrt3 > 0, and the first sign change is at N* = 23 where the difference is 46 - 24 sqrt2 - 8 sqrt3. (T3) The S_f fix no torus Wilson line, so each sector is a family of eight link-sign fields; minimised over the eight twists the half-filling energies are -78.383672 against -67.882251 on 4^3, -116.809009 against -99.882251 on 4x4x6 and -258.857540 against -218.564065 on 6^3, and the all-(-1) sector at its worst twist still beats the all-(+1) sector at its best, by 3.92, 10.15 and 36.58; the twisted Bloch formulas +-sqrt(6 + 2 sum_a cos q_a) and 2 sum_a cos q_a reproduce all 48 twisted real-space spectra of those tori at 1e-9. (T4) The 4^3 coarse torus is bipartite with every degree 6, so for ANY link-sign field on it the integer matrix M has tr M^2 = 2|E| = 6V = 384 and D M D = -M for the colour involution D, hence a spectrum symmetric about 0; the V/2 lowest squared levels therefore sum to 3V = 192 and Cauchy-Schwarz gives E_{V/2} >= -sqrt((V/2)(3V)) = -V sqrt(3/2) = -32 sqrt6 = -78.383672, with equality exactly when every |lambda| = sqrt6; the all-(-1) sector at its optimal twist satisfies M^2 = 6 I exactly as a 64x64 integer identity, its spectrum is +-sqrt6 with multiplicity 32 each, and it attains the bound, so it is a global minimiser at half filling over all 2^192 link-sign fields on that torus; on 4x4x6, 6^3 and 8^3 the same bound is -117.5755, -264.5449 and -627.0694 and the all-(-1) sector misses it by 0.766, 5.687 and 15.26. (T5) At half filling on 4^3 and 4x4x6, 2000 random link-sign fields per torus as drawn and a 500-field subsample with each field minimised over its own eight twists give 0 of 2500 fields beating the all-(-1) sector on either torus; the structured sectors with flux only on the xy, xz or yz plaquettes, xy flux on alternating x planes, and flux on the xz and yz plaquettes together are consistent and all strictly above it, while flux on the even-parity faces, xz+yz on alternating planes and a single-face flip off the all-(-1) sector are inconsistent; greedy single-link descent from 24 random restarts per torus never beats the all-(-1) field at its optimal twist and on 4^3 returns exactly that field; that field is a strict local minimum, every single-link flip raising E_{V/2} by at least 0.426844 on 4^3 and 0.365352 on 4x4x6. (T6) From the exact Bloch formulas the per-site half-filling energies converge to e(+) = -1.00241973 and e(-) = -1.19380112, a difference of -0.19138139 |t| per coarse site, while at quarter filling the difference is +0.07909 at L = 96; the crossing filling n* = N*/V settles to 0.339659 with the window ending at the mirror 1 - n* = 0.660341. T3 and T5 are search results, not theorems. Nothing here is derived from any axiom, no axiom is amended, no status is set, and no hypothesis is adopted.\"\nupstream_dependencies: []\nrunner: scripts/half_filling_kinetic_energy_selects_the_staggered_flux_sector_check_2026_09_02.py",
+          "excerpt_sha256": "149950a33619c9794dbf34ba62ac098a2b911a61b969442c836ad2111373e13f"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 28,
+          "end": 46,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "## Machine status\n\n```yaml\nactual_current_surface_status: bounded-support\ntarget_claim_type: bounded_theorem\nclaim_type_reason: \"Exact finite-cluster theorems on the flux-sector dependence of the free coarse-lattice hopping energy: exhaustive enumeration on the open 2x2x2 cube, exact surd spectra on the 4^3 torus, and an integer Cauchy-Schwarz certificate making the staggered sector a global half-filling minimiser there. The sampling, structured-sector and descent items are declared search results, not theorems, and the thermodynamic items are converged quadrature.\"\ntrace_class: frontier_discovery\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: unknown_frontier\nartifact_role: theorem\nnext_trace_action: \"Run independent audit on this self-contained finite-cluster theorem, and route to its owner the science-level question this note does not decide: what fixes the coarse-lattice matter density.\"\nconditional_surface_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nhypothetical_axiom_status: null\nadmitted_observation_status: null\n```",
+          "excerpt_sha256": "c827e20dd4b1cb972615d05dc07aa49785834c377fc31238ad0ede87146f9323"
+        },
+        {
+          "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+          "start": 324,
+          "end": 328,
+          "source_sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+          "excerpt": "not reach the staggered field, it merely fails to beat it; and no cubic-lattice flux-phase theorem is claimed. This note is self-contained:\n`upstream_dependencies` is empty, every object is declared in \"Definitions\", no hypothesis is adopted, and the three context notes in \"Imports and authority\" are\nplain-text pointers carrying no grade and no weight. Hard landing conditions are a fresh runner and cache pair closing at `PASS=19 FAIL=0`, runtime under the\ndeclared `120` seconds, stdout under `5500` characters, a current zero-dependency citation-manifest entry, and passing pipeline, strict-lint and changed-evidence\ngates; independent audit remains a separate lane.",
+          "excerpt_sha256": "db054bc05bb5919df501797f76ae57c6ae823db5c96fe0df00a808d16fb45897"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 2,
+          "end": 6,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "claim_id: interaction_keeps_staggered_sector_half_filling\nclaim_type: bounded_theorem\nclaim_scope: \"On the coarse cubic lattice 2Z^3, one fermionic mode per coarse vertex in the Bravyi-Kitaev superfast encoding written on it, the flux sector of a face being the eigenvalue of that face's stabilizer S_f, and the law read on the record-conserving nearest-neighbour family H(t, V) = -t sum_bonds eta_ij (c_i^dag c_j + c_j^dag c_i) + V sum_bonds n_i n_j at t = 1 with the single ratio g = V/t, on the many-body ground state at fixed particle number N and on the named finite clusters only: (T1) on the open 2x2x2 coarse cube at half filling, N = 4, dimension 70, all 32 consistent flux sectors compared, the all-(-1) sector is the unique many-body minimiser at every g in {-2, -1, -0.5, 0, 0.5, 1, 2, 4, 8}, with margins to the next distinct sector 0.192, 0.344, 0.408, 0.456, 0.483, 0.485, 0.407, 0.158, 0.025; and exactly over Z at the twelve integer g in {-8, -4, -2, -1, 0, 1, 2, 4, 8, 16, 32, 64}, where the 70x70 integer characteristic polynomials give minimal polynomials of E_0 over Z for both uniform sectors -- degrees 3, 3, 3, 4, 1, 4, 3, 3, 4, 4, 4, 4 for the plain sector and 5, 5, 5, 5, 2, 5, 5, 5, 5, 5, 5, 5 for the staggered one, the plain g = 2 polynomial being x^3 - 10x^2 - 16x + 48 and the staggered g = 0 polynomial x^2 - 48 -- and a CRootOf comparison gives E_0(-) < E_0(+) strictly at all twelve with no tie and no floating point. (T2) On the same cube away from half filling, N = 2 and N = 6, dimension 28, the interaction does reorder: the minimiser is the two-flux class, three tied sectors, at every g in that list and the all-(-1) sector is never it, sitting at rank 31, 31, 31, 31, 31, 31, 31, 30, 27 of 32; exactly, at N = 2 the staggered characteristic polynomial carries the g-free factor x^2 - 12, so E_0(-) = -2 sqrt3 at every g, while E_0(+) is the least root of x^3 - g x^2 - 16 x + 8 g, and the two are equal exactly at g_c = 2 sqrt3. (T3) On the open 2x2x3 coarse block at half filling, N = 6, dimension 924, 11 faces of F2 rank 9 and exactly 512 consistent sectors of 2048 face assignments, the all-(-1) sector is the unique minimiser of all 512 at every g in {0, 0.5, 1, 2, 4, 8, 16}, with margins 0.381, 0.401, 0.401, 0.311, 0.058, 0.0048, 0.00049, its ground state non-degenerate and the plain sector's 2-fold throughout, the plain sector ranking 500, 500, 509, 511, 511, 511, 511 of 512; on the attractive side it is still the unique minimiser at g = -1, -2 and -2.3 and is beaten at g = -2.4 by an 8-flux class of 8 tied sectors, so the flip window is -2.4 < g_c < -2.3, while the uniform pair itself never crosses on [-64, 64], E_0(-) - E_0(+) being at most -4.53e-05 over the 15 couplings scanned. (T4) First-order perturbation theory in V about the twist-minimised free half-filled sea on the coarse tori 4^3, 6^3, 8^3, 10^3 and 12^3, with A = sum_bonds (P_ii P_jj - P_ij^2) by Wick, gives A/V = 0.65625, 0.66427, 0.66505, 0.66541, 0.66592 for the plain sector against 0.62500, 0.63032, 0.63101, 0.63116, 0.63120 for the staggered one, so the first-order correction also favours the staggered sector at every L; on 4^3 the integer hopping matrices satisfy M^6 - 52 M^4 + 676 M^2 = 1152 I at the all-antiperiodic twist for the plain field and M^2 = 6 I for the staggered one, making both occupied projectors polynomials in M with rational squared entries, so A(+) = 42 = 21/32 per site and A(-) = 40 = 5/8 per site exactly, dE_free = 48 sqrt2 - 32 sqrt6, and the only first-order crossing is attractive, at g_c = 24 sqrt2 - 16 sqrt6 = -5.250710; by converged Brillouin-zone quadrature the limiting values are A/V = 0.666263 and 0.631237 and g_c = -5.4639. Second-order MBPT on 4^3 gives -10.50142 - 2.00000 g + 0.44685 g^2, whose positive root g = 7.577 is refuted by T1 and T3 and is recorded as a caution about the truncation, not a result. (T5) At large coupling on the cube both sectors freeze into the same Neel doublet: <n_i> = 1/2 on every site in both sectors to 5e-14 at g = 4, 8, 16, 32, the staggered moment m^2 rising to 0.24945 and 0.24944 against the Neel value 1/4 and the weight on the two Neel patterns to 0.99708 and 0.99704; the t^2/V exchange is sector-independent, g E_0 -> -6 in both sectors and g^2 (E_0(-) - E_0(+)) -> 0 along -0.4216, -0.2109, -0.1055 at g = 64, 128, 256; and the surviving difference is order t^4/V^3, g^3 (E_0(-) - E_0(+)) = -26.9815477888, -26.9953982475, -26.9988502688, -26.9997126114 at g = 64, 128, 256, 512 in 60-digit arithmetic with local exponent 2.99926, 2.99982, 2.99995 and Richardson limit -26.9999999999, that is E_0(-) - E_0(+) = -27 t^4/V^3 + O(V^-4), a plaquette ring exchange of 9/4 per face carrying the sign S_f; the same structure holds on the 2x2x3 block with its own coefficient, g^3 (E_0(-) - E_0(+)) settling near -11.8530 ~ -320/27. All statements are at fixed particle number, on the named clusters, for that one interaction family. Nothing here is derived from any axiom, no axiom is amended, no status is set, and no hypothesis is adopted.\"\nupstream_dependencies: []\nrunner: scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+          "excerpt_sha256": "fda1b4927530ecd5e0e2c96b5bfbf2d23d9485bfe38532e37243e54ab86d69f2"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 28,
+          "end": 44,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "\n```yaml\nactual_current_surface_status: bounded-support\ntarget_claim_type: bounded_theorem\nclaim_type_reason: \"Exact and exhaustive finite-cluster theorems on the flux-sector ordering of one record-conserving interacting law: every consistent sector of the open 2x2x2 cube and of the open 2x2x3 block diagonalised at fixed particle number, the cube's half-filling ordering fixed over Z by minimal polynomials and a CRootOf comparison, the off-half-filling crossing fixed exactly at 2 sqrt3, and the 4^3 first-order coefficients fixed by integer matrix certificates. The torus items are first (and, once, second) order in V and are labelled so; the large-coupling ring-exchange coefficient is a high-precision numerical limit, and its sign, not its value, is what the note carries.\"\ntrace_class: frontier_discovery\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: unknown_frontier\nartifact_role: theorem\nnext_trace_action: \"Run independent audit on this self-contained finite-cluster theorem, and route to its owner the science-level question this note does not decide: which interaction the coarse lattice actually carries.\"\nconditional_surface_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\nhypothetical_axiom_status: null\nadmitted_observation_status: null",
+          "excerpt_sha256": "20826c140914c32b113eb8612849541127ef12d02635f548fc64ecae76043f51"
+        },
+        {
+          "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "start": 317,
+          "end": 319,
+          "source_sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+          "excerpt": "is adopted, and the four context notes in \"Imports and authority\" are plain-text pointers carrying no grade and no weight. Hard landing conditions are a fresh runner and cache\npair closing at `PASS=18 FAIL=0`, runtime under the declared `180` seconds, stdout under `5500` characters, a current zero-dependency citation-manifest entry, and passing\npipeline, strict-lint and changed-evidence gates; independent audit remains a separate lane.",
+          "excerpt_sha256": "2a4227eff82923fd818fdf322e1d8ca8e878e9833b34d78a6e33092562d10308"
+        }
+      ],
+      "issue": "Both primary runners are source-only caches with no declared mutable inputs, and the current parser finds no citations. Own-note or current-memo removal/drift leaves the original cache fresh in eight actual tests. The short claim aliases differ from actual filename-derived IDs; target IDs are null. Plain-text pointers and empty upstream lists do not establish authority/current-premise closure. The old quote/current composition correction is material, while current next_trace_action schedules an audit although the owner has deferred formal audits.",
+      "evidence": [
+        "PREFLIGHT.json: both actual filename-derived primary APIs, graph/diagnostic helper lists0/0, declared inputsNone, citations[].",
+        "ACTUAL_CACHE_INPUT_CONTROLS.json: two fresh baseline checks; eight own-note/memo drift/removal false-fresh results; four actual primary source drift/removal cases correctly fail.",
+        "CONTEXT_COMPLETION.json binds the corrected current composition note and historical quote provenance separately."
+      ],
+      "narrow_repair": "Use actual filename-derived IDs and coherent current trace/status wording without setting an audit verdict. Add an actual Markdown citation to the governing memo and any genuinely used current premise; bind each own note plus its complete used mutable semantic input union before final caches. Keep helper sets empty because both real APIs are already correct. Historical attribution may stay context, with exact provenance and non-endorsement, without enrolling whole parent campaigns. Freeze notes/inputs bottom-up, run each affected final cache once, and preserve all originals and failed controls externally. Current owner audit deferral controls scheduling.",
+      "decisive_recheck": [
+        "Before final execution, exercise both actual note-derived APIs, primary source/input readiness, every declared input removal/drift and actual source drift.",
+        "No unsupported helper registration, mutual fingerprint or blanket parent acceptance; final graph dependencies must reflect the actual remaining proof/authority scope."
+      ],
+      "positive_scope_to_preserve": "Both actual primary runner assignments and zero-helper closures are correct; no registry/tool modification is presently indicated.",
+      "status": "CHANGES_REQUIRED"
+    }
+  ],
+  "count": 11,
+  "priority_counts": {
+    "P2": 10,
+    "P3": 1
+  },
+  "scope": "Independent original source review only; no formal audit status or landing verdict applied."
+}

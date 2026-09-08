@@ -1,0 +1,1299 @@
+{
+  "sealed_at_utc": "2026-09-08T06:37:35.283806+00:00",
+  "scope": "Narrow author correction of all12 findings for original#7896/#7909; independent source+manifest confirmation pending",
+  "author_verdict": null,
+  "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-backlog-walls-7896-7909-20260908",
+  "base": "0221e4865fd37cad773137467dc42af92d655ba9",
+  "tree": "421a58e535c10a246fb43f4aaee7d989df241428",
+  "selected_paths": 7,
+  "original_authored_paths": 6,
+  "original_check_ids": 48,
+  "final_focused_checks": 58,
+  "original_math_function_ASTs_preserved": 35,
+  "historical_verbatim_bodies": 4,
+  "full_original_current_final_map_rows": 30110,
+  "all_author_base_leaves_preserved": 28803,
+  "latest_context_main": "162584a3e9e009877147c42c3717c214453bc006",
+  "protected_contexts_exact": 16,
+  "actual_final_runs": [
+    {
+      "pr": "7896",
+      "wrapper_elapsed": 9.38831266699708,
+      "peak_child_rss": 459079680,
+      "identity_equal": true,
+      "cache_sha256": "0a2b4a95cd8ff946e80328b65c112337df9b3af9c9968322ccb1b8505204d7d1",
+      "result_status": "ok",
+      "exit_code": 0,
+      "cap_seconds": 120
+    },
+    {
+      "pr": "7909",
+      "wrapper_elapsed": 61.873834208992776,
+      "peak_child_rss": 96174080,
+      "identity_equal": true,
+      "cache_sha256": "3a946bd07bde082d9a5c04fb778990b54cffecbd80679d929048825965f8b805",
+      "result_status": "ok",
+      "exit_code": 0,
+      "cap_seconds": 150
+    }
+  ],
+  "preserved_real_failed_run": "first interval29/1 (new F4 momentum transcription); no original check failed",
+  "actual_source_mutants": 4,
+  "cache_input_cases": 22,
+  "live_guard_cases": 18,
+  "input_edges": 6,
+  "runtime_helpers": 0,
+  "parent_campaigns_executed": 0,
+  "formal_audit": false,
+  "main_or_PR_mutations": false,
+  "report_sha256": "01db37ae760237a14e410fd627807afd30499ffda8c8f095bba46f83c5f505f7",
+  "handoff_sha256": "b0afc63a573877411c1a85f743dff034e9c325645b6670e334a5e19606dfd0c3",
+  "candidate_patch_sha256": "005d9119fa70d5ea1b9147b963b2665380c3019d17cc83dba6f0b17c26c63fbd",
+  "author_correction_sha256": "bf049fdf975ecc9b1a59e7f1a1914918d54c1bcccf44e5a2930f89431613f852",
+  "artifact_count": 246,
+  "artifact_bytes": 92786047,
+  "original_packet_refs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-walls-7896-7909-fixes/PREPARATION_RECEIPT.json",
+      "sha256": "a855c773bf034176789a02bbdc7d4f385313d1edc19ec1fe663b15ba6149fae4",
+      "all_bound_artifacts_reverified": 45
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-walls-7896-7909-review/FINAL_RECEIPT.json",
+      "sha256": "145643d0e410abdea3b55daec47b59d7e79c151ed41fc85e14cf8543b4389e0d",
+      "all_bound_artifacts_reverified": 137
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "ACTUAL_MUTANTS.json",
+      "sha256": "f56bbd21c5b519dffb3993b96893bdfe2aaec04efe9df716ce6349bb5b37badf",
+      "bytes": 6789
+    },
+    {
+      "path": "AFFECTED_MATH_PREFLIGHT.json",
+      "sha256": "186e7608c779231e8226e786d60b68357ed156fb40aaee4a16ac62e27be0c9db",
+      "bytes": 1120
+    },
+    {
+      "path": "AUTHOR_START_BINDING.json",
+      "sha256": "a42e1cb58ad966a7196976c6ff2139a3979fb9f1869dafaabf6b56460f2afec5",
+      "bytes": 812
+    },
+    {
+      "path": "BRANCH_RECOVERY.json",
+      "sha256": "26d146692fe30035ede4be41ff9375ded5b65f971c897480a6d3737de57a257f",
+      "bytes": 731
+    },
+    {
+      "path": "CACHE_INPUT_CONTROLS.json",
+      "sha256": "9e35589ecbc3848a5d9bf8aa107c391c094d6ce9acfaee7810e8314e78d8b9f8",
+      "bytes": 33672
+    },
+    {
+      "path": "COLD_READ_BINDING.json",
+      "sha256": "77d6d3941692218ad9ee6dc79459a57dd3f03ec7808ede77150f43e9a7f4ffb7",
+      "bytes": 819
+    },
+    {
+      "path": "COMPLETE_ENDPOINT_MAP.jsonl.gz",
+      "sha256": "064aa9e48d652c67579c664a90affdb4235cb106710a18e42b53de67a684e99a",
+      "bytes": 2050736
+    },
+    {
+      "path": "COMPLETE_MAP_RECEIPT.json",
+      "sha256": "337c57cf31ff7b0e418792b342aa40b5a7e939ead5373604aaed6c49f9ad68f1",
+      "bytes": 3152
+    },
+    {
+      "path": "COMPLETE_ORIGINAL_7896_MAP.jsonl.gz",
+      "sha256": "97dc704a2b195d4043cf91433f959bcbc25dc559e20ded5f81340bba0edd5840",
+      "bytes": 1577627
+    },
+    {
+      "path": "COMPLETE_ORIGINAL_7909_MAP.jsonl.gz",
+      "sha256": "a441045442f4a1288bcf2cee836917fec4ddce0f1453598c3bc2cf28c3617f50",
+      "bytes": 1577665
+    },
+    {
+      "path": "COMPLETE_ORIGINAL_CURRENT_FINAL_MAP.jsonl.gz",
+      "sha256": "551b70a09e2463374136c8ac026d27cdcde561e2023cbcbdd57b32de4f9183d0",
+      "bytes": 2438153
+    },
+    {
+      "path": "COMPLETE_PREPARATION_MAP.jsonl.gz",
+      "sha256": "7faeb0649b348b8a91bd9a41e4416c142ac9ad8e31c259d51220deb12a40ead5",
+      "bytes": 2285152
+    },
+    {
+      "path": "COMPUTATIONAL_AST_PRESERVATION.json",
+      "sha256": "e461a06be4d33d74a382bc02d3969a287a13e31210dac94f59a387f2ec946c22",
+      "bytes": 8831
+    },
+    {
+      "path": "CURRENT_CONTEXT_BINDING.json",
+      "sha256": "68702e85093cece3e305d268f8a9a1fee14573817b631b3061e0b75952fdb41f",
+      "bytes": 10709
+    },
+    {
+      "path": "CURRENT_DRAFT_API_CHECK.json",
+      "sha256": "844759a49149bc40669d71755c2caaf4420a2915970c264a76c527c78ae7b5ea",
+      "bytes": 1558
+    },
+    {
+      "path": "FINAL_CLAIM_DISPOSITIONS.json",
+      "sha256": "d655f35df5f4b714dc043db48951f272424feaaeb6350a52cfc3bb15e2f978fb",
+      "bytes": 31152
+    },
+    {
+      "path": "FINAL_CONSUMER_BINDING.json",
+      "sha256": "6af9dad66d3c42fe012db1b6f369e141770e8ace6749e64f1cbb735b31866bf1",
+      "bytes": 2781
+    },
+    {
+      "path": "FINAL_CONTEXT_BINDING.json",
+      "sha256": "6a057a231eb143648750a291ccb11d0861c831a6ffc43d9652e3e97ed6d3ac16",
+      "bytes": 4701
+    },
+    {
+      "path": "FINAL_INVENTORY.json",
+      "sha256": "0b735b81d895777c1f45af44b6e80003abf07f82eb7b4d2fca5e9a11144df4f4",
+      "bytes": 4731
+    },
+    {
+      "path": "FINAL_MAP_RECEIPT.json",
+      "sha256": "d372a35d81bb3e8e7a81c5bdb44afb44e46ba818f325044e59ff471230d9f466",
+      "bytes": 1345
+    },
+    {
+      "path": "FINAL_SOURCE_CLOSURE.json",
+      "sha256": "12c96c50e6914683bf81a50e8f5033dc99d0c195211912c53f827d9c9fe54313",
+      "bytes": 4153
+    },
+    {
+      "path": "FINDING_DISPOSITIONS.json",
+      "sha256": "0204c8fba3681f4680d4c14738ce6f9094a7abdb415f601c62895cf218f7324c",
+      "bytes": 53469
+    },
+    {
+      "path": "FIRST_ACTUAL_MUTANTS.json",
+      "sha256": "c17de60598472061e8b0b0ed10d2c70b74d17b668a65b4e62ba24913f4da4a44",
+      "bytes": 6295
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "b0afc63a573877411c1a85f743dff034e9c325645b6670e334a5e19606dfd0c3",
+      "bytes": 2007
+    },
+    {
+      "path": "INTERMEDIATE_CHECKPOINT.json",
+      "sha256": "09b456c4d4089bacb75ce8c5da756e56aaab1293b907fa99ee38b95a37fce1cf",
+      "bytes": 2805
+    },
+    {
+      "path": "NOTE_REPAIR_PATHS.json",
+      "sha256": "3942f7630dc5f726d3c4e214c433540e7e659a41943eda4a980df4d62ec62e39",
+      "bytes": 820
+    },
+    {
+      "path": "NUMERIC_PAYLOAD_PRESERVATION.json",
+      "sha256": "1241157581c1a887d9c21ce769b7d6eacefa13db89ffbc449e2aa5cb88d9f01a",
+      "bytes": 11804
+    },
+    {
+      "path": "ORIGINAL_CHECK_DISPOSITIONS.json",
+      "sha256": "2388e00fd8729fb9e639c144a23d63a974b74cec89867a6207af004d59ada9bd",
+      "bytes": 11368
+    },
+    {
+      "path": "ORIGINAL_FINAL_PATH_DISPOSITIONS.json",
+      "sha256": "5eed71f7f6a4527077d8377d3cba38589a9ce1a8a4ca0417d2e614e8e5cdc4b9",
+      "bytes": 10842
+    },
+    {
+      "path": "ORIGINAL_PACKET_REVERIFICATION.json",
+      "sha256": "98ebd853e4cebe1342af073c70cc86a8428ad90ac5355aff2108612b650983de",
+      "bytes": 517
+    },
+    {
+      "path": "ORIGINAL_SELECTION.json",
+      "sha256": "6804ad7e7496ac6827a88b2054de4a553229d440d530a6a4b2cc692cff7d54e8",
+      "bytes": 2014
+    },
+    {
+      "path": "POST_FIRST_FREEZE_BINDING.json",
+      "sha256": "b4c8ca1bdae3f88614370c2caa6cc554d4d28e4ece6aad55af8275184ada2073",
+      "bytes": 587
+    },
+    {
+      "path": "PREMISE_CONTEXT_FRONTIER.json",
+      "sha256": "c6d41d25b66dc519670197c8995f51c94a126b4201c11b8e00c9f535ca5c60ce",
+      "bytes": 15154
+    },
+    {
+      "path": "PREPARATION_BINDING.json",
+      "sha256": "9fd8f6d17bc666b0fc67bdf7794eb09dbae221268f3cb128f0d22417ed923719",
+      "bytes": 3153
+    },
+    {
+      "path": "PREPARATION_CHECKS.json",
+      "sha256": "3fa550901b8b12c2701e2d0ea9f30baf1673f52679c7885ff86024be5c81e920",
+      "bytes": 3634
+    },
+    {
+      "path": "PREPARATION_INCIDENTS.md",
+      "sha256": "50199a2fecaa7f836cc63743cceb4d5de472ce0213893adb184a9fe0c538c972",
+      "bytes": 969
+    },
+    {
+      "path": "PREPARATION_READ_LEDGER.json",
+      "sha256": "373572989483f01ba07b4a3f25954b8600adbb5b65365d4d74d984cec382e5ca",
+      "bytes": 3035
+    },
+    {
+      "path": "PREPARATION_RECEIPT.json",
+      "sha256": "a855c773bf034176789a02bbdc7d4f385313d1edc19ec1fe663b15ba6149fae4",
+      "bytes": 9004
+    },
+    {
+      "path": "PREPARATION_REPORT.md",
+      "sha256": "2ad5d79a833aa208dbf54a3e44ad8ee1fd2c55636496cf3a33f8b9e1546f3668",
+      "bytes": 4434
+    },
+    {
+      "path": "PRE_EXECUTION_FREEZE.json",
+      "sha256": "91e634484e1cd91bfcdc9d5a62294682bb957bac2658cdbe48ab0bf8eafd0df7",
+      "bytes": 6280
+    },
+    {
+      "path": "RAW_OBJECT_MERGE_BASE_CHECK.json",
+      "sha256": "114141e83de6b144d89fa08cc9b49aee8dd27ae5aa040062c1f763e14d4946b0",
+      "bytes": 569
+    },
+    {
+      "path": "READ_LEDGER.json",
+      "sha256": "51387426a8132421178e8d74ecd9508d7f0c6a5d0d103fe2b9352d85d1968600",
+      "bytes": 8174
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "01db37ae760237a14e410fd627807afd30499ffda8c8f095bba46f83c5f505f7",
+      "bytes": 7195
+    },
+    {
+      "path": "SELECTED_TREE.json",
+      "sha256": "063181275f8057ed9e5ccc03a42b958c6006403aaa00ef2b4a29a8e820b56fcf",
+      "bytes": 231
+    },
+    {
+      "path": "SOURCE_REFS.json",
+      "sha256": "4249cbffe14ca9a1d5420385c331d7ba2a3948e684c7e15f75709cc676e2593a",
+      "bytes": 1578
+    },
+    {
+      "path": "SYMMETRY_PAUSE_CHECKPOINT.json",
+      "sha256": "65954f65d520f0cdaa9c17225eeca9fd503af3cb25fdc636e707770730e0ed9c",
+      "bytes": 770
+    },
+    {
+      "path": "WITHDRAWAL_FAILURE_DISPOSITION.json",
+      "sha256": "f63fcf84b3a31a86bf9fa626ce6bcb10f19d6c324907ebba4a3c8e6efc77ffa2",
+      "bytes": 722
+    },
+    {
+      "path": "WITHDRAWAL_TINY_CONTROL.json",
+      "sha256": "ca948789ead1dc1d11a263950cf0760552a99642b4f2d5d9ad3e046c072318f0",
+      "bytes": 516
+    },
+    {
+      "path": "actual-mutants/first-flux-preparation-failure/RESULT.json",
+      "sha256": "d6117743f81d7f66ce6354ea790f12cbe34191e257433f32a54ad8c459564a8d",
+      "bytes": 1203
+    },
+    {
+      "path": "actual-mutants/first-flux-preparation-failure/root/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "actual-mutants/first-flux-preparation-failure/root/docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+      "sha256": "03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef",
+      "bytes": 8221
+    },
+    {
+      "path": "actual-mutants/first-flux-preparation-failure/root/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+      "bytes": 16430
+    },
+    {
+      "path": "actual-mutants/first-flux-preparation-failure/root/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+      "sha256": "06e4270c3657323cd68e2239f01227fdae468aacef8f62112105af5a605db37b",
+      "bytes": 38458
+    },
+    {
+      "path": "actual-mutants/first-flux-preparation-failure/source.diff",
+      "sha256": "aa8fcba5bb35c04b9f216fc165e0b46ad37cf42c91f7171daf8628e3ef2679c1",
+      "bytes": 509
+    },
+    {
+      "path": "actual-mutants/first-flux-preparation-failure/stderr.txt",
+      "sha256": "54351abb20bb036b1158e2c4c862562cb85630b86d41a230ce25a37e9a1e7214",
+      "bytes": 1397
+    },
+    {
+      "path": "actual-mutants/first-flux-preparation-failure/stdout.txt",
+      "sha256": "dc30e419025cac003b02f22a4da36f7417cd5431404acf3321b4a801d86d6840",
+      "bytes": 583
+    },
+    {
+      "path": "actual-mutants/line-mass-1.05/RESULT.json",
+      "sha256": "30a0da52aec0f7d23fcdefa2f7250146fa20ce092b26ab1f5268512c736cb683",
+      "bytes": 1521
+    },
+    {
+      "path": "actual-mutants/line-mass-1.05/root/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "actual-mutants/line-mass-1.05/root/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "1e8d8bafdf7d72a8ed54a579b454d799051518bb5f2a8cd737f8a67f8d225949",
+      "bytes": 14956
+    },
+    {
+      "path": "actual-mutants/line-mass-1.05/root/docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+      "sha256": "67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90",
+      "bytes": 28929
+    },
+    {
+      "path": "actual-mutants/line-mass-1.05/root/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+      "sha256": "a0e586050e1dfea3dc9d030f5f58c9081acf7be8a7c1a7ebd88d980e4e4abe7f",
+      "bytes": 30555
+    },
+    {
+      "path": "actual-mutants/line-mass-1.05/source.diff",
+      "sha256": "c2fe9e5d02d9e9962794b38a170ef49a866d9b868dd5903ba724939a83136706",
+      "bytes": 511
+    },
+    {
+      "path": "actual-mutants/line-mass-1.05/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "actual-mutants/line-mass-1.05/stdout.txt",
+      "sha256": "d1f16709c37fb856166a0169617a329d566226e7d7c611963858196cbd65fd4d",
+      "bytes": 7119
+    },
+    {
+      "path": "actual-mutants/omitted-family/RESULT.json",
+      "sha256": "1463ef5b8be47bc2fb0778aa06fdc0719a1119e2b205d36b6498b855b7986e20",
+      "bytes": 1584
+    },
+    {
+      "path": "actual-mutants/omitted-family/captured.json",
+      "sha256": "96d16df770864c87753c7094c9ac2db928929ae0c725e43565f9e9e64dc0d25a",
+      "bytes": 422277
+    },
+    {
+      "path": "actual-mutants/omitted-family/root/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "actual-mutants/omitted-family/root/docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+      "sha256": "03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef",
+      "bytes": 8221
+    },
+    {
+      "path": "actual-mutants/omitted-family/root/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+      "bytes": 16430
+    },
+    {
+      "path": "actual-mutants/omitted-family/root/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+      "sha256": "ee9238756a7c059e78dc9bcd8d6b8e1f49ec63e6037859353225127d1d3f6e56",
+      "bytes": 38461
+    },
+    {
+      "path": "actual-mutants/omitted-family/source.diff",
+      "sha256": "36c425b9b3913ebc41d2bc71a888fb079ab4a43b99d39c20f43e142269d5c198",
+      "bytes": 486
+    },
+    {
+      "path": "actual-mutants/omitted-family/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "actual-mutants/omitted-family/stdout.txt",
+      "sha256": "e15f1cd5152f5604fc25865e87a0eeb567538a7880a1d97b931404d08f3a00ee",
+      "bytes": 1772
+    },
+    {
+      "path": "actual-mutants/reverse-actual-flux/RESULT.json",
+      "sha256": "4e98398e4ed53e42bba514f8e0160c5fcb5df695966da30acb22c619ffa65555",
+      "bytes": 1689
+    },
+    {
+      "path": "actual-mutants/reverse-actual-flux/captured.json",
+      "sha256": "7440313c71c0f283259fc02e8e633900b6220e42085416ebb909d24b138692f0",
+      "bytes": 1104
+    },
+    {
+      "path": "actual-mutants/reverse-actual-flux/root/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "actual-mutants/reverse-actual-flux/root/docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+      "sha256": "03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef",
+      "bytes": 8221
+    },
+    {
+      "path": "actual-mutants/reverse-actual-flux/root/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+      "bytes": 16430
+    },
+    {
+      "path": "actual-mutants/reverse-actual-flux/root/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+      "sha256": "06e4270c3657323cd68e2239f01227fdae468aacef8f62112105af5a605db37b",
+      "bytes": 38458
+    },
+    {
+      "path": "actual-mutants/reverse-actual-flux/source.diff",
+      "sha256": "aa8fcba5bb35c04b9f216fc165e0b46ad37cf42c91f7171daf8628e3ef2679c1",
+      "bytes": 509
+    },
+    {
+      "path": "actual-mutants/reverse-actual-flux/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "actual-mutants/reverse-actual-flux/stdout.txt",
+      "sha256": "7d7f721d3932f17d27961d71bbb2627d44c3c2516a0c2782fccc2b5e25b25a31",
+      "bytes": 1049
+    },
+    {
+      "path": "actual-mutants/wrong-bulk-window/RESULT.json",
+      "sha256": "82d5019b7113cd629e4be56169443cbcafdfe6fcaabd990ef3bc2ddb2c824e44",
+      "bytes": 1722
+    },
+    {
+      "path": "actual-mutants/wrong-bulk-window/captured.json",
+      "sha256": "2af656f9ee76e7c18ef029dbe9422d4f74451f5b8754f9b5c9a2c3f4f53c413b",
+      "bytes": 1003682
+    },
+    {
+      "path": "actual-mutants/wrong-bulk-window/root/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "actual-mutants/wrong-bulk-window/root/docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+      "sha256": "03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef",
+      "bytes": 8221
+    },
+    {
+      "path": "actual-mutants/wrong-bulk-window/root/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+      "bytes": 16430
+    },
+    {
+      "path": "actual-mutants/wrong-bulk-window/root/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+      "sha256": "0e07d0415b467f77e8aba967eeb7a7f00ac0336fe99c218990e95d682ca49e22",
+      "bytes": 38457
+    },
+    {
+      "path": "actual-mutants/wrong-bulk-window/source.diff",
+      "sha256": "3a3cf9ed2aa9cc8925800d4e8f1a56c282f9c1617fba86d1875ca7826d73ed9e",
+      "bytes": 422
+    },
+    {
+      "path": "actual-mutants/wrong-bulk-window/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "actual-mutants/wrong-bulk-window/stdout.txt",
+      "sha256": "3cb2363424c375ad930886e803dc2835756aaa6f2ce2cdd783c179c4a691b3d7",
+      "bytes": 2114
+    },
+    {
+      "path": "adverse-flux-wrapper.log",
+      "sha256": "558269933935608d645dc4a3d0091facc157b55f11f8361106d0c6cfe2e0c348",
+      "bytes": 525
+    },
+    {
+      "path": "adverse-wrapper.log",
+      "sha256": "0fe252094f79bc1eaaa7c6acda64ef22dbf1ea8f73846b8e3a7943491260c420",
+      "bytes": 3211
+    },
+    {
+      "path": "adverse_affected_exec.py",
+      "sha256": "51025226314e524af10b2d333c4a817a79a2e374eeef9dba2af50f6a884e0c8b",
+      "bytes": 2490
+    },
+    {
+      "path": "affected_math_preflight.py",
+      "sha256": "c525083a6f057b01aae90c6fff6696cd19535a762a4eacc0f82fdefab7936407",
+      "bytes": 2642
+    },
+    {
+      "path": "author-correction.diff",
+      "sha256": "bf049fdf975ecc9b1a59e7f1a1914918d54c1bcccf44e5a2930f89431613f852",
+      "bytes": 263397
+    },
+    {
+      "path": "author_start.py",
+      "sha256": "0bef804160b4b3924fcbe0cca6dc641eae83d905538c279087dd0b6b7ad6e4fa",
+      "bytes": 1179
+    },
+    {
+      "path": "cache-input-controls/7896/root/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "cache-input-controls/7896/root/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "1e8d8bafdf7d72a8ed54a579b454d799051518bb5f2a8cd737f8a67f8d225949",
+      "bytes": 14956
+    },
+    {
+      "path": "cache-input-controls/7896/root/docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+      "sha256": "67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90",
+      "bytes": 28929
+    },
+    {
+      "path": "cache-input-controls/7896/root/logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt",
+      "sha256": "0a2b4a95cd8ff946e80328b65c112337df9b3af9c9968322ccb1b8505204d7d1",
+      "bytes": 7503
+    },
+    {
+      "path": "cache-input-controls/7896/root/scripts/cached_runner_output.py",
+      "sha256": "8dd5030dcab131829e950de1bea3c3e296efac6bb8c366444156449c7bf1a2b4",
+      "bytes": 3559
+    },
+    {
+      "path": "cache-input-controls/7896/root/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+      "sha256": "d7440dc0d5f9be368a313a22c95b6c8fcbce2660ca9327ee8599748ebf0e698c",
+      "bytes": 30548
+    },
+    {
+      "path": "cache-input-controls/7896/root/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "cache-input-controls/7909/root/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "cache-input-controls/7909/root/docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+      "sha256": "03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef",
+      "bytes": 8221
+    },
+    {
+      "path": "cache-input-controls/7909/root/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+      "bytes": 16430
+    },
+    {
+      "path": "cache-input-controls/7909/root/logs/runner-cache/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.txt",
+      "sha256": "3a946bd07bde082d9a5c04fb778990b54cffecbd80679d929048825965f8b805",
+      "bytes": 8867
+    },
+    {
+      "path": "cache-input-controls/7909/root/scripts/cached_runner_output.py",
+      "sha256": "8dd5030dcab131829e950de1bea3c3e296efac6bb8c366444156449c7bf1a2b4",
+      "bytes": 3559
+    },
+    {
+      "path": "cache-input-controls/7909/root/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+      "sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+      "bytes": 38457
+    },
+    {
+      "path": "cache-input-controls/7909/root/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "cache-input-controls.stdout",
+      "sha256": "2d9ff444d368dfce0d189c6d71108dbbf38b334040de4c4b81c6692a6d4357d4",
+      "bytes": 213
+    },
+    {
+      "path": "cache_input_controls.py",
+      "sha256": "ce2658728b934886b806ef28eadd9f2b64aefe6a0f8e7bc91720159e0f15c0e7",
+      "bytes": 3092
+    },
+    {
+      "path": "candidate.patch",
+      "sha256": "005d9119fa70d5ea1b9147b963b2665380c3019d17cc83dba6f0b17c26c63fbd",
+      "bytes": 211731
+    },
+    {
+      "path": "checkpoint-to-final-source.diff",
+      "sha256": "184b4bf165bac95c012cb957c94e4c29a9048e30f4da4fc1702f1fb5cb3bfdda",
+      "bytes": 22483
+    },
+    {
+      "path": "context-source/archive/notes/docs/DOMAIN_WALL_CHIRAL_EDGE_FROM_ACHIRAL_CL3_BULK_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+      "sha256": "3974f8d8fa77e74d9504b670fa097ca4f864775ccdc8b183ebaedce0f9845a7b",
+      "bytes": 6821
+    },
+    {
+      "path": "context-source/archive/notes/docs/DOMAIN_WALL_EDGE_ANOMALY_INFLOW_SPECTRAL_FLOW_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
+      "sha256": "f6d77e88e0e664436d807d2f5b2f0fdcefca631688bc861d92da1b4c394ae33f",
+      "bytes": 8917
+    },
+    {
+      "path": "context-source/archive/notes/docs/RECORD_FORMATION_FRONT_IS_THE_DOMAIN_WALL_FREE_FIELD_BOUNDED_THEOREM_NOTE_2026-07-05.md",
+      "sha256": "1fa628d9e0345df90934d549dc0c05d972c849338f99434c457cbc6a92cf6f49",
+      "bytes": 7377
+    },
+    {
+      "path": "context-source/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "context-source/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "context-source/docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+      "sha256": "03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef",
+      "bytes": 8221
+    },
+    {
+      "path": "context-source/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "context-source/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581
+    },
+    {
+      "path": "context-source/docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+      "sha256": "67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90",
+      "bytes": 28929
+    },
+    {
+      "path": "context-source/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427
+    },
+    {
+      "path": "context-source/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "context-source/docs/audit/scripts/build_citation_graph.py",
+      "sha256": "039d53569d8ec86e19343f2e999194eeceb5b91f4d0bd52a2fccff1facb8d1f4",
+      "bytes": 67318
+    },
+    {
+      "path": "context-source/docs/audit/scripts/forensic_evidence_readiness.py",
+      "sha256": "516e28fafd6fd752a967b6d491b0c9cb8058b60fb6fc7c849b279b185df87f97",
+      "bytes": 4889
+    },
+    {
+      "path": "context-source/docs/audit/scripts/no_go_discipline_gate.py",
+      "sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874",
+      "bytes": 206348
+    },
+    {
+      "path": "context-source/scripts/audit_packet_script_deps.py",
+      "sha256": "681b56a1b28eb77c70e3011793720233e4311b29113c1469b79c6b75e34b1550",
+      "bytes": 32429
+    },
+    {
+      "path": "context-source/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "correct_withdrawal_fixture.py",
+      "sha256": "4d88342daddb93a1987683bef699704cea6078ae4ba4dd5c3ae7e84783e7ee35",
+      "bytes": 2372
+    },
+    {
+      "path": "execution-snapshot/.claude/science/review-fixes/walls-7896-7909/REVIEW_CORRIGENDUM_2026-09-08.md",
+      "sha256": "5644e24745b46871b7fffb8e464994318e5fdfdd623c3a72b6093b29f5afa538",
+      "bytes": 89744
+    },
+    {
+      "path": "execution-snapshot/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "execution-snapshot/docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+      "sha256": "03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef",
+      "bytes": 8221
+    },
+    {
+      "path": "execution-snapshot/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "1e8d8bafdf7d72a8ed54a579b454d799051518bb5f2a8cd737f8a67f8d225949",
+      "bytes": 14956
+    },
+    {
+      "path": "execution-snapshot/docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+      "sha256": "67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90",
+      "bytes": 28929
+    },
+    {
+      "path": "execution-snapshot/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+      "bytes": 16430
+    },
+    {
+      "path": "execution-snapshot/logs/runner-cache/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.txt",
+      "sha256": "d78019056d89b785ca6f8efd06f704e5d6af38d5bb92af6341c2d0efe5fb7dcf",
+      "bytes": 7464
+    },
+    {
+      "path": "execution-snapshot/logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt",
+      "sha256": "0a2b4a95cd8ff946e80328b65c112337df9b3af9c9968322ccb1b8505204d7d1",
+      "bytes": 7503
+    },
+    {
+      "path": "execution-snapshot/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+      "sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+      "bytes": 38457
+    },
+    {
+      "path": "execution-snapshot/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+      "sha256": "d7440dc0d5f9be368a313a22c95b6c8fcbce2660ca9327ee8599748ebf0e698c",
+      "bytes": 30548
+    },
+    {
+      "path": "execution-snapshot/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "execution-snapshot/scripts/sitecustomize.py",
+      "sha256": "b4295be8d46445d0aadbe16ee78070ee2a635083b27bfedd3bcf3004a3c793d2",
+      "bytes": 1861
+    },
+    {
+      "path": "final-binding.stdout",
+      "sha256": "abec688077ab49b41b8ec623b70ce2d30c5cf21603a43e22be8590d60d7ec33e",
+      "bytes": 193
+    },
+    {
+      "path": "final-execution-7896-wrapper.log",
+      "sha256": "a6bac05b18f889d0af3ebee36576fa5ee9443dcffcbbed9c1182f5bae3dfcdc4",
+      "bytes": 4791
+    },
+    {
+      "path": "final-execution-7909-wrapper.log",
+      "sha256": "cd58957bf8f36f6e31f2a8497c1ccdb244a8d210c58dd94d19aa73ac45b091ce",
+      "bytes": 4790
+    },
+    {
+      "path": "final-executions/7896/EXECUTION_RECEIPT.json",
+      "sha256": "a6bac05b18f889d0af3ebee36576fa5ee9443dcffcbbed9c1182f5bae3dfcdc4",
+      "bytes": 4791
+    },
+    {
+      "path": "final-executions/7896/cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt",
+      "sha256": "0a2b4a95cd8ff946e80328b65c112337df9b3af9c9968322ccb1b8505204d7d1",
+      "bytes": 7503
+    },
+    {
+      "path": "final-executions/7896/capture-result.json",
+      "sha256": "aeee9711258c45b80d32a5b34d08a21827d0182d2f4a404e9e895187a3a507c0",
+      "bytes": 912
+    },
+    {
+      "path": "final-executions/7896/child-launch.json",
+      "sha256": "844790fe8bdfb4a7f5e70a0c3b8a0aa3eaba23ecaca00ac3ef94f94de0d9584c",
+      "bytes": 728
+    },
+    {
+      "path": "final-executions/7896/full-live-log.txt",
+      "sha256": "ee9bb3f80e9e8a8bc308bac848a6847c21cf969d2c5135fa5d9aefd0e8ab7544",
+      "bytes": 7351
+    },
+    {
+      "path": "final-executions/7896/numeric-arrays.npz",
+      "sha256": "dfe1e1d9d25c5dc6af515a47bc10d9806ad65dc59b4c34d928aa7efa5889ab0c",
+      "bytes": 10814146
+    },
+    {
+      "path": "final-executions/7896/numeric-values.json",
+      "sha256": "183c90494230c8e7b20f48865c9e6f931d130502189dca0aabd4b3a601a87400",
+      "bytes": 98073
+    },
+    {
+      "path": "final-executions/7896/result.json",
+      "sha256": "aca5dc017d75e315d2c5b1fef2f55382cba78e8cb257533de87e98b920847d9a",
+      "bytes": 7597
+    },
+    {
+      "path": "final-executions/7896/rss-samples.json",
+      "sha256": "353a2d3022bca552b0e52caa5d6d98786891efb82612d8975726c616f016c3e3",
+      "bytes": 673
+    },
+    {
+      "path": "final-executions/7896/stdout-stderr.txt",
+      "sha256": "cadbb6705c46160df03d07e54ef7164f85cffb7869fc78551f40ed3746be8706",
+      "bytes": 7119
+    },
+    {
+      "path": "final-executions/7909/EXECUTION_RECEIPT.json",
+      "sha256": "cd58957bf8f36f6e31f2a8497c1ccdb244a8d210c58dd94d19aa73ac45b091ce",
+      "bytes": 4790
+    },
+    {
+      "path": "final-executions/7909/cache/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.txt",
+      "sha256": "3a946bd07bde082d9a5c04fb778990b54cffecbd80679d929048825965f8b805",
+      "bytes": 8867
+    },
+    {
+      "path": "final-executions/7909/capture-result.json",
+      "sha256": "23594e041a78eaea7a4a69981d4c310f069415f0d6695da3b69db04f4104d5ad",
+      "bytes": 745
+    },
+    {
+      "path": "final-executions/7909/child-launch.json",
+      "sha256": "b66d790e02c0058290aeb70a4d99450b5da4faf3a3d77bfa76dcdd1b0cf997e4",
+      "bytes": 729
+    },
+    {
+      "path": "final-executions/7909/full-live-log.txt",
+      "sha256": "bb0625b667d99f4b670782173bba44b1eb96a1cd0a1986eaf6fb01f0a82ea9dd",
+      "bytes": 8714
+    },
+    {
+      "path": "final-executions/7909/numeric-arrays.npz",
+      "sha256": "7fcd10fa2210d79094f84662be89d89b36139275b9cf922cd9633887aa453f74",
+      "bytes": 32373704
+    },
+    {
+      "path": "final-executions/7909/numeric-values.json",
+      "sha256": "4cda7e62e78846846c30a968642dbce255896944cc352935395f2a8dbe3838e1",
+      "bytes": 898820
+    },
+    {
+      "path": "final-executions/7909/result.json",
+      "sha256": "64879d88ef24324f5e5eb3236167e202eea67fa31d187527a74f3b9b5f694efc",
+      "bytes": 8956
+    },
+    {
+      "path": "final-executions/7909/rss-samples.json",
+      "sha256": "e1b42f27ddabd82a05fa55ece69a47587785a629587b74f262f4afb1d2550ebb",
+      "bytes": 4510
+    },
+    {
+      "path": "final-executions/7909/stdout-stderr.txt",
+      "sha256": "5b3a269fdabde2855f035d098718949ad0734e7dcb40c856f671868ea06d2be4",
+      "bytes": 8481
+    },
+    {
+      "path": "final-executions/first-7909-29-1/EXECUTION_RECEIPT.json",
+      "sha256": "67619c06b729d9db13d4b1643e9824896550981bef0e534e9473bd92747c8ea5",
+      "bytes": 4811
+    },
+    {
+      "path": "final-executions/first-7909-29-1/cache/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.txt",
+      "sha256": "cc8fb83d14e2c15595fa9ca00670c820bea5f9f21424a21cfb2b27ed87adeaee",
+      "bytes": 8877
+    },
+    {
+      "path": "final-executions/first-7909-29-1/capture-result.json",
+      "sha256": "23594e041a78eaea7a4a69981d4c310f069415f0d6695da3b69db04f4104d5ad",
+      "bytes": 745
+    },
+    {
+      "path": "final-executions/first-7909-29-1/child-launch.json",
+      "sha256": "741871ddb2c5aa600e4a692874912253800d305bf6a5502220bf10f6ea26b21a",
+      "bytes": 729
+    },
+    {
+      "path": "final-executions/first-7909-29-1/full-live-log.txt",
+      "sha256": "db6cf6e38fbdf9e49985f592e5e6c24714359dc7dc5e17c301fdb47af23a1ef0",
+      "bytes": 8714
+    },
+    {
+      "path": "final-executions/first-7909-29-1/numeric-arrays.npz",
+      "sha256": "116c38b1cf8a1c40c16ea76afd8cefd3995515d57c88f00e884172fc515d2aba",
+      "bytes": 32373704
+    },
+    {
+      "path": "final-executions/first-7909-29-1/numeric-values.json",
+      "sha256": "dc4a8a5ae246067b1d970e50db918488880d61334988ed79b4a2c47891ad1dfa",
+      "bytes": 898822
+    },
+    {
+      "path": "final-executions/first-7909-29-1/result.json",
+      "sha256": "48b6cf30baa71720b73949f5b2a26ad10f1d135bf89b2722e77500296aadeed6",
+      "bytes": 8966
+    },
+    {
+      "path": "final-executions/first-7909-29-1/rss-samples.json",
+      "sha256": "ce67d3f7e7d9e214beb6a776b2451aade3ead7b0e6149dd714cca99988f2127b",
+      "bytes": 4425
+    },
+    {
+      "path": "final-executions/first-7909-29-1/stdout-stderr.txt",
+      "sha256": "d3d513b9edcc0535941d99903bdcf8d81de674c7dc837a317516a0179ce6dc4a",
+      "bytes": 8481
+    },
+    {
+      "path": "final-executions/probe/EXECUTION_RECEIPT.json",
+      "sha256": "344b766fd68ba8d407fda22f58b42a8c154b0cc3a144a6aefbec402f557bc1e6",
+      "bytes": 2239
+    },
+    {
+      "path": "final-executions/probe/cache/external_child_capture_probe.txt",
+      "sha256": "026657521bf6654f8a0c6d2eb5a8c19153ceb8b1cc00bba0f77c307f0ca3abf8",
+      "bytes": 275
+    },
+    {
+      "path": "final-executions/probe/capture-result.json",
+      "sha256": "0e6d06c7ff005aa9e0d6efa60f2e2e8b8259bedb955ff895dd0f3e4802f71d76",
+      "bytes": 89
+    },
+    {
+      "path": "final-executions/probe/child-launch.json",
+      "sha256": "067de893fc5eeba10edf8bcf7e1307abf6c5f88e0582827d7191a8d23e928f70",
+      "bytes": 690
+    },
+    {
+      "path": "final-executions/probe/full-live-log.txt",
+      "sha256": "7f544ae7e8443a66b9dbff0b580c04f2a028a17e4becb5c2797864cccd457cbc",
+      "bytes": 214
+    },
+    {
+      "path": "final-executions/probe/numeric-arrays.npz",
+      "sha256": "833bba85c0d5e6da45abe337ae41afe104fe04d715efd0bb3a6092d3652fef0d",
+      "bytes": 312
+    },
+    {
+      "path": "final-executions/probe/numeric-values.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "bytes": 3
+    },
+    {
+      "path": "final-executions/probe/result.json",
+      "sha256": "a2463f2642b6e751074faf8273b471fc070284c37f4ff7f171226e3c7e3be532",
+      "bytes": 371
+    },
+    {
+      "path": "final-executions/probe/rss-samples.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "final-executions/probe/stdout-stderr.txt",
+      "sha256": "c2a1db7bde1ce2813f38cb6d1bea3918cb37a9e0a66ffc2367169cad50e81e7f",
+      "bytes": 21
+    },
+    {
+      "path": "final-source-preexecution.patch",
+      "sha256": "e06690b6c638cd6a4671a7d63f7f3afa888f60a7c38e733830da963a75707e47",
+      "bytes": 210319
+    },
+    {
+      "path": "final_binding.py",
+      "sha256": "89862e531f3f451fcaa6ba1e97e0182a6523f2a27b1d84dd0b53422ecf7fb65a",
+      "bytes": 8533
+    },
+    {
+      "path": "finish_preparation.py",
+      "sha256": "c5f25cf8560c8d19695526fc2a0ca18eef6205a36fd0028f52aa68cac914ff07",
+      "bytes": 8850
+    },
+    {
+      "path": "first-freeze/PRE_EXECUTION_FREEZE.json",
+      "sha256": "91fc416f2aac221df86ab6442efd38f295b0572d5a22983ac5c41e25270ed44c",
+      "bytes": 6287
+    },
+    {
+      "path": "first-freeze/checkpoint-to-final-source.diff",
+      "sha256": "250dbb227ef246cf967ee12aa96eaf08a4ddadb606701db8cb8bf7453a1b159c",
+      "bytes": 8811
+    },
+    {
+      "path": "first-freeze/execution-snapshot/.claude/science/review-fixes/walls-7896-7909/REVIEW_CORRIGENDUM_2026-09-08.md",
+      "sha256": "5644e24745b46871b7fffb8e464994318e5fdfdd623c3a72b6093b29f5afa538",
+      "bytes": 89744
+    },
+    {
+      "path": "first-freeze/execution-snapshot/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "first-freeze/execution-snapshot/docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md",
+      "sha256": "03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef",
+      "bytes": 8221
+    },
+    {
+      "path": "first-freeze/execution-snapshot/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "1e8d8bafdf7d72a8ed54a579b454d799051518bb5f2a8cd737f8a67f8d225949",
+      "bytes": 14956
+    },
+    {
+      "path": "first-freeze/execution-snapshot/docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md",
+      "sha256": "67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90",
+      "bytes": 28929
+    },
+    {
+      "path": "first-freeze/execution-snapshot/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "54dc38d609b399764f3cf4131df284286d2d00ebf57df32b37ae6925fe7641fc",
+      "bytes": 16431
+    },
+    {
+      "path": "first-freeze/execution-snapshot/logs/runner-cache/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.txt",
+      "sha256": "d78019056d89b785ca6f8efd06f704e5d6af38d5bb92af6341c2d0efe5fb7dcf",
+      "bytes": 7464
+    },
+    {
+      "path": "first-freeze/execution-snapshot/logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt",
+      "sha256": "921813a6d9e8c1399fc231f248737c045d3a53d8eed20ea9aa2633557c469baf",
+      "bytes": 5782
+    },
+    {
+      "path": "first-freeze/execution-snapshot/scripts/external_child_capture_probe.py",
+      "sha256": "2a07e4fa0afa5841094db47297f5d57a1dbcfcfa07bb6c46728dfd4b33fc1cb6",
+      "bytes": 81
+    },
+    {
+      "path": "first-freeze/execution-snapshot/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+      "sha256": "037157c92981a82f49fba7ddb906fdf44fbcf0b47eb4232f6a78e1b5cf8189c2",
+      "bytes": 38458
+    },
+    {
+      "path": "first-freeze/execution-snapshot/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+      "sha256": "d7440dc0d5f9be368a313a22c95b6c8fcbce2660ca9327ee8599748ebf0e698c",
+      "bytes": 30548
+    },
+    {
+      "path": "first-freeze/execution-snapshot/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "first-freeze/execution-snapshot/scripts/sitecustomize.py",
+      "sha256": "b4295be8d46445d0aadbe16ee78070ee2a635083b27bfedd3bcf3004a3c793d2",
+      "bytes": 1861
+    },
+    {
+      "path": "first-freeze/final-execution-7909-wrapper.log",
+      "sha256": "29f3a160677d9b0a773d084f122452ce24b41170daa48184e3f47d6b28e7f79c",
+      "bytes": 3931
+    },
+    {
+      "path": "first-freeze/final-source-preexecution.patch",
+      "sha256": "4c7ce8b3563cc04fcee8ca76b2d58dc06e9a0ea96a0ce7930dcfb5b92b2017b7",
+      "bytes": 208589
+    },
+    {
+      "path": "first-freeze/freeze_execution.py",
+      "sha256": "52d270faa317b334083433f17d6e33cd5a08d7847f3423bc40dac79c45855c42",
+      "bytes": 9042
+    },
+    {
+      "path": "first-freeze/repair_notes.py",
+      "sha256": "84eacd97ab605b34b68b9842e6a1d64884f49e053451c3aea5d5cde1e4c29a8f",
+      "bytes": 31085
+    },
+    {
+      "path": "first-freeze/repair_runners.py",
+      "sha256": "df380b3e30f0092d0562ae6f17c41a9fd3b20a9da54edfcf36715cda600f9b03",
+      "bytes": 22722
+    },
+    {
+      "path": "first-freeze/source/.claude/science/review-fixes/walls-7896-7909/REVIEW_CORRIGENDUM_2026-09-08.md",
+      "sha256": "5644e24745b46871b7fffb8e464994318e5fdfdd623c3a72b6093b29f5afa538",
+      "bytes": 89744
+    },
+    {
+      "path": "first-freeze/source/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "1e8d8bafdf7d72a8ed54a579b454d799051518bb5f2a8cd737f8a67f8d225949",
+      "bytes": 14956
+    },
+    {
+      "path": "first-freeze/source/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "54dc38d609b399764f3cf4131df284286d2d00ebf57df32b37ae6925fe7641fc",
+      "bytes": 16431
+    },
+    {
+      "path": "first-freeze/source/logs/runner-cache/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.txt",
+      "sha256": "d78019056d89b785ca6f8efd06f704e5d6af38d5bb92af6341c2d0efe5fb7dcf",
+      "bytes": 7464
+    },
+    {
+      "path": "first-freeze/source/logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt",
+      "sha256": "0a2b4a95cd8ff946e80328b65c112337df9b3af9c9968322ccb1b8505204d7d1",
+      "bytes": 7503
+    },
+    {
+      "path": "first-freeze/source/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+      "sha256": "037157c92981a82f49fba7ddb906fdf44fbcf0b47eb4232f6a78e1b5cf8189c2",
+      "bytes": 38458
+    },
+    {
+      "path": "first-freeze/source/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+      "sha256": "d7440dc0d5f9be368a313a22c95b6c8fcbce2660ca9327ee8599748ebf0e698c",
+      "bytes": 30548
+    },
+    {
+      "path": "first-freeze_execution.py",
+      "sha256": "fcef94f85feff5d43b1373c173ae175a02cb71adc447befc3ffe4072837ff62e",
+      "bytes": 9044
+    },
+    {
+      "path": "first-run_adverse.py",
+      "sha256": "71aaebe3bacd3aef0c0693bf80ec53bfb0deed47b20e9d694ef59130f13a904e",
+      "bytes": 3405
+    },
+    {
+      "path": "freeze_execution.py",
+      "sha256": "52d270faa317b334083433f17d6e33cd5a08d7847f3423bc40dac79c45855c42",
+      "bytes": 9042
+    },
+    {
+      "path": "intermediate-candidate.patch",
+      "sha256": "78a16431d62e8d04248fa440bbd87fa973c4bd68cc18da45969190583cd70e76",
+      "bytes": 207976
+    },
+    {
+      "path": "intermediate-runner-correction.diff",
+      "sha256": "f534984e81e1b9ee19f50aa40e96a55a05e43c8781bdb8b6f08e9795e82ab9bf",
+      "bytes": 44879
+    },
+    {
+      "path": "numeric-preservation.stdout",
+      "sha256": "20b2316d20880417880bc30b5c4938bbd9a35581721a8e8859708aaf416b1964",
+      "bytes": 94
+    },
+    {
+      "path": "numeric_preservation.py",
+      "sha256": "c764562407e20a2c1fe430115110c4075e4bb41c809a4805374788397058147e",
+      "bytes": 1308
+    },
+    {
+      "path": "original-7896.commit",
+      "sha256": "60c2b43616c334c33ef53ceb8ed54e9b397f631849d2a50470421fbf79298b3f",
+      "bytes": 2668
+    },
+    {
+      "path": "original-7896.delta",
+      "sha256": "6fab378f75bb43d784ad79a26214df8ac7dead5530486a176b748ad128bdc222",
+      "bytes": 294
+    },
+    {
+      "path": "original-7909.commit",
+      "sha256": "9b456a6f5ae9f22eb9b2b4c75fbe4a7c46c5c9463bf0abce14a9c7be0c7f12a2",
+      "bytes": 4481
+    },
+    {
+      "path": "original-7909.delta",
+      "sha256": "00982e52442809fe7e1b00a6f4af59fcbc110f5aac883e7673a133775f6844d4",
+      "bytes": 297
+    },
+    {
+      "path": "original-overlay.patch",
+      "sha256": "c2ea83daa025a67c26ce3eff290da9944b1b489e61e246e6c336586a6f2aabdc",
+      "bytes": 148166
+    },
+    {
+      "path": "original-source/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "d3bde3ae75f455e65caddc81ea5f8032bfcd36202636ccbf0c3a635719902faf",
+      "bytes": 38735
+    },
+    {
+      "path": "original-source/docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "83ada5b24d423564b1905f0352524c2feb5f262c53cf420d2e73b8882c18d946",
+      "bytes": 35055
+    },
+    {
+      "path": "original-source/logs/runner-cache/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.txt",
+      "sha256": "d78019056d89b785ca6f8efd06f704e5d6af38d5bb92af6341c2d0efe5fb7dcf",
+      "bytes": 7464
+    },
+    {
+      "path": "original-source/logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt",
+      "sha256": "921813a6d9e8c1399fc231f248737c045d3a53d8eed20ea9aa2633557c469baf",
+      "bytes": 5782
+    },
+    {
+      "path": "original-source/scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+      "sha256": "a8499d7704364cc6bd4e6db2e241c8ea121b162e8e8a4f47fb8536127db89971",
+      "bytes": 31289
+    },
+    {
+      "path": "original-source/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+      "sha256": "19e0368581226ad2fdafbd392874b9d0e6a86cf363f12641a2b88c884e6df8f4",
+      "bytes": 25206
+    },
+    {
+      "path": "preparation_checks.py",
+      "sha256": "f7a54a47a39b41b72f765023980b6547579354ef54978008b008cc32946e45a3",
+      "bytes": 3946
+    },
+    {
+      "path": "prepare_original.py",
+      "sha256": "16b307fc11ca482d9715a126c7eadacd8c172fbb18be42419493c2408bbdbf50",
+      "bytes": 4034
+    },
+    {
+      "path": "repair_notes.py",
+      "sha256": "3578f269cc074ad0cfdcb794065f868947950dfb3711098959e71273f381f72b",
+      "bytes": 31084
+    },
+    {
+      "path": "repair_runners.py",
+      "sha256": "68dec81d46186ea336fcb69f52bd267f4ba5bcc7c14f1d14870dfd190e9463d5",
+      "bytes": 22721
+    },
+    {
+      "path": "run_adverse.py",
+      "sha256": "71aaebe3bacd3aef0c0693bf80ec53bfb0deed47b20e9d694ef59130f13a904e",
+      "bytes": 3405
+    },
+    {
+      "path": "run_adverse_flux_only.py",
+      "sha256": "1738dd7b9664a800313eeeec354fb62e95318f75abd2f3141fedeed83a7c92a8",
+      "bytes": 3475
+    },
+    {
+      "path": "seal_packet.py",
+      "sha256": "9a48033b188b2598f7600f2432e800ae7ecdc6eb93474056d6f7aa3381ec310c",
+      "bytes": 6089
+    },
+    {
+      "path": "withdrawal-fixture-correction.diff",
+      "sha256": "7be6532d3fd7d42b3932357a8e2028c0559a3aa41334990f527189de409586b8",
+      "bytes": 4388
+    },
+    {
+      "path": "withdrawal-tiny-control.stdout",
+      "sha256": "3b87014e0eba287779a571f1c2104849167479b7ff3a287334c33b8afa076660",
+      "bytes": 741
+    },
+    {
+      "path": "withdrawal_tiny_control.py",
+      "sha256": "ae8ae5499ff71f1391bdc8b9e560154f20af3b5fe33249a7256c0aa06101600e",
+      "bytes": 1695
+    },
+    {
+      "path": "write_handoff.py",
+      "sha256": "4f05ab2ceb1aab868a475e93972fad23fb5f94c1e7cc74e05a05e0fad60d92a6",
+      "bytes": 18328
+    }
+  ]
+}

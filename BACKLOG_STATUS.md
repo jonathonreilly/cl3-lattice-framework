@@ -159,6 +159,8 @@ positive results remain; no physical CPT, spontaneous order, sign registration,
 critical-point estimate or joint readout law is supplied. One combined validation
 passed, all 8 hashes were verified on remote main before closure, and no audit ran.
 
+Assignment refresh 2026-09-08T06:52:41.923491+00:00: [sealed author, composition and original review evidence](backlog_evidence/wave23-handoff/INDEX.json). Counts above are unchanged; wave23 has not landed.
+
 ## Current assignments and holds
 
 | Owner | Unit | Current state and next step |
@@ -177,12 +179,12 @@ passed, all 8 hashes were verified on remote main before closure, and no audit r
 | Landed | #7848/#7849 finite Noether and transfer results | Complete conditional algebra and Gram/instrument boundaries accepted with all 46 histories preserved. No physical dynamics or Record law supplied. |
 | Landed | #7888/#7890 finite matter kinematics | Complete corrected finite source accepted with all 46 original checks retained. Physical suppliers, asymptotic/ordering and historical-parent obligations remain explicit. |
 | Landed | #7889/#7891 shifting records and confinement | Complete corrected conditional scope accepted; all 44 original checks and finite positive results retained. Physical/model/limit obligations remain explicit. |
-| Author backlog_draft_triage; original reviewer backlog_8001_review | #7896/#7909 spatial and record-time walls | Spatial final 28/0 frozen; interval first 29/1 exposes a new-control momentum transcription error. Failure preserved; affected repair/refresh, mutants and original-reviewer confirmation remain. |
+| Original reviewer backlog_8001_review; root integration | #7896/#7909 spatial and record-time walls | Sealed author 28/0 and 30/0, all 48 old IDs and first 29/1 preserved. Root verified complete source/map/dispositions; final eight-path composition is under independent confirmation. |
 | Landed | #7894/#7897 discrete symmetries and Hartree mass | Complete corrected conditional scope accepted; all 56 original checks and numerical expressions retained. Physical/model/limit obligations remain explicit. |
-| Original reviewer backlog_draft_triage | #7895/#7899 relaxation and neighbourhood hierarchy | Verified25-artifact checkpoint preserves complete original source reads and maps. No baseline or science control has run. Resume after priority walls author work and symmetry confirmation. |
-| Author backlog_batch_contract queued after flux review; original reviewer backlog_8001_review | #7883/#7900/#7902/#7904 sea and corner criteria | Original review sealed: 11 P2 findings and one P3 group. All 108 original checks pass, but exact counterexamples and omission controls require narrow repairs. Complete 186-artifact packet and root verification preserved in wave22 evidence. |
-| Original reviewer backlog_batch_contract | #7874/#7878 free and interacting flux-sector selection | Original review active at verified heads. Complete six-source reads and original maps checkpointed; finite certificates, perturbative claims and physical suppliers under review. |
-| Original reviewer backlog_8001_review | #7879/#7881/#7885 vacuum and energy response | Original review assigned at unchanged OPEN/non-draft heads. Complete nine-source closure/resource preflight comes first; priority walls confirmation resumes when ready. |
+| Original reviewer backlog_draft_triage | #7895/#7899 relaxation and neighbourhood hierarchy | Same-session original review resumed from preserved checkpoint; source/closure and bounded baseline/decisive controls continue. Flux author repairs are queued after this original review seals. |
+| Author backlog_batch_contract; original reviewer backlog_8001_review | #7883/#7900/#7902/#7904 sea and corner criteria | Separate author active: complete source read and narrow runner repairs drafted, prose/input freeze next. All 108 original checks/results and historical cutoff failures remain in scope. |
+| Author backlog_draft_triage queued after relaxation review; original reviewer backlog_batch_contract | #7874/#7878 free and interacting flux-sector selection | Original review sealed with 10 P2 and one P3 findings. Root verified 131 artifacts, complete maps and all 13 claim surfaces. Separate author repairs queued; no acceptance yet. |
+| Original reviewer backlog_8001_review | #7879/#7881/#7885 vacuum and energy response | Checkpointed for walls confirmation after 73 passing original checks and decisive provisional domain/force/seam-map findings. Complete original review remains. |
 | Reconciliation complete | Twenty-nine direct landings and 110 other closures | All 139 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
