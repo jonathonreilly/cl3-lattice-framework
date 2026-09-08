@@ -1,0 +1,5 @@
+# Final shadow-guard delta review
+
+PASS for final pre-execution source freeze43665a2d553f09e568d7c6ea53284e3f1b6b70acad0a0e7d906546cda5cb386d. Complete changed validator/pilot and plan delta read. Both entrypoints now require isolated Python before optional imports. The validator rejects unlisted local modules and package directories, verifies all source/runtime bytes, and the pilot checks the loaded NumPy origin/version and imported NumPy file paths against the bound runtime. The actual negative-control receipt rejects numpy.py, runpy.py and a numpy package before any spectral call; nonisolated invocation is rejected. Independent final isolated -OO hash-only preflight passed. The prior mathematical review remains unchanged.
+
+The96-matrix/grid calculation is unchanged and still unlaunched. External whole-attempt30s/384MiB watchdog, one-thread variables and root execution authorization remain required. macOS shared-cache/backend binary exclusions remain explicitly disclosed. No eigensolver or integration was executed during this review.
