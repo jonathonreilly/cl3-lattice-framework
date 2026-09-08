@@ -1,0 +1,20 @@
+[
+  {
+    "mutation": "phase",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/tmpy6thtn9_/scripts/check.py\", line 29, in <module>\n    ck('fullsuccesscolumns',eq(Q@Vin,Vout@K));ck('completeinstrument',eq(Vin.conj().T@(Q+F)@Vin,np.eye(4)))\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/tmpy6thtn9_/scripts/check.py\", line 22, in ck\n    if not bool(v):raise AssertionError(k)\n                   ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: fullsuccesscolumns\n",
+    "actual_source_replacement": [
+      "K=Vout.conj().T@Q@Vin",
+      "K=1j*(Vout.conj().T@Q@Vin)"
+    ]
+  },
+  {
+    "mutation": "CHSH",
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/tmpoxyndjo2/scripts/check.py\", line 59, in <module>\n    ck('actual_CHSH_matrix',eq(cor,np.array([[1,1],[1,-1]])/np.sqrt(2)))\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/tmpoxyndjo2/scripts/check.py\", line 22, in ck\n    if not bool(v):raise AssertionError(k)\n                   ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: actual_CHSH_matrix\n",
+    "actual_source_replacement": [
+      "setting(2,-np.pi/8)",
+      "setting(2,np.pi/8)"
+    ]
+  }
+]
