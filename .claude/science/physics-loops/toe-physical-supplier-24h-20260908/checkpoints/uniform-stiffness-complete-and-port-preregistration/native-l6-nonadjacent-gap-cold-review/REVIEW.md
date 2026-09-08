@@ -1,0 +1,9 @@
+# Prospective rank-four evaluator review
+
+Read complete core, pilot, prepare, verify, freeze, protocol,25-rowplan and predecessor-adjacent core. All8c771 source/dependency/runtime pins verified; no core import, native gap call or cost execution. Independent reconstruction matches all25 lexicographic non-singleton selections exactly, preserving duplicate masks across cases. Prior complete adjacent baseline/Newton proof and new independent census/rank-four proof reviews are explicitly reused.
+
+The new FF/GG matrices reconstruct the row0/whitecenter perturbation; residual rem rejects support outside that structure. U=[F,BG] and4x4 C produce the correct full Gram change. RU and(UtR²U) use exact Fraction products; integer NumPy matrix products remain far below int64 range on this fixed108-dimensional sparse domain. Shifted baseline inverse and every physical case's full Gram and4x4 inverse residual are explicitly checked during the proposed run. No eigensolver or floating spectral proof is used. Exact Fraction positivity survives negative values without tuning. Singleton lowerroot is downward and restricted to the separately proved parity sector.
+
+Singleattempt fresh external output, isolated pinned interpreter, fourthread settings,29inner alarm and external30s384 watchdog contract are clear. Partial cases/failure rows retained; no full scan authorized. Original checker's no imported alarm reset remains true in core. Runtime closure includes all listed Python/NumPy source/extensions; OS/shared-cache boundary is disclosed.
+
+Minor predata accounting clarification requested: protocol promises separately reported file-I/O cost, while case seconds stop before write and overallseconds includes it. Require either an explicit I/O timer or honest unallocated-overhead wording, preserving fullcost pricing before forecast. Mathematical/source PASS otherwise; final sourcehash confirmation after that narrow correction.

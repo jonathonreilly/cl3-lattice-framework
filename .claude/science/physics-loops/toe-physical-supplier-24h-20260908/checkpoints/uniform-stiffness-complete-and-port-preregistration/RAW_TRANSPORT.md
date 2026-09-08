@@ -1,0 +1,1 @@
+The24 original NODES.jsonl streams are preserved losslessly as canonical RAW_CANDIDATES/jobXX.jsonl.gz. MANIFEST binds compressed and decompressed hashes and sizes. All original RESULT/phase receipts remain beside them. The370541230bytes original data are represented by111210914bytes gzip, checked by complete decompression before acceptance. No scientific row was omitted.

@@ -1,0 +1,13 @@
+# Twenty-sixth campaign checkpoint
+
+Updated 2026-09-08T22:50:13.628376+00:00. The48-hour campaign remains active through2026-09-10 10:27:17UTC, subject to usable quota. Twenty science PRs are open; none merged or formally audit-ratified.
+
+The decisive complete density certificate PASSED. Every one of24576 folded nodes (196608 original-grid points) received exact residual/Gram/rational-square-root certification, then an independently implemented exact replay. All24 replays and independent aggregate passed. Root acceptance0255f6ed reconciles the entire984.06second shell run plus40seconds prior charge against3600seconds; sampled process-tree peak188841984bytes is below384MiB. Allfive costs remain positive after rigorous quadrature error. The exact rounded floors are d_*>=17/1000 and delta_inf>=3/50 at unit auxiliary hopping.
+
+This discharges the numerical premise for uniform cubic local-defect stiffness. Within the supplied U0 model, finite strictness covers the finite small-size remainder. Direct native annealed reflection positivity additionally gives low-temperature joint-defect and connected-set bounds. Explicitly M>=32 and beta*h>=200 give kappa>=3h/800; beta*h>=14000 gives tail min(1,4*(3/4)^ell). These are conditional-support for a supplied Hamiltonian/ensemble, not a TOE, phase, nonzeroU extension or winding-gap claim.
+
+Canonical note bed02, primary44d346 and37file freezecbb782 are complete and cold-reviewed2626766e. The final portable replay remains UNEXECUTED, with a frozen165.077second forecast under180seconds384MiB and one isolated baseline. Rootdriver1f5e17 and intended math-mutation/CLI controls are preserved before execution. Raw candidate evidence is losslessly gzip-compressed111210914bytes from370541230bytes with both hashes verified; no rows were omitted. This checkpoint must be exactly remote-verified before that run.
+
+The next independent fronts are ready for bounded probes: L6nonadjacent rank-four gap pilot97826 (25fixed geometry-selected cases, no fullscan), root4de40; and exact L4third-order vacuum vertex1085,30 rational solves in32-dimensional parity space, cold469e PASS but still unlaunched pending root contract. A nonzero three/five-particle component would test whether simple linear hybridization is sufficient.
+
+Disk has about63GiB free and45 inactive worktrees removed after exact remote preservation checks. Worthwhile unique evidence must reach remote before worktree deletion; unworthy artifacts may be discarded with a receipt. Usage75percent consumed,25percent remaining; no reset credit used. Snapshot 429 files,121293357bytes. Read STATE.yaml and STATUS.md over SSH. Continue campaign beyond this checkpoint.
