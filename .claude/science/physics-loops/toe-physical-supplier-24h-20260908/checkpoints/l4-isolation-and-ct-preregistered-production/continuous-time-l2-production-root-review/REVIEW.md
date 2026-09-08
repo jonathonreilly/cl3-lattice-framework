@@ -1,0 +1,7 @@
+# Root before-data review and fixed launch authorization
+
+Root read complete initial3793 protocol/producer/analyzer/launcher and all repaired555f source differences, deterministic controls, preflight and freeze. The five completeness omissions were corrected before any scientific sampling; the original freeze remains intact. Independent full protocol review8a014383 and477 exact/deterministic predicates PASS. Root accepts freeze555f59fa753ff6718361dbdd33520d1a1e952db77cf26d06960e840ee1f63ad4 for exactly one fixed128-chain/32-shard calibration. No replacement, adaptive burn, optional stopping or changed acceptance rules. All results/failures retained.
+
+The study is finiteCT T=.5/2 on the864-state L2 component at V=.95. Every chain has128 measured sweeps,16 diagnostic batches,24 proposals/sweep, two prospective starts and burn16/64. Independent-chain covariance and shared derived influence terms are preserved. Scientific acceptance requires long-arm gates and start/half diagnostics plus every measured face in every chain. Short-arm results are descriptive and never selected after data. No ground-state, phase or finite-machine total-variation certificate follows.
+
+The one completed costfixture charged.6609131669974886s. Total3600s including startup/output/analysis, individual180s384MiB jobs, with external parent watchdog/receipts. Cost forecast343.592s is extrapolation only. Root external receipt must pass before accepting resource completion. Launch occurs only after remote archival of this exact preregistration. No reset credits or main landing.

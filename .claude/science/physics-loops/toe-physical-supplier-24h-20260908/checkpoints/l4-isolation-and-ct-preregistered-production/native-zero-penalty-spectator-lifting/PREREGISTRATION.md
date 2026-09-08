@@ -1,0 +1,5 @@
+# Prospective spectator-selection investigation
+
+Root supplied the proposed order-four exclusion using electric cuts and active parity, with order five as the first cut-size possibility. Before finite controls: derive all returning-word selection rules in a fixed link-X representative; use reduced resolvents and spectral-projector normalization, not just raw paths. Prove that cuts of size at most ten on even rectangular cubic tori of extents at least four are singleton cuts or adjacent-pair cuts. Test the additional observation that a ten-edge adjacent-pair cut cannot be composed from five incident edge pairs; six may suffice using the internal edge twice. No nonzero coefficient, convergence radius, global flux isolation or actual lifting claim is preregistered.
+
+Finite controls will enumerate small vertex subsets and the incident-pair matching obstruction, and independently test active/spectator parity in a small exact Clifford representation. They will not enumerate the cubic Hilbert space or sample physics. The graph proof, not finite fixtures, will cover arbitrary subsets.

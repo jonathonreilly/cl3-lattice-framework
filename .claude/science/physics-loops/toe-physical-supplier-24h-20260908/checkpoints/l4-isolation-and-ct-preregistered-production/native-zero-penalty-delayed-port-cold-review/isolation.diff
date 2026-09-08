@@ -1,0 +1,21 @@
+--- 
++++ 
+@@ -1,8 +1,9 @@
+ from itertools import product,combinations
+ from fractions import Fraction
+ from pathlib import Path
+-import json,time,signal,resource
+-signal.alarm(180);start=time.monotonic();checks=0
++import json,time,signal,resource,sys
++if __name__=='__main__':signal.alarm(180)
++start=time.monotonic();checks=0
+ def need(c,s):
+  global checks
+  checks+=1
+@@ -54,4 +55,5 @@
+  fixtures.append({'label':label,'flipped_edges':flips,'wrong_basic_cycles':wrong,'variance':variance,'nonzero_offdiagonal':len(off)})
+ need(Fraction(128,8*144*12)==Fraction(1,108),'concavity slack')
+ need(Fraction(1,108)/4==Fraction(1,432),'native energy factor')
+-print(json.dumps({'checks':checks,'status':'PASS','fixtures':fixtures,'seconds':time.monotonic()-start,'rss_mib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1048576,'scope':'Exact integer square matrices and basic flux controls; no all-sector eigensolver'},indent=2))
++out={'checks':checks,'status':'PASS','fixtures':fixtures,'seconds':time.monotonic()-start,'rss_mib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024),'scope':'Exact integer square matrices and basic flux controls; no all-sector eigensolver'}
++if __name__=='__main__':print(json.dumps(out,indent=2))

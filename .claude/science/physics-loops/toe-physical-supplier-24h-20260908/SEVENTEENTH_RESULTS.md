@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Seventeenth campaign checkpoint
 
 UTC 2026-09-08T19:58:59.386705+00:00. Active48-hour campaign ends2026-09-10 10:27:17UTC, subject to usable quota. Seventeen review PRs8036–8052 open; no main landing or formal audit verdict.
 
@@ -11,5 +11,3 @@ CT cost fixture40993 completed once, whole charged.6609131669974886s, with indep
 Four more inactive worktrees were removed after exact remote-head verification, bringing campaign removal count39. All useful unlanded evidence remains on open PR/archive branches; only regenerable ignored graphs/locks/bytecode were discarded.63GiBfree. Recovery receiptFOLLOWUP_2000.json. Original dirty workspace and other worker Projects checkout untouched. Lock refreshed through21:54:53UTC. Last quota53%weeklyused; no reset redemption authorized.
 
 Snapshot180files,1672059bytes, no thirdpartyPDF or bytecode. Continue useful work after checkpoint; read STATE.yaml and this report for SSH handoff.
-
-Resume STATE.yaml and SEVENTEENTH_SHA256.json.

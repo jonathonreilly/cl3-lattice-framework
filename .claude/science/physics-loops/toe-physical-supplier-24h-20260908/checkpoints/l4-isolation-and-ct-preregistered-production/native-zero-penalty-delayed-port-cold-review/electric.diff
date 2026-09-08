@@ -1,0 +1,19 @@
+--- 
++++ 
+@@ -2,7 +2,8 @@
+ from itertools import product,combinations
+ from fractions import Fraction as F
+ import json,time,signal
+-signal.alarm(180);start=time.monotonic();n=0
++if __name__=='__main__':signal.alarm(180)
++start=time.monotonic();n=0
+ def need(c,m):
+  global n
+  if not c:raise RuntimeError(m)
+@@ -35,4 +36,5 @@
+  if name=='K4':need(set(vals)=={F(3)},'K4 scalar E/2')
+  rows.append({'graph':name,'diagonal_fixed_flux_values':list(map(str,vals)),'off_flux_pair_terms':sum(m not in cuts for m in pairterms)})
+ need(rows[1]['off_flux_pair_terms']>0,'not all D scalar')
+-out={'checks':n,'rows':rows,'seconds':time.monotonic()-start,'scope':'actual L4 all960 incident-pair deletions and exact small-graph gauge-parity compressions; no sampling'};Path(__file__).with_name('RESULT.json').write_text(json.dumps(out,indent=2)+'\n');print(out)
++out={'checks':n,'rows':rows,'seconds':time.monotonic()-start,'scope':'actual L4 all960 incident-pair deletions and exact small-graph gauge-parity compressions; no sampling'}
++if __name__=='__main__':print(json.dumps(out,indent=2))

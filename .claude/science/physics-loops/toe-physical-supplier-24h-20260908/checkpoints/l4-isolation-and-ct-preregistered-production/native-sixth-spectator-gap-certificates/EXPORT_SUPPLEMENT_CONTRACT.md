@@ -1,0 +1,1 @@
+After initial internal-bridge certificates were computed, checker supplied exact PREFIXES.json7a154126. Prospectively check exact coordinate/edge equality and certify the first listed k=3 prefix for each external bridge (five fixed representatives), without selecting by resulting bound. No complete-prefix scan or coefficient solve.
