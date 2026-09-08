@@ -1,0 +1,20 @@
+--- 
++++ 
+@@ -79,7 +79,7 @@
+             z |= 1 << e
+     cases.add(z)
+ cases |= {z ^ (1 << 192) - 1 for z in list(cases)}
+-rawpath = pathlib.Path(__file__).resolve().parents[1] / '.claude/science/physics-loops/native-u1-pair-and-all-sector-support-20260908/inputs/GLOBAL_D4_SEED.json'
++rawpath = pathlib.Path('/private/tmp/toe-native-u1-pair-and-all-sector-support-20260908/.claude/science/physics-loops/native-u1-pair-and-all-sector-support-20260908/inputs/GLOBAL_D4_SEED.json')
+ raw = json.loads(rawpath.read_text())
+ cases |= {int(r['initial_bits'], 2) for r in raw['witnesses']}
+ 
+@@ -90,7 +90,7 @@
+     orientation = 1 if b < wv else -1
+     bit = z >> e & 1
+     if bit == 0:
+-        terms = [(1, ((b, 1, True), (wv, 1, False))), (1, ((b, -1, False), (wv, -1, True))), (-1, ((b, 1, True), (wv, -1, True))), (-1, ((b, -1, False), (wv, 1, False)))]
++        terms = [(1, ((b, 1, True), (wv, 1, False))), (1, ((b, -1, False), (wv, -1, True))), (1, ((b, 1, True), (wv, -1, True))), (-1, ((b, -1, False), (wv, 1, False)))]
+     else:
+         terms = [(1, ((b, 1, False), (wv, 1, True))), (1, ((b, -1, True), (wv, -1, False))), (-1, ((b, -1, True), (wv, 1, True))), (-1, ((b, 1, False), (wv, -1, False)))]
+     out = {}

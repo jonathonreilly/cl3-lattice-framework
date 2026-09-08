@@ -1,0 +1,20 @@
+--- 
++++ 
+@@ -64,7 +64,7 @@
+     r = Q(y)
+     req(all((abs(v) <= 1 for v in r)), 'low support')
+     want = q.copy()
+-    want[a] -= 1
++    want[a] += 1
+     want[b] += 1
+     req(r == want, 'charge increment')
+     req(native(y, k) * phase == 1, 'native involution')
+@@ -152,7 +152,7 @@
+     u, c = join(y, ice)
+     req(len(t) + len(u) <= sum((v * v for v in Q(x))) * 63 // 2 + 192, 'full route bound')
+     rows.append(dict(initial_bits=format(x, '0192b'), D=sum((v * v for v in Q(x))), ice_bits=format(y, '0192b'), reduction=t, pairs=p, ice_join=u, cycles=c))
+-source = Path(__file__).resolve().parents[1] / '.claude/science/physics-loops/native-u1-pair-and-all-sector-support-20260908/inputs/GLOBAL_D4_SEED.json'
++source = Path('/private/tmp/toe-native-u1-pair-and-all-sector-support-20260908/.claude/science/physics-loops/native-u1-pair-and-all-sector-support-20260908/inputs/GLOBAL_D4_SEED.json')
+ w = json.loads(source.read_text())
+ x = int(w['witnesses'][0]['initial_bits'], 2)
+ star = w['star']

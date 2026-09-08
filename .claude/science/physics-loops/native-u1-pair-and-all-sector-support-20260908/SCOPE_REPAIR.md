@@ -1,0 +1,1 @@
+Root canonical review requested three narrow scope clarifications: Part I alone does not prove connectivity; only the explicit phase-decorated basis bijections preserve support, not arbitrary unitaries; Part I supplies the separate off-D phase proof needed by the support argument. Original research and canonical bytes are preserved. No helper or scientific fixture changed.
