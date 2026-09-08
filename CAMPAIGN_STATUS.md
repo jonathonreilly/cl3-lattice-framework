@@ -53,13 +53,15 @@ joint-law selection remain open.
 1. The corrected support/readout and twelve-scope DK/OS successor are now
    on main alongside the earlier reviewed science. BACKLOG_STATUS.md and the
    canonical reconciliation hold exact current counts and source boundaries.
-   Role-law #7939/#7977/#7982 has a sealed original review with fourteen findings;
-   backlog_batch_contract authors repairs and backlog_draft_triage retains final
-   confirmation. backlog_8001_review resumes original #5966 source/premise work;
+   Role-law #7939/#7977/#7982 has a sealed author correction with fourteen findings
+   addressed and genuine final checks 57/62/63 all passing. Wave29 is composed;
+   backlog_draft_triage performs original-session final confirmation before the
+   combined gate. backlog_8001_review resumes original #5966 source/premise work;
    no prior partial preparation grants PASS. Root prepares provisional Cycle904
-   fixes while that review continues. backlog_draft_triage reviews the bounded
-   original nonabelian plaquette pair #7908/#7914, with safe-boundary priority
-   for ready role-law confirmation. Sixty-six closed scopes
+   fixes while that review continues. Original nonabelian #7908/#7914 review is
+   sealed with twelve finding groups; root prepares corrections. A separate
+   owner-requested blind Astra-low/Sol-xhigh pilot reviews the same original source
+   under identical instructions; see REVIEWER_MODEL_PILOT.md. Sixty-six closed scopes
    remain pending at six open successors. Fixed 254 membership, all transitive
    reservations and formal audit deferral remain.
 2. For field response, choose the actual physical source/sector and estimator
