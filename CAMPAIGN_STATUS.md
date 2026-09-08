@@ -43,18 +43,18 @@ including all draft PRs; see [BACKLOG_STATUS.md](BACKLOG_STATUS.md).
   physical flux-sector claim still needs its sector/branch and limit proof.
 
 A suggested Born proof target was screened out because main already contains
-a more general characterization on matching menus. The complete original review of #7990 confirms an indexed-effects versus Record-content mismatch
-and unsupplied joint-law assumptions. Narrow repairs preserve its conditional mathematics.
+a more general characterization on matching menus. The complete original review of #7990 found an indexed-effects versus Record-content mismatch
+and unsupplied joint-law assumptions. Its reviewed corrections are now on main:
+conditional indexed-menu mathematics is preserved, while physical probability and
+joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. Matter/U1 corrections are now on main. Finish pure-link and #7990 corrections
-   and their original reviewers' confirmations. The #6371 selector/shell original
-   review has found concrete race-closure and test-coverage defects; freeze findings
-   before narrow repair. #6358 remains prepared; #5966 has partial source/first-hop
-   preparation with an old Record-additivity premise requiring reconciliation.
-   Closure/content reconciliation is complete; 83 pending closed scopes remain
-   obligations at their nine open successors. Preserve all premise and reserved-source holds.
+1. Pure-link and Born-menu corrections are on main. Repair the nine frozen #6371
+   selector/shell findings; finish original #6358 joint-instrument source/closure
+   review. #5966 retains partial preparation and its old Record-additivity premise
+   hold. Closure reconciliation is complete; 83 pending closed scopes remain at
+   nine successors. Preserve every reservation and fixed original 254 membership.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
