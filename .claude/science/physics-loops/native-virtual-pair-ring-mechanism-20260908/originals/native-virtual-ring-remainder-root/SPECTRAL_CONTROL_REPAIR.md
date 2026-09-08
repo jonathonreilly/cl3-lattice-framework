@@ -1,0 +1,1 @@
+The first numerical control completed its mathematical predicates but failed JSON serialization because the mutation-failure count became NumPy int64. Old source is preserved. Convert that count increment to Python int; no mathematical operation, fixture or tolerance changed. The unchanged finite control is rerun to produce a readable receipt.

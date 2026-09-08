@@ -1,0 +1,1 @@
+Before new scalar control execution: reproduce exact endpoint remainder terms and sum1286/147, enumerate the parity-surviving Neumann words through order3, and check the conservative9/32<1 conversion. These verify finite algebraic components only, not the spectral theorem or numerical eigenvalue error. No floating spectral helper is loaded.

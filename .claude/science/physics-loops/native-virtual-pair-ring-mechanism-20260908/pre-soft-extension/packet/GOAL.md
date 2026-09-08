@@ -1,0 +1,1 @@
+Package the actual native virtual-pair ring mechanism, its missing RK diagonal through uniform sixth order, and the finite fourth-order error bound. No additional science selection is made during this port.

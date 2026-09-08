@@ -1,0 +1,3 @@
+# Separate graph compatibility confirmation
+
+Manifest SHA9425ff5d6a0276922866d4f9238cb07abd7044c32415b275179ca239b88d4d40 directly compared with worktree HEAD. Exactly one new node, native_virtual_pair_ring_mechanism_note_2026-09-08, with out-degree2 and deps_hash ab15a057501e. All previous node entries remain byte-equivalent as JSON values; global edge count increases by2. Complete textual diff also read. Mathematical note remains ab34c4dd2dce102b8fc397e6b298861c4616467b910ee24d9ede4d1df533e9f2. Compatible with prior source review; no graph execution, audit verdict, or publication is claimed here.

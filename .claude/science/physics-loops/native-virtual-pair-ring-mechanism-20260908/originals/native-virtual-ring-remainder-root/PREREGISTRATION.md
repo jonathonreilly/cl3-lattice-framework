@@ -1,0 +1,3 @@
+# Finite fourth-order approximation error
+
+Root analytical stretch: supply an explicit finite-volume spectral error for the H0=UD plus native projected A perturbation, after independent fourth-order coefficient proofs. Use B=sum|lambda| and a=|g|B<=U/4. Exact Schur equation, PVP=0 and scalar second-order/normalization kernels; exploit parity cancellation of odd V words. Seek an O(a^6/U^5) distance bound for the isolated low-energy cluster versus the fourth-order Hermitian operator. Do not claim volume-uniform usefulness, matching multiplicities without proof, or a physical small-coupling selection. No stochastic production; optional exact rational inequalities and small literal finite-matrix controls only, <=180s384MiB.

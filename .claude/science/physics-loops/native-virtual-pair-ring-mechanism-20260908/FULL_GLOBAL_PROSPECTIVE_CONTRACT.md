@@ -1,0 +1,1 @@
+Before execution: adapt the frozen four-background native Pauli recursion by retaining every forest state. Test exact path junction counts 9/12/4 per middle edge, E6=-(35+2/(2+4m))/32, and total -1053N/40. These expectations come from the reviewed full-carrier proofs, not fitted output. Preserve the hard-domain predecessor. No off-diagonal sixth-order or phase inference.

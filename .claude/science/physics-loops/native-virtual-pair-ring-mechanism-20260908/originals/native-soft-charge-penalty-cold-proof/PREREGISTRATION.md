@@ -1,0 +1,2 @@
+# Full-carrier prospective probe
+Before reading root candidate, remove low projection and retain actual native Clifford phases, all degree-charge energies U sumQ². Derive fourth-order ring/diagonal and sixth-order uniform diagonal by exact active-forest recursion and independent Schur classification. Every active bit state is retained, including D6/10. Fixed exterior ice bits define energies. Compare all local patterns, include folded terms; no two-species low-domain map or arbitrary-sign-free conclusion. Finite norm error must be checked separately. No order8 execution.

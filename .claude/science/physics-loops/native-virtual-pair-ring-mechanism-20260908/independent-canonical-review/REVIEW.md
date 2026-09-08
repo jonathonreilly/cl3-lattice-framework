@@ -1,0 +1,15 @@
+# Canonical full-carrier virtual-ring review
+
+Disposition: PASS for the declared finite conditional mathematics and canonical source/runner port. This is an independent review, not an audit verdict or phase certificate. No author files were edited and no production or canonical rerun was performed in this final receipt check.
+
+The complete note ab34c4dd2dce102b8fc397e6b298861c4616467b910ee24d9ede4d1df533e9f2 and primary 8120bf9307ff483b351fe5360082b724f1b041c534e0a22abbb9f21b2d4256ef were read. All seven helpers were covered by full reading or complete port diffs against previously fully reviewed originals. READ_HASHES.json binds current files and inspected evidence. Earlier independent fourth-order, sixth-order, full-carrier and remainder derivations are reused explicitly; this is not a claim of seven new independent proofs.
+
+The full carrier is correctly distinguished from the hard low-charge projection. Additional equal-bit intermediate D=6 paths cancel at fourth order; the signed, orientation-dependent four-cycle coefficient and scalar survive. Length-four winding cycles are retained. The canonical direct-rotation convention and forest argument justify the sixth-order diagonal calculation: D=2,6,10 intermediates change the uniform scalar to -1053 N/40, versus -207 N/8 in the hard model, difference -9 N/20. Neither a flippability potential nor a full sixth-order off-diagonal formula is asserted.
+
+The finite remainder uses the actual gap 2U above ice and a=|g| sum |lambda_e| <= U/4. The stated a^6/U^5 result is a one-sided eigenvalue-to-spectrum distance for the ice-descended cluster. The normalization, folded contributions and resolvent-tail constant agree with the independently reviewed proof. It does not separate the entire low-charge carrier, control eigenvectors or multiplicities, or give a volume-independent approximation. The no-double two-species dictionary is not extended to charges of magnitude 2 or 3.
+
+The primary executes all seven helpers and binds their inputs, including the background fixture to fresh fourth-order output. The isolated JSON binds the present source and all eleven inputs; every listed hash was independently rechecked. Its 112489 predicates equal 55576+456+182+14+55576+499+186. These are finite controls, not exhaustive Hilbert-space or analytic-tail validation. Helper alarms are guarded for standalone execution and do not reset the primary alarm on import.
+
+All ten mutation source diffs and stderr receipts were inspected, and their mutant hashes verified. They fail mathematical predicates rather than a hash gate: removing native phases, replacing full support with hard support, removing feedback/folded terms, changing intermediate denominators, relaxing hard support, and changing the remainder-tail factor. The old hard-model evidence remains explicitly historical; no failure was discarded as a successful full-model test.
+
+No blocking mathematical or port issue found. Supplied Hamiltonian/penalty/couplings, the fixed carrier, finite-volume scope, and the absence of a Coulomb-phase or physical-selection conclusion remain explicit.

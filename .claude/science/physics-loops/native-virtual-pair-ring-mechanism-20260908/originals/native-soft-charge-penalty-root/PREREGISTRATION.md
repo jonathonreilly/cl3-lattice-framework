@@ -1,0 +1,7 @@
+# Remove the hard low-charge projection from the virtual-pair supplier
+
+Root candidate: use FULL native edge carrier H=U sum_v Q_v²+g sum_e lambda_e A_e, no P_low gates. Ice remains the unperturbed low band. At fourth order the alternating-ring paths are unchanged; incident same-bit repeated-edge paths now pass through D=6 instead of being refused, but their actual A phases cancel. Thus the fourth-order ring/scalar may be unchanged and the finite Schur remainder bound may still apply. This would remove one supplied projection premise from the kinetic mechanism.
+
+At sixth order, three-edge path triple states formerly refused are now present. Their D is2,6,10 according to0,1,2 equal-bit junctions. Candidate forest recursion replaces hard indicator a_alt in E6=-(35+a_alt)/32 by2/D_triple. Uniform path counts per middle edge are9,12,4 for those three cases, so weighted sum2/D is69/5 versus hard9. Candidate full-carrier H6 diagonal=-1053|vertices|g^6/(40U^5), still constant; this is UNVERIFIED until independent exact recursion/control. No offdiag6, ground phase or full-carrier U1 two-species dictionary inferred.
+
+First derive/check exact finite forest matrices and actual L4 background phases with no low refusal. Preserve the existing hard-low theorem; never silently change its domain. Bounds<=180s384MiB, no stochastic production. Root asks an independent agent to derive without relying on candidate coefficient. High value is retiring the hard projection from the supplied virtual-ring mechanism, not selecting the remaining Hamiltonian or physical coupling.
