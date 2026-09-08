@@ -1,0 +1,11 @@
+# Independent comparison of root local proof
+
+PASS for root DERIVATION113e3f03aba2285d5554b0f2dba25cd5300d00823edf5eae23dc5ecca87bec74, read completely after native761aaa6cc6a500a9a96ed66ddf6afce88cf05bb738b1550a4d6d6a5a375378fe froze. The two proofs use different norms/majorants: root loses cell-support exponential weights in five fixed stages; native bounds maximum edge-support size and uses a single Lie radius. Both are volume-independent and deliberately impractical quantitative regimes.
+
+Checked root's overlapping-pair commutator bound4/[e delta], m-fold loss and factorial cancellation, coefficient majorant48j, available norm losses k_(j-1)-k_j=1/12, final7/12 to1/2 analytic disk, exact homological sign, and local Cauchy tail. Previous S_i are all controlled at the needed higher norm; no inverse operation enlarges strong support. The polynomial exponential is an exact finite-volume unitary for real z. Its infinite Lie potential series converges in the lower norm with constants independent of volume.
+
+The ice gauge argument is sound specifically at fourth order: lower odd terms vanish and K2 is scalar. It does not authorize carrying the sixth diagonal from canonical direct rotation into this frame. The required all-extent-four winding terms remain included. The isolated global Riesz neighborhood used only to compare formal coefficients can shrink with volume without invalidating the coefficient identity.
+
+Root's local-dynamics paragraph is consistent with the explicit light-cone summation given in native Section5. Strong support keeps rotated remainder terms local under UD; all charge-star rotations commute, so even an arbitrary observable's free-D support grows once, not with Ut. The resulting polynomial-time estimate applies to consistently dressed observables/states and is distinct from a claim for bare ice or global band isolation. No correction requested. Native's more detailed constants in its dynamical lemma are support/geometry constants, not practical numeric onset values.
+
+Own40 exact controls independently verify the finite recursion on an actual three-edge native forest (including nontrivial equal-D subspaces), all five coefficient charge commutators, ice coefficients and wrong-inverse-sign adverse. They are finite algebra evidence, not proof by testing of locality or dynamics.

@@ -1,0 +1,7 @@
+actual_current_surface_status: conditional-support
+conditional_surface_status: uniform local theorem for supplied Hamiltonian and dressed preparation
+trace_class: frontier_discovery
+proposal_allowed: false
+proposal_allowed_reason: physical Hamiltonian/preparation selection remains supplied
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
