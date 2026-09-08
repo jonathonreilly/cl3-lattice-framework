@@ -1,0 +1,3 @@
+# Prospective noisy preparation bound
+
+Derive a volume-independent perturbation bound for a product of independent one-edge stochastic CPTP channels on arbitrary correlated ice states, followed by the actual supplied ramp and hold. Use channel telescoping and a capped local Lieb–Robinson influence sum. Do not impose an ice-preserving property on the channels. Candidate sufficient cost is p(1+epsilon*time)^3, hence p epsilon^-9 at natural ring time. Investigate whether endpoint dressing or spatial summation forces logarithms. A faster ice-only cone cannot be assumed for error-created charges. Any finite check will test channel identities only, not establish a dynamical scaling theorem.

@@ -1,0 +1,3 @@
+# Reduced deterministic factory and checkpoint controls
+
+Before execution compare fixed supplied RNG seeds between literal reference RK/Q construction and the inductive factory on L2/L4, n4/16, V0/.95, RK2. These are finite code controls, not equilibrium chains. Compare complete states/Nf/witness, full constructor/check, and three fixed face updates with identical variates. Save/load real files and continue identical tapes. Rehash malformed cache/state payloads so integrity hashes alone cannot mask missing mathematical guards. Reject missing witness, wrong metadata, nonfinite and underflowing message products. No L8 timing profile is executed by these tests.

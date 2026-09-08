@@ -1,0 +1,38 @@
+--- reference.py
++++ guarded.py
+@@ -2,6 +2,16 @@
+ from itertools import product, combinations
+ from fractions import Fraction
+ import math
++
++
++def guarded_product(t,h):
++ f=float(t)
++ if not math.isfinite(f) or f<0 or not math.isfinite(h) or h<0:raise ValueError('message entry')
++ if t>0 and f==0:raise ValueError('transition underflow')
++ z=f*h
++ if f>0 and h>0 and z==0:raise ValueError('message product underflow')
++ if not math.isfinite(z):raise ValueError('message overflow')
++ return z
+ 
+ class Geometry:
+  def __init__(self,L):
+@@ -63,13 +73,15 @@
+   if len(uniforms)!=len(self.states) or any(not math.isfinite(u) or not 0<=u<1 for u in uniforms):raise ValueError('variates')
+   O,N,T=self.fiber(p);h=[[1.]*len(z) for z in O]
+   for i in range(len(T)-1,-1,-1):
+-   h[i]=[sum(float(t)*h[i+1][j] for j,t in enumerate(row)) for row in T[i]]
++   h[i]=[sum(guarded_product(t,h[i+1][j]) for j,t in enumerate(row)) for row in T[i]]
+    scale=max(h[i])
+    if not math.isfinite(scale) or scale<=0:raise ValueError('message normalizer')
+-   h[i]=[z/scale for z in h[i]]
++   scaled=[z/scale for z in h[i]]
++   if any(z>0 and q==0 for z,q in zip(h[i],scaled)):raise ValueError('message scaling underflow')
++   h[i]=scaled
+   selected=[]
+   for i,u in enumerate(uniforms):
+-   weights=h[i] if i==0 else [float(T[i-1][selected[-1]][j])*h[i][j] for j in range(len(O[i]))]
++   weights=h[i] if i==0 else [guarded_product(T[i-1][selected[-1]][j],h[i][j]) for j in range(len(O[i]))]
+    total=sum(weights)
+    if not math.isfinite(total) or total<=0:raise ValueError('conditional normalizer')
+    target=u*total;cum=0.;pick=None

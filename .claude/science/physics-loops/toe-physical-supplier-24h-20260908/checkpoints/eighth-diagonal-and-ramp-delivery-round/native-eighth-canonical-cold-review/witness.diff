@@ -1,0 +1,34 @@
+--- 
++++ 
+@@ -1,9 +1,15 @@
++"""Portable exact H8 control, adapted from preserved research source."""
++AUDIT_TIMEOUT_SEC=180
++import argparse, signal
++if __name__=='__main__':
++ signal.alarm(AUDIT_TIMEOUT_SEC)
++ parser=argparse.ArgumentParser();parser.add_argument('--json',action='store_true');parser.parse_args()
+ from itertools import product
+ from fractions import Fraction as F
+ from pathlib import Path
+ import json,hashlib,time,resource,sys,signal
+-signal.alarm(180);start=time.monotonic();checks=0
+-root=Path('/private/tmp/toe-24h-probes-20260908/native-eighth-global-reduction-root')
++start=time.monotonic();checks=0
++root=Path(__file__).resolve().parents[1]
+ def req(v,m):
+  global checks
+  checks+=1
+@@ -47,10 +53,10 @@
+    else:raise RuntimeError('no successor')
+  f=[r['F'] for r in snapshots];q=[F(r['Q']) for r in snapshots]
+  determinant=(f[1]-f[0])*(q[2]-q[0])-(f[2]-f[0])*(q[1]-q[0]);req(determinant!=0,'nonaffine exact determinant')
+- original=next(r for r in json.loads((root/'RESULT.json').read_text())['results'] if r['L']==L)
++ original=next(r for r in json.loads((root/'outputs/native_eighth_global_2026_09_08.json').read_text())['results'] if r['L']==L)
+  for i,r in enumerate(snapshots):req(r['sha256']==original['snapshots'][i]['seed_sha256'],'independent original-state hash match')
+  out.append(dict(L=L,edge_order='coordinate vertex lexicographic then positive axis0,1,2',snapshots=snapshots,legal_flip_tapes=tapes,determinant=str(determinant)))
+ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024);req(time.monotonic()-start<180 and 0<rss<384,'resources')
+-r=dict(checks=checks,results=out,seconds=time.monotonic()-start,rss_mib=rss,reviewed_source_sha256=hashlib.sha256((root/'check.py').read_bytes()).hexdigest())
+-Path(__file__).with_name('RESULT.json').write_text(json.dumps(r,indent=2)+'\n')
++r=dict(checks=checks,results=out,seconds=time.monotonic()-start,rss_mib=rss,reviewed_source_sha256=hashlib.sha256((root/'scripts/native_eighth_global_2026_09_08.py').read_bytes()).hexdigest())
++(Path(__file__).resolve().parents[1]/'outputs/native_eighth_witness_2026_09_08.json').write_text(json.dumps(r,indent=2)+'\n')
+ print(json.dumps(dict(checks=checks,seconds=r['seconds'],witnesses=[dict(L=x['L'],features=[(s['F'],s['Psum'],s['domainwalls']) for s in x['snapshots']],determinant=x['determinant'],tapes=x['legal_flip_tapes']) for x in out]),indent=2))

@@ -1,4 +1,4 @@
-# Physics campaign status
+# Fourteenth campaign checkpoint
 
 UTC 2026-09-08T18:26:41.757847+00:00. Deadline 2026-09-10 10:27:17 UTC. Campaign continues.
 
@@ -11,5 +11,3 @@ A useful robustness bound is archived: product one-edge preparation channels at 
 L8oldproduction remains a reported sampling failure; no replacements or paired V0 launch. Whole-time finiteG face sampler has valid conditional proof and reduced deterministic initializer/checkpoint controls. One30s384MiB cost profile is frozen but UNLAUNCHED pending independentreview. Root found unpriced startup/overhead; originalfreeze preserved and repaired beforedata. A separatecontinuous-time target may permit local-event updates; its quotient/2x2transfer proof is archived, bridge implementation/cost/mixing unproved.
 
 Freshfetch confirms main e4b4fd46dbdc075a218387a0c23a1a2739f4f01c andplanning5a6700e06d60472123f60340153c7ca9577e9c00 unchanged. Disk62GiBfree; no deletionneeded. Useful unique evidence is remote before local removal. Latestusage46%weeklyconsumed, no resetsauthorized. Snapshot179files,350458bytes; excludesbytecode andthirdpartyPDF/fulltext.
-
-Exact state and snapshot hashes: STATE.yaml and FOURTEENTH_SHA256.json. Original dirty workspace remains untouched.

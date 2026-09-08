@@ -1,0 +1,9 @@
+# Independent delivered-bit H8 witness review
+
+PASS for complete proof f2e3029ce1b5b0d9b036caa9c586ef848f55c3eed867c5b1076d64a6a32a1615, helper64a129ff06c46df382bc47bfde709fb36ae59116a6ee2ff005c4d11b841d310c and raw2d9810c045a82a2f9e19f661aff78c7432a64abc4cc60c07d4616d3d9da8eca4. Full sources read and hashes verified.
+
+Own standalone checker imports no author code and starts from the delivered six complete bitstrings. It constructs elementary plaquettes directly by coordinate shifts, adding straight winding cycles only forL4, instead of either author's four-step walk enumeration. All192/648 edge bits, each literal vertex degree, full cycle counts240/648, feature counts, recorded edge endpoints and legal alternating-flip tapes verify. All successors equal the full-bit XOR output, not merely matching feature triples.884 explicit predicates pass under-OO, with no stochastic sampling.
+
+L4 triples are(144,240,576),(136,208,576),(130,192,576); determinant-1769/3375. L6 triples are(324,648,1296),(320,624,1304),(317,612,1310); determinant-1769/9000. The L4 tapes are straight winding cycles; L6 tapes are elementary periodic plaquettes. Hence the counterexample exists within each exhibited ring-connected component, and L6 avoids extent-four winding effects.
+
+Together with the already independently reviewed canonical cluster coefficients and global reduction, these nonzero affine determinants refute a scalar-plus-total-flippability expression for the complete eighth-order diagonal on the stated fixed finite carrier. This now removes the pending admissibility condition in my prior combined-arithmetic review. It does not establish independent coordinates for every possible observable basis, any offdiagonal eighth coefficient, another normal-form gauge, a phase or thermodynamic magnitude. No blocker found; no canonical files edited.
