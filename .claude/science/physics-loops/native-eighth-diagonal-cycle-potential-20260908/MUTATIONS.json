@@ -1,0 +1,34 @@
+[
+  {
+    "name": "wrong_rank",
+    "exit_code": 1,
+    "old": "contour(en,hops,n)/rank",
+    "new": "contour(en,hops,n)",
+    "source_sha256": "b30398d3973aab5e0f0d3c4b8e897b3ea437d29d35735f7012399393c89092d1",
+    "failure": "RuntimeError: absolute cycle class 0101"
+  },
+  {
+    "name": "bare_X",
+    "exit_code": 1,
+    "old": "def setup(edges,bits,native=True):",
+    "new": "def setup(edges,bits,native=False):",
+    "source_sha256": "5db47db46526d055163173525452241703f4c137414f1b30a7436c0114c9f911",
+    "failure": "RuntimeError: bare X changes actual cycle value"
+  },
+  {
+    "name": "omit_folds",
+    "exit_code": 1,
+    "old": "def scalar(en,hops,fold=True):",
+    "new": "def scalar(en,hops,fold=False):",
+    "source_sha256": "91a6f0d3e543cdd43fe96611f92f4124b06d80c2da7b623940b3a710750b31bb",
+    "failure": "RuntimeError: contour versus energy feedback one"
+  },
+  {
+    "name": "wrong_path_multiplicity",
+    "exit_code": 1,
+    "old": "sum(c('path4',b[r:]+b[:r]) for r in range(4))",
+    "new": "2*sum(c('path4',b[r:]+b[:r]) for r in range(4))",
+    "source_sha256": "4027e0d6e11cab53cbc8d7f2e2fa56a25f111fabd1f3024cdbaadb314ac052bf",
+    "failure": "RuntimeError: absolute cycle class 0000"
+  }
+]

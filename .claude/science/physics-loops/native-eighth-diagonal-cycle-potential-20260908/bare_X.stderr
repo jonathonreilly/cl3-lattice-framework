@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/h8-mutant-ox4x34e1/scripts/native_eighth_diagonal_cycle_potential_2026_09_08.py", line 21, in <module>
+    with contextlib.redirect_stdout(capture):runpy.run_path(str(root/f'scripts/native_eighth_{kind}_2026_09_08.py'))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/h8-mutant-ox4x34e1/scripts/native_eighth_local_2026_09_08.py", line 102, in <module>
+    en,hx=setup(shapes['cycle4'],(0,1,0,1),False);req(contour(en,hx,8)/2!=good,'bare X changes actual cycle value')
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/h8-mutant-ox4x34e1/scripts/native_eighth_local_2026_09_08.py", line 16, in req
+    if not v:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: bare X changes actual cycle value

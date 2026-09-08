@@ -1,0 +1,27 @@
+--- 
++++ 
+@@ -1,10 +1,16 @@
++"""Portable exact H8 control, adapted from preserved research source."""
++AUDIT_TIMEOUT_SEC=180
++import argparse, signal
++if __name__=='__main__':
++ signal.alarm(AUDIT_TIMEOUT_SEC)
++ parser=argparse.ArgumentParser();parser.add_argument('--json',action='store_true');parser.parse_args()
+ from pathlib import Path
+ from fractions import Fraction as F
+ from itertools import product
+ from math import comb
+ import json,hashlib
+-base=Path(__file__).parent.parent
+-source=base/'native-full-eighth-diagonal/RESULT.json';rows=json.loads(source.read_text())['rows'];tab={(r['shape'],tuple(r['bits'])):F(r['connected8']) for r in rows}
++base=Path(__file__).resolve().parents[1]
++source=base/'outputs/native_eighth_local_2026_09_08.json';rows=json.loads(source.read_text())['rows'];tab={(r['shape'],tuple(r['bits'])):F(r['connected8']) for r in rows}
+ def c(s,b):return tab[s,tuple(b)]
+ def choose(n,k):return comb(n,k) if 0<=k<=n else 0
+ def a(b,d):return 2 if b==d else 3
+@@ -38,4 +44,4 @@
+ coef=[mat[i][4] for i in range(4)]
+ for b in w:req(sum(x*y for x,y in zip(features(b),coef))==w[b],'four-invariant decomposition')
+ out=dict(checks=checks,scalar_parts={k:str(v) for k,v in parts.items()},C_tree=str(sum(parts.values())),W={''.join(map(str,k)):str(v) for k,v in w.items()},decomposition=dict(zip(['constant','domainwalls','four_sigma_product','flippability'],map(str,coef))),input_sha256=hashlib.sha256(source.read_bytes()).hexdigest())
+-Path(__file__).with_name('RESULT.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
++(Path(__file__).resolve().parents[1]/'outputs/native_eighth_combined_2026_09_08.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))

@@ -1,0 +1,24 @@
+--- 
++++ 
+@@ -1,8 +1,14 @@
++"""Portable exact H8 control, adapted from preserved research source."""
++AUDIT_TIMEOUT_SEC=180
++import argparse, signal
++if __name__=='__main__':
++ signal.alarm(AUDIT_TIMEOUT_SEC)
++ parser=argparse.ArgumentParser();parser.add_argument('--json',action='store_true');parser.parse_args()
+ from fractions import Fraction as F
+ from itertools import product
+ import json,time,signal,resource,sys
+ from pathlib import Path
+-signal.alarm(180);start=time.monotonic();checks=0
++start=time.monotonic();checks=0
+ cache={}
+ def req(v,m):
+  global checks
+@@ -96,4 +102,4 @@
+ en,hx=setup(shapes['cycle4'],(0,1,0,1),False);req(contour(en,hx,8)/2!=good,'bare X changes actual cycle value')
+ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024);req(rss<384 and time.monotonic()-start<180,'resources')
+ r=dict(checks=checks,rows=rows,seconds=time.monotonic()-start,rss_mib=rss,scope='Full-carrier local degree-eight tables. Global motif reduction not established.')
+-Path(__file__).with_name('RESULT.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps({k:v for k,v in r.items() if k!='rows'}))
++(Path(__file__).resolve().parents[1]/'outputs/native_eighth_local_2026_09_08.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps({k:v for k,v in r.items() if k!='rows'}))

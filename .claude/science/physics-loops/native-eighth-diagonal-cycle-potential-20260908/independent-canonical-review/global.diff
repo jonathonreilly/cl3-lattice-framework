@@ -1,0 +1,26 @@
+--- 
++++ 
+@@ -1,10 +1,16 @@
++"""Portable exact H8 control, adapted from preserved research source."""
++AUDIT_TIMEOUT_SEC=180
++import argparse, signal
++if __name__=='__main__':
++ signal.alarm(AUDIT_TIMEOUT_SEC)
++ parser=argparse.ArgumentParser();parser.add_argument('--json',action='store_true');parser.parse_args()
+ """Deterministic graph identities, independent of physical H8 tables."""
+ from itertools import product,combinations
+ from collections import Counter
+ from math import comb
+ from pathlib import Path
+ import json,time,resource,sys,hashlib,signal
+-signal.alarm(180);started=time.monotonic();checks=0
++started=time.monotonic();checks=0
+ 
+ def need(ok,label):
+  global checks
+@@ -98,4 +104,4 @@
+ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024)
+ need(time.monotonic()-started<180 and rss<384,'resource cap')
+ out={'checks':checks,'seconds':time.monotonic()-started,'rss_mib':rss,'results':results,'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'scope':'Independent symbolic motif multiplicities on eight deterministic ice backgrounds; no physical H8 coefficients or stochastic evidence.'}
+-Path(__file__).with_name('RESULT.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({k:v for k,v in out.items() if k!='results'}))
++(Path(__file__).resolve().parents[1]/'outputs/native_eighth_global_2026_09_08.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({k:v for k,v in out.items() if k!='results'}))
