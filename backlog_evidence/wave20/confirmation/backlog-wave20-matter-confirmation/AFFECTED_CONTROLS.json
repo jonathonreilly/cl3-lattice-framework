@@ -1,0 +1,147 @@
+{
+  "sources": {
+    "scripts/emergent_lorentz_invariance_at_the_dirac_point_and_the_taste_census_check_2026_09_03.py": "49c0974ad1981e3319d9aa8d692f918a26b5eb428e912a5b0686c2be19bfe28f",
+    "scripts/a_record_native_staggered_mass_gap_2m_exponential_kernel_check_2026_09_03.py": "3f0e4ade7ef97d7c13b47253489c15b24f7260c39e8d8fcfcc5eb3b261d16d14"
+  },
+  "method": "Exact final definition/block execution plus independent finite rational and matrix controls; no whole baseline or large FFT/moment/parent campaign",
+  "checks": [
+    {
+      "control": "Actual E4/E5/C5 all pass on final source",
+      "verified": true
+    },
+    {
+      "control": "Real projector predicate rejects original false-positive input",
+      "verified": true
+    },
+    {
+      "control": "Actual Slater-minor mutation rejects E4",
+      "verified": true
+    },
+    {
+      "control": "Actual A4/A5/A6 pass",
+      "verified": true
+    },
+    {
+      "control": "Mass coefficient mutant rejected by actual ad-squared/orientation controls",
+      "verified": true
+    },
+    {
+      "control": "Actual F1 and F4 clean finite columns pass",
+      "verified": true,
+      "periodic_entries": 512,
+      "antiperiodic_magnitudes": 512
+    },
+    {
+      "control": "Actual off-axis corruption leaves F1 passing but F4 failing",
+      "verified": true,
+      "delta": 0.1,
+      "component": 4,
+      "cell": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "control": "Actual balanced SVD and unbalanced exception pass",
+      "verified": true
+    },
+    {
+      "control": "Actual moment counterexample and fixed-label distinction pass",
+      "verified": true
+    },
+    {
+      "control": "Exact rational positive-m moment counterexample independently derived",
+      "verified": true,
+      "mean": 1,
+      "second_moments": [
+        2,
+        3
+      ],
+      "sqrt_expectations": [
+        "1/8 + sqrt(33)/8",
+        "11/12"
+      ]
+    },
+    {
+      "control": "Independent arbitrary complex balanced blocks obey SVD signed theorem",
+      "verified": true,
+      "max_error": 5.329070518200751e-15
+    },
+    {
+      "control": "Independent seven-momentum full 4+4 band multiplicity",
+      "verified": true,
+      "max_error": 3.552713678800501e-15
+    }
+  ],
+  "actual_predicates": [
+    {
+      "label": "E4 [bounded joint-law control] supplied Slater minors normalize and give distinct-site Cov=-|P_uv|^2, diagonal Var=n(1-n); same-marginal alternative has Cov(0,1)=+1/4; nonprojector rejected",
+      "passed": true
+    },
+    {
+      "label": "E5 [bounded zero-mode control] periodic 4^3 permits a supplied rank32 half-filled projector with uniform diagonal1/2; strict-negative convention remains separate",
+      "passed": true
+    },
+    {
+      "label": "C5 [normalization control] axis phase/group corrections -p^2/24 and -p^2/8; G(-iD)G^dag=M/2, cell p=2k; speed1 per cell or2 per coarse site in supplied units",
+      "passed": true
+    },
+    {
+      "label": "E4 [bounded joint-law control] supplied Slater minors normalize and give distinct-site Cov=-|P_uv|^2, diagonal Var=n(1-n); same-marginal alternative has Cov(0,1)=+1/4; nonprojector rejected",
+      "passed": false
+    },
+    {
+      "label": "A4 [exact, m=1] T_ij B_i=-T_ij B_j; ad(H_m)^2 T=4m^2 T, not a real nonzero ad eigenoperator; original nonzero anticommutator retained",
+      "passed": true
+    },
+    {
+      "label": "A5 [exact oriented-hop control] T(I+bB_j)/2 has eigenvalue m(eps_j-eps_i)b at m=-1/2,0,1; the Hermitian T has neither eigenvalue +2 nor -2 at m=1",
+      "passed": true
+    },
+    {
+      "label": "A6 [exact instrument boundary] one edge Z anticommutes with a face, while its corner parity commutes; diagonal parity alone does not provide an edge Record instrument",
+      "passed": true
+    },
+    {
+      "label": "A4 [exact, m=1] T_ij B_i=-T_ij B_j; ad(H_m)^2 T=4m^2 T, not a real nonzero ad eigenoperator; original nonzero anticommutator retained",
+      "passed": false
+    },
+    {
+      "label": "A5 [exact oriented-hop control] T(I+bB_j)/2 has eigenvalue m(eps_j-eps_i)b at m=-1/2,0,1; the Hermitian T has neither eigenvalue +2 nor -2 at m=1",
+      "passed": false
+    },
+    {
+      "label": "A6 [exact instrument boundary] one edge Z anticommutes with a face, while its corner parity commutes; diagonal parity alone does not provide an edge Record instrument",
+      "passed": true
+    },
+    {
+      "label": "F1 [1e-12] original selected-column validation: 128 periodic entries of 8^3, m = 0.5 (1.7e-16), seven antiperiodic axis magnitudes (1.0e-16)",
+      "passed": true
+    },
+    {
+      "label": "F4 [complete declared-column control] all512 periodic complex entries and all512 antiperiodic magnitudes, m=.5, including off-axis and contact; not a full matrix test (1.7e-16, 1.7e-16)",
+      "passed": true
+    },
+    {
+      "label": "F1 [1e-12] original selected-column validation: 128 periodic entries of 8^3, m = 0.5 (1.7e-16), seven antiperiodic axis magnitudes (1.0e-16)",
+      "passed": true
+    },
+    {
+      "label": "F4 [complete declared-column control] all512 periodic complex entries and all512 antiperiodic magnitudes, m=.5, including off-axis and contact; not a full matrix test (1.7e-16, 9.4e-02)",
+      "passed": false
+    },
+    {
+      "label": "C5 [balanced SVD control] full signed spectrum at m=-.7,0,.7; eps H(m) eps=-H(-m), not -H(m); an unbalanced three-site graph need not have equal sign multiplicities",
+      "passed": true
+    },
+    {
+      "label": "G5 [moment inference counterexample] equal mean, smaller second moment does not order E sqrt(X+m^2): m=1/4, XA={0,2}, XB={1/2,5}",
+      "passed": true
+    },
+    {
+      "label": "H2 [fixed-label control] equal mass-sign spectra but site occupancies differ by 0.274774; equivalence needs a simultaneous observable/state relabeling",
+      "passed": true
+    }
+  ]
+}

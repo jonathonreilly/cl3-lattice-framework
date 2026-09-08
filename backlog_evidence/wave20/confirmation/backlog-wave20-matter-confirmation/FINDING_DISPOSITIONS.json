@@ -1,0 +1,680 @@
+{
+  "remaining_findings": [],
+  "resolved": [
+    {
+      "id": "F1",
+      "original_finding": {
+        "id": "F1",
+        "priority": "P2",
+        "title": "Hermitian hop is not an eigenoperator of the mass commutator",
+        "anchors": [
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 128,
+            "text": "## Theorem 1 -- the term is a corner parity of six records, and the hop is its eigenoperator",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 134,
+            "text": "T_ij B_j` exactly, and never zero; since `T_ij B_i = -T_ij B_j`, the hop is an eigenoperator of `ad(H_m)` of eigenvalue `-+2m`, while `{H_m, T_ij}` is not zero either.",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "scripts/a_record_native_staggered_mass_gap_2m_exponential_kernel_check_2026_09_03.py",
+            "line": 349,
+            "text": "check(\"A4 [exact] T_ij B_i = -T_ij B_j: the hop is an ad(H_m) eigenoperator of eigenvalue -+2m, and \"",
+            "sha256": "3293463ec9d7f90482efeceac689aa74ff8ab46230992803dd67c032789ccb46"
+          }
+        ],
+        "reason": "For m=1 the actual A4 predicate passes, but [Hm,T]-2T and [Hm,T]+2T are both nonzero. [Hm,T]=m(eps_j-eps_i)T Bj rotates the Hermitian hop. The stated inference from TBi=-TBj does not make Bj scalar. A nonzero Hermitian T cannot be an eigenoperator of commutation with Hermitian H at a nonzero real eigenvalue. The never-zero assertion also requires m != 0.",
+        "minimal_correction": "Preserve the exact commutator; state the eigenoperator property for T(I+b Bj)/2, or ad(Hm)^2 T=4m\u00b2T. Test that property and distinguish the Hermitian hop. Correct T1/frontmatter/executable block/A4 caption and preserve m=0.",
+        "evidence": [
+          "INDEPENDENT_CONTROLS.json"
+        ]
+      },
+      "author_disposition": "Exact commutator retained; balanced oriented hops and ad^2 replace the false Hermitian-hop eigenoperator inference; m=0 explicit.",
+      "final_anchors": [
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 128,
+          "text": "## Theorem 1",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        },
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 138,
+          "text": "The actual Pauli source directly",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        }
+      ],
+      "actual_check_ids": [
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F1"
+    },
+    {
+      "id": "F2",
+      "original_finding": {
+        "id": "F2",
+        "priority": "P2",
+        "title": "Spectrum proof uses the wrong fixed-mass intertwiner",
+        "anchors": [
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 160,
+            "text": "**Conclusion.** (1) `{M, Eps} = 0` as a zero-residual identity on `4^3`, `6^3` and `8^3`, periodic and antiperiodic. (2) Hence `(M + m Eps)^2 = M^2 + m^2`, and the spectrum is",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 167,
+            "text": "cancel and `Eps^2 = I`, with the sign structure from `Eps` intertwining `H` and `-H`. Items 3 to 5 evaluate item 2 at the allowed momenta. Item 1 exact; items 2 to 5 `[numerical,",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 254,
+            "text": "2. It gaps the Dirac point to exactly `2m`, leaving every other feature of the spectrum in place, the whole of it `+-sqrt(E_0^2 + m^2)`; and it splits no taste at any order,",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          }
+        ],
+        "reason": "Eps H(m) Eps=-H(-m), not -H(m). The independent m=.7 control gives residual1.4 for the claimed fixed-mass chiral symmetry. Squaring alone gives absolute eigenvalues, not equal sign multiplicities on arbitrary bipartite graphs. On the declared even tori the useful sign-paired spectrum is correct by balanced bipartite block SVD.",
+        "minimal_correction": "Give the short balanced-bipartite SVD proof on the actual domain. State gap2|m| (or explicitly m>=0), distinguish a grid containing the node from a finite torus with positive massless gap, and preserve all original spectra/tests. Do not extend half-positive multiplicity to an unbalanced open graph.",
+        "evidence": [
+          "INDEPENDENT_CONTROLS.json"
+        ]
+      },
+      "author_disposition": "Balanced block SVD supplies sign multiplicities; correct opposite-mass intertwiner; node and finite-grid gaps distinguished; unbalanced counterexample retained.",
+      "final_anchors": [
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 156,
+          "text": "## Theorem 3",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        },
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 165,
+          "text": "An SVD",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        }
+      ],
+      "actual_check_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F2"
+    },
+    {
+      "id": "F3",
+      "original_finding": {
+        "id": "F3",
+        "priority": "P2",
+        "title": "Finite two-sector comparisons and fourth moments do not prove every-mass minimization",
+        "anchors": [
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 222,
+            "text": "## Theorem 7 -- the sector stays staggered at every mass",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 225,
+            "text": "is like for like. (2) At the energy-minimising twist in each sector the staggered sector is the minimiser at every `m` in `{0, 0.5, 1, 2, 4}` on `4^3` and `6^3`, smallest margin",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 231,
+            "text": "Items 2 and 3 minimise over the eight Wilson twists in each sector, on the tori and by `200^3` quadrature. Item 4 takes the moments of `E_0^2`; `sqrt` being concave, at equal",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 257,
+            "text": "   leaves the staggered sector selected at every `m`, by a margin that shrinks on `-3/m^3` but never vanishes.",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "scripts/a_record_native_staggered_mass_gap_2m_exponential_kernel_check_2026_09_03.py",
+            "line": 26,
+            "text": "  G  SECTOR SELECTION.  The staggered sector stays the minimiser at every m.",
+            "sha256": "3293463ec9d7f90482efeceac689aa74ff8ab46230992803dd67c032789ccb46"
+          }
+        ],
+        "reason": "The runner compares the uniform KS and plain sectors only: masses{0,.5,1,2,4} on4\u00b3/6\u00b3 with eight twists each; six masses on a200\u00b3 quadrature. It neither enumerates all allowed flux assignments nor proves ordering for all m or a thermodynamic error bound. The proposed general concavity inference is false. At m=1/4, X_A={0,2} with weights1/2 has mean1 and second moment2; X_B={1/2,5} with weights8/9,1/9 has mean1 and second moment3. Nevertheless E sqrt(X_A+m\u00b2)=(1+sqrt33)/8 <11/12=E sqrt(X_B+m\u00b2), reversing the asserted sea-energy ordering. This refutes the inference, not the actual KS/plain ordering.",
+        "minimal_correction": "Retain every finite value, twist minimization, moment42/90 and sampled quadrature result. Label the compared two sectors and finite masses explicitly everywhere including G3/header/summary/PR scope. Remove the universal/global conclusion and variance proof; keep -3/m\u00b3 as numerical comparison unless a separate bounded Taylor derivation is supplied. No new all-sector campaign is necessary.",
+        "evidence": [
+          "INDEPENDENT_CONTROLS.json",
+          "original-execution/"
+        ]
+      },
+      "author_disposition": "Finite KS/plain data retained; no all-sector/all-mass/thermodynamic ordering; explicit equal-mean moment counterexample defeats the old concavity inference.",
+      "final_anchors": [
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 209,
+          "text": "## Theorem 7",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        },
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 215,
+          "text": "**Failed inference",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        }
+      ],
+      "actual_check_ids": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F3"
+    },
+    {
+      "id": "F4",
+      "original_finding": {
+        "id": "F4",
+        "priority": "P2",
+        "title": "A one-body projector and diagonal Pauli parity do not derive the joint Record law",
+        "anchors": [
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 233,
+            "text": "2. `det [[P_vv, P_vu],[P_uv, P_uu]] <= P_uu P_vv` on all `262144` ordered pairs, with maximum excess exactly `0`. The record process is negatively",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 243,
+            "text": "sites are never more likely to be occupied together than apart. That is what fermions do, and it is here with no statistics assumption added: it",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 131,
+            "text": "Every term is a pure `Z`-product on the six coarse-edge sites at one corner: `H_m` is diagonal in the record basis and star-local, the open block's boundary stars having supports",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 218,
+            "text": "**Reading, not theorem.** Without a price, what one corner records still bears on what a distant corner records, with an influence falling only as a power of the separation: the",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 252,
+            "text": "1. A mass for the coarse-lattice emergent fermion is available **inside the readable algebra**: a parity term on the six records at each corner, with an alternating sign, needing",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "scripts/emergent_lorentz_invariance_at_the_dirac_point_and_the_taste_census_check_2026_09_03.py",
+            "line": 605,
+            "text": "    worst = float(((outer - P ** 2) - outer).max())",
+            "sha256": "69e98ed65db6467409067249a6521a4a319454a91edfe8ff334bc1e5a98e1a60"
+          }
+        ],
+        "reason": "The actual E2 expression is max(-P\u00b2)<=0 and passes on a nonprojector. It checks an algebraic determinant inequality, not a joint Record law or full negative association of arbitrary increasing disjoint events. A Slater state plus joint occupation measurement and Born rule gives the useful distinct-site covariance -|P_uv|\u00b2. The diagonal duplicate u=v needs n_v\u00b2=n_v, not the two-distinct-index determinant. Hence a kernel amplitude r^-3 corresponds to occupation covariance r^-6; exp(-r/xi) corresponds to covariance lengthxi/2. In the actual Pauli source a single edge Z can anticommute with a face stabilizer although the full six-edge parity commutes. An individually readable permanent edge-record instrument is not obtained merely by saying diagonal/readable.",
+        "minimal_correction": "Keep projector identities and the declared Pauli observable, and explicitly condition probabilistic statements on a supplied Slater/Born occupation readout (or keep purely algebraic kernel statements). Limit E2 to distinct-site pairwise covariance unless an independent full negative-association theorem is actually supplied. Add a small actual joint-law control and preserve correlated same-marginal alternative. Distinguish kernel and connected occupation correlation decay. State the coarse role/encoding/readout/formation bridge is supplied or unproved; do not derive it from the current axioms or import a parent tower.",
+        "evidence": [
+          "INDEPENDENT_CONTROLS.json",
+          "SCOPE_CONTROLS.json"
+        ]
+      },
+      "author_disposition": "Slater/Born joint law explicitly supplied and proved conditionally by finite minors/generating polynomial; real nonprojector and same-marginal alternative; code parity is not permanent Record formation. Mass note independently states the same conditional proof and A6 instrument witness.",
+      "final_anchors": [
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 101,
+          "text": "For the optional occupation interpretation",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        },
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 221,
+          "text": "## Theorem 5",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        },
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 235,
+          "text": "**Conditional proof",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        }
+      ],
+      "actual_check_ids": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F4"
+    },
+    {
+      "id": "F5",
+      "original_finding": {
+        "id": "F5",
+        "priority": "P2",
+        "title": "Mass-sign relabeling is not indistinguishability at a fixed labeled readout",
+        "anchors": [
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 240,
+            "text": "`1.4e-15` on the `8^3` torus at `m = 0.25, 0.5, 1`, with identical spectra, `<n_v>(-m) = 1 - <n_v>(m)` and `C(-m) = -C(m)`.",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 245,
+            "text": "**Reading, not theorem.** Calling one colour of corner the even one is a naming choice, and reversing it reverses the sign of the price. Nothing measurable distinguishes the two:",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 259,
+            "text": "5. The size and the sign of `m` are supplied data. The sign is a convention tied to which sublattice is called even; the size is fixed by nothing quoted here.",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          }
+        ],
+        "reason": "The correct theorem itself gives <n_v>(-m)=1-<n_v>(m). On the actual4\u00b3 antiperiodic matrix at m=.7 the fixed-site means differ by more than.25 while spectra agree. The sign can be conventional only when the sublattice naming and observable/state identification are transformed consistently. Equal spectra alone do not erase the fixed-label observable difference.",
+        "minimal_correction": "Retain the particle-hole/conjugation identity and supplied sign. Qualify convention as an equivalence under explicit relabeling/readout transformation, and retain fixed-label distinguishability as a control. Remove unconditional nothing measurable and only magnitude is content.",
+        "evidence": [
+          "INDEPENDENT_CONTROLS.json"
+        ]
+      },
+      "author_disposition": "Complementary fixed-site densities remain distinguishable; sign equivalence requires simultaneous observable/state relabeling.",
+      "final_anchors": [
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 217,
+          "text": "## Theorem 8",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        },
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 225,
+          "text": "**Fixed labels",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        }
+      ],
+      "actual_check_ids": [
+        "H1",
+        "H2"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F5"
+    },
+    {
+      "id": "F6",
+      "original_finding": {
+        "id": "F6",
+        "priority": "P2",
+        "title": "Four tastes and kinetic taste splitting contradict the actual flavor census",
+        "anchors": [
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 187,
+            "text": "**Reading, not theorem.** The eight states in one small cube carry two labels, a spin and a taste. The price is blind to the taste label: it acts as the identity there, so the",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 255,
+            "text": "   being the identity on the flavour factor, so the taste splitting of this model is entirely kinetic.",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 162,
+            "text": "",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          }
+        ],
+        "reason": "The paired census is8=2spin\u00d72chirality\u00d72flavor, so each positive/negative band is fourfold from spin\u00d7flavor, not four physical tastes. The matrix W_a fails to commute with a chosen flavor generator, but H(q)^2=E(q)^2 I leaves the bands exactly fourfold even with those artifacts. Noncommutation/mixing is not an energy taste splitting.",
+        "minimal_correction": "Use two Dirac flavors/tastes consistently; distinguish spin and chirality from flavor. Retain chirality-odd flavor-singlet mass and O(p\u00b2) flavor mixing, and remove unsupported kinetic spectral splitting. Preserve the concrete degeneracy and Clifford controls.",
+        "evidence": [
+          "INDEPENDENT_CONTROLS.json"
+        ]
+      },
+      "author_disposition": "Two flavors times spin/chirality; noncommuting artifact mixing is not fourfold-band energy splitting; census note propagated.",
+      "final_anchors": [
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 171,
+          "text": "## Theorem 4",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        },
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 182,
+          "text": "**Reading, not theorem.** The eight states",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        }
+      ],
+      "actual_check_ids": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F6"
+    },
+    {
+      "id": "F7",
+      "original_finding": {
+        "id": "F7",
+        "priority": "P2",
+        "title": "Kernel theorem scope exceeds the sampled kernel checks and omits contact exceptions",
+        "anchors": [
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 210,
+            "text": "   whenever `r = v - u` has zero or two or three odd components: an identity of the projector at every momentum, not an asymptotic statement.",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 211,
+            "text": "2. On the surviving set, with `a` the unique odd component, `|P_vu| |r|^3 -> (4/pi^2) |nhat_a| = 0.405285 |nhat_a|`. On a `288^3` cell-momentum grid",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 301,
+            "text": "`Z^3`, for infinite lattices, or beyond the `60^3` scan grid, the `288^3` cell-momentum grid and the tori `4^3`, `6^3`, `8^3` named above. The `288^3`",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 208,
+            "text": "coarse separations -- and the other branch is a power law of fitted log-log slope `-3.0228` over `41 <= n <= 119`; (2) at every `m > 0` both branches decay exponentially with one",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 211,
+            "text": "`m`; (3) an Ornstein-Zernike prefactor of fitted exponent `1.56` to `1.95`; (4) the Bloch/FFT kernel these fits are read from agrees with the real-space projector entry by entry",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          },
+          {
+            "path": "scripts/a_record_native_staggered_mass_gap_2m_exponential_kernel_check_2026_09_03.py",
+            "line": 626,
+            "text": "    if (v[1] % 2) or (v[2] % 2):",
+            "sha256": "3293463ec9d7f90482efeceac689aa74ff8ab46230992803dd67c032789ccb46"
+          },
+          {
+            "path": "scripts/a_record_native_staggered_mass_gap_2m_exponential_kernel_check_2026_09_03.py",
+            "line": 634,
+            "text": "devw = max(abs(abs(Kw[4 * (n % 2)][(n // 2, 0, 0)]) - abs(Pw[iw[(n, 0, 0)], iw[(0, 0, 0)]]))",
+            "sha256": "3293463ec9d7f90482efeceac689aa74ff8ab46230992803dd67c032789ccb46"
+          }
+        ],
+        "reason": "The zero-odd-component rule has the explicit contact P_vv=1/2 exception. The288\u00b3 Fourier values and stride shells test finite samples, not an infinite-distance lattice limit or the identity of a historical0.21 result. The massive branch point gives a useful analytic comparison, but192\u00b2\u00d72048 periodic quadrature and chosen fits do not prove every-m exponential asymptotics, exact lack of image effects or finite-range disappearance. F1 checks128 selected entries of one periodic source column and only7 antiperiodic axis magnitudes, not every projector entry. A real off-axis antiperiodic kernel output corruption survives the exact F1 predicate.",
+        "minimal_correction": "Preserve grids/windows/fit values/analytic branch point and the positive finite comparisons. Clearly distinguish conjectured/derived continuum comparison from checked finite lattice data and avoid a new asymptotic proof unless actually supplied. Correct contact scope, finite versus asymptotic/zero wording, image qualification, and F1 coverage label or add a bounded complete declared-column control. Do not claim full matrix validation or treat the historic0.21 as proven identical without its actual source.",
+        "evidence": [
+          "INDEPENDENT_CONTROLS.json",
+          "small-kernel-control.stdout"
+        ]
+      },
+      "author_disposition": "All finite values/windows retained; contact explicit and branch-point/continuum comparisons separated from unproved asymptotics/images; added complete512-entry periodic/AP source-column checks reject original off-axis false negative; no full-matrix claim. Census T4 also narrowed.",
+      "final_anchors": [
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 199,
+          "text": "## Theorem 6",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        },
+        {
+          "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 205,
+          "text": "**Method and boundary",
+          "sha256": "d77b18f545085aecba6ce4644c6913f0845682e7a3646fa5411330f63b8a2b68"
+        }
+      ],
+      "actual_check_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F7"
+    },
+    {
+      "id": "F8",
+      "original_finding": {
+        "id": "F8",
+        "priority": "P3",
+        "title": "Quartic uniqueness and velocity wording need their coordinate qualifications",
+        "anchors": [
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 186,
+            "text": "   exactly isotropic and the leading anisotropy is the unique quartic cubic invariant with coefficient exactly `-1/12`.",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 187,
+            "text": "2. Hence `v(nhat, |p|) = E/|p| = 1 - (|p|^2/24) sum_a nhat_a^4 + O(p^4)`: one velocity `v -> 1` in every direction, for every taste and both",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 199,
+            "text": "**Reading, not theorem.** Near the point where the spectrum closes, the matter travels at one speed in every direction, and it comes in two matched",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "scripts/emergent_lorentz_invariance_at_the_dirac_point_and_the_taste_census_check_2026_09_03.py",
+            "line": 416,
+            "text": "    \"isotropic, the leading anisotropy the unique quartic cubic invariant with coefficient \"",
+            "sha256": "69e98ed65db6467409067249a6521a4a319454a91edfe8ff334bc1e5a98e1a60"
+          }
+        ],
+        "reason": "Cubic quartic invariants span sum p_a^4 and |p|^4, two independent functions. Only the anisotropic class modulo the isotropic quartic is one-dimensional. E/|p| is explicitly phase velocity; its correction -p\u00b2/24 differs from group velocity -p\u00b2/8 along an axis. p is the2\u00b3 cell phase, so k=p/2 is coarse-site momentum, with limiting speed2 in supplied unit hopping/time. The gate antihermitian D has coefficient1/2; a site phase gives G(-iD)G\u2020=M/2, not an absolute physical speed.",
+        "minimal_correction": "Qualify unique anisotropic quartic modulo isotropic quartic; retain -1/12 for this hop. State phase/group and cell/coarse momentum conventions, unit hopping and absence of a physical clock/boost-covariant dynamics. Existing explicit no-boost theorem boundary should remain.",
+        "evidence": [
+          "INDEPENDENT_CONTROLS.json",
+          "SCOPE_CONTROLS.json"
+        ]
+      },
+      "author_disposition": "Anisotropic quartic modulo isotropic quartic; phase/group and cell/coarse momentum units explicit; actual D-to-M normalization checked, no physical clock.",
+      "final_anchors": [
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 99,
+          "text": "Normalization is explicit",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        },
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 181,
+          "text": "## Theorem 3",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        }
+      ],
+      "actual_check_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F8"
+    },
+    {
+      "id": "F9",
+      "original_finding": {
+        "id": "F9",
+        "priority": "P3",
+        "title": "Periodic zero modes prevent a unique filling, not a half-filled projector",
+        "anchors": [
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 314,
+            "text": "Theorem 5's `1/4` requires an exactly half-filled projector; on the `8^3` periodic torus the eight zero modes prevent that, and the result there is",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          }
+        ],
+        "reason": "The rank252 strict-negative projector is correctly reported. But zero modes do not prevent an exactly half-filled projector: on4\u00b3 periodic, four Walsh combinations of the eight explicit q=pi zero modes give rank32, P\u00b2=P and every diagonal1/2. The identical cell construction extends to8\u00b3. The issue is a supplied occupation choice, not impossibility.",
+        "minimal_correction": "Replace prevent that by do not uniquely select it, retain the strict-negative original result and unchosen filling boundary. A small explicit zero-mode filling control suffices; do not change the original selected strict-negative convention silently.",
+        "evidence": [
+          "SCOPE_CONTROLS.json"
+        ]
+      },
+      "author_disposition": "Original strict-negative rank252 retained; explicit optional four-Walsh-mode fill on4^3 demonstrates uniform half filling can be supplied, not uniquely selected.",
+      "final_anchors": [
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 237,
+          "text": "Zero modes do not prevent",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        }
+      ],
+      "actual_check_ids": [
+        "E3",
+        "E5"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F9"
+    },
+    {
+      "id": "F10",
+      "original_finding": {
+        "id": "F10",
+        "priority": "P2",
+        "title": "Successful caches omit all note and quoted-source input identity",
+        "anchors": [
+          {
+            "path": "scripts/emergent_lorentz_invariance_at_the_dirac_point_and_the_taste_census_check_2026_09_03.py",
+            "line": 57,
+            "text": "AUDIT_TIMEOUT_SEC = 120",
+            "sha256": "69e98ed65db6467409067249a6521a4a319454a91edfe8ff334bc1e5a98e1a60"
+          },
+          {
+            "path": "scripts/a_record_native_staggered_mass_gap_2m_exponential_kernel_check_2026_09_03.py",
+            "line": 46,
+            "text": "AUDIT_TIMEOUT_SEC = 120",
+            "sha256": "3293463ec9d7f90482efeceac689aa74ff8ab46230992803dd67c032789ccb46"
+          },
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 2,
+            "text": "claim_id: emergent_lorentz_invariance_dirac_point_taste_census",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 2,
+            "text": "claim_id: record_native_staggered_mass_gap_2m",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          }
+        ],
+        "reason": "Neither runner declares AUDIT_INPUT_PATHS. The actual successful caches remain fresh and cached_runner_output --check-only exits0 after an own-note, current memo or quoted kinetic-gate byte drift; runner-source drift properly gives sha_mismatch/exit1. Both actual consumers resolve the filename-derived primary and zero helpers, but the two frontmatter claim_id aliases differ from the canonical actual IDs. Current type hints are correctly recognized.",
+        "minimal_correction": "Before one final run per changed runner, freeze/pin its own final note and exact actually retained quoted premise/context surfaces; guard quotation identity where promised. Align current IDs with real filename-derived IDs, preserving old aliases explicitly as provenance. Keep zero helper registries unless a real helper is introduced. Test both actual note-derived APIs, source guards, and actual cache-first drift rejection. Use real final caches and preserve the original receipts, including these baseline receipts.",
+        "evidence": [
+          "SOURCE_CACHE_CONTROLS.json"
+        ]
+      },
+      "author_disposition": "Both filename-derived IDs align; own final note/current memo/exact gate bytes pinned in each primary; both actual consumers zero helpers, all source/input readiness and cache-first controls fail closed.",
+      "final_anchors": [
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 2,
+          "text": "claim_id:",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        },
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 294,
+          "text": "## Review record",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        }
+      ],
+      "actual_check_ids": [
+        "Z1"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F10"
+    },
+    {
+      "id": "F11",
+      "original_finding": {
+        "id": "F11",
+        "priority": "P2",
+        "title": "Historical parent readings are endorsed despite declared non-load-bearing status",
+        "anchors": [
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 162,
+            "text": "",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 215,
+            "text": "   `2/pi^2 = 0.202642`. The landed `d^-3` value `0.21` is the finite-`|r|` value of this same law, not a different one.",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 311,
+            "text": "branch-independent. The relabelling corrects a **reading** of PR #7844, not any number in it: every multiplicity, spectrum and representation content",
+            "sha256": "f4fd3a9118f80961782408401170e3453830ebdda281abce03d77c7766d27f33"
+          },
+          {
+            "path": "docs/A_RECORD_NATIVE_STAGGERED_MASS_GAP_2M_EXPONENTIAL_KERNEL_AND_WHAT_IT_BREAKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+            "line": 63,
+            "text": "Imported scientific authority: none load-bearing. The Bravyi-Kitaev superfast encoding, the Kawamoto-Smit staggering, the Dirac-Kahler spin-taste basis and the Ornstein-Zernike",
+            "sha256": "ef41ec54a48e07687f4a9b85297c55784eea62d41ca490ceb0e175be9c96606e"
+          }
+        ],
+        "reason": "The note labels parent7844 non-load-bearing yet says every multiplicity/spectrum/representation stands, and treats its historical0.21 as established finite-distance content. This unit rederives the Clifford/census objects but does not reprove the parent full2A1+2T1/campaign/physical encoding claims. Standard methodology naming likewise does not establish a physical Record/BKS equivalence or the parent role-pattern law. These need not become source premises to preserve the current finite work.",
+        "minimal_correction": "Keep exact attributed historical quotes and local redeclared results; qualify all other parent claims/results as historical, unverified/unaccepted by this unit. Make no full parent acceptance and add no arbitrary graph enrollment. If any specific parent theorem is retained as load-bearing, explicitly scope/read/bind it before acceptance; otherwise retain the standalone conditional construction.",
+        "evidence": [
+          "ORIGINAL_PR_DETAILS.json",
+          "INPUT_PREMISE_CLOSURE.json"
+        ]
+      },
+      "author_disposition": "Historical7844/7874/7879/7834 and gate campaigns explicitly unverified/unaccepted; only local redeclarations and exact bounded context remain. No parent, registry or premise source changed.",
+      "final_anchors": [
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 167,
+          "text": "**Conclusion, local census",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        },
+        {
+          "path": "docs/EMERGENT_LORENTZ_INVARIANCE_AT_THE_DIRAC_POINT_AND_THE_TASTE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 288,
+          "text": "## Proof boundary",
+          "sha256": "f50b26e2774153a26efe1335317bb273c5cea7afb62d99a76cce2e9113ca4f6b"
+        }
+      ],
+      "actual_check_ids": [
+        "B3",
+        "D3"
+      ],
+      "status": "resolved by original independent reviewer at final wave20 tree",
+      "independent_reasoning": "SCIENCE_CONFIRMATION.md F11"
+    }
+  ]
+}
