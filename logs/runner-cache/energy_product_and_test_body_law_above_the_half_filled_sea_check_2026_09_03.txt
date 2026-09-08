@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py
+runner_sha256: 5039248d8e1a7bfe26bf24016db964a770a3033a50508cdb74b3218cdca6e5b6
+input_fingerprint_sha256: 8dd5100c667fa9d2a3b260a6e29216ba8390ceaa660e0a6a51657c227f658854
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.18
+status: ok
+----- stdout -----
+SOURCE_INPUTS: docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md:0ea261e4f84fbb86b0ef4537ade32d32e485f61a9d960691ce63d08daefbdeea docs/MINIMAL_AXIOMS_2026-06-29.md:93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753 docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md:71023af5e313037d74eb3efb56b0515c913e66947981950e1871b3acc398fdbf
+PASS A1 [numerical, 1e-6] the conditioning vacuum: the half-filled staggered sea on 8^3 at twist (1,1,1), E_sea = -611.811768 (the matter note's, 3.5e-07), gap 2.651309 = 2 sqrt(6 - 3 sqrt2) (5.3e-15), <n_v> = 1/2 at all 512 (7.8e-16)
+PASS A2 [numerical, 1e-13] single pairs: band-edge orbital E_exc = 2.651309, localised wavepackets 4.3614 to 4.5163 over d = 1..4, sum_v eps_v = E_exc to 0e+00 -- the matter note's 2.651309, 2.6513-4.5163
+PASS A3 [numerical, 1e-14] TWO pairs at D = (2,0,0)/(3,0,0)/(4,0,0)/(3,3,0): P'' = P - Q_h + Q_p is a projector to 2e-15 over eight states, trace exactly 256 = V/2
+PASS A4 [finite samples] at four selected D, orbital overlaps are <p1|p2> = 0.37/0.15/0.044/0.014, <h1|h2> = 0.38/0.021/0.0013/0.0036
+PASS A5 [finite samples] joint-energy relative nonadditivity = -2.1e-02/-2.3e-03/-2.7e-04/-5.8e-05 at d_pair1, -2.3e-03/-2.7e-04 at d_pair2; actual joint row-density defects 2.1e-01/2.4e-02/2.7e-03
+PASS A6 [numerical, 1e-13] selected fixed-number preparations have sum_v (<n_v>-1/2)=0 to 1e-14; this does not exclude charged even states
+PASS B1 [numerical, 1e-4] reconstructed finite G0 multiplier off constant mode: point control 4 pi r G at r = Lb/4 = 0.3307 and 0.3275 at Lb32,64 against historical rows (5e-06)
+PASS B2 [numerical, 1e-9] supplied B=<e1,G P0 e2> divided by E1 E2 G(D), Lb64,d_pair1: 0.8517/0.9043/0.9650/0.9540 at four selected D; finite source-shape comparison
+PASS B3 [numerical, 1e-9] other declared finite fixtures: d_pair2 on Lb64 gives 0.8757/0.9188 at D3,4; Lb32 gives 0.9575/0.8997 at D4
+PASS B4 [numerical, 1e-14] classical sum s=e1+e2 ONLY: Q(s)-Q(e1)-Q(e2)=2B to 1e-15 over sixteen rows; actual joint Slater density is a different source
+PASS B5 [finite multipole diagnostic] point plus source dipole/quadrupole: 0.9380/0.9146/0.9773/0.9576, within0.03 of the computed ratios at three stated points; no asymptotic error certificate
+PASS B6 [finite samples] two rigid copies, not a joint Slater state, give 0.9462/0.9736/0.9938/0.9986 at D3/4/8/16 on Lb64
+PASS C1 [numerical, 1e-9] extended F_num=-D B versus point F_pred=-E2 D phi1: x ratios 0.8271/0.9719 at D3,4 d_pair1, 0.8568/0.9209 d_pair2; sign convention separately in H
+PASS C2 [finite samples] nonzero extended/point vector angle errors 5.7/6.5/1.9/0.1 degrees; no equality inferred
+PASS C3 [incomplete-map diagnostic] naive source rebuild residual 3.96e-01, KS-bulk-only 2.10e-03; latter omits twist seam and is not a covariance no-go
+PASS C4 [finite rigid-copy samples] x ratios 0.8981/0.9854/0.9982/0.9992/0.9997/1.0000 and endpoint angles 7.3 -> 1.8 degrees
+PASS C5 [finite x-component diagnostic] 4 pi D^2 F_num,x/(E1 E2) = 0.9711/1.0398/1.0216/1.0060/0.9924/0.9260; not vector norm or a certified inverse-square law; historical point rows1.0194/1.0064/1.0009/0.9963 remain comparison only
+PASS D1 [numerical] COUNT VERSUS ENERGY. An energy knob -- a Gaussian seed band-filtered toward +-E0, width 0.6 -- moves E_exc through 3.8766/4.5998/5.3655/5.8591/6.0461 at D = 4: E_int rises to 2.525, E_1 E_2 to 2.425, ratio of ratios 1.041
+PASS D2 [numerical, 1e-12] separately fixed two-delta count source I=2 each: B_count=0.0655525 in every filter row, spread 0e+00; excitation energy factor is about1.56, product factor2.425, not quadrupling
+PASS D3 [numerical, 1e-13] selected fixed-N sources have zero total number deviation to 1e-14, while E1 E2=32.25; different source/readout choices, not a consequence of vacuum alone
+PASS D4 [stated] historical empty-vacuum count-source claim is unaccepted context; this runner compares an explicitly chosen energy source with a separately fixed count source
+PASS E1 [stated] t=1 and coarse coordinates are supplied; no physical G_Newton, mass, coupling or coarse/fine factor-two theorem is derived here
+PASS H1 [numerical, 1e-14] THE ON-SHELL ACTION. A[phi; rho] = (1/2)<phi, H phi> - <P0 rho, phi> at phi = G0 P0 rho is A* = -(1/2)<P0 rho, G0 P0 rho> to 5e-15; its cross term -0.522027 at D = 4 is exactly -E_int to 6e-15
+PASS H2 [numerical, 1e-14] SO THE PULL IS ATTRACTIVE. F_U = -grad_{x2} A*, same central differences, is -F_num to 4e-16 at unchanged magnitude (4e-16); F_U,x = -2.808e-01 to -9.413e-03 is NEGATIVE at every D = 3/4/6/8/10/16 -- pair 2 pulled TOWARD pair 1
+PASS H3 [actual operands] extended FU versus point FN has nonzero discrepancy 0.040047771; exact extended convolution matches FU to 4.0e-16; no false point equality
+PASS R1 [actual joint/classical distinction] density defect 0.210861615; same-box classical residual 1.1e-16, true-joint residual -0.284741566
+PASS R2 [complete actual translation] 3072 directed equations, matrix residual 0e+00, row-energy residual 1.1e-16; old KS-only residual retained separately
+PASS R3 [PSD is quadratic] Q(e1)=1.062938032 positive but B(e1,-e1)=-1.062938032 negative
+SUMMARY: distinct joint/classical sources, exact conditional action and extended-force sign, finite point approximation. Physical preparation/readout/force identification remains supplied.
+per_element: checked finite source sums and exact stated scalar identities; physical interpretation is not supplied
+per_site: checked declared coordinate/record/source dictionaries on finite sites; no fine-site formation mechanism follows
+per_mode: checked the stated one-particle or Fourier modes only; no unexecuted interacting or APS boundary spectrum
+per_block: checked named finite preparations, response boxes or sign-field families at their stated tolerances
+lattice_wide: checked and not executed — no physical infinite-volume formation law or numerical limit error bound is certified
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

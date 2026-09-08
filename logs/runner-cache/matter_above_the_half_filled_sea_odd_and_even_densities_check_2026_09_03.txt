@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py
+runner_sha256: 47dbfa16e6c5d08de188490f01d0d5fdbceb2d44ce995b18a0620945e17f16de
+input_fingerprint_sha256: 38be172db9bfe809970a3b0b4ebab692ad9892798457b6deeb25f29ea7bdce32
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+SOURCE_INPUTS: docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md:5fd4d2f12542b11716dfdfe8dfecc523b714af38e6102d324b3ea716891ec771 docs/MINIMAL_AXIOMS_2026-06-29.md:93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753 docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md:71023af5e313037d74eb3efb56b0515c913e66947981950e1871b3acc398fdbf
+PASS A1 [numerical, 1e-6] the half-filled staggered sea at its optimal twist on 4^3/6^3/8^3 has E_sea = -78.383672/-258.857540/-611.811768, the first two being the supplied filling datum's own values
+PASS A2 [exact] at L = 4 the optimal-twist field satisfies M^2 = 6 I as a 64x64 integer identity (residual 0), so every level is +-sqrt6 and E_sea/V is exactly -sqrt6/2 = -1.224744871 (residual 0e+00)
+PASS A3 [numerical, 1e-13] the three finite gaps are 2 sqrt6 / 2 sqrt3 / 2 sqrt(6 - 3 sqrt2) = 4.898979/3.464102/2.651309, matching the supplied reduced-zone formula 2 sqrt(6 + 2 min_q sum_a cos q_a) (8e-15); no continuum convergence estimate from three sizes
+PASS A4 [exact] V/2 = 32/108/256 is even; fixed-number neutrality and response P0 are separate choices
+PASS A5 [exact/numerical, 1e-12] <n_v> = 1/2 at EVERY site of all three tori (8e-16), and its exact reason: the bipartite grading eps_v = (-1)^{v1+v2+v3} gives eps M eps = -M as an integer identity (0), so P_vv + (eps P eps)_vv = 1 (2e-15) and P_vv = 1/2
+PASS B1 [numerical, 1e-12] the band-edge orbital pair on 8^3 has E_exc = 2.651309, the sea gap, and is DELOCALISED: IPR 171 and 176 of 512 sites, rms 3.64 and 3.63
+PASS B2 [numerical, 1e-13] localised wavepackets on 8^3 -- particle from the empty orbitals, hole from the occupied ones, d = 1/2/3/4 -- have sum_v rho = 0 to 1e-14 for rho = <n_v> - 1/2, with rms 1.60 to 1.77
+PASS B3 [numerical, 1e-14] the local energy density eps_v = sum_{j~v} M_vj (P' - P)_vj carries the whole excitation: sum_v eps_v = E_exc to 2e-15 over all five pairs, E_exc 2.6513 to 4.5163
+PASS B4 [numerical, 1e-15] real row-energy negative part: exactly 0 for the orbital pair (0e+00) and on 4^3 (0e+00), and 0.2% to 0.3% of E_exc for the selected wavepackets; no general positivity
+PASS B5 [numerical] the clouds OVERLAP: sum_v |rho| runs 1.12 to 1.94, under the 2 a disjoint unit particle and hole would give
+PASS C1 [exact] conjugation P' -> eps (I - P') eps sends rho -> -rho (6e-17) and eps_v -> +eps_v (0e+00) over all five pairs: the number-density deviation is the ODD datum, the energy density the EVEN one
+PASS C2 [exact] eps is a diagonal +-1 gauge map: it flips all 1536 link signs, yet all 1536 faces of 8^3 keep their holonomy (0) and every even Wilson line is fixed (True) -- a state and its conjugate lie in the SAME flux sector
+PASS D1 [numerical, 1e-3] finite historical reference comparison: 4 pi r G(r) at r = 10 rounds to 0.190/0.432/0.568 at N = 32/48/64
+PASS D2 [numerical, 1e-4] finite point control: 4 pi r G at r = Lb/4 is 0.4065/0.3468/0.3307/0.3275 at Lb = 8/16/32/64, against historical rows (5e-05)
+PASS D3 [numerical] fixed-N number source: total 1e-14, star monopole 4e-05 at r = 16, dipole |p| = 3.206 at d = 4, actual fitted log-log slope -1.99, 4 pi r^2 antisym_x phi / p_x = 1.0003/1.0061/0.9940 at r = 5/8/10; higher multipoles not excluded
+PASS D4 [numerical, chosen amplitude band0.02] real energy source: 4 pi r phi at r = Lb/4 is 0.2534/0.3529/0.3335/0.3282 at Lb = 8/16/32/64, outside the chosen band about0.3267 at8,16 and inside at32,64; the historical exponent tolerance is a distinct quantity
+PASS D5 [numerical, finite Richardson protocol] 2 f_64 - f_32 gives coefficients 1.0096/0.9941/0.9741/0.9427 at dd = 4/6/8/10 against the matched point control 1.0166/0.9966/0.9766/0.9456, agreeing to0.01 on these points only
+PASS D6 [numerical, band 0.02] the two non-linear positive candidates do the same: (c) |rho| and (d) rho_+ = max(rho, 0) read 0.3283 and 0.3282 at Lb = 64, inside the band and beside the point control 0.3275
+PASS E1 [exact] candidate (a) is the NAMED operator rho_v = <n_v> - 1/2 = -B_v/2: diagonal (x-mask 0), local on exactly 6 coarse edge sites, phase invariant, covariant on the untwisted 6^3 (0, 6e-16); spectrum {-0.5, +0.5}, so NOT positive; total 1e-14
+PASS E2 [finite real source] energy is offdiagonal: hop carries X on 1 code qubit with 3 trailing Zs; old KS-bulk-only translation omits twist seam and leaves residual 4.4e-02 on v_x [0, 1, 7], not an obstruction to full covariance
+PASS E3 [exact] candidates (c) |rho| and (d) rho_+ are the expectation of NO operator, being non-linear in the state: on the equal mixture of a pair and its conjugate |rho| reads 0 where a linear functional reads the average, 0.1208 apart
+PASS E4 [stated] so NEITHER linear-in-the-state candidate meets all five bridge clauses above this sea: (a) fails positivity, total zero; (b) fails diagonality; (c), (d) are positive with non-zero total but no operator expresses them
+PASS F1 [finite imposed-label span] manually supplied [+1,+1] has least-squares residual 1.414214 = sqrt2 to [+1,-1]; no APS boundary/operator/orientation map constructed
+PASS F2 [finite chiral identity] conjugated empty orbital is in occupied shell (1.000000000000), energy negated (4e-16); bulk holonomies stay fixed, while an independently defined APS label remains untested
+PASS R1 [actual even alternative] adding two empty orbitals gives deltaN=2.000000000000, even total N34, projector residual 7.8e-16
+PASS R2 [readout counterexample] identical fixed-Z probabilities, offdiagonal energies 1.000000000000 / -1.000000000000
+PASS R3 [domain counterexample] complex pair gives max imaginary row 0.335410 while total imaginary 1.1e-16; original source restricted to real states
+PASS R4 [actual full gauge] all 3072 directed edge equations, matrix residual 0e+00 and real energy translation 1.1e-16; twist seam included
+SUMMARY: supplied real fixed-N source comparisons; charged even and full-covariance alternatives remain. No physical readout, gravity or APS theorem.
+per_element: checked finite source sums and exact stated scalar identities; physical interpretation is not supplied
+per_site: checked declared coordinate/record/source dictionaries on finite sites; no fine-site formation mechanism follows
+per_mode: checked the stated one-particle or Fourier modes only; no unexecuted interacting or APS boundary spectrum
+per_block: checked named finite preparations, response boxes or sign-field families at their stated tolerances
+lattice_wide: checked and not executed — no physical infinite-volume formation law or numerical limit error bound is certified
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+
