@@ -1,0 +1,3 @@
+# Canonical lemma-control port
+
+The exact helper is byte-identical to6c3d404abb80713659819c3bb80daffedf4224ed2533515f07dad001d9e7738e. Its run function executes5955 exact predicates. The primary adds one fixed coverage and one resource guard, for5957. Canonical execution0.0903s/23.5625MiB; complete external receipt retained. One actual isolated -I -OO run with only primary plus5 declared inputs matches every scientific field. Actual missing-pair and wrong-conjugation mutations are run through the canonical primary after intentionally refreshing its helper hash; they reject mathematical predicates. Unknown arguments return2. No finite-width extrapolation is used: the note contains the analytical induction.

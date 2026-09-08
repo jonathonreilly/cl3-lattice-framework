@@ -1,0 +1,1 @@
+Bounded first pass: read Macris–Nachtergaele equality route and test all eight globally flat pi-plaquette winding sectors using exact L6 dispersion and rational square-root enclosures. This is not an all-flux test. Also quantify failure of the L4 constant-square/Jensen proof at L6. No defect/random scans or flux enumeration. Root's uniqueness target known; no uniqueness assumed.

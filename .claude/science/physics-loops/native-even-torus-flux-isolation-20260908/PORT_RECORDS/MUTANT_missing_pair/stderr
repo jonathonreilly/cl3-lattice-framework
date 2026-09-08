@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-even-torus-flux-isolation-20260908/.claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/scripts/native_even_torus_flux_isolation_2026_09_08.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-native-even-torus-flux-isolation-20260908/.claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/scripts/native_even_torus_flux_isolation_2026_09_08.py", line 12, in main
+    mod=runpy.run_path(str(root/'scripts/native_even_torus_flux_isolation_controls_2026_09_08.py'));checks=mod['run']()
+                                                                                                           ^^^^^^^^^^^^
+  File "/private/tmp/toe-native-even-torus-flux-isolation-20260908/.claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/scripts/native_even_torus_flux_isolation_controls_2026_09_08.py", line 38, in run
+    ck(all(any(c==adj(d) for d in C) for c in C),'paired channels')
+  File "/private/tmp/toe-native-even-torus-flux-isolation-20260908/.claude/science/physics-loops/native-even-torus-flux-isolation-20260908/PORT_RECORDS/MUTANT_missing_pair/scripts/native_even_torus_flux_isolation_controls_2026_09_08.py", line 35, in ck
+    if not c:raise ValueError(label)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: paired channels
+real 0.03
+user 0.02
+sys 0.00
+            21610496  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2430  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  27  involuntary context switches
+           339318477  instructions retired
+           126746415  cycles elapsed
+            11649456  peak memory footprint
