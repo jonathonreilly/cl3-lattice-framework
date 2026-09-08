@@ -1,0 +1,11 @@
+--- native-instrument/probe.py
++++ native_cycle_sign/mutant.py
+@@ -9,7 +9,7 @@
+  return a
+ Is=word({});Xs=[word({j:X}) for j in range(4)];Zs=[word({j:Z}) for j in range(4)]
+ A=[Xs[0],Zs[0]@Xs[1],Zs[1]@Xs[2]@Zs[3],Zs[0]@Xs[3]]
+-S=-A[0]@A[1]@A[2]@A[3];P=(Is+S)/2
++S=A[0]@A[1]@A[2]@A[3];P=(Is+S)/2
+ B=[Zs[0]@Zs[3],Zs[0]@Zs[1],Zs[1]@Zs[2],Zs[2]@Zs[3]]
+ checks=[]
+ def check(name,truth):

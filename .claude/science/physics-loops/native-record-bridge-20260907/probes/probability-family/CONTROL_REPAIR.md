@@ -1,0 +1,1 @@
+Before final freeze, two frame controls were strengthened from already-simplified scalar identities to actual exact vector rotation/dot-product computation. Original source and result are preserved. Parameters, orbit census and probability rows are unchanged. This is a control implementation improvement, not an independent review.

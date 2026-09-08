@@ -1,0 +1,11 @@
+--- probability-family/check.py
++++ improper_cubic_group/mutant.py
+@@ -10,7 +10,7 @@
+ rots=[]
+ for perm in itertools.permutations(range(3)):
+  for signs in itertools.product([-1,1],repeat=3):
+-  if parity(perm)*signs[0]*signs[1]*signs[2]!=1:continue
++  if parity(perm)*signs[0]*signs[1]*signs[2]!=-1:continue
+   rots.append(tuple(dirs.index(tuple(signs[i]*d[perm[i]] for i in range(3))) for d in dirs))
+ ck('24 distinct proper cubic rotations',len(set(rots))==24)
+ ck('rotation group closed',all(tuple(a[b[i]] for i in range(6)) in rots for a in rots for b in rots))

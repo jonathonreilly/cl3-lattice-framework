@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-record-probes-20260907/mutation-checks/improper_cubic_group/mutant.py", line 16, in <module>
+    ck('rotation group closed',all(tuple(a[b[i]] for i in range(6)) in rots for a in rots for b in rots))
+  File "/private/tmp/toe-native-record-probes-20260907/mutation-checks/improper_cubic_group/mutant.py", line 6, in ck
+    if not b:raise AssertionError(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: rotation group closed

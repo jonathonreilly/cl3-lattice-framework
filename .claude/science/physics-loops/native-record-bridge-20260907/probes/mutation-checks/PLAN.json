@@ -1,0 +1,44 @@
+[
+  [
+    "native_cycle_sign",
+    "native-instrument/probe.py",
+    "S=-A[0]@A[1]@A[2]@A[3]",
+    "S=A[0]@A[1]@A[2]@A[3]"
+  ],
+  [
+    "native_post_normalization",
+    "native-instrument/probe.py",
+    "post=Q[f,z]@rho@Q[f,z]*2",
+    "post=Q[f,z]@rho@Q[f,z]*1"
+  ],
+  [
+    "probability_coefficient",
+    "probability-family/check.py",
+    "return F(1,2)+k*sum(c)/12",
+    "return F(1,2)+k*sum(c)/6"
+  ],
+  [
+    "improper_cubic_group",
+    "probability-family/check.py",
+    "if parity(perm)*signs[0]*signs[1]*signs[2]!=1:continue",
+    "if parity(perm)*signs[0]*signs[1]*signs[2]!=-1:continue"
+  ],
+  [
+    "action_transfer_polynomial",
+    "action-measure/check_square_frozen.py",
+    "F=lambda t:E-s.Rational(3,4)*t+s.Rational(1,4)*t*t",
+    "F=lambda t:E-s.Rational(1,4)*t+s.Rational(1,4)*t*t"
+  ],
+  [
+    "reservoir_occupation_sign",
+    "action-measure/check_reservoir.py",
+    "n4=(E-B[4])/2",
+    "n4=(E+B[4])/2"
+  ],
+  [
+    "relay_wrong_copy",
+    "record-relay-review/check.py",
+    "pp=F(ns.count(1),len(ns)) if ns else F(1,2)",
+    "pp=F(ns.count(-1),len(ns)) if ns else F(1,2)"
+  ]
+]

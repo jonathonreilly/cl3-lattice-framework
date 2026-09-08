@@ -1,0 +1,11 @@
+--- record-relay-review/check.py
++++ relay_wrong_copy/mutant.py
+@@ -10,7 +10,7 @@
+         new=[]
+         for state,p in states:
+             ns=[v for y,v in state.items() if adj(x,y)]
+-            pp=F(ns.count(1),len(ns)) if ns else F(1,2)
++            pp=F(ns.count(-1),len(ns)) if ns else F(1,2)
+             for v,q in ((1,pp),(-1,1-pp)):
+                 if q:
+                     out=state.copy(); out[x]=v; new.append((out,p*q))

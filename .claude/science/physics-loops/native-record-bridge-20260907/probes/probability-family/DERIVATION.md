@@ -1,0 +1,55 @@
+# A frame-free scalar-supported probability family and its exact boundary
+
+## Status and premises
+
+This is an independent scratch probe, not a retained theorem or a proposed axiom. The exact governing memo is `docs/MINIMAL_AXIOMS_2026-06-29.md` at main47da12268436ee1843e822386477aa2c829d95a9, as bound by `docs/audit/data/axiom_premise_nodes.json`. Its current Admissibility clause supplies a condition-dependent probability distribution but explicitly does not fix its form or values. Availability is its support. Record locks one supported possibility, permits at most one permanent record per site, and permits readout only of present record content. The June5 memo was initially read but is superseded; none of the construction uses its removed finite-additivity or K/CPT clauses.
+
+The model realization used here is literal: the possibility set at each site is the underlying set of M2(C), with its named algebraic operations. This is a fully specified interpretation of the algebraic presentation, not a derivation that every intended physical possibility must be interpreted as a matrix element. Atomic measures below are defined on the entire power set, so neither a Haar measure nor a projector-space Borel-domain restriction is needed. In the usual matrix topology their support is the same finite set.
+
+The scalar matrices0 andI are intrinsically identifiable from the supplied algebra as its additive and multiplicative identities. Using them does not choose an internal axis, state, basis, projector, or common internal frame. The law does choose its support and numerical weights. Those choices are precisely the free law data being compared, and are not asserted to be axioms or physically selected. No proposal that all noncentral possibilities are physically irrelevant follows.
+
+## Two complete local kernels
+
+Let b denote absence of a record, a tagged symbol distinct from the present matrix0. At a site x the condition is the ordered tuple of its six actual Z3 nearest-neighbor contents in M2(C) union{b}. Define
+
+s(b)=0, s(A)=rank(A)-1 for a present matrix A;
+q(c)=sum over the six neighbors of s(c_y).
+
+Thus -6<=q<=6. For either fixed kappa=1/3 or2/3 set
+
+p_kappa(c)=1/2+kappa q(c)/12,
+mu_kappa(c)=p_kappa(c) delta_I+(1-p_kappa(c)) delta_0.
+
+These are defined at EVERY condition, including matrices outside their output support. They are normalized, strictly positive on both0 andI, and have no other supported output. Their extrema are(1-kappa)/2 and(1+kappa)/2. They vary: blank neighbors give1/2, whereas one identity-record neighbor gives19/36 or5/9 respectively. The same one-neighbor condition therefore distinguishes the laws by1/36. Zero-record and blank are different conditions: one zero-record gives17/36 or4/9. No value is assigned to an unreadable absent site; s is an argument of the law, not an observable readout performed on blank sites.
+
+Translations transport the same formula to each site. Every proper cubic rotation merely permutes its six summands. More strongly, independent changes A_y->g_y A_y g_y^-1 at all sites preserve rank, and the output0,I are fixed under every g_x. Hence the complete probability kernel is covariant even under independent GL2(C) inner automorphisms. This additional robustness is proved; it is NOT renamed an axiom demanding a physical local gauge symmetry. In particular the construction does not conflate physical lattice directions with Bloch axes or replace physical nearest-neighbor adjacency by an emergent CAR graph.
+
+For records, take a configuration to be a partial assignment of matrix contents to sites; the readout of a present record is its content, and no readout is defined on absence. A formation append at any blank site locks either0 orI and leaves all earlier assignments unchanged. Both choices remain supported at every later condition, so even the stronger ongoing-support interpretation is satisfied. Every finite sequence of such appends has a positive product conditional weight; summing over its outcomes gives1 by iterated normalization. There exist nonempty formation histories, satisfying the occurrence sentence. The family of allowed sites/histories is translation and cubic covariant. This does not supply or privilege a formation schedule, time, rate, iid clocks, or a physical realization mechanism. A schedule may be supplied as a condition for the finite-history product calculation, exactly as formation-site selection remains outside the probability clause.
+
+Thus, on this identical declared matrix-element interpretation of the possibility domain, two distinct local probability rules exist with identical support, carrier, presentation covariance, readout and permanent-record structure. This is a model-level nonuniqueness result, not a claim that the intended physical law is scalar-supported. The point is that a common internal frame is unnecessary for nonuniqueness itself.
+
+## Exact positive classifications
+
+First fix an arbitrary nearest-neighbor condition and require that changing the presentation at the forming site alone by every inner automorphism transports its output law naturally. Since there is no existing record at that site in the condition, this says its output measure is conjugation invariant. If that measure has finite support F, then gFg^-1=F. The continuous orbit of every A in F under the connected group GL2(C) lies in a finite set, hence is a singleton. Therefore A commutes with every invertible matrix. Commuting with diagonal invertibles makes A diagonal, and commuting with the upper unipotents makes its two diagonal entries equal. Hence F is contained in C I. Conversely every measure supported in C I is invariant. This finite-support result is conditional on independent local presentation naturality. It does not forbid noncentral continuous invariant distributions, or finite noncentral outcomes in a supplied transforming local context.
+
+Now fix output support{0,I} and restrict input records to the realizable alphabet{b,0,I}. A law is exactly a function p:{b,0,I}^6->[0,1]. Cubic covariance says exactly that p is constant on orbits of the24 proper rotations. Conversely any assignment of a number in[0,1] to each orbit gives such a law. Full binary support corresponds to every number lying in(0,1); variation corresponds to excluding constant tables. The exhaustive orbit partition has57 orbits, so this declared class is the57-dimensional cube of tables (or its open cube for full support), with the constant one-dimensional family removed for variation. This is not a classification of all M2 laws, only of this finite alphabet and scalar output support.
+
+The orbit count also follows by double counting pairs(g,c) with gc=c: each orbit contributes24 pairs. Exact fixed-point counts sum to1368, hence1368/24=57. This is the standard Cauchy-Frobenius orbit-counting lemma, not new general mathematics. The runner independently builds signed-permutation rotations and partitions all729 configurations; orbit sizes are1:3,3:6,6:10,8:3,12:18,24:17.
+
+## Why the exposed Bloch proposal needs more structure
+
+A formula involving n dot m for projectors at different sites requires a comparison of their traceless parts. Under simultaneous rotations it is invariant; under independent rotations at the two sites it is not. For n=m=e_z, rotating only m bypi aroundx changes the dot product from1 to-1. A transported neighbor vector T_xy m_y would repair this only if a relative-frame map T_xy is supplied and transforms as R_x T_xy R_y^-1. The current axioms do not name such a map, identify internal rotations with physical cubic rotations, or select a projector-only possibility domain and its normalized surface measure.
+
+Conditionally, once unit vectors and normalized sphere measure dOmega/(4pi) ARE supplied in one common/transported frame, the proposed density1+(kappa/6)n dot sum m_y is normalized since the first sphere moment is0. It is nonnegative for all six unit-neighbor conditions iff |kappa|<=1: the extremal aligned condition gives1-|kappa|. Using the second moment integral n_i n_j=delta_ij/3 yields mean n=(kappa/18)sum m_y, including the exposed one-neighbor coefficient. These elementary conditional facts do not promote the supplied projector domain, surface measure, or transport into primitives. They also do not prove uniqueness of that first-harmonic ansatz. This conditional arithmetic is secondary; the fully executed main witness above uses none of it.
+
+## Adverse controls and prior-work boundary
+
+The exact runner checks all729 conditions and24 rotations for both kernels, two independent orbit counts, rational extrema and disagreement, independent rational matrix similarity/rank controls, and all8 outcomes of a three-site append history. It detects negative probabilities at kappa2, covariance failure for a singled-out-neighbor rule, and absence of variation for a constant rule. A noncentral rank-one matrix has20 distinct explicitly computed unipotent conjugates; analytically its off-diagonal entry varies with every complex parameter, giving an infinite orbit. Two initially scalar-simplified frame controls were strengthened to actual vector rotation computations; original source/output and CONTROL_REPAIR.md are preserved. No failed numerical result was discarded and no parameter was tuned.
+
+Generic probability underdetermination is already discussed on main in PROBABILITY_READOUT_UNDERDETERMINATION_CYCLE912_BOUNDED_THEOREM_NOTE_2026-07-28.md. The main nonaffine-purity kernel source explicitly supplies a density/effect domain. Open PR7919 gives several weighted nearest-neighbor laws on a supplied projector/menu domain; PR7950 studies balanced-ternary Born forcing under additional grading hypotheses. Their actual source bodies were read at inventory-bound git heads. This probe does not claim to replace those results. Its narrower contribution is an algebra-intrinsic scalar witness that avoids a cross-site frame entirely, coupled to the exact finite-support independent-presentation classification. Main47's STRICT_FREE_STAR_GIBBS_CUBE_RECORD_FLUX_BOUNDARY source explicitly supplies thermal CAR/state/occupation and record-interface data; those are not used here.
+
+Primary mathematical context: Kevin McGerty, Groups and Group Actions, Theorem4.1, https://people.maths.ox.ac.uk/mcgerty/ImperialGRT.pdf. The orbit formula is reproved above; no external classification theorem or Born theorem is imported. The open-PR inventory is a point-in-time duplication check, not an audit of those PRs.
+
+## What remains unproved
+
+No law parameter is selected; no physical probability calibration, formation process, noncentral readout, physical common frame, Born rule, quantum composition, Hamiltonian, or continuum physics is derived. If the intended possibility semantics exclude matrix0 orI as recordable contents, that exclusion is an additional precise premise needed to reject this literal model; it is not silently assumed here. The result should therefore be reported as an explicit conditional model/classification and a premise discriminator, not as completion of the native Record-to-physics bridge.

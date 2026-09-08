@@ -1,0 +1,84 @@
+{
+  "originals_unchanged": true,
+  "cases": [
+    {
+      "name": "native_cycle_sign",
+      "original": "native-instrument/probe.py",
+      "original_sha256": "1f480c854cd71110bcc58f80e2da531f4f4a2567fd5c335465397a1131424633",
+      "mutant_sha256": "0f8cb2f2f8a3bb72a028f0f3ff40914680961bb8112e906049089d44a8e2481d",
+      "returncode": 1,
+      "math_assertion_detected": true,
+      "elapsed_sec": 0.05630262501654215,
+      "last_error": "AssertionError: actual cycle stabilizer equals minus X Y X Y",
+      "integrity_bypass": "No source-integrity assertion exists in these frozen probes; source hashes are output metadata only. Mutant was executed directly and no integrity check was used as detection."
+    },
+    {
+      "name": "native_post_normalization",
+      "original": "native-instrument/probe.py",
+      "original_sha256": "1f480c854cd71110bcc58f80e2da531f4f4a2567fd5c335465397a1131424633",
+      "mutant_sha256": "77fbbfc8506c3dfebf400ff0f23c2b078746e161b284ddf07719b5259605c365",
+      "returncode": 1,
+      "math_assertion_detected": true,
+      "elapsed_sec": 0.05604933301219717,
+      "last_error": "AssertionError: fixed vacuum edge1 sign-1 forces edge0",
+      "integrity_bypass": "No source-integrity assertion exists in these frozen probes; source hashes are output metadata only. Mutant was executed directly and no integrity check was used as detection."
+    },
+    {
+      "name": "probability_coefficient",
+      "original": "probability-family/check.py",
+      "original_sha256": "1d700f82e904a352ef41e4380edcc8ec7095b77e7a670b125640bc4e1b8eb50f",
+      "mutant_sha256": "de250f70ad287214667d88dfc883e75628d29cde626c60e0103c6c09db62992a",
+      "returncode": 1,
+      "math_assertion_detected": true,
+      "elapsed_sec": 0.10156850001658313,
+      "last_error": "AssertionError: one identity neighbor 1/3",
+      "integrity_bypass": "No source-integrity assertion exists in these frozen probes; source hashes are output metadata only. Mutant was executed directly and no integrity check was used as detection."
+    },
+    {
+      "name": "improper_cubic_group",
+      "original": "probability-family/check.py",
+      "original_sha256": "1d700f82e904a352ef41e4380edcc8ec7095b77e7a670b125640bc4e1b8eb50f",
+      "mutant_sha256": "2eeecc5c44571d1b49009337c65434fa4c669f1381b33e0c3b9f1a106af5b3c0",
+      "returncode": 1,
+      "math_assertion_detected": true,
+      "elapsed_sec": 0.026062707998789847,
+      "last_error": "AssertionError: rotation group closed",
+      "integrity_bypass": "No source-integrity assertion exists in these frozen probes; source hashes are output metadata only. Mutant was executed directly and no integrity check was used as detection."
+    },
+    {
+      "name": "action_transfer_polynomial",
+      "original": "action-measure/check_square_frozen.py",
+      "original_sha256": "ce8d3fb9142e7e540897cf7ac0d157d1b5eb2948133af2c31f5b548863634bd3",
+      "mutant_sha256": "f22afbc88ee6d1a748e158b5b8bd1b568c78a59ee2422763c1bd680e9d5230d3",
+      "returncode": 0,
+      "math_assertion_detected": false,
+      "elapsed_sec": 0.16553783297422342,
+      "last_error": "",
+      "integrity_bypass": "No source-integrity assertion exists in these frozen probes; source hashes are output metadata only. Mutant was executed directly and no integrity check was used as detection."
+    },
+    {
+      "name": "reservoir_occupation_sign",
+      "original": "action-measure/check_reservoir.py",
+      "original_sha256": "79f7701bab7d24f1ff3bfe1113877bfb63db4b77c31812d059147552c6e9723f",
+      "mutant_sha256": "044033a5c923c44cbfd274e140f81e9e035c3c3893945dfb6562c7c0fa99df0f",
+      "returncode": 1,
+      "math_assertion_detected": true,
+      "elapsed_sec": 0.18079045799095184,
+      "last_error": "AssertionError: {'rank16': True, 'source_code': True, 'ancilla_conserved': True, 'native_full_trace': True, 'generic_reservoir_weight': False, 'biased_reservoir_rejects_det': True, 'normalized_full': True}",
+      "integrity_bypass": "No source-integrity assertion exists in these frozen probes; source hashes are output metadata only. Mutant was executed directly and no integrity check was used as detection."
+    },
+    {
+      "name": "relay_wrong_copy",
+      "original": "record-relay-review/check.py",
+      "original_sha256": "b93cf1dcda3eee18f0306a65f69831507591e610e605aec6623864813022d464",
+      "mutant_sha256": "e196b34ff5e326ed72f4c783a3880ba8ad4dba7d66e5f37bb452a05500e6c592",
+      "returncode": 1,
+      "math_assertion_detected": true,
+      "elapsed_sec": 0.037190667004324496,
+      "last_error": "AssertionError: path-distance-1",
+      "integrity_bypass": "No source-integrity assertion exists in these frozen probes; source hashes are output metadata only. Mutant was executed directly and no integrity check was used as detection."
+    }
+  ],
+  "detected": 6,
+  "total": 7
+}

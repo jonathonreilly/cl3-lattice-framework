@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "case": "baseline",
+      "parent_PYTHONOPTIMIZE": "1",
+      "exit_code": 0,
+      "expected_result_confirmed": true
+    },
+    {
+      "case": "math_mutation",
+      "parent_PYTHONOPTIMIZE": "1",
+      "exit_code": 1,
+      "expected_result_confirmed": true
+    }
+  ],
+  "portable_change": "one path assignment only",
+  "hashes": {
+    "run_probes.py": "ff75af49f1b91be440f8a79ca06b932e96876b1a0b6021ff1d13104df4f88be7",
+    "probes/action-measure/check.py": "d559e8ec8933083b1e83e3c58939a350e6144876716ebc5ff2b6ef1d364d9b87",
+    "probes/action-measure/check_reservoir.py": "00d88c8b48e447ffe336044c9a3f08e88b1ee2faba771c09260468cc1eaeb60f",
+    "probes/probability-family-cold-review/independent.py": "95d5d994e3e99f55216c976251c5cf7e33d7d301874dfc836c585c086eb66410",
+    "probes/probability-family-cold-review/independent_portable.py": "fa699d21a4e362dadad5e982b9fd62ac88e0f313ce01fa3519c8dcbf780f16d2",
+    "FROZEN_PROBE_SHA256.json": "0ec4111c26aa284d99a1b53192b34e84819ba645a61d45f5c22e2974fb4677f1"
+  }
+}

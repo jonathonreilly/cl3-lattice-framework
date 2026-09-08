@@ -1,0 +1,1 @@
+Directly opened Oxford primary lecture notes https://people.maths.ox.ac.uk/mcgerty/ImperialGRT.pdf, p10 Theorem4.1 and its double-counting proof. Author identified as Kevin McGerty; corrected the initial abbreviated author typo in the derivation. No mathematical change. Search results were used only for discovery; no secondary source theorem is load bearing.

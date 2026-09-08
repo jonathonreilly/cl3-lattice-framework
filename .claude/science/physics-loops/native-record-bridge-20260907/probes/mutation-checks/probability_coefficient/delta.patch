@@ -1,0 +1,11 @@
+--- probability-family/check.py
++++ probability_coefficient/mutant.py
+@@ -16,7 +16,7 @@
+ ck('rotation group closed',all(tuple(a[b[i]] for i in range(6)) in rots for a in rots for b in rots))
+ configs=list(itertools.product([-1,0,1],repeat=6)) # zero-record, blank, identity-record
+ def act(c,r):return tuple(c[r[i]] for i in range(6))
+-def prob(c,k):return F(1,2)+k*sum(c)/12
++def prob(c,k):return F(1,2)+k*sum(c)/6
+ orbits={}
+ for c in configs:orbits.setdefault(min(act(c,r) for r in rots),[]).append(c)
+ fixed=[sum(act(c,r)==c for c in configs) for r in rots]

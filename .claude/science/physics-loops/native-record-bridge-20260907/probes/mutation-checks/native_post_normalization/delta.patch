@@ -1,0 +1,11 @@
+--- native-instrument/probe.py
++++ native_post_normalization/mutant.py
+@@ -33,7 +33,7 @@
+ for e,z in Q:check(f'initial edge{e} sign{z} fair',abs(np.trace(Q[e,z]@rho)-.5)<1e-12)
+ for e,f in itertools.permutations(range(4),2):
+  for z in [-1,1]:
+-  post=Q[f,z]@rho@Q[f,z]*2
++  post=Q[f,z]@rho@Q[f,z]*1
+   check(f'fixed vacuum edge{f} sign{z} forces edge{e}',abs(np.trace(Q[e,z]@post)-1)<1e-12)
+ # Full native operator histories versus independent binary cycle-boundary enumeration.
+ cyclewords=[]

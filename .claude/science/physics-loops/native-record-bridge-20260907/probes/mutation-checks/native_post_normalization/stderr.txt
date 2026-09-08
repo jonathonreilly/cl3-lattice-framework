@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-record-probes-20260907/mutation-checks/native_post_normalization/mutant.py", line 37, in <module>
+    check(f'fixed vacuum edge{f} sign{z} forces edge{e}',abs(np.trace(Q[e,z]@post)-1)<1e-12)
+  File "/private/tmp/toe-native-record-probes-20260907/mutation-checks/native_post_normalization/mutant.py", line 16, in check
+    if not truth:raise AssertionError(name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: fixed vacuum edge1 sign-1 forces edge0

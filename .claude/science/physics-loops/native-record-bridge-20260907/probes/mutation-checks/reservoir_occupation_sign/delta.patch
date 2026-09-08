@@ -1,0 +1,11 @@
+--- action-measure/check_reservoir.py
++++ reservoir_occupation_sign/mutant.py
+@@ -20,7 +20,7 @@
+ eigs=[s.Integer(2),s.Rational(1,2)]*2
+ layers=[sum(s.prod(eigs[j] for j in js) for js in itertools.combinations(range(4),n)) for n in range(5)]
+ plus=s.prod(1+x for x in eigs); minus=s.prod(1-x for x in eigs)
+-q=s.symbols('q'); n4=(E-B[4])/2; weighted=s.trace(P*U*(E+(q-1)*n4)); expected=((1+q)*plus+(1-q)*minus)/2
++q=s.symbols('q'); n4=(E+B[4])/2; weighted=s.trace(P*U*(E+(q-1)*n4)); expected=((1+q)*plus+(1-q)*minus)/2
+ checks={'rank16':s.trace(P)==16,'source_code':P*P==P,'ancilla_conserved':n4*H==H*n4,'native_full_trace':tr==plus,'generic_reservoir_weight':s.expand(weighted-expected)==0,'biased_reservoir_rejects_det':weighted.subs(q,2)!=plus,'normalized_full':tr/16==plus/16}
+ assert all(checks.values()),checks
+ print(json.dumps({'checks':checks,'pass_count':len(checks),'trace':str(tr),'weighted_trace':str(weighted),'q2_trace':str(weighted.subs(q,2)),'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},indent=2))

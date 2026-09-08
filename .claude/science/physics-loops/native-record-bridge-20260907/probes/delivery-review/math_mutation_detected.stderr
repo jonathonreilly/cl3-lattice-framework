@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-record-probes-20260907/delivery-review/math_mutation_detected/run_probes.py", line 88, in <module>
+    main()
+  File "/private/tmp/toe-native-record-probes-20260907/delivery-review/math_mutation_detected/run_probes.py", line 54, in main
+    raise RuntimeError(f"{relative} exited {result.returncode}: {result.stderr}")
+RuntimeError: action-measure/check_square_frozen.py exited 1: Traceback (most recent call last):
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-record-probes-zor0qv22/probes/action-measure/check_square_frozen.py", line 38, in <module>
+    assert all(checks.values()), checks
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'cycle_involution': True, 'cycle_hermitian': True, 'code_rank8': True, 'projector': True, 'code_hop_commute': True, 'all_hop_cubics': True, 'disjoint_commute': True, 'even_native_trace': False, 'parity_projected_determinants': False, 'full_trace_layers': True, 'odd_trace': True, 'normalized_full_candidate_rejected': True, 'fixedN2_candidate_distinct': True, 'vacuum_candidate_distinct': True, 'independent_copy_changes_trace': True, 'nonzero_parity_twist': True, 'tau0_normalization': True}
+

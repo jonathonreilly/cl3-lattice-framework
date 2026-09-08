@@ -1,0 +1,11 @@
+--- action-measure/check_square_frozen.py
++++ action_transfer_polynomial/mutant.py
+@@ -15,7 +15,7 @@
+ T={(u,v):s.I*A(u,v)*(B[u]-B[v])/2 for u,v in edges}
+ S=A(0,1)*A(1,2)*A(2,3)*A(3,0); P=(E+S)/2
+ H=T[0,1]+T[2,3]
+-F=lambda t:E-s.Rational(3,4)*t+s.Rational(1,4)*t*t
++F=lambda t:E-s.Rational(1,4)*t+s.Rational(1,4)*t*t
+ U=F(T[0,1])*F(T[2,3]); tr=s.trace(P*U)
+ eigs=[s.Integer(2),s.Rational(1,2)]*2
+ layers=[sum(s.prod(eigs[j] for j in js) for js in itertools.combinations(range(4),n)) for n in range(5)]
