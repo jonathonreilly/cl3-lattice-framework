@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/private/tmp/rk-charge-final-zlcs9df3/scripts/native_rk_charge_stability_2026_09_08.py", line 21, in <module>
+    namespace=runpy.run_path(str(root/'scripts'/f'native_rk_charge_{kind}_2026_09_08.py'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/private/tmp/rk-charge-final-zlcs9df3/scripts/native_rk_charge_counting_2026_09_08.py", line 9, in <module>
+    with contextlib.redirect_stdout(captured):a=runpy.run_path(str(p/'native_rk_charge_ordered_holes_2026_09_08.py'))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/private/tmp/rk-charge-final-zlcs9df3/scripts/native_rk_charge_ordered_holes_2026_09_08.py", line 63, in <module>
+    req((amp+tphase-frame(zz,qq))%4==2)
+  File "/private/tmp/rk-charge-final-zlcs9df3/scripts/native_rk_charge_ordered_holes_2026_09_08.py", line 23, in req
+    if not c:raise RuntimeError('native ordered-hole phase check')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: native ordered-hole phase check
