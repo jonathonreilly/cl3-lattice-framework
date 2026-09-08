@@ -1,0 +1,13 @@
+# Prospective six-cell exact-graph calibration
+
+Preserve original three-cell micro proposal. New ordered cells(n,burn multiplier): (48,8),(48,32),(192,8),(192,32),(768,8),(768,32). Long-burn32n primary,8n control. Each32 independent chains,65536 measured attempted updates,16 batches4096 each. IDs=cell_index*32+rep; seeds202609110000+ID. All paths initially seed/self,direction+1. No replacement or coverage changes. Fixed finite-G oracle consistency |estimate-target|<=4 replicaSE, precision4SE<=10%finite-ratio target. The earlier proposed5% was not executed; root's explicit10% criterion governs this fresh protocol before any production.
+
+Save chain means of midpointNf,S,averagedendpointE;16 ordered batch means and raw event counters, direction runs/window-length traversals. Samples/batches are not independent replicas. Full chain covariance, delta-method ratio influence, independent burn comparisons. No scalar error bars made from65536 correlated observations. End-to-end resource cap180s384MiB/cell, proposed900s aggregate. Six-cell forecast from micro includes all updates/burn plus threefold padding and30s setup, to be calculated before launch. Production code and all actual dependencies bound; no production until root authorization after review.
+
+## Prospective stationary-start supplement (supersedes ordered six-cell list)
+
+Preserve previous protocol/freeze. Nine ordered cells: (48,8),(48,32),(48,0),(192,8),(192,32),(192,0),(768,8),(768,32),(768,0), where0 is the oracle-assisted stationary path law, no burn. All retain32chains65536updates; new entire namespace202609120000+32*cell_index+rep, so no older seeds silently reassigned. Stationary initializer draws x0 proportional normalized G^n1 and each labeled next move proportional g_label*G^(remaining-1)1(target). Legal face labels and one aggregate self are explicit; summing labels gives state-path measure. Power rescaling cancels in normalized probabilities. Floating CDF draws are not exact RNG certification.
+
+This arm is a finite-L2 oracle diagnostic, not a larger-volume sampler or proof of mixing. It helps distinguish initialization effects from kernel error. All three pair comparisons per n use independent chain units. Initial direction remains+; skew-balance guarantees target only with uniform lifted direction generally, so stationary path initialization MUST additionally choose initial direction uniformly at random. The driver implements this extra independent draw only in oracle arm. No raw outputs exist yet; coverage unchanged within each cell.
+
+Initializer path and fair-direction draws use independent namespace202609130000+ID; dynamics uses202609120000+ID. Initializer draw count therefore does not shift the measured-chain RNG stream.
