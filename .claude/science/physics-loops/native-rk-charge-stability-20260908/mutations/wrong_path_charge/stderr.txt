@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-rk-charge-stability-20260908/.claude/science/physics-loops/native-rk-charge-stability-20260908/mutations/wrong_path_charge/check.py", line 71, in <module>
+    results=[run((4,4,4)),run((4,4,6)),run((8,8,8),True)]
+             ^^^^^^^^^^^^
+  File "/private/tmp/toe-native-rk-charge-stability-20260908/.claude/science/physics-loops/native-rk-charge-stability-20260908/mutations/wrong_path_charge/check.py", line 60, in run
+    require(all(abs(x)<=1 for x in q),'prefix-low-charge')
+  File "/private/tmp/toe-native-rk-charge-stability-20260908/.claude/science/physics-loops/native-rk-charge-stability-20260908/mutations/wrong_path_charge/check.py", line 8, in require
+    if not ok:raise RuntimeError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: prefix-low-charge

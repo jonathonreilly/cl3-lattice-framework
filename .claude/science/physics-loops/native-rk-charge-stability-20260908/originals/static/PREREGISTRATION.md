@@ -1,0 +1,5 @@
+# Prospective static RK support check
+
+Root supplied the candidate before this independent proof. The claimed finite-sector equality requires J>=0 (or nonnegative individual plaquette weights), U>0, t=0, the relaxed cycle carrier, and supplied low-charge constraint. It is not a phase or dynamic deconfinement claim.
+
+Derive balanced-arrow strong connectivity and directed simple-path endpoint charges on connected periodic cubic graphs with every extent even and at least4. Check every ordered distinct vertex pair on4x4x4 and4x4x6, using both the literal ice seed and a deterministic finite sequence of legal ring flips. Check selected512 opposite-vertex pairs on8x8x8 only if the first fixtures remain comfortably bounded. Verify actual link orientation and degree updates, all path prefixes low charge, and nonnegative RK local matrix with its uniform zero vector. Preserve a negative-J adverse case and restriction caveats; do not enumerate the ice Hilbert space or infer accessibility under native T. <=180s/384MiB per command, no production.

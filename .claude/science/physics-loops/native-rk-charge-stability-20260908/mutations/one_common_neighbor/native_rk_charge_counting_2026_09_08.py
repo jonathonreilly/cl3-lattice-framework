@@ -1,0 +1,39 @@
+AUDIT_TIMEOUT_SEC = 180
+AUDIT_INPUT_PATHS = ('scripts/native_rk_charge_ordered_holes_2026_09_08.py', 'docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md')
+import signal
+if __name__ == '__main__':signal.alarm(180)
+from pathlib import Path
+import runpy,contextlib,io,json,time
+start=time.monotonic();p=Path(__file__).resolve().parent
+captured=io.StringIO()
+with contextlib.redirect_stdout(captured):a=runpy.run_path(str(p/'native_rk_charge_ordered_holes_2026_09_08.py'))
+phase_result=json.loads(captured.getvalue())
+edges=a['edges'];inc=a['inc'];Q=a['Q'];nbr=a['nbr'];eid=a['eid'];checks=0
+
+def req(c):
+ global checks
+ checks+=1
+ if not c:raise RuntimeError('counting extension')
+def bad(z,q=None):
+ q=Q(z) if q is None else q;i=q.index(1);j=q.index(-1)
+ if j not in nbr[i]:return False
+ bit=(z>>eid[tuple(sorted((i,j)))])&1;G=(z&inc[i]).bit_count()-3
+ return 1-2*bit==-G
+
+def hops(z):
+ q=Q(z);out=[]
+ for k,(i,j) in enumerate(edges):
+  if (q[i]!=0)==(q[j]!=0):continue
+  zz=z^(1<<k);qq=Q(zz)
+  if all(abs(v)<=1 for v in qq):out.append(zz)
+ return out
+for i in range(64):
+ for j in range(i+1,64):req(len(set(nbr[i])&set(nbr[j]))<=1)
+created=[]
+for k,(i,j) in enumerate(edges):
+ z=a['seed']^(1<<k);req(bad(z));req(len(hops(z))==6);req(all(not bad(y) for y in hops(z)));created.append(z)
+req(len(set(created))==192)
+for z in a['seen']:
+ hh=hops(z);b=bad(z);req(len(hh)==(6 if b else 8))
+ req(sum(bad(y) for y in hh)==0 if b else sum(bad(y) for y in hh)<=4)
+print(json.dumps(dict(checks=checks,phase_result=phase_result,common_neighbor_pairs=2016,seed_edge_bijection_cases=192,charged_states=len(a['seen']),seconds=time.monotonic()-start,scope='native phase helper imported explicitly; independent combinatorial predicates, not fullD2census'),indent=2))
