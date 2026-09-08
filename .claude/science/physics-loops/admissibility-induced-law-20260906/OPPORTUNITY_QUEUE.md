@@ -60,3 +60,12 @@ Block 06 landed (PR #8034): widths 4 and 5 rigorously enclosed; the separation h
 2. **Formation-law uniqueness on Z^3 for the monotone class**: block 05's quadrant law as a projective limit; the four corner classes' laws on the plane — one object or four; relation to the static law of the plane; one block.
 3. **Width 6 and the innermost pair two steps in** (the method of block 06 at 46656 states / ~1000 orbits; the first width where an interior pair sits two steps from the boundary); one block, if the orbit count fits.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+
+## Refresh at block 07 close (2026-09-08)
+
+Block 07 landed (PR #8035): the Hermitian Gaussian instance, exact. Ranked next:
+
+1. **Formation-law uniqueness on Z^3 for the monotone class**: block 05's quadrant law as a projective limit with explicit marginals; the four corner classes on the plane — one object or four; relation to the static law of the plane; one block.
+2. **Width 6 and the innermost pair two steps in** (block 06's method at 46656 states; the orbit count is the only cost); one block if it fits.
+3. **The silent triples by a non-criterion route** (unchanged; heavy).
+4. **The Gaussian instance at larger windows / the 2x2x2 cube** (the fill-in structure in three dimensions); small; low priority.
