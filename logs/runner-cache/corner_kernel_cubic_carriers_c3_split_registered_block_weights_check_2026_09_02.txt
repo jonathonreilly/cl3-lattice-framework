@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py
+runner_sha256: df4f1a1c55cecb8e547d2d01c3a4cb9cc6a40328a6c8fa9994d3c6044f2ccd2d
+input_fingerprint_sha256: be0059dfda7649e6363479dfbc04fa80b736e930b9b6bb37a8a86a65b24f7901
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.13
+status: ok
+----- stdout -----
+SOURCE_INPUTS: docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md:f862128e96893a2a417a7eab9dedf6686ebd56bf6fe2ad961d15a838295adde5 docs/MINIMAL_AXIOMS_2026-06-29.md:93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753
+PASS A1 [exact, sympy] Gamma = (Y1, Z1Y2, Z1Z2Y3), Xi = (X1, Z1X2, Z1Z2X3) are six anticommuting hermitian involutions, the 2x2x2-cell Bloch block of the KS hopping is sum_a [(1+cos q_a) Xi_a + sin q_a Gamma_a] identically in q, H(q)^2 = (6 + 2 sum_a cos q_a) I, and H(pi,pi,pi) = 0: the whole eight-dimensional cell is the corner kernel
+PASS A2 [integer representation; numerical kernel/overlap cross-check] the L=4 site-coordinate torus (2 cells per axis) has an 8-dimensional kernel spanned by the corner basis; all 24 proper cubic rotations lift to signed permutations with C_R H C_R^T = H, and all 576 products close on the nose as integer matrices on the corner kernel (0 failures) -- a genuine representation of O, not projective
+PASS A3 [exact] characters on the corner kernel (E, 8C3, 3C2, 6C4, 6C2') = (8, 2, 0, 4, 0) decompose in exact rational arithmetic, against a self-checked orthonormal character table of O, as 2 A1 + 2 T1
+PASS A4 [exact] the isotypic projectors from the character formula in exact rational arithmetic are exactly P_A1 = diag(1,0,0,0,0,0,0,1) = P_hw0 + P_hw3 and P_T1 = diag(0,1,1,1,1,1,1,0) = P_hw1 + P_hw2, with P_A2 = P_E = P_T2 = 0: the two grading-selected Hamming triplets are copies within the multiplicity-two T1 isotypic
+PASS A5 [exact] each Hamming block is separately O-invariant: characters (1,1,1,1,1) on hw = 0 and 3 (one A1 each) and (3,0,-1,1,-1) on hw = 1 and 2 (one T1 each)
+PASS B1 [exact] i sum_a Gamma_a Xi_a = Z_1 + Z_2 + Z_3 exactly, it is O-invariant, and its corner spectrum is 3 - 2 hw: the landed 1 + 3 + 3 + 1 grading is the eigen-grading of that one O-invariant Cl(6) bilinear
+PASS B2 [exact character dimensions; numerical exhibited rank] the T1 isotypic component is T1 (x) C^2: the commutant of the 24 lifts has dimension 8 on the corner kernel and 4 on the T1 isotypic by the exact rational formula (1/24) sum |chi|^2, and four independent commuting elements P_hw1, P_hw2, P_hw2 T P_hw1, P_hw1 T P_hw2 are exhibited -- the group alone does not split it
+PASS B3 [exact identities; numerical off-diagonal rank] T = i Gamma_1 Gamma_2 Gamma_3 is O-invariant and unitary, carries hw=1 onto hw=2 and back with rank 3, and anticommutes with epsilon = Z_1 Z_2 Z_3 = diag((-1)^hw), T != epsilon: the two T1 copies are O-equivariantly isomorphic and are distinguished by epsilon within the supplied Hamming pair
+PASS C1 [exact] the C3[111] restriction U = C|_T1 on each triplet has tr U = 0 and U^3 = I, with eigenvalues {1, omega, omegabar}: each triplet is the regular representation of Z/3
+PASS C2 [exact] the C-invariant vector of each triplet has corner weights exactly (1/3, 1/3, 1/3) -- gauge-invariant trimaximality; against the fixed democratic W = (1,1,1)/sqrt3 the overlaps are |<W|v>|^2 = 1 and 1/9, a corner-sign gauge artefact removed by rephasing a single corner, which carries U to the plain 3-cycle and v to W
+PASS C3 [exact] the C3 singlet projectors P_0 = |v><v| have every entry of modulus 1/3 (P_0 = J/3 in the gauge that carries v to W), are idempotent, and P_0 and P_1 = I - P_0 both commute with U
+  operator restrictions on each cubic carrier (a, |b|, delta/pi, r = |b|^2/a^2; exact):
+    operator                               hw  a      |b|    delta/pi  r        dev
+    sum_a Gamma_a                          1   0      0      --        --       0
+    sum_a Gamma_a                          2   0      0      --        --       0
+    sum_a Xi_a                             1   0      0      --        --       0
+    sum_a Xi_a                             2   0      0      --        --       0
+    i sum_a Gamma_a Xi_a = Z_1+Z_2+Z_3     1   1      0      --        0        0
+    i sum_a Gamma_a Xi_a = Z_1+Z_2+Z_3     2   -1     0      --        0        0
+    (sum_a Gamma_a)^2                      1   3      0      --        0        0
+    (sum_a Gamma_a)^2                      2   3      0      --        0        0
+    (sum_a Xi_a)^2                         1   3      0      --        0        0
+    (sum_a Xi_a)^2                         2   3      0      --        0        0
+    T = i Gamma_1 Gamma_2 Gamma_3          1   0      0      --        --       0
+    T = i Gamma_1 Gamma_2 Gamma_3          2   0      0      --        --       0
+    epsilon = Z_1 Z_2 Z_3                  1   -1     0      --        0        0
+    epsilon = Z_1 Z_2 Z_3                  2   1      0      --        0        0
+    i(G_xG_y + G_yG_z + G_zG_x)            1   0      1      +0.500    --       0
+    i(G_xG_y + G_yG_z + G_zG_x)            2   0      1      +0.500    --       0
+    i(X_xX_y + X_yX_z + X_zX_x)            1   0      1      +0.500    --       0
+    i(X_xX_y + X_yX_z + X_zX_x)            2   0      1      +0.500    --       0
+    p_a^2 coeff of H(pi+p)^2               1   1      0      --        0        0
+    p_a^2 coeff of H(pi+p)^2               2   1      0      --        0        0
+    i sum_a Gamma_a Xi_{a+1}               1   0      1      +1.000    --       0
+    i sum_a Gamma_a Xi_{a+1}               2   0      1      +0.000    --       0
+    i sum_a Gamma_a Xi_{a+2}               1   0      1      +1.000    --       0
+    i sum_a Gamma_a Xi_{a+2}               2   0      1      +0.000    --       0
+PASS D1 [exact] every one of the twelve stipulated bilinears restricts to an exactly circulant operator on each carrier (residual 0, c = conj(b) throughout), with the tabulated (a, |b|, delta, r); the restrictions of sum Gamma_a, sum Xi_a and T are identically zero, and the p_a^2 coefficient of H(pi+p)^2 is the identity on both carriers -- the naive dispersion is hw-blind
+PASS D2 [exact] all twelve commute with C3[111]; the 6 that commute with all 24 lifts have b = 0 on both carriers (Schur on an irreducible T1), and the O-average of each of the other 6 is exactly 0, so their a -- which depends on the O-average alone, the Hamming projectors being O-invariant -- vanishes; no listed operator has a != 0 and b != 0, hence each nonzero scalar restriction has r = 0; r is undefined at a = 0
+PASS D3 [exact] surjectivity: on each carrier the three real C3-invariant Hermitian quadratics alpha (sum Z_a) + beta i(sum_cyc Gamma_a Gamma_{a+1}) + gamma i(sum_a Gamma_a Xi_{a+1}) map onto (a, Re b, Im b) with real rank 3, so every (a, Re b, Im b), with delta only for b != 0 and r only for a != 0 -- hence every r in [0, inf) -- is realised by stipulated coefficients
+PASS D4 [exact] registered examples, stipulated and not derived: the coefficient triple (alpha, beta, gamma) = (2, 1, 1) registers r = 1/2 and (2, 1, 0) registers r = 1/4, exactly and on both carriers -- r is a free function of stipulated coefficients, matched not delivered
+PASS E1 [exact] all 6 relabellings of each carrier's basis leave (a, |b|, r where defined) unchanged with circulant residual 0, for every one of the twelve operators: no quantity reported here depends on which member of a triplet is written first
+PASS E2 [exact] all 24 cubic conjugations (O -> g O g^-1 with C -> g C g^-1, covering all eight C3 elements) leave (a, |b|, r where defined) unchanged with circulant residual 0, for every one of the twelve operators
+PASS E3 [exact] naming C^2 rather than C the generator sends b -> conj(b), i.e. delta -> -delta when b != 0, and leaves (a, |b|, r where defined) fixed on both carriers: the orientation of the cyclic order is a supplied datum, not a computed one
+PASS F1 [exact] exactly 4 of the twelve separate the two carriers: sum Z_a and epsilon, by the sign of a -- the chirality grading's own sign convention -- and the two Gamma-Xi cross terms, with equal |b| and delta differing by exactly pi; the remaining 8 restrict identically to both
+PASS F2 [exact] no listed operator is C3-invariant with b != 0 on exactly one carrier: the off-diagonal part is either absent on both or present on both, so nothing in this list singles out one triplet as the one carrying a weight
+PASS R1 [exact mixed carrier] actual rank3 rational projector commutes with all24 lifts, is irreducible and distinct from the Hamming pair
+PASS R2 [exact domains] all24 actual table rows retain undefined r at a=0 and undefined phase at b=0, including zero/scalar/off-diagonal cases
+SUMMARY: exact isotypic multiplicities permit mixed cubic carriers; the supplied Hamming grading selects two copies. The original finite coefficient table is retained, with ratios and phases only on their domains; no physical readout or carrier selection follows.
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py
+runner_sha256: 4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b
+input_fingerprint_sha256: a550c9805d7c465625bd345699d2cf6c8b215ed7788cce610720e93feb73c6e1
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 54.84
+status: ok
+----- stdout -----
+SOURCE_INPUTS: docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md:fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa docs/MINIMAL_AXIOMS_2026-06-29.md:93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753
+PASS A1 [exact] the 24 proper rotations and the full 48-element cubic group induce the SAME 20 orbits on the 128 seven-bit star patterns, with identical canonical representatives, so every rotation-invariant value-reading star rule is inversion-invariant and no such rule encodes a chirality
+PASS A2 [exact] spacing 2, the vertex-star argument of PR #7834 recomputed: on the 4x4x4 torus the 48 templates (16 translates x 3 orientations of period (4,2,2)) give every corner six free code neighbours, and corner stars realise all 128 of the 128 value patterns and 4 of the 4 adjacent pairs, so the maximal value-reading star rule is vacuous there
+PASS B1 [exact] zoom-out lemma: s=3 p=1 |G_pt|=3 orbits=10 masks=11 code_nbrs<=3 ; s=3 p=2 |G_pt|=3 orbits=10 masks=11 code_nbrs<=3 ; s=4 p=2 |G_pt|=24 orbits=9 masks=10 code_nbrs<=1 -- no site has an all-code star, the count being 1 or 3, never 6, so the spacing-2 vacuity of A2 is defeated at every spacing tested and any failure below has another mechanism
+PASS B2 [exact] the maximal rule accepts its own intended configurations and is covariant: penalty 0 for all 1024 + 1024 + 512 assignments with every code filling, and for 48 sampled ones over every rotation and translate too; accepted sizes |A| of 128 span 28-111, 28-111, 8-69, and 0 are vacuous
+PASS B3 [exact mask diagnostic] mixed-marker masks do not establish uniform junk; uniform configurations require complete intended-orbit exclusion; the original mask-diagnostic counts are 282/1024, 282/1024, 32/512
+PASS B4 [exact, exhaustive propagation, no SAT] s=3, both code positions, all 1024 assignments each: 1024 and 1024 admit junk, 0 are junk-free; the period multiset census of the lexicographically least junk witness is the same for both, count x abc = 489x333 438x111 73x133 24x113 (intended 333); 38590 branch nodes, 133 at worst
+PASS B5 [exact, exhaustive propagation, no SAT] s=4 midpoint, all 512 assignments: 512 admit junk, 0 junk-free; census count x abc = 321x111 37x122 36x222 33x112 31x114 17x444 15x144 11x124 8x224 3x244 (intended 444); 16363 branch nodes, 301 at worst
+PASS B6 [exact] each of the 2560 witnesses tiles to the 2s-torus (6^3 and 8^3) with penalty 0, still no translate or rotation of the intended pattern, so junk survives the doubled box, 2560 of 2560: no covariant maximal value-reading star rule tested is junk-free
+PASS R1 [exact orbit] all2560 original and doubled-box intended images independently complete, with intended positive controls
+PASS R2 [exact uniform classification] six accepted intended-uniform examples are excluded from junk; genuine uniform-junk examples also exist
+PASS R3 [exact full census] actual coordinate periods match every original count, including489/489 full333 and17 full444 witnesses
+PASS C1 [algebra with numerical pin checks] aliasing lemma, algebraic half: a side of length 2 identifies the two +- neighbour slots on that axis, so the star term is the pullback h = 1 - V^dag Pi_K V and the image of the diagonal isometry V on that pair is span{|00>,|11>}, holding the pinned product |p>|p> exactly when ab = 0 for |p> = a|0> + b|1>, a Z eigenstate; on all 6 pins
+PASS C2 [numerical finite linear algebra] aliasing lemma, computed half, 2D 4x2 torus in full: of the 72 (pin pair, variant) cases 30 are vacuous -- exactly FULL at all 30 pairs with v != f -- and of the 42 live cases 22 are faithful and 20 not, the unfaithful being exactly those with neither pin a Z eigenstate
+PASS C3 [numerical finite linear algebra] 2D 4x2 torus, faithful Z-pin rows: v=f=|0> gives dim K = 17, nullity 35 against 23 intended, so 12 junk zero modes in EVEN and 4 in FULL; v=|0> f=|1> gives dim K = 24, nullity 64 against 28, so 36 junk. No faithful named-pin choice on this torus is junk-free
+PASS C4 [numerical finite linear algebra] 3D seven-site star, all 64 pin triples from {0,1,+,-} and both variants: dim K runs 51-76 of 128 in EVEN and 65-105 in FULL, so no template is vacuous, and all 16 all-Z triples are faithful on the 4x2x2 torus -- which is why the 3D rows use Z pins only
+PASS R4 [complete finite intended coverage] every intended product in each numerically faithful2D row and all16 all-Z3D cases was checked locally
+PASS C5 [numerical, matrix-free, seed fixed] 2D 4x4 torus, no aliasing, state vectors of length 65536: alternating projections from a random start reach residual energy at most 9e-14 and carry junk fraction (weight outside the intended span) ++ E 0.85-0.89 ; ++ F 0.31-0.33 ; 01 E 0.91-0.92 ; +- E 0.65-0.67 ; 0+ E 0.78-0.84
+PASS C6 [numerical, stochastic, seed fixed] the same runs give finite-product trace diagnostics targeting kernel dimension, 4 probes, sample SE only (iteration bias unbounded): ++ E 743+-13 vs 96 intended ; ++ F 743+-13 vs 511 intended ; 01 E 1534+-22 vs 124 intended ; +- E 399+-7 vs 128 intended ; 0+ E 690+-17 vs 128 intended -- each far above its intended count
+PASS C7 [numerical, matrix-free, seed fixed] 3D 4x2x2 torus, Z pins, the faithful case: 000 E dimK=51 junkfrac 0.56-0.62 est 451+-9 vs 173 ; 000 F dimK=65 junkfrac 0.53-0.54 est 756+-16 vs 349 ; 010 E dimK=69 junkfrac 0.74-0.76 est 988+-18 vs 252 ; 011 E dimK=69 junkfrac 0.89-0.90 est 2260+-14 vs 244; residual energy at most 1e-15, intended-state energy at most 2e-15
+PASS C8 [numerical, matrix-free, seed fixed] these two particular extracted junk vectors are entangled (product junk also exists); energy at most 2e-15, weight inside the intended span at most 7e-31, Schmidt rank 35 and 31 across a half cut of 256, every single-site reduced state mixed with purity at most 0.661 and 0.725 -- no site is pinned
+PASS C9 [numerical finite linear algebra] the one-dimensional contrast, three-site stars on an 8-ring: Z pins in the EVEN variant are junk-free, dim K = 3 and nullity 3 equal to the 3 intended states, while |+> and |-> in EVEN give nullity 9 against 4 and every tested FULL choice 47 against 31; 2 of 8 junk-free: this positive exception is retained in every negative scope
+PASS R5 [exact actual product junk] all-Z3D nullity/intended447/173,743/349,999/252,2286/244; all-zero product junk for010/011 EVEN
+PASS R6 [exact positive exception] both1D Z-pin EVEN cases have actual zero-space=intended dimension3
+PASS R7 [actual PSD alias control] A is a positive contraction; actual Q selects only eigenvalue1, equal kernels with distinct spectra and I-A<=I-Q
+SUMMARY: all2560 named binary assignments admit unwanted configurations, including full-period witnesses. Named2D/3D quantum rows exhibit local-intersection/global-span excess, with numerical limits stated; two1D Z-pin EVEN cases are junk-free. Neither the full rule classes nor physical Record selection is settled.
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+
