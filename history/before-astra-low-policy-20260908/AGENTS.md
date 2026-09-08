@@ -51,19 +51,6 @@ empirical validation; a candidate assembly is not that certification.
 
 ## Dispatch and review
 
-Owner update 2026-09-08: use Astra low for focused landing reviews, with one
-independent reviewer per coherent unit. Escalate an unresolved consequential
-mathematical or premise question to Astra xhigh. Read the complete changed
-argument and necessary premises; challenge decisive evidence and physical
-identifications. Report material findings concisely. Fix or narrow known false
-claims before landing. Exhaustive new per-line, per-predicate or per-array
-certificates are not routine landing requirements; detailed certification belongs
-to the later formal audit. This focused-depth rule governs older broad checklist
-wording below. Preserve source/input identity, complete source disposition,
-original-reviewer correction confirmation and the combined integration gate.
-Reuse completed reviews without rerunning them merely to change model labels.
-Follow current main's review-loop skill for the full executable contract.
-
 The orchestrator owns goal selection, integration, and honest reporting.
 Delegate concrete independent work when useful and permitted, using available
 capacity rather than a fixed worker quota. A worker may explore alternatives

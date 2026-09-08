@@ -1,0 +1,53 @@
+{
+  "landed_main": "92e6a67702049166df69faad176b6b46d59d2090",
+  "tree": "79b2cac8df86cd9ee5664d22fa24b047a0d42c81",
+  "base": "e4b4fd46dbdc075a218387a0c23a1a2739f4f01c",
+  "utc": "2026-09-08T22:29:18.858326+00:00",
+  "verified_remote_source_paths": 8,
+  "generated_paths_preserved_and_stripped": 755,
+  "pipeline_attempts": 2,
+  "retry_reason": "Full pipeline passed through step17; step18 required staged manifest acknowledgement. Abort trap deletes partial checkpoint and producer receipts, so a full mechanical retry is necessary to finalize its evidence honestly.",
+  "gates": [
+    {
+      "name": "pipeline",
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 237.5312422499992,
+      "log_sha256": "687711e9023339c2ed6aa9e2ada9f5b62bb5864996c6254c35e1973c3f6dd8ea"
+    },
+    {
+      "name": "strict-lint",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/audit_lint.py",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 3.334018333000131,
+      "log_sha256": "d8f3b41ea1f64aa458c363ddb13512d372d45d54ef0cec428aa2b90f8da4c66a"
+    },
+    {
+      "name": "changed-evidence",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/check_changed_audit_evidence.py",
+        "--base",
+        "e4b4fd46dbdc075a218387a0c23a1a2739f4f01c"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 1.0216910000017378,
+      "log_sha256": "ce92a62ec3bc24396a5f0de37f7d0c27a36d5eb99d5739c91517da7d98449f7b"
+    }
+  ],
+  "independent_review_receipt_sha256": "5180c7944b514baf61b80ae74f31397a30b8878a6401e233acab5d8078bb962b",
+  "manifest_review_receipt_sha256": "78a1cb79083ad5df37f23e7501c857f4cfb81c1501207b90b7559593fcac4e7a",
+  "report_sha256": "73b326969b8d8403eb5729d6184e8a9c720969f5209aeef7926b88da3d3cb6fc",
+  "science_pr_closures": 0,
+  "science_batch_count_unchanged": 29,
+  "formal_audit": false
+}

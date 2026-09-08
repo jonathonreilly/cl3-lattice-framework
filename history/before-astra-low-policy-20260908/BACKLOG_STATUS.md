@@ -1,6 +1,6 @@
 # Backlog review and landing — current handoff
 
-Updated after process maintenance at 2026-09-08T22:31:05.376340+00:00. Main is `92e6a67702049166df69faad176b6b46d59d2090`. Science counts remain at wave29.
+Updated after wave29 at 2026-09-08T15:03:12.035702+00:00. Main is `e4b4fd46dbdc075a218387a0c23a1a2739f4f01c`.
 The cleanup covers the original 254 PRs only. New arrivals are excluded;
 formal audit waits until a solid TOE.
 
@@ -32,12 +32,10 @@ W39 wording correction. All 173 original check IDs remain; final runners pass
 Only #7982 needed a final cache refresh for the note correction. One combined
 gate passed in 227.334 seconds. See [wave29 evidence](backlog_evidence/wave29/INDEX.json).
 
-focused_process_review completed the #7908/#7914 author corrections; genuine
-final runs pass 36/0 and 32/0. Original reviewer backlog_draft_triage is confirming
-the frozen correction. backlog_batch_contract is completing #5966/#5950/#5952
-source-bound evidence; original reviewer backlog_8001_review retains confirmation.
-#7933 original review is sealed CHANGES_REQUIRED with seven material groups;
-correction author assignment is next. The completed blind reviewer-model experiment is recorded
+Root authors #7908/#7914 corrections. backlog_batch_contract authors the
+#5966/#5950/#5952 unit; original reviewers retain final confirmation.
+backlog_draft_triage reviews the original #7933 SU3 unit while respecting
+ready-confirmation priority. The completed blind reviewer-model experiment is recorded
 in [REVIEWER_MODEL_PILOT.md](REVIEWER_MODEL_PILOT.md); Astra low is the owner-selected default for focused future landing reviews, with targeted Astra xhigh escalation. The pilot grants no source PASS.
 
 ## Landed source history
@@ -253,9 +251,8 @@ no formal audit or grade was applied.
 | Landed | #7918/#7928/#7934 support and readout | All nine findings and nineteen claim groups resolved; all 143 original IDs preserved. Physical access, formation and general-domain questions remain open. |
 | Landed | #7939/#7977/#7982 role laws and matter readout | Complete corrected conditional source and exact original history landed in W29; physical law and formation remain open. |
 | Author backlog_batch_contract; original reviewer backlog_8001_review | #5966 including #5950/#5952 | Original review sealed13finding groups; bounded source and supplier repairs in progress. |
-| Author focused_process_review; original reviewer backlog_draft_triage | #7908/#7914 nonabelian plaquette | Corrections and genuine final runs36/0,32/0 complete; original reviewer confirming. All52 original IDs preserved; science remains unlanded. |
-| Completed | Same frozen #7908/#7914 original source | Astra low4.98min,$2.29 API-equivalent; Sol xhigh26.53min,$3.65. Focused Astra-low policy landed and installed. Both missed material findings; one trial is not general sufficiency. |
-| Original reviewer backlog_draft_triage; author next | #7933 SU3 | Original review sealed seven material correction groups. Finite dimension results survive; state/triality/physical interpretation and two false-positive gates need correction. |
+| Root author; original reviewer backlog_draft_triage | #7908/#7914 nonabelian plaquette | Original review sealed CHANGES_REQUIRED: 12 groups, all 6 sources/52 checks/38 sections. Root provisional runtime fixes; final note/premise repair and confirmation remain pending. Independent blind model pilot uses the original source, not corrections; #7933 remains separate. |
+| reviewer_astra_low; reviewer_sol_xhigh queued | Same frozen #7908/#7914 original source | Owner-requested reviewer pilot: Astra low active; Sol xhigh gets identical neutral instructions when a slot opens. Compare validated defects, misses, false positives, time and actual per-agent token usage. Pilot results grant no landing or audit status; see REVIEWER_MODEL_PILOT.md. |
 | Reconciliation complete | 51 direct landings and 110 other closures | 161 closed originals; 66 pending closed scopes at six open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Landed | #6377 and eleven consolidated original scopes | All seven findings and 253 sections accounted for; all 115 original checks preserved. Actual supplier/input closure repaired; broad physical and supplier-campaign claims remain open. |
@@ -263,10 +260,9 @@ no formal audit or grade was applied.
 | Held | Curved covariance | Actual closure reaches reserved science. No raw tower landing or full source PASS. |
 | Open | #7966 field remainder | Preserve failed production and exact source/sector/estimator distinctions. Review actual remaining closure before further computation. |
 
-The #5966/#5950/#5952 original review is complete: 26 original source paths,
-91,482 endpoint-map rows and thirteen material findings. The correction preserves
-exact original history and isolates the actual four-definition fixture from
-historical parent campaigns. Final corrected executions and confirmation remain.
+Partial #5966/#5950/#5952 preparation preserves 26 source paths and 90,600 complete
+original map rows. Sixteen first-hop suppliers and the removed scalar Record
+additivity premise are identified; full source/closure review and execution remain.
 [Preparation evidence](backlog_evidence/wave15/5966-preparation/REPORT.md).
 
 The pre-landing #6358 composed-tree binding is preserved in
@@ -358,9 +354,3 @@ The [wave27 handoff](backlog_evidence/wave27-handoff/INDEX.json) preserves the e
 Final carrier review, validation, landing and current counts are bound in [wave27 evidence](backlog_evidence/wave27/INDEX.json). Earlier handoffs remain historical preparation snapshots.
 
 Next repair findings are shared in the [support/readout original review](backlog_evidence/wave27/next-original-reviews/backlog-support-readout-7918-7928-7934-review/REPORT.md) and [cumulative #6377 original review](backlog_evidence/wave27/next-original-reviews/backlog-dk-os-6377-review/REPORT.md), with its [separate read-count addendum](backlog_evidence/wave27/next-original-reviews/backlog-dk-os-6377-read-metadata-addendum/ADDENDUM.md). These are changes-required reviews, not landing approvals.
-
-Focused Astra-low process maintenance is landed on main at `92e6a67702049166df69faad176b6b46d59d2090`; both
-installed review skills match that revision. Seventy contract tests passed. The
-full mechanical pipeline required one manifest-acknowledgement repair and retry,
-then strict lint and changed-evidence checks passed. This closes no science PR
-and changes no backlog count or audit verdict. See [process evidence](backlog_evidence/astra-low-policy-20260908/INDEX.json).

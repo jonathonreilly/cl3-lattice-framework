@@ -52,14 +52,12 @@ joint-law selection remain open.
 
 1. W29 corrected finite role laws and static matter-readout source is on main.
    BACKLOG_STATUS and the canonical reconciliation hold the exact 93-open
-   backlog and accepted-source boundaries. #7908/#7914 author repairs are complete
-   and their original reviewer is confirming the corrected source;
+   backlog and accepted-source boundaries. Root authors #7908/#7914 repairs;
    backlog_batch_contract authors #5966/#5950/#5952 from its sealed original
    review. Original reviewers retain final source confirmation. The SU3 #7933
-   original review is sealed with seven material findings; source correction is next.
+   original is in bounded independent review with ready-confirmation priority.
    The completed blind Astra-low/Sol-xhigh pilot is recorded in REVIEWER_MODEL_PILOT.
-   The owner-selected Astra-low policy is now landed and installed for focused
-   landing review, with targeted escalation
+   The owner selected Astra low for focused landing review, with targeted escalation
    of unresolved questions to Astra xhigh. Detailed certification waits for audit.
    Sixty-six closed scopes remain pending at six open successors. Fixed original
    membership, transitive reservations and formal audit deferral remain.

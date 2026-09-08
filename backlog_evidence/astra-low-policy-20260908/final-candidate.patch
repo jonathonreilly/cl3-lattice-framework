@@ -1,0 +1,265 @@
+diff --git a/.claude/commands/review-loop.md b/.claude/commands/review-loop.md
+index 8eedec11c0..24f6f1bd63 100644
+--- a/.claude/commands/review-loop.md
++++ b/.claude/commands/review-loop.md
+@@ -27,13 +27,12 @@ Mode selection:
+ 1. Read the skill file above before acting.
+ 2. Select the mode per the Invocation section above; focused mode only
+    when a `[target]` is named.
+-3. Fan out the physics reviewers in parallel when the agent environment allows:
+-   `CodeRunnerReviewer`, `PhysicsClaimReviewer`,
+-   `ProofObligationReviewer` (when theorem/proof/reduction claims changed),
+-   `ImportSupportReviewer`, `NatureRetentionReviewer`,
+-   `NoGoDisciplineReviewer` (when negative claims changed),
+-   `LabelingConventionReviewer` (when bounded-theorem candidates changed),
+-   `RepoGovernanceReviewer`, and optionally `MethodologySkillReviewer`.
++3. Use one independent Astra-low (`gpt-6-astra`, `low`) reviewer per coherent
++   unit. Apply the relevant physics lenses in one focused pass. Escalate only
++   unresolved material mathematical/premise questions or reviewer disagreements
++   to Astra xhigh. Completed valid reviews remain reusable. Follow the skill's
++   focused-landing section: concise material findings and decisive evidence;
++   exhaustive claim certification belongs to the deferred formal audit.
+ 4. Fix only verified, narrow findings. Demote overclaims instead of patching
+    missing science with prose. Use the skill's overlap-repairs guidance for
+    authorized early finding handoffs against immutable originals, safe-boundary
+diff --git a/docs/ai_methodology/SCIENCE_WORKFLOW.md b/docs/ai_methodology/SCIENCE_WORKFLOW.md
+index 02bbaab6e0..79c8f1f18a 100644
+--- a/docs/ai_methodology/SCIENCE_WORKFLOW.md
++++ b/docs/ai_methodology/SCIENCE_WORKFLOW.md
+@@ -74,6 +74,16 @@ review and close/ready decisions after exact-head verification; still-draft
+ landing is forbidden, and marking ready does not grant PASS. Owner-reserved
+ content remains excluded until its reservation is explicitly lifted.
+ 
++Owner update (2026-09-08): ordinary landing review uses one independent
++Astra-low reviewer per coherent unit, focused on consequential mathematical
++errors, unsupported conclusions and reproducible decisive evidence. Specific
++unresolved mathematical/premise questions or reviewer disagreements escalate
++to Astra xhigh. Keep source recovery, current-main preservation and final
++source confirmation; reuse valid completed reviews and avoid exhaustive
++per-claim reporting at this stage. Formal audit provides detailed certification
++later. Neither a model choice nor audit deferral permits known false claims,
++unlabelled assumptions or fabricated evidence to land as established results.
++
+ The mechanical audit pipeline prepares and propagates data. A pipeline PASS,
+ runner PASS, reviewer PASS, and scientific audit verdict answer different
+ questions. None substitutes for the others. Audit must be free to disagree
+diff --git a/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md b/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md
+index c631361a82..613b8b39dd 100644
+--- a/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md
++++ b/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md
+@@ -17,6 +17,19 @@ Use this skill to apply reviewer pressure before a claim lands on the live
+ surface. The raw synthesis shows that the most common failure is not bad prose;
+ it is artifact-chain or semantic drift.
+ 
++## Landing review depth
++
++For pre-landing review, follow the owner-selected Astra-low default and focused
++review contract in [`../review-loop/SKILL.md`](../review-loop/SKILL.md).
++Read the complete changed argument and its necessary premises, challenge the
++decisive mathematics and physical identifications, and report material findings
++concisely. Escalate unresolved consequential questions to Astra xhigh. The
++batteries below guide risk selection; they do not require exhaustive new
++certificates for every minor detail. Known false claims must be fixed or
++narrowed before landing; comprehensive claim certification belongs to the
++later independent audit. This does not change the formal auditor's model or
++standards, or authorize running it before the owner's solid-TOE milestone.
++
+ ## Workflow
+ 
+ 1. **Read the claimed authority surface.** Identify the note, runner, log,
+diff --git a/docs/ai_methodology/skills/review-loop/PREFLIGHT.md b/docs/ai_methodology/skills/review-loop/PREFLIGHT.md
+index 0a5b15a3a0..3638cbcd3f 100644
+--- a/docs/ai_methodology/skills/review-loop/PREFLIGHT.md
++++ b/docs/ai_methodology/skills/review-loop/PREFLIGHT.md
+@@ -28,6 +28,12 @@ input bindings before final runner execution; freeze the reconciled correction
+ and inputs first. Preserve prior receipts if a later input change requires a
+ new authorized execution.
+ 
++Use the owner-selected focused landing depth in `SKILL.md`: default Astra-low
++review, targeted escalation for material unresolved questions, and concise
++reusable evidence. Fix consequential defects before handoff; do not construct
++new per-sentence, per-function or per-array report catalogs without a concrete
++source-preservation or scientific need. This preflight is not formal audit.
++
+ ## 1. Sources, not memory
+ 
+ Every sentence that characterizes a claim, a note, or a status is written
+diff --git a/docs/ai_methodology/skills/review-loop/SKILL.md b/docs/ai_methodology/skills/review-loop/SKILL.md
+index 87fc5a59d7..5c3d7778b8 100644
+--- a/docs/ai_methodology/skills/review-loop/SKILL.md
++++ b/docs/ai_methodology/skills/review-loop/SKILL.md
+@@ -20,12 +20,20 @@ be explicit, and support-only results must not be promoted by prose.
+ 
+ ## Model And Tool Boundary
+ 
+-Review-loop is a text/code/math review path. Run it with the user's configured
+-highest-tier Codex reviewer model and maximum available reasoning for this
+-repo. Resolve the current model from the active configuration; dated model
+-names in process prose are not configuration. Respect an explicit owner
+-choice of model or reasoning tier for the episode. Do not switch to lower-reasoning models for convenience, and
+-do not use image-generation, image-editing, presentation, document-rendering,
++Review-loop is a text/code/math review path. Owner direction (2026-09-08):
++use **Astra low** (`gpt-6-astra`, `low`) for ordinary pre-landing science review.
++Use one independent reviewer per coherent unit, applying the relevant lenses
++in one focused pass. Escalate a material mathematical or premise question,
++reviewer disagreement or failed decisive control that the unit review cannot
++resolve through a narrow correction to
++**Astra xhigh**; send its source and evidence, not the entire backlog. An
++escalation is not a routine second review. Reuse completed valid reviews and
++the original reviewer's affected-fix confirmation; do not rerun them just to
++change model labels. Respect a later explicit owner choice. If a requested
++model is unavailable, report that fact and use an available reviewer only
++with its actual configuration stated. Do not silently substitute a model.
++
++Do not use image-generation, image-editing, presentation, document-rendering,
+ or visual-generation tools unless the user explicitly asks for a separate
+ visual artifact task.
+ 
+@@ -89,6 +97,35 @@ bounded theorem surfaces when they are scoped, labelled, and
+ dependency-checked; repo-wide axiom additions and primitive additions are not
+ review-loop fixes.
+ 
++## Focused landing review (owner-directed 2026-09-08)
++
++Landing admits useful, honestly scoped science to main. It does not certify
++the TOE or confer a retained grade. Read the complete changed argument and
++necessary actual premises/inputs. Focus on consequential mathematical errors,
++unsupported physical or quantified conclusions, source loss, and evidence
++that fails to reproduce or does not test the decisive claim. Fix known false
++claims, or narrow/defer them explicitly, before landing. A passing runner
++alone cannot supply a missing proof or physical premise.
++
++Use the detailed lenses below to find these risks. Their exhaustive catalogs
++are escalation guidance: ordinary landing review does not require a separate
++report for every sentence, callable, predicate, tensor, array or conceivable
++route. Keep one concise report with material findings, exact source/input
++identities, relevant independent checks, honest scope and final disposition.
++Retain complete constituent source recovery/disposition and the current-main
++loss check; reuse already verified inventories instead of recreating them.
++Uncertainty material to a stated result must be resolved, narrowed or escalated;
++it cannot be hidden by postponing audit. Minor editorial detail and exhaustive
++claim-by-claim certification can wait for the later formal audit.
++
++Existing provenance, unchanged-head checks, source/input freshness, actual
++execution limits, independent final confirmation, one combined mechanical
++gate and audit-status separation remain required. Assess no-go quantifiers
++and counterexamples carefully; retain honest N1-N8 artifacts where the
++mechanical contract requires them without inventing exhaustive route coverage.
++This section controls review depth and report granularity in the detailed
++checklists below. Formal audit remains deferred until a solid TOE is ready.
++
+ ## Premise Authority
+ 
+ <!-- BEGIN GENERATED: axiom-baseline (generate_skill_axiom_baselines.py) -->
+@@ -402,9 +439,8 @@ review-only flags contradict the drain's land-end-to-end contract).
+    `files_to_review`, the changed-file set, or any commit. This is
+    the budget-adapted default of the Reviewer Fanout section below: under
+    the shared-pool budget, cross-unit parallelism replaces per-lens
+-   parallelism; full per-lens fanout inside one unit remains available in a
+-   quiet pool, and every applicable lens must be explicitly covered either
+-   way.
++   parallelism. Use extra seats only for an identified escalation or explicit
++   owner request; spare capacity alone does not require per-lens fanout.
+ 4. **Concurrency budget (shared codex pool).** Reviewer processes share one
+    pool with the audit lane's auditor seats and judicial panels. Keep the
+    TOTAL concurrent codex processes across every lane at or under ~8-10
+@@ -936,12 +972,12 @@ lint to regenerate it.
+ On each iteration, set `files_to_review` to the files that changed since their
+ last clean review. On iteration 1, use all original changed files.
+ 
+-Run every applicable reviewer lens. Under the shared-pool concurrency
+-budget (Default Entry above), combine the lenses into one or two passes per
+-review unit — full per-lens parallel fanout through the available agent/subagent
+-mechanism is the quiet-pool mode. If parallel agents are unavailable, run
+-the same reviewer passes locally and report that limitation. In every mode,
+-each applicable lens must be explicitly covered and named in the findings.
++Apply the relevant lenses in the default single Astra-low unit review.
++Record their material conclusions in the concise unit report. Use an extra
++Astra-xhigh seat only for the unresolved question that needs it. The lens
++names below identify responsibilities, not mandatory separate workers or
++standalone reports. When independent agents are unavailable, report that
++limitation; an author's self-review is not independent confirmation.
+ 
+ ### Required Reviewers
+ 
+diff --git a/docs/audit/scripts/check_review_loop_skill_contract.py b/docs/audit/scripts/check_review_loop_skill_contract.py
+index 6f787f3572..316373d4e9 100644
+--- a/docs/audit/scripts/check_review_loop_skill_contract.py
++++ b/docs/audit/scripts/check_review_loop_skill_contract.py
+@@ -132,11 +132,14 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
+         r"premise_decision_history\.json",
+     ),
+     "reviewer_model_and_effort": (
+-        r"^Review-loop is a text/code/math review path\. Run it with the user's "
+-        r"configured\s+highest-tier Codex reviewer model "
+-        r"and maximum available reasoning for this\s+repo\.",
+-        r"\.\s+Resolve the current model from the active configuration;",
+-        r"\.\s+Respect an explicit owner\s+choice of model or reasoning tier for the episode\.",
++        r"^Review-loop is a text/code/math review path\. Owner direction \(2026-09-08\):\s+"
++        r"use \*\*Astra low\*\* \(`gpt-6-astra`, `low`\) for ordinary pre-landing science review\.",
++        r"\.\s+Escalate a material mathematical or premise question,\s+"
++        r"reviewer disagreement or failed decisive control that the unit review cannot\s+"
++        r"resolve through a narrow correction to\s+\*\*Astra xhigh\*\*;",
++        r"\.\s+Respect a later explicit owner choice\.",
++        r"\.\s+If a requested\s+model is unavailable, report that fact and use an available reviewer only\s+"
++        r"with its actual configuration stated\. Do not silently substitute a model\.",
+     ),
+     "reviewer_lenses": (
+         r"^- `CodeRunnerReviewer`\s*$",
+diff --git a/docs/audit/scripts/tests/test_review_loop_skill_contract.py b/docs/audit/scripts/tests/test_review_loop_skill_contract.py
+index 07ebc767a1..f9d77b8255 100644
+--- a/docs/audit/scripts/tests/test_review_loop_skill_contract.py
++++ b/docs/audit/scripts/tests/test_review_loop_skill_contract.py
+@@ -46,7 +46,7 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
+ 
+     def assert_skill_mutation_fails(self, needle: str, family: str) -> None:
+         mutated = self.skill.replace(needle, "REMOVED_BY_MUTATION")
+-        self.assertNotEqual(mutated, self.skill, f"mutation needle absent: {needle}")
++        self.assertTrue(mutated != self.skill, f"mutation needle absent: {needle}")
+         self.assertIn(family, self.missing(skill=mutated))
+ 
+     def assert_command_mutation_fails(self, needle: str, family: str) -> None:
+@@ -152,14 +152,14 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
+         self.assertIn("mandatory_authority_reads", self.missing(skill=mutated))
+ 
+     def test_model_and_effort_are_fail_closed(self):
+-        self.assert_skill_mutation_fails("highest-tier", "reviewer_model_and_effort")
+-        self.assert_skill_mutation_fails("maximum available reasoning", "reviewer_model_and_effort")
+-        self.assert_skill_mutation_fails("Resolve the current model", "reviewer_model_and_effort")
++        self.assert_skill_mutation_fails("`gpt-6-astra`, `low`", "reviewer_model_and_effort")
++        self.assert_skill_mutation_fails("**Astra xhigh**", "reviewer_model_and_effort")
++        self.assert_skill_mutation_fails("its actual configuration stated", "reviewer_model_and_effort")
+ 
+     def test_negated_model_and_effort_are_fail_closed(self):
+         mutated = self.skill.replace(
+-            "Run it with the user's configured",
+-            "Do not run it with the user's configured",
++            "use **Astra low**",
++            "do not use **Astra low**",
+             1,
+         )
+         self.assertNotEqual(mutated, self.skill)
+@@ -167,20 +167,20 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
+ 
+     def test_negated_configuration_clause_is_fail_closed(self):
+         mutated = self.skill.replace(
+-            "Resolve the current model", "Do not Resolve the current model", 1
++            "If a requested", "Do not If a requested", 1
+         )
+         self.assertNotEqual(mutated, self.skill)
+         self.assertIn("reviewer_model_and_effort", self.missing(skill=mutated))
+ 
+     def test_negated_owner_choice_clause_is_fail_closed(self):
+         mutated = self.skill.replace(
+-            "Respect an explicit owner", "Do not Respect an explicit owner", 1
++            "Respect a later explicit owner", "Do not Respect a later explicit owner", 1
+         )
+         self.assertNotEqual(mutated, self.skill)
+         self.assertIn("reviewer_model_and_effort", self.missing(skill=mutated))
+ 
+     def test_soft_wrapped_negations_cannot_supply_affirmative_clauses(self):
+-        for clause in ["Resolve the current model", "Respect an explicit owner"]:
++        for clause in ["If a requested", "Respect a later explicit owner"]:
+             for prefix in ["Do not\n ", "Never\n  ", "Do not\n"]:
+                 with self.subTest(clause=clause, prefix=prefix):
+                     mutated = self.skill.replace(clause, prefix + clause, 1)

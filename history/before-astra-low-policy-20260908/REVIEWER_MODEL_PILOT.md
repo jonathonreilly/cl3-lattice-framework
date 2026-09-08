@@ -27,7 +27,3 @@ The packet and neutral instructions were identical and findings stayed blind unt
 FINAL_COMPARISON.json binds both final report directories, frozen source identities, source/coverage validation, final token totals and comparison arithmetic. Additional controls are in ASTRA_NOVEL_CONTROLS.json and SOL_NOVEL_CONTROL_VALIDATION.json. No formal audit was run.
 
 [Durable comparison evidence](backlog_evidence/reviewer-model-pilot-20260908/FINAL_COMPARISON.json). Local full execution evidence: `/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/reviewer-model-comparison-7908-7914-20260908`.
-
-Implementation complete: main `92e6a67702049166df69faad176b6b46d59d2090` contains the independently reviewed
-focused landing policy and its contract tests. Both installed review skills are
-verified in sync. [Landing and sync evidence](backlog_evidence/astra-low-policy-20260908/INDEX.json).
