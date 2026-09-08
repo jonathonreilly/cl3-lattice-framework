@@ -74,3 +74,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "widths 4 and 5 rigorously enclosed by a field-free self-adjoint route that scales with the orbit count; next per the queue refresh: the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the monotone class; width 6 with an interior pair two steps in; consumers: the parked bridge material (read-only, not fired), the record-matter lane's formation-order supply"
 ```
+
+# Trace gate — block 07, at landing (PR #8035)
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the probe record PROBES_gravity_consumer_20260907.md: the Gaussian instance re-scoped to a self-made Hermitian precision; the owner's action-identification gate, not fired"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "consumer: the gravity/source lane's chain-rule-versus-one-shot-joint sentence, stated exactly for a Hermitian precision, ready to instantiate on herm(Q) when that lane's chain reaches main; next in the campaign: formation-law uniqueness on Z^3 for the monotone class; width 6"
+```
