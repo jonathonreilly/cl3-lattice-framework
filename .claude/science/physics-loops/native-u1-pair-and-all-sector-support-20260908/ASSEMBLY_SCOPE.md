@@ -1,0 +1,1 @@
+One coherent conditional claim combines the two already reviewed proofs. Both complete proof bodies are retained with the three explicitly recorded scope repairs. The source and helper inputs are actually read; no graph/registry/commit/publication changes are made by this port. Independent review remains pending.

@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "pair_author",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/pair_author_MUTANT.py\", line 152, in <module>\n    end, p2 = checkcolumn(zz, f)\n              ^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/pair_author_MUTANT.py\", line 133, in checkcolumn\n    _require(not got != {zz: expected}, ('native A map', e, got, expected))\n  File \"/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/pair_author_MUTANT.py\", line 6, in _require\n    if not condition:raise RuntimeError(label)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ('native A map', 62, {1272945756427178873647978558067498711489939072346941232: 1j}, (-0-1j))\n",
+    "scope": "actual mathematical failure; portable fixture path adjusted for scratch execution"
+  },
+  {
+    "kind": "support_author",
+    "exit": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py\", line 151, in <module>\n    y, t, p = reduce(x)\n              ^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py\", line 103, in reduce\n    x = flip(x, a, b, tape)\n        ^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py\", line 69, in flip\n    req(r == want, 'charge increment')\n  File \"/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py\", line 19, in req\n    _require(not not c, label)\n  File \"/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py\", line 6, in _require\n    if not condition:raise RuntimeError(label)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: charge increment\n",
+    "scope": "actual mathematical failure; portable fixture path adjusted for scratch execution"
+  }
+]

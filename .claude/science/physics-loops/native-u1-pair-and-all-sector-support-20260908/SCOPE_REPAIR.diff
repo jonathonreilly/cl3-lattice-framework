@@ -1,0 +1,29 @@
+--- 
++++ 
+@@ -32,7 +32,7 @@
+ 
+ Use the [corrected signed-defect U1 dictionary](NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md) and [full native fermion/Z2 dictionary](NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md), with the [native instrument Pauli conventions](NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md). The physical carrier remains the original edge-bit Hilbert space; two species and electric links are constrained redundant coordinates, not added physical registers. Magnetic-cycle constraints are relaxed and the low-charge projection is supplied. Signed Gauss charge is distinct from the prior conserved defect-number quantity. An A coupling need not preserve that quantity.
+ 
+-The two complete reviewed proofs below retain their original statements and provenance. Part I uses the even cubic torus scope of its dictionary parent. Part II's support-only theorem applies more generally to the stated six-regular bipartite graphs. Its phase witness is established on the actual cubic carrier and independently on K6,6; no universal sign-frustration claim for every graph is needed.
++The two complete reviewed proofs below retain their provenance, with the scope clarifications recorded in the packet. Part I uses the even cubic torus scope of its dictionary parent. Part II's support-only theorem applies more generally to the stated six-regular bipartite graphs. Its phase witness is established on the actual cubic carrier and independently on K6,6; no universal sign-frustration claim for every graph is needed.
+ 
+ ## Part I: exact pair operator
+ 
+@@ -83,7 +83,7 @@
+ 
+ The operator has nonzero D0->D2, D2->D0 and D2->D4 matrix elements on the actual carrier, with Hermitian reverses. Hence D and each species number are not conserved under a general supplied nonzero A coupling; pair terms change N+ and N- together. Their difference and all exact Gauss constraints remain conserved. This contrasts with the earlier T-only Hamiltonian, which preserves each signed species separately. Existing D-sector energy and connectivity theorems must not be transferred to a Hamiltonian containing these pair terms without a new argument.
+ 
+-P_low A P_low is not generally an involution on the low domain: forbidden toggles are killed by the intermediate projection, even though ambient A²=I. It connects the exhibited D sectors, but this note alone does not establish connectivity of the entire low domain. Adding real coefficients times these Hermitian operators is a new supplied Hamiltonian choice, not a derivation of occurrence, pair-production dynamics, coupling strength, relativistic particles or physical preparation.
++P_low A P_low is not generally an involution on the low domain: forbidden toggles are killed by the intermediate projection, even though ambient A²=I. It connects the exhibited D sectors, but Part I alone does not establish connectivity of the entire low domain. Adding real coefficients times these Hermitian operators is a new supplied Hamiltonian choice, not a derivation of occurrence, pair-production dynamics, coupling strength, relativistic particles or physical preparation.
+ 
+ ## Exact bounded controls
+ 
+@@ -105,7 +105,7 @@
+ 
+ 4. Reduce x and y separately to ice orientations, join those by step 3, and reverse the reduction path for y. This proves full support connectivity, with a path length at most (D_x+D_y)(V-1)/2+E, hence at most V(V-1)+E. This is a constructive upper bound on graph distance, not a mixing or spectral-gap bound.
+ 
+-An exact unitary dictionary, including the corrected U1 phase map, preserves this support connectivity. Off-D amplitudes still need a separate phase proof: the optional b_D phase now changes, so D-preserving controls cannot supply the operator formula. The supplied Hamiltonian H_A=sum_e lambda_e P_low A_e P_low, with every lambda_e real and nonzero, has this connected support: different edges toggle different bit columns, so these terms cannot cancel one another. No sign-free representation or Perron ground-state uniqueness follows. The existing D4 witness supplies an allowed six-edge word a,b,c,a,b,c on three distinct incident edges. Native canonical A_a,A_b,A_c pairwise anticommute and square to identity, so this word has product -I. Thus the A support also contains a closed phase -1, independently of any T-to-A phase conversion. This is an obstruction to diagonal sign erasure, not a general unitary obstruction. Pair creation is an operator channel here; no relativistic pair production or physical event protocol is inferred.
++The explicit phase-decorated basis bijections used here, including the corrected U1 map, preserve this support connectivity. The support argument alone needs a separate off-D phase proof, supplied by Part I: the optional b_D phase now changes, so D-preserving controls cannot supply the operator formula. The supplied Hamiltonian H_A=sum_e lambda_e P_low A_e P_low, with every lambda_e real and nonzero, has this connected support: different edges toggle different bit columns, so these terms cannot cancel one another. No sign-free representation or Perron ground-state uniqueness follows. The existing D4 witness supplies an allowed six-edge word a,b,c,a,b,c on three distinct incident edges. Native canonical A_a,A_b,A_c pairwise anticommute and square to identity, so this word has product -I. Thus the A support also contains a closed phase -1, independently of any T-to-A phase conversion. This is an obstruction to diagonal sign erasure, not a general unitary obstruction. Pair creation is an operator channel here; no relativistic pair production or physical event protocol is inferred.
+ 
+ ## Executable boundary and provenance
+ 

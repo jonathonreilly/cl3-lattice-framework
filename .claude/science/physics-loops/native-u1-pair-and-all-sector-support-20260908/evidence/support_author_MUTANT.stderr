@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py", line 151, in <module>
+    y, t, p = reduce(x)
+              ^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py", line 103, in reduce
+    x = flip(x, a, b, tape)
+        ^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py", line 69, in flip
+    req(r == want, 'charge increment')
+  File "/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py", line 19, in req
+    _require(not not c, label)
+  File "/private/tmp/toe-24h-probes-20260908/native-u1-pair-and-support-port/support_author_MUTANT.py", line 6, in _require
+    if not condition:raise RuntimeError(label)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: charge increment
