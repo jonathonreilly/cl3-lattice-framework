@@ -277,16 +277,15 @@ def family_b(checks: Checks, report: dict) -> None:
     for o in exts:
         L, D, rec = ldl_factors(P, sites, idx, edges, o)
         Pm.append(L.H * D * L)
-    one = all(is_zero_matrix(x - Pm[0]) for x in Pm)
     snake = [(0, 0), (0, 1), (0, 2), (1, 2), (1, 1), (1, 0)]
     mirror = [(0, 2), (0, 1), (0, 0), (1, 2), (1, 1), (1, 0)]
     L, D, _ = ldl_factors(P, sites, idx, edges, snake)
     Ps_snake = L.H * D * L
     L, D, _ = ldl_factors(P, sites, idx, edges, mirror)
     Ps_mirror = L.H * D * L
-    if mut("monotone_class_split"):
-        Pm[0] = Ps_snake
-    differ = (not is_zero_matrix(Ps_snake - Pm[0])) and (not is_zero_matrix(Ps_mirror - Pm[0]))
+    ref = Ps_snake if mut("monotone_class_split") else Pm[0]
+    one = all(is_zero_matrix(x - ref) for x in Pm)
+    differ = (not is_zero_matrix(Ps_snake - ref)) and (not is_zero_matrix(Ps_mirror - ref))
     checks.check("B5", len(exts) == 5 and one and differ, "G2: the 5 monotone orders of 2x3 give one P_sigma; the snake and the mirror give different ones")
     report["P23"] = (sites, idx, edges, P, Pm[0], exts)
 
