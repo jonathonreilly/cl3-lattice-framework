@@ -53,8 +53,8 @@ joint-law selection remain open.
 1. Reviewed corrected Record, Noether, matter, shifting, symmetry/Hartree,
    walls, sea/corner, flux, relaxation and vacuum/energy source are on main.
    BACKLOG_STATUS.md records exact scopes and commits. Carrier/role #7869/#7880
-   author repairs continue after original review; #7918/#7928/#7934 support/readout
-   originals are under joint source review. The #6377 successor and eleven
+   source is frozen for final confirmation by its original reviewer. The
+   #7918/#7928/#7934 support/readout original review is checkpointed meanwhile. The #6377 successor and eleven
    consolidated originals resume complete source/dependency review from checkpoint.
    Stale authority and moved OS-note guards remain recorded failures; no supplier
    tower or full scientific PASS is accepted. #5966 retains its old Record premise

@@ -1,6 +1,6 @@
 # Backlog review and landing — current handoff
 
-Updated after wave26 on 2026-09-08T09:55:09.738875+00:00. Main is `2838092d748d11791ddb420acf8c1a4d7da30400`.
+Assignments updated on 2026-09-08T10:06:41.415201+00:00; landing counts remain after wave26. Main is `2838092d748d11791ddb420acf8c1a4d7da30400`.
 The owner has fixed this cleanup to the **original 254 PRs**, captured at
 13:10:39 UTC. Exact membership and original heads are in `BACKLOG_CUTOFF.json`.
 New arrivals are excluded. Formal audit waits until a solid TOE.
@@ -233,8 +233,8 @@ on remote main before three closures. No formal audit or grade was applied.
 | Landed | #7883/#7900/#7902/#7904 sea and corner criteria | Complete corrected conditional source accepted, all 108 original IDs and historical evidence preserved. Physical probability, readout, formation and clock suppliers remain open. |
 | Landed | #7874/#7878 free and interacting flux-sector selection | Complete corrected conditional source accepted. All 37 original IDs retained; least-branch, finite perturbative and physical interpretation domains explicit. |
 | Landed | #7879/#7881/#7885 vacuum and energy response | Complete corrected conditional source accepted; 73 original IDs retained, H3 strengthened and 12 controls added. Both #7881 revisions and all original data preserved. |
-| Author backlog_draft_triage | #7869/#7880 cubic carriers and role marking | Original review sealed: twelve findings, including two actual false-negative checks. Separate author repairs preserve all finite witnesses and the positive 1D exception; original reviewer confirms final source. |
-| Original reviewer backlog_batch_contract | #7918/#7928/#7934 support and readout | Exact nine-path original unit frozen; complete source/proof/input review active. Static support, reachability, finite witnesses and physical-readout limits checked together. |
+| Final reviewer backlog_batch_contract | #7869/#7880 cubic carriers and role marking | W27 eight-path composition frozen; author packet sealing. Same original reviewer confirms exact final source and all twelve fixes, then root runs one gate. Not yet landed. |
+| Checkpointed reviewer backlog_batch_contract | #7918/#7928/#7934 support and readout | Original review resumes after carrier confirmation. Genuine original executions and witness/frontier/fibre/period controls preserved; no unit acceptance yet. |
 | Reconciliation complete | Forty-two direct landings and 110 other closures | All 152 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Original reviewer backlog_8001_review | #6377 and eleven consolidated original scopes | Resumed complete source/supplier review from checkpoint; original stale-authority/moved-note failures preserved, no whole-unit acceptance. |
@@ -330,3 +330,5 @@ closures. Source counts and unaudited planning records are not TOE completion.
 Current assignments and frozen pending sources are bound in [the wave26 handoff](backlog_evidence/wave26-handoff/INDEX.json). This assignment update changes no landing count, closure disposition or audit grade.
 
 The wave26 handoff is a historical preparation snapshot; final independent confirmation, landing and current counts are bound in [wave26 evidence](backlog_evidence/wave26/INDEX.json).
+
+Current W27 composition and review assignments are bound in [the wave27 handoff](backlog_evidence/wave27-handoff/INDEX.json); landing and closure counts are unchanged.
