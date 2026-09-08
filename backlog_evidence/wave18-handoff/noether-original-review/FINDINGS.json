@@ -1,0 +1,123 @@
+{
+  "verdict": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P2",
+      "title": "Separate B45 historical pins from the archived live input path",
+      "evidence": [
+        "PRELIMINARY_INPUT_BINDING.json",
+        "INPUT_PREMISE_CLOSURE.json",
+        "original-execution/berezin_c4_action_to_fock_record_decision_surface_2026_09_01/stdout.txt",
+        "original-execution/berezin_c4_action_to_fock_record_decision_surface_2026_09_01/GUARD_RECONCILIATION.json"
+      ],
+      "finding": "The unchanged B45 baseline exits1 before scientific checks because the July20 note is no longer at docs/. The exact expected blob f5b2569c5f69fc1b81a749d6437b3ec9b90d90fe exists at archive/notes/docs/<same basename>. This is an actual current-source integration defect, not an axiom contradiction or reserved-source hold.",
+      "minimal_fix": "Keep BASE_COMMIT and original Git path/blob pins unchanged. Add an explicit original-to-current path map for this exact archived context and use it in the live guard and declaration. Missing path or wrong blob must fail closed. Do not restore a obsolete active theorem node, reapprove the parent theorem, or import its runner campaign.",
+      "source_anchors": [
+        {
+          "path": "scripts/berezin_c4_action_to_fock_record_decision_surface_2026_09_01.py",
+          "line": 64,
+          "text": "    \"docs/FREE_STAGGERED_D_DIMENSIONAL_TWO_STEP_MANY_BODY_TRANSFER_IDENTITY_NOTE_2026-07-20.md\":",
+          "sha256": "7980848b00d128805f8de3b36639f1890b2ee9eade4463322f4b6c1424825232"
+        },
+        {
+          "path": "scripts/berezin_c4_action_to_fock_record_decision_surface_2026_09_01.py",
+          "line": 185,
+          "text": "def source_binding_certificate(harness: Harness, mutation: str | None) -> None:",
+          "sha256": "7980848b00d128805f8de3b36639f1890b2ee9eade4463322f4b6c1424825232"
+        },
+        {
+          "path": "scripts/berezin_c4_action_to_fock_record_decision_surface_2026_09_01.py",
+          "line": 194,
+          "text": "        git_blob(BASE_COMMIT, path) == blob and worktree_blob(path) == blob",
+          "sha256": "7980848b00d128805f8de3b36639f1890b2ee9eade4463322f4b6c1424825232"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "priority": "P2",
+      "title": "Bind actual premise/packet/helper inputs to both primary cache identities",
+      "evidence": [
+        "SOURCE_CACHE_CONTROLS.json",
+        "source-cache-controls.log",
+        "original-execution/admissibility_same_law_plaquette_noether_record_statistics_discriminator_2026_09_01/RECEIPT.json"
+      ],
+      "finding": "Neither primary declares AUDIT_INPUT_PATHS. B44 actually reads current memo plus seven packet files; each of eight real drifts leaves its genuine successful cache fresh and cached_runner_output --check-only exits0 while the actual live source certificate fails. B45 actually reads17 current paths, including its imported reconstruction helper: replacing that helper's generated field with zeros leaves the primary identity identical. Its finite helper is correctly detected by both real dependency APIs, so this is a missing cache dependency, not a resolver omission.",
+      "minimal_fix": "Freeze complete normalized actual current input declarations, including each newly published own note and all used helper/proof/source-guard files. Preserve historical Git pins separately. Verify actual APIs on filename-derived note IDs and all declared closure paths. Preserve the old stdout cache and failed B45 attempt; after all note/input/guard changes are frozen, execute each changed primary once with actual pre/post identity and genuine current cache. Do not fabricate a B45 cache or restamp the original15/0.",
+      "source_anchors": [
+        {
+          "path": "scripts/admissibility_same_law_plaquette_noether_record_statistics_discriminator_2026_09_01.py",
+          "line": 27,
+          "text": "    \".claude/science/physics-loops/\"",
+          "sha256": "de565d3812ab826ffe63d549f3b0976566d9c44a0da54c46ee22e5adce17ac12"
+        },
+        {
+          "path": "scripts/admissibility_same_law_plaquette_noether_record_statistics_discriminator_2026_09_01.py",
+          "line": 258,
+          "text": "def source_and_prereg_certificate(harness: Harness, mutation: str | None) -> None:",
+          "sha256": "de565d3812ab826ffe63d549f3b0976566d9c44a0da54c46ee22e5adce17ac12"
+        },
+        {
+          "path": "scripts/berezin_c4_action_to_fock_record_decision_surface_2026_09_01.py",
+          "line": 27,
+          "text": "import gl_f_identification_bridge_check_2026_06_11 as bridge",
+          "sha256": "7980848b00d128805f8de3b36639f1890b2ee9eade4463322f4b6c1424825232"
+        },
+        {
+          "path": "scripts/berezin_c4_action_to_fock_record_decision_surface_2026_09_01.py",
+          "line": 41,
+          "text": "FROZEN_PACKET_BLOBS = {",
+          "sha256": "7980848b00d128805f8de3b36639f1890b2ee9eade4463322f4b6c1424825232"
+        },
+        {
+          "path": "scripts/berezin_c4_action_to_fock_record_decision_surface_2026_09_01.py",
+          "line": 185,
+          "text": "def source_binding_certificate(harness: Harness, mutation: str | None) -> None:",
+          "sha256": "7980848b00d128805f8de3b36639f1890b2ee9eade4463322f4b6c1424825232"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "title": "Give the recovered results an explicit current source and evidence boundary before landing",
+      "evidence": [
+        "ORIGINAL_PR_DETAILS.json",
+        "DISCOVERY_BOUNDARY.json",
+        "PATH_DISPOSITIONS.json",
+        "PROOF_REVIEW.md"
+      ],
+      "finding": "The complete original unit is46 historical packet bodies, two runners, and one16-line plain stdout cache. There is no canonical source note for either result and no authored B45 cache, as both recovery PR bodies explicitly acknowledge. The preregistered B45 transfer/physical-generator wording is qualified only by later history; raw history must not become an active proof surface or freshly authenticated13/0 receipt. Actual discover_notes enrolls none of the49 paths.",
+      "minimal_fix": "Preserve all46 packet bodies and the historical B44 stdout verbatim. Add narrowly scoped current source notes (or an explicit archival disposition if root chooses that route) and a dated correction/receipt overlay outside active claim discovery. Current B45 must distinguish extracted Gamma(K), Gram G, Riesz G^-1C=I, formal bilinear logarithm, and separately supplied real-time evolution. Current B44 must retain supplied action/product/state/cadence/pointer/formation/calibration and conditional future decoupling. Give actual runner/cache and minimal used-premise links; historical imports/statuses are provenance, not newly accepted science. Classify historical flag-only mutation checks honestly; do not promise a formal audit or new TOE/axiom result.",
+      "source_anchors": [
+        {
+          "path": ".claude/science/physics-loops/toe-matter-noether-record-vertical-slice-block44-20260901/HANDOFF.md",
+          "line": 3,
+          "text": "Block 44 is complete on clean `origin/main@2cea9a595e` and is deliberately not",
+          "sha256": "0208a8d969f1035c7e95dbcf9ce479ed5f3409c19d0a0313ba261ab70239188b"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-matter-os-action-record-closure-block45-20260901/HANDOFF.md",
+          "line": 6,
+          "text": "The exact runner returns `PASS=13 FAIL=0`; all 22 mutations are killed.  It",
+          "sha256": "a4c7a936ab61eb185ee10e71f825dcc130bf38f8bcb63a3c37c2e285d19ca1bd"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-matter-os-action-record-closure-block45-20260901/EXACT_TARGET_CONTRACT.md",
+          "line": 48,
+          "text": "6. **Transfer/generator identity.** The coefficient-derived matrix obeys",
+          "sha256": "c6e26694af1abc15fb82fdfb48bdf5273b33b4ed763918118df8caac5b23e549"
+        },
+        {
+          "path": ".claude/science/physics-loops/toe-matter-os-action-record-closure-block45-20260901/POSTEXECUTION_TENSOR_TYPE_AUDIT.md",
+          "line": 5,
+          "text": "Let `G_AB=<Theta F_A F_B>` be the occupation-basis OS Gram extracted from the",
+          "sha256": "8bf6202c9e873d978b5fe8b16bde2e1014f1c3b1b6f128817c9742af3ff80df7"
+        }
+      ]
+    }
+  ],
+  "mathematical_counterexample_found": false,
+  "reserved_or_obsolete_premise_hold": false
+}

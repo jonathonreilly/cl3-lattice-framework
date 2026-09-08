@@ -1,0 +1,2071 @@
+{
+  "frozen_utc": "2026-09-08T02:57:09.674765+00:00",
+  "role": "repair author; no source PASS",
+  "base": "eed3c68fffdd8f912a6a4b4bc2e0098184fb3b2b",
+  "tree": "753dab41aae699048ce881a47fb6df2ea7397be2",
+  "source_paths": 28,
+  "original_selected_paths": 27,
+  "original_review_report_sha256": "c3e35356ca4eb7a35418be2bc6e2b05c25e604e691f68dba78c77c3b252c6996",
+  "original_review_receipt_sha256": "288a1c4839e7778e1ca3505682d0df74fbf000b9c130b9d345b216b8c373ad22",
+  "candidate_patch_sha256": "42416af2cab40ab9992f1e3bd58584a79f5d6924f96b69c02b69190ca1d9194f",
+  "author_correction_sha256": "84f492b1358689d7cb8944635431f3c280c3f0d5e3ebd2919d6b7569167ac02c",
+  "report_sha256": "575a17ddef64a26e7c02f249a8d6661b0c791a2b1ab84c3c76f2f21e3f3383f9",
+  "handoff_sha256": "9e5df699b654dabd9edead0b32998203fb20bde005332ae373efa789cd397c94",
+  "final_input_binding_sha256": "42a04abb23754f6380610608a3e927715691598ef123ac7f702a9d9f93d392a8",
+  "original_check_ids": 86,
+  "final_checks": 87,
+  "actual_final_cache_runs": 9,
+  "full_source_mutants_rejected": 5,
+  "declared_input_edges": 113,
+  "complete_union_edges": 121,
+  "actual_helper_edges": 28,
+  "original_artifacts_verified": 156,
+  "old_map_rows_verified": 150000,
+  "final_complete_map_rows": 270162,
+  "current_main_paths_preserved": 28696,
+  "formal_audit": false,
+  "full_gate": false,
+  "commits_pushes_or_PR_mutations": false,
+  "artifacts": [
+    {
+      "path": "ACTUAL_INPUT_LIVE_CONTROLS.json",
+      "sha256": "db40e987c9c3cd116d807d5bce5c5c0d5fd05dd31f16ee1b645b41a788068aa2",
+      "bytes": 1172
+    },
+    {
+      "path": "ACTUAL_PUBLICATION_INPUT_PREFLIGHT.json",
+      "sha256": "45063fe1f319a5cbdbd787e65e4d5e65bcee5f4c1a27bf154f994584bd8db9df",
+      "bytes": 53716
+    },
+    {
+      "path": "AUTHOR_READ_LEDGER.json",
+      "sha256": "5efd1aa9050c73ccd7d50fad8c3f1c7f653994b8acf7bcdff67bb65bc7fd220c",
+      "bytes": 1520
+    },
+    {
+      "path": "CACHE_INPUT_CONTROLS.json",
+      "sha256": "95b2640cc42d3940925c5ed6b03a010f6a99b430f05d21a46ca2d11db4ab0233",
+      "bytes": 45323
+    },
+    {
+      "path": "CLAIM_AND_SUPPLIER_DISPOSITIONS.json",
+      "sha256": "0fbcd41380ea9af88c17be8057bcf93f5240d38911da994a0fa6e21e9480d52d",
+      "bytes": 62971
+    },
+    {
+      "path": "COLD_READ_COUNT_CORRECTION.md",
+      "sha256": "7d3ab15b19c377d28320fd5f0f1c0303d5e39d78e44a995c51162f05b94a501a",
+      "bytes": 323
+    },
+    {
+      "path": "COMPLETE_PROVENANCE_AND_PRESERVATION.json",
+      "sha256": "30b4fb586c2bc6a61e1d74a50e094b8ade6b1f87a482df3b91690a963111f252",
+      "bytes": 45941
+    },
+    {
+      "path": "CURRENT_INPUT_INVENTORY.json",
+      "sha256": "4f2550652252072f2fccd5512cd1a4dcfff8bebc47ad31daef5586a1240e7603",
+      "bytes": 4727
+    },
+    {
+      "path": "DECLARED_INPUT_CLOSURE.json",
+      "sha256": "a1df022b11d5631bd4a3f12c51b9e8f520ee4dca7348dd9b57bc53c7b4f667a6",
+      "bytes": 27595
+    },
+    {
+      "path": "FINAL_EXECUTIONS.json",
+      "sha256": "db5980b23819d2cd91137e53bf48b8709b3fb4d25a8f64ca518fe4b86e6f6a84",
+      "bytes": 5161
+    },
+    {
+      "path": "FINAL_INPUT_AND_PUBLICATION_BINDING.json",
+      "sha256": "42a04abb23754f6380610608a3e927715691598ef123ac7f702a9d9f93d392a8",
+      "bytes": 65026
+    },
+    {
+      "path": "FINAL_SOURCE_INVENTORY.json",
+      "sha256": "f487b8fb607f76fe8b0e95c1abb937b9250e00b557cdbaa71c99a21d7fcf6552",
+      "bytes": 32019
+    },
+    {
+      "path": "FINDINGS_DISPOSITIONS.json",
+      "sha256": "b606f986d62c020f5c6e90b9898c9fd21bf3e9c83258b5edda2a74a8dd7a7b74",
+      "bytes": 7677
+    },
+    {
+      "path": "FOCUSED_CONTROLS.json",
+      "sha256": "b828799191ab0704413636a7b91469647c93f5136b44faf13db0055d0fa48ac1",
+      "bytes": 15039
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "9e5df699b654dabd9edead0b32998203fb20bde005332ae373efa789cd397c94",
+      "bytes": 1331
+    },
+    {
+      "path": "IMMUTABLE_COMPARATOR_BINDING.json",
+      "sha256": "68ff79a463f6c2a47a4cf3cd58d0f0d8f5cf5d0365b8aca9e5dfce5c29508007",
+      "bytes": 3320
+    },
+    {
+      "path": "ORIGINAL_INVENTORY.json",
+      "sha256": "e353b54efb37d13081062dbc5a4779544a4cd46af07bc1937b8c9d2fcd3da467",
+      "bytes": 18660
+    },
+    {
+      "path": "PREPARATION.json",
+      "sha256": "7068deaa7e6b13ba1a44e7942ae0cf70585d713b62fdd54a0e60b37ed231653f",
+      "bytes": 404
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "575a17ddef64a26e7c02f249a8d6661b0c791a2b1ab84c3c76f2f21e3f3383f9",
+      "bytes": 8574
+    },
+    {
+      "path": "SOURCE_AST_AND_CHECK_ID_BINDING.json",
+      "sha256": "05d564d8d1f89f83d7c17d60842931a79b38e5ab3b90ee63ed58a11d2e87081f",
+      "bytes": 24553
+    },
+    {
+      "path": "WHOLE_SOURCE_MUTANTS.json",
+      "sha256": "475fbb7ee0a7abe60b6ea6f0480ae6352befc72b1db1beada12cdc1cc5f2c2eb",
+      "bytes": 6028
+    },
+    {
+      "path": "author-correction.patch",
+      "sha256": "84f492b1358689d7cb8944635431f3c280c3f0d5e3ebd2919d6b7569167ac02c",
+      "bytes": 115706
+    },
+    {
+      "path": "bind_sources.py",
+      "sha256": "03728fec62ed55776b8ac7e3e6ea1abb4b32d6b28f774d5db7192a337686ee2a",
+      "bytes": 5606
+    },
+    {
+      "path": "build_final_maps.py",
+      "sha256": "737997c3ace5d2b9dafbdfe5890ef6087257d2d974b036f3ffff2cb82146afd7",
+      "bytes": 6529
+    },
+    {
+      "path": "cache-input-controls/archive/notes/docs/work_history/repo/review_feedback/MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md",
+      "sha256": "a55706586a30ebf2fe591e251a267d596d47d72fd830544cb2649a0bbdb2fcec",
+      "bytes": 51802
+    },
+    {
+      "path": "cache-input-controls/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "cache-input-controls/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a",
+      "bytes": 50579
+    },
+    {
+      "path": "cache-input-controls/docs/LIVE_M2_JOINT_ARCHIVE_GRAPH_PERMUTATION_CAPACITY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "d1d513bb6bacfa741a267ff19f46db38e53744e1a77e2ec0241a2621bf2bb9ba",
+      "bytes": 44546
+    },
+    {
+      "path": "cache-input-controls/docs/LIVE_M2_JOINT_ORDER_ENVIRONMENT_COLLISION_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "7a75e900c7507eef7369f4b22196eb7b20997a427d798c5d0f6fe84c1f5c236a",
+      "bytes": 33109
+    },
+    {
+      "path": "cache-input-controls/docs/LIVE_M2_PAIR_AWARE_SWAPBACK_COLLISION_REPAIR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "ec3d6653b00f6d06b4eb95ac6bb24c6024e3fbe63d5a8ce5a6b78fca9a175968",
+      "bytes": 34228
+    },
+    {
+      "path": "cache-input-controls/docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "a0dc4fe907360e00a6d9ceb5e392066d4b09f0c3d751163010b4122244dd7199",
+      "bytes": 38495
+    },
+    {
+      "path": "cache-input-controls/docs/LIVE_M2_TYPED_EVENT_CRITICAL_PAIR_CONFLUENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2d4fd67f35917906d6f2fd481a27a35ac49b54814644540f9f3c884263961038",
+      "bytes": 28849
+    },
+    {
+      "path": "cache-input-controls/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "cache-input-controls/docs/NN_FORMATION_SELECTOR_TWO_MODEL_KILL_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "ad99e42a21df2ea4c656cb6be8fc957e68377623c37075556c20b1ecd423f5c6",
+      "bytes": 29996
+    },
+    {
+      "path": "cache-input-controls/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "cache-input-controls/docs/RECORD_VISIBLE_INTEGRATED_FORMATION_INSTRUMENT_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "29b0177eaca7e86542c1a15d9a64751895ea5798d695f6305f23891ec974ff58",
+      "bytes": 43009
+    },
+    {
+      "path": "cache-input-controls/docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "370637c3881b72b68e5df8fb8d8afaa55fcd995025c01173771ffce418918847",
+      "bytes": 35250
+    },
+    {
+      "path": "cache-input-controls/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581
+    },
+    {
+      "path": "cache-input-controls/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "cache-input-controls/docs/work_history/repo/review_feedback/RECORD_ONLY_STATE_BELL_LAW_TYPE_DICHOTOMY_CYCLE29_NOTE_2026-07-14.md",
+      "sha256": "272c60e8f36e206c986b98f2f54a634caf375af56868609aac1427da7773a787",
+      "bytes": 16529
+    },
+    {
+      "path": "cache-input-controls/logs/runner-cache/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.txt",
+      "sha256": "70282b7c1dbe9d3e02f783d6862309b1a677993af6ac050e83c7b8c3317472c3",
+      "bytes": 4083
+    },
+    {
+      "path": "cache-input-controls/logs/runner-cache/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.txt",
+      "sha256": "cae2ddd11687af9633414b2f9ba2eda7ed5ef69f44dca1cf58e7e57a643cc5fe",
+      "bytes": 5140
+    },
+    {
+      "path": "cache-input-controls/logs/runner-cache/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.txt",
+      "sha256": "523b9570e9cb2a17e00281c32aa4987bbc0f671d53df8b121d4180c2faf669a4",
+      "bytes": 4525
+    },
+    {
+      "path": "cache-input-controls/logs/runner-cache/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.txt",
+      "sha256": "a5e0ee0a8c811b93739226090600d2c797d02630d4425bb9bced6dfe6bce5b65",
+      "bytes": 4128
+    },
+    {
+      "path": "cache-input-controls/logs/runner-cache/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.txt",
+      "sha256": "e6016dee74e46ad1e88c1bdebc1c73ac54b00f6212b6c9d8f320f3eb66df447b",
+      "bytes": 3485
+    },
+    {
+      "path": "cache-input-controls/logs/runner-cache/frontier_nn_formation_selector_two_model_kill_2026_08_14.txt",
+      "sha256": "10e932d5af8e02b5fd8e6a3bb390889a05b1e2f6399336d84859a3b9ae9df248",
+      "bytes": 3957
+    },
+    {
+      "path": "cache-input-controls/logs/runner-cache/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.txt",
+      "sha256": "6f1c58e3be9b91a85f75be3bfb4b15603c8a5c094be954db5e07522b20729bdf",
+      "bytes": 4449
+    },
+    {
+      "path": "cache-input-controls/logs/runner-cache/frontier_record_visible_integrated_formation_instrument_2026_08_14.txt",
+      "sha256": "cee589057b9e2d28154e25e4f79deefc0a5a7e4d7af7b1d54dbe084bb6b8b6b0",
+      "bytes": 4961
+    },
+    {
+      "path": "cache-input-controls/logs/runner-cache/frontier_same_carrier_three_record_archive_packet_2026_08_13.txt",
+      "sha256": "99f54633098ecd1a577d1986f1661052dabfa1b774097a4afa41d050bf2040df",
+      "bytes": 3619
+    },
+    {
+      "path": "cache-input-controls/scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+      "sha256": "544a27161eacae82fb6d792eafb3e3a93f567d64a23565769a05d7a9f3270d89",
+      "bytes": 57464
+    },
+    {
+      "path": "cache-input-controls/scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+      "sha256": "a1e5b37d81453545403bd5ef33113a46f53391238219bb103a8051807a3978aa",
+      "bytes": 74135
+    },
+    {
+      "path": "cache-input-controls/scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+      "sha256": "01f6296b0ad887d6a47212f3ce5bb090dd4e50774e10ab6b86e4c35fa7e70ff2",
+      "bytes": 65086
+    },
+    {
+      "path": "cache-input-controls/scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+      "sha256": "e649a807fb02c80974ffff827f03ac6a28c568ad9c1517e7c259d82d8ee06395",
+      "bytes": 61006
+    },
+    {
+      "path": "cache-input-controls/scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+      "sha256": "81e5b4845c64cc149ab1984e0884975e8ec279a7ea6fbaeb5ac88ff4ac83504a",
+      "bytes": 41886
+    },
+    {
+      "path": "cache-input-controls/scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+      "sha256": "cff4964b3dc6acebb8ad4d0c501371197898b207f8cc77468e7c76749a6d9664",
+      "bytes": 47933
+    },
+    {
+      "path": "cache-input-controls/scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+      "sha256": "c8269244d8b0b091340e0ed31423d9509c7b2b0db514610231d3849ed602b45c",
+      "bytes": 50423
+    },
+    {
+      "path": "cache-input-controls/scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+      "sha256": "9586e59e5d30d7020dc3d5b03a461fe85a3e659790eacfb0fa1e489dc504cde1",
+      "bytes": 64017
+    },
+    {
+      "path": "cache-input-controls/scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+      "sha256": "7d64706ad0a76724b6ae14fc1c0751d9f3518105ebea775d1399fcf129aba74c",
+      "bytes": 39270
+    },
+    {
+      "path": "cache_child.py",
+      "sha256": "80e495bdbc7fdf6c906e78761193a6ce60bf354d3475e651025316623080f02b",
+      "bytes": 979
+    },
+    {
+      "path": "candidate.patch",
+      "sha256": "42416af2cab40ab9992f1e3bd58584a79f5d6924f96b69c02b69190ca1d9194f",
+      "bytes": 907502
+    },
+    {
+      "path": "complete-final-6280.jsonl.gz",
+      "sha256": "af8fa6611619a86d33f03e4ebf4c2b63df53c00a44718a8e70d0f361a0def571",
+      "bytes": 2028823
+    },
+    {
+      "path": "complete-final-6345.jsonl.gz",
+      "sha256": "93d6e6f428a641f385d607b0dd442fe949a43733002e3e741a2ed6b5f3f74696",
+      "bytes": 2028868
+    },
+    {
+      "path": "complete-final-6352.jsonl.gz",
+      "sha256": "16d10923bfff211adca97fc6d3138ece396c302b381e8baaaece1f7323bee590",
+      "bytes": 2028961
+    },
+    {
+      "path": "complete-final-6354.jsonl.gz",
+      "sha256": "3a4fca8666687888e29a4f37189b9b5ebd95332bfe89ac64c8c0b88d4844bc20",
+      "bytes": 2028958
+    },
+    {
+      "path": "complete-final-6358.jsonl.gz",
+      "sha256": "95cb31fd196aaf49684c6b38805b7ed5dc42b473576f87def757f26c57e56121",
+      "bytes": 2028943
+    },
+    {
+      "path": "complete-final-B71.jsonl.gz",
+      "sha256": "4ddfaac9d5e7f267a421611f3d3d2f05b88d4da678ee42df08bb21bb743b2c99",
+      "bytes": 2028821
+    },
+    {
+      "path": "complete-final-B72.jsonl.gz",
+      "sha256": "cca559957fc7ea82b912dabc1eeb8e2c23e912a4b88af097c78159401f3cebb7",
+      "bytes": 2028816
+    },
+    {
+      "path": "complete-final-B89.jsonl.gz",
+      "sha256": "c3dade6e1775da1be11da98415258fc91bb25a6e85544eac8e1f565001942f6a",
+      "bytes": 2028898
+    },
+    {
+      "path": "complete-final-B90.jsonl.gz",
+      "sha256": "c63229d27dae344d64514cb36c6f6d530d55c600a5bc590a871d8a566131feaa",
+      "bytes": 2028931
+    },
+    {
+      "path": "correction-diff-check.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "correction-diff-check.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "edit_sources.py",
+      "sha256": "dacaaa61eb978bde2d7c6e652f9ca7b460fecfdb3de38b604109e47892d4aeb4",
+      "bytes": 14712
+    },
+    {
+      "path": "execute-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "execute-final.stdout",
+      "sha256": "94765702c5376e8b3fa3cb0571ae4ae813af568e1d3687a91d7bd50ee58de636",
+      "bytes": 7208
+    },
+    {
+      "path": "execute_final.py",
+      "sha256": "21c26a4589d84dbbf57f6ca630ef1b991761dc9d18da599df5225c1f93e11c3c",
+      "bytes": 3841
+    },
+    {
+      "path": "final-runs/B71-cache.json",
+      "sha256": "cf7e2184ca578e1f929cbaa37fcb64be8b2a9b0880a67b9358d644b8919b78cf",
+      "bytes": 7122
+    },
+    {
+      "path": "final-runs/B71-final-execution.json",
+      "sha256": "471f4de2eafe1e00a570b551eff5f4ae16592033c59cce9957b46f8d7ded25f7",
+      "bytes": 533
+    },
+    {
+      "path": "final-runs/B71-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B71-final.stdout",
+      "sha256": "edff48b86768813e70a438ef493bf6eaaef1a09e6c624d2a3e464f6bbcfeb9e2",
+      "bytes": 422
+    },
+    {
+      "path": "final-runs/B72-cache.json",
+      "sha256": "d02eec16c062b7c296715ff6aab3306f0a6f86e3e1e1cca1d60d53eb41c2ba9c",
+      "bytes": 8963
+    },
+    {
+      "path": "final-runs/B72-double-gaussian-execution.json",
+      "sha256": "08af5e0d3c3d302bcb89283f5cf5be35b723355d7086281f9ae4db76938ec4ac",
+      "bytes": 583
+    },
+    {
+      "path": "final-runs/B72-double-gaussian.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B72-double-gaussian.stdout",
+      "sha256": "f6326fc6fe0bb63d847cbcd0357bac6b21aaf5db89e91cd57227023d3e250e57",
+      "bytes": 3582
+    },
+    {
+      "path": "final-runs/B72-final-execution.json",
+      "sha256": "3ef037b8a2ab335f6552a034db43d1ed57533879e3bdf9a0f0ccdb0817df6b9d",
+      "bytes": 529
+    },
+    {
+      "path": "final-runs/B72-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B72-final.stdout",
+      "sha256": "7cd2bf0896aad225c65f241f6b65eda1355b836c7974228541d7d7dd6ade031a",
+      "bytes": 414
+    },
+    {
+      "path": "final-runs/B73-cache.json",
+      "sha256": "c498b16011913b4e0eba68d85da8639a4df6de8905442deb22b286caa554a155",
+      "bytes": 11573
+    },
+    {
+      "path": "final-runs/B73-double-gaussian-execution.json",
+      "sha256": "cc0d128c3909c4911270848296974b0ca8bd4d3f22376ab6c5fb8edfae1422cf",
+      "bytes": 594
+    },
+    {
+      "path": "final-runs/B73-double-gaussian.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B73-double-gaussian.stdout",
+      "sha256": "b75eb18ffe20f4205d6712712c17da748dea1f66375638735b2548b54633d64d",
+      "bytes": 4576
+    },
+    {
+      "path": "final-runs/B73-final-execution.json",
+      "sha256": "37b657e5952ab8465e43a079464bf8e80a522a95a5664ded997528ac4a585790",
+      "bytes": 540
+    },
+    {
+      "path": "final-runs/B73-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B73-final.stdout",
+      "sha256": "bcddabca73ca4ae7477c72bc403b0ef15df40000bbe3e135912951551393c580",
+      "bytes": 434
+    },
+    {
+      "path": "final-runs/B86-cache.json",
+      "sha256": "d96e9b266f946101083b3cea7bb216e782e1955fd7695c078d353a6ce0aa73e4",
+      "bytes": 12249
+    },
+    {
+      "path": "final-runs/B86-final-execution.json",
+      "sha256": "0a10c325081c88f51990f5ca8bee305b47d2c64f390d6e853ae51bafbaaec213",
+      "bytes": 538
+    },
+    {
+      "path": "final-runs/B86-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B86-final.stdout",
+      "sha256": "6e7e46625b0a507ffbc3e087e4ec64135d411fc94618b74f5eff72919c660b1d",
+      "bytes": 430
+    },
+    {
+      "path": "final-runs/B89-cache.json",
+      "sha256": "5ea655ff3fec75d5daeecb362f127d5aca800a03dca26cbb9cd18a7cff7ad275",
+      "bytes": 16723
+    },
+    {
+      "path": "final-runs/B89-final-execution.json",
+      "sha256": "3e59245e8459285729163d8b4da2133c54582fead4cefe03e21f6be4e1d39eca",
+      "bytes": 538
+    },
+    {
+      "path": "final-runs/B89-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B89-final.stdout",
+      "sha256": "6ffee473afe58d9e9946bd5020211be618e686c6b50c5c73311fbd47225a63bd",
+      "bytes": 430
+    },
+    {
+      "path": "final-runs/B90-cache.json",
+      "sha256": "a4deb8f85afc13897fa93b96c33718aa0166f8d6d6cef920b4583ae8359c3e81",
+      "bytes": 18933
+    },
+    {
+      "path": "final-runs/B90-final-execution.json",
+      "sha256": "f295f9ed05f11afffcba8bdcdd8133b1c81b27bb88fb1d801df547b01fd4299d",
+      "bytes": 537
+    },
+    {
+      "path": "final-runs/B90-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B90-final.stdout",
+      "sha256": "1461d1fb043681952a7d76992e8f70766fc3b07d46d839a8c15aa321d84a6280",
+      "bytes": 430
+    },
+    {
+      "path": "final-runs/B91-cache.json",
+      "sha256": "971d4436281e6b418ed5b7fad5ad879a2d99918692832e0a01eef658ad3dd521",
+      "bytes": 20962
+    },
+    {
+      "path": "final-runs/B91-final-execution.json",
+      "sha256": "cb47e5ccbf8333638b484fcfc27f4ad6424f550271df7f3895a26eba3dc8f780",
+      "bytes": 546
+    },
+    {
+      "path": "final-runs/B91-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B91-final.stdout",
+      "sha256": "4399d97223705b3ec73e37f5551d1581d0f58b75b9fe9d35febc1849496d3f19",
+      "bytes": 446
+    },
+    {
+      "path": "final-runs/B92-cache.json",
+      "sha256": "fe032d1d38ca3d614d1b59fe65eb56e32a7f3babeebe3e58fd7093e4f20b94ed",
+      "bytes": 23144
+    },
+    {
+      "path": "final-runs/B92-final-execution.json",
+      "sha256": "62f70ef604f29ee071ac52d91aa10e3f63b1b8ba19205ea099f3cee82628762c",
+      "bytes": 542
+    },
+    {
+      "path": "final-runs/B92-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B92-final.stdout",
+      "sha256": "bfad6bee100c690ea84373d2d9855a830541ff4237eb254940dfcff3bd890c35",
+      "bytes": 438
+    },
+    {
+      "path": "final-runs/B94-cache.json",
+      "sha256": "ec242a13caa53bd0fb74b33993937b51dc22375630e0a93aeac37dd7903ca980",
+      "bytes": 29429
+    },
+    {
+      "path": "final-runs/B94-denominator-four-execution.json",
+      "sha256": "1f8b0b461b3d435d3ebbabd408e6cd4fcbc05d3856790c70b45ea24369a3d767",
+      "bytes": 598
+    },
+    {
+      "path": "final-runs/B94-denominator-four.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B94-denominator-four.stdout",
+      "sha256": "a909b540c1ccd1fb3f296314429ce4b16c5d7b9631135e51aaf161d5992ed987",
+      "bytes": 4063
+    },
+    {
+      "path": "final-runs/B94-final-execution.json",
+      "sha256": "b60a9505d2f3b7b7eb68650e933bb50c6a0bcb26859daf0fb51ee10706dd7f57",
+      "bytes": 540
+    },
+    {
+      "path": "final-runs/B94-final.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B94-final.stdout",
+      "sha256": "8e3354820064fa7bebdbcd3a28b09862fa4775ca20e96cf2846ad5d17f87fbe9",
+      "bytes": 436
+    },
+    {
+      "path": "final-runs/B94-hazard-half-execution.json",
+      "sha256": "e2df208ba122190c161f802eab2426fa83ac74e5c25c851f39500b388bd48816",
+      "bytes": 583
+    },
+    {
+      "path": "final-runs/B94-hazard-half.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B94-hazard-half.stdout",
+      "sha256": "eef5757f849789cd596fe2ee92df6d0fba7e79d4c7e63681e8a4b0ace1159206",
+      "bytes": 4063
+    },
+    {
+      "path": "final-runs/B94-row-two-fifths-execution.json",
+      "sha256": "ff80ee94bb54af5688d8fcba3057f85c5edec15dccfb949b8e35ca6c0c9b2653",
+      "bytes": 591
+    },
+    {
+      "path": "final-runs/B94-row-two-fifths.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-runs/B94-row-two-fifths.stdout",
+      "sha256": "2553124791d9b7941e24bdb704e66714a3fbfde0701dc5efb4e7a69705a6948f",
+      "bytes": 4064
+    },
+    {
+      "path": "final-source/.claude/science/physics-loops/record-joint-6358-corrections-20260908/CORRECTION_HISTORY.md",
+      "sha256": "2ebaa62b5527b915ca4b12180b0c88729cf65246c77a820c18752a1db6bf602e",
+      "bytes": 2364
+    },
+    {
+      "path": "final-source/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a",
+      "bytes": 50579
+    },
+    {
+      "path": "final-source/docs/LIVE_M2_JOINT_ARCHIVE_GRAPH_PERMUTATION_CAPACITY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "d1d513bb6bacfa741a267ff19f46db38e53744e1a77e2ec0241a2621bf2bb9ba",
+      "bytes": 44546
+    },
+    {
+      "path": "final-source/docs/LIVE_M2_JOINT_ORDER_ENVIRONMENT_COLLISION_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "7a75e900c7507eef7369f4b22196eb7b20997a427d798c5d0f6fe84c1f5c236a",
+      "bytes": 33109
+    },
+    {
+      "path": "final-source/docs/LIVE_M2_PAIR_AWARE_SWAPBACK_COLLISION_REPAIR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "ec3d6653b00f6d06b4eb95ac6bb24c6024e3fbe63d5a8ce5a6b78fca9a175968",
+      "bytes": 34228
+    },
+    {
+      "path": "final-source/docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "a0dc4fe907360e00a6d9ceb5e392066d4b09f0c3d751163010b4122244dd7199",
+      "bytes": 38495
+    },
+    {
+      "path": "final-source/docs/LIVE_M2_TYPED_EVENT_CRITICAL_PAIR_CONFLUENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2d4fd67f35917906d6f2fd481a27a35ac49b54814644540f9f3c884263961038",
+      "bytes": 28849
+    },
+    {
+      "path": "final-source/docs/NN_FORMATION_SELECTOR_TWO_MODEL_KILL_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "ad99e42a21df2ea4c656cb6be8fc957e68377623c37075556c20b1ecd423f5c6",
+      "bytes": 29996
+    },
+    {
+      "path": "final-source/docs/RECORD_VISIBLE_INTEGRATED_FORMATION_INSTRUMENT_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "29b0177eaca7e86542c1a15d9a64751895ea5798d695f6305f23891ec974ff58",
+      "bytes": 43009
+    },
+    {
+      "path": "final-source/docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "370637c3881b72b68e5df8fb8d8afaa55fcd995025c01173771ffce418918847",
+      "bytes": 35250
+    },
+    {
+      "path": "final-source/logs/runner-cache/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.txt",
+      "sha256": "70282b7c1dbe9d3e02f783d6862309b1a677993af6ac050e83c7b8c3317472c3",
+      "bytes": 4083
+    },
+    {
+      "path": "final-source/logs/runner-cache/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.txt",
+      "sha256": "cae2ddd11687af9633414b2f9ba2eda7ed5ef69f44dca1cf58e7e57a643cc5fe",
+      "bytes": 5140
+    },
+    {
+      "path": "final-source/logs/runner-cache/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.txt",
+      "sha256": "523b9570e9cb2a17e00281c32aa4987bbc0f671d53df8b121d4180c2faf669a4",
+      "bytes": 4525
+    },
+    {
+      "path": "final-source/logs/runner-cache/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.txt",
+      "sha256": "a5e0ee0a8c811b93739226090600d2c797d02630d4425bb9bced6dfe6bce5b65",
+      "bytes": 4128
+    },
+    {
+      "path": "final-source/logs/runner-cache/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.txt",
+      "sha256": "e6016dee74e46ad1e88c1bdebc1c73ac54b00f6212b6c9d8f320f3eb66df447b",
+      "bytes": 3485
+    },
+    {
+      "path": "final-source/logs/runner-cache/frontier_nn_formation_selector_two_model_kill_2026_08_14.txt",
+      "sha256": "10e932d5af8e02b5fd8e6a3bb390889a05b1e2f6399336d84859a3b9ae9df248",
+      "bytes": 3957
+    },
+    {
+      "path": "final-source/logs/runner-cache/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.txt",
+      "sha256": "6f1c58e3be9b91a85f75be3bfb4b15603c8a5c094be954db5e07522b20729bdf",
+      "bytes": 4449
+    },
+    {
+      "path": "final-source/logs/runner-cache/frontier_record_visible_integrated_formation_instrument_2026_08_14.txt",
+      "sha256": "cee589057b9e2d28154e25e4f79deefc0a5a7e4d7af7b1d54dbe084bb6b8b6b0",
+      "bytes": 4961
+    },
+    {
+      "path": "final-source/logs/runner-cache/frontier_same_carrier_three_record_archive_packet_2026_08_13.txt",
+      "sha256": "99f54633098ecd1a577d1986f1661052dabfa1b774097a4afa41d050bf2040df",
+      "bytes": 3619
+    },
+    {
+      "path": "final-source/scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+      "sha256": "544a27161eacae82fb6d792eafb3e3a93f567d64a23565769a05d7a9f3270d89",
+      "bytes": 57464
+    },
+    {
+      "path": "final-source/scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+      "sha256": "a1e5b37d81453545403bd5ef33113a46f53391238219bb103a8051807a3978aa",
+      "bytes": 74135
+    },
+    {
+      "path": "final-source/scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+      "sha256": "01f6296b0ad887d6a47212f3ce5bb090dd4e50774e10ab6b86e4c35fa7e70ff2",
+      "bytes": 65086
+    },
+    {
+      "path": "final-source/scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+      "sha256": "e649a807fb02c80974ffff827f03ac6a28c568ad9c1517e7c259d82d8ee06395",
+      "bytes": 61006
+    },
+    {
+      "path": "final-source/scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+      "sha256": "81e5b4845c64cc149ab1984e0884975e8ec279a7ea6fbaeb5ac88ff4ac83504a",
+      "bytes": 41886
+    },
+    {
+      "path": "final-source/scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+      "sha256": "cff4964b3dc6acebb8ad4d0c501371197898b207f8cc77468e7c76749a6d9664",
+      "bytes": 47933
+    },
+    {
+      "path": "final-source/scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+      "sha256": "c8269244d8b0b091340e0ed31423d9509c7b2b0db514610231d3849ed602b45c",
+      "bytes": 50423
+    },
+    {
+      "path": "final-source/scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+      "sha256": "9586e59e5d30d7020dc3d5b03a461fe85a3e659790eacfb0fa1e489dc504cde1",
+      "bytes": 64017
+    },
+    {
+      "path": "final-source/scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+      "sha256": "7d64706ad0a76724b6ae14fc1c0751d9f3518105ebea775d1399fcf129aba74c",
+      "bytes": 39270
+    },
+    {
+      "path": "finalize_source.py",
+      "sha256": "da8b93297cb5ddf7025c282fa1e635b16f7b30a70a23b71c2cde96dbd49953cc",
+      "bytes": 6139
+    },
+    {
+      "path": "focused-controls.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "focused-controls.stdout",
+      "sha256": "98da87ee6877a25bccbd9500f88bdad948268bc55fa40df9f610e6c8dfa89eaa",
+      "bytes": 76
+    },
+    {
+      "path": "focused-mutants/B72-10.py",
+      "sha256": "75cd0a39fe4936ab90451266829540027c4230b20b3162afa7704a9b95924931",
+      "bytes": 47937
+    },
+    {
+      "path": "focused-mutants/B73-12.py",
+      "sha256": "a2192aa03426e0feaae03ddc2a58e85785152cd6b12f95d1060ffb04e8d16eb4",
+      "bytes": 64021
+    },
+    {
+      "path": "focused-mutants/B94-14.py",
+      "sha256": "43f10910e00340948859e6ae6044ffdafa67458e975d47fb38abb2d24f16e190",
+      "bytes": 50423
+    },
+    {
+      "path": "focused-mutants/B94-15.py",
+      "sha256": "eba20789cd144fb800b0a803fcf1389664733bef09ec8ba66b99a1591acb4443",
+      "bytes": 50423
+    },
+    {
+      "path": "focused-mutants/B94-16.py",
+      "sha256": "e0f0c444e2a7d990a048e2dbe419a6064b17e72eb6d755bd27859e0acc113ba3",
+      "bytes": 50423
+    },
+    {
+      "path": "focused_controls.py",
+      "sha256": "dfdb774595db73b8005a0a0b741022e0e7ad8c9c1bfd15ad7a5eeabb442626f1",
+      "bytes": 4404
+    },
+    {
+      "path": "input-controls.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-controls.stdout",
+      "sha256": "2ea70163a2ea0d4f41a117e87a77ebe84dcfb5dbd0791b54668fd448ccb8189a",
+      "bytes": 105
+    },
+    {
+      "path": "input_controls.py",
+      "sha256": "7b66834996b706205e9b0b98391414d2f4b5a0576d306725257c910902cee650",
+      "bytes": 3099
+    },
+    {
+      "path": "intermediate-freeze/RECEIPT.json",
+      "sha256": "2ae093b468065b00c9f149b5fd8bc9cb6991f2498aebc26d04f6b383e3a43d6b",
+      "bytes": 8177
+    },
+    {
+      "path": "intermediate-freeze/candidate.patch",
+      "sha256": "1e5c13259fa573a1cd4f4f3bdfafa202de1b471ecfdc0ffef89afb1f53c96c18",
+      "bytes": 906754
+    },
+    {
+      "path": "intermediate-freeze/correction.patch",
+      "sha256": "5c674bdbc832487cb612a01f6ac7e0f06b677bcd162fba3afabb342666d22d17",
+      "bytes": 98531
+    },
+    {
+      "path": "intermediate-freeze/source/.claude/science/physics-loops/record-joint-6358-corrections-20260908/CORRECTION_HISTORY.md",
+      "sha256": "8d043d32f547070ed7bdd4283914e0432dd6b53e1bb191a4abef679cd1901d8b",
+      "bytes": 2044
+    },
+    {
+      "path": "intermediate-freeze/source/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a",
+      "bytes": 50579
+    },
+    {
+      "path": "intermediate-freeze/source/docs/LIVE_M2_JOINT_ARCHIVE_GRAPH_PERMUTATION_CAPACITY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "d1d513bb6bacfa741a267ff19f46db38e53744e1a77e2ec0241a2621bf2bb9ba",
+      "bytes": 44546
+    },
+    {
+      "path": "intermediate-freeze/source/docs/LIVE_M2_JOINT_ORDER_ENVIRONMENT_COLLISION_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "7a75e900c7507eef7369f4b22196eb7b20997a427d798c5d0f6fe84c1f5c236a",
+      "bytes": 33109
+    },
+    {
+      "path": "intermediate-freeze/source/docs/LIVE_M2_PAIR_AWARE_SWAPBACK_COLLISION_REPAIR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "ec3d6653b00f6d06b4eb95ac6bb24c6024e3fbe63d5a8ce5a6b78fca9a175968",
+      "bytes": 34228
+    },
+    {
+      "path": "intermediate-freeze/source/docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "e109fb0c3230dc5caaaea0671a369330d774c5c56bfd57cbfd6ec8e7d442d122",
+      "bytes": 38355
+    },
+    {
+      "path": "intermediate-freeze/source/docs/LIVE_M2_TYPED_EVENT_CRITICAL_PAIR_CONFLUENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2d4fd67f35917906d6f2fd481a27a35ac49b54814644540f9f3c884263961038",
+      "bytes": 28849
+    },
+    {
+      "path": "intermediate-freeze/source/docs/NN_FORMATION_SELECTOR_TWO_MODEL_KILL_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "ad99e42a21df2ea4c656cb6be8fc957e68377623c37075556c20b1ecd423f5c6",
+      "bytes": 29996
+    },
+    {
+      "path": "intermediate-freeze/source/docs/RECORD_VISIBLE_INTEGRATED_FORMATION_INSTRUMENT_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "29b0177eaca7e86542c1a15d9a64751895ea5798d695f6305f23891ec974ff58",
+      "bytes": 43009
+    },
+    {
+      "path": "intermediate-freeze/source/docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "370637c3881b72b68e5df8fb8d8afaa55fcd995025c01173771ffce418918847",
+      "bytes": 35250
+    },
+    {
+      "path": "intermediate-freeze/source/logs/runner-cache/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.txt",
+      "sha256": "472d613fe9eb6f1721205211b373c41f6016b94312ae91d69a70ae2c3f3d38da",
+      "bytes": 4039
+    },
+    {
+      "path": "intermediate-freeze/source/logs/runner-cache/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.txt",
+      "sha256": "9cda953dc1c93bfb5011bc1f53ac13dc140662bbe87dab3a4ce8d65d6308baff",
+      "bytes": 5140
+    },
+    {
+      "path": "intermediate-freeze/source/logs/runner-cache/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.txt",
+      "sha256": "09aee02d9968c902ebc26a9d5cc43d480fdb6094c5d944422894ed7807181d3d",
+      "bytes": 4525
+    },
+    {
+      "path": "intermediate-freeze/source/logs/runner-cache/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.txt",
+      "sha256": "8100affebfda0471b4bf59a9c2522d7674ce2fd2941afafdb7f58c089a048d92",
+      "bytes": 4128
+    },
+    {
+      "path": "intermediate-freeze/source/logs/runner-cache/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.txt",
+      "sha256": "4cc6d9ebc8c36c7cbef7e7b7b10818b286ede4ef6361c626749d549dfc3023dc",
+      "bytes": 3485
+    },
+    {
+      "path": "intermediate-freeze/source/logs/runner-cache/frontier_nn_formation_selector_two_model_kill_2026_08_14.txt",
+      "sha256": "92bd7a3152a48d80425f2ce1117570502e34bf301602f3bbb4511e9531335328",
+      "bytes": 3957
+    },
+    {
+      "path": "intermediate-freeze/source/logs/runner-cache/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.txt",
+      "sha256": "de96282aa19a4994e2cd031f7bb5b09e5ab6112b37ca6525759a4a9de022e4b8",
+      "bytes": 4222
+    },
+    {
+      "path": "intermediate-freeze/source/logs/runner-cache/frontier_record_visible_integrated_formation_instrument_2026_08_14.txt",
+      "sha256": "5581c05956cf02d15186f87ca9d7c0afb695f11bd7d09cc284aad372b10a395c",
+      "bytes": 4953
+    },
+    {
+      "path": "intermediate-freeze/source/logs/runner-cache/frontier_same_carrier_three_record_archive_packet_2026_08_13.txt",
+      "sha256": "0530e4f360e1d919efc53527b9a0451ef66e4f6206a31cff50df605b11242eeb",
+      "bytes": 3619
+    },
+    {
+      "path": "intermediate-freeze/source/scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+      "sha256": "544a27161eacae82fb6d792eafb3e3a93f567d64a23565769a05d7a9f3270d89",
+      "bytes": 57464
+    },
+    {
+      "path": "intermediate-freeze/source/scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+      "sha256": "a1e5b37d81453545403bd5ef33113a46f53391238219bb103a8051807a3978aa",
+      "bytes": 74135
+    },
+    {
+      "path": "intermediate-freeze/source/scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+      "sha256": "01f6296b0ad887d6a47212f3ce5bb090dd4e50774e10ab6b86e4c35fa7e70ff2",
+      "bytes": 65086
+    },
+    {
+      "path": "intermediate-freeze/source/scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+      "sha256": "e649a807fb02c80974ffff827f03ac6a28c568ad9c1517e7c259d82d8ee06395",
+      "bytes": 61006
+    },
+    {
+      "path": "intermediate-freeze/source/scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+      "sha256": "81e5b4845c64cc149ab1984e0884975e8ec279a7ea6fbaeb5ac88ff4ac83504a",
+      "bytes": 41886
+    },
+    {
+      "path": "intermediate-freeze/source/scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+      "sha256": "cff4964b3dc6acebb8ad4d0c501371197898b207f8cc77468e7c76749a6d9664",
+      "bytes": 47933
+    },
+    {
+      "path": "intermediate-freeze/source/scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+      "sha256": "af3917e1cd2b800c0682963964e22232a3f73d61cbfe02f0eeae8ac8d48b4e0c",
+      "bytes": 50423
+    },
+    {
+      "path": "intermediate-freeze/source/scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+      "sha256": "9586e59e5d30d7020dc3d5b03a461fe85a3e659790eacfb0fa1e489dc504cde1",
+      "bytes": 64017
+    },
+    {
+      "path": "intermediate-freeze/source/scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+      "sha256": "7d64706ad0a76724b6ae14fc1c0751d9f3518105ebea775d1399fcf129aba74c",
+      "bytes": 39270
+    },
+    {
+      "path": "intermediate-to-final.patch",
+      "sha256": "6d113be5cba09fefc23821b52034c4d93e2faffeca402cf0edaaa24d14e0097c",
+      "bytes": 19662
+    },
+    {
+      "path": "live-current-memo.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "live-current-memo.stdout",
+      "sha256": "fbe26bdb6bed0e1f102b1cd16494818a6e3ebd51ccafec6ede6e2dae3c4d198d",
+      "bytes": 4063
+    },
+    {
+      "path": "live-formerly-omitted-import.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "live-formerly-omitted-import.stdout",
+      "sha256": "25484f61cd1a98e472d71ac7df86ab547cc9cecb8ea15d64263fe90abdd72183",
+      "bytes": 3582
+    },
+    {
+      "path": "live-historical-archive.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "live-historical-archive.stdout",
+      "sha256": "fbe26bdb6bed0e1f102b1cd16494818a6e3ebd51ccafec6ede6e2dae3c4d198d",
+      "bytes": 4063
+    },
+    {
+      "path": "map-build.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "map-build.stdout",
+      "sha256": "ab1714f517e73dbffdad919169ea17225ec3470b8fbe247798163bd29ae9f0c0",
+      "bytes": 152
+    },
+    {
+      "path": "original-review-provenance/FINAL_RECEIPT.json",
+      "sha256": "288a1c4839e7778e1ca3505682d0df74fbf000b9c130b9d345b216b8c373ad22",
+      "bytes": 31552
+    },
+    {
+      "path": "original-review-provenance/FINDINGS.json",
+      "sha256": "2b2edf70ff08911c6197075b9ca337a79e408d61204c59b94bfed0366c462a4a",
+      "bytes": 12257
+    },
+    {
+      "path": "original-review-provenance/PROOF_REVIEW.md",
+      "sha256": "44d70447ea3c5b3673530644cbe0f354995fcae57b64d66d72234700f0943b01",
+      "bytes": 15041
+    },
+    {
+      "path": "original-review-provenance/REPORT.md",
+      "sha256": "c3e35356ca4eb7a35418be2bc6e2b05c25e604e691f68dba78c77c3b252c6996",
+      "bytes": 12245
+    },
+    {
+      "path": "original-review-provenance/executions/B71.json",
+      "sha256": "4c9e24c2012dc8b683895b177d49562caa78f2a6bf5d3d54e1469bd253d49765",
+      "bytes": 10409
+    },
+    {
+      "path": "original-review-provenance/executions/B71.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "original-review-provenance/executions/B71.stdout",
+      "sha256": "493415055d68e57606c71a6d178c8b876bd90853135f2ede2e0bd87ac31ac17e",
+      "bytes": 3241
+    },
+    {
+      "path": "original-review-provenance/executions/B72.json",
+      "sha256": "91296626e2c1b4e6993b9f9a463d23dc87064dc3cfaef8770ee7c88d20a330e1",
+      "bytes": 10406
+    },
+    {
+      "path": "original-review-provenance/executions/B72.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "original-review-provenance/executions/B72.stdout",
+      "sha256": "2bf77f44b961b0dd43defe020f81f9c6cc8b15b1eb03bf12e1461fe6ec2f84d1",
+      "bytes": 3583
+    },
+    {
+      "path": "original-review-provenance/executions/B73.json",
+      "sha256": "dae270f7b2f43d83888862da4f188d2509dce52e9c9edde0804f180a9238a444",
+      "bytes": 10415
+    },
+    {
+      "path": "original-review-provenance/executions/B73.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "original-review-provenance/executions/B73.stdout",
+      "sha256": "273ce1447f2814845575b3bd2510aaed24e35d701c3d740654f4a6265f7f2e6a",
+      "bytes": 4568
+    },
+    {
+      "path": "original-review-provenance/executions/B86.json",
+      "sha256": "8b7c7325607c31d81bcce8ac308a905af55802e726f67237e8e3761a740b5a16",
+      "bytes": 10414
+    },
+    {
+      "path": "original-review-provenance/executions/B86.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "original-review-provenance/executions/B86.stdout",
+      "sha256": "28365774e2b8881fa814281d642e2ad4e9f70c834ae4122d19028ed2d6210bdb",
+      "bytes": 3656
+    },
+    {
+      "path": "original-review-provenance/executions/B89.json",
+      "sha256": "6d2e4092f8846e814aebdcdfdffd2d9a184cee23cc0e57385d273f1a0e745005",
+      "bytes": 10414
+    },
+    {
+      "path": "original-review-provenance/executions/B89.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "original-review-provenance/executions/B89.stdout",
+      "sha256": "f1d601851b24270c4d98065c31bfb030751e8ccceeecdb2b8951184ae3de0569",
+      "bytes": 3103
+    },
+    {
+      "path": "original-review-provenance/executions/B90.json",
+      "sha256": "d788e414d0e9028ed75131ee854637e65dde7fa4bfab9ada3fd0ade5cbc0d1f9",
+      "bytes": 10412
+    },
+    {
+      "path": "original-review-provenance/executions/B90.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "original-review-provenance/executions/B90.stdout",
+      "sha256": "2710e5438972bbcf527f12ae4903eaeae638effe950855bc07ea80abd98a2899",
+      "bytes": 3746
+    },
+    {
+      "path": "original-review-provenance/executions/B91.json",
+      "sha256": "39d4bad4b8e131ac3d562891fd5623b195ecb07e34bcc1120daa6ca77d625f50",
+      "bytes": 10421
+    },
+    {
+      "path": "original-review-provenance/executions/B91.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "original-review-provenance/executions/B91.stdout",
+      "sha256": "5479b4f122c8f8c76da68b5fe9a30f0c4a6e2f7d0dfbde60859e6feadb1fe632",
+      "bytes": 4134
+    },
+    {
+      "path": "original-review-provenance/executions/B92.json",
+      "sha256": "e7db187f8c1d19a553ffe0ddd18de49974726c60f3ce0ac57b351acdc9c01ee8",
+      "bytes": 10418
+    },
+    {
+      "path": "original-review-provenance/executions/B92.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "original-review-provenance/executions/B92.stdout",
+      "sha256": "8421d00bc26b5b631a8d07b60ae75b2484ea7a1269e0f26f1f7333e98cf94615",
+      "bytes": 4753
+    },
+    {
+      "path": "original-review-provenance/executions/B94.json",
+      "sha256": "ddb4d1dc2980989ae6bf145c8a3a67936e10d65ab7c86ba3027072cd6c257813",
+      "bytes": 10417
+    },
+    {
+      "path": "original-review-provenance/executions/B94.stderr",
+      "sha256": "8b5eeec47d4b6ba04b472d9cf88f3f975e9ef1c85bb727b9f9263a9dde87b166",
+      "bytes": 2113
+    },
+    {
+      "path": "original-review-provenance/executions/B94.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "original-source/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "b0486c818ac94b4b07967f221222f8acaa279d66bf51974ecea606c29315edb8",
+      "bytes": 50021
+    },
+    {
+      "path": "original-source/docs/LIVE_M2_JOINT_ARCHIVE_GRAPH_PERMUTATION_CAPACITY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "c7f8923cb405f081599e31a523e786bcfffa8c9a0973a214054b0083d6965185",
+      "bytes": 43946
+    },
+    {
+      "path": "original-source/docs/LIVE_M2_JOINT_ORDER_ENVIRONMENT_COLLISION_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "38b15d0b2501770e86dcdd75d810af0f70fa691e242a22ced53967f17da60827",
+      "bytes": 32509
+    },
+    {
+      "path": "original-source/docs/LIVE_M2_PAIR_AWARE_SWAPBACK_COLLISION_REPAIR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2b1acd0de5f63e60248fdfcd2abda67d1bb15787a081343397f54bcbbf99ba7f",
+      "bytes": 33628
+    },
+    {
+      "path": "original-source/docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "1562c0db5ec418380199a25d8b0391fb76d93ce2a23802d2184a6fcc387f942f",
+      "bytes": 36756
+    },
+    {
+      "path": "original-source/docs/LIVE_M2_TYPED_EVENT_CRITICAL_PAIR_CONFLUENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "eb04913f21353364b648ca50f783ca5f2ec833e24c464c4eecaf084708932342",
+      "bytes": 28249
+    },
+    {
+      "path": "original-source/docs/NN_FORMATION_SELECTOR_TWO_MODEL_KILL_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "76db641f6a0743dc78d7301bbdc57ed29991aeda9efa3d1a9a831ef672ece901",
+      "bytes": 29186
+    },
+    {
+      "path": "original-source/docs/RECORD_VISIBLE_INTEGRATED_FORMATION_INSTRUMENT_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "af3c5257e08e002a35d3351fa09122bb914ae94ecb3d741d216067b59125ba58",
+      "bytes": 40058
+    },
+    {
+      "path": "original-source/docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "0e92010db40cd800ef00768d4f157f8ebccc6c4633ad0c5825a99f2888df480d",
+      "bytes": 35158
+    },
+    {
+      "path": "original-source/logs/runner-cache/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.txt",
+      "sha256": "472d613fe9eb6f1721205211b373c41f6016b94312ae91d69a70ae2c3f3d38da",
+      "bytes": 4039
+    },
+    {
+      "path": "original-source/logs/runner-cache/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.txt",
+      "sha256": "9cda953dc1c93bfb5011bc1f53ac13dc140662bbe87dab3a4ce8d65d6308baff",
+      "bytes": 5140
+    },
+    {
+      "path": "original-source/logs/runner-cache/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.txt",
+      "sha256": "09aee02d9968c902ebc26a9d5cc43d480fdb6094c5d944422894ed7807181d3d",
+      "bytes": 4525
+    },
+    {
+      "path": "original-source/logs/runner-cache/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.txt",
+      "sha256": "8100affebfda0471b4bf59a9c2522d7674ce2fd2941afafdb7f58c089a048d92",
+      "bytes": 4128
+    },
+    {
+      "path": "original-source/logs/runner-cache/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.txt",
+      "sha256": "4cc6d9ebc8c36c7cbef7e7b7b10818b286ede4ef6361c626749d549dfc3023dc",
+      "bytes": 3485
+    },
+    {
+      "path": "original-source/logs/runner-cache/frontier_nn_formation_selector_two_model_kill_2026_08_14.txt",
+      "sha256": "92bd7a3152a48d80425f2ce1117570502e34bf301602f3bbb4511e9531335328",
+      "bytes": 3957
+    },
+    {
+      "path": "original-source/logs/runner-cache/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.txt",
+      "sha256": "de96282aa19a4994e2cd031f7bb5b09e5ab6112b37ca6525759a4a9de022e4b8",
+      "bytes": 4222
+    },
+    {
+      "path": "original-source/logs/runner-cache/frontier_record_visible_integrated_formation_instrument_2026_08_14.txt",
+      "sha256": "5581c05956cf02d15186f87ca9d7c0afb695f11bd7d09cc284aad372b10a395c",
+      "bytes": 4953
+    },
+    {
+      "path": "original-source/logs/runner-cache/frontier_same_carrier_three_record_archive_packet_2026_08_13.txt",
+      "sha256": "0530e4f360e1d919efc53527b9a0451ef66e4f6206a31cff50df605b11242eeb",
+      "bytes": 3619
+    },
+    {
+      "path": "original-source/scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+      "sha256": "4f98e8a72a5c81805d9aedb5cf071598e5d94bc7de7928a686c0cc5eac42a999",
+      "bytes": 54416
+    },
+    {
+      "path": "original-source/scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+      "sha256": "8452430638617805fa168ea1d72097f09138fd2376365c6a4736ecc7442002c7",
+      "bytes": 70146
+    },
+    {
+      "path": "original-source/scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+      "sha256": "7b7203f0c48b8577ddaf6b4235c7a982f1cfe73a4ec7fd15f31dd3e0d8d8ac88",
+      "bytes": 61436
+    },
+    {
+      "path": "original-source/scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+      "sha256": "7207915e40339d1cc1cf0848acc9359e0cefbd10b15c49cc643f35508d76a534",
+      "bytes": 57606
+    },
+    {
+      "path": "original-source/scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+      "sha256": "ff2741790f7bba4c974a9f69101602120d2233c1078e41e7520a82195b03fed3",
+      "bytes": 38806
+    },
+    {
+      "path": "original-source/scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+      "sha256": "ef2ebb8325fc9bd58475c7ac9a8040038079f42d49278099667cfd0edbbf3c94",
+      "bytes": 45630
+    },
+    {
+      "path": "original-source/scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+      "sha256": "d87d5eebf9daf8d41a0aa2c3f64d51d889f805d655eb443b708044b4c2e21714",
+      "bytes": 42326
+    },
+    {
+      "path": "original-source/scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+      "sha256": "4a8dbbd8414c28a4969b896653cf4e199a6d097b25527e5dd5f144e723a58bc6",
+      "bytes": 61260
+    },
+    {
+      "path": "original-source/scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+      "sha256": "2b4e986a8396d6c0713a0297eb3a02350c713ba71414d9fa4ef2c221b6eef41f",
+      "bytes": 38621
+    },
+    {
+      "path": "pre-owner-directive/CORRECTION_HISTORY.md",
+      "sha256": "8d043d32f547070ed7bdd4283914e0432dd6b53e1bb191a4abef679cd1901d8b",
+      "bytes": 2044
+    },
+    {
+      "path": "pre-owner-directive/FINAL_SOURCE_INVENTORY.json",
+      "sha256": "4472ad1767d9684404b99159d7bc9bd7bad80f7ec71cbff34b542b5b40975752",
+      "bytes": 32019
+    },
+    {
+      "path": "pre-owner-directive/author-correction.patch",
+      "sha256": "5d1deeb54537e761b07bbe877b256684ca75a9629705cfacdeeb93f5f24807c2",
+      "bytes": 115380
+    },
+    {
+      "path": "pre-owner-directive/candidate.patch",
+      "sha256": "8874026bc0648bd0507061106665d5078e3ddab3bb38b70fbabf73cdddffffb9",
+      "bytes": 907176
+    },
+    {
+      "path": "pre-owner-directive/intermediate-to-final.patch",
+      "sha256": "fa0352f8a3fc2b27472553e6886f5e82ede538a6ef73c76dec6c01554f3870bc",
+      "bytes": 18661
+    },
+    {
+      "path": "preflight.py",
+      "sha256": "2635782725bc69e8e064df849f7c207bf7969ee1d5000544343f76e332c6efa9",
+      "bytes": 1883
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "6bfbbc0cd27fa03fbfd5fa100dc972077a40f7082d11683cb80605aa3fbfee18",
+      "bytes": 1492
+    },
+    {
+      "path": "seal_handoff.py",
+      "sha256": "c435180c69ca86c4cc1e193e34f292f778bf038e4c2da4f0ecd20fd18031608d",
+      "bytes": 17959
+    },
+    {
+      "path": "unsuccessful-control-harness/NOTE.md",
+      "sha256": "bae45c903bc036bc4e2ad9c37fd989c47521e86ef9ef62eebbedc6215a858cc8",
+      "bytes": 938
+    },
+    {
+      "path": "unsuccessful-control-harness/input-controls.stderr",
+      "sha256": "08863858688ac5919ed06d49cd570b53540af5fd5944d4af1ba4903aaf71d2f2",
+      "bytes": 931
+    },
+    {
+      "path": "unsuccessful-control-harness/input-controls.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "unsuccessful-control-harness/input_controls.py",
+      "sha256": "914d3d8a5c3c0531f66bde780e3faf7c8abc7f018cd2e092cd4f686483bf3bc1",
+      "bytes": 3043
+    },
+    {
+      "path": "unsuccessful-control-harness/second-input-controls.stderr",
+      "sha256": "13aea1787eb1cf0e9185464c56ce9d74284fce43d416bf01d28b48feda237ad0",
+      "bytes": 1226
+    },
+    {
+      "path": "unsuccessful-control-harness/second-input-controls.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "unsuccessful-control-harness/second-input_controls.py",
+      "sha256": "04be2246b73b6ce304a8bbeb6a308bf367036fb410f8a638d4fcfb84bd61dc37",
+      "bytes": 3099
+    },
+    {
+      "path": "unsuccessful-seal/NOTE.md",
+      "sha256": "ece148cb6efe414060d7248dab588ea2d7857f210dd18f6205f6ade02348a56f",
+      "bytes": 290
+    },
+    {
+      "path": "unsuccessful-seal/seal-handoff.stderr",
+      "sha256": "6bbc0f2f6af911f5e416c18e3b7237f5135857b98dfb65a9a0536efd68b6cb41",
+      "bytes": 607
+    },
+    {
+      "path": "unsuccessful-seal/seal-handoff.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "unsuccessful-seal/seal_handoff.py",
+      "sha256": "fab5b99d65b2e70956f6fc9e5aabe5935ead48a8e4ccfd78f3d5a7f5dfd67315",
+      "bytes": 17647
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/archive/notes/docs/work_history/repo/review_feedback/MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md",
+      "sha256": "a55706586a30ebf2fe591e251a267d596d47d72fd830544cb2649a0bbdb2fcec",
+      "bytes": 51802
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a",
+      "bytes": 50579
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/LIVE_M2_JOINT_ARCHIVE_GRAPH_PERMUTATION_CAPACITY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "d1d513bb6bacfa741a267ff19f46db38e53744e1a77e2ec0241a2621bf2bb9ba",
+      "bytes": 44546
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/LIVE_M2_JOINT_ORDER_ENVIRONMENT_COLLISION_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "7a75e900c7507eef7369f4b22196eb7b20997a427d798c5d0f6fe84c1f5c236a",
+      "bytes": 33109
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/LIVE_M2_PAIR_AWARE_SWAPBACK_COLLISION_REPAIR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "ec3d6653b00f6d06b4eb95ac6bb24c6024e3fbe63d5a8ce5a6b78fca9a175968",
+      "bytes": 34228
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "e109fb0c3230dc5caaaea0671a369330d774c5c56bfd57cbfd6ec8e7d442d122",
+      "bytes": 38355
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/LIVE_M2_TYPED_EVENT_CRITICAL_PAIR_CONFLUENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2d4fd67f35917906d6f2fd481a27a35ac49b54814644540f9f3c884263961038",
+      "bytes": 28849
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/NN_FORMATION_SELECTOR_TWO_MODEL_KILL_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "ad99e42a21df2ea4c656cb6be8fc957e68377623c37075556c20b1ecd423f5c6",
+      "bytes": 29996
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/RECORD_VISIBLE_INTEGRATED_FORMATION_INSTRUMENT_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "29b0177eaca7e86542c1a15d9a64751895ea5798d695f6305f23891ec974ff58",
+      "bytes": 43009
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "370637c3881b72b68e5df8fb8d8afaa55fcd995025c01173771ffce418918847",
+      "bytes": 35250
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/docs/work_history/repo/review_feedback/RECORD_ONLY_STATE_BELL_LAW_TYPE_DICHOTOMY_CYCLE29_NOTE_2026-07-14.md",
+      "sha256": "272c60e8f36e206c986b98f2f54a634caf375af56868609aac1427da7773a787",
+      "bytes": 16529
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+      "sha256": "544a27161eacae82fb6d792eafb3e3a93f567d64a23565769a05d7a9f3270d89",
+      "bytes": 57464
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+      "sha256": "a1e5b37d81453545403bd5ef33113a46f53391238219bb103a8051807a3978aa",
+      "bytes": 74135
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+      "sha256": "01f6296b0ad887d6a47212f3ce5bb090dd4e50774e10ab6b86e4c35fa7e70ff2",
+      "bytes": 65086
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+      "sha256": "e649a807fb02c80974ffff827f03ac6a28c568ad9c1517e7c259d82d8ee06395",
+      "bytes": 61006
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+      "sha256": "81e5b4845c64cc149ab1984e0884975e8ec279a7ea6fbaeb5ac88ff4ac83504a",
+      "bytes": 41886
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+      "sha256": "75cd0a39fe4936ab90451266829540027c4230b20b3162afa7704a9b95924931",
+      "bytes": 47937
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+      "sha256": "af3917e1cd2b800c0682963964e22232a3f73d61cbfe02f0eeae8ac8d48b4e0c",
+      "bytes": 50423
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+      "sha256": "9586e59e5d30d7020dc3d5b03a461fe85a3e659790eacfb0fa1e489dc504cde1",
+      "bytes": 64017
+    },
+    {
+      "path": "whole-source-mutants/B72-double-gaussian/scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+      "sha256": "7d64706ad0a76724b6ae14fc1c0751d9f3518105ebea775d1399fcf129aba74c",
+      "bytes": 39270
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/archive/notes/docs/work_history/repo/review_feedback/MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md",
+      "sha256": "a55706586a30ebf2fe591e251a267d596d47d72fd830544cb2649a0bbdb2fcec",
+      "bytes": 51802
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a",
+      "bytes": 50579
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/LIVE_M2_JOINT_ARCHIVE_GRAPH_PERMUTATION_CAPACITY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "d1d513bb6bacfa741a267ff19f46db38e53744e1a77e2ec0241a2621bf2bb9ba",
+      "bytes": 44546
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/LIVE_M2_JOINT_ORDER_ENVIRONMENT_COLLISION_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "7a75e900c7507eef7369f4b22196eb7b20997a427d798c5d0f6fe84c1f5c236a",
+      "bytes": 33109
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/LIVE_M2_PAIR_AWARE_SWAPBACK_COLLISION_REPAIR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "ec3d6653b00f6d06b4eb95ac6bb24c6024e3fbe63d5a8ce5a6b78fca9a175968",
+      "bytes": 34228
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "e109fb0c3230dc5caaaea0671a369330d774c5c56bfd57cbfd6ec8e7d442d122",
+      "bytes": 38355
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/LIVE_M2_TYPED_EVENT_CRITICAL_PAIR_CONFLUENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2d4fd67f35917906d6f2fd481a27a35ac49b54814644540f9f3c884263961038",
+      "bytes": 28849
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/NN_FORMATION_SELECTOR_TWO_MODEL_KILL_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "ad99e42a21df2ea4c656cb6be8fc957e68377623c37075556c20b1ecd423f5c6",
+      "bytes": 29996
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/RECORD_VISIBLE_INTEGRATED_FORMATION_INSTRUMENT_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "29b0177eaca7e86542c1a15d9a64751895ea5798d695f6305f23891ec974ff58",
+      "bytes": 43009
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "370637c3881b72b68e5df8fb8d8afaa55fcd995025c01173771ffce418918847",
+      "bytes": 35250
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/docs/work_history/repo/review_feedback/RECORD_ONLY_STATE_BELL_LAW_TYPE_DICHOTOMY_CYCLE29_NOTE_2026-07-14.md",
+      "sha256": "272c60e8f36e206c986b98f2f54a634caf375af56868609aac1427da7773a787",
+      "bytes": 16529
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+      "sha256": "544a27161eacae82fb6d792eafb3e3a93f567d64a23565769a05d7a9f3270d89",
+      "bytes": 57464
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+      "sha256": "a1e5b37d81453545403bd5ef33113a46f53391238219bb103a8051807a3978aa",
+      "bytes": 74135
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+      "sha256": "01f6296b0ad887d6a47212f3ce5bb090dd4e50774e10ab6b86e4c35fa7e70ff2",
+      "bytes": 65086
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+      "sha256": "e649a807fb02c80974ffff827f03ac6a28c568ad9c1517e7c259d82d8ee06395",
+      "bytes": 61006
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+      "sha256": "81e5b4845c64cc149ab1984e0884975e8ec279a7ea6fbaeb5ac88ff4ac83504a",
+      "bytes": 41886
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+      "sha256": "cff4964b3dc6acebb8ad4d0c501371197898b207f8cc77468e7c76749a6d9664",
+      "bytes": 47933
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+      "sha256": "af3917e1cd2b800c0682963964e22232a3f73d61cbfe02f0eeae8ac8d48b4e0c",
+      "bytes": 50423
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+      "sha256": "a2192aa03426e0feaae03ddc2a58e85785152cd6b12f95d1060ffb04e8d16eb4",
+      "bytes": 64021
+    },
+    {
+      "path": "whole-source-mutants/B73-double-gaussian/scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+      "sha256": "7d64706ad0a76724b6ae14fc1c0751d9f3518105ebea775d1399fcf129aba74c",
+      "bytes": 39270
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/archive/notes/docs/work_history/repo/review_feedback/MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md",
+      "sha256": "a55706586a30ebf2fe591e251a267d596d47d72fd830544cb2649a0bbdb2fcec",
+      "bytes": 51802
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a",
+      "bytes": 50579
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/LIVE_M2_JOINT_ARCHIVE_GRAPH_PERMUTATION_CAPACITY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "d1d513bb6bacfa741a267ff19f46db38e53744e1a77e2ec0241a2621bf2bb9ba",
+      "bytes": 44546
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/LIVE_M2_JOINT_ORDER_ENVIRONMENT_COLLISION_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "7a75e900c7507eef7369f4b22196eb7b20997a427d798c5d0f6fe84c1f5c236a",
+      "bytes": 33109
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/LIVE_M2_PAIR_AWARE_SWAPBACK_COLLISION_REPAIR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "ec3d6653b00f6d06b4eb95ac6bb24c6024e3fbe63d5a8ce5a6b78fca9a175968",
+      "bytes": 34228
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "e109fb0c3230dc5caaaea0671a369330d774c5c56bfd57cbfd6ec8e7d442d122",
+      "bytes": 38355
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/LIVE_M2_TYPED_EVENT_CRITICAL_PAIR_CONFLUENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2d4fd67f35917906d6f2fd481a27a35ac49b54814644540f9f3c884263961038",
+      "bytes": 28849
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/NN_FORMATION_SELECTOR_TWO_MODEL_KILL_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "ad99e42a21df2ea4c656cb6be8fc957e68377623c37075556c20b1ecd423f5c6",
+      "bytes": 29996
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/RECORD_VISIBLE_INTEGRATED_FORMATION_INSTRUMENT_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "29b0177eaca7e86542c1a15d9a64751895ea5798d695f6305f23891ec974ff58",
+      "bytes": 43009
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "370637c3881b72b68e5df8fb8d8afaa55fcd995025c01173771ffce418918847",
+      "bytes": 35250
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/docs/work_history/repo/review_feedback/RECORD_ONLY_STATE_BELL_LAW_TYPE_DICHOTOMY_CYCLE29_NOTE_2026-07-14.md",
+      "sha256": "272c60e8f36e206c986b98f2f54a634caf375af56868609aac1427da7773a787",
+      "bytes": 16529
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+      "sha256": "544a27161eacae82fb6d792eafb3e3a93f567d64a23565769a05d7a9f3270d89",
+      "bytes": 57464
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+      "sha256": "a1e5b37d81453545403bd5ef33113a46f53391238219bb103a8051807a3978aa",
+      "bytes": 74135
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+      "sha256": "01f6296b0ad887d6a47212f3ce5bb090dd4e50774e10ab6b86e4c35fa7e70ff2",
+      "bytes": 65086
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+      "sha256": "e649a807fb02c80974ffff827f03ac6a28c568ad9c1517e7c259d82d8ee06395",
+      "bytes": 61006
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+      "sha256": "81e5b4845c64cc149ab1984e0884975e8ec279a7ea6fbaeb5ac88ff4ac83504a",
+      "bytes": 41886
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+      "sha256": "cff4964b3dc6acebb8ad4d0c501371197898b207f8cc77468e7c76749a6d9664",
+      "bytes": 47933
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+      "sha256": "e0f0c444e2a7d990a048e2dbe419a6064b17e72eb6d755bd27859e0acc113ba3",
+      "bytes": 50423
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+      "sha256": "9586e59e5d30d7020dc3d5b03a461fe85a3e659790eacfb0fa1e489dc504cde1",
+      "bytes": 64017
+    },
+    {
+      "path": "whole-source-mutants/B94-denominator-four/scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+      "sha256": "7d64706ad0a76724b6ae14fc1c0751d9f3518105ebea775d1399fcf129aba74c",
+      "bytes": 39270
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/archive/notes/docs/work_history/repo/review_feedback/MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md",
+      "sha256": "a55706586a30ebf2fe591e251a267d596d47d72fd830544cb2649a0bbdb2fcec",
+      "bytes": 51802
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a",
+      "bytes": 50579
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/LIVE_M2_JOINT_ARCHIVE_GRAPH_PERMUTATION_CAPACITY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "d1d513bb6bacfa741a267ff19f46db38e53744e1a77e2ec0241a2621bf2bb9ba",
+      "bytes": 44546
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/LIVE_M2_JOINT_ORDER_ENVIRONMENT_COLLISION_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "7a75e900c7507eef7369f4b22196eb7b20997a427d798c5d0f6fe84c1f5c236a",
+      "bytes": 33109
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/LIVE_M2_PAIR_AWARE_SWAPBACK_COLLISION_REPAIR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "ec3d6653b00f6d06b4eb95ac6bb24c6024e3fbe63d5a8ce5a6b78fca9a175968",
+      "bytes": 34228
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "e109fb0c3230dc5caaaea0671a369330d774c5c56bfd57cbfd6ec8e7d442d122",
+      "bytes": 38355
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/LIVE_M2_TYPED_EVENT_CRITICAL_PAIR_CONFLUENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2d4fd67f35917906d6f2fd481a27a35ac49b54814644540f9f3c884263961038",
+      "bytes": 28849
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/NN_FORMATION_SELECTOR_TWO_MODEL_KILL_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "ad99e42a21df2ea4c656cb6be8fc957e68377623c37075556c20b1ecd423f5c6",
+      "bytes": 29996
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/RECORD_VISIBLE_INTEGRATED_FORMATION_INSTRUMENT_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "29b0177eaca7e86542c1a15d9a64751895ea5798d695f6305f23891ec974ff58",
+      "bytes": 43009
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "370637c3881b72b68e5df8fb8d8afaa55fcd995025c01173771ffce418918847",
+      "bytes": 35250
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/docs/work_history/repo/review_feedback/RECORD_ONLY_STATE_BELL_LAW_TYPE_DICHOTOMY_CYCLE29_NOTE_2026-07-14.md",
+      "sha256": "272c60e8f36e206c986b98f2f54a634caf375af56868609aac1427da7773a787",
+      "bytes": 16529
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+      "sha256": "544a27161eacae82fb6d792eafb3e3a93f567d64a23565769a05d7a9f3270d89",
+      "bytes": 57464
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+      "sha256": "a1e5b37d81453545403bd5ef33113a46f53391238219bb103a8051807a3978aa",
+      "bytes": 74135
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+      "sha256": "01f6296b0ad887d6a47212f3ce5bb090dd4e50774e10ab6b86e4c35fa7e70ff2",
+      "bytes": 65086
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+      "sha256": "e649a807fb02c80974ffff827f03ac6a28c568ad9c1517e7c259d82d8ee06395",
+      "bytes": 61006
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+      "sha256": "81e5b4845c64cc149ab1984e0884975e8ec279a7ea6fbaeb5ac88ff4ac83504a",
+      "bytes": 41886
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+      "sha256": "cff4964b3dc6acebb8ad4d0c501371197898b207f8cc77468e7c76749a6d9664",
+      "bytes": 47933
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+      "sha256": "43f10910e00340948859e6ae6044ffdafa67458e975d47fb38abb2d24f16e190",
+      "bytes": 50423
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+      "sha256": "9586e59e5d30d7020dc3d5b03a461fe85a3e659790eacfb0fa1e489dc504cde1",
+      "bytes": 64017
+    },
+    {
+      "path": "whole-source-mutants/B94-hazard-half/scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+      "sha256": "7d64706ad0a76724b6ae14fc1c0751d9f3518105ebea775d1399fcf129aba74c",
+      "bytes": 39270
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/archive/notes/docs/work_history/repo/review_feedback/MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md",
+      "sha256": "a55706586a30ebf2fe591e251a267d596d47d72fd830544cb2649a0bbdb2fcec",
+      "bytes": 51802
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/LIVE_M2_CONSERVATIVE_ARCHIVE_LOCK_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "6e22bb1618341229793e9301e1ab7804b34203b55bbcae050c9fb8082cdeff2a",
+      "bytes": 50579
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/LIVE_M2_JOINT_ARCHIVE_GRAPH_PERMUTATION_CAPACITY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "d1d513bb6bacfa741a267ff19f46db38e53744e1a77e2ec0241a2621bf2bb9ba",
+      "bytes": 44546
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/LIVE_M2_JOINT_ORDER_ENVIRONMENT_COLLISION_INSTRUMENT_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "7a75e900c7507eef7369f4b22196eb7b20997a427d798c5d0f6fe84c1f5c236a",
+      "bytes": 33109
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/LIVE_M2_PAIR_AWARE_SWAPBACK_COLLISION_REPAIR_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "ec3d6653b00f6d06b4eb95ac6bb24c6024e3fbe63d5a8ce5a6b78fca9a175968",
+      "bytes": 34228
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "e109fb0c3230dc5caaaea0671a369330d774c5c56bfd57cbfd6ec8e7d442d122",
+      "bytes": 38355
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/LIVE_M2_TYPED_EVENT_CRITICAL_PAIR_CONFLUENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "2d4fd67f35917906d6f2fd481a27a35ac49b54814644540f9f3c884263961038",
+      "bytes": 28849
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/NN_FORMATION_SELECTOR_TWO_MODEL_KILL_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "ad99e42a21df2ea4c656cb6be8fc957e68377623c37075556c20b1ecd423f5c6",
+      "bytes": 29996
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/RECORD_VISIBLE_INTEGRATED_FORMATION_INSTRUMENT_BOUNDED_NOTE_2026-08-14.md",
+      "sha256": "29b0177eaca7e86542c1a15d9a64751895ea5798d695f6305f23891ec974ff58",
+      "bytes": 43009
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "370637c3881b72b68e5df8fb8d8afaa55fcd995025c01173771ffce418918847",
+      "bytes": 35250
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/docs/work_history/repo/review_feedback/RECORD_ONLY_STATE_BELL_LAW_TYPE_DICHOTOMY_CYCLE29_NOTE_2026-07-14.md",
+      "sha256": "272c60e8f36e206c986b98f2f54a634caf375af56868609aac1427da7773a787",
+      "bytes": 16529
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+      "sha256": "544a27161eacae82fb6d792eafb3e3a93f567d64a23565769a05d7a9f3270d89",
+      "bytes": 57464
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+      "sha256": "a1e5b37d81453545403bd5ef33113a46f53391238219bb103a8051807a3978aa",
+      "bytes": 74135
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+      "sha256": "01f6296b0ad887d6a47212f3ce5bb090dd4e50774e10ab6b86e4c35fa7e70ff2",
+      "bytes": 65086
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+      "sha256": "e649a807fb02c80974ffff827f03ac6a28c568ad9c1517e7c259d82d8ee06395",
+      "bytes": 61006
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+      "sha256": "81e5b4845c64cc149ab1984e0884975e8ec279a7ea6fbaeb5ac88ff4ac83504a",
+      "bytes": 41886
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/scripts/frontier_nn_formation_selector_two_model_kill_2026_08_14.py",
+      "sha256": "cff4964b3dc6acebb8ad4d0c501371197898b207f8cc77468e7c76749a6d9664",
+      "bytes": 47933
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+      "sha256": "eba20789cd144fb800b0a803fcf1389664733bef09ec8ba66b99a1591acb4443",
+      "bytes": 50423
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+      "sha256": "9586e59e5d30d7020dc3d5b03a461fe85a3e659790eacfb0fa1e489dc504cde1",
+      "bytes": 64017
+    },
+    {
+      "path": "whole-source-mutants/B94-row-two-fifths/scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py",
+      "sha256": "7d64706ad0a76724b6ae14fc1c0751d9f3518105ebea775d1399fcf129aba74c",
+      "bytes": 39270
+    }
+  ]
+}

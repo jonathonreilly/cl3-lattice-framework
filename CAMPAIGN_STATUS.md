@@ -51,8 +51,8 @@ joint-law selection remain open.
 ## Next scientific decisions
 
 1. Selector/channel/resource #6371 and #6339/#6368 science is on main. Finish
-   #6358 source sealing and independent affected confirmation; continue #7942
-   repairs and #7848/#7849 original review. #5966 keeps its old Record-additivity
+   independent confirmation of the composed #6358 source; continue #7942 and
+   #7848/#7849 author repairs plus #7888/#7890 original matter review. #5966 keeps its old Record-additivity
    premise hold; #6515 keeps its actual reserved-source dependency hold.
    Closure reconciliation is complete; 81 pending closed scopes remain at eight
    successors. Preserve the fixed original 254 membership and all reservations.

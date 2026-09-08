@@ -112,11 +112,12 @@ main before #6371 closed. The two constituent rows now record landed science.
 | Landed | #7892/#7893/#7903 matter and U1 links | Complete corrected conditional science accepted; all original source scopes preserved. [Final evidence](backlog_evidence/wave15/INDEX.json). |
 | Landed | #7911/#7959 pure-link ring and cubic projector | Complete corrected finite-model scope accepted; historical phase/parent claims remain explicitly unaccepted. |
 | Landed | #7990 Born-price wordings | Complete indexed-menu/probability correction and self-contained conditional proof accepted; physical law and joint-law selection remain open. |
-| Repair author backlog_batch_contract; original reviewer backlog_8001_review | #6358 including #6280/#6345/#6352/#6354 | Nine final executions and five actual semantic mutants complete. Final packet sealing; independent affected confirmation remains. |
+| Original reviewer backlog_8001_review | #6358 including #6280/#6345/#6352/#6354 | Frozen corrected 29-path source/manifest composition under independent affected review; all author runs/controls and root preservation checks complete. No final PASS. |
 | Landed | #6371 including #6339/#6368 and Block84 supplier | Complete corrected conditional scope accepted on main; full-lattice race, physical probability/time/energy and broader parent claims remain unestablished. |
 | Held | #6515 including #6485 dressing/sector signature | Actual proof chain reaches reserved #6379 through Blocks 110/109/108/107/106/105. Eight original additions and all obligations preserved; keep #6515 open. No execution or full science verdict. |
-| Repair author backlog_8001_review; original reviewer backlog_draft_triage | #7942 pair-update parity/winding | Ten original finding groups frozen. Compiler/engine failures, Gauss checks and unsupported physical/statistical readings are being corrected. |
-| backlog_draft_triage | #7848/#7849 finite Noether and transfer results | Complete original review and finite algebra controls active. B44 passes 15/0; B45 missing-path abort is preserved. Input and cache repairs remain. |
+| Repair author backlog_8001_review; original reviewer backlog_draft_triage | #7942 pair-update parity/winding | Narrow author edits and adverse controls checkpointed while the ready #6358 confirmation proceeds; final freeze/execution and independent confirmation remain. |
+| Repair author backlog_batch_contract; original reviewer backlog_draft_triage | #7848/#7849 finite Noether and transfer results | Complete original review has three repairable archive/input/publication findings. Separate author preserves all 46 histories and supplies scoped current evidence. |
+| backlog_draft_triage | #7888/#7890 finite matter kinematics | Original Dirac-point/taste and staggered-mass source/closure review active; no verdict. |
 | Reconciliation complete | Nineteen direct landings and 110 other closures | All 129 closed originals retain recoverable source; 81 pending closed scopes remain at 8 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
@@ -128,6 +129,10 @@ Partial #5966/#5950/#5952 preparation preserves 26 source paths and 90,600 compl
 original map rows. Sixteen first-hop suppliers and the removed scalar Record
 additivity premise are identified; full source/closure review and execution remain.
 [Preparation evidence](backlog_evidence/wave15/5966-preparation/REPORT.md).
+
+Current assignments and the #6358 composed-tree binding are published in
+[the wave18 review handoff](backlog_evidence/wave18-handoff/INDEX.json).
+Routing and landed-science counts above remain unchanged until final review and landing.
 
 The #6515/#6485 dependency hold is supported by seven proof edges and eleven
 exact source anchors independently checked by the coordinator. Its current axiom
