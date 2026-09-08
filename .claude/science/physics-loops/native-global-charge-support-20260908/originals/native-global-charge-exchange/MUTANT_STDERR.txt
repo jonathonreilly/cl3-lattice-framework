@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-global-charge-exchange/MUTANT_WITHOUT_NATIVE_Z_STRINGS.py", line 68, in <module>
+    a,pa,ta=tape(z,seqA,s);b,pb,tb=tape(z,seqB,s);req(a==b);req((pa-pb)%4==2)
+                                                            ^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-global-charge-exchange/MUTANT_WITHOUT_NATIVE_Z_STRINGS.py", line 43, in req
+    if not c:raise RuntimeError('global native exchange witness')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: global native exchange witness

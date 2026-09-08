@@ -1,0 +1,1 @@
+Prove full finite D2 hopping support connectivity and exhibit globally supported same-sign D4 exchange, preserving the exact native phase dictionary and supplied-model scope. No runtime extension or additional physics selection is introduced by this author packet.

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-global-charge-support-20260908/.claude/science/physics-loops/native-global-charge-support-20260908/mutations/wrong_negative_cycle_direction.py", line 98, in <module>
+    reverse(C);results.append(dict(cycle=C,initial_bits=format(initial,'0192b'),final_bits=format(z,'0192b'),branches=branches,hops=len(tape),tape=tape))
+    ^^^^^^^^^^
+  File "/private/tmp/toe-native-global-charge-support-20260908/.claude/science/physics-loops/native-global-charge-support-20260908/mutations/wrong_negative_cycle_direction.py", line 94, in reverse
+    for a,b in zip(route,route[1:]):hop(a,b,s)
+                                    ^^^^^^^^^^
+  File "/private/tmp/toe-native-global-charge-support-20260908/.claude/science/physics-loops/native-global-charge-support-20260908/mutations/wrong_negative_cycle_direction.py", line 64, in hop
+    q=Q(z);req(q[a]==s and q[b]==0);req(arrow(z,a,b)==(s==1))
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-global-charge-support-20260908/.claude/science/physics-loops/native-global-charge-support-20260908/mutations/wrong_negative_cycle_direction.py", line 17, in req
+    if not x:raise RuntimeError('connectivity certificate failed')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: connectivity certificate failed

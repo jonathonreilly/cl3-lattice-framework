@@ -1,0 +1,5 @@
+# Review history
+
+Research originals are preserved byte for byte. Independent reachability proof8148d957 and native92c7 comparison are under originals/native-d2-reachability-cold-proof. Independent full connectivity proofcf54eb96 is under originals/native-d2-connectivity-cold-proof; native post-freeze comparison is under originals/native-d2-reachability. Independent exchange review covers proof830105ab, checker53040810 and rawf8684324, including a separate CAR/W phase replay, under originals/native-global-charge-exchange-cold-review. These reviews cover their frozen original units, not automatically this canonical rewrite.
+
+Author read the complete new note, portable helpers and primary, checked exact scientific payload preservation, and executed isolated -OO closure plus three semantic mutants. Canonical independent review is complete in REVIEW.md with exact READ_HASHES.json; it explicitly builds on independently frozen research proofs and separately checks canonical source changes. Root separately read the complete note/primary and full helper port deltas. No changes to parent science or effective audit status.
