@@ -1,0 +1,19 @@
+--- 
++++ 
+@@ -1,7 +1,8 @@
+ from pathlib import Path
+ from itertools import product,combinations
+ import json,hashlib,time,signal,resource,sys
+-signal.alarm(180);start=time.monotonic();checks=0
++if __name__=='__main__': signal.alarm(180)
++start=time.monotonic();checks=0
+ 
+ def need(c,m):
+  global checks
+@@ -50,4 +51,5 @@
+    if ci<len(faces) and amp*d(y)*d(x)!=-1:wrong=True
+  need(wrong,'trivial background actual failure')
+  results.append({'L':L,'preparation_faces':preps,'fixture_bits':[[x>>e&1 for e in range(E)] for x in states],'fixtures_sha256':[hashlib.sha256(x.to_bytes((E+7)//8,'little')).hexdigest() for x in states],'all_legal_transition_controls':tests,'legal_winding_transitions':wind,'cycle_count':len(cycles)})
+-rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024);need(rss<384,'RSS');out={'checks':checks,'results':results,'seconds':time.monotonic()-start,'rss_mib':rss,'scope':'fixed actual full-bit fixtures, every legal H4 transition; no sampling'};Path(__file__).with_name('RESULT.json').write_text(json.dumps(out,indent=2)+'\n');print(out)
++rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024);need(rss<384,'RSS');out={'checks':checks,'results':results,'seconds':time.monotonic()-start,'rss_mib':rss,'scope':'fixed actual full-bit fixtures, every legal H4 transition; no sampling'}
++if __name__=='__main__': print(json.dumps(out,indent=2))
