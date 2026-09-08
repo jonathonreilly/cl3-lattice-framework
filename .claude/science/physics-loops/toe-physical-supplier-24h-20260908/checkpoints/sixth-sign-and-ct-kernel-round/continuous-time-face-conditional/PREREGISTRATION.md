@@ -1,0 +1,7 @@
+# CT face conditional deterministic integration
+
+Before execution implement the exact labeled quotient from panel30391f9 and interval bridge840eebd/a2a068. Total path time is T, with midpoint exp(-T H/2)1; the old finite-G tau36 corresponds to T72, not T36. No stochastic/calibration/profile execution is authorized.
+
+Use actual L2/L4 legal configurations, geometric face labels and strictly ordered event times. Remove exactly p events, keep every other label/time and interval orbit. Test singleton/double orbit sizes, swaps/partial compatibilities and L2 alias retention. Compare transfer sums and free-endpoint marginals with independent high-precision positive Dyson/Taylor matrices and complete short boundary-state enumeration. Fixed supplied variates exercise complete interval bridge recursion, with a finite event budget causing whole-fixture failure, never truncation or retries. Zero/coincident event times reject. Floating brackets and cumulative sums are numerical approximations, not machine-exact draws or interval certificates.
+
+Prove and compare strict-neighborhood distant-event merging against unmerged matrices, while retaining the physical event skeleton. Actual wrong alias-rate and omitted-compatibility alternatives must disagree on named fixtures. Validate input/output legality, seed witness, endpoint consistency and preserved non-p skeleton. Resource180seconds384MiB per deterministic command. Freeze source and raw outputs; no performance claim.

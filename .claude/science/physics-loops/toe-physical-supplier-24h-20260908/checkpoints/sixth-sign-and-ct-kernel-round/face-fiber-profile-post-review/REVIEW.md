@@ -1,0 +1,21 @@
+# Completed face-fiber cost-profile review
+
+PASS for the bounded completed cost exercise and its stated screening interpretation. No profile rerun or new sampling was performed. The full current protocol, implementation report, factory, guarded and reference conditional cores, checkpoint codec, measurements, forecast, dispatch shell/Python, outer finalizer, freeze construction, deterministic controls and accounting correction were read. All FINAL_FREEZE, runtime and source-binding entries were independently hashed against their actual files. READ_HASHES records the reviewed bytes. Original accounting-fixture typo and correction are retained by the author; no such failed fixture is counted as profile execution.
+
+## Independent actual checkpoint replay
+
+The reviewer imports no author module. It constructs L8 coordinate faces, masks and affected-face sets independently, reads both packed final checkpoints, verifies payload hashes and lengths, replays every accepted seed witness and every one of110592 time bonds, and recomputes every stored Nf count by legal local changes. Complete first/middle/last literal Nf recounts additionally match. Legal face flips preserve the initial degree/flux sector by induction. This checks the actual saved paths rather than merely the format or a small synthetic substitute.
+
+Final midpoint Fourier sums were independently recomputed using the equivalent (2n−1)/(2sqrt(volume)) normalization and all six ordered transverse channels for each h1/h2. Final endpoint overlap, temporal activity, endpoint/whole-path Nf and sums agree. All2,130,255 explicit predicates passed under-OO in1.418s, reviewer peak130.844MiB. This is deterministic replay cost, separate from the original profile budget.
+
+Only final full checkpoints are retained. The initial and two intermediate measurement vectors are reported but their complete paths are not separately saved. This review reads their production code and finite values; it does not pretend to reconstruct those earlier vectors independently without replaying the stochastic fixture, which was not authorized. Likewise the final checkpoint proves support and caches, not that every conditional random choice was statistically ideal. Guarded arithmetic rejects several underflow/nonfinite events but ordinary floating summation and CDF rounding remain.
+
+## Timing and forecast
+
+The single successful outer receipt reports real6.61s, user6.46s, system0.13s and maximum resident set size174505984bytes=166.421875MiB. With the declared0.01s rounding allowance, charged time is6.62s, within30s. Both cases, all six blocks, eight measurement vectors and final checkpoint save/load work completed. The measured outer boundary includes Python startup, dispatch/runtime validation, child work and pending-forecast serialization. Final scalar-receipt publication is separately labeled bookkeeping. Observed RSS is a measurement, not an allocation guarantee.
+
+The two-case accounted timer sum is6.4292534179694485s, leaving0.19074658203055161s charged overhead. Independent formula arithmetic reproduces the fixed-face maximum sweep proxies701.0763524919748s at V=.95 and704.703679472208s at V=0. The hypothetical16-chain16-sweep totals are179512.16993858488s and180439.80325154084s respectively, including the full unallocated overhead per hypothetical chain. These are roughly49.86 and50.12 hours per V, not authorized jobs.
+
+The protocol's maximum over three prescribed faces is a conservative choice within that tiny measured set, not a proven upper bound for unmeasured faces or a representative mean. The extrapolation assumes cost scales like1536 such blocks per nominal sweep and uses the measured path/fiber regime. It also does not measure independent-sample efficiency. Thus the run passes the30-second implementation fixture while indicating that this unoptimized Python route is too expensive for the proposed hypothetical study. It does not demonstrate mixing, equilibrium, effective sample size, a production-ready physics estimator or that a compiled alternative must fail.
+
+No blocking scientific/accounting correction is required within this scope. IMPLEMENTATION_REPORT is clearly a preserved pre-profile handoff rather than a post-run result. The completed raw result and outer receipt, not that historical wording, establish the actual execution.

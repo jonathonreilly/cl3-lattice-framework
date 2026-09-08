@@ -1,0 +1,11 @@
+# Two-state bridge checkpoint
+
+The full parent CT panel30391f938b2a7a30be8353d7a6c26691036ddca4211b51bf35520abdf8f07fc6 was read. The supplied root candidate is explicitly credited. This packet independently derives the interval bridge and verifies the arithmetic; it does not supersede the full skeleton/compatibility proof.
+
+1969 deterministic predicates passed, including72 comparisons against an independent80-digit positive Taylor matrix exponential, survival and semigroup checks, d0 analytic inverse brackets, endpoint atoms, forced endpoints and log-domain rare transitions. A separately preregistered13-predicate exact Fraction/cancellation supplement passed. The rational cases d=+-3,m2 verify the eigenvector, transformed generator and stationary balance without floating eigenvalue fitting. The naive rationalized eigenvalue actually divides by zero at d=-1e16 in this floating implementation; the piecewise formula retains rates1e16 and1e-16. The first control result and source are preserved unchanged.
+
+The first check took0.514357s and16.515625MiB under -OO with explicit exception predicates and180s alarm. No random trajectory, performance fixture or stochastic production was executed. Deterministic inverse-CDF levels are function controls, not sampled event times. The code returns ordinary floating brackets, not certified intervals; it is not an exact random sampler under finite precision. Entire bridge recursion/event counts and global path reconstruction remain unimplemented.
+
+The two direct biased-law controls show that omitting the endpoint continuation factor, or changing the selected-label rate to an alias multiplicity without changing the conditional skeleton, changes the survival law. These are explicitly alternative-law counterexamples, not claimed full source-mutant campaigns. The signed-d cancellation supplement executes the actual failing formula.
+
+Implementability gain: common Perron growth is removed and the first-wait CDF is explicit in log probabilities. Remaining obligations: precision near CDF atoms, rare endpoint normalization, compatibility-aware global messages, singleton support, event recursion termination/cost and actual physical mixing. No inference transfers these controls to the separate finite-G cost profile, which remains unchanged and unlaunched.

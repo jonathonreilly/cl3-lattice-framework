@@ -1,0 +1,15 @@
+# Pre-profile implementation handoff
+
+No stochastic profile has run. The fixed profile is specified in PROFILE_PROTOCOL.md; source creation and 114 reduced deterministic predicates are complete. Controls cost0.076272s and20.78125MiB, recorded separately from the prospective30-second profile. No timing extrapolation from those short controls is used as an L8 throughput measurement.
+
+reference.py is byte-identical to the reviewed face-fiber core262ec6d7. guarded.py changes only message arithmetic guards: positive terms rounding to zero, multiplication/scaling underflow, nonfinite/negative entries and overflow reject. Structural zero support entries remain allowed. Floating summation and inverse-CDF rounding are still ordinary machine arithmetic, not rigorous sampling accuracy. The guarded function agrees exactly with the reference on the fixed control tapes.
+
+factory.py generates RK proposals from the seed, records every accepted flip as a witness, then creates the Q path using local Nf differences. It recounts Nf once after RK, not at every slice. Every nonself move is explicitly tested legal. This certifies each path slice by induction on actual legal transitions. After a face draw, a first-slice change appends that face to the witness. The full constructor/check is retained for independent short-fixture validation.
+
+checkpoint.py stores packed state bytes, uint16 Nf and witness labels, declared dimensions/V, total Nf and payload hashes. Reconstruction replays the witness and every time bond, uses local Nf differences, and compares every stored Nf and their sum. A valid payload hash does not bypass this mathematical validation. Actual rehashed cache/state corruptions reject in controls; continuation after real save/load reproduces the same supplied-variate output.
+
+The profile includes two complete initializations, three full face blocks each, four physical measurement vectors each, checkpoint save and validated load, hashes, imports and post-run screening calculations. Resource failure preserves partial results and closes this one attempt. The selected faces are fixed, not representative random samples; the maximum-time sweep extrapolation is merely a screening proxy.
+
+The original O(nM) reference check is not run inside the L8 timing fixture: its obligations are established by legal induction and deterministic crosschecks. Geometry creation still has straightforward polynomial setup overhead and is timed. No compiled optimization is introduced. Full all-time configurations remain packed integers, while the original nested-list conditional implementation remains deliberately visible in the profile cost.
+
+No performance forecast based on actual L8 data exists yet. The one-shot 30s cap may reject this Python prototype. That is a useful cost result, not grounds for shortening coverage or retrying. Any compiled backend or physical calibration will need a separate prospective design and review. The immutable completed L8 reptation failure is not changed by this work.

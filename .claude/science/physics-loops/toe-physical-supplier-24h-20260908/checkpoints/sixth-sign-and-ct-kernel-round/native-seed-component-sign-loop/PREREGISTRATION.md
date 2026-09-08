@@ -1,0 +1,3 @@
+# Deterministic coordinate-seed component search
+
+L6 coordinate degree-three seed. First scan zero preparatory flips, then each legal single plaquette flip in fixed plane/root order. For one-flip search inspect only elementary cubes with an edge changed by that flip, because other cube patterns equal the unsuccessful seed patterns. Scan all8corners and6orders. Stop at first legal three-face sequence with six-edge boundary. No RNG or flux-only inference. If one flip fails, preserve result before separately bounded two-flip extension. <=180s384MiB. Store seed-to-witness tape, complete loop states, and actual native product phases. Canonical files unchanged.

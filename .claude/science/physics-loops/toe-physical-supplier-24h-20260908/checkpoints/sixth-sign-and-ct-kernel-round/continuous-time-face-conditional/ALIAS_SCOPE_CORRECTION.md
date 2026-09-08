@@ -1,0 +1,9 @@
+# Scope erratum bound to unchanged prior sources
+
+Original CT panel DERIVATION30391f938b2a7a30be8353d7a6c26691036ddca4211b51bf35520abdf8f07fc6 remains unchanged. Its phrases “even those whose physical flip equals p's flip at L2” and “At L2 ... Other alias labels remain explicit retained events” must be read as a generic repeated-label possibility, not a fact about this actual geometry. The actual source has no repeated masks at L2 or L4. Earlier face-fiber report wording implying L2 duplicates has the same scope issue. The general multiplicity formulas remain correct; their native multiplicity is1.
+
+ALIAS_SOURCE_CONTROL.json binds actual production geometry source a710a92baaaa7492cfeb7eaaa8db1e88cf902b6abc3531d4d9031a90310e3210 and extracted function/class AST5cbda877402028247fcf1c8bacdd881ba7fdfc4eef0fb974466be6d2e501204a. Executing those exact source bodies gives L2=24 labels/24 masks and L4=192 labels/192 masks, all ordered faces identical to this implementation. Since different masks yield different XOR endpoints, there are no same-endpoint geometric aliases in these carriers. This source control was run before writing this scope erratum.
+
+The first requested native alias fixture failed with StopIteration, preserved. Its replacement is explicitly a synthetic25-label extension and changes that fixture's Nf and adjacency accordingly. It is not native physics. Previously frozen panel, bridge, producer and numerical evidence are unmodified; no L8 or previous numerical run is repeated. Their actual code already counted these unique masks, so this premise correction does not change their numerical target or output values.
+
+Independent reviewer confirmation is available in ../native-face-alias-scope-correction/ALIAS_SCOPE_CORRECTION.md (dfd5d498292de6c5779a4f092b2386a7e2447069025e5398e71fef9615d6d7cd). This is a transparent wording correction, not a claim that an alias-free implementation automatically passes all other checks.

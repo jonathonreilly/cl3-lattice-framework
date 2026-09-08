@@ -1,0 +1,5 @@
+# L6 same-local-pattern extension
+
+The frozen L4 source and result remain unchanged. check_l6.py changes only lattice-dependent vertex/edge sizes and the output filename; the exact local cube assignment search and bipartite integral degree completion are retained. It delivers four complete648-bit states, each checked at all216 vertices. The three legal plaquettes are [109,128,112,110], [3,112,21,4], [18,128,21,20], and the closing six-cycle is [3,110,109,18,20,4]. All lie within the coordinate0/1 cube; none crosses a seam or winds.
+
+Sequential native-product phases are again(−1,+1,+1,−1), hence the leading effective signs are(−1,+1,+1,+1) and the four-step product is−1. The exact same diagonal-gauge obstruction therefore exists on L6. The difference between the first and last state is precisely these six edges. At sixth order any contribution to that matrix element must flip those six edges exactly once, so a distinct winding support cannot contribute to this transition. This remains a fixed-finite-volume perturbative statement and does not claim a uniform analytic radius or a phase.

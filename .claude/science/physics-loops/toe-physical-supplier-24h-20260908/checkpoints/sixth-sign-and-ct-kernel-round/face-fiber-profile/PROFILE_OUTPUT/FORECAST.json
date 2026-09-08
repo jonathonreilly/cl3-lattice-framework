@@ -1,0 +1,31 @@
+{
+  "scope": "fixed-face screening proxy only; no production or mixing claim",
+  "charged_outer_seconds": 6.62,
+  "accounted_case_seconds": 6.4292534179694485,
+  "unallocated_profile_seconds": 0.19074658203055161,
+  "formula": "16*(setup + 16*(1536*max_fixed_face_block + mean_measurement)) + 16*max(0,outer_total - sum_all_case_timers)",
+  "cases": [
+    {
+      "V": 0.95,
+      "maximum_fixed_face_block_seconds": 0.4564299169869628,
+      "nominal_sweep_proxy_seconds": 701.0763524919748,
+      "base_16chain_16sweep_seconds_before_unallocated": 179509.11799327238,
+      "unallocated_seconds_charged_per_hypothetical_chain": 0.19074658203055161,
+      "hypothetical_16chain_16sweep_seconds": 179512.16993858488
+    },
+    {
+      "V": 0.0,
+      "maximum_fixed_face_block_seconds": 0.45879145798971877,
+      "nominal_sweep_proxy_seconds": 704.703679472208,
+      "base_16chain_16sweep_seconds_before_unallocated": 180436.75130622834,
+      "unallocated_seconds_charged_per_hypothetical_chain": 0.19074658203055161,
+      "hypothetical_16chain_16sweep_seconds": 180439.80325154084
+    }
+  ],
+  "outer_time_file": "/private/tmp/toe-24h-probes-20260908/face-fiber-profile/PROFILE_OUTPUT.outer-time.txt",
+  "outer_time_sha": "2f4415bf40e9d0be8f52df4afd25afcca35cc985f10a3c027a5eb3c897b8116a",
+  "printed_real_seconds": 6.61,
+  "rounding_allowance_seconds": 0.01,
+  "within_30_seconds": true,
+  "measurement_boundary": "/usr/bin/time wraps Python startup, dispatch, validation and pending-forecast serialization; final scalar receipt bookkeeping is separate"
+}

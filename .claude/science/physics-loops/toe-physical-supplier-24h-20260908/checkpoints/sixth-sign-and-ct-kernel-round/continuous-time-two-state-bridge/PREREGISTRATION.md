@@ -1,0 +1,5 @@
+# Prospective two-state CT bridge controls
+
+Root supplied the Perron/Doob candidate before this independent derivation. Read complete continuous-time-face-gibbs-panel/DERIVATION.md SHA30391f9 prefix; it remains the authority for the orbit/skeleton conditional. This subtask checks only a single two-state interval and explicitly does not sample trajectories, run a cost profile or identify exp(-tH) with finite G^n.
+
+Before computation: derive arbitrary positive offdiagonal rate m, signed diagonal difference d, Doob rates, stable log transfers and fixed-endpoint first-wait survival. Check both signs of d; rationalized lambda may fail for large negative d. Deterministic controls use an independent high-precision Decimal positive Taylor exponential for moderate cases, analytic d0 cosh/sinh quantiles, semigroup/invariants, endpoint atoms and incompatible zero-time endpoints, large signed d/time log-domain tests, and actual biased wrong-rate/omitted-h-transform controls. Any floating inverse is a numerical bracket, not exact random variate sampling. No complete bridge event recursion is implemented. 180seconds384MiB bounds for deterministic controls.

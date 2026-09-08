@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/continuous-time-face-conditional/check.py", line 98, in <module>
+    signal.signal(signal.SIGALRM,lambda *_:(_ for _ in ()).throw(TimeoutError()));signal.alarm(180);t=time.monotonic();r=main();r['seconds']=time.monotonic()-t;r['rss_mib']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1024**2 if sys.platform=='darwin' else 1024);need(r['rss_mib']<=384,'RSS');r['checks']=N;print(json.dumps(r,indent=2))
+                                                                                                                         ^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/continuous-time-face-conditional/check.py", line 55, in main
+    g=c.Geometry(2);p=next(p for p in range(g.M) if legal(g,g.seed,p));q=next(q for q in g.by_mask[g.masks[p]] if q!=p)
+                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration

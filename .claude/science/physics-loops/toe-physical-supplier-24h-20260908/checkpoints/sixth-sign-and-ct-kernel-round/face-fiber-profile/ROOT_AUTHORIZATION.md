@@ -1,0 +1,5 @@
+# Root authorization: one fixed cost fixture
+
+Authorize exactly one execution of run_profile.sh with fresh PROFILE_OUTPUT, under freeze f7b24558fbe7ef70850448fe7943c13570dbba03530bba269b14be6d5cfa5250. Root read the complete original core previously, full guarded delta, factory, checkpoint, measurement, profile, corrected launcher/finalizer and protocol. Complete independent review b1ce32628af1ef00bd724d16c75c99f02b1724136a6f49b6b938ba60d6bdd7fe and265 deterministic controls pass.
+
+Fixed two cases V.95/V0, L8n110592,RK2048, faces0/512/1024 each. Thirty-second total producer/validation boundary and384MiB observed peak. Inspect outer child/parent RSS as well; observed guards are not allocation guarantees. Final receipt bookkeeping is separate. No retry, replacement, reduced coverage or physics inference. If incomplete, retain partial output and report that this Python implementation failed the bounded throughput screen. No production or subsequent stochastic calibration is authorized here.
