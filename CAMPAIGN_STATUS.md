@@ -51,16 +51,17 @@ joint-law selection remain open.
 ## Next scientific decisions
 
 1. Reviewed corrected Record, Noether, matter, shifting, symmetry/Hartree,
-   walls, sea/corner, flux, relaxation and vacuum/energy source are on main.
-   BACKLOG_STATUS.md records exact scopes and commits. Carrier/role #7869/#7880
-   source is frozen for final confirmation by its original reviewer. The
-   #7918/#7928/#7934 support/readout original review is checkpointed meanwhile. Original
-   #7939/#7977/#7982 role-law and matter-readout review starts in parallel. The #6377 successor and eleven
-   consolidated originals resume complete source/dependency review from checkpoint.
-   Stale authority and moved OS-note guards remain recorded failures; no supplier
-   tower or full scientific PASS is accepted. #5966 retains its old Record premise
-   hold and #6515 its actual reserved-source hold. Closure reconciliation remains
-   complete: 77 pending closed scopes at seven successors. Fixed254 only; all
+   walls, sea/corner, flux, relaxation, vacuum/energy and carrier/role source
+   are on main. BACKLOG_STATUS.md records exact scopes and commits.
+   Support/readout #7918/#7928/#7934 original review is sealed with nine findings;
+   its separate author has verified the full packet and begun narrow repairs.
+   The #6377 cumulative original review is sealed with seven correction groups,
+   preserved original failures and explicit used-supplier boundaries; separate
+   author backlog_batch_contract is preparing source and placement fixes; final
+   confirmation remains. Role-law and matter-readout
+   #7939/#7977/#7982 originals are under complete review. #5966 and #6515 retain
+   their premise and actual reserved-source holds. Closure reconciliation remains
+   complete: 77 pending closed scopes at 7 open successors. Fixed 254 only; all
    reservations and formal audit deferral remain.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,

@@ -1,0 +1,363 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "title": "Censored queried sets give the wrong fibre-bound direction",
+    "affected_prs": [
+      7918
+    ],
+    "anchors": [
+      {
+        "path": "docs/ONLY_81_OF_THE_SUPPORT_TABLES_ARE_DISTINGUISHABLE_BY_COMPLETE_RECORDS_FORMATION_HISTORIES_DISTINGUISH_NEARLY_ALL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start_line": 184,
+        "end_line": 191,
+        "source_sha256": "3083e27b66ec1f62407f68d7b2df0a493c073b338fa889590d5ca20828023e25",
+        "excerpt": "24 flip-pairs, so no digit is hidden from `(B)` by the order alone. Let `R(T)`\nbe the set of digits queried at some positive-probability partial configuration.\nDigits outside `R(T)` are never queried, so changing them leaves the process\nidentical step by step: **`P_T` is unchanged, and the `(B)`-fibre\nof `T` contains at least 3^(24-|R(T)|) tables.** Conversely, at the first step\nwhere a reachable partial configuration meets a profile whose support differs,\nthe two laws differ on that step's joint distribution, the earlier steps being\nidentical. So `R(T)` is exactly the set of digits that change the law singly."
+      },
+      {
+        "path": "docs/ONLY_81_OF_THE_SUPPORT_TABLES_ARE_DISTINGUISHABLE_BY_COMPLETE_RECORDS_FORMATION_HISTORIES_DISTINGUISH_NEARLY_ALL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start_line": 215,
+        "end_line": 222,
+        "source_sha256": "3083e27b66ec1f62407f68d7b2df0a493c073b338fa889590d5ca20828023e25",
+        "excerpt": "and the total variation is exactly 1: `(B)`-separation inside one `(A)`-class.\n\n**A declared family, exact lower bounds.** The 32 tables whose 24-digit codes\nare the base-3 expansions of `j * floor(3^24 / 32)`, `j = 0..31`, give queried\ncounts from 6 to 24, with 12 of the 32 at 23 or 24 and a second cluster at 9.\nEach stated fibre is an exact lower bound over the declared finite set; where\nthe frontier cap is reached, `|R(T)|` is itself a lower bound. Near injectivity\nis therefore common in this family but not its typical case, and the sharp"
+      },
+      {
+        "path": "scripts/support_table_fibres_complete_records_81_classes_check_2026_09_03.py",
+        "start_line": 849,
+        "end_line": 873,
+        "source_sha256": "25de4dc16ed490e3e68f52f1f62bd1ed31dd01476914e7cc8be8daa38163264a",
+        "excerpt": "        k = j * stride\n        code = tuple((k // (3 ** i)) % 3 for i in range(24))\n        _, _, queried, truncated = formation.frontier(code, lex, FRONTIER_CAP, weighted=False)\n        family[len(queried)] += 1\n        truncated_rows += int(truncated)\n    sharp = sum(count for size, count in family.items() if size >= 23)\n    checks.check(\n        \"T4-family\",\n        f\"over the 32 declared tables the queried-digit count ranges {min(family)}..{max(family)} with {sharp} at 23 or 24\",\n        sum(family.values()) == FAMILY_SIZE and max(family) == 24 and sharp >= 12,\n        sorted(family.items()),\n    )\n    checks.check(\n        \"T4-family-bounds\",\n        \"every stated formation-fibre bound is an exact lower bound\",\n        all(size <= 24 for size in family)\n        and 3 ** (24 - 24) == 1 and 3 ** (24 - 23) == 3,\n    )\n    print(f\"declared_family_queried_digit_histogram: {sorted(family.items())}\")\n    print(f\"declared_family_frontier_cap_rows: {truncated_rows} of {FAMILY_SIZE}\")\n\n    # ---------- note contract -----------------------------------------------\n    phrases = (\n        \"exactly 81\", \"3^20\", \"282,429,536,481\", \"9,038\", \"89,286,536\", \"2,918\",\n        \"14,348,907\", \"records register\", \"declared finite set\", \"uniform lift\","
+      }
+    ],
+    "problem": "Eleven of32 arithmetic-family frontiers truncate. R_seen is a subset of the actual positive-prefix query set, so 3^(24-|R_seen|) cannot be claimed as the proven lower bound. The actual cap1 all-support frontier reports9 observed digits while all24 are reachable and the endpoint fibre is1. The original T4-family-bounds guard still passes the false14,348,907 lower bound because it tests only size<=24 and literal powers.",
+    "narrow_repair": "Preserve all rows/cap flags and distinguish observed from complete query sets. Under the declared fixed order and uniform lift, prove the sharper exact identity fibre(T)=3^(24-|R(T)|) by recovering conditional prefix menus from the endpoint law; a censored set then supplies an upper bound, not the claimed lower bound. Alternatively withdraw censored quantitative claims. Keep the exact untruncated majority/copy atoms and add the actual cap1 counterexample to the decisive assertion. No uncapped large run is necessary. The12 original rows observing23/24 digits do support upper bounds<=3 under the corrected identity, and the10 observing24 have singleton fibres, within this declared family only.",
+    "decisive_evidence": [
+      "INDEPENDENT_CONTROLS.json:capped_counterexample",
+      "ACTUAL_SOURCE_MUTANTS.json:capped_bound_false_negative",
+      "FINITE_FIBRE_PROBE.json",
+      "original-execution/7918/snapshot/values.json"
+    ],
+    "disposition": "source correction required; original evidence preserved"
+  },
+  {
+    "id": "F2",
+    "priority": "P2",
+    "title": "The endpoint-law witness does not require reading a formation history",
+    "affected_prs": [
+      7918,
+      7928
+    ],
+    "anchors": [
+      {
+        "path": "docs/ONLY_81_OF_THE_SUPPORT_TABLES_ARE_DISTINGUISHABLE_BY_COMPLETE_RECORDS_FORMATION_HISTORIES_DISTINGUISH_NEARLY_ALL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start_line": 113,
+        "end_line": 122,
+        "source_sha256": "3083e27b66ec1f62407f68d7b2df0a493c073b338fa889590d5ca20828023e25",
+        "excerpt": "\n## T1 -- the table space (exact)\n\nThe 3^6 = 729 ternary profiles fall into 57 proper-cubic orbits. Global value\nflip fixes 9 of them and pairs the other 48 into 24 flip-pairs. A self-flip\norbit admits only the flip-invariant menu `{0,1}` and is pinned; each of the 24\nflip-pairs carries one free ternary choice, the partner forced. Hence 3^24 =\n282,429,536,481 tables, reproducing the deep probe's census exactly, including\nits 3^24 - 1 = 282,429,536,480 neighbour-varying count. The 24 counts\nflip-*pairs*, not orbits, and the profiles are ternary."
+      },
+      {
+        "path": "docs/ONLY_81_OF_THE_SUPPORT_TABLES_ARE_DISTINGUISHABLE_BY_COMPLETE_RECORDS_FORMATION_HISTORIES_DISTINGUISH_NEARLY_ALL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start_line": 224,
+        "end_line": 250,
+        "source_sha256": "3083e27b66ec1f62407f68d7b2df0a493c073b338fa889590d5ca20828023e25",
+        "excerpt": "\n## Corollary\n\n1. **At the level of complete records the law is almost entirely invisible.**\n   20 of its 24 digits concern partially recorded neighbourhoods and are\n   invisible on any lattice; on the 3^3 torus the remaining 4 are fully\n   separated, so complete records distinguish exactly 81 classes, fibres 3^20.\n2. **At the level of formation histories the law is nearly fully visible.**\n   All 24 digits are individually visible for the all-supports table, and a pair\n   sharing one admissible set is separated in total variation by 1.\n3. **Whether the law is underdetermined \"physically\" is therefore decided by\n   which record-level object is readable:** the final configuration, or the\n   history of formation. The Record axiom names record content as readable and\n   is silent on the order of formation; the history-index result on main makes\n   the history index the record-monotone direction. That is an axiom-level\n   decision. This note names that decision; it does not make it.\n4. **The two repository rules sit in different complete-record classes**, so\n   records do separate them; the reduction to 81 erases no distinction anyone\n   has drawn.\n\n## Reading, not theorem\n\nLook only at a region once every site has its record, and almost nothing of the\nlaw shows: on this small torus just 81 different laws could ever be told apart,\nand most of what a law says is about sites whose neighbours are not yet all\nrecorded. Watch the records form instead, and nearly every law shows. So whether\nthe lattice's law is a hidden choice or a visible one depends on whether the"
+      },
+      {
+        "path": "docs/PARTIALLY_RECORDED_REGIONS_MAKE_MOST_OF_THE_LAW_VISIBLE_WITHOUT_READING_THE_ORDER_OF_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 56,
+        "end_line": 69,
+        "source_sha256": "6509226314cab24c1a62e75c4ac994cb6f9fccb1f8cf95997068fc99de184228",
+        "excerpt": "The 2026-07-13 deep probe counts the room the structural clauses leave: 3^24 =\n282,429,536,481 covariant label-equivariant support tables. PR #7918 asked how many\nrecords can tell apart, and answered it for one record-level object -- a region\nevery site of which carries a record. That object realises only the 64 fully\nrecorded neighbour profiles, so it depends on 4 of the 24 ternary digits; on the 3^3\ntorus it distinguishes exactly 81 tables, every fibre exactly 3^20 = 3,486,784,401.\nIt named the partial-configuration object as the follow-on it did not run.\n\nThis note runs it: records register, the lattice is physical, and the question is\nwhat a region of it can register. The Record clauses say a site with no record\ncannot be read and that only records are readable; they nowhere say a region may be\nread only when every site carries one, and **a site need not carry a record** at\nall. So the licensed object is a region in which some sites carry records and some\ndo not, the unrecorded sites **read as open**."
+      }
+    ],
+    "problem": "The object P_T is explicitly a probability distribution on complete configurations under a fixed supplied site order. Its TV1 witness is separated by the final event that all recorded bits are equal. Thus the difference is already in the endpoint distribution of complete Record contents. A(T), a static support-membership set, is a different object. The claimed choice between final-configuration readability and readable formation order does not follow, and the only81-complete-records headline is too broad.",
+    "narrow_repair": "Name A(T) a static admissibility-set map and P_T a supplied fixed-order endpoint law. Scope81 and20-digit blindness to A(T), not all possible statistics of complete records. Preserve TV1 and state explicitly that its separating endpoint event uses no access to event history. Carry this distinction into the earlier-result descriptions in7928 and the affected prose/machine labels. Physical preparation/ensemble access remains supplied separately.",
+    "decisive_evidence": [
+      "original-execution/7918/snapshot/arrays.npz",
+      "INDEPENDENT_CONTROLS.json",
+      "PROOF_REVIEW.md:fixed-order endpoint proof"
+    ],
+    "disposition": "source correction required; original evidence preserved"
+  },
+  {
+    "id": "F3",
+    "priority": "P2",
+    "title": "Static admissibility membership is not a Record-licensed physical readout protocol",
+    "affected_prs": [
+      7918,
+      7928,
+      7934
+    ],
+    "anchors": [
+      {
+        "path": "docs/PARTIALLY_RECORDED_REGIONS_MAKE_MOST_OF_THE_LAW_VISIBLE_WITHOUT_READING_THE_ORDER_OF_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 64,
+        "end_line": 69,
+        "source_sha256": "6509226314cab24c1a62e75c4ac994cb6f9fccb1f8cf95997068fc99de184228",
+        "excerpt": "This note runs it: records register, the lattice is physical, and the question is\nwhat a region of it can register. The Record clauses say a site with no record\ncannot be read and that only records are readable; they nowhere say a region may be\nread only when every site carries one, and **a site need not carry a record** at\nall. So the licensed object is a region in which some sites carry records and some\ndo not, the unrecorded sites **read as open**."
+      },
+      {
+        "path": "docs/PARTIALLY_RECORDED_REGIONS_MAKE_MOST_OF_THE_LAW_VISIBLE_WITHOUT_READING_THE_ORDER_OF_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 90,
+        "end_line": 99,
+        "source_sha256": "6509226314cab24c1a62e75c4ac994cb6f9fccb1f8cf95997068fc99de184228",
+        "excerpt": "probe's finite witness family under the canonical uniform lift, not the full\ndistribution-valued rule space. A **partial configuration** `c` assigns `open`, `0`\nor `1` to each of the 27 sites of the 3^3 torus, and is **admissible under `T`, as\nit stands** iff every recorded site's value lies in `T`'s support for that site's\nternary profile in `c`; unrecorded sites ask nothing and unrecorded neighbours read\nas open. Write `A_p(T)`: the readout the Record clauses license, the records present\neach checked against what is actually beside it. `c` is **reachable under `T`**,\nwritten `R_p(T)`, iff some order `s_1..s_k` of its recorded sites has `c(s_j)` in\n`T`'s support for the profile of `s_j` against the records `{s_1..s_{j-1}}` at every\nstep, records being permanent and never re-checked."
+      },
+      {
+        "path": "docs/PARTIALLY_RECORDED_REGIONS_MAKE_MOST_OF_THE_LAW_VISIBLE_WITHOUT_READING_THE_ORDER_OF_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 219,
+        "end_line": 240,
+        "source_sha256": "6509226314cab24c1a62e75c4ac994cb6f9fccb1f8cf95997068fc99de184228",
+        "excerpt": "## T5 -- the decision brief (statement)\n\nThe Record clauses license reading the records present, unrecorded sites read as\nopen, each record checked against what is actually beside it. That is exactly `A_p`:\nno order, no history, no probability lift, and no axiom is added. The 3^20 fibre of\nPR #7918 followed from insisting that a region be read only once every site carries\na record, which the clauses never demanded.\n\n## Corollary\n\n1. **Partially recorded regions make most of the law visible.** 17 of the 24 digits\n   are read exactly and 3 more to within a binary choice, so the fibre is at most\n   648 against 3^20 on the 3^3 torus -- a reduction of at least 5,380,840 -- and at\n   least 1,033,121,304 tables are told apart, against 81.\n2. **Four digit-pairs were not separated by any declared witness**, and whether they\n   can be is open. An exact realisability decision procedure is the named next step;\n   **injectivity is not claimed**, and no impossibility is claimed either.\n3. **No reading of the order of formation is needed:** the readout uses only the\n   records present and what is beside them, which the clauses license.\n4. **What makes the law visible is reading regions at intermediate stages, not the\n   sequence:** the bare reachable set sees 3 of 24 digits at k <= 4, while every\n   admissible partial configuration is reachable for five of the six declared"
+      },
+      {
+        "path": "docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 231,
+        "end_line": 250,
+        "source_sha256": "56bbe064f373eb250ed87fb88c43e9dfd57d510d90e36b38f49af9f2cf6bb97b",
+        "excerpt": "## Corollary\n\n1. **Reading partially recorded regions, exactly as the Record axiom licenses, separates every one of the 3^24\n   covariant laws on the 3^3 torus.** The partial-configuration readout is injective; every fibre is a\n   singleton.\n2. **Three digits are beyond the reach of any single-digit witness on the 3-torus, for an exact geometric\n   reason, and are read jointly.** On 4^3 and 5^3 every digit is read individually.\n3. **The companion note's bound stands and its headline understates.** Its floor of 1,033,121,304 tables and its\n   ceiling of 648 on the fibre are both correct; the truth is not most of the law but all of it.\n4. **No reading of the order of formation is needed**: the readout uses only the records present and what is\n   beside them.\n5. **Hence, under the axioms as written, which law holds is entirely a matter of what the records show**: the\n   underdetermination of the law by the axioms is not a hidden choice.\n\n## Reading, not theorem\n\nRead a region as it is, empty sites empty, and every one of the possible laws leaves a different fingerprint,\neven on the smallest torus: three of its settings cannot be read one at a time there, for a reason of the\ntorus's geometry, but they can be read together, and one size up they can be read one at a time. So the law is\nnot hidden from the records at all. Whatever the lattice's law is, the records say which."
+      }
+    ],
+    "problem": "A_p(T) is a set of all partial configurations whose present stars pass a local support test. Reading one configuration does not supply an oracle for membership of every hypothetical configuration, physical preparation/reachability, or enough samples to infer the set. The source itself gives both A_p\\R_p and R_p\\A_p. An actual three-zero3-cycle under the arithmetic law is statically admissible and none of its six formation orders is lawful. Current memo says an absent site cannot be read and Admissibility does not supply a formation process. Treating open as a supplied configuration label is legitimate; deriving empty-site readout/access and the membership oracle from that clause is not. Identifying all3^24 supported finite models is also not identification of the full distribution-valued M2(C) law.",
+    "narrow_repair": "Keep all finite A/A_p classification and injectivity theorems as conditional maps of supplied configurations/support tables. Declare any oracle/preparation/ensemble and knowledge-of-record-domain protocol explicitly; do not infer it from Records form or only records readable. Preserve permanent Records without retrospectively invalidating them when current shells change. State the full probability-law, schedule, realized outcomes and physical formation/readout bridge as unsupplied. Correct titles/corollaries/reading sections/current conditional scope and source phrase guards; do not add a new axiom or blanket parent authority.",
+    "decisive_evidence": [
+      "INDEPENDENT_CONTROLS.json:static_unreachable",
+      "original-execution/7928/stdout.txt:all six actual growth rows",
+      "USED_INPUT_BINDING.json",
+      "current memo Qualification/Relation To Dynamics"
+    ],
+    "disposition": "source correction required; original evidence preserved"
+  },
+  {
+    "id": "F4",
+    "priority": "P2",
+    "title": "Arbitrary torus refinement and unqualified padding lack a valid embedding argument",
+    "affected_prs": [
+      7918,
+      7928,
+      7934
+    ],
+    "anchors": [
+      {
+        "path": "docs/ONLY_81_OF_THE_SUPPORT_TABLES_ARE_DISTINGUISHABLE_BY_COMPLETE_RECORDS_FORMATION_HISTORIES_DISTINGUISH_NEARLY_ALL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start_line": 252,
+        "end_line": 265,
+        "source_sha256": "3083e27b66ec1f62407f68d7b2df0a493c073b338fa889590d5ca20828023e25",
+        "excerpt": "\n## Interfaces\n\n- **Partial configurations.** The object matching the append-only ontology is\n  the admissible set of *partially* recorded configurations, a 48-bit mask over\n  all 24 pairs rather than an 8-bit mask over 4. That is the named follow-on and\n  is not run here.\n- **Larger tori.** 81 is a ceiling fixed by the 4 visible digits, so it bounds\n  the complete-record count on every lattice; larger tori can only refine\n  `A(T)`, never coarsen it. Torus-specific is the *attainment*.\n- **Non-uniform lifts.** Every `(B)` number depends on it; a non-uniform lift\n  separates at least as much, never less.\n\n## Executable claim block"
+      },
+      {
+        "path": "docs/PARTIALLY_RECORDED_REGIONS_MAKE_MOST_OF_THE_LAW_VISIBLE_WITHOUT_READING_THE_ORDER_OF_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 263,
+        "end_line": 269,
+        "source_sha256": "6509226314cab24c1a62e75c4ac994cb6f9fccb1f8cf95997068fc99de184228",
+        "excerpt": "- **Larger tori and the lift.** A larger torus can only refine `A_p`, never coarsen\n  it, so 1,033,121,304 is a floor that survives enlargement and 648 a ceiling that\n  can only fall; attainment is torus-specific. Every statement here is about\n  supports, and a non-uniform lift separates at least as much.\n\n## Executable claim block\n"
+      },
+      {
+        "path": "docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 298,
+        "end_line": 301,
+        "source_sha256": "56bbe064f373eb250ed87fb88c43e9dfd57d510d90e36b38f49af9f2cf6bb97b",
+        "excerpt": "- **Three torus sizes, cubic, periodic.** Nothing is claimed for L >= 6 or for non-cubic regions. The lift is\n  not monotone in either direction: a witness on `L^3` need not embed in `(L+1)^3`, and T5 exhibits witnesses\n  that exist only because of the wrap; what does lift is a wrap-free witness, to any larger torus.\n- **Support tables, not the full rule space.** The 3^24 support tables are the deep probe's finite lower-bound"
+      }
+    ],
+    "problem": "The first two notes assert that enlarging a torus can only refine the readout. Periodic lattices of sizesL andL+1 do not form a common profile-preserving nested domain;7934 itself withdraws the earlier arbitrary lift. Nonembedding of one witness does not by itself prove coarsening of the table partition, so this review does not claim such a counterexample. The source has not proved the advertised universal monotonicity. Even the valid finite-support padding argument must specify that all recorded-site neighbor profiles and open boundary slots are preserved.",
+    "narrow_repair": "Remove the unsupported arbitrary-L monotonicity inference from the two earlier live notes and retain their lattice-independent upper bound for complete-profile dependence. State any positive lift only for an explicitly profile-preserving embedding/padding with an empty neighbor buffer. Keep exact sizes3/4/5 and distinguish an unproved general partition claim from a demonstrated failure of naive witness embedding.",
+    "decisive_evidence": [
+      "PROOF_REVIEW.md:torus domain",
+      "ALL_WITNESS_VERIFICATION.json",
+      "7934 note explicit later withdrawal"
+    ],
+    "disposition": "source correction required; original evidence preserved"
+  },
+  {
+    "id": "F5",
+    "priority": "P2",
+    "title": "The solver-free backtracker does not enumerate the whole seeded space",
+    "affected_prs": [
+      7934
+    ],
+    "anchors": [
+      {
+        "path": "docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 124,
+        "end_line": 130,
+        "source_sha256": "56bbe064f373eb250ed87fb88c43e9dfd57d510d90e36b38f49af9f2cf6bb97b",
+        "excerpt": "**The 22 unsatisfiable instances.** Each is decided by **a complete backtracking enumeration written from\nscratch, carrying no solver**: a frontier search that branches only on sites adjacent to an existing record --\nevery other site may stay open without raising a demand -- and cuts a branch as soon as a recorded site has no\nlegal completion of its profile. Over the 22 it enumerated the whole space, found 55 legal configurations in\ntotal, and **not one realises its target**. Where a solver is present the same 22 are decided again by CaDiCaL,\nby Glucose with a DRUP refutation, and by MiniSat. So pairs 11, 16 and 17 admit no digit-confined mask on the\n3^3 torus: the object is absent, not unfound."
+      },
+      {
+        "path": "scripts/partial_configuration_readout_injective_torus_3_check_2026_09_04.py",
+        "start_line": 457,
+        "end_line": 509,
+        "source_sha256": "35df171d73abdf02bbc1ff7a24d674155c5acf32cb88c177689053b8f5210e66",
+        "excerpt": "def enumerate_legal(tor: Torus, bits, seed):\n    \"\"\"Complete enumeration, carrying no SAT solver: branch only on sites\n    adjacent to an existing record (every other site may stay open without\n    raising a demand) and cut a branch as soon as a recorded site has no legal\n    completion of its profile. Returns (masks, solutions).\"\"\"\n    allowed = [sorted(s) for s in allowed_codes(bits)]\n    config = np.full(tor.N, -1, dtype=np.int8)\n    for site, code in seed.items():\n        config[site] = code\n    masks, count = set(), 0\n\n    def feasible(site: int) -> bool:\n        value = config[site] - 1\n        known = [(j, int(config[int(tor.NBR[site, j])])) for j in range(6)\n                 if config[int(tor.NBR[site, j])] >= 0]\n        for code in allowed[value]:\n            if all((code // POW3[j]) % 3 == d for j, d in known):\n                return True\n        return False\n\n    def frontier():\n        best, key = None, None\n        for site in range(tor.N):\n            if config[site] < 1:\n                continue\n            for j in range(6):\n                target = int(tor.NBR[site, j])\n                if config[target] < 0:\n                    undecided = sum(1 for jj in range(6)\n                                    if config[int(tor.NBR[site, jj])] < 0)\n                    if key is None or (undecided, target) < key:\n                        key, best = (undecided, target), target\n        return best\n\n    def walk():\n        nonlocal count\n        for site in range(tor.N):\n            if config[site] >= 1 and not feasible(site):\n                return\n        target = frontier()\n        if target is None:\n            full = np.where(config < 0, 0, config).astype(np.uint8)\n            masks.add(tor.mask_scalar(full))\n            count += 1\n            return\n        for value in (0, 1, 2):\n            config[target] = value\n            walk()\n            config[target] = -1\n\n    sys.setrecursionlimit(10000)\n    walk()\n    return masks, count"
+      },
+      {
+        "path": "scripts/partial_configuration_readout_injective_torus_3_check_2026_09_04.py",
+        "start_line": 2093,
+        "end_line": 2116,
+        "source_sha256": "35df171d73abdf02bbc1ff7a24d674155c5acf32cb88c177689053b8f5210e66",
+        "excerpt": "    # ---------- T2: the digit-confined decision on the 3^3 torus -----------\n    l3_witnesses = parse_block(L3_WITNESS_BLOCK)\n    keys = [(pair, t) for pair in range(NPAIR) for t in range(3)]\n    bits_of_target = {0: lambda i: (2 * i,), 1: lambda i: (2 * i + 1,),\n                      2: lambda i: (2 * i, 2 * i + 1)}\n    declared_sat, declared_ok = [], True\n    for slot, (pair, target) in enumerate(keys):\n        text = l3_witnesses[slot]\n        if text == \"-\":\n            continue\n        want = set(bits_of_target[target](pair))\n        config = parse_config(text)\n        declared_ok &= (tor3.mask_scalar(config) == sum(1 << b for b in want))\n        declared_ok &= (int(tor3.masks_vectorised(config[None, :])[0])\n                        == sum(1 << b for b in want))\n        declared_sat.append((pair, target))\n    checks.check(\n        \"T2-witnesses\",\n        \"50 declared 3^3 witnesses carry exactly their target mask\",\n        declared_ok and len(declared_sat) == 50,\n        (len(declared_sat), declared_ok),\n    )\n    unsat_slots = [k for slot, k in enumerate(keys) if l3_witnesses[slot] == \"-\"]\n    enum_solutions, enum_hits = 0, 0"
+      },
+      {
+        "path": "docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 288,
+        "end_line": 293,
+        "source_sha256": "56bbe064f373eb250ed87fb88c43e9dfd57d510d90e36b38f49af9f2cf6bb97b",
+        "excerpt": "- **Complete exactly as scoped.** The 3^3 statements are complete: all 72 digit-confined targets decided, the 22\n  negative ones by a complete backtracking enumeration carrying no solver, and the injectivity criterion closed\n  by 96 requirement checks. The 4^3 and 5^3 rows rest on 144 declared witness configurations, each re-verified\n  against its target; their satisfiability search is not re-run here. T5's block-confined split is decided when\n  a solver is present and rests on 19 declared wrap-free witnesses otherwise; which path ran is printed by the\n  runner."
+      }
+    ],
+    "problem": "The frontier explores only the connected recorded component containing the seed and sets unvisited sites open. On the actual22 targets it returns55 leaves, but at least three further legal configurations with exactly the same seeds are omitted: examples for pairs6,20,21 appear in SEEDED_ENUMERATION_PROBE. For a target with both demand bits, another disconnected component may carry the second bit; the supplied reduction gives no exclusion proof. Therefore55 is not the whole-space count and the claimed complete independent negative certification is missing. The original three SAT solvers agree on22 negatives and the local CNF has been checked independently, so the finite target result has useful evidence; this defect specifically invalidates the stated solver-free completeness/absence fallback.",
+    "narrow_repair": "Either implement a genuinely complete extension decision (including remote components) or prove and test a sufficient disconnected-component reduction for each negative. Preserve55 as the historical seed-component count. Calibrate the negative engine on actual positive/disconnected controls. Until that proof is supplied, require the complete actual solver path for claims that use its negatives and fail closed on unavailable/failed engines; do not print an equally strong PASS from witness-only or incomplete-enumeration fallback. For T5, positive19-witness rows alone cannot certify the negative block decisions. DRUP output-length checks are not proof checking; describe emitted proof traces honestly or validate them.",
+    "decisive_evidence": [
+      "SEEDED_ENUMERATION_PROBE.json",
+      "INDEPENDENT_CONTROLS.json:disconnected_enumerator",
+      "original-execution/7934/snapshot/values.json",
+      "ACTUAL_SOURCE_MUTANTS.json:omit_required_bit"
+    ],
+    "disposition": "source correction required; original evidence preserved"
+  },
+  {
+    "id": "F6",
+    "priority": "P2",
+    "title": "C0(22)=N is a pool-coverage failure, not a global absence conclusion",
+    "affected_prs": [
+      7934
+    ],
+    "anchors": [
+      {
+        "path": "docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 146,
+        "end_line": 150,
+        "source_sha256": "56bbe064f373eb250ed87fb88c43e9dfd57d510d90e36b38f49af9f2cf6bb97b",
+        "excerpt": "```text\nVIS(B, b) :=  some realisable mask m has  b in m  and  m & B == 0\nA_v(j)    :=  VIS(B, 2j+v) for every legal B with d_j = 2\nC_v(j)    :=  for every legal block set Bd on the 23 digits other than j, some\n              realisable m has  m & {2j, 2j+1} = {2j+v}  and  m & Bd == 0"
+      },
+      {
+        "path": "docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 169,
+        "end_line": 179,
+        "source_sha256": "56bbe064f373eb250ed87fb88c43e9dfd57d510d90e36b38f49af9f2cf6bb97b",
+        "excerpt": "Counterexample-guided refinement grew a pool of realisable masks until no block set defeated it: **3117 masks,\nevery one carried with the configuration that realises it and re-verified from that configuration** by both the\nvectorised and the scalar path. The 96 requirements -- 48 of type `A`, 48 of type `C` -- are decided twice: by a\nfrom-scratch subcube-cover procedure carrying no solver, and, where a solver is present, by CaDiCaL and Glucose\nforced to agree.\n\n```text\npairs 0..21, 23 :  A0=Y A1=Y C0=Y C1=Y\npair 22         :  A0=Y A1=Y C0=N C1=Y     (the criterion needs one of the two)\n96 requirements : 95 met, C_0(22) the only one not; injectivity established\nfibre 1; all 3^24 = 282,429,536,481 tables separated"
+      },
+      {
+        "path": "scripts/partial_configuration_readout_injective_torus_3_check_2026_09_04.py",
+        "start_line": 2237,
+        "end_line": 2271,
+        "source_sha256": "35df171d73abdf02bbc1ff7a24d674155c5acf32cb88c177689053b8f5210e66",
+        "excerpt": "            carries = (pool_array & (np.int64(1) << np.int64(bit))) != 0\n            if bool((carries & clear_wide).any()):\n                antitone_ok &= bool((carries & clear_narrow).any())\n    checks.check(\n        \"T3-antitone\",\n        \"visibility is antitone in the block set on the declared chains\",\n        antitone_ok,\n    )\n    verdicts = {}\n    for pair in range(NPAIR):\n        for kind in (\"A0\", \"A1\", \"C0\", \"C1\"):\n            verdicts[(pair, kind)] = cube_covered(\n                subcubes(pool_masks, pair, int(kind[1]), kind[0] == \"C\"))\n    met = sum(1 for value in verdicts.values() if value)\n    injective = all(verdicts[(p, \"A0\")] and verdicts[(p, \"A1\")]\n                    and (verdicts[(p, \"C0\")] or verdicts[(p, \"C1\")])\n                    for p in range(NPAIR))\n    failing = sorted(k for k, v in verdicts.items() if not v)\n    checks.check(\n        \"T3-requirements\",\n        \"96 requirements decided without a solver; 95 met, only C0 at pair 22 not\",\n        met == 95 and failing == [(22, \"C0\")] and injective,\n        (met, failing),\n    )\n    if have_sat:\n        agree = True\n        for (pair, kind), value in verdicts.items():\n            clauses = criterion_clauses(pool_masks, pair, kind)\n            if clauses is None:\n                agree &= value\n                continue\n            holder = CNF()\n            holder.n = 3 * NPAIR\n            holder.clauses = clauses\n            first, _m, _p = sat_solve(holder, \"cadical195\")"
+      }
+    ],
+    "problem": "C_v is defined using every realizable mask, but the implementation tests the fixed3117-witness pool. All95 positive requirements lift from that subset and suffice for injectivity. Failure of C0(22) on the pool does not decide the globally defined C0(22). The review reconstructs an unserved Boolean block80649380013721 and finds a real3-torus mask17592320264448 serving it outside the declared pool. This does not prove globalC0 true, but concretely prevents treating that pool counterexample as a global witness of failure.",
+    "narrow_repair": "Label the96 table as coverage by the declared verified pool, and leave globalC0(22) unresolved unless separately proved. Keep all95 positive requirements, their complete Boolean coverage proof, and the sufficient injectivity theorem unchanged. Do not turn an added witness into a claim of global coverage without checking the remaining domain.",
+    "decisive_evidence": [
+      "INDEPENDENT_CONTROLS.json:criterion_pool_counterexamples",
+      "POOL_BOUNDARY_PROBE.json",
+      "ALL_WITNESS_VERIFICATION.json"
+    ],
+    "disposition": "source correction required; original evidence preserved"
+  },
+  {
+    "id": "F7",
+    "priority": "P2",
+    "title": "Knowing nuisance digits does not make a masked joint witness readable unconditionally",
+    "affected_prs": [
+      7934
+    ],
+    "anchors": [
+      {
+        "path": "docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 182,
+        "end_line": 186,
+        "source_sha256": "56bbe064f373eb250ed87fb88c43e9dfd57d510d90e36b38f49af9f2cf6bb97b",
+        "excerpt": "**The blind digits are read jointly.** The 5-record configuration `101...0...........0........` has demand mask\n`{0, 2, 22}`: admissible exactly when `d_0` is not 0, `d_1` is not 0 and `d_11` is not 0. Digits 0 and 1 are\nread exactly by isolated masks of 2 and 3 records, so this configuration reads `d_11`. Six such witnesses, of 5\nor 6 records, cover pairs 11, 16 and 17 in both directions: the digits were never beyond reach, only beyond the\nreach of a single-digit witness."
+      },
+      {
+        "path": "scripts/partial_configuration_readout_injective_torus_3_check_2026_09_04.py",
+        "start_line": 2282,
+        "end_line": 2300,
+        "source_sha256": "35df171d73abdf02bbc1ff7a24d674155c5acf32cb88c177689053b8f5210e66",
+        "excerpt": "        injective and 3 ** 24 == 282429536481,\n    )\n    joint_ok = True\n    for pair, value, text in JOINT_WITNESSES:\n        mask = bits_of(tor3.mask_scalar(parse_config(text)))\n        joint_ok &= (2 * pair + value in mask)\n        joint_ok &= all(b // 2 in (0, 1, pair) for b in mask)\n        joint_ok &= int((parse_config(text) != 0).sum()) <= 6\n    reads_11 = bits_of(tor3.mask_scalar(parse_config(JOINT_WITNESSES[0][2])))\n    checks.check(\n        \"T3-joint\",\n        \"the blind digits are read jointly with the isolated digits 0 and 1\",\n        joint_ok and reads_11 == {0, 2, 22}\n        and int((parse_config(JOINT_WITNESSES[0][2]) != 0).sum()) == 5,\n        sorted(reads_11),\n    )\n\n    # ---------- T4: the 4^3 and 5^3 readout --------------------------------\n    for size, block in ((4, L4_WITNESS_BLOCK), (5, L5_WITNESS_BLOCK)):"
+      }
+    ],
+    "problem": "The displayed five-record witness has mask{0,2,22}. Its response is the conjunction d0!=0,d1!=0,d11!=0. If the already known d0=0, the response is false for all three d11 values. Knowledge of d0 and d1 does not remove that masking. The original T3-joint guard verifies only mask shape/record count, and still passes this adverse actual membership case.",
+    "narrow_repair": "Call the six small witnesses conditional examples and state their nuisance gates explicitly. Attribute unconditional separation to the complete3117-mask criterion, which supplies an avoiding witness for each other-digit block assignment. Retain the small masks and add an actual nuisance-blocked control instead of treating knowledge as a physical intervention.",
+    "decisive_evidence": [
+      "INDEPENDENT_CONTROLS.json:joint_nuisance",
+      "ACTUAL_SOURCE_MUTANTS.json:joint_masked_by_known_nuisance"
+    ],
+    "disposition": "source correction required; original evidence preserved"
+  },
+  {
+    "id": "F8",
+    "priority": "P2",
+    "title": "T5 promotes finite centered-block tests and arbitrary witness occupancies into necessity",
+    "affected_prs": [
+      7934
+    ],
+    "anchors": [
+      {
+        "path": "docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 201,
+        "end_line": 229,
+        "source_sha256": "56bbe064f373eb250ed87fb88c43e9dfd57d510d90e36b38f49af9f2cf6bb97b",
+        "excerpt": "## T5 -- the structural explanation (exact)\n\n**The 3-cycle mirror lemma.** On the `L^3` torus the two `d`-neighbours of a site `x` are `x+d` and `x-d`. For\n`L = 3`, `x-d = x+2d`, so the three sites of any axis line are mutually `d`-adjacent; for `L >= 4` they are not,\nand the runner checks both directions at L = 3, 4, 5. Two consequences: if all three sites of a line are\nrecorded, no site of that line can see open on that axis; and if exactly one is open, both recorded sites see\n(open, the other record) -- a mixed axis at one site forces a mirrored one at its partner, carrying that\npartner's value. That single missing degree of freedom is the whole difference between 3 and 4. Re-solving each\n3^3-unsatisfiable target with every record confined to a wrap-free block centred on the demanding site then\nseparates the causes exactly:\n\n```text\n3x3x3 block  : only pair 4's {2i} becomes satisfiable, k = 14\n4x4x4 block  : 18 of the 22, including all three targets of 11, 16 and 17\nthe 4^3 torus: all 22\n```\n\n1. **Pure wrap -- pair 4.** A 14-record witness fits inside a wrap-free 3x3x3 block, but that block cannot be\n   laid on the 3-torus: the identification glues its opposite faces, and by the mirror lemma the open end the\n   profile requires becomes a recorded far side. There is room; no room that stays open.\n2. **Diameter 4 -- pairs 11, 16, 17, and the missing targets of 6, 18, 19, 22, 23 and 14.** Their witnesses need\n   a recorded cluster of extent 4 along some axis, and the 3-torus has no wrap-free 4-run in any direction. This\n   is the companion note's hold-out set: its search was not weak, it was looking for an object that is not\n   there.\n3. **Genuinely periodic -- `14:{2i}`, `20:{2i,2i+1}`, `21:{2i+1}`, `21:{2i,2i+1}`.** These four have no witness\n   even in a 4x4x4 block; on the 4^3 torus they are realised only by densely recorded, wrap-using configurations\n   of 52 to 64 records. Their profiles are the densest of the 24, so every witness site draws its whole\n   neighbourhood into the record and the record has no boundary to terminate on: it must close on itself through\n   the torus."
+      },
+      {
+        "path": "scripts/partial_configuration_readout_injective_torus_3_check_2026_09_04.py",
+        "start_line": 2380,
+        "end_line": 2400,
+        "source_sha256": "35df171d73abdf02bbc1ff7a24d674155c5acf32cb88c177689053b8f5210e66",
+        "excerpt": "        and len(box_declared[(5, 4)]) == 18,\n        {k: len(v) for k, v in sorted(box_declared.items())},\n    )\n    periodic = {(14, 0), (20, 2), (21, 1), (21, 2)}\n    checks.check(\n        \"T5-split\",\n        \"wrap-only pair 4; diameter 4 for 17 targets; 4 genuinely periodic\",\n        set(unsat_slots) - box_declared[(5, 4)] == periodic\n        and box_declared[(4, 3)] == {(4, 0)},\n        sorted(set(unsat_slots) - box_declared[(5, 4)]),\n    )\n    periodic_k = sorted(\n        int((parse_config(parse_block(L4_WITNESS_BLOCK)[p * 3 + t]) != 0).sum())\n        for p, t in periodic)\n    checks.check(\n        \"T5-periodic-density\",\n        \"the four periodic targets need 52 to 64 records on the 4^3 torus\",\n        periodic_k == [52, 64, 64, 64],\n        periodic_k,\n    )\n    if have_sat:"
+      }
+    ],
+    "problem": "The four purportedly periodic targets do not need52..64 records. Actual unchanged spatial CNFs plus simple at-most bounds return independently validated configurations with25,20,30,48 records for targets14:{28},20:{40,41},21:{43},21:{42,43}. These are witnesses, not claimed minima. The1/17/4 split only compares two specified centered finite boxes and the4-torus; it does not establish that a target requires periodicity at every size, that every witness must have a given extent, or that a local mirror observation is the whole causal explanation. Fixing the demanding site at the center of a box is an extra domain restriction for those box negatives.",
+    "narrow_repair": "Preserve all original144 torus and19 box witnesses and their historical counts. Narrow the exact claims to the specified centered-box decisions (when actually solved), valid mirror identity, and declared configurations/occupancies. Remove universal must-close/only-dense/minimum-cardinality language or provide a separate rigorous theorem. Add the four actual lower-occupancy controls; do not replace historical data or claim these new witnesses are optimized minima.",
+    "decisive_evidence": [
+      "PERIODIC_BOUND_PROBE.json",
+      "periodic_bound_probe.py",
+      "ALL_WITNESS_VERIFICATION.json",
+      "ACTUAL_SOURCE_MUTANTS.json:valid_lower_record_targets"
+    ],
+    "disposition": "source correction required; original evidence preserved"
+  },
+  {
+    "id": "F9",
+    "priority": "P3",
+    "title": "Correct the comparison history and distinguish geometry coverage from executed table/order pairs",
+    "affected_prs": [
+      7918,
+      7928,
+      7934
+    ],
+    "anchors": [
+      {
+        "path": "docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 132,
+        "end_line": 135,
+        "source_sha256": "56bbe064f373eb250ed87fb88c43e9dfd57d510d90e36b38f49af9f2cf6bb97b",
+        "excerpt": "**Pair 23 is realised**, by the complete configuration `101000110011010110001111100`, all 27 sites recorded,\ndemand mask exactly `{46, 47}`. The companion note's per-digit table is corrected here: it listed four pairs as\nunseparated, and three of them are; the fourth is read to a binary choice. Its witness list holds 43 entries\nwhere the exact count is **50**, the six additional ones all `{2i,2i+1}` targets."
+      },
+      {
+        "path": "docs/ONLY_81_OF_THE_SUPPORT_TABLES_ARE_DISTINGUISHABLE_BY_COMPLETE_RECORDS_FORMATION_HISTORIES_DISTINGUISH_NEARLY_ALL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start_line": 277,
+        "end_line": 300,
+        "source_sha256": "3083e27b66ec1f62407f68d7b2df0a493c073b338fa889590d5ca20828023e25",
+        "excerpt": "smallest_class: 2918\nmajority_menu_code_and_count: 0000 / 9038\ncopy_neighbour_menu_code_and_count: 0222 / 89286536\nformation_orders_and_tables_declared: 3 / 35\nmajority_formation_atoms_and_fibre_bound: 2 / 14348907\nwitness_total_variation: 1\nno_physical_law_selected: true\n```\n\n## Proof boundary\n\nThe theorem is the finite classification above and nothing wider.\n- Attainment is proved on **one torus** only: the count 81 and the uniform 3^20\n  fibre come from complete enumeration on the 3^3 torus. T2's 20-digit\n  invisibility is structural and holds on any lattice.\n- **Support tables, not the full rule space.** After the 2026-08-05 revision the\n  rule is distribution-valued and the unrestricted space is continuous. The 3^24\n  support tables are the deep probe's own finite lower-bound witness under the\n  canonical uniform lift, and that lift is a stipulation here.\n- **`(B)` on a declared finite set:** three orders and 35 tables, all named by\n  declared arithmetic; every `(B)` number is an exact atom weight or an exact\n  lower bound over that set. No sampling and no random number generator is used\n  anywhere in the runner. Beyond that: no physical law is selected, no premise\n  is edited, no axiom is added, and nothing is claimed about which record-level"
+      },
+      {
+        "path": "docs/PARTIALLY_RECORDED_REGIONS_MAKE_MOST_OF_THE_LAW_VISIBLE_WITHOUT_READING_THE_ORDER_OF_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "start_line": 42,
+        "end_line": 49,
+        "source_sha256": "6509226314cab24c1a62e75c4ac994cb6f9fccb1f8cf95997068fc99de184228",
+        "excerpt": "claim_type_reason: \"Complete finite sweeps on the 3^3 torus -- every partial configuration with at most 8 records, the 3^12 distance-2 shell of each of the 48 demand bits, the 13 x 3^9 translation-symmetric family, and every partial configuration with at most 4 records for six declared tables -- together with a declared witness list re-verified exactly by two independent code paths. No physical law is selected and no lattice beyond the 3^3 torus is claimed.\"\ntrace_class: frontier_discovery\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: unknown_frontier\nartifact_role: theorem\nnext_trace_action: \"Decide realisability of a demand mask exactly rather than by construction, settling the four unseparated digit-pairs either way; then exploit the 7,824 multi-digit masks already in hand; then repeat on larger tori.\""
+      }
+    ],
+    "problem": "The companion list has44 entries, not43; adding the six missing double-bit witnesses gives50.7918 actually calls frontier35 times for35 distinct tables, all under lex order; its other two orders receive only the geometric reachable-profile calculation, and all-support has an analytic query argument rather than a full2^27 frontier execution. The declared3/35 shorthand and exact-atom/fibre claims should not suggest105 table/order executions. Jointly publishing7934 also means the earlier open-question/status wording needs a dated current disposition rather than silently remaining the next unanswered task.",
+    "narrow_repair": "Correct43 to44, record exact executed geometry versus frontier coverage, and add narrow current comparison/trace dispositions while preserving all original bodies/caches as dated provenance. Keep audit deferred under the current owner instruction and do not introduce retained grades, independent-wall counts, or a fabricated N1\u2013N8 PASS. Update only source-bound current assertions and required paired caches.",
+    "decisive_evidence": [
+      "original-execution/7918/snapshot/values.json:35 frontiers/one order",
+      "7928 original44 literal witnesses",
+      "READ_LEDGER.json"
+    ],
+    "disposition": "source correction required; original evidence preserved"
+  }
+]

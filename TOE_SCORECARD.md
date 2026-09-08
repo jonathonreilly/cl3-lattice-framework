@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
 Verified source/status snapshot: 2026-09-08 UTC, main
-`2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307`. This is a planning map, not
+`7517b4a95f860fec43251c0281a981e6bb1f34d6`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -22,6 +22,8 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
+The two newer carrier/role notes are reviewed source on main; their generated
+ledger entries remain external pending a later mechanical refresh. No grade is supplied.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
 reviewed integration. Do not start an audit drain from a PR review or

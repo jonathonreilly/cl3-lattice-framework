@@ -1,0 +1,800 @@
+[
+  {
+    "id": "F1",
+    "original_priority": "P2",
+    "original_title": "Two grading-selected copies are not the only cubic carriers",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 25,
+        "end": 26,
+        "text": "three-dimensional carriers exist there, and what an operator built from the kinetic form assigns to the three members of one. There are exactly two carriers and they are\nexactly the two Hamming triplets; and the assignment is empty -- every stipulated bilinear either weights the three members equally or gives them no diagonal weight at all,",
+        "sha256": "acf95ac99d7d1d07ae2e8ac8903ba1694200326fc4402fe602b009da9e520e65"
+      },
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 125,
+        "end": 150,
+        "text": "A **carrier** is a three-dimensional subspace invariant and irreducible under the 24 proper cubic rotations. A **stipulated bilinear** is one of the twelve operators of\nTheorem 4, written by hand from the `Cl(6)` set with no coefficient adjusted to any target. For a `C_3`-invariant Hermitian `M` on a carrier, `(a, b)` are its circulant\ncoefficients in `M = a I + b U + bbar U^2`, `delta = arg b`, and the **block weight** is `r = |b|^2 / a^2` when `a != 0`.\n\n## Theorem 1 -- the corner kernel has exactly two cubic carriers, and they are the Hamming triplets\n\n**Conclusion.** (1) `H(pi, pi, pi) = 0`, so the whole eight-dimensional cell is the kernel at the corner; the `L = 4` coarse torus kernel is eight-dimensional and is\nspanned by the corner basis. (2) All 24 proper cubic rotations lift to signed permutations preserving the hopping, and all 576 products close on the nose as integer\nmatrices on that kernel: a genuine representation of `O`, not projective. (3) Its characters `(E, 8C3, 3C2, 6C4, 6C2') = (8, 2, 0, 4, 0)` decompose, in exact rational\narithmetic against a self-checked orthonormal character table, as `2 A1 + 2 T1`, and the isotypic projectors are in the corner basis exactly `P_A1 = diag(1,0,0,0,0,0,0,1) =\nP_hw0 + P_hw3` and `P_T1 = diag(0,1,1,1,1,1,1,0) = P_hw1 + P_hw2`, with `P_A2 = P_E = P_T2 = 0`. (4) Each Hamming block is separately `O`-invariant, with characters\n`(1,1,1,1,1)` on `hw = 0, 3` and `(3,0,-1,1,-1)` on `hw = 1, 2` -- one `A1` and one `T1` each.\n\n**Proof.** Item 1 evaluates the closed form symbolically at the corner momentum and verifies over `Z` that the corner basis is annihilated by the torus operator and has\nGram `8 I`. Item 2 solves each lift's signs by breadth-first propagation and compares all 576 products as integer matrices, the kernel-basis matrices obtained by exact\ndivision by `8`. Items 3 and 4 are `Fraction` arithmetic: the orthogonality relations and the projector formula `P_irr = (d/24) sum_R chi_irr(R) M_R`, block by block.\n\n**Reading, not theorem.** The eight corner states sort themselves under the cube's rotations into two singletons and two triplets, and the triplets are exactly the ones the\nearlier grading found. The grading was written down as a fact about bit-counts; it turns out to be the representation content, on the nose.\n\n## Theorem 2 -- the grading is an eigen-grading, and the two carriers are exchanged\n\n**Conclusion.** (1) `i sum_a Gamma_a Xi_a = Z_1 + Z_2 + Z_3` exactly; it commutes with all 24 lifts, and its corner spectrum is `3 - 2 hw`, so the `1 + 3 + 3 + 1` grading\nis the eigen-grading of that one `O`-invariant `Cl(6)` bilinear. (2) The `T1` isotypic is `T1 (x) C^2`: the commutant of the 24 lifts has dimension `8` on the kernel and\n`4` on the `T1` isotypic, by the exact rational formula `(1/24) sum |chi|^2`, and four independent commuting elements `P_hw1`, `P_hw2`, `P_hw2 T P_hw1`, `P_hw1 T P_hw2` are\nexhibited -- the group alone does not split the six-dimensional isotypic. (3) `T = i Gamma_1 Gamma_2 Gamma_3` commutes with all 24 lifts, is unitary, carries `hw = 1` onto",
+        "sha256": "9aec9bc12ecd6fa26f99ec8d68264a6dd21de39d14833a9fbd9673478b606271"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "start": 12,
+        "end": 20,
+        "text": "  A  CARRIERS.  The eight corner states carry a genuine representation of the\n     proper cubic group O with characters (8, 2, 0, 4, 0) = 2 A1 + 2 T1, whose\n     isotypic projectors in the corner basis are exactly P_A1 = P_hw0 + P_hw3\n     and P_T1 = P_hw1 + P_hw2: the two three-dimensional cubic carriers are\n     exactly the two Hamming-weight triplets of the landed grading.\n  B  GRADING AND MULTIPLICITY.  The 1+3+3+1 grading is the eigen-grading of the\n     O-invariant bilinear i sum_a Gamma_a Xi_a = Z1 + Z2 + Z3; the T1 isotypic\n     is T1 (x) C^2 with a four-dimensional commutant, so the group alone does\n     not split it; T is O-invariant, unitary, exchanges the two triplets and",
+        "sha256": "246d364d22b89fac89ad7e931878089c47110ff92a6ad917fa766b6dc8a9a55a"
+      }
+    ],
+    "author_disposition": "Keep 2A1+2T1 and the grading-selected Hamming pair; replace exclusive-carrier claim by multiplicity freedom with an actual rational mixed rank-three projector.",
+    "decisive_evidence": "Exact R=(9P+16Q+12(C+C\u2020))/25; rank/idempotence/all24 commutations/irreducibility and distinct epsilon behavior. Actual coefficient12\u219211 mutation rejects.",
+    "final_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "line": 141,
+        "text": "## Multiplicity countercontrol and domain controls",
+        "line_sha256": "705d7f9200719edb131835ecba37b84bfac540115113d46a2273d2c06680d840",
+        "source_sha256": "f862128e96893a2a417a7eab9dedf6686ebd56bf6fe2ad961d15a838295adde5"
+      },
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "line": 55,
+        "text": "## Theorem 1 -- the isotypic decomposition and two grading-selected Hamming copies",
+        "line_sha256": "0b9deabf9cac11c5ba9cfe6259cbb591c75d4bafe0efcbd71518da6535bdfe6b",
+        "source_sha256": "f862128e96893a2a417a7eab9dedf6686ebd56bf6fe2ad961d15a838295adde5"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "line": 742,
+        "text": "MIX_R = (9*MIX_P + 16*MIX_Q + 12*(MIX_C + MIX_C.conjugate().T))/25",
+        "line_sha256": "852b9f0a8ec8a04ed8d8e0b5556f35ab4cb1827ff65c45494cf5674d115fdb77",
+        "source_sha256": "df4f1a1c55cecb8e547d2d01c3a4cb9cc6a40328a6c8fa9994d3c6044f2ccd2d"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "line": 745,
+        "text": "check(\"R1 [exact mixed carrier] actual rank3 rational projector commutes with all24 lifts, is irreducible and distinct from the Hamming pair\",",
+        "line_sha256": "3f004ad3b77150406cae1e168a635cafc5039e3a29c2fb9c5929678b5bca2649",
+        "source_sha256": "df4f1a1c55cecb8e547d2d01c3a4cb9cc6a40328a6c8fa9994d3c6044f2ccd2d"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F2",
+    "original_priority": "P2",
+    "original_title": "Registered-ratio statements omit the zero-denominator domain",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 4,
+        "end": 4,
+        "text": "claim_scope: \"On the eight-dimensional kernel of the Kawamoto-Smit staggered hopping read on the coarse lattice 2Z^3 at the Brillouin-zone corner q = (pi,pi,pi), with the Cl(6) cell algebra Gamma = (Y_1, Z_1 Y_2, Z_1 Z_2 Y_3), Xi = (X_1, Z_1 X_2, Z_1 Z_2 X_3), epsilon = Z_1 Z_2 Z_3 and T = i Gamma_1 Gamma_2 Gamma_3 redeclared here, and for the twelve stipulated bilinears listed in the runner only: (T1) H(pi,pi,pi) = 0 so the whole cell is the corner kernel, the L = 4 coarse torus kernel is eight-dimensional, all 24 proper cubic rotations lift to integer signed permutations whose 576 products close on the nose on that kernel, the characters (E, 8C3, 3C2, 6C4, 6C2') = (8, 2, 0, 4, 0) decompose in exact rational arithmetic as 2 A1 + 2 T1, and the isotypic projectors in the corner basis are exactly P_A1 = diag(1,0,0,0,0,0,0,1) = P_hw0 + P_hw3 and P_T1 = diag(0,1,1,1,1,1,1,0) = P_hw1 + P_hw2, with each Hamming block separately O-invariant carrying characters (1,1,1,1,1) on hw = 0, 3 and (3,0,-1,1,-1) on hw = 1, 2. (T2) The 1+3+3+1 grading is the eigen-grading of the O-invariant Cl(6) bilinear i sum_a Gamma_a Xi_a = Z_1 + Z_2 + Z_3, spectrum 3 - 2 hw; the T1 isotypic is T1 (x) C^2 with a commutant of dimension 4 by the exact rational formula (1/24) sum |chi|^2, four independent commuting elements exhibited, so the group alone does not split it; T is O-invariant, unitary, carries hw = 1 onto hw = 2 and back with rank 3, and anticommutes with epsilon = diag((-1)^hw). (T3) On each triplet the C3[111] restriction U has tr U = 0, U^3 = I and eigenvalues {1, omega, omegabar}; its invariant vector has corner weights exactly (1/3, 1/3, 1/3); against the fixed democratic W = (1,1,1)/sqrt3 the overlaps are 1 and 1/9, a corner-sign gauge artefact removed by rephasing a single corner; the singlet projectors have every entry of modulus 1/3 and P_0, P_1 commute with U. (T4) Each of the twelve bilinears restricts to an exactly circulant operator on each triplet with residual 0 and c = conj(b): sum Gamma_a, sum Xi_a and T restrict to zero, i sum Gamma_a Xi_a gives a = +1 / -1 and epsilon a = -1 / +1 with b = 0, (sum Gamma_a)^2 = (sum Xi_a)^2 = 3I, the p_a^2 coefficient of H(pi+p)^2 is the identity on both, the Gamma-Gamma and Xi-Xi bivector sums give a = 0, |b| = 1, and i sum Gamma_a Xi_{a+1} and i sum Gamma_a Xi_{a+2} give a = 0, |b| = 1 with delta differing by pi between the two triplets; the six O-invariant ones have b = 0 by Schur and the six others have O-average exactly 0 hence a = 0, so no listed operator has a != 0 and b != 0 and every hw-diagonal one registers r = 0; and the restriction map from real C3-invariant Hermitian quadratics onto the circulant algebra has real rank 3 on each triplet, with alpha (sum Z_a) + beta i(sum_cyc Gamma_a Gamma_{a+1}) + gamma i(sum_a Gamma_a Xi_{a+1}) realising every (a, |b|, delta), the triples (2,1,1) and (2,1,0) registering r = 1/2 and r = 1/4 exactly. (T5) All six relabellings of each triplet and all 24 cubic conjugations leave (a, |b|, r) unchanged with circulant residual 0 for all twelve; naming C^2 rather than C the generator sends b to its conjugate, delta to -delta, and fixes (a, |b|, r). (T6) Exactly four of the twelve separate the two triplets -- i sum Gamma_a Xi_a and epsilon by the sign of a, and the two Gamma-Xi cross terms by delta differing by pi -- and no listed operator is C3-invariant with b != 0 on exactly one triplet. No corner is named, no bijection to a labelled 3-set is constructed, no sort key, Vandermonde sign, PDG value or species name appears, no block weight is derived, nothing here is derived from any axiom, no axiom is amended, no status is set and no hypothesis is adopted.\"",
+        "sha256": "1f66a7ca883549bebaf822e0c104b030f2ee6422f21d8aca9ba40ceda9e2f402"
+      },
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 289,
+        "end": 294,
+        "text": "An honest auditor should come away with: one exact identification, on an `8x8` algebra, of the landed `1 + 3 + 3 + 1` Hamming grading with the isotypic decomposition `2 A1\n+ 2 T1` of the proper cubic group on the corner kernel, so the only three-dimensional carriers there are the two Hamming triplets; one multiplicity statement saying the\ngroup alone does not split them, and one operator exchanging them while reversing the chirality grading; one exact table of twelve stipulated bilinears whose restrictions\nare all circulant and none of which carries both a diagonal and an off-diagonal part, so every hw-diagonal one registers `r = 0`; one surjectivity statement showing the\nweight is a free function of stipulated coefficients; a full invariance census; and two things deliberately not decided -- which sign of the chirality grading selects a\ncarrier, and any labelling whatever of the three members of one. The labelling no-go is cited without being used.",
+        "sha256": "efef8e40b6fd748f84a5c51ddb852525fbdbfb76045866e36825535f7e34db73"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "start": 25,
+        "end": 33,
+        "text": "  D  REGISTERED WEIGHTS.  Twelve stipulated bilinears restrict to exactly\n     circulant operators; none has both a diagonal and an off-diagonal part, so\n     every hw-diagonal one registers r = 0; and the restriction map from real\n     C3-invariant Hermitian quadratics onto the circulant algebra is onto, so\n     every r in [0, inf) is realised by stipulated coefficients.\n  E  INVARIANCE CENSUS.  All six relabellings of each triplet and all 24 cubic\n     conjugations leave (a, |b|, r) unchanged with residual 0; naming C^2 rather\n     than C as the generator sends delta -> -delta and fixes (a, |b|, r).\n  F  CARRIER LOCUS.  Exactly which listed operators separate the two triplets.",
+        "sha256": "6213e5a864bd08da180961181c912f6ef4b5783d3f25b9d6091c19c719d3fec7"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "start": 621,
+        "end": 627,
+        "text": "r0 = [nm for nm, _ in OPS if TABLE[(nm, 1)][0] != 0]\ncheck(\n    \"D2 [exact] all twelve commute with C3[111]; the %d that commute with all 24 lifts have b = 0 on both carriers \"\n    \"(Schur on an irreducible T1), and the O-average of each of the other %d is exactly 0, so their a -- which depends \"\n    \"on the O-average alone, the Hamming projectors being O-invariant -- vanishes; no listed operator has a != 0 and \"\n    \"b != 0, hence every hw-diagonal one registers r = 0 exactly\"\n    % (sum(1 for nm, _ in OPS if OINV[nm]), sum(1 for nm, _ in OPS if CINV[nm] and not OINV[nm])),",
+        "sha256": "d3d9713afebf3bc241f1f6dc69e0fe46e68f4c2610530bc2918f6b922ec13846"
+      }
+    ],
+    "author_disposition": "All24 restrictions and stipulated ratios retained; r is defined only for a!=0 and phase only for b!=0. Zero, scalar and off-diagonal cases are explicit.",
+    "decisive_evidence": "Actual R2 table/domain check and unchanged24 table tuples; final E1/E2/E3 display domain propagation.",
+    "final_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "line": 95,
+        "text": "## Theorem 4 -- the block weight of every stipulated bilinear, and the surjectivity",
+        "line_sha256": "d1f046669b05eb2c68a565431649d938cfca9b37607991f4dd49d4d80f376cec",
+        "source_sha256": "f862128e96893a2a417a7eab9dedf6686ebd56bf6fe2ad961d15a838295adde5"
+      },
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "line": 47,
+        "text": "`r=|b|^2/a^2` only for `a!=0`, and `delta=arg(b)` only for `b!=0`.",
+        "line_sha256": "6e84347e8721cf0e9d314a8604e6cd1ff5b0728f2f41b125f1806db772985820",
+        "source_sha256": "f862128e96893a2a417a7eab9dedf6686ebd56bf6fe2ad961d15a838295adde5"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "line": 753,
+        "text": "check(\"R2 [exact domains] all24 actual table rows retain undefined r at a=0 and undefined phase at b=0, including zero/scalar/off-diagonal cases\",",
+        "line_sha256": "5d53f544d12532cd5e471b527a486676401a4e319a5558e4f1a4d080052ed683",
+        "source_sha256": "df4f1a1c55cecb8e547d2d01c3a4cb9cc6a40328a6c8fa9994d3c6044f2ccd2d"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "line": 667,
+        "text": "    \"E1 [exact] all 6 relabellings of each carrier's basis leave (a, |b|, r where defined) unchanged with circulant residual 0, for \"",
+        "line_sha256": "a0031c3694150b09a854dcc981d67c04ae37af10357937b5cb3c5454bed3b763",
+        "source_sha256": "df4f1a1c55cecb8e547d2d01c3a4cb9cc6a40328a6c8fa9994d3c6044f2ccd2d"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F3",
+    "original_priority": "P2",
+    "original_title": "Separate exact certificates from floating numerical checks",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 34,
+        "end": 34,
+        "text": "claim_type_reason: \"Exact finite-dimensional theorems on an 8x8 algebra: the cubic representation content of the corner kernel, its isotypic projectors, the C3 restriction on each three-dimensional carrier, the exactly circulant restrictions of twelve stipulated bilinears with their block weights, the surjectivity of the restriction map onto the circulant algebra, and a full invariance census. Every statement is symbolic in sympy, exact-rational, or integer and Z[i] matrix arithmetic at zero tolerance; no item is numerical.\"",
+        "sha256": "9d8bd70b7e7997bd3724706172a8388935f6aa535754d890a0cfbaa03b54782e"
+      },
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 54,
+        "end": 55,
+        "text": "and the surjectivity of the restriction map; `T5` (`E`) the invariance census; `T6` (`F`) which operators separate the two carriers. Every group is exact -- `sympy`\nsymbolic identities in the three momenta, exact rational character and projector arithmetic, integer and `Z[i]` matrix arithmetic at zero tolerance, exact Gaussian-rational",
+        "sha256": "5d7b544e83fe10fe46287bd297b79d11528591f4552b177d639bd2a8a72aef8a"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 34,
+        "end": 34,
+        "text": "claim_type_reason: \"Finite negative results on two named classes of star-local rule, over named finite clusters. Groups A and B are exact -- bit arithmetic, exhaustive enumeration, exhaustive constraint propagation with no solver. Group C mixes exact dense linear algebra on 8-qubit and 7-qubit spaces with matrix-free numerical statements on 16-qubit tori; every numerical line is tagged and carries its converged residual, and the two stochastic lines fix their seed and report standard errors.\"",
+        "sha256": "e704f25387fb22476fcf23ae9bf760ce1660bef8ceeba6b472dd144d87e7b682"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 161,
+        "end": 161,
+        "text": "compresses it through the isometry, assembles the dense `256x256` Hamiltonian, and evaluates the intended states directly. All exact.",
+        "sha256": "c19239c8f04b5f0297f5d13335375b06d767d2cc0637e1ce01a68a24a661a402"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 195,
+        "end": 195,
+        "text": "**Proof.** Item 1 is exact singular value decomposition on the `128`-dimensional star space, once per triple and variant, with a direct evaluation of the intended states. Item 2 uses the same",
+        "sha256": "30ebf238a4a31c5adb3bf39919a46157e0ada028633fde4d19b41e891a349fba"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 674,
+        "end": 680,
+        "text": "def projector(rows, tol=1e-9):\n    M = np.array(rows).T\n    U, s, _ = np.linalg.svd(M, full_matrices=False)\n    r = int((s > tol * max(1.0, s[0])).sum())\n    B = U[:, :r]\n    return B @ B.conj().T, r\n",
+        "sha256": "0a6365a1a77be6d32423a4078070c1b4a93bc0c30672d22ddd81c29e27329170"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 777,
+        "end": 827,
+        "text": "def span_tools(pl):\n    \"\"\"Rank and pseudo-inverse Gram of the intended span, without materialising it.\"\"\"\n    N = len(pl)\n    G = np.ones((N, N), dtype=complex)\n    for i in range(len(pl[0])):\n        col = np.array([p[i] for p in pl])\n        G *= col.conj() @ col.T\n    w, U = np.linalg.eigh(G)\n    keep = w > 1e-8 * max(w.max(), 1.0)\n    r = int(keep.sum())\n    return r, (U[:, keep] * (1.0 / w[keep])) @ U[:, keep].conj().T\n\n\ndef overlaps(pl, X):\n    C = np.empty((len(pl), X.shape[1]), dtype=complex)\n    for a, p in enumerate(pl):\n        C[a] = kron_list(p).conj() @ X\n    return C\n\n\ndef intended_err(projs, n, pl, seed=3, k=4):\n    idx = np.random.default_rng(seed).choice(len(pl), size=min(k, len(pl)),\n                                             replace=False)\n    Y = np.array([kron_list(pl[i]) for i in idx]).T.copy()\n    return float(np.abs(energy(projs, n, Y)).max())\n\n\ndef dense_case(shape, Kb, pins, variant, nslots):\n    \"\"\"Exact dense nullity on a small torus (at most 8 qubits).\"\"\"\n    Pi, dimK = projector(Kb)\n    if dimK == 2 ** nslots:\n        return dict(dimK=dimK, vacuous=True)\n    coords, n, projs, aliased = star_projectors(shape, Pi, nslots)\n    d = 2 ** n\n    H = np.zeros((d, d), dtype=complex)\n    I = np.eye(d, dtype=complex)\n    for ax, Q in projs:\n        H += I - apply_local(Q, ax, n, I)\n    w = np.linalg.eigvalsh(H)\n    pl = intended_products(shape, pins, variant)\n    r, _ = span_tools(pl)\n    return dict(dimK=dimK, vacuous=False, nullity=int((w < 1e-9).sum()),\n                expected=r, ierr=intended_err(projs, n, pl), aliased=aliased)\n\n\ndef pocs_case(shape, Kb, pins, variant, nslots, M=4, maxsweeps=400,\n              tol=1e-13, seed=20260903):\n    \"\"\"Matrix-free: alternating projections onto the intersection of star kernels.\"\"\"\n    Pi, dimK = projector(Kb)\n    coords, n, projs, aliased = star_projectors(shape, Pi, nslots)\n    pl = intended_products(shape, pins, variant)",
+        "sha256": "8222ca801bf1c2073204378171261ee172001db8067cf9588fd4dd2554dc421f"
+      }
+    ],
+    "author_disposition": "Separate exact symbolic/bit/rational certificates from floating kernel, rank, overlap, SVD and finite projection diagnostics. Clarify fine/site-coordinate side4 versus blocked-cell side2.",
+    "decisive_evidence": "Original numeric results unchanged; exact product census is separate. No threshold converted into an exact rank theorem.",
+    "final_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "line": 38,
+        "text": "## Definitions and obligation boundary",
+        "line_sha256": "1177bb911525bc1452f8db4027c8ed736cebf890ee65eeddf8e377b764bf1dbd",
+        "source_sha256": "f862128e96893a2a417a7eab9dedf6686ebd56bf6fe2ad961d15a838295adde5"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "line": 266,
+        "text": "    \"A2 [integer representation; numerical kernel/overlap cross-check] the L=4 site-coordinate torus (2 cells per axis) has an 8-dimensional kernel spanned by the corner basis; all 24 proper cubic \"",
+        "line_sha256": "df8370eac30a1c03c29e385bb0caaa303c97f4e10297782fef58b538ba64a575",
+        "source_sha256": "df4f1a1c55cecb8e547d2d01c3a4cb9cc6a40328a6c8fa9994d3c6044f2ccd2d"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "line": 381,
+        "text": "    \"B2 [exact character dimensions; numerical exhibited rank] the T1 isotypic component is T1 (x) C^2: the commutant of the 24 lifts has dimension %s on the corner \"",
+        "line_sha256": "67a21c8a55afeee722abe439cbb0a0d6c15e69fa272c663e3f324df845a8410c",
+        "source_sha256": "df4f1a1c55cecb8e547d2d01c3a4cb9cc6a40328a6c8fa9994d3c6044f2ccd2d"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 46,
+        "text": "T3\u2013T6 mix short exact algebra with floating SVD/eigenvalue/rank and finite-iteration diagnostics.",
+        "line_sha256": "ddfd77b45ab63e7bd5226879cb3d42aa211737c1ec4a2178ba026a0b3c68e48a",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 1005,
+        "text": "    check(\"C2 [numerical finite linear algebra] aliasing lemma, computed half, 2D 4x2 torus in full: of the 72 \"",
+        "line_sha256": "e3aa581f722c9ec36d82b0ee64223303cd5d88bfdbbbcc358c19b1e1c96319bc",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F4",
+    "original_priority": "P2",
+    "original_title": "Keep historical Record and parent interpretations out of current premise authority",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 65,
+        "end": 105,
+        "text": "  zero modes. Pointer only; the cell algebra is redeclared below and this runner rebuilds it.\n- Quoted below, each for one sentence and no grade: `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md` (the corner-structure clause);\n  `AC_PHI_LAMBDA_PRESERVED_C3_STRUCTURAL_FORECLOSURE_BOUNDED_THEOREM_NOTE_2026-05-10.md` (the circulant form);\n  `PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md` (the singlet and doublet objects);\n  `FLAVOR_HW1_STAGGERED_PROJECTION_DEMOCRATIC_R0_2026-06-02.md` (the landed `r = 0` on the fine cube);\n  `ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md` (the carrier-locus residual and guardrail `G3`);\n  `RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md` (the within-sector-free guardrail).\n- `STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md` and\n  `STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md`: the labelling lane, pointers only, neither used nor\n  re-attacked. `MINIMAL_AXIOMS_2026-06-29.md`: the four axioms quoted in \"Setting\"; this note cites none of their grades and adopts no hypothesis.\n\n## Setting\n\nThe four framework axioms are quoted, not amended. **Lattice**: \"Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor adjacency, standard\ntranslations, and proper cubic rotations about each site.\" **Qubit**: \"Each site has a domain of local possibilities\", whose \"full one-site possibility domain has algebraic\npresentation `M_2(C)`\". **Admissibility**: \"There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations\", and\n\"For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.\" **Record**: \"Records form\", \"a\nrecord locks exactly one admissible local possibility\", \"records are permanent\", \"Only records are readable.\"\n\nThe landed corner-structure clause under discussion, the generation lane's singlet and doublet objects, and the structural reason for the circulant form read, verbatim:\n\n> **Corner-structure clause.** The free staggered operator has the 8-element BZ-corner (taste-cube) doubler set, decomposing uniquely by Hamming weight as `1 + 3 + 3 + 1`; the hw=1 triplet carries an exact irreducible `M_3(C)` algebra (translations + `C_3[111]`) with no proper exact quotient.\n\n> On the `hw=1` triplet `V_1` with `W = (1,1,1)/sqrt(3)`, let `P_0 = |W><W| = J/3` (the `C_3`-singlet central-sector projector) and `P_1 = I - P_0` (the doublet sector).\n\n> Any operator `H` commuting with `U_{C_3}` is by Schur's lemma a polynomial in `U_{C_3}` itself on each isotype, hence on `\u2102\u00b3` is circulant: `H  =  a \u00b7 I  +  b \u00b7 U_{C_3}  +  b\u0304 \u00b7 U_{C_3}\u00b2`\n\n**Guardrails.** Every statement below is written under these, and the runner checks them:\n\n1. **No orbit-separating selector.** No corner is named, no bijection to any labelled 3-set is constructed, no sort key is used, no Vandermonde sign appears, no PDG value\n   appears, and no species name is attached to any corner, carrier or coefficient.\n2. **Invariance is checked, not assumed.** Every reported quantity is verified invariant under all six relabellings of each triplet and all 24 cubic conjugations, with the\n   circulant residual exactly zero throughout.\n3. **A block weight is a registered pattern.** Any `r` here is `r` *of a stipulated operator*, in the sense of the guardrail \"`G3`: registered patterns are matched, not\n   derived\" and of the within-sector-free guardrail: \"Weights/measures inside a sector (e.g. the Koide block-weight `r`, the solar/`theta_13` angles) are *not* the record's\n   content.\" No `r` here is derived, and none is \"the\" `r`.\n4. **`epsilon` is not identified with anything, and `AC_phi_lambda` stays exactly where the labelling no-go left it.** `epsilon = Z_1 Z_2 Z_3` is the chirality grading,\n   distinct from `T = i Gamma_1 Gamma_2 Gamma_3` and not identified with any Vandermonde sign; the no-go note is a pointer here, and nothing below narrows it, widens it,\n   or re-attacks it.\n5. **Nothing is derived from the axioms.** The lattice, the sign field, the cell algebra and the twelve bilinears are declared objects; the theorems are about them.\n   Composition is **ordinary** throughout, and every object lives in an `8x8` or `64x64` algebra.",
+        "sha256": "2c0cc47e9b0a6b5814403b7ca714e49220267622d5372ab01561958db911083e"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 22,
+        "end": 27,
+        "text": "`EMERGENT_3D_FERMION_ONE_QUBIT_PER_SITE_SUPERLATTICE_ROLE_PATTERN_EXISTENCE_BOUNDED_THEOREM_NOTE_2026-09-02.md` (PR #7834) supplies a law on a `5x5x5` window whose zero set is exactly `48`\nsuperlattice role patterns, and leaves one item open in its Proof boundary: \"whether a rule whose direct dependence is on adjacent sites only, longer reach arising through chains of adjacent\nconditions, can select the same zero set is open -- for value-reading star rules Theorem 3 item 2 answers no at this spacing, and for possibility-state rules it is untested here.\" Its Interfaces\nname the second half again: \"A rule whose star constraint reads which local possibilities remain admissible, rather than which value is recorded, is untouched by it.\" This note answers that item\nfor two named classes of star-local rule, on named finite clusters, and for no others. Both answers are negative, both are finite, and the two mechanisms differ and are named. Neither says that a\nrule of adjacent-site direct dependence is unavailable; each says that one class of such rule, on the clusters listed, has no junk-free member.",
+        "sha256": "f066e37378cfd687b025dfb0e970877130be4392e7ce0100448f6c3dcf5f65a3"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 234,
+        "end": 241,
+        "text": "\n## What does not move\n\n- This decides nothing about what the framework's law is. It declares two rule classes, of a form Admissibility permits in shape, and computes what they select. It supplies no update rule, no\n  formation site, no formation rate, and no values, and no coupling, absolute unit or dynamical clause appears anywhere.\n- It says nothing about rules outside the two classes, about clusters larger than those named, or about the `48`-sector zero set of PR #7834, which is not contradicted anywhere here.\n- No axiom text is amended, extended, reworded, or reinterpreted, no hypothesis is adopted, and no status value is set, predicted, or implied. No premise registry, citation manifest, or\n  axiom-premise node is created or edited.",
+        "sha256": "30fa5a010ff14b70d369ac33ebf74b813422e737e871c9ee1b6065b43eea500e"
+      }
+    ],
+    "author_disposition": "Current memo is interpretation only. Supplied matrices, composition, grading, static templates, readout conventions and all physical selectors remain supplied; old Record and parent endorsements historical.",
+    "decisive_evidence": "Both current notes pin/cite memo; four original note/cache bodies exact in outside-docs history. No parent runtime module or premise enrolled.",
+    "final_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "line": 19,
+        "text": "## Authority and supplied setting",
+        "line_sha256": "3687444113f97a9f7b3f7e913e6b45116d83c971c3ad70fa41cb0b7e29de7668",
+        "source_sha256": "f862128e96893a2a417a7eab9dedf6686ebd56bf6fe2ad961d15a838295adde5"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 19,
+        "text": "## Authority and supplied setting",
+        "line_sha256": "3687444113f97a9f7b3f7e913e6b45116d83c971c3ad70fa41cb0b7e29de7668",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": ".claude/science/review-fixes/carriers-7869-7880-20260908/REVIEW_CORRECTION.md",
+        "line": 3,
+        "text": "This is dated provenance outside active note discovery, not a theorem or an audit verdict.",
+        "line_sha256": "c726dee7b70c1dad15b3753d57c10cf81359a57b79fd7e3bf3b369e84fec20b9",
+        "source_sha256": "a7bf58002e9d4a6f08e4dea50084237bfbdcca791552f41c51fc708d50b112fb"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F5",
+    "original_priority": "P2",
+    "original_title": "The uniform-filter soundness claim has intended uniform counterexamples",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 132,
+        "end": 134,
+        "text": "3. The uniform-configuration filter is sound -- if some intended star can be made all-`0` or all-`1` by the code bits, that uniform configuration has penalty `0` and is no translate -- and its\n   pass counts are `282/1024`, `282/1024` and `32/512`.\n4. For every one of the `2560` assignments there is junk on the `s`-torus: `1024`, `1024` and `512` admit it and `0` are junk-free, in `38590` and `16363` branch nodes, at most `133` and `301` for",
+        "sha256": "61cb1043b1064a872ea718b98208fcc88e22247b0b0651f5a38e0c6b9ea8917a"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 475,
+        "end": 478,
+        "text": "    for si, sl in enumerate(stars):\n        for site in set(sl):\n            site_stars[site].append(si)\n    tot = 1 << g.n",
+        "sha256": "a64ad23fdfbec81df097136f712e9fc18be29d39705c45740fffc48acffed584"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 558,
+        "end": 568,
+        "text": "    check(\"B3 [exact] the uniform-configuration filter is sound -- if some intended \"\n          \"star can be made all-0 or all-1 by the code bits, that uniform \"\n          \"configuration has penalty 0 and is no translate -- with pass counts \"\n          \"%d/%d, %d/%d, %d/%d\"\n          % (res[(3, 1)][\"npass\"], res[(3, 1)][\"tot\"],\n             res[(3, 2)][\"npass\"], res[(3, 2)][\"tot\"],\n             res[(4, 2)][\"npass\"], res[(4, 2)][\"tot\"]),\n          res[(3, 1)][\"npass\"] == 282 and res[(3, 2)][\"npass\"] == 282\n          and res[(4, 2)][\"npass\"] == 32)\n\n    def cen(r):",
+        "sha256": "e808530c5b81a34a8d006cb43ef39b60904f4d7964a4b42b94e9843239e31e64"
+      }
+    ],
+    "author_disposition": "Original mixed-marker filter counts retained as mask diagnostics. Uniform junk requires actual acceptance AND exclusion from the complete intended orbit; all-zero/all-one intended examples survive.",
+    "decisive_evidence": "Actual six intended-uniform positive controls and genuine uniform junk examples; original282/282/32 numbers exact.",
+    "final_anchors": [
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 110,
+        "text": "3. The original mixed-marker-mask diagnostic has counts `282/1024`, `282/1024` and `32/512`. It does not establish uniform junk: a uniform configuration must both be accepted and lie outside the complete assignment-specific intended orbit. For all-zero/all-one marker assignments the corresponding uniform state is accepted AND intended. The repaired classifier explicitly excludes these six counterexamples and also checks genuine uniform junk.",
+        "line_sha256": "f753032a11fe78bbe540e5002b17f6435baef20b0695ccaafb6d91cca29aed29",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 650,
+        "text": "    check(\"R2 [exact uniform classification] six accepted intended-uniform examples are excluded from junk; genuine uniform-junk examples also exist\",",
+        "line_sha256": "2f39e790809db1be24039a079823e126cb1170094ef86aa1813aa96ecb21d6fd",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 605,
+        "text": "    check(\"B3 [exact mask diagnostic] mixed-marker masks do not establish uniform junk; \"",
+        "line_sha256": "eef90a884925d4f2974a589fd1f7f65458e28e37cf4c4f4568aa8a071a14aab9",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F6",
+    "original_priority": "P2",
+    "original_title": "Actual intended-orbit omission is a false negative",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 436,
+        "end": 446,
+        "text": "def intended_rows(g, L):\n    \"\"\"Every intended marker pattern on the L-torus: (site index, values).\"\"\"\n    s = g.s\n    rep = L // s\n    rows = np.unique(g._base[g.PRE24], axis=0)\n    out = []\n    for row in rows:\n        full = np.tile(row.reshape(s, s, s), (rep, rep, rep)).ravel()\n        keep = np.flatnonzero(full >= 0)\n        out.append((keep, full[keep].astype(np.int8)))\n    return out",
+        "sha256": "cf202449d40aeb17d954c98cfc276ff1ad75421723971a90328a92bf7f8b49e5"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 501,
+        "end": 528,
+        "text": "                cfg[free] = np.array(bits, dtype=np.int8)[:len(free)]\n                if penalty(cfg.reshape(s, s, s), acc) != 0:\n                    covar_ok = False\n        IR = intended_rows(g, L)\n\n        def is_int(cfg, IR=IR):\n            c = np.array(cfg, dtype=np.int8)\n            return any(np.array_equal(c[k], v) for k, v in IR)\n\n        cfg, nodes = dpll_junk(acc, N, stars, site_stars, is_int)\n        totnodes += nodes\n        maxnodes = max(maxnodes, nodes)\n        if cfg is None:\n            continue\n        njunk += 1\n        assert penalty(np.array(cfg).reshape(L, L, L), acc) == 0\n        cnt[periods_of(cfg, L)] += 1\n        big = np.tile(np.array(cfg).reshape(L, L, L), (2, 2, 2))\n        IR2 = intended_rows(g, 2 * L)\n        bb = big.ravel()\n        if penalty(big, acc) == 0 and not any(\n                np.array_equal(bb[k], v) for k, v in IR2):\n            nlift += 1\n    return dict(tot=tot, npass=npass, accsz=accsz, cnt=cnt, njunk=njunk,\n                nvac=nvac, nlift=nlift, nodes=totnodes, maxnodes=maxnodes,\n                covar=covar_ok, nsample=len(sample), nimg=len(g.PRE24))\n\n",
+        "sha256": "b6ebc62d9178bdac9f54f5c5c517eaddf77e0e2ed42d381b717819b92f669885"
+      }
+    ],
+    "author_disposition": "Repair complete intended-orbit exclusion before classifying any returned configuration as unwanted, on both original and doubled tori.",
+    "decisive_evidence": "Actual coordinate proper-rotation/translation orbit images cross-check completeness; empty actual intended_rows mutant fails early. All2560 original returned configurations and branch counts unchanged.",
+    "final_anchors": [
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 449,
+        "text": "def checked_intended_rows(g, L):",
+        "line_sha256": "7ac0047b1a203889a43f4c37f137ba58b57218b164eacaabf3a49f484a453670",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 425,
+        "text": "def _reference_orbit(g):",
+        "line_sha256": "102a33702b83158d7fe5784009bd41bfbe374067693563e6b652a3fab3cbce5d",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 648,
+        "text": "    check(\"R1 [exact orbit] all2560 original and doubled-box intended images independently complete, with intended positive controls\",",
+        "line_sha256": "646c19dd8b344b97652a4827898e18e51856631c8e28279fcba82f1315f27bf4",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 102,
+        "text": "## Theorem 2 -- value-reading star rules on spaced superlattices",
+        "line_sha256": "8337d69532221574063a4c48d87e1cce6479409383d64e5b1478fd6766c3fc4e",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F7",
+    "original_priority": "P2",
+    "original_title": "Full-period junk disproves the universal period-collapse explanation; census is unguarded",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 224,
+        "end": 231,
+        "text": "2. The two mechanisms are different and both are named. Value-reading rules fail by **period collapse**: a predicate on seven values can forbid local arrangements, and on every box here it does\n   not impose a period of three or more. State-reading frustration-free templates fail by **superposition junk**: their kernels are subspaces, and a subspace holds the sums of the intended\n   arrangements as well as the arrangements.\n3. PR #7834's open item is therefore answered negatively for these two classes, on these clusters, and stays open for others: energetic or otherwise non-frustration-free selection; larger\n   direct-dependence windows; templates reading more than one star; and rules on the pre-record possibility state other than the projector complements used here. The zoom-out meanwhile does what\n   it was meant to: the spacing-2 vacuity of Theorem 1 item 2 is defeated at every spacing here, no site having an all-code star, and the class still admits junk for an unrelated reason.\n\n**Reading, not theorem.** A rule that looks only at a site and its six neighbours can forbid local arrangements, but on every box here it could not force a pattern that repeats every three or more",
+        "sha256": "73691e98360bdfa7f7ce8a69d4f78867e10ad931c63114c4552f9fb5860188c6"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 572,
+        "end": 590,
+        "text": "    r1, r2, r3 = res[(3, 1)], res[(3, 2)], res[(4, 2)]\n    check(\"B4 [exact, exhaustive propagation, no SAT] s=3, both code positions, all \"\n          \"%d assignments each: %d and %d admit junk, %d are junk-free; the period \"\n          \"multiset census of the lexicographically least junk witness is the same \"\n          \"for both, count x abc = %s (intended 333); %d branch nodes, %d at worst\"\n          % (r1[\"tot\"], r1[\"njunk\"], r2[\"njunk\"],\n             r1[\"tot\"] - r1[\"njunk\"] + r2[\"tot\"] - r2[\"njunk\"], cen(r1),\n             r1[\"nodes\"] + r2[\"nodes\"], max(r1[\"maxnodes\"], r2[\"maxnodes\"])),\n          r1[\"njunk\"] == r1[\"tot\"] and r2[\"njunk\"] == r2[\"tot\"]\n          and cen(r1) == cen(r2))\n    check(\"B5 [exact, exhaustive propagation, no SAT] s=4 midpoint, all %d \"\n          \"assignments: %d admit junk, %d junk-free; census count x abc = %s \"\n          \"(intended 444); %d branch nodes, %d at worst\"\n          % (r3[\"tot\"], r3[\"njunk\"], r3[\"tot\"] - r3[\"njunk\"], cen(r3),\n             r3[\"nodes\"], r3[\"maxnodes\"]), r3[\"njunk\"] == r3[\"tot\"])\n\n    tot = sum(res[c][\"njunk\"] for c in cases)\n    lift = sum(res[c][\"nlift\"] for c in cases)\n    check(\"B6 [exact] each of the %d witnesses tiles to the 2s-torus (6^3 and 8^3) \"",
+        "sha256": "767dafb8b8c8a54c54e8a671ab01848768ba914b68ef7ceb5a0f083e8d8f6ff0"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 449,
+        "end": 460,
+        "text": "def periods_of(cfg, L):\n    A = np.array(cfg).reshape(L, L, L)\n    per = []\n    for ax in range(3):\n        for k in range(1, L + 1):\n            if L % k == 0 and np.array_equal(A, np.roll(A, k, axis=ax)):\n                per.append(k)\n                break\n        else:\n            per.append(L)\n    return tuple(sorted(per))\n",
+        "sha256": "8061f116bfff669bf44b1ccc8b685c3baaa0333bdb660fa2218f4fd6f39b3cb2"
+      }
+    ],
+    "author_disposition": "Replace universal period-collapse explanation by unwanted configurations that include full-period cases. Guard complete period histograms.",
+    "decisive_evidence": "Every actual coordinate-period tuple compared; original histograms exact,489/489 full333 and17 full444 retained. Constant-period actual source mutation fails R3.",
+    "final_anchors": [
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 474,
+        "text": "def reference_periods(cfg, L):",
+        "line_sha256": "0b5d881daf38e6b455c7c505d52ff4148b181a3d8da3bd77f30f265ea68672bb",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 653,
+        "text": "    check(\"R3 [exact full census] actual coordinate periods match every original count, including489/489 full333 and17 full444 witnesses\",",
+        "line_sha256": "ddc8104efaa054ec2af320a6a1fd7a4458cb64d9325ac484902c74e6bc685bc4",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 190,
+        "text": "For the complete 2,560 assignments on the three named value-reading geometries, the most selective admissible mask still has an unwanted configuration, as certified against the complete intended orbit. Full-period unwanted configurations are part of the result.",
+        "line_sha256": "cb600c8e17fa5e4fa650fab2684d6670daebd34b68272a246599632898739dab",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F8",
+    "original_priority": "P2",
+    "original_title": "Junk outside the global intended span is not explained by sums inside that span",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 95,
+        "end": 105,
+        "text": "rejects. Given an intended arrangement, the **maximal** such rule accepts exactly the star patterns realised in the intended configurations over every filling of the free sites; every other rule\nof the class accepts at least those, so the maximal rule is the most selective member. **Junk** is a zero-penalty configuration on the torus whose values on the pinned sites are no translate and\nno rotation of the intended pattern.\n\nA **spaced superlattice** has coarse spacing `s` and one free code site per coarse edge at position `p` along it: the code sites of the `s`-cell are `(p,0,0)`, `(0,p,0)`, `(0,0,p)` and every other\nsite is a pinned marker site, with marker values constant on the orbits of the space-group stabiliser of the code sublattice -- `24` rotations at the midpoint `p = s/2`, `C3` otherwise -- so an\n**assignment** is one bit per marker orbit.\n\nA **state-reading frustration-free star template** is a positive semidefinite operator `h` on the seven-site star, identical at every site, whose kernel contains the intended role-star states; the\ncanonical maximal choice is `h = 1 - Pi_K` with `K` the span of those states, and any other template of the class has a kernel at least as large. The zero space of `H = sum_s h_s` is the\nintersection of the star kernels, and **junk** here is a zero-energy state outside the span of the intended global states. The **EVEN** variant restricts the free bits around a pinned centre to",
+        "sha256": "fd0d8da626e807f3364c939b217be8473491fa80018843b373f1593e5e151f92"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 224,
+        "end": 231,
+        "text": "2. The two mechanisms are different and both are named. Value-reading rules fail by **period collapse**: a predicate on seven values can forbid local arrangements, and on every box here it does\n   not impose a period of three or more. State-reading frustration-free templates fail by **superposition junk**: their kernels are subspaces, and a subspace holds the sums of the intended\n   arrangements as well as the arrangements.\n3. PR #7834's open item is therefore answered negatively for these two classes, on these clusters, and stays open for others: energetic or otherwise non-frustration-free selection; larger\n   direct-dependence windows; templates reading more than one star; and rules on the pre-record possibility state other than the projector complements used here. The zoom-out meanwhile does what\n   it was meant to: the spacing-2 vacuity of Theorem 1 item 2 is defeated at every spacing here, no site having an all-code star, and the class still admits junk for an unrelated reason.\n\n**Reading, not theorem.** A rule that looks only at a site and its six neighbours can forbid local arrangements, but on every box here it could not force a pattern that repeats every three or more",
+        "sha256": "73691e98360bdfa7f7ce8a69d4f78867e10ad931c63114c4552f9fb5860188c6"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 1015,
+        "end": 1030,
+        "text": "\n    j2 = junk_character((4, 4), K_basis_2d(PST[\"+\"], PST[\"+\"], \"EVEN\"),\n                        {0: PST[\"+\"], 2: PST[\"+\"]}, \"EVEN\", 5)\n    j3 = junk_character((4, 2, 2), K_basis_3d(PST[\"0\"], PST[\"0\"], PST[\"0\"], \"EVEN\"),\n                        {0: PST[\"0\"], 2: PST[\"0\"], 3: PST[\"0\"]}, \"EVEN\", 7)\n    check(\"C8 [numerical, matrix-free, seed fixed] the junk is a superposition of \"\n          \"role assignments, not a rival pattern: the extracted vector has energy at \"\n          \"most %.0e, weight inside the intended span at most %.0e, Schmidt rank %d \"\n          \"and %d across a half cut of %d, every single-site reduced state mixed with \"\n          \"purity at most %.3f and %.3f -- no site is pinned\"\n          % (max(j2[\"E\"], j3[\"E\"]), max(j2[\"inside\"], j3[\"inside\"]), j2[\"rank\"],\n             j3[\"rank\"], j2[\"dim\"], j2[\"maxpur\"], j3[\"maxpur\"]),\n          max(j2[\"E\"], j3[\"E\"]) < 1e-12 and max(j2[\"inside\"], j3[\"inside\"]) < 1e-12\n          and j2[\"rank\"] > 1 and j3[\"rank\"] > 1\n          and max(j2[\"maxpur\"], j3[\"maxpur\"]) < 0.8)\n",
+        "sha256": "a38e991b0d5b83b54c5f35c63434151e05e3deb3e925891c5dc1ce0789f3d4b4"
+      }
+    ],
+    "author_disposition": "Local allowed-space intersection can exceed global intended span; sums inside that span cannot explain outside vectors. Preserve two actual entangled vectors and add product junk.",
+    "decisive_evidence": "Actual exact Z-basis counts447/173,743/349,999/252,2286/244; all-zero010/011EVEN junk with product purity1. Tight one-hot precondition rejects invalid templates.",
+    "final_anchors": [
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 156,
+        "text": "**Scope.** The local allowed-space intersection can exceed the span of all intended global product states. Sums of intended global states are already in that global span and cannot explain states outside it. The numerical rows exhibit such an excess for the named finite families; they do not enumerate all possible pins or physical laws.",
+        "line_sha256": "10c171946e7f6ea605afafbaf723077a5603a5706a83608279a911630285aff1",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 186,
+        "text": "**Scope and product contrast.** The two extracted vectors have the reported entanglement diagnostics; this does not classify all junk as entangled. In the actual all-Z 3D templates, exact computational-basis nullity/intended counts are `(447,173)`, `(743,349)`, `(999,252)`, `(2286,244)` for `000 EVEN`, `000 FULL`, `010 EVEN`, `011 EVEN`. In particular the all-zero product configuration has zero energy and zero intended overlap for `010/011 EVEN`, with every site purity 1. The runner checks these actual product examples and the two exact 1D Z-pin positive cases. These are static support statements; no site acquires two physical roles or a permanent Record from them.",
+        "line_sha256": "6d760772c5ccfb9cc7df3f6be4704bfdf401fa093849f68fc49a8ecb6d58618e",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 1129,
+        "text": "def exact_z_census(shape, Kb, pins, variant):",
+        "line_sha256": "98184f78565b3034246320244a83878d200c53dec07217d459de1e346a155f36",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 1162,
+        "text": "    check(\"R5 [exact actual product junk] all-Z3D nullity/intended447/173,743/349,999/252,2286/244; all-zero product junk for010/011 EVEN\",",
+        "line_sha256": "94e81d1ee3ab4de7b6e7258c9b935b0686f7fee58f8fb22a59c02ef4084e9dcf",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F9",
+    "original_priority": "P2",
+    "original_title": "The no-junk-free conclusion must retain its one-dimensional positive exception",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 218,
+        "end": 231,
+        "text": "## Corollary -- what the two classes give, on the clusters tested\n\nWithin the setting declared above, and on the finite clusters named:\n\n1. On the classes and clusters tested, no junk-free rule was found -- by exhaustive enumeration and exact linear algebra where the theorems say exact, and by matrix-free evaluation where they say\n   numerical. A star-local rule of either kind does not, on these clusters, select a superlattice role pattern with free code sites.\n2. The two mechanisms are different and both are named. Value-reading rules fail by **period collapse**: a predicate on seven values can forbid local arrangements, and on every box here it does\n   not impose a period of three or more. State-reading frustration-free templates fail by **superposition junk**: their kernels are subspaces, and a subspace holds the sums of the intended\n   arrangements as well as the arrangements.\n3. PR #7834's open item is therefore answered negatively for these two classes, on these clusters, and stays open for others: energetic or otherwise non-frustration-free selection; larger\n   direct-dependence windows; templates reading more than one star; and rules on the pre-record possibility state other than the projector complements used here. The zoom-out meanwhile does what\n   it was meant to: the spacing-2 vacuity of Theorem 1 item 2 is defeated at every spacing here, no site having an all-code star, and the class still admits junk for an unrelated reason.\n\n**Reading, not theorem.** A rule that looks only at a site and its six neighbours can forbid local arrangements, but on every box here it could not force a pattern that repeats every three or more",
+        "sha256": "86fc7cea67e6743d54f65167c14b1a257ab25180d91b739d86c54c98b3be24cb"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 312,
+        "end": 314,
+        "text": "An honest auditor should come away with: two finite negative results on two named classes, over named finite clusters; two named mechanisms, period collapse and superposition junk; one junk-free\ncontrast in one dimension, which shows the failure is not an artefact of the construction; a clearly marked line between the exact and the numerical and between the numerical and the stochastic;\nand a list of what stays open, headed by energetic selection and wider windows. The strongest thing this note says is that two kinds of adjacent-site rule, on the boxes named, have no junk-free",
+        "sha256": "403d35f0f6dae3a32e70e16a6d1834ab430e6c60d22cc2fdd743798a72a6897d"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 1052,
+        "end": 1057,
+        "text": "    group_C()\n    print(\"SUMMARY: on the classes and clusters tested no junk-free star-local rule \"\n          \"of either kind was found; value-reading rules fail by period collapse, \"\n          \"state-reading ones by superposition junk.\")\n    print(\"TOTAL: PASS=%d FAIL=%d\" % (PASS, FAIL))\n    return 1 if FAIL else 0",
+        "sha256": "b29e9c3e73c0dd31c409ad4815f23065d34345e76f6277b57cd3f1a26897198e"
+      }
+    ],
+    "author_disposition": "Retain two junk-free1D Z-pin EVEN cases and narrow every negative to actual named finite pin/geometry families.",
+    "decisive_evidence": "Actual exact computational-basis positive census3=3; no universal continuous-pin/star-rule/physical selection no-go.",
+    "final_anchors": [
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 192,
+        "text": "The **two Z-pin EVEN cases on the 1D eight-ring are junk-free**, with exact zero-space and intended dimension 3. The negative summary always excludes this positive exception.",
+        "line_sha256": "1f09d92b8300558e8c458547da684f8d669f79f6b6b0d7feacc201e5e8ab24a9",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 52,
+        "text": "The named one-site pins are the normalized states `|0>`, `|1>`, `|+>=(|0>+|1>)/sqrt(2)`, `|->=(|0>-|1>)/sqrt(2)`, `|i>=(|0>+i|1>)/sqrt(2)` and `|j>=(|0>-i|1>)/sqrt(2)`. The 72 two-dimensional cases are the six-by-six pin pairs times EVEN/FULL; the 128 three-dimensional cases use `{0,1,+,-}^3` times EVEN/FULL; the eight one-dimensional cases use `{0,1,+,-}` times EVEN/FULL. Local tensor factors and slot order are exactly the paired runner's `K_basis_1d`, `K_basis_2d` and `K_basis_3d` definitions. These finite lists do not exhaust continuous pins.",
+        "line_sha256": "b8f4b008a8316210bd4181e8201fcd0e77a3562e6bfff00d986e1f43b4a9b641",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 1166,
+        "text": "    check(\"R6 [exact positive exception] both1D Z-pin EVEN cases have actual zero-space=intended dimension3\",",
+        "line_sha256": "6a8ee59c7c991b82e3223fc0f137c9584b297b2d7a498247f96df9a58ec40764",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 1015,
+        "text": "          \"faithful named-pin choice on this torus is junk-free\"",
+        "line_sha256": "dccb77185a98a5088653c0b3cf1b17eb31b42ad3732c7ceaf0aefde7d44352ce",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F10",
+    "original_priority": "P2",
+    "original_title": "State the actual compressed-projector and finite-probe verification limits",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 703,
+        "end": 735,
+        "text": "    k = len(dist)\n    pos = {s: j for j, s in enumerate(dist)}\n    idx = np.zeros(2 ** k, dtype=int)\n    for p in range(2 ** k):\n        bits = [(p >> (k - 1 - j)) & 1 for j in range(k)]\n        si = 0\n        for i, s in enumerate(slots):\n            si |= bits[pos[s]] << (nslots - 1 - i)\n        idx[p] = si\n    return dist, Pi[np.ix_(idx, idx)]\n\n\ndef star_projectors(shape, Pi, nslots):\n    coords, index, stars = lattice(shape)\n    out = []\n    aliased = False\n    for slots in stars:\n        if len(set(slots)) == nslots:\n            out.append((list(slots), Pi))\n            continue\n        aliased = True\n        dist, A = compress(Pi, slots, nslots)\n        w, U = np.linalg.eigh(A)\n        sel = w > 1 - 1e-9\n        out.append((dist, U[:, sel] @ U[:, sel].conj().T))\n    return coords, len(coords), out, aliased\n\n\ndef apply_local(M, sites, n, X):\n    m = X.shape[1]\n    k = len(sites)\n    T = X.reshape([2] * n + [m])\n    T = np.moveaxis(T, sites, range(k))",
+        "sha256": "7061d916873522e9f46f3f18d1b208f8ab474f0ee3e2250e8cd0af5223164e01"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 793,
+        "end": 800,
+        "text": "        C[a] = kron_list(p).conj() @ X\n    return C\n\n\ndef intended_err(projs, n, pl, seed=3, k=4):\n    idx = np.random.default_rng(seed).choice(len(pl), size=min(k, len(pl)),\n                                             replace=False)\n    Y = np.array([kron_list(pl[i]) for i in idx]).T.copy()",
+        "sha256": "f88cd7418008fc0ae4bf855570ad9516ea80caf0f1be59c7fb7cc32e8dd46dd5"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 825,
+        "end": 853,
+        "text": "    Pi, dimK = projector(Kb)\n    coords, n, projs, aliased = star_projectors(shape, Pi, nslots)\n    pl = intended_products(shape, pins, variant)\n    r, Ginv = span_tools(pl)\n    rng = np.random.default_rng(seed)\n    X = (rng.standard_normal((2 ** n, M))\n         + 1j * rng.standard_normal((2 ** n, M))) / np.sqrt(2.0)\n    X0 = X.copy()\n    it = 0\n    while it < maxsweeps:\n        for ax, Q in projs:\n            X = apply_local(Q, ax, n, X)\n        it += 1\n        if it % 10 == 0:\n            nrm2 = np.maximum(np.linalg.norm(X, axis=0) ** 2, 1e-300)\n            if (energy(projs, n, X) / nrm2).max() < tol:\n                break\n    nrm2 = np.maximum(np.linalg.norm(X, axis=0) ** 2, 1e-300)\n    resid = float((energy(projs, n, X) / nrm2).max())\n    ov = np.real(np.einsum(\"ij,ij->j\", X0.conj(), X))\n    C = overlaps(pl, X)\n    inside = np.real(np.einsum(\"ai,ab,bi->i\", C.conj(), Ginv, C)) / nrm2\n    return dict(dimK=dimK, expected=r, resid=resid, sweeps=it,\n                est=float(ov.mean()), se=float(ov.std(ddof=1) / np.sqrt(M)),\n                jlo=float(1 - inside.max()), jhi=float(1 - inside.min()),\n                ierr=intended_err(projs, n, pl))\n\n\ndef junk_character(shape, Kb, pins, variant, nslots, seed=5, sweeps=200,",
+        "sha256": "540cf9b56aca0614c385df3d2c0c54632e2fae642a276a746e0afab023ba44ea"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 155,
+        "end": 178,
+        "text": "   exactly when `ab = 0`, that is, exactly for the `Z` eigenstates. For any other pin `V` delivers an entangled diagonal vector instead, and the intended state is a zero mode only if `K` happens\n   to contain it. Which pins that happens for is item 2, not a consequence of item 1.\n2. On the `2D` `4x2` torus, of the `72` (pin pair, variant) cases, `30` are vacuous -- exactly the `FULL` variant at all `30` pairs with `v != f` -- and of the `42` live cases `22` are faithful,\n   meaning the intended states really are zero modes, and `20` are not. The `20` are exactly those with neither pin a `Z` eigenstate.\n\n**Proof.** Item 1 is two lines of algebra on the expansion of `|p>|p>`, checked on all six named pins. Item 2 constructs `Pi_K` by singular value decomposition on the `32`-dimensional star space,\ncompresses it through the isometry, assembles the dense `256x256` Hamiltonian, and evaluates the intended states directly. All exact.\n\n**Reading, not theorem.** When a box is only two sites wide, a site's two neighbours in that direction are one and the same, so the template asks for two copies of one value at once, and only a\ndefinite value is two copies of itself. That is a fact about the small box, and it is why the three-dimensional rows below keep to definite-value pins.\n\n## Theorem 4 -- two dimensions\n\n**Conclusion.**\n\n1. Exact, `4x2` torus, at the faithful `Z` pins: `v = f = |0>` gives `dim K = 17`, nullity `35` against `23` intended, so `12` junk zero modes in `EVEN` and `4` in `FULL`; `v = |0>`, `f = |1>`\n   gives `dim K = 24`, nullity `64` against `28`, so `36` junk. No faithful pin choice on this torus is junk-free.\n2. Matrix-free, `4x4` torus, no aliasing, state vectors of length `65536` [numerical, seed fixed]: alternating projections from a random start reach residual energy at most `9e-14`, and the\n   converged zero-energy vectors carry junk fraction -- weight outside the intended span -- `0.85`-`0.89` at `(+,+)` `EVEN`, `0.31`-`0.33` at `(+,+)` `FULL`, `0.91`-`0.92` at `(0,1)` `EVEN`,\n   `0.65`-`0.67` at `(+,-)` `EVEN` and `0.78`-`0.84` at `(0,+)` `EVEN`.\n3. Hutchinson kernel-dimension estimates from the same runs, `4` probes, one standard error [numerical, stochastic, seed fixed]: `743+-13`, `743+-13`, `1534+-22`, `399+-7` and `690+-17` against\n   `96`, `511`, `124`, `128` and `128` intended.\n\n**Proof.** Item 1 is dense and exact on `8` qubits. Item 2 applies each star's kernel projector in turn to a block of random vectors, never forming a matrix larger than `32x32` and never storing",
+        "sha256": "2166065989ee7daeeece82bc0833256e78c93d99e07e238d3ea87fb050fe155b"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 301,
+        "end": 307,
+        "text": "which is what the conclusion rests on.\n\nThree lines are **numerical**, and every one is tagged in the runner: the matrix-free `4x4` and `4x2x2` rows, and the junk-character row. Each reports the converged residual energy of its\nzero-energy vector, at most `9e-14`, and the weight of that vector outside the intended span. Two of those lines are additionally **stochastic** -- the Hutchinson kernel-dimension estimates -- and\nfix their seed and report a standard error; no conclusion here depends on a Hutchinson number, which is why they are reported as estimates and used nowhere else. The exact lines use integer and\nbit arithmetic, exhaustive enumeration, exhaustive constraint propagation, and dense linear algebra on spaces of dimension at most `256`. Nothing here is derived from the four axioms: they are\nquoted in \"Setting\" to fix the lattice, the one-qubit site, the covariance and the record, and the two rule classes are declared, not deduced. No claim is made about the framework's law, and PR",
+        "sha256": "763b71664f129b87a24e00efac4705f3d8528028f092375cbb096eb7fe99065e"
+      }
+    ],
+    "author_disposition": "Explain actual compressed A and eigenvalue-one Q, PSD common-kernel equivalence without spectral equality, finite four-probe diagnostics and complete finite intended coverage.",
+    "decisive_evidence": "Actual compressor/eigenvalue-selector mutant fails R7. Complete product evaluator constant-zero mutant fails actual R4 negative operand. All22 faithful2D rows/all16 Z3D cases covered; projection bias remains unbounded.",
+    "final_anchors": [
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 54,
+        "text": "## The operator actually computed after aliasing",
+        "line_sha256": "46bb2fc6a3d8df21784f73250561c69c467f27861454146ad57645e00b33a6f7",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 154,
+        "text": "states, so that span is never materialised either. Item 3 reads the Hutchinson estimator off the same block, the real overlap of each start vector with its finite alternating-projection output. Its mean would target the kernel dimension at an exact projection limit. Four-sample standard error omits finite-iteration bias and is not a confidence certificate. C6/C7 use `estimate-3*SE > intended_rank` as a finite diagnostic acceptance predicate, not as a theorem about the dimension.",
+        "line_sha256": "9cb63b8870875c8dde83be0279c43395f26b06b8bdf9d023147b4a26b2e0dbe3",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 864,
+        "text": "def complete_intended_error(projs, pl):",
+        "line_sha256": "7c1dec24bd5d1d31684a3893041d90d483848637fec33b6bbdd0c17eafafe7d0",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 1047,
+        "text": "    check(\"R4 [complete finite intended coverage] every intended product in each numerically faithful2D row and all16 all-Z3D cases was checked locally\",",
+        "line_sha256": "98efb026e92612d159d1e19b4885f7860e29723255e3d1c7bbec7c3de6cec85c",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 1178,
+        "text": "    check(\"R7 [actual PSD alias control] A is a positive contraction; actual Q selects only eigenvalue1, equal kernels with distinct spectra and I-A<=I-Q\",",
+        "line_sha256": "c68c6195411e7a73c2e470cf3f07a6eefc724677a40ac5f313cd205a5bca7546",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F11",
+    "original_priority": "P2",
+    "original_title": "Bind actual publication IDs, current premises and source inputs",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 1,
+        "end": 7,
+        "text": "---\nclaim_id: corner_kernel_cubic_carriers_c3_split_registered_block_weights\nclaim_type: bounded_theorem\nclaim_scope: \"On the eight-dimensional kernel of the Kawamoto-Smit staggered hopping read on the coarse lattice 2Z^3 at the Brillouin-zone corner q = (pi,pi,pi), with the Cl(6) cell algebra Gamma = (Y_1, Z_1 Y_2, Z_1 Z_2 Y_3), Xi = (X_1, Z_1 X_2, Z_1 Z_2 X_3), epsilon = Z_1 Z_2 Z_3 and T = i Gamma_1 Gamma_2 Gamma_3 redeclared here, and for the twelve stipulated bilinears listed in the runner only: (T1) H(pi,pi,pi) = 0 so the whole cell is the corner kernel, the L = 4 coarse torus kernel is eight-dimensional, all 24 proper cubic rotations lift to integer signed permutations whose 576 products close on the nose on that kernel, the characters (E, 8C3, 3C2, 6C4, 6C2') = (8, 2, 0, 4, 0) decompose in exact rational arithmetic as 2 A1 + 2 T1, and the isotypic projectors in the corner basis are exactly P_A1 = diag(1,0,0,0,0,0,0,1) = P_hw0 + P_hw3 and P_T1 = diag(0,1,1,1,1,1,1,0) = P_hw1 + P_hw2, with each Hamming block separately O-invariant carrying characters (1,1,1,1,1) on hw = 0, 3 and (3,0,-1,1,-1) on hw = 1, 2. (T2) The 1+3+3+1 grading is the eigen-grading of the O-invariant Cl(6) bilinear i sum_a Gamma_a Xi_a = Z_1 + Z_2 + Z_3, spectrum 3 - 2 hw; the T1 isotypic is T1 (x) C^2 with a commutant of dimension 4 by the exact rational formula (1/24) sum |chi|^2, four independent commuting elements exhibited, so the group alone does not split it; T is O-invariant, unitary, carries hw = 1 onto hw = 2 and back with rank 3, and anticommutes with epsilon = diag((-1)^hw). (T3) On each triplet the C3[111] restriction U has tr U = 0, U^3 = I and eigenvalues {1, omega, omegabar}; its invariant vector has corner weights exactly (1/3, 1/3, 1/3); against the fixed democratic W = (1,1,1)/sqrt3 the overlaps are 1 and 1/9, a corner-sign gauge artefact removed by rephasing a single corner; the singlet projectors have every entry of modulus 1/3 and P_0, P_1 commute with U. (T4) Each of the twelve bilinears restricts to an exactly circulant operator on each triplet with residual 0 and c = conj(b): sum Gamma_a, sum Xi_a and T restrict to zero, i sum Gamma_a Xi_a gives a = +1 / -1 and epsilon a = -1 / +1 with b = 0, (sum Gamma_a)^2 = (sum Xi_a)^2 = 3I, the p_a^2 coefficient of H(pi+p)^2 is the identity on both, the Gamma-Gamma and Xi-Xi bivector sums give a = 0, |b| = 1, and i sum Gamma_a Xi_{a+1} and i sum Gamma_a Xi_{a+2} give a = 0, |b| = 1 with delta differing by pi between the two triplets; the six O-invariant ones have b = 0 by Schur and the six others have O-average exactly 0 hence a = 0, so no listed operator has a != 0 and b != 0 and every hw-diagonal one registers r = 0; and the restriction map from real C3-invariant Hermitian quadratics onto the circulant algebra has real rank 3 on each triplet, with alpha (sum Z_a) + beta i(sum_cyc Gamma_a Gamma_{a+1}) + gamma i(sum_a Gamma_a Xi_{a+1}) realising every (a, |b|, delta), the triples (2,1,1) and (2,1,0) registering r = 1/2 and r = 1/4 exactly. (T5) All six relabellings of each triplet and all 24 cubic conjugations leave (a, |b|, r) unchanged with circulant residual 0 for all twelve; naming C^2 rather than C the generator sends b to its conjugate, delta to -delta, and fixes (a, |b|, r). (T6) Exactly four of the twelve separate the two triplets -- i sum Gamma_a Xi_a and epsilon by the sign of a, and the two Gamma-Xi cross terms by delta differing by pi -- and no listed operator is C3-invariant with b != 0 on exactly one triplet. No corner is named, no bijection to a labelled 3-set is constructed, no sort key, Vandermonde sign, PDG value or species name appears, no block weight is derived, nothing here is derived from any axiom, no axiom is amended, no status is set and no hypothesis is adopted.\"\nupstream_dependencies: []\nrunner: scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py\n---",
+        "sha256": "bda045a0b6dcc712b8ee8325a84af3fda524b27c0d0449063a85404f42c6cfd1"
+      },
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 34,
+        "end": 43,
+        "text": "claim_type_reason: \"Exact finite-dimensional theorems on an 8x8 algebra: the cubic representation content of the corner kernel, its isotypic projectors, the C3 restriction on each three-dimensional carrier, the exactly circulant restrictions of twelve stipulated bilinears with their block weights, the surjectivity of the restriction map onto the circulant algebra, and a full invariance census. Every statement is symbolic in sympy, exact-rational, or integer and Z[i] matrix arithmetic at zero tolerance; no item is numerical.\"\ntrace_class: frontier_discovery\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: unknown_frontier\nartifact_role: theorem\nnext_trace_action: \"Run independent audit on this self-contained finite-algebra theorem, and route to its owner the science-level question this note does not decide: which sign of the chirality grading selects the carrier a generation-monitored family is read on.\"\nconditional_surface_status: null\naudit_required_before_effective_retained: true",
+        "sha256": "17858b5321e15ad5fc2f863fe50d9f505d9d826df6b49ed6bc9ea3aaee4839ef"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 1,
+        "end": 7,
+        "text": "---\nclaim_id: through_lattice_role_marking_two_finite_negatives\nclaim_type: bounded_theorem\nclaim_scope: \"On the cubic lattice Z^3 with one qubit per site, ordinary (commuting) composition throughout, two named classes of star-local rule are evaluated on named finite clusters against the superlattice role patterns of PR #7834, exactly where stated and matrix-free-numerically where tagged. (T1, exact) The 24 proper rotations and the 48-element full cubic group induce the same 20 orbits on the 128 seven-bit star patterns with identical canonical representatives, so every rotation-invariant value-reading star rule is inversion-invariant; and at spacing 2 the 48 templates of the period-(4,2,2) pattern give every corner six free code neighbours and their stars realise all 128 value patterns and all 4 adjacent pairs, so the maximal value-reading star rule is vacuous there. (T2, exact, exhaustive constraint propagation, no SAT solver) On the spaced superlattices with coarse spacing s and one code site per coarse edge at position p, for s = 3 at both code positions (10 marker orbits, 1024 covariant assignments each) and s = 4 midpoint (9 orbits, 512 assignments): accepted set sizes span 28-111, 28-111 and 8-69 of 128 with 0 vacuous; the sound uniform-configuration filter passes 282/1024, 282/1024 and 32/512; and for every one of the 2560 assignments a branch-on-first-undetermined-site propagation search returns a zero-penalty configuration on the s-torus that is no translate or rotation of the intended pattern, 0 junk-free, in 38590 and 16363 branch nodes, at most 133 and 301 for one assignment, with period multiset censuses of the lexicographically least witness 489x(3,3,3) 438x(1,1,1) 73x(1,3,3) 24x(1,1,3) at s = 3 and 321x(1,1,1) 37x(1,2,2) 36x(2,2,2) 33x(1,1,2) 31x(1,1,4) 17x(4,4,4) 15x(1,4,4) 11x(1,2,4) 8x(2,2,4) 3x(2,4,4) at s = 4; each of the 2560 witnesses tiles to the 2s-torus (6^3, 8^3) with penalty 0 and is still no translate or rotation; and the maximum number of code neighbours of a site is 3 at s = 3 and 1 at s = 4 midpoint, never 6, so the spacing-2 vacuity is defeated and the failure has a different mechanism. (T3, exact) For state-reading frustration-free star templates h = 1 - Pi_K, a torus side of length 2 identifies the two +- neighbour slots on that axis and the star term becomes the pullback h = 1 - V^dag Pi_K V, whose diagonal isometry has image span{|00>,|11>} on that pair, holding the pinned product |p>|p> exactly when ab = 0 for |p> = a|0> + b|1>, a Z eigenstate; on the 2D 4x2 torus 30 of 72 (pin pair, variant) cases are vacuous, exactly FULL at all 30 pairs with v != f, and of the 42 live cases 22 are faithful and 20 are not, the unfaithful being exactly those with neither pin a Z eigenstate. (T4, exact) On the 2D 4x2 torus the faithful Z-pin rows carry junk zero modes 12 and 4 at v = f = |0> (dim K 17, nullity 35, 23 intended) and 36 at v = |0>, f = |1> (dim K 24, nullity 64, 28 intended), with no faithful pin choice junk-free; on the non-aliased 2D 4x4 torus, matrix-free with state vectors of length 65536 [numerical], alternating projections reach residual energy at most 9e-14 and the converged zero-energy vectors carry junk fraction 0.85-0.89, 0.31-0.33, 0.91-0.92, 0.65-0.67 and 0.78-0.84 at (+,+) EVEN, (+,+) FULL, (0,1) EVEN, (+,-) EVEN and (0,+) EVEN, with Hutchinson kernel-dimension estimates over 4 probes of 743+-13, 743+-13, 1534+-22, 399+-7 and 690+-17 against 96, 511, 124, 128 and 128 intended [numerical, stochastic, seed fixed]. (T5) The 3D seven-site star has dim K 51-76 of 128 in EVEN and 65-105 in FULL over all 64 pin triples from {0,1,+,-}, none vacuous, and all 16 all-Z triples are faithful on the 4x2x2 torus (exact); there [numerical, matrix-free, seed fixed] junk fractions are 0.56-0.62, 0.53-0.54, 0.74-0.76 and 0.89-0.90 at (0,0,0) EVEN, (0,0,0) FULL, (0,1,0) EVEN and (0,1,1) EVEN with residual energy at most 1e-15. (T6) One 2D and one 3D junk vector have energy at most 2e-15, weight inside the intended span at most 7e-31, Schmidt rank 35 and 31 across a half cut of 256, and every single-site reduced state mixed with purity at most 0.661 and 0.725, so no site is pinned [numerical, matrix-free, seed fixed]; and exactly (exact) the one-dimensional three-site star on an 8-ring is junk-free for the Z pins in the EVEN variant, dim K 3 and nullity 3 against 3 intended, 2 of 8 choices junk-free. These are finite negative results on two named classes over named finite clusters. The s = 4 off-midpoint, s = 5 and s = 6 superlattices and the Haar-pin templates are scratch-only and are not claimed here. No axiom is amended, no status is set, no registry entry is created, and nothing here is derived from any axiom.\"\nupstream_dependencies: []\nrunner: scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py\n---",
+        "sha256": "e22edb5d772042024c1f779c17fb05621098feef519d82b94e51e1cb566d5a0d"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 34,
+        "end": 43,
+        "text": "claim_type_reason: \"Finite negative results on two named classes of star-local rule, over named finite clusters. Groups A and B are exact -- bit arithmetic, exhaustive enumeration, exhaustive constraint propagation with no solver. Group C mixes exact dense linear algebra on 8-qubit and 7-qubit spaces with matrix-free numerical statements on 16-qubit tori; every numerical line is tagged and carries its converged residual, and the two stochastic lines fix their seed and report standard errors.\"\ntrace_class: frontier_discovery\ntarget_claim_id: null\ntarget_blocker_text: null\nsource_of_blocker_text: frontier_question\nreachability_to_target: unknown_frontier\nartifact_role: theorem\nnext_trace_action: \"Run independent audit on this self-contained finite-cluster result, and route to its owner the question this note leaves open: whether some other adjacent-site rule -- energetic rather than frustration-free, or reading more than one star -- selects the role pattern.\"\nconditional_surface_status: null\naudit_required_before_effective_retained: true",
+        "sha256": "5b8858df4a938e1ba88a625f70715ebe4f3583dc66e79292b58c848fc5654fcf"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "start": 53,
+        "end": 57,
+        "text": "import numpy as np\nimport sympy as sp\n\nAUDIT_TIMEOUT_SEC = 120\n",
+        "sha256": "cd3c7b167af916fc494d647c7a32a2157f8ab17102d544a14471dc4e04af7abc"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "start": 57,
+        "end": 68,
+        "text": "\"\"\"\n\nfrom __future__ import annotations\n\nimport itertools\nimport sys\nfrom collections import Counter\n\nimport numpy as np\n\nAUDIT_TIMEOUT_SEC = 300\n",
+        "sha256": "189196c7a5c1017b7afef58df130d5d13cc8fc855c438ce295cf36e0d244c536"
+      }
+    ],
+    "author_disposition": "Actual filename IDs/primary APIs/zero helpers, own-note+current-memo declarations, source guards and genuine caches replace unbound old publication metadata.",
+    "decisive_evidence": "Two actual dependency consumers agree; real readiness None, memo citation edge only.20 actual cache cases and12 input guard failures; four input edges. No registry edits.",
+    "final_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "line": 2,
+        "text": "claim_id: corner_kernel_cubic_carriers_c3_split_and_registered_block_weights_bounded_theorem_note_2026-09-02",
+        "line_sha256": "d26196517d7b6d364e8b50b7ab849ba7e05bb003a6166a03c3fe94c0191ff676",
+        "source_sha256": "f862128e96893a2a417a7eab9dedf6686ebd56bf6fe2ad961d15a838295adde5"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 2,
+        "text": "claim_id: through_lattice_role_marking_two_finite_negatives_bounded_computation_note_2026-09-03",
+        "line_sha256": "bdff0691bb13a06a7f6f7636f6bcd8005cd743e621d3b371c59e9476045e6fef",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "scripts/corner_kernel_cubic_carriers_c3_split_registered_block_weights_check_2026_09_02.py",
+        "line": 26,
+        "text": "AUDIT_INPUT_PATHS = ['docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md']",
+        "line_sha256": "d867d17326891181b9e4c88e2bf8bb3b23fcc96863846b665746a64375934361",
+        "source_sha256": "df4f1a1c55cecb8e547d2d01c3a4cb9cc6a40328a6c8fa9994d3c6044f2ccd2d"
+      },
+      {
+        "path": "scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+        "line": 25,
+        "text": "AUDIT_INPUT_PATHS = ['docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md']",
+        "line_sha256": "a1f47428cc5a5fe40123c7de1479521966095d572fa0b747e62ecaaf6c424208",
+        "source_sha256": "4829189eae09023561929c36aaaa6fc703f968ec54fa28e8b03e58d9f5a6c89b"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  },
+  {
+    "id": "F12",
+    "original_priority": "P3",
+    "original_title": "Record honest N1\u2013N8 coverage without inventing route independence",
+    "original_findings_sha256": "4569465065801b3bdbac564ba4173c35c4a176ab27efa26b1de2f44aaa791efe",
+    "original_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "start": 237,
+        "end": 249,
+        "text": "   where the labelling no-go left it.\n\n## What does not move\n\n- No axiom text is amended, extended, reworded, or reinterpreted; no hypothesis is adopted; no status value is set, predicted, or implied; no premise registry, citation\n  manifest, or axiom-premise node is created or edited; and no update rule, formation site, formation rate, coupling, absolute unit or dynamical clause appears.\n- Nothing here is derived from the axioms: the lattice, the sign field, the cell algebra and the twelve bilinears are declared objects. No corner of the taste cube is\n  identified with any named species, no value of `r` is claimed as a physical one, and the labelling no-go and its joint-automorphism bridge are pointers only, their\n  scope untouched -- this note computes nothing that separates a `C_3` orbit.\n\n## Interfaces named for other lanes, not moved here\n\n- **The sign of `epsilon` as the carrier selector.** Theorem 6 reduces \"which of the two carriers\" to the sign of the chirality grading. That sign is a **supplied datum**:",
+        "sha256": "0e747f1f1beb9a6ad63521973fd8b1913068bd312911842712f9527de42fee1f"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "start": 245,
+        "end": 263,
+        "text": "- **Energetic selection.** Both classes here are frustration-free. A rule that pays energy for the wrong arrangement rather than forbidding it outright is untouched by Theorems 2 and 4 to 6, and a\n  lane taking it up should treat the period census of Theorem 2 item 4 as the rival arrangements its gap has to lift.\n- **Larger windows.** The direct dependence here is one star; a `3x3x3` or `5x5x5` window read as a constraint on values is a different class, and PR #7834 supplies a member of it. A single term\n  supported on two adjacent stars, or a product of star terms, is likewise outside Theorems 3 to 6.\n- **The possibility-state reading beyond projector complements.** `h = 1 - Pi_K` is the maximal frustration-free choice with the intended states in its kernel; a term that reads the possibility\n  state without being a projector complement -- a positive operator with a smaller kernel and a nonzero value on the intended states, or a non-frustration-free sum -- is not covered.\n- **Larger tori for the three-dimensional state-reading case.** The `4x2x2` torus aliases two axes, which is why only `Z` pins are faithful there; a non-aliased three-dimensional torus needs\n  `4x4x4`, `64` qubits, and is not reached by the apparatus here.\n\n## Remaining live routes\n\n1. Spacings and code positions beyond those claimed: the `s = 4` off-midpoint superlattice with its `23` marker orbits, and `s = 5` and `s = 6`.\n2. Other intended arrangements, and the gap between the two classes. Every result here is about the role patterns of PR #7834 and their spaced analogues, and a rule reading values on some sites\n   and possibility states on others is neither class.\n3. Whether the period collapse of Theorem 2 has a proof rather than a census: the runner exhibits junk for every assignment, and no general argument is offered.\n\n## Executable claim block\n\nThe canonical machine-bound restatement of the six theorem conclusions.",
+        "sha256": "45bf924dba3f69182d0fddb40c8e7c74d242b5893bca5298debc68e3c9a18d03"
+      }
+    ],
+    "author_disposition": "Record actual N1\u2013N8 coverage and omissions; retain positive/mixed/uniform/product alternatives with unresolved independence and unmet five-family minimum.",
+    "decisive_evidence": "No invented routes/wall counts or source acceptance from old status. Formal audit remains deferred.",
+    "final_anchors": [
+      {
+        "path": "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "line": 163,
+        "text": "## N1\u2013N8 negative-scope record",
+        "line_sha256": "36a594267d7c2f88cce33bf89ceccd027df6b5b9b37eeeddbd1aa97bd8d3a53b",
+        "source_sha256": "f862128e96893a2a417a7eab9dedf6686ebd56bf6fe2ad961d15a838295adde5"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 200,
+        "text": "## N1\u2013N8 negative-scope record",
+        "line_sha256": "36a594267d7c2f88cce33bf89ceccd027df6b5b9b37eeeddbd1aa97bd8d3a53b",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      },
+      {
+        "path": "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md",
+        "line": 202,
+        "text": "- **N1, attempted routes.** Cubic work executes the representation/commutant, C3 restrictions and the stipulated operator/invariance probes. Role work executes binary-star orbits, three marker geometries and the stated finite quantum-pin families. These are the actual attempts; multiple cases within one family do not manufacture five independent mechanism families. The five-family procedural minimum remains unmet.",
+        "line_sha256": "da237015f20a83c2c54c00b053c5c5c5931b43342ded37f84bd60f64f96ac7b4",
+        "source_sha256": "fe4e5b446ca35a7318c88eaf15bc89bd04a241b19977c1185b2699472c7a9cfa"
+      }
+    ],
+    "status": "author correction implemented; independent final confirmation required",
+    "independent_assessment": "PASS: corrected finite source and explicit boundaries confirmed on exact integration tree 6d78f399070ec0bb9d4e316cf51c2ca754a02025"
+  }
+]

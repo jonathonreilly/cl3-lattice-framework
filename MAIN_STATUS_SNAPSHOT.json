@@ -1,5 +1,5 @@
 {
-  "main_sha": "2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307",
+  "main_sha": "7517b4a95f860fec43251c0281a981e6bb1f34d6",
   "total_rows": 4570,
   "science_rows": 4198,
   "claim_types": {
@@ -16,8 +16,11 @@
   "science_effective_status": {
     "unaudited": 4198
   },
-  "source_landing_note": "95 reviewed source documents across 26 batches. The external nightly metadata refresh materialized all 95 previously pending ledger entries: 4,570 total rows, 4,198 unaudited science rows and 372 meta rows. No audit/effective-status transition or scientific source change. Original backlog counts unchanged.",
-  "new_source_claims_pending_audit_pipeline": [],
+  "source_landing_note": "97 reviewed source documents across 27 source batches. The earlier external nightly refresh materialized 95 entries. The two new carrier/role entries were generated for validation and preserved externally, then stripped. Main ledger remains 4570 rows, 4198 unaudited science and 372 meta; no auditor or verdict application. 26 batches passed one combined validation; wave14 preserves its actual repaired retry.",
+  "new_source_claims_pending_audit_pipeline": [
+    "docs/CORNER_KERNEL_CUBIC_CARRIERS_C3_SPLIT_AND_REGISTERED_BLOCK_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+    "docs/THROUGH_LATTICE_ROLE_MARKING_TWO_FINITE_NEGATIVES_BOUNDED_COMPUTATION_NOTE_2026-09-03.md"
+  ],
   "external_nightly_refresh": {
     "commit": "2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307",
     "previous": "2838092d748d11791ddb420acf8c1a4d7da30400",

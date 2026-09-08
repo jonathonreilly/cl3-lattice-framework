@@ -1,0 +1,11 @@
+# Wave 27 coordinator preparation
+
+The root reviewed both complete original and final note bodies, all author correction deltas, all original/final cache bodies and the dated history wrapper. Four historical note/cache payloads match original Git bytes. The complete original/current/final mode/blob maps, current-main preservation, original numerical captures, original predicates, proof-critical context, current tools and actual dependency consumers were independently checked. The complete sealed author report, proof, incidents, finding and claim dispositions and affected outcomes were read. These coordinator records do not replace the original reviewer's final source-bound verdict.
+
+Two external verifier assumptions stopped preparation without changing source or executing science. The numeric comparator initially treated the intentional PASS counter increases as scientific value drift. A full differing-leaf examination identified only the two PASS counter transitions and function-address repr changes; all scientific value leaves and 2,713 arrays were preserved. That first script/log survives in the carrier validation directory.
+
+The sealed-author verifier initially joined final claim-section lines without their trailing newline, while the author used the actual source bytes including that newline. All twelve section differences were checked and consisted solely of that delimiter. The verifier now uses source splitlines with keepends; all complete original/final sections and hashes verify. The first script and failure log remain preserved. No author artifact, scientific source, cache, control result or execution changed.
+
+Some large initial JSON displays were truncated. All substantive dispositions and control outcomes were subsequently read through complete compact field selections; repeated stack traces and serialized numeric elements are not claimed as extra source coverage. Actual stored array and value comparisons, complete source hashes and the prior full source reads are bound separately.
+
+The original 254-PR cutoff, three transitive owner reservations and deferred formal audit remain in force. Source integration and planning updates do not grant an audit grade.
