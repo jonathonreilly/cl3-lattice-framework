@@ -1,19 +1,19 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-08T03:36:58.995406+00:00 after wave18 against main `06816d119cd73ad40d4ef332a6e6e7b2e61af0db`. Prior dispositions remain at planning commit `575484a041c3da5b4bda2faefaca27a4407f966e`. Fixed original 254 membership unchanged.
+Updated 2026-09-08T04:21:52.963428+00:00 after wave19 against main `d81f3c22117522411c20fb6c38eef5874c4765ae`. Prior dispositions remain at planning commit `1549de86aa0e0b107d2d0daaa74a204e5ee35875`. Fixed original 254 membership unchanged.
 
-**47 original scientific scopes newly landed: eighteen direct science closures and 29 earlier consolidated constituents. One meta synthesis and one process PR landed separately.** Of 110 other closures, 77 scientific scopes remain pending at 7 open successors. Consolidation preserves source and transfers unresolved obligations; it is not scientific acceptance.
+**50 original scientific scopes newly landed: 21 direct science closures and 29 earlier consolidated constituents. One meta synthesis and one process PR landed separately.** Of 110 other closures, 77 scientific scopes remain pending at seven open successors. Consolidation preserves source and transfers unresolved obligations; it is not scientific acceptance.
 
 | Original 110 other closures | PRs |
 | --- | ---: |
-| Reviewed corrected scientific scope subsequently landed |29|
-| Scientific scope pending in an open successor |77|
-| Superseded by science already on starting main |2|
-| Empty source delta |1|
-| Unexecuted plan preserved |1|
-| Total |110|
+| Reviewed corrected scientific scope subsequently landed | 29 |
+| Scientific scope pending in an open successor | 77 |
+| Superseded by science already on starting main | 2 |
+| Empty source delta | 1 |
+| Unexecuted plan preserved | 1 |
+| Total | 110 |
 
-There are 130 closed and 124 open originals, including three reservations; zero original drafts. Seven arrivals landed before cutoff remain excluded. No closure requires reopening on the verified source/obligation evidence. These are source-scope counts, not breakthroughs or audit grades.
+There are 133 closed and 121 open originals, including three reservations; zero original drafts. Seven arrivals landed before cutoff remain excluded. No closure requires reopening on the verified source/obligation evidence. These are source-scope counts, not breakthroughs or audit grades.
 
 ## Pending closed scopes
 
@@ -29,7 +29,7 @@ There are 130 closed and 124 open originals, including three reservations; zero 
 
 ## Per-PR outcomes
 
-Full recovery, original/reviewed heads and obligations are in [the JSON ledger](BACKLOG_CLOSURE_RECONCILIATION.json). Current acceptance is bound by [wave18 evidence](backlog_evidence/wave18/INDEX.json); earlier evidence remains preserved.
+Full recovery, original/reviewed heads and obligations are in [the JSON ledger](BACKLOG_CLOSURE_RECONCILIATION.json). Current acceptance is bound by [wave19 evidence](backlog_evidence/wave19/INDEX.json); earlier evidence remains preserved.
 
 | Original PR | Closure action | Current scope status | Accepted main or open successor |
 | --- | --- | --- | --- |
@@ -102,6 +102,8 @@ Full recovery, original/reviewed heads and obligations are in [the JSON ledger](
 | #7840 | draft_disposition | reviewed_corrected_scope_on_main | `16c2d6860e168ec8e5e8f66296410265e5d7226d` |
 | #7846 | draft_disposition | reviewed_corrected_scope_on_main | `2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f` |
 | #7847 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f` |
+| #7848 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `d81f3c22117522411c20fb6c38eef5874c4765ae` |
+| #7849 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `d81f3c22117522411c20fb6c38eef5874c4765ae` |
 | #7850 | draft_disposition | reviewed_corrected_scope_on_main | `47da12268436ee1843e822386477aa2c829d95a9` |
 | #7851 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `47da12268436ee1843e822386477aa2c829d95a9` |
 | #7853 | draft_disposition | pending_on_open_successor | #7827 |
@@ -143,6 +145,7 @@ Full recovery, original/reviewed heads and obligations are in [the JSON ledger](
 | #7936 | source_consolidation_exact | reviewed_corrected_scope_on_main | `94e90cbf928cb35fa1b50e894cd897c94b73077f` |
 | #7937 | source_consolidation_exact | reviewed_corrected_scope_on_main | `94e90cbf928cb35fa1b50e894cd897c94b73077f` |
 | #7941 | source_consolidation_exact | reviewed_corrected_scope_on_main | `60b98160bdab0a4aed2069da47bb8e1ed674c29d` |
+| #7942 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `d81f3c22117522411c20fb6c38eef5874c4765ae` |
 | #7943 | source_consolidation_exact | pending_on_open_successor | #7966 |
 | #7945 | source_consolidation_exact | pending_on_open_successor | #7966 |
 | #7946 | source_consolidation_exact | pending_on_open_successor | #7966 |

@@ -1,0 +1,229 @@
+{
+  "source_sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+  "engine_cases": [
+    {
+      "name": "normal",
+      "accepted": true,
+      "expected": true,
+      "error": null,
+      "actual_C_sha256": "a54a995aa71be811f1f977347d37c18f2f0753eb7209b8fb24e9072c0f835124",
+      "inv": {
+        "closure_err": 0,
+        "illegal": 0,
+        "M": 218,
+        "gauss_states": 56,
+        "gauss_equations": 448,
+        "gauss_errors": 0,
+        "gauss_max": 0,
+        "guard_stride": 83,
+        "E": -7.302499997500002,
+        "dE": 0.1528758187277545,
+        "Pf": 0.3041666666666667,
+        "GE0": 0.25,
+        "nbin": 20
+      }
+    },
+    {
+      "name": "terminal-state-drift",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('required engine exit 20: [/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave19-7942-confirmation/scratch/terminal-state-drift-run] equilibrated: M=218 n=101 closure_err=0 illegal=0 switch_acc=0.3976\\nGauss violation: states=56 equations=448 errors=2 max=2\\n')",
+      "actual_C_sha256": "ff58bedaba78ab886a1c186068e3e80782d6f8a9b7a7ac5badb5116d5b0ec4a3",
+      "inv": null
+    },
+    {
+      "name": "bad-initial-Gauss",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('required engine exit 20: Gauss violation: states=1 equations=8 errors=2 max=2\\n')",
+      "actual_C_sha256": "c49517a270ebdf9c1e5007e0b57abb729ec76006d52541c17ebd4f1c95a80a4b",
+      "inv": null
+    },
+    {
+      "name": "bad-evolved-Gauss",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('required engine exit 20: Gauss violation: states=2 equations=16 errors=2 max=2\\n')",
+      "actual_C_sha256": "8be99ef2c5edd6556c87dfe9f4d994e5ddeadf3f572a5160337c319531963056",
+      "inv": null
+    },
+    {
+      "name": "warmup-illegal",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('required engine exit 20: gn-2026-09-07/backlog-wave19-7942-confirmation/scratch/warmup-illegal-run] equilibrated: M=218 n=101 closure_err=0 illegal=1 switch_acc=0.3976\\n[/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave19-7942-confirmation/scratch/warmup-illegal-run] done M=218 n=103 closure_err=0 illegal=1 switch_acc=0.4059 gauss_states=56 gauss_equations=448 gauss_errors=0 gauss_max=0 guard_stride=83\\n')",
+      "actual_C_sha256": "f75f09e29bd053a4b322d2672fc3914c24b5c29413ccdc10a40ba3d98105f632",
+      "inv": null
+    },
+    {
+      "name": "warmup-hidden-by-reset",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('cumulative equilibration/production invariant failure: [/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave19-7942-confirmation/scratch/warmup-hidden-by-reset-run] equilibrated: M=218 n=101 closure_err=0 illegal=1 switch_acc=0.3976')",
+      "actual_C_sha256": "2ba232c13a1fc06bab74ee9e4d7b034e4f746600c3c8e1ab0edbee031d53759d",
+      "inv": null
+    },
+    {
+      "name": "missing-warmup",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('missing or malformed required engine diagnostics')",
+      "actual_C_sha256": "31fda53af9ac2dfc83c74131fef9bdc77dac31320eaaff16100b30d6f0b36312",
+      "inv": null
+    },
+    {
+      "name": "missing-final",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('missing or malformed required engine diagnostics')",
+      "actual_C_sha256": "90e6ce99f92cad4b332eb64ad6c283818d1a3a63df784e41cb0a89fb0ead5b16",
+      "inv": null
+    },
+    {
+      "name": "missing-Gauss-field",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('missing required gauss_states')",
+      "actual_C_sha256": "4d80f6e81305595fbfb6d41feb8f4603cd387138d06b59ac0cb59f1d4feeae20",
+      "inv": null
+    },
+    {
+      "name": "zero-Gauss-counts",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('missing or failed Gauss equation checks')",
+      "actual_C_sha256": "a0e64f6574b71d4f091d41df6bf55511e465133f8d99ea25b323aedc583e54a1",
+      "inv": null
+    },
+    {
+      "name": "required-engine-exit29",
+      "accepted": false,
+      "expected": false,
+      "error": "RuntimeError('required engine exit 29: ')",
+      "actual_C_sha256": "4600cc4d4321cab774bd9ae08695335f32d274ea06f937a32226598b94db5db1",
+      "inv": null
+    },
+    {
+      "name": "positive-lag-collapse-disclosed",
+      "accepted": true,
+      "expected": true,
+      "error": null,
+      "actual_C_sha256": "9bd6f6a12125d843e3e15b6bfdf06ead5dfc95610c20ae443d2a679f14d41692",
+      "inv": {
+        "closure_err": 0,
+        "illegal": 0,
+        "M": 218,
+        "gauss_states": 56,
+        "gauss_equations": 448,
+        "gauss_errors": 0,
+        "gauss_max": 0,
+        "guard_stride": 83,
+        "E": -7.302499997500002,
+        "dE": 0.1528758187277545,
+        "Pf": 0.3041666666666667,
+        "GE0": 0.25,
+        "nbin": 20
+      }
+    }
+  ],
+  "cache_cases": [
+    {
+      "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+      "kind": "drift",
+      "status": "sha_mismatch",
+      "actual_cli_exit": 1,
+      "readiness_issue": null,
+      "stdout": "sha_mismatch logs/runner-cache/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.txt\n"
+    },
+    {
+      "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+      "kind": "missing",
+      "status": "fresh",
+      "actual_cli_exit": "runner missing on disk: scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+      "readiness_issue": "runner_source_missing:scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+      "stdout": ""
+    },
+    {
+      "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "kind": "drift",
+      "status": "input_mismatch",
+      "actual_cli_exit": 1,
+      "readiness_issue": null,
+      "stdout": "input_mismatch logs/runner-cache/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.txt\n"
+    },
+    {
+      "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "kind": "missing",
+      "status": "input_mismatch",
+      "actual_cli_exit": 1,
+      "readiness_issue": "runner_declared_input_missing:scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py:docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "stdout": "input_mismatch logs/runner-cache/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.txt\n"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "kind": "drift",
+      "status": "input_mismatch",
+      "actual_cli_exit": 1,
+      "readiness_issue": null,
+      "stdout": "input_mismatch logs/runner-cache/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.txt\n"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "kind": "missing",
+      "status": "input_mismatch",
+      "actual_cli_exit": 1,
+      "readiness_issue": "runner_declared_input_missing:scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py:docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "stdout": "input_mismatch logs/runner-cache/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.txt\n"
+    }
+  ],
+  "source_guards": [
+    {
+      "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "kind": "drift",
+      "scope_guard_result": true,
+      "error": null
+    },
+    {
+      "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "kind": "missing",
+      "scope_guard_result": false,
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "kind": "drift",
+      "scope_guard_result": false,
+      "error": null
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "kind": "missing",
+      "scope_guard_result": false,
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    }
+  ],
+  "spectral_reuse": {
+    "original_independent_states_sha256": "aa0e9c8eccc1b9fa8133032b15c4fa9e617e3656d3581729b1ff41a37c0b646a",
+    "original_independent_spectrum_sha256": "533c737eb7378a265ee024d8c59ddb5266772ada76e29f68caa64ede2bfd1095",
+    "actual_final_arrays_sha256": "6cd12ae9e5c9699f754b661374b8eeaee16266c09ba8ef3832ee9be91d0e6147",
+    "all_9600_states_and_125_winding_labels_exact": true,
+    "all_937_component_ground_and_internal_gaps_match_independent_original": true,
+    "actual_transverse_gap_independent": 2.517279044259972,
+    "first_level_weight_independent": 3.467683578514811e-31
+  },
+  "actual_full_campaign_rerun": false,
+  "readout_and_actual_legal_word": {
+    "normal": true,
+    "nonclosed_word_rejected": true,
+    "states": [
+      15798951,
+      11096743,
+      6509223,
+      7484071,
+      15798951
+    ]
+  },
+  "actual_A1_state65_mutant_rejected": true,
+  "actual_compiler_failure_required_failed_checks": 5,
+  "actual_interpretation_scope_mutant_rejected": true
+}
