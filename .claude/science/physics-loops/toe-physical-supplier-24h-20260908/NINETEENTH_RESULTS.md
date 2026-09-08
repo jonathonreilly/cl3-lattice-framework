@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Nineteenth campaign checkpoint
 
 UTC 2026-09-08T20:26:14.042340+00:00. Active48-hour campaign deadline2026-09-10 10:27:17UTC, quota permitting.17reviewPRsopen, no mainlanding/auditverdict.
 
@@ -9,5 +9,3 @@ Separately reviewed exact symmetry proves this one coefficient determines the fu
 A stronger independent certificate is ready: exact rational metric removesframeradicals, savedfloatingvectors onlychoosearbitrarydyadiccandidates, everyresidual/gap/error/closing216 calculation isrational. Fullsourcecold24157e33 PASS,3081independentchecks. Fixedfirst-prefixcost measuredonce beforefullreplay,~2.05ssetup+.012sstatework. Dispatcher05af39b8 andinputmanifestbindall6JSON/NPZ and9348harness. Rootauthorizes exactlyonecomplete replayafterthisremotecheckpoint:1200stotalincl10sprior,180s384MiB/bridge, noretries/coveragechanges. Exactrationalinterval—not floatradius—mustexcludezero toclaimthat strongercertificate. Replaynotyetlaunched.
 
 CTprecision22ab isrunning independently after priorremote32cdcheckpoint. No outcomepeek yet; independent256pathpostharness frozen. Prior555f remainsFAILEDprecision. Disklast63GiB,39worktreesremovedwithremoteevidence; lockthrough21:54:53UTC. Weeklylast59%used/41%remaining; noresetredemption. Snapshot69files,12081607bytes. ContinuefromSTATE.yaml;thisisacheckpoint,nottheendofcampaign.
-
-Resume STATE.yaml and NINETEENTH_SHA256.json.
