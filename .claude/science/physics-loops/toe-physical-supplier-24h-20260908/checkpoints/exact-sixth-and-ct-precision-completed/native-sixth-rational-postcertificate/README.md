@@ -1,0 +1,9 @@
+# Independent exact residual replay — prospective harness
+
+This implements the rational metric derivation frozen in native-sixth-rational-metric/DERIVATION.md (1f5194f70d59cb5d6e943d26cc6152b612bc89aa53b2e666779c34a2ff926737). It has not processed physical DP outputs and has not certified a coefficient. Full-prefix execution remains unlaunched pending separate resource authorization.
+
+The saved physical float vectors are converted to arbitrary dyadic candidates in rational coordinates. Their proximity to an exact coordinate conversion is unnecessary: exact sparse rational residuals certify the candidates themselves. Common integer denominators avoid Fraction arithmetic per matrix entry. Weighted residual norms use exact metric weights and outward rational square-root bounds. Exact LDL inverse-trace gap bounds propagate errors through five inverse levels. The unsolved final half-sum is reconstructed from level-five candidates; its saved k=6 marker never introduces another inverse or scale factor.
+
+Closing uses the exact rational dual row and factor 1/216; its weighted dual norm is sqrt(6). Bounds are rational and independent of a BLAS residual estimate. Small denominators and candidate conversion use floating arithmetic solely to choose a candidate, never to justify its residual bound.
+
+The CLI processes one bridge artifact and requires pinned geometry, prefix census and own source. It is not a budget launcher: no full run is authorized by this package. A separately supervised time/memory envelope is required before actual use. The current deterministic tests cover one actual sparse matrix, exact norm enclosure, exact gap, synthetic NPZ schema, NaN and missing-row rejection. They do not certify implementation correctness over every physical prefix. Initial synthetic duplicate-vacuum failure is preserved.

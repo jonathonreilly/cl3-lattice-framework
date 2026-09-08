@@ -1,3 +1,7 @@
+# Current campaign handoff
+
+Read STATUS.md and STATE.yaml first. Current campaign deadline: 2026-09-10 10:27:17 UTC. Historical checkpoint text below may contain superseded intermediate states.
+
 <!-- CURRENT_CAMPAIGN_HEADER -->
 # Active 48-hour campaign
 
@@ -174,3 +178,18 @@ Separately reviewed exact symmetry proves this one coefficient determines the fu
 A stronger independent certificate is ready: exact rational metric removesframeradicals, savedfloatingvectors onlychoosearbitrarydyadiccandidates, everyresidual/gap/error/closing216 calculation isrational. Fullsourcecold24157e33 PASS,3081independentchecks. Fixedfirst-prefixcost measuredonce beforefullreplay,~2.05ssetup+.012sstatework. Dispatcher05af39b8 andinputmanifestbindall6JSON/NPZ and9348harness. Rootauthorizes exactlyonecomplete replayafterthisremotecheckpoint:1200stotalincl10sprior,180s384MiB/bridge, noretries/coveragechanges. Exactrationalinterval—not floatradius—mustexcludezero toclaimthat strongercertificate. Replaynotyetlaunched.
 
 CTprecision22ab isrunning independently after priorremote32cdcheckpoint. No outcomepeek yet; independent256pathpostharness frozen. Prior555f remainsFAILEDprecision. Disklast63GiB,39worktreesremovedwithremoteevidence; lockthrough21:54:53UTC. Weeklylast59%used/41%remaining; noresetredemption. Snapshot69files,12081607bytes. ContinuefromSTATE.yaml;thisisacheckpoint,nottheendofcampaign.
+
+
+# Twentieth campaign checkpoint
+
+Updated 2026-09-08T20:48:49.402615+00:00. The 48-hour campaign remains active through 2026-09-10 10:27:17 UTC, subject to available usage. Seventeen science PRs are open. No science has been merged to main and no formal audit verdict has been applied.
+
+The strongest new result is a certified selection of one ground state on the supplied finite 4×4×4 model at sufficiently weak electric penalty. Independent exact rational arithmetic verified all 2,292 intermediate residual calculations across all six bridge classes. It proves 370.7628915198 < c < 370.7628915199. Reviewed geometry, magnetic symmetry and physical parity proofs identify the complete sixth-order interaction and yield a leading gap of 2 c sqrt(24) u^6, with an O(|u|^7) remainder. This is a finite-model result; no explicit weak-penalty radius or infinite-volume phase has been established. The portable review package is receiving its final independent check.
+
+The continuous-time sampler precision follow-up also completed successfully. All four preset arms pass the unchanged accuracy, precision, starting-condition and coverage diagnostics. The independent check reconstructed every one of the 256 saved final trajectories and checked 3,072 final readouts, with 106,266 total checks. Its conservative time charge is 863.900914 seconds including prior calibration, and peak shell memory is 132,841,472 bytes. The earlier failed-precision study remains separate and unchanged. This validates a finite study, not a mixing theorem or a ground-state calculation.
+
+A new L6 flux-uniqueness proof has passed an independent cold review and is under root review. It uses strict equality in reflection positivity plus an exact finite-field certificate of full Schmidt rank. A separate exact Gaussian representation for the L6 sixth coefficient is derived, but direct five-dimensional integration is too costly; prefix-gap bounds and word-sum compression are the next targets. No physical L6 integration has been launched.
+
+Disk remains about 63 GiB free. Thirty-nine inactive worktrees have been removed only after useful evidence was verified on remote branches; recovery receipts are in disk-cleanup-20260908. The original dirty user checkout and other worker's checkout remain untouched. Last usage check was 59% weekly consumed; no reset credits redeemed. Lock expires 2026-09-08 21:54:53 UTC. The active heartbeat runs every 30 minutes, and STATUS.md is the SSH entry point.
+
+This snapshot preserves 606 files (11680148 bytes), including completed exact replay and CT precision data, independent reviews, and the L6 theorem/kernel candidates. Resume from STATE.yaml and TWENTIETH_SHA256.json. The campaign continues after this checkpoint.
