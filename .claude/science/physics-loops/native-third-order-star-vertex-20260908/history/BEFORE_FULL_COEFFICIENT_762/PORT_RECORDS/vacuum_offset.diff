@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -24,7 +24,7 @@
+   k=[row[:] for row in K]
+   for e in pair:
+    i,j=edges[e];k[i][j]=-k[i][j];k[j][i]=-k[j][i]
+-  q=[[-dot(x,mv(k,y))/12 for y in kr] for x in r];bs=bits[p];index={b:i for i,b in enumerate(bs)};A=[[F(6*int(i==j)) for j in range(32)] for i in range(32)]
++  q=[[-dot(x,mv(k,y))/12 for y in kr] for x in r];bs=bits[p];index={b:i for i,b in enumerate(bs)};A=[[F(5*int(i==j)) for j in range(32)] for i in range(32)]
+   # Direct ordered CAR action i*a_i*b_j/2; b_j acts first.
+   for col,b in enumerate(bs):
+    for i in range(6):

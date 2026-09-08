@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/third-vertex-isolated-0i8q06j5/scripts/native_third_order_star_vertex_2026_09_08.py", line 31, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/third-vertex-isolated-0i8q06j5/scripts/native_third_order_star_vertex_2026_09_08.py", line 21, in main
+    replay=runpy.run_path(str(root/AUDIT_INPUT_PATHS[4]))['check'](root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/third-vertex-isolated-0i8q06j5/scripts/native_third_order_star_vertex_replay_2026_09_08.py", line 45, in check
+    if mv(mat(pair,0),xs[pair])!=[F(i==0) for i in range(32)]:raise ValueError('even residual')
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: even residual

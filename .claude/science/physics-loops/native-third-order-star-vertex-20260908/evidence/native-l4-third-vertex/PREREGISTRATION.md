@@ -1,0 +1,3 @@
+# L4 third-order vertex — UNLAUNCHED
+
+Before physical solves: build exact rational black frame of one star using literal64-site canonical K, verify Wstar12, metric CAR/Gauss, every pair-prefix weighted Hermiticity and90-word grouping. Prospective actual solve uses30 rational32x32 systems, all15 even pair sources followed by15 odd pair sources, exact residual zero. No float norm, eigenvalue or stochastic input. Every particle-number weight is an exact Fraction. Report any multiparticle weight, including zero; no presumption that linear approximation succeeds. Bound proposed job30s384MiB with external watchdog and internal alarm/RSS guard. No solve authorized yet. Source and input pins must be reviewed before launch.

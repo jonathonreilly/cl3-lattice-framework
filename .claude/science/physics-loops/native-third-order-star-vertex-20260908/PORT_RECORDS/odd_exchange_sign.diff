@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -14,7 +14,7 @@
+  rows=[]
+  for x in [F(0),F(-6),F(1),F(2)]:
+   E=[[q(x+F(1,3)),q(0,F(1,3))],[q(0,F(1,3)),q(x+F(5,3))]]
+-  O=[[q(x+F(2,3)),q(0,-F(1,3))],[q(0,-F(1,3)),q(x+F(4,3))]]
++  O=[[q(x+F(2,3)),q(0,F(1,3))],[q(0,F(1,3)),q(x+F(4,3))]]
+   v=mv(inverse(E),[q(1),q(0)])
+   # Six disjoint pairs: perpendicular components sum to -3 times C's.
+   post=[mul(q(6),v[0]),mul(q(-3),v[1])]
