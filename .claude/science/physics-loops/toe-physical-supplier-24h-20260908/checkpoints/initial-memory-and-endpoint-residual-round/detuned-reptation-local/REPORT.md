@@ -1,0 +1,11 @@
+# Local reptation port diagnostic
+
+Frozen core/protocol preceded the one authorized L4 micro. Local label buffer has n entries, head offset, direction and exactly three configurations with Nf and complex six-mode O caches. It does not store the full path in the core. Diagnostic micro separately retains a literal full path to challenge the core; that reference memory is not claimed as the production design.
+
+256 L2 updates match the old exact graph's same-seed event/acceptance/direction and left/mid/right state trajectory exactly. The exact graph module is explicitly imported read-only for that reference and bound by absolute path in FREEZE.json; its graph construction has no local transitive imports. The local core has only NumPy and standard-library imports. Geometry is literal generic periodic L, with original face enumeration order preserved.
+
+One L4 n384,tau1,4096-update nonequilibrated micro completed in1.944046s,73.09375MiB; hot updates plus independent direct-Nf/full-state tests1.786431s. Six rejections and2928 self proposals occurred. Every step matched the separately maintained literal full-path proposal and Metropolis result. All three state/Nf caches matched direct reference; maximum complex-O drift6.66e-16. All384 label transitions were reconstructed at64 fixed checkpoints. No method-agreement, equilibrium or finite-projection production claim is drawn from this micro.
+
+The denominator is oldleft after the first label for positive shifts and oldright before the last label for negative shifts. It never uses the newly proposed endpoint. On rejection core configurations/labels remain unchanged and only direction flips. This is tested by exact trajectory matching, not merely invariant checks. Minus midpoint uses old indexm−1; plus uses old indexm.
+
+Current Nf cache is recomputed after each accepted nonself local flip rather than incrementally updating affected faces. O uses a signed complex increment. This prioritizes correctness; performance optimization is unreviewed and would require a new freeze and all-flip controls. The hot diagnostic includes expensive literal-reference loops, so its time is not a production-throughput estimate. No larger-volume production launched. Independent review of core and controlled hot timing are required before a production plan.

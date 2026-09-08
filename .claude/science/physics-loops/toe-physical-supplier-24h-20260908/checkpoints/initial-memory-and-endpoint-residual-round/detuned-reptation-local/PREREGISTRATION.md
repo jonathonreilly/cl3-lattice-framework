@@ -1,0 +1,5 @@
+# Prospective local-configuration reptation port
+
+No L4 production. Generic L2/L4 periodic geometry constructed literally in own core. Path contains n geometric face labels or aggregate self−1 and three configurations(left,mid,right), with Nf and complex O caches. n even; initial seed/selfpath, direction+. Positive acceptance b(oldright)/b(oldleft after firstlabel); negative b(oldleft)/b(oldright after lastlabel). Proposed endpoint never enters denominator. On rejection no path/config/cache changes; direction flips.
+
+Before larger use, compare256 deterministic L2 updates with exact-graph state-ID reference using identical seed202609140201. Then ONE L4 n384,tau1,4096updates,seed202609140401,<=60s384MiB including literal path checks. Full-path reference is diagnostic only and kept separate from production memory claim. Check every step cached configurations,Nf,complexO against direct recomputation; full buffer reconstruction every64steps. No equilibrium/precision claim. Source freezes before execution; local imports only own core plus standard scientific libraries, with paths/hashes bound.

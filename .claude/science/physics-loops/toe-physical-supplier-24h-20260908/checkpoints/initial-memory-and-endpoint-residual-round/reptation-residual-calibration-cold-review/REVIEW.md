@@ -1,0 +1,13 @@
+# Independent preproduction review
+
+Reviewed freeze 189e879f481bee49c070fac84830d64e390e61d58c69977eb0007a87f7c702c1 and all source/input hashes recorded in RESULT.json. Full production.py, analyze.py, launch.py, protocol, forecast and controls were read. Previously reviewed graph 87f8618c is the explicitly imported fixed V=.95 geometry; this review reuses that independent graph verification.
+
+Disposition: mathematical/statistical implementation passes at the declared n=2 domain, but execution is blocked by an actual undefined name. The final producer source hash uses `Path(__file__)` despite importing only `pathlib`. Evaluating the exact footer AST with the actual imported names raises NameError. Every shard would otherwise spend its computation before failing to emit JSON. Repair to `pathlib.Path` and a refreshed freeze are required before production.
+
+The n=2 retained neighbor is path[1] for both directions. The proposal samples each of 24 geometric face labels with equal unit weight and additional .05*Nf aggregate self weight; acceptance is b(old)/b(retained neighbor). This retains the reviewed lifted finite-G law. Measurement follows each attempted update, including rejection, after 64 burn updates. Six statistics bind both endpoints and the midpoint, rather than substituting endpoint-average squared for the product hL*hR.
+
+Independently differentiated the five observable formulas by complex step. Maximum Jacobian residual 1.11e-16; direct formula residual zero. Signed negative variance is retained and zero pooled S fails closed. Chain influence covariance is divided by 32 and uses all six jointly measured components; batches are used only for paired early/late diagnostics, not as independent replicas. The correction is XE/S-E, and D=(.95*N-E)/(2*S). R=D+correction refers to the finite projected state energy, not E0. The plug-in residual bound is not a confidence bound.
+
+The source-bound oracle, seeds, dimensions, finite arrays, batch/mean agreement, event counts and positive resource fields are checked. Four 8-chain shards and no replacement policy preserve the fixed 32-chain design. The 150.609-second forecast includes prior .169732-second micro and is not a timing guarantee. Launcher reserves a full 180 seconds before each shard from the 300-second aggregate envelope; it can stop early if actual costs exhaust that reserve. No new stochastic micro or production was run in this review.
+
+The earlier long-path L4 equilibration failures are not addressed by this short n=2 calibration. A successful result would validate these new cross-statistics and their finite-state oracle consistency only; it would not establish ground-state projection or mixing on long paths.

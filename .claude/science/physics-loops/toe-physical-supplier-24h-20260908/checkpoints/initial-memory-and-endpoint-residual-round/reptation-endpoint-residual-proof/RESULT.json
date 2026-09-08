@@ -1,0 +1,75 @@
+{
+  "rss_mib": 88.796875,
+  "checks": {
+    "tiny_endpoint_E": true,
+    "tiny_endpoint_product_H2": true,
+    "tiny_midpoint_cross_XH": true,
+    "tiny_complex_Rayleigh_plus_covariance": true,
+    "tiny_omit_covariance_mutant": true,
+    "tiny_wrong_midpoint_endpoint_mutant": true,
+    "tiny_wrong_endpoint_square_mutant": true,
+    "tiny_sharper_bound": true,
+    "literal_component": true,
+    "literal_all6912_summed_flip_increments": true,
+    "endpoint_identity_2": true,
+    "literal_Rayleigh_correction_2": true,
+    "residual_bound_2": true,
+    "endpoint_identity_48": true,
+    "literal_Rayleigh_correction_48": true,
+    "residual_bound_48": true,
+    "endpoint_identity_192": true,
+    "literal_Rayleigh_correction_192": true,
+    "residual_bound_192": true
+  },
+  "count": 19,
+  "tiny_exact": {
+    "E": "-1188/4405",
+    "H_variance": "18/19404025",
+    "D": "8990/6007",
+    "correction": "10788/26460835",
+    "R_E": "39611738/26460835"
+  },
+  "L2": [
+    {
+      "n": 2,
+      "E": -0.40095570286430976,
+      "H2": 0.1684269627274021,
+      "endpoint_product": 0.16842696272740168,
+      "variance_direct": 0.00766148706798955,
+      "variance_endpoint_subtraction": 0.0076614870679891645,
+      "S": 2.489983875663448,
+      "D": 1.6108011929040362,
+      "correction": 0.03951215107424132,
+      "R_E": 1.6503133439782762,
+      "sharper_bound": 0.045672005482535846
+    },
+    {
+      "n": 48,
+      "E": -0.402726604521755,
+      "H2": 0.1622103186812573,
+      "endpoint_product": 0.16221031868125702,
+      "variance_direct": 2.1600691635022112e-05,
+      "variance_endpoint_subtraction": 2.1600691634676705e-05,
+      "S": 2.4390363050688535,
+      "D": 1.6609933299856126,
+      "correction": 0.0017483620458127588,
+      "R_E": 1.6627416920314244,
+      "sharper_bound": 0.0024411228246232495
+    },
+    {
+      "n": 192,
+      "E": -0.40273650589459087,
+      "H2": 0.1621966932129669,
+      "endpoint_product": 0.16219669321296676,
+      "variance_direct": 3.278293778103161e-11,
+      "variance_endpoint_subtraction": 3.278294302688778e-11,
+      "S": 2.435246664998792,
+      "D": 1.6643290886590867,
+      "correction": 2.0181550884096422e-06,
+      "R_E": 1.6643311068141768,
+      "sharper_bound": 3.0088948295139418e-06
+    }
+  ],
+  "seconds": 0.09104033300536685,
+  "source_sha": "7c278fb6f9effddd1ef1a8b57abbc5922013595df991665b149703f2da8f5eca"
+}

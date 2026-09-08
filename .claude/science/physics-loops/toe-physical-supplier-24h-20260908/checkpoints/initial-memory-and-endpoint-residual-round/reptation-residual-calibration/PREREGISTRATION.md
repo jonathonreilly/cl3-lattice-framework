@@ -1,0 +1,3 @@
+# Prospective endpoint residual L2 diagnostic
+
+Root exposed both independent proofs before implementation. Read complete endpoint residual proofs. New raw vector for L2only: (Nf_mid,X_mid,Eavg,hLhR,X_mid Eavg,X_mid²), one six-mode harmonic. Future L4 adds distinct X2 products, not a merged harmonic. Exact normalized-G oracle n2/48/192; R relative to Epsi, not E0. ONE micro n48,4096updates,seed202609170201,allseedpath,direction+,no equilibration claim,<=30s384MiB. Production remains unauthorized. Preserve signed variance estimates; no sqrt bound when estimated variances negative. Previous raw cannot reconstruct these products. Source/import freeze before execution.

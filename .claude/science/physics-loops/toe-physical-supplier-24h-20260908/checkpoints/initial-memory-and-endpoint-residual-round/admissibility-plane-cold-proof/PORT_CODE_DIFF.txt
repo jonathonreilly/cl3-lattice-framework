@@ -1,0 +1,37 @@
+--- 
+
++++ 
+
+@@ -1,5 +1,12 @@
+
+ import time,resource,signal,json,hashlib
+-start=time.monotonic();signal.alarm(180)
++AUDIT_TIMEOUT_SEC = 180
++AUDIT_INPUT_PATHS = ('docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md', 'docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md')
++start=time.monotonic();signal.alarm(AUDIT_TIMEOUT_SEC)
++import argparse
++from pathlib import Path
++parser=argparse.ArgumentParser();parser.add_argument('--json',action='store_true');args=parser.parse_args()
++root=Path(__file__).resolve().parents[1]
++inputs={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
+ from fractions import Fraction as F
+ from itertools import product
+ from math import lcm
+@@ -60,5 +67,14 @@
+
+ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+ import sys
+ mib=rss/(1024**2 if sys.platform=='darwin' else 1024)
+-require(mib<384)
+-print(json.dumps(dict(checks=checks,fixtures=out,elimination_schedules=schedules,scope='2x3 full exact marginals; 3x3/3x4 symbolic trimming, not full census',seconds=time.monotonic()-start,peak_MiB=mib),indent=2,allow_nan=False))
++require(0<mib<384 and time.monotonic()-start<180)
++result=dict(checks=checks,fixtures=out,elimination_schedules=schedules,scope='2x3 full exact marginals; 3x3/3x4 symbolic trimming, not full census',seconds=time.monotonic()-start,peak_MiB=mib, input_sha256=inputs, source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
++print(json.dumps(result,indent=2,allow_nan=False))
++if not args.json:
++ print('per_element: exact six-label probabilities and positive center conditioning.')
++ print('per_site: all subrectangle positions of the complete2x3 laws.')
++ print('per_mode: no continuum or quantum mode claim; three orbit-weight fixtures.')
++ print('per_block: complete46656 configuration laws;96 symbolic trimming schedules.')
++ print('lattice_wide: plane extension is analytic, not numerically enumerated.')
++ print(f'TOTAL: PASS={checks} FAIL=0')
++ print(f'Resources: {result["seconds"]:.6f}s, {mib:.3f}MiB; caps180s384MiB.')

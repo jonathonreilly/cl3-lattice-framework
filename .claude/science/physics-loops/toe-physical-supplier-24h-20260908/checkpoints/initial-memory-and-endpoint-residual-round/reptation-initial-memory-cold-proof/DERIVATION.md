@@ -1,0 +1,15 @@
+# Original-path tag survival invariant
+
+Fix n+1 initial path entries tagged uniquely by their original coordinates0,...,n. Distinguish tag identity from physical state: all entries may initially equal the same seed state. Let u0=0 and increment u by+1 for every accepted plus shift and-1 for every accepted minus shift. Rejection changes direction but neither u nor any tag. At time t the current global coordinate window is[u_t,u_t+n]. New entries receive new tags even if their coordinate or physical configuration equals an earlier entry.
+
+An original entry at coordinate j survives iff it belonged to every window up through t. Once deleted it is never restored as an original tag. Therefore the original surviving tags form exactly the integer interval
+
+[max_{0<=s<=t}u_s, n+min_{0<=s<=t}u_s],
+
+with the interval empty when its lower endpoint exceeds its upper endpoint. Including time0 already enforces0<=j<=n. This is an identity, not a mixing estimate. Proof can be by window intersection, or induction: plus removes the old left coordinate and can raise the historical maximum; minus removes the old right coordinate and can lower the historical minimum. Newly introduced tags never enter the original set.
+
+For even n, the midpoint coordinate is u_t+n/2. If it lies in that interval, the midpoint is exactly the original tagged entry and hence exactly the initial seed physical state. If it lies outside, its tag is new; its physical configuration may still equal the seed after self moves or an excursion. Thus the criterion is sufficient for seed-state identity, and exact for original-tag survival, not necessary for physical seed visits. A retained original tag also does not say that all other configurations/caches are unchanged.
+
+The running L4 producer begins with direction+, stores accepted direction-run lengths before every rejection, and stores the unfinished accepted run. Its run list explicitly includes burn. These data determine the accepted displacement history and rejection times: process each completed run's accepted steps in its current direction, then one rejected step with u fixed and direction reversed; finish with the unfinished run. Validate sum(run lengths)+number(completed runs)+unfinished = burn*n+measured updates. For measured statistics use state AFTER every attempted update, excluding exactly the first burn*n attempts. Rejected measurement steps still contribute a repeated midpoint and must be counted. The invariant needs no face labels or actual states.
+
+For an actual all-seed initialization, the resulting measured original-midpoint-tag fraction is a deterministic lower bound on the fraction of measured configurations exactly equal to that seed. It is not a lower bound on bias in an arbitrary observable, nor proof that every new-tag sample is mixed. It may explain a concrete persistent initialization mechanism, but does not by itself isolate all sampling failures, certify an alternative warm start, or validate a new protocol. No stochastic production is needed to reconstruct it from the preserved run arrays.
