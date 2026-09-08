@@ -193,3 +193,18 @@ A new L6 flux-uniqueness proof has passed an independent cold review and is unde
 Disk remains about 63 GiB free. Thirty-nine inactive worktrees have been removed only after useful evidence was verified on remote branches; recovery receipts are in disk-cleanup-20260908. The original dirty user checkout and other worker's checkout remain untouched. Last usage check was 59% weekly consumed; no reset credits redeemed. Lock expires 2026-09-08 21:54:53 UTC. The active heartbeat runs every 30 minutes, and STATUS.md is the SSH entry point.
 
 This snapshot preserves 606 files (11680148 bytes), including completed exact replay and CT precision data, independent reviews, and the L6 theorem/kernel candidates. Resume from STATE.yaml and TWENTIETH_SHA256.json. The campaign continues after this checkpoint.
+
+
+# Twenty-first campaign checkpoint
+
+Updated 2026-09-08T21:09:19.265494+00:00. The 48-hour campaign is active through 2026-09-10 10:27:17 UTC, subject to remaining account usage. Eighteen science PRs are open; no main merge or audit verdict has been applied.
+
+PR8053 is open and mergeable at e14737cf0270e845c0b0b61dfc58469790df4eba. It certifies a unique full ground for the supplied finite4³ model at sufficiently weak nonzero electric penalty, with exact positive sixth coefficient and leading gap2c√24 u^6. The final independent isolated replay reproduces all exact results. No explicit weak-penalty radius or bulk phase is claimed.
+
+The next analytical result is broader: one minimizing flux orbit for every finite even rectangular cubic torus with each extent at least4, at zero electric penalty and uniform nonzero hopping. A reducing-kernel argument proves reflected ground matrices faithful; boundary CAR propagation then forces every equality intertwiner to be a site gauge. The original proof has independent and root PASS reviews. Its canonical exact lemma controls pass5957 predicates, isolated closure and actual semantic mutations. Final canonical review is pending. The earlier L6-only determinant package is saved in this snapshot as useful development, rather than opening a redundant PR.
+
+The next numerical run is precisely bounded and still UNLAUNCHED: freeze25eb6691 covers all1534 distinct proper masks and2038 state keys for the L6 adjacent sixth calculation. Independent census and a separate full-matrix rational calculation confirm the structure and fixed pilot result. Every mask will receive a fixed-parameter exact Newton/Woodbury bound; nonpositive bounds remain indeterminate. Root authorizes one run only after this remote archive is verified, with1200seconds including5 prior seconds,180seconds and384MiB per child. No coefficient or phase is inferred from this denominator study.
+
+The CT L4 reference adapter is being implemented with deterministic controls before any profile or physical study. A primary-source bridge to Goller–Porta2026 identifies a possible route to quantitative3D defect costs, but its2D theorem is not imported into our model. Cube flux constraints must be respected before any periodic spectral estimate is useful.
+
+Disk is about62GiB free. Thirty-nine inactive worktrees have been removed with remote recovery records. Useful unique L6-only canonical evidence is now preserved in this214-file snapshot (2776409bytes), ready for verified cleanup after push. The original dirty checkout remains untouched. Weekly usage is65% consumed,35% remaining; no reset credits redeemed. Lock expires2026-09-08 22:56:12 UTC. Read STATE.yaml, this STATUS.md and TWENTY_FIRST_SHA256.json over SSH. The campaign continues.

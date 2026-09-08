@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-even-torus-strictness-controls/missing_channel_pair.py", line 79, in <module>
+    parser=argparse.ArgumentParser();parser.add_argument('--json',action='store_true');args=parser.parse_args();signal.alarm(180);t=time.monotonic();n=run();rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024)
+                                                                                                                                                       ^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-even-torus-strictness-controls/missing_channel_pair.py", line 38, in run
+    ck(all(any(c==adj(d) for d in C) for c in C),'paired channels')
+  File "/private/tmp/toe-24h-probes-20260908/native-even-torus-strictness-controls/missing_channel_pair.py", line 35, in ck
+    if not c:raise ValueError(label)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: paired channels

@@ -1,0 +1,7 @@
+# L6 modular port — held for scope decision
+
+Implemented a standard-library-only sparse integer modular certificate based on the independently reviewed sparse construction. Added live prime/root relations, inverse-root/interpolation denominator guards, all-entry modular polynomial checks, canonical edge/half dimensions and all108 pivot guards. Characteristic-zero spectrum remains explicitly imported; modular checks do not prove it.
+
+Actual primary -OO --json run passed48297 declared predicates in0.307185958s,26.796875MiB. Exact determinant88 modulo97 andrank108 agree with both original constructions. An isolated six-source/input closure executed successfully with identical determinant, pivots and polynomial coefficients. Actual sqrt2-image14→13 mutant failed the mathematical square relation under-OO; no hash check was relied on to kill it. Changed source, diff and raw logs remain. The isolated baseline source was restored byte-identically after that mutation, and the mutant is separately preserved as WRONG_ROOT.py.
+
+Original independent implementation: native-zero-penalty-l6-strictness-cold-review/check.py. No NumPy, floating eigensolver, absolute runtime input or network dependency is required by the port. Root owns proof/note and is considering an analytic extension eliminating the need for this live modular witness. Accordingly this is a completed bounded development port, held for scope disposition; no graph, commit, push or broad pipeline was performed.
