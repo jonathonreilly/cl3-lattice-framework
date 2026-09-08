@@ -1,0 +1,31 @@
+# Independent cold review: native boundary preparation
+
+Verdict: PASS for the stated conditional mathematical construction and restricted-control obstruction. No blocking mathematical correction found. This is a research review, not an audit grade or supplier-closure claim.
+
+## Exact coverage and independence
+
+Reviewed the complete frozen DERIVATION.md, SHA256 `daa0711d449a122a592bb55c975f1d5a6973149fba20934c98c4aa4d5bd561eb`; complete check.py and operational.py; both raw JSON results; both preregistrations; hash manifest; limited open-PR search output; both actual mutant source deltas and failure outputs. `comparison_mutations.json` binds these files individually. I also read the complete current native matter-instrument note and checked the local-cycle transport source's explicit occupation-phase premise. The imported native source's finite CAR identification and bridge dictionary, rather than its apparatus implementation claims, are the load-bearing dependencies here. I did not rerun or independently audit its large historical battery/cube runners.
+
+The author implements physical 64-dimensional edge Pauli matrices. My separately written check.py implements creation/annihilation signs directly on the 32-dimensional even occupation basis, imports no author code, and only compares raw rational outputs after its independent result was written. The prescribed parameters and claimed answer were available before this cold implementation; this is not a blind parameter-discovery exercise. It executes 31 exact assertions. All six rational observables across both families agree exactly. Two actual scratch mutants fail mathematical assertions (wrong angle normalization; wrong antiunitary), with exact deltas and stderr preserved. These controls support, but do not prove, the general arguments.
+
+## Independent derivation and contested points
+
+For empty mode 5, the 45 hopping is a two-state exchange on occupations 10/01 and vanishes on 00/11. Therefore its exponential restricts to cos(theta) on the occupied-4, empty-5 success amplitude and to one on empty-4. This gives Q0 U Pin = [1+(cos(theta)-1)n4] Pin and Q1 U Pin = -i sin(theta) T45 Pin. Squaring the amplitudes gives the complete effects and q=cos(theta)^2, not q as the amplitude. These identities hold for all input coherences and arbitrary passive references on the declared input code. They are a genuine native heralded filter, not merely a matching marginal.
+
+The second readout is also physical: B4=Z04 Z45, so on the success block Z45=+1, the bridge 04 sign is exactly the occupation-4 sign. The conditional posterior is qp/(1-p+qp). Failure has mode 5 occupied and must retain its old parity sign. Dropping failure or silently resetting that mode changes the instrument.
+
+In the physical representation A and B are real and T is purely imaginary. The even-cycle phases on this bipartite graph are real. Hence every allowed hopping unitary and Z projector is real, including the updated codes after deletions. Induction over nonzero branches proves the invariant for arbitrary finite adaptive histories; mixtures and real ancillary inputs preserve it. In my occupation representation the corresponding antiunitary is D times complex conjugation, with D=(-1)^(n1+n3+n4), not bare conjugation. Direct checks confirm D conjugate(T) D=-T and reproduce the two operational state families within this real structure.
+
+For a fixed hopping H preserving a real code, conjugation exchanges exp(-beta H) and exp(+beta H). Symmetric spectra give equal partition functions. A nonzero restricted H prevents their equality for beta>0. The expectation bound follows from trace-norm duality; the exact distance to the set of all real density matrices follows from the conjugation triangle inequality and the symmetrized density. This does not imply that the minimizer belongs to the reachable subset. The dimer partition trace 225/8 and energy -23/15 independently agree. Its norm is 3 because simultaneous hopping eigenvalues +1,+1 occur in the allowed even sector; thus the stated 23/45 trace-norm lower bound is valid. The connected four-weight example and this exact dimer constant remain separate.
+
+The phase escape is correctly qualified: a non-global occupation phase can break the invariant, and the existing transport construction explicitly imports such a resource. Consequently this obstruction cannot be described as a no-go for all native controls. A global scalar phase alone would not break the density invariant; the proof excludes that false inference.
+
+## Geometry, scope, and execution limits
+
+The six edge centers are distinct physical M2 sites. The 45 and 04 sites have Manhattan separation two. Virtual graph adjacency therefore does not establish a nearest-neighbor physical two-qubit implementation. The source explicitly limits its claim to supplied bounded-support native hopping controls, and preserves this distinction.
+
+The preparation input, Pauli frame, role assignment, pulse schedule, Born/Lueders coupling, permanent deletion and work supply are all conditions. The pulse/Record calculation does not establish a complete six-physical-neighbor history-conditioned probability rule, an autonomous formation mechanism, or preparation of the Gibbs comparator. Nor does it prove a thermal measure selection or exact energy-conserving implementation. These remain substantial obligations, and the source states them.
+
+The preregistered radicand 221 is false and preserved honestly; the actual polynomial gives radicand 200 without changing the weights. The mutation failures are actual failures, not assertions of an intended outcome. Operational.py executes check.py through runpy, so its 26 additional checks are not an independent native implementation: 59 is the distinct combined assertion inventory, while separately executing both files invokes the shared 33 assertions twice. The source discloses that reuse; no correction is required, but future aggregate execution counts should retain this distinction.
+
+No author files or repository files were modified. A first local launch using the absent executable `python` failed before any mathematics; the subsequent `python3` run completed. No mathematical failure was hidden or tuned away in this cold checker.

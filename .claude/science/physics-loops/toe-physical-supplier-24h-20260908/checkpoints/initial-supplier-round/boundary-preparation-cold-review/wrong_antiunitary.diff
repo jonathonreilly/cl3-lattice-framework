@@ -1,0 +1,11 @@
+--- check.py
++++ wrong_antiunitary.py
+@@ -21,7 +21,7 @@
+ edges=[(0,1),(0,3),(0,4),(1,2),(2,3),(4,5)]
+ T={e:hop(*e) for e in edges}; Pin=E-n(5)
+ # Physical conjugation becomes sublattice parity times ordinary conjugation.
+-D=s.diag(*[(-1)**sum((x>>v)&1 for v in [1,3,4]) for x in basis])
++D=s.diag(*[(-1)**sum((x>>v)&1 for v in []) for x in basis])
+ for e,h in T.items():
+  ck('hermitian'+str(e),h.H==h);ck('antiunitary_flip'+str(e),D*h.conjugate()*D==-h)
+ t=T[4,5];c=s.Rational(3,5);b=s.Rational(4,5);q=c*c

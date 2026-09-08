@@ -1,0 +1,11 @@
+--- check.py
++++ nonunitary_angle.py
+@@ -24,7 +24,7 @@
+ D=s.diag(*[(-1)**sum((x>>v)&1 for v in [1,3,4]) for x in basis])
+ for e,h in T.items():
+  ck('hermitian'+str(e),h.H==h);ck('antiunitary_flip'+str(e),D*h.conjugate()*D==-h)
+-t=T[4,5];c=s.Rational(3,5);b=s.Rational(4,5);q=c*c
++t=T[4,5];c=s.Rational(3,5);b=s.Rational(3,5);q=c*c
+ U=E-s.I*b*t+(c-1)*t*t;Q0=E-n(5);Q1=n(5)
+ ck('full_filter',Q0*U*Pin==(E+(c-1)*n(4))*Pin)
+ ck('full_failure',Q1*U*Pin==-s.I*b*t*Pin)

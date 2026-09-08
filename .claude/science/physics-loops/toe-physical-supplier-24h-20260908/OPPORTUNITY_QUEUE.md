@@ -1,0 +1,65 @@
+# Source-bound opportunity ranking — 2026-09-08
+
+Recommendation: keep the native Record supplier as the lead **only when it means deriving or falsifying a concrete preparation/condition or closure mechanism**. Another generic prepared-state mismatch, programmable writer, relay, Born grading theorem, or bigger gravity bench should not be the campaign's main result. The strongest alternative is an actual sourced variational-response bridge, but the inspected gravity chain is farther from physical identification than a “metric already obtained” summary would suggest.
+
+This is prioritization, not proof review or a status grant. Main2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307 is the source pin; live main matched it during this read. Planning febbef8185dbe2c48fd261065f2aee2d2fcfdff6 also matched live. No repository or GitHub mutations occurred. Formal audits, new primitives, and the parked flavor tail are outside this assignment.
+
+## 1. A physical local preparation/condition map for the actual edge Record instrument
+
+**Missing obligation:** identify the actual six-neighbor condition C_e and admissible preparation/history domain D for which the complete native instrument probabilities factor through C_e, then identify the resulting Record coupling. This is narrower than selecting all dynamics or Born values.
+
+**Exact prior:** main native edge-instrument note, Target/supplied meaning and Theorems1–2; newly landed main LIVE_M2_RECORD_SUFFICIENT_JOINT_LAW_STATE_ONTOLOGY_FORK note, Sections3–5 and RoutesA–D; live PR7047 equations4,5,9 and Section7. The main native source explicitly supplies placement, code, initial state, Born/Lueders events and schedule. PR6358's corrected scope is now on main; the old generic same-current-Record-map/different-preparation obstruction is already covered. PR7047 separately requires the Admissibility marginal to equal Tr(E_cj rho_eta), and gives equal-marginal off-diagonal couplings, so marginal equality alone is insufficient.
+
+**Concrete mechanism/test:** root's actual midpoint-square fixed-vacuum two-event law is a useful first discriminator, but it has already been examined in the preceding scratch round. The next increment must be a specific native preparation or relay channel whose complete history, auxiliary output and actual physical neighborhoods are explicit. Test all its allowed preparations and both signs, including coherent inputs if in D; do not choose D after outcomes. Require the channel to establish sufficiency from source-authorized data rather than define C_e to be the desired probability. A local relay adds readable Records and may emulate the target marginal without implementing the native instrument; that is not physical selection.
+
+**Transitive conditions:** ordinary tensor composition, BKSF even-CAR dictionary, periodic role placement and Pauli basis, event typing, admissible D, any auxiliary preparation and control. Actual physical edge centers are2v+e_a; graph incidence is not physical nearest-neighbor adjacency. Formation occurrence/rate is separate from conditional mark probability. Born values remain supplied unless separately derived.
+
+**Success/failure:** success retires one declared instrument/condition identification on a genuine source-grounded domain. Failure names the missing condition/preparation or formation-instrument premise. Repeating the already-known unrestricted failure is not a new milestone. Highest priority because its finite witness is concrete and its unresolved identification feeds both physical observables and action interpretation.
+
+## 2. A native boundary preparation/sewing mechanism selecting the contraction
+
+**Missing obligation:** supply which physical boundary operation yields a trace, parity-selected trace, matrix element or other functional of a fixed native matter transfer. This is an action/measure interface before any charged-lepton or flavor application.
+
+**Exact prior:** main native instrument Theorem1 excludes global odd parity from the unaugmented connected carrier. Main AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION explicitly requires both physical action and measure and has no premise weight. The previous scratch action-measure probe supplies an independently checked finite discriminator, not landed physics: four-mode square even trace differs from full Fock trace even after dimension normalization; one inert parity-reservoir mode realizes the latter at equal boundary weighting.
+
+**Concrete new mechanism/test:** physically derive the reservoir boundary state or sewing operation from the same local preparation law being investigated in rank1, keeping matter hopping fixed. Compare the whole nondegenerate transfer family, not one thermal number. Its biased boundary control has Z_q=[(1+q)det(I+A)+(1-q)det(I-A)]/2; normalized bias disappears on families with det(I-A)=0, so use a family containing a nonzero parity-twist member. A declared q=1 or redefining minus-log of measured weights is not a selector.
+
+**Transitive conditions:** native graph/code plus one additional physical edge-qubit role, matter H, transfer parameter, actual boundary contraction and readout; no M4 single-site enlargement. The previous exact q witness used a mathematical trace, not a physical ensemble theorem. Interpreting q as a boundary chemical potential changes the complete action/closure even if matter H stays fixed.
+
+**Success/failure:** success derives a closure map from an independently pinned physical mechanism; a different derived contraction is a valid result. Failure isolates the action/measure supplier rather than restating det versus squared-det algebra. This is materially different from rank1: it concerns the unnormalized functional and parity-sector summation, not solely the local conditional mark law. Do not restart the parked flavor program; no species or AC endpoint follows automatically.
+
+## 3. Actual gravity source/action response, before another metric bench
+
+**Missing obligation:** derive the sourced physical action and its response operator, with the same source and test coupling, rather than impose a scalar potential or identify a finite cell matrix as a metric.
+
+**Exact source warning:** main GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE, Claim/Proof1–3, proves a finite variational identity after assuming A[phi;rho]=1/2<phi,Hphi>-<P0rho,phi>, H=-Delta. Its source-density uniqueness is conditional on locality, diagonality, positivity, phase invariance and normalization. Its dependency SELF_CONSISTENCY_FORCES_POISSON is now explicitly corrected to a supplied finite solver comparison: no axiom selects Poisson; three matched density-response columns have best-scalar residuals0.9987–0.9996 against Green columns. Therefore the older phrase that this parent supplies the operator cannot be reused as an established physical supplier. GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE still supplies the finite-core1/(r+0.1), normalization, propagation/readout and generated connectivity.
+
+**Current open gravity evidence:** live PR7997@774374271180405d5c2522010511adbd2c906236 has exact finite Bloch/pencil identities and rescalings. Its N0, Imports, READINGS and N6 explicitly leave cell covariance inheritance, assembly, reading, cell, parameters and physical meaning unselected. It denies spacetime/dynamics/gravity. PR7993's frontmatter and N0 agree; its deeper proof is not reviewed here. The unlanded dependency stack reaches Blocks105,209,211,213–218; a heading or tree ancestry supplies none of those hypotheses.
+
+**Concrete mechanism/test:** first pin a genuine native source perturbation and a test-source observable on the finite carrier. Derive the response as a second variation of ONE independently specified scalar action or boundary functional; check symmetry/reciprocity, sign, zero-mode treatment and source/test normalization on two distinct sources. Compare the actual response kernel to the proposed inverse Hessian, not an integrated susceptibility fit. Use the former sign-indefinite response and two assembly/readout choices as adverse controls. A physical source-to-cell map that selects the same quadratic form in response and propagation would be a substantive advance. A separately chosen quadratic action yielding Poisson by differentiation would only reprove existing conditional algebra.
+
+**Transitive conditions:** source coupling, action/measure, test readout, positive/neutral domain, any continuum scaling and physical metric identification. The current material does not independently supply them. This could overtake rank1 only if a source-grounded candidate action and source map are actually available; increasing the bench extent or enumerating another covariant cell alone cannot do so.
+
+## 4. Native observable correspondence for a spatial gauge source
+
+**Missing obligation:** identify a physical native Record observable and its source coupling with a specified gauge-loop/source observable, rather than program an SU3 label into an encoded device.
+
+**Exact prior:** main GAUGE_WILSON_CUBE_SLAB_CHARACTER_MIXING, Exact finite model and full stripping identity, uses supplied normalized Haar, twelve SU3 links, Wilson spatial/temporal weights and constant-spectator source embedding. D=S^-1 I*T I S^-1 is defined on the full class-function space before compression; finite recurrence exponentiation is not interchangeable. Its positive mixing is actual mathematics of that supplied model, not selection of the model. The native edge source instead has single-site Z Records with surviving-CAR parity meanings. These are different carriers and observable dictionaries.
+
+**Concrete first test:** for one physical native loop and a proposed source map, compare complete source-perturbed Record laws (not just a numerical flux label) and the composition of two overlapping loop operations. Require preservation of the original native code, local readout and joint law; use a support-identical but weight-different closure, changed environment embedding and noncommuting overlap as adverse cases. A map chosen only to match a single loop value fails. Before numerical work, name which retained/native premise licenses the proposed link group and source coupling.
+
+**Transitive conditions:** native composition/code/roles, supplied gauge Hilbert space or a justified reduction, Haar/action choice, source embedding and readout/formation, full-space versus compressed multiplication. No such correspondence was located in the inspected scope. This is a high-value but lower-readiness alternative; another supplied-Wilson limit, gap or finite cutoff would not answer it.
+
+## 5. Occurrence architecture from a fixed action, with a clock-free discriminator
+
+**Missing obligation:** derive actual formation occurrence/no-jump behavior and permanent storage from the same independently fixed physical action, rather than append a chosen marked hazard.
+
+**Exact prior:** live PR7837@07bf3d389b1ef4f271b59ea22f10752d0ca210e4, complete note, already gives same-qubit filtering versus orthogonal-blank absorption and the two-site1/2 versus4/9 race. Section9 lists action, transfer-to-flux, effects, history, common rate and freshness as supplied. The three-qubit even block is algebraic capacity, not a physical local compiler. Its pairwise wall-independence table has not been independently validated in this prioritization and is not adopted.
+
+**Concrete new mechanism/test:** choose one actual native blank/Record realization with a physically specified reservoir interaction, derive both jump and no-jump maps from it, retain all failures and prior Records, and compute the first-event law on two co-enabled sites. Compare with both existing architectures without assuming exponential waiting or resetting after a miss. Merely reproducing the old race or choosing the trace-flux rule is duplicate work. A result identifying one architecture from the actual supplied interaction is conditional progress; identifying that interaction as physical remains an additional obligation.
+
+**Transitive conditions:** microscopic Hamiltonian or generator, reservoir state/limit, distinct blank or external status, readout codec, eligibility, local communication, energy and fresh capacity. No absolute time calibration is needed for the race, but common-rate and joint-exposure assumptions do not disappear.
+
+## Decision rule for the 24-hour campaign
+
+Give the Record/preparation and boundary-closure mechanisms the first serious proof stretch. Set an early stop on mere implementation improvements: if every proposed selection is an inserted state, controller table, trace or rate, keep the finite results but do not call them supplier closure. Keep gravity source-response as the strongest independent alternative, with its first step a precise source/action correspondence—not another cone computation. The four axioms alone do not specify these values; that observation is already in the sources and should not consume the campaign as another generic underdetermination note.

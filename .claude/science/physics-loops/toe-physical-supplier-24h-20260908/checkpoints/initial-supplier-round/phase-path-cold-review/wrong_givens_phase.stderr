@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/phase-path-cold-review/wrong_givens_phase.py", line 63, in <module>
+    close(f'f{family}_g{step}_phase_compilation',gate,pulse(J,c,-s))
+  File "/private/tmp/toe-24h-probes-20260908/phase-path-cold-review/wrong_givens_phase.py", line 28, in close
+    err=float(np.linalg.norm(a-b));residuals[name]=err;check(name,err<tol)
+                                                       ^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/phase-path-cold-review/wrong_givens_phase.py", line 26, in check
+    if not condition:raise AssertionError(name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: f0_g0_phase_compilation

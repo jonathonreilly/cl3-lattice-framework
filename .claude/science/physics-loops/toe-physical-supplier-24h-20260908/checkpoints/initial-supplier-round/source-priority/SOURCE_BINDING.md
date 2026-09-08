@@ -1,0 +1,11 @@
+# Scope and provenance
+
+Source main and live main:2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307. Planning local/live ai/execution:febbef8185dbe2c48fd261065f2aee2d2fcfdff6. Read planning AGENTS, TOE_SCORECARD and CAMPAIGN_STATUS; BACKLOG_STATUS was read as an assignment/history map with one display-truncated passage, not as science. Captured all four requested planning files plus the complete inventory in this folder. Planning counts and dispositions are not independently recomputed audit results.
+
+LIVE_BINDINGS.json records actual gh PR checks and exact-head source retrieval. All five selected live heads match the planning inventory and remain OPEN at read time. Downloaded sources are preserved. SOURCE_COVERAGE.json distinguishes complete notes, targeted section reads, prior exact-byte complete-read reuse and retrieval-only material. No theorem, source runner, audit or transitive closure was independently validated by this prioritization pass.
+
+The current corrected main6358 and indexed-menu Born sources landed after the preceding probe; their earlier open-PR reviews cannot be used as blanket review coverage. The ranking uses the current6358 scope/route anchors, current planning disposition and unchanged7047 exact source rather than asserting full reuse. Gravity7997's upstream Blocks105/209/211/213–218 are explicit unreviewed transitive imports in this task. The old gravity source's retained-status wording is not current authority; the planning snapshot reports unaudited science and no verdict is granted here.
+
+Standing defaults were read and applied, not reopened. C-add/POS/LOC, statistical bridge, domain enlargement and the flavor tail are not silently adopted. No reserved-source science was used as a new premise, no owner decision is requested, and no repository/GitHub mutations or workers were launched. Writes are confined to this assigned folder.
+
+The previous action-measure and relay raw checks are used only as identified scratch comparator evidence, with independent reviews already delivered in the preceding session. Their mathematics does not supply a physical action or formation law. The ranking is a prospective research judgment, not a novelty theorem or a proof that alternatives are impossible.

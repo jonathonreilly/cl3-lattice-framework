@@ -1,0 +1,19 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sympy/matrices/matrixbase.py:2839: SymPyDeprecationWarning: 
+
+non-Expr objects in a Matrix is deprecated. Matrix represents
+a mathematical matrix. To represent a container of non-numeric
+entities, Use a list of lists, TableForm, NumPy array, or some
+other data structure instead.
+
+See https://docs.sympy.org/latest/explanation/active-deprecations.html#deprecated-non-expr-in-matrix
+for details.
+
+This has been deprecated since SymPy version 1.9. It
+will be removed in a future version of SymPy.
+
+  return self._eval_scalar_mul(other)
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/local-record-supplier/check.py", line 34, in <module>
+    ck('reference matrixunit '+str((i,j,a,b)),actual==S.kronecker_product(P0,f)*(i==j))
+                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~
+TypeError: unsupported operand type(s) for *: 'ImmutableDenseMatrix' and 'bool'

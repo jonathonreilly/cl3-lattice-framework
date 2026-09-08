@@ -1,0 +1,1 @@
+First execution failed symbolic effective measured effect: SymPy knew t>=0 but not t<=1, so conjugate(sqrt(1-t²)) was not reduced. The proposed channel is defined only0<=t<=1. Repair introduces independent real amplitude a and substitutes a²=1-t² in the adjoint expression. This changes symbolic domain handling, not the frozen channel or target coefficients.

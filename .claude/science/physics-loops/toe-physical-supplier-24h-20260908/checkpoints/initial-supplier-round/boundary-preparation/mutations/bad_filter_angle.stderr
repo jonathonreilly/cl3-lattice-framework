@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/boundary-preparation/mutations/bad_filter_angle.py", line 26, in <module>
+    ck('used_leaf_cubic',t**3==t);ck('leaf_unitary',U.H*U==E);ck('leaf_unitary_real',s.conjugate(U)==U)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/boundary-preparation/mutations/bad_filter_angle.py", line 22, in ck
+    def ck(k,b):checks[k]=bool(b);assert b,k
+                                         ^
+AssertionError: leaf_unitary

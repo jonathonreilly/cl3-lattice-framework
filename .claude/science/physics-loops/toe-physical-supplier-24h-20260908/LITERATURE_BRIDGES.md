@@ -1,0 +1,5 @@
+# Literature scope
+
+Gaussian mode diagonalization and imaginary-time state preparation are established mathematical/quantum-algorithm tools; the native implementation is not claimed as their invention. Initial primary search found Jiang et al., Quantum Algorithms to Simulate Many-Body Physics of Correlated Fermions, Phys. Rev. Applied9,044036 (2018), [primary abstract and journal reference](https://arxiv.org/abs/1711.05395), and the relevant fermionic Gaussian preparation literature. Detailed relevant proof obligations here are derived directly and independently checked rather than delegated to a universality slogan.
+
+The local reset author cites and reads Pollock et al., Operational Markov Condition for Quantum Processes, arXiv1801.09811; causal-break machinery is acknowledged prior art. Current source/action and phase-resource workers are separately checking primary Kubo/Schwinger-Keldysh and imaginarity resource literature. Their complete citations and use classifications remain in their own source-bound artifacts until final integration. No literature number is treated as a derived physical parameter.

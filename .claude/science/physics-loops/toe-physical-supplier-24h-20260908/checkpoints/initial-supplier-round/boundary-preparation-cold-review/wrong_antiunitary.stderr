@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/boundary-preparation-cold-review/wrong_antiunitary.py", line 26, in <module>
+    ck('hermitian'+str(e),h.H==h);ck('antiunitary_flip'+str(e),D*h.conjugate()*D==-h)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/boundary-preparation-cold-review/wrong_antiunitary.py", line 8, in ck
+    assert b,k
+           ^
+AssertionError: antiunitary_flip(0, 1)
