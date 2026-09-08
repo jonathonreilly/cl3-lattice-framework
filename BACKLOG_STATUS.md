@@ -1,6 +1,6 @@
 # Backlog review and landing — current handoff
 
-Assignments updated on 2026-09-08T10:06:41.415201+00:00; landing counts remain after wave26. Main is `2838092d748d11791ddb420acf8c1a4d7da30400`.
+Assignments updated on 2026-09-08T10:26:00.612094+00:00; landing counts remain after wave26. Main is `2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307`.
 The owner has fixed this cleanup to the **original 254 PRs**, captured at
 13:10:39 UTC. Exact membership and original heads are in `BACKLOG_CUTOFF.json`.
 New arrivals are excluded. Formal audit waits until a solid TOE.
@@ -36,7 +36,14 @@ PRs. These are different measures; neither note counts nor routing closures are
 counts of original scientific scopes covered on main. Twenty-five batches passed
 one combined validation each. Wave14 required a repaired second attempt after a
 real missing-input failure; its first attempt is preserved in
-[the hold evidence](backlog_evidence/wave14-hold/INDEX.json). The applied ledger remains unchanged.
+[the hold evidence](backlog_evidence/wave14-hold/INDEX.json). These source landings applied no audit verdicts.
+
+The external nightly pipeline commit `2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307`
+subsequently materialized the 95 pending ledger entries. Main now tracks 4,570
+rows: 4,198 unaudited science rows and 372 meta rows. No existing audit/effective
+status or scientific source changed. The same eight carrier candidate files are
+composed on that new base; the original reviewer confirms this current-main
+binding before a gate or landing. This refresh changes no backlog disposition.
 
 ## Landed source history
 
@@ -233,8 +240,9 @@ on remote main before three closures. No formal audit or grade was applied.
 | Landed | #7883/#7900/#7902/#7904 sea and corner criteria | Complete corrected conditional source accepted, all 108 original IDs and historical evidence preserved. Physical probability, readout, formation and clock suppliers remain open. |
 | Landed | #7874/#7878 free and interacting flux-sector selection | Complete corrected conditional source accepted. All 37 original IDs retained; least-branch, finite perturbative and physical interpretation domains explicit. |
 | Landed | #7879/#7881/#7885 vacuum and energy response | Complete corrected conditional source accepted; 73 original IDs retained, H3 strengthened and 12 controls added. Both #7881 revisions and all original data preserved. |
-| Final reviewer backlog_batch_contract | #7869/#7880 cubic carriers and role marking | W27 eight-path composition frozen; author packet sealing. Same original reviewer confirms exact final source and all twelve fixes, then root runs one gate. Not yet landed. |
+| Final reviewer backlog_batch_contract | #7869/#7880 cubic carriers and role marking | W27 eight-path composition frozen; author packet sealed and root verified. Same original reviewer confirms exact final source and all twelve fixes, then root runs one gate. Not yet landed. |
 | Checkpointed reviewer backlog_batch_contract | #7918/#7928/#7934 support and readout | Original review resumes after carrier confirmation. Genuine original executions and witness/frontier/fibre/period controls preserved; no unit acceptance yet. |
+| Original reviewer backlog_draft_triage | #7939/#7977/#7982 role laws and matter readout | Complete original source, used dependency and finite-claim review dispatched on current main. No scientific verdict or source repair yet. |
 | Reconciliation complete | Forty-two direct landings and 110 other closures | All 152 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Original reviewer backlog_8001_review | #6377 and eleven consolidated original scopes | Resumed complete source/supplier review from checkpoint; original stale-authority/moved-note failures preserved, no whole-unit acceptance. |
@@ -322,7 +330,7 @@ progress. Incoming submissions are outside this cleanup; they do not expand its 
 
 `OPEN_PR_INVENTORY.json` pins queue heads/files; `NEXT_REVIEW_UNITS.json` holds
 assignments; `BACKLOG_CONSOLIDATIONS.json` records complete transferred obligations.
-`MAIN_STATUS_SNAPSHOT.json` records the unchanged applied ledger. New generated
+`MAIN_STATUS_SNAPSHOT.json` records the current unaudited ledger. New generated
 rows and all other generated audit/status output were preserved externally and
 stripped. `backlog_evidence/wave23/INDEX.json` binds final reviews, validation and
 closures. Source counts and unaudited planning records are not TOE completion.
