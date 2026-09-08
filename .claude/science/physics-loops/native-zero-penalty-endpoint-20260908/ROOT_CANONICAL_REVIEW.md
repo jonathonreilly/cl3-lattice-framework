@@ -1,0 +1,7 @@
+# Root complete canonical review
+
+PASS for final note c689445a96134275fe75190ca3858fc61cc59d323393182ad549044a8c3c4c04, primary b0779eccd48c7e49c68afc067ee3fa6f1846a5e0f0ee4784025dcca1a89e01a7 and complete new Gaussian-rational helper b32119b563feeca64ee7e823e97206ec87b32dc482184b83b1a81508bfb3c693. Root read full note, primary, exact helper and port receipt, and complete independent canonical review c1668ee7. Earlier full gauge-isometry proof and508 independent controls remain source-bound provenance, not rerun or added to live80.
+
+Gauge-orbit dimension, global even matter parity, factor2 in K, active/spectator/zero-mode counting, characteristic-polynomial recursion and native/CAR moment comparison are consistent. Three genuine mutation failures discriminate K, Gauss domain and multiplicity; spectra alone would not discriminate odd parity here. Five-file isolated closure matches scientific rows. Actual mathematical checks execute under -OO.
+
+Graph build and manifest writer both exited zero; exact HEAD comparison adds one node and its two explicit parent links, with no old changes. No cubic flux-minimum, nonzero-U phase, physical particle selection, preparation or TOE conclusion is imported. Subsequent root/agent research on those residuals is separate and absent from this fixed-source block. Full combined pipeline, strict lint, changed-evidence landing checks and formal independent audit remain for a real main-landing candidate.
