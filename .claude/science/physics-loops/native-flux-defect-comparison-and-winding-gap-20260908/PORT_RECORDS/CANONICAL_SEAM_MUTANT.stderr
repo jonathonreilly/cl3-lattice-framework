@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-flux-robustness-port/canonical_seam_mutant/scripts/native_flux_defect_comparison_and_winding_gap_2026_09_08.py", line 31, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-flux-robustness-port/canonical_seam_mutant/scripts/native_flux_defect_comparison_and_winding_gap_2026_09_08.py", line 16, in main
+    geometry=runpy.run_path(str(root/AUDIT_INPUT_PATHS[-2]))['result'];combinatorics=runpy.run_path(str(root/AUDIT_INPUT_PATHS[-1]))['result']
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/private/tmp/toe-24h-probes-20260908/native-flux-robustness-port/canonical_seam_mutant/scripts/native_flux_defect_geometry_2026_09_08.py", line 56, in <module>
+    ck(hol==-1,'canonical real hopping winding');ck(bare==(-1)**(L//4),'untwisted period-four winding')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-flux-robustness-port/canonical_seam_mutant/scripts/native_flux_defect_geometry_2026_09_08.py", line 9, in ck
+    if not c:raise RuntimeError(label)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: canonical real hopping winding
