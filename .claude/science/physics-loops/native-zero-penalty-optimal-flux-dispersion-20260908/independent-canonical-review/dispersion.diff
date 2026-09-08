@@ -1,0 +1,19 @@
+--- /private/tmp/toe-native-zero-penalty-optimal-flux-dispersion-20260908/.claude/science/physics-loops/native-zero-penalty-optimal-flux-dispersion-20260908/originals/native-zero-penalty-pi-dispersion/check.py
++++ /private/tmp/toe-native-zero-penalty-optimal-flux-dispersion-20260908/scripts/native_zero_penalty_dispersion_exact_2026_09_08.py
+@@ -1,7 +1,8 @@
+-import itertools,json,time,resource,hashlib
++import itertools,json,time,resource,hashlib,signal
+ from fractions import Fraction
+ from pathlib import Path
+ start=time.monotonic(); count=0
++if __name__=='__main__':signal.alarm(180)
+ def require(p,s):
+  global count
+  count+=1
+@@ -54,4 +55,5 @@
+   rk=rank(K,n);require(rk==n-(8 if tau==(-1,-1,-1) else 0),'exact zero mode rank')
+   results.append({'L':L,'tau':tau,'rank':rk,'active_zero_modes':n-rk})
+ require(results[0]['rank']!=results[7]['rank'],'seam omission adverse distinguishes ranks')
+-print(json.dumps({'predicates':count,'rows':results,'seconds':time.monotonic()-start,'rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},indent=2))
++out={'predicates':count,'rows':results,'seconds':time.monotonic()-start,'rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
++if __name__=='__main__':print(json.dumps(out,indent=2))
