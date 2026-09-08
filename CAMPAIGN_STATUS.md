@@ -52,8 +52,8 @@ joint-law selection remain open.
 
 1. The #6371 and #6358 consolidated Record units and the combined
    #7848/#7849/#7942 source are on main with reviewed corrected scopes.
-   Compose sealed #7888/#7890 repairs for original-reviewer final confirmation;
-   finish #7889/#7891 original review and route narrow repairs.
+   Finish final confirmation of the eight-path #7888/#7890 composition;
+   continue #7889/#7891 narrow repairs and #7896/#7909 original review.
    #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
    reserved-source hold. Closure reconciliation is complete; 77 pending closed
    scopes remain at seven successors. Preserve the fixed 254 and all reservations.

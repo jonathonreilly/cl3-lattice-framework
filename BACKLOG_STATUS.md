@@ -139,8 +139,9 @@ audit or physical action, statistics, formation, time or probability law.
 | Held | #6515 including #6485 dressing/sector signature | Actual proof chain reaches reserved #6379 through Blocks 110/109/108/107/106/105. Eight original additions and all obligations preserved; keep #6515 open. No execution or full science verdict. |
 | Landed | #7942 pair-update parity/winding | Complete corrected finite scope accepted. Positive-lag validation, general mixing and physical identification remain open; procedural packet pending. |
 | Landed | #7848/#7849 finite Noether and transfer results | Complete conditional algebra and Gram/instrument boundaries accepted with all 46 histories preserved. No physical dynamics or Record law supplied. |
-| Coordinator; original reviewer backlog_draft_triage | #7888/#7890 finite matter kinematics | Seven-path author correction sealed with genuine 22/0 and 36/0 caches; complete root author verification done. Composition and original-reviewer final confirmation next. |
-| Original reviewer backlog_8001_review | #7889/#7891 shifting records and confinement | Complete original source and actual premise closure review active at the pinned open heads; no author fixes, verdict or landing yet. |
+| Original reviewer backlog_draft_triage | #7888/#7890 finite matter kinematics | Exact eight-path source/manifest tree under final affected confirmation; seven author bodies and all existing main source preserved. Two final caches22/0 and36/0; final verdict pending. |
+| Repair author backlog_batch_contract; original reviewer backlog_8001_review | #7889/#7891 shifting records and confinement | Complete original review found ten P2 and one P3 findings despite44 passing checks. Root verified all90,087 maps and130 artifacts; narrow corrections active. |
+| Original reviewer backlog_8001_review | #7896/#7909 spatial and record-time walls | Complete original source/premise review active at pinned heads; different raw parents explicitly preserved. No author changes or source verdict. |
 | Reconciliation complete | Twenty-three direct landings and 110 other closures | All 133 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
@@ -171,6 +172,11 @@ The pre-landing combined #7848/#7849/#7942 target and source-bound evidence are 
 [the wave19 handoff](backlog_evidence/wave19-handoff/INDEX.json). All 57 selected source
 paths retain their frozen author bytes; the manifest adds only three bounded nodes
 and three current-memo edges. Final independent PASS, validation, landing and updated counts are recorded in the wave19 evidence.
+
+The next exact matter composition and original shifting-record review are bound in
+[the wave20 handoff](backlog_evidence/wave20-handoff/INDEX.json). Its two new bounded
+nodes have four contextual memo/gate links; all 4,837 existing nodes are unchanged.
+The shared counts above remain those of landed wave19 until final review and landing.
 
 ## Avoid recurring work
 

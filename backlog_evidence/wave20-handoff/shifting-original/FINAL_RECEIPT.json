@@ -1,0 +1,750 @@
+{
+  "schema_version": 1,
+  "sealed_utc": "2026-09-08T04:28:20.471958+00:00",
+  "verdict": "CHANGES REQUIRED",
+  "grade_scope": "Independent original-source mathematical review only; no audit/retention/main acceptance applied",
+  "findings": {
+    "P2": 10,
+    "P3": 1
+  },
+  "refs": {
+    "main": "06816d119cd73ad40d4ef332a6e6e7b2e61af0db",
+    "planning": "b33a792ba7a30862b8fe0fb479b76b2418e0f934",
+    "heads": {
+      "7889": "96159291ac4159976fd311d69d2e6a63d7bc9d27",
+      "7891": "1dbf457cc3695b01890baf8d43de4f3708450bc0"
+    }
+  },
+  "original_base": "36fe57a7a784df31bc2178c4b94dfc7caaa5d094",
+  "selected_tree": "b9d384538a873819f136ad060655b6223e1a83a2",
+  "later_main_compared": "d81f3c22117522411c20fb6c38eef5874c4765ae",
+  "later_main_actual_context_exact": true,
+  "source_paths": [
+    {
+      "pr": "7889",
+      "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "c8f8af7f5330a91f8783d7e4a1607f3f0996d76e",
+      "sha256": "5750cd32f30f44dabf212b21e86d4ca2e7abd8a678991bd31b1bed07bf5adf26",
+      "lines": 327
+    },
+    {
+      "pr": "7889",
+      "path": "logs/runner-cache/shifting_position_records_exact_diffusion_law_check_2026_09_03.txt",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "254c8742f27b6438a9523bf07900f09a0726b6bc",
+      "sha256": "fa49e901746e600c66b5fe35740642363cd264bdb3e65d92a820fa14aa466b30",
+      "lines": 36
+    },
+    {
+      "pr": "7889",
+      "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "f51192ca2e8d270e218bd51e114bca11e2c6f47e",
+      "sha256": "ffb71d51b3e5fbc83cdabaf017e74b651e6c079f2640a4ad016b24a4033cbe4a",
+      "lines": 1098
+    },
+    {
+      "pr": "7891",
+      "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "00e4b32142cfadb8407745636b1121a69fd8f056",
+      "sha256": "a8d4e8191dd76e169fe3220f9137dbc5606053e6347be96c46cdb0783bece98c",
+      "lines": 325
+    },
+    {
+      "pr": "7891",
+      "path": "logs/runner-cache/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.txt",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "c5d1e87fd2eb8098b2c6396e24007e7c7759596d",
+      "sha256": "54e7296478e2cb3751ca5cbf68d0fcc1746a83d6eae3da93502351d4139cdcfc",
+      "lines": 34
+    },
+    {
+      "pr": "7891",
+      "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "mode": "100755",
+      "type": "blob",
+      "blob": "ce500691b4c2521254dc4ef26e9dae6d3d879009",
+      "sha256": "e5fc2b6ff59a9887cce9fc54858726fa471d617c9c3f2fbd760b8dfaab13ba14",
+      "lines": 862
+    }
+  ],
+  "source_and_maps": "FINAL_SOURCE_VERIFICATION.json; FINAL_MAP_VERIFICATION.json",
+  "original_primary_runs": {
+    "7889": "23/0 once; 22.064 s",
+    "7891": "21/0 once; 9.417 s"
+  },
+  "mutations": "MUTANT_CONTROLS.json; MUTATION_SOURCE_BINDINGS.json",
+  "full_read": "652 note + 1960 primary + 70 cache lines; all eleven theorem families and cross-cutting claims",
+  "actual_closure": "Two standalone primaries, zero helpers and mutable data inputs; all proof/model premises reviewed within explicit conditional scope",
+  "reserved_actual_dependency_intersection": [],
+  "worktree_scientific_source_unchanged": true,
+  "all_pinned_main_leaves_preserved": 28739,
+  "map_rows_rechecked": 90087,
+  "artifact_count": 130,
+  "artifacts": [
+    {
+      "path": "ACTUAL_CLOSURE.json",
+      "bytes": 3165,
+      "sha256": "4cd828e955c8099f0bdaae495cd602ad23ad826d69cb5913a6bf8416bc21af2e"
+    },
+    {
+      "path": "CLAIM_DISPOSITIONS.json",
+      "bytes": 7038,
+      "sha256": "a8b62dded26815c06b76e71bbef9dac12cc95da8da6c43e0b25e5a5cc3822413"
+    },
+    {
+      "path": "COLD_READ.json",
+      "bytes": 710,
+      "sha256": "220dda0aa2e2d5fe00d89550a3fa24f1074fedfad1687e5da7d68bda13d6ec4f"
+    },
+    {
+      "path": "COMPLETE_ENDPOINT_MAP.jsonl.gz",
+      "bytes": 1884244,
+      "sha256": "7f272104d0421e3d2a1041b1ede802232ea0cb057eb6886f70d208166bc5fc23"
+    },
+    {
+      "path": "COMPLETE_MAP_RECEIPT.json",
+      "bytes": 336,
+      "sha256": "966f3c0821f62a339275fb33bc7cbfc7e183454b011a928cc5cd749747f098dd"
+    },
+    {
+      "path": "COMPLETE_ORIGINAL_7889_MAP.jsonl.gz",
+      "bytes": 1592036,
+      "sha256": "73c149fd94db64d9c8e341154666f143527e6cdf8c6d6b03e9ee0f3641083810"
+    },
+    {
+      "path": "COMPLETE_ORIGINAL_7891_MAP.jsonl.gz",
+      "bytes": 1592036,
+      "sha256": "7e7f96abc25146068f8c83d45d700e0ad506f74ab7ca1689e60440125cf4b596"
+    },
+    {
+      "path": "CURRENT_CONTEXT_BINDING.json",
+      "bytes": 3979,
+      "sha256": "eae1fa75ff4c43e228f8719b3a1df101df619bcdeb0897494a28d4869c235074"
+    },
+    {
+      "path": "FINAL_MAP_VERIFICATION.json",
+      "bytes": 306,
+      "sha256": "b4c6db886b35a5e94192c52abaf4d88a4378fb1a5ba94246c46eed10ae321260"
+    },
+    {
+      "path": "FINAL_SOURCE_VERIFICATION.json",
+      "bytes": 3465,
+      "sha256": "09cc00cbed3a3cbecf80fd436a94075806e77fe0f90b722c78a99bf1bb21cb85"
+    },
+    {
+      "path": "FINDINGS.json",
+      "bytes": 25383,
+      "sha256": "00a9f10b053dcb1d259310dbbe01455fba0666ba88a41be647e4c1c490e54f23"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 3097,
+      "sha256": "4872fefe32abf28e0f3a7d45cc2712d056a5c08069bd75786f0262b2f86d3380"
+    },
+    {
+      "path": "INDEPENDENT_CONTROLS.json",
+      "bytes": 4198,
+      "sha256": "9e1371e8a4edaf698ea4ad92dbf8c32f9fe3bcb493ab23bf89143130b5081b8b"
+    },
+    {
+      "path": "INDEPENDENT_PAIR.json",
+      "bytes": 703,
+      "sha256": "d86b031f641f7e843b01589393ab68d2d9aa0b87e27ec921631500ec65b19719"
+    },
+    {
+      "path": "LATER_MAIN_INTERACTION.json",
+      "bytes": 9221,
+      "sha256": "d8f66f95f52ee9523d06ca4ac0009dd05d636f794c185b11e2097b7b5dd344b3"
+    },
+    {
+      "path": "LIVE_PR_7889.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "LIVE_PR_7889.stdout",
+      "bytes": 324,
+      "sha256": "6d1a244768015094781f18a814d4bb31b586c5d01c0defdf8926705f52903b51"
+    },
+    {
+      "path": "LIVE_PR_7891.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "LIVE_PR_7891.stdout",
+      "bytes": 332,
+      "sha256": "7e9b9044388f23daa6102ebaa065e4559f4b222adf3322405552d168aab8eddb"
+    },
+    {
+      "path": "MERGE_BASE_CHECK.json",
+      "bytes": 147,
+      "sha256": "1d729cc62b374f535bb02ad4b6ee005d55e1ff1f211ab6a024f97546d685c0e8"
+    },
+    {
+      "path": "MUTANT_CONTROLS.json",
+      "bytes": 5112,
+      "sha256": "d04bc7133f444f0fefb81ed5dfea7dd1932e9b9baae21439633c84de34d01d86"
+    },
+    {
+      "path": "MUTATION_SOURCE_BINDINGS.json",
+      "bytes": 2185,
+      "sha256": "29ea995d730497e0a4e2c4c4a98f7410531c4b28ceecf0f0ffc1daef4322ec40"
+    },
+    {
+      "path": "ORIGINAL_MAP_SUMMARY.json",
+      "bytes": 1043,
+      "sha256": "d4ec57b4293c0360da32d67623a8ab0256e5c6be2782d589392000bdfc4f9dc3"
+    },
+    {
+      "path": "ORIGINAL_SELECTION.json",
+      "bytes": 1996,
+      "sha256": "3f5f2a01d29cc2ca20291f0fc51b479fec2de8da117251f6c751a03e51f128be"
+    },
+    {
+      "path": "PATH_DISPOSITIONS.json",
+      "bytes": 5671,
+      "sha256": "e72c9abaa1547e5cf1450f0f31ea835942670f10ef71d4b150afeb13005de774"
+    },
+    {
+      "path": "PREFLIGHT.json",
+      "bytes": 2347,
+      "sha256": "925cd2c0c6219714b9298d2def2dee803f90a40933a15eeff731343b7b7b9324"
+    },
+    {
+      "path": "PROOF_REVIEW.md",
+      "bytes": 14410,
+      "sha256": "c2e8bd5c9dd564d7fd808f5efd93339f4e7b495e951de9e03ffde579dda128e2"
+    },
+    {
+      "path": "RAW_OBJECT_MERGE_BASE_CHECK.json",
+      "bytes": 650,
+      "sha256": "3e7d7809f5b193419bfe5ea72e8c66c9924d62f7973a2c35d65782e2ae0a84c4"
+    },
+    {
+      "path": "READ_COVERAGE.json",
+      "bytes": 2564,
+      "sha256": "bf2fafa7e1b6701ff4f63eceb05eefd9d3171fdca0ef849b43c8d7adaff92536"
+    },
+    {
+      "path": "RECORD_DOMAIN_CONTROLS.json",
+      "bytes": 744,
+      "sha256": "e23a726f4ea0c4af43521762daf0ba758d4d8d35f70cbe83f09204b5c4407e7f"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 15706,
+      "sha256": "41768e6d01a3f233655f101ada6a6a280fc73fd53807e9bb7aa683c0ab32888a"
+    },
+    {
+      "path": "SELECTED_TREE.json",
+      "bytes": 434,
+      "sha256": "b632abad0c0ccca5b7f1d9b7347f4e2e5540f0b2c3ed2db82292b03b0fee65ee"
+    },
+    {
+      "path": "SOURCE_ANCHORS.json",
+      "bytes": 21433,
+      "sha256": "27346fc795be6cb5cba3f1b2d5e86415d94dc097723287c9c328142f63868650"
+    },
+    {
+      "path": "SOURCE_REFS.json",
+      "bytes": 244,
+      "sha256": "98e400ec3e59e88e9f2704798c879f050d984d9f44dba89a85688cb8b3f3feb2"
+    },
+    {
+      "path": "SPECTRAL_DOMAIN_CONTROLS.json",
+      "bytes": 1855,
+      "sha256": "2bf14ed118d87f4941433c435dcbfd5b0c8bd33cd39fb187c1bfe6bc69d118c0"
+    },
+    {
+      "path": "STATIC_CHECKS.json",
+      "bytes": 573,
+      "sha256": "cf36f94fb4fa66fe845ebae3f63aa98b902874121ca52804d6e08aec6932114f"
+    },
+    {
+      "path": "ancestry.git/HEAD",
+      "bytes": 23,
+      "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10"
+    },
+    {
+      "path": "ancestry.git/config",
+      "bytes": 111,
+      "sha256": "3c5cc3e72b5473d08433171d50fc687ac3aa2a6a3f4c20b97f5b66f581b0fec9"
+    },
+    {
+      "path": "ancestry.git/description",
+      "bytes": 73,
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+    },
+    {
+      "path": "ancestry.git/hooks/applypatch-msg.sample",
+      "bytes": 478,
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+    },
+    {
+      "path": "ancestry.git/hooks/commit-msg.sample",
+      "bytes": 896,
+      "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+    },
+    {
+      "path": "ancestry.git/hooks/fsmonitor-watchman.sample",
+      "bytes": 4726,
+      "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+    },
+    {
+      "path": "ancestry.git/hooks/post-update.sample",
+      "bytes": 189,
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+    },
+    {
+      "path": "ancestry.git/hooks/pre-applypatch.sample",
+      "bytes": 424,
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+    },
+    {
+      "path": "ancestry.git/hooks/pre-commit.sample",
+      "bytes": 1649,
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+    },
+    {
+      "path": "ancestry.git/hooks/pre-merge-commit.sample",
+      "bytes": 416,
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+    },
+    {
+      "path": "ancestry.git/hooks/pre-push.sample",
+      "bytes": 1374,
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+    },
+    {
+      "path": "ancestry.git/hooks/pre-rebase.sample",
+      "bytes": 4898,
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+    },
+    {
+      "path": "ancestry.git/hooks/pre-receive.sample",
+      "bytes": 544,
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+    },
+    {
+      "path": "ancestry.git/hooks/prepare-commit-msg.sample",
+      "bytes": 1492,
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+    },
+    {
+      "path": "ancestry.git/hooks/push-to-checkout.sample",
+      "bytes": 2783,
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+    },
+    {
+      "path": "ancestry.git/hooks/sendemail-validate.sample",
+      "bytes": 2308,
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+    },
+    {
+      "path": "ancestry.git/hooks/update.sample",
+      "bytes": 3650,
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+    },
+    {
+      "path": "ancestry.git/info/exclude",
+      "bytes": 240,
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+    },
+    {
+      "path": "ancestry.git/objects/info/alternates",
+      "bytes": 47,
+      "sha256": "5d0081dc899b3c415f9962f9f104c7b4f5cd91b1eeceeec9372ba566751ac19e"
+    },
+    {
+      "path": "baseline/7889/IDENTITY.json",
+      "bytes": 253,
+      "sha256": "a9f08831cafa4e9e838bb4c9198522b13d4ad84de0bbd2e3df88e61c3b29800d"
+    },
+    {
+      "path": "baseline/7889/result.json",
+      "bytes": 539,
+      "sha256": "a3063d525a349cb2f38f1d3a3194bcdae1122c35f54de900877251d97db3c61a"
+    },
+    {
+      "path": "baseline/7889/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "baseline/7889/stdout.txt",
+      "bytes": 5446,
+      "sha256": "546d23c2b3a6928881df431dde7622ebe9b8c39da0468f21e992af4f32936079"
+    },
+    {
+      "path": "baseline/7891/IDENTITY.json",
+      "bytes": 253,
+      "sha256": "f418199bd67bc7215558f0adcb13007191fffa5f100a398cbc540905e1c0e05a"
+    },
+    {
+      "path": "baseline/7891/result.json",
+      "bytes": 542,
+      "sha256": "a9416c064ea6be9e4b43592987efda5d01cc2081fc037422bc9091838d15a9eb"
+    },
+    {
+      "path": "baseline/7891/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "baseline/7891/stdout.txt",
+      "bytes": 5494,
+      "sha256": "b17a7832e9e0ad9f24d6d5d8361a75b1b2effbf17a4c5b31604e9f4b7ebe97bb"
+    },
+    {
+      "path": "bounded_run.py",
+      "bytes": 2105,
+      "sha256": "aeafdb5954c20c46910639349feabac75cde22220aeb5155f9b63afb4b51ca95"
+    },
+    {
+      "path": "context-source/docs/ADMISSIBILITY_M2_EFFECT_LABEL_RECORD_CARRIER_ATOMIC_BORN_LAW_FACTORIZATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "bytes": 32621,
+      "sha256": "b6b4e25cbdc3b87e5ee8db841b7378e8ea900dee09cf02c993ebb0b823dd4fb4"
+    },
+    {
+      "path": "context-source/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "bytes": 4770,
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "context-source/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "context-source/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "bytes": 5313,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "context-source/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "bytes": 2581,
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "context-source/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "bytes": 6427,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "context-source/docs/audit/data/axiom_premise_nodes.json",
+      "bytes": 6416,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "context-source/docs/audit/scripts/build_citation_graph.py",
+      "bytes": 67318,
+      "sha256": "039d53569d8ec86e19343f2e999194eeceb5b91f4d0bd52a2fccff1facb8d1f4"
+    },
+    {
+      "path": "context-source/docs/audit/scripts/forensic_evidence_readiness.py",
+      "bytes": 4889,
+      "sha256": "516e28fafd6fd752a967b6d491b0c9cb8058b60fb6fc7c849b279b185df87f97"
+    },
+    {
+      "path": "context-source/docs/audit/scripts/no_go_discipline_gate.py",
+      "bytes": 206348,
+      "sha256": "197d04a2b9d5b6e27aba462b653a88f2a3e315f577558baf7d8282abe8752874"
+    },
+    {
+      "path": "context-source/scripts/audit_packet_script_deps.py",
+      "bytes": 32429,
+      "sha256": "681b56a1b28eb77c70e3011793720233e4311b29113c1469b79c6b75e34b1550"
+    },
+    {
+      "path": "context-source/scripts/runner_cache.py",
+      "bytes": 24941,
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "independent_controls.py",
+      "bytes": 6995,
+      "sha256": "2d965913cd970ed407cdb17068deea4fb91a7946b03c7b5e4de85103b1a067bc"
+    },
+    {
+      "path": "independent_pair.py",
+      "bytes": 2131,
+      "sha256": "6d78590e3097aa06887f9b734e713fc0bd917d4af51b32e4361f485ae7aea1e1"
+    },
+    {
+      "path": "mutant_controls.py",
+      "bytes": 2305,
+      "sha256": "773bbb399929bdeb7cb08a59a21e59a9414d69460165dbe4ec3eb1baa2ef5c25"
+    },
+    {
+      "path": "mutants/7889_remove_y_flux/result.json",
+      "bytes": 562,
+      "sha256": "426abfb55512668a07e4a756c7b25665acd69d3688b1ef908b53b96613e66edf"
+    },
+    {
+      "path": "mutants/7889_remove_y_flux/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "bytes": 41598,
+      "sha256": "d109c1032e004d4313ee97f098e2d6727f44c45b22ebfb62bd7ed96ca87962e9"
+    },
+    {
+      "path": "mutants/7889_remove_y_flux/source.patch",
+      "bytes": 333,
+      "sha256": "d90070360767f8f930ad1cda026c393a599b1bd43b861e4d080d9a942a9efa6c"
+    },
+    {
+      "path": "mutants/7889_remove_y_flux/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutants/7889_remove_y_flux/stdout.txt",
+      "bytes": 5447,
+      "sha256": "50d61474e2db2892f0a6f4684953504796e608c4ca97d3923b7583d6d86f9075"
+    },
+    {
+      "path": "mutants/7889_tail_constant_sign_affected_D/result.json",
+      "bytes": 578,
+      "sha256": "0aafadaf70a77565544dba9ae1c0229545761dc00d7fe33f38307b9ef6a1d34b"
+    },
+    {
+      "path": "mutants/7889_tail_constant_sign_affected_D/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "bytes": 41905,
+      "sha256": "e366a3241f27729ec326a019dfc5aed3f73dd40a727219da46870c56b0c877c8"
+    },
+    {
+      "path": "mutants/7889_tail_constant_sign_affected_D/source.patch",
+      "bytes": 832,
+      "sha256": "040c4020288ac45382749867eeded3d2fe9bc8d2db408e117b36250eb15cb58e"
+    },
+    {
+      "path": "mutants/7889_tail_constant_sign_affected_D/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutants/7889_tail_constant_sign_affected_D/stdout.txt",
+      "bytes": 844,
+      "sha256": "54fd4e1de0ad0fb30b865db9c9a681f84019c586c7a092d6745e9f936c59f55d"
+    },
+    {
+      "path": "mutants/7891_double_com_increment/result.json",
+      "bytes": 576,
+      "sha256": "b8bb7a832e88a4f8f4ae9068a0dfe112bfd25095322a0d9861d380f536c25224"
+    },
+    {
+      "path": "mutants/7891_double_com_increment/source.patch",
+      "bytes": 1153,
+      "sha256": "17bb76ef05a82b239812bb21fc6bcbaf2c1c40e450a125e30256aa3f62dbd138"
+    },
+    {
+      "path": "mutants/7891_double_com_increment/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutants/7891_double_com_increment/stdout.txt",
+      "bytes": 5499,
+      "sha256": "82f94cafd6528f3a27dda8eee876a2e3f3f948d7b306ea98ca8bd3f082ecf5dd"
+    },
+    {
+      "path": "mutants/7891_double_com_increment/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "bytes": 37045,
+      "sha256": "bbb2a741c3fec3b11954bc06a5b32cf093a180de574e58a4dc2718440b8fb4e8"
+    },
+    {
+      "path": "mutants/7891_isometry_omit_eight_shapes/result.json",
+      "bytes": 582,
+      "sha256": "dba8852831bd50ee90fa32b188e3fd29c7514d5e1429465f1246e863d3f3dc8a"
+    },
+    {
+      "path": "mutants/7891_isometry_omit_eight_shapes/source.patch",
+      "bytes": 411,
+      "sha256": "94e0fcabfc52f99bfd28bb627ece7524af8249a42b2ec0d09e2d408e8857c6bf"
+    },
+    {
+      "path": "mutants/7891_isometry_omit_eight_shapes/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mutants/7891_isometry_omit_eight_shapes/stdout.txt",
+      "bytes": 5492,
+      "sha256": "fe1da8a036e51fe43b22413a90dc37efac1511f8cef46b350175b3e05d49c507"
+    },
+    {
+      "path": "mutants/7891_isometry_omit_eight_shapes/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "bytes": 37037,
+      "sha256": "7568e722b5b12924d41dffe0353eefab39cc75659c40b89164d062a246339c87"
+    },
+    {
+      "path": "original-7889-commit.txt",
+      "bytes": 2376,
+      "sha256": "791d246a09d174209b68d0418410343d88a9db0dcea95260bfb07d4b5e0bb582"
+    },
+    {
+      "path": "original-7889.raw",
+      "bytes": 568,
+      "sha256": "e22d6ba49c93ecb3a538d3c09d058ff94545ddf04f422f9a9fedd75bc6b6724a"
+    },
+    {
+      "path": "original-7891-commit.txt",
+      "bytes": 2619,
+      "sha256": "8aa7c0e893fa76e9d13fc9d372d55b6022bdf02225d4299d30c4e09d79991e61"
+    },
+    {
+      "path": "original-7891.raw",
+      "bytes": 586,
+      "sha256": "530a429b5dec889d144138fa634cecec8608d5075e31e3786762e6d6ab893a1b"
+    },
+    {
+      "path": "original-source/docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "bytes": 40948,
+      "sha256": "5750cd32f30f44dabf212b21e86d4ca2e7abd8a678991bd31b1bed07bf5adf26"
+    },
+    {
+      "path": "original-source/docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "bytes": 42659,
+      "sha256": "a8d4e8191dd76e169fe3220f9137dbc5606053e6347be96c46cdb0783bece98c"
+    },
+    {
+      "path": "original-source/logs/runner-cache/shifting_position_records_exact_diffusion_law_check_2026_09_03.txt",
+      "bytes": 5736,
+      "sha256": "fa49e901746e600c66b5fe35740642363cd264bdb3e65d92a820fa14aa466b30"
+    },
+    {
+      "path": "original-source/logs/runner-cache/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.txt",
+      "bytes": 5791,
+      "sha256": "54e7296478e2cb3751ca5cbf68d0fcc1746a83d6eae3da93502351d4139cdcfc"
+    },
+    {
+      "path": "original-source/scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "bytes": 41620,
+      "sha256": "ffb71d51b3e5fbc83cdabaf017e74b651e6c079f2640a4ad016b24a4033cbe4a"
+    },
+    {
+      "path": "original-source/scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "bytes": 37033,
+      "sha256": "e5fc2b6ff59a9887cce9fc54858726fa471d617c9c3f2fbd760b8dfaab13ba14"
+    },
+    {
+      "path": "package_review.py",
+      "bytes": 9574,
+      "sha256": "b174110981780a63acbfce26ca165746257121f16b0d99f89758f097ff8dcb86"
+    },
+    {
+      "path": "planning/AGENTS.md",
+      "bytes": 9041,
+      "sha256": "15532a6a4a59a2d36ef87c282e076cf5ec63c495b2dfc8027ff4d2085a819dba"
+    },
+    {
+      "path": "planning/BACKLOG_STATUS.md",
+      "bytes": 16711,
+      "sha256": "92e0fd67e122270a7ec9d3b59ad5ae11e68c3621055cc4afe3c7f8c19e2523eb"
+    },
+    {
+      "path": "planning/CAMPAIGN_STATUS.md",
+      "bytes": 4328,
+      "sha256": "40747cdd0252616eda15c399c2c541d21e41f08a39f2031158c5d1087e544846"
+    },
+    {
+      "path": "planning/OPEN_PR_INVENTORY.json",
+      "bytes": 251959,
+      "sha256": "4da07d516e02ff8df4013bb5970354eb338c10ea7b5aa540cb234a612db5865a"
+    },
+    {
+      "path": "planning/TOE_SCORECARD.md",
+      "bytes": 6239,
+      "sha256": "63249870bf9c9c5ceca4febf185047a1238b372edf40722cea37142e919b9688"
+    },
+    {
+      "path": "planning/main--AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "planning/main-ai_methodology-SCIENCE_WORKFLOW.md",
+      "bytes": 11569,
+      "sha256": "8d8d5a0cdeab0e902a00ed24911ba7bdab33f04078497b73d013219c7ef5c004"
+    },
+    {
+      "path": "planning/main-no-go-discipline-SKILL.md",
+      "bytes": 16941,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "planning/main-physics-claim-reviewer-SKILL.md",
+      "bytes": 13708,
+      "sha256": "7cbe1c4d6896d98e86a0a973ea84733dde218fc304a314da9a451b0e61930819"
+    },
+    {
+      "path": "planning/main-references-proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "planning/main-review-loop-SKILL.md",
+      "bytes": 95086,
+      "sha256": "09af344586dd7307b2f4cba9cfe606bcc01f09d866284e8ee4bd4cb64a519f85"
+    },
+    {
+      "path": "preflight.py",
+      "bytes": 1832,
+      "sha256": "782fc61546e4044a6fc1e265a7928c215fde6dec59f6e854913d97c982387578"
+    },
+    {
+      "path": "raw_sector_rayleigh_witness.npz",
+      "bytes": 2204,
+      "sha256": "21c51a44f6286f545e6e1262a6f18ab4883b828608de782096c2d7617dfc7712"
+    },
+    {
+      "path": "record_domain_controls.py",
+      "bytes": 1397,
+      "sha256": "0133a2aa2237e77ae85be303806451982bfdb4f950eea0c7a06c95f42010b0c2"
+    },
+    {
+      "path": "seal_review.py",
+      "bytes": 5497,
+      "sha256": "6a69d002446619f15ae2f4b3970be04b0f82f2f7eb4290b2d66d7583160241c9"
+    },
+    {
+      "path": "selected-source.patch",
+      "bytes": 178766,
+      "sha256": "2d64bd85129c432571ec8d719d494453fa9f320795e0221a9b0fdd36a04b4c1a"
+    },
+    {
+      "path": "spectral_domain_controls.py",
+      "bytes": 1862,
+      "sha256": "1616af7787ff05133433df63cdb57af95283d4b959dd9449f9b4fbdc3b4473eb"
+    },
+    {
+      "path": "vocab-report.json",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": "vocab.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vocab.stdout",
+      "bytes": 218,
+      "sha256": "eddf470e5419c65dc443c732bc391a7a4d4512a91f7fdbb36925b9b25cfcea1b"
+    }
+  ],
+  "excluded_generated_files": [
+    {
+      "path": "__pycache__/bounded_run.cpython-313.pyc",
+      "reason": "Generated external Python bytecode; executable source is sealed."
+    }
+  ],
+  "remaining_work": "Separate authorized narrow author corrections and original-session affected confirmation before root landing decision"
+}
