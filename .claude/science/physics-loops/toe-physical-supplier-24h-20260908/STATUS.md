@@ -1,12 +1,12 @@
 # Physics campaign status
 
-Updated 2026-09-08 15:13 UTC (see STATE.yaml for latest machine-readable state).
+Updated 2026-09-08T15:37:47.368311+00:00. Running until September10 at10:27UTC (6:27a.m. Eastern), subject to available account usage. No reset credits are authorized.
 
-Running campaign: 48 hours total, from September8 10:27UTC until September10 10:27UTC (September10 6:27a.m. Eastern), subject to available account usage. No reset credits are authorized. Last account read:27% weekly used,73% remaining. Disk: about68GiB free after removing31inactive old worktrees and disposable caches. Every removed worktree HEAD remains on its remote branch; see disk-cleanup-20260908/FINAL_CLEANUP_REPORT.md.
+Useful progress: five conditional science review PRs are open,8036–8040. The newest gives exact bounds on charge-pair energy while retaining native fermion phases. These are finite model results, not TOE completion.
 
-Review PRs:8036 native thermal preparation;8037 native Bell resource/CHSH;8038 exact native fermion/Z2 dictionary;8039 plane formation law and induced diagonal interaction. All are conditional scientific results, not TOE closure. No main landing or formal audit verdict applied.
+The improved L4 simulation passed all planned precision and cross-arm checks, with original-path tag retention below1%. Remaining projection-error diagnostics are unresolved, so ground-state convergence is not established. Next: independent replay and a prospective larger-lattice comparison. Two workers also examine global charge reachability and exchange.
 
-Current numerical result: L4 long-projector sampler failed warm-up tests. Exact reconstruction found77.9%/48.9% of measured long-path midpoints still carrying original seed tags. Data preserved. A legal propagated initializer is independently reviewed but not itself equilibrium. Finite-projector endpoint residual identities are independently proved; exact-L2 n2 stochastic calibration passes all5nominal precision/consistency gates. Next: prospective L4 initialization comparison, retaining failed predecessors.
+Disk: about69GiB free after cleanup. All31removed old worktrees retain their local and remote branches. Disposable generated caches were deleted. Exact restore commands and remote HEADs are in disk-cleanup-20260908/FINAL_CLEANUP_REPORT.md. Useful evidence is kept on remote science/archive branches or review PRs before local deletion.
 
 SSH commands:
 
@@ -15,4 +15,4 @@ SSH commands:
     df -h /private/tmp
     git -C /private/tmp/toe-physical-supplier-24h-20260908 log -5 --oneline
 
-Last published research checkpoint:78671dd78e. Detailed source/result hashes are in numbered checkpoint manifests. The heartbeat automation keeps this same task going; do not start a duplicate supervisor while it is active. Original user checkout remains untouched.
+Keep the machine powered on and the desktop app running for local scheduled continuation. This matches the [scheduled-task documentation](https://learn.chatgpt.com/docs/automations?surface=app). Power settings currently disable system sleep. Do not launch a duplicate supervisor while this task is active. No main merge or formal audit verdict has been applied.
