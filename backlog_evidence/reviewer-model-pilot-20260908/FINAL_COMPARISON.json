@@ -1,0 +1,230 @@
+{
+  "utc": "2026-09-08T15:06:34.225138+00:00",
+  "arms_complete": true,
+  "final_usage": {
+    "collected_utc": "2026-09-08T15:04:14.182358+00:00",
+    "arms": [
+      {
+        "id": "01a0816e-747d-75e1-b755-a2f968a50f04",
+        "agent_path": "/root/reviewer_astra_low",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "low",
+        "rollout_path": "/Users/jonreilly/.codex/sessions/2026/09/08/rollout-2026-09-08T10-31-34-01a0816e-747d-75e1-b755-a2f968a50f04.jsonl",
+        "created_at_ms": 1788877894781,
+        "latest_usage_utc": "2026-09-08T14:36:33.788Z",
+        "token_usage": {
+          "input_tokens": 905404,
+          "cached_input_tokens": 795648,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7849,
+          "reasoning_output_tokens": 793,
+          "total_tokens": 913253
+        },
+        "standard_api_equivalent_usd": 2.285658,
+        "maximum_request_input_tokens": 107349,
+        "pricing_per_million": {
+          "uncached_input": 10,
+          "cached_input": 1,
+          "cache_write": 12.5,
+          "output": 50
+        },
+        "limits": "Standard API equivalent, not Codex billing; reasoning output is included in output, not added twice. No account-wide usage deltas. Finality must be checked against agent completion."
+      },
+      {
+        "id": "01a08173-8dd1-7083-a1ec-6fa61af92ed8",
+        "agent_path": "/root/reviewer_sol_xhigh",
+        "model": "gpt-5.6-sol",
+        "reasoning_effort": "xhigh",
+        "rollout_path": "/Users/jonreilly/.codex/sessions/2026/09/08/rollout-2026-09-08T10-37-08-01a08173-8dd1-7083-a1ec-6fa61af92ed8.jsonl",
+        "created_at_ms": 1788878228945,
+        "latest_usage_utc": "2026-09-08T15:03:40.945Z",
+        "token_usage": {
+          "input_tokens": 5409397,
+          "cached_input_tokens": 5235072,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 42820,
+          "reasoning_output_tokens": 17911,
+          "total_tokens": 5452217
+        },
+        "standard_api_equivalent_usd": 3.6477288,
+        "maximum_request_input_tokens": 166387,
+        "pricing_per_million": {
+          "uncached_input": 4,
+          "cached_input": 0.4,
+          "cache_write": 5,
+          "output": 20
+        },
+        "limits": "Standard API equivalent, not Codex billing; reasoning output is included in output, not added twice. No account-wide usage deltas. Finality must be checked against agent completion."
+      }
+    ]
+  },
+  "dispatch_to_final_sec": {
+    "astra_low": 299.007000207901,
+    "sol_xhigh": 1592.0
+  },
+  "speed_ratio": 5.32429006308573,
+  "standard_api_cost_reduction": 0.3734024305754309,
+  "verified_sol_source_context_hashes": 16,
+  "coverage": [
+    {
+      "topic": "Arbitrary-state resolution",
+      "astra_low": "Found; explicit orthogonal-state counterexample",
+      "sol_xhigh": "Found; distinct-ray counterexample"
+    },
+    {
+      "topic": "Canonical readable expectation / twirl versus singlet compression",
+      "astra_low": "Found; conditional expectation formula",
+      "sol_xhigh": "Found; same formula and non-discriminating C3 gate"
+    },
+    {
+      "topic": "Full corner projector versus one entangled vector",
+      "astra_low": "Proof caution plus full-projector PPT repair",
+      "sol_xhigh": "Finding plus local-axis commutant repair; weak Bell gate noted"
+    },
+    {
+      "topic": "Generic abelian contrast",
+      "astra_low": "Found; same-carrier G1 control and simple X example",
+      "sol_xhigh": "Found; simple X example"
+    },
+    {
+      "topic": "Degenerate-eigenvector fixture",
+      "astra_low": "Found; explicit admissible alternative",
+      "sol_xhigh": "Not identified"
+    },
+    {
+      "topic": "Physical readout / formation assumptions",
+      "astra_low": "General cautions; comparator not checked",
+      "sol_xhigh": "Detailed findings using current axiom and abelian comparator"
+    },
+    {
+      "topic": "Universal tensor rule and exact/numerical labels",
+      "astra_low": "Cautions; zero quadrupole noted",
+      "sol_xhigh": "Findings; missing theorem hypotheses and exact/numerical boundary"
+    },
+    {
+      "topic": "Specific rank/max-diagonal/spectrum false-positive tests",
+      "astra_low": "Not identified",
+      "sol_xhigh": "Max-diagonal weak gate noted; whole-projector/interior-spectrum mutations not identified"
+    },
+    {
+      "topic": "Equal full record probabilities do not certify Gauss membership",
+      "astra_low": "Not identified",
+      "sol_xhigh": "Not identified"
+    },
+    {
+      "topic": "Centre parity does not capture integer charge / singlet status",
+      "astra_low": "Not identified",
+      "sol_xhigh": "Not identified"
+    },
+    {
+      "topic": "Actual source/cache input bindings and quantum-link citation mismatch",
+      "astra_low": "Not identified",
+      "sol_xhigh": "Not identified; cited carrier read but mismatch not flagged"
+    }
+  ],
+  "false_positives": "No false mathematical findings established among the reported actionable issues; priority and detail differ.",
+  "limitations": "One paired unit, sequential runs amid unrelated backlog work, differing review/report depth and caching; raw findings counts are not comparable completeness scores. Sol first run lacked enforced RSS cap after native ulimit failure, disclosed; no rerun. Neither arm covers the full independently validated issue union. Standard API equivalent is not Codex subscription billing or a service-tier invoice.",
+  "owner_decision": "Use Astra low for focused pre-landing source review; escalate specific unresolved mathematical/premise questions to Astra xhigh. Exhaustive claim certification deferred to formal audit; actual source preservation, known-error correction and reproducible evidence remain required.",
+  "files": [
+    {
+      "path": "astra-low/FINDINGS.json",
+      "sha256": "48b28fa772bff550ae4e73ab6a9ea98bcd12275183bc50dc419ef00de3e8f0dc",
+      "bytes": 5472
+    },
+    {
+      "path": "astra-low/REPORT.md",
+      "sha256": "dba49dbcf509677fa7cdd2fdf6cdd741b987213d62fe910f6e493c80184f5dd1",
+      "bytes": 10665
+    },
+    {
+      "path": "astra-low/controls.json",
+      "sha256": "e14b04b0a2e1bd5eb9001ec2bcdb2a7f3b0605ac7b959c09ef879bff64087c1d",
+      "bytes": 831
+    },
+    {
+      "path": "astra-low/controls.py",
+      "sha256": "9c1ae9cb72f21554183eeba10a3891c02b8ac5ab2564dd9819c791c3c57f8f61",
+      "bytes": 2451
+    },
+    {
+      "path": "astra-low/coverage.json",
+      "sha256": "240af01f598fdddb8d0c671ba32487dfa46f2fc6dc5a609bfcfe49e5a1397a06",
+      "bytes": 4143
+    },
+    {
+      "path": "astra-low/non_abelian_gauss_law_no_record_pattern_solutions_check_2026_09_03.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "astra-low/non_abelian_gauss_law_no_record_pattern_solutions_check_2026_09_03.stdout.txt",
+      "sha256": "a2ac7a760a88020f25baa87b7b3663151f3261ce8cf336d0a3e2b7112643712e",
+      "bytes": 6077
+    },
+    {
+      "path": "astra-low/record_readable_gauge_invariant_algebra_colour_blind_check_2026_09_03.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "astra-low/record_readable_gauge_invariant_algebra_colour_blind_check_2026_09_03.stdout.txt",
+      "sha256": "3564abe2b2acb7117df0ec1a031b4a03f164d07c45e3598ad180614bb75c3ab8",
+      "bytes": 8594
+    },
+    {
+      "path": "astra-low/run_originals.py",
+      "sha256": "1105994a2da9c2d48dd60a1ad3092f704f1ee389af0d6c5fe4214c11772fd17f",
+      "bytes": 1293
+    },
+    {
+      "path": "astra-low/seal.json",
+      "sha256": "390c54d5c5e071dfb6f921e702e28aa5b6f3577462b738a912267dfb2b7804a9",
+      "bytes": 267
+    },
+    {
+      "path": "astra-low/seal.py",
+      "sha256": "61f8f388a7cdbf46320c31985c51a7c2d82167fa1a995bc27a0d083e2f1745ad",
+      "bytes": 13084
+    },
+    {
+      "path": "astra-low/timings.json",
+      "sha256": "a9ddd509d6b3d3b1538fd0dcdb7f1a49a04daeccdd5c344edd3d83ae07964f5b",
+      "bytes": 557
+    },
+    {
+      "path": "sol-xhigh/COMMAND_TIMINGS.tsv",
+      "sha256": "5babb5391ee26b94ec629d48fc81b6fb50d4cedcf3c2e0703784176a66b91206",
+      "bytes": 772
+    },
+    {
+      "path": "sol-xhigh/CONTROLS_ACTUAL.txt",
+      "sha256": "8aa3e4a9ea38c2284c906f2f4a20486e537bea5ebc6185b1f89898dcdce4e2d8",
+      "bytes": 1038
+    },
+    {
+      "path": "sol-xhigh/COVERAGE.md",
+      "sha256": "df9cdafaf3ce2d97bb541c1786d07bc6aa551d11813f37acc29cd4a19a1017cd",
+      "bytes": 4700
+    },
+    {
+      "path": "sol-xhigh/FINDINGS.json",
+      "sha256": "000246306a7aa73a94afc6e7602722b55a8e56d64e42a3948c2f2fecb0dc020d",
+      "bytes": 8274
+    },
+    {
+      "path": "sol-xhigh/REPORT.md",
+      "sha256": "bdde51cc55c270e93585f654254a96a03e754fffbe6bd3fe17f746e6858909b5",
+      "bytes": 15665
+    },
+    {
+      "path": "sol-xhigh/RUNNER_PR7908_ACTUAL.txt",
+      "sha256": "c4bbd160ccf1f8007f0597d0e3dbe3e954b926d8af5ce8369b4b4b09e3e93189",
+      "bytes": 6598
+    },
+    {
+      "path": "sol-xhigh/RUNNER_PR7914_ACTUAL.txt",
+      "sha256": "3a0377bdaa5393bb79449b84768a42a6586211775433b7212797ad5ced8322f7",
+      "bytes": 9070
+    }
+  ]
+}

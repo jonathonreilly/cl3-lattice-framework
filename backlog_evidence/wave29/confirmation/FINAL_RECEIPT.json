@@ -1,0 +1,665 @@
+{
+  "verdict": "PASS",
+  "scope": "Original same-session independent scoped science and exact source+manifest integration; no formal audit",
+  "base": "8257bddfc97ab763d208b43e9bdc8677fe89b1e8",
+  "source_tree": "80b0af2155bded4665da3db59f9e359430ec26cd",
+  "integration_tree": "358477847d70f8fd1a4e57ca3619ffbacdafdd2f",
+  "manifest_sha256": "00c6e51550214185b7da493eef43781f61b811c2670e6f285495def541f6d1e1",
+  "source_paths": 16,
+  "total_paths": 17,
+  "original_prs": [
+    7939,
+    7977,
+    7982
+  ],
+  "original_head_map": [
+    {
+      "pr": 7939,
+      "head": "3e728206b4cdea4dc4accdab87d55ad7cd369439",
+      "parent": "a950a1aacfb33c10699dc88ac2f441d7024ad109"
+    },
+    {
+      "pr": 7977,
+      "head": "0f774ee7312f2328664b53163afcc9ebe0b39d6a",
+      "parent": "e249016f759f224d9b429932cd0d1db4d452dc1a"
+    },
+    {
+      "pr": 7982,
+      "head": "8bcd3756c9091e47dcffea3acdc493190abfec06",
+      "parent": "e249016f759f224d9b429932cd0d1db4d452dc1a"
+    }
+  ],
+  "original_findings_resolved": 14,
+  "final_read_findings_resolved": 1,
+  "claim_sections": 44,
+  "original_checks_retained": 173,
+  "current_checks": [
+    57,
+    62,
+    63
+  ],
+  "independent_scientific_controls": 38,
+  "actual_input_source_solver_cases": 30,
+  "final_corrected_note_drift_case": 1,
+  "original_baseline_replays": 0,
+  "original_arrays_exact": 73,
+  "formal_audit": false,
+  "global_gate": false,
+  "source_mutations": false,
+  "report_sha256": "bdbce782d57cd44ea0a2502192bd5a716b7b7c267b5be96a34fbdee4ccfa2dae",
+  "external_bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-role-law-7939-7977-7982-fixes/FINAL_RECEIPT.json",
+      "sha256": "f56e5936969660a7b625fcc8feb0044b015accab1d24bbfa1d1f605dbdd9ce37",
+      "bytes": 60650
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-role-law-7939-7977-7982-fixes/REPORT.md",
+      "sha256": "226bf09aff2d8a89f72ee1ba7cdcbf4351e6eab5b694ac1ac6bad5db20cc1fff",
+      "bytes": 9439
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-role-law-7939-7977-7982-fixes/HANDOFF.md",
+      "sha256": "09e0eb538ec2a178f9243ed11a640af50825814bf54c0993ce2121cd021eff08",
+      "bytes": 2120
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave29-validation/w39-final-correction/FREEZE.json",
+      "sha256": "6ed4ed65dbb82d0bb94ba49cdb03a82c3c06432a7993078ed5d13fecf246cbe4",
+      "bytes": 964
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave29-validation/w39-final-correction/EXECUTION.json",
+      "sha256": "73bc99375b6d82914ba4a20ac26c69c73b050e560317d3fa9f1a2150f6647207",
+      "bytes": 11639
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave29-validation/w39-final-correction/FINAL_SOURCE_INVENTORY.json",
+      "sha256": "e3889f6731d95f0d3471aa5e437ed2c88e8a22f79d74776479c36fe14cee392e",
+      "bytes": 6060
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave29-validation/w39-final-correction/graph-topology.json",
+      "sha256": "a2e298f949d9c31c4dd4d9010a14b347f40410533b35cbd6e145b072677ef7ce",
+      "bytes": 15496
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave29-validation/w39-final-correction/complete-correction.patch",
+      "sha256": "53982493ee6915cb4b45e1b623c166941be20b98b6b8b097df52ef55137b04bf",
+      "bytes": 10036
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave29-validation/PRE_GATE_LIVE_HEADS.json",
+      "sha256": "724b96d4d0fe4800f34a371f0163be154afd1f733073afb55f13ec3eb77362f4",
+      "bytes": 1089
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "BINDING_VERIFICATION.json",
+      "sha256": "8892829491686d645a5277579d47272f07435e603162df089d43dccde5636f46",
+      "bytes": 61092
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "sha256": "c5ab084df735bf416d8825e42e96aa9e54ee79d0d68c0895c9e6237941e0fca1",
+      "bytes": 370
+    },
+    {
+      "path": "FINAL_CLAIM_DISPOSITIONS.json",
+      "sha256": "2318a4b97383a80ea48a9723dad2c2ddbddce7440087c475399e9786dd0dd935",
+      "bytes": 224833
+    },
+    {
+      "path": "FINAL_FINDING_DISPOSITIONS.json",
+      "sha256": "f6bf233e8458c779fe59cbf034b62683ffca9d06829469a60af9715dc681a559",
+      "bytes": 9276
+    },
+    {
+      "path": "FINAL_INTEGRATION_BINDING.json",
+      "sha256": "cf90722ef885fe0b4918bb660075fa900116c9c7f893c1e5f13afc487e4e8b7d",
+      "bytes": 10744
+    },
+    {
+      "path": "INCIDENTS.md",
+      "sha256": "4b6290763567fe358e4a99016fa24cba1971df4b67ba3177e689898040ba722a",
+      "bytes": 894
+    },
+    {
+      "path": "INDEPENDENT_CONTROLS.json",
+      "sha256": "b370114bafb095b8aea97a156278f9f3085546afbec4c4cc130da2e91544a6e7",
+      "bytes": 5872
+    },
+    {
+      "path": "INPUT_CONTROLS.json",
+      "sha256": "85586c5afdf4e8d3276b7a1109cfc1ad9ca9b76ba61e3fdadda6113af60f9ce9",
+      "bytes": 24825
+    },
+    {
+      "path": "PRESERVATION_ADDENDUM.json",
+      "sha256": "fbeb3ff1211a115029654acfde249f08abbe456da82cb760cdf0f09868d3782b",
+      "bytes": 31993
+    },
+    {
+      "path": "READ_LEDGER.json",
+      "sha256": "df7058e6f5bfbbde9a148625f0a33be39f1c2abd4f01d1499efa82c265ce9e1c",
+      "bytes": 5773
+    },
+    {
+      "path": "REMAINING_FINDING.json",
+      "sha256": "226f95ecf9752c212412ed409bc4e5c4bbbd15540ee9e1461692386ee48b8c36",
+      "bytes": 3330
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "bdbce782d57cd44ea0a2502192bd5a716b7b7c267b5be96a34fbdee4ccfa2dae",
+      "bytes": 4540
+    },
+    {
+      "path": "SCIENCE_CONFIRMATION.md",
+      "sha256": "a5d3fa8141a94951a83e5ccb6c608dadfadf0272f4eea1bc5a5bc7ca234f065d",
+      "bytes": 8040
+    },
+    {
+      "path": "W39_FINAL_BINDING.json",
+      "sha256": "e86d617756135e08d0cf421f63d3edd3dd6ab48206c3d83e6c6767b461da5f11",
+      "bytes": 15119
+    },
+    {
+      "path": "binding.first.stderr",
+      "sha256": "151c8ed31d7fce882f079dafae9d692f9d2ab1e599c960540b415bb3251d61c7",
+      "bytes": 473
+    },
+    {
+      "path": "binding.second.stderr",
+      "sha256": "5e1647d3d1eab98f2cf83d1b3748aa0e74366e0ea7b4efc0432b093ccc6735a8",
+      "bytes": 352
+    },
+    {
+      "path": "binding.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "binding.stdout",
+      "sha256": "a1a0d1e9988095e1d46177c25ee369e162656513c16cbf404085da3ef801c68d",
+      "bytes": 2262
+    },
+    {
+      "path": "confirm_w39.py",
+      "sha256": "1a88336d902fd8aa65e919417e83beea0591e30321abf15a31899aece1c2284f",
+      "bytes": 6769
+    },
+    {
+      "path": "free-center-original-mutant.py",
+      "sha256": "e0c697d930cfc927d74c5f54f0358f51b3158b02cdbf7490c99db1393963c9c3",
+      "bytes": 75109
+    },
+    {
+      "path": "independent-controls.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "independent-controls.stdout",
+      "sha256": "058acb036f8c4bc694cba978ff7f3c4a0c937186183b20bd213cc950f3132be1",
+      "bytes": 3633
+    },
+    {
+      "path": "independent_controls.py",
+      "sha256": "c1fa04df698d27fbbdad848aa47d1a62ac99a36c8112f26ff932feffcfde8096",
+      "bytes": 9362
+    },
+    {
+      "path": "input-control-logs/7939-declaration-0/stderr",
+      "sha256": "ca665099f7b405aa1dcf300b9a8946c204290606d7d97290c18285bade44561e",
+      "bytes": 423
+    },
+    {
+      "path": "input-control-logs/7939-declaration-0/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7939-declaration-1/stderr",
+      "sha256": "ca665099f7b405aa1dcf300b9a8946c204290606d7d97290c18285bade44561e",
+      "bytes": 423
+    },
+    {
+      "path": "input-control-logs/7939-declaration-1/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7939-declaration-2/stderr",
+      "sha256": "ca665099f7b405aa1dcf300b9a8946c204290606d7d97290c18285bade44561e",
+      "bytes": 423
+    },
+    {
+      "path": "input-control-logs/7939-declaration-2/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7939-declaration-3/stderr",
+      "sha256": "ca665099f7b405aa1dcf300b9a8946c204290606d7d97290c18285bade44561e",
+      "bytes": 423
+    },
+    {
+      "path": "input-control-logs/7939-declaration-3/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7939-input-0/stderr",
+      "sha256": "63ba16ec8c6f8e79615469f2bca00c4fb775dcb8365974eb9326b2f27fb82a41",
+      "bytes": 1067
+    },
+    {
+      "path": "input-control-logs/7939-input-0/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7939-input-1/stderr",
+      "sha256": "6b057f55cc91a9b37d2681edf96f6a6f8903589ed84c8cb6c4f508f9c7e6d804",
+      "bytes": 947
+    },
+    {
+      "path": "input-control-logs/7939-input-1/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7939-input-2/stderr",
+      "sha256": "9ee552603b696bc3beef5d6479205964451720f54249bbf89a29dfd4c056fca2",
+      "bytes": 977
+    },
+    {
+      "path": "input-control-logs/7939-input-2/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7939-input-3/stderr",
+      "sha256": "b7a13be003b54324fe25d871675c7ea13ebf36fc16acd42ea9ecf1cf9eef113a",
+      "bytes": 1001
+    },
+    {
+      "path": "input-control-logs/7939-input-3/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7939-no-solver/stderr",
+      "sha256": "feb1c76358d3eb34838ab6e024f5dc24dfe4ba84cd7c5f7434d5015806c9b91d",
+      "bytes": 1722
+    },
+    {
+      "path": "input-control-logs/7939-no-solver/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7977-declaration-0/stderr",
+      "sha256": "2ffed27dbaf958fd210f2b11b2dbbf64405bbe91db7e530cf1d3c04cfd8498f9",
+      "bytes": 431
+    },
+    {
+      "path": "input-control-logs/7977-declaration-0/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7977-declaration-1/stderr",
+      "sha256": "2ffed27dbaf958fd210f2b11b2dbbf64405bbe91db7e530cf1d3c04cfd8498f9",
+      "bytes": 431
+    },
+    {
+      "path": "input-control-logs/7977-declaration-1/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7977-declaration-2/stderr",
+      "sha256": "2ffed27dbaf958fd210f2b11b2dbbf64405bbe91db7e530cf1d3c04cfd8498f9",
+      "bytes": 431
+    },
+    {
+      "path": "input-control-logs/7977-declaration-2/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7977-declaration-3/stderr",
+      "sha256": "2ffed27dbaf958fd210f2b11b2dbbf64405bbe91db7e530cf1d3c04cfd8498f9",
+      "bytes": 431
+    },
+    {
+      "path": "input-control-logs/7977-declaration-3/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7977-input-0/stderr",
+      "sha256": "932a6bf7a4131a1a4cac20c30040cfc424cc85fa5a792a248a83cfe90f0002f7",
+      "bytes": 1182
+    },
+    {
+      "path": "input-control-logs/7977-input-0/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7977-input-1/stderr",
+      "sha256": "d22f0b6701561e6ed11b02922b3646e55e19b55a530b3cbae7038895ae84f806",
+      "bytes": 972
+    },
+    {
+      "path": "input-control-logs/7977-input-1/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7977-input-2/stderr",
+      "sha256": "7796206590a43618a1852880f4af1ef4222796e2c2e3d82d8664de561f8410e7",
+      "bytes": 1002
+    },
+    {
+      "path": "input-control-logs/7977-input-2/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7977-input-3/stderr",
+      "sha256": "985cc932c076408387ed99e686ac3979897526a34d26ed38f500238144f41c4a",
+      "bytes": 1026
+    },
+    {
+      "path": "input-control-logs/7977-input-3/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7977-no-solver/stderr",
+      "sha256": "9625aec3489c2ecf8871e9850fde231f861f84a16973c6a142a01d83a940c12c",
+      "bytes": 1750
+    },
+    {
+      "path": "input-control-logs/7977-no-solver/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7982-declaration-0/stderr",
+      "sha256": "ca6f0322daa40a8916f42583276b43ff9dbe7ae449ea8ef45cf9e7e5a9556e15",
+      "bytes": 422
+    },
+    {
+      "path": "input-control-logs/7982-declaration-0/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7982-declaration-1/stderr",
+      "sha256": "ca6f0322daa40a8916f42583276b43ff9dbe7ae449ea8ef45cf9e7e5a9556e15",
+      "bytes": 422
+    },
+    {
+      "path": "input-control-logs/7982-declaration-1/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7982-declaration-2/stderr",
+      "sha256": "ca6f0322daa40a8916f42583276b43ff9dbe7ae449ea8ef45cf9e7e5a9556e15",
+      "bytes": 422
+    },
+    {
+      "path": "input-control-logs/7982-declaration-2/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7982-declaration-3/stderr",
+      "sha256": "ca6f0322daa40a8916f42583276b43ff9dbe7ae449ea8ef45cf9e7e5a9556e15",
+      "bytes": 422
+    },
+    {
+      "path": "input-control-logs/7982-declaration-3/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7982-input-0/stderr",
+      "sha256": "6c52ecc6d5cfc6071779c23b8ddf99160673bb0e19983cf1acf254805b74ff30",
+      "bytes": 1123
+    },
+    {
+      "path": "input-control-logs/7982-input-0/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7982-input-1/stderr",
+      "sha256": "479ee9c2d2c388ac9d243cc4c135956545315029714640067e7e3956704438e5",
+      "bytes": 934
+    },
+    {
+      "path": "input-control-logs/7982-input-1/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7982-input-2/stderr",
+      "sha256": "4ff37e00a65781696f4932157e63fbd3e345e3b1d437e93ea6f9a70536d235dd",
+      "bytes": 964
+    },
+    {
+      "path": "input-control-logs/7982-input-2/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7982-input-3/stderr",
+      "sha256": "371883dbc03543939e95b4d6d5d3ba8f827a86d5a0b7de65272bfba695495544",
+      "bytes": 988
+    },
+    {
+      "path": "input-control-logs/7982-input-3/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-control-logs/7982-no-solver/stderr",
+      "sha256": "6c993bdee0b645dce9a977b3ec1564909362fa5c452bcb2f4e9e252620a98db1",
+      "bytes": 1710
+    },
+    {
+      "path": "input-control-logs/7982-no-solver/stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-controls.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "input-controls.stdout",
+      "sha256": "b4781b7e72c5832671c6e1a16ccf73f4178401dc949a7c5f89db1a524ca9e623",
+      "bytes": 74
+    },
+    {
+      "path": "input-snapshot/docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+      "sha256": "c08d7a351c2ae40d921b0e996ca817b4f789c51072fbf2b6eb9a2de6f6fe8967",
+      "bytes": 11147
+    },
+    {
+      "path": "input-snapshot/docs/A_READABLE_MATTER_LAW_EXISTS_ON_THE_5X5X5_WINDOW_THE_DESIGNED_LAWS_RECORD_TABLE_COMPLETED_BY_A_COVARIANT_PARITY_RULE_HAS_EVERY_MENU_NONEMPTY_IS_READ_FROM_PARTIAL_BLOCKS_AND_KEEPS_THE_FERMION_BOUNDED_NOTE_2026-09-04.md",
+      "sha256": "5f859ec1067ace794e2587f23f1c614fb2d5f549810f385f2ce4b0ddaca502ca",
+      "bytes": 28320
+    },
+    {
+      "path": "input-snapshot/docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md",
+      "sha256": "c277ca66054a47ac0183e1a7d806acf0fee01167915d8b70746125d73a5a56f4",
+      "bytes": 17954
+    },
+    {
+      "path": "input-snapshot/docs/FINITE_BKSF_SIGN_AND_SUPERLATTICE_MARKER_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "bdaccbb0c4a000d0ae339af2e71dc9f0989be3266488b61050e57ca902c172c9",
+      "bytes": 17808
+    },
+    {
+      "path": "input-snapshot/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "input-snapshot/docs/THE_DESIGNED_MATTER_LAW_IS_READ_FROM_RECORDS_ONLY_WHERE_ITS_ROLE_ALPHABET_REALISES_AN_ADJACENCY_THE_ROLE_TABLE_IS_BLIND_ON_95_PERCENT_OF_PARTIAL_ENTRIES_WHILE_EVERY_TWO_AND_THREE_SITE_RECORD_PATTERN_IS_EXERCISED_BOUNDED_NOTE_2026-09-04.md",
+      "sha256": "e91d69dd7f92176d7906f7b332fe9238f07a5ea366b41c197f72efcba5269357",
+      "bytes": 26688
+    },
+    {
+      "path": "input-snapshot/docs/THE_SUPERLATTICE_ROLE_PATTERN_IS_A_NEXT_NEAREST_NEIGHBOUR_SUPPORT_RULE_OVER_ROLES_AND_ROLES_ARE_NOT_RECORD_VALUES_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "f8abdba5e12c4375eb13c68c7fe8a7c2633c83928308357da273259cf4c5d5cd",
+      "bytes": 21862
+    },
+    {
+      "path": "input-snapshot/logs/runner-cache/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.txt",
+      "sha256": "6f413d11150b305cbd469424c46420d402a9fcdf5c107ccf53a4c2f802734388",
+      "bytes": 9424
+    },
+    {
+      "path": "input-snapshot/logs/runner-cache/readable_matter_law_on_5x5x5_window_parity_completion_check_2026_09_04.txt",
+      "sha256": "a0f7f450b1b929c19aa1c2f810611746431c12c5297247cf016c7e9179bb99ed",
+      "bytes": 6293
+    },
+    {
+      "path": "input-snapshot/logs/runner-cache/role_pattern_next_nearest_neighbour_rule_roles_not_records_check_2026_09_04.txt",
+      "sha256": "69f107a44d6ac87978b20511a08de11a3d2f2698d48fdd3af21c09271b5a05ff",
+      "bytes": 5989
+    },
+    {
+      "path": "input-snapshot/scripts/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.py",
+      "sha256": "0a9c83ee2a65eb0a55b2afc83443bbc84b6dcc3acc554ddec1c8c6d1eae85e3a",
+      "bytes": 64065
+    },
+    {
+      "path": "input-snapshot/scripts/readable_matter_law_on_5x5x5_window_parity_completion_check_2026_09_04.py",
+      "sha256": "90d0bb69f74059cf1015417ea9243360a9c3d4c58f495f86ba36545a9068f608",
+      "bytes": 75115
+    },
+    {
+      "path": "input-snapshot/scripts/role_pattern_next_nearest_neighbour_rule_roles_not_records_check_2026_09_04.py",
+      "sha256": "88163e64ebb280a6b6a6a78d42edb3de8a62544ad457c580599f1896ed02f69a",
+      "bytes": 40740
+    },
+    {
+      "path": "input_controls.py",
+      "sha256": "e371f0f5d3b499bc887ab1c569fcfd52cb46ec43b83f024a24d2681e55ac296e",
+      "bytes": 3810
+    },
+    {
+      "path": "matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.diff",
+      "sha256": "66321902721d368951e4eb05bf4baf6737e253e69648e2f11d0ddfa6484b7276",
+      "bytes": 18862
+    },
+    {
+      "path": "preservation.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preservation.stdout",
+      "sha256": "2cd221d798b868e506dd0a18e96197a26eb76178bf4a23adda13e865a3617af2",
+      "bytes": 129
+    },
+    {
+      "path": "preservation_addendum.py",
+      "sha256": "6242d0d33a9e7e48cf4d4bcf95c8ef025b5681f137a3736d9936f81c91dff30c",
+      "bytes": 3202
+    },
+    {
+      "path": "readable_matter_law_on_5x5x5_window_parity_completion_check_2026_09_04.diff",
+      "sha256": "29646a5d8b1b95860b350b208f5a032b71879ef66eed1305bd39034312c8298d",
+      "bytes": 25616
+    },
+    {
+      "path": "role_pattern_next_nearest_neighbour_rule_roles_not_records_check_2026_09_04.diff",
+      "sha256": "d389c4d7a93bf07c7717154576be53a6c46a8a0fd4883dcf3c143bfb85c84de6",
+      "bytes": 16064
+    },
+    {
+      "path": "seal_confirmation.py",
+      "sha256": "26750efea5f540b68899d35131de94e573b3b4c471f3e733ea71839f09cf6420",
+      "bytes": 10341
+    },
+    {
+      "path": "verify_binding.first.py",
+      "sha256": "c5700f24248edfbf9b21c2bb9c5921cfa3b73e216fa91fa8225f006113003af5",
+      "bytes": 8375
+    },
+    {
+      "path": "verify_binding.py",
+      "sha256": "d975ddadfe3d2fc1f9469341ed1d4637629e13e3dcc06afb18eac904aa8d633b",
+      "bytes": 8659
+    },
+    {
+      "path": "verify_binding.second.py",
+      "sha256": "4aba54201a86d8101db9d325dc0952511f0a8816e13d91db0fcbb7f48977a982",
+      "bytes": 8382
+    },
+    {
+      "path": "w39-binding.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "w39-binding.stdout",
+      "sha256": "4bc6f4f1debaef2320160833fddec379ddbaacab1f90c13ba5be4dac91e81539",
+      "bytes": 668
+    },
+    {
+      "path": "w39-final-input-snapshot/docs/A_READABLE_MATTER_LAW_EXISTS_ON_THE_5X5X5_WINDOW_THE_DESIGNED_LAWS_RECORD_TABLE_COMPLETED_BY_A_COVARIANT_PARITY_RULE_HAS_EVERY_MENU_NONEMPTY_IS_READ_FROM_PARTIAL_BLOCKS_AND_KEEPS_THE_FERMION_BOUNDED_NOTE_2026-09-04.md",
+      "sha256": "31bbe6cb6d105b8cd2bfb4480159a2b06c722de928d2e6085d1f33d1017c2426",
+      "bytes": 28370
+    },
+    {
+      "path": "w39-final-input-snapshot/docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md",
+      "sha256": "c277ca66054a47ac0183e1a7d806acf0fee01167915d8b70746125d73a5a56f4",
+      "bytes": 17954
+    },
+    {
+      "path": "w39-final-input-snapshot/docs/FINITE_BKSF_SIGN_AND_SUPERLATTICE_MARKER_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "bdaccbb0c4a000d0ae339af2e71dc9f0989be3266488b61050e57ca902c172c9",
+      "bytes": 17808
+    },
+    {
+      "path": "w39-final-input-snapshot/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "w39-final-input-snapshot/logs/runner-cache/readable_matter_law_on_5x5x5_window_parity_completion_check_2026_09_04.txt",
+      "sha256": "013e5b4bfc248d4fa6e8464d61ae044b6e1975430e0313b1e0bfe5958f376415",
+      "bytes": 6293
+    },
+    {
+      "path": "w39-final-input-snapshot/scripts/readable_matter_law_on_5x5x5_window_parity_completion_check_2026_09_04.py",
+      "sha256": "a7816114c1954d4f63e196d32f92fd590c95492b25b5c3336a8fc7cf37e29e04",
+      "bytes": 75115
+    },
+    {
+      "path": "w39-input-drift.stderr",
+      "sha256": "966b565972b2cb1e5adf9e2fb05aa7e94e3f41dccac7f3ae61f56d063cc1f11b",
+      "bytes": 1153
+    },
+    {
+      "path": "w39-input-drift.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "artifact_count": 113
+}

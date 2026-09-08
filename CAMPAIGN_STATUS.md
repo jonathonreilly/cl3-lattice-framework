@@ -50,20 +50,17 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. The corrected support/readout and twelve-scope DK/OS successor are now
-   on main alongside the earlier reviewed science. BACKLOG_STATUS.md and the
-   canonical reconciliation hold exact current counts and source boundaries.
-   Role-law #7939/#7977/#7982 has a sealed author correction with fourteen findings
-   addressed and genuine final checks 57/62/63 all passing. Wave29 is composed;
-   backlog_draft_triage performs original-session final confirmation before the
-   combined gate. backlog_8001_review resumes original #5966 source/premise work;
-   no prior partial preparation grants PASS. Root prepares provisional Cycle904
-   fixes while that review continues. Original nonabelian #7908/#7914 review is
-   sealed with twelve finding groups; root prepares corrections. A separate
-   owner-requested blind Astra-low/Sol-xhigh pilot reviews the same original source
-   under identical instructions; see REVIEWER_MODEL_PILOT.md. Sixty-six closed scopes
-   remain pending at six open successors. Fixed 254 membership, all transitive
-   reservations and formal audit deferral remain.
+1. W29 corrected finite role laws and static matter-readout source is on main.
+   BACKLOG_STATUS and the canonical reconciliation hold the exact 93-open
+   backlog and accepted-source boundaries. Root authors #7908/#7914 repairs;
+   backlog_batch_contract authors #5966/#5950/#5952 from its sealed original
+   review. Original reviewers retain final source confirmation. The SU3 #7933
+   original is in bounded independent review with ready-confirmation priority.
+   The completed blind Astra-low/Sol-xhigh pilot is recorded in REVIEWER_MODEL_PILOT.
+   The owner selected Astra low for focused landing review, with targeted escalation
+   of unresolved questions to Astra xhigh. Detailed certification waits for audit.
+   Sixty-six closed scopes remain pending at six open successors. Fixed original
+   membership, transitive reservations and formal audit deferral remain.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

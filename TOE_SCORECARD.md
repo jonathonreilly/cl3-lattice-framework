@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
 Verified source/status snapshot: 2026-09-08 UTC, main
-`8257bddfc97ab763d208b43e9bdc8677fe89b1e8`. This is a planning map, not
+`e4b4fd46dbdc075a218387a0c23a1a2739f4f01c`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -78,3 +78,5 @@ evidence and unresolved uncertainty. Full scopes and final reports are indexed
 by BACKLOG_STATUS.md; previous per-wave narratives remain archived in history.
 
 W28 adds fifteen reviewed conditional support/readout and DK/OS source notes. Their finite/model/physical-law limits remain explicit. The 17 pending mechanical ledger entries confer no formal audit grade; see MAIN_STATUS_SNAPSHOT.json.
+
+W29 adds three reviewed conditional role/support notes. Static catalog assumptions, physical formation and encoding remain distinct; 20 newer source notes await mechanical ledger refresh, with no audit grade. See MAIN_STATUS_SNAPSHOT.json.

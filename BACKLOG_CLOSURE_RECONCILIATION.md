@@ -1,15 +1,13 @@
 # Backlog closure and scientific-content reconciliation
 
-Generated from BACKLOG_CLOSURE_RECONCILIATION.json at 2026-09-08T13:43:24.049734+00:00, main `8257bddfc97ab763d208b43e9bdc8677fe89b1e8`.
-Prior dispositions remain in planning commit `aa73dc4fbf6f909407eac36be3b23429af10a274` and individual prior-disposition records.
+Generated at 2026-09-08T15:03:12.035702+00:00, main `e4b4fd46dbdc075a218387a0c23a1a2739f4f01c`.
 
-**86 scientific scopes newly landed: 46 direct science closures and 40 earlier consolidated scopes.**
-One meta and one process PR are separate. 158 originals are closed and 96 open.
-Of 110 other closures,66 scientific scopes remain pending at 6 open successors;
-2 were preexisting-main supersessions, 1 empty and 1 unexecuted plan. No reopening required.
-A reviewed correction may narrow or withdraw an unsupported raw assertion.
+89 scientific scopes newly landed: 49 direct plus 40 consolidated.
+One meta and one process PR separate.161 originals closed,93 open.
+66 earlier-closed scientific scopes remain pending at six open successors.
+Historical sources remain recoverable; no audit grade follows from closure.
 
-| Original PR | Closure action | Current scope status | Accepted main or open successor |
+| Original PR | Closure action | Current scope status | Accepted main or successor |
 | --- | --- | --- | --- |
 | #5950 | source_consolidation_exact | pending_on_open_successor | #5966 |
 | #5952 | source_consolidation_exact | pending_on_open_successor | #5966 |
@@ -147,6 +145,7 @@ A reviewed correction may narrow or withdraw an unsupported raw assertion.
 | #7934 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |
 | #7936 | source_consolidation_exact | reviewed_corrected_scope_on_main | `94e90cbf928cb35fa1b50e894cd897c94b73077f` |
 | #7937 | source_consolidation_exact | reviewed_corrected_scope_on_main | `94e90cbf928cb35fa1b50e894cd897c94b73077f` |
+| #7939 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `e4b4fd46dbdc075a218387a0c23a1a2739f4f01c` |
 | #7941 | source_consolidation_exact | reviewed_corrected_scope_on_main | `60b98160bdab0a4aed2069da47bb8e1ed674c29d` |
 | #7942 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `d81f3c22117522411c20fb6c38eef5874c4765ae` |
 | #7943 | source_consolidation_exact | pending_on_open_successor | #7966 |
@@ -159,7 +158,9 @@ A reviewed correction may narrow or withdraw an unsupported raw assertion.
 | #7963 | source_consolidation_exact | pending_on_open_successor | #7966 |
 | #7972 | closed_directly_after_landing | reviewed_process_scope_on_main | `47da12268436ee1843e822386477aa2c829d95a9` |
 | #7976 | closed_directly_after_landing | reviewed_meta_synthesis_scope_on_main | `2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f` |
+| #7977 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `e4b4fd46dbdc075a218387a0c23a1a2739f4f01c` |
 | #7980 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `66b1b4f8a964f4011a3f4e7876369b7daf8e1834` |
+| #7982 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `e4b4fd46dbdc075a218387a0c23a1a2739f4f01c` |
 | #7983 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2d0f551dcd8bd444daee85b97811cda53da0661e` |
 | #7984 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `66b1b4f8a964f4011a3f4e7876369b7daf8e1834` |
 | #7990 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `eed3c68fffdd8f912a6a4b4bc2e0098184fb3b2b` |

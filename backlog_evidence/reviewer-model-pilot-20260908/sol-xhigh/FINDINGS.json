@@ -1,0 +1,90 @@
+{
+  "reviewer_arm": "sol-xhigh",
+  "utc_start": "2026-09-08T14:37:19Z",
+  "utc_end": "2026-09-08T15:03:29Z",
+  "frozen_original_tree": "311884f5b5516ba1dac437e7b75db2533a41c71e",
+  "pinned_repository_commit": "8257bddfc97ab763d208b43e9bdc8677fe89b1e8",
+  "overall_disposition": "not_ready_support_only_demotion_and_narrow_correction",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "major",
+      "disposition": "science-needed",
+      "file": "packet/docs/THE_RECORD_READABLE_GAUGE_INVARIANT_ALGEBRA_IS_COLOUR_BLIND_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line": "65-71,87-94,102,136-146,152-154,198-204",
+      "claim": "The full record-basis diagonal algebra R is exactly the physically record-readable algebra supplied by the current Record axiom, so R intersect I exhausts what records can register.",
+      "evidence": "The pinned current Record axiom only says actual readout values are determined by record content; it does not state the converse that every diagonal function is an available readout, and it keeps readout-context selection and physical-observable identification outside the axioms. The cited record-map source is an unaudited proposal based on superseded axiom wording and requires a supplied decomposition and predicate.",
+      "recommended_correction": "Call R the declared record-diagonal candidate algebra and make registrability conditional, or supply an explicit retained sufficiency/readout-context premise. Remove the confinement and exhaustive-readability interpretation until that bridge exists."
+    },
+    {
+      "id": "F2",
+      "severity": "major",
+      "disposition": "support-only demotion",
+      "file": "packet/docs/A_NON_ABELIAN_GAUSS_LAW_HAS_NO_RECORD_PATTERN_SOLUTIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line": "20-28,92-96,182-197,231-250,327-329",
+      "claim": "The abelian companion established site-level support forcing in any formation order, so zero non-abelian record-pattern singlets proves the strong sector is unreachable through the Record/Admissibility mechanism.",
+      "evidence": "At pinned commit 8257bdd, the abelian companion lines 94 and 163-169 explicitly limit its calculation to set-theoretic projections and disclaim probabilities, global compatibility, fine-site nearest-neighbor implementation, covariance, and a physical formation process.",
+      "recommended_correction": "Retain only the finite statement that no declared computational record-basis vector lies in the joint Gauss kernel and the 0-versus-1312 model comparison. Remove physical reachability/formation conclusions and name the missing local-law/readout bridge."
+    },
+    {
+      "id": "F3",
+      "severity": "major",
+      "disposition": "fix on main",
+      "file": "packet/docs/THE_RECORD_READABLE_GAUGE_INVARIANT_ALGEBRA_IS_COLOUR_BLIND_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line": "22,104-110,136-146,154,202-204",
+      "claim": "Eighty-two rank-one commuting projectors on the 82-dimensional Gauss sector separate every physical state and lose nothing.",
+      "evidence": "A complete commuting rank-one measurement fixes only basis probabilities. The distinct rays (|0>+|1>)/sqrt(2) and (|0>+i|1>)/sqrt(2) have identical probabilities (1/2,1/2) under the two rank-one basis projectors, while their overlap squared is 1/2.",
+      "recommended_correction": "Say that the projectors distinguish 82 one-dimensional joint eigenspaces or basis rays. Require informational completeness or an explicit coherence-removing superselection premise before claiming arbitrary-state resolution."
+    },
+    {
+      "id": "F4",
+      "severity": "major",
+      "disposition": "fix on main",
+      "file": "packet/scripts/record_readable_gauge_invariant_algebra_colour_blind_check_2026_09_03.py",
+      "line": "424-446",
+      "claim": "The record map D and the Gauss projector Pi do not commute, proving there is no canonical readable part of a gauge-invariant operator.",
+      "evidence": "Pi is never defined or constructed; the note defines only the Hilbert-space projector P_G, for which P_G C_0 P_G=0 rather than C_0. The C3 condition simply repeats that D(C_0) is not invariant while C_0 is invariant. It proves D does not preserve I, not non-existence. A normalized-trace conditional expectation onto the already computed component algebra is E(M)=sum_c Tr(P_c M)/rank(P_c) P_c.",
+      "recommended_correction": "Define Pi, directly evaluate both compositions on a witness, and narrow the conclusion to failure of the chosen dephasing D to preserve gauge invariance. Remove categorical non-canonicity unless a formal criterion is supplied and ruled out."
+    },
+    {
+      "id": "F5",
+      "severity": "moderate",
+      "disposition": "science-needed",
+      "file": "packet/scripts/record_readable_gauge_invariant_algebra_colour_blind_check_2026_09_03.py",
+      "line": "459-476",
+      "claim": "Every rank at least one tensor operator has a zero Gauss-sector block.",
+      "evidence": "The runner evaluates only 28 selected operators and does not define irreducible tensor rank or prove the universal Wigner-Eckart selection rule. Reducible operators may contain scalar parts unless excluded.",
+      "recommended_correction": "Qualify the result to the 28 tested operators, or define the representation-theoretic class and prove by gauge averaging that every nontrivial irreducible tensor has zero singlet-to-singlet block."
+    },
+    {
+      "id": "F6",
+      "severity": "moderate",
+      "disposition": "fix on main",
+      "file": "packet/docs/THE_RECORD_READABLE_GAUGE_INVARIANT_ALGEBRA_IS_COLOUR_BLIND_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line": "120-126,136-146",
+      "claim": "An abelian group stabilizes the record basis up to phase, so the contrast isolates non-abelian structure alone.",
+      "evidence": "The one-qubit abelian action exp(-i theta X) mixes the Z record basis; the Z-diagonal algebra commuting with X has dimension 1 rather than 2. The runner proves only that the chosen Q_v generators are diagonal.",
+      "recommended_correction": "Restrict the mechanism to the declared representations: diagonal Q_v leaves all of R invariant, while off-diagonal support of the chosen SU(2) generators reduces the intersection."
+    },
+    {
+      "id": "F7",
+      "severity": "moderate",
+      "disposition": "science-needed",
+      "file": "packet/scripts/non_abelian_gauss_law_no_record_pattern_solutions_check_2026_09_03.py",
+      "line": "462-499",
+      "claim": "Schmidt rank two of the unique singlet in one fixed occupation/orientation sector proves the entire corner constraint is a record-value condition in no single-site product basis.",
+      "evidence": "An entangled vector can lie in a coordinate constraint subspace; the Bell state lies in span{|00>,|11>}. The inference is therefore invalid. The E2 predicate checks Schmidt values but not the specific signed Bell vector it prints. A separate full-projector commutant control supports the intended conclusion but is absent from the source proof.",
+      "recommended_correction": "Replace the Schmidt-only inference with an exact full rank-5 corner-projector test showing there is no nontrivial commuting local axis on every record factor, or restrict the basis-independence claim to transformations preserving the selected sectors."
+    },
+    {
+      "id": "F8",
+      "severity": "moderate",
+      "disposition": "fix on main",
+      "file": "packet/docs/A_NON_ABELIAN_GAUSS_LAW_HAS_NO_RECORD_PATTERN_SOLUTIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line": "1-4,159-180,216-226,276-293",
+      "claim": "The projector extrema/hull and E_0=-sqrt(34) are presented with exact equality or grouped under exact finite-algebra language.",
+      "evidence": "The runner uses floating numpy.linalg.eigh, tolerance cuts, and floating projectors for these quantities. The exact character integral certifies dimension 82 but does not certify projector entries or the radical energy equality. D5 prints max_diag=0.25 but its predicate checks only max_diag<1-1e-6.",
+      "recommended_correction": "Use numerical labels and approximation symbols consistently. Supply exact rational/symbolic projector and characteristic-polynomial certificates if exact identities are intended."
+    }
+  ]
+}

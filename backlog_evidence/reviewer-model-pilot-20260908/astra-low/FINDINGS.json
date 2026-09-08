@@ -1,0 +1,38 @@
+[
+  {
+    "id": "F1",
+    "severity": "P1",
+    "file": "docs/THE_RECORD_READABLE_GAUGE_INVARIANT_ALGEBRA_IS_COLOUR_BLIND_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "line": 110,
+    "claim": "The 82 rank-one commuting projectors separate every physical state, losing nothing.",
+    "evidence": "A complete commuting set separates its 82 joint eigenvectors, not all states in their 82-dimensional span. For two labels |a>, |b>, the orthogonal physical states (|a>+|b>)/sqrt(2) and (|a>-|b>)/sqrt(2) have identical probabilities for every element of R intersection I. The gauge-invariant operator |a><b|+|b><a|, extended by zero outside the Gauss sector, distinguishes them with expectations +1 and -1. controls.json reproduces the two-dimensional calculation. The rank-one/projector gate at runner lines 485-498 cannot detect this loss of coherence.",
+    "recommended_correction": "Preserve the complete commuting set result; replace all-state resolution and lossless language (also introduction, corollary, C7 output and review record) with separation of 82 joint eigenstates / recovery of their populations. Explicitly state that relative phases and general density matrices are not resolved."
+  },
+  {
+    "id": "F2",
+    "severity": "P1",
+    "file": "docs/THE_RECORD_READABLE_GAUGE_INVARIANT_ALGEBRA_IS_COLOUR_BLIND_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "line": 106,
+    "claim": "D and the Gauss projector fail to commute, hence there is no canonical readable part or projection onto R intersection I.",
+    "evidence": "Failure of D to preserve I is valid, but does not rule out a canonical conditional expectation onto A=R intersection I. With the already-computed component projectors P_c, E_A(M)=sum_c tr(P_c M)/tr(P_c) P_c is the unique Hilbert-Schmidt orthogonal projection onto A, trace-preserving, unital and completely positive. It is defined from exactly the existing matrix algebra and component partition, fixes A and discards other information. A small component example in controls.json verifies idempotence and trace preservation. Also Pi in the proof is an operator-space projection onto the commutant (e.g. Haar twirling), not the defined Hilbert-space Gauss projector P_G: P_G C_0 P_G=0, not C_0. Runner C3 tests only the previously established nonmembership and does not implement either projection.",
+    "recommended_correction": "Define Haar twirling Pi separately from P_G. Retain D(I) not subset I and the noncommutation of D with Pi; remove the impossibility of canonical projection. Give E_A explicitly, or restrict the negative claim to D alone and note that selecting a physical measurement interpretation remains additional work."
+  },
+  {
+    "id": "F3",
+    "severity": "P2",
+    "file": "docs/THE_RECORD_READABLE_GAUGE_INVARIANT_ALGEBRA_IS_COLOUR_BLIND_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "line": 126,
+    "claim": "The contrast is caused by non-abelian structure alone; an abelian group stabilises the record basis up to phase.",
+    "evidence": "Abelianity permits a simultaneous eigenbasis; it does not align that basis with the declared records. On this very carrier, the four generators G_v^1 commute across corners and generate an abelian subgroup, but their off-diagonal support has exactly the same connected components as the union of G_v^{1,2}: each elementary matter/link colour flip has nonzero real G^1 coefficient and the same support in G^2. Thus the readable commutant is still 1296-dimensional for this abelian control, with the record basis and carrier unchanged. The simpler single-qubit abelian generator X gives diagonal commutant dimension one; controls.json verifies [Z,X] has maximum magnitude 2.",
+    "recommended_correction": "Keep the exact Q_v control. Attribute its readability to the Q_v representation being record-diagonal, and remove the claim that commutativity alone makes every record value physical. Include the G_v^1 abelian control or expressly limit the comparison to the declared Q_v embedding."
+  },
+  {
+    "id": "F4",
+    "severity": "P2",
+    "file": "scripts/record_readable_gauge_invariant_algebra_colour_blind_check_2026_09_03.py",
+    "line": 516,
+    "claim": "The declared open-string state has reproducible fixed support counts and numerical matter readouts.",
+    "evidence": "psi_p is chosen as column zero of an eigensolver basis for a 94-dimensional degenerate kernel. That vector is not uniquely specified by the mathematical construction and may change under admissible rotations within the kernel or LAPACK versions. Nonetheless D4, D5 and D7 require supports (174,174,348), exactly 23 occupied classes and readouts 0.793369885/0.606802758. A valid alternative highest-weight state fixes every link orientation to i; sets n_f0=0; and puts matter/rishon singlets at corners 1,2,3 with the corner-0 rishon up. It is j=1/2 only at corner 0, has Q0=1 and rho0^3=0, one readable class and 8 fine patterns, while retaining TV=1 between partners and complete gauge-invariant colour blindness. The originals pass on this environment; this is a portability/definition defect, not an observed runtime or symmetry failure.",
+    "recommended_correction": "Declare a deterministic state independently of eigensolver basis, for example project a fixed vector into the kernel and normalize with a nonzero check, or use the explicit product of singlets. Regenerate state-specific numbers. Gate invariant properties separately from optional historical vector-dependent values."
+  }
+]
