@@ -12,3 +12,7 @@ Next trace action: finish current-source independent checks of the real-control 
 ## Third checkpoint
 
 PR8036 supplies the stated finite thermal-state preparation bridge within its conditional apparatus class. Physical preparation/control selection remains the same strongest open premise. The electromagnetic branch now has a validated small-system energy-response estimator without a forward genealogy and a larger-system forward reference. Next trace action is complex-source RK calibration, component-symmetry/elastic-mass analysis and a falsifiable infrared discriminator. These support a candidate gauge-observable lane; they do not derive the physical electromagnetic identification or uniform thermodynamic limit.
+
+## Fourth checkpoint
+
+Constructive component symmetry supplies an exact missing premise for interpreting the declared Fourier response as inelastic; it doesnot select the physical component. The largerL4quadratic-source RK calibration is independently consistent with an independent finite-chain reference. Tinylinear-source curvature fails allprecisionrequirements, so noinverse-moment inference is carried. Next route is an exactgeometric-elementary-lag regularized resolvent atRK and a separatelycontrolled detunedfirstmoment comparison. Finite regularization cannot excludeweaksofttails or provea pole.

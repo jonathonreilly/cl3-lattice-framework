@@ -1,0 +1,7 @@
+# Independent completed-pilot review
+
+PASS within the stated finite nominal diagnostic scope. Read complete current analyzer, original analyzer, production report and protocol-bearing driver; independently recomputed raw paired derivatives, replica SE, independent32-chain RK reference means, all32 consistency/precision/half-window/step/population gates. Maximum statistic residual4.34e−19; all gates agree and pass. Reconstructed reference means2.257110595703125 and2.282562255859375. This reference is independent finite-chain data, not an exact stationary oracle.
+
+Checked all16 raw cell resource caps, source hashes, replica seed schedule, postconditions and40-element energy/source windows with E=λX. Fullpaired covariance is appropriate; eight replicas per population, not128 independent derivative samples. The exact source diff from9a46fd18 to f300d54d is solely bool(...) around the unchanged precision predicate. No changed statistic, sample or gate. Report84ddb0e251218e2c24af9453ce462a04e64b07db46ed47bda6b405aac4980e00 matches scope. Original serialization failure preserved. This independent post-review reuses the already validated geometry/kernel authority; it does not independently rerun production or prove mixing. Passing broad reference-error consistency does not remove finite-step/population bias, and no photon/pole claim follows. No blocker found.
+
+Full hashes and actual independent recomputation in RESULT.json; source check.py saved in this directory. No author files were edited.

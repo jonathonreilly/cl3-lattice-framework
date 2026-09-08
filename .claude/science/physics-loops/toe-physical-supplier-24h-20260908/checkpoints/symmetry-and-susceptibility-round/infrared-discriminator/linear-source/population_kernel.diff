@@ -1,0 +1,20 @@
+--- 
++++ 
+@@ -5,7 +5,7 @@
+ 
+ @njit(cache=True)
+ def source_norm(obs):
+-    return np.sum(obs*obs)
++    return obs[0]
+ 
+ @njit(cache=True)
+ def branch_value(count,xvalue,delta_v,lam,shift,M):
+@@ -62,7 +62,7 @@
+     for j in range(burn):
+         states,counts,obs,anc,eff=sweep(states,counts,obs,anc,dv,lam,shift,coeff,faces,affected,affected_counts,interval);minimum=min(minimum,eff)
+         if j>=burn-n:
+-            ns[j-burn+n]=np.mean(counts);xs[j-burn+n]=np.sum(obs*obs)/P
++            ns[j-burn+n]=np.mean(counts);xs[j-burn+n]=np.mean(obs[:,0])
+             for w in range(P):maximum_drift=max(maximum_drift,np.max(np.abs(obs[w]-literal_O(states[w],coeff))))
+             if not np.isfinite(maximum_drift) or maximum_drift>1e-10:raise ValueError('Fourier cache drift')
+     return states,counts,obs,ns,xs,minimum,maximum_drift,len(np.unique(anc))/P
