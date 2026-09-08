@@ -1,0 +1,152 @@
+{
+  "source_hashes": {
+    "scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py": "fd53bf2252114fdd51f1895448924a5852cc1a1ac98d91a2346e7982a028a41d",
+    "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py": "3c21b773f6f6334ee0beca676695e89555a1357cda66c4a65e19d5fb83d9adf5"
+  },
+  "checks": [
+    {
+      "name": "Final actual finite D1-D8 source",
+      "verified": true,
+      "pass_count": 8
+    },
+    {
+      "name": "Actual spectral domains independently extended to mass -1.3",
+      "verified": true,
+      "mass": -1.3,
+      "C_fixed_h_error": 2.6,
+      "PT_fixed_h_error": 2.6,
+      "CP_opposite_h_error": 0.0,
+      "square_error": 0.0
+    },
+    {
+      "name": "Actual spectral domains independently extended to mass 0",
+      "verified": true,
+      "mass": 0,
+      "C_fixed_h_error": 0.0,
+      "PT_fixed_h_error": 0.0,
+      "CP_opposite_h_error": 0.0,
+      "square_error": 0.0
+    },
+    {
+      "name": "Actual spectral domains independently extended to mass 0.37",
+      "verified": true,
+      "mass": 0.37,
+      "C_fixed_h_error": 0.74,
+      "PT_fixed_h_error": 0.74,
+      "CP_opposite_h_error": 0.0,
+      "square_error": 0.0
+    },
+    {
+      "name": "Actual affected D7 rejects second-scalar",
+      "verified": true,
+      "source_block_sha256": "2e1a91ddfcf788861441f0c494af20b6e5335ec7a02eef7850f88c8198e4e627",
+      "fails": 1
+    },
+    {
+      "name": "Actual affected D7 rejects omitted-improper",
+      "verified": true,
+      "source_block_sha256": "644a73f48156950cd347ab02637d1f459e88ac75c9242d609daea072dee78066",
+      "fails": 1
+    },
+    {
+      "name": "Fixed finite small-field response and isolated-projector domain",
+      "verified": true,
+      "gap": 9.544487155443981e-05,
+      "perturbation_norm_bound_at_1e7": 8e-07,
+      "fields": [
+        {
+          "h": 1e-07,
+          "expectation": -0.008146899981136935,
+          "residual": 2.7246053513515833e-14
+        },
+        {
+          "h": 1e-09,
+          "expectation": -8.14801367684248e-05,
+          "residual": 5.662541313962011e-14
+        },
+        {
+          "h": -1e-09,
+          "expectation": 8.14800251009995e-05,
+          "residual": 4.543823753680283e-14
+        }
+      ]
+    },
+    {
+      "name": "C conjugation is not the first excitation and finite cat is not pure two strings",
+      "verified": true,
+      "weight": 0.9457509493983371,
+      "Cg_error": 5.847698602912741e-16,
+      "gap": 0.07816296975176196
+    },
+    {
+      "name": "Actual final added R1/R2/R5 blocks pass independently",
+      "verified": true
+    },
+    {
+      "name": "Actual new predicate rejects finite-field-saturation",
+      "verified": true,
+      "fails": 1,
+      "affected_source_sha256": "acd835214127e8a03a8fe73eee2dc8ff8d2f8c1490a3576372fafdc6d200a946"
+    },
+    {
+      "name": "Actual new predicate rejects conjugate-excitation",
+      "verified": true,
+      "fails": 1,
+      "affected_source_sha256": "a74cbe9f4a5a7eb76302611c53e7ab295a444ae9b0bfa5d9e510d818dbbc4a0a"
+    },
+    {
+      "name": "Actual new predicate rejects joint-law-duplicate",
+      "verified": true,
+      "fails": 1,
+      "affected_source_sha256": "288a736a4e5a513b64b27b1d9023d2afdbf9b7f74ba04457df2d5252ac31d137"
+    },
+    {
+      "name": "Local radial logarithm coefficient from independent integral",
+      "verified": true,
+      "coefficient": 0.025330295910532867,
+      "target": 0.025330295910584444,
+      "rows": [
+        {
+          "m": 0.0001,
+          "I_over_m2": 0.19742558610028355,
+          "remainder": -0.03587506095907558
+        },
+        {
+          "m": 1e-06,
+          "I_over_m2": 0.3140759072554856,
+          "remainder": -0.035875063333553
+        },
+        {
+          "m": 1e-08,
+          "I_over_m2": 0.43072623078492767,
+          "remainder": -0.03587506333379059
+        }
+      ]
+    },
+    {
+      "name": "Full bulk coefficient consistency without subtracting nearly equal kernels",
+      "verified": true,
+      "slope": 0.025330295911922946,
+      "rows": [
+        {
+          "m": 0.0001,
+          "difference_over_m2": 0.2904450558255931,
+          "quadrature_error_estimate": 3.908204583964555e-12
+        },
+        {
+          "m": 1e-05,
+          "difference_over_m2": 0.3487702178445065,
+          "quadrature_error_estimate": 2.971008377244537e-12
+        },
+        {
+          "m": 1e-06,
+          "difference_over_m2": 0.4070953796124283,
+          "quadrature_error_estimate": 9.263671664920122e-13
+        }
+      ],
+      "scope": "bounded numerical support, local proof supplies asymptotic"
+    }
+  ],
+  "full_baselines_repeated": false,
+  "new_parent_campaigns": false
+}

@@ -1,0 +1,7 @@
+# Preserved reviewer harness incidents
+
+The first binding helper compared `extract_citations` output directly to claim-ID strings. The actual API returns Paths. Its assertion and exact script/log are preserved as first-verify_binding.py/log. The corrected external helper derives IDs with the actual claim_id_from_path API. No candidate source changed and no scientific execution occurred in that failed helper.
+
+The first affected-control helper copied an execution namespace but left the `check` function's globals pointing to the original dictionary; the copied PASS counter consequently remained zero. The exact script and assertion traceback are preserved as first-affected_math.py/log. The original source's check function was rebound by compiling its unchanged AST into the scoped namespace. This was a harness bookkeeping failure, not an altered scientific predicate. Its intermediate redirected buffer was in memory at failure and was not separately retained; the corrected successful run and every resulting adverse block output are fully captured. No whole original baseline was run in either attempt.
+
+The author's separate real Hartree 27/1 and sparse stored-zero failure are preserved in its immutable 228-artifact packet, as are its preparation failures. Its one affected refresh changes the genuine source/input identity and reports 28/0. I inspected the diagnosis, precise CSR numerical-zero repair, actual wrapper and pre/post identities. No failed check was hidden.

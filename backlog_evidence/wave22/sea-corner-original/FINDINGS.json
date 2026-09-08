@@ -1,0 +1,491 @@
+{
+  "verdict": "CHANGES REQUIRED",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P2",
+      "prs": [
+        7883
+      ],
+      "title": "The general row-cover forcing iff is false in both directions",
+      "problem": "On the actual antiperiodic4^3 projector, recording all six row0 neighbors with three occupied and three empty has probability1/64 and leaves n0 odds1/2. Conversely the exact inclusion-minimal11-set T=[0,2,3,4,5,12,13,16,17,48,49] has detP_T=0 and all ten-site deletion minors positive. Recording T\\{0} occupied has probability3125/7962624 and forces n0=0 although row-support neighbor1 is absent. E3 tests only uniformly occupied row support and one deletion; it cannot establish the unrestricted iff.",
+      "narrow_fix": "Retain the additive formula when the observed block is on the opposite sublattice with P_R=I/2. State forcing there using the occupied/empty weighted sum; uniform occupied or uniform empty row-cover is a sufficient special case. For arbitrary positive-probability observations use the actual conditional Schur diagonal reaching0 or1, and withdraw both universal row-cover directions in all claim/summary surfaces. Preserve both exact counterexamples.",
+      "evidence": [
+        "DECISIVE_MATH_CONTROLS.json",
+        "EXACT_MINIMAL_AND_FORCING.json"
+      ],
+      "anchors": [
+        {
+          "path": "docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 217,
+          "needle": "**The forcing criterion.**",
+          "source_line": "3. `[numerical, 1e-12]` **The forcing criterion.** The support sum of `P_vu^2` is exactly `1/4`, so the odds reach `0` or `1` if and only if the record set covers the whole support of the kernel's row: `6`, `81` and `108`",
+          "sha256": "ba967fd8c65818517eede8f5a5b7d7ecb2c89fcd1ba32a9ebd634b6209703d49"
+        },
+        {
+          "path": "docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 237,
+          "needle": "No finite set of records forces",
+          "source_line": "2. **The neighbourhood's reach is not capped, and it is not extra structure.** It arrives through the lattice's own kernel: the same matrix that fixes the sea fixes how far a record is felt. No finite set of records forces a",
+          "sha256": "ba967fd8c65818517eede8f5a5b7d7ecb2c89fcd1ba32a9ebd634b6209703d49"
+        },
+        {
+          "path": "scripts/record_statistics_of_the_half_filled_sea_are_determinantal_check_2026_09_03.py",
+          "line": 1047,
+          "needle": "def group_E",
+          "source_line": "def group_E():",
+          "sha256": "66e9816d6b1b62685b78aa0a0531781b9fba6adf6e8f88c64888f9fc42e51f54"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "priority": "P2",
+      "prs": [
+        7883
+      ],
+      "title": "The rank4 one-particle union is not the N2 E=-4 ground manifold",
+      "problem": "B4 builds the projector onto characters(7,3,5,6), with trace4. Its pair minors sum6 and minimum3/16; filling it is an N4 Slater state at energy-6. The actual N2 E=-4 manifold has dimension3. Its normalized mixed-state full-pair weights sum1 and are1/48,1/24,1/16. Also the three tested character-basis ground Slaters are not all ground Slaters: the occupied second orbital proportional to chi3+2chi5+4chi6 gives a ground Slater with no forbidden pairs.",
+      "narrow_fix": "Relabel and preserve the rank4 inclusion-minor computation as a distinct one-particle-union control. If retaining the manifold comparison, compute its normalized many-body projector explicitly. Restrict the twelve-zero claim to the three declared character-basis states, and keep the state-versus-manifold contrast accurately.",
+      "evidence": [
+        "DECISIVE_MATH_CONTROLS.json",
+        "quoted-context/RECORD_FORMATION_ON_THE_EMERGENT_VACUUM_PARITY_FORCED_ODDS_BOUNDED_THEOREM_NOTE_2026-09-02.md"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/record_statistics_of_the_half_filled_sea_are_determinantal_check_2026_09_03.py",
+          "line": 685,
+          "needle": "Pm = rational_kernel",
+          "source_line": "    Pm = rational_kernel((7, 3, 5, 6))",
+          "sha256": "66e9816d6b1b62685b78aa0a0531781b9fba6adf6e8f88c64888f9fc42e51f54"
+        },
+        {
+          "path": "docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 159,
+          "needle": "The rank-`4` projector",
+          "source_line": "3. `[exact]` The rank-`4` projector onto the whole `E = -4` manifold has `0` vanishing pair minors of `28`, the smallest being `3/16`.",
+          "sha256": "ba967fd8c65818517eede8f5a5b7d7ecb2c89fcd1ba32a9ebd634b6209703d49"
+        },
+        {
+          "path": "docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 155,
+          "needle": "Each of the three",
+          "source_line": "1. `[exact]` Each of the three `E = -4` Slater states has a rank-`2` kernel whose pair minors take exactly two values, `det P_uv = 0` on `12` pairs and `1/16` on `16`, in the closed form `det P_uv = P_uu P_vv - P_uv^2`. For",
+          "sha256": "ba967fd8c65818517eede8f5a5b7d7ecb2c89fcd1ba32a9ebd634b6209703d49"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "prs": [
+        7883
+      ],
+      "title": "Finite fits and unconditioned reach become universal conditional claims",
+      "problem": "The corollary says every record enters with an inverse-sixth weight, wrong-parity separations vanish, and reach is uncapped. The same runner exhibits a conditioned distance2 shift0.059 while the original P_vu=0, so the unconditional row-selection rule does not survive arbitrary conditioning. All fixed finite menus yield a finite collection of probabilities, not a continuum. The Bloch run uses48^3 cell momenta and eight internal sites, equivalent to a96^3 physical torus; it does not use96^3 momentum blocks or establish an infinite-distance asymptotic.",
+      "narrow_fix": "Retain the single-record formula and exact finite selection checks; distinguish the updated conditional kernel and its exhibited nonlocal effects. Label48^3 momenta/96^3 physical extent, finite fit range and realized slopes consistently. Remove uncapped/continuum and universal conditional sixth-power statements; keep a thermodynamic/asymptotic question open.",
+      "evidence": [
+        "baseline/7883/stdout.txt",
+        "PROOF_REVIEW.md"
+      ],
+      "anchors": [
+        {
+          "path": "docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 234,
+          "needle": "Admissibility's law-level distribution at a site",
+          "source_line": "1. Admissibility's law-level distribution at a site is here an explicit function of **all** the records present, through the one kernel `P`. The six neighbours enter additively with weight `2 P_vu^2`; every other record",
+          "sha256": "ba967fd8c65818517eede8f5a5b7d7ecb2c89fcd1ba32a9ebd634b6209703d49"
+        },
+        {
+          "path": "docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 237,
+          "needle": "The neighbourhood's reach is not capped",
+          "source_line": "2. **The neighbourhood's reach is not capped, and it is not extra structure.** It arrives through the lattice's own kernel: the same matrix that fixes the sea fixes how far a record is felt. No finite set of records forces a",
+          "sha256": "ba967fd8c65818517eede8f5a5b7d7ecb2c89fcd1ba32a9ebd634b6209703d49"
+        },
+        {
+          "path": "docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 240,
+          "needle": "the odds take a continuum",
+          "source_line": "   cosets: a uniform law on an `F2` subspace. On the half-filled sea the odds take a continuum of values, every record is felt, forcing is a covering condition on a kernel row, and the zeros are vanishing determinants: a",
+          "sha256": "ba967fd8c65818517eede8f5a5b7d7ecb2c89fcd1ba32a9ebd634b6209703d49"
+        },
+        {
+          "path": "scripts/record_statistics_of_the_half_filled_sea_are_determinantal_check_2026_09_03.py",
+          "line": 1018,
+          "needle": "nc = 48",
+          "source_line": "    nc = 48",
+          "sha256": "66e9816d6b1b62685b78aa0a0531781b9fba6adf6e8f88c64888f9fc42e51f54"
+        }
+      ]
+    },
+    {
+      "id": "F4",
+      "priority": "P2",
+      "prs": [
+        7883
+      ],
+      "title": "Order-independence check passes with zero order comparisons",
+      "problem": "Replacing the actual permutations(range(3)) by[(0,1,2)] leaves C4-C7 PASS4/0. C7 still counts448 conditions but compares no order pairs. The original mathematical commuting-projector statement is valid; the promised2240 executed comparisons are unguarded.",
+      "narrow_fix": "Bind the exact executed(condition,order) keys and2240 comparisons, preserving all original cases and predicates. Reject missing/duplicate order controls with the actual corrected source.",
+      "evidence": [
+        "actual-mutants/7883_C7_pristine/stdout.txt",
+        "actual-mutants/7883_C7_single_order/stdout.txt",
+        "ACTUAL_MUTANTS.json"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/record_statistics_of_the_half_filled_sea_are_determinantal_check_2026_09_03.py",
+          "line": 857,
+          "needle": "for perm in itertools.permutations(range(3))",
+          "source_line": "            for perm in itertools.permutations(range(3)):",
+          "sha256": "66e9816d6b1b62685b78aa0a0531781b9fba6adf6e8f88c64888f9fc42e51f54"
+        },
+        {
+          "path": "scripts/record_statistics_of_the_half_filled_sea_are_determinantal_check_2026_09_03.py",
+          "line": 884,
+          "needle": "zcomm and nsets == 448",
+          "source_line": "          zcomm and nsets == 448 and bad == 0 and worst < 1e-14)",
+          "sha256": "66e9816d6b1b62685b78aa0a0531781b9fba6adf6e8f88c64888f9fc42e51f54"
+        }
+      ]
+    },
+    {
+      "id": "F5",
+      "priority": "P2",
+      "prs": [
+        7900
+      ],
+      "title": "Finite schedule results are overgeneralized and the40-order sweep is not enforced",
+      "problem": "The original U2 result keeps cancellation zeros in only3/4 declared orders; the summary omits that qualifier. Proper-unit relaxation conclusions range over the listed finite schedules, not all proper subsets or orders. Changing actual LEX_N40\u21921 and executing the actual D5 sweep/check still passes1/0, despite omitting39 schedules of each type. The source also drops branches of conditional mass<=1e-12, so its whole/exact-tree rhetoric needs its existing tolerance boundary carried through.",
+      "narrow_fix": "Keep the listed schedules, numbers, useful eigenvector mechanism and conditional all-dwell inference. Qualify every unit/relaxation summary by the actual orders and numerical thresholds. Bind all40 actual lexicographic keys, intended coverage and claimed realized counts; explicitly account for ignored branch probability or narrow exact-exhaustion wording. Do not replace this by an unrestricted no-go.",
+      "evidence": [
+        "baseline/7900/stdout.txt",
+        "actual-mutants/7900_D5_one_lex_order/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/joint_formation_corner_record_set_keeps_sea_zeros_check_2026_09_03.py",
+          "line": 631,
+          "needle": "if pb <= PTOL",
+          "source_line": "            if pb <= PTOL:",
+          "sha256": "4b611dc3c9807f55335cdc55c962d7d3e38cd88b7a3199fa5e8ea8ddbd0fa48a"
+        },
+        {
+          "path": "scripts/joint_formation_corner_record_set_keeps_sea_zeros_check_2026_09_03.py",
+          "line": 541,
+          "needle": "LEX_N = 40",
+          "source_line": "LEX_N = 40  # the declared lexicographic sweep: first LEX_N permutations",
+          "sha256": "4b611dc3c9807f55335cdc55c962d7d3e38cd88b7a3199fa5e8ea8ddbd0fa48a"
+        },
+        {
+          "path": "scripts/joint_formation_corner_record_set_keeps_sea_zeros_check_2026_09_03.py",
+          "line": 868,
+          "needle": "lex_full[(\"U2\", \"A\")] > 0",
+          "source_line": "    lex_full[(\"U2\", \"A\")] > 0 and lex_full[(\"U3\", \"A\")] == 0",
+          "sha256": "4b611dc3c9807f55335cdc55c962d7d3e38cd88b7a3199fa5e8ea8ddbd0fa48a"
+        },
+        {
+          "path": "scripts/joint_formation_corner_record_set_keeps_sea_zeros_check_2026_09_03.py",
+          "line": 1044,
+          "needle": "SUMMARY: under the unitary tick",
+          "source_line": "    \"SUMMARY: under the unitary tick, records forming together on a corner's record set keep all 256 cancellation zeros that \"",
+          "sha256": "4b611dc3c9807f55335cdc55c962d7d3e38cd88b7a3199fa5e8ea8ddbd0fa48a"
+        },
+        {
+          "path": "docs/JOINT_FORMATION_ON_A_CORNERS_RECORD_SET_KEEPS_THE_SEAS_ZEROS_UNDER_THE_UNITARY_TICK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 319,
+          "needle": "under relaxation no proper unit does",
+          "source_line": "unit keeps the sea's zeros under the unitary rule and the face unit does not, and under relaxation no proper unit does -- on one named finite cluster, sector and filling; the",
+          "sha256": "c6b1399951903173e7c45c44ad3c8838a57918c266d2de33d557d3f944268848"
+        }
+      ]
+    },
+    {
+      "id": "F6",
+      "priority": "P2",
+      "prs": [
+        7902
+      ],
+      "title": "The two-star marginal conclusion must stay with the tested pairs",
+      "problem": "The note/summary generalize the three uniform examples to disjoint/nonadjacent stars and say the two-corner marginal cannot see the difference. On the same actual slab, corners0 and5 are nonadjacent and their stars are disjoint, yet P_05=(1-sqrt2)/8\u2248-0.0517767 and <B0B5>=-0.0107233, so their initial joint record law is not uniform. The tested degree3 pair(0,11) has six edge records, not eight. A selected marginal can be uninformative without every two-star marginal being so.",
+      "narrow_fix": "State the actual pair list,6/8 edge counts, initial conditions and tested times. Retain the computed blindness of those specific comparisons, and the full-law difference. Do not claim all nonadjacent pairs or all smaller marginals are blind. Retain the positive two-branch spectral theorem with explicit nonzero branch probabilities and commuting spectral P.",
+      "evidence": [
+        "DECISIVE_MATH_CONTROLS.json",
+        "baseline/7902/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/corner_eigenvector_two_mode_spectral_condition_check_2026_09_03.py",
+          "line": 808,
+          "needle": "compare the 8-edge record law",
+          "source_line": "    \"disjoint star(w), compare the 8-edge record law with the sea's: TV = %s at the degree-4 pair (1,10) where the \"",
+          "sha256": "622e0626769ae7122bacce7edbdc306bad38c4c48e82a24e1e1546c62bb78a84"
+        },
+        {
+          "path": "scripts/corner_eigenvector_two_mode_spectral_condition_check_2026_09_03.py",
+          "line": 830,
+          "needle": "the sea's joint record law on two disjoint stars",
+          "source_line": "    \"F2 [numerical, 1e-12] T5, why: the sea's joint record law on two disjoint stars is exactly uniform (max |p - \"",
+          "sha256": "622e0626769ae7122bacce7edbdc306bad38c4c48e82a24e1e1546c62bb78a84"
+        },
+        {
+          "path": "docs/THE_CORNER_EIGENVECTOR_PROPERTY_IS_A_TWO_MODE_SPECTRAL_CONDITION_EXACT_ON_FLAT_BANDS_NOT_GENERAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 43,
+          "needle": "two-corner marginal",
+          "source_line": "next_trace_action: \"Carry the V x V two-mode screen into the tick lane: any candidate cluster and flux sector can now be tested for the corner eigenvector property by one eigendecomposition of the one-particle matrix, before any many-body run, and the tick lane's next computations should report the full record law rather than a two-corner marginal, which T5 shows is blind to the failure.\"",
+          "sha256": "d57db9e1f4e5618c876014c5cbcc99905684a1162a4e49fa06c2d3860be50b95"
+        }
+      ]
+    },
+    {
+      "id": "F7",
+      "priority": "P2",
+      "prs": [
+        7902,
+        7904
+      ],
+      "title": "Minimum support size7 does not classify the whole minimal family",
+      "problem": "The exact11-site support witness in F1 lies in the same flat4^3 model, contains no closed star, and every deletion minor is strictly positive rational. It is itself inclusion-minimal and contradicts the whole minimal family title and flat-band minimal-answer claims. The original<=7 enumeration correctly identifies the minimum size and the64 attainers at that size. Nonflat slab middle-layer stars also survive, so flatness is sufficient for the displayed corollary, not necessary for any singular star.",
+      "narrow_fix": "Preserve all original scan data and narrow the result to minimum-cardinality supports and the64 size7 attainers. Withdraw the classification of all inclusion-minimal supports and flatness-as-necessity wording in note, runner summaries and packet claims. Add/preserve the exact larger-support counterexample as a classification fence.",
+      "evidence": [
+        "EXACT_MINIMAL_AND_FORCING.json",
+        "DECISIVE_MATH_CONTROLS.json",
+        "baseline/7904/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "docs/THE_SEAS_CANCELLATION_ZEROS_ARE_A_DETERMINANT_CRITERION_CLOSED_STARS_ONLY_ON_FLAT_BANDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 46,
+          "needle": "whole minimal family",
+          "source_line": "The target is the conjunction of the six statements below, exactly the runner's check groups `A`-`F`: `T1` (`A`) the cube control; `T2` (`B`) the `2x2x3` slab's full `2^20` census; `T3` (`C`) the failure of the closed-star description one cube taller; `T4` (`D`) the criterion, its mechanism, and its flat-band collapse; `T5` (`E`) the antiperiodic `4^3` torus and the complete enumeration that makes the closed stars the whole minimal family there; `T6` (`F`) the `6^3` and `8^3` tori, where no closed star is singular and no exact zero is found in the scanned range. Each carries its own tag: `[exact]` where the arithmetic is integer, combinatorial or a set equality, and `[numerical]` with a stated tolerance where it is floating point.",
+          "sha256": "a895a411e6f9c22e6f06ec92ef55e902bd504be826709acd875946263c5af805"
+        },
+        {
+          "path": "docs/THE_SEAS_CANCELLATION_ZEROS_ARE_A_DETERMINANT_CRITERION_CLOSED_STARS_ONLY_ON_FLAT_BANDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 146,
+          "needle": "its minimal answers are the corners",
+          "source_line": "**Reading, not theorem.** The forbidden patterns are a property of the vacuum's own correlations, not of the shape of a neighbourhood. A set of corners has zero odds of all being occupied exactly when the empty band has a state living entirely inside that set. On a flat band, and only there, that condition reduces to a purely combinatorial one, and its minimal answers are the corners with their neighbours.",
+          "sha256": "a895a411e6f9c22e6f06ec92ef55e902bd504be826709acd875946263c5af805"
+        },
+        {
+          "path": "scripts/sea_cancellation_zeros_determinant_criterion_check_2026_09_03.py",
+          "line": 825,
+          "needle": "stars are the whole family",
+          "source_line": "    \"\"\"The antiperiodic 4^3 torus: the flat band survives, and the stars are the whole family.\"\"\"",
+          "sha256": "010a6fffed86abb59fef5c6a90419154e78500e4d2a63a79cce135314670f67c"
+        },
+        {
+          "path": "scripts/corner_eigenvector_two_mode_spectral_condition_check_2026_09_03.py",
+          "line": 760,
+          "needle": "and it BREAKS where the bands are not flat",
+          "source_line": "    \"E2 [numerical, 1e-9] T4, and it BREAKS where the bands are not flat -- declared fixed tables, no seeds: hop-sign \"",
+          "sha256": "622e0626769ae7122bacce7edbdc306bad38c4c48e82a24e1e1546c62bb78a84"
+        }
+      ]
+    },
+    {
+      "id": "F8",
+      "priority": "P2",
+      "prs": [
+        7904
+      ],
+      "title": "The declared singular cutoff contradicts the larger-family result",
+      "problem": "Definitions says DET_TOL=1e-12 is used everywhere. Actual BALLS20 determinants fall below it in36/216 placements on6^3 and56/512 on8^3, with minima2.83088e-13 and5.02891e-13. F5 nevertheless passes and declares no zero by switching to per-site geometric mean>0.20. The independently measured principal-eigenvalue margins are positive (~1.24e-4 and2.35e-4), supporting a separate finite nonsingularity diagnostic, but do not retroactively make the advertised cutoff pass.",
+      "narrow_fix": "Preserve the original cutoff, failed classification under it and all original data. Separate determinant-magnitude screening from a clearly declared new nonsingularity diagnostic (e.g. principal-eigenvalue margin with numerical error control); qualify exact-zero claims accordingly. Do not silently weaken or relabel the original protocol.",
+      "evidence": [
+        "DETERMINANT_THRESHOLD_CONTROL.json",
+        "scan-controls-attempt1.stderr",
+        "baseline/7904/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "docs/THE_SEAS_CANCELLATION_ZEROS_ARE_A_DETERMINANT_CRITERION_CLOSED_STARS_ONLY_ON_FLAT_BANDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 86,
+          "needle": "Two thresholds are declared before the run and used everywhere",
+          "source_line": "A **record** at an edge site registers a bit; a finished set of records is `z in {0,1}^E`, and its **corner-occupation pattern** is `n(z)`. The map `z -> n(z)` is `F_2`-linear onto the even-weight subspace with kernel the cycle space, so each realised corner pattern carries a **coset** of `2^{E-V+1}` records. **The odds** of a record set are its Born weight in the sea. A **charge zero** is a record set with `N(z) != N`; a **cancellation zero** is a record set at `N(z) = N` whose odds still vanish. A corner set `T` is **singular** when `det P_T = 0`. A band is **flat** when `h^2 = cI`. Two thresholds are declared before the run and used everywhere: a record set counts as a zero when its odds are below `1e-20` times the largest odds in the census, and a corner set counts as singular when `|det P_T| < 1e-12`.",
+          "sha256": "a895a411e6f9c22e6f06ec92ef55e902bd504be826709acd875946263c5af805"
+        },
+        {
+          "path": "scripts/sea_cancellation_zeros_determinant_criterion_check_2026_09_03.py",
+          "line": 486,
+          "needle": "DET_TOL = 1e-12",
+          "source_line": "DET_TOL = 1e-12          # declared before the run: |det P_T| < DET_TOL is singular",
+          "sha256": "010a6fffed86abb59fef5c6a90419154e78500e4d2a63a79cce135314670f67c"
+        },
+        {
+          "path": "scripts/sea_cancellation_zeros_determinant_criterion_check_2026_09_03.py",
+          "line": 996,
+          "needle": "all(m ** (1.0 / sz) > GEO_TOL",
+          "source_line": "          all(m ** (1.0 / sz) > GEO_TOL for _, _, sz, m in fam[6])",
+          "sha256": "010a6fffed86abb59fef5c6a90419154e78500e4d2a63a79cce135314670f67c"
+        }
+      ]
+    },
+    {
+      "id": "F9",
+      "priority": "P2",
+      "prs": [
+        7904
+      ],
+      "title": "Count-only enumeration guards accept an omitted/repeated support",
+      "problem": "Replacing one actually generated nonstar size7 set with another nonstar preserves the row count, maximum eigenvalues and all64 star hits. Actual E1-E6 still passes6/0. The omitted set[0,48,60,63,62,58,10] is replaced by[0,48,60,63,62,58,42]. Complete enumeration is load-bearing for the minimum claim; row count alone is not its promised executed-key coverage.",
+      "narrow_fix": "Bind canonical unique executed sets with distinctness, connectivity/size and expected complete census validation, retaining the independent small-graph brute-force check or an equivalent independent enumeration certificate. Reject an omission/duplicate at the actual scientific check, preserving all existing sizes and predicates.",
+      "evidence": [
+        "actual-mutants/7904_E_duplicate_nonstar/stdout.txt",
+        "ENUMERATION_MUTANT.json",
+        "DECISIVE_MATH_CONTROLS.json"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/sea_cancellation_zeros_determinant_criterion_check_2026_09_03.py",
+          "line": 862,
+          "needle": "tot == 1391280",
+          "source_line": "          tot == 1391280",
+          "sha256": "010a6fffed86abb59fef5c6a90419154e78500e4d2a63a79cce135314670f67c"
+        },
+        {
+          "path": "scripts/sea_cancellation_zeros_determinant_criterion_check_2026_09_03.py",
+          "line": 868,
+          "needle": "len(hits[7]) == 64 and got7 == set(st)",
+          "source_line": "          len(hits[7]) == 64 and got7 == set(st))",
+          "sha256": "010a6fffed86abb59fef5c6a90419154e78500e4d2a63a79cce135314670f67c"
+        }
+      ]
+    },
+    {
+      "id": "F10",
+      "priority": "P2",
+      "prs": [
+        7904
+      ],
+      "title": "The written readout mixes a vertex set with edge-record bits",
+      "problem": "Definitions assigns star(v)={v} union N(v), a closed set of vertices, then writes n_v(z)=parity(z & star(v)) for z in F2^E. The actual implementation uses the distinct incident-edge mask En.STARMASK[v]. The two sets have different carriers/cardinalities; interpreting the displayed formula literally changes the readout.",
+      "narrow_fix": "Use separate typed names for incident-edge star and closed vertex star throughout Definitions and the claim block. Keep the implemented edge-parity dictionary and every original numeric result unchanged.",
+      "evidence": [
+        "PROOF_REVIEW.md"
+      ],
+      "anchors": [
+        {
+          "path": "docs/THE_SEAS_CANCELLATION_ZEROS_ARE_A_DETERMINANT_CRITERION_CLOSED_STARS_ONLY_ON_FLAT_BANDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 82,
+          "needle": "star(v) = {v} u N(v)",
+          "source_line": "star(v) = {v} u N(v)                                             the closed corner star of v",
+          "sha256": "a895a411e6f9c22e6f06ec92ef55e902bd504be826709acd875946263c5af805"
+        },
+        {
+          "path": "docs/THE_SEAS_CANCELLATION_ZEROS_ARE_A_DETERMINANT_CRITERION_CLOSED_STARS_ONLY_ON_FLAT_BANDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 83,
+          "needle": "n_v(z)  = parity(z & star(v))",
+          "source_line": "n_v(z)  = parity(z & star(v))                                    the corner readout of a record set",
+          "sha256": "a895a411e6f9c22e6f06ec92ef55e902bd504be826709acd875946263c5af805"
+        },
+        {
+          "path": "scripts/sea_cancellation_zeros_determinant_criterion_check_2026_09_03.py",
+          "line": 224,
+          "needle": "self.STARMASK =",
+          "source_line": "        self.STARMASK = {i: reduce(lambda a, b: a | (1 << b), self.STAR[i], 0)",
+          "sha256": "010a6fffed86abb59fef5c6a90419154e78500e4d2a63a79cce135314670f67c"
+        }
+      ]
+    },
+    {
+      "id": "F11",
+      "priority": "P2",
+      "prs": [
+        7883,
+        7900,
+        7902,
+        7904
+      ],
+      "title": "Bind the conditional supplier/current premise boundary in actual source and packets",
+      "problem": "All four canonical notes quote the current memo and make physical/Admissibility interpretations, while actual note-ID consumers return no citations and all primaries declare no inputs. Own-note and quoted-memo mutations leave all actual caches fresh. The full historical supplier immediately qualifies its marker rule as a5x5x5 direct dependence with a nearest-neighbor replacement still open; selected prose instead calls its physical superlattice identification unproblematic. Historical parent quotations and recomputed finite identities are not acceptance of the parents complete science.",
+      "narrow_fix": "Keep the standalone conditional Hamiltonian/state/instrument results. Explicitly leave the physical nearest-neighbor carrier, formation law and state selection unresolved, without a new primitive or broad parent import. Add truthful current note/memo declarations/guards and direct actual semantic boundary links where used; zero helper imports remain zero, so do not invent registry entries. Preserve raw historical packets and use a dated correction overlay for current scope/audit deferral. Narrow blanket claims that unreviewed predecessor computations stand to the exact portions compared here.",
+      "evidence": [
+        "PREFLIGHT.json",
+        "BINDING_CONTROLS.json",
+        "CURRENT_CONTEXT_BINDING.json",
+        "QUOTED_CONTEXT_EXCERPTS.txt"
+      ],
+      "anchors": [
+        {
+          "path": "docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 236,
+          "needle": "instantiated exactly",
+          "source_line": "   instantiated exactly, and reading note (3)'s support is the set of patterns of nonzero `det P_S`.",
+          "sha256": "ba967fd8c65818517eede8f5a5b7d7ecb2c89fcd1ba32a9ebd634b6209703d49"
+        },
+        {
+          "path": "docs/THE_SEAS_CANCELLATION_ZEROS_ARE_A_DETERMINANT_CRITERION_CLOSED_STARS_ONLY_ON_FLAT_BANDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 58,
+          "needle": "none of that is at issue here",
+          "source_line": "**Supplied condition one -- the fermion law.** From `origin/physics-loop/emergent-3d-fermion-superlattice-existence`, its Proof boundary verbatim and outranking every summary: \"The law of Theorems 1 to 3 is a **designed supplier model**: Admissibility fixes that there is one covariant nearest-neighbour rule and leaves its form to the supplier, and this note supplies one form and computes its consequences, deriving that form from no axiom and claiming for it no privileged status.\" Everything below inherits that conditional. The lattice itself is physical -- the superlattice role pattern is what carries the coarse corners and edges -- and none of that is at issue here.",
+          "sha256": "a895a411e6f9c22e6f06ec92ef55e902bd504be826709acd875946263c5af805"
+        },
+        {
+          "path": "docs/THE_SEAS_CANCELLATION_ZEROS_ARE_A_DETERMINANT_CRITERION_CLOSED_STARS_ONLY_ON_FLAT_BANDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 185,
+          "needle": "PR #7842 is not wrong anywhere here",
+          "source_line": "3. **The reading is narrowed, and its computation stands.** PR #7842 computes what it says it computes, and its own Proof boundary already limits it: it supplies \"a **dictionary, not a derivation of the exclusion law**\", and \"The exclusion is imported from the structure of the encoding, not deduced from any axiom.\" What this note narrows is the further reading that grew around it and around PR #7895's cross-link -- that the cube's forbidden patterns are the lattice registering a known rule of three-dimensional physics. The sea's cancellation zeros are the **flat-band instance of a determinant criterion**, and whether any selection rule of known physics is registered by the sea's zeros on a large lattice is **open**, with the two tori scanned giving no exact zero in the range scanned. PR #7842 is not wrong anywhere here: its computation stands on the three finite clusters it declares, and the bridged reading does not extend past the flat-band clusters it was read on.",
+          "sha256": "a895a411e6f9c22e6f06ec92ef55e902bd504be826709acd875946263c5af805"
+        },
+        {
+          "path": "docs/JOINT_FORMATION_ON_A_CORNERS_RECORD_SET_KEEPS_THE_SEAS_ZEROS_UNDER_THE_UNITARY_TICK_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 64,
+          "needle": "from which the axioms in",
+          "source_line": "`RECORD_FORMATION_ON_THE_EMERGENT_VACUUM_PARITY_FORCED_ODDS_..._2026-09-02.md` (PR #7858 -- the same cube and encoding); and `MINIMAL_AXIOMS_2026-06-29.md`, from which the axioms in",
+          "sha256": "c6b1399951903173e7c45c44ad3c8838a57918c266d2de33d557d3f944268848"
+        }
+      ]
+    },
+    {
+      "id": "F12",
+      "priority": "P3",
+      "prs": [
+        7883,
+        7900,
+        7902,
+        7904
+      ],
+      "title": "Align arithmetic and numerical labels with the actual quantities",
+      "problem": "7900 docstrings write H^2=-MM^T for H=iM with real skew M, while the correct identity and actual code are +MM^T. 7904 prose counts four off-diagonal entries although there are eight ordered entries/four unordered pairs. Its census lines print the minimum relative probability under the label largest. 7883 says every conditioning removes one particle although empty conditioning leaves N unchanged, and labels some1e-12/1e-10 acceptance predicates as1e-15. These do not defeat the retained finite identities but should not persist as contradictory precision/quantity statements.",
+      "narrow_fix": "Correct the named quantities and exact-versus-numerical labels at every affected prose/check surface, preserving predicates/results and historical receipts. Distinguish the simultaneous occupied/empty-branch iff from a claim about either branch alone, and one spectral direction per occupied/empty eigenspace from a chosen basis eigenvector.",
+      "evidence": [
+        "PROOF_REVIEW.md",
+        "baseline/7883/stdout.txt",
+        "baseline/7904/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/joint_formation_corner_record_set_keeps_sea_zeros_check_2026_09_03.py",
+          "line": 408,
+          "needle": "its square is -M M^T",
+          "source_line": "    about 0, its square is -M M^T, and the ground level is -sqrt(lambda_max).\"\"\"",
+          "sha256": "4b611dc3c9807f55335cdc55c962d7d3e38cd88b7a3199fa5e8ea8ddbd0fa48a"
+        },
+        {
+          "path": "docs/THE_SEAS_CANCELLATION_ZEROS_ARE_A_DETERMINANT_CRITERION_CLOSED_STARS_ONLY_ON_FLAT_BANDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 140,
+          "needle": "exactly **four** off-diagonal entries",
+          "source_line": "4. `[exact]` **The slab is not.** `h^2` has diagonal `deg(v)` -- values `{3, 4}` -- and exactly **four** off-diagonal entries, all `1`, at `(0,2)`, `(3,5)`, `(6,8)`, `(9,11)`: the two ends of each open `z`-column are joined by a **single uncancelled 2-path** through the middle site, with no partner path to cancel it against. `h^2` block-diagonalises over the four columns as `[[3,0,1],[0,4,0],[1,0,3]]`, eigenvalues `{4,4,2}`, giving `spec(h^2) = 2^4 4^8`. **That single uncancelled path is what removes the boundary stars.**",
+          "sha256": "a895a411e6f9c22e6f06ec92ef55e902bd504be826709acd875946263c5af805"
+        },
+        {
+          "path": "scripts/sea_cancellation_zeros_determinant_criterion_check_2026_09_03.py",
+          "line": 568,
+          "needle": "C[\"minrel\"]",
+          "source_line": "          % (C[\"npos\"], C[\"lo\"], C[\"minrel\"], C[\"hi\"], C[\"mid26\"] + C[\"band\"]),",
+          "sha256": "010a6fffed86abb59fef5c6a90419154e78500e4d2a63a79cce135314670f67c"
+        },
+        {
+          "path": "docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 175,
+          "needle": "one particle smaller",
+          "source_line": "   exact projector of rank `N - |O|`: conditioning on a record returns a state of the same kind, one particle smaller.",
+          "sha256": "ba967fd8c65818517eede8f5a5b7d7ecb2c89fcd1ba32a9ebd634b6209703d49"
+        }
+      ]
+    }
+  ],
+  "scope": "Original selected twelve-source tree; no source repair, audit status or inherited parent acceptance"
+}
