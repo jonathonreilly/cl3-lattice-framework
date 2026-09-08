@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/weak-u-isolated-0tblzvrv/scripts/native_weak_electric_defect_density_2026_09_08.py", line 21, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/weak-u-isolated-0tblzvrv/scripts/native_weak_electric_defect_density_2026_09_08.py", line 15, in main
+    result=runpy.run_path(str(root/AUDIT_INPUT_PATHS[-1]))['check']()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/weak-u-isolated-0tblzvrv/scripts/native_weak_electric_defect_density_controls_2026_09_08.py", line 55, in check
+    require(prefactor*prefactor*3==bound_coefficient,'quadratic coefficient');quadratic_checks+=1
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/weak-u-isolated-0tblzvrv/scripts/native_weak_electric_defect_density_controls_2026_09_08.py", line 7, in require
+    if not c:raise ValueError(s)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: quadratic coefficient

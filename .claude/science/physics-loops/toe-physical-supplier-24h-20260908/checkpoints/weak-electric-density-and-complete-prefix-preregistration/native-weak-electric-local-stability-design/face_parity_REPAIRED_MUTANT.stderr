@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-weak-electric-local-stability-design/face_parity_REPAIRED_MUTANT.py", line 41, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--json',action='store_true');p.parse_args();print(json.dumps(check(),indent=2))
+                                                                                                             ^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-weak-electric-local-stability-design/face_parity_REPAIRED_MUTANT.py", line 29, in check
+    require(len(ce)==len(cf)==4 and shared<=1 and odd==8-2*shared and odd>=6,'noncut witness');count+=1
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-weak-electric-local-stability-design/face_parity_REPAIRED_MUTANT.py", line 7, in require
+    if not c:raise ValueError(s)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: noncut witness

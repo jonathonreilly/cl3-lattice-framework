@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -25,7 +25,7 @@
+   require(len(incident)==6,'six edges')
+   for e,f in combinations(sorted(incident),2):
+    ce=[p for p in faces if e in p];cf=[p for p in faces if f in p]
+-   shared=sum(f in p for p in ce);odd=sum((e in p)!=(f in p) for p in faces)
++   shared=sum(f in p for p in ce);odd=sum((e in p)==(f in p) for p in faces)
+    require(len(ce)==len(cf)==4 and shared<=1 and odd==8-2*shared and odd>=6,'noncut witness');count+=1
+    geom.append({'L':L,'shared_faces':shared,'flipped_faces':odd})
+  delta=F(3,50)-F(15,1024);kappa=delta/8

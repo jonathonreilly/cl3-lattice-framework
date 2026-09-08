@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -28,7 +28,7 @@
+    shared=sum(f in p for p in ce);odd=sum((e in p)!=(f in p) for p in faces)
+    require(len(ce)==len(cf)==4 and shared<=1 and odd==8-2*shared and odd>=6,'noncut witness');count+=1
+    geom.append({'L':L,'shared_faces':shared,'flipped_faces':odd})
+- delta=F(3,50)-F(15,1024);kappa=delta/8
++ delta=F(3,50)-F(15,1024);kappa=delta/4
+  require(delta==F(1161,25600) and F(3,2)/kappa==F(102400,387),'sharp normalization');count+=1
+  # Scalar variational inequalities with a nonnegative perturbation: all rational,
+  # arbitrary mixtures, not claims that noncommuting Gibbs states are classical.

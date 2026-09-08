@@ -1,0 +1,13 @@
+# Independent fixed-pilot replay: PASS
+
+The unchanged preregistered replay was executed once. All 25 exact rational gaps, literal case identities, per-case files, inverse dimensions and denominator diagnostics agree. The minimum is 0.3945478578742174 (display only; exact fractions retained). Source, runtime, singleton parity certificate and external resource receipts passed. The alternative calculation uses a Vandermonde baseline inverse and the symmetric C-inverse Woodbury formula, without author imports. Runtime was 0.5912615419947542 seconds; the internal 170-second/384-MiB checks passed. POST_RESULT preserves the returned result, transcribed from tool stdout without a second execution.
+
+This certifies the fixed 25 cases only. Their lexicographic selection history is unchanged. No inference of positivity for all 4,986 masks follows.
+
+## Prospective full scan
+
+Use the frozen census of 5,110 proper keys and 4,986 unique masks, retaining the full key-to-mask dictionary. Sort unique masks numerically, choose the lexicographically first valid representative/key for each, and split into 52 consecutive shards of at most 96. Six singleton masks receive the already proved parity certificate; retain them in coverage and price them as ordinary cases. No replacements or sign-dependent selection.
+
+The forecast deliberately scales the entire external pilot cost (rounded upward to 2.11 seconds), not only its inversion timer, by 96/25, then charges another entire pilot cost per shard for startup and fixed overhead, and doubles the result. The independent replay similarly uses its entire measured time rounded to 0.60 seconds, with the same scaling, extra fixed charge and factor two. These terms include file I/O and hashing as measured; the extra fixed charge covers repeated startup. Add 60 seconds for final aggregation and receipts. The exact arithmetic is in FULL_SCAN_FORECAST.json. This is a conservative planning heuristic, not a guaranteed runtime bound: unseen rational denominator growth remains a risk.
+
+Propose one shared 1,800-second envelope for production, all 52 independent replays and finalization, with 180 seconds/384 MiB per process and one shared clock. Reserve the full forecasted remaining independent replay/finalization cost before starting each production shard. Every failure, nonpositive certificate and partial receipt remains visible; no alternate Newton parameter, extra pilot, or automatic extension. Freeze actual producer, independent replay adaptation, coverage/receipt checks and resource launcher before authorization. Full positivity is a result to test, not an acceptance premise that licenses dropping failures.
