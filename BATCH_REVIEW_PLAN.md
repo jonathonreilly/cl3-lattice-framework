@@ -169,3 +169,58 @@ scientific disposition even if its PR was already closed. A consolidation retain
 every unresolved proof, premise and evidence obligation at its named open
 successor. Closing that successor requires explicit dispositions or another
 fully preserved transfer; reducing visible PR count alone cannot retire the work.
+
+## Measured throughput adjustment — 2026-09-08
+
+The owner requested further acceleration with 100 original PRs remaining.
+The latest batch took 78.14 elapsed minutes from its original review seal to
+landing; its combined validation took 4.00 minutes. Seven recent combined
+gates have a 3.93-minute median. These are stage-boundary wall times, including
+science, waiting and a nightly-main recomposition, not an active-time profile
+or a measured estimate of avoidable delay. The exact observations and source
+bindings are in [the timing evidence](backlog_evidence/throughput-review-20260908/COORDINATOR_TIMING_EVIDENCE.json).
+An independent Astra xhigh reviewer examined the proposed changes and their
+failure cases in [the process review](backlog_evidence/throughput-review-20260908/REVIEW.md).
+
+Apply these scheduling clarifications within the existing landed contract:
+
+- Hand evidenced, bounded findings to a separate author before the original
+  review report is fully packaged, after freezing original source/heads and
+  identifying the affected dependency boundary. The reviewer continues on
+  immutable originals and records later findings or contrary evidence.
+  Early drafting grants no completeness claim or approval; final fixes and
+  executions must incorporate the completed original review.
+- Prioritize a ready correction's same-session final confirmation over new
+  original reviews or long legacy repair work. Checkpoint other work at safe
+  boundaries; preserve active bounded runs and their evidence.
+- Send reviewable draft correction diffs and publication/input placement to
+  the coordinator early, so its source and interaction checks overlap the
+  author's remaining work. Complete the cold diff, prose and input freeze
+  before genuine final caches; never restamp prior output.
+- Keep units with a bounded actual dependency closure moving alongside
+  explicitly resourced legacy restoration. Small nominal diffs alone do not
+  establish bounded closure. Do not starve, discard or count legacy
+  obligations as landed. Combine compatible ready units without a collection
+  wait or a requirement to finish unrelated work.
+
+Tooling work proposed next, not yet implemented or a source of acceptance:
+
+- One tested mechanical utility for complete original/current tree and path
+  accounting, modes, moves/deletions, immutable artifact bindings and exact
+  input/tool/log checks. Cache independently verified immutable Git facts by
+  object identity; new endpoints, changed heads and semantic interactions
+  still require their applicable checks. Existing reading-coverage tooling
+  does not provide this verifier or certify science.
+- One canonical per-unit evidence record with generated status and handoff
+  views. Preserve full scientific explanations, raw outputs, real failures,
+  historical revisions and explicit claim dispositions. Keep initial findings,
+  failed attempts, provisional results and final acceptance distinct.
+
+Measure original review, repair, final confirmation, coordinator handling and
+mechanical validation separately over the next three batches. Record overlap
+and blocking events; report a speedup only after comparison. No throughput
+quota grants a scientific result. Complete independent final-unit/lens review,
+independent mathematics, constituent content preservation, same-session final
+confirmation, current-main science-loss/interaction checks, one combined gate,
+transitive reservations and the original cutoff remain unchanged. Formal audit
+continues to wait for a solid TOE. No automatic science retry is authorized.
