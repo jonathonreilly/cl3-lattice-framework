@@ -1,5 +1,7 @@
 # Milestone delivery state
 
-No new science PR has yet been opened for this24-hour campaign. The initial supplier round is a research checkpoint on the dedicated branch. Focused independent mathematical checks are complete for its frozen preparation/reset scope; formal submission conformance and the negative packet remain pending. This is not a network failure and no audit verdict is implied.
+PR8036 is open: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8036
 
-Next delivery decision: consolidate a useful affirmative preparation result and any quantitatively new resource result into one self-contained milestone, or retain a research checkpoint if the remaining scope cannot meet submission rules honestly. The source/action and calibrated ice tasks continue independently.
+Branch codex/native-product-to-gibbs-20260908, commit a6d2c27c2c, base2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307, worktree /private/tmp/toe-native-product-to-gibbs-20260908. It contains the affirmative finite native product-to-Gibbs path construction and separately scoped odd-encoding example. It does not carry the incomplete formal negative packet. Focused reviews, actual mutations, canonical cache, fresh seven-file optimize2 closure, vocabulary/compile/diff checks and citation manifest are complete. Combined current-main landing gates and independent audit remain pending; root has not landed or assigned an effective grade.
+
+The research branch checkpoints all exploratory outcomes, including failures. No electromagnetic PR is forced from estimator calibration alone; first seek a useful independently checked finite-size discriminator. No delivery failure exists.

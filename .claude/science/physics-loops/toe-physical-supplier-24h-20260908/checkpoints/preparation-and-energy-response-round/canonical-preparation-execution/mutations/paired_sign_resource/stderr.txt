@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/canonical-preparation-execution/mutations/paired_sign_resource/scripts/native_product_gibbs_path_2026_09_08.py", line 47, in <module>
+    for b in range(a+1,m):close(f'direct_pair_sign_{a}_{b}',paired_sign(a,b),B[a]@B[b])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/canonical-preparation-execution/mutations/paired_sign_resource/scripts/native_product_gibbs_path_2026_09_08.py", line 40, in close
+    err=float(np.linalg.norm(a-b));residuals[name]=err;check(name,err<tol)
+                                                       ^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/canonical-preparation-execution/mutations/paired_sign_resource/scripts/native_product_gibbs_path_2026_09_08.py", line 38, in check
+    if not condition:raise AssertionError(name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: direct_pair_sign_0_1

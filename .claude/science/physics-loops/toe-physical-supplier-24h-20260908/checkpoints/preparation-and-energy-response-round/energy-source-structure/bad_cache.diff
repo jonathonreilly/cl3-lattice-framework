@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -19,7 +19,7 @@
+     for m in range(len(O)):
+         delta=0.
+         for i in faces[f]:delta+=coeff[m,i]*(1.-2.*state[i])
+-        O[m]+=delta
++        O[m]+=0.
+     return prod.flip_and_update_count(state,f,count,faces,affected,affected_counts)
+ 
+ @njit(cache=True)

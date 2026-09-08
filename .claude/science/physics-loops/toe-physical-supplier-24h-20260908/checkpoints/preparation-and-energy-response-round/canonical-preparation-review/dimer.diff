@@ -1,0 +1,34 @@
+--- /private/tmp/toe-24h-probes-20260908/phase-preparation/check.py
++++ /private/tmp/toe-native-product-to-gibbs-20260908/scripts/native_product_gibbs_dimer_2026_09_08.py
+@@ -1,4 +1,16 @@
+ """Exact physical edge-qubit preparation probe; all physical controls are supplied."""
++AUDIT_TIMEOUT_SEC = 120
++AUDIT_INPUT_PATHS = (
++    "docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md",
++    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
++    "docs/NATIVE_EDGE_RECORD_LOCAL_CYCLE_TRANSPORT_AND_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
++)
++import os
++for resource_variable in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
++    os.environ[resource_variable] = "1"
++from pathlib import Path
++receipt = Path(__file__).resolve().parents[1] / "outputs" / "native_product_gibbs_dimer_2026_09_08.json"
++receipt.parent.mkdir(parents=True, exist_ok=True)
+ from pathlib import Path
+ import hashlib,json
+ import sympy as s
+@@ -83,7 +95,6 @@
+ prob={k:s.simplify(s.trace(x*x.H)/4) for k,x in branches.items()}
+ check('all_outcome_probabilities_sum_one',sum(prob.values())==1)
+ # Actual control changes, retaining the same independently specified target.
+-no_phase=s.simplify(U*(Id-n[3])*0) if False else None
+ K_no_phase=s.simplify(U*n[3]*Ub*(Id-n[2])*Ua*U.H*P)
+ K_wrong_phase=s.simplify((R.H*U)*n[3]*Ub*(Id-n[2])*Ua*(R.H*U).H*P)
+ check('adverse_missing_phase_changes_Kraus',not zero(K_no_phase-F*P))
+@@ -95,5 +106,5 @@
+ Kswap=s.simplify(W*(Id-n[3])*Ub*n[2]*Ua*W.H*Pswap)
+ check('adverse_swapped_ready_values_changes_Kraus',not zero(Kswap-F*Pswap))
+ result={'status':'PASS','source_main':'2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'checks':checks,'TOTAL':{'PASS':len(checks),'FAIL':0},'physical_edge_centers':centers,'ready_rank':str(s.trace(P)),'success_probability':str(weight),'conditional_energy':str(s.simplify(s.trace(t*rho))),'all_branch_probabilities':{k:str(p) for k,p in prob.items()},'physical_scope':'Supplied phase/hopping pulses, diagonal ready preparation and native Born/Lueders leaf events; no primitive formation or action selection derived.'}
+-Path(__file__).with_name('RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
++receipt.write_text(json.dumps(result,indent=2)+'\n')
+ print(json.dumps(result,indent=2))

@@ -1,0 +1,354 @@
+{
+  "populations": {
+    "1024": {
+      "energy_rows": [
+        {
+          "V": 0.93,
+          "mean": -0.5653683471679684,
+          "SE": 0.00017253912654176587,
+          "exact": -0.5653386156689718
+        },
+        {
+          "V": 0.94,
+          "mean": -0.48383056640625044,
+          "SE": 0.0001969593049244591,
+          "exact": -0.48393132133062494
+        },
+        {
+          "V": 0.95,
+          "mean": -0.40272872924804726,
+          "SE": 0.00015941072929124083,
+          "exact": -0.40273650590973076
+        },
+        {
+          "V": 0.96,
+          "mean": -0.32181237792968775,
+          "SE": 0.00012731449828766916,
+          "exact": -0.3217555511995389
+        },
+        {
+          "V": 0.97,
+          "mean": -0.2410751953125002,
+          "SE": 0.00010159899716070207,
+          "exact": -0.24098989668222157
+        }
+      ],
+      "energy_covariance": [
+        [
+          4.763160030047279e-07,
+          -1.294922828674281e-07,
+          -2.594423393408687e-07,
+          8.257699012769745e-09,
+          7.750477790834026e-08
+        ],
+        [
+          -1.294922828674281e-07,
+          6.206874847412169e-07,
+          1.09118223190318e-07,
+          4.15605545044049e-08,
+          -7.183599472046055e-08
+        ],
+        [
+          -2.594423393408687e-07,
+          1.09118223190318e-07,
+          4.0658848981064427e-07,
+          -8.362652858098663e-08,
+          -8.947920799256026e-08
+        ],
+        [
+          8.257699012769745e-09,
+          4.15605545044049e-08,
+          -8.362652858098663e-08,
+          2.593437035878546e-07,
+          9.771976470947293e-08
+        ],
+        [
+          7.750477790834026e-08,
+          -7.183599472046055e-08,
+          -8.947920799256026e-08,
+          9.771976470947293e-08,
+          1.6515769958496555e-07
+        ]
+      ],
+      "moments": [
+        {
+          "valid": true,
+          "value": 1.6588868744222043,
+          "SE": 0.004048226632219115,
+          "h": 0.02,
+          "F": 6,
+          "target": 1.6643146913265114,
+          "target_scope": "finite-stencil/F6",
+          "kinetic_mean": 8.104691085815414,
+          "kinetic_SE": 0.004082964016342152,
+          "denominator_mean": 2.4428100585937496,
+          "denominator_SE": 0.005302008010639004,
+          "consistency_nominal": true,
+          "precision_nominal": true,
+          "pure_error": -0.005446177853962064
+        },
+        {
+          "valid": true,
+          "value": 1.6667577791585049,
+          "SE": 0.006216420809321545,
+          "h": 0.02,
+          "F": 12,
+          "target": 1.6643147092580237,
+          "target_scope": "finite-stencil/pure (F12 sensitivity)",
+          "kinetic_mean": 8.104691085815414,
+          "kinetic_SE": 0.004082964016342152,
+          "denominator_mean": 2.4312744140624996,
+          "denominator_SE": 0.00861865970674004,
+          "consistency_nominal": true,
+          "precision_nominal": true,
+          "pure_error": 0.0024247268823385237
+        },
+        {
+          "valid": true,
+          "value": 1.6576386390325577,
+          "SE": 0.004295255589792337,
+          "h": 0.01,
+          "F": 6,
+          "target": 1.6643284487450924,
+          "target_scope": "finite-stencil/F6",
+          "kinetic_mean": 8.09859268188477,
+          "kinetic_SE": 0.010655825010218608,
+          "denominator_mean": 2.4428100585937496,
+          "denominator_SE": 0.005302008010639004,
+          "consistency_nominal": true,
+          "precision_nominal": true,
+          "pure_error": -0.006694413243608643
+        },
+        {
+          "valid": true,
+          "value": 1.6655036212783063,
+          "SE": 0.005959579988375308,
+          "h": 0.01,
+          "F": 12,
+          "target": 1.6643284666767528,
+          "target_scope": "finite-stencil/pure (F12 sensitivity)",
+          "kinetic_mean": 8.09859268188477,
+          "kinetic_SE": 0.010655825010218608,
+          "denominator_mean": 2.4312744140624996,
+          "denominator_SE": 0.00861865970674004,
+          "consistency_nominal": true,
+          "precision_nominal": true,
+          "pure_error": 0.001170569002139965
+        }
+      ],
+      "denominator_diagnostics": {
+        "6": {
+          "minimum_origin_sum": 2.2832031249999996,
+          "nonpositive_origin_count": 0,
+          "minimum_replica_sum": 2.4157714843749996,
+          "nonpositive_replica_count": 0
+        },
+        "12": {
+          "minimum_origin_sum": 2.3046874999999996,
+          "nonpositive_origin_count": 0,
+          "minimum_replica_sum": 2.3627929687499996,
+          "nonpositive_replica_count": 0
+        }
+      },
+      "paired_sensitivities": [
+        {
+          "name": "step",
+          "difference": 0.0012482353896465792,
+          "SE": 0.0022891235373159293,
+          "exceeds4SE": false
+        },
+        {
+          "name": "forward",
+          "difference": -0.007870904736300588,
+          "SE": 0.004429762322082552,
+          "exceeds4SE": false
+        }
+      ],
+      "noisy_concavity_endpoints": {
+        "lower": 1.6540933182170265,
+        "upper": 1.6636804306273827,
+        "valid": true,
+        "scope": "Noisy nominal estimates, not certified bounds."
+      }
+    },
+    "2048": {
+      "energy_rows": [
+        {
+          "V": 0.93,
+          "mean": -0.5652526702880856,
+          "SE": 0.00012812852906730307,
+          "exact": -0.5653386156689718
+        },
+        {
+          "V": 0.94,
+          "mean": -0.48352816772460977,
+          "SE": 0.00014323339318773014,
+          "exact": -0.48393132133062494
+        },
+        {
+          "V": 0.95,
+          "mean": -0.4029474639892582,
+          "SE": 0.00012297970430705525,
+          "exact": -0.40273650590973076
+        },
+        {
+          "V": 0.96,
+          "mean": -0.3217561035156253,
+          "SE": 8.122009803051506e-05,
+          "exact": -0.3217555511995389
+        },
+        {
+          "V": 0.97,
+          "mean": -0.24105665588378927,
+          "SE": 5.4158364182740604e-05,
+          "exact": -0.24098989668222157
+        }
+      ],
+      "energy_covariance": [
+        [
+          2.6267071937521164e-07,
+          -5.7240472733974536e-08,
+          -1.2734918544681372e-08,
+          -1.4826023578640887e-08,
+          -7.747105509041134e-09
+        ],
+        [
+          -5.7240472733974536e-08,
+          3.282528787851344e-07,
+          4.184650629758524e-08,
+          -2.0037102699280122e-08,
+          4.448188394308276e-08
+        ],
+        [
+          -1.2734918544681372e-08,
+          4.184650629758524e-08,
+          2.419841227432119e-07,
+          2.922358115514356e-08,
+          5.843900516629369e-08
+        ],
+        [
+          -1.4826023578640887e-08,
+          -2.0037102699280122e-08,
+          2.922358115514356e-08,
+          1.0554726918538362e-07,
+          6.166422367094953e-09
+        ],
+        [
+          -7.747105509041134e-09,
+          4.448188394308276e-08,
+          5.843900516629369e-08,
+          6.166422367094953e-09,
+          4.693005457520576e-08
+        ]
+      ],
+      "moments": [
+        {
+          "valid": true,
+          "value": 1.6608818971152586,
+          "SE": 0.002557397889980552,
+          "h": 0.02,
+          "F": 6,
+          "target": 1.6643146913265114,
+          "target_scope": "finite-stencil/F6",
+          "kinetic_mean": 8.102602806091294,
+          "kinetic_SE": 0.0033562917847050856,
+          "denominator_mean": 2.439247131347656,
+          "denominator_SE": 0.0035356466952466865,
+          "consistency_nominal": true,
+          "precision_nominal": true,
+          "pure_error": -0.0034511551609077706
+        },
+        {
+          "valid": true,
+          "value": 1.6607935893586518,
+          "SE": 0.0036627831638937304,
+          "h": 0.02,
+          "F": 12,
+          "target": 1.6643147092580237,
+          "target_scope": "finite-stencil/pure (F12 sensitivity)",
+          "kinetic_mean": 8.102602806091294,
+          "kinetic_SE": 0.0033562917847050856,
+          "denominator_mean": 2.439376831054687,
+          "denominator_SE": 0.0049783998443242265,
+          "consistency_nominal": true,
+          "precision_nominal": true,
+          "pure_error": -0.003539462917514502
+        },
+        {
+          "valid": true,
+          "value": 1.6577083170428866,
+          "SE": 0.0027799877306919807,
+          "h": 0.01,
+          "F": 6,
+          "target": 1.6643284487450924,
+          "target_scope": "finite-stencil/F6",
+          "kinetic_mean": 8.087120513916023,
+          "kinetic_SE": 0.008180083174241863,
+          "denominator_mean": 2.439247131347656,
+          "denominator_SE": 0.0035356466952466865,
+          "consistency_nominal": true,
+          "precision_nominal": true,
+          "pure_error": -0.006624735233279777
+        },
+        {
+          "valid": true,
+          "value": 1.6576201780229836,
+          "SE": 0.0028700900121064496,
+          "h": 0.01,
+          "F": 12,
+          "target": 1.6643284666767528,
+          "target_scope": "finite-stencil/pure (F12 sensitivity)",
+          "kinetic_mean": 8.087120513916023,
+          "kinetic_SE": 0.008180083174241863,
+          "denominator_mean": 2.439376831054687,
+          "denominator_SE": 0.0049783998443242265,
+          "consistency_nominal": true,
+          "precision_nominal": true,
+          "pure_error": -0.006712874253182788
+        }
+      ],
+      "denominator_diagnostics": {
+        "6": {
+          "minimum_origin_sum": 2.3496093749999996,
+          "nonpositive_origin_count": 0,
+          "minimum_replica_sum": 2.4124755859374996,
+          "nonpositive_replica_count": 0
+        },
+        "12": {
+          "minimum_origin_sum": 2.3593749999999996,
+          "nonpositive_origin_count": 0,
+          "minimum_replica_sum": 2.4027099609374996,
+          "nonpositive_replica_count": 0
+        }
+      },
+      "paired_sensitivities": [
+        {
+          "name": "step",
+          "difference": 0.0031735800723720065,
+          "SE": 0.0019416024716208775,
+          "exceeds4SE": false
+        },
+        {
+          "name": "forward",
+          "difference": 8.83077566067314e-05,
+          "SE": 0.0034530740033200088,
+          "exceeds4SE": false
+        }
+      ],
+      "noisy_concavity_endpoints": {
+        "lower": 1.6588644801496342,
+        "upper": 1.6628993140808834,
+        "valid": true,
+        "scope": "Noisy nominal estimates, not certified bounds."
+      }
+    }
+  },
+  "population_comparison": {
+    "valid": true,
+    "difference": -0.0019950226930542936,
+    "combined_SE": 0.004788363272923755,
+    "exceeds4SE": false
+  },
+  "scope": "Nominal independent-replica calibration; no bias/convergence confidence theorem, gap or pole.",
+  "source_sha256": "e67ac524597bf746501c99fcb0dd2eaee15f4dbd93073b35b1c5c3c79fac0e4b"
+}

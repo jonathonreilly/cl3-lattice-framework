@@ -1,0 +1,11 @@
+# Same-session phase-support clarification review
+
+Reviewed complete current author DERIVATION.md SHA eca5aa4cdc5450d4644877b343ffa8728a87a53b9982e6626c0078804b465bd8 against the mathematical scope of my frozen GENERAL_PATH_REVIEW.md SHA cef16bdeccbe58276cc98dbc141ca96dff02e421157cefcad7b2ac18284f0f45.
+
+PASS for the changed analytical compilation statement. An SO(m) diagonal residual has an even number of negative entries. Pairing them at i,j is implemented by exp(i pi(n_i-n_j)); since the occupation differences commute, this equals the product over the intervening adjacent path differences exp(i pi(n_k-n_(k+1))). Its one-particle action is minus one on i and j and identity elsewhere. This is an exact Fock-space equality, including vacuum and occupied sectors, with no untracked global phase. It requires neither an individual n_i phase nor an individual physical B_i gate.
+
+A pair separated by distance j-i uses j-i adjacent difference pulses in this direct construction. With at most floor(m/2) pairs this gives a crude O(m^2) number of such pulses, in addition to the O(m^2) adjacent Givens rotations. Each difference generator is a difference of two native endpoint-star occupation operators. It has bounded physical support on this degree-three tree, but is not thereby a strictly nearest-neighbor two-qubit gate. The existence of these exact pulses, their angles and scheduling remains supplied. The final paragraph of the author proof correctly retains that distinction.
+
+The initial individual-B_j numerical implementation is a broader control realization than this restricted compilation. Preserving it separately and running the paired-phase version is the correct evidence treatment. I have read the new numerical-execution prose but have NOT independently read or verified the revised path_probe.py or its outputs in this delta review; the reported 256-dimensional checks therefore remain author evidence, not my independent numerical verification. The earlier general analytic review and independent 12 controls remain unchanged.
+
+The reviewed source still calls the general extension a proposal pending the finite test; that conservative status is harmless. No claim that q, beta, Born probabilities or the controller is selected from the axioms is justified by this compilation.

@@ -1,0 +1,1 @@
+First exact run failed at RK because the all-ones starting vector is already an exact null eigenvector, producing ARPACK -9. Original source/stderr preserved. Replaced only starting vector by deterministic positive nonconstant 1+i/n for every eigensolve; no Hamiltonian, parameter, observable, tolerance or target change.

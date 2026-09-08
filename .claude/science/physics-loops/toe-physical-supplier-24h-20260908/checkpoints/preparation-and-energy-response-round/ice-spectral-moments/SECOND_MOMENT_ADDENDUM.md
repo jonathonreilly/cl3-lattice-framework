@@ -1,0 +1,3 @@
+# Completion of the preregistered local second-moment variance
+
+The frozen main derivation350edc21 remains unchanged. A separate exact integer-sum check completes the preregistered variance output for Z(x)=|L O(x)|². In integer observable units its mean is128/3 and variance41984/9. In the physical normalization the variance is41/9. Its iid ratio influence variance, retaining the shared O² denominator, is9232/625=14.7712. Three direct identities/positivity controls pass; the checker explicitly reuses check.py and does not constitute another independent implementation. This supplies a finite-noise scale for the second local moment, not a certified correlated-chain sampling error.

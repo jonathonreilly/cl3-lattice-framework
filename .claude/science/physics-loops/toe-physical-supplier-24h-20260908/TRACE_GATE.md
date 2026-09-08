@@ -8,3 +8,7 @@ artifact_role: frontier_probe
 Exact initial interface: native instrument source explicitly leaves preparation, physical admissibility, formation and apparatus control supplied. Source/action priority independently identifies physical source/action response as open. The current preparation construction can replace a thermal-state oracle within its declared apparatus class; it does not close physical law selection. The reset failure prunes that particular target-only code-preserving route. No target claim is promoted and no audit verdict is assigned.
 
 Next trace action: finish current-source independent checks of the real-control barrier and phase-enabled preparation, then decide whether their coherent argument is a useful review milestone. Continue the independent source/action mechanism stretch while that delivery is prepared.
+
+## Third checkpoint
+
+PR8036 supplies the stated finite thermal-state preparation bridge within its conditional apparatus class. Physical preparation/control selection remains the same strongest open premise. The electromagnetic branch now has a validated small-system energy-response estimator without a forward genealogy and a larger-system forward reference. Next trace action is complex-source RK calibration, component-symmetry/elastic-mass analysis and a falsifiable infrared discriminator. These support a candidate gauge-observable lane; they do not derive the physical electromagnetic identification or uniform thermodynamic limit.

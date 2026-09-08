@@ -1,0 +1,7 @@
+# Detuned energy-response moment: fixed exact/stochastic design
+
+Before calculations, 2026-09-08. Supplied H(V)=V Nf-A on the actual864-state L2 mobile component. V0=.95. No new stochastic production is authorized in this stage.
+
+Exact diagnostic: reconstruct the geometric graph, all six source modes, E0 and positive normalized ground state. Freeze central derivative steps h=.02,.01,.005, both second-order and five-point fourth-order stencils. All needed V are <=.99. Primary proposed stochastic stencil is the second-order h=.02 central difference at .93,.97 plus center .95; h=.01 is a separately declared refinement, not chosen from results. Compare pure Nf, pure A, mixed Nf, six-mode pooled first moment, direct spectral numerator and finite-forward F6 diagonal structure factor. Floating checks tolerance1e-9 for operator/identity comparisons, finite-difference error reported without retuning. Keep monotone-energy concavity secant brackets separately: these are exact analytical inequalities, with floating endpoints not claimed interval-certified.
+
+No unknown pointwise ground ratios are used by the proposed stochastic estimator. Ground eigenvectors are held-out finite calibration only. Check adverse substitution of mixed Nf for E0', omission of derivative term and wrong orientation normalization. Root reviews fixed stochastic protocol before any launch. Per command180seconds/384MiB, initialaggregate600seconds, one BLAS thread. No L4 enumeration.

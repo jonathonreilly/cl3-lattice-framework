@@ -1,0 +1,120 @@
+{
+  "checks": {
+    "component": true,
+    "zero_mean": true,
+    "integer_observable": true,
+    "dirichlet_form": true,
+    "local_second_moment": true,
+    "positive_spectral_variance": true,
+    "conditioning_identity": true,
+    "variance_reduction": true,
+    "Ritz_upper_0": true,
+    "Ritz_upper_1": true,
+    "Ritz_upper_2": true,
+    "not_lower_bound": true,
+    "spectral_moments": true,
+    "detuned_weighted_dirichlet": true,
+    "detuned_wrong_uniform_rejected": true,
+    "detuned_mixed_not_pure": true,
+    "resources": true
+  },
+  "count": 17,
+  "moments": [
+    "1",
+    "8/5",
+    "16/5",
+    "80/9",
+    "568/15",
+    "2144/9",
+    "28592/15",
+    "784576/45",
+    "7890176/45"
+  ],
+  "spectral_variance": "16/25",
+  "variance": {
+    "single_face": "75497471/20736",
+    "all_faces": "7168/27",
+    "factor": 13.714285532633463,
+    "ratio_influence_single_face": 25.463466666666665,
+    "ratio_influence_all_faces": 6.4768,
+    "ratio_influence_factor": 3.931488801054018
+  },
+  "ritz": [
+    {
+      "dimension": 1,
+      "nodes": [
+        1.6
+      ],
+      "quadrature_weights": [
+        1.0
+      ],
+      "held_out_moment_errors": {
+        "2": -0.6399999999999997,
+        "3": -4.792888888888888,
+        "4": -31.313066666666664,
+        "5": -227.73646222222223,
+        "6": -1889.3561173333335,
+        "7": -17408.17867662222,
+        "8": -175294.29477148445
+      }
+    },
+    {
+      "dimension": 2,
+      "nodes": [
+        1.3799857955190309,
+        4.50890309336986
+      ],
+      "quadrature_weights": [
+        0.9296835986582034,
+        0.07031640134179669
+      ],
+      "held_out_moment_errors": {
+        "4": -5.432098765432102,
+        "5": -102.52729766803836,
+        "6": -1308.856089010821,
+        "7": -14762.046869549014,
+        "8": -163312.78133226454
+      }
+    },
+    {
+      "dimension": 3,
+      "nodes": [
+        1.209264359719944,
+        2.82464338570982,
+        8.951546800024781
+      ],
+      "quadrature_weights": [
+        0.7710273076262352,
+        0.22556836981723297,
+        0.003404322556531741
+      ],
+      "held_out_moment_errors": {
+        "6": -37.61860381593965,
+        "7": -1429.5334308580968,
+        "8": -34068.67010822761
+      }
+    }
+  ],
+  "krylov_rank_four_vectors": 4,
+  "exact_supported_gap": 1.1608655131707635,
+  "lowest_level_weight": 0.7042028463946859,
+  "full_component_gap": 0.9696236167954162,
+  "support_cap": 32,
+  "outside_mean_plusminus_quarter_lowerbound": 0.0006249340572829166,
+  "outside_actual_mass": 1.000000000000001,
+  "multiplicity_control": {
+    "maximum": 1,
+    "collapsed_changes_operator": false
+  },
+  "detuned": {
+    "E0": -0.4027365059097269,
+    "mu1": 1.6643330522761774,
+    "mu2": 3.4218678863320444,
+    "RK_wrong_mu1": 1.6,
+    "RK_wrong_mu2": 3.2,
+    "mixed_wrong_mu1": 1.6567668088311862
+  },
+  "seconds": 0.5198342079820577,
+  "rss_mib": 103.125,
+  "source_sha256": "36bff7455757148507bf2f85dbf1f2d8dee6c1bd1fdb6b5da3522f82af424490"
+}

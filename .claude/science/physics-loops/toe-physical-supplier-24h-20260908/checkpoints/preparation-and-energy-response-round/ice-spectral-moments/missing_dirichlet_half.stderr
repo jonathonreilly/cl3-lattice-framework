@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/ice-spectral-moments/missing_dirichlet_half.py", line 23, in <module>
+    ck('dirichlet_form',F(int(sum(sq)),z)==mom[1]);ck('local_second_moment',F(int(powers[1]@powers[1]),z)==mom[2]);ck('positive_spectral_variance',variance>0)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/ice-spectral-moments/missing_dirichlet_half.py", line 17, in ck
+    def ck(k,b):checks[k]=bool(b);assert b,k
+                                         ^
+AssertionError: dirichlet_form

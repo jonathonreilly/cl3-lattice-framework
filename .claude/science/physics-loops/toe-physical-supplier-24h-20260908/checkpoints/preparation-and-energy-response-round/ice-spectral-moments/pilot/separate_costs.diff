@@ -1,0 +1,56 @@
+--- /private/tmp/toe-24h-probes-20260908/ice-spectral-moments/pilot/pilot_before_separate_costs.py	2026-09-08 07:35:58
++++ /private/tmp/toe-24h-probes-20260908/ice-spectral-moments/pilot/pilot.py	2026-09-08 07:35:58
+@@ -71,6 +71,26 @@
+       result[j,m]+=(z.real*z.real+z.imag*z.imag)*(.5 if method==0 else M*.5)
+  return result
+ 
++@njit(cache=True)
++def update_only_benchmark(states,faces,seed):
++ np.random.seed(seed);checksum=0
++ for original in states:
++  state=original.copy()
++  for step in range(len(faces)):
++   f=np.random.randint(len(faces))
++   if is_flippable(state,faces[f]):
++    for i in faces[f]:state[i]^=np.uint8(1)
++  checksum+=int(state[0])
++ return checksum
++
++@njit(cache=True)
++def measure_only_benchmark(states,faces,coeff,planes,scales):
++ checksum=0.
++ for state in states:
++  x,y,c=measurements(state,faces,coeff,planes,scales)
++  checksum+=np.sum(x)+np.sum(y)+np.sum(c)
++ return checksum
++
+ G=build_geometry(args.L);coeff,planes,scales,modes=coefficients(args.L);initial=initial_ice(args.L).ravel()
+ if args.micro:
+  data=np.load(P.parent.parent/'ice-estimator-calibration/exact_data.npz');states=((data['states'][:,None]>>np.arange(24))&1).astype(np.uint8)
+@@ -91,6 +111,8 @@
+     y=x.copy();y[links]^=1;actual=coeff@(y.astype(float)-.5)-O;pred=coeff[:,links]@(1.-2*x[links]);assert max(abs(actual-pred))<1e-13;sumdelta+=actual;updates+=len(modes)
+   _,sq,_=measurements(x,G.plaquette_links,coeff,planes,scales);assert max(abs(sq-abs(sumdelta)**2))<1e-12
+  chain(initial,G.plaquette_links,coeff,planes,scales,2,4,1400000)
++ update_only_benchmark(states[:2],G.plaquette_links,992)
++ measure_only_benchmark(states[:2],G.plaquette_links,coeff,planes,scales)
+  choices=np.zeros(len(states),np.int64)
+  for method in range(3):numerator_methods(states,G.plaquette_links,coeff,planes,scales,choices,method)
+  direct=numerator_methods(states,G.plaquette_links,coeff,planes,scales,choices,0);count=numerator_methods(states,G.plaquette_links,coeff,planes,scales,choices,2);assert max(abs(direct-count).ravel())<1e-12
+@@ -121,7 +143,16 @@
+   for _ in range(20):z=numerator_methods(snapshots,G.plaquette_links,coeff,planes,scales,choices,method)
+   timing[str(method)]=(time.monotonic()-t)/(20*len(snapshots));numerators[str(method)]=z
+  assert np.max(abs(numerators['0']-numerators['2']))<1e-12
++ # All production chains have finished; benchmark RNG cannot change their trajectories.
++ update_only_benchmark(snapshots,G.plaquette_links,883211)
++ measure_only_benchmark(snapshots,G.plaquette_links,coeff,planes,scales)
++ t=time.monotonic()
++ for _ in range(20):update_only_benchmark(snapshots,G.plaquette_links,883211)
++ update_cost=(time.monotonic()-t)/(20*len(snapshots))
++ t=time.monotonic()
++ for _ in range(20):measure_only_benchmark(snapshots,G.plaquette_links,coeff,planes,scales)
++ measurement_cost=(time.monotonic()-t)/(20*len(snapshots))
+  name=f'L{args.L}_b{args.burn}';np.savez_compressed(P/(name+'.npz'),values=vals,counts=np.array(counts),snapshots=snapshots,one_face_numerator=numerators['1'],all_face_numerator=numerators['0'])
+- out={'L':args.L,'burn':args.burn,'modes':modes,'seeds':seeds,'chains':32,'samples_per_chain':256,'timing_seconds_per_snapshot':timing,'signed_visited_move_cases':signed_cases,'snapshot_count':len(snapshots),'raw_file':name+'.npz'}
++ out={'L':args.L,'burn':args.burn,'modes':modes,'seeds':seeds,'chains':32,'samples_per_chain':256,'timing_seconds_per_snapshot':timing,'update_only_sweep_seconds_per_snapshot':update_cost,'full_measurement_seconds_per_snapshot':measurement_cost,'signed_visited_move_cases':signed_cases,'snapshot_count':len(snapshots),'raw_file':name+'.npz'}
+ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1024**2 if sys.platform=='darwin'else 1024);assert 0<rss<384
+ out.update(seconds=time.monotonic()-start,rss_mib=rss,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest());print(json.dumps(out,indent=2,allow_nan=False))

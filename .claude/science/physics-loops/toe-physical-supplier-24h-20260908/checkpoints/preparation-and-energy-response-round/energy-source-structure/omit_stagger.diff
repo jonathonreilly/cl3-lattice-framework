@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -27,7 +27,7 @@
+ n=len(states);ck('actual_component',n==864 and len(rr)==6912)
+ A=sparse.coo_matrix((np.ones(len(rr)),(rr,cc)),shape=(n,n)).tocsr();nf=np.asarray(A.sum(0)).ravel();N=sparse.diags(nf);I=sparse.eye(n,format='csr')
+ bits=((np.array(states)[:,None]>>np.arange(24))&1).astype(np.uint8)
+-coeff=np.array([[(-1)**(sum(r)+r[a])/np.sqrt(vol) if d==b else 0 for r,d in links] for a in range(3) for b in range(3) if a!=b]);O=(bits-.5)@coeff.T;X=np.sum(O*O,axis=1);bound=3*vol/2
++coeff=np.array([[(-1)**r[a]/np.sqrt(vol) if d==b else 0 for r,d in links] for a in range(3) for b in range(3) if a!=b]);O=(bits-.5)@coeff.T;X=np.sum(O*O,axis=1);bound=3*vol/2
+ ck('source_bound',np.max(X)<=bound+1e-13 and np.min(X)>=0)
+ sys.path.insert(0,'/private/tmp/toe-physical-supplier-24h-20260908/scripts')
+ from spin_half_cubic_ice_finite_delta_projector_stiffness_2026_09_03 import build_geometry

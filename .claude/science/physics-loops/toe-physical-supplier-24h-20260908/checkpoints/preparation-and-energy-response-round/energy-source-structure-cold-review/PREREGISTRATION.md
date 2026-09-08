@@ -1,0 +1,3 @@
+# Independent prospective review
+
+Before reading the author's new implementation, check the six equal-momentum transverse channels, their summed kinetic identity, the stated shifted discrete projector, and the difference between raw spectral weight and connected weight. Freeze finite algebra controls at Volume8,M24,V=19/20,lambda=±1/10 and0, extremal X=0,12 and nf=0,24. These are scalar kernel controls, not actual ice-state feasibility assertions. Independently test all three face multiplicity terms in the six-channel sum. No stochastic work or production rerun. Numerical derivative evidence will remain finite-step floating evidence, not an enclosure or population-bias certificate.

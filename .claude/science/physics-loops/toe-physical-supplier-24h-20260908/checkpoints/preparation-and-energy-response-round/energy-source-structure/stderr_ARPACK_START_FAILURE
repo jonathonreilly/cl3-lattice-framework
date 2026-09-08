@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/energy-source-structure/check.py", line 49, in <module>
+    e,u=eigsh(H,k=1,which='SA',tol=1e-13,v0=np.ones(n));E=float(e[0]);psi=u[:,0]*np.sign(u[:,0].sum());ck(f'eigen_{V}_{lam}',min(psi)>0 and np.linalg.norm(H@psi-E*psi)<1e-10)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1778, in eigsh
+    params.iterate()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 626, in iterate
+    raise ArpackError(self.arpack_dict['info'],
+scipy.sparse.linalg._eigen.arpack.arpack.ArpackError: ARPACK error -9: Starting vector is zero.

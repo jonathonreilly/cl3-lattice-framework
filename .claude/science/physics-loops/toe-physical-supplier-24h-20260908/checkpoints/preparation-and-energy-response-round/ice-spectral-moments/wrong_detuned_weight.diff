@@ -1,0 +1,11 @@
+--- check.py
++++ wrong_detuned_weight.py
+@@ -46,7 +46,7 @@
+ outside_lower=max(0.,(float(variance)-radius**2)/denbound)
+ # Held-out detuned diagnostic: exact ground weighting is expressly imported here.
+ H=.95*np.diag(deg)-A.toarray();ed,Ud=eigh(H);psi=Ud[:,0];psi*=np.sign(sum(psi));prob=psi**2;delta=ed[0];v=(H-delta*np.eye(n))@(O*psi);ell=v/psi;Zd=sum(prob*O**2)
+-correct1=float(sum(prob*O*ell)/Zd);correct2=float(sum(prob*ell**2)/Zd);naive1=float(mom[1]);naive2=float(mom[2]);mixed1=float(sum(psi*O*ell)/sum(psi*O**2))
++correct1=float(mom[1]);correct2=float(sum(prob*ell**2)/Zd);naive1=float(mom[1]);naive2=float(mom[2]);mixed1=float(sum(psi*O*ell)/sum(psi*O**2))
+ weighted_local=np.zeros(n)
+ for i,j,d in zip(rows,cols,sq):weighted_local[i]+=.5*psi[j]/psi[i]*d
+ ck('detuned_weighted_dirichlet',abs(sum(prob*weighted_local)/Zd-correct1)<1e-12)

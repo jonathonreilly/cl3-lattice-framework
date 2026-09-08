@@ -1,0 +1,25 @@
+--- /private/tmp/toe-24h-probes-20260908/phase-preparation/path_probe.py
++++ /private/tmp/toe-native-product-to-gibbs-20260908/scripts/native_product_gibbs_path_2026_09_08.py
+@@ -1,4 +1,16 @@
+ """Literal native path/leaf Gibbs-preparation probe; numerical support for the analytic proposal."""
++AUDIT_TIMEOUT_SEC = 120
++AUDIT_INPUT_PATHS = (
++    "docs/NATIVE_PRODUCT_GIBBS_PREPARATION_NOTE_2026-09-08.md",
++    "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
++    "docs/NATIVE_EDGE_RECORD_LOCAL_CYCLE_TRANSPORT_AND_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
++)
++import os
++for resource_variable in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"):
++    os.environ[resource_variable] = "1"
++from pathlib import Path
++receipt = Path(__file__).resolve().parents[1] / "outputs" / "native_product_gibbs_path_2026_09_08.json"
++receipt.parent.mkdir(parents=True, exist_ok=True)
+ from pathlib import Path
+ import hashlib,json,os
+ import numpy as np
+@@ -128,4 +140,4 @@
+    check(f'{tag}_adverse_real_controls_zero_energy',abs(np.trace(H@wrongrho))<2e-11)
+   rows.append({'family':family,'couplings':couplings,'beta':beta,'eigenvalues':eps.tolist(),'givens_count':len(givens),'success_probability':prob,'predicted_success_probability':predicted,'thermal_energy':actual_energy,'all_branch_probabilities':{k:float(np.real(np.trace(c.conj().T@c))/(2**m)) for k,c in branches.items()}})
+ result={'status':'PASS','checks':checks,'TOTAL':{'PASS':len(checks),'FAIL':0},'residuals':residuals,'rows':rows,'physical_midpoints':centers,'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'scope':'Numerical physical256-dimensional m4 support; analytic general theorem separate; all preparation,phase,hopping,Born controls supplied.'}
+-Path(__file__).with_name('PATH_RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
++receipt.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

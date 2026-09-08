@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -5,7 +5,7 @@
+ 
+ @njit(cache=True)
+ def branch_value(count,xvalue,delta_v,lam,shift,M):
+-    return 1.0-delta_v*count/M+(shift-lam*xvalue)/M
++    return 1.0-delta_v*count/M
+ 
+ @njit(cache=True)
+ def literal_O(state,coeff):

@@ -1,0 +1,11 @@
+--- pilot.py
++++ wrong_plane.py
+@@ -18,7 +18,7 @@
+     if a==b:continue
+     modes.append((h,a,b));row=np.zeros(3*L**3,dtype=np.complex128)
+     for r in np.ndindex(L,L,L):row[np.ravel_multi_index((*r,b),(L,L,L,3))]=(-1)**sum(r)*np.exp(2j*np.pi*h*r[a]/L)/np.sqrt(L**3)
+-    rows.append(row);planes.append(orient.index(tuple(sorted((a,b)))));scales.append(4*np.sin(np.pi*h/L)**2/(2*L**3))
++    rows.append(row);planes.append(0);scales.append(4*np.sin(np.pi*h/L)**2/(2*L**3))
+  return np.array(rows),np.array(planes),np.array(scales),modes
+ 
+ @njit(cache=True)

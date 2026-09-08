@@ -1,0 +1,1 @@
+Root correctly identified that numerator-only variance×time does not establish end-to-end inefficiency. Original report preserved; all measured values and raw files unchanged. Revised text explicitly names omitted common Fourier/denominator and update costs. No rerun or target tuning.

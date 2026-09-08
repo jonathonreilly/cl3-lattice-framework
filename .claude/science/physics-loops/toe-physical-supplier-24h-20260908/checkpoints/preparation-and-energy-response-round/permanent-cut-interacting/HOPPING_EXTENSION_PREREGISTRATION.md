@@ -1,0 +1,3 @@
+# Before hopping-extension execution
+
+Use unchanged six-edge apparatus and ready leaves000/anchor1. On odd active parity, H=T01+2n0n1 = T01+n0+n1+n2-I. Diagonalize the01 block with W=exp(-i*pi*D/4)exp(-i*pi*T01/4), WDW*=T01. The diagonal physical generator is2n0+n2. Put r=3/5, a=log(5/3), beta=2a. Vacant filters with cosines r^2,1,r yield success W r^(2n0+n2) W*P = r exp(-aH)P. Test complete8branch operator instrument, initial/old leaf and anchor values, success target against independent T spectral projectors, all probabilities and nonzero hopping energy. The logical interaction is physically quadratic only on the odd active code.

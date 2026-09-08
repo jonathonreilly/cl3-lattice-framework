@@ -1,0 +1,11 @@
+--- check.py
++++ missing_dirichlet_half.py
+@@ -20,7 +20,7 @@
+ for j in range(8):powers.append(L@powers[-1])
+ z=int(O@O);mom=[F(int(O@v),z)for v in powers];mu=float(mom[1]);variance=mom[2]-mom[1]**2
+ sq=(O[np.array(rows)]-O[np.array(cols)])**2;local=np.bincount(rows,weights=sq,minlength=n)/2
+-ck('dirichlet_form',F(int(sum(sq)),2*z)==mom[1]);ck('local_second_moment',F(int(powers[1]@powers[1]),z)==mom[2]);ck('positive_spectral_variance',variance>0)
++ck('dirichlet_form',F(int(sum(sq)),z)==mom[1]);ck('local_second_moment',F(int(powers[1]@powers[1]),z)==mom[2]);ck('positive_spectral_variance',variance>0)
+ # Proposed face is uniform among24, including nonflippable zero contributions.
+ Y=np.zeros((n,24));Y[rows,faceids]=12*sq
+ ck('conditioning_identity',np.array_equal(Y.mean(1),local))

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/canonical-preparation-execution/mutations/thermal_prefactor/scripts/native_product_gibbs_path_2026_09_08.py", line 122, in <module>
+    close(f'{tag}_actual_Kraus_vs_H_exponential',K,target)
+  File "/private/tmp/toe-24h-probes-20260908/canonical-preparation-execution/mutations/thermal_prefactor/scripts/native_product_gibbs_path_2026_09_08.py", line 40, in close
+    err=float(np.linalg.norm(a-b));residuals[name]=err;check(name,err<tol)
+                                                       ^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/canonical-preparation-execution/mutations/thermal_prefactor/scripts/native_product_gibbs_path_2026_09_08.py", line 38, in check
+    if not condition:raise AssertionError(name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: f0_b0.7_actual_Kraus_vs_H_exponential

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/energy-source-structure/omit_stagger.py", line 36, in <module>
+    cr,ci,modes=prod.transverse_coefficients(2,(1,));ck('geometry_literal',np.array_equal(build_geometry(2).plaquette_links,faces));ck('source_actual_producer',np.max(abs(prod.evaluate_observables(bits,cr,ci)-O))<1e-12)
+                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/energy-source-structure/omit_stagger.py", line 25, in ck
+    if not bool(b):raise AssertionError(k)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: source_actual_producer

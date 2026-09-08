@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -47,7 +47,7 @@
+   delta=(P@sparse.diags(branch)-G).tocsr();res=0 if not delta.nnz else np.max(abs(delta.data))
+   ck(f'kernel_{V}_{lam}',res<1e-13 and min(branch)>=1-1e-13 and min(P.data)>=-1e-13 and max(abs(np.asarray(P.sum(0)).ravel()-1))<1e-13)
+   e,u=eigsh(H,k=1,which='SA',tol=1e-13,v0=1+np.arange(n)/n);E=float(e[0]);psi=u[:,0]*np.sign(u[:,0].sum());ck(f'eigen_{V}_{lam}',min(psi)>0 and np.linalg.norm(H@psi-E*psi)<1e-10)
+-  mixed=float(psi@((V-1)*nf+lam*X)/psi.sum());pureX=float(psi**2@X);mixedX=float(psi@X/psi.sum());shifted=1-float(np.sum(G@psi)/sum(psi));shifted*=M
++  mixed=float(psi@((V-1)*nf+lam*X)/psi.sum())-shift;pureX=float(psi**2@X);mixedX=float(psi@X/psi.sum());shifted=1-float(np.sum(G@psi)/sum(psi));shifted*=M
+   ck(f'energy_restore_{V}_{lam}',abs(mixed-E)<1e-10 and abs(shifted+shift-E)<1e-10)
+   r=r0.copy();window=[]
+   for sweep in range(80):
