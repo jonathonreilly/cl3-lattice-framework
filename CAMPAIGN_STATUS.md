@@ -50,9 +50,10 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. Pure-link and Born-menu corrections are on main. Repair the nine frozen #6371
-   selector/shell findings; finish original #6358 joint-instrument source/closure
-   review. #5966 retains partial preparation and its old Record-additivity premise
+1. Pure-link and Born-menu corrections are on main. Compose and confirm the #6371
+   selector/shell repairs; author the six frozen #6358 joint-instrument repair
+   groups next. Complete active #7942 original review. #6515/#6485 is held on
+   its independently traced reserved #6379 proof dependency. #5966 retains partial preparation and its old Record-additivity premise
    hold. Closure reconciliation is complete; 83 pending closed scopes remain at
    nine successors. Preserve every reservation and fixed original 254 membership.
 2. For field response, choose the actual physical source/sector and estimator

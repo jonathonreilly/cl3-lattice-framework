@@ -1,6 +1,6 @@
 # Backlog review and landing — current handoff
 
-Updated after wave16 on 2026-09-08T01:58:46.883671+00:00. Main is `eed3c68fffdd8f912a6a4b4bc2e0098184fb3b2b`.
+Updated at the wave17 review handoff on 2026-09-08T02:23:06.347527+00:00. Main is `eed3c68fffdd8f912a6a4b4bc2e0098184fb3b2b`.
 The owner has fixed this cleanup to the **original 254 PRs**, captured at
 13:10:39 UTC. Exact membership and original heads are in `BACKLOG_CUTOFF.json`.
 New arrivals are excluded. Formal audit waits until a solid TOE.
@@ -101,9 +101,10 @@ main before the three closures; one combined validation passed without an audit.
 | Landed | #7892/#7893/#7903 matter and U1 links | Complete corrected conditional science accepted; all original source scopes preserved. [Final evidence](backlog_evidence/wave15/INDEX.json). |
 | Landed | #7911/#7959 pure-link ring and cubic projector | Complete corrected finite-model scope accepted; historical phase/parent claims remain explicitly unaccepted. |
 | Landed | #7990 Born-price wordings | Complete indexed-menu/probability correction and self-contained conditional proof accepted; physical law and joint-law selection remain open. |
-| backlog_8001_review | #6358 including #6280/#6345/#6352/#6354 | Original full nine-note/nine-runner closure review and bounded executions active; no verdict. |
-| Repair author backlog_batch_contract; original reviewer backlog_8001_review | #6371 including #6339/#6368 and Block84 supplier | Nine original findings frozen; 14 source paths prepared for narrow repairs. Race closure, probability/normalization assertions, provenance/input binding and conditional wording require correction. No acceptance. |
-| backlog_draft_triage | #6515 including #6485 dressing/sector signature | Actual proof/runtime closure and reservation screen active. Block 108/Block 105 references require scope tracing before execution or acceptance. |
+| Original reviewer backlog_8001_review; repair author next | #6358 including #6280/#6345/#6352/#6354 | Complete original review: six P2 repair groups. Nine original executions and independent exact capacity checks preserved; corrected source still requires separate authorship and final confirmation. |
+| Repair author backlog_batch_contract; original reviewer backlog_8001_review | #6371 including #6339/#6368 and Block84 supplier | Final author runs and three actual semantic mutant failures complete; packet sealing before source-plus-manifest composition and original-reviewer confirmation. No acceptance. |
+| Held | #6515 including #6485 dressing/sector signature | Actual proof chain reaches reserved #6379 through Blocks 110/109/108/107/106/105. Eight original additions and all obligations preserved; keep #6515 open. No execution or full science verdict. |
+| backlog_draft_triage | #7942 pair-update parity/winding | Complete original bodies read; unchanged baseline 21/0 preserved. Independent coefficient, guard and scope checks active; final findings pending. |
 | Reconciliation complete | Eighteen direct landings and 110 other closures | All 128 closed originals retain recoverable source; 83 pending closed scopes remain at 9 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
@@ -115,6 +116,12 @@ Partial #5966/#5950/#5952 preparation preserves 26 source paths and 90,600 compl
 original map rows. Sixteen first-hop suppliers and the removed scalar Record
 additivity premise are identified; full source/closure review and execution remain.
 [Preparation evidence](backlog_evidence/wave15/5966-preparation/REPORT.md).
+
+The #6515/#6485 dependency hold is supported by seven proof edges and eleven
+exact source anchors independently checked by the coordinator. Its current axiom
+memo and main registry match main exactly. Historical authority and missing input
+issues are separate; no removed-Record-premise hold is asserted here.
+[Verified hold and original joint review](backlog_evidence/wave17-handoff/INDEX.json).
 
 Reservations **#6379, #6858 and #6859** apply to inherited content too. Preserve
 original branches, dirty author worktrees and historical receipts. Shallow-history
