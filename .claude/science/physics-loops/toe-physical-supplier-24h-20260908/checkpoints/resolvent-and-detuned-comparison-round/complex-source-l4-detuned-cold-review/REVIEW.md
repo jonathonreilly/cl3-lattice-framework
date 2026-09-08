@@ -1,0 +1,7 @@
+# Independent completed detuned-source review — PASS with unresolved method difference
+
+Read complete analyzer and report; independently recomputed from all21 raw cells the24 paired seven-source energy vectors, B and T, ratio influence SE, complete7×7 energy covariance, two-harmonic ratio mean covariance, all independent F12/F24 reference ratios and combined errors, paired half-window comparisons and independent population/burn comparisons. All recomputed values match within1e−10. Raw child resource caps and source hash receipts checked. Actual check.py/RESULT.json preserved; this is independent analysis of shared raw data, not a new production or independent exact L4 oracle.
+
+All declared nominal precision/comparison gates agree with the report. This does not make the group2h2 difference zero: source response is1.418653990 versusF24 1.448942218, about−3.14combinedSE. The frozen4SE threshold passes, but the observed signed difference warrants a discriminator rather than a declaration of method equality. F12 andF24 are independent finite-forward references, neither an exact ground-state target. No source-step sensitivity was run detuned; this remains the most directly addressable missing comparison. Half-window agreement does not prove stationarity. No blocker to the report's carefully bounded interpretation.
+
+Full hashes of report04bfde8b and analysisa37b8902 are in RESULT.json. No author files edited; no stochastic work performed here.

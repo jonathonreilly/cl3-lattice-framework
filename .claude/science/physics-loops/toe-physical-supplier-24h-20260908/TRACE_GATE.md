@@ -16,3 +16,5 @@ PR8036 supplies the stated finite thermal-state preparation bridge within its co
 ## Fourth checkpoint
 
 Constructive component symmetry supplies an exact missing premise for interpreting the declared Fourier response as inelastic; it doesnot select the physical component. The largerL4quadratic-source RK calibration is independently consistent with an independent finite-chain reference. Tinylinear-source curvature fails allprecisionrequirements, so noinverse-moment inference is carried. Next route is an exactgeometric-elementary-lag regularized resolvent atRK and a separatelycontrolled detunedfirstmoment comparison. Finite regularization cannot excludeweaksofttails or provea pole.
+
+Fifth round trace: native/ice commoncarrier hypothesis directly addresses the missing matter/electromagnetic dictionary. The scoped mismatch exposes an additional encoding/dynamics import; it does not supply that bridge. Regularized spectrum size ladder attacks the finite-size soft-response discriminator; active results must separate burn and sampling errors before physical interpretation.

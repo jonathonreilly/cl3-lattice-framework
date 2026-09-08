@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -8,7 +8,7 @@
+ @njit(cache=True)
+ def endpoint(state,faces,steps,seed):
+     np.random.seed(seed);x=state.copy()
+-    for _ in range(steps):apply_face(x,faces,np.random.randint(len(faces)))
++    for _ in range(steps*len(faces)):apply_face(x,faces,np.random.randint(len(faces)))
+     return x
+ @njit(cache=True)
+ def observe(state,coeff):

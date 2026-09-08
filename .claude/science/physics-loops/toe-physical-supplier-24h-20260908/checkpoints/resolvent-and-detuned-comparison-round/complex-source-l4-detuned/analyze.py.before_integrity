@@ -1,0 +1,58 @@
+import json,hashlib
+from pathlib import Path
+import numpy as np
+p=Path(__file__).resolve().parent
+
+def need(v,msg):
+ if not v:raise ValueError(msg)
+def load(f):return json.loads(f.read_text(),parse_constant=lambda x:(_ for _ in ()).throw(ValueError(x)))
+def se(x):return float(np.std(x,ddof=1)/np.sqrt(len(x)))
+def ratio(B,T,factor):
+ b=float(np.mean(B));t=float(np.mean(T))
+ if not np.isfinite(np.r_[B,T]).all():raise ValueError('nonfinite ratio inputs')
+ if t<=0:return dict(valid=False,reason='nonpositive pooled denominator')
+ infl=factor/t*((B-b)-b/t*(T-t));return dict(valid=True,value=factor*b/t,SE=se(infl),influence=infl)
+def main():
+ out={};allratios={};binding=load(p/'REFERENCE_BINDING.json')
+ for path,h in binding.items():need(hashlib.sha256(Path(path).read_bytes()).hexdigest()==h,'reference hash')
+ for group,(pop,burn) in enumerate(((512,160),(1024,160),(1024,320))):
+  cells=[load(p/f'cell_g{group}_c{c}.json') for c in range(7)];E=[];halves=[]
+  cases=[(.93,1,0.),(.95,1,0.),(.97,1,0.),(.95,1,-.02),(.95,1,.02),(.95,2,-.02),(.95,2,.02)]
+  for c,r in enumerate(cells):
+   V,h,lam=cases[c];need((r['V'],r['harmonic'],r['lambda_value'],r['group'],r['population'],r['burn'],r['case'])==(V,h,lam,group,pop,burn,c),'cell')
+   need(len(r['replicas'])==8 and 0<r['seconds']<180 and 0<r['rss_mib']<384,'limits')
+   for path,digest in r['hashes'].items():need(hashlib.sha256(Path(path).read_bytes()).hexdigest()==digest,'source hash')
+   es=[];hs=[]
+   for j,x in enumerate(r['replicas']):
+    need(x['seed']==4700000+10000*group+j and x['replica']==j and x['postconditions'] is True,'replica')
+    n=np.array(x['Nf_window']);z=np.array(x['X_window']);e=np.array(x['energy_window']);need(n.shape==z.shape==e.shape==(40,) and np.isfinite(np.r_[n,z,e]).all(),'window')
+    need(np.max(abs(e-((V-1)*n+lam*z)))<1e-12 and abs(e.mean()-x['physical_energy'])<1e-12 and abs(x['shifted_energy']+96*abs(lam)-e.mean())<1e-12,'energy')
+    need(np.isfinite(x['cache_drift']) and x['cache_drift']<=1e-10 and np.isfinite(x['final_literal_error']) and x['final_literal_error']<=1e-10,'cache');es.append(e.mean());hs.append([e[:20].mean(),e[20:].mean()])
+   E.append(es);halves.append(hs)
+  E=np.array(E).T;halves=np.array(halves).transpose(1,0,2);B=.95*(E[:,2]-E[:,0])/.04-E[:,1];rows=[];infs=[];allratios[group]=[]
+  refdir=p.parent/'detuned-l4-pilot';rc=[load(refdir/f'cell_g{group}_v{i}.json') for i in range(3)];RE=np.array([[x['mixed_energy'] for x in c['replicas']] for c in rc]).T;RB=.95*(RE[:,2]-RE[:,0])/.04-RE[:,1]
+  for harmonic,mi,pl,factor in ((1,3,4,2/64),(2,5,6,4/64)):
+   T=(E[:,pl]-E[:,mi])/.04;a=ratio(B,T,factor);allratios[group].append(a);refs=[]
+   for F in (24,12):
+    RT=np.array([np.mean([sum(z['C0_12'][6*(harmonic-1):6*harmonic]) for z in x['blocks'] if z['F']==F]) for x in rc[1]['replicas']]);ref=ratio(RB,RT,factor);rr={k:v for k,v in ref.items() if k!='influence'};rr['F']=F
+    if a['valid'] and ref['valid']:
+     err=np.hypot(a['SE'],ref['SE']);rr.update(difference=a['value']-ref['value'],combined_SE=float(err),nominal_4SE_compatible=bool(abs(a['value']-ref['value'])<=4*err+1e-8))
+    refs.append(rr)
+   forward=(E[:,pl]-E[:,1])/.02;back=(E[:,1]-E[:,mi])/.02
+   Bh=.95*(halves[:,2,:]-halves[:,0,:])/.04-halves[:,1,:];Th=(halves[:,pl,:]-halves[:,mi,:])/.04;ha=[ratio(Bh[:,i],Th[:,i],factor) for i in (0,1)];window=dict(valid=all(x['valid'] for x in ha))
+   if window['valid']:
+    d=ha[0]['value']-ha[1]['value'];err=se(ha[0]['influence']-ha[1]['influence']);window.update(difference=d,SE=err,nominal_4SE_compatible=bool(abs(d)<=4*err+1e-8))
+   row={k:v for k,v in a.items() if k!='influence'};row.update(harmonic=harmonic,B_mean=float(B.mean()),B_SE=se(B),T_mean=float(T.mean()),T_SE=se(T),replica_B=B.tolist(),replica_T=T.tolist(),negative_B=int(sum(B<0)),nonpositive_T=int(sum(T<=0)),forward_secants=forward.tolist(),backward_secants=back.tolist(),reversed_secants=int(sum(forward>back)),reference_comparisons=refs,window=window)
+   if a['valid']:row['precision_nominal']=bool(a['value']>0 and 4*a['SE']<=.1*a['value']);infs.append(a['influence'])
+   rows.append(row)
+  out[str(group)]=dict(population=pop,burn=burn,energy_vectors=E.tolist(),energy_sample_covariance=np.cov(E,rowvar=False,ddof=1).tolist(),moments=rows,ratio_mean_covariance=(np.cov(np.array(infs),ddof=1)/8).tolist() if len(infs)==2 else None)
+ comparisons=[]
+ for ga,gb,name in ((0,1,'population'),(1,2,'burn')):
+  for j in (0,1):
+   a,b=allratios[ga][j],allratios[gb][j];r=dict(kind=name,harmonic=j+1,valid=a['valid'] and b['valid'])
+   if r['valid']:
+    err=np.hypot(a['SE'],b['SE']);d=a['value']-b['value'];r.update(difference=d,SE=float(err),nominal_4SE_compatible=bool(abs(d)<=4*err+1e-8))
+   comparisons.append(r)
+ result=dict(groups=out,group_comparisons=comparisons,scope='Independent finite-forward references, not exact pure target; no source-step bias bound or automatic continuation')
+ (p/'ANALYSIS.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n');print(json.dumps(result,allow_nan=False))
+if __name__=='__main__':main()

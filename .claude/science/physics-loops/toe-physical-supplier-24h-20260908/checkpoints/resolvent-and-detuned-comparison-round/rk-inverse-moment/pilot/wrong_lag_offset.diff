@@ -1,0 +1,8 @@
+--- 
++++ 
+@@ -30,4 +30,4 @@
+     return origins,products,snapshots
+ 
+ def generate_lags(U,q):
+-    return np.floor(np.log1p(-U)/np.log(q)).astype(np.int64)
++    return np.floor(np.log1p(-U)/np.log(q)).astype(np.int64)+1

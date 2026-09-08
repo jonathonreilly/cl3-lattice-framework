@@ -1,0 +1,21 @@
+--- analyze.py.before
++++ analyze.py
+@@ -19,7 +19,7 @@
+   cells=[load(p/f'cell_g{group}_c{c}.json') for c in range(7)];E=[];halves=[]
+   cases=[(.93,1,0.),(.95,1,0.),(.97,1,0.),(.95,1,-.02),(.95,1,.02),(.95,2,-.02),(.95,2,.02)]
+   for c,r in enumerate(cells):
+-   V,h,lam=cases[c];need((r['V'],r['harmonic'],r['lambda_value'],r['group'],r['population'],r['burn'],r['case'])==(V,h,lam,group,pop,burn,c),'cell')
++   V,h,lam=cases[c];need(r['L']==4 and r['shift']==96*abs(lam),'L/shift metadata');need((r['V'],r['harmonic'],r['lambda_value'],r['group'],r['population'],r['burn'],r['case'])==(V,h,lam,group,pop,burn,c),'cell')
+    need(len(r['replicas'])==8 and 0<r['seconds']<180 and 0<r['rss_mib']<384,'limits')
+    for path,digest in r['hashes'].items():need(hashlib.sha256(Path(path).read_bytes()).hexdigest()==digest,'source hash')
+    es=[];hs=[]
+--- launch.py.before
++++ launch.py
+@@ -7,6 +7,7 @@
+  for case in range(7):
+   if time.monotonic()-start>720:save();raise RuntimeError('insufficient remaining180seconds')
+   name=f'cell_g{group}_c{case}';t=time.monotonic()
++  if (p/(name+'.json')).exists():save();raise RuntimeError('existing cell; refuse overwrite')
+   with (p/(name+'.json')).open('w') as out,(p/(name+'.stderr')).open('w') as err:
+    try:r=subprocess.run([sys.executable,'-O',str(p/'driver.py'),'--group',str(group),'--case',str(case)],stdout=out,stderr=err,timeout=180)
+    except subprocess.TimeoutExpired:rows.append(dict(cell=name,timeout=True,seconds=time.monotonic()-t));save();raise
