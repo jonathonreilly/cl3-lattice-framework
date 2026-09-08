@@ -49,8 +49,10 @@ and unsupplied joint-law assumptions. Narrow repairs preserve its conditional ma
 ## Next scientific decisions
 
 1. Complete the narrow matter/U1, pure-link and #7990 repairs, then obtain
-   the respective original reviewers’ confirmations. Begin the smaller #6371 selector/shell
-   review from the completed source preparation; #6358 remains prepared.
+   the respective original reviewers’ confirmations. The smaller #6371 selector/shell
+   review is assigned to backlog_8001_review from the completed preparation; #6358 remains prepared.
+   Matter/link corrections are frozen for final confirmation; #7990 authoring is checkpointed
+   while its author performs that independent confirmation.
    #7847/#7846 science and #7976 meta synthesis now join the previous landings.
    Closure/content reconciliation is complete; pending closed scopes remain
    obligations at their named open successors. Preserve all premise and reserved-source holds.

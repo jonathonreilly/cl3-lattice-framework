@@ -1,0 +1,552 @@
+{
+  "schema": "bounded-source-author-correction-v1",
+  "created_utc": "2026-09-08T00:45:45.608362+00:00",
+  "author_session": "/root/backlog_8001_review",
+  "original_independent_reviewer": "/root/backlog_batch_contract",
+  "independent_scientific_verdict": null,
+  "author_disposition": "READY_FOR_INDEPENDENT_CONFIRMATION",
+  "base": "47da12268436ee1843e822386477aa2c829d95a9",
+  "latest_main": "2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f",
+  "tree": "3dac87d859bea65a9c3220cd398266efa82432bc",
+  "paths": 10,
+  "candidate_patch_sha256": "e5bf7667e47406d09e7474af779f31120daacdb460ec2fd034cce694abed39de",
+  "author_correction_patch_sha256": "a75d28899c7e17167a72fddf645bfd4d6beee4773bdf325b6206db472d0bace4",
+  "inventory_sha256": "ffb5276524f6e610e9a38942c58789790b35a2852a96e02decb1b9b4e184bf63",
+  "map_rows": 89895,
+  "checks": [
+    {
+      "pr": 7892,
+      "original_count": 32,
+      "final_count": 37,
+      "all_original_ids_retained": true,
+      "new_ids": [
+        "A8",
+        "E10",
+        "E11",
+        "E8",
+        "E9"
+      ],
+      "changed_original_acceptance": [
+        "D1",
+        "E4"
+      ]
+    },
+    {
+      "pr": 7893,
+      "original_count": 31,
+      "final_count": 34,
+      "all_original_ids_retained": true,
+      "new_ids": [
+        "C7",
+        "F4",
+        "F5"
+      ],
+      "changed_original_acceptance": [
+        "F1"
+      ]
+    },
+    {
+      "pr": 7903,
+      "original_count": 28,
+      "final_count": 34,
+      "all_original_ids_retained": true,
+      "new_ids": [
+        "B8",
+        "B9",
+        "C5",
+        "D6",
+        "D7",
+        "D8"
+      ],
+      "changed_original_acceptance": []
+    }
+  ],
+  "note_api_cases": 12,
+  "actual_cache_adverse_controls": 9,
+  "author_status": "ready for independent affected-source confirmation, not an author science verdict",
+  "formal_audit": false,
+  "report_sha256": "19e1781b9f7bc7ee17671f6bd8d0a4699b2c0236e7ec0b44851c78f551894131",
+  "handoff_sha256": "3236a05fe4da388b5994035de30cb6067056e04e23774dc6afe51edcd289374f",
+  "artifacts": {
+    "ACTUAL_CACHE_CONTROLS.json": {
+      "sha256": "f019c1d276232b3a69c98757663acc7e588d3dec3024acd30af3abdc36fc58e8",
+      "bytes": 870
+    },
+    "ACTUAL_MUTANTS.json": {
+      "sha256": "8081a170e0c7e00cf2def19c0ccb14f5cea0be17313f3aa5c3071924d9e27a10",
+      "bytes": 8234
+    },
+    "ACTUAL_SOURCE_CLOSURE.json": {
+      "sha256": "735529a21aa192e8352ffa440705efa843c12bf3f57d2c3f1f6fb1e02c3b33a1",
+      "bytes": 4596
+    },
+    "AUTHOR_CORRECTION.patch": {
+      "sha256": "5c265320a7fda3ce8e3bb36ac769fb0ce4e0e0a3bbbeb36daaa6e49a4ff3fbe0",
+      "bytes": 195755
+    },
+    "CACHE_DISPOSITIONS.json": {
+      "sha256": "df78776e20e63cc35e25283a3fa364789a37e6627013660660b77afe919742b0",
+      "bytes": 1476
+    },
+    "COLD_FINAL_DIFF_VIEW.txt": {
+      "sha256": "bc557b0a1bbac34bb577a9be45203deb46a3a8dafe3cd20e0c99651b9d2a668e",
+      "bytes": 116712
+    },
+    "COMPLETE_MAPS.json": {
+      "sha256": "55a7615123ac1dfa4cfa5b514283124254c822fdd161200459d38ba70201cd4d",
+      "bytes": 1107
+    },
+    "FINAL_COLD_READ.json": {
+      "sha256": "8ef49c6f8070734493ade36bacb046b92d62abc1df882185aab87fe3fac7b683",
+      "bytes": 4345
+    },
+    "FINAL_EXECUTIONS.json": {
+      "sha256": "ea82c3dfcfb22fd4cd5399bfacaa398c906bcce815831f68c132de70d6ffa6ce",
+      "bytes": 7612
+    },
+    "FINAL_INVENTORY.json": {
+      "sha256": "ffb5276524f6e610e9a38942c58789790b35a2852a96e02decb1b9b4e184bf63",
+      "bytes": 3784
+    },
+    "FINDING_DISPOSITIONS.json": {
+      "sha256": "33c23904d6e04b47144a66002766143c7b9a1d9da7a5f5ab2c9529f52e866d8d",
+      "bytes": 22534
+    },
+    "FROZEN_ORIGINAL_INVENTORY.json": {
+      "sha256": "72acbec419ad4656ed0c8cc5ed8ce7ea94c0be5a72bf4ac8e9e427c9ac653e0b",
+      "bytes": 6663
+    },
+    "FUNCTION_AST_PRESERVATION.json": {
+      "sha256": "f11e6298018bf930e03c247efca4cc48763fae923d054e618c683723e111fd52",
+      "bytes": 1312
+    },
+    "HANDOFF.md": {
+      "sha256": "3236a05fe4da388b5994035de30cb6067056e04e23774dc6afe51edcd289374f",
+      "bytes": 1314
+    },
+    "INDEPENDENT_ARITHMETIC.json": {
+      "sha256": "9307c057bf102de5eb4aff8f1fde36541c7b8a22b4f495657163693ee774a4b1",
+      "bytes": 642
+    },
+    "INITIAL_BINDING.json": {
+      "sha256": "82aef0a98e46919c160ee5055a57f1840d2e17d93e7872c2daf6fb74f1fad3b8",
+      "bytes": 316
+    },
+    "MAIN_PRESERVATION.json": {
+      "sha256": "ed13885064b8aa767a7b490f3b9cbc6f2db3cbf1836eb2ff55580e8634863085",
+      "bytes": 26800
+    },
+    "NUMERICAL_PAYLOAD_BINDING.json": {
+      "sha256": "78f629fd2230b24eac56c8749897c198f6e2c2feba8aa8a5d1e79834229d5a01",
+      "bytes": 7983
+    },
+    "ORIGINAL_AUTHOR_READ_LEDGER.json": {
+      "sha256": "3c1e9b205c510aa3142a567586be23a935845fd0f50a7ed7d08222b68d1ae7e0",
+      "bytes": 2888
+    },
+    "ORIGINAL_CHECK_PRESERVATION.json": {
+      "sha256": "d26287cc05f5303937f9610311ebe082bdc9cd093c441019862d6109ed7b3020",
+      "bytes": 739
+    },
+    "ORIGINAL_FINAL_DISPOSITIONS.json": {
+      "sha256": "7ba4e4660566d6b2e01e390a495275bb25e6ecc35dbec6644858de77e0bf62c4",
+      "bytes": 9230
+    },
+    "PACKET_SUMMARY.json": {
+      "sha256": "9edd6a7a1232b0d23dfb1bfa35dac1a4f9a8066c8233f315de532f378469f036",
+      "bytes": 1535
+    },
+    "PAUSED_FOR_WAVE14_CONFIRMATION.json": {
+      "sha256": "88cd70d9fee2b8028f0d84430366add3684a4c14fab369a8a72fdc9e42871a19",
+      "bytes": 2817
+    },
+    "PRE_EXECUTION_SOURCE_FREEZE.json": {
+      "sha256": "3c730bc9a94d1d57fba6d9972c956f655ab7a8fc5b95b00edf6d4aadff4248d5",
+      "bytes": 4752
+    },
+    "PRIOR_REVIEW_BINDING.json": {
+      "sha256": "127aad8d9151c332a5fc9b8de7e7daaf3ad31a4b081bfdff6013d5172c70fd68",
+      "bytes": 11726
+    },
+    "REPORT.md": {
+      "sha256": "19e1781b9f7bc7ee17671f6bd8d0a4699b2c0236e7ec0b44851c78f551894131",
+      "bytes": 10322
+    },
+    "SEMANTIC_BINDING.json": {
+      "sha256": "2ba75528d333d3fd0d2731e7f19b051b695a8e066ddc8838fd7dfc7c863786ff",
+      "bytes": 1048
+    },
+    "actual-mutants.log": {
+      "sha256": "dae87e017802d258bdcb6a0d268324ac1cfe049009502b6087bfff39e3905d61",
+      "bytes": 2020
+    },
+    "actual-mutants.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7892-corrupt_excited_spectrum.py": {
+      "sha256": "a8ea74a74a8f9eb92fc72ee6c354ca522cccf9faff644d8d042fdea085825672",
+      "bytes": 28363
+    },
+    "actual-source-mutants/7892-corrupt_excited_spectrum.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7892-corrupt_excited_spectrum.stdout": {
+      "sha256": "504edae67e0befafb7f85ab57be920720a296d514c6bef06c480af256d3c2467",
+      "bytes": 3955
+    },
+    "actual-source-mutants/7892-dropped_t.py": {
+      "sha256": "c7df18bafa6a3efc138829429c021b265240780e82d53ae6d72146586bed8f20",
+      "bytes": 28341
+    },
+    "actual-source-mutants/7892-dropped_t.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7892-dropped_t.stdout": {
+      "sha256": "03981fc455cbc149dfb5e2c946dedc7739c05c1fc371395130f4151577737008",
+      "bytes": 3955
+    },
+    "actual-source-mutants/7892-periodic_sea_boundary.py": {
+      "sha256": "6df733cf862dce0e28138e3e96a00b2a188dc1e6a36cb5628d4c14e73cbdc220",
+      "bytes": 28349
+    },
+    "actual-source-mutants/7892-periodic_sea_boundary.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7892-periodic_sea_boundary.stdout": {
+      "sha256": "9d7a34c9a9c5ebaea9e1bf26cb84edfcc48c590be6bcc3be06ed45fffd7e8348",
+      "bytes": 3955
+    },
+    "actual-source-mutants/7892-same_current_states.py": {
+      "sha256": "9090d5191f50991d847e68518598d25858458713730c414472842ff18e660982",
+      "bytes": 28349
+    },
+    "actual-source-mutants/7892-same_current_states.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7892-same_current_states.stdout": {
+      "sha256": "be3367158f96d1cb97ca96bf6b871beaac2c9929977f9a99a6cba38752e14bf9",
+      "bytes": 3955
+    },
+    "actual-source-mutants/7893-omitted_full_H_curl.py": {
+      "sha256": "0f797e96598acba8b24b9906cdf5cdcbe956d4a97142153f53ae7ebe61bcafda",
+      "bytes": 38327
+    },
+    "actual-source-mutants/7893-omitted_full_H_curl.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7893-omitted_full_H_curl.stdout": {
+      "sha256": "4e72d571701af70ccd5535744dd8c7c74c8126f91af6127d76d8cff3f687e465",
+      "bytes": 6284
+    },
+    "actual-source-mutants/7893-wrong_local_staggered_support.py": {
+      "sha256": "0d178c42f74ec806c5cc0d5cd3fa4eae4c411f4c3dcdc6f8fe2e8a08ced30a4a",
+      "bytes": 38334
+    },
+    "actual-source-mutants/7893-wrong_local_staggered_support.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7893-wrong_local_staggered_support.stdout": {
+      "sha256": "042e39a3e005c79f78e449b5c82bf995ed4e0ad725a130d95a355288c0ff1fe9",
+      "bytes": 6284
+    },
+    "actual-source-mutants/7903-wrong_Wilson_normalization.py": {
+      "sha256": "8efa98f5055d76ecfeb1087327a6c061bba9eca5beb2a4e9a667d9ea369480ae",
+      "bytes": 59112
+    },
+    "actual-source-mutants/7903-wrong_Wilson_normalization.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7903-wrong_Wilson_normalization.stdout": {
+      "sha256": "f3cb912b2f721d0f420e70793cca440d423da794286a75de464c00aaba75dfc9",
+      "bytes": 8574
+    },
+    "actual-source-mutants/7903-wrong_code_embedding.py": {
+      "sha256": "686709322d6ebfb01cc0aeab2059d531a66a90fa9e8a9bf249555d27accf47dc",
+      "bytes": 59112
+    },
+    "actual-source-mutants/7903-wrong_code_embedding.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7903-wrong_code_embedding.stdout": {
+      "sha256": "f57f99c1d844ef2aabc5e3e5c83245eff1cb633a1b4493c3040546a884faca25",
+      "bytes": 8574
+    },
+    "actual-source-mutants/7903-wrong_independent_Fock_hop.py": {
+      "sha256": "161e8ea22a7fa76fe44ca6776523563ea2a82ed9d8529fec38d63fe51d8376c5",
+      "bytes": 59114
+    },
+    "actual-source-mutants/7903-wrong_independent_Fock_hop.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "actual-source-mutants/7903-wrong_independent_Fock_hop.stdout": {
+      "sha256": "8f7a4af53b3dd2cc365817b0027ad157db2a28546c89bc6ecb13bb03e4848ae3",
+      "bytes": 8574
+    },
+    "actual_mutants.py": {
+      "sha256": "a9ebef9e5f7bc9f0da3761e392817266a8dc6e88bcedef30ae6c206b98bff496",
+      "bytes": 2778
+    },
+    "author-correction.patch": {
+      "sha256": "a75d28899c7e17167a72fddf645bfd4d6beee4773bdf325b6206db472d0bace4",
+      "bytes": 246570
+    },
+    "candidate.patch": {
+      "sha256": "e5bf7667e47406d09e7474af779f31120daacdb460ec2fd034cce694abed39de",
+      "bytes": 263615
+    },
+    "final-7892.stderr": {
+      "sha256": "751d47887e1695fe9d6085962fcf9aa4997e75b0baceb75f2a5b8077ca801e59",
+      "bytes": 119
+    },
+    "final-7892.stdout": {
+      "sha256": "927241f97bfbaf344050c8ce3ce4eef22f6bbd0fe72fdb7a7b4fe4df7e9eef3f",
+      "bytes": 4241
+    },
+    "final-7893.stderr": {
+      "sha256": "5063438cfd4b6a7c44b7a7992fc181eab1446d56e53b46f9c31efb31c2f16aed",
+      "bytes": 129
+    },
+    "final-7893.stdout": {
+      "sha256": "1f9c704a9bc89c26f38bc30a14fb45be5104a38e516d744305f98b033418180f",
+      "bytes": 6580
+    },
+    "final-7903.stderr": {
+      "sha256": "75a9136d258bae79c1fea95a4bd69fdbde673afe0aee32fb12a1266915afe221",
+      "bytes": 126
+    },
+    "final-7903.stdout": {
+      "sha256": "13c1caa4b669d3b84a4de9b3f6574a316726d32a87936ce0ced675ba3e8f538a",
+      "bytes": 8867
+    },
+    "final-executions.log": {
+      "sha256": "1bb27c4ef10d561c1feea3a705c0899c5668d10a113ead074efd1b09e6490435",
+      "bytes": 224
+    },
+    "final-executions.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "final-source/.claude/science/review-fixes/u1-matter-links-2026-09-07/CORRECTION.md": {
+      "sha256": "650d3e7e254ff3f4a668ebdf0fc8d3e4d52623148233b2639e2c161e2230dbe7",
+      "bytes": 6869
+    },
+    "final-source/docs/CHARGE_CONJUGATION_AND_THE_CONSERVED_U1_CURRENT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "a152e26fd7eb23fe91834697ee237ccc7acc0f3b01b020ea02c815db5a308366",
+      "bytes": 28807
+    },
+    "final-source/docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "bade195d91108b2611c16eed15e1f30aeb6f18561466240b51dd0c7a0dfa85e0",
+      "bytes": 34318
+    },
+    "final-source/docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "f74007eef2c4d1c26043377c725e8d961cc8cd4271b1b53eab51dcaa23b848f9",
+      "bytes": 39921
+    },
+    "final-source/logs/runner-cache/charge_conjugation_and_conserved_u1_current_check_2026_09_03.txt": {
+      "sha256": "927241f97bfbaf344050c8ce3ce4eef22f6bbd0fe72fdb7a7b4fe4df7e9eef3f",
+      "bytes": 4241
+    },
+    "final-source/logs/runner-cache/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.txt": {
+      "sha256": "13c1caa4b669d3b84a4de9b3f6574a316726d32a87936ce0ced675ba3e8f538a",
+      "bytes": 8867
+    },
+    "final-source/logs/runner-cache/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.txt": {
+      "sha256": "1f9c704a9bc89c26f38bc30a14fb45be5104a38e516d744305f98b033418180f",
+      "bytes": 6580
+    },
+    "final-source/scripts/charge_conjugation_and_conserved_u1_current_check_2026_09_03.py": {
+      "sha256": "f7530e688cd0fa1cc054db015f59c630e365fea3f62f64273a1f8dc4817928a6",
+      "bytes": 28349
+    },
+    "final-source/scripts/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.py": {
+      "sha256": "c6b2a498a51ca61120a951ce5f37d69c199595bad49660fce29c8dab17a96d09",
+      "bytes": 59112
+    },
+    "final-source/scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py": {
+      "sha256": "96e9728341c7017c9e9275cb92a4b7c462d7cba99db8806fd2dcca06822daec2",
+      "bytes": 38334
+    },
+    "finalize_wording.py": {
+      "sha256": "6263bea92f207de2b40304a9d2b6e63370beb0dd8e0934b7e2b390fdab5035bb",
+      "bytes": 8584
+    },
+    "finish-packet-first-harness.stderr": {
+      "sha256": "03786d2f0f32a601ddfaa7de83c384460d45da6ed1a4afc0f442bb5e011693ff",
+      "bytes": 757
+    },
+    "finish-packet-second-harness.stderr": {
+      "sha256": "410662acc48d439761207e4c0c9fa83c3232aa40dfa7ce6ec1b4c62bdfadde59",
+      "bytes": 369
+    },
+    "finish-packet.log": {
+      "sha256": "9edd6a7a1232b0d23dfb1bfa35dac1a4f9a8066c8233f315de532f378469f036",
+      "bytes": 1535
+    },
+    "finish-packet.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "finish_packet.py": {
+      "sha256": "80862a535c0cabc33cc893274ede69cf93515edbd9c263670dab893ade062cd8",
+      "bytes": 13194
+    },
+    "focused-preflight-final.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "focused-preflight-final.stdout": {
+      "sha256": "69cda099008fc504d718f4f1b23400b04d722e57345d970baddd5ca79e2354bf",
+      "bytes": 3959
+    },
+    "focused-preflight.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "focused-preflight.stdout": {
+      "sha256": "d71da50096b8c764c15d4e6d903749e729c42569c75a1946aa616243761e4606",
+      "bytes": 2189
+    },
+    "focused_preflight.py": {
+      "sha256": "8c0000ef9b9c529189080194cd649e2287f65894c3525f4713502d5441bd974c",
+      "bytes": 1827
+    },
+    "freeze_and_execute.py": {
+      "sha256": "3c6759d6b4d8c6d8a00e01bd21ff842b96fc79bedbe9e1d1c2d6810854ce0f12",
+      "bytes": 4376
+    },
+    "frozen-pre-execution-source/.claude/science/review-fixes/u1-matter-links-2026-09-07/CORRECTION.md": {
+      "sha256": "650d3e7e254ff3f4a668ebdf0fc8d3e4d52623148233b2639e2c161e2230dbe7",
+      "bytes": 6869
+    },
+    "frozen-pre-execution-source/docs/CHARGE_CONJUGATION_AND_THE_CONSERVED_U1_CURRENT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "a152e26fd7eb23fe91834697ee237ccc7acc0f3b01b020ea02c815db5a308366",
+      "bytes": 28807
+    },
+    "frozen-pre-execution-source/docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "bade195d91108b2611c16eed15e1f30aeb6f18561466240b51dd0c7a0dfa85e0",
+      "bytes": 34318
+    },
+    "frozen-pre-execution-source/docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "f74007eef2c4d1c26043377c725e8d961cc8cd4271b1b53eab51dcaa23b848f9",
+      "bytes": 39921
+    },
+    "frozen-pre-execution-source/scripts/charge_conjugation_and_conserved_u1_current_check_2026_09_03.py": {
+      "sha256": "f7530e688cd0fa1cc054db015f59c630e365fea3f62f64273a1f8dc4817928a6",
+      "bytes": 28349
+    },
+    "frozen-pre-execution-source/scripts/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.py": {
+      "sha256": "c6b2a498a51ca61120a951ce5f37d69c199595bad49660fce29c8dab17a96d09",
+      "bytes": 59112
+    },
+    "frozen-pre-execution-source/scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py": {
+      "sha256": "96e9728341c7017c9e9275cb92a4b7c462d7cba99db8806fd2dcca06822daec2",
+      "bytes": 38334
+    },
+    "independent-arithmetic.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "independent-arithmetic.stdout": {
+      "sha256": "b513b1f7510c76917f27c78747299a74eca69577c2669ea438de0900b86bc7bc",
+      "bytes": 468
+    },
+    "independent_arithmetic.py": {
+      "sha256": "8e4c976b2b1620978a0491d4ce4d3ae4fe4fa2b414f489b483c77f0910471e40",
+      "bytes": 2278
+    },
+    "maps/7892-complete-original-current-final.jsonl.gz": {
+      "sha256": "794a1370d654132ea7cb0e165e2cc4de75ccf1be321c865e348f25073f956254",
+      "bytes": 1503007
+    },
+    "maps/7893-complete-original-current-final.jsonl.gz": {
+      "sha256": "e0270feb74d2bd0d7c231b0c7ccec8305634c390e870d0aa3048245ef5e8383b",
+      "bytes": 1503101
+    },
+    "maps/7903-complete-original-current-final.jsonl.gz": {
+      "sha256": "6111ce34492ba23b94bd678bade542775ad24b2dff8d9bbc878736929fda7906",
+      "bytes": 1503106
+    },
+    "original-source/docs/CHARGE_CONJUGATION_AND_THE_CONSERVED_U1_CURRENT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "9b5dd69411e6d9ce5786a949f5685be159370e5a78454a44ed2a212d24a198d6",
+      "bytes": 31721
+    },
+    "original-source/docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "4cc70d7379584822c7fdc911e932af36ab41bfa03a9c1a03c57a88c1ac33b2fb",
+      "bytes": 40279
+    },
+    "original-source/docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md": {
+      "sha256": "58b7d1947fd19e79c69247c64ac75100e1ff2be99e72e1ba317bf171a24435d9",
+      "bytes": 48084
+    },
+    "original-source/logs/runner-cache/charge_conjugation_and_conserved_u1_current_check_2026_09_03.txt": {
+      "sha256": "d054b48727f05f7bc567c3e7f5dc1603c434db9de2a9a05ad999830b38328b60",
+      "bytes": 5780
+    },
+    "original-source/logs/runner-cache/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.txt": {
+      "sha256": "353a324625a51907ab75f9fa4176d080a1291cd0f079f302337639c88124e8a3",
+      "bytes": 7646
+    },
+    "original-source/logs/runner-cache/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.txt": {
+      "sha256": "295c8e9ce2fe7bc4530f7116c8126396fbff47b10cd3ed03ed00e72cc2a22031",
+      "bytes": 6785
+    },
+    "original-source/scripts/charge_conjugation_and_conserved_u1_current_check_2026_09_03.py": {
+      "sha256": "d5a1914bf9b5bb244526fd399fe232544764545c6e6f8dcc45631476fb86f719",
+      "bytes": 26786
+    },
+    "original-source/scripts/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.py": {
+      "sha256": "1018fcee391ff5918f77ae79e26df44c851fbe802492f26883fa1bdc9b702f4a",
+      "bytes": 51527
+    },
+    "original-source/scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py": {
+      "sha256": "c5753f019161b99133803cca709bd536a28071595651f917291495de75fc654d",
+      "bytes": 35592
+    },
+    "repair_compact_runner.py": {
+      "sha256": "a8f241bc674746aa24352716b04f8200881dd4520c5823581a04700ab01ed81c",
+      "bytes": 11630
+    },
+    "repair_notes.py": {
+      "sha256": "dbc303914916775a70e449bd246cd153bfdd88bc85e65ccc24bfddab5dfe42fd",
+      "bytes": 41597
+    },
+    "repair_runners.py": {
+      "sha256": "9b0d621627dc6ea4dac3df6e73883f715c5738da84860774e4f78c9f4a621e9f",
+      "bytes": 13916
+    },
+    "source-and-payload.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "source-and-payload.stdout": {
+      "sha256": "6f9e9871b936cfd13d9a2f71f524352cfad27ad12bfac8768653d8ab99bdddaa",
+      "bytes": 76
+    },
+    "source_and_payload_controls.py": {
+      "sha256": "6c2151ee63a62c200e2858dfcd25befa5bfe1f274ff97f4371af229b4e5cbf34",
+      "bytes": 2695
+    },
+    "vocab.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "vocab.stdout": {
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81
+    },
+    "write_handoff.py": {
+      "sha256": "ff51a6cd28df49124256ccefbfe98432cdb1bdb1520d05d2fe0575fe57466bd9",
+      "bytes": 15558
+    }
+  }
+}
