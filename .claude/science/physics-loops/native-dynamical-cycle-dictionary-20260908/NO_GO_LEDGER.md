@@ -1,0 +1,2 @@
+# Scope memory
+This affirmative packet does not submit the prior same-edge fixed-code overlap theorem. The present state domain is explicitly ambient/relaxed, so it must not be combined silently with the original fixed positive cycle code. Unitary coordinate equivalence alone does not select a Hamiltonian, create an extra physical link role, or derive a U1 field. No route family is claimed exhaustively excluded here.
