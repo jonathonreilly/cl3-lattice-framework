@@ -1,0 +1,26 @@
+[
+  {
+    "name": "wrong_K_factor",
+    "exit": 1,
+    "old": "G(0,-2*x);ik[b][a]=G(0,2*x)",
+    "new": "G(0,-x);ik[b][a]=G(0,x)",
+    "failure": "RuntimeError: frequency square and factor two",
+    "sha256": "5aabf30608714cf19b6268c3e97c7fc29608d4cb9077890e6fed243d809e52ad"
+  },
+  {
+    "name": "odd_Gauss_domain",
+    "exit": 1,
+    "old": "if n.bit_count()%2==0] # PARITY_DOMAIN",
+    "new": "if n.bit_count()%2==1] # PARITY_DOMAIN",
+    "failure": "RuntimeError: global Gauss product enforces even matter",
+    "sha256": "c78b16ecf5a3e651e6c64e39060b1f6579d4dc2e1d12702e3fc700d649d5adb2"
+  },
+  {
+    "name": "wrong_spectator_count",
+    "exit": 1,
+    "old": "4*3**(k//2)",
+    "new": "2*3**(k//2)",
+    "failure": "RuntimeError: analytic spectator multiplicity moment",
+    "sha256": "e87255885a8696042fc38a0ac2192755c87f0da7ca3899db29f3c7d54cf2be6a"
+  }
+]

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-zero-penalty-stdlib-controls/mutant_wrong_spectator_count.py", line 83, in <module>
+    signal.alarm(AUDIT_TIMEOUT_SEC);p=argparse.ArgumentParser();p.add_argument('--json',action='store_true');p.parse_args();print(json.dumps(run(),indent=2))
+                                                                                                                                             ^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-zero-penalty-stdlib-controls/mutant_wrong_spectator_count.py", line 76, in run
+    req(native==fermion,'native versus even CAR moment');req(native==G(predicted),'analytic spectator multiplicity moment');moments.append(str(native[0]));hn=mm(hn,H);hp=mm(hp,hf)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-zero-penalty-stdlib-controls/mutant_wrong_spectator_count.py", line 41, in req
+    if not v:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: analytic spectator multiplicity moment
