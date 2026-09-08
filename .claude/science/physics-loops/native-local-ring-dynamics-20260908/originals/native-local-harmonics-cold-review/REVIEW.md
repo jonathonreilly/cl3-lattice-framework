@@ -1,0 +1,11 @@
+# Independent local-harmonics review
+
+PASS for DERIVATION.md SHA1449c0e1724db004ac8ec9fc828a01dec3eb2ebf64be2658ca60c9bf4e57bfae and complete checker1c436c16043599a2adecd64b4328f581a0fbc15016939ba453b0549f8719dc22, read in full. This compares against my earlier independent prethermal applicability c85c60a1; no new literature import or numerical prethermal proof.
+
+Independent subtraction gives Delta D=2(1-2x)(r_i+r_j-5). Input-projector ordering A P_m yields [D,A P_m]=2m A P_m; flipping x reverses m, hence adjoints match. For each m the count is2 binomial(10,m+5), reproducing the stated eleven multiplicities. Ice has m1; excited resonances m0 exist. Signed neutrality makes D even. The period pi/U is exact but does not by itself select a conserving Floquet gauge.
+
+The union of endpoint stars has11 edges. Only endpoints contain the flipped edge, so every other Q² commutes with the term and its diagonal projectors, including overlapping stars. This is the strong-support condition required by the commuting-term extension, rather than an unjustified onsite-N substitution. Grouping positive links by tails gives a bounded connected cell neighborhood. The conservative8-cell and33-overlap estimates suffice independently of observed7/21 values.
+
+The root's local-dynamics clarification is correct: commuting charge evolution expands a local observable only by its fixed neighboring charge supports, independently of U*time. Since [K,D]=0, this rotation factors from K evolution. Applying local Duhamel/Lieb–Robinson control to K gives the dimension-three polynomial prefactor with constants changed by fixed support enlargement; it does not introduce a volume factor or velocity proportional to U. Bare-observable/state dressing errors of order gamma/U remain separate from the small dressed-frame remainder.
+
+The theorem instantiation and conservative nu0/threshold agree with the earlier applicability review. It controls a high-order quasi-local effective Hamiltonian and dressed charge, not the fourth-order ring truncation, global ice-band isolation, a bulk phase, or selected coupling. The checker uses a representative own-edge-free Z mask for its local adjoint check, which is sufficient for that algebraic identity but is not a fresh reconstruction of the complete native dictionary. No blocker found.

@@ -1,0 +1,5 @@
+# Source-bound review history
+
+Original native761, root113, sharpeningb34, natural native5f11/rootdd74 and mutual reviews are archived. Root has read the native full proofs, as recorded in campaign messages; durable root-side review may be added by coordinator. Native ROOT_REVIEW a6e884 confirms root no-compression simplification after exposure was disclosed. Harmonics independent review is archived. Root13-step7b9eaf27 control read completely before adaptation; sparse Fraction algebra and original132 raw checks are consistent, but canonical14-step code is new and awaits independent review. No earlier PASS is treated as approval of changed canonical bytes. Actual bare-X mutant initially survived inherited checks; coverage correction and original sources/raw are preserved.
+
+Complete canonical review 74000ef3645518b4771dedcf48079a4afedfd0adccd188be3e58b96329c66dfd and graph confirmation cda981a591164c7ab8ad54d700c6c4875651b5c0f0480cc1ee303d54fe1a0fd9 passed. Root integration review complete.

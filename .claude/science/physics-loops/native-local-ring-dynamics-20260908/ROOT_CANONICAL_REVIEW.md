@@ -1,0 +1,7 @@
+# Root integration review
+
+PASS for the conditional local natural-ring theorem. Root read the complete final note and primary, complete matrix and constants helpers, and the complete harmonic port diff against the already reviewed original. Independent complete-source review 74000ef3645518b4771dedcf48079a4afedfd0adccd188be3e58b96329c66dfd confirms the eight-file closure, proof and four actual mutation failures. The initial bare-X mutation survived a circular reference and is preserved with the independent absolute-matrix correction.
+
+The order14 local normal form controls a fixed rescaled ring time with volume-independent O(epsilon squared) local-expectation error, conditional on supplied Hamiltonian, dressed ice preparation and consistent readout. Its constants are sufficient and extremely conservative. It establishes no phase, photon, physical law selection, uniform global spectral band or practical coupling threshold. Preparation by ramp is separate pending work.
+
+Root compared the graph manifest against exact HEAD: one node and three edges, no previous entries changed. Graph-only independent confirmation cda981a591164c7ab8ad54d700c6c4875651b5c0f0480cc1ee303d54fe1a0fd9 agrees. The 11091-predicate canonical run and isolated closure passed; no additional full pipeline is claimed. Full pipeline, strict lint and changed-evidence checks remain for an actual main-landing candidate. No audit verdict or authority ledger changed.

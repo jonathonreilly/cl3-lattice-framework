@@ -1,0 +1,2 @@
+# Prospective exact local controls
+Before running: enumerate all 2^11 endpoint-star bitstrings for one edge; compare literal endpoint charge energy difference with 2(1-2x)(r_i+r_j-5), frequency reversal and partial-permutation adjoint. Independently construct L4 and L6 cubic edge carriers, bound endpoint-star support, grouped-site support and incidence overlap. These finite checks complement the symbolic proof, not a many-body or prethermal theorem proof. Standard library, <30s, <384MiB. No sampling.

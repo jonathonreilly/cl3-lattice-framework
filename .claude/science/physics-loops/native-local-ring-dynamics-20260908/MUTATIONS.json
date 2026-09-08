@@ -1,0 +1,30 @@
+[
+  {
+    "name": "wrong_homological_sign",
+    "source_sha256": "535d6947efc300ac924291a76ebe714289f8d84b5a5760aa3a80232e8282504d",
+    "mutant_sha256": "a7e48de393949d4eeda97cb9dbc5bff392350a7ae3ca37cf2e56016c1a800cae",
+    "exit_code": 1,
+    "error": "RuntimeError: all D-offdiagonal cancelled"
+  },
+  {
+    "name": "missing_folded_term",
+    "source_sha256": "535d6947efc300ac924291a76ebe714289f8d84b5a5760aa3a80232e8282504d",
+    "mutant_sha256": "d9ff4751be0e3f63541d33657afc5fc909f2ac39e6d7278c21685e08b48a050a",
+    "exit_code": 1,
+    "error": "RuntimeError: fourth folded resolvent coefficient"
+  },
+  {
+    "name": "wrong_harmonic_input_sign",
+    "source_sha256": "481755120b78c5ff633e1d2c726bb6b84e396c8fe9a9a6ed7ff016bca80a35f9",
+    "mutant_sha256": "92abe1dcec47bad0368ef54a79ddf9fb4e4e269962ce613622cb7a035e031864",
+    "exit_code": 1,
+    "error": "RuntimeError: literal charge difference"
+  },
+  {
+    "name": "bare_X_instead_native",
+    "source_sha256": "535d6947efc300ac924291a76ebe714289f8d84b5a5760aa3a80232e8282504d",
+    "mutant_sha256": "a7715551c300b78370a5a74febba0984601d678e45c88c750f14ad91058054f2",
+    "exit_code": 1,
+    "error": "RuntimeError: absolute native fourth matrix"
+  }
+]
