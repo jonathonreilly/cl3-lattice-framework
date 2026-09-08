@@ -126,9 +126,10 @@ closed constituents now have reviewed corrected science on main. No audit ran.
 | Landed | #6358 including #6280/#6345/#6352/#6354 | Complete corrected finite source and four required suppliers accepted; physical law, global scheduling and wider compiler/parent claims remain open. |
 | Landed | #6371 including #6339/#6368 and Block84 supplier | Complete corrected conditional scope accepted on main; full-lattice race, physical probability/time/energy and broader parent claims remain unestablished. |
 | Held | #6515 including #6485 dressing/sector signature | Actual proof chain reaches reserved #6379 through Blocks 110/109/108/107/106/105. Eight original additions and all obligations preserved; keep #6515 open. No execution or full science verdict. |
-| Repair author backlog_8001_review; original reviewer backlog_draft_triage | #7942 pair-update parity/winding | Final source run passes 21/0. First evidence collector missed temporary raw child data; successful run preserved and one bounded identical-source recovery authorized. Final packet and independent confirmation remain. |
-| Original reviewer backlog_draft_triage | #7848/#7849 finite Noether and transfer results | Corrected 55-path source/manifest composition under final independent confirmation. Two genuine caches pass 15/0 and 13/0; all original history retained. No final PASS yet. |
-| Repair author backlog_batch_contract; original reviewer backlog_draft_triage | #7888/#7890 finite matter kinematics | Original review found nine P2 and two P3 proof/scope/evidence defects; separate author repairs active after complete original-source review. Preserve both real baselines, 18/0 and 28/0; no accepted source. |
+| Original reviewer backlog_draft_triage | #7942 pair-update parity/winding | Sealed three-path correction and 21/0 first canonical cache; all nine raw tables preserved byte-exactly by one identical-source capture recovery. Final confirmation in the combined 58-path batch remains. |
+| Original reviewer backlog_draft_triage | #7848/#7849 finite Noether and transfer results | All three findings resolved in the sealed source checkpoint; combined 58-path confirmation with #7942 is active. Two genuine caches pass 15/0 and 13/0. Final batch verdict pending. |
+| Repair author backlog_batch_contract; original reviewer backlog_draft_triage | #7888/#7890 finite matter kinematics | Seven-path intermediate correction frozen; two final cache runs and affected controls active. Original 18/0 and 28/0 preserved; no final verdict. |
+| Original reviewer backlog_8001_review | #7889/#7891 shifting records and confinement | Complete original source and actual premise closure review active at the pinned open heads; no author fixes, verdict or landing yet. |
 | Reconciliation complete | Twenty direct landings and 110 other closures | All 130 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
@@ -155,8 +156,16 @@ Reservations **#6379, #6858 and #6859** apply to inherited content too. Preserve
 original branches, dirty author worktrees and historical receipts. Shallow-history
 gaps remain unknown rather than empty deltas.
 
+The current combined #7848/#7849/#7942 target and source-bound evidence are in
+[the wave19 handoff](backlog_evidence/wave19-handoff/INDEX.json). All 57 selected source
+paths retain their frozen author bytes; the manifest adds only three bounded nodes
+and three current-memo edges. Current counts remain unchanged until landing.
+
 ## Avoid recurring work
 
+- Smoke-test raw artifact capture with a trivial probe in the actual child-launch
+  environment before an expensive run. A parent-only observer does not certify
+  child capture; preserve any failed collection and its original execution.
 - Freeze the final publication note and its provenance links before an expensive
   cache execution. Changing a declared note input afterward requires an actual
   fresh run. Preserve every earlier attempt; never restamp it.

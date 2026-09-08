@@ -51,8 +51,9 @@ joint-law selection remain open.
 ## Next scientific decisions
 
 1. The #6371 and #6358 consolidated Record units are on main with their
-   corrected constituents. Finish independent confirmation of the composed
-   #7848/#7849 source; complete #7942 evidence recovery and the #7888/#7890 review/repair handoff.
+   corrected constituents. Finish independent confirmation of the combined
+   #7848/#7849/#7942 source, then run one landing gate. Continue the separate
+   #7888/#7890 repairs and #7889/#7891 original review.
    #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
    reserved-source hold. Closure reconciliation is complete; 77 pending closed
    scopes remain at seven successors. Preserve the fixed 254 and all reservations.

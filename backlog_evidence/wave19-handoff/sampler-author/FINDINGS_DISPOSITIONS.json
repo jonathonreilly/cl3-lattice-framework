@@ -1,0 +1,316 @@
+[
+  {
+    "id": "F1",
+    "original_title": "Required compiler/engine errors produce successful full-unit caches",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1143,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "def run_engine(exe, geo, beta, C, neq, nmeas, tag, seed=SEED, nbin=40):"
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1313,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "        check(f\"{tag} [required witness, seed 20260903] unavailable: {qmc_reason}; partial exact rows are not complete evidence\", False)"
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  },
+  {
+    "id": "F2",
+    "original_title": "Complete Gauss and run-wide invariant claims exceed actual checks",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 184,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "static int check_gauss(const unsigned char*s){"
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 832,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "res2 = max(t2.gauss_residual_one(int(s)) for s in S2)"
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 381,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "    nswitch=nswtry=0; /* Keep cumulative warmup invariant failures. */"
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  },
+  {
+    "id": "F3",
+    "original_title": "Equal-time normalization cannot certify the time map",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 143,
+        "sha256": "46a36e13560d6b8df4059316487649d8b15f88d9bb4e6f18ef1eb0d1cf1d2ca2",
+        "text": "The equal-time test is only `G_E(0)=1/4`, from squaring stored\u00b11 spins and multiplying by1/4 on sampled strings. It cannot validate positive-lag indexing. The underlying distributional construction uses n+1 independent unit exponentials: dividing by their sum gives uniform Dirichlet spacings, and beta times their first n cumulative sums has the uniform-order-statistic density`n!/beta^n` on the ordered simplex. This elementary derivation is retained. The **positive-lag implementation remains unvalidated**: changing actual `u+tau` to`u` still passes the equal-time test while collapsing every lag. That prior mutant remains explicitly unvalidated rather than being relabeled as a passed time-map check. No physical time law follows."
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1308,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "        \"and positive-lag indexing remains unvalidated\","
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  },
+  {
+    "id": "F4",
+    "original_title": "Winding classes, components and observable rates are conflated",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 869,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "def winding_label(lat, bits):"
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 928,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "component_spectra = {}"
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1115,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "transverse = np.array([sum(((-1)**site[0]) * (1 if (int(bits)>>j)&1 else -1) / 2"
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  },
+  {
+    "id": "F5",
+    "original_title": "Parity index does not establish weighted dominance or exclusive cause",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 122,
+        "sha256": "46a36e13560d6b8df4059316487649d8b15f88d9bb4e6f18ef1eb0d1cf1d2ca2",
+        "text": "Rank0 makes this particular parity restriction empty on the ladder component; it does not prove ergodicity or correct sampling there. Rank10 excludes a nonempty algebraic class on the torus but does not determine its thermal mass. For example at beta=.0001, positivity and `||H||<=24` give an even-parity thermal-mass lower bound `exp(-24 beta)=.9976028777`: the same rank need not mean weighted dominance of omitted histories. The finite beta8 discrepancy below is retained without such an inference."
+      },
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 139,
+        "sha256": "46a36e13560d6b8df4059316487649d8b15f88d9bb4e6f18ef1eb0d1cf1d2ca2",
+        "text": "The original C=1,4,8 comparison uses the same seed,20000 equilibration and40000 sampling sweeps. It gives respectively`-8.103150(.010723)`, `-8.122688(.017783)`, `-8.070141(.026243)`. Together with C=2 these agree within1.8 combined bin-standard-error units, and every result is far from the exact reference. These are finite seeded diagnostics. The common seed and40-bin formula do not establish independent errors across C, confidence coverage, effective sample size, autocorrelation control, equilibration, finite-M accuracy or convergence to the desired weighted ensemble. The disagreement is evidence of failure of this sampling result; the parity theorem does not isolate all possible causes."
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  },
+  {
+    "id": "F6",
+    "original_title": "Cube selection and timing do not prove sampler necessity or phase cost",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1054,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "def legal_word_trace(lat, start_bits, word):"
+      },
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 149,
+        "sha256": "46a36e13560d6b8df4059316487649d8b15f88d9bb4e6f18ef1eb0d1cf1d2ca2",
+        "text": "The finite expression `(lambda/C)^6 N_s/binom(N_p,6)` counts geometric six-subset selection times a putative six-operator ratio. At C=2 it is9.3e-7 on L2 and1.6e-11 on L4. It is not a state-independent acceptance probability: legal intermediate states, proposal details and actual matrix elements must be checked separately. XOR closure alone supplies none of those conditions."
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1334,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "    \"the C(N_p, 6) six-subsets, times a putative six-operator ratio (lambda/C)^6. At C = 2 that is \""
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  },
+  {
+    "id": "F7",
+    "original_title": "Fixed-Z records do not determine off-diagonal expectations",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1368,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "def fixed_z_readout_counterexample():"
+      },
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 55,
+        "sha256": "46a36e13560d6b8df4059316487649d8b15f88d9bb4e6f18ef1eb0d1cf1d2ca2",
+        "text": "The mathematical carrier is one supplied two-state link role per edge with ordinary tensor composition. No axiom derives that placement, the Hamiltonian or equilibrium probability law. If a supplied readout assigns the link Z content to `E_e=Z_e/2`, it supplies that diagonal value. Fixed Z-record correlations do not supply off-diagonal `U_e` or `P_f` expectations. The two legal configurations 166 and 2196 are joined by face5: their normalized plus/minus superpositions have identical complete Z-record probability distributions but `P_5` expectations +1 and -1. An additional measurement/readout protocol is needed. Imaginary-time auxiliary configurations are not permanent physical records, and this sampler is not a physical Record formation law."
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  },
+  {
+    "id": "F8",
+    "original_title": "L20value is promoted to an infinite-size limit",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 126,
+        "sha256": "46a36e13560d6b8df4059316487649d8b15f88d9bb4e6f18ef1eb0d1cf1d2ca2",
+        "text": "The L8 ladder basis has49 states and components47,1,1. All basis/vertex equations are checked. The47-state component has `E0=-4.8309586723`, internal gap`.9726557606`, and `<P_f>=.6038698340`. Its density is `E0/L=-.6038698340 lambda`; total energy multiplies that density byL. The historical comparison`-.6035607` is the rounded **L20** value in the corrected current ring source, not an established infinite-size limit."
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1098,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "    f\"density E_0/L is {dens:.8f} lambda (total energy multiplies by L); the historical -0.6035607 \""
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  },
+  {
+    "id": "F9",
+    "original_title": "Cache does not bind source note/current quoted premise",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 46,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "AUDIT_INPUT_PATHS = ("
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 57,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "def source_scope_certificate():"
+      },
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 47,
+        "sha256": "46a36e13560d6b8df4059316487649d8b15f88d9bb4e6f18ef1eb0d1cf1d2ca2",
+        "text": "The four framework axioms are quoted from the [current minimal-axiom memo](MINIMAL_AXIOMS_2026-06-29.md), not amended. **Lattice**: \"Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor adjacency, standard"
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  },
+  {
+    "id": "F10",
+    "original_title": "Negative-claim scope packet and audit trace are not current",
+    "severity": "P2",
+    "author_disposition": "implemented; original independent final confirmation pending",
+    "anchors": [
+      {
+        "path": "docs/THE_LINK_MODELS_PAIR_UPDATE_CONSERVES_PLAQUETTE_PARITY_AND_THE_2X2X2_GAUSS_SECTOR_SPLITS_INTO_937_WINDING_COMPONENTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "line": 157,
+        "sha256": "46a36e13560d6b8df4059316487649d8b15f88d9bb4e6f18ef1eb0d1cf1d2ca2",
+        "text": "## No-Go Discipline Gate"
+      },
+      {
+        "path": "scripts/link_model_qmc_pair_update_parity_winding_sectors_check_2026_09_04.py",
+        "line": 1402,
+        "sha256": "60055246a11e2baf866227f374adf5990c6d4c8d7c5f49b2719d5e87c13648b0",
+        "text": "print(\"N1 packet limitation: five-route procedural minimum is unmet; only real executed families and open alternatives are recorded.\")"
+      }
+    ],
+    "evidence": [
+      "AFFECTED_CONTROLS.json",
+      "NEW_SPECTRAL_CONTROLS.json",
+      "PRE_EXECUTION_SOURCE_FREEZE.json",
+      "ACTUAL_FINAL_CACHE_CONTROLS.json",
+      "RAW_TABLE_COMPARISON.json",
+      "final-execution/IDENTITY.json",
+      "recovery-execution/IDENTITY.json"
+    ]
+  }
+]
