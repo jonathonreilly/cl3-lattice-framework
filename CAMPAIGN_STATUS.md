@@ -56,7 +56,8 @@ joint-law selection remain open.
    the corrected #7889/#7891 source, now independently reviewed and landed.
    Walls repairs and symmetry/Hartree final review proceed in parallel, each
    returning to its original independent reviewer. The four-PR sea/corner
-   original review is active. Relaxation/neighbourhood review is checkpointed
+   original review and free/interacting flux-sector review are active.
+   Relaxation/neighbourhood review is checkpointed
    before its first baseline and will resume in the same reviewer session.
    #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
    reserved-source hold. Closure reconciliation is complete; 77 pending closed

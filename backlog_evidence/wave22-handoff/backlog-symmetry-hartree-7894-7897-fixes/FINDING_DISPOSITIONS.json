@@ -1,0 +1,686 @@
+[
+  {
+    "id": "F1",
+    "priority": 2,
+    "original_finding": {
+      "id": "F1",
+      "priority": 2,
+      "pr": 7894,
+      "title": "Separate massless spectral BDI and kernel CPT from fixed-m many-body symmetry",
+      "anchors": [
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 184,
+          "line_sha256": "47e21ac0427a4aa0f074157840a3c6d2d9bce0065acc66c92f870dc4efe8c18a",
+          "excerpt": "`H_m|_D = m gamma^0` -- and it anticommutes with the chirality, exchanging the two handednesses. (6) The class is `BDI`: `T = K` restricted is the identity times `K` with `T^2 = +1`,"
+        },
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 238,
+          "line_sha256": "f7664aef21d707c790bddc2aba84c5f753c53bc119a53621e3fad3555ab7fb2c",
+          "excerpt": "   the identity on the Dirac point: the discrete symmetries of a vector-like Dirac theory, with none of them broken."
+        },
+        {
+          "path": "scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py",
+          "line": 959,
+          "line_sha256": "9f55fcc2baac66a96d4c7fa32a3fe394f68dff9f772f7b65d83bbac7062dbb50",
+          "excerpt": "check(\"D6 [1e-12] class BDI: T = K with T^2 = +1, C = Eps.K with C^2 = +1, chiral S = CT = Eps; no \""
+        },
+        {
+          "path": "scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py",
+          "line": 1063,
+          "line_sha256": "7f6377416b3e5b4d1b66ded673f137918d0106e247b4509ad41309fd282c7929",
+          "excerpt": "check(\"E3 [exact] H(t,m) is INVARIANT under Pcor, T and PT and goes to H(t,-m) under C, Pcen, \""
+        }
+      ],
+      "problem": "The note assigns C=Eps K and S=Eps beside the massive h(m), although Eps h(m) Eps = -h(-m), so these are spectral particle-hole/chiral symmetries of h0, not of fixed nonzero m. At m=0.7 the claimed particle-hole anticommutator residual is 1.4. D6 checks only squares, not the required Hamiltonian relation. The eight-dimensional product of two antiunitary one-particle maps is linear +I; the many-body table uses a unitary C and antiunitary T, and its C/CPT columns send H(m) to H(-m). The phrase vector-like, none broken and the unqualified CPT reading erase that distinction.",
+      "minimal_fix": "State the specified internal spectral BDI relations at m=0 only; test their commutation/anticommutation against actual h at zero and nonzero m. Distinguish the declared one-particle spectral C, its kernel product, and the many-body C/table; retain the latter exact mass-flip entries. No physical CPT or fixed-m C/CPT invariance follows from the +I kernel product. Preserve exact P-corner and T invariance at all real t,m; qualify gap as 2|m| (original D1 samples positive masses).",
+      "evidence": [
+        "INDEPENDENT_CONTROLS.json: C domain controls",
+        "original-execution/7894/RECEIPT.json: D6 and E table"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "C_spec h(m)=-h(-m); specified BDI onlym0, many-body C unitary and corner CPT mass-flipping, gap2|m|.",
+    "controls": "D6,R1,E3",
+    "final_anchors": [
+      {
+        "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 176,
+        "end": 197,
+        "sha256": "ee4b1cb777f4f27868aec3f9d50f1525abc2435084311c77fcb4d13ee61a5735"
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "priority": 2,
+    "original_finding": {
+      "id": "F2",
+      "priority": 2,
+      "pr": 7894,
+      "title": "Classify CP/PT before invoking Kramers and the m=0 restriction",
+      "anchors": [
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 186,
+          "line_sha256": "caada59ab1ac14596edae8e23b3e0cd8a6d0021f8810f0b4cae2fae93bcc12e0",
+          "excerpt": "improper choice tested gives a scalar. (8) A Kramers sign appears only in the half-cell-shifted combinations and only at `m = 0`: `(PT)^2 = -1` for cube-centre inversion and"
+        },
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 243,
+          "line_sha256": "03182de451181e35392a22a3e1f6c3d7b7d1bfa82dd2482345a4cd483638dc25",
+          "excerpt": "4. The Kramers sign lives in the half-cell-shifted combinations, `PT` with cube-centre inversion and `CP` with the `x = 1/2` reflection, and only at `m = 0`. That is where the emergent"
+        },
+        {
+          "path": "scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py",
+          "line": 968,
+          "line_sha256": "f9198021aa7acb2b13a7bdbaa37f72188420cacbc2b6400c07999c1af4d1bb14",
+          "excerpt": "check(\"D8 [1e-10] a Kramers sign only in the half-cell-shifted products, only at m = 0: \""
+        }
+      ],
+      "problem": "The half-shift squares do not depend on m. Actual one-particle CP=Eps U_mirror K has square -I and anticommutes with h(m) even at m=0.7; PT at the cube centre commutes only at m=0. A spectral antisymmetry pairs E with -E and is not a commuting Kramers symmetry at general energy. In the actual many-body representation, unitary C times the odd-shift mirror preserves both hopping and mass at fixed m, contrary to the shared statement that both send m to -m.",
+      "minimal_fix": "Give separate square, unitary/antiunitary type, and commuting/anticommuting relations for each product at the actual source level. Restrict any Kramers inference to a commuting antiunitary on the specified eigenspace (or explicitly the zero-energy subspace). Remove the claim that the square itself occurs only at m=0 and avoid inferring physical spin from it. Add actual nonzero-m controls.",
+      "evidence": [
+        "INDEPENDENT_CONTROLS.json: CP/PT at m=0,0.7 and actual many-body CP"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "Negative squares persist allm; commuting cube-centre PT onlym0, x-half C_specP anticommuting allm; unitary many-body C times odd P preserves mass. No physical spin inference.",
+    "controls": "D8,R2,R4",
+    "final_anchors": [
+      {
+        "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 176,
+        "end": 197,
+        "sha256": "ee4b1cb777f4f27868aec3f9d50f1525abc2435084311c77fcb4d13ee61a5735"
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "priority": 2,
+    "original_finding": {
+      "id": "F3",
+      "priority": 2,
+      "pr": 7894,
+      "title": "Make D7 test all listed improper CPT alternatives",
+      "anchors": [
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 185,
+          "line_sha256": "de3d87d84c4e1c3b71e58c63aec2d0dd6fc9c9e7a979833325f78cecae3db7b8",
+          "excerpt": "`C = Eps.K` is `eps` times `K` with `C^2 = +1`, chiral `S = CT = Eps`. (7) `CPT` built from corner inversion is `+1` times the **identity** on the Dirac-point subspace; no other"
+        },
+        {
+          "path": "scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py",
+          "line": 957,
+          "line_sha256": "14e754aa51a44e088047035f3317f9714336d5abb673422d799d668ed3a2f195",
+          "excerpt": "    if nm == \"corner inversion\":"
+        },
+        {
+          "path": "scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py",
+          "line": 965,
+          "line_sha256": "ff0fd565a872a47aa02854afc5d3c6a1fb62f804e952c8e36b26f4a0fa3a518d",
+          "excerpt": "check(\"D7 [1e-10] CPT from corner inversion is +1 times the IDENTITY on the Dirac point (%.1e); \""
+        }
+      ],
+      "problem": "D7 tests only the corner product and never checks the other improper products for scalar action. A full-source mutation replacing the x=0 reflection representation with the corner representation after D4 adds a second scalar CPT product while the complete runner still reports 33/0.",
+      "minimal_fix": "Check every explicitly tested improper representation and its antiunitary flag against a scalar-identity condition, then assert the intended complete count/list. Preserve the corner result and scope uniqueness to that tested list; the mutation must fail the actual final runner.",
+      "evidence": [
+        "symmetry_second_scalar_mutant.py",
+        "symmetry_second_scalar_mutant.stdout",
+        "INDEPENDENT_CONTROLS.json",
+        "ADDITIONAL_CONTROLS.json"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "Every four listed improper restriction and antiunitary flag plus proper contrast bound; actual second-scalar and omitted-entry mutants reject.",
+    "controls": "D7",
+    "final_anchors": [
+      {
+        "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 176,
+        "end": 197,
+        "sha256": "ee4b1cb777f4f27868aec3f9d50f1525abc2435084311c77fcb4d13ee61a5735"
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "priority": 2,
+    "original_finding": {
+      "id": "F4",
+      "priority": 2,
+      "pr": 7894,
+      "title": "Zero record diagonal does not establish correlation readout or history covariance",
+      "anchors": [
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 116,
+          "line_sha256": "5738fecc70e55586a84268aa8a1206c17915b64072c3450068674ebd86237cb1",
+          "excerpt": "diagonal and registers only through correlations. A **cut** is an edge set `XOR_{v in S} star(v)`. The two geometries are the **open `2x2x2` coarse cube** (8 corners, 12 code qubits,"
+        },
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 223,
+          "line_sha256": "e3438e377c712ccf35d0866777ee58c4cba0be33264509f5d30360b81c4fec5a",
+          "excerpt": "correlation-only. Since both inversions reverse every bond, the current *vector* is carried to its opposite even where the table reads `+1`."
+        },
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 245,
+          "line_sha256": "3cb98351b769936ebd78667ddda785a8639607607fc6cb8ecaf10f07cbf211a5",
+          "excerpt": "5. `B_v`, `Q` and `H_m` are record-diagonal and carry the table's `P` and `T` signs, while `A_ij`, `S_f`, `T_ij` and `J_ij` are correlation-only: a record history is `P`- and"
+        },
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 279,
+          "line_sha256": "eed16a8cc5a6fa9b22237b7b209e504b9cc1615b0addfd2d70ec19ed89001385",
+          "excerpt": "4. Correlation structure. That the hop, the current and the face constraints register only through correlations is shown; what those correlations are is not computed."
+        },
+        {
+          "path": "scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py",
+          "line": 1081,
+          "line_sha256": "61a13e527508c05ad24146deef1230b50dc46e0f31e7b0bcca0a51e582782f69",
+          "excerpt": "      \"A_ij, S_f, T_ij, J_ij have zero record diagonal: correlation-only\","
+        }
+      ],
+      "problem": "The exact zero-diagonal test only excludes direct fixed-Z readout. Even the entire joint distribution of Z strings cannot distinguish |+> and |->, although their X expectations are +1 and -1. Thus register only through correlations does not follow for the offdiagonal operators. A Hamiltonian/Pauli covariance does not supply a record-formation rule or a covariant probability law for permanent histories.",
+      "minimal_fix": "Retain pure-Z versus zero-Z-diagonal facts. State that offdiagonal readout would require a separately supplied instrument/context/dynamics and is not derived, rather than asserting correlation recovery. Narrow P/T record statements to covariance of the declared fixed readout functions under the supplied map; leave history/formation covariance open. Keep the counterexample as an actual control.",
+      "evidence": [
+        "INDEPENDENT_CONTROLS.json: identical complete Z law",
+        "context/docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "PureZ/zero-diagonal facts retained; identical full Z laws with opposite X expectations; physical instrument/history not inferred.",
+    "controls": "E5,R3",
+    "final_anchors": [
+      {
+        "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 198,
+        "end": 229,
+        "sha256": "e8ae72de4f553313c70f1e52ea7fa070b52375d64c91fc927fe3019f76332463"
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "priority": 2,
+    "original_finding": {
+      "id": "F5",
+      "priority": 2,
+      "pr": 7897,
+      "title": "Remove the false finite-volume singular zero-field limit",
+      "anchors": [
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 200,
+          "line_sha256": "63b2ed79b7acae635e64343ff787974637662ec8c9c8d9c8cbc1e4135f34f78a",
+          "excerpt": "record patterns. (3) A **supplied** field `h sum_v eps_v n_v` -- the companion note's own term -- selects the sign, and singularly: on the slab at `V = 8 t`, `h = -+0.001 t`, a"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 201,
+          "line_sha256": "17c11bc7d27f98deeed742a648f0f622f641a40256459eb87c7f00fbdc5fc1a6",
+          "excerpt": "thousandth of a hop, already saturates `<O>` at `+0.492970 / -0.492970`, so `lim_{h->0^+} <O> = -1/2` while `<O>|_{h=0} = 0`. (4) `O` is a **signed** `Q`: the conjugation"
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 558,
+          "line_sha256": "6d20a7c4fd82c70cefc00a74ba65687fa49aecf4a704c00abb4e3a98ef976c69",
+          "excerpt": "check(\"D3 [numerical] a SUPPLIED field h sum_v eps_v n_v selects the sign, singularly: slab at \""
+        }
+      ],
+      "problem": "The finite slab has an isolated positive gap 9.544487e-5 at V=8 and a C-even ground state. Therefore its zero-field ground expectation is continuous and tends to zero, not -1/2. Actual unchanged gstate gives O=-0.4217863 at h=1e-5, -0.00814690 at 1e-7 and -8.14801e-5 at 1e-9; residuals are below 7e-14. The reported saturation at h=0.001 is real but does not prove the limit.",
+      "minimal_fix": "Preserve the original \u00b10.001 rows and finite susceptibility protocol. Remove singularly and the false fixed-volume limit everywhere, including D3/stdout. State the finite analytic response and the separate, unproved order of infinite-volume and h\u21920 limits. Add the actual below-gap field controls; do not run a larger-volume campaign.",
+      "evidence": [
+        "INDEPENDENT_CONTROLS.json: slab fields and finite gap",
+        "independent_controls.py"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "Original finite saturated rows retained; isolated finite projector analytic and odd with limit0; actual tiny-field eigenpairs and residuals reject saturation.",
+    "controls": "D3,R1",
+    "final_anchors": [
+      {
+        "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 178,
+        "end": 187,
+        "sha256": "c6d5a4e0fddc0c95d163f9f4b124c364ce6f4a823cb13c3063008470197dc1f9"
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "priority": 2,
+    "original_finding": {
+      "id": "F6",
+      "priority": 2,
+      "pr": 7897,
+      "title": "Use opposite C parity, not a C-conjugate excited partner or an exact two-string cat",
+      "anchors": [
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 178,
+          "line_sha256": "888b50895ff09e33fe629e9115392e0bc29bcadef1da3adf9fff5ea6bfc31b64",
+          "excerpt": "sqrt3`. (2) At every `V` tested the ground state is `C`-even and the **first excited state is its `C`-conjugate partner**: `gap = Delta_C` to `1.2e-14`, and `Delta_C` falls from"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 199,
+          "line_sha256": "16a284a728e1ae9b693db236c9bdb3881d4c711743550de9a160cb98230609b1",
+          "excerpt": "In every finite cluster `<O> = 0` at `h = 0` to `1e-9`, while `<O^2>` runs `0.1235` to `0.2439`; `C` is exact, so the finite state is the even combination of the two staggered"
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 445,
+          "line_sha256": "f1a2cfb9beae284f1d89b68f0618f6d7bce66b81dba4c10a7659d871a3413602",
+          "excerpt": "check(\"C2 [1e-9] on BOTH clusters at every V the first excited state is the C-conjugate partner: \""
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 552,
+          "line_sha256": "42c6a22352200bf65622fe606901e12142b252114d8f8610db9253bd6477dc84",
+          "excerpt": "check(\"D2 [1e-9] in every finite cluster <O> = 0 at h = 0 while <O^2> is large: <O> = %.1e / %.1e \""
+        }
+      ],
+      "problem": "A C-even ground vector obeys Cg=g; its first excited state cannot be Cg. The complete independent 70-dimensional cube control at V=8 gives ||Cg-g||=5.85e-16 and first-state overlap with Cg=2.22e-16, while the gap is 0.07816297. The same ground vector has only 0.945750949 total probability on the two extreme checkerboards, so it is not exclusively their even combination at finite V.",
+      "minimal_fix": "Retain opposite-C-parity lowest excitation and actual gap comparison on the sampled V list, with the convention for C explicit. Describe the finite even state as containing the full set of configurations, with the measured extreme-string weights. Preserve C-invariance and bimodality; add actual C-action, orthogonality and non-two-string controls.",
+      "evidence": [
+        "INDEPENDENT_CONTROLS.json: complete cube/C action/checkerboard weight"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "Cg=g, first excitation C-odd/orthogonal, two-string weight0.945750949<1; original gap/probability rows retained.",
+    "controls": "C2,C4,D2,R2",
+    "final_anchors": [
+      {
+        "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 161,
+        "end": 177,
+        "sha256": "9e0a793081bc7d8cb0ebac5a728eaf3287243918e4a18fbbf849d476c2a2ebeb"
+      }
+    ]
+  },
+  {
+    "id": "F7",
+    "priority": 2,
+    "original_finding": {
+      "id": "F7",
+      "priority": 2,
+      "pr": 7897,
+      "title": "Separate bulk Hartree integrals, finite tori, and an asymptotic proof",
+      "anchors": [
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 139,
+          "line_sha256": "1fa337a24bbdeddc57724899fbe02d16cd9779b9286d6bb384d3746ba48adf88",
+          "excerpt": "(4) `c(m)` has the closed 1-D form `c(m) = (1/sqrt(pi)) int_0^inf ds s^{-1/2} e^{-s m^2} (e^{-2s} I_0(2s))^3`, whose kernel identity `<e^{-s(6 + 2 sum_a cos q_a)}>_BZ = (e^{-2s}"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 159,
+          "line_sha256": "f2831bb7ff7d88d68507597a40dcae18cd70741b9110f01d0bbe46414ea706db",
+          "excerpt": "linearly, so `c(0) - c(m) ~ A m^2 ln(1/m) + B m^2`: the ratio `(c(0) - c(m))/(m^2 ln(1/m))` reads `0.0399`, `0.0444`, `0.0501` at `m = 0.02, 0.05, 0.1`, drifting slowly upward"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 166,
+          "line_sha256": "bea8ea2f9ce32c5923c4d848d050266c868a0f3ca44cd1aaf72cb009b236decf",
+          "excerpt": "**Proof.** Item 1 evaluates the closed 1-D form at small `m` and takes the stated ratio. Item 2 solves the gap equation by bisection at nine values of `V - V_c` and reads the"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 220,
+          "line_sha256": "1406e7586d843ecf7671bbeba7a5d920b15024314fb153a9af9f3610eaf2a9b5",
+          "excerpt": "diverges there and the gap equation returns `V_c^MF = 0`, a pure finite-size artefact. The **antiperiodic** sector, `min|E| = 1.325654` at `L = 8`, carries every mean-field"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 255,
+          "line_sha256": "b67321b0bfeae1464b6b2bfcde014dfa7bbeb4518710050addcbd3a5b39156b0",
+          "excerpt": "- No thermodynamic limit is taken and no transition is proved; every threshold, exponent and ordered-state statement is mean-field. The taste classification of the generated"
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 414,
+          "line_sha256": "818cc848bc6114b11c1ca1630bd4e6e1f7afd719d38f4ef7bef5f4c89764eba2",
+          "excerpt": "print(\"  Hartree mean field, antiperiodic tori (not a proved transition):\")"
+        }
+      ],
+      "problem": "c_inf is a continuous Brillouin-zone integral, not a finite antiperiodic-torus number: the runner itself finds distinct thresholds 0.747072,0.738124,0.735366 at L=8,12,16 versus bulk 0.732047. Yet the theorem/method captions say antiperiodic is used throughout and no thermodynamic limit is taken. The correct-looking m\u00b2 log(1/m) law and limiting exponent are asserted from three ratios/nine finite slopes; those finite computations do not prove the asymptotic claim even within Hartree.",
+      "minimal_fix": "Label c_infinity, its bulk Hartree critical value and bulk roots separately from finite antiperiodic response/energy comparisons. Retain all numbers. Either supply the short local-zone asymptotic estimate with a controlled remainder and derive the conditional Hartree scaling, or narrow to sampled numerical evidence without asserting a proved limit. Preserve the useful logarithmic candidate, not a physical transition claim. The undivided self-consistency also has m=0; identify nonzero branch selection explicitly.",
+      "evidence": [
+        "original-execution/7897/RECEIPT.json: A4/B1/B2/table/E2",
+        "PROOF_REVIEW.md: bulk integral and local asymptotic derivation"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "Undivided zero root retained; explicitly defined bulk functional, positiveV minimizing branch and local controlled logarithm proof. Finite APBC analytic in m\u00b2, no physical-limit assertion.",
+    "controls": "A1-A5,B1-B2,E2,R3",
+    "final_anchors": [
+      {
+        "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 126,
+        "end": 160,
+        "sha256": "49cdfa1f45e18dfda1e9e5c9f7a143588cdee6eb4f2bda2eb4b38b10f5cf6bfd"
+      }
+    ]
+  },
+  {
+    "id": "F8",
+    "priority": 2,
+    "original_finding": {
+      "id": "F8",
+      "priority": 2,
+      "pr": 7897,
+      "title": "Replace exact classical/checkerboard and exclusive Dirac-window claims with scale comparisons",
+      "anchors": [
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 162,
+          "line_sha256": "bacfd07009f2c0c6accdd119a986dbbf3caa2336d0a4eb6f59a936d157b3ce02",
+          "excerpt": "`1`. (3) At `V = 2, 4, 6 t` the Hartree state is the **classical checkerboard**, not a massive Dirac fermion: `m*/3V = 0.915, 0.979, 0.991`, the gap `2m* = 10.98, 23.50, 35.67"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 170,
+          "line_sha256": "b98661f138fd073d20f1bf01bee4d897e8fed756e6f11b0391969a23bda2f67d",
+          "excerpt": "**Reading, not theorem.** The threshold is real at this level of treatment, but the language of a light generated mass survives only just above it. Push the repulsion further"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 241,
+          "line_sha256": "7f40412c8b6c18a658602f5668a9731b26104407b6d0bc90072df6636f232f20",
+          "excerpt": "4. **The generated mass is a Dirac mass only in the window `0.732 < V <~ 1.0 t`.** Beyond it the Hartree state is the classical checkerboard, with `xi` below one coarse spacing"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 326,
+          "line_sha256": "518410f9f002bfdb27e03b93f1c0c4e9eb65aeb44ed72bd042fa9db604ead152",
+          "excerpt": "name Dirac mass only in `0.732 < V <~ 1.0 t`; above that window it is the classical checkerboard, with a correlation length below one coarse spacing. This note is"
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 400,
+          "line_sha256": "6ccf50cee869a118b54012b16b048e0f52099eadb98abb085348bc33f4daba48",
+          "excerpt": "check(\"B3 [numerical] at V = 2, 4, 6 t the Hartree state is the CLASSICAL checkerboard: \""
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 408,
+          "line_sha256": "2b73df67bd93164113a0c5eedfdce31cb33fbd8966f28904a762c1d1e0630fc0",
+          "excerpt": "check(\"B4 [numerical] so a generated DIRAC mass has meaning only in %.3f < V <~ 1.0 t: \""
+        }
+      ],
+      "problem": "At V=2, the reported O=-0.457388 is not the classical \u00b11/2 value, and finite hopping remains. Ratios 0.915,0.979,0.991 approach a limit; they do not establish an exact classical state at these finite couplings. Comparing 2m with the free bandwidth and a one-body branch-point length with one spacing does not prove an exclusive physical Dirac-mass window or an interacting correlation length. No approximation-error threshold defines V\u22481.",
+      "minimal_fix": "Retain m, gap, ratios, bandwidth and length values as explicitly specified Hartree/one-body scale diagnostics. State approach toward the strong-coupling checkerboard limit, and call the small-m window illustrative rather than necessary/exhaustive. Identify xi as the supplied/rederived one-body amplitude branch-point comparison, with coarse-unit normalization and no interacting/physical correlation-length theorem.",
+      "evidence": [
+        "original-execution/7897/RECEIPT.json: B3/B4",
+        "PROOF_REVIEW.md: finite Hartree state and branch-point scope"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "Ratios below1 retain nonclassical finite occupation; illustrative window only; axial branch-point amplitude scale, no interacting correlation theorem.",
+    "controls": "B3,B4,R4",
+    "final_anchors": [
+      {
+        "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 126,
+        "end": 160,
+        "sha256": "49cdfa1f45e18dfda1e9e5c9f7a143588cdee6eb4f2bda2eb4b38b10f5cf6bfd"
+      }
+    ]
+  },
+  {
+    "id": "F9",
+    "priority": 2,
+    "original_finding": {
+      "id": "F9",
+      "priority": 2,
+      "pr": 7897,
+      "title": "Do not grade a true critical coupling from a two-shape crossing",
+      "anchors": [
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 183,
+          "line_sha256": "6bfc3a99f67ddf09cc14d3c0a27498d7575208505fe1142b8bf8f1ce7304cfa3",
+          "excerpt": "slope. (6) The `S`-doubling crossover **falls** with size, `2.03411 t -> 1.14065 t`. (7) Since `S(V=0) = 1/(2N)` exactly, `S(slab) < S(cube)` while the state is disordered"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 184,
+          "line_sha256": "b34cfaa16cf02b85a1e3b120b8c5876110370d53b74e406f2730eaa5f18b2823",
+          "excerpt": "and `S(slab) > S(cube)` once the order grows with size; the crossing is `V_x = 1.76598 t`, against `V_c^MF = 0.732047 t` -- mean field low by a factor `2.41`."
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 325,
+          "line_sha256": "57fd63c7b5e28c4479079227084f4ac0493af29fbda6e0dd656cd0ceb1df23fe",
+          "excerpt": "two-point estimate; mean field sits low by a factor `2.41`. The `16`-site result depends on periodic `z`, for the reason Theorem 5 records. And the generated object earns the"
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 524,
+          "line_sha256": "d81d52017fc3ff70549b1255961d26b051c535e1225e0d229594358ce0cd3861",
+          "excerpt": "check(\"C7 [numerical] S(V=0) = 1/(2N), so S(slab) < S(cube) while disordered and S(slab) > S(cube) \""
+        }
+      ],
+      "problem": "The cube and slab differ in coordination (3 versus4), boundary condition and shape, and neither is the z=6 bulk model used for Vc_Hartree. Their two-curve crossing at 1.76598 is a valid finite diagnostic, but mean field low by 2.41 and the disordered/ordered assignments treat it as a controlled interacting critical estimate. The separate no-transition disclaimer does not justify that comparison.",
+      "minimal_fix": "Keep both complete curves, the two-size crossing and arithmetic ratio as comparisons of specified models. Remove the error/underestimate/phase labels and any suggestion that a third size alone would certify extrapolation; no larger simulation is needed.",
+      "evidence": [
+        "original-execution/7897/RECEIPT.json: C7",
+        "SOURCE_SELECTION.json: full N97"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "Cubez3/slabz4 and bulkz6 distinguished; numerical ratio2.41 retained as arithmetic, no error factor or phase identification.",
+    "controls": "C5-C7",
+    "final_anchors": [
+      {
+        "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 161,
+        "end": 177,
+        "sha256": "9e0a793081bc7d8cb0ebac5a728eaf3287243918e4a18fbbf849d476c2a2ebeb"
+      }
+    ]
+  },
+  {
+    "id": "F10",
+    "priority": 2,
+    "original_finding": {
+      "id": "F10",
+      "priority": 2,
+      "pr": 7897,
+      "title": "State the supplied probability/readout and finite-Fock bridge separately from sign symmetry",
+      "anchors": [
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 23,
+          "line_sha256": "a5a62b9192e10d0fe8d21a5e424f84e0db2d75fc14e8884ed219c65763e26c23",
+          "excerpt": "sign that note states plainly are supplied data. The matter already carries a record-conserving repulsion between neighbouring corners. Does that repulsion, acting on the"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 201,
+          "line_sha256": "17c11bc7d27f98deeed742a648f0f622f641a40256459eb87c7f00fbdc5fc1a6",
+          "excerpt": "thousandth of a hop, already saturates `<O>` at `+0.492970 / -0.492970`, so `lim_{h->0^+} <O> = -1/2` while `<O>|_{h=0} = 0`. (4) `O` is a **signed** `Q`: the conjugation"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 211,
+          "line_sha256": "aa9c6bcd10affeb85833fb1b86d7d4394ae5ca125afac0cb31f95e0e023a3e09",
+          "excerpt": "the same, and nothing written in `t` or in `V` distinguishes them, because neither of them changes sign when the two colours of corner are relabelled. So the choice is not"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 237,
+          "line_sha256": "cfb0729df40e62bda483f2fe5fcdbd7b524eb191853a7d1ba715a5b4977d2cae",
+          "excerpt": "2. **The law contains no `eps`-odd term, so it fixes `|m*|` and cannot fix the sign.** Which checkerboard holds is read from the records: `O` is a signed `Q`, the same"
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 8,
+          "line_sha256": "9e16b73c337f2d3a4e207af83eee3427fc0ebe6dac974875870640fc37dacfbf",
+          "excerpt": "and the record-conserving nearest-neighbour law read at t = 1"
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 570,
+          "line_sha256": "875084c6bc8667aa41ee9bf314b8f1ad9904d26d948cc4c4cffb8d6b988099da",
+          "excerpt": "    dq = max(dq, float(np.max(np.abs(cl[\"oval\"][perm] + cl[\"oval\"]))))"
+        },
+        {
+          "path": "scripts/interaction_generates_staggered_mass_hartree_sign_registered_check_2026_09_03.py",
+          "line": 585,
+          "line_sha256": "dbca1035bb568c830e4722303ace175e07c689b82433e99c3495fadd1d539ac6",
+          "excerpt": "      \"V = 1, 3 t on both clusters while C H_m C^-1 = -H_m (%.1e), so it fixes |m*| and not the \""
+        }
+      ],
+      "problem": "The program computes a chosen Fock Hamiltonian and Born occupation weights, not a formation law selecting a permanent physical record or a six-edge BKSF readout intertwiner. Matching one free cube energy to -4sqrt3 cannot prove the encoding/state/observable bridge. C-evenness forbids a unique C-odd expectation in a C-invariant finite state, but does not cause spontaneous realization of one classical bit. The interaction is diagonal; the hopping term does not conserve individual occupation records. Self-consistency determines a nonzero Hartree branch only after the ansatz/branch (or minimization criterion) is supplied.",
+      "minimal_fix": "Preserve conditional Hartree mass identity, even functional, chosen Fock spectra and explicit occupation-projector probabilities. Name Born joint occupation measurement, role labels, Hamiltonian, state/branch choice and any proposed physical readout as supplied conditional structure. Do not call the entire law record-conserving. Keep the six-bit encoding comparison as unaccepted context unless an actual bounded intertwiner is supplied; do not import its parent tower. State only sign degeneracy/nonselection from symmetry, leaving registration dynamics and physical SSB open.",
+      "evidence": [
+        "INDEPENDENT_CONTROLS.json: same marginals/joint-law limitation",
+        "context/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "PROOF_REVIEW.md: model and readout boundary",
+        "JOINT_READOUT_CONTROL.json: two same-marginal fixed-particle-number laws"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "No six-edge intertwiner from one free energy; diagonal interaction distinct from hopping; joint Born law not fixed by one-site means; no physical registered bit.",
+    "controls": "D4,D5,R5",
+    "final_anchors": [
+      {
+        "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 65,
+        "end": 91,
+        "sha256": "37bcbe1beed2cedf2d3dcb41de1b5a0b7eb2f1ec576cf22ac3b1ed0f425ab21d"
+      }
+    ]
+  },
+  {
+    "id": "F11",
+    "priority": 2,
+    "original_finding": {
+      "id": "F11",
+      "priority": 2,
+      "pr": 7894,
+      "title": "Bind each actual note, premise and canonical identity before refreshing evidence",
+      "anchors": [
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 2,
+          "line_sha256": "c230fa4a6673ee260e511b9c3bfc3e1398ab0605b5e61b0ef5bcf486c518edc0",
+          "excerpt": "claim_id: discrete_symmetries_p_t_cpt_emergent_fermion"
+        },
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 5,
+          "line_sha256": "29a912db9f5caee31d581268043bd00db846afcfc971f590deb9d2843f0f6b67",
+          "excerpt": "upstream_dependencies: []"
+        },
+        {
+          "path": "scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py",
+          "line": 16,
+          "line_sha256": "4ccce57242b4d38f5f1f51b75f3dcba831b58e1b1133f4e08f326812cea4a0d6",
+          "excerpt": "CONDITIONAL ON IMPROPER ELEMENTS.  The Lattice axiom of"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 2,
+          "line_sha256": "56f5b30c7d0ecc3a0b6ad4209c8933d2afc525df36b349516c9db1cafe7d3b40",
+          "excerpt": "claim_id: interaction_generates_staggered_mass_hartree_sign_registered"
+        },
+        {
+          "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 5,
+          "line_sha256": "29a912db9f5caee31d581268043bd00db846afcfc971f590deb9d2843f0f6b67",
+          "excerpt": "upstream_dependencies: []"
+        }
+      ],
+      "problem": "Both units have short frontmatter aliases that differ from the filename-derived graph IDs. The actual primary extraction works and both helper APIs correctly return zero helpers, but declared_input_paths is None for both runners; both original caches report fresh after actual own-note or quoted-memo drift. Actual citation extraction is empty despite the axiom interpretation being used. This permits unsupported current-note reuse of old evidence.",
+      "minimal_fix": "For BOTH notes use actual filename-derived IDs consistently in metadata/trace; declare and validate the own note plus the precise used current premise/context inputs, without fabricated helpers. Add actual Markdown premise links (YAML alone is insufficient); leave unaccepted parent prose explicitly contextual. Make absent/drifted inputs reject actual live source/cache readiness. Freeze final prose/inputs first, then one genuine final run each using real cache pre/post guards; preserve both original caches and this baseline externally/historically as needed. Keep audit deferred.",
+      "evidence": [
+        "CLOSURE.json: both actual consumers",
+        "ADDITIONAL_CONTROLS.json: four omitted edges and two source drifts",
+        "SOURCE_CONTEXT_BINDING.json: current memo equals raw parent"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs",
+      "affected_prs": [
+        7894,
+        7897
+      ]
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "Both actual filename IDs, exact current memo Markdown edge, own-note+memo declarations/live pins; zero helpers; no parent authority. Formal audit deferred.",
+    "controls": "actual two APIs and18 consumer cases",
+    "final_anchors": [
+      {
+        "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 26,
+        "end": 45,
+        "sha256": "4d7e407393730f9564ab182db6dfa003f2fb935191dcbe02de670212fbc42e23"
+      },
+      {
+        "path": "docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 24,
+        "end": 43,
+        "sha256": "c0d193bcebc43ba42d48ba075a1dd01987773dde0fee2b848ca46b013c41a213"
+      }
+    ]
+  },
+  {
+    "id": "F12",
+    "priority": 3,
+    "original_finding": {
+      "id": "F12",
+      "priority": 3,
+      "pr": 7894,
+      "title": "Keep the explanatory taste count consistent with the eight-dimensional census",
+      "anchors": [
+        {
+          "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 193,
+          "line_sha256": "d5e113b00ff4835c149e5139c1e1255713af8c6eec4b2cfd15e595f68bce7b89",
+          "excerpt": "**Reading, not theorem.** At low energy the lattice carries two doublets, one of each handedness, and a mass term that exchanges them. The mirror through a corner turns out to be that"
+        },
+        {
+          "path": "scripts/discrete_symmetries_p_t_cpt_emergent_fermion_check_2026_09_03.py",
+          "line": 881,
+          "line_sha256": "dbf84c7485797f4f98b90a786c277e3ef76687138d410f5a3d8f3dff09323623",
+          "excerpt": "check(\"D3 [1e-12] the chirality X = -(Y x X x Y) has spectrum {+1 x4, -1 x4}: 2 right- and 2 \""
+        }
+      ],
+      "problem": "The narrative says two doublets, one of each handedness, but D3 and the theorem correctly have chirality multiplicities +1\u00d74 and -1\u00d74: two right-handed and two left-handed two-dimensional doublets.",
+      "minimal_fix": "Correct that sentence to two doublets per handedness (four Weyl doublets/two Dirac tastes in this specified linearized representation), retaining the finite eight-dimensional classification and its physical/continuum limitations.",
+      "evidence": [
+        "original-execution/7894/RECEIPT.json: D3"
+      ],
+      "disposition": "narrow correction required; preserve original source and outputs"
+    },
+    "author_disposition": "corrected candidate, awaiting independent confirmation",
+    "correction": "Four positive/four negative chirality dimensions = two Weyl doublets each handedness; no one-doublet-per-handedness claim.",
+    "controls": "D3",
+    "final_anchors": [
+      {
+        "path": "docs/DISCRETE_SYMMETRIES_P_T_AND_CPT_OF_THE_EMERGENT_FERMION_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "start": 176,
+        "end": 197,
+        "sha256": "ee4b1cb777f4f27868aec3f9d50f1525abc2435084311c77fcb4d13ee61a5735"
+      }
+    ]
+  }
+]

@@ -167,10 +167,11 @@ Assignments refreshed 2026-09-08T05:45:23.799387+00:00; queue counts below remai
 | Landed | #7848/#7849 finite Noether and transfer results | Complete conditional algebra and Gram/instrument boundaries accepted with all 46 histories preserved. No physical dynamics or Record law supplied. |
 | Landed | #7888/#7890 finite matter kinematics | Complete corrected finite source accepted with all 46 original checks retained. Physical suppliers, asymptotic/ordering and historical-parent obligations remain explicit. |
 | Landed | #7889/#7891 shifting records and confinement | Complete corrected conditional scope accepted; all 44 original checks and finite positive results retained. Physical/model/limit obligations remain explicit. |
-| Author backlog_draft_triage; original reviewer backlog_8001_review | #7896/#7909 spatial and record-time walls | Root verified sealed137-artifact review,82,046 actual map rows and44 source anchors. Twelve findings are in narrow author repair, with all48 original checks preserved. No final PASS. |
-| Author backlog_batch_contract; original reviewer backlog_draft_triage | #7894/#7897 discrete symmetries and Hartree mass | Final author executions37/0 and28/0 preserve all56 original checks. Packet sealing and root composition precede original-reviewer confirmation; no final independent PASS. |
+| Author backlog_draft_triage; original reviewer backlog_8001_review | #7896/#7909 spatial and record-time walls | Seven-path author checkpoint preserved during symmetry confirmation; original note/cache bodies embedded verbatim in history. Full final controls/caches and independent confirmation remain. |
+| Original reviewer backlog_draft_triage | #7894/#7897 discrete symmetries and Hartree mass | Exact eight-path composition under final independent confirmation. Root verified228 author artifacts,30,103 complete combined map rows and all56 original check payloads/functions. No final PASS or landing yet. |
 | Original reviewer backlog_draft_triage | #7895/#7899 relaxation and neighbourhood hierarchy | Verified25-artifact checkpoint preserves complete original source reads and maps. No baseline or science control has run. Resume after priority walls author work and symmetry confirmation. |
 | Original reviewer backlog_8001_review | #7883/#7900/#7902/#7904 sea and corner criteria | Four-PR original review active at fresh verified heads. Full determinant, conditioning, flat-band and finite-census scopes remain under review. |
+| Original reviewer backlog_batch_contract | #7874/#7878 free and interacting flux-sector selection | Original review active at verified heads. Complete six-source reads and original maps checkpointed; finite certificates, perturbative claims and physical suppliers under review. |
 | Reconciliation complete | Twenty-seven direct landings and 110 other closures | All 137 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
@@ -212,6 +213,8 @@ The exact #7889/#7891 composition and sealed author corrections are bound in
 paths are unchanged, the manifest adds only two bounded nodes and two current-memo
 boundary links, and all existing main source and graph nodes are preserved.
 Final same-session review and landing are recorded in wave21 evidence; counts include that landing.
+
+The composed symmetry/Hartree source and current assignments are bound in [the wave22 handoff](backlog_evidence/wave22-handoff/INDEX.json). Queue counts remain the landed wave21 counts until independent confirmation, validation and landing complete.
 
 ## Avoid recurring work
 
