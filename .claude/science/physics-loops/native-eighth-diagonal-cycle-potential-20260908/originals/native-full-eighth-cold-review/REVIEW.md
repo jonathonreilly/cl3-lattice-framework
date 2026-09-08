@@ -1,0 +1,11 @@
+# Complete local H8 review
+
+PASS for proof4101404a1464a94837acb79e83120ae0e746b95f45638aed34c5045b22faf0c3, helperf0a372e556a64c3a8c8e625c05fd64f7c29c326bd04b786c19bee6d3bc60a334 and rawaf417f5cb3d5ceeba756e1af3b7e08d5023088165ef7927ca692767e31549b00. All read completely; hashes verified. No canonical files changed or sampling.
+
+The contour formula has positive1/k residue after integration by parts of z partial_z logdet. Each walk uses exactly k departure-state denominators. The pruning dd>=qq+remaining is safe: even if every future state is zero-energy, final degree cannot then equal final polecount minus1. Nonzero resolvent factors have negative Taylor coefficients, as implemented. This extraction is valid for the whole low-cluster trace and does not assume rank one.
+
+For an alternating four-cycle the full-toggle symmetry commutes with native flips and D, exchanges both ice states, and hence commutes with the covariant canonical direct-rotation effective operator. Its diagonal entries are equal, justifying trace/2. Forest rank-one feedback correctly retains all reducible terms. Inclusion-exclusion isolates full active-edge support; physical Z covariance forces individual even coupling powers. Vertex-disconnected forest supports factor. Locally impossible patterns are clearly retained only as a table superset.
+
+Own independent check changes to reverse active-edge phase ordering and extracts the alternating rank-two coefficient by splitting the commuting full-toggle symmetry into two rank-one8-state sectors, not by contour residues. Seven connected coefficients agree exactly: all four cycle pattern classes, two path patterns, and one fork. This confirms the discriminating rank2 case25/32 as well as1759/4800,2827/7200,167/432 for the other cycle classes. Initial reviewer script used Python asserts under-OO, which disabled its equality guards; predecessor preserved and all guards replaced with explicit exceptions before the successful verification run. No initial disabled-guard pass is counted as verification.
+
+Author591 predicates and direct adverse calculations are honestly described; they are not subprocess mutation claims. The table does not alone prove a global flippability potential or a phase. No blocker found.

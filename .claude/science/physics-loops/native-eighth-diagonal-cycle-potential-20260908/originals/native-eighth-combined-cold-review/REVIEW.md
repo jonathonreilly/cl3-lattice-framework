@@ -1,0 +1,13 @@
+# Combined H8 arithmetic and symbolic graph-control review
+
+PASS for the complete combined proof/checker/results and complete root graph checker4cf2d62afb714b3a3211cdf73a5749065d2301dbae2c193d7517228b20f487ca. Exact hashes in READ_HASHES.json. No author edits or stochastic runs.
+
+Own arithmetic reads the previously reviewed local coefficient table and independently enumerates six incident bit slots for star counts and five residual slots for fork leaves. The fork table ordering (two leaves, internal edge, final leaf) is respected. All seven scalar contributions reproduce exactly, with C_tree3610233/16000. The sixteen-pattern invariant decomposition and four W classes agree with the already reviewed tables. The author112 predicates check symmetry/decomposition, not a universal dynamical theorem.
+
+The symbolic graph checker enumerates all nonbacktracking four-step walks, independently groups actual simple paths and cycles, and checks pattern-resolved identities without using H8 values. It retains full L4 winding cycles, checks forks for collisions and filters invalid star assignments by degree counts. Its541533 predicates support the general argument; eight deterministic backgrounds are not a global exhaustive census. The deterministic successor search creates legal alternating-cycle flips. Raw-state reconstruction is a separate forthcoming check, not inferred solely from the printed summary.
+
+Mixed-extent domain-wall identity is valid: all nine unequal incident pairs at a degree-six ice vertex split into perpendicular pairs (each belongs to exactly one plaquette) and collinear pairs. A collinear pair belongs to a simple four-cycle exactly when that axis has extent4; otherwise it is omitted. Summing counts each cycle corner once, yielding sum d_C=9N minus unequal opposite-axis pairs on axes with extent>4. No all-L4 identity is silently applied at L6.
+
+For the supplied three L6 triples (F,P,d)=(324,648,1296),(320,624,1304),(317,612,1310), independent exact arithmetic yields determinant det[1,F,Q]=-1769/9000, Q=-209d/28800+1769P/216000. Therefore these triples, once certified as actual ice states on the same fixed lattice, disprove Q=constant+aF. Since N and cycle count are fixed and the explicit3559F/14400 term only changes slope, they equally disprove a scalar+aF form of the complete canonical H8 diagonal. This does not prove that P is independent of every other observable, or that another basis cannot express the correction. It is a precise two-parameter affine counterexample only.
+
+The current arithmetic conclusion is conditional on those witness triples; independent delivered-bit verification remains pending. No offdiagonal H8, effective-gauge transfer, phase or RK selection conclusion is claimed.
