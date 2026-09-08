@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -46,7 +46,7 @@
+  for pair,y in zip(pairs,ys):
+   rhs=gamma([sum(xs[a][i] for a in pairs if set(a).isdisjoint(pair)) for i in range(32)])
+   if mv(mat(pair,1),y)!=rhs:raise ValueError('odd residual')
+- z=[sum(y[i] for y in ys)/48 for i in range(32)];W=[__import__('functools').reduce(lambda a,i:a*d[i],(i for i in range(6) if b>>i&1),F(1)) for b in bits[1]];weights={str(k):sum(W[i]*z[i]**2 for i,b in enumerate(bits[1]) if b.bit_count()==k) for k in (1,3,5)}
++ z=[sum(y[i] for y in ys)/24 for i in range(32)];W=[__import__('functools').reduce(lambda a,i:a*d[i],(i for i in range(6) if b>>i&1),F(1)) for b in bits[1]];weights={str(k):sum(W[i]*z[i]**2 for i,b in enumerate(bits[1]) if b.bit_count()==k) for k in (1,3,5)}
+  if z!=list(map(F,res['coordinates'])) or W!=list(map(F,res['metric'])) or weights!={k:F(v) for k,v in res['particle_weights'].items()}:raise ValueError('decomposition')
+  if resource.getrusage(resource.RUSAGE_SELF).ru_maxrss>384*1048576:raise ValueError('RSS')
+  return ({'status':'PASS','independent_direct_CAR_residuals':30,'particle_weights':{k:str(v) for k,v in weights.items()},'seconds':time.monotonic()-start,'rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'author_import':False,'checks':32})

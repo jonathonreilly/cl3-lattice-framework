@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -32,7 +32,7 @@
+      mid=b^(1<<j);a=mid^(1<<i)
+      sign=(-1)**((b&((1<<j)-1)).bit_count()+(mid&((1<<i)-1)).bit_count())
+      factor=1/d[i] if i==j else d[i]**(((b>>i)&1)-1)*d[j]**(((b>>j)&1)-1)
+-     A[index[a]][col]+=-q[i][j]*F(sign,2)*(1-2*((b>>j)&1))*factor
++     A[index[a]][col]+=q[i][j]*F(sign,2)*(1-2*((b>>j)&1))*factor
+   return A
+  def gamma(x):
+   z=[F(0)]*32;idx={b:i for i,b in enumerate(bits[1])}
