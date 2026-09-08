@@ -1,0 +1,497 @@
+[
+  {
+    "id": "F1",
+    "severity": "P2",
+    "title": "Fixed-record replacement is linear CPTP; distinguish conditioning and dissipative limits",
+    "anchors": [
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 98,
+        "end": 104,
+        "excerpt": "3. **The value the forming record locks.** The Born odds of the current pre-record state in the `Z_e` record basis.\n4. **Relaxation -- the panel's clause.** The pre-record state is then **replaced** by the ground state of `H` restricted to the subspace consistent with all records so far. Unitarity\n   is given up at this step and the map is not linear in the state.\n5. **The tie-break.** Where that ground space is degenerate the state becomes the **normalised projector** `Pi/deg` onto it, and the next record's odds are its diagonal. Degeneracy is\n   not a corner case: it occurs at ticks `5`, `6`, `8`, `9` and `11` (`T5`).\n6. **Permanence.** Records never change; the run continues until all `12` sites carry records, so each run ends on one of the `4096` record patterns.\n\n",
+        "excerpt_sha256": "836c9a33fd6d69b7447fe0d04ded4303461a46cd5d402f54c85ddbc011fb0db0"
+      },
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 263,
+        "end": 264,
+        "excerpt": "- **A Lindbladian stationary state.** The panel's referee lens -- a tick written as a dissipative generator whose stationary state is the sea, rather than as a replacement map -- is\n  named and not computed; `M_R` is not linear in the state and is not of that form.\n",
+        "excerpt_sha256": "f917407b46cfab312f77d9f1ae303b8b010188a97ce44c3a8c2cc2b29b0e3824"
+      }
+    ],
+    "reason": "For fixed R, sigma_R=Pi_R/deg_R is independent of the input density matrix. The extension R_R(X)=Tr(X)sigma_R is linear, trace preserving and completely positive. A record-conditioned normalized trajectory can be nonlinear, as L\u00fcders conditioning also is; that does not make the reset operation nonlinear. The asserted reason for excluding a Lindblad description is false.",
+    "minimal_correction": "Retain nonunitarity and the supplied branch reset; give the linear reset/instrument distinction. A generator Tr(X)sigma_R-X approaches this reset asymptotically; do not claim an exact finite-time bounded-generator implementation or that it selects the sea physically.",
+    "evidence": [
+      "independent-controls/CONTROLS.json:reset_channel"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F2",
+    "severity": "P2",
+    "title": "Separate the encoded even-Fock sector, ambient record space and compressed operator",
+    "anchors": [
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 124,
+        "end": 142,
+        "excerpt": "\n`eta` are the **Kawamoto-Smit staggered link signs** `eta_x = 1`, `eta_y = (-1)^x`, `eta_z = (-1)^(x+y)`, the same `eta_ks` as PR #7883; their product round every one of the six faces\nis `-1`, the all-minus (**pi-flux**) sector. The **code space** is all six `S_f = +1`, of dimension `2^12/2^5 = 128`; because `prod_v B_v = I` it *is* the even-`N` space, and the\n**sea** is the ground state of `H` there. A **record** at an edge site registers a `Z`-value, so a finished set of records is a vector in `F2^12`, one of `4096` **patterns**; the\n**parity dictionary** is `n_v = (1 - B_v)/2 = |y intersect star(v)| mod 2`, `N = sum_v n_v` and the **readable charge** is `Q = N - 4`. A **record block** `S(R,w) = {z : z|_R = w}` is\nthe subspace consistent with the records `w` on `R`; `H_R` is `H` restricted to it. The **odds at a site** are the probability that a record forming there locks `1`, given the records\npresent. `TV` is total variation, `(1/2) L1`.\n\n## Theorem 1 -- the restriction identity, and why `M_R` is memoryless\n\n**Conclusion.** `[exact]` Every one of the `12` hop terms has Pauli `X`-part exactly one edge qubit. Hence for every record set `R`, `P_S H P_S` is the sum of the hop terms on the\nsites carrying **no** record: \"`H` restricted to the records\" and PR #7876's `H_R` are **the same operator**, not two conventions. So the relaxed state of step 4 depends on `(R, w)`\nand nothing else, and `M_R` is **memoryless**. `[numerical, 1e-11]` The setting: `R0`-`R4` hold pair by pair, the face group carries no `-I`, `k = 5`, the code dimension is `128`, the\nflux is `-1` on all six faces, the code space is `H`-invariant to `3e-17`, and the sea has `E = -6.928203230276 = -4 sqrt 3`, is non-degenerate, has gap `3.464101615138 = 2 sqrt 3`\nand is sharp `N = 4` (Born mass off `N = 4`: `2e-31`).\n\n**Proof.** `T_ij = (i/2) A_ij (B_i - B_j)` and `B_i`, `B_j` are pure `Z`, so both Pauli words `A_ij B_i` and `A_ij B_j` carry the `X`-part of `A_ij`, the single edge qubit `ij`; the\nrunner asserts this pair by pair. A term whose `X`-part touches a recorded site carries `S(R,w)` off itself and is killed by `P_S ... P_S`; a term whose `X`-part is unrecorded\npreserves it. The relations, the group and the code dimension are the complete symplectic computation with `Z4` phases; the sea is one `128 x 128` diagonalisation.\n",
+        "excerpt_sha256": "354d5839fb28882351558274258d200955d5e63b5a0af9cbc89eb5736b160900"
+      },
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 169,
+        "end": 172,
+        "excerpt": "**Proof.** Each order's distribution is the exact product over the whole `4096`-leaf tree: at every node the block ground space is diagonalised once, the branch odds are the masses of\nthe relaxed diagonal on the two values, and the leaf weights are accumulated; nothing is sampled and no branch is pruned. The relaxed state uses the real skew form of `H_R`: the block\nmatrix is purely imaginary, so its square is `-M M^T`, the ground level is `-sqrt(lambda_max)`, and the ground projector's diagonal is half that of the real spectral projector at\n`lambda_max`.\n",
+        "excerpt_sha256": "aaec8b994ce0281ec70fbf1b74cc1e8abd78a52695d45c71a7df8dba7d0a0b07"
+      },
+      {
+        "path": "scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py",
+        "source_sha256": "473b1eda5b05807661f453bd04b0182dd8a9b5077fadbf05e20c151dc9f7c7a5",
+        "start": 423,
+        "end": 434,
+        "excerpt": "def sector_ground(M):\n    \"\"\"(E0, top eigenvectors of -M M^T, their count) for one N sector.\"\"\"\n    if M.size == 0 or not M.any():\n        return 0.0, None, M.shape[0]\n    lam, V = np.linalg.eigh(M @ M.T)\n    lmax = float(lam[-1])\n    if lmax <= 1e-9:\n        return 0.0, None, M.shape[0]\n    sel = np.flatnonzero(lam > lmax - 1e-7 * max(1.0, lmax))\n    assert len(sel) % 2 == 0\n    return -float(np.sqrt(lmax)), V[:, sel], len(sel)\n\n",
+        "excerpt_sha256": "820ca239a4d077dbcd72b418868d8afc29530f451ee734bd37f81f31bd50c2fa"
+      }
+    ],
+    "reason": "The product of the eight corner parities is identity throughout the 4096-dimensional ambient record space; it does not select the 128-dimensional face code. The code realizes the even eight-mode Fock sector. Local Z recording leaves that code, so relaxation uses the ambient record block. The restriction identity is equality after compression to S(R,w), not equality as unrestricted full-space matrices. Also H=iM for real skew M gives H\u00b2=M M^T, not -M M^T; the numerical implementation uses the correct positive matrix.",
+    "minimal_correction": "State all three domains and compressed identity explicitly, retain encoded spectrum and actual ambient reset, and correct the square sign in every active proof/header. Do not replace the ambient calculation with a different code-restricted tick.",
+    "evidence": [
+      "independent-controls/CONTROLS.json:encoded_vs_ambient",
+      "independent-controls/CONTROLS.json:skew_square"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F3",
+    "severity": "P2",
+    "title": "The energy formula is ensemble averaged; repair the drop interpretation and false-positive equality check",
+    "anchors": [
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 209,
+        "end": 219,
+        "excerpt": "**Conclusion.** `[numerical, 1e-12]` Relaxation parts from conditioning at the **first** record: the relaxed state and the Lueders-conditioned sea overlap by `0.962606705806` at all\n`24` (site, value) blocks, identically (spread `7e-15`), so `P_S|sea>` is not a ground state of `H_R` even after one record. By `k = 3` the overlap has fallen to `0.448473881026` in\nthe worst of the `1760` blocks, with mean `0.773546569701`, while in `64` of them the conditioned sea **is** the block ground state. The conditioned column has the closed form `<H_R>\n= -(12 - k) / sqrt 3` at `k = 0..12` (to `4e-14`): conditioning alone costs `sqrt 3 / 3` per record, whatever the record says. `[numerical, 1e-9]` Relaxation lowers the energy and\nnever raises it: `E_0(R,w) <= <sea_S|H_R|sea_S>` at all `2048` blocks with `k <= 3`, `0` violations. But the gain is not where a settling picture would put it: the tree-average drop\npeaks at `k = 9` (`0.401011505139`), vanishes at `k = 0` and `k = 12` where the block is one-dimensional, and is `0` to `1e-14` at `k = 3`.\n\n**Proof.** Each of the `2048` blocks is diagonalised once; the overlap with the conditioned sea uses the same real skew form as `T3`, the ground projector being `(1/2)(P - (i/mu) M\nP)`. The conditioned column needs no diagonalisation -- `<H_R>` is one quadratic form per node -- and its closed form has an exact reason: each hop term is block-diagonal in the\nrecord bits of any `R` not containing its site, so averaging over the Lueders values leaves `<sea|T_e|sea>` unchanged, and the staggered sector's site symmetry gives `<sea|T_e|sea> =\nE_sea/12 = -sqrt 3 / 3` at every edge. The `0` violations are the variational principle, checked block by block.\n",
+        "excerpt_sha256": "79863e14665f055d3b6dfcb3c218bbeb1e542b30e5696473bf88363fae5022c4"
+      },
+      {
+        "path": "scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py",
+        "source_sha256": "473b1eda5b05807661f453bd04b0182dd8a9b5077fadbf05e20c151dc9f7c7a5",
+        "start": 809,
+        "end": 852,
+        "excerpt": "# ==========================================================================\nprof = {}\ntree_unitary(ORDER_ID, 0.0, lueders=True, prof=prof)\nlue_col = {k: sum(a * b for a, b in prof[k]) / sum(a for a, _ in prof[k]) for k in prof}\nlue_dev = max(abs(lue_col[k] + (12 - k) / SQ3) for k in lue_col)\nrelaxed_col = {\n    k: sum(r[1] * r[2] for r in stats if r[0] == k) / sum(r[1] for r in stats if r[0] == k) for k in range(1, 13)\n}\ndrops = {k: lue_col[k] - relaxed_col[k] for k in range(1, 13)}\nkpeak = max(drops, key=lambda k: drops[k])\nF1 = fid[1][0]\nF3 = fid[3][0]\n\ncheck(\n    \"F1 [numerical, 1e-12] relaxation parts from conditioning at the FIRST record: the relaxed state and the conditioned sea \"\n    \"overlap by %.12f at all 24 (site, value) blocks, identically (spread %.1e)\"\n    % (float(F1.mean()), float(F1.max() - F1.min())),\n    float(F1.max() - F1.min()) < 1e-12 and abs(float(F1.mean()) - 0.962606705806) < 1e-9,\n)\ncheck(\n    \"F2 [numerical, 1e-12] by three records the overlap is %.12f in the worst of the 1760 blocks, mean %.12f, while in %d of \"\n    \"them the conditioned sea IS the block ground state (overlap 1)\"\n    % (float(F3.min()), float(F3.mean()), int((F3 > 1 - 1e-9).sum())),\n    abs(float(F3.min()) - 0.448473881026) < 1e-9 and abs(float(F3.mean()) - 0.773546569701) < 1e-9\n    and int((F3 > 1 - 1e-9).sum()) == 64,\n)\ncheck(\n    \"F3 [numerical, 1e-12] the conditioned column has the closed form <H_R> = -(12 - k)/sqrt 3 at k = 0..12 (to %.1e): \"\n    \"conditioning alone costs sqrt 3 / 3 per record, whatever the record says\" % lue_dev,\n    lue_dev < 1e-12,\n)\ncheck(\n    \"F4 [numerical, 1e-9] relaxation lowers the energy and never raises it: E_0(R,w) <= <sea_S|H_R|sea_S> at all %d blocks with \"\n    \"k <= 3, %d violations\" % (sum(nblocks.values()), viol),\n    viol == 0,\n)\ncheck(\n    \"F5 [numerical, 1e-12] the tree-average drop peaks at k = %d (%.12f), vanishes at k = 0 and k = 12 where the block is \"\n    \"one-dimensional, and is 0 to %.1e at k = 3\" % (kpeak, drops[kpeak], abs(drops[3])),\n    kpeak == 9 and abs(drops[kpeak] - 0.401011505139) < 1e-9 and abs(drops[12]) < 1e-12 and drops[3] < 1e-12,\n)\n\n# ==========================================================================\n# G -- the pointer-basis table\n",
+        "excerpt_sha256": "14895815219b2fc23d8784016a414c370b68252648300dac3a2ffd472fdb8b97"
+      }
+    ],
+    "reason": "At k=5, mask31,value0 has positive sea weight approximately1/48 and conditional energy approximately-2sqrt3; value2 has weight approximately1/24 and energy approximately-(5/2)sqrt3. Neither equals -7/sqrt3. The source proof and F3 establish the L\u00fcders-weighted mean, not whatever the record says. The printed drop subtracts a L\u00fcders-weighted conditional mean and an independently MR-weighted ground mean; it is not a common-law average of per-record gains. The actual F5 call passes with drops[3]=-1 because it tests only <1e-12. At k=0 the block is not one-dimensional.",
+    "minimal_correction": "Preserve the full energy table with its actual two ensemble definitions, retain blockwise variational inequality, scope the closed form to the weighted average, add a positive-weight conditional counterexample and a genuine per-value or averaging control. Make the claimed zero test two-sided and bind it to the computed quantity. Correct the k=0 dimensional explanation and use signed hop contributions in the symmetry proof.",
+    "evidence": [
+      "baseline/7895/values.json",
+      "independent-controls/CONTROLS.json:conditional_energy",
+      "independent-controls/CONTROLS.json:actual_F5_false_positive"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F4",
+    "severity": "P2",
+    "title": "Sequential L\u00fcders is an executed alternative; sea-law and pointer selection remain conditional targets",
+    "anchors": [
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 226,
+        "end": 250,
+        "excerpt": "**Conclusion.** `[exact]` `Z_e` commutes with all `8` corner parities `B_v` at all `12` edge sites, while `X_e` and `Y_e` each anticommute with exactly the two endpoint parities of\ntheir site. So the **corner-parity dictionary singles out the record basis**: `Z_e` is the unique one-site description it cannot disturb. The **face dictionary singles out none**:\n`Z_e` anticommutes with exactly the two faces through `e` at all `12` sites, and no one-site basis at any site commutes with the corner dictionary and the face dictionary at once.\n\n**Proof.** Three one-site Pauli words per site against `8 + 6` stabilizer words in the symplectic representation, the face incidences compared against the cube's own face list; all\ninteger arithmetic. (The `X_e`/`Y_e` counts against the faces are not uniform across sites and are an artefact of the declared `Z`-tail ordering; they are not used, `X_e` and `Y_e`\nbeing already excluded by the corner column.)\n\n**Reading, not theorem.** Whatever the tick turns out to be, it does not have to choose which description a record locks: the corner parities have already chosen, and they choose the\nsame one at every site.\n\n## Corollary -- what this says about a relaxation tick\n\nWithin the setting declared above, on the cube in the staggered sector at half filling, and for the stipulated model `M_R` alone:\n\n1. **The candidate tick is well posed and memoryless.** By `T1` the relaxed state is a function of the records alone, so `M_R` does close PR #7876's `tau`/`H_R` interface -- by fiat,\n   since there is nothing left to declare between one record and the next except which site records next. It also has an honest variational content (`T6`): settling never raises the\n   energy, at any of the `2048` blocks checked.\n2. **It is not the sea's registration.** Every pattern becomes admissible (`T3`), the selection-rule zeros of `T2` are lost -- the `256` cancellation zeros and, through the tie-break,\n   even the `1856` charge zeros -- the odds depend on the order the sites record in (`T4`), and the readable charge is no longer sharp (`T5`), though `<Q> = 0` and half filling\n   survive on average.\n3. **Among the ticks examined so far, only registration of all sites at once reproduces the sea's odds.** That is `p = 1`, the `L` reference of `T2`, and it is a limit rather than a\n   tick: nothing happens between records because there is no between. `M_R` sits further from the sea than a plain unitary gap at `tau = 0.5` does (`T3`).\n4. **What any tick must satisfy is now sharper.** It has to keep the sea's flat odds (`T2`) and its zeros, and by `T7` the corner-parity dictionary already fixes the basis a record\n   forms in. So the open content of a tick is the **formation rule** -- the rate and the odds -- and not the basis.\n",
+        "excerpt_sha256": "c101e9ee9ca39b38b7aa4d6dc1b3bb68c06f2f4615cfe813fb5d08f89f5b9659"
+      },
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 254,
+        "end": 257,
+        "excerpt": "Suppose that between one record and the next the lattice always drops to its lowest-energy arrangement given the records so far. That rule is at least definite: the state is fixed by\nthe records alone. But it does not give back the sea's own record statistics. Every pattern becomes possible, the forbidden patterns that matched known selection rules are lost, and\nthe answer depends on the order in which sites record. Whatever the framework's tick is, it has to keep the sea's odds, and this one does not. Which values a record can take, on the\nother hand, is already settled by the corner parities: the record basis is the one they cannot disturb.\n",
+        "excerpt_sha256": "a84a7920a21bf04bc5483c00599a3cafdcd3d8797efab26109352ada21c10c8c"
+      },
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 39,
+        "end": 42,
+        "excerpt": "reachability_to_target: unknown_frontier\nartifact_role: theorem\nnext_trace_action: \"Run independent audit on this self-contained finite-sector theorem, and route to the vacuum panel the science-level question it sharpens: a tick has to keep the sea's flat odds and its selection-rule zeros, and the record basis is already fixed by the corner parities, so what remains open is the formation rule -- the rate and the odds -- not the basis.\"\nconditional_surface_status: null\n",
+        "excerpt_sha256": "0c63ba45db0d9a05422c7ab632f3e0a0242418acef5d525866a854d9d3a74182"
+      }
+    ],
+    "reason": "D3 actually executes twelve successive commuting L\u00fcders recordings in identity and reverse orders and recovers P_sea; this refutes only all-sites-at-once. The one-site commutant singles out Z up to outcome relabeling only after supplying the corner-parity dictionary and requiring its nondisturbance. The axioms do not require every physical tick to reproduce this particular sea preparation or that dictionary.",
+    "minimal_correction": "Preserve sequential L\u00fcders as a positive escape, scope the negative result to the defined MR comparison, and state sea-law matching, Born sampling, coarse roles and nondisturbance as supplied requirements. Remove the immediate formal-audit next action for this owner-deferred review; keep future formal status separate.",
+    "evidence": [
+      "baseline/7895/stdout-stderr.txt:D3",
+      "independent-controls/CONTROLS.json:lueders_alternative"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F5",
+    "severity": "P2",
+    "title": "Define an additive centroid lift and consistent diffusion/tick units",
+    "anchors": [
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 107,
+        "end": 114,
+        "excerpt": "4. **`K1` the single-record tick.** Exactly one record shifts to a nearest-neighbour site, uniformly over the admissible shifts. At **reach `r`** the target is the record's site plus `r*d`. `D_1 = 1/6` for one record.\n5. **`KB(r)` the neighbourhood tick.** The whole support set shifts by `r` units **as a block**, uniformly over the six unit directions.\n6. **`KM(q)` the mixed tick.** With odds `q` a `KB(1)` block shift, with odds `1-q` a `K1` single shift.\n7. **`BR(g, h, reach)` the breakable tick.** A record is chosen with odds `1/n`; a direction with odds `e^{h}/(5 + e^{h})` for `+x` and `1/(5 + e^{h})` for each of the other five; the target is the record's site plus\n   `reach*d`. A target carrying a record makes the tick **null**. Otherwise the shift is registered with odds `min(1, e^{-g dB})`. At `h = 0` the proposal is symmetric, so `pi(S) ~ e^{-g B(S)}` is exactly stationary.\n\n**Convention `K1`, declared so two conventions are not confused.** Under `K1` exactly one record shifts per tick, so a free `n`-record group has `D_free(n) = 1/(6 n^2)` and `D_free(2) = D_1/4`. PR #7889 and PR #7891 quote an\nindependent-record value `D_1/2`, which is the ratio under a tick where **both** records shift every tick. Both are reported and neither is preferred here.\n",
+        "excerpt_sha256": "eb803f373e4b8ec00e525efefcf2ab4035165dcf3f0218e4866afb239000cd82"
+      },
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 125,
+        "end": 148,
+        "excerpt": "A **group of records** is a finite set of occupied sites of the torus `Z_L^3`, one record each; `A(S)` counts its adjacent pairs, `B(S) = (n-1) - A(S)`, and `CoM(S)` is the arithmetic mean of the occupied sites. The\n**translation class** of a group is its orbit under the torus's translations. A **cage certificate** is an exact `Fraction` potential `Phi` of the class with `CoM(s') - CoM(s) = Phi(c') - Phi(c)` at every admissible shift,\nassigned by breadth-first sweep and then **re-checked on every edge**; a group carrying one has a lab centre of mass with finitely many values, hence `D_group = 0` identically. The **internal pattern** of a group is the\nmultiset of its pairwise minimal-image difference vectors.\n\nThe **ring** is one line of the torus, `R = 16` sites, four records, shifts restricted to `+-x`, `1820` configurations. The **cube** is the `2x2x2` cube graph: `8` corners, `12` edges, one **fermion edge record** `y_e` and\none **link record** `l_e` per edge, `2^24` joint record patterns, `star(v)` the three edges at `v`, `n_v(y) = |y intersect star(v)| mod 2`, `E_e = +-1/2` from `l_e`, `(div E)_v = sum_{e at v} s_{v,e} E_e`, and the sea\nconvention `rho_v = n_v - 1/2`. The whole cube construction is self-contained in the runner and reproduces PR #7893's census from its own incidence data.\n\n## Theorem 1 -- the glued level: a cage under single ticks, exactly `D_1` under a neighbourhood tick\n\n**Conclusion.** `[exact]` On the `L = 8` torus. **The cage.** The glued dimer admits `0` single-record shifts under either `C_comp` or `C_rig` -- `1` translation class, `0` coboundary inconsistencies, cage width `0` -- so it\nis **frozen outright**. The glued bent trimer under `C_comp` admits `8` shifts over `4` classes with `0` inconsistencies and centre-of-mass spread exactly `(1/3, 1/3, 0)`: three corners of one **fixed** unit square, forever.\nUnder `C_rig` it admits `0`. In every case `D_group = 0` **exactly**. **The block tick.** Over all `512` base sites `x` `6` directions `= 3072` block shifts per group and per reach, the internal pattern is preserved\n**exactly at every tick** -- `0` violations across all four censuses, and no two records ever coincide -- with `E|dCoM|^2 = 1` at reach `1` and `4` at reach `2`. Hence `D_block = D_1` **exactly** at reach `1` and `4 D_1` at\nreach `2`, and the group's internal configuration is a constant of the motion. **The mixed tick.** `D(q) = q D_1` **exactly**: the Markov-additive slope of `Var|CoM|` matches `q` to `0.00e+00` in all ten cells (two groups,\nfive values of `q`). **Reach.** Under a reach-`2` **single** tick the same glue leaves the dimer `2` admissible shifts and `2` coboundary inconsistencies -- a self-loop carrying a nonzero centre-of-mass increment, so the\ncage certificate **fails**; both shifts are **leapfrogs** over the partner, each moving the centre of mass a full unit along the pair axis, giving `E|dx|^2 = 1` and `D = D_1` exactly, confined to that one axis. The bent\ntrimer stays caged, at width `2/3`.\n\n**Proof.** The class graphs are breadth-first closures of the admissible shift relation, taken modulo the torus's translations; the potential is built with exact `Fraction` increments `(y - x)/n` from one root per component\nand then every edge is re-checked against it, so the certificate is a proof and not a fit. The block census enumerates every base site and every direction and compares the full internal pattern before and after. The\nmixed-tick statement is an exact argument -- a block increment is a mean-zero unit vector independent of the shape process, the `K1` increment is the exact coboundary, so it telescopes to a bounded term and the cross terms\nvanish -- and the recursion is a cross-check at `1e-12`.\n",
+        "excerpt_sha256": "b6a02848fcf9e283b9ecc1b17ecf37336850366661a690ba6c47a24d1fbe21b9"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 457,
+        "end": 478,
+        "excerpt": "def ma_slope(T, start, m=NREL, nsteps=1200):\n    \"\"\"The per-tick slope of Var|CoM| -- the true asymptotic 6 D, with the\n    martingale correction, not a per-tick variance.\"\"\"\n    I, J, W, FX = T\n    PT = to_P(T, m).T.tocsr()\n    WfT = [sp.csr_matrix((W * FX[:, k], (I, J)), shape=(m, m)).T.tocsr()\n           for k in range(3)]\n    WffT = sp.csr_matrix((W * (FX * FX).sum(1), (I, J)), shape=(m, m)).T.tocsr()\n    p = start.copy()\n    u = np.zeros((m, 3))\n    v = np.zeros(m)\n    prev, sl = 0.0, 0.0\n    for _ in range(nsteps):\n        nu = np.column_stack([PT @ u[:, k] + WfT[k] @ p for k in range(3)])\n        nv = PT @ v + 2.0 * sum(WfT[k] @ u[:, k] for k in range(3)) + WffT @ p\n        p = PT @ p\n        u, v = nu, nv\n        tot = v.sum() - float(u.sum(0) @ u.sum(0))\n        sl = tot - prev\n        prev = tot\n    return sl\n\n",
+        "excerpt_sha256": "861304790e6317ab9769e7bef0793895a7e10835bc16d37deba2916d8c368f51"
+      }
+    ],
+    "reason": "The arithmetic mean of wrapped torus coordinates has bounded variance, hence zero long-time diffusion. The runner instead sums declared unwrapped increments. Its scalar is trace covariance/(6 ticks), not Var(norm CoM), and a reach-two axial leapfrog has axis diffusion1/2 but trace-normalized D=1/6. Uniform admissible K1 and attempted Metropolis BR with null ticks are different time laws. A16-site ring is a separate finite object, not literally a line of L8.",
+    "minimal_correction": "Define the path lift, centering, lattice/tick units and trace versus axis conventions; retain all finite values. Name the separate ring. Keep geometry-only cage conclusions distinct from diffusion/lifetime coefficients that require the supplied probabilities.",
+    "evidence": [
+      "independent-controls/CONTROLS.json:diffusion_exact_salvage",
+      "resumed-context/docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F6",
+    "severity": "P2",
+    "title": "Block-motion census passes when the actual block never moves",
+    "anchors": [
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 262,
+        "end": 280,
+        "excerpt": "def block_census(grp, r):\n    \"\"\"Every KB(r) block shift over every base site of the torus.\"\"\"\n    g0 = tuple(sorted(grp))\n    viol = 0\n    n = 0\n    inc2 = Fr(0)\n    for base in SITES:\n        cfg = tuple(sorted(nrm((s[0] + base[0], s[1] + base[1], s[2] + base[2]))\n                           for s in g0))\n        pc = pattern(cfg)\n        for d in DIRS:\n            step = tuple(r * x for x in d)\n            new = tuple(sorted(nrm((s[0] + step[0], s[1] + step[1],\n                                    s[2] + step[2])) for s in cfg))\n            if pattern(new) != pc or len(set(new)) != len(g0):\n                viol += 1\n            inc2 += sum(Fr(x) ** 2 for x in step)\n            n += 1\n    return viol, n, inc2 / n\n",
+        "excerpt_sha256": "1bedecf27d31baf5a4dcd32d712b85f74804b66d4b5080733d1827d1d87e2e3d"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 345,
+        "end": 357,
+        "excerpt": "         for r in (1, 2)}\n    ok = all(b[k][0] == 0 and b[k][1] == 3072 for k in b)\n    check(\"A3 [exact] NEIGHBOURHOOD tick KB(r): over %d block shifts per group per reach the \"\n          \"internal pattern survives EXACTLY, %d violations in all four censuses, E|dCoM|^2 = %s \"\n          \"and %s, so D_block = D_1 EXACTLY at reach 1 and 4 D_1 at reach 2\"\n          % (b[(\"dimer\", 1)][1], sum(b[k][0] for k in b), b[(\"dimer\", 1)][2],\n             b[(\"dimer\", 2)][2]),\n          ok and b[(\"dimer\", 1)][2] == 1 and b[(\"trimer\", 1)][2] == 1\n          and b[(\"dimer\", 2)][2] == 4 and b[(\"trimer\", 2)][2] == 4)\n\n    qs = [0.0, 0.25, 0.5, 0.75, 1.0]\n    sd = mixed_slope(DIMER, \"comp\", qs)\n    st = mixed_slope(BENT, \"comp\", qs)\n",
+        "excerpt_sha256": "b5f3581916b62fb9b864aebb9f8ac66321c1ef0002a1b1b29521fbeb55e30541"
+      },
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 138,
+        "end": 148,
+        "excerpt": "Under `C_rig` it admits `0`. In every case `D_group = 0` **exactly**. **The block tick.** Over all `512` base sites `x` `6` directions `= 3072` block shifts per group and per reach, the internal pattern is preserved\n**exactly at every tick** -- `0` violations across all four censuses, and no two records ever coincide -- with `E|dCoM|^2 = 1` at reach `1` and `4` at reach `2`. Hence `D_block = D_1` **exactly** at reach `1` and `4 D_1` at\nreach `2`, and the group's internal configuration is a constant of the motion. **The mixed tick.** `D(q) = q D_1` **exactly**: the Markov-additive slope of `Var|CoM|` matches `q` to `0.00e+00` in all ten cells (two groups,\nfive values of `q`). **Reach.** Under a reach-`2` **single** tick the same glue leaves the dimer `2` admissible shifts and `2` coboundary inconsistencies -- a self-loop carrying a nonzero centre-of-mass increment, so the\ncage certificate **fails**; both shifts are **leapfrogs** over the partner, each moving the centre of mass a full unit along the pair axis, giving `E|dx|^2 = 1` and `D = D_1` exactly, confined to that one axis. The bent\ntrimer stays caged, at width `2/3`.\n\n**Proof.** The class graphs are breadth-first closures of the admissible shift relation, taken modulo the torus's translations; the potential is built with exact `Fraction` increments `(y - x)/n` from one root per component\nand then every edge is re-checked against it, so the certificate is a proof and not a fit. The block census enumerates every base site and every direction and compares the full internal pattern before and after. The\nmixed-tick statement is an exact argument -- a block increment is a mean-zero unit vector independent of the shape process, the `K1` increment is the exact coboundary, so it telescopes to a bounded term and the cross terms\nvanish -- and the recursion is a cross-check at `1e-12`.\n",
+        "excerpt_sha256": "0c014a42efbb20992a4e76a5133f6230ceabc0c8d410cfea7aa481cc8c1a07a7"
+      }
+    ],
+    "reason": "Replacing the actual new configuration in block_census with cfg leaves pattern/injectivity unchanged and still accumulates the requested step\u00b2. The actual group_A plus group_E stay6/0 and return(0,3072,1),(0,3072,4), although displacement is identically zero. This does not invalidate the elementary rigid-translation theorem; it invalidates its claimed execution witness.",
+    "minimal_correction": "Check actual translated members/configuration and lift displacement, including wrap crossings and oriented components, before measuring moments. Require the preserved no-motion mutation to fail the relevant scientific checks. Keep the complete3072*4 census and original IDs/results.",
+    "evidence": [
+      "independent-controls/hierarchy_frozen_block_mutant.py",
+      "independent-controls/no_motion_mutant-AE.txt",
+      "independent-controls/CONTROLS.json:actual_block_motion_false_positive"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F7",
+    "severity": "P2",
+    "title": "Retain the exact finite diffusion formula while narrowing the free and infinite-cost limits",
+    "anchors": [
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 157,
+        "end": 174,
+        "excerpt": "**Conclusion.** `[exact]` Under `BR(g, 0, 1)`. **Stationarity.** On the exact `511`-state relative chain of the dimer (`6` intact relative vectors, `505` broken) the odds `pi(S) ~ e^{-g B(S)}` are exactly stationary,\n`|pi P - pi| <= 2.8e-17`. **Intact fractions.** `6/(6 + 505 e^{-g})` for the dimer, matched to the chain at `7.8e-16`; and `15/(15 + 1500 e^{-g} + 41920 e^{-2g})` for the trimer, from the exact translation-class census\n`A = 2: 15`, `A = 1: 1500`, `A = 0: 41920`, total `43435 = C(512,3)/512`. **Lifetimes.** Every registered shift out of an intact dimer breaks it and `10` of its `12` proposals are unblocked, each with `dB = +1`, so\n`P(break) = (5/6) e^{-g}` and the mean lifetime is `(6/5) e^{g}`; the bent trimer's `18` proposals split `4` null, `2` cage-preserving, `8` at `dB = +1` and `4` at `dB = +2`, giving `18/(8 e^{-g} + 4 e^{-2g})`. Both agree\nwith absorbing-chain first-passage solves to `1.7e-11`. **Transport.** `D_intact = 0` **exactly at every `g`**, including `g = 0`, for both groups; `[numerical, 1e-9]` the unconditional `6 D_group` runs\n`0.2495, 0.2446, 0.2321, 0.1531, 0.006933, 2.391e-06` at `g = 0, 1, 2, 4, 8, 16`, i.e. from `0.998043` down to `9.6e-06` of `D_free(2) = D_1/4`. **Re-binding.** The relative chain is finite and irreducible, so\n`P(re-bind) = 1` exactly at every finite `g`, and the mean recurrence to the intact set after a break is exactly `101 = 505/5` ticks **at every `g`** (maximum over broken starts `204.706`). **The two limits.** As\n`g -> infinity` the admissible set contracts to exactly the `C_comp`/`C_rig` set of `T1`; at `g = 0` the pair is intact `1.17 %` of ticks and the trimer `0.035 %`.\n\n**Proof.** The relative chain is exact because the tick is translation covariant on the torus, so the relative vector is itself Markov. Stationarity is checked entrywise against the closed-form odds. The lifetimes are closed\nforms derived by counting proposals and their `dB`, then cross-checked by a first-passage solve whose matrix `I - A` is assembled with its diagonal as the **summed escape weight**, so the small quantity is never recovered by\ncancellation. The variance recursion carries the martingale correction that makes it the true asymptotic constant. The re-binding statement's `g`-independence has an exact reason: once broken, every proposal has `dB <= 0`\nand is registered with odds `1`, so the broken sector's chain does not depend on `g` at all.\n\n**Reading, not theorem.** This is the owner's second question, answered on the declared model: the cost **is** the odds, and nothing else is added. What a suppression of `e^{-g}` per broken adjacency buys is a lifetime, and\nthe lifetime is exactly `(6/5) e^{g}` ticks -- steep in the cost, but always finite. What it does not buy is transport: a bound pair cannot move at all while it is intact, so at finite cost it gets anywhere **only** by\nbreaking, and its diffusion constant dies away exactly as fast as its lifetime grows. And the cost is one-sided. It slows the break and does nothing whatever to the re-binding: after a parting the pair finds itself again\nwith certainty, in `101` ticks on average, a number completely independent of `g`. Turn `g` up far enough and the whole admissible set is the glued set: the top level is the limit of the middle one.\n",
+        "excerpt_sha256": "d5b3102a4c99ce49bdd2c83dc68a219b39f596398df1bab8d914894e0037ef89"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 457,
+        "end": 478,
+        "excerpt": "def ma_slope(T, start, m=NREL, nsteps=1200):\n    \"\"\"The per-tick slope of Var|CoM| -- the true asymptotic 6 D, with the\n    martingale correction, not a per-tick variance.\"\"\"\n    I, J, W, FX = T\n    PT = to_P(T, m).T.tocsr()\n    WfT = [sp.csr_matrix((W * FX[:, k], (I, J)), shape=(m, m)).T.tocsr()\n           for k in range(3)]\n    WffT = sp.csr_matrix((W * (FX * FX).sum(1), (I, J)), shape=(m, m)).T.tocsr()\n    p = start.copy()\n    u = np.zeros((m, 3))\n    v = np.zeros(m)\n    prev, sl = 0.0, 0.0\n    for _ in range(nsteps):\n        nu = np.column_stack([PT @ u[:, k] + WfT[k] @ p for k in range(3)])\n        nv = PT @ v + 2.0 * sum(WfT[k] @ u[:, k] for k in range(3)) + WffT @ p\n        p = PT @ p\n        u, v = nu, nv\n        tot = v.sum() - float(u.sum(0) @ u.sum(0))\n        sl = tot - prev\n        prev = tot\n    return sl\n\n",
+        "excerpt_sha256": "861304790e6317ab9769e7bef0793895a7e10835bc16d37deba2916d8c368f51"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 610,
+        "end": 619,
+        "excerpt": "          \"exactly 101 = 505/5 ticks at every g (%.9f, max %.3f)\" % (rec[0], mx),\n          max(abs(x - 101.0) for x in rec) < 1e-9 and abs(mx - 204.705534) < 1e-5)\n\n    check(\"B7 [exact] THE TWO LIMITS: as g -> infinity the admissible set contracts to exactly the \"\n          \"A1-A2 support-condition set, so GLUED is the g -> infinity limit of BREAKABLE; at g = 0 \"\n          \"(FREE) the pair is intact %.2f %% of ticks and the trimer %.3f %%, with \"\n          \"D_group = %.6f D_free(2), the rest exclusion\"\n          % (100 * pin[0], 100 * tin[0], rf[0]),\n          abs(100 * pin[0] - 1.1742) < 1e-3 and abs(100 * tin[0] - 0.03453) < 1e-4\n          and abs(rf[0] - 0.998043) < 1e-5)\n",
+        "excerpt_sha256": "c1e3929e2cc5f78cbc4b1f614ca4c19c88f43d3ac346f724dafd7f3fb1930efa"
+      }
+    ],
+    "reason": "The general recursion computes a finite-horizon centered moment increment, not automatically an asymptotic constant. For the actual stationary unbiased dimer, however, each relative state has zero conditional centroid drift. A direct martingale certificate gives exactly6D=127.5e^-g/(6+505e^-g), retaining every reported value. g=0 keeps hard-core exclusion: D/D_free=510/511, not independent walkers. As g tends to infinity the full511-state kernel still has broken states; start(3,0,0) moves with probability1. Only intact starts freeze and the stationary law concentrates on intact states.",
+    "minimal_correction": "Add the local zero-drift/one-step moment argument, scope ma_slope as a finite recursion generically, preserve the finite BR numbers and renewal101 result. State the two limits with their initial/stationary domain, and avoid exact global inverse-lifetime language except the stated large-g asymptotic.",
+    "evidence": [
+      "independent-controls/CONTROLS.json:diffusion_exact_salvage",
+      "independent-controls/CONTROLS.json:infinite_cost_boundary"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F8",
+    "severity": "P2",
+    "title": "The field crossover compares two means, not certain survival or differential tearing",
+    "anchors": [
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 178,
+        "end": 195,
+        "excerpt": "**Conclusion.** `[exact]` **A uniform field drives, it does not tear.** From an intact dimer under `BR(g, h, 1)` the lifetime is exactly `2 e^{g}(5 + e^{h})/(9 + e^{h})` for an `x`-aligned pair and\n`e^{g}(5 + e^{h})/(4 + e^{h})` transverse, matching the chain to `2.3e-16` over `30` `(g, h)` cells. So it stays between `5/6` and `5/3` of its zero-field value **at every `g` and every `h`**, and for an aligned pair it\n**increases** with `h`. **The threshold runs backwards.** Under pure single ticks the intact group has no admissible shift, so its mean tick count to cross one site is infinite and `h*(g) = 0` identically -- it always tears\nfirst. Under `KM(q)` with both components tilted, the exact threshold is `e^{h*} = [4(1-q) + q e^{g}]/[q e^{g} - (1-q)]`, defined when `q e^{g} > 1-q`, falling from `1.363508` at `g = 1` to `0.000001` at `g = 16` at\n`q = 0.5` (bisection agreement `4.4e-16`); it **decreases** with `g`, and `h > h*` is the regime where the group **survives** the crossing. **A collision merges.** On the `16`-site ring the cyclic order of the four records is\npreserved at all `11648` admissible single shifts (`0` violations), so `P(pass) = 0` **exactly at every `g`**; absorbing on whichever comes first, `P(break first) = 0.919, 0.778, 0.540, 0.098, 0.0016, 5.4e-07` at\n`g = 0, 1, 2, 4, 8, 16`. **Reach changes the cage, not the rate.** A reach-`2` single tick breaks a breakable dimer at exactly the reach-`1` rate `(5/6) e^{-g}`, agreeing to `0.0e+00` at all six `g`, because `10` of the `12`\nproposals still carry `dB = +1`; what it changes is `T1`'s cage.\n\n**Proof.** The field rows are read off the chain as the **summed escape weight** from an intact relative vector, so the closed forms are compared without cancellation. The threshold is a closed form plus an independent\nbisection on the same chain quantities. The no-passing census enumerates every configuration, record and direction on the ring and compares the cyclic label order before and after. The absorption probabilities are solved for\nthe **break** outcome directly rather than as one minus the stick outcome, which is the well-conditioned direction; the ring rows are made exactly stochastic by summing the registered weights and taking the diagonal as the\ncomplement.\n\n**Reading, not theorem.** A steady push does not pull a bound pair apart. It pushes both records the same way, so it carries the pair along; all it changes is which of the two is the likely one to move, and the whole effect\non the lifetime is bounded by a factor of `5/3` however hard it pushes. What pulls a group apart has to differ across it. A collision is the other candidate, and it turns out to depend on the cost in the opposite direction\nfrom the obvious one: weakly bound groups scatter, strongly bound ones **merge** into a single larger bound group, and in one dimension they can never pass through each other at all. And a longer reach is not a stronger\nblow: it breaks nothing extra, it simply un-cages.\n",
+        "excerpt_sha256": "a4de509bd6719f6986b9336be5305e450ccfbe5ce1e21e7dde90a8960dae71ad"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 652,
+        "end": 710,
+        "excerpt": "def group_C():\n    \"\"\"What breaks a breakable group -- and what does not.\"\"\"\n    lifes = {}\n    worst = 0.0\n    for g in (1.0, 2.0, 4.0, 8.0, 16.0):\n        for h in (0.0, 0.5, 1.0, 2.0, 4.0, 8.0):\n            T = dimer_trans(g, h)\n            eh = math.exp(h)\n            for (r0, cf) in (((1, 0, 0), 2 * math.exp(g) * (5 + eh) / (9 + eh)),\n                             ((0, 1, 0), math.exp(g) * (5 + eh) / (4 + eh))):\n                val = 1.0 / escape_weight(T, RI[r0], NAD)\n                lifes[(g, h, r0)] = val / (1.2 * math.exp(g))\n                worst = max(worst, abs(val - cf) / cf)\n    lo, hi = min(lifes.values()), max(lifes.values())\n    xs = [lifes[(4.0, h, (1, 0, 0))] for h in (0.0, 0.5, 1.0, 2.0, 4.0, 8.0)]\n    check(\"C1 [exact] a UNIFORM FIELD DRIVES a bound pair, it does not tear it: the lifetime is \"\n          \"exactly 2 e^{g}(5+e^{h})/(9+e^{h}) aligned and e^{g}(5+e^{h})/(4+e^{h}) transverse \"\n          \"(chain agrees to %.1e over 30 cells), so it stays inside [%.4f, %.4f] of its zero-field \"\n          \"value -- limits 5/6 and 5/3 -- and RISES with h when aligned\"\n          % (worst, lo, hi),\n          worst < 1e-12 and lo >= 5.0 / 6 - 1e-12 and hi <= 5.0 / 3 + 1e-12\n          and all(a <= b + 1e-12 for a, b in zip(xs, xs[1:])))\n\n    rows, dmax = [], 0.0\n    for q in (0.5, 0.25, 0.1):\n        for g in (1.0, 2.0, 4.0, 8.0, 16.0):\n            eg = math.exp(g)\n            den = q * eg - (1 - q)\n            if den <= 0:\n                rows.append((q, g, None))\n                continue\n            hs = math.log((4 * (1 - q) + q * eg) / den)\n\n            def Fq(h):\n                eh = math.exp(h)\n                return (math.exp(g) * (5 + eh) / (4 + eh) / (1 - q)\n                        - (5 + eh) / (q * (eh - 1)))\n            loh, hih = 1e-9, 50.0\n            for _ in range(200):\n                mid = (loh + hih) / 2\n                if Fq(mid) < 0:\n                    loh = mid\n                else:\n                    hih = mid\n            dmax = max(dmax, abs(hs - loh))\n            rows.append((q, g, hs))\n    hq = [r[2] for r in rows if r[0] == 0.5]\n    check(\"C2 [exact] the TEARING THRESHOLD runs BACKWARDS: under single ticks the intact group \"\n          \"cannot move, so h*(g) = 0 identically; under KM(q) it is \"\n          \"e^{h*} = [4(1-q) + q e^{g}]/[q e^{g} - (1-q)] (bisection to %.1e), falling from %.6f at \"\n          \"g = 1 to %.6f at g = 16 (q = 0.5) -- h > h* is where the group SURVIVES\"\n          % (dmax, hq[0], hq[-1]),\n          dmax < 1e-15 and all(a > b for a, b in zip(hq, hq[1:]))\n          and abs(hq[0] - 1.363507587) < 1e-8)\n\n    viol, trans = 0, 0\n    for c in RCFG:\n        for i in range(4):\n            for d in (1, -1):\n",
+        "excerpt_sha256": "f74739a21b5f84111eac9015309175a30346ea1215daa4c9dc46abb5bb00a40a"
+      }
+    ],
+    "reason": "C2 solves mean lifetime=1/drift for a tilted transverse intact dimer mixture; it neither computes a first-passage probability nor applies a differential field. At q=.5,g=1,h=2>h*=1.36350758694, the actual supplied mixed law has rupture probability.1690927686 per tick and crossing-before-rupture probability.6177573221, not1. Eventual rupture remains certain. C1 itself has positive finite rupture, so a uniform field does not tear is false literally, and K1 does not drive an intact dimer before rupture.",
+    "minimal_correction": "Retain every field/lifetime/bisection number as a mean-time comparison with q,g,h and orientation domain. Name uniform versus differential fields honestly; preserve the lack of intact single-step transport and supply the explicit positive-rupture counterexample. Do not manufacture a physical tearing threshold or a new field law.",
+    "evidence": [
+      "independent-controls/CONTROLS.json:survival_counterexample"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F9",
+    "severity": "P2",
+    "title": "Ring absorption is first-hit competition, not permanent merging",
+    "anchors": [
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 182,
+        "end": 195,
+        "excerpt": "`q = 0.5` (bisection agreement `4.4e-16`); it **decreases** with `g`, and `h > h*` is the regime where the group **survives** the crossing. **A collision merges.** On the `16`-site ring the cyclic order of the four records is\npreserved at all `11648` admissible single shifts (`0` violations), so `P(pass) = 0` **exactly at every `g`**; absorbing on whichever comes first, `P(break first) = 0.919, 0.778, 0.540, 0.098, 0.0016, 5.4e-07` at\n`g = 0, 1, 2, 4, 8, 16`. **Reach changes the cage, not the rate.** A reach-`2` single tick breaks a breakable dimer at exactly the reach-`1` rate `(5/6) e^{-g}`, agreeing to `0.0e+00` at all six `g`, because `10` of the `12`\nproposals still carry `dB = +1`; what it changes is `T1`'s cage.\n\n**Proof.** The field rows are read off the chain as the **summed escape weight** from an intact relative vector, so the closed forms are compared without cancellation. The threshold is a closed form plus an independent\nbisection on the same chain quantities. The no-passing census enumerates every configuration, record and direction on the ring and compares the cyclic label order before and after. The absorption probabilities are solved for\nthe **break** outcome directly rather than as one minus the stick outcome, which is the well-conditioned direction; the ring rows are made exactly stochastic by summing the registered weights and taking the diagonal as the\ncomplement.\n\n**Reading, not theorem.** A steady push does not pull a bound pair apart. It pushes both records the same way, so it carries the pair along; all it changes is which of the two is the likely one to move, and the whole effect\non the lifetime is bounded by a factor of `5/3` however hard it pushes. What pulls a group apart has to differ across it. A collision is the other candidate, and it turns out to depend on the cost in the opposite direction\nfrom the obvious one: weakly bound groups scatter, strongly bound ones **merge** into a single larger bound group, and in one dimension they can never pass through each other at all. And a longer reach is not a stronger\nblow: it breaks nothing extra, it simply un-cages.\n",
+        "excerpt_sha256": "bf70da67fd85c0a6c5f61592a75444ec17efe178d6beff7460b930dbb9ee77f8"
+      },
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 240,
+        "end": 241,
+        "excerpt": "3. **What breaks a group is not what one would guess.** Not a uniform field -- that **drives** it, and lengthens the lifetime of an aligned pair. What tears is a **differential** tilt, or a **collision**; and above `g ~ 2.5`\n   a collision **merges** two groups into a larger bound one rather than breaking either (`T3`).\n",
+        "excerpt_sha256": "7b1c8ac687d863683b0b29b0773607923e92b04be96eb0fd895ace160e8d2da8"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 712,
+        "end": 745,
+        "excerpt": "                if t in c:\n                    continue\n                trans += 1\n                ps = list(c)\n                ps[i] = t\n                o = sorted(range(4), key=lambda k: ps[k])\n                k0 = o.index(0)\n                if tuple(o[k0:] + o[:k0]) != (0, 1, 2, 3):\n                    viol += 1\n    stk = [i for i, c in enumerate(RCFG) if ring_A(c) == 3]\n    bkk = [i for i, c in enumerate(RCFG) if ring_A(c) == 0]\n    absset = set(stk) | set(bkk)\n    tr = [i for i in range(len(RCFG)) if i not in absset]\n    ti = {s: k for k, s in enumerate(tr)}\n    pb = []\n    for g in GS:\n        P = ring_P(g)\n        Q = P[np.ix_(tr, tr)]\n        b = P[np.ix_(tr, bkk)].sum(1)\n        ps = np.linalg.solve(np.eye(len(tr)) - Q, b)\n        pb.append(float(ps[ti[RCI[(0, 1, 4, 5)]]]))\n    check(\"C3 [exact] a COLLISION on the 16-site ring, %d configurations: the cyclic order of the \"\n          \"four records survives all %d admissible shifts, %d violations, so P(pass) = 0 EXACTLY at \"\n          \"every g; the competition is STICK versus BREAK, P(break first) = %s at g = 0, 1, 2, 4, \"\n          \"8, 16 -- above g ~ 2.5 a collision MERGES\"\n          % (len(RCFG), trans, viol, \", \".join(\"%.3g\" % x for x in pb)),\n          viol == 0 and trans == 11648 and abs(pb[0] - 0.919008639107) < 1e-9\n          and abs(pb[2] - 0.539646404460) < 1e-9 and abs(pb[5] - 5.38e-7) < 5e-9\n          and all(a > b for a, b in zip(pb, pb[1:])))\n\n    dr = 0.0\n    for g in GS:\n        vals = []\n        for reach in (1, 2):\n",
+        "excerpt_sha256": "f56687393b11649a3ae126637e0bc105623e57298beb3561c76bf93e5d5ed6fa"
+      }
+    ],
+    "reason": "The1820-state calculation absorbs at A=0 versus A=3 from(0,1,4,5). It preserves cyclic order and gives the six genuine first-hit probabilities. Under the original finite-g kernel an A=3 state is not absorbing: at g4,(0,1,2,3) exits with probability.00457890972218. The stated g~2.5 merger claim is a coarse comparison of the sampled probabilities, not a computed permanent-merger threshold.",
+    "minimal_correction": "Retain cyclic no-passing and every raw first-hit row, identify start and stopping sets, and narrow merging language to reaching the A=3 set first in that finite protocol. Keep later breakup/rebinding and uncomputed3D collisions explicit.",
+    "evidence": [
+      "independent-controls/CONTROLS.json:ring_stopping_boundary",
+      "baseline/7899/stdout-stderr.txt:C3"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F10",
+    "severity": "P2",
+    "title": "The assembled hierarchy mixes different kernels and unexecuted Gauss block motion",
+    "anchors": [
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 220,
+        "end": 228,
+        "excerpt": "**Conclusion.** `[exact]` Assembling `T1`-`T4`:\n\n| level | condition type | mobility under `K1` | mobility under `KB(1)` | lifetime | what breaks it |\n|---|---|---|---|---|---|\n| **GLUED** (`C_comp`, `C_rig`, Gauss) | support condition: odds **exactly 0** off support | `D = 0` **exactly**; dimer frozen (width `0`), bent trimer caged at `1/3`; on the cube **no** single record change admissible at all | `D = D_1` **exactly**, internal pattern preserved exactly (`0` of `3072`); `KB(2)` gives `4 D_1` | **infinite** -- the parting configuration is never registered | nothing, at any coupling. A longer **reach** un-cages without breaking: reach-`2` single ticks give the dimer `D = D_1` on its own axis |\n| **BREAKABLE** (`e^{-g}` per broken adjacency) | odds suppression, finite `g` | `D_intact = 0` **exactly at every `g`**; unconditional `D_group` from `0.998 D_free(2)` at `g = 0` to `9.6e-06 D_free(2)` at `g = 16` -- transport **only** by breaking | `D = D_1` while intact; `KM(q)` gives exactly `q D_1` | dimer `(6/5) e^{g}`; bent trimer `18/(8 e^{-g} + 4 e^{-2g})`; intact fractions `6/(6 + 505 e^{-g})` and `15/(15 + 1500 e^{-g} + 41920 e^{-2g})` | a **single-record tick**, at rate `(5/6) e^{-g}`. **Not** a uniform field (bounded between `5/6` and `5/3` of the zero-field lifetime). A **collision** only at weak coupling; above `g ~ 2.5` it merges. Re-binding certain, `101` ticks, `g`-independent |\n| **FREE** (`g = 0`) | none | `D_free(n) = 1/(6 n^2)`; `D_free(2) = D_1/4`, measured `0.998043` of it, the rest exclusion | `D = D_1` (a block tick is a rigid translation whatever the condition) | `6/5` ticks (dimer), `3/2` (trimer): intact `1.17 %` and `0.035 %` of ticks | it is already broken |\n\n**Proof.** Every cell is one of the checks of `T1`-`T4`; the runner's group `E` re-derives the row entries from the same computations rather than transcribing them.\n",
+        "excerpt_sha256": "21e6af239a4d724f85102379ff55c73dc31b7b92cda20e2957c663928d7b3e6d"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 869,
+        "end": 887,
+        "excerpt": "def group_E():\n    \"\"\"The hierarchy assembled.\"\"\"\n    dc = cage(DIMER, \"comp\")\n    tc = cage(BENT, \"comp\")\n    b1 = block_census(DIMER, 1)\n    w = np.exp(-0.0 * (1 - NAD.astype(float)))\n    d0 = ma_slope(dimer_trans(0.0), w / w.sum()) / 6.0 / (1.0 / 24)\n    rows = [\n        (\"GLUED\", dc[\"sh\"] == 0 and tc[\"width\"] == Fr(1, 3), b1[0] == 0 and b1[2] == 1),\n        (\"BREAKABLE\", True, True),\n        (\"FREE\", True, True),\n    ]\n    check(\"E1 [exact] THE HIERARCHY in one table: GLUED gives D = 0 under single ticks, D = D_1 \"\n          \"under a neighbourhood tick, an infinite lifetime and nothing that breaks it at any \"\n          \"coupling -- only reach changes it; BREAKABLE gives D_intact = 0, lifetime (6/5) e^{g}, \"\n          \"transport only by breaking; FREE gives D_free(2) = D_1/4 (%.3f)\" % d0,\n          all(a and b for (_n, a, b) in rows) and abs(d0 - 0.998043) < 1e-5)\n\n\n",
+        "excerpt_sha256": "be47cb206e77619c538d056b8c2bedc6c33148db68866f06ed523f049c022fba"
+      }
+    ],
+    "reason": "The BREAKABLE table extends glued D=qD1 to finite-g mixing without defining whether its single component is K1 or BR. The latter is required for its g-dependent lifetime. For qKB+(1-q)BR at q=.5,g0, the exact6D is.624755381604697, not.5. E1 fills BREAKABLE/FREE cells with True rather than checking that extension. Its grouped GLUED row also assigns torus block mobility to the cube Gauss relation without defining/executing that block process.",
+    "minimal_correction": "Give separate, fully declared row domains and kernels. Retain glued qD1; either remove the unsupported mixed breakable entry or give the narrow martingale extension with its own definition. Label Gauss block transport uncomputed rather than importing the torus result. Replace hardcoded cells with actual evidence references/predicates without inventing a campaign.",
+    "evidence": [
+      "independent-controls/CONTROLS.json:mixed_breakable_counterexample"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F11",
+    "severity": "P2",
+    "title": "Bind the Gauss incidence convention and distinguish hopping support from the full law",
+    "anchors": [
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 199,
+        "end": 216,
+        "excerpt": "**Conclusion.** `[exact]` The support condition `G_v = (div E)_v - rho_v = 0` at all `8` corners admits `14400` of the `2^24` joint record patterns, living on `2240` distinct fermion patterns, **all** at `N = 4`. Over all\n`14400` patterns and all `12` edges: a **fermion edge record changing alone** is admissible in `0` of `172800` cases, and a **link record changing alone** in `0` of `172800` -- odds exactly `0` both ways. What is admissible\nis the **paired** change, the fermion record and the link record on the **same** edge together: `79872` of `172800`, with per-pattern census `768 x 4`, `6144 x 5`, `6912 x 6`, `576 x 8`, and **all `79872` of them carry the\ncharge with its flux** -- the edge had exactly one occupied endpoint, and afterwards the two endpoint occupations have exchanged and `E_e` has reversed -- with `0` violations. `79872` is exactly the number of nonzeros\nPR #7893 reports for `H^g` on this sector: the admissible joint record changes and the law's off-diagonal support are the same set, counted two different ways. **The contrast across the three levels on one object:** the\n**free** fermion sector admits all `49152` single edge-record changes; PR #7891's **parity** sector admits `4608` over `896` two-odd-corner patterns with census `{4: 384, 6: 512}` (recomputed here, not quoted); the\n**glued** Gauss sector admits `0`. **A clarification the reading needs:** there is no one-charge configuration on the cube. The Gauss sector is exactly the half-filled sector, so every admissible pattern carries exactly four\ncorners at `rho_v = +1/2` and four at `-1/2` and total charge `0`; \"one charge\" is read here as one corner with `rho_v = +1/2`, and the counts are per-corner-local.\n\n**Proof.** The cube graph, its stars, its edge orientations and both dictionaries are built from scratch in the runner; the `2^24` joint patterns are solved by matching the integer key of `2 (div E)` against that of\n`2 rho^{sea}` over the `4096 x 4096` factorisation, never forming a dense `2^24` object. The single and paired changes are then tested by sorted-key membership over the `14400` admissible patterns, vectorised in chunks. The\nexact reason for the two zeros: flipping `y_e` complements `n_v` at **both** endpoints and leaves `div E` untouched, so `G_v != 0` at both; flipping `l_e` reverses `E_e` and so changes `div E` at both endpoints while `rho`\nis untouched. Neither is ever registered.\n\n**Reading, not theorem.** This is the owner's \"glued once formed\", written down and counted, in a model built for other reasons. Where Gauss's law is in force, no record on the cube can change on its own -- not the fermion\nrecord, not the link record. The one thing that is admissible is the two of them changing together, and every single one of those changes moves the charge and reverses the flux on the edge it moved along. Delete the link\nsector and the same fermion record changes freely, all `49152` ways. The charge's record set and its flux records are of the top level of the hierarchy, and the count that says so is the same count the law's own\noff-diagonal support gives.\n",
+        "excerpt_sha256": "8b14869a0495a6f88f32a4238f7b5cc9fc5c1bcddd75fcf79e97eafc17af9656"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 758,
+        "end": 783,
+        "excerpt": "def cube_data():\n    corn = sorted([(a, b, c) for a in (0, 1) for b in (0, 1) for c in (0, 1)],\n                  key=lambda v: 4 * v[0] + 2 * v[1] + v[2])\n    cid = {v: 4 * v[0] + 2 * v[1] + v[2] for v in corn}\n    edges = []\n    for d in range(3):\n        for v in corn:\n            if v[d] == 0:\n                w = list(v)\n                w[d] = 1\n                edges.append((cid[v], cid[tuple(w)]))\n    nq, nv = len(edges), len(corn)\n    star = np.zeros(nv, dtype=np.int64)\n    sgn = np.zeros((nv, nq), dtype=np.int64)\n    for e, (i, j) in enumerate(edges):\n        star[i] |= 1 << e\n        star[j] |= 1 << e\n        sgn[j, e] = 1\n        sgn[i, e] = -1\n    nf = 1 << nq\n    f = np.arange(nf, dtype=np.int64)\n    par = np.array([bin(x).count(\"1\") & 1 for x in range(nf)], dtype=np.int64)\n    nval = np.empty((nf, nv), dtype=np.int64)\n    for a in range(nv):\n        nval[:, a] = par[f & star[a]]\n    r2 = 2 * nval - 1\n",
+        "excerpt_sha256": "c90ab2384929c3c56579b6801f0964bb53278e41339d762a1b9919a9fcd0a5cf"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 837,
+        "end": 842,
+        "excerpt": "\n    u, c = np.unique(per, return_counts=True)\n    cen = \", \".join(\"%d x %d\" % (int(b), int(a)) for a, b in zip(u, c))\n    check(\"D3 [exact] the PAIRED change IS admissible -- fermion record and link record on the \"\n          \"SAME edge, together: %d of %d, census %s -- and ALL carry the charge WITH its flux \"\n          \"(occupations swap, E_e reverses), %d violations; %d is exactly PR #7893's H^g nonzero \"\n",
+        "excerpt_sha256": "e53dd4a8a48449780dd0219ca4f9be2b528356a8d85dadf6f6edc6acb7f8df86"
+      }
+    ],
+    "reason": "The local runner takes incidence negative at the lower/source endpoint, opposite the current #7893 definition. After identifying geometric edges, all14400 unchanged-orientation patterns fail that parent convention with doubled residual2. The actual parent bit ordering also differs: permute the fermion bits, and permute l XOR4095 for links. The complete actual Lat-based map is independently verified on every state. The paired census equals the charge-hop support only with this map and nonzero hopping; counts alone do not identify matrices. The parent full H_g also has lambda ring exchange and a diagonal electric term. An actual Gauss-preserving four-link witness y3425,l600\u2192360 on edges4,5,8,9 changes no fermion bit, contradicting the broad only paired changes/full off-diagonal support claim.",
+    "minimal_correction": "Keep the self-contained14400/79872 census. Define orientation and link-bit mapping explicitly or use a consistent convention throughout; compare actual pointwise support of the hopping part, not full H_g. Preserve face/cycle alternatives and the distinction between support and a supplied nonzero rate. No broader parent campaign is needed or accepted.",
+    "evidence": [
+      "independent-controls/CONTROLS.json:gauss_orientation_and_operator_boundary",
+      "independent-controls/CONTROLS.json:paired_support_positive",
+      "PARENT_EDGE_CONVENTION.json",
+      "resumed-context/docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F12",
+    "severity": "P2",
+    "title": "Permanent formation does not preserve dynamic statements by relabeling them as static counts",
+    "anchors": [
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 90,
+        "end": 95,
+        "excerpt": "**The axiom cost of the tick, named.** The Record axiom makes records **permanent**. Everything below that speaks of a record *shifting* is inside a **stipulated tick model**, declared as such, of exactly the kind PR #7889\ndeclared and whose wording cost that note's corollary item 2 and its interfaces name and hand to its owner: at the physical sites a shift is a **value change**, so a shifting-record reading needs either a weakened\nvalue-permanence or records read at the coarse cells. This note takes no position on that call and supplies no formation clause. It adds one point the panel raised and this note carries as an interface rather than a result:\n**with permanent records the same hierarchy reads as \"form together\" rather than \"travel together\"** -- the three levels then classify which values are admissible to form at a site given its recorded neighbours, and every\ncount in `T1`-`T4` is unchanged, because each of them is a count of admissible configurations, not of motions of matter. Composition here is **ordinary**. The **record ontology** is used as declared: a record at a site\n**registers** a value there; it does not report one the site already had.\n",
+        "excerpt_sha256": "b786b61eab00d405af701be02645386612c0ab6ca97399a69c9ad7dd0591bb4f"
+      },
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 246,
+        "end": 261,
+        "excerpt": "6. **The referee's type point, carried not dismissed.** The axioms' odds are over **which value forms at a site** given its neighbourhood. \"The odds of separating neighbourhoods\" is an odds over a **transition**, which needs\n   a tick, and every tick here is supplied. Under the Record axiom's permanence the same hierarchy is the same statement with the tick removed: it classifies which values are admissible to **form** given recorded neighbours,\n   glued meaning a joint pattern whose parts carry odds `0` apart. Every count in `T1`-`T4` is a count of admissible configurations and is unchanged by that reading; which of the two readings the framework intends is named\n   as an interface below and is not settled here.\n\n## Reading, not theorem -- the whole thing in plain words\n\nThree kinds of togetherness. A group whose rule has no exceptions can only travel as one, and then it travels exactly as fast as a single record; if the rule is only expensive to break, the group holds for a while that grows\nsteeply with the cost, and it gets anywhere only by breaking and finding itself again; with no rule at all, records wander alone. A steady push does not pull a bound pair apart, it carries the pair along; what pulls it apart\nis a push that differs across it, or a collision, and a strong enough rule turns collisions into mergers. In the emergent matter, a charge and its flux are of the first kind: no single record can change alone, and every\nallowed change carries them together.\n\n## Interfaces named for other lanes, not settled here\n\n- **The form-together reading under permanence.** Records are permanent. Read that way, every result above is a statement about which values are admissible to **form** at a site given its recorded neighbours, and \"travel\n  together\" becomes \"form together\". The counts do not change; the wording does. Which reading the framework intends is the owner's call, and it is the same call PR #7889's corollary item 2 and its interfaces hand over.\n",
+        "excerpt_sha256": "c202d852562fccbf1f5bb15a4ae03b459f52f7dc97323dbe8c7f12ffbc17f510"
+      },
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 296,
+        "end": 302,
+        "excerpt": "**The three levels and the four ticks are stipulated in full and derived from nothing.** Reading note (3) makes support a property of the **supplied odds**, so stipulating a condition here is stipulating a law, not amending\nan axiom; reading note (2) is explicit that the axioms supply no formation site, probability or rate, and this note supplies none either. **Records are permanent**; every sentence in which a record *shifts* is inside a\nstipulated tick model declared as such, and the axiom cost of that stipulation is the one PR #7889 names and hands to its owner. The form-together reading under permanence is carried as an interface, not as a result.\n\n**Nothing here says what the framework's tick is, and nothing forecloses any tick.** `T1`'s `D_group = 0` is a statement about **one-site** shifts under two declared conditions; `T3`'s thresholds and rates are statements\nabout one declared cost and one declared tilt; `T4` is a statement about one declared support condition on one finite object. Every frozen count is a property of a declared level-and-tick pair, and a different pair is a\ndifferent object. No no-go is asserted and none is implied.\n",
+        "excerpt_sha256": "dd83b43f6d0617f4119a03cc13b1536415dc2884b1598ae9d4c0949c709acfd9"
+      }
+    ],
+    "reason": "The note says every T1\u2013T4 count/result is unchanged after removing the tick and reading travel as permanent formation. Lifetimes, accumulated diffusion, transitions and first-passage probabilities depend on a sequential law; static configuration membership supplies none of them. The phrase interface not result does not undo the explicit equivalence asserted repeatedly.",
+    "minimal_correction": "Retain static admissibility/census comparisons only under that reinterpretation. Mark a permanent-record formation law, joint probabilities, compatible local support, role geometry, clock and readout bridge unresolved. Keep all dynamic conclusions conditional on their actual counterfactual supplied ticks.",
+    "evidence": [
+      "baseline/7899/stdout-stderr.txt",
+      "resumed-context/docs/MINIMAL_AXIOMS_2026-06-29.md"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  },
+  {
+    "id": "F13",
+    "severity": "P2",
+    "title": "Own-note/premise inputs and canonical identities are unbound",
+    "anchors": [
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 1,
+        "end": 7,
+        "excerpt": "---\nclaim_id: relaxation_tick_well_posed_loses_sea_record_statistics\nclaim_type: bounded_theorem\nclaim_scope: \"On the 2x2x2 cube graph (8 corners, 12 edge sites, 6 faces) with qubits on the EDGE sites, ordinary composition, the superfast encoding and the corner parity dictionary n_v = (1 - B_v)/2, in the staggered (pi-flux) sector H = -sum_e eta_e T_e with the Kawamoto-Smit link signs, whose 128-dimensional code space is the even-N space and whose ground state -- the sea -- has E = -4 sqrt 3, is non-degenerate with gap 2 sqrt 3 and is a sharp N = 4 state: under ONE STIPULATED tick model M_R, declared here and derived from nothing, in which (i) the next unrecorded edge site in a DECLARED order forms a record with the Born odds of the current pre-record state, (ii) the state is then replaced by the ground state of H restricted to the record-consistent subspace, (iii) with the normalised projector Pi/deg where that ground space is degenerate, and (iv) records are permanent, run to 12 records. (T1) Every hop term has Pauli X-part exactly one edge qubit, so P_S H P_S is the sum of the hop terms on the unrecorded sites: 'H restricted to the records' and the parent note's H_R are one operator, and M_R is memoryless -- its state is a function of the record set alone. (T2) The sea's own record odds are flat: every one of the 24 + 264 + 1760 = 2048 record blocks with k <= 3 carries sea weight 2^-k to 4e-15, so a forming record has odds 1/2 and nothing is forced up to three records; and at p = 1, where every site registers at once, the finished set is the sea's Born diagonal with support 1984 = 62 x 32 and 2112 zeros = 1856 charge zeros (N != 4) + 256 = 8 x 32 cancellation zeros whose 8 corner-occupation patterns are exactly the closed corner stars {v} u N(v). (T3) Under M_R the support is all 4096 patterns for every one of the 32 declared orders and none of the 2112 zeros survives; TV(M_R, sea) = 1283/2880 at the identity order, against 0.324925160534 for the parent note's Model A at tau = 0.5. (T4) TV(identity order, reverse order) = 1/3; over the 32 declared orders the maximal pairwise TV is 0.727031250000 and the minimal 0.113194444444, a lower bound on the spread over all 12! orders; pure Lueders conditioning is order-independent to 6e-15. (T5) <Q> = 0 and <N> = 4 at every declared order to 1e-14, but Q is not sharp: the identity-order law is (1/384, 1/8, 143/192, 1/8, 1/384) with var Q = 13/12, P(Q = 0) ranges 0.6146 .. 0.8813 over the declared orders, the 1456 tree nodes whose relaxed state is not N-sharp are exactly the 1456 carrying a degenerate ground space (ticks 5, 6, 8, 9, 11), and the declared variant M_R^N restores P(Q = 0) = 1 while still losing all 256 cancellation zeros, as Model A does. (T6) Relaxation is not conditioning: the relaxed state overlaps the Lueders-conditioned sea by 0.962606705806 at all 24 one-record blocks, by k = 3 the worst of 1760 blocks is at 0.448473881026 with mean 0.773546569701 and 64 blocks at 1; the conditioned column is exactly -(12 - k)/sqrt 3; E_0(R,w) <= <sea_S|H_R|sea_S> at all 2048 blocks with 0 violations, the tree-average drop peaking at k = 9 (0.401011505139) and vanishing at k = 0 and k = 12. (T7) Z_e commutes with all 8 corner parities at all 12 sites while X_e and Y_e each anticommute with exactly the two endpoint parities; Z_e anticommutes with exactly the two faces through its site; no one-site basis commutes with the corner and face dictionaries at once. No seeds anywhere: every distribution is the exact product over the whole 4096-leaf tick tree and every order is written out in the runner. This note declares a tick model and computes with it; nothing is derived from any axiom, no formation clause is supplied, no axiom is amended, no status is set, and no claim is made about what the framework's tick IS.\"\nupstream_dependencies: []\nrunner: scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py\n---\n",
+        "excerpt_sha256": "d20117070501a90ca2322848afed9a4474046f15678e2c2dfbada1a143bb240f"
+      },
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 59,
+        "end": 67,
+        "excerpt": "Imported scientific authority: none load-bearing. The Bravyi-Kitaev superfast encoding, the Kawamoto-Smit staggered link signs, Lueders conditioning and the total-variation distance\nare standard methodology; every object is redeclared here and the runner recomputes every statement, the encoding's relations included. No observational value, no fitted number and no\nframework premise enters any proof. Non-load-bearing pointers, carrying no grade and no weight: `RECORD_TICKS_ADMIT_NO_INVARIANT_PRE_RECORD_STATE_..._2026-09-03.md`\n(open PR #7876 -- the same cube and encoding, its Models A and B, its `T2` boundary at `p = 1`, and the `tau`/`H_R` interface this note's model closes by fiat);\n`DETERMINANTAL_RECORD_STATISTICS_ON_THE_HALF_FILLED_SEA_..._2026-09-02.md` (PR #7883 -- the sea's Born statistics, the same `eta_ks`);\n`EMERGENT_DICTIONARY_SELECTION_RULE_ZEROS_THREE_DIMENSIONS_..._2026-09-02.md` (PR #7842 -- the selection-rule zeros from the dictionary side);\n`RECORD_FORMATION_ON_THE_EMERGENT_VACUUM_PARITY_FORCED_ODDS_..._2026-09-02.md` (PR #7858 -- forcing on the empty vacuum, whose `T2` this note's `T2` is the half-filled analogue of);\nand `MINIMAL_AXIOMS_2026-06-29.md`, from which the four axioms in \"Setting\" are quoted verbatim. This note cites no grade of any and consumes no ledger row.\n\n",
+        "excerpt_sha256": "7495668cd94ad1b2d3246e2d55d9f3d5e641093eff8432fa502dac24739fa2e6"
+      },
+      {
+        "path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "8cd617ded0067a82e34c38042fb9d86fab2a04a2c120d8607258910866d42a19",
+        "start": 326,
+        "end": 328,
+        "excerpt": "This note is self-contained: `upstream_dependencies` is empty, every object is declared in \"Definitions\", no hypothesis is adopted, and the \"Imports and authority\" pointers are plain\ntext carrying no grade and no weight. Hard landing conditions are a fresh runner and cache pair at `PASS=26 FAIL=0`, runtime under the declared `120` seconds, a current\nzero-dependency citation-manifest entry, and passing pipeline, strict-lint and changed-evidence gates; audit remains a separate lane.\n",
+        "excerpt_sha256": "f6a0a195467ce6d0515f623af017cce9b4f1176e7361e9b4c0a08134a040de84"
+      },
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 1,
+        "end": 7,
+        "excerpt": "---\nclaim_id: hierarchy_neighbourhood_conditions_glued_breakable_free\nclaim_type: bounded_theorem\nclaim_scope: \"On four declared finite objects -- (a) the coarse torus Z_L^3 at L = 8 with nearest-neighbour adjacency, 512 sites and coordination 6, carrying groups of n <= 3 records; (b) one line of that torus taken as a ring of R = 16 sites with four records and shifts restricted to +-x, 1820 configurations; (c) the 2x2x2 cube graph (8 corners, 12 edges) carrying one FERMION edge record and one LINK record per edge, 2^24 joint record patterns, the superfast parity dictionary n_v = |y intersect star(v)| mod 2, E_e = +-1/2 from the link record and the sea convention rho_v = n_v - 1/2; and (d) the free reference D_1 = 1/6 for one record -- under THREE STIPULATED LEVELS of neighbourhood condition and FOUR STIPULATED TICK MODELS, declared here in full and derived from nothing: GLUED, the condition is a SUPPORT CONDITION, a zero of the law-level odds, in the two forms C_comp (every record has at least one adjacent record) and C_rig (every pair adjacent now stays adjacent), with Gauss's law G_v = (div E)_v - rho_v = 0 as the emergent instance; BREAKABLE, the condition is an ENERGY COST E(S) = -g A(S), so with B(S) = (n-1) - A(S) the odds of S are suppressed by e^{-g} per broken adjacency, pi(S) ~ e^{-g B(S)}; FREE, no condition, g = 0; K1, exactly one record shifts to a nearest-neighbour site (reach r: to its site plus r*d); KB(r), the whole support set shifts by r units as a block; KM(q), with odds q a KB(1) block shift and with odds 1-q a K1 single shift; BR(g, h, reach), a record chosen uniformly and a direction with odds e^{h}/(5 + e^{h}) for +x, a blocked target giving a null tick, the shift registered with odds min(1, e^{-g dB}). CONVENTION K1 is declared: under K1 one record shifts per tick, so D_free(2) = D_1/4, against PR #7889 / PR #7891's independent-record value D_1/2, which belongs to a tick where both records shift; both are reported. (T1) [exact] GLUED. On the L = 8 torus the glued dimer admits 0 single-record shifts under either condition (1 translation class, exact Fraction coboundary certificate, 0 inconsistencies, cage width 0) and the glued bent trimer 8 shifts over 4 classes with 0 inconsistencies and centre-of-mass spread exactly 1/3 -- three corners of one FIXED unit square forever -- so D_group = 0 EXACTLY in both; under the neighbourhood tick KB(1) the internal pattern is preserved exactly at every one of 3072 block shifts per group (0 violations in all four censuses) with E|dCoM|^2 = 1, so D_block = D_1 EXACTLY, and KB(2) gives 4 D_1; the mixed tick gives D(q) = q D_1 EXACTLY, the Markov-additive slope of Var|CoM| matching q to 0.00e+00 in ten cells; and a reach-2 SINGLE tick leaves the dimer 2 admissible shifts with 2 coboundary inconsistencies -- a self-loop of nonzero centre-of-mass increment, so the cage certificate fails and the pair leapfrogs at D = D_1 along its own axis, while the bent trimer stays caged at width 2/3. (T2) [exact] BREAKABLE. pi(S) ~ e^{-g B(S)} is exactly stationary for BR(g, 0, 1) on the exact 511-state relative chain of the dimer (|pi P - pi| <= 2.8e-17); the intact fractions are 6/(6 + 505 e^{-g}) and, from the exact 43435-class trimer census {A = 2: 15, A = 1: 1500, A = 0: 41920}, 15/(15 + 1500 e^{-g} + 41920 e^{-2g}); the closed-form lifetimes are (6/5) e^{g} for the dimer and 18/(8 e^{-g} + 4 e^{-2g}) for the bent trimer, verified against absorbing-chain first-passage solves to 1.7e-11; D_intact = 0 EXACTLY at every g including g = 0, so a bound pair transports only by breaking; the unconditional D_group runs from 0.998043 D_free(2) at g = 0 to 9.6e-06 D_free(2) at g = 16; re-binding is certain with mean recurrence exactly 101 = 505/5 ticks at EVERY g, because once broken every proposal has dB <= 0 and registers with odds 1, so the broken sector's chain is g-independent; the g -> infinity limit recovers the T1 cage exactly and g = 0 recovers independent walks, the FREE pair being intact 1.17 % and the free trimer 0.035 % of ticks. (T3) [exact] CIRCUMSTANCES. A UNIFORM field does not tear a bound pair, it drives it: the lifetime is exactly 2 e^{g}(5 + e^{h})/(9 + e^{h}) for an x-aligned pair and e^{g}(5 + e^{h})/(4 + e^{h}) transverse (chain agreement 2.3e-16 over 30 (g, h) cells), so it stays between 5/6 and 5/3 of its zero-field value at every g and h and RISES with h when aligned; under single ticks the intact group never crosses a site, so the tearing threshold h*(g) = 0 identically, and under a tick that moves the group it runs backwards, e^{h*} = [4(1-q) + q e^{g}]/[q e^{g} - (1-q)], decreasing in g, with h > h* the regime where the group SURVIVES (bisection agreement 4.4e-16); on the 16-site ring the cyclic order of four records is preserved at all 11648 admissible shifts (0 violations), so P(pass) = 0 EXACTLY at every g, and P(break first) = 0.919, 0.778, 0.540, 0.098, 0.0016, 5.4e-07 at g = 0, 1, 2, 4, 8, 16, so above g ~ 2.5 a collision MERGES the groups; and a reach-2 single tick breaks a breakable dimer at exactly the reach-1 rate (5/6) e^{-g} (agreement 0.0e+00 at all six g) while un-caging the glued dimer -- reach, not condition strength, separates confinement from transport. (T4) [exact] GLUED ONCE FORMED. On the cube the Gauss support condition admits 14400 of the 2^24 joint record patterns on 2240 fermion patterns, all at N = 4; of the 172800 single fermion-record changes 0 are admissible and of the 172800 single link-record changes 0 are admissible; 79872 PAIRED changes are, with per-pattern census 768 x 4, 6144 x 5, 6912 x 6, 576 x 8, and ALL 79872 carry the charge with its flux (the endpoint occupations exchange and E_e reverses), 0 violations, 79872 being exactly PR #7893's nonzero count for H^g on this sector; the FREE fermion sector admits all 49152 single changes and PR #7891's parity sector 4608 over 896 patterns with census {4: 384, 6: 512}, both recomputed here; and there is no one-charge configuration on the cube, the Gauss sector being exactly half filled with four rho_v = +1/2 corners and total charge 0 in every admissible pattern, so 'one charge' is read as one corner with rho_v = +1/2. (T5) [exact] THE HIERARCHY assembled as one table over level, condition type, mobility under single ticks, mobility under neighbourhood ticks, lifetime and what breaks it. This note declares three levels and four tick models and computes with them; nothing is derived from any axiom, no formation clause is supplied, no axiom is amended, no status is set, no registry entry is created, and no claim is made about which zeros the framework's law carries or what its tick is.\"\nupstream_dependencies: []\nrunner: scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py\n---\n",
+        "excerpt_sha256": "e6502d0e9f35c74111e84bcb0fbcf67bda64880d51c5220ac9d94710b8a02db5"
+      },
+      {
+        "path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "source_sha256": "b4a94b1b893b09e0a8e478ea57a3f897e821de3976b677815fe0edddd29d1cdc",
+        "start": 320,
+        "end": 322,
+        "excerpt": "This note is self-contained: `upstream_dependencies` is empty, every object is declared in \"Definitions\", no hypothesis is adopted, and the \"Imports and authority\" pointers are plain text carrying no grade and no weight.\nHard landing conditions are a fresh runner and cache pair at `PASS=22 FAIL=0`, runtime under the declared `150` seconds, a current zero-dependency citation-manifest entry, and passing pipeline, strict-lint and\nchanged-evidence gates; audit remains a separate lane.\n",
+        "excerpt_sha256": "301a454223accf8cf77ff6fc6bf6734570ff463441e9152f4df8d288dd25c8d6"
+      },
+      {
+        "path": "scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py",
+        "source_sha256": "473b1eda5b05807661f453bd04b0182dd8a9b5077fadbf05e20c151dc9f7c7a5",
+        "start": 76,
+        "end": 89,
+        "excerpt": "Output: one PASS/FAIL line per check and a final `TOTAL: PASS=N FAIL=M`.\nExit code 0 iff FAIL = 0.\n\"\"\"\n\nfrom __future__ import annotations\n\nimport itertools\nimport sys\nfrom functools import reduce\n\nimport numpy as np\n\nAUDIT_TIMEOUT_SEC = 120\n\n",
+        "excerpt_sha256": "cddaeb529dd0459c687fc55717b737fda48cec085ee1df41d885d378273d3b90"
+      },
+      {
+        "path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "source_sha256": "0cfdd3d02924cd43e1f01cff65bbffe90892244ef57f04cacafe4557e8ca6584",
+        "start": 77,
+        "end": 97,
+        "excerpt": "\"\"\"\n\nfrom __future__ import annotations\n\nimport itertools\nimport math\nimport sys\nfrom fractions import Fraction as Fr\n\nimport numpy as np\nimport scipy.sparse as sp\n\nAUDIT_TIMEOUT_SEC = 150\n\nPASS = 0\nFAIL = 0\n\n\ndef check(label, cond):\n    \"\"\"Record and print one check.\"\"\"\n    global PASS, FAIL\n",
+        "excerpt_sha256": "4770af27d23d81ef012350a0eac7a73a27efd700547e8175dcae83b2572d84aa"
+      }
+    ],
+    "reason": "Both actual filename IDs differ from frontmatter IDs. Actual graph/packet APIs find the right primaries and zero helpers, but no recognized scientific citations. Both primaries have no declared inputs and their legacy fresh caches remain fresh after own-note or current-memo changes. Source drift is rejected correctly; the tool is not an authenticator for undeclared proof inputs. Both notes quote and use the actual current memo boundary.",
+    "minimal_correction": "Use actual filename-derived canonical IDs/trace targets and real Markdown premise links. Declare and live-guard own final note/current memo and any genuinely used proof input, preserve zero helper closure unless source actually changes. Freeze these bytes before one genuine corrected execution, retain original caches/history, and never use a zero-dependency target to suppress a real memo edge. Do not run or apply formal audit.",
+    "evidence": [
+      "INPUT_CONTROLS.json",
+      "ACTUAL_API_CLOSURE_PREVIEW.json"
+    ],
+    "disposition": "repair required; preserve original finite results/history"
+  }
+]

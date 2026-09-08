@@ -1,0 +1,118 @@
+{
+  "complete_AST_change_is_only_two_labels_and_own_note_pin": true,
+  "all_old_predicates_and_arithmetic_unchanged": true,
+  "actual_plane_scalar_residual": 6.106226635438361e-16,
+  "actual_vertex_scalar_residual": 0.2651650429451058,
+  "vertex_eigenvalues": [
+    -5.551115123125785e-17,
+    -6.016617666494028e-33,
+    9.286405050713263e-35,
+    0.35355339059347435
+  ],
+  "plane_eigenvalues": [
+    0.3535533905934733,
+    0.35355339059347357,
+    0.35355339059347396,
+    0.35355339059347435
+  ],
+  "cases": [
+    {
+      "case": "fresh",
+      "cache": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave23-walls-confirmation/correction-confirmation/input-control-root/scripts/cached_runner_output.py",
+          "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+          "--check-only"
+        ],
+        "exit_code": 0,
+        "stdout": "fresh logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "old_note",
+      "cache": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave23-walls-confirmation/correction-confirmation/input-control-root/scripts/cached_runner_output.py",
+          "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+          "--check-only"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "input_mismatch logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt\n"
+      },
+      "live": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave23-walls-confirmation/correction-confirmation/input-control-root/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py"
+        ],
+        "exit_code": 1,
+        "stdout": "INPUT_SHA docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md 1e8d8bafdf7d72a8ed54a579b454d799051518bb5f2a8cd737f8a67f8d225949\nINPUT_SHA docs/MINIMAL_AXIOMS_2026-06-29.md 93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\nINPUT_SHA docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md 67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90\nFAIL G0 current source/input guard: docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md: current semantic input changed\nTOTAL: PASS=0 FAIL=1\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "missing_note",
+      "cache": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave23-walls-confirmation/correction-confirmation/input-control-root/scripts/cached_runner_output.py",
+          "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+          "--check-only"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "input_mismatch logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt\n"
+      },
+      "live": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave23-walls-confirmation/correction-confirmation/input-control-root/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py"
+        ],
+        "exit_code": 1,
+        "stdout": "INPUT_SHA docs/MINIMAL_AXIOMS_2026-06-29.md 93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\nINPUT_SHA docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md 67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90\nFAIL G0 current source/input guard: docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md: [Errno 2] No such file or directory: '/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave23-walls-confirmation/correction-confirmation/input-control-root/docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md'\nTOTAL: PASS=0 FAIL=1\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "old_note_pin",
+      "cache": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave23-walls-confirmation/correction-confirmation/input-control-root/scripts/cached_runner_output.py",
+          "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+          "--check-only"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "sha_mismatch logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt\n"
+      },
+      "live": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave23-walls-confirmation/correction-confirmation/input-control-root/scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py"
+        ],
+        "exit_code": 1,
+        "stdout": "INPUT_SHA docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md 1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009\nINPUT_SHA docs/MINIMAL_AXIOMS_2026-06-29.md 93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\nINPUT_SHA docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md 67ad0284ca494a4fc82c37dae248a70eb5f84b59d4fad101b0e076122f066d90\nFAIL G0 current source/input guard: docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md: current semantic input changed\nTOTAL: PASS=0 FAIL=1\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "source_drift",
+      "cache": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave23-walls-confirmation/correction-confirmation/input-control-root/scripts/cached_runner_output.py",
+          "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+          "--check-only"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "sha_mismatch logs/runner-cache/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.txt\n"
+      }
+    }
+  ],
+  "numeric_cache_body_equal_except_two_labels_and_input_echo": true
+}

@@ -55,13 +55,13 @@ joint-law selection remain open.
    The corrected #7888/#7890 finite matter source is also on main, alongside
    the corrected #7889/#7891 source, now independently reviewed and landed.
    The corrected #7894/#7897 symmetry/Hartree source is also landed.
-   Walls corrections are sealed and the exact composition is with its original
-   independent reviewer. The sea/corner author is actively repairing all four
-   units. Relaxation/neighbourhood original review has resumed; afterward its
-   reviewer will author the separately reviewed flux-sector repairs. Flux original
-   review is sealed with changes required. Vacuum/energy is checkpointed after
-   73 original checks and provisional decisive findings, to resume after walls
-   confirmation. No new scientific scope has landed in this assignment refresh.
+   Corrected walls source is independently reviewed and landed.
+   The sea/corner author is actively repairing all four
+   units. Relaxation/neighbourhood original review is sealed; its separate repair
+   author is queued after sea/corner. Flux author repairs are active. Flux original
+   review is sealed with changes required. Vacuum/energy resumes from its
+   73-check checkpoint with the same original reviewer; decisive provisional
+   findings and all prior source/provenance remain preserved.
    #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
    reserved-source hold. Closure reconciliation is complete; 77 pending closed
    scopes remain at seven successors. Preserve the fixed 254 and all reservations.
@@ -75,3 +75,8 @@ joint-law selection remain open.
 Discovery continues with selective decisive checks and coherent review milestones.
 Workers preserve their evidence and report to the coordinator, who owns shared
 planning and GitHub changes. Complete historical campaign context is archived.
+
+The relaxation/hierarchy original review is now sealed with 13 finding groups;
+the separate repair author is queued after sea/corner seal. Flux corrections have begun with the
+separate author. The walls density correction and actual final refresh are
+accepted at plane-marginal scope; all first-review evidence remains preserved.

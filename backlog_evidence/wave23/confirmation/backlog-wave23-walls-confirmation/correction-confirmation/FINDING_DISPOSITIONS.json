@@ -1,0 +1,375 @@
+[
+  {
+    "id": "F1",
+    "original_title": "Cell momentum is not coarse-site momentum",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Cell velocity converted to two coarse/four fine sites per supplied time. Exact arbitrary-profile squared dispersion retained.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 46,
+        "line_sha256": "045d1fb98f779618963a73821d3fd63640b7d47126e045cf624dbde93cc4ad4d",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "Its interpolant crosses zero between sites; no sampled zero is implied. The transverse `1x2x2` cell gives a `4Lx` matrix. Its Bloch phase crosses **two coarse sites**: `q=2 k_coarse=4 k_fine`. Velocity 1 in cell units is 2 coarse or 4 fine sites per supplied time unit. No physical time calibration is furnished."
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 614,
+        "line_sha256": "f1b7405424a3df780dd7c859c00977e9a5b8b5af9301f5525238b23ae87f7a14",
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "check(\"Q1 [1e-12] actual transverse square identity; q spans TWO coarse sites (FOUR fine), no physical time calibration\", square_err < 1e-12)"
+      }
+    ]
+  },
+  {
+    "id": "F2",
+    "original_title": "Wall localization length is not the zero-energy bulk kernel length",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Distinguish finite wall-energy tail from zero-energy kernel; retain all measured fits and 3.1% finite resolved comparison. Actual sharp tails checked against the energy-dependent recurrence.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 76,
+        "line_sha256": "e02c278c84a1e00372303c699effe7ab6aaa800a05e19b5426e083cd3309abc1",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "The fit uses `log n(x)` for `4.5<=|x-31.5|<=14.5` and amplitude convention `xi=-2/slope`. These are distinct lengths: the uniform far-tail equation at energy E gives `E\u00b2=m\u00b2+2-2cosh(kappa)`, hence `xi(E)=2/acosh(1+(m\u00b2-E\u00b2)/2)`. At the sharp fitted E=sqrt(1+m\u00b2)-1 this is `2/asinh(m)`, matching the listed sharp fits. It differs from the zero-energy kernel by 2.85%,9.20%,22.10%; no exact common sea/wall scale is inferred from the finite resolved comparison."
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 617,
+        "line_sha256": "682d74751bf36dad7ce94965118ed2de00a9d73ab2de96cd1b5384544c65b7d6",
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "check(\"Q2 [finite tail fits] energy-dependent sharp recurrence 2/asinh(m), distinct from zero-energy kernel; actual fitted tails agree within 1e-4 relative\","
+      }
+    ]
+  },
+  {
+    "id": "F3",
+    "original_title": "Resolved profiles do not establish exact zero modes or a four-mode complete census",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Resolved energies remain nonzero finite numerical values, interpolant zero lies between samples, and selected eight states are separated from complete cutoff census24/72.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 68,
+        "line_sha256": "569ae603b96b55401dc8533c1da8eac6ff7b3b5349fb1987af54dbe28944a10e",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "`split_walls` selects the eight lowest absolute-energy states also for resolved profiles. Properties of its four-dimensional wall spaces do not constitute a full resolved in-gap census. A complete `|E|<m` count at L64,w4 gives **24** states for m1 and **72** for m2. Preserve that difference from the sharp result."
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 91,
+        "line_sha256": "8d87b54afad2d4aed3d34d810a5293c8a706d6baa1a04fb1f89821c2c98fecc8",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "The sharp values agree with the **fit** sqrt(1+m\u00b2)-1 and lie below m. Agreement between two lengths is finite-size evidence, not proof excluding every hybridization correction. Resolved profiles produce small finite levels, not exact zeros. At L64,m1,w4 the minimum is 2.132099e-5 while min sampled |m(x)|=.124352944; the smooth zero lies between planes. No exact gapless theorem or unique physical profile follows."
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 626,
+        "line_sha256": "36f9685a365c3f39bf734fcec1a45a153c246e5ac818291e774cf5bb73fa36f0",
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "check(\"Q3 [complete finite spectra] resolved |E|<m counts 24 and 72; selected eight are incomplete and sampled mass/low energy are nonzero\","
+      }
+    ]
+  },
+  {
+    "id": "F4",
+    "original_title": "Anticommutation does not map the selected wall subspaces or prove the anomaly claim",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "False anticommutator wall-swap/anomaly inference withdrawn; actual compression and sharp taste reconstruction retained. Density claim is explicitly the summed coarse-x-plane marginal, not identical vertex densities; actual projector counterexample and rank argument preserved.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 95,
+        "line_sha256": "afbdcf5567a841cb7af441a041ee7db2a258517dac3bc3b2126f4a7801c073ad",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "For the selected four-dimensional wall spaces at L64,m=.5,1,2, sharp and resolved w4, the directly computed compression of X has norm below 1e-12 (historical worst 1.4e-15). This is **not** a consequence of `{W,X}=0` alone. For the actual sharp m1 selection W leaks from one wall space with norm .70710678; X has norm .9999999997 outside both light spaces and only 2.4029e-5 between them. X does not swap the selected walls. A state of the exact cell algebra has both <W> and <X>=1/sqrt2 despite the zero anticommutator. The original purported proof is withdrawn."
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 99,
+        "line_sha256": "e44d5dd2a9742a5c4adbbfd44809b867e82ef525f40e4dcf25d2c21ab3fb990b",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "For the **sharp** L64 fixtures only, projection onto M2D and M2D F_b reconstructs the wall Hamiltonian within 1e-12 (historical 3.1e-15), with singlet coefficient below 1e-12 (historical 5.1e-20), |n| matching E_w to 1e-6 and n reversed between walls. Traceless F_b alone would not establish equal position densities. The corrected runner additionally checks each local position-projector compression is scalar on each selected sharp wall space, supporting identical density there. This is finite paired taste structure; no regulator, sea, fermion measure or background-response calculation establishes a physical parity anomaly or its cancellation."
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 639,
+        "line_sha256": "688e2f8f1b2412c1489d1c2a7c2c61b6be6e2085bfe201f1749d39d96a5d3ed3",
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "check(\"Q4 [actual counterexample] anticommuting W/X have simultaneous means 1/sqrt2; actual X exits selected light spaces instead of swapping walls\","
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 642,
+        "line_sha256": "d61ee4707531c734fd723584b164c96710aa694b9b824184777096244c3de486",
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "check(\"Q5 [1e-12] each actual local position-projector compression is scalar on each selected SHARP wall space (not inferred from traceless taste)\", DENSITY_SCALAR_ERROR < 1e-12)"
+      }
+    ]
+  },
+  {
+    "id": "F5",
+    "original_title": "Even massive line dispersion permits motion and does not classify the resolved crossing",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Retain finite massive line and fit, derive opposite nonzero off-node velocities; two-size agreement and two resolved minima supply only their executed scope.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 105,
+        "line_sha256": "55139e5843b60604cd46c2855d1bef772a722f391d74e7f6b7e5a1c633e68d56",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "The old dispersion rows remain .327745 at dk=.08 and .355761 at .16, equal at pi\u00b1dk within 1e-9. Squaring gives `H(kz)^2=H(pi)^2+4cos\u00b2(kz/2)I`, hence the positive low branch `E(pi+dk)=sqrt(E0\u00b2+4sin\u00b2(dk/2))`. Its derivative is `sin(dk)/E`, nonzero and opposite at \u00b1.08 (about \u00b1.24383155). Evenness sets the derivative to zero only at the minimum; the band disperses. No complete absence-of-movers or chiral-wire theorem follows."
+      },
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 107,
+        "line_sha256": "b055d832d9ccb61c73b6156dd9df3d9a1c2145ccb28f6e311f342daaaca2d762",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "For the resolved w3 crossing, the two measured minima are 6.5e-5 at the node and .099958 at dk=.1. Those two numbers do not classify every resolved plane or line mode. The sharp selected density is enhanced 11.2-fold within 1.5 coarse sites of the four intersection lines at L32: 17.5% on 16 of 1024 cells. Two-size agreement and density concentration retain their finite numerical scope."
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 648,
+        "line_sha256": "6a163264d4e9191dbc38bffff7a8fdff8dfc637ee7a8d5e50c6d488b8b65e074",
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "check(\"Q6 [1e-12/1e-7] actual arbitrary-profile line square identity; original band has opposite NONZERO off-node velocities about +/-0.24383155\","
+      }
+    ]
+  },
+  {
+    "id": "F6",
+    "original_title": "The line fixture can change its quoted scientific result while every check passes",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Bind actual sampled line field and original energy/dispersion values. Explicit piecewise step handles integer interfaces; actual1.05 amplitude mutant now fails.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 103,
+        "line_sha256": "d3b031b8d1cf9a074d71397ea9257a117309971be4721da145be1fd6a0f30be7",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "Define the sampled step s_L(x)=+1 for 0<=x<L/2 and s_L(x)=-1 for L/2<=x<L. The supplied field is exactly m(x,y)=s_L(x)s_L(y), with amplitude 1 including the integer interface sites, on L=24,32 tori and a two-site z cell. At kz=pi the lowest eight absolute-energy states are degenerate to 1e-6 with minimum .317837 at both lengths (historical difference 2.2e-16), below the sharp single-wall .414214 and bulk 1. The field itself and the quoted numerical minimum are now checked; multiplying the actual field by 1.05 must fail."
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 560,
+        "line_sha256": "c34475614654049438381ea4e155c85c41341036dac04709753f75caff38d153",
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "      and abs(e32[0] - 0.317837) < 5e-7"
+      }
+    ]
+  },
+  {
+    "id": "F7",
+    "original_title": "Finite open-interval modes are exponentially small, not exact zeros or exact Weyl cones",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Replace generic exact finite zeros/cone with finite low spaces and numerical Weyl agreement. Full actual chiral block binds nonzero bidiagonal determinant; intended-rational80digit values remain separate references and positive inverse bounds.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 73,
+        "line_sha256": "89db84be8e2522fa2eb454b8351c1b88f84d81935746a7f338db4e6cff3582d9",
+        "source_sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+        "text": "**Why small is not zero.** At p0, rotate tau1 to diagonal form. The spin-degenerate off-diagonal chiral block B is square and bidiagonal, with diagonal 1+m(s) for hard ends and 1/2+m at free endpoints, one off-diagonal -1. Thus det H=(det B)^4. Every diagonal is nonzero for the declared hard/free \u00b1.8 and uniform -.8 fixtures, including the exact rational representations of their binary64 inputs. The determinant is nonzero at finite Ns despite eigensolver rounding. Intended-rational profiles resolved independently at 80 digits give positive lowest energies about 3.44969e-23 (hard one-wall), 5.04983e-23 (free one-wall), and 1.77089e-45 (uniform hard). Those decimal references describe the specified rational profiles, not exact digits of binary64 matrices. A separate small recurrence/inverse-bound control retains the below-resolution/nonzero distinction. Special m=-1 can have exact finite zeros; no universal finite-zero prohibition is claimed."
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 713,
+        "line_sha256": "db801144d6de7501f8df33d698dd1a1d46027189ee27e90d2afa724f18804184",
+        "source_sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+        "text": "check(\"F1 [exact determinant/Decimal bounds] declared finite hard/free bidiagonal diagonals are nonzero; intended rational splitting has positive inverse-norm bounds below 1e-20, not exact zero\","
+      }
+    ]
+  },
+  {
+    "id": "F8",
+    "original_title": "Window-tracker sign switches are not exact Callan\u2013Harvey spectral flow",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Track finite flux-window labels across avoided gap, no physical inflow. Predicate binds all four expected labelled dictionaries and orientation recovered from constructed links. Actual reversed links reject.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 4,
+        "line_sha256": "f573ddee8c746a1fd00b86e51d3c09d5f470dab9462cc508fcc73026b4797c57",
+        "source_sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+        "text": "claim_scope: \"For the explicitly supplied finite four-component Wilson matrix on the listed circles and intervals: retain original spectra, window data, cutoff counts, balanced chiral pairing, finite flux-window integers and length tables. Generic declared hard/free finite blocks have nonzero determinant; Weyl agreement is approximate. The 2592-member result concerns cutoff counts/net chi, not all localized species. Flux tracking follows an avoided gap, not exact anomaly inflow. Supplied data are nonindependent and physical Record time/readout remain open.\""
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 432,
+        "line_sha256": "3f60f21c066dc45c7ab5b53e9d04f7af1cca7c21fb97372ef801df303321a721",
+        "source_sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+        "text": "    target = np.exp(2j*math.pi/(lx*ly))"
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 510,
+        "line_sha256": "a8b1e9c58cd8a5ae3f8a1498d49c35d350374ec6b971938cc0f7728b935ad9b4",
+        "source_sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+        "text": "      FLOW == EXPECTED_FLOW and len(FLUX_ORIENTATION_ERRORS) == 4"
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 727,
+        "line_sha256": "422ad55f643b857a3184c80a4068bc48ee295980e4cdb319ced6b44590fd0e97",
+        "source_sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+        "text": "check(\"F2 [actual finite flux matrices] square identity and positive endpoint gaps .00407991368,1.60326484 exclude continuous zero crossings; window switches span an AVOIDED gap\","
+      }
+    ]
+  },
+  {
+    "id": "F9",
+    "original_title": "The family checks count a cutoff spectrum, not every localized chiral species or the exact finite window",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "All2592 actual executed keys, no repeats; equality counts cutoff states not every localized species. Bulk interval is distinguished from finite cutoff; near-boundary20-state examples remain. Omitted-family and wrong-window mutants reject.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 92,
+        "line_sha256": "37eec2ec646274d149d91beb1c0dbb53b406ac6eff52664aedd8cc11c794bf28",
+        "source_sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+        "text": "## T3 \u2014 complete executed family and cutoff scope (C1\u2013C4)"
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 555,
+        "line_sha256": "9194b1425fb36703b07ef0ed1733fa489d507ce19c6e2f18ffe092ad83ecc3e8",
+        "source_sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+        "text": "EXECUTED_KEYS = set()"
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 735,
+        "line_sha256": "ffa0269bd2c3f67e1dff65193f6d6676a1e99d534637be28ec4d2b7a4dffbee5",
+        "source_sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+        "text": "check(\"F3 [finite cutoff counterexamples] all four near-boundary Ns48 fixtures have 20 |E|<.30 states on BOTH sides of bulk window\","
+      }
+    ]
+  },
+  {
+    "id": "F10",
+    "original_title": "The seven-item independence and withdrawal claims change domains",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Supplied inputs are nonindependent. Correct full Gamma_s removal norm to11.224972, keep old2 in history; distinguish four-component Wilson remainder from separately reduced naive2x2. New witness transcription error preserved as29/1 and corrected to reviewer momentum(.4,.2,.1).",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 120,
+        "line_sha256": "e4d924db256c854ae3c3dfb65e08707ce4b59c856e01fde825fb170aac5fae69",
+        "source_sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+        "text": "Reconstruction at p0 has residual zero. Frobenius norms of the actual removed terms for Ns64 are 11.224972 (K\u2297Gamma_s),19.544820 (r_sL\u2297Gamma_m),11.224972 again when removing Gamma_s's full coupled term, and12.8 (diag m\u2297Gamma_m). The original standalone ||Gamma_s||=2 remains a historical algebra norm, not the removed operator norm."
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 122,
+        "line_sha256": "0a9606bec81556e6af2e5260900f939e097a6fc183a647400963c6a53fbad57a",
+        "source_sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+        "text": "Literal removal of record-coordinate terms leaves the **four-component spatial Wilson matrix** `sum sin p_i Gamma_i + r sum(1-cos p_i) Gamma_m` per remaining spatial block. The separately constructed naive two-component comparator `D=i sum sigma_i sin p_i` also removes the spatial Wilson term and changes the embedding. Its eight local zero windings are four positive and four negative, net zero; local winding is present. At p=(.4,.2,.1) the Hermitian four-component remaining spectrum is \u00b1.460294987 twice, while the Hermitian naive comparator has \u00b1.448422635. They are different domains/operators, not the same withdrawal."
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 743,
+        "line_sha256": "904dcab28f41d2a75986c5220d029aeaaea03d16afb2b2120bf92b2f685866f3",
+        "source_sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+        "text": "check(\"F4 [actual withdrawal] remaining4x4 spatial Wilson block differs from separate naive2x2; full removed Gamma_s term norm equals K term, not ||Gamma_s||=2\","
+      }
+    ]
+  },
+  {
+    "id": "F11",
+    "original_title": "Record readability and supplier boundaries must agree with the conditional model",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Physical coarse hopping, readout/formation/time and mass supply remain explicit gaps; records empty or singleton; no universal physical chirality/no-go conclusion.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 113,
+        "line_sha256": "497983cd677eadd9465212811c9a84585a77cb666548801201469db1ce7d7e40",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "A mass-sign pattern and one-particle density could be connected to records only by a separately supplied occupation/readout instrument and coarse-to-fine realization. No formation site/rate, physical clock or equation selecting the mass profile is furnished. There is no physical chiral/anomaly exclusion beyond these selected matrices and diagnostics."
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 124,
+        "line_sha256": "80abb2adae7966c2c667a8b0043687e6fa6a0949c63b4888d752aa48bbcfdb3a",
+        "source_sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+        "text": "The elementary spatial sharp-wall parity identity is independently reconstructed here and retained as a comparison only. It does not prove the spatial unit's projection claims or a common physical no-go. A per-site record set is empty or singleton; the memo supplies no rereadable changing stack, but that fact does not prohibit every possible emergent temporal construction."
+      }
+    ]
+  },
+  {
+    "id": "F12",
+    "original_title": "Current trace, citation and exactness labels need a narrow publication correction",
+    "disposition": "confirmed closed within final narrowed conditional source scope",
+    "reviewer_assessment": "Current source review trace; formal audit deferred. Actual filename IDs, zero helpers, own note/current memo/one used context input each; actual current citations, archive context links, honest exactness labels.",
+    "remaining_findings": [],
+    "source_anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 27,
+        "line_sha256": "ced6dd5c176bf084fe87c17ad6c45360b6d31ac192e7c833440802eeac5e80ee",
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "next_trace_action: \"Independent source review of the corrected finite claims and genuine execution evidence; formal audit remains deferred.\""
+      },
+      {
+        "path": "docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 27,
+        "line_sha256": "ced6dd5c176bf084fe87c17ad6c45360b6d31ac192e7c833440802eeac5e80ee",
+        "source_sha256": "ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52",
+        "text": "next_trace_action: \"Independent source review of the corrected finite claims and genuine execution evidence; formal audit remains deferred.\""
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 50,
+        "line_sha256": "93e6ac6fc183521c718c17dd198ca71b97b6d85a3802cef4503b6512b9f8ee56",
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "AUDIT_INPUT_PATHS = ('docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md')"
+      },
+      {
+        "path": "scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py",
+        "line": 49,
+        "line_sha256": "2491ab973c38b445ee560e3c4ac0f7a9845b3b1f50f5064cf64148615d8113da",
+        "source_sha256": "01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd",
+        "text": "AUDIT_INPUT_PATHS = ('docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md')"
+      }
+    ]
+  },
+  {
+    "id": "W23-F4a",
+    "priority": 2,
+    "disposition": "confirmed closed",
+    "remaining_findings": [],
+    "reviewer_assessment": "Exact note99 defines Pi_x=sum_(a,b)|x,a,b><x,a,b| and states rank-one obstruction. Both D4/Q5 labels and genuinely refreshed cache use x-plane marginal scope. No arithmetic or predicate changes.",
+    "anchors": [
+      {
+        "path": "docs/RECORD_WALLS_IN_THE_STAGGERED_MASS_CARRY_LOCALIZED_2P1D_DIRAC_MATTER_VECTOR_LIKE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 99,
+        "source_sha256": "1b55dfb8e5744ba516a88c5270638deeec585a8a433ac82868cdfc0c3f900009",
+        "text": "For the **sharp** L64 fixtures only, projection onto M2D and M2D F_b reconstructs the wall Hamiltonian within 1e-12 (historical 3.1e-15), with singlet coefficient below 1e-12 (historical 5.1e-20), |n| matching E_w to 1e-6 and n reversed between walls. Traceless F_b alone would not establish equal position densities. The runner checks the summed coarse-x-plane projector Pi_x = sum_(a,b) |x,a,b><x,a,b|: its compression is scalar on each selected sharp wall space, so normalized states there share the same x-plane marginal after summing the four transverse-cell coordinates. This is not equality at each individual vertex: a single coordinate projector compresses to rank at most one and cannot be a nonzero scalar on the four-dimensional wall space. This is finite paired taste structure; no regulator, sea, fermion measure or background-response calculation establishes a physical parity anomaly or its cancellation."
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 541,
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "      \"-- equal coarse-x-plane density after summing four transverse-cell coordinates is separately checked\", ok_d4)"
+      },
+      {
+        "path": "scripts/record_walls_staggered_mass_localized_2p1d_matter_check_2026_09_03.py",
+        "line": 642,
+        "source_sha256": "4edae1c3e06848a67b3ec384207d6b62cb43b84bcf5d9618bb9c50c1eb936a03",
+        "text": "check(\"Q5 [1e-12] each summed coarse-x-plane projector compression is scalar on each selected SHARP wall space; identical x marginals after summing four transverse-cell coordinates, not vertex densities\", DENSITY_SCALAR_ERROR < 1e-12)"
+      }
+    ]
+  }
+]
