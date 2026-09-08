@@ -1,0 +1,7 @@
+# Joint source moments
+
+On the reviewed RK component with zero mean six-channel source, let S_h=<sum_ab|O_ab(h)|²> and d_h=qhat_h²<Nf>/L³. The local Dirichlet identity sums each plaquette plane twice among six directed channels; each individual contribution is qhat² Nf_plane/(2L³). Hence a_h=d_h/S_h is the spectral first moment. No plane-symmetry averaging assumption is needed.
+
+For each regulator alpha, Y_halpha=Re sum conjugate(O_origin)O_endpoint with geometric elementary time. r=Y/(alpha S) integrates1/(omega+alpha). Finite lag discarding changes r by at most .001 in stationary expectation, not a statement about finite-burn bias. Define C_alpha=(a+alpha)r. For the exact positive normalized spectral measure, Jensen gives C>=1 and Delta_supported<=1/r-alpha<=a. C near1 at large alpha is not concentration evidence by itself; the proposed alpha proportional qhat² avoids a fixed large regulator as the minimum momentum shrinks, but does not establish the source energy scale or scaling law.
+
+Joint delta-method influences for chain means are I_a=(qhat²(Nf-meanNf)/L³-a(S-meanS))/meanS, I_r=(Y-meanY-alpha*r*(S-meanS))/(alpha*meanS), and I_C=r I_a+(a+alpha)I_r. Keep full cross-harmonic/regulator covariance. A plug-in C<1 or negative numerator is retained as statistical/initialization evidence, never clipped into an exact inequality. Exact supported-energy bounds are not certified bounds from noisy estimates. This is conditional on the supplied RK Hamiltonian, source dictionary and reviewed component symmetry; no electromagnetic identification is derived.

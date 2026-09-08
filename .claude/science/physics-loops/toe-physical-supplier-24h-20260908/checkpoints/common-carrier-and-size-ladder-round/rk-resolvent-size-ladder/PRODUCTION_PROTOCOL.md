@@ -1,0 +1,9 @@
+# Prospective six-cell production contract
+
+Root adds long-burn primaries before any physics execution. Frozen ordered cells: (8,32),(8,128),(8,512),(16,32),(16,128),(16,2048). The512/2048 cells are primary; shorter burns are controls, not alternatives selected after seeing data. Each logical cell is128 independent chain units,64 origins/chain, streamed in four32-chain shards. No replacement or reduction. First origin is burn+1 sweeps.
+
+Chain ID=20000+128*cell_index+32*shard+replica, with cell order above, shard0..3,replica0..31. Burn seed500000000+cid, origin advance600000000+1000cid+i, endpoint700000000+1000cid+6i+j, lag generator800000000+cid. Distinct from prior pilots/micros. Six responses at minimum harmonic1 and matched harmonicL/4; minimum alpha=kappa*2sin²(pi/L), kappa=.25,.5,1; matched alpha exactly .25,.5,1. Regulated tail cap uses CAP_SUPPLEMENT, <=.001. Preserve every clipped-zero numerator and signed complex raw datum.
+
+Per-shard180s/384MiB, aggregate2700s including the earlier micro diagnostics. Forecast must be <=160s/shard and<=2300s total before authorization. Forecast is a resource planning estimate, not probabilistic guarantee. No production before root and independent code review.
+
+Joint analysis: chain means of Nf,S_h,Y_hk, imaginary Y; full sample covariance and delta-method influence covariance for a,r,b=1/r-alpha,C=(a+alpha)r. Ratios invalid if pooled S or Y is nonpositive; retain all raw negative chain values without clipping. All six responses and both harmonics remain visible. Nominal precision4SE<=10%r; independent burn comparisons difference>4SE flags. These are diagnostics, not simultaneous confidence enclosures, stationarity certificates or exact spectral bounds. No L8/L16 exact oracle. Full covariance of primary/control differences follows independent seeds. The old14/18 precision pilot remains stopped.

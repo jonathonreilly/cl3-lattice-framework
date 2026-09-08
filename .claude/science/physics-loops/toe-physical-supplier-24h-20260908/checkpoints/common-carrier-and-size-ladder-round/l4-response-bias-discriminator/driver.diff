@@ -1,0 +1,16 @@
+--- 
++++ 
+@@ -15,10 +15,10 @@
+  return np.vstack((cr[sl],ci[sl]))
+ 
+ def main():
+- ap=argparse.ArgumentParser();ap.add_argument('--group',type=int,choices=range(3),required=True);ap.add_argument('--case',type=int,choices=range(7),required=True);a=ap.parse_args();pop,burn=((512,160),(1024,160),(1024,320))[a.group]
+- cases=[(.93,1,0.),(.95,1,0.),(.97,1,0.),(.95,1,-.02),(.95,1,.02),(.95,2,-.02),(.95,2,.02)];V,h,lam=cases[a.case];g=prod.build_geometry(4);cr,ci,modes=prod.transverse_coefficients(4,(1,2));co=source_coefficients(cr,ci,h);rows=[]
++ ap=argparse.ArgumentParser();ap.add_argument('--group',type=int,choices=range(2),required=True);ap.add_argument('--case',type=int,choices=range(11),required=True);a=ap.parse_args();pop,burn=((1024,320),(2048,320))[a.group]
++ cases=[(.93,1,0.),(.95,1,0.),(.97,1,0.),(.95,1,-.02),(.95,1,.02),(.95,2,-.02),(.95,2,.02),(.95,1,-.01),(.95,1,.01),(.95,2,-.01),(.95,2,.01)];V,h,lam=cases[a.case];g=prod.build_geometry(4);cr,ci,modes=prod.transverse_coefficients(4,(1,2));co=source_coefficients(cr,ci,h);rows=[]
+  for rep in range(8):
+-  seed=4700000+10000*a.group+rep
++  seed=6000000+10000*a.group+rep
+   st,ct,ob,ns,xs,ess,drift,div=prepare(initial_ice(4).ravel(),V-1,lam,96*abs(lam),pop,20,burn,co,g.plaquette_links,g.affected_plaquettes,g.affected_counts,8,seed)
+   literal=prod.evaluate_observables(st,cr[6*(h-1):6*h],ci[6*(h-1):6*h]);error=float(np.max(abs(ob[:,:6]+1j*ob[:,6:]-literal)))
+   if not np.isfinite(error) or error>1e-10 or not np.isfinite(drift) or drift>1e-10:raise ValueError('cache check')

@@ -1,0 +1,3 @@
+# Prospective finite-projector path balance
+
+Root exposed the symmetric G=P_RK+delta Nf/M candidate and endpoint row-sum ratio before this independent proof. No production or sampler implementation is authorized. Derive target path weight on one finite connected ice component with uniform trial endpoints, exact fixed path length n; distinguish n elementary projector factors from sweeps or continuous time. Test random-end detailed balance and rejection-flip persistent skew balance on a small nonconstant-row symmetric nonnegative matrix, including self transitions and a deliberately wrong ratio. No fitting or outcome-dependent replacement. Then state an actual L2 finite-G oracle protocol without executing stochastic production.

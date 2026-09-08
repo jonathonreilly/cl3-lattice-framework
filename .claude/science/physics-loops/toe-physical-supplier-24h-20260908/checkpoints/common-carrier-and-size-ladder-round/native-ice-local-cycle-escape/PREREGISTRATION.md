@@ -1,0 +1,3 @@
+# Prospective local-cycle escape check
+
+Root requests dropping only noncontractible native cycle constraints on the same even periodic cubic L>=4 edge carrier. Candidate independent route: all-Bminus strings split into eight affine winding-parity classes; contractible plaquette toggles span each class. Remove selected all-even vertices: remaining graph is connected and retains three independent winding loops, allowing any star assignment to be completed in every winding class with equal multiplicity. If true, the same(5/8)^(V/8) bound survives in each orbit and their coherent sum. Verify finite binary ranks and residual winding loops for fixedL4/6/8 before interpreting. No large Hilbert matrices, production or universal no-go.

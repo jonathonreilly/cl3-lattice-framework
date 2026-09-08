@@ -1,0 +1,5 @@
+# Conditional cycle-Hamiltonian bridge
+
+Before execution: construct L4 canonical native Paulis and all fundamental cycles independently. Use fundamental-cycle coordinates to evaluate the flat-modulus native-code phase on selected ice strings without enumerating the fiber. On 128 successively sampled legal ice configurations, check every plaquette's compressed phase and the local degree-preserving gated operator. Check the vertex flippability bound underlying the extensive cycle-constraint frustration. Fixed seed 20260908; this is exact local algebra checked on bounded fixtures, not an equilibrium sample or full enumeration. Budget 180 seconds and 384 MiB. All failures remain recorded.
+
+The claimed general bridge is a diagonal unitary equivalence, not a local circuit or a derivation of a Hamiltonian from the primitive hopping. Cycle Hamiltonian terms and local flippability gates are additional supplied interactions; the native fixed-cycle code is relaxed. The input ice sector remains supplied. No formal N1 packet, physical electromagnetic identification or statistical-sampling claim.

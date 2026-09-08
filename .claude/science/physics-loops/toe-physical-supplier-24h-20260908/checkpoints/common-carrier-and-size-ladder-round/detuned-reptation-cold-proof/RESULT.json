@@ -1,0 +1,211 @@
+{
+  "checks": 3435,
+  "groups": {
+    "accepted-skew-flow": 1208,
+    "actual-mutants-killed": 6,
+    "all-position-marginals": 38,
+    "endpoint-energy-equals-finite-pure-energy": 6,
+    "exact-lifted-stationarity": 11,
+    "lifted-irreducibility-boundary": 11,
+    "path-transfer-normalization": 11,
+    "stochastic-row-correct": 536,
+    "stochastic-row-hold-reject": 536,
+    "stochastic-row-inverted": 536,
+    "stochastic-row-unaccepted": 536
+  },
+  "fixtures": [
+    {
+      "label": "two-asymmetric",
+      "bonds": 1,
+      "paths": 4,
+      "lifted_states": 8,
+      "row_sums": [
+        "3/2",
+        "5/2"
+      ],
+      "normalizer": "4",
+      "irreducible": false,
+      "mutant_stationarity_residuals": {
+        "inverted": "0",
+        "unaccepted": "0",
+        "hold-reject": "0"
+      }
+    },
+    {
+      "label": "two-asymmetric",
+      "bonds": 2,
+      "paths": 8,
+      "lifted_states": 16,
+      "row_sums": [
+        "3/2",
+        "5/2"
+      ],
+      "normalizer": "17/2",
+      "irreducible": true,
+      "mutant_stationarity_residuals": {
+        "inverted": "16/425",
+        "unaccepted": "2/85",
+        "hold-reject": "2/85"
+      }
+    },
+    {
+      "label": "two-asymmetric",
+      "bonds": 3,
+      "paths": 16,
+      "lifted_states": 32,
+      "row_sums": [
+        "3/2",
+        "5/2"
+      ],
+      "normalizer": "37/2",
+      "irreducible": true,
+      "mutant_stationarity_residuals": {
+        "inverted": "32/925",
+        "unaccepted": "4/185",
+        "hold-reject": "4/185"
+      }
+    },
+    {
+      "label": "two-asymmetric",
+      "bonds": 4,
+      "paths": 32,
+      "lifted_states": 64,
+      "row_sums": [
+        "3/2",
+        "5/2"
+      ],
+      "normalizer": "325/8",
+      "irreducible": true,
+      "mutant_stationarity_residuals": {
+        "inverted": "256/8125",
+        "unaccepted": "32/1625",
+        "hold-reject": "32/1625"
+      }
+    },
+    {
+      "label": "three-sparse",
+      "bonds": 1,
+      "paths": 7,
+      "lifted_states": 14,
+      "row_sums": [
+        "4/3",
+        "31/12",
+        "7/4"
+      ],
+      "normalizer": "17/3",
+      "irreducible": false,
+      "mutant_stationarity_residuals": {
+        "inverted": "0",
+        "unaccepted": "0",
+        "hold-reject": "0"
+      }
+    },
+    {
+      "label": "three-sparse",
+      "bonds": 2,
+      "paths": 17,
+      "lifted_states": 34,
+      "row_sums": [
+        "4/3",
+        "31/12",
+        "7/4"
+      ],
+      "normalizer": "829/72",
+      "irreducible": true,
+      "mutant_stationarity_residuals": {
+        "inverted": "16920/796669",
+        "unaccepted": "360/25699",
+        "hold-reject": "360/25699"
+      }
+    },
+    {
+      "label": "three-sparse",
+      "bonds": 3,
+      "paths": 41,
+      "lifted_states": 82,
+      "row_sums": [
+        "4/3",
+        "31/12",
+        "7/4"
+      ],
+      "normalizer": "10487/432",
+      "irreducible": true,
+      "mutant_stationarity_residuals": {
+        "inverted": "203040/10078007",
+        "unaccepted": "4320/325097",
+        "hold-reject": "4320/325097"
+      }
+    },
+    {
+      "label": "three-sparse",
+      "bonds": 4,
+      "paths": 99,
+      "lifted_states": 198,
+      "row_sums": [
+        "4/3",
+        "31/12",
+        "7/4"
+      ],
+      "normalizer": "540169/10368",
+      "irreducible": true,
+      "mutant_stationarity_residuals": {
+        "inverted": "9745920/519102409",
+        "unaccepted": "207360/16745239",
+        "hold-reject": "207360/16745239"
+      }
+    },
+    {
+      "label": "constant-row-adverse",
+      "bonds": 1,
+      "paths": 4,
+      "lifted_states": 8,
+      "row_sums": [
+        "1",
+        "1"
+      ],
+      "normalizer": "2",
+      "irreducible": false,
+      "mutant_stationarity_residuals": {
+        "inverted": "0",
+        "unaccepted": "0",
+        "hold-reject": "0"
+      }
+    },
+    {
+      "label": "constant-row-adverse",
+      "bonds": 2,
+      "paths": 8,
+      "lifted_states": 16,
+      "row_sums": [
+        "1",
+        "1"
+      ],
+      "normalizer": "2",
+      "irreducible": false,
+      "mutant_stationarity_residuals": {
+        "inverted": "0",
+        "unaccepted": "0",
+        "hold-reject": "0"
+      }
+    },
+    {
+      "label": "constant-row-adverse",
+      "bonds": 4,
+      "paths": 32,
+      "lifted_states": 64,
+      "row_sums": [
+        "1",
+        "1"
+      ],
+      "normalizer": "2",
+      "irreducible": false,
+      "mutant_stationarity_residuals": {
+        "inverted": "0",
+        "unaccepted": "0",
+        "hold-reject": "0"
+      }
+    }
+  ],
+  "seconds": 0.03540479199727997,
+  "source_sha256": "ba47dedbd94a7950430340e1bb0f3365e4d23bd23c89954d1848352347d27232"
+}

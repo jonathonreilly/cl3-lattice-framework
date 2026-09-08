@@ -1,0 +1,9 @@
+# End-to-end diagnostic and streaming implementation
+
+The prospective CAP_SUPPLEMENT preceded both diagnostic executions. stream.py bytes were the same for both; STREAM_FREEZE is a post-execution binding receipt, not a claimed pre-execution hash freeze.
+
+L8: total1.260194s, warm compilation1.007663s, hot eight-origin chain including computation/validation/compression .00782421s,181.984375MiB. Cap arithmetic .00014617s. L16 prospective fivefold-scaled L8 gate was below20s, so the authorized L16 micro ran: total .552245s, hot .14406446s,138.140625MiB, cap .00015667s. Both retain every diagnostic raw origin/product/Nf/lag; no full-volume enumeration. The L16 run benefited from existing compilation cache; that difference is not physical acceleration.
+
+A deliberately padded estimate3*hot*1024+10s gives34.04s per8192-origin L8 logical cell and452.57s L16. This includes measured validation/compression in hot time, and10s setup allowance. It is a heuristic based on eight origins, not a tail guarantee. Higher production burn contributes only128*128 sweeps versus roughly8192*99.96 endpoint/advance sweeps at L16 (about2%); the threefold factor covers that expected increment, but no probabilistic runtime certification follows. Four32-chain shards would divide logical work roughly by4; proposed900s per shard is ample relative to this heuristic but remains unapproved.
+
+stream.py retains snapshots for only one chain, validates and deletes them, and writes one compressed raw file per chain. It implements fixed128x64 logical coverage,32 chains per shard; no production command was run. A production receipt aggregator/analyzer and independent code review remain required. Exact matched alpha assignment is now [.25,.5,1]. Cap proof uses small Fraction operations and the exact fourth Taylor value482921/240000>2; no enormous rational powers remain. Original micro is unchanged.

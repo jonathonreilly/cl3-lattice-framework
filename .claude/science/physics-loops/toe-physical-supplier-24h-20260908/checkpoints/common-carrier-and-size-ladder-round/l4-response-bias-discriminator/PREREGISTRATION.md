@@ -1,0 +1,7 @@
+# Fresh22-cell finite-method discriminator, before data
+
+Root prospective envelope2400seconds including ONE≤30second P2048 memory micro; forecast≤2000aggregate/≤120cell, hard180seconds384MiBcell. No production before root review. Original completed600/900 configurations and observed group2h2−3.14SE difference remain untouched.
+
+FixedL4,P1024/2048,burn320,classical20,8replicas,11freshsources/group: V.93/.95/.97 λ0; centerV.95 λ±.02 and±.01 for eachcomplexX1/X2. Primary sourceh.02, diagnostich.01; kinetic Vstep.02. Fresh seeds6000000+10000group+replica shared within11sourcevector, no oldenergyreuse. Precision10% at nominal4SE, allcomparison4SE; no posthocstep/seedselection. Full11energycovariance,4ratioinfluences/sharedB, pairedsteps and population effects reported. OldF12/F24 group2 references independent of newgroups but shared acrossnewsteps/populations, so retain their fulltwoharmonic/twoF covariance; direct Fbias not resolved. No stochasticburnvariation here; onlyfixedburn320 and halfwindowdiagnostics.
+
+Micro frozenP2048,V.95,X2,λ+.02,seed6199999,classical2,burn8,one replica; includesimports/compilation/cache/resampling/finalliteral/count/Gauss/flux checks, no physicsestimate. Forecast production from actual previousmaximumP1024b320cell33.982394874998135s×population×11×1.5, not shortmicro scaling:1682.128546s plusmicro,101.947185smax. Memory gate comes from actualmicro. No automaticlargerL or F48 addition.

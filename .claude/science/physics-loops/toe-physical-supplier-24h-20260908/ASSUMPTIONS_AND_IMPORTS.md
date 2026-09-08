@@ -13,3 +13,5 @@ Current main2b42ebe4b6b4ee76b0fa1b8e668ad7775e946307 supplies the June29 minimal
 | Source/action functional, source coupling and physical readout | Gravity interface | Open; prior Poisson solver is not its supplier | One sourced variational response from actual native dynamics/readout |
 
 Counterfactual decisions: allow a phase resource beyond real-only controls and test the changed reachable class; replace thermal preparation by a product state and explicit heralded filters; test reset against the native code rather than assume any local channel preserves it. These are conditional apparatus comparisons, not new axioms or claims that nature selects their parameters.
+
+Commoncarrierextension admitsrelaxedcyclecode, flippabilitygates, lowinteger-chargeprojector andcouplings. CAR-Z2enlargementisredundantcoordinates withfixedGauss; noadditionalphysicalqubitsorU1factorizationderived. Staticchargework atRKwillrestrictV=J,t=0 andsuppliedUQ²mass. Reptation samplesfiniteGpowers withuniformtrial; liftedstationarity isnotmixing,oracle-assistedL2initializationdoesnotporttolargerL.
