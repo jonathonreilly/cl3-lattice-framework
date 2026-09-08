@@ -38,3 +38,7 @@ Additional independently reviewed research gives H >= (U-4|t|)D for the supplied
 Disk inventory found 31 clean old checkouts whose HEADs exist on live origin branches. Their unique ignored generated caches are being archived and verified before selective removal. Worktree paths and branches are preserved. Cleanup completion is not claimed here.
 
 Frozen membership is EIGHTH_SHA256.json. Source and review files are historical evidence; any embedded older status is superseded by this checkpoint only where stated above. Combined landing checks and independent audit remain pending.
+
+## User-directed disk cleanup completed
+
+Useful evidence stays on remote branches or review PRs. Disposable generated cache archives were deleted. All31old worktrees were clean, checked for active consumers and removed with ordinary git worktree remove. Every local branch is preserved at a HEAD verified against its live origin branch. No main mutation or raw science deletion. Recovery mapping and detailed inventory are under disk-cleanup-20260908. About68GiB free remains.
