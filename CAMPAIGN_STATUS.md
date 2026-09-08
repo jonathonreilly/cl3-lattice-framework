@@ -51,13 +51,13 @@ joint-law selection remain open.
 ## Next scientific decisions
 
 1. Reviewed corrected Record, Noether, matter, shifting, symmetry/Hartree,
-   walls and sea/corner source units are on main; exact scopes and commits are
-   in BACKLOG_STATUS.md. Flux and relaxation author packets are sealed and root
-   verified; both original reviewers confirm the combined wave25 target.
-   Vacuum/energy original review is sealed with 13 finding groups. Its separate
-   author is paused after original preparation until relaxation confirmation.
-   The #6377 successor and eleven consolidated originals are under complete
-   source/dependency review; no supplier tower or scientific PASS is accepted.
+   walls, sea/corner, flux and relaxation source are on main. BACKLOG_STATUS.md
+   records exact scopes and commits. Vacuum/energy author corrections are active;
+   the original reviewer will confirm them. Cubic-carrier/role-marking originals
+   #7869/#7880 are under independent source review.
+   The #6377 successor and eleven consolidated originals remain under complete
+   source/dependency review. Stale historical authority and moved OS-note guards
+   are preserved as failures; no supplier tower or full scientific PASS is accepted.
    #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
    reserved-source hold. Closure reconciliation is complete; 77 pending closed
    scopes remain at seven successors. Preserve the fixed 254 and all reservations.

@@ -1,0 +1,488 @@
+[
+  {
+    "pr": "7895",
+    "claim": "setting/T1",
+    "original": {
+      "pr": 7895,
+      "claim": "setting/T1",
+      "note": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        93,
+        143
+      ],
+      "original_check_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "preserved_positive_scope": "Complete finite Pauli relations/code spectrum, compressed unrecorded-hop identity and augmented-record Markov reset.",
+      "finding_ids": [
+        "F1",
+        "F2",
+        "F13"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Preserve finite relations/spectrum and compression; distinguish code/ambient, linear reset and supplied physical roles.",
+    "final_path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 129,
+    "section_end": 141,
+    "section_sha256": "74cab3d8e97c3d906649c6a7f808d4fce16b8ab6cb6ef8f54de6d6e7859f1d9a",
+    "final_section_text": "## Theorem 1 -- the restriction identity, and why `M_R` is memoryless\n\n**Conclusion.** `[exact]` Every one of the `12` hop terms has Pauli `X`-part exactly one edge qubit. Hence for every record set `R`, `P_S H P_S = P_S(-sum_{e not in R} eta_e T_e)P_S`. This is equality on the compressed block, not equality of the unrestricted full-space matrices. So the relaxed state of step 4 depends on `(R, w)`\nand nothing else, and `M_R` is **memoryless**. `[numerical, 1e-11]` The setting: `R0`-`R4` hold pair by pair, the face group carries no `-I`, `k = 5`, the code dimension is `128`, the\nflux is `-1` on all six faces, the code space is `H`-invariant to `3e-17`, and the sea has `E = -6.928203230276 = -4 sqrt 3`, is non-degenerate, has gap `3.464101615138 = 2 sqrt 3`\nand is sharp `N = 4` (Born mass off `N = 4`: `2e-31`).\n\n**Proof.** `T_ij = (i/2) A_ij (B_i - B_j)` and `B_i`, `B_j` are pure `Z`, so both Pauli words `A_ij B_i` and `A_ij B_j` carry the `X`-part of `A_ij`, the single edge qubit `ij`; the\nrunner asserts this pair by pair. A term whose `X`-part touches a recorded site carries `S(R,w)` off itself and is killed by `P_S ... P_S`; a term whose `X`-part is unrecorded\npreserves it. The relations, the group and the code dimension are the complete symplectic computation with `Z4` phases; the sea is one `128 x 128` diagonalisation.\n\n**Scope.** Once the generator, ambient block, degeneracy rule and reset are supplied, the next state is fixed by the record prefix. This does not derive those choices or the next formation site.\n\n",
+    "final_source_sha256": "906ca8ddfb18c960117242ae7222883a7f076474eb2007e3615e7ee457709aa3",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7895",
+    "claim": "T2",
+    "original": {
+      "pr": 7895,
+      "claim": "T2",
+      "note": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        144,
+        160
+      ],
+      "original_check_ids": [
+        "B1",
+        "B2",
+        "B3"
+      ],
+      "preserved_positive_scope": "2048 flat sea blocks,1984-support/2112-zero floating-identified diagonal and exact corner-star classification of that identified set.",
+      "finding_ids": [
+        "F2",
+        "F4"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Preserve exact combinatorics on the floating-identified zero set; supplied sea law/basis only.",
+    "final_path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 142,
+    "section_end": 155,
+    "section_sha256": "893163028ec3a5aa3fa8bd3c9ab1cf75e70288f2c20dc982fc5c048675f6ea48",
+    "final_section_text": "## Theorem 2 -- the sea's own record odds are flat, and its zeros\n\n**Conclusion.** `[numerical, 1e-12]` On the sea, every one of the `24 + 264 + 1760 = 2048` record blocks with `k <= 3` carries weight exactly `2^-k` (to `4e-15`): the odds at a\nforming record are `1/2` and **nothing is forced up to three records** -- the half-filled-sea analogue of PR #7858's `T2`. `[exact, 1e-12 zero read]` At `p = 1`, where every site registers before\nanything else happens, the finished set is the sea's Born diagonal: support `1984 = 62 x 32`, and `2112` zeros splitting as `1856` **charge zeros** (every pattern with `N != 4`) plus\n`256 = 8 x 32` **cancellation zeros**. The `8` corner-occupation patterns carrying the cancellation zeros are **exactly the `8` closed corner stars** `{v} u N(v)`, one per corner --\nfor example `{0,1,2,4}` and its complement `{3,5,6,7}`.\n\n**Proof.** The block weights are sums of `|sea|^2` over coordinate subsets. The zero census is read off the Born diagonal at `1e-12` and then handled combinatorially: the `N != 4`\ncount is `4096 - 2240 = 1856` by the parity dictionary, the remaining zero labels group by corner-occupation pattern into `8` patterns of `32`, and those `8` are compared as sets\nagainst the `8` closed corner stars built from the cube's adjacency -- an equality of two `8`-element sets of `F2^8` vectors, with no tolerance in it.\n\n**Scope.** This is a property of the supplied sea preparation and chosen record basis. Matching that law is the comparison target here, not an axiom-imposed requirement on every physical tick.\n\n",
+    "final_source_sha256": "906ca8ddfb18c960117242ae7222883a7f076474eb2007e3615e7ee457709aa3",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7895",
+    "claim": "T3",
+    "original": {
+      "pr": 7895,
+      "claim": "T3",
+      "note": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        161,
+        173
+      ],
+      "original_check_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "preserved_positive_scope": "All4096 leaves for32 declared MR orders; original TV and Model A comparison, no all12! order theorem.",
+      "finding_ids": [
+        "F2",
+        "F4"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Preserve32 full MR laws and original TV comparison; L/A relative pruning1e-15 stated separately.",
+    "final_path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 156,
+    "section_end": 170,
+    "section_sha256": "7a17ef70e27c53b2b78bc159f3fee92b1b28c1a31b46c5302b1f01b8cc6bfaef",
+    "final_section_text": "## Theorem 3 -- under `M_R` every pattern becomes admissible\n\n**Conclusion.** `[numerical, 1e-12]` Under `M_R` at the identity order all `4096` patterns carry strictly positive odds (smallest `1.6e-05`), so **not one of the sea's `2112` zeros\nsurvives**; the same holds at all `32` declared orders -- support `4096`, `0` zeros kept -- the charge zeros included, although `N` is conserved by `H` and commutes with every record\nprojection. `TV(M_R, sea Born) = 0.445486111111 = 1283/2880` at the identity order. PR #7876's Model A at `tau = 0.5` sits **closer**, `TV = 0.324925160534`, on support `2240`,\nkeeping all `1856` charge zeros and losing the same `256` cancellation zeros.\n\n**Proof.** Each order's distribution is the exact product over the whole `4096`-leaf tree: at every node the block ground space is diagonalised once, the branch odds are the masses of\nthe relaxed diagonal on the two values, and the leaf weights are accumulated; nothing is sampled and no branch is pruned. The relaxed state uses the real skew form of `H_R`: the block\nmatrix is purely imaginary, so its square is `M M^T`, the ground level is `-sqrt(lambda_max)`, and the ground projector's diagonal is half that of the real spectral projector at\n`lambda_max` on a nonzero band. A zero block uses its full zero eigenspace, as the runner explicitly handles.\n\n**Reading, not theorem.** By reading note (3), \"admissible\" is the support of the distribution; under this tick the support is everything, so the patterns the sea never registered are\nnow registered, with odds of one in sixty thousand or better.\n\n",
+    "final_source_sha256": "906ca8ddfb18c960117242ae7222883a7f076474eb2007e3615e7ee457709aa3",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7895",
+    "claim": "T4",
+    "original": {
+      "pr": 7895,
+      "claim": "T4",
+      "note": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        174,
+        189
+      ],
+      "original_check_ids": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "preserved_positive_scope": "Order contrast1/3,32-order extremal lower bound and sequential L\u00fcders escape.",
+      "finding_ids": [
+        "F4"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Preserve actual32-order contrasts and positive sequential Lueders; ideal every-order claim proved by chain rule, finite runs retain tolerances.",
+    "final_path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 171,
+    "section_end": 182,
+    "section_sha256": "77364fc6d20f86be6b3d7db35ab5de854bf824bda2894fc1c0aef8dded467f39",
+    "final_section_text": "## Theorem 4 -- the odds depend on the order in which the sites record\n\n**Conclusion.** `[numerical, 1e-12]` `TV(identity order, reverse order) = 0.333333333333 = 1/3`, for the same twelve sites and tick. Over the `32` declared orders -- the `12` cyclic\nshifts, their `12` reverses, and `8` further orders written out in the runner, **no seed anywhere** -- the maximal pairwise `TV` is `0.727031250000` and the minimal `0.113194444444`,\nand `TV` to the sea ranges `0.445486111111` .. `0.569444444444`. The maximum is a **lower bound** on the spread over all `12!` orders, not the spread itself. `[numerical, 1e-14]` The\nsea's own Born rule, by contrast, is order-independent: pure Lueders conditioning reproduces its Born diagonal to `6e-15`, identity and reverse agreeing to `6e-15`.\n\n**Proof.** Thirty-two whole trees as in `T3`, then `496` pairwise `L1` sums; the separate Lueders recursion removes the relaxation step and omits relative branches at or below 1e-15. Exact ideal order independence follows from the commuting-projector chain rule; the executed comparison has its stated floating tolerance. The declared order set is a\nliteral in the runner, asserted to be `32` distinct permutations of the `12` sites.\n\n**Scope.** Order independence is a separately supplied comparison requirement. MR fails it on the 32 declared orders: TV is 1/3 for identity versus reverse and exceeds.7 for two orders. Sequential Lueders satisfies it by the commuting-projector Born chain rule.\n\n",
+    "final_source_sha256": "906ca8ddfb18c960117242ae7222883a7f076474eb2007e3615e7ee457709aa3",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7895",
+    "claim": "T5",
+    "original": {
+      "pr": 7895,
+      "claim": "T5",
+      "note": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        190,
+        206
+      ],
+      "original_check_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "preserved_positive_scope": "Original charge law/variance,1456 degenerate mixed nodes and N4 variant.",
+      "finding_ids": [
+        "F2",
+        "F4"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Preserve charge laws, degeneracy1456 and fixedN4 alternative, within supplied ambient reset.",
+    "final_path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 183,
+    "section_end": 199,
+    "section_sha256": "77d44decf6cb4fa8386e0809d343e4e98a25398cf64c2071e4303c62cf9617b6",
+    "final_section_text": "## Theorem 5 -- half filling survives on average; the readable charge does not stay sharp\n\n**Conclusion.** `[numerical, 1e-12]` `<Q> = 0` and `<N> = 4` at every one of the `32` declared orders (`max |<Q>| = 2e-16`, `max |<N> - 4| = 1e-14`), so `M_R` keeps half filling on\naverage. But `Q` is no longer sharp: at the identity order the law over `Q = -4, -2, 0, 2, 4` is `(1/384, 1/8, 143/192, 1/8, 1/384)` and `var Q = 1.083333333333 = 13/12`; over the\ndeclared orders `P(Q = 0)` ranges `0.614583333333` .. `0.881319444444` and `var Q` ranges `0.488888888889` .. `1.666666666667`, so the charge law is itself order-dependent. The spread\nsits on the tie-break: of the `8190` nodes of the identity-order tree, the `1456` whose relaxed state is **not** `N`-sharp are **exactly** the `1456` carrying a degenerate ground\nspace, at ticks `5`, `6`, `8`, `9` and `11`; at every tick the weight-averaged `<N>` is still `4` to `7e-15`. The variant `M_R^N` restores `P(Q = 0) = 1` and all `1856` charge zeros\non support `2240`, but still loses all `256` cancellation zeros, as Model A does.\n\n**Proof.** The charge law is read off the `T3` trees against the parity dictionary and compared with the stated rationals at `1e-12`. The node census records, at every node, the\nblock's ground-space degeneracy and the `N` values its relaxed diagonal is supported on, and asserts the two coincide node by node. At tick `11` the degenerate blocks are exactly\nthose where `H_R` vanishes -- the last free hop has zero amplitude, its two corner endpoints carrying equal occupancy -- and the block's two states then differ in `N` by `2`; at ticks\n`5`, `6`, `8` and `9` the degenerate ground space has `E_0 < 0` and still spans two `N` sectors.\n\n**Reading, not theorem.** The tie-break is doing real work, and it is a declared choice, not a technicality: where the lattice has more than one lowest-energy arrangement this tick\nshares the weight evenly among them, and there the arrangement carries no one definite charge. Superselecting charge fixes that and not the rest.\n\n",
+    "final_source_sha256": "906ca8ddfb18c960117242ae7222883a7f076474eb2007e3615e7ee457709aa3",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7895",
+    "claim": "T6",
+    "original": {
+      "pr": 7895,
+      "claim": "T6",
+      "note": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        207,
+        223
+      ],
+      "original_check_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ],
+      "preserved_positive_scope": "Finite overlaps and variational principle; retain actual ensemble energy table with correct weights.",
+      "finding_ids": [
+        "F3"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Preserve all overlap/variational and two-ensemble energy rows; exact mean not each outcome, linear reset proof and actual counterexamples supplied.",
+    "final_path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 200,
+    "section_end": 211,
+    "section_sha256": "fd86d370ccbefd18718facea2c4c10bf6410dd0ecdcc24023280d2c83bcc049c",
+    "final_section_text": "## Theorem 6 -- relaxation is not the sea held to the records\n\n**Conclusion.** At all 24 one-record blocks, the relaxed state has overlap 0.962606705806 with the normalized Lueders-conditioned sea (spread 7e-15). At k=3 the 1760 overlaps have minimum 0.448473881026, mean 0.773546569701 and 64 values at 1. These original deterministic numerical results remain at the declared tolerances.\n\nThe energy column is the **Lueders-weighted average** over outcomes of the first k recorded sites, equal to `-(12-k)/sqrt3` to 4e-14. It is not each conditional energy. At mask31, outcome 0 has positive weight 1/48 and energy `-2sqrt3`; outcome 2 has weight 1/24 and energy `-(5/2)sqrt3`. Both differ from `-7/sqrt3`. The runner retains all 32 outcome rows and their weighted mean.\n\nThe original blockwise variational inequality `E0(R,w) <= <sea_{R,w}|H_R|sea_{R,w}>` has 0 violations over 2048 blocks with k<=3. The original printed `drops[k]`, however, subtracts the MR-weighted mean ground energy from the separately Lueders-weighted mean conditional energy. It is **not** an average of the pointwise inequality under a common law. This difference peaks at k=9 with 0.401011505139 and is zero to 1e-14 at k=3. At k=0 both constructions begin in the same sea, though the ambient block is 4096-dimensional; only k=12 has a one-dimensional block. F5 now checks the k=3 zero with absolute value, rejecting the preserved negative-one counterexample. All twelve original numerical energy rows are printed with their two weighting laws.\n\n**Proof of the mean.** For a fixed set R, sum the normalized conditional quadratic forms with their Born weights. Their sum is `Tr[H_R sum_w P_w rho_sea P_w]`. For an unrecorded edge e, the signed Hamiltonian term `-eta_e T_e` commutes with all P_w, so its expectation is unchanged by this averaged measurement. The supplied staggered sea gives each **signed** term expectation `E_sea/12=-1/sqrt3`; summing the 12-k surviving terms gives the stated mean. The signed term, not T_e alone, enters this argument. The variational inequality holds independently at every positive-weight block. Neither fact identifies the two different ensemble weights.\n\n**Fixed-record reset proof.** Write `sigma_R=sum_a lambda_a |a><a|` and choose a complete input basis |b>. The Kraus operators `K_ab=sqrt(lambda_a)|a><b|` satisfy `sum K_ab^dag K_ab=I` and `sum K_ab X K_ab^dag=Tr(X)sigma_R`. Thus reset is linear CPTP. Measurement followed by a record-dependent reset is a linear instrument before outcome normalization. The conditional normalized branch can be nonlinear, just as normalized Lueders conditioning is. The Lindblad generator `L=R_R-Id` has channel `exp(tL)=exp(-t)Id+(1-exp(-t))R_R`; ideal reset is its infinite-time limit. No exact finite-time bounded-generator reset or physical sea stationary-state mechanism is claimed.\n\n",
+    "final_source_sha256": "906ca8ddfb18c960117242ae7222883a7f076474eb2007e3615e7ee457709aa3",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7895",
+    "claim": "T7",
+    "original": {
+      "pr": 7895,
+      "claim": "T7",
+      "note": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        224,
+        236
+      ],
+      "original_check_ids": [
+        "G1",
+        "G2"
+      ],
+      "preserved_positive_scope": "One-site commutant of supplied corner parity and face dictionaries.",
+      "finding_ids": [
+        "F4"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Retain conditional projective commutant, not physical basis selection.",
+    "final_path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 212,
+    "section_end": 223,
+    "section_sha256": "f3a79f8ddbeb591ae80f25708c48521f14a93cf00eeec7bc76be1c0ac6311737",
+    "final_section_text": "## Theorem 7 -- a conditional one-site commutant\n\n**Conclusion.** `[exact]` `Z_e` commutes with all `8` corner parities `B_v` at all `12` edge sites, while `X_e` and `Y_e` each anticommute with exactly the two endpoint parities of\ntheir site. Given the supplied corner-parity dictionary and its nondisturbance requirement, a nontrivial one-site two-outcome projective measurement must be Z_e up to outcome labels. Indeed `aI+xX+yY+zZ` commutes with an incident parity only when x=y=0. This does not select the physical dictionary, a general instrument, or a physical record basis. The **face dictionary singles out none**:\n`Z_e` anticommutes with exactly the two faces through `e` at all `12` sites, and no one-site basis at any site commutes with the corner dictionary and the face dictionary at once.\n\n**Proof.** Three one-site Pauli words per site against `8 + 6` stabilizer words in the symplectic representation, the face incidences compared against the cube's own face list; all\ninteger arithmetic. (The `X_e`/`Y_e` counts against the faces are not uniform across sites and are an artefact of the declared `Z`-tail ordering; they are not used, `X_e` and `Y_e`\nbeing already excluded by the corner column.)\n\n**Scope.** The commutant result answers a conditional algebra question. The axioms do not supply this parity dictionary or require every physical tick to preserve it.\n\n",
+    "final_source_sha256": "906ca8ddfb18c960117242ae7222883a7f076474eb2007e3615e7ee457709aa3",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7895",
+    "claim": "scope/corollary/interfaces",
+    "original": {
+      "pr": 7895,
+      "claim": "scope/corollary/interfaces",
+      "note": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        237,
+        328
+      ],
+      "original_check_ids": [],
+      "preserved_positive_scope": "Supplied-model negative result plus positive L\u00fcders, fixed-N and dissipative/partial alternatives.",
+      "finding_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F13"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "All physical/formation/clock suppliers visible; sequential Lueders, N4 reset and other partial/dissipative alternatives remain open or positive; no N1/N2 completed physical no-go.",
+    "final_path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 224,
+    "section_end": 293,
+    "section_sha256": "4714deea14a4d6daa47fb4beaab6686c9aa22d4a6ddb6b12f7a443ffb04a051e",
+    "final_section_text": "## Corollary -- what this says about a relaxation tick\n\n1. With all six choices supplied, MR is well posed and its reset state depends on the record prefix. The blockwise variational inequality is useful; it does not derive a formation mechanism.\n2. All 32 executed MR laws have full support and lose the chosen sea zeros; their probabilities depend on the supplied order. Half filling remains a mean, while the charge distribution spreads under the supplied Pi/deg tie-break. MR^N restores sharp charge without restoring the cancellation zeros.\n3. **Sequential Lueders is an executed positive alternative.** Twelve successive commuting record projectors reproduce the sea Born diagonal in identity and reverse order; the chain rule proves the same for every order in the ideal exact model. Simultaneous recording is unnecessary. The locally redeclared unitary Model A at tau=.5 remains closer to the sea than MR, with the original TV numbers retained.\n4. Sea-law matching and nondisturbance of the chosen corner dictionary are supplied objectives. Under those objectives MR fails and the conditional Z commutant is restrictive. This establishes neither a universal physical no-go nor a unique formation rule or basis.\n\n## Reading, not theorem -- the whole thing in plain words\n\nReplacing the state after each recording by a supplied block-ground state defines a finite model. It changes the conditional probabilities, so its final law differs from the chosen sea law. Ordinary sequential Lueders recording retains that law. Whether either construction describes permanent physical Records requires a placement, preparation, probability and formation bridge that this calculation does not supply.\n\n## Interfaces named for other lanes, not settled here\n\n- **The formation rate.** How often a record forms, and where, is outside this note; reading note (2) says the axioms supply neither, and `M_R` stipulates an order rather than\n  deriving one. The corollary gives conditional comparisons, not a universal obligation on every formation proposal.\n- **A Lindbladian stationary state.** The panel's referee lens -- a tick written as a dissipative generator whose stationary state is the sea, rather than as a replacement map -- is\n  not computed as a physical mechanism. Fixed-record reset is linear CPTP and has the asymptotic Lindblad realization proved above; that mathematical fact does not select a sea stationary law.\n- **Partial relaxation.** Ticks relaxing only partly, running a finite time towards the conditioned ground state rather than arriving, are possible additional protocols; no unique interpolation from the locally computed unitary A to MR is specified or executed here.\n- **Larger regions.** The `3x3x3` cube, periodic boundaries, other fillings and other flux sectors are outside this note; the sea's degeneracy and the corner-star census both depend\n  on the cluster.\n\n## Remaining live routes\n\n1. Whether the order spread of `T4` grows or saturates on larger clusters. The `0.727031250000` here is a maximum over `32` declared orders, and the true maximum over all `12!` orders\n   is not computed.\n2. Whether any tie-break other than `Pi/deg` and the `N`-superselected one makes `T5`'s charge spread vanish without a superselection rule added by hand; `M_R^N` adds one, and nothing\n   here says whether something else does it.\n\n## Executable claim block\n\n```text\nsetting: supplied cube edge-qubit tensor carrier 4096; +face code 128 realizes even eight-mode Fock space; local Z recordings use ambient blocks\nT1: P_R H P_R=P_R(-sum_{e not recorded}eta_e T_e)P_R; supplied reset state is a function of records\nT2: chosen sea support 1984; charge zeros 1856 and cancellation zeros 256; flat record-block weights 2^-k for k<=3\nT3: all 32 declared MR laws have support 4096; identity TV1283/2880; locally redeclared A(tau=.5) TV.324925160534\nT4: identity/reverse TV1/3; declared maximum.727031250000 and minimum.113194444444; sequential commuting Lueders reproduces sea law\nT5: retain original charge laws, means, degeneracy census 1456 and MR^N alternative with all 256 cancellation zeros lost\nT6: retain all overlap and energy rows; energy formula is Lueders-weighted mean; drops subtract two differently weighted means; actual mask31 counterexample\nT7: Z projective measurement up to labels only under supplied corner-parity nondisturbance; no physical basis-selection theorem\nreset: fixed-record linear CPTP channel; normalized branch nonlinear; ideal reset is the stated Lindblad semigroup limit\nstatus: corrected source for independent review; original 26 checks retained plus 3 domain/energy/reset controls; no author PASS or audit application\n```\n\n## Proof boundary\n\nEvery statement above is proved on **one finite cluster**, the `2x2x2` cube graph, in **one flux sector** (all-minus, the Kawamoto-Smit staggered signs) at **one filling** (the\nhalf-filled sea, `N = 4`). Nothing is claimed for larger clusters, periodic boundaries, infinite lattices, other sectors, other fillings, or any law family other than the one in\n\"Definitions\". The law is **designed**, not derived: the encoding is chosen so that the Majorana relations `R0`-`R4` hold, the face constraints make that consistent, and the parity\ndictionary is one readout map among many, with no uniqueness claimed for either.\n\n**The tick model is stipulated in full and derived from nothing.** All six choices -- the starting state, the declared order, Born odds at formation, replacement by the restricted\nground state, the `Pi/deg` tie-break, and permanence -- are declared here, not taken from any axiom. Reading note (2) is explicit that the axioms supply no formation site, probability\nor rate, and they supply no relaxation clause either; this note supplies none and declares one instead. **Nothing here says what the framework's tick is**, and nothing here forecloses\nany tick. This is an obstruction for **one stipulated tick model**: a different formation rule, a different tie-break, a partial relaxation, or a dissipative generator with the sea as\nits stationary state are all untouched above, and several are named as interfaces. The panel's candidate sentence is a candidate wording and is not called wrong here; what is reported\nis what `M_R`, one way of making it definite, does and does not do.\n\nThe order-dependence figure of `T4` is a maximum over **`32` declared orders**, written out in the runner, and is a **lower bound** on the spread over all `12!` orders, labelled so\neverywhere it appears. The `Pi/deg` tie-break is a further declared choice, and `M_R^N` is reported alongside because it changes the charge conclusion. The `p`-variant of PR\n#7876 is touched only at its `p = 1` boundary. Every line not tagged `[exact]` is a **deterministic double-precision evaluation** of an exactly specified quantity at the stated\nthreshold: MR enumerates 4096 leaves with no sampling; the separate unitary/Lueders recursion omits relative branches at or below 1e-15. Block states come from diagonalisation, so these are numerical comparisons rather than exact rational certificates. There is **no seed anywhere** in this note or its runner and no Monte Carlo section. No absolute unit appears anywhere, no axiom text is amended, extended, reworded or\nreinterpreted, no new framework axiom is adopted; the stated model hypotheses are supplied, no status value is set, and no authoritative status or registry is changed by this source.\n\n## Review record\n\nThe September3 note, both historical/original runner outputs and all original 26 checks remain recoverable through the dated correction history. The current runner retains those 26 identities, strengthens only F5's false zero predicate and adds the explicit energy/reset/domain controls. Own-note and actual current memo bytes are declared and live-guarded inputs; no runtime helper or parent campaign is imported.\n\nThe source remains conditional. Sequential Lueders, charge-restricted reset, partial relaxation and dissipative constructions are distinct alternatives, some executed and some open. No N1 route quota, N2 wall independence or physical no-go follows from their names. Larger volumes, other flux/filling, physical roles and permanent formation remain open. Formal audit is deferred by the owner until a solid TOE; current review and integration belong to the coordinator and original independent reviewer.\n\nThe dated correction and exact original recovery identities are recorded outside active discovery in `.claude/science/relaxation-hierarchy-corrections-20260908/CORRECTION_HISTORY.md`.\n",
+    "final_source_sha256": "906ca8ddfb18c960117242ae7222883a7f076474eb2007e3615e7ee457709aa3",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7899",
+    "claim": "T1",
+    "original": {
+      "pr": 7899,
+      "claim": "T1",
+      "note": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        97,
+        154
+      ],
+      "original_check_ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "preserved_positive_scope": "Finite cage coboundaries, rigid block translation and glued mixing, reach2 axial escape.",
+      "finding_ids": [
+        "F5",
+        "F6"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Keep cage/actual block/glued mixing/reach2 positives on additive lift; source no-motion false positive repaired.",
+    "final_path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 119,
+    "section_end": 138,
+    "section_sha256": "284d2a5c203176b6839ca24f6424368b24278335beaad16be12fca4a15ce3f0d",
+    "final_section_text": "## Theorem 1 -- the glued level: a cage under single ticks, exactly `D_1` under a neighbourhood tick\n\n**Conclusion.** `[exact]` On the `L = 8` torus. **The cage.** The glued dimer admits `0` single-record shifts under either `C_comp` or `C_rig` -- `1` translation class, `0` coboundary inconsistencies, cage width `0` -- so it\nis **frozen outright**. The glued bent trimer under `C_comp` admits `8` shifts over `4` classes with `0` inconsistencies and centre-of-mass spread exactly `(1/3, 1/3, 0)`: three corners of one **fixed** unit square, forever.\nUnder `C_rig` it admits `0`. In every case `D_group = 0` **exactly**. **The block tick.** Over all `512` base sites `x` `6` directions `= 3072` block shifts per group and per reach, the internal pattern is preserved\n**exactly at every tick** -- `0` violations across all four censuses, and no two records ever coincide -- with `E|dCoM|^2 = 1` at reach `1` and `4` at reach `2`. Hence `D_block = D_1` **exactly** at reach `1` and `4 D_1` at\nreach `2`, and the group's internal configuration is a constant of the motion. **The mixed tick.** `D(q) = q D_1` **exactly**: the Markov-additive slope of `trace covariance of the lifted centroid` matches `q` to `0.00e+00` in all ten cells (two groups,\nfive values of `q`). **Reach.** Under a reach-`2` **single** tick the same glue leaves the dimer `2` admissible shifts and `2` coboundary inconsistencies -- a self-loop carrying a nonzero centre-of-mass increment, so the\ncage certificate **fails**; both shifts are **leapfrogs** over the partner, each moving the centre of mass a full unit along the pair axis, giving `E|dx|^2 = 1` and trace-normalized `D = D_1`, or axis diffusion1/2, confined to that one axis. The bent\ntrimer stays caged, at width `2/3`.\n\n**Proof.** The class graphs are breadth-first closures of the admissible shift relation, taken modulo the torus's translations; the potential is built with exact `Fraction` increments `(y - x)/n` from one root per component\nand then every edge is re-checked against it, so the certificate is a proof and not a fit. The corrected block census enumerates every base site and direction, recovers the unique actual translation from the resulting member set, checks its oriented displacement against the intended reach, and only then measures its squared lift increment. It also compares the full internal pattern and injectivity. The original no-motion mutation now fails rather than measuring an unexecuted requested step. The\nmixed-tick statement is an exact argument -- a block increment is a mean-zero unit vector independent of the shape process, the `K1` increment is the exact coboundary, so it telescopes to a bounded term and the cross terms\nvanish -- and the recursion is a cross-check at `1e-12`.\n\n**Reading, not theorem.** A rule with no exceptions holds a group absolutely, because the configuration that would part it carries odds `0` and is never registered; there is no strength parameter to turn down. But on this\nlattice glue is not a vehicle. One step away from a site is one step away from all of that site's neighbours at once, so the very shift that would move a glued group is the shift its condition forbids: the dimer is frozen\nsolid and the trimer rattles in a box a third of a site wide. Let the **neighbourhood** shift instead -- the whole support set at once, which is what \"its own shared condition\" asks for -- and the supplied block process has exactly the single-record trace diffusion coefficient, with its internal pattern untouched. Mix the two and only the block part counts.\n\n",
+    "final_source_sha256": "2684f8d584f93d958cb9ee5f80e232b92f60787c9f13e5dd694e9d1fa2f69fb5",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7899",
+    "claim": "T2",
+    "original": {
+      "pr": 7899,
+      "claim": "T2",
+      "note": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        155,
+        174
+      ],
+      "original_check_ids": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7"
+      ],
+      "preserved_positive_scope": "511-state stationary law,43435 trimer census, lifetimes, exact finite stationary diffusion and mean excursion101.",
+      "finding_ids": [
+        "F5",
+        "F7"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Keep full census/lifetime/mean101 and exact stationary dimer martingale formula; narrow free/infinite-cost and generic finite-recursion domains.",
+    "final_path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 139,
+    "section_end": 152,
+    "section_sha256": "93c7f0b2b1f2350df7870991b42d0eed405b421652526eee247fa4b6dd9bba3c",
+    "final_section_text": "## Theorem 2 -- the breakable level: the cost is the odds, and what the odds buy\n\n**Stationary law and censuses.** For the supplied unbiased BR(g,0,1) with g>=0, the 511 nonzero relative states have weights 1 on 6 adjacent vectors and `u=exp(-g)` on 505 broken vectors. Symmetric attempted proposals and Metropolis acceptance give detailed balance. The original stationarity residual is at most2.8e-17. The intact dimer fraction is `6/(6+505u)`, cross-checked to 7.8e-16. The complete trimer translation-class census is A=2:15, A=1:1500, A=0:41920, total43435; its stationary intact fraction is `15/(15+1500u+41920u\u00b2)`. Translation orbits have512 elements because a stabilizer must divide both 3 and 512.\n\n**First rupture.** An intact dimer has 10 unblocked proposals out of 12, each costing one adjacency, giving rupture probability `(5/6)u` and mean lifetime `(6/5)exp(g)`. The bent trimer's18 proposals split into4 null,2 cage-preserving,8 costing one adjacency and 4 costing two, giving mean lifetime `18/(8u+4u\u00b2)`. Original absorbing solves agree to 1.7e-11. Until rupture, the dimer is fixed and the bent trimer stays in the A2 cage. Long-distance single-step transport requires a break; this is a statement about these shapes and this kernel, not every bound group.\n\n**Exact stationary diffusion.** At every relative state, exchanging the two particle labels pairs accepted moves with opposite centroid increments and equal probabilities. Thus the conditional centroid drift is zero; successive increments are martingale differences. At stationary weights, the accepted probability is `(5u+505u)/(6+505u)=510u/(6+505u)`:6 intact states contribute6 times 10/12 times u, and all 505 broken states accept every nearest-neighbor proposal. Each accepted squared centroid increment is 1/4. Consequently\n\n`6D = 127.5 exp(-g)/(6+505 exp(-g))`.\n\nThis gives the variance slope at every horizon under the stationary relative law. The actual per-state drift and stationary one-step moment are checked separately from the generic finite `ma_slope` recursion. The original six numerical rows at g=0,1,2,4,8,16 remain `6D=0.2495,0.2446,0.2321,0.1531,0.006933,2.391e-06`, from 0.998043 down to 9.6e-06 of the unexcluded reference D1/4. The inverse-lifetime proportionality is a large-g asymptotic, not an exact identity for all g.\n\n**Rebinding and limits.** For every finite g the relative chain is finite and irreducible, so rebinding occurs with probability 1. Broken proposals have nonpositive dB and are accepted, making their kernel g-independent. The original mean excursion after a break is exactly 101=505/5 ticks by stationary entrance/exit flux; the solves give 101.000000000 and maximum 204.706 over broken starts. This is a mean, not a deterministic return time. At g=0 hard-core exclusion remains: `D/D_free=510/511`; intact fractions are1.17% for the dimer and.035% for the trimer. As g tends to infinity, an initially intact dimer freezes and the stationary weights concentrate on intact states; the full 511-state kernel still contains moving broken states. Starting at(3,0,0), every reach-one proposal moves even at the exact infinite-cost limit. The generic finite moment recursion alone proves no limit for arbitrary kernels or starts.\n\n",
+    "final_source_sha256": "2684f8d584f93d958cb9ee5f80e232b92f60787c9f13e5dd694e9d1fa2f69fb5",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7899",
+    "claim": "T3",
+    "original": {
+      "pr": 7899,
+      "claim": "T3",
+      "note": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        176,
+        195
+      ],
+      "original_check_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "preserved_positive_scope": "Original uniform-field mean lifetimes/crossover arithmetic, ring first-hit rows/cyclic order and reach rate.",
+      "finding_ids": [
+        "F8",
+        "F9"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Keep all original numerical/finite rows as mean comparison and first-hit stopping protocol; positive rupture/compact escape witnesses exclude survival/permanent-merger claims.",
+    "final_path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 153,
+    "section_end": 168,
+    "section_sha256": "400750efe18441c2efc834f9a8519fd2ece7d91a3b46a7932863100efc364db8",
+    "final_section_text": "## Theorem 3 -- what breaks a group, and what does not\n\n**Uniform tilt and finite rupture.** For g>=0 and real finite h, BR(g,h,1) gives intact-dimer mean lifetime `2exp(g)(5+exp(h))/(9+exp(h))` when aligned along x and `exp(g)(5+exp(h))/(4+exp(h))` when transverse. The original 30(g,h) cells agree to 2.3e-16, and the ratios stay between 5/6 and 5/3 of the zero-field lifetime (sampled.8336..1.6644). The aligned lifetime increases with h. Rupture is nevertheless positive at every finite g,h. A nearest-neighbor single-record tick never translates the intact dimer before rupture. A uniform tilt is not a differential force, and no differential-field law is supplied here.\n\n**Two-mean comparison.** In the separately declared tilted KMBR mixture, start with an intact transverse dimer. For `0<q<1`, h>0, put `x=exp(h)`. The rupture probability per tick is `lambda=(1-q)exp(-g)(4+x)/(5+x)`; the intact block drift is `v=q(x-1)/(5+x)`. Equating `1/lambda` with `1/v` gives\n\n`exp(h*)=[4(1-q)+q exp(g)]/[q exp(g)-(1-q)]`, when `q exp(g)>1-q`.\n\nThe original bisection error4.4e-16 and q=.5 values1.363508 at g1 down to.000001 at g16 are retained. The equality compares **two means**, not first-passage probability or certain survival. For pure single ticks there is no intact crossing; no positive tearing threshold is defined by that absence.\n\nAt q=.5,g1,h2>h*, the actual rupture probability is.1690927686. Let `a=qx/(5+x)`, `b=q/(5+x)`. The probability p to first cross+1 before rupture solves `p=a+(1-a-b-lambda)p+b p\u00b2`; the bounded root is.617757322145836, strictly between 0 and 1. Eventual rupture has probability 1 when lambda>0. This finite conditional witness refutes the original certain-survival wording without inventing a physical threshold.\n\n**Ring first-hit competition.** On the separate 16-site ring, all 11648 admissible single shifts preserve cyclic label order, so no passing occurs. From the declared start(0,1,4,5), the original 1820-state calculation stops at first A=0 versus first A=3. Its `P(A=0 first)` rows at g=0,1,2,4,8,16 are `.919,.778,.540,.0977,.00161,5.38e-7` (the original rounded table also writes .098,.0016,5.4e-7). These are first-hit probabilities. The sampled change of which event is more likely is not a computed permanent-merger threshold. Under the original g4 kernel, the compact A=3 state(0,1,2,3) leaves with probability `exp(-4)/4=.00457890972218`. Later breakup and rebinding remain possible; three-dimensional collisions are uncomputed.\n\n**Reach.** The supplied reach-two dimer has the same rupture probability `(5/6)exp(-g)` as reach one, with the original six comparisons at numerical zero: ten of twelve proposals still lose one adjacency. This changes the specified glued cage without changing that particular break rate. It is not a universal statement about reach or arbitrary shapes.\n\n",
+    "final_source_sha256": "2684f8d584f93d958cb9ee5f80e232b92f60787c9f13e5dd694e9d1fa2f69fb5",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7899",
+    "claim": "T4",
+    "original": {
+      "pr": 7899,
+      "claim": "T4",
+      "note": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        197,
+        216
+      ],
+      "original_check_ids": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "preserved_positive_scope": "14400 joint states, zero singles,79872 paired changes, N2 union and half-filled charge balance.",
+      "finding_ids": [
+        "F11"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Keep full14400/79872 law; exact parent permutation+inversion and only nonzero hopping comparison, face-cycle alternatives retained.",
+    "final_path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 169,
+    "section_end": 180,
+    "section_sha256": "61e91a4e93394ebd26061f1a08e734a54877fdbf5a18fd39c6b97c090f936941",
+    "final_section_text": "## Theorem 4 -- the finite Gauss relation and oriented hopping support\n\n**Finite relation.** The incoming-positive Gauss relation admits 14400 of 2^24 joint record patterns over 2240 distinct fermion words, all with N=4. Over14400 times 12 tests, neither a single fermion-bit flip nor a single link-bit flip preserves the relation:0 of 172800 in each case. A same-edge paired flip preserves it in 79872 cases, with per-pattern degree census 768\u00d74,6144\u00d75,6912\u00d76,576\u00d78. Every accepted pair exchanges endpoint occupations and reverses link flux, with 0 violations. These are statements about relation membership, not nonzero physical transition rates.\n\n**Local proof and complete comparison.** With source i and target j, the local incidence is(-1,+1), opposite the compared parent's(+1,-1). A paired flip is admissible precisely when endpoint occupations differ and `1-2l_e=1-2n_i`. This endpoint condition is checked pointwise against every one of the 172800 actual memberships.\n\nThe parent's actual vertex-major edge-bit order is different too. For local edge order e=0..11, the parent positions are `[0,3,5,7,1,4,8,10,2,6,9,11]`. The full map is `y_parent=permute(y)` and `l_parent=permute(l XOR4095)`. All 14400 mapped states satisfy the parent incidence relation; all 172800 same-edge memberships match the support of its **hopping part with nonzero t**. Equality of counts alone would not establish this. No parent numerical campaign is imported.\n\nThe full declared parent Hamiltonian includes an electric diagonal and a separately supplied ring-exchange coefficient lambda. A local face witness has y=3425 and l600\u2192360 by flipping link edges4,5,8,9, with no fermion-bit change; both patterns satisfy Gauss. Thus same-edge pairs do not exhaust full-Hamiltonian or arbitrary Gauss-preserving support. The supported-only relation cannot decide which of its allowed changes has positive probability or rate.\n\nThe original contrast remains: the unconstrained4096-word fermion carrier admits 49152 single flips; the **ambient N=2 union**, rather than one fixed corner-parity pattern or the face code, admits 4608 flips over 896 words with census 384\u00d74,512\u00d76. The Gauss relation admits 0 single flips. Every admissible Gauss word has four rho=+1/2 and four rho=-1/2 corners and total charge0; it has no globally isolated one-charge state. These formal finite readouts do not derive a permanent local formation instrument.\n\n",
+    "final_source_sha256": "2684f8d584f93d958cb9ee5f80e232b92f60787c9f13e5dd694e9d1fa2f69fb5",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7899",
+    "claim": "T5",
+    "original": {
+      "pr": 7899,
+      "claim": "T5",
+      "note": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        218,
+        228
+      ],
+      "original_check_ids": [
+        "E1"
+      ],
+      "preserved_positive_scope": "Assemble only domain- and kernel-correct entries with explicit evidence.",
+      "finding_ids": [
+        "F5",
+        "F10",
+        "F11"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Separate all row domains and defined kernels; actual breakable mixture differs from glued q, cube transport uncomputed.",
+    "final_path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 181,
+    "section_end": 196,
+    "section_sha256": "107a1e8631ea0a86eb6e02119adbd50ba797b924268424d1c4778f85b9c71fdb",
+    "final_section_text": "## Theorem 5 -- the hierarchy\n\nThe rows must keep their geometry, kernel and time unit separate.\n\n| finite domain and kernel | retained conclusion | boundary |\n|---|---|---|\n| L8 glued dimer/bent trimer, reach-one K1 | dimer fixed; trimer Fraction cage width 1/3; lifted D=0 | only the declared shapes and support components |\n| Same groups, uniform KB(r) | actual 3072 translations per group/reach; D=r\u00b2D1; internal pattern fixed | supplied whole-group tick; no physical local formation law |\n| Same glued groups, KM(q)=qKB+(1-q)K1 | D=qD1 by bounded shape coboundary plus independent block increments | not a finite-cost BR formula |\n| L8 dimer/bent trimer, BR(g,0,1) | bounded intact centroid; mean rupture times(6/5)e^g and 18/(8e^-g+4e^-2g); finite censuses and rebinding means above | BR attempted proposals and nulls define the clock |\n| Stationary unbiased dimer, KMBR=qKB+(1-q)BR | `6D=q+(1-q)127.5e^-g/(6+505e^-g)` | extra explicitly declared mixture, not glued KM |\n| g0 BR dimer | exclusion-corrected D/D_free=510/511; intact fractions1.17% and.035% | no independent-walker identity at finite volume |\n| Cube Gauss relation | no individual fermion/link flip;79872 oriented hopping pairs; face alternatives | no cube block transport, lifetime or formation process computed |\n\nFor the unbiased KMBR extension the relative stationary weights are unchanged, each component has zero conditional centroid drift, and the one-step trace moments add with their mixture weights. Hence the displayed exact formula. At q=.5,g0 the actual two-step recursion is.624755381604697 for6D, not.5. The original E1 check retains its computed glued/free comparisons and now uses actual BR certificates instead of hardcoded True cells; E2 checks this different mixture explicitly. No rate is inferred from an unweighted support relation.\n\n",
+    "final_source_sha256": "2684f8d584f93d958cb9ee5f80e232b92f60787c9f13e5dd694e9d1fa2f69fb5",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  },
+  {
+    "pr": "7899",
+    "claim": "scope/corollary/interfaces",
+    "original": {
+      "pr": 7899,
+      "claim": "scope/corollary/interfaces",
+      "note": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "line_span": [
+        230,
+        322
+      ],
+      "original_check_ids": [],
+      "preserved_positive_scope": "Distinct supplied finite support and stochastic laws; no framework formation or universal no-go.",
+      "finding_ids": [
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "disposition": "retain finite conditional result after indicated repairs; no physical or audit grade"
+    },
+    "current_disposition": "Static support does not supply stochastic weights or physical permanent-Record formation; finite models/limits and actual alternatives preserved with honest unresolved interfaces.",
+    "final_path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+    "heading_line": 197,
+    "section_end": 263,
+    "section_sha256": "6250bbbf09cc6a78fc2eb1721dc30c7c2c259a65800bcff78d83f7f0ca0d9a34",
+    "final_section_text": "## Corollary -- what this says about the owner's two points\n\n1. A supplied support condition and a finite Metropolis cost are different models. Support alone does not choose a transition law; no value of g, formation probability or clock follows from the axioms.\n2. For the specified dimer/bent trimer, K1 cages and KB translates; reach-two dimer leapfrogs are a further positive alternative. BR transport requires rupture for these intact shapes. These examples do not classify all group motion or all possible ticks.\n3. Uniform tilt leaves positive rupture. The h* formula compares means; ring rows compare first-hit events. Neither proves certain survival, permanent merging, or a differential-force mechanism.\n4. The cube relation constrains individual flips and oriented hopping pairs, but also permits link-only face cycles. Its support does not supply amplitudes, weights or an implementation.\n5. Static admissibility may be considered without dynamics, but diffusion, lifetime and hitting probabilities then have no meaning until a new transition/formation law is supplied. Permanent physical Records require a separate bridge, not a change of wording.\n\n## Reading, not theorem -- the whole thing in plain words\n\nA condition can exclude a configuration, while a finite cost can only suppress it in the specified Metropolis model. What a group does also depends on how moves are proposed and counted. The finite examples separate those choices and retain the useful cage and transport calculations. They do not show that permanent fine-site Records move, merge or implement these supplied stochastic laws.\n\n## Interfaces named for other lanes, not settled here\n\n- **Permanent formation.** Only static relation membership can survive removal of the tick. A compatible local law, joint probabilities, role geometry, clock and readout are unresolved. No diffusion, lifetime or first-hit row is transferred by relabeling it as formation.\n- **Amplitude ticks.** Every chain here is classical. PR #7889's `M2` kernel -- the pre-record amplitude running for a time `tau`, the odds being its weights conditioned on the admissible set -- is a different object, and\n  the historical parent discusses a separate supplied amplitude protocol; its wider science is not accepted here. What the hierarchy looks like under an amplitude tick is untouched here.\n- **Larger groups.** The exact censuses stop at `n <= 3` records in 3D, four on the ring. At `n >= 4` a group can carry more than `n-1` adjacencies and the \"per broken adjacency\" reading of `B` needs restating; the\n  three-dimensional collision of two groups is not computed at all.\n- **Which zeros and which suppressions the actual law carries.** The three levels are stipulated. Reading note (3) makes support a property of the supplied odds, so \"does the framework's law have zeros of this kind, or\n  suppressions of that kind, or both at different scales?\" is a question about the law and is asked, not answered, here.\n- **The fine-lattice marker sites.** Only edge sites carry records in the cube model. The coarse marker sites of the **superlattice role pattern** construction would require a separate supplied placement; this unit neither imports that construction nor proves its physical realization.\n\n## Remaining live routes\n\n1. Whether the `D_group = 0` cage of `T1` and the `D_intact = 0` of `T2` survive to groups large enough to carry a shape cycle whose centre-of-mass increments fail to close.\n2. Whether the finite ring first-hit competition has any three-dimensional analogue, and what later breakup/rebinding does. No permanent-merger threshold was computed.\n\n## Executable claim block\n\n```text\nsetting: L8 torus for n<=3; SEPARATE ringR16/four records; SEPARATE cube relation; all kernels/roles supplied\nlift: accumulate accepted oriented r*d/n or block r*d; center by mean; D=lim trace covariance/(6 ticks)\nT1: retain dimer/trimer exact cages;3072 actual translations per group/reach; gluedKM givesqD1; reach2 axial dimer has traceD1 and axisdiffusion1/2\nT2: finite stationaryBR for g>=0; exact 6D=127.5e^-g/(6+505e^-g); original fractions/lifetimes/101 mean broken excursion retained; g0 retains exclusion; infinitecost does not remove broken states\nT3: original tilt/lifetime/bisection/first-hit rows retained; means are not survival probabilities; compact ring states escape at finiteg\nT4:14400 Gauss words; zero single flips;79872 same-edge hopping pairs; actual edge permutation plus link inversion; full ring exchange not exhausted; ambientN2union896 distinct from fixed parity\nT5: row domains separated; new declaredqKB+(1-q)BR has 6D=q+(1-q)6D_BR; Gauss block dynamics uncomputed\nauthority: support is not transition weights; no permanent-record formation bridge or physical no-go; original 22 IDs retained plus 6 checks; no authorPASS/audit\n```\n\n## Proof boundary\n\nEvery statement above is proved on **declared finite objects**: groups of `n <= 3` records on the `L = 8` torus and their translation-class closures, four records on a `16`-site ring, and the `2x2x2` cube with its `2^24`\njoint record patterns. Nothing is claimed for larger groups, for the thermodynamic limit, for other lattices, or for any level or tick other than the ones in \"The stipulated levels and tick models\".\n\n**The levels and kernels, including the separately defined KMBR comparison, are supplied in full.** Reading note (3) makes support a property of the **supplied odds**, so stipulating a condition here is stipulating a law, not amending\nan axiom; reading note (2) is explicit that the axioms supply no formation site, probability or rate, and this note supplies none either. **Records are permanent**; every sentence in which a record *shifts* is inside a\nstipulated tick model declared as such, and the axiom cost of that stipulation is the one PR #7889 names and hands to its owner. The form-together reading under permanence is carried as an interface, not as a result.\n\n**Nothing here says what the framework's tick is, and nothing forecloses any tick.** `T1`'s `D_group = 0` is a statement about **one-site** shifts under two declared conditions; `T3`'s mean-time comparisons and first-hit probabilities are statements\nabout one declared cost and one declared tilt; `T4` is a statement about one declared support condition on one finite object. Every frozen count is a property of a declared level-and-tick pair, and a different pair is a\ndifferent object. No no-go is asserted and none is implied.\n\nThe `n <= 3` restriction is **load-bearing** for `B = (n-1) - A`: at `n >= 4` a group can carry more than `n-1` adjacencies and the per-broken-adjacency reading needs restating. The K1 odds and chosen tick unit affect diffusion coefficients, although geometric cage bounds hold for any weights on the checked graph; the blocked-target null-tick convention and the Metropolis acceptance are conventions and are declared as such. Convention `K1` for the free-pair reference is declared explicitly against\nthe other convention in use, and both values are printed. The `[exact]` lines carry no floating point in the statement -- the coboundary certificates, the block-tick censuses, the class censuses, the closed forms, the\nno-passing census and the whole of `T4`. The remaining lines are **deterministic double-precision evaluations** of exactly specified quantities at the thresholds printed in their tags, with the linear solves assembled so\nthat small escape weights are summed rather than recovered by cancellation; the one place where cancellation is unavoidable is reported to two significant figures. **There is no sampling, no seed and no random number\nanywhere in the runner**; exact certificates, finite counterexamples and numerical cross-checks have distinct roles. No absolute unit appears anywhere, no axiom text is amended, extended, reworded or reinterpreted, no new framework axiom is adopted; the stated model hypotheses are supplied, no status value is set, and no authoritative status or registry is changed by this source.\n\n## Review record\n\nAll six original source/cache bodies and the first genuine26/0 and 22/0 executions remain recoverable in the dated correction history and external review packet. Current source preserves 48 old check identities and every original numeric expression, with the negative-drop equality and actual-motion witness repaired. Both runners declare their own final note and the current memo; hierarchy also pins the exact two parent definition sources it compares. No runtime helper or whole parent campaign is enrolled.\n\nAlternatives actually represented include sequential Lueders, charge-restricted reset, block motion, leapfrogs, finite-cost rupture/rebinding, and Gauss face cycles; other formation/dissipative routes remain open. No five-route elimination, independent-wall count or completed N1\u2013N8 physical no-go is asserted. Source acceptance belongs to the original independent reviewer; formal audit is deferred by the owner until a solid TOE, and current review does not apply status.\n\nThe dated correction and exact original recovery identities are recorded outside active discovery in `.claude/science/relaxation-hierarchy-corrections-20260908/CORRECTION_HISTORY.md`.\n",
+    "final_source_sha256": "2684f8d584f93d958cb9ee5f80e232b92f60787c9f13e5dd694e9d1fa2f69fb5",
+    "status": "independently confirmed at the final integrated source; bounded conditional source acceptance only",
+    "independent_disposition": "Retained only at the written finite/conditional scope; original claim and current narrowed section completely reconciled.",
+    "author_status_preserved": "conditional source for independent confirmation; no physical or applied audit grade"
+  }
+]

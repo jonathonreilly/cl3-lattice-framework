@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "case": "first_failed",
+      "source_sha256": "1258e254eb8f6036fb1ed21edf51b48533d258e62b4258ac952003e736dd76f8",
+      "stdout": "",
+      "error": "AttributeError: 'numpy.ndarray' object has no attribute 'D'",
+      "PASS": 0,
+      "FAIL": 0,
+      "S2_after_actual_quad_assignment": "ndarray"
+    },
+    {
+      "case": "corrected",
+      "source_sha256": "da6fe79c99dec1fe4501f941c41366b5c55c99c0d1286fd5195f156ef309e382",
+      "stdout": "PASS R1 [exact] actual edge-star product is identity: only even-N Fock sectors have this carrier interpretation\n",
+      "error": null,
+      "PASS": 1,
+      "FAIL": 0,
+      "S2_after_actual_quad_assignment": "ndarray"
+    },
+    {
+      "case": "wrong_captured_dimension",
+      "source_sha256": "32e8d1ec81916026a5d17146f6087e04eeb3a728439363d4d431f7021f3c14e9",
+      "stdout": "FAIL R1 [exact] actual edge-star product is identity: only even-N Fock sectors have this carrier interpretation\n",
+      "error": null,
+      "PASS": 0,
+      "FAIL": 1,
+      "S2_after_actual_quad_assignment": "ndarray"
+    }
+  ],
+  "final_vs_first_only_declared_two_line_fix": true,
+  "all_function_class_ASTs_exact": true,
+  "unaffected_control_reuse": {
+    "path": "final-controls/AFFECTED_CONTROLS.json",
+    "sha256": "8a6992bee57d2f43389da9efa66378010159e87fcb24029a322cbd2185e2e857",
+    "justification": "The four load-bearing mutated predicates and all function/class bodies are byte-exact; only the new captured dimension and terminal R1 read differ. Both original late collision and false captured dimension are executed here."
+  }
+}

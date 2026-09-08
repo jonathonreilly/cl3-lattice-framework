@@ -1,0 +1,206 @@
+{
+  "sources": [
+    {
+      "claim_id": "a_relaxation_tick_is_well_posed_and_loses_the_seas_record_statistics_bounded_theorem_note_2026-09-03",
+      "note_path": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "runner_path": "scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py",
+      "claim_type": "bounded_theorem",
+      "helper_runner_paths": [],
+      "inputs": [
+        "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "identity": {
+        "runner_sha256": "4b80b832ce93aaf9df90bada20258d4055e201972b772471a7a268adc27cea3a",
+        "input_fingerprint_sha256": "305f951e7e7716a7cc2eff678067621666fa06696c27dd4e771789c4860a629d"
+      },
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "cache_status": "fresh",
+      "both_helper_apis": [],
+      "parsed_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    },
+    {
+      "claim_id": "a_hierarchy_of_neighbourhood_conditions_glued_breakable_and_free_record_groups_under_shifting_ticks_bounded_theorem_note_2026-09-03",
+      "note_path": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "runner_path": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+      "claim_type": "bounded_theorem",
+      "helper_runner_paths": [],
+      "inputs": [
+        "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py"
+      ],
+      "identity": {
+        "runner_sha256": "7ab9ea5d57fc03ce5a8d7af09b1685a50c04a2fd9347d76550e541f5ba09d5d7",
+        "input_fingerprint_sha256": "53be1a9440ba386259f25337033fc24bc3ed8888b10a278336e91c65fbd6f815"
+      },
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+      ],
+      "cache_status": "fresh",
+      "both_helper_apis": [],
+      "parsed_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    }
+  ],
+  "adverse_cases": [
+    {
+      "pr": "7895",
+      "input": "docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "kind": "actual_input_drift",
+      "cache_status": "input_mismatch",
+      "live": {
+        "runner": "scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py",
+        "status": "nonzero_exit",
+        "exit_code": 1,
+        "stdout": "SOURCE_INPUTS: changed docs/A_RELAXATION_TICK_IS_WELL_POSED_AND_LOSES_THE_SEAS_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-03.md\n",
+        "stderr": "",
+        "elapsed_sec": 0.04519391059875488,
+        "timeout_sec": 5,
+        "live_log": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave25-relaxation-confirmation/input-adverse/7895/live/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.txt"
+      }
+    },
+    {
+      "pr": "7895",
+      "input": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "kind": "actual_input_drift",
+      "cache_status": "input_mismatch",
+      "live": {
+        "runner": "scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py",
+        "status": "nonzero_exit",
+        "exit_code": 1,
+        "stdout": "SOURCE_INPUTS: changed docs/MINIMAL_AXIOMS_2026-06-29.md\n",
+        "stderr": "",
+        "elapsed_sec": 0.049028873443603516,
+        "timeout_sec": 5,
+        "live_log": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave25-relaxation-confirmation/input-adverse/7895/live/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.txt"
+      }
+    },
+    {
+      "pr": "7895",
+      "kind": "primary_drift",
+      "cache_status": "sha_mismatch"
+    },
+    {
+      "pr": "7895",
+      "kind": "primary_missing",
+      "issue": "runner_source_missing:scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py"
+    },
+    {
+      "pr": "7895",
+      "kind": "all_declarations_omitted",
+      "live": {
+        "runner": "scripts/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.py",
+        "status": "nonzero_exit",
+        "exit_code": 1,
+        "stdout": "SOURCE_INPUTS: declaration/pin mismatch\n",
+        "stderr": "",
+        "elapsed_sec": 0.045037031173706055,
+        "timeout_sec": 5,
+        "live_log": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave25-relaxation-confirmation/input-adverse/7895/live/relaxation_tick_well_posed_loses_sea_record_statistics_check_2026_09_03.txt"
+      }
+    },
+    {
+      "pr": "7899",
+      "input": "docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "kind": "actual_input_drift",
+      "cache_status": "input_mismatch",
+      "live": {
+        "runner": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "status": "nonzero_exit",
+        "exit_code": 1,
+        "stdout": "SOURCE_INPUTS: changed docs/A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md\n",
+        "stderr": "",
+        "elapsed_sec": 0.03777503967285156,
+        "timeout_sec": 5,
+        "live_log": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave25-relaxation-confirmation/input-adverse/7899/live/hierarchy_of_neighbourhood_conditions_check_2026_09_03.txt"
+      }
+    },
+    {
+      "pr": "7899",
+      "input": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "kind": "actual_input_drift",
+      "cache_status": "input_mismatch",
+      "live": {
+        "runner": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "status": "nonzero_exit",
+        "exit_code": 1,
+        "stdout": "SOURCE_INPUTS: changed docs/MINIMAL_AXIOMS_2026-06-29.md\n",
+        "stderr": "",
+        "elapsed_sec": 0.04455399513244629,
+        "timeout_sec": 5,
+        "live_log": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave25-relaxation-confirmation/input-adverse/7899/live/hierarchy_of_neighbourhood_conditions_check_2026_09_03.txt"
+      }
+    },
+    {
+      "pr": "7899",
+      "input": "docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "kind": "actual_input_drift",
+      "cache_status": "input_mismatch",
+      "live": {
+        "runner": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "status": "nonzero_exit",
+        "exit_code": 1,
+        "stdout": "SOURCE_INPUTS: changed docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md\n",
+        "stderr": "",
+        "elapsed_sec": 0.04847288131713867,
+        "timeout_sec": 5,
+        "live_log": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave25-relaxation-confirmation/input-adverse/7899/live/hierarchy_of_neighbourhood_conditions_check_2026_09_03.txt"
+      }
+    },
+    {
+      "pr": "7899",
+      "input": "scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py",
+      "kind": "actual_input_drift",
+      "cache_status": "input_mismatch",
+      "live": {
+        "runner": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "status": "nonzero_exit",
+        "exit_code": 1,
+        "stdout": "SOURCE_INPUTS: changed scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py\n",
+        "stderr": "",
+        "elapsed_sec": 0.04180121421813965,
+        "timeout_sec": 5,
+        "live_log": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave25-relaxation-confirmation/input-adverse/7899/live/hierarchy_of_neighbourhood_conditions_check_2026_09_03.txt"
+      }
+    },
+    {
+      "pr": "7899",
+      "kind": "primary_drift",
+      "cache_status": "sha_mismatch"
+    },
+    {
+      "pr": "7899",
+      "kind": "primary_missing",
+      "issue": "runner_source_missing:scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py"
+    },
+    {
+      "pr": "7899",
+      "kind": "all_declarations_omitted",
+      "live": {
+        "runner": "scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+        "status": "nonzero_exit",
+        "exit_code": 1,
+        "stdout": "SOURCE_INPUTS: declaration/pin mismatch\n",
+        "stderr": "",
+        "elapsed_sec": 0.0471951961517334,
+        "timeout_sec": 5,
+        "live_log": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave25-relaxation-confirmation/input-adverse/7899/live/hierarchy_of_neighbourhood_conditions_check_2026_09_03.txt"
+      }
+    }
+  ],
+  "twelve_actual_contexts_match": true,
+  "parent_definition_scope": "pointwise incidence, placement, spin-half hopping and existence of ring alternative only; no imported numerical campaign",
+  "runtime_helpers": 0,
+  "actual_extra_reads": "six declared hash-guard edges only",
+  "no_scientific_main_executed": true
+}

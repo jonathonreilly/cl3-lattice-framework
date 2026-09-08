@@ -1,0 +1,155 @@
+{
+  "utc": "2026-09-08T07:53:16.230271+00:00",
+  "base": "162584a3e9e009877147c42c3717c214453bc006",
+  "sources_inputs": [
+    {
+      "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "90d54fc40515a39a318f23d21d7c2fcaa54e0d92dc4872e573a9a63705b28af1",
+      "mode": "100644",
+      "bytes": 20011
+    },
+    {
+      "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "c750f03f11cdb996fef8fd15bfab6a88a241ab0ab0e55a538272ebaa745d2b0e",
+      "mode": "100644",
+      "bytes": 22240
+    },
+    {
+      "path": "scripts/half_filling_kinetic_energy_selects_the_staggered_flux_sector_check_2026_09_02.py",
+      "sha256": "5c1f6ced136e15223a5feae933f24471dbb7a89a9baecaea945972991f080180",
+      "mode": "100644",
+      "bytes": 35354
+    },
+    {
+      "path": "scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+      "sha256": "da6fe79c99dec1fe4501f941c41366b5c55c99c0d1286fd5195f156ef309e382",
+      "mode": "100644",
+      "bytes": 38053
+    },
+    {
+      "path": ".claude/science/review-fixes/flux-selection-7874-7878-20260908/REVIEW_CORRECTION.md",
+      "sha256": "a13ae8b0fd32486451b0faa22fe694c284edd93d5e297474d8b35c00abcad3fd",
+      "mode": "100644",
+      "bytes": 87160
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "mode": "100644",
+      "bytes": 11333
+    },
+    {
+      "path": "docs/COMPOSITION_DISCRIMINATOR_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "fd39a661c586a52610b6bce3907fd857c7ab94e6fdc0c9b7cc2e14dc179763a9",
+      "mode": "100644",
+      "bytes": 21036
+    }
+  ],
+  "rows": [
+    {
+      "note": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "actual_id": "half_filling_kinetic_energy_selects_the_staggered_flux_sector_bounded_theorem_note_2026-09-02",
+      "frontmatter_id": "half_filling_kinetic_energy_selects_the_staggered_flux_sector_bounded_theorem_note_2026-09-02",
+      "primary": "scripts/half_filling_kinetic_energy_selects_the_staggered_flux_sector_check_2026_09_02.py",
+      "graph_helpers": [],
+      "packet_helpers": [],
+      "inputs": [
+        "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/COMPOSITION_DISCRIMINATOR_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-02.md"
+      ],
+      "fingerprint": "80c2b772b846399e17e236f426a94956866d78493e96138adac783847f849366",
+      "readiness": null,
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "claim_type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "imports": [
+        "from __future__ import annotations",
+        "import itertools",
+        "import math",
+        "import hashlib",
+        "from pathlib import Path",
+        "import sys",
+        "from collections import deque",
+        "import numpy as np",
+        "import sympy as sp"
+      ],
+      "declared_cap": 120,
+      "execution_cap": 120
+    },
+    {
+      "note": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "actual_id": "record_conserving_interaction_keeps_the_staggered_sector_at_half_filling_bounded_theorem_note_2026-09-03",
+      "frontmatter_id": "record_conserving_interaction_keeps_the_staggered_sector_at_half_filling_bounded_theorem_note_2026-09-03",
+      "primary": "scripts/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.py",
+      "graph_helpers": [],
+      "packet_helpers": [],
+      "inputs": [
+        "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/COMPOSITION_DISCRIMINATOR_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-02.md"
+      ],
+      "fingerprint": "596080d5f798e73a9b648033801a021073b690e196b22a64a8985eb3d951b5ce",
+      "readiness": null,
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "claim_type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "imports": [
+        "from __future__ import annotations",
+        "import itertools",
+        "import hashlib",
+        "from pathlib import Path",
+        "import sys",
+        "from collections import deque",
+        "from fractions import Fraction",
+        "import mpmath as mp",
+        "import numpy as np",
+        "import scipy.sparse as sparse",
+        "import scipy.sparse.linalg as sparse_linalg",
+        "import sympy as sp"
+      ],
+      "declared_cap": 180,
+      "execution_cap": 150
+    }
+  ],
+  "historical_preservation": [
+    {
+      "path": "docs/HALF_FILLING_KINETIC_ENERGY_SELECTS_THE_STAGGERED_FLUX_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "9bf684bc9e7dd0af1777d0787a9d0d96ffac169dea8209dd1c3c5d5ed4ac32cc",
+      "verbatim": true
+    },
+    {
+      "path": "docs/RECORD_CONSERVING_INTERACTION_KEEPS_THE_STAGGERED_SECTOR_AT_HALF_FILLING_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "e92cdc267608de4e5f89b3e84f87c86d8ff9a9cf74a2d1a6e79f6bdc8d95a9d9",
+      "verbatim": true
+    },
+    {
+      "path": "logs/runner-cache/half_filling_kinetic_energy_selects_the_staggered_flux_sector_check_2026_09_02.txt",
+      "sha256": "2074ebd65426a38e99a66eed7a4cc39b6541e58194b6a22267e7ab786974794d",
+      "verbatim": true
+    },
+    {
+      "path": "logs/runner-cache/record_conserving_interaction_keeps_the_staggered_sector_check_2026_09_03.txt",
+      "sha256": "d58e6e0e8dc57f0e3a8e4dbeb48e985aeb1187f72532fdf80fa316432ef5146a",
+      "verbatim": true
+    }
+  ],
+  "resource": {
+    "rss_cap_KiB": 2097152,
+    "stdout_bytes_cap": 2097152,
+    "BLAS_threads": 1,
+    "cap_sec": [
+      120,
+      150
+    ],
+    "inspection": "Actual largest1728\u00b2 dense real eigenproblem;924 sparse/dense,70 symbolic/mpmath; slice-based quadratures up to1201\u00b2 not full2400\u00b3. Added2x68 rational operations and496x496 wedge products modest; original grids/seeds/couplings unchanged."
+  }
+}

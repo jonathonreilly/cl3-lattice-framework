@@ -1,0 +1,1 @@
+Initial bounded-control launcher failed before child execution: subprocess.SubprocessError in preexec_fn while setting CPU/data limits on macOS. No scientific block ran. Replaced unsupported data-limit setup with actual child RSS polling and a wall/CPU watchdog; preserved the failed launcher.

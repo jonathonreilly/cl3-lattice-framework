@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-08T08:38:59.100394+00:00 after wave24 against main `4276fe9ee228848ee1d3d53d0824acdcd217b2ce`. Prior dispositions remain at planning commit `be5b7bbd42133f7ba715c51e40015148fee518d2`. Fixed original 254 membership unchanged.
+Updated 2026-09-08T08:52:54.781581+00:00 after wave25 against main `ebe2142cbace4d05def434c0b9cd1969e34443b9`. Prior dispositions remain at planning commit `ffb3024891f800a054c4fec8cff2f214654b8bcd`. Fixed original 254 membership unchanged.
 
-**62 original scientific scopes newly landed: 33 direct science closures and 29 earlier consolidated constituents. One meta synthesis and one process PR landed separately.** Of 110 other closures, 77 scientific scopes remain pending at 7 open successors. Consolidation preserves source and transfers unresolved obligations; it is not scientific acceptance.
+**66 original scientific scopes newly landed: 37 direct science closures and 29 earlier consolidated constituents. One meta synthesis and one process PR landed separately.** Of 110 other closures, 77 scientific scopes remain pending at 7 open successors. Consolidation preserves source and transfers unresolved obligations; it is not scientific acceptance.
 
 | Original 110 other closures | PRs |
 | --- | ---: |
@@ -13,7 +13,7 @@ Updated 2026-09-08T08:38:59.100394+00:00 after wave24 against main `4276fe9ee228
 | Unexecuted plan preserved |1 |
 | Total |110 |
 
-There are 145 closed and 109 open originals, including three reservations; zero original drafts. Seven arrivals landed before cutoff remain excluded. No closure requires reopening on the verified source/obligation evidence. These are source-scope counts, not breakthroughs or audit grades.
+There are 149 closed and 105 open originals, including three reservations; zero original drafts. Seven arrivals landed before cutoff remain excluded. No closure requires reopening on the verified source/obligation evidence. These are source-scope counts, not breakthroughs or audit grades.
 
 ## Pending closed scopes
 
@@ -29,7 +29,7 @@ There are 145 closed and 109 open originals, including three reservations; zero 
 
 ## Per-PR outcomes
 
-Full recovery, original/reviewed heads and obligations are in [the JSON ledger](BACKLOG_CLOSURE_RECONCILIATION.json). Current acceptance is bound by [wave24 evidence](backlog_evidence/wave24/INDEX.json); earlier evidence remains preserved.
+Full recovery, original/reviewed heads and obligations are in [the JSON ledger](BACKLOG_CLOSURE_RECONCILIATION.json). Current acceptance is bound by [wave25 evidence](backlog_evidence/wave25/INDEX.json); earlier evidence remains preserved.
 
 | Original PR | Closure action | Current scope status | Accepted main or open successor |
 | --- | --- | --- | --- |
@@ -122,6 +122,8 @@ Full recovery, original/reviewed heads and obligations are in [the JSON ledger](
 | #7867 | draft_disposition | pending_on_open_successor | #7827 |
 | #7872 | draft_disposition | empty_no_unique_result | empty_no_unique_result |
 | #7873 | draft_disposition | unexecuted_plan_preserved | unexecuted_plan_preserved |
+| #7874 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `ebe2142cbace4d05def434c0b9cd1969e34443b9` |
+| #7878 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `ebe2142cbace4d05def434c0b9cd1969e34443b9` |
 | #7883 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `4276fe9ee228848ee1d3d53d0824acdcd217b2ce` |
 | #7884 | source_consolidation_exact | reviewed_corrected_scope_on_main | `16c2d6860e168ec8e5e8f66296410265e5d7226d` |
 | #7886 | source_consolidation_exact | reviewed_corrected_scope_on_main | `16c2d6860e168ec8e5e8f66296410265e5d7226d` |
@@ -133,8 +135,10 @@ Full recovery, original/reviewed heads and obligations are in [the JSON ledger](
 | #7892 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `848bd31acd49e5ced43f6fa576aa9fc254be36d3` |
 | #7893 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `848bd31acd49e5ced43f6fa576aa9fc254be36d3` |
 | #7894 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `162584a3e9e009877147c42c3717c214453bc006` |
+| #7895 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `ebe2142cbace4d05def434c0b9cd1969e34443b9` |
 | #7896 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `29cd159477d0a603eb59c931af6ad70a8c3c2473` |
 | #7897 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `162584a3e9e009877147c42c3717c214453bc006` |
+| #7899 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `ebe2142cbace4d05def434c0b9cd1969e34443b9` |
 | #7900 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `4276fe9ee228848ee1d3d53d0824acdcd217b2ce` |
 | #7902 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `4276fe9ee228848ee1d3d53d0824acdcd217b2ce` |
 | #7903 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `848bd31acd49e5ced43f6fa576aa9fc254be36d3` |
