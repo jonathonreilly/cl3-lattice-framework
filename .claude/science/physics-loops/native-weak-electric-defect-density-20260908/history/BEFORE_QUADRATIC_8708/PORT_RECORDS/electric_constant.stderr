@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/weak-u-isolated-ar0khdws/scripts/native_weak_electric_defect_density_2026_09_08.py", line 21, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/weak-u-isolated-ar0khdws/scripts/native_weak_electric_defect_density_2026_09_08.py", line 15, in main
+    result=runpy.run_path(str(root/AUDIT_INPUT_PATHS[-1]))['check']()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/weak-u-isolated-ar0khdws/scripts/native_weak_electric_defect_density_controls_2026_09_08.py", line 12, in check
+    require(d==F(1,2)+F(1,2)*sum(z[i]*z[j] for i,j in combinations(range(6),2)),'electric expansion');count+=1
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/weak-u-isolated-ar0khdws/scripts/native_weak_electric_defect_density_controls_2026_09_08.py", line 7, in require
+    if not c:raise ValueError(s)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: electric expansion

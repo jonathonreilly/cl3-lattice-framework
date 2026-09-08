@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -65,7 +65,7 @@
+    for ta in (F(0),F(1,7),F(2)):
+     for ty in (F(0),F(1,5),F(1),F(3)):
+      lhs=ts*ty*ty-tb*ty<=ta
+-     rhs=(2*ts*ty-tb<=0) or ((2*ts*ty-tb)**2<=tb*tb+4*ts*ta)
++     rhs=(2*ts*ty-tb<=0) or ((2*ts*ty-tb)**2<=tb*tb+2*ts*ta)
+      require(lhs==rhs,'thermal quadratic root');thermal_checks+=1
+      bad=(2*ts*ty-tb<=0) or ((2*ts*ty-tb)**2<=tb*tb+2*ts*ta)
+      wrong_discriminant+=lhs!=bad

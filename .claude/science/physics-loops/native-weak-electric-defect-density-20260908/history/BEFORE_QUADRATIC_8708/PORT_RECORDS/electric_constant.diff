@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -9,7 +9,7 @@
+  count=0
+  for bits in product((0,1),repeat=6):
+   z=[1-2*b for b in bits];d=(sum(bits)-3)**2
+-  require(d==F(3,2)+F(1,2)*sum(z[i]*z[j] for i,j in combinations(range(6),2)),'electric expansion');count+=1
++  require(d==F(1,2)+F(1,2)*sum(z[i]*z[j] for i,j in combinations(range(6),2)),'electric expansion');count+=1
+  geom=[]
+  for L in (4,8):
+   def add(v,a):return tuple((x+int(i==a))%L for i,x in enumerate(v))
