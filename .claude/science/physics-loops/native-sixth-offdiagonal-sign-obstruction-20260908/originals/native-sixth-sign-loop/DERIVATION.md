@@ -1,0 +1,13 @@
+# A globally supported fourth/sixth native sign loop
+
+Root proposed the three-face cube-corner route before this witness search. The initial coordinate seed failed; its exact script and failure are preserved. An exact integral bipartite degree-completion then found a full192-edge L4 ice bitstring. This is a deterministic existence certificate, not sampling or an ergodicity claim.
+
+Each fixed cube assignment is tested for three successive alternating face flips. Remaining edge occupancies are a bipartite unit-capacity flow with prescribed residual degree three at every vertex. The returned full state and every subsequent state are checked directly against all64 degree constraints. Raw RESULT stores all four192-bit states. The cube lies in coordinates0/1 and no witness face wraps a periodic seam.
+
+The legal three-face edge lists are [49,62,52,50], [3,52,15,4], [12,62,15,14]. Their combined toggle is the simple nonplanar six-cycle [3,50,49,12,14,4]. Reversing that six-cycle returns exactly to the original full state. Thus all four configurations belong to one explicitly exhibited legal ring component.
+
+Native phases are evaluated directly using A_e=X_e times Z on earlier incident edges in the full coordinate edge ordering. Any alternative endpoint ordering is a diagonal gauge and preserves the closed product. Sequential native-product phases on the three faces and closing six-cycle are (−1,+1,+1,−1). The leading effective coefficients are +1/2 for each four-cycle and −3/8 for the six-cycle in that sequential-product convention. The resulting four transition signs are (−1,+1,+1,+1), with closed product−1.
+
+A diagonal unitary phase change telescopes around a closed configuration loop and cannot alter its product. Four real nonpositive nonzero matrix elements would have positive product. Therefore the fourth-plus-sixth effective hopping cannot all be made nonpositive by a diagonal phase gauge on the component containing this witness. At sufficiently small nonzero real coupling on this fixed finite lattice, higher analytic orders cannot reverse these nonzero leading signs; the same narrow diagonal-gauge obstruction persists for the canonical effective operator. No uniform-in-volume radius is claimed.
+
+This is not an obstruction under arbitrary non-diagonal basis changes, a phase theorem, or a statement that every approximate V0 calculation is invalid. It says that the leading stoquastic ring sign structure does not extend unchanged to this sixth-order native correction in the specified canonical convention. It depends on the separately derived H6 coefficients; independent source-bound review remains necessary before downstream reuse. No canonical files were edited.

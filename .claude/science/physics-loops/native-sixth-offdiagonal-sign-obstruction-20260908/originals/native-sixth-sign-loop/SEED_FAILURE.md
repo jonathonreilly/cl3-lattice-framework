@@ -1,0 +1,1 @@
+The initial standard coordinate ice seed admits no legal three-face sequence on the chosen elementary cube among all corners/orders. This is a failed witness search, not an obstruction. Next use exact bipartite degree completion of locally admissible cube-edge assignments; no sampling.

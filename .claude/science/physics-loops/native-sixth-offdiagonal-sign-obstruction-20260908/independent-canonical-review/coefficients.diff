@@ -1,0 +1,24 @@
+--- 
++++ 
+@@ -1,8 +1,14 @@
++"""Portable exact sixth-order control; original source preserved in packet."""
++AUDIT_TIMEOUT_SEC=180
++import argparse,signal
++if __name__=='__main__':
++ signal.alarm(AUDIT_TIMEOUT_SEC)
++ p=argparse.ArgumentParser();p.add_argument('--json',action='store_true');p.parse_args()
+ from fractions import Fraction as F
+ from itertools import permutations
+ from pathlib import Path
+ import json,time,signal,resource,sys
+-signal.alarm(180);start=time.monotonic();checks=0
++start=time.monotonic();checks=0
+ def req(v,m):
+  global checks
+  checks+=1
+@@ -92,4 +98,4 @@
+ for e in range(6):y=z^(1<<e);ordered*=v[y][z];z=y
+ rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(1048576 if sys.platform=='darwin' else 1024);req(rss<384 and time.monotonic()-start<180,'resources')
+ out=dict(checks=checks,rows=rows,six_cycle_amplitude=str(total),ordered_product_amplitude=str(ordered),ratio_to_ordered_product=str(total/ordered),permutation_weights=values,seconds=time.monotonic()-start,rss_mib=rss)
+-Path(__file__).with_name('RESULT.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
++(Path(__file__).resolve().parents[1]/'outputs/native_sixth_coefficients_2026_09_08.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))

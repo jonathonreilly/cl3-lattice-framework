@@ -1,0 +1,7 @@
+# Root source review
+
+PASS for note e2567b778b93723dd3a5c5a4243a8b3aec096c495fb371ea3d6e57ad71bc8eaa and primary34e76c96e3419ddf44033acdc8829340a5b9a5ed64e0f42f2545e1c119674d7a. Root read the full predecessor note and primary, all coefficient/normalization/L4/L6 helper ports, the complete global analytic remainder proof, then the complete literal seed helper and exact final note/primary delta. Independent coefficient and global-state reviews, canonical68c11cd2 and changed-source77dcbdc9 reviews pass at their stated freezes. These are source-bound author reviews, not effective retained audit verdicts.
+
+The full H6 includes -43/6 sumC4 B and -3/8 sumC6 B with the parent scalar. The exact sign witness is reached by two legal flips from the actual L6 coordinate seed; no flux/component equivalence is imported. The analytic remainder provides only an extremely conservative finite extensive-norm window. The closed negative product excludes an all-real-nonpositive diagonal-phase gauge; arbitrary basis changes, practical sign severity and physical phase remain outside scope.
+
+Final primary3700 predicates, ten-file isolated closure and five actual semantic mutants pass the declared controls. The new omitted-preparation mutant fails at the actual endpoint. Existing graph build/manifest execution and exact HEAD comparisons add one node and its three declared links only, with no old entry changes. No unchanged physics was rerun for the final seed delta. Full pipeline, strict landing lint and formal independent audit remain for a real main-landing candidate.
