@@ -1,0 +1,7 @@
+# Separate phase-enabled discriminator, after the zero-response result
+
+The original frozen source-free response is zero. It is retained as a failed nonreciprocity candidate and an exact antiunitary selection rule. This supplement does not replace it.
+
+Keep graph, input occupation, readout propagation, source coordinates and final three native Records unchanged. Add one preparation hop on12 with cos=7/25,sin=24/25 after the original01 preparation, then one phase exp(i pi n0/2). This deliberately uses the explicitly excluded phase resource and supplies initial coherence across all three active modes; the phase breaks the antiunitary obstruction for a stated reason. Parameters use the already frozen native rational pulses, not a search. Compute the full response and outcome derivatives. No numerical coefficient has been computed or targeted. If reciprocity persists, preserve it and report the named failure; no parameter scan.
+
+The all-source density response must have zero row/column sums by total-number conservation, and mode3 is inert. The two neutral source directions e0-e2 and e1-e2 must be treated using the dual test observables n0-n2 and n1-n2. Any failure of reciprocity in this correctly paired basis rules out a scalar C2 response potential on that neutral plane, including either sign of a symmetric inverse Hessian. A source/test coordinate mismatch is not an allowed falsifier.

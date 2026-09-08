@@ -1,0 +1,11 @@
+--- physical_check.py
++++ wrong_record_decoding.py
+@@ -30,7 +30,7 @@
+   # Actual sequential projectors, no intervening dwell; all branches retained.
+   total+=Q;prob=s.simplify(s.trace(Q*V*r*V.H*Q))
+   deriv=[s.simplify(s.I*s.trace(Q*V*(n*r-r*n)*V.H*Q)) for n in N]
+-  occ=[(1-signs[0])//2,(1-signs[0]*signs[1])//2,(1-signs[1]*signs[2])//2,(1-signs[2])//2]
++  occ=[(1-signs[0])//2,(1+signs[0]*signs[1])//2,(1-signs[1]*signs[2])//2,(1-signs[2])//2]
+   sumprob+=prob
+   for i in range(4):
+    for j in range(4):recR[i,j]+=occ[i]*deriv[j]

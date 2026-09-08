@@ -1,0 +1,11 @@
+--- physical_check.py
++++ omit_preparation_phase.py
+@@ -15,7 +15,7 @@
+ ck('rank_one_input',s.trace(rho)==1 and rho*rho==rho)
+ U=pulse(0,s.Rational(3,5),s.Rational(4,5));W=pulse(1,s.Rational(7,25),s.Rational(24,25));V=pulse(0,s.Rational(5,13),s.Rational(12,13))*W
+ for name,u in [('U',U),('W',W),('V',V)]:ck('unitary_'+name,u.H*u==E)
+-rho0=U*rho*U.H;phase=E+(s.I-1)*N[0];rho1=phase*W*rho0*W.H*phase.H
++rho0=U*rho*U.H;phase=E;rho1=phase*W*rho0*W.H*phase.H
+ responses=[];histories=[]
+ for family,r in enumerate([rho0,rho1]):
+  R=s.Matrix(4,4,lambda i,j:s.simplify(s.I*s.trace(V.H*N[i]*V*(N[j]*r-r*N[j]))))

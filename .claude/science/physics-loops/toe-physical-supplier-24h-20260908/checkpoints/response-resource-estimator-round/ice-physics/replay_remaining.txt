@@ -1,0 +1,178 @@
+
+def run_row(
+    length: int,
+    delta_v: float,
+    population: int,
+    seed_root: int,
+    workers: int,
+) -> PairedRow:
+    futures = {}
+    replicas: dict[int, MultiForwardReplica] = {}
+    context = mp.get_context("spawn")
+    with ProcessPoolExecutor(
+        max_workers=workers, mp_context=context
+    ) as executor:
+        for replica_index in range(REPLICA_COUNT):
+            seed = seed_root + 1000 * length + replica_index
+            future = executor.submit(
+                run_replica, length, delta_v, population, seed
+            )
+            futures[future] = replica_index
+        for future in as_completed(futures):
+            replica_index = futures[future]
+            replicas[replica_index] = future.result()
+            print(
+                "REPLICA_DONE",
+                f"V={1.0 + delta_v:.2f}",
+                f"L={length}",
+                f"replica={replica_index + 1}/{REPLICA_COUNT}",
+                flush=True,
+            )
+    return summarize(
+        length,
+        delta_v,
+        [replicas[index] for index in range(REPLICA_COUNT)],
+    )
+
+
+def emit_row(row: PairedRow) -> None:
+    """Emit one row in the stable receipt format after it closes."""
+    for window in WINDOWS:
+        errors = np.sqrt(np.diag(row.covariances[window]))
+        print(
+            "PAIRED_ROW",
+            f"V={1.0 + row.delta_v:.2f}",
+            f"L={row.length}",
+            f"window={window[0]}-{window[1]}",
+            "gaps="
+            + ",".join(
+                f"{forward}:{row.gaps[window][index]:.8f}"
+                f"+/-{errors[index]:.8f}"
+                for index, forward in enumerate(FORWARD_LENGTHS)
+            ),
+            "cov="
+            + ",".join(
+                f"{value:.12e}" for value in row.covariances[window].ravel()
+            ),
+            flush=True,
+        )
+    print(
+        "ROW_HEALTH",
+        f"V={1.0 + row.delta_v:.2f}",
+        f"L={row.length}",
+        f"min_ess={row.minimum_effective_fraction:.6f}",
+        f"min_origin_tau16={row.minimum_origin_tau16_count:.0f}",
+        f"min_forward={row.minimum_forward_count:.0f}",
+        flush=True,
+    )
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--workers", type=int, default=2)
+    parser.add_argument(
+        "--parallel-rows",
+        action="store_true",
+        help="run the four independent coupling/volume rows concurrently",
+    )
+    arguments = parser.parse_args()
+    if not 1 <= arguments.workers <= 2:
+        raise SystemExit("--workers must be 1 or 2 on the 8 GiB host")
+
+    row_specs = [
+        (
+            coupling_index,
+            delta_v,
+            LENGTHS[length_index],
+            DETUNED_POPULATION if delta_v else RK_POPULATION,
+            41_000_000 + 1_000_000 * coupling_index,
+        )
+        for coupling_index, delta_v in enumerate((-0.05, 0.0))
+        for length_index in range(len(LENGTHS))
+    ]
+    rows_by_key: dict[tuple[int, int], PairedRow] = {}
+    if arguments.parallel_rows:
+        with ThreadPoolExecutor(max_workers=len(row_specs)) as executor:
+            futures = {
+                executor.submit(
+                    run_row, length, delta_v, population, seed_root, arguments.workers
+                ): (coupling_index, length)
+                for coupling_index, delta_v, length, population, seed_root in row_specs
+            }
+            for future in as_completed(futures):
+                key = futures[future]
+                row = future.result()
+                rows_by_key[key] = row
+                emit_row(row)
+    else:
+        for coupling_index, delta_v, length, population, seed_root in row_specs:
+            row = run_row(
+                length,
+                delta_v,
+                population,
+                seed_root,
+                arguments.workers,
+            )
+            rows_by_key[(coupling_index, length)] = row
+            emit_row(row)
+    rows = [
+        rows_by_key[(coupling_index, length)]
+        for coupling_index, _delta_v, length, _population, _seed_root in row_specs
+    ]
+
+    checks = Checks()
+    checks.check(
+        all(row.count_consistent and row.sector_consistent for row in rows),
+        "every replay population preserves exact counts, Gauss charge, "
+        "and zero electric flux",
+    )
+    checks.check(
+        min(row.minimum_effective_fraction for row in rows) > 0.85
+        and min(row.minimum_origin_tau16_count for row in rows) >= 40
+        and min(row.minimum_forward_count for row in rows) >= 40,
+        "every replay population satisfies the pre-existing weight and "
+        "genealogy floors",
+    )
+    checks.check(
+        all(
+            np.all(row.mean_curves.real > 0.0)
+            and row.imaginary_residual < 0.06
+            and all(
+                np.all(np.isfinite(row.gaps[window]))
+                and np.all(row.gaps[window] > 0.0)
+                and np.all(np.isfinite(row.covariances[window]))
+                for window in WINDOWS
+            )
+            for row in rows
+        ),
+        "every paired-forward correlator, gap, and covariance is finite and positive",
+    )
+    detuned = [row for row in rows if row.delta_v]
+    rk = [row for row in rows if not row.delta_v]
+    checks.check(
+        all(
+            np.linalg.matrix_rank(
+                row.covariances[PRIMARY_WINDOW], tol=1.0e-14
+            )
+            == len(FORWARD_LENGTHS)
+            for row in detuned
+        )
+        and all(
+            np.all(row.gaps[window] == row.gaps[window][0])
+            for row in rk
+            for window in WINDOWS
+        ),
+        "detuned primary covariances are full rank and RK forward identity is exact",
+    )
+    print(
+        "CERTIFICATE: lower_momenta=L16,L18 replicas=6 "
+        "detuned_population=6144 rk_population=1536 "
+        "paired_forward_lengths=6,12,20 measurement_origins=4 "
+        "primary_window=8-14 finite_volume=True thermodynamic_limit=False"
+    )
+    print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
+    return 0 if checks.failed == 0 else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

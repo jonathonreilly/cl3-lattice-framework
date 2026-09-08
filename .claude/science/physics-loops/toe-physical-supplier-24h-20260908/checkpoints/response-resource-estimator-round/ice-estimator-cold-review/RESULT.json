@@ -1,0 +1,40 @@
+{
+  "count": 23,
+  "checks": {
+    "exact_AST_instrumentation": true,
+    "replication_bytes_producer_original.py": true,
+    "replication_bytes_measurement_derivative.py": true,
+    "calibration_0_512_20": true,
+    "calibration_0_512_40": true,
+    "calibration_0_1024_20": true,
+    "calibration_0_1024_40": true,
+    "calibration_0_2048_20": true,
+    "calibration_0_2048_40": true,
+    "calibration_1_512_20": true,
+    "calibration_1_512_40": true,
+    "calibration_1_1024_20": true,
+    "calibration_1_1024_40": true,
+    "calibration_1_2048_20": true,
+    "calibration_1_2048_40": true,
+    "calibration96_distinct_seeds": true,
+    "replication_512": true,
+    "pseudoreplication_detected_512": true,
+    "replication_2048": true,
+    "pseudoreplication_detected_2048": true,
+    "all352_seeds_unique": true,
+    "exact_target_0.95": true,
+    "exact_target_1.0": true
+  },
+  "pseudoreplication_adverse": [
+    {
+      "population": 512,
+      "correct_tau3_SE": 0.00236976974150761,
+      "wrong_block_independent_SE": 0.002298052705715376
+    },
+    {
+      "population": 2048,
+      "correct_tau3_SE": 0.0010398468642110145,
+      "wrong_block_independent_SE": 0.0011597996852486315
+    }
+  ]
+}
