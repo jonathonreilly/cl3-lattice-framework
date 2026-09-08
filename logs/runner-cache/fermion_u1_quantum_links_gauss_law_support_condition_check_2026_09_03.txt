@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py
+runner_sha256: 96e9728341c7017c9e9275cb92a4b7c462d7cba99db8806fd2dcca06822daec2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.41
+status: ok
+----- stdout -----
+H^g = -t sum eta (T X^L + K Y^L)/2; E_e = Z^L_e/2; U_e = (X^L + iY^L)/2; G_v = (div E)_v - rho_v
+PASS A1 [exact] a_i^dag U_ij a_j + a_j^dag U_ij^dag a_i = (T_ij X^L_ij + K_ij Y^L_ij)/2 exactly, Hermitian, [4] Pauli monomials, on all 66 bonds of the 2x2x2 cube and the open 3x3x3 block
+PASS A2 [exact] K_ij = -(1/2) A_ij (I - B_i B_j): Hermitian, K_ji = -K_ij, exactly [2] Pauli monomials on [5, 6, 8, 10] sites, the same support as T_ij
+PASS A3 [exact] K_ij = -i [T_ij, n_i] on every bond: given the hop, K is fixed by the fermion algebra, not chosen
+PASS A4 [exact] {T_ij, K_ij} = 0 and [T_ij, K_ij] = -2i (n_i - n_j) = i (B_i - B_j) on every bond: T, K and n_i - n_j close an su(2) per bond
+PASS A5 [exact] J_ij of PR #7892 = -eta_ij t K_ij on every bond -- one factor of t, sign MINUS, and NOT eta (t/2) K_ij: the coupled hop's Y^L partner is the uncoupled current
+PASS B1 [exact] every G_v is pure Z -- record-diagonal -- with [4] monomials on [6] records at the one corner (sea/stag), and [6, 8, 10, 12] in the 3x3x3 block: 2 z_v records, 12 at a bulk corner
+PASS B2 [exact] [G_v, G_w] = 0 for all 64 + 729 corner pairs, both rho conventions: the corner operators are simultaneously diagonal; a nonempty joint zero set is separate
+PASS B3 [exact] [G_v, H^g] = 0 at every corner of both blocks, both rho conventions: the coupled law preserves the corner condition exactly
+PASS B4 [exact] sum_v G_v = -sum_v rho_v on both blocks, every link cancelling in the sum; in the sea convention that reads sum_v G_v = -Q with Q the PR #7892 charge
+PASS B5 [exact] coordination parity: 2 (div E)_v sums z_v terms +-1 so carries the parity of z_v, while 2 rho^sea = 2n - 1 is odd and 2 rho^stag = 2n - (1 - eps) even. Cube z = [3]: 14400 joint patterns of 2^24 sea, 0 stag; plaquette z = [2]: 0 and 14
+PASS B6 [exact] on the cube exactly 2240 of the 4096 fermion record patterns admit a link pattern, and they are precisely the half-filled N = 4 sector; link patterns each: 192 x 4, 1024 x 6, 768 x 7, 192 x 8, 64 x 9
+PASS B7 [exact] the code acts freely on the Gauss sector -- every nontrivial face-loop product carries X, hence zero diagonal -- so dim(Gauss and code) = 14400/2^5 = 450 on the cube, 14/2^1 = 7 on the plaquette
+PASS C1 [exact] coupled continuity dn_v/dt = i[H^g, n_v] = -sum_w J^g_vw at every corner of both blocks, with J^g_ij = -(t eta_ij/2)(K_ij X^L_ij - T_ij Y^L_ij)
+PASS C2 [exact] Hopping-only Ampere i[H_hop^g, E_e] = -J^g_e on every one of the 66 links, e oriented tail to head; full-H evolution additionally includes the magnetic curl
+PASS C3 [exact] joint continuity d(div E)_v/dt = dn_v/dt at every corner -- B3 written as a rate: the flux divergence and the corner parity cannot drift apart
+PASS C4 [exact] every J^g_ij is Hermitian and J^g_ij = (1/2)(J_ij X^L_ij + eta_ij t T_ij Y^L_ij): the X^L coefficient is half the uncoupled PR #7892 current
+PASS C5 [exact] reversing a bond must reverse the link orientation too: X^L_e J^g_ji X^L_e = -J^g_ij on every bond, while J^g_ji = -J^g_ij alone fails on 66 of 66 bonds
+PASS C6 [exact] E_e^2 = I/4 identically on every link, so (g^2/2) sum_e E_e^2 is a c-number: at spin 1/2 the electric term supplies no dynamics at all
+PASS C7 [exact] full-H lambda=1 plaquette: i[H,E]=-J+magnetic curl, eight nonzero curl terms on every link and zero divergence
+PASS D1 [exact] P_f = W_f + W_f^dag, the oriented four-link ring exchange, is Hermitian with [8] Pauli monomials on exactly [4] sites -- the four link records of one coarse face, no fermion record
+PASS D2 [exact] [P_f, G_v] = 0 for all 48 face-corner pairs on the cube and 4 on the plaquette, in both rho conventions: the ring exchange respects the corner condition
+PASS D3 [exact] [P_f, S_f] = 0 and [P_f, prod_{e in f} Z^L_e] = 0: the fermion code is untouched, and the Z2 face flux is a record-diagonal constant of the ring exchange
+PASS D4 [exact] [P_f, H_hop^g] != 0 -- on the cube face at (0, 0, 0) the commutator carries 64 nonzero Pauli monomials: the link sector's declared dynamics does not commute with the coupled hop
+PASS E1 [1e-12] plaquette 2x2x1, 8 records = 256 dimensions: the Gauss sector has dimension 14 in the admissible staggered convention, 0 in the sea convention (z = 2 is even), and 7 intersected with the fermion code
+PASS E2 [1e-12/1e-11] plaquette +code E0≈-2.449489742783 (-sqrt6,lambda0),-2.323404276086 (lambda1); Pf≈0.166666666667 (1/6),0.094209746012
+PASS E3 [1e-9] the plaquette's admissible convention is not locally neutral: max |<rho_v>| = 0.5833333333 at lambda = 0 and 0.6456532164 at lambda = 1, the total charge vanishing only in the sum
+PASS E4 [Herm1e-12,code1e-8] cube 2x2x2, 24 records: the Gauss sector is 14400 states of 2^24, on which H^g is sparse with 79872 nonzeros, Hermitian at 0.0e+00; the ground state lies in the code space at <S_f> = 1.000000000
+PASS E5 [energy1e-9,N1e-8] coupled cube ground state: E_0 = -5.466823694822 at lambda = 0 and -6.980814328073 at lambda = 1, both at <N> = 4.000000000, exactly half filling
+PASS E6 [1e-12] the coupled sea is neutral with zero mean flux: <n_v> = 1/2 to 1.0e-14, <rho_v> = 0 to 2.5e-15 at every one of the 8 corners, <E_e> = 0 to 7.1e-14 on every one of the 12 links, at lambda = 0 and lambda = 1 alike
+PASS F1 [exact] 1248 occurring all-but-one prefixes force the last value within the supplied one-corner relation
+PASS F2 [exact] 11432 occurring prefix/missing-record pairs have nonempty local projections; first forcing after2 cube/1 plaquette records
+PASS F3 [exact] 720 cube/24 plaquette orders reconstruct each supplied relation (24/6 patterns); no global formation
+PASS F4 [exact] all complete corner tables equal the zero set of the actual declared G_v, including staggered signs
+PASS F5 [exact] local/global boundary: all-four-fermion-zero prefix has local completions but no global Gauss completion; a locally permitted prefix gets stuck
+SUMMARY: an exactly gauge-invariant minimal coupling of the fermion's U(1) to a designed spin-1/2 link role; Gauss's law is a record-diagonal corner relation whose solution set on the cube projects onto the half-filled fermion patterns; global formation remains open; spin-1/2 links carry a coordination-parity condition; the coupled sea is neutral with zero mean flux. No photon is shown.
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

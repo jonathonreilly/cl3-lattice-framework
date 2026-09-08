@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.py
+runner_sha256: c6b2a498a51ca61120a951ce5f37d69c199595bad49660fce29c8dab17a96d09
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 2.68
+status: ok
+----- stdout -----
+H^g = -t sum eta (T C + K S)/2, C = U + U^dag, S = -i(U - U^dag); E|m> = m|m>, U|m> = |m+1>, |m| <= S; G_v = (div E)_v - rho_v
+PASS A1 [exact] a_i^dag U a_j + a_j^dag U^dag a_i = (T C + K S)/2, C = U + U^dag, S = -i(U - U^dag), Hermitian, 16 and 32 monomial entries: all 140 bond checks -- every bond of the plaquette, the cube and the open 3x3x3 at S = 1 and 2
+PASS A2 [exact] the opposite-sign partner +i(U - U^dag) is not this hop on any of the 140: it is a_i^dag U^dag a_j + h.c., carrying flux the other way along the bond
+PASS A3 [exact] spin1/2 supplied #7893 identity: U=(X+iY)/2 gives C=X,S=Y and the same hop
+PASS A4 [exact] the relations behind gauge invariance, all 12 cube bonds: [n_i, T] = -iK, [n_i, K] = +iT, [n_j, T] = +iK, [n_j, K] = -iT, and [n_w, T] = [n_w, K] = 0 off the bond (96 pairs)
+PASS A5 [exact] [E,U]=U,[E,Udag]=-Udag and Hermitian C,S at S1/2; these commutators survive truncation
+PASS A6 [exact] two listed defects: Udag U=I-P_+S,U Udag=I-P_-S and [C,S]=2i(P_+S-P_-S)!=0
+PASS A7 [exact] [G_v, H^g] = 0 at every corner of every coordination z = [2, 3, 4, 5, 6] -- 1570 corner-bond pairs on the plaquette, the cube and the open 3x3x3, both rho conventions, S = 1 and 2
+PASS B1 [exact] integer flux makes 2 (div E)_v EVEN at every corner of every coordination, while 2 rho^sea = 2n - 1 is ODD and 2 rho^stag = 2n - (1 - eps_v) is EVEN: z_v drops out of the condition, and staggered charge passes this LOCAL parity test; global solvability is separate
+PASS B2 [exact] plaquette census, DP and complete enumeration agreeing: rho^sea 0 of 16 x 81 and 0 of 16 x 625; rho^stag 26 (S = 1) and 50 (S = 2)
+PASS B3 [exact] cube census by DP and two complete enumerations (the whole 3^12 space at S = 1, the cycle space at both S), agreeing: rho^sea 0 and 0; rho^stag 102304 and 1477920. The cube is counted, never diagonalised
+PASS B4 [exact] 2240 of the 4096 cube fermion patterns admit a link configuration -- exactly the half-filled N = 4 sector, all of it, at both S -- in EIGHT multiplicity classes of sizes [128, 192, 416, 768, 128, 192, 384, 32], identical at S = 1 (counts [38, 39, 42, 44, 48, 50, 54, 69]) and S = 2 ([616, 626, 642, 652, 672, 682, 702, 767]): raising S re-weights the charge sectors, it does not re-partition them
+PASS B5 [exact] the same census on PR #7893's spin-1/2 link (2E = +-1) fixes which convention its original finite numbers belong to: the cube's 14400 is the SEA convention (staggered gives 0), the plaquette 0 sea and 14 staggered
+PASS B6 [exact] periodic ring L = 8, S = 1, DP and complete enumeration agreeing: rho^sea 0 of 256 x 3^8, rho^stag 234 -- the same selection at coordination z = 2 with no face at all
+PASS B7 [exact] rho^sea = rho^stag - eps_v/2, so the divergence equations agree in shifted variables when a background field c_e with (div c)_v = -eps_v/2 exists: it does on balanced blocks, c_e in {-1/2, 0, +1/2} (plaquette 2/2, cube 4/4, 2x2x3 6/6), and not on the open 3x3x3 (14/13, sum_v -eps_v = -1 while any divergence sums to 0)
+PASS B8 [exact boundary] open 3^3: product B_v=I permits even N, but zero total divergence demands N=13; staggered Gauss is empty for every integer window
+PASS B9 [exact boundary] shift c=1/2 changes the S=1 carrier to {-1/2,1/2,3/2} and E^2 by {-3/4,1/4,5/4}; it is not the same integer-window Hamiltonian
+PASS C1 [exact] E_e^2 has spectrum [0, 1] at S = 1 and [0, 1, 4] at S = 2, so H_E = (g^2/2) sum_e E_e^2 is a genuine operator -- contrast spin 1/2, where E_e^2 = I/4 and the electric term is a c-number that does nothing
+PASS C2 [exact] the Wilson term commutes with Gauss's law: [P_f, (div E)_v] = 0 on all 52 face-corner pairs (48 cube, 4 plaquette) at S = 1 and 2, nnz(P_f) = 32 and 512; rho_v is fermion-only, so [P_f, rho_v] = 0 outright
+PASS C3 [exact] the assembled H^g + H_E + H_B maps the plaquette Gauss sector into itself: on all 26 states at S = 1 and 50 at S = 2, destinations taken in the FULL space, 0 out-of-sector amplitudes, max leaked 0.0e+00 -- the T C and K S terms leave the sector separately and cancel
+PASS C4 [exact] the separate untruncated scalar comparison V=(1-cos theta)/g^2, real g!=0, has a positive germ; no finite-matrix angle or photon derivation
+PASS C5 [exact] each actual finite Wilson matrix equals the tensor compression of the untruncated shift; scalar-angle interpretation is a separate comparison
+PASS D1 [numerical 1e-9] raw plaquette Gauss dimensions 26 and 50 before +code projection; E_0 at g^2 = 1, 2, 4 without/with H_B: S = 1 -2.152012 -2.491848 -1.807851 -1.889263 -1.352280 -1.364473; S = 2 -2.153357 -2.573395 -1.807956 -1.899006 -1.352283 -1.365185
+PASS D2 [numerical 1e-9] raw-sector gaps and selected eigh ground-vector cosine are zero without H_B; with H_B gaps=0.395359 0.110635 0.017047 0.411731 0.114075 0.017220, cosine=0.418515 0.210243 0.063343 0.541713 0.244706 0.068693 at the three tested couplings; no all-ground or limiting claim
+PASS D3 [numerical 1e-6] <E_e^2> at S = 1 is 0.205293 0.145868 0.089108 without H_B and 0.289139 0.168525 0.091811 with it: the flux window is barely used, and the S = 1 to S = 2 shift in E_0 is 3.27% at g^2 = 1 with H_B, so convergence in S has not been established for these g^2=1 data
+PASS D4 [numerical 1e-9] the coupled sea is NOT locally neutral: <rho_v> = +0.180762247 -0.180762247 -0.180762247 +0.180762247 at g^2 = 4 with H_B, S = 2. the computed pattern is +a -a -a +a with vanishing total; no bare C_4 symmetry proof; a decreases over the tested couplings (max |<rho_v>| = 0.426 0.305 0.181 at g^2 = 1, 2, 4, S = 1); <N> = 2 and Hermiticity residual 0.0e+00
+PASS D5 [numerical 1e-9] the face stabiliser splits the plaquette Gauss sector in half, 26 = 13 + 13 and 50 = 25 + 25, so dim(Gauss and code) = 13 and 25 (spin 1/2 gave 14 = 7 + 7)
+CODE S=1 magnetic=False dim=13 E0=-2.152011640738 gap=0.978328969370 cos=0.231098453222 intertwiner=5.8e-15
+RAW GROUND S=1 cos range=[-0.231098453222,0.231098453222]; uniform mixture and one balanced pure state give zero
+CODE S=1 magnetic=True dim=13 E0=-2.491847562200 gap=1.787323468929 cos=0.418514988983 intertwiner=4.0e-15
+CODE S=2 magnetic=False dim=25 E0=-2.153356886656 gap=0.956978271110 cos=0.251307918585 intertwiner=5.2e-14
+RAW GROUND S=2 cos range=[-0.251307918585,0.251307918585]; uniform mixture and one balanced pure state give zero
+CODE S=2 magnetic=True dim=25 E0=-2.573395352189 gap=1.687818382306 cos=0.541713235119 intertwiner=2.7e-14
+PASS D6 [numerical 1e-10] actual +code matrices and cosine are unitarily equivalent to independent even-Fock/flux matrices; raw spectrum is the union of both loop sectors
+PASS D7 [numerical 1e-10] +code gaps at g^2=1 match the four predeclared references; raw zero gaps are not physical code gaps
+PASS D8 [boundary] no-H_B degenerate raw ground space supports opposite nonzero cosine expectations; zero is not state-independent
+PASS E1 [exact] the ring's hand-rolled superfast encoding satisfies the same relations ({A, B_i} = 0, A^2 = I, [n_i, T] = -iK, [n_i, K] = +iT, [n_w, T] = 0 off the bond) and realises ONLY EVEN total fermion number at L = 4, 6, 8; half filling needs N = L/2, so L = 0 mod 4 and L = 6 has an empty Gauss sector
+PASS E2 [exact] pure electric, no fermion, static +1 and -1 charges on the L = 8 ring at S = 1: V(d) = (g^2/2) d EXACTLY in rational arithmetic for d = 0..4 at g^2 = 1 and 4 -- a string whose energy grows linearly with the separation; S = 1 is already exact, the minimiser using only E in {0, 1}
+PASS E3 [numerical 1e-9] with the fermion hop at half filling (t = 1) the finite raw-sector potential screens relative to pure electric: at g^2 = 4 the potential is 2.271563 2.383425 4.295402 2.819090 against the unbroken 2, 4, 6, 8, and it is not monotone -- V(4) < V(3) at g^2 = 1 too (0.796888 0.796906 1.277804 1.026768 against 0.5, 1.0, 1.5, 2.0); raw Gauss dimensions [234, 150, 160, 132, 150], <N> = 4 exactly at every separation
+PASS E4 [numerical 1e-4] the mechanism, off the d = 4 ground state at g^2 = 4: the flux does not span the separation but localises on the sources, sum_e |<E_e>| = 1.603 against 4 unbroken, dying to 0.0094 three links away; the screening charge shows as a HOLE <n> = 0.181 at the +1 source and a fermion <n> = 0.981 at the -1 source
+PASS E5 [numerical 1e-6] finite-size cross-check on the L = 4 ring: V = 0.762517 0.594051 at g^2 = 1 and 2.271118 2.169659 at g^2 = 4, against the pure-electric 0.5, 1.0 and 2.0, 4.0 -- saturated there too, so this finite comparison occurs at both lengths; the values are finite-size numbers and carry no infinite-volume statement
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

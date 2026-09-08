@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/charge_conjugation_and_conserved_u1_current_check_2026_09_03.py
+runner_sha256: f7530e688cd0fa1cc054db015f59c630e365fea3f62f64273a1f8dc4817928a6
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 1.77
+status: ok
+----- stdout -----
+H(t,m) = -t sum eta_ij T_ij - (m/2) sum eps_v B_v; n_i = (I - B_i)/2; J_ij = eta_ij (t/2) A_ij (I - B_i B_j)
+PASS A1 [exact,t=1] i[H,n_i]+sum_j J_ij=0: all27 open3^3 and64 torus4^3 corners
+PASS A2 [exact,t=1] naive A(B_i+B_j)/2 vanishes where hopping acts; nonzero residual terms 12/24
+PASS A3 [exact] on every bond J_ij = i t eta T_ij B_j = -i t eta T_ij B_i = (t eta/4) A_ij (B_i - B_j)^2
+PASS A4 [exact,t=1] J Hermitian, J_ji=-J_ij,T_ji=T_ij; [2] monomials, X-support [1] on own edge
+PASS A5 [exact,t=1] total star-union support [11] bulk,[6, 8, 10] boundary; all J monomials off-diagonal
+PASS A6 [exact] [J_ij,S_f]=0 on every tested bond-face pair
+PASS A7 [exact] [H,N]=[H,Q]=0 by pairwise current cancellation; Q pure Z
+PASS A8 [exact] supplied t=0,1,2,-3/2: actual current, three scaled forms and continuity agree; t=0 current vanishes
+PASS B1 [exact] x-dimer perfect matchings on cube/open4^3/torus4^3; C0 X-support equals matching
+PASS B2 [exact] ZE=prod_e Z_e=prod_odd B_v=(-1)^N_odd on the supplied bipartite graphs
+PASS B3 [exact] C flips B and rho, n->1-n; C0 flips B, ZE fixes B
+PASS B4 [exact] C A_ij C^-1 = -A_ij on every bond, C_0 A_ij C_0^-1 = +A_ij, Z_E A_ij Z_E = -A_ij
+PASS B5 [exact] C, C_0 and Z_E commute with every S_f: S_f -> +S_f, code space preserved with no sign
+PASS B6 [exact] C fixes T,H_hop and reverses H_m; C H(t,m) C^-1=H(t,-m)
+PASS B7 [exact] C0 flips T,H_hop,H_m; fixes A,J
+PASS B8 [exact] ZE flips A,T,H_hop; fixes B,H_m,Q
+PASS B9 [exact] C reverses both current J and charge Q
+PASS B10 [exact] C^2 = +I on all three lattices: C is unitary and an involution
+PASS B11 [exact] y/x matching conjugation agrees on every encoded B,A; no ambient scalar claim
+PASS B12 [exact] full table holds for KS, all+1 and generic rational bond weights
+  C: B_v -> -B_v, n_v -> I-n_v, A_ij -> -A_ij, S_f -> +S_f, T_ij -> +T_ij, H_hop -> +H_hop, H_m -> -H_m, J_ij -> -J_ij, Q -> -Q; eps_v is a supplied corner label, unchanged
+PASS C1 [exact] prod_v B_v=I on all tested blocks/tori: each edge occurs twice
+PASS C2 [exact] odd |V|=27 forbids any unitary flipping all B on the fixed-parity code
+PASS C3 [exact] odd degrees at all27 corners require even component size; named even graphs have matchings
+PASS D1 [exact] 4096 cube patterns: Q counts odd three-edge stars minus4; deviation 0.0e+00
+PASS D2 [exact] cube incident-star charge spectrum [-4, -2, 0, 2, 4], symmetric about0
+PASS D3 [exact] current diagonal zero on12 bonds x4096 patterns (0.0e+00); fixed-Z statistics do not read J
+PASS E1 [1e-12] antiperiodic4^3/no zeros: chiral residual 0.0e+00, projector +/-m residual 1.1e-15 (m=0,.5,1,2)
+PASS E2 [1e-12] supplied finite sea n(-m)=1-n(m),residual 1.0e-15; n(0)=1/2,residual 4.4e-16
+PASS E3 [1e-10] cube12 qubits,4096 ambient,6 faces,code128; C unitary residual4.9e-15, N->8-N residual6.2e-14
+PASS E4 [matrix1e-10,spectrum1e-9] C H(m) C^-1=H(-m) residual1.2e-14; actual ZE chirality and reflected spectrum residual4.0e-15
+PASS E5 [1e-8] t=1,m=0 finite ground E=-6.928203230 approximates-4sqrt3 (8.9e-16),N=4.000000000,C-overlap=1.000000000
+PASS E6 [1e-10] finite ground currents at m=0/1: max3.7e-15; C-oddness forces zero at m=0
+PASS E7 [overlap1e-9,N1e-8] empty-state C-overlap6.1e-16; mapped N=8.000000,full-state overlap1.000000000; no physical vacuum selection
+PASS E8 [boundary] sea domain accepts antiperiodic matrix; rejects periodic 8-zero-mode/rank28 residual=1/8 and gapped nonchiral shift
+PASS E9 [1e-10] x/y matching ratio is nonscalar on the ambient edge register but scalar on the complete cube +face code
+PASS E10 [1e-12] two complete +face-code states have identical full Z-record distributions but current +1/-1; fixed-record correlations cannot read J
+PASS E11 [exact] real spectral-reflection oracle rejects an asymmetric spectrum
+SUMMARY: supplied finite current/conjugation algebra; component/code/seam domains explicit; no fixed-record current readout or physical vacuum selection.
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+
