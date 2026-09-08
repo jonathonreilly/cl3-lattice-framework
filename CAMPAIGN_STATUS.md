@@ -58,6 +58,8 @@ joint-law selection remain open.
    Walls author repair resumes and will return to its original independent reviewer.
    The four-PR sea/corner original review is sealed with changes required; a
    separate author is queued after finishing the active flux-sector review.
+   The next vacuum/energy-response original review is assigned while walls
+   corrections finish; it preserves priority for the original walls confirmation.
    Relaxation/neighbourhood review is checkpointed
    before its first baseline and will resume in the same reviewer session.
    #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
