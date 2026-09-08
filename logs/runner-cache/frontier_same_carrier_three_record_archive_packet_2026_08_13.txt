@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/frontier_same_carrier_three_record_archive_packet_2026_08_13.py
+runner_sha256: 7d64706ad0a76724b6ae14fc1c0751d9f3518105ebea775d1399fcf129aba74c
+input_fingerprint_sha256: c8fd18968059dcb5ec05005c8dd00740a82e0117688a41115467ed761e3fcbdd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+PASS A-current-main-self-contained-authority: origin/main=eed3c68fff; only the current axiom and this note are declared inputs
+PASS B-four-orthogonal-five-M2-algebraic-candidate-rays: 29 one/two-M2 gates; weights=(0.5, 0.5, 0.2, 0.8); max ray residual=2.3e-16
+PASS C-finite-support-ray-projector-and-resource-boundary: rank-4 projector spans a diameter-8 five-site template; logical two-M2 gate separations=[2, 4, 8], NN count=0; two dirty-B inputs also pass readiness, with max weight shift 0.6
+PASS D-branch-neutral-finite-NN-factor-permutation: 13 NN SWAPs are incident on 11 sites; event support has 13 sites including fixed R,A; all three target prestates survive
+PASS E-arbitrary-target-and-reference-preserving-archive: rank=32/32, Gram residual=1.5e-15; arbitrary three-qubit target information exits on P,M,B
+PASS F-exact-same-carrier-lock-content-candidate: 32 branch/target-basis cases put exact existing projectors (-,m,b) on the targets; residual=4.4e-16; Admissibility support is not asserted
+PASS G-complete-Record-map-packet-and-incidence-decoder: 192 translated/all-frame cases recover (h,s), edge, and frame from actual M2 keys inside maps with one separated prior packet and a sentinel; scan failures=0
+PASS H-candidate-totality-formula-and-occupancy-refusal: 96 valid writes and 96 replays preserve prior Records; target occupancy replaces a host spent flag
+PASS I-fixed-output-overwrite-control-collapses-target-information: unarchived fixed-output control has rank 4/32 and Gram residual 14.97
+PASS J-N1-N8-scope-axiom-and-TOE-boundary: the note records the positive parser change, simultaneous-write contract, live alternatives, open occurrence/global-law gates, and zero score movement
+METRICS branch_rays=4 archive_rank=32 physical_swaps=13 packet_cases=192 lock_content_residual=4.44e-16
+BOUNDARY: a self-contained finite candidate conserves arbitrary target/background information and places three already-present M2 lock-content candidates; clean preparation, NN compilation of the algebraic formation word/readiness test, Admissibility support, realized-member selection, formation occurrence/site/rate, simultaneous atomicity as an actual law, internal-action selection, full-Z3 scheduling, overlapping-packet confluence, physical duration, source normalization, gravity, audit retention, obligation retirement, and TOE percentage movement remain open
+per_element: checked the 29-gate algebraic five-M2 unitary, four normalized rays, 32 arbitrary target-basis columns, exact target marginals, and overwrite control
+per_site: checked five input roles, three arbitrary Record targets, all 11 SWAP-incident sites, 13-site event support, packet roles, occupancy, and reverse permutation
+per_mode: checked all four (m,b) modes, 24 proper-cubic frames, two translations, exact branch weights, incidence signs, and outcomes
+per_block: checked a diameter-8 rank-4 projector boundary, rank-32 archive isometry, branch-neutral NN route, candidate simultaneous append, complete-map decoder, and refusal formula
+lattice_wide: checked and not executed — this is one finite Record-free event support plus a separated prior packet, not a homogeneous full-Z3 law or overlapping-event confluence theorem
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+
