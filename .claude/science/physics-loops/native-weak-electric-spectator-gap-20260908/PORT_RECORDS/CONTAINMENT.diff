@@ -1,0 +1,15 @@
+--- before
++++ after
+@@ -27,6 +27,12 @@
+    self.W.append(z)
+   self.Wden=lcm(*(x.denominator for x in self.W));self.Wint=[int(x*self.Wden) for x in self.W]
+   self.support=sorted(set(prefix['boundary_edges'])|{x['bridge_edge'] for x in prefix['rows']});delta={}
++  # Exact reduction preconditions: the candidate frame must contain every
++  # endpoint affected by any declared flip, not merely have the right Gram.
++  if any(sum(self.K[i][k]*self.K[k][j] for k in range(64))!=(-24 if i==j else 0) for i in range(64) for j in range(64)):raise ValueError('canonical complex structure')
++  for v in sorted({v for e in self.support for v in self.edges[e]}):
++   projection=[sum(self.r[i][k]*self.r[i][v]/self.d[i]+self.kr[i][k]*self.kr[i][v]/(24*self.d[i]) for i in range(10)) for k in range(64)]
++   if projection!=[int(k==v) for k in range(64)]:raise ValueError('active frame endpoint containment')
+   for e in self.support:
+    v,w=self.edges[e];Q=[[F(self.K[v][w],6)*(self.r[i][v]*self.kr[j][w]-self.r[i][w]*self.kr[j][v]) for j in range(10)] for i in range(10)]
+    delta[e]=self.fock(Q)
