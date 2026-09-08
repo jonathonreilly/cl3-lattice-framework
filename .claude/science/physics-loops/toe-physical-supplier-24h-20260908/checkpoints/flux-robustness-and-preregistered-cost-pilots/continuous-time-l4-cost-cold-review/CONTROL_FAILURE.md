@@ -1,0 +1,1 @@
+Initial independent cost control compared binary64 expressions by exact equality; different arithmetic association differed in rounding. No author defect. Replaced by absolute tolerance 1e-9 for cost-only timing arithmetic. No sampling executed.

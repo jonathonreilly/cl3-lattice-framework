@@ -1,0 +1,1 @@
+Preserved controls_BEFORE_SEED_COUNT.py: the first reviewer fixture incorrectly expected all192 faces flippable in the literal staggered seed; exactly96 are alternating (32 per plane). Corrected analytical count. No producer data or sampling involved.

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "spectral_calls": 0,
+  "freeze_sha256": "43665a2d553f09e568d7c6ea53284e3f1b6b70acad0a0e7d906546cda5cb386d",
+  "negative_cases": [
+    {
+      "case": "numpy.py",
+      "returncode": 1,
+      "failure": "RuntimeError: unlisted local module numpy.py"
+    },
+    {
+      "case": "runpy.py",
+      "returncode": 1,
+      "failure": "RuntimeError: unlisted local module runpy.py"
+    },
+    {
+      "case": "numpy_package",
+      "returncode": 1,
+      "failure": "RuntimeError: unlisted local package directory numpy"
+    }
+  ],
+  "loaded_numpy_origin_check": "PASS",
+  "nonisolated_refusal": "PASS"
+}

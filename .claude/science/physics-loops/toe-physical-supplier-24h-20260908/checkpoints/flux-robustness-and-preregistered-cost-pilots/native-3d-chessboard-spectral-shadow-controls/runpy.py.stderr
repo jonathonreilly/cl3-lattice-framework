@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-3d-chessboard-spectral-shadow-controls/runpy_py/verify.py", line 24, in <module>
+    if __name__=='__main__':print(json.dumps(verify()))
+                                             ^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-3d-chessboard-spectral-shadow-controls/runpy_py/verify.py", line 15, in verify
+    if item.suffix in ('.py','.so','.dylib','.pyc','.pyo') and str(rel) not in allowed:raise RuntimeError('unlisted local module '+str(rel))
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: unlisted local module runpy.py

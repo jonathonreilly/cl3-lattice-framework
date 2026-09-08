@@ -1,0 +1,9 @@
+# Prospective cost-profile review — PASS
+
+Source freeze 9ce07b5ee024e4917ad112abb6e1354532ee78820b6f647939b7b01126d40097. Complete profile, worker, dispatcher/shell, forecast, preflight/freeze, protocol/proposal and synthetic controls read. Six adapter modules match final independently reviewed ee41 source byte-for-byte; that complete scientific review is reused, not repeated or inferred from hashes.
+
+Four cases, separate seed namespaces, finite RK128 preparation, four fixed face blocks and all fifteen readouts follow the contract. Synthetic repeated rows remain explicitly nonphysical. Save/load invokes full path verification and compares final measurements/events/witness. Initial preparation is not detuned stationarity. Face rejection sampling has no intrinsic iteration cap but is contained by the whole-worker timeout; bridge/clock caps fail rather than clip.
+
+All frozen files, runtime files and adapter source bindings verified. Five author synthetic controls and two independently formulated forecast checks pass; no stochastic profile or sampling was executed. Initial reviewer exact-float comparison failure is preserved separately. Cost arithmetic uses all-case maxima and full 30-second charge, repeats unallocated overhead per chain, includes measurement/I/O/synthetic costs and final reserve. A forecast failure remains a failure; no favorable cost outcome is asserted.
+
+Worker errors propagate to FAILURE; dispatcher kills its process group on timeout, records source/output hashes and checks worker/parent high water. External acceptance is explicitly pending: root must apply the promised independent whole-tree 30-second/384-MiB watchdog and check the outer shell receipt. This package alone does not implement that external acceptance. Runtime closure is interpreter and loaded module files, not all system libraries. No blocker to the one capped profile under that stated outer contract; no production or mixing authorization.

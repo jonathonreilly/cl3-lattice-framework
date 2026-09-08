@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Twenty-third campaign checkpoint
 
 Updated 2026-09-08T21:44:03.967319+00:00. The 48-hour campaign remains active through 2026-09-10 10:27:17 UTC, subject to available usage. Twenty science PRs are open. No science has been merged to main and no formal audit verdict has been applied.
 

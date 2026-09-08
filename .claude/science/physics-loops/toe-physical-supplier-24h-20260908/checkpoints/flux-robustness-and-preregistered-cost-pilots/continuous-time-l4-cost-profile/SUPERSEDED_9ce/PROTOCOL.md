@@ -1,0 +1,11 @@
+# Unlaunched single CT L4 cost fixture
+
+The copied PROFILE_CONTRACT_PROPOSAL specifies all four cases, seeds, four selected faces, readout and synthetic coverage. The frozen reference adapter is copied byte-for-byte, including all dependency modules. No local index is introduced. No stochastic execution has occurred in this folder.
+
+Accounting clarification before data: forecast charges the ENTIRE 30-second authorized envelope rather than a smaller measured duration. Its nonnegative difference from explicitly timed case work is charged to every hypothetical chain, inside the factor-two padding. This conservatively includes interpreter startup, hash validation, parent dispatch, serialization and forecast finalization without circular timing or unmeasured-tail subtraction. Actual external elapsed must still be recorded and <=30 seconds; it must never be replaced by this charge in the actual resource report. This stronger pricing may fail the gate and is not retuned after data.
+
+Run only after root review and checkpoint, once via run_profile.sh, under root's independent whole-tree 30-second watchdog. The internal dispatcher stops its worker group at27 seconds, leaving receipt reserve. External /usr/bin/time high water and elapsed, parent high water, worker high water, exit status and absence of FAILURE are all required for acceptance. Observed RSS is not an allocation ceiling. Root's independent watchdog must enforce384MiB on the whole process group; the Python dispatcher only inspects completed high water. No retry, replacement or production follows a failure.
+
+Synthetic rows repeat four observations solely to price128-row/16-batch serialization; they are not additional physical data. Initializer uses128 finite RK sweeps and is not stationary detuned initialization. Total T=.5/2 means midpoint projection time .25/1. The future forecast covers only T=.5, two starts and burn16/64,16 independent chains per arm. Passing the cost gate is not calibration, mixing, or production authorization.
+
+Full runtime binding covers interpreter and loaded Python module files, not the OS or every dynamically loaded system library. Adapter origin freeze is pinned separately. Final external acceptance must verify DISPATCH hashes and both external caps before interpreting the forecast.
