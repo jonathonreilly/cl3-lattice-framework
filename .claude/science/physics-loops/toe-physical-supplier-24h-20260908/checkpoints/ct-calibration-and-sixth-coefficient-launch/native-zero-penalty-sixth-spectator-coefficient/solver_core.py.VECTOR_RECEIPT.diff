@@ -1,0 +1,26 @@
+--- a19d/solver_core.py
++++ current/solver_core.py
+@@ -126,7 +126,7 @@
+ def solve_bridge(model,row):
+  bridge=row['bridge_edge'];boundary=model.raw['boundary_edges'];terms=[(a,b) for a,b in combinations(sorted(boundary+[bridge]),2) if set(model.edges[a])&set(model.edges[b])]
+  keys={(int(x['boundary_used_mask']),x['bridge_count']):x for x in row['prefixes']};target=(sum(1<<e for e in boundary),2);vac=np.zeros(512);vac[0]=1
+- layer={(0,0):(vac,0.0,1.0,1)};ledger=[]
++ layer={(0,0):(vac,0.0,1.0,1)};ledger=[];vectors=[(0,0,0,0,1,vac.copy())]
+  for k in range(1,7):
+   incoming={}
+   for key,data in layer.items():
+@@ -146,11 +146,12 @@
+     mask=int(keys[q]['full_toggle_mask']);A,ae=model.matrix(mask);gap=model.gap(mask);x=-np.linalg.solve(A,b)
+     if not np.isfinite(x).all():raise ArithmeticError('nonfinite solve')
+     error,residual=residual_certificate(A,ae,x,b,en,gap)
+-    ledger.append({'k':k,'boundary_used_mask':str(q[0]),'bridge_count':q[1],'toggle_mask':str(mask),'gap_lower':gap,'matrix_operator_error':ae,'residual_bound':residual,'incoming_error':en,'solution_error':error,'word_count':count})
++    ledger.append({'k':k,'boundary_used_mask':str(q[0]),'bridge_count':q[1],'toggle_mask':str(mask),'gap_lower':gap,'matrix_operator_error':ae,'residual_bound':residual,'incoming_error':en,'solution_error':error,'word_count':count,'vector_index':len(vectors)})
++   vectors.append((k,q[0],q[1],int(keys[q]['full_toggle_mask']),count,x.copy()))
+    nxt[q]=(x,error,normup(x),count)
+   layer=nxt
+  x,error,xn,count=layer[target]
+  if count!=row['unordered_pair_sets']*720:raise ValueError('word count')
+  center=-float(model.close@x);dotabs=float(np.abs(model.close)@np.abs(x));rounding=times(gamma(512),divide(up(dotabs),nextafter(1-gamma(512),-inf)));radius=plus(error,plus(times(model.close_error,xn),rounding))
+  if not isfinite(center):raise ArithmeticError('nonfinite result')
+- return {'bridge':bridge,'coefficient':center,'absolute_error_bound':radius,'interval':[nextafter(center-radius,-inf),nextafter(center+radius,inf)],'word_count':count,'proper_keys':len(ledger),'ledger':ledger,'gap_records':model.gap_records,'scope':'dimensionless t=1 coefficient of ordered i bar_gamma_0 bar_gamma_16; IEEE754/error-model assumptions explicit'}
++ return {'bridge':bridge,'coefficient':center,'absolute_error_bound':radius,'interval':[nextafter(center-radius,-inf),nextafter(center+radius,inf)],'word_count':count,'proper_keys':len(ledger),'ledger':ledger,'gap_records':model.gap_records,'_vectors':vectors,'scope':'dimensionless t=1 coefficient of ordered i bar_gamma_0 bar_gamma_16; IEEE754/error-model assumptions explicit'}

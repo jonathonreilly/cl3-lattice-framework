@@ -1,0 +1,46 @@
+import time,os,sys,json,subprocess,hashlib,signal,re,math
+from pathlib import Path
+p=Path(__file__).resolve().parent;out=p/'COEFFICIENT_OUTPUT'
+if out.exists():raise RuntimeError('one attempt only')
+out.mkdir();start=time.monotonic();charged=5.0;rows=[]
+env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',VECLIB_MAXIMUM_THREADS='1',PYTHONOPTIMIZE='0',PYTHONDONTWRITEBYTECODE='1')
+def elapsed():return charged+time.monotonic()-start
+def ledger():
+ (out/'LEDGER.json').write_text(json.dumps({'rows':rows,'prior_charge':charged,'total_seconds':elapsed()},indent=2)+'\n')
+def fail(reason,bridge=None):
+ ledger();(out/'FAILURE.json').write_text(json.dumps({'reason':reason,'bridge':bridge,'elapsed_including_prior':elapsed(),'rows':rows},indent=2)+'\n');raise RuntimeError(reason)
+for bridge in (0,3,9,12,36,96):
+ if 600-elapsed()<180:fail('insufficient reserved180seconds',bridge)
+ cmd=['/usr/bin/time','-lp',sys.executable,str(p/'run_bridge.py'),'--bridge',str(bridge),'--output',str(out/('bridge_'+str(bridge)+'.json'))]
+ stdout=out/('bridge_'+str(bridge)+'.stdout');stderr=out/('bridge_'+str(bridge)+'.stderr');t=time.monotonic();reason=None;peak=0
+ with stdout.open('x') as so,stderr.open('x') as se:
+  try:proc=subprocess.Popen(cmd,stdout=so,stderr=se,env=env,start_new_session=True)
+  except Exception:fail('subprocess dispatch failed',bridge)
+  while proc.poll() is None:
+   if time.monotonic()-t>=180 or elapsed()>=600:reason='external wall cap';os.killpg(proc.pid,signal.SIGKILL);break
+   try:snap=subprocess.run(['/bin/ps','-axo','pgid=,rss='],capture_output=True,text=True,timeout=2)
+   except Exception:
+    reason='RSS watchdog failed';os.killpg(proc.pid,signal.SIGKILL);break
+   group=sum(int(x.split()[1])*1024 for x in snap.stdout.splitlines() if len(x.split())==2 and int(x.split()[0])==proc.pid);peak=max(peak,group)
+   if group>=384*1048576:reason='external group RSS cap';os.killpg(proc.pid,signal.SIGKILL);break
+   time.sleep(.05)
+  rc=proc.wait()
+ row={'bridge':bridge,'wall_seconds':time.monotonic()-t,'returncode':rc,'observed_group_rss_bytes':peak,'failure':reason,'stdout_sha256':hashlib.sha256(stdout.read_bytes()).hexdigest(),'stderr_sha256':hashlib.sha256(stderr.read_bytes()).hexdigest()};rows.append(row);ledger()
+ if reason or rc:fail(reason or 'nonzero subprocess exit',bridge)
+ text=stderr.read_text();real=re.search(r'^real\s+([0-9.]+)$',text,re.M);rss=re.search(r'^\s*(\d+)\s+maximum resident set size',text,re.M)
+ if not real or not rss:fail('missing external time receipt',bridge)
+ row.update(time_real_upper=float(real.group(1))+.01,time_rss_bytes=int(rss.group(1)))
+ if not 0<row['time_real_upper']<180 or not 0<row['time_rss_bytes']<384*1048576:fail('external receipt cap',bridge)
+ ledger()
+# Read-only final aggregation. Raw NPZ membership and byte hashes verified.
+from math import nextafter,inf
+lower=upper=0.0
+for row in rows:
+ f=out/('bridge_'+str(row['bridge'])+'.json');z=json.loads(f.read_text());v=z['vector_artifact'];vp=out/v['filename']
+ if hashlib.sha256(vp.read_bytes()).hexdigest()!=v['sha256'] or vp.stat().st_size!=v['bytes']:fail('vector artifact binding',row['bridge'])
+ if not all(math.isfinite(x) for x in z['interval']):fail('nonfinite interval',row['bridge'])
+ lower=nextafter(lower+z['interval'][0],-inf);upper=nextafter(upper+z['interval'][1],inf);row['sha256']=hashlib.sha256(f.read_bytes()).hexdigest();row['vector_sha256']=v['sha256']
+summary={'interval':[lower,upper],'excludes_zero':lower>0 or upper<0,'rows':rows,'seconds_including_prior_charge':elapsed(),'scope':'Adjacent ordered spectator bilinear only, t=1; IEEE754/error-model assumptions; vectors permit independent rational replay'}
+(out/'SUMMARY.json').write_text(json.dumps(summary,indent=2)+'\n');ledger()
+if elapsed()>=600:fail('final aggregate cap including serialization')
+print((out/'SUMMARY.json').read_text())

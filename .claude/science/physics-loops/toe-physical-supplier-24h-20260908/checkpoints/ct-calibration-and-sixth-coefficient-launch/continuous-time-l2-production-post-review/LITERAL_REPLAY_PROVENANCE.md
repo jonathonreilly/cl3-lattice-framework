@@ -1,0 +1,1 @@
+Literal coordinate/measurement implementation will reuse this reviewer’s no-author-import cost replay, with loop generalized to128 paths. Statistical reconstruction is new and must not import analyze.py. Prior source: continuous-time-l2-cost-post-review/check.py. No production data read.

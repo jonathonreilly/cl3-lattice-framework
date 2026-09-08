@@ -1,0 +1,3 @@
+# Prospective distance>3 factorization attempt
+
+Root's candidate and prior orthogonality result are known. Before new calculation, test the exact even-subset link-toggle cover for two disjoint endpoint stars, keeping singleton gauge involutions involving active and spectator Majoranas. Goal: construct commuting even subsystem Hamiltonians and a factorized canonical polar map after physical projection, or identify a concrete failure. No coefficient solve or numerical production. Any finite control supplements, never replaces, the global-parity/Gauss proof. Output only this directory. Resource180s384MiB/job.
