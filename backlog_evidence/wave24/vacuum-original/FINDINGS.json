@@ -1,0 +1,676 @@
+{
+  "verdict": "CHANGES REQUIRED",
+  "finding_count": 13,
+  "priorities": {
+    "P2": 12,
+    "P3": 1
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P2",
+      "prs": [
+        7885
+      ],
+      "title": "Apply the carrier parity constraint before identifying the unrestricted filling functional with record number",
+      "problem": "The declared edge-qubit encoding has product_v B_v=I, so N=(V-sum B)/2 is even on its entire finite carrier. The same runner prints dense eigenvalues 0,2,4 but Wm minimizes over every integer N. On the cube at J=1.4 the actual plain Wm returns W=-0.2,N=1, which is unavailable on that carrier. Independent enumeration of all 4096 cube sign fields with even N gives minimum zero and last-emptying threshold (1+sqrt2)/2=1.20710678, rather than 1.5. Changing only Wm to minimize over even N still passes all 24 original checks: C4 reads the raw one-particle bottom and never verifies the domain-minimized quantity. The same issue affects odd N, interval tie sets, finite emptying/half-filling windows and the interpretation of unrestricted tables.",
+      "narrow_fix": "Keep the original unrestricted Fock tables and checks as explicitly identified mathematical comparisons. Declare and enforce the encoded even-N domain separately before any record-carrier statement, including zero-mode/tie conventions. Add a decisive actual Wm/domain/threshold countercontrol, preserving its original false PASS. Do not silently assert odd code sectors, unrestricted code equivalence or recompute a different model while calling its results original. The valid even N=4 cube and N=32 flat-twist certificate can remain.",
+      "evidence": [
+        "DECISIVE_MATH.json",
+        "ACTUAL_SOURCE_CONTROLS.json",
+        "source-controls/actual_Wm_even_carrier_domain_not_guarded_by_original_threshold_checks/",
+        "historical-context/docs/EMERGENT_FERMION_NUMBER_DENSITY_AS_WEAK_FIELD_SOURCE_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-02.md"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+          "line": 389,
+          "text": "def Wm(ev, J):",
+          "line_sha256": "c67b0b40488ee2f80b29379f38d2cfeb7c3bf923b9c21dae4dc6e183905ef3ad",
+          "source_sha256": "e7555a77393e22ce41e8dfa119befd0db6c3603dd950fc6c33b8abc8de31335d"
+        },
+        {
+          "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+          "line": 458,
+          "text": "check(\"A5 (V I - sum_i B_i)/2 = N, integer spectrum in [0, V]: %s\"",
+          "line_sha256": "6c2adc64575b6c5d1412e3bbcaec9ecb54a0a33c209496b0dbe76d959167aded",
+          "source_sha256": "e7555a77393e22ce41e8dfa119befd0db6c3603dd950fc6c33b8abc8de31335d"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 295,
+          "text": "thresholds: plain empties at J_B = 3 exactly (bottom -6 at (pi,pi,pi)), staggered at sqrt3, on 4^3, 6^3, 8^3 and in the limit; open 3x3x3 3 sqrt2/2 and sqrt6/2; cube 3/2 with all 32 tying at W = 0; cube all-(-1) loses to the 2-flux class at sqrt3 - (1 + sqrt2)/2 = 0.524944",
+          "line_sha256": "646cdeaba62b9a5abd938ab2c05ccb1b80e8cef810830fcbad4c47d637fb2c25",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 295,
+          "text": "thresholds: plain empties at J_B = 3 exactly (bottom -6 at (pi,pi,pi)), staggered at sqrt3, on 4^3, 6^3, 8^3 and in the limit; open 3x3x3 3 sqrt2/2 and sqrt6/2; cube 3/2 with all 32 tying at W = 0; cube all-(-1) loses to the 2-flux class at sqrt3 - (1 + sqrt2)/2 = 0.524944",
+          "line_sha256": "646cdeaba62b9a5abd938ab2c05ccb1b80e8cef810830fcbad4c47d637fb2c25",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "logs/runner-cache/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.txt"
+      ],
+      "preserve": "Pauli commutation, unrestricted free-Fock spectra, all original numeric tables, exact cube J=0 result and the 4^3 Cauchy certificate.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F2",
+      "priority": "P2",
+      "prs": [
+        7881
+      ],
+      "title": "Compare the actual extended-source force with the point law; H3 currently checks a tautological sign identity",
+      "problem": "T3b.4 claims F_U=-E_2 grad Phi_N with zero residual. NDEV instead compares FN with minus the previously computed point prediction FS[D][4]; it never compares FU to FN. Changing only that operand to FU-FN produces 24 PASS,1 FAIL at H3, residual about 0.04. C1-C4 already report the finite extended-versus-point discrepancy. Moreover C5 and the active note executable block label x-component coefficients as |F| although the code uses Fnum[0]; a nonzero angle makes those quantities different.",
+      "narrow_fix": "Retain the correct stationary-action identity and sign reversal F_U=-F_num. State the point law as a point-source/leading approximation or supplied test-body convention, and give the exact extended-source convolution response. Make H3 test the claimed actual objects and retain measured finite discrepancies rather than weaken a false equality tolerance. Relabel the existing C5 numbers as the x component, preserving their original values and the c7-to-live force/action correction provenance.",
+      "evidence": [
+        "ACTUAL_SOURCE_CONTROLS.json",
+        "source-controls/actual_H3_predicate_tests_claimed_extended_force_equality/",
+        "ADDITIONAL_CONTROLS.json",
+        "7881-original-correction-note.patch"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+          "line": 649,
+          "text": "    NDEV = max(NDEV, float(np.max(np.abs(FN + FS[D][4]))))",
+          "line_sha256": "2bf76096a0fe26a0a0e5de1c143dd68049c69d95a836f534a8568d8a81e8ee4d",
+          "source_sha256": "b7d36311c3ae65187b5e4a27f8eb5f7b9a18462fccf0c4d12389b2a63d679374"
+        },
+        {
+          "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 191,
+          "text": "4. That force is `F_U = -E_2 grad Phi_N` with `Phi_N = -phi_1`, to `0e+00`; equivalently `F_U = +E_2 grad phi_1`, which is the convention the bridge states for itself.",
+          "line_sha256": "28ae8f53268fdaea39fbedd5ae10ad7f2d1d32e1bb5e5f1d54c506602d2239cb",
+          "source_sha256": "e3afef7d7608e275775a84e335f43d10ea488d6c0842c4a1b66eb07cdde950f1"
+        },
+        {
+          "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+          "line": 527,
+          "text": "check(\"C5 [numerical] inverse-square with the landed coefficient: 4 pi D^2 |F|/(E_1 E_2) = %.4f/%.4f/%.4f/%.4f/%.4f/%.4f against the source note's control 1.0194/1.0064/1.0009/0.9963\"",
+          "line_sha256": "7a498932e50850525b1f0ed8b53422a694a63a0bc8192e623746952e44c84ecb",
+          "source_sha256": "b7d36311c3ae65187b5e4a27f8eb5f7b9a18462fccf0c4d12389b2a63d679374"
+        },
+        {
+          "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 280,
+          "text": "inverse_square: 4 pi D^2 |F|/(E_1 E_2) = 0.9711/1.0398/1.0216/1.0060/0.9924/0.9260 against the source note's point control 1.0194/1.0064/1.0009/0.9963 at d = 4/6/8/10",
+          "line_sha256": "397b3111e0625a98f3e8f104fd813324c1dcb1e715a15c22c802f2578ca59d40",
+          "source_sha256": "e3afef7d7608e275775a84e335f43d10ea488d6c0842c4a1b66eb07cdde950f1"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "logs/runner-cache/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.txt"
+      ],
+      "preserve": "H1/H2, all original force ratios/angles and source tables; attractive sign conditional on taking U=A* and a test-force convention.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "prs": [
+        7881
+      ],
+      "title": "Distinguish the classical summed source from the nonadditive joint Slater density",
+      "problem": "T1 defines a genuine joint projector and records eps_12 != eps_1+eps_2, but T2.3/B4 use eps_12 for an exact quadratic cross-term identity. The code computes F12=FFT(A1+A2), having discarded actual e12 from ST. Thus the exact identity concerns a classical sum, not T1's joint density. On the actual D=(2,0,0),d_pair=1 fixture the local difference is 0.210861615; an independent same-box Poisson comparison gives cross-identity residual -0.284741566 for the true joint density but 1.1e-16 for the classical sum.",
+      "narrow_fix": "Use distinct symbols for the actual joint determinant density and the classical summed response source throughout T2/H1, claim_scope, labels and executable block. Explicitly bind each reported quadratic table to the latter. Preserve the genuine nonadditivity data and add a small countercontrol so the joint density cannot silently replace the classical sum in an exact claim.",
+      "evidence": [
+        "FINAL_INDEPENDENT_CONTROLS.json",
+        "final_controls.py",
+        "baseline/7881/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+          "line": 315,
+          "text": "        ST[(dp, Dvec)] = dict(e1=e1, e2=e2, E1=E1, E2=E2, m1=m1, m2=m2,",
+          "line_sha256": "ae2de321c778e72a602c51c08cb462f35e0128af23f81cd902613e191acdb691",
+          "source_sha256": "b7d36311c3ae65187b5e4a27f8eb5f7b9a18462fccf0c4d12389b2a63d679374"
+        },
+        {
+          "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+          "line": 392,
+          "text": "            F12 = np.fft.fftn(A1 + A2)",
+          "line_sha256": "b0e2a94302820ccb354aeb774a10395672a606cd0c45426afd0b821d8620893b",
+          "source_sha256": "b7d36311c3ae65187b5e4a27f8eb5f7b9a18462fccf0c4d12389b2a63d679374"
+        },
+        {
+          "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 148,
+          "text": "3. `E_int` is exactly the cross term: `<eps_12, G eps_12> - <eps_1, G eps_1> - <eps_2, G eps_2> = 2 E_int` to `1e-15` over all sixteen box-and-separation rows.",
+          "line_sha256": "35cea9d48751dc117b3a2fbbe7d6bcab67acf000025460b9b26981638f38e78c",
+          "source_sha256": "e3afef7d7608e275775a84e335f43d10ea488d6c0842c4a1b66eb07cdde950f1"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "logs/runner-cache/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.txt"
+      ],
+      "preserve": "Both the determinant projector/additivity-defect evidence and the exact classical quadratic identity.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F4",
+      "priority": "P2",
+      "prs": [
+        7879,
+        7881,
+        7885
+      ],
+      "title": "Restrict neutral particle-hole claims to the selected fixed-number preparation",
+      "problem": "Every constructed excitation exchanges equally many occupied and empty orbitals, so its total number deviation is zero by construction. This does not force all allowed matter above an even-parity sea to be neutral: adding two empty orbitals gives allowed even total parity and delta N=+2. The source conflates this fixed-N choice with parity, the Poisson P0 convention and a universal statement that matter comes only in neutral particle-hole pairs. Removing the constant mode of an independently supplied response kernel does not impose a fermionic charge sector. An empty state also does not remove the supplied staggered one-particle Dirac dispersion.",
+      "narrow_fix": "Keep all zero-charge and conjugation identities for the selected fixed-N particle-hole family, but distinguish even global parity, delta N=0 preparation, and field zero-mode subtraction. Preserve charged even excitations as a live alternative; narrow the empty-vacuum statement to absence of kinetic sector selection at N=0, rather than absence of Dirac band structure. Carry this through the 7885 inherited quotation/current interpretation without rewriting the historical quotation as if it had always been correct.",
+      "evidence": [
+        "DECISIVE_MATH.json",
+        "baseline/7879/stdout.txt",
+        "baseline/7881/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+          "line": 184,
+          "text": "          \"of pairs, the neutral sector the finite-torus P0 assumes\", par)",
+          "line_sha256": "3b2e559ce46cc7bc6e0e80ab8a818c46f53d3100c7c460993dd489c29754f16d",
+          "source_sha256": "6dd961e2a4ace198d7fc6d882a688477c6f875c96c9d654f6a35a8853ef73012"
+        },
+        {
+          "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 151,
+          "text": "**Reading, not theorem.** Nothing sits on this sea alone. A particle above it is a hole below it, and the two together carry no net count: the pluses and the minuses cancel exactly. What the pair does carry is an energy, and that",
+          "line_sha256": "489c612a9be5ca1cf559b9bb8fbff0a1559ce209b9bbe9f2e49a7ed39c07200f",
+          "source_sha256": "2ba36f82cc287562d46086ece1147ad2e93c422a0c9cd2a2257dc1092729a2f9"
+        },
+        {
+          "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+          "line": 569,
+          "text": "check(\"D3 [numerical, 1e-13] and above this sea that count source does not exist: sum_v rho = 0 to %.0e for every pair and every joint state, so I_1 I_2 = 0 while E_1 E_2 = %.2f for the same pairs. The pooled object differs BY VACUUM\"",
+          "line_sha256": "59529530955e6f5f120d1d409cf3b11d42b667f887d6b20f6a149594deecc9bc",
+          "source_sha256": "b7d36311c3ae65187b5e4a27f8eb5f7b9a18462fccf0c4d12389b2a63d679374"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 87,
+          "text": ">    density `n_v` sources gravity and meets every clause; all flux sectors tie, so the kinetic clause's staggered field is a free choice; and there is no Dirac",
+          "line_sha256": "31ce36b32d66014cdec0f88c36a64700bbb55c4d8dcee1e9e46a7d855973de1d",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "logs/runner-cache/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.txt",
+        "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "logs/runner-cache/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.txt",
+        "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "logs/runner-cache/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.txt"
+      ],
+      "preserve": "Finite half-filled projectors, each original neutral pair table, and ordinary even-parity charged alternatives.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F5",
+      "priority": "P2",
+      "prs": [
+        7879,
+        7881,
+        7885
+      ],
+      "title": "Keep state, readout, source, force and vacuum selections as separate supplied hypotheses",
+      "problem": "The six recorded Z values determine a definite parity value; they do not themselves supply the coherent Slater state, its Born expectation or an offdiagonal hopping-energy readout. States with identical Z statistics can have opposite offdiagonal energies. The comparison also changes the source from number to energy, applies a band filter that changes profile shape, and identifies U=A* with physical interaction energy. None follows solely from changing the vacuum or choosing J_B/t. The numerical D2 label says excitation energy quadruples although 6.0461/3.8766 is about 1.56 (energy product changes by 2.425). The stated local eps formula is real on the actual real Gaussian fixtures; without that restriction a complex particle-hole projector can yield complex row energies, so the general source needs a Hermitian convention.",
+      "narrow_fix": "State the fixed-record parity versus expectation distinction, and declare preparation/measurement, energy-source choice, ground-state selection, action-to-interaction-energy identification and test-body response separately. Narrow all sole-vacuum/one-coefficient explanatory claims to the supplied free model. State real-profile scope or use an explicit Hermitian local energy for complex states. Correct D2's factor label; preserve all measured energy/profile/count data and all open physical supplier boundaries. Do not create a primitive, physical scale, APS carrier or force law.",
+      "evidence": [
+        "ADDITIONAL_CONTROLS.json",
+        "FINAL_INDEPENDENT_CONTROLS.json",
+        "context-source/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "context-source/docs/NEWTON_LAW_DERIVED_NOTE.md"
+      ],
+      "anchors": [
+        {
+          "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 67,
+          "text": "The record ontology is what makes the objects below densities at all. Neither `n_v` nor its deviation is a new primitive and neither is a site: each is a **readout of six records**. The six fine edge sites `2v +- e_a` around the",
+          "line_sha256": "79b60fd8d8eaf8fa1817942adcbd17a757a12f1259d82c6735b91a6f531379ce",
+          "source_sha256": "2ba36f82cc287562d46086ece1147ad2e93c422a0c9cd2a2257dc1092729a2f9"
+        },
+        {
+          "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 213,
+          "text": "**Proof.** Item 1's knob changes only the band filter applied to a fixed Gaussian seed, so the source stays localised and the only thing that moves is the excitation's energy; the ratio of ratios is reported rather than fitted. Item 2's count source is placed at the",
+          "line_sha256": "52d90c62135858d9bd2d3732ac2e5bbcf8e2e323a8713060c8a5092a71c2cea9",
+          "source_sha256": "e3afef7d7608e275775a84e335f43d10ea488d6c0842c4a1b66eb07cdde950f1"
+        },
+        {
+          "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+          "line": 566,
+          "text": "check(\"D2 [numerical, 1e-12] the SAME form on the empty vacuum's count source -- two A-string pairs, I = 2 per pair -- reads E_int^count = %.7f in EVERY row, spread %.0e: constant while the excitation's energy quadruples\"",
+          "line_sha256": "a4e2ba7226281b16bd689ede41c556fc57a7acc0d969ea6149ed3ca84d3944ed",
+          "source_sha256": "b7d36311c3ae65187b5e4a27f8eb5f7b9a18462fccf0c4d12389b2a63d679374"
+        },
+        {
+          "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 286,
+          "text": "pooled_object: the count product I(S) I(T) on the empty vacuum, unchanged from the source note's T6; the energy product E_1 E_2 above the half-filled sea; the difference is the VACUUM and nothing else here",
+          "line_sha256": "d03392c63b6de6c0f04b611fb86a482b5bf5bf00a8d42a4353cb5581a93197d8",
+          "source_sha256": "e3afef7d7608e275775a84e335f43d10ea488d6c0842c4a1b66eb07cdde950f1"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 246,
+          "text": "## Corollary -- the vacuum question is the value of one coefficient",
+          "line_sha256": "78dfff6f9b13d61286e58ec94d60331fee1ddf06f2a66506181636ddb22557ba",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        },
+        {
+          "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 113,
+          "text": "eps_v   = sum_{j ~ v} M_vj (P' - P)_vj                the local excitation energy density",
+          "line_sha256": "5c4198a2c944e2f5a7ce503fda96fc89b797ee6622d783205f6f2c24c1ee31d8",
+          "source_sha256": "2ba36f82cc287562d46086ece1147ad2e93c422a0c9cd2a2257dc1092729a2f9"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "logs/runner-cache/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.txt",
+        "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "logs/runner-cache/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.txt",
+        "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "logs/runner-cache/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.txt"
+      ],
+      "preserve": "Conditional source/response algebra, explicit absence of G_Newton or physical units, and all original finite comparison outcomes.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F6",
+      "priority": "P2",
+      "prs": [
+        7879,
+        7881
+      ],
+      "title": "Label the incomplete torus gauge map accurately; its seam residual is removable",
+      "problem": "The named translation controls apply the KS bulk gauge sign but omit the twist seam carry, then call the remaining 0.044/0.00210 a torus/sign-field residual. Solving the actual 8^3 matrix edge equations gives an exact full translation gauge on all 3072 directed edges: matrix residual zero and energy-density translation residual 1.11e-16. Thus the existing control diagnoses the chosen incomplete map, not a failure of gauge-covariant torus translation or an unavoidable residual.",
+      "narrow_fix": "Either keep the original rows explicitly as incomplete-map diagnostics and withdraw the claimed irreducible covariance caveat, or add the complete seam-aware actual map with all-edge assertions. Preserve naive/KS-only results and guard against omitted seam factors. Do not infer a locality/no-go wall from this comparison.",
+      "evidence": [
+        "ADDITIONAL_CONTROLS.json",
+        "additional_controls.py"
+      ],
+      "anchors": [
+        {
+          "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 253,
+          "text": "- **The twist cut's covariance residual.** The `4.4e-02` on `v_x` in `{0, 1, 7}` is a finite-torus artefact of the twisted sign field. A lane wanting exact covariance of `eps_v` on a twisted torus owns it.",
+          "line_sha256": "2044d38a2e14fce3d038058411e52a57c5adbefdd03a7798db9e498137ef8ce1",
+          "source_sha256": "2ba36f82cc287562d46086ece1147ad2e93c422a0c9cd2a2257dc1092729a2f9"
+        },
+        {
+          "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+          "line": 656,
+          "text": "          \"8^3 cut leaves residual %.1e on v_x %s\"",
+          "line_sha256": "db6f43b0b4bcb3c9018725a54b24bd844c4a80f9247da41096e955a223727e91",
+          "source_sha256": "6dd961e2a4ace198d7fc6d882a688477c6f875c96c9d654f6a35a8853ef73012"
+        },
+        {
+          "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 166,
+          "text": "3. **The gauge-sign rebuild lemma.** Rebuilding pair 2 one coarse site over on the `8^3` torus from a fresh positive seed is **not** faithful: the translation residual `max|eps - shift(eps)|` is `3.96e-01`. Carrying the seed by the KS field's gauge sign first gives",
+          "line_sha256": "f96fe77600736929bfa72307a8d01433fad96d3c34fbb172a147588b20009ac0",
+          "source_sha256": "e3afef7d7608e275775a84e335f43d10ea488d6c0842c4a1b66eb07cdde950f1"
+        },
+        {
+          "path": "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+          "line": 520,
+          "text": "check(\"C3 [numerical] the GAUGE-SIGN REBUILD LEMMA: pair 2 rebuilt one coarse site over from a fresh seed is NOT faithful, translation residual %.2e against %.2e when the seed is carried by the KS gauge sign -- a sign-field artefact\"",
+          "line_sha256": "0935c15f6e1af66f88b4d628731e4e579667ca8a1345cf32b2cd6118fa9ff725",
+          "source_sha256": "b7d36311c3ae65187b5e4a27f8eb5f7b9a18462fccf0c4d12389b2a63d679374"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "logs/runner-cache/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.txt",
+        "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "logs/runner-cache/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.txt"
+      ],
+      "preserve": "Exact gauge covariance with full seam carry; all originally recorded limited-map residuals as history.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F7",
+      "priority": "P2",
+      "prs": [
+        7879
+      ],
+      "title": "Separate the historical exponent tolerance from the new amplitude diagnostic and finite fits",
+      "problem": "The quoted window source says its last three fitted exponents agree within 0.02; this note turns 0.02 into a tolerance around amplitude 0.3267 and says it chose no tolerance. That is a new criterion, even if an earlier source repeated the same misattribution. The runner also uses np.polyfit for the dipole exponent, contradicting the blanket Nothing fitted sentence. Finite fixed-window Richardson and distance fits are protocols, not exact infinite-volume residuals.",
+      "narrow_fix": "Preserve the original 0.02 threshold and every original result, but label it as the explicitly chosen amplitude diagnostic and keep the exponent quote in its original meaning. Identify the actual fit and Richardson protocol, with finite-window/finite-box scope; do not silently change thresholds or advertise a validated infinite-volume uncertainty.",
+      "evidence": [
+        "context-source/archive/notes/docs/POISSON_FINITE_VOLUME_WINDOW_AND_BIHARMONIC_OFFSET_BOUNDED_THEOREM_NOTE_2026-07-27.md",
+        "baseline/7879/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 91,
+          "text": "exponent near `1.66`; its outer-edge normalization is near `0.327`, not `1`\", with `4 pi r G` at `r = N/4` equal to `0.3269`, `0.3267`, `0.3266` at `N = 96, 128, 192`, the last three exponents agreeing \"within `0.02`\", and \"The",
+          "line_sha256": "3299102f2b7cde7910a762df7195e38cc20840de861393b6c0fc97b4c5a39212",
+          "source_sha256": "2ba36f82cc287562d46086ece1147ad2e93c422a0c9cd2a2257dc1092729a2f9"
+        },
+        {
+          "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 313,
+          "text": "clause each candidate fails rather than that some clause must fail; and one question named as a decision about the framework rather than answered. Nothing here is a fitted number: the one tolerance in the response is quoted from",
+          "line_sha256": "2c1438ba0d75b3ea38561793016fd4644ca02efbe66cdc772adc67fed6e6199b",
+          "source_sha256": "2ba36f82cc287562d46086ece1147ad2e93c422a0c9cd2a2257dc1092729a2f9"
+        },
+        {
+          "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+          "line": 491,
+          "text": "    slope = float(np.polyfit(lg[:, 0], lg[:, 1], 1)[0])",
+          "line_sha256": "3677f5ade6b95ef187650f426343bd6a58dda0c964a1666969baa243ee6fd372",
+          "source_sha256": "6dd961e2a4ace198d7fc6d882a688477c6f875c96c9d654f6a35a8853ef73012"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "logs/runner-cache/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.txt"
+      ],
+      "preserve": "Original finite monopole/dipole responses, numeric reference rows and pre-execution diagnostic values.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F8",
+      "priority": "P2",
+      "prs": [
+        7879
+      ],
+      "title": "Do not infer the APS orientation label from bulk holonomy invariance",
+      "problem": "The conjugation calculation preserves named bulk face/Wilson data. It never constructs an APS boundary operator, eta invariant, orientation carrier or map taking that bulk data to chi_eta. Theorem 6 nevertheless says chi_eta is fixed and treats an orientation-odd source as ruled out. Least-squares residual sqrt2 is correct for the manually supplied two-component even vector [1,1] versus [1,-1], but it cannot close the physical APS route.",
+      "narrow_fix": "Keep the finite algebra and exact two-component linear-span obstruction under an explicit imposed parity label. Withdraw the inference that preserved bulk flux fixes an independently defined APS chi_eta, and keep boundary/source transport and alternative odd readouts unresolved. Update the dependent P6/summary/no-go language without inventing independent walls.",
+      "evidence": [
+        "context-source/docs/SIGNED_GRAVITY_APS_ACTION_ORIGIN_SUPERSELECTION_STABILITY_NOTE.md",
+        "baseline/7879/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 215,
+          "text": "`1.000000000000`, with its energy exactly negated, residual `4e-16`, while every holonomy and hence `chi_eta` is fixed. The particle/hole sign is **not** the `eta`-sector orientation.",
+          "line_sha256": "fe497cd271ccc7b78859262da6ec4badd735659a039f79fb257393cc31634d69",
+          "source_sha256": "2ba36f82cc287562d46086ece1147ad2e93c422a0c9cd2a2257dc1092729a2f9"
+        },
+        {
+          "path": "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+          "line": 698,
+          "text": "          \"negated (%.0e) -- while fixing every holonomy and chi_eta: the \"",
+          "line_sha256": "089149908824dff5611fa227f94411dd6f62af69e513d391b7ba882b808f9fdb",
+          "source_sha256": "6dd961e2a4ace198d7fc6d882a688477c6f875c96c9d654f6a35a8853ef73012"
+        },
+        {
+          "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 102,
+          "text": "evaluates on; `P6` uses `P3`.",
+          "line_sha256": "51b0eb5ce0d5b02f55e55b4e05fa9ecee7d0d415d395f7208032e23b7458e6e1",
+          "source_sha256": "2ba36f82cc287562d46086ece1147ad2e93c422a0c9cd2a2257dc1092729a2f9"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "logs/runner-cache/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.txt"
+      ],
+      "preserve": "Bulk conjugation identities and exact least-squares residual for the stated finite coefficient space.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F9",
+      "priority": "P2",
+      "prs": [
+        7885
+      ],
+      "title": "State actual bipartite, degree, zero-mode and discrete-filling domains",
+      "problem": "T2.1 says every cluster is bipartite with degree six. The open cube has degree three, the open 3^3 block has varying degree and odd V=27, and the periodic 3^3 algebra fixture is not bipartite. Thus V/2 is not an integer filling for the odd open block; zero modes yield a family of minimizers rather than unique half filling. The stated plain 4^3 tie interval includes odd N excluded from the encoded carrier. T5's closed minimization formula also minimizes a continuous relaxation of m, not in general the literal discrete integer/even-N problem.",
+      "narrow_fix": "Describe the four algebra fixtures separately from the even bipartite spectral fixtures. State floor/ceiling/zero-mode occupations and then the admissible parity restriction. Present T5's continuous m minimization as a rigorous lower bound, retaining the exact attained even 4^3 case. Never infer density-half or unique vacuum from zero-mode ties.",
+      "evidence": [
+        "DECISIVE_MATH.json",
+        "FINAL_INDEPENDENT_CONTROLS.json",
+        "baseline/7885/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 148,
+          "text": "1. Every cluster here is bipartite with all degrees `6`, so every link-sign field on it has a spectrum symmetric about `0` -- `max |eps + reverse eps| < 4e-14` over all `82` spectra -- and therefore `min_N E_N = E_{V/2}`, attained exactly on the tie",
+          "line_sha256": "bd606947720a57e96d8cc0fe94dd03fe1a50117eed37163b08c23cda8869ff94",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 149,
+          "text": "   range `[#neg, #neg + #zero]`. On the plain `4^3` field at the untwisted Wilson line there are `20` zero modes and the ties run over `N` in `[22, 42]`.",
+          "line_sha256": "4dbf4e5ed6f93093d9e7c736b1c635ec5c8b6735ac90f5ad8679c6aa64856dd4",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 219,
+          "text": "2. If `m` levels are occupied, Cauchy-Schwarz gives `sum_occ |eps| <= sqrt(3 V m)`, hence `W(J) >= min_{0 <= m <= V/2} [-sqrt(3 V m) + 2 J m]`, which equals `-V sqrt(3/2) + J V` for `J <= sqrt(3/8) = 0.612372` and `-3V/(8J)` above it.",
+          "line_sha256": "e3bef0995258ac19ec8559da6cc8db2b2e6869d6fd0aced9ae74766360821635",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        },
+        {
+          "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+          "line": 526,
+          "text": "        if abs(lad.min() - lad[V // 2]) > TOL:",
+          "line_sha256": "48af7f7ee2ca0838366d25dc03ec201eb65e84555d753269e0438b783e2a2079",
+          "source_sha256": "e7555a77393e22ce41e8dfa119befd0db6c3603dd950fc6c33b8abc8de31335d"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "logs/runner-cache/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.txt"
+      ],
+      "preserve": "Chiral symmetry on genuinely bipartite fixtures, exact tie characterization in unrestricted Fock space, and the valid relaxed Cauchy bound.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F10",
+      "priority": "P2",
+      "prs": [
+        7885
+      ],
+      "title": "Keep uniform-sector crossings and half-filling scans distinct from a global phase diagram",
+      "problem": "The finite W is a minimum of finitely many affine energies, so its selected occupancy is a step function with tie sets, not continuously varying. The J~0.865 crossing compares two uniform sectors and eight twists; the half-filling bisections likewise scan only the staggered twist family. The global certificate stops at J<=sqrt(3/8); outside it, random/structured checks are sampled evidence, not proof that the true all-sign-field ground state crosses at the uniform-sector value. The corollary nevertheless calls the intermediate vacuum a continuously draining globally selected sea and treats the coefficient as determining a unique filling.",
+      "narrow_fix": "Label every finite table/crossing/window by its actual field/twist comparison class and give tie conventions. Keep the exact all-field certificate on its stated interval and cube exhaustive results at their verified domain. Describe the continuous thermodynamic formula separately from finite occupancy steps; retain unknown nonuniform competitors and unresolved vacuum-selection hypotheses.",
+      "evidence": [
+        "baseline/7885/stdout.txt",
+        "original-source/scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py"
+      ],
+      "anchors": [
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 254,
+          "text": "4. Between the two the ground state is a partially filled sea whose filling falls continuously with `J_B`, and which changes flux sector at `J_B* ~ 0.865`: `sqrt3/2` exactly on `4^3`, `0.8654003` in the limit.",
+          "line_sha256": "cc9af7d4d52c1909de555b35082554978ae6be1d5228475efb8c1e45247b4e53",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 235,
+          "text": "1. Exactly half filling survives on the `4^3` torus for `J_B < 4 sqrt6 - 3 - 3 sqrt2 - sqrt3 = 0.823267` when the twist is chosen freely at each `J_B`, and for `J_B < sqrt6/2 = 1.224745` within the half-filling twist itself.",
+          "line_sha256": "f39e70b472994d0e67f877077ce5d2223092ae6b7db2c1110dfa8b4872509be5",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        },
+        {
+          "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+          "line": 618,
+          "text": "def best(key, sec, J):",
+          "line_sha256": "429e6ac2104d20831d01b28a17b0604d10c6db036fff16b44a825eff6745a3f7",
+          "source_sha256": "e7555a77393e22ce41e8dfa119befd0db6c3603dd950fc6c33b8abc8de31335d"
+        },
+        {
+          "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+          "line": 751,
+          "text": "def persist(key, V):",
+          "line_sha256": "64c0b576009c8bbc384e54380ff20c8f907d841be54805fff106406bea237cd9",
+          "source_sha256": "e7555a77393e22ce41e8dfa119befd0db6c3603dd950fc6c33b8abc8de31335d"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "logs/runner-cache/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.txt"
+      ],
+      "preserve": "All original uniform-sector tables, symbolic crossing arithmetic and finite certified global interval.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F11",
+      "priority": "P2",
+      "prs": [
+        7885
+      ],
+      "title": "Restrict the chemical-potential no-dynamics statement to fixed N or N-commuting observables",
+      "problem": "[N,H_hop]=0 proves number conservation and a scalar energy shift inside each fixed-N sector. It does not imply an unchanged channel on all allowed states: an even-parity superposition of N=0 and N=2 acquires relative phase exp(-4iJt), and its even pair-coherence expectation changes as cos(4Jt). The no-motion wording currently makes no observable or sector restriction.",
+      "narrow_fix": "State exact fixed-N evolution up to global phase and invariance of N-commuting observable dynamics. Preserve coherent even-N sectors as a distinct domain; do not turn number conservation into a general channel or fixed-record readout theorem.",
+      "evidence": [
+        "DECISIVE_MATH.json"
+      ],
+      "anchors": [
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 141,
+          "text": "**Reading, not theorem.** The extra term counts particles and does nothing else. It cannot move one, it cannot make one, and it cannot destroy one; adding it to the law changes no motion, only the price of standing still. One particle costs `2 J_B`,",
+          "line_sha256": "0d7c78e5c92043ba6521793b1c681d90c3ac164656af0441e0118a2186953a2c",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 250,
+          "text": "1. The law's `B_i` term type, given the coefficient the law leaves blank, is a **pure chemical potential**: `-J_B sum_i B_i = -J_B V + 2 J_B N`, a price of `2 J_B` per fermion and nothing else. It adds no motion, no interaction and no scale beyond",
+          "line_sha256": "822f3bac2454cfe649198c2c18d97178ca344e054abe1e5ae02380542a0e2597",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "logs/runner-cache/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.txt"
+      ],
+      "preserve": "Exact Pauli conservation, chemical-potential identity and no induced hopping inside fixed N.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F12",
+      "priority": "P2",
+      "prs": [
+        7885
+      ],
+      "title": "Bind the quoted crossover uncertainty to an executed convergence control or narrow it to L224",
+      "problem": "Only LB=224 is executed and cached. The proof boundary nevertheless claims an L=128,160,192,224 convergence sequence within 3e-6, and F2 labels a single-grid root as a limit with that uncertainty. No data or loop establishing that sequence is present. A reference-number match is not a discretization-error estimate. The analytic small-J coefficient 2/(3pi^2) is independently correct after the negative-band half weight, but does not certify this finite-grid crossing.",
+      "narrow_fix": "Preserve the L224 root/table and label them finite quadrature with explicit discretization/zero-level ambiguity. Withdraw the undocumented convergence sequence/error bar unless its actual immutable evidence is supplied and reviewed. Keep the separately derived small-J limit and its finite-grid resolution warning; no gratuitous larger-grid campaign is needed for a narrow honest repair.",
+      "evidence": [
+        "FINAL_INDEPENDENT_CONTROLS.json",
+        "baseline/7885/stdout.txt"
+      ],
+      "anchors": [
+        {
+          "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+          "line": 796,
+          "text": "LB = 224",
+          "line_sha256": "ed123c1b48d37ef6163f42f57adec9bbeeee3dc8f1bce3ad9adaafc3e5a0459a",
+          "source_sha256": "e7555a77393e22ce41e8dfa119befd0db6c3603dd950fc6c33b8abc8de31335d"
+        },
+        {
+          "path": "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+          "line": 825,
+          "text": "check(\"F2 [numerical] J_B* = %.7f +- 3e-6 in the limit, fillings %.4f staggered \"",
+          "line_sha256": "2538c21f688cd8108347a27d3014a582dbd985327324fbb298a6ed602a438c0b",
+          "source_sha256": "e7555a77393e22ce41e8dfa119befd0db6c3603dd950fc6c33b8abc8de31335d"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 310,
+          "text": "The crossover value is exact only on the `4^3` torus. `0.849332`, `0.867676` and `0.8654003` are numerical, the last from Bloch quadrature whose `L` sequence `128, 160, 192, 224` settles within `3e-6`. Nothing here claims a limit theorem; the limit",
+          "line_sha256": "461dfea8360284f376199752fea3519016aee24c74171d92179ff04978430d75",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "logs/runner-cache/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.txt"
+      ],
+      "preserve": "Finite L224 data, real-space/Bloch spectrum parity checks and the analytic J^3 coefficient.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    },
+    {
+      "id": "F13",
+      "priority": "P3",
+      "prs": [
+        7879,
+        7881,
+        7885
+      ],
+      "title": "Bind current claim and premise text to the evidence and remove stale audit routing",
+      "problem": "All three actual note-derived primary APIs report no helpers, null declared inputs, zero citation edges and fresh caches. Mutating the own canonical note or quoted current memo leaves the cache fresh and its identity unchanged for every primary. Thus current claimed scope is not bound to its evidence, and bare parent file names plus historic landed/audit wording cannot supply that binding. The active 7885 trace directs an audit despite the owner's current deferral.",
+      "narrow_fix": "Add literal current own-note/memo and genuinely used proof/interpretation inputs and direct semantic citation links as appropriate, with actual content checks and cache-first drift/removal controls. Keep historical quotations clearly historical, avoid promoting all cited parent campaigns, and do not invent helper registrations (actual local helper closure is empty). Route current trace to source review under the owner audit deferral, with preserved original caches and quotations. Refresh changed primaries only after notes/declared inputs freeze.",
+      "evidence": [
+        "PREFLIGHT.json",
+        "ACTUAL_CACHE_INPUT_CONTROLS.json",
+        "CURRENT_CONTEXT_BINDING.json",
+        "planning/main/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+      ],
+      "anchors": [
+        {
+          "path": "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 56,
+          "text": "and this note cites none of their grades and consumes no row. Non-load-bearing context pointers, plain file names with no grade and no dependency weight: `MINIMAL_AXIOMS_2026-06-29.md` (the four axioms quoted below);",
+          "line_sha256": "1a3ec951f476e2524aac5088108291f1edf8ddcfa479e6b8afb395c95e5cdbde",
+          "source_sha256": "2ba36f82cc287562d46086ece1147ad2e93c422a0c9cd2a2257dc1092729a2f9"
+        },
+        {
+          "path": "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 75,
+          "text": "**Condition two -- the landed response, quoted with its action and its own force convention.** From `docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`, verbatim: the quadratic source action `A[phi; rho] = (1/2) <phi, H phi> - <P0 rho,",
+          "line_sha256": "87b4a883637df46c724050dde02a9b6e198b100dc3d658c1e39f4d81626d562d",
+          "source_sha256": "e3afef7d7608e275775a84e335f43d10ea488d6c0842c4a1b66eb07cdde950f1"
+        },
+        {
+          "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 38,
+          "text": "next_trace_action: \"Run independent audit on this self-contained finite-cluster theorem, and route to its owner the science-level question this note does not decide: what value the dimensionless coefficient J_B/t takes.\"",
+          "line_sha256": "b7386da15f70d695025983df98882b018989cd61f94a53f506c9864b8d071c68",
+          "source_sha256": "14077ae9413537077600e83d8bd380ecbefe41687a23063a31a092ca9256c3d1"
+        }
+      ],
+      "affected_surfaces": [
+        "docs/MATTER_ABOVE_THE_HALF_FILLED_SEA_ODD_AND_EVEN_DENSITIES_AND_THE_VACUUM_QUESTION_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+        "logs/runner-cache/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.txt",
+        "docs/ENERGY_PRODUCT_AND_TEST_BODY_LAW_ABOVE_THE_HALF_FILLED_SEA_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.py",
+        "logs/runner-cache/energy_product_and_test_body_law_above_the_half_filled_sea_check_2026_09_03.txt",
+        "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+        "logs/runner-cache/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.txt"
+      ],
+      "preserve": "Original three caches and all predecessor provenance; present review is source review only, not applied audit or retention.",
+      "disposition": "CHANGES REQUIRED; original scientific source remains immutable"
+    }
+  ]
+}

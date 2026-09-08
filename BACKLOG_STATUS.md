@@ -1,6 +1,6 @@
 # Backlog review and landing — current handoff
 
-Updated after wave23 on 2026-09-08T07:25:59.579393+00:00. Main is `29cd159477d0a603eb59c931af6ad70a8c3c2473`.
+Updated after wave24 on 2026-09-08T08:38:59.100394+00:00. Main is `4276fe9ee228848ee1d3d53d0824acdcd217b2ce`.
 The owner has fixed this cleanup to the **original 254 PRs**, captured at
 13:10:39 UTC. Exact membership and original heads are in `BACKLOG_CUTOFF.json`.
 New arrivals are excluded. Formal audit waits until a solid TOE.
@@ -9,15 +9,15 @@ New arrivals are excluded. Formal audit waits until a solid TOE.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| PR closed directly after its reviewed landing | **31** |
+| PR closed directly after its reviewed landing | **35** |
 | Closed by draft cleanup or source-preserving consolidation | **110** |
-| Still open, including the three owner-reserved PRs | **113** |
+| Still open, including the three owner-reserved PRs | **109** |
 | Original total | **254** |
 
-**58 original PR-authored scientific scopes now have reviewed corrected dispositions
-newly landed on main:** twenty-nine direct science closures plus twenty-nine constituents
+**62 original PR-authored scientific scopes now have reviewed corrected dispositions
+newly landed on main:** thirty-three direct science closures plus twenty-nine constituents
 closed earlier for consolidation. One meta synthesis (#7976) and one process PR
-(#7972) landed separately. There are thirty-one direct original landing closures.
+(#7972) landed separately. There are thirty-five direct original landing closures.
 
 Of the **110 other closures**, **29** subsequently had their corrected scientific
 scope landed, **77** remain scientifically pending at **7 open successors**,
@@ -30,10 +30,10 @@ and its per-PR JSON for both initial and reviewed heads, recovery and obligation
 There are **zero remaining drafts within the original snapshot**.
 
 Before this cutoff, seven newly arrived PRs (#8003–#8009) were also fully landed.
-Thus the all-session totals are **38 PR closures directly after landing, 23 source batches and
-84 new source documents**, including the new authorship/scope meta checklist and partial extractions from still-open original
+Thus the all-session totals are **42 PR closures directly after landing, 24 source batches and
+88 new source documents**, including the new authorship/scope meta checklist and partial extractions from still-open original
 PRs. These are different measures; neither note counts nor routing closures are
-counts of original scientific scopes covered on main. Twenty-two batches passed
+counts of original scientific scopes covered on main. Twenty-three batches passed
 one combined validation each. Wave14 required a repaired second attempt after a
 real missing-input failure; its first attempt is preserved in
 [the hold evidence](backlog_evidence/wave14-hold/INDEX.json). The applied ledger remains unchanged.
@@ -65,6 +65,7 @@ real missing-input failure; its first attempt is preserved in
 | Conditional shifting-record lifts, loop sectors and finite support models | `efa1126d20be562976ef8e06a6be16a4e22575e9` | `backlog_evidence/wave21` |
 | Conditional discrete-symmetry domains and Hartree/finite-field results | `162584a3e9e009877147c42c3717c214453bc006` | `backlog_evidence/wave22` |
 | Conditional finite spatial and record-coordinate wall corrections | `29cd159477d0a603eb59c931af6ad70a8c3c2473` | `backlog_evidence/wave23` |
+| Conditional finite sea statistics and corner criteria | `4276fe9ee228848ee1d3d53d0824acdcd217b2ce` | `backlog_evidence/wave24` |
 
 Wave14 lands the complete corrected #7846/#7847 scientific scopes and the separate
 #7976 meta synthesis. Calibration-domain and joint-trial premises are explicit;
@@ -175,6 +176,16 @@ survive with explicit domains; exact generic zeros, anomaly inflow and physical
 Record-time claims remain unestablished. One combined validation passed and all
 eight source/manifest hashes were checked on remote main before closure. No audit ran.
 
+Wave24 lands #7883/#7900/#7902/#7904 after original-reviewer confirmation of
+all corrected source and the exact composition. Genuine final caches pass
+32/0, 25/0, 21/0 and 39/0, preserving all 108 original IDs with four predicates
+strengthened. All 12 finding groups are resolved; nine actual scientific mutants
+and 32 input/source adverse cases reject. Exact finite determinants, conditional
+Slater laws, two-mode criteria and eleven non-star examples retain their stated
+domains. They do not supply physical Born/readout, formation or clock laws, and
+no all-family classification is accepted. One combined validation passed; all 14
+source/manifest hashes were checked on remote main before closure. No audit ran.
+
 ## Current assignments and holds
 
 | Owner | Unit | Current state and next step |
@@ -195,13 +206,13 @@ eight source/manifest hashes were checked on remote main before closure. No audi
 | Landed | #7889/#7891 shifting records and confinement | Complete corrected conditional scope accepted; all 44 original checks and finite positive results retained. Physical/model/limit obligations remain explicit. |
 | Landed | #7896/#7909 spatial and record-time walls | Complete corrected conditional source accepted, all 48 old IDs and historical evidence preserved. Finite matrix results do not supply physical mass, time, readout or anomaly response. |
 | Landed | #7894/#7897 discrete symmetries and Hartree mass | Complete corrected conditional scope accepted; all 56 original checks and numerical expressions retained. Physical/model/limit obligations remain explicit. |
-| Author backlog_batch_contract queued after sea/corner seal | #7895/#7899 relaxation and hierarchy | Thirteen finding groups require repair, including per-outcome energy, reset linearity and actual simulated-move coverage. All48 original checks preserved. |
-| Author backlog_batch_contract; original reviewer backlog_8001_review | #7883/#7900/#7902/#7904 sea and corner criteria | Final source and caches are being sealed after narrow label corrections. All108 original IDs, finite positive results and historical failures preserved. Root corrected-source read and original-reviewer confirmation remain. |
-| Author backlog_draft_triage; original reviewer backlog_batch_contract | #7874/#7878 free and interacting flux-sector selection | Original review sealed with 10 P2 and one P3 findings. Root verified full original evidence and source maps. Separate author is active; no acceptance yet. |
-| Original reviewer backlog_8001_review | #7879/#7881/#7885 vacuum and energy response | Same-session original review resumes from checkpoint after walls confirmation. All73 original runs and decisive provisional findings preserved; complete proof/provenance and claim dispositions remain. |
-| Reconciliation complete | Thirty-one direct landings and 110 other closures | All 141 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
+| Original reviewer backlog_draft_triage | #7895/#7899 relaxation and hierarchy | Author corrections sealed and root verified. Final confirmation binds the exact wave25 composition; supplied reset, finite means, diffusion and first-hit domains remain distinct. |
+| Landed | #7883/#7900/#7902/#7904 sea and corner criteria | Complete corrected conditional source accepted, all 108 original IDs and historical evidence preserved. Physical probability, readout, formation and clock suppliers remain open. |
+| Original reviewer backlog_batch_contract | #7874/#7878 free and interacting flux-sector selection | Author corrections sealed and root verified. Final confirmation binds the exact wave25 composition, branch ordering, finite results and genuine refreshed evidence. |
+| Author backlog_draft_triage, paused for priority relaxation confirmation | #7879/#7881/#7885 vacuum and energy response | Original review sealed with 13 finding groups and 23 claim scopes. Exact original preparation preserved; separate author resumes next, then original reviewer confirms. |
+| Reconciliation complete | Thirty-five direct landings and 110 other closures | All 145 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
-| Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |
+| Original reviewer backlog_8001_review | #6377 and eleven consolidated original scopes | Full 54 authored paths and actual transitive supplier closure under review. Historical memo transitions and old scalar Record-additivity consumers require reconciliation; no execution or scientific PASS yet. |
 | Held | Eta pair-process | Old additivity-registry pins and historical Git/status fixtures require current-premise reconciliation. No full source PASS. |
 | Held | Curved covariance | Actual closure reaches reserved science. No raw tower landing or full source PASS. |
 | Open | #7966 field remainder | Preserve failed production and exact source/sector/estimator distinctions. Review actual remaining closure before further computation. |

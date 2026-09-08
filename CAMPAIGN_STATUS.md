@@ -50,18 +50,14 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. The #6371 and #6358 consolidated Record units and the combined
-   #7848/#7849/#7942 source are on main with reviewed corrected scopes.
-   The corrected #7888/#7890 finite matter source is also on main, alongside
-   the corrected #7889/#7891 source, now independently reviewed and landed.
-   The corrected #7894/#7897 symmetry/Hartree source is also landed.
-   Corrected walls source is independently reviewed and landed.
-   The sea/corner author is actively repairing all four
-   units. Relaxation/neighbourhood original review is sealed; its separate repair
-   author is queued after sea/corner. Flux author repairs are active. Flux original
-   review is sealed with changes required. Vacuum/energy resumes from its
-   73-check checkpoint with the same original reviewer; decisive provisional
-   findings and all prior source/provenance remain preserved.
+1. Reviewed corrected Record, Noether, matter, shifting, symmetry/Hartree,
+   walls and sea/corner source units are on main; exact scopes and commits are
+   in BACKLOG_STATUS.md. Flux and relaxation author packets are sealed and root
+   verified; both original reviewers confirm the combined wave25 target.
+   Vacuum/energy original review is sealed with 13 finding groups. Its separate
+   author is paused after original preparation until relaxation confirmation.
+   The #6377 successor and eleven consolidated originals are under complete
+   source/dependency review; no supplier tower or scientific PASS is accepted.
    #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
    reserved-source hold. Closure reconciliation is complete; 77 pending closed
    scopes remain at seven successors. Preserve the fixed 254 and all reservations.
@@ -75,8 +71,3 @@ joint-law selection remain open.
 Discovery continues with selective decisive checks and coherent review milestones.
 Workers preserve their evidence and report to the coordinator, who owns shared
 planning and GitHub changes. Complete historical campaign context is archived.
-
-The relaxation/hierarchy original review is now sealed with 13 finding groups;
-the separate repair author is queued after sea/corner seal. Flux corrections have begun with the
-separate author. The walls density correction and actual final refresh are
-accepted at plane-marginal scope; all first-review evidence remains preserved.

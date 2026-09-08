@@ -1,0 +1,52 @@
+# Original #7895/#7899 correction packet
+
+The seven-path author candidate addresses the thirteen original finding groups while preserving the two complete original scientific scopes and all 48 original check identities. **This is an author handoff, not a source verdict.** The original reviewer must independently confirm the coordinator's final composed source and manifest. No physical law, new axiom, applied audit status or parent campaign is accepted here.
+
+Base `29cd159477d0a603eb59c931af6ad70a8c3c2473`; final source tree `e4e4cf75deb58845f4582293a06cd021869b5c24`. Candidate patch SHA-256 `bfc606537aec113a57179576942b8690e93ee44277faa89245429beb51889f54`; full original-to-final correction `e1207eb6201c39256bf59ab7deec1e7111619052469ed9c4941d531a4195a311`. The final inventory SHA-256 is `8ce0433e17d3e3cc6b29892f0aba0d122b92b0c011638ce253d54c73770c0383`. SOURCE_FREEZE.json is the immutable source identity; metadata completion does not change that source.
+
+## Source and obligation preservation
+
+#7895 remains bound to head 9d045e6225def0e9b89772b4175477275fab9079 and raw parent 36fe57a7a784df31bc2178c4b94dfc7caaa5d094. #7899 remains bound to head b760f072066e17a1c9f26dac1a1c9e9e49cacb63 and raw parent a950a1aacfb33c10699dc88ac2f441d7024ad109. Each actual raw-parent delta contains exactly three additions. The six original files, Git modes/blobs and original raw caches remain recoverable at those objects and in original-source/. The additional path is one dated correction/history record outside active docs discovery. There are no selected deletions or copied inherited science.
+
+The complete final map contains 30,117 actual path rows with original heads/parents, initial selected source, historical/current main and author final columns. All 28,824 base paths remain byte/mode exact. All 12 pinned current context/tool files are unchanged. Failed visible merge-base queries in the original review remain unknown ancestry, never empty deltas. The original sealed reviewer receipt `f756b6ecab43a11773c213d2b2ec3fee7ad123cdc3eadb374dbf7c82125a3a09` and all 148 bound artifacts were reverified. That packet preserves the once-only original 26/0 and 22/0 baselines and original false negatives; it is not rewritten.
+
+FINAL_CLAIM_DISPOSITIONS maps every original theorem group (seven relaxation and five hierarchy) and both full scope/corollary surfaces: fourteen complete original/final dispositions with exact final section text/hashes. FINDING_DISPOSITIONS retains all thirteen original finding objects, verifies every original excerpt and binds 41 final source anchors. Raw historical statements remain provenance; corrected active claims do not silently inherit their former scope.
+
+## Mathematical corrections
+
+The relaxation state lives in the actual 4096-dimensional ambient record block after Z recording; the 128-dimensional face code is a distinct even-Fock representation. The restriction identity has end projectors and signed surviving hops, and H=iM squares to MM transpose. None of the original finite matrices, spectral menus, tree laws, charge rows or tolerances was replaced.
+
+For fixed records, the reset X→Tr(X)Pi/deg is linear CPTP, as shown by complete Kraus operators. Outcome normalization is separate. The stated Lindblad semigroup tends to ideal reset only asymptotically; it does not provide a physical finite-time formation or sea-selection mechanism. Sequential commuting Lueders remains a positive alternative with an exact ideal chain-rule argument, while actual L/A recursion retains its 1e-15 relative branch threshold. The MR trees enumerate all 4096 leaves; no all 12! order census is asserted.
+
+The energy formula is a Lueders-weighted average, while the old difference subtracts means under two distinct laws. All twelve original energy rows remain numerically unchanged. Thirty-two actual mask31 conditional rows now include the positive-weight outcomes with energies−2sqrt3 and−(5/2)sqrt3, and verify their weighted mean−7/sqrt3. F5 now rejects negative values falsely presented as a zero. The conditional Z commutant requires the supplied dictionary and nondisturbance requirement; it does not select a physical measurement.
+
+The hierarchy uses accumulated oriented centroid increments with trace covariance divided by six ticks. K1, BR null proposals, whole-block translations, axis normalization and the separate 16-site ring have explicit domains. The actual block census recovers translations from resulting member sets before measuring displacement, including wrap crossings; all four 3072-event censuses survive.
+
+The short stationary martingale proof retains the useful exact coefficient `6D=127.5exp(-g)/(6+505exp(-g))`, all six original numerical values, finite trimer census, rupture times and mean broken excursion 101. At g=0 exclusion persists (510/511 of the unexcluded reference); infinite cost freezes intact starts and concentrates stationary weight without removing moving broken states. The generic finite moment recursion is not promoted to a general limit theorem.
+
+Uniform tilt retains positive rupture. The h* formula compares mean lifetime to inverse drift, while the explicit q=.5,g=1,h=2 crossing-before-rupture probability is .617757322145836. The original ring data concern first A=0 versus first A=3 from (0,1,4,5); actual A=3 escape exp(−4)/4 rules out permanent merging. The separately declared KMBR mixture has its own exact stationary coefficient, including .624755381604697 at q=.5,g=0, instead of borrowing the glued coefficient. Cube block dynamics remains uncomputed.
+
+The Gauss comparison uses actual parent edge permutation `[0,3,5,7,1,4,8,10,2,6,9,11]` plus link-bit inversion. All 14,400 states and 172,800 same-edge memberships match the oriented hopping support with nonzero hopping. The separate ring term permits the explicit y3425,l600→360 face cycle, so the census is not full-Hamiltonian support. Ambient N=2 union 896 is distinguished from a fixed parity sector/code. These relation tests infer neither nonzero rates nor a permanent fine-site Record instrument.
+
+## Execution and adverse evidence
+
+All 48 original IDs remain; 47 original predicate ASTs are exact, and F5 is strengthened by absolute value. The original A3/E1 predicates remain while actual block-motion and table data suppliers are strengthened. The 25 original relaxation functions/classes and 25 of 30 original hierarchy functions retain their computational AST after display/docstring normalization; the five changed hierarchy bodies are block_census and groups B/C/D/E, containing the disclosed controls/corrections. All original numeric literal occurrences remain. This is exact preservation evidence plus a cold correction read, not an assertion that AST/literal counts prove mathematics.
+
+| runner | final genuine checks | actual child seconds | declared cap | peak aggregate RSS KiB |
+|---|---:|---:|---:|---:|
+| #7895 | 29/0 | 46.57 | 120 | 166800 |
+| #7899 | 28/0 | 3.11 | 150 | 160960 |
+
+The actual current runner-cache child was first probed for first/last stdout, merged stderr, cwd and explicit BLAS1 environment. Each run has complete stdout/stderr, a 2GiB watchdog and equal pre/post execution identities. Final caches are fresh under current real tooling; a printed CLI exit 0 was not used as a substitute for payload checks. Both full caches and all emitted numerical rows were read. The twelve energy rows and six original diffusion rows were compared directly with original captured values.
+
+Seven actual scientific adverse cases reject: original negative-drop F5 replay fails; six complete-source hierarchy mutants fail for frozen block motion, diffusion prefactor 128, absent link inversion, absent edge permutation, falsely absorbing compact ring, and the glued coefficient substituted in a breakable mixture. Their complete changed source, raw outputs, return codes and final-source bindings are retained. Final INPUT_SOURCE_CONTROLS contains 22 cases: drift/removal/declaration omission on all six input edges, plus each primary's source drift/removal. Actual cache status, source readiness and live pre-physics guards fail appropriately. Missing primary readiness is tested separately from stale-cache status.
+
+One avoidable post-run prose propagation correction is disclosed in INCIDENTS and preserved in first-successful-freeze: four 7895 summary/proof sentences were narrowed to match the already stated L/A threshold; only its own-note pin changed. The genuine #7895-only refresh reproduced byte-identical full stdout. #7899 and its controls were not rerun. F5 controls reuse the exact unchanged predicate/computed input values, and final 7895 input controls were replayed on the final pin. No source change remains after this freeze.
+
+## Input/publication closure and limits
+
+Both actual filename-derived IDs resolve the correct bounded_theorem primary through the graph and packet-consumer APIs; both actual helper APIs return zero. There are six declared/live-guarded input edges: each own note and current memo, plus hierarchy's two actual parent definition files. Three Markdown premise citations are recognized (two memo edges and the hierarchy parent-note edge). The parent runner is a pinned definition comparator, not an imported runtime helper or a reason to accept its entire science chain. The full final tool/input/cache/readiness result is in FINAL_INPUT_CLOSURE.
+
+The complete original and corrected source was cold-read with unchanged bodies reused only at exact hashes and altered source explicitly examined. Governing memo and narrowly used parent definitions are source-bound; no missing larger parent campaign is accepted from titles, quoted counts, retained labels or ancestry. Reserved #6379/#6858/#6859 science remains excluded.
+
+The positive results are conditional finite mathematics and explicit supplied stochastic protocols. Physical roles, prepared sea, Born/instrument law, transition weights, compatible local support, permanent formation, clock and readout are supplied or unresolved. Actual positive alternatives remain: sequential Lueders, N4 reset, block motion, leapfrogs, finite-cost rebinding and Gauss face cycles; partial/dissipative and formation routes remain open. No independent-wall count, N1 quota or completed N1–N8 physical no-go is invented. Formal audit is owner-deferred until a solid TOE. The coordinator owns current-main composition, manifest, one combined gate and any external actions; the original reviewer owns final confirmation.
