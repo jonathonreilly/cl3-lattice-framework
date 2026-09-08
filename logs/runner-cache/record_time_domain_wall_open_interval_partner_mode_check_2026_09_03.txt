@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/record_time_domain_wall_open_interval_partner_mode_check_2026_09_03.py
+runner_sha256: 01a656e5d44c3ef35650d19e5f07e730a4a9a1cebbaaeaf27f72b9f4f68714dd
+input_fingerprint_sha256: a888ea1e3c31623ffae0717ddccdcfa5517dc8facd22d459b7fbe1056c5490a1
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 61.81
+status: ok
+----- stdout -----
+INPUT_SHA docs/THE_RECORD_TIME_DOMAIN_WALL_ON_AN_OPEN_INTERVAL_WHERE_THE_PARTNER_WEYL_MODE_LIVES_BOUNDED_THEOREM_NOTE_2026-09-03.md ac911d59c9bfaa54a1553f102df533a2dc1cdaae42df316adc3c250471eb7c52
+INPUT_SHA docs/MINIMAL_AXIOMS_2026-06-29.md 93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753
+INPUT_SHA docs/NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md 03747906f5b5b63ae6e4c0d26f017893b95fc23c3df56974c595292f6d8706ef
+SOURCE_INPUT_GUARD: exact current inputs; broader parent claims unaccepted
+== A  T1  the historical periodic circle, N_s = 64, M = 0.8, r = r_s = 1
+PASS A1 [1e-6] wall s=16, anti-wall s=48: 4 light states at p=0, max|E| 4.557e-09, next gap 0.801204 (historical 0.801204)
+PASS A2 [1e-8] wall: window top-2 0.798565653 0.798565653 (historical 0.798565653), peak 15, xi_L 0.621335, xi_R 1.701298, <chi> +1.000000000000, handedness -1
+PASS A3 [1e-8] anti-wall: window top-2 0.880610823 0.880610823 (historical 0.880610823), peak 48, xi_L 1.701298, xi_R 0.621335, <chi> -1.000000000000, handedness +1
+PASS A4 [exact] light counts at the eight BZ corners [4, 0, 0, 0, 0, 0, 0, 0]: the species sits at the supplied p=0 corner alone
+PASS A5 [1e-10] chirality density +1.999950592685 in the wall zone [8,24), -1.999950592685 in the anti-wall zone, residual 0.0e+00, net on the circle +0.000000000000
+== B  T2  the open record-time interval, N_s = 64, light cut |E| < 0.40
+PASS B1 [1e-12] one wall, hard ends: 4 light states, max|E| 5.93e-16 -- below floating resolution, not exact zeros -- next |E| 0.801213, net chirality +0.000000000000
+PASS B2 [1e-8] the wall doublet (peak s=31) has <chi> +1.000000000, handedness -1, xi_L 0.6213, xi_R 1.7013; the PARTNER doublet sits at the left end (peak s=0, IPR 0.9231), <chi> -1.000000000, handedness +1
+PASS B3 [1e-6] the right end is EMPTY (no rank-2 light doublet): zone chirality -2.000000000 left end, +1.999999996 wall, +0.000000004 right end
+PASS B4 [1e-12] FREE (Neumann) ends give the IDENTICAL count: 4 light states, max|E| 1.04e-15, net -0.000000000000, partner still at s=0, bound less tightly (IPR 0.8427 against 0.9231)
+PASS B5 [1e-8] a MIRRORED mass puts the partner on the other end: peak s=63, IPR 0.9231, <chi> +1.000000000, zone +2.000000000 against the wall's -1.999999987 -- the hosting end is fixed by the profile, not by the end convention
+PASS B6 [1e-8] pinning the Wilson mass to the TRIVIAL sign (m=+4.0) on the 4 end sites leaves the partner in the spectrum at s=4, the inner edge of the pinned region: IPR 0.8548, <chi> -1.000000000, zone -1.996923274, net +0.000000000000
+PASS B7 [1e-12] a UNIFORM topological mass with NO WALL gives the same pair on the two boundaries: 4 light states, max|E| 9.19e-16, <chi> -1.000000000 at s=0 and +1.000000000 at s=63, net +0.000000000000 -- the wall is sufficient for localisation, not necessary
+PASS B8 [exact] a UNIFORM trivial mass gives 0 light states (next |E| 0.802526): the light chirality is an interface effect, not a bulk mode
+   q/pi, open |E|, circle |E|, |sin q|:  0.05 0.15643447 0.15643447 0.15643447 | 0.10 0.30901699 0.30901699 0.30901699 | 0.20 0.58778525 0.58778525 0.58778525
+PASS B9 [5e-9] approximate finite Weyl dispersion: |E| agrees with |sin q| to eight decimals through q = 0.2 pi, identical on the interval and on the circle
+PASS B10 [exact] BZ corner counts [4, 0, 0, 0, 0, 0, 0, 0] (open, one wall) and [4, 0, 0, 0, 0, 0, 0, 0] (open, uniform topological) agree with the circle's
+PASS B11 [labelled integer diagnostic] finite flux-WINDOW switches for actual POSITIVE flux through x-y torus (L_x=L_y=3, N_s=16, L_z=7, 15 twist steps): circle_2wall wall+1 anti-1 = +0; open_1wall left_end-1 wall+1 right_end+0 = +0; open_pinned left_end-1 pin_edge+0 wall+1 right_end+0 = +0; open_uniform_top left_end-1 right_end+1 = +0 -- +1 on the wall branch, -1 on its partner under these window labels only; avoided gap, no inflow theorem
+== C  T3  the counting rule on a DECLARED family: complete enumeration, no randomness
+PASS C1 [exact] the declared family is the COMPLETE ENUMERATION of piecewise-constant profiles on N_s=32 with breakpoints on the coarse grid (8, 16, 24), adjacent segment values distinct, from the alphabet (-3.0, -1.5, -0.5, 0.5, 1.5, 3.0): 1296 profiles, [6, 90, 450, 750] by transition count, each on the open interval and on the circle -- 2592 members, no randomness and no seed anywhere
+PASS C2 [cutoff/count] on each EXECUTED member the number of |E|<.25 states is TWICE the tau-transition count of the sequence bracketed by the trivial vacuum ([0, tau_1..tau_k, 0] open, cyclic on the circle): 1296 open and 1296 periodic members, MISMATCHES = 0
+PASS C3 [1e-14] net chirality is zero on EVERY member: worst |net| 6.661e-15 over all 2592 members
+   uniform open slab N_s=48, m/tau/n_light:  -3.0/0/0  -2.5/0/0  -1.5/1/4  -1.0/1/4  -0.5/1/4  +0.5/0/0  +1.5/0/0  +3.0/0/0
+PASS C4 [eight finite samples] bulk interval -2 r_s < m < 0 compared at eight declared masses: four |E|<.30 states at the three tested inside masses, zero at five tested outside; no complete finite interval theorem
+== D  T4  how unpaired the wall's species is
+   half-width W, deficit of the window chirality from +2:  2 5.940e-02  4 5.448e-03  8 4.941e-05  16 4.068e-09  24 3.366e-13  32 1.776e-15
+PASS D1 [1e-14] the wall's local chirality inside a half-width-32 window is +2 to 1.8e-15 (N_s=128), against 4.94e-05 at W=8 and 4.07e-09 at W=16: a finite local-window deficit, balanced globally in this finite model
+   L_5, circle max|E_light|, interval max|E_light|:  16 6.10e-03 2.06e-06  24 5.81e-04 3.29e-09  32 5.53e-05 5.26e-12  48 5.02e-07 3.00e-15  64 4.56e-09 1.86e-15
+PASS D2 [monotone finite data] the light levels decrease above numerical floor on both geometries, and the interval values fall faster at sampled sizes, consistent with the short-xi side (xi_L 0.621335 against xi_R 1.701298) -- reaching numerical floor by L_5 = 48, not exact zero
+== E  T5  a nonindependent supplied-data inventory; actual withdrawal domains
+PASS E1 [exact reconstruction] a nonindependent supplied-data inventory -- an ordered coordinate s with nearest-neighbour adjacency; K_s; r_s L_s; Gamma_s; m(s), not necessarily sign-changing; a chosen finite L_5; a boundary condition -- and rebuilt from them alone it reproduces group B's open one-wall operator at residual 0.0e+00
+PASS E2 [full-operator norms] removing K_s, r_s L_s, the coupled Gamma_s term, or m(s) changes the operator by 11.225, 19.545, 11.225, 12.800
+PASS E3 [separate comparator] additionally remove spatial Wilson data and halve the embedding to obtain the naive spatial operator D(p) = i sum_i sigma_i sin(p_i): 8 zeros on the Brillouin torus, winding signs 4 positive and 4 negative, net +0.  Record / Fixed Reality reads "A site never carries more than one record; records are permanent", so the per-site record set is EMPTY OR SINGLETON and record time is a supplied extra dimension, not a re-reading of a per-site stack; the axiom memo's Open Gates list puts "arrow, record-production dynamics, physical persistence dynamics, time metric, and local observability of records" outside axiom content
+PASS E4 [exact diagonal comparison] the companion spatial-wall model is DIFFERENT, with no common physical no-go inferred: there eps_{v+e_x} = -eps_v at residual 0.0, so a supplied sign flip is a one-site translation of the alternating pattern and min|m(x)| = 1.0 -- no plane carries a vanishing mass -- while here tau steps 1 -> 0 across the wall and the light states are finite low levels, not generic exact zeros
+PASS F1 [exact determinant/Decimal bounds] declared finite hard/free bidiagonal diagonals are nonzero; intended rational splitting has positive inverse-norm bounds below 1e-20, not exact zero
+PASS F2 [actual finite flux matrices] square identity and positive endpoint gaps .00407991368,1.60326484 exclude continuous zero crossings; window switches span an AVOIDED gap
+PASS F3 [finite cutoff counterexamples] all four near-boundary Ns48 fixtures have 20 |E|<.30 states on BOTH sides of bulk window
+PASS F4 [actual withdrawal] remaining4x4 spatial Wilson block differs from separate naive2x2; full removed Gamma_s term norm equals K term, not ||Gamma_s||=2
+SUMMARY: supplied finite boundary-localized low spaces, balanced chiral pairing, full finite cutoff census and signed window diagnostics across an avoided gap. No exact generic finite zero, anomaly inflow, independent-wall count or physical Record-time/readout supplier.
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+
