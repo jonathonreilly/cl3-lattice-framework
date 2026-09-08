@@ -48,14 +48,13 @@ and unsupplied joint-law assumptions. Narrow repairs preserve its conditional ma
 
 ## Next scientific decisions
 
-1. Complete the narrow matter/U1, pure-link and #7990 repairs, then obtain
-   the respective original reviewers’ confirmations. The smaller #6371 selector/shell
-   review is assigned to backlog_8001_review from the completed preparation; #6358 remains prepared.
-   Matter/link corrections are frozen for final confirmation; #7990 authoring is checkpointed
-   while its author performs that independent confirmation.
-   #7847/#7846 science and #7976 meta synthesis now join the previous landings.
-   Closure/content reconciliation is complete; pending closed scopes remain
-   obligations at their named open successors. Preserve all premise and reserved-source holds.
+1. Matter/U1 corrections are now on main. Finish pure-link and #7990 corrections
+   and their original reviewers' confirmations. The #6371 selector/shell original
+   review has found concrete race-closure and test-coverage defects; freeze findings
+   before narrow repair. #6358 remains prepared; #5966 has partial source/first-hop
+   preparation with an old Record-additivity premise requiring reconciliation.
+   Closure/content reconciliation is complete; 83 pending closed scopes remain
+   obligations at their nine open successors. Preserve all premise and reserved-source holds.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

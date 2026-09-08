@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
 Verified source/status snapshot: 2026-09-07, main
-`2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f`. This is a planning map, not
+`848bd31acd49e5ced43f6fa576aa9fc254be36d3`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -16,8 +16,8 @@ finite additivity and I(empty)=0. Older proofs requiring those clauses need
 an explicit supplier. README paraphrases and old skills are not substitutes.
 
 The tracked ledger contains 4,475 rows: 4,105 non-meta science rows and 370
-meta rows. The latest fifty-four source documents (including proposal/meta material) have not been added to the applied
-ledger: mechanical validation generated fifty-four unaudited source entries locally, then
+meta rows. The latest fifty-seven source documents (including proposal/meta material) have not been added to the applied
+ledger: mechanical validation generated fifty-seven unaudited source entries locally, then
 stripped those generated files. No audit status was applied. Every tracked science row has audit_status and effective_status
 `unaudited`. Counts were computed from every tracked shard; see
 [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
