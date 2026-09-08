@@ -198,6 +198,59 @@ gate even if source bytes look identical. A changed premise, input, source byte,
 or semantic interaction reopens the affected conclusion even if a PR head did
 not change. Both require renewed frozen provenance and same-session confirmation.
 
+### Overlap repairs and review without changing acceptance
+
+When repair authorship is authorized, hand off evidenced, finding-scoped fixes
+before the original review finishes if their source and dependency boundary is
+already bounded. Freeze the original heads, deltas and inspected inputs; the
+author works on a separate copy while the original reviewer continues reading
+the immutable originals. This is one unit, not a concurrent second review of
+its constituents. Early findings are provisional, not a complete finding set
+or permission to enroll the unit. Keep finding IDs and evidence revisions in
+an append-only record, including superseded or withdrawn findings. Later
+counterevidence can invalidate an early fix: revise or withdraw it, reopen any
+affected shared source, premises and dependents, and retain the earlier record.
+Before final repair executions, reconcile the complete original review with
+the correction and freeze all changed prose, source and actual inputs. The
+original reviewer still covers the complete final unit and all applicable
+lenses, independently checks the mathematics, and confirms the affected
+corrections and interactions in the same session.
+
+Prioritize a ready final confirmation with its original reviewer before that
+reviewer starts another unit's long run or review. Switch at a safe execution
+boundary: finish an active bounded run or preserve its supported checkpoint
+and outputs; never kill it merely to improve queue latency or silently rerun it.
+The coordinator can read an immutable correction draft, proof-critical findings
+and publication/input changes while the author finishes bounded controls.
+Check actual note discovery, citation targets, primary/helper bindings and
+declared inputs before expensive final runs. This early read does not replace
+the author's complete cold diff read or final independent confirmation. If an
+input changes after execution, preserve the prior receipt; never restamp it.
+Re-execute affected evidence only within the actual authorization and budget.
+
+Reuse independently verified immutable mechanical facts, such as complete Git
+path/mode/blob inventories, when their exact object identities and checked
+scope match. Cache the verified facts, not an assumption that an inventory is
+complete: retain deleted/inherited content and the verification provenance.
+Recompute changed endpoints and check current-main preservation and semantic
+interactions; unchanged bytes alone do not establish unchanged premises.
+Prefer tested existing tools to bespoke scripts, but do not claim an absent
+verifier exists. `scripts/open_pr_science_coverage.py` records self-reported
+reading coverage; it does not verify complete constituent/proof closure or
+grant semantic coverage, receipt authenticity or PASS. Mechanical reuse never
+substitutes for complete source/claim accounting or independent scientific reads.
+
+Prefer one canonical unit record with immutable evidence references and
+generated handoff/status summaries over several manually repeated packets.
+Keep proof explanations, original/current identities, finding dispositions,
+failures, commands and final reviewer bindings explicit in that record.
+Historical success, provisional findings and final confirmation remain distinct.
+Schedule bounded contemporary units separately from legacy dependency recovery
+when useful; preserve every legacy obligation and reserved-source boundary.
+File counts do not establish a bounded closure. These scheduling choices do
+not expand an owner-frozen backlog: the active campaign retains its original
+254 PR cutoff, with new arrivals excluded unless the owner changes that scope.
+
 Perform focused source, runner, premise, vocabulary, and all three diff checks
 per unit before freezing it. Reuse a prior focused result only when its exact
 source, input, hypotheses, tool versions, and checked conclusion still match.
@@ -1661,9 +1714,12 @@ After fixes, run the smallest relevant checks:
   check signs/factors/normalizations, run a second implementation or symbolic
   simplification when practical, and add finite edge-case or invariant checks
   when they would have caught the suspected class of error;
-- if many changed runners are part of the branch, execute all practical
-  changed runners with a bounded timeout, then rerun any timeout once with a
-  longer timeout before classifying it as slow rather than broken;
+- inspect resource cost before executing practical changed runners within the
+  actual owner-authorized time, memory and attempt limits. Preserve every
+  timeout, failure and partial output. A timeout is operational evidence, not
+  scientific falsification; retry or extend a limit only when authorized and
+  justified by a concrete recovery need. Do not automatically rerun unchanged
+  successful science or override a once-only run instruction;
 - any reproduction commands named in changed notes when practical;
 - publication/control-plane consistency checks by reading changed tables and
   nearby authority surfaces.

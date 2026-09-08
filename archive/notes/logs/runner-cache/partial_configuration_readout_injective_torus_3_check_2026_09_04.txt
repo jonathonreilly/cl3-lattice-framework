@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/partial_configuration_readout_injective_torus_3_check_2026_09_04.py
+runner_sha256: 35df171d73abdf02bbc1ff7a24d674155c5acf32cb88c177689053b8f5210e66
+input_fingerprint_sha256: 60e2bb653bf10a218514788303120630a43fc233f1e76dfb6fabc81c1d4f2ed2
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 17.83
+status: ok
+----- stdout -----
+external_scientific_inputs: none; every number is recomputed here
+integrity_reads: axioms, deep probe, law pair, history-index note
+construction: complete decision on 3^3; declared verified witnesses
+negative_scope: three exact finite unsatisfiability statements on 3^3
+AUDIT_INPUT_PATHS:
+  docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md
+  docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md
+AUDIT_TIMEOUT_SEC: 300
+cache_write: false
+scientific_dependency: minimal_axioms Admissibility and Record clauses
+declared_math: cubic rotations, ternary support tables, 48-bit demand masks
+solver_mode: pysat present; CaDiCaL, Glucose with DRUP, MiniSat
+PASS: audit-input-paths declared audit inputs exist and are unique
+PASS: audit-timeout the declared timeout is 300 seconds
+PASS: axiom-record-readable the Record clauses on readability and absence are quoted
+PASS: axiom-record-state the Record clauses on formation and states are quoted
+PASS: axiom-admissibility the live Admissibility sentence is quoted in the note
+PASS: axiom-support reading note (3) equating availability with support is quoted
+PASS: axiom-partial-licence no clause requires every site to carry a record or names an order
+PASS: parent-deep-probe the deep probe's 3^24 census is live and cited
+PASS: parent-law-pair the 2026-08-13 law pair is live
+PASS: parent-history-index the history-index note is live and named
+PASS: T1-census 729 profiles, 57 orbits, 9 flip-fixed, 24 flip-pairs
+PASS: T1-tables the table space is 3^24 = 282429536481, the demand word 48 bits
+PASS: T1-two-paths vectorised and scalar mask paths agree on 8192 configurations
+PASS: T1-local mask(c) inside S is exactly a 7-site-star condition
+PASS: T1-cnf the CNF holds on a configuration exactly when its mask is inside S
+PASS: T1-invariance the mask is fixed by 27 translations, 24 rotations and the flip
+PASS: T1-wlog every realiser of a demand bit maps onto the pinned origin star
+PASS: T2-witnesses 50 declared 3^3 witnesses carry exactly their target mask
+PASS: T2-enumeration the complete backtracking enumeration realises no target, 55 legal
+PASS: T2-blind pairs 11, 16 and 17 admit no digit-confined mask on 3^3
+PASS: T2-half pairs 14, 18, 21 and 23 are read to a binary choice on 3^3
+PASS: T2-pair-23 pair 23 is realised by a complete 27-record configuration
+PASS: T2-table 17 digits exact, 4 to a binary choice, 3 blind; fibre 432 = 3^3 x 2^4
+PASS: T2-solver-verdicts CaDiCaL reproduces the 50 satisfiable and 22 unsatisfiable rows
+PASS: T2-second-third-solver Glucose and MiniSat confirm all 22 unsatisfiable instances
+PASS: T2-drup every unsatisfiable instance carries a DRUP refutation
+PASS: T3-pool 3117 declared masks re-verified from their witness configurations
+PASS: T3-antitone visibility is antitone in the block set on the declared chains
+PASS: T3-requirements 96 requirements decided without a solver; 95 met, only C0 at pair 22 not
+PASS: T3-requirements-sat CaDiCaL and Glucose reproduce all 96 verdicts
+PASS: T3-injective the readout separates all 3^24 = 282429536481 tables; fibre 1
+PASS: T3-joint the blind digits are read jointly with the isolated digits 0 and 1
+PASS: T4-torus-4 72 declared 4^3 witnesses carry exactly their target mask
+PASS: T4-holdouts each 3^3 hold-out is read by an isolated mask at L = 4
+PASS: T4-torus-5 72 declared 5^3 witnesses carry exactly their target mask
+PASS: T5-mirror the three sites of an axis line are mutually adjacent at L = 3 only
+PASS: T5-mirror-pairs one open site of a 3-cycle gives both partners the same mixed axis
+PASS: T5-box-witnesses 19 declared witnesses sit inside a wrap-free block and hit their target
+PASS: T5-split wrap-only pair 4; diameter 4 for 17 targets; 4 genuinely periodic
+PASS: T5-periodic-density the four periodic targets need 52 to 64 records on the 4^3 torus
+PASS: T5-box-decision the block-confined re-solve reproduces both realised sets exactly
+PASS: note-length the note stays under 330 lines
+PASS: note-registry-id the note declares its registry id
+PASS: note-vocabulary the note avoids process, closure and site-rewriting vocabulary
+PASS: note-scope the note selects no law and states its bounded scope
+PASS: note-correction the note records that the earlier bound stands and understates
+PASS: note-numbers the note carries the decided counts it claims
+per_element: 729 profiles, 48 demand bits, 3117 declared masks classified
+per_site: each site of the 3^3, 4^3 and 5^3 tori evaluated in both paths
+per_mode: checked and not executed - no spectral decomposition here
+per_block: 24 flip-pairs, 96 requirements, 19 block-confined witnesses
+lattice_wide: 3^3 decided completely; 4^3 and 5^3 by declared witnesses
+TOTAL: PASS=47 FAIL=0
+
+----- stderr -----
+

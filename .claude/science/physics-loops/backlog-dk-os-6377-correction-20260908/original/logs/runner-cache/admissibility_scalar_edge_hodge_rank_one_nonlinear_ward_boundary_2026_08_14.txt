@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_2026_08_14.py
+runner_sha256: 00b87b6400960fa3696dfda65e69f94b1e0833d64eed03b9b4aa2222f86aaab3
+input_fingerprint_sha256: f61e2ad6e759a9d05ed99e87474f6ede75ac7df6d17c0637423835fb3914154b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.58
+status: ok
+----- stdout -----
+[PASS] A-current-authority-and-Block101-parent: current axiom authority and the exact stacked Block101 parent are content-bound
+       origin/main=43ba558794; parent=5a55df461a
+[PASS] B-genuine-edge-Hodge-first-order-failure: the nearest-neighbour edge-weight vertex fails the necessary first-order Ward row at exa...
+       DeltaM=0; t=-2 + sqrt(2); gauge residual=4 - 4*sqrt(2)
+[PASS] C-range-two-first-order-common-action-construction: the changed range-two M/D/V triplet is finite, reversible, and satisfies the exact divid...
+       support radii M/D/V=2/2/4; exact phased Ward cancellation, centered reversal, and mixed-Hessian reciprocity
+[PASS] D-shell-source-mixed-Hessian-and-old-alias-separation: the range-two candidate preserves the exact null-shell source, common-action mixed-Hessi...
+       rho=1, j=0, tau_xx=1, cross=0; all 24 reflected old aliases acquire |DeltaM|=sqrt(3) and changed stress
+[PASS] E-new-L8-nonlinear-shared-response-contradiction: two exact equal-level rows require opposite values of one geometry-only nonlinear response
+       row A: M=3,Vxx=9/8,DeltaD=i -> Rhat=i; row B: M=7,Vxx=1/8,DeltaD=-i -> Rhat=-i
+[PASS] F-isotropic-componentwise-rank-one-analytic-periodic-boundary: componentwise divided difference plus real analyticity extends the shared response acros...
+       real analyticity extends across isolated zeros; four shifts give 4C=0 while d(pi/2)-d(0)=1
+[PASS] G-no-go-discipline-and-live-rank-greater-than-one-routes: N1-N8 restrict the failure to the declared rank-one class and preserve improvements, con...
+[PASS] H-axiom-and-TOE-firewall: the changed candidate failure causes no axiom edit, law adoption, retention, obligation ...
+AXIOM_AUTHORITY: origin/main=43ba5587944ffe0f43df10864c8348a99c17517b axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71; Block101 parent=5a55df461ae73babeda76d6693bd8f36aad9af3e
+per_element: checked one exact naive-edge row, the range-two divided-difference identity, 24 prior aliases, two new L8 rows, and a four-step periodic telescope
+per_site: constructed a scalar action with free radius two and metric-vertex radius four; source/matter mixed-Hessian reciprocity comes from one vertex
+per_mode: preserved the L4 null-shell quadrature, separated every L24 Block98 pair, then found Rhat=i and Rhat=-i on exact L8 equal levels
+per_block: affirmative first-order changed-action construction survives locality, shell, reversal, source, and mixed-Hessian reciprocity but fails the necessary nonlinear Ward subblock
+lattice_wide: no full nonlinear action, total energy, constraint stage, Record compiler, law selection, adoption, retention, or rank-greater-than-one carrier is executed
+RESULT: a naive edge Hodge fails first order; the executed range-two-free/range-four-vertex scalar passes the exact phased first-order Ward, source, and mixed-Hessian gates but fails a new exact nonlinear shared-response test
+DECISION_CUT: stop further stencil changes inside the declared class above; every omitted-hypothesis route remains live, while the leading route is a degree-closed rank-greater-than-one cochain or geometry connection
+TOE: zero obligation retirement, zero retained-positive end-to-end theories, and no percentage movement
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

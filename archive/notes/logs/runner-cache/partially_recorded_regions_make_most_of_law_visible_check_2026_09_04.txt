@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/partially_recorded_regions_make_most_of_law_visible_check_2026_09_04.py
+runner_sha256: d67f177a56ca6912254d363d22c9579ca36f6c45f673548d33784731ff7eda6e
+input_fingerprint_sha256: 3b404ea3a60374ad4f2b11ae097b9026be30320f2f2b8140a6697a3fed781281
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 64.77
+status: ok
+----- stdout -----
+external_scientific_inputs: none; every number is recomputed here
+integrity_reads: axioms, deep probe, law pair, history-index note
+construction: complete record-count, shell and translation sweeps; declared witnesses
+negative_scope: none; this note counts fibres and selects no physical law
+AUDIT_INPUT_PATHS:
+  docs/PARTIALLY_RECORDED_REGIONS_MAKE_MOST_OF_THE_LAW_VISIBLE_WITHOUT_READING_THE_ORDER_OF_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-04.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md
+  docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md
+  scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py
+AUDIT_TIMEOUT_SEC: 300
+cache_write: false
+scientific_dependency: minimal_axioms Admissibility and Record clauses
+declared_math: cubic rotations, ternary support tables, 48-bit demand masks
+PASS: audit-input-paths declared audit inputs exist and are unique
+PASS: audit-timeout the declared timeout is 300 seconds
+PASS: axiom-admissibility the live Admissibility sentence is quoted in the note
+PASS: axiom-support reading note (3) equating availability with support is quoted
+PASS: axiom-record-readable the Record clauses on readability and absence are quoted
+PASS: axiom-record-state the Record clauses on states and formation are quoted
+PASS: axiom-partial-licence the memo requires no site to carry a record and names no order of formation
+PASS: parent-deep-probe the deep probe's 3^24 census is live and cited
+PASS: parent-law-pair the 2026-08-13 law pair is live
+PASS: parent-history-index the history-index note is live and named in the note
+PASS: T1-profiles 729 ternary profiles fall into 57 proper-cubic orbits
+PASS: T1-flip 9 flip-fixed orbits are pinned to {0,1}; 24 flip-pairs carry one digit each
+PASS: T1-tables the table space is 3^24 = 282429536481 and the demand word is 48 bits
+PASS: T1-pinned-carry-no-bit records on the 9 flip-fixed orbits raise no demand bit
+PASS: T1-invariance mask invariant under 27 translations, 24 rotations and the flip on 8192 declared configurations
+PASS: T1-two-paths the vectorised and scalar mask paths agree on the declared set
+PASS: T1-criterion admissibility == mask & block == 0 on 256 configurations x 24 tables
+PASS: T2-profiles-realised all 729 ternary profiles are realised at a recorded site
+PASS: T2-sweep-complete complete for k <= 8: 101299433 configurations, 84198400 at k = 8
+PASS: T2-sweep-masks 7824 distinct demand masks; 17 of 48 single bits isolated
+PASS: T2-shell-complete the 3^12 = 531441 distance-2 shell of all 48 bits is complete; 20 isolated
+PASS: T2-translation-complete the 13 x 3^9 translation-symmetric family is complete; 27 isolated
+PASS: T2-union the three families together isolate 30 of 48 demand bits
+PASS: T3-witnesses all 44 declared witnesses reproduce their mask by both paths
+PASS: T3-confined every declared witness mask is confined to one flip-pair
+PASS: T3-visibility the witnesses read 17 of 24 digits exactly, 3 to a binary choice, 4 unseparated
+PASS: T3-unseparated pairs not separated by any declared witness: 11, 16, 17, 23
+PASS: T3-classes the readout distinguishes at least 3^17 * 2^3 = 1033121304 laws
+PASS: T3-fibre every fibre holds at most 648 tables, against 3^20 for complete records
+PASS: T3-pinned-menus the 9 flip-fixed orbits carry menu {0,1} for every table, so a demand can stand alone
+digit_visibility (pair:values separated, 24 pairs): 0:3 1:3 2:3 3:3 4:3 5:3 6:3 7:3 8:3 9:3 10:3 11:1 12:3 13:3 14:2 15:3 16:1 17:1 18:2 19:3 20:3 21:2 22:3 23:1
+PASS: T4-repo-rules repository codes 000001000000200000110000 / 000022020202220222220222 rebuild the module's own menus
+PASS: T4-enumeration all 305659 configurations with at most 4 records enumerated
+growth_row majority (repository): 151489 194905 0 43416
+growth_row copy-neighbour (repository): 152137 196201 0 44064
+growth_row declared literal A: 299989 304309 0 4320
+growth_row declared literal B: 297289 305659 0 8370
+growth_row all menus {0,1}: 305659 305659 0 0
+growth_row declared arithmetic (2i+1) mod 3: 152947 222823 1350 71226
+PASS: T4-repo-counts repository |A| = 151489 / 152137 and |R| = 194905 / 196201
+PASS: T4-containment every admissible configuration is reachable for 5 of 6 tables
+PASS: T4-containment-not-universal not universal: one declared table has 1350 admissible configurations no order reaches
+PASS: T4-counterexample the smallest witness carries 3 records, stands, and no order builds it
+PASS: T4-converse converse fails: 43416 reachable under majority are not admissible as they stand
+converse_witness: .......................0.10
+PASS: T4-reachable-readout the bare reachable set answers 5 of 48 single-digit restrictions: 3 of 24 digits at k <= 4, 2 at k <= 3
+PASS: note-phrases all 15 required counts and boundary phrases appear
+PASS: note-open-question the four unseparated pairs are named as an open question
+PASS: note-scope-hygiene the note claims no law selection and no injectivity
+PASS: note-vocabulary the note avoids process, closure and site-rewriting vocabulary
+PASS: note-length the note stays under 330 lines
+PASS: note-registry-id the note declares its registry id
+per_element: all 729 profiles, 48 demand bits and 44 declared witnesses classified exactly
+per_site: each of the 27 sites evaluated in both mask paths
+per_mode: checked and not executed - no spectral or normal-mode decomposition here
+per_block: 24 flip-pairs, six declared tables, 48 single-digit restrictions
+lattice_wide: one 3^3 torus, sweep complete to 8 records; no larger lattice claimed
+TOTAL: PASS=44 FAIL=0
+
+----- stderr -----
+

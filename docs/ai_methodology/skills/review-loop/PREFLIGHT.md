@@ -21,6 +21,12 @@ current-main candidate, not a separate full run per constituent or unit.
 Reuse an identical successful base/tree receipt only with the skill's complete
 input/tool/evidence provenance; record pending integration validation honestly.
 These checks confer no scientific verdict or independent reviewer PASS.
+For authorized early repair handoffs, use the skill's overlap-repairs guidance:
+the original review continues on immutable source, and provisional findings do
+not certify the final unit. Check actual publication discovery, citations and
+input bindings before final runner execution; freeze the reconciled correction
+and inputs first. Preserve prior receipts if a later input change requires a
+new authorized execution.
 
 ## 1. Sources, not memory
 
