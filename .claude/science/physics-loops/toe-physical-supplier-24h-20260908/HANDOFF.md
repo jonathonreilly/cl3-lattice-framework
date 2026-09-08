@@ -58,3 +58,6 @@ A separate full L4 D4 witness resolves the existence qualification in the earlie
 Two independent proofs now establish D2 charge-position reachability with the opposite charge fixed on the stated cubic tori. Full configuration connectivity remains under active constructive investigation; no completed theorem is claimed here. L8 study design and one bounded cost micro are authorized, but no L8 physics production is authorized or included.
 
 Frozen membership is NINTH_SHA256.json. Active proof/design directories are excluded. Source main last inspected:e4b4fd46db; it does not modify the native/ice premise notes used here.
+
+
+Tenth checkpoint 2026-09-08T16:09:08.796036+00:00: see TENTH_RESULTS.md/TENTH_SHA256.json and current STATUS.md. PR8041 delivered; L8 PID30888 running at 42/128 segments. Corrected U1 dictionary and all-low A connectivity independently reviewed; virtual-pair mechanism active.48h deadline unchanged. Lock refreshed through18:01UTC.

@@ -1,0 +1,25 @@
+# Hopping-only connectivity of the supplied D2 carrier
+
+This extends, without modifying, DERIVATION.md SHA92c7ce417339358995bf4c771560ce70382dba919a4324e0daa21c62e8fba08a. The same even periodic cubic graph, extents at least4, full low-charge edge carrier and unrestricted winding premises apply. D2 means precisely one Q=+1 and one Q=-1. Only nonzero permitted native hopping entries are used. The result is configuration connectivity, not a transport rate, preparation algorithm, thermodynamic gap or axiom-selected dynamics.
+
+Provenance: the author reached chord reduction and off-cycle parking in analysis, but had not frozen a proof when root supplied the same construction. This extension is therefore informed by that message, not a blind independent derivation. The prior proof's explicitly open obligation remains preserved historically.
+
+## Reversing any directed simple cycle while restoring charges
+
+Induct on cycle length. Cycles avoiding at least one charge can already be reversed by the access-path construction in the parent proof: move the other charge to the first cycle vertex, traverse in its allowed direction, and retrace the reversed access path. For negative charge the allowed traversal is opposite the electric arrows. Stop access at its first cycle hit so it has no internal cycle vertex.
+
+Suppose a directed simple cycle C has a graph chord joining nonconsecutive vertices a,b. Write its directed arcs P:a->b and Q:b->a. If the chord is oriented a->b, the chord followed by Q is a directed simple cycle shorter than C. Reverse it by induction. The chord is now b->a, so P followed by the reversed chord is another shorter directed simple cycle. Reverse that cycle. Every edge of C has been reversed once and the chord twice; all other edges and both charge positions are restored by each inductive operation. If the original chord is b->a, perform the complementary order. Both subcycles have strictly smaller length because the chord endpoints are nonconsecutive. This induction is on actual current orientations, not freely available cycle operators.
+
+It remains to handle a chordless directed cycle containing both charges. The positive charge has four outgoing edges. Exactly one lies along the directed cycle. Since the cycle is induced, every other edge incident to this vertex goes to a vertex outside C; in particular at least three outgoing choices lead to neutral vertices outside C. Park the positive charge along any one such edge. No cycle edge changes. The negative charge can now traverse C once against its arrows: every next vertex is neutral until it returns to its original vertex. Every prefix is a legal D2 state. The cycle is reversed and the negative position restored. The parked positive charge returns along its temporary edge, whose direction was reversed by the outward hop and which the cycle traversal never used. This restores that edge and the positive position. The net change is precisely reversal of C.
+
+These cases prove the induction. Temporary charge displacements are permitted, but every complete cycle-reversal operation restores the original signed positions.
+
+## Any two D2 configurations
+
+First align the signed charge positions using the parent reachability theorem. For orientations with identical signed positions, the set of differently oriented edges, oriented as in the first configuration, has equal incoming and outgoing degree at each vertex: both full orientations have the same outdegree at every vertex. The finite balanced directed subgraph decomposes into edge-disjoint directed simple cycles. Reverse those cycles successively using the preceding construction. Each complete operation changes only its requested cycle, so the remaining difference cycles retain their required orientation. The final configuration is the target.
+
+Consequently the entire supplied D2 configuration graph is connected by native hopping alone. No plaquette ring move, extra phase operation or fixed homology assumption is used. The absence of a fixed winding restriction matters: the construction can reverse noncontractible cycles.
+
+## Conditional finite Hamiltonian consequence
+
+For the previously derived ordered signed-hole frame in D2, every allowed hopping entry has the same negative sign for t>0. For t<0 the bipartite position phase changes that sign. Ring entries for J>=0 are compatible with this sign choice because rings keep charge positions fixed. Therefore the finite supplied Hamiltonian with t nonzero and J>=0 is an irreducible real matrix with nonpositive off-diagonal entries in this frame. Subtracting it from a sufficiently large scalar identity gives a nonnegative irreducible matrix. The finite Perron theorem gives a unique lowest eigenvector in D2, strictly positive in this frame. This is a sector statement only; it does not identify the global ground sector, prove a volume-uniform gap or imply ballistic transport. It imports the prior ordered-hole sign proof rather than deriving unsigned hopping from connectivity.

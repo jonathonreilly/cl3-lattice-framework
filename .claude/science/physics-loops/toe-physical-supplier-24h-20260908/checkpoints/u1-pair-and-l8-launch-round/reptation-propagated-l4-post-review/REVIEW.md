@@ -1,0 +1,11 @@
+# Independent propagated L4 post-review
+
+PASS for the delivered frozen study, not for equilibrium or a ground-state interpretation. Independently replayed all64 chain vectors from their sixteen raw batches across32 shards. No author analysis/kernel module was imported, and no production or stochastic micro was repeated. All PRODUCTION_FREEZE and FINAL_RESULTS_HASHES bindings verify, including the reviewed source ancestry.
+
+Recomputed ten output estimates per arm (D,R,correction,VarH,VarX for both harmonics), complex-step gradients and the complete cross-harmonic estimator covariance. Maximum estimate/SE residual5.33e-15 and covariance residual1.28e-17. All eight D precision gates, residual/variance-resolution classifications and eighteen cross-arm differences/SE/flags agree. There are zero comparison flags; all residual and VarH resolutions remain indeterminate. The negative signed VarH in armD and its null bound plugin are retained. Positive plugins elsewhere remain uncertain diagnostics, not certified bounds.
+
+Independently replayed every original-tag field from the stored accepted run lengths by explicitly forming accepted coordinate arrays and cumulative extrema within each run, including rejected measurement times, burn snapshots and first escape. Every full memory record and measured acceptance/rejection count agrees. ArmsA,B,D have zero measured original-tag fractions; armC maximum0.004319932725694444, below the declared1% flag. This does not test all dependence on the finite-RK/productQ initializer.
+
+Source metadata, seeds, finite batch shapes/mean agreement and recorded hard resource caps were checked. Maximum reported RSS34.4375MiB. Reported production721.756460s plus originalmicro.331922s gives722.088382s, within the declared budget. No extra arm or replacement is present in the frozen shard set.
+
+This result differs favorably from the preserved constant-spine long-path failures, but absence of these nominal flags does not certify stationarity, projection convergence, an excitation pole or correctness at L8. The endpoint residual identities describe the target product-G law. A prospective larger-size use still needs its own geometry/observable/resource and mixing controls; this replay does not authorize it.

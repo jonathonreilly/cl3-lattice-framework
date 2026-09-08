@@ -1,0 +1,5 @@
+# Post-freeze comparison of independent closure
+
+Read the complete orbital proof at /private/tmp/toe-24h-probes-20260908/native-d2-connectivity-cold-proof/DERIVATION.md, SHAcf54eb96d0d6d7b09b0d3353af2206c4afca477bfce621e2cd189400935e0443, only after freezing native FULL_CONNECTIVITY.md SHA65adcea1db8548450d2361ea10f671c30ed34abbc52c0573e84023d949cee158 and completing the two full L4 fixtures. Mathematical comparison PASS. The proofs agree on first-hit access, chord induction with both shorter directed cycles, neutral off-cycle parking, balanced difference decomposition and the conditional signed-hole Perron argument. No correction identified. Both share root's proposed mechanism exposure; this comparison does not turn either into an unexposed discovery or an independent audit of the upstream native dictionary.
+
+The 78 finite guards certify actual full L4 fixture execution, not arbitrary-volume connectivity. Full phase tapes are included for reproducibility; the general support proof needs only nonzero native hopping amplitudes, while the Perron conclusion separately imports the already reviewed D2 sign frame.
