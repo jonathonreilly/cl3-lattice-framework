@@ -1,0 +1,3 @@
+# Premise correction, separate from historical plan
+
+The independently reviewed full-carrier soft Hamiltonian H=U sumQ²+g sum lambda A has the same fourth-order effective ice operator. The hard low projection is therefore not necessary for that fourth-order supplier. Newly allowed equal-bit incident double paths have D=6 and cancel with phases -,+,+,-. The restricted two-species/no-double dictionary does not extend to arbitrary full-carrier charges. This stage targets the common leading ice operator after Zpi, not either finite-g full Hamiltonian; its finite-volume perturbative error remains separate. Historical PROPOSAL is unchanged.

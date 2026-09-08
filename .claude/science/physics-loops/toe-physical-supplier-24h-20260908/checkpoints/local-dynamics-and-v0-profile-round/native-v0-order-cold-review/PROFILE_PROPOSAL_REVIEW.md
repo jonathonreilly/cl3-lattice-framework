@@ -1,0 +1,7 @@
+# Prospective cost-profile review
+
+Read complete PROFILE_PROPOSAL.md, SHA d0d0055d273986eb7688fa7a6f20c5896e1c187d3af5929956230ca7573eaa9a. PASS as a bounded performance proposal only; implementation and execution remain pending.
+
+The two fixed V fixtures are explicitly nonequilibrium and do not provide physics estimates. Charging warmup, initialization, checkpoint and process overhead is appropriate. The 16 snapshots are at measured attempts M,2M,...,16M. At attempt8192 with M1536, five snapshots have occurred: one completed four-snapshot batch and one snapshot in the second batch, with cadence remainder512. The restored producer must preserve this precise state and compare full154 sums, RNG, labels, all caches and tag/run history to uninterrupted execution. An earlier informal message incorrectly called this two snapshots in the partial batch; the correct number is one.
+
+Explicit V must bind initializer transition weights, Path construction and checkpoint validation before state reconstruction. The fixed .95 comparison and V0 labeled-Q controls are needed before profile execution. The 64n updates per chain fit three segments of maximum24n, yielding192 jobs. Separate V rates, the factor1.5 and full startup residual per job are conservative heuristics, not certified resource bounds. No equilibrium, precision or autocorrelation conclusion follows. No stochastic micro was executed in this review.

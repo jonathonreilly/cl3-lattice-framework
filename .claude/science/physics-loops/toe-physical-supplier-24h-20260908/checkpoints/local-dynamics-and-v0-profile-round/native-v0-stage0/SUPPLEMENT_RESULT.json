@@ -1,0 +1,16 @@
+{
+  "old_v095_exact_event_cache_comparisons": 1024,
+  "qualification": "fixed finite tape agreement; 1-.95 and literal .05 differ in binary rounding, no all-RNG bitwise equivalence claim",
+  "mutants": [
+    {
+      "name": "fixed_delta",
+      "exit": 1,
+      "error": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-v0-stage0/mutants/fixed_delta/check.py\", line 73, in <module>\n    r=u*(M+(1-V)*N);f=int(r) if r<M else -1;label=f if f>=0 and legal(old,a.faces[f]) else -1;ok=v<min(1,(M+(1-V)*N)/(M+(1-V)*adj));got=a.step(Tape([u,v]));req(got==(label,ok),'literal decision')\n                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-v0-stage0/mutants/fixed_delta/check.py\", line 13, in req\n    if not c:raise RuntimeError(m)\n             ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: literal decision\n"
+    },
+    {
+      "name": "missing_extra_self",
+      "exit": 1,
+      "error": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-v0-stage0/mutants/missing_extra_self/check.py\", line 73, in <module>\n    r=u*(M+(1-V)*N);f=int(r) if r<M else -1;label=f if f>=0 and legal(old,a.faces[f]) else -1;ok=v<min(1,(M+(1-V)*N)/(M+(1-V)*adj));got=a.step(Tape([u,v]));req(got==(label,ok),'literal decision')\n                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-v0-stage0/mutants/missing_extra_self/check.py\", line 13, in req\n    if not c:raise RuntimeError(m)\n             ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: literal decision\n"
+    }
+  ]
+}

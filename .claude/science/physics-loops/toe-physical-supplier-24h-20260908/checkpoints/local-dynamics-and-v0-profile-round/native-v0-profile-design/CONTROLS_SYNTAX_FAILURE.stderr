@@ -1,0 +1,4 @@
+  File "/private/tmp/toe-24h-probes-20260908/native-v0-profile-design/controls.py", line 40
+    steps=[t+1-4096 for t in range(4096,4096+24576) if (t+1-4096)%1536==0];req(steps==list(range(1536,24577,1536)),'actual half-open cadence');req(sum(t<=8192 for t in steps)==5 and8192-steps[4]==512,'partial batch one snapshot')
+                                                                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?

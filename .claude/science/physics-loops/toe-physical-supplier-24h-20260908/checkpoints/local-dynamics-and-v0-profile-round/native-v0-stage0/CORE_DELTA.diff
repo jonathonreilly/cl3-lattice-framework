@@ -1,0 +1,24 @@
+--- 
++++ 
+@@ -34,7 +34,9 @@
+  delta=np.sum((after[:,0]==after[:,2])&(after[:,1]==after[:,3])&(after[:,0]!=after[:,1]))-before
+  return int(nf+delta)
+ class Path:
+- def __init__(self,L,n,harmonics=None):
++ def __init__(self,L,n,V,harmonics=None):
++  if not np.isscalar(V) or not np.isfinite(V) or not 0<=V<=1:raise ValueError("V in [0,1]")
++  self.V=float(V);self.delta=1-self.V
+   if n<=0 or n%2:raise ValueError('positive even n')
+   self.faces,self.coeff,seed=geometry(L,harmonics);self.affected=affected_faces(self.faces);self.n=n;self.head=0;self.labels=np.full(n,-1,int);self.direction=1;self.states=[seed.copy() for _ in range(3)];self.nf=[count(x,self.faces) for x in self.states];self.O=[self.coeff@(x.astype(float)-.5) for x in self.states]
+  def change(self,k,label):
+@@ -42,8 +44,8 @@
+    x=self.states[k];f=self.faces[label];self.nf[k]=next_count(x,label,self.faces,self.affected,self.nf[k]);self.O[k]+=self.coeff[:,f]@(1.-2*x[f]);x[f]^=1
+  def step(self,rng):
+   plus=self.direction==1;old=2 if plus else 0;near=0 if plus else 2;edge=int(self.labels[self.head if plus else (self.head+self.n-1)%self.n]);adj_nf=next_count(self.states[near],edge,self.faces,self.affected,self.nf[near])
+-  u=rng.random()*(len(self.faces)+.05*self.nf[old]);f=int(u) if u<len(self.faces) else -1;label=f if f>=0 and legal(self.states[old],self.faces[f]) else -1
+-  accept=rng.random()<min(1,(1+.05*self.nf[old]/len(self.faces))/(1+.05*adj_nf/len(self.faces)))
++  u=rng.random()*(len(self.faces)+self.delta*self.nf[old]);f=int(u) if u<len(self.faces) else -1;label=f if f>=0 and legal(self.states[old],self.faces[f]) else -1
++  accept=rng.random()<min(1,(1+self.delta*self.nf[old]/len(self.faces))/(1+self.delta*adj_nf/len(self.faces)))
+   if accept:
+    if plus:
+     midlabel=int(self.labels[(self.head+self.n//2)%self.n]);self.change(0,edge);self.change(1,midlabel);self.change(2,label);self.labels[self.head]=label;self.head=(self.head+1)%self.n

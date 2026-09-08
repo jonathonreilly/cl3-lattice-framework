@@ -1,20 +1,13 @@
-# Physics campaign status
+# Twelfth campaign checkpoint
 
-Updated 2026-09-08T16:41:34.971161+00:00. Active until September10 10:27UTC (6:27a.m. Eastern), subject to available usage. Weekly remaining62%; no reset credits authorized.
+UTC 2026-09-08T17:09:13.116696+00:00. Deadline 2026-09-10 10:27:17 UTC. Campaign continues.
 
-Eight conditional science review PRs are open,8036–8043. We now have exact charge/fermion dictionaries, pair channels and connectivity results. The newest research derives a ring interaction from virtual defects on the full native carrier, removing the hard charge cutoff from that mechanism. Its energy corrections do not generate the RK flippability term through sixth order. A finite small-coupling error bound is independently checked. These remain supplied-model results, not TOE completion.
+Nine science review PRs open, latest8044 at3e08a48f4a2f6e2c209dbda365c393f2f46f7145. Full-carrier ring mechanism, scalar fourth/sixth diagonal and one-sided finite spectral error independently reviewed. No main landing/audit verdict.
 
-L8 .95 production: 84/128 segments completed at this checkpoint, no failed exits. No interim physics analysis or replacements. V0 model comparison is at deterministic preparation stage only; new sampling requires a frozen reviewed plan and cost forecast.
+Two independent volume-independent local finite-Lie proofs agree. Root controls36 and native40; stronger radius proposal has20 controls. The fifth-order generic dynamical bound alone does not control a natural ring period; separate higher-order/two-comparison proofs are actively being developed. Root natural-timescale draft is unreviewed here.
 
-Disk64GiB free.31old worktrees were removed after exact remote-HEAD checks. Recovery map: disk-cleanup-20260908/FINAL_CLEANUP_REPORT.md. Useful evidence must be remote before local deletion.
+L8 117/128 segments completed without failure. No interim physics analysis. Paired V0/.95 deterministic stage0 and145-entry order module independently reviewed. One authorized capped profile completed8.698581292s,50.5625MiB, forecast8777.56s/max86.78s. Postprofile/production review still required; no new production authorized.
 
-SSH:
+Disk64GiB free; no deletion needed. Useful unique evidence remote via science PR or this archive branch before local removal. Snapshot excludes third-party PDFs/full article text; original research and source receipts retained. 603 files, 10533548 bytes.
 
-    cat /private/tmp/toe-physical-supplier-24h-20260908/.claude/science/physics-loops/toe-physical-supplier-24h-20260908/STATUS.md
-    cat /private/tmp/toe-physical-supplier-24h-20260908/.claude/science/physics-loops/toe-physical-supplier-24h-20260908/STATE.yaml
-    cat /private/tmp/toe-24h-probes-20260908/reptation-propagated-l8-design/PRODUCTION_OUTPUT/STATUS.json
-    ps -p 30888 -o pid,etime,command
-    df -h /private/tmp
-    git -C /private/tmp/toe-physical-supplier-24h-20260908 log -5 --oneline
-
-Keep the machine powered on and desktop app running for local scheduled continuation ([documentation](https://learn.chatgpt.com/docs/automations?surface=app)). System sleep is disabled. Do not launch a duplicate supervisor. No main merge or formal audit verdict has been applied.
+See STATE.yaml, HANDOFF.md and TWELFTH_SHA256.json for SSH recovery.

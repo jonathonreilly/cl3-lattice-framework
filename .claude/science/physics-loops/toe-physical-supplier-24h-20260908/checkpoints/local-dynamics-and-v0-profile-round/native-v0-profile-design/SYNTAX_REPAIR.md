@@ -1,0 +1,1 @@
+Initial reduced-control execution did not start: missing space in and8192 caused a SyntaxError. Original script/error preserved. No production/profile or mathematical test had executed in that failed attempt.

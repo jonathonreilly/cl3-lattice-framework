@@ -1,0 +1,11 @@
+/private/tmp/toe-24h-probes-20260908/native-v0-stage0/check.py:31: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  V=float(v);H=V*diags(nf)-A;G=eye(864)-H/24;b=1+(1-V)*nf/24
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-v0-stage0/check.py", line 61, in <module>
+    vals,vec=eigsh(H,k=1,which='SA',tol=1e-12,v0=np.ones(864));res=float(np.linalg.norm(H@vec[:,0]-vals[0]*vec[:,0]));req(res<1e-9,'ground residual');req(vals[0]>=-float(nf.max())-1e-10 and vals[0]<=float((V-1)*nf.mean())+1e-10,'variational bounds')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1778, in eigsh
+    params.iterate()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 626, in iterate
+    raise ArpackError(self.arpack_dict['info'],
+scipy.sparse.linalg._eigen.arpack.arpack.ArpackError: ARPACK error -9: Starting vector is zero.

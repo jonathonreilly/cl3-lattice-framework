@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-v0-stage0/mutants/fixed_delta/check.py", line 73, in <module>
+    r=u*(M+(1-V)*N);f=int(r) if r<M else -1;label=f if f>=0 and legal(old,a.faces[f]) else -1;ok=v<min(1,(M+(1-V)*N)/(M+(1-V)*adj));got=a.step(Tape([u,v]));req(got==(label,ok),'literal decision')
+                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-v0-stage0/mutants/fixed_delta/check.py", line 13, in req
+    if not c:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: literal decision
