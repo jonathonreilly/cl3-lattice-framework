@@ -1,0 +1,18 @@
+--- 
++++ 
+@@ -1,3 +1,9 @@
++"""Portable exact sixth-order control; original source preserved in packet."""
++AUDIT_TIMEOUT_SEC=180
++import argparse,signal
++if __name__=='__main__':
++ signal.alarm(AUDIT_TIMEOUT_SEC)
++ p=argparse.ArgumentParser();p.add_argument('--json',action='store_true');p.parse_args()
+ """Independent rank-two metric-direction control, not a native coefficient fixture."""
+ from fractions import Fraction as F
+ from pathlib import Path
+@@ -26,4 +32,4 @@
+ sandwich=add(energy4,sc(add(mm(M2,HB2),mm(HB2,M2)),F(-1,2)))
+ req(sandwich==correct,'normalized-column energy matches forward direction')
+ r=dict(checks=checks,HB2=HB2,HB4=HB4,M2=M2,commutator=comm,forward4=correct,reverse4=reverse,scope='Generic real rank-two finite model, used only to discriminate canonical metric direction; not native H6 evidence.')
+-Path(__file__).with_name('NORMALIZATION_RESULT.json').write_text(json.dumps(r,default=str,indent=2)+'\n');print(json.dumps(r,default=str))
++(Path(__file__).resolve().parents[1]/'outputs/native_sixth_normalization_2026_09_08.json').write_text(json.dumps(r,default=str,indent=2)+'\n');print(json.dumps(r,default=str))

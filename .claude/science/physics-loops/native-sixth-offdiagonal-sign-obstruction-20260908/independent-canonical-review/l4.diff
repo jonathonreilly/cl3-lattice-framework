@@ -1,0 +1,31 @@
+--- 
++++ 
+@@ -1,3 +1,9 @@
++"""Portable exact sixth-order control; original source preserved in packet."""
++AUDIT_TIMEOUT_SEC=180
++import argparse,signal
++if __name__=='__main__':
++ signal.alarm(AUDIT_TIMEOUT_SEC)
++ p=argparse.ArgumentParser();p.add_argument('--json',action='store_true');p.parse_args()
+ from itertools import product,permutations
+ from pathlib import Path
+ import json,time
+@@ -103,4 +109,17 @@
+    break
+  if found:break
+ if found is None:raise RuntimeError('seed no witness')
+-Path(__file__).with_name('RESULT.json').write_text(json.dumps(dict(witness=found,seconds=time.monotonic()-start),indent=2)+'\n');print({k:v for k,v in found.items() if k!='states'})
++
++# New prospective explicit delivered-witness predicates; original search guards remain uncounted.
++checks=0
++def need(v,label):
++ global checks
++ checks+=1
++ if not v:raise RuntimeError(label)
++for bs in found['states']:need(legal(sum(bit<<e for e,bit in enumerate(bs))),'delivered full ice state')
++for es in found['faces']:
++ need(len(es)==4 and len(set(es))==4,'four distinct face edges')
++need(len(found['six_cycle'])==6 and len(set(found['six_cycle']))==6,'six distinct closing edges')
++need(found['closed_product']==-1,'negative closed effective sign')
++
++(Path(__file__).resolve().parents[1]/'outputs/native_sixth_l4_2026_09_08.json').write_text(json.dumps(dict(checks=checks,witness=found,seconds=time.monotonic()-start),indent=2)+'\n');print({k:v for k,v in found.items() if k!='states'})

@@ -1,0 +1,50 @@
+{
+  "source_payload_checks": 31,
+  "total": 3700,
+  "graph_new_nodes": [
+    "native_sixth_offdiagonal_sign_obstruction_note_2026-09-08"
+  ],
+  "edge_delta": 3,
+  "mutations": [
+    {
+      "name": "missing_feedback",
+      "old": "rhs=plus(rhs,scale(mm(mm(chi[a],C),chi[b]),-1))",
+      "new": "rhs=plus(rhs,scale(mm(mm(chi[a],C),chi[b]),0))",
+      "exit": 1,
+      "failure": "RuntimeError: wave graph equation 3",
+      "sha256": "fff653a6e4970c72ccd3e15914b137e8408e2cfc7d772f721c204267e9bcde48"
+    },
+    {
+      "name": "bare_X",
+      "old": "F((-1)**((mask&z).bit_count()))",
+      "new": "F(1)",
+      "exit": 1,
+      "failure": "RuntimeError: absolute canonical coefficient",
+      "sha256": "1e827ab1533510d93f7c49177e06f617732dd8f0d9b60f9126bca7eea824f822"
+    },
+    {
+      "name": "reverse_metric",
+      "old": "correct=add(HB4,sc(comm,F(1,2)))",
+      "new": "correct=add(HB4,sc(comm,F(-1,2)))",
+      "exit": 1,
+      "failure": "RuntimeError: forward canonical metric is Hermitian",
+      "sha256": "8d6de15f227a544df3a443d4a74edc141c3dd0904d42ad724f80462dc2a6058c"
+    },
+    {
+      "name": "wrong_hexagon_sign",
+      "old": "product_sign=-s",
+      "new": "product_sign=s",
+      "exit": 1,
+      "failure": "RuntimeError: negative closed effective sign",
+      "sha256": "7952ebaca81a51ffc9f98923d7a48d0f67d3ec09aa6a6fd4f932cc3be07a25e0"
+    },
+    {
+      "name": "omit_preparation",
+      "old": "prep_tape=[prep]+([second_prep] if one_failed else [])",
+      "new": "prep_tape=[prep]",
+      "exit": 1,
+      "failure": "RuntimeError: preparation reaches witness",
+      "sha256": "109b9a8d7857a3813c64378f7102bb6aae0f96eca2f8d9d3645af421ea5df327"
+    }
+  ]
+}
