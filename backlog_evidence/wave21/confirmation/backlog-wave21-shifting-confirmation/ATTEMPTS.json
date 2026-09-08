@@ -1,0 +1,4 @@
+[
+  {"script":"bind_source_initial_manifest_shape.py","result":"KeyError: deps","cause":"Verifier initially expected full graph metadata in compact manifest node records; actual records hold deps_hash and out_degree.","source_changed":false,"scientific_execution":false,"resolution":"Actual compact records compared to independently parsed memo dependency and expected hash; corrected bind_source.py passes."},
+  {"script":"verify_preservation_initial_workflow_path.py","result":"FileNotFoundError for docs/SCIENCE_WORKFLOW.md and SCIENCE_WORKFLOW.md","cause":"Verifier tried stale workflow locations.","source_changed":false,"scientific_execution":false,"resolution":"rg located docs/ai_methodology/SCIENCE_WORKFLOW.md; exact current/prior byte binding passes."}
+]

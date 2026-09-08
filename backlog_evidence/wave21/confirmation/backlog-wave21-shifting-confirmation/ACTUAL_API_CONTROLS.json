@@ -1,0 +1,310 @@
+{
+  "primaries": [
+    {
+      "note_path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "claim_id": "shifting_position_records_exact_diffusion_law_and_the_uniform_attractor_bounded_theorem_note_2026-09-03",
+      "primary": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "helpers_graph": [],
+      "helpers_diagnostic": [],
+      "input_union": [
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+        },
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        }
+      ],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "cache_status": "fresh",
+      "actual_identity": "RunnerIdentity(runner_sha256='c0c3968f69be591b5c37bcc4f1505c2883295d812f21bc2be392b717f04e9628', input_fingerprint_sha256='3ba859611562e391890d89d31cd1579364dc2da7cc9dc61c9ce163ff61dee11e')",
+      "actual_readiness_issue": null,
+      "source_sha256": "c0c3968f69be591b5c37bcc4f1505c2883295d812f21bc2be392b717f04e9628"
+    },
+    {
+      "note_path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "claim_id": "support_conditions_confine_groups_of_shifting_records_energy_costs_do_not_bounded_theorem_note_2026-09-03",
+      "primary": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "helpers_graph": [],
+      "helpers_diagnostic": [],
+      "input_union": [
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+        },
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        }
+      ],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "cache_status": "fresh",
+      "actual_identity": "RunnerIdentity(runner_sha256='e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223', input_fingerprint_sha256='d22aa0019c3dcdfb6b5afb5ed6b9b5d9ea49192c7966e739ec155b2fae93bfb5')",
+      "actual_readiness_issue": null,
+      "source_sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+    }
+  ],
+  "adverse_and_normal_cases": [
+    {
+      "primary": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "case": "fresh",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 0,
+      "cache_status": "fresh",
+      "stdout": "fresh logs/runner-cache/shifting_position_records_exact_diffusion_law_check_2026_09_03.txt\n",
+      "stderr": "",
+      "actual_guard_exit": 0,
+      "actual_guard_stdout": "PASS I1 [source binding] final own note and current memo match declared input hashes\n",
+      "readiness_issue": null
+    },
+    {
+      "primary": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "case": "input drift docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "input_mismatch",
+      "stdout": "",
+      "stderr": "input_mismatch logs/runner-cache/shifting_position_records_exact_diffusion_law_check_2026_09_03.txt\n",
+      "actual_guard_exit": 1,
+      "actual_guard_stdout": "FAIL I1 [source binding] final own note and current memo match declared input hashes\nINPUT_FAILURE docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md\nTOTAL: PASS=0 FAIL=1\n",
+      "readiness_issue": null
+    },
+    {
+      "primary": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "case": "missing input docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "input_mismatch",
+      "stdout": "",
+      "stderr": "input_mismatch logs/runner-cache/shifting_position_records_exact_diffusion_law_check_2026_09_03.txt\n",
+      "actual_guard_exit": 1,
+      "actual_guard_stdout": "FAIL I1 [source binding] final own note and current memo match declared input hashes\nINPUT_FAILURE docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md\nTOTAL: PASS=0 FAIL=1\n",
+      "readiness_issue": "runner_declared_input_missing:scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py:docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    },
+    {
+      "primary": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "case": "input drift docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "input_mismatch",
+      "stdout": "",
+      "stderr": "input_mismatch logs/runner-cache/shifting_position_records_exact_diffusion_law_check_2026_09_03.txt\n",
+      "actual_guard_exit": 1,
+      "actual_guard_stdout": "FAIL I1 [source binding] final own note and current memo match declared input hashes\nINPUT_FAILURE docs/MINIMAL_AXIOMS_2026-06-29.md\nTOTAL: PASS=0 FAIL=1\n",
+      "readiness_issue": null
+    },
+    {
+      "primary": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "case": "missing input docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "input_mismatch",
+      "stdout": "",
+      "stderr": "input_mismatch logs/runner-cache/shifting_position_records_exact_diffusion_law_check_2026_09_03.txt\n",
+      "actual_guard_exit": 1,
+      "actual_guard_stdout": "FAIL I1 [source binding] final own note and current memo match declared input hashes\nINPUT_FAILURE docs/MINIMAL_AXIOMS_2026-06-29.md\nTOTAL: PASS=0 FAIL=1\n",
+      "readiness_issue": "runner_declared_input_missing:scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py:docs/MINIMAL_AXIOMS_2026-06-29.md"
+    },
+    {
+      "primary": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "case": "source drift",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "sha_mismatch",
+      "stdout": "",
+      "stderr": "sha_mismatch logs/runner-cache/shifting_position_records_exact_diffusion_law_check_2026_09_03.txt\n",
+      "actual_guard_exit": null,
+      "actual_guard_stdout": "",
+      "readiness_issue": null
+    },
+    {
+      "primary": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+      "case": "missing source",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "fresh",
+      "stdout": "",
+      "stderr": "runner missing on disk: scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py\n",
+      "actual_guard_exit": null,
+      "actual_guard_stdout": "",
+      "readiness_issue": "runner_source_missing:scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py"
+    },
+    {
+      "primary": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "case": "fresh",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 0,
+      "cache_status": "fresh",
+      "stdout": "fresh logs/runner-cache/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.txt\n",
+      "stderr": "",
+      "actual_guard_exit": 0,
+      "actual_guard_stdout": "PASS I1 [source binding] final own note and current memo match declared input hashes\n",
+      "readiness_issue": null
+    },
+    {
+      "primary": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "case": "input drift docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "input_mismatch",
+      "stdout": "",
+      "stderr": "input_mismatch logs/runner-cache/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.txt\n",
+      "actual_guard_exit": 1,
+      "actual_guard_stdout": "FAIL I1 [source binding] final own note and current memo match declared input hashes\nINPUT_FAILURE docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md\nTOTAL: PASS=0 FAIL=1\n",
+      "readiness_issue": null
+    },
+    {
+      "primary": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "case": "missing input docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "input_mismatch",
+      "stdout": "",
+      "stderr": "input_mismatch logs/runner-cache/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.txt\n",
+      "actual_guard_exit": 1,
+      "actual_guard_stdout": "FAIL I1 [source binding] final own note and current memo match declared input hashes\nINPUT_FAILURE docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md\nTOTAL: PASS=0 FAIL=1\n",
+      "readiness_issue": "runner_declared_input_missing:scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py:docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md"
+    },
+    {
+      "primary": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "case": "input drift docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "input_mismatch",
+      "stdout": "",
+      "stderr": "input_mismatch logs/runner-cache/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.txt\n",
+      "actual_guard_exit": 1,
+      "actual_guard_stdout": "FAIL I1 [source binding] final own note and current memo match declared input hashes\nINPUT_FAILURE docs/MINIMAL_AXIOMS_2026-06-29.md\nTOTAL: PASS=0 FAIL=1\n",
+      "readiness_issue": null
+    },
+    {
+      "primary": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "case": "missing input docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "input_mismatch",
+      "stdout": "",
+      "stderr": "input_mismatch logs/runner-cache/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.txt\n",
+      "actual_guard_exit": 1,
+      "actual_guard_stdout": "FAIL I1 [source binding] final own note and current memo match declared input hashes\nINPUT_FAILURE docs/MINIMAL_AXIOMS_2026-06-29.md\nTOTAL: PASS=0 FAIL=1\n",
+      "readiness_issue": "runner_declared_input_missing:scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py:docs/MINIMAL_AXIOMS_2026-06-29.md"
+    },
+    {
+      "primary": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "case": "source drift",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "sha_mismatch",
+      "stdout": "",
+      "stderr": "sha_mismatch logs/runner-cache/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.txt\n",
+      "actual_guard_exit": null,
+      "actual_guard_stdout": "",
+      "readiness_issue": null
+    },
+    {
+      "primary": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+      "case": "missing source",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-B",
+        "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave21-shifting-confirmation/adverse-input-copy/scripts/cached_runner_output.py",
+        "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "--check-only"
+      ],
+      "exit_code": 1,
+      "cache_status": "fresh",
+      "stdout": "",
+      "stderr": "runner missing on disk: scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py\n",
+      "actual_guard_exit": null,
+      "actual_guard_stdout": "",
+      "readiness_issue": "runner_source_missing:scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py"
+    }
+  ],
+  "candidate_unchanged": true,
+  "runtime_helpers": [],
+  "actual_input_edges": 4,
+  "memo_edges_are_boundary_only": true
+}
