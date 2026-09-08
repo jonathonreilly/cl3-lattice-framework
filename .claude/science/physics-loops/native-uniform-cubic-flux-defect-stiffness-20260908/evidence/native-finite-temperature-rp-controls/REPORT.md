@@ -1,0 +1,9 @@
+# Exact finite tensor controls
+
+PASS: 2452 exact Gaussian-integer coefficient identities, including 2128 odd histories and 324 even histories. One-mode halves exhaust all insertion choices and independently chosen I/Z internal monomials through three insertions. Two-mode halves use 112 fixed histories through six insertions from the full even Clifford monomial basis; a direct check ensures that basis contains noncommuting factors. This latter set is selected finite coverage, not exhaustive arbitrary polynomials.
+
+For every tested coefficient the direct full tensor trace equals the claimed even-history Gram product or vanishes for odd insertion count. Removing the crossing i factor and removing the parity string each produce 64 actual mismatches against that same identity. These are directly evaluated alternative implementations, not subprocess mutation claims. A separate explicit Gaussian-integer two-vector Gram determinant is 303; this merely controls arithmetic, not all-size positivity.
+
+The source is 4c1571d5bf38c6d13872ca2bd82c9980b7940676f58d5486c2ba8de0bf1e3fa2. Actual successful execution: 0.230625 internal seconds, 0.25 external seconds, 18,710,528 bytes maximum RSS. No eigensolver, exponential evaluation, stochastic or physical thermal scan was executed. Both candidate proofs remain unchanged.
+
+Two pre-algebra platform failures are preserved: RLIMIT_AS and then RLIMIT_DATA rejected a 384MiB limit with ValueError 'current limit exceeds maximum limit'. Their source versions and the second raw failure receipt remain. Final execution retained the 30-second signal alarm and checked observed RSS each coefficient, with fixed matrices at most16x16 and bounded case count; the external time receipt confirms usage far below384MiB. This is a monitored memory guard, not a successfully installed OS address-space cap. No mathematical fixture was changed after either platform failure.

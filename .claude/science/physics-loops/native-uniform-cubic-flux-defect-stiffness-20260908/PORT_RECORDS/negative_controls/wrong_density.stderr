@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-uniform-flux-port-negative-controls/wrong_density/scripts/native_uniform_cubic_flux_defect_stiffness_2026_09_08.py", line 61, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-uniform-flux-port-negative-controls/wrong_density/scripts/native_uniform_cubic_flux_defect_stiffness_2026_09_08.py", line 46, in main
+    D,radius=build(cubes['rows'][rep],[trig['rows'][j] for j in index]);actual=certify(D,Q,ev,radius);require(actual==row['certificate'],'complete exact certificate mismatch');predicates+=1
+                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-uniform-flux-port-negative-controls/wrong_density/scripts/native_uniform_cubic_flux_defect_stiffness_2026_09_08.py", line 26, in require
+    if not ok:raise ValueError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: complete exact certificate mismatch
+real 0.08
+user 0.07
+sys 0.01
+            34062336  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3211  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  38  involuntary context switches
+           753896550  instructions retired
+           341655248  cycles elapsed
+            15368696  peak memory footprint

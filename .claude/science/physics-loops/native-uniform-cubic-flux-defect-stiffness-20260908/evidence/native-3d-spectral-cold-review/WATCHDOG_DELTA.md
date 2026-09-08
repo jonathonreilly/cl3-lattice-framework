@@ -1,0 +1,3 @@
+# Root watchdog delta review
+
+PASS on run_once.py SHA2cb1569666c8cad8c19667a1eee5e730332bd831d3c263c6382fae28bd01b8a4. Complete changed wrapper read, not executed. The ps query now has a .3second timeout; any exception records failure and finally kills the child process group and known descendants before wait. The exclusive launch receipt, fixed source freeze and single fixed invocation remain unchanged. Wall/tree-RSS exceedance similarly closes the one attempt. Parent/finalization overhead still requires the explicitly pending external shell reconciliation. This review claims a monitored observed-resource contract, not a hard memory allocation limit. No pilot launched by reviewer.

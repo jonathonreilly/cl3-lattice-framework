@@ -1,0 +1,1 @@
+First synthetic run completed the residual cases but stopped on a typo in the final adverse transpose fixture: zip(U) instead of zip(*U). Original source preserved. This was a control construction error, not a spectral bound failure. Corrected before final run; no physical matrix calculation.

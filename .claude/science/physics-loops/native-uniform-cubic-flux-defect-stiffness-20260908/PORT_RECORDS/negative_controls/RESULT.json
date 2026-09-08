@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "label": "omit_radius",
+      "returncode": 1,
+      "elapsed": 0.10386529099196196,
+      "original_helper_sha": "e11ffc7469058101217ce2164915616dd7f5ecd2358377c824b5acce52250515",
+      "intentionally_rebound_helper_sha": "1111b810e6e26f7803057c3640565b7dd793db8f4e8cba38b94fd84104285d20",
+      "old": "radius=input_radius+2*r+4*L*eta",
+      "new": "radius=2*r+4*L*eta",
+      "failure": "first-node complete exact certificate mismatch",
+      "scope": "effective mathematical mutation, primary dynamically hashes changed helper; not a stale input hash gate"
+    },
+    {
+      "label": "wrong_density",
+      "returncode": 1,
+      "elapsed": 0.08973299997160211,
+      "original_helper_sha": "e11ffc7469058101217ce2164915616dd7f5ecd2358377c824b5acce52250515",
+      "intentionally_rebound_helper_sha": "a74075ccf571fe3663d78edb05045b2767db964031722282123948595234388b",
+      "old": "/32",
+      "new": "/16",
+      "failure": "first-node complete exact certificate mismatch",
+      "scope": "effective mathematical mutation, primary dynamically hashes changed helper; not a stale input hash gate"
+    },
+    {
+      "label": "strict_cli",
+      "returncode": 2
+    }
+  ]
+}
