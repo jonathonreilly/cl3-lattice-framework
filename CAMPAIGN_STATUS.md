@@ -49,12 +49,12 @@ question; no blanket disposition of that PR is asserted.
 
 ## Next scientific decisions
 
-1. Confirm the six #7847/#7846 repairs after the parent-context archival correction,
-   independently review the frozen #7976 synthesis, and finish the original
-   #7892/#7893/#7903 source review.
-   #7851/#7850 science and #7972 process helper are now landed. Closure/content reconciliation is complete in
-   `BACKLOG_CLOSURE_RECONCILIATION.md`; pending closed scopes remain obligations
-   at their named open successors. Preserve all premise and reserved-source holds.
+1. Confirm the wave14 helper-declaration repair after the actual integration-check
+   failure; main and closure counts remain unchanged. Continue the narrow matter/U1
+   repairs and #7990 review, hand off the completed pure-link findings for repair,
+   and prepare #6358/#6371 with their six consolidated constituents.
+   Closure/content reconciliation remains complete; pending scopes stay obligations
+   at named open successors. Preserve all premise and reserved-source holds.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

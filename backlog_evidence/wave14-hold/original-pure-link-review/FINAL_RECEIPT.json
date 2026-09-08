@@ -1,0 +1,561 @@
+{
+  "frozen_at_utc": "2026-09-08T00:11:26.712528+00:00",
+  "reviewer_session": "/root/backlog_batch_contract",
+  "verdict": "CHANGES_REQUIRED",
+  "scope": [
+    7911,
+    7959
+  ],
+  "source_tree": "2d9b707b4707cd8253bdb9152cfb970a55162f9d",
+  "base": "47da12268436ee1843e822386477aa2c829d95a9",
+  "current_main_bound": "47da12268436ee1843e822386477aa2c829d95a9",
+  "source_paths": 6,
+  "complete_original_map_rows": 59756,
+  "source_unchanged": true,
+  "source_pass": false,
+  "formal_audit": false,
+  "report_sha256": "fe09d3ed6f0a026b7dea878687bd51878eeffe66423713086a2788e89ac9a133",
+  "findings_sha256": "56ba15d61dd42089f08bd46afefa6b8a7e83ab207d050195fe766432f0f8e5c3",
+  "finding_count": 11,
+  "priorities": {
+    "P2": 10,
+    "P3": 1
+  },
+  "execution_scope": "One unchanged original baseline per runner, bounded actual-source/independent controls; no quoted large production rerun.",
+  "preparation_receipt_sha256": "75b00eaf67ee1aae978088e1f29fe16f8fe56e8c851307de408020bb789e135d",
+  "source_inventory": [
+    {
+      "pr": 7911,
+      "path": "docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "54be03b7f7a7236358e1fd76aa57a0833b32ad2d",
+      "sha256": "a17cd934dd5f7362876bda0c70335cf418668eed85216fe2ddde70ab6348c92c",
+      "bytes": 40815,
+      "lines": 330,
+      "disposition": "Exact original authored addition; no scientific acceptance from preparation",
+      "review_read": "complete original body including all embedded C when applicable",
+      "original_preserved": true
+    },
+    {
+      "pr": 7911,
+      "path": "logs/runner-cache/spin_half_link_ring_gapped_electric_string_check_2026_09_03.txt",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "23ccfdc3bb4ec6840aff45bccc6dcd3eccd4d7c1",
+      "sha256": "f836deee1bb7400c01e83ee16e011e17c3a89afcc099bb4ae033ebd653c6c0f3",
+      "bytes": 6283,
+      "lines": 38,
+      "disposition": "Exact original authored addition; no scientific acceptance from preparation",
+      "review_read": "complete original body including all embedded C when applicable",
+      "original_preserved": true
+    },
+    {
+      "pr": 7911,
+      "path": "scripts/spin_half_link_ring_gapped_electric_string_check_2026_09_03.py",
+      "mode": "100755",
+      "type": "blob",
+      "blob": "562ffe5a5105e7de7359ff93d09ba908b8611d5c",
+      "sha256": "33da4839064e8d76233bff94dd6ed475b2b82089445b2fc9eab1350c7dd9536f",
+      "bytes": 29270,
+      "lines": 787,
+      "disposition": "Exact original authored addition; no scientific acceptance from preparation",
+      "static_imports": [
+        "from __future__ import annotations",
+        "import sys",
+        "import time",
+        "import numpy as np",
+        "import scipy.sparse as sp",
+        "import scipy.sparse.linalg as spla"
+      ],
+      "functions": [
+        "check",
+        "v0_of",
+        "low_spectrum",
+        "lucas",
+        "conv_staggered",
+        "conv_columnar",
+        "conv_uniform",
+        "build_sector",
+        "e_of",
+        "gauss_residual",
+        "_plaq_bits",
+        "ring_op",
+        "build_H",
+        "glide_perm",
+        "phi_of",
+        "dyn_block",
+        "momentum",
+        "chain",
+        "chain_image",
+        "Block",
+        "block_sector",
+        "block_H"
+      ],
+      "file_or_dynamic_calls": [],
+      "review_read": "complete original body including all embedded C when applicable",
+      "original_preserved": true
+    },
+    {
+      "pr": 7959,
+      "path": "docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "45eb3186d1e4d0393f726cb4dcdb8ad3f304ba31",
+      "sha256": "debbcf845a32ded1e44b0d747c0fa07fae3d6ec23942b71986b445d5d277cc96",
+      "bytes": 41341,
+      "lines": 310,
+      "disposition": "Exact original authored addition; no scientific acceptance from preparation",
+      "review_read": "complete original body including all embedded C when applicable",
+      "original_preserved": true
+    },
+    {
+      "pr": 7959,
+      "path": "logs/runner-cache/pure_spin_half_link_model_gapless_quadratic_mode_open_path_projector_check_2026_09_04.txt",
+      "mode": "100644",
+      "type": "blob",
+      "blob": "e6adcf22a0cc56143b819e2d107e5179f7762e3d",
+      "sha256": "c6b2b35f44474718d555f40309b3afa4bc15ad5136c1591bdb9bbe5f187aa32b",
+      "bytes": 9912,
+      "lines": 41,
+      "disposition": "Exact original authored addition; no scientific acceptance from preparation",
+      "review_read": "complete original body including all embedded C when applicable",
+      "original_preserved": true
+    },
+    {
+      "pr": 7959,
+      "path": "scripts/pure_spin_half_link_model_gapless_quadratic_mode_open_path_projector_check_2026_09_04.py",
+      "mode": "100755",
+      "type": "blob",
+      "blob": "787611e5b73c6fe70052290c04b8410f5942088f",
+      "sha256": "a6fe50893a7eda9e7142bf71cb16b2a8c5128b2c00f93a7bb15a696c236fe872",
+      "bytes": 100417,
+      "lines": 1772,
+      "disposition": "Exact original authored addition; no scientific acceptance from preparation",
+      "static_imports": [
+        "from __future__ import annotations",
+        "import math",
+        "import os",
+        "import shutil",
+        "import subprocess",
+        "import sys",
+        "import tempfile",
+        "import time",
+        "from collections import Counter",
+        "import numpy as np",
+        "import scipy.sparse as sp",
+        "from scipy.sparse.csgraph import connected_components"
+      ],
+      "functions": [
+        "check",
+        "skip",
+        "close",
+        "Geo",
+        "torus3d",
+        "ladder",
+        "ice_config",
+        "winding",
+        "enumerate_sector",
+        "components",
+        "hamiltonian_dense",
+        "write_geo",
+        "fourier_E",
+        "E_vals",
+        "certify",
+        "find_compiler",
+        "lazy_anchors",
+        "_bins",
+        "_ms",
+        "run_rept",
+        "run_gfmc",
+        "sig"
+      ],
+      "file_or_dynamic_calls": [
+        "subprocess.run([EXE['t422x'], GEO['t422'], '120'], capture_output=True, text=True, timeout=AUDIT_TIMEOUT_SEC)",
+        "open(path)",
+        "subprocess.run([EXE['reptate'], geo, str(delta), str(N), str(Nl), str(ntherm), str(nmoves), '100', str(nbins), str(seed), '1', '1', '40', str(kmax), '0', out, str(sweep)], capture_output=True, text=True, timeout=AUDIT_TIMEOUT_SEC)",
+        "subprocess.run([EXE['gfmc'], geo, str(Nw), str(teq), str(tpr), str(dtau), str(K), str(Kp), str(kmax), '4', '4', '0', '0', str(nbins), str(seed), '1', out, str(nsub)], capture_output=True, text=True, timeout=AUDIT_TIMEOUT_SEC)",
+        "run_rept(GEO['t222'], 0.5, 200, 50, 100000, 2000000, 20, SEED_REPT, 1, 'w_t222')",
+        "run_rept(GEO['lad8'], 0.5, 200, 50, 100000, 2000000, 20, SEED_REPT, 1, 'w_lad8')",
+        "run_gfmc(GEO['t222'], 1600, 20, 400, 0.25, 40, 24, 1, SEED_GFMC_T222, 'w_g222')",
+        "run_gfmc(GEO['t444'], 500, 20, 40, 0.1, 160, 120, 1, SEED_GFMC_T4, 'w_g444', nsub=5)",
+        "open(path, 'w')",
+        "subprocess.run([CC, '-O2', '-o', os.path.join(TMP, name), path, '-lm'], capture_output=True, text=True, timeout=180)",
+        "run_rept(GEO['t422'], 0.25, 600, 150, 200000, 3000000, 20, 20260921, 2, 'w_t422')",
+        "open(path, 'w')",
+        "run_gfmc(GEO['t422'], Nw, 20, 400, 0.1, 100, 50, 2, SEED_GFMC_T422, 'w_g422_%d' % Nw)"
+      ],
+      "review_read": "complete original body including all embedded C when applicable",
+      "original_preserved": true
+    }
+  ],
+  "actual_input_binding_file": "PREMISE_CONTEXT_BINDING.json",
+  "original_maps_verification_file": "COMPLETE_MAP_VERIFICATION.json",
+  "artifacts": [
+    {
+      "path": "ACTUAL_CONSUMERS_AND_RUNTIME.json",
+      "bytes": 2928,
+      "sha256": "583dd4e900c06401dfe885a90af13a7e1523491c74578286860f2d8609b019fd"
+    },
+    {
+      "path": "ACTUAL_SOURCE_CONTROLS.json",
+      "bytes": 4020,
+      "sha256": "befb9806a1a0228e121cc6c42c82b288f368f51712aaf966d372df31bbd7172e"
+    },
+    {
+      "path": "CLAIM_PREMISE_LENS_LEDGER.json",
+      "bytes": 11173,
+      "sha256": "9e3bc6ff561ee9b4caf6ce157b14355524c995ce2caf1bf30181e3dda043753d"
+    },
+    {
+      "path": "COMPLETE_MAP_VERIFICATION.json",
+      "bytes": 1757,
+      "sha256": "7c755d34507b9ef72fb7d736217779b100d82f79bc22440872a407079228bc85"
+    },
+    {
+      "path": "EMBEDDED_C_BINDING.json",
+      "bytes": 1264,
+      "sha256": "48d783255120789f4472288aa4f038ca358234bad35a8aeef9f127be5919231d"
+    },
+    {
+      "path": "FINAL_SOURCE_CHECK.json",
+      "bytes": 8001,
+      "sha256": "8bb2319cd551efdaa4281b0ccf3fae29c5d77402032445010d2776f8158c0aea"
+    },
+    {
+      "path": "FINDINGS.json",
+      "bytes": 22984,
+      "sha256": "56ba15d61dd42089f08bd46afefa6b8a7e83ab207d050195fe766432f0f8e5c3"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 1401,
+      "sha256": "bb9820aa07fdf1379b1869d3af3c866a71a09592eeb234972d1a7d4a2ee02dac"
+    },
+    {
+      "path": "INDEPENDENT_CONTROLS.json",
+      "bytes": 4813,
+      "sha256": "f1e70d22ee580b13f5dbc6cba23b7b3649a6eb568344ebf48503be64e20d5a1b"
+    },
+    {
+      "path": "ORIGINAL_EXECUTIONS.json",
+      "bytes": 2274,
+      "sha256": "18b6ce3da2c8160fc6c2323d7c01f4f48a565d1416eeafba2b8cae1f6501dd57"
+    },
+    {
+      "path": "PREMISE_CONTEXT_BINDING.json",
+      "bytes": 1954,
+      "sha256": "4a76e389dbbc10f8324dc8e132bd0a3a7353990f05a1a4680530e89c64ec91ff"
+    },
+    {
+      "path": "PREPARATION_INCIDENTS.md",
+      "bytes": 1067,
+      "sha256": "3ae38fed494304060c7f234d72755bd338e297972bc80304804f8156a5312caa"
+    },
+    {
+      "path": "PRESERVED_RUNTIME.json",
+      "bytes": 2225,
+      "sha256": "9a82a29925fdc7c920e07eb9d38d896c8b57a78d082ba810fd888b1025a7fbee"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 24252,
+      "sha256": "fe09d3ed6f0a026b7dea878687bd51878eeffe66423713086a2788e89ac9a133"
+    },
+    {
+      "path": "RUNTIME_AND_QUOTATION_BINDING.json",
+      "bytes": 753,
+      "sha256": "662acff40099cfb03191f232cfe0845ec6f5392704a1f94cb004f075c1d734c3"
+    },
+    {
+      "path": "SOURCE_BINDING.json",
+      "bytes": 465,
+      "sha256": "748d8c0dc3e6ba4485cd47a3970672da4318cd64512d00ca67d306d105eb12c6"
+    },
+    {
+      "path": "SOURCE_READ_LEDGER.json",
+      "bytes": 6391,
+      "sha256": "554b4878c8a2871f157f2826fafea8b50c389526a9a3e4c2f26c03cedecdd1a9"
+    },
+    {
+      "path": "actual-source-controls/compiler-failure.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "actual-source-controls/compiler-failure.stdout",
+      "bytes": 7341,
+      "sha256": "28ba928aa4500ed8869ad0a26d6823481046ce4b18e2559e737a06ac81eed96d"
+    },
+    {
+      "path": "actual-source-controls/first_excitation_degenerate.py",
+      "bytes": 29330,
+      "sha256": "43163bb96d8560b4fa129a48ff9b4acefb84d706dfb3f113cde0125b389e3595"
+    },
+    {
+      "path": "actual-source-controls/first_excitation_degenerate.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "actual-source-controls/first_excitation_degenerate.stdout",
+      "bytes": 5997,
+      "sha256": "a16e490bf9bf8cd56339e19fb43b2d3c83b2fb19ac7c8157ca4f958fdd2d2640"
+    },
+    {
+      "path": "actual-source-controls/gfmc-api-0.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "actual-source-controls/gfmc-api-0.stdout",
+      "bytes": 514,
+      "sha256": "66f0d0ba5cb1015912c516e86f82af00cd571dff9a2e78025ac3656bf6b01ec4"
+    },
+    {
+      "path": "actual-source-controls/gfmc-api-1.stderr",
+      "bytes": 21,
+      "sha256": "218e2f0a05c7b71709574af87719b5216b5779c5758f9b303bebf3ff64a7a6a8"
+    },
+    {
+      "path": "actual-source-controls/gfmc-api-1.stdout",
+      "bytes": 514,
+      "sha256": "66f0d0ba5cb1015912c516e86f82af00cd571dff9a2e78025ac3656bf6b01ec4"
+    },
+    {
+      "path": "actual-source-controls/gfmc-late-gauss-mutation",
+      "bytes": 35720,
+      "sha256": "6580c1a4be82289769312f5450210369665081ac8e555d78246bc31256aaea9e"
+    },
+    {
+      "path": "actual-source-controls/gfmc-late-gauss-mutation.c",
+      "bytes": 17891,
+      "sha256": "1c152517a9e30bb1eab824feb2badc83da0bfbc4acd8bdf3c00949bef4b68e6e"
+    },
+    {
+      "path": "actual-source-controls/gfmc-mutation-compile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "actual-source-controls/gfmc-mutation-compile.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "actual-source-controls/late-gauss-mutation.bins",
+      "bytes": 2960,
+      "sha256": "ad66c502f5823bdd73ef1cddae0d5f5df25a8436559c3f173746461a7b2074ac"
+    },
+    {
+      "path": "actual-source-controls/normal.bins",
+      "bytes": 2960,
+      "sha256": "ad66c502f5823bdd73ef1cddae0d5f5df25a8436559c3f173746461a7b2074ac"
+    },
+    {
+      "path": "actual-source-controls/wrong_plaquette_coefficient.py",
+      "bytes": 29276,
+      "sha256": "c9f0e30d3addba2d23c4ca82c2401bdf052d27b5e6cc8540c4ac7aa016f4f7e4"
+    },
+    {
+      "path": "actual-source-controls/wrong_plaquette_coefficient.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "actual-source-controls/wrong_plaquette_coefficient.stdout",
+      "bytes": 5998,
+      "sha256": "6f0d5b3ea2efae6c9b1b1bb490647bd9226f8b288d42e095bd68d6fa2af7d0bb"
+    },
+    {
+      "path": "actual-source-controls.log",
+      "bytes": 4020,
+      "sha256": "befb9806a1a0228e121cc6c42c82b288f368f51712aaf966d372df31bbd7172e"
+    },
+    {
+      "path": "actual_source_controls.py",
+      "bytes": 4337,
+      "sha256": "de89b92271908a8cf33d93dd5e7cda385c39f0f4765220f25174973f5f6cbfd0"
+    },
+    {
+      "path": "bind_sources.py",
+      "bytes": 6583,
+      "sha256": "9d968b619b50578973291d38bfccc0b73cee1cd5ef609d2664efce22e1f007d2"
+    },
+    {
+      "path": "binding.log",
+      "bytes": 148,
+      "sha256": "465d488339af9fcae8baee4461bdb22b3f2071434e2e24f27a9679830c44937d"
+    },
+    {
+      "path": "embedded-source/C_GFMC.c",
+      "bytes": 17791,
+      "sha256": "27902396b1c52afc07c6e9c854b960a71960d88e967074ec2732f088cd60f421"
+    },
+    {
+      "path": "embedded-source/C_REPTATE.c",
+      "bytes": 24469,
+      "sha256": "33ca3d4e2009ee8178b3fbc8201a72fae7194ac540502ae91f5f9a2b75d44b94"
+    },
+    {
+      "path": "embedded-source/C_T422.c",
+      "bytes": 12012,
+      "sha256": "162d694f9b56ebb595ab79a5ae7f3aec475b1f8650ecd421982ac251303826f5"
+    },
+    {
+      "path": "freeze_report.py",
+      "bytes": 28648,
+      "sha256": "cf4d7ae22a7744ad61b3d02ab08ae378be22ff3c7c4b6bd8794b02a8cb0b94c2"
+    },
+    {
+      "path": "independent-controls.log",
+      "bytes": 4813,
+      "sha256": "f1e70d22ee580b13f5dbc6cba23b7b3649a6eb568344ebf48503be64e20d5a1b"
+    },
+    {
+      "path": "independent_controls.py",
+      "bytes": 7077,
+      "sha256": "83bfa8c798cfb1dac6d8cee12b04d8cc06e87fa1145c22e841307c378b828a8d"
+    },
+    {
+      "path": "mutant-certify-reversed-acceptance.py",
+      "bytes": 3853,
+      "sha256": "246f1cb763d29d8dd597efedb3f46dc11244eaab00b57404c148b94864e0b9b8"
+    },
+    {
+      "path": "original-7911.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "original-7911.stdout",
+      "bytes": 5997,
+      "sha256": "a16e490bf9bf8cd56339e19fb43b2d3c83b2fb19ac7c8157ca4f958fdd2d2640"
+    },
+    {
+      "path": "original-7959.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "original-7959.stdout",
+      "bytes": 9599,
+      "sha256": "63aa19c4ccb03de8fa1365d03b4f335f01690784f334ac8c359185a1f35cbd58"
+    },
+    {
+      "path": "original-executions.log",
+      "bytes": 2035,
+      "sha256": "5062c243e21af676cea850c4f154fea906018b1ce20796fe2ffc956bfa184b24"
+    },
+    {
+      "path": "preserve_runtime_wrapper.py",
+      "bytes": 990,
+      "sha256": "c91b2e088c71281f65949f43083b27d18fbee16fda594f88decae8b9693c7e89"
+    },
+    {
+      "path": "preserved-runtime/gfmc",
+      "bytes": 35704,
+      "sha256": "144d4b00eb49e09dae712a3e45026c3358f731c4a2a0df05d099481e4fde5a33"
+    },
+    {
+      "path": "preserved-runtime/gfmc.c",
+      "bytes": 17791,
+      "sha256": "27902396b1c52afc07c6e9c854b960a71960d88e967074ec2732f088cd60f421"
+    },
+    {
+      "path": "preserved-runtime/lad8.geo",
+      "bytes": 438,
+      "sha256": "375b3aa3084aaa2aaa12bf0bd38285734eb4a7d6e92e74e3e82160b727b61a67"
+    },
+    {
+      "path": "preserved-runtime/reptate",
+      "bytes": 52088,
+      "sha256": "fc9945ad2263b1caebc6910cb742aa8dc9fec2db45f49bac538e7b029c04187d"
+    },
+    {
+      "path": "preserved-runtime/reptate.c",
+      "bytes": 24469,
+      "sha256": "33ca3d4e2009ee8178b3fbc8201a72fae7194ac540502ae91f5f9a2b75d44b94"
+    },
+    {
+      "path": "preserved-runtime/t222.geo",
+      "bytes": 755,
+      "sha256": "ba1156c2be8e7297d0ed13111e96501769d893863e1230c7ae81644d2aa99d95"
+    },
+    {
+      "path": "preserved-runtime/t422.geo",
+      "bytes": 1556,
+      "sha256": "a42aef4b85d8bb0f4ef1509e132d9c58b039e585d82f6b2007cf6cfc56e41a05"
+    },
+    {
+      "path": "preserved-runtime/t422x",
+      "bytes": 35080,
+      "sha256": "d48a7397f901d77c0b97731ef5c1e27638dd8b925c2acc20252973753aa52cba"
+    },
+    {
+      "path": "preserved-runtime/t422x.c",
+      "bytes": 12012,
+      "sha256": "162d694f9b56ebb595ab79a5ae7f3aec475b1f8650ecd421982ac251303826f5"
+    },
+    {
+      "path": "preserved-runtime/t444.geo",
+      "bytes": 6910,
+      "sha256": "4605137ead439642f08c9117b9ef7347d94cd8ec4ca018b31b768a97a680975c"
+    },
+    {
+      "path": "preserved-runtime/w_g222.bins",
+      "bytes": 30207,
+      "sha256": "f830021b5971dd19fa52e44519afd223952f72df17d1b5112cd80e3b3865bf94"
+    },
+    {
+      "path": "preserved-runtime/w_g422_1600.bins",
+      "bytes": 168367,
+      "sha256": "b5c1c56d524be1c063a5ef646c5b6ceb689dcb737ff63009e333660f8e32af39"
+    },
+    {
+      "path": "preserved-runtime/w_g422_400.bins",
+      "bytes": 168722,
+      "sha256": "a82e662caa76bbd98bf34eec0b993238506a1f60dc1cb8af3f2987033c55ac5b"
+    },
+    {
+      "path": "preserved-runtime/w_g422_6400.bins",
+      "bytes": 168065,
+      "sha256": "dd91746a53ef42c921d0bdd1a98f6b839ab601b3739f8938b07bd88007890250"
+    },
+    {
+      "path": "preserved-runtime/w_g444.bins",
+      "bytes": 68917,
+      "sha256": "106f11868515d78dfd29d7057024b7e7bc0181fe243dec53f925740e6a0cf313"
+    },
+    {
+      "path": "preserved-runtime/w_lad8.bins",
+      "bytes": 14353,
+      "sha256": "4f9e38a57d5024d42e97df7a34f75a7da08f0e23b53bcaf096b6468f69cfbaf9"
+    },
+    {
+      "path": "preserved-runtime/w_t222.bins",
+      "bytes": 74520,
+      "sha256": "bf0619d842002434b7c154c7b28f313d97ad4b7f03500d1b49bddacbfb84ffbc"
+    },
+    {
+      "path": "preserved-runtime/w_t422.bins",
+      "bytes": 145552,
+      "sha256": "1cd4a375cc1c29d9908455b6a8040806c61fdf76774b55fbfe3bc0edc1d3c1a4"
+    },
+    {
+      "path": "quoted-parent-context.md",
+      "bytes": 40330,
+      "sha256": "cdbb5534c5e9091a322e67acb5a45b4566db15e0c2152c5f1272b806c4f27fef"
+    },
+    {
+      "path": "run_originals.py",
+      "bytes": 2669,
+      "sha256": "c2500fc9ac22f6703345e99d4adccf25a9f97f4bba7bfe495360faf6d84cc437"
+    },
+    {
+      "path": "seal_review.py",
+      "bytes": 4882,
+      "sha256": "f063c2b61010e7917d1a25d934b07fd431f82e118de24a625f9f4423d4b573e3"
+    }
+  ]
+}

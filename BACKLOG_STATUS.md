@@ -5,6 +5,24 @@ The owner has fixed this cleanup to the **original 254 PRs**, captured at
 13:10:39 UTC. Exact membership and original heads are in `BACKLOG_CUTOFF.json`.
 New arrivals are excluded. Formal audit waits until a solid TOE.
 
+## Pending wave14 — integration repair
+
+The first candidate passed its complete independent science/meta reviews, then
+passed the mechanical pipeline and strict lint. The final changed-evidence check
+failed because B38/B37 helpers declared missing historical inputs at active paths.
+Main and all closure counts below remain unchanged. The failed candidate and
+complete run are preserved; no PR was closed from that failed attempt.
+
+A separate repair preserves every helper declaration through exact archived
+placements, binds their full input union and keeps all helper mathematical bodies
+unchanged. B42's new actual run passes 16/0; B43's unchanged fresh 10/0 is reused.
+All 64 primary input edges and the actual source-readiness consumer pass. The
+repaired candidate has 82 source paths plus the byte-exact prior manifest, tree
+`2e5f640dce7b17f968f7956dad93fe2d8c1d9de3`. Original-session science confirmation
+and bounded meta interaction confirmation are active before final validation.
+The 25 new archived inputs carry historical provenance, not parent-claim acceptance.
+See [the hold evidence](backlog_evidence/wave14-hold/INDEX.json).
+
 ## Original backlog outcomes
 
 | Disposition | Original PRs |
@@ -75,11 +93,13 @@ finite projector/ice evidence supplies no empirical calibration or continuum lim
 | Owner | Unit | Current state and next step |
 | --- | --- | --- |
 | Landed | #7851 including #7850 | Complete corrected paired scope accepted on main; historical provenance preserved. |
-| Original reviewer | #7847 including #7846 | Six corrections and exact parent archives frozen. New actual caches pass 16/0 and 10/0; final composed review active. |
+| Original reviewer | #7847 including #7846 | Review the frozen helper declaration repair after a real changed-evidence failure. Prior scientific PASS alone cannot land the new tree. |
 | Landed | #7972 process helper | 15 tests pass; reviewed optional coverage helper and selective prior-art skill guidance landed. Counted as process, not science. |
-| Independent reviewer | #7976 landing-core synthesis | Full meta/quotation review active on 18 frozen source additions plus composed manifest. Preserves wave12 history and separate member dispositions. |
-| Independent reviewer | #7892/#7893/#7903 matter and U1 links | Original runs pass, but independent controls found sector-mixing and false-passing mutants. Final findings and narrow repair handoff pending. |
-| Prepared, unaccepted | #7911/#7959 pure-link ring and cubic projector | Six exact authored additions prepared. Next complete review assesses finite geometry, actual C engines and quoted-production boundaries. |
+| Independent reviewer | #7976 landing-core synthesis | Complete meta PASS preserved at prior tree; unchanged sources/manifest need only the affected cross-unit confirmation. |
+| Repair author, then original reviewer | #7892/#7893/#7903 matter and U1 links | Original review returned ten P2 and one P3 findings. Narrow repairs active; no final cache/source PASS yet. |
+| Awaiting repair author | #7911/#7959 pure-link ring and cubic projector | Complete original review returned ten P2 and one P3 findings, including vacuous Gauss diagnostics and compiler-failure success. Preserve finite results and original receipts. |
+| Independent reviewer | #7990 Born-price wordings | Original runner 49/0; actual semantic controls expose Record/menu, scale-blind and joint-law issues. Complete report pending. |
+| Scope preparation only | #6358/#6371 plus six consolidated constituents | Complete original/current source and input maps being prepared; no new scientific verdict. |
 | Reconciliation complete | Ten direct landings and 110 other closures | All 120 closed originals retain recoverable source; 84 pending closed scopes remain obligations at 10 open successors. No reopening indicated. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
 | Coordinator | #6377 | #6282/#6285/#6287 consolidated with complete source maps and preserved branches. Reconcile all old scalar Record-additivity/I(empty) consumers with current premises; appended ledger and successor claims remain unaccepted. |

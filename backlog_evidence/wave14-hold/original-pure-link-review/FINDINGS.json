@@ -1,0 +1,405 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "title": "Parity and neutrality do not select the staggered background",
+    "anchors": [
+      {
+        "path": "docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          4,
+          119,
+          123,
+          280
+        ]
+      },
+      {
+        "path": "scripts/spin_half_link_ring_gapped_electric_string_check_2026_09_03.py",
+        "lines": [
+          18,
+          287
+        ]
+      }
+    ],
+    "problem": "The note declares a background but also says odd coordination plus total neutrality force its alternating sign. They only constrain each doubled charge to be odd and the sum to vanish. The source itself exhibits a neutral columnar alternative. An independent complete 12-bit L=4 enumeration also finds 8 valid states for top charges [1,1,-1,-1] and opposite bottom charges, versus 9 staggered and 4 columnar states. The alternating convention is a modeling choice.",
+    "narrow_fix": "Retain the explicitly supplied staggered background and exact convention comparison, and remove all selection/forcing claims from parity and neutrality. Do not add an axiom or a dynamical background-selection rule.",
+    "affected_confirmation": "Keep the actual columnar and nonalternating neutral/odd-charge counterexamples and independently verify their Gauss residuals. Preserve the original staggered census.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json",
+      "original-7911.stdout"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F2",
+    "priority": "P2",
+    "title": "Report finite ring fits and approximate string slopes without exact or asymptotic conclusions",
+    "anchors": [
+      {
+        "path": "docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          34,
+          58,
+          151,
+          154,
+          175,
+          176,
+          177,
+          215,
+          217,
+          242,
+          286,
+          289,
+          321
+        ]
+      },
+      {
+        "path": "scripts/spin_half_link_ring_gapped_electric_string_check_2026_09_03.py",
+        "lines": [
+          449,
+          482,
+          494,
+          553,
+          586,
+          594,
+          780
+        ]
+      }
+    ],
+    "problem": "The finite data show unequal slopes and a nonzero linear-fit residual, yet the live theorem says exactly linear, no 1/d piece at any d, and exact equality of tension with vacuum density. Its quoted residual is 1.2e-4 and fitted Coulomb coefficient about -0.0004. The exact winding splitting is -E0(L), not a universal 0.60356 L: independently at L=4 its density is 0.612372435696. Nine finite gaps and a Richardson extrapolation do not prove a thermodynamic gap, exponential correction, correlation length or disordered/confined phase; the explicit L<=20 caveat conflicts with those live conclusions. The Pauling estimate is not an exact size bound or a proof exact diagonalisation is impossible at any 3D size.",
+    "narrow_fix": "Keep exact finite census, matrix bijection, frozen winding sectors, finite spectra and all original fit outputs. Call the string nearly linear over the five tested separations, the density agreement approximate, and the extrapolations/fits diagnostic. State exact splitting as -E0(L) and identify the L=20 density. Restrict gap/correlation/uniqueness statements to computed sizes and observables. Label the Pauling figure a heuristic estimate, preserving the explicit exact small-torus result.",
+    "affected_confirmation": "Compare displayed claims to actual residuals, finite-size densities and fit windows; no tolerance adjustment or new thermodynamic proof is requested. The literal exact-linearity and constant-density assertions must reject these existing data.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json",
+      "original-7911.stdout"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F3",
+    "priority": "P2",
+    "title": "Actually check the claimed first-excitation multiplicity and glide relations",
+    "anchors": [
+      {
+        "path": "docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          151,
+          162,
+          168,
+          285
+        ]
+      },
+      {
+        "path": "scripts/spin_half_link_ring_gapped_electric_string_check_2026_09_03.py",
+        "lines": [
+          427,
+          434,
+          444,
+          446
+        ]
+      }
+    ],
+    "problem": "C1 tests the two lowest eigenvectors momentum expectations and the first gap, but not w2-w1, the full commutator [H,S], or S^L=I. A source mutation setting w[2]=w[1] in the actual ring spectral loop, introducing a second first-excited level, still yields 24/0 and exit0. The claim that nothing is degenerate anywhere also exceeds even a check of the first excitation.",
+    "narrow_fix": "Add the actual first-excitation separation and full finite permutation/order/commutation checks, or narrow any unverified part. Keep the correct ground and first-excited momentum results, and remove a blanket no-degeneracy statement about the whole spectrum.",
+    "affected_confirmation": "The preserved full-source degeneracy mutation must fail. Independently bind the permutation to every selected basis state and verify its Lth power and H conjugation; a changed permutation must not pass merely because two expectations match.",
+    "evidence": [
+      "ACTUAL_SOURCE_CONTROLS.json",
+      "actual-source-controls/first_excitation_degenerate.stdout"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F4",
+    "priority": "P2",
+    "title": "Zero diagonal does not make plaquette operators readable through fixed-record correlations",
+    "anchors": [
+      {
+        "path": "docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          87,
+          91
+        ]
+      },
+      {
+        "path": "docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md",
+        "lines": [
+          85,
+          86
+        ]
+      }
+    ],
+    "problem": "Both notes infer that U and P have no record diagonal and therefore register through correlations among the same records. The second implication is false. On the actual Gauss-legal L=4 ladder, (|1365>+|1394>)/sqrt2 and (|1365>-|1394>)/sqrt2 have identical complete joint Z-record probabilities but plaquette expectations +1 and -1. No correlation of those fixed records distinguishes them.",
+    "narrow_fix": "Retain the diagonal flux readout and exact zero-diagonal statement. Say that no fixed-record readout for the off-diagonal observable is provided; leave additional bases, dynamics or new-record protocols open. Preserve Record permanence and the supplied-model boundary.",
+    "affected_confirmation": "Keep the explicit Gauss-legal pair or an equivalent independent counterexample. Do not turn a formal operator correlator into a physical Record protocol.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json",
+      "PREMISE_CONTEXT_BINDING.json"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F5",
+    "priority": "P2",
+    "title": "A constant microscopic electric square does not exclude a coarse electric stiffness",
+    "anchors": [
+      {
+        "path": "docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          87,
+          225
+        ]
+      },
+      {
+        "path": "docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md",
+        "lines": [
+          40,
+          210,
+          211,
+          212,
+          214,
+          241
+        ]
+      }
+    ],
+    "problem": "The #7959 interpretation says spin1/2 cannot pay for a coarse electric stiffness because each microscopic E_e^2=1/4. A coarse square contains cross-link terms and need not be constant. The same pure plaquette law already has a nonzero winding-sector energy cost on #7911. Adding matter cannot make the bare sum of these microscopic identities nonconstant, although interactions might induce a different effective energy. The finite single-site CCR obstruction also does not forbid collective carriers. Flat quoted S_T is not a derivation that long-wavelength electric textures cost nothing.",
+    "narrow_fix": "Limit E_e^2=I/4 to the absence of an independently tunable bare term of that specific form. Leave induced coarse stiffness, its sign/value, and the physical continuum dictionary unresolved. State matter/larger-link alternatives as hypotheses without claiming that matter changes this bare identity or that the qubit axiom selects a unique collective carrier.",
+    "affected_confirmation": "Retain the direct two-link coarse-square counterexample and the actual nonzero winding energy in the same selected model. No new effective-field-theory derivation is requested.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json",
+      "PREMISE_CONTEXT_BINDING.json"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F6",
+    "priority": "P2",
+    "title": "Bind quoted production provenance or keep it explicitly unverified historical arithmetic",
+    "anchors": [
+      {
+        "path": "docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md",
+        "lines": [
+          4,
+          63,
+          182,
+          184,
+          187,
+          267,
+          279,
+          298
+        ]
+      },
+      {
+        "path": "scripts/pure_spin_half_link_model_gapless_quadratic_mode_open_path_projector_check_2026_09_04.py",
+        "lines": [
+          43,
+          1721,
+          1735,
+          1750,
+          1760
+        ]
+      }
+    ],
+    "problem": "The selected original delta supplies a note, runner and cache, with broad seed/run ranges and literal production values. It supplies no per-row raw-log path/hash, exact command/geometry/sector mapping, engine-source snapshot for those particular runs, bin series or estimator-window mapping. The fresh runner only checks arithmetic on those constants and runs one short L=4 witness. This review cannot independently confirm that the quoted large-volume rows were produced by the declared algorithm or estimate their systematic errors. The embedded-current-engine assertion is not retrospective source provenance.",
+    "narrow_fix": "Preserve the original quoted rows as dated provenance. Either attach exact recoverable original evidence and complete run/source mappings for independent review, or clearly classify them as unverified reported inputs whose arithmetic alone is checked and remove their authority for current physical conclusions. Do not rerun costly production or invent missing histories within this narrow fix.",
+    "affected_confirmation": "For any promoted row require exact source, parameters, sector, raw bins and estimator mapping. Otherwise the corrected live note/check labels must say unverified quoted arithmetic and carry the missing-production obligation explicitly.",
+    "evidence": [
+      "RUNTIME_AND_QUOTATION_BINDING.json",
+      "SOURCE_BINDING.json",
+      "original-7959.stdout"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F7",
+    "priority": "P2",
+    "title": "Finite quoted trends and naive standard errors do not decide a phase or calibrated exclusion",
+    "anchors": [
+      {
+        "path": "docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md",
+        "lines": [
+          9,
+          24,
+          187,
+          190,
+          191,
+          193,
+          196,
+          199,
+          201,
+          231,
+          241,
+          279,
+          281,
+          299
+        ]
+      },
+      {
+        "path": "scripts/pure_spin_half_link_model_gapless_quadratic_mode_open_path_projector_check_2026_09_04.py",
+        "lines": [
+          1725,
+          1737,
+          1749,
+          1760,
+          1766
+        ]
+      }
+    ],
+    "problem": "The title, corollary and summary say gapless, deconfined and unordered are decided at L<=12 despite positive finite frequencies and no controlled asymptotic analysis. A finite trend can be compatible with a quadratic form without identifying a phase or excluding a crossover. The 12.0/6.3-sigma claims treat the fitted L=4 tension as exact, ignore its quoted uncertainty and inter-run covariance, and use bin errors despite acknowledged autocorrelation/population/projection bias. Positive finite-seed population offsets do not prove a general bias sign, rate or its transfer to L=10/12. An electric structure factor is not an exhaustive order parameter, particularly for a plaquette solid.",
+    "narrow_fix": "Use descriptive finite-size trends/conditional comparisons, remove decided phase and categorical Maxwell/no-order exclusions, and preserve all explicit unresolved limits. Label sigma calculations as naive arithmetic under stated assumptions, not calibrated confidence or likelihood; no universal population-bias bound or large-volume error estimate follows. Distinguish the supplied classical Maxwell comparator from a quantum correlator/measurement bridge.",
+    "affected_confirmation": "Keep the same quoted numbers and small seeded checks; verify that every heading, claim_scope, machine payload, witness label and conclusion now carries the same finite/uncertain boundary. Do not fit a new model or fabricate confidence coverage.",
+    "evidence": [
+      "RUNTIME_AND_QUOTATION_BINDING.json",
+      "PREMISE_CONTEXT_BINDING.json",
+      "original-7959.stdout"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F8",
+    "priority": "P2",
+    "title": "Keep the component and decay statements at their actually computed scope",
+    "anchors": [
+      {
+        "path": "docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md",
+        "lines": [
+          139,
+          142,
+          147,
+          151,
+          204,
+          220,
+          238,
+          280
+        ]
+      },
+      {
+        "path": "scripts/pure_spin_half_link_model_gapless_quadratic_mode_open_path_projector_check_2026_09_04.py",
+        "lines": [
+          1522,
+          1546,
+          1549,
+          1766
+        ]
+      }
+    ],
+    "problem": "The C engine performs one BFS from zero-winding ice, proving one nonfrozen component in that particular class. It does not prove one component per each of the405 winding classes, although headings and summary say so. C5 computes finite effective ratios at m40/80/120, not a certified limiting eigenvalue error. PF positivity alone does not make every finite lazy-correlation ratio an upper bound: on this unit's actual seven-state ladder, delta=.5, a diagonal observable gives a positive-ratio effective value0.449489743 at m2 while its lowest coupled excitation is1.035276180. Negative eigenvalues of B cause this; an exact continuous-time positive spectral measure needs a different argument. Finite, noisy, biased sampler ratios acquire no bound from the few torus examples.",
+    "narrow_fix": "State the complete zero-winding result including48 frozen states, and leave other winding-class connectivity unexamined. Report the measured effective rates at their exact finite m; do not call rounded limits exact or export a bound to all sampler plateaus. If retaining an upper-bound proposition, give the spectral positivity/time-parity/ground-state assumptions and distinguish exact expectations from estimators.",
+    "affected_confirmation": "Preserve all actual C census/matrix/finite-ratio values and the named-ladder counterexample. No other huge winding-class enumeration or new spectral computation is needed for the narrower result.",
+    "evidence": [
+      "INDEPENDENT_CONTROLS.json",
+      "original-7959.stdout",
+      "EMBEDDED_C_BINDING.json"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F9",
+    "priority": "P2",
+    "title": "Make GFMC Gauss diagnostics observe states in the declared runs",
+    "anchors": [
+      {
+        "path": "docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md",
+        "lines": [
+          175,
+          177,
+          266
+        ]
+      },
+      {
+        "path": "scripts/pure_spin_half_link_model_gapless_quadratic_mode_open_path_projector_check_2026_09_04.py",
+        "lines": [
+          1101,
+          1158,
+          1160,
+          1187,
+          1604,
+          1618,
+          1694,
+          1713
+        ]
+      }
+    ],
+    "problem": "Every run_gfmc call passes dump_every=0, but gauss_err increments only inside the enabled dump branch. Thus the returned gauss=0 is not a live verification of walkers throughout these runs. An actual embedded-C mutation flips a final walker bit after measurement; the real run_gfmc API returns byte-identical numerical fields and gauss=0, while an independent final residual is2. The unmutated algebra preserves Gauss; the finding is the vacuous advertised diagnostic.",
+    "narrow_fix": "Check actual initialized, evolved/resampled and final states at an explicit bounded cadence independent of dump settings, and report the number of states/equations checked. Make violations fail the engine/consumer. Preserve the current physical construction, RNG, estimator formulas, parameters and original historical zero-counter receipts as history.",
+    "affected_confirmation": "The preserved actual C bad-state mutation must be detected through the real run_gfmc consumer. Normal small runs must execute nonzero checks. A zero sample count cannot support a Gauss PASS.",
+    "evidence": [
+      "ACTUAL_SOURCE_CONTROLS.json",
+      "actual-source-controls/gfmc-api-1.stderr"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F10",
+    "priority": "P2",
+    "title": "Do not turn a failed required compiler/engine into a successful full-source cache",
+    "anchors": [
+      {
+        "path": "docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md",
+        "lines": [
+          299,
+          305,
+          308
+        ]
+      },
+      {
+        "path": "scripts/pure_spin_half_link_model_gapless_quadratic_mode_open_path_projector_check_2026_09_04.py",
+        "lines": [
+          1464,
+          1478,
+          1491,
+          1500,
+          1625,
+          1771,
+          1772
+        ]
+      }
+    ],
+    "problem": "A compile failure or nonzero census-engine exit is converted to SKIP. The final exit depends only on FAIL and the current landing language requires only FAIL=0. With the actual original CLI and CC=/usr/bin/false, all11 C-dependent rows skip but the program exits0 with16/0; a required exact theorem was not checked. Explicitly reporting a skip is useful but is not a successful complete source result.",
+    "narrow_fix": "Keep transparent partial diagnostics, but make the default full-unit outcome fail closed or explicitly incomplete when any required exact/witness section cannot execute. Compilation/engine errors must remain errors with reasons. Do not lower expected coverage or relabel the cache as scientifically complete.",
+    "affected_confirmation": "Replay the actual compiler failure and an actual engine nonzero-exit control: they must not produce a successful complete-run receipt. The normal original51-check coverage and exact engine outputs remain available for affected reuse.",
+    "evidence": [
+      "ACTUAL_SOURCE_CONTROLS.json",
+      "actual-source-controls/compiler-failure.stdout"
+    ],
+    "status": "OPEN; original source unchanged"
+  },
+  {
+    "id": "F11",
+    "priority": "P3",
+    "title": "Align live status, statement precision and projector proof labels",
+    "anchors": [
+      {
+        "path": "docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "lines": [
+          32,
+          35,
+          41,
+          42,
+          164
+        ]
+      },
+      {
+        "path": "docs/THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md",
+        "lines": [
+          31,
+          34,
+          40,
+          41,
+          158,
+          163,
+          177,
+          305
+        ]
+      }
+    ],
+    "problem": "Both machine blocks still schedule formal audit and use stale bounded-support/frontier traces. The owner explicitly defers that lane. Several statements conflate exact finite construction with floating evaluation or printed precision (for example seven-decimal ring gaps tagged1e-9). T4 also says every path step is a flip although the declared/constructed paths include stays, and the exact Python certificate covers reptation transitions, not automatically every C interior/branching implementation or its stochastic error coverage.",
+    "narrow_fix": "Use the approved current conditional supplied-model status/trace and a truthful source-review or missing-evidence next action. Keep audit unset/deferred and original dated receipts. Separate exact integer/bit results, deterministic floating residuals, finite fits and seeded estimators; fix printed rounding claims and say every non-stay step is a flip. State PF component/delta>0 and beta>=0 domains where relevant. Describe the actual certified kernel and separately justified interior updates/GFMC checks without blanket machine-proof language.",
+    "affected_confirmation": "Cold-read all affected live surfaces and final check labels against actual execution/coverage; preserve count identities or explain additions. No formal auditor, status application, parent campaign or full pipeline belongs in this repair.",
+    "evidence": [
+      "SOURCE_READ_LEDGER.json",
+      "ACTUAL_CONSUMERS_AND_RUNTIME.json",
+      "PREMISE_CONTEXT_BINDING.json"
+    ],
+    "status": "OPEN; original source unchanged"
+  }
+]
