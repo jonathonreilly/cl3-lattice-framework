@@ -50,18 +50,15 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. Reviewed corrected Record, Noether, matter, shifting, symmetry/Hartree,
-   walls, sea/corner, flux, relaxation, vacuum/energy and carrier/role source
-   are on main. BACKLOG_STATUS.md records exact scopes and commits.
-   Support/readout #7918/#7928/#7934 original review is sealed with nine findings;
-   its separate author has verified the full packet and begun narrow repairs.
-   The #6377 cumulative original review is sealed with seven correction groups,
-   preserved original failures and explicit used-supplier boundaries; separate
-   author backlog_batch_contract is preparing source and placement fixes; final
-   confirmation remains. Role-law and matter-readout
-   #7939/#7977/#7982 originals are under complete review. #5966 and #6515 retain
-   their premise and actual reserved-source holds. Closure reconciliation remains
-   complete: 77 pending closed scopes at 7 open successors. Fixed 254 only; all
+1. The corrected support/readout and twelve-scope DK/OS successor are now
+   on main alongside the earlier reviewed science. BACKLOG_STATUS.md and the
+   canonical reconciliation hold exact current counts and source boundaries.
+   Role-law #7939/#7977/#7982 has a sealed original review with fourteen findings;
+   backlog_batch_contract authors repairs and backlog_draft_triage retains final
+   confirmation. backlog_8001_review resumes original #5966 source/premise work;
+   no prior partial preparation grants PASS. Bounded new original review proceeds
+   with safe-boundary priority for ready confirmations. Sixty-six closed scopes
+   remain pending at six open successors. Fixed 254 membership, all transitive
    reservations and formal audit deferral remain.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
