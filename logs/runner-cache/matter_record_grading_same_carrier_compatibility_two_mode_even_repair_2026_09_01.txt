@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/matter_record_grading_same_carrier_compatibility_two_mode_even_repair_2026_09_01.py
+runner_sha256: 72c15c5de5611a0aa14dab19c0c7ebbaf7093865a62699f05113a211d33290af
+input_fingerprint_sha256: eb3b8153a8a989c5d93e5b2b1d2cbd1aa44ab54c81486640d6f27054f4ba41b5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 27.25
+status: ok
+----- stdout -----
+PASS source_and_prereg_binding: prereg_blobs=9/9 unchanged=8/8 mutations=22/22; minimal axioms and N1-N8 bound
+PASS same_carrier_projector_span: six Pauli-axis projectors span rank=4; Ad(Z) fixed=(X:False,Y:False,Z:True)
+PASS literal_block38_parity_collision: generic grading defect=-lambda(a_x X+a_y Y); literal X-axis Block-38 effect and pure successor are not even
+PASS one_qubit_commutant_capacity: commutant={(q0, 0, 0, 0)}; one qubit has no independent commuting full-M2 Record factor and no arbitrary even logical qubit
+PASS two_mode_even_logical_writer: two-mode even code checks pauli=True even=True projector=True complete=True effect_even=True spectrum=True choi=True pointer=True repeat=True
+PASS proper_cubic_logical_covariance: 24 even projective lifts: exact-product mismatches=256/576, induced-action failures=0; logical effect action closes
+PASS typed_matter_record_product: generated ranks matter=(graded:16,ordinary:16) Record=4; dimension=256; symbolic local number/Record expectations shared
+PASS finite_typed_local_comparison: supplied finite ternary-neighbor rule p(Record=1)=(encoded_sum+1)/14 is normalized, varying and invariant for 24 cubic rotations; memo_text_bound=True finite_scope=True rule=True formed=729 varies=True persistent_histories=1458/1458 local_twin=True
+PASS decision_and_scope: same-carrier trilemma plus exact repair is AXIOM_DECISION_READY; owner choice remains G/M/D; zero audit/obligation/TOE movement
+PASS hostile_mutation_gate: 31/31 designated mutations rejected
+N5_EXECUTION per_element: six projectors, grading action, commutant, logical effects and Choi matrices executed
+N5_EXECUTION per_site: one-mode lower bound, four physical qubit matter/Record typing, parity and local readout twins executed
+N5_EXECUTION per_mode: two-mode even logical Pauli algebra, arbitrary-axis writer spectrum and exact repeatability executed
+N5_EXECUTION per_block: two matter plus two Record carriers, graded and ordinary cross-site relations and 24 cubic rotations executed
+N5_EXECUTION lattice_wide: checked and not executed - no covariant dynamic role assignment, full collision process, state, action or physical-identification law is supplied
+SUMMARY same_carrier=CONDITIONAL_INCOMPATIBILITY two_mode_even_repair=PASS typed_matter_record_candidate=PASS statistics_selection=OPEN axiom_decision_status=PROPOSAL_ONLY global_model=UNESTABLISHED historical_shipping_label=BACKLOG_NO_PR audit_status=unset obligation_retirement=0 toe_percentage_movement=0 input_sha256=719f543310604fc4c5647f68299947c439b9f21e50d9643127e38a94a7cd405e
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

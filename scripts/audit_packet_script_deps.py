@@ -45,6 +45,10 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "admissibility_sharp_qubit_record_writer_orientation_axiom_decision_bounded_theorem_note_2026-09-01": [
+        "scripts/admissibility_random_axis_m2_matter_repeat_selector_local_compiler_2026_09_01.py",
+        "scripts/admissibility_block36_specific_nn_active_cut_record_front_2026_09_01.py",
+    ],
     "gauge_wilson_cube_slab_character_mixing_bounded_theorem_note_2026-09-07": [
         "scripts/gauge_wilson_cube_slab_reflection_geometry_check_2026_09_07.py",
         "scripts/native_gauge_transfer_spatial_wilson_cube_slab_f3_check_2026_09_07.py",
