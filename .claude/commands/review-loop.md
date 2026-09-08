@@ -27,13 +27,12 @@ Mode selection:
 1. Read the skill file above before acting.
 2. Select the mode per the Invocation section above; focused mode only
    when a `[target]` is named.
-3. Fan out the physics reviewers in parallel when the agent environment allows:
-   `CodeRunnerReviewer`, `PhysicsClaimReviewer`,
-   `ProofObligationReviewer` (when theorem/proof/reduction claims changed),
-   `ImportSupportReviewer`, `NatureRetentionReviewer`,
-   `NoGoDisciplineReviewer` (when negative claims changed),
-   `LabelingConventionReviewer` (when bounded-theorem candidates changed),
-   `RepoGovernanceReviewer`, and optionally `MethodologySkillReviewer`.
+3. Use one independent Astra-low (`gpt-6-astra`, `low`) reviewer per coherent
+   unit. Apply the relevant physics lenses in one focused pass. Escalate only
+   unresolved material mathematical/premise questions or reviewer disagreements
+   to Astra xhigh. Completed valid reviews remain reusable. Follow the skill's
+   focused-landing section: concise material findings and decisive evidence;
+   exhaustive claim certification belongs to the deferred formal audit.
 4. Fix only verified, narrow findings. Demote overclaims instead of patching
    missing science with prose. Use the skill's overlap-repairs guidance for
    authorized early finding handoffs against immutable originals, safe-boundary

@@ -17,6 +17,19 @@ Use this skill to apply reviewer pressure before a claim lands on the live
 surface. The raw synthesis shows that the most common failure is not bad prose;
 it is artifact-chain or semantic drift.
 
+## Landing review depth
+
+For pre-landing review, follow the owner-selected Astra-low default and focused
+review contract in [`../review-loop/SKILL.md`](../review-loop/SKILL.md).
+Read the complete changed argument and its necessary premises, challenge the
+decisive mathematics and physical identifications, and report material findings
+concisely. Escalate unresolved consequential questions to Astra xhigh. The
+batteries below guide risk selection; they do not require exhaustive new
+certificates for every minor detail. Known false claims must be fixed or
+narrowed before landing; comprehensive claim certification belongs to the
+later independent audit. This does not change the formal auditor's model or
+standards, or authorize running it before the owner's solid-TOE milestone.
+
 ## Workflow
 
 1. **Read the claimed authority surface.** Identify the note, runner, log,

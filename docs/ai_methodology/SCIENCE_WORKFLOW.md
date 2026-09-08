@@ -74,6 +74,16 @@ review and close/ready decisions after exact-head verification; still-draft
 landing is forbidden, and marking ready does not grant PASS. Owner-reserved
 content remains excluded until its reservation is explicitly lifted.
 
+Owner update (2026-09-08): ordinary landing review uses one independent
+Astra-low reviewer per coherent unit, focused on consequential mathematical
+errors, unsupported conclusions and reproducible decisive evidence. Specific
+unresolved mathematical/premise questions or reviewer disagreements escalate
+to Astra xhigh. Keep source recovery, current-main preservation and final
+source confirmation; reuse valid completed reviews and avoid exhaustive
+per-claim reporting at this stage. Formal audit provides detailed certification
+later. Neither a model choice nor audit deferral permits known false claims,
+unlabelled assumptions or fabricated evidence to land as established results.
+
 The mechanical audit pipeline prepares and propagates data. A pipeline PASS,
 runner PASS, reviewer PASS, and scientific audit verdict answer different
 questions. None substitutes for the others. Audit must be free to disagree

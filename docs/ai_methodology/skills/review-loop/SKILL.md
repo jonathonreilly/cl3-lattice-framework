@@ -20,12 +20,20 @@ be explicit, and support-only results must not be promoted by prose.
 
 ## Model And Tool Boundary
 
-Review-loop is a text/code/math review path. Run it with the user's configured
-highest-tier Codex reviewer model and maximum available reasoning for this
-repo. Resolve the current model from the active configuration; dated model
-names in process prose are not configuration. Respect an explicit owner
-choice of model or reasoning tier for the episode. Do not switch to lower-reasoning models for convenience, and
-do not use image-generation, image-editing, presentation, document-rendering,
+Review-loop is a text/code/math review path. Owner direction (2026-09-08):
+use **Astra low** (`gpt-6-astra`, `low`) for ordinary pre-landing science review.
+Use one independent reviewer per coherent unit, applying the relevant lenses
+in one focused pass. Escalate a material mathematical or premise question,
+reviewer disagreement or failed decisive control that the unit review cannot
+resolve through a narrow correction to
+**Astra xhigh**; send its source and evidence, not the entire backlog. An
+escalation is not a routine second review. Reuse completed valid reviews and
+the original reviewer's affected-fix confirmation; do not rerun them just to
+change model labels. Respect a later explicit owner choice. If a requested
+model is unavailable, report that fact and use an available reviewer only
+with its actual configuration stated. Do not silently substitute a model.
+
+Do not use image-generation, image-editing, presentation, document-rendering,
 or visual-generation tools unless the user explicitly asks for a separate
 visual artifact task.
 
@@ -88,6 +96,35 @@ foundational premises without explicit user approval. Imports are allowed for
 bounded theorem surfaces when they are scoped, labelled, and
 dependency-checked; repo-wide axiom additions and primitive additions are not
 review-loop fixes.
+
+## Focused landing review (owner-directed 2026-09-08)
+
+Landing admits useful, honestly scoped science to main. It does not certify
+the TOE or confer a retained grade. Read the complete changed argument and
+necessary actual premises/inputs. Focus on consequential mathematical errors,
+unsupported physical or quantified conclusions, source loss, and evidence
+that fails to reproduce or does not test the decisive claim. Fix known false
+claims, or narrow/defer them explicitly, before landing. A passing runner
+alone cannot supply a missing proof or physical premise.
+
+Use the detailed lenses below to find these risks. Their exhaustive catalogs
+are escalation guidance: ordinary landing review does not require a separate
+report for every sentence, callable, predicate, tensor, array or conceivable
+route. Keep one concise report with material findings, exact source/input
+identities, relevant independent checks, honest scope and final disposition.
+Retain complete constituent source recovery/disposition and the current-main
+loss check; reuse already verified inventories instead of recreating them.
+Uncertainty material to a stated result must be resolved, narrowed or escalated;
+it cannot be hidden by postponing audit. Minor editorial detail and exhaustive
+claim-by-claim certification can wait for the later formal audit.
+
+Existing provenance, unchanged-head checks, source/input freshness, actual
+execution limits, independent final confirmation, one combined mechanical
+gate and audit-status separation remain required. Assess no-go quantifiers
+and counterexamples carefully; retain honest N1-N8 artifacts where the
+mechanical contract requires them without inventing exhaustive route coverage.
+This section controls review depth and report granularity in the detailed
+checklists below. Formal audit remains deferred until a solid TOE is ready.
 
 ## Premise Authority
 
@@ -402,9 +439,8 @@ review-only flags contradict the drain's land-end-to-end contract).
    `files_to_review`, the changed-file set, or any commit. This is
    the budget-adapted default of the Reviewer Fanout section below: under
    the shared-pool budget, cross-unit parallelism replaces per-lens
-   parallelism; full per-lens fanout inside one unit remains available in a
-   quiet pool, and every applicable lens must be explicitly covered either
-   way.
+   parallelism. Use extra seats only for an identified escalation or explicit
+   owner request; spare capacity alone does not require per-lens fanout.
 4. **Concurrency budget (shared codex pool).** Reviewer processes share one
    pool with the audit lane's auditor seats and judicial panels. Keep the
    TOTAL concurrent codex processes across every lane at or under ~8-10
@@ -936,12 +972,12 @@ lint to regenerate it.
 On each iteration, set `files_to_review` to the files that changed since their
 last clean review. On iteration 1, use all original changed files.
 
-Run every applicable reviewer lens. Under the shared-pool concurrency
-budget (Default Entry above), combine the lenses into one or two passes per
-review unit — full per-lens parallel fanout through the available agent/subagent
-mechanism is the quiet-pool mode. If parallel agents are unavailable, run
-the same reviewer passes locally and report that limitation. In every mode,
-each applicable lens must be explicitly covered and named in the findings.
+Apply the relevant lenses in the default single Astra-low unit review.
+Record their material conclusions in the concise unit report. Use an extra
+Astra-xhigh seat only for the unresolved question that needs it. The lens
+names below identify responsibilities, not mandatory separate workers or
+standalone reports. When independent agents are unavailable, report that
+limitation; an author's self-review is not independent confirmation.
 
 ### Required Reviewers
 

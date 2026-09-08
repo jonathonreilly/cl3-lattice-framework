@@ -28,6 +28,12 @@ input bindings before final runner execution; freeze the reconciled correction
 and inputs first. Preserve prior receipts if a later input change requires a
 new authorized execution.
 
+Use the owner-selected focused landing depth in `SKILL.md`: default Astra-low
+review, targeted escalation for material unresolved questions, and concise
+reusable evidence. Fix consequential defects before handoff; do not construct
+new per-sentence, per-function or per-array report catalogs without a concrete
+source-preservation or scientific need. This preflight is not formal audit.
+
 ## 1. Sources, not memory
 
 Every sentence that characterizes a claim, a note, or a status is written

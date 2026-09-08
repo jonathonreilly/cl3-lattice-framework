@@ -46,7 +46,7 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
 
     def assert_skill_mutation_fails(self, needle: str, family: str) -> None:
         mutated = self.skill.replace(needle, "REMOVED_BY_MUTATION")
-        self.assertNotEqual(mutated, self.skill, f"mutation needle absent: {needle}")
+        self.assertTrue(mutated != self.skill, f"mutation needle absent: {needle}")
         self.assertIn(family, self.missing(skill=mutated))
 
     def assert_command_mutation_fails(self, needle: str, family: str) -> None:
@@ -152,14 +152,14 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertIn("mandatory_authority_reads", self.missing(skill=mutated))
 
     def test_model_and_effort_are_fail_closed(self):
-        self.assert_skill_mutation_fails("highest-tier", "reviewer_model_and_effort")
-        self.assert_skill_mutation_fails("maximum available reasoning", "reviewer_model_and_effort")
-        self.assert_skill_mutation_fails("Resolve the current model", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("`gpt-6-astra`, `low`", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("**Astra xhigh**", "reviewer_model_and_effort")
+        self.assert_skill_mutation_fails("its actual configuration stated", "reviewer_model_and_effort")
 
     def test_negated_model_and_effort_are_fail_closed(self):
         mutated = self.skill.replace(
-            "Run it with the user's configured",
-            "Do not run it with the user's configured",
+            "use **Astra low**",
+            "do not use **Astra low**",
             1,
         )
         self.assertNotEqual(mutated, self.skill)
@@ -167,20 +167,20 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
 
     def test_negated_configuration_clause_is_fail_closed(self):
         mutated = self.skill.replace(
-            "Resolve the current model", "Do not Resolve the current model", 1
+            "If a requested", "Do not If a requested", 1
         )
         self.assertNotEqual(mutated, self.skill)
         self.assertIn("reviewer_model_and_effort", self.missing(skill=mutated))
 
     def test_negated_owner_choice_clause_is_fail_closed(self):
         mutated = self.skill.replace(
-            "Respect an explicit owner", "Do not Respect an explicit owner", 1
+            "Respect a later explicit owner", "Do not Respect a later explicit owner", 1
         )
         self.assertNotEqual(mutated, self.skill)
         self.assertIn("reviewer_model_and_effort", self.missing(skill=mutated))
 
     def test_soft_wrapped_negations_cannot_supply_affirmative_clauses(self):
-        for clause in ["Resolve the current model", "Respect an explicit owner"]:
+        for clause in ["If a requested", "Respect a later explicit owner"]:
             for prefix in ["Do not\n ", "Never\n  ", "Do not\n"]:
                 with self.subTest(clause=clause, prefix=prefix):
                     mutated = self.skill.replace(clause, prefix + clause, 1)

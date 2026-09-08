@@ -132,11 +132,14 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"premise_decision_history\.json",
     ),
     "reviewer_model_and_effort": (
-        r"^Review-loop is a text/code/math review path\. Run it with the user's "
-        r"configured\s+highest-tier Codex reviewer model "
-        r"and maximum available reasoning for this\s+repo\.",
-        r"\.\s+Resolve the current model from the active configuration;",
-        r"\.\s+Respect an explicit owner\s+choice of model or reasoning tier for the episode\.",
+        r"^Review-loop is a text/code/math review path\. Owner direction \(2026-09-08\):\s+"
+        r"use \*\*Astra low\*\* \(`gpt-6-astra`, `low`\) for ordinary pre-landing science review\.",
+        r"\.\s+Escalate a material mathematical or premise question,\s+"
+        r"reviewer disagreement or failed decisive control that the unit review cannot\s+"
+        r"resolve through a narrow correction to\s+\*\*Astra xhigh\*\*;",
+        r"\.\s+Respect a later explicit owner choice\.",
+        r"\.\s+If a requested\s+model is unavailable, report that fact and use an available reviewer only\s+"
+        r"with its actual configuration stated\. Do not silently substitute a model\.",
     ),
     "reviewer_lenses": (
         r"^- `CodeRunnerReviewer`\s*$",
