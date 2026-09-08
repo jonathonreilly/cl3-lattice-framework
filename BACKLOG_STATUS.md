@@ -152,8 +152,8 @@ or parent-campaign acceptance follows from this source landing. No audit ran.
 | Landed | #7942 pair-update parity/winding | Complete corrected finite scope accepted. Positive-lag validation, general mixing and physical identification remain open; procedural packet pending. |
 | Landed | #7848/#7849 finite Noether and transfer results | Complete conditional algebra and Gram/instrument boundaries accepted with all 46 histories preserved. No physical dynamics or Record law supplied. |
 | Landed | #7888/#7890 finite matter kinematics | Complete corrected finite source accepted with all 46 original checks retained. Physical suppliers, asymptotic/ordering and historical-parent obligations remain explicit. |
-| Repair author backlog_batch_contract; original reviewer backlog_8001_review | #7889/#7891 shifting records and confinement | Complete original review found ten P2 and one P3 findings despite44 passing checks. Root verified all90,087 maps and130 artifacts; narrow corrections active. |
-| Original reviewer backlog_8001_review | #7896/#7909 spatial and record-time walls | Complete original source/premise review active at pinned heads; different raw parents explicitly preserved. No author changes or source verdict. |
+| Original reviewer backlog_8001_review | #7889/#7891 shifting records and confinement | Exact eight-path source/manifest composition under final confirmation; genuine29/0 and26/0 caches preserve44 original checks. Root verified all218 author artifacts and30,096 actual final-map rows. No final verdict or landing yet. |
+| Original reviewer backlog_8001_review; preparation author backlog_batch_contract | #7896/#7909 spatial and record-time walls | Original review checkpointed pending final report/receipt while reviewer confirms shifting. Author preserves and reads exact originals/closure only; no scientific edits or executions until root reviews sealed findings. |
 | Original reviewer backlog_draft_triage | #7894/#7897 discrete symmetries and Hartree mass | Complete original source/premise review active at exact pinned sibling heads. Finite representation and mean-field versus physical-theory boundaries remain under review. |
 | Reconciliation complete | Twenty-five direct landings and 110 other closures | All 135 closed originals retain recoverable source; 77 pending closed scopes remain at 7 open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
@@ -190,6 +190,12 @@ The pre-landing matter composition and original shifting-record review are bound
 [the wave20 handoff](backlog_evidence/wave20-handoff/INDEX.json). Its two new bounded
 nodes have four contextual memo/gate links; all 4,837 existing nodes are unchanged.
 Final matter review and landing are recorded in wave20 evidence; the counts above include that landing.
+
+The exact #7889/#7891 composition and sealed author corrections are bound in
+[the wave21 handoff](backlog_evidence/wave21-handoff/INDEX.json). The seven authored
+paths are unchanged, the manifest adds only two bounded nodes and two current-memo
+boundary links, and all existing main source and graph nodes are preserved.
+Final same-session review is active; counts still reflect landed wave20.
 
 ## Avoid recurring work
 

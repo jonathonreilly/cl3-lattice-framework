@@ -52,8 +52,10 @@ joint-law selection remain open.
 
 1. The #6371 and #6358 consolidated Record units and the combined
    #7848/#7849/#7942 source are on main with reviewed corrected scopes.
-   The corrected #7888/#7890 finite matter source is also on main. Continue
-   #7889/#7891 narrow repairs, #7896/#7909 wall review and #7894/#7897 symmetry/Hartree review.
+   The corrected #7888/#7890 finite matter source is also on main. Complete
+   final review of the composed #7889/#7891 source. Walls review is checkpointed
+   during that confirmation; its author prepares originals without scientific edits.
+   Continue the independent #7894/#7897 symmetry/Hartree review.
    #5966 keeps its old Record-additivity premise hold; #6515 keeps its actual
    reserved-source hold. Closure reconciliation is complete; 77 pending closed
    scopes remain at seven successors. Preserve the fixed 254 and all reservations.

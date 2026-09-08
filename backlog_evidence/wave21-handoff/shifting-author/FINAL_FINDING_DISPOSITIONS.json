@@ -1,0 +1,680 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "original_title": "Separate finite torus position variance from a declared lifted displacement process",
+    "original_finding": {
+      "id": "F1",
+      "priority": "P2",
+      "title": "Separate finite torus position variance from a declared lifted displacement process",
+      "anchors": [
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 163
+        },
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 698
+        },
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 532
+        }
+      ],
+      "finding": "The finite torus minimal-image position does not have independent additive real-valued increments or exact unbounded linear variance. At tau=.5,n=2000 the actual original convolution gives variance255.7497327189902 while n*m2=2177.989609970207; every position second moment is bounded by768. C2 discards wrapping cases. Evenness on the group does not imply zero mean of the chosen even-L minimal-image representative: the antipodal tie is always positive.",
+      "narrow_fix": "Keep the finite kernels and screened numerical convolution checks. Define an explicit cumulative displacement/lift if claiming exact additive variance, state its centering and tie convention, and distinguish it from the torus position. Derive translation covariance by the staggered diagonal gauge for even L; do not infer all-time or all-tau claims from the one numerical comparison.",
+      "evidence": "INDEPENDENT_CONTROLS.json:torus_variance; complete C source and original baseline",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "Even-L gauge covariance, positive antipodal tie and representative mean are stated explicitly. The finite torus and centered i.i.d. lift have distinct observables; the actual n=2000 counterexample is canonical C6.",
+    "final_anchors": [
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 103,
+        "text": "## T3 / C: torus position and a separately defined additive lift",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "line": 744,
+        "label": "C6 [numerical] n=2000: actual torus variance %.6f <768, additive lift %.6f >768",
+        "sha256": "c0c3968f69be591b5c37bcc4f1505c2883295d812f21bc2be392b717f04e9628"
+      }
+    ],
+    "remaining_boundary": "Finite torus variance is bounded; no all-time torus linear-growth theorem."
+  },
+  {
+    "id": "F2",
+    "priority": "P2",
+    "original_title": "The Drude and renewal results use an uncontrolled fitted tail, not the stated finite-model limit",
+    "original_finding": {
+      "id": "F2",
+      "priority": "P2",
+      "title": "The Drude and renewal results use an uncontrolled fitted tail, not the stated finite-model limit",
+      "anchors": [
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 168
+        },
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 182
+        },
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 741
+        },
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 815
+        }
+      ],
+      "finding": "At fixed L, bounded m2 implies m2(t)/t^2→0 and D(t)→0. The positive1.2437 coefficient is a three-parameter quadratic fit to four times3,4,5,6. group_D substitutes that polynomial for every flight longer than6, although the displayed formula calls it actual m2. For the displayed renewal sum evaluated with the actual finite-torus m2, its value is ≤128p/tau, hence D→0 as p→0 at fixed tau, whereas the fitted tail grows like1/p. Numerical1e-6 tags do not bound this model error. Changing only the fitted tail constant sign still passes the actual three D checks and changes printed4.0735 to4.0651.",
+      "narrow_fix": "Retain all original finite data and original polynomial coefficients/results as explicitly fitted-tail diagnostics, with no controlled asymptotic or1e-6 accuracy claim. State the correct fixed-volume limits and separate any future infinite-volume-first theorem. Bind the actual diagnostic coefficients/results with a meaningful countercontrol. Keep the exact Bernoulli-age identity; qualify its spatial variance as the chosen lift. Our independent finite-walk derivation establishes the local expansion6tau^2−8tau^4 without extrapolation.",
+      "evidence": "INDEPENDENT_CONTROLS.json:limits,independent_zeno_walks; mutants/7889_tail_constant_sign_affected_D (3/0)",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "All original fit values and targets remain uncontrolled diagnostics. Fixed-volume limits, exact centered segment-renewal accounting and independent local signed-walk coefficients 6 and -8 are supplied. D4 independently binds all three fitted coefficients and actual tail evaluation to rational normal-equation weights.",
+    "final_anchors": [
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 103,
+        "text": "## T3 / C: torus position and a separately defined additive lift",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      },
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 152,
+        "text": "## T4 / D: exact renewal accounting and uncontrolled tail diagnostic",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "line": 762,
+        "label": "C7 [exact] local signed-walk coefficients (%s,%s), enumerated endpoints (zeros retained) %s; no long-time fit proof",
+        "sha256": "c0c3968f69be591b5c37bcc4f1505c2883295d812f21bc2be392b717f04e9628"
+      },
+      {
+        "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "line": 840,
+        "label": "D4 [numerical, 1e-9] independent rational fit binding: coefficient error %.1e, actual tail error %.1e; no extrapolation guarantee",
+        "sha256": "c0c3968f69be591b5c37bcc4f1505c2883295d812f21bc2be392b717f04e9628"
+      }
+    ],
+    "remaining_boundary": "No Drude limit, inverse-p theorem, controlled extrapolation or 1e-6 tail error bound; infinite-volume-first limit remains open."
+  },
+  {
+    "id": "F3",
+    "priority": "P2",
+    "original_title": "Conserved loop sectors rule out the full uniform attractor and qualify the named ground state",
+    "original_finding": {
+      "id": "F3",
+      "priority": "P2",
+      "title": "Conserved loop sectors rule out the full uniform attractor and qualify the named ground state",
+      "anchors": [
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 125
+        },
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 224
+        },
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 249
+        },
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 1044
+        },
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 1061
+        }
+      ],
+      "finding": "Every cube loop commutes with H896 and the coarse parity projectors. A traceless Hermitian loop S gives a distinct positive stationary density(I+S)/896, trace distance1/2 fromI/896. The supplied initial state has expectationS=1, whereasI/896 has0, so it can never converge toI/896. More strongly its28-dimensional code projectorPc is invariant andPc/28 is stationary at trace distance31/32 fromI/896. The original raw896-sector minimum is−4.828427124746193, so−4 is a ground energy only in the selected+code sector, not the full declared ambient sector. F4 checks one marginal ratio at12/11, not a spectral convergence theorem. At tau=pi the +code propagator is exactly identity because its energies are even integers; every code marginal is then fixed, so arbitrary-tau marginal attraction is false too. A rational integer-vector Rayleigh quotient −4875520/1009920<-4 certifies the raw-sector ground-state distinction independently of eigensolver accuracy.",
+      "narrow_fix": "Keep unitality/I896 fixed point, actual record-tree comparison and finite marginal heating rows. Explicitly identify the+loop code and the chosen Slater member; distinguish code state, full896state and28outcome marginal. Withdraw unique/global full-state-attractor and all-time geometric-rate language unless an appropriately scoped theorem is added. Include the conserved-sector counterexample.",
+      "evidence": "INDEPENDENT_CONTROLS.json:conserved_loop,code_fixed_state; SPECTRAL_DOMAIN_CONTROLS.json and raw_sector_rayleigh_witness.npz",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "The selected +loop code has dimension28 inside896. -4 is its chosen Slater ground energy only. Conserved loop densities and code projector defeat full uniform attraction; exact Walsh cube spectrum gives U_code(pi)=I. Finite tree/marginal rows and unital fixed point are retained.",
+    "final_anchors": [
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 210,
+        "text": "## T6 / F: coarse outcomes, conserved code sectors and fixed points",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      },
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 79,
+        "text": "## T1 / A: formal complements and actual hops",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "line": 1064,
+        "label": "F6 [exact loop; numerical 1e-12 code] distinct stationary (I+S)/896, trace distance1/2; ambient min %.6f, +code dim28 and U(pi)=I",
+        "sha256": "c0c3968f69be591b5c37bcc4f1505c2883295d812f21bc2be392b717f04e9628"
+      }
+    ],
+    "remaining_boundary": "No full-state unique attractor, all-tau marginal mixing or all-time geometric rate."
+  },
+  {
+    "id": "F4",
+    "priority": "P2",
+    "original_title": "Narrow the energetic comparison: adjacent detuning, finite couplings, support zeros and recurrence",
+    "original_finding": {
+      "id": "F4",
+      "priority": "P2",
+      "title": "Narrow the energetic comparison: adjacent detuning, finite couplings, support zeros and recurrence",
+      "anchors": [
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 98
+        },
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 199
+        },
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 216
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 220
+        },
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 886
+        }
+      ],
+      "finding": "The written +g*n*n raises adjacent configurations; it is not a positive energetic penalty for parting. The five g values and finite tick rows do not prove every finite g or arbitrary energy law. Strictly positive probability on every separated configuration is false already at g=0: source pair(0,0,0),(1,0,0) has exactly zero amplitude for separated pair(0,1,1),(2,1,1) by the pi-flux parity support of the one-particle propagator. The finite irreducible torus chain is recurrent, not transient. These errors recur in both notes’ contrast and broad title/summary.",
+      "narrow_fix": "Call g an adjacent-pair detuning, or prove/disclose the bipartite sign equivalence if comparing attractive and repulsive signs without changing the data. Retain only the actual five-coupling/finite-tick leakage comparisons, distinguish not-identically-confined from full support, and remove the transient/all-strength/general-energy foreclosure. Keep hard-support confinement as a separate stipulated process.",
+      "evidence": "INDEPENDENT_CONTROLS.json:nonpositive_separated_support; original E data and source",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "Both notes and active labels identify positive g as adjacent-pair detuning. Original five-coupling finite-tick data are retained; the second runner independently redeclares g32. An actual free separated amplitude zero is now checked.",
+    "final_anchors": [
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 182,
+        "text": "## T5 / E: finite adjacent-detuning leakage and a modulo-sum proxy",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      },
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 190,
+        "text": "## T5 / E: finite postselected pair and finite energetic comparison",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "line": 773,
+        "label": "E7 [numerical] actual half-period event has positive conditional weight %.9f but proxy0; one separated free amplitude is zero",
+        "sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+      }
+    ],
+    "remaining_boundary": "No all-strength energy law, full-support, transience or general energetic no-go; no optional sign-equivalence theorem imported."
+  },
+  {
+    "id": "F5",
+    "priority": "P2",
+    "original_title": "The pair diffusion number is a modulo-sum additive proxy, not an established centre-of-mass lift",
+    "original_finding": {
+      "id": "F5",
+      "priority": "P2",
+      "title": "The pair diffusion number is a modulo-sum additive proxy, not an established centre-of-mass lift",
+      "anchors": [
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 906
+        },
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 924
+        },
+        {
+          "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+          "line": 651
+        },
+        {
+          "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+          "line": 683
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 223
+        }
+      ],
+      "finding": "Both codes first reduce xa+xb moduloL then divide its minimal-image difference by2. This identifies centres separated byL/2. On L6 the adjacent pair{0,1} translated to{3,4} in x has literal translation3 but coded increment0; its conditioned probability at tau=.5 is0.0003296427097313145. The nonzero drift is a tie-convention effect, not symmetry-exact zero. #7891 correctly solves a Poisson/martingale problem for this coded additive proxy; #7889 only accumulates per-class conditional variance and does not establish the corresponding full correlated asymptotic variance. Calling either a true physical/asymptotic CoM without a lift is unsupported.",
+      "narrow_fix": "Preserve original numbers as explicitly defined finite modulo-sum displacement diagnostics, including wrap and drift and the distinction between accumulated local variance and the Poisson-corrected proxy. Alternatively supply a well-defined lift and rederive affected data, but no larger torus run alone repairs the definition. Avoid the blanket half-the-single-record-speed claim; tau=1 data are about.106/.145.",
+      "evidence": "INDEPENDENT_CONTROLS.json:sum_mod_alias,actual_pair_chain; INDEPENDENT_PAIR.json independently validates the proxy coefficient by Slater determinants and tilted eigenvalue curvature",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "Both codes retain their original modulo-sum/2 observable and measured drift. Notes separate that proxy from a physical CoM lift, and accumulated local variance from the Poisson-corrected coefficient. Actual postselection masses, orientation entries and Poisson/centering residuals are asserted; the half-period alias is positive.",
+    "final_anchors": [
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 182,
+        "text": "## T5 / E: finite adjacent-detuning leakage and a modulo-sum proxy",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      },
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 190,
+        "text": "## T5 / E: finite postselected pair and finite energetic comparison",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "line": 763,
+        "label": "E6 [numerical, 1e-10] postselection masses/orientation entries positive; Poisson/centering residual small in all four cases",
+        "sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+      },
+      {
+        "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "line": 773,
+        "label": "E7 [numerical] actual half-period event has positive conditional weight %.9f but proxy0; one separated free amplitude is zero",
+        "sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+      }
+    ],
+    "remaining_boundary": "No true physical CoM or universal half-speed theorem; no full correlated asymptotic variance inferred from the first runner local accumulation."
+  },
+  {
+    "id": "F6",
+    "priority": "P2",
+    "original_title": "A support set does not specify the KS probabilities or the claimed diffusion normalization",
+    "original_finding": {
+      "id": "F6",
+      "priority": "P2",
+      "title": "A support set does not specify the KS probabilities or the claimed diffusion normalization",
+      "anchors": [
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 97
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 172
+        },
+        {
+          "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+          "line": 436
+        },
+        {
+          "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+          "line": 467
+        }
+      ],
+      "finding": "KS lists simultaneous allowed moves, including stay, rotations and reflections, but supplies no probability law. Merely admitting all six translations does not imply D_group=D1. The valid uniform law on all16 permissive labelled dimer isometries has exact D/D1=5/8; uniform seven translations including stay gives6/7; six translations without stay gives1; stay-only gives0. Strict free-direction count/6 assumes uniform six proposals with rejection, whereas uniform admissible non-stay moves has ratio1. K1 also needs a stay/termination convention when its admissible set is empty.",
+      "narrow_fix": "Separate deterministic support/isometry censuses from stochastic laws. Explicitly declare the translation-only six-proposal/rejection process for the existing free-direction ratios, retaining the broader KS assignment census as another support statement. State handling of no admissible move and preserve the16-assignment dimer countercontrol. Do not present a law choice as a consequence of occupancy alone.",
+      "evidence": "INDEPENDENT_CONTROLS.json:permissive_dimer (exact rational enumeration)",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "Six uniform proposals with rejected stays, translation-only laws and uniform labelled isometry law are distinct. Independent dimer enumeration gives5/8 for uniform16,6/7 with seven translations including stay,1 for six nonstay,0 for stay. Empty admissible K1 rows use stay; singleton is off C_comp domain.",
+    "final_anchors": [
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 49,
+        "text": "## Conditions, laws and observables",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      },
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 138,
+        "text": "## T3 / C: rigid support and separately supplied weights",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "line": 452,
+        "label": "C5 [exact] same permissive support, explicit uniform16 labelled-isometry law: D/D1=%s, not1; translations+stay=6/7, six-only=1, stay=0",
+        "sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+      }
+    ],
+    "remaining_boundary": "Admissibility does not select stochastic weights or a physical transition law."
+  },
+  {
+    "id": "F7",
+    "priority": "P2",
+    "original_title": "Keep the companion certificate scoped to reachable n≤6 centroids and distinguish splitting from isolation",
+    "original_finding": {
+      "id": "F7",
+      "priority": "P2",
+      "title": "Keep the companion certificate scoped to reachable n≤6 centroids and distinguish splitting from isolation",
+      "anchors": [
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 90
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 149
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 160
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 250
+        },
+        {
+          "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+          "line": 340
+        }
+      ],
+      "finding": "C_comp prevents isolated occupied sites, not loss of original companions or connected-group splitting: the source itself exhibits a2+3 split at n5. The rational certificate bounds the centre of mass for the finite reachable closures n≤6. The quoted4/3 width is a coordinate-wise centroid range, not the size of a box containing the whole group (a frozen straight six-site chain already spans5). Broad conclusions that a companion-conditioned group never travels or cannot leave its companions outrun that boundary. The potential equation must use the physical edge increment(y−x)/n, not an unqualified subtraction of recentered canonical shapes.",
+      "narrow_fix": "Keep the complete exact census/coboundary proof and bent-trimer orbit. State n≤6 and the connected-initial/reachable-closure domain every time the cage result is summarized, use centroid-coordinate range, distinguish no singleton from maintained pair identity/connectedness, and keep arbitrary-n mobility open. Remove unsupported weakest/strongest characterization language.",
+      "evidence": "Original B2–B5 exact source/outputs; PROOF_REVIEW.md independent telescoping argument",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "C_comp means no isolated site, with possible changed companions and n5 splitting2+3. Exact physical (y-x)/n coboundary and connected-start complete n<=6 reachable closure are stated;4/3 is centroid coordinate width, not group diameter.",
+    "final_anchors": [
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 99,
+        "text": "## T1 / A: bipartite adjacency",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      },
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 108,
+        "text": "## T2 / B: the complete n<=6 centroid certificate",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "line": 316,
+        "label": "B4 [exact] the CAGE: for n = 3, 4, 5, 6 an exact RATIONAL potential Phi of the SHAPE has physical (y-x)/n = Phi(c)-Phi(S) on the complete n<=6 closure -- %s inconsistencies over %s shifts, %s components -- so the lab centre of mass takes finitely many values: D_group = 0 EXACTLY",
+        "sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+      },
+      {
+        "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "line": 326,
+        "label": "B5 [exact] CENTROID coordinate range: Phi is fixed up to a constant per component, so its within-component spread bounds centroid excursion, not group diameter -- %s lattice units at n = 3, 4, 5, 6. The BENT TRIMER's orbit is %d configurations in one FIXED unit square: three of its corners, forever",
+        "sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+      }
+    ],
+    "remaining_boundary": "No arbitrary-n theorem, old-companion identity, whole-group box bound or permanent Record formation."
+  },
+  {
+    "id": "F8",
+    "priority": "P2",
+    "original_title": "Separate a fixed parity sector from the union of all N=2 sectors",
+    "original_finding": {
+      "id": "F8",
+      "priority": "P2",
+      "title": "Separate a fixed parity sector from the union of all N=2 sectors",
+      "anchors": [
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 120
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 195
+        },
+        {
+          "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+          "line": 532
+        },
+        {
+          "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+          "line": 543
+        }
+      ],
+      "finding": "The note defines a sector by fixing every Bv but then calls a single complement admissible within the two-odd-corner sector when it moves an odd corner. Such a move changes the sector. For the literal patterny=1 with odds{0,1}, no single complement preserves that fixed sector; four preserve only totalN=2, and the fifth annihilates intoN=0. The original code tests len(odd)==2, not fixed-sector membership.",
+      "narrow_fix": "Retain the128fixed parity cosets and32element cycle-space theorem. Call the hopping support the union of28N=2 sectors, and explicitly mark annihilation as outside N=2. Carry this distinction through T4, definition, runner D3/banner and summaries.",
+      "evidence": "INDEPENDENT_CONTROLS.json:fixed_sector",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "Exact rank7,128cosets and32cycle masks remain. All fixed cosets forbid single-edge complements, while the N=2 union of28cosets permits4/6 hops; formal annihilation is explicitly outside N=2.",
+    "final_anchors": [
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 168,
+        "text": "## T4 / D: fixed parity cosets and the N=2 union",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "line": 525,
+        "label": "D6 [exact] all128 FIXED parity cosets admit zero single-edge complements; N=2 union is different",
+        "sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+      }
+    ],
+    "remaining_boundary": "No conflation of vacuum/fixed-coset preservation with N=2 hopping support."
+  },
+  {
+    "id": "F9",
+    "priority": "P2",
+    "original_title": "Separate formal complements/coarse measurements from the actual hopping and permanent fine-site Records",
+    "original_finding": {
+      "id": "F9",
+      "priority": "P2",
+      "title": "Separate formal complements/coarse measurements from the actual hopping and permanent fine-site Records",
+      "anchors": [
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 123
+        },
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 134
+        },
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 100
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 80
+        },
+        {
+          "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+          "line": 586
+        }
+      ],
+      "finding": "The49152-case census applies an X complement to every bit string, while the declared number-conserving hopping has zero amplitude when both endpoints are empty or both occupied; y=0 is a direct counterexample to calling every complement a hop. Every full bit string assigns12edge-site values; |y| counts minus values, not records. M5 registers only a coarse parity pattern and preserves15,872off-diagonal entries in the supplied postmeasurement state; a fine local-Z registration would remove them. Neither this process nor the global KT postselection establishes the current permanent one-site Record rule or a nearest-neighbor physical formation law. The conditional-model caveats are useful but do not make these objects identical.",
+      "narrow_fix": "Call the all-pattern operation a formal edge complement, reserve hopping for its actual nonzero exclusion-conditioned matrix elements, and name coarse parity occupation/measurement explicitly. State that repeated value changes, coarse measurement, global postselection, time and probabilities are supplied counterfactual models, with no claimed embedding into current permanent fine-site Records. Preserve the existing owner proposal as historical context without changing an axiom.",
+      "evidence": "RECORD_DOMAIN_CONTROLS.json; current minimal memo and registry",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "All-pattern formal X action and minus-bit count are separated from nonzero exclusion-conditioned hopping and full edge-site value assignments. Actual49,152-event hopping census verifies24,576 nonzero opposite-parity events. Coarse parity measurement/postselection and supplied time/Born weights are not identified with permanent fine-site Records.",
+    "final_anchors": [
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 27,
+        "text": "## Premises and current authority",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      },
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 79,
+        "text": "## T1 / A: formal complements and actual hops",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      },
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 27,
+        "text": "## Premises and current authority",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      },
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 168,
+        "text": "## T4 / D: fixed parity cosets and the N=2 union",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "line": 600,
+        "label": "A4 [exact] actual hopping: %d nonzero exclusion-conditioned events, %d mismatches; equal parities have zero amplitude",
+        "sha256": "c0c3968f69be591b5c37bcc4f1505c2883295d812f21bc2be392b717f04e9628"
+      }
+    ],
+    "remaining_boundary": "No current axiom modification, parent campaign acceptance, supplied nearest-neighbor formation law or physical embedding."
+  },
+  {
+    "id": "F10",
+    "priority": "P2",
+    "original_title": "Assert the complete claimed isometry census, not just congruence of whatever cases remain",
+    "original_finding": {
+      "id": "F10",
+      "priority": "P2",
+      "title": "Assert the complete claimed isometry census, not just congruence of whatever cases remain",
+      "anchors": [
+        {
+          "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+          "line": 436
+        },
+        {
+          "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+          "line": 456
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 172
+        }
+      ],
+      "finding": "The canonical C3 claim says160assignments over10groups with70translations but the predicate checks only congruence and seven translations for each surviving loop item. Restricting that actual source loop toSHAPES[:2] removes eight groups and yields23assignments/14translations while the complete original runner still reports21/0. The claimed full census is not protected.",
+      "narrow_fix": "Assert the complete intended named-case set and all substantive per-case/total counts, preserving the original10shapes,160assignments and70translations. Add the actual omission mutant as a failing control; similarly bind corrected stochastic-law normalization separately from this deterministic census.",
+      "evidence": "mutants/7891_isometry_omit_eight_shapes: complete main21/0 with23/2/14; MUTANT_CONTROLS.json",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "Original C3 conjunction remains and is strengthened by the exact intended named set, all10 per-case assignment/translation counts and totals160/70. Its original full-runner SHAPES[:2] false negative now exits1 at C3.",
+    "final_anchors": [
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 138,
+        "text": "## T3 / C: rigid support and separately supplied weights",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "line": 433,
+        "label": "C3 [exact] the ISOMETRY form with PERMISSIVE occupancy enumerates the admitted rigid rotations and reflections: all %d admissible assignments over %d groups land on a CONGRUENT copy (%d violations), %d of them translations, 7 per group",
+        "sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+      }
+    ],
+    "remaining_boundary": "Finite named-case census is not a claim to classify all abstract isometries or choose weights."
+  },
+  {
+    "id": "F11",
+    "priority": "P3",
+    "original_title": "Align current trace, precision labels and premise citations without inventing helper dependencies",
+    "original_finding": {
+      "id": "F11",
+      "priority": "P3",
+      "title": "Align current trace, precision labels and premise citations without inventing helper dependencies",
+      "anchors": [
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 40
+        },
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 58
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 58
+        },
+        {
+          "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 324
+        },
+        {
+          "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+          "line": 322
+        }
+      ],
+      "finding": "The active #7889 trace directs an independent audit despite current owner deferral. Both notes interpret quoted current axiom text but expose no real citation, and say no hypothesis/fitted number is adopted despite supplied models and the #7889fit. Several numerical tags are much tighter than their actual predicates; transcendental entries do not imply that no exact rational special case exists. Neither source supplies the manual N1–N8 boundary packet for its broad negatives, although the present automated phrase scanner does not trigger; this is not a fabricated readiness-tool failure. Both standalone runtime closures genuinely have zero helpers and no mutable inputs.",
+      "narrow_fix": "Use current source-confirmation trace with explicit audit deferral, add the actual minimal-memo interpretation link, disclose all stipulated hypotheses/fit diagnostics and real predicate tolerances. Write honest scoped N1–N8/alternative coverage where negative rhetoric remains, with any unmet procedural quota separate from mathematical validity; invent neither routes nor wall independence. If adding actual note/memo guards, declare those inputs and obtain a genuine refreshed cache; otherwise do not pretend they were current runtime inputs. No helper registration is warranted.",
+      "evidence": "PREFLIGHT.json; current planning/SCIENCE_WORKFLOW and no-go skill; actual source and cache review",
+      "status": "open_original_source",
+      "affected_publication_surfaces": "Canonical frontmatter claim_scope, theorem/proof/corollary/summary and executable claim block, runner docstring/check labels and any refreshed cache. Preserve original note/runner/cache externally."
+    },
+    "author_disposition": "narrow correction implemented; independent confirmation pending",
+    "repair": "Both notes expose the current memo Markdown citation and bounded_theorem type. Each primary actually guards and declares its own final note plus memo, no helper. Correct precision tags, pending source confirmation, owner audit deferral and unresolved manual N1-N8 boundaries replace misleading current framing.",
+    "final_anchors": [
+      {
+        "path": "docs/SHIFTING_POSITION_RECORDS_EXACT_DIFFUSION_LAW_AND_THE_UNIFORM_ATTRACTOR_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 241,
+        "text": "## Executable claim block and unresolved boundaries",
+        "sha256": "b4c6220177b3f6ec89a47ebf51bf358194c56c36815d069f9d87954ef3346c92"
+      },
+      {
+        "path": "docs/SUPPORT_CONDITIONS_CONFINE_GROUPS_OF_SHIFTING_RECORDS_ENERGY_COSTS_DO_NOT_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 226,
+        "text": "## Executable claim block and unresolved boundaries",
+        "sha256": "8ef06463c3185db30e425de36c2c26b7623f2a40c19134de93e0260d2da79bfd"
+      },
+      {
+        "path": ".claude/science/physics-loops/shifting-7889-7891-corrections-20260908/CORRECTION_HISTORY.md",
+        "line": 1,
+        "text": "# 2026-09-08 source corrigendum: #7889 / #7891",
+        "sha256": "9b055cef0a92370ec9641ce0e920275e6162d24025cfb40e2631857f52e54e71"
+      }
+    ],
+    "actual_checks": [
+      {
+        "path": "scripts/shifting_position_records_exact_diffusion_law_check_2026_09_03.py",
+        "line": 62,
+        "label": "I1 [source binding] final own note and current memo match declared input hashes",
+        "sha256": "c0c3968f69be591b5c37bcc4f1505c2883295d812f21bc2be392b717f04e9628"
+      },
+      {
+        "path": "scripts/support_conditions_confine_groups_of_shifting_records_check_2026_09_03.py",
+        "line": 59,
+        "label": "I1 [source binding] final own note and current memo match declared input hashes",
+        "sha256": "e858b613791b6ae05e2d99f5a3b60dbe811f11af70dbd1024ddef4295a2b2223"
+      }
+    ],
+    "remaining_boundary": "No fabricated route quota, independent-wall count, procedural PASS, auditor result or imported helper science."
+  }
+]
