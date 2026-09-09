@@ -1,0 +1,13 @@
+# Independent argument before final author source
+
+Write the bounded real bipartite hopping block as B_lambda=B0+lambda u v^T. The reviewed no-zero-mode result for the full self-adjoint chiral Hamiltonian implies ker B_lambda=ker B_lambda^T=0. Thus its polar U_lambda is a real orthogonal isomorphism: injectivity gives full initial space and ker B_lambda^T=0 gives dense range, hence full final space. S=|B0| and T=|B_lambda| are bounded positive injective operators, not boundedly invertible operators; no active spectral gap is needed.
+
+Let R=U0^T U_lambda. If x belongs to E=ker(R+I), then R^T x=-x. Hence <x,U0^T B_lambda x>=<x,R T x>=-<x,T x><0 for nonzero x. But the same quantity is <x,Sx>+lambda<x,U0^T u><v,x>. A nonzero x in E intersect ker v^T is impossible. Therefore dim E<=1. This does not assume T preserves E.
+
+The sign of the chiral Hamiltonian has off-diagonal polar blocks. Consequently the already reviewed S1-continuity of P_lambda-P0 implies R-I in S1 and S1-continuity along lambda. Its complex Fredholm determinant is real because R is real, and has modulus1 because R is unitary. Starting at identity it remains+1. Eigenvalues off the real axis pair as conjugates, with product1, so det R=(-1)^dim E; the trace-class hypothesis justifies the infinite product. Thus dim E is even, forcing E=0.
+
+Compactness of R-I excludes a sequence of distinct eigenvalues tending to-1. Absence of a-1 eigenspace therefore implies ||R-I||<2, and the exact projector-block formula gives ||P_lambda-P0||=||R-I||/2<1. Norm-continuity on compact lambda supplies a common but nonnumerical margin. The statement concerns the actual one-pair infinite path only.
+
+In the principal-angle Fock construction, Hilbert-Schmidt projector difference makes the squared sines summable. Excluding angles pi/2 makes the product of cosine amplitudes strictly positive. There is no fully swapped direction. This is a qualitative stationary reference-overlap result; it does not certify a practical normalization error, a numerical lower bound or a finite-volume gap. Any determinant-overlap formula must use the correct self-dual multiplicities; qualitative positivity does not require selecting one.
+
+Two finite sanity examples expose essential premises. B0=I, B1=diag(-1,1) is a rank-one update with a fully swapped polar direction, but its straight interpolation is singular at lambda=1/2; the no-kernel/S1-continuous polar path cannot be omitted. In contrast the invertible rotation path fromI to-I in two real dimensions has even two-dimensional-1 eigenspace, but its endpoint update has rank2. Determinant parity alone cannot rule out swaps for arbitrary multiple impurities. Neither example is an actual native counterexample.
