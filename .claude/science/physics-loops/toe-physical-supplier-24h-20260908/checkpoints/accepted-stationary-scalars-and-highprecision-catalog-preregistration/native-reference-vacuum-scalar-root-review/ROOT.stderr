@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-reference-vacuum-scalar-root-review/run_once.py", line 82, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-reference-vacuum-scalar-root-review/run_once.py", line 81, in main
+    require(failure is None,'attempt failed '+str(failure));print(json.dumps({'status':'PASS_EXTERNAL_SHELL_PENDING','seconds':time.monotonic()-START,'sampled_whole_tree_peak':peak}))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-reference-vacuum-scalar-root-review/run_once.py", line 9, in require
+    if not ok:raise ValueError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt failed ValueError('reference constant interval')
+real 0.43
+user 0.28
+sys 0.17
+            37011456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13953  page reclaims
+                   6  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  12  voluntary context switches
+                 183  involuntary context switches
+          2164288819  instructions retired
+           808093834  cycles elapsed
+            14484056  peak memory footprint
