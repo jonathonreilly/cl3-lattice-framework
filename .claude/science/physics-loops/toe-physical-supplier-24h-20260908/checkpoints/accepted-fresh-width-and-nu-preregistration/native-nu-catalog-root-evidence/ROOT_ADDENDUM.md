@@ -1,0 +1,5 @@
+# Root source review
+
+PASS source-only for worker3ac677/root366d22. Root read compute/loader/interval/dispatcher/rootmonitor/schema and both independent reviews35b9/094f. Exact successful mu loader is unchanged; all6291 transitive runtime/input pins and root source hashes verified. Final strict isolated source-only root readiness passed; no integral or catalog loader ran during readiness.
+
+Q=6-t²+t⁴A, rho4 bound256*4^-52, exact low polynomial remainder and40term positive tail are correctly directed. Independent root moment convolution differs from worker multinomial generation; full panel integrands are not independently reconstructed by root schema. The operation-count ledger includes seven rounded node operations,67 cumulative sums and final operations; exact moment cost is explicitly inferred/unmeasured.30s/384MiB root+worker whole-shell contract includes final rehash/schema; external receipt still required. Result CERTIFIED_TARGET and INDETERMINATE are distinct accepted completion states. Subsequent independent saved-only node reconciliation remains pending. No old mu/cminus/B/oracle is rerun.
