@@ -1,0 +1,454 @@
+{
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
+  "blocker": null,
+  "chain_closes": null,
+  "chain_closure_explanation": null,
+  "claim_id": "i1_native_quadratic_static_source_normalization_bridge_2026-06-08",
+  "claim_scope": null,
+  "claim_type": "bounded_theorem",
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
+  "criticality": "leaf",
+  "cross_confirmation": null,
+  "decoration_parent_claim_id": null,
+  "deps": [
+    "minimal_axioms",
+    "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+  ],
+  "direct_in_degree": 1,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [],
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 2.085,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
+  "max_descendant_status": "audit_in_progress",
+  "max_descendant_status_rank": 30,
+  "note_hash": "d8dfb6b2348b8949f70f81e9a02c4c050a5d6d3da1de0bd059c5e69ed8262618",
+  "note_path": "docs/I1_NATIVE_QUADRATIC_STATIC_SOURCE_NORMALIZATION_BRIDGE_2026-06-08.md",
+  "notes_for_re_audit_if_any": null,
+  "open_dependency_paths": [],
+  "previous_audits": [
+    {
+      "archived_at": "2026-06-10T02:32:16.144516+00:00",
+      "audit_date": "2026-06-09T12:15:31.824519+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "Framework-local nearest-neighbor Z^3 graph-Laplacian Green-kernel normalization for the explicitly stated stencil (-Delta_lat f)(x)=6f(x)-sum_{|y-x|=1}f(y): the singular Fourier mode has continuum-leading coefficient 1/(4*pi*|r|) with unit lattice spacing, and the included certificate checks the small-k symbol normalization, unit-flux convention, and axis residual scaling. No downstream Newton-law, gravity theorem, scalar-field equation of motion, or physical Poisson dynamics is audited.",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.248,
+        "runner_hash": "2f5950919ba75f2326246b970cdb9e750ce2af5ba52a533e445e8727a9b2d01a",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260609-121507-a79b159c7b-i1_native_quadratic_static_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "The finite-dimensional zero-mean quadratic form has stationary equation (1/g^2)L phi - J = 0, so phi_* = g^2 L^+J and substitution gives -(g^2/2)<J,L^+J>. Expanding J = s_1 delta_a + s_2 delta_b with zero-mode projection gives the separation-dependent off-diagonal term -g^2 s_1 s_2 G(a-b), while the 1/(4 pi r) asymptotic is supplied by the retained_bounded Green-kernel authority.",
+      "claim_scope": "Finite zero-mode-projected periodic Z^3 complete-square algebra for a supplied source-normalized quadratic static-source action, including the two-source cross term and use of the retained Green-kernel 1/(4 pi r) asymptotic.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-09T12:15:31.824519+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "dep_claim_scope_changed:lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+      "load_bearing_step": "Given S[phi; J] = (1/(2 g^2)) <d phi, d phi> - <J, phi> and <d phi,d phi>=<phi,L phi>, completing the square gives L phi_* = g^2 J and S_eff[J] = -(g^2/2)<J,L^+J>, hence V_cross(r) = -g^2 s_1 s_2 G(r).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that the downstream I1 row does not treat this bounded complete-square bridge as closing the still-open physical source-coupling normalization or energy-readout bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 18,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The claimed bridge is explicitly bounded to a supplied quadratic source action and does not claim to derive the physical source normalization or energy readout. The displayed signs and factors check independently: the variation of (1/(2g^2))<phi,Lphi>-<J,phi> gives Lphi=g^2J, and completing the square gives the stated negative effective action with exactly one cross term -g^2 s_1s_2G(r). The only non-axiom cited physics authority needed for the asymptotic coefficient is retained_bounded, and the minimal-axiom citation is an accepted premise for the Z^3 lattice background."
+    },
+    {
+      "archived_at": "2026-06-15T18:50:50.044213+00:00",
+      "archived_for_note_hash": "7f49f7df799337377bf600a2e98c02edb64cf4dec1239b2569ec72085cd915ea",
+      "audit_date": "2026-06-10T04:29:02.546608+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "key_terminology": null,
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "key_terminology": "meta",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "key_terminology": "meta",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "key_terminology",
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.248,
+        "runner_hash": "2f5950919ba75f2326246b970cdb9e750ce2af5ba52a533e445e8727a9b2d01a",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260610-042639-369980e657-i1_native_quadratic_static_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "On the zero-mean finite lattice, the variational equation and completed-square effective action follow algebraically from the supplied action and <d phi,d phi>=<phi,L phi>. The continuum 1/(4 pi r) normalization is supplied by the retained-bounded Green-kernel authority; physical source-coupling and energy-readout bridges are explicitly outside scope.",
+      "claim_scope": "Finite zero-mode-projected periodic Z^3 complete-square algebra for a supplied source-normalized quadratic action, including the two-source cross term and use of the retained Green-kernel asymptotic normalization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-10T04:29:02.546608+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Given the zero-mode-projected quadratic action S[phi;J]=(1/(2 g^2))<d phi,d phi>-<J,phi>, completing the square gives L phi_*=g^2 J, S_eff[J]=-(g^2/2)<J,L^+J>, and hence V_cross(r)=-g^2 s_1 s_2 G(r).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that J is consistently interpreted in the zero-mode-projected subspace and that downstream physical readout/source-normalization claims remain excluded.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 3,
+        "B": 5,
+        "C": 4,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing calculation is a genuine algebraic closure, not a definition or tuned numerical match: differentiating the stated quadratic form gives L phi=g^2 J, and completing the square gives the stated -g^2/2 factor and cross-term sign. The runner source actually instantiates finite-lattice Laplacian/FFT solves and checks the stationary equation, effective action, cross term, source-amplitude scaling, coupling scaling, and small-k normalization; no helper imports are missing. The theorem is clean only within its stated bounded scope: the source-normalized action is supplied, and no physical source-coupling normalization or general energy-readout identification is derived."
+    },
+    {
+      "archived_at": "2026-06-30T15:13:04.498175+00:00",
+      "audit_date": "2026-06-16T01:14:30.097592+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "be72f50ada776f4eb965a2621c849002c680a24dc52d110e150ca11ce6f9c73f"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 8.248,
+        "runner_hash": "2f5950919ba75f2326246b970cdb9e750ce2af5ba52a533e445e8727a9b2d01a",
+        "transitive_descendants": 18
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.5-20260616-011152-44900ae887-i1_native_quadratic_static_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "On the zero-mean subspace, varying (1/(2g^2))<phi,L phi>-<J,phi> gives L phi_*=g^2 J, and substitution gives the stated effective action with the correct sign and factor. Bilinearity then gives the two-source cross term, while the large-r coefficient is supplied by the retained Green-kernel authority.",
+      "claim_scope": "Finite-lattice complete-square algebra for a supplied source-normalized quadratic action on the zero-mode-projected periodic Z^3 lattice, including the -g^2 s_1 s_2 G(r) cross term and use of the retained Green-kernel 1/(4 pi r) asymptotic.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-06-16T01:14:30.097592+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:be72f50a->06434d7c",
+      "load_bearing_step": "Completing the supplied quadratic action on the zero-mean finite lattice gives L phi_* = g^2 J and S_eff[J] = -(g^2/2)<J,L^+J>, hence the two-source cross term is -g^2 s_1 s_2 G(r).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Second auditor should re-check that downstream consumers preserve the supplied-action and zero-mode-projected-J boundary rather than reading this as a physical source-normalization theorem.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The audited scope is explicitly conditional on the supplied source-normalized quadratic action and does not claim to derive the physical source-coupling normalization or energy-readout bridge. An independent complete-square check verifies the sign, 1/2 factor, g^2 coupling dependence, zero-mode projection use, and the absence of an extra factor of two in the cross term. The runner source performs finite FFT/lattice algebra checks rather than merely printing constants; the retained Green authority supplies the 1/(4 pi r) asymptotic normalization."
+    },
+    {
+      "archived_at": "2026-07-02T07:02:10.432786+00:00",
+      "audit_date": "2026-07-02T06:08:57.645845+00:00",
+      "audit_state_snapshot": {
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "a6e7047bc4abc5025ae1bcecb35dac04e31a840c4b2faa6a333b7f0f214eaab1"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 5.17,
+        "runner_hash": "2f5950919ba75f2326246b970cdb9e750ce2af5ba52a533e445e8727a9b2d01a",
+        "transitive_descendants": 17
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-audit-loop-gpt-5.5-20260702T060857Z-5e491845-i1_native_quadratic_stat",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.5",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "For the supplied action, differentiating gives L phi = g^2 J, substituting the pseudoinverse solution gives the stated effective action, and bilinearity gives the cross term. The Green-kernel asymptotic is supplied by a retained_bounded authority, while physical source-coupling and energy-readout bridges are explicitly outside the audited scope.",
+      "claim_scope": "Finite zero-mode-projected periodic Z^3 complete-square result for a supplied source-normalized quadratic static-source action, including the -g^2 s1 s2 G(r) cross term and use of the retained Z^3 Green-kernel asymptotic normalization.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-02T06:08:57.645845+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "axiom_premise_changed:minimal_axioms:a6e7047b->bccb59d5",
+      "load_bearing_step": "Completing the square gives L phi_* = g^2 J and S_eff[J] = -(g^2/2)<J,L^+J>, hence the two-source cross term V_cross(r) = -g^2 s_1 s_2 G(r).",
+      "load_bearing_step_class": "A",
+      "notes_for_re_audit_if_any": "Downstream audits should re-check that this row is not cited as deriving the physical source-coupling normalization or the general energy-readout bridge.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing mathematics is a complete-square algebraic identity over the stated finite-lattice quadratic action. The only cited non-axiom authority, the Z^3 Green-kernel normalization, is retained_bounded; the minimal-axioms citation is an accepted premise for the lattice substrate. The runner source performs finite FFT/matrix checks and boundary text guards, with no external comparator or tuned numerical input. Clean status is only for the bounded supplied-action theorem, not for physical source normalization or general energy readout."
+    },
+    {
+      "archived_at": "2026-07-11T07:35:29.582831+00:00",
+      "audit_date": "2026-07-10T15:46:27.467302+00:00",
+      "audit_state_snapshot": {
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "c8201cb1d0251ebb956c365fe9cfcac4136d1db9a5e5b7c184dc3153f6b796f7"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "load_bearing_score": 2.085,
+        "runner_hash": "2f5950919ba75f2326246b970cdb9e750ce2af5ba52a533e445e8727a9b2d01a",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_clean",
+      "auditor": "codex-cli-gpt-5.6-sol-parallel-20260710T153847Z-d377d973-00009-i1_native_quadratic_static_s",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": true,
+      "chain_closure_explanation": "Within the stated bounded scope, the supplied action and graph-Laplacian identity algebraically imply the stationary equation, effective action, and two-source cross term. The retained-bounded Green-kernel authority supplies the separate large-distance coefficient.",
+      "claim_scope": "Exact finite-periodic-lattice completion-of-square algebra for the explicitly supplied source-normalized quadratic action, including its effective-action cross term and the retained Green-kernel asymptotic, but excluding physical source normalization and energy readout.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-10T15:46:27.467302+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "no_go_discipline_packet_missing",
+      "load_bearing_step": "Completing the supplied quadratic action on the zero-mean subspace gives S_eff[J] = -(g^2/2)<J,L^+J>, whose two-source cross term is -g^2 s_1 s_2 G(r).",
+      "load_bearing_step_class": "A",
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 12,
+        "B": 6,
+        "C": 0,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "The load-bearing result is genuine completion-of-square algebra on the zero-mean lattice subspace, and the cited retained-bounded authority independently supplies the Green-kernel asymptotic. The runner constructs the lattice Laplacian and pseudoinverse and checks stationarity, the minimum, the cross term, and both source and coupling scaling rather than merely printing the claimed result. This verdict does not extend to the explicitly excluded physical source-coupling normalization or effective-action-to-energy bridge."
+    },
+    {
+      "archived_at": "2026-08-07T11:59:16.737490+00:00",
+      "audit_date": "2026-07-25T22:56:20.043601+00:00",
+      "audit_invocation_history": [
+        "9cd32c3f9cf14bb38a773bdb549a0ed0"
+      ],
+      "audit_invocation_id": "9cd32c3f9cf14bb38a773bdb549a0ed0",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 2,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {
+          "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        "dep_claim_scope": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "For the nearest-neighbor graph Laplacian (-Delta_lat) on Z^3 with unit lattice spacing, the infinite-volume Green kernel has leading asymptotic normalization G(x) ~ 1/(4 pi |x|).",
+          "minimal_axioms": null
+        },
+        "dep_claim_type": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "bounded_theorem",
+          "minimal_axioms": "meta"
+        },
+        "dep_effective_status": {
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18": "retained_bounded",
+          "minimal_axioms": "meta"
+        },
+        "deps": [
+          "lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
+          "minimal_axioms"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 2.085,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "2f5950919ba75f2326246b970cdb9e750ce2af5ba52a533e445e8727a9b2d01a",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "2f5950919ba75f2326246b970cdb9e750ce2af5ba52a533e445e8727a9b2d01a",
+        "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-09503dcf",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite-lattice algebra closes given the supplied quadratic action, but the cited inputs do not derive its physical source-coupling normalization. The runner begins from that premise rather than closing it.",
+      "claim_scope": "Exact finite-periodic-lattice completion-of-square algebra for the explicitly supplied source-normalized quadratic action, including its effective-action cross term and the retained Green-kernel asymptotic, but excluding physical source normalization and energy readout.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T22:56:20.043601+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "invalidation_reason": "legacy_framework_premise_epoch_changed",
+      "load_bearing_step": "Completing the square gives L phi_* = g^2 J and S_eff[J] = -(g^2/2) <J, L^+ J>, hence V_cross(r) = -g^2 s_1 s_2 G(r).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and retain the physical source/action normalization; separately retain an energy-readout bridge before interpreting the effective-action cross term as a physical potential.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 6,
+        "C": 4,
+        "D": 0,
+        "total_pass": 18
+      },
+      "verdict_rationale": "Issue: The finite-dimensional completion-of-square algebra is correct, but the source-normalized quadratic action\u2014and therefore the physical source-coupling normalization behind the -g^2 G(r) interpretation\u2014is an explicit unratified premise rather than a result of the cited lattice axioms or retained Green-kernel authority. Why this blocks: the runner checks L phi_* = g^2 J, the effective action, the two-source cross term, and the small-k coefficient, but it starts from that action and cannot close the framework-to-physical-source bridge. Repair target: supply a retained theorem deriving the physical source/action normalization, plus a separate retained energy-readout bridge if a physical potential is claimed. Claim boundary until fixed: given the supplied action on the zero-mean periodic lattice, the stated effective action, cross term, quadratic scaling, and 1/(4 pi r) asymptotic normalization are valid."
+    }
+  ],
+  "prose_corrections": [],
+  "prose_status": "clean",
+  "runner_check_breakdown": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "total_pass": 0
+  },
+  "runner_path": "scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
+  "title": "I1 Supplied Quadratic Static-Source Complete-Square Bridge",
+  "transitive_descendants": 2,
+  "unattributed_audit_provenance": [
+    {
+      "auditor_model": "gpt-5.5",
+      "auditor_reasoning_effort": "xhigh",
+      "reason": "legacy_unaudited_exact_provenance_without_unique_history_match"
+    }
+  ],
+  "verdict_rationale": null
+}

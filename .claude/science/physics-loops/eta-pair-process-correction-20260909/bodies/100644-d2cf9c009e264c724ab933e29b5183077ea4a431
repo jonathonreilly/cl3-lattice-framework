@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30.py
+runner_sha256: 91141d7b917b52eef1335cc6d405acd5927d75ab32ce2f4e0620d4c9007b9a2a
+input_fingerprint_sha256: 334e234780033a19357d2443a153b300c494e9975ad7fc22625087fe7cc6e8df
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 588.66
+status: ok
+----- stdout -----
+PASS frozen_inputs_and_source_pin: 19 declared inputs; fingerprint=334e234780033a19357d2443a153b300c494e9975ad7fc22625087fe7cc6e8df
+PASS returned_pair_geometry: two current plus eight lateral 32-site blocks are pairwise disjoint
+PASS literal_local_turn_module: 1,568 source-derived lateral branches are physical and target-normalized
+PASS orthogonal_pair_controls_and_STOP: 196 exact source-pair controls are orthogonal and share one complement STOP
+PASS left_right_tensor_support: all 16 exit-pair local factor supports and writers are disjoint
+PASS proper_cubic_covariance: 24 frames transport states, Records, transitions, targets; pair stabilizer has 8 actions
+PASS two_supplied_q_tables: the displayed ansatz normalizes; supplied lambda=0,1/2 tables have uniform 1/4 marginals and all 16 positive cells
+PASS two_complete_channels: both exact Kraus families are CP and TP with the same carrier and STOP
+PASS Record_label_injectivity: 56 local and 3,136 pair output labels decode injectively at distinct centers
+PASS readable_distinct_pair_odds: derived P(g=h): lambda=0 -> 1/4; lambda=1/2 -> 5/8
+PASS arbitrary_reference_extension: every branch tensors with an arbitrary untouched identity and the Gram remains identity
+MUTATION REJECTED lambda_one_breaks_strict_support
+MUTATION REJECTED bad_diagonal_breaks_normalization
+MUTATION REJECTED deleted_pair_breaks_complete_row
+MUTATION REJECTED biased_cell_breaks_uniform_marginals
+MUTATION REJECTED coordinate_mark_breaks_covariance
+MUTATION REJECTED raw_q_amplitude_breaks_pair_gram
+MUTATION REJECTED overwrite_breaks_old_Record_QND
+MUTATION REJECTED stale_front_breaks_output_binding
+MUTATION REJECTED wrong_block_breaks_geometry
+MUTATION REJECTED deleted_target_breaks_transition_row
+MUTATION REJECTED shared_writer_breaks_tensor_support
+MUTATION REJECTED duplicate_control_breaks_orthogonal_family
+MUTATION REJECTED aliased_Record_breaks_label_injectivity
+MUTATION REJECTED missing_STOP_breaks_full_space_TP
+MUTATION REJECTED scope_autonomous_invocation_promotion_is_rejected
+MUTATION REJECTED scope_formation_rate_promotion_is_rejected
+MUTATION REJECTED scope_resource_renewal_promotion_is_rejected
+MUTATION REJECTED scope_nearest_neighbor_compiler_promotion_is_rejected
+MUTATION REJECTED scope_time_law_promotion_is_rejected
+MUTATION REJECTED scope_gravity_source_promotion_is_rejected
+MUTATION REJECTED scope_axiom_amendment_promotion_is_rejected
+MUTATION REJECTED scope_audit_retention_promotion_is_rejected
+MUTATION REJECTED scope_obligation_retirement_promotion_is_rejected
+MUTATION REJECTED scope_toe_score_promotion_is_rejected
+PASS designated_mutations: rejected=24/24
+PASS claim_scope: two supplied q choices on one supplied two-Record/eight-Blank pair sector; one externally invoked conditional compound instrument; conditional Block23/24 factors; no derived correlation mechanism, singleton extension, repeat-use law, autonomous invocation, formation rate, resource renewal, nearest-neighbor compiler, time, gravity, axiom amendment, audit retention, obligation retirement, or TOE movement
+per_element: checked — every literal turn factor and exact q/T coefficient used by the declared finite instrument
+per_site: checked — all ordinary-M2 current, Blank-target, writer, spectator, and outside-identity factor positions
+per_mode: checked — all 16 exit-pair modes, all 14 target rows, and both supplied q choices on every source-pair control
+per_block: checked — the explicit two-current/eight-Blank control, selected writers, orthogonal active sum, and common STOP
+lattice_wide: checked and not executed — no global tiling, repeat-use process, or nearest-neighbor compiled law is claimed
+TERMINAL: TWO-EXPLICIT-SUPPLIED-Q-CONDITIONAL-RETURNED-PAIR-INSTRUMENTS-WITH-STRICT-SUPPORT-UNIFORM-MARGINALS-AND-DISTINCT-READABLE-ODDS
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

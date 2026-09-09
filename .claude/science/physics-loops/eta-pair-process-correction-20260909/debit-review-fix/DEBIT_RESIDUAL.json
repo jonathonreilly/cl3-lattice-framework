@@ -1,0 +1,27 @@
+{
+  "source_tree": "b7cb9e2dfb2dc90fbaf4740ccc5459e6cedbe80d",
+  "B34_sha256": "2c0ea06929e8d784b8879296630010ec4724f7570582e6502efbf498670d028b",
+  "B32_sha256": "1a35ad599d70e52b8296df13e3c1b18b210d7a35082728fee6e87ee3a9b09987",
+  "baseline": {
+    "counts": [
+      2,
+      158,
+      14,
+      146
+    ],
+    "predicate": true
+  },
+  "actual_source_mutant": {
+    "function": "apply_finite_transaction",
+    "operation": "delete one actual consumed Blank before both set updates",
+    "counts": [
+      2,
+      158,
+      13,
+      147
+    ],
+    "B34_predicate": true,
+    "B32_bounded_transaction_rejects": true
+  },
+  "finding": "B34 note claims actual twelve-debit check; unchanged debit predicate checks equal positive differences only. Add exact expected tuple or twelve-debit assertion. No mathematical ray theorem refuted."
+}

@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_classical_screening_cause_renewal_locus_gate_2026_08_31.py
+runner_sha256: 845e2c73b54a4fec004c3302fa4b796d29c9650594fb05150092a8718bda8caf
+input_fingerprint_sha256: 154c0c79e9c274afb50f90f0d13e1db33666de08d140e9f3c1479a184a66c5d4
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 6.73
+status: ok
+----- stdout -----
+PASS frozen_inputs_and_source_pin: 20 literal inputs; fingerprint=154c0c79e9c274afb50f90f0d13e1db33666de08d140e9f3c1479a184a66c5d4
+PASS q_lambda_spectrum_rank_and_support: Q=(P0+lambda Pperp)/4; spectrum 1/4,lambda/4x3; det=lambda^3/256; ranks 1 then 4
+PASS per_law_four_cause_factorization: S=P0+sqrt(lambda)Pperp is stochastic/nonnegative and Q=SS^T/4
+PASS fixed_five_response_library_minimum: one uniform plus four diagonal product responses realize the family; endpoint support proves five minimal
+PASS general_frozen_covariance_identity: generic covariance expansion plus the finite positive-weight SOS equality schema and product-response rank-one minors
+PASS exact_existential_frozen_locus: some compatible frozen factorization exists exactly at lambda=0; inactive sectors ignored; not every lambda=0 factorization works
+PASS markov_orientation_and_reset_locus: row-stochastic K=Pi+rho(I-Pi) has residual rho*lambda*(1-lambda) Delta tensor Delta; rho=0 is visible redraw
+PASS live_hidden_and_use_dependent_escapes: hidden memory can persist under visible redraw, and a fixed composite cause with use-dependent kernels realizes positive lambda product histories
+PASS readable_binary_event_control: persistent-minus-renewed excess for both complete pairs satisfying g=h is 9*lambda*(1-lambda)/16
+PASS fixed_controlled_isometry: explicit 1445-row sparse Ready-subspace map has VdaggerV=I5 and full diagonal reduced output Q_lambda
+PASS three_supplied_disjoint_banks: symbolic one-use mixture plus nine preinitialized registers; all 125 cause triples and 4096 tensor cells checked exactly at lambda=2/5
+PASS lambda_dependent_coherent_control: permutation-covariant unitary has |U_gh|^2=4q_gh; same visible table does not identify dephased versus unitary channel rank
+PASS strict_depth_three_counterhistory: all 4096 positive entries, 16 one-use and all three 256 pair marginals; all-diagonal cell residual b^3/2
+PASS static_source_and_scope: literal input manifest, read-only source, required 19-field negative scope, qualified terminal
+MUTATION REJECTED frozen_01
+MUTATION REJECTED frozen_02
+MUTATION REJECTED frozen_03
+MUTATION REJECTED frozen_04
+MUTATION REJECTED frozen_05
+MUTATION REJECTED frozen_06
+MUTATION REJECTED frozen_07
+MUTATION REJECTED frozen_08
+MUTATION REJECTED frozen_09
+MUTATION REJECTED frozen_10
+MUTATION REJECTED frozen_11
+MUTATION REJECTED frozen_12
+MUTATION REJECTED frozen_13
+MUTATION REJECTED frozen_14
+MUTATION REJECTED frozen_15
+MUTATION REJECTED frozen_16
+MUTATION REJECTED frozen_17
+MUTATION REJECTED frozen_18
+MUTATION REJECTED frozen_19
+MUTATION REJECTED frozen_20
+MUTATION REJECTED frozen_21
+MUTATION REJECTED frozen_22
+MUTATION REJECTED frozen_23
+MUTATION REJECTED frozen_24
+MUTATION REJECTED frozen_25
+MUTATION REJECTED frozen_26
+MUTATION REJECTED frozen_27
+MUTATION REJECTED frozen_28
+MUTATION REJECTED frozen_29
+MUTATION REJECTED frozen_30
+MUTATION REJECTED frozen_31
+MUTATION REJECTED frozen_32
+MUTATION REJECTED frozen_33
+MUTATION REJECTED frozen_34
+MUTATION REJECTED frozen_35
+MUTATION REJECTED frozen_36
+MUTATION REJECTED frozen_37
+MUTATION REJECTED frozen_38
+MUTATION REJECTED frozen_39
+MUTATION REJECTED frozen_40
+MUTATION REJECTED scope_model_promotions_19/19
+MUTATION REJECTED scope_terminal_promotions_19/19
+PASS designated_hostile_mutations: rejected=78/78
+per_element: checked — all 16 q_lambda cells, the 16-by-16 covariance, and all 4,096 H3 entries were contracted exactly
+per_site: checked and not executed — no local M2 cause carrier, Ready/Spent site map, or nearest-neighbor gate was constructed
+per_mode: checked — the finite uniform/transverse label modes and declared binary Markov mode were evaluated; no lattice spectral mode is claimed
+per_block: checked — frozen two-use algebra and an abstract scalar three-use counterlaw were composed; no third Block32 transaction was executed
+lattice_wide: checked and not executed — no autonomous invocation, physical reset, cadence, arbitrary-depth process, source, or gravity law was constructed
+TERMINAL: FINITE-CLASSICAL-SCREENING-FROZEN-SAME-CAUSE-IDENTICAL-PRODUCT-RESPONSE-CONDITIONALLY-IID-BLOCK32-PRODUCT-HISTORY-EXISTENCE-LOCUS-LAMBDA-ZERO;SUPPLIED-IID-PREINITIALIZED-DISJOINT-BANKS-FIVE-CAUSE-AND-LAMBDA-DEPENDENT-COHERENT-CONTROLS-RETAIN-FULL-STRICT-INTERVAL;ALL-PAIR-MARGINALS-DO-NOT-DETERMINE-DEPTH-THREE;LAMBDA-REMAINS-IN-ENVIRONMENT-PREPARATION-COUPLING-OR-SUPPLIED-HISTORY-RESET-LAW
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

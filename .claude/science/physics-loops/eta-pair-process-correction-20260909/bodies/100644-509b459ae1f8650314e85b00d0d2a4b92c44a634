@@ -1,0 +1,84 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_symbolic_lambda_guarded_state_carrier_successor_gate_2026_08_31.py
+runner_sha256: 0547f7b51d8e93f08d5dcd5e3493e724319b98c003a1810490a772b684965fb2
+input_fingerprint_sha256: 1160b3f304367e08af9a3f9a40bd7a92e9660d8b07c4577b84007f19be331bcf
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 254.82
+status: ok
+----- stdout -----
+PASS frozen_inputs_and_source_pin: 26 declared inputs including source pin; fingerprint=1160b3f304367e08af9a3f9a40bd7a92e9660d8b07c4577b84007f19be331bcf
+PASS symbolic_q_lambda_family: all 16 weights, both 1/4 marginals, equality probability, and strict-support locus derived exactly on [0,1)
+PASS complete_pointer_and_token_guard: 3,136 orthogonal full configurations partition into sixteen 196-row route sectors; a same-STATUS malformed word proves token-only control insufficient
+PASS U_direct_sum_U_dagger_cleanup: all 256 STATUS rows clean before writers run; four opposite-route late-uncompute hazards are exhibited and excluded by selector-copy then U_dagger
+PASS sixteen_way_physical_dispatch: all 96 frame/token bindings select exact fixed-chirality Block30 routes with proper-cubic covariance and logical side exchange
+PASS literal_local_factor_composition: 1,536 frame/route/exit descriptors contract with a generic positive pair weight, then bind each domain-positive symbolic q_lambda cell to the same physical factors
+PASS CPTP_active_plus_STOP: 3,136 explicit P_c/W_c/R_c families satisfy the range-support Gram identity; their orthogonal active diagonal plus identity complement STOP is CPTP
+PASS persistent_no_refire: all 1,536 reduced-channel states are fixed on a second call; every one of 158 dirty guards STOPs atomically and selector/debit each block replay
+PASS resource_debit_and_old_Record_QND: all 1,536 frame/route/second-exit cases update 2 Locked + 158 Blank through ten plus two writes to 14 Locked + 146 Blank
+PASS symbolic_two_use_prefix: marginalizing the complete reached use returns the first q_lambda row; equality events are (1+3 lambda)/4 and its two-use square
+PASS lambda_blind_additive_and_live_pair_tensor: every additive one-tip observable is lambda-independent while E[g_i h_j]=lambda(delta_ij-f_i f_j)/2 remains available
+PASS exact_surviving_locus: all transaction residuals vanish on [0,1); the altered diagonal correctly collapses the semialgebraic solver to the singleton {0}
+PASS bounded_claim_scope: NN compilation/dilation, physical side hardware/equivalence, reversible autonomy, renewal, pair source, gravity, axioms, audit, obligations, and scores remain open
+TWO_USE_DIAGNOSTIC all_controls=True family_grams=True same_conditional_q=True prefix=True first_equality=True joint_equality=False source_binding=True
+TWO_USE_DIAGNOSTIC all_controls=True family_grams=True same_conditional_q=False prefix=True first_equality=True joint_equality=False source_binding=True
+MUTATION REJECTED bad_diagonal_rejected
+MUTATION REJECTED bad_diagonal_discrete_locus_recovered
+MUTATION REJECTED lambda_one_strict_support_rejected
+MUTATION REJECTED missing_STOP_rejected
+MUTATION REJECTED scaled_STOP_rejected
+MUTATION REJECTED overlapping_STOP_rejected
+MUTATION REJECTED nonidentity_STOP_rejected
+MUTATION REJECTED aliased_token_rejected
+MUTATION REJECTED perpendicular_route_swap_rejected
+MUTATION REJECTED lambda_dependent_route_rejected
+MUTATION REJECTED missing_full_pointer_guard_rejected
+MUTATION REJECTED missing_target_Blank_guard_rejected
+MUTATION REJECTED missing_unused_carrier_guard_rejected
+MUTATION REJECTED missing_token_guard_rejected
+MUTATION REJECTED missing_transient_guard_rejected
+MUTATION REJECTED missing_selector_Blank_guard_rejected
+MUTATION REJECTED erased_selector_rejected
+MUTATION REJECTED aliased_selector_rejected
+MUTATION REJECTED misbound_route_selector_rejected
+MUTATION REJECTED deleted_writer_stage_rejected
+MUTATION REJECTED reordered_writer_stages_rejected
+MUTATION REJECTED aliased_writer_stage_rejected
+MUTATION REJECTED identity_route_stage_gram_rejected
+MUTATION REJECTED identity_reached_stage_gram_rejected
+MUTATION REJECTED wrong_stage_geometry_rejected
+MUTATION REJECTED broken_output_chain_rejected
+MUTATION REJECTED family_wrong_selector_rejected
+MUTATION REJECTED family_dirty_token_rejected
+MUTATION REJECTED family_dirty_transient_rejected
+MUTATION REJECTED family_dirty_carrier_rejected
+MUTATION REJECTED family_wrong_pointer_source_rejected
+MUTATION REJECTED dropped_local_outcome_rejected
+MUTATION REJECTED probability_as_Kraus_root_rejected
+MUTATION REJECTED old_Record_overwrite_rejected
+MUTATION REJECTED omitted_U_dagger_rejected
+MUTATION REJECTED late_U_dagger_rejected
+MUTATION REJECTED wrong_handoff_debit_rejected
+MUTATION REJECTED wrong_full_debit_rejected
+MUTATION REJECTED partial_one_of_twelve_write_rejected
+MUTATION REJECTED stale_second_source_binding_rejected
+MUTATION REJECTED stale_initial_source_row_rejected
+MUTATION REJECTED broken_route_to_reached_feed_rejected
+MUTATION REJECTED missing_second_marginal_rejected
+MUTATION REJECTED missing_first_equality_filter_rejected
+MUTATION REJECTED missing_first_equality_filter_empty_locus
+MUTATION REJECTED selector_dependent_second_q_rejected
+MUTATION REJECTED selector_dependent_second_q_discrete_locus
+MUTATION REJECTED false_additive_sensitivity_rejected
+MUTATION REJECTED wrong_literal_symbolic_q_binding_rejected
+MUTATION SCOPE REJECTED rejected=19/19 survived=none
+PASS designated_mutations: rejected=68/68
+per_element: checked — domain-positive q roots, physical transition roots, orthogonal pointer bits, selector maps, and QND factors were recontracted
+per_site: checked — comparator transients, sixteen selector sites, protected Records, route targets, and Blank debits were enumerated
+per_mode: checked and not executed — no momentum or spectral-mode claim is needed for this finite configuration-space transaction
+per_block: checked — complete M2 pointer sectors, factor-level active/STOP direct sum, ten-step handoff, and reached second pair were composed
+lattice_wide: checked and not executed — the finite carrier has no autonomous invocation, renewal, cadence, or arbitrary-depth extension
+TERMINAL: FULL-SYMBOLIC-LAMBDA-INTERVAL-SURVIVES-GUARDED-TWO-USE-TRANSACTION;PAIR-SENSITIVE-SOURCE-OR-HISTORY-SELECTOR-OPEN
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
