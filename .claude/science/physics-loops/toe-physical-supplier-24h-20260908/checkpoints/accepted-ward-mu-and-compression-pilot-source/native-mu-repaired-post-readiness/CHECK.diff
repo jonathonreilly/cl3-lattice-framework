@@ -1,0 +1,26 @@
+--- 
++++ 
+@@ -2,7 +2,7 @@
+ from pathlib import Path
+ from fractions import Fraction as F
+ from math import comb
+-import hashlib,json,math
++import hashlib,json,math,re
+ S=1<<192
+ def sha(p):
+  h=hashlib.sha256()
+@@ -42,6 +42,14 @@
+   ck(all(isinstance(x,(int,float)) and not isinstance(x,bool) and math.isfinite(x) and x>0 for x in (receipt['seconds'],receipt['sampled_whole_tree_peak'],w['seconds'],w['rss_bytes'])),'finite positive resources')
+   ck(w['seconds']<=receipt['seconds']<=30 and receipt['sampled_whole_tree_peak']<=384*1048576 and w['rss_bytes']<=384*1048576,'resource caps')
+   ck(w['status']=='COMPLETE_CATALOG_INTEGRAL' and w['runtime_sha256']==sha(binding['worker_freeze']) and w['result_sha256']==sha(binding['result']),'worker result')
++  ck(accept['worker_freeze']==sha(binding['worker_freeze']) and accept['root_freeze']==sha(binding['root_freeze']),'acceptance source')
++  shellpath=binding['external_stderr'];ck(shellpath in binding['inputs'] and sha(shellpath)==binding['inputs'][shellpath],'external receipt hash');shell=Path(shellpath).read_text()
++  real=re.findall(r'^real\s+([0-9]+(?:\.[0-9]+)?)$',shell,re.M);rss=re.findall(r'^\s*([0-9]+)\s+maximum resident set size$',shell,re.M)
++  ck(len(real)==len(rss)==1 and 0<F(real[0])<=30 and 0<int(rss[0])<=384*1048576,'external resources')
++  ck(F(real[0])==F(str(accept['external_seconds'])) and int(rss[0])==accept['external_max_rss'] and accept['sampled_whole_tree_peak']==receipt['sampled_whole_tree_peak'],'external acceptance matching')
++  ck(accept['original_failed_protocol_preserved'] is True and F(str(accept['prior_precompute_failure_seconds']))==F('1.58') and F(str(accept['cumulative_external_seconds']))==F(real[0])+F('1.58'),'preserved failed predecessor')
++  ck(part['stage']=='complete' and part['current']==2 and part['panels']==[f'PANELS/{j:02d}.json' for j in range(67)],'final partial semantics')
++  ck(isinstance(part['seconds'],(int,float)) and math.isfinite(part['seconds']) and 0<part['seconds']<=w['seconds'],'partial time')
+   ck(r['panels']==67 and r['nodes']==1742 and r['oracle_calls']==0,'scope')
+   base=Path(binding['result']).parent;stage='panels';total=(F(0),F(0))
+   ck({x.name for x in (base/'PANELS').iterdir()}=={f'{j:02d}.json' for j in range(67)},'panel membership')

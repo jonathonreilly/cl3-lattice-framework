@@ -1,0 +1,5 @@
+# Saved mu root monitor affected confirmation
+
+PASS ROOT3e194dda2588a42683920f131c9c42ed3eb3b762ee9a8d74eb09ed89b9093487 binding worker3972 and actual BINDING45ece. Schema is byte-identical to independently reviewed3b3d cminus schema; prior12 fabricated cases reused, not rerun. Wrapper diff consists only of prospective source/output paths and failure label. All root pins, worker runtime and authorization binding hashes match.
+
+Actual repaired mu checker emits the same COMPLETE_SAVED_ONLY/PASS_SAVED_RECONSTRUCTION, predicates integer, node_integrals_replayedfalse/oracle0/scientific_status fields consumed by this schema. Commandverify and fresh output agree. Existing29.5s root/29s worker/30s external/384MiB/once-process-group cleanup and source origin guards are unchanged. Mu-specific normalization and middle-width checks are in the independently reviewed worker, not guessed by the generic root schema. No actual saved replay and no repeated unchanged synthetic controls. Ready for root's separately preregistered once verification, with external shell reconciliation afterward.

@@ -1,0 +1,13 @@
+# Fixed four-pair pilot mathematical/data-source cold review
+
+PASS source-only; runtime/cost not yet reviewed. Full original/resume pivot, worker, binder, cost/protocol and copied reader source inspected. Original fixed192 arithmetic is retained; continuation adds authenticated-history restoration and finer current-index persistence. No actual index, physical entry, pivot or fullmock executed. Reviewer authored earlier runtime design; this implementation is Primary's.
+
+Resume restores saved g,j,r without repeating completed pivot-row evaluations. It still recomputes the current diagonals/residuals against authenticated history, correctly. Shape/positivepivot/index/chirality/duplicate checks hold. Authentication of history/source/context is a CALLER premise; this function does not prove arbitrary supplied intervals were generated correctly. The first-four worker accepts no resume input, so no unauthenticated continuation is exposed by this pilot. Future continuation needs a separate exact hash/context contract.
+
+Deterministic maximalpositive lower diagonal/tie, cap4, allfive orbits, weighted2/1 residual and original coordinate radius arithmetic remain intact. Current diagonal/pivot index is persisted before entry evaluation; completed rows and checkpoints precede gates. History/context is atomically saved. Final input rehash and descriptor close run in finally; mutation prevents top-level result even after a per-orbit result was written. Failure closes existing descriptors and records completed orbits/current stage.
+
+Binder enforces combinedappendROOT+POST/result/worker/source and inheritedcache/cminus/A0 lineage, computes actual endpoint half-width maxima and exact rational alpha via parent plan, preserves interval order and radius ceilings. Native symmetry/index reconstruction remains the reviewed reader contract. Root-level final runtime still must bind literal execution status, stream/runtime/source membership and budget. No cost guarantee inferred from static counts.
+
+Worstcase9*399*5=17955 entries, times4=71820 rawrequests; history16*399*5=31920 updates; coordinate2*399*10*5=39900 conversions agree. Atomic per-entry metadata can dominate;120s is a bounded probe, not promised completion or production scaling. PAIR_CAP/PRECISION_STALL remain scientific outcomes.
+
+Eight independent tiny4D continuation/singular/adverse controls passed: resumed result/history equals fresh two-pair result; only new pivot row is requested; fewer entry calls; duplicate/nonpositive history rejected; uncertain diagonal stalls; injected firstentry failure records its exact currentindex. No source changes or blocker found.
