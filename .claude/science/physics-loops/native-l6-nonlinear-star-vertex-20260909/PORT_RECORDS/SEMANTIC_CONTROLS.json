@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "source_sha256": "a3ae4f95a78968e5765d3e341943e714457255bad5cd765796a7608fe5230cc0",
+  "geometry_sha256": "451bb6187c122a1fbe1c151d7e569f7d3e5a90eeadc74e9ff5844248c2664c81",
+  "controls": [
+    {
+      "mutation": "vertex scale changed by8, squared weight factor 64",
+      "rejected": true
+    },
+    {
+      "mutation": "vertex scale changed by8, squared weight factor 0.015625",
+      "rejected": true
+    },
+    {
+      "mutation": "z=-2*(-1)**sum(v[:a]) -> z=2*(-1)**sum(v[:a])",
+      "rejected": true,
+      "reason": "complete adapted payload"
+    },
+    {
+      "mutation": "for v in [0]+neighbors: -> for v in [2]+neighbors:",
+      "rejected": true,
+      "reason": "endpoint containment"
+    },
+    {
+      "control": "exact orthogonal projection and omitted-three-sector adverse",
+      "passed": true
+    }
+  ],
+  "seconds": 2.712705374986399,
+  "physical_replay": false
+}
