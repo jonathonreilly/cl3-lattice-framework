@@ -1,0 +1,2 @@
+# Routes and disposition
+Completed: fixed4/12/24 compression, original4 action, independent saved checks, fresh scalar diagnostic. None was rerun here. Open prospects only: direct selected-principal certificate, sharper scalar recertification, correlation-aware interval propagation, different trial spaces, and enlarged action-domain data. No new prospective proof is imported as completed numerical science.

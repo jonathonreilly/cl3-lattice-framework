@@ -1,0 +1,2 @@
+# Artifact plan
+Compact original ROOT/POST/results, full78-row scalar diagnostic, source/review recovery and exact immutable Git retrieval manifest. Large history/events/principalM remain remotely retrievable, not duplicated. Latest archive d7d01cbe43766ab34194d6a11c87f54c148a3dec contains retained earlier checkpoint histories. This package is not a stand-alone full numerical replay; remote retrieval is required for that forensic scope. No original workers run in packaging.

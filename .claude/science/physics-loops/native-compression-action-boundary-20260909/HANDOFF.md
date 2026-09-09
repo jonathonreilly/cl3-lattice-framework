@@ -1,0 +1,5 @@
+# Handoff
+
+This block is stacked on native-sparse-first-action-frame (PR8073), base0b80a97dd72b52662f835fa44b2fe803c2ca555e. It delivers conditional completed compression/action evidence and the specific historical interval-coefficient boundary. Source assembly and affected reviews pass; full audit/evidence-readiness integration remains not run. No physical or saved-worker protocol was rerun in packaging. Immutable remote manifests recover the large original data and prior failure/correction histories. The compact packet alone is not a full forensic replay.
+
+Review the native note, runner and verification manifests together. Later integration must preserve conditional supplied-model assumptions, distinct completion/target flags and independent-check coverage. No alpha, propagation or law-selection claim follows. Prospective selected-principal, sharper-scalar and coordinate-free leakage routes continue in separate work. Proposed weaving is deferred; no registry, board, queue, ledger or effective status is modified. The source graph dependency on PR8073 and graphmanifest are explicit. No main push/merge or formal audit occurred.

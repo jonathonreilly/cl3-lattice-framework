@@ -1,0 +1,2 @@
+# Negative-claim boundary
+N1–N8 are included in the canonical note. This is not an exhaustive physical no-go. Only the named four-pair trial leakage, fixed cap residual outcomes and saved-r recursive coefficient algorithm are constrained. No fabricated five-route closure or independent-wall count is supplied. New principal-factor, scalar, dependency-aware, trial-space and domain routes remain prospects, not results of this milestone.
