@@ -1,0 +1,31 @@
+"""Preregistered tiny8x8 integer Clifford controls; no spectrum/data run."""
+from itertools import product
+import json,signal
+signal.alarm(30)
+n=8
+I=[[int(i==j) for j in range(n)] for i in range(n)]
+def mul(a,b):return [[sum(a[i][k]*b[k][j] for k in range(n)) for j in range(n)] for i in range(n)]
+def mat(a,left):
+ m=[[0]*n for _ in range(n)]
+ for s in range(n):m[s^(1<<a)][s]=(-1)**sum((s>>b)&1 for b in (range(a) if left else range(a+1,3)))
+ return m
+G=[mat(a,True) for a in range(3)];M=[mat(a,False) for a in range(3)];Z=[[[int(i==j)*(-1)**((i>>a)&1) for j in range(n)] for i in range(n)] for a in range(3)];count=0
+def req(ok,msg):
+ global count
+ if not ok:raise ValueError(msg)
+ count+=1
+for a in range(3):
+ req(mul(G[a],G[a])==I,'Gamma square')
+ for b in range(3):
+  req(mul(G[a],M[b])==mul(M[b],G[a]),'magnetic commutant')
+  if a!=b:req(mul(G[a],G[b])==[[-x for x in row] for row in mul(G[b],G[a])],'Clifford')
+for i,j in product(range(n),repeat=2):
+ allowed=all(Z[a][i][i]==Z[a][j][j] for a in range(3));req(allowed==(i==j),'reflection diagonal')
+# Diagonal intertwiners are connected by every coordinate flip.
+seen={0}
+while True:
+ new=seen|{s^(1<<a) for s in seen for a in range(3)}
+ if new==seen:break
+ seen=new
+req(len(seen)==8,'unique diagonal scalar')
+print(json.dumps({'status':'PASS','checks':count,'physical_runs':0,'scope':'node Clifford and signed little-group constraints'},indent=2))

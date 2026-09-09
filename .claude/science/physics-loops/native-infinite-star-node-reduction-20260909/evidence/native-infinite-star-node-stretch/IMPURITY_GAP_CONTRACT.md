@@ -1,0 +1,3 @@
+# Bounded exact impurity-gap subcalculation
+
+Before evaluation: derive the infinite canonical rank-two two-link spectral-shift determinant, reduce it to the scalar cubic Green function, and bound its zero-frequency value by an exact simple-cubic return series. Fixed controls: return coefficients through n=100 (at most about180000 factorial products), exact tail2/sqrt100, and twelve rational log-series terms integrated on dimensionless frequency[0,1]. No physical matrix spectrum, numerical integral, sampling or solver. Cap30seconds384MiB. This may improve the conservative six-face stiffness gap for the actual pair denominators; the determinant and infinite-GNS passage require independent review before downstream use.

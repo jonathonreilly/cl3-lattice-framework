@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "isolated_files": 11,
+  "live_checks": 220,
+  "counts": {
+    "little_group": 83,
+    "shift_entries_and_vacuum": 33,
+    "return_and_gap": 2,
+    "orbits_and_tail": 102
+  },
+  "controls": [
+    {
+      "name": "wrong_soft_shift",
+      "returncode": 1,
+      "mutated_sha256": "0e77a245d517a8a423a65bb1fdaf1b6962c2d8760971a865e6cb3c16d88b66c1"
+    },
+    {
+      "name": "wrong_energy_factor",
+      "returncode": 1,
+      "mutated_sha256": "f4158b6e5d850db2257a8579e69ff779c2ed2c73b43b85957b8291238fa64e69"
+    },
+    {
+      "name": "drop_reflection",
+      "returncode": 1,
+      "mutated_sha256": "201628141a211dd2149570441d143dbf6559e2cfecd82ab8525720b863ad439b"
+    },
+    {
+      "args": [
+        "--unknown"
+      ],
+      "returncode": 2,
+      "stderr": "usage: native_infinite_star_node_reduction_2026_09_09.py [-h] [--json]\nnative_infinite_star_node_reduction_2026_09_09.py: error: unrecognized arguments: --unknown\n"
+    },
+    {
+      "args": [
+        "unexpected"
+      ],
+      "returncode": 2,
+      "stderr": "usage: native_infinite_star_node_reduction_2026_09_09.py [-h] [--json]\nnative_infinite_star_node_reduction_2026_09_09.py: error: unrecognized arguments: unexpected\n"
+    }
+  ],
+  "physical_runs": 0
+}

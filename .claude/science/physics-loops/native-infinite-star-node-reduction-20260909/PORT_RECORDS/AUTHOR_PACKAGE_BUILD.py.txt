@@ -1,0 +1,49 @@
+from pathlib import Path
+import json,hashlib,shutil,ast,subprocess,sys,tempfile,zipfile
+root=Path(__file__).resolve().parent; packet=root/'.claude/science/physics-loops/native-infinite-star-node-reduction-20260909';packet.mkdir(parents=True,exist_ok=True); ev=packet/'evidence';ev.mkdir(exist_ok=True); records=packet/'PORT_RECORDS';records.mkdir(exist_ok=True)
+scratch=Path('/private/tmp/toe-24h-probes-20260908')
+for name in ['native-infinite-star-node-stretch','native-infinite-star-node-cold-review','native-infinite-pair-gap-cold-review','native-gaussian-soft-commutator-cold-review']:
+ shutil.copytree(scratch/name,ev/name,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__'))
+main='scripts/native_infinite_star_node_reduction_2026_09_09.py';tree=ast.parse((root/main).read_text());inputs=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='AUDIT_INPUT_PATHS' for t in n.targets));paths=[main,*inputs]
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+freeze={p:sha(root/p) for p in paths};(records/'SOURCE_FREEZE.json').write_text(json.dumps(freeze,indent=2)+'\n')
+with zipfile.ZipFile(records/'ISOLATED_INPUTS.zip','w',zipfile.ZIP_DEFLATED) as z:
+ for p in paths:z.write(root/p,p)
+with tempfile.TemporaryDirectory(dir=records,prefix='isolated-') as tmp:
+ t=Path(tmp)
+ for p in paths:(t/p).parent.mkdir(parents=True,exist_ok=True);shutil.copy2(root/p,t/p)
+ r=subprocess.run([sys.executable,'-I','-B','-OO',str(t/main),'--json'],capture_output=True,text=True,timeout=180)
+ (records/'ISOLATED.stdout').write_text(r.stdout);(records/'ISOLATED.stderr').write_text(r.stderr)
+ if r.returncode:raise ValueError('isolation failed')
+ payload=json.loads(r.stdout);(root/'outputs/native_infinite_star_node_reduction_2026_09_09.json').write_text(r.stdout)
+ controls=[]
+ mutations=[('wrong_soft_shift','scripts/native_infinite_star_node_shift_2026_09_09.py','inv(add(D,sc(2,I)))','inv(D)'),('wrong_energy_factor','scripts/native_infinite_star_node_gap_2026_09_09.py','F(7,44)*integral','F(7,88)*integral'),('drop_reflection','scripts/native_infinite_star_node_algebra_2026_09_09.py','((i>>a)&1)','0')]
+ for name,p,old,new in mutations:
+  original=(t/p).read_text()
+  if old not in original:raise ValueError('missing mutation')
+  changed=original.replace(old,new);(t/p).write_text(changed);(records/(name+'.txt')).write_text(changed)
+  r=subprocess.run([sys.executable,'-I','-B','-OO',str(t/main),'--json'],capture_output=True,text=True,timeout=180)
+  (records/(name+'.stderr')).write_text(r.stderr);controls.append({'name':name,'returncode':r.returncode,'mutated_sha256':sha(t/p)})
+  (t/p).write_text(original)
+  if r.returncode==0:raise ValueError('mutant survived '+name)
+ for args in [['--unknown'],['unexpected']]:
+  r=subprocess.run([sys.executable,'-I','-B','-OO',str(t/main),*args],capture_output=True,text=True,timeout=30);controls.append({'args':args,'returncode':r.returncode,'stderr':r.stderr})
+  if r.returncode==0:raise ValueError('CLI accepted')
+(records/'CONTROL_RECEIPT.json').write_text(json.dumps({'status':'PASS','isolated_files':len(paths),'live_checks':payload['checks'],'counts':payload['predicate_groups'],'controls':controls,'physical_runs':0},indent=2)+'\n')
+texts={
+'GOAL.md':'# Goal\n\nEstablish a well-defined real native node scalar and a bounded calculation route under the supplied canonical infinite Gaussian model. Alpha remains unevaluated. Base aea1602ec35a045e5b06be563acef0c28dadcbd4.\n',
+'ASSUMPTIONS_AND_IMPORTS.md':'# Assumptions and imports\n\nFull native CAR/Z2 dictionary; supplied nonzero hopping and canonical AP pure Gaussian reference; parent thermodynamic creator and smooth unprojected symbol; finite uniform stiffness used for the original inverse limit. The improved h/6 is infinite only, proved here relative to the same E0. No active uniform gap, physical node value, or phase is imported. All ten premise/helper files and primary are in SOURCE_FREEZE.\n',
+'ARTIFACT_PLAN.md':'# Artifact plan\n\nOne canonical note, one primary, four standard-library helpers, paired output, immutable original proofs/reviews and actual port controls. No physical kernel pilot is part of this artifact.\n',
+'CLAIM_STATUS_CERTIFICATE.md':'# Claim Status Certificate\n\nScope: real scalar node, five pair classes, bounded soft/resolvent/Laplace identities, infinite pair gap h/6, and complete improved tail. No node value, finite-size h/6 threshold, or interacting phase.\n\nactual_current_surface_status: conditional-support\ntrace_class: frontier_discovery\nreachability_to_target: unknown_frontier\nproposal_allowed: false\nbare_retained_allowed: false\naudit_required_before_effective_retained: true\nhypothetical_axiom_status: null\nadmitted_observation_status: null\n',
+'HANDOFF.md':'# Handoff\n\nAuthor packet ready for complete canonical source review. Root owns citation graph, commit, push and PR after final review. Do not rerun any earlier physical campaign. Portable output is exact supporting algebra only. Alpha and practical pointwise/spatial integration remain open.\n',
+'LITERATURE_BRIDGES.md':'# Literature bridges\n\nNo new external paper or empirical value is imported. Gaussian CAR, determinant lemma, elementary return bounds and dominated convergence are derived in the note with the cited canonical parent assumptions. No historical novelty is claimed.\n',
+'NO_GO_LEDGER.md':'# Limitations and preserved failures\n\nThis is not a no-go theorem. Preserve the corrected adjacent-swap gauge wording and original pre-correction bytes. Spatial cutoff generalized annihilators are not justified by small boundary error. Node alpha remains undecided; finite higher-particle weight does not decide its signed one-particle value.\n',
+'OPPORTUNITY_QUEUE.md':'# Remaining opportunity\n\nCertify actual Gaussian point kernels, spatial approximation, and time integration before determining alpha. The separate unlaunched pilot is not evidence for the present theorem.\n',
+'PR_BACKLOG.md':'# Delivery ownership\n\nRoot integrates after full canonical review; author has not built graph, committed, pushed, or opened a PR.\n',
+'REVIEW_HISTORY.md':'# Review history\n\nOriginal node/soft/Laplace proof: independent d1a4aa103bf5511f682cedcc061020732a91fa0c98894f2358e0622d22ca9d32 PASS after corrected pair gauge. Infinite pair gap: independent 17d56392 PASS, complete report preserved. Canonical consolidation and portable changes require fresh final-source review. Gaussian commutator extension is archived but is not an added live theorem in this block.\n',
+'ROUTE_PORTFOLIO.md':'# Routes\n\nMagnetic little-group uniqueness reduces the target; finite soft shifts avoid unbounded zero-mode operators; exact determinant and return bounds improve impurity denominators; Laplace semigroups give exponential tails. None evaluates the remaining signed scalar.\n',
+'TRACE_GATE.md':'# Trace Gate\n\ntrace_class: frontier_discovery; conditional-support. A controlled scalar calculation framework for the supplied native vertex, not axiom closure or observed physics.\n',
+'STATE.yaml':json.dumps({'phase':'canonical_review','base':'aea1602ec35a045e5b06be563acef0c28dadcbd4','status':'conditional-support','next':'root and independent source review'},indent=2)+'\n'}
+for name,text in texts.items():(packet/name).write_text(text)
+manifest={str(p.relative_to(ev)):sha(p) for p in ev.rglob('*') if p.is_file()};(packet/'ORIGINAL_EVIDENCE_HASHES.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print(json.dumps({'live_checks':payload['checks'],'closure_files':len(paths),'source_freeze':sha(records/'SOURCE_FREEZE.json'),'note':sha(root/inputs[0])}))
