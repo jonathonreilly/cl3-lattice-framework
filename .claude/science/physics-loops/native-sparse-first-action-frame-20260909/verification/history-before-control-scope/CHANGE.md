@@ -1,0 +1,1 @@
+Coverage wording corrected only: formal action-vector norm/orthogonality identities, not a dense action contraction. Runner arithmetic unchanged; all refreshed manifest pins checked statically, no repeated mathematical controls. Prior95-check output remains historical source-version evidence.

@@ -1,0 +1,1 @@
+First portable runner invocation failed at Python parse before controls: missing spaces in `and402` and `and4` in domain-count expression. No scientific check executed; initial OUTPUT empty. Fixed lexical spacing only.
