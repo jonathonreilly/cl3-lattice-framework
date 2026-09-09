@@ -50,15 +50,12 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W32 adds three corrected tick papers to main.
-   Shared reconciliation records86 open originals and98 newly landed original
-   science scopes;64 earlier-closed scopes remain pending at five open successors.
-   Born five-paper final evidence and original Astra-low source confirmation are complete;
-   final integration confirmation remains;
-   backlog_8001_review repairs the three gravity papers. The actual Born phrase-gate
-   failure and narrow correction are preserved. The next focused chirality review
-   covers #7973/#7989/#7991 with backlog_ticks_review. backlog_draft_triage
-   reviews #7966 and its seven pending consolidated scopes. Formal audit remains deferred.
+1. W33 adds five corrected Born-menu papers to main, including a direct proof
+   under explicit homogeneity assumptions. Shared reconciliation records 81 open
+   originals and 103 newly landed original science scopes; 64 earlier-closed
+   scopes remain pending at five open successors. Gravity author repairs and
+   chirality original review are active. The Maxwell successor #7966 and its seven
+   pending consolidated scopes are also under review. Formal audit remains deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
