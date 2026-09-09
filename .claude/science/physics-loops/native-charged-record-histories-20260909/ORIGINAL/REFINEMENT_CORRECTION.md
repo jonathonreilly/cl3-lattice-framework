@@ -1,0 +1,3 @@
+# Before-review self-correction
+
+The initial derivation loosely called the CP instrument refinement-consistent without naming its connecting channel. That could falsely imply equality of postmeasurement states after forgetting a finer outcome. The preserved predecessor is not the current theorem. On an unchanged qubit, measuring Z and forgetting its outcome dephases |+><+|; it does not return that state. Current text states the exact partial-trace diagram for deleted factors and the outcome-corrected connecting channel for positive-Gauss frames. Scalar outcome marginalization remains exact. No source/premise from main was changed.

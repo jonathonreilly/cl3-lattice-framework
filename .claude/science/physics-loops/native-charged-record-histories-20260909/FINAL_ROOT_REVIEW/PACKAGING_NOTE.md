@@ -1,0 +1,1 @@
+The first root delivery-metadata command treated the author STATE.yaml as JSON and failed after successful graph verification. STATE.yaml was valid plain YAML; it is now rewritten as equivalent JSON-valid YAML with the completed review state. No scientific source, control or graph rerun resulted.
