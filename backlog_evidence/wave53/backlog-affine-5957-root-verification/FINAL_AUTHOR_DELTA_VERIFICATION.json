@@ -1,0 +1,49 @@
+{
+  "pr": 5957,
+  "head": "4cf6ed7031efea56f35c7cf2945fa4f7873c7029",
+  "tree": "c583f5e5f5e5d8e39b5fd48bf53e5910419ff5e0",
+  "base": "0d4a8bb96b7956390e7f43c1bdeaf51cfc2adb6d",
+  "receipt_sha256": "dd12e1480b93d21ac85d638b20dd7a8db569c63ba0e932c63668e89fcaac88a1",
+  "confirmation_receipt_sha256": "2e2a812d99533e3c54e8336aa3e2ca42520793a7583e8f1c3cf02a06d4b1d125",
+  "verified_author_artifacts": 36,
+  "verified_confirmation_artifacts": 4,
+  "source_paths": 36,
+  "recovery_entries_verified": 27,
+  "preserved_base_leaves": 30649,
+  "post_freeze_changes": [
+    "logs/runner-cache/frontier_cycle895_t_retirement_2026_07_28.txt",
+    "logs/runner-cache/frontier_cycle895_t_retirement_independent_check_2026_07_28.txt"
+  ],
+  "actual_final_execution": [
+    {
+      "runner": "scripts/frontier_cycle895_t_retirement_2026_07_28.py",
+      "exit_code": 0,
+      "elapsed_sec": 0.8604190420010127,
+      "peak_rss_bytes": 23642112,
+      "terminal": [
+        "TOTAL: PASS=12 FAIL=0"
+      ],
+      "actual_cache_stdout_matches": true
+    },
+    {
+      "runner": "scripts/frontier_cycle895_t_retirement_independent_check_2026_07_28.py",
+      "exit_code": 0,
+      "elapsed_sec": 0.8434043329907581,
+      "peak_rss_bytes": 23592960,
+      "terminal": [
+        "TOTAL: PASS=5 FAIL=0"
+      ],
+      "actual_cache_stdout_matches": true
+    }
+  ],
+  "current_main": "eb105e8c374ea286c9b7705d1f5e0c546f0a1b44",
+  "input_intersections": [],
+  "root_proof_assessment": [
+    "All539 active correction lines read, plus full original/author/confirmation reports and scope dispositions.",
+    "Affine equations partition1296supports; independent s=1+t coefficients agree. Traceless family and endpoint-resolved O3 establish explicit one-source/nonzero-weight fibre count; no overlapping-source claim.",
+    "Selected23 Boolean formulas factor through affine root atoms; generic sample2 is complete only under that proof, no corpus completeness.",
+    "Commutator nonzero versus threshold:8(t-1)^2 gives1/125000 near1; two conditional R9 constraints and gauge give(1,2,0).",
+    "Changed summary/terminal operands enter same validator. No failed/empty/refuted acceptance. Mathematical enumeration independent; controls intentionally import tested functions."
+  ],
+  "formal_audit": false
+}
