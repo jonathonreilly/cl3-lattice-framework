@@ -1,25 +1,25 @@
 # Backlog review and landing — current handoff
 
-Updated after wave56. Main is `e48b8ed97fb909245b722a8ca9a59b078efdae9c`. The original254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
+Updated after wave57. Main is `fdfa10937a5bd0fad3e9ad73a65174aec10c534e`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 120 |
+| Closed directly after reviewed landing | 122 |
 | Closed through draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner reservations | 24 |
+| Still open, including three owner reservations | 22 |
 | Original membership | 254 |
 
-166 reviewed original science scopes landed: 117 direct and 49 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 120 direct original closures include 117 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 50 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+168 reviewed original science scopes landed:119 direct and 49 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 122 direct original closures include119 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures,50 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
-Zero original drafts remain. The110 other closures comprise49 corrected scopes landed,50 pending at four successors,seven partial Maxwell scopes,two starting-main supersessions,one empty PR and one unexecuted plan. Reservations apply transitively.
+Zero original drafts remain. The 110 other closures comprise 49 corrected scopes landed,50 pending at four successors, seven partial Maxwell scopes, two starting-main supersessions, one empty PR and one unexecuted plan. Reservations apply transitively.
 
-Including pre-cutoff #8003–#8009, the session has127 direct closures,56 science/source batches and208 new source documents;54 batches passed one combined gate. Earlier actual failures and pre-gate rebuilds remain preserved. Main's ledger has4,668 rows:4,293 unaudited science and375 meta. Fifteen new notes await mechanical refresh. No audit verdict has been applied by this campaign.
+Including pre-cutoff #8003–#8009, the session has 129 direct closures,57 science/source batches and 210 new source documents;55 batches passed one combined gate. Earlier actual failures and pre-gate rebuilds remain preserved. Main's ledger has 4,668 rows:4,293 unaudited science and 375 meta. Seventeen new notes await mechanical refresh. No audit verdict has been applied by this campaign.
 
-Wave56 lands six original Eta pair-process results (#7813/#7819–#7823), previously consolidated at #7827. The original reviewer confirmed every correction, including a debit-count control that now rejects a missing write. Root verified all355 recovery rows/198 bodies and preservation of current main. The combined gate passed once in 245.092 seconds. See [evidence](backlog_evidence/wave56/INDEX.json). These six acceptances do not close #7827:17 transferred original scopes plus its own remaining science still need disposition.
+Wave 57 lands corrected Gaussian #7326 and finite Regge #7335 science. Original reviewers confirmed every correction; root verified exact original source/history, corrected arguments and preservation of current main. The combined gate passed once in 246.330 seconds. Both PRs are closed with branches preserved. See [evidence](backlog_evidence/wave57/INDEX.json). Gaussian tests now include the missing imaginary Hermitian direction; Regge narrows the all-fiber range and distinguishes shared-definition checks from the independent Schur control.
 
-Gaussian #7326 has sealed author fixes and original-reviewer PASS with bounded claims; integration is pending. Regge #7335 is completing the same-session fixes and final evidence. Root has read both correction diffs. The separate Eta affine-repeat and #7338 Schur-pole reviews are active; archive packets remain queued. The remaining14 older Eta transfers now have three explicit source-routed units (lineage/successor, spin2/causal, safe-front/caps). Their notes are absent from main; related mentions in landed packets did not count as acceptance. See NEXT_REVIEW_UNITS.json.
+The separate Eta affine-repeat unit and #7338 Schur-pole result have active author repairs. Their original reviewers retain confirmation ownership. The remaining 14 older Eta transfers have three explicit source-routed units (lineage/successor, spin2/causal, safe-front/caps); related mentions did not count as acceptance. Archive packets #7871/#7875 remain queued. See NEXT_REVIEW_UNITS.json.
 
-Verified source dependencies hold #6844/#7332 and #7333/#7334 on owner-reserved science. Their branches remain open; this is no adverse mathematical verdict. The [preferred-parent routes](backlog_evidence/reserved_routing_7333_7334/PREFERRED_PARENT_IMPORT_RESERVATIONS.json) exclude exception-handler/else fallback shortcuts. Other verified reserved-dependent units retain their explicit holds.
+#7827 remains open:17 transferred original scopes and its own remaining science need disposition. Verified reserved-dependent units retain their holds, including #6844/#7332 and #7333/#7334. Their open state is not an adverse mathematical verdict. Preserve the [preferred-parent routes](backlog_evidence/reserved_routing_7333_7334/PREFERRED_PARENT_IMPORT_RESERVATIONS.json) and all original recovery handles.
 
 Astra low remains the focused reviewer default; unresolved consequential mathematical questions escalate to Astra xhigh. Reuse complete original reviews and confirm affected corrections. Preserve source recovery outside note discovery. Standing reservations and Maxwell production/physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json). The [model pilot](REVIEWER_MODEL_PILOT.md) covers one workload.
 
@@ -62,7 +62,7 @@ Astra low remains the focused reviewer default; unresolved consequential mathema
 | Conditional indexed menus and homogeneous Born proof | `27dd1b2199c4a5973eb1a97af25eb7c5b9b8efc0` | `backlog_evidence/wave33` |
 | Conditional finite gravity coupling and density-ruler science | `fb834956cf781eeb9d7760337e71661772810e29` | `backlog_evidence/wave34` |
 
-Wave14 lands the complete corrected #7846/#7847 scientific scopes and the separate
+Wave 14 lands the complete corrected #7846/#7847 scientific scopes and the separate
 #7976 meta synthesis. Calibration-domain and joint-trial premises are explicit;
 finite carrier results make no global-model or wall-independence claim. The four
 parent notes retain only their explicitly used supplied-premise scope. The 25
@@ -76,7 +76,7 @@ the original failure and all generated output remain preserved. Only generated
 outputs from the successful worktree were stripped.
 No formal audit or member-proof acceptance came from the meta synthesis.
 
-Wave15 lands #7892/#7893/#7903 with all eleven findings resolved. The actual final
+Wave 15 lands #7892/#7893/#7903 with all eleven findings resolved. The actual final
 runs pass 37/0, 34/0, 34/0, preserving all 91 original check IDs. Independent affected
 checks reject nine semantic mutants and match all four complete Fock/code matrices.
 All 11 final source/manifest hashes were verified on remote main before closure.
@@ -84,7 +84,7 @@ The actual graph needed six citation links added before final review; YAML alone
 did not publish those dependencies. One combined validation then passed. All
 1,527 generated outputs were preserved and stripped, leaving applied status unchanged.
 
-Wave16 lands #7911/#7959/#7990 after separate original reviewers confirm all
+Wave 16 lands #7911/#7959/#7990 after separate original reviewers confirm all
 corrected source and the combined tree. Actual final runs pass 29/0, 28/0 (no skips)
 and 61/0; all 100 original check IDs remain, with 18 new controls. Parent claims and
 unreproduced large-volume rows retain explicit historical scope. Root corrected
@@ -93,7 +93,7 @@ gate, moving its exact body outside scientific discovery and rerunning
 only the affected Born cache. All 18 source/manifest hashes were verified on remote
 main before the three closures; one combined validation passed without an audit.
 
-Wave17 lands #6371 together with the corrected scientific scopes of #6339/#6368
+Wave 17 lands #6371 together with the corrected scientific scopes of #6339/#6368
 and the required Block84 supplier. All nine original findings are closed; the
 race is explicitly restricted, probability/content/resource checks reject the
 original scientific mutants, and historical status no longer supplies authority.
@@ -103,7 +103,7 @@ all 120,020 original/current/final map rows. Four bounded nodes and 13 edges wer
 verified, then one combined gate passed. All source hashes were checked on remote
 main before #6371 closed. The two constituent rows now record landed science.
 
-Wave18 lands #6358 and the corrected scopes of #6280/#6345/#6352/#6354,
+Wave 18 lands #6358 and the corrected scopes of #6280/#6345/#6352/#6354,
 including four required supplier triples. The nine final runs total 87 passing
 checks with all 86 original IDs retained. Actual Gaussian normalization and
 inherited-law mutations fail their intended predicates. The unsupported claim that 55 pairs were independent
@@ -113,7 +113,7 @@ maps, 28 helper edges and all input guards. One combined validation passed;
 all 29 hashes were verified on remote main before #6358 closed. Four previously
 closed constituents now have reviewed corrected science on main. No audit ran.
 
-Wave19 lands #7848/#7849/#7942 after the original reviewer confirms the complete
+Wave 19 lands #7848/#7849/#7942 after the original reviewer confirms the complete
 58-path composition. All 49 original checks remain, with genuine 15/0, 13/0 and
 21/0 caches. Independent checks cover current signs, instruments, Gram algebra,
 all 9,600 finite states and spectra, actual compiler/Gauss failures and mutable
@@ -123,7 +123,7 @@ The sampler's positive-lag implementation and general mixing remain unvalidated;
 its five-route procedural packet remains pending. Source review grants no formal
 audit or physical action, statistics, formation, time or probability law.
 
-Wave20 lands #7888/#7890 after independent final confirmation of all eight
+Wave 20 lands #7888/#7890 after independent final confirmation of all eight
 source/manifest paths and all eleven finding dispositions. Genuine final caches
 pass 22/0 and 36/0, retaining all 46 original check IDs. Independent actual
 countercontrols reject false projector/minor, mass-commutator and off-axis kernel
@@ -134,7 +134,7 @@ Supplied probability, mass and coordinate conventions remain explicit; no
 physical Record/clock law, all-sector ordering, uncontrolled lattice asymptotic
 or parent-campaign acceptance follows from this source landing. No audit ran.
 
-Wave21 lands #7889/#7891 after the original reviewer confirms all eight source
+Wave 21 lands #7889/#7891 after the original reviewer confirms all eight source
 and manifest paths and all eleven finding dispositions. Genuine final caches pass
 29/0 and 26/0 with all 44 original check IDs retained. Independent affected checks
 reject the incomplete-isometry and fitted-tail mutations; exact local coefficients,
@@ -147,7 +147,7 @@ No audit ran; the procedural route quota remains explicitly unresolved.
 
 Assignments refreshed 2026-09-08T05:45:23.799387+00:00; queue counts below now include landed wave23. [Handoff evidence](backlog_evidence/wave22-assignments/INDEX.json).
 
-Wave22 lands #7894/#7897 after the original independent reviewer confirms the
+Wave 22 lands #7894/#7897 after the original independent reviewer confirms the
 exact corrected source and manifest. Genuine final caches 37/0 and 28/0 preserve
 all 56 original checks and numerical payload expressions. The massless spectral
 symmetry, many-body mass transformations, supplied Hartree bulk functional and
@@ -158,7 +158,7 @@ passed, all 8 hashes were verified on remote main before closure, and no audit r
 
 Assignment refresh 2026-09-08T06:52:41.923491+00:00: [sealed author, composition and original review evidence](backlog_evidence/wave23-handoff/INDEX.json). The pre-landing assignment record is preserved; counts above now include wave23.
 
-Wave23 lands #7896/#7909 after original-reviewer confirmation of the exact
+Wave 23 lands #7896/#7909 after original-reviewer confirmation of the exact
 seven-source and manifest composition. Genuine final caches 28/0 and 30/0 retain
 all 48 original check IDs, with the coupled-operator norm correction disclosed.
 The first interval 29/1 control failure and exact momentum repair remain preserved.
@@ -171,7 +171,7 @@ survive with explicit domains; exact generic zeros, anomaly inflow and physical
 Record-time claims remain unestablished. One combined validation passed and all
 eight source/manifest hashes were checked on remote main before closure. No audit ran.
 
-Wave24 lands #7883/#7900/#7902/#7904 after original-reviewer confirmation of
+Wave 24 lands #7883/#7900/#7902/#7904 after original-reviewer confirmation of
 all corrected source and the exact composition. Genuine final caches pass
 32/0, 25/0, 21/0 and 39/0, preserving all 108 original IDs with four predicates
 strengthened. All 12 finding groups are resolved; nine actual scientific mutants
@@ -181,7 +181,7 @@ domains. They do not supply physical Born/readout, formation or clock laws, and
 no all-family classification is accepted. One combined validation passed; all 14
 source/manifest hashes were checked on remote main before closure. No audit ran.
 
-Wave25 lands #7874/#7878/#7895/#7899 after each unit's original independent
+Wave 25 lands #7874/#7878/#7895/#7899 after each unit's original independent
 reviewer confirms its complete corrected source and the exact combined target.
 All 24 finding groups and 27 claim groups have dispositions. Genuine final caches
 pass 22/0, 20/0, 29/0 and 28/0, retaining all 85 original IDs. Exact flux polynomials
@@ -192,7 +192,7 @@ Both full maps and shared interactions were checked. One combined validation pas
 all 15 source/manifest hashes were checked on remote main before four closures.
 Historical failures and numerical variation are preserved; no audit ran.
 
-Wave26 lands #7879/#7881/#7885 after the same original reviewer confirms all
+Wave 26 lands #7879/#7881/#7885 after the same original reviewer confirms all
 13 finding fixes, 23 original claims, full source and actual premise/input closure.
 The original 73 IDs remain; H3 now measures its actual operands and twelve new
 checks give genuine final 28/0, 28/0 and 29/0. Exact even-domain cube threshold,
@@ -202,7 +202,7 @@ Twelve actual scientific mutants reject, with fifteen independent exact controls
 One combined validation passed; all eleven source/manifest hashes were verified
 on remote main before three closures. No formal audit or grade was applied.
 
-Wave27 lands #7869/#7880 after the original reviewer confirms all twelve findings
+Wave 27 lands #7869/#7880 after the original reviewer confirms all twelve findings
 and twelve complete claim groups on the actual newest-main composition. Genuine
 final runs pass 22/0 and 24/0; all 37 original predicates and 2,713 captured arrays,
 including 2,560 unwanted configurations and both extracted vectors, remain exact.
@@ -398,3 +398,5 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Corrected finite Markov and terminal channel science | `6952b95754210bf25d14ad45bb21dba103e7eea3` | `backlog_evidence/wave55` |
 
 | Six corrected conditional Eta pair-process results | `e48b8ed97fb909245b722a8ca9a59b078efdae9c` | `backlog_evidence/wave56` |
+
+| Corrected Gaussian event and finite Regge results | `fdfa10937a5bd0fad3e9ad73a65174aec10c534e` | `backlog_evidence/wave57` |

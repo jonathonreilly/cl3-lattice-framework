@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T15:58:33.584110+00:00; main `e48b8ed97fb909245b722a8ca9a59b078efdae9c`.
+Updated 2026-09-09T16:25:22.391653+00:00; main `fdfa10937a5bd0fad3e9ad73a65174aec10c534e`.
 
-166 reviewed original science scopes landed: 117 direct and 49 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 120 direct original closures include 117 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 50 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+168 reviewed original science scopes landed:119 direct and 49 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 122 direct original closures include119 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures,50 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
@@ -71,8 +71,10 @@ Updated 2026-09-09T15:58:33.584110+00:00; main `e48b8ed97fb909245b722a8ca9a59b07
 | #7202 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7203 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7204 | source_consolidation_semantic | pending_on_open_successor | #7315 |
+| #7326 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `fdfa10937a5bd0fad3e9ad73a65174aec10c534e` |
 | #7330 | source_consolidation_exact | pending_on_open_successor | #7359 |
 | #7331 | source_consolidation_exact | pending_on_open_successor | #7359 |
+| #7335 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `fdfa10937a5bd0fad3e9ad73a65174aec10c534e` |
 | #7336 | source_consolidation_exact | pending_on_open_successor | #7359 |
 | #7337 | source_consolidation_exact | pending_on_open_successor | #7359 |
 | #7340 | source_consolidation_exact | pending_on_open_successor | #7359 |
