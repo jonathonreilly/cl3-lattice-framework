@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_affine_lineage_binary_record_join_2026_08_29.py
+runner_sha256: b6b662d46b18d64eeb35b9ff453e0aee2465a706bc50ed5ecb50ef5c28bde764
+input_fingerprint_sha256: 8f949451e3180eeef87f570191768df390815c3b7a8eb42344490c86c7677a96
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+PASS A_supplied_active_domain: active=24 with weight census {2: 12, 4: 12}; action/decoder selection remains supplied
+PASS B_effect_root_channel: symbolic projector roots are exact, effects complete, and active cross-effect is (1-u^2)I/4
+PASS C_solution_family: different u have different effect spectra; inactive zero-detector blocks retain I/4 cross-effect
+PASS D_conditional_positivity_bound: supplied resolvent estimates give final bound=2193749493000038667200/177556693536960624997803 < supplied gap 1/71
+PASS E_scope: parent response, physical realization, global uniqueness, and audit remain explicitly outside the result
+ACTIVE: count=24; weights={2: 12, 4: 12}; supplied_action=true.
+LAW: domain=0<u<=1; spectral_family=inequivalent; active_repeatability=u=1; inactive_cross=I/4.
+BOUND: endpoint=1e-9; exact=2193749493000038667200/177556693536960624997803; baseline_norms=supplied.
+MUTATION_CREDIT: none claimed; no mutation sweep executed.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

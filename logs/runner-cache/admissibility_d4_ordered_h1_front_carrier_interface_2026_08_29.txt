@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_ordered_h1_front_carrier_interface_2026_08_29.py
+runner_sha256: dbe56bae5bd5f962b66be24961f7788a198ba6067bdda147ae4384de8a1087a4
+input_fingerprint_sha256: d17b42187e71ad4019c0c7cdce03764cba7325d0b9271e5377cc6e22a2fc0720
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.88
+status: ok
+----- stdout -----
+PASS A_two_sector_algebra: central ranks are 16+16 and explicit matrix units give M2 direct-sum M2
+PASS B_cptp_multiplicity_trace: eight explicit C32-to-C4 Kraus selectors are complete and intertwine all three generators
+PASS C_carrier_covariance: two exact generators produce all 24 proper cubic carrier rotations and intertwine the multiplicity trace
+PASS D_fixed_frame_cylinders: fixed-frame enlarged-register protocol has sharp=(1/2, 0, 1/4, 1/4), half=(5/16, 3/16, 1/4, 1/4), and the stated shell overlap
+PASS E_stencil_covariance_counterexample: proper R fixes pure-permuted mask17 but flips its detector; branch residual rank is four
+PASS F_actual_fault_controls: rescaled Kraus, explicitly executed carrier reset, and changed branch-direction operands each fail their target identity
+PASS G_scope: physical encoding/readout, stencil covariance, full mutation sweep, and audit remain open
+ALGEBRA: word_rank=8; chirality_ranks=[16, 16]; carrier=M4.
+HISTORY_FIXED_FRAME: sharp=(1/2, 0, 1/4, 1/4); half=(5/16, 3/16, 1/4, 1/4); reset=(1/4, 1/4, 1/4, 1/4); spatial_encoding=supplied_open_bridge.
+COVARIANCE_BOUNDARY: pure_mask17=17; rotated_detector=(0, -1, 0); residual_rank=4.
+FAULT_CONTROLS: executed=3; rejected=3; full_mutation_sweep=false.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

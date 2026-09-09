@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_static_record_joint_law_curl_gate_2026_08_29.py
+runner_sha256: d797c9a4c4ed43d82fdce8a6cc2fab51063159a3c8d90b5390215763dd73a002
+input_fingerprint_sha256: 70aa2f598d77acf334ee9a40b57cb7cdb0367ab7bac24850dfccb8cc03d30760
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 1.82
+status: ok
+----- stdout -----
+PASS A_conditional_square_curl: nonneutral odds fail 4032/6144 squares; histogram={0: 2112, 1: 1152, -1: 1152, -2: 864, 2: 864}
+PASS B_neutral_exception: t=1 closes every square and is explicitly excluded from the obstruction
+PASS C_compatible_space: compatible log-odds form the four-dimensional constant-plus-axis-count space
+PASS D_active_pinning: equal active values kill all three axis slopes, leaving constants
+PASS E_germ_scope: the parent cubic coefficient is supplied and implies only a local punctured condition
+CURL: squares=6144; failing=4032; histogram={0: 2112, 1: 1152, -1: 1152, -2: 864, 2: 864}.
+COMPATIBLE: raw_rank=60/64; active_pinned_rank=63/64.
+DOMAIN: obstruction requires positive t!=1; supplied cubic gives only a sufficiently small punctured germ.
+MUTATION_CREDIT: none claimed; no mutation sweep executed.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_joint_action_quadrupole_six_m2_carrier_2026_08_29.py
+runner_sha256: a095f831e7da56b27b87f63545f768176ba355be24b58275001eeffb74afafc2
+input_fingerprint_sha256: 98428afba327dd3372a89d2f47e4158d648c6124f5098ec9c4ea9a38d415054a
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 13.49
+status: ok
+----- stdout -----
+PASS A_frozen_authority: parent, preregistration, main, axioms, Block-09, action source, and candidate Block-208 blobs match
+PASS B_exact_joint_decomposition: one odd-shell 3x3 matrix splits exactly as A1 rank 1 plus T1 rank 3 plus E+T2 rank 5, with a rank-nine positive-state preparation
+PASS C_exact_proper_cubic_covariance: the shell, scalar clock, spatial action vector, quadrupole, and raw matrix intertwine in all 24 proper-cubic frames
+PASS D_action_geometry_orthogonality: action coordinates leave the Block-09 law unchanged; it stays universally normalized/positive and Q=-48M exactly
+PASS E_exact_h1_joint_carrier: the same positive six-M2 shells decode H1 incoming/outgoing phases, forward/actual-reverse action vertices, and the native quadrupole source
+PASS F_exact_h2_heldout_joint_carrier: held-out H2 uses the identical gains and shells for exact phases, forward/actual-reverse action vertices, E+T2 source, and all frames
+PASS G_symbolic_nine_parameter_holdout: the exact rank-nine family survives all 512 vertices of the preregistered box with strict neighbor and corner positivity
+PASS H_joint_carrier_adjudication: the registered verdict is JOINT-CARRIER at condition-content level; causal preparation, Record attachment, and retained physics remain open
+MUTATIONS: rejected=32/32
+JOINT_MATRIX: F=(1/2)sum(v_n n^T); decomposition=A1(1)+T1(3)+E+T2(5); rank=9; kernel_even_shell=9.
+PREPARATION: v_n=-(1/2)Qn+(1/8)(s*n+u_cross_n); decode_Q=-2*STF(symF); decode_s=(8/3)trF; decode_u=8*axial(skewF).
+LAW: possibilities=6_axes+8_composite_corners; action_leakage=0; tau=1/24; floors=1/18,1/64; M=-Q/48; Q_source=-48M.
+H1: decode=true; forward=true; actual_reverse=true; max_neighbor_norm2=sqrt(2)/32 + 1139/2304; max_corner_norm2=sqrt(2)/36 + 1793/20736.
+H2: decode=true; forward=true; actual_reverse=true; max_neighbor_norm2=5*sqrt(6)/192 + 17*sqrt(3)/192 + 647/2304; max_corner_norm2=sqrt(6)/1152 + 7*sqrt(2)/216 + 127*sqrt(3)/3456 + 4483/41472.
+HOLDOUT: parameters=9; vertices=512; rank=9; max_neighbor_norm2=131/1024; max_corner_norm2=395/9216.
+ADJUDICATION: JOINT-CARRIER; condition_level_action_state_solder=true; causal_preparation=false; permanent_Record_attachment=false; law_selection=false.
+ACCOUNTING: formation_not_run=true; history_not_run=true; gravity_not_run=true; axiom_update=false; obligation_retirement=0; TOE_movement=0; retained=false.
+per_element: checked all 18 shell coordinates, nine decoded action/quadrupole coordinates, fourteen probabilities, H1/H2 phase ratios, and centered action vertices.
+per_site: checked the same six nearest-neighbor M2 contents for incoming and outgoing H1/H2 conditions; composite corners are mixtures, not diagonal sites.
+per_mode: checked scalar time, spatial vector, E doublet, T2 triplet, both Clifford orientations, and literal forward plus actual reverse.
+per_block: checked rank-nine decomposition, universal law orthogonality, H1, held-out H2, all 24 frames, and a 512-vertex open neighborhood.
+lattice_wide: checked and not executed — no causal preparation, instrument selection, readable/permanent Record write, formation rate, history, gravity, axiom edit, or retained TOE law is supplied.
+SCORECARD PASS=8 FAIL=0; MUTATIONS=32/32
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

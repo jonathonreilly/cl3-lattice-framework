@@ -151,6 +151,11 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    'admissibility_d4_frozen_h2_common_action_source_image_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_frozen_h2_common_action_source_image_2026_08_29.py'],
+    'admissibility_d4_common_spin2_source_module_six_bit_capacity_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_common_spin2_source_module_2026_08_29.py'],
+    'admissibility_d4_quantum_direction_corner_common_source_owner_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_quantum_quadrupole_common_source_owner_2026_08_29.py'],
+    'admissibility_d4_joint_action_quadrupole_six_m2_carrier_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_joint_action_quadrupole_six_m2_carrier_2026_08_29.py'],
+    'admissibility_d4_record_past_nondisturbing_causal_preparation_boundary_bounded_theorem_note_2026-08-29': ['scripts/independent_admissibility_d4_record_past_nondisturbing_causal_preparation_gate_2026_08_29.py'],
     "admissibility_finite_state_markov_completion_bounded_theorem_note_2026-08-14": [
         "scripts/frontier_admissibility_finite_state_markov_completion_independent_check_2026_09_09.py",
     ],

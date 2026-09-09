@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_joint_action_quadrupole_six_m2_carrier_2026_08_29.py
+runner_sha256: 4d16e0097147c332262675a66e2a3b5ca09c942a0e932377c94187bb73afcb17
+input_fingerprint_sha256: 4f13410e7abb813544cd4841d0b6b6c8edd156e5fd40281ac41c80a518c7a52c
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 1.02
+status: ok
+----- stdout -----
+PASS: exact joint scalar/vector/STF decoder | {'matrix_rank': 9, 'scalar_rank': 1, 'vector_rank': 3, 'spin2_rank': 5, 'sum_rank': 9, 'prepared_rank': 9, 'decode_identity': True, 'matrix_identity': True}
+PASS: conditional law excludes action scalar and skew sectors | {'condition': Matrix([
+[-q0/2, -q2/2,       -q3/2],
+[-q2/2, -q1/2,       -q4/2],
+[-q3/2, -q4/2, q0/2 + q1/2]]), 'condition_identity': True, 'probability_independence': True, 'moment_identity': True, 'source_identity': True, 'normalization': 1, 'universal_axis_floor': 1/18, 'universal_corner_floor': 1/64, 'universal_condition_rank': 5, 'universal_probability_rank': 5}
+PASS: all 24 joint rotation identities | 24
+PASS: exact H1/H2 incoming and outgoing coordinates | {'H1': (sqrt(2)/32 + 1139/2304, sqrt(2)/36 + 1793/20736, True, True), 'H2': (5*sqrt(6)/192 + 17*sqrt(3)/192 + 647/2304, sqrt(6)/1152 + 7*sqrt(2)/216 + 127*sqrt(3)/3456 + 4483/41472, True, True)}
+PASS: all 512 original box vertices | (131/1024, 395/9216)
+PASS: actual positive-direction Jacobian | (9, 3/16384)
+TOTAL: 6 passed, 0 failed
+per_element: exact finite matrix, coefficient or probability predicates named above were executed.
+per_site: supplied six-neighbor condition identities only; no generated physical-site update executed.
+per_mode: checked and not executed — no universal momentum or dynamical mode campaign is claimed.
+per_block: finite conditional source, carrier or channel scope is exactly the named predicates above.
+lattice_wide: checked and not executed — no whole-stencil dynamics, infinite history or physical selection is claimed.
+
+----- stderr -----
+

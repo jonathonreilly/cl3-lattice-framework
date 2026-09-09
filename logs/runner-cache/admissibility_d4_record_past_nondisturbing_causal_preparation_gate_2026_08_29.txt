@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_record_past_nondisturbing_causal_preparation_gate_2026_08_29.py
+runner_sha256: b5487871dd88ae44d94e69210674eae9f33770d874e26c294c6c0d0f92e1ab8d
+input_fingerprint_sha256: 13135a1d1a60a4713cebcff9cd15d42318c3cdd53943609454391901b9f5716a
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+PASS: open nine-parameter maximally mixed anchor | (9, 3/16384)
+PASS: pair differences generate full six-site algebra | (16, 4096)
+PASS: rank-one identity Choi support forces constant complement | {'bistochastic_anchor': True, 'fixed_tangent_rank': 9, 'fixed_algebra_dimension': 4096, 'identity_choi_rank': 1, 'identity_choi_trace': 64, 'off_diagonal_minor': -beta**2, 'kraus_span_nullity': 1, 'pure_marginal_forces_product': True, 'constant_complement_rank': 0, 'target_complement_rank': 9}
+PASS: even shell cannot remove variable odd target | {'odd_decoder_unchanged': True, 'target_rank': 9, 'full_rank': 18, 'even_count': 9}
+PASS: orthogonal classical CNOT escape | {'unitary': True, 'zero_copy': True, 'one_copy': True, 'orthogonal': True, 'open_nine_parameter': False}
+PASS: actual approximate clone relaxed-premise channel | {'tp': True, 'marginal_shrink': True, 'identity': True, 'shrink': 2/3, 'exact_copy': False, 'prefix_safe': False}
+TOTAL: 6 passed, 0 failed
+per_element: exact finite matrix, coefficient or probability predicates named above were executed.
+per_site: supplied six-neighbor condition identities only; no generated physical-site update executed.
+per_mode: checked and not executed — no universal momentum or dynamical mode campaign is claimed.
+per_block: finite conditional source, carrier or channel scope is exactly the named predicates above.
+lattice_wide: checked and not executed — no whole-stencil dynamics, infinite history or physical selection is claimed.
+
+----- stderr -----
+

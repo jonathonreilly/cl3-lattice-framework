@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_common_spin2_source_module_2026_08_29.py
+runner_sha256: 568a1a4068ded5eb418c210fb21b23fff1ab9f06bda55954fd8f198b1991856b
+input_fingerprint_sha256: 256aac259efae5f0d67f03298bfdecdee61c62c497450d78d737c8d4d8a14c18
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 19.10
+status: ok
+----- stdout -----
+PASS A_independent_authority: main, parent, preregistration, and axiom identities match
+PASS B_independent_fixture_sections: constraint-nullspace TT reconstruction reproduces both exact source vectors
+PASS C_independent_minimal_module: cyclic spans independently give H1 rank 3, H2/common rank 5, intersection 3, exactly E+T2
+PASS D_independent_source_injectivity: independently rebuilt forward and actual-reverse maps have full rank ten and common-module rank five
+PASS E_independent_affine_orbits: direct affine-action enumeration gives eight mask orbits and exactly one free orbit, representative 5
+PASS F_independent_capacity_wall: two distinct trivial-stabilizer target orbits require two free domain orbits, while six bits supply one
+PASS G_independent_scope: the result is limited to the frozen six-bit deterministic equivariant source decoder
+MUTATIONS: rejected=22/22
+INDEPENDENT_MODULE: ranks=H1:3,H2:5,common:5; intersection=3; trace=0.
+INDEPENDENT_CAPACITY: orbit_sizes=(24, 12, 6, 6, 6, 4, 4, 2); free=(5,); H1/H2_stabilizers=1/1; verdict=MODULE-ONLY.
+SCORECARD PASS=7 FAIL=0; MUTATIONS=22/22
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

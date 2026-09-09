@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_ordered_h1_front_carrier_interface_2026_08_29.py
+runner_sha256: 6ac5ce3e67613eaf1449fd7f77e7135b7011305186fb1fa9e94212f99e690789
+input_fingerprint_sha256: e28a9f84f93772a3c254bfd3657602fef83fb1afe8004496a23b07889cbcf33a
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+PASS A_primary_identity: primary cache matches current primary source
+PASS B_independent_sector_algebra: independent M4 matrices have two central rank-two sectors and Clifford anticommutation
+PASS C_independent_cylinders: direct traces give sharp=(1/2, 0, 1/4, 1/4) and half=(5/16, 3/16, 1/4, 1/4)
+PASS D_covariance_boundary: pure shell action fixes mask17 while detector transport flips sign, giving rank-four residual
+PASS E_fault_witness: an explicitly executed reset-to-I4/4 protocol removes the sharp correlation
+INDEPENDENT_HISTORY: sharp=(1/2, 0, 1/4, 1/4); half=(5/16, 3/16, 1/4, 1/4); reset=(1/4, 1/4, 1/4, 1/4).
+INDEPENDENT_SCOPE: enlarged_register=supplied; whole_stencil_covariance=false; physical_bridge=open.
+FAULT_CONTROLS: executed=1; rejected=1; full_mutation_sweep=false.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+
