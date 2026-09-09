@@ -22,6 +22,8 @@ Next original reviews: #7837 action/transfer/Record hazards; #7836 records-first
 
 Older-stack routing: #6009 contains eight exact authored paths from each of #5964/#5963/#5961/#5959/#5954 and eight of ten from #5965/#5955. The latter two also carry an event-space helper/receipt absent at that head; preserve and review those extras. #5957 is not covered. This is a proposed review family, not a closure or science verdict. Exact routing is in `backlog_evidence/next-routing-20260909`.
 
+#7753 is held at its current scope: actual Block171 calls and41byte-matched downstream sources reach all three reserved PRs. The source remains open/intact; this dependency routing is not a mathematical rejection or acceptance. Action7837, records-Haar7836 and diagonal-adjacency7870 are now in bounded author correction with original reviewers retained.
+
 ## Landed source history
 
 | Landed unit | Main commit | Evidence |

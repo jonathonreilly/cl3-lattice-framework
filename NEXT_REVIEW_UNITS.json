@@ -5548,10 +5548,14 @@
       "reviewer": "backlog_draft_triage",
       "model": "gpt-6-astra",
       "reasoning": "low",
-      "science_review_status": "complete_original_review_in_progress_material_findings_received",
+      "science_review_status": "original_complete_six_findings_author_active",
       "current_main": "a917b8f7422bb420e599b37e3562505e77de1da5",
       "evidence": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-records-haar-7836-review",
-      "next_step": "Complete original argument and provenance review, correct material findings in isolated author unit, original reviewer confirms before next combined train. No audit."
+      "next_step": "Complete original argument and provenance review, correct material findings in isolated author unit, original reviewer confirms before next combined train. No audit.",
+      "repair_status": "author_active",
+      "author_worker": "backlog_vortex_repairs",
+      "author_model": "gpt-5.6-sol",
+      "author_reasoning": "max"
     },
     {
       "unit_id": "diagonal_adjacency_7870",
@@ -5570,6 +5574,22 @@
       "author_worker": "backlog_batch_contract",
       "author_model": "gpt-5.6-sol",
       "author_reasoning": "max"
+    },
+    {
+      "unit_id": "joint_pin_7753",
+      "prs": [
+        7753
+      ],
+      "active": false,
+      "science_review_status": "held_actual_reserved_import_dependency_routing_only",
+      "current_main": "a917b8f7422bb420e599b37e3562505e77de1da5",
+      "reserved_dependencies": [
+        6379,
+        6858,
+        6859
+      ],
+      "evidence": "backlog_evidence/next-routing-20260909/backlog-7753-reserved-routing-20260909.json",
+      "next_step": "Keep PR/head intact. Current full unit uses Block171 Site/Env;41 exact transitive imported sources reach reserved science. No source PASS, audit or scope rejection. Revisit only with authorized premise change or separately specified independent reformulation."
     }
   ],
   "current_main": "a917b8f7422bb420e599b37e3562505e77de1da5",
