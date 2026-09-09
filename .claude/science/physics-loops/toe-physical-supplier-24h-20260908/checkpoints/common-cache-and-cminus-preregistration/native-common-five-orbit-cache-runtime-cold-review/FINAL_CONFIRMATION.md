@@ -1,0 +1,3 @@
+# Residual gate correction confirmation
+
+PASS source-only for runtime a51a6b8e16d087dc82182c4a34d1251b5b96434901487d93cf52d25b1965ff9a. All runtime pins rechecked. Only worker executable delta restores2*maximum residual entry; binder, dispatcher, cache/core/interval, binding and protocol unchanged. This restores the exact prior2x2 operator gate and closes the concrete initial blocker. Original a5e and this review preserved. Author recorded repeated accepted-input readiness with zero matrix calls; reviewer performed only source/hash and exact tiny counterexample checks. Native execution remains disabled pending prospective cost/contract/root review. No actual matrix coefficient or cache evaluated.

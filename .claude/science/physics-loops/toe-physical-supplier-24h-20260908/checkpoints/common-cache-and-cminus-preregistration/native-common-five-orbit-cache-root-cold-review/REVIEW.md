@@ -1,0 +1,9 @@
+# Actual common cache monitor cold review
+
+PASS source/schema, frozen130cf27ed8d03bf2d17e02d911ec77557b3fc3dab8df8bb23a172702b1e77ad1. Complete monitor/schema read against worker output and prior e37 monitor review. Root pins checked; no native/cache/coefficient call.
+
+Single-root/current child group topology, strict flags, verified schema bytes, complete worker source pins and loaded-origin checks are retained. Root startup clock and59.5 signal cover hashing, worker and schema;59-second worker bound and60-second external study apply. Fresh output/exclusive marker and current-group cleanup preserve one attempt. RSS is sampled for current root/descendants; external full-shell receipt remains required. Failure after attempt preserves stdout/stderr/receipt. Pre-start guard failures remain externally logged.
+
+New schema validates52536 pairs/660rows,132 P/O coefficients, all five396/792 orbit records, full ordered coverage, cumulative width/count, streamhashes, positive determinant,2x2 interval shape/zero inclusion and the restored factor2 inverse-residual gate. It recomputes allfive traces and the common arithmetic radius, matches final partial and nested finite timing/RSS, and preserves midpoint-only scope. It does not recompute inverses or physical entries; their producer proof/input review remains necessary. STARTED is tied to worker source/binding; runtime authorization is independently hash-bound by root pins and checked by worker.
+
+Actual source schema tested using fabricated zero cache/coefficients with all expected shapes, not a matrix computation. Eight controls passed including rehashed residual factor2/trace corruption, finite-resource/source failures, partial mismatch and rehashed truncated stream. No actual cache/core coefficients or native scalar inputs were evaluated. No changes requested.
