@@ -1,0 +1,45 @@
+{
+  "rows": [
+    {
+      "name": "baseline",
+      "exit": 0,
+      "stdout": "{\"case\": {\"mask\": \"3\", \"center\": 36, \"source\": \"adjacent\", \"gap_lower\": \"4321905502367014392586020347504039658545130067991/10954071644573079271025000000000000000000000000000\", \"singleton\": null}, \"actual\": \"4321905502367014392586020347504039658545130067991/10954071644573079271025000000000000000000000000000\", \"bits\": 69}\n",
+      "stderr": ""
+    },
+    {
+      "name": "wrong_native_normalization",
+      "exit": 1,
+      "stdout": "{\"case\": {\"mask\": \"3\", \"center\": 36, \"source\": \"adjacent\", \"gap_lower\": \"4321905502367014392586020347504039658545130067991/10954071644573079271025000000000000000000000000000\", \"singleton\": null}, \"actual\": \"1419932971961068795399889770347504039658545130067991/5477035822286539635512500000000000000000000000000\", \"bits\": 69}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-native-l6-sixth-prefix-gap-certificate-20260908/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/worker.py\", line 13, in <module>\n    if gap!=F(case['gap_lower']):raise ValueError('actual arithmetic disagrees with exact source row')\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: actual arithmetic disagrees with exact source row\n"
+    },
+    {
+      "name": "wrong_inverse_term",
+      "exit": 1,
+      "stdout": "{\"case\": {\"mask\": \"3\", \"center\": 36, \"source\": \"adjacent\", \"gap_lower\": \"4321905502367014392586020347504039658545130067991/10954071644573079271025000000000000000000000000000\", \"singleton\": null}, \"actual\": \"-3146879873886325443044913979652495960341454869932009/10954071644573079271025000000000000000000000000000\", \"bits\": 69}\n",
+      "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-native-l6-sixth-prefix-gap-certificate-20260908/.claude/science/physics-loops/native-l6-sixth-prefix-gap-certificate-20260908/SEMANTIC_CONTROLS/worker.py\", line 13, in <module>\n    if gap!=F(case['gap_lower']):raise ValueError('actual arithmetic disagrees with exact source row')\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: actual arithmetic disagrees with exact source row\n"
+    },
+    {
+      "name": "singleton_actual",
+      "actual": "346410161513775458705489268301/100000000000000000000000000000",
+      "matches": true
+    },
+    {
+      "name": "singleton_unrestricted_parity",
+      "actual": "0",
+      "matches": false
+    },
+    {
+      "name": "CLI --unknown-control",
+      "exit": 2,
+      "stdout": "",
+      "stderr": "usage: native_l6_sixth_prefix_gap_certificate_2026_09_08.py [-h] [--json]\nnative_l6_sixth_prefix_gap_certificate_2026_09_08.py: error: unrecognized arguments: --unknown-control\n"
+    },
+    {
+      "name": "CLI --json=wrong",
+      "exit": 2,
+      "stdout": "",
+      "stderr": "usage: native_l6_sixth_prefix_gap_certificate_2026_09_08.py [-h] [--json]\nnative_l6_sixth_prefix_gap_certificate_2026_09_08.py: error: argument --json: ignored explicit argument 'wrong'\n"
+    }
+  ],
+  "seconds": 0.6376586670521647
+}

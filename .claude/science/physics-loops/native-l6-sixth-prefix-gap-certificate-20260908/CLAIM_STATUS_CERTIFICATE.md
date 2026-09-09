@@ -1,0 +1,13 @@
+# Claim Status Certificate
+
+actual_current_surface_status: conditional-support
+conditional_surface_status: "Supplied finite L6 model and six declared supports; complete isolated arithmetic replay accepted."
+proposal_allowed: false
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+
+## Accepted portable execution
+
+Canonical author packet complete for root review. Corrected isolated portable replay at source freeze55f225 passed all6489 exact rows,7148 keys,31 overlaps and7 singleton cases. Exact output SHA f5d492fe28aee6d2e24c60d091f1f4485ea11d0144fb4331b93c4eb84adb6090. Accepted charge95.19 seconds includes47.59 prior; corrected run47.60s,103596032-byte process RSS,121290752-byte observed tree. Earlier5bb mathematical completion/runtime-closure failure remains preserved and is not called a clean PASS. Separate seven semantic/CLI groups passed in0.80s,50003968-byte process RSS,98664448-byte tree. All12 scientific input bytes and SOURCE_FREEZE55f225 remain unchanged. No coefficient, all-flux or bulk claim. No graph, commit, push or PR action by author; root owns integration.
