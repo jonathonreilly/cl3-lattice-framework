@@ -1,0 +1,9 @@
+# Proposed cost pilot and full contract — UNLAUNCHED
+
+First implement a separately owned rank-four rational evaluator, retaining the old adjacent code unchanged. Before physical gap evaluation, check exact integer deltaB and Gram factorization and exact shifted-baseline polynomial identity. Bind interpreter, evaluator and all census/source inputs.
+
+Proposed pilot: fixed representatives003,012,023,122,223 in that order. For each representative and each prefix order1,2,3,4,5, select lexicographically first used-edge tuple that is not a singleton cut:25 fixed rows, selected from geometry only. Preserve duplicate masks and every signed lower bound, even indeterminate. Execute under30s/384MiB with external watchdog; record baseline construction separately from per-row updates, denominator bit lengths and exact inverse residual controls. This pilot is not authorized or executed by this packet.
+
+After pilot review, proposed full coverage is4986 distinct masks (including six separately handled singleton parity cases), fixed increasing integer-mask order. Use52 deterministic shards of at most96 masks; keep all5110 DP-key references to those results. A new implementation may reuse the31 old masks only after literal receipt matching; the default proposal recertifies all for simpler closure. Every nonpositive bound remains indeterminate, with no retuning c or replacing rows.
+
+A prospective full envelope could be1200 seconds aggregate and180s/384MiB per shard, subject to a pilot forecast with headroom and root approval. The prior adjacent67.95s/1534 total suggests roughly221s by count scaling, but that is not a measured rank-four forecast: baseline startup52 times, rational denominator growth, verification and output must be priced explicitly. Do not launch from this rough comparison. Include all current pilot/geometry charges in the eventual declared aggregate accounting and freeze actual shard membership before data.

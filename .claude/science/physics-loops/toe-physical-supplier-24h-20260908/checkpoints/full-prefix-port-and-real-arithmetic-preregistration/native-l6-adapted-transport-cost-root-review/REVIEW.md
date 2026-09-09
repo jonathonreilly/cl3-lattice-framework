@@ -1,0 +1,5 @@
+# Root adapted transport cost authorization — UNLAUNCHED
+
+Root read actual transport blocks/apply, adapted-frame derivation and full two-action driver/protocol. Source194b unchanged; independent cold2b90ef confirms all531pins and selected index8 exactmetadata. Independent actual tiny top19/20 and signed exterior checks support implementation. The two fixed actual-length calls apply index8 to parity0 and1. They measure candidate arithmetic cost only: no composition, normcertificate, CG or sourceassembly is inferred.
+
+One30second384MiB whole-tree attempt after remotecheckpoint; strict-I-B/all five thread flags1, root process-group watchdog29.5seconds and /usr/bin/time -lp, internal29alarm. Imports/hashes/init/two full actions/lossless array save-reload+hash/partials/final JSON included. Retain failures, no retry. Exactsourcehash required by root and child. Final external receipt reconciliation required. Independent coordinate correctness replay reserved before any candidate correctness claim; this cost-onlyrun does not supply it.

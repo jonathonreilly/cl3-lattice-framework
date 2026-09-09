@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-l6-exact-norm-scanner/run.py", line 17, in <module>
+    loaded_guard()
+  File "/private/tmp/toe-24h-probes-20260908/native-l6-exact-norm-scanner/run.py", line 16, in loaded_guard
+    if path not in f['inputs'] or sha(path)!=f['inputs'][path]:raise ValueError('loaded module origin/hash '+path)
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: loaded module origin/hash /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/_distutils_hack/__init__.py

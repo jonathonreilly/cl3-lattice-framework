@@ -1,0 +1,18 @@
+{
+  "valid_preflight": "PASS: 12 predicates, stdout preserved in tool transcript",
+  "strict_flag_rejections": [
+    {
+      "flags": [],
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-nonadjacent-fullscan-design/preflight.py\", line 3, in <module>\n    P=Path(__file__).resolve().parent;c=runpy.run_path(str(P/'common.py'));c['verify']();c['loaded_numpy']();checks=2\n                                                                           ^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-nonadjacent-fullscan-design/common.py\", line 12, in verify\n    ck(sys.flags.isolated and sys.dont_write_bytecode,'requires -I -B')\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-nonadjacent-fullscan-design/common.py\", line 6, in ck\n    if not x:raise ValueError(m)\n             ^^^^^^^^^^^^^^^^^^^\nValueError: requires -I -B\n"
+    },
+    {
+      "flags": [
+        "-I"
+      ],
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-nonadjacent-fullscan-design/preflight.py\", line 3, in <module>\n    P=Path(__file__).resolve().parent;c=runpy.run_path(str(P/'common.py'));c['verify']();c['loaded_numpy']();checks=2\n                                                                           ^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-nonadjacent-fullscan-design/common.py\", line 12, in verify\n    ck(sys.flags.isolated and sys.dont_write_bytecode,'requires -I -B')\n  File \"/private/tmp/toe-24h-probes-20260908/native-l6-nonadjacent-fullscan-design/common.py\", line 6, in ck\n    if not x:raise ValueError(m)\n             ^^^^^^^^^^^^^^^^^^^\nValueError: requires -I -B\n"
+    }
+  ],
+  "no_gap_calls": true
+}
