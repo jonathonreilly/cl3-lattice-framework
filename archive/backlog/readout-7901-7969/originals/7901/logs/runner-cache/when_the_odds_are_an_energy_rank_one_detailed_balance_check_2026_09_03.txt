@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/when_the_odds_are_an_energy_rank_one_detailed_balance_check_2026_09_03.py
+runner_sha256: 232c52df250cd83901c84c06f625452cee8378db0e3f9e5f38ff41be5d42d863
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 2.82
+status: ok
+----- stdout -----
+PASS A1 [exact] occurring (c, D) cells, by complete enumeration over the L = 8 torus: DIMER 18 cells over 12240 unblocked proposals, D in [-1, 0, 1], m_t in [0, 1]; 3-record 36 cells over 4672620 proposals (all 130305 {0,x,y} representatives), D in [-2, -1, 0, 1, 2], m_t in [0, 1, 2]; 9 conditions (m_s, s) for table C'
+PASS A2 [exact] TABLE A, separable by construction: M_rel is EXACTLY RANK ONE over Q on the dimer (12x3) and on 3-record groups (18x5), at h = 0 and h = 1 alike, sigma_2/sigma_1 <= 1.302410e-16, with the exact temperature ladder T(c) = 1/beta(c) = 2/5, 1/2, 8/15, 2/3, 4/5, 1
+PASS A3 [exact] TABLE B, PR #7899's Metropolis rule: M_rel is EXACTLY RANK ONE on both groups at h = 0 and h = 1 (sigma_2/sigma_1 <= 4.602077e-17) with the SAME beta = g at all 18 conditions, so one temperature T = 1/g -- a field in the PROPOSAL never enters the cost matrix
+PASS A4 [exact] TABLE C, non-separable by construction: on 3-record groups M_rel has EXACT RANK 2 over Q at h = 0, sigma_2/sigma_1 = 3.411710e-02, rank-one residual 3.409726e-02, and rank 4 at h = 1 (1.426295e-01): no beta(c) x E(D) exists, so no energy and no temperature
+PASS A5 [exact] TABLE C', the same family keyed to the MOVER's own neighbourhood: M_rel is 9x5 of EXACT RANK 2, sigma_2/sigma_1 = 5.018675e-02 at kappa = 1/2 and 1.304845e-01 at kappa = 1, rank 4 at h = 1 (2.224582e-01) -- the departure grows with the declared kappa
+PASS A6 [exact] WHICH energy: in all 9 rank-one cases the factorisation in the gauge E(D = +1) = 1 gives E(D) = max(0, D) -- E(-2) = E(-1) = E(0) = 0, E(+1) = 1, E(+2) = 2 -- a ONE-SIDED BARRIER, not the configuration energy: the odds say nothing about the downhill half of the move set
+PASS A7 [exact] TWO TRAPS. (i) A DIMER CANNOT RUN THIS TEST: D in {-1, 0, +1} makes D^2 = |D|, so table C is EXACTLY RANK ONE there (sigma_2/sigma_1 = 0.000000e+00) with a plausible T = 2/3, 1; three records are needed. (ii) Leave ln p_prop in and even table C gives 4.032337e-02, so subtract the D = 0 column
+PASS B1 [exact] the CYCLE CENSUS, complete where stated: 56454 distinct 4-cycles of the 1022-state even-translation dimer chain, 1524 of the 511-state relative chain, 504 winding cycles of length L = 8, and the declared subgraph of 1620 trimer 4-cycles on absolute configurations
+PASS B2 [exact] TABLE A -- RANK ONE GIVES NO GIBBS STATE: cycle products fail by exactly nu = 1/4 on the dimer chain (2.500000000000001e-01) and the trimer chain (2.500000000000001e-01), winding clean (2.2e-16); the stationary law (|pi P - pi| = 1.0e-17) misses e^{-g B} by 1.199957e-01
+PASS B3 [exact] TABLE B at h = 0 -- BOTH tests pass: every cycle product is 1 to machine zero on all four chains (dimer 0.0e+00, relative 0.0e+00, winding 0.0e+00, trimer 2.2e-16) and the law is exactly pi ~ e^{-g B} (1.5e-14, |pi P - pi| = 3.2e-17). Here the odds ARE an energy
+PASS B4 [exact] TABLE B WITH A FIELD -- A GIBBS LAW IS NOT SUFFICIENT: at h = 1 the odds matrix is still rank one and the law still exactly Gibbs (2.4e-14), yet cycle products fail by exactly 4h = 4.000000000000000 on the dimer chain and L h = 8.000000000000000 on the winding cycles: a DRIVEN steady state
+PASS B5 [exact] TABLE C at h = 0 -- DETAILED BALANCE GIVES NO RANK ONE: at kappa = 1/2 every cycle product is 1 (dimer 0.0e+00, relative 0.0e+00, winding 0.0e+00, trimer 2.2e-16) and the law is exactly Gibbs (1.5e-14) while the odds matrix is rank 2: a symmetric kappa D^2 BARRIER cancels in every ratio
+PASS B6 [exact] TABLE C' -- a crowding barrier keyed to the MOVER does break detailed balance: over the 1620 declared trimer 4-cycles at h = 0 the defect is exactly 4 kappa -- 0.000000000000, 1.000000000000, 2.000000000000, 4.000000000000 at kappa = 0, 1/4, 1/2, 1 -- and 2.000000000000 at g = 2, coupling-independent
+PASS B7 [exact] THE LUMPING TRAP: at h = 1 the translation-reduced relative chain PASSES (2.2e-16) and so does the declared trimer subgraph (3.3e-16) while the unlumped chain fails by 4h (4.000000) and the winding cycles by L h (8.000000): a 4-cycle test on a reduced chain is not a detailed-balance test
+PASS C1 [exact] TABLE B on the bent trimer: its 18 proposals split 4 null, 2 at D = 0, 8 at D = +1, 4 at D = +2, and both break channels carry the COMMON SLOPE a(D)/D = g at g = 1, 2, 4 (1.000000000000, 2.000000000000, 4.000000000000): Arrhenius holds
+PASS C2 [exact] TABLE C' on the bent trimer: every D = +1 break is an END record (m_s = 1) so a(1) = g, every D = +2 break the CENTRE (m_s = 2) so a(2) = 2g + 4 kappa; the van 't Hoff gap a(2)/2 - a(1) = 2 kappa EXACTLY, 1.000000000000 at g = 1, 2, 4 for kappa = 1/2 and 2.000000000000 for kappa = 1
+PASS C3 [exact] the bent trimer's lifetime under C' is 18/(8 e^{-g} + 4 e^{-2g - 4 kappa}), matched by the enumerated proposals to 0.0e+00: 5.967579958344 ticks at g = 1, kappa = 1/2 against PR #7899's 5.165916817967, 16.474505674194 against 15.571677528219, 122.693773845084 against 121.731046628774 at g = 2 and 4
+PASS C4 [exact] THE NULL RESULT: table C, keyed to the TARGET's crowding, is Arrhenius on the bent trimer at EVERY kappa (a(1) = a(2)/2 = 1.000000000000 at kappa = 0, 1/2, 1) because all 12 of its breaking proposals land on a site with no occupied neighbour (m_t = 0), so C's rank-2 signature lives in the re-binding moves alone
+PASS C5 [exact] THE TWO DISCRIMINATORS, a factor of two apart: the Kolmogorov defect is 4 kappa and the van 't Hoff gap 2 kappa, so defect = 2 x gap exactly -- 2.000000000000 against 2 x 1.000000000000 at kappa = 1/2, 4.000000000000 against 2 x 2.000000000000 at kappa = 1; the rank-one departure 5.018675e-02 is the third
+PASS D1 [exact] CONSISTENCY with PR #7899, dimer: table B reproduces 2 e^{g}(5 + e^{h})/(9 + e^{h}) aligned and e^{g}(5 + e^{h})/(4 + e^{h}) transverse over six (g, h) cells to 2.22e-16 relative -- both (6/5) e^{g} at h = 0 -- and 6/(6 + 505 e^{-g}) to 1.94e-16 AT EVERY h (|pi P - pi| <= 6.0e-17)
+PASS D2 [exact] CONSISTENCY with PR #7899, bent trimer: with the 1/n record-choice factor and D = B(new) - B(old) = A(old) - A(new) both as declared, table B returns 18/(8 e^{-g} + 4 e^{-2g}) to 1.78e-15 -- 5.165916817967, 15.571677528219, 121.731046628774 ticks at g = 1, 2, 4
+SUMMARY: the odds are an energy only when the odds matrix is rank one AND every cycle product is 1; neither gives the other, and a Gibbs resting law gives neither.
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

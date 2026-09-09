@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04.py
+runner_sha256: b4ebafbdae8efaa9deaeab407c2da0c67de644b68703caa89331ced6270415b8
+input_fingerprint_sha256: 505cffef0ebfc879cc53416c65d55607e00db8c4c58851916c4485bfad2ae6fb
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 64.25
+status: ok
+----- stdout -----
+PASS T1 (i) provenance of the pi-flux sea against the determinantal note | 6^3 twist (0, 0, 0) E=-258.857540 gap=3.464102 max|P|sep1=0.199736; 8^3 twist (1, 1, 1) E=-611.811768 gap=2.651309 max|P|sep1=0.199157; 12^3 E=-2063.196887 gap=1.793151; max|P_vv-1/2| <= 1e-13
+PASS T2a (ii) cubic-group content of the readable statistics (proper rotations O, order 24) | site A1; axis-bond pairs A1+E; face-diagonal pairs A1+E+T2; metric h_ij A1+E+T2; all ten 3A1+2E+T2 -- T2 is carried by the face-diagonal pairs only
+PASS T2b (iii) G1's endpoint-mean edge-length map delta l_e/l_0 = w^T h w/(2|w|^2) at first order | axis rows rank 3 and give h_aa/2 and nothing else (shear columns exactly 0); face-diagonal rows rank 6; both rank 6; (dl_{x+y}-dl_{x-y})/l_0 = 0.707107 E_xy = h_xy: a shear changes no axis edge
+PASS T2c (iv) the diagonal TT projection rank is kinematic at nonzero k: a TT tensor with zero diagonal exists iff k1k2k3 = 0 | on pure T2 h, transversality is [[k2,k3,0],[k1,0,k3],[0,k1,k2]](a,b,c)=0, det = -2k1k2k3 to 3.6e-15 over the 25 declared momenta; dim(TT n T2) = 1 on every coordinate plane, 0 off it; sv(diag.TT) = (0.833, 0.238) at 12^3 (1,2,3)
+PASS T3a (vi) the declared dressing t_e = t(1 - h_e) never couples to a shear: the T2 columns of R(k) are identically zero | T2max = 0.0e+00 over 85 (torus, sea, momentum) triples on 6^3/8^3/12^3, pi-flux m in {0,1} and the zero-flux control; rank(R) = rank(diagonal columns) = 3, and 2 where an endpoint-mean factor vanishes
+PASS T3b (vi) the original sampled R(k) TT ranks are 2/1 on the selected off-plane/plane rows of 6^3, 8^3, 12^3, both masses | in this original sample only; on its selected coordinate-plane momenta R(k)T_cross is exactly zero (max 0.0e+00): the cross polarisation has no response at all there
+PASS T3c (vi) finite conditioning: sampled largest TT singular values only; s_min/s_max tracks the kinematic plane distance | s_max in [0.0126, 0.0304] over the declared momenta with no endpoint-mean zero; plus mode at (1,0,0): 0.030359, 0.029903, 0.030351 for L = 6, 8, 12; (1,1,1): 0.013664, 0.015532, 0.016876; 12^3 (1,2,3): s_min/s_max 0.2924 (m=0), 0.2855 (m=1) vs kinematic 0.2862, 1.0000 on the body diagonals; 8^3 0.2256, 0.2502
+PASS T3d (x) the endpoint-mean factor (1 + e^{ik_b})/2 vanishes at k_b = pi and removes h_bb exactly | 6^3 n = (1,2,3): |(1+e^{ik_b})/2| = 0.866, 0.500, 6.1e-17 and column norms 0.00727, 0.00910, 2.9e-18, rank 2; the neighbouring n = (1,2,5) has rank 3
+PASS T4 (5.2) fixed zero-input consequence for the selected statistics: the three-site corner statistic and the plaquette joint occupation det P_S have zero shear response | T2max = 0.0e+00 on 8^3 and 12^3, m in {0,1}, at n = (1,0,0) and (1,2,3); the diagonal response is alive: plaquette to 7.180e-03, three-site to 5.574e-04
+PASS T5 (viii) the tested projected sublattice cancellation is confined to the uniform part of the SITE statistic | metric polarisations: site@0 <= 3.5e-18 everywhere, axis-bond pair response >= 8.413e-03; ruler scalar H(alpha,1) at 12^3 n=(1,0,0): site@0 <= 1.3e-18, bond average <= 9.7e-19 at (1,1) and (2,1), both masses; staggered site@Q = 0.1590 at (2,1) m=1; axis pair 1.098e-02
+PASS T6 (vii) the finite pi-flux spectral support zero: connected face-diagonal covariances, carrying T2 under full translations, have zero first derivative | the two two-step paths around a plaquette carry opposite KS signs, so max|(M^2)_{v,v+fd}| = 0.0 against 2.0 at zero flux; hence max|P_fd| <= 3.4e-16 and max|dC_fd| <= 3.9e-18 at m = 0 and 1; the zero-flux control at m = 1 is alive: C0_fd = 7.15e-04, dC_fd = 8.16e-04
+PASS T7a (ix) finite Fourier leakage and rotated-momentum singular spectra of the conditional occupation statistics | response outside the shifts {0, Q} <= 2.5e-17, pair statistics at Q <= 1.1e-17; TT singular values agree across the three axis momenta and across the three face-diagonal momenta to <= 1.4e-17 on all three tori, both masses
+PASS T7b (v) uniform shear and 24 period-two coefficient classes have one T2 intertwiner, unique up to scale | uniform axis-bond modulations carry A1+E and no T2; the 24 period-2 axis-bond classes carry 3A1+A2+4E+3T1+T2, one T2; the intertwiner space is 1-dimensional and equals delta t_c = kappa h_ab (-1)^{v_c}[(-1)^{v_a} - (-1)^{v_b}], (a,b,c) cyclic, to 6.7e-16; face-diagonal bonds carry T2 uniformly (A1+E+T2), and the adjacency has none
+PASS T7c (xi) SUPPLIED period-2 coupling added to the declared dressing: all six polarisations, and both continuum TT modes at the selected momenta, have nonzero response | rank(R) = 6 and TT rank 2 at all 27 (torus, mass, momentum) triples on 8^3 and 12^3; 12^3 m=1 (1,0,0): TT sv 0.027929, 0.027220 (ratio 0.9746); sampled spectral discrepancy <= 2.4e-17; at m=0 the small positive sixth sv 4.5e-06 has approximate direction (0.98,1.00,1.00,0,0,0) at NONZERO k, not an exact uniform dilation null vector
+PASS T7d (xii) the supplied curl retains rank one in the axis and (1,1,0) examples: bonds parallel to the plus mode's | |cos| between the curl(cross) and the declared-plus bond amplitudes = 1.000000 at (1,0,0), 1.000000 at (1,1,0), 0.999736 at (1,2,0); TT rank stays 1 on the axis (s_min 5.8e-18); the residual 4.1e-04 at (1,2,0) is a finite second response; C2 below tests its rank lift
+SUPPLIED, not derived: the fermion law; the pi-flux sea, KS pattern, twist rule and m; beta = 1 (supplied); the endpoint-mean rule; the pair-statistic reading of an edge length; kappa. Runtime 64 s.
+PASS C1 endpoint means lower the nonzero-component TT response rank | L6,m1 n333/n331 ranks=[0, 1] sv=[[1.0784370597547667e-17, 1.0784370597547659e-17], [0.01483337919654976, 1.4896049193759099e-18]]; absolute floor1e-14
+PASS C2 actual centered curl is a finite supplied rank-lifting alternative | n120 declared=1/[0.01952990461756474, 0.0] curl=2/[0.02939492256616825, 0.0019720326036213576]
+PASS C3 joint probability is one quarter; zero connected derivative need not freeze covariance | Jfd=.25; projector C02(t)=-sin(t)^2/4 for the explicit changed kernel
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

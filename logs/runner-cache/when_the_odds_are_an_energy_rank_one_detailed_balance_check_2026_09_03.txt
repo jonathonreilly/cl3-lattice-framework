@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/when_the_odds_are_an_energy_rank_one_detailed_balance_check_2026_09_03.py
+runner_sha256: 8aca9bdfe46a553ff20ba37ecb96b4b68b89960f87fbe24d7caa9771cc35beb1
+input_fingerprint_sha256: 1573a7e2f04efd883c7a23b7a7135ae2638c0c327608095902dd46c436cd2f6a
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 2.87
+status: ok
+----- stdout -----
+INPUT_BINDING: exact declared note/premise verified
+PASS A1 [finite] occurring (c, D) cells, by complete enumeration over the L = 8 torus: DIMER 18 cells over 12240 unblocked proposals, D in [-1, 0, 1], m_t in [0, 1]; 3-record 36 cells over 4672620 proposals (all 130305 {0,x,y} representatives), D in [-2, -1, 0, 1, 2], m_t in [0, 1, 2]; 9 conditions (m_s, s) for table C'
+PASS E1 [exact] 36 attained tuples versus90 rectangular cells; B=C at g1 h0 kappa1/2; mt1 D2 absent
+PASS E2 [exact] parity-dependent rates1/3,2/3 have reversible weights2/3,1/3 and flux2/9
+PASS A2 [finite] TABLE A, separable by construction: M_rel is EXACTLY RANK ONE over Q on the dimer (12x3) and on 3-record groups (18x5), at h = 0 and h = 1 alike, sigma_2/sigma_1 <= 1.302410e-16, with the exact reciprocal factor ladder T(c) = 1/beta(c) = 2/5, 1/2, 8/15, 2/3, 4/5, 1
+PASS A3 [finite] TABLE B, PR #7899's Metropolis rule: M_rel is EXACTLY RANK ONE on both groups at h = 0 and h = 1 (sigma_2/sigma_1 <= 4.602077e-17) with the SAME beta = g at all 18 conditions, so reciprocal factor T = 1/g -- a field in the PROPOSAL never enters the cost matrix
+PASS A4 [finite] TABLE C, non-separable by construction: on the 3-record rectangular extension M_rel has EXACT RANK 2 over Q at h = 0, sigma_2/sigma_1 = 3.411710e-02, rank-one residual 3.409726e-02, and rank 4 at h = 1 (1.426295e-01): no beta(c) x E(D) exists on this extension; no physical identification follows
+PASS A5 [finite] TABLE C', the same family keyed to the MOVER's own neighbourhood: M_rel is 9x5 of EXACT RANK 2, sigma_2/sigma_1 = 5.018675e-02 at kappa = 1/2 and 1.304845e-01 at kappa = 1, rank 4 at h = 1 (2.224582e-01) -- the departure grows with the declared kappa
+PASS A6 [finite] WHICH ACTIVATION FACTOR: in all 9 rank-one cases the factorisation in the gauge E(D = +1) = 1 gives E(D) = max(0, D) -- E(-2) = E(-1) = E(0) = 0, E(+1) = 1, E(+2) = 2 -- a ONE-SIDED BARRIER, not the configuration energy: the odds say nothing about the downhill half of the move set
+PASS A7 [finite] TWO TRAPS. (i) THIS DIMER C RECTANGLE HAS RANK ONE: D in {-1, 0, +1} makes D^2 = |D|, so table C is EXACTLY RANK ONE there (sigma_2/sigma_1 = 0.000000e+00) with a plausible T = 2/3, 1; this parameter-family comparison is rectangular. (ii) Leave ln p_prop in and even table C gives 4.032337e-02, under the declared D = 0 subtraction gauge
+PASS B1 [finite] the CYCLE CENSUS, complete where stated: 56454 distinct 4-cycles of the 1022-state even-translation dimer chain, 1524 of the 511-state relative chain, 504 winding cycles of length L = 8, and the declared subgraph of 1620 trimer 4-cycles on absolute configurations
+PASS B2 [finite] TABLE A -- RANK ONE DOES NOT IMPLY REVERSIBILITY: cycle products fail by exactly nu = 1/4 on the dimer chain (2.500000000000001e-01) and the trimer chain (2.500000000000001e-01), winding clean (2.2e-16); the stationary law (|pi P - pi| = 1.0e-17) misses e^{-g B} by 1.199957e-01
+PASS B3 [finite] TABLE B at h = 0 -- BOTH tests pass: all tested cycle products are 1 within tolerance on all four chains (dimer 0.0e+00, relative 0.0e+00, winding 0.0e+00, trimer 2.2e-16) and the law is exactly pi ~ e^{-g B} (1.5e-14, |pi P - pi| = 3.2e-17). The chosen Metropolis stationary law agrees
+PASS B4 [finite] TABLE B WITH A FIELD -- A GIBBS LAW IS NOT SUFFICIENT: at h = 1 the odds matrix is still rank one and the law still exactly Gibbs (2.4e-14), yet cycle products fail by exactly 4h = 4.000000000000000 on the dimer chain and L h = 8.000000000000000 on the winding cycles: a DRIVEN steady state
+PASS B5 [finite] TABLE C at h = 0 -- ATTAINED B/C AGREE DESPITE DIFFERENT EXTENDED RANKS: at kappa = 1/2 every tested cycle product is 1 (dimer 0.0e+00, relative 0.0e+00, winding 0.0e+00, trimer 2.2e-16) and the law is exactly Gibbs (1.5e-14) while the odds matrix is rank 2: actual acceptance agrees with B on all attained proposals at this parameter point
+PASS B6 [finite] TABLE C' -- a crowding barrier keyed to the MOVER does break detailed balance: over the 1620 declared trimer 4-cycles at h = 0 the defect is exactly 4 kappa -- 0.000000000000, 1.000000000000, 2.000000000000, 4.000000000000 at kappa = 0, 1/4, 1/2, 1 -- and 2.000000000000 at g = 2, equal at these tested couplings
+PASS B7 [finite] THE LUMPING TRAP: at h = 1 the translation-reduced relative chain PASSES (2.2e-16) and so does the declared trimer subgraph (3.3e-16) while the unlumped chain fails by 4h (4.000000) and the winding cycles by L h (8.000000): a 4-cycle test on a reduced chain is not a detailed-balance test
+PASS C1 [finite] TABLE B on the bent trimer: its 18 proposals split 4 null, 2 at D = 0, 8 at D = +1, 4 at D = +2, and both break channels carry the COMMON SLOPE a(D)/D = g at g = 1, 2, 4 (1.000000000000, 2.000000000000, 4.000000000000): the dimensionless slopes agree
+PASS C2 [finite] TABLE C' on the bent trimer: every D = +1 break is an END record (m_s = 1) so a(1) = g, every D = +2 break the CENTRE (m_s = 2) so a(2) = 2g + 4 kappa; the channel slope gap a(2)/2 - a(1) = 2 kappa EXACTLY, 1.000000000000 at g = 1, 2, 4 for kappa = 1/2 and 2.000000000000 for kappa = 1
+PASS C3 [finite] the bent trimer's lifetime under C' is 18/(8 e^{-g} + 4 e^{-2g - 4 kappa}), matched by the enumerated proposals to 0.0e+00: 5.967579958344 ticks at g = 1, kappa = 1/2 against PR #7899's 5.165916817967, 16.474505674194 against 15.571677528219, 122.693773845084 against 121.731046628774 at g = 2 and 4
+PASS C4 [finite] THE NULL RESULT: table C, keyed to the TARGET's crowding, has equal dimensionless slopes on the bent trimer at the tested kappa (a(1) = a(2)/2 = 1.000000000000 at kappa = 0, 1/2, 1) because all 12 of its breaking proposals land on a site with no occupied neighbour (m_t = 0), so C's extended rank2 does not imply a rebinding signature
+PASS C5 [finite] THE TWO DISCRIMINATORS, a factor of two apart: the Kolmogorov defect is 4 kappa and the channel slope gap 2 kappa, so defect = 2 x gap exactly -- 2.000000000000 against 2 x 1.000000000000 at kappa = 1/2, 4.000000000000 against 2 x 2.000000000000 at kappa = 1; the rectangular rank-one departure 5.018675e-02 is a separate extension diagnostic
+PASS D1 [finite] CONSISTENCY with PR #7899, dimer: table B reproduces 2 e^{g}(5 + e^{h})/(9 + e^{h}) aligned and e^{g}(5 + e^{h})/(4 + e^{h}) transverse over six (g, h) cells to 2.22e-16 relative -- both (6/5) e^{g} at h = 0 -- and 6/(6 + 505 e^{-g}) to 1.94e-16 at the tested h (|pi P - pi| <= 6.0e-17)
+PASS D2 [finite] CONSISTENCY with PR #7899, bent trimer: with the 1/n record-choice factor and D = B(new) - B(old) = A(old) - A(new) both as declared, table B returns 18/(8 e^{-g} + 4 e^{-2g}) to 1.78e-15 -- 5.165916817967, 15.571677528219, 121.731046628774 ticks at g = 1, 2, 4
+SUMMARY: declared rectangular activation factorization, attained transition odds and graph reversibility are distinct; no physical temperature or energy is derived.
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

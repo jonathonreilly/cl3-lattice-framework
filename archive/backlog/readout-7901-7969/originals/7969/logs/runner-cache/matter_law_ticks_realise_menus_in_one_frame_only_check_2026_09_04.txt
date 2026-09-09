@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/matter_law_ticks_realise_menus_in_one_frame_only_check_2026_09_04.py
+runner_sha256: b1ea7d71877c5e48e46945c04fd747000b5977dce7aa45065268d9602525cb49
+input_fingerprint_sha256: b1de0a589ecb7aaf097cda4fd80ffd9ab5d7fa6e0fb0ed5186d58f68f0cd396f
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 85.40
+status: ok
+----- stdout -----
+arithmetic_boundary: exact in Q(sqrt m), m = 1, 2, 3, 6; no seed, no sampling
+float_boundary: the sea cross-check and the reduced states only
+census_boundary: cube complete; slab and torus T6 on sub-families
+import_boundary: no Born form, no frame theorem, no axiom content
+PASS: T1-cube-geom cube 2x2x2: 8 corners, 12 sites, flux -1 on all 6 faces
+PASS: T1-cube-kernel h^2 = 3I and K = (I - h/sqrt3)/2 exact in Q(sqrt3)
+PASS: T1-cube-ident exactly K = K^T = K^2, tr K = 4, [h,K] = 0
+PASS: T1-cube-half K_AA = K_BB = I/2 exactly on the cube
+PASS: T1-cube-corner corner law: 256 patterns, 62 nonzero, |n| = 4, sum 1, D = 144
+PASS: T1-cube-values rational: no sqrt3 part; values {1/144,1/48,1/36,1/16}
+PASS: T1-cube-zeros the 8 cancellation zeros are the closed corner stars
+PASS: T1-cube-record P(w) = 2^-5 p(Aw): support 1984 = 32 x 62 on 4096 labels
+PASS: T1-cube-sea float: code dim 128, E = -4 sqrt3, max|P_ex - P_SEA| = 3.5e-18 < 4e-18
+PASS: T1-slab-kernel slab 2x2x3: spec(h^2) = {2,4}, K in Q(sqrt2), K_AA = K_BB = I/2
+PASS: T1-slab-corner corner law: 4096 patterns, 804 nonzero, |n| = 6, D = 8192, 392 irrat.
+PASS: T1-slab-record P(w) = 2^-9 p(Aw): support 411648 = 512 x 804
+PASS: T1-torus 4^3 torus twist (1,1,1): 192 sites, flux -1, h^2 = 6I, K in Q(sqrt6)
+PASS: T1-torus-half K_AA = K_BB = I/2 exactly on the 4^3 torus, and tr K = 32
+PASS: T2-cube-table all 3^11 conditions per site: 12/264/.../17664 by k, 2105028 total
+PASS: T2-cube-menus 3 menus over every site and condition: {P0,P1}, {P0}, {P1}; 129 odds
+PASS: T2-cube-forcing no singleton menu through k = 7; the first forcing is at k = 8
+PASS: T2-control-blocks PR #7919's nonzero record blocks at k = 0..3: 1 / 24 / 264 / 1760
+PASS: T2-control-odds its five odds at k = 3: {5/18, 1/3, 1/2, 2/3, 13/18}
+PASS: T2-control-witness its witness: records 0 on edges 0..6 and 8 lock edge 9 to [0,1]
+PASS: T2-cube-nn Lemma 5: NN-only conditions give one menu, one odds [1/2,1/2]
+PASS: T2-cube-markov all 192 (site, NN pattern) pairs vary with far records, spread 1
+PASS: T2-slab-site slab sites (k <= 4, NN, whole-class): one menu, 73 odds, no forcing
+PASS: T3-cube-star cube star, 8 corners complete over 3^9 conditions: 69 menus, 1329 odds
+PASS: T3-star-sizes sizes {4:8, 5:24, 6:28, 7:8, 8:1}: no three-outcome menu, one full basis
+PASS: T3-star-odds 37 of the 69 menus carry several odds, 849 on the full basis
+PASS: T3-star-nn NN-only star conditions: 5 menus of sizes {6:4, 8:1}, 27 odds
+PASS: T3-cube-tick cube tick, 24 orders: menus 1/1/13/32, odds 1/1/18/32, uniform 1/1/0/0
+PASS: T3-slab-pair slab pair, the class tick's conditions: 421 menus, 423 odds, 1 uniform
+PASS: T3-slab-star slab degree-4 star, same: 285 menus (sizes 5..16), 501 odds, 1 uniform
+PASS: T3-slab-tick slab tick, 24 orders: menus 2/2/166/960, odds 2/2/192/1152, uniform 2/2/0/0
+PASS: T3-closure-8 Lemma 4 on 32 cube tick steps: a full uniform menu iff no corner closes
+PASS: T3-closure-12 Lemma 4 on 32 slab tick steps: a full uniform menu iff no corner closes
+PASS: T3-columns the 'unit columns in L_F' criterion holds at no step; closure does
+PASS: T3-bigtori 6^3 / 8^3: 162 / 384 records per class; closure 0,0,27,108 / 0,0,64,256
+PASS: T3-lemma5 particle-hole p(n) = p(1-n); matching invariance, cube 3, slab 2
+PASS: T3-even-uniform K_AA = I/2 gives the even marginal 2^-|A| exactly; p(00) = p(11)
+PASS: T4-schur every declared T is even, so K_TT = I/2 and M_TT = I/2 exactly
+PASS: T4-T0T1 T0: one menu, the full basis at 1/64; T1: 5 menus (48,64), 12 odds
+PASS: T4-T2 T2 opposite and adjacent: 25 menus (32,48,56,64), 200 odds each
+PASS: T4-T3 T3 exact over 32768 classes: 141 menus, 4096 odds, 1 full basis, 0 uniform
+PASS: T4-T6 T6 exact sub-family: 312 classes, 193 menus (7,20,23,63), 257 rational odds
+ARG: corollary one frame at every unit: no abundance is supplied and nothing is forced
+PASS: T5-global-cube cube: the global system is inconsistent at the site (rank 2), star (rank 8)
+PASS: T5-witness the supports refute it: two disjoint size-4 star menus union to the basis
+PASS: T5-global-slab slab tick: pair 421 menus rank 64, star 285 rank 16, both inconsistent
+PASS: T5-global-torus torus T1/T2/T3/T6 rank 4/8/16/64, 353 pooled rank 64: all inconsistent
+PASS: T5-single-menu one-menu families (site k <= 7, torus T0) are consistent, sum pinned
+PASS: T5-rogue the uniform rogue differs from Born on 126/129 site, 1324/1329 star fibres
+PASS: T5-effects each menu's odds live on its support and sum to 1; menus cover the basis
+PASS: T5-arity no menu has three outcomes at any unit; minimum sizes 4 / 19 / 5 / 7
+PASS: T5-killing the site realises only {P0},{P1},{P0,P1}; the 8 four-outcome menus pair up
+PASS: T5-fibre-172 PR #7931: 9969 conditions, 82116 pairs, 164232 checks, 172 keyed fibres
+PASS: T5-fibre-menu Lemma 2 on site 0 (175419 conditions) and star(0) (19619): no fibre has 2 menus
+PASS: T5-fibre-born Lemma 3, float: p(w|n) = <w|sigma(n)|w> to 3.7e-15: the fibred clause is an identity
+PASS: gate-axioms Admissibility and Record quoted verbatim from MINIMAL_AXIOMS_2026-06-29.md
+PASS: gate-title the note carries the honest title, no paid price, no refuted Born rule
+PASS: gate-quoted the note declares the three censuses reduced here and quoted
+PASS: gate-surface the note keeps its conditional surface and its audit line
+recorded_arguments: 1 printed, none counted
+TOTAL: PASS=58 FAIL=0
+
+----- stderr -----
+
