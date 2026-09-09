@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Thirty-seventh campaign checkpoint
 
 Updated 2026-09-09T02:45:39.282243+00:00. Campaign deadline remains September10 10:27:17UTC, subject to available account usage. Latest checked weekly usage is98%, leaving2%; no reset credits are authorized. Work is concentrating on delivering the completed science. No main merge or formal audit has occurred.
 
