@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/reflected_curvature_schur_poles_independent_check_2026_09_09.py
+runner_sha256: 6183d13701101b431d6bb2c9e3b229a62f16929b2d6e0281a712bd8fa800c652
+input_fingerprint_sha256: 1c3370dee9530019bf7be638c0f10e61ed88112f7821d5e70700ea8ac296a196
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 3.39
+status: ok
+----- stdout -----
+[PASS] independent-qr-section-poles: a complete-QR construction reproduces two metric-coupled vertical poles
+       {"fixed": {"full_rank": 18, "mixing": 1.6580185440234823, "momentum": [-2.2252025412472958, -2.296284075958496, 0.574071018989624, 0.0], "parameter": 0.8222961632219997, "vertical_zero": -7.385397955106291e-15, "ward": 8.386274989882765e-14}, "moving": {"full_rank": 18, "mixing": 0.004572959397585403, "momentum": [0.03771323936701759, 0.0, 0.14080555900240166, 0.0], "parameter": 0.20168910657044775, "vertical_zero": 7.092118061506229e-16, "ward": 8.039192585378398e-15}}
+[PASS] independent-full-quotient-hankel: direct 256- and 512-mode quotient moments violate both raw Hankel tests
+       {"256": [-4.426243255547195e-09, -3.2974767047364544e-07], "512": [-4.4262432518482085e-09, -3.2974767047267654e-07]}
+[PASS] positive-dominant-root-control: the isolated positive dominant branch is positive semidefinite
+       [2.9003111955893924e-18, 9.70101232459549e-22]
+[PASS] source-bound-primary-interface: the fresh primary cache exposes the declared finite claim interface
+       {"claims": {"atlas_exhausted": false, "audit_status": "unset", "claim_type": "bounded_theorem", "finite_nonzero_roots": 14, "gated_reconstructed_moments": 9, "inside_unit_disk_roots": 7, "one_step_raw_hankel_positive": false, "physical_gravity_selected": false, "tested_stationary_charts": 2, "tt_coupled_inside_roots": 3, "two_step_raw_hankel_positive": false}, "runner": "scripts/admissibility_reflected_curvature_canonical_reduction_schur_pole_tt_spectral_weight_boundary_2026_08_23.py", "runner_sha_matches": true, "status": "ok", "total_present": true}
+[PASS] bounded-scope-and-source-closure: the companion shares only the disclosed fixture and preserves the open physical scope
+CHECKER_JSON: {"audit_status": "unset", "physical_gravity_selected": false, "positive_dominant_root_control": true, "shared_action_fixture": true, "temporal_sample_counts": [256, 512], "tested_stationary_charts": 2}
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

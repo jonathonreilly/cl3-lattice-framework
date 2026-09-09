@@ -1,0 +1,43 @@
+forbidden subspace: 384 of the 896 sector basis patterns (= 12 corner pairs x 32)
+Q|ground> norm^2 = 0.000e+00   (exact zero: the PR #7858 cancellation)
+
+STEP 1: is the ground state still an energy eigenstate after ONE record forms?
+        |g_e,b> = P_{Z_e=b}|g> / ||.|| ;  H_R = H minus the hop term on the registered site e.
+        variance V = <H_R^2> - <H_R>^2 is zero iff |g_e,b> is an eigenstate of H_R.
+  site     b   | <H_R>      | var(H_R)     | var(H_full)  | ||Q H_R |g_b>||^2
+  (0, 1)   0   | -3.500000  | 0.250000     | 0.750000     | 0.000000    
+  (0, 1)   1   | -3.500000  | 0.250000     | 0.750000     | 0.000000    
+  (0, 2)   0   | -3.500000  | 0.250000     | 0.750000     | 0.000000    
+  (0, 2)   1   | -3.500000  | 0.250000     | 0.750000     | 0.000000    
+  (0, 4)   0   | -4.000000  | 0.375000     | 0.750000     | 0.375000    
+  (0, 4)   1   | -4.000000  | 0.375000     | 0.750000     | 0.375000    
+  ... (24 site/value combinations in all)
+  min var(H_R) over all combinations = 0.250000 ; min ||Q H_R|g_b>||^2 = 0.000000
+  min var(H_full) over all combinations = 0.750000
+  -> a single record already destroys BOTH the eigenstate property and the annihilation of the
+     forbidden subspace, for every site and every value.  Nothing survives a gap of positive length.
+
+STEP 2: forbidden mass registered after one record and one gap of length t, then the remaining
+        11 records formed immediately (so the only dynamics is that one gap).
+  t      | forbidden-12 mass of the finished set (exact, averaged over the first site and value)
+  0.00   | 0.00000000
+  0.01   | 0.00001250
+  0.10   | 0.00124584
+  0.50   | 0.02869384
+  1.00   | 0.08534184
+  2.00   | 0.11867215
+  5.00   | 0.32641110
+  (t = 0 must be exactly 0; the growth is O(t^2) at small t, as expected for a state the
+   generator moves out of the zero set at first order.)
+
+STEP 3: which pre-record states DO reproduce their own Born diagonal under a tick rule?
+        A tick rule leaves the finished-set odds equal to the Born diagonal of psi0 for every
+        schedule iff every gap acts trivially on the conditioned state.  Two exact checks:
+  (1) tau = 0 (no dynamics): trivially yes, for any psi0.  This is PR #7858's setting.
+  (2) psi0 an eigenstate of H: the FIRST gap acts trivially, but H_R != H, so from the second
+      gap on the conditioned state evolves.  Quantified in STEP 1 / STEP 2 above.
+  (3) the only states left invariant by every H_R (R nonempty) are the joint eigenvectors of all
+      12 single-site-deleted Hamiltonians; the intersection over sites is computed here:
+      max ||[H, T_e]|| over the 12 sites = 1.0000 (nonzero: no common eigenbasis)
+      the joint kernel of {H_R - H_R'} has dimension 0 -> no nonzero state is left invariant by
+      all the post-record Hamiltonians at once.

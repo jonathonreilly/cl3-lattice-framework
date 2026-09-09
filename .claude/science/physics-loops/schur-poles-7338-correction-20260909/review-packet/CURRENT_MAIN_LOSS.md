@@ -1,0 +1,3 @@
+Frozen main e48b8ed97fb909245b722a8ca9a59b078efdae9c
+
+No child science note/runner is present at the original canonical paths on this base. The shared plan and citation manifest have current-main content and must not be replaced with the original19-path tree. Preserve the original plan append and complete historical packet in custody, point documentary consumers at custody, regenerate the manifest and cache, and retain current corrected B74 and all suppliers. All62 actually imported modules are supplied calculations/initializers, not authority for their unrelated claims. Final integration tree and changed parent bytes require same-session confirmation.

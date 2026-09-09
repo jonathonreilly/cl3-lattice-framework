@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_eta_affine_repeat_corrected_2026_09_09.py
+runner_sha256: d979d73fd09dd44023e91ec9e47221c60497e24cbe88782b01eed63f72209850
+input_fingerprint_sha256: 6b1902f688245f08fda1dc189fc0e55004d548ffb04e0b875751359ddc839ffa
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+INPUT_BOUND: 8 actual current inputs
+PASS fine_coarse_preparation: clean branch law accepted; actual bit labels and coarse weights changed independently
+PASS fine_coarse_test: clean branch law accepted; actual bit labels and coarse weights changed independently
+PASS test_slot_fault_existing_gate: clean={'record_first_fine_cylinder_average': True}; actual test-label swap={'record_first_fine_cylinder_average': False}
+PASS actual_close_projection_fault: clean=True; payload-copying close=False
+PASS explicit_alternative_laws: fresh accepted, frozen/parity differ as actual finite distributions; not generator-mutation claims
+PASS actual_second_read_repeat_condition: [(Fraction(1, 1), Fraction(1, 1), Fraction(0, 1), True), (Fraction(-1, 1), Fraction(-1, 1), Fraction(0, 1), True), (Fraction(1, 2), Fraction(1, 1), Fraction(1, 4), False), (Fraction(1, 1), Fraction(1, 2), Fraction(1, 4), False)]
+PASS encoded_action_scope: actual code traces=(Fraction(50, 1), Fraction(4, 1)); this action is not full-matrix unitary conjugation
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

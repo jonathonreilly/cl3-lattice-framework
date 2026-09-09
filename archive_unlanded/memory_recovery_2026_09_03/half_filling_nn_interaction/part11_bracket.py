@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+"""Bracket the attractive-side flip on the 2x2x3 block."""
+import mb, numpy as np, itertools, time
+t0=time.time()
+L=mb.Lat((2,2,3),False); F=L.faces(); bl=mb.bond_list(L); N=6
+st,ix=mb.basis(L.nv,N); D=len(st)
+rows=[];cols=[];bidx=[];sgn=[];dc=np.zeros(D)
+for k,s in enumerate(st):
+    d=0
+    for bi,(i,j,key) in enumerate(bl):
+        if ((s>>i)&1) and ((s>>j)&1): d+=1
+        for (a,b) in ((i,j),(j,i)):
+            r=mb.hop_apply(s,a,b)
+            if r is None: continue
+            ns,sg=r; rows.append(ix[ns]);cols.append(k);bidx.append(bi);sgn.append(sg)
+    dc[k]=d
+rows=np.array(rows);cols=np.array(cols);bidx=np.array(bidx);sgn=np.array(sgn,float)
+def HM(v,g):
+    H=np.zeros((D,D)); np.add.at(H,(rows,cols),-v[bidx]*sgn); H[np.arange(D),np.arange(D)]+=g*dc; return H
+sects=[]
+for fv in itertools.product([1,-1],repeat=len(F)):
+    eta,ok=mb.sector_eta(L,fv)
+    if ok: sects.append((fv,np.array([eta[key] for (_,_,key) in bl],float),sum(1 for x in fv if x==-1)))
+IM=[k for k,s in enumerate(sects) if all(x==-1 for x in s[0])][0]
+for g in (-2.5,-2.75,-3.0,-3.25,-3.5,-6.0,-8.0):
+    E=np.array([np.linalg.eigvalsh(HM(v,g))[0] for (_,v,_) in sects])
+    o=np.argsort(E); emin=E[o[0]]; nmin=int(np.sum(E<emin+1e-10))
+    print(f"  g={g:>6}: Emin={emin:.9f} nmin={nmin} minflux={sorted(set(sects[k][2] for k in np.where(E<emin+1e-10)[0]))} "
+          f"unique_all-(-1)={nmin==1 and o[0]==IM} rank(-)={int(np.where(o==IM)[0][0])} "
+          f"E(-)-Emin={E[IM]-emin:+.6e}  t=%.0fs"%(time.time()-t0))
+print("elapsed %.1fs"%(time.time()-t0))

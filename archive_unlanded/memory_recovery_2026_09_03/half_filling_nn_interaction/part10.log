@@ -1,0 +1,30 @@
+=== Bloch cross-check of the free half-filling energies ===
+  L=4 delta=0: plain Bloch E_half=-60.000000000   staggered lower band sum=-44.679535938
+  L=4 delta=1: plain Bloch E_half=-67.882250994   staggered lower band sum=-45.476514561
+  L=6 delta=0: plain Bloch E_half=-216.000000000   staggered lower band sum=-152.159819380
+  L=6 delta=1: plain Bloch E_half=-207.846096908   staggered lower band sum=-151.329410311
+  L=8 delta=0: plain Bloch E_half=-506.558441227   staggered lower band sum=-360.121638504
+  L=8 delta=1: plain Bloch E_half=-516.937394620   staggered lower band sum=-361.179957529
+
+=== larger tori: free part, first-order coefficient, crossing ===
+  L= 4 +: twist (-1, -1, -1) Efree/V=-1.060660172 gap=2.828427 A/V=0.656250000
+  L= 4 -: twist (-1, -1, -1) Efree/V=-1.224744871 gap=4.898979 A/V=0.625000000
+    dEfree/V=-0.164084700  dA/V=-0.031250000  g_c = -5.250710388    t=0s
+  L= 6 +: twist (1, -1, -1) Efree/V=-1.011870669 gap=0.535898 A/V=0.664266118
+  L= 6 -: twist (1, 1, 1) Efree/V=-1.198414537 gap=3.464102 A/V=0.630316883
+    dEfree/V=-0.186543867  dA/V=-0.033949235  g_c = -5.494788569    t=0s
+  L= 8 +: twist (-1, -1, -1) Efree/V=-1.009643349 gap=0.634051 A/V=0.665051692
+  L= 8 -: twist (-1, -1, -1) Efree/V=-1.194944860 gap=2.651309 A/V=0.631008898
+    dEfree/V=-0.185301511  dA/V=-0.034042794  g_c = -5.443193405    t=1s
+  L=10 +: twist (1, 1, 1) Efree/V=-1.007489130 gap=0.472136 A/V=0.665413804
+  L=10 -: twist (1, 1, 1) Efree/V=-1.194204021 gap=2.140933 A/V=0.631156396
+    dEfree/V=-0.186714891  dA/V=-0.034257408  g_c = -5.450350787    t=2s
+  L=12 +: twist (1, 1, -1) Efree/V=-1.004222072 gap=0.136297 A/V=0.665924757
+  L=12 -: twist (-1, -1, -1) Efree/V=-1.193979680 gap=1.793151 A/V=0.631201044
+    dEfree/V=-0.189757608  dA/V=-0.034723714  g_c = -5.464784403    t=8s
+
+Richardson-ish limits (linear in 1/L^2 on the last three):
+  dEfree/V: values [np.float64(-0.1640847), np.float64(-0.1865439), np.float64(-0.1853015), np.float64(-0.1867149), np.float64(-0.1897576)]  -> extrap -0.2026291
+  dA/V: values [np.float64(-0.03125), np.float64(-0.0339492), np.float64(-0.0340428), np.float64(-0.0342574), np.float64(-0.0347237)]  -> extrap -0.0366991
+  g_c: values [np.float64(-5.2507104), np.float64(-5.4947886), np.float64(-5.4431934), np.float64(-5.4503508), np.float64(-5.4647844)]  -> extrap -5.5251985
+elapsed 7.8s

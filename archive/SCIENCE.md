@@ -197,3 +197,12 @@ ledger): `campaigns/densify-freeze-20260904/`. Campaign working packets
 (opus-direct positive-path, generator program, exercises, roll-ups):
 `campaigns/`. Everything here is record, not authority; promotion goes
 through the ordinary review-loop + audit lanes.
+
+## Memory-only recovery (2026-09-03 record)
+
+The [historical recovery record](recovery/MEMORY_ONLY_SCIENCE_RECOVERY_2026-09-03.md)
+preserves temporary campaign artifacts and attributed memory reports. Its
+2026-09-09 review corrections mark known unsupported raw conclusions and
+distinguish historical status from current science. These files are archival
+evidence and reconstruction leads; their preservation grants no theorem or
+audit status.

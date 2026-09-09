@@ -1,0 +1,341 @@
+
+############################################################################################################
+SECTION 0  the declared model
+############################################################################################################
+cluster            : 2x2x2 cube, 8 corners, 12 edge sites -> 12 qubits, dim 4096 (BKSF, L3/L3b verified)
+stabilizers        : 5 independent face operators; code space 2^7 = 128
+state space used   : the N=2 record sector = span{|z> : corner-parity pattern has weight 2}, dim 896 = 28 x 32.
+                     every hop term preserves it exactly, so nothing above 896x896 is ever formed.
+pre-record H       : H = sum_edges T_e, T_e = (i/2) A_e (B_i - B_j); code-sector spectrum {-4,-2,0,2,4},
+                     ground level -4.  On the whole 896-dim sector (32 flux copies) the extreme level is -(2+2sqrt2).
+TICK               : (i) every unrecorded edge site forms a record with probability p, independently;
+                         each locks a value with the odds carried by the current state (Lueders conditioning,
+                         sequential in a random order inside the tick);
+                     (ii) the pre-record state then evolves by exp(-i tau H_R).
+MODEL CHOICE A     : H_R = sum of hop terms on UNRECORDED sites (exactly the terms commuting with every
+                     registered Z_e, since T_e is the only term with X support on site e).  Primary model.
+MODEL CHOICE B     : keep the full H each step and re-condition on the registered values afterwards. Tested.
+clock              : site e's formation tick is Geometric(p); the finished set is complete at tick max_e T_e.
+dictionary         : the finished set of 12 locked values fixes one of the 28 corner pairs (vertex pattern).
+
+############################################################################################################
+SECTION 1  sanity: p = 1 (every record forms at the first tick)
+############################################################################################################
+At p = 1 no evolution precedes any record, so the finished set must reproduce the Born diagonal of the
+initial state exactly.  Exact facts first:
+  ground state Born diagonal: 16 patterns at 1/16 = 0.062500, 12 patterns at exactly 0.
+  the 12 zeros are the discriminator's forbidden corner pairs: [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (4, 5), (4, 6), (4, 7), (5, 6), (5, 7), (6, 7)]
+  they are the pairs whose two corners lie on the SAME x-face {0,1,2,3} or {4,5,6,7}.
+  in the 4096-dim edge-pattern space that is 12 x 32 = 384 cancellation zeros (PR #7858).
+  MC p=1 ground   n=20000 : L1 to its own Born diagonal = 0.0204 +- 0.0051 ; ticks to completion = 1 (exact 1)
+           forbidden-12 registered mass = 0.00000 (exact 0), max over the 12 = 0.00000
+  MC p=1 pair01   n=20000 : L1 to its own Born diagonal = 0.0000 +- 0.0000 ; ticks to completion = 1 (exact 1)
+  MC p=1 unif28   n=20000 : L1 to its own Born diagonal = 0.0339 +- 0.0054 ; ticks to completion = 1 (exact 1)
+
+tau = 0 control (dynamics switched off): the finished set must be the Born diagonal for every p.
+  tau=0 p=0.20 : L1 to ground Born = 0.0430 ; forbidden-12 mass = 0.00000
+  tau=0 p=0.01 : L1 to ground Born = 0.0460 ; forbidden-12 mass = 0.00000
+
+order independence INSIDE one tick (all Z_e commute, so Lueders projections commute):
+  360 ordered comparisons over 3-site groups on evolved states of all three initial states: mismatches 0
+
+############################################################################################################
+SECTION 2  the finished-set statistics, tick model, 20000 trajectories per point
+############################################################################################################
+columns: mean ticks to completion | # of the 28 patterns with odds < 1e-3 | # with zero registrations |
+         L1 to the ground-state Born diagonal | L1 to uniform-on-28 | mass on the 12 forbidden pairs
+
+initial state (a) hopping ground state E=-4
+  p     tau   | E[ticks] | <1e-3  zero | L1 to GS Born    | L1 to uniform    | forbidden-12 mass 
+  0.50  0.1   |      5.0 |     0     0 | 0.0559 +- 0.0041 | 0.8017 +- 0.0024 | 0.02770 +- 0.00116   [5s]
+  0.50  0.5   |      5.0 |     0     0 | 0.4759 +- 0.0059 | 0.3812 +- 0.0059 | 0.23795 +- 0.00301   [5s]
+  0.50  2.0   |      5.0 |     0     0 | 0.7207 +- 0.0068 | 0.1364 +- 0.0067 | 0.36035 +- 0.00339   [5s]
+  0.20  0.1   |     14.4 |     0     0 | 0.3206 +- 0.0050 | 0.5365 +- 0.0050 | 0.16030 +- 0.00259   [12s]
+  0.20  0.5   |     14.4 |     0     0 | 0.7310 +- 0.0074 | 0.1261 +- 0.0072 | 0.36550 +- 0.00341   [12s]
+  0.20  2.0   |     14.4 |     0     0 | 0.8145 +- 0.0072 | 0.0575 +- 0.0064 | 0.40725 +- 0.00347   [12s]
+  0.05  0.1   |     60.8 |     0     0 | 0.7298 +- 0.0073 | 0.1273 +- 0.0072 | 0.36490 +- 0.00340   [22s]
+  0.05  0.5   |     61.0 |     0     0 | 0.8095 +- 0.0069 | 0.0485 +- 0.0060 | 0.40475 +- 0.00347   [23s]
+  0.05  2.0   |     60.9 |     0     0 | 0.8261 +- 0.0067 | 0.0586 +- 0.0058 | 0.41305 +- 0.00348   [22s]
+  0.01  0.1   |    310.7 |     0     0 | 0.8112 +- 0.0074 | 0.0555 +- 0.0067 | 0.40560 +- 0.00347   [27s]
+  0.01  0.5   |    310.7 |     0     0 | 0.8235 +- 0.0069 | 0.0513 +- 0.0063 | 0.41175 +- 0.00348   [27s]
+  0.01  2.0   |    311.0 |     0     0 | 0.8272 +- 0.0076 | 0.0446 +- 0.0064 | 0.41360 +- 0.00348   [27s]
+
+initial state (b) localised A-string pair (0,1)
+  p     tau   | E[ticks] | <1e-3  zero | L1 to GS Born    | L1 to uniform    | forbidden-12 mass 
+  0.50  0.1   |      5.0 |    22    11 | 1.8945 +- 0.0031 | 1.7148 +- 0.0045 | 0.94725 +- 0.00158   [5s]
+  0.50  0.5   |      5.0 |     0     0 | 1.3409 +- 0.0051 | 0.9601 +- 0.0064 | 0.62730 +- 0.00342   [5s]
+  0.50  2.0   |      5.0 |     0     0 | 0.9904 +- 0.0072 | 0.3564 +- 0.0072 | 0.49520 +- 0.00354   [5s]
+  0.20  0.1   |     14.4 |     4     0 | 1.4781 +- 0.0048 | 1.1834 +- 0.0056 | 0.68685 +- 0.00328   [12s]
+  0.20  0.5   |     14.4 |     0     0 | 0.9071 +- 0.0071 | 0.1123 +- 0.0063 | 0.45355 +- 0.00352   [13s]
+  0.20  2.0   |     14.5 |     0     0 | 0.8894 +- 0.0073 | 0.0420 +- 0.0055 | 0.44470 +- 0.00351   [12s]
+  0.05  0.1   |     60.9 |     0     0 | 0.9175 +- 0.0071 | 0.1321 +- 0.0069 | 0.45875 +- 0.00352   [21s]
+  0.05  0.5   |     60.9 |     0     0 | 0.8641 +- 0.0072 | 0.0335 +- 0.0054 | 0.43205 +- 0.00350   [21s]
+  0.05  2.0   |     61.4 |     0     0 | 0.8676 +- 0.0070 | 0.0275 +- 0.0054 | 0.43380 +- 0.00350   [22s]
+  0.01  0.1   |    309.2 |     0     0 | 0.8702 +- 0.0074 | 0.0351 +- 0.0056 | 0.43510 +- 0.00351   [27s]
+  0.01  0.5   |    309.4 |     0     0 | 0.8562 +- 0.0077 | 0.0209 +- 0.0052 | 0.42810 +- 0.00350   [26s]
+  0.01  2.0   |    308.8 |     0     0 | 0.8680 +- 0.0074 | 0.0317 +- 0.0054 | 0.43400 +- 0.00350   [26s]
+
+initial state (c) uniform over the 28 pair states
+  p     tau   | E[ticks] | <1e-3  zero | L1 to GS Born    | L1 to uniform    | forbidden-12 mass 
+  0.50  0.1   |      5.0 |     0     0 | 0.8366 +- 0.0066 | 0.0587 +- 0.0057 | 0.41830 +- 0.00349   [5s]
+  0.50  0.5   |      5.0 |     0     0 | 0.7768 +- 0.0066 | 0.1644 +- 0.0064 | 0.38840 +- 0.00345   [5s]
+  0.50  2.0   |      5.0 |     0     0 | 0.8315 +- 0.0067 | 0.0406 +- 0.0056 | 0.41575 +- 0.00348   [5s]
+  0.20  0.1   |     14.4 |     0     0 | 0.7114 +- 0.0072 | 0.2786 +- 0.0067 | 0.34720 +- 0.00337   [13s]
+  0.20  0.5   |     14.4 |     0     0 | 0.7848 +- 0.0066 | 0.0890 +- 0.0064 | 0.39240 +- 0.00345   [12s]
+  0.20  2.0   |     14.4 |     0     0 | 0.8343 +- 0.0070 | 0.0426 +- 0.0057 | 0.41715 +- 0.00349   [13s]
+  0.05  0.1   |     61.3 |     0     0 | 0.7766 +- 0.0070 | 0.1048 +- 0.0064 | 0.38830 +- 0.00345   [24s]
+  0.05  0.5   |     60.9 |     0     0 | 0.8279 +- 0.0073 | 0.0434 +- 0.0056 | 0.41395 +- 0.00348   [22s]
+  0.05  2.0   |     60.8 |     0     0 | 0.8443 +- 0.0072 | 0.0443 +- 0.0060 | 0.42215 +- 0.00349   [22s]
+  0.01  0.1   |    310.3 |     0     0 | 0.8305 +- 0.0072 | 0.0468 +- 0.0060 | 0.41525 +- 0.00348   [27s]
+  0.01  0.5   |    309.8 |     0     0 | 0.8378 +- 0.0066 | 0.0499 +- 0.0061 | 0.41890 +- 0.00349   [26s]
+  0.01  2.0   |    310.1 |     0     0 | 0.8295 +- 0.0068 | 0.0402 +- 0.0053 | 0.41475 +- 0.00348   [26s]
+
+############################################################################################################
+SECTION 3  the three regimes
+############################################################################################################
+(i)  fast-formation limit p -> 1 : the finished set is the Born diagonal of the initial state (Section 1).
+
+(ii) slow-formation limit p -> 0 at fixed tau.  The gap before each record diverges, so the pre-record
+     state fully dephases in the energy basis of the CURRENT H_R, and records form one at a time in a
+     uniformly random site order.  That limiting process is simulated exactly (random-phase unravelling
+     of  rho -> sum_E P_E rho P_E  at every gap).
+
+     Exact single-dephasing comparison  sum_E P_E |psi0><psi0| P_E  (dephasing w.r.t. the FULL H only):
+       ground   : L1(dephased(psi0), Born(psi0)) = 0.0000 ; L1(dephased, uniform) = 0.8571 ; forbidden-12 mass = 0.000000
+       pair01   : L1(dephased(psi0), Born(psi0)) = 1.4531 ; L1(dephased, uniform) = 1.0045 ; forbidden-12 mass = 0.750000
+       unif28   : L1(dephased(psi0), Born(psi0)) = 0.5804 ; L1(dephased, uniform) = 0.5804 ; forbidden-12 mass = 0.214286
+     (for the ground state this is the identity map: an energy eigenstate is invariant under the dephasing.)
+
+     Simulated p -> 0 limit (sequential dephasing, 20000 trajectories):
+       ground   : <1e-3  0 | zero  0 | L1 to GS Born 0.8315 | L1 to uniform 0.0505 | L1 to single-dephased(psi0) 0.8315 | forbidden-12 0.41575 +- 0.00348  [28s]
+       pair01   : <1e-3  0 | zero  0 | L1 to GS Born 0.8789 | L1 to uniform 0.0344 | L1 to single-dephased(psi0) 1.0147 | forbidden-12 0.43945 +- 0.00351  [28s]
+       unif28   : <1e-3  0 | zero  0 | L1 to GS Born 0.8390 | L1 to uniform 0.0372 | L1 to single-dephased(psi0) 0.5787 | forbidden-12 0.41950 +- 0.00349  [28s]
+
+     convergence check: L1 between the finished-set odds at p and the simulated p -> 0 limit
+       ground   (tau=0.5)  p=0.50: 0.3556   p=0.20: 0.1075   p=0.05: 0.0501   p=0.01: 0.0360
+       pair01   (tau=0.5)  p=0.50: 0.9713   p=0.20: 0.1193   p=0.05: 0.0394   p=0.01: 0.0390
+       unif28   (tau=0.5)  p=0.50: 0.1557   p=0.20: 0.0808   p=0.05: 0.0416   p=0.01: 0.0423
+
+(iii) survival of the discriminator's 12 zeros, by regime (mass registered on the 12 forbidden pairs):
+      state    | p=1 (exact)  | p=0.50   p=0.20   p=0.05   p=0.01   | p->0 limit  
+      ground   | 0.00000      | 0.23795  0.36550  0.40475  0.41175  | 0.41575     
+      pair01   | 1.00000      | 0.62730  0.45355  0.43205  0.42810  | 0.43945     
+      unif28   | 0.42857      | 0.38840  0.39240  0.41395  0.41890  | 0.41950     
+      (tau = 0.5 column; the other taus are in Section 2.)
+
+############################################################################################################
+SECTION 4  model choice B -- keep the full H, re-condition on the registered values every step
+############################################################################################################
+5000 trajectories per point (this model cannot use the gap-accumulation shortcut, so it is run smaller).
+  state    p     tau   | L1 to GS Born (A / B)  | forbidden-12 (A / B)   | L1(A,B)
+  ground   0.50  0.1   | 0.0818 / 0.0906          | 0.02540 / 0.02640      | 0.0156
+  ground   0.50  0.5   | 0.4650 / 0.5098          | 0.23220 / 0.25140      | 0.0836
+  ground   0.50  2.0   | 0.7364 / 0.8320          | 0.36820 / 0.31740      | 0.5040
+  ground   0.20  0.1   | 0.3360 / 0.3368          | 0.16800 / 0.16840      | 0.0188
+  ground   0.20  0.5   | 0.7384 / 0.7716          | 0.36920 / 0.38580      | 0.0600
+  ground   0.20  2.0   | 0.8000 / 1.2532          | 0.40000 / 0.57340      | 0.8924
+  ground   0.05  0.1   | 0.7032 / 0.7044          | 0.35160 / 0.35220      | 0.0172
+  ground   0.05  0.5   | 0.8236 / 0.8208          | 0.41180 / 0.41040      | 0.0784
+  ground   0.05  2.0   | 0.8332 / 1.4440          | 0.41660 / 0.65060      | 1.1300
+  pair01   0.50  0.1   | 1.9048 / 1.9068          | 0.95240 / 0.95340      | 0.0044
+  pair01   0.50  0.5   | 1.3512 / 1.3440          | 0.62900 / 0.64340      | 0.0780
+  pair01   0.50  2.0   | 0.9724 / 1.6924          | 0.48620 / 0.84620      | 1.0512
+  pair01   0.20  0.1   | 1.4724 / 1.4764          | 0.68420 / 0.68780      | 0.0168
+  pair01   0.20  0.5   | 0.8940 / 0.9224          | 0.44700 / 0.46120      | 0.0712
+  pair01   0.20  2.0   | 0.8736 / 1.4254          | 0.43680 / 0.71060      | 1.0096
+  pair01   0.05  0.1   | 0.9248 / 0.9312          | 0.46240 / 0.46560      | 0.0152
+  pair01   0.05  0.5   | 0.8472 / 0.8780          | 0.42360 / 0.43900      | 0.0680
+  pair01   0.05  2.0   | 0.8752 / 1.4512          | 0.43760 / 0.66900      | 1.0716
+  unif28   0.50  0.1   | 0.8368 / 0.8444          | 0.41840 / 0.42220      | 0.0200
+  unif28   0.50  0.5   | 0.7500 / 0.7824          | 0.37500 / 0.39120      | 0.0876
+  unif28   0.50  2.0   | 0.8132 / 1.0624          | 0.40660 / 0.53120      | 0.5900
+  unif28   0.20  0.1   | 0.7126 / 0.7158          | 0.35100 / 0.35300      | 0.0208
+  unif28   0.20  0.5   | 0.8004 / 0.7988          | 0.40020 / 0.39940      | 0.0748
+  unif28   0.20  2.0   | 0.8240 / 1.2728          | 0.41200 / 0.60260      | 0.8992
+  unif28   0.05  0.1   | 0.7832 / 0.7740          | 0.39160 / 0.38700      | 0.0212
+  unif28   0.05  0.5   | 0.8012 / 0.8492          | 0.40060 / 0.42460      | 0.0604
+  unif28   0.05  2.0   | 0.8344 / 1.4580          | 0.41720 / 0.65320      | 1.1316
+  (MC noise floor on L1(A,B) at n=5000 is about 0.1173 for a 28-cell distribution.)
+
+############################################################################################################
+SECTION 5  order of formation: exact fixed schedules, same finished recorded set
+############################################################################################################
+All schedules register all 12 sites; they differ only in WHEN.  Odds computed exactly by enumerating
+the whole record tree (no Monte Carlo).
+
+  tau = 0.5
+    (a) hopping ground state E=-4
+      A all 12 at tick 1                      L1 to GS Born 0.0000 | L1 to uniform 0.8571 | forbidden-12 0.000000 | #<1e-3 12
+      B one per tick, site order 0..11        L1 to GS Born 1.1023 | L1 to uniform 0.7515 | forbidden-12 0.535127 | #<1e-3 0
+      C one per tick, site order 11..0        L1 to GS Born 0.7705 | L1 to uniform 0.6016 | forbidden-12 0.333741 | #<1e-3 0
+      D one per tick, star of corner 0 first  L1 to GS Born 1.1023 | L1 to uniform 0.7515 | forbidden-12 0.535127 | #<1e-3 0
+      E one every 5 ticks, order 0..11        L1 to GS Born 0.6920 | L1 to uniform 0.8104 | forbidden-12 0.147990 | #<1e-3 1
+      F two per tick, 6 ticks                 L1 to GS Born 0.5514 | L1 to uniform 0.4244 | forbidden-12 0.260387 | #<1e-3 1
+      pairwise L1 between schedules (exact, no sampling error):
+        A all 12 at tick 1                     vs B one per tick, site order 0..11        L1 = 1.1023
+        A all 12 at tick 1                     vs C one per tick, site order 11..0        L1 = 0.7705
+        A all 12 at tick 1                     vs D one per tick, star of corner 0 first  L1 = 1.1023
+        A all 12 at tick 1                     vs E one every 5 ticks, order 0..11        L1 = 0.6920
+        A all 12 at tick 1                     vs F two per tick, 6 ticks                 L1 = 0.5514
+        B one per tick, site order 0..11       vs C one per tick, site order 11..0        L1 = 0.9028
+        B one per tick, site order 0..11       vs D one per tick, star of corner 0 first  L1 = 0.0000
+        B one per tick, site order 0..11       vs E one every 5 ticks, order 0..11        L1 = 0.8713
+        B one per tick, site order 0..11       vs F two per tick, 6 ticks                 L1 = 0.8272
+        C one per tick, site order 11..0       vs D one per tick, star of corner 0 first  L1 = 0.9028
+        C one per tick, site order 11..0       vs E one every 5 ticks, order 0..11        L1 = 0.6566
+        C one per tick, site order 11..0       vs F two per tick, 6 ticks                 L1 = 0.5678
+        D one per tick, star of corner 0 first vs E one every 5 ticks, order 0..11        L1 = 0.8713
+        D one per tick, star of corner 0 first vs F two per tick, 6 ticks                 L1 = 0.8272
+        E one every 5 ticks, order 0..11       vs F two per tick, 6 ticks                 L1 = 0.7099
+    (b) localised A-string pair (0,1)
+      A all 12 at tick 1                      L1 to GS Born 2.0000 | L1 to uniform 1.9286 | forbidden-12 1.000000 | #<1e-3 27
+      B one per tick, site order 0..11        L1 to GS Born 1.0994 | L1 to uniform 0.8273 | forbidden-12 0.450660 | #<1e-3 6
+      C one per tick, site order 11..0        L1 to GS Born 1.4608 | L1 to uniform 1.1691 | forbidden-12 0.469893 | #<1e-3 1
+      D one per tick, star of corner 0 first  L1 to GS Born 1.0994 | L1 to uniform 0.8273 | forbidden-12 0.450660 | #<1e-3 6
+      E one every 5 ticks, order 0..11        L1 to GS Born 1.1944 | L1 to uniform 0.9454 | forbidden-12 0.272371 | #<1e-3 1
+      F two per tick, 6 ticks                 L1 to GS Born 1.3650 | L1 to uniform 1.2065 | forbidden-12 0.368516 | #<1e-3 3
+      pairwise L1 between schedules (exact, no sampling error):
+        A all 12 at tick 1                     vs B one per tick, site order 0..11        L1 = 1.9998
+        A all 12 at tick 1                     vs C one per tick, site order 11..0        L1 = 1.9776
+        A all 12 at tick 1                     vs D one per tick, star of corner 0 first  L1 = 1.9998
+        A all 12 at tick 1                     vs E one every 5 ticks, order 0..11        L1 = 1.9123
+        A all 12 at tick 1                     vs F two per tick, 6 ticks                 L1 = 1.5348
+        B one per tick, site order 0..11       vs C one per tick, site order 11..0        L1 = 1.3524
+        B one per tick, site order 0..11       vs D one per tick, star of corner 0 first  L1 = 0.0000
+        B one per tick, site order 0..11       vs E one every 5 ticks, order 0..11        L1 = 1.5080
+        B one per tick, site order 0..11       vs F two per tick, 6 ticks                 L1 = 1.3767
+        C one per tick, site order 11..0       vs D one per tick, star of corner 0 first  L1 = 1.3524
+        C one per tick, site order 11..0       vs E one every 5 ticks, order 0..11        L1 = 1.5217
+        C one per tick, site order 11..0       vs F two per tick, 6 ticks                 L1 = 1.5156
+        D one per tick, star of corner 0 first vs E one every 5 ticks, order 0..11        L1 = 1.5080
+        D one per tick, star of corner 0 first vs F two per tick, 6 ticks                 L1 = 1.3767
+        E one every 5 ticks, order 0..11       vs F two per tick, 6 ticks                 L1 = 1.5472
+    (c) uniform over the 28 pair states
+      A all 12 at tick 1                      L1 to GS Born 0.8571 | L1 to uniform 0.0000 | forbidden-12 0.428571 | #<1e-3 0
+      B one per tick, site order 0..11        L1 to GS Born 0.9982 | L1 to uniform 0.6449 | forbidden-12 0.426070 | #<1e-3 0
+      C one per tick, site order 11..0        L1 to GS Born 0.9645 | L1 to uniform 0.6043 | forbidden-12 0.442968 | #<1e-3 0
+      D one per tick, star of corner 0 first  L1 to GS Born 0.9982 | L1 to uniform 0.6449 | forbidden-12 0.426070 | #<1e-3 0
+      E one every 5 ticks, order 0..11        L1 to GS Born 0.6556 | L1 to uniform 0.7099 | forbidden-12 0.185161 | #<1e-3 1
+      F two per tick, 6 ticks                 L1 to GS Born 0.5094 | L1 to uniform 0.5948 | forbidden-12 0.189835 | #<1e-3 0
+      pairwise L1 between schedules (exact, no sampling error):
+        A all 12 at tick 1                     vs B one per tick, site order 0..11        L1 = 0.6449
+        A all 12 at tick 1                     vs C one per tick, site order 11..0        L1 = 0.6043
+        A all 12 at tick 1                     vs D one per tick, star of corner 0 first  L1 = 0.6449
+        A all 12 at tick 1                     vs E one every 5 ticks, order 0..11        L1 = 0.7099
+        A all 12 at tick 1                     vs F two per tick, 6 ticks                 L1 = 0.5948
+        B one per tick, site order 0..11       vs C one per tick, site order 11..0        L1 = 0.7397
+        B one per tick, site order 0..11       vs D one per tick, star of corner 0 first  L1 = 0.0000
+        B one per tick, site order 0..11       vs E one every 5 ticks, order 0..11        L1 = 0.9562
+        B one per tick, site order 0..11       vs F two per tick, 6 ticks                 L1 = 0.8829
+        C one per tick, site order 11..0       vs D one per tick, star of corner 0 first  L1 = 0.7397
+        C one per tick, site order 11..0       vs E one every 5 ticks, order 0..11        L1 = 0.8864
+        C one per tick, site order 11..0       vs F two per tick, 6 ticks                 L1 = 0.8595
+        D one per tick, star of corner 0 first vs E one every 5 ticks, order 0..11        L1 = 0.9562
+        D one per tick, star of corner 0 first vs F two per tick, 6 ticks                 L1 = 0.8829
+        E one every 5 ticks, order 0..11       vs F two per tick, 6 ticks                 L1 = 0.7570
+
+  tau = 2.0
+    (a) hopping ground state E=-4
+      A all 12 at tick 1                      L1 to GS Born 0.0000 | L1 to uniform 0.8571 | forbidden-12 0.000000 | #<1e-3 12
+      B one per tick, site order 0..11        L1 to GS Born 1.0265 | L1 to uniform 0.9132 | forbidden-12 0.324550 | #<1e-3 2
+      C one per tick, site order 11..0        L1 to GS Born 1.1028 | L1 to uniform 0.7260 | forbidden-12 0.479528 | #<1e-3 0
+      D one per tick, star of corner 0 first  L1 to GS Born 1.0265 | L1 to uniform 0.9132 | forbidden-12 0.324550 | #<1e-3 2
+      E one every 5 ticks, order 0..11        L1 to GS Born 1.0242 | L1 to uniform 0.7893 | forbidden-12 0.253917 | #<1e-3 0
+      F two per tick, 6 ticks                 L1 to GS Born 0.8566 | L1 to uniform 0.8072 | forbidden-12 0.316617 | #<1e-3 0
+      pairwise L1 between schedules (exact, no sampling error):
+        A all 12 at tick 1                     vs B one per tick, site order 0..11        L1 = 1.0265
+        A all 12 at tick 1                     vs C one per tick, site order 11..0        L1 = 1.1028
+        A all 12 at tick 1                     vs D one per tick, star of corner 0 first  L1 = 1.0265
+        A all 12 at tick 1                     vs E one every 5 ticks, order 0..11        L1 = 1.0242
+        A all 12 at tick 1                     vs F two per tick, 6 ticks                 L1 = 0.8566
+        B one per tick, site order 0..11       vs C one per tick, site order 11..0        L1 = 1.2001
+        B one per tick, site order 0..11       vs D one per tick, star of corner 0 first  L1 = 0.0000
+        B one per tick, site order 0..11       vs E one every 5 ticks, order 0..11        L1 = 1.1367
+        B one per tick, site order 0..11       vs F two per tick, 6 ticks                 L1 = 1.1673
+        C one per tick, site order 11..0       vs D one per tick, star of corner 0 first  L1 = 1.2001
+        C one per tick, site order 11..0       vs E one every 5 ticks, order 0..11        L1 = 1.1109
+        C one per tick, site order 11..0       vs F two per tick, 6 ticks                 L1 = 0.8195
+        D one per tick, star of corner 0 first vs E one every 5 ticks, order 0..11        L1 = 1.1367
+        D one per tick, star of corner 0 first vs F two per tick, 6 ticks                 L1 = 1.1673
+        E one every 5 ticks, order 0..11       vs F two per tick, 6 ticks                 L1 = 1.0289
+    (b) localised A-string pair (0,1)
+      A all 12 at tick 1                      L1 to GS Born 2.0000 | L1 to uniform 1.9286 | forbidden-12 1.000000 | #<1e-3 27
+      B one per tick, site order 0..11        L1 to GS Born 1.3465 | L1 to uniform 1.0771 | forbidden-12 0.481086 | #<1e-3 7
+      C one per tick, site order 11..0        L1 to GS Born 1.3473 | L1 to uniform 1.1688 | forbidden-12 0.597636 | #<1e-3 9
+      D one per tick, star of corner 0 first  L1 to GS Born 1.3465 | L1 to uniform 1.0771 | forbidden-12 0.481086 | #<1e-3 7
+      E one every 5 ticks, order 0..11        L1 to GS Born 1.4357 | L1 to uniform 1.2080 | forbidden-12 0.609634 | #<1e-3 11
+      F two per tick, 6 ticks                 L1 to GS Born 1.4280 | L1 to uniform 1.2431 | forbidden-12 0.454212 | #<1e-3 6
+      pairwise L1 between schedules (exact, no sampling error):
+        A all 12 at tick 1                     vs B one per tick, site order 0..11        L1 = 1.9868
+        A all 12 at tick 1                     vs C one per tick, site order 11..0        L1 = 1.5713
+        A all 12 at tick 1                     vs D one per tick, star of corner 0 first  L1 = 1.9868
+        A all 12 at tick 1                     vs E one every 5 ticks, order 0..11        L1 = 1.9992
+        A all 12 at tick 1                     vs F two per tick, 6 ticks                 L1 = 1.9963
+        B one per tick, site order 0..11       vs C one per tick, site order 11..0        L1 = 1.3103
+        B one per tick, site order 0..11       vs D one per tick, star of corner 0 first  L1 = 0.0000
+        B one per tick, site order 0..11       vs E one every 5 ticks, order 0..11        L1 = 1.5243
+        B one per tick, site order 0..11       vs F two per tick, 6 ticks                 L1 = 1.5191
+        C one per tick, site order 11..0       vs D one per tick, star of corner 0 first  L1 = 1.3103
+        C one per tick, site order 11..0       vs E one every 5 ticks, order 0..11        L1 = 1.8122
+        C one per tick, site order 11..0       vs F two per tick, 6 ticks                 L1 = 1.6762
+        D one per tick, star of corner 0 first vs E one every 5 ticks, order 0..11        L1 = 1.5243
+        D one per tick, star of corner 0 first vs F two per tick, 6 ticks                 L1 = 1.5191
+        E one every 5 ticks, order 0..11       vs F two per tick, 6 ticks                 L1 = 1.5023
+    (c) uniform over the 28 pair states
+      A all 12 at tick 1                      L1 to GS Born 0.8571 | L1 to uniform 0.0000 | forbidden-12 0.428571 | #<1e-3 0
+      B one per tick, site order 0..11        L1 to GS Born 1.0349 | L1 to uniform 0.7045 | forbidden-12 0.368537 | #<1e-3 0
+      C one per tick, site order 11..0        L1 to GS Born 1.0549 | L1 to uniform 0.7168 | forbidden-12 0.490078 | #<1e-3 0
+      D one per tick, star of corner 0 first  L1 to GS Born 1.0349 | L1 to uniform 0.7045 | forbidden-12 0.368537 | #<1e-3 0
+      E one every 5 ticks, order 0..11        L1 to GS Born 1.0038 | L1 to uniform 0.6155 | forbidden-12 0.393701 | #<1e-3 0
+      F two per tick, 6 ticks                 L1 to GS Born 1.0309 | L1 to uniform 0.7587 | forbidden-12 0.442730 | #<1e-3 0
+      pairwise L1 between schedules (exact, no sampling error):
+        A all 12 at tick 1                     vs B one per tick, site order 0..11        L1 = 0.7045
+        A all 12 at tick 1                     vs C one per tick, site order 11..0        L1 = 0.7168
+        A all 12 at tick 1                     vs D one per tick, star of corner 0 first  L1 = 0.7045
+        A all 12 at tick 1                     vs E one every 5 ticks, order 0..11        L1 = 0.6155
+        A all 12 at tick 1                     vs F two per tick, 6 ticks                 L1 = 0.7587
+        B one per tick, site order 0..11       vs C one per tick, site order 11..0        L1 = 1.1644
+        B one per tick, site order 0..11       vs D one per tick, star of corner 0 first  L1 = 0.0000
+        B one per tick, site order 0..11       vs E one every 5 ticks, order 0..11        L1 = 0.9106
+        B one per tick, site order 0..11       vs F two per tick, 6 ticks                 L1 = 1.0151
+        C one per tick, site order 11..0       vs D one per tick, star of corner 0 first  L1 = 1.1644
+        C one per tick, site order 11..0       vs E one every 5 ticks, order 0..11        L1 = 0.9340
+        C one per tick, site order 11..0       vs F two per tick, 6 ticks                 L1 = 0.8759
+        D one per tick, star of corner 0 first vs E one every 5 ticks, order 0..11        L1 = 0.9106
+        D one per tick, star of corner 0 first vs F two per tick, 6 ticks                 L1 = 1.0151
+        E one every 5 ticks, order 0..11       vs F two per tick, 6 ticks                 L1 = 0.9681
+
+############################################################################################################
+SECTION 6  record count as a clock
+############################################################################################################
+Each site's formation tick is Geometric(p): mean 1/p per site.  Completion tick T = max of 12 i.i.d.
+Geometric(p), so P(T <= t) = (1-(1-p)^t)^12 and E[T] = sum_{j=1..12} (-1)^{j+1} C(12,j) / (1-(1-p)^j).
+  p      | 1/p        | E[T] exact | E[T] MC    | MC quantiles 10/50/90 
+  1.00   | 1.00       | 1.000      | 1.000      | 1 / 1 / 1
+  0.50   | 2.00       | 4.977      | 4.985      | 3 / 5 / 7
+  0.20   | 5.00       | 14.407     | 14.365     | 8 / 13 / 22
+  0.05   | 20.00      | 60.999     | 60.808     | 35 / 56 / 92
+  0.01   | 100.00     | 309.267    | 308.300    | 175 / 286 / 470
+
+Is the finished set a function of the product p*tau only?  Points with equal p*tau, same initial state:
+  state    | point 1          | point 2          | p*tau    | L1 between them
+  ground   | p=0.20 tau=0.5 | p=0.05 tau=2.0 | 0.100    | 0.0969
+  ground   | p=0.50 tau=0.1 | p=0.05 tau=1.0 | 0.050    | 0.7675
+  ground   | p=0.20 tau=0.1 | p=0.01 tau=2.0 | 0.020    | 0.5066
+  pair01   | p=0.20 tau=0.5 | p=0.05 tau=2.0 | 0.100    | 0.1167
+  pair01   | p=0.50 tau=0.1 | p=0.05 tau=1.0 | 0.050    | 1.7104
+  pair01   | p=0.20 tau=0.1 | p=0.01 tau=2.0 | 0.020    | 1.1838
+  unif28   | p=0.20 tau=0.5 | p=0.05 tau=2.0 | 0.100    | 0.0866
+  unif28   | p=0.50 tau=0.1 | p=0.05 tau=1.0 | 0.050    | 0.0582
+  unif28   | p=0.20 tau=0.1 | p=0.01 tau=2.0 | 0.020    | 0.2571
+  (MC noise floor on L1 at n=20000 is about 0.0586.)
+
+Same p, different tau (does tau matter at all beyond the product?):
+  ground   p=0.20 : L1(tau=0.1, tau=0.5) = 0.4104 ; L1(tau=0.5, tau=2.0) = 0.0893 ; L1(tau=0.1, tau=2.0) = 0.4939
+  ground   p=0.05 : L1(tau=0.1, tau=0.5) = 0.0835 ; L1(tau=0.5, tau=2.0) = 0.0601 ; L1(tau=0.1, tau=2.0) = 0.1010
+  pair01   p=0.20 : L1(tau=0.1, tau=0.5) = 1.1110 ; L1(tau=0.5, tau=2.0) = 0.0986 ; L1(tau=0.1, tau=2.0) = 1.1746
+  pair01   p=0.05 : L1(tau=0.1, tau=0.5) = 0.1273 ; L1(tau=0.5, tau=2.0) = 0.0453 ; L1(tau=0.1, tau=2.0) = 0.1352
+  unif28   p=0.20 : L1(tau=0.1, tau=0.5) = 0.2064 ; L1(tau=0.5, tau=2.0) = 0.0829 ; L1(tau=0.1, tau=2.0) = 0.2718
+  unif28   p=0.05 : L1(tau=0.1, tau=0.5) = 0.0816 ; L1(tau=0.5, tau=2.0) = 0.0477 ; L1(tau=0.1, tau=2.0) = 0.0973
+
+[total runtime] 1002.9 s
