@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "name": "baseline",
+      "source_sha256": "cc79088e7f436d90a81a658b98a3aa27591dc699872761ac5bbefd6967262bc9",
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"checks\": 28,\n  \"physical_integrals\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "wrong_derivative",
+      "source_sha256": "d79eb47853613fbc6525e3e8ce3f2925079811bc0e457992d16ac82fe280db90",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-local-green-gram-stretch/toy.py\", line 25, in <module>\n    if __name__=='__main__':print(json.dumps(run(),indent=2))\n                                             ^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-local-green-gram-stretch/toy.py\", line 17, in run\n    a=ranges_a(F(1,2),F(1,4),F(1,4));req(a[0][0]<=F(2,3)<=a[0][1],'A exact square');req(a[1][0]<=F(-20,27)<=a[1][1],'A derivative factor')\n                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-local-green-gram-stretch/toy.py\", line 10, in req\n    if not ok:raise ValueError(msg)\n              ^^^^^^^^^^^^^^^^^^^^^\nValueError: A derivative factor\n"
+    },
+    {
+      "name": "wrong_sine_scale",
+      "source_sha256": "9b8eeb8acac21067d1dc3a7871b65078e14e03caa3c9c3a9f7d9efb963b3574b",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-local-green-gram-stretch/toy.py\", line 25, in <module>\n    if __name__=='__main__':print(json.dumps(run(),indent=2))\n                                             ^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-local-green-gram-stretch/toy.py\", line 15, in run\n    lo,hi=sin_bounds(F(1,3));req(lo<=F(1,2)<=hi,'sine pi/6 normalization')\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-local-green-gram-stretch/toy.py\", line 10, in req\n    if not ok:raise ValueError(msg)\n              ^^^^^^^^^^^^^^^^^^^^^\nValueError: sine pi/6 normalization\n"
+    }
+  ],
+  "physical_integrals": 0
+}

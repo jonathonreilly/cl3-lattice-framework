@@ -527,3 +527,13 @@ The fixed Gaussian/Fock pilot completed ONCE:45comparisons, maximum absolute dis
 Current hard work targets an affordable infinite calculation. An independently checked Ward identity removes one inverse while retaining all bounded spatial tails. Gaussian covariance response now has polynomial dimension bounds, and a mixed-reference Pfaffian formula retains signs without dividing by overlaps. The actual stationary impurity projector differs by a trace-class operator; an independently checked constructive approximation has polylogarithmic rank/error bounds. Rank2352 is BEFORE rounding, whoseerror doubles andchangedcarrier canbe4704. None of this alone establishes affordable finite-time dynamics. The next route combines finite-excitation Fock approximation with unnormalized semigroup contraction, avoiding normalized-state conditioning; certified Gram data and phase/energy control remain necessary. New localGreen/Gram work is analytic and UNLAUNCHED.
 
 All new pilot data and proof/partial snapshots are being preserved remotely in thischeckpoint. Fiftyinactive worktrees were safely removed, roughly58GiBfree. Original dirty and other-worker checkouts remain untouched. Read STATE.yaml and source-bound reviews; provisional extensions are not passing theorems merely because adjacent lemmas passed.
+
+# Physics campaign — current SSH status
+
+Updated 2026-09-09T15:13:03.947360+00:00. Campaign active through September10 10:27:17UTC subject to usable quota.31science PRs open; no main merge or formal audit. Infinite node alpha remains unknown.
+
+A reviewed finite-excitation Ward synthesis identifies the actual impurity scalar energy and controls unnormalized propagation with an explicit state error. Its canonical candidate passed root eight-file isolated checks in0.039seconds/19.9MB; final canonical review pending. Rank2352 implies at most1177 modes but only state-error<.0036/h², not a computed basis, affordable cost or alpha.
+
+New local Green/Gram pilot41ebe55c is UNLAUNCHED at this preregistration. Independent source review57705026 and corrected root monitor41f285ac reviewf9320beb pass; actual readiness performed zero integrals. Four fixed jobs at s1,2 for A/Aprime and B/Bprime, leafcaps1024/4096,targetwidth1/32,maxdepth12. Inclusive30seconds, root29.5second deadline,384MiB sampled whole-tree, one attempt, retain partials. Failure or indeterminate width does not authorize retry or widening the target. Remote verification precedes launch.
+
+All earlier numerical protocols remain COMPLETE and must not be rerun.50inactive worktrees removed after useful evidence remote preservation; about58GiB free. Original dirty and other-worker checkouts untouched. Science heartbeat active; erroneous coordination monitor paused.

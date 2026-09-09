@@ -7,3 +7,5 @@ A reviewed finite-excitation Ward synthesis identifies the actual impurity scala
 New local Green/Gram pilot41ebe55c is UNLAUNCHED at this preregistration. Independent source review57705026 and corrected root monitor41f285ac reviewf9320beb pass; actual readiness performed zero integrals. Four fixed jobs at s1,2 for A/Aprime and B/Bprime, leafcaps1024/4096,targetwidth1/32,maxdepth12. Inclusive30seconds, root29.5second deadline,384MiB sampled whole-tree, one attempt, retain partials. Failure or indeterminate width does not authorize retry or widening the target. Remote verification precedes launch.
 
 All earlier numerical protocols remain COMPLETE and must not be rerun.50inactive worktrees removed after useful evidence remote preservation; about58GiB free. Original dirty and other-worker checkouts untouched. Science heartbeat active; erroneous coordination monitor paused.
+
+Snapshot files: 46.
