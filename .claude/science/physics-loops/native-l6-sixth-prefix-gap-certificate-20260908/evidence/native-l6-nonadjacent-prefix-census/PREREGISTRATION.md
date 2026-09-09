@@ -1,0 +1,3 @@
+# Prospective exact census
+
+Enumerate literal L6 edges, native D pair insertions (two distinct incident edges), perfect pairings of each twelve-edge target cut, and all proper subsets of six insertions. Representatives fixed003,012,023,122,223. Preserve every matching/DP mask mapping, check connectivity after deleting centers and singleton gauge cuts. No eigenvalue, gap, LDL or floating spectral call. Fixed job cap30 seconds and384MiB observed RSS; standard-library integer sets only. Proposed gap pilot will be specified after census, with fixed masks selected geometrically rather than by numerical success. No scan authorized.
