@@ -1,0 +1,9 @@
+# Saved-cminus root monitor independent review
+
+PASS final ROOT_FREEZE3b3dface7af3d4cae42afbf3c9c5be0d875a43bf5702d6c287dd44e3bb8f62e9, worker0757e08a. Complete run_once/schema/protocol/authorization source read; all final root file hashes and worker freeze agree. This reviewer previously reviewed worker math/binding and reused that source review. No integral or physical saved check was run.
+
+The launcher calls only verify with-I-B-S and the bound authorization, not the integral producer. Fresh output, one-attempt marker, worker process group and finally cleanup remain the reviewed root monitor topology. Root29.5s inclusive timer covers source hashing/readiness/child/schema work; positive sampled tree<=384MiB and child zero exit are required. Whole-shell resource reconciliation remains explicitly pending. Runtime/source pins are rechecked after child completion, and schema consumes saved-only output fields actually produced by check.py.
+
+Twelve tiny fabricated schema fixtures were evaluated, preserving both initial and final results. Valid saved schema passes; bad status, replayed-integral flag, nonzero oracle count, indeterminate scientific classification, zero/noninteger predicate count, NaN/late timing, excessive RSS and wrong runtime fail. Initial boolean predicate=True was accepted under isinstance(int); root preserved e219 and fixed strict type tests. Final boolean predicate is rejected; resource seconds are now explicitly numeric non-bool and RSS strict int. No scientific arithmetic or worker source changed.
+
+Final readiness is for the once authorized saved reconstruction only. It does not preclaim that replay passed or that the integral was independently recomputed. The schema's CERTIFIED_TARGET gate is appropriate for this already accepted target result, while the worker itself retains general INDETERMINATE classification.

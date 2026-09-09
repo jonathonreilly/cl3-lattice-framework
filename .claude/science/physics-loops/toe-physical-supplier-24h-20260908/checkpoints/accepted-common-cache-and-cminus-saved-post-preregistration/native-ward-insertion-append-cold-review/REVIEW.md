@@ -1,0 +1,15 @@
+# Independent Ward append source review
+
+PASS as a source-only candidate, not runtime or launch readiness. Full append_core/worker/binder/cache_binder/check/protocol and augmented ledger0cfc read; all frozen source and import hashes verified. Related authorship: I wrote the imported cache binder and reviewed the Ward proof, but did not author this adapter. No append, cache, scalar integral or full mock was executed; author tiny-control receipt is read, not independently rerun.
+
+The core uses x=(e0,wA,wC)/2 exactly. Its cross factor balance/2 and self1/4 are correct. For e0, G=sigma s A I0v+D T0v and J=B I0v−sigma s B T0v/6 are the Gamma=i sign(h0),y=−iR conventions. For Ward rows the code is exactly -[AN−DO]+sigma s A T/6 and BT/6+sigma[(c−B)N/s−sBO/6]. Self block keeps center1/3, signed k(1/6−a0), and zero J before quarter scaling. Reverse entries require G transpose and J negative transpose, explicitly stated in protocol.
+
+The minus/plus pole order ni*6+(0 or3)+v matches the396-column convention. Three new rows times396 plus six triangular self entries equals1194/orbit and5970 total; row count5*(396+3)=1995 is correct. Integer192-bit intervals enclose only the exact midpoint formula. The append width gate4*798*maxwidth/S is conservative; the worker then ADDS the actual old cache radius and requires total<=2^-60. It does not assume that two separate2^-60 tests imply a combined2^-60 result. The five closed traces add the actual correlated insertion block and test531; no arbitrary orthogonal append occurs.
+
+The physical ledger remains separate. Both coefficients extend by zero and norm1 is unchanged; inserted W is recovered by12gamma(x), with separate vector errors. The radius metadata agrees with the ledger etaA/eta_a0=1e-30,etaB/eta_c=1e-19. Its broad176 A append sensitivity covers all cases, including e0-to-e0 whose unbalanced sensitivity is s (<=16), even though the ledger sentence naming a center s/3 bound pertains to the Ward-to-center entry. Thus the final bound is safe; clarify that wording when packaging, without changing the numerical bound.
+
+Binder currently refuses NOTREADY before any data read. Future actual descriptors must be independently checked, as stated: matching a configurable accepted_status is not by itself evidence that an arbitrary acceptance document has scientific force. Its eventual provenance includes both scalar/cache acceptance and same exact pole-binding identity, saved cache hashes and five-orbit census. The existing source candidate has no executable physical dispatcher, runtime closure, authorization or cost claim; this is correctly disclosed. Transitive pole pins are required. Completed/offending rows and current case are retained before gates.
+
+No necessary source repair found for this frozen source-only scope. Final accepted descriptors, runtime/caps and independent resulting data verification remain prerequisites for any native append.
+
+FREEZE SHA256: 8808b36cec7b5d62cf020241e31d34a2486f747b65bd7d41a15f97c690e6f643
