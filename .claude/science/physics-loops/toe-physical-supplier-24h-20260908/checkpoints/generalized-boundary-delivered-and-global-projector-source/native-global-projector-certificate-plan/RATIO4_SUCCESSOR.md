@@ -1,0 +1,9 @@
+# Ratio4 successor to the original680-node plan
+
+The original PLAN/PARAMETERS and freeze are historical sufficient bounds; do not overwrite them. James's independently read operator ellipse theorem improves the plan to18 panels[4^j,4^(j+1)],j=-16..1, degree21,378 positive nodes. Lowcut2^-32 with F0 correction and highN15 at16 yield analytic error<2e-13; the separate new numerical/operator allocation is8e-13. This is not achieved by existing scalar widths.
+
+For two impurity classes sharing center,dA,dC within one orbit, a safe raw factor count is6*378+3+3*(2*15-1)=2358, reference-Gamma closure4716. A full G/J uppertriangle would have2,781,261 pairs, at least267,001,056bytes for four192-bit endpoints each before objects, temporary arrays, source buffers or root/runtime. This packed minimum alone is not a384MiB cost proof. The streaming block objective avoids the dense cache entirely.
+
+The new native-streaming-occupation-certificate-design uses only selected48x48 metric/preconditioner and per-node48x4 cross blocks and4x4 self/coefficient blocks. Conservative per-node two-objective cost19968 scalar multiply-adds gives75,479,040 terms across378nodes,2classes,5orbits, plus high/lowblocks. This is a real bounded-memory route, not a measured wall-time prediction. It may fail scientifically because the triangle bound loses cancellations; such failure must be retained rather than solved by weakening the target.
+
+The low-frequency scientific supplier gate is explicit: independent1e-29 c/B errors divided by (2^-32)² are around1e-10. Exact positive joint kernels or analytic correlated evaluation must replace that cancellation path. The existing values are not inaccurate; their interval dependency is too weak for this use. Do not launch new component contractions until the operator-level input ledger and streaming implementation are both complete.

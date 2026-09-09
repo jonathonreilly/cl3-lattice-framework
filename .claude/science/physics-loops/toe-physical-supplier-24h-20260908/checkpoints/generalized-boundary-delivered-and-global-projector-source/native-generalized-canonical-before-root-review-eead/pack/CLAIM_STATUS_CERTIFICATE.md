@@ -1,0 +1,3 @@
+# Claim Status Certificate
+
+claim_type: bounded_theorem. actual_current_surface_status: conditional-support. trace_class: upstream_support. reachability_to_target: supports. proposal_allowed: false. bare_retained_allowed: false. audit_required_before_effective_retained: true. Formal audit status remains unset. Exact witness: every selected e<8/10^6 and every generalized squared lower bound>53/100. Failed coefficient widths remain failed. Both independent saved checks are accepted; canonical assembly review remains separate. The compact runner checks evidence identity and exact scalar consequences, not full matrix arithmetic.

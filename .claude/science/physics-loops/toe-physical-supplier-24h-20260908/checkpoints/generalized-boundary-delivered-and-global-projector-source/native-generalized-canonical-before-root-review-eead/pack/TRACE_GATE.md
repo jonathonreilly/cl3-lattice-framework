@@ -1,0 +1,3 @@
+# Trace Gate
+
+Original blocker: certify a small error for the actual finite-span first-action approximation before claiming controlled propagation. This block reaches that blocker and excludes the chosen uniform target on the five current spans. It does not exclude input-weighted consumers, different spans, larger banks or other algorithms. Native dictionary/model premises and prior physical Gram supplier errors remain upstream imports. No end-to-end Ward kernel, alpha sign, bulk phase or dynamics-accuracy conclusion follows. Classification is upstream_support, not closure of the overall campaign.

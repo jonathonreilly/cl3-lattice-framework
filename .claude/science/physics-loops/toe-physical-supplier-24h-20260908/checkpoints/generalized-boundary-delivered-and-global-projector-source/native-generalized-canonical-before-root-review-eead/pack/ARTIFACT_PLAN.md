@@ -1,0 +1,3 @@
+# Artifact Plan
+
+Deliver one coherent note with full mathematical source imports, exact result/receipt copies, compact forensic runner and exact-hash external archive mapping. Full original stage matrices are not duplicated in this packet. PLATFORM_RUNTIME_PINS identifies binaries outside remote science archive claims. REMOTE_RECOVERY_MAP lists known committed paths and any unresolved hashes. The portable compact check can run without the full archive; a full arithmetic replay requires recovering the manifest closure and the appropriate execution runtime under a separately authorized contract.

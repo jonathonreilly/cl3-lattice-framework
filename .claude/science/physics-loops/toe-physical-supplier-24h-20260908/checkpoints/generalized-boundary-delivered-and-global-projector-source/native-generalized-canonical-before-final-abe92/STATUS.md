@@ -1,0 +1,1 @@
+Source package pending independent generalized saved-stage POST, remote recovery mapping and canonical cold review. No graph/PR/publication. Selected POST accepted. Compact runner checks exact scalar summary and a tiny algebra control only; it is not full stage replay.
