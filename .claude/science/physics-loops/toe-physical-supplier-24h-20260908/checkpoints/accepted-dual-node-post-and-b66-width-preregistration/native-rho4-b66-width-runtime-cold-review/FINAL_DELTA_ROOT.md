@@ -1,0 +1,7 @@
+# Cap amendment and complete root review: PASS
+
+Worker3dcd37477455f39376c67976db8c15ddacef391a1ca4e34ddd6fcdc699589714 / ROOT15ad0cac2dc1f09454dc544b1a7727ecb023ff878569f27cb370f85920126b1e. Initial6bbbe mathematical review reused. Read new caps, affected ledger/worker imports and complete root monitor/schema. Input512/pole256 guards, explicit256-bit upward temporaries and returned Fraction guard, K/K' term/accumulator checks and result-tree checks discharge the advertised output-cap issue. Stored and transient limits are distinguished; no claim that Python allocates no wider temporary.
+
+Six independent tiny cap/upward-rounding predicates passed. No actual poles, catalog, node scan, high-amplification production or B values evaluated. Root schema validates114972 ordered node records and nonnegative grid radii, every cumulative sum,66 pole-specific low/high/total formulas and both target flags, final partial and exact output membership. It explicitly does not rederive each node error formula. Separation failures remain zero-placeholder records with separated=false, so cannot become feasibility. Named feasibility still means only the future declared arithmetic reserve.
+
+Full root source/interpreter/membership/origin pins are checked before and after worker; positive typed times/RSS,119/119.5/120 cap and current-group cleanup agree with the worker. Final external receipt reconciliation remains necessary. No remaining material blocker. Minor metadata equality checks rely on fixed source-generated/pinned data; no science claim is broadened.

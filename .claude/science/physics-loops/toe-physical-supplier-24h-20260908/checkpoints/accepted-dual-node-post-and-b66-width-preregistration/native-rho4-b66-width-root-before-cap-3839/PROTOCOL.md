@@ -1,0 +1,4 @@
+# B66width-only root — unlaunched
+Single root/childlessworker120/119.5/119s384MiB inclusive; exactsource/runtime/fullfinalpins/membership/oncefresh/retainedfailure/currentgroupcleanup. Scopewidthledger, no moments/integralcenters/Bvalues/oracles. Sourceguard/topology reuse336explicit; rootdoesnotredo114972nodeformulas.
+
+Rootstreams114972retained rounded256radii, verifiesexactcumulativeinteger sums, separationfailurezero placeholders and66pole classifications. Independently40K/Kprime terms eachpole pluslow/rem/rho4/arithmetic/pireserve reconstructtotalwidths andfixedtargets2e-28/2e-27. FEASIBLE onlyunderfuturecenterarithmeticreserve; no Bcertificate. Allcounts/lastpartial/exactoutputmembership verified. Extra rootstream/parsingcostincluded120 butunmeasured; forecast118.76is inference notfitguarantee. External shellreceiptpending. Independentreview/remoteprereg required beforeanyactualscan.

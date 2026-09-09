@@ -1,0 +1,9 @@
+# Independent B66 rho4 feasibility source review
+
+PASS proof/source-only. Read full fac192b5 derivation and ledger.py at39d8 package. No actual geometry/pole/catalog scan, tail40 evaluation or integrand contraction. Related rho4 and original B implementation authorship disclosed; James authored this width-only route.
+
+G and H signs follow differentiating (t²At−s²As)/(t²−s²): H=2st²(As−At)/d²+s²A'/d. The interval inverse handles either separated denominator sign, squaring via interval multiplication safely. The product-radius identity includes both scalar radius and coefficient displacement; mappedweight-upper times node radius plus weight-radius times the true integrand bound encloses the specified quadrature-center error. It does not claim this sum is a precision lower bound.
+
+Low differences are positive and bounded by t²A0/s² and2t²A0/s³; integrated half-remainder radii match code. Forty even high terms have positive remainder. For H,2s/(X+s²)<=1/sqrtX gives the stated conservative12^40 remainder (X=0 treated by continuity). Collected As dependence is−K for G andK'As+K A' for H, with the explicit positive coefficient sums. This exposes representation amplification at large s without evaluating any actual pole. Total fullwidth4/pi_lower uses200/157 correctly; rem/2 and lowhalf radii correspond to centered interval remainders. The arithmetic reserve remains an explicit unproved implementation condition, not an achieved B certificate.
+
+No mathematical blocker found. The prospective reader must retain exact midpoint s and actual As/A' widths, check all114972 denominator intervals, and preserve indeterminate cases. A feasibility pass is conditional on the future center arithmetic reserve and says nothing about actual B values, selected24 conditioning or leakage. Runtime/cost remain separate gates.
