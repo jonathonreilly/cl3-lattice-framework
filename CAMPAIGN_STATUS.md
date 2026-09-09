@@ -50,7 +50,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W42 lands corrected KCPT #7882 and transferred finite cutting #7028. Fixed backlog: 52 open; 132 reviewed science scopes landed plus eight partial Maxwell scopes held. 56 earlier closures remain pending at four open successors. Functional-Record, transaction and gauge-effect repairs continue; formal audit deferred.
+1. W43 lands corrected conditional Record #7852. Fixed backlog:51open;133reviewed science scopes landed plus8partial Maxwell scopes held.56earlier closures pending at4successors. Transaction archive relocation, gauge corrections and C3/occupancy repairs continue; audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

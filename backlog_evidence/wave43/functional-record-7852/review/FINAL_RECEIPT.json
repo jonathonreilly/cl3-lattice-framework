@@ -1,0 +1,368 @@
+{
+  "verdict": "CHANGES REQUIRED",
+  "pr": 7852,
+  "head": "3b66942c8c2772a5e8993ed2b3ae31e8d5cc0384",
+  "raw_parent": "3d14718af4e110b783cefb539db35e1aaca66f71",
+  "original_commit_base": "2cea9a595ee2f0a6c47096de6f821b905182f48c",
+  "review_base": "eaa413deea794f2f2b1f4fbfc55106ef5fd3a91e",
+  "selected_tree": "f1c0afc728cacfee9a3108ddb06e160b81ecd9a4",
+  "current_main": "6f99df6576ea8a3bf3e122f0e556f10d9418b8b3",
+  "authored_path_count": 31,
+  "history_path_count": 28,
+  "deletions": [],
+  "finding_ids": [
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "optional": "Compute or accurately label IC rank; independent exact rank4 already confirmed.",
+  "report_sha256": "e5715cb880a5580bf64e22e766843c1b33eaa3ce32b173458382f43dbb02221f",
+  "findings_sha256": "ac6592925b79cca615165d6f472846d747bfebfc30dfe02dceb509e9b7c86549",
+  "artifacts": [
+    {
+      "path": "CHILD_CAPTURE_PREFLIGHT.json",
+      "sha256": "6b0079585216870b1c6c606d0e3570ac6c50bc521d0730cf736d960fe950eb07",
+      "bytes": 1234
+    },
+    {
+      "path": "CLOSURE.json",
+      "sha256": "41c00974788f425e939f5a97cbc7142246717d0fac03c98c955a37c72ad9d17d",
+      "bytes": 9192
+    },
+    {
+      "path": "CURRENT_MAIN_BINDING.json",
+      "sha256": "d08ab45e3d1af42c133dc1b330c66047bde02f0e1aff17b3e8dff1992837df78",
+      "bytes": 4494
+    },
+    {
+      "path": "DECISIVE_CONTROLS.json",
+      "sha256": "b0a88e87a745922aebf9a07575d08d2a873ebf57a406ccc6c20eee69f1be88a9",
+      "bytes": 1973
+    },
+    {
+      "path": "ENDPOINT_MAP.json.gz",
+      "sha256": "1ed65c3916ee8501947d9a857a933c676ae9b514e458e4468e30a723fb959737",
+      "bytes": 1927313
+    },
+    {
+      "path": "FINAL_ENDPOINT_MAP.json.gz",
+      "sha256": "8af2cbefa0e64dc65c778265b4b0ab2ca429d0aefccc5c27e5a62037bd6cb961",
+      "bytes": 2087510
+    },
+    {
+      "path": "FINDINGS.json",
+      "sha256": "ac6592925b79cca615165d6f472846d747bfebfc30dfe02dceb509e9b7c86549",
+      "bytes": 3134
+    },
+    {
+      "path": "LIVE_PR.json",
+      "sha256": "55468281e58e84b10ce6326dfeac01db66b61dcc00348bcd52e217cc13989b7e",
+      "bytes": 7827
+    },
+    {
+      "path": "ORIGINAL_EXECUTION.json",
+      "sha256": "cf6dc586b61ff54c5b46f02ed0f75a68fdd17c7c3b8cd042be4880efda1bf0ef",
+      "bytes": 39765
+    },
+    {
+      "path": "PLANNING_ENTRY.json",
+      "sha256": "67339a4ce6261d62568e0505665debc962564f32ced9230e1571f28042dcde5d",
+      "bytes": 4411
+    },
+    {
+      "path": "READ_AND_SCOPE.json",
+      "sha256": "f9cdfea9f37d17b82a0e9b46ad749fd55ced426f5595b4fd26c6efbd4054f33d",
+      "bytes": 1393
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "e5715cb880a5580bf64e22e766843c1b33eaa3ce32b173458382f43dbb02221f",
+      "bytes": 6293
+    },
+    {
+      "path": "SOURCE_SELECTION.json",
+      "sha256": "6325592d592a2fcc892cab57131479874b90f8d9bcd95399bbb7de8655c6925e",
+      "bytes": 14048
+    },
+    {
+      "path": "actual_axis_bias.py",
+      "sha256": "a583c9218fa32182c11d543f03c9a6c59625877245ec1a0bb9de87b60fa2629d",
+      "bytes": 2290
+    },
+    {
+      "path": "capture-probe/scripts/probe.py",
+      "sha256": "3e4618301118bdba45f6e08f86aac3db3c5b7e686e879521577204e3eab0cfdd",
+      "bytes": 260
+    },
+    {
+      "path": "decisive-controls.first.log",
+      "sha256": "9fdc4ec4cdb8f38b6c358f772d18a8f0a59925818a0c167e8b17ef67673229a6",
+      "bytes": 440
+    },
+    {
+      "path": "decisive-controls.log",
+      "sha256": "b0a88e87a745922aebf9a07575d08d2a873ebf57a406ccc6c20eee69f1be88a9",
+      "bytes": 1973
+    },
+    {
+      "path": "decisive_controls.first.py",
+      "sha256": "ef3d86e54d6c92e302a89ef4929640a1490b934fd27cb387115e1748136dc968",
+      "bytes": 3638
+    },
+    {
+      "path": "decisive_controls.py",
+      "sha256": "2bf297832512f8c89439ee536e188c72ebffe428d6771265dbe0451e124e6e2e",
+      "bytes": 3649
+    },
+    {
+      "path": "execute_original.py",
+      "sha256": "18dd058f02c559b23590c7f8bf90fdf2393ef9f48577e480d6cbe91df6154948",
+      "bytes": 3740
+    },
+    {
+      "path": "finalize.py",
+      "sha256": "1bbe0195fee68c1b00841bb0eceaca5b079138782764825cc03a66e6b3ddc5bd",
+      "bytes": 6472
+    },
+    {
+      "path": "inspect_closure.py",
+      "sha256": "7045615bbe7c56ed2de8f48a57474f607976fd699f3540d776a396f02bdfde4a",
+      "bytes": 2558
+    },
+    {
+      "path": "normal.py",
+      "sha256": "64a78c5d337f267a607a799331dc4c8662ec115af2e759331dab178f5f116acf",
+      "bytes": 2280
+    },
+    {
+      "path": "original-cache/finite_action_functional_typed_admissibility_record_identification_2026_09_02.txt",
+      "sha256": "290546b7f2a1b0a1007d8958f08e90e554a3d9578db18b6b1d78a42c9f9b4f84",
+      "bytes": 2684
+    },
+    {
+      "path": "original-execution.log",
+      "sha256": "2e97846a530712f0d8a590bfcb2aec51f6d5f304dbaccf9c1ae00b524bb0ccc8",
+      "bytes": 2415
+    },
+    {
+      "path": "original-stdout.txt",
+      "sha256": "e760cba9858b46dba58135388fc66cd97bf8db2039e3194e7b582c61b2a79642",
+      "bytes": 2289
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/APPROACH_REGISTRY.md",
+      "sha256": "68efba8064f3a05a13187dd8db99fc009670e8d9e9bf1e020961abd34f511746",
+      "bytes": 946
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/ARTIFACT_PLAN.md",
+      "sha256": "daf73b1fa000b395f0fb0e6bf4f79ee62a89f09149872e3517e85cfa2dc187eb",
+      "bytes": 527
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "64cba638b611597686ca733a91dc955ed945ee251ac3db5e022e3927ded65bc3",
+      "bytes": 1473
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/AXIOM_OWNER_DECISION_SURFACE.md",
+      "sha256": "ae0e767d263ea8cce6c7b0b26c990d0d9746aa49277639dd3fded0c4e8ab2b36",
+      "bytes": 4427
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "658bfb34f88d32c81ce06d2a49af848dfdf2e10b7bd16c8b08b696ae103b3911",
+      "bytes": 656
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/EXACT_TARGET_CONTRACT.md",
+      "sha256": "08ab7869c44a18b3faeacfea1e9691431815abc9b3bb3e9333d5611919f41fcc",
+      "bytes": 4563
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/GOAL.md",
+      "sha256": "66c19f7ac2f9bfc8c6f541cd82f024b7980701d0e3a6fedc772cf47b16ab37e5",
+      "bytes": 1462
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/HANDOFF.md",
+      "sha256": "93c41baf4e3039b3d931c9c93db2398efb1b3dd898b7a86f19dbff4d8f52bd27",
+      "bytes": 1253
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/LITERATURE_BRIDGES.md",
+      "sha256": "35b3efbb026519719d9db809c809abe528396d35750c47237a351add07490c1d",
+      "bytes": 802
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/MUTATION_PLAN.md",
+      "sha256": "946d2d3ed6a5fcb9b2154e160bbc92014abb26ac7ec4d2743dd49be9b34afea5",
+      "bytes": 1348
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/NO_GO_LEDGER.md",
+      "sha256": "9f66bc4cc7165530aaf69de36eb3a90bd4ad2f2c3eb17245d2537bb7aa1e75f0",
+      "bytes": 1023
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/OPPORTUNITY_QUEUE.md",
+      "sha256": "86dfc8e185a572340bdd0dc31f5ad5c57990934e6a0215455517403285501233",
+      "bytes": 672
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/PANEL_RETURN.md",
+      "sha256": "75dcc388dbba2c70364ca8d3605552b0fab627c4d0309fb0c81d5e829fa8bcb2",
+      "bytes": 2479
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/POSTEXECUTION_CONTRACT_AMENDMENT.md",
+      "sha256": "79986b7a9e412ce0bd31c7483a95dd449056b6ea965a42e6e22cae68ce170833",
+      "bytes": 841
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/POSTEXECUTION_MUTATION_AUDIT.md",
+      "sha256": "1925cc503f7dc8eab170cea9ffb7c48910b4ac4bdaab7df82873464387f0740e",
+      "bytes": 621
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/POSTEXECUTION_NOVELTY_AUDIT.md",
+      "sha256": "c4c3a5ad36fa3acaccfbb1c31455f30699c0a91b44226663ce7e7de6610f14a1",
+      "bytes": 863
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/POSTEXECUTION_NO_GO_AUDIT.md",
+      "sha256": "af2ccd8f347416f997a9248a1ffd6f839f35e1aeca8486fb8e43404b5daf114b",
+      "bytes": 853
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/POSTEXECUTION_PR_CHECK.md",
+      "sha256": "313edd4c6cd10bc963f48750ac2380fe4898a156f323217fb54518e7d77d9815",
+      "bytes": 1028
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/POSTEXECUTION_TRACE_AUDIT.md",
+      "sha256": "7374d184202c47e08fb6af62af75c4a46f8a459ccf9fdff9879bbd6329ae79c1",
+      "bytes": 1074
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/POSTEXECUTION_VALIDATION.md",
+      "sha256": "eca7b3c6e5085a356ef784e0e5b753395609e70c023357f0e4911c39f5d0f828",
+      "bytes": 1393
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/PREREGISTRATION.md",
+      "sha256": "975ec715ce61231d5e666b2fce2d4ce2334992a97a4570ba8d680c9ff54ad302",
+      "bytes": 3023
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/PRIOR_ART_SEARCH.md",
+      "sha256": "ff335f0326cb9d2e2168c381dd210b731ab515996b078d586d2a171c240f491b",
+      "bytes": 5041
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/PR_BACKLOG.md",
+      "sha256": "48a58f7763499fbd78cbbd3077eca8d37d1777180667a4ccfde712e93fcef27b",
+      "bytes": 351
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/REVIEW_HISTORY.md",
+      "sha256": "e0beb445f376b1b6d5c925571ba1886852acd54f07946f88aa99afb86012cc35",
+      "bytes": 1090
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/ROUTE_PORTFOLIO.md",
+      "sha256": "1b319adbc5e8a615dfcc2afd0bfdc699138587fbb24144edd4338a14ed8ee361",
+      "bytes": 1154
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/SOURCE_BINDING.md",
+      "sha256": "fa21b1b79309b384a060d2f0ab2aa31855d5b024e7a22d55e9281fb34702264f",
+      "bytes": 1859
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/STATE.yaml",
+      "sha256": "89204a06704fc42ef374b31a59e313cc7d2cc3b00875d0888440734738e57ec5",
+      "bytes": 2280
+    },
+    {
+      "path": "originals/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/TRACE_GATE.md",
+      "sha256": "b08f24da2460fbe1b9b859247b01239901a5386999bfad5929904d74f63e2cdc",
+      "bytes": 693
+    },
+    {
+      "path": "originals/docs/FINITE_ACTION_FUNCTIONAL_TYPED_ADMISSIBILITY_RECORD_IDENTIFICATION_DECISION_BOUNDED_THEOREM_NOTE_2026-09-02.md",
+      "sha256": "3722dd3f0a5ec1b0542bdf5dbe0d1009ff94b40e59603f39f7991922cb77423b",
+      "bytes": 21752
+    },
+    {
+      "path": "originals/logs/runner-cache/finite_action_functional_typed_admissibility_record_identification_2026_09_02.txt",
+      "sha256": "ba9af6ed447caa2414d915f8dc56e397b30abb3a54a11c0012d82a9f8487c3c8",
+      "bytes": 2684
+    },
+    {
+      "path": "originals/scripts/finite_action_functional_typed_admissibility_record_identification_2026_09_02.py",
+      "sha256": "8df9fc82fb403623e443b4599ecde6ddf5c167ce0bdeecb20d350829621c2b34",
+      "bytes": 26289
+    },
+    {
+      "path": "planning/AGENTS.md",
+      "sha256": "4ac16955fb68639322d6d34c35b6ad97a1c4c9244fb26c5223112de984b695b5",
+      "bytes": 9967
+    },
+    {
+      "path": "planning/BACKLOG_STATUS.md",
+      "sha256": "5623e3679eee2269dc0230e9d092e87f5276b761ad5b9ff6000c506c0f151ca2",
+      "bytes": 34548
+    },
+    {
+      "path": "planning/CAMPAIGN_STATUS.md",
+      "sha256": "d166f84a237e326cd570a8fb4591c9269b8e9315759228c8c1ac2bec90d24eac",
+      "bytes": 4157
+    },
+    {
+      "path": "planning/TOE_SCORECARD.md",
+      "sha256": "f95b919d1b091aefb2a8564e9f6da48ab43dd6cb19a7eeef0ff212a447b6430c",
+      "bytes": 10000
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "db013718b4e5ca8c5877edb25f34ed7354c434a7afa7934cf412c2159c02bd43",
+      "bytes": 4328
+    },
+    {
+      "path": "preregistered/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "6795f69c99e820a2bec184ffe2c067dbe4569b84bea661e94b7df2def492d131",
+      "bytes": 390
+    },
+    {
+      "path": "preregistered/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/HANDOFF.md",
+      "sha256": "d057110d68d2b6eae4daeacdcb140a54fd64a9b0f421ea6036281c54c2c71927",
+      "bytes": 201
+    },
+    {
+      "path": "preregistered/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/PR_BACKLOG.md",
+      "sha256": "c4ce02533ceb0c21288fe130f3668e83b959178df0b0a0a270f01d84c9db4b55",
+      "bytes": 296
+    },
+    {
+      "path": "preregistered/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/REVIEW_HISTORY.md",
+      "sha256": "9165038043ad79cbc99cceaadc749ae091a7a24a41a0dcb743c731bd3f197308",
+      "bytes": 225
+    },
+    {
+      "path": "preregistered/.claude/science/physics-loops/toe-physical-functional-record-bridge-block48-20260902/STATE.yaml",
+      "sha256": "b929499dc97e09a1ccb7f0761085783382dc81a237175b85fb2add5edcd25e86",
+      "bytes": 1605
+    },
+    {
+      "path": "probe-cache/probe.txt",
+      "sha256": "62989e8d73405d68eb0ac1f2291513784c62f9dc2a2e097bf07d8c1fe1985840",
+      "bytes": 252
+    }
+  ],
+  "artifact_count": 68,
+  "original_execution": "One genuine unchanged10/0 run,0.4326748847961426s; old cache preserved, current execution external.",
+  "no_source_edits": true,
+  "formal_audit": false,
+  "created_utc": "2026-09-09T05:54:19.179901+00:00"
+}

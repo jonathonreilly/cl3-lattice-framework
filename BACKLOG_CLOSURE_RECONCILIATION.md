@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T06:03:07.499532+00:00; main `f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79`.
+Updated 2026-09-09T06:37:18.099657+00:00; main `b6684a480dadd7c9010efbe265760f3d4682e21d`.
 
-132 reviewed original science scopes landed: 89 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The 92 direct original closures include 89 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+133 reviewed original science scopes landed: 90 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The 93 direct original closures include 90 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
@@ -81,6 +81,7 @@ Updated 2026-09-09T06:03:07.499532+00:00; main `f4be2a0ab39423ee8bd3fa2d75b8806b
 | #7849 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `d81f3c22117522411c20fb6c38eef5874c4765ae` |
 | #7850 | draft_disposition | reviewed_corrected_scope_on_main | `47da12268436ee1843e822386477aa2c829d95a9` |
 | #7851 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `47da12268436ee1843e822386477aa2c829d95a9` |
+| #7852 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `b6684a480dadd7c9010efbe265760f3d4682e21d` |
 | #7853 | draft_disposition | pending_on_open_successor | #7827 |
 | #7854 | draft_disposition | pending_on_open_successor | #7827 |
 | #7855 | draft_disposition | pending_on_open_successor | #7827 |

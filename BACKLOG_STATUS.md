@@ -1,24 +1,26 @@
 # Backlog review and landing — current handoff
 
-Updated after wave42 at 2026-09-09T06:03:07.499532+00:00. Main is `f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79`.
-Fixed original 254 cutoff; new arrivals excluded. Formal audit deferred until a solid TOE.
+Updated after wave43 at 2026-09-09T06:37:18.099657+00:00. Main is `b6684a480dadd7c9010efbe265760f3d4682e21d`.
+Fixed original254 cutoff; new arrivals excluded. Formal audit deferred until a solid TOE.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 92 |
+| Closed directly after reviewed landing | 93 |
 | Closed by draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner reservations | 52 |
+| Still open, including three owner reservations | 51 |
 | Original membership | 254 |
 
-132 reviewed original science scopes landed: 89 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The 92 direct original closures include 89 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds. Zero original drafts; reservations apply transitively. Of 110 other closures: 43 corrected scopes landed, 56 pending at four open successors, seven partial landings with explicit holds, two starting-main supersessions, one empty, one unexecuted plan.
+133 reviewed original science scopes landed: 90 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The 93 direct original closures include 90 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds. Zero original drafts; reservations apply transitively. The110 other closures comprise43corrected scopes landed,56pending at four successors,7partial Maxwell,2starting-main supersessions,1empty and1unexecuted plan.
 
-Including seven pre-cutoff arrivals #8003–#8009, session 99 direct closures, 42 science/source batches and 167 new source documents. 41 batches passed one combined gate; W14's actual repaired retry is preserved. Main ledger 4,570 = 4,198 unaudited science + 372 meta; 72 notes await mechanical refresh. Generated validation preserved and stripped; no formal auditor or verdict.
+Including pre-cutoff #8003–#8009: session100direct closures,43science/source batches,168new source documents.42batches passed one combined gate; W14actual gate repair and W43pre-gate composition rebuild are preserved. Main ledger4,570=4,198unaudited science+372meta;73notes await mechanical refresh. No audit or grade.
 
-W42 lands #7882 and the corrected finite scope of already-closed #7028, transferred at open #7315. Only #7882 is newly closed; #7315 remains open and held. All seven original bodies are preserved historically. Genuine final primaries passed 23 KCPT checks plus 49 captured parent checks, and 19 cutting checks. The cutting run took 1.6 seconds without replaying historical search campaigns. All 16 source/manifest hashes were verified on remote main. One combined gate passed in 228.915 seconds. Supplied finite KCPT matrices and corner-simplex geometry only. KCPT full-center interpretation keeps an explicit archived cap premise; ambient unitary equivalence follows conditionally from the represented profile. Cutting retains seven verified constructions, finite traces and narrow counterexamples. Historical censuses, exact minima/exclusions and search claims remain unverified. No physical charge, Record, clock or model-selection claim is accepted. See [wave42 evidence](backlog_evidence/wave42/INDEX.json).
+W43 lands #7852 with all31 original bodies and5earlier versions preserved,40source additions plus manifest. Genuine11/0 evidence and actual altered-source checks are bound to original-reviewer confirmation. Conditional finite Gibbs/menu/barycenter/instrument and local-law distinctions. One-use probabilities need a separate joint IID/reset or stationary-ergodic assumption for frequency consistency; common-bit correlation is a counterexample. Local binary laws are not full-domain four-axiom models. Physical Record identification, global formation and physical frequency supplier remain open. One combined gate passed in 237.436seconds. See [evidence](backlog_evidence/wave43/INDEX.json).
 
-Astra low remains the focused landing-review default; unresolved consequential mathematics escalates to Astra xhigh. Reuse original review and same-session correction confirmation. Detailed certification waits for audit; the [pilot](REVIEWER_MODEL_PILOT.md) is one workload, not a general cost guarantee.
+The intended #7845 companion was ejected before the full gate: actual claim discovery treated its docs/work_history archive as44new historical claim nodes. The author is moving that archive outside docs and refreshing only affected links/pins/cache, with original-session confirmation required. Its math PASS does not authorize landing the defective publication package. Initial graph, ejection and cleanup incidents are preserved; no original science was lost and no full gate was retried for W43.
 
-Functional-Record #7852, transaction #7845 and gauge-effect #7841 author repairs are active; all three original reviews are complete. The other 32 transferred scopes at #7315/#7359 have actual reserved dependencies and remain held; both full successors stay open. Original [routing evidence](backlog_evidence/successor-routing-20260909/INDEX.json) is preserved, with #7028's later landing recorded separately. No pending unit receives acceptance. Maxwell's production and broader physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
+Astra low remains focused landing-review default; unresolved consequential mathematics escalates to Astra xhigh. Reuse original reviews and same-session affected confirmations. [Pilot](REVIEWER_MODEL_PILOT.md) remains one workload, not a general cost guarantee.
+
+Transaction #7845 archive relocation now has same-session PASS and is ready for W44. Gauge #7841 correction continues; C3 response #7839 and occupancy #7838 each have four narrow findings with authors active. Actual reserved-dependent scopes at #7315/#7359 and both full successors remain held.56closed scopes remain pending at four successors. Maxwell production/physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
 
 ## Landed source history
 
@@ -367,3 +369,5 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Corrected finite fermion and generation science; readout claim typing | `6f99df6576ea8a3bf3e122f0e556f10d9418b8b3` | `backlog_evidence/wave41` |
 
 | Corrected finite KCPT algebra and separable cutting constructions | `f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79` | `backlog_evidence/wave42` |
+
+| Corrected conditional Record frequencies and finite local laws | `b6684a480dadd7c9010efbe265760f3d4682e21d` | `backlog_evidence/wave43` |
