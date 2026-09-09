@@ -1,0 +1,1 @@
+First small control failed at predicate16: expected73 for both impurity choices in an asymmetric abstract fixture. For A, Kx0=qD−8qA and KxA=qA gives absolute row sum65+8=73; for C, Kx0=qD−8qC is orthogonal to KxA=qA, giving65. Test expectation corrected; action source unchanged. Original source/test/output/error preserved in before-asymmetric-toy-fix. No native calls.
