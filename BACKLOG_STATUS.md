@@ -351,3 +351,5 @@ then strict lint and changed-evidence checks passed. This closes no science PR
 and changes no backlog count or audit verdict. See [process evidence](backlog_evidence/astra-low-policy-20260908/INDEX.json).
 
 | Conditional indexed formation and chirality diagnostics | `7f21e7f06e2d1b5e55f230a030b0cce537dd3d89` | `backlog_evidence/wave35` |
+
+Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7938, covering formation rate, vacuum and readout. #7940/#7910 forms a separate Regge unit. No new acceptance.
