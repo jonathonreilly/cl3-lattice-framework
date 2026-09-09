@@ -1,0 +1,5 @@
+# Initial06eca schema finding
+
+Full new monitor/schema read against reviewed continuation worker. Fabricated five-orbit case with ONE newly added pair (cumulative5) passes. Independently rehashed old-row selection, initial step4 diagonal pass, duplicate restoration and false gate reject. However inserting the original full coordinate checkpoint(pairs4) immediately after restored_checkpoint is ACCEPTED. This permits retained evidence of an initial coordinate replay the protocol says is absent. No physical histories or native entries were loaded; all data derives from the copied author's fabricated fixture, extended independently.
+
+Required narrow correction: new checkpoint must follow a pending new pivot, have cumulative pairs>=5 and a fresh matching diagonals_complete(step==pairs). Keep original06eca source/evidence. This changes monitor consistency checks only, not worker mathematics. Resource topology, strict flags/byte imports/current-group cleanup look consistent with reviewed predecessors, but final source-bound verdict awaits this delta.

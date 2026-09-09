@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+  File "/private/tmp/toe-24h-probes-20260908/native-compression-continuation-root-review/schema_controls.py", line 26, in <module>
+    assert schema.check(o,rf,3)['status']=='PASS_CONTINUATION_SCHEMA';checks+=1
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-compression-continuation-root-review/schema.py", line 55, in check
+    e=json.loads(line);olast=e
+      ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py", line 341, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 25765 (char 25764)

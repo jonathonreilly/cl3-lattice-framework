@@ -1,0 +1,7 @@
+# Prospective saved first-action append reconciliation
+
+UNEXECUTED. Fixed accepted5dff/result5e37be all2010 rows/6015 entries; no oracle, producer core, worker or binder imports. Independent literal seven-site Fraction contractions and256-bit square-root balance brackets verify every saved midpoint G/J enclosure. Physical input inflation is a separately imported ledger, not re-proved by midpoint reconstruction. Same outward-containment approach as reviewed Ward saved checker; first-action formulas separately authored/reviewed.
+
+Source/runtime readiness only; verify requires exact authorization and exclusive attempt marker.30s external/384MiB,29s dispatcher inclusive,25s arithmetic secondary limit. Root external monitor remains required. Current row is saved before parse/arithmetic and all failures retained. Full producer7428 source/input pins, raw stream, root/worker receipt and acceptance, and transitive mu/cache/Ward POST closures are bound and checked before/after. External raw shell timing/RSS reconciled. No execution is implied by this freeze. Original producer and prior saved checker remain immutable.
+
+Author of this checker previously authored generator proof and external monitor and reviewed producer implementation; uses independently assembled literal matrices rather than producer reduced bilinear helper. No proof-by-sampling: all6015 saved entries are the prescribed coverage.
