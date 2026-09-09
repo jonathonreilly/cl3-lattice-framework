@@ -11,3 +11,5 @@ A new theorem now has independent constituent and full canonical source PASS. Fo
 The next B/Bprime pilot is UNLAUNCHED at this preregistration. Final worker76350a22 and rootaf7f56e3 have independent source/monitor review. It fixes two parameters, 31 panels, 12 Gauss nodes per panel, up to746 saved high-precision oracle calls, and final width target1e-6. Its inclusive limit is60 seconds, root deadline59.5 seconds, and384MiB sampled process-tree RSS. One attempt only; retain all partial oracle values, panels and failures. Source-proof closure was repaired before launch. Exact remote preregistration verification precedes execution.
 
 Latest main6952b95754 was fetched and the new finite Record/Markov/channel boundaries inspected; they leave physical law, preparation and clock selection open and do not change the Gaussian premises. Two more completed worktrees were removed after their useful evidence was verified on remote branches:52 removals total, about59GiB free. Original dirty and other-worker checkouts remain untouched. All completed physical protocols stay completed; do not rerun them merely to resume.
+
+Snapshot files: 111.

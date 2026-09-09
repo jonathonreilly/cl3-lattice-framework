@@ -1,0 +1,9 @@
+# Root B monitor review
+
+PASS on run_once.py SHA b87b88c1fc4248f190bdc662833e1eea6a3ed8da4c48cfe6b057d8d631ecc5b9, binding worker859d88387b1e3d68a8d770576c7f3b3d3b6f7bb910de5dcf03741ae2c38852c9. Complete root source and ROOT_FREEZE read. Disclosure: reviewer authored the worker; this is an independent review of the root-authored supervisor, not independent worker science validation. Zeno owns the latter.
+
+The supervisor uses one root and one -I-B-S worker, streamed pre/post source/runtime pins, fresh output and exclusive STARTED/log files. Root59.5-second alarm is adjusted for elapsed startup; ps sampling includes root and descendants under384MiB and has0.3-second timeout. Failure kills the worker process group and preserves its partials plus root logs/peak/receipt. External whole-shell60-second acceptance remains required for interpreter startup and final serialization. No separate resident bootstrap or physical evaluator is introduced.
+
+The final checks reconstruct the exact expected746 oracle arguments from31 dyadic panels and saved12-node endpoint brackets, require unique oracle arguments and exact set equality, validate160terms and1e-30 interval widths, and require both s1,2 output rows. Rational endpoint-width identities and target statuses are checked; completion and INDETERMINATE remain distinct. Panel indices are fixed. Positive weights/node domains are checked without claiming the monitor independently certifies the Gauss rule itself. That rests on worker source and its independent review.
+
+Oracle, panel, Gauss and total times must be finite positive; their nesting avoids double-counting panel-contained oracle work. Source/result/worker bindings are checked after completion. The monitor does not recalculate B or certify missing physical data. No necessary monitor correction found. No actual B call or launch by this reviewer.

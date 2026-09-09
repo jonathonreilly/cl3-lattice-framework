@@ -1,0 +1,20 @@
+--- 
++++ 
+@@ -17,7 +17,7 @@
+ 
+ # A quantitative reference chart for the native pair vacuum
+ 
+-**Status:** conditional-support; final independent source review pending. No audit status is asserted.
++**Status:** conditional-support; independent source reviews are recorded in the accompanying packet. No audit status is asserted.
+ 
+ Use the [finite-excitation and scalar-energy theorem](NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md), [infinite pair/node theorem](NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md), and [canonical dispersion](NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md). The native Hamiltonian and Gaussian reference remain supplied. The parent supplies the CAR implementation, trace-class polarization change and actual scalar-energy identification; the present note proves quantitative transversality for the actual two-link rank-one bipartite perturbations.
+ 
+--- 
++++ 
+@@ -6,5 +6,5 @@
+  pins=json.loads((root/'outputs/native_pair_vacuum_chart_2026_09_09_inputs.json').read_text())
+  for rel,h in pins.items():
+   if hashlib.sha256((root/rel).read_bytes()).hexdigest()!=h:raise ValueError('input '+rel)
+- helper=root/'scripts/native_pair_vacuum_chart_controls_2026_09_09.py';ns={'__file__':str(helper),'__name__':'controls'};exec(compile(helper.read_bytes(),str(helper),'exec'),ns);result=ns['result'];result.update({'input_hashes':pins,'actual_current_surface_status':'conditional-support','assembled_review':'pending','elapsed_seconds':time.monotonic()-start});print(json.dumps(result,indent=2))
++ helper=root/'scripts/native_pair_vacuum_chart_controls_2026_09_09.py';ns={'__file__':str(helper),'__name__':'controls'};exec(compile(helper.read_bytes(),str(helper),'exec'),ns);result=ns['result'];result.update({'input_hashes':pins,'actual_current_surface_status':'conditional-support','assembled_review':'see packet independent reviews; formal audit deferred','elapsed_seconds':time.monotonic()-start});print(json.dumps(result,indent=2))
+ if __name__=='__main__':main()
