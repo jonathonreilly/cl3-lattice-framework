@@ -1,0 +1,23 @@
+{
+  "scope": "Compact receipt support only; no native arithmetic.",
+  "cases": [
+    {
+      "case": "isolated_compact",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS_COMPACT_EXACT_SUPPORT\",\n  \"predicates\": 126,\n  \"native_matrix_replay\": false,\n  \"generalized_saved_post\": \"ACCEPTED_INDEPENDENT_SAVED_STAGE_RECONSTRUCTION\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "case": "changed_summary_rejected",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-generalized-compact-2bt1zek4/scripts/native_generalized_action_boundary_2026_09_09.py\", line 34, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-generalized-compact-2bt1zek4/scripts/native_generalized_action_boundary_2026_09_09.py\", line 20, in main\n    check(d['generalized']==original)\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-generalized-compact-2bt1zek4/scripts/native_generalized_action_boundary_2026_09_09.py\", line 11, in check\n    if not x:raise ValueError('compact predicate '+str(n))\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: compact predicate 6\n"
+    },
+    {
+      "case": "changed_original_copy_rejected",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-generalized-compact-2bt1zek4/scripts/native_generalized_action_boundary_2026_09_09.py\", line 34, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-generalized-compact-2bt1zek4/scripts/native_generalized_action_boundary_2026_09_09.py\", line 18, in main\n    check(hashlib.sha256((P/f'receipts/GENERALIZED_ORBIT_{i}.json').read_bytes()).hexdigest()==archive[f'/private/tmp/toe-24h-probes-20260908/native-coordinate-free-run-prospective/ORBIT_{i}/RESULT.json'])\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-generalized-compact-2bt1zek4/scripts/native_generalized_action_boundary_2026_09_09.py\", line 11, in check\n    if not x:raise ValueError('compact predicate '+str(n))\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: compact predicate 1\n"
+    }
+  ]
+}

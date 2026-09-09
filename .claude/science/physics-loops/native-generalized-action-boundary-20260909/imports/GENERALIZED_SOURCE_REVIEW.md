@@ -1,0 +1,9 @@
+# Generalized retention and monitor affected review
+
+Retention1c555 stage/source review PASS; unchanged worker908b mathematical work reused. Independent of James's reviewer-authored retention repair. Exact schedule matches actual acquisition upper pairs, E*T and contraction dimensions, both impurity loops, repeated Schur snapshots, complete certificates and honest Refused prefixes. The frame e>=1 early branch legitimately skips inverse/Schur events but continues to the second impurity. Two independent synthetic branch predicates pass, including rejection of a missing second action. James's six fabricated full-five-orbit controls were read; no native data or matrices loaded.
+
+Found monitor gaps beyond retention: root schema parsing held all per-orbit event matrices but RSS was sampled only while child lived, and final pins ran only before schema. James's55143557064ce7437060281d4c6f2afe66382e3ad427390d27771ccd82b797fe adds root high-water RSS after schema and in finally, plus final pins on success/failure preserving original failure. These discharge the acceptance-guard concerns. The all-event parser still has unmeasured liveness; a failed cap must remain failure, not an implicit memory extension. Requested only moving peak accumulation before its cap require so over-cap receipts retain the actual maximum; final hash addendum follows.
+
+No arithmetic replay, native calls or scientific input loads. Parent retains final review/preregistration authority. This source review is not a new numeric leakage result.
+
+Final receipt-only order repair confirmed: rootc4d1fb84175fed7da6733514e73b3aab2ab12c1ff2f7d25533c77e0cb297af05 accumulates root high-water RSS before rejecting the cap at both sites. Local root source pins match. Final affected source PASS; no remaining blocker within the bounded source contract. Worker908b unchanged.
