@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
-Verified source/status snapshot: 2026-09-09T07:58:00.398368+00:00, main
-`13046c38aa1fb57767af5e4cdfe14c879351956d`. This is a planning map, not
+Verified source/status snapshot: 2026-09-09T08:28:36.061694+00:00, main
+`e95f5d76d7d2a0595b6e5ef0d5782ee84fe48daa`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -22,7 +22,7 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 85 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 86 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
@@ -114,3 +114,5 @@ W44adds conditional normalized clean transaction-grant composition and bounded f
 W45adds corrected conditional gauge-generator, projective occupancy/Jacobian and C3response/eta mathematics. Physical carrier, action, measure, event and readout suppliers remain open. No audit grade or TOE certification.
 
 W46 adds corrected finite diagonal-adjacency algebra, a supplied finite Haar-jump process and a conditional action/Record architecture discriminator. Physical model, carrier, action, formation law and clock selection remain open. No audit grade or TOE certification.
+
+W47 adds corrected finite ACI union/comparator and terminal-confluence scope. Arbitrary-tree/contact safety and physical Record/generator/absorption remain open. No audit grade or TOE certification.
