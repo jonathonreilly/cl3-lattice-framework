@@ -44,11 +44,15 @@ this is not a subscription bill or proof of universal reviewer superiority.
 See [reviewer pilot](REVIEWER_MODEL_PILOT.md). Reuse completed reviews and
 original-session correction checks. Detailed certification waits for audit.
 
-backlog_8001_review repairs #7898/#7905/#7916 from the complete nine-group
-original gravity review; backlog_gravity_ruler_review retains affected confirmation.
-backlog_ticks_review examines chirality #7973/#7989/#7991. backlog_draft_triage
-reviews #7966 and its seven pending consolidated original scopes. These pending
-units have no scientific acceptance yet.
+Gravity #7898/#7905/#7916 final executions passed20/0,17/0,19/0;
+backlog_8001_review seals the author packet, then backlog_gravity_ruler_review
+performs affected confirmation. Root read all source corrections before execution.
+Chirality #7973/#7989/#7991 original review is complete: ten material findings,
+including an exact nonempty covariant-table counterexample to the universal slab
+claim. backlog_batch_contract repairs it; backlog_ticks_review retains confirmation.
+backlog_draft_triage reviews #7966 and its seven pending consolidated scopes;
+the magnetic sampler's burn-endpoint buffer overrun is a concrete new blocker.
+These pending units have no scientific acceptance yet.
 
 ## Landed source history
 

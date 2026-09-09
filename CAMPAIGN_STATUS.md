@@ -53,8 +53,8 @@ joint-law selection remain open.
 1. W33 adds five corrected Born-menu papers to main, including a direct proof
    under explicit homogeneity assumptions. Shared reconciliation records 81 open
    originals and 103 newly landed original science scopes; 64 earlier-closed
-   scopes remain pending at five open successors. Gravity author repairs and
-   chirality original review are active. The Maxwell successor #7966 and its seven
+   scopes remain pending at five open successors. Gravity final executions passed and await final confirmation.
+   Chirality original review is complete; ten material findings are under repair. The Maxwell successor #7966 and its seven
    pending consolidated scopes are also under review. Formal audit remains deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
