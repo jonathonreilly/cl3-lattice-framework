@@ -1,0 +1,5 @@
+# Affected root correction: PASS
+
+Final root freeze 3b497e66eeac27b7a0c62f75cb54d6d568caf58343b6282de1620ac503e1e562; worker b267 unchanged. Compared complete schema/monitor delta against preserved whole 6cd9. Exact output membership now excludes FAILURE/extra files; final PARTIAL requires scalar/orbit4/row23, matching the worker's final iteration even when that row introduces no fresh support. Finite strictly positive external elapsed below30 excludes bool. Root executable membership now covers directories and py/pyc/so/dylib and is pinned explicitly.
+
+Six affected synthetic predicates pass: valid metadata, stale partial rejection, extra failure rejection, and bool/NaN/30-second rejection. All final root file pins match. Original accepted-adverse evidence and initial review remain unchanged. No worker scalar diagnostic, actual saved input, native computation, or unchanged control rerun. The two material blockers in initial e174 review are discharged; external launch/teardown accounting remains the root's responsibility.

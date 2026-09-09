@@ -1,0 +1,15 @@
+# Independent second-action source review
+
+PASS, source-only. Reviewed DERIVATION df39e7cfb0fb25d84a66c1b8afec22b7864517fd666d3594d0b53952873597a3 in native-second-action-data-stretch in full, against the prior minimal first-action derivation and signed generator/Ward conventions. I authored related first-action implementation and reviewed its proof; James authored this new extension. No native data, covariance, integral, entry or runtime was evaluated.
+
+The domain distinction is correct: admitting the three q columns creates a402-raw trial family; p=Kq adds three DATA columns, yielding405/810. It does not close action on p, nor assert independence modulo the old trial span. Injectivity on finitely supported vectors follows from the measure-zero Bloch kernel. DeltaK must use its actual Gram rows on Gamma q; only the free K commutes with Gamma.
+
+For p-to-pole entries, skew K moves K to the second slot with a minus sign in both G and J; K commutation with Gamma gives the same minus sigma*s. The source term retains sqrt(alpha). The local J(q,v) sign and factor1/12 follow from q=u/2 and the existing Gamma boundary block. Kx=(qD,qA,qC) gives negative local q Gram for G(p,x), while J(p,x)=0. These reproduce the stated center coefficients and all bare overlaps.
+
+Gamma K=|H0| gives J(p,q)=-<q,|H0|q>, so its reduction is -mu*N/4+nu*O/24. Since O d_all=-d_all and N d_all=0, J(pD,qD)=-nu/4 exactly. No claim that nu is algebraically independent of every possible native identity is needed or made. All Gamma copies use [[G,J],[-J,G]]; p is white and q black. Dimensionless p=(K/h)q is necessary and is stated; each generator action then restores h, while mu/nu in the Gram remain dimensionless.
+
+The local p self Gram is (6I-O)/4 because6N-42O/6=6I-O. Independent finite-support pi-flux stencil controls verified this for all16 signed neighbor subsets against each other, including the full six-neighbor vector. Pair norms3 or7/2 and full norm21/2 give maximal added closed trace35, hence prior strict536 becomes strict571. Counts1212 raw pairs per orbit,6060 total and405 rows per orbit/2025 total are correct. These are counts and norm bounds, not a new precision ledger or cost certificate.
+
+The coarse inequalities36/mu<=nu<=sqrt252 are Cauchy–Schwarz with powers1/4,3/4 and1/2,1. The positive integral follows Tonelli from the scalar identity. Expanding26 terms leaves positive X^28/[t^52(X+t²)], whose integrated bound is M28/(53*8^53). The right-half-plane denominator inequality |X+z²|>=cos(arg z)(X+|z|²) gives the stated6 sec(arg z) and42/(|z|Re z) bounds. Cancellation/rounding and the actual nu certificate remain explicitly unsupplied.
+
+424 small exact local-stencil/count predicates passed. They validate literal signs, support and rational moment/count consequences, not the Gaussian covariance lemma by numerical sampling. No material correction is required. The usable result is a conditional next action DATA construction with one explicit additional covariance moment; no achieved leakage, propagation or alpha follows.

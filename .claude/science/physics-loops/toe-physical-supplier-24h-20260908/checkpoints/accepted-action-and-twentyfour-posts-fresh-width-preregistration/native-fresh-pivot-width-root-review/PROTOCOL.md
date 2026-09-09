@@ -1,0 +1,3 @@
+One root and one worker. 30s external,29.5s root,29s worker;384MiB sampled whole tree. Fresh marker/output, no retry. Source-only readiness allowed, scalar launch unlaunched pending parent preregistration. Current worker process group cleanup only. Monitor authored by diagnostic author; independent review required. Full external /usr/bin/time receipt must be reconciled by parent.
+
+Final root delta rejects every extra/failure output and requires exact last scalar orbit4/row23 PARTIAL. Worker has no STARTED output; root exclusive marker plus worker ATTEMPT are the explicit once contract. Root executable/directory membership is pinned, including pyc/so/dylib. Worker b267 and all scalar arithmetic unchanged. Previous6cd preserved whole.
