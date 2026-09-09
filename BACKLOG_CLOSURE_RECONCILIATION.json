@@ -1,14 +1,14 @@
 {
   "checked_utc": "2026-09-07T21:23:22.013652+00:00",
-  "current_main": "26e73b727db1732dd89f74461114e4873c4ddef9",
+  "current_main": "e4d8bd11df12559138543a3129ea4e7b38f23ebf",
   "initial_snapshot_commit": "8eb102f8fe545b458ede8f1a63121d9bfde103a4",
   "summary": {
     "original_snapshot": 254,
-    "original_closed": 182,
-    "original_open": 72,
+    "original_closed": 187,
+    "original_open": 67,
     "original_drafts": 0,
-    "original_direct_landing_closures": 72,
-    "original_scientific_scopes_reviewed_and_newly_landed": 111,
+    "original_direct_landing_closures": 77,
+    "original_scientific_scopes_reviewed_and_newly_landed": 116,
     "closed110_scientific_scopes_newly_landed": 42,
     "closed110_scientific_scopes_pending": 57,
     "closed110_preexisting_main_supersessions": 2,
@@ -25,9 +25,10 @@
     "scientific_scope": "The original PR-authored scientific claim, runner and evidence scope, with its actual dependencies and reviewed corrections/narrowing; not the whole inherited repository tree and not proof of every superseded original assertion.",
     "closure": "A GitHub disposition; consolidation transfers review obligations without scientific acceptance.",
     "partial_context": "Historical fixture copies and corrected comparator quotations do not count as accepted original scientific scope.",
-    "successor_chain": "Full ordered route including the original PR as first entry and current open successor as final entry; null when there is no successor route.",
+    "successor_chain": "Full ordered routing history including original PR and terminal successor; successor_state records whether it is still open. A closed successor may have only corrected portions landed, as the scientific_status and partial_landing_holds specify.",
     "process_scopes": "Process/tooling landing is counted separately from original scientific scopes.",
-    "meta_synthesis_scopes": "Meta synthesis source reviewed and landed separately; its quoted members receive no new proof acceptance from that action."
+    "meta_synthesis_scopes": "Meta synthesis source reviewed and landed separately; its quoted members receive no new proof acceptance from that action.",
+    "partial_scientific_landing": "Corrected finite portions are independently reviewed and on main, but original production or broader scientific obligations remain explicitly held; tracked separately from accepted original scope."
   },
   "original110_ids": [
     5950,
@@ -213,7 +214,12 @@
     7973,
     7949,
     7935,
-    7966
+    7966,
+    7940,
+    7938,
+    7929,
+    7925,
+    7910
   ],
   "pending_closed_scope_transfer": {
     "6515": [
@@ -3664,6 +3670,27 @@
       "acceptance_update_utc": "2026-09-08T07:25:59.579393+00:00"
     },
     {
+      "pr": 7910,
+      "original_head": "3aa5104dbd56afb3f84317412878ec684e5fafa2",
+      "initial_snapshot_head": "3aa5104dbd56afb3f84317412878ec684e5fafa2",
+      "closure_review_head": "3aa5104dbd56afb3f84317412878ec684e5fafa2",
+      "original_branch": "physics-loop/regge-4d-complex-native-linearised-graviton-dispersion",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "e4d8bd11df12559138543a3129ea4e7b38f23ebf",
+      "accepted_unit": "regge_7910_7940",
+      "remaining_obligations": "Corrected conditional finite model results only: uniform response, occupation pinching, surrogate feedback, numerical Regge spectra/static response and conditional algebra. Physical source/carrier/clock/metric/graviton/curvature/cosmology, global spectral/torus classification and nonlinear completion remain open.",
+      "reopen_required": false,
+      "evidence_group": "wave38",
+      "current_acceptance_evidence": "backlog_evidence/wave38/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T03:56:07.313678+00:00"
+    },
+    {
       "pr": 7911,
       "original_head": "c3a4169188c09fd7cbac258c7be56915eed3b0cb",
       "initial_snapshot_head": "c3a4169188c09fd7cbac258c7be56915eed3b0cb",
@@ -3998,6 +4025,27 @@
       "closure_review_head": "e8902a80693472c883620bd5ac5eae5fb398e852"
     },
     {
+      "pr": 7925,
+      "original_head": "56b7dbd2a933f7b5171bfabbb27443d5eb38a10e",
+      "initial_snapshot_head": "56b7dbd2a933f7b5171bfabbb27443d5eb38a10e",
+      "closure_review_head": "56b7dbd2a933f7b5171bfabbb27443d5eb38a10e",
+      "original_branch": "physics-loop/formation-rate-ruler-constant-mode-fixes-kappa-one",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "e4d8bd11df12559138543a3129ea4e7b38f23ebf",
+      "accepted_unit": "gravity_formation_vacuum_readout_7925_7929_7938",
+      "remaining_obligations": "Corrected conditional finite model results only: uniform response, occupation pinching, surrogate feedback, numerical Regge spectra/static response and conditional algebra. Physical source/carrier/clock/metric/graviton/curvature/cosmology, global spectral/torus classification and nonlinear completion remain open.",
+      "reopen_required": false,
+      "evidence_group": "wave38",
+      "current_acceptance_evidence": "backlog_evidence/wave38/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T03:56:07.313678+00:00"
+    },
+    {
       "pr": 7926,
       "original_head": "00dbba1315907793f899df1681afab06f3425507",
       "initial_snapshot_head": "00dbba1315907793f899df1681afab06f3425507",
@@ -4064,6 +4112,27 @@
       "evidence_group": "wave28",
       "current_acceptance_evidence": "backlog_evidence/wave28/INDEX.json",
       "acceptance_update_utc": "2026-09-08T13:43:24.049734+00:00"
+    },
+    {
+      "pr": 7929,
+      "original_head": "db92916a2b40d1c34bf4ba4cd2a4e5d5a13ddca0",
+      "initial_snapshot_head": "db92916a2b40d1c34bf4ba4cd2a4e5d5a13ddca0",
+      "closure_review_head": "db92916a2b40d1c34bf4ba4cd2a4e5d5a13ddca0",
+      "original_branch": "physics-loop/vacuum-response-anti-screens-sea-reference-removes-it",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "e4d8bd11df12559138543a3129ea4e7b38f23ebf",
+      "accepted_unit": "gravity_formation_vacuum_readout_7925_7929_7938",
+      "remaining_obligations": "Corrected conditional finite model results only: uniform response, occupation pinching, surrogate feedback, numerical Regge spectra/static response and conditional algebra. Physical source/carrier/clock/metric/graviton/curvature/cosmology, global spectral/torus classification and nonlinear completion remain open.",
+      "reopen_required": false,
+      "evidence_group": "wave38",
+      "current_acceptance_evidence": "backlog_evidence/wave38/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T03:56:07.313678+00:00"
     },
     {
       "pr": 7930,
@@ -4253,6 +4322,27 @@
       "closure_review_head": "2814c6768e4d7b38048f70ad7883b4951cb12da3"
     },
     {
+      "pr": 7938,
+      "original_head": "f794113afe00a668976dfb0991aa121ca1f80e96",
+      "initial_snapshot_head": "f794113afe00a668976dfb0991aa121ca1f80e96",
+      "closure_review_head": "f794113afe00a668976dfb0991aa121ca1f80e96",
+      "original_branch": "physics-loop/record-map-keeps-mass-fraction-vacuum-weightlessness-reference-choice",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "e4d8bd11df12559138543a3129ea4e7b38f23ebf",
+      "accepted_unit": "gravity_formation_vacuum_readout_7925_7929_7938",
+      "remaining_obligations": "Corrected conditional finite model results only: uniform response, occupation pinching, surrogate feedback, numerical Regge spectra/static response and conditional algebra. Physical source/carrier/clock/metric/graviton/curvature/cosmology, global spectral/torus classification and nonlinear completion remain open.",
+      "reopen_required": false,
+      "evidence_group": "wave38",
+      "current_acceptance_evidence": "backlog_evidence/wave38/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T03:56:07.313678+00:00"
+    },
+    {
       "pr": 7939,
       "original_head": "3e728206b4cdea4dc4accdab87d55ad7cd369439",
       "initial_snapshot_head": "3e728206b4cdea4dc4accdab87d55ad7cd369439",
@@ -4272,6 +4362,27 @@
       "evidence_group": "wave29",
       "current_acceptance_evidence": "backlog_evidence/wave29/INDEX.json",
       "acceptance_update_utc": "2026-09-08T15:03:12.035702+00:00"
+    },
+    {
+      "pr": 7940,
+      "original_head": "cefa4a05ff52873ef279652f619819491c302998",
+      "initial_snapshot_head": "cefa4a05ff52873ef279652f619819491c302998",
+      "closure_review_head": "cefa4a05ff52873ef279652f619819491c302998",
+      "original_branch": "physics-loop/formation-rate-defines-static-regge-edges-exactly",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "e4d8bd11df12559138543a3129ea4e7b38f23ebf",
+      "accepted_unit": "regge_7910_7940",
+      "remaining_obligations": "Corrected conditional finite model results only: uniform response, occupation pinching, surrogate feedback, numerical Regge spectra/static response and conditional algebra. Physical source/carrier/clock/metric/graviton/curvature/cosmology, global spectral/torus classification and nonlinear completion remain open.",
+      "reopen_required": false,
+      "evidence_group": "wave38",
+      "current_acceptance_evidence": "backlog_evidence/wave38/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T03:56:07.313678+00:00"
     },
     {
       "pr": 7941,
@@ -5095,7 +5206,7 @@
       }
     }
   ],
-  "last_scientific_disposition_update_utc": "2026-09-09T03:48:13.247592+00:00",
+  "last_scientific_disposition_update_utc": "2026-09-09T03:56:07.313678+00:00",
   "partial_landing_holds": {
     "7943": {
       "landed_commit": "26e73b727db1732dd89f74461114e4873c4ddef9",

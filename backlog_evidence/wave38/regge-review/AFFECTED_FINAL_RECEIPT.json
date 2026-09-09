@@ -1,0 +1,151 @@
+{
+  "role": "same original independent focused reviewer",
+  "prs": [
+    7910,
+    7940
+  ],
+  "verdict": "affected corrections confirmed as bounded mathematical support; no remaining material finding",
+  "binding": {
+    "author_tree": "ebbd1bd4faa0d75a392b7bfa8eb8828ef7902a65",
+    "integration_tree": "606e027e8b66842e353c95d59c9c9049c6433698",
+    "source_tree": "0085ae3489d66652f8d6f6ee20183c3292c7284a",
+    "base": "26e73b727db1732dd89f74461114e4873c4ddef9",
+    "manifest": "docs/audit/data/citation_graph_manifest.json",
+    "manifest_sha256": "5883c0aae71e18909d9eae56b8a718734bd6f2b9963db19af729ac1c249fc4cd",
+    "author_receipt_sha256": "de771e3b8081c0f0c904d3b054fc3a00b80855e7e4fd0455f78b0ae248b22d3b",
+    "author_artifacts_verified": 81,
+    "regge_paths_verified": 13,
+    "raw_archives_verified": 6,
+    "author_base_leaves_preserved": 29331,
+    "source_composition_base_leaves_preserved": 29428,
+    "integration_added_paths": 32,
+    "integration_modified_paths": [
+      "docs/audit/data/citation_graph_manifest.json"
+    ],
+    "source_input_and_tools_hashes_verified": 15,
+    "input_controls_verified": 30,
+    "runs": [
+      {
+        "pr": 7910,
+        "pre_post_equal": true,
+        "stdout_cache_exact": true,
+        "exit": 0
+      },
+      {
+        "pr": 7940,
+        "pre_post_equal": true,
+        "stdout_cache_exact": true,
+        "exit": 0
+      }
+    ],
+    "verification_incidents": [
+      "Initial parser expected cache end at stdout; standard stderr delimiter required structural parsing.",
+      "Initial mechanical base-preservation assertion included deliberately changed manifest; corrected comparison checks source composition and isolates sole manifest modification. Both stopped before receipt writes; no science executions."
+    ]
+  },
+  "original_receipts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-review/REPORT.md",
+      "sha256": "a97421ac84f86b32a919a7f0de2915b0cc9169fba1908c7ce8170b13fe21ac10",
+      "bytes": 13047
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-review/FINAL_RECEIPT.json",
+      "sha256": "8b02a7f8d4ebdf735cf72cd1e914dd1e0d45d5e7bc23c3909fdfb22228245452",
+      "bytes": 7863
+    }
+  ],
+  "affected_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-review/AFFECTED_FIX_CONFIRMATION.md",
+      "sha256": "c04f3517a3ccce3067ad1019fc00649ea2658d956858f4071370b3023d5cfc37",
+      "bytes": 4901
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-review/AFFECTED_BINDING_VERIFICATION.json",
+      "sha256": "e1401bb5602a00cda47673892289d37d979487a3f76a9c228db2377290dd6573",
+      "bytes": 1504
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-review/AFFECTED_COMPUTATION_COMPARISON.json",
+      "sha256": "9957f1a4825db80a71fd1764f589f4a9a104185a8b92f69c3f145f7aa092663d",
+      "bytes": 470
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-review/AFFECTED_verify.py",
+      "sha256": "591bb95c0750dccc7e171e53d819e28b2c766303b1a2cd9dbc148fb11904ae8f",
+      "bytes": 3663
+    }
+  ],
+  "author_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-fixes/FINAL_RECEIPT.json",
+      "sha256": "de771e3b8081c0f0c904d3b054fc3a00b80855e7e4fd0455f78b0ae248b22d3b",
+      "bytes": 17892
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-fixes/FINAL_INVENTORY.json",
+      "sha256": "2260e232678becf6f3dba8a6e225214956b7b62388aa6dae07e3c79ebd78acb0",
+      "bytes": 11313
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-fixes/REPORT.md",
+      "sha256": "3433c6eb1506b4469f2fcf5b36d00a331f7464726cc647a2b4af3944d43109b3",
+      "bytes": 7075
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-fixes/DISPOSITIONS.json",
+      "sha256": "41d39c565d273844573bd0b7aaf9dfaf95f2a35bc09e094eb390e40e07fd980b",
+      "bytes": 5188
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-fixes/FINAL_EXECUTION_BINDING.json",
+      "sha256": "8fb7553e3e0b4ab972b7ec624a01f6f909a73da677f8e7e190c7378a74834754",
+      "bytes": 4562
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-fixes/FOCUSED_CONTROLS.json",
+      "sha256": "bbf79a5f78801ab0384d1273c27a8ebd509c029761d2f46e664ad8d14485e015",
+      "bytes": 6091
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-fixes/CONTROL_REUSE_BINDING.json",
+      "sha256": "e1bbd9aa73203747e39230e0127426b0b3e2df33325ad5731cbab3f7035a9358",
+      "bytes": 2126
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-regge-7910-7940-fixes/INPUT_CONTROLS.json",
+      "sha256": "a2a4eb8ebd688313005e1ac2aaa24438affa266e6750736cb4adca10383c183c",
+      "bytes": 30243
+    }
+  ],
+  "root_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave38-validation/FINAL_SOURCE_INVENTORY.json",
+      "sha256": "f3a648dfd0639b81b8f07e325e88be0777c4280fb2ac66fe1724fb7becd52c7b",
+      "bytes": 12940
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave38-validation/graph-topology.json",
+      "sha256": "4ce0666b5a16585b79c370fc4de2f9b6ef3854d005886499a1ead167970090d1",
+      "bytes": 21525
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave38-validation/ACTUAL_AFFECTED_READINESS_PREFLIGHT.json",
+      "sha256": "9acc63f3b7a389b445e19a52422b2d0fcd1af111554b5fc88476fb100071423d",
+      "bytes": 13882
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave38-validation/ROOT_DISPOSITION_AND_CORRECTION_VERIFICATION.json",
+      "sha256": "d7ac4599f05ad38df23b1fd69a161102f39a81c8aa3566449ee843230f16e84e",
+      "bytes": 12237
+    }
+  ],
+  "new_primary_executions": 0,
+  "formal_audit": false,
+  "reserved_prs_held": [
+    6379,
+    6858,
+    6859
+  ]
+}

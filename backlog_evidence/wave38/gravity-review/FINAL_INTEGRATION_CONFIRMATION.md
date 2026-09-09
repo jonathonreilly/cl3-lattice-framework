@@ -1,0 +1,9 @@
+# Final gravity integration confirmation
+
+**PASS** for gravity #7925/#7929/#7938 in combined integration tree `606e027e8b66842e353c95d59c9c9049c6433698`, source tree `0085ae3489d66652f8d6f6ee20183c3292c7284a`, base `26e73b727db1732dd89f74461114e4873c4ddef9`.
+
+The existing same-session author PASS remains applicable: all19 reviewed gravity paths are byte-identical across the author tree, combined source tree, integration tree and actual integration worktree. The three current inputs are exactly the three pinned notes; there are no gravity helper or sibling dependencies. Original source preservation, all11 finding corrections/15 scopes,66 genuine checks and the explicit unbound-carrier provenance correction remain as sealed in AFFECTED_AUTHOR_RECEIPT.json and AFFECTED_CONFIRMATION.md.
+
+The only source-to-integration delta is the manifest, SHA256 `5883c0aae71e18909d9eae56b8a718734bd6f2b9963db19af729ac1c249fc4cd`. Its gravity nodes preserve empty scientific dependency/helper lists and exact note hashes. The combined delta has32 source additions plus that manifest modification. The actual Regge interaction text treats the rate as supplied, rejects derivation from7925, carries the corrected constant-shift mass boundary, and distinguishes Phi from the weak-field bridge variable by Phi=-4piG*phi. This is compatible with the gravity unit's separately stipulated plus-sign feedback equation. The Regge unit's independent science verdict belongs to its reviewer.
+
+No new source change or premise interaction required duplicate scientific reads or executions. No remaining material finding in this gravity integration scope; no retained grade or formal audit verdict is granted. The preceding Maxwell base must land first, and root owns combined gates and landing. FINAL_INTEGRATION_RECEIPT.json binds the source/integration/base, manifest, original-session author PASS and existing combined inventory/preflight hashes.
