@@ -50,14 +50,13 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W30 corrected nonabelian and multiplicity/window science is on main.
-   Shared reconciliation records 90 open original PRs and 94 newly landed original
+1. W31 adds corrected SU3 triality/singlet science to main.
+   Shared reconciliation records 89 open original PRs and 95 newly landed original
    scientific scopes. 64 closed scopes remain pending at five open successors.
-   backlog_batch_contract authors SU3 #7933; original reviewer backlog_draft_triage
-   confirms it. backlog_8001_review authors the three tick-paper corrections.
-   Astra-low backlog_born_review reviews #7912/#7919/#7926/#7931/#7950.
-   Focused landing review and selective controls remain the default; original
-   review coverage is reused. Formal audit and exhaustive certification wait.
+   backlog_8001_review repairs three tick papers; backlog_batch_contract repairs
+   five Born-menu papers. Their original Astra-low reviewers confirm affected fixes.
+   Astra-low backlog_gravity_ruler_review examines #7898/#7905/#7916.
+   Focused checks and reused original coverage remain the default; formal audit waits.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

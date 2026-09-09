@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T00:48:10.413510+00:00; main `1ef2db7a87038b5d8e26a84aa2a3157e347190c2`.
+Updated 2026-09-09T01:11:51.824085+00:00; main `1aef37f622bf0078f2898e4131c45414b018e946`.
 
-94 scientific scopes newly landed:52 direct + 42 consolidated. One meta and one process scope separate. 164 originals closed,90 open;64 earlier-closed scopes pending at five open successors. No audit grade.
+95 scientific scopes newly landed: 53 direct + 42 consolidated. One meta and one process scope separate. 165 originals closed, 89 open; 64 earlier-closed scopes pending at five open successors. No audit grade.
 
 | Original PR | Closure action | Current scope status | Accepted main or successor |
 | --- | --- | --- | --- |
@@ -142,6 +142,7 @@ Updated 2026-09-09T00:48:10.413510+00:00; main `1ef2db7a87038b5d8e26a84aa2a3157e
 | #7928 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |
 | #7930 | source_consolidation_exact | reviewed_corrected_scope_on_main | `e043c95b37bd46d80e97c39f36c8b3cb7643c62f` |
 | #7932 | source_consolidation_exact | reviewed_corrected_scope_on_main | `e043c95b37bd46d80e97c39f36c8b3cb7643c62f` |
+| #7933 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `1aef37f622bf0078f2898e4131c45414b018e946` |
 | #7934 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |
 | #7936 | source_consolidation_exact | reviewed_corrected_scope_on_main | `94e90cbf928cb35fa1b50e894cd897c94b73077f` |
 | #7937 | source_consolidation_exact | reviewed_corrected_scope_on_main | `94e90cbf928cb35fa1b50e894cd897c94b73077f` |

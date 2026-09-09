@@ -1,51 +1,50 @@
 # Backlog review and landing — current handoff
 
-Updated after wave30 at 2026-09-09T00:48:10.413510+00:00. Main is `1ef2db7a87038b5d8e26a84aa2a3157e347190c2`.
+Updated after wave31 at 2026-09-09T01:11:51.824085+00:00. Main is `1aef37f622bf0078f2898e4131c45414b018e946`.
 The fixed cleanup covers the original 254 PRs. New arrivals are excluded.
 Formal audit remains deferred until a solid TOE.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 54 |
+| Closed directly after reviewed landing | 55 |
 | Closed by draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner-reserved PRs | 90 |
+| Still open, including three owner-reserved PRs | 89 |
 | Original membership | 254 |
 
-**94 original scientific scopes have reviewed corrected source newly landed:**
-52 direct science closures plus 42 previously consolidated constituents.
+**95 original scientific scopes have reviewed corrected source newly landed:**
+53 direct science closures plus 42 previously consolidated constituents.
 One meta synthesis and one process PR are separate. Of the 110 other closures,
 64 scientific scopes remain pending at five open successors, two were superseded
 by starting-main science, one was empty and one was an unexecuted plan.
 Zero original drafts remain. All reservations apply transitively.
 
-Including seven pre-cutoff arrivals #8003–#8009, the session has 61 direct PR
-closures, 30 science/source batches and 120 new source documents. Twenty-nine
-batches passed one combined gate; W14 retains its actual repaired retry.
-Main ledger remains 4,570 rows: 4,198 unaudited science and 372 meta. 25 newer notes
+Including seven pre-cutoff arrivals #8003–#8009, the session has 62 direct PR
+closures, 31 science/source batches and 121 new source documents. Thirty batches
+passed one combined gate; W14 retains its actual repaired retry.
+Main ledger remains 4,570 rows: 4,198 unaudited science and 372 meta. 26 newer notes
 await mechanical ledger refresh; generated validation data is preserved and
 stripped. No formal auditor or verdict ran.
 
-W30 lands #7908/#7914/#5966 and the two earlier-closed constituent scopes
-#5950/#5952. Both original reviewers confirm exact corrected source and the
-combined manifest. All 25 material finding groups are resolved within explicit
-finite supplied-model boundaries. 48 exact historical source/input files remain
-recoverable; 88 final path hashes are verified on remote main. The combined gate
-passed in 245.429 seconds.
-See [wave30 evidence](backlog_evidence/wave30/INDEX.json).
+W31 lands #7933 with all seven material finding groups addressed within a supplied
+finite SU3 model. All 22 original checks remain, plus three boundary controls;
+the genuine final run passes 25/0. Both original bad-source mutations now fail.
+The original reviewer confirms the correction and exact current-main composition.
+Three original bodies remain exact in history; all eight final path hashes are
+verified on remote main. One combined gate passed in 233.355 seconds.
+See [wave31 evidence](backlog_evidence/wave31/INDEX.json).
 
-Astra low is the focused landing-review default; escalate consequential
+Astra low remains the focused landing-review default; escalate consequential
 unresolved mathematics to Astra xhigh. The same-input pilot found Astra 5.32 times
 faster and 37.3% less expensive at published API-equivalent rates on one workload;
 this is not a subscription bill or proof of universal reviewer superiority.
 See [reviewer pilot](REVIEWER_MODEL_PILOT.md). Reuse completed reviews and
 original-session correction checks. Detailed certification waits for audit.
 
-backlog_batch_contract is correcting SU3 #7933 from its sealed seven findings;
-backlog_draft_triage retains final confirmation. Astra-low backlog_ticks_review
-has completed #7947/#7968/#7986 with eight material findings;
-backlog_8001_review is correcting that coherent formation-tick unit. Astra-low
-backlog_born_review reviews #7912/#7919/#7926/#7931/#7950 for menu-independence
-and Born-form claims.
+backlog_8001_review repairs #7947/#7968/#7986 from the completed Astra-low review
+by backlog_ticks_review. backlog_batch_contract repairs #7912/#7919/#7926/#7931/#7950
+from the completed Astra-low review by backlog_born_review. Both original reviewers
+retain affected-fix confirmation; neither unit is accepted yet. Astra-low
+backlog_gravity_ruler_review has begun #7898/#7905/#7916 as the next original unit.
 
 ## Landed source history
 
@@ -81,6 +80,7 @@ and Born-form claims.
 | Conditional support/readout and twelve DK/OS scopes; review overlap process | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` | `backlog_evidence/wave28` |
 | Conditional finite role laws and static matter readout | `e4b4fd46dbdc075a218387a0c23a1a2739f4f01c` | `backlog_evidence/wave29` |
 | Conditional nonabelian, multiplicity and quadratic-window science | `1ef2db7a87038b5d8e26a84aa2a3157e347190c2` | `backlog_evidence/wave30` |
+| Conditional finite SU3 triality and singlet algebra | `1aef37f622bf0078f2898e4131c45414b018e946` | `backlog_evidence/wave31` |
 
 Wave14 lands the complete corrected #7846/#7847 scientific scopes and the separate
 #7976 meta synthesis. Calibration-domain and joint-trial premises are explicit;
