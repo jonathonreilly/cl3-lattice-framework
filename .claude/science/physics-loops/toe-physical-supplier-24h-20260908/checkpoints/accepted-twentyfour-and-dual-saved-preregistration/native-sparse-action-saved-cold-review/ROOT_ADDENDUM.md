@@ -1,0 +1,9 @@
+# Root combined saved-action review
+
+PASS for independent saved coefficient/action reconciliation. Root read full arithmetic/check/dispatcher, reused original root schema and external monitor/schema. All1883runtime/7591scientific bindings and rootfile hashes verified. James independent fullsource reviewd562 and22tiny arithmetic checks are preserved; no unchanged controls rerun.
+
+Fraction endpoint multiplication/division/addition explicitly floor/ceil after each primitive. Integer source scales are represented exactly, so scale by±1,−2,±8 agrees with original outward arithmetic. Integer sqrt lower/upper enclose exact dyadic roots. The separate paired beta/C construction and literal original-domain free/impurity action have correct plusJ and G+T² signs. It assumes authenticated savedprincipal M; it never evaluates originalGram or imports producercore/interval/reader/oracle. Reused structural schema is explicitly distinguished from independently recoded arithmetic.
+
+All16 arithmetic stages perorbit (four coefficient beginnings, four coefficient enclosures, two each Traw/G/Lraw/final) are uniquely matched and independentlycomputed bodies saved beforecomparison, for80total. Any numeric/source/shape mismatch remainsfailed. The monitor requires exactoutput membership, allfive original4/bothimpurities/tenfalseoptionalflags andterminalPARTIAL. It authenticates the original saved event body for each stage. It does not claim a new smallleakage result; originalpositive diagonal lower bounds still ruleout the optionaltarget only for this subspace.
+
+Once-only119worker119.5root120external384MiB topology, loadedorigin/sourcehash closure, processgroup cleanup and externalreceipt reconciliation apply. Fixed59.2s estimate is inference from3.28s differentjob, not guaranteed time. No saved numerical verification was executed during source review. Remote exactpreregistration is required before the single120s attempt.
