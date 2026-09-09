@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/record_map_keeps_mass_fraction_vacuum_weightlessness_check_2026_09_04.py
+runner_sha256: fe5395e5fcf15882cf3f6715857e5bc06dde790cc81cc22359e97ec100980550
+input_fingerprint_sha256: ff59806446ff3b49ebf49e3e3a991e08493f609c63b4019433c1e2c5f920453c
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 6.59
+status: ok
+----- stdout -----
+INPUT_BINDING: exact companion note verified; finite supplied definitions only
+PASS A1 Chosen rank-one occupation pinching, actual PERIODIC2x2x3 Fock dim4096: local hop diagonals=0.000e+00; TOTAL SUMHOP Frobenius norms 350.542437,350.542437. Odd periodic z is not a bipartite even torus.
+PASS A2 Occupation pinching keeps diagonal mass and kills hopping: mass residual=0.000e+00, total-vs-mass residual=0.000e+00; B_v=I-2n_v is a definition, no physical six-record carrier supplied.
+PASS A3 One-particle4^3 hopping diagonal=0.000e+00; same chosen occupation pinching identity.
+   m      r_v         dev     spread   r_v/E^(0)_v        w_m
+   0.0   +0.000000000  0.0e+00  0.0e+00  0.000000000  0.000000000
+   0.3   -0.021413851  3.5e-16  5.7e-16  0.017814040  0.017814040
+   1.0   -0.201703228  1.0e-15  2.0e-15  0.155199559  0.155199559
+   2.0   -0.648782512  2.6e-15  4.2e-15  0.413606981  0.413606981
+   6.0   -2.781026670  8.4e-15  1.4e-14  0.858609560  0.858609560
+PASS B1 Even bipartite8^3, m>0: inverse-square-root formula residual=8.438e-15;12^3 m1 mean=-0.200917464424, spread=4.219e-15. Requires anticommutation and gap.
+PASS B2 m=0 diagonal mass is zero operator, max12^3 expectation=0.000e+00; only the stipulated D(H) source/coupling vanishes.
+PASS B3 Uniform positive H(1,1) rescaling: occupation response=6.106e-11, read response-self residual=2.509e-12; read=-0.201703228, total={'H(1,1)': -1.2996378964458266, 'H(2,1)': -2.397572565004946}, fraction=0.155199559.
+PASS B4a same-fixture sparse ground residual=5.924e-14, free-fermion minimum error=1.776e-14
+PASS B4 Same PERIODIC2x2x3 Fock fixture: full occupation distribution preserved by dephasing; marginal residual=0.000e+00; energy=-19.750491965 vs dephased=-1.680186677; hop=-18.070305288 vs 0.000000000; per-site difference=-1.505859. This chosen distribution cannot reconstruct all state energies.
+PASS B5 Even6^3 mass-sign occupation relation: (m,relation residual,offset)=[(0.0, 1.27675647831893e-15, 6.106226635438361e-16), (0.5, 1.0547118733938987e-15, 0.10644540465907859), (1.0, 9.992007221626409e-16, 0.19833871056156316), (2.0, 9.992007221626409e-16, 0.3234277616648732)]; closed-form residual=8.327e-16. Finite supplied model only.
+PASS C1 Stipulate coupling to occupation-pinched density: alpha0,beta1; w=m**2/E and a_x/g=-4*m**2*cos(px)/E**2 for E>0; 0 mismatches over 12x4 formula controls.
+PASS C2 At p0, m>0 supplied band formula gives [np.float64(-4.0), np.float64(-4.0), np.float64(-4.0), np.float64(-4.0), np.float64(-4.0)]; comparison count expression=[-16.0, -8.0, -4.0, -2.0, -1.0]. Transverse a/-4=1-chi, chi=1-m**2/E**2, not physical speed squared.
+   sqrt(chi)  read(0,1)  tot(1,1)  full(2,1)   1-chi   1+chi
+  0.00   1.000000  1.000000    1.000000   1.0000  1.0000
+  0.30   0.910000  1.000000    1.090000   0.9100  1.0900
+  0.60   0.640000  1.000000    1.360000   0.6400  1.3600
+  0.90   0.190000  1.000000    1.810000   0.1900  1.8100
+  1.00  -0.000000  1.000000    2.000000   0.0000  2.0000
+PASS C3 m=0: dH/dPhi=0 for READ coupling; nine momentum acceleration formulas max=0.000e+00; chi-table identity residual=0.000e+00. No photon/curvature claim.
+PASS C3a equal physical speed, different chi and acceleration (py,v/c,chi,a/g)=[(1.0471975511965976, 0.5, 0.33333333333333315, -2.6666666666666674), (1.5707963267948966, 0.5, 0.4999999999999999, -2.0000000000000004)]
+PASS C4 Bipartite12^3: m<Eps>=m**2/E from anticommutator; nine selected energy eigenvectors, not specified momenta; max errors=1.554e-15,3.109e-15; rows=[(0.3, 0.299999999999999, 0.30000000000000004, np.float64(0.300000000000001), np.float64(9.43689570931383e-16), np.float64(3.1086244689504383e-15)), (0.3, 2.256102834535695, 0.03989179864601434, np.float64(0.03989179864601427), np.float64(6.938893903907228e-17), np.float64(3.122502256758253e-17)), (0.3, 3.4770677301427435, 0.025883878884437297, np.float64(0.025883878884437272), np.float64(2.42861286636753e-17), np.float64(6.938893903907228e-18)), (1.0, 0.9999999999999981, 1.0000000000000013, np.float64(1.000000000000002), np.float64(6.661338147750939e-16), np.float64(4.440892098500626e-16)), (1.0, 2.449489742783178, 0.40824829046386396, np.float64(0.4082482904638631), np.float64(8.881784197001252e-16), np.float64(3.885780586188048e-16)), (1.0, 3.6055512754639913, 0.2773500981126151, np.float64(0.2773500981126144), np.float64(6.661338147750939e-16), np.float64(1.8041124150158794e-16)), (2.0, 1.9999999999999984, 2.0000000000000018, np.float64(2.0000000000000018), np.float64(0.0), np.float64(2.220446049250313e-16)), (2.0, 3.0, 1.3333333333333326, np.float64(1.3333333333333333), np.float64(6.661338147750939e-16), np.float64(2.220446049250313e-16)), (2.0, 4.000000000000001, 1.0000000000000013, np.float64(0.9999999999999998), np.float64(1.5543122344752192e-15), np.float64(3.885780586188048e-16))]. Lorentz scalar/stress tensor identification is unproved.
+PASS C5 Definition check: returned read density is returned mass density, residual=0.000e+00; sea mass fractions=[(4, 0.3, 0.0, 0.03016352639012963, 0.03016352639012963), (4, 1.0, 0.0, 0.1781546960452579, 0.1781546960452579), (4, 2.0, 0.0, 0.43037705538326465, 0.43037705538326465), (4, 6.0, 0.0, 0.8600902089985197, 0.8600902089985197), (8, 0.3, 0.0, 0.017814039645055228, 0.017814039645055228), (8, 1.0, 0.0, 0.15519955863606288, 0.15519955863606288), (8, 2.0, 0.0, 0.4136069814883883, 0.4136069814883883), (8, 6.0, 0.0, 0.8586095601399609, 0.8586095601399609)]. Not independent evidence for a record or source law.
+    m    p_y      cp     sx=10      sx=14      sx=20   Richardson     closed
+   1.0 0.0000    read  -3.851206  -3.882803  -3.896135   -3.908944  -4.000000
+   1.0 0.0000     tot  -3.816694  -3.902879  -3.950560   -3.996371  -4.000000
+   0.4 0.7854    read  -0.832933  -0.853292  -0.862349   -0.871052  -0.858152
+   0.4 0.7854     tot  -3.762287  -3.873287  -3.935423   -3.995122  -4.000000
+   0.0 0.7854    read   0.000000   0.000000   0.000000    0.000000   0.000000
+   0.0 0.7854     tot  -3.716225  -3.846908  -3.921736   -3.993629  -4.000000
+PASS C6 96x32x4 finite packet central derivatives g=2.0e-04, widths10/14/20 with two-width Richardson assumption: max formula discrepancy=0.0910561, massless=0.000e+00, read/tot=0.2180289 vs 0.2145379. Residual origin not isolated.
+PASS D1 Separate finite-radius arithmetic R=(1.0, 3.0, 10.0, 1000.0, 1000000.0, 1000000000000.0),3/R**2=[3.0, 0.3333333333333333, 0.03, 3e-06, 3e-12, 3e-24]; positive for every finite R>0. This supplies no cosmological conclusion from P0 or reference subtraction.
+PASS D2 Supplied8^3 m1 sea total=-1.2996379 and pinched=-0.2017032 are nonzero dimensionless model densities. Neither determines cosmological Lambda or a radius.
+SUMMARY: finite conditional identities and declared-fixture calculations only; physical source, carrier, metric and cosmology remain open.
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

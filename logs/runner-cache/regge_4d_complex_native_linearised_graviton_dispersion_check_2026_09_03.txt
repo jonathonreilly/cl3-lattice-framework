@@ -1,0 +1,173 @@
+===== runner cache v1 =====
+runner: scripts/regge_4d_complex_native_linearised_graviton_dispersion_check_2026_09_03.py
+runner_sha256: 6873f37e8843e82c35b56cbf98b75385c806ac1add2b06fa0e0135f7e6db1a4a
+input_fingerprint_sha256: aff458bde1a7c93633d825ebce62f76ef58a7e46471825ceaa87de120c9a3b8d
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 28.56
+status: ok
+----- stdout -----
+T(Z^3 x Z_tau), supplied Euclidean Regge Hessian: finite continued spectra
+  complex imported from the landed 3+1 runner: 24 4-simplices, 15 edge classes, 50 hinge classes per 4-cell; 15x15 Hessian per momentum
+[PASS] T0 finite provenance: continued Q and line map agree with actual R4 at the declared real momentum
+       max|Qan-bloch_Q| = 8.9e-16; max|Man-metric_map| = 5.3e-16 at the declared k; the gauge map is entire as landed and reused verbatim
+  BEGIN unchanged 3D finite helper output (historical labels are not adopted)
+SECOND VARIATION OF THE REGGE ACTION ON THE RETAINED CUBIC-COXETER COMPLEX (3D, flat)
+================================================================================================
+[PASS] R1 (flat anchor = the retained row, reproduced on the periodic build): every interior edge deficit is 0 to machine precision (all classes), the representative axis edge has the CORRECTED 6-tet edge-star of the 2026-05-19 repair, and S_R = sum ell_e delta_e = 0
+       max|deficit| = 1.33e-15; axis edge-star tets = 6 (retained row: 6); S_R = 1.21e-13
+[PASS] R2 (exactness gates): per-tet Schlaefli identity sum_e ell_e d theta_e = 0 holds to machine precision (validates the symbolic angle-gradient pipeline), and J = d delta/d ell is SYMMETRIC to machine precision (Regge's first-variation identity dS/d ell = delta realized: J is the Hessian of S_R at flat)
+       max per-tet Schlaefli residual = 8.48e-16; max|J - J^T| = 4.44e-16
+[PASS] R3 (gauge): a random vertex-displacement field of the flat complex is an EXACT zero mode of Q = delta^2 S_R (flat stays flat under vertex motion) -- the discrete diffeomorphism family, exact at the discrete level (contrast: the transcribed continuum operator on the hypercubic lattice had only approximate gauge zero modes)
+       |Q eps_gauge| / |eps| = 1.44e-15
+[PASS] R4 (Bloch reduction faithful): the 7x7 Q(k) reproduces the periodic-build quadratic form on a commensurate plane-wave edge field to machine precision
+       |periodic - Bloch| = 4.62e-14
+[PASS] R3b (gauge at Bloch level): Q(k) Gamma(k) = 0 to machine precision at a random incommensurate momentum -- the vertex-displacement gauge family is exact at every k
+       max|Q(k) Gamma(k)| = 6.25e-15 at k = [0.37, -0.83, 0.51]
+[PASS] R2b (end-to-end gate): the numerical second difference of the ACTUAL Regge action S_R = sum ell delta under a random edge-length perturbation equals eps^T Q eps from the assembled Hessian (validates every sign, factor, and assembly step at once)
+       finite-diff = -1.7699254971e-05 vs eps^T Q eps = -1.7699253643e-05
+[PASS] R2c (convention gate): a continuum gauge perturbation h = i(k xi + xi k) maps through the exact line-averaged metric map onto EXACTLY the discrete vertex-displacement family (pins the midpoint-phase/sinc conventions; line integral of a tangential derivative = endpoint difference)
+       max|M(k) h_gauge - Gamma(k) xi| = 4.74e-16
+[PASS] R5 (k=0): constant metric perturbations (all 6 h components) are EXACT zero modes of Q(0) (a constant h re-flattens the complex), while the single NON-METRIC edge mode per cell (the 7-edge-class complement of the 6 metric components) is NOT a zero mode -- the breathing mode has nonzero quadratic weight at k=0 (sign reported)
+       max|Q(0) M_metric| = 5.84e-15; non-metric breathing weight = -24.000000 in the raw S_R orientation (= +48.0 in the standard Euclidean orientation S_E = -2 S_R: massive and healthy there; no flat direction beyond gauge+metric)
+
+  small-k metric-sector comparison  Q_h(k) =? c * Q_EH(k)  per direction:
+    axis(100):  c = -0.500000   rel-residual = 6.774e-09   schur-vs-project = 2.0e-09
+    face(110):  c = -0.500000   rel-residual = 2.630e-08   schur-vs-project = 3.8e-09
+    body(111):  c = -0.500000   rel-residual = 2.689e-08   schur-vs-project = 2.9e-09
+[PASS] R6 (THE COMPARATOR QUESTION -- exact proportionality, derived normalization, isotropy): at small k the Regge metric-sector quadratic form is EXACTLY PROPORTIONAL to the 3D Euclidean linearized EH pairing in ALL THREE lattice directions, with ONE constant c = -1/2 -- which is precisely the TEXTBOOK correspondence delta^2 S_R = (1/2) delta^2 (int sqrt(g) R) combined with the variational sign delta(sqrt(g)R) = -sqrt(g) G^{mu nu} delta g_{mu nu}: the runner DERIVES the Regge<->EH second-variation correspondence on the retained complex, including the 1/2 normalization, with O(k^2) ISOTROPY (direction spread ~1e-8) and slice-invariance (Schur complement vs projection agree). The opposite-signed comparator PAIR the no-go named is therefore DERIVED from the framework's own retained geometry (the overall orientation of the action is the single remaining sign -- see R7).
+       c = {'axis(100)': -0.49999997, 'face(110)': -0.49999995, 'body(111)': -0.49999993} (= -1/2 exactly); spread/mean = 7.54e-08; residuals = {'axis(100)': '6.8e-09', 'face(110)': '2.6e-08', 'body(111)': '2.7e-08'}
+[PASS] R7 (channel structure, k || x): the two TT channels are EQUAL (spin-2 isotropy exact at O(k^2)), the transverse-trace channel has the OPPOSITE sign with EQUAL magnitude (ratio exactly -1: the no-go's named pair V = +-k^2/2 with equal magnitudes, derived), and the gauge channel is zero. ORIENTATION (honest): in the runner's raw S_R = sum ell delta orientation TT is negative and trace positive; in the standard Euclidean orientation S_E = -int sqrt(g) R = -2 S_R, TT is POSITIVE, the conformal/trace mode NEGATIVE (the textbook Euclidean conformal-factor structure), and the breathing mode +48 (massive, healthy). The overall orientation of the geometric action is the SINGLE remaining sign -- the same located sign residual as the arrow/stability/spectral no-go row; everything orientation-independent (opposite-sign pair, equal magnitudes, isotropy, gauge zeros, massive breathing) is derived here.
+       TT(yz)=-0.250000 = TT(E)=-0.250000; transverse-trace=+0.250000 (ratio -1.0000); gauge(xy)=-1.46e-09  (per k^2, unit-norm channels, raw S_R orientation)
+
+TOTAL: PASS=10 FAIL=0
+VERDICT: on the RETAINED cubic-Coxeter complex (the exact six-tetrahedra body-diagonal chain of
+the deficit-vanishing row), the second variation of the Regge action around flat EQUALS the
+continuum linearized Einstein-Hilbert second variation at leading order, EXACTLY and
+ISOTROPICALLY: Q_h(k) = c * Q_EH(k) + O(k^4) with the single constant c = -1/2 in all three
+lattice directions (= the textbook delta^2 S_R = (1/2) delta^2 int sqrt(g) R with the
+variational sign, DERIVED including the 1/2). Vertex displacements are exact zero modes at
+every momentum (discrete gauge); constant metric perturbations re-flatten (k=0 zero modes);
+the single non-metric breathing mode is massive (no extra flat direction); the two TT channels
+are equal and the transverse-trace channel is equal-magnitude opposite-sign (ratio -1) -- the
+degenerate-supermetric no-go's named comparator pair (+-k^2/2) is hereby DERIVED from the
+framework's own retained geometry. The one remaining sign is the overall action orientation
+(S_R vs -S_R), the same single located sign residual as the arrow/stability/spectral no-go
+row. OPEN (named): the 4D/timelike cubic-Coxeter extension (the kinetic fiber metric from the
+geometric action itself), edge-length-DOF provenance, action selection, nonlinear closure.
+No PDG/fitted value.
+  END unchanged 3D finite helper output
+[PASS] T1a finite R3 reproduction: ten original predicates and selected printed comparator values; no parent status or global proof imported
+       PASS=10 FAIL=0; c = -1/2, spread/mean 7.54e-08; TT -0.2500 = -0.2500; transverse-trace +0.2500
+  BEGIN unchanged 3+1 finite helper output (historical labels are not adopted)
+REGGE SECOND VARIATION ON THE 3+1 CUBIC-COXETER COMPLEX (Z^3 x Z_tau tick extension)
+================================================================================================
+[PASS] slice-consistency check (3+1 framing, combinatorial): the spatial (constant-tick) 3-face of the Z^3 x Z_tau path complex carries EXACTLY the retained six-tetrahedra body-diagonal chain (as vertex sets) -- the 3+1 complex is the tick extension of the retained 3D row, not a new spatial structure
+       6 spatial tetrahedra on the slice; match with retained chain: True
+[PASS] flat-anchor check (FLAT ANCHOR, the tick extension of the retained deficit-vanishing row): every interior triangle class of the flat Z^3 x Z_tau path complex has deficit ZERO to machine precision (all 50 classes; hinge stars enumerated from the complex itself), hence S_R = 0 on the flat OS0 background
+       max|deficit| over the 50 triangle classes = 1.78e-15
+[PASS] Schlaefli/Hermiticity check (exactness gates): the per-4-simplex Schlaefli identity sum_t A_t d theta_t = 0 holds to machine precision in every length direction (validates the 4-simplex dihedral-gradient pipeline), and Q(k) is HERMITIAN to machine precision at random incommensurate momentum (the complex-level Regge lemma: the flat Hessian is sum_t dA_t (x) d delta_t, symmetric)
+       max Schlaefli residual = 6.11e-16; max|Q - Q^dag| = 4.44e-16
+[PASS] end-to-end action check (end-to-end gate): the numerical second difference of the ACTUAL action S_R on a periodic 3^4 box under a commensurate cosine perturbation equals the Bloch prediction (N/2) Re[u^dag Q(k) u] (validates every sign, factor, star and phase convention at once)
+       finite-diff = -956.90913323 vs Bloch prediction = -956.90838351
+[PASS] gauge-zero-mode check (gauge): vertex-displacement fields (4 components per cell) are EXACT zero modes of Q(k) at every momentum (machine precision at two random incommensurate momenta) -- the discrete diffeomorphism family of the geometric action on Z^3 x Z_tau
+       max|Q(k) Gamma(k)| = 2.63e-15, 2.67e-15
+[PASS] mode-inventory check (k=0): constant metric perturbations (all 10 h components) are EXACT zero modes of Q(0); the FIVE non-metric edge modes split into FOUR massive branches (raw S_R eigenvalues -48, -16 x3, hence positive after the standard Euclidean orientation) and ONE exactly flat branch -- identified below (extra-branch decoupling check) as an exactly-decoupled lattice branch with zero action at ALL momenta, outside the metric sector
+       max|Q(0) M_metric| = 1.56e-15; non-metric eigenvalues (S_R orientation) = [-48.0, -16.0, -16.0, -16.0, 0.0]
+[PASS] extra-branch decoupling check (the extra branch is decoupled, not physical): at every tested k != 0 the quadratic form has EXACTLY FIVE machine-zero modes = FOUR discrete-diffeomorphism (gauge) modes + ONE extra branch; the zero space meets the metric sector in exactly the 4 gauge directions (singular values: four ~1, fifth small), so the extra exact-zero branch lies OUTSIDE the metric sector (consistent with the EH pairing having only gauge zeros there): a Rocek-Williams-type spurious lattice direction, here EXACTLY decoupled at quadratic order -- the physical low-energy content is the EH sector alone
+       zero-mode counts at three k: [5, 5, 5]; metric-overlap pattern verified (4 gauge + 1 outside)
+
+  4D comparator  Q_h(k) =? c * Q_EH(k)  per direction (tick = the LAST component):
+    pure-tick (0,0,0,1)       c = -0.500000   rel-residual = 6.846e-09
+    pure-space (1,0,0,0)      c = -0.500000   rel-residual = 8.227e-09
+    space-space (1,1,0,0)/r2  c = -0.500000   rel-residual = 5.099e-08
+    tick-space (1,0,0,1)/r2   c = -0.500000   rel-residual = 5.113e-08
+    body (1,1,1,1)/2          c = -0.500000   rel-residual = 9.948e-09
+[PASS] 4D comparator check (THE 4D COMPARATOR + EMERGENT EUCLIDEAN ISOTROPY): Q_h(k) = c * Q_EH(k) + O(k^4) with ONE constant c = -1/2 across ALL FIVE directions INCLUDING the tick-space mixed ones -- the Regge<->EH second-variation correspondence (textbook 1/2 normalization + variational sign) holds on the 3+1 tick complex, and the O(k^2) graviton-sector isotropy across tick-mixed directions is the kinetic-isotropy primitive's structural grant realized DYNAMICALLY by the geometric action on the OS0 surface
+       c = {'pure-tick (0,0,0,1)': -0.5, 'pure-space (1,0,0,0)': -0.5, 'space-space (1,1,0,0)/r2': -0.5, 'tick-space (1,0,0,1)/r2': -0.5, 'body (1,1,1,1)/2': -0.4999999}; spread/mean = 4.50e-08
+[PASS] 3+1 fiber-metric check (THE 3+1 READING -- geometric lambda-one fiber metric + multipliers): at pure-tick momentum, Q_h = omega^2 K with K_spatial-trace : K_TT = -2 : +1 (lambda-one DeWitt, indefinite, both TT channels equal) and ZERO lapse (h_tick,tick) and shift (h_space,tick) kinetic weights -- the kinetic fiber metric and multiplier structure of the 3+1 target-operator row now come from delta^2 S_R of the geometric action NATIVELY (in the raw S_R orientation the overall sign is flipped; ratios and zeros are orientation-independent)
+       K_trace=+0.500000, K_TT(yz)=-0.250000, K_TT(E)=-0.250000 (ratio -2.0000); K_lapse=+1.06e-09, K_shift=+5.22e-10
+[PASS] spatial-sign comparator check (potential signs, spatial k || x at zero tick-frequency): the two spatial TT channels are EQUAL and the transverse-trace channel is equal-magnitude OPPOSITE-sign (ratio -1) -- the degenerate-supermetric no-go's supplied pair, re-derived inside the 3+1 tick complex (consistent with the 3D row); the single remaining sign is the overall action orientation (the located sign residual)
+       V_TT(yz)=-0.250000 = V_TT(E)=-0.250000; transverse-trace=+0.250000 (ratio -1.0000)
+
+TOTAL: PASS=10 FAIL=0
+VERDICT: the retained 3D cubic-Coxeter chain extends by the emergent tick (Z^3 x Z_tau, the
+path complex whose spatial slice IS the retained chain; c_t = c_s per the kinetic-isotropy
+primitive, structural grant only), and on the flat OS0 background: deficits vanish (the 4D
+tick extension of the retained flat anchor), vertex displacements are exact zero modes at
+every momentum, the five non-metric modes are massive, and the second variation of the Regge
+action matches c = -1/2 times the 4D Euclidean linearized EH pairing at O(k^2) ISOTROPICALLY
+ACROSS TICK-MIXED DIRECTIONS -- so at pure-tick momentum the geometric action natively yields
+the lambda-one DeWitt kinetic fiber metric (K_trace:K_TT = -2:+1, both TT equal) with ZERO
+lapse/shift kinetic weights (the multiplier structure), and at zero tick-frequency the
+spatial comparator pair (+-, equal magnitude). The supplied comparator inputs named by the
+degenerate-supermetric no-go and the structural pieces certified by the 3+1 target-operator
+row are reproduced on this tick complex by delta^2 S_R. Remaining open: the overall action
+orientation (the same single located sign residual), edge-length-DOF provenance, action
+selection, nonlinear closure. The tick-scale itself is NOT derived (retained clock-rate no-go
+respected; c_t = c_s is the primitive's structural grant). No PDG/fitted value.
+  END unchanged 3+1 finite helper output
+[PASS] T1b finite R4 reproduction: ten original predicates and real return status; no parent physical or all-momentum claim imported
+       PASS=10 FAIL=0
+  kernel census, declared real Euclidean 4-momenta:
+    k=[ 0.410,-0.230, 0.670, 0.310]  ker Q = 5  ker Q_h = 4  max|Q Gamma| = 2.6e-15
+    k=[ 1.100, 0.600,-0.400, 0.200]  ker Q = 5  ker Q_h = 4  max|Q Gamma| = 2.7e-15
+    k=[ 2.300, 1.700,-2.900, 0.830]  ker Q = 5  ker Q_h = 4  max|Q Gamma| = 4.5e-15
+    k=[0.013,0.000,0.000,0.021]      ker Q = 5  ker Q_h = 4  max|Q Gamma| = 1.8e-16
+[PASS] T2a numerical nullities five/four and gauge residuals at the four declared nonzero real momenta
+       ker Q = [5], ker Q_h = [4], worst max|Q Gamma| = 4.5e-15
+[PASS] T2b line-map continuum gauge identity, with residuals checked at four declared momenta
+       worst max|Q_h Gamma_h|/|Q_h| = 1.8e-13 over 4 momenta
+  branch hunt, omega in (0,8], 900-point scan then refinement:
+    axis |k|=0.30000 br=1 om*=0.29777489 s6=5.1e-17 s7=1.3e-16 s8=2.8e-03 n=7
+    axis |k|=1.00000 br=1 om*=0.92546834 s6=6.9e-17 s7=7.9e-17 s8=2.6e-02 n=7
+    axis |k|=2.00000 br=1 om*=1.52945031 s6=6.0e-17 s7=9.6e-17 s8=7.2e-02 n=7
+    axis |k|=2.50000 br=1 om*=1.68967272 s6=1.1e-16 s7=1.6e-16 s8=9.1e-02 n=7
+    axis |k|=3.00000 br=1 om*=1.75920233 s6=6.6e-17 s7=1.4e-16 s8=1.0e-01 n=7
+    axis |k|=3.14159 br=1 om*=1.76274717 s6=7.8e-17 s7=2.0e-16 s8=1.0e-01 n=7
+    body |k|=0.30000 br=1 om*=0.29851552 s6=5.8e-17 s7=7.2e-17 s8=2.7e-03 n=7
+    body |k|=1.00000 br=1 om*=0.95003563 s6=5.2e-17 s7=1.1e-16 s8=3.1e-02 n=7
+    body |k|=2.00000 br=1 om*=1.68441404 s6=6.6e-17 s7=9.6e-17 s8=7.5e-02 n=7
+    body |k|=2.50000 br=1 om*=1.95962020 s6=8.6e-17 s7=1.1e-16 s8=7.2e-02 n=7
+    body |k|=3.00000 br=1 om*=2.18045693 s6=9.0e-17 s7=1.1e-16 s8=6.3e-02 n=7
+    body |k|=3.14159 br=1 om*=2.23394278 s6=8.3e-17 s7=1.4e-16 s8=6.1e-02 n=7
+[PASS] T3 finite 900-point interior-minimum search: one detected frequency and numerical nullity seven per declared momentum; completeness unresolved
+       branches/momentum [1]; on-shell nulls [7] = five background numerical zeros plus two additional small singular values, over 12 declared momenta
+  4 sinh^2(omega/2) = sum_i 4 sin^2(k_i/2), worst relative residual per direction:
+    axis(100) 3.2e-13  face(110) 2.5e-13  body(111) 2.7e-14  (2,1,0) 1.3e-13  (3,1,2) 4.9e-14
+[PASS] T4a proposed lattice dispersion matches 32 declared zone points; no all-zone zero-set certificate
+       worst relative residual 3.243e-13 over 32 declared zone points in 5 directions (root-finder limited; ~1e-15 typical)
+  (omega^2-k^2)/k^4 at |k|=0.01, computed/exact rational:
+    axis(100) -0.166664/-0.166667  face(110) -0.124998/-0.125000  body(111) -0.111110/-0.111111  (2,1,0) -0.139998/-0.140000  (2,1,1) -0.124998/-0.125000
+[PASS] T4b conditional Taylor formula for the proposed scalar dispersion, compared at three small magnitudes; no physical light-speed derivation
+       pairs above; omega/|k| = 0.999991667 at |k| = 0.01
+  isotropy: spread of omega* over axis/face/body:
+    |k|= 0.02 axis 0.019999333 face 0.019999500 body 0.019999556 spread/k^2 0.0278
+    |k|= 0.05 axis 0.049989587 face 0.049992190 body 0.049993058 spread/k^2 0.0278
+    |k|= 0.10 axis 0.099916771 face 0.099937574 body 0.099944509 spread/k^2 0.0278
+    |k|= 0.20 axis 0.199336642 face 0.199502359 body 0.199557616 spread/k^2 0.0277
+    |k|= 0.80 axis 0.760385333 face 0.770197417 body 0.773481704 spread/k^2 0.0266
+[PASS] T4c five finite direction-spread diagnostics consistent with the conditional Taylor formula
+       finite spread/k^2 reference 0.0278; asymptotic conclusion is conditional on the scalar formula
+    k=(0.2,0,0) static   TT(yz) -0.00997780 TT(yy-zz) -0.00996671 tr-trace +0.00996671 lapse +6.3e-16 shift +5.1e-16
+    k=(0.2,0,0) on-shell TT(yz) -0.00002208 TT(yy-zz) +0.00002207 tr-trace +0.00002207 lapse +4.4e-16 shift +3.7e-16
+[PASS] T4d selected lapse and one shift diagonal forms near zero at one axis momentum; no full multiplier analysis
+       lapse 4.4e-16, shift 3.7e-16 on shell, raw S_R orientation; the static and continued selected forms are reported above; no complete constraint result
+  TT fraction of two selected best metric projections after gauge subtraction:
+    |k|= 0.05 TT fraction 1.00000000, 0.99999999
+    |k|= 0.20 TT fraction 0.99999952, 0.99999651
+    |k|= 0.80 TT fraction 0.99976777, 0.99916163
+    |k|= 2.00 TT fraction 0.98942430, 0.97252385
+    |k|= 3.00 TT fraction 0.95665239, 0.89085870
+  omega* - k on axis: |k|=0.1 -0.00, |k|=0.4 -0.01, |k|=1.2 -0.12, |k|=2.0 -0.47, |k|=3.0 -1.24
+[PASS] T5 least-squares metric/gauge-projected TT fractions at five axis fixtures; no exact finite-k metric polarization or proved limit
+       TT fraction 0.99999999 at |k|=0.05, 0.999 at 0.8, 0.96/0.89 at the corner; omega*-k = -0.47 at |k|=2 and -1.24 at 3; no Lorentzian target-operator identity is inferred
+
+[PASS] C1 actual metric-intersection witness: only four precision-level intersections; two extra directions approximate
+       principal cosines [1.0000000000000002, 1.0000000000000002, 1.0000000000000002, 1.0, 0.9997221080980286, 0.9997160217377898, 0.5243239584901989]; Q_h numerical nullity 4
+TOTAL: PASS=12 FAIL=0
+SUPPLIED, not derived: the edge lengths, the action selection and its orientation, the
+Lorentzian signature, the nonlinear completion, the record-to-geometry link.
+
+----- stderr -----
+

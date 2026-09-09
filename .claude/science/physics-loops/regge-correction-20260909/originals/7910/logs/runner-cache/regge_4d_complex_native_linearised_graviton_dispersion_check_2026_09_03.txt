@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/regge_4d_complex_native_linearised_graviton_dispersion_check_2026_09_03.py
+runner_sha256: d789886cd60c073c9163988a70a92809568517deb625677d8d5b6dbc1832d395
+input_fingerprint_sha256: b374f158c5bd46e231251a054ea6e4a250d897e274c4e425161753b00e1bc77d
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 29.86
+status: ok
+----- stdout -----
+T(Z^3 x Z_tau), Euclidean/OS0: delta^2 S_Regge, propagating modes and dispersion
+  complex imported from the landed 3+1 runner: 24 4-simplices, 15 edge classes, 50 hinge classes per 4-cell; 15x15 Hessian per momentum
+[PASS] T0 continuation provenance: the holomorphic continuation reproduces the landed Bloch Hessian and metric map at real momentum
+       max|Qan-bloch_Q| = 8.9e-16; max|Man-metric_map| = 5.3e-16 at the declared k; the gauge map is entire as landed and reused verbatim
+[PASS] T1a landed 3D row reproduces: the retained spatial comparator is unchanged
+       PASS=10 FAIL=0; c = -1/2, spread/mean 7.54e-08; TT -0.2500 = -0.2500; transverse-trace +0.2500
+[PASS] T1b landed 3+1 row reproduces: the 4D complex and Hessian imported here are the landed ones, re-executed clean
+       PASS=10 FAIL=0
+  kernel census, declared real Euclidean 4-momenta:
+    k=[ 0.410,-0.230, 0.670, 0.310]  ker Q = 5  ker Q_h = 4  max|Q Gamma| = 2.6e-15
+    k=[ 1.100, 0.600,-0.400, 0.200]  ker Q = 5  ker Q_h = 4  max|Q Gamma| = 2.7e-15
+    k=[ 2.300, 1.700,-2.900, 0.830]  ker Q = 5  ker Q_h = 4  max|Q Gamma| = 4.5e-15
+    k=[0.013,0.000,0.000,0.021]      ker Q = 5  ker Q_h = 4  max|Q Gamma| = 1.8e-16
+[PASS] T2a kernel census: dim ker Q(k) = 5 at every declared momentum -- 4 discrete diffeomorphisms plus 1 identically flat non-metric branch that never goes on shell; the metric-sector kernel is exactly 4
+       ker Q = [5], ker Q_h = [4], worst max|Q Gamma| = 4.5e-15
+[PASS] T2b continuum gauge family: the metric-sector kernel coincides exactly with h_munu = i(k_mu xi_nu + k_nu xi_mu) -- the discrete diffeomorphism orbit is the continuum one here, not an approximation to it
+       worst max|Q_h Gamma_h|/|Q_h| = 1.8e-13 over 4 momenta
+  branch hunt, omega in (0,8], 900-point scan then refinement:
+    axis |k|=0.30000 br=1 om*=0.29777489 s6=5.1e-17 s7=1.3e-16 s8=2.8e-03 n=7
+    axis |k|=1.00000 br=1 om*=0.92546834 s6=6.9e-17 s7=7.9e-17 s8=2.6e-02 n=7
+    axis |k|=2.00000 br=1 om*=1.52945031 s6=6.0e-17 s7=9.6e-17 s8=7.2e-02 n=7
+    axis |k|=2.50000 br=1 om*=1.68967272 s6=1.1e-16 s7=1.6e-16 s8=9.1e-02 n=7
+    axis |k|=3.00000 br=1 om*=1.75920233 s6=6.6e-17 s7=1.4e-16 s8=1.0e-01 n=7
+    axis |k|=3.14159 br=1 om*=1.76274717 s6=7.8e-17 s7=2.0e-16 s8=1.0e-01 n=7
+    body |k|=0.30000 br=1 om*=0.29851552 s6=5.8e-17 s7=7.2e-17 s8=2.7e-03 n=7
+    body |k|=1.00000 br=1 om*=0.95003563 s6=5.2e-17 s7=1.1e-16 s8=3.1e-02 n=7
+    body |k|=2.00000 br=1 om*=1.68441404 s6=6.6e-17 s7=9.6e-17 s8=7.5e-02 n=7
+    body |k|=2.50000 br=1 om*=1.95962020 s6=8.6e-17 s7=1.1e-16 s8=7.2e-02 n=7
+    body |k|=3.00000 br=1 om*=2.18045693 s6=9.0e-17 s7=1.1e-16 s8=6.3e-02 n=7
+    body |k|=3.14159 br=1 om*=2.23394278 s6=8.3e-17 s7=1.4e-16 s8=6.1e-02 n=7
+[PASS] T3 propagating-mode count: exactly one on-shell frequency per declared spatial momentum, doubly degenerate -- sigma_6 and sigma_7 at machine zero against a sigma_8 fourteen orders larger; no doubler and no spurious propagating branch in omega in (0,8]
+       branches/momentum [1]; on-shell nulls [7] = 5 kinematic + 2 physical, over 12 declared momenta
+  4 sinh^2(omega/2) = sum_i 4 sin^2(k_i/2), worst relative residual per direction:
+    axis(100) 3.2e-13  face(110) 2.5e-13  body(111) 2.7e-14  (2,1,0) 1.3e-13  (3,1,2) 4.9e-14
+[PASS] T4a exact all-zone dispersion: the on-shell locus is exactly the zero set of the standard hypercubic lattice d'Alembertian k-hat^2 continued to k_tau = i omega, 4 sinh^2(omega/2) = sum_i 4 sin^2(k_i/2), across the whole zone
+       worst relative residual 3.243e-13 over 32 declared zone points in 5 directions (root-finder limited; ~1e-15 typical)
+  (omega^2-k^2)/k^4 at |k|=0.01, computed/exact rational:
+    axis(100) -0.166664/-0.166667  face(110) -0.124998/-0.125000  body(111) -0.111110/-0.111111  (2,1,0) -0.139998/-0.140000  (2,1,1) -0.124998/-0.125000
+[PASS] T4b small-k expansion, derived not fitted: omega^2 = k^2 - (k^4/12)(1 + sum_i n_i^4) + O(k^6) -- massless, light speed exactly 1 in tick units, the anisotropy the cubic invariant alone: -1/6 axis, -1/8 face, -1/9 body, -7/50 for (2,1,0)
+       pairs above; omega/|k| = 0.999991667 at |k| = 0.01
+  isotropy: spread of omega* over axis/face/body:
+    |k|= 0.02 axis 0.019999333 face 0.019999500 body 0.019999556 spread/k^2 0.0278
+    |k|= 0.05 axis 0.049989587 face 0.049992190 body 0.049993058 spread/k^2 0.0278
+    |k|= 0.10 axis 0.099916771 face 0.099937574 body 0.099944509 spread/k^2 0.0278
+    |k|= 0.20 axis 0.199336642 face 0.199502359 body 0.199557616 spread/k^2 0.0277
+    |k|= 0.80 axis 0.760385333 face 0.770197417 body 0.773481704 spread/k^2 0.0266
+[PASS] T4c isotropy at quadratic order: the relative direction spread of omega scales as k^2, so omega is isotropic at O(k^2) and anisotropic only at O(k^4) -- the lattice-artefact order the landed rows leave uncharacterised
+       spread/k^2 constant at 0.0278 => the anisotropy first enters omega^2 at O(k^4)
+    k=(0.2,0,0) static   TT(yz) -0.00997780 TT(yy-zz) -0.00996671 tr-trace +0.00996671 lapse +6.3e-16 shift +5.1e-16
+    k=(0.2,0,0) on-shell TT(yz) -0.00002208 TT(yy-zz) +0.00002207 tr-trace +0.00002207 lapse +4.4e-16 shift +3.7e-16
+[PASS] T4d multiplier structure on shell: the lapse h_tautau and shift h_i,tau kinetic weights vanish on shell as well as statically -- the constraint multipliers carry no propagating weight
+       lapse 4.4e-16, shift 3.7e-16 on shell, raw S_R orientation; the static row is the landed comparator pair, ratio -1
+  TT fraction of the two propagating modes after gauge removal:
+    |k|= 0.05 TT fraction 1.00000000, 0.99999999
+    |k|= 0.20 TT fraction 0.99999952, 0.99999651
+    |k|= 0.80 TT fraction 0.99976777, 0.99916163
+    |k|= 2.00 TT fraction 0.98942430, 0.97252385
+    |k|= 3.00 TT fraction 0.95665239, 0.89085870
+  omega* - k on axis: |k|=0.1 -0.00, |k|=0.4 -0.01, |k|=1.2 -0.12, |k|=2.0 -0.47, |k|=3.0 -1.24
+[PASS] T5 TT up to gauge is a small-k statement, and the target-operator row's omega = +-k across the zone is not reproduced here: both polarisations are transverse-traceless up to gauge as k -> 0 and deform at the corner, where omega* falls below k by O(1)
+       TT fraction 0.99999999 at |k|=0.05, 0.999 at 0.8, 0.96/0.89 at the corner; omega*-k = -0.47 at |k|=2 and -1.24 at 3 -- the same polynomial read in Lorentzian signature gives omega = +-k, and only on axis
+
+TOTAL: PASS=11 FAIL=0
+SUPPLIED, not derived: the edge lengths, the action selection and its orientation, the
+Lorentzian signature, the nonlinear completion, the record-to-geometry link.
+
+----- stderr -----
+

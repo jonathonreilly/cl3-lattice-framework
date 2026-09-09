@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/record_map_keeps_mass_fraction_vacuum_weightlessness_check_2026_09_04.py
+runner_sha256: 6bd17d531b288622346acb3ee6e0deac16fa0ebb2c08db7e02847f61513c4614
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 20.86
+status: ok
+----- stdout -----
+PASS A1 [exact] THE RECORD MAP ANNIHILATES THE HOP ENERGY DENSITY. On the 2x2x3 cube in its 12-qubit space (dim 4096), D(eps^hop_v) = 0 at EVERY site, max |diag| = 0.000e+00 -- structurally zero, since c^+_v c_j with j != v changes the record configuration. The hop energy is there and wholly unreadable: ||eps^hop||_F = 350.542437 = ||eps^hop - D(eps^hop)||_F = 350.542437, 100.0 per cent off-diagonal in the record basis
+PASS A2 [exact] AND KEEPS THE MASS TERM WHOLE. D(eps^mass_v) = eps^mass_v to 0.000e+00 and D(eps^tot_v) = m s_v (n_v - 1/2) = -(m/2) s_v B_v to 0.000e+00 at every site, B_v = I - 2 n_v the landed corner parity: one operator identity, not an approximation
+PASS A3 [exact] THE SAME IDENTITY IN THE ONE-PARTICLE SECTOR THE GRAVITY LANE USES. The KS hop matrix on the 4^3 torus has zero diagonal, max 0.000e+00, so D kills eps^hop there too and leaves m s_v |psi_v|^2: one-record readability carries no hop energy at any single time
+   m      r_v         dev     spread   r_v/E^(0)_v        w_m
+   0.0   +0.000000000  0.0e+00  0.0e+00  0.000000000  0.000000000
+   0.3   -0.021413851  3.5e-16  5.7e-16  0.017814040  0.017814040
+   1.0   -0.201703228  1.0e-15  2.0e-15  0.155199559  0.155199559
+   2.0   -0.648782512  2.6e-15  4.2e-15  0.413606981  0.413606981
+   6.0   -2.781026670  8.4e-15  1.4e-14  0.858609560  0.858609560
+PASS B1 [numerical, 1e-11] THE SEA'S READABLE ENERGY IS NONZERO FOR m != 0, UNIFORM, NEGATIVE. <D(eps^tot_v)>_sea = m s_v (<n_v> - 1/2) = -(m^2/2) [(M^2 + m^2)^{-1/2}]_vv, the staggered chiral condensate, to 8.4e-15 on 8^3 over m = 0.3, 1, 2, 6; on the 12^3 sea at m = 1 it is -0.200917464424 per site, uniform in v to 4.2e-15
+PASS B2 [exact] AT m = 0 THE READABLE OPERATOR IS THE ZERO OPERATOR, SO READABILITY WOULD MAKE ALL MATTER WEIGHTLESS. D(eps^tot_v) carries an explicit factor m, so at m = 0 it vanishes as an OPERATOR, not by cancellation in a state: max |r_v| = 0.0e+00 on the 12^3 sea and exactly zero on every one-particle state
+PASS B3 [numerical, 1e-9] AND ITS Phi-RESPONSE IS EXACTLY ITSELF, SAME SIGN AS THE TOTAL. Under H(1,1) and uniform Phi, H(Phi) = (1 + Phi) H_0 is a pure rescaling, so the sea projector is Phi-independent (d<n_v>/dPhi <= 6.1e-11) and only m(1 + Phi) varies: chi_read(0) = r_v to 2.5e-12, = -0.201703228 at m = 1 on 8^3 against the total chi_0[H(1,1)] = -1.299638 -- 15.52 per cent of it. D removes 84.48 per cent of the vacuum response and not the last 15.52 per cent
+PASS B4 [exact] THE RECORD-DEPHASED TWIN. For |g> the cube's exact many-body ground state at m = 1 and rho_D = D(|g><g|), every record readout agrees -- max |<n_v>_g - <n_v>_D| = 0.0e+00 at all 12 sites -- yet <H>_g = -19.750491965 against <H>_D = -1.680186677, -1.505859 per site, all of it hop energy (<hop>_g = -18.070305288, <hop>_D = +0.000000000). A record-content source cannot be an energy source
+PASS B5 [numerical, 1e-12] THE LANDED C-SYMMETRY STATEMENT IS CONFIRMED AND COMPLETED, NOT DISTURBED. <n_v>_{-m} = 1 - <n_v>_m holds site by site on the 6^3 sea to 1.3e-15 over m = 0, 0.5, 1, 2, with max |<n_v> - 1/2| = 0.000000000 / 0.106445405 / 0.198338711 / 0.323427762: <n_v> = 1/2 is the C fixed point at m = 0 ONLY, as that note scopes it, and the closed form implies the relation to 8.3e-16. C kills the readable CHARGE density; the m s_v weight un-staggers <n_v> - 1/2, so it does not kill the readable ENERGY density
+PASS C1 [exact] THE READABLE SOURCE IS THE (alpha, beta) = (0, 1) CORNER OF THE LANDED TWO-WEIGHT FAMILY. Since D annihilates the hop and keeps the mass term, H_Phi = H_0 + sum_v Phi_v D(eps^tot_v) = M + m Eps (1 + Phi). Its band weight is w_read = m^2/E, and the master law and the independent -4 w E''_xx + 4 E'_x w'_x both give a_x/g = -4 m^2 cos p_x / E^2, 0 mismatches over a DECLARED FIXED list of 12 momenta x 4 masses
+PASS C2 [exact] IT PASSES AT REST AND FAILS IN VELOCITY WITH THE OPPOSITE SIGN. At rest a_x/g = -4.000000000000 for EVERY mass in 0.25, 0.5, 1, 2, 4, band 0.0e+00 -- not chromatic, unlike the count source's -4/m = -16/-8/-4/-2/-1. The exact transverse corollary a_perp/g = -4 [beta + (alpha - beta) v_t^2] gives -4 (1 - v_t^2) = -4/gamma^2, the mirror image about the Newtonian value of general relativity's -4 (1 + v_t^2)
+   v_t  read(0,1)  tot(1,1)  full(2,1)=GR   1-v^2   1+v^2
+  0.00   1.000000  1.000000    1.000000   1.0000  1.0000
+  0.30   0.910000  1.000000    1.090000   0.9100  1.0900
+  0.60   0.640000  1.000000    1.360000   0.6400  1.3600
+  0.90   0.190000  1.000000    1.810000   0.1900  1.8100
+  1.00  -0.000000  1.000000    2.000000   0.0000  2.0000
+PASS C3 [exact] SO THE LIGHT-BENDING FACTOR IS ZERO: LIGHT DOES NOT BEND AT ALL. The landed factor alpha/beta is 0/1 = 0 here, against 1 for the energy-density coupling and 2 for general relativity. At m = 0 the coupling operator dH/dPhi = m Eps is the ZERO OPERATOR: max |a_x/g| = 0.0e+00 over nine declared momenta, and a(v)/a(0) tracks 1 - v_t^2 to 0.0e+00
+PASS C4 [numerical, 1e-14] THE READABLE SOURCE OF MATTER IS NEITHER THE ENERGY NOR THE COUNT: IT IS THE TRACE OF THE STRESS TENSOR. On 12^3 one-particle band states at m = 0.3, 1, 2 and three momenta each, <D(eps^tot)> = m <Eps> = m^2/E to 1.6e-15 on all 9 rows -- the Lorentz-scalar m psi-bar psi. Hence S_read/S_tot = m^2/E^2 = 1/gamma^2 to 3.1e-15, equal to the total only at rest and zero at m = 0: a readable-source bridge is scalar gravity
+PASS C5 [exact] THE UNIFYING IDENTITY: D KEEPS EXACTLY THE MASS FRACTION OF THE ENERGY. For the sea r_v IS the mass part of the total energy density, deviation 0.0e+00 on the 4^3 and 8^3 boxes at m = 0.3, 1, 2, 6, so r_v/E^(0)_v = w_m exactly (0.155199559 at m = 1 on 8^3); for matter S_read/S_tot = 1/gamma^2 is the same statement. One identity covers vacuum and matter
+    m    p_y      cp     sx=10      sx=14      sx=20   Richardson     closed
+   1.0 0.0000    read  -3.851206  -3.882803  -3.896135   -3.908944  -4.000000
+   1.0 0.0000     tot  -3.816694  -3.902879  -3.950560   -3.996371  -4.000000
+   0.4 0.7854    read  -0.832933  -0.853292  -0.862349   -0.871052  -0.858152
+   0.4 0.7854     tot  -3.762287  -3.873287  -3.935423   -3.995122  -4.000000
+   0.0 0.7854    read   0.000000   0.000000   0.000000    0.000000   0.000000
+   0.0 0.7854     tot  -3.716225  -3.846908  -3.921736   -3.993629  -4.000000
+PASS C6 [numerical, extrapolated, 1e-1] AND IT IS MEASURED, NOT ONLY ARGUED. Exact Ehrenfest accelerations on the 96 x 32 x 4 slab under Phi = g (x - x_c), g = 2e-04, differenced centrally in g and Richardson-extrapolated in 1/sigma_x^2 from sigma_x = 14, 20, match the closed form on every row to 9.1e-02, and the massless row is EXACTLY 0.0e+00. Measured read/tot at m = 0.4, p_y = pi/4 is 0.218029 against the closed 0.214538. REPORTED HONESTLY: the m = 1 at-rest read row is 2.3 per cent short of -4 after extrapolation because w_read = m^2/E is curved in E and the packet has a finite momentum spread; the tot rows close to 0.1 per cent
+PASS D1 [statement + exact arithmetic] Lambda_vac = 0 DOES NOT CONTRADICT Lambda = 3/R^2; IT EVACUATES ITS ANTECEDENT. Both legs are GEOMETRIC: Leg A trace-contracts the textbook vacuum Einstein equation on a GIVEN de Sitter throat, and Leg B is the Obata equality on the round three-sphere; no energy density enters either. Condition 4 reads 'for any R > 0', an OPEN ray not containing its limit point, and 3/R^2 = 3e+00/3e-01/3e-02/3e-06/3e-12/3e-24 at R = 1e+00/3e+00/1e+01/1e+03/1e+06/1e+12 is positive at every finite radius. Lambda_vac = 0 is R = infinity, off that domain: the antecedent is not instantiated
+PASS D2 [statement] SO KEEPING BOTH NEEDS A THIRD DECLARATION OF WHAT Lambda NAMES. Leg A takes Lambda from where a vacuum energy density sits in the field equation; Leg B reads it as the spectral gap of the retained spatial slice. On the first reading a chain whose vacuum source vanishes at every k says Lambda_vac = 0 about that same object; on the second, Lambda is a datum of the retained S^3 topology. The sea's total density (-1.2996 per site at m = 1 on 8^3) and its readable part (-0.2017) are both cutoff scale, so the choice is urgent. NOT made here
+SUMMARY: the record map keeps exactly the mass fraction of the energy, so the readable source is the trace of the stress tensor and a readable-source bridge is scalar gravity with bending factor zero and the wrong velocity sign. The sea's readable energy does not vanish for m != 0 and responds to Phi with the sign of the total, so weightlessness does not follow from readability: it is a reference choice, the sea-referenced source the landed notes already use, and it must be declared as such.
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

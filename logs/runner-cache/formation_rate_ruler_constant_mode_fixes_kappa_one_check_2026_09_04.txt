@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/formation_rate_ruler_constant_mode_fixes_kappa_one_check_2026_09_04.py
+runner_sha256: b1cc75c07c35d72cf508502f56a30673d9b0d5d64ec35727082628021fc9974e
+input_fingerprint_sha256: 919bede73a0f8fad951096ef12d2a9085e5a480cc0ad9ad9d00a46abb8bea144
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 6.63
+status: ok
+----- stdout -----
+INPUT_BINDING: exact companion note verified; finite supplied definitions only
+PASS A1 AM smooth positive-rate expansion: alpha=1+kappa*nu, beta=1; alpha=2 iff product=1.
+PASS A2 GM has the same first-order coefficient on its positive-rate domain.
+PASS A3 AM minus GM quadratic coefficient is nu*kappa**2*(Phi_v-Phi_j)**2/8; full difference has cubic remainder.
+PASS A4 Differentiable symmetric homogeneous nonzero dressings: Euler coefficient; tested weighted homogeneous family p=1,2,3 and non-mean example.
+PASS A5 Bipartite bond identity: average(S+eps*T)=average(S)+eps_v*(T_v-T_j)/2; no pointwise cancellation follows without equal endpoint T.
+PASS A6 All-open 16x4x4 ramp: projected occupation bond coefficient <= 2.163e-14; fitted staggered coefficient <= 0.174067; energy bond coefficient >= 0.999969, staggered fit <= 1.174e-14. These are projections.
+   m/alpha | rho_rec scalar/stag/bond | E_v scalar/stag/bond
+   0.5/1 |  1.1e-14 -0.000  2.0e-14 | 0.99996 -1.2e-14 0.99997
+   0.5/2 | -6.4e-15  0.110 -1.2e-14 | 1.94585  9.7e-15 1.94733
+   1.0/1 |  2.6e-14 -0.000  2.2e-14 | 0.99999 -1.1e-14 0.99999
+   1.0/2 | -9.1e-15  0.169 -2.0e-14 | 1.81816  7.4e-15 1.82216
+   2.0/1 |  1.3e-15 -0.000 -5.7e-15 | 1.00000 -2.2e-15 1.00000
+   2.0/2 |  7.6e-15  0.174  9.9e-15 | 1.54037 -1.0e-14 1.54655
+PASS A7 192x16x4 AM-GM quadratic approximation relative residuals [4.2284586847586004e-07, 8.396819587297739e-08]; leading-order comparison only.
+PASS A6a projected zero is not pointwise: max bond=0.08754820, site-fit residual=0.02508335
+PASS A4a max(x,y) homogeneous cusp gives linear |epsilon|=0.001000
+PASS B1 Log-derivative ratio Q(c)=1+nu*kappa*(1+c)/(1+kappa*c), AM and GM, nonzero denominators. Q is not physical constant-mode symmetry.
+PASS B2 Q-constancy on product=1 selects [{kappa: 1, nu: 1}]; both constraints are stipulated, not derived gauge requirements.
+PASS B3 Q constancy does not imply scalar rescaling: c=.1 bestscale=1.19127660, residual=0.09127660, normalizedmass=0.90909091
+PASS C1 Open 2x2x3, half-filled 924 sector, m=.7 ramp H(2,1): total-energy and occupation residuals 5.329e-15, 1.887e-15.
+PASS C2 Uniform positive rescaling on periodic4^3 m=.9: K(1)=1.0000000000, energy spread=1.246e-15; supplied sea energy differs from a Poisson matter source.
+PASS C3 Uniform response K=alpha*(1-w_m)+beta*w_m; inclusive endpoints; declared mass/alpha grid residual 9.259e-11.
+   w_m/K at alpha 2: 0.0:0.0000/2.0000 0.3:0.0302/1.9698 0.9:0.1529/1.8471 2.0:0.4304/1.5696 6.0:0.8601/1.1399
+PASS D1 Uniform scalar fixed point alpha=(nu_r*w_m + 1)/(nu_r*w_m - nu_r + 1), denominator nonzero; tuning to2 requires nu=-1/(w_m - 2). No spatial energy-tracking loop solved.
+PASS D2 Uniform scalar tuned slope (w_m - 1)/(w_m - 2) lies in[0,1/2] for w_m in[0,1], equality at0; nu=1,w_m=0 has slope1 and no fixed point.
+PASS D3 200 uniform scalar iterations for each declared mass reach alpha=2 within 3.728e-11; no spatial self-consistency conclusion.
+   m/nu*/alpha*/kappa*: 0.0:0.5000/2.000000/2.0000 0.3:0.5077/2.000000/1.9698 0.9:0.5414/2.000000/1.8471 2.0:0.6371/2.000000/1.5696 6.0:0.8773/2.000000/1.1399
+PASS D4 All-open slab INTERIOR max energy residuals [0.000285031004026326, 7.134762699512187e-05], ratio 3.994961; external-rate versus linear-family comparison.
+PASS D5 Uniform response shift K(2)-K(1)=0.821845, 1-w_m=0.821845; feedback requires an additional source equation and reference.
+PASS E1 Declared rate parameters: sparse Hamiltonian residual ratios 4.00/4.00/4.00/4.00/4.00; off-product control 5.038e-03.
+   rest/massless/acceleration-ratio: parent H(1,1) -4.01067 -4.00966 0.9997 | declared H(2,1) -4.02984 -8.01583 1.9891 | rate AM (1,1) -4.03702 -8.04940 1.9939 | rate GM (1,1) -4.03702 -8.04940 1.9939 | rate AM (2,1/2) -4.03343 -8.03262 1.9915
+PASS E2 Finite packet acceleration ratios (two-width Richardson assumption): {'parent H(1,1)': (-4.010671158787365, -4.009662985668466, 0.999748627329695), 'declared H(2,1)': (-4.029838207610374, -8.015831514575122, 1.9891199352463271), 'rate AM (1,1)': (-4.0370209336698855, -8.049399466064227, 1.993895894601383), 'rate GM (1,1)': (-4.037020417670226, -8.049396814930311, 1.9938954927494863), 'rate AM (2,1/2)': (-4.033432362597005, -8.032622408498003, 1.9915103778574437)}; not an exact curvature or light-bending observable.
+PASS E3 Declared rest packets: rate {0.5: -4.063699535651181, 2.0: -4.011271084681759, 1.0: -4.0370209336698855}, linear {0.5: -4.056835419040781, 2.0: -4.001861047383346, 1.0: -4.029838207610374}; spread=0.052428, gap=0.009410. Residual origin and all-mass universality not proved.
+PASS E4 Two-field acceleration-ratio mismatch 0.0047760->0.0003330, reduction 14.3442; small-field ratios 1.9845831,1.9842502; maxPhi=0.0960. Not a convergence proof.
+PASS F1 Stipulated local tick arithmetic only: r/r0=Phi_v + 1, derivative=1, value(-.1)=0.9000; no clock/carrier authority.
+SUMMARY: finite conditional identities and declared-fixture calculations only; physical source, carrier, metric and cosmology remain open.
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

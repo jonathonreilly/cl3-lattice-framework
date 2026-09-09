@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/vacuum_response_anti_screens_sea_reference_removes_it_check_2026_09_04.py
+runner_sha256: 8d8189ee6733a4c564c94556433bb352451d93561ecc81c6f858ec450e4f0e02
+input_fingerprint_sha256: b258810aac5436c5002a3916974b03bd85bb3a2e571fc26bc0834ec0679ddbe1
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 4.06
+status: ok
+----- stdout -----
+INPUT_BINDING: exact companion note verified; finite supplied definitions only
+   m     E^(0)_v      spread     w_m        K(1)      K(2)      chi_vac[H(2,1)]
+   0.0  -1.12183644   1.1e-15  0.000000  1.000000  2.000000    -2.2436729
+   0.3  -1.14856687   6.7e-16  0.030164  1.000000  1.969836    -2.2624889
+   0.9  -1.24769456   1.6e-15  0.152931  1.000000  1.847069    -2.3045775
+   1.0  -1.26960970   1.1e-15  0.178155  1.000000  1.821845    -2.3130325
+   2.0  -1.55484914   1.8e-15  0.430377  1.000000  1.569623    -2.4405269
+   6.0  -3.23760112   6.7e-15  0.860090  1.000000  1.139910    -3.6905732
+PASS A1 Periodic4^3, six declared masses: E0<0 at every site; m1 E0=-1.26960970, site spread=1.110e-15.
+PASS A2 Uniform K identity residual 4.461e-11; m1 w_m=0.178155, K2=1.821845, half-reference chi2=-2.3130325, chi1=-1.2696097.
+PASS A3 Uniform positive H(1,1) rescaling: max K1 departure=1.391e-11; response multiplication=1.821845.
+PASS A4 Uniform conditional algebra K>=1 for alpha>=1 and 0<=w_m<=1; finite grid min=1.000000, roots=[-0.0, -0.03110166219863505, -0.18054186842223216, -0.216774002586585, -0.755547260605591, -6.147462610314521] (formula needs w_m!=1).
+PASS A5 Open2x2x3 half-filled Fock sector924: independent uniform energy derivatives (name,manybody,onebody,error)=[('H(1,1)', -12.408373525145677, np.float64(-12.408373525119032), np.float64(2.6645352591003757e-11)), ('H(2,1)', -21.87319211048866, np.float64(-21.873192110604123), np.float64(1.1546319456101628e-10))].
+   chi(k) on the 8x8x8 sea, m = 1, alpha = 2, k along x:
+   lam=0.000 chi=-2.39757  lam=0.586 chi=-2.29414  lam=2.000 chi=-2.04161  lam=3.414 chi=-1.77939  lam=4.000 chi=-1.66562
+PASS A6 8^3 AXIAL sample fits: first3 chi0=-2.3979405, c=0.1780893, maxres=5.203e-04; all5 maxres=5.943e-03; sampled staggered/off residual=7.069e-12/2.778e-11. Neither full-zone isotropy nor exact Laplacian established.
+PASS A7 SURROGATE chi=chi0+c*lambda: (L+chi)Phi=-P0rho gives m2=-2.035449,-1.192293; normalization factors=0.848832,0.917446. Negative fitted mass-squared, not a true-kernel conclusion.
+PASS A8 SURROGATE negative eigenvalue counts (L,count,min)=[(16, 256, -1.8832079241838797), (24, 780, -1.9673005117394422), (32, 1892, -1.9970194199677667), (64, 15352, -2.0258183125057)]; 1/sqrt(abs(m2))=0.700922. Loss of positivity is not noninvertibility or dynamical runaway; no positive real Yukawa decay length.
+PASS B1 Gapped constant-rank spectral P(H): tr(H*dP)=0 is a TOTAL-trace identity. Actual m1 uniform/two-wave controls (trace,Frobenius bound,relative)=[(1.9481629476292284e-08, 242.89386349795157, 8.020634690285859e-11), (6.958322806838169e-09, 174.83401826840563, 3.97995932127793e-11), (5.662137354464636e-09, 176.46524740660456, 3.208641609425879e-11)]; not a local zero theorem.
+   fixed-reference residual (12^3): lam=0.0000 chi=+1.090e-11  lam=0.2679 chi=-1.234e-03  lam=1.0000 chi=-5.125e-03
+PASS B2 Fixed P(0): uniform12^3 chi=1.090e-11; axial sample ratios=[np.float64(-0.00460529837233305), np.float64(-0.005125369761797908)]; two-point slope=-0.0053157, 1/(1+slope)=1.0053441; max of four8^3 AXIAL samples=0.0100152. No zone bound or pure Laplacian claim.
+PASS B3 Field-dressed reference gives P(Phi)-P(Phi)=0 by definition; four axial controls=[(0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.0, 0.0)]. Fixed reference is different.
+PASS B4 same-lambda4 counterexample (index,lambda,fixed,half)=[((4, 0, 0), 4.0, 2.350913094495023e-11, -1.6656161192815468), ((2, 2, 0), 3.9999999999999996, -0.02627384041177407, -1.6918899597202592)]
+PASS C1 P0 preserves constant coefficient times zero-mean field: fieldmean=1.789e-18, projection residual=3.469e-18. P0 also kills arbitrary additive constants in rho.
+PASS C2 Separate arithmetic 3/R**2 at R=(1.0, 3.0, 10.0, 1000.0, 1000000.0): [3.0, 0.3333333333333333, 0.03, 3e-06, 3e-12], positive for finite R>0. P0 source convention implies neither Lambda=0 nor R=infinity.
+PASS C3 Uniform scalar identity chi=E0*(2-w_m), error=1.444e-10; rows(m,wm,nu,kappa,E0,pred,computed)=[(0.0, 0.0, 0.5, 2.0, -1.1218364368360203, -2.2436728736720406, -2.243672873654054), (0.3, 0.030163526390129626, 0.5076563528988913, 1.9698364736098704, -1.148566865436655, -2.262488903916883, -2.262488903908774), (0.9, 0.152931355720168, 0.5413983952880634, 1.847068644279832, -1.2476945588291595, -2.304577497251899, -2.304577497227491), (1.0, 0.17815469604525797, 0.5488940240037207, 1.821845303954742, -1.2696097004977105, -2.31303247070714, -2.3130324706908616), (2.0, 0.43037705538326465, 0.6370956817557074, 1.5696229446167353, -1.55484913872824, -2.440526883565415, -2.440526883519708), (6.0, 0.8600902089985196, 0.8772624008444028, 1.1399097910014804, -3.2376011208386366, -3.690573217001329, -3.69057321685691)]; no spatial feedback solution.
+   Lb = 64, unsubtracted: D  4piD G_bare  ruler/bare  parent/bare
+      1   1.0372     -0.188     -3.820
+      2   0.9893     -0.437     -3.825
+      3   0.9057     +2.563     +4.847
+      4   0.8430     +4.611    +19.754
+      5   0.7910     +1.123    +30.361
+      6   0.7434     -1.436    +25.477
+      7   0.6979     +5.018     +2.900
+      8   0.6536    +12.570    -25.317
+     10   0.5675     -3.746    -16.263
+     16   0.3275    +50.556   -221.849
+PASS D1 FITTED NEGATIVE-MASS SURROGATE FFT kernels: flips={32: [10], 64: [1, 2, 6, 10]}; maxmagnitudes={32: np.float64(49.92959668682145), 64: np.float64(12.57038578314137)}, selected-distance max=50.555813. Near poles amplify fit error; not destruction of a physical two-body law.
+PASS D2a L16 plus-equation residual=1.110e-16, minus residual=0.012915
+PASS D2a L24 plus-equation residual=1.110e-16, minus residual=0.012915
+PASS D2a L64 plus-equation residual=1.110e-16, minus residual=0.012915
+PASS D2 AXIAL-INTERPOLANT SURROGATE uses lambda+chi_fixed: median=1.0065562, maxabsdeparture=0.0124892; rows=[(16, [np.float64(1.0053761528538065), np.float64(1.006897475646892), np.float64(1.0067158291671898), np.float64(1.0065473535278238), np.float64(1.0069828581292337), np.float64(1.0069259147072471), np.float64(1.0124891614080225), np.float64(1.0074669997043786)], [np.float64(1.0067158291671898), np.float64(1.0065473535278238), np.float64(1.0069259147072471)]), (24, [np.float64(1.0054429261890845), np.float64(1.0068434378880202), np.float64(1.0066709054842227), np.float64(1.006527932332898), np.float64(1.0066563925565637), np.float64(1.0064168785981011), np.float64(1.0060954211754964), np.float64(1.0061659240095329)], [np.float64(1.0066709054842227), np.float64(1.006527932332898), np.float64(1.0064168785981011), np.float64(1.0061659240095329), np.float64(1.009881269047594)]), (64, [np.float64(1.0055145265310363), np.float64(1.0067859269167043), np.float64(1.0066179318022885), np.float64(1.0065013610708287), np.float64(1.0065650319149193), np.float64(1.0064319224321652), np.float64(1.0063268430752996), np.float64(1.0063911510699088)], [np.float64(1.0066179318022885), np.float64(1.0065013610708287), np.float64(1.0064319224321652), np.float64(1.0063911510699088), np.float64(1.0065239191059758), np.float64(1.006434705006275)])]. First list includes L16 antipode d8. No full susceptibility or unchanged rigid-copy ratios established.
+PASS D3 Selected POSITIVE mass-squared calibration on L64 d1..8: rows(m2,length,maxdev)=[(2.0217, np.float64(0.7033016632003334), np.float64(1.0002483596945304)), (1.0, np.float64(1.0), np.float64(0.9998596620698507)), (0.1, np.float64(3.162277660168379), np.float64(0.8808279660403668)), (0.01, np.float64(10.0), np.float64(0.36352793469871825)), (0.001, np.float64(31.622776601683796), np.float64(0.05714515617671434)), (0.0001, np.float64(100.0), np.float64(0.006095485210354523)), (1e-06, np.float64(1000.0), np.float64(6.141129413217428e-05))]; first sampled <1percent row=(0.0001, np.float64(100.0), np.float64(0.006095485210354523)). Not a necessary threshold, infinite-volume bound, or negative-mass calibration.
+PASS E1 Defined unit-normalized inverse graph Laplacian: controls=[(32, np.float64(0.33070467016913907)), (64, np.float64(0.32749952803973187))], near-source=[(1, np.float64(1.0371937108149942)), (2, np.float64(0.9893286055930227)), (3, np.float64(0.9056511503473642)), (4, np.float64(0.8430209692453146))]. Continuum asymptotic coefficient1/(4pi) in these units is not physical G_Newton.
+PASS E2 AXIAL fitted coefficient differs from mass fraction: (m,chi0,c,wm)=[(0.0, -2.3830212332853957, 0.18817015836921366, 0.0), (1.0, -2.397940485344827, 0.17808928215120282, 0.15519955863606294), (2.0, -2.4887276932883453, 0.15046198568350994, 0.41360698148838826)]; no full-zone derivative expansion inferred.
+SUMMARY: finite conditional identities and declared-fixture calculations only; physical source, carrier, metric and cosmology remain open.
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+
