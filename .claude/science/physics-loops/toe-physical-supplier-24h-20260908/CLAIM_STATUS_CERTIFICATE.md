@@ -13,3 +13,6 @@ Energy-response and spectral-moment probes remain bounded research support. Exac
 Fifth round: disposition demote to scoped research evidence. RKregularizedresponse14/18precisionpass,6/6exactconsistency; detunedprimary pi difference−3.14combinedSE remainsunresolved despite nominalfour-SE pass. Direct same-edge fullcycle compatibility obstruction is mathematically scoped and independently checked; no formalN1packet/universalclaim. Native occurrence requires supplied readyresources, schedule andmeasurement. New activeproductions make no currentclaim.
 
 Sixth round: pass exactconditionalfullambientCAR-Z2dictionary andnativeBellresource proofs; noformalgrade. Relaxedcyclecode andgatedcycle/lowchargeHamiltoniansareexplicitnewimports. Exchangeminussignisoperatoralgebra,notdeconfinedfermionstatus. RK36/36precisionpass doesnotcertifystationarity; oldtransitivefreezegapretrospectivelydocumented. L4biasmechanismunresolved. NoformalN1packet.
+
+
+Checkpoint40 current status: conditional-support. proposal_allowed: false for retained/promoted wording. bare_retained_allowed: false. PR8064/8065 are exact-support titles for conditional supplied-model theorems; no effective audit status. Node nonvanishing, all-u stability and physical law selection remain open; pilot UNLAUNCHED and unreviewed partials remain provisional.

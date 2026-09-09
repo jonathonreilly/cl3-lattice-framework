@@ -20,3 +20,6 @@ Constructive component symmetry supplies an exact missing premise for interpreti
 Fifth round trace: native/ice commoncarrier hypothesis directly addresses the missing matter/electromagnetic dictionary. The scoped mismatch exposes an additional encoding/dynamics import; it does not supply that bridge. Regularized spectrum size ladder attacks the finite-size soft-response discriminator; active results must separate burn and sampling errors before physical interpretation.
 
 Newaffirmativefrontierstructure: onefullnativeedgecarrier admitsredundantCAR-Z2Gausscoordinates; a gatedringHamiltonianmatchesice andprojectedhopsmovelinkdivergencedefects. This suppliesanexplicitconditionalcommon-carrier dictionary butdoesnotselectthegates/statecode/dynamicsfromaxioms. NativeentanglerPR8037 is separatelyfrontier_discovery; no inventedparentblockerclosure.
+
+
+Checkpoint40: trace_class upstream_support; downstream consumer is supplied-native-model low-energy interacting effective dynamics. Thermodynamic infrared/summability bounds and exact node scalar reduction support this consumer but do not close physical Hamiltonian selection, node nonvanishing or uniform interacting phase. Charged Record histories support exact instrument transport only.

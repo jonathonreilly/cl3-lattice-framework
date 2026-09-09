@@ -1,16 +1,8 @@
-# Ranked remaining physics
+# Ranked remaining physics — checkpoint40
 
-1. Deliver full finite L6 six-support denominator certificate: completed6489mask union, pending final independent portable replay of allmasks after fixed25 rank6 cost. Canonical draft prepared; no missing coefficient implied.
-2. L6third-order vacuum interaction: exact42real carrier, symmetry reduces30solves tofour. Measure frozen two-action and transport costs, then residual-certified fixed-iteration contract. Test whether L4vacuumlinear cancellation survives beyondflat spectrum. No CG before cost/certification source review and remote checkpoint.
-3. If tractable, derive allsix L6spectator coefficients via certified Gaussian/residual factorization; full densepair68-80real infeasible. Thirdvertex alone determines only singleton part.
-4. Nonzero-U local contour bounds beyond delivered mean density: needs direct quantum local insertion control, not global spectralgap or arbitrary excited-state denominators. Analytic fallback if vector costs fail.
-5. Indexed CTsampler integration remains engineering alternative after reference L4forecastFAIL129329seconds; no fullproduction without implementation and fixedcost.
+1. Infinite node alpha: independently reviewed scalar reduction and infinite gap h/6 give a concrete target. Test Gaussian kernel normalization/cost once after cold review and preregistration; derive explicit spatial/covariance bounds. High impact, moderate missing imports, bounded pilot ready, narrow stacked milestone possible.
+2. Fixed-coupling local defect stability: delivered infrared higher-odd summability removes one obstruction; all-u relative susceptibility, one-particle channel and connected mixed histories remain. Analytical work has low compute cost but a hard remainder gap.
+3. Full L6 sixth coefficient through Gaussian multi-insertion factorization: singleton result alone insufficient. Kernel pilot may supply reusable method; no large job without cost and source gate.
+4. Physical Record supplier: charged histories delivered8065; quantum conditional locality fixture archived due overlap. Roles, preparation, eligibility, clocks and Born instrument remain supplied. Reopen only for actual native supplier or novel falsifiable selection mechanism.
 
-Supplied-Hamiltonian selection, continuum/Lorentz/SM/gravity links and TOEclosure remain open. No mainlanding/formalaudit in this campaign.
-
-## Deferred at final delivery
-
-1. Determine the infinite-volume one-particle form factor at Dirac nodes with explicit tail bounds; finite L6 positivity does not settle it.
-2. Prove fixed-coupling uniform local defect stability by controlling higher odd and mixed histories and uniform remainders.
-3. Supply a native gauge-corrected Record instrument and physical indexed refinement law, grounded in the latest corrected main.
-4. Develop a new Gaussian/Pfaffian algorithm for the full L6 sixth-order mixed coefficient; the singleton response is not that coefficient.
+All completed numerical protocols stay closed. No global phase, continuum/SM/gravity identification, Hamiltonian selection or TOE closure is claimed. Science proposals remain separate from audit and main integration.

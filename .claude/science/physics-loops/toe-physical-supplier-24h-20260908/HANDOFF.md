@@ -489,3 +489,21 @@ Final PR #8063, head aea1602ec35a045e5b06be563acef0c28dadcbd4, delivers the inde
 Coordination branch ai/execution is at bbaff5beb6cbb573076aed01ad642c21b8fb948c; no separate coordination PR was found. Wave 52 reports 154 reviewed original science scopes landed and 30 of the fixed 254 original PRs still open. This is the separate coordinator's backlog, not our 28 new PRs. Main is now 0c52eb31300559f4d9e733b3a852b196f1fdc897, ahead of that planning report. Hourly follow-up will inspect changes and meaningful blockers without taking over its reviews or modifying its shared planning.
 
 All useful numerical evidence remains remotely recoverable. 49 inactive worktrees were removed under the user's archive-before-delete policy. Current free space is about 59 GiB. Completed numerical protocols must not be rerun merely to resume. See COORDINATION_MONITOR.json for monitoring baseline and STATE.yaml for exact science handoff.
+
+# Physics campaign — current SSH status
+
+Resumed 2026-09-09T13:36:24.301098+00:00 at user direction: continue physics; there is no coordination PR. The coordination monitor is paused and the original 48-hour science heartbeat is active. Deadline remains September 10 at 10:27:17 UTC, subject to usable account quota. No reset was redeemed.
+
+The previous 28 science PRs remain review proposals. Four complementary investigations are active: full odd-star infrared response (root), infinite-volume node form factor, fixed-coupling local stability, and native Record supplier construction grounded in corrected current main 0c52eb31300559f4d9e733b3a852b196f1fdc897. None of these new targets is proved yet. All completed numerical protocols stay completed; they are not being rerun.
+
+All useful old evidence is remote, 49 inactive worktrees have been removed, and roughly 59 GiB is free. Independent focused reviews will challenge new load-bearing arguments before downstream reuse. Read STATE.yaml for exact worker assignments.
+
+# Physics campaign — current SSH status
+
+Updated 2026-09-09T14:20:28.141314+00:00. Science is active through the original September 10 10:27:17 UTC deadline, subject to usable quota. The mistaken coordination monitor is paused. The science heartbeat is active. Current account usage is 5%, leaving 95%; no reset was redeemed.
+
+Thirty science PRs, #8036–#8065, are open for review. None were merged or audit-ratified by this campaign. New #8064 proves full odd low-energy spectral weight is bounded by energy cubed, with a ninth-power bound and absolutely summable spatial response for the higher odd component. Its 1,217 portable controls and independent proof reviews pass. New #8065 supplies exact charged full-carrier Record histories and frame signs, with 416 one-edge and 736 history columns, independently reviewed. These remain conditional on the supplied model/instrument.
+
+The current decisive target is the infinite-volume one-particle node coupling alpha. Its scalar reduction, soft-limit/Laplace formula and sharper infinite impurity gap h/6 passed independent checks. Alpha remains unknown. A Gaussian soft-commutator estimate is under separate review; quantitative spatial and finite-box covariance errors remain open. A fixed tiny Gaussian-versus-Fock pilot is implemented but UNLAUNCHED pending independent source/protocol review and remote preregistration. It tests normalization and cost, not the infinite node.
+
+All prior numerical protocols remain completed; do not rerun them. This checkpoint archives the new proofs, reviews and provisional partials distinctly. Fifty inactive worktrees have been removed only after useful evidence was verified on remote branches; the latest8052 removal reclaimed about396MiB. About58GiB is free. Original dirty and other-worker checkouts remain untouched. Read STATE.yaml for assignments and exact next actions.

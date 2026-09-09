@@ -1,0 +1,3 @@
+# Infinite star node investigation
+
+Source: canonical thermodynamic note at PR8063 aea1602ec35a045e5b06be563acef0c28dadcbd4, parent uniform quasi-local theorem, actual90-term star expression. Allowed: derivation and tiny exact algebra in this directory only; no physical spectral/solver/integration run, no canonical edits or external writes. Target is a zero/nonzero theorem or a rigorously evaluable representation of the infinite one-particle node value, not an extrapolation from finite L6 weights. First avenues: uniqueness of the smooth node value despite vacuum-creator nonuniqueness; little-group reduction; resolvent/impurity representation with explicit tails. No positive-resolvent shortcut across the indefinite disjoint-pair sum.
