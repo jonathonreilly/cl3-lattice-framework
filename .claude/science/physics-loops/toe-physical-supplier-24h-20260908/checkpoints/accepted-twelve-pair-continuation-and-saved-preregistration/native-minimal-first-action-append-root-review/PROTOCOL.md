@@ -1,0 +1,7 @@
+# Prospective first-action append root monitor
+
+UNLAUNCHED. One root plus one childless worker. External /usr/bin/time -lp pinned Python -I -B -S run_once.py launch has30-second/384MiB contract; root inclusive alarm29.5, worker29. External shell receipt must be independently reconciled. Forecast26.6 is inference only. Source-readiness verifies local/runtime pins only, no accepted loader or append. Launch consumes exclusive markers, checks full inputs pre/post, exact authorization and verified imports, samples current descendants plus root, and cleans only current worker process group. Failures retain partials and root receipt. No retries.
+
+Schema streams2010 rows/6015 pairs, verifies all ordered labels, integer intervals, complete804 old+new radius≤2^-60 and trace<536, exact extra trace5, accepted mu metadata and final partial. Arithmetic correctness of entries is source-reviewed, not replayed here. DATA402/804 does not enlarge original compression399/798. No generator/leakage/propagation is computed. Root startup checks are within the root clock; receipt cleanup follows alarm cancellation and external total remains authoritative.
+
+Author previously independently reviewed worker runtime and earlier generator design. This newly authored monitor requires independent Zeno/root review and remote preregistration before launch. Tiny schema controls exercise metadata/interval predicates only, not physical matrix entries or a full output fixture.

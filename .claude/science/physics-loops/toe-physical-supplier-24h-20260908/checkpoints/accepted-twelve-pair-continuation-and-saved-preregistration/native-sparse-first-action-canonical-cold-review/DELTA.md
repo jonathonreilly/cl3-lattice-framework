@@ -1,0 +1,1 @@
+Affected-only PASS. Note27df3130edb45e02b4bfef3d2aa90a5967ccfaffec5d70a9f968a615a33519b4 differs from preserved d90 only by the requested formal action-vector wording. All current SOURCE_FREEZEa965b11bfc65e7c02b3bbf89a7b815662bc05e284b39797225ac462b633febd9 pins match. Proof and runner unchanged; no rerun or native calls. The narrow issue in REVIEW.md is discharged.

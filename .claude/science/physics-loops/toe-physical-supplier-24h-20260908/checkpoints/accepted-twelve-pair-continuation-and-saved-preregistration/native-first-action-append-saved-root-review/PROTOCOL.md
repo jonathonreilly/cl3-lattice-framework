@@ -1,0 +1,5 @@
+# Saved-only external monitor
+
+UNLAUNCHED.30s external/384MiB sampled root+current descendants,29.5 root inclusive alarm,29 worker inclusive, arithmetic timer min(25,remaining). Exact source/runtime membership/origins, authorization, fresh exclusive markers and result/binding hashes. Current worker process-group cleanup only; failures and partials retained. No retry. Launch via pinned Python -I-B-S under /usr/bin/time -lp; external receipt acceptance separate. Readiness checks source/runtime only, no saved-entry reconstruction.
+
+Schema requires completed all6015/2010 saved reconstruction, zero oracle/append calls, exact scope and finite resources. Five orbit arithmetic gates are enforced by the frozen saved checker; monitor does not replay it. Last PARTIAL intentionally precedes last single self entry: row2009,6014 completed entries; final result6015. No inference from partial alone. Author also authored saved checker and previously reviewed/implemented related monitor; root independently reviews both. Authorization remains prospective until root review and remote preregistration.
