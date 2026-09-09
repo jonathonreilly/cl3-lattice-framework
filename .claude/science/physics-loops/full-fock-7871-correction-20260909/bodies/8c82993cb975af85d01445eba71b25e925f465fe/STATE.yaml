@@ -1,0 +1,20 @@
+campaign: toe-time-expansion-20260802
+started: 2026-08-02
+interrupted: >
+  2026-08-02 ~13:50Z — machine reboot ~4 minutes into the window killed the
+  desktop session, its background runners, and the tmp scratchpad worktrees.
+  The 866/867 v2 repairs (owner review 2026-08-02) and all wave-1 worker
+  specs were recovered from the desktop session transcript on 2026-08-03.
+restarted: 2026-08-03 18:10Z (24h window runs from restart; ends 2026-08-04 ~18:00Z)
+window_hours: 24
+mode: workhorse
+wave: 1
+worktrees:
+  c5-landing: blockP25 — 866/867 v2 recovered + committed (d172e4029d), cold rerun
+    in flight; ship pending finale checker reconciled against v2 outputs
+  c5-gravity: wave1 gravity sign census (blockG1, Cycle 868)
+  c5-clocks: wave1 local-clock relation (blockT1, Cycle 869)
+  c5-census: wave1 general-n census law (blockN1, Cycle 870)
+notes: >
+  Worker worktrees moved to durable .claude/worktrees/ paths (reboot lesson);
+  supervisor commits push immediately, worker scripts commit BEFORE first run.

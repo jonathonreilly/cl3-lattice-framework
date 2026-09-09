@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_full_fock_unit_weight_source_2026_07_28.py
+runner_sha256: fe5ce8e2e993a1da5ff1b05f18706a62a44c3ad6d28347b28fa4493fd24ba8c9
+input_fingerprint_sha256: ccacfbb9fd83f2b249499e0ea0259515f748f24be23abced19d78ad4d672bf2a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 45.19
+status: ok
+----- stdout -----
+FULL-FOCK CYCLE-320 UNIT-WEIGHT AUXILIARY SOURCE
+occupancy_truncation_n_max = 2
+layer_embedding = P_n selects local six-mode matter masks with bit_count(mask)=n; q=0 is the endpoint reservoir and q=1+d is the landed matched unit-weight pair (F_d,A_d).  The two-cell factors are V_left tensor I and I tensor V_right in S322.JOINT_INDEX, so the spectator mask and every other number sector are unchanged.
+interpretation = dimensionless source/recoil algebra only
+PASS the landed coefficient-two diagonal splits exactly into mediator weight one plus auxiliary weight one :: {'generator_P_commutators': (0.0, 0.0, 0.0), 'unit_weights': (1, 1, 1), 'vertex_P_commutators': (0.0, 0.0, 0.0)}
+PASS the reused source preserves Q and local occupation number :: {'Q_commutator': 0.0, 'number_commutator': 0.0}
+PASS layer 1 reproduces all six landed U320 LinkState recoil rows :: {'emitted_weight_range': (0.1258992161287137, 0.12589921612871374), 'maximum_component_residual': 1.1102230246251565e-16, 'matter_recoil_magnitude': 0.2517984322574274, 'mediator_flux_magnitude': 0.1258992161287137, 'auxiliary_flux_magnitude': 0.1258992161287137}
+PASS every allowed channel through n_max has the exact landed unit-weight recoil ledger :: {'layers': [{'active_channels': 0, 'generator_ledger_residual': 0.0, 'number': 0}, {'active_channels': 6, 'generator_ledger_residual': 0.0, 'number': 1}, {'active_channels': 24, 'generator_ledger_residual': 0.0, 'number': 2}], 'recoil_equation': 'Delta P_matter=-2 d; P_F=+d; P_A=+d'}
+PASS the two-cell truncated Fock space is exhaustively layer-independent :: {'active_q_columns_checked': 6776, 'cross_layer_failures': 0, 'joint_matter_states': 484, 'maximum_cross_layer_amplitude': 0.0}
+PASS reciprocity holds in every layer and on a coherent n=1 plus n=2 state :: {'maximum_layer_reciprocity_residual': 3.347971367310914e-16, 'superposed_state': {'inverse_residual': 1.1102230246251565e-16, 'layer_weight_residual': 5.551115123125783e-17, 'norm_residual': 1.1102230246251565e-16}, 'superposed_matrix_element': {'forward_abs': 0.4282003106804182, 'matrix_element_residual': 0.0, 'reverse_abs': 0.4282003106804182}}
+PASS a deliberate n=2 to n=1 mis-embedding breaks layer independence :: {'cross_layer_generator_amplitude': 1.0, 'number_commutator_frobenius': 1.4142135623730951, 'source_number': 2, 'target_number': 1}
+PASS the byte-pinned Cycle-322 harness reruns unchanged :: {'returncode': 0, 'runtime_seconds': 44.799104, 'sha256_after': '4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75', 'sha256_before': '4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75', 'stderr_empty': True, 'summary_pinned': True, 'terminal_marker_pinned': True}
+FINAL_JSON {"audit_input_paths": ["scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py", "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py"], "certificate_failures": [], "cycle322_anchor": {"returncode": 0, "runtime_seconds": 44.799104, "sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75"}, "full_fock_construction_achieved": true, "layer_embedding": "P_n selects local six-mode matter masks with bit_count(mask)=n; q=0 is the endpoint reservoir and q=1+d is the landed matched unit-weight pair (F_d,A_d).  The two-cell factors are V_left tensor I and I tensor V_right in S322.JOINT_INDEX, so the spectator mask and every other number sector are unchanged.", "layer_rows": [{"active_channels": 0, "dimension": 7, "emitted_weight_max": 0.0, "emitted_weight_min": 0.0, "generator_ledger_residual": 0.0, "number": 0, "reciprocity_residual": 0.0, "unitarity_residual": 0.0, "vacuum_source_is_identity": true}, {"active_channels": 6, "dimension": 42, "emitted_weight_max": 0.12589921612871374, "emitted_weight_min": 0.1258992161287137, "generator_ledger_residual": 0.0, "number": 1, "reciprocity_residual": 1.9229626863835638e-16, "unitarity_residual": 3.3306690738754696e-16, "vacuum_source_is_identity": true}, {"active_channels": 24, "dimension": 105, "emitted_weight_max": 0.12042616790869433, "emitted_weight_min": 0.1204261679086943, "generator_ledger_residual": 0.0, "number": 2, "reciprocity_residual": 3.347971367310914e-16, "unitarity_residual": 7.274926451295658e-16, "vacuum_source_is_identity": true}], "n_max": 2, "note_path": "docs/FULL_FOCK_UNIT_WEIGHT_SOURCE_SUPPORT_NOTE_2026-07-28.md", "obstruction": null, "runtime_seconds": 44.887105, "scope": "local full-Fock source algebra on the landed two-cell fixture; no new recurrent simultaneous-carrier transport claim", "summary": {"fail": 0, "pass": 8}}
+
+----- stderr -----
+

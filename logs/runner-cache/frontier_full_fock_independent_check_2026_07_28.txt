@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_full_fock_independent_check_2026_07_28.py
+runner_sha256: e584b3a7939bdae7a183a063830ab4b10d5eb9d2a6ab6bb5debb446e9a33c3cb
+input_fingerprint_sha256: d0503a6fb0c6322860bdc0ccf245dc72a0b27b050585db101a970701db95e40f
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.28
+status: ok
+----- stdout -----
+PASS actual bounded primary conventions :: {'N_MAX': 2, 'AUDIT_TIMEOUT_SEC': 30, 'NOTE_PATH': 'docs/FULL_FOCK_UNIT_WEIGHT_SOURCE_SUPPORT_NOTE_2026-07-28.md'}
+PASS independent occupied-list CAR signs and binomial channels :: [0, 6, 24]
+PASS all-entry signed-star versus actual dense exponential :: 1.1102230246251565e-16
+PASS all-entry cross-sector zero and exact generator number law :: 0.0
+PASS per-channel probabilities and unit-weight recoil :: {1: (0.1258992161287137, 0.12589921612871374), 2: (0.1204261679086943, 0.12042616790869433)}
+PASS six one-carrier link rows and supplied angle anchor :: {'maximum_residual': 0.0, 'probability': 0.12589921612871374}
+PASS actual mis-embedding rejected by unchanged number predicate :: {'clean': 0.0, 'changed': 1.4142135623730951}
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

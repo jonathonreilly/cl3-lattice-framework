@@ -1,0 +1,41 @@
+campaign: inter-site-gate-20260809
+started: 2026-08-09
+window_hours: 24
+mode: workhorse
+wave: 1 COMPLETE
+concurrency: 1 (ENOSPC 2026-08-09; host disk at 86%)
+rationale: >
+  axiom edit 2026-08-05 (distribution semantics) + Cycle 947 substrate
+  mismatch + arc-assessment rank 1
+worktrees:
+  c5-t8: blockIS1 (Cycle 970, the gate construction)
+  c5-census-full: blockAX1 (Cycle 971, axiom-fidelity re-read)
+
+wave1_results:
+  IS1_cycle970: PR #6062 — gate CONSTRUCTED inside landed machinery
+    (CNOT(1->0) separates [1,0]/[0,1]); state-resolved 4/20 comparisons,
+    8/40 configurations; uniform marginal 0/10; price = 0 new gates /
+    couplings / axioms / primitives + 1 supplied premise (fixed target
+    input); checker 6/0
+  AX1_cycle971: PR #6066 — corpus classified against the 2026-08-05
+    edit: UNAFFECTED 1,344 / SUPPORT_READING_SAFE 70 / MEANING_CHANGED 26
+    / NEWLY_WITNESSABLE 0; the clause's only witness is 970's own runner
+    (state-resolved 1/1, marginal 0/0); checker 6/0
+  IS2_cycle972: PR #6069 — the law is COVARIANT under Z^3 x| O+_cubic
+    (0 failures / 61,440 rotations / 15,360 translations) and UNIQUE
+    (1 induced-law class; 2 orbits size 6, stabilizer 4); 6 witnesses in
+    the 20-word family; marginal 0/20 words, 0/3,840 pairs — uniform-x
+    averaging erases XOR dependence (the exact reason prior substrate
+    measurements read "the sites do not talk"); checker 6/0
+  AX2_cycle973: PR #6072 — 26-row repair map (audit-lane hand-off, no
+    edits): WEAKER 7 / STRONGER 8 / ORTHOGONAL 6 / UNDERDETERMINED 5;
+    tonight's witness BEARS on 3, SILENT on 23; checker disputed none
+wave1_arc: >
+  The 2026-08-05 clause went from NO witness in the corpus -> one witness
+  -> the unique covariant law + the averaging identity explaining its
+  prior invisibility, with the corpus-wide semantic debt measured and
+  prepared for adjudication. Zero refutations across four blocks.
+open_next:
+  - the full M_2(C) law beyond the fixed-input premise (970's residual)
+  - whether the 6-witness family is complete beyond the declared 20 words
+  - the 26 rows: audit-lane adjudication (owner lane; map is #6072)

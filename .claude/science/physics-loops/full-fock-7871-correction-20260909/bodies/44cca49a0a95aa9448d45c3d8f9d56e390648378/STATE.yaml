@@ -1,0 +1,112 @@
+campaign: inter-site-gate-20260809
+started: 2026-08-09
+window_hours: 24
+mode: workhorse
+wave: 1 COMPLETE
+concurrency: 1 (ENOSPC 2026-08-09; host disk at 86%)
+rationale: >
+  axiom edit 2026-08-05 (distribution semantics) + Cycle 947 substrate
+  mismatch + arc-assessment rank 1
+worktrees:
+  c5-t8: blockIS1 (Cycle 970, the gate construction)
+  c5-census-full: blockAX1 (Cycle 971, axiom-fidelity re-read)
+
+wave1_results:
+  IS1_cycle970: PR #6062 — gate CONSTRUCTED inside landed machinery
+    (CNOT(1->0) separates [1,0]/[0,1]); state-resolved 4/20 comparisons,
+    8/40 configurations; uniform marginal 0/10; price = 0 new gates /
+    couplings / axioms / primitives + 1 supplied premise (fixed target
+    input); checker 6/0
+  AX1_cycle971: PR #6066 — corpus classified against the 2026-08-05
+    edit: UNAFFECTED 1,344 / SUPPORT_READING_SAFE 70 / MEANING_CHANGED 26
+    / NEWLY_WITNESSABLE 0; the clause's only witness is 970's own runner
+    (state-resolved 1/1, marginal 0/0); checker 6/0
+  IS2_cycle972: PR #6069 — the law is COVARIANT under Z^3 x| O+_cubic
+    (0 failures / 61,440 rotations / 15,360 translations) and UNIQUE
+    (1 induced-law class; 2 orbits size 6, stabilizer 4); 6 witnesses in
+    the 20-word family; marginal 0/20 words, 0/3,840 pairs — uniform-x
+    averaging erases XOR dependence (the exact reason prior substrate
+    measurements read "the sites do not talk"); checker 6/0
+  AX2_cycle973: PR #6072 — 26-row repair map (audit-lane hand-off, no
+    edits): WEAKER 7 / STRONGER 8 / ORTHOGONAL 6 / UNDERDETERMINED 5;
+    tonight's witness BEARS on 3, SILENT on 23; checker disputed none
+wave1_arc: >
+  The 2026-08-05 clause went from NO witness in the corpus -> one witness
+  -> the unique covariant law + the averaging identity explaining its
+  prior invisibility, with the corpus-wide semantic debt measured and
+  prepared for adjudication. Zero refutations across four blocks.
+open_next:
+  - the full M_2(C) law beyond the fixed-input premise (970's residual)
+  - whether the 6-witness family is complete beyond the declared 20 words
+  - the 26 rows: audit-lane adjudication (owner lane; map is #6072)
+
+wave2_4_results:
+  B2_cycle974: PR #6086 — Born test vs the ONE-class reading: 5/5 survive,
+    0 excluded (honest null). Criterion declared: product form
+    P_i = p_i(e)q(x,n)1[y=x^n_d], q=1/128, event marginal preserved.
+  IS3_cycle975: PR #6084 — marginal strength = |2p-1| EXACTLY; dependence
+    nonzero for every p != 1/2; boundary = the single uniform point;
+    state-resolved survives throughout (12/40, 384/7,680); x=0 sufficient
+    NOT necessary.
+  IS4_cycle977: PR #6087 — exhaustive 155-word family (1 I + 7 X + 42 CNOT
+    + 105 TOF): 21 witnesses, THREE covariant classes (CNOT 6, perp-TOF 12,
+    opp-TOF 3); 972's "one class" was a FAMILY ARTIFACT; all classes
+    covariant (0 failures / 476,160 rotations / 119,040 translations).
+  B3_cycle978: PR #6104 — per-class 5x3 all SURVIVE; under a JOINT
+    requirement 0/5 (all fail at x=0, n=(1,0,0,0,0,0): CNOT->1 vs TOF->0);
+    self-scoped to the fixed-input representative surrogate.
+  B4_cycle979: PR #6106 — SUPERVISOR CHALLENGE UPHELD. Coexistence census
+    over all 155 programs: 134 none / 6 CNOT-only / 12 perp-TOF-only /
+    3 opp-TOF-only; ZERO multi-class programs. The classes are
+    ALTERNATIVES, not simultaneous. Licensed requirement = PER_INSTANCE;
+    JOINT is over-strong. Corrected Born status: 5/5 SURVIVE, wall
+    UNMOVED. Surrogate-independent (p=1/4: TV=1/2=|2p-1|, 5/5).
+    Checks: primary 5/0, independent 7/0, 8/8 mutations rejected.
+
+corrections_this_campaign:
+  - 972's single-class uniqueness -> 3 classes (caught by 977)
+  - 978's 0/5 Born collapse -> requirement artifact (caught by 979);
+    the Born wall never moved
+audit_note: >
+  The uniform-input artifact does NOT reach landed content: a personal
+  sweep of pinned main (39c7401) found exactly ONE independence-style
+  row (the joint-presentation tensor-substrate bridge) whose "site
+  independence" means elementwise COMMUTATION of site algebras, not
+  statistical independence; "sites do not talk" appears nowhere in
+  landed main. Exposure is confined to unlanded campaign-5 material.
+
+waves6_8_results:
+  IS5_cycle980: PR #6111 — the 6/12/3 multiplicity DERIVED: three orbits of
+    one 24-element action, 6x4 = 12x2 = 3x8 = 24 (translations = the
+    recentering kernel); separator J(w) = ||sum c||^2 in {1,2,0}; three
+    classes forced only for alphabets containing BOTH CNOT and TOF (subset
+    alphabets give 0-3). Primary 4/4, checker 6/6, 8/8 corruptions rejected.
+  J1_cycle981: PR #6114 — J is landed-NEW at declared scope: 9 candidates
+    enumerated, 2 comparable and both DISAGREE, 7 not comparable. No
+    cross-lane bridge. Corpus-wide newness explicitly left open.
+  IS6_cycle982: PR #6113 — THE STRUCTURE IS NOT A SUBSTRATE ARTIFACT. On the
+    axiom's own adjacency (true Z^3 star K_{1,6}, a strict sub-relation of
+    the substrate wiring K_7; extra pairs = length-two paths): 7 sites,
+    23 programs, 21 witnesses, orbits 6x4 = 12x2 = 3x8 = 24, J = 1,2,0 —
+    IDENTICAL. Scope declared: finite local star; no infinite law claimed.
+  IS7_cycle983: PR #6115 — TRANSLATION_UNIFORM_AT_PATCH_SCOPE on P2x
+    (2 targets, 12 support sites): both targets give 21 witnesses, 6/12/3
+    classes, J = 1/2/0; shared sites, edge, Boolean table, classes and paths
+    agree EXACTLY. No infinite-lattice or probability-law claim. Checker
+    rejected 14/14 corruptions.
+  B5_cycle984: PR #6116 — the Born verdict TRANSFERS to Z^3: all five
+    weightings survive, wall UNMOVED; at p=1/4 all three classes give
+    TV=1/2, survivors 5/5. Primary 5/5, checker 8/8, 10/10 corruptions
+    rejected. Cluster-cap BACKLOG judgment disclosed.
+
+campaign6_arc_to_date: >
+  The 2026-08-05 Admissibility clause went from ZERO witnesses in the corpus
+  to: 21 witnesses in 3 covariant classes, multiplicities derived as orbit
+  arithmetic under a 24-element action, separated by a new invariant
+  J = ||sum c||^2, reproduced EXACTLY on the axiom's own Z^3 star adjacency
+  and uniform across a two-target patch — while the Born wall is confirmed
+  UNMOVED (5/5) on both the substrate and Z^3. Two of our own results were
+  caught and corrected in-campaign (972's uniqueness by 977; 978's collapse
+  by 979). Ops: PR #6109 fixes the review-worktree disk leak that had been
+  killing runs (1.8 GB -> 312 MB sparse, trap cleanup, 5 GB preflight);
+  34 crashed trees holding 21 GB were removed.

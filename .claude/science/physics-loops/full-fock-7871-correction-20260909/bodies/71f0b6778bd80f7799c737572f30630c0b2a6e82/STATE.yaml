@@ -1,0 +1,29 @@
+campaign: toe-time-expansion-20260802
+started: 2026-08-02
+interrupted: >
+  2026-08-02 ~13:50Z — machine reboot ~4 minutes into the window killed the
+  desktop session, its background runners, and the tmp scratchpad worktrees.
+  The 866/867 v2 repairs (owner review 2026-08-02) and all wave-1 worker
+  specs were recovered from the desktop session transcript on 2026-08-03.
+restarted: 2026-08-03 18:10Z (24h window runs from restart; ends 2026-08-04 ~18:00Z)
+window_hours: 24
+mode: workhorse
+wave: 1
+worktrees:
+  c5-landing: blockP25 — 866/867 v2 reran clean (866 5/5 gates 178s; 867 4/4
+    gates 140s); finale checker worker running against v2 numbers
+  c5-gravity: wave1 gravity sign census (blockG1, Cycle 868) — worker done
+    (SCOPED_NO_GO + checker corroboration); supervisor review + N1-N8 pending
+  c5-clocks: wave1 local-clock relation (blockT1, Cycle 869) — worker running
+  c5-census: wave1 general-n census law (blockN1, Cycle 870) — SHIPPED as
+    PR #5921 (stacked on #5880); reviewed pass; audit pending
+notes: >
+  Worker worktrees moved to durable .claude/worktrees/ paths (reboot lesson);
+  supervisor commits push immediately, worker scripts commit BEFORE first run.
+worker_substitution: >
+  2026-08-03 ~18:30Z — codex (gpt-5.6-sol) usage limit exhausted until
+  2026-08-08; per the workhorse substitution rule, wave-1 workers and the
+  finale checker run as Claude Opus subagents at max effort in isolated
+  contexts. Checker independence is cross-context, not cross-model, for
+  this window; disclosed in ship notes. 866/867 v2 primaries reran clean
+  before checker launch (866: 5/5 gates, 178s; 867: 4/4 gates, 140s).

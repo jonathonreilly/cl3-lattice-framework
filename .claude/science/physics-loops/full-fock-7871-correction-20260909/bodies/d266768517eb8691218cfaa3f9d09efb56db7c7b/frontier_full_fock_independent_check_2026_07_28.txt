@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_full_fock_independent_check_2026_07_28.py
+runner_sha256: eef9e28a1cf24ac33dce931fc47a5117d0272491d98abecccd55d27e39e76ce2
+input_fingerprint_sha256: ccacfbb9fd83f2b249499e0ea0259515f748f24be23abced19d78ad4d672bf2a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 45.48
+status: ok
+----- stdout -----
+FULL-FOCK INDEPENDENT CHECK
+primary_mode = AST data only; import blocklisted
+PASS extraction() :: {'audit_tuple_literal_eval': ('scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py', 'scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py'), 'cycle322_sha256': '4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75', 'embedding': 'P_n selects local six-mode matter masks with bit_count(mask)=n; q=0 is the endpoint reservoir and q=1+d is the landed matched unit-weight pair (F_d,A_d).  The two-cell factors are V_left tensor I and I tensor V_right in S322.JOINT_INDEX, so the spectator mask and every other number sector are unchanged.', 'frozen_layer1_weight': 0.12589921612871374, 'frozen_layer_channel_counts': (0, 6, 24), 'n_max': 2, 'reservoir_q': 0, 'pair_q': '1+d', 'summary_anchor': (20, 0)}
+PASS layer1_anchor_recount() :: {'directions': 6, 'frozen_weight': 0.12589921612871374, 'weight_range': (0.12589921612871374, 0.12589921612871374), 'maximum_ulp_error': 0.0}
+PASS layer_channel_recount() :: {'C(6,n)_mask_counts': (1, 6, 15), 'active_channel_counts': (0, 6, 24), 'formula_6*C(4,n-1)': (0, 6, 24), 'hop_mismatches': 0}
+PASS leakage_spot_recount() :: {'cell': (0, 0, 0), 'channel_family': 'all n=1 x n=2 active channel pairs', 'channel_pairs': 144, 'directed_operator_entries_checked': 2304, 'maximum_cross_layer_leakage': 0.0, 'operator_residuals_against_landed': {'exchange': 0.0, 'vertex': 0.0}, 'recoil_channels_checked': 30, 'recoil_equation': '(-2d, +d, +d)', 'recoil_failures': 0}
+PASS anchor_replay() :: {'returncode': 0, 'pass_lines': 20, 'fail_lines': 0, 'frozen_result': (20, 0), 'runtime_seconds': 45.124339, 'stderr_tail': ''}
+PASS discipline() :: {'blocklist': ('frontier_full_fock_unit_weight_source_2026_07_28',), 'blocklisted_modules_loaded': (), 'conventions_are_literal_eval_data': True, 'misembedding_control_in_primary_ast': True, 'primary_attribute_writes': []}
+SUMMARY {'pass': 6, 'fail': 0, 'runtime_seconds': 45.166429}
+FINAL ALL_PASS 6/6
+
+----- stderr -----
+
