@@ -1,0 +1,138 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle884_gbs2_independent_check_2026_07_28.py
+runner_sha256: bf19fd07e1cb1ca1b5e82a42b79d3e649c03c5486a24caad354f30c978a98a9a
+input_fingerprint_sha256: 5d14765f2268647eb567a9dc8929c6af35001b7c9827bc7d8687f948f66e2d48
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+{
+  "all_checks_pass": true,
+  "checks": {
+    "current_axioms_do_not_choose_a_hamiltonian_or_transfer_operator": true,
+    "current_record_axiom_explicitly_excludes_finite_additivity": true,
+    "finite_additivity_does_not_collapse_shell_weights": true,
+    "identity_response_blocks_operator_and_tail_forcing": true,
+    "radial_obstruction_gcd_is_one": true,
+    "supplied_range_one_stencil_has_two_invariant_coefficients": true
+  },
+  "claim_type": "bounded_theorem",
+  "implication_counterexamples": {
+    "local_linear_covariant_response_counterexample": {
+      "linearity_check": true,
+      "nonzero_power_law_tail_does_not_follow": true,
+      "operator": "identity response K(rho)=rho",
+      "translation_and_cubic_covariance": "exact by pointwise identity",
+      "unit_source_value_at_distance_two": "0"
+    },
+    "supplied_finite_additivity_counterexample": {
+      "additivity_holds": true,
+      "annular_or_two_boundary_collapse_does_not_follow": true,
+      "three_distinct_shell_weights": [
+        "2/7",
+        "5/7",
+        "10/7"
+      ]
+    }
+  },
+  "input_sha256": {
+    "docs/GBS2_KERNEL_WINDOW_ANATOMY_CYCLE884_BOUNDED_THEOREM_NOTE_2026-07-28.md": "22abe8a468224a3eb139d3c26e19fb71cd2cbb53b1c9471ef772639695652836",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
+  "radial_massless_obstruction": {
+    "ansatz": "f_epsilon(x)=A/(|x|+epsilon)",
+    "common_reduced_norm_gcd_coefficients": [
+      "1"
+    ],
+    "common_reduced_norm_gcd_is_one": true,
+    "conclusion": "No epsilon in the stated domain makes the nonzero radial ansatz discrete harmonic at both tested sites.",
+    "domain": "A != 0 and epsilon avoids every listed denominator pole",
+    "site_rows": [
+      {
+        "cancelled_factor_coefficients_low_to_high": [
+          "0",
+          "2",
+          "3",
+          "1"
+        ],
+        "cancelled_factor_divides_cleared_denominator": true,
+        "quadratic_field": "Q(sqrt(2))",
+        "reduced_norm_coefficients_low_to_high": [
+          "-1",
+          "8",
+          "1",
+          "-10",
+          "-9/4",
+          "3",
+          "1"
+        ],
+        "reduced_norm_degree": 6,
+        "site": [
+          1,
+          0,
+          0
+        ],
+        "undefined_epsilon_values": [
+          "0",
+          "-1",
+          "-2",
+          "-sqrt(2)"
+        ]
+      },
+      {
+        "cancelled_factor_coefficients_low_to_high": [
+          "6",
+          "11",
+          "6",
+          "1"
+        ],
+        "cancelled_factor_divides_cleared_denominator": true,
+        "quadratic_field": "Q(sqrt(5))",
+        "reduced_norm_coefficients_low_to_high": [
+          "95/4",
+          "10",
+          "-97/2",
+          "-32",
+          "15/4",
+          "6",
+          "1"
+        ],
+        "reduced_norm_degree": 6,
+        "site": [
+          2,
+          0,
+          0
+        ],
+        "undefined_epsilon_values": [
+          "-1",
+          "-2",
+          "-3",
+          "-sqrt(5)"
+        ]
+      }
+    ]
+  },
+  "role": "independent checker and helper for the corrected Cycle-884 slice",
+  "supplied_range_one_stencil": {
+    "explicitly_supplied_support": "{0,+/-e1,+/-e2,+/-e3}",
+    "family": "one centre coefficient and one common neighbour coefficient",
+    "invariant_coefficient_space_dimension": 2,
+    "proper_cubic_rotation_count": 24,
+    "scope": "conditional on this supplied seven-point support; covariance does not select either coefficient, an inverse, or a physical response law",
+    "support_orbit_sizes": [
+      1,
+      6
+    ]
+  }
+}
+PASS current_record_axiom_explicitly_excludes_finite_additivity
+PASS current_axioms_do_not_choose_a_hamiltonian_or_transfer_operator
+PASS radial_obstruction_gcd_is_one
+PASS finite_additivity_does_not_collapse_shell_weights
+PASS identity_response_blocks_operator_and_tail_forcing
+PASS supplied_range_one_stencil_has_two_invariant_coefficients
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

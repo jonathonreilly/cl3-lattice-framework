@@ -1,0 +1,222 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle900_harmonic_repair_independent_check_2026_07_28.py
+runner_sha256: abd79cd691ec131aa8192b213d39e68d4ed500f0aa12e6ad0ae325f43e1b3199
+input_fingerprint_sha256: 2aaf691ecd6b98f544cd6b71eb0ec63bd89ed8cb94f4d4d7021e175d3ce8b4cf
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+{
+  "all_checks_pass": true,
+  "checks": {
+    "ambiguous_interval_not_called_exact_root": true,
+    "correct_basic_field_norm": true,
+    "corrected_screened_pair_norms_have_unit_common_gcd": true,
+    "product_stabilizer_keeps_raw_sum": true,
+    "shape_ratios_cancel_independent_amplitude": true
+  },
+  "claim_type": "bounded_theorem",
+  "input_sha256": {
+    "docs/GBS2_KERNEL_WINDOW_ANATOMY_CYCLE884_BOUNDED_THEOREM_NOTE_2026-07-28.md": "22abe8a468224a3eb139d3c26e19fb71cd2cbb53b1c9471ef772639695652836",
+    "docs/HARMONIC_REPAIR_VIABLE_CYCLE900_BOUNDED_THEOREM_NOTE_2026-07-28.md": "52d90ebaed8a996a791cfa9bb876d46f5a8cccb912c344499a4da752867b04f2",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
+  "normalization_scope": {
+    "independent_kernel_amplitude_rescaling": {
+      "raw_sum_after": "40",
+      "raw_sum_before": "10",
+      "shape_ratios_after": [
+        "3/2",
+        "5/2"
+      ],
+      "shape_ratios_are_invariant": true,
+      "shape_ratios_before": [
+        "3/2",
+        "5/2"
+      ]
+    },
+    "product_stabilizer": {
+      "amplitude_weighted_sum_is_fixed": true,
+      "cannot_move_a_fixed_kernel_raw_sum": true,
+      "fixed_kernel_raw_sum_before_and_after": [
+        "10",
+        "10"
+      ],
+      "lambda_sigma_is_fixed": true,
+      "map": "(lambda,sigma)->(t lambda,sigma/t), t!=0"
+    }
+  },
+  "role": "independent checker and helper for the corrected Cycle-900 slice",
+  "root_ambiguity_control": {
+    "ambiguous_enclosure_is_not_promoted_to_exact_root": true,
+    "coarse_enclosure": [
+      "-3/20",
+      "1/10"
+    ],
+    "enclosure_sign": null,
+    "exact_zero": false,
+    "rational_basis_coefficients": [
+      "-7/5",
+      "1"
+    ],
+    "returned_object": "unresolved bracket",
+    "test_element": "sqrt(2)-7/5"
+  },
+  "screened_radial_ansatz_obstruction": {
+    "common_gcd": "1",
+    "common_gcd_is_one": true,
+    "conclusion": "No defined epsilon can make all four screened axis conditions share one value of mu_squared.",
+    "domain": "nonzero amplitude; epsilon must avoid every centre and neighbour denominator pole of the four displayed axis conditions",
+    "method": "clear denominators, then eliminate each radical with exact resultants",
+    "norm_identity_is_minus_one": true,
+    "norm_of_one_plus_sqrt_two": "-1",
+    "pair_rows": [
+      {
+        "axis_pair": [
+          1,
+          2
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          5
+        ],
+        "norm_coefficients_high_to_low": [
+          "1",
+          "30",
+          "408",
+          "3330",
+          "72699/4",
+          "139635/2",
+          "385475/2",
+          "1520787/4",
+          "4079313/8",
+          "3024891/8",
+          "-603693/8",
+          "-585375",
+          "-48790745/64",
+          "-4135695/8",
+          "-4392693/32",
+          "150903/2",
+          "5648411/64",
+          "141285/4",
+          "84915/16",
+          "-675/2",
+          "-2025/16"
+        ],
+        "norm_degree": 20
+      },
+      {
+        "axis_pair": [
+          1,
+          3
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          5
+        ],
+        "norm_coefficients_high_to_low": [
+          "1",
+          "32",
+          "450",
+          "3656",
+          "18928",
+          "64648",
+          "144074",
+          "191808",
+          "93607",
+          "-136656",
+          "-276032",
+          "-178688",
+          "-4664",
+          "50880",
+          "19680",
+          "0",
+          "-400"
+        ],
+        "norm_degree": 16
+      },
+      {
+        "axis_pair": [
+          2,
+          3
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          5
+        ],
+        "norm_coefficients_high_to_low": [
+          "1",
+          "50",
+          "1156",
+          "16430",
+          "643483/4",
+          "2303405/2",
+          "12480301/2",
+          "104418625/4",
+          "681160865/8",
+          "1733625205/8",
+          "3409763091/8",
+          "1261980485/2",
+          "42202351303/64",
+          "3163783975/8",
+          "-1195083117/32",
+          "-331190100",
+          "-20147887941/64",
+          "-512135185/4",
+          "21047655/16",
+          "41352175/2",
+          "88831775/16"
+        ],
+        "norm_degree": 20
+      },
+      {
+        "axis_pair": [
+          1,
+          4
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          17
+        ],
+        "norm_coefficients_high_to_low": [
+          "1",
+          "50",
+          "1142",
+          "15790",
+          "590275/4",
+          "1969785/2",
+          "4829262",
+          "70360355/4",
+          "378928721/8",
+          "734226705/8",
+          "947169739/8",
+          "300139615/4",
+          "-2767480577/64",
+          "-1178629185/8",
+          "-4508007329/32",
+          "-202490415/4",
+          "1003773611/64",
+          "80189085/4",
+          "82111275/16",
+          "-325125/2",
+          "-1625625/16"
+        ],
+        "norm_degree": 20
+      }
+    ]
+  }
+}
+PASS correct_basic_field_norm
+PASS corrected_screened_pair_norms_have_unit_common_gcd
+PASS ambiguous_interval_not_called_exact_root
+PASS product_stabilizer_keeps_raw_sum
+PASS shape_ratios_cancel_independent_amplitude
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

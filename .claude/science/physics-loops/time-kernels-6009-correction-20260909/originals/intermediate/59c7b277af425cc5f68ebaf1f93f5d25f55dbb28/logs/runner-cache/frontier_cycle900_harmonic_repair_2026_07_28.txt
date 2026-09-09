@@ -1,0 +1,2959 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle900_harmonic_repair_2026_07_28.py
+runner_sha256: 2f1ef276ad9d66481a3573617b3eaba084a26a22a0004569bbbf4e37585fceda
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 17.481
+status: ok
+----- stdout -----
+CYCLE 900 -- THE HARMONIC REPAIR ATTACK ON THE LANDED GATE-B KERNEL
+
+[PASS] A_PINS
+    finding: All 6 pins match sha256 and git blob; 26 verbatim needles all hit; the pinned 884 receipt carries every key the restriction gate reads.
+
+[PASS] B_RESTRICTION_GATE
+    finding: 884's R5 rows reproduce: GCD over Q is a unit (1/1), the landed epsilon = 1/10 satisfies neither mean-value condition, the two single-site isolating intervals are disjoint, and the forced core's normalization is exactly 1/6 -- all matching the pinned receipt.
+
+[PASS] C_FORCED_CORE
+    finding: The forced core is built exactly at three levels: the 1/6 normalization holds identically on every one of the 7 exact Dirichlet-cube solves, every checkable harmonicity relation on the declared shell range holds exactly, and the interior operator is invertible over Q at every radius, so the decaying solution -- and hence the core -- carries zero free parameters.
+
+[PASS] D_HARMONICITY
+    finding: The core is harmonic at all 119 interior non-origin sites of the radius-8 cube -- exact zero, every one.  The landed kernel's mean-value residual at the same sites is certified NONZERO by exact rational enclosure.  A deliberately broken core is caught at 4 sites by the same gate.
+
+[PASS] E_884_FORCINGS_VS_CORE
+    finding: Against the core: p = 1 in d = 3 HOLDS (the core is the alpha = 0 member of the forced operator family); the TOWARD orientation HOLDS (the exact solve is strictly positive at every site); the 1/6 normalization is EXACTLY the statement mu = 0, so the repair presupposes rather than discharges the screening mass; and 884's epsilon elimination STRENGTHENS -- no (epsilon, mu^2) pair rescues the landed ansatz either.
+
+[PASS] F_WINDOW_BEHAVIOUR
+    finding: Under 884's own sharp-indicator window (62 sites) the core and the landed kernel differ in every gauge-invariant shape ratio tested, and they differ irreducibly at equal Euclidean radius: the core separates (3,0,0) from (2,2,1) by 0.00136788 while ANY radial kernel gives ratio exactly one.
+
+[PASS] G_CONSUMER_CENSUS
+    finding: 311 distinct files carry at least one published needle for the landed kernel form, of which 20 are gate_b_* runners; all 5 families are non-empty, classified, and the sweep is idempotent.
+
+[PASS] H_DELTA_TABLE
+    finding: 34 consumer rows priced: 19 survive unchanged, 11 change with a computed delta, 4 break.  Of the breaks, 2 are real consumers and 0 are unrepairable; the rest of the breaks are the planted falsifiers, which the same machinery flags.
+
+[PASS] I_REPAIR_VERDICT
+    finding: REPAIR-VIABLE: 13 consumer rows need patching and 0 are unrepairable.  Against 884's own chart the repair takes the chart from 15 to 13 coordinates and the residual from 10 to 9, with the kernel-shape sub-block going 4 -> 3.
+
+[PASS] J_FALSIFIER_VISIBILITY
+    finding: The harmonicity gate catches a deliberately broken core; the two planted consumers that must break DO break through the same delta machinery as the real rows; the planted control survives; and the verdict certificate passes regardless of which verdict it reaches.
+
+[PASS] K_HONESTY
+    finding: No closure claim appears in the science payload.  The cycle's load-bearing results split: one positive (the repair is viable and discharges named supplied rows) and two negatives (the repair presupposes mu = 0, and it breaks the GB-S1b-a radial row).
+
+{
+  "A_PINS": {
+    "all_pins_match": true,
+    "finding": "All 6 pins match sha256 and git blob; 26 verbatim needles all hit; the pinned 884 receipt carries every key the restriction gate reads.",
+    "needle_count": 26,
+    "needles": {
+      "axioms.axioms_and_primitives_complete": true,
+      "axioms.finite_additive_readout": true,
+      "axioms.lattice_sites": true,
+      "c884_checker.independent_parameterization": true,
+      "c884_checker.refute": true,
+      "c884_primary.kernel_form": true,
+      "c884_primary.r2_degree_four": true,
+      "c884_primary.r3_mu_free": true,
+      "c884_primary.r5_core_step": true,
+      "c884_primary.r5_harmonic_premise": true,
+      "c884_primary.r5_no_epsilon": true,
+      "dynamics.gbs1b_a_property": true,
+      "dynamics.gbs1b_a_row": true,
+      "dynamics.gbs1b_b_row": true,
+      "dynamics.gbs2a_row": true,
+      "dynamics.gbs2b_row": true,
+      "dynamics.gbs3a_row": true,
+      "dynamics.gbs3b_row": true,
+      "interface.action_form": true,
+      "interface.gbs1a_row": true,
+      "interface.gbs1b_row": true,
+      "interface.rescaling_stabilizer": true,
+      "interface.supplied_finite_core": true,
+      "interface.supplied_gbs2": true,
+      "interface.supplied_gbs3": true,
+      "interface.supplied_normalization": true
+    },
+    "pass": true,
+    "read_mode": "TEXT/AST/JSON only; no pinned artifact is imported",
+    "receipt_carries_every_gated_key": true,
+    "rows": [
+      {
+        "bytes": 89249,
+        "git_blob": "7b244a7ce3a4d61589bea0f222cca5d847ab0200",
+        "match": true,
+        "path": "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+        "sha256": "685973be36ac89a9632d8ac4113a6e49e9db32e98c9977ec5965a3bb6bff6aeb"
+      },
+      {
+        "bytes": 51868,
+        "git_blob": "6166dae8afab56ac3f4fb1a8528afcf8b8fee101",
+        "match": true,
+        "path": "scripts/frontier_cycle884_gbs2_independent_check_2026_07_28.py",
+        "sha256": "6c32a50be08d22c90a93cdbf9a4b3380bc500381c9ac88009f43f6a3732db2be"
+      },
+      {
+        "bytes": 11811,
+        "git_blob": "5a3c9db3ff688f26a70cc9b82aed53ec0ff41bb8",
+        "match": true,
+        "path": "logs/runner-cache/gbs2_kernel_window_cycle884_receipt_2026_07_28.json",
+        "sha256": "5d5c669ebc7c58613892425745b09c35eb94dc216e8c38fe0f161e4f53541f98"
+      },
+      {
+        "bytes": 4679,
+        "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+        "match": true,
+        "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+        "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+      },
+      {
+        "bytes": 28116,
+        "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+        "match": true,
+        "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+        "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+      },
+      {
+        "bytes": 8846,
+        "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+        "match": true,
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+      }
+    ],
+    "zero_hit_needles": []
+  },
+  "B_RESTRICTION_GATE": {
+    "checks": {
+      "core_step_matches_receipt": true,
+      "gcd_over_Q_is_a_unit": true,
+      "gcd_string_matches_receipt": true,
+      "isolating_intervals_disjoint": true,
+      "landed_epsilon_residual_certifiably_nonzero_at_every_tested_site": true,
+      "landed_epsilon_satisfies_no_tested_site": true,
+      "receipt_class_D": true,
+      "receipt_class_N": true,
+      "receipt_class_a": true,
+      "receipt_class_b": true,
+      "receipt_class_barrier": true,
+      "receipt_class_c4": true,
+      "receipt_class_epsilon": true,
+      "receipt_class_g": true,
+      "receipt_class_lambda": true,
+      "receipt_class_m": true,
+      "receipt_class_mu": true,
+      "receipt_class_p": true,
+      "receipt_class_s": true,
+      "receipt_class_sigma": true,
+      "receipt_class_theta": true,
+      "receipt_classifies_c4_FREE": true,
+      "receipt_classifies_epsilon_ELIMINATED": true,
+      "receipt_classifies_m_ELIMINATED": true,
+      "receipt_classifies_mu_FREE": true,
+      "receipt_classifies_p_FORCED": true,
+      "receipt_classifies_s_FORCED": true,
+      "receipt_field_epsilon_gcd_over_Q": true,
+      "receipt_field_exact_core_step_G0_minus_Ge1": true,
+      "receipt_field_first_non_radial_invariant_degree": true,
+      "receipt_field_honest_chart_dimension": true,
+      "receipt_field_honest_chart_residual_free_dimension": true,
+      "receipt_field_landed_chart_dimension": true,
+      "receipt_field_landed_chart_residual_free_dimension": true
+    },
+    "exact_core_step_G0_minus_Ge1": "1/6",
+    "finding": "884's R5 rows reproduce: GCD over Q is a unit (1/1), the landed epsilon = 1/10 satisfies neither mean-value condition, the two single-site isolating intervals are disjoint, and the forced core's normalization is exactly 1/6 -- all matching the pinned receipt.",
+    "gcd_degree": 0,
+    "gcd_over_Q_of_the_two_rationalized_conditions": "1/1",
+    "landed_epsilon": "1/10",
+    "pass": true,
+    "receipt_epsilon_gcd_over_Q": "1/1",
+    "receipt_exact_core_step": "1/6",
+    "receipt_load_bearing_negatives": [
+      "radial-only is NOT forced by cubic covariance (first admissible anisotropy at degree 4, unsuppressed at large r)",
+      "no value of epsilon makes the landed kernel harmonic: the GCD of the two mean-value conditions over Q is a unit",
+      "the landed chart under-counts by 2 coordinates"
+    ],
+    "receipt_residual_free_by_block": {
+      "COUPLING": [
+        "g"
+      ],
+      "KERNEL_SHAPE": [
+        "c4",
+        "mu",
+        "sigma",
+        "theta"
+      ],
+      "WINDOW": [
+        "D",
+        "N",
+        "a",
+        "b",
+        "barrier"
+      ]
+    },
+    "route_note": "The rationalization route here differs from 884's: 884 built the residual as (U + V sqrt D)/W in ONE quadratic field per site, divided out the shared pole factor, and took U^2 - D V^2, landing on degree 6.  This runner clears denominators in the full multiquadratic ring and takes the FIELD NORM over every sign character, WITHOUT dividing out the poles, landing on degree 9 and 10.  The extra factors are the pole factors t = -|y|; keeping them can only make the GCD LARGER, never smaller, so a UNIT GCD on this route is a strictly stronger statement than 884's.  The gate is against 884's published values, not its intermediate polynomials.",
+    "rows": [
+      {
+        "centre_squared_distance": 1,
+        "enclosure_separated_from_zero_at_landed_epsilon": true,
+        "isolating_interval_for_epsilon": [
+          "272731962162112753/281474976710656000",
+          "17045747635132297/17592186044416000"
+        ],
+        "landed_epsilon_satisfies_this_site": false,
+        "neighbour_squared_distances": [
+          4,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "quadratic_field": "Q(sqrt 2)",
+        "rationalized_norm_degree": 9,
+        "rationalized_norm_monic": "-4/5 + 32/5*t^1 + -56/5*t^2 + 88/5*t^3 + -146/5*t^4 + 84/5*t^5 + 46/5*t^6 + -46/5*t^7 + -13/20*t^8 + 1*t^9",
+        "residual_sign_at_landed_epsilon_one_tenth": 1,
+        "site": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "centre_squared_distance": 4,
+        "enclosure_separated_from_zero_at_landed_epsilon": true,
+        "isolating_interval_for_epsilon": [
+          "19087576276174663/28147497671065600",
+          "190875762761750629/281474976710656000"
+        ],
+        "landed_epsilon_satisfies_this_site": false,
+        "neighbour_squared_distances": [
+          9,
+          1,
+          5,
+          5,
+          5,
+          5
+        ],
+        "quadratic_field": "Q(sqrt 5)",
+        "rationalized_norm_degree": 10,
+        "rationalized_norm_monic": "12025/12 + 950/3*t^1 + -6130/3*t^2 + 1540/3*t^3 + 8587/6*t^4 + -896*t^5 + -235/3*t^6 + 476/3*t^7 + -167/12*t^8 + -22/3*t^9 + 1*t^10",
+        "residual_sign_at_landed_epsilon_one_tenth": 1,
+        "site": [
+          2,
+          0,
+          0
+        ]
+      }
+    ],
+    "sites_tested": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  "C_FORCED_CORE": {
+    "certified_lower_bounds_monotone_in_R": true,
+    "core_has_zero_free_parameters": true,
+    "core_value_table_certified_lower_bounds": [
+      {
+        "certified_lower_bound_exact_rational": "760170477092134405184957119310141768672419231/3102931256984110428962554916789639562248009499",
+        "class": [
+          0,
+          0,
+          0
+        ],
+        "lower_bound_decimal_20": "0.24498463360447791937",
+        "orbit_size": 1,
+        "squared_radius": 0
+      },
+      {
+        "certified_lower_bound_exact_rational": "486030535189565334049062599690403683262168629/6205862513968220857925109833579279124496018998",
+        "class": [
+          1,
+          0,
+          0
+        ],
+        "lower_bound_decimal_20": "0.07831796693781124807",
+        "orbit_size": 6,
+        "squared_radius": 1
+      },
+      {
+        "certified_lower_bound_exact_rational": "3533284570111988485316767498202751042551238407/74470350167618650295101318002951349493952227976",
+        "class": [
+          1,
+          1,
+          0
+        ],
+        "lower_bound_decimal_20": "0.04744552109878943935",
+        "orbit_size": 12,
+        "squared_radius": 2
+      },
+      {
+        "certified_lower_bound_exact_rational": "4118090495222855043855584950435902580902658/114923379888300386257872404325542206009185537",
+        "class": [
+          1,
+          1,
+          1
+        ],
+        "lower_bound_decimal_20": "0.03583335696553153343",
+        "orbit_size": 8,
+        "squared_radius": 3
+      },
+      {
+        "certified_lower_bound_exact_rational": "7248389564212995006308213533838767993/206265396966757515049551484700462420898",
+        "class": [
+          2,
+          0,
+          0
+        ],
+        "lower_bound_decimal_20": "0.03514108362723182555",
+        "orbit_size": 6,
+        "squared_radius": 4
+      },
+      {
+        "certified_lower_bound_exact_rational": "233218294128530153215903583382327117342529921/8274483351957627810566813111439038832661358664",
+        "class": [
+          2,
+          1,
+          0
+        ],
+        "lower_bound_decimal_20": "0.02818523939302554002",
+        "orbit_size": 24,
+        "squared_radius": 5
+      },
+      {
+        "certified_lower_bound_exact_rational": "1803760711696831651520070597562178702298606361/74470350167618650295101318002951349493952227976",
+        "class": [
+          2,
+          1,
+          1
+        ],
+        "lower_bound_decimal_20": "0.02422119283227362405",
+        "orbit_size": 24,
+        "squared_radius": 6
+      },
+      {
+        "certified_lower_bound_exact_rational": "1512686151695658578878188954373090224778244809/74470350167618650295101318002951349493952227976",
+        "class": [
+          2,
+          2,
+          0
+        ],
+        "lower_bound_decimal_20": "0.02031259619823041693",
+        "orbit_size": 12,
+        "squared_radius": 8
+      },
+      {
+        "certified_lower_bound_exact_rational": "501442911493792963401740065571141/25341298991298595305705572686255923",
+        "class": [
+          3,
+          0,
+          0
+        ],
+        "lower_bound_decimal_20": "0.01978757725347752086",
+        "orbit_size": 6,
+        "squared_radius": 9
+      },
+      {
+        "certified_lower_bound_exact_rational": "76206742627919684773814423455974573209215097/4137241675978813905283406555719519416330679332",
+        "class": [
+          2,
+          2,
+          1
+        ],
+        "lower_bound_decimal_20": "0.01841969809749879547",
+        "orbit_size": 24,
+        "squared_radius": 9
+      },
+      {
+        "certified_lower_bound_exact_rational": "383607716045565141136598304974480906110/21587561010624337706801692791623865547827",
+        "class": [
+          3,
+          1,
+          0
+        ],
+        "lower_bound_decimal_20": "0.01776984976935431712",
+        "orbit_size": 24,
+        "squared_radius": 10
+      },
+      {
+        "certified_lower_bound_exact_rational": "4593445455901244056660684818915282551778158/282084659725828220814777719708149051113455409",
+        "class": [
+          3,
+          1,
+          1
+        ],
+        "lower_bound_decimal_20": "0.01628392504706153293",
+        "orbit_size": 24,
+        "squared_radius": 11
+      },
+      {
+        "certified_lower_bound_exact_rational": "370395064427199462653198878765192753046858029/24823450055872883431700439334317116497984075992",
+        "class": [
+          2,
+          2,
+          2
+        ],
+        "lower_bound_decimal_20": "0.01492117588786048485",
+        "orbit_size": 8,
+        "squared_radius": 12
+      },
+      {
+        "certified_lower_bound_exact_rational": "2579344832118489153730990639539431243/206265396966757515049551484700462420898",
+        "class": [
+          4,
+          0,
+          0
+        ],
+        "lower_bound_decimal_20": "0.01250498081621604154",
+        "orbit_size": 6,
+        "squared_radius": 16
+      }
+    ],
+    "cube_radii": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "declared_shell_range": 4,
+    "definition": "the forced core is the unique G: Z^3 -> R with Delta G = -delta_0 and G -> 0 at infinity, where Delta f(x) = sum_{y~x} f(y) - 6 f(x)",
+    "every_checkable_relation_holds_exactly": true,
+    "exact_affine_relation_table": [
+      {
+        "relation": "-6*G[0, 0, 0] + 6*G[1, 0, 0] = -1",
+        "rhs": "-1/1",
+        "site": [
+          0,
+          0,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[0, 0, 0] + -6*G[1, 0, 0] + 4*G[1, 1, 0] + 1*G[2, 0, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          1,
+          0,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[1, 0, 0] + -6*G[1, 1, 0] + 2*G[1, 1, 1] + 2*G[2, 1, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          1,
+          1,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "3*G[1, 1, 0] + -6*G[1, 1, 1] + 3*G[2, 1, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          1,
+          1,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[1, 0, 0] + -6*G[2, 0, 0] + 4*G[2, 1, 0] + 1*G[3, 0, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          2,
+          0,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[1, 1, 0] + 1*G[2, 0, 0] + -6*G[2, 1, 0] + 2*G[2, 1, 1] + 1*G[2, 2, 0] + 1*G[3, 1, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          2,
+          1,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[1, 1, 1] + 2*G[2, 1, 0] + -6*G[2, 1, 1] + 2*G[2, 2, 1] + 1*G[3, 1, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          2,
+          1,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[2, 1, 0] + -6*G[2, 2, 0] + 2*G[2, 2, 1] + 2*G[3, 2, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          2,
+          2,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[2, 1, 1] + 1*G[2, 2, 0] + -6*G[2, 2, 1] + 1*G[2, 2, 2] + 2*G[3, 2, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          2,
+          2,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "3*G[2, 2, 1] + -6*G[2, 2, 2] + 3*G[3, 2, 2] = 0",
+        "rhs": "0/1",
+        "site": [
+          2,
+          2,
+          2
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[2, 0, 0] + -6*G[3, 0, 0] + 4*G[3, 1, 0] + 1*G[4, 0, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          0,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[2, 1, 0] + 1*G[3, 0, 0] + -6*G[3, 1, 0] + 2*G[3, 1, 1] + 1*G[3, 2, 0] + 1*G[4, 1, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          1,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[2, 1, 1] + 2*G[3, 1, 0] + -6*G[3, 1, 1] + 2*G[3, 2, 1] + 1*G[4, 1, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          1,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[2, 2, 0] + 1*G[3, 1, 0] + -6*G[3, 2, 0] + 2*G[3, 2, 1] + 1*G[3, 3, 0] + 1*G[4, 2, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          2,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[2, 2, 1] + 1*G[3, 1, 1] + 1*G[3, 2, 0] + -6*G[3, 2, 1] + 1*G[3, 2, 2] + 1*G[3, 3, 1] + 1*G[4, 2, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          2,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[2, 2, 2] + 2*G[3, 2, 1] + -6*G[3, 2, 2] + 2*G[3, 3, 2] + 1*G[4, 2, 2] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          2,
+          2
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[3, 2, 0] + -6*G[3, 3, 0] + 2*G[3, 3, 1] + 2*G[4, 3, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          3,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[3, 2, 1] + 1*G[3, 3, 0] + -6*G[3, 3, 1] + 1*G[3, 3, 2] + 2*G[4, 3, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          3,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[3, 2, 2] + 1*G[3, 3, 1] + -6*G[3, 3, 2] + 1*G[3, 3, 3] + 2*G[4, 3, 2] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          3,
+          2
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "3*G[3, 3, 2] + -6*G[3, 3, 3] + 3*G[4, 3, 3] = 0",
+        "rhs": "0/1",
+        "site": [
+          3,
+          3,
+          3
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 0, 0] + -6*G[4, 0, 0] + 4*G[4, 1, 0] + 1*G[5, 0, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          0,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 1, 0] + 1*G[4, 0, 0] + -6*G[4, 1, 0] + 2*G[4, 1, 1] + 1*G[4, 2, 0] + 1*G[5, 1, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          1,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 1, 1] + 2*G[4, 1, 0] + -6*G[4, 1, 1] + 2*G[4, 2, 1] + 1*G[5, 1, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          1,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 2, 0] + 1*G[4, 1, 0] + -6*G[4, 2, 0] + 2*G[4, 2, 1] + 1*G[4, 3, 0] + 1*G[5, 2, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          2,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 2, 1] + 1*G[4, 1, 1] + 1*G[4, 2, 0] + -6*G[4, 2, 1] + 1*G[4, 2, 2] + 1*G[4, 3, 1] + 1*G[5, 2, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          2,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 2, 2] + 2*G[4, 2, 1] + -6*G[4, 2, 2] + 2*G[4, 3, 2] + 1*G[5, 2, 2] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          2,
+          2
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 3, 0] + 1*G[4, 2, 0] + -6*G[4, 3, 0] + 2*G[4, 3, 1] + 1*G[4, 4, 0] + 1*G[5, 3, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          3,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 3, 1] + 1*G[4, 2, 1] + 1*G[4, 3, 0] + -6*G[4, 3, 1] + 1*G[4, 3, 2] + 1*G[4, 4, 1] + 1*G[5, 3, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          3,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 3, 2] + 1*G[4, 2, 2] + 1*G[4, 3, 1] + -6*G[4, 3, 2] + 1*G[4, 3, 3] + 1*G[4, 4, 2] + 1*G[5, 3, 2] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          3,
+          2
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "1*G[3, 3, 3] + 2*G[4, 3, 2] + -6*G[4, 3, 3] + 2*G[4, 4, 3] + 1*G[5, 3, 3] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          3,
+          3
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[4, 3, 0] + -6*G[4, 4, 0] + 2*G[4, 4, 1] + 2*G[5, 4, 0] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          4,
+          0
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[4, 3, 1] + 1*G[4, 4, 0] + -6*G[4, 4, 1] + 1*G[4, 4, 2] + 2*G[5, 4, 1] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          4,
+          1
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[4, 3, 2] + 1*G[4, 4, 1] + -6*G[4, 4, 2] + 1*G[4, 4, 3] + 2*G[5, 4, 2] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          4,
+          2
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "2*G[4, 3, 3] + 1*G[4, 4, 2] + -6*G[4, 4, 3] + 1*G[4, 4, 4] + 2*G[5, 4, 3] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          4,
+          3
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      },
+      {
+        "relation": "3*G[4, 4, 3] + -6*G[4, 4, 4] + 3*G[5, 4, 4] = 0",
+        "rhs": "0/1",
+        "site": [
+          4,
+          4,
+          4
+        ],
+        "verified_exactly_on_the_cube_solve": true
+      }
+    ],
+    "finding": "The forced core is built exactly at three levels: the 1/6 normalization holds identically on every one of the 7 exact Dirichlet-cube solves, every checkable harmonicity relation on the declared shell range holds exactly, and the interior operator is invertible over Q at every radius, so the decaying solution -- and hence the core -- carries zero free parameters.",
+    "module_honesty": "The harmonicity recursion plus cubic symmetry is UNDER-determined on Z^3: each L1 shell introduces more classes than relations, so the declared shell range needs 15 symbolic generators.  What closes the system is the decay condition, which is not an algebraic relation.  The ABSOLUTE values of the core are therefore transcendental and are certified here only as one-sided exact rational lower bounds; the RELATIONS, including the 1/6 normalization, are certified outright.",
+    "normalization_is_exactly_one_sixth_at_every_radius": true,
+    "normalization_rows": [
+      {
+        "G0_minus_Ge1": "1/6",
+        "cube_radius": 2,
+        "equals_one_sixth": true
+      },
+      {
+        "G0_minus_Ge1": "1/6",
+        "cube_radius": 3,
+        "equals_one_sixth": true
+      },
+      {
+        "G0_minus_Ge1": "1/6",
+        "cube_radius": 4,
+        "equals_one_sixth": true
+      },
+      {
+        "G0_minus_Ge1": "1/6",
+        "cube_radius": 5,
+        "equals_one_sixth": true
+      },
+      {
+        "G0_minus_Ge1": "1/6",
+        "cube_radius": 6,
+        "equals_one_sixth": true
+      },
+      {
+        "G0_minus_Ge1": "1/6",
+        "cube_radius": 7,
+        "equals_one_sixth": true
+      },
+      {
+        "G0_minus_Ge1": "1/6",
+        "cube_radius": 8,
+        "equals_one_sixth": true
+      }
+    ],
+    "pass": true,
+    "symmetry_module_expressions_first_20": [
+      {
+        "class": [
+          0,
+          0,
+          0
+        ],
+        "expression": "(1/1)*gamma_0"
+      },
+      {
+        "class": [
+          1,
+          0,
+          0
+        ],
+        "expression": "(-1/6)*1 + (1/1)*gamma_0"
+      },
+      {
+        "class": [
+          1,
+          1,
+          0
+        ],
+        "expression": "(1/1)*gamma_1"
+      },
+      {
+        "class": [
+          2,
+          0,
+          0
+        ],
+        "expression": "(-1/1)*1 + (5/1)*gamma_0 + (-4/1)*gamma_1"
+      },
+      {
+        "class": [
+          1,
+          1,
+          1
+        ],
+        "expression": "(1/1)*gamma_2"
+      },
+      {
+        "class": [
+          2,
+          1,
+          0
+        ],
+        "expression": "(1/6)*1 + (-1/1)*gamma_0 + (3/1)*gamma_1 + (-1/1)*gamma_2"
+      },
+      {
+        "class": [
+          3,
+          0,
+          0
+        ],
+        "expression": "(-13/2)*1 + (33/1)*gamma_0 + (-36/1)*gamma_1 + (4/1)*gamma_2"
+      },
+      {
+        "class": [
+          2,
+          1,
+          1
+        ],
+        "expression": "(-1/1)*gamma_1 + (2/1)*gamma_2"
+      },
+      {
+        "class": [
+          2,
+          2,
+          0
+        ],
+        "expression": "(1/1)*gamma_3"
+      },
+      {
+        "class": [
+          3,
+          1,
+          0
+        ],
+        "expression": "(2/1)*1 + (-11/1)*gamma_0 + (23/1)*gamma_1 + (-10/1)*gamma_2 + (-1/1)*gamma_3"
+      },
+      {
+        "class": [
+          4,
+          0,
+          0
+        ],
+        "expression": "(-46/1)*1 + (237/1)*gamma_0 + (-304/1)*gamma_1 + (64/1)*gamma_2 + (4/1)*gamma_3"
+      },
+      {
+        "class": [
+          2,
+          2,
+          1
+        ],
+        "expression": "(1/1)*gamma_4"
+      },
+      {
+        "class": [
+          3,
+          1,
+          1
+        ],
+        "expression": "(-1/3)*1 + (2/1)*gamma_0 + (-12/1)*gamma_1 + (13/1)*gamma_2 + (-2/1)*gamma_4"
+      },
+      {
+        "class": [
+          3,
+          2,
+          0
+        ],
+        "expression": "(-1/6)*1 + (1/1)*gamma_0 + (-3/1)*gamma_1 + (1/1)*gamma_2 + (3/1)*gamma_3 + (-1/1)*gamma_4"
+      },
+      {
+        "class": [
+          4,
+          1,
+          0
+        ],
+        "expression": "(115/6)*1 + (-103/1)*gamma_0 + (198/1)*gamma_1 + (-90/1)*gamma_2 + (-9/1)*gamma_3 + (5/1)*gamma_4"
+      },
+      {
+        "class": [
+          5,
+          0,
+          0
+        ],
+        "expression": "(-2077/6)*1 + (1801/1)*gamma_0 + (-2580/1)*gamma_1 + (740/1)*gamma_2 + (60/1)*gamma_3 + (-20/1)*gamma_4"
+      },
+      {
+        "class": [
+          2,
+          2,
+          2
+        ],
+        "expression": "(1/1)*gamma_5"
+      },
+      {
+        "class": [
+          3,
+          2,
+          1
+        ],
+        "expression": "(1/1)*gamma_1 + (-2/1)*gamma_2 + (-1/2)*gamma_3 + (3/1)*gamma_4 + (-1/2)*gamma_5"
+      },
+      {
+        "class": [
+          3,
+          3,
+          0
+        ],
+        "expression": "(1/1)*gamma_6"
+      },
+      {
+        "class": [
+          4,
+          1,
+          1
+        ],
+        "expression": "(-6/1)*1 + (34/1)*gamma_0 + (-119/1)*gamma_1 + (100/1)*gamma_2 + (3/1)*gamma_3 + (-18/1)*gamma_4 + (1/1)*gamma_5"
+      }
+    ],
+    "symmetry_module_generator_count": 15,
+    "symmetry_module_generators": [
+      {
+        "class": [
+          0,
+          0,
+          0
+        ],
+        "name": "gamma_0"
+      },
+      {
+        "class": [
+          1,
+          1,
+          0
+        ],
+        "name": "gamma_1"
+      },
+      {
+        "class": [
+          1,
+          1,
+          1
+        ],
+        "name": "gamma_2"
+      },
+      {
+        "class": [
+          2,
+          2,
+          0
+        ],
+        "name": "gamma_3"
+      },
+      {
+        "class": [
+          2,
+          2,
+          1
+        ],
+        "name": "gamma_4"
+      },
+      {
+        "class": [
+          2,
+          2,
+          2
+        ],
+        "name": "gamma_5"
+      },
+      {
+        "class": [
+          3,
+          3,
+          0
+        ],
+        "name": "gamma_6"
+      },
+      {
+        "class": [
+          3,
+          3,
+          1
+        ],
+        "name": "gamma_7"
+      },
+      {
+        "class": [
+          3,
+          3,
+          2
+        ],
+        "name": "gamma_8"
+      },
+      {
+        "class": [
+          4,
+          4,
+          0
+        ],
+        "name": "gamma_9"
+      },
+      {
+        "class": [
+          3,
+          3,
+          3
+        ],
+        "name": "gamma_10"
+      },
+      {
+        "class": [
+          4,
+          4,
+          1
+        ],
+        "name": "gamma_11"
+      },
+      {
+        "class": [
+          4,
+          4,
+          2
+        ],
+        "name": "gamma_12"
+      },
+      {
+        "class": [
+          4,
+          4,
+          3
+        ],
+        "name": "gamma_13"
+      },
+      {
+        "class": [
+          4,
+          4,
+          4
+        ],
+        "name": "gamma_14"
+      }
+    ],
+    "symmetry_module_rows": [
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_0"
+        ],
+        "site": [
+          0,
+          0,
+          0
+        ],
+        "solved_for": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_1"
+        ],
+        "site": [
+          1,
+          0,
+          0
+        ],
+        "solved_for": [
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_2"
+        ],
+        "site": [
+          1,
+          1,
+          0
+        ],
+        "solved_for": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          2,
+          0,
+          0
+        ],
+        "solved_for": [
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          1,
+          1,
+          1
+        ],
+        "solved_for": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_3"
+        ],
+        "site": [
+          2,
+          1,
+          0
+        ],
+        "solved_for": [
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          3,
+          0,
+          0
+        ],
+        "solved_for": [
+          4,
+          0,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_4"
+        ],
+        "site": [
+          2,
+          1,
+          1
+        ],
+        "solved_for": [
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          2,
+          2,
+          0
+        ],
+        "solved_for": [
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          3,
+          1,
+          0
+        ],
+        "solved_for": [
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          0,
+          0
+        ],
+        "solved_for": [
+          5,
+          0,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_5"
+        ],
+        "site": [
+          2,
+          2,
+          1
+        ],
+        "solved_for": [
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          3,
+          1,
+          1
+        ],
+        "solved_for": [
+          4,
+          1,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_6"
+        ],
+        "site": [
+          3,
+          2,
+          0
+        ],
+        "solved_for": [
+          4,
+          2,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          1,
+          0
+        ],
+        "solved_for": [
+          5,
+          1,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          2,
+          2,
+          2
+        ],
+        "solved_for": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_7"
+        ],
+        "site": [
+          3,
+          2,
+          1
+        ],
+        "solved_for": [
+          4,
+          2,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          3,
+          3,
+          0
+        ],
+        "solved_for": [
+          4,
+          3,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          1,
+          1
+        ],
+        "solved_for": [
+          5,
+          1,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          2,
+          0
+        ],
+        "solved_for": [
+          5,
+          2,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_8"
+        ],
+        "site": [
+          3,
+          2,
+          2
+        ],
+        "solved_for": [
+          4,
+          2,
+          2
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          3,
+          3,
+          1
+        ],
+        "solved_for": [
+          4,
+          3,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          2,
+          1
+        ],
+        "solved_for": [
+          5,
+          2,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_9"
+        ],
+        "site": [
+          4,
+          3,
+          0
+        ],
+        "solved_for": [
+          5,
+          3,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_10"
+        ],
+        "site": [
+          3,
+          3,
+          2
+        ],
+        "solved_for": [
+          4,
+          3,
+          2
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          2,
+          2
+        ],
+        "solved_for": [
+          5,
+          2,
+          2
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_11"
+        ],
+        "site": [
+          4,
+          3,
+          1
+        ],
+        "solved_for": [
+          5,
+          3,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          4,
+          0
+        ],
+        "solved_for": [
+          5,
+          4,
+          0
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          3,
+          3,
+          3
+        ],
+        "solved_for": [
+          4,
+          3,
+          3
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_12"
+        ],
+        "site": [
+          4,
+          3,
+          2
+        ],
+        "solved_for": [
+          5,
+          3,
+          2
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          4,
+          1
+        ],
+        "solved_for": [
+          5,
+          4,
+          1
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_13"
+        ],
+        "site": [
+          4,
+          3,
+          3
+        ],
+        "solved_for": [
+          5,
+          3,
+          3
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          4,
+          2
+        ],
+        "solved_for": [
+          5,
+          4,
+          2
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [
+          "gamma_14"
+        ],
+        "site": [
+          4,
+          4,
+          3
+        ],
+        "solved_for": [
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "action": "SOLVED",
+        "new_generators": [],
+        "site": [
+          4,
+          4,
+          4
+        ],
+        "solved_for": [
+          5,
+          4,
+          4
+        ]
+      }
+    ],
+    "uniqueness_rows": [
+      {
+        "cube_radius": 2,
+        "interior_operator_invertible_over_Q": true,
+        "unknowns": 10
+      },
+      {
+        "cube_radius": 3,
+        "interior_operator_invertible_over_Q": true,
+        "unknowns": 20
+      },
+      {
+        "cube_radius": 4,
+        "interior_operator_invertible_over_Q": true,
+        "unknowns": 35
+      },
+      {
+        "cube_radius": 5,
+        "interior_operator_invertible_over_Q": true,
+        "unknowns": 56
+      },
+      {
+        "cube_radius": 6,
+        "interior_operator_invertible_over_Q": true,
+        "unknowns": 84
+      },
+      {
+        "cube_radius": 7,
+        "interior_operator_invertible_over_Q": true,
+        "unknowns": 120
+      },
+      {
+        "cube_radius": 8,
+        "interior_operator_invertible_over_Q": true,
+        "unknowns": 165
+      }
+    ]
+  },
+  "D_HARMONICITY": {
+    "broken_core_control": {
+      "detected": true,
+      "perturbation": "G[(1,1,0)] += 1/1000",
+      "sites_flagged": 4
+    },
+    "core_harmonic_at_every_tested_site": true,
+    "core_harmonicity_failures": [],
+    "cube_radius_used": 8,
+    "finding": "The core is harmonic at all 119 interior non-origin sites of the radius-8 cube -- exact zero, every one.  The landed kernel's mean-value residual at the same sites is certified NONZERO by exact rational enclosure.  A deliberately broken core is caught at 4 sites by the same gate.",
+    "interior_sites_tested": 119,
+    "landed_kernel_fails_mean_value_at_every_sampled_site": true,
+    "landed_kernel_rows": [
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "2448460756049376271498639857628135004528898861857950/319505571097732881181481619191683044156064193188141",
+          "362734926822129817999798700499405133152440401423100/47334158681145612026886156898334790372083158587437"
+        ],
+        "residual_decimal": "7.663280322897",
+        "site": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "-311603162048551595597500175744959630553616906619115008976794223866297503125928392201311117062963200/1586098615892853943544198645361249184848553222535065368838341389921775179802866711469666036260899161",
+          "-193314070842585941062650022576436066758655759910130749187189887973443684500/983992518497820210833615195768598560670121370812895775618275283361327446037"
+        ],
+        "residual_decimal": "-0.196458882775",
+        "site": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "-11430657227861714189620475255964132061480585058479937896822526718246912000/97626316647083844194049800231506644528163347212950067948447528615458907477",
+          "-91445257822893713516961465378351968732309158712126551765642610131913932800/781010533176670753552398074435588609743430455468570679066114630832218402531"
+        ],
+        "residual_decimal": "-0.117085818870",
+        "site": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "178177783277309673531250749690128964306338759034465389225756527485245215300/2052558846867642670601930090482635801264762341848664572684984759086793351989",
+          "171157015642837501933196090826400671402556033267100/1971681543003614857415732334842204288818373468971579"
+        ],
+        "residual_decimal": "0.086807636989",
+        "site": [
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "183708204698394503557774620577598653902581100307700538683801974015652149995503452887076768047922488247289966850115459638463883931425923283497779200/275783628342804083391052119457686368043932827436624434631235068514277674069125310689522950209620323699227343347352787158769002916245823785483765134457",
+          "405226307449159899119840614161226790621568999667801043082318131580007871635000675118366851410675994598166069515773150894850/608327654999192549988082307328694897715881282214861340887198699482294045927842196743474809383833747087454112459224625397551697"
+        ],
+        "residual_decimal": "0.000666131655",
+        "site": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "-1584028045239004132654597329993590296020972344477174236878873527593745760858272052740543826894337931473899666230264987648000/116571810247620311964596156130281198259968564629695582346576835066595925265527921252806918263012135707975101559763665855645761",
+          "-5241109155047897886036946751748826038736957122424461488280013944217992868227152673997280096737467700/385703765628167513485191956607869980996283277519851952337360854847621665844014069834675684285240557449"
+        ],
+        "residual_decimal": "-0.013588431387",
+        "site": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "-11437896335477233114011417625614194249094098793139220318171753382754623298930446778514624479232000/1457070452965100991504327233491346077273230110306537003622699452320146061063465128713370676651223483",
+          "-1362413677982124702980504085267005702214238265282628492597822373296668344100/173557501893588922203092484506364503488006207757470887526947156064518008324437"
+        ],
+        "residual_decimal": "-0.007849926757",
+        "site": [
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "-35319516898027053299942554554434122079836269065184873947720370310338797439602260606233505487456620900/4230548920394313318531647160677335526066523053566469803725916247429036770961502527065141697109730592201",
+          "-333583405580782034506558861084203750849517930346631784487645591721853810843684007559823933614957207989737714720293938790400/39956404851620936117535437947422243570180802883990855347744505828297386313438423084970973483604350212991950632248186181066907"
+        ],
+        "residual_decimal": "-0.008348684193",
+        "site": [
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "-6871016244534660329909793852754505736401054249755526495661694262024601600/1288138915244257930151086285983772905377840898390410908104962090165761656269",
+          "-7578095234687978832832994473673300792101258000150/1420698049286850497809518817444075212122878386370597"
+        ],
+        "residual_decimal": "-0.005334064644",
+        "site": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "8332969983778586590869588549341213785730024546134594335515236769272060100/775430821077886508357864255680881257149048688373114530918551107871259561439",
+          "83386929827358788157127102829317694940416323094900/7759633790721094374745087173152766034092585986831979"
+        ],
+        "residual_decimal": "0.010746245516",
+        "site": [
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "2974122338540545769927710025202582844525886636364511951002517196474222971838096539566608991172933960204142661457496950619834213680612736957310566400/855727717387784531976431517765389002858874286539964003764624415190838519754395450774446850956628690738510290690558647045622186362218830708041653853127",
+          "8086642454424582244721375203763839070831341274466318846683922588032013299774367967779389126328950273016877009479383858150/2326724761514567510295630693862466202801398858596717306685820776986483561212397329761247754259163692086890449718427049186121"
+        ],
+        "residual_decimal": "0.003475547511",
+        "site": [
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "landed_mean_value_residual_enclosure": [
+          "16290384811954906884505938413247383708858151676277016848953487363167503234484680622064572397428268946725686539254864281600/239096000118995658851932592577482631495513536140098316865319667081953380351624222941802851332822942323736810647804588707118143",
+          "32580769623909813769424930913557949816325019683148938386722280925121672589371602643992783975541925821705422172986959462400/478192000237991317703864830479244016751090727716615159484855921284741325674562782014334827766078810443406932204034478659857631"
+        ],
+        "residual_decimal": "0.000068133239",
+        "site": [
+          3,
+          1,
+          1
+        ]
+      }
+    ],
+    "pass": true,
+    "sample_laplacians": [
+      {
+        "laplacian": "0/1",
+        "site": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "laplacian": "0/1",
+        "site": [
+          3,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "E_884_FORCINGS_VS_CORE": {
+    "finding": "Against the core: p = 1 in d = 3 HOLDS (the core is the alpha = 0 member of the forced operator family); the TOWARD orientation HOLDS (the exact solve is strictly positive at every site); the 1/6 normalization is EXACTLY the statement mu = 0, so the repair presupposes rather than discharges the screening mass; and 884's epsilon elimination STRENGTHENS -- no (epsilon, mu^2) pair rescues the landed ansatz either.",
+    "one_sixth_is_mu_zero": {
+      "consequence": "884's 'the forced core carries zero free parameters, G(0) - G(e1) = 1/6' is a statement ABOUT the mu = 0 branch.  The repair therefore PRESUPPOSES mu = 0; it does not derive it.  884's own R3 left mu FREE, and it stays free.",
+      "identity": "G(0) - G(e1) = (1 - mu^2 * G(0)) / 6",
+      "rows": [
+        {
+          "equals_one_sixth": true,
+          "mu_squared": "0/1",
+          "step_G0_minus_Ge1": "(1 - (0/1)*G0)/6"
+        },
+        {
+          "equals_one_sixth": false,
+          "mu_squared": "1/100",
+          "step_G0_minus_Ge1": "(1 - (1/100)*G0)/6"
+        },
+        {
+          "equals_one_sixth": false,
+          "mu_squared": "1/4",
+          "step_G0_minus_Ge1": "(1 - (1/4)*G0)/6"
+        },
+        {
+          "equals_one_sixth": false,
+          "mu_squared": "1/1",
+          "step_G0_minus_Ge1": "(1 - (1/1)*G0)/6"
+        }
+      ],
+      "the_884_normalization_is_exactly_the_massless_slice": true
+    },
+    "p_forcing": {
+      "axis_corroboration_n_times_G": [
+        {
+          "G_lower_bound": "486030535189565334049062599690403683262168629/6205862513968220857925109833579279124496018998",
+          "decimal": "0.078317966938",
+          "n": 1,
+          "n_times_G_lower_bound": "486030535189565334049062599690403683262168629/6205862513968220857925109833579279124496018998"
+        },
+        {
+          "G_lower_bound": "7248389564212995006308213533838767993/206265396966757515049551484700462420898",
+          "decimal": "0.070282167254",
+          "n": 2,
+          "n_times_G_lower_bound": "7248389564212995006308213533838767993/103132698483378757524775742350231210449"
+        },
+        {
+          "G_lower_bound": "501442911493792963401740065571141/25341298991298595305705572686255923",
+          "decimal": "0.059362731760",
+          "n": 3,
+          "n_times_G_lower_bound": "501442911493792963401740065571141/8447099663766198435235190895418641"
+        },
+        {
+          "G_lower_bound": "2579344832118489153730990639539431243/206265396966757515049551484700462420898",
+          "decimal": "0.050019923265",
+          "n": 4,
+          "n_times_G_lower_bound": "5158689664236978307461981279078862486/103132698483378757524775742350231210449"
+        },
+        {
+          "G_lower_bound": "17086776179157572782454757261200246772518077/2068620837989406952641703277859759708165339666",
+          "decimal": "0.041299922792",
+          "n": 5,
+          "n_times_G_lower_bound": "85433880895787863912273786306001233862590385/2068620837989406952641703277859759708165339666"
+        },
+        {
+          "G_lower_bound": "20241457202373463367019130629419/3736924207081905572863633884288897",
+          "decimal": "0.032499653855",
+          "n": 6,
+          "n_times_G_lower_bound": "40482914404746926734038261258838/1245641402360635190954544628096299"
+        },
+        {
+          "G_lower_bound": "6826661273825975018496615247880812036438565/2068620837989406952641703277859759708165339666",
+          "decimal": "0.023100719107",
+          "n": 7,
+          "n_times_G_lower_bound": "47786628916781825129476306735165684255069955/2068620837989406952641703277859759708165339666"
+        }
+      ],
+      "axis_note": "the Dirichlet cube DEPRESSES far-field values, so n*G_R(n,0,0) is a lower bound that sags near the wall; it is reported as corroboration only, never as the forcing",
+      "by_dimension": {
+        "1": {
+          "degenerate_logarithmic_case": false,
+          "power_law_exponent_p": "-1/1",
+          "weight_of_green_function": "1/1"
+        },
+        "2": {
+          "degenerate_logarithmic_case": true,
+          "power_law_exponent_p": "0/1",
+          "weight_of_green_function": "0/1"
+        },
+        "3": {
+          "degenerate_logarithmic_case": false,
+          "power_law_exponent_p": "1/1",
+          "weight_of_green_function": "-1/1"
+        },
+        "4": {
+          "degenerate_logarithmic_case": false,
+          "power_law_exponent_p": "2/1",
+          "weight_of_green_function": "-2/1"
+        },
+        "5": {
+          "degenerate_logarithmic_case": false,
+          "power_law_exponent_p": "3/1",
+          "weight_of_green_function": "-3/1"
+        }
+      },
+      "core_is_the_alpha_equals_zero_member_of_alpha_I_plus_gamma_Delta": true,
+      "p_equals_one_in_d3_for_the_core": true,
+      "route": "884's exact scaling identity w(G) = 2 - d, recomputed"
+    },
+    "pass": true,
+    "screened_extension_of_R5": {
+      "consequence": "884's elimination of epsilon SURVIVES the removal of its own harmonicity premise: no (epsilon, mu^2) whatsoever puts the landed radial ansatz on-shell for the forced 2-constant operator.  The elimination is therefore stronger than 884 stated it, not conditional on mu = 0.",
+      "gcd_degree": 0,
+      "gcd_over_Q": "1/1",
+      "landed_epsilon_satisfies_any_pair_difference": false,
+      "method": "mu^2 is eliminated between axis sites (n,0,0), each of which lives in the single quadratic field Q(sqrt(n^2+1)); the pair-differences are rationalized by the multiquadratic field norm and their GCD is taken over Q",
+      "no_common_epsilon_even_with_a_free_screening_mass": true,
+      "pairs": [
+        {
+          "axis_sites": [
+            1,
+            2
+          ],
+          "field": "Q(sqrt 2, sqrt 5)",
+          "rationalized_degree": 44
+        },
+        {
+          "axis_sites": [
+            1,
+            3
+          ],
+          "field": "Q(sqrt 2, sqrt 5)",
+          "rationalized_degree": 43
+        },
+        {
+          "axis_sites": [
+            2,
+            3
+          ],
+          "field": "Q(sqrt 2, sqrt 5)",
+          "rationalized_degree": 44
+        },
+        {
+          "axis_sites": [
+            1,
+            4
+          ],
+          "field": "Q(sqrt 2, sqrt 17)",
+          "rationalized_degree": 44
+        }
+      ],
+      "question": "is there any (epsilon, mu^2) making the landed kernel on-shell for the SCREENED operator Delta - mu^2, i.e. does dropping 884's harmonicity premise rescue epsilon?"
+    },
+    "toward_orientation": {
+      "core_strictly_positive_on_the_exact_cube_solve": true,
+      "holds_for_the_core": true,
+      "iterations": 14,
+      "min_lower_bound": "1925/725594112",
+      "min_site": [
+        -4,
+        -4,
+        -4
+      ],
+      "monotone": true,
+      "positive": true,
+      "route": "884's exact monotone integer iteration, rebuilt",
+      "sites": 729,
+      "toward_orientation_forced": 1
+    }
+  },
+  "F_WINDOW_BEHAVIOUR": {
+    "core_window_sum_certified_lower_bound": "14471690474511597214655012321882365975367128069/6205862513968220857925109833579279124496018998",
+    "core_window_sum_decimal": "2.331938621253",
+    "equal_radius_separator": {
+      "any_radial_kernel_gives_ratio_exactly_one": true,
+      "core_difference_decimal": "0.001367879156",
+      "core_difference_exact_on_the_cube_solve": "31615903082781646390086315478519155169393/23113081988708457571415679082231952046540108",
+      "core_separates_them": true,
+      "euclidean_radius": 3,
+      "landed_ratio_enclosure_at_equal_radius": [
+        "18738350204026752207945728/18738350204026752207945733",
+        "18738350204026752207945733/18738350204026752207945728"
+      ],
+      "sites": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "status": "CERTIFIED on the radius-8 exact Dirichlet cube; the infinite-volume statement is corroborated by the monotone sequence of cube solves but is not proved here"
+    },
+    "finding": "Under 884's own sharp-indicator window (62 sites) the core and the landed kernel differ in every gauge-invariant shape ratio tested, and they differ irreducibly at equal Euclidean radius: the core separates (3,0,0) from (2,2,1) by 0.00136788 while ANY radial kernel gives ratio exactly one.",
+    "gauge_invariant_shape_ratios": [
+      {
+        "core_and_landed_certifiably_separated": true,
+        "core_ratio_decimal": "0.448697597770",
+        "core_ratio_exact_from_cube_solve": "654242200747381096456616580363664644133281529/1458091605568696002147187799071211049786505887",
+        "denominator_class": [
+          1,
+          0,
+          0
+        ],
+        "gauge_invariant_under_the_871_stabilizer": true,
+        "landed_ratio_decimal": "0.523809523810",
+        "landed_ratio_enclosure": [
+          "6649092007880460460883968/12693721105953606334414853",
+          "2216364002626820153627991/4231240368651202111471616"
+        ],
+        "numerator_class": [
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "core_and_landed_certifiably_separated": true,
+        "core_ratio_decimal": "0.252656932083",
+        "core_ratio_exact_from_cube_solve": "122798983919606399216459810889944252976804666/486030535189565334049062599690403683262168629",
+        "denominator_class": [
+          1,
+          0,
+          0
+        ],
+        "gauge_invariant_under_the_871_stabilizer": true,
+        "landed_ratio_decimal": "0.354838709677",
+        "landed_ratio_enclosure": [
+          "6649092007880460460883968/18738350204026752207945733",
+          "6649092007880460460883973/18738350204026752207945728"
+        ],
+        "numerator_class": [
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "core_and_landed_certifiably_separated": true,
+        "core_ratio_decimal": "0.605806342451",
+        "core_ratio_exact_from_cube_solve": "3533284570111988485316767498202751042551238407/5832366422274784008588751196284844199146023548",
+        "denominator_class": [
+          1,
+          0,
+          0
+        ],
+        "gauge_invariant_under_the_871_stabilizer": true,
+        "landed_ratio_decimal": "0.726449707844",
+        "landed_ratio_enclosure": [
+          "1662273001970115115220992/2288214839954351684509627",
+          "6649092007880460460883973/9152859359817406738038503"
+        ],
+        "numerator_class": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "core_and_landed_certifiably_separated": true,
+        "core_ratio_decimal": "0.457536863718",
+        "core_ratio_exact_from_cube_solve": "222376886742034172368201587323538739368743532/486030535189565334049062599690403683262168629",
+        "denominator_class": [
+          1,
+          0,
+          0
+        ],
+        "gauge_invariant_under_the_871_stabilizer": true,
+        "landed_ratio_decimal": "0.600420029540",
+        "landed_ratio_enclosure": [
+          "6649092007880460460883968/11074067620579241284320073",
+          "6649092007880460460883973/11074067620579241284320068"
+        ],
+        "numerator_class": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "core_and_landed_certifiably_separated": true,
+        "core_ratio_decimal": "0.930871822333",
+        "core_ratio_exact_from_cube_solve": "76206742627919684773814423455974573209215097/81865989279737599477639873926629501984536444",
+        "denominator_class": [
+          3,
+          0,
+          0
+        ],
+        "gauge_invariant_under_the_871_stabilizer": true,
+        "landed_ratio_decimal": "1.000000000000",
+        "landed_ratio_enclosure": [
+          "18738350204026752207945728/18738350204026752207945733",
+          "18738350204026752207945733/18738350204026752207945728"
+        ],
+        "numerator_class": [
+          2,
+          2,
+          1
+        ]
+      }
+    ],
+    "landed_window_sum_decimal": "32.812442849621",
+    "landed_window_sum_enclosure_at_unit_strength": [
+      "1031591625581464381961344374737352654780083963799799475377453876331923984308037939333165242601747359851540973427292719079766876554818736424569421168640/31439037633047726668496689275123387295208252783167429774039334314907816168288256320183960977451004673440826096816531478465761469607469848044987834367",
+      "28025288105012718430249676595480376258951167534875677814487212361503413539553220/854105506056107943003577523348628313240404670051062150921747944120796308428481"
+    ],
+    "pass": true,
+    "taper_collapse_survives": "884's R1 taper collapse and the b <= D influence-cone bound are statements about Record additivity and nearest-neighbour adjacency.  Neither mentions the kernel, so both SURVIVE the replacement unchanged.",
+    "window_declaration": {
+      "form": "sharp indicator (884 R1: Record additivity kills the taper)",
+      "inner_boundary_a_L1": 1,
+      "outer_boundary_b_L1": 3,
+      "readout_depth_D_Linf": 3,
+      "site_count": 62
+    },
+    "window_sum_is_NOT_a_gauge_invariant": "the two raw sums are NOT comparable: each is quoted at unit strength in its own normalization, and the lambda*sigma stabilizer moves either one to the other.  They are reported as data only; every comparison this cycle rests on is a stabilizer-invariant SHAPE ratio below"
+  },
+  "G_CONSUMER_CENSUS": {
+    "distinct_files_hit": 311,
+    "every_family_classified": true,
+    "every_family_nonempty": true,
+    "files_swept": 14190,
+    "finding": "311 distinct files carry at least one published needle for the landed kernel form, of which 20 are gate_b_* runners; all 5 families are non-empty, classified, and the sweep is idempotent.",
+    "gate_b_lane_files_hit": [
+      "docs/GATE_B_DYNAMICS_NOTE.md",
+      "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+      "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "docs/audit/data/ledger/ga/gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18.json",
+      "docs/audit/data/ledger/ga/gate_b_weak_field_source_action_interface_note_2026-06-16.json",
+      "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+      "scripts/gate_b_complex_action_falsifier.py",
+      "scripts/gate_b_connectivity_tolerance.py",
+      "scripts/gate_b_context_independence_no_go_2026_06_17.py",
+      "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
+      "scripts/gate_b_grown_wavefield_companion.py",
+      "scripts/gate_b_nonlabel_connectivity_v1.py",
+      "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
+      "scripts/gate_b_nonlabel_connectivity_v1_h025.py",
+      "scripts/gate_b_nonlabel_connectivity_v2.py",
+      "scripts/gate_b_nonlabel_connectivity_v3.py",
+      "scripts/gate_b_operator_cauchy.py",
+      "scripts/gate_b_poisson_self_gravity_probe.py",
+      "scripts/gate_b_weak_connectivity_harness.py",
+      "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py"
+    ],
+    "gate_b_lane_hit_count": 20,
+    "needle_families": [
+      {
+        "family": "F1_euclidean_plus_one_tenth",
+        "gate_b_lane_hits": [
+          "docs/audit/data/ledger/ga/gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18.json",
+          "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+          "scripts/gate_b_complex_action_falsifier.py",
+          "scripts/gate_b_connectivity_tolerance.py",
+          "scripts/gate_b_nonlabel_connectivity_v1.py",
+          "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
+          "scripts/gate_b_nonlabel_connectivity_v1_h025.py",
+          "scripts/gate_b_nonlabel_connectivity_v2.py",
+          "scripts/gate_b_nonlabel_connectivity_v3.py",
+          "scripts/gate_b_operator_cauchy.py",
+          "scripts/gate_b_weak_connectivity_harness.py"
+        ],
+        "hit_count": 223,
+        "sample_hits": [
+          "docs/ASYMMETRY_PERSISTENCE_PILOT_NOTE.md",
+          "docs/HIGHER_SYMMETRY_JOINT_VALIDATION_NOTE.md",
+          "docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md",
+          "docs/K_DEPENDENCE_REVIEW_SAFE_NOTE.md",
+          "docs/LINEAR_RESPONSE_TRUE_KUBO_NOTE.md",
+          "docs/audit/data/ledger/ga/gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18.json",
+          "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
+          "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py"
+        ],
+        "what_it_finds": "the landed Gate-B kernel's regulated Euclidean distance r + 0.1"
+      },
+      {
+        "family": "F2_named_epsilon_regulator",
+        "gate_b_lane_hits": [
+          "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+          "scripts/gate_b_context_independence_no_go_2026_06_17.py",
+          "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
+          "scripts/gate_b_grown_wavefield_companion.py",
+          "scripts/gate_b_poisson_self_gravity_probe.py",
+          "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py"
+        ],
+        "hit_count": 80,
+        "sample_hits": [
+          "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+          "docs/PERSISTENT_OBJECT_ADAPTIVE_READOUT_NOTE.md",
+          "docs/PERSISTENT_OBJECT_BLENDED_READOUT_TRANSFER_SWEEP_NOTE_2026-04-16.md",
+          "docs/PERSISTENT_OBJECT_COMPACT_INERTIAL_PROBE_NOTE_2026-04-16.md",
+          "docs/PERSISTENT_OBJECT_COMPACT_UPDATE_NOTE.md",
+          "docs/PERSISTENT_OBJECT_GREEN_SCOUT_NOTE.md",
+          "docs/PERSISTENT_OBJECT_READOUT_LOCALIZATION_NOTE.md",
+          "docs/PERSISTENT_OBJECT_READOUT_TAPER_NOTE.md"
+        ],
+        "what_it_finds": "a named finite-core regulator inserted in the same place as epsilon"
+      },
+      {
+        "family": "F3_screened_yukawa_kernel",
+        "gate_b_lane_hits": [
+          "scripts/gate_b_grown_wavefield_companion.py",
+          "scripts/gate_b_poisson_self_gravity_probe.py"
+        ],
+        "hit_count": 33,
+        "sample_hits": [
+          "docs/POISSON_SELF_GRAVITY_ZERO_COUPLING_EXACT_REDUCTION_NARROW_THEOREM_NOTE_2026-05-17.md",
+          "scripts/audit_companion_source_resolved_propagating_green_pocket_kernel_display_reconcile.py",
+          "scripts/frontier_source_resolved_exact_green_pocket_kernel_reconciliation_2026_06_02.py",
+          "scripts/gate_b_grown_wavefield_companion.py",
+          "scripts/gate_b_poisson_self_gravity_probe.py",
+          "scripts/persistent_object_adaptive_readout_probe.py",
+          "scripts/persistent_object_adaptive_readout_v2_probe.py",
+          "scripts/persistent_object_compact_shared.py"
+        ],
+        "what_it_finds": "a SCREENED kernel exp(-mu r)/r: a nonzero screening mass"
+      },
+      {
+        "family": "F4_power_law_field",
+        "gate_b_lane_hits": [
+          "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py"
+        ],
+        "hit_count": 22,
+        "sample_hits": [
+          "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
+          "scripts/CONNECTIVITY_FAMILY_V2_ELLIPTICAL_SWEEP.py",
+          "scripts/DISTANCE_LAW_PRESERVING_OBLIQUE_SWEEP.py",
+          "scripts/DISTANCE_LAW_PRESERVING_THIRD_FAMILY.py",
+          "scripts/ELECTROSTATICS_GROWN_SIGN_LAW.py",
+          "scripts/FIXED_FIELD_FAMILY_UNIFICATION.py",
+          "scripts/FIXED_FIELD_FAMILY_UNIFICATION_BASIN.py",
+          "scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py"
+        ],
+        "what_it_finds": "a power-law field with a named exponent, i.e. the p coordinate"
+      },
+      {
+        "family": "F5_published_note_kernel_form",
+        "gate_b_lane_hits": [
+          "docs/GATE_B_DYNAMICS_NOTE.md",
+          "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+          "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+          "docs/audit/data/ledger/ga/gate_b_weak_field_source_action_interface_note_2026-06-16.json"
+        ],
+        "hit_count": 7,
+        "sample_hits": [
+          "docs/GATE_B_DYNAMICS_NOTE.md",
+          "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+          "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+          "docs/audit/data/ledger/ga/gate_b_weak_field_source_action_interface_note_2026-06-16.json",
+          "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+          "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+          "scripts/frontier_cycle900_harmonic_repair_2026_07_28.py"
+        ],
+        "what_it_finds": "the verbatim published kernel form from the interface note"
+      }
+    ],
+    "pass": true,
+    "scope_note": "The census is a BREADTH measurement, not a claim that every hit is a Gate-B consumer: F1 in particular fires on the whole grown-geometry lineage, which inherited the same regulated Euclidean distance.  The DELTA TABLE below is scoped to the Gate-B lane -- the two pinned notes' interface rows, 884's chart rows, and the gate_b_* runners -- and each needle family gets a family-level verdict that covers its remaining hits.",
+    "sweep_is_idempotent": true
+  },
+  "H_DELTA_TABLE": {
+    "core_is_not_radial": true,
+    "finding": "34 consumer rows priced: 19 survive unchanged, 11 change with a computed delta, 4 break.  Of the breaks, 2 are real consumers and 0 are unrepairable; the rest of the breaks are the planted falsifiers, which the same machinery flags.",
+    "pass": true,
+    "planted_row_outcomes": {
+      "P1": "BREAKS",
+      "P2": "BREAKS",
+      "P3": "SURVIVES-UNCHANGED"
+    },
+    "planted_rows_behave_as_specified": true,
+    "real_breaking_rows": [
+      "GB-S1b-a: the finite runner scalar is positive, finite, RADIALLY MONOTONE in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the normalization",
+      "F3 screened exp(-mu r)/r (33 files)"
+    ],
+    "row_count": 34,
+    "rows": [
+      {
+        "consumer_row": "GB-S1a: linear test-action form S = L(1 - phi)",
+        "exact_delta": "0: the row constrains the ACTION form, not the scalar",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "interface note",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "S = L(1 - phi_core)",
+        "under_LANDED_kernel": "S = L(1 - phi_GB)"
+      },
+      {
+        "consumer_row": "GB-S1b: runner scalar, its normalization, and its finite-core regulator",
+        "exact_delta": "the regulator sub-row DISSOLVES (there is nothing to supply); the normalization sub-row is unmoved -- lambda*sigma stays free",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "interface note",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "phi = lambda*sigma*G(x); NO regulator exists",
+        "under_LANDED_kernel": "phi = strength/(r + 1/10); regulator epsilon = 1/10 supplied"
+      },
+      {
+        "consumer_row": "supplied bullet: 'the finite-core scalar 1/(r+0.1) rather than the exact periodic graph-Laplacian Green solution'",
+        "exact_delta": "this bullet names the core as the missing object; adopting the core is exactly its discharge.  The note's own text is the patch spec.",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "interface note",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "DISCHARGED",
+        "under_LANDED_kernel": "SUPPLIED"
+      },
+      {
+        "consumer_row": "supplied bullet: source-strength normalization absorbing 1/(4 pi)",
+        "exact_delta": "0: the core fixes the SHAPE, never the scale; lambda*sigma is untouched",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "interface note",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "SUPPLIED",
+        "under_LANDED_kernel": "SUPPLIED"
+      },
+      {
+        "consumer_row": "rescaling stabilizer (lambda, sigma) -> (t*lambda, sigma/t)",
+        "exact_delta": "0: the stabilizer is a property of the linear action form; every gauge-invariant shape ratio in F is stabilizer-invariant and still moves, which is what makes the deltas real",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "interface note",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "one-dimensional stabilizer",
+        "under_LANDED_kernel": "one-dimensional stabilizer"
+      },
+      {
+        "consumer_row": "supplied bullet: GB-S3 label/offset connectivity",
+        "exact_delta": "0: no kernel dependence",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "interface note",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "SUPPLIED",
+        "under_LANDED_kernel": "SUPPLIED"
+      },
+      {
+        "consumer_row": "GB-S1b-a: the finite runner scalar is positive, finite, RADIALLY MONOTONE in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the normalization",
+        "exact_delta": "the core separates two sites at the SAME Euclidean radius 3: G(3,0,0) - G(2,2,1) = 31615903082781646390086315478519155169393/23113081988708457571415679082231952046540108 (0.001367879156), so the core is not a function of r at all",
+        "obstruction": "the degree-4 cubic-invariant anisotropy that 884's R2 proved admissible and unsuppressed.  It is DERIVED (R2), not supplied, and the core realizes it with a nonzero coefficient.",
+        "planted": false,
+        "repairable_by_restatement": true,
+        "source": "dynamics note",
+        "status": "BREAKS",
+        "under_FORCED_CORE": "positive YES (exact solve strictly positive); finite YES (G(0) is a finite lattice value, no regulator needed); linear-in-normalization YES; RADIALLY MONOTONE IN EUCLIDEAN DISTANCE **NO**; matches the runner helper NO by construction",
+        "under_LANDED_kernel": "all four properties hold for 1/(r+1/10)"
+      },
+      {
+        "consumer_row": "GB-S1b-b: physical Poisson/source equation, boundary condition, regulator selection, and absolute normalization",
+        "exact_delta": "3 of 4 sub-rows discharge; 1 of 4 survives untouched",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "dynamics note",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "Poisson equation DERIVED (Delta G = -delta is 884-R3's forced operator at alpha = 0); boundary condition DERIVED (decay, with uniqueness certified); regulator selection DISSOLVED; absolute normalization still SUPPLIED",
+        "under_LANDED_kernel": "all four SUPPLIED"
+      },
+      {
+        "consumer_row": "GB-S2a: finite complex-amplitude propagation on the layered DAG",
+        "exact_delta": "0 structurally; the per-edge action values it consumes change, but the bridge row is about the recursion being a path sum",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "dynamics note",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "exact path-sum algebra",
+        "under_LANDED_kernel": "exact path-sum algebra"
+      },
+      {
+        "consumer_row": "GB-S2b: detector-window mass-gain, TOWARD, F~M readout semantics",
+        "exact_delta": "window sum at unit strength: core >= 14471690474511597214655012321882365975367128069/6205862513968220857925109833579279124496018998 vs landed in ['1031591625581464381961344374737352654780083963799799475377453876331923984308037939333165242601747359851540973427292719079766876554818736424569421168640/31439037633047726668496689275123387295208252783167429774039334314907816168288256320183960977451004673440826096816531478465761469607469848044987834367', '28025288105012718430249676595480376258951167534875677814487212361503413539553220/854105506056107943003577523348628313240404670051062150921747944120796308428481']; the gauge-invariant shape ratios all move (table in F)",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "dynamics note",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "TOWARD forced +1 (Green positivity, recomputed); window mass-gain and F~M values move with the kernel; window boundaries still supplied",
+        "under_LANDED_kernel": "supplied runner data"
+      },
+      {
+        "consumer_row": "GB-S3a / GB-S3b: the connectivity stencil rows",
+        "exact_delta": "0: no kernel dependence",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "dynamics note",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "unchanged",
+        "under_LANDED_kernel": "SUPPLIED / bounded-support"
+      },
+      {
+        "consumer_row": "chart coordinate `lambda`",
+        "exact_delta": "0: the stabilizer is untouched",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "GAUGE",
+        "under_LANDED_kernel": "GAUGE"
+      },
+      {
+        "consumer_row": "chart coordinate `sigma`",
+        "exact_delta": "0: the shared source-action scalar, not new to GB-S2, not touched",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FREE",
+        "under_LANDED_kernel": "FREE"
+      },
+      {
+        "consumer_row": "chart coordinate `p`",
+        "exact_delta": "0: the core is the alpha = 0 member of the forced operator family, so p = 1 is not merely forced but instantiated",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FORCED = 1 and now REALIZED",
+        "under_LANDED_kernel": "FORCED = 1"
+      },
+      {
+        "consumer_row": "chart coordinate `epsilon`",
+        "exact_delta": "the coordinate leaves the chart entirely: chart dimension 15 -> 14",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "ABSENT",
+        "under_LANDED_kernel": "ELIMINATED (inadmissible import)"
+      },
+      {
+        "consumer_row": "chart coordinate `m`",
+        "exact_delta": "the regulator insertion exponent has no referent: 14 -> 13",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "ABSENT",
+        "under_LANDED_kernel": "ELIMINATED (inadmissible import)"
+      },
+      {
+        "consumer_row": "chart coordinate `theta`",
+        "exact_delta": "0: the per-edge action-to-phase gain is not a kernel property",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FREE",
+        "under_LANDED_kernel": "FREE"
+      },
+      {
+        "consumer_row": "chart coordinate `mu`",
+        "exact_delta": "the harmonic core IS the mu = 0 slice: G(0) - G(e1) = (1 - mu^2 G(0))/6 equals 1/6 exactly when mu = 0.  The repair PRESUPPOSES mu = 0; it does not derive it, so mu stays in the residual as a supplied branch label",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "FIXED TO ZERO BY FIAT",
+        "under_LANDED_kernel": "FREE (exposed by R3)"
+      },
+      {
+        "consumer_row": "chart coordinate `c4`",
+        "exact_delta": "the core's degree-4 anisotropy is not a free coefficient: it is whatever the lattice Green function has, witnessed exactly by G(3,0,0) - G(2,2,1) = 31615903082781646390086315478519155169393/23113081988708457571415679082231952046540108 at equal Euclidean radius.  c4 LEAVES the residual.",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "DETERMINED BY THE LATTICE",
+        "under_LANDED_kernel": "FREE (exposed by R2)"
+      },
+      {
+        "consumer_row": "chart coordinate `a`",
+        "exact_delta": "0: window coordinate",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FREE",
+        "under_LANDED_kernel": "FREE"
+      },
+      {
+        "consumer_row": "chart coordinate `b`",
+        "exact_delta": "0: window coordinate",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FREE",
+        "under_LANDED_kernel": "FREE"
+      },
+      {
+        "consumer_row": "chart coordinate `D`",
+        "exact_delta": "0: window coordinate",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FREE",
+        "under_LANDED_kernel": "FREE"
+      },
+      {
+        "consumer_row": "chart coordinate `barrier`",
+        "exact_delta": "0: window coordinate",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FREE",
+        "under_LANDED_kernel": "FREE"
+      },
+      {
+        "consumer_row": "chart coordinate `N`",
+        "exact_delta": "0: window coordinate",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FREE",
+        "under_LANDED_kernel": "FREE"
+      },
+      {
+        "consumer_row": "chart coordinate `s`",
+        "exact_delta": "0: Green-function positivity is a property OF the core",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FORCED = +1, recomputed",
+        "under_LANDED_kernel": "FORCED = +1"
+      },
+      {
+        "consumer_row": "chart coordinate `g`",
+        "exact_delta": "0: the F~M calibration gain is a coupling, not a kernel property",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "884 chart",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "FREE",
+        "under_LANDED_kernel": "FREE"
+      },
+      {
+        "consumer_row": "F1 euclidean r + 0.1 (223 files)",
+        "exact_delta": "every F1 consumer changes value; none BREAKS, because the regulator's only job was to keep r = 0 finite and G(0) is already finite on the lattice",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "census family",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "lattice Green function value",
+        "under_LANDED_kernel": "regulated Euclidean distance"
+      },
+      {
+        "consumer_row": "F2 named epsilon regulator (80 files)",
+        "exact_delta": "the coordinate dissolves; 884 already showed nothing lawful consumed it, since no epsilon was ever admissible",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "census family",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "no regulator",
+        "under_LANDED_kernel": "epsilon supplied per runner"
+      },
+      {
+        "consumer_row": "F3 screened exp(-mu r)/r (33 files)",
+        "exact_delta": "a harmonic kernel cannot carry a screening mass: harmonicity at the origin forces G(0) - G(e1) = 1/6, which holds iff mu = 0",
+        "obstruction": "the massless-vs-screened branch of the forced operator alpha*I + gamma*Delta.  884's R3 left this branch FREE, so the obstruction is SUPPLIED, not derived -- and it is repaired by using the SCREENED lattice Green function instead, which keeps every other repair result (the epsilon elimination survives the screened case too: computed above).",
+        "planted": false,
+        "repairable_by_restatement": true,
+        "source": "census family",
+        "status": "BREAKS",
+        "under_FORCED_CORE": "harmonic core has mu = 0 identically",
+        "under_LANDED_kernel": "nonzero screening mass (e.g. GREEN_MU = 0.08, BACKREACTION_MU = 0.06)"
+      },
+      {
+        "consumer_row": "F4 named power exponent (22 files)",
+        "exact_delta": "0 where FIELD_POWER = 1; any consumer using FIELD_POWER != 1 was already off-shell under 884's R3, independent of this repair",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "census family",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "p = 1 forced",
+        "under_LANDED_kernel": "FIELD_POWER supplied (the landed runners use 1)"
+      },
+      {
+        "consumer_row": "F5 published note kernel form (7 files)",
+        "exact_delta": "a text patch in each of the note rows enumerated above",
+        "obstruction": null,
+        "planted": false,
+        "repairable_by_restatement": null,
+        "source": "census family",
+        "status": "CHANGES",
+        "under_FORCED_CORE": "restated as the lattice Green function",
+        "under_LANDED_kernel": "verbatim `phi_GB(x) = strength / (r(x, mass) + 0.1)`"
+      },
+      {
+        "consumer_row": "P1 (must BREAK): a consumer that asserts phi is a function of the Euclidean radius alone",
+        "exact_delta": "equal-radius separator G(3,0,0) - G(2,2,1) = 31615903082781646390086315478519155169393/23113081988708457571415679082231952046540108 != 0",
+        "obstruction": "degree-4 cubic anisotropy",
+        "planted": true,
+        "repairable_by_restatement": false,
+        "source": "PLANTED",
+        "status": "BREAKS",
+        "under_FORCED_CORE": "false for the core",
+        "under_LANDED_kernel": "true for 1/(r+eps)"
+      },
+      {
+        "consumer_row": "P2 (must BREAK): a consumer that asserts SOME epsilon > 0 makes the landed kernel harmonic",
+        "exact_delta": "GCD over Q of the mean-value conditions is a unit -- and stays a unit when a free screening mass is added",
+        "obstruction": "884-R5, strengthened here",
+        "planted": true,
+        "repairable_by_restatement": false,
+        "source": "PLANTED",
+        "status": "BREAKS",
+        "under_FORCED_CORE": "refuted",
+        "under_LANDED_kernel": "assumed"
+      },
+      {
+        "consumer_row": "P3 (control, must SURVIVE): a consumer that asserts the action is S = L(1 - phi)",
+        "exact_delta": "0",
+        "obstruction": null,
+        "planted": true,
+        "repairable_by_restatement": null,
+        "source": "PLANTED",
+        "status": "SURVIVES-UNCHANGED",
+        "under_FORCED_CORE": "true",
+        "under_LANDED_kernel": "true"
+      }
+    ],
+    "screened_epsilon_elimination_holds": true,
+    "status_counts": {
+      "BREAKS": 4,
+      "CHANGES": 11,
+      "SURVIVES-UNCHANGED": 19
+    },
+    "unrepairable_breaking_rows": []
+  },
+  "I_REPAIR_VERDICT": {
+    "decision_rule_declared_in_advance": "REPAIR-BLOCKED iff some real (non-planted) consumer row BREAKS and is not repairable by restatement; REPAIR-VIABLE otherwise.  The rule is evaluated on the delta table, which contains planted rows designed to break -- so the verdict CAN land BLOCKED.",
+    "finding": "REPAIR-VIABLE: 13 consumer rows need patching and 0 are unrepairable.  Against 884's own chart the repair takes the chart from 15 to 13 coordinates and the residual from 10 to 9, with the kernel-shape sub-block going 4 -> 3.",
+    "obstruction_provenance": {
+      "F3 screened consumers": "SUPPLIED obstruction: the massless/screened branch of the forced operator.  Repairable by taking the SCREENED lattice Green function; the epsilon elimination is computed here to survive that generalization.",
+      "GB-S1b-a radial monotonicity": "DERIVED obstruction: 884's R2 proved covariance does not force radial-only and that the first admissible anisotropy is degree 4 and unsuppressed.  The core realizes it.  The row is repairable by restating it as cubic-covariant positivity and decay instead of Euclidean-radial monotonicity."
+    },
+    "pass": true,
+    "patch_list": [
+      {
+        "consumer_row": "GB-S1b: runner scalar, its normalization, and its finite-core regulator",
+        "new_value_or_statement": "phi = lambda*sigma*G(x); NO regulator exists",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "supplied bullet: 'the finite-core scalar 1/(r+0.1) rather than the exact periodic graph-Laplacian Green solution'",
+        "new_value_or_statement": "DISCHARGED",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "GB-S1b-a: the finite runner scalar is positive, finite, RADIALLY MONOTONE in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the normalization",
+        "new_value_or_statement": "positive YES (exact solve strictly positive); finite YES (G(0) is a finite lattice value, no regulator needed); linear-in-normalization YES; RADIALLY MONOTONE IN EUCLIDEAN DISTANCE **NO**; matches the runner helper NO by construction",
+        "status": "BREAKS"
+      },
+      {
+        "consumer_row": "GB-S1b-b: physical Poisson/source equation, boundary condition, regulator selection, and absolute normalization",
+        "new_value_or_statement": "Poisson equation DERIVED (Delta G = -delta is 884-R3's forced operator at alpha = 0); boundary condition DERIVED (decay, with uniqueness certified); regulator selection DISSOLVED; absolute normalization still SUPPLIED",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "GB-S2b: detector-window mass-gain, TOWARD, F~M readout semantics",
+        "new_value_or_statement": "TOWARD forced +1 (Green positivity, recomputed); window mass-gain and F~M values move with the kernel; window boundaries still supplied",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "chart coordinate `epsilon`",
+        "new_value_or_statement": "ABSENT",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "chart coordinate `m`",
+        "new_value_or_statement": "ABSENT",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "chart coordinate `mu`",
+        "new_value_or_statement": "FIXED TO ZERO BY FIAT",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "chart coordinate `c4`",
+        "new_value_or_statement": "DETERMINED BY THE LATTICE",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "F1 euclidean r + 0.1 (223 files)",
+        "new_value_or_statement": "lattice Green function value",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "F2 named epsilon regulator (80 files)",
+        "new_value_or_statement": "no regulator",
+        "status": "CHANGES"
+      },
+      {
+        "consumer_row": "F3 screened exp(-mu r)/r (33 files)",
+        "new_value_or_statement": "harmonic core has mu = 0 identically",
+        "status": "BREAKS"
+      },
+      {
+        "consumer_row": "F5 published note kernel form (7 files)",
+        "new_value_or_statement": "restated as the lattice Green function",
+        "status": "CHANGES"
+      }
+    ],
+    "patch_list_size": 13,
+    "residual_accounting": {
+      "basis": "884's OWN chart, read off the pinned receipt.  The Cycle-896 receipt named by the brief is NOT present on this branch and is NOT reconstructed from memory.",
+      "chart_coordinates_removed": [
+        "epsilon",
+        "m"
+      ],
+      "chart_dimension_after": 13,
+      "chart_dimension_before": 15,
+      "coupling_block_unchanged": [
+        "g"
+      ],
+      "cycle896_receipt_present_on_this_branch": false,
+      "honest_note": "The reduction is ONE coordinate, not two.  A reading that also credits mu would be wrong: the harmonic core does not eliminate the screening mass, it selects mu = 0.",
+      "kernel_shape_block_after": [
+        "mu",
+        "sigma",
+        "theta"
+      ],
+      "kernel_shape_block_before": [
+        "c4",
+        "mu",
+        "sigma",
+        "theta"
+      ],
+      "kernel_shape_residual_after": 3,
+      "kernel_shape_residual_before": 4,
+      "landed_chart_dimension_for_reference": 13,
+      "residual_coordinates_removed": [
+        "c4"
+      ],
+      "residual_free_after": 9,
+      "residual_free_before": 10,
+      "window_block_unchanged": [
+        "D",
+        "N",
+        "a",
+        "b",
+        "barrier"
+      ]
+    },
+    "unrepairable_obstructions": [],
+    "verdict": "REPAIR-VIABLE",
+    "what_the_repair_buys": [
+      "884's R5 negative DISSOLVES as an obstruction: the kernel is no longer non-harmonic, because it is the harmonic object.  The epsilon and m coordinates leave the chart entirely rather than sitting in it as inadmissible imports.",
+      "the interface note's first supplied bullet -- 'the finite-core scalar 1/(r+0.1) rather than the exact periodic graph-Laplacian Green solution' -- is DISCHARGED verbatim.",
+      "GB-S1b-b's Poisson-equation, boundary-condition and regulator-selection sub-rows discharge (3 of its 4).",
+      "c4 stops being a free coefficient: the lattice determines the degree-4 anisotropy, so the KERNEL_SHAPE sub-block shrinks by 1."
+    ],
+    "what_the_repair_does_NOT_buy": [
+      "mu is NOT discharged.  G(0) - G(e1) = 1/6 is exactly the statement mu = 0, so choosing the harmonic core PRESUPPOSES the massless branch that 884's R3 left free.  mu stays in the residual as a supplied branch label.",
+      "sigma is untouched: it is the shared source-action scalar, not a kernel-shape coordinate in any real sense.",
+      "theta is untouched: the per-edge action-to-phase gain is not a property of the kernel.",
+      "the whole WINDOW block (a, b, D, barrier, N) is untouched: 884's R1 already showed those are Record-window questions, and the sharpest missing lemma named by 884 -- GBW1, the record-determined window -- is not advanced one step by this repair.",
+      "the COUPLING gain g is untouched.",
+      "no Newton constant, no closure of Gate B, no promotion of the Gate-B dynamics row."
+    ]
+  },
+  "J_FALSIFIER_VISIBILITY": {
+    "checks": {
+      "a_blocked_verdict_is_reachable": "yes: any real consumer row with repairable_by_restatement=False flips it, and the planted rows demonstrate the flag firing",
+      "broken_core_is_detected_by_the_harmonicity_gate": true,
+      "planted_control_consumer_SURVIVES": true,
+      "planted_harmonic_epsilon_consumer_BREAKS": true,
+      "planted_radial_only_consumer_BREAKS": true,
+      "planted_rows_go_through_the_same_delta_machinery": true,
+      "verdict_certificate_does_not_gate_on_its_own_outcome": true
+    },
+    "finding": "The harmonicity gate catches a deliberately broken core; the two planted consumers that must break DO break through the same delta machinery as the real rows; the planted control survives; and the verdict certificate passes regardless of which verdict it reaches.",
+    "pass": true
+  },
+  "K_HONESTY": {
+    "Q1_what_this_is": "One repair question, computed.  Can the landed Gate-B kernel be replaced by the forced harmonic core, and what breaks.",
+    "Q2_exact_scope": "Every ALGEBRAIC statement here is exact and certified: the 1/6 normalization, the harmonicity relations, the equivalence of that normalization with mu = 0, the unit GCDs (massless and screened), the invertibility of the interior operator, and the exact Dirichlet-cube solves.  Every NUMERICAL inequality about the INFINITE lattice -- the anisotropy magnitude, the shape ratios, the window sums -- is certified on the finite models computed here and only corroborated in the infinite-volume limit, because this runner produces one-sided rational lower bounds and no matching upper bound.  That gap is real and is not papered over.",
+    "Q3_steelman": "The strongest case against this cycle is that 'REPAIR-VIABLE' is cheap when the repair's own premise -- that the field is the graph-Laplacian Green function -- is itself supplied.  That is why the mu finding is reported as a NEGATIVE against the repair: the 1/6 normalization that 884 read as 'zero parameters' is the massless slice of a one-parameter family, so the repair buys ONE residual coordinate (c4), not two.  A second attack is that the core's absolute values are transcendental and only lower-bounded here; the answer is that no load-bearing claim uses them, only the exact relations do.",
+    "Q4_what_would_falsify_it": "Exhibiting an epsilon (or an (epsilon, mu^2) pair) that satisfies the discrete mean-value conditions; exhibiting a Gate-B consumer row that breaks under the core and cannot be restated; or showing G(3,0,0) = G(2,2,1) on Z^3, which would restore the radial reading.",
+    "finding": "No closure claim appears in the science payload.  The cycle's load-bearing results split: one positive (the repair is viable and discharges named supplied rows) and two negatives (the repair presupposes mu = 0, and it breaks the GB-S1b-a radial row).",
+    "forbidden_phrases_present": [],
+    "pass": true
+  }
+}
+
+VERDICT: REPAIR-VIABLE  patch_rows=13  residual 10 -> 9  kernel_shape 4 -> 3
+controls: deterministic=True runtime=17.434068s stdout=101059B receipt=cc8430a295cbe6fd

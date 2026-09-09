@@ -1,0 +1,65 @@
+{
+  "claims_refuted_or_narrowed": [
+    "the residual free dimension is NOT an exact count: it is a LOWER BOUND. The checker's parameterization gives 27 against the primary's 10, because the angular profile keeps producing invariants beyond the primary's single c4 and the covariance-respecting window family is orbit-indexed rather than an annulus.",
+    "the barrier coordinate is not simply FREE: the axioms' privilege clauses force it to be record-carried configuration rather than a rule -- a narrowing the primary did not state."
+  ],
+  "claims_surviving": [
+    "p = 1 is forced in d = 3, and it fails in d = 2, d = 4, and at fourth order -- so it is a forcing, not an artifact",
+    "the invariant stencil is 2-dimensional under the FULL rotation group and strictly larger under a proper subgroup",
+    "the TOWARD orientation is forced and flips with the source and action signs",
+    "no epsilon makes the landed kernel harmonic, reconfirmed by certified enclosures rather than by polynomial GCD, while the machinery passes three genuinely harmonic controls exactly",
+    "the Cycle-871 rescaling stabilizer is gauge, and stops being gauge under a non-multiplicative coupling",
+    "the exact core step G(0) - G(e1) = 1/6"
+  ],
+  "count_verdict": "PRIMARY NUMBER REFUTED AS AN EXACT COUNT (it is a LOWER BOUND)",
+  "cycle": 884,
+  "forcing_hunt_hits": 0,
+  "forcing_hunt_narrowings": 1,
+  "independent_residual_count": 27,
+  "net_effect": "GB-S2 is LARGER than either the primary or the brief's reported 8. Every forcing the primary claims survives its stress test, so the forced/gauge/eliminated columns stand; the disagreement is that the FREE column is bigger than reported.",
+  "primary": "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+  "primary_residual_count": 10,
+  "recheck_agreements": 3,
+  "recheck_disagreements": [
+    "residual free dimension"
+  ],
+  "role": "independent checker, specified to refute the primary",
+  "source_pins": [
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+      "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+    },
+    {
+      "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+      "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+      "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+    },
+    {
+      "git_blob": "7b244a7ce3a4d61589bea0f222cca5d847ab0200",
+      "path": "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+      "sha256": "685973be36ac89a9632d8ac4113a6e49e9db32e98c9977ec5965a3bb6bff6aeb"
+    },
+    {
+      "git_blob": "5a3c9db3ff688f26a70cc9b82aed53ec0ff41bb8",
+      "path": "logs/runner-cache/gbs2_kernel_window_cycle884_receipt_2026_07_28.json",
+      "sha256": "5d5c669ebc7c58613892425745b09c35eb94dc216e8c38fe0f161e4f53541f98"
+    }
+  ],
+  "stresses_refuted": [],
+  "stresses_run": 7,
+  "stresses_survived": [
+    "S1 -- the p = 1 forcing against perturbed dimension and order",
+    "S2 -- the stencil rigidity against a proper subgroup",
+    "S3 -- the TOWARD orientation against a flipped source and a flipped action sign",
+    "S4 -- the epsilon machinery against functions that really are discretely harmonic",
+    "S5 -- the common-root test must fire on identical conditions and separate the real ones",
+    "S6 -- the stabilizer against a non-multiplicative coupling",
+    "S7 -- the additivity check against a quadratic response"
+  ]
+}

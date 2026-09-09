@@ -1,0 +1,234 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py
+runner_sha256: 6a1776ef6864426452ba1f030805c16cb3ddf038801073ad93a722d0a38b62e3
+input_fingerprint_sha256: cb7fe90c53cdd22e634f85ef511fd5368e715319194062db010b28e7656df7eb
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+{
+  "all_checks_pass": true,
+  "checks": {
+    "conditional_range_one_invariant_dimension_is_two": true,
+    "current_memo_denies_dynamics_selection": true,
+    "finite_cube_elimination_found_every_pivot": true,
+    "finite_cube_equations_exact": true,
+    "finite_cube_identity_exact": true,
+    "finite_cube_nonradial_example": true,
+    "finite_cube_values_positive": true,
+    "independent_radial_norm_gcd_is_one": true,
+    "independent_scope_counterexamples_pass": true,
+    "primary_radial_norm_gcd_is_one": true
+  },
+  "claim_type": "bounded_theorem",
+  "finite_dirichlet_model": {
+    "definition": "On Lambda_R={x in Z^3: ||x||_infinity<=R}, solve (6I-adjacency)G_R=delta_0 with G_R=0 outside Lambda_R.",
+    "radius_four_equal_euclidean_radius_difference_G300_minus_G221": "27550182148/27107061642663",
+    "radius_four_model_is_not_euclidean_radial": true,
+    "rows": [
+      {
+        "G0_minus_Ge1": "1/6",
+        "G0_minus_Ge1_equals_one_sixth": true,
+        "all_equation_residuals_zero": true,
+        "all_finite_cube_values_positive": true,
+        "exact_elimination_found_every_pivot": true,
+        "radius": 2,
+        "unknown_orbit_classes": 10
+      },
+      {
+        "G0_minus_Ge1": "1/6",
+        "G0_minus_Ge1_equals_one_sixth": true,
+        "all_equation_residuals_zero": true,
+        "all_finite_cube_values_positive": true,
+        "exact_elimination_found_every_pivot": true,
+        "radius": 3,
+        "unknown_orbit_classes": 20
+      },
+      {
+        "G0_minus_Ge1": "1/6",
+        "G0_minus_Ge1_equals_one_sixth": true,
+        "all_equation_residuals_zero": true,
+        "all_finite_cube_values_positive": true,
+        "exact_elimination_found_every_pivot": true,
+        "radius": 4,
+        "unknown_orbit_classes": 35
+      }
+    ],
+    "scope": "finite zero-exterior boundary problems only; no infinite-volume existence, convergence, decay, or physical Poisson selection is inferred"
+  },
+  "independent_confirmation": {
+    "implication_counterexamples": {
+      "local_linear_covariant_response_counterexample": {
+        "linearity_check": true,
+        "nonzero_power_law_tail_does_not_follow": true,
+        "operator": "identity response K(rho)=rho",
+        "translation_and_cubic_covariance": "exact by pointwise identity",
+        "unit_source_value_at_distance_two": "0"
+      },
+      "supplied_finite_additivity_counterexample": {
+        "additivity_holds": true,
+        "annular_or_two_boundary_collapse_does_not_follow": true,
+        "three_distinct_shell_weights": [
+          "2/7",
+          "5/7",
+          "10/7"
+        ]
+      }
+    },
+    "radial_massless_obstruction": {
+      "ansatz": "f_epsilon(x)=A/(|x|+epsilon)",
+      "common_reduced_norm_gcd_coefficients": [
+        "1"
+      ],
+      "common_reduced_norm_gcd_is_one": true,
+      "conclusion": "No epsilon in the stated domain makes the nonzero radial ansatz discrete harmonic at both tested sites.",
+      "domain": "A != 0 and epsilon avoids every listed denominator pole",
+      "site_rows": [
+        {
+          "cancelled_factor_coefficients_low_to_high": [
+            "0",
+            "2",
+            "3",
+            "1"
+          ],
+          "cancelled_factor_divides_cleared_denominator": true,
+          "quadratic_field": "Q(sqrt(2))",
+          "reduced_norm_coefficients_low_to_high": [
+            "-1",
+            "8",
+            "1",
+            "-10",
+            "-9/4",
+            "3",
+            "1"
+          ],
+          "reduced_norm_degree": 6,
+          "site": [
+            1,
+            0,
+            0
+          ],
+          "undefined_epsilon_values": [
+            "0",
+            "-1",
+            "-2",
+            "-sqrt(2)"
+          ]
+        },
+        {
+          "cancelled_factor_coefficients_low_to_high": [
+            "6",
+            "11",
+            "6",
+            "1"
+          ],
+          "cancelled_factor_divides_cleared_denominator": true,
+          "quadratic_field": "Q(sqrt(5))",
+          "reduced_norm_coefficients_low_to_high": [
+            "95/4",
+            "10",
+            "-97/2",
+            "-32",
+            "15/4",
+            "6",
+            "1"
+          ],
+          "reduced_norm_degree": 6,
+          "site": [
+            2,
+            0,
+            0
+          ],
+          "undefined_epsilon_values": [
+            "-1",
+            "-2",
+            "-3",
+            "-sqrt(5)"
+          ]
+        }
+      ]
+    },
+    "supplied_range_one_stencil": {
+      "explicitly_supplied_support": "{0,+/-e1,+/-e2,+/-e3}",
+      "family": "one centre coefficient and one common neighbour coefficient",
+      "invariant_coefficient_space_dimension": 2,
+      "proper_cubic_rotation_count": 24,
+      "scope": "conditional on this supplied seven-point support; covariance does not select either coefficient, an inverse, or a physical response law",
+      "support_orbit_sizes": [
+        1,
+        6
+      ]
+    }
+  },
+  "input_sha256": {
+    "docs/GBS2_KERNEL_WINDOW_ANATOMY_CYCLE884_BOUNDED_THEOREM_NOTE_2026-07-28.md": "22abe8a468224a3eb139d3c26e19fb71cd2cbb53b1c9471ef772639695652836",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "scripts/frontier_cycle884_gbs2_independent_check_2026_07_28.py": "bf19fd07e1cb1ca1b5e82a42b79d3e649c03c5486a24caad354f30c978a98a9a"
+  },
+  "nonzero_radial_massless_ansatz_obstruction": {
+    "common_reduced_norm_gcd": "1",
+    "common_reduced_norm_gcd_is_one": true,
+    "logical_scope": "For A!=0 and epsilon outside {0,-1,-2,-sqrt(2),-3,-sqrt(5)}, simultaneous discrete harmonicity at the two axis sites is impossible.",
+    "route": "direct SymPy construction from the two displayed residuals",
+    "site_rows": [
+      {
+        "cancelled_factor": "1",
+        "quadratic_field": "Q(sqrt(2))",
+        "reduced_norm_coefficients_high_to_low": [
+          "1",
+          "3",
+          "-1/4",
+          "-4",
+          "1/2"
+        ],
+        "reduced_norm_degree": 4,
+        "site": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "cancelled_factor": "1",
+        "quadratic_field": "Q(sqrt(5))",
+        "reduced_norm_coefficients_high_to_low": [
+          "1",
+          "6",
+          "35/4",
+          "-2",
+          "-19/4"
+        ],
+        "reduced_norm_degree": 4,
+        "site": [
+          2,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "withdrawn_historical_inferences": [
+    "Record finite additivity as current axiom content",
+    "finite additivity collapses arbitrary shell weights to an annulus",
+    "locality, linearity and cubic covariance select a nearest-neighbour inverse",
+    "an exact lattice dilation law or p=1 forcing",
+    "positivity selects the physical TOWARD sign",
+    "finite Dirichlet pivots prove an infinite decaying Green function",
+    "chart residuals or stabilizer dimension as complete physical counts"
+  ]
+}
+PASS current_memo_denies_dynamics_selection
+PASS finite_cube_elimination_found_every_pivot
+PASS finite_cube_equations_exact
+PASS finite_cube_identity_exact
+PASS finite_cube_values_positive
+PASS finite_cube_nonradial_example
+PASS primary_radial_norm_gcd_is_one
+PASS independent_radial_norm_gcd_is_one
+PASS conditional_range_one_invariant_dimension_is_two
+PASS independent_scope_counterexamples_pass
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

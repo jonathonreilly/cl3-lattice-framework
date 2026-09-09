@@ -1,0 +1,167 @@
+{
+  "agreement_caveat": "The Cycle-871 note is absent from this branch (see A_PINS), so the count above could not be compared line by line against it. Agreement of the LANDED-chart residual with the reported 8 is a coincidence of two independent chart choices and is reported as data, not as a reproduction. The HONEST chart, which carries the two coordinates R2 and R3 expose, gives 10 -- the obligation is LARGER than the reported number, not smaller.",
+  "brief_reported_cycle871_value": 8,
+  "classification": {
+    "D": {
+      "class": "FREE",
+      "witness": "no route reaches the readout depth"
+    },
+    "N": {
+      "class": "FREE",
+      "witness": "tested for gauge in J and REJECTED: N is observable through the window mass-gain delta"
+    },
+    "a": {
+      "class": "FREE",
+      "witness": "R1 bounds the window but pins no boundary"
+    },
+    "b": {
+      "class": "FREE",
+      "witness": "R1 proves b <= D and makes the ray b > D gauge, which is a BOUND, not a value"
+    },
+    "barrier": {
+      "class": "FREE",
+      "witness": "no route reaches the central blocked-barrier locus; Admissibility constrains which local possibilities exist, not where a barrier sits"
+    },
+    "c4": {
+      "class": "FREE",
+      "witness": "exposed by R2: the degree-4 cubic-invariant angular coefficient, unsuppressed at large r; the landed chart set it to zero silently"
+    },
+    "epsilon": {
+      "class": "ELIMINATED",
+      "witness": "R5: the GCD over Q of the two discrete mean-value conditions is a unit, so NO epsilon is admissible; and the forced core carries zero free parameters, G(0) - G(e1) = 1/6"
+    },
+    "g": {
+      "class": "FREE",
+      "witness": "no route reaches the F~M calibration gain; R4 in particular yields no bound"
+    },
+    "lambda": {
+      "class": "GAUGE",
+      "witness": "the one-parameter stabilizer (lambda, sigma) -> (t*lambda, sigma/t), verified exactly in B and confirmed to annihilate every landed observable in J"
+    },
+    "m": {
+      "class": "ELIMINATED",
+      "witness": "R5: the regulator insertion exponent has no referent once the regulated core family is off-shell"
+    },
+    "mu": {
+      "class": "FREE",
+      "witness": "exposed by R3: the screening mass mu^2 = alpha/gamma of the forced 2-constant operator; the landed chart set it to zero silently"
+    },
+    "p": {
+      "class": "FORCED",
+      "witness": "R3: locality + covariance + additivity force the operator to alpha*I + gamma*Delta, and the exact scaling identity w(G) = 2 - d gives p = 1 in d = 3 in both branches"
+    },
+    "s": {
+      "class": "FORCED",
+      "witness": "lattice Green-function positivity, proved by exact monotone integer iteration plus domain monotonicity, with S = L(1 - phi)"
+    },
+    "sigma": {
+      "class": "FREE",
+      "witness": "the surviving product lambda*sigma; this is the SAME single scalar the source-action bridge was priced to, so it is shared with GB-S1 and not new to GB-S2"
+    },
+    "theta": {
+      "class": "FREE",
+      "witness": "no route reaches the per-edge action-to-phase gain; J shows it is not gauge either"
+    }
+  },
+  "cycle": 884,
+  "cycle871_note_present_on_this_branch": false,
+  "epsilon_gcd_over_Q": "1/1",
+  "exact_core_step_G0_minus_Ge1": "1/6",
+  "exact_scope": "One obligation's anatomy. The chart is declared on three patches (P_core, P_far, P_win) and the count is patch-uniform. Every forcing is proved on the pinned lattice and the pinned action form only. The two eliminations are statements about the LANDED regulated kernel, not about every possible core.",
+  "first_non_radial_invariant_degree": 4,
+  "honest_chart_dimension": 15,
+  "honest_chart_residual_free_dimension": 10,
+  "landed_chart_dimension": 13,
+  "landed_chart_residual_free_dimension": 8,
+  "load_bearing_negatives": [
+    "radial-only is NOT forced by cubic covariance (first admissible anisotropy at degree 4, unsuppressed at large r)",
+    "no value of epsilon makes the landed kernel harmonic: the GCD of the two mean-value conditions over Q is a unit",
+    "the landed chart under-counts by 2 coordinates"
+  ],
+  "load_bearing_positives": [
+    "p = 1 is FORCED in d = 3 from Lattice + Record alone, via alpha*I + gamma*Delta",
+    "the TOWARD orientation is FORCED by lattice Green-function positivity",
+    "the window's infinite taper freedom collapses to 2 boundaries by Record additivity"
+  ],
+  "outcome_class": "bounded_decomposition_with_two_forcings_and_one_elimination",
+  "question": "GB-S2, the Gate-B kernel + window obligation: what is its exact free dimension, which parts are kernel-shape, which are window, and which of them do the four axioms plus approved primitives force?",
+  "residual_free_by_block": {
+    "COUPLING": [
+      "g"
+    ],
+    "KERNEL_SHAPE": [
+      "c4",
+      "mu",
+      "sigma",
+      "theta"
+    ],
+    "WINDOW": [
+      "D",
+      "N",
+      "a",
+      "b",
+      "barrier"
+    ]
+  },
+  "route_outcomes": {
+    "R1_locality_window": "R1 proves two things and pins nothing. (1) Nearest-neighbour adjacency gives an influence cone whose L1 radius equals the depth exactly at every tested depth, so the ray b > D reads identically zero and is gauge, not free -- a BOUND b <= D, not a value. (2) Record's finite additive readout with I(empty)=0 collapses the window functional from an arbitrary taper profile (infinite-dimensional) to a sum over sites, i.e. a sharp indicator window with exactly two boundary coordinates. That pre-chart collapse is what makes the obligation finite-dimensional at all; inside the chart R1 pins 0 coordinates.",
+    "R2_covariance_kernel": "The 24 proper cubic rotations are rebuilt and their invariants computed. Covariance DOES force the nearest-neighbour stencil to the 2-dimensional family alpha*I + gamma*Delta (two orbits: the centre and the six face neighbours). Covariance does NOT force the kernel to be a function of r alone: the first non-radial invariant harmonic appears at degree 4, and because it sits at homogeneity degree 0 relative to r^4 it is NOT suppressed at large r. The landed kernel silently sets that coefficient to zero, so the honest chart carries one coordinate (c4) the landed chart did not. R2 pins 0 chart coordinates and ADDS 1.",
+    "R3_additivity_superposition": "YES: additivity over disjoint records DOES constrain the kernel's r-dependence, and decisively. Record additivity forces linear superposition (verified exactly); with translation invariance that is a convolution; with R1's finite range the field solves a finite-range difference equation; and R2's stencil result pins that operator to the 2-constant family alpha*I + gamma*Delta. The exact scaling identity w(G) = 2 - d then FORCES p = 1 in d = 3, in both the massless and the screened branch. What is NOT forced is the screening mass mu^2 = alpha/gamma: the landed kernel sets it to zero silently, so R3 pins 1 chart coordinate and adds 1.",
+    "R4_response_surface": "NO BOUND. The Cycle-868 primary on this branch is a no-go whose content is that the response surface CANNOT see the conformal-sector sign. Requiring its objects to stay well-defined is therefore vacuous for the window: a functional that is blind to a direction contributes an identically zero row to the forcing system and has rank contribution 0. The 868 lineage constrains the window block not at all. This is a ruled-out-by-prior route, pinned to the 868 primary; the 872 lineage named by the brief has no artifact on this branch and is not reconstructed from memory.",
+    "R5_epsilon_regulator": "epsilon is a SUPPLIED regulator and worse: it is INADMISSIBLE. The forced field is harmonic away from the source, so the landed radial ansatz A/(r+epsilon) must satisfy the discrete mean-value condition at every non-origin site. Building those conditions symbolically at (1,0,0) over Q(sqrt 2) and at (2,0,0) over Q(sqrt 5), rationalizing, and taking the polynomial GCD over Q returns a UNIT: no epsilon at all -- not the landed 1/10, not any other value -- satisfies both. The exact isolating intervals for the two single-site roots are disjoint, corroborating it. Separately, the lattice fixes the core with zero free parameters: Delta G(0) = -1 with the six neighbours in one rotation orbit gives G(0) - G(e1) = 1/6 exactly. So no landed identity forces epsilon's scaling; the forced object has no epsilon to scale. epsilon and its insertion exponent m leave the chart as inadmissible imports, not as forced or gauge coordinates."
+  },
+  "sharpest_missing_lemma": "GBW1_record_determined_window",
+  "sharpest_missing_lemma_statement": "the detector window (its boundaries, its readout depth, its barrier, and its normalization) is determined by record content rather than chosen by the runner",
+  "sharpest_missing_lemma_strength_vs_GB_S2": "STRICTLY WEAKER",
+  "source_pins": [
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "40b0b4cd552cc41b55e4f3c59f9cabf621b3296b",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5"
+    },
+    {
+      "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+      "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+    },
+    {
+      "git_blob": "d604bc5f180e87844f477d52f82376df61e0134e",
+      "path": "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py",
+      "sha256": "ac9ea8b6b7556ce8679d734e98a152bf3af7a9988d9f72f5722ad4c8f7ec9453"
+    },
+    {
+      "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+      "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+      "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+    },
+    {
+      "git_blob": "3e0ddcdbef379383835b7b05a4b783d29fa51742",
+      "path": "docs/RESPONSE_SURFACE_CONFORMAL_SIGN_CENSUS_CYCLE868_NARROW_NO_GO_NOTE_2026-07-28.md",
+      "sha256": "3b3726ba023d8a6821870306f224e8a6e56a2d645641680edc79b5e79fcffe4e"
+    },
+    {
+      "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
+      "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+      "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a"
+    },
+    {
+      "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+      "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+      "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c"
+    }
+  ],
+  "steelman": "The strongest case against this cycle is that the residual count is chart-dependent: a different parameterization of the same obligation could report a different integer. That is why the classification, not the integer, is the result -- p and the TOWARD orientation are forced in ANY chart, epsilon is inadmissible in ANY chart, and the window boundaries are free in ANY chart. The independent checker recounts by a different parameterization for exactly this reason.",
+  "theorems": [
+    "C884-T1 the landed kernel's rescaling stabilizer is exactly one-dimensional",
+    "C884-T2 Record additivity collapses the window from an arbitrary taper to a sharp indicator with 2 boundaries; b > D is gauge",
+    "C884-T3 cubic covariance forces the stencil to alpha*I + gamma*Delta (2 orbits) but does NOT force radial-only",
+    "C884-T4 additivity + locality + covariance force p = 1 in d = 3 in both the massless and the screened branch",
+    "C884-T5 no epsilon makes the landed kernel on-shell; the forced core has zero free parameters, G(0) - G(e1) = 1/6",
+    "C884-T6 the TOWARD orientation is forced by Green-function positivity"
+  ]
+}

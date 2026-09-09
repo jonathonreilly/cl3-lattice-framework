@@ -1,0 +1,855 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle900_harmonic_repair_independent_check_2026_07_28.py
+runner_sha256: ac5f42eff7120ea2edc51ca12897ab46e3903f1e00fc8601db664c649feae433
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 15.038
+status: ok
+----- stdout -----
+CYCLE 900 INDEPENDENT CHECK -- REFUTATION ATTEMPT ON THE HARMONIC REPAIR
+
+[SURVIVES] A_PINS
+    finding: 6 pins hashed; all match; the primary's receipt carries every key this check attacks.
+
+[SURVIVES] B_INDEPENDENT_CORE
+    finding: Two routes the primary never uses -- an exact rational torus pseudo-inverse and the Fourier moment algebra -- rebuild the core and agree with it: the normalization is (L^3-1)/(6L^3) on every torus, exactly, converging to 1/6; the relation table matches row for row; the anisotropy has the same sign; and every gauge-invariant shape ratio still separates from the landed kernel.
+
+[SURVIVES] C_HARMONICITY_ATTACK
+    finding: On the independent torus route the core's Laplacian equals its declared defect 1/L^3 at all 119 interior classes, exactly; the landed kernel is certifiably off-shell at every site tested.
+
+[SURVIVES] D_MU_ZERO_ATTACK
+    finding: The screened lattice problem was actually solved at 4 nonzero screening masses.  The identity step = (1 - mu^2 G0)/6 holds exactly at every one, and no screened row reaches 1/6.  The primary's negative stands.
+
+[SURVIVES] E_SCREENED_EPSILON_ATTACK
+    finding: Independently, on axis sites [[1, 7], [2, 4], [4, 6]] and with a different elimination order, the screened GCD over Q is again a unit; the massless conditions at (3,0,0) and (4,0,0) -- sites 884 and the primary both left alone -- also have a unit GCD, and epsilon = 1/10 is a root of none of them.  The elimination is not an artifact of the two sites 884 chose.
+
+[REFUTED/NARROWED] F_CENSUS_ATTACK
+    finding: Broader needles reach 496 files against the primary's 311; 186 files were missed, of which 16 are on the Gate-B lane.  NARROWING: 16 Gate-B-lane consumers are absent from the primary's receipt.
+
+[SURVIVES] G_DELTA_RECOMPUTE
+    finding: 5 rows adjudicated on this check's own evidence with 0 disagreements; the table's vocabulary is legal, every break names an obstruction, all 15 chart rows are present, and no untouched coordinate (sigma, theta, the five window coordinates, g) is credited.
+
+[SURVIVES] H_PATCH_AND_RESIDUAL_ATTACK
+    finding: The residual arithmetic recomputed straight off the pinned 884 receipt: chart 15 -> 13, residual 10 -> 9, kernel-shape 4 -> 3, with mu retained.  The primary matches, its patch list is complete and contains no unchanged row, and the verdict follows its declared rule.
+
+[SURVIVES] I_TEETH
+    finding: 8/8 teeth bit: a tampered pin, a dropped consumer row, a hardcoded delta, a leaked verdict, a broken core, a relabelled planted falsifier, an mu-overcrediting residual, and a tampered normalization are each caught by the gate that is supposed to catch them.
+
+{
+  "A_PINS": {
+    "all_pins_match": true,
+    "c884_receipt_readable": true,
+    "finding": "6 pins hashed; all match; the primary's receipt carries every key this check attacks.",
+    "pass": true,
+    "primary_receipt_carries_every_attacked_key": true,
+    "primary_receipt_missing_keys": [],
+    "rows": [
+      {
+        "bytes": 98281,
+        "git_blob": "0a644be1f4308ca088f70f536aabc443b8407df7",
+        "match": true,
+        "path": "scripts/frontier_cycle900_harmonic_repair_2026_07_28.py",
+        "pinned_by_value": false,
+        "sha256": "2f1ef276ad9d66481a3573617b3eaba084a26a22a0004569bbbf4e37585fceda"
+      },
+      {
+        "bytes": 39810,
+        "git_blob": "5676976c0dcab38e6f66a1cf196b3b5c4b43dd77",
+        "match": true,
+        "path": "outputs/harmonic_repair_cycle900_receipt_2026_07_28.json",
+        "pinned_by_value": false,
+        "sha256": "cc8430a295cbe6fd8919162d020875824506ce1d495747d03636378efc314016"
+      },
+      {
+        "bytes": 89249,
+        "git_blob": "7b244a7ce3a4d61589bea0f222cca5d847ab0200",
+        "match": true,
+        "path": "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+        "pinned_by_value": true,
+        "sha256": "685973be36ac89a9632d8ac4113a6e49e9db32e98c9977ec5965a3bb6bff6aeb"
+      },
+      {
+        "bytes": 11811,
+        "git_blob": "5a3c9db3ff688f26a70cc9b82aed53ec0ff41bb8",
+        "match": true,
+        "path": "logs/runner-cache/gbs2_kernel_window_cycle884_receipt_2026_07_28.json",
+        "pinned_by_value": true,
+        "sha256": "5d5c669ebc7c58613892425745b09c35eb94dc216e8c38fe0f161e4f53541f98"
+      },
+      {
+        "bytes": 4679,
+        "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+        "match": true,
+        "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+        "pinned_by_value": true,
+        "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+      },
+      {
+        "bytes": 28116,
+        "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+        "match": true,
+        "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+        "pinned_by_value": true,
+        "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+      }
+    ]
+  },
+  "B_INDEPENDENT_CORE": {
+    "agreement": {
+      "anisotropy_rows": [
+        {
+          "G300_minus_G221": "12130/3369093",
+          "L": 7,
+          "decimal": "0.003600375531",
+          "positive": true
+        },
+        {
+          "G300_minus_G221": "2946074012/1502625151719",
+          "L": 9,
+          "decimal": "0.001960618061",
+          "positive": true
+        },
+        {
+          "G300_minus_G221": "1157344163905229775700/728987430014653148855241",
+          "L": 11,
+          "decimal": "0.001587605103",
+          "positive": true
+        },
+        {
+          "G300_minus_G221": "2446536217324846975077883576151743/1662624931075556093666461832591570565",
+          "L": 13,
+          "decimal": "0.001471490155",
+          "positive": true
+        },
+        {
+          "G300_minus_G221": "8980842148129070730230007087750014571095056102727319793/6291950007998962294044250210757343590336162137505154333150",
+          "L": 15,
+          "decimal": "0.001427354340",
+          "positive": true
+        },
+        {
+          "G300_minus_G221": "39181515511919167537419587199376607565512117255158364726832756343640/27826321914179560780923074687950041398198193209531273630817762174889437",
+          "L": 17,
+          "decimal": "0.001408073824",
+          "positive": true
+        }
+      ],
+      "anisotropy_sign_agrees": true,
+      "independent_normalization_limit": "1/6",
+      "normalization_agrees": true,
+      "primary_normalization": "1/6",
+      "shape_ratio_rows": [
+        {
+          "core_ratio_torus_L17": "0.408573969525",
+          "denominator_class": [
+            1,
+            0,
+            0
+          ],
+          "landed_ratio": "0.523809523810",
+          "numerator_class": [
+            2,
+            0,
+            0
+          ],
+          "separated_on_the_independent_route": true
+        },
+        {
+          "core_ratio_torus_L17": "0.200355714728",
+          "denominator_class": [
+            1,
+            0,
+            0
+          ],
+          "landed_ratio": "0.354838709677",
+          "numerator_class": [
+            3,
+            0,
+            0
+          ],
+          "separated_on_the_independent_route": true
+        },
+        {
+          "core_ratio_torus_L17": "0.576530300089",
+          "denominator_class": [
+            1,
+            0,
+            0
+          ],
+          "landed_ratio": "0.726449707844",
+          "numerator_class": [
+            1,
+            1,
+            0
+          ],
+          "separated_on_the_independent_route": true
+        },
+        {
+          "core_ratio_torus_L17": "0.417517602189",
+          "denominator_class": [
+            1,
+            0,
+            0
+          ],
+          "landed_ratio": "0.600420029540",
+          "numerator_class": [
+            1,
+            1,
+            1
+          ],
+          "separated_on_the_independent_route": true
+        },
+        {
+          "core_ratio_torus_L17": "0.903497558956",
+          "denominator_class": [
+            3,
+            0,
+            0
+          ],
+          "landed_ratio": "1.000000000000",
+          "numerator_class": [
+            2,
+            2,
+            1
+          ],
+          "separated_on_the_independent_route": true
+        }
+      ],
+      "shape_ratios_still_separate_on_the_independent_route": true
+    },
+    "finding": "Two routes the primary never uses -- an exact rational torus pseudo-inverse and the Fourier moment algebra -- rebuild the core and agree with it: the normalization is (L^3-1)/(6L^3) on every torus, exactly, converging to 1/6; the relation table matches row for row; the anisotropy has the same sign; and every gauge-invariant shape ratio still separates from the landed kernel.",
+    "pass": true,
+    "route_F_fourier": {
+      "derivation": "multiply the moment by the symbol and use cos(k.v)cos(k_j) = (1/2)[cos(k.(v+e_j)) + cos(k.(v-e_j))]",
+      "relation_count": 35,
+      "relation_tables_agree": true,
+      "relations_missing_that_the_primary_certifies": [],
+      "relations_the_fourier_route_adds": [],
+      "representation": "G(x) = (1/2) <cos(k.x) / (3 - sum_j cos k_j)>",
+      "sample_relations": [
+        "-6*G[0, 0, 0] + 6*G[1, 0, 0] = -1",
+        "1*G[0, 0, 0] + -6*G[1, 0, 0] + 4*G[1, 1, 0] + 1*G[2, 0, 0] = 0",
+        "2*G[1, 0, 0] + -6*G[1, 1, 0] + 2*G[1, 1, 1] + 2*G[2, 1, 0] = 0",
+        "3*G[1, 1, 0] + -6*G[1, 1, 1] + 3*G[2, 1, 1] = 0",
+        "1*G[1, 0, 0] + -6*G[2, 0, 0] + 4*G[2, 1, 0] + 1*G[3, 0, 0] = 0",
+        "1*G[1, 1, 0] + 1*G[2, 0, 0] + -6*G[2, 1, 0] + 2*G[2, 1, 1] + 1*G[2, 2, 0] + 1*G[3, 1, 0] = 0"
+      ]
+    },
+    "route_T_torus": {
+      "defect_rows": [
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "-4912/4913",
+          "site": [
+            0,
+            0,
+            0
+          ],
+          "torus_laplacian": "-4912/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            1,
+            0,
+            0
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            1,
+            1,
+            0
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            1,
+            1,
+            1
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            2,
+            0,
+            0
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            2,
+            1,
+            0
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            2,
+            1,
+            1
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            2,
+            2,
+            0
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            2,
+            2,
+            1
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            2,
+            2,
+            2
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            3,
+            0,
+            0
+          ],
+          "torus_laplacian": "1/4913"
+        },
+        {
+          "exact": true,
+          "expected_-delta_plus_1_over_L3": "1/4913",
+          "site": [
+            3,
+            1,
+            0
+          ],
+          "torus_laplacian": "1/4913"
+        }
+      ],
+      "every_relation_holds_on_the_torus_with_the_exact_defect": true,
+      "every_torus_step_matches_its_exact_defect_formula": true,
+      "largest_L_distance_from_one_sixth_is_exactly_1_over_6L3": true,
+      "normalization_rows": [
+        {
+          "G0_minus_Ge1_exact": "62/375",
+          "L": 5,
+          "distance_from_one_sixth": "1/750",
+          "matches_prediction": true,
+          "predicted_torus_value_(L^3-1)/(6L^3)": "62/375",
+          "unknowns": 10
+        },
+        {
+          "G0_minus_Ge1_exact": "57/343",
+          "L": 7,
+          "distance_from_one_sixth": "1/2058",
+          "matches_prediction": true,
+          "predicted_torus_value_(L^3-1)/(6L^3)": "57/343",
+          "unknowns": 20
+        },
+        {
+          "G0_minus_Ge1_exact": "364/2187",
+          "L": 9,
+          "distance_from_one_sixth": "1/4374",
+          "matches_prediction": true,
+          "predicted_torus_value_(L^3-1)/(6L^3)": "364/2187",
+          "unknowns": 35
+        },
+        {
+          "G0_minus_Ge1_exact": "665/3993",
+          "L": 11,
+          "distance_from_one_sixth": "1/7986",
+          "matches_prediction": true,
+          "predicted_torus_value_(L^3-1)/(6L^3)": "665/3993",
+          "unknowns": 56
+        },
+        {
+          "G0_minus_Ge1_exact": "366/2197",
+          "L": 13,
+          "distance_from_one_sixth": "1/13182",
+          "matches_prediction": true,
+          "predicted_torus_value_(L^3-1)/(6L^3)": "366/2197",
+          "unknowns": 84
+        },
+        {
+          "G0_minus_Ge1_exact": "1687/10125",
+          "L": 15,
+          "distance_from_one_sixth": "1/20250",
+          "matches_prediction": true,
+          "predicted_torus_value_(L^3-1)/(6L^3)": "1687/10125",
+          "unknowns": 120
+        },
+        {
+          "G0_minus_Ge1_exact": "2456/14739",
+          "L": 17,
+          "distance_from_one_sixth": "1/29478",
+          "matches_prediction": true,
+          "predicted_torus_value_(L^3-1)/(6L^3)": "2456/14739",
+          "unknowns": 165
+        }
+      ],
+      "sizes": [
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17
+      ]
+    }
+  },
+  "C_HARMONICITY_ATTACK": {
+    "core_defect_is_exactly_1_over_L3_everywhere": true,
+    "finding": "On the independent torus route the core's Laplacian equals its declared defect 1/L^3 at all 119 interior classes, exactly; the landed kernel is certifiably off-shell at every site tested.",
+    "interior_classes_tested": 119,
+    "landed_kernel_certifiably_off_shell_everywhere_tested": true,
+    "landed_kernel_rows": [
+      {
+        "certified_nonzero": true,
+        "decimal": "7.663280322897",
+        "enclosure": [
+          "2448460756049376271498639857628135004528898861857950/319505571097732881181481619191683044156064193188141",
+          "362734926822129817999798700499405133152440401423100/47334158681145612026886156898334790372083158587437"
+        ],
+        "site": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "decimal": "-0.196458882775",
+        "enclosure": [
+          "-311603162048551595597500175744959630553616906619115008976794223866297503125928392201311117062963200/1586098615892853943544198645361249184848553222535065368838341389921775179802866711469666036260899161",
+          "-193314070842585941062650022576436066758655759910130749187189887973443684500/983992518497820210833615195768598560670121370812895775618275283361327446037"
+        ],
+        "site": [
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "decimal": "-0.117085818870",
+        "enclosure": [
+          "-11430657227861714189620475255964132061480585058479937896822526718246912000/97626316647083844194049800231506644528163347212950067948447528615458907477",
+          "-91445257822893713516961465378351968732309158712126551765642610131913932800/781010533176670753552398074435588609743430455468570679066114630832218402531"
+        ],
+        "site": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "decimal": "0.086807636989",
+        "enclosure": [
+          "178177783277309673531250749690128964306338759034465389225756527485245215300/2052558846867642670601930090482635801264762341848664572684984759086793351989",
+          "171157015642837501933196090826400671402556033267100/1971681543003614857415732334842204288818373468971579"
+        ],
+        "site": [
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "decimal": "0.000666131655",
+        "enclosure": [
+          "183708204698394503557774620577598653902581100307700538683801974015652149995503452887076768047922488247289966850115459638463883931425923283497779200/275783628342804083391052119457686368043932827436624434631235068514277674069125310689522950209620323699227343347352787158769002916245823785483765134457",
+          "405226307449159899119840614161226790621568999667801043082318131580007871635000675118366851410675994598166069515773150894850/608327654999192549988082307328694897715881282214861340887198699482294045927842196743474809383833747087454112459224625397551697"
+        ],
+        "site": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "decimal": "-0.008348684193",
+        "enclosure": [
+          "-35319516898027053299942554554434122079836269065184873947720370310338797439602260606233505487456620900/4230548920394313318531647160677335526066523053566469803725916247429036770961502527065141697109730592201",
+          "-333583405580782034506558861084203750849517930346631784487645591721853810843684007559823933614957207989737714720293938790400/39956404851620936117535437947422243570180802883990855347744505828297386313438423084970973483604350212991950632248186181066907"
+        ],
+        "site": [
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "certified_nonzero": true,
+        "decimal": "0.010746245516",
+        "enclosure": [
+          "8332969983778586590869588549341213785730024546134594335515236769272060100/775430821077886508357864255680881257149048688373114530918551107871259561439",
+          "83386929827358788157127102829317694940416323094900/7759633790721094374745087173152766034092585986831979"
+        ],
+        "site": [
+          3,
+          0,
+          0
+        ]
+      }
+    ],
+    "pass": true,
+    "route": "exact rational torus solve, independent of the cube",
+    "violations": []
+  },
+  "D_MU_ZERO_ATTACK": {
+    "claim_survives": true,
+    "consequence_if_it_survives": "884's 'zero-parameter core with G(0) - G(e1) = 1/6' is the massless slice, so the repair PRESUPPOSES mu = 0.  This check confirms the primary's negative against its own repair.",
+    "finding": "The screened lattice problem was actually solved at 4 nonzero screening masses.  The identity step = (1 - mu^2 G0)/6 holds exactly at every one, and no screened row reaches 1/6.  The primary's negative stands.",
+    "identity_verified_exactly_at_every_mu": true,
+    "massless_step_on_this_torus": "665/3993",
+    "method": "solve the SCREENED lattice problem (Delta - mu^2) G = -delta exactly on the torus at several rational mu^2 and read the step off, rather than trusting the primary's algebra",
+    "pass": true,
+    "primary_claim": true,
+    "rows": [
+      {
+        "G0_exact": "169300034354790922882852/728987430014653148855241",
+        "identity_holds_exactly": true,
+        "mu_squared": "0/1",
+        "predicted_(1 - mu2*G0)/6": "665/3993",
+        "step_G0_minus_Ge1_exact": "665/3993",
+        "step_equals_one_sixth": false
+      },
+      {
+        "G0_exact": "7048783665252370279741860350506526240327399871572842460734336883507997624499232643620281928161467391548446064900349833752051681842102071241348700/23026457192741747845118778944992713015032439939228676101176504869229689117140327216173770725647200710996210916380365947248963193209026599883285687",
+        "identity_holds_exactly": true,
+        "mu_squared": "1/100",
+        "predicted_(1 - mu2*G0)/6": "3825994892681537357053560056914607958771527656752157946094860250065768190149222481622927984394264339513454409288560408151907112731767596528478700/23026457192741747845118778944992713015032439939228676101176504869229689117140327216173770725647200710996210916380365947248963193209026599883285687",
+        "step_G0_minus_Ge1_exact": "3825994892681537357053560056914607958771527656752157946094860250065768190149222481622927984394264339513454409288560408151907112731767596528478700/23026457192741747845118778944992713015032439939228676101176504869229689117140327216173770725647200710996210916380365947248963193209026599883285687",
+        "step_equals_one_sixth": false
+      },
+      {
+        "G0_exact": "41092286962022684604693090937426860976494269398968856246526984356/194405267656629544556588011826633222569832091554358611171734357921",
+        "identity_holds_exactly": true,
+        "mu_squared": "1/4",
+        "predicted_(1 - mu2*G0)/6": "30688699319353978900902456515379417887618087367436066185017101972/194405267656629544556588011826633222569832091554358611171734357921",
+        "step_G0_minus_Ge1_exact": "30688699319353978900902456515379417887618087367436066185017101972/194405267656629544556588011826633222569832091554358611171734357921",
+        "step_equals_one_sixth": false
+      },
+      {
+        "G0_exact": "795918307168859425845755501308806073039/4667459528372005513044327500072755642837",
+        "identity_holds_exactly": true,
+        "mu_squared": "1/1",
+        "predicted_(1 - mu2*G0)/6": "645256870200524347866428666460658261633/4667459528372005513044327500072755642837",
+        "step_G0_minus_Ge1_exact": "645256870200524347866428666460658261633/4667459528372005513044327500072755642837",
+        "step_equals_one_sixth": false
+      },
+      {
+        "G0_exact": "49774881606170521229428078504469558143449862661/464547418951652251218323983198084385751729480956",
+        "identity_holds_exactly": true,
+        "mu_squared": "4/1",
+        "predicted_(1 - mu2*G0)/6": "11060328855290423595858819549175256382413751263/116136854737913062804580995799521096437932370239",
+        "step_G0_minus_Ge1_exact": "11060328855290423595858819549175256382413751263/116136854737913062804580995799521096437932370239",
+        "step_equals_one_sixth": false
+      }
+    ],
+    "screened_rows_never_reach_one_sixth": true,
+    "torus_size": 11
+  },
+  "E_SCREENED_EPSILON_ATTACK": {
+    "agrees_with_the_primary": true,
+    "finding": "Independently, on axis sites [[1, 7], [2, 4], [4, 6]] and with a different elimination order, the screened GCD over Q is again a unit; the massless conditions at (3,0,0) and (4,0,0) -- sites 884 and the primary both left alone -- also have a unit GCD, and epsilon = 1/10 is a root of none of them.  The elimination is not an artifact of the two sites 884 chose.",
+    "landed_epsilon_is_a_root_of_any_massless_condition": false,
+    "landed_epsilon_is_a_root_of_any_pair_difference": false,
+    "massless_gcd_degree": 0,
+    "massless_gcd_is_a_unit": true,
+    "massless_sites": [
+      {
+        "degree": 20,
+        "site": [
+          3,
+          0,
+          0
+        ]
+      },
+      {
+        "degree": 10,
+        "site": [
+          4,
+          0,
+          0
+        ]
+      }
+    ],
+    "method": "eliminate mu^2 between DIFFERENT axis sites in a DIFFERENT order than the primary, and separately redo the MASSLESS elimination at two sites the primary never touched",
+    "pass": true,
+    "primary_reported_gcd": "1/1",
+    "screened_gcd_degree": 0,
+    "screened_gcd_is_a_unit": true,
+    "screened_pairs": [
+      {
+        "axis_sites": [
+          1,
+          7
+        ],
+        "degree": 22,
+        "field_primes": [
+          2
+        ]
+      },
+      {
+        "axis_sites": [
+          2,
+          4
+        ],
+        "degree": 43,
+        "field_primes": [
+          5,
+          17
+        ]
+      },
+      {
+        "axis_sites": [
+          4,
+          6
+        ],
+        "degree": 43,
+        "field_primes": [
+          17,
+          37
+        ]
+      }
+    ]
+  },
+  "F_CENSUS_ATTACK": {
+    "broad_family_patterns": [
+      "B1_multiline_euclidean_plus_tenth",
+      "B2_any_inverse_regulated_radius",
+      "B3_phi_GB_symbol",
+      "B4_named_regulator_constant",
+      "B5_screened_mass_constant",
+      "B6_graph_laplacian_green_phrase"
+    ],
+    "broad_hits": 496,
+    "census_is_complete_on_the_gate_b_lane": false,
+    "files_swept": 14191,
+    "files_the_primary_needles_missed": 186,
+    "finding": "Broader needles reach 496 files against the primary's 311; 186 files were missed, of which 16 are on the Gate-B lane.  NARROWING: 16 Gate-B-lane consumers are absent from the primary's receipt.",
+    "gate_b_lane_files_missed": [
+      "docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "docs/audit/data/ledger/ga/gate_b_context_independence_no_go_note_2026-06-17.json",
+      "docs/audit/data/ledger/ga/gate_b_dynamics_note.json",
+      "scripts/gate_b_farfield_harness.py",
+      "scripts/gate_b_grown_distance_law.py",
+      "scripts/gate_b_grown_propagating_field_probe.py",
+      "scripts/gate_b_grown_propagating_field_radical.py",
+      "scripts/gate_b_grown_propagating_field_v2.py",
+      "scripts/gate_b_grown_propagating_field_v3.py",
+      "scripts/gate_b_grown_trapping_frontier_probe.py",
+      "scripts/gate_b_grown_trapping_frontier_v2.py",
+      "scripts/gate_b_grown_trapping_frontier_v3.py",
+      "scripts/gate_b_grown_trapping_transport_probe.py",
+      "scripts/gate_b_h025_distance_law.py",
+      "scripts/gate_b_h025_farfield.py",
+      "scripts/gate_b_no_restore_farfield.py"
+    ],
+    "gate_b_lane_gap_vs_the_primary_receipt": [
+      "docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "docs/audit/data/ledger/ga/gate_b_context_independence_no_go_note_2026-06-17.json",
+      "docs/audit/data/ledger/ga/gate_b_dynamics_note.json",
+      "scripts/gate_b_farfield_harness.py",
+      "scripts/gate_b_grown_distance_law.py",
+      "scripts/gate_b_grown_propagating_field_probe.py",
+      "scripts/gate_b_grown_propagating_field_radical.py",
+      "scripts/gate_b_grown_propagating_field_v2.py",
+      "scripts/gate_b_grown_propagating_field_v3.py",
+      "scripts/gate_b_grown_trapping_frontier_probe.py",
+      "scripts/gate_b_grown_trapping_frontier_v2.py",
+      "scripts/gate_b_grown_trapping_frontier_v3.py",
+      "scripts/gate_b_grown_trapping_transport_probe.py",
+      "scripts/gate_b_h025_distance_law.py",
+      "scripts/gate_b_h025_farfield.py",
+      "scripts/gate_b_no_restore_farfield.py"
+    ],
+    "impact_on_the_verdict": "NONE either way: every missed file is an F1-family consumer (regulated Euclidean distance), and the F1 family's verdict is CHANGES-not-BREAKS.  A census gap narrows the primary's BREADTH claim, not its repair verdict.",
+    "method": "re-sweep with strictly broader needles -- notably a MULTI-LINE tolerant version of the Euclidean-plus-0.1 pattern, since the landed kernel is frequently written across three source lines",
+    "narrow_hits": 311,
+    "pass": false,
+    "primary_reported_distinct_files": 311
+  },
+  "G_DELTA_RECOMPUTE": {
+    "adjudicated_rows": [
+      {
+        "agree": true,
+        "independent_status": "BREAKS",
+        "primary_status": "BREAKS",
+        "row": "GB-S1b-a"
+      },
+      {
+        "agree": true,
+        "independent_status": "BREAKS",
+        "primary_status": "BREAKS",
+        "row": "F3 screened"
+      },
+      {
+        "agree": true,
+        "independent_status": "BREAKS",
+        "primary_status": "BREAKS",
+        "row": "P1"
+      },
+      {
+        "agree": true,
+        "independent_status": "BREAKS",
+        "primary_status": "BREAKS",
+        "row": "P2"
+      },
+      {
+        "agree": true,
+        "independent_status": "SURVIVES-UNCHANGED",
+        "primary_status": "SURVIVES-UNCHANGED",
+        "row": "P3"
+      }
+    ],
+    "chart_rows_complete_15_of_15": true,
+    "disagreements": [],
+    "every_break_names_an_obstruction": true,
+    "every_row_carries_a_delta": true,
+    "finding": "5 rows adjudicated on this check's own evidence with 0 disagreements; the table's vocabulary is legal, every break names an obstruction, all 15 chart rows are present, and no untouched coordinate (sigma, theta, the five window coordinates, g) is credited.",
+    "independently_established_facts": {
+      "core_is_finite_at_the_origin": true,
+      "core_is_not_radial": true,
+      "core_is_positive": true,
+      "no_epsilon_even_screened": true,
+      "one_sixth_is_mu_zero": true
+    },
+    "pass": true,
+    "planted_rows_present": true,
+    "rows_that_overclaim_on_untouched_coordinates": [],
+    "status_vocabulary_is_legal": true
+  },
+  "H_PATCH_AND_RESIDUAL_ATTACK": {
+    "checks": {
+      "c4_is_the_only_residual_coordinate_removed": true,
+      "chart_after_is_correct": true,
+      "chart_before_matches_884": true,
+      "coupling_block_untouched": true,
+      "cycle896_not_fabricated": true,
+      "does_not_overcredit_mu": true,
+      "epsilon_and_m_are_the_chart_coordinates_removed": true,
+      "kernel_shape_after_is_correct": true,
+      "mu_is_still_in_the_kernel_shape_block": true,
+      "patch_list_contains_no_unchanged_row": true,
+      "patch_list_is_complete": true,
+      "residual_after_is_correct": true,
+      "residual_before_matches_884": true,
+      "verdict_follows_the_declared_rule": true,
+      "window_block_untouched": true
+    },
+    "finding": "The residual arithmetic recomputed straight off the pinned 884 receipt: chart 15 -> 13, residual 10 -> 9, kernel-shape 4 -> 3, with mu retained.  The primary matches, its patch list is complete and contains no unchanged row, and the verdict follows its declared rule.",
+    "independent_recomputation": {
+      "chart_dimension_after": 13,
+      "kernel_shape_block_after": [
+        "mu",
+        "sigma",
+        "theta"
+      ],
+      "residual_free_after": 9
+    },
+    "missing_patch_rows": [],
+    "pass": true,
+    "primary_values": {
+      "chart_dimension_after": 13,
+      "kernel_shape_block_after": [
+        "mu",
+        "sigma",
+        "theta"
+      ],
+      "residual_free_after": 9
+    },
+    "stray_patch_rows": [],
+    "verdict_reported": "REPAIR-VIABLE"
+  },
+  "I_TEETH": {
+    "all_teeth_bit": true,
+    "finding": "8/8 teeth bit: a tampered pin, a dropped consumer row, a hardcoded delta, a leaked verdict, a broken core, a relabelled planted falsifier, an mu-overcrediting residual, and a tampered normalization are each caught by the gate that is supposed to catch them.",
+    "pass": true,
+    "teeth": [
+      {
+        "gate_bit": true,
+        "tampering": "flip one byte of the pinned 884 primary",
+        "tooth": "T1_tampered_pin"
+      },
+      {
+        "gate_bit": true,
+        "tampering": "delete the P1 planted row from the delta table",
+        "tooth": "T2_dropped_consumer"
+      },
+      {
+        "gate_bit": true,
+        "tampering": "hardcode the equal-radius separator to 0",
+        "tooth": "T3_hardcoded_delta"
+      },
+      {
+        "gate_bit": true,
+        "tampering": "assert REPAIR-VIABLE while carrying an unrepairable obstruction",
+        "tooth": "T4_leaked_verdict"
+      },
+      {
+        "gate_bit": true,
+        "tampering": "perturb G[(1,1,0)] by 1/1000 and re-run the harmonicity gate",
+        "tooth": "T5_broken_core_blindness"
+      },
+      {
+        "gate_bit": true,
+        "tampering": "relabel the planted radial-only consumer as SURVIVING",
+        "tooth": "T6_planted_breakage_blindness"
+      },
+      {
+        "gate_bit": true,
+        "tampering": "credit mu as discharged: residual 10 -> 8, kernel-shape 4 -> 2",
+        "tooth": "T7_tampered_residual_arithmetic"
+      },
+      {
+        "gate_bit": true,
+        "tampering": "claim G(0) - G(e1) = 1/5",
+        "tooth": "T8_tampered_normalization"
+      }
+    ],
+    "teeth_that_bit": 8,
+    "tooth_count": 8
+  }
+}
+
+CHECK VERDICT: PRIMARY NARROWED  claims 6/7 survive  teeth 8/8 bit
+REFUTED/NARROWED: census_complete_on_the_gate_b_lane
+controls: deterministic=True runtime=14.995803s stdout=32269B

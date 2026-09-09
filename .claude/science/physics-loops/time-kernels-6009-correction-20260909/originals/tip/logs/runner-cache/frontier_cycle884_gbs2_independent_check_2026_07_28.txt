@@ -1,0 +1,572 @@
+CYCLE 884 INDEPENDENT CHECK -- SPECIFIED TO REFUTE THE GB-S2 DECOMPOSITION
+
+[PASS] A_PINS
+    finding: All 5 artifacts matched their SHA-256 and git-blob pins, the axiom needles resolved, and all 4/4 primary claim strings were recovered from the primary's own AST without importing it.
+
+[PASS] B_INDEPENDENT_COUNT
+    finding: By a different parameterization the residual is 27, against the primary's 10. The gap is structural, not arithmetic: the primary parameterized the angular profile by ONE coefficient when the invariant harmonics keep appearing (first at degree 4, 7 independent ones up to degree 12), and parameterized the window as an annulus (2 numbers) when the covariance-respecting window family is orbit-indexed (16 orbits inside |x|^2 <= 16). The primary's residual is therefore a LOWER BOUND, and the obligation is larger than either the primary or the brief's 8 reports. The forcings themselves are untouched by this: every invariant stencil has an isotropic quadratic symbol (True), so p = d - 2 survives the wider operator family.
+
+[PASS] C_ADVERSARIAL_FORCING_HUNT
+    finding: 6 candidate forcings the primary did not run were attempted; 0 moved a coordinate out of the primary's FREE column, so the free column survives. One genuine NARROWING was found that the primary missed: the axioms' privilege clauses force the central barrier to be record-carried configuration rather than a rule, which the primary did not qualify.
+
+[PASS] D_WRONG_FORCING_STRESS
+    finding: 7/7 stress tests confirm that the primary's claimed forcings FAIL on their deliberately perturbed variants, which is what makes them forcings rather than artifacts. Refuted: none.
+
+[PASS] E_PRIMARY_RECHECK
+    finding: 3/4 of the primary's headline claims reproduce under independent recomputation. The disagreement is confined to the residual COUNT, which is parameterization dependent: the checker's own count is 27 against the primary's 10, so the primary's number stands only as a LOWER BOUND. Every forcing, every elimination, and the gauge direction reproduce exactly.
+
+[PASS] F_VERDICT
+    finding: The primary's forcings all survive adversarial stress; its residual NUMBER does not survive an independent parameterization and is demoted to a lower bound. One narrowing the primary missed was found on the barrier coordinate.
+
+{
+  "A_PINS": {
+    "axiom_needles_present": {
+      "count_once": true,
+      "finite_additive_readout": true,
+      "law_privileges_no_states": true,
+      "nearest_neighbor_adjacency": true,
+      "no_site_privileged": true
+    },
+    "finding": "All 5 artifacts matched their SHA-256 and git-blob pins, the axiom needles resolved, and all 4/4 primary claim strings were recovered from the primary's own AST without importing it.",
+    "pass": true,
+    "primary_claim_needles_present": {
+      "chart_undercount": true,
+      "epsilon_eliminated": true,
+      "p_forced": true,
+      "toward_forced": true
+    },
+    "primary_read_as": "text and AST only; import blocked by the firewall",
+    "primary_receipt_cycle": 884,
+    "primary_receipt_readable": true,
+    "rows": [
+      {
+        "bytes": 8846,
+        "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+        "git_blob_matches_pin": true,
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 4679,
+        "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+        "git_blob_matches_pin": true,
+        "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+        "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 28116,
+        "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+        "git_blob_matches_pin": true,
+        "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+        "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 89249,
+        "git_blob": "7b244a7ce3a4d61589bea0f222cca5d847ab0200",
+        "git_blob_matches_pin": true,
+        "path": "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+        "sha256": "685973be36ac89a9632d8ac4113a6e49e9db32e98c9977ec5965a3bb6bff6aeb",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 11811,
+        "git_blob": "5a3c9db3ff688f26a70cc9b82aed53ec0ff41bb8",
+        "git_blob_matches_pin": true,
+        "path": "logs/runner-cache/gbs2_kernel_window_cycle884_receipt_2026_07_28.json",
+        "sha256": "5d5c669ebc7c58613892425745b09c35eb94dc216e8c38fe0f161e4f53541f98",
+        "sha256_matches_pin": true
+      }
+    ]
+  },
+  "B_INDEPENDENT_COUNT": {
+    "axiom_text_says_nearest_neighbor_adjacency": true,
+    "checker_residual_components": {
+      "angular_coefficients_free_up_to_degree_12": 7,
+      "normalization_free": 1,
+      "operator_constants_after_covariance": 2,
+      "operator_constants_forced_away": 1,
+      "operator_constants_left_free": 1,
+      "phase_and_calibration_free": 2,
+      "window_parameters_as_orbit_indicators": 16
+    },
+    "checker_residual_total": 27,
+    "counts_agree": false,
+    "every_invariant_stencil_has_an_isotropic_quadratic_symbol": true,
+    "finding": "By a different parameterization the residual is 27, against the primary's 10. The gap is structural, not arithmetic: the primary parameterized the angular profile by ONE coefficient when the invariant harmonics keep appearing (first at degree 4, 7 independent ones up to degree 12), and parameterized the window as an annulus (2 numbers) when the covariance-respecting window family is orbit-indexed (16 orbits inside |x|^2 <= 16). The primary's residual is therefore a LOWER BOUND, and the obligation is larger than either the primary or the brief's 8 reports. The forcings themselves are untouched by this: every invariant stencil has an isotropic quadratic symbol (True), so p = d - 2 survives the wider operator family.",
+    "first_anisotropic_degree": 4,
+    "free_angular_coefficients_up_to_degree_12": 7,
+    "harmonic_invariant_rows": [
+      {
+        "cumulative": 1,
+        "degree": 0,
+        "harmonic_invariant_dim": 1
+      },
+      {
+        "cumulative": 1,
+        "degree": 1,
+        "harmonic_invariant_dim": 0
+      },
+      {
+        "cumulative": 1,
+        "degree": 2,
+        "harmonic_invariant_dim": 0
+      },
+      {
+        "cumulative": 1,
+        "degree": 3,
+        "harmonic_invariant_dim": 0
+      },
+      {
+        "cumulative": 2,
+        "degree": 4,
+        "harmonic_invariant_dim": 1
+      },
+      {
+        "cumulative": 2,
+        "degree": 5,
+        "harmonic_invariant_dim": 0
+      },
+      {
+        "cumulative": 3,
+        "degree": 6,
+        "harmonic_invariant_dim": 1
+      },
+      {
+        "cumulative": 3,
+        "degree": 7,
+        "harmonic_invariant_dim": 0
+      },
+      {
+        "cumulative": 4,
+        "degree": 8,
+        "harmonic_invariant_dim": 1
+      },
+      {
+        "cumulative": 5,
+        "degree": 9,
+        "harmonic_invariant_dim": 1
+      },
+      {
+        "cumulative": 6,
+        "degree": 10,
+        "harmonic_invariant_dim": 1
+      },
+      {
+        "cumulative": 6,
+        "degree": 11,
+        "harmonic_invariant_dim": 0
+      },
+      {
+        "cumulative": 8,
+        "degree": 12,
+        "harmonic_invariant_dim": 2
+      }
+    ],
+    "nearest_neighbour_invariant_dimension": 2,
+    "pass": true,
+    "primary_honest_residual": 10,
+    "primary_landed_residual": 8,
+    "primary_restriction_is_licensed_by_the_axiom_text": true,
+    "primary_window_parameterization_size": 2,
+    "range1_block_size": 27,
+    "range1_invariant_dimension_by_orbit_count": 4,
+    "range1_orbits": [
+      {
+        "representative": [
+          -1,
+          -1,
+          -1
+        ],
+        "size": 8
+      },
+      {
+        "representative": [
+          -1,
+          -1,
+          0
+        ],
+        "size": 12
+      },
+      {
+        "representative": [
+          -1,
+          0,
+          0
+        ],
+        "size": 6
+      },
+      {
+        "representative": [
+          0,
+          0,
+          0
+        ],
+        "size": 1
+      }
+    ],
+    "second_moment_rows": [
+      {
+        "isotropic": true,
+        "off_diagonal_all_zero": true,
+        "orbit_representative": [
+          -1,
+          -1,
+          -1
+        ],
+        "orbit_size": 8,
+        "second_moment_diagonal": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "isotropic": true,
+        "off_diagonal_all_zero": true,
+        "orbit_representative": [
+          -1,
+          -1,
+          0
+        ],
+        "orbit_size": 12,
+        "second_moment_diagonal": [
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "isotropic": true,
+        "off_diagonal_all_zero": true,
+        "orbit_representative": [
+          -1,
+          0,
+          0
+        ],
+        "orbit_size": 6,
+        "second_moment_diagonal": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "isotropic": true,
+        "off_diagonal_all_zero": true,
+        "orbit_representative": [
+          0,
+          0,
+          0
+        ],
+        "orbit_size": 1,
+        "second_moment_diagonal": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "verdict": "PRIMARY NUMBER REFUTED AS AN EXACT COUNT (it is a LOWER BOUND)",
+    "window_rotation_orbits": 16,
+    "window_shell_sites": 256
+  },
+  "C_ADVERSARIAL_FORCING_HUNT": {
+    "candidates_attempted": 6,
+    "finding": "6 candidate forcings the primary did not run were attempted; 0 moved a coordinate out of the primary's FREE column, so the free column survives. One genuine NARROWING was found that the primary missed: the axioms' privilege clauses force the central barrier to be record-carried configuration rather than a rule, which the primary did not qualify.",
+    "forcings_found_that_move_a_primary_coordinate": 0,
+    "narrowings_found": 1,
+    "pass": true,
+    "primary_free_column_survives": true,
+    "rows": [
+      {
+        "candidate": "Qubit pins the per-edge phase gain theta",
+        "exact_reason": "Every rational point on the unit circle is an admissible relative phase for a 2-state local possibility space, and record content distinguishes none of them; the tested points all have modulus exactly 1 (True).",
+        "moves_a_primary_coordinate": false,
+        "outcome": "NO HIT"
+      },
+      {
+        "candidate": "'No site is privileged' pins the barrier locus",
+        "exact_reason": "Both clauses are present in the pinned axioms (law clause True, site clause True). They forbid a LAW that singles out the barrier plane, so the Gate-B central blocked barrier is admissible only as record-carried configuration, not as a rule. That narrows the barrier coordinate's status -- the primary listed it FREE with no qualification -- but it pins no value, because a configuration may sit anywhere.",
+        "moves_a_primary_coordinate": false,
+        "narrows_a_primary_coordinate": true,
+        "outcome": "PARTIAL HIT -- CONSTRAINS BUT DOES NOT PIN"
+      },
+      {
+        "candidate": "count-once + additivity pin the terminal normalization N",
+        "exact_reason": "Additivity is scale-covariant: c*W is additive with c*W(empty)=0 for every rational c, verified on all disjoint subset pairs of a 4-element ground set at three scales (True). Nothing in count-once selects c.",
+        "moves_a_primary_coordinate": false,
+        "outcome": "NO HIT"
+      },
+      {
+        "axis_profile": [
+          {
+            "lower_bound": "8982103/40310784",
+            "x": 0
+          },
+          {
+            "lower_bound": "4556535341/78364164096",
+            "x": 1
+          },
+          {
+            "lower_bound": "219365009/13060694016",
+            "x": 2
+          },
+          {
+            "lower_bound": "35758163/6530347008",
+            "x": 3
+          },
+          {
+            "lower_bound": "17896931/13060694016",
+            "x": 4
+          }
+        ],
+        "candidate": "the maximum principle bounds the window outer boundary b",
+        "exact_reason": "The lower-bound profile along the +x axis is strictly decreasing (True), so the window readout is monotone in b and no outer boundary is singled out; the maximum principle gives positivity, not a cut.",
+        "moves_a_primary_coordinate": false,
+        "outcome": "NO HIT"
+      },
+      {
+        "candidate": "the unit-source normalization forces the amplitude",
+        "exact_reason": "Delta G = -delta fixes G given a unit source, but the map from record count to source strength carries one undetermined constant. That constant IS the single scalar the source-action bridge was priced to, so this route recovers the known scalar and adds nothing.",
+        "moves_a_primary_coordinate": false,
+        "outcome": "NO HIT"
+      },
+      {
+        "candidate": "translation covariance pins the window inner boundary a",
+        "exact_reason": "The inner boundary is measured from the source, which is itself translation-covariant, so covariance is satisfied for every value of a and singles out none.",
+        "moves_a_primary_coordinate": false,
+        "outcome": "NO HIT"
+      }
+    ]
+  },
+  "D_WRONG_FORCING_STRESS": {
+    "all_claimed_forcings_fail_on_their_perturbations": true,
+    "finding": "7/7 stress tests confirm that the primary's claimed forcings FAIL on their deliberately perturbed variants, which is what makes them forcings rather than artifacts. Refuted: none.",
+    "pass": true,
+    "refuted": [],
+    "rows": [
+      {
+        "detail": [
+          {
+            "d": 2,
+            "degenerate_log_case": true,
+            "equals_one": false,
+            "operator_order": 2,
+            "p": "0/1"
+          },
+          {
+            "d": 3,
+            "degenerate_log_case": false,
+            "equals_one": true,
+            "operator_order": 2,
+            "p": "1/1"
+          },
+          {
+            "d": 4,
+            "degenerate_log_case": false,
+            "equals_one": false,
+            "operator_order": 2,
+            "p": "2/1"
+          },
+          {
+            "d": 3,
+            "degenerate_log_case": false,
+            "equals_one": false,
+            "operator_order": 4,
+            "p": "-1/1"
+          }
+        ],
+        "forcing_fails_on_every_perturbation": true,
+        "stress": "S1 -- the p = 1 forcing against perturbed dimension and order",
+        "verdict": "SURVIVES"
+      },
+      {
+        "forcing_fails_on_the_perturbation": true,
+        "full_group_order": 24,
+        "invariant_dimension_full_group": 2,
+        "invariant_dimension_subgroup": 4,
+        "stress": "S2 -- the stencil rigidity against a proper subgroup",
+        "subgroup_order": 4,
+        "verdict": "SURVIVES"
+      },
+      {
+        "detail": [
+          {
+            "action_sign": -1,
+            "orientation": 1,
+            "source_sign": 1
+          },
+          {
+            "action_sign": -1,
+            "orientation": -1,
+            "source_sign": -1
+          },
+          {
+            "action_sign": 1,
+            "orientation": -1,
+            "source_sign": 1
+          }
+        ],
+        "forcing_fails_on_the_perturbation": true,
+        "stress": "S3 -- the TOWARD orientation against a flipped source and a flipped action sign",
+        "verdict": "SURVIVES"
+      },
+      {
+        "forcing_fails_on_the_perturbation": true,
+        "harmonic_controls": [
+          {
+            "residual_exactly_zero_at_every_site": true,
+            "test_function": "constant"
+          },
+          {
+            "residual_exactly_zero_at_every_site": true,
+            "test_function": "linear x"
+          },
+          {
+            "residual_exactly_zero_at_every_site": true,
+            "test_function": "bilinear xy"
+          }
+        ],
+        "landed_kernel_at_epsilon_one_tenth": [
+          {
+            "certified_sign": 1,
+            "residual_enclosure": [
+              "2436807029411627506009053563712045246491049422801263268587561947639426665557793893770169325103906428998796861289195714380/317984848098349960248354632084036596499970126983722080910736371519326133577285349142135623730950488016887242096980785697",
+              "279217472120082318396870720842005184493870117394137716761535038699929805580967220/36435763844602599611790634926295860015584312342167691145419253694084208714546871"
+            ],
+            "site": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "certified_sign": 1,
+            "residual_enclosure": [
+              "4840562473008159779324061653226482064896247524157501472125135784318881066351914912786404500042060718165266253744752911860/55761942622919980053286975472615563739976377039853849381707442970586069952132195821524758424985278748642156811189336480849",
+              "7260843709512239668986092479839723097368805742752749558362459264704335680094425260/83642913934379970079930463208923345609954665995901637141432377641105186825981426223"
+            ],
+            "site": [
+              2,
+              0,
+              0
+            ]
+          }
+        ],
+        "machinery_passes_the_harmonic_controls": true,
+        "machinery_still_rejects_the_landed_kernel": true,
+        "stress": "S4 -- the epsilon machinery against functions that really are discretely harmonic",
+        "verdict": "SURVIVES"
+      },
+      {
+        "forcing_fails_on_the_perturbation": true,
+        "grid": "epsilon in {k/20 : 1 <= k <= 160}, exact rational, certified signs",
+        "identical_condition_yields_the_same_bracket": true,
+        "real_conditions_have_disjoint_brackets": true,
+        "sign_change_brackets": {
+          "(1, 0, 0)": [
+            "19/20",
+            "1/1"
+          ],
+          "(2, 0, 0)": [
+            "13/20",
+            "7/10"
+          ]
+        },
+        "stress": "S5 -- the common-root test must fire on identical conditions and separate the real ones",
+        "verdict": "SURVIVES"
+      },
+      {
+        "forcing_fails_on_the_perturbation": true,
+        "gauge_on_the_landed_multiplicative_form": true,
+        "gauge_on_the_perturbed_non_multiplicative_form": false,
+        "stress": "S6 -- the stabilizer against a non-multiplicative coupling",
+        "verdict": "SURVIVES"
+      },
+      {
+        "forcing_fails_on_the_perturbation": true,
+        "linear_response_is_additive": true,
+        "quadratic_response_is_additive": false,
+        "stress": "S7 -- the additivity check against a quadratic response",
+        "verdict": "SURVIVES"
+      }
+    ],
+    "stresses_run": 7,
+    "survived": [
+      "S1 -- the p = 1 forcing against perturbed dimension and order",
+      "S2 -- the stencil rigidity against a proper subgroup",
+      "S3 -- the TOWARD orientation against a flipped source and a flipped action sign",
+      "S4 -- the epsilon machinery against functions that really are discretely harmonic",
+      "S5 -- the common-root test must fire on identical conditions and separate the real ones",
+      "S6 -- the stabilizer against a non-multiplicative coupling",
+      "S7 -- the additivity check against a quadratic response"
+    ]
+  },
+  "E_PRIMARY_RECHECK": {
+    "agreements": 3,
+    "checks": [
+      {
+        "agrees": true,
+        "checker": 4,
+        "claim": "first non-radial invariant degree",
+        "note": "recomputed as an exact nullspace-plus-averaging rank, not by Molien",
+        "primary": 4
+      },
+      {
+        "agrees": true,
+        "checker": "1/6",
+        "claim": "exact core step G(0) - G(e1)",
+        "note": "Delta G(0) = -1 with the six face neighbours in one rotation orbit",
+        "primary": "1/6"
+      },
+      {
+        "agrees": true,
+        "checker": "disjoint certified sign-change brackets on an exact rational grid",
+        "claim": "epsilon has no admissible value",
+        "note": "recomputed by certified enclosures instead of polynomial GCD",
+        "primary": "1/1"
+      },
+      {
+        "agrees": false,
+        "checker": 27,
+        "claim": "residual free dimension",
+        "note": "different parameterization: orbit-indexed window and cutoff-indexed angular profile",
+        "primary": 10
+      }
+    ],
+    "disagreeing_claims": [
+      "residual free dimension"
+    ],
+    "disagreements": 1,
+    "finding": "3/4 of the primary's headline claims reproduce under independent recomputation. The disagreement is confined to the residual COUNT, which is parameterization dependent: the checker's own count is 27 against the primary's 10, so the primary's number stands only as a LOWER BOUND. Every forcing, every elimination, and the gauge direction reproduce exactly.",
+    "pass": true
+  },
+  "F_VERDICT": {
+    "finding": "The primary's forcings all survive adversarial stress; its residual NUMBER does not survive an independent parameterization and is demoted to a lower bound. One narrowing the primary missed was found on the barrier coordinate.",
+    "net_effect_on_the_obligation": "GB-S2 is LARGER than either the primary or the brief's reported 8. Every forcing the primary claims survives its stress test, so the forced/gauge/eliminated columns stand; the disagreement is that the FREE column is bigger than reported.",
+    "no_closure_claim": "Nothing here closes gravity or Gate B; the checker's only positive result is that the primary's forcings are real.",
+    "pass": true,
+    "primary_claims_that_SURVIVE": [
+      "p = 1 is forced in d = 3, and it fails in d = 2, d = 4, and at fourth order -- so it is a forcing, not an artifact",
+      "the invariant stencil is 2-dimensional under the FULL rotation group and strictly larger under a proper subgroup",
+      "the TOWARD orientation is forced and flips with the source and action signs",
+      "no epsilon makes the landed kernel harmonic, reconfirmed by certified enclosures rather than by polynomial GCD, while the machinery passes three genuinely harmonic controls exactly",
+      "the Cycle-871 rescaling stabilizer is gauge, and stops being gauge under a non-multiplicative coupling",
+      "the exact core step G(0) - G(e1) = 1/6"
+    ],
+    "primary_claims_that_are_REFUTED_or_NARROWED": [
+      "the residual free dimension is NOT an exact count: it is a LOWER BOUND. The checker's parameterization gives 27 against the primary's 10, because the angular profile keeps producing invariants beyond the primary's single c4 and the covariance-respecting window family is orbit-indexed rather than an annulus.",
+      "the barrier coordinate is not simply FREE: the axioms' privilege clauses force it to be record-carried configuration rather than a rule -- a narrowing the primary did not state."
+    ],
+    "refutation_attempts": {
+      "adversarial_forcing_hunt": "0 hits, 1 narrowings",
+      "independent_count_by_a_different_parameterization": "PRIMARY NUMBER REFUTED AS AN EXACT COUNT (it is a LOWER BOUND)",
+      "wrong_forcing_stress": "7/7 survive"
+    }
+  }
+}
+
+controls: deterministic=True runtime_under_limit=True stdout=23171B cache=568baee25284bf79

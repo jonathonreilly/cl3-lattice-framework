@@ -1,0 +1,953 @@
+{
+  "consumer_census": {
+    "distinct_files_hit": 469,
+    "files_swept": 14191,
+    "gate_b_lane_files_hit": [
+      "docs/GATE_B_DYNAMICS_NOTE.md",
+      "docs/GATE_B_FARFIELD_BOUNDED_CONDITIONAL_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
+      "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "docs/audit/data/ledger/ga/gate_b_context_independence_no_go_note_2026-06-17.json",
+      "docs/audit/data/ledger/ga/gate_b_dynamics_note.json",
+      "docs/audit/data/ledger/ga/gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18.json",
+      "docs/audit/data/ledger/ga/gate_b_weak_field_source_action_interface_note_2026-06-16.json",
+      "scripts/GATE_B_NONLABEL_SIGN_GROWN_TRANSFER.py",
+      "scripts/gate_b_complex_action_falsifier.py",
+      "scripts/gate_b_connectivity_tolerance.py",
+      "scripts/gate_b_context_independence_no_go_2026_06_17.py",
+      "scripts/gate_b_farfield_harness.py",
+      "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
+      "scripts/gate_b_grown_distance_law.py",
+      "scripts/gate_b_grown_propagating_field_probe.py",
+      "scripts/gate_b_grown_propagating_field_radical.py",
+      "scripts/gate_b_grown_propagating_field_v2.py",
+      "scripts/gate_b_grown_propagating_field_v3.py",
+      "scripts/gate_b_grown_trapping_frontier_probe.py",
+      "scripts/gate_b_grown_trapping_frontier_v2.py",
+      "scripts/gate_b_grown_trapping_frontier_v3.py",
+      "scripts/gate_b_grown_trapping_transport_probe.py",
+      "scripts/gate_b_grown_wavefield_companion.py",
+      "scripts/gate_b_h025_distance_law.py",
+      "scripts/gate_b_h025_farfield.py",
+      "scripts/gate_b_no_restore_farfield.py",
+      "scripts/gate_b_nonlabel_connectivity_v1.py",
+      "scripts/gate_b_nonlabel_connectivity_v1_distance.py",
+      "scripts/gate_b_nonlabel_connectivity_v1_h025.py",
+      "scripts/gate_b_nonlabel_connectivity_v2.py",
+      "scripts/gate_b_nonlabel_connectivity_v3.py",
+      "scripts/gate_b_operator_cauchy.py",
+      "scripts/gate_b_poisson_self_gravity_probe.py",
+      "scripts/gate_b_weak_connectivity_harness.py",
+      "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py"
+    ],
+    "needle_families": [
+      {
+        "family": "F1_euclidean_plus_one_tenth",
+        "hit_count": 240
+      },
+      {
+        "family": "F2_named_epsilon_regulator",
+        "hit_count": 126
+      },
+      {
+        "family": "F3_screened_yukawa_kernel",
+        "hit_count": 33
+      },
+      {
+        "family": "F4_power_law_field",
+        "hit_count": 22
+      },
+      {
+        "family": "F5_published_note_kernel_form",
+        "hit_count": 7
+      },
+      {
+        "family": "F6_named_regulator_constant",
+        "hit_count": 87
+      },
+      {
+        "family": "F7_named_screening_mass_constant",
+        "hit_count": 85
+      },
+      {
+        "family": "F8_phi_GB_symbol",
+        "hit_count": 11
+      }
+    ]
+  },
+  "core_definition": "the forced core is the unique G: Z^3 -> R with Delta G = -delta_0 and G -> 0 at infinity, where Delta f(x) = sum_{y~x} f(y) - 6 f(x)",
+  "core_exact_affine_relations": [
+    "-6*G[0, 0, 0] + 6*G[1, 0, 0] = -1",
+    "1*G[0, 0, 0] + -6*G[1, 0, 0] + 4*G[1, 1, 0] + 1*G[2, 0, 0] = 0",
+    "2*G[1, 0, 0] + -6*G[1, 1, 0] + 2*G[1, 1, 1] + 2*G[2, 1, 0] = 0",
+    "3*G[1, 1, 0] + -6*G[1, 1, 1] + 3*G[2, 1, 1] = 0",
+    "1*G[1, 0, 0] + -6*G[2, 0, 0] + 4*G[2, 1, 0] + 1*G[3, 0, 0] = 0",
+    "1*G[1, 1, 0] + 1*G[2, 0, 0] + -6*G[2, 1, 0] + 2*G[2, 1, 1] + 1*G[2, 2, 0] + 1*G[3, 1, 0] = 0",
+    "1*G[1, 1, 1] + 2*G[2, 1, 0] + -6*G[2, 1, 1] + 2*G[2, 2, 1] + 1*G[3, 1, 1] = 0",
+    "2*G[2, 1, 0] + -6*G[2, 2, 0] + 2*G[2, 2, 1] + 2*G[3, 2, 0] = 0",
+    "2*G[2, 1, 1] + 1*G[2, 2, 0] + -6*G[2, 2, 1] + 1*G[2, 2, 2] + 2*G[3, 2, 1] = 0",
+    "3*G[2, 2, 1] + -6*G[2, 2, 2] + 3*G[3, 2, 2] = 0",
+    "1*G[2, 0, 0] + -6*G[3, 0, 0] + 4*G[3, 1, 0] + 1*G[4, 0, 0] = 0",
+    "1*G[2, 1, 0] + 1*G[3, 0, 0] + -6*G[3, 1, 0] + 2*G[3, 1, 1] + 1*G[3, 2, 0] + 1*G[4, 1, 0] = 0",
+    "1*G[2, 1, 1] + 2*G[3, 1, 0] + -6*G[3, 1, 1] + 2*G[3, 2, 1] + 1*G[4, 1, 1] = 0",
+    "1*G[2, 2, 0] + 1*G[3, 1, 0] + -6*G[3, 2, 0] + 2*G[3, 2, 1] + 1*G[3, 3, 0] + 1*G[4, 2, 0] = 0",
+    "1*G[2, 2, 1] + 1*G[3, 1, 1] + 1*G[3, 2, 0] + -6*G[3, 2, 1] + 1*G[3, 2, 2] + 1*G[3, 3, 1] + 1*G[4, 2, 1] = 0",
+    "1*G[2, 2, 2] + 2*G[3, 2, 1] + -6*G[3, 2, 2] + 2*G[3, 3, 2] + 1*G[4, 2, 2] = 0",
+    "2*G[3, 2, 0] + -6*G[3, 3, 0] + 2*G[3, 3, 1] + 2*G[4, 3, 0] = 0",
+    "2*G[3, 2, 1] + 1*G[3, 3, 0] + -6*G[3, 3, 1] + 1*G[3, 3, 2] + 2*G[4, 3, 1] = 0",
+    "2*G[3, 2, 2] + 1*G[3, 3, 1] + -6*G[3, 3, 2] + 1*G[3, 3, 3] + 2*G[4, 3, 2] = 0",
+    "3*G[3, 3, 2] + -6*G[3, 3, 3] + 3*G[4, 3, 3] = 0",
+    "1*G[3, 0, 0] + -6*G[4, 0, 0] + 4*G[4, 1, 0] + 1*G[5, 0, 0] = 0",
+    "1*G[3, 1, 0] + 1*G[4, 0, 0] + -6*G[4, 1, 0] + 2*G[4, 1, 1] + 1*G[4, 2, 0] + 1*G[5, 1, 0] = 0",
+    "1*G[3, 1, 1] + 2*G[4, 1, 0] + -6*G[4, 1, 1] + 2*G[4, 2, 1] + 1*G[5, 1, 1] = 0",
+    "1*G[3, 2, 0] + 1*G[4, 1, 0] + -6*G[4, 2, 0] + 2*G[4, 2, 1] + 1*G[4, 3, 0] + 1*G[5, 2, 0] = 0",
+    "1*G[3, 2, 1] + 1*G[4, 1, 1] + 1*G[4, 2, 0] + -6*G[4, 2, 1] + 1*G[4, 2, 2] + 1*G[4, 3, 1] + 1*G[5, 2, 1] = 0",
+    "1*G[3, 2, 2] + 2*G[4, 2, 1] + -6*G[4, 2, 2] + 2*G[4, 3, 2] + 1*G[5, 2, 2] = 0",
+    "1*G[3, 3, 0] + 1*G[4, 2, 0] + -6*G[4, 3, 0] + 2*G[4, 3, 1] + 1*G[4, 4, 0] + 1*G[5, 3, 0] = 0",
+    "1*G[3, 3, 1] + 1*G[4, 2, 1] + 1*G[4, 3, 0] + -6*G[4, 3, 1] + 1*G[4, 3, 2] + 1*G[4, 4, 1] + 1*G[5, 3, 1] = 0",
+    "1*G[3, 3, 2] + 1*G[4, 2, 2] + 1*G[4, 3, 1] + -6*G[4, 3, 2] + 1*G[4, 3, 3] + 1*G[4, 4, 2] + 1*G[5, 3, 2] = 0",
+    "1*G[3, 3, 3] + 2*G[4, 3, 2] + -6*G[4, 3, 3] + 2*G[4, 4, 3] + 1*G[5, 3, 3] = 0",
+    "2*G[4, 3, 0] + -6*G[4, 4, 0] + 2*G[4, 4, 1] + 2*G[5, 4, 0] = 0",
+    "2*G[4, 3, 1] + 1*G[4, 4, 0] + -6*G[4, 4, 1] + 1*G[4, 4, 2] + 2*G[5, 4, 1] = 0",
+    "2*G[4, 3, 2] + 1*G[4, 4, 1] + -6*G[4, 4, 2] + 1*G[4, 4, 3] + 2*G[5, 4, 2] = 0",
+    "2*G[4, 3, 3] + 1*G[4, 4, 2] + -6*G[4, 4, 3] + 1*G[4, 4, 4] + 2*G[5, 4, 3] = 0",
+    "3*G[4, 4, 3] + -6*G[4, 4, 4] + 3*G[5, 4, 4] = 0"
+  ],
+  "core_harmonic_at_every_tested_site": true,
+  "core_has_zero_free_parameters": true,
+  "core_normalization_G0_minus_Ge1": "1/6",
+  "core_normalization_exact_at_every_cube_radius": true,
+  "core_symbolic_module_generator_count": 15,
+  "core_value_table_certified_lower_bounds": [
+    {
+      "certified_lower_bound_exact_rational": "760170477092134405184957119310141768672419231/3102931256984110428962554916789639562248009499",
+      "class": [
+        0,
+        0,
+        0
+      ],
+      "lower_bound_decimal_20": "0.24498463360447791937",
+      "orbit_size": 1,
+      "squared_radius": 0
+    },
+    {
+      "certified_lower_bound_exact_rational": "486030535189565334049062599690403683262168629/6205862513968220857925109833579279124496018998",
+      "class": [
+        1,
+        0,
+        0
+      ],
+      "lower_bound_decimal_20": "0.07831796693781124807",
+      "orbit_size": 6,
+      "squared_radius": 1
+    },
+    {
+      "certified_lower_bound_exact_rational": "3533284570111988485316767498202751042551238407/74470350167618650295101318002951349493952227976",
+      "class": [
+        1,
+        1,
+        0
+      ],
+      "lower_bound_decimal_20": "0.04744552109878943935",
+      "orbit_size": 12,
+      "squared_radius": 2
+    },
+    {
+      "certified_lower_bound_exact_rational": "4118090495222855043855584950435902580902658/114923379888300386257872404325542206009185537",
+      "class": [
+        1,
+        1,
+        1
+      ],
+      "lower_bound_decimal_20": "0.03583335696553153343",
+      "orbit_size": 8,
+      "squared_radius": 3
+    },
+    {
+      "certified_lower_bound_exact_rational": "7248389564212995006308213533838767993/206265396966757515049551484700462420898",
+      "class": [
+        2,
+        0,
+        0
+      ],
+      "lower_bound_decimal_20": "0.03514108362723182555",
+      "orbit_size": 6,
+      "squared_radius": 4
+    },
+    {
+      "certified_lower_bound_exact_rational": "233218294128530153215903583382327117342529921/8274483351957627810566813111439038832661358664",
+      "class": [
+        2,
+        1,
+        0
+      ],
+      "lower_bound_decimal_20": "0.02818523939302554002",
+      "orbit_size": 24,
+      "squared_radius": 5
+    },
+    {
+      "certified_lower_bound_exact_rational": "1803760711696831651520070597562178702298606361/74470350167618650295101318002951349493952227976",
+      "class": [
+        2,
+        1,
+        1
+      ],
+      "lower_bound_decimal_20": "0.02422119283227362405",
+      "orbit_size": 24,
+      "squared_radius": 6
+    },
+    {
+      "certified_lower_bound_exact_rational": "1512686151695658578878188954373090224778244809/74470350167618650295101318002951349493952227976",
+      "class": [
+        2,
+        2,
+        0
+      ],
+      "lower_bound_decimal_20": "0.02031259619823041693",
+      "orbit_size": 12,
+      "squared_radius": 8
+    },
+    {
+      "certified_lower_bound_exact_rational": "501442911493792963401740065571141/25341298991298595305705572686255923",
+      "class": [
+        3,
+        0,
+        0
+      ],
+      "lower_bound_decimal_20": "0.01978757725347752086",
+      "orbit_size": 6,
+      "squared_radius": 9
+    },
+    {
+      "certified_lower_bound_exact_rational": "76206742627919684773814423455974573209215097/4137241675978813905283406555719519416330679332",
+      "class": [
+        2,
+        2,
+        1
+      ],
+      "lower_bound_decimal_20": "0.01841969809749879547",
+      "orbit_size": 24,
+      "squared_radius": 9
+    },
+    {
+      "certified_lower_bound_exact_rational": "383607716045565141136598304974480906110/21587561010624337706801692791623865547827",
+      "class": [
+        3,
+        1,
+        0
+      ],
+      "lower_bound_decimal_20": "0.01776984976935431712",
+      "orbit_size": 24,
+      "squared_radius": 10
+    },
+    {
+      "certified_lower_bound_exact_rational": "4593445455901244056660684818915282551778158/282084659725828220814777719708149051113455409",
+      "class": [
+        3,
+        1,
+        1
+      ],
+      "lower_bound_decimal_20": "0.01628392504706153293",
+      "orbit_size": 24,
+      "squared_radius": 11
+    },
+    {
+      "certified_lower_bound_exact_rational": "370395064427199462653198878765192753046858029/24823450055872883431700439334317116497984075992",
+      "class": [
+        2,
+        2,
+        2
+      ],
+      "lower_bound_decimal_20": "0.01492117588786048485",
+      "orbit_size": 8,
+      "squared_radius": 12
+    },
+    {
+      "certified_lower_bound_exact_rational": "2579344832118489153730990639539431243/206265396966757515049551484700462420898",
+      "class": [
+        4,
+        0,
+        0
+      ],
+      "lower_bound_decimal_20": "0.01250498081621604154",
+      "orbit_size": 6,
+      "squared_radius": 16
+    }
+  ],
+  "cycle": 900,
+  "cycle896_receipt_present_on_this_branch": false,
+  "delta_status_counts": {
+    "BREAKS": 5,
+    "CHANGES": 13,
+    "SURVIVES-UNCHANGED": 19
+  },
+  "delta_table": [
+    {
+      "consumer_row": "GB-S1a: linear test-action form S = L(1 - phi)",
+      "exact_delta": "0: the row constrains the ACTION form, not the scalar",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "interface note",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "S = L(1 - phi_core)",
+      "under_LANDED_kernel": "S = L(1 - phi_GB)"
+    },
+    {
+      "consumer_row": "GB-S1b: runner scalar, its normalization, and its finite-core regulator",
+      "exact_delta": "the regulator sub-row DISSOLVES (there is nothing to supply); the normalization sub-row is unmoved -- lambda*sigma stays free",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "interface note",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "phi = lambda*sigma*G(x); NO regulator exists",
+      "under_LANDED_kernel": "phi = strength/(r + 1/10); regulator epsilon = 1/10 supplied"
+    },
+    {
+      "consumer_row": "supplied bullet: 'the finite-core scalar 1/(r+0.1) rather than the exact periodic graph-Laplacian Green solution'",
+      "exact_delta": "this bullet names the core as the missing object; adopting the core is exactly its discharge.  The note's own text is the patch spec.",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "interface note",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "DISCHARGED",
+      "under_LANDED_kernel": "SUPPLIED"
+    },
+    {
+      "consumer_row": "supplied bullet: source-strength normalization absorbing 1/(4 pi)",
+      "exact_delta": "0: the core fixes the SHAPE, never the scale; lambda*sigma is untouched",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "interface note",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "SUPPLIED",
+      "under_LANDED_kernel": "SUPPLIED"
+    },
+    {
+      "consumer_row": "rescaling stabilizer (lambda, sigma) -> (t*lambda, sigma/t)",
+      "exact_delta": "0: the stabilizer is a property of the linear action form; every gauge-invariant shape ratio in F is stabilizer-invariant and still moves, which is what makes the deltas real",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "interface note",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "one-dimensional stabilizer",
+      "under_LANDED_kernel": "one-dimensional stabilizer"
+    },
+    {
+      "consumer_row": "supplied bullet: GB-S3 label/offset connectivity",
+      "exact_delta": "0: no kernel dependence",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "interface note",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "SUPPLIED",
+      "under_LANDED_kernel": "SUPPLIED"
+    },
+    {
+      "consumer_row": "GB-S1b-a: the finite runner scalar is positive, finite, RADIALLY MONOTONE in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the normalization",
+      "exact_delta": "the core separates two sites at the SAME Euclidean radius 3: G(3,0,0) - G(2,2,1) = 31615903082781646390086315478519155169393/23113081988708457571415679082231952046540108 (0.001367879156), so the core is not a function of r at all",
+      "obstruction": "the degree-4 cubic-invariant anisotropy that 884's R2 proved admissible and unsuppressed.  It is DERIVED (R2), not supplied, and the core realizes it with a nonzero coefficient.",
+      "planted": false,
+      "repairable_by_restatement": true,
+      "source": "dynamics note",
+      "status": "BREAKS",
+      "under_FORCED_CORE": "positive YES (exact solve strictly positive); finite YES (G(0) is a finite lattice value, no regulator needed); linear-in-normalization YES; RADIALLY MONOTONE IN EUCLIDEAN DISTANCE **NO**; matches the runner helper NO by construction",
+      "under_LANDED_kernel": "all four properties hold for 1/(r+1/10)"
+    },
+    {
+      "consumer_row": "GB-S1b-b: physical Poisson/source equation, boundary condition, regulator selection, and absolute normalization",
+      "exact_delta": "3 of 4 sub-rows discharge; 1 of 4 survives untouched",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "dynamics note",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "Poisson equation DERIVED (Delta G = -delta is 884-R3's forced operator at alpha = 0); boundary condition DERIVED (decay, with uniqueness certified); regulator selection DISSOLVED; absolute normalization still SUPPLIED",
+      "under_LANDED_kernel": "all four SUPPLIED"
+    },
+    {
+      "consumer_row": "GB-S2a: finite complex-amplitude propagation on the layered DAG",
+      "exact_delta": "0 structurally; the per-edge action values it consumes change, but the bridge row is about the recursion being a path sum",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "dynamics note",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "exact path-sum algebra",
+      "under_LANDED_kernel": "exact path-sum algebra"
+    },
+    {
+      "consumer_row": "GB-S2b: detector-window mass-gain, TOWARD, F~M readout semantics",
+      "exact_delta": "window sum at unit strength: core >= 14471690474511597214655012321882365975367128069/6205862513968220857925109833579279124496018998 vs landed in ['1031591625581464381961344374737352654780083963799799475377453876331923984308037939333165242601747359851540973427292719079766876554818736424569421168640/31439037633047726668496689275123387295208252783167429774039334314907816168288256320183960977451004673440826096816531478465761469607469848044987834367', '28025288105012718430249676595480376258951167534875677814487212361503413539553220/854105506056107943003577523348628313240404670051062150921747944120796308428481']; the gauge-invariant shape ratios all move (table in F)",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "dynamics note",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "TOWARD forced +1 (Green positivity, recomputed); window mass-gain and F~M values move with the kernel; window boundaries still supplied",
+      "under_LANDED_kernel": "supplied runner data"
+    },
+    {
+      "consumer_row": "GB-S3a / GB-S3b: the connectivity stencil rows",
+      "exact_delta": "0: no kernel dependence",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "dynamics note",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "unchanged",
+      "under_LANDED_kernel": "SUPPLIED / bounded-support"
+    },
+    {
+      "consumer_row": "chart coordinate `lambda`",
+      "exact_delta": "0: the stabilizer is untouched",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "GAUGE",
+      "under_LANDED_kernel": "GAUGE"
+    },
+    {
+      "consumer_row": "chart coordinate `sigma`",
+      "exact_delta": "0: the shared source-action scalar, not new to GB-S2, not touched",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FREE",
+      "under_LANDED_kernel": "FREE"
+    },
+    {
+      "consumer_row": "chart coordinate `p`",
+      "exact_delta": "0: the core is the alpha = 0 member of the forced operator family, so p = 1 is not merely forced but instantiated",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FORCED = 1 and now REALIZED",
+      "under_LANDED_kernel": "FORCED = 1"
+    },
+    {
+      "consumer_row": "chart coordinate `epsilon`",
+      "exact_delta": "the coordinate leaves the chart entirely: chart dimension 15 -> 14",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "ABSENT",
+      "under_LANDED_kernel": "ELIMINATED (inadmissible import)"
+    },
+    {
+      "consumer_row": "chart coordinate `m`",
+      "exact_delta": "the regulator insertion exponent has no referent: 14 -> 13",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "ABSENT",
+      "under_LANDED_kernel": "ELIMINATED (inadmissible import)"
+    },
+    {
+      "consumer_row": "chart coordinate `theta`",
+      "exact_delta": "0: the per-edge action-to-phase gain is not a kernel property",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FREE",
+      "under_LANDED_kernel": "FREE"
+    },
+    {
+      "consumer_row": "chart coordinate `mu`",
+      "exact_delta": "the harmonic core IS the mu = 0 slice: G(0) - G(e1) = (1 - mu^2 G(0))/6 equals 1/6 exactly when mu = 0.  The repair PRESUPPOSES mu = 0; it does not derive it, so mu stays in the residual as a supplied branch label",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "FIXED TO ZERO BY FIAT",
+      "under_LANDED_kernel": "FREE (exposed by R3)"
+    },
+    {
+      "consumer_row": "chart coordinate `c4`",
+      "exact_delta": "the core's degree-4 anisotropy is not a free coefficient: it is whatever the lattice Green function has, witnessed exactly by G(3,0,0) - G(2,2,1) = 31615903082781646390086315478519155169393/23113081988708457571415679082231952046540108 at equal Euclidean radius.  c4 LEAVES the residual.",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "DETERMINED BY THE LATTICE",
+      "under_LANDED_kernel": "FREE (exposed by R2)"
+    },
+    {
+      "consumer_row": "chart coordinate `a`",
+      "exact_delta": "0: window coordinate",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FREE",
+      "under_LANDED_kernel": "FREE"
+    },
+    {
+      "consumer_row": "chart coordinate `b`",
+      "exact_delta": "0: window coordinate",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FREE",
+      "under_LANDED_kernel": "FREE"
+    },
+    {
+      "consumer_row": "chart coordinate `D`",
+      "exact_delta": "0: window coordinate",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FREE",
+      "under_LANDED_kernel": "FREE"
+    },
+    {
+      "consumer_row": "chart coordinate `barrier`",
+      "exact_delta": "0: window coordinate",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FREE",
+      "under_LANDED_kernel": "FREE"
+    },
+    {
+      "consumer_row": "chart coordinate `N`",
+      "exact_delta": "0: window coordinate",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FREE",
+      "under_LANDED_kernel": "FREE"
+    },
+    {
+      "consumer_row": "chart coordinate `s`",
+      "exact_delta": "0: Green-function positivity is a property OF the core",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FORCED = +1, recomputed",
+      "under_LANDED_kernel": "FORCED = +1"
+    },
+    {
+      "consumer_row": "chart coordinate `g`",
+      "exact_delta": "0: the F~M calibration gain is a coupling, not a kernel property",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "884 chart",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "FREE",
+      "under_LANDED_kernel": "FREE"
+    },
+    {
+      "consumer_row": "F1 euclidean r + 0.1 (240 files)",
+      "exact_delta": "every F1 consumer changes value; none BREAKS, because the regulator's only job was to keep r = 0 finite and G(0) is already finite on the lattice",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "census family",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "lattice Green function value",
+      "under_LANDED_kernel": "regulated Euclidean distance"
+    },
+    {
+      "consumer_row": "F2 named epsilon regulator (126 files)",
+      "exact_delta": "the coordinate dissolves; 884 already showed nothing lawful consumed it, since no epsilon was ever admissible",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "census family",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "no regulator",
+      "under_LANDED_kernel": "epsilon supplied per runner"
+    },
+    {
+      "consumer_row": "F3 screened exp(-mu r)/r (33 files)",
+      "exact_delta": "a harmonic kernel cannot carry a screening mass: harmonicity at the origin forces G(0) - G(e1) = 1/6, which holds iff mu = 0",
+      "obstruction": "the massless-vs-screened branch of the forced operator alpha*I + gamma*Delta.  884's R3 left this branch FREE, so the obstruction is SUPPLIED, not derived -- and it is repaired by using the SCREENED lattice Green function instead, which keeps every other repair result (the epsilon elimination survives the screened case too: computed above).",
+      "planted": false,
+      "repairable_by_restatement": true,
+      "source": "census family",
+      "status": "BREAKS",
+      "under_FORCED_CORE": "harmonic core has mu = 0 identically",
+      "under_LANDED_kernel": "nonzero screening mass (e.g. GREEN_MU = 0.08, BACKREACTION_MU = 0.06)"
+    },
+    {
+      "consumer_row": "F4 named power exponent (22 files)",
+      "exact_delta": "0 where FIELD_POWER = 1; any consumer using FIELD_POWER != 1 was already off-shell under 884's R3, independent of this repair",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "census family",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "p = 1 forced",
+      "under_LANDED_kernel": "FIELD_POWER supplied (the landed runners use 1)"
+    },
+    {
+      "consumer_row": "F5 published note kernel form (7 files)",
+      "exact_delta": "a text patch in each of the note rows enumerated above",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "census family",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "restated as the lattice Green function",
+      "under_LANDED_kernel": "verbatim `phi_GB(x) = strength / (r(x, mass) + 0.1)`"
+    },
+    {
+      "consumer_row": "F6 declared regulator constant (87 files)",
+      "exact_delta": "the declaration dissolves along with the coordinate; same reasoning as F2, reached by a different needle",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "census family",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "no such constant exists",
+      "under_LANDED_kernel": "a module-level EPS/EPSILON constant"
+    },
+    {
+      "consumer_row": "F7 declared screening mass (85 files)",
+      "exact_delta": "same obstruction as F3, reached by the declaration rather than the kernel expression",
+      "obstruction": "the massless-vs-screened branch, which 884's R3 left FREE; repairable by the screened lattice Green function",
+      "planted": false,
+      "repairable_by_restatement": true,
+      "source": "census family",
+      "status": "BREAKS",
+      "under_FORCED_CORE": "the harmonic core is the mu = 0 slice",
+      "under_LANDED_kernel": "a module-level MU constant on the mu != 0 branch"
+    },
+    {
+      "consumer_row": "F8 phi_GB symbol (11 files)",
+      "exact_delta": "a definitional patch, not a structural one",
+      "obstruction": null,
+      "planted": false,
+      "repairable_by_restatement": null,
+      "source": "census family",
+      "status": "CHANGES",
+      "under_FORCED_CORE": "the symbol survives; its definition is replaced",
+      "under_LANDED_kernel": "the Gate-B scalar named by its published symbol"
+    },
+    {
+      "consumer_row": "P1 (must BREAK): a consumer that asserts phi is a function of the Euclidean radius alone",
+      "exact_delta": "equal-radius separator G(3,0,0) - G(2,2,1) = 31615903082781646390086315478519155169393/23113081988708457571415679082231952046540108 != 0",
+      "obstruction": "degree-4 cubic anisotropy",
+      "planted": true,
+      "repairable_by_restatement": false,
+      "source": "PLANTED",
+      "status": "BREAKS",
+      "under_FORCED_CORE": "false for the core",
+      "under_LANDED_kernel": "true for 1/(r+eps)"
+    },
+    {
+      "consumer_row": "P2 (must BREAK): a consumer that asserts SOME epsilon > 0 makes the landed kernel harmonic",
+      "exact_delta": "GCD over Q of the mean-value conditions is a unit -- and stays a unit when a free screening mass is added",
+      "obstruction": "884-R5, strengthened here",
+      "planted": true,
+      "repairable_by_restatement": false,
+      "source": "PLANTED",
+      "status": "BREAKS",
+      "under_FORCED_CORE": "refuted",
+      "under_LANDED_kernel": "assumed"
+    },
+    {
+      "consumer_row": "P3 (control, must SURVIVE): a consumer that asserts the action is S = L(1 - phi)",
+      "exact_delta": "0",
+      "obstruction": null,
+      "planted": true,
+      "repairable_by_restatement": null,
+      "source": "PLANTED",
+      "status": "SURVIVES-UNCHANGED",
+      "under_FORCED_CORE": "true",
+      "under_LANDED_kernel": "true"
+    }
+  ],
+  "equal_radius_separator": {
+    "any_radial_kernel_gives_ratio_exactly_one": true,
+    "core_difference_decimal": "0.001367879156",
+    "core_difference_exact_on_the_cube_solve": "31615903082781646390086315478519155169393/23113081988708457571415679082231952046540108",
+    "core_separates_them": true,
+    "euclidean_radius": 3,
+    "landed_ratio_enclosure_at_equal_radius": [
+      "18738350204026752207945728/18738350204026752207945733",
+      "18738350204026752207945733/18738350204026752207945728"
+    ],
+    "sites": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "status": "CERTIFIED on the radius-8 exact Dirichlet cube; the infinite-volume statement is corroborated by the monotone sequence of cube solves but is not proved here"
+  },
+  "exact_scope": "Every ALGEBRAIC statement here is exact and certified: the 1/6 normalization, the harmonicity relations, the equivalence of that normalization with mu = 0, the unit GCDs (massless and screened), the invertibility of the interior operator, and the exact Dirichlet-cube solves.  Every NUMERICAL inequality about the INFINITE lattice -- the anisotropy magnitude, the shape ratios, the window sums -- is certified on the finite models computed here and only corroborated in the infinite-volume limit, because this runner produces one-sided rational lower bounds and no matching upper bound.  That gap is real and is not papered over.",
+  "landed_kernel_fails_mean_value_everywhere_tested": true,
+  "load_bearing_negatives": [
+    "G(0) - G(e1) = 1/6 IS the statement mu = 0, so the 'zero-parameter core' is the massless slice of the family 884's R3 left free; the repair presupposes mu, it does not derive it",
+    "the GB-S1b-a bridge row BREAKS: the core is not a function of the Euclidean radius (it separates (3,0,0) from (2,2,1) at r = 3)",
+    "the repair buys ONE residual coordinate, not two, and touches none of the five WINDOW coordinates or the coupling gain"
+  ],
+  "load_bearing_positives": [
+    "the forced harmonic core replaces the landed kernel with a computed patch list; the interface note's own first supplied bullet discharges verbatim",
+    "884's epsilon elimination STRENGTHENS: no (epsilon, mu^2) pair puts the landed ansatz on-shell even with a free screening mass",
+    "c4 leaves the residual: the lattice determines the degree-4 anisotropy"
+  ],
+  "no_epsilon_even_with_a_free_screening_mass": true,
+  "obstruction_provenance": {
+    "F3 screened consumers": "SUPPLIED obstruction: the massless/screened branch of the forced operator.  Repairable by taking the SCREENED lattice Green function; the epsilon elimination is computed here to survive that generalization.",
+    "GB-S1b-a radial monotonicity": "DERIVED obstruction: 884's R2 proved covariance does not force radial-only and that the first admissible anisotropy is degree 4 and unsuppressed.  The core realizes it.  The row is repairable by restating it as cubic-covariant positivity and decay instead of Euclidean-radial monotonicity."
+  },
+  "one_sixth_normalization_is_exactly_mu_equals_zero": true,
+  "outcome_class": "bounded_repair_verdict_with_one_new_negative",
+  "p_equals_one_holds_for_the_core": true,
+  "patch_list": [
+    {
+      "consumer_row": "GB-S1b: runner scalar, its normalization, and its finite-core regulator",
+      "new_value_or_statement": "phi = lambda*sigma*G(x); NO regulator exists",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "supplied bullet: 'the finite-core scalar 1/(r+0.1) rather than the exact periodic graph-Laplacian Green solution'",
+      "new_value_or_statement": "DISCHARGED",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "GB-S1b-a: the finite runner scalar is positive, finite, RADIALLY MONOTONE in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the normalization",
+      "new_value_or_statement": "positive YES (exact solve strictly positive); finite YES (G(0) is a finite lattice value, no regulator needed); linear-in-normalization YES; RADIALLY MONOTONE IN EUCLIDEAN DISTANCE **NO**; matches the runner helper NO by construction",
+      "status": "BREAKS"
+    },
+    {
+      "consumer_row": "GB-S1b-b: physical Poisson/source equation, boundary condition, regulator selection, and absolute normalization",
+      "new_value_or_statement": "Poisson equation DERIVED (Delta G = -delta is 884-R3's forced operator at alpha = 0); boundary condition DERIVED (decay, with uniqueness certified); regulator selection DISSOLVED; absolute normalization still SUPPLIED",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "GB-S2b: detector-window mass-gain, TOWARD, F~M readout semantics",
+      "new_value_or_statement": "TOWARD forced +1 (Green positivity, recomputed); window mass-gain and F~M values move with the kernel; window boundaries still supplied",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "chart coordinate `epsilon`",
+      "new_value_or_statement": "ABSENT",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "chart coordinate `m`",
+      "new_value_or_statement": "ABSENT",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "chart coordinate `mu`",
+      "new_value_or_statement": "FIXED TO ZERO BY FIAT",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "chart coordinate `c4`",
+      "new_value_or_statement": "DETERMINED BY THE LATTICE",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "F1 euclidean r + 0.1 (240 files)",
+      "new_value_or_statement": "lattice Green function value",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "F2 named epsilon regulator (126 files)",
+      "new_value_or_statement": "no regulator",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "F3 screened exp(-mu r)/r (33 files)",
+      "new_value_or_statement": "harmonic core has mu = 0 identically",
+      "status": "BREAKS"
+    },
+    {
+      "consumer_row": "F5 published note kernel form (7 files)",
+      "new_value_or_statement": "restated as the lattice Green function",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "F6 declared regulator constant (87 files)",
+      "new_value_or_statement": "no such constant exists",
+      "status": "CHANGES"
+    },
+    {
+      "consumer_row": "F7 declared screening mass (85 files)",
+      "new_value_or_statement": "the harmonic core is the mu = 0 slice",
+      "status": "BREAKS"
+    },
+    {
+      "consumer_row": "F8 phi_GB symbol (11 files)",
+      "new_value_or_statement": "the symbol survives; its definition is replaced",
+      "status": "CHANGES"
+    }
+  ],
+  "question": "Can the landed Gate-B kernel construction be lawfully REPLACED by the forced harmonic core, and what exactly breaks?",
+  "real_breaking_rows": [
+    "GB-S1b-a: the finite runner scalar is positive, finite, RADIALLY MONOTONE in the supplied Euclidean coordinate distance, exactly matches the runner helper, and is linear in the normalization",
+    "F3 screened exp(-mu r)/r (33 files)",
+    "F7 declared screening mass (85 files)"
+  ],
+  "residual_accounting": {
+    "basis": "884's OWN chart, read off the pinned receipt.  The Cycle-896 receipt named by the brief is NOT present on this branch and is NOT reconstructed from memory.",
+    "chart_coordinates_removed": [
+      "epsilon",
+      "m"
+    ],
+    "chart_dimension_after": 13,
+    "chart_dimension_before": 15,
+    "coupling_block_unchanged": [
+      "g"
+    ],
+    "cycle896_receipt_present_on_this_branch": false,
+    "honest_note": "The reduction is ONE coordinate, not two.  A reading that also credits mu would be wrong: the harmonic core does not eliminate the screening mass, it selects mu = 0.",
+    "kernel_shape_block_after": [
+      "mu",
+      "sigma",
+      "theta"
+    ],
+    "kernel_shape_block_before": [
+      "c4",
+      "mu",
+      "sigma",
+      "theta"
+    ],
+    "kernel_shape_residual_after": 3,
+    "kernel_shape_residual_before": 4,
+    "landed_chart_dimension_for_reference": 13,
+    "residual_coordinates_removed": [
+      "c4"
+    ],
+    "residual_free_after": 9,
+    "residual_free_before": 10,
+    "window_block_unchanged": [
+      "D",
+      "N",
+      "a",
+      "b",
+      "barrier"
+    ]
+  },
+  "restriction_gate_checks": {
+    "core_step_matches_receipt": true,
+    "gcd_over_Q_is_a_unit": true,
+    "gcd_string_matches_receipt": true,
+    "isolating_intervals_disjoint": true,
+    "landed_epsilon_residual_certifiably_nonzero_at_every_tested_site": true,
+    "landed_epsilon_satisfies_no_tested_site": true,
+    "receipt_class_D": true,
+    "receipt_class_N": true,
+    "receipt_class_a": true,
+    "receipt_class_b": true,
+    "receipt_class_barrier": true,
+    "receipt_class_c4": true,
+    "receipt_class_epsilon": true,
+    "receipt_class_g": true,
+    "receipt_class_lambda": true,
+    "receipt_class_m": true,
+    "receipt_class_mu": true,
+    "receipt_class_p": true,
+    "receipt_class_s": true,
+    "receipt_class_sigma": true,
+    "receipt_class_theta": true,
+    "receipt_classifies_c4_FREE": true,
+    "receipt_classifies_epsilon_ELIMINATED": true,
+    "receipt_classifies_m_ELIMINATED": true,
+    "receipt_classifies_mu_FREE": true,
+    "receipt_classifies_p_FORCED": true,
+    "receipt_classifies_s_FORCED": true,
+    "receipt_field_epsilon_gcd_over_Q": true,
+    "receipt_field_exact_core_step_G0_minus_Ge1": true,
+    "receipt_field_first_non_radial_invariant_degree": true,
+    "receipt_field_honest_chart_dimension": true,
+    "receipt_field_honest_chart_residual_free_dimension": true,
+    "receipt_field_landed_chart_dimension": true,
+    "receipt_field_landed_chart_residual_free_dimension": true
+  },
+  "restriction_gate_passed": true,
+  "screened_extension_gcd_over_Q": "1/1",
+  "source_pins": [
+    {
+      "git_blob": "7b244a7ce3a4d61589bea0f222cca5d847ab0200",
+      "path": "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+      "sha256": "685973be36ac89a9632d8ac4113a6e49e9db32e98c9977ec5965a3bb6bff6aeb"
+    },
+    {
+      "git_blob": "6166dae8afab56ac3f4fb1a8528afcf8b8fee101",
+      "path": "scripts/frontier_cycle884_gbs2_independent_check_2026_07_28.py",
+      "sha256": "6c32a50be08d22c90a93cdbf9a4b3380bc500381c9ac88009f43f6a3732db2be"
+    },
+    {
+      "git_blob": "5a3c9db3ff688f26a70cc9b82aed53ec0ff41bb8",
+      "path": "logs/runner-cache/gbs2_kernel_window_cycle884_receipt_2026_07_28.json",
+      "sha256": "5d5c669ebc7c58613892425745b09c35eb94dc216e8c38fe0f161e4f53541f98"
+    },
+    {
+      "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+      "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+    },
+    {
+      "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+      "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+      "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+    },
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    }
+  ],
+  "steelman": "The strongest case against this cycle is that 'REPAIR-VIABLE' is cheap when the repair's own premise -- that the field is the graph-Laplacian Green function -- is itself supplied.  That is why the mu finding is reported as a NEGATIVE against the repair: the 1/6 normalization that 884 read as 'zero parameters' is the massless slice of a one-parameter family, so the repair buys ONE residual coordinate (c4), not two.  A second attack is that the core's absolute values are transcendental and only lower-bounded here; the answer is that no load-bearing claim uses them, only the exact relations do.",
+  "toward_orientation_holds_for_the_core": true,
+  "unrepairable_breaking_rows": [],
+  "verdict": "REPAIR-VIABLE",
+  "what_the_repair_buys": [
+    "884's R5 negative DISSOLVES as an obstruction: the kernel is no longer non-harmonic, because it is the harmonic object.  The epsilon and m coordinates leave the chart entirely rather than sitting in it as inadmissible imports.",
+    "the interface note's first supplied bullet -- 'the finite-core scalar 1/(r+0.1) rather than the exact periodic graph-Laplacian Green solution' -- is DISCHARGED verbatim.",
+    "GB-S1b-b's Poisson-equation, boundary-condition and regulator-selection sub-rows discharge (3 of its 4).",
+    "c4 stops being a free coefficient: the lattice determines the degree-4 anisotropy, so the KERNEL_SHAPE sub-block shrinks by 1."
+  ],
+  "what_the_repair_does_NOT_buy": [
+    "mu is NOT discharged.  G(0) - G(e1) = 1/6 is exactly the statement mu = 0, so choosing the harmonic core PRESUPPOSES the massless branch that 884's R3 left free.  mu stays in the residual as a supplied branch label.",
+    "sigma is untouched: it is the shared source-action scalar, not a kernel-shape coordinate in any real sense.",
+    "theta is untouched: the per-edge action-to-phase gain is not a property of the kernel.",
+    "the whole WINDOW block (a, b, D, barrier, N) is untouched: 884's R1 already showed those are Record-window questions, and the sharpest missing lemma named by 884 -- GBW1, the record-determined window -- is not advanced one step by this repair.",
+    "the COUPLING gain g is untouched.",
+    "no Newton constant, no closure of Gate B, no promotion of the Gate-B dynamics row."
+  ]
+}

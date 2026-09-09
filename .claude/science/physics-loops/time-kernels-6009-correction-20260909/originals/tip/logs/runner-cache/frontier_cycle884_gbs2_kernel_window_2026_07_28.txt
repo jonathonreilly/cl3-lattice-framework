@@ -1,0 +1,1139 @@
+CYCLE 884 -- GB-S2: THE KERNEL + WINDOW OBLIGATION, DECOMPOSED AND ATTACKED
+
+[PASS] A_PINS
+    finding: All 8 cited artifacts matched both their SHA-256 and their git-blob pins and every verbatim needle resolved. The Cycle-871 note named by the brief is ABSENT on this branch, so its free dimension 8 is NOT re-readable here and the count below is independent.
+
+[PASS] B_OBLIGATION
+    finding: The pinned dynamics note splits GB-S2 into the derived GB-S2a finite path-sum half and the supplied GB-S2b half naming four objects (central barrier, detector-window mass gain, TOWARD, F~M). The landed kernel form and its one-parameter rescaling stabilizer are rebuilt here exactly: the action is invariant under (lambda, sigma) -> (t*lambda, sigma/t) at every tested t and r, and an independent rescaling of lambda alone breaks it, so the stabilizer is exactly one-dimensional.
+
+[PASS] C_CHART
+    finding: The landed kernel+window chart carries 13 coordinates split KERNEL_SHAPE 6 / WINDOW 5 / COUPLING 2. The forcing routes below expose 2 further coordinates the landed chart never carried, so the honest chart is 15-dimensional.
+
+[PASS] D_R1_LOCALITY_WINDOW
+    finding: R1: infinite window-shape freedom collapses to 2 boundary coordinates, and b > D is gauge. Zero chart coordinates pinned.
+
+[PASS] E_R2_COVARIANCE_KERNEL
+    finding: Covariance forces the stencil to alpha*I + gamma*Delta but does NOT force radial-only: the first admissible anisotropy is at degree 4 and is unsuppressed at large r.
+
+[PASS] F_R3_ADDITIVITY_SUPERPOSITION
+    finding: Additivity + locality + covariance force the operator to alpha*I + gamma*Delta and hence force p = 1 in d = 3; the screening mass stays free.
+
+[PASS] G_R4_RESPONSE_SURFACE
+    finding: R4 yields no bound: the 868 object is a blindness no-go, and a blind functional has rank contribution 0.
+
+[PASS] H_R5_EPSILON_REGULATOR
+    finding: No value of epsilon makes the landed kernel on-shell (GCD over Q is a unit), and the forced object's core carries zero free parameters: G(0) - G(e1) = 1/6 exactly.
+
+[PASS] I_TOWARD_SIGN_FORCING
+    finding: Exact monotone integer iteration from zero on a 9^3 cube gives a strictly positive lower bound for the lattice Green function at all 729 sites, and domain monotonicity lifts it to Z^3. With the landed form S = L(1 - phi) and phi > 0, the action decreases toward the source, so the TOWARD orientation is FORCED to +1 and flips with the source sign.
+
+[PASS] J_GAUGE_VERIFICATION
+    finding: Of 4 candidate gauge generators exactly 1 leave every readout of the exact path-sum model unchanged: ['stabilizer_871']. The terminal normalization N is NOT gauge -- it moves the absolute window mass-gain while leaving the TOWARD sign and the response ratio fixed -- and neither is the per-edge phase gain, which moves the interference pattern itself.
+
+[PASS] K_REDUCED_MAP
+    finding: Landed 13-coordinate chart: 2 forced, 1 gauge, 2 eliminated as inadmissible, 8 genuinely free. Honest 15-coordinate chart: 10 genuinely free, split COUPLING 1, KERNEL_SHAPE 4, WINDOW 5. Either count is strictly larger than the bridge's 1.
+
+[PASS] L_SHARPEST_MISSING_LEMMA
+    finding: Argmax over 6 candidate lemmas: GBW1_record_determined_window pins 5 of the 10 residual coordinates (1/2), which makes it STRICTLY WEAKER than GB-S2 and strictly stronger than the bridge's single scalar. It is a window lemma, not a kernel lemma: the window block is where the obligation concentrates.
+
+[PASS] M_OUTCOME
+    finding: GB-S2's anatomy: 2 forced coordinates, 1 gauge, 2 inadmissible, 10 genuinely free on the honest chart (8 on the landed chart). The residual concentrates in the WINDOW block.
+
+[PASS] N_HONESTY_GATE
+    finding: No closure claim appears anywhere in the science payload; the cycle's three load-bearing results are negatives against the landed construction.
+
+{
+  "A_PINS": {
+    "axiom_needles_present": {
+      "axioms_and_primitives_complete": true,
+      "count_once": true,
+      "finite_additive_readout": true,
+      "lattice_sites": true,
+      "no_site_privileged": true,
+      "only_records_readable": true
+    },
+    "axiom_node_canonical_ids": [
+      "minimal_axioms",
+      "scale_reference_primitive",
+      "kinetic_isotropy_primitive",
+      "realized_state_primitive"
+    ],
+    "axiom_node_current_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "axiom_node_resolves_to_the_pinned_axiom_file": true,
+    "cycle868_needles_present": {
+      "blindness_title": true,
+      "status": true
+    },
+    "cycle871_attribution_needle_present": true,
+    "cycle871_note_path_named_by_the_brief": "docs/SOURCE_ACTION_BRIDGE_PRICING_CYCLE871_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "cycle871_note_present_on_this_branch": false,
+    "dynamics_note_needles_present": {
+      "gbs2_split": true,
+      "gbs2b_open": true,
+      "gbs2b_row": true
+    },
+    "finding": "All 8 cited artifacts matched both their SHA-256 and their git-blob pins and every verbatim needle resolved. The Cycle-871 note named by the brief is ABSENT on this branch, so its free dimension 8 is NOT re-readable here and the count below is independent.",
+    "interface_note_needles_present": {
+      "action_form": true,
+      "core_scalar_supplied": true,
+      "gbs2_named_supplied": true,
+      "kernel_form": true,
+      "rescaling_stabilizer": true
+    },
+    "interface_runner_degeneracy_needle_present": true,
+    "pass": true,
+    "rows": [
+      {
+        "bytes": 8846,
+        "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+        "git_blob_matches_pin": true,
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 6382,
+        "git_blob": "40b0b4cd552cc41b55e4f3c59f9cabf621b3296b",
+        "git_blob_matches_pin": true,
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 4679,
+        "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+        "git_blob_matches_pin": true,
+        "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+        "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 5828,
+        "git_blob": "d604bc5f180e87844f477d52f82376df61e0134e",
+        "git_blob_matches_pin": true,
+        "path": "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py",
+        "sha256": "ac9ea8b6b7556ce8679d734e98a152bf3af7a9988d9f72f5722ad4c8f7ec9453",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 28116,
+        "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+        "git_blob_matches_pin": true,
+        "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+        "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 9492,
+        "git_blob": "3e0ddcdbef379383835b7b05a4b783d29fa51742",
+        "git_blob_matches_pin": true,
+        "path": "docs/RESPONSE_SURFACE_CONFORMAL_SIGN_CENSUS_CYCLE868_NARROW_NO_GO_NOTE_2026-07-28.md",
+        "sha256": "3b3726ba023d8a6821870306f224e8a6e56a2d645641680edc79b5e79fcffe4e",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 82271,
+        "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
+        "git_blob_matches_pin": true,
+        "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+        "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a",
+        "sha256_matches_pin": true
+      },
+      {
+        "bytes": 96183,
+        "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+        "git_blob_matches_pin": true,
+        "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+        "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c",
+        "sha256_matches_pin": true
+      }
+    ]
+  },
+  "B_OBLIGATION": {
+    "finding": "The pinned dynamics note splits GB-S2 into the derived GB-S2a finite path-sum half and the supplied GB-S2b half naming four objects (central barrier, detector-window mass gain, TOWARD, F~M). The landed kernel form and its one-parameter rescaling stabilizer are rebuilt here exactly: the action is invariant under (lambda, sigma) -> (t*lambda, sigma/t) at every tested t and r, and an independent rescaling of lambda alone breaks it, so the stabilizer is exactly one-dimensional.",
+    "gbs2_derived_half_GB_S2a_named": true,
+    "gbs2_supplied_half_GB_S2b_named": true,
+    "gbs2b_supplied_objects_named_in_the_pinned_note": {
+      "F~M": true,
+      "TOWARD": true,
+      "central barrier": true,
+      "detector-window mass gain": true
+    },
+    "independent_lambda_rescaling_breaks_the_action": true,
+    "landed_kernel_form": "S = L * (1 - lambda*sigma/(r + epsilon))",
+    "landed_kernel_form_present": true,
+    "pass": true,
+    "patches": {
+      "P_core": "|x| in {0, 1, 2}: the near-core patch where the discrete mean-value conditions are tested (R5).",
+      "P_far": "|x| >= 1: the patch where the power-law reading of the exponent p applies (R3).",
+      "P_win": "a <= |x| <= b at depth <= D: the window patch where the detector-window readouts are defined (R1)."
+    },
+    "stabilizer_checks": [
+      {
+        "action_identical": true,
+        "r": "0/1",
+        "t": "2/1"
+      },
+      {
+        "action_identical": true,
+        "r": "1/1",
+        "t": "2/1"
+      },
+      {
+        "action_identical": true,
+        "r": "2/1",
+        "t": "2/1"
+      },
+      {
+        "action_identical": true,
+        "r": "7/3",
+        "t": "2/1"
+      },
+      {
+        "action_identical": true,
+        "r": "0/1",
+        "t": "1/3"
+      },
+      {
+        "action_identical": true,
+        "r": "1/1",
+        "t": "1/3"
+      },
+      {
+        "action_identical": true,
+        "r": "2/1",
+        "t": "1/3"
+      },
+      {
+        "action_identical": true,
+        "r": "7/3",
+        "t": "1/3"
+      },
+      {
+        "action_identical": true,
+        "r": "0/1",
+        "t": "-5/7"
+      },
+      {
+        "action_identical": true,
+        "r": "1/1",
+        "t": "-5/7"
+      },
+      {
+        "action_identical": true,
+        "r": "2/1",
+        "t": "-5/7"
+      },
+      {
+        "action_identical": true,
+        "r": "7/3",
+        "t": "-5/7"
+      }
+    ],
+    "stabilizer_dimension": 1,
+    "stabilizer_generator": "(lambda, sigma) -> (t*lambda, sigma/t)",
+    "stabilizer_holds_on_every_check": true,
+    "stabilizer_sentence_present": true
+  },
+  "C_CHART": {
+    "block_members": {
+      "COUPLING": [
+        "s",
+        "g"
+      ],
+      "KERNEL_SHAPE": [
+        "lambda",
+        "sigma",
+        "p",
+        "epsilon",
+        "m",
+        "theta"
+      ],
+      "WINDOW": [
+        "a",
+        "b",
+        "D",
+        "barrier",
+        "N"
+      ]
+    },
+    "block_sizes": {
+      "COUPLING": 2,
+      "KERNEL_SHAPE": 6,
+      "WINDOW": 5
+    },
+    "coordinate_names_unique": true,
+    "coordinates_discovered_by_this_cycle": [
+      {
+        "block": "KERNEL_SHAPE",
+        "coordinate": "mu",
+        "exact_meaning": "screening mass of the forced operator alpha*I + gamma*Delta, mu^2 = alpha/gamma; the landed kernel silently sets it to zero",
+        "landed_value": "not carried (R3)"
+      },
+      {
+        "block": "KERNEL_SHAPE",
+        "coordinate": "c4",
+        "exact_meaning": "coefficient of the degree-4 cubic-invariant angular harmonic; the landed kernel silently sets it to zero",
+        "landed_value": "not carried (R2)"
+      }
+    ],
+    "finding": "The landed kernel+window chart carries 13 coordinates split KERNEL_SHAPE 6 / WINDOW 5 / COUPLING 2. The forcing routes below expose 2 further coordinates the landed chart never carried, so the honest chart is 15-dimensional.",
+    "honest_chart_dimension": 15,
+    "landed_chart": [
+      {
+        "block": "KERNEL_SHAPE",
+        "coordinate": "lambda",
+        "exact_meaning": "action coupling multiplying the source scalar in L(1 - lambda*sigma/(r+eps))",
+        "landed_value": "1 (runner default)"
+      },
+      {
+        "block": "KERNEL_SHAPE",
+        "coordinate": "sigma",
+        "exact_meaning": "source strength; only the product lambda*sigma enters any readout",
+        "landed_value": "5e-5 (runner default)"
+      },
+      {
+        "block": "KERNEL_SHAPE",
+        "coordinate": "p",
+        "exact_meaning": "far-field radial exponent of the scalar: phi ~ lambda*sigma / r^p",
+        "landed_value": "1"
+      },
+      {
+        "block": "KERNEL_SHAPE",
+        "coordinate": "epsilon",
+        "exact_meaning": "finite-core regulator scale in the landed 1/(r+epsilon)",
+        "landed_value": "1/10"
+      },
+      {
+        "block": "KERNEL_SHAPE",
+        "coordinate": "m",
+        "exact_meaning": "regulator insertion exponent: phi = lam*sig/(r^m + eps^m)^(p/m)",
+        "landed_value": "1 (implicit)"
+      },
+      {
+        "block": "KERNEL_SHAPE",
+        "coordinate": "theta",
+        "exact_meaning": "per-edge action-to-phase gain of the complex propagation amplitude",
+        "landed_value": "1 (implicit)"
+      },
+      {
+        "block": "WINDOW",
+        "coordinate": "a",
+        "exact_meaning": "detector-window inner boundary: where the window opens",
+        "landed_value": "supplied runner-local"
+      },
+      {
+        "block": "WINDOW",
+        "coordinate": "b",
+        "exact_meaning": "detector-window outer boundary: where the window closes",
+        "landed_value": "supplied runner-local"
+      },
+      {
+        "block": "WINDOW",
+        "coordinate": "D",
+        "exact_meaning": "readout depth: the layer at which the terminal detector distribution is read",
+        "landed_value": "supplied runner-local"
+      },
+      {
+        "block": "WINDOW",
+        "coordinate": "barrier",
+        "exact_meaning": "central blocked-barrier locus: the blocked set that shapes the path sum",
+        "landed_value": "supplied runner-local"
+      },
+      {
+        "block": "WINDOW",
+        "coordinate": "N",
+        "exact_meaning": "terminal detector-distribution normalization",
+        "landed_value": "supplied runner-local"
+      },
+      {
+        "block": "COUPLING",
+        "coordinate": "s",
+        "exact_meaning": "TOWARD orientation: the sign mapping the window mass-gain gradient onto 'toward the mass'",
+        "landed_value": "+1"
+      },
+      {
+        "block": "COUPLING",
+        "coordinate": "g",
+        "exact_meaning": "F~M calibration gain: the slope constant relating log window mass-gain to log source mass",
+        "landed_value": "supplied runner-local"
+      }
+    ],
+    "landed_chart_dimension": 13,
+    "pass": true,
+    "patches": {
+      "P_core": "|x| in {0, 1, 2}: the near-core patch where the discrete mean-value conditions are tested (R5).",
+      "P_far": "|x| >= 1: the patch where the power-law reading of the exponent p applies (R3).",
+      "P_win": "a <= |x| <= b at depth <= D: the window patch where the detector-window readouts are defined (R1)."
+    }
+  },
+  "D_R1_LOCALITY_WINDOW": {
+    "additivity_forces_a_sum_window": true,
+    "additivity_rows": [
+      {
+        "W_empty": "0/1",
+        "additivity_holds_everywhere": true,
+        "disjoint_pairs_checked": 243
+      }
+    ],
+    "b_greater_than_D_is_gauge": true,
+    "chart_coordinates_pinned_by_R1": 0,
+    "cone_radius_equals_depth_at_every_tested_depth": true,
+    "exact_outcome": "R1 proves two things and pins nothing. (1) Nearest-neighbour adjacency gives an influence cone whose L1 radius equals the depth exactly at every tested depth, so the ray b > D reads identically zero and is gauge, not free -- a BOUND b <= D, not a value. (2) Record's finite additive readout with I(empty)=0 collapses the window functional from an arbitrary taper profile (infinite-dimensional) to a sum over sites, i.e. a sharp indicator window with exactly two boundary coordinates. That pre-chart collapse is what makes the obligation finite-dimensional at all; inside the chart R1 pins 0 coordinates.",
+    "finding": "R1: infinite window-shape freedom collapses to 2 boundary coordinates, and b > D is gauge. Zero chart coordinates pinned.",
+    "influence_cone_rows": [
+      {
+        "depth": 1,
+        "max_L1_radius": 1,
+        "radius_equals_depth": true,
+        "sites_reached": 7
+      },
+      {
+        "depth": 2,
+        "max_L1_radius": 2,
+        "radius_equals_depth": true,
+        "sites_reached": 25
+      },
+      {
+        "depth": 3,
+        "max_L1_radius": 3,
+        "radius_equals_depth": true,
+        "sites_reached": 63
+      },
+      {
+        "depth": 4,
+        "max_L1_radius": 4,
+        "radius_equals_depth": true,
+        "sites_reached": 129
+      },
+      {
+        "depth": 5,
+        "max_L1_radius": 5,
+        "radius_equals_depth": true,
+        "sites_reached": 231
+      },
+      {
+        "depth": 6,
+        "max_L1_radius": 6,
+        "radius_equals_depth": true,
+        "sites_reached": 377
+      }
+    ],
+    "non_additive_taper_candidate_correctly_rejected": true,
+    "pass": true,
+    "route_status": "ATTEMPTED",
+    "window_shape_freedom_after_R1": "2 (the boundaries a and b)",
+    "window_shape_freedom_before_R1": "infinite (any taper profile)"
+  },
+  "E_R2_COVARIANCE_KERNEL": {
+    "angular_invariant_growth": [
+      {
+        "K": 1,
+        "independent_degree_0_invariants": 2
+      },
+      {
+        "K": 2,
+        "independent_degree_0_invariants": 5
+      },
+      {
+        "K": 3,
+        "independent_degree_0_invariants": 9
+      },
+      {
+        "K": 4,
+        "independent_degree_0_invariants": 14
+      },
+      {
+        "K": 5,
+        "independent_degree_0_invariants": 20
+      },
+      {
+        "K": 6,
+        "independent_degree_0_invariants": 27
+      }
+    ],
+    "angular_invariants_unbounded": true,
+    "anisotropy_suppressed_at_large_r": false,
+    "chart_coordinates_exposed_by_R2": [
+      "c4"
+    ],
+    "chart_coordinates_pinned_by_R2": 0,
+    "determinants_present": [
+      1
+    ],
+    "exact_outcome": "The 24 proper cubic rotations are rebuilt and their invariants computed. Covariance DOES force the nearest-neighbour stencil to the 2-dimensional family alpha*I + gamma*Delta (two orbits: the centre and the six face neighbours). Covariance does NOT force the kernel to be a function of r alone: the first non-radial invariant harmonic appears at degree 4, and because it sits at homogeneity degree 0 relative to r^4 it is NOT suppressed at large r. The landed kernel silently sets that coefficient to zero, so the honest chart carries one coordinate (c4) the landed chart did not. R2 pins 0 chart coordinates and ADDS 1.",
+    "finding": "Covariance forces the stencil to alpha*I + gamma*Delta but does NOT force radial-only: the first admissible anisotropy is at degree 4 and is unsuppressed at large r.",
+    "first_non_radial_invariant_degree": 4,
+    "harmonic_invariant_dimension_by_degree": {
+      "0": "1/1",
+      "1": "0/1",
+      "10": "1/1",
+      "11": "0/1",
+      "12": "2/1",
+      "2": "0/1",
+      "3": "0/1",
+      "4": "1/1",
+      "5": "0/1",
+      "6": "1/1",
+      "7": "0/1",
+      "8": "1/1",
+      "9": "1/1"
+    },
+    "nearest_neighbour_stencil_dimension": 7,
+    "pass": true,
+    "polynomial_invariant_dimension_by_degree": {
+      "0": "1/1",
+      "1": "0/1",
+      "10": "5/1",
+      "11": "1/1",
+      "12": "7/1",
+      "2": "1/1",
+      "3": "0/1",
+      "4": "2/1",
+      "5": "0/1",
+      "6": "3/1",
+      "7": "0/1",
+      "8": "4/1",
+      "9": "1/1"
+    },
+    "radial_only_kernel_is_forced_by_covariance": false,
+    "rotation_group_order": 24,
+    "route_status": "ATTEMPTED",
+    "stencil_invariant_dimension": "2/1",
+    "stencil_invariant_operator_family": "alpha*I + gamma*Delta",
+    "stencil_orbits": [
+      {
+        "representative": [
+          0,
+          0,
+          0
+        ],
+        "size": 1
+      },
+      {
+        "representative": [
+          -1,
+          0,
+          0
+        ],
+        "size": 6
+      }
+    ],
+    "why_not_suppressed": "The non-radial invariants of lowest degree, e2 and e1^2, have the SAME homogeneity degree 4, so their ratio is homogeneous of degree 0. An admissible angular profile therefore survives unchanged at every radius; it is not a 1/r^2 correction."
+  },
+  "F_R3_ADDITIVITY_SUPERPOSITION": {
+    "both_branches_give_the_same_power_in_d3": true,
+    "chart_coordinates_exposed_by_R3": [
+      "mu"
+    ],
+    "chart_coordinates_pinned_by_R3": [
+      "p"
+    ],
+    "count_once_forbids_double_occupancy": true,
+    "exact_outcome": "YES: additivity over disjoint records DOES constrain the kernel's r-dependence, and decisively. Record additivity forces linear superposition (verified exactly); with translation invariance that is a convolution; with R1's finite range the field solves a finite-range difference equation; and R2's stencil result pins that operator to the 2-constant family alpha*I + gamma*Delta. The exact scaling identity w(G) = 2 - d then FORCES p = 1 in d = 3, in both the massless and the screened branch. What is NOT forced is the screening mass mu^2 = alpha/gamma: the landed kernel sets it to zero silently, so R3 pins 1 chart coordinate and adds 1.",
+    "far_field_exponent_by_dimension": {
+      "1": {
+        "d": 1,
+        "degenerate_logarithmic_case": false,
+        "power_law_exponent_p": "-1/1",
+        "weight_of_green_function": "1/1",
+        "weight_of_laplacian": "-2/1",
+        "weight_of_point_source": "-1/1"
+      },
+      "2": {
+        "d": 2,
+        "degenerate_logarithmic_case": true,
+        "power_law_exponent_p": "0/1",
+        "weight_of_green_function": "0/1",
+        "weight_of_laplacian": "-2/1",
+        "weight_of_point_source": "-2/1"
+      },
+      "3": {
+        "d": 3,
+        "degenerate_logarithmic_case": false,
+        "power_law_exponent_p": "1/1",
+        "weight_of_green_function": "-1/1",
+        "weight_of_laplacian": "-2/1",
+        "weight_of_point_source": "-3/1"
+      },
+      "4": {
+        "d": 4,
+        "degenerate_logarithmic_case": false,
+        "power_law_exponent_p": "2/1",
+        "weight_of_green_function": "-2/1",
+        "weight_of_laplacian": "-2/1",
+        "weight_of_point_source": "-4/1"
+      },
+      "5": {
+        "d": 5,
+        "degenerate_logarithmic_case": false,
+        "power_law_exponent_p": "3/1",
+        "weight_of_green_function": "-3/1",
+        "weight_of_laplacian": "-2/1",
+        "weight_of_point_source": "-5/1"
+      }
+    },
+    "finding": "Additivity + locality + covariance force the operator to alpha*I + gamma*Delta and hence force p = 1 in d = 3; the screening mass stays free.",
+    "kernel_function_space_after_R1_R2_R3": "alpha*I + gamma*Delta (2 constants)",
+    "kernel_function_space_before_R3": "arbitrary nonlinear response",
+    "massless_branch_power": "1/1",
+    "p_forced_in_d3": true,
+    "pass": true,
+    "route_status": "ATTEMPTED",
+    "screened_branch_power": "1/1",
+    "screening_mass_forced": false,
+    "superposition_is_additive": true,
+    "translation_breaking_kernel_is_detected": true
+  },
+  "G_R4_RESPONSE_SURFACE": {
+    "chart_block_vocabulary_found_in_the_868_primary": {
+      "COUPLING": [],
+      "KERNEL_SHAPE": [],
+      "WINDOW": []
+    },
+    "chart_coordinates_pinned_by_R4": 0,
+    "conformal_sign_sensitivity_entry": 0,
+    "cycle868_blindness_claim_present": true,
+    "cycle868_is_a_no_go": true,
+    "exact_outcome": "NO BOUND. The Cycle-868 primary on this branch is a no-go whose content is that the response surface CANNOT see the conformal-sector sign. Requiring its objects to stay well-defined is therefore vacuous for the window: a functional that is blind to a direction contributes an identically zero row to the forcing system and has rank contribution 0. The 868 lineage constrains the window block not at all. This is a ruled-out-by-prior route, pinned to the 868 primary; the 872 lineage named by the brief has no artifact on this branch and is not reconstructed from memory.",
+    "finding": "R4 yields no bound: the 868 object is a blindness no-go, and a blind functional has rank contribution 0.",
+    "observable_row_over_chart_blocks": {
+      "COUPLING": 0,
+      "KERNEL_SHAPE": 0,
+      "WINDOW": 0
+    },
+    "pass": true,
+    "rank_contribution_to_the_forcing_system": 0,
+    "route_status": "ATTEMPTED"
+  },
+  "H_R5_EPSILON_REGULATOR": {
+    "chart_coordinates_eliminated_by_R5": [
+      "epsilon",
+      "m"
+    ],
+    "chart_coordinates_pinned_by_R5": 0,
+    "core_free_parameters_in_the_forced_object": 0,
+    "exact_core_step_G0_minus_Ge1": "1/6",
+    "exact_outcome": "epsilon is a SUPPLIED regulator and worse: it is INADMISSIBLE. The forced field is harmonic away from the source, so the landed radial ansatz A/(r+epsilon) must satisfy the discrete mean-value condition at every non-origin site. Building those conditions symbolically at (1,0,0) over Q(sqrt 2) and at (2,0,0) over Q(sqrt 5), rationalizing, and taking the polynomial GCD over Q returns a UNIT: no epsilon at all -- not the landed 1/10, not any other value -- satisfies both. The exact isolating intervals for the two single-site roots are disjoint, corroborating it. Separately, the lattice fixes the core with zero free parameters: Delta G(0) = -1 with the six neighbours in one rotation orbit gives G(0) - G(e1) = 1/6 exactly. So no landed identity forces epsilon's scaling; the forced object has no epsilon to scale. epsilon and its insertion exponent m leave the chart as inadmissible imports, not as forced or gauge coordinates.",
+    "finding": "No value of epsilon makes the landed kernel on-shell (GCD over Q is a unit), and the forced object's core carries zero free parameters: G(0) - G(e1) = 1/6 exactly.",
+    "gcd_degree": 0,
+    "gcd_is_a_unit_so_no_common_epsilon_exists": true,
+    "gcd_over_Q_of_the_two_rationalized_conditions": "1/1",
+    "isolating_intervals_are_disjoint": true,
+    "landed_epsilon": "1/10",
+    "landed_epsilon_satisfies_any_tested_site": false,
+    "pass": true,
+    "route_status": "ATTEMPTED",
+    "rows": [
+      {
+        "isolating_interval_for_epsilon": [
+          "17873761872256312833739/18446744073709551616000",
+          "8936880936128156418869/9223372036854775808000"
+        ],
+        "landed_epsilon_satisfies_this_site": false,
+        "quadratic_field": "Q(sqrt 2)",
+        "rational_pole_candidates": [
+          "-1/1",
+          "-2/1",
+          "-3/1",
+          "0/1"
+        ],
+        "rationalized_degree": 6,
+        "rationalized_polynomial_U2_minus_D_V2_monic": "t^6 + 3/1*t^5 + -9/4*t^4 + -10/1*t^3 + t^2 + 8/1*t + -1/1",
+        "reduced_surd_numerator_U": "4/1*t^3 + 18/1*t^2 + 16/1*t + -4/1",
+        "reduced_surd_numerator_V": "-4/1*t^3 + -12/1*t^2 + -8/1*t",
+        "residual_sign_at_landed_epsilon_one_tenth": 1,
+        "shared_pole_factor_degree": 3,
+        "shared_pole_factor_divided_out": "t^3 + 3/1*t^2 + 2/1*t",
+        "site": [
+          1,
+          0,
+          0
+        ],
+        "surd_numerator_U_raw": "4/1*t^6 + 30/1*t^5 + 78/1*t^4 + 80/1*t^3 + 20/1*t^2 + -8/1*t",
+        "surd_numerator_V_raw": "-4/1*t^6 + -24/1*t^5 + -52/1*t^4 + -48/1*t^3 + -16/1*t^2"
+      },
+      {
+        "isolating_interval_for_epsilon": [
+          "12509233988354080748263/18446744073709551616000",
+          "6254616994177040376131/9223372036854775808000"
+        ],
+        "landed_epsilon_satisfies_this_site": false,
+        "quadratic_field": "Q(sqrt 5)",
+        "rational_pole_candidates": [
+          "-1/1",
+          "-2/1",
+          "-3/1",
+          "0/1"
+        ],
+        "rationalized_degree": 6,
+        "rationalized_polynomial_U2_minus_D_V2_monic": "t^6 + 6/1*t^5 + 15/4*t^4 + -32/1*t^3 + -97/2*t^2 + 10/1*t + 95/4",
+        "reduced_surd_numerator_U": "8/1*t^3 + 54/1*t^2 + 104/1*t + 50/1",
+        "reduced_surd_numerator_V": "-4/1*t^3 + -24/1*t^2 + -44/1*t + -24/1",
+        "residual_sign_at_landed_epsilon_one_tenth": 1,
+        "shared_pole_factor_degree": 3,
+        "shared_pole_factor_divided_out": "t^3 + 6/1*t^2 + 11/1*t + 6/1",
+        "site": [
+          2,
+          0,
+          0
+        ],
+        "surd_numerator_U_raw": "8/1*t^6 + 102/1*t^5 + 516/1*t^4 + 1316/1*t^3 + 1768/1*t^2 + 1174/1*t + 300/1",
+        "surd_numerator_V_raw": "-4/1*t^6 + -48/1*t^5 + -232/1*t^4 + -576/1*t^3 + -772/1*t^2 + -528/1*t + -144/1"
+      }
+    ],
+    "sites_tested": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  "I_TOWARD_SIGN_FORCING": {
+    "chart_coordinates_pinned": [
+      "s"
+    ],
+    "cube_radius": 4,
+    "domain_monotonicity_step": "G_Omega <= G_{Z^3} for the Dirichlet Green function on a subdomain, so strict positivity on the cube lifts to Z^3.",
+    "finding": "Exact monotone integer iteration from zero on a 9^3 cube gives a strictly positive lower bound for the lattice Green function at all 729 sites, and domain monotonicity lifts it to Z^3. With the landed form S = L(1 - phi) and phi > 0, the action decreases toward the source, so the TOWARD orientation is FORCED to +1 and flips with the source sign.",
+    "green_function_strictly_positive_on_the_cube": true,
+    "iteration_is_monotone_increasing_from_zero": true,
+    "iterations": 14,
+    "minimum_site": [
+      -4,
+      -4,
+      -4
+    ],
+    "minimum_value_lower_bound": "1925/725594112",
+    "orientation_responds_to_the_source_sign": true,
+    "orientation_under_a_flipped_source": -1,
+    "pass": true,
+    "sites": 729,
+    "toward_orientation_forced": 1
+  },
+  "J_GAUGE_VERIFICATION": {
+    "baseline_readouts": {
+      "F_over_M_response_ratio": "198365271307510760/1731998358978687",
+      "toward_sign": -1,
+      "window_mass_gain": "1154665572652458/102190769013025"
+    },
+    "finding": "Of 4 candidate gauge generators exactly 1 leave every readout of the exact path-sum model unchanged: ['stabilizer_871']. The terminal normalization N is NOT gauge -- it moves the absolute window mass-gain while leaving the TOWARD sign and the response ratio fixed -- and neither is the per-edge phase gain, which moves the interference pattern itself.",
+    "gauge_dimension": 1,
+    "gauge_directions": [
+      "stabilizer_871"
+    ],
+    "model": {
+      "N": "1/1",
+      "barrier_layer": 2,
+      "depth_D": 4,
+      "eps": "1/10",
+      "g": "1/1",
+      "lam": "1/1",
+      "sig": "1/5",
+      "transverse_L": 4,
+      "u": "1/3",
+      "window_a": 1,
+      "window_b": 3
+    },
+    "model_note": "A layered complex path sum with a central blocked barrier, detector window [a, b] and depth D, edge modulus 1 - lambda*sigma/(|x| + epsilon) and edge phase a RATIONAL point on the unit circle, so every amplitude is a Gaussian rational and every readout is exact.",
+    "pass": true,
+    "rows": [
+      {
+        "action_on_the_chart": {
+          "lam": "3/1"
+        },
+        "generator": "overall_amplitude",
+        "is_gauge": false,
+        "moved_readouts": {
+          "F_over_M_response_ratio": "4905766929572774824/967677541864453125",
+          "toward_sign": 1,
+          "window_mass_gain": "77414203349156250/4087630760521"
+        },
+        "observable_through": [
+          "F_over_M_response_ratio",
+          "toward_sign",
+          "window_mass_gain"
+        ],
+        "readout_unchanged": {
+          "F_over_M_response_ratio": false,
+          "toward_sign": false,
+          "window_mass_gain": false
+        }
+      },
+      {
+        "action_on_the_chart": {
+          "u": "u -> 2/5"
+        },
+        "generator": "phase_gain_theta",
+        "is_gauge": false,
+        "moved_readouts": {
+          "F_over_M_response_ratio": "1416944960525761928/11307872554636635",
+          "toward_sign": -1,
+          "window_mass_gain": "37692908515455450/3437697469598161"
+        },
+        "observable_through": [
+          "F_over_M_response_ratio",
+          "window_mass_gain"
+        ],
+        "readout_unchanged": {
+          "F_over_M_response_ratio": false,
+          "toward_sign": true,
+          "window_mass_gain": false
+        }
+      },
+      {
+        "action_on_the_chart": {
+          "lam": "2/1",
+          "sig": "1/2"
+        },
+        "generator": "stabilizer_871",
+        "is_gauge": true,
+        "moved_readouts": {
+          "F_over_M_response_ratio": "198365271307510760/1731998358978687",
+          "toward_sign": -1,
+          "window_mass_gain": "1154665572652458/102190769013025"
+        },
+        "observable_through": [],
+        "readout_unchanged": {
+          "F_over_M_response_ratio": true,
+          "toward_sign": true,
+          "window_mass_gain": true
+        }
+      },
+      {
+        "action_on_the_chart": {
+          "N": "5/1"
+        },
+        "generator": "terminal_normalization_N",
+        "is_gauge": false,
+        "moved_readouts": {
+          "F_over_M_response_ratio": "198365271307510760/1731998358978687",
+          "toward_sign": -1,
+          "window_mass_gain": "1154665572652458/20438153802605"
+        },
+        "observable_through": [
+          "window_mass_gain"
+        ],
+        "readout_unchanged": {
+          "F_over_M_response_ratio": true,
+          "toward_sign": true,
+          "window_mass_gain": false
+        }
+      }
+    ]
+  },
+  "K_REDUCED_MAP": {
+    "agreement_caveat": "The Cycle-871 note is absent from this branch (see A_PINS), so the count above could not be compared line by line against it. Agreement of the LANDED-chart residual with the reported 8 is a coincidence of two independent chart choices and is reported as data, not as a reproduction. The HONEST chart, which carries the two coordinates R2 and R3 expose, gives 10 -- the obligation is LARGER than the reported number, not smaller.",
+    "agreement_is_a_reproduction": false,
+    "bridge_free_dimension_for_comparison": 1,
+    "brief_reported_cycle871_value": 8,
+    "classification": {
+      "D": {
+        "class": "FREE",
+        "witness": "no route reaches the readout depth"
+      },
+      "N": {
+        "class": "FREE",
+        "witness": "tested for gauge in J and REJECTED: N is observable through the window mass-gain delta"
+      },
+      "a": {
+        "class": "FREE",
+        "witness": "R1 bounds the window but pins no boundary"
+      },
+      "b": {
+        "class": "FREE",
+        "witness": "R1 proves b <= D and makes the ray b > D gauge, which is a BOUND, not a value"
+      },
+      "barrier": {
+        "class": "FREE",
+        "witness": "no route reaches the central blocked-barrier locus; Admissibility constrains which local possibilities exist, not where a barrier sits"
+      },
+      "c4": {
+        "class": "FREE",
+        "witness": "exposed by R2: the degree-4 cubic-invariant angular coefficient, unsuppressed at large r; the landed chart set it to zero silently"
+      },
+      "epsilon": {
+        "class": "ELIMINATED",
+        "witness": "R5: the GCD over Q of the two discrete mean-value conditions is a unit, so NO epsilon is admissible; and the forced core carries zero free parameters, G(0) - G(e1) = 1/6"
+      },
+      "g": {
+        "class": "FREE",
+        "witness": "no route reaches the F~M calibration gain; R4 in particular yields no bound"
+      },
+      "lambda": {
+        "class": "GAUGE",
+        "witness": "the one-parameter stabilizer (lambda, sigma) -> (t*lambda, sigma/t), verified exactly in B and confirmed to annihilate every landed observable in J"
+      },
+      "m": {
+        "class": "ELIMINATED",
+        "witness": "R5: the regulator insertion exponent has no referent once the regulated core family is off-shell"
+      },
+      "mu": {
+        "class": "FREE",
+        "witness": "exposed by R3: the screening mass mu^2 = alpha/gamma of the forced 2-constant operator; the landed chart set it to zero silently"
+      },
+      "p": {
+        "class": "FORCED",
+        "witness": "R3: locality + covariance + additivity force the operator to alpha*I + gamma*Delta, and the exact scaling identity w(G) = 2 - d gives p = 1 in d = 3 in both branches"
+      },
+      "s": {
+        "class": "FORCED",
+        "witness": "lattice Green-function positivity, proved by exact monotone integer iteration plus domain monotonicity, with S = L(1 - phi)"
+      },
+      "sigma": {
+        "class": "FREE",
+        "witness": "the surviving product lambda*sigma; this is the SAME single scalar the source-action bridge was priced to, so it is shared with GB-S1 and not new to GB-S2"
+      },
+      "theta": {
+        "class": "FREE",
+        "witness": "no route reaches the per-edge action-to-phase gain; J shows it is not gauge either"
+      }
+    },
+    "finding": "Landed 13-coordinate chart: 2 forced, 1 gauge, 2 eliminated as inadmissible, 8 genuinely free. Honest 15-coordinate chart: 10 genuinely free, split COUPLING 1, KERNEL_SHAPE 4, WINDOW 5. Either count is strictly larger than the bridge's 1.",
+    "gbs2_strictly_stronger_than_the_bridge": true,
+    "honest_chart_dimension": 15,
+    "honest_chart_residual_free_dimension": 10,
+    "honest_chart_tally": {
+      "ELIMINATED": [
+        "epsilon",
+        "m"
+      ],
+      "FORCED": [
+        "p",
+        "s"
+      ],
+      "FREE": [
+        "D",
+        "N",
+        "a",
+        "b",
+        "barrier",
+        "c4",
+        "g",
+        "mu",
+        "sigma",
+        "theta"
+      ],
+      "GAUGE": [
+        "lambda"
+      ]
+    },
+    "landed_chart_count_agrees_with_the_brief_value": true,
+    "landed_chart_dimension": 13,
+    "landed_chart_residual_free_dimension": 8,
+    "landed_chart_tally": {
+      "ELIMINATED": [
+        "epsilon",
+        "m"
+      ],
+      "FORCED": [
+        "p",
+        "s"
+      ],
+      "FREE": [
+        "D",
+        "N",
+        "a",
+        "b",
+        "barrier",
+        "g",
+        "sigma",
+        "theta"
+      ],
+      "GAUGE": [
+        "lambda"
+      ]
+    },
+    "narrow_role_of_the_residual": {
+      "D": "which layer is read out",
+      "N": "how the terminal detector distribution is normalized",
+      "a": "where the detector window opens",
+      "b": "where the detector window closes (bounded by the depth)",
+      "barrier": "where the central blocked set sits",
+      "c4": "sets the leading cubic anisotropy of the angular profile",
+      "g": "how log window mass-gain is calibrated against log source mass",
+      "mu": "sets the screening range of the forced operator; zero is a choice, not a derivation",
+      "sigma": "sets the absolute source-response normalization; shared with the already-priced bridge scalar",
+      "theta": "sets how much phase one propagation edge accumulates per unit action"
+    },
+    "partition_exhausts_the_honest_chart": true,
+    "partition_exhausts_the_landed_chart": true,
+    "pass": true,
+    "residual_free_by_block": {
+      "COUPLING": [
+        "g"
+      ],
+      "KERNEL_SHAPE": [
+        "c4",
+        "mu",
+        "sigma",
+        "theta"
+      ],
+      "WINDOW": [
+        "D",
+        "N",
+        "a",
+        "b",
+        "barrier"
+      ]
+    }
+  },
+  "L_SHARPEST_MISSING_LEMMA": {
+    "finding": "Argmax over 6 candidate lemmas: GBW1_record_determined_window pins 5 of the 10 residual coordinates (1/2), which makes it STRICTLY WEAKER than GB-S2 and strictly stronger than the bridge's single scalar. It is a window lemma, not a kernel lemma: the window block is where the obligation concentrates.",
+    "pass": true,
+    "residual_size": 10,
+    "rows": [
+      {
+        "count": 1,
+        "fraction_of_the_residual": "1/10",
+        "lemma": "GBA1_amplitude_from_the_bridge_scalar",
+        "residual_coordinates_it_would_pin": [
+          "sigma"
+        ],
+        "statement": "the source-response normalization is fixed",
+        "strength_vs_GB_S2": "STRICTLY WEAKER"
+      },
+      {
+        "count": 1,
+        "fraction_of_the_residual": "1/10",
+        "lemma": "GBC1_calibration_closure",
+        "residual_coordinates_it_would_pin": [
+          "g"
+        ],
+        "statement": "the F~M calibration gain is fixed by the unit grading",
+        "strength_vs_GB_S2": "STRICTLY WEAKER"
+      },
+      {
+        "count": 1,
+        "fraction_of_the_residual": "1/10",
+        "lemma": "GBI1_isotropy_selection",
+        "residual_coordinates_it_would_pin": [
+          "c4"
+        ],
+        "statement": "some approved primitive selects the isotropic angular profile",
+        "strength_vs_GB_S2": "STRICTLY WEAKER"
+      },
+      {
+        "count": 3,
+        "fraction_of_the_residual": "3/10",
+        "lemma": "GBK1_kernel_shape_closure",
+        "residual_coordinates_it_would_pin": [
+          "c4",
+          "mu",
+          "theta"
+        ],
+        "statement": "the propagation kernel's angular profile, screening range, and phase gain are fixed by the axioms",
+        "strength_vs_GB_S2": "STRICTLY WEAKER"
+      },
+      {
+        "count": 1,
+        "fraction_of_the_residual": "1/10",
+        "lemma": "GBN1_normalization_from_count_once",
+        "residual_coordinates_it_would_pin": [
+          "N"
+        ],
+        "statement": "count-once fixes the terminal detector normalization",
+        "strength_vs_GB_S2": "STRICTLY WEAKER"
+      },
+      {
+        "count": 5,
+        "fraction_of_the_residual": "1/2",
+        "lemma": "GBW1_record_determined_window",
+        "residual_coordinates_it_would_pin": [
+          "D",
+          "N",
+          "a",
+          "b",
+          "barrier"
+        ],
+        "statement": "the detector window (its boundaries, its readout depth, its barrier, and its normalization) is determined by record content rather than chosen by the runner",
+        "strength_vs_GB_S2": "STRICTLY WEAKER"
+      }
+    ],
+    "selection_is_computed_argmax": true,
+    "sharpest_lemma": "GBW1_record_determined_window",
+    "sharpest_lemma_coverage": 5,
+    "sharpest_lemma_fraction": "1/2",
+    "sharpest_lemma_statement": "the detector window (its boundaries, its readout depth, its barrier, and its normalization) is determined by record content rather than chosen by the runner",
+    "sharpest_lemma_strength_vs_GB_S2": "STRICTLY WEAKER",
+    "ties_at_the_maximum": [
+      "GBW1_record_determined_window"
+    ]
+  },
+  "M_OUTCOME": {
+    "dimensions_eliminated_as_inadmissible": [
+      "epsilon",
+      "m"
+    ],
+    "dimensions_forced": [
+      "p",
+      "s"
+    ],
+    "dimensions_free": [
+      "D",
+      "N",
+      "a",
+      "b",
+      "barrier",
+      "c4",
+      "g",
+      "mu",
+      "sigma",
+      "theta"
+    ],
+    "dimensions_gauge": [
+      "lambda"
+    ],
+    "finding": "GB-S2's anatomy: 2 forced coordinates, 1 gauge, 2 inadmissible, 10 genuinely free on the honest chart (8 on the landed chart). The residual concentrates in the WINDOW block.",
+    "honest_chart_residual": 10,
+    "landed_chart_residual": 8,
+    "load_bearing_negatives": [
+      "radial-only is NOT forced by cubic covariance (first admissible anisotropy at degree 4, unsuppressed at large r)",
+      "no value of epsilon makes the landed kernel harmonic: the GCD of the two mean-value conditions over Q is a unit",
+      "the landed chart under-counts by 2 coordinates"
+    ],
+    "load_bearing_positives": [
+      "p = 1 is FORCED in d = 3 from Lattice + Record alone, via alpha*I + gamma*Delta",
+      "the TOWARD orientation is FORCED by lattice Green-function positivity",
+      "the window's infinite taper freedom collapses to 2 boundaries by Record additivity"
+    ],
+    "outcome_class": "bounded_decomposition_with_two_forcings_and_one_elimination",
+    "pass": true,
+    "theorems": [
+      "C884-T1 the landed kernel's rescaling stabilizer is exactly one-dimensional",
+      "C884-T2 Record additivity collapses the window from an arbitrary taper to a sharp indicator with 2 boundaries; b > D is gauge",
+      "C884-T3 cubic covariance forces the stencil to alpha*I + gamma*Delta (2 orbits) but does NOT force radial-only",
+      "C884-T4 additivity + locality + covariance force p = 1 in d = 3 in both the massless and the screened branch",
+      "C884-T5 no epsilon makes the landed kernel on-shell; the forced core has zero free parameters, G(0) - G(e1) = 1/6",
+      "C884-T6 the TOWARD orientation is forced by Green-function positivity"
+    ]
+  },
+  "N_HONESTY_GATE": {
+    "Q1_what_is_not_claimed": [
+      "gravity does not close and Gate B does not close",
+      "the Gate-B dynamics row is not promoted",
+      "no physical Newton constant is derived",
+      "no new axiom and no new primitive is introduced",
+      "GB-S2 is not discharged: 10 coordinates remain free on the honest chart"
+    ],
+    "Q2_exact_scope": "One obligation's anatomy. The chart is declared on three patches (P_core, P_far, P_win) and the count is patch-uniform. Every forcing is proved on the pinned lattice and the pinned action form only. The two eliminations are statements about the LANDED regulated kernel, not about every possible core.",
+    "Q3_steelman": "The strongest case against this cycle is that the residual count is chart-dependent: a different parameterization of the same obligation could report a different integer. That is why the classification, not the integer, is the result -- p and the TOWARD orientation are forced in ANY chart, epsilon is inadmissible in ANY chart, and the window boundaries are free in ANY chart. The independent checker recounts by a different parameterization for exactly this reason.",
+    "Q4_what_would_refute_this": [
+      "exhibiting an epsilon that satisfies both discrete mean-value conditions (would refute R5)",
+      "an approved primitive that selects the isotropic angular profile (would remove c4)",
+      "a derivation of any window boundary from record content (would shrink the residual)",
+      "showing the landed action form is not S = L(1 - phi) (would unforce the TOWARD orientation)"
+    ],
+    "finding": "No closure claim appears anywhere in the science payload; the cycle's three load-bearing results are negatives against the landed construction.",
+    "forbidden_phrases_present": [],
+    "pass": true
+  }
+}
+
+controls: deterministic=True runtime_under_limit=True stdout=46175B cache=5d5c669ebc7c5861

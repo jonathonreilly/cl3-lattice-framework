@@ -1,0 +1,516 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle900_harmonic_repair_2026_07_28.py
+runner_sha256: dfc2f6fd5799b4e6a5cece6c30902e665dd62d521ac1336c908356a8f7a19bf5
+input_fingerprint_sha256: 9551f001a92e45605bef37c19af5df7f70a9d215697260356ae84e726e69fba5
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+{
+  "all_checks_pass": true,
+  "checks": {
+    "ambiguous_interval_not_exact_root": true,
+    "basic_norm_corrected": true,
+    "corrected_primary_gcd_is_one": true,
+    "finite_screened_origin_identity_exact": true,
+    "finite_screened_tested_G0_positive": true,
+    "finite_screened_tested_equivalence": true,
+    "independent_checker_passes": true,
+    "independent_resultant_gcd_is_one": true,
+    "product_stabilizer_scope_correct": true
+  },
+  "claim_type": "bounded_theorem",
+  "corrected_multiquadratic_norm_and_screened_obstruction": {
+    "common_gcd_coefficients": [
+      "1"
+    ],
+    "common_gcd_is_one": true,
+    "implementation": "Each conjugate remains a multiquadratic ring element and is multiplied with mq_mul; radical components are required to vanish only at the end.",
+    "logical_scope": "For A!=0 and epsilon away from every original denominator pole, a shared screened equation would force all displayed M_n(epsilon) to agree. Their cleared pair norms have no common root.",
+    "norm_identity_is_minus_one": true,
+    "norm_of_one_plus_sqrt_two": [
+      "-1"
+    ],
+    "pair_rows": [
+      {
+        "axis_pair": [
+          1,
+          2
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          5
+        ],
+        "norm_coefficients_low_to_high": [
+          "-126562500",
+          "-337500000",
+          "5838750000",
+          "36738750000",
+          "64960062500",
+          "-75580875000",
+          "-464622487500",
+          "-550030237500",
+          "934849653125/2",
+          "1866967518750",
+          "1280298103625",
+          "-1711677160125",
+          "-13728072005475/4",
+          "-1696646540925/2",
+          "12250272819995/4",
+          "12190514980395/4",
+          "-36563323602561/64",
+          "-2684237254344",
+          "-4673105117211/4",
+          "8080635930591/8",
+          "18471773864063/16",
+          "204834536625/4",
+          "-3919055700437/8",
+          "-227946803427",
+          "2718500908677/32",
+          "212303118501/2",
+          "108827358865/8",
+          "-92560211121/4",
+          "-172916176519/16",
+          "2977994133/2",
+          "19920739983/8",
+          "1871732295/4",
+          "-15611061025/64",
+          "-254813493/2",
+          "-33268995/8",
+          "96683283/8",
+          "26200803/8",
+          "-694353/4",
+          "-255202",
+          "-92385/2",
+          "7335/4",
+          "2070",
+          "366",
+          "30",
+          "1"
+        ],
+        "norm_degree": 44
+      },
+      {
+        "axis_pair": [
+          1,
+          3
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          5
+        ],
+        "norm_coefficients_low_to_high": [
+          "-409600000000",
+          "-819200000000",
+          "21012480000000",
+          "95150080000000",
+          "56957952000000",
+          "-440893440000000",
+          "-981624422400000",
+          "-73542041600000",
+          "2198323609600000",
+          "2470984908800000",
+          "-1082853863424000",
+          "-4148272406528000",
+          "-2005157696716800",
+          "2549628425011200",
+          "3340286969569280",
+          "188011358208000",
+          "-2019547622506496",
+          "-1184812845891584",
+          "404588549896192",
+          "711615889104896",
+          "161926855361024",
+          "-176877782020096",
+          "-120934051815936",
+          "1948365589504",
+          "29978576199168",
+          "9911135063040",
+          "-2478861099136",
+          "-2447167559424",
+          "-348566086976",
+          "228065693440",
+          "101619868576",
+          "1950001856",
+          "-8844689008",
+          "-2182531552",
+          "146411904",
+          "164404840",
+          "25038967",
+          "-2690992",
+          "-1458790",
+          "-170104",
+          "9736",
+          "5176",
+          "658",
+          "40",
+          "1"
+        ],
+        "norm_degree": 44
+      },
+      {
+        "axis_pair": [
+          2,
+          3
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          5
+        ],
+        "norm_coefficients_low_to_high": [
+          "86749780273437500",
+          "323063867187500000",
+          "-135595253906250000",
+          "-2582043027343750000",
+          "-4828393608398437500",
+          "-1098990908203125000",
+          "8238270693164062500",
+          "12320604896679687500",
+          "8256990984658203125/2",
+          "-7354016358886718750",
+          "-9202299168732421875",
+          "-2039832779787109375",
+          "15000858877826953125/4",
+          "6499423241605078125/2",
+          "813353872630859375/4",
+          "-4480721997005859375/4",
+          "-38302616012344390625/64",
+          "144563567991296875/2",
+          "764601221928915625/4",
+          "452033911492015625/8",
+          "-340299136712070625/16",
+          "-74094554581660625/4",
+          "-17835485178304125/8",
+          "2319595874353250",
+          "32368736934913125/32",
+          "-51454880252625/2",
+          "-1033775905287455/8",
+          "-121181652390435/4",
+          "85692969479161/16",
+          "7936053017425/2",
+          "3731293336487/8",
+          "-741697187375/4",
+          "-4419592473217/64",
+          "-3254562845",
+          "23215219941/8",
+          "5557476205/8",
+          "97307555/8",
+          "-86673275/4",
+          "-4079917",
+          "-286495/2",
+          "242023/4",
+          "11930",
+          "1066",
+          "50",
+          "1"
+        ],
+        "norm_degree": 44
+      },
+      {
+        "axis_pair": [
+          1,
+          4
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          17
+        ],
+        "norm_coefficients_low_to_high": [
+          "-156954542422500",
+          "-251127267876000",
+          "8454125612084400",
+          "31811128112745840",
+          "-3115927568285116",
+          "-183260297523007800",
+          "-259701540918471916",
+          "186145543923240900",
+          "1497508154841173165/2",
+          "375036142835874790",
+          "-731274916905088607",
+          "-978705712340714805",
+          "183652736492828133/4",
+          "1685391279687745195/2",
+          "1844666316644876707/4",
+          "-1068646705070247125/4",
+          "-24659127887314534857/64",
+          "-253396243217345765/4",
+          "511549570268706705/4",
+          "631204505685930545/8",
+          "-110229312886712369/16",
+          "-97255814483991465/4",
+          "-60735692996164245/8",
+          "4655339728294895/2",
+          "69633587969119901/32",
+          "673094245972975/2",
+          "-1565540148930995/8",
+          "-382539811626785/4",
+          "-81633707460215/16",
+          "7398881472555",
+          "17052432643179/8",
+          "-178584022495/4",
+          "-8831218655561/64",
+          "-97933525625/4",
+          "14511762537/8",
+          "10271732225/8",
+          "1199488827/8",
+          "-55166585/4",
+          "-11466475/2",
+          "-1068435/2",
+          "91999/4",
+          "10090",
+          "1028",
+          "50",
+          "1"
+        ],
+        "norm_degree": 44
+      }
+    ]
+  },
+  "finite_screened_origin_identity": {
+    "all_rows_exact": true,
+    "conditional_equivalence": "For mu_squared>=0, the finite Dirichlet solution is unique and cubic-invariant; whenever G(0) is nonzero, this identity equals 1/6 iff mu_squared=0.",
+    "definition": "For supplied mu_squared>=0 on the radius-three zero-exterior cube, solve (6I-adjacency+mu_squared I)G=delta_0.",
+    "identity": "G(0)-G(e1)=(1-mu_squared*G(0))/6",
+    "rows": [
+      {
+        "G0": "39635978/168587283",
+        "G0_is_positive_in_this_model": true,
+        "G0_minus_Ge1": "1/6",
+        "identity_holds": true,
+        "mu_squared": "0",
+        "predicted_origin_identity": "1/6",
+        "step_equals_one_sixth": true
+      },
+      {
+        "G0": "1796477604836757200037044731533914506900100/7683267651889849830884382346636259082409601",
+        "G0_is_positive_in_this_model": true,
+        "G0_minus_Ge1": "1277550479306913709814001983220153322890100/7683267651889849830884382346636259082409601",
+        "identity_holds": true,
+        "mu_squared": "1/100",
+        "predicted_origin_identity": "1277550479306913709814001983220153322890100/7683267651889849830884382346636259082409601",
+        "step_equals_one_sixth": false
+      },
+      {
+        "G0": "12908821369179580900/61399657816468638577",
+        "G0_is_positive_in_this_model": true,
+        "G0_minus_Ge1": "9695408745695623892/61399657816468638577",
+        "identity_holds": true,
+        "mu_squared": "1/4",
+        "predicted_origin_identity": "9695408745695623892/61399657816468638577",
+        "step_equals_one_sixth": false
+      },
+      {
+        "G0": "92838764105/544519887863",
+        "G0_is_positive_in_this_model": true,
+        "G0_minus_Ge1": "75280187293/544519887863",
+        "identity_holds": true,
+        "mu_squared": "1",
+        "predicted_origin_identity": "75280187293/544519887863",
+        "step_equals_one_sixth": false
+      }
+    ],
+    "scope": "finite chosen zero-exterior boundary problem; no physical or infinite-volume selection"
+  },
+  "independent_resultant_confirmation": {
+    "common_gcd": "1",
+    "common_gcd_is_one": true,
+    "conclusion": "No defined epsilon can make all four screened axis conditions share one value of mu_squared.",
+    "domain": "nonzero amplitude; epsilon must avoid every centre and neighbour denominator pole of the four displayed axis conditions",
+    "method": "clear denominators, then eliminate each radical with exact resultants",
+    "norm_identity_is_minus_one": true,
+    "norm_of_one_plus_sqrt_two": "-1",
+    "pair_rows": [
+      {
+        "axis_pair": [
+          1,
+          2
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          5
+        ],
+        "norm_coefficients_high_to_low": [
+          "1",
+          "30",
+          "408",
+          "3330",
+          "72699/4",
+          "139635/2",
+          "385475/2",
+          "1520787/4",
+          "4079313/8",
+          "3024891/8",
+          "-603693/8",
+          "-585375",
+          "-48790745/64",
+          "-4135695/8",
+          "-4392693/32",
+          "150903/2",
+          "5648411/64",
+          "141285/4",
+          "84915/16",
+          "-675/2",
+          "-2025/16"
+        ],
+        "norm_degree": 20
+      },
+      {
+        "axis_pair": [
+          1,
+          3
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          5
+        ],
+        "norm_coefficients_high_to_low": [
+          "1",
+          "32",
+          "450",
+          "3656",
+          "18928",
+          "64648",
+          "144074",
+          "191808",
+          "93607",
+          "-136656",
+          "-276032",
+          "-178688",
+          "-4664",
+          "50880",
+          "19680",
+          "0",
+          "-400"
+        ],
+        "norm_degree": 16
+      },
+      {
+        "axis_pair": [
+          2,
+          3
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          5
+        ],
+        "norm_coefficients_high_to_low": [
+          "1",
+          "50",
+          "1156",
+          "16430",
+          "643483/4",
+          "2303405/2",
+          "12480301/2",
+          "104418625/4",
+          "681160865/8",
+          "1733625205/8",
+          "3409763091/8",
+          "1261980485/2",
+          "42202351303/64",
+          "3163783975/8",
+          "-1195083117/32",
+          "-331190100",
+          "-20147887941/64",
+          "-512135185/4",
+          "21047655/16",
+          "41352175/2",
+          "88831775/16"
+        ],
+        "norm_degree": 20
+      },
+      {
+        "axis_pair": [
+          1,
+          4
+        ],
+        "epsilon_one_tenth_is_root": false,
+        "field_primes": [
+          2,
+          17
+        ],
+        "norm_coefficients_high_to_low": [
+          "1",
+          "50",
+          "1142",
+          "15790",
+          "590275/4",
+          "1969785/2",
+          "4829262",
+          "70360355/4",
+          "378928721/8",
+          "734226705/8",
+          "947169739/8",
+          "300139615/4",
+          "-2767480577/64",
+          "-1178629185/8",
+          "-4508007329/32",
+          "-202490415/4",
+          "1003773611/64",
+          "80189085/4",
+          "82111275/16",
+          "-325125/2",
+          "-1625625/16"
+        ],
+        "norm_degree": 20
+      }
+    ]
+  },
+  "input_sha256": {
+    "docs/GBS2_KERNEL_WINDOW_ANATOMY_CYCLE884_BOUNDED_THEOREM_NOTE_2026-07-28.md": "22abe8a468224a3eb139d3c26e19fb71cd2cbb53b1c9471ef772639695652836",
+    "docs/HARMONIC_REPAIR_VIABLE_CYCLE900_BOUNDED_THEOREM_NOTE_2026-07-28.md": "52d90ebaed8a996a791cfa9bb876d46f5a8cccb912c344499a4da752867b04f2",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "scripts/frontier_cycle900_harmonic_repair_independent_check_2026_07_28.py": "abd79cd691ec131aa8192b213d39e68d4ed500f0aa12e6ad0ae325f43e1b3199"
+  },
+  "interval_semantics": {
+    "ambiguous_enclosure_is_not_promoted_to_exact_root": true,
+    "coarse_enclosure": [
+      "-3/20",
+      "1/10"
+    ],
+    "enclosure_sign": null,
+    "exact_zero": false,
+    "rational_basis_coefficients": [
+      "-7/5",
+      "1"
+    ],
+    "returned_object": "unresolved bracket",
+    "test_element": "sqrt(2)-7/5"
+  },
+  "normalization_scope": {
+    "fixed_kernel_raw_sum_changes_under_this_map": false,
+    "independent_kernel_amplitude_rescaling_changes_raw_sums": true,
+    "product_is_symbolically_fixed": true,
+    "product_stabilizer_map": "(lambda,sigma)->(t lambda,sigma/t), t!=0",
+    "scope": "nonzero t, amplitude, and ratio denominator",
+    "shape_ratio_is_symbolically_amplitude_invariant": true
+  },
+  "withdrawn_historical_inferences": [
+    "a physically forced or unique harmonic repair",
+    "selection of zero-exterior rather than periodic boundary conditions",
+    "infinite-lattice existence, convergence, transcendence, or exact asymptotics",
+    "TOWARD or source-action sign from Green-function positivity",
+    "the 37-row consumer census and complete physical patch-list verdict",
+    "chart dimension reductions as complete physical dimension counts"
+  ]
+}
+PASS basic_norm_corrected
+PASS corrected_primary_gcd_is_one
+PASS independent_resultant_gcd_is_one
+PASS finite_screened_origin_identity_exact
+PASS finite_screened_tested_G0_positive
+PASS finite_screened_tested_equivalence
+PASS ambiguous_interval_not_exact_root
+PASS product_stabilizer_scope_correct
+PASS independent_checker_passes
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+
