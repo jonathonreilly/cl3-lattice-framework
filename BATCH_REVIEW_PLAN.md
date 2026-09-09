@@ -224,3 +224,8 @@ independent mathematics, constituent content preservation, same-session final
 confirmation, current-main science-loss/interaction checks, one combined gate,
 transitive reservations and the original cutoff remain unchanged. Formal audit
 continues to wait for a solid TOE. No automatic science retry is authorized.
+
+
+## Wave50 packaging preflight placement
+
+Before the shared graph/pipeline run, check the complete source diff, including exact historical recovery artifacts, and use the actual note-discovery, claim-type, helper and cached-readiness consumers. A legacy NOGO filename can select a different assurance path than corrected bounded prose. Correct inaccurate source naming and bindings through the original author/reviewer; never fabricate resolution certificates. Preserve original archive bytes, using narrowly scoped Git whitespace attributes when needed. Every active source remains checked. W50 retained its actual filename evidence failure and later historical-whitespace clean-state failure; moving these existing checks earlier prevents the same wasted full-run cost. This planning note changes no scientific acceptance or audit boundary.

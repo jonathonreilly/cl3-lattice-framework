@@ -1,15 +1,23 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T09:25:25.879399+00:00; main `e97ff2fd204611f4091c4b664664dba7c263da65`.
+Updated 2026-09-09T10:26:32.008220+00:00; main `2f8ad9eb9e01b834a7d89243106379c326b2fa35`.
 
-143 reviewed original science scopes landed: 100 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 103 direct original closures include 100 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+151 reviewed original science scopes landed: 108 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 111 direct original closures include 108 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
 | #5950 | source_consolidation_exact | reviewed_corrected_scope_on_main | `1ef2db7a87038b5d8e26a84aa2a3157e347190c2` |
+| #5951 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
 | #5952 | source_consolidation_exact | reviewed_corrected_scope_on_main | `1ef2db7a87038b5d8e26a84aa2a3157e347190c2` |
+| #5954 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
+| #5955 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
+| #5959 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
+| #5961 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
 | #5963 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `e97ff2fd204611f4091c4b664664dba7c263da65` |
+| #5964 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
+| #5965 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
 | #5966 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `1ef2db7a87038b5d8e26a84aa2a3157e347190c2` |
+| #6009 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
 | #6104 | draft_disposition | superseded_by_preexisting_main_science | superseded_by_preexisting_main_science |
 | #6113 | draft_disposition | superseded_by_preexisting_main_science | superseded_by_preexisting_main_science |
 | #6269 | source_consolidation_exact | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |

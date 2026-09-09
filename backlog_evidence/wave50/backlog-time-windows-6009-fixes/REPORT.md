@@ -1,0 +1,30 @@
+# Time-window unit B bounded author correction
+
+Ready for the same original reviewer's affected confirmation. This author packet applies no scientific PASS, audit verdict or whole-family acceptance.
+
+Only absent canonical cycles885/893/894/902 are restored with corrected conditional mathematics. The actual original12-configuration,729-site,depth4,nine-window model and31 barriers plus6 original checker additions are explicit in a bounded local helper. This preserves the useful finite calculations while replacing historical controller/status harnesses. Current878/887/892/904 and every one of the 30,020 base leaves retain their exact modes/blobs. A/C science and all shared tools remain untouched.
+
+B1 now compares partition blocks and limits barrier results to the finite catalogue; support containment excludes positive-length arrivals but preserves zero-step seed mass. B2 uses literally one13-site target W with original shell1/offcentre_ball masses0/1, and fixed-R ratio comparisons require positive denominators. B3 withdraws empty-fibre/constructor-arity and universal25-cell classifications; optional uniform-fibre and group-homomorphism constraints remain conditional. B4 makes window, depth, scalar weights and barriers supplied premises. B5 confines the rank5 minimum to injective linear representations and proves canonical nonnegativity for every realtheta through its actual squared-amplitude construction. B6 retains exact synthetic894 weights without claiming original878 input identity. B7 remains assigned to C; B states the correct coarrival condition.
+
+The all-superset monotone/disjoint map theorem and dilation family survive with explicit hypotheses. Finite885 counts retain support equivariance,1,152 fixed-origin-cube translation failures,24/35 shell retractions, four centre differences and7/12 boundary theta incidence. All37 barriers receive finite rows, with24/31 original finite-filter survivors. All108 spectra and original conditional coefficient systems survive, including the single four-atom coefficient vectors. Physical window/barrier selection, Record/readout/formation law, source/action/dynamics, Born/event lift, unrestricted bridge classification and TOE closure remain open. Formal audit is deferred.
+
+A complete cold read covered all four actual notes, eight entrypoints, both model/arithmetic helpers and history before freeze. Original four-note arguments, full B findings/addenda, and necessary current/original fixture functions were examined; the entire historical controller harness was not replayed or treated as new evidence. The focused workflow/review instructions were examined for the owner's continuous-discovery policy; no audit or broad old gate was invoked.
+
+Actual parser Type, discovery, primary, both helper APIs and literal input unions were checked before freeze. Each primary calls its registered companion for full finite comparisons: independent DFS, independently ordered spectrum arithmetic, modular rank or relevant counterexamples. Shared fixture definitions are disclosed. The standalone companion executions are deliberately focused arithmetic controls, not an additional full independent research review. Both shared bounded modules are used libraries, not standalone producers. All eight entrypoints declare and digest-check actual note/memo/current892/helper sources; wrong-note-pin rejection was checked before freeze. No broad parents or archived source are loaded. Actual discovery finds exactly these four new notes and no archive nodes.
+
+One tiny prefreeze control assessed the original support-map cost and the actual fixed-set witness. Then each final entrypoint ran exactly once sequentially under30-second/2-GiB caps with BLAS1, after the source/note/input freeze:
+
+- 885-runner: TOTAL: PASS=8 FAIL=0, 1.380631s, 24,100,864 bytes peak RSS.
+- 885-checker: TOTAL: PASS=2 FAIL=0, 0.060580s, 22,167,552 bytes peak RSS.
+- 893-runner: TOTAL: PASS=8 FAIL=0, 7.128136s, 29,769,728 bytes peak RSS.
+- 893-checker: TOTAL: PASS=2 FAIL=0, 0.066426s, 22,134,784 bytes peak RSS.
+- 894-runner: TOTAL: PASS=9 FAIL=0, 0.238450s, 23,511,040 bytes peak RSS.
+- 894-checker: TOTAL: PASS=3 FAIL=0, 0.064818s, 22,233,088 bytes peak RSS.
+- 902-runner: TOTAL: PASS=9 FAIL=0, 0.810915s, 24,166,400 bytes peak RSS.
+- 902-checker: TOTAL: PASS=2 FAIL=0, 0.063839s, 22,134,784 bytes peak RSS.
+
+No final producer failed or was replayed. Peak RSS is actual macOS wait4 rusage in bytes, supplemented by sampled RSS; these stdlib producers spawn no descendants. Caches are genuine, fresh and source/input-bound. The only post-freeze delta is eight caches. Old PASS totals, supplier scans, all-candidate/exhaustive rhetoric, controller and annular-fill claims remain exact historical evidence rather than reissued fresh checks.
+
+Recovery preserves81 assigned original/prior path entries as55 exact mode/blob bodies outside docs discovery. DISPOSITIONS covers all174 original endpoint rows across the eight family PRs, original14-note routing, every assigned earlier version, and inherited/lost-source maps by hash. Other A/C bodies remain in their already verified original recovery with their owners. The original review's397 artifacts were hash-verified; root's complete endpoint/intermediate/source custody verification is reused by hash, without claiming that every historical artifact's prose was read. No content is accepted merely by membership in6009;5957 remains excluded.
+
+Frozen source commit `0e26045d6fc8a95da1b44936b920a5ba12f55802`, tree `b0c3e894361865f5acb82ef693c89b37bac7de54`. Final commit `0a39c57e6a513f852db8a50fe4ffdb1b2952c189`, tree `19ff67528b5cb33977ce5ed07f614767aa063e8a`, based on `e95f5d76d7d2a0595b6e5ef0d5782ee84fe48daa`. INTERMEDIATE_ACTIVE.patch is the complete active addition/history view for root's parallel read; FINAL.patch includes exact recovery and caches; POST_INTERMEDIATE.patch contains only final caches. FINAL_SOURCE_INVENTORY binds all modes/blobs/source/input hashes and actual consumers. Original same-session review confirmation remains separate. No main, GitHub, planning, shared-tool, registry or audit mutation was made.

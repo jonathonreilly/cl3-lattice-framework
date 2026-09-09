@@ -1,0 +1,53 @@
+{
+  "landing_authorized": false,
+  "reason": "Actual changed-evidence failure on legacy NOGO894 artifact; preserved before narrow repair and rebuilt combined train.",
+  "head": "a944cb06b0559cb0a53a9c104aa2d1dd2593ee21",
+  "tree": "7613e1b154818acb6ea25e269bec3f5034b98843",
+  "base": "e97ff2fd204611f4091c4b664664dba7c263da65",
+  "gates": [
+    {
+      "name": "pipeline",
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 230.103,
+      "log_sha256": "5024d2bdaea907f3d53ae1fa61fbc5bf1d177ee290d16e847a21dab6c2f44110"
+    },
+    {
+      "name": "strict-lint",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/audit_lint.py",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 3.222,
+      "log_sha256": "7e62a2610895157deabc2ef5614c9ab6014ec458805e2353fdd81e3e183b7d05"
+    },
+    {
+      "name": "changed-evidence",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/check_changed_audit_evidence.py",
+        "--base",
+        "e97ff2fd204611f4091c4b664664dba7c263da65"
+      ],
+      "exit_code": 1,
+      "elapsed_sec": 1.067,
+      "log_sha256": "387aa9375258f786704a17acd24718170af7062402b246cc11c7772f2a2bce0f"
+    }
+  ],
+  "full_validation_runs": 1,
+  "integration_retries": 0,
+  "generated_paths_preserved_and_stripped": 911,
+  "generated_untracked_paths": 93,
+  "generated_patch_sha256": "c49237e11f4617725c3b9a001d25f8f64ffe3e981703555a273abe1df7f90bdb",
+  "source_hashes_unchanged": true,
+  "clean_after": true,
+  "formal_audit_invoked": false,
+  "audit_verdict_applied": false
+}

@@ -1,0 +1,43 @@
+{
+  "head": "d307e4bd2fa074171f11054c7de874ae0cbaf4d3",
+  "tree": "91cb9f32ca3b56e6e735ab6a868bfd059a4c6c3b",
+  "main_not_pushed": true,
+  "landing_authorized": false,
+  "checks": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "e97ff2fd204611f4091c4b664664dba7c263da65..HEAD"
+      ],
+      "exit_code": 2,
+      "log": "final-clean-committed.log",
+      "log_sha256": "13c40e660e86c6dc659b18da9c43727c915d8280a35e0a4711e292d052c32393"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "final-clean-worktree.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "final-clean-index.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "reason": "Exact historical B/C archived output includes original whitespace. Source-only history classification repair required; do not mutate archived bytes or bypass full clean gate.",
+  "scientific_gates_passed": true,
+  "formal_audit": false
+}

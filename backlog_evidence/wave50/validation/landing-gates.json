@@ -1,0 +1,84 @@
+{
+  "head": "2f8ad9eb9e01b834a7d89243106379c326b2fa35",
+  "tree": "fc1661051695975cdc9f63ace3f9c43510063a94",
+  "base": "e97ff2fd204611f4091c4b664664dba7c263da65",
+  "gates": [
+    {
+      "name": "pipeline",
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 236.167,
+      "log_sha256": "206bd9009e3915663952ca60914a9bd264ee8febcd0e0ef4889b2e5db69d7a56"
+    },
+    {
+      "name": "strict-lint",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/audit_lint.py",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 3.237,
+      "log_sha256": "a067a5ae97b31dacda597bb49569353096bf24e860c4207c07e74e4084ccaf87"
+    },
+    {
+      "name": "changed-evidence",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/check_changed_audit_evidence.py",
+        "--base",
+        "e97ff2fd204611f4091c4b664664dba7c263da65"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 1.138,
+      "log_sha256": "a53c4b24a74fd9088aac14dc9a87817f97d36050e0fb2839b340a204dc239bae"
+    }
+  ],
+  "full_validation_runs": 3,
+  "integration_retries": 2,
+  "prior_post_gate_clean_failure": "backlog-wave50-rebuild-validation/POST_GATE_CLEAN_FAILURE.json",
+  "prior_failed_attempt": "backlog-wave50-validation/failed-attempt-preserved.json",
+  "generated_paths_preserved_and_stripped": 916,
+  "generated_untracked_paths": 98,
+  "generated_patch_sha256": "65b1c12793d7f2ac554350bba1572e68ee5ebcc1350703e419d7a09c133d6b60",
+  "source_hashes_unchanged": true,
+  "clean_after": true,
+  "formal_audit_invoked": false,
+  "audit_verdict_applied": false,
+  "complete_final_clean_checks": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "e97ff2fd204611f4091c4b664664dba7c263da65..HEAD"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ]
+}

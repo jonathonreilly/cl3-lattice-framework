@@ -1,23 +1,23 @@
 # Backlog review and landing — current handoff
 
-Updated after wave 49. Main is `e97ff2fd204611f4091c4b664664dba7c263da65`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
+Updated after wave 50. Main is `2f8ad9eb9e01b834a7d89243106379c326b2fa35`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 103 |
+| Closed directly after reviewed landing | 111 |
 | Closed through draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner reservations | 41 |
+| Still open, including three owner reservations | 33 |
 | Original membership | 254 |
 
-143 reviewed original science scopes landed: 100 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 103 direct original closures include 100 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+151 reviewed original science scopes landed: 108 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 111 direct original closures include 108 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 There are zero original drafts. The 110 other closures comprise 43 corrected scopes landed, 56 pending at four successors, seven partial Maxwell scopes, two starting-main supersessions, one empty PR and one unexecuted plan. Reservations apply transitively.
 
-Including pre-cutoff #8003–#8009, the session has 110 direct closures, 49 science/source batches and 184 new source documents. Of those batches, 48 passed one combined gate. W14's actual gate repair and W43's pre-gate composition rebuild remain documented. Main's stored ledger has 4,570 rows: 4,198 unaudited science and 372 meta. Another 89 notes await mechanical refresh; no audit grade has been applied.
+Including pre-cutoff #8003–#8009, the session has 118 direct closures, 50 science/source batches and 193 new source documents. Of those batches, 48 passed one combined gate. W14 and W50 actual gate repairs and W43's pre-gate composition rebuild remain documented. Main's stored ledger has 4,570 rows: 4,198 unaudited science and 372 meta. Another 98 notes await mechanical refresh; no audit grade has been applied.
 
-Wave 49 lands A884/900 and closes #5963 after original review and same-session correction confirmation. The finite Dirichlet identities, exact radial-ansatz calculations and supplied-stencil results have explicit domains. All 30,077 prior main leaves remain exact; the 57 source/manifest hashes were verified on remote main after one combined gate in 237.487 seconds. Physical suppliers and infinite-limit conclusions remain open. See [evidence](backlog_evidence/wave49/INDEX.json).
+Wave 50 completes the corrected #6009 family and repairs #5951 evidence, closing #5954/#5955/#5965/#5951/#5964/#5961/#5959/#6009. Nine new documents contain conditional finite window, barrier, spectrum, rational algebra, subgroup geometry and screened-cube mathematics; Cycle896 is historical meta. The complete fourteen-note family disposition retains current887/892/904 and all116 original tip bodies plus34 intermediate bodies. Prior correction histories remain recoverable and unsupported physical/grade claims are withdrawn or historical. All267 source/manifest hashes were verified on remote main. The rebuilt combined gate passed in 240.542 seconds. The first attempt failed on the legacy NOGO894 filename; the second passed science/evidence gates but final clean-state validation found whitespace in exact historical outputs, corrected by scoped archive attributes; the narrow rename and genuine two-producer evidence refresh received original-reviewer confirmation. Shared audit gates were unchanged. See [evidence](backlog_evidence/wave50/INDEX.json).
 
-The #6009 family remains open: its A slice is landed, B885/893/894/902 is independently confirmed and undergoing root integration verification, and C896/898/901/903/941 is assigned to backlog_vortex_repairs. #5951 is finishing correction confirmation; its author then repairs #6017's reviewed H1-H5 findings. Current 878/887/892/904 source is preserved. These are scoped corrections, not whole-family acceptance. See NEXT_REVIEW_UNITS.json for assignments.
+The #6009 family is fully dispositioned, with physical supplier, unrestricted classification and TOE-completion obligations explicit. Original-reviewer confirmations passed for #6017 and #6008; root is preparing wave51. Authors backlog_gauge_effect_repairs and backlog_vortex_repairs handle #6000 and #6005 respectively. Reviewer backlog_ticks_review continues #5957. Existing878/887/892/904 remains intact. See NEXT_REVIEW_UNITS.json for assignments.
 
 Astra low remains the focused reviewer default; unresolved consequential mathematics escalates to Astra xhigh. Reuse complete original reviews and confirm only affected corrections. The [model pilot](REVIEWER_MODEL_PILOT.md) covers one workload. Historical recovery must remain outside actual note discovery. All reservations and Maxwell production/physical holds remain in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json); this landing removes none of them.
 
@@ -382,3 +382,5 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Corrected conditional symmetric action crossing | `08fb1e00f51dc3600f64976fc1907ee63ffa87af` | `backlog_evidence/wave48` |
 
 | Corrected finite kernel and Dirichlet identities | `e97ff2fd204611f4091c4b664664dba7c263da65` | `backlog_evidence/wave49` |
+
+| Corrected time family and complement evidence | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` | `backlog_evidence/wave50` |

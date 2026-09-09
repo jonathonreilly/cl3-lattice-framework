@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
-Verified source/status snapshot: 2026-09-09T09:25:25.879399+00:00, main
-`e97ff2fd204611f4091c4b664664dba7c263da65`. This is a planning map, not
+Verified source/status snapshot: 2026-09-09T10:26:32.008220+00:00, main
+`2f8ad9eb9e01b834a7d89243106379c326b2fa35`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -22,7 +22,7 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 89 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 98 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
@@ -120,3 +120,5 @@ W47 adds corrected finite ACI union/comparator and terminal-confluence scope. Ar
 Wave 48 adds conditional symmetric action-crossing top coefficients with explicit supplied Haar and central-kernel premises. Physical action, measure, time and Record selection remain open. No audit or TOE certification.
 
 Wave 49 adds conditional finite Dirichlet kernel identities and exact radial-ansatz obstructions. Physical operator, source, action, clock and infinite-limit bridges remain open. No audit or TOE certification.
+
+Wave50 adds conditional finite window, spectrum, rational algebra, subgroup geometry and screened-cube mathematics and repairs cyclic-run evidence. Physical window, measure, clock and event-space selection remain open. No audit or TOE certification.
