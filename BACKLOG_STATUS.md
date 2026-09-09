@@ -400,3 +400,9 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Six corrected conditional Eta pair-process results | `e48b8ed97fb909245b722a8ca9a59b078efdae9c` | `backlog_evidence/wave56` |
 
 | Corrected Gaussian event and finite Regge results | `fdfa10937a5bd0fad3e9ad73a65174aec10c534e` | `backlog_evidence/wave57` |
+
+## Active work after wave57
+
+Wave58 combines independently confirmed Eta affine/repeat, Schur-pole science and historical archive recovery: 407 source paths, five bounded science notes. Integration gates are pending; current counts above do not yet credit this candidate. Original #7827 remains open for fourteen older transferred scopes after its own affine/repeat partition lands.
+
+Original full-Fock #7871 review and finding-scoped repairs are active. Eta lineage #7853–#7856 review is active. Early findings require narrowing unsupported physical-lift and covariance claims; no pending original scope is accepted by these assignments. Shared exact worker assignments are in NEXT_REVIEW_UNITS.json.
