@@ -1,24 +1,24 @@
 # Backlog review and landing — current handoff
 
-Updated after wave35 at 2026-09-09T02:59:31.474578+00:00. Main is `7f21e7f06e2d1b5e55f230a030b0cce537dd3d89`.
-Fixed original 254 cutoff; newer arrivals excluded. Formal audit deferred until a solid TOE.
+Updated after wave36 at 2026-09-09T03:09:06.639929+00:00. Main is `fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8`.
+Fixed original 254 cutoff; new arrivals excluded. Formal audit deferred until a solid TOE.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 69 |
+| Closed directly after reviewed landing | 71 |
 | Closed by draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner reservations | 75 |
+| Still open, including three owner reservations | 73 |
 | Original membership | 254 |
 
-109 original science scopes newly landed:67 direct+42 consolidated. One meta and one process PR are separate. Of110 other closures,64 scopes remain pending at five open successors, two were superseded by starting-main science, one was empty and one was an unexecuted plan. Zero original drafts remain. Reservations apply transitively.
+111 original science scopes newly landed: 69 direct + 42 consolidated. One meta and one process PR are separate. Of 110 other closures, 64 scopes remain pending at five open successors, two were superseded by starting-main science, one was empty and one was an unexecuted plan. Zero original drafts remain; reservations apply transitively.
 
-Including seven pre-cutoff arrivals #8003–#8009, session 76 direct closures,35 science/source batches and135 new source documents.34 batches passed one combined gate; W14 retains its actual repaired retry. Main ledger4,570 rows=4,198 unaudited science+372 meta;40 notes await mechanical ledger refresh. Generated validation data preserved and stripped; no formal auditor or verdict.
+Including seven pre-cutoff arrivals #8003–#8009, session 78 direct closures, 36 science/source batches and 137 new source documents. 35 batches passed one combined gate; W14 retains its actual repaired retry. Main ledger 4,570 rows = 4,198 unaudited science + 372 meta; 42 notes await mechanical ledger refresh. Generated validation data preserved and stripped; no formal auditor or verdict.
 
-W35 lands #7973/#7989/#7991. Original numerical checks survive; the full-menu counterexample corrects a universal slab claim and physical formation/chirality bridges remain open. All nine original bodies are preserved. The original reviewer confirmed final corrections, including an additional factor-ten prose correction and genuine affected-only cache refresh. All 20 source/manifest paths were verified on remote main. One combined integration gate passed in 228.132seconds. See [wave35 evidence](backlog_evidence/wave35/INDEX.json).
+W36 lands #7935/#7949 after original-reviewer confirmation of eight corrected finding groups. All 45 original numerical checks remain, supplemented by ten scientific controls and two source guards: 57 genuine final checks passed. Exact profiled-mass and uniform-gap mathematics survives; finite vortex/boundary diagnostics do not establish a physical species or global index. All six original bodies are preserved. All 14 source/manifest paths were verified on remote main. One combined gate passed in 240.689 seconds. See [wave36 evidence](backlog_evidence/wave36/INDEX.json).
 
-Astra low remains the focused landing-review default; consequential unresolved mathematics escalates to Astra xhigh. Reuse completed reviews and original-session correction confirmation. See [one-workload reviewer pilot](REVIEWER_MODEL_PILOT.md); detailed certification waits for audit.
+Astra low remains the focused landing-review default; consequential unresolved mathematics escalates to Astra xhigh. Reuse original reviews and same-session correction confirmation. See [one-workload reviewer pilot](REVIEWER_MODEL_PILOT.md); detailed certification waits for audit.
 
-Vortex #7935/#7949 corrections have 57 genuine final checks passing and are undergoing original-reviewer confirmation. Maxwell #7966 and seven consolidated constituent scopes remain under author repair; long production runs are explicitly held and historical receipts are not current production evidence. No acceptance for either pending unit yet.
+Maxwell #7966 and seven consolidated scopes remain under author repair; long production runs are explicitly held and historical receipts are not current production evidence. Gravity #7925/#7929/#7938 and the separate Regge #7910/#7940 unit are under focused original review. Neither pending unit nor held production receives acceptance.
 
 ## Landed source history
 
@@ -353,3 +353,5 @@ and changes no backlog count or audit verdict. See [process evidence](backlog_ev
 | Conditional indexed formation and chirality diagnostics | `7f21e7f06e2d1b5e55f230a030b0cce537dd3d89` | `backlog_evidence/wave35` |
 
 Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7938, covering formation rate, vacuum and readout. #7940/#7910 forms a separate Regge unit. No new acceptance.
+
+| Conditional finite vortex and second-mass science | `fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8` | `backlog_evidence/wave36` |

@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T02:59:31.474578+00:00; main `7f21e7f06e2d1b5e55f230a030b0cce537dd3d89`.
+Updated 2026-09-09T03:09:06.639929+00:00; main `fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8`.
 
-109 science scopes newly landed:67 direct+42 consolidated. One meta and one process scope separate.179 originals closed,75 open;64 earlier-closed scopes pending at 5 open successors. No audit grade.
+111 science scopes newly landed: 69 direct + 42 consolidated. One meta and one process scope separate. 181 originals closed, 73 open; 64 earlier-closed scopes pending at five open successors. No audit grade.
 
 | Original PR | Closure action | Current scope status | Accepted main or successor |
 | --- | --- | --- | --- |
@@ -151,6 +151,7 @@ Updated 2026-09-09T02:59:31.474578+00:00; main `7f21e7f06e2d1b5e55f230a030b0cce5
 | #7932 | source_consolidation_exact | reviewed_corrected_scope_on_main | `e043c95b37bd46d80e97c39f36c8b3cb7643c62f` |
 | #7933 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `1aef37f622bf0078f2898e4131c45414b018e946` |
 | #7934 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |
+| #7935 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8` |
 | #7936 | source_consolidation_exact | reviewed_corrected_scope_on_main | `94e90cbf928cb35fa1b50e894cd897c94b73077f` |
 | #7937 | source_consolidation_exact | reviewed_corrected_scope_on_main | `94e90cbf928cb35fa1b50e894cd897c94b73077f` |
 | #7939 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `e4b4fd46dbdc075a218387a0c23a1a2739f4f01c` |
@@ -160,6 +161,7 @@ Updated 2026-09-09T02:59:31.474578+00:00; main `7f21e7f06e2d1b5e55f230a030b0cce5
 | #7945 | source_consolidation_exact | pending_on_open_successor | #7966 |
 | #7946 | source_consolidation_exact | pending_on_open_successor | #7966 |
 | #7947 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `917c9a26c8c8b963ea0d773b32b057bcc33a3e6d` |
+| #7949 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8` |
 | #7950 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `27dd1b2199c4a5973eb1a97af25eb7c5b9b8efc0` |
 | #7952 | source_consolidation_exact | pending_on_open_successor | #7966 |
 | #7953 | source_consolidation_exact | pending_on_open_successor | #7966 |
