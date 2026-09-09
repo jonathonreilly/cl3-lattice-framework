@@ -1,0 +1,2 @@
+# Paired-rank affected confirmation
+PASS corrected proof bc4a44df30332731df8c241af0be25c5210cdda4ba9d3c52136949b899bb54f0, freeze07a33ac8. Opening now explicitly requires full interleaved paired rank/positive paired pivots, gives the s2=Gamma s1 counterexample, and distinguishes the a posteriori delta<1 rank certificate. Only that clarification changed; the reviewed triangular gauge, constants and scope are unchanged. No numerical controls rerun and no native inputs read. This closes the sole issue in REVIEW.md19fa9973.
