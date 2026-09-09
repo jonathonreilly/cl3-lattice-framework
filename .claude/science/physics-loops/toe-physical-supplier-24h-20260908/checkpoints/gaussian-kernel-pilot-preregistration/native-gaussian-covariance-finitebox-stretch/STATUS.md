@@ -1,0 +1,9 @@
+# Covariance bound derivation checkpoint
+
+Read complete8063 thermodynamic note. No physical or numerical covariance evaluation performed. Root reprioritized frozen Gaussian-kernel pilot review before completing constants.
+
+Prospective route: use the actual fixed-cell sign Bloch symbol, smooth off its conical zeros. A periodic AP midpoint grid of spacing2pi/n has central-node cells of volume O(n^-3); outside those cells, first/second derivatives of the normalized Dirac vector scale r^-1/r^-2. Composite midpoint estimates should give an explicit O(n^-2) entry bound with polynomial dependence on the spatial coefficient offset. This estimate is not yet certified: derivative constants, cell-count bound and periodic gauge factors still need explicit derivation. An improved cancellation-based O(n^-3 log n) bound may be possible because the periodic integral of the Laplacian vanishes, but is also unproved here.
+
+Useful completed elementary transfer lemma: for two valid Gaussian covariances on the same finite local CAR algebra, interpolate their covariance matrices linearly. This remains a valid quasifree state covariance. The derivative of a Wick Pfaffian is a sum over one changed contraction times the Pfaffian on the remaining ordered factors. Each remaining Pfaffian is an actual Gaussian expectation and hence has modulus at most the product of the remaining linear-Majorana operator norms. Therefore a product of 2p real unit-norm linear Majoranas has expectation difference at most binom(2p,2) times the operator-norm covariance difference. This avoids a factorial bound from independently expanding every pairing. It does not bound arbitrary Gaussian exponentials without a separate expansion/norm argument. No achieved infinite-alpha certificate follows.
+
+All constants/scaling proposals above remain work in progress. Next: finish an explicit safe midpoint estimate, then quantify local matrix and Pfaffian costs.

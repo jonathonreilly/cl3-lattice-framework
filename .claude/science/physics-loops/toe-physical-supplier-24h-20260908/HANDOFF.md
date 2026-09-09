@@ -507,3 +507,11 @@ Thirty science PRs, #8036–#8065, are open for review. None were merged or audi
 The current decisive target is the infinite-volume one-particle node coupling alpha. Its scalar reduction, soft-limit/Laplace formula and sharper infinite impurity gap h/6 passed independent checks. Alpha remains unknown. A Gaussian soft-commutator estimate is under separate review; quantitative spatial and finite-box covariance errors remain open. A fixed tiny Gaussian-versus-Fock pilot is implemented but UNLAUNCHED pending independent source/protocol review and remote preregistration. It tests normalization and cost, not the infinite node.
 
 All prior numerical protocols remain completed; do not rerun them. This checkpoint archives the new proofs, reviews and provisional partials distinctly. Fifty inactive worktrees have been removed only after useful evidence was verified on remote branches; the latest8052 removal reclaimed about396MiB. About58GiB is free. Original dirty and other-worker checkouts remain untouched. Read STATE.yaml for assignments and exact next actions.
+
+# Checkpoint41 — prospective Gaussian pilot
+
+Updated 2026-09-09T14:25:50.116865+00:00. Forty-five fixed finite L4 Gaussian-versus-Fock comparisons are ready but UNLAUNCHED. Worker source freeze49f78f7f and independent source review1a9ec43f pass; root monitor82a4f439 and independent57c5e75a pass. Root actual readiness performed no physical calls. The single attempt has inclusive60seconds and384MiB sampled whole-tree limits, root kill59.5, full partial retention, no retry, separate external-shell acceptance. Remote verification precedes launch.
+
+This tests short-time normalization and hardware cost only. Infinite node alpha, long-time conditioning and quantitative finite-box errors remain unresolved. The soft-commutator proof now passes independent reviewea85464b. Conservative filter/time bounds and covariance-midpoint/Krylov-compression approaches are archived as provisional analytic work; they do not supply a practical infinite calculation. Canonical node/gap milestone packaging continues in parallel.
+
+Checkpoint40 ef547cda7170332fccea681473ed1ef0bc614a40 has113 verified snapshot blobs;30 science PRs remain proposals and50 inactive worktrees removed. Campaign remains active through originaldeadline, without reset credit use or main merge.

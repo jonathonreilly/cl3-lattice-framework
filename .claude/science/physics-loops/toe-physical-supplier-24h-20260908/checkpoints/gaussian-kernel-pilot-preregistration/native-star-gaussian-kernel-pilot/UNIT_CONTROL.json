@@ -1,0 +1,33 @@
+{
+  "rows": [
+    {
+      "name": "baseline",
+      "source_sha256": "b3a3e956de95e841e3b93e6997ef5549f2e2b89345655530ed697ab1da7fb670",
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"non_native_comparisons\": 9,\n  \"rows\": [\n    {\n      \"error\": 3.3306690738754696e-16,\n      \"chart_distance\": 2.289831334437705e-16,\n      \"thouless_skew\": 1.064115267162791e-15\n    },\n    {\n      \"error\": 5.776343774696446e-16,\n      \"chart_distance\": 2.289831334437705e-16,\n      \"thouless_skew\": 1.064115267162791e-15\n    },\n    {\n      \"error\": 2.4275813534338456e-16,\n      \"chart_distance\": 2.289831334437705e-16,\n      \"thouless_skew\": 1.064115267162791e-15\n    },\n    {\n      \"error\": 2.269615567682546e-16,\n      \"chart_distance\": 0.04812351415850867,\n      \"thouless_skew\": 8.486288305354981e-16\n    },\n    {\n      \"error\": 1.984089975648473e-16,\n      \"chart_distance\": 0.04812351415850867,\n      \"thouless_skew\": 8.486288305354981e-16\n    },\n    {\n      \"error\": 2.2651453713960015e-16,\n      \"chart_distance\": 0.04812351415850867,\n      \"thouless_skew\": 8.486288305354981e-16\n    },\n    {\n      \"error\": 4.497687083862213e-16,\n      \"chart_distance\": 0.06480495671809237,\n      \"thouless_skew\": 5.054120967528593e-16\n    },\n    {\n      \"error\": 4.004470195455813e-16,\n      \"chart_distance\": 0.06480495671809237,\n      \"thouless_skew\": 5.054120967528593e-16\n    },\n    {\n      \"error\": 6.66467517316839e-16,\n      \"chart_distance\": 0.06480495671809237,\n      \"thouless_skew\": 5.054120967528593e-16\n    }\n  ],\n  \"physical_runs\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "wrong_vacuum_shift",
+      "source_sha256": "c77ebd3d29e8e477c197c6524e21b32276cee3c1ce01f1c783d249b5c6478ad8",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/toy.py\", line 19, in <module>\n    if __name__=='__main__': print(json.dumps(run(),indent=2))\n                                              ^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/toy.py\", line 16, in run\n    require(abs(a-ref)<2e-12,'Gaussian/Fock toy mismatch')\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/unit_wrong_vacuum_shift.py\", line 5, in require\n    if not ok: raise ValueError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^\nValueError: Gaussian/Fock toy mismatch\n"
+    },
+    {
+      "name": "wrong_wick_sign",
+      "source_sha256": "31d3b1f01d4eabf52c9cc212e9267ff34e1ef7e4f9548b4d0882d819e8897faf",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/toy.py\", line 19, in <module>\n    if __name__=='__main__': print(json.dumps(run(),indent=2))\n                                              ^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/toy.py\", line 16, in run\n    require(abs(a-ref)<2e-12,'Gaussian/Fock toy mismatch')\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/unit_wrong_wick_sign.py\", line 5, in require\n    if not ok: raise ValueError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^\nValueError: Gaussian/Fock toy mismatch\n"
+    },
+    {
+      "name": "wrong_rotation",
+      "source_sha256": "bf4a31d32df90fbb4dee74aa6cfb6087a8250da38caf16bbe1b3a93d9da34263",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/toy.py\", line 19, in <module>\n    if __name__=='__main__': print(json.dumps(run(),indent=2))\n                                              ^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/toy.py\", line 16, in run\n    require(abs(a-ref)<2e-12,'Gaussian/Fock toy mismatch')\n  File \"/private/tmp/toe-24h-probes-20260908/native-star-gaussian-kernel-pilot/unit_wrong_rotation.py\", line 5, in require\n    if not ok: raise ValueError(msg)\n               ^^^^^^^^^^^^^^^^^^^^^\nValueError: Gaussian/Fock toy mismatch\n"
+    }
+  ],
+  "physical_runs": 0
+}
