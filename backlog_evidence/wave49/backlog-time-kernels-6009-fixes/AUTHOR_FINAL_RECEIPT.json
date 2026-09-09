@@ -1,0 +1,273 @@
+{
+  "actual_run_summary": {
+    "affected_rerun_justification": "Normalize current memo whitespace in the helper and dependent primary; no mathematical code or claim changed. Only the failed helper was rerun; primary had not previously launched.",
+    "memory_limit_bytes": 2147483648,
+    "preserved_cycle884_helper_failure": "cache exit 1; TOTAL PASS=5 FAIL=1; memo newline literal only",
+    "preserved_launcher_failure_before_process": 1,
+    "runner_timeout_seconds": 30,
+    "successful_peak_process_group_rss_bytes": 96583680,
+    "successful_runner_elapsed_seconds": [
+      0.05,
+      0.38,
+      0.37,
+      0.77
+    ],
+    "successful_totals": {
+      "cycle884_independent": "PASS=6 FAIL=0",
+      "cycle884_primary": "PASS=10 FAIL=0",
+      "cycle900_independent": "PASS=5 FAIL=0",
+      "cycle900_primary": "PASS=9 FAIL=0"
+    }
+  },
+  "all_author_checks_pass": true,
+  "author_base": "a917b8f7422bb420e599b37e3562505e77de1da5",
+  "author_cannot_assign_science_pass": true,
+  "branch": "fix/backlog-time-kernels-6009-20260909",
+  "changed_path_count": 56,
+  "checks": {
+    "all_final_note_links_exist": true,
+    "all_successful_runs_within_bounds": true,
+    "cache_validation_passes": true,
+    "committed_delta_whitespace_clean": true,
+    "head_is_evidence_commit": true,
+    "inventory_complete": true,
+    "postfreeze_delta_is_four_caches": true,
+    "source_evidence_internal_hashes_match": true,
+    "source_unchanged_after_freeze": true,
+    "worktree_clean": true
+  },
+  "commit_boundary": [
+    "4e5bf0dec422a5da3e6dee0bb17d778761d7ca61",
+    "4ad290273f1c6d7840c260640f901d383d75525c",
+    "fcae92211969fae660db82fc42e6b3b449d064c1",
+    "f5c483cb0647e456fdceee27fd60d0f5c8d23372",
+    "4b7a18abf20952fae1b4c205b60093c162a2c2ba"
+  ],
+  "current_main_observed": "e95f5d76d7d2a0595b6e5ef0d5782ee84fe48daa",
+  "evidence_commit": "4b7a18abf20952fae1b4c205b60093c162a2c2ba",
+  "external_artifact_count": 38,
+  "external_artifacts": [
+    {
+      "bytes": 3162,
+      "path": "CLAIM_DISPOSITIONS.json",
+      "sha256": "b2d505b50d89714d49b5eb9efe3844e96c27588d2b4b8a428b11e98a4f27495a"
+    },
+    {
+      "bytes": 24778,
+      "path": "COMPLETE_PATH_INVENTORY.json",
+      "sha256": "37ef6294ee908b4c3d826cbbb4d557cc6fce465a08ea1af955668403a318e3f7"
+    },
+    {
+      "bytes": 42610,
+      "path": "FINAL_CACHE_VALIDATION.json",
+      "sha256": "904ccc583680a5c977ebc848127eefc52618893fae99879f039512cf75e71172"
+    },
+    {
+      "bytes": 1418520,
+      "path": "FINAL_PATCH.patch",
+      "sha256": "68ee5fa5133e947f805540435d5526cce2a4d95b55e847f69d9793126f6a732b"
+    },
+    {
+      "bytes": 24365,
+      "path": "FINAL_SOURCE_AND_EVIDENCE.json",
+      "sha256": "74bbd0726fdaf022e27de1faaffe5c0834bded3f6b5c5d98e62fd3b16bff06bb"
+    },
+    {
+      "bytes": 9762,
+      "path": "PREFINAL_COLD_READ.json",
+      "sha256": "d06bcdf4448b18d62dead8b3fc51b3e3666488d8a7a077a4345ab652640b5a26"
+    },
+    {
+      "bytes": 8555,
+      "path": "PREFINAL_COLD_READ_ATTEMPT1.json",
+      "sha256": "7209531bab20a95e398f4943fc1285cbf10da66b7e332d72a17347c7480940d7"
+    },
+    {
+      "bytes": 9050,
+      "path": "PREFINAL_COLD_READ_ATTEMPT2.json",
+      "sha256": "df4e514d1f260e147e9bd651442d03fc151f8e49803eaf66c7d1d52f456044a2"
+    },
+    {
+      "bytes": 10427,
+      "path": "PREFINAL_COLD_READ_FCAE.json",
+      "sha256": "b359c389960da1f91ec22f62f92a9061a1dca00c41439925eaec5359df1d32b8"
+    },
+    {
+      "bytes": 11321,
+      "path": "SOURCE_FREEZE.json",
+      "sha256": "dd683614f1642115936eb7ee5ab2b9352a9193f352332f0e4814c0842c34c68a"
+    },
+    {
+      "bytes": 380258,
+      "path": "SUBSTANTIVE_CORRECTION.patch",
+      "sha256": "632dadfa1bc9ce133ddf28a56874443efdc401bd33e03e3f382ede1c60643b55"
+    },
+    {
+      "bytes": 6342,
+      "path": "exploration/corrected_multiquadratic_recompute.py",
+      "sha256": "1cffba714917f3f70d816e916399297b2f3a937a36dd13f3e5b2192dde68b3bb"
+    },
+    {
+      "bytes": 414,
+      "path": "exploration/corrected_multiquadratic_recompute.receipt.json",
+      "sha256": "54bddfb4954ac60329dad85795b29e6b6391ced94a7e9e3b0cfe7fc9cc92d1a4"
+    },
+    {
+      "bytes": 0,
+      "path": "exploration/corrected_multiquadratic_recompute.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5890,
+      "path": "exploration/corrected_multiquadratic_recompute.stdout",
+      "sha256": "295f7a6321258a417f0046fbd94981d16af0bd735060c4e9e637025951bd65f9"
+    },
+    {
+      "bytes": 523,
+      "path": "final-runs/01-cycle884-independent/launcher_failure.json",
+      "sha256": "a8dba6cd53c1f54443e88a267619a9e1bee4482170d572a1aa465d0ae095c371"
+    },
+    {
+      "bytes": 674,
+      "path": "final-runs/02-cycle884-independent/actual_runner_disposition.json",
+      "sha256": "ec685f60e40dd3e4e3a1fb19699ab75892e49e055a04ef9e8f2e048df3d5222d"
+    },
+    {
+      "bytes": 4341,
+      "path": "final-runs/02-cycle884-independent/failed_cache.txt",
+      "sha256": "ffb8cdeaa80eebcc1399b94327d291dffa4cc428d117af332541c27da73bab99"
+    },
+    {
+      "bytes": 1946,
+      "path": "final-runs/02-cycle884-independent/receipt.json",
+      "sha256": "7baa00cfcb28036cf4fa338b87c20ca666cc2d53fef0e821e8d6b8ba2330be9d"
+    },
+    {
+      "bytes": 105,
+      "path": "final-runs/02-cycle884-independent/stderr.txt",
+      "sha256": "c2790d76518c09230843ee4c2507bb44594fa73c2839ed000bbcdaa53eff0c84"
+    },
+    {
+      "bytes": 4341,
+      "path": "final-runs/02-cycle884-independent/stdout.txt",
+      "sha256": "ffb8cdeaa80eebcc1399b94327d291dffa4cc428d117af332541c27da73bab99"
+    },
+    {
+      "bytes": 2056,
+      "path": "final-runs/03-cycle884-independent/receipt.json",
+      "sha256": "0d4bc2c0cfd1398dfe79a1a849069cd2c91a45fee666b84c8f0b892fe706d0a1"
+    },
+    {
+      "bytes": 105,
+      "path": "final-runs/03-cycle884-independent/stderr.txt",
+      "sha256": "c2790d76518c09230843ee4c2507bb44594fa73c2839ed000bbcdaa53eff0c84"
+    },
+    {
+      "bytes": 4329,
+      "path": "final-runs/03-cycle884-independent/stdout.txt",
+      "sha256": "3fe019f02db4f89717652f71050f796c5754dd1834980f4b80f03c7f9e2a224f"
+    },
+    {
+      "bytes": 2036,
+      "path": "final-runs/04-cycle884-primary/receipt.json",
+      "sha256": "23c4cdc1795e1a6361c9c69fe6bbdc0fd57897ca3c7cb78751dbdab61cb80129"
+    },
+    {
+      "bytes": 101,
+      "path": "final-runs/04-cycle884-primary/stderr.txt",
+      "sha256": "dc3a7b06aa94f4ce58f7cd906ceb56177b0f61cac1410dfecfd3248b91485155"
+    },
+    {
+      "bytes": 7718,
+      "path": "final-runs/04-cycle884-primary/stdout.txt",
+      "sha256": "2f6f016660b7685efeb2d911a0cda2f2cae9c4408f3b46e3c1eded11ea2b41c5"
+    },
+    {
+      "bytes": 2089,
+      "path": "final-runs/05-cycle900-independent/receipt.json",
+      "sha256": "7939c738429911e2ba5d293a0a93c18a3f5251c3738e57e8d41e1fc0ba1bfc37"
+    },
+    {
+      "bytes": 116,
+      "path": "final-runs/05-cycle900-independent/stderr.txt",
+      "sha256": "b7c967deadbdc639b8df39a14384380da1e38b65cd78ee979553eadbad26c4ea"
+    },
+    {
+      "bytes": 5803,
+      "path": "final-runs/05-cycle900-independent/stdout.txt",
+      "sha256": "5b433308c5ade7036afb2654c33479edd9eca850e0f9e07799bd4fb9a08203ba"
+    },
+    {
+      "bytes": 2026,
+      "path": "final-runs/06-cycle900-primary/receipt.json",
+      "sha256": "2985caad9258c5d60c9ce51ed4032e14c6b940f07a1d7b6ae51620c3e0264d0f"
+    },
+    {
+      "bytes": 98,
+      "path": "final-runs/06-cycle900-primary/stderr.txt",
+      "sha256": "907f76ba3a40bd6a1453065a6e899c746dfa3c7b2b884f1543e34fca08120e62"
+    },
+    {
+      "bytes": 15131,
+      "path": "final-runs/06-cycle900-primary/stdout.txt",
+      "sha256": "f8d6241ef53cc82101d7da9026291b735aa1c444a65cd9eedcbdac5b49374590"
+    },
+    {
+      "bytes": 5499,
+      "path": "run_bounded_entrypoint.py",
+      "sha256": "84a804439f082bdc51535b47ece70f0c236b6265e132d7fef353468c5833b7fa"
+    },
+    {
+      "bytes": 11573,
+      "path": "source-freezes/4ad290273f1c6d7840c260640f901d383d75525c/SOURCE_FREEZE.json",
+      "sha256": "0391fb3cbada5d7d200adf030e021c963dea16a99b36de4ebc123aacb289b4bf"
+    },
+    {
+      "bytes": 377334,
+      "path": "source-freezes/4ad290273f1c6d7840c260640f901d383d75525c/SUBSTANTIVE_CORRECTION.patch",
+      "sha256": "412b1ed675ae287ec937925f82dfc04e058c5d895a336b31e02550c27254175d"
+    },
+    {
+      "bytes": 13040,
+      "path": "source-freezes/fcae92211969fae660db82fc42e6b3b449d064c1/SOURCE_FREEZE.json",
+      "sha256": "4918c27c2f75e6ca4fd23c550042ffe71d493e19fdcd0c0f67565f0012389446"
+    },
+    {
+      "bytes": 380144,
+      "path": "source-freezes/fcae92211969fae660db82fc42e6b3b449d064c1/SUBSTANTIVE_CORRECTION.patch",
+      "sha256": "b2fbe49aea747e1d56ac11493737d199586749d544ffa9fa6240120ad0b60dd1"
+    }
+  ],
+  "family_closed_by_this_slice": false,
+  "final_bindings": {
+    "claim_dispositions_sha256": "b2d505b50d89714d49b5eb9efe3844e96c27588d2b4b8a428b11e98a4f27495a",
+    "complete_path_inventory_sha256": "37ef6294ee908b4c3d826cbbb4d557cc6fce465a08ea1af955668403a318e3f7",
+    "final_cache_validation_sha256": "904ccc583680a5c977ebc848127eefc52618893fae99879f039512cf75e71172",
+    "final_patch_sha256": "68ee5fa5133e947f805540435d5526cce2a4d95b55e847f69d9793126f6a732b",
+    "final_source_and_evidence_sha256": "74bbd0726fdaf022e27de1faaffe5c0834bded3f6b5c5d98e62fd3b16bff06bb",
+    "prefinal_cold_read_sha256": "d06bcdf4448b18d62dead8b3fc51b3e3666488d8a7a077a4345ab652640b5a26",
+    "source_freeze_sha256": "dd683614f1642115936eb7ee5ab2b9352a9193f352332f0e4814c0842c34c68a",
+    "substantive_correction_sha256": "632dadfa1bc9ce133ddf28a56874443efdc401bd33e03e3f382ede1c60643b55"
+  },
+  "formal_audit_run": false,
+  "integration_note": "Root must bind this additive commit-tree unit onto the actual latest main and run shared/global gates. No source rerun is warranted when unrelated main leaves and declared inputs remain unchanged.",
+  "main_planning_github_mutations_by_author": false,
+  "original_review": {
+    "final_receipt_sha256": "9d8ef2baaa419b6909889705983614388c26ea45a2b0f98d0cb6110fef2d2748",
+    "report_sha256": "680b3f26dc59cd2f897e78c51553972d829e80935bba22b92442fe107ef78ff2",
+    "reviewer_task": "/root/backlog_ticks_review"
+  },
+  "path_counts": {
+    "active_cache": 4,
+    "active_note": 2,
+    "active_runner": 4,
+    "correction_metadata": 2,
+    "exact_intermediate_archive": 8,
+    "exact_original_tip_archive": 16,
+    "original_review_history": 20
+  },
+  "schema": "time-kernels-6009-unit-a-author-final-receipt-v1",
+  "scope": "Original #6009 repair unit A, Cycles 884 and 900 only",
+  "source_freeze_commit": "f5c483cb0647e456fdceee27fd60d0f5c8d23372",
+  "status": "READY_FOR_SAME_SESSION_ORIGINAL_REVIEWER_CONFIRMATION"
+}

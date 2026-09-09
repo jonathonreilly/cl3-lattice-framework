@@ -50,7 +50,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. Wave 48 lands corrected #7803. The fixed backlog has 42 open PRs and 142 reviewed science scopes landed, plus eight partial Maxwell scopes with explicit holds. Another 56 transferred scopes remain pending at four successors. Confirmed A kernels, #5951 and B window repairs, and remaining original reviews continue. Formal audit remains deferred.
+1. Wave 49 lands A884/900 and closes #5963. The fixed backlog has 41 open PRs and 143 reviewed science scopes landed, plus eight partial Maxwell scopes with explicit holds. Another 56 transferred scopes remain pending at four successors. Confirmed B and #5951 integration, C/readout and #6017 repairs continue. #6009 remains open. Formal audit remains deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
