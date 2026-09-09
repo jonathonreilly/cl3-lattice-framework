@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle947_h0_discharge_independent_check_2026_07_28.py
+runner_sha256: baa1fb68b15f1ae7bfc366de9c34f996e4d66f9465db24107114370152209b95
+input_fingerprint_sha256: 5f29b559b63c95802dc48e704127a43b0886b6e0bc2487309c5294319404c2ba
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 947 -- CORRECTED H0 FINITE-IMPLICATION INDEPENDENT CHECK
+==============================================================================
+
+SCOPE: supplied finite compiler constructions and implication
+counterexamples; no physical bridge, H0 discharge, or audit.
+
+  PASS  R0_PINNED_PRIMARY_AND_CACHE            scripts/frontier_cycle947_h0_discharge_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle947_h0_discharge_2026_07_28.txt:MATCH
+  PASS  R0B_CLAIMS_INTERFACE                   parsed=True
+  PASS  R1_BITWISE_COORDINATE_ROUTE            coordinate_rows=96 within_lane_coupling=True cross_lane_leak=False
+  PASS  R2_CHOICE_DISTRIBUTION_ROUTE           counts={0: 1, 1: 3} probabilities={0: '1/4', 1: '3/4'} fixed_choice_rows=8
+  PASS  R3_GRAPH_OVERAPPROXIMATION_GF2         structural_y_to_x=True product=((1, 0), (0, 1)) states=4
+  PASS  R4_ORDERED_MAP_GF2                     first=((0, 1), (1, 1)) second=((1, 1), (1, 0)) differing_inputs=3
+  PASS  R5_LOCAL_SYMMETRY_PERMUTATION          states=8 commutes=True local_not_uniform=True
+  PASS  R6_PROPER_CUBE_GENERATOR_CLOSURE       rotations=24 actions=24 all_det_plus_one=True bare_transpositions=0
+  PASS  R7_PRIMARY_INTERFACE_AND_BOUNDARY      selected_claims_match=True digest_shape=True boundary_markers=True
+  PASS  R8_RUNTIME                             elapsed_s=0.002 budget_s=30
+
+TOTAL: PASS=10 FAIL=0
+VERDICT: PRIMARY_SURVIVES_THIS_CHECK
+
+----- stderr -----
+

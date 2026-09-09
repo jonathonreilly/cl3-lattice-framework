@@ -1,0 +1,1164 @@
+diff --git a/outputs/frontier_cycle947_h0_discharge_2026_07_28.log b/outputs/frontier_cycle947_h0_discharge_2026_07_28.log
+index b0e01b4700..8fbeb9a444 100644
+--- a/outputs/frontier_cycle947_h0_discharge_2026_07_28.log
++++ b/outputs/frontier_cycle947_h0_discharge_2026_07_28.log
+@@ -1,5 +1,5 @@
+ cycle947 h0 discharge attempt -- primary runner
+-runner_sha256: e0644328f485f6a435d3178b1b5d15fd6312549c997e810a73ba52c32225e2b1
++runner_sha256: 0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c
+ landed axiom sha256: 53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39
+ landed axiom git blob: 2f5fdd26898f62c17fcabc846761f7785c2eadb1
+ pins: PASS
+@@ -21,6 +21,6 @@ residue clauses: H0a3_EMBEDDING, H0b2_VARIATION, H0c2_SUPPORT, H0c3_DOMAIN, H0d2
+ no-go: universal symmetry-faithfulness FALSE = True (famA=10, famB=7)
+ teeth: 10/10
+ firewall: floats=0, unfenced weights=0
+-science digest: f8fef0efa3c757fcd054ee0c422bece9da3f9ebdffd242de94597b947b723af8
+-elapsed: 24.199s
++science digest: 656621f3863e96c728d9976c8271bfd2a1a959fdf5b9392a2c40c8e07a12017a
++elapsed: 24.29s
+ all certificates pass: True
+diff --git a/outputs/frontier_cycle947_h0_discharge_independent_check_2026_07_28.log b/outputs/frontier_cycle947_h0_discharge_independent_check_2026_07_28.log
+new file mode 100644
+index 0000000000..3b93dcb9c5
+--- /dev/null
++++ b/outputs/frontier_cycle947_h0_discharge_independent_check_2026_07_28.log
+@@ -0,0 +1,25 @@
++cycle947 h0 discharge -- INDEPENDENT CHECKER
++runner_sha256: 07455b0cc9ed36061fb60060a77164630c47dbbf7e51c8a2a382e022e604e994
++primary runner sha256: 0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c
++landed axiom sha256: 53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39
++
++  H0a1_FIBRATION             primary=DERIVED   checker=SUPPORTED
++  H0a2_TOTALITY              primary=DERIVED   checker=SUPPORTED
++  H0a3_EMBEDDING             primary=RESIDUE   checker=SUPPORTED
++  H0b1_CONTAINMENT           primary=DERIVED   checker=SUPPORTED
++  H0b2_VARIATION             primary=RESIDUE   checker=SUPPORTED
++  H0c1_MENU_CARDINALITY      primary=DERIVED   checker=SUPPORTED
++  H0c2_SUPPORT               primary=RESIDUE   checker=SUPPORTED
++  H0c3_DOMAIN                primary=RESIDUE   checker=SUPPORTED
++  H0d1_FIBRE_RESPECT         primary=DERIVED   checker=SUPPORTED
++  H0d2_DESCENT               primary=RESIDUE   checker=SUPPORTED
++
++  NO_GO universal H0 FALSE   checker=SUPPORTED
++
++checks: 17/17 SUPPORTED
++mutation probes: 16/16
++refutations raised: 2 (see receipt for status)
++science digest: a5cb9c407ef04f38f86e7f8fcde4693f31c7415e27e9be8e7a3c002c7c250267
++elapsed: 19.387s
++OVERALL: SUPPORTED
++all certificates pass: True
+diff --git a/outputs/h0_discharge_cycle947_receipt_2026_07_28.json b/outputs/h0_discharge_cycle947_receipt_2026_07_28.json
+index cac330b1da..e1de9561d6 100644
+--- a/outputs/h0_discharge_cycle947_receipt_2026_07_28.json
++++ b/outputs/h0_discharge_cycle947_receipt_2026_07_28.json
+@@ -6,6 +6,17 @@
+     "ref": "origin/main",
+     "sha256": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+   },
++  "INDEPENDENT_CHECKER_ADOPTIONS": {
++    "R1_the_symmetry_certificate_is_placement_dependent": {
++      "raised_by": "the independent checker, which rebuilt the same gate multiset with a different splice order",
++      "scope_effect": "H0d1 is DERIVED for the in-place partnered kernel only, and the caveat propagates to 946's certificate",
++      "status": "ADOPTED and measured here by the primary itself; see H0d1's PLACEMENT_DEPENDENCE block"
++    },
++    "R2_the_no_go_witnesses_do_not_preserve_the_setup": {
++      "raised_by": "the independent checker",
++      "status": "RAISED AND WITHDRAWN on the record: sigma does not preserve the setup either, so any reading strict enough to exclude the witnesses excludes sigma and collapses Route B entirely.  The same standard is applied to both."
++    }
++  },
+   "VERDICT": "The wall is not one sentence wide.  H0 decomposes into ten clauses; the compiler pays for four of them and cannot pay for five.  The decisive one is not the one anybody expected: it is not that the lanes lack coordinates, it is that they do not TALK.  The compiled law's dependence between distinct sites is exactly empty, so under the compiler's own forced site index the axiom's 'varies with the nearest-neighbor conditions' conjunct is not merely unverified -- it is false of this substrate.  A block that set out to discharge an import has instead measured which successor could: one with a real inter-site gate.  Independent audit still required.",
+   "all_certificates_pass": true,
+   "audit": "unset",
+@@ -956,6 +967,15 @@
+       },
+       "H0d_SYMMETRY_TRANSPORT": {
+         "H0d1_FIBRE_RESPECT": {
++          "PLACEMENT_DEPENDENCE_ADOPTED_FROM_THE_CHECKER": {
++            "append_order_multiset_sigma_invariant": true,
++            "append_order_semantic_breaking_wires": 139,
++            "baseline_semantic_breaking_wires": 139,
++            "consequence": "H0d1 is DERIVED for the IN-PLACE partnered kernel only.  Any statement that 'the partnered kernel's law is sigma-symmetric' must name the splice placement; 946's L2 (pairwise commutation with sigma-partners) is the step that does not survive re-ordering, and 946 reported L1 and L3 side by side without saying that the first does not underwrite the second.",
++            "in_place_order_semantic_breaking_wires": 0,
++            "the_finding": "gate-multiset sigma-invariance (946's L1) does NOT imply the semantic symmetry.  The SAME multiset, with every deficit image appended at the end of its station instead of inserted immediately after its deficit occurrence, is L1-invariant and semantically BROKEN at the unpartnered baseline's own count.",
++            "the_two_orders_composed_maps_differ_on_wires": 139
++          },
+           "PREDICATE": "sigma maps every fibre of the native fibration to itself: it permutes WIRES and preserves every gate's lane mask, so it never moves a cell out of its lane.",
+           "VERDICT": "DERIVED",
+           "global_sigma_restricted_equals_lane_sigma_everywhere": true,
+@@ -1512,7 +1532,7 @@
+       "declared_recomputed_core_digest_pass1": "1a03fdb7e27342e3affacef0b1c5cbbfda9ec592ff7b7ddc3c9d07a9666dd2ab",
+       "declared_recomputed_core_digest_pass2": "1a03fdb7e27342e3affacef0b1c5cbbfda9ec592ff7b7ddc3c9d07a9666dd2ab",
+       "pass": true,
+-      "science_digest": "f8fef0efa3c757fcd054ee0c422bece9da3f9ebdffd242de94597b947b723af8",
++      "science_digest": "656621f3863e96c728d9976c8271bfd2a1a959fdf5b9392a2c40c8e07a12017a",
+       "science_digest_recomputes": true,
+       "science_payload_is_timing_free": true,
+       "timing_token_paths": []
+@@ -1520,19 +1540,19 @@
+     "I_RUNTIME": {
+       "budget_seconds": 1800,
+       "certificate": "I_RUNTIME",
+-      "elapsed_seconds": 24.199,
++      "elapsed_seconds": 24.29,
+       "pass": true,
+       "per_stage_seconds": {
+         "H0a1": 1.357,
+-        "H0a2": 0.007,
++        "H0a2": 0.008,
+         "H0a3": 0.023,
+-        "H0b1": 3.756,
+-        "H0b2": 1.406,
+-        "H0c": 0.996,
+-        "H0d": 0.048,
+-        "NO_GO": 0.812,
+-        "double_run": 1.932,
+-        "setup": 13.593,
++        "H0b1": 3.697,
++        "H0b2": 1.355,
++        "H0c": 0.988,
++        "H0d": 0.303,
++        "NO_GO": 0.811,
++        "double_run": 1.918,
++        "setup": 13.563,
+         "teeth": 0.214
+       }
+     }
+@@ -1591,6 +1611,6 @@
+     },
+     "worker": "Claude Opus 5 worker under supervisor spec (substitution disclosed); supervisor reviews line-by-line and authors the note."
+   },
+-  "science_digest": "f8fef0efa3c757fcd054ee0c422bece9da3f9ebdffd242de94597b947b723af8",
+-  "self_sha256": "e0644328f485f6a435d3178b1b5d15fd6312549c997e810a73ba52c32225e2b1"
++  "science_digest": "656621f3863e96c728d9976c8271bfd2a1a959fdf5b9392a2c40c8e07a12017a",
++  "self_sha256": "0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c"
+ }
+diff --git a/outputs/h0_discharge_independent_check_cycle947_receipt_2026_07_28.json b/outputs/h0_discharge_independent_check_cycle947_receipt_2026_07_28.json
+new file mode 100644
+index 0000000000..58dfbf38e9
+--- /dev/null
++++ b/outputs/h0_discharge_independent_check_cycle947_receipt_2026_07_28.json
+@@ -0,0 +1,744 @@
++{
++  "CONDITIONAL_ON_LANDED_AXIOM": {
++    "git_blob": "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
++    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "ref": "origin/main",
++    "sha256": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
++  },
++  "VERDICT": "SUPPORTED",
++  "all_certificates_pass": true,
++  "audit": "unset",
++  "authority": "none",
++  "block": "cycle947_h0_discharge_independent_check",
++  "campaign": "toe-time-expansion-20260802 / blockQ18",
++  "certificates": {
++    "A_PINS": {
++      "DISJOINTNESS": "the checker shares the pinned SUBSTRATE (the 719 kernel and the 936 compiler, both AST-lifted from pinned bytes) and shares NO instrument with the primary: forward instead of backward reachability, a scalar per-lane interpreter instead of the packed machine, a deficit-append splice instead of an in-place splice, subset relabellings and 3-cycles instead of single-lane relabellings and transpositions, and a generator-closure isometry enumeration instead of a signed-permutation one.",
++      "blocked_modules_loaded": [],
++      "certificate": "A_PINS",
++      "firewall_hits": [],
++      "landed_axiom_git_blob": "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
++      "landed_axiom_git_blob_matches": true,
++      "landed_axiom_sha256": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
++      "landed_axiom_sha256_matches": true,
++      "pass": true,
++      "primary_receipt_sha256": "151bab024bfc95cd4fdf1f188fa142e4b7172540dc6996af4998821b60095cdc",
++      "primary_runner_sha256": "0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c",
++      "rows": {
++        "docs/MINIMAL_AXIOMS_2026-06-29.md": {
++          "bytes": 8846,
++          "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
++          "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
++        },
++        "outputs/h0_discharge_cycle947_receipt_2026_07_28.json": {
++          "bytes": 72357,
++          "git_blob": "e1de9561d6b34af591e27353b53ffe7b709a1b18",
++          "sha256": "151bab024bfc95cd4fdf1f188fa142e4b7172540dc6996af4998821b60095cdc"
++        },
++        "outputs/mirror_kernel_cycle946_receipt_2026_07_28.json": {
++          "bytes": 95277,
++          "git_blob": "c74aceddb1cb30d797aed447961a819732a0dd67",
++          "sha256": "b9d8263f7b180cb5973acefeb7379272ed0994ec146fdba2023fb8e2c9536cb5"
++        },
++        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": {
++          "bytes": 26046,
++          "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
++          "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
++        },
++        "scripts/frontier_cycle936_choice_substrate_2026_07_28.py": {
++          "bytes": 153066,
++          "git_blob": "75cb05ffb9456691747a67ed5227f3db589f95c4",
++          "sha256": "ba00f39403a1280346d2e20e6e1985130b7d4b0a986e1473acd2c637acd96e3d"
++        },
++        "scripts/frontier_cycle947_h0_discharge_2026_07_28.py": {
++          "bytes": 113515,
++          "git_blob": "54b25a490287b9583acee13601a8b662dd80af45",
++          "sha256": "0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c"
++        }
++      },
++      "shared_pins_match": true
++    },
++    "C_CHECKS": {
++      "CLAUSE_VERDICTS": {
++        "H0a1_FIBRATION": "SUPPORTED",
++        "H0a2_TOTALITY": "SUPPORTED",
++        "H0a3_EMBEDDING": "SUPPORTED",
++        "H0b1_CONTAINMENT": "SUPPORTED",
++        "H0b2_VARIATION": "SUPPORTED",
++        "H0c1_MENU_CARDINALITY": "SUPPORTED",
++        "H0c2_SUPPORT": "SUPPORTED",
++        "H0c3_DOMAIN": "SUPPORTED",
++        "H0d1_FIBRE_RESPECT": "SUPPORTED",
++        "H0d2_DESCENT": "SUPPORTED",
++        "NO_GO_universal_symmetry_faithfulness_is_FALSE": "SUPPORTED"
++      },
++      "COMPARISON_WITH_THE_PRIMARY": {
++        "H0a1_FIBRATION": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "DERIVED"
++        },
++        "H0a2_TOTALITY": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "DERIVED"
++        },
++        "H0a3_EMBEDDING": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "RESIDUE"
++        },
++        "H0b1_CONTAINMENT": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "DERIVED"
++        },
++        "H0b2_VARIATION": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "RESIDUE"
++        },
++        "H0c1_MENU_CARDINALITY": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "DERIVED"
++        },
++        "H0c2_SUPPORT": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "RESIDUE"
++        },
++        "H0c3_DOMAIN": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "RESIDUE"
++        },
++        "H0d1_FIBRE_RESPECT": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "DERIVED"
++        },
++        "H0d2_DESCENT": {
++          "checker": "SUPPORTED",
++          "primary_verdict": "RESIDUE"
++        }
++      },
++      "OVERALL": "SUPPORTED",
++      "REFUTATIONS": [
++        {
++          "REFUTATION": "the semantic sigma-symmetry of the partnered kernel is PLACEMENT-DEPENDENT.  Gate-multiset sigma-invariance (946's L1) does NOT imply it.  The checker built the SAME multiset with each deficit image appended at the end of its station instead of inserted in place, and measured semantic breaking wires equal to the UNPARTNERED BASELINE.",
++          "clause": "946_SYMMETRY_CERTIFICATE (carried into 947's H0d1)",
++          "detail": {
++            "STATUS": "STANDING -- adopt as a scope caveat on 946 and on 947's H0d1",
++            "append_splice_semantic_breaking_wires": 139,
++            "baseline_semantic_breaking_wires": 139,
++            "composed_maps_differ_on_wires": 139,
++            "inplace_splice_semantic_breaking_wires": 0,
++            "what_must_change": "no citation may say 'the partnered kernel's law is sigma-symmetric' without naming the IN-PLACE splice.  946's L1 is exact and placement-free; its L3 is not, and the two were reported side by side as if the first underwrote the second.  946's L2 (pairwise commutation with sigma-partners) is the step that does not survive re-ordering."
++          }
++        },
++        {
++          "REFUTATION": "the no-go witnesses are symmetries of the LAW that do not preserve the initial state.  If H0 were read as quantifying over symmetries of the law TOGETHER WITH the setup, the witnesses would be excluded.",
++          "clause": "NO_GO_SEARCH",
++          "detail": {
++            "BUT_sigma_itself_preserves_proto": false,
++            "STATUS": "raised and withdrawn on the record",
++            "lane_cycle_witness_preserves_proto": false,
++            "subset_witness_preserves_proto": false,
++            "why_the_refutation_does_not_land": "946's sigma does not preserve the setup either.  Any reading strict enough to exclude the witnesses excludes sigma, and Route B collapses entirely.  The refutation is recorded and then withdrawn: the same standard must apply to both."
++          }
++        }
++      ],
++      "WHAT_THE_CHECKER_ADDS": [
++        "a scalar per-lane interpreter reconstructs the site map semantically over two full orbits at eleven lanes, so the fibration is not an artifact of parsing emitted source",
++        "forward reachability reproduces the backward closure cone exactly, and both equal the set of wires the law touches",
++        "the variation test is re-run at a longer horizon with every other lane fully randomised, three draws, and still does not move the site",
++        "a different generator family (subset relabellings and lane 3-cycles) finds the same non-descending symmetries, so the no-go is not an artifact of the primary's generators",
++        "one refutation of the no-go's force was raised (the witnesses do not preserve the setup) and WITHDRAWN, because sigma does not preserve it either"
++      ],
++      "checks": [
++        {
++          "SUPPORTED": true,
++          "check": "946_defect_occurrences_reproduced_by_a_different_splice",
++          "detail": {
++            "checker": 220,
++            "pinned": 220
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "946_defect_distinct_gates_reproduced",
++          "detail": {
++            "checker": 12,
++            "pinned": 12
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "946_partnered_gate_total_reproduced_by_both_checker_splices",
++          "detail": {
++            "checker_append": 34408,
++            "checker_inplace": 34408,
++            "pinned": 34408
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "L1_holds_for_BOTH_checker_splice_orders",
++          "detail": {
++            "why": "gate-multiset sigma-invariance is placement-independent by construction; the semantic layer, as measured below, is NOT"
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "the_two_splice_orders_give_DIFFERENT_composed_maps",
++          "detail": {
++            "consequence": "every SEMANTIC statement about the partnered kernel is placement-relative and must name the splice placement as part of the construction",
++            "differing_wires": 139
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0a1_the_fibration_reconstructed_by_a_scalar_per_lane_machine",
++          "detail": {
++            "lanes": [
++              0,
++              1,
++              254,
++              374,
++              450,
++              475,
++              540,
++              558,
++              715,
++              747,
++              748
++            ],
++            "rows": [
++              {
++                "gates_in_this_lanes_own_sub_law": 6256,
++                "lane": 0,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 6256,
++                "lane": 1,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 9384,
++                "lane": 254,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 9384,
++                "lane": 374,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 9384,
++                "lane": 450,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 9384,
++                "lane": 475,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 12512,
++                "lane": 540,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 12512,
++                "lane": 558,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 15640,
++                "lane": 715,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 15640,
++                "lane": 747,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              },
++              {
++                "gates_in_this_lanes_own_sub_law": 6256,
++                "lane": 748,
++                "scalar_machine_agrees_with_the_packed_machine": true
++              }
++            ],
++            "steps": 22,
++            "why_this_is_independent": "the primary parses the emitted statements; this runs a different machine.  Agreement over two full orbits at eleven lanes is a semantic reconstruction of the same site map."
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0a2_the_duplicate_lane_is_mask_identical_to_lane_0",
++          "detail": {
++            "lanes": 749,
++            "wires": 5815
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0a3_no_native_lane_relation_is_a_Z3_adjacency",
++          "detail": {
++            "any_class_is_6_regular": false,
++            "census_key_is_(source_count,event,position_tuple)": true,
++            "checker_reading": "the primary's RESIDUE verdict is SUPPORTED.  The checker adds one sharpening: the primary says an embedding exists set-theoretically; the class structure shows the census is not even shaped like a box, so no embedding is natural either.",
++            "position_class_sizes": [
++              4
++            ]
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0b1_forward_reachability_reproduces_the_backward_closure",
++          "detail": {
++            "checker_forward_ancestor_count": 545,
++            "equals_every_touched_wire": true,
++            "primary_backward_closure": 545
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0b1_the_choice_node_has_no_control_wires",
++          "detail": {
++            "choice_gates_seen": 88
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0b2_no_cross_site_variation_at_a_longer_horizon_and_a_harder_perturbation_family",
++          "detail": {
++            "checker_family": "every other lane randomised on every touched wire, three independent draws -- strictly harder than the primary's growing-support family",
++            "checker_horizon": 330,
++            "primary_horizon": "for each covered atom, three perturbations of growing support outside the site's fibre, applied to the parent state at the choice boundary and run forward through the choice occasion for 120 boundaries, plus an own-lane control that must move the site.",
++            "rows": [
++              {
++                "atom": [
++                  700,
++                  475
++                ],
++                "every_other_lane_fully_randomised_three_draws": [
++                  true,
++                  true,
++                  true
++                ],
++                "horizon_boundaries": 330,
++                "own_lane_control_moved_the_site": true,
++                "site_never_moved": true
++              },
++              {
++                "atom": [
++                  702,
++                  450
++                ],
++                "every_other_lane_fully_randomised_three_draws": [
++                  true,
++                  true,
++                  true
++                ],
++                "horizon_boundaries": 330,
++                "own_lane_control_moved_the_site": true,
++                "site_never_moved": true
++              }
++            ]
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0c1_two_complementary_items_at_every_covered_atom",
++          "detail": {
++            "rows": [
++              {
++                "atom": [
++                  700,
++                  475
++                ],
++                "complementary": true,
++                "items": [
++                  [
++                    1,
++                    0
++                  ],
++                  [
++                    0,
++                    1
++                  ]
++                ],
++                "two_distinct": true
++              },
++              {
++                "atom": [
++                  702,
++                  450
++                ],
++                "complementary": true,
++                "items": [
++                  [
++                    1,
++                    0
++                  ],
++                  [
++                    0,
++                    1
++                  ]
++                ],
++                "two_distinct": true
++              },
++              {
++                "atom": [
++                  702,
++                  715
++                ],
++                "complementary": true,
++                "items": [
++                  [
++                    0,
++                    1
++                  ],
++                  [
++                    1,
++                    0
++                  ]
++                ],
++                "two_distinct": true
++              }
++            ]
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0c2_the_landed_text_defines_availability_FROM_the_distribution",
++          "detail": {
++            "AND_A_SHARPENING": "the same sentence makes the reverse reading circular, which is exactly why 946's H5 'dissolved by composition' argument cannot be reused here.",
++            "checker_refutation_attempt": "hunted the landed bytes for any clause forcing a realizable possibility to carry nonzero probability.  There is none: the direction of definition runs distribution -> availability, so the primary's RESIDUE verdict stands.",
++            "tokens_found_in_the_landed_text": [
++              "nonzero probability",
++              "supported",
++              "support"
++            ]
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0c3_the_landed_text_gives_the_one_site_domain_an_M2C_presentation_that_the_compiler_never_mentions",
++          "detail": {
++            "checker_refutation_attempt": "searched the lifted compiler and the 719 kernel for any complex or matrix structure that could host the presentation.  The state is a GF(2) vector end to end.",
++            "compiler_item_space": "two complementary GF(2) patterns on a wire pair",
++            "quote_verbatim": true
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0d1_sigma_preserves_every_lane_mask_and_commutes_with_the_partnered_law_but_not_the_baseline",
++          "detail": {
++            "baseline_breaking_wires": 139,
++            "mask_preserved": true,
++            "note": "the checker applies sigma as an ALL-LANE subset relabelling, a different code path from the primary's global permutation, and gets the same verdict",
++            "partnered_breaking_wires": 0
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "H0d2_descent_is_downstream_of_H0c3_and_therefore_residue",
++          "detail": {
++            "checker_reading": "the primary's RESIDUE verdict is SUPPORTED: sigma is the identity on the base, so its whole axiom-level content is the induced map on one site's possibility domain, and that domain does not exist until H0c3 is paid."
++          }
++        },
++        {
++          "SUPPORTED": true,
++          "check": "NO_GO_a_different_generator_set_finds_the_same_non_descending_symmetries",
++          "detail": {
++            "box_preserving_isometries": 24,
++            "controls_that_fired": 3,
++            "cross_class_3_cycle_controls": [
++              {
++                "breaking_wires": 73,
++                "is_a_symmetry": false,
++                "lane_3_cycle": [
++                  0,
++                  1,
++                  2
++                ]
++              },
++              {
++                "breaking_wires": 80,
++                "is_a_symmetry": false,
++                "lane_3_cycle": [
++                  3,
++                  4,
++                  5
++                ]
++              },
++              {
++                "breaking_wires": 54,
++                "is_a_symmetry": false,
++                "lane_3_cycle": [
++                  6,
++                  7,
++                  8
++                ]
++              }
++            ],
++            "isometries_acting_as_a_bare_transposition": 0,
++            "lane_3_cycle_rows": [
++              {
++                "acts_on_the_base": true,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_3_cycle": [
++                  0,
++                  44,
++                  88
++                ]
++              },
++              {
++                "acts_on_the_base": true,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_3_cycle": [
++                  1,
++                  45,
++                  89
++                ]
++              },
++              {
++                "acts_on_the_base": true,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_3_cycle": [
++                  2,
++                  46,
++                  90
++                ]
++              },
++              {
++                "acts_on_the_base": true,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_3_cycle": [
++                  3,
++                  47,
++                  91
++                ]
++              }
++            ],
++            "lane_3_cycle_witnesses": 4,
++            "rotation_matrices_generated_by_closure": 24,
++            "subset_relabelling_rows": [
++              {
++                "acts_inside_the_subset": false,
++                "acts_outside_the_subset": false,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_subset_size": 2,
++                "site_uniform": true
++              },
++              {
++                "acts_inside_the_subset": true,
++                "acts_outside_the_subset": false,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_subset_size": 2,
++                "site_uniform": false
++              },
++              {
++                "acts_inside_the_subset": false,
++                "acts_outside_the_subset": false,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_subset_size": 1,
++                "site_uniform": true
++              },
++              {
++                "acts_inside_the_subset": false,
++                "acts_outside_the_subset": false,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_subset_size": 2,
++                "site_uniform": true
++              },
++              {
++                "acts_inside_the_subset": false,
++                "acts_outside_the_subset": false,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_subset_size": 2,
++                "site_uniform": true
++              },
++              {
++                "acts_inside_the_subset": true,
++                "acts_outside_the_subset": false,
++                "breaking_wires": 0,
++                "is_a_symmetry": true,
++                "lane_subset_size": 19,
++                "site_uniform": false
++              }
++            ],
++            "subset_witnesses": 2
++          }
++        }
++      ]
++    },
++    "G_MUTATION_PROBES": {
++      "certificate": "G_MUTATION_PROBES",
++      "fired": 16,
++      "pass": true,
++      "teeth": [
++        {
++          "detail": {
++            "perturbed_lane": 374,
++            "planted": "c[1] ^= (c[6] << 1) & 2961193260766427870080908753323559866441509279473679754522422863056280045864824078237301652581494289303756200212728639995902214134435299666298460531313288000496778442422580538845568248046109094286466596972878396512780851085311"
++          },
++          "fired": true,
++          "tooth": "M1_planted_cross_site_gate_leaks_across_lanes"
++        },
++        {
++          "detail": {
++            "why": "the locality predicate must FAIL once a cross-site gate exists; if it still agreed the instrument would be blind"
++          },
++          "fired": true,
++          "tooth": "M2_scalar_machine_disagrees_with_the_mutated_packed_machine"
++        },
++        {
++          "detail": {
++            "lanes": [
++              0,
++              1
++            ]
++          },
++          "fired": true,
++          "tooth": "M3_permuting_two_site_fibres_breaks_fibre_respect"
++        },
++        {
++          "detail": {
++            "retargeted_to": 0,
++            "victim": [
++              2,
++              171,
++              125,
++              71,
++              717514341641458104514247106825747944987622444547306634027300855431069212134040065337620165761926852961090632242495039597629107256204297591181846198899700639323876399663847914158793209368116126095888756925042402185355450187520
++            ]
++          },
++          "fired": true,
++          "tooth": "M4_flipped_sigma_image_gate_breaks_L1"
++        },
++        {
++          "detail": {
++            "why": "L1 and the semantic layer must both notice"
++          },
++          "fired": true,
++          "tooth": "M5_flipped_sigma_image_gate_breaks_semantic_commutation"
++        },
++        {
++          "detail": {
++            "deleted_index": 362
++          },
++          "fired": true,
++          "tooth": "M6_deleting_one_spliced_gate_breaks_L1"
++        },
++        {
++          "detail": {
++            "tampered": "For each site, the probability distribution over the possibilities is\ndetermined by, and is independent of, the nearest-neighbor conditions."
++          },
++          "fired": true,
++          "tooth": "M7_tampered_axiom_quote_fails_closed"
++        },
++        {
++          "detail": {
++            "why": "one appended byte must move the pin"
++          },
++          "fired": true,
++          "tooth": "M8_a_tampered_pin_fails_closed"
++        },
++        {
++          "detail": {
++            "path": [
++              ".THE_WEIGHT"
++            ]
++          },
++          "fired": true,
++          "tooth": "M9_planted_unconditional_weight_caught"
++        },
++        {
++          "detail": {
++            "omitted": [
++              6,
++              124,
++              125,
++              255,
++              517,
++              518
++            ]
++          },
++          "fired": true,
++          "tooth": "M10_a_neighborhood_omitting_the_sigma_support_is_flagged"
++        },
++        {
++          "detail": {
++            "why": "an instrument that only ever says NO is useless"
++          },
++          "fired": true,
++          "tooth": "M11_positive_control_the_unmutated_law_passes_the_scalar_test"
++        },
++        {
++          "detail": {
++            "why": "without it the no-variation result is vacuous"
++          },
++          "fired": true,
++          "tooth": "M12_own_lane_control_moves_the_site"
++        },
++        {
++          "detail": {
++            "controls": 3,
++            "fired": 3
++          },
++          "fired": true,
++          "tooth": "M13_cross_class_lane_cycles_are_not_symmetries"
++        },
++        {
++          "detail": {
++            "box_preserving_isometries": 24,
++            "rotation_group_order": 24
++          },
++          "fired": true,
++          "tooth": "M14_the_isometry_enumeration_finds_real_isometries"
++        },
++        {
++          "detail": {
++            "distinct_images": 375,
++            "lanes": 749
++          },
++          "fired": true,
++          "tooth": "M15_a_non_injective_site_map_is_detected"
++        },
++        {
++          "detail": {
++            "primary_runner_sha256": "0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c"
++          },
++          "fired": true,
++          "tooth": "M16_primary_receipt_is_pinned_by_the_checker"
++        }
++      ],
++      "total": 16
++    },
++    "I_RUNTIME": {
++      "budget_seconds": 1800,
++      "certificate": "I_RUNTIME",
++      "elapsed_seconds": 19.387,
++      "pass": true,
++      "per_stage_seconds": {
++        "cones": 2.14,
++        "nogo": 0.543,
++        "scalar": 0.288,
++        "setup": 13.745,
++        "teeth": 0.223,
++        "variation": 1.349
++      }
++    }
++  },
++  "cycles": [
++    947
++  ],
++  "headline": "SUPPORTED on every clause, by disjoint machinery.  The scalar per-lane interpreter reconstructs the site map semantically; forward reachability reproduces the backward cone; the no-variation result survives a longer horizon and a harder perturbation family; a different generator set finds the same non-descending symmetries.  ONE refutation was raised and withdrawn on the record.  Two disclosures the primary did not make are added: the checker's append-splice and the primary's in-place splice give the same composed map (so no semantic claim is placement-relative), and the census position classes are not 6-regular, so no native lane relation could be a Z^3 adjacency even by accident.",
++  "science_digest": "a5cb9c407ef04f38f86e7f8fcde4693f31c7415e27e9be8e7a3c002c7c250267",
++  "self_sha256": "07455b0cc9ed36061fb60060a77164630c47dbbf7e51c8a2a382e022e604e994"
++}
+diff --git a/scripts/frontier_cycle947_h0_discharge_2026_07_28.py b/scripts/frontier_cycle947_h0_discharge_2026_07_28.py
+index 0f93d60151..54b25a4902 100644
+--- a/scripts/frontier_cycle947_h0_discharge_2026_07_28.py
++++ b/scripts/frontier_cycle947_h0_discharge_2026_07_28.py
+@@ -448,6 +448,24 @@ def mirror_splice(schedules, sig, kinds):
+     return tuple(out), added
+ 
+ 
++def append_splice(schedules, sig, kinds):
++    """The SAME multiset, different placement: every deficit image appended at
++    the END of its station instead of inserted after its deficit occurrence.
++    Built only to MEASURE placement dependence, never used as the
++    construction."""
++    out = []
++    for s in schedules:
++        have = Counter(s)
++        img = Counter(sigma_gate(g, sig, kinds) for g in s)
++        rem = have - img
++        images = []
++        for g, k in sorted(rem.items()):
++            if k > 0:
++                images.extend([sigma_gate(g, sig, kinds)] * k)
++        out.append(tuple(s) + tuple(images))
++    return tuple(out)
++
++
+ def multiset_sigma_invariant(schedules, sig, kinds):
+     return all(Counter(s) == Counter(sigma_gate(g, sig, kinds) for g in s)
+                for s in schedules)
+@@ -1557,6 +1575,19 @@ def main() -> int:
+                                untouched})
+     sem_p = semantic_commutes(rows_p, ens, lambda c: perm_apply(c, SIG))
+     sem_b = semantic_commutes(rows_ma, ens, lambda c: perm_apply(c, SIG))
++    sched_app = append_splice(sched_ma, SIG, kinds)
++    rows_app = M.compile_schedules(sched_app)
++    sem_app = semantic_commutes(rows_app, ens, lambda c: perm_apply(c, SIG))
++    place_diff = set()
++    for cols in ens:
++        a, b = list(cols), list(cols)
++        for fn in rows_p:
++            fn(a)
++        for fn in rows_app:
++            fn(b)
++        for w in range(len(a)):
++            if a[w] != b[w]:
++                place_diff.add(w)
+     S["H0d_SYMMETRY_TRANSPORT"] = {
+         "H0d1_FIBRE_RESPECT": {
+             "PREDICATE": "sigma maps every fibre of the native fibration to "
+@@ -1572,6 +1603,32 @@ def main() -> int:
+             "semantic_breaking_wires_baseline": len(sem_b),
+             "sigma_is_a_symmetry_of_the_partnered_law": not sem_p,
+             "sigma_is_NOT_a_symmetry_of_the_baseline": bool(sem_b),
++            "PLACEMENT_DEPENDENCE_ADOPTED_FROM_THE_CHECKER": {
++                "the_finding": "gate-multiset sigma-invariance (946's L1) "
++                               "does NOT imply the semantic symmetry.  The "
++                               "SAME multiset, with every deficit image "
++                               "appended at the end of its station instead of "
++                               "inserted immediately after its deficit "
++                               "occurrence, is L1-invariant and semantically "
++                               "BROKEN at the unpartnered baseline's own "
++                               "count.",
++                "append_order_multiset_sigma_invariant":
++                    multiset_sigma_invariant(sched_app, SIG, kinds),
++                "append_order_semantic_breaking_wires": len(sem_app),
++                "in_place_order_semantic_breaking_wires": len(sem_p),
++                "baseline_semantic_breaking_wires": len(sem_b),
++                "the_two_orders_composed_maps_differ_on_wires":
++                    len(place_diff),
++                "consequence": "H0d1 is DERIVED for the IN-PLACE partnered "
++                               "kernel only.  Any statement that 'the "
++                               "partnered kernel's law is sigma-symmetric' "
++                               "must name the splice placement; 946's L2 "
++                               "(pairwise commutation with sigma-partners) is "
++                               "the step that does not survive re-ordering, "
++                               "and 946 reported L1 and L3 side by side "
++                               "without saying that the first does not "
++                               "underwrite the second.",
++            },
+             "VERDICT": "DERIVED",
+         },
+         "H0d2_DESCENT": {
+@@ -2154,6 +2211,25 @@ def main() -> int:
+             "c946_never_imported_or_lifted":
+                 cert_a["C946_IS_PINNED_BUT_NEVER_LIFTED"],
+         },
++        "INDEPENDENT_CHECKER_ADOPTIONS": {
++            "R1_the_symmetry_certificate_is_placement_dependent": {
++                "raised_by": "the independent checker, which rebuilt the same "
++                             "gate multiset with a different splice order",
++                "status": "ADOPTED and measured here by the primary itself; "
++                          "see H0d1's PLACEMENT_DEPENDENCE block",
++                "scope_effect": "H0d1 is DERIVED for the in-place partnered "
++                                "kernel only, and the caveat propagates to "
++                                "946's certificate",
++            },
++            "R2_the_no_go_witnesses_do_not_preserve_the_setup": {
++                "raised_by": "the independent checker",
++                "status": "RAISED AND WITHDRAWN on the record: sigma does not "
++                          "preserve the setup either, so any reading strict "
++                          "enough to exclude the witnesses excludes sigma and "
++                          "collapses Route B entirely.  The same standard is "
++                          "applied to both.",
++            },
++        },
+         "science_digest": science_digest,
+         "self_sha256": sha256(Path(__file__).read_bytes()).hexdigest(),
+         "VERDICT":
+diff --git a/scripts/frontier_cycle947_h0_discharge_independent_check_2026_07_28.py b/scripts/frontier_cycle947_h0_discharge_independent_check_2026_07_28.py
+index 883905aef3..47eda6b09f 100644
+--- a/scripts/frontier_cycle947_h0_discharge_independent_check_2026_07_28.py
++++ b/scripts/frontier_cycle947_h0_discharge_independent_check_2026_07_28.py
+@@ -259,6 +259,29 @@ def csplice(schedules, sig, kinds):
+     return tuple(out), added
+ 
+ 
++def cinplace_splice(schedules, sig, kinds):
++    """The IN-PLACE splice: each deficit occurrence keeps its position and its
++    image is inserted immediately after it.  The checker builds this from its
++    OWN deficit computation; it is the same CONSTRUCTION as the primary's
++    because the measured placement-dependence below shows the construction is
++    not free to differ."""
++    out, added = [], []
++    for s in schedules:
++        have = Counter(s)
++        img = Counter(cgate_image(g, sig, kinds) for g in s)
++        rem = have - img
++        new = []
++        for g in s:
++            new.append(g)
++            if rem[g] > 0:
++                rem[g] -= 1
++                im = cgate_image(g, sig, kinds)
++                new.append(im)
++                added.append(im)
++        out.append(tuple(new))
++    return tuple(out), added
++
++
+ def cmultiset_invariant(schedules, sig, kinds):
+     return all(Counter(s) == Counter(cgate_image(g, sig, kinds) for g in s)
+                for s in schedules)
+@@ -498,8 +521,10 @@ def main() -> int:
+     SIG_PAIRS, SIG = csigma(left_w, right_w, BB)
+     sched_ma = M.build_schedules(c863, program, sim_fwd, 0, M_A)
+     rows_ma = M.compile_schedules(sched_ma)
+-    sched_p, added = csplice(sched_ma, SIG, kinds)
++    sched_append, added_append = csplice(sched_ma, SIG, kinds)
++    sched_p, added = cinplace_splice(sched_ma, SIG, kinds)
+     rows_p = M.compile_schedules(sched_p)
++    rows_append = M.compile_schedules(sched_append)
+     touched = sorted({w for s in sched_p for g in s
+                       for w in (M.gate_target(*g[:4]),) + ccontrols(g, kinds)})
+     atoms = tuple(sorted(M.CHOICE_ATOMS))
+@@ -515,8 +540,8 @@ def main() -> int:
+     for t in apps:
+         gates = M_A + ((M.KIND_CHOICE, occ_of[t], left_w, 0),
+                        (M.KIND_CHOICE, occ_of[t], right_w, 0))
+-        s = csplice(M.build_schedules(c863, program, sim_fwd, 0, gates),
+-                    SIG, kinds)[0]
++        s = cinplace_splice(M.build_schedules(c863, program, sim_fwd, 0,
++                                              gates), SIG, kinds)[0]
+         src = M.chunk_source(s[t % stations])
+         ns: dict = {}
+         exec("\n".join(src), {"__builtins__": {}, "CHOICE": M.CHOICE}, ns)
+@@ -552,54 +577,40 @@ def main() -> int:
+           == q1["defect_distinct_gates"],
+           {"checker": len({(g[0], g[1], g[2], g[3]) for _s, g in defect}),
+            "pinned": q1["defect_distinct_gates"]})
+-    check("946_partnered_gate_total_reproduced_by_the_append_splice",
+-          sum(len(s) for s in sched_p) == q1["gates_after"],
+-          {"checker": sum(len(s) for s in sched_p),
+-           "pinned": q1["gates_after"],
+-           "note": "the checker APPENDS the deficit images at the end of each "
+-                   "station instead of inserting them in place.  The gate "
+-                   "TOTAL agrees; the ORDER does not, which is the point of "
+-                   "using a different algorithm."})
+-    check("L1_holds_for_the_checkers_own_splice",
+-          cmultiset_invariant(sched_p, SIG, kinds),
+-          {"why": "gate-multiset sigma-invariance is placement-independent, "
+-                  "so a different splice order must still certify"})
++    check("946_partnered_gate_total_reproduced_by_both_checker_splices",
++          sum(len(s) for s in sched_p) == q1["gates_after"]
++          and sum(len(s) for s in sched_append) == q1["gates_after"],
++          {"checker_inplace": sum(len(s) for s in sched_p),
++           "checker_append": sum(len(s) for s in sched_append),
++           "pinned": q1["gates_after"]})
++    check("L1_holds_for_BOTH_checker_splice_orders",
++          cmultiset_invariant(sched_p, SIG, kinds)
++          and cmultiset_invariant(sched_append, SIG, kinds),
++          {"why": "gate-multiset sigma-invariance is placement-independent by "
++                  "construction; the semantic layer, as measured below, is "
++                  "NOT"})
+ 
+     # placement independence: the primary inserts images in place, the checker
+     # appends them.  Same multiset, possibly different composed map.
+-    def inplace_splice(schedules):
+-        out = []
+-        for s in schedules:
+-            have = Counter(s)
+-            img = Counter(cgate_image(g, SIG, kinds) for g in s)
+-            rem = have - img
+-            new = []
+-            for g in s:
+-                new.append(g)
+-                if rem[g] > 0:
+-                    rem[g] -= 1
+-                    new.append(cgate_image(g, SIG, kinds))
+-            out.append(tuple(new))
+-        return tuple(out)
+-
+-    rows_inplace = M.compile_schedules(inplace_splice(sched_ma))
+     ens = rand_states(4, proto, touched, env["uni_sim"], "c947chk")
+     place_diff = set()
+     for cols in ens:
+         a, b = list(cols), list(cols)
+-        for fn in rows_p:
++        for fn in rows_append:
+             fn(a)
+-        for fn in rows_inplace:
++        for fn in rows_p:
+             fn(b)
+         for w in range(len(a)):
+             if a[w] != b[w]:
+                 place_diff.add(w)
+-    check("the_two_splice_orders_give_the_same_composed_map",
+-          not place_diff,
++    sem_append = commutes(rows_append, ens,
++                          lambda c: cperm_lane(c, SIG, range(n + 1)))
++    check("the_two_splice_orders_give_DIFFERENT_composed_maps",
++          bool(place_diff),
+           {"differing_wires": len(place_diff),
+-           "why_it_matters": "if the two orders disagreed, every semantic "
+-                             "statement in the primary would be placement-"
+-                             "relative and would have to say so"})
++           "consequence": "every SEMANTIC statement about the partnered "
++                          "kernel is placement-relative and must name the "
++                          "splice placement as part of the construction"})
+ 
+     # =====================================================================
+     # H0a1 / H0a2 -- the site map, reconstructed by a SCALAR PER-LANE MACHINE
+@@ -687,7 +698,7 @@ def main() -> int:
+            "equals_every_touched_wire": anc == set(touched)})
+     choice_ctrl = sorted({w for t in apps for s in [None] for w in ()})
+     cg = [g for t in apps
+-          for s in csplice(M.build_schedules(
++          for s in cinplace_splice(M.build_schedules(
+               c863, program, sim_fwd, 0,
+               M_A + ((M.KIND_CHOICE, occ_of[t], left_w, 0),
+                      (M.KIND_CHOICE, occ_of[t], right_w, 0))),
+@@ -842,6 +853,27 @@ def main() -> int:
+            "note": "the checker applies sigma as an ALL-LANE subset "
+                    "relabelling, a different code path from the primary's "
+                    "global permutation, and gets the same verdict"})
++    refute("946_SYMMETRY_CERTIFICATE (carried into 947's H0d1)",
++           "the semantic sigma-symmetry of the partnered kernel is "
++           "PLACEMENT-DEPENDENT.  Gate-multiset sigma-invariance (946's L1) "
++           "does NOT imply it.  The checker built the SAME multiset with each "
++           "deficit image appended at the end of its station instead of "
++           "inserted in place, and measured semantic breaking wires equal to "
++           "the UNPARTNERED BASELINE.",
++           {"append_splice_semantic_breaking_wires": len(sem_append),
++            "inplace_splice_semantic_breaking_wires": len(sem_p),
++            "baseline_semantic_breaking_wires": len(sem_b),
++            "composed_maps_differ_on_wires": len(place_diff),
++            "what_must_change": "no citation may say 'the partnered kernel's "
++                                "law is sigma-symmetric' without naming the "
++                                "IN-PLACE splice.  946's L1 is exact and "
++                                "placement-free; its L3 is not, and the two "
++                                "were reported side by side as if the first "
++                                "underwrote the second.  946's L2 (pairwise "
++                                "commutation with sigma-partners) is the step "
++                                "that does not survive re-ordering.",
++            "STATUS": "STANDING -- adopt as a scope caveat on 946 and on "
++                      "947's H0d1"})
+     V["H0d2_DESCENT"] = "SUPPORTED"
+     check("H0d2_descent_is_downstream_of_H0c3_and_therefore_residue",
+           V["H0c3_DOMAIN"] == "SUPPORTED",

@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle947_h0_discharge_2026_07_28.py
+runner_sha256: 595f4c292029e5776a8983ece4c337dbe7cfb4dd2b2e59f698a4e0039c08c59e
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 947 -- CORRECTED LANE-LOCAL COMPILER IMPLICATIONS
+==============================================================================
+
+SCOPE: finite compiler grammar and implication counterexamples. No
+physical site map, choice-law independence, minimal semantic cone,
+full symmetry classification, H0 discharge, or successor selection.
+
+CLAIMS_JSON: {"bare_transpositions":0,"fixed_choice_vs_distribution_counterexample":true,"graph_reachability_counterexample":true,"lane_grammar_ok":true,"local_symmetry_implication_counterexample":true,"ordered_multiset_counterexample":true,"proper_box_isometries":24,"science_digest":"65a4722ebc3870c61fa22f3f7a02a8168222f822b9ed72d6b7307165643275ab","support_boundary_ok":true}
+
+-- CERTIFICATES --------------------------------------------------------
+  PASS  P1_LANE_GRAMMAR                    three accepted, four refused by a fail-closed AST recognizer
+  PASS  P2_LANE_SEMANTICS                  all 16 two-word states and both lane perturbations
+  PASS  P3_FIXED_CHOICE_VS_DISTRIBUTION    exact probabilities 1/4 and 3/4 from four equiprobable seeds
+  PASS  P4_SUPPORT_BOUNDARY                mu=0 and mu=1 have singleton support; 1/4 and 3/4 have both
+  PASS  P5_GRAPH_IS_OVERAPPROXIMATION      double-XOR cancellation plus a four-node depth control
+  PASS  P6_ORDER_MATTERS                   two CNOT orders, all four Boolean inputs
+  PASS  P7_SYMMETRY_SCOPE                  identity-rule implication counterexample and the supplied 3-cube proper-isometry subgroup
+  PASS  P8_DETERMINISM                     complete science payload recomputed in-process
+  PASS  P9_RUNTIME                         elapsed_s=0.002 budget_s=30
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: PASS
+
+----- stderr -----
+

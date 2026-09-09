@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner   : frontier_cycle937_spider_extension_independent_check_2026_07_28.py
+cycle    : 937   block: blockM15   role: INDEPENDENT CHECK (spec'd to refute)
+
+C1  ATTACK: the reduced Hamiltonian, recomputed twice independently
+  full vs arm-eigenbasis Fock : 1.33e-15
+  full vs orbit-sum projection: 1.04e-15
+  vs the PRIMARY's s(k)       : 1.29e-15  over 16 cells
+C2  ATTACK: is Sym^d(H_arm) the smallest invariant subspace?
+  arms where the stated reduction is NOT minimal: Y3, claw3, claw4, tee4
+  the star's parity halving does not extend past L = 1: True
+C3  ATTACK: the depth-graded lambda ladder, on a DIFFERENT observable
+  claw_d2   L1 -> L2       depth 2 predicted lambda^4 -> winner pure_p=4.0 (spread 0.186) OK
+  claw_d2   L2 -> claw3    depth 2 predicted lambda^4 -> winner pure_p=4.0 (spread 0.034) OK
+  path_d2   L1 -> L2       depth 2 predicted lambda^4 -> winner pure_p=4.0 (spread 0.186) OK
+  path_d2   L2 -> L3       depth 3 predicted lambda^6 -> winner pure_p=6.0 (spread 0.075) OK
+C4  ATTACK: the exact lambda_arm = 0 lemma and its stated scope
+  independent max deviation: 5.03e-15 over 72 cells (up to lambda=1.0, Jt=40)
+  loopy (triangle) arms too : 2.64e-16
+C5  ATTACK: the G1 exception cell
+  routes agree at 2.20e-15; vs the pinned 927 value at 2.27e-13
+C6  high precision (50 digits) on the certification cell
+  50-digit s(1) = 0.01084070535299505759312
+  float64 reduced deviation 1.69e-15 ; full-space deviation 1.50e-15
+C7  ATTACK: the seal
+  S1 d=5 L2 lam=0.0825 : reduced 7.49e-16  full 8.12e-16  HOLDS
+  S2 d=3 L3 lam=0.0825 : reduced 2.79e-16  full 2.17e-16  HOLDS
+  S3 d=4 claw3 lam=0.0825 : reduced 6.14e-16  full 1.47e-16  HOLDS
+  S4 d=2 L4 lam=0.1125 : reduced 3.52e-16  full 3.11e-16  HOLDS
+  S5 d=7 L2 lam=0.1 : reduced 9.16e-16  full 1.17e-15  HOLDS
+  S6 d=6 L2 lam=0.1125 : reduced 1.77e-16  full 2.35e-15  HOLDS
+C8  927 saturation-length column reproduced independently: True (max dev 4.18e-08)
+C9  light-cone collapse independently fails by 3.3 orders
+
+TEETH  13/13 fire
+  K10_same_added_site_different_depth                  FIRES
+  K11_tampered_primary_value_is_caught                 FIRES
+  K12_euler_guard                                      FIRES
+  K13_seal_digest_recomputes                           FIRES
+  K1_bit_order_is_genuinely_reversed                   FIRES
+  K2_two_independent_propagators_agree                 FIRES
+  K3_planted_wrong_preparation_is_caught               FIRES
+  K4_orbit_sum_route_needs_exchangeability             FIRES
+  K5_entropies_from_singular_values                    FIRES
+  K6_determinism                                       FIRES
+  K7_primary_runner_identity                           FIRES
+  K8_vendored_blob_authority                           FIRES
+  K9_sealed_fields_are_off_grid                        FIRES
+
+POSITION: SUPPORTED-WITH-FINDINGS
+  refutations: 0
+  findings: 5
+    - the Sym^d(H_arm) reduction is not minimal for claw/Y/tee arms; the primary discloses this
+    - 933's parity halving does NOT carry to L >= 2 -- the frozen preparation stops being parity-even as soon as any arm site is +Z
+    - the L-ZERO lemma also holds for LOOPY arms (triangle arms tested) -- the primary's statement is not overstated
+    - SELF-CAUGHT CHECKER BUG, DISCLOSED: the first build of the arm-eigenbasis rotation used rotation_map(U) where the derivation needs rotation_map(U^T) -- the two assignment counts differ by multinomial factors.  The orbit-sum route (which uses no second quantisation at all) disagreed with it by 2.0 bits while agreeing with the primary at 1e-15, which is how the bug was localised to this checker and not to the block under test.
+    - CHECKER-DRIVEN CORRECTION TO THE PRIMARY: the G1 comparison against Cycle 927 must be read at EACH FIELD'S OWN pinned ceiling row.  At lambda = 0.05 that row is Jt = 0.6, not the comparison row Jt = 0.7; the primary's first build compared at 0.7 and showed a 3.0e-3 false discrepancy.  Corrected in the primary; the deviation is now 1.6e-14.
+
+runtime 6.39 s (limit 900 s)
+timing-free digest 4d2d1a3de2cda37ee72a50d13055b5cc98dbd05aadeb42ba88db39be38000ca1
+===== runner cache v1 =====

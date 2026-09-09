@@ -1,0 +1,2933 @@
+{
+ "C1_landing_recommendation": {
+  "action": "RECOMMENDATION-ONLY (this runner restored nothing; no tree write occurred)",
+  "addressed_to": "the audit lane",
+  "finding": "every cited-but-absent predecessor exists in git history on physics-loop branches and none is an ancestor of origin/main; the 2026-07-19 landing commits carried the d3-bar-window artifacts onto main but not the predecessor campaign notes or their runners",
+  "items": [
+   {
+    "blob": "dd247a8494f171d4dcaf9a532a09491202b1f512",
+    "bytes": 5230,
+    "never_landed": true,
+    "path": "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+    "priority": "HIGH",
+    "recover_from": "d18851afa90adc22c160a1b413fe01c30a470abd:docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+    "sha256": "41b4f26af908a7b910fbb5683f9d50432f36328bced7cf107585f7f70771df04",
+    "single_blob_variant": true
+   },
+   {
+    "blob": "15ef586b1f18b4ed076ee64ea78ff5708f27ce2d",
+    "bytes": 30700,
+    "never_landed": true,
+    "path": "docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+    "priority": "NORMAL",
+    "recover_from": "a68d73320540f952be9e92907bf0dde1ad8a22f6:docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+    "sha256": "b0a95a7cbff611ace567e06fd12092185aec7a8ba9fe136e38165d2dfe44f907",
+    "single_blob_variant": true
+   },
+   {
+    "blob": "7d5a3696a8a0df454151173b1968a74b05a5788c",
+    "bytes": 9689,
+    "never_landed": true,
+    "path": "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+    "priority": "NORMAL",
+    "recover_from": "9a91be0d6ead36ce773b497ef5ce7486bc600b50:docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+    "sha256": "6424412e7c9e2455fe78ec610ec0873ea1e9977773709b0718c31113a1885a0a",
+    "single_blob_variant": true
+   },
+   {
+    "blob": "c63dd2fa17e1fae95e3df822e6706d95f128d5c0",
+    "bytes": 10157,
+    "never_landed": true,
+    "path": "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+    "priority": "HIGH",
+    "recover_from": "44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea:docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+    "sha256": "08a0716cc349b150f0ac84a16118154dc313eddc2ac8545bdf9766e5823c9393",
+    "single_blob_variant": true
+   },
+   {
+    "blob": "8a17acb0906f2b463ec363aea669795ae32fbe03",
+    "bytes": 95265,
+    "never_landed": true,
+    "path": "scripts/d3_registration_onset_pilot_2026_07_09.py",
+    "priority": "NORMAL",
+    "recover_from": "ce95a77e851be6e46851cf2e7f3a740b74e8b96a:scripts/d3_registration_onset_pilot_2026_07_09.py",
+    "sha256": "791629a85e69a00f284f311d1ad81846e9a0fe046b62cfc5b000db7b202cacfa",
+    "single_blob_variant": true
+   },
+   {
+    "blob": "cf3a684592058a8914bfe9a07ff108c99c313475",
+    "bytes": 126630,
+    "never_landed": true,
+    "path": "scripts/d3_bar_location_measurement_2026_07_10.py",
+    "priority": "NORMAL",
+    "recover_from": "6591b2360ea2ec0fed365110761e6b61cf1e1585:scripts/d3_bar_location_measurement_2026_07_10.py",
+    "sha256": "d03efb510e9df743267b47a46b97b48964cf2d23a85cca3a9b1612084829f27a",
+    "single_blob_variant": true
+   },
+   {
+    "blob": "017353319be0167651d81fcae20505e284837f22",
+    "bytes": 2796,
+    "never_landed": true,
+    "path": "docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+    "priority": "NORMAL",
+    "recover_from": "8f75f76ca28b50748f2398f5339babf93c3fde19:docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+    "sha256": "3d7303ca4464f56e48c7f107b9d5cd6ef6d046a7a90a4fe13859affba3e42386",
+    "single_blob_variant": true
+   },
+   {
+    "blob": "722d9c0f2c27c3d3f5211a98c394b79c20926f3e",
+    "bytes": 4802,
+    "never_landed": true,
+    "path": "docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+    "priority": "NORMAL",
+    "recover_from": "ed5105ecf4e9e83ca9694e0222f9428aabc528cb:docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+    "sha256": "191c1ed76082d6e885cb6bc2063dbadd51c375149cd186b357094fd09974d38e",
+    "single_blob_variant": true
+   }
+  ]
+ },
+ "C1_recovery": {
+  "artifacts": {
+   "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md": {
+    "absent_from_main_because": "never-landed",
+    "add_commit": {
+     "author": "Claude Opus",
+     "date": "2026-07-10 18:22:40 -0400",
+     "sha": "44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea",
+     "subject": "d3-bar-location block04: full run \u2014 first certified registration onset; BAR-NOT-PINNED on frozen completeness gates"
+    },
+    "add_commits": [
+     "44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea 2026-07-10 18:22:40 -0400 d3-bar-location block04: full run \u2014 first certified registration onset; BAR-NOT-PINNED on frozen completeness gates",
+     "8aed04a7da51e792e7903c62d10b1968e82b4c58 2026-07-10 18:22:40 -0400 d3-bar-location block04: full run \u2014 first certified registration onset; BAR-NOT-PINNED on frozen completeness gates"
+    ],
+    "ancestor_of_head": false,
+    "ancestor_of_origin_main": false,
+    "branches_containing": [
+     "physics-loop/d3-bar-location-block01-20260710",
+     "physics-loop/d3-bar-window-block01-20260711"
+    ],
+    "commands": [
+     "git cat-file -e HEAD:docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+     "git log --all --diff-filter=A --format=%H %ci %s -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+     "git log --all --diff-filter=D --format=%H %ci %s -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+     "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+     "git merge-base --is-ancestor 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea origin/main",
+     "git merge-base --is-ancestor 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea HEAD",
+     "git branch -a --contains 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea",
+     "git log -1 --format=%H%n%an%n%ci%n%s 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea",
+     "git rev-parse 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea:docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+     "git cat-file blob c63dd2fa17e1",
+     "git log --all --format=%H -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md"
+    ],
+    "delete_commits": [],
+    "distinct_blob_variants": [
+     "c63dd2fa17e1fae95e3df822e6706d95f128d5c0"
+    ],
+    "in_tree_at_head": false,
+    "load_bearing_claims": {
+     "lam020_mechanism": "C_55 = 0.005 / 0.017 / 0.060 bits across\nlambda = 0.05 / 0.10 / 0.20.",
+     "named_successor": "Named successor (design consequence, not a claim): the measured\nlambda-trend says the certified window sits at weak field, so a\nbar-location protocol commissioned on lambda in {0.02, 0.05, 0.10}\n(or with the lambda-completeness gate restated as\nwindow-plus-boundary: certify where independence permits and REPORT\nthe closure lambda as a measured boundary) would put the same frozen\nmachinery entirely inside the window this run measured.",
+     "theta_reading": "Where the bar can be read, it reads **theta* ~ 0.50**: 0.5008 and\n0.5047 at the two headline events, and the delta = 0.20 median across\nall three lambdas is 0.5030. Every fired event is `inside` the sparse\nwindow (theta* >= 0.2) with more than a factor of two of margin.",
+     "verdict": "the honest TOTAL is BAR-NOT-PINNED"
+    },
+    "recovered": {
+     "blob": "c63dd2fa17e1fae95e3df822e6706d95f128d5c0",
+     "bytes": 10157,
+     "sha256": "08a0716cc349b150f0ac84a16118154dc313eddc2ac8545bdf9766e5823c9393"
+    },
+    "rename_commits": [],
+    "role": "the route-C pilot conclusion (PR #5144)",
+    "verdict": "FOUND"
+   },
+   "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md": {
+    "absent_from_main_because": "never-landed",
+    "add_commit": {
+     "author": "Claude Opus",
+     "date": "2026-07-10 11:26:15 -0400",
+     "sha": "9a91be0d6ead36ce773b497ef5ce7486bc600b50",
+     "subject": "d3 pilot block02: overnight full run \u2014 BAR-NOT-PINNED, bounded note + evidence streams"
+    },
+    "add_commits": [
+     "9a91be0d6ead36ce773b497ef5ce7486bc600b50 2026-07-10 11:26:15 -0400 d3 pilot block02: overnight full run \u2014 BAR-NOT-PINNED, bounded note + evidence streams",
+     "3a95c3ff972729b2ea70542f817f86afd857966b 2026-07-10 11:26:15 -0400 d3 pilot block02: overnight full run \u2014 BAR-NOT-PINNED, bounded note + evidence streams"
+    ],
+    "ancestor_of_head": false,
+    "ancestor_of_origin_main": false,
+    "branches_containing": [
+     "physics-loop/d3-bar-location-block01-20260710",
+     "physics-loop/d3-bar-window-block01-20260711",
+     "physics-loop/d3-registration-pilot-block01-20260709"
+    ],
+    "commands": [
+     "git cat-file -e HEAD:docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+     "git log --all --diff-filter=A --format=%H %ci %s -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+     "git log --all --diff-filter=D --format=%H %ci %s -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+     "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+     "git merge-base --is-ancestor 9a91be0d6ead36ce773b497ef5ce7486bc600b50 origin/main",
+     "git merge-base --is-ancestor 9a91be0d6ead36ce773b497ef5ce7486bc600b50 HEAD",
+     "git branch -a --contains 9a91be0d6ead36ce773b497ef5ce7486bc600b50",
+     "git log -1 --format=%H%n%an%n%ci%n%s 9a91be0d6ead36ce773b497ef5ce7486bc600b50",
+     "git rev-parse 9a91be0d6ead36ce773b497ef5ce7486bc600b50:docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+     "git cat-file blob 7d5a3696a8a0",
+     "git log --all --format=%H -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md"
+    ],
+    "delete_commits": [],
+    "distinct_blob_variants": [
+     "7d5a3696a8a0df454151173b1968a74b05a5788c"
+    ],
+    "in_tree_at_head": false,
+    "load_bearing_claims": {
+     "below_window_flag": "The BAR-BELOW-WINDOW flag\n   is NOT raised -- that flag requires an onset with theta* below the\n   sparse window, and there was no onset.",
+     "negative": "**No certified registration anywhere.** Zero events at every\n   lambda, every delta, over the entire grid Jt <= 10 -- not merely\n   the headline window. No single fragment ever certifies (R_ind = 0\n   at every sampled time; verified row-by-row in the committed\n   streams), so R >= 2 never comes up. CHECK-03 and CHECK-04 fail;\n   CHECK-05 (bar location) is unavailable.",
+     "theta_convention": "theta(t) = mean over the six center bonds of ground-state-subtracted\n(1 - purity). Copying, if it happens, must emerge from the ordinary"
+    },
+    "recovered": {
+     "blob": "7d5a3696a8a0df454151173b1968a74b05a5788c",
+     "bytes": 9689,
+     "sha256": "6424412e7c9e2455fe78ec610ec0873ea1e9977773709b0718c31113a1885a0a"
+    },
+    "rename_commits": [],
+    "role": "the single-qubit pilot negative",
+    "verdict": "FOUND"
+   },
+   "docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md": {
+    "absent_from_main_because": "never-landed",
+    "add_commit": {
+     "author": "Claude Opus",
+     "date": "2026-07-09 22:02:02 -0400",
+     "sha": "a68d73320540f952be9e92907bf0dde1ad8a22f6",
+     "subject": "d3-registration-pilot: campaign initialized, scout memo banked"
+    },
+    "add_commits": [
+     "a68d73320540f952be9e92907bf0dde1ad8a22f6 2026-07-09 22:02:02 -0400 d3-registration-pilot: campaign initialized, scout memo banked",
+     "ca72cae765530182b176e50f0df9a2c4673ec495 2026-07-09 22:02:02 -0400 d3-registration-pilot: campaign initialized, scout memo banked"
+    ],
+    "ancestor_of_head": false,
+    "ancestor_of_origin_main": false,
+    "branches_containing": [
+     "physics-loop/d3-bar-location-block01-20260710",
+     "physics-loop/d3-bar-window-block01-20260711",
+     "physics-loop/d3-registration-pilot-block01-20260709"
+    ],
+    "commands": [
+     "git cat-file -e HEAD:docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+     "git log --all --diff-filter=A --format=%H %ci %s -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+     "git log --all --diff-filter=D --format=%H %ci %s -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+     "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+     "git merge-base --is-ancestor a68d73320540f952be9e92907bf0dde1ad8a22f6 origin/main",
+     "git merge-base --is-ancestor a68d73320540f952be9e92907bf0dde1ad8a22f6 HEAD",
+     "git branch -a --contains a68d73320540f952be9e92907bf0dde1ad8a22f6",
+     "git log -1 --format=%H%n%an%n%ci%n%s a68d73320540f952be9e92907bf0dde1ad8a22f6",
+     "git rev-parse a68d73320540f952be9e92907bf0dde1ad8a22f6:docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+     "git cat-file blob 15ef586b1f18",
+     "git log --all --format=%H -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md"
+    ],
+    "delete_commits": [],
+    "distinct_blob_variants": [
+     "15ef586b1f18b4ed076ee64ea78ff5708f27ce2d"
+    ],
+    "in_tree_at_head": false,
+    "load_bearing_claims": {},
+    "recovered": {
+     "blob": "15ef586b1f18b4ed076ee64ea78ff5708f27ce2d",
+     "bytes": 30700,
+     "sha256": "b0a95a7cbff611ace567e06fd12092185aec7a8ba9fe136e38165d2dfe44f907"
+    },
+    "rename_commits": [],
+    "role": "the d=3 pilot design scout",
+    "verdict": "FOUND"
+   },
+   "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md": {
+    "absent_from_main_because": "never-landed",
+    "add_commit": {
+     "author": "Claude Opus",
+     "date": "2026-07-09 19:40:53 -0400",
+     "sha": "d18851afa90adc22c160a1b413fe01c30a470abd",
+     "subject": "registration-bar block01: bar shape exhibited, range blocked by d=1 geometry"
+    },
+    "add_commits": [
+     "d18851afa90adc22c160a1b413fe01c30a470abd 2026-07-09 19:40:53 -0400 registration-bar block01: bar shape exhibited, range blocked by d=1 geometry",
+     "835f7546fd42df1c4b4aee38fcf486c48fdd9b2a 2026-07-09 19:40:53 -0400 registration-bar block01: bar shape exhibited, range blocked by d=1 geometry"
+    ],
+    "ancestor_of_head": false,
+    "ancestor_of_origin_main": false,
+    "branches_containing": [
+     "physics-loop/d3-bar-location-block01-20260710",
+     "physics-loop/d3-bar-window-block01-20260711",
+     "physics-loop/d3-registration-pilot-block01-20260709",
+     "physics-loop/registration-bar-block01-20260709",
+     "physics-loop/registration-bar-block02-20260709",
+     "physics-loop/registration-bar-block03-20260709"
+    ],
+    "commands": [
+     "git cat-file -e HEAD:docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+     "git log --all --diff-filter=A --format=%H %ci %s -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+     "git log --all --diff-filter=D --format=%H %ci %s -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+     "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+     "git merge-base --is-ancestor d18851afa90adc22c160a1b413fe01c30a470abd origin/main",
+     "git merge-base --is-ancestor d18851afa90adc22c160a1b413fe01c30a470abd HEAD",
+     "git branch -a --contains d18851afa90adc22c160a1b413fe01c30a470abd",
+     "git log -1 --format=%H%n%an%n%ci%n%s d18851afa90adc22c160a1b413fe01c30a470abd",
+     "git rev-parse d18851afa90adc22c160a1b413fe01c30a470abd:docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+     "git cat-file blob dd247a8494f1",
+     "git log --all --format=%H -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md"
+    ],
+    "delete_commits": [],
+    "distinct_blob_variants": [
+     "dd247a8494f171d4dcaf9a532a09491202b1f512"
+    ],
+    "in_tree_at_head": false,
+    "load_bearing_claims": {
+     "bar_statement": "The permanence bar (R >= 2) never fires, and the obstruction is\n   structural, not parametric.** Probed across g in {0.05, 0.15, 0.3,\n   0.6, 1.0} and m in {0.3, 3.0}: the register range is xi_reg <= 1",
+     "structural": "Redundancy at permanence grade (R >= 2 over conditionally independent\nregisters) requires BRANCHING environment geometry.",
+     "theta_floor_deferral": "the quantitative bar location\n(theta*, its delta-insensitivity, its position vs the sparse window\ntheta >= 0.2) is DEFERRED to a d >= 2 comparator and remains\nunmeasured here.",
+     "verdict": "TOTAL: BAR-NOT-PINNED, exit 1"
+    },
+    "recovered": {
+     "blob": "dd247a8494f171d4dcaf9a532a09491202b1f512",
+     "bytes": 5230,
+     "sha256": "41b4f26af908a7b910fbb5683f9d50432f36328bced7cf107585f7f70771df04"
+    },
+    "rename_commits": [],
+    "role": "PRIORITY: the d=1 comparator note",
+    "verdict": "FOUND"
+   },
+   "scripts/d3_bar_location_measurement_2026_07_10.py": {
+    "absent_from_main_because": "never-landed",
+    "add_commit": {
+     "author": "Claude Opus",
+     "date": "2026-07-10 13:21:17 -0400",
+     "sha": "6591b2360ea2ec0fed365110761e6b61cf1e1585",
+     "subject": "d3-bar-location block02: engine extensions + measurement runner, supervisor VALIDATION-PASS"
+    },
+    "add_commits": [
+     "6591b2360ea2ec0fed365110761e6b61cf1e1585 2026-07-10 13:21:17 -0400 d3-bar-location block02: engine extensions + measurement runner, supervisor VALIDATION-PASS",
+     "e00747b0731222f9feaec1ede6ba31704be57e85 2026-07-10 13:21:17 -0400 d3-bar-location block02: engine extensions + measurement runner, supervisor VALIDATION-PASS"
+    ],
+    "ancestor_of_head": false,
+    "ancestor_of_origin_main": false,
+    "branches_containing": [
+     "physics-loop/d3-bar-location-block01-20260710",
+     "physics-loop/d3-bar-window-block01-20260711"
+    ],
+    "commands": [
+     "git cat-file -e HEAD:scripts/d3_bar_location_measurement_2026_07_10.py",
+     "git log --all --diff-filter=A --format=%H %ci %s -- scripts/d3_bar_location_measurement_2026_07_10.py",
+     "git log --all --diff-filter=D --format=%H %ci %s -- scripts/d3_bar_location_measurement_2026_07_10.py",
+     "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- scripts/d3_bar_location_measurement_2026_07_10.py",
+     "git merge-base --is-ancestor 6591b2360ea2ec0fed365110761e6b61cf1e1585 origin/main",
+     "git merge-base --is-ancestor 6591b2360ea2ec0fed365110761e6b61cf1e1585 HEAD",
+     "git branch -a --contains 6591b2360ea2ec0fed365110761e6b61cf1e1585",
+     "git log -1 --format=%H%n%an%n%ci%n%s 6591b2360ea2ec0fed365110761e6b61cf1e1585",
+     "git rev-parse 6591b2360ea2ec0fed365110761e6b61cf1e1585:scripts/d3_bar_location_measurement_2026_07_10.py",
+     "git cat-file blob cf3a68459205",
+     "git log --all --format=%H -- scripts/d3_bar_location_measurement_2026_07_10.py"
+    ],
+    "delete_commits": [],
+    "distinct_blob_variants": [
+     "cf3a684592058a8914bfe9a07ff108c99c313475"
+    ],
+    "in_tree_at_head": false,
+    "load_bearing_claims": {},
+    "recovered": {
+     "blob": "cf3a684592058a8914bfe9a07ff108c99c313475",
+     "bytes": 126630,
+     "sha256": "d03efb510e9df743267b47a46b97b48964cf2d23a85cca3a9b1612084829f27a"
+    },
+    "rename_commits": [],
+    "role": "predecessor runner (route C)",
+    "verdict": "FOUND"
+   },
+   "scripts/d3_registration_onset_pilot_2026_07_09.py": {
+    "absent_from_main_because": "never-landed",
+    "add_commit": {
+     "author": "Claude Opus",
+     "date": "2026-07-09 23:29:49 -0400",
+     "sha": "ce95a77e851be6e46851cf2e7f3a740b74e8b96a",
+     "subject": "d3 pilot block01b: onset pilot runner + detached launcher + resume brief"
+    },
+    "add_commits": [
+     "ce95a77e851be6e46851cf2e7f3a740b74e8b96a 2026-07-09 23:29:49 -0400 d3 pilot block01b: onset pilot runner + detached launcher + resume brief",
+     "b2ea82737585eb057399548c30038eb97e2d1204 2026-07-09 23:29:49 -0400 d3 pilot block01b: onset pilot runner + detached launcher + resume brief"
+    ],
+    "ancestor_of_head": false,
+    "ancestor_of_origin_main": false,
+    "branches_containing": [
+     "physics-loop/d3-bar-location-block01-20260710",
+     "physics-loop/d3-bar-window-block01-20260711",
+     "physics-loop/d3-registration-pilot-block01-20260709"
+    ],
+    "commands": [
+     "git cat-file -e HEAD:scripts/d3_registration_onset_pilot_2026_07_09.py",
+     "git log --all --diff-filter=A --format=%H %ci %s -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+     "git log --all --diff-filter=D --format=%H %ci %s -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+     "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+     "git merge-base --is-ancestor ce95a77e851be6e46851cf2e7f3a740b74e8b96a origin/main",
+     "git merge-base --is-ancestor ce95a77e851be6e46851cf2e7f3a740b74e8b96a HEAD",
+     "git branch -a --contains ce95a77e851be6e46851cf2e7f3a740b74e8b96a",
+     "git log -1 --format=%H%n%an%n%ci%n%s ce95a77e851be6e46851cf2e7f3a740b74e8b96a",
+     "git rev-parse ce95a77e851be6e46851cf2e7f3a740b74e8b96a:scripts/d3_registration_onset_pilot_2026_07_09.py",
+     "git cat-file blob 8a17acb0906f",
+     "git log --all --format=%H -- scripts/d3_registration_onset_pilot_2026_07_09.py"
+    ],
+    "delete_commits": [],
+    "distinct_blob_variants": [
+     "8a17acb0906f2b463ec363aea669795ae32fbe03"
+    ],
+    "in_tree_at_head": false,
+    "load_bearing_claims": {},
+    "recovered": {
+     "blob": "8a17acb0906f2b463ec363aea669795ae32fbe03",
+     "bytes": 95265,
+     "sha256": "791629a85e69a00f284f311d1ad81846e9a0fe046b62cfc5b000db7b202cacfa"
+    },
+    "rename_commits": [],
+    "role": "predecessor runner (pilot)",
+    "verdict": "FOUND"
+   }
+  },
+  "commands": [
+   {
+    "cmd": "git cat-file -e HEAD:docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+    "out": "",
+    "rc": 128
+   },
+   {
+    "cmd": "git log --all --diff-filter=A --format=%H %ci %s -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+    "out": "d18851afa90adc22c160a1b413fe01c30a470abd 2026-07-09 19:40:53 -0400 registration-bar block01: bar shape exhibited, range blocked by d=1 geometry\n835f7546fd42df1c4b4aee38fcf486c48fdd9b2a 2026-07-09 19:40:53 -0400 registration-bar block01: bar shape exhibited, range blocked by d=1 geometry",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=D --format=%H %ci %s -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git merge-base --is-ancestor d18851afa90adc22c160a1b413fe01c30a470abd origin/main",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git merge-base --is-ancestor d18851afa90adc22c160a1b413fe01c30a470abd HEAD",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git branch -a --contains d18851afa90adc22c160a1b413fe01c30a470abd",
+    "out": "  physics-loop/d3-bar-location-block01-20260710\n  physics-loop/d3-bar-window-block01-20260711\n  physics-loop/d3-registration-pilot-block01-20260709\n  physics-loop/registration-bar-block01-20260709\n  physics-loop/registration-bar-block02-20260709\n  physics-loop/registration-bar-block03-20260709",
+    "rc": 0
+   },
+   {
+    "cmd": "git log -1 --format=%H%n%an%n%ci%n%s d18851afa90adc22c160a1b413fe01c30a470abd",
+    "out": "d18851afa90adc22c160a1b413fe01c30a470abd\nClaude Opus\n2026-07-09 19:40:53 -0400\nregistration-bar block01: bar shape exhibited, range blocked by d=1 geometry",
+    "rc": 0
+   },
+   {
+    "cmd": "git rev-parse d18851afa90adc22c160a1b413fe01c30a470abd:docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+    "out": "dd247a8494f171d4dcaf9a532a09491202b1f512",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --format=%H -- docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+    "out": "d18851afa90adc22c160a1b413fe01c30a470abd\n835f7546fd42df1c4b4aee38fcf486c48fdd9b2a",
+    "rc": 0
+   },
+   {
+    "cmd": "git cat-file -e HEAD:docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+    "out": "",
+    "rc": 128
+   },
+   {
+    "cmd": "git log --all --diff-filter=A --format=%H %ci %s -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+    "out": "a68d73320540f952be9e92907bf0dde1ad8a22f6 2026-07-09 22:02:02 -0400 d3-registration-pilot: campaign initialized, scout memo banked\nca72cae765530182b176e50f0df9a2c4673ec495 2026-07-09 22:02:02 -0400 d3-registration-pilot: campaign initialized, scout memo banked",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=D --format=%H %ci %s -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git merge-base --is-ancestor a68d73320540f952be9e92907bf0dde1ad8a22f6 origin/main",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git merge-base --is-ancestor a68d73320540f952be9e92907bf0dde1ad8a22f6 HEAD",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git branch -a --contains a68d73320540f952be9e92907bf0dde1ad8a22f6",
+    "out": "  physics-loop/d3-bar-location-block01-20260710\n  physics-loop/d3-bar-window-block01-20260711\n  physics-loop/d3-registration-pilot-block01-20260709",
+    "rc": 0
+   },
+   {
+    "cmd": "git log -1 --format=%H%n%an%n%ci%n%s a68d73320540f952be9e92907bf0dde1ad8a22f6",
+    "out": "a68d73320540f952be9e92907bf0dde1ad8a22f6\nClaude Opus\n2026-07-09 22:02:02 -0400\nd3-registration-pilot: campaign initialized, scout memo banked",
+    "rc": 0
+   },
+   {
+    "cmd": "git rev-parse a68d73320540f952be9e92907bf0dde1ad8a22f6:docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+    "out": "15ef586b1f18b4ed076ee64ea78ff5708f27ce2d",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --format=%H -- docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md",
+    "out": "a68d73320540f952be9e92907bf0dde1ad8a22f6\nca72cae765530182b176e50f0df9a2c4673ec495",
+    "rc": 0
+   },
+   {
+    "cmd": "git cat-file -e HEAD:docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+    "out": "",
+    "rc": 128
+   },
+   {
+    "cmd": "git log --all --diff-filter=A --format=%H %ci %s -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+    "out": "9a91be0d6ead36ce773b497ef5ce7486bc600b50 2026-07-10 11:26:15 -0400 d3 pilot block02: overnight full run \u2014 BAR-NOT-PINNED, bounded note + evidence streams\n3a95c3ff972729b2ea70542f817f86afd857966b 2026-07-10 11:26:15 -0400 d3 pilot block02: overnight full run \u2014 BAR-NOT-PINNED, bounded note + evidence streams",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=D --format=%H %ci %s -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git merge-base --is-ancestor 9a91be0d6ead36ce773b497ef5ce7486bc600b50 origin/main",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git merge-base --is-ancestor 9a91be0d6ead36ce773b497ef5ce7486bc600b50 HEAD",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git branch -a --contains 9a91be0d6ead36ce773b497ef5ce7486bc600b50",
+    "out": "  physics-loop/d3-bar-location-block01-20260710\n  physics-loop/d3-bar-window-block01-20260711\n  physics-loop/d3-registration-pilot-block01-20260709",
+    "rc": 0
+   },
+   {
+    "cmd": "git log -1 --format=%H%n%an%n%ci%n%s 9a91be0d6ead36ce773b497ef5ce7486bc600b50",
+    "out": "9a91be0d6ead36ce773b497ef5ce7486bc600b50\nClaude Opus\n2026-07-10 11:26:15 -0400\nd3 pilot block02: overnight full run \u2014 BAR-NOT-PINNED, bounded note + evidence streams",
+    "rc": 0
+   },
+   {
+    "cmd": "git rev-parse 9a91be0d6ead36ce773b497ef5ce7486bc600b50:docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+    "out": "7d5a3696a8a0df454151173b1968a74b05a5788c",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --format=%H -- docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md",
+    "out": "9a91be0d6ead36ce773b497ef5ce7486bc600b50\n3a95c3ff972729b2ea70542f817f86afd857966b",
+    "rc": 0
+   },
+   {
+    "cmd": "git cat-file -e HEAD:docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+    "out": "",
+    "rc": 128
+   },
+   {
+    "cmd": "git log --all --diff-filter=A --format=%H %ci %s -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+    "out": "44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea 2026-07-10 18:22:40 -0400 d3-bar-location block04: full run \u2014 first certified registration onset; BAR-NOT-PINNED on frozen completeness gates\n8aed04a7da51e792e7903c62d10b1968e82b4c58 2026-07-10 18:22:40 -0400 d3-bar-location block04: full run \u2014 first certified registration onset; BAR-NOT-PINNED on frozen completeness gates",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=D --format=%H %ci %s -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git merge-base --is-ancestor 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea origin/main",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git merge-base --is-ancestor 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea HEAD",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git branch -a --contains 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea",
+    "out": "  physics-loop/d3-bar-location-block01-20260710\n  physics-loop/d3-bar-window-block01-20260711",
+    "rc": 0
+   },
+   {
+    "cmd": "git log -1 --format=%H%n%an%n%ci%n%s 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea",
+    "out": "44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea\nClaude Opus\n2026-07-10 18:22:40 -0400\nd3-bar-location block04: full run \u2014 first certified registration onset; BAR-NOT-PINNED on frozen completeness gates",
+    "rc": 0
+   },
+   {
+    "cmd": "git rev-parse 44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea:docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+    "out": "c63dd2fa17e1fae95e3df822e6706d95f128d5c0",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --format=%H -- docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md",
+    "out": "44928e54bbbc2caae0c3f6ae1dae01fcc77a35ea\n8aed04a7da51e792e7903c62d10b1968e82b4c58",
+    "rc": 0
+   },
+   {
+    "cmd": "git cat-file -e HEAD:scripts/d3_registration_onset_pilot_2026_07_09.py",
+    "out": "",
+    "rc": 128
+   },
+   {
+    "cmd": "git log --all --diff-filter=A --format=%H %ci %s -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+    "out": "ce95a77e851be6e46851cf2e7f3a740b74e8b96a 2026-07-09 23:29:49 -0400 d3 pilot block01b: onset pilot runner + detached launcher + resume brief\nb2ea82737585eb057399548c30038eb97e2d1204 2026-07-09 23:29:49 -0400 d3 pilot block01b: onset pilot runner + detached launcher + resume brief",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=D --format=%H %ci %s -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git merge-base --is-ancestor ce95a77e851be6e46851cf2e7f3a740b74e8b96a origin/main",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git merge-base --is-ancestor ce95a77e851be6e46851cf2e7f3a740b74e8b96a HEAD",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git branch -a --contains ce95a77e851be6e46851cf2e7f3a740b74e8b96a",
+    "out": "  physics-loop/d3-bar-location-block01-20260710\n  physics-loop/d3-bar-window-block01-20260711\n  physics-loop/d3-registration-pilot-block01-20260709",
+    "rc": 0
+   },
+   {
+    "cmd": "git log -1 --format=%H%n%an%n%ci%n%s ce95a77e851be6e46851cf2e7f3a740b74e8b96a",
+    "out": "ce95a77e851be6e46851cf2e7f3a740b74e8b96a\nClaude Opus\n2026-07-09 23:29:49 -0400\nd3 pilot block01b: onset pilot runner + detached launcher + resume brief",
+    "rc": 0
+   },
+   {
+    "cmd": "git rev-parse ce95a77e851be6e46851cf2e7f3a740b74e8b96a:scripts/d3_registration_onset_pilot_2026_07_09.py",
+    "out": "8a17acb0906f2b463ec363aea669795ae32fbe03",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --format=%H -- scripts/d3_registration_onset_pilot_2026_07_09.py",
+    "out": "ce95a77e851be6e46851cf2e7f3a740b74e8b96a\nb2ea82737585eb057399548c30038eb97e2d1204",
+    "rc": 0
+   },
+   {
+    "cmd": "git cat-file -e HEAD:scripts/d3_bar_location_measurement_2026_07_10.py",
+    "out": "",
+    "rc": 128
+   },
+   {
+    "cmd": "git log --all --diff-filter=A --format=%H %ci %s -- scripts/d3_bar_location_measurement_2026_07_10.py",
+    "out": "6591b2360ea2ec0fed365110761e6b61cf1e1585 2026-07-10 13:21:17 -0400 d3-bar-location block02: engine extensions + measurement runner, supervisor VALIDATION-PASS\ne00747b0731222f9feaec1ede6ba31704be57e85 2026-07-10 13:21:17 -0400 d3-bar-location block02: engine extensions + measurement runner, supervisor VALIDATION-PASS",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=D --format=%H %ci %s -- scripts/d3_bar_location_measurement_2026_07_10.py",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- scripts/d3_bar_location_measurement_2026_07_10.py",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git merge-base --is-ancestor 6591b2360ea2ec0fed365110761e6b61cf1e1585 origin/main",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git merge-base --is-ancestor 6591b2360ea2ec0fed365110761e6b61cf1e1585 HEAD",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git branch -a --contains 6591b2360ea2ec0fed365110761e6b61cf1e1585",
+    "out": "  physics-loop/d3-bar-location-block01-20260710\n  physics-loop/d3-bar-window-block01-20260711",
+    "rc": 0
+   },
+   {
+    "cmd": "git log -1 --format=%H%n%an%n%ci%n%s 6591b2360ea2ec0fed365110761e6b61cf1e1585",
+    "out": "6591b2360ea2ec0fed365110761e6b61cf1e1585\nClaude Opus\n2026-07-10 13:21:17 -0400\nd3-bar-location block02: engine extensions + measurement runner, supervisor VALIDATION-PASS",
+    "rc": 0
+   },
+   {
+    "cmd": "git rev-parse 6591b2360ea2ec0fed365110761e6b61cf1e1585:scripts/d3_bar_location_measurement_2026_07_10.py",
+    "out": "cf3a684592058a8914bfe9a07ff108c99c313475",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --format=%H -- scripts/d3_bar_location_measurement_2026_07_10.py",
+    "out": "6591b2360ea2ec0fed365110761e6b61cf1e1585\ne00747b0731222f9feaec1ede6ba31704be57e85",
+    "rc": 0
+   },
+   {
+    "cmd": "git cat-file -e HEAD:docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+    "out": "",
+    "rc": 128
+   },
+   {
+    "cmd": "git log --all --diff-filter=A --format=%H %ci %s -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+    "out": "8f75f76ca28b50748f2398f5339babf93c3fde19 2026-07-09 15:19:28 -0400 physics-loop: record-deposition-rate block01 \u2014 kappa(theta) measured; recurrence floor; sparsity window non-empty\n4311f11c5ae04c78add3eeb06f97033c43c115f8 2026-07-09 15:19:28 -0400 physics-loop: record-deposition-rate block01 \u2014 kappa(theta) measured; recurrence floor; sparsity window non-empty",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=D --format=%H %ci %s -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git merge-base --is-ancestor 8f75f76ca28b50748f2398f5339babf93c3fde19 origin/main",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git merge-base --is-ancestor 8f75f76ca28b50748f2398f5339babf93c3fde19 HEAD",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git branch -a --contains 8f75f76ca28b50748f2398f5339babf93c3fde19",
+    "out": "  physics-loop/collapse-merger-comparator-block01-20260708\n  physics-loop/collapse-merger-comparator-block02-20260708\n  physics-loop/collapse-merger-comparator-block03-20260708\n  physics-loop/d3-bar-location-block01-20260710\n  physics-loop/d3-bar-window-block01-20260711\n  physics-loop/d3-registration-pilot-block01-20260709\n  physics-loop/record-deposition-rate-block01-20260708\n  physics-loop/record-deposition-rate-block02-20260708\n  physics-loop/record-deposition-rate-block03-20260708\n  physics-loop/registration-bar-block01-20260709\n  physics-loop/registration-bar-block02-20260709\n  physics-loop/registration-bar-block03-20260709",
+    "rc": 0
+   },
+   {
+    "cmd": "git log -1 --format=%H%n%an%n%ci%n%s 8f75f76ca28b50748f2398f5339babf93c3fde19",
+    "out": "8f75f76ca28b50748f2398f5339babf93c3fde19\nClaude Opus\n2026-07-09 15:19:28 -0400\nphysics-loop: record-deposition-rate block01 \u2014 kappa(theta) measured; recurrence floor; sparsity window non-empty",
+    "rc": 0
+   },
+   {
+    "cmd": "git rev-parse 8f75f76ca28b50748f2398f5339babf93c3fde19:docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+    "out": "017353319be0167651d81fcae20505e284837f22",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --format=%H -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+    "out": "8f75f76ca28b50748f2398f5339babf93c3fde19\n4311f11c5ae04c78add3eeb06f97033c43c115f8",
+    "rc": 0
+   },
+   {
+    "cmd": "git cat-file -e HEAD:docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+    "out": "",
+    "rc": 128
+   },
+   {
+    "cmd": "git log --all --diff-filter=A --format=%H %ci %s -- docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+    "out": "ed5105ecf4e9e83ca9694e0222f9428aabc528cb 2026-07-09 18:30:38 -0400 record-deposition-rate block03: constraint map + campaign close\n2aad87885edfb453bbe4addfb4916b52e7e497da 2026-07-09 18:30:38 -0400 record-deposition-rate block03: constraint map + campaign close",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=D --format=%H %ci %s -- docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+    "out": "",
+    "rc": 0
+   },
+   {
+    "cmd": "git merge-base --is-ancestor ed5105ecf4e9e83ca9694e0222f9428aabc528cb origin/main",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git merge-base --is-ancestor ed5105ecf4e9e83ca9694e0222f9428aabc528cb HEAD",
+    "out": "",
+    "rc": 1
+   },
+   {
+    "cmd": "git branch -a --contains ed5105ecf4e9e83ca9694e0222f9428aabc528cb",
+    "out": "  physics-loop/d3-bar-location-block01-20260710\n  physics-loop/d3-bar-window-block01-20260711\n  physics-loop/d3-registration-pilot-block01-20260709\n  physics-loop/record-deposition-rate-block03-20260708\n  physics-loop/registration-bar-block01-20260709\n  physics-loop/registration-bar-block02-20260709\n  physics-loop/registration-bar-block03-20260709",
+    "rc": 0
+   },
+   {
+    "cmd": "git log -1 --format=%H%n%an%n%ci%n%s ed5105ecf4e9e83ca9694e0222f9428aabc528cb",
+    "out": "ed5105ecf4e9e83ca9694e0222f9428aabc528cb\nClaude Opus\n2026-07-09 18:30:38 -0400\nrecord-deposition-rate block03: constraint map + campaign close",
+    "rc": 0
+   },
+   {
+    "cmd": "git rev-parse ed5105ecf4e9e83ca9694e0222f9428aabc528cb:docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+    "out": "722d9c0f2c27c3d3f5211a98c394b79c20926f3e",
+    "rc": 0
+   },
+   {
+    "cmd": "git log --all --format=%H -- docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+    "out": "ed5105ecf4e9e83ca9694e0222f9428aabc528cb\n2aad87885edfb453bbe4addfb4916b52e7e497da",
+    "rc": 0
+   }
+  ],
+  "repo": {
+   "commits_reachable": 36833,
+   "head": "8d1f9af3291cdf8f819f138f0396b91d107048c9",
+   "origin_main_tip": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+   "refs_searched": 2832
+  },
+  "theta_floor_chain": {
+   "docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md": {
+    "absent_from_main_because": "never-landed",
+    "add_commit": {
+     "author": "Claude Opus",
+     "date": "2026-07-09 18:30:38 -0400",
+     "sha": "ed5105ecf4e9e83ca9694e0222f9428aabc528cb",
+     "subject": "record-deposition-rate block03: constraint map + campaign close"
+    },
+    "add_commits": [
+     "ed5105ecf4e9e83ca9694e0222f9428aabc528cb 2026-07-09 18:30:38 -0400 record-deposition-rate block03: constraint map + campaign close",
+     "2aad87885edfb453bbe4addfb4916b52e7e497da 2026-07-09 18:30:38 -0400 record-deposition-rate block03: constraint map + campaign close"
+    ],
+    "ancestor_of_head": false,
+    "ancestor_of_origin_main": false,
+    "branches_containing": [
+     "physics-loop/d3-bar-location-block01-20260710",
+     "physics-loop/d3-bar-window-block01-20260711",
+     "physics-loop/d3-registration-pilot-block01-20260709",
+     "physics-loop/record-deposition-rate-block03-20260708",
+     "physics-loop/registration-bar-block01-20260709",
+     "physics-loop/registration-bar-block02-20260709",
+     "physics-loop/registration-bar-block03-20260709"
+    ],
+    "commands": [
+     "git cat-file -e HEAD:docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+     "git log --all --diff-filter=A --format=%H %ci %s -- docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+     "git log --all --diff-filter=D --format=%H %ci %s -- docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+     "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+     "git merge-base --is-ancestor ed5105ecf4e9e83ca9694e0222f9428aabc528cb origin/main",
+     "git merge-base --is-ancestor ed5105ecf4e9e83ca9694e0222f9428aabc528cb HEAD",
+     "git branch -a --contains ed5105ecf4e9e83ca9694e0222f9428aabc528cb",
+     "git log -1 --format=%H%n%an%n%ci%n%s ed5105ecf4e9e83ca9694e0222f9428aabc528cb",
+     "git rev-parse ed5105ecf4e9e83ca9694e0222f9428aabc528cb:docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md",
+     "git cat-file blob 722d9c0f2c27",
+     "git log --all --format=%H -- docs/DEPOSITION_CONSTANT_CONSTRAINT_MAP_2026-07-08.md"
+    ],
+    "delete_commits": [],
+    "distinct_blob_variants": [
+     "722d9c0f2c27c3d3f5211a98c394b79c20926f3e"
+    ],
+    "in_tree_at_head": false,
+    "load_bearing_claims": {
+     "floor_restatement": "Below a\n   threshold of about 0.2 the comparator never goes quiet -- everything\n   registers everywhere, endlessly. At and above 0.2 registration is a\n   sparse, transient event. So the registration bar has a floor, and\n   above that floor the constant is a lawful measured curve, not a free\n   function."
+    },
+    "recovered": {
+     "blob": "722d9c0f2c27c3d3f5211a98c394b79c20926f3e",
+     "bytes": 4802,
+     "sha256": "191c1ed76082d6e885cb6bc2063dbadd51c375149cd186b357094fd09974d38e"
+    },
+    "rename_commits": [],
+    "role": "record-deposition-rate block03 -- the campaign's own restatement of the floor",
+    "verdict": "FOUND"
+   },
+   "docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md": {
+    "absent_from_main_because": "never-landed",
+    "add_commit": {
+     "author": "Claude Opus",
+     "date": "2026-07-09 15:19:28 -0400",
+     "sha": "8f75f76ca28b50748f2398f5339babf93c3fde19",
+     "subject": "physics-loop: record-deposition-rate block01 \u2014 kappa(theta) measured; recurrence floor; sparsity window non-empty"
+    },
+    "add_commits": [
+     "8f75f76ca28b50748f2398f5339babf93c3fde19 2026-07-09 15:19:28 -0400 physics-loop: record-deposition-rate block01 \u2014 kappa(theta) measured; recurrence floor; sparsity window non-empty",
+     "4311f11c5ae04c78add3eeb06f97033c43c115f8 2026-07-09 15:19:28 -0400 physics-loop: record-deposition-rate block01 \u2014 kappa(theta) measured; recurrence floor; sparsity window non-empty"
+    ],
+    "ancestor_of_head": false,
+    "ancestor_of_origin_main": false,
+    "branches_containing": [
+     "physics-loop/collapse-merger-comparator-block01-20260708",
+     "physics-loop/collapse-merger-comparator-block02-20260708",
+     "physics-loop/collapse-merger-comparator-block03-20260708",
+     "physics-loop/d3-bar-location-block01-20260710",
+     "physics-loop/d3-bar-window-block01-20260711",
+     "physics-loop/d3-registration-pilot-block01-20260709",
+     "physics-loop/record-deposition-rate-block01-20260708",
+     "physics-loop/record-deposition-rate-block02-20260708",
+     "physics-loop/record-deposition-rate-block03-20260708",
+     "physics-loop/registration-bar-block01-20260709",
+     "physics-loop/registration-bar-block02-20260709",
+     "physics-loop/registration-bar-block03-20260709"
+    ],
+    "commands": [
+     "git cat-file -e HEAD:docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+     "git log --all --diff-filter=A --format=%H %ci %s -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+     "git log --all --diff-filter=D --format=%H %ci %s -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+     "git log --all --diff-filter=R --find-renames --format=%H %ci %s -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+     "git merge-base --is-ancestor 8f75f76ca28b50748f2398f5339babf93c3fde19 origin/main",
+     "git merge-base --is-ancestor 8f75f76ca28b50748f2398f5339babf93c3fde19 HEAD",
+     "git branch -a --contains 8f75f76ca28b50748f2398f5339babf93c3fde19",
+     "git log -1 --format=%H%n%an%n%ci%n%s 8f75f76ca28b50748f2398f5339babf93c3fde19",
+     "git rev-parse 8f75f76ca28b50748f2398f5339babf93c3fde19:docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md",
+     "git cat-file blob 017353319be0",
+     "git log --all --format=%H -- docs/DEPOSITION_PER_ACTIVITY_KAPPA_BOUNDED_NOTE_2026-07-08.md"
+    ],
+    "delete_commits": [],
+    "distinct_blob_variants": [
+     "017353319be0167651d81fcae20505e284837f22"
+    ],
+    "in_tree_at_head": false,
+    "load_bearing_claims": {
+     "floor_origin": "the\nregistration cascade is transient-complete above the threshold floor\n(theta >= 0.2) while below it a closed coherent ring produces late\nfirst-crossings indefinitely (no quiescence exists -- the yield is\nwell-defined only above a floor, itself a finding)",
+     "sparse_window": "DEPOSITION-SPARSE WINDOW IS NON-EMPTY: for theta >= 0.2 the translated\nfill-per-dwell falls below the campaign-6 wake bound 0.3 in comparator\nunits.",
+     "theta_definition": "registration = upward\ncrossing of the EXCESS distinguishability (1 - bond purity, minus the\nper-bond interacting-ground-state baseline 0.27-0.49) through a\nthreshold theta"
+    },
+    "recovered": {
+     "blob": "017353319be0167651d81fcae20505e284837f22",
+     "bytes": 2796,
+     "sha256": "3d7303ca4464f56e48c7f107b9d5cd6ef6d046a7a90a4fe13859affba3e42386"
+    },
+    "rename_commits": [],
+    "role": "record-deposition-rate block01 -- where theta >= 0.2 is MEASURED",
+    "verdict": "FOUND"
+   }
+  }
+ },
+ "C1_theta_floor_provenance": {
+  "answer_kind": "MEASURED-IN-A-DIFFERENT-COMPARATOR-THEN-IMPORTED-AS-A-DECLARED-FLOOR",
+  "citation_rule_for_the_914_comparator_row": "The 914 CHECK-05 row may be cited ONLY as 'theta* compared against a 0.20 floor DECLARED by the frozen d=3 protocol and imported from the 2026-07-08 record-deposition-rate comparator'.  It may NOT be cited as a d=1-derived floor: the d=1 registration note measures no theta and explicitly defers the comparison to a d >= 2 comparator.  Because the two comparators anchor theta on different baselines, the 'inside / more than a factor of two of margin' reading is a cross-comparator numeric comparison, not a threshold test.",
+  "cycle914_label_is_a_misattribution": true,
+  "cycle914_stdout_label": "d1-comparator-floor",
+  "d1_note_deferral_quote": "the quantitative bar location\n(theta*, its delta-insensitivity, its position vs the sparse window\ntheta >= 0.2) is DEFERRED to a d >= 2 comparator and remains\nunmeasured here.",
+  "d1_note_defers_the_comparison": true,
+  "d3_theta_definition": "theta(t) = (1/6) sum_a ([1 - Tr rho_(S,a)(t)^2] - [same trajectory's t=0 value]); the d=3 subtrahend is EXACTLY ZERO for the verified product preparation",
+  "deposition_note_measures_the_floor": true,
+  "deposition_note_quote": "the\nregistration cascade is transient-complete above the threshold floor\n(theta >= 0.2) while below it a closed coherent ring produces late\nfirst-crossings indefinitely (no quiescence exists -- the yield is\nwell-defined only above a floor, itself a finding)",
+  "deposition_theta_definition_quote": "registration = upward\ncrossing of the EXCESS distinguishability (1 - bond purity, minus the\nper-bond interacting-ground-state baseline 0.27-0.49) through a\nthreshold theta",
+  "in_tree_window_note_calls_it_declared_import": true,
+  "observables_are_not_the_same": true,
+  "observables_note": "the deposition-comparator theta subtracts a per-bond interacting-ground-state baseline of 0.27-0.49; the d=3 theta subtracts the trajectory's own t=0 value, which the frozen memo verifies to be zero.  The two thetas share a NAME and a 1-purity core but not a baseline convention, so 0.20 is not a like-for-like threshold on the d=3 observable.",
+  "origin": "record-deposition-rate comparator (2026-07-08 block01), NOT the d=1 registration note",
+  "question": "does theta >= 0.20 come from a d=1 measurement, a convention, or a design choice?"
+ },
+ "C2_lambda_002": {
+  "W_full_after": [
+   0.02,
+   0.05,
+   0.1
+  ],
+  "all_deltas_by_deadline": true,
+  "boundary_bracket_above": [
+   0.1,
+   0.2
+  ],
+  "boundary_bracket_below": null,
+  "first_hit": {
+   "Q_quiet": 0.00012396560297500692,
+   "X_face": 0.03171434549180441,
+   "by_deadline": true,
+   "drift": 2.778335624187278e-05,
+   "jt": 0.6,
+   "max_pair": 0.0011326954132362564,
+   "pair_values": {
+    "minus-x-orthogonal": 0.0011326954132353084,
+    "opposite-44": 0.00016797639787379515,
+    "opposite-55": 0.0005174889596740555,
+    "plus-x-orthogonal": 0.0011326954132362564,
+    "transverse-orthogonal": 0.0010158916886128843
+   },
+   "r_ind": 6,
+   "run": 4,
+   "subset": [
+    "+x",
+    "-x",
+    "+y",
+    "-y",
+    "+z",
+    "-z"
+   ],
+   "theta": 0.5001041579430632
+  },
+  "headline_persists_3_samples": true,
+  "in_W_full": true,
+  "lambda": 0.02,
+  "outcome": "WINDOW-EXTENDS-BELOW-0.05",
+  "per_delta_first_hits": {
+   "0.05": {
+    "by_deadline": true,
+    "jt": 0.7,
+    "r_ind": 6,
+    "run": 3,
+    "theta": 0.5001924313642354
+   },
+   "0.1": {
+    "by_deadline": true,
+    "jt": 0.6,
+    "r_ind": 6,
+    "run": 4,
+    "theta": 0.5001041579430632
+   },
+   "0.2": {
+    "by_deadline": true,
+    "jt": 0.6,
+    "r_ind": 6,
+    "run": 5,
+    "theta": 0.5001041579430632
+   }
+  },
+  "reading": "lambda = 0.02 certifies at every commissioned tolerance by Jt <= 1 with a persistent headline event, so the certified window extends BELOW the 914 measurement's lowest certified field"
+ },
+ "C2_reproduction_vs_committed_2026_07_11": {
+  "committed_targets": {
+   "first_hit_jt_headline": 0.6,
+   "max_pair_at_hit": 0.0011326954132860711,
+   "r_ind_headline": 6,
+   "subset_headline": [
+    "+x",
+    "-x",
+    "+y",
+    "-y",
+    "+z",
+    "-z"
+   ],
+   "theta_star_headline": 0.5001041579430463
+  },
+  "max_abs_dev": {
+   "H_Z": 7.849276784099857e-14,
+   "chi_closed_five": 2.047834124496717e-12,
+   "chi_wedge_four": 1.7126577933623821e-12,
+   "pair_opposite_55": 1.60530117844504e-13,
+   "theta": 1.1757261830780408e-13
+  },
+  "measured_first_hit_jt": 0.6,
+  "measured_max_pair": 0.0011326954132362564,
+  "measured_r_ind": 6,
+  "measured_theta_star": 0.5001041579430632,
+  "ok": true,
+  "r_ind_agrees": true,
+  "rows_compared": 13
+ },
+ "C2_rows": [
+  {
+   "H_Z": 0.9999999999999999,
+   "Q_quiet": -2.220446049250313e-16,
+   "X_face": 1.0000000000000002,
+   "bloch": {
+    "corner": [
+     0.0,
+     -0.0,
+     1.0000000000000002
+    ],
+    "edge": [
+     0.0,
+     -0.0,
+     1.0000000000000002
+    ],
+    "face": [
+     1.0000000000000002,
+     -0.0,
+     0.0
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0,
+    "wedge-four": 0.0
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": -0.0,
+   "chi_wedge_four": -0.0,
+   "excess_closed_five": 0.0,
+   "excess_wedge_four": 0.0,
+   "jt": 0.0,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 0.0,
+    "edge": 0.0,
+    "face": 0.0
+   },
+   "one_site_excess": {
+    "corner": 0.0,
+    "edge": 0.0,
+    "face": 0.0
+   },
+   "p_z": [
+    0.5000000000000001,
+    0.5000000000000001
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 1.1102230246251565e-16,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.25000000000000006,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 2.220446049250313e-16,
+   "sum_delta_chi": 0.0,
+   "symmetry_max": 0.0,
+   "theta": 0.0,
+   "x_control": {
+    "H_X": -0.0,
+    "chi": [
+     -0.0,
+     -0.0
+    ],
+    "p_x": [
+     1.0,
+     0.0
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999999997586,
+   "Q_quiet": 7.802643969156975e-06,
+   "X_face": 0.6828206895792134,
+   "bloch": {
+    "corner": [
+     0.0011644231069475723,
+     0.0037642740520687445,
+     0.9999922371480441
+    ],
+    "edge": [
+     0.0007743506265512512,
+     0.0038436479258763235,
+     0.9999921575640176
+    ],
+    "face": [
+     0.6828206895792134,
+     -0.7030531625817926,
+     0.0015016062129007413
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 2.7452180842990614e-06,
+    "wedge-four": 6.394818448524076e-07
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.08057193665106735,
+   "chi_wedge_four": 0.08056983091478172,
+   "excess_closed_five": 0.08057193665106735,
+   "excess_wedge_four": 0.08056983091478172,
+   "jt": 0.1,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": -8.025782443013462e-17,
+    "edge": 1.1531230703405607e-12,
+    "face": 0.08056919143298305
+   },
+   "one_site_excess": {
+    "corner": -8.025782443013462e-17,
+    "edge": 1.1531230703405607e-12,
+    "face": 0.08056919143298305
+   },
+   "p_z": [
+    0.5000002926944892,
+    0.49999970730549764
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.926944892012173e-07,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.22639297854966253,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 6.661338147750939e-16,
+   "sum_delta_chi": 0.48342319696126157,
+   "symmetry_max": 4.618527782440651e-14,
+   "theta": 0.09118579278321315,
+   "x_control": {
+    "H_X": 0.315006117721697,
+    "chi": [
+     0.037659026740718554,
+     0.0376582332819184
+    ],
+    "p_x": [
+     0.9431019784426414,
+     0.056898021557318185
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999999628738,
+   "Q_quiet": 2.8965829686478095e-05,
+   "X_face": -0.026874415091182352,
+   "bloch": {
+    "corner": [
+     0.004250862573606264,
+     0.0062135551684252225,
+     0.9999716604514958
+    ],
+    "edge": [
+     0.002809769243052644,
+     0.006832711166393751,
+     0.9999704078891313
+    ],
+    "face": [
+     -0.026874415091182352,
+     -0.9206526968498507,
+     0.004957725935113622
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 3.727674274231485e-05,
+    "wedge-four": 8.675993858203723e-06
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.23984704389044248,
+   "chi_wedge_four": 0.2398184431416448,
+   "excess_closed_five": 0.23984704389044248,
+   "excess_wedge_four": 0.2398184431416448,
+   "jt": 0.2,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": -1.5959281940185744e-16,
+    "edge": 1.487781112492268e-10,
+    "face": 0.23980976714770016
+   },
+   "one_site_excess": {
+    "corner": -1.5959281940185744e-16,
+    "edge": 1.487781112492268e-10,
+    "face": 0.23980976714770016
+   },
+   "p_z": [
+    0.5000035910292835,
+    0.4999964089705303
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 3.591029283489533e-06,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.1665360670996567,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 0.0,
+   "sum_delta_chi": 1.4389678603474643,
+   "symmetry_max": 8.643086246706844e-14,
+   "theta": 0.28028689355019165,
+   "x_control": {
+    "H_X": 0.7112380382906087,
+    "chi": [
+     0.056857117886749575,
+     0.056850296131965294
+    ],
+    "p_x": [
+     0.8052817222894967,
+     0.19471827771042957
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999995989268,
+   "Q_quiet": 5.761859238151423e-05,
+   "X_face": -0.6085386256192765,
+   "bloch": {
+    "corner": [
+     0.008181004608682334,
+     0.006492344003187241,
+     0.9999454578848224
+    ],
+    "edge": [
+     0.005382746879552336,
+     0.008484661971401181,
+     0.9999393049304145
+    ],
+    "face": [
+     -0.6085386256192765,
+     -0.5574735849252145,
+     0.008070553848019912
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.00016222699008877628,
+    "wedge-four": 3.790938300385349e-05
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.4274599192457325,
+   "chi_wedge_four": 0.4273356016389857,
+   "excess_closed_five": 0.4274599192457325,
+   "excess_wedge_four": 0.4273356016389857,
+   "jt": 0.3,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 2.2779354326949935e-16,
+    "edge": 1.405664494402866e-09,
+    "face": 0.42729769225564374
+   },
+   "one_site_excess": {
+    "corner": 2.2779354326949935e-16,
+    "edge": 1.405664494402866e-09,
+    "face": 0.42729769225564374
+   },
+   "p_z": [
+    0.5000117902432399,
+    0.49998820975670466
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 1.1790243239939713e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.09650678700818574,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 4.440892098500626e-16,
+   "sum_delta_chi": 2.564262245047408,
+   "symmetry_max": 3.381184221495914e-13,
+   "theta": 0.4266750376802517,
+   "x_control": {
+    "H_X": 0.9266924893452924,
+    "chi": [
+     0.035248675281984554,
+     0.035233465742519676
+    ],
+    "p_x": [
+     0.6580288419591118,
+     0.3419711580408812
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999987342867,
+   "Q_quiet": 8.648860032955952e-05,
+   "X_face": -0.6954394690271375,
+   "bloch": {
+    "corner": [
+     0.011581873618150036,
+     0.004503528398061481,
+     0.9999227819311227
+    ],
+    "edge": [
+     0.0076824228699829585,
+     0.008869714629886897,
+     0.9999042408682183
+    ],
+    "face": [
+     -0.6954394690271375,
+     0.04064029486326909,
+     0.009098524532616059
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.00043585425855174886,
+    "wedge-four": 0.0001023142631851881
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.6138153267516919,
+   "chi_wedge_four": 0.613481786756492,
+   "excess_closed_five": 0.6138153267516919,
+   "excess_wedge_four": 0.613481786756492,
+   "jt": 0.4,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 1.196437048934129e-15,
+    "edge": 3.3354566139298073e-09,
+    "face": 0.6133794724931402
+   },
+   "one_site_excess": {
+    "corner": 1.196437048934129e-15,
+    "edge": 3.3354566139298073e-09,
+    "face": 0.6133794724931402
+   },
+   "p_z": [
+    0.5000209444718663,
+    0.4999790555280809
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.0944471866291003e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.042130505772109916,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 3.3306690738754696e-16,
+   "sum_delta_chi": 3.681557800529352,
+   "symmetry_max": 1.66644475996236e-13,
+   "theta": 0.48655390341754234,
+   "x_control": {
+    "H_X": 0.9905495695593882,
+    "chi": [
+     0.01009206734785073,
+     0.010077541770404985
+    ],
+    "p_x": [
+     0.5571674010496711,
+     0.4428325989502979
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999980082972,
+   "Q_quiet": 0.000109546372406788,
+   "X_face": -0.3531151120849289,
+   "bloch": {
+    "corner": [
+     0.013265576577490449,
+     0.0009422373960494412,
+     0.9999115517767636
+    ],
+    "edge": [
+     0.009184972137930155,
+     0.008502303923329953,
+     0.9998693554784227
+    ],
+    "face": [
+     -0.3531151120849289,
+     0.4088355960882373,
+     0.008066111699916001
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0008866199576823552,
+    "wedge-four": 0.00020881883901013865
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.777463209188084,
+   "chi_wedge_four": 0.776785408069447,
+   "excess_closed_five": 0.777463209188084,
+   "excess_wedge_four": 0.776785408069447,
+   "jt": 0.5,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 9.299275089999872e-15,
+    "edge": 2.3282714097747634e-09,
+    "face": 0.7765765892304016
+   },
+   "one_site_excess": {
+    "corner": 9.299275089999872e-15,
+    "edge": 2.3282714097747634e-09,
+    "face": 0.7765765892304016
+   },
+   "p_z": [
+    0.5000262731600404,
+    0.49997372683991165
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.627316004044644e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.013071203739272844,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 2.1094237467877974e-15,
+   "sum_delta_chi": 4.662068050653955,
+   "symmetry_max": 3.519406988061746e-14,
+   "theta": 0.49900803871285837,
+   "x_control": {
+    "H_X": 0.9995546906327945,
+    "chi": [
+     0.0010919804570846958,
+     0.0010861580487442346
+    ],
+    "p_x": [
+     0.5124224227313795,
+     0.4875775772685988
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977727471,
+   "Q_quiet": 0.00012396560297500692,
+   "X_face": 0.03171434549180441,
+   "bloch": {
+    "corner": [
+     0.012644303977873311,
+     -0.0029471250442029834,
+     0.9999156867700744
+    ],
+    "edge": [
+     0.009843074233214226,
+     0.008006109424443911,
+     0.9998363820239757
+    ],
+    "face": [
+     0.03171434549180441,
+     0.36091530429575003,
+     0.006402572710899113
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0014936708858163117,
+    "wedge-four": 0.0003524116228492691
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.9025997644731673,
+   "chi_wedge_four": 0.9014585052102235,
+   "excess_closed_five": 0.9025997644731673,
+   "excess_wedge_four": 0.9014585052102235,
+   "jt": 0.6,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 3.0377418349544864e-14,
+    "edge": 8.481117819213006e-10,
+    "face": 0.9011060935873509
+   },
+   "one_site_excess": {
+    "corner": 3.0377418349544864e-14,
+    "edge": 8.481117819213006e-10,
+    "face": 0.9011060935873509
+   },
+   "p_z": [
+    0.5000277833562419,
+    0.4999722166437069
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.0011326954132353084,
+    "opposite-44": 0.00016797639787379515,
+    "opposite-55": 0.0005174889596740555,
+    "plus-x-orthogonal": 0.0011326954132362564,
+    "transverse-orthogonal": 0.0010158916886128843
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.778335624187278e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.0035368130026971487,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 2.220446049250313e-16,
+   "sum_delta_chi": 5.411033549787229,
+   "symmetry_max": 2.3314683517128287e-14,
+   "theta": 0.5001041579430632,
+   "x_control": {
+    "H_X": 0.99999639871397,
+    "chi": [
+     2.545385473284867e-05,
+     2.4720234478636804e-05
+    ],
+    "p_x": [
+     0.5011171882520514,
+     0.49888281174788324
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977491685,
+   "Q_quiet": 0.0001306537173429989,
+   "X_face": 0.1318507905310755,
+   "bloch": {
+    "corner": [
+     0.009935599264546348,
+     -0.00580571078501437,
+     0.9999337376906522
+    ],
+    "edge": [
+     0.00998204285426664,
+     0.007759211451926021,
+     0.9998049548746618
+    ],
+    "face": [
+     0.1318507905310755,
+     0.10727895344501626,
+     0.0054602452626748565
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0021858465835674634,
+    "wedge-four": 0.0005159399471823534
+   },
+   "certifying_subsets": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.9783127003135862,
+   "chi_wedge_four": 0.9766427936777553,
+   "excess_closed_five": 0.9783127003135862,
+   "excess_wedge_four": 0.9766427936777553,
+   "jt": 0.7,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 5.882704820935186e-14,
+    "edge": 3.810210995346987e-09,
+    "face": 0.9761268537300187
+   },
+   "one_site_excess": {
+    "corner": 5.882704820935186e-14,
+    "edge": 3.810210995346987e-09,
+    "face": 0.9761268537300187
+   },
+   "p_z": [
+    0.5000279302261751,
+    0.49997206977370273
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.0017119975731083002,
+    "opposite-44": 0.0002905560480642292,
+    "opposite-55": 0.0008437685903525341,
+    "plus-x-orthogonal": 0.0017119975731323446,
+    "transverse-orthogonal": 0.0015228236223931858
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.7930226175088002e-05,
+   "r_ind": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.002314440573137582,
+   "singleton_passes": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 1.3322676295501878e-15,
+   "sum_delta_chi": 5.863196575338193,
+   "symmetry_max": 5.542233338928781e-13,
+   "theta": 0.5001924313642354,
+   "x_control": {
+    "H_X": 0.9999999999968258,
+    "chi": [
+     5.520970092209865e-08,
+     2.981493973930327e-08
+    ],
+    "p_x": [
+     0.5000010488667305,
+     0.49999895113311965
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977493881,
+   "Q_quiet": 0.0001333090975381701,
+   "X_face": -0.028890651097476447,
+   "bloch": {
+    "corner": [
+     0.006086234363040905,
+     -0.0066349641640616915,
+     0.9999593937791134
+    ],
+    "edge": [
+     0.009982432802044371,
+     0.007743123450169828,
+     0.9997739880258103
+    ],
+    "face": [
+     -0.028890651097476447,
+     0.0033402836382834256,
+     0.005333295332790033
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0028627530258563683,
+    "wedge-four": 0.0006752346154935696
+   },
+   "certifying_subsets": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.9983585723174266,
+   "chi_wedge_four": 0.9961710539078863,
+   "excess_closed_five": 0.9983585723174266,
+   "excess_wedge_four": 0.9961710539078863,
+   "jt": 0.8,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 7.716406452609043e-14,
+    "edge": 5.220269291979999e-09,
+    "face": 0.9954958192915703
+   },
+   "one_site_excess": {
+    "corner": 7.716406452609043e-14,
+    "edge": 5.220269291979999e-09,
+    "face": 0.9954958192915703
+   },
+   "p_z": [
+    0.5000279289027321,
+    0.4999720710971312
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.002346311179928619,
+    "opposite-44": 0.000443775920704287,
+    "opposite-55": 0.001225832667302221,
+    "plus-x-orthogonal": 0.002346311179941305,
+    "transverse-orthogonal": 0.002074832453993273
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.7928902732066163e-05,
+   "r_ind": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.0024875035511464894,
+   "singleton_passes": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 6.661338147750939e-16,
+   "sum_delta_chi": 5.981401360266398,
+   "symmetry_max": 8.22453216642316e-13,
+   "theta": 0.5002693996527035,
+   "x_control": {
+    "H_X": 0.9999999997670433,
+    "chi": [
+     4.4169367940938287e-08,
+     1.650216674420335e-08
+    ],
+    "p_x": [
+     0.5000089853557402,
+     0.49999101464416984
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977508033,
+   "Q_quiet": 0.00013661832759259696,
+   "X_face": -0.13811334174938422,
+   "bloch": {
+    "corner": [
+     0.002441346954573307,
+     -0.005145415744268843,
+     0.9999836880800167
+    ],
+    "edge": [
+     0.009970141809713506,
+     0.007680036214919033,
+     0.9997430752647982
+    ],
+    "face": [
+     -0.13811334174938422,
+     0.18007834904426806,
+     0.005041156788861689
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.003428162440377358,
+    "wedge-four": 0.0008070895737476436
+   },
+   "certifying_subsets": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.961122034832193,
+   "chi_wedge_four": 0.958500961966533,
+   "excess_closed_five": 0.961122034832193,
+   "excess_wedge_four": 0.958500961966533,
+   "jt": 0.9,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 8.075511131619363e-14,
+    "edge": 2.493929805724715e-09,
+    "face": 0.9576938723918157
+   },
+   "one_site_excess": {
+    "corner": 8.075511131619363e-14,
+    "edge": 2.493929805724715e-09,
+    "face": 0.9576938723918157
+   },
+   "p_z": [
+    0.5000279199896517,
+    0.49997208001025945
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.002974139535290475,
+    "opposite-44": 0.0006072924606873107,
+    "opposite-55": 0.001618790633324266,
+    "plus-x-orthogonal": 0.0029741395352947345,
+    "transverse-orthogonal": 0.002620177564151985
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.79199896516813e-05,
+   "r_ind": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.0027085114141260722,
+   "singleton_passes": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 2.220446049250313e-16,
+   "sum_delta_chi": 5.756247917530518,
+   "symmetry_max": 9.696687897076117e-13,
+   "theta": 0.500348202985109,
+   "x_control": {
+    "H_X": 0.9999999624747692,
+    "chi": [
+     3.17782217984508e-07,
+     2.0005426182301278e-07
+    ],
+    "p_x": [
+     0.5001140405798066,
+     0.4998859594200567
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977830555,
+   "Q_quiet": 0.00014447313288101782,
+   "X_face": 0.0604154621762944,
+   "bloch": {
+    "corner": [
+     0.0002744608567766492,
+     -0.0018577154497681477,
+     0.9999981304253127
+    ],
+    "edge": [
+     0.009721151426060424,
+     0.007347130309825254,
+     0.9997129233089252
+    ],
+    "face": [
+     0.0604154621762944,
+     0.4112962145322707,
+     0.0038134921501041252
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0038168681993373532,
+    "wedge-four": 0.0008957087131384878
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.8696196496907606,
+   "chi_wedge_four": 0.8666984902050981,
+   "excess_closed_five": 0.8696196496907606,
+   "excess_wedge_four": 0.8666984902050981,
+   "jt": 1.0,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 7.853283239352458e-14,
+    "edge": 5.599299124836241e-09,
+    "face": 0.8658027814914232
+   },
+   "one_site_excess": {
+    "corner": 7.853283239352458e-14,
+    "edge": 5.599299124836241e-09,
+    "face": 0.8658027814914232
+   },
+   "p_z": [
+    0.5000277191060112,
+    0.49997228089389484
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.003539592618839954,
+    "opposite-44": 0.000756103272532797,
+    "opposite-55": 0.0019754517251929617,
+    "plus-x-orthogonal": 0.003539592618854675,
+    "transverse-orthogonal": 0.003112205635318243
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.7719106011181438e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.00565967215080268,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 1.1102230246251565e-15,
+   "sum_delta_chi": 5.206033260201914,
+   "symmetry_max": 5.364597654988756e-13,
+   "theta": 0.5003464533555986,
+   "x_control": {
+    "H_X": 0.9999793456403875,
+    "chi": [
+     9.488977341187699e-05,
+     9.070130388733055e-05
+    ],
+    "p_x": [
+     0.5026754852653436,
+     0.49732451473454914
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.999999998015837,
+   "Q_quiet": 0.00015889412999636754,
+   "X_face": 0.47677528718322404,
+   "bloch": {
+    "corner": [
+     0.0003425788509952037,
+     0.002079359493230475,
+     0.9999976734522322
+    ],
+    "edge": [
+     0.00883712163706361,
+     0.006847745147488914,
+     0.999684538287775
+    ],
+    "face": [
+     0.47677528718322404,
+     0.34389169623271715,
+     0.0021612608209800044
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.004000376008245099,
+    "wedge-four": 0.0009341884421445457
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.7315089032538382,
+   "chi_wedge_four": 0.7284427156884461,
+   "excess_closed_five": 0.7315089032538382,
+   "excess_wedge_four": 0.7284427156884461,
+   "jt": 1.1,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 6.733647709331704e-14,
+    "edge": 1.3334542112966759e-08,
+    "face": 0.7275085272455931
+   },
+   "one_site_excess": {
+    "corner": 6.733647709331704e-14,
+    "edge": 1.3334542112966759e-08,
+    "face": 0.7275085272455931
+   },
+   "p_z": [
+    0.5000262235478541,
+    0.4999737764520417
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.6223547854087315e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.02005394848260735,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 2.220446049250313e-15,
+   "sum_delta_chi": 4.376788669261461,
+   "symmetry_max": 7.084333120133124e-13,
+   "theta": 0.498003339769864
+  },
+  {
+   "H_Z": 0.9999999988240527,
+   "Q_quiet": 0.00017989391934802867,
+   "X_face": 0.7252627644784457,
+   "bloch": {
+    "corner": [
+     0.0026217690594204836,
+     0.005290329146537234,
+     0.9999824754707736
+    ],
+    "edge": [
+     0.00707423795843808,
+     0.006657616174131591,
+     0.9996577366905304
+    ],
+    "face": [
+     0.7252627644784457,
+     -0.12839139164621277,
+     0.001622483362258731
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.003969459911162487,
+    "wedge-four": 0.000920396679309543
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.5591535139103672,
+   "chi_wedge_four": 0.5561044506790562,
+   "excess_closed_five": 0.5591535139103672,
+   "excess_wedge_four": 0.5561044506790562,
+   "jt": 1.2,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 4.1179804279363886e-14,
+    "edge": 1.273127529864259e-08,
+    "face": 0.5551840539992047
+   },
+   "one_site_excess": {
+    "corner": 4.1179804279363886e-14,
+    "edge": 1.273127529864259e-08,
+    "face": 0.5551840539992047
+   },
+   "p_z": [
+    0.5000201882817851,
+    0.49997981171812084
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.0188281785071815e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.05675744657508421,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 1.9984014443252818e-15,
+   "sum_delta_chi": 3.3427248305369592,
+   "symmetry_max": 5.420108806220014e-13,
+   "theta": 0.47680636727532344
+  }
+ ],
+ "C3_late_grid": {
+  "results": {
+   "0.05": {
+    "certified_at_late_samples": {
+     "1.5": false,
+     "2.0": false
+    },
+    "early_first_hit_jt_from_914": 0.6,
+    "executed_times": [
+     0.0,
+     1.5,
+     2.0
+    ],
+    "late_rows": [
+     {
+      "H_Z": 0.9999997793673869,
+      "Q_quiet": 0.001640438016936363,
+      "X_face": -0.8291600239295246,
+      "chi_closed_five": 0.04139732703559189,
+      "chi_wedge_four": 0.03714260524955294,
+      "drift": 0.00027652399721189713,
+      "excess_closed_five": 0.04139732703559189,
+      "jt": 1.5,
+      "pair_classes": null,
+      "pair_reason": "fewer-than-two-singleton-passes",
+      "r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "r_raw": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "singleton_passes": {
+       "0.05": [],
+       "0.1": [],
+       "0.2": []
+      },
+      "theta": 0.05536841624921374
+     },
+     {
+      "H_Z": 0.9999999294009783,
+      "Q_quiet": 0.0026691722171103827,
+      "X_face": 0.6198839821999576,
+      "chi_closed_five": 0.650422036460144,
+      "chi_wedge_four": 0.6304184460823733,
+      "drift": 0.00015642193162113127,
+      "excess_closed_five": 0.650422036460144,
+      "jt": 2.0,
+      "pair_classes": null,
+      "pair_reason": "fewer-than-two-singleton-passes",
+      "r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "r_raw": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "singleton_passes": {
+       "0.05": [],
+       "0.1": [],
+       "0.2": []
+      },
+      "theta": 0.49776829171140624
+     }
+    ],
+    "persistence_verdict": "DECAYS",
+    "propagator": {
+     "degree": 166,
+     "matvecs": 166,
+     "tail_bound": 6.312062615596449e-18
+    }
+   },
+   "0.1": {
+    "certified_at_late_samples": {
+     "1.5": false,
+     "2.0": false
+    },
+    "early_first_hit_jt_from_914": 0.7,
+    "executed_times": [
+     0.0,
+     1.5,
+     2.0
+    ],
+    "late_rows": [
+     {
+      "H_Z": 0.999996645138274,
+      "Q_quiet": 0.006395729560937147,
+      "X_face": -0.8109680064880249,
+      "chi_closed_five": 0.03593152250948645,
+      "chi_wedge_four": 0.029062958076822826,
+      "drift": 0.0010782883834246082,
+      "excess_closed_five": 0.03593152250948645,
+      "jt": 1.5,
+      "pair_classes": null,
+      "pair_reason": "fewer-than-two-singleton-passes",
+      "r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "r_raw": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "singleton_passes": {
+       "0.05": [],
+       "0.1": [],
+       "0.2": []
+      },
+      "theta": 0.07679935076390587
+     },
+     {
+      "H_Z": 0.999998741106186,
+      "Q_quiet": 0.010376272407757958,
+      "X_face": 0.6015823051199556,
+      "chi_closed_five": 0.6165531033348172,
+      "chi_wedge_four": 0.5620043042769088,
+      "drift": 0.0006605296481249079,
+      "excess_closed_five": 0.6165531033348172,
+      "jt": 2.0,
+      "pair_classes": null,
+      "pair_reason": "fewer-than-two-singleton-passes",
+      "r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "r_raw": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "singleton_passes": {
+       "0.05": [],
+       "0.1": [],
+       "0.2": []
+      },
+      "theta": 0.5119308113644572
+     }
+    ],
+    "persistence_verdict": "DECAYS",
+    "propagator": {
+     "degree": 169,
+     "matvecs": 169,
+     "tail_bound": 7.178318859899745e-18
+    }
+   }
+  },
+  "scope": {
+   "design_semantics": "the frozen memo classes all four late T_C samples as recurrence diagnostics that do not rescue CHECK-03; persistence here is the finite-sample flag, never permanence",
+   "executed_lambdas": [
+    0.05,
+    0.1
+   ],
+   "executed_times": [
+    1.5,
+    2.0
+   ],
+   "not_executed_times": [
+    5.0,
+    10.0
+   ],
+   "priority_order_declared": "1.5 and 2.0 at both lambdas first, then 5.0, then 10.0",
+   "tier_executed": 1
+  }
+ },
+ "ast_extraction": {
+  "extracted_source_sha256": "0ed5b1dc812fdcde4a09b140a648d896620fd3344a7e6bbcdcd56f4665b3dc1c",
+  "names": [
+   "CH",
+   "Sector",
+   "_bitperm_tables",
+   "build_descriptor",
+   "centered_frobenius_panel",
+   "chebyshev",
+   "chi_holevo",
+   "cond_mi",
+   "conditional_blocks",
+   "cube_sites",
+   "ent_bits",
+   "parse_memo_fragments",
+   "proper_rotations",
+   "ptrace_keep_one",
+   "ptrace_split",
+   "purity",
+   "r_ind",
+   "tiebreak_fragments"
+  ],
+  "source_file": "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py",
+  "source_sha256": "fc7344a06503f9c159ea732cb6f622a23e61196e370914943ffd9a468fd592e4"
+ },
+ "boundary_sentences": [
+  "Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction.",
+  "No formation rule.",
+  "Sets no audit status."
+ ],
+ "checks": {
+  "CHECK-01": {
+   "ok": true,
+   "stationary_control": {
+    "event_counts": [
+     0,
+     0,
+     0
+    ],
+    "ok": true
+   },
+   "t0_anchor_max_bits": 0.0
+  },
+  "CHECK-02": {
+   "commutator_ordering": true,
+   "drift": true,
+   "ok": true,
+   "panel": {
+    "center": {
+     "X": 5.753874358018091e-05,
+     "Y": 5.754066150633535e-05,
+     "Z": 4.6980187404094865e-07,
+     "degree": 6
+    },
+    "corner": {
+     "X": 4.068603576649985e-05,
+     "Y": 4.06887480784769e-05,
+     "Z": 4.6980187404094865e-07,
+     "degree": 3
+    },
+    "edge": {
+     "X": 4.698018740409486e-05,
+     "Y": 4.698253635474276e-05,
+     "Z": 4.6980187404094865e-07,
+     "degree": 4
+    },
+    "face": {
+     "X": 5.252544631561775e-05,
+     "Y": 5.25275472914517e-05,
+     "Z": 4.6980187404094865e-07,
+     "degree": 5
+    }
+   },
+   "x_pointer_control": true
+  },
+  "CHECK-03": {
+   "lam002_first_hit_by_deadline": true,
+   "lam002_persistence_samples": 4,
+   "lam002_persists": true,
+   "locality": true,
+   "ok": true,
+   "shell_crossings": {
+    "corner": null,
+    "edge": null,
+    "face": 0.1
+   }
+  },
+  "CHECK-05": {
+   "W_full": [
+    0.02,
+    0.05,
+    0.1
+   ],
+   "boundary_bracket_above": [
+    0.1,
+    0.2
+   ],
+   "boundary_bracket_below": null,
+   "field_factor": 1.0092513106539827,
+   "field_stability_ok": true,
+   "labels": {
+    "0.02": "inside",
+    "0.05": "inside",
+    "0.1": "inside",
+    "0.2": null
+   },
+   "noncontiguous_window": false,
+   "theta_floor_citation": "The 914 CHECK-05 row may be cited ONLY as 'theta* compared against a 0.20 floor DECLARED by the frozen d=3 protocol and imported from the 2026-07-08 record-deposition-rate comparator'.  It may NOT be cited as a d=1-derived floor: the d=1 registration note measures no theta and explicitly defers the comparison to a d >= 2 comparator.  Because the two comparators anchor theta on different baselines, the 'inside / more than a factor of two of margin' reading is a cross-comparator numeric comparison, not a threshold test.",
+   "theta_star": {
+    "0.02": 0.5001041579430632,
+    "0.05": 0.5007515272813331,
+    "0.1": 0.5047307768675429,
+    "0.2": null
+   },
+   "window_size_ok": true
+  }
+ },
+ "cited_but_absent_pinned_as_absent": {
+  "docs/D3_BAR_LOCATION_BOUNDED_NOTE_2026-07-10.md": "absent",
+  "docs/D3_REGISTRATION_ONSET_PILOT_BOUNDED_NOTE_2026-07-10.md": "absent",
+  "docs/D3_REGISTRATION_PILOT_DESIGN_SCOUT_2026-07-09.md": "absent",
+  "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md": "absent",
+  "scripts/d3_bar_location_measurement_2026_07_10.py": "absent",
+  "scripts/d3_registration_onset_pilot_2026_07_09.py": "absent"
+ },
+ "cycle": 915,
+ "date": "2026-07-28",
+ "determinism": {
+  "duplicate_time_requested": 0.6,
+  "observable_scalars_bitwise_equal": true,
+  "ok": true,
+  "pair_classes_bitwise_equal": true,
+  "propagated_state_bitwise_equal": true
+ },
+ "deviations": [
+  "EXECUTED-SCOPE-C2: lambda = 0.02 executed on the frozen certification subgrid restricted to Jt in {0.0, ..., 1.2} (13 of the 17 T_C points).  The frozen main state grid Jt = 0:0.1:10 is NOT executed.  Identical restriction to Cycle 914's EXECUTED-GRID deviation, and for the same reason: the 900 s runtime cap against a frozen schedule that projects 7.1 h.  The deadline gate (Jt <= 1) and the three-consecutive-sample persistence gate both live entirely inside the executed window, so no CHECK-03 outcome depends on the omission.",
+  "EXECUTED-SCOPE-C3: the frozen late certification samples are {1.5, 2.0, 5.0, 10.0}.  This run executes the declared priority tier {1.5, 2.0} at BOTH certified lambdas {0.05, 0.10}; {5.0, 10.0} are NOT executed at either lambda.  Reason: the Chebyshev degree scales with A * t_max (A = 54 + 27 lambda), so t_max = 10 costs M = 662 matrix-vector products per lambda against M = 169 for t_max = 2.0 -- roughly 491 s versus 125 s per lambda, which does not fit beside C2 under the 900 s cap.  The frozen memo classes all four late samples as recurrence diagnostics that 'do not rescue CHECK-03', so no gate consumes them.",
+  "LAZY-Z-PAIRS: inherited from Cycle 914.  The frozen design evaluates the five pair classes at every T_C time; this run applies the design's own lazy rule (declared there for the X control) to Z as well, skipping pair evaluation at rows where fewer than two fragments pass the singleton gates at every delta.  Such rows cannot reach R_ind >= 2, so no first-hit time can change; skipped rows carry the reason 'fewer-than-two-singleton-passes' and are never read as independence.",
+  "GROUND-DOUBLET: inherited from Cycle 914.  The two-state invariant-sector Lanczos baseline is NOT executed under the runtime cap.  The frozen memo assigns the doublet a control-and-diagnostic-only role and FORBIDS it as a gate baseline, so no gate depends on it.  A repeated-observable stationary control anchored at its own first row is substituted and reported.",
+  "DT-HALVING: inherited from Cycle 914.  This runner evaluates exp(-iHt) directly at each requested t by a single Chebyshev expansion of the sector Hamiltonian, so no dt exists to halve.  Substituted diagnostics: the rigorous Chebyshev truncation tail bound, state-norm conservation, and the duplicate-time propagation determinism gate.",
+  "MACHINERY-REUSE: the sector reduction, propagator, marginal, certification and commutator routines are AST-extracted from the Cycle 914 primary rather than reimplemented.  This is deliberate: it makes C2/C3 a scope extension of a verified implementation rather than a second implementation with its own error surface.  The INDEPENDENT recomputation lives in the paired checker, which reimplements the certification arithmetic from the memos.",
+  "C1-SEARCH-DISCLOSURE: the pickaxe searches that located the theta-floor provenance chain (`git log --all -S '<phrase>'`) cost minutes of wall clock over 36,832 commits and are NOT re-executed inside the runtime cap.  They are disclosed verbatim as the discovery route; this runner re-verifies their RESULT by cheap path-scoped commands (git log --all --diff-filter=A -- <path>, git rev-parse, git cat-file), and the paired checker re-derives the same chain by its own path-scoped route."
+ ],
+ "falsifier_visibility": {
+  "below_content_r_ind": 0,
+  "below_content_rejected": true,
+  "correlated_pairs_rejected": true,
+  "correlated_r_ind": 1,
+  "correlated_raw_singletons": 6,
+  "meaning": "the gate machinery fires on a planted early row and refuses three distinct near-miss rows, so a genuine early certification at lambda = 0.02 could not have been missed by construction",
+  "ok": true,
+  "planted_early_certification_detected": true,
+  "planted_r_ind": 6,
+  "planted_subset": [
+   "+x",
+   "-x",
+   "+y",
+   "-y",
+   "+z",
+   "-z"
+  ],
+  "zero_excess_r_ind": 0,
+  "zero_excess_rejected": true
+ },
+ "numerics": {
+  "basis_checksum": "af6551ee1921ce45e6d4f9d4d1827609d8f1e643fb3a21bbc762edd1abd586d5",
+  "basis_wall_s": 10.684765167010482,
+  "c1_wall_s": 52.585285457986174,
+  "c2_wall_s": 207.3774101669842,
+  "c3_wall_s": 275.42075883300276,
+  "chebyshev": {
+   "c2": {
+    "degree": 116,
+    "half_width": 54.54,
+    "matvecs": 116,
+    "tail_bound": 6.79738920572228e-20
+   }
+  },
+  "layout_wall_s": 3.030902917002095,
+  "machinery": {
+   "cheby_tail": 7.178318859899745e-18,
+   "entropy_bound": 0.0,
+   "hermiticity": 6.558642517973112e-14,
+   "negativity": 3.3381651702128138e-21,
+   "norm": 3.774758283725532e-15,
+   "symmetry": 3.2822633500018128e-12,
+   "t0_anchor": 0.0
+  },
+  "machinery_ok": true,
+  "numpy": "2.4.1",
+  "peak_rss_gib": 6.014892578125,
+  "python": "3.12.8",
+  "result_table_sha256": "8097d25845f236d210da0030fe5570dc4d4c00f03ba3dd4563d205d77c37c305",
+  "route": "exact proper-cubic invariant-sector reduction (orbit basis) + Chebyshev expansion of exp(-iHt); float64/complex128 (machinery AST-extracted from the Cycle 914 primary)",
+  "sector_dimension": 5605504,
+  "wall_s": 549.1578328609467
+ },
+ "pins": {
+  "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": {
+   "bytes": 49165,
+   "git_blob": "5dff1d8b1692099cd86b53959834b6bcb5865a71",
+   "sha256": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e"
+  },
+  "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md": {
+   "bytes": 6705,
+   "git_blob": "5f056aa69d1cc06dbfa2dc9ed6804df40c7b39fe",
+   "sha256": "74a0a4c0e40e78ec042824ba706389e53e8bde22443964388987557a1819552c"
+  },
+  "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md": {
+   "bytes": 9340,
+   "git_blob": "d5b36708949d06bf619b2452e8f2897468e51194",
+   "sha256": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad"
+  },
+  "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+   "bytes": 8846,
+   "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+  },
+  "logs/runner-cache/d3_bar_window_checkpoints/lam_0p02_observables.jsonl": {
+   "bytes": 1731398,
+   "git_blob": "6a3588d9a99efd6e704a1bff0127815995aa1fb4",
+   "sha256": "9bf9282d477daf43635d29647ea0757fefb6105b755519c515539b3e28be3177"
+  },
+  "outputs/d3_bar_commission_cycle914_receipt_2026_07_28.json": {
+   "bytes": 112360,
+   "git_blob": "cabb1bef15221b5fca61ffc7c50f8ec18452893d",
+   "sha256": "fba8a16ee811fa1729bc1cdb6988096193a7e14878e7a78380f4880120bf7223"
+  },
+  "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py": {
+   "bytes": 54983,
+   "git_blob": "e0639e0b5d1ebdd995c4c7ec3255f8daeeb4fe0c",
+   "sha256": "fc7344a06503f9c159ea732cb6f622a23e61196e370914943ffd9a468fd592e4"
+  }
+ },
+ "protocol": {
+  "H": "-sum_<ij> Z_i Z_j - lambda sum_i X_i",
+  "J": 1,
+  "N": 27,
+  "T_C_frozen": [
+   0.0,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   1.0,
+   1.1,
+   1.2,
+   1.5,
+   2.0,
+   5.0,
+   10.0
+  ],
+  "deadline_jt": 1.0,
+  "delta_memo_lambdas": [
+   0.02,
+   0.05,
+   0.1,
+   0.2
+  ],
+  "delta_protocol_hash": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad",
+  "deltas": [
+   0.05,
+   0.1,
+   0.2
+  ],
+  "fragment_descriptor_checksum": "02f954b71af4a834af11e66818989c14699a03ff4e52a4c07b3a7e5edf7588b5",
+  "geometry": "open-3x3x3",
+  "headline_delta": 0.1,
+  "parent_protocol_hash": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e",
+  "theta_floor": 0.2
+ },
+ "restriction_gates_vs_cycle914": {
+  "W_full_914": [
+   0.05,
+   0.1
+  ],
+  "W_full_value_for_value": true,
+  "boundary_bracket_value_for_value": true,
+  "check02_ordering_holds": true,
+  "check02_panel_recomputed": {
+   "0.05/center": {
+    "X": 5.750856553853949e-05,
+    "Y": 5.752054524193755e-05,
+    "Z": 1.1738886784068887e-06
+   },
+   "0.05/corner": {
+    "X": 4.0664696668612267e-05,
+    "Y": 4.068163676377264e-05,
+    "Z": 1.1738886784068887e-06
+   },
+   "0.05/edge": {
+    "X": 4.695554713627554e-05,
+    "Y": 4.697021845272052e-05,
+    "Z": 1.1738886784068887e-06
+   },
+   "0.05/face": {
+    "X": 5.2497897658703855e-05,
+    "Y": 5.251102049296924e-05,
+    "Z": 1.1738886784068887e-06
+   },
+   "0.1/center": {
+    "X": 5.740117316557602e-05,
+    "Y": 5.7448987562176285e-05,
+    "Z": 2.343393081546658e-06
+   },
+   "0.1/corner": {
+    "X": 4.058875879344209e-05,
+    "Y": 4.065635044524856e-05,
+    "Z": 2.343393081546658e-06
+   },
+   "0.1/edge": {
+    "X": 4.6867861630933164e-05,
+    "Y": 4.692640988815294e-05,
+    "Z": 2.343393081546658e-06
+   },
+   "0.1/face": {
+    "X": 5.239986228341036e-05,
+    "Y": 5.2452235971929854e-05,
+    "Z": 2.343393081546658e-06
+   },
+   "0.2/center": {
+    "X": 5.697754248160847e-05,
+    "Y": 5.716715213207484e-05,
+    "Z": 4.6521968625897585e-06
+   },
+   "0.2/corner": {
+    "X": 4.0289206664089935e-05,
+    "Y": 4.055691197897146e-05,
+    "Z": 4.6521968625897585e-06
+   },
+   "0.2/edge": {
+    "X": 4.652196862589758e-05,
+    "Y": 4.67539998339959e-05,
+    "Z": 4.6521968625897585e-06
+   },
+   "0.2/face": {
+    "X": 5.2013142147309736e-05,
+    "Y": 5.222078026690657e-05,
+    "Z": 4.6521968625897585e-06
+   }
+  },
+  "check02_panel_spot_verified": true,
+  "event_jt_observed": {
+   "0.05": 0.6,
+   "0.1": 0.7,
+   "0.2": null
+  },
+  "event_jt_value_for_value": true,
+  "labels_value_for_value": true,
+  "lam020_C55_above_gate": true,
+  "lam020_C55_observed": 0.060394807359658895,
+  "lam020_C55_value_for_value": true,
+  "median_value_for_value": true,
+  "ok": true,
+  "theta_star_value_for_value": true,
+  "verdicts_value_for_value": true
+ },
+ "runner": "scripts/frontier_cycle915_comparator_recovery_2026_07_28.py",
+ "schema": "frontier-cycle915-comparator-recovery-v1",
+ "verdict": {
+  "block": "C2-CERTIFIED",
+  "c2_outcome": "WINDOW-EXTENDS-BELOW-0.05",
+  "c3_persistence": {
+   "0.05": "DECAYS",
+   "0.1": "DECAYS"
+  },
+  "note": "outcome-neutral wiring: C2 lands certified-or-not and C3 lands persist-or-decay; neither is a machinery condition"
+ }
+}

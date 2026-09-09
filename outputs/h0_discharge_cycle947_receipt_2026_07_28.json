@@ -1,0 +1,285 @@
+{
+  "all_certificates_pass": true,
+  "audit": "unset",
+  "authority": "none",
+  "certificates": {
+    "P1_LANE_GRAMMAR": {
+      "detail": "three accepted, four refused by a fail-closed AST recognizer",
+      "pass": true
+    },
+    "P2_LANE_SEMANTICS": {
+      "detail": "all 16 two-word states and both lane perturbations",
+      "pass": true
+    },
+    "P3_FIXED_CHOICE_VS_DISTRIBUTION": {
+      "detail": "exact probabilities 1/4 and 3/4 from four equiprobable seeds",
+      "pass": true
+    },
+    "P4_SUPPORT_BOUNDARY": {
+      "detail": "mu=0 and mu=1 have singleton support; 1/4 and 3/4 have both",
+      "pass": true
+    },
+    "P5_GRAPH_IS_OVERAPPROXIMATION": {
+      "detail": "double-XOR cancellation plus a four-node depth control",
+      "pass": true
+    },
+    "P6_ORDER_MATTERS": {
+      "detail": "two CNOT orders, all four Boolean inputs",
+      "pass": true
+    },
+    "P7_SYMMETRY_SCOPE": {
+      "detail": "identity-rule implication counterexample and the supplied 3-cube proper-isometry subgroup",
+      "pass": true
+    },
+    "P8_DETERMINISM": {
+      "detail": "complete science payload recomputed in-process",
+      "pass": true
+    },
+    "P9_RUNTIME": {
+      "detail": "elapsed_s=0.002 budget_s=30",
+      "pass": true
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 947,
+  "formal_audit": false,
+  "headline": "Finite implications of lane-local compilation, with counterexamples separating trajectories from choice distributions, graph reachability from semantic dependence, gate multisets from ordered maps, and a supplied covariance subgroup from a full automorphism group.",
+  "historical_campaign_replayed": false,
+  "results": {
+    "causal_graph": {
+      "cancelling_program": [
+        "x ^= y",
+        "x ^= y"
+      ],
+      "depth_control": {
+        "depth_1": [
+          "c",
+          "d"
+        ],
+        "depth_2": [
+          "b",
+          "c",
+          "d"
+        ],
+        "depth_2_is_not_the_fixed_point": true,
+        "edges": [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "b",
+            "c"
+          ],
+          [
+            "c",
+            "d"
+          ]
+        ],
+        "fixed_point": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "final_x_equals_initial_x_on_all_four_states": true,
+      "final_x_is_semantically_independent_of_y": true,
+      "scope": "static reachability is a structural overapproximation; neither graph reachability nor a depth cap establishes a minimal semantic causal cone",
+      "static_ancestors_of_x": [
+        "x",
+        "y"
+      ],
+      "static_control_to_target_edges": [
+        [
+          "y",
+          "x"
+        ],
+        [
+          "y",
+          "x"
+        ]
+      ],
+      "truth_table": [
+        {
+          "final_x": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "final_x": 0,
+          "x": 0,
+          "y": 1
+        },
+        {
+          "final_x": 1,
+          "x": 1,
+          "y": 0
+        },
+        {
+          "final_x": 1,
+          "x": 1,
+          "y": 1
+        }
+      ],
+      "y_is_statically_reachable": true
+    },
+    "choice_law": {
+      "bernoulli_support_rows": {
+        "0": [
+          0
+        ],
+        "1": [
+          1
+        ],
+        "1/4": [
+          0,
+          1
+        ],
+        "3/4": [
+          0,
+          1
+        ]
+      },
+      "both_outcomes_supported_exactly_for_interior_examples": true,
+      "conditional_probability_rows": [
+        {
+          "neighbor_condition": 0,
+          "outputs": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "probability_y_equals_1": "1/4",
+          "uniform_seed_values": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "neighbor_condition": 1,
+          "outputs": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "probability_y_equals_1": "3/4",
+          "uniform_seed_values": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "deterministic_update": "y := b; b is an externally supplied bit",
+      "deterministic_update_has_no_neighbor_argument": true,
+      "probability_changes_with_neighbor": true,
+      "scope": "fixed-choice trajectory independence does not imply distribution independence; a distribution-level theorem needs a supplied choice law independent of the compared conditions; branch existence alone does not establish two-point support",
+      "trajectory_is_neighbor_independent_at_fixed_choice": true
+    },
+    "claim_boundary": {
+      "H0_discharge": false,
+      "external_choice_law_independence": "open and not supplied",
+      "formal_audit": false,
+      "full_symmetry_group": "not classified",
+      "minimal_semantic_causal_cone": "not established",
+      "one_site_domain_or_action_bridge": "open and not supplied",
+      "physical_site_identification": "open and not supplied",
+      "unique_successor": "not selected"
+    },
+    "claim_type": "bounded_theorem",
+    "lane_grammar": {
+      "accepted_examples": [
+        "c[1] ^= c[0]",
+        "c[2] ^= c[0] & c[1]",
+        "c[0] ^= (c[1] | 3) ^ c[2]"
+      ],
+      "accepted_wire_coupling_statement": "c[1] ^= c[0]",
+      "lane_1_remains_unchanged_in_that_witness": true,
+      "nonlocal_or_out_of_grammar_examples_refused": true,
+      "packed_vs_per_lane_exhaustive_two_wires_two_lanes": true,
+      "refused_examples": [
+        "c[1] ^= c[0] << 1",
+        "c[1] ^= c[0] + c[2]",
+        "c[1] = c[0]",
+        "c[1] ^= CHOICE(0)"
+      ],
+      "scope": "lane locality is a property of bit coordinates of non-negative packed words in this supplied grammar; it does not identify lanes as physical sites and it does not forbid wire-to-wire coupling inside one lane",
+      "single_lane_perturbations_never_leak_to_the_other_lane": true,
+      "supplied_grammar": "c[i] ^= E where E uses only c[j], integer literals, and the bitwise operators &, |, ^",
+      "valid_examples_accepted": true,
+      "wire_1_changes_when_wire_0_changes_inside_lane_0": true
+    },
+    "ordered_multiset": {
+      "composed_maps_differ": true,
+      "first_map": {
+        "00": [
+          0,
+          0
+        ],
+        "01": [
+          1,
+          1
+        ],
+        "10": [
+          0,
+          1
+        ],
+        "11": [
+          1,
+          0
+        ]
+      },
+      "first_order": [
+        "a_to_b",
+        "b_to_a"
+      ],
+      "multiset_invariant_under_wire_swap": true,
+      "number_of_inputs_with_different_outputs": 3,
+      "same_gate_multiset": true,
+      "scope": "multiset equality or involution invariance does not imply equality of scheduled maps; a semantic claim must bind the operation order",
+      "second_map": {
+        "00": [
+          0,
+          0
+        ],
+        "01": [
+          1,
+          0
+        ],
+        "10": [
+          1,
+          1
+        ],
+        "11": [
+          0,
+          1
+        ]
+      },
+      "second_order": [
+        "b_to_a",
+        "a_to_b"
+      ]
+    },
+    "symmetry": {
+      "identity_rule_commutes_with_one_site_flip_on_all_eight_states": true,
+      "implication_counterexample_scope": "the identity rule is a counterexample to the inference from a fixed covariant rule to a claimed exhaustive symmetry group; it is not asserted to satisfy every physical axiom",
+      "local_flip_is_not_the_uniform_three_site_flip": true,
+      "supplied_spatial_subgroup": {
+        "bare_transpositions_in_this_supplied_subgroup": 0,
+        "box_points": 27,
+        "box_preserving_affine_actions": 24,
+        "box_side": 3,
+        "proper_cubic_rotations": 24,
+        "scope": "this finite result concerns only translations composed with proper cubic rotations on the supplied box; comparing it with lane permutations additionally requires an explicit injective equivariant lane-to-point map"
+      }
+    }
+  },
+  "science_digest": "65a4722ebc3870c61fa22f3f7a02a8168222f822b9ed72d6b7307165643275ab",
+  "self_sha256": "595f4c292029e5776a8983ece4c337dbe7cfb4dd2b2e59f698a4e0039c08c59e"
+}

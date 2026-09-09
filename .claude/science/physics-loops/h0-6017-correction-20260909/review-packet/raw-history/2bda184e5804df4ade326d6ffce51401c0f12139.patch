@@ -1,0 +1,150 @@
+diff --git a/outputs/frontier_cycle947_h0_discharge_2026_07_28.log b/outputs/frontier_cycle947_h0_discharge_2026_07_28.log
+index 8fbeb9a444..d620923a53 100644
+--- a/outputs/frontier_cycle947_h0_discharge_2026_07_28.log
++++ b/outputs/frontier_cycle947_h0_discharge_2026_07_28.log
+@@ -1,5 +1,5 @@
+ cycle947 h0 discharge attempt -- primary runner
+-runner_sha256: 0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c
++runner_sha256: ea63c23346a6e4c6c88ac221d129c9399b21f6c48fc996602e700c86aad6284e
+ landed axiom sha256: 53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39
+ landed axiom git blob: 2f5fdd26898f62c17fcabc846761f7785c2eadb1
+ pins: PASS
+@@ -22,5 +22,5 @@ no-go: universal symmetry-faithfulness FALSE = True (famA=10, famB=7)
+ teeth: 10/10
+ firewall: floats=0, unfenced weights=0
+ science digest: 656621f3863e96c728d9976c8271bfd2a1a959fdf5b9392a2c40c8e07a12017a
+-elapsed: 24.29s
++elapsed: 24.459s
+ all certificates pass: True
+diff --git a/outputs/frontier_cycle947_h0_discharge_independent_check_2026_07_28.log b/outputs/frontier_cycle947_h0_discharge_independent_check_2026_07_28.log
+index 3b93dcb9c5..f9e101762a 100644
+--- a/outputs/frontier_cycle947_h0_discharge_independent_check_2026_07_28.log
++++ b/outputs/frontier_cycle947_h0_discharge_independent_check_2026_07_28.log
+@@ -20,6 +20,6 @@ checks: 17/17 SUPPORTED
+ mutation probes: 16/16
+ refutations raised: 2 (see receipt for status)
+ science digest: a5cb9c407ef04f38f86e7f8fcde4693f31c7415e27e9be8e7a3c002c7c250267
+-elapsed: 19.387s
++elapsed: 19.042s
+ OVERALL: SUPPORTED
+ all certificates pass: True
+diff --git a/outputs/h0_discharge_cycle947_receipt_2026_07_28.json b/outputs/h0_discharge_cycle947_receipt_2026_07_28.json
+index e1de9561d6..7eaef46d62 100644
+--- a/outputs/h0_discharge_cycle947_receipt_2026_07_28.json
++++ b/outputs/h0_discharge_cycle947_receipt_2026_07_28.json
+@@ -1540,20 +1540,20 @@
+     "I_RUNTIME": {
+       "budget_seconds": 1800,
+       "certificate": "I_RUNTIME",
+-      "elapsed_seconds": 24.29,
++      "elapsed_seconds": 24.459,
+       "pass": true,
+       "per_stage_seconds": {
+-        "H0a1": 1.357,
+-        "H0a2": 0.008,
++        "H0a1": 1.362,
++        "H0a2": 0.007,
+         "H0a3": 0.023,
+-        "H0b1": 3.697,
+-        "H0b2": 1.355,
+-        "H0c": 0.988,
+-        "H0d": 0.303,
+-        "NO_GO": 0.811,
+-        "double_run": 1.918,
+-        "setup": 13.563,
+-        "teeth": 0.214
++        "H0b1": 3.762,
++        "H0b2": 1.364,
++        "H0c": 0.983,
++        "H0d": 0.305,
++        "NO_GO": 0.818,
++        "double_run": 1.95,
++        "setup": 13.619,
++        "teeth": 0.213
+       }
+     }
+   },
+@@ -1562,7 +1562,7 @@
+     947
+   ],
+   "fraction_label": "bookkeeping fraction, not probability",
+-  "headline": "H0 DOES NOT DISCHARGE.  Four of the ten named clauses are DERIVED from compiler-native data (the lane fibration, its totality, the causal-cone containment, and sigma's fibre respect); five are RESIDUE with named import sentences (no native Z^3 embedding; NO dependence on any other site, which refutes the axiom's 'varies with' conjunct outright; no derivation that both menu items carry nonzero probability; no map into a domain with the axiom's one-site presentation; and descent, which is downstream of those).  Separately, H0's UNIVERSAL form is REFUTED by two independent families of symmetries of the compiled law that have no axiom-level counterpart, and the narrowed sigma-specific clause is stated.",
++  "headline": "H0 DOES NOT DISCHARGE.  Five of the ten named clauses are DERIVED from compiler-native data (the lane fibration, its totality, the causal-cone containment, the two-item menu cardinality, and sigma's fibre respect); five are RESIDUE with named import sentences (no native Z^3 embedding; NO dependence on any other site, which refutes the axiom's 'varies with' conjunct outright; no derivation that both menu items carry nonzero probability; no map into a domain with the axiom's one-site presentation; and descent, which is downstream of those).  Separately, H0's UNIVERSAL form is REFUTED by two independent families of symmetries of the compiled law that have no axiom-level counterpart, and the narrowed sigma-specific clause is stated.",
+   "provenance": {
+     "c946_never_imported_or_lifted": "the 946 runner's bytes are pinned so the reader knows exactly which text this block re-derives, and its module name is on the import BLOCKLIST.  Its structures (sigma, the splice, the certificate layers, the neighborhood formalizations) are RE-DERIVED here from the pinned 936 compiler and the pinned 719 kernel; nothing is lifted or imported from it.",
+     "lift_counts": {
+@@ -1612,5 +1612,5 @@
+     "worker": "Claude Opus 5 worker under supervisor spec (substitution disclosed); supervisor reviews line-by-line and authors the note."
+   },
+   "science_digest": "656621f3863e96c728d9976c8271bfd2a1a959fdf5b9392a2c40c8e07a12017a",
+-  "self_sha256": "0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c"
++  "self_sha256": "ea63c23346a6e4c6c88ac221d129c9399b21f6c48fc996602e700c86aad6284e"
+ }
+diff --git a/outputs/h0_discharge_independent_check_cycle947_receipt_2026_07_28.json b/outputs/h0_discharge_independent_check_cycle947_receipt_2026_07_28.json
+index 58dfbf38e9..7acc3537cd 100644
+--- a/outputs/h0_discharge_independent_check_cycle947_receipt_2026_07_28.json
++++ b/outputs/h0_discharge_independent_check_cycle947_receipt_2026_07_28.json
+@@ -22,7 +22,7 @@
+       "landed_axiom_sha256": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+       "landed_axiom_sha256_matches": true,
+       "pass": true,
+-      "primary_receipt_sha256": "151bab024bfc95cd4fdf1f188fa142e4b7172540dc6996af4998821b60095cdc",
++      "primary_receipt_sha256": "12e1c9a6a447058a98820d7d064730518dbcb100523f22688aa70a133631ceca",
+       "primary_runner_sha256": "0d0c22e9fd229630f54de9c829eb35e64e0f17381c5e1dc3d9bd1312498cb93c",
+       "rows": {
+         "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+@@ -31,9 +31,9 @@
+           "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+         },
+         "outputs/h0_discharge_cycle947_receipt_2026_07_28.json": {
+-          "bytes": 72357,
+-          "git_blob": "e1de9561d6b34af591e27353b53ffe7b709a1b18",
+-          "sha256": "151bab024bfc95cd4fdf1f188fa142e4b7172540dc6996af4998821b60095cdc"
++          "bytes": 72358,
++          "git_blob": "ff4be87c67bf5ceccb27504aeb6f8991d779bccc",
++          "sha256": "12e1c9a6a447058a98820d7d064730518dbcb100523f22688aa70a133631ceca"
+         },
+         "outputs/mirror_kernel_cycle946_receipt_2026_07_28.json": {
+           "bytes": 95277,
+@@ -723,15 +723,15 @@
+     "I_RUNTIME": {
+       "budget_seconds": 1800,
+       "certificate": "I_RUNTIME",
+-      "elapsed_seconds": 19.387,
++      "elapsed_seconds": 19.042,
+       "pass": true,
+       "per_stage_seconds": {
+-        "cones": 2.14,
+-        "nogo": 0.543,
+-        "scalar": 0.288,
+-        "setup": 13.745,
+-        "teeth": 0.223,
+-        "variation": 1.349
++        "cones": 2.108,
++        "nogo": 0.54,
++        "scalar": 0.215,
++        "setup": 13.556,
++        "teeth": 0.22,
++        "variation": 1.319
+       }
+     }
+   },
+diff --git a/scripts/frontier_cycle947_h0_discharge_2026_07_28.py b/scripts/frontier_cycle947_h0_discharge_2026_07_28.py
+index 54b25a4902..fbd1b7a178 100644
+--- a/scripts/frontier_cycle947_h0_discharge_2026_07_28.py
++++ b/scripts/frontier_cycle947_h0_discharge_2026_07_28.py
+@@ -2181,10 +2181,11 @@ def main() -> int:
+         "authority": "none",
+         "audit": "unset",
+         "headline":
+-            "H0 DOES NOT DISCHARGE.  Four of the ten named clauses are "
++            "H0 DOES NOT DISCHARGE.  Five of the ten named clauses are "
+             "DERIVED from compiler-native data (the lane fibration, its "
+-            "totality, the causal-cone containment, and sigma's fibre "
+-            "respect); five are RESIDUE with named import sentences (no "
++            "totality, the causal-cone containment, the two-item menu "
++            "cardinality, and sigma's fibre respect); five are RESIDUE with "
++            "named import sentences (no "
+             "native Z^3 embedding; NO dependence on any other site, which "
+             "refutes the axiom's 'varies with' conjunct outright; no "
+             "derivation that both menu items carry nonzero probability; no "

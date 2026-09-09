@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner   : frontier_cycle937_spider_extension_2026_07_28.py
+cycle    : 937   block: blockM15   campaign: toe-time-expansion-20260802
+question : extend the collective reduction OFF the star -- isomorphic-arm spiders
+
+THE PREPARATION, QUOTED FROM THE MEMO BYTES
+  prep_center  center: `n_center=(1,0,0)`, the `+X` state
+  prep_face    every axial face: `n_face=(1,0,0)`, the `+X` state
+  prep_edge    every edge: `n_edge=(0,0,1)`, the `+Z` state
+  prep_corner  every corner: `n_corner=(0,0,1)`, the `+Z` state
+  as implemented (all pinned runners): prep_state(n, {S} | recording)
+  ON A SPIDER: the arm ROOT (depth 1, the recording site) is +X; every arm
+  site at depth >= 2 is +Z.  Single-arm vector v = |+>_root (x) |0>^(L-1).
+
+RESTRICTION GATES (all demanded at deviation EXACTLY zero)
+  927 saturation tables : 90 rows, max deviation 0.0e+00
+  933 star cells s(k)   : 44 values, full-space 2.6e-15 (933 grade 1.2e-14), reduced 7.3e-16
+  931 spider identity   : 10 rows, max deviation 0.0e+00
+  frozen constants      : 21/21, eight-way quote-identical
+
+Q1  THE SPIDER REDUCTION
+  dimensions           : 14 cells tabulated (best compression 49x at L2)
+  Sym^d leakage        : 1.50e-14 (max over 28 full-space cells)
+  reduced vs full s(k) : 7.29e-14   C_ab: 1.99e-13   over 28 cells
+  symbolic 2nd quant.  : all entries identical as polynomials in lambda on 4 cases (1400 nonzero entries compared)
+
+  932 window edges     : full-vs-reduced 2.33e-12 ; vs pinned 932 2.33e-12 (3 cells)
+
+Q2  THE 927 SATURATION, DERIVED
+  L-ZERO lemma (lambda_arm=0): max |s(k;arm)-s(k;star)| = 3.35e-14 over 132 cells
+    control with the arm field ON: 4.86e-06  (the comparison is not vacuous)
+  DEPTH LADDER: 10 steps (9 resolved at double precision); every RESOLVED winning exponent = 2*depth: True
+    claw_d2   L1 -> L2       depth 2  predicted lambda^4   winner p=4_log   (spread 0.003, free slope 3.74, n=15)
+    claw_d2   L2 -> claw3    depth 2  predicted lambda^4   winner p=4_log   (spread 0.026, free slope 3.73, n=15)
+    claw_d2   claw3 -> claw4 depth 2  predicted lambda^4   winner p=4_log   (spread 0.018, free slope 3.73, n=15)
+    path_d2   L1 -> L2       depth 2  predicted lambda^4   winner p=4_log   (spread 0.003, free slope 3.74, n=15)
+    path_d2   L2 -> L3       depth 3  predicted lambda^6   winner p=6_log   (spread 0.007, free slope 5.75, n=12)
+    path_d2   L3 -> L4       depth 4  predicted lambda^8   winner p=8_pure  (spread 0.031, free slope 8.08, n=3)  [UNDER-RESOLVED, not claimed]
+    path_d3   L1 -> L2       depth 2  predicted lambda^4   winner p=4_log   (spread 0.025, free slope 3.72, n=15)
+    path_d3   L2 -> L3       depth 3  predicted lambda^6   winner p=6_pure  (spread 0.188, free slope 5.92, n=11)
+    path_d4   L1 -> L2       depth 2  predicted lambda^4   winner p=4_log   (spread 0.006, free slope 3.77, n=15)
+    path_d4   L2 -> L3       depth 3  predicted lambda^6   winner p=6_log   (spread 0.006, free slope 5.76, n=12)
+  LIGHT-CONE candidate : scaling collapse REFUTED (3.3 orders at fixed lambda*t)
+                         saturation BREAKS by Jt~25 (|d3/d2| 7.85e-04 -> 9.76e-01)
+  cashed vs 927        : saturation lengths all predicted: True (max |delta_2 - pinned spread| = 4.18e-08)
+
+Q3  THE DERIVED CORE'S NEW BOUNDARY
+  pinned cells moved to DERIVED: 6  (G1, G2, G3a, G3b, H1, H2)
+  still resists: G4, G5, G6, H3, H4
+  G1 CLOSURE: full-vs-reduced 2.12e-13 over 5 fields -- CLOSED
+  L-ZERO past isomorphic arms: max deviation 4.30e-15 over 4 mixed spiders
+
+SEAL 33c61f67b211a103  (6 cells, all off every measured grid)
+  S1 d=5 arm=L2 lambda=0.0825 : s(k) dev 9.01e-15  C_ab dev 1.03e-14  gate under  VERIFIED
+  S2 d=3 arm=L3 lambda=0.0825 : s(k) dev 2.91e-15  C_ab dev 5.64e-14  gate under  VERIFIED
+  S3 d=4 arm=claw3 lambda=0.0825 : s(k) dev 5.38e-14  C_ab dev 6.19e-14  gate under  VERIFIED
+  S4 d=2 arm=L4 lambda=0.1125 : s(k) dev 5.72e-17  C_ab dev 1.62e-13  gate OVER  VERIFIED
+  S5 d=7 arm=L2 lambda=0.1 : s(k) dev 6.36e-14  C_ab dev 5.81e-15  gate under  VERIFIED
+  S6 d=6 arm=L2 lambda=0.1125 : s(k) dev 6.51e-14  C_ab dev 6.43e-15  gate under  VERIFIED
+
+TEETH  15/15 fire
+  T10_t0_anchor                                        FIRES
+  T11_zero_field_anchor                                FIRES
+  T12_pointer_field_is_still_the_source_off_the_star   FIRES
+  T13_seal_is_holdout_free_and_tamper_evident          FIRES
+  T14_reduced_hamiltonian_is_load_bearing              FIRES
+  T15_depth_ladder_fit_discriminates                   FIRES
+  T1_planted_leakage_is_caught                         FIRES
+  T2_planted_saturation_breaker_flips_Q2               FIRES
+  T3_unsigned_underflow_guard                          FIRES
+  T4_euler_guard_on_C_ab                               FIRES
+  T5_two_disjoint_routes                               FIRES
+  T6_determinism_in_process_repeat                     FIRES
+  T7_tampered_frozen_constant_is_caught                FIRES
+  T8_tampered_pin_is_caught                            FIRES
+  T9_tampered_vendored_blob_is_caught                  FIRES
+
+VERDICT
+  The collective reduction extends OFF THE STAR exactly.  For any spider with d pairwise-isomorphic arms the frozen preparation -- non-uniform along the arm, +X on the root and +Z below it -- is arm-INTRINSIC, so arm permutations remain symmetries and the evolved state lives in C^2 (x) Sym^d(H_arm) with dim 2*C(d+2^L-1,d): measured leakage 1.5e-14 on the full-space route, with a planted one-arm longitudinal field reading 7.5e-02 so the test can see a violation.  The reduced Hamiltonian is the second quantisation of two one-arm operators, verified SYMBOLICALLY in lambda ENTRY BY ENTRY against the explicitly symmetrised full-space Hamiltonian on four cases, and the Schmidt matrix is the MULTI-INDEX Hankel matrix T^(k)_{p,q} = sqrt(M_k(p)M_(d-k)(q)) f(p+q) -- 933's binomial Hankel form is its L = 1 case.  Two structurally disjoint routes agree on s(k) at 7.3e-14 and on C_ab at 2.0e-13 over 28 cells, and the reduced route reproduces the whole frozen certification predicate: the vendored 932 window edges for G1 come out of the reduced route and the full-space route at 2.3e-12 of each other.  927's saturation is DERIVED and the supervisor's light-cone candidate is not what carries it: at lambda_arm = 0 the arm-length effect is EXACTLY zero at every time (a two-sided diagonal unitary on the Hankel matrix -- proved and verified at 3.4e-14), and with the arm field on, the site at DEPTH m enters at order lambda^(2m), decisively demonstrated by the claw family whose added sites all sit at depth 2 and all score lambda^4 against the path family's 4, 6, 8.  The candidate's own scaling collapse fails by 3.3 orders at fixed lambda*t, and the saturation breaks entirely by Jt ~ 25 -- so saturation is a property of the certification row, stated with that scope.  The law predicts 927's own saturation-length column at every field.  Finally the 917 G1 exception cell closes: chain9 IS a d=2 spider with path arms of 4, and it is now computed from the reduction alone at all five fields.
+
+runtime 354.84 s (limit 900 s)
+timing-free digest 6dcbc97d820ed8314dcbac5d19bcadd01889f5de882c9531be8e75aa3ed69670
+===== runner cache v1 =====

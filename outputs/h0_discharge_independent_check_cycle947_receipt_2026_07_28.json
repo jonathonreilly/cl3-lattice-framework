@@ -1,0 +1,68 @@
+{
+  "all_certificates_pass": true,
+  "audit": "unset",
+  "authority": "none",
+  "certificates": {
+    "R0B_CLAIMS_INTERFACE": {
+      "detail": "parsed=True",
+      "pass": true
+    },
+    "R0_PINNED_PRIMARY_AND_CACHE": {
+      "detail": "scripts/frontier_cycle947_h0_discharge_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle947_h0_discharge_2026_07_28.txt:MATCH",
+      "pass": true
+    },
+    "R1_BITWISE_COORDINATE_ROUTE": {
+      "detail": "coordinate_rows=96 within_lane_coupling=True cross_lane_leak=False",
+      "pass": true
+    },
+    "R2_CHOICE_DISTRIBUTION_ROUTE": {
+      "detail": "counts={0: 1, 1: 3} probabilities={0: '1/4', 1: '3/4'} fixed_choice_rows=8",
+      "pass": true
+    },
+    "R3_GRAPH_OVERAPPROXIMATION_GF2": {
+      "detail": "structural_y_to_x=True product=((1, 0), (0, 1)) states=4",
+      "pass": true
+    },
+    "R4_ORDERED_MAP_GF2": {
+      "detail": "first=((0, 1), (1, 1)) second=((1, 1), (1, 0)) differing_inputs=3",
+      "pass": true
+    },
+    "R5_LOCAL_SYMMETRY_PERMUTATION": {
+      "detail": "states=8 commutes=True local_not_uniform=True",
+      "pass": true
+    },
+    "R6_PROPER_CUBE_GENERATOR_CLOSURE": {
+      "detail": "rotations=24 actions=24 all_det_plus_one=True bare_transpositions=0",
+      "pass": true
+    },
+    "R7_PRIMARY_INTERFACE_AND_BOUNDARY": {
+      "detail": "selected_claims_match=True digest_shape=True boundary_markers=True",
+      "pass": true
+    },
+    "R8_RUNTIME": {
+      "detail": "elapsed_s=0.002 budget_s=30",
+      "pass": true
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 947,
+  "formal_audit": false,
+  "historical_campaign_replayed": false,
+  "input_paths": [
+    "scripts/frontier_cycle947_h0_discharge_2026_07_28.py",
+    "logs/runner-cache/frontier_cycle947_h0_discharge_2026_07_28.txt"
+  ],
+  "input_sha256": {
+    "logs/runner-cache/frontier_cycle947_h0_discharge_2026_07_28.txt": "9498ce8fc9ccd13e70298586dd2d88cb353bc4561ebbaa643b410396a5ef54ba",
+    "scripts/frontier_cycle947_h0_discharge_2026_07_28.py": "595f4c292029e5776a8983ece4c337dbe7cfb4dd2b2e59f698a4e0039c08c59e"
+  },
+  "role": "independent_checker",
+  "routes": {
+    "causality_and_order": "GF(2) matrix products",
+    "choice_law": "direct conditional counting",
+    "lane": "exhaustive coordinate identities for &, |, ^",
+    "local_symmetry": "permutation composition",
+    "spatial_subgroup": "quarter-turn generator closure"
+  },
+  "verdict": "PRIMARY_SURVIVES_THIS_CHECK"
+}

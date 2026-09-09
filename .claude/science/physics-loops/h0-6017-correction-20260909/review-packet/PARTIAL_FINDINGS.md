@@ -1,0 +1,7 @@
+# #6017 partial original findings — not a final verdict
+
+H1: Bitwise lane fibration does not force physical lattice sites to be census lanes. The pinned 936 choice_support_words establishes world-versus-layout indexing and duplicate consistency. 947 promotes this to the only physical decomposition, despite its own missing embedding/domain bridges. Even c[1] ^= c[0] is lane diagonal while coupling two wire-local components within each experiment. Preserve native lane noncommunication; restrict the Admissibility variation obstruction to an explicitly supplied lane-as-site interpretation. A required cross-lane-gate successor and “no reading realizes Admissibility” do not follow.
+
+H2: A fixed covariant rule need not have only site-uniform internal symmetries or spatial isometries. The bare-transposition search concerns the declared proper-isometry subgroup under an assumed injective lane/site identification. Its absence cannot exclude the entire symmetry group of an axiom-level rule. Preserve finite automorphism/isometry witnesses with that conditional target group; withdraw the universal H0 refutation unless its stronger faithful equivariant bridge assumptions are explicit.
+
+Full original note read; raw six-commit boundary/eight endpoints/twelve intermediate bodies verified. Actual pinned936 world-index routine and 947 whitelist/site-map/no-go critical arguments read. Remaining clauses, actual symmetry gates, historical changes and decisive controls are pending. No original runner executed.
