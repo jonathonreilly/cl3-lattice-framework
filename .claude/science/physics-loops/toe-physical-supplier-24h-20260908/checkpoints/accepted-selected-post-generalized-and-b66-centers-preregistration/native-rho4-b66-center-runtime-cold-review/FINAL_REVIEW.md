@@ -1,0 +1,9 @@
+# Final affected center worker and full root review
+
+PASS: worker7cc20e175ea8120c162e9d6641f221e7a6c9d288e7cd4edb7c340730cd2c219c and rootb247599a3ec1059e6d80aab4a8e93688b7f90172a7cf313f90d86b05fedb08a3. Initial671e/670e findings preserved. Read all changed worker/binder/dispatcher code and full new root monitor/schema, including final provenance and STARTED/time fixes. Root local pins independently match. No actual input, centers, moments or saved calculations loaded.
+
+Worker now saves CURRENT before every node, flushes each center record, validates literal integer RSS, and attempts full final immutable rehash on failures while retaining the original exception. Mathematical core76575 unchanged, prior d2d948 proof review reused.
+
+Root now streams each old radius file alongside new centers, compares every radius with the authenticated old row, checks exact accepted pole/A/Aprime inputs, and matches reconstructed total radius to the accepted width budget. These close the earlier self-consistency-only provenance gap. Independent multinomial moments and explicit polynomial J/Jprime implement the same40-term tails without replaying node-center formulas; directed Machin/final rounding and all66 flags agree with the worker contract. Exact STARTED authorization, finite positive PARTIAL timing, full output membership and source/worker directory membership are enforced.
+
+Monitor applies120/119.5/119 and384MiB to worker plus root; schema progress checks root high-water RSS, and final pins are attempted on success/failure. Whole-shell reconciliation remains external, explicitly pending. Nine fabricated full-shape source-binding controls and five timing adverses were read as synthetic evidence with mocked native moments, not native validation; no unchanged tests repeated. No remaining source blocker identified. Full independent node-center replay remains a separate future obligation, honestly stated.

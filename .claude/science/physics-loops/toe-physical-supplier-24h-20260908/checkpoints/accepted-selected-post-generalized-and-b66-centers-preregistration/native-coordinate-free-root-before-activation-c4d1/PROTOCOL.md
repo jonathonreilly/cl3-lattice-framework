@@ -1,0 +1,7 @@
+# Generalized leakage prospective monitor
+
+NOTREADY. One root plus one worker,180s inclusive external budget,179.5s root guard,179s worker,384MiB sampled whole tree. No retry. Exact selected POST and final independent source review pending. Root validates all saved serial stage files and final verdict/event matches, not independent matrix arithmetic. Native output fixed prospective path, exclusive root marker. Full input hash checks before and after; only current worker process group cleanup. Worker scalar decimal cap20000 covers65536bit components. Existing unproved memory/time fit caveat remains:20.4million summands, potentially220MiB matrix payload plus allocator/index overhead.
+
+Retention repair authored by independent runtime reviewer after source review: full deterministic acquisition/stage schedule, all matrix shapes/4096-bit ordered endpoints, two impurity tags, e<1 and false entrywise-C scope. Valid Refused prefixes retain exact prior current and terminal refusal. This is output retention/schema validation, not independent arithmetic. Whole729 root preserved; worker908b unchanged. Six full five-orbit synthetic/adverse scenarios retained outside root. Independent Zeno review required before activation.
+
+Final guards: root ru_maxrss checked after schema and in finally, incorporated into receipt peak; final full source/input pins run on success and failure, preserving the first failure. This is post hoc peak rejection for schema, not sampled child-tree supervision during that phase. Whole1c555 retained.

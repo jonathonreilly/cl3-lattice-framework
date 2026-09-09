@@ -1,0 +1,13 @@
+# Independent mathematical review
+
+The exact Schur complement is L=D+JG^-1J, with a plus sign because (KS)*S=−J. This is B*B for B=(I−P)KS. The generalized Rayleigh quotient gives the squared operator leakage on the same selected range, independent of orthonormal gauge. The initial frame/rank and physical data premises are explicit; no arbitrary interval matrix is substituted as the exact physical Gram.
+
+For exact candidate T, H=T*GT close to I with e<1 proves invertibility and positivity. A=T*JT remains real skew, C=T*DT symmetric, and N=C+AH^-1A=T*LT is PSD. Exact symmetric inverse proposal X satisfies H^-1−X=H^-1(I−HX), giving epsilon=r/(1−e). The matrix error q=z+b²epsilon is valid when z bounds the full physical and arithmetic enclosure of C+AXA and b bounds the true A norm. Uncertain input correlations are not assumed favorable. A certified norm bound on N0 plus q divided by1−e yields the sufficient unchanged leakage target. The nonnegative maximum is justified by exact PSD, not an interval-pivot clipping rule.
+
+The proposed one-vector lower bound is valid with a positive upper denominator. It can rule out only this trial subspace's target, not the native model. Real-skew signs, the N contraction and a true generalized quotient were verified independently using an exact three-dimensional skew generator and two nonorthogonal rational seeds. Perturbed inverse proposals verified the q term on the same toy. Sixteen exact predicates passed; no original Gram, history or native inputs were read.
+
+The same projector has the same leakage for the historical ordered frame, so a coordinate-free leakage certificate can bypass its entrywise coefficient interface for this scalar purpose. It does not certify source projections, external state coordinates, compressed-generator errors or Fock alignment. A new computational gauge must transform all those objects consistently. The old coefficient gate is not relabeled as passed.
+
+Source acquisition is finite with full U principal data (at most104 labels and5460 symmetric entries per orbit at24 pairs); its cost/bit accuracy remains unmeasured. Existing3q DATA suffices for action of ORIGINAL-domain vectors only. Gamma may be commuted through the free generator, not the impurity. New p=Kq or nu data would be needed for a different trial-domain proposal; no such domain extension is made here.
+
+This reviewer authored related selected-principal and earlier sparse-bound mathematical work. The coordinate-free proof itself is Primary-authored; the finite controls here use a separately chosen explicit skew matrix rather than the author's test path. The code implementation/runtime are outside this proof review.

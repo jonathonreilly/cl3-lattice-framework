@@ -1,0 +1,5 @@
+# Center runtime671e source review
+
+Full core/binder/worker/dispatcher source read. Reuse unchanged primitive76575 math PASS d2d948; no actual catalog, moments, centers, pole radii or saved arithmetic loaded. Arithmetic integration agrees with the reviewed midpoint-coefficient ledger: exact fixed-grid sums;67panels per66poles;114972 center pairs;40-term high and one-sided low centers; accepted node cumulative radii plus low/high/rem/2/quad/reserve; actual directed pi and final2e-28/2e-27 gates. Pending per-pole interval is retained before target classification, and false target remains INDETERMINATE.
+
+Before activation resolve three narrow source issues: final immutable input rehash currently occurs only on success, not a failure-final path; per-node current/rounded center persistence is buffered until26-node panel despite stronger every-node wording; accepted RSS fields in binder allow float instead of strict integers. Implementer notified. These findings do not change the primitive proof. No physical run or source edits by reviewer.
