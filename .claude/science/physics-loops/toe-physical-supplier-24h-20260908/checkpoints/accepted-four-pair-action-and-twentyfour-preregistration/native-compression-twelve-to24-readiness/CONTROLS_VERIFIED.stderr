@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+  File "/private/tmp/toe-24h-probes-20260908/native-compression-twelve-to24-design/check.py", line 12, in <module>
+    r=pivot.run(entry,lab,events.append,native=False,max_pairs=13,resume=history,initial_checkpoint=cp)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-compression-twelve-to24-design/pivot.py", line 50, in run
+    if len(h[key])!=n or any(len(x)!=2 or any(type(t)is not int for t in x) or x[0]>x[1] for x in h[key]):raise ValueError('resume interval rows')
+                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: resume interval rows

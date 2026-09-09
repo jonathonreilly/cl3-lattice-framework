@@ -1,0 +1,11 @@
+# Scalable sufficient-bound implementation — PASS, source only
+
+Frozen2939877775fa9c8bb0c808a592228ae3b0a629f1abc9634f882fbcb65565507f. All source-freeze bytes match. Full core, extracted coefficient recurrence, original a29 delta, protocol and controls inspected. Reviewer authored the663f analytical bound; Zeno independently implemented this code. This is implementation review with explicit shared mathematical provenance, not independent proof authorship.
+
+The coefficient recurrence keeps all original positive-pivot,320-bit endpoint, beta/C l1 and normalized width gates; only history cap grows4→24 and unrelated original action code is omitted. Core separately rejects bool/Gamma malformed support. Ideal physical paired C and exact matched family remain caller premises. Shape checks do not establish them.
+
+Raw u are correctly half-diagonal sums and Gamma duplicates. Exactly two fixed candidates are implemented: zero and dominant absolute midpoint coefficient row, lexical tie, Lambda midpoint rounded DOWN2^-16. The chosen shift is fixed dyadic; full C/lam intervals are used in X, preserving correlations by enclosure. a1 only is claimed. M_RQ/M_QQ produces A and GQ; true PSD and symmetry intersections reject inconsistent negative uppers, and raw evidence is emitted before gates. Source free Gamma factors and untransformed rank-two correction signs agree with663f. Trace sums all64 cross terms per column, uses positive upper sqrt and adds a1 upper. Taking min of two independently valid a bounds is legitimate. No dense option or a2 silently appears.
+
+10 independent tiny predicates passed in a different formal xA/Gamma-xA fixture: source Frobenius² exactly2,52 unique callbacks, both fixed candidates, and an inconsistent negative Q diagonal is rejected. No actual inputs, native histories, C, Gram or index calls. These checks support arithmetic/sign/control claims only.
+
+Counts804maximum callbacks/orbit and230400 main A/G/source summands acrossfive agree; coefficient generation, free norms/roots/Y and file I/O are explicitly additional. Failure is an inconclusive sufficient upper bound, not native no-go. Future runtime must persist callback/failure evidence and authenticate original history/DATA/source closures. No implementation blocker found; no cost/launch/physical target PASS granted.
