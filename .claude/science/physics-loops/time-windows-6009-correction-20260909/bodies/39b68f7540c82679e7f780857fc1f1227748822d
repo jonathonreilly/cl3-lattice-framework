@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle887_window_freedom_independent_check_2026_07_28.py
+runner_sha256: ac111921258ca842ed0c4d5fb4331a7abdbfb13c518ef90b466675872bb90ce5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 30.49
+status: ok
+----- stdout -----
+CYCLE 887 INDEPENDENT CHECK -- WINDOW FREEDOM AND SELECTION
+
+[PASS] A_PINS
+    finding: The primary is 70 functions over stdlib only (True); its receipt's self digest matches the file on disk (True); the Cycle-885 artifacts are pinned at the digests the block spec named.
+
+[PASS] B_FAMILY
+    finding: Rebuilt independently and by AST from the pinned 885 primary: identical site-for-site (True).  Every 885 receipt number about this family is reproduced by MY pull-back harness (True), including the 24 permanence failures that refuted the boundary shell.
+
+[PASS] C_GROUP_AND_ORBITS
+    finding: The 24-element group and the orbit decomposition are rebuilt by completely different routes and agree: 4 orbits inside [-1,1]^3, 10 inside [-2,2]^3, 21 inside [-3,3]^3, giving 15 / 1023 / 2097151 nonempty rotation-invariant structuring sets.  The primary's headline sizes are reproduced (True).
+
+[PASS] D_SUFFICIENCY
+    finding: Sufficiency and injectivity both survive an independent harness: 15/15 radius-1 structuring sets admissible (True), and all 1023 radius-2 structuring sets give 1023 distinct windows on the lone-record configuration (True).
+
+[PASS] E_STRUCTURE_BOUNDARY
+    finding: The primary's non-closure result is not merely confirmed, it is UNDER-STATED.  Every one of the 7 escapes it listed is reproduced through an independent harness, and 5 further admissible classes outside the fixed-S family are found here: NEW_closing_ball1, NEW_rank2_coverage, NEW_rank3_coverage, NEW_bitcount_keyed, NEW_diameter_keyed.  Two of them are whole infinite families the primary's taxonomy does not name -- morphological CLOSINGS, and RANK/THRESHOLD filters W_t(R) = {x : |(x + B) n supp(R)| >= t} for every t >= 1, of which the primary's dilations are only the t = 1 member.  Any reading of the primary as a closure claim is therefore REFUTED; its own stated verdict (non-closure) stands and is strengthened.
+
+[PASS] F_CONTAINMENT
+    finding: Containment is independently REFUTED under REQ1-REQ5 alone.  Not by one witness but by a whole family: all 511 rotation-invariant structuring sets inside the radius-2 box that omit the origin are admissible by sufficiency and give a lone record a window that misses its own site (511/511).  The primary's separate claim -- that the byte-quoted readout-additivity sentence restores containment -- also survives: the omitting witness breaks additivity on 16/23 decompositions and the containing inflation breaks it on 0.
+
+[PASS] G_QUOTE_FIDELITY
+    finding: All 7 selector groundings are re-located byte-exactly at the offsets the primary recorded.  On fidelity the primary is right on both of the load-bearing calls: the count-once sentence contains neither 'window' nor 'detector' and cannot forbid record-free window sites, so it does NOT derive k = 0; the readout sentence does contain both 'additive' and 'pairwise-disjoint', so the containment derivation is quoting what it computes.  An independent minimality grep with a different pattern list finds 0 selection-like hits, confirming the absence.
+
+[PASS] H_FRESH_CONFIGS
+    finding: Every load-bearing claim transfers to 8 configurations the primary never used (0 overlap).  Sufficiency: all 15 radius-1 structuring sets still admissible (True).  Non-closure: 11 classes still escape.  Containment: supp (+) N6 still admissible and contains the support on only 3/8, disjoint on 3.  Annular coarseness: 1023 distinct set behaviours collapse to 220 annular readings (the primary's family gave 1023 -> 113); the RATIO differs with the family, the strict-coarseness CLAIM does not.  11 maps remain readout-indistinguishable.  All impostors still refused (True).  ONE class is FAMILY-DEPENDENT and is reported rather than absorbed: ['NEW_closing_ball1'] escapes the fixed-S family on the 12-configuration family but coincides with a fixed-S map on all 8 fresh ones -- morphological closing only separates from a dilation when a configuration has a concavity the structuring element can bridge, and the fresh family happens to contain none.  The class is real; the WITNESS is not universal, which is a limit on how a single family can certify a counterexample class.
+
+[PASS] T_TEETH
+    finding: 6/6 teeth bite: tampered pin, dropped configuration, hardcoded survivor list, leaked (capped) count, skipped attack, and tampered quote needle are each detected.
+
+[PASS] V_VERDICT
+
+---- CLAIM SHEET ----
+  CONFIRMED                  primary receipt is the receipt of THIS primary file
+      receipt self_sha256 vs recomputed: True
+  CONFIRMED                  primary imports stdlib only, no framework code
+      imports=['__future__', 'ast', 'fractions', 'hashlib', 'importlib', 'itertools', 'json', 'os', 'pathlib', 're', 'sys', 'time']
+  CONFIRMED                  Cycle-887 uses the same family Cycle 885 used
+      site-for-site identical=True; 885 receipt numbers reproduced=True
+  CONFIRMED                  orbit counts that size the freedom (15 / 1023 / 2097151)
+      group rebuilt as the closure of a 90-degree z rotation and a 120-degree body-diagonal rotation; orbits found by stabiliser growth
+  CONFIRMED                  P1 sufficiency: every rotation-invariant S is admissible
+      all 15 radius-1 structuring sets rerun through the pull-back harness
+  CONFIRMED                  P2 injectivity: distinct S give distinct window maps
+      W_S(lone record) = S verified on all 1023 radius-2 structuring sets, all images distinct
+  CONFIRMED AND STRENGTHENED P3 non-closure: escapes outside the fixed-S family
+      all 7 escapes the primary listed are reproduced (7), and 5 FURTHER admissible non-fixed-S classes are found that the primary never built: ['NEW_closing_ball1', 'NEW_rank2_coverage', 'NEW_rank3_coverage', 'NEW_bitcount_keyed', 'NEW_diameter_keyed']
+  CONFIRMED                  Matheron equivalence (union-additive == fixed-S) on the catalogue
+      union-additive=['mink_N6', 'mink_S0', 'mink_ball1', 'mink_ball2']; fixed-S=['mink_N6', 'mink_S0', 'mink_ball1', 'mink_ball2']
+  CONFIRMED                  P5a containment NOT forced by REQ1-REQ5
+      supp (+) N6 admissible=True, contains support on 8/12, disjoint on 2; and 511 of 511 radius-2 structuring sets WITHOUT the origin give a lone record a window missing its own site
+  CONFIRMED                  P5b readout-additivity restores containment
+      supp (+) N6 violates readout additivity on 16/23 decompositions while supp (+) ball1 violates 0/23
+  CONFIRMED                  (1) count-once quote does NOT forbid record-free window sites
+      the located sentence contains neither 'window' nor 'detector'; it bounds record MULTIPLICITY at a site and says nothing about sites carrying zero records
+  CONFIRMED                  (1) additivity quote DOES state what the primary computes from it
+      the located sentence contains both 'additive' and 'pairwise-disjoint', which is exactly the predicate the primary computes
+  CONFIRMED                  (1) minimality is absent as a SELECTION principle
+      an independent pattern list over the three pinned texts finds 4 raw hits and 0 that co-occur with window/extent language
+  CONFIRMED                  (4) every claim recomputed on FRESH configurations
+      8 fresh configurations, 0 shared with the primary's family: sufficiency holds (True); 11 classes still escape the fixed-S family; containment still fails (3/8); the annular chart is still strictly coarser (1023 sets -> 220 readings); all impostors still refused (True)
+
+---- TEETH ----
+  BIT  tampered_pin  (exit_if_uncaught=1)
+      one byte of the pinned 885 primary flipped in memory; the digest gate must reject it
+  BIT  dropped_config  (exit_if_uncaught=1)
+      one configuration removed; the family digest and size must both move
+  BIT  hardcoded_survivor  (exit_if_uncaught=1)
+      a hardcoded one-element survivor list is compared against the computed 11-element one and must differ
+  BIT  leaked_count  (exit_if_uncaught=1)
+      the exhibit list holds 5 entries while the complete failure count is 1200; substituting one for the other must be visible
+  BIT  skipped_attack  (exit_if_uncaught=1)
+      all 8 declared attacks are present in this file's own AST
+  BIT  tampered_quote  (exit_if_uncaught=1)
+      the genuine needle is located byte-exactly and a one-letter corruption of it is not found
+
+---- WHAT THE CHECKER FOUND THAT THE PRIMARY DID NOT ----
+  * morphological CLOSING (dilate then erode by the same rotation-invariant set) is admissible and outside the fixed-S family -- a class the primary's taxonomy does not name
+  * RANK / THRESHOLD filters W_t(R) = {x : |(x + B) n supp(R)| >= t} are admissible for t >= 1 and outside the fixed-S family for t >= 2 -- an INFINITE family of which the primary's dilations are only the t = 1 member
+  * the content-invariant keying axis is wider than the primary showed: keying on the number of distinct content values, or on the support's squared diameter, also passes
+  * containment fails not by one witness but by EVERY rotation-invariant structuring set omitting the origin -- 511 of them inside the radius-2 box alone
+
+claims_tested: 14
+claims_surviving: 14
+claims_refuted: 0
+teeth_all_caught: True
+receipt: outputs/window_freedom_independent_check_cycle887_receipt_2026_07_28.json
+elapsed_sec: 30.431
+EXIT 0 BY SPEC -- the exit code reports that the check RAN, not whether the primary's claims survived.

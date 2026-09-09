@@ -1,0 +1,791 @@
+{
+  "checker_gates_pass": true,
+  "claims_checked": 6,
+  "claims_refuted": [
+    "C6_candidate_space_completeness"
+  ],
+  "claims_surviving": 5,
+  "cycle": 893,
+  "deterministic_double_build": true,
+  "elapsed_sec": 17.525,
+  "gate_pass": {
+    "A_PINS": true,
+    "F_FIDELITY_ATTACK_RAN": true,
+    "N_NEW_BARRIERS_RAN": true,
+    "P_INDEPENDENT_PROPAGATION_RAN": true,
+    "T_TEETH_ALL_BITE": true,
+    "at_least_six_teeth": true,
+    "at_least_two_new_barriers": true,
+    "deterministic_double_build": true,
+    "import_firewall_zero_hits": true,
+    "runtime_within_cap": true
+  },
+  "independent_engine": "depth-first enumeration of directed unblocked paths, summed one path at a time -- NOT the primary's layer DP",
+  "missed_admissible_families": [
+    "NEW_adaptive_local_density_dilation",
+    "NEW_closing_S_ball1",
+    "NEW_closing_S_ball2",
+    "NEW_opening_S_ball1"
+  ],
+  "move_terms_inside_the_axiom_sections": 0,
+  "new_barriers_admissible": [
+    "NEW_adaptive_local_density_dilation",
+    "NEW_closing_S_ball1",
+    "NEW_closing_S_ball2",
+    "NEW_dilation_S_ball3",
+    "NEW_opening_S_ball1"
+  ],
+  "new_barriers_evaluated": [
+    "NEW_closing_S_ball1",
+    "NEW_closing_S_ball2",
+    "NEW_opening_S_ball1",
+    "NEW_adaptive_local_density_dilation",
+    "NEW_dilation_S_ball3",
+    "NEW_rank_filter_nearest_half"
+  ],
+  "new_barriers_that_invert": [],
+  "propagation_disagreements": 0,
+  "role": "independent refutation attempt on the Cycle 893 barrier-identification block",
+  "science": {
+    "A_PINS": {
+      "ast_missing_885": [],
+      "ast_missing_887": [],
+      "brief_digests_all_match": true,
+      "finding": "10 inputs pinned; 4 brief digests match; firewall hits 0.",
+      "import_firewall_hits": 0,
+      "pass": true,
+      "pin_count": 10,
+      "pins": [
+        {
+          "brief_match": null,
+          "bytes": 109442,
+          "git_blob": "63620d0fe55ad41b63ef1e5c450f530a6ac96e85",
+          "path": "scripts/frontier_cycle893_barrier_identification_2026_07_28.py",
+          "sha256": "79f569db71e2ced8adb00ea97bf07fa74b6d8a890f77904377eb80be607b1c57"
+        },
+        {
+          "brief_match": null,
+          "bytes": 444441,
+          "git_blob": "e3314575ede62bc98aa35ffaeaaad23f85f23d72",
+          "path": "outputs/barrier_identification_cycle893_receipt_2026_07_28.json",
+          "sha256": "5610b3ed2881204ce17266943a4f7e0c7021a7aa9ea2f9e7dc9e0caa0817c596"
+        },
+        {
+          "brief_match": null,
+          "bytes": 21069,
+          "git_blob": "1a72d0cd37ec90c5f4802a935eadc90331659e15",
+          "path": "logs/runner-cache/frontier_cycle893_barrier_identification_2026_07_28.txt",
+          "sha256": "38aa5cdfd47e1789801527afd030669760b05be82018a6a912dfe00f0de1b3bf"
+        },
+        {
+          "brief_match": true,
+          "bytes": 113653,
+          "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",
+          "path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+          "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32"
+        },
+        {
+          "brief_match": true,
+          "bytes": 94389,
+          "git_blob": "0fbcf92fc98b0d88d436a05efdc33449c52473db",
+          "path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py",
+          "sha256": "139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83"
+        },
+        {
+          "brief_match": true,
+          "bytes": 101417,
+          "git_blob": "360eed9e17eab1af19ca03d7ea1161dafaf56da0",
+          "path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py",
+          "sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f"
+        },
+        {
+          "brief_match": true,
+          "bytes": 8816,
+          "git_blob": "722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2",
+          "path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json",
+          "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae"
+        },
+        {
+          "brief_match": null,
+          "bytes": 8846,
+          "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+        },
+        {
+          "brief_match": null,
+          "bytes": 28116,
+          "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+          "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+          "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+        },
+        {
+          "brief_match": null,
+          "bytes": 4679,
+          "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+          "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+          "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+        }
+      ],
+      "self_sha256": "be74044e52eda8b51c51feddb61d9fcf0d4340924b0e8c8e6a99d2e661e8d692"
+    },
+    "C_CLAIMS": {
+      "claim_count": 6,
+      "claims": {
+        "C1_restriction_gate_reproduces_892": {
+          "independent": true,
+          "primary_claim": true,
+          "survives": true
+        },
+        "C2_gauge_break_is_barrier_independent": {
+          "independent": true,
+          "primary_claim": true,
+          "survives": true
+        },
+        "C3_axioms_force_nothing": {
+          "independent": true,
+          "primary_claim": true,
+          "survives": true
+        },
+        "C4_expulsion_is_NOT_barrier_independent": {
+          "independent": true,
+          "primary_claim": true,
+          "survives": true
+        },
+        "C5_boundary_shell_refused_as_a_barrier": {
+          "independent": true,
+          "primary_claim": true,
+          "survives": true
+        },
+        "C6_candidate_space_completeness": {
+          "independent": false,
+          "note": "4 admissible families found outside the primary's DILATION family: ['NEW_adaptive_local_density_dilation', 'NEW_closing_S_ball1', 'NEW_closing_S_ball2', 'NEW_opening_S_ball1']",
+          "primary_claim": "the seven declared families cover the space probed",
+          "survives": false
+        }
+      },
+      "claims_refuted": [
+        "C6_candidate_space_completeness"
+      ],
+      "claims_surviving": 5,
+      "finding": "5/6 primary claims survive independent attack.",
+      "pass": true
+    },
+    "F_FIDELITY_ATTACK": {
+      "SECTION_SCOPED_MOVE_SCAN": {
+        "hits": [],
+        "move_term_hits": 0,
+        "reading": "Zero propagation-move terms occur anywhere inside the four axiom sections.  This is SHARPER than the primary's sweep, which graded the whole memo including its commentary: even the vocabulary a barrier would need is absent from the axioms themselves.",
+        "scope": "the four axiom sections only, from '## The Four Framework Axioms' to '## Qualification'",
+        "section_bytes": 1328
+      },
+      "SORT_ANALYSIS": {
+        "extracted_subject_of_the_determination_clause": "available possibilities",
+        "reading": "The Admissibility axiom's determination clause has 'available possibilities' as its subject.  That noun phrase belongs to the POSSIBILITY sort supplied by the Qubit axiom, not to the SITE sort a propagation barrier lives in.  The axiom therefore cannot pin a set of blocked sites: it does not quantify over sites-as-objects-to-block at all.  This is an independent route to the primary's conclusion and it reaches the same place.",
+        "subject_is_in_the_POSSIBILITY_sort": true,
+        "subject_is_in_the_SITE_sort": false
+      },
+      "agrees_with_the_primary": true,
+      "attack": "attack the fidelity grades by a DIFFERENT method: sort analysis of the axiom's determination clause, plus a section-scoped move-term scan the primary never ran",
+      "finding": "Sort analysis independently confirms the primary: the determination clause's subject is 'available possibilities', in the possibility sort, not the site sort.  0 move-term hits inside the four axiom sections; 'record' occurs 0 times in the Admissibility section.  The Gate-B supplied booking verifies independently: True.",
+      "gateb_books_the_barrier_as_supplied": true,
+      "pass": true,
+      "primary_claim_survives": true,
+      "record_mentions_in_the_Admissibility_section": 0
+    },
+    "N_NEW_BARRIERS_AND_MISSED_FAMILIES": {
+      "MISSED_ADMISSIBLE_FAMILIES": [
+        "NEW_adaptive_local_density_dilation",
+        "NEW_closing_S_ball1",
+        "NEW_closing_S_ball2",
+        "NEW_opening_S_ball1"
+      ],
+      "admissible_new": [
+        "NEW_adaptive_local_density_dilation",
+        "NEW_closing_S_ball1",
+        "NEW_closing_S_ball2",
+        "NEW_dilation_S_ball3",
+        "NEW_opening_S_ball1"
+      ],
+      "attack": "recompute the map on SIX barriers the primary never evaluated, and hunt for an admissible family its enumeration missed",
+      "dilation_family_membership": {
+        "NEW_adaptive_local_density_dilation": {
+          "configs_where_it_is_NOT_that_dilation": 3,
+          "induced_S_size": 1,
+          "is_outside_the_DILATION_family": true
+        },
+        "NEW_closing_S_ball1": {
+          "configs_where_it_is_NOT_that_dilation": 4,
+          "induced_S_size": 1,
+          "is_outside_the_DILATION_family": true
+        },
+        "NEW_closing_S_ball2": {
+          "configs_where_it_is_NOT_that_dilation": 4,
+          "induced_S_size": 1,
+          "is_outside_the_DILATION_family": true
+        },
+        "NEW_dilation_S_ball3": {
+          "configs_where_it_is_NOT_that_dilation": 0,
+          "induced_S_size": 63,
+          "is_outside_the_DILATION_family": false
+        },
+        "NEW_opening_S_ball1": {
+          "configs_where_it_is_NOT_that_dilation": 2,
+          "induced_S_size": 0,
+          "is_outside_the_DILATION_family": true
+        },
+        "NEW_rank_filter_nearest_half": {
+          "configs_where_it_is_NOT_that_dilation": 11,
+          "induced_S_size": 1,
+          "is_outside_the_DILATION_family": true
+        }
+      },
+      "finding": "5/6 new barriers are admissible.  0 of them invert the gauge break.  4 are admissible AND outside the primary's DILATION family (NEW_adaptive_local_density_dilation, NEW_closing_S_ball1, NEW_closing_S_ball2, NEW_opening_S_ball1), so the enumeration MISSED a real admissible family.",
+      "inversion_found": false,
+      "missed_family_count": 4,
+      "missed_family_significance": "These are admissible barriers that are (a) outside the primary's DILATION family by Matheron extraction, (b) set-distinct from ALL 31 barriers the primary evaluated, and (c) built by constructions -- morphological closing/opening and a per-site adaptive dilation -- that none of the primary's seven declared families names.  The primary's Q1 enumeration is therefore INCOMPLETE as a family list.  It does NOT follow that Q1's headline is wrong: the primary's own honest-size result already proved the space infinite, and every one of these missed barriers PRESERVES the gauge break, so Q3's verdict is strengthened rather than damaged.",
+      "new_barriers": 6,
+      "new_barriers_that_INVERT_the_break": [],
+      "novelty_against_every_primary_barrier": {
+        "NEW_adaptive_local_density_dilation": {
+          "identical_to_a_primary_barrier": [],
+          "is_a_genuinely_new_point_in_the_space": true
+        },
+        "NEW_closing_S_ball1": {
+          "identical_to_a_primary_barrier": [],
+          "is_a_genuinely_new_point_in_the_space": true
+        },
+        "NEW_closing_S_ball2": {
+          "identical_to_a_primary_barrier": [],
+          "is_a_genuinely_new_point_in_the_space": true
+        },
+        "NEW_dilation_S_ball3": {
+          "identical_to_a_primary_barrier": [],
+          "is_a_genuinely_new_point_in_the_space": true
+        },
+        "NEW_opening_S_ball1": {
+          "identical_to_a_primary_barrier": [],
+          "is_a_genuinely_new_point_in_the_space": true
+        },
+        "NEW_rank_filter_nearest_half": {
+          "identical_to_a_primary_barrier": [],
+          "is_a_genuinely_new_point_in_the_space": true
+        }
+      },
+      "pass": true,
+      "per_new_barrier": {
+        "NEW_adaptive_local_density_dilation": {
+          "EXPULSION_holds": true,
+          "admissible": true,
+          "break_present": true,
+          "configs_where_reach_meets_support": 0,
+          "contains_support_on": 12,
+          "distinct_set_values": 11,
+          "equivariance_checks": 1440,
+          "equivariance_failures": 0,
+          "exhibits": [],
+          "frozen_walks": 6,
+          "linear_classes": 1,
+          "partition": [
+            [
+              "axis_segment_closure"
+            ],
+            [
+              "bounding_box"
+            ],
+            [
+              "minkowski_S_ball1__885_checker_dilation_k1"
+            ],
+            [
+              "minkowski_S_ball2__885_checker_dilation_k2"
+            ],
+            [
+              "minkowski_S_far_shell__origin_present"
+            ],
+            [
+              "minkowski_S_zero__the_885_support_window"
+            ],
+            [
+              "readout_keyed_inflation",
+              "size_keyed_inflation"
+            ],
+            [
+              "union_box_with_dilation"
+            ]
+          ],
+          "permanence_checks": 35,
+          "permanence_failures": 0,
+          "quadratic_classes": 8,
+          "theta_dependent_configs": 6
+        },
+        "NEW_closing_S_ball1": {
+          "EXPULSION_holds": true,
+          "admissible": true,
+          "break_present": true,
+          "configs_where_reach_meets_support": 0,
+          "contains_support_on": 12,
+          "distinct_set_values": 11,
+          "equivariance_checks": 1440,
+          "equivariance_failures": 0,
+          "exhibits": [],
+          "frozen_walks": 5,
+          "linear_classes": 1,
+          "partition": [
+            [
+              "axis_segment_closure"
+            ],
+            [
+              "bounding_box"
+            ],
+            [
+              "minkowski_S_ball1__885_checker_dilation_k1"
+            ],
+            [
+              "minkowski_S_ball2__885_checker_dilation_k2"
+            ],
+            [
+              "minkowski_S_far_shell__origin_present"
+            ],
+            [
+              "minkowski_S_zero__the_885_support_window"
+            ],
+            [
+              "readout_keyed_inflation",
+              "size_keyed_inflation"
+            ],
+            [
+              "union_box_with_dilation"
+            ]
+          ],
+          "permanence_checks": 35,
+          "permanence_failures": 0,
+          "quadratic_classes": 8,
+          "theta_dependent_configs": 7
+        },
+        "NEW_closing_S_ball2": {
+          "EXPULSION_holds": true,
+          "admissible": true,
+          "break_present": true,
+          "configs_where_reach_meets_support": 0,
+          "contains_support_on": 12,
+          "distinct_set_values": 11,
+          "equivariance_checks": 1440,
+          "equivariance_failures": 0,
+          "exhibits": [],
+          "frozen_walks": 5,
+          "linear_classes": 1,
+          "partition": [
+            [
+              "axis_segment_closure"
+            ],
+            [
+              "bounding_box"
+            ],
+            [
+              "minkowski_S_ball1__885_checker_dilation_k1"
+            ],
+            [
+              "minkowski_S_ball2__885_checker_dilation_k2"
+            ],
+            [
+              "minkowski_S_far_shell__origin_present"
+            ],
+            [
+              "minkowski_S_zero__the_885_support_window"
+            ],
+            [
+              "readout_keyed_inflation",
+              "size_keyed_inflation"
+            ],
+            [
+              "union_box_with_dilation"
+            ]
+          ],
+          "permanence_checks": 35,
+          "permanence_failures": 0,
+          "quadratic_classes": 8,
+          "theta_dependent_configs": 7
+        },
+        "NEW_dilation_S_ball3": {
+          "EXPULSION_holds": true,
+          "admissible": true,
+          "break_present": true,
+          "configs_where_reach_meets_support": 0,
+          "contains_support_on": 12,
+          "distinct_set_values": 11,
+          "equivariance_checks": 1440,
+          "equivariance_failures": 0,
+          "exhibits": [],
+          "frozen_walks": 12,
+          "linear_classes": 1,
+          "partition": [
+            [
+              "axis_segment_closure"
+            ],
+            [
+              "bounding_box",
+              "minkowski_S_ball1__885_checker_dilation_k1",
+              "minkowski_S_ball2__885_checker_dilation_k2",
+              "readout_keyed_inflation",
+              "size_keyed_inflation",
+              "union_box_with_dilation"
+            ],
+            [
+              "minkowski_S_far_shell__origin_present"
+            ],
+            [
+              "minkowski_S_zero__the_885_support_window"
+            ]
+          ],
+          "permanence_checks": 35,
+          "permanence_failures": 0,
+          "quadratic_classes": 4,
+          "theta_dependent_configs": 0
+        },
+        "NEW_opening_S_ball1": {
+          "EXPULSION_holds": false,
+          "admissible": true,
+          "break_present": true,
+          "configs_where_reach_meets_support": 10,
+          "contains_support_on": 2,
+          "distinct_set_values": 3,
+          "equivariance_checks": 1440,
+          "equivariance_failures": 0,
+          "exhibits": [],
+          "frozen_walks": 2,
+          "linear_classes": 1,
+          "partition": [
+            [
+              "axis_segment_closure"
+            ],
+            [
+              "bounding_box"
+            ],
+            [
+              "minkowski_S_ball1__885_checker_dilation_k1"
+            ],
+            [
+              "minkowski_S_ball2__885_checker_dilation_k2"
+            ],
+            [
+              "minkowski_S_far_shell__origin_present"
+            ],
+            [
+              "minkowski_S_zero__the_885_support_window"
+            ],
+            [
+              "readout_keyed_inflation",
+              "size_keyed_inflation"
+            ],
+            [
+              "union_box_with_dilation"
+            ]
+          ],
+          "permanence_checks": 35,
+          "permanence_failures": 0,
+          "quadratic_classes": 8,
+          "theta_dependent_configs": 10
+        },
+        "NEW_rank_filter_nearest_half": {
+          "EXPULSION_holds": false,
+          "admissible": false,
+          "break_present": true,
+          "configs_where_reach_meets_support": 9,
+          "contains_support_on": 1,
+          "distinct_set_values": 11,
+          "equivariance_checks": 1440,
+          "equivariance_failures": 740,
+          "exhibits": [
+            {
+              "config": "pair",
+              "shift": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "config": "pair",
+              "shift": [
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "config": "pair",
+              "shift": [
+                0,
+                -2,
+                0
+              ]
+            },
+            {
+              "config": "pair",
+              "shift": [
+                3,
+                1,
+                -2
+              ]
+            },
+            {
+              "config": "pair",
+              "shift": [
+                -1,
+                -1,
+                -1
+              ]
+            },
+            {
+              "config": "pair",
+              "shift": [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "frozen_walks": 2,
+          "linear_classes": 1,
+          "partition": [
+            [
+              "axis_segment_closure"
+            ],
+            [
+              "bounding_box"
+            ],
+            [
+              "minkowski_S_ball1__885_checker_dilation_k1"
+            ],
+            [
+              "minkowski_S_ball2__885_checker_dilation_k2"
+            ],
+            [
+              "minkowski_S_far_shell__origin_present"
+            ],
+            [
+              "minkowski_S_zero__the_885_support_window"
+            ],
+            [
+              "readout_keyed_inflation",
+              "size_keyed_inflation"
+            ],
+            [
+              "union_box_with_dilation"
+            ]
+          ],
+          "permanence_checks": 35,
+          "permanence_failures": 9,
+          "quadratic_classes": 8,
+          "theta_dependent_configs": 10
+        }
+      }
+    },
+    "P_INDEPENDENT_PROPAGATION": {
+      "barriers_cross_checked": 31,
+      "c892_expulsion_reproduced": true,
+      "c892_frozen_matches_pinned_five": true,
+      "c892_frozen_walks": 5,
+      "disagreement_count": 0,
+      "disagreements": [],
+      "engine": "depth-first enumeration of directed unblocked paths, summed one path at a time -- NOT the primary's layer DP",
+      "finding": "The path-sum engine reproduces the expulsion row (reach meets support on 0/12, 5 frozen walks) and cross-checks 31 of the primary's fate rows with 0 disagreements.",
+      "pass": true,
+      "rows": [
+        {
+          "config": "single",
+          "frozen": false,
+          "reach_meets_support": 0,
+          "reachable_sites": 128
+        },
+        {
+          "config": "pair",
+          "frozen": false,
+          "reach_meets_support": 0,
+          "reachable_sites": 167
+        },
+        {
+          "config": "shell1",
+          "frozen": true,
+          "reach_meets_support": 0,
+          "reachable_sites": 0
+        },
+        {
+          "config": "ball1",
+          "frozen": true,
+          "reach_meets_support": 0,
+          "reachable_sites": 0
+        },
+        {
+          "config": "annulus_1_4",
+          "frozen": true,
+          "reach_meets_support": 0,
+          "reachable_sites": 0
+        },
+        {
+          "config": "hollow_annulus",
+          "frozen": true,
+          "reach_meets_support": 0,
+          "reachable_sites": 0
+        },
+        {
+          "config": "Lshape",
+          "frozen": false,
+          "reach_meets_support": 0,
+          "reachable_sites": 109
+        },
+        {
+          "config": "plane_square",
+          "frozen": false,
+          "reach_meets_support": 0,
+          "reachable_sites": 92
+        },
+        {
+          "config": "chain",
+          "frozen": false,
+          "reach_meets_support": 0,
+          "reachable_sites": 116
+        },
+        {
+          "config": "sparse_a",
+          "frozen": false,
+          "reach_meets_support": 0,
+          "reachable_sites": 117
+        },
+        {
+          "config": "sparse_b",
+          "frozen": false,
+          "reach_meets_support": 0,
+          "reachable_sites": 112
+        },
+        {
+          "config": "offcentre_ball",
+          "frozen": true,
+          "reach_meets_support": 0,
+          "reachable_sites": 0
+        }
+      ]
+    },
+    "T_TEETH": {
+      "all_bite": true,
+      "finding": "8/8 teeth bite.",
+      "pass": true,
+      "teeth": {
+        "T1_tampered_pin_is_caught": {
+          "detected": true,
+          "pass": true,
+          "tamper": "flip one byte of the pinned 892 primary"
+        },
+        "T2_dropped_barrier_is_caught": {
+          "detected": true,
+          "note": "completeness gate compares 31 rows to 31 declared candidates",
+          "pass": true,
+          "tamper": "remove the identification from the fate map"
+        },
+        "T3_hardcoded_fate_row_is_caught": {
+          "detected": true,
+          "faked": 1,
+          "pass": true,
+          "recomputed": 8,
+          "tamper": "replace the identification's quadratic class count with 1"
+        },
+        "T4_leaked_verdict_is_caught": {
+          "detected": true,
+          "pass": true,
+          "predicate_as_published": true,
+          "predicate_under_tamper": false,
+          "tamper": "force every quadratic class count to 1 and re-derive the barrier-independence predicate"
+        },
+        "T5_skipped_sentence_is_caught": {
+          "detected": true,
+          "note": "the completeness gate ties 106 graded units to the selection rule's own count",
+          "pass": true,
+          "tamper": "drop one graded unit from the fidelity sweep"
+        },
+        "T6_planted_inversion_blindness_is_caught": {
+          "detected": true,
+          "frozen_barrier_classes": 1,
+          "identification_classes": 8,
+          "inversion_visible": true,
+          "pass": true,
+          "tamper": "independently rebuild the primary's planted inversion with the path-sum engine and require the collapse to appear"
+        },
+        "T7_receipt_claim_matches_recomputation": {
+          "agrees": true,
+          "claimed": 8,
+          "detected": true,
+          "pass": true,
+          "recomputed": 8,
+          "tamper": "compare the receipt's claim against the path-sum engine"
+        },
+        "T8_admissibility_mislabel_is_caught": {
+          "boundary_shell_admissible": false,
+          "boundary_shell_permanence_failures": 24,
+          "detected": true,
+          "identification_admissible": true,
+          "pass": true,
+          "tamper": "independently re-evaluate REQ1-REQ5 for the identification and for 885's refuted boundary shell"
+        }
+      },
+      "teeth_count": 8,
+      "teeth_that_bite": 8
+    }
+  },
+  "science_digest": "4bade9d64a711b1b9e536fd3c0331e1401d6a6d1a8e9511ea98e8198a5f0c83c",
+  "self_sha256": "be74044e52eda8b51c51feddb61d9fcf0d4340924b0e8c8e6a99d2e661e8d692",
+  "sort_analysis_subject": "available possibilities",
+  "source_pins": [
+    {
+      "git_blob": "63620d0fe55ad41b63ef1e5c450f530a6ac96e85",
+      "path": "scripts/frontier_cycle893_barrier_identification_2026_07_28.py",
+      "sha256": "79f569db71e2ced8adb00ea97bf07fa74b6d8a890f77904377eb80be607b1c57"
+    },
+    {
+      "git_blob": "e3314575ede62bc98aa35ffaeaaad23f85f23d72",
+      "path": "outputs/barrier_identification_cycle893_receipt_2026_07_28.json",
+      "sha256": "5610b3ed2881204ce17266943a4f7e0c7021a7aa9ea2f9e7dc9e0caa0817c596"
+    },
+    {
+      "git_blob": "1a72d0cd37ec90c5f4802a935eadc90331659e15",
+      "path": "logs/runner-cache/frontier_cycle893_barrier_identification_2026_07_28.txt",
+      "sha256": "38aa5cdfd47e1789801527afd030669760b05be82018a6a912dfe00f0de1b3bf"
+    },
+    {
+      "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",
+      "path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+      "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32"
+    },
+    {
+      "git_blob": "0fbcf92fc98b0d88d436a05efdc33449c52473db",
+      "path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py",
+      "sha256": "139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83"
+    },
+    {
+      "git_blob": "360eed9e17eab1af19ca03d7ea1161dafaf56da0",
+      "path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py",
+      "sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f"
+    },
+    {
+      "git_blob": "722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2",
+      "path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json",
+      "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae"
+    },
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+      "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+      "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+    },
+    {
+      "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+      "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+    }
+  ],
+  "teeth_count": 8,
+  "teeth_that_bite": 8
+}

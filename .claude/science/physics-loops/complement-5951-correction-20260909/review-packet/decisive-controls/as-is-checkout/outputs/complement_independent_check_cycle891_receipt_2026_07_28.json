@@ -1,0 +1,40 @@
+{
+ "all_certificates_pass": false,
+ "certificates": {
+  "R0_PINNED_EVIDENCE": {
+   "detail": "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt:MISMATCH",
+   "pass": false
+  },
+  "R0b_CLAIMS_PARSED": {
+   "detail": "claims_line_found=False",
+   "pass": false
+  },
+  "R1_IDENTITIES_WIDE_GRID": {
+   "detail": "grid B=3..60 all hold; finite differences +8/-8; primary_rows=None expected=27",
+   "pass": false
+  },
+  "R2_KRUN_LAW_INDEPENDENT": {
+   "detail": "cells=2500 mismatches=0 parity_violations=0 all_good_edge=True",
+   "pass": false
+  },
+  "R3_OVERCLAIM_SCAN": {
+   "detail": "hits=['cache:15:SEALED']",
+   "pass": false
+  },
+  "R4_RUNTIME": {
+   "detail": "elapsed_s=0.0 budget_s=300",
+   "pass": true
+  }
+ },
+ "claim_type": "bounded_theorem",
+ "cycle": 891,
+ "review_loop": {
+  "date": "2026-08-08",
+  "disposition": "FIX_THEN_PROCEED",
+  "fix": "self-contained rewrite; wide-grid identity route and independent k-run ground truth; overclaim scan added; fail-closed exit",
+  "iteration": 1,
+  "reviewer": "Sol"
+ },
+ "role": "independent_checker",
+ "verdict": "PRIMARY_REFUTED_ON_THIS_CHECK"
+}

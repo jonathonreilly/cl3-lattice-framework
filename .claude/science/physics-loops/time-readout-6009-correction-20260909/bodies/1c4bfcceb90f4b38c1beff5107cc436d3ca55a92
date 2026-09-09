@@ -1,0 +1,5448 @@
+{
+ "VERDICT": "DECIDED-F_DIM",
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor review",
+ "block": "toe-time-blockG24-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "A_PINS": {
+   "axiom_needle_occurrences": {
+    "content_alone": 1,
+    "context_selection_is_outside": 1,
+    "finite_additive_readout": 1,
+    "further_structure_needs_derivation": 1,
+    "lattice_points": 1,
+    "lattice_rotations": 1,
+    "readout_context_selection_needs_authority": 1,
+    "sites_by_lattice_alone": 1,
+    "unfixed_choice_stays_conditional": 1
+   },
+   "brief_supplied_digests_all_match": true,
+   "brief_supplied_digests_checked": 1,
+   "every_needle_present": true,
+   "import_firewall_hit_names": [],
+   "import_firewall_hits": 0,
+   "koide_needle_occurrences": {
+    "axis_selection_is_separate": 1,
+    "l_face_definition": 1,
+    "l_face_value": 1,
+    "normal_determinant_three": 1,
+    "normal_plane_is_geometric": 1
+   },
+   "pass": true,
+   "pin_count": 8,
+   "pins": [
+    {
+     "brief_sha256_match": null,
+     "bytes": 96183,
+     "exists": true,
+     "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+     "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+     "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c"
+    },
+    {
+     "brief_sha256_match": null,
+     "bytes": 2557,
+     "exists": true,
+     "git_blob": "d4290cbe8cfedf965fad828dc673e8fee2e75cd5",
+     "path": "outputs/record_weight_pair_cycle883_receipt_2026_07_28.json",
+     "sha256": "973d18d9aa2e05a2decac79ddd8a6f245d923e9a94d772baf80869228ca27d60"
+    },
+    {
+     "brief_sha256_match": true,
+     "bytes": 129216,
+     "exists": true,
+     "git_blob": "c3de02c94b8a11a930ad6ff8817975b118bc776d",
+     "path": "scripts/frontier_cycle888_s3_scope_pricing_2026_07_28.py",
+     "sha256": "f57fda877d35d49953c3b6a34293ab0cc6a87781ceb9d158b9c9abb5abd4bb3f"
+    },
+    {
+     "brief_sha256_match": null,
+     "bytes": 121439,
+     "exists": true,
+     "git_blob": "3e18ad52f50e72b83c56da72c31f25d104b5c830",
+     "path": "outputs/s3_scope_pricing_cycle888_receipt_2026_07_28.json",
+     "sha256": "8a540201a84a6b8cb6868d431216718a27f200e45d6ceeb771d858e9a54280cd"
+    },
+    {
+     "brief_sha256_match": null,
+     "bytes": 5849,
+     "exists": true,
+     "git_blob": "1201ba9702ec8a0b81df0319a90a080549cfdd4a",
+     "path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+     "sha256": "3c7a33c8abac8e70bdcf2e8b9db5d917c0b2cee6fc7cc0ec91c6d803bbb230d2"
+    },
+    {
+     "brief_sha256_match": null,
+     "bytes": 8846,
+     "exists": true,
+     "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+     "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+     "brief_sha256_match": null,
+     "bytes": 28116,
+     "exists": true,
+     "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+     "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+     "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+    },
+    {
+     "brief_sha256_match": null,
+     "bytes": 4679,
+     "exists": true,
+     "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+     "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+     "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+    }
+   ],
+   "read_mode": "TEXT / AST / JSON only; no pinned module is imported",
+   "self_git_blob": "2e72138b824237ccdc29b7a06456b06fcede0dc9",
+   "self_sha256": "88fbc9eb8c7aad75af891d8177b0f1f4f808561109f158a56b8f496458ecd174"
+  },
+  "B_AXIOM_CLAUSE": {
+   "byte_quoted_additivity": "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`.",
+   "byte_quoted_additivity_occurrences_in_memo": 1,
+   "byte_quoted_clause": "Only records are readable. A readout value is determined by record content alone.",
+   "byte_quoted_clause_occurrences_in_memo": 1,
+   "consequences": [
+    {
+     "byte_support": "Only records are readable. A readout value is determined by record content alone.",
+     "computable_test": "transport a record datum by every proper cubic rotation and by lattice translations, conjugating the ambient scope with it; the value must not move.",
+     "from_clause": "content_alone",
+     "name": "re-embedding invariance",
+     "predicate": "P_EMB",
+     "reading": "'determined by record content' is a FUNCTIONAL claim: the readout value is the image of the record content under some function.  Two record data with the same content must therefore receive the same value, however they are embedded in Z^3."
+    },
+    {
+     "byte_support": "Only records are readable. A readout value is determined by record content alone.",
+     "computable_test": "exhibit one finite collection of pairwise-disjoint records admitting two admissible scopes; compare the values.",
+     "from_clause": "content_alone",
+     "name": "scope-independence",
+     "predicate": "P_SCOPE",
+     "reading": "'ALONE' is an exclusive: content is the ONLY determining input.  A construction whose value depends on a second, separately supplied input -- e.g. which ambient rotation subgroup is nominated as the scope -- is not determined by content alone.  Computable form: one record collection that admits two admissible ambient scopes must not receive two values."
+    },
+    {
+     "byte_support": "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`.",
+     "computable_test": "exhibit a finite disjoint record collection on which the construction returns no value.",
+     "from_clause": "finite_additive_readout",
+     "name": "totality on finite disjoint collections",
+     "predicate": "P_TOTAL",
+     "reading": "'For ANY finite collection of pairwise-disjoint records' quantifies universally.  A construction that is UNDEFINED on some finite collection of pairwise-disjoint records is not the readout the clause describes; it is a partial functional whose domain restriction is itself extra supplied content."
+    }
+   ],
+   "honesty": "P_EMB and P_TOTAL are uncontroversial readings.  P_SCOPE is the load-bearing one and it is defended from a single word -- 'alone'.  Certificate J steelmans its denial and tests the steelman computationally.",
+   "memo_sentences_bearing_on_scope_supply": [
+    {
+     "needle": "context selection, measurement basis selection, Born weights, probability",
+     "occurrences": 1,
+     "what_it_does": "the memo lists context selection among 'Open Gates Outside The Axioms' -- so a reading that needs a supplied scope/context cannot draw that scope from axiom content"
+    },
+    {
+     "needle": "readout-context selection",
+     "occurrences": 1,
+     "what_it_does": "rows requiring readout-context selection 'must cite separate retained authorities or remain bounded/pending'"
+    },
+    {
+     "needle": "Sites are distinguished by the supplied lattice structure alone.",
+     "occurrences": 1,
+     "what_it_does": "the STRONGEST pro-geometry sentence in the memo: it licenses distinguishing SITES by lattice structure.  Its subject is sites, not readout values -- recorded here so the geometric reading's best byte is on the table"
+    }
+   ],
+   "pass": true,
+   "theorem": "C901-T1.  The Record readout clause yields exactly three independently computable necessary conditions on any candidate readout construction: P_EMB, P_SCOPE, P_TOTAL."
+  },
+  "C_RESTRICTION": {
+   "LOUD": "NO DISAGREEMENT with the brief's 899 numbers",
+   "census_reproduced": true,
+   "census_rows": [
+    {
+     "agrees": true,
+     "name": "E_trivial",
+     "pinned_888": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": true,
+      "normalizer_order": 24,
+      "order": 1,
+      "size": 1
+     },
+     "rebuilt_901": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": true,
+      "normalizer_order": 24,
+      "order": 1,
+      "size": 1
+     }
+    },
+    {
+     "agrees": true,
+     "name": "C2_face",
+     "pinned_888": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 8,
+      "order": 2,
+      "size": 3
+     },
+     "rebuilt_901": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 8,
+      "order": 2,
+      "size": 3
+     }
+    },
+    {
+     "agrees": true,
+     "name": "C2_edge",
+     "pinned_888": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 4,
+      "order": 2,
+      "size": 6
+     },
+     "rebuilt_901": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 4,
+      "order": 2,
+      "size": 6
+     }
+    },
+    {
+     "agrees": true,
+     "name": "C3_body",
+     "pinned_888": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 6,
+      "order": 3,
+      "size": 4
+     },
+     "rebuilt_901": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 6,
+      "order": 3,
+      "size": 4
+     }
+    },
+    {
+     "agrees": true,
+     "name": "V_face",
+     "pinned_888": {
+      "is_abelian": true,
+      "is_cyclic": false,
+      "normal_in_the_full_group": true,
+      "normalizer_order": 24,
+      "order": 4,
+      "size": 1
+     },
+     "rebuilt_901": {
+      "is_abelian": true,
+      "is_cyclic": false,
+      "normal_in_the_full_group": true,
+      "normalizer_order": 24,
+      "order": 4,
+      "size": 1
+     }
+    },
+    {
+     "agrees": true,
+     "name": "V_edge",
+     "pinned_888": {
+      "is_abelian": true,
+      "is_cyclic": false,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 8,
+      "order": 4,
+      "size": 3
+     },
+     "rebuilt_901": {
+      "is_abelian": true,
+      "is_cyclic": false,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 8,
+      "order": 4,
+      "size": 3
+     }
+    },
+    {
+     "agrees": true,
+     "name": "C4_face",
+     "pinned_888": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 8,
+      "order": 4,
+      "size": 3
+     },
+     "rebuilt_901": {
+      "is_abelian": true,
+      "is_cyclic": true,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 8,
+      "order": 4,
+      "size": 3
+     }
+    },
+    {
+     "agrees": true,
+     "name": "S3_body",
+     "pinned_888": {
+      "is_abelian": false,
+      "is_cyclic": false,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 6,
+      "order": 6,
+      "size": 4
+     },
+     "rebuilt_901": {
+      "is_abelian": false,
+      "is_cyclic": false,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 6,
+      "order": 6,
+      "size": 4
+     }
+    },
+    {
+     "agrees": true,
+     "name": "D4_face",
+     "pinned_888": {
+      "is_abelian": false,
+      "is_cyclic": false,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 8,
+      "order": 8,
+      "size": 3
+     },
+     "rebuilt_901": {
+      "is_abelian": false,
+      "is_cyclic": false,
+      "normal_in_the_full_group": false,
+      "normalizer_order": 8,
+      "order": 8,
+      "size": 3
+     }
+    },
+    {
+     "agrees": true,
+     "name": "A4_tetrahedral",
+     "pinned_888": {
+      "is_abelian": false,
+      "is_cyclic": false,
+      "normal_in_the_full_group": true,
+      "normalizer_order": 24,
+      "order": 12,
+      "size": 1
+     },
+     "rebuilt_901": {
+      "is_abelian": false,
+      "is_cyclic": false,
+      "normal_in_the_full_group": true,
+      "normalizer_order": 24,
+      "order": 12,
+      "size": 1
+     }
+    },
+    {
+     "agrees": true,
+     "name": "O_full",
+     "pinned_888": {
+      "is_abelian": false,
+      "is_cyclic": false,
+      "normal_in_the_full_group": true,
+      "normalizer_order": 24,
+      "order": 24,
+      "size": 1
+     },
+     "rebuilt_901": {
+      "is_abelian": false,
+      "is_cyclic": false,
+      "normal_in_the_full_group": true,
+      "normalizer_order": 24,
+      "order": 24,
+      "size": 1
+     }
+    }
+   ],
+   "cycle883_C3_orbit": [
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ]
+   ],
+   "cycle883_anchor_rebuilt_from_geometry": "2/9",
+   "cycle883_closed_form_table": [
+    {
+     "hits_the_anchor": true,
+     "name": "w1 / (w0 + w1)^2",
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "hits_the_anchor": true,
+     "name": "w0 * w1 / n^2",
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "hits_the_anchor": true,
+     "name": "w1 / n^2",
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "hits_the_anchor": true,
+     "name": "(n - 1) / n^2",
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "hits_the_anchor": true,
+     "name": "w1 / (w0 * n^2)",
+     "value_at_(1,2,3)": "2/9"
+    },
+    {
+     "hits_the_anchor": false,
+     "name": "w0 / n",
+     "value_at_(1,2,3)": "1/3"
+    },
+    {
+     "hits_the_anchor": false,
+     "name": "(w0 + w1) / n^2",
+     "value_at_(1,2,3)": "1/3"
+    }
+   ],
+   "cycle883_form_names_found_in_pinned_ast": true,
+   "cycle883_forms_returning_the_anchor": [
+    "w1 / (w0 + w1)^2",
+    "w0 * w1 / n^2",
+    "w1 / n^2",
+    "(n - 1) / n^2",
+    "w1 / (w0 * n^2)"
+   ],
+   "cycle883_forms_table_reproduced": true,
+   "cycle883_headline_as_pinned": "SL1 DERIVED: the record readout space over one lattice C3 orbit carries (1,2) with 2-adic profile (0,1), no free parameter (isotype split 1+2); exhaustive discrimination (pair = (1,n-1), unique at n=3); 882-T6 defeated (anchor group widens to <2,3>); T7 wall untouched (recomputed); residual = SL1b (EQUIVALENT, blocked) + SL0 (scope, weaker)",
+   "cycle883_headline_states_the_pair": true,
+   "cycle883_headline_states_the_profile": true,
+   "cycle883_isotype_pair_rebuilt": [
+    1,
+    2
+   ],
+   "cycle883_reproduced": true,
+   "cycle883_two_adic_profile_rebuilt": [
+    0,
+    1
+   ],
+   "cycle899_artifacts_present_on_this_branch": false,
+   "cycle899_disagreements": [],
+   "cycle899_rebuild_agrees_everywhere": true,
+   "cycle899_rows_rebuilt": [
+    {
+     "K_native_rebuilt": "1/4",
+     "L_face_rebuilt": "1/8",
+     "L_face_status": "defined",
+     "agrees_with_brief_899": true,
+     "brief_899_K_native": "1/4",
+     "brief_899_L_face": "1/8",
+     "brief_899_fine_type": [
+      1,
+      1
+     ],
+     "class": "C2_face",
+     "fine_rational_irreducible_dims": [
+      1,
+      1
+     ],
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "n": 2,
+     "readout_isotype_pair": [
+      1,
+      1
+     ]
+    },
+    {
+     "K_native_rebuilt": "1/4",
+     "L_face_rebuilt": "1/8",
+     "L_face_status": "defined",
+     "agrees_with_brief_899": true,
+     "brief_899_K_native": "1/4",
+     "brief_899_L_face": "1/8",
+     "brief_899_fine_type": [
+      1,
+      1
+     ],
+     "class": "C2_edge",
+     "fine_rational_irreducible_dims": [
+      1,
+      1
+     ],
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ]
+     ],
+     "n": 2,
+     "readout_isotype_pair": [
+      1,
+      1
+     ]
+    },
+    {
+     "K_native_rebuilt": "2/9",
+     "L_face_rebuilt": "2/9",
+     "L_face_status": "defined",
+     "agrees_with_brief_899": true,
+     "brief_899_K_native": "2/9",
+     "brief_899_L_face": "2/9",
+     "brief_899_fine_type": [
+      1,
+      2
+     ],
+     "class": "C3_body",
+     "fine_rational_irreducible_dims": [
+      1,
+      2
+     ],
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       0,
+       -1
+      ]
+     ],
+     "n": 3,
+     "readout_isotype_pair": [
+      1,
+      2
+     ]
+    },
+    {
+     "K_native_rebuilt": "3/16",
+     "L_face_rebuilt": "5/16",
+     "L_face_status": "defined",
+     "agrees_with_brief_899": true,
+     "brief_899_K_native": "3/16",
+     "brief_899_L_face": "5/16",
+     "brief_899_fine_type": [
+      1,
+      1,
+      2
+     ],
+     "class": "C4_face",
+     "fine_rational_irreducible_dims": [
+      1,
+      1,
+      2
+     ],
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "n": 4,
+     "readout_isotype_pair": [
+      1,
+      3
+     ]
+    },
+    {
+     "K_native_rebuilt": "3/16",
+     "L_face_rebuilt": "UNDEFINED",
+     "L_face_status": "no rotation axis: common fixed locus has dimension 0, not 1",
+     "agrees_with_brief_899": true,
+     "brief_899_K_native": "3/16",
+     "brief_899_L_face": "UNDEFINED",
+     "brief_899_fine_type": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "class": "V_edge",
+     "fine_rational_irreducible_dims": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "n": 4,
+     "readout_isotype_pair": [
+      1,
+      3
+     ]
+    }
+   ],
+   "cycle899_scan": {
+    "conclusion": "899 artifacts ABSENT on this branch; every 899 number used below is REBUILT, never cited",
+    "hit_count": 0,
+    "hits": [],
+    "paths_scanned": 13767
+   },
+   "gate": "RESTRICTION GATE.  888's census, 883's anchor and 883's closed-form table are reproduced value-for-value, and the 899 rows -- whose artifacts are ABSENT from this branch -- are rebuilt from scratch and compared.",
+   "named_representatives_verified_by_invariants": true,
+   "pass": true
+  },
+  "D_FAMILIES": {
+   "algebraic_check": true,
+   "all_anchor_hitters_collapse_to_F_dim": true,
+   "anchor_hitting_forms": [
+    "w1 / (w0 + w1)^2",
+    "w0 * w1 / n^2",
+    "w1 / n^2",
+    "(n - 1) / n^2",
+    "w1 / (w0 * n^2)"
+   ],
+   "collision_table": [
+    {
+     "F_dim": "1/4",
+     "F_res": "1/8",
+     "equal": false,
+     "n": 2
+    },
+    {
+     "F_dim": "2/9",
+     "F_res": "2/9",
+     "equal": true,
+     "n": 3
+    },
+    {
+     "F_dim": "3/16",
+     "F_res": "5/16",
+     "equal": false,
+     "n": 4
+    },
+    {
+     "F_dim": "4/25",
+     "F_res": "2/5",
+     "equal": false,
+     "n": 5
+    },
+    {
+     "F_dim": "5/36",
+     "F_res": "35/72",
+     "equal": false,
+     "n": 6
+    },
+    {
+     "F_dim": "6/49",
+     "F_res": "4/7",
+     "equal": false,
+     "n": 7
+    },
+    {
+     "F_dim": "7/64",
+     "F_res": "21/32",
+     "equal": false,
+     "n": 8
+    }
+   ],
+   "consequence_a": "the geometric reading is EMBEDDING-INVARIANT on its whole domain of definition.  P_EMB cannot catch it.  This is stated first because it is the geometric reading's strongest computed defence and it survives.",
+   "cyclic_rows": [
+    {
+     "F_res(n)": "1/8",
+     "L_face": "1/8",
+     "agrees": true,
+     "class": "C2_face",
+     "order": 2
+    },
+    {
+     "F_res(n)": "1/8",
+     "L_face": "1/8",
+     "agrees": true,
+     "class": "C2_edge",
+     "order": 2
+    },
+    {
+     "F_res(n)": "1/8",
+     "L_face": "1/8",
+     "agrees": true,
+     "class": "C2_edge",
+     "order": 2
+    },
+    {
+     "F_res(n)": "1/8",
+     "L_face": "1/8",
+     "agrees": true,
+     "class": "C2_face",
+     "order": 2
+    },
+    {
+     "F_res(n)": "1/8",
+     "L_face": "1/8",
+     "agrees": true,
+     "class": "C2_edge",
+     "order": 2
+    },
+    {
+     "F_res(n)": "1/8",
+     "L_face": "1/8",
+     "agrees": true,
+     "class": "C2_edge",
+     "order": 2
+    },
+    {
+     "F_res(n)": "1/8",
+     "L_face": "1/8",
+     "agrees": true,
+     "class": "C2_edge",
+     "order": 2
+    },
+    {
+     "F_res(n)": "1/8",
+     "L_face": "1/8",
+     "agrees": true,
+     "class": "C2_edge",
+     "order": 2
+    },
+    {
+     "F_res(n)": "1/8",
+     "L_face": "1/8",
+     "agrees": true,
+     "class": "C2_face",
+     "order": 2
+    },
+    {
+     "F_res(n)": "2/9",
+     "L_face": "2/9",
+     "agrees": true,
+     "class": "C3_body",
+     "order": 3
+    },
+    {
+     "F_res(n)": "2/9",
+     "L_face": "2/9",
+     "agrees": true,
+     "class": "C3_body",
+     "order": 3
+    },
+    {
+     "F_res(n)": "2/9",
+     "L_face": "2/9",
+     "agrees": true,
+     "class": "C3_body",
+     "order": 3
+    },
+    {
+     "F_res(n)": "2/9",
+     "L_face": "2/9",
+     "agrees": true,
+     "class": "C3_body",
+     "order": 3
+    },
+    {
+     "F_res(n)": "5/16",
+     "L_face": "5/16",
+     "agrees": true,
+     "class": "C4_face",
+     "order": 4
+    },
+    {
+     "F_res(n)": "5/16",
+     "L_face": "5/16",
+     "agrees": true,
+     "class": "C4_face",
+     "order": 4
+    },
+    {
+     "F_res(n)": "5/16",
+     "L_face": "5/16",
+     "agrees": true,
+     "class": "C4_face",
+     "order": 4
+    }
+   ],
+   "families_agree_only_at": [
+    3
+   ],
+   "family_rows": [
+    {
+     "equals_F_dim_as_a_family": true,
+     "hits_anchor_at_n_3": true,
+     "name": "w1 / (w0 + w1)^2",
+     "values_n_2_to_6": {
+      "2": "1/4",
+      "3": "2/9",
+      "4": "3/16",
+      "5": "4/25",
+      "6": "5/36"
+     }
+    },
+    {
+     "equals_F_dim_as_a_family": true,
+     "hits_anchor_at_n_3": true,
+     "name": "w0 * w1 / n^2",
+     "values_n_2_to_6": {
+      "2": "1/4",
+      "3": "2/9",
+      "4": "3/16",
+      "5": "4/25",
+      "6": "5/36"
+     }
+    },
+    {
+     "equals_F_dim_as_a_family": true,
+     "hits_anchor_at_n_3": true,
+     "name": "w1 / n^2",
+     "values_n_2_to_6": {
+      "2": "1/4",
+      "3": "2/9",
+      "4": "3/16",
+      "5": "4/25",
+      "6": "5/36"
+     }
+    },
+    {
+     "equals_F_dim_as_a_family": true,
+     "hits_anchor_at_n_3": true,
+     "name": "(n - 1) / n^2",
+     "values_n_2_to_6": {
+      "2": "1/4",
+      "3": "2/9",
+      "4": "3/16",
+      "5": "4/25",
+      "6": "5/36"
+     }
+    },
+    {
+     "equals_F_dim_as_a_family": true,
+     "hits_anchor_at_n_3": true,
+     "name": "w1 / (w0 * n^2)",
+     "values_n_2_to_6": {
+      "2": "1/4",
+      "3": "2/9",
+      "4": "3/16",
+      "5": "4/25",
+      "6": "5/36"
+     }
+    },
+    {
+     "equals_F_dim_as_a_family": false,
+     "hits_anchor_at_n_3": false,
+     "name": "w0 / n",
+     "values_n_2_to_6": {
+      "2": "1/2",
+      "3": "1/3",
+      "4": "1/4",
+      "5": "1/5",
+      "6": "1/6"
+     }
+    },
+    {
+     "equals_F_dim_as_a_family": false,
+     "hits_anchor_at_n_3": false,
+     "name": "(w0 + w1) / n^2",
+     "values_n_2_to_6": {
+      "2": "1/2",
+      "3": "1/3",
+      "4": "1/4",
+      "5": "1/5",
+      "6": "1/6"
+     }
+    }
+   ],
+   "pass": true,
+   "theorem_a": "C901-T2a.  For every cyclic rotation subgroup H <= O of order n, L_face(H) = (n^2 - 1) / (12 n), independent of which axis H rotates about.  Reason: every non-identity element of a cyclic order-n rotation group acts on the normal plane as a rotation by 2 pi k / n, so det_R(I - h|_N) = 2 - 2 cos(2 pi k / n) depends on k and n alone.  Verified here on all cyclic subgroups of O, all conjugates.",
+   "theorem_a_holds": true,
+   "theorem_b": "C901-T2b.  Of the seven closed forms 883 enumerated, exactly five return the anchor 2/9 at n = 3, and ALL FIVE are the same function of n once (w0, w1) = (1, n - 1) is substituted, namely (n - 1) / n^2.  883's five-fold discrete ambiguity is therefore FAMILY-DEGENERATE: it is one family, not five.",
+   "theorem_b_holds": true,
+   "theorem_c": "C901-T2c.  F_dim(n) = F_res(n) iff n = 3 (checked n = 2..8; 12 n (n - 1) = n^2 (n^2 - 1) reduces to 12 (n - 1) = n (n^2 - 1) = n (n - 1)(n + 1), i.e. n(n + 1) = 12, i.e. n = 3)."
+  },
+  "E_PREDICATE": {
+   "detail": {
+    "PLANT_S_content_only": {
+     "P_EMB": {
+      "holds": true,
+      "rows": [
+       {
+        "base_value": "2/1",
+        "class": "C2_face",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "2/1",
+        "class": "C2_edge",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "3/1",
+        "class": "C3_body",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "4/1",
+        "class": "C4_face",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "4/1",
+        "class": "V_face",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "4/1",
+        "class": "V_edge",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       }
+      ]
+     },
+     "P_SCOPE": {
+      "holds": true,
+      "rows": [
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face"
+        ],
+        "distinct_values": [
+         "2/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C2_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 4,
+        "single_valued": true,
+        "value_to_scopes": {
+         "2/1": [
+          "C2_edge",
+          "C2_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge"
+        ],
+        "distinct_values": [
+         "2/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C2_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "2/1": [
+          "C2_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C3_body"
+        ],
+        "distinct_values": [
+         "3/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C3_body",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          0,
+          -1
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "3/1": [
+          "C3_body"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_edge"
+        ],
+        "distinct_values": [
+         "4/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C4_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": true,
+        "value_to_scopes": {
+         "4/1": [
+          "C4_face",
+          "V_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_face"
+        ],
+        "distinct_values": [
+         "4/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "V_face",
+        "records": [
+         [
+          -1,
+          -1,
+          0
+         ],
+         [
+          -1,
+          1,
+          0
+         ],
+         [
+          1,
+          -1,
+          0
+         ],
+         [
+          1,
+          1,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": true,
+        "value_to_scopes": {
+         "4/1": [
+          "C4_face",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_edge"
+        ],
+        "distinct_values": [
+         "4/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "V_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": true,
+        "value_to_scopes": {
+         "4/1": [
+          "C4_face",
+          "V_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "2/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C2_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "2/1": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge"
+        ],
+        "distinct_values": [
+         "2/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C2_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "2/1": [
+          "C2_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C3_body"
+        ],
+        "distinct_values": [
+         "3/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C3_body",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          0,
+          -1
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "3/1": [
+          "C3_body"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "4/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C4_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "4/1": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "4/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "V_face",
+        "records": [
+         [
+          -1,
+          -1,
+          0
+         ],
+         [
+          -1,
+          1,
+          0
+         ],
+         [
+          1,
+          -1,
+          0
+         ],
+         [
+          1,
+          1,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "4/1": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "4/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "V_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "4/1": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       }
+      ]
+     },
+     "P_TOTAL": {
+      "holds": true,
+      "rows": [
+       {
+        "class": "C2_face",
+        "defined": true,
+        "n": 2,
+        "value": "2/1"
+       },
+       {
+        "class": "C2_edge",
+        "defined": true,
+        "n": 2,
+        "value": "2/1"
+       },
+       {
+        "class": "C3_body",
+        "defined": true,
+        "n": 3,
+        "value": "3/1"
+       },
+       {
+        "class": "C4_face",
+        "defined": true,
+        "n": 4,
+        "value": "4/1"
+       },
+       {
+        "class": "V_face",
+        "defined": true,
+        "n": 4,
+        "value": "4/1"
+       },
+       {
+        "class": "V_edge",
+        "defined": true,
+        "n": 4,
+        "value": "4/1"
+       }
+      ]
+     },
+     "content_only": true
+    },
+    "PLANT_V_embedding_dependent": {
+     "P_EMB": {
+      "holds": false,
+      "rows": [
+       {
+        "base_value": "-1/1",
+        "class": "C2_face",
+        "exhibits": [
+         {
+          "rotation": "((0, -1, 0), (-1, 0, 0), (0, 0, -1))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (0, 0, -1), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (0, 0, 1), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (1, 0, 0), (0, 0, 1))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (-1, 0, 0), (0, 1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (0, -1, 0), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (0, 1, 0), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (1, 0, 0), (0, -1, 0))",
+          "value": "0/1"
+         }
+        ],
+        "invariant": false,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 18
+       },
+       {
+        "base_value": "-1/1",
+        "class": "C2_edge",
+        "exhibits": [
+         {
+          "rotation": "((-1, 0, 0), (0, -1, 0), (0, 0, 1))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((-1, 0, 0), (0, 0, -1), (0, -1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((-1, 0, 0), (0, 0, 1), (0, 1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((-1, 0, 0), (0, 1, 0), (0, 0, -1))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (-1, 0, 0), (0, 0, -1))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (0, 0, -1), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (0, 0, 1), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (1, 0, 0), (0, 0, 1))",
+          "value": "0/1"
+         }
+        ],
+        "invariant": false,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 18
+       },
+       {
+        "base_value": "-1/1",
+        "class": "C3_body",
+        "exhibits": [
+         {
+          "rotation": "((-1, 0, 0), (0, -1, 0), (0, 0, 1))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((-1, 0, 0), (0, 0, -1), (0, -1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((-1, 0, 0), (0, 0, 1), (0, 1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((-1, 0, 0), (0, 1, 0), (0, 0, -1))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (-1, 0, 0), (0, 0, -1))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (0, 0, -1), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (0, 0, 1), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, -1, 0), (1, 0, 0), (0, 0, 1))",
+          "value": "0/1"
+         }
+        ],
+        "invariant": false,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 14
+       },
+       {
+        "base_value": "-1/1",
+        "class": "C4_face",
+        "exhibits": [
+         {
+          "rotation": "((0, 0, -1), (-1, 0, 0), (0, 1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (0, -1, 0), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (0, 1, 0), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (1, 0, 0), (0, -1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (-1, 0, 0), (0, -1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (0, -1, 0), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (0, 1, 0), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (1, 0, 0), (0, 1, 0))",
+          "value": "0/1"
+         }
+        ],
+        "invariant": false,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 10
+       },
+       {
+        "base_value": "-1/1",
+        "class": "V_face",
+        "exhibits": [
+         {
+          "rotation": "((0, 0, -1), (-1, 0, 0), (0, 1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (0, -1, 0), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (0, 1, 0), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (1, 0, 0), (0, -1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (-1, 0, 0), (0, -1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (0, -1, 0), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (0, 1, 0), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (1, 0, 0), (0, 1, 0))",
+          "value": "0/1"
+         }
+        ],
+        "invariant": false,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 10
+       },
+       {
+        "base_value": "-1/1",
+        "class": "V_edge",
+        "exhibits": [
+         {
+          "rotation": "((0, 0, -1), (-1, 0, 0), (0, 1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (0, -1, 0), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (0, 1, 0), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, -1), (1, 0, 0), (0, -1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (-1, 0, 0), (0, -1, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (0, -1, 0), (1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (0, 1, 0), (-1, 0, 0))",
+          "value": "0/1"
+         },
+         {
+          "rotation": "((0, 0, 1), (1, 0, 0), (0, 1, 0))",
+          "value": "0/1"
+         }
+        ],
+        "invariant": false,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 10
+       }
+      ]
+     },
+     "P_SCOPE": {
+      "holds": true,
+      "rows": [
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C2_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 4,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C2_edge",
+          "C2_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C2_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C2_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C3_body"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C3_body",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          0,
+          -1
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C3_body"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_edge"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C4_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C4_face",
+          "V_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_face"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "V_face",
+        "records": [
+         [
+          -1,
+          -1,
+          0
+         ],
+         [
+          -1,
+          1,
+          0
+         ],
+         [
+          1,
+          -1,
+          0
+         ],
+         [
+          1,
+          1,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C4_face",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_edge"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "V_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C4_face",
+          "V_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C2_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C2_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C2_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C3_body"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C3_body",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          0,
+          -1
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C3_body"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C4_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "V_face",
+        "records": [
+         [
+          -1,
+          -1,
+          0
+         ],
+         [
+          -1,
+          1,
+          0
+         ],
+         [
+          1,
+          -1,
+          0
+         ],
+         [
+          1,
+          1,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "-1/1"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "V_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "-1/1": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       }
+      ]
+     },
+     "P_TOTAL": {
+      "holds": true,
+      "rows": [
+       {
+        "class": "C2_face",
+        "defined": true,
+        "n": 2,
+        "value": "-1/1"
+       },
+       {
+        "class": "C2_edge",
+        "defined": true,
+        "n": 2,
+        "value": "-1/1"
+       },
+       {
+        "class": "C3_body",
+        "defined": true,
+        "n": 3,
+        "value": "-1/1"
+       },
+       {
+        "class": "C4_face",
+        "defined": true,
+        "n": 4,
+        "value": "-1/1"
+       },
+       {
+        "class": "V_face",
+        "defined": true,
+        "n": 4,
+        "value": "-1/1"
+       },
+       {
+        "class": "V_edge",
+        "defined": true,
+        "n": 4,
+        "value": "-1/1"
+       }
+      ]
+     },
+     "content_only": false
+    },
+    "READING_D_content_space": {
+     "P_EMB": {
+      "holds": true,
+      "rows": [
+       {
+        "base_value": "1/4",
+        "class": "C2_face",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "1/4",
+        "class": "C2_edge",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "2/9",
+        "class": "C3_body",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "3/16",
+        "class": "C4_face",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "3/16",
+        "class": "V_face",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "3/16",
+        "class": "V_edge",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       }
+      ]
+     },
+     "P_SCOPE": {
+      "holds": true,
+      "rows": [
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face"
+        ],
+        "distinct_values": [
+         "1/4"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C2_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 4,
+        "single_valued": true,
+        "value_to_scopes": {
+         "1/4": [
+          "C2_edge",
+          "C2_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge"
+        ],
+        "distinct_values": [
+         "1/4"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C2_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "1/4": [
+          "C2_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C3_body"
+        ],
+        "distinct_values": [
+         "2/9"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C3_body",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          0,
+          -1
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "2/9": [
+          "C3_body"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_edge"
+        ],
+        "distinct_values": [
+         "3/16"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C4_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": true,
+        "value_to_scopes": {
+         "3/16": [
+          "C4_face",
+          "V_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_face"
+        ],
+        "distinct_values": [
+         "3/16"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "V_face",
+        "records": [
+         [
+          -1,
+          -1,
+          0
+         ],
+         [
+          -1,
+          1,
+          0
+         ],
+         [
+          1,
+          -1,
+          0
+         ],
+         [
+          1,
+          1,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": true,
+        "value_to_scopes": {
+         "3/16": [
+          "C4_face",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_edge"
+        ],
+        "distinct_values": [
+         "3/16"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "V_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": true,
+        "value_to_scopes": {
+         "3/16": [
+          "C4_face",
+          "V_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "1/4"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C2_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "1/4": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge"
+        ],
+        "distinct_values": [
+         "1/4"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C2_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "1/4": [
+          "C2_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C3_body"
+        ],
+        "distinct_values": [
+         "2/9"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C3_body",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          0,
+          -1
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "2/9": [
+          "C3_body"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "3/16"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C4_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "3/16": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "3/16"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "V_face",
+        "records": [
+         [
+          -1,
+          -1,
+          0
+         ],
+         [
+          -1,
+          1,
+          0
+         ],
+         [
+          1,
+          -1,
+          0
+         ],
+         [
+          1,
+          1,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "3/16": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "3/16"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "V_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": true,
+        "value_to_scopes": {
+         "3/16": [
+          "C2_edge",
+          "C2_face",
+          "C4_face",
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       }
+      ]
+     },
+     "P_TOTAL": {
+      "holds": true,
+      "rows": [
+       {
+        "class": "C2_face",
+        "defined": true,
+        "n": 2,
+        "value": "1/4"
+       },
+       {
+        "class": "C2_edge",
+        "defined": true,
+        "n": 2,
+        "value": "1/4"
+       },
+       {
+        "class": "C3_body",
+        "defined": true,
+        "n": 3,
+        "value": "2/9"
+       },
+       {
+        "class": "C4_face",
+        "defined": true,
+        "n": 4,
+        "value": "3/16"
+       },
+       {
+        "class": "V_face",
+        "defined": true,
+        "n": 4,
+        "value": "3/16"
+       },
+       {
+        "class": "V_edge",
+        "defined": true,
+        "n": 4,
+        "value": "3/16"
+       }
+      ]
+     },
+     "content_only": true
+    },
+    "READING_R_embedding_space": {
+     "P_EMB": {
+      "holds": true,
+      "rows": [
+       {
+        "base_value": "1/8",
+        "class": "C2_face",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "1/8",
+        "class": "C2_edge",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "2/9",
+        "class": "C3_body",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "5/16",
+        "class": "C4_face",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "UNDEFINED",
+        "class": "V_face",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       },
+       {
+        "base_value": "UNDEFINED",
+        "class": "V_edge",
+        "exhibits": [],
+        "invariant": true,
+        "re_embeddings_tested": 27,
+        "value_moved_count": 0
+       }
+      ]
+     },
+     "P_SCOPE": {
+      "holds": false,
+      "rows": [
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face"
+        ],
+        "distinct_values": [
+         "1/8"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C2_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 4,
+        "single_valued": true,
+        "value_to_scopes": {
+         "1/8": [
+          "C2_edge",
+          "C2_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge"
+        ],
+        "distinct_values": [
+         "1/8"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C2_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "1/8": [
+          "C2_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C3_body"
+        ],
+        "distinct_values": [
+         "2/9"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C3_body",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          0,
+          -1
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "2/9": [
+          "C3_body"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_edge"
+        ],
+        "distinct_values": [
+         "5/16",
+         "UNDEFINED"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "C4_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": false,
+        "value_to_scopes": {
+         "5/16": [
+          "C4_face"
+         ],
+         "UNDEFINED": [
+          "V_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_face"
+        ],
+        "distinct_values": [
+         "5/16",
+         "UNDEFINED"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "V_face",
+        "records": [
+         [
+          -1,
+          -1,
+          0
+         ],
+         [
+          -1,
+          1,
+          0
+         ],
+         [
+          1,
+          -1,
+          0
+         ],
+         [
+          1,
+          1,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": false,
+        "value_to_scopes": {
+         "5/16": [
+          "C4_face"
+         ],
+         "UNDEFINED": [
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C4_face",
+         "V_edge"
+        ],
+        "distinct_values": [
+         "5/16",
+         "UNDEFINED"
+        ],
+        "ladder": "L1",
+        "record_collection_from": "V_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 2,
+        "single_valued": false,
+        "value_to_scopes": {
+         "5/16": [
+          "C4_face"
+         ],
+         "UNDEFINED": [
+          "V_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "1/8",
+         "5/16",
+         "UNDEFINED"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C2_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": false,
+        "value_to_scopes": {
+         "1/8": [
+          "C2_edge",
+          "C2_face"
+         ],
+         "5/16": [
+          "C4_face"
+         ],
+         "UNDEFINED": [
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge"
+        ],
+        "distinct_values": [
+         "1/8"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C2_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "1/8": [
+          "C2_edge"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C3_body"
+        ],
+        "distinct_values": [
+         "2/9"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C3_body",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          0,
+          -1
+         ]
+        ],
+        "scope_count": 1,
+        "single_valued": true,
+        "value_to_scopes": {
+         "2/9": [
+          "C3_body"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "1/8",
+         "5/16",
+         "UNDEFINED"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "C4_face",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": false,
+        "value_to_scopes": {
+         "1/8": [
+          "C2_edge",
+          "C2_face"
+         ],
+         "5/16": [
+          "C4_face"
+         ],
+         "UNDEFINED": [
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "1/8",
+         "5/16",
+         "UNDEFINED"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "V_face",
+        "records": [
+         [
+          -1,
+          -1,
+          0
+         ],
+         [
+          -1,
+          1,
+          0
+         ],
+         [
+          1,
+          -1,
+          0
+         ],
+         [
+          1,
+          1,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": false,
+        "value_to_scopes": {
+         "1/8": [
+          "C2_edge",
+          "C2_face"
+         ],
+         "5/16": [
+          "C4_face"
+         ],
+         "UNDEFINED": [
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       },
+       {
+        "admissible_scopes": [
+         "C2_edge",
+         "C2_face",
+         "C4_face",
+         "D4_face",
+         "V_edge",
+         "V_face"
+        ],
+        "distinct_values": [
+         "1/8",
+         "5/16",
+         "UNDEFINED"
+        ],
+        "ladder": "L2",
+        "record_collection_from": "V_edge",
+        "records": [
+         [
+          -1,
+          0,
+          0
+         ],
+         [
+          0,
+          -1,
+          0
+         ],
+         [
+          0,
+          1,
+          0
+         ],
+         [
+          1,
+          0,
+          0
+         ]
+        ],
+        "scope_count": 9,
+        "single_valued": false,
+        "value_to_scopes": {
+         "1/8": [
+          "C2_edge",
+          "C2_face"
+         ],
+         "5/16": [
+          "C4_face"
+         ],
+         "UNDEFINED": [
+          "D4_face",
+          "V_edge",
+          "V_face"
+         ]
+        }
+       }
+      ]
+     },
+     "P_TOTAL": {
+      "holds": false,
+      "rows": [
+       {
+        "class": "C2_face",
+        "defined": true,
+        "n": 2,
+        "value": "1/8"
+       },
+       {
+        "class": "C2_edge",
+        "defined": true,
+        "n": 2,
+        "value": "1/8"
+       },
+       {
+        "class": "C3_body",
+        "defined": true,
+        "n": 3,
+        "value": "2/9"
+       },
+       {
+        "class": "C4_face",
+        "defined": true,
+        "n": 4,
+        "value": "5/16"
+       },
+       {
+        "class": "V_face",
+        "defined": false,
+        "n": 4,
+        "value": "UNDEFINED"
+       },
+       {
+        "class": "V_edge",
+        "defined": false,
+        "n": 4,
+        "value": "UNDEFINED"
+       }
+      ]
+     },
+     "content_only": false
+    }
+   },
+   "falsifier_visibility": {
+    "planted_surviving_reading": "PLANT-S reads the record count alone",
+    "planted_surviving_survived": true,
+    "planted_violating_caught_by": [
+     "P_EMB"
+    ],
+    "planted_violating_detected": true,
+    "planted_violating_reading": "PLANT-V reads the x-coordinate of the lexicographically first record site -- pure ambient embedding",
+    "the_predicate_can_see_both_ways": true
+   },
+   "pass": true,
+   "summary": {
+    "PLANT_S_content_only": {
+     "P_EMB": true,
+     "P_SCOPE": true,
+     "P_TOTAL": true,
+     "content_only": true
+    },
+    "PLANT_V_embedding_dependent": {
+     "P_EMB": false,
+     "P_SCOPE": true,
+     "P_TOTAL": true,
+     "content_only": false
+    },
+    "READING_D_content_space": {
+     "P_EMB": true,
+     "P_SCOPE": true,
+     "P_TOTAL": true,
+     "content_only": true
+    },
+    "READING_R_embedding_space": {
+     "P_EMB": true,
+     "P_SCOPE": false,
+     "P_TOTAL": false,
+     "content_only": false
+    }
+   },
+   "theorem": "C901-T3.  The content-only predicate, formalized as P_EMB & P_SCOPE & P_TOTAL, is evaluated on both candidate readings and on two planted readings."
+  },
+  "F_C2_DISCRIMINATOR": {
+   "C2_edge_L_values": [
+    "1/8"
+   ],
+   "C2_face_L_values": [
+    "1/8"
+   ],
+   "F_dim_at_n_2": "1/4",
+   "F_res_at_n_2": "1/8",
+   "L_face_same_on_both_classes": true,
+   "RESULT": "GEOMETRIC READING SURVIVES THE C2 TEST.  L_face = 1/8 on BOTH classes.  Reported honestly: this test does NOT produce a content-alone violation.  The reason is structural -- every order-2 rotation acts on its normal plane as -I, so det_R(I - h|_N) = 4 whatever the axis.  n = 2 separates the two FAMILIES (1/4 vs 1/8) but does not indict either reading.",
+   "class_sizes": {
+    "C2_edge": 6,
+    "C2_face": 3
+   },
+   "families_separate_at_n_2": true,
+   "geometries_genuinely_differ": true,
+   "pass": true,
+   "rows": [
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis_type": "coordinate/face axis",
+     "class": "C2_face",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "generator": "((-1, 0, 0), (0, -1, 0), (0, 0, 1))",
+     "normal_plane_basis": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ]
+     ],
+     "readout_isotype_pair": [
+      1,
+      1
+     ],
+     "rotation_axis": [
+      "0/1",
+      "0/1",
+      "1/1"
+     ],
+     "transverse_determinants": {
+      "((-1, 0, 0), (0, -1, 0), (0, 0, 1))": "4/1"
+     }
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis_type": "coordinate/face axis",
+     "class": "C2_face",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "generator": "((-1, 0, 0), (0, 1, 0), (0, 0, -1))",
+     "normal_plane_basis": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ],
+     "readout_isotype_pair": [
+      1,
+      1
+     ],
+     "rotation_axis": [
+      "0/1",
+      "1/1",
+      "0/1"
+     ],
+     "transverse_determinants": {
+      "((-1, 0, 0), (0, 1, 0), (0, 0, -1))": "4/1"
+     }
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis_type": "coordinate/face axis",
+     "class": "C2_face",
+     "free_orbit": [
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "generator": "((1, 0, 0), (0, -1, 0), (0, 0, -1))",
+     "normal_plane_basis": [
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ],
+     "readout_isotype_pair": [
+      1,
+      1
+     ],
+     "rotation_axis": [
+      "1/1",
+      "0/1",
+      "0/1"
+     ],
+     "transverse_determinants": {
+      "((1, 0, 0), (0, -1, 0), (0, 0, -1))": "4/1"
+     }
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis_type": "edge / face-diagonal axis",
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "generator": "((-1, 0, 0), (0, 0, -1), (0, -1, 0))",
+     "normal_plane_basis": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "1/2",
+       "1/2"
+      ]
+     ],
+     "readout_isotype_pair": [
+      1,
+      1
+     ],
+     "rotation_axis": [
+      "0/1",
+      "-1/1",
+      "1/1"
+     ],
+     "transverse_determinants": {
+      "((-1, 0, 0), (0, 0, -1), (0, -1, 0))": "4/1"
+     }
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis_type": "edge / face-diagonal axis",
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "generator": "((-1, 0, 0), (0, 0, 1), (0, 1, 0))",
+     "normal_plane_basis": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "1/2",
+       "-1/2"
+      ]
+     ],
+     "readout_isotype_pair": [
+      1,
+      1
+     ],
+     "rotation_axis": [
+      "0/1",
+      "1/1",
+      "1/1"
+     ],
+     "transverse_determinants": {
+      "((-1, 0, 0), (0, 0, 1), (0, 1, 0))": "4/1"
+     }
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis_type": "edge / face-diagonal axis",
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "generator": "((0, -1, 0), (-1, 0, 0), (0, 0, -1))",
+     "normal_plane_basis": [
+      [
+       "1/2",
+       "1/2",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ],
+     "readout_isotype_pair": [
+      1,
+      1
+     ],
+     "rotation_axis": [
+      "-1/1",
+      "1/1",
+      "0/1"
+     ],
+     "transverse_determinants": {
+      "((0, -1, 0), (-1, 0, 0), (0, 0, -1))": "4/1"
+     }
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis_type": "edge / face-diagonal axis",
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "generator": "((0, 0, -1), (0, -1, 0), (-1, 0, 0))",
+     "normal_plane_basis": [
+      [
+       "1/2",
+       "0/1",
+       "1/2"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ]
+     ],
+     "readout_isotype_pair": [
+      1,
+      1
+     ],
+     "rotation_axis": [
+      "-1/1",
+      "0/1",
+      "1/1"
+     ],
+     "transverse_determinants": {
+      "((0, 0, -1), (0, -1, 0), (-1, 0, 0))": "4/1"
+     }
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis_type": "edge / face-diagonal axis",
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       -1
+      ]
+     ],
+     "generator": "((0, 0, 1), (0, -1, 0), (1, 0, 0))",
+     "normal_plane_basis": [
+      [
+       "1/2",
+       "0/1",
+       "-1/2"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ]
+     ],
+     "readout_isotype_pair": [
+      1,
+      1
+     ],
+     "rotation_axis": [
+      "1/1",
+      "0/1",
+      "1/1"
+     ],
+     "transverse_determinants": {
+      "((0, 0, 1), (0, -1, 0), (1, 0, 0))": "4/1"
+     }
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis_type": "edge / face-diagonal axis",
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ]
+     ],
+     "generator": "((0, 1, 0), (1, 0, 0), (0, 0, -1))",
+     "normal_plane_basis": [
+      [
+       "1/2",
+       "-1/2",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ],
+     "readout_isotype_pair": [
+      1,
+      1
+     ],
+     "rotation_axis": [
+      "1/1",
+      "1/1",
+      "0/1"
+     ],
+     "transverse_determinants": {
+      "((0, 1, 0), (1, 0, 0), (0, 0, -1))": "4/1"
+     }
+    }
+   ],
+   "test_was_decisive": false,
+   "theorem": "C901-T4 (the C2 discriminator).  Both canonical C2 classes are tested.  Their rotation axes are of genuinely different lattice type -- coordinate axes (3 of them) versus face-diagonal axes (6 of them) -- and their normal planes are correspondingly different subspaces of R^3."
+  },
+  "G_CONJUGATE": {
+   "RESULT": "GEOMETRIC READING SURVIVES THE CONJUGATE TEST.  All 3 conjugate C4_face subgroups give 5/16; all 4 C3_body give 2/9; all 3 C2_face and all 6 C2_edge give 1/8.",
+   "all_conjugates_agree": true,
+   "by_class": {
+    "C2_edge": {
+     "all_conjugates_agree": true,
+     "conjugates": 6,
+     "distinct_L_values": [
+      "1/8"
+     ]
+    },
+    "C2_face": {
+     "all_conjugates_agree": true,
+     "conjugates": 3,
+     "distinct_L_values": [
+      "1/8"
+     ]
+    },
+    "C3_body": {
+     "all_conjugates_agree": true,
+     "conjugates": 4,
+     "distinct_L_values": [
+      "2/9"
+     ]
+    },
+    "C4_face": {
+     "all_conjugates_agree": true,
+     "conjugates": 3,
+     "distinct_L_values": [
+      "5/16"
+     ]
+    }
+   },
+   "pass": true,
+   "row_count": 16,
+   "rows": [
+    {
+     "K_native": "3/16",
+     "L_face": "5/16",
+     "axis": [
+      "0/1",
+      "0/1",
+      "1/1"
+     ],
+     "class": "C4_face",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ]
+     ]
+    },
+    {
+     "K_native": "3/16",
+     "L_face": "5/16",
+     "axis": [
+      "0/1",
+      "1/1",
+      "0/1"
+     ],
+     "class": "C4_face",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       -1
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ]
+    },
+    {
+     "K_native": "3/16",
+     "L_face": "5/16",
+     "axis": [
+      "1/1",
+      "0/1",
+      "0/1"
+     ],
+     "class": "C4_face",
+     "free_orbit": [
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       0,
+       -1
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ]
+    },
+    {
+     "K_native": "2/9",
+     "L_face": "2/9",
+     "axis": [
+      "1/1",
+      "-1/1",
+      "1/1"
+     ],
+     "class": "C3_body",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       -1
+      ],
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "2/3",
+       "1/3",
+       "-1/3"
+      ],
+      [
+       "1/3",
+       "2/3",
+       "1/3"
+      ]
+     ]
+    },
+    {
+     "K_native": "2/9",
+     "L_face": "2/9",
+     "axis": [
+      "-1/1",
+      "1/1",
+      "1/1"
+     ],
+     "class": "C3_body",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "2/3",
+       "1/3",
+       "1/3"
+      ],
+      [
+       "1/3",
+       "2/3",
+       "-1/3"
+      ]
+     ]
+    },
+    {
+     "K_native": "2/9",
+     "L_face": "2/9",
+     "axis": [
+      "-1/1",
+      "-1/1",
+      "1/1"
+     ],
+     "class": "C3_body",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "normal_plane": [
+      [
+       "2/3",
+       "-1/3",
+       "1/3"
+      ],
+      [
+       "-1/3",
+       "2/3",
+       "1/3"
+      ]
+     ]
+    },
+    {
+     "K_native": "2/9",
+     "L_face": "2/9",
+     "axis": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "class": "C3_body",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       0,
+       -1
+      ]
+     ],
+     "normal_plane": [
+      [
+       "2/3",
+       "-1/3",
+       "-1/3"
+      ],
+      [
+       "-1/3",
+       "2/3",
+       "-1/3"
+      ]
+     ]
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis": [
+      "0/1",
+      "0/1",
+      "1/1"
+     ],
+     "class": "C2_face",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ]
+     ]
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis": [
+      "0/1",
+      "1/1",
+      "0/1"
+     ],
+     "class": "C2_face",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ]
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis": [
+      "1/1",
+      "0/1",
+      "0/1"
+     ],
+     "class": "C2_face",
+     "free_orbit": [
+      [
+       0,
+       -1,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ]
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis": [
+      "0/1",
+      "-1/1",
+      "1/1"
+     ],
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "1/2",
+       "1/2"
+      ]
+     ]
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis": [
+      "0/1",
+      "1/1",
+      "1/1"
+     ],
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       1,
+       0,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/1",
+       "0/1",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "1/2",
+       "-1/2"
+      ]
+     ]
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis": [
+      "-1/1",
+      "1/1",
+      "0/1"
+     ],
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       1,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/2",
+       "1/2",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ]
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis": [
+      "-1/1",
+      "0/1",
+      "1/1"
+     ],
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/2",
+       "0/1",
+       "1/2"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ]
+     ]
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis": [
+      "1/1",
+      "0/1",
+      "1/1"
+     ],
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       -1
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/2",
+       "0/1",
+       "-1/2"
+      ],
+      [
+       "0/1",
+       "1/1",
+       "0/1"
+      ]
+     ]
+    },
+    {
+     "K_native": "1/4",
+     "L_face": "1/8",
+     "axis": [
+      "1/1",
+      "1/1",
+      "0/1"
+     ],
+     "class": "C2_edge",
+     "free_orbit": [
+      [
+       -1,
+       0,
+       0
+      ],
+      [
+       0,
+       -1,
+       0
+      ]
+     ],
+     "normal_plane": [
+      [
+       "1/2",
+       "-1/2",
+       "0/1"
+      ],
+      [
+       "0/1",
+       "0/1",
+       "1/1"
+      ]
+     ]
+    }
+   ],
+   "test_was_decisive": false,
+   "theorem": "C901-T5 (the conjugate test).  Every conjugate of every cyclic scope class is evaluated.  Conjugation by an orthogonal map carries the normal plane to the normal plane and preserves determinants, so agreement is expected; it is COMPUTED here rather than assumed, because a disagreement would have been an immediate content-alone violation."
+  },
+  "H_CRUX": {
+   "C4_face_acts_simply_transitively": true,
+   "C4_face_elements": [
+    "((-1, 0, 0), (0, -1, 0), (0, 0, 1))",
+    "((0, -1, 0), (1, 0, 0), (0, 0, 1))",
+    "((0, 1, 0), (-1, 0, 0), (0, 0, 1))",
+    "((1, 0, 0), (0, 1, 0), (0, 0, 1))"
+   ],
+   "P_SCOPE_violated_by_geometric_reading_on_L1": true,
+   "P_SCOPE_violated_by_geometric_reading_on_L2": true,
+   "P_TOTAL_violated_by_geometric_reading": true,
+   "THE_COMPUTED_VIOLATION": "ONE record collection, TWO admissible scopes, TWO answers.  On the most favourable ladder L1 (simply transitive scopes only) the geometric reading returns 5/16 under C4_face and NO VALUE under V_edge.  On ladder L2 (all preserving rotation subgroups) it returns ['1/8', '5/16', 'UNDEFINED'] -- a value-versus-value disagreement, not merely a definedness gap.  The content reading returns 3/16 on every scope of both ladders, because (n - 1)/n^2 is a function of the RECORD COUNT alone and takes no ambient input.",
+   "V_edge_acts_simply_transitively": true,
+   "V_edge_elements": [
+    "((-1, 0, 0), (0, -1, 0), (0, 0, 1))",
+    "((0, -1, 0), (-1, 0, 0), (0, 0, -1))",
+    "((0, 1, 0), (1, 0, 0), (0, 0, -1))",
+    "((1, 0, 0), (0, 1, 0), (0, 0, 1))"
+   ],
+   "constructions_undefined_on_free_orbits": [
+    {
+     "K_native_on_a_free_orbit": "3/16",
+     "L_face": "UNDEFINED",
+     "class": "V_edge",
+     "fixed_locus_dimension": 0,
+     "order": 4,
+     "reason": "no rotation axis: common fixed locus has dimension 0, not 1"
+    },
+    {
+     "K_native_on_a_free_orbit": "3/16",
+     "L_face": "UNDEFINED",
+     "class": "V_face",
+     "fixed_locus_dimension": 0,
+     "order": 4,
+     "reason": "no rotation axis: common fixed locus has dimension 0, not 1"
+    },
+    {
+     "K_native_on_a_free_orbit": "7/64",
+     "L_face": "UNDEFINED",
+     "class": "D4_face",
+     "fixed_locus_dimension": 0,
+     "order": 8,
+     "reason": "no rotation axis: common fixed locus has dimension 0, not 1"
+    },
+    {
+     "K_native_on_a_free_orbit": "5/36",
+     "L_face": "UNDEFINED",
+     "class": "S3_body",
+     "fixed_locus_dimension": 0,
+     "order": 6,
+     "reason": "no rotation axis: common fixed locus has dimension 0, not 1"
+    }
+   ],
+   "content_reading_single_valued_on_both_ladders": true,
+   "content_reading_under_C4_face": "3/16",
+   "content_reading_under_V_edge": "3/16",
+   "geometric_reading_V_edge_reason": "no rotation axis: common fixed locus has dimension 0, not 1",
+   "geometric_reading_under_C4_face": "5/16",
+   "geometric_reading_under_V_edge": "UNDEFINED",
+   "pass": true,
+   "record_collection": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     -1,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ]
+   ],
+   "record_count": 4,
+   "scope_ladders_on_this_collection": {
+    "L1": {
+     "content_reading_distinct_value_count": 1,
+     "content_reading_single_valued": true,
+     "content_reading_values": {
+      "3/16": [
+       "C4_face",
+       "V_edge"
+      ]
+     },
+     "geometric_reading_distinct_value_count": 2,
+     "geometric_reading_single_valued": false,
+     "geometric_reading_values": {
+      "5/16": [
+       "C4_face"
+      ],
+      "UNDEFINED": [
+       "V_edge"
+      ]
+     },
+     "scope_count": 2,
+     "scopes": [
+      "C4_face",
+      "V_edge"
+     ]
+    },
+    "L2": {
+     "content_reading_distinct_value_count": 1,
+     "content_reading_single_valued": true,
+     "content_reading_values": {
+      "3/16": [
+       "C2_edge",
+       "C2_face",
+       "C4_face",
+       "D4_face",
+       "V_edge",
+       "V_face"
+      ]
+     },
+     "geometric_reading_distinct_value_count": 3,
+     "geometric_reading_single_valued": false,
+     "geometric_reading_values": {
+      "1/8": [
+       "C2_edge",
+       "C2_face"
+      ],
+      "5/16": [
+       "C4_face"
+      ],
+      "UNDEFINED": [
+       "D4_face",
+       "V_edge",
+       "V_face"
+      ]
+     },
+     "scope_count": 9,
+     "scopes": [
+      "C2_edge",
+      "C2_face",
+      "C4_face",
+      "D4_face",
+      "V_edge",
+      "V_face"
+     ]
+    }
+   },
+   "the_same_records_under_both_scopes": true,
+   "theorem": "C901-T6 (THE CRUX).  The four lattice sites S = {+e1, -e1, +e2, -e2} carry four pairwise-disjoint records.  That ONE record collection is a simply transitive orbit of TWO different order-4 rotation subgroups: the cyclic C4_face about the z axis, and a non-cyclic V_edge Klein group.  Both lie in the collection's full setwise stabilizer D4_face.",
+   "violation_found": true,
+   "why_the_C2_and_conjugate_tests_missed_it": "both of those tests vary the EMBEDDING while holding the scope's abstract type fixed, and C901-T2a proves the L-face is blind to that.  The crux varies the SCOPE while holding the records themselves literally fixed -- the one degree of freedom the word 'alone' forbids."
+  },
+  "I_FORM_SELECTION": {
+   "anchor_hitting_and_scope_invariant": [
+    "(n - 1) / n^2"
+   ],
+   "honesty": "This is a strictly stronger use of P_SCOPE than the crux needs.  The crux only requires that the CONTENT family be scope-stable where the geometric one is not; T7 additionally observes that scope-stability picks a unique representative of the family.",
+   "pass": true,
+   "rows": [
+    {
+     "distinct_value_count": 3,
+     "hits_anchor_at_n_3": true,
+     "name": "w1 / (w0 + w1)^2",
+     "scope_invariant": false,
+     "values_over_the_L2_scope_ladder": {
+      "1/16": [
+       "C2_face"
+      ],
+      "1/8": [
+       "C2_edge",
+       "C2_face",
+       "V_face"
+      ],
+      "3/16": [
+       "C4_face",
+       "D4_face",
+       "V_edge"
+      ]
+     }
+    },
+    {
+     "distinct_value_count": 2,
+     "hits_anchor_at_n_3": true,
+     "name": "w0 * w1 / n^2",
+     "scope_invariant": false,
+     "values_over_the_L2_scope_ladder": {
+      "1/4": [
+       "C2_edge",
+       "C2_face",
+       "V_face"
+      ],
+      "3/16": [
+       "C2_face",
+       "C4_face",
+       "D4_face",
+       "V_edge"
+      ]
+     }
+    },
+    {
+     "distinct_value_count": 3,
+     "hits_anchor_at_n_3": true,
+     "name": "w1 / n^2",
+     "scope_invariant": false,
+     "values_over_the_L2_scope_ladder": {
+      "1/16": [
+       "C2_face"
+      ],
+      "1/8": [
+       "C2_edge",
+       "C2_face",
+       "V_face"
+      ],
+      "3/16": [
+       "C4_face",
+       "D4_face",
+       "V_edge"
+      ]
+     }
+    },
+    {
+     "distinct_value_count": 1,
+     "hits_anchor_at_n_3": true,
+     "name": "(n - 1) / n^2",
+     "scope_invariant": true,
+     "values_over_the_L2_scope_ladder": {
+      "3/16": [
+       "C2_edge",
+       "C2_face",
+       "C4_face",
+       "D4_face",
+       "V_edge",
+       "V_face"
+      ]
+     }
+    },
+    {
+     "distinct_value_count": 3,
+     "hits_anchor_at_n_3": true,
+     "name": "w1 / (w0 * n^2)",
+     "scope_invariant": false,
+     "values_over_the_L2_scope_ladder": {
+      "1/16": [
+       "C2_edge",
+       "C2_face",
+       "V_face"
+      ],
+      "1/48": [
+       "C2_face"
+      ],
+      "3/16": [
+       "C4_face",
+       "D4_face",
+       "V_edge"
+      ]
+     }
+    },
+    {
+     "distinct_value_count": 3,
+     "hits_anchor_at_n_3": false,
+     "name": "w0 / n",
+     "scope_invariant": false,
+     "values_over_the_L2_scope_ladder": {
+      "1/2": [
+       "C2_edge",
+       "C2_face",
+       "V_face"
+      ],
+      "1/4": [
+       "C4_face",
+       "D4_face",
+       "V_edge"
+      ],
+      "3/4": [
+       "C2_face"
+      ]
+     }
+    },
+    {
+     "distinct_value_count": 1,
+     "hits_anchor_at_n_3": false,
+     "name": "(w0 + w1) / n^2",
+     "scope_invariant": true,
+     "values_over_the_L2_scope_ladder": {
+      "1/4": [
+       "C2_edge",
+       "C2_face",
+       "C4_face",
+       "D4_face",
+       "V_edge",
+       "V_face"
+      ]
+     }
+    }
+   ],
+   "scope_count": 9,
+   "scope_ladder": "L2 (all rotation subgroups preserving the records)",
+   "selected_form": "(n - 1) / n^2",
+   "selection_is_unique": true,
+   "test_collection": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     -1,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ]
+   ],
+   "theorem": "C901-T7.  Among the five 883 closed forms that return the anchor at n = 3, P_SCOPE selects exactly one: (n - 1)/n^2, the only one that is a function of the record COUNT rather than of the scope's orbit decomposition.  883's residual 'five-fold discrete ambiguity' is closed by the content-alone clause itself, not by new supply."
+  },
+  "J_STEELMAN": {
+   "note": "Each steelman is stated in its strongest form and tested computationally, both directions.  SM3 SURVIVES and sets the verdict's exact shape.",
+   "pass": true,
+   "refuted": [
+    "SM1",
+    "SM4",
+    "SM5"
+   ],
+   "steelmen": [
+    {
+     "byte_occurrences": 1,
+     "byte_support_against": "Only records are readable. A readout value is determined by record content alone.",
+     "claim": "the orbit's subgroup type IS record content",
+     "computed_result": "REFUTED.  C901-T6 exhibits the collection.  C4_face gives 5/16, V_edge gives UNDEFINED, on one and the same four records.",
+     "computed_test": "if subgroup type were content, the SAME record collection would have to have two contents at once, since S = {+-e1, +-e2} is a simply transitive orbit of both a C4 and a V4.  Content would not be a function of the records.",
+     "id": "SM1",
+     "strongest_form": "The readout module's decomposition is determined by the group action on the records.  If the group action counts as content, then so does the subgroup's type, and the geometric reading is reading content after all.",
+     "survives": false
+    },
+    {
+     "byte_occurrences": 1,
+     "byte_support_for": "Sites are distinguished by the supplied lattice structure alone.",
+     "claim": "the Lattice axiom's 'distinguished by the supplied lattice structure alone' licenses geometric input to the readout",
+     "computed_result": "SURVIVES ONLY AS SITE-DISTINGUISHABILITY.  The sentence's subject is 'Sites'; it licenses telling sites apart, which the content reading also needs (the records sit at distinct sites).  Certificate K sweeps for a sentence connecting geometry to a readout value and reports the count.",
+     "computed_test": "read the sentence's grammatical subject and check whether any memo or Gate-B sentence connects lattice geometry to a readout VALUE.",
+     "id": "SM2",
+     "strongest_form": "The memo explicitly says lattice structure alone distinguishes sites, and the normal plane is lattice structure.  So consuming it is licensed.",
+     "survives": "partially -- for sites, not for readout values"
+    },
+    {
+     "byte_occurrences": 1,
+     "byte_occurrences_in_the_l_face_note": 1,
+     "byte_support_for": "context selection, measurement basis selection, Born weights, probability",
+     "byte_support_from_the_l_face_note": "physical-axis selection is a separate theorem target",
+     "claim": "the geometric L-face is not a violating readout at all; it is a CONTEXT-CONDITIONAL functional awaiting a supplied scope",
+     "computed_result": "THIS STEELMAN SURVIVES AND IS ADOPTED AS THE PRICING.  The memo places 'context selection' outside axiom content and requires separate retained authority for 'readout-context selection'.  The L-face source note itself says 'physical-axis selection is a separate theorem target'.  Consequence: the L-face is mathematically untouched, but it cannot be cited as THE readout on the Record axiom's authority, because on that authority the value must be fixed by content alone and the L-face needs a second input the axioms do not supply.",
+     "computed_test": "check whether the memo supplies a scope selector, and whether the L-face's own source note claims one.",
+     "id": "SM3",
+     "strongest_form": "The memo itself lists context selection among the open gates OUTSIDE the axioms.  So the L-face is simply a downstream object that needs a context supplier -- not an axiom-violating one.  Nothing is refuted; something is merely unsupplied.",
+     "survives": true
+    },
+    {
+     "claim": "the content reading is the one that imports structure, because the isotype split needs the group too",
+     "computed_result": "REFUTED FOR THE SELECTED FORM.  On a transitive action the invariant dimension is 1 for EVERY group, so the pair is (1, n - 1) for every group, and (n - 1)/n^2 is a function of the record count alone -- the group cancels out.  The isotype decomposition is how the form was FOUND; it is not an input the form still needs.  C901-T7 confirms the selected form is the unique scope-invariant member.",
+     "computed_test": "evaluate (n - 1)/n^2 with no group input at all and check whether it agrees with the isotype route on every scope.",
+     "id": "SM4",
+     "strongest_form": "F_dim was DERIVED from an isotype decomposition, which needs the group action.  So it is no more content-only than the L-face.",
+     "survives": false
+    },
+    {
+     "byte_occurrences": 1,
+     "byte_support_against": "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`.",
+     "claim": "the scope ladder L2 is illegitimate; only simply transitive scopes are admissible, and on L1 there is no value-versus-value clash",
+     "computed_result": "DOES NOT SAVE THE READING.  On L1 the geometric reading still fails P_TOTAL: four pairwise-disjoint records receive no readout at all, while the additivity clause quantifies over ANY finite collection of pairwise-disjoint records.  The gap IS the violation on L1; the value clash on L2 is a second, independent one.",
+     "computed_test": "check whether the L1 gap is itself a clause violation.",
+     "id": "SM5",
+     "strongest_form": "The 883/888 lineage always works with free orbits.  On L1 the geometric reading gives 5/16 or nothing -- and 'nothing' is not a wrong value, just a gap.",
+     "survives": false
+    }
+   ],
+   "surviving": [
+    "SM3"
+   ]
+  },
+  "K_REGISTRATION": {
+   "FINDING": "NO LICENSING SENTENCE.  Neither the axiom memo nor either pinned Gate-B surface contains a sentence connecting a readout value to a rotation axis, a normal plane, a fixed locus, or any ambient/embedding structure.  The only surface that does is the L-face note itself, which is the object under adjudication and which explicitly defers axis selection to a separate theorem target.",
+   "grading": "fidelity method: sentences are scanned, not summarized; token sets are declared above; counts are reported whether zero or not",
+   "joint_sentences_in_the_axiom_memo": 0,
+   "joint_sentences_in_the_gate_B_surfaces": 0,
+   "licensing_found": false,
+   "pass": true,
+   "question": "The Lattice axiom supplies the geometry.  Does any sentence CONNECT that geometry to the readout?",
+   "rows": [
+    {
+     "geometry_token_sentences": 0,
+     "joint_hits": [],
+     "joint_sentences": 0,
+     "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "readout_token_sentences": 14,
+     "sentences_scanned": 85
+    },
+    {
+     "geometry_token_sentences": 0,
+     "joint_hits": [],
+     "joint_sentences": 0,
+     "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+     "readout_token_sentences": 16,
+     "sentences_scanned": 185
+    },
+    {
+     "geometry_token_sentences": 0,
+     "joint_hits": [],
+     "joint_sentences": 0,
+     "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+     "readout_token_sentences": 4,
+     "sentences_scanned": 42
+    },
+    {
+     "geometry_token_sentences": 3,
+     "joint_hits": [],
+     "joint_sentences": 0,
+     "path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
+     "readout_token_sentences": 3,
+     "sentences_scanned": 77
+    }
+   ]
+  },
+  "L_CONSUMERS": {
+   "COHERENCE_FINDING": "F_dim(3) = 2/9 and F_res(3) = 2/9 are THE SAME NUMBER.  Every retained consumer evaluates the L-face at the C3 body-diagonal scope and nowhere else, so re-binding the readout from the embedding-space family to the content-space family changes NOTHING numerically anywhere in the retained lineage.  The mis-binding bites only off-scope (n = 2: 1/4 vs 1/8; n = 4: 3/16 vs 5/16).  That is exactly why it survived audit: at the only scope anyone evaluated, the two readings are indistinguishable.",
+   "consumers_evaluating_off_C3": [],
+   "consumers_using_the_anchor": 43,
+   "falsification_pair": {
+    "also_available_at_C2": {
+     "content": "1/4",
+     "geometric": "1/8"
+    },
+    "content_reading_predicts": "3/16",
+    "geometric_reading_predicts": "5/16",
+    "scope": "a physical C4-scope registration"
+   },
+   "pass": true,
+   "rows": [
+    {
+     "consumer": "docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05",
+      "L_C_3"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05",
+      "inverse-normal-determinant"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_CYCLE_FLUX_TRANSPORT_FACE_INVENTORY_2026-07-01.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/CONTINUUM_EQUIVARIANT_ETA_STANDARD_FORM_DELTA_FIREWALL_BOUNDED_NOTE_2026-06-12.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/EQUIVARIANT_WILSON_ETA_DENSITIES_VANISH_ON_TESTED_WINDOW_BOUNDED_NOTE_2026-06-12.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/KOIDE_DELTA_AZIMUTH_SELECTOR_IS_CHIRALITY_ODD_RECORDS_MIRROR_DEGENERACY_NO_GO_NOTE_2026-06-08.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/KOIDE_DELTA_ETA_DENSITY_READOUT_CHAIN_BOUNDED_THEOREM_NOTE_2026-06-09.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/KOIDE_DELTA_PHASE_AND_GENERATION_COUNT_SHARE_ONE_Z2_ORIENTATION_NARROW_THEOREM_NOTE_2026-06-08.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/KOIDE_DELTA_RANK2_SELECTOR_IS_THE_CLIFFORD_CHIRALITY_DOMAIN_WALL_EDGE_BOUNDED_NOTE_2026-06-05.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/RETA_ALGEBRAIC_IRREDUCIBILITY_GENUINE_READOUT_ADMISSION_BOUNDED_NOTE_2026-06-12.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/RETA_MAGNITUDE_IS_CONTINUUM_INDEX_THEOREM_LATTICE_INDEX_IS_INTEGER_BOUNDED_NOTE_2026-06-12.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/SLAB_BOUNDARY_ETA_GLOBALLY_ZERO_PER_EDGE_NONUNIVERSAL_NO_FRACTIONAL_CARRIER_BOUNDED_NOTE_2026-06-12.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "docs/repo/RETAINED_BACKBONE.md",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "CITES THE SOURCE, DOES NOT CONSUME THE NUMBER",
+     "uses_the_anchor_2_over_9": false
+    },
+    {
+     "consumer": "scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05",
+      "L_C_3"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/acphilambda_cycle_flux_transport_face_inventory_2026_07_01.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05",
+      "L_C_3"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/acphilambda_r_eta_doublet_clock_rate_normalization_no_go_2026_07_04.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/acphilambda_r_eta_hclass_first_principles_stretch_no_go_2026_07_04.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no_go_2026_07_04.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05",
+      "L_C_3"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/acphilambda_r_eta_record_formation_non_supply_no_go_2026_07_04.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/acphilambda_registrable_cycle_holonomy_normal_form_2026_07_01.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05",
+      "det_R(I-"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/frontier_continuum_equivariant_eta_delta_firewall_2026_06_12.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/frontier_correlator_cycle_phases_dichotomy_2026_06_12.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/frontier_equivariant_wilson_eta_densities_vanish_2026_06_12.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/frontier_reta_algebraic_irreducibility_2026_06_12.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/frontier_reta_conversion_carrier_class_elimination_2026_06_12.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/frontier_reta_magnitude_continuum_index_theorem_2026_06_12.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    },
+    {
+     "consumer": "scripts/frontier_slab_boundary_eta_nonuniversal_2026_06_12.py",
+     "needles": [
+      "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05"
+     ],
+     "status_under_re_binding": "UNCHANGED -- consumes the value only at the C3 scope, where F_dim(3) = F_res(3) = 2/9",
+     "uses_the_anchor_2_over_9": true
+    }
+   ],
+   "sweep": {
+    "consumers_found": 44,
+    "excluded": [
+     "docs/audit/** (ledger mirrors, not science surfaces)",
+     "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md (the source itself)"
+    ],
+    "needles": [
+     "KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05",
+     "det_R(I-",
+     "L_C_3",
+     "inverse-normal-determinant"
+    ],
+    "off_scope_needles": [
+     "5/16",
+     "3/16",
+     "1/8",
+     "(n^2-1)",
+     "n^2 - 1"
+    ],
+    "paths_scanned": 14082
+   },
+   "what_actually_changes": [
+    "the JUSTIFICATION of 2/9 moves from 'transverse determinant of the geometric normal plane' to 'invariant-complement fraction of the readout module', i.e. from a Lattice-geometry premise to a Record-content one -- a strictly cheaper premise",
+    "the L-face note's own claim is untouched as mathematics; what changes is its licence to be cited as THE Record readout",
+    "any FUTURE off-C3 use of the L-face (a C2 or C4 scope registration) would be a live numerical disagreement, 1/4 vs 1/8 or 3/16 vs 5/16"
+   ]
+  },
+  "M_VERDICT": {
+   "VERDICT": "DECIDED-F_DIM",
+   "pass": true,
+   "predicate_results": {
+    "READING_D_content_space": {
+     "P_EMB": true,
+     "P_SCOPE": true,
+     "P_TOTAL": true,
+     "content_only": true
+    },
+    "READING_R_embedding_space": {
+     "P_EMB": true,
+     "P_SCOPE": false,
+     "P_TOTAL": false,
+     "content_only": false
+    }
+   },
+   "reachable_classes": [
+    "DECIDED-F_DIM",
+    "DECIDED-F_RES",
+    "UNDECIDABLE-PRICED"
+   ],
+   "registration_sweep_result": "no licensing sentence found",
+   "residual_price": {
+    "if_someone_wants_the_geometric_reading_back": "supply a scope selector: a retained derivation or an approved primitive that nominates, for each record collection, exactly one ambient rotation subgroup.  That is one supplied premise, and the memo already names its class ('readout-context selection') as requiring separate retained authority.",
+    "the_test_that_would_decide_it_physically": "a physical registration at a C4 scope (or a C2 scope): the two readings predict 3/16 versus 5/16 (and 1/4 versus 1/8).  This is a genuine falsification pair -- the readings are numerically identical at C3 and nowhere else."
+   },
+   "statement": "DECIDED-F_DIM.  The Record axiom's content-alone clause excludes the embedding-space reading by a COMPUTED violation: one finite collection of four pairwise-disjoint records ({+-e1, +-e2}) admits two admissible ambient scopes -- a cyclic C4_face and a non-cyclic V_edge -- and the geometric L-face returns 5/16 under the first and no value at all under the second, while the content family returns 3/16 under both.  On the wider scope ladder the geometric reading is not merely partial but multi-valued (1/8 versus 5/16) on the same records.  The readout obligation's positive half therefore rests entirely on the F_dim family, and P_SCOPE further selects its unique scope-invariant member (n - 1)/n^2.",
+   "tests_that_the_geometric_reading_FAILED": [
+    "P_SCOPE on ladder L1: 5/16 versus undefined on one record collection",
+    "P_SCOPE on ladder L2: 1/8 versus 5/16 versus undefined on one record collection",
+    "P_TOTAL: undefined on free orbits of V_edge, V_face, D4_face and S3_body -- all of them finite collections of pairwise-disjoint records"
+   ],
+   "tests_that_the_geometric_reading_PASSED": [
+    "C2 discriminator: same value ['1/8'] on both canonical C2 classes despite different axis geometry",
+    "conjugate test: all conjugates agree (True)",
+    "P_EMB: invariant under all 24 proper cubic rotations and under lattice translations, on every class where it is defined"
+   ],
+   "the_surviving_steelman": "SM3.  The L-face remains legitimate as a CONTEXT-CONDITIONAL functional.  What it loses is the licence to be cited as THE Record readout, because on the Record axiom's authority a readout value is fixed by content alone and the L-face needs a scope the axioms do not supply -- the memo itself files 'context selection' among the open gates outside the axioms.",
+   "verdict_is_computed_not_hardcoded": "the class is selected by the predicate table above; all three classes are reachable from this code path",
+   "what_is_NOT_claimed": [
+    "the L-face computation is NOT refuted as mathematics: C901-T2a proves it is embedding-invariant on its whole domain, and it survived both the C2 discriminator and the conjugate test",
+    "the C2 discriminator did NOT decide the question -- both C2 classes give 1/8 and that is reported as a survival, not a hit",
+    "no claim is made about ambient groups other than the proper cubic rotation group of Z^3",
+    "the retained C3 numbers are NOT changed by this verdict"
+   ]
+  },
+  "N_GATES": {
+   "all_gates_pass": true,
+   "build_digest_1": "06b7279d6e0dd9082769ac03b8c8ff2ddf1be8fed77d3609926e1c4d06fe831b",
+   "build_digest_2": "06b7279d6e0dd9082769ac03b8c8ff2ddf1be8fed77d3609926e1c4d06fe831b",
+   "elapsed_sec_at_gate": 8.236,
+   "gates": {
+    "all_conjugates_computed": true,
+    "both_C2_classes_computed": true,
+    "both_readings_evaluated_on_all_three_predicates": true,
+    "both_readings_formalized": true,
+    "both_scope_ladders_computed": true,
+    "cycle899_rows_rebuilt_independently": true,
+    "deterministic_double_build": true,
+    "every_needle_present": true,
+    "firewall_hits_zero": true,
+    "pins_pass": true,
+    "planted_surviving_reading_survived": true,
+    "planted_violating_reading_detected": true,
+    "restriction_gate_reproduced": true,
+    "runtime_within_cap": true,
+    "steelmen_tested_both_directions": true
+   },
+   "outcome_neutrality": "None of these gates requires a particular verdict.  They require both readings to be formalized and evaluated on all three predicates, the pinned 888/883 results to be reproduced, the 899 rows to be independently rebuilt, both C2 classes and every conjugate and both scope ladders to be computed, a planted violating reading to be DETECTED and a planted content-only reading to SURVIVE, and the build to be deterministic.  A DECIDED-F_RES or UNDECIDABLE-PRICED verdict would pass every one of them.",
+   "pass": true,
+   "runtime_cap_sec": 900
+  }
+ },
+ "claim_type": "bounded_theorem",
+ "cycle": 901,
+ "cycles": [
+  901
+ ],
+ "files": {},
+ "headline": "DECIDED-F_DIM.  Computed content-alone violation: ONE finite collection of four pairwise-disjoint records ({+-e1, +-e2}) is a simply transitive orbit of BOTH a cyclic C4_face and a non-cyclic V_edge; the geometric L-face returns 5/16 under the first and NO VALUE under the second (and 1/8 under the collection's C2 subgroups), while the content family returns 3/16 under every scope because (n-1)/n^2 is a function of the record count alone.  The geometric reading PASSED the C2 discriminator (1/8 on both classes) and the conjugate test and P_EMB -- it fails on P_SCOPE and P_TOTAL, not on embedding invariance.  At C3 the re-binding changes nothing: F_dim(3) = F_res(3) = 2/9, which is why the mis-binding survived audit.  P_SCOPE additionally closes 883's five-fold binding ambiguity to the single form (n-1)/n^2.",
+ "independence": "the 899 artifacts are ABSENT from this branch; every 899 row is rebuilt from the Lattice axiom's rotation group and compared against the brief's stated numbers",
+ "note": "no note: this block delivers scripts, caches and receipts only",
+ "question": "Which space does the record read -- the readout module's invariant complement (content-space, F_dim = (n-1)/n^2) or the ambient geometric normal plane (embedding-space, F_res = (n^2-1)/(12n))?",
+ "runtime_seconds": {
+  "primary": 8.236
+ }
+}

@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle893_barrier_independent_check_2026_07_28.py
+runner_sha256: be74044e52eda8b51c51feddb61d9fcf0d4340924b0e8c8e6a99d2e661e8d692
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 17.641
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 893 CHECKER: INDEPENDENT REFUTATION ATTEMPT
+==============================================================================
+
+[A_PINS]  pass=True  10 inputs pinned; 4 brief digests match; firewall hits 0.
+
+[P_INDEPENDENT_PROPAGATION]  pass=True
+    engine: depth-first enumeration of directed unblocked paths, summed one path at a time -- NOT the primary's layer DP
+    The path-sum engine reproduces the expulsion row (reach meets support on 0/12, 5 frozen walks) and cross-checks 31 of the primary's fate rows with 0 disagreements.
+
+[N_NEW_BARRIERS]  pass=True
+    new barrier                              adm  eqf monof supp<=B expul froz quad theta
+    NEW_closing_S_ball1                      Y      0     0     12/12 Y        5    8     7/12
+    NEW_closing_S_ball2                      Y      0     0     12/12 Y        5    8     7/12
+    NEW_opening_S_ball1                      Y      0     0      2/12 n        2    8    10/12
+    NEW_adaptive_local_density_dilation      Y      0     0     12/12 Y        6    8     6/12
+    NEW_dilation_S_ball3                     Y      0     0     12/12 Y       12    4     0/12
+    NEW_rank_filter_nearest_half             n    740     9      1/12 n        2    8    10/12
+    inversion found among new barriers: False
+    MISSED admissible families outside DILATION: ['NEW_adaptive_local_density_dilation', 'NEW_closing_S_ball1', 'NEW_closing_S_ball2', 'NEW_opening_S_ball1']
+    5/6 new barriers are admissible.  0 of them invert the gauge break.  4 are admissible AND outside the primary's DILATION family (NEW_adaptive_local_density_dilation, NEW_closing_S_ball1, NEW_closing_S_ball2, NEW_opening_S_ball1), so the enumeration MISSED a real admissible family.
+
+[F_FIDELITY_ATTACK]  pass=True
+    determination-clause subject: 'available possibilities'
+    in SITE sort: False | in POSSIBILITY sort: True
+    move-term hits inside the four axiom sections: 0
+    'record' mentions in the Admissibility section: 0
+    Gate-B books the barrier as supplied: True
+    Sort analysis independently confirms the primary: the determination clause's subject is 'available possibilities', in the possibility sort, not the site sort.  0 move-term hits inside the four axiom sections; 'record' occurs 0 times in the Admissibility section.  The Gate-B supplied booking verifies independently: True.
+
+[T_TEETH]  pass=True  8/8 teeth bite.
+    BITES  T1_tampered_pin_is_caught
+    BITES  T2_dropped_barrier_is_caught
+    BITES  T3_hardcoded_fate_row_is_caught
+    BITES  T4_leaked_verdict_is_caught
+    BITES  T5_skipped_sentence_is_caught
+    BITES  T6_planted_inversion_blindness_is_caught
+    BITES  T7_receipt_claim_matches_recomputation
+    BITES  T8_admissibility_mislabel_is_caught
+
+==============================================================================
+CLAIM VERDICTS: 5/6 primary claims survive independent attack.
+==============================================================================
+  SURVIVES  C1_restriction_gate_reproduces_892
+  SURVIVES  C2_gauge_break_is_barrier_independent
+  SURVIVES  C3_axioms_force_nothing
+  SURVIVES  C4_expulsion_is_NOT_barrier_independent
+  SURVIVES  C5_boundary_shell_refused_as_a_barrier
+  REFUTED   C6_candidate_space_completeness
+      4 admissible families found outside the primary's DILATION family: ['NEW_adaptive_local_density_dilation', 'NEW_closing_S_ball1', 'NEW_closing_S_ball2', 'NEW_opening_S_ball1']
+
+------------------------------------------------------------------------------
+  gate A_PINS: PASS
+  gate P_INDEPENDENT_PROPAGATION_RAN: PASS
+  gate N_NEW_BARRIERS_RAN: PASS
+  gate F_FIDELITY_ATTACK_RAN: PASS
+  gate T_TEETH_ALL_BITE: PASS
+  gate at_least_six_teeth: PASS
+  gate at_least_two_new_barriers: PASS
+  gate deterministic_double_build: PASS
+  gate import_firewall_zero_hits: PASS
+  gate runtime_within_cap: PASS
+  elapsed_sec: 17.525
+  receipt: outputs/barrier_independent_check_cycle893_receipt_2026_07_28.json
+  CHECKER GATES PASS: True
+  NOTE: this checker exits 0 whether or not the primary's claims survive.

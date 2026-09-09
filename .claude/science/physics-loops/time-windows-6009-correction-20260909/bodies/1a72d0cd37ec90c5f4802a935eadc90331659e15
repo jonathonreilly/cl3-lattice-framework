@@ -1,0 +1,222 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle893_barrier_identification_2026_07_28.py
+runner_sha256: 79f569db71e2ced8adb00ea97bf07fa74b6d8a890f77904377eb80be607b1c57
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 33.103
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 893: THE BARRIER IDENTIFICATION -- IS THE PROPAGATION BARRIER
+            THE REGISTRATION-BLOCKED SET?
+==============================================================================
+
+[A_PINS]  pass=True
+    daee8bbfefde80a3  scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py
+    3561cc4e62ba55a9  outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json
+    1e45cb05ace173b0  logs/runner-cache/frontier_cycle885_gbw1_record_window_2026_07_28.txt
+    139ed9e2fce1775d  scripts/frontier_cycle887_window_freedom_2026_07_28.py
+    d1807305098ae995  outputs/window_freedom_cycle887_receipt_2026_07_28.json
+    76100068829f2143  scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py
+    1a8c220959038a7f  outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json
+    ba658eaf80308889  logs/runner-cache/frontier_cycle892_gbw1b_pricing_2026_07_28.txt
+    fc4d60cce8154cec  docs/MINIMAL_AXIOMS_2026-06-29.md
+    0031e5ddcb2e1408  docs/GATE_B_DYNAMICS_NOTE.md
+    e246730a80817475  docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+    11 inputs pinned by full path + sha256 + git blob; the 4 digests the block brief supplies verbatim all match; 4 nodes AST-extracted from the 885 primary and 48 from the 887 primary with 0 missing; firewall hits 0.
+
+[B_RESTRICTION_GATE]  pass=True
+    OK   c892_expulsion_rows_value_for_value
+    OK   c892_reach_disjoint_from_support_on_12_of_12
+    OK   c892_amplitude_in_support_is_seed_only
+    OK   c892_frozen_walk_count
+    OK   c892_quadratic_partition_8_classes
+    OK   c892_receipt_states_quadratic_classes
+    OK   c885_theta_dependence_7_of_12
+    OK   family_digest
+    OK   containment_holding_window_count
+    9/9 restriction checks reproduce.  892's 12 expulsion rows match value-for-value with 0 mismatches; reach meets support on 0/12; 5 walks freeze; the quadratic partition recomputes as 8 classes identical to the pinned partition; 885's theta-dependence is 7/12; the family digest is 30edaa3d5ca03c24.
+
+[C_BARRIER_SPACE]  Q1  pass=True
+    candidate                              fam              adm  eqf  monof  distinct
+    B_supp__THE_IDENTIFICATION             DILATION         Y      0      0        12
+    B_dilation_S_N6                        DILATION         Y      0      0        12
+    B_dilation_S_ball1__THICK              DILATION         Y      0      0        11
+    B_dilation_S_ball2                     DILATION         Y      0      0        11
+    B_dilation_S_far_shell                 DILATION         Y      0      0        12
+    B_erosion_S_N6                         EROSION          Y      0      0         3
+    B_erosion_S_ball1                      EROSION          Y      0      0         3
+    B_erosion_S_ball2                      EROSION          n      0      0         1   <- REQ5 non-triviality
+    B_threshold_k1                         THRESHOLD        Y      0      0        12
+    B_threshold_k2                         THRESHOLD        Y      0      0        10
+    B_threshold_k3                         THRESHOLD        Y      0      0         7
+    B_threshold_k4                         THRESHOLD        Y      0      0         5
+    B_threshold_k5                         THRESHOLD        Y      0      0         5
+    B_threshold_k6                         THRESHOLD        Y      0      0         3
+    B_supp_union_threshold_k1              THRESHOLD_UNION  Y      0      0        11
+    B_supp_union_threshold_k2              THRESHOLD_UNION  Y      0      0        11
+    B_supp_union_threshold_k3              THRESHOLD_UNION  Y      0      0        11
+    B_supp_union_threshold_k4              THRESHOLD_UNION  Y      0      0        11
+    B_supp_union_threshold_k5              THRESHOLD_UNION  Y      0      0        11
+    B_supp_union_threshold_k6              THRESHOLD_UNION  Y      0      0        11
+    B_bounding_box                         HULL             Y      0      0        10
+    B_axis_segment_closure                 HULL             Y      0      0        11
+    B_box_union_dilation1                  HULL             Y      0      0        11
+    B_size_keyed                           KEYED            Y      0      0        11
+    B_readout_keyed                        KEYED            Y      0      0        11
+    B_depth_keyed                          KEYED            n      0      2        12   <- REQ4 permanence monotonicity
+    B_empty__NO_BARRIER_free_walk          CONTROL          n      0      0         1   <- REQ5 non-triviality
+    B_boundary_shell__885_refuted_W1b      CONTROL          n      0     24        12   <- REQ4 permanence monotonicity
+    B_extremal_shell                       CONTROL          n      0     26        11   <- REQ4 permanence monotonicity
+    B_constant_cube__record_blind          CONTROL          n   1152      0         1   <- REQ2/REQ3 equivariance
+    B_nonequivariant_dilation              CONTROL          n   1200      0        11   <- REQ2/REQ3 equivariance
+    rotation orbits r=1/2/3: 4/10/21  =>  rot-invariant S: 16/1024/2097152
+    radius-1 exhaustive: 15/16 admissible dilation barriers
+    31 declared candidates across 7 families all evaluated; 24 are ADMISSIBLE and 7 are refused (B_boundary_shell__885_refuted_W1b, B_constant_cube__record_blind, B_depth_keyed, B_empty__NO_BARRIER_free_walk, B_erosion_S_ball2, B_extremal_shell, B_nonequivariant_dilation).  The identification B(R) = supp(R) is admissible -- and so are 23 rivals.  The space is not merely large but INFINITE: at radius 1 alone, 15/16 rotation-invariant structuring sets give an admissible dilation barrier, and the radius is unbounded.
+    boundary shell as a BARRIER: admissible=False (REQ4 permanence monotonicity, 24 REQ4 failures)
+
+[D_FIDELITY_SWEEP]  Q2  pass=True
+    docs/MINIMAL_AXIOMS_2026-06-29.md: 39/88 propagation-relevant units
+    docs/GATE_B_DYNAMICS_NOTE.md: 60/240 propagation-relevant units
+    docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md: 7/62 propagation-relevant units
+    total 106 graded of 390; all byte-exact=True
+    grade_route_i_record_determined_at_all: EXACT=0 PARTIAL=0 NONE=106
+    grade_route_ii_exactly_supp: EXACT=0 PARTIAL=0 NONE=106
+    grade_route_iii_contained_or_containing: EXACT=0 PARTIAL=0 NONE=106
+    supplied-declaration units: 2
+      - docs/GATE_B_DYNAMICS_NOTE.md:35  | `GB-S2a` | finite complex-amplitude propagation on the supplied layered DAG | bounded-support source bridge:
+      - docs/GATE_B_DYNAMICS_NOTE.md:146  | `GB-S2` | propagation/readout semantics | The runners use forward-layer path propagation, a central blocked 
+    homonym-only firings: 3; near misses that the guard caught: 2
+      ! docs/GATE_B_DYNAMICS_NOTE.md:35  'support' here is the bounded SUPPORT of a source field, not supp(R) the record set
+        | `GB-S2a` | finite complex-amplitude propagation on the supplied layered DAG | bounded-support source bridge: the runner recursion is exactly the fin
+      ! docs/GATE_B_DYNAMICS_NOTE.md:53  'support' here is the bounded SUPPORT of a source field, not supp(R) the record set
+        | `GB-S3a` | label/offset-preserving forward stencil on the finite `Z^3` slab | bounded-support source bridge: the stencil is a finite-range local lat
+
+[D2_ADMISSIBILITY_DEEP_READ]  pass=True
+    Admissibility_rule  (docs/MINIMAL_AXIOMS_2026-06-29.md:57)
+        | There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+        | translations and proper cubic rotations.
+    Admissibility_nearest_neighbor  (docs/MINIMAL_AXIOMS_2026-06-29.md:60)
+        | For each site, the available possibilities are determined by, and vary with,
+        | the nearest-neighbor conditions.
+    Admissibility_is_not_a_dynamics_axiom  (docs/MINIMAL_AXIOMS_2026-06-29.md:105)
+        | Admissibility is not a dynamics axiom. It determines availability by a
+        | nearest-neighbor rule: for each site, the available possibilities are
+        | determined by, and vary with, the nearest-neighbor conditions. It does not
+        | choose a Hamiltonian or transfer operator, supply transition probabilities or
+        | weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
+        | carrier, define a time metric, or provide a record-production process or
+        | physical persistence dynamics.
+    Record_locks_a_possibility  (docs/MINIMAL_AXIOMS_2026-06-29.md:67)
+        | When present, a record locks exactly one admissible local possibility. A
+        | site never carries more than one record; records are permanent.
+    Qualification  (docs/MINIMAL_AXIOMS_2026-06-29.md:76)
+        | These axioms state only their named primitive content. Further physical
+        | structure requires a retained derivation or bridge, or explicit approved-
+        | primitive registration, before use as a premise. A choice not fixed by the
+        | supplied structure remains a named conditional or open dependency.
+    GateB_the_central_barrier_remains_SUPPLIED  (docs/GATE_B_DYNAMICS_NOTE.md:146)
+        | but the central barrier, detector-window mass gain, `TOWARD`, and `F~M` physical readout semantics remain supplied (`GB-S2b`)
+    GateB_path_sum_over_UNBLOCKED_paths  (docs/GATE_B_DYNAMICS_NOTE.md:35)
+        | the runner recursion is exactly the finite path-sum transfer over unblocked directed paths
+    ranges over available possibilities: True | names a set of sites to block: False | names a move: False | names records: False
+    axiom's own denials: {'does_not_choose_a_transfer_operator': True, 'does_not_supply_transition_probabilities': True, 'is_not_a_dynamics_axiom': True}
+    locality filter: 18 admissible candidates are radius<=1; 6 are nonlocal (B_bounding_box, B_box_union_dilation1, B_dilation_S_ball2, B_dilation_S_far_shell, B_readout_keyed, B_size_keyed)
+    singles out the identification: False
+    VERDICT  route(i)=NONE route(ii)=NONE route(iii)=NONE
+
+[E_FATE_MAP]  Q3  pass=True
+    barrier                                adm  supp<=B  amplitude          froz lin quad  refine     theta
+    B_supp__THE_IDENTIFICATION             Y       12/12  EXPELLED from supp    5   1    8  SAME refinement MATCHES 885 (7/12)
+    B_dilation_S_N6                        Y        8/12  ENTERS supp on 1/12   10   1    6  COARSER    DEAD (0/12)
+    B_dilation_S_ball1__THICK              Y       12/12  EXPELLED from supp   11   1    6  COARSER    DEAD (0/12)
+    B_dilation_S_ball2                     Y       12/12  EXPELLED from supp   12   1    4  COARSER    DEAD (0/12)
+    B_dilation_S_far_shell                 Y       12/12  EXPELLED from supp    5   1    8  SAME refinement MATCHES 885 (7/12)
+    B_erosion_S_N6                         Y        0/12  ENTERS supp on 12/12    0   1    8  SAME refinement SHIFTED (12/12)
+    B_erosion_S_ball1                      Y        0/12  ENTERS supp on 12/12    0   1    8  SAME refinement SHIFTED (12/12)
+    B_erosion_S_ball2                      n        0/12  ENTERS supp on 12/12    0   1    8  SAME refinement SHIFTED (12/12)
+    B_threshold_k1                         Y        8/12  ENTERS supp on 1/12   10   1    6  COARSER    DEAD (0/12)
+    B_threshold_k2                         Y        1/12  ENTERS supp on 9/12    2   1    8  SAME refinement SHIFTED (10/12)
+    B_threshold_k3                         Y        0/12  ENTERS supp on 10/12    2   1    8  SAME refinement SHIFTED (10/12)
+    B_threshold_k4                         Y        0/12  ENTERS supp on 10/12    2   1    8  SAME refinement SHIFTED (10/12)
+    B_threshold_k5                         Y        0/12  ENTERS supp on 11/12    1   1    8  SAME refinement SHIFTED (11/12)
+    B_threshold_k6                         Y        0/12  ENTERS supp on 12/12    0   1    8  SAME refinement SHIFTED (11/12)
+    B_supp_union_threshold_k1              Y       12/12  EXPELLED from supp   11   1    6  COARSER    DEAD (0/12)
+    B_supp_union_threshold_k2              Y       12/12  EXPELLED from supp    5   1    8  SAME refinement MATCHES 885 (7/12)
+    B_supp_union_threshold_k3              Y       12/12  EXPELLED from supp    5   1    8  SAME refinement MATCHES 885 (7/12)
+    B_supp_union_threshold_k4              Y       12/12  EXPELLED from supp    5   1    8  SAME refinement MATCHES 885 (7/12)
+    B_supp_union_threshold_k5              Y       12/12  EXPELLED from supp    5   1    8  SAME refinement MATCHES 885 (7/12)
+    B_supp_union_threshold_k6              Y       12/12  EXPELLED from supp    5   1    8  SAME refinement MATCHES 885 (7/12)
+    B_bounding_box                         Y       12/12  EXPELLED from supp    6   1    7  COARSER    SHIFTED (6/12)
+    B_axis_segment_closure                 Y       12/12  EXPELLED from supp    5   1    8  SAME refinement MATCHES 885 (7/12)
+    B_box_union_dilation1                  Y       12/12  EXPELLED from supp   11   1    5  COARSER    DEAD (0/12)
+    B_size_keyed                           Y       12/12  EXPELLED from supp    9   1    8  SAME refinement SHIFTED (2/12)
+    B_readout_keyed                        Y       12/12  EXPELLED from supp    9   1    8  SAME refinement SHIFTED (2/12)
+    B_depth_keyed                          n       12/12  EXPELLED from supp    9   1    8  SAME refinement SHIFTED (2/12)
+    B_empty__NO_BARRIER_free_walk          n        0/12  ENTERS supp on 12/12    0   1    8  SAME refinement SHIFTED (12/12)
+    B_boundary_shell__885_refuted_W1b      n        0/12  ENTERS supp on 11/12    1   1    6  COARSER    DEAD (0/12)
+    B_extremal_shell                       n        3/12  ENTERS supp on 7/12    3   1    8  SAME refinement SHIFTED (9/12)
+    B_constant_cube__record_blind          n        4/12  ENTERS supp on 6/12    5   1    8  SAME refinement MATCHES 885 (7/12)
+    B_nonequivariant_dilation              n       12/12  EXPELLED from supp    5   1    8  SAME refinement MATCHES 885 (7/12)
+    gauge break barrier-independent: True
+    C893_T1 containment->expulsion violations: 0
+    All 31 declared barriers carry a full fate row.  The gauge break (linear classes 1, quadratic classes > 1) is present for 24/24 admissible barriers; quadratic class counts range over [4, 5, 6, 7, 8].  Amplitude EXPULSION, by contrast, holds for only 15/24 admissible barriers, and 885's 7/12 theta-dependence is reproduced by only 8/24, ranging from 0/12 to 12/12.
+
+[G_STRESS]  pass=True
+    OK   planted_inversion_is_detected
+    OK   nonequivariant_barrier_is_refused
+    OK   record_blind_barrier_is_refused
+    OK   planted_amplitude_mutation_is_visible
+    OK   identification_is_not_privileged
+    5/5 stress tests pass.  The planted inversion IS detected: the freezing barrier drives the partition to 1 class on the declared sub-family where the identification still gives 8. The machinery can see an inversion, so the survivals mean something.
+
+==============================================================================
+VERDICT: IDENTIFICATION DISSOLVES FOR THE BREAK'S EXISTENCE, remains LOAD-BEARING for its refinement and for the downstream rows
+==============================================================================
+  Q1_admissible_barrier_space:
+    24 of 31 declared candidates are admissible, and the space is INFINITE: the dilation family alone contributes 15 admissible barriers at radius 1, 1023 at radius 2, and the radius is unbounded.  The identification is one point in it.
+  Q2_what_the_axioms_force:
+    NOTHING.  All three routes grade NONE.  No sentence of the axiom memo names a propagation move, so none can constrain what blocks one.  The Admissibility axiom -- the prime candidate -- ranges over the AVAILABLE POSSIBILITIES at a site, not over enterable sites, and the memo explicitly denies choosing a transfer operator.  The Gate-B dynamics note books the central barrier as SUPPLIED runner data in its own ledger.  The identification is ONE SUPPLIED PREMISE.
+  Q3_the_fate_map:
+    The gauge break SURVIVES under every admissible barrier (24/24), with quadratic class counts [4, 5, 6, 7, 8] against a linear count of 1 throughout.  No admissible barrier -- and no refused control either -- inverts it.
+  WHAT DISSOLVES:
+    - The EXISTENCE of the quadratic gauge break.  Linear classes are 1 and quadratic classes exceed 1 for every admissible barrier and every refused control tested, including the free walk.  892's headline result does NOT depend on the identification: the window extent is load-bearing at quadratic order whatever blocks the walk.  892's stated conditionality on this point is DISCHARGED.
+  WHAT REMAINS LOAD-BEARING:
+    - AMPLITUDE EXPULSION (892's certificate E).  It holds only for barriers CONTAINING supp(R), and fails for 9 admissible barriers (B_dilation_S_N6, B_erosion_S_N6, B_erosion_S_ball1, B_threshold_k1, B_threshold_k2, B_threshold_k3, B_threshold_k4, B_threshold_k5, B_threshold_k6).  892 presented expulsion as a consequence of the barrier rule; it is a consequence of CONTAINMENT (theorem C893_T1), which the identification supplies but does not uniquely supply.
+    - THE PARTITION'S REFINEMENT.  Quadratic class counts range over [4, 5, 6, 7, 8] across admissible barriers.  The identification gives 8; thicker barriers coarsen it.  Any downstream row quoting the NUMBER of classes inherits the premise.
+    - THETA-COUPLING.  885's 7/12 is reproduced by only 8 of 24 admissible barriers, ranging from 0/12 to 12/12. Thick barriers freeze every walk and kill theta-dependence entirely.  885's N-certificate row is the most barrier-sensitive result in the lineage.
+  THE PRICE:
+    premise: the propagation barrier is the registration-blocked set: B(R) = supp(R)
+    status : SUPPLIED (named supplied by the Gate-B ledger itself)
+    buys   : ['amplitude expulsion from the support', 'the 8-class refinement of the quadratic partition', "885's 7/12 theta-dependence"]
+    free   : ['the existence of the quadratic gauge break -- free']
+    cheaper: supp(R) SUBSET B(R).  Theorem C893_T1 shows containment alone buys expulsion, and containment is a strictly weaker premise than the identification.  Any downstream row needing only expulsion should import CONTAINMENT, not the identification -- that is a strict reduction in what must be supplied.
+  892 asked whether a different barrier could invert the gauge break. It cannot: across every admissible barrier in the declared space and every refused control -- including no barrier at all -- the linear readout stays single-valued while the quadratic readout does not.  The break is a property of the WINDOW freedom, not of the barrier.  What the identification actually buys is narrower and now priced: expulsion (obtainable more cheaply from containment), the partition's refinement, and the theta row.
+
+[M_HONESTY]  5 scope limits
+    - The barrier admissibility harness tests SET equivariance only, not the centre/radii equivariance 887 demanded of windows.  That is correct for a bare site set but it is a WEAKER filter, so the admissible barrier space reported here is an OVER-estimate relative to a chart-carrying convention.
+    - The 'every admissible barrier preserves the break' claim is over the DECLARED candidate set.  The infinitude result proves the space is unbounded, so the claim is a statement about a finite probe of an infinite space and is labelled as such throughout.
+    - The locality filter is offered CONDITIONALLY: it narrows the space only if one accepts that a barrier inherits the Admissibility axiom's nearest-neighbor determining data, which is itself an unforced reading and is graded NONE by the fidelity sweep.
+    - The fidelity grader is a keyword-co-occurrence lens, not a parser.  It is deliberately GENEROUS -- it would grade EXACT on mere co-occurrence of the four ingredients -- so its NONE verdicts are strong and its EXACT verdicts would need a human read.  It returned no EXACT on the identification routes.
+    - Source sites are barrier-independent by construction, inherited from 892.  A convention that let the barrier move the source would change the fate map and is not tested here.
+
+------------------------------------------------------------------------------
+  gate A_PINS: PASS
+  gate B_RESTRICTION_GATE: PASS
+  gate C_BARRIER_SPACE: PASS
+  gate D_FIDELITY_SWEEP: PASS
+  gate D2_ADMISSIBILITY_DEEP_READ: PASS
+  gate E_FATE_MAP: PASS
+  gate G_STRESS: PASS
+  gate H_VERDICT: PASS
+  gate M_HONESTY: PASS
+  gate candidate_space_completeness: PASS
+  gate fidelity_sentence_completeness: PASS
+  gate per_barrier_completeness: PASS
+  gate falsifier_visibility: PASS
+  gate deterministic_double_build: PASS
+  gate import_firewall_zero_hits: PASS
+  gate runtime_within_cap: PASS
+  elapsed_sec: 32.99
+  receipt: outputs/barrier_identification_cycle893_receipt_2026_07_28.json
+  ALL GATES PASS: True

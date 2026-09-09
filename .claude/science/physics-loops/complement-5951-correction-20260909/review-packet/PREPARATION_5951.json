@@ -1,0 +1,276 @@
+{
+  "pr": {
+    "baseRefName": "physics-loop/toe-time-blockT4-20260802",
+    "baseRefOid": "2e0926ec45803cf30270495e6aa78035fe34f0df",
+    "commits": [
+      {
+        "authoredDate": "2026-08-04T07:38:00Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude"
+          }
+        ],
+        "committedDate": "2026-08-04T07:38:00Z",
+        "messageBody": "\u2026alignment law\n\nDerives what physical event structure realises a period of N - DELTA rather\nthan DELTA, from the interleaved program plus a per-station attributed kernel\ntrace, and generalises Cycle 889's two-run alignment law to k runs in both a\nring and a finite form.\n\n- transport fact: inside a closed quiescent stretch only the four ordered rows\n  of an incident edge (h_f = f-2, f, r, h_r = r+2) move a bank's dirt, and a\n  pointer-carrying crossing is an exchange across that edge\n- bookkeeping identity s2 - s1 = Delta_t + (p2 - p1) classifies every readable\n  period: RELAY_EDGE_DELTA / RELAY_EDGE_COMPLEMENT / RELAY_ENTRY_GAP /\n  TOKEN_SEPARATION / MIXED\n- the complement 8(e+1) is the ENTRY GAP r(b) - f(b-1) = 8(B-1-b) of the single\n  bank b = B-2-e; DELTA belongs to an edge, its complement to a bank\n- k-run law I_max(P) = (max cyclic gap of W SYMDIFF (W-P)) - 1, verified on a\n  declared randomised grid and recovering all 580 of 889's own cells\n- derivation at B=4/5, holdout at B=6/7 behind a printed seal computed before\n  any holdout corpus exists\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "physics: Cycle 891 primary -- the complement mechanism and the k-run \u2026",
+        "oid": "970493331ed9bccbfad909a6ba2c7f5dbe846aa9"
+      },
+      {
+        "authoredDate": "2026-08-04T07:45:09Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude"
+          }
+        ],
+        "committedDate": "2026-08-04T07:45:09Z",
+        "messageBody": "Holdout result behind the printed seal ac87a262: B=6 predicted {8,16,24} =\nobserved exactly; B=7 predicted {8,16,24,32} all present, residuals {40,48} at\n2 episodes each of 3711.  Entry-gap carriers verified as the top carrier at\nevery predicted period except 32 at B=7, which fires only in the\nRELAY_EDGE_COMPLEMENT class.  The B=4/5/6/7 episode censuses reproduce the\npinned Cycle-889 receipt spectrum tick for tick.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "physics: Cycle 891 primary run cache + receipt (10/10 gates PASS, 299s)",
+        "oid": "a88e81872219866c97d2c0a068c4b94b0283c091"
+      },
+      {
+        "authoredDate": "2026-08-04T07:45:46Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude"
+          }
+        ],
+        "committedDate": "2026-08-04T07:45:46Z",
+        "messageBody": "\u2026ment mechanism\n\nIndependent program reconstruction from the builder's recipe; an independent\nperiod detector in INTERVAL ALGEBRA (clean-run lists, symmetric difference by\nboundary sweep, residues from endpoints -- the primary's S ^ (S >> P) and its\nresidue fold are never formed) validated head to head against a literal per-tick\ndefinition; full recomputation of the B=4/5 incidence tables; the holdout\nrecomputed from the STATED RULE TEXT alone; the k-run law attacked on prime and\ncomposite ring sizes, up to 9 runs, non-contiguous dirty sets and periods to 5N;\nwitness anatomies verified register by register with an independent attributed\ntrace and the controller's own token shuffle as a second tick generator; 7 teeth.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "physics: Cycle 891 independent checker -- spec'd to REFUTE the comple\u2026",
+        "oid": "13d13fae283ec3d2dbebae865f789293ea64055f"
+      },
+      {
+        "authoredDate": "2026-08-04T07:57:40Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude"
+          }
+        ],
+        "committedDate": "2026-08-04T07:57:40Z",
+        "messageBody": "register-level comparison\n\nFirst full run exited HONEST_FAIL on F_KRUN_ATTACK's own coverage threshold\n(1337 cells against a declared 1500) with ZERO mismatches, and the register-level\ncomparison was reading the primary's SOURCE-only trace rows, which carry no bank\nmovement this checker records.  Attack trials raised to 4200; the register\ncomparison is now over the rows both instruments can see, is counted, and is\ngated; the rule-text determinacy flag is computed rather than asserted.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "physics: Cycle 891 checker -- calibrate the attack coverage gate and the",
+        "oid": "8a41aadd49ec339ca9b5528e02d2aa82a7a1e77f"
+      },
+      {
+        "authoredDate": "2026-08-04T08:07:58Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude"
+          }
+        ],
+        "committedDate": "2026-08-04T08:07:58Z",
+        "messageBody": "\u2026/7 teeth)\n\nFull independent recomputation of B=4 and B=5 with an interval-algebra detector\nreproduces the primary's episode spectra, complement sets, incidence tables and\nco-occurrence counts row for row, and agrees with the pinned Cycle-889 receipt.\nThe rule recomputed from its STATED TEXT alone reproduces both holdout\npredictions and both carrier maps; the seal-time build log contains no holdout\ntier.  The k-run law survives 2553 attack cells outside the observed family with\n0 mismatches while the +1 perturbation breaks on all 381 control cells.  All\nfour B=7 witness anatomies verified register by register, with the controller's\nown token shuffle as a second, independent tick generator.\nfindings_the_primary_did_not_report: EMPTY.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "physics: Cycle 891 checker cache + receipt (10/10 gates PASS, 577s, 7\u2026",
+        "oid": "bab52490cf78596f77d15ce2fe36618065fcf358"
+      },
+      {
+        "authoredDate": "2026-08-04T08:10:41Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude Opus"
+          }
+        ],
+        "committedDate": "2026-08-04T08:10:41Z",
+        "messageBody": "\u2026ip receipt)\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "physics: certify the complement-mechanism block (Cycle 891, note + sh\u2026",
+        "oid": "2639b90854dba29e68a6190500f86a8eca6b7e44"
+      },
+      {
+        "authoredDate": "2026-08-05T04:40:49Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude Opus"
+          }
+        ],
+        "committedDate": "2026-08-05T04:40:49Z",
+        "messageBody": "\u2026n + RC-1 census note (891); refresh pin\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "physics: Cycle-922 follow-up \u2014 clock-local carrier-label qualificatio\u2026",
+        "oid": "ff333ef2285617a6ac6fdcb1fe0c623db786b896"
+      }
+    ],
+    "headRefName": "physics-loop/toe-time-blockT5-20260802",
+    "headRefOid": "ff333ef2285617a6ac6fdcb1fe0c623db786b896",
+    "isDraft": false,
+    "number": 5951,
+    "state": "OPEN",
+    "title": "[physics-loop][review-loop] toe-time blockT5 (STACKED on #5948) \u2014 Cycle 891: bounded theorem \u2014 the complement mechanism (sealed holdout) and the k-run law"
+  },
+  "raw_boundary": "2d3f825736e57b0dda2e9ee619064cbbc94d739b",
+  "selected": [
+    {
+      "path": "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "3bc503adc7df7d459decd32679b0176b10aec46b",
+        "sha256": "a6ba4e8e71885af22d666f77d4934f98207cd091dc166596507a1fed5d16d376",
+        "bytes": 11221,
+        "recovery": "blobs/3bc503adc7df7d459decd32679b0176b10aec46b"
+      },
+      "current_main": [
+        "100644",
+        "blob",
+        "1c3c40776d4f08ed660da6c4eb255d8db8abbd15"
+      ]
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle891_complement_independent_check_2026_07_28.txt",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "7f2f15677a906c638d526389318568dec33360f8",
+        "sha256": "2372d2d55c386ff05af6cee8126469ca5baad6d49fc3a60bbf93b6c064df1061",
+        "bytes": 24501,
+        "recovery": "blobs/7f2f15677a906c638d526389318568dec33360f8"
+      },
+      "current_main": [
+        "100644",
+        "blob",
+        "7f2f15677a906c638d526389318568dec33360f8"
+      ]
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "7099e5ece90f4b59acec9bf27af29468c4e6b746",
+        "sha256": "47b07a1f1428e50bab41890dff77345130cfa9456b887bafbb00df360027409c",
+        "bytes": 108819,
+        "recovery": "blobs/7099e5ece90f4b59acec9bf27af29468c4e6b746"
+      },
+      "current_main": [
+        "100644",
+        "blob",
+        "7099e5ece90f4b59acec9bf27af29468c4e6b746"
+      ]
+    },
+    {
+      "path": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "6b7b95622227bb8bc4ae3df95a62d36dd17387b1",
+        "sha256": "96808157a06f9146345f14934a4c0391b065c0686fdf312b4cf1825ecac206f2",
+        "bytes": 4365,
+        "recovery": "blobs/6b7b95622227bb8bc4ae3df95a62d36dd17387b1"
+      },
+      "current_main": [
+        "100644",
+        "blob",
+        "4d1366da9325d69bb5bfc9d9604e9e02cf894d9d"
+      ]
+    },
+    {
+      "path": "outputs/complement_independent_check_cycle891_receipt_2026_07_28.json",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "478f19642c1d66a6e1575798f9974b645c9f9a18",
+        "sha256": "cb2f6badda7315725f5f33c5aad89e7e37cf9201472362e0af3a16c4225fae8f",
+        "bytes": 15831,
+        "recovery": "blobs/478f19642c1d66a6e1575798f9974b645c9f9a18"
+      },
+      "current_main": [
+        "100644",
+        "blob",
+        "478f19642c1d66a6e1575798f9974b645c9f9a18"
+      ]
+    },
+    {
+      "path": "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "f537715a927b00b817f8de2569953d78929c86db",
+        "sha256": "f8e30d50a50e39a13f8f968b2ae21991885b6c858c6c96439ed733fc8514bacd",
+        "bytes": 28244,
+        "recovery": "blobs/f537715a927b00b817f8de2569953d78929c86db"
+      },
+      "current_main": [
+        "100644",
+        "blob",
+        "f537715a927b00b817f8de2569953d78929c86db"
+      ]
+    },
+    {
+      "path": "scripts/frontier_cycle891_complement_independent_check_2026_07_28.py",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "53f5cf560f6dfad20dc6b4b91b0c003c848c6bea",
+        "sha256": "f2e9ca32b7d3f863822126c05fbf6a3b637164e8969e5ec7c6c04f15cd89e568",
+        "bytes": 70887,
+        "recovery": "blobs/53f5cf560f6dfad20dc6b4b91b0c003c848c6bea"
+      },
+      "current_main": [
+        "100644",
+        "blob",
+        "460d3d1882b0e21c1fc57c35f61800cb0dae44f7"
+      ]
+    },
+    {
+      "path": "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "a1bbd49ffbe970193cc79054fb7219732f7c9873",
+        "sha256": "3d260f6641d05a22aee092145ea3e5c3b29f3a6882b4cbd9ae966424458afbb7",
+        "bytes": 107915,
+        "recovery": "blobs/a1bbd49ffbe970193cc79054fb7219732f7c9873"
+      },
+      "current_main": [
+        "100644",
+        "blob",
+        "e196bbc11932163035d57b522af3b0a6067f00d6"
+      ]
+    }
+  ],
+  "intermediate_versions": [
+    {
+      "path": "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "mode": "100644",
+      "blob": "235965affc47ce7745327ef194e7c0ae31e6a6c8",
+      "sha256": "5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c",
+      "bytes": 10211,
+      "recovery": "blobs/235965affc47ce7745327ef194e7c0ae31e6a6c8"
+    },
+    {
+      "path": "outputs/complement_block_cycle891_ship_receipt_2026_07_28.json",
+      "mode": "100644",
+      "blob": "4d1366da9325d69bb5bfc9d9604e9e02cf894d9d",
+      "sha256": "9d1ac3b6b8189dcac29c7dc78e786967ead4474fc2d8f24b0853ffb27bee8137",
+      "bytes": 3763,
+      "recovery": "blobs/4d1366da9325d69bb5bfc9d9604e9e02cf894d9d"
+    },
+    {
+      "path": "scripts/frontier_cycle891_complement_independent_check_2026_07_28.py",
+      "mode": "100644",
+      "blob": "e554bfbdb61948c7509a52509c8e91818eefc688",
+      "sha256": "dacac14be1d4f4ce23f12418ea6d7de40982a5f126eb2477d56d432e682c90d9",
+      "bytes": 69966,
+      "recovery": "blobs/e554bfbdb61948c7509a52509c8e91818eefc688"
+    }
+  ]
+}

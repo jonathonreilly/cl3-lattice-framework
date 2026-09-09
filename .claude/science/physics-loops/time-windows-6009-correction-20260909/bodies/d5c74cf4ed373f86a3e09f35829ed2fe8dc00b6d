@@ -1,0 +1,1136 @@
+{
+  "Q1_composition": {
+    "arity_obstruction": {
+      "Z_quadratic_classes_over_the_family": 8,
+      "Z_varies_with_the_record_configuration": true,
+      "mu_classes_over_the_family": 1,
+      "note": "Z is a FAMILY of set functions indexed by the record configuration; each 878 weighting is ONE set function on ONE event space built from ONE trajectory.  The event space has no record-configuration argument at all -- its 'records' are the write events themselves, not a parameter."
+    },
+    "bridge_definition": "A BRIDGE is a pair (phi, N) with phi: E -> BOX u {bottom} any map and N(R, theta) > 0 any positive normalizer, such that for every record configuration R, every theta and every containment-holding admissible window W        mu(phi^{-1}(W)) = Z(R, theta, W) / N(R, theta).  phi and mu carry NO record-configuration argument and NO kernel argument; that is not an assumption, it is an AST-verified fact about build_candidates, whose signature and body are reproduced in certificate B.",
+    "cardinality_obstruction": {
+      "events_per_site": 126,
+      "note": "a fibre-uniform surjection E -> BOX would need 729 | 92260; the remainder is 406",
+      "remainder": 406,
+      "uniform_fibre_surjection_exists": false
+    },
+    "category_meeting": "finitely additive non-negative Q-valued set functions on a finite Boolean algebra",
+    "finding": "BOTH answers are true and they are not in tension.  At the SUBSTRATE level the lineages do NOT meet: the index sets, the symmetry groups (coprime orders 11 and 24) and the arities differ, and the mismatch is computed above rather than asserted.  At the CATEGORY level they DO meet: both objects are finitely additive non-negative rational set functions on finite Boolean algebras, and the bridge equation above is the honest composition surface.  The table of Q2 is therefore buildable, and -- because the 878 side is provably free of both the record-configuration and the kernel argument -- every verdict in it holds for EVERY bridge, not merely for some canonical one.",
+    "substrate_verdict": "SUBSTRATE TYPE MISMATCH -- different index sets, coprime symmetry groups, and a missing record-configuration argument on the 878 side",
+    "symmetry_obstruction": {
+      "878_group": "Z_11, the Cycle-856 monitor-phase relabelling",
+      "878_landed_group_order": 11,
+      "892_family_group_order": 24,
+      "892_group": "the proper cubic rotations acting on the box",
+      "consequence": "by Lagrange the image of any homomorphism Z_11 -> the cubic rotation group has order dividing gcd(11,24) = 1, so the ONLY such homomorphism is trivial.  The single symmetry credential 878 was able to award -- covariance of ['M2_PER_WORLD_UNIFORM'] under the landed monitor-phase group -- is therefore invisible on the 892 side: it cannot be transported across any bridge.",
+      "gcd": 1,
+      "only_trivial_homomorphism": true,
+      "weightings_covariant_under_the_878_group": [
+        "M2_PER_WORLD_UNIFORM"
+      ]
+    }
+  },
+  "Q2_table": {
+    "cell_witnesses": {
+      "M1_COUNTING": {
+        "IF1": {
+          "Z_reaches_one_on": [
+            "ball1",
+            "offcentre_ball"
+          ],
+          "Z_reaches_zero_on": [
+            "Lshape",
+            "annulus_1_4",
+            "hollow_annulus",
+            "shell1",
+            "sparse_a"
+          ],
+          "Z_required_classes": 32,
+          "test": "the weighting's on-record mass fraction must be able to reproduce Z's, which ranges over 32 distinct values across the family -- reaching 0 on 5 configurations and 1 on 2",
+          "verdict": "FAIL",
+          "weighting_fraction_classes": 1,
+          "weighting_value": "4793/23065",
+          "why": "the weighting places a FIXED fraction 4793/23065 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one"
+        },
+        "IF2_BANKED": {
+          "test": "finite additivity over disjoint window pieces",
+          "verdict": "BANKED",
+          "why": "Z already has this property (a site-wise sum) and every 878 candidate is additive by construction; the 892 receipt banks it, so it is not scored"
+        },
+        "IF3": {
+          "configs_unabsorbable_count": 7,
+          "configs_where_theta_is_unabsorbable": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "either the weighting carries the kernel coordinate, or Z's theta-dependence must be absorbable by a theta-invariant normalizer -- tested here on EVERY holding-window pair, not only the box mass (C894-T2)",
+          "verdict": "FAIL",
+          "weighting_theta_arity": 0,
+          "why": "the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations"
+        },
+        "IF4": {
+          "Z_distinct_window_classes_per_config": {
+            "Lshape": 6,
+            "annulus_1_4": 2,
+            "ball1": 1,
+            "chain": 4,
+            "hollow_annulus": 2,
+            "offcentre_ball": 1,
+            "pair": 4,
+            "plane_square": 4,
+            "shell1": 2,
+            "single": 4,
+            "sparse_a": 7,
+            "sparse_b": 7
+          },
+          "resolution_is_sufficient": true,
+          "test": "the weight must take the window as an ARGUMENT, because Z separates the holding windows into [1, 2, 4, 6, 7] classes depending on the configuration",
+          "verdict": "FAIL",
+          "weighting_chain_resolution": 92261,
+          "weighting_has_window_argument": false,
+          "why": "the failure is NOT resolution -- the weighting has 92261 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built"
+        },
+        "IF5": {
+          "sub_test_a_tolerates_vanishing": false,
+          "sub_test_a_zero_weight_atoms": 0,
+          "sub_test_b_config_free_contradiction_windows": [
+            "axis_segment_closure",
+            "minkowski_S_far_shell__origin_present",
+            "minkowski_S_zero__the_885_support_window"
+          ],
+          "sub_test_b_passes": false,
+          "test": "the weight must vanish where Z provably vanishes (42 of 648 cells) and be positive where Z is positive -- on the SAME window",
+          "verdict": "FAIL",
+          "weighting_config_arity": 0,
+          "why": "sub-test (a) already fails: the weighting is strictly positive on every atom, so mu(A) = 0 only for the empty set, and it can never match a vanishing Z on a non-empty window.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive"
+        },
+        "IF6": {
+          "Z_max_degree": 4,
+          "configs_matchable_at_degree_zero": 5,
+          "configs_with_Z_degree_above_zero": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "the weight must be a degree-D polynomial in cos phi with D <= the walk depth 4; Z attains degree 4 and realizes orders [0, 1, 2, 3, 4]",
+          "verdict": "FAIL",
+          "weighting_degree": 0,
+          "why": "the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant"
+        }
+      },
+      "M2_PER_WORLD_UNIFORM": {
+        "IF1": {
+          "Z_reaches_one_on": [
+            "ball1",
+            "offcentre_ball"
+          ],
+          "Z_reaches_zero_on": [
+            "Lshape",
+            "annulus_1_4",
+            "hollow_annulus",
+            "shell1",
+            "sparse_a"
+          ],
+          "Z_required_classes": 32,
+          "test": "the weighting's on-record mass fraction must be able to reproduce Z's, which ranges over 32 distinct values across the family -- reaching 0 on 5 configurations and 1 on 2",
+          "verdict": "FAIL",
+          "weighting_fraction_classes": 1,
+          "weighting_value": "41/187",
+          "why": "the weighting places a FIXED fraction 41/187 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one"
+        },
+        "IF2_BANKED": {
+          "test": "finite additivity over disjoint window pieces",
+          "verdict": "BANKED",
+          "why": "Z already has this property (a site-wise sum) and every 878 candidate is additive by construction; the 892 receipt banks it, so it is not scored"
+        },
+        "IF3": {
+          "configs_unabsorbable_count": 7,
+          "configs_where_theta_is_unabsorbable": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "either the weighting carries the kernel coordinate, or Z's theta-dependence must be absorbable by a theta-invariant normalizer -- tested here on EVERY holding-window pair, not only the box mass (C894-T2)",
+          "verdict": "FAIL",
+          "weighting_theta_arity": 0,
+          "why": "the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations"
+        },
+        "IF4": {
+          "Z_distinct_window_classes_per_config": {
+            "Lshape": 6,
+            "annulus_1_4": 2,
+            "ball1": 1,
+            "chain": 4,
+            "hollow_annulus": 2,
+            "offcentre_ball": 1,
+            "pair": 4,
+            "plane_square": 4,
+            "shell1": 2,
+            "single": 4,
+            "sparse_a": 7,
+            "sparse_b": 7
+          },
+          "resolution_is_sufficient": true,
+          "test": "the weight must take the window as an ARGUMENT, because Z separates the holding windows into [1, 2, 4, 6, 7] classes depending on the configuration",
+          "verdict": "FAIL",
+          "weighting_chain_resolution": 92261,
+          "weighting_has_window_argument": false,
+          "why": "the failure is NOT resolution -- the weighting has 92261 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built"
+        },
+        "IF5": {
+          "sub_test_a_tolerates_vanishing": false,
+          "sub_test_a_zero_weight_atoms": 0,
+          "sub_test_b_config_free_contradiction_windows": [
+            "axis_segment_closure",
+            "minkowski_S_far_shell__origin_present",
+            "minkowski_S_zero__the_885_support_window"
+          ],
+          "sub_test_b_passes": false,
+          "test": "the weight must vanish where Z provably vanishes (42 of 648 cells) and be positive where Z is positive -- on the SAME window",
+          "verdict": "FAIL",
+          "weighting_config_arity": 0,
+          "why": "sub-test (a) already fails: the weighting is strictly positive on every atom, so mu(A) = 0 only for the empty set, and it can never match a vanishing Z on a non-empty window.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive"
+        },
+        "IF6": {
+          "Z_max_degree": 4,
+          "configs_matchable_at_degree_zero": 5,
+          "configs_with_Z_degree_above_zero": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "the weight must be a degree-D polynomial in cos phi with D <= the walk depth 4; Z attains degree 4 and realizes orders [0, 1, 2, 3, 4]",
+          "verdict": "FAIL",
+          "weighting_degree": 0,
+          "why": "the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant"
+        }
+      },
+      "M3_OCCUPATION_WEIGHTED": {
+        "IF1": {
+          "Z_reaches_one_on": [
+            "ball1",
+            "offcentre_ball"
+          ],
+          "Z_reaches_zero_on": [
+            "Lshape",
+            "annulus_1_4",
+            "hollow_annulus",
+            "shell1",
+            "sparse_a"
+          ],
+          "Z_required_classes": 32,
+          "test": "the weighting's on-record mass fraction must be able to reproduce Z's, which ranges over 32 distinct values across the family -- reaching 0 on 5 configurations and 1 on 2",
+          "verdict": "FAIL",
+          "weighting_fraction_classes": 1,
+          "weighting_value": "1/1",
+          "why": "the weighting places a FIXED fraction 1/1 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one"
+        },
+        "IF2_BANKED": {
+          "test": "finite additivity over disjoint window pieces",
+          "verdict": "BANKED",
+          "why": "Z already has this property (a site-wise sum) and every 878 candidate is additive by construction; the 892 receipt banks it, so it is not scored"
+        },
+        "IF3": {
+          "configs_unabsorbable_count": 7,
+          "configs_where_theta_is_unabsorbable": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "either the weighting carries the kernel coordinate, or Z's theta-dependence must be absorbable by a theta-invariant normalizer -- tested here on EVERY holding-window pair, not only the box mass (C894-T2)",
+          "verdict": "FAIL",
+          "weighting_theta_arity": 0,
+          "why": "the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations"
+        },
+        "IF4": {
+          "Z_distinct_window_classes_per_config": {
+            "Lshape": 6,
+            "annulus_1_4": 2,
+            "ball1": 1,
+            "chain": 4,
+            "hollow_annulus": 2,
+            "offcentre_ball": 1,
+            "pair": 4,
+            "plane_square": 4,
+            "shell1": 2,
+            "single": 4,
+            "sparse_a": 7,
+            "sparse_b": 7
+          },
+          "resolution_is_sufficient": true,
+          "test": "the weight must take the window as an ARGUMENT, because Z separates the holding windows into [1, 2, 4, 6, 7] classes depending on the configuration",
+          "verdict": "FAIL",
+          "weighting_chain_resolution": 19173,
+          "weighting_has_window_argument": false,
+          "why": "the failure is NOT resolution -- the weighting has 19173 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built"
+        },
+        "IF5": {
+          "sub_test_a_tolerates_vanishing": true,
+          "sub_test_a_zero_weight_atoms": 73088,
+          "sub_test_b_config_free_contradiction_windows": [
+            "axis_segment_closure",
+            "minkowski_S_far_shell__origin_present",
+            "minkowski_S_zero__the_885_support_window"
+          ],
+          "sub_test_b_passes": false,
+          "test": "the weight must vanish where Z provably vanishes (42 of 648 cells) and be positive where Z is positive -- on the SAME window",
+          "verdict": "FAIL",
+          "weighting_config_arity": 0,
+          "why": "sub-test (a) PASSES -- the weighting has 73088 zero-weight atoms, so it CAN vanish on a non-empty set.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive"
+        },
+        "IF6": {
+          "Z_max_degree": 4,
+          "configs_matchable_at_degree_zero": 5,
+          "configs_with_Z_degree_above_zero": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "the weight must be a degree-D polynomial in cos phi with D <= the walk depth 4; Z attains degree 4 and realizes orders [0, 1, 2, 3, 4]",
+          "verdict": "FAIL",
+          "weighting_degree": 0,
+          "why": "the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant"
+        }
+      },
+      "M4_FORMATION_LIFETIME": {
+        "IF1": {
+          "Z_reaches_one_on": [
+            "ball1",
+            "offcentre_ball"
+          ],
+          "Z_reaches_zero_on": [
+            "Lshape",
+            "annulus_1_4",
+            "hollow_annulus",
+            "shell1",
+            "sparse_a"
+          ],
+          "Z_required_classes": 32,
+          "test": "the weighting's on-record mass fraction must be able to reproduce Z's, which ranges over 32 distinct values across the family -- reaching 0 on 5 configurations and 1 on 2",
+          "verdict": "FAIL",
+          "weighting_fraction_classes": 1,
+          "weighting_value": "1/1",
+          "why": "the weighting places a FIXED fraction 1/1 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one"
+        },
+        "IF2_BANKED": {
+          "test": "finite additivity over disjoint window pieces",
+          "verdict": "BANKED",
+          "why": "Z already has this property (a site-wise sum) and every 878 candidate is additive by construction; the 892 receipt banks it, so it is not scored"
+        },
+        "IF3": {
+          "configs_unabsorbable_count": 7,
+          "configs_where_theta_is_unabsorbable": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "either the weighting carries the kernel coordinate, or Z's theta-dependence must be absorbable by a theta-invariant normalizer -- tested here on EVERY holding-window pair, not only the box mass (C894-T2)",
+          "verdict": "FAIL",
+          "weighting_theta_arity": 0,
+          "why": "the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations"
+        },
+        "IF4": {
+          "Z_distinct_window_classes_per_config": {
+            "Lshape": 6,
+            "annulus_1_4": 2,
+            "ball1": 1,
+            "chain": 4,
+            "hollow_annulus": 2,
+            "offcentre_ball": 1,
+            "pair": 4,
+            "plane_square": 4,
+            "shell1": 2,
+            "single": 4,
+            "sparse_a": 7,
+            "sparse_b": 7
+          },
+          "resolution_is_sufficient": true,
+          "test": "the weight must take the window as an ARGUMENT, because Z separates the holding windows into [1, 2, 4, 6, 7] classes depending on the configuration",
+          "verdict": "FAIL",
+          "weighting_chain_resolution": 19173,
+          "weighting_has_window_argument": false,
+          "why": "the failure is NOT resolution -- the weighting has 19173 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built"
+        },
+        "IF5": {
+          "sub_test_a_tolerates_vanishing": true,
+          "sub_test_a_zero_weight_atoms": 73088,
+          "sub_test_b_config_free_contradiction_windows": [
+            "axis_segment_closure",
+            "minkowski_S_far_shell__origin_present",
+            "minkowski_S_zero__the_885_support_window"
+          ],
+          "sub_test_b_passes": false,
+          "test": "the weight must vanish where Z provably vanishes (42 of 648 cells) and be positive where Z is positive -- on the SAME window",
+          "verdict": "FAIL",
+          "weighting_config_arity": 0,
+          "why": "sub-test (a) PASSES -- the weighting has 73088 zero-weight atoms, so it CAN vanish on a non-empty set.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive"
+        },
+        "IF6": {
+          "Z_max_degree": 4,
+          "configs_matchable_at_degree_zero": 5,
+          "configs_with_Z_degree_above_zero": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "the weight must be a degree-D polynomial in cos phi with D <= the walk depth 4; Z attains degree 4 and realizes orders [0, 1, 2, 3, 4]",
+          "verdict": "FAIL",
+          "weighting_degree": 0,
+          "why": "the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant"
+        }
+      },
+      "M5_FORMATION_MOMENT": {
+        "IF1": {
+          "Z_reaches_one_on": [
+            "ball1",
+            "offcentre_ball"
+          ],
+          "Z_reaches_zero_on": [
+            "Lshape",
+            "annulus_1_4",
+            "hollow_annulus",
+            "shell1",
+            "sparse_a"
+          ],
+          "Z_required_classes": 32,
+          "test": "the weighting's on-record mass fraction must be able to reproduce Z's, which ranges over 32 distinct values across the family -- reaching 0 on 5 configurations and 1 on 2",
+          "verdict": "FAIL",
+          "weighting_fraction_classes": 1,
+          "weighting_value": "1/1",
+          "why": "the weighting places a FIXED fraction 1/1 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one"
+        },
+        "IF2_BANKED": {
+          "test": "finite additivity over disjoint window pieces",
+          "verdict": "BANKED",
+          "why": "Z already has this property (a site-wise sum) and every 878 candidate is additive by construction; the 892 receipt banks it, so it is not scored"
+        },
+        "IF3": {
+          "configs_unabsorbable_count": 7,
+          "configs_where_theta_is_unabsorbable": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "either the weighting carries the kernel coordinate, or Z's theta-dependence must be absorbable by a theta-invariant normalizer -- tested here on EVERY holding-window pair, not only the box mass (C894-T2)",
+          "verdict": "FAIL",
+          "weighting_theta_arity": 0,
+          "why": "the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations"
+        },
+        "IF4": {
+          "Z_distinct_window_classes_per_config": {
+            "Lshape": 6,
+            "annulus_1_4": 2,
+            "ball1": 1,
+            "chain": 4,
+            "hollow_annulus": 2,
+            "offcentre_ball": 1,
+            "pair": 4,
+            "plane_square": 4,
+            "shell1": 2,
+            "single": 4,
+            "sparse_a": 7,
+            "sparse_b": 7
+          },
+          "resolution_is_sufficient": true,
+          "test": "the weight must take the window as an ARGUMENT, because Z separates the holding windows into [1, 2, 4, 6, 7] classes depending on the configuration",
+          "verdict": "FAIL",
+          "weighting_chain_resolution": 16077,
+          "weighting_has_window_argument": false,
+          "why": "the failure is NOT resolution -- the weighting has 16077 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built"
+        },
+        "IF5": {
+          "sub_test_a_tolerates_vanishing": true,
+          "sub_test_a_zero_weight_atoms": 76184,
+          "sub_test_b_config_free_contradiction_windows": [
+            "axis_segment_closure",
+            "minkowski_S_far_shell__origin_present",
+            "minkowski_S_zero__the_885_support_window"
+          ],
+          "sub_test_b_passes": false,
+          "test": "the weight must vanish where Z provably vanishes (42 of 648 cells) and be positive where Z is positive -- on the SAME window",
+          "verdict": "FAIL",
+          "weighting_config_arity": 0,
+          "why": "sub-test (a) PASSES -- the weighting has 76184 zero-weight atoms, so it CAN vanish on a non-empty set.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive"
+        },
+        "IF6": {
+          "Z_max_degree": 4,
+          "configs_matchable_at_degree_zero": 5,
+          "configs_with_Z_degree_above_zero": [
+            "Lshape",
+            "chain",
+            "pair",
+            "plane_square",
+            "single",
+            "sparse_a",
+            "sparse_b"
+          ],
+          "test": "the weight must be a degree-D polynomial in cos phi with D <= the walk depth 4; Z attains degree 4 and realizes orders [0, 1, 2, 3, 4]",
+          "verdict": "FAIL",
+          "weighting_degree": 0,
+          "why": "the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant"
+        }
+      }
+    },
+    "cells_computed": 25,
+    "cells_expected": 25,
+    "outcome": "NO-GO",
+    "owed_requirements": [
+      "IF1",
+      "IF3",
+      "IF4",
+      "IF5",
+      "IF6"
+    ],
+    "passes_per_weighting": {
+      "M1_COUNTING": 0,
+      "M2_PER_WORLD_UNIFORM": 0,
+      "M3_OCCUPATION_WEIGHTED": 0,
+      "M4_FORMATION_LIFETIME": 0,
+      "M5_FORMATION_MOMENT": 0
+    },
+    "planted_controls": {
+      "P1_PLANTED_SURVIVOR": {
+        "IF1": "PASS",
+        "IF3": "PASS",
+        "IF4": "PASS",
+        "IF5": "PASS",
+        "IF6": "PASS"
+      },
+      "P2_PLANTED_NEAR_MISS": {
+        "IF1": "PASS",
+        "IF3": "FAIL",
+        "IF4": "PASS",
+        "IF5": "PASS",
+        "IF6": "FAIL"
+      }
+    },
+    "requirements_verbatim": {
+      "IF1": {
+        "id": "IF1",
+        "requirement": "The event-space step must supply a map rho from record configurations to amplitude fields whose SUPPORT overlaps supp(R).",
+        "what_fails_without_it": "Any identification of I with Z is a statement about two functions on disjoint loci; the barrier B(R) = supp(R) is what makes them disjoint, so IF1 forces either a different barrier or an explicitly non-local identification."
+      },
+      "IF2": {
+        "id": "IF2",
+        "requirement": "rho must be such that Z is a FINITELY ADDITIVE set function over disjoint window pieces.",
+        "what_fails_without_it": "Nothing; this is the one Born-shaped property the computation supplies for free."
+      },
+      "IF3": {
+        "id": "IF3",
+        "requirement": "rho must supply a NORMALIZER that is theta-invariant, or else declare theta as an observable.",
+        "what_fails_without_it": "Z cannot be read as a weight of anything: its scale is a free function of a kernel coordinate."
+      },
+      "IF4": {
+        "id": "IF4",
+        "requirement": "rho must fix the WINDOW, because Z is not window-invariant.",
+        "what_fails_without_it": "The weight is defined only up to the whole 887 inflation freedom, which certificate G shows is not a null direction at this order."
+      },
+      "IF5": {
+        "id": "IF5",
+        "requirement": "rho must tolerate VANISHING Z on admissible windows, or exclude the configurations where it vanishes.",
+        "what_fails_without_it": "Normalization by Z is undefined on those configurations."
+      },
+      "IF6": {
+        "id": "IF6",
+        "requirement": "rho must respect the interference structure: any identification must be with a degree-D polynomial in cos phi, not with an arbitrary function of the kernel.",
+        "what_fails_without_it": "An identification could be satisfied by tuning theta pointwise, which the polynomial structure forbids."
+      }
+    },
+    "survivors": [],
+    "verdicts": {
+      "M1_COUNTING": {
+        "IF1": "FAIL",
+        "IF3": "FAIL",
+        "IF4": "FAIL",
+        "IF5": "FAIL",
+        "IF6": "FAIL"
+      },
+      "M2_PER_WORLD_UNIFORM": {
+        "IF1": "FAIL",
+        "IF3": "FAIL",
+        "IF4": "FAIL",
+        "IF5": "FAIL",
+        "IF6": "FAIL"
+      },
+      "M3_OCCUPATION_WEIGHTED": {
+        "IF1": "FAIL",
+        "IF3": "FAIL",
+        "IF4": "FAIL",
+        "IF5": "FAIL",
+        "IF6": "FAIL"
+      },
+      "M4_FORMATION_LIFETIME": {
+        "IF1": "FAIL",
+        "IF3": "FAIL",
+        "IF4": "FAIL",
+        "IF5": "FAIL",
+        "IF6": "FAIL"
+      },
+      "M5_FORMATION_MOMENT": {
+        "IF1": "FAIL",
+        "IF3": "FAIL",
+        "IF4": "FAIL",
+        "IF5": "FAIL",
+        "IF6": "FAIL"
+      }
+    }
+  },
+  "Q3_residual": {
+    "bridging_object": {
+      "amplitude_sites_in_the_union_over_the_family": 271,
+      "reduction_from_additivity": 0,
+      "specification_size_by_site": "4260 rationals if specified site-wise on the amplitude support (additivity then determines every window)",
+      "specification_size_by_window": "12 configs x 9 holding windows x 5 Chebyshev coefficients = 540 rationals",
+      "what_is_missing": "a map Phi from record configurations to event-space measures.  Every 878 weighting is Phi evaluated at a single unnamed configuration; the 892 side needs Phi itself."
+    },
+    "next_door_sized": "5 properties, of which P1 (configuration arity) and P2 (kernel arity) are the only two that cannot be read off the pinned artifacts -- they must be CONSTRUCTED.  P3, P4 and P5 are then forced by rows this cycle already computed.  The construction target is a 4260-rational object, or 540 if specified window-wise.",
+    "property_sheet": [
+      {
+        "closes": [
+          "IF1",
+          "IF5"
+        ],
+        "deficit": {
+          "required_classes": 8,
+          "supplied_classes": 1
+        },
+        "derived_from": "Z splits the 12-configuration family into 8 distinct classes at quadratic order against 1 at linear order (892 certificate G, recomputed here as the distinct-Z-class rows); each 878 weighting supplies exactly 1 class because its construction has no configuration argument (AST-verified in certificate B)",
+        "property": "P1 RECORD-CONFIGURATION ARITY",
+        "requirement": "the weight must be a FAMILY of set functions indexed by the record configuration, not one set function on one event space"
+      },
+      {
+        "closes": [
+          "IF3",
+          "IF6"
+        ],
+        "deficit": {
+          "coefficients_per_cell": 5,
+          "required_degree": 4,
+          "supplied_degree": 0
+        },
+        "derived_from": "C894-T2 computed here: on 7 of 12 configurations theta survives EVERY window-ratio normalizer over all 36 holding pairs, so no theta-free normalizer removes it; and 892's certificate H, recomputed here, fixes the order at 4 with orders [0, 1, 2, 3, 4] realized",
+        "property": "P2 KERNEL ARITY WITH BOUNDED POLYNOMIAL ORDER",
+        "requirement": "the weight must carry the kernel coordinate cos phi as a polynomial of degree at most the walk depth"
+      },
+      {
+        "closes": [
+          "IF5"
+        ],
+        "deficit": {
+          "required_vanishing_cells": 42,
+          "supplied_by_the_best_878_candidate": "a configuration-independent zero set"
+        },
+        "derived_from": "42 of 648 cells vanish, and 3 holding windows (['axis_segment_closure', 'minkowski_S_far_shell__origin_present', 'minkowski_S_zero__the_885_support_window']) both vanish and are positive across the family -- the exact obstruction of C894-T1",
+        "property": "P3 CONFIGURATION-DEPENDENT ZERO SET",
+        "requirement": "the weight must vanish on exactly the cells where Z vanishes and be positive on the rest, with the zero set depending on the configuration"
+      },
+      {
+        "closes": [
+          "IF1"
+        ],
+        "deficit": {
+          "required_fraction_classes": 32,
+          "supplied_fraction_classes": 1
+        },
+        "derived_from": "844 amplitude sites lie outside supp(R) against 8 inside, and the inside sites are exactly the seed (892 certificate E, recomputed here); the on-record mass fraction reaches 0 on 5 configurations (['Lshape', 'annulus_1_4', 'hollow_annulus', 'shell1', 'sparse_a']) and 1 on 2 (['ball1', 'offcentre_ball'])",
+        "property": "P4 OFF-RECORD LOCUS",
+        "requirement": "the weight must place mass off supp(R), and its on-record fraction must be able to reach 0 and 1"
+      },
+      {
+        "closes": [
+          "IF4"
+        ],
+        "deficit": {
+          "required": "a set function on box windows",
+          "supplied": "a set function on record-write events"
+        },
+        "derived_from": "Z separates the holding windows into [1, 2, 4, 6, 7] classes depending on the configuration; the 878 weightings have ample resolution but no window argument",
+        "property": "P5 WINDOW ARGUMENT",
+        "requirement": "the weight must take the window as an argument"
+      }
+    ],
+    "what_would_separate_survivors": "not applicable at this outcome class: there are no survivors to separate.  The next computed fact that would MOVE the result is a sixth weighting carrying P1 and P2; P3, P4 and P5 then follow from the pinned Z rows without further input."
+  },
+  "Z_profile": {
+    "configs_where_theta_is_absorbable": [
+      "annulus_1_4",
+      "ball1",
+      "hollow_annulus",
+      "offcentre_ball",
+      "shell1"
+    ],
+    "configs_with_degree_above_zero": [
+      "Lshape",
+      "chain",
+      "pair",
+      "plane_square",
+      "single",
+      "sparse_a",
+      "sparse_b"
+    ],
+    "distinct_Z_classes_among_holding_windows": {
+      "Lshape": 6,
+      "annulus_1_4": 2,
+      "ball1": 1,
+      "chain": 4,
+      "hollow_annulus": 2,
+      "offcentre_ball": 1,
+      "pair": 4,
+      "plane_square": 4,
+      "shell1": 2,
+      "single": 4,
+      "sparse_a": 7,
+      "sparse_b": 7
+    },
+    "max_interference_degree_per_config": {
+      "Lshape": 4,
+      "annulus_1_4": 0,
+      "ball1": 0,
+      "chain": 2,
+      "hollow_annulus": 0,
+      "offcentre_ball": 0,
+      "pair": 3,
+      "plane_square": 2,
+      "shell1": 0,
+      "single": 2,
+      "sparse_a": 4,
+      "sparse_b": 2
+    },
+    "on_record_fraction_distinct_over_family": 32,
+    "on_record_mass_fraction_classes": {
+      "Lshape": [
+        "0/1"
+      ],
+      "annulus_1_4": [
+        "0/1"
+      ],
+      "ball1": [
+        "1/1"
+      ],
+      "chain": [
+        "25/231073",
+        "25/244177",
+        "3721/32111761",
+        "5329/51327001",
+        "625/6433897",
+        "841/8032081"
+      ],
+      "hollow_annulus": [
+        "0/1"
+      ],
+      "offcentre_ball": [
+        "1/1"
+      ],
+      "pair": [
+        "453962/7108039651",
+        "48778/939131139",
+        "50/911247",
+        "50/997399",
+        "6250/134921019",
+        "778034/15183563407"
+      ],
+      "plane_square": [
+        "25/55199",
+        "25/58951",
+        "3721/7562671",
+        "5329/12359335",
+        "625/1568111",
+        "841/1930991"
+      ],
+      "shell1": [
+        "0/1"
+      ],
+      "single": [
+        "1/23203",
+        "1/24379",
+        "25/639043",
+        "3721/81220411",
+        "5329/128296339",
+        "841/20094331"
+      ],
+      "sparse_a": [
+        "0/1"
+      ],
+      "sparse_b": [
+        "25/296613",
+        "25/313637",
+        "3721/41184341",
+        "5329/65917181",
+        "625/8268957",
+        "841/10314261"
+      ]
+    },
+    "on_record_reaches_one_on": [
+      "ball1",
+      "offcentre_ball"
+    ],
+    "on_record_reaches_zero_on": [
+      "Lshape",
+      "annulus_1_4",
+      "hollow_annulus",
+      "shell1",
+      "sparse_a"
+    ],
+    "window_ratio_theta_absorption": {
+      "Lshape": {
+        "absorbable": false,
+        "pairs": 36,
+        "theta_varying_pairs": 18
+      },
+      "annulus_1_4": {
+        "absorbable": true,
+        "pairs": 36,
+        "theta_varying_pairs": 0
+      },
+      "ball1": {
+        "absorbable": true,
+        "pairs": 36,
+        "theta_varying_pairs": 0
+      },
+      "chain": {
+        "absorbable": false,
+        "pairs": 36,
+        "theta_varying_pairs": 27
+      },
+      "hollow_annulus": {
+        "absorbable": true,
+        "pairs": 36,
+        "theta_varying_pairs": 0
+      },
+      "offcentre_ball": {
+        "absorbable": true,
+        "pairs": 36,
+        "theta_varying_pairs": 0
+      },
+      "pair": {
+        "absorbable": false,
+        "pairs": 36,
+        "theta_varying_pairs": 25
+      },
+      "plane_square": {
+        "absorbable": false,
+        "pairs": 36,
+        "theta_varying_pairs": 27
+      },
+      "shell1": {
+        "absorbable": true,
+        "pairs": 36,
+        "theta_varying_pairs": 0
+      },
+      "single": {
+        "absorbable": false,
+        "pairs": 36,
+        "theta_varying_pairs": 25
+      },
+      "sparse_a": {
+        "absorbable": false,
+        "pairs": 36,
+        "theta_varying_pairs": 25
+      },
+      "sparse_b": {
+        "absorbable": false,
+        "pairs": 36,
+        "theta_varying_pairs": 33
+      }
+    },
+    "windows_that_both_vanish_and_are_positive": [
+      {
+        "positive_on_count": 11,
+        "vanishes_on": [
+          "Lshape"
+        ],
+        "vanishes_on_count": 1,
+        "window": "axis_segment_closure"
+      },
+      {
+        "positive_on_count": 11,
+        "vanishes_on": [
+          "shell1"
+        ],
+        "vanishes_on_count": 1,
+        "window": "minkowski_S_far_shell__origin_present"
+      },
+      {
+        "positive_on_count": 7,
+        "vanishes_on": [
+          "Lshape",
+          "annulus_1_4",
+          "hollow_annulus",
+          "shell1",
+          "sparse_a"
+        ],
+        "vanishes_on_count": 5,
+        "window": "minkowski_S_zero__the_885_support_window"
+      }
+    ]
+  },
+  "all_certificates_pass": true,
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-time-blockG17-20260802",
+  "boundary": "this block supplies no occurrence rule, no probability, no update law and selects no weighting as physical; it computes whether the pinned gravity-side structure EXCLUDES the pinned record-side candidates, and reports exclusion as the negative result it is",
+  "campaign": "campaign-5-born-groundwork",
+  "certificate_pass": {
+    "A_PINS": true,
+    "B_RESTRICTION_878": true,
+    "C_RESTRICTION_892": true,
+    "D_COMPOSITION": true,
+    "E_TABLE": true,
+    "F_FALSIFIER": true,
+    "G_NEEDLE": true,
+    "H_RESIDUAL": true,
+    "I_DOUBLE_BUILD": true,
+    "J_RUNTIME": true
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 894,
+  "deterministic_double_build": true,
+  "elapsed_sec": 8.079,
+  "falsifier": {
+    "finding": "The table SEES the planted survivor: P1 passes all 5 owed requirements.  It is not a rubber stamp: the planted near-miss P2, which differs from P1 only in freezing the kernel coordinate, passes 3 and fails 2 (['IF3', 'IF6']) -- exactly the two requirements that reference the kernel.  A table that returns all-FAIL on the real candidates while returning all-PASS on a designed survivor and a split verdict on a designed near-miss is discriminating, not degenerate.",
+    "pass": true,
+    "planted_near_miss_is_partial": true,
+    "planted_near_miss_requirements_failed": [
+      "IF3",
+      "IF6"
+    ],
+    "planted_near_miss_requirements_passed": [
+      "IF1",
+      "IF4",
+      "IF5"
+    ],
+    "planted_survivor_is_visible": true,
+    "planted_survivor_requirements_passed": [
+      "IF1",
+      "IF3",
+      "IF4",
+      "IF5",
+      "IF6"
+    ]
+  },
+  "family_digest": "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e",
+  "mu_profile": {
+    "M1_COUNTING": {
+      "chain_resolution": "92261",
+      "config_arity": "0",
+      "on_record_fraction_classes": "1",
+      "on_record_mass_fraction": "4793/23065",
+      "on_record_mass_fraction_value": "4793/23065",
+      "polynomial_degree_in_cos_phi": "0",
+      "positive_atoms": "92260",
+      "support_faithful": "True",
+      "theta_arity": "0",
+      "total_mass": "92260/1",
+      "zero_weight_atoms": "0"
+    },
+    "M2_PER_WORLD_UNIFORM": {
+      "chain_resolution": "92261",
+      "config_arity": "0",
+      "on_record_fraction_classes": "1",
+      "on_record_mass_fraction": "41/187",
+      "on_record_mass_fraction_value": "41/187",
+      "polynomial_degree_in_cos_phi": "0",
+      "positive_atoms": "92260",
+      "support_faithful": "True",
+      "theta_arity": "0",
+      "total_mass": "1/1",
+      "zero_weight_atoms": "0"
+    },
+    "M3_OCCUPATION_WEIGHTED": {
+      "chain_resolution": "19173",
+      "config_arity": "0",
+      "on_record_fraction_classes": "1",
+      "on_record_mass_fraction": "1/1",
+      "on_record_mass_fraction_value": "1",
+      "polynomial_degree_in_cos_phi": "0",
+      "positive_atoms": "19172",
+      "support_faithful": "False",
+      "theta_arity": "0",
+      "total_mass": "1/1",
+      "zero_weight_atoms": "73088"
+    },
+    "M4_FORMATION_LIFETIME": {
+      "chain_resolution": "19173",
+      "config_arity": "0",
+      "on_record_fraction_classes": "1",
+      "on_record_mass_fraction": "1/1",
+      "on_record_mass_fraction_value": "1",
+      "polynomial_degree_in_cos_phi": "0",
+      "positive_atoms": "19172",
+      "support_faithful": "False",
+      "theta_arity": "0",
+      "total_mass": "1/1",
+      "zero_weight_atoms": "73088"
+    },
+    "M5_FORMATION_MOMENT": {
+      "chain_resolution": "16077",
+      "config_arity": "0",
+      "on_record_fraction_classes": "1",
+      "on_record_mass_fraction": "1/1",
+      "on_record_mass_fraction_value": "1",
+      "polynomial_degree_in_cos_phi": "0",
+      "positive_atoms": "16076",
+      "support_faithful": "False",
+      "theta_arity": "0",
+      "total_mass": "1/1",
+      "zero_weight_atoms": "76184"
+    }
+  },
+  "needle": {
+    "axiom_exclusion_list_present_in_pinned_md": true,
+    "leaked_into_derived_content": [],
+    "pass": true,
+    "rows": {
+      "born rule": {
+        "in_derived_content": false,
+        "in_file_text": 0
+      },
+      "born's rule": {
+        "in_derived_content": false,
+        "in_file_text": 0
+      },
+      "hilbert space": {
+        "in_derived_content": false,
+        "in_file_text": 0
+      },
+      "measurement postulate": {
+        "in_derived_content": false,
+        "in_file_text": 0
+      },
+      "probability amplitude squared": {
+        "in_derived_content": false,
+        "in_file_text": 0
+      },
+      "quantum probability": {
+        "in_derived_content": false,
+        "in_file_text": 0
+      },
+      "unitary evolution": {
+        "in_derived_content": false,
+        "in_file_text": 0
+      },
+      "wavefunction": {
+        "in_derived_content": false,
+        "in_file_text": 0
+      },
+      "|psi|^2": {
+        "in_derived_content": false,
+        "in_file_text": 0
+      }
+    },
+    "scope": "the gate is on DERIVED content -- the composition surface, the verdict table and the residual property sheet.  Prose in this file that names the exclusion in order to guard against it is not a premise and is not gated.",
+    "vocabulary": [
+      "born rule",
+      "born's rule",
+      "probability amplitude squared",
+      "|psi|^2",
+      "wavefunction",
+      "hilbert space",
+      "unitary evolution",
+      "quantum probability",
+      "measurement postulate"
+    ],
+    "vocabulary_source": "BORN_VOCABULARY, AST-extracted verbatim from the pinned 892 primary"
+  },
+  "question": "Cycle 894: does gravity's Z constrain the Born selection?  Which of 878's five admissible weightings can satisfy 892's IF sheet against Z's computed structure?",
+  "restriction_gate_878": {
+    "checks_failed": 0,
+    "checks_run": 32,
+    "pass": true,
+    "scope": "The Cycle-863 dependency of the 878 primary is ABSENT from this branch, so 878's trajectory is not re-run here.  The surrogate is exact on the four inputs the AST proves the weightings read, and is CONSTRAINED, not fitted: its per-world multiset is forced by 878's certified totals, formation count and range.  It is a consistency rebuild of the weighting layer, not an independent re-derivation of the event space; the event space itself enters through the certified receipt rows checked above."
+  },
+  "restriction_gate_892": {
+    "checks_failed": 0,
+    "checks_run": 19,
+    "method": "fully live: the 885 family and the 887 catalogue are both on this branch, so every 892 row is RECOMPUTED from the AST-extracted Z machinery, not read out of a receipt",
+    "pass": true
+  },
+  "science_digest": "7ed3b4f5c1368f7497685d7d2c043e317e0207664d356a81ed7ea8845247cdec",
+  "scope": "One 12-configuration family (digest 30edaa3d5ca03c24) in a box of radius 4 with walk depth 4; the nine containment-holding admissible windows recomputed from 887's catalogue; a six-value theta grid; and 878's five admissible weightings, whose semantics are AST-extracted from the vendored primary and whose certified counts are reproduced from the vendored receipt.  878's Cycle-863 dependency is absent from this branch, so its trajectory is not re-run: the weighting layer is rebuilt on a surrogate that is exact on the four inputs the AST proves the weightings read, and the event space itself enters through certified receipt rows.",
+  "self_sha256": "9ac694b1b42bd134d5de331ffbb489a7029dedb5521a706ad1f33dda75682625",
+  "source_pins": [
+    {
+      "git_blob": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+      "path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+      "sha256": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b"
+    },
+    {
+      "git_blob": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+      "path": "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+      "sha256": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c"
+    },
+    {
+      "git_blob": "360eed9e17eab1af19ca03d7ea1161dafaf56da0",
+      "path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py",
+      "sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f"
+    },
+    {
+      "git_blob": "722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2",
+      "path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json",
+      "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae"
+    },
+    {
+      "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",
+      "path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+      "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32"
+    },
+    {
+      "git_blob": "0fbcf92fc98b0d88d436a05efdc33449c52473db",
+      "path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py",
+      "sha256": "139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83"
+    },
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    }
+  ],
+  "theorems": [
+    {
+      "holds": true,
+      "id": "C894-T1 CONFIG-FREE BRIDGE OBSTRUCTION",
+      "statement": "If some containment-holding admissible window W has Z(R,theta,W) = 0 for one (R,theta) and Z(R',theta',W) > 0 for another, then no config-free weighting can satisfy the bridge equation on W for ANY phi and ANY positive normalizer: phi^{-1}(W) is one fixed event set, so mu(phi^{-1}(W)) is one fixed number, which cannot be both zero and positive after division by a positive N."
+    },
+    {
+      "holds": true,
+      "id": "C894-T2 NO WINDOW-RATIO NORMALIZER ABSORBS THETA",
+      "statement": "For a theta-free mu the ratio mu(phi^{-1}(W)) / mu(phi^{-1}(W')) is theta-free, so a bridge requires Z(R,theta,W)/Z(R,theta,W') to be theta-free on every pair of holding windows.  This STRICTLY STRENGTHENS 892's IF3, which tested only the box-mass normalizer: here every one of the 36 holding pairs is tested on every configuration."
+    }
+  ]
+}

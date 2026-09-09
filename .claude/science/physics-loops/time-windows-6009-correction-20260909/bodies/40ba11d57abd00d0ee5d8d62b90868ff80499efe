@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle887_window_freedom_2026_07_28.py
+runner_sha256: 139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 47.642
+status: ok
+----- stdout -----
+CYCLE 887 -- GBW1 RESIDUAL: THE TRUE SIZE OF THE WINDOW FREEDOM,
+               AND WHETHER ANY AXIOM CLAUSE SELECTS INSIDE IT
+
+[PASS] A_PINS
+    finding: 9 inputs pinned by full path + sha256 + git blob; the two digests named by the block spec (outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json, scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py) both match; the Cycle-885 artifacts are read as text/AST/JSON behind an import firewall and are never imported.
+
+[PASS] B_FAMILY
+    finding: The 12-configuration family is rebuilt twice -- independently and by AST-extracting the pinned 885 primary's own NEIGHBOURS, _lcg, build_family, make_config -- and the two agree site-for-site (digest 30edaa3d5ca03c24).  All 8 fields of all 12 per-configuration rows in the pinned 885 runner cache are recomputed and matched (0 mismatches); the digest the 885 CHECKER published for the same family is reproduced (True); and all 7 headline numbers the 885 RECEIPT states about this family are reproduced exactly (True).  Results therefore compose with Cycle 885.
+
+[PASS] C_GROUP
+    finding: O_h^+ rebuilt as the determinant-one signed permutation matrices: order 24, closed, cyclic-order profile {'1': 1, '2': 9, '3': 8, '4': 6}.  The [-1,1]^3 box splits into 4 rotation orbits [1, 6, 8, 12] and the [-2,2]^3 box into 10 orbits [1, 6, 6, 8, 8, 12, 12, 24, 24, 24]; those orbit counts are what sizes the surviving structuring-set freedom below.
+
+[PASS] D_MINKOWSKI_SUFFICIENCY
+    finding: The Minkowski sufficiency theorem is proved structurally and verified exhaustively: all 15 nonempty rotation-invariant structuring sets inside [-1,1]^3 pass REQ1-REQ5 through the full harness (True), and all 1023 inside [-2,2]^3 are certified rotation-invariant on all 24 rotations (1023/1023) with the injectivity lemma verified on every one.  So the surviving freedom already contains 1023 DISTINCT admissible window maps inside a radius-2 box, growing to 2097151 at radius 3 -- not a single dilation scale.  Cycle 885's k-fold dilations are the three members S = ball_0, ball_1, ball_2 of those 1023.
+
+[PASS] E_ESCAPES
+    finding: The fixed-S Minkowski family is a PROPER sub-family.  7 constructions pass every declared requirement and are provably NOT of fixed-S form (erosion_by_ball1, erosion_by_N6, bounding_box, axis_segment_closure, size_keyed_inflation, readout_keyed_inflation, union_box_with_dilation); 1 are refused (depth_keyed_inflation).  The escapes are of three different kinds -- erosions (windows inside the support), variable inflations keyed on a monotone content invariant (record count, scalar readout), and non-Minkowski geometric closures (bounding box, segment closure) -- so the surviving space is not parameterized by a set at all, let alone by one integer.
+
+[PASS] F_ANNULAR_COARSENESS
+    finding: Complete, uncapped: all 1023 radius-2 Minkowski maps give 1023 DISTINCT set-valued behaviours on the 12 configurations but only 113 distinct annular (a, b) behaviours.  The annular chart is strictly coarser by a factor of 1023/113: it collapses 910 genuinely different admissible windows onto readings it cannot tell apart.  So a cycle that prices the residual in (a, b) is pricing a QUOTIENT of the real freedom, and Cycle 885's observation that the annular chart is weaker than the set is here given its exact index.
+
+[PASS] G_CONTAINMENT
+    finding: Support containment is NOT forced by the declared requirements.  W(R) = supp(R) (+) N6 passes all of them (0 equivariance failures on 1440 checks, 0 permanence failures on 35 nested pairs, 12 distinct values) while containing the support on only 8/12 configurations and being wholly DISJOINT from it on 2.  The erosion witness passes too and goes the other way: it is strictly inside the support on 12/12.  The containment has to come from somewhere other than REQ1-REQ5 -- see the additivity selector.
+
+[PASS] H_SELECTORS
+    finding: 17 maps built, 12 admissible under REQ1-REQ5.  Of 7 selectors, exactly one bites and it bites only on the LOWER bound: the byte-quoted readout-additivity clause derives supp(R) subset W(R), cutting 3 admissible maps (erosion_by_N6, erosion_by_ball1, minkowski_S_N6__origin_absent) and leaving 9.  The count-once clause does not say what a k = 0 derivation would need it to say; minimality is absent from all three pinned texts; the no-privileged-site clause is already spent as REQ2/REQ3; the qualification clause registers the residual without selecting in it; union-additivity would collapse the space but is not in the texts; and the Gate-B notes explicitly call the window supplied and open.  k = 0 is NOT derived.
+
+[PASS] I_READOUT_GAUGE
+    finding: 9 of 12 admissible maps are EXACTLY indistinguishable from the support window through the axiom-level scalar readout: identical I_W on all 12 configurations.  This re-frames the residual.  It is not that a dilation scale must be chosen and then measured; it is that the scale is unmeasurable by the only observable the axioms supply, and is fixed exclusively by the Gate-B semantics the pinned dynamics note calls supplied.  The annular chart, by contrast, DOES move with the scale -- so (a, b) carries information the axioms cannot certify.
+
+[PASS] J_STRESS
+    finding: All 4 impostors are refused by the declared requirements and none is wrongly admitted (0): the non-equivariant inflation fails on 240/288 rotation-only checks, the two shrinking maps fail permanence on 26 and 24 nested pairs, and the constant window has 1 distinct value.  The positive displacement control transports 36/36 windows exactly under a nontrivial rigid motion and detects the one-step decoy on 36/36, so the clean equivariance sheets above are evidence rather than blindness.
+
+[PASS] K_VERDICT
+
+[PASS] L_HONESTY
+    finding: 10/10 honesty checks hold.  The gate is outcome-neutral: it verifies that the cycle reports refutations and absences, not that any particular verdict landed.
+
+---- VERDICT ----
+Q1: PRICED -- freedom sized, closure claim REFUTED
+    SUFFICIENCY holds and is exhaustively verified: every nonempty rotation-invariant structuring set S gives an admissible W_S(R) = supp(R) (+) S, and S |-> W_S is injective on this family, so the count of distinct admissible Minkowski windows is exactly the count of such S: 15 inside a radius-1 box, 1023 inside radius 2, 2097151 inside radius 3, unbounded overall.  NECESSITY FAILS: 7 admissible constructions are provably outside the fixed-S family (erosion_by_ball1, erosion_by_N6, bounding_box, axis_segment_closure, size_keyed_inflation, readout_keyed_inflation, union_box_with_dilation).  The surviving space is therefore NOT the monoid of fixed inflations; it is at least the union of (a) fixed Minkowski inflations, (b) erosions, (c) variable inflations keyed on any inclusion-monotone content invariant, and (d) non-Minkowski monotone equivariant closures, and it is closed under union and under composition with any fixed inflation.
+    Cycle 885 priced the residual as 'a dilation scale + a centre convention'.  A scale is ONE integer.  The computed residual inside a radius-2 box alone is 1023 distinct admissible windows, of which the k-fold dilations are 3.  Even after the only selector that bites, the residual is every rotation-invariant S containing the origin -- 512 of them inside radius 2.  The 885 pricing is an undercount, not a wrong sign.
+Q2: NO-GO on the enumerated derivation routes for the window EXTENT; DERIVED for support containment; PRICED overall
+    support containment: NO -- REFUTED BY EXPLICIT WITNESS
+    derived: DERIVED (support containment only) / NO-GO (extent)
+    residual: one no-interaction convention (union-additivity of the window); without it the surviving space is not parameterized by a set
+    residual: one structuring set S with 0 in S; the axioms bound it below (containment, derived) and not above
+    residual: one centre convention, needed only by the annular (a, b) chart
+    gauge: 9 of 12 admissible maps give an identical axiom-level scalar readout on every configuration.  The window extent is a GAUGE direction of the axiom-level readout.
+
+---- SELECTOR SHEET ----
+  count_once / no-phantom-registration
+    outcome : NO-GO
+    fidelity: NOT GROUNDED.  The quoted sentence is a MULTIPLICITY bound on records at a site ('never carries more than one record') plus permanence.  It quantifies over sites that DO carry a record and bounds them above by one.  It says nothing whatever about sites carrying zero records, and the words 'window', 'detector' and 'readable' do not occur in it.  Reading it as 'the window may contain only record-carrying sites' is an addition, not a quotation.  It therefore does NOT derive k = 0.
+  only-records-are-readable + additivity over disjoint records
+    outcome : DERIVED (support containment only) / NO-GO (extent)
+    fidelity: GROUNDED for containment, NOT GROUNDED for the extent.  The quoted sentence does state readout additivity over pairwise-disjoint records verbatim, and the computation above turns that into supp(R) subset W(R).  But it constrains the window only through the READOUT, and every window containing the support gives the SAME readout, so the sentence cannot distinguish among them.  It derives the lower bound and is silent on the upper bound.
+  minimality / economy
+    outcome : NO-GO (absent from the pinned texts)
+    fidelity: ABSENT.  Across the three pinned texts the minimality patterns match 9 lines, and after removing the 9 that are document titles, the axiom-set name, the audit-policy pointer or supersession metadata, 0 remain as candidate SELECTION language.  Neither Gate-B note contains any of the patterns at all.  Minimality is therefore not available as an axiom consequence: adopting it would be a NEW supplied convention.
+  no privileged site / supplied lattice structure only
+    outcome : NO-GO (no narrowing beyond REQ2/REQ3)
+    fidelity: GROUNDED but ALREADY SPENT.  The sentence is exactly what REQ2 and REQ3 encode, so it refuses the constant and lexicographic-centre impostors and nothing else.  Its companion sentence supplies nearest-neighbour adjacency as the ONLY metric structure, which constrains how a structuring set may be BUILT (iterated adjacency) but does not bound how many times it may be iterated: every radius-k ball is a k-fold composition of the supplied adjacency and so introduces no unsupplied structure.
+  qualification clause (unfixed choices are named conditionals)
+    outcome : PRICED (registers the residual, selects nothing)
+    fidelity: GROUNDED as a REGISTRATION rule, NOT as a SELECTION rule.  The sentence says what to do with an unforced choice -- name it -- and does not say which choice is right.  It applies symmetrically to every member of the surviving space, including S = {0}: the identity inflation is not privileged BY THIS SENTENCE, it is only the member that carries no additional named object.
+  union-additivity of the window (no interaction between records)
+    outcome : NO-GO as an axiom consequence / PRICED as a supplied convention
+    fidelity: NOT GROUNDED.  Nothing in the pinned texts states that the window of a union of records is the union of the windows.  The closest sentence is the Admissibility clause quoted above, which is about which POSSIBILITIES are available at a site given its neighbours, not about detector windows; the word 'window' does not occur in the axiom memo at all.  Union-additivity would be a NEW supplied convention -- and it is the one that collapses the surviving space from 'not parameterized by a set' down to 'one rotation-invariant set S'.
+  Gate-B dynamics / weak-field texts
+    outcome : NO-GO (the texts declare the window supplied, not derived)
+    fidelity: GROUNDED AND NEGATIVE.  The pinned Gate-B texts do not narrow the window; they say in terms that the detector-window semantics are SUPPLIED and that the window question is OPEN.  Quoting them against the freedom therefore confirms the freedom rather than cutting it.
+
+deterministic_double_build: True
+science_digest: a4973e9e0fefb7dc839c495ac40d298d4f34aea0edcbc0bfa2fa6bc1e6af9001
+receipt: outputs/window_freedom_cycle887_receipt_2026_07_28.json
+elapsed_sec: 47.596
+ALL CERTIFICATES PASS: True

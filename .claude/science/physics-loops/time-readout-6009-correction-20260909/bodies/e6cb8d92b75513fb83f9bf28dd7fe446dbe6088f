@@ -1,0 +1,129 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle903_sigma_theta_2026_07_28.py
+runner_sha256: 4dccf702456a972f35b83262d470e63456b6d98f0eeb2a0fad3393b3f1d4afe4
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.896
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 903 -- the bridge scalar sigma, and the theta-incidence
+==============================================================================
+
+PINNED INPUTS (path / sha256 / git blob)
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+    sha256 fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697  ok=True
+    blob   4a863da1f3f255354839277271a3a69a5c205133  ok=True
+  docs/GATE_B_DYNAMICS_NOTE.md
+    sha256 0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271  ok=True
+    blob   5594d74e38a84d95c806449a305a16e1f1db8c43  ok=True
+  docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md
+    sha256 e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116  ok=True
+    blob   2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c  ok=True
+  docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+    sha256 e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292  ok=True
+    blob   a74392f6939b2e51109756c37d6d5d59bb54c5a4  ok=True
+  scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py
+    sha256 daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32  ok=True
+    blob   7fbd35a66859e8b888e71d7305e8cacc32a8b8ef  ok=True
+  outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json
+    sha256 3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997  ok=True
+    blob   553bba1fbd427f27c5606b6f27bd592a91e9c3c0  ok=True
+
+871-LINEAGE DISCOVERY (absence disclosed with scan counts)
+  files scanned: 9801 across {'scripts': 5506, 'outputs': 356, 'logs/runner-cache': 3939}
+    probe cycle871               present=False  matches=0
+    probe blockG2                present=False  matches=0
+    probe bridge_pricing         present=False  matches=0
+    probe source_action_bridge   present=True  matches=3
+    probe sigma                  present=True  matches=40
+  The cycle-871 / blockG2 bridge-pricing artifact is NOT on this branch.  9801 filenames were scanned across 3 directories.  The three IDENTIFYING probes (cycle871, blockG2, bridge_pricing) returned 0 hits in total.  The two GENERIC probes did match files, and every one of them belongs to a different lane (the yt operational source-action attempt, and dm/sigma-hierarchy runners) or is this runner itself -- none is the 871 bridge pricing.  The dimension statement this cycle needs is therefore REBUILT from the Gate-B notes' own rows (certificate E), not inherited, and nothing downstream of this runner cites 871 as a source.
+
+RESTRICTION GATE (Gate-B rows): 15 needles byte-verified, all_found=True
+RESTRICTION GATE (885 N-certificate): pinned 7/12  recomputed 7/12  match=True
+
+------------------------------------------------------------------------------
+QUESTION A -- IS sigma DERIVABLE?
+------------------------------------------------------------------------------
+(a) FIDELITY SWEEP: 770 sentences, 34 in scope
+    EXACT (would ground sigma) : 0
+    PARTIAL (constrain only)   : 10
+    NONE                       : 24
+    falsifier visibility ok    : True  (planted grounding sentence graded EXACT)
+
+(b) SCALE-REFERENCE PRIMITIVE BOUNDARY -- computed from bytes
+    admit clause : The framework takes exactly one dimensionful reference: a scale that converts the framework's lattice-natural units to physical units.
+    exclude #1   : This is a units conversion, not a physics axiom. It carries zero dimensionless content: no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or empirical fit is supplied by it.
+    exclude #2   : It does not supply any dimensionless quantity. Dimensionless physics must derive from retained-grade framework content or remain conditional/open.
+    sigma is     : the source-strength normalization that absorbs constants such as `1/(4 pi)` and any unit conversion;
+      component dimensionless_factor     inside=False
+      component unit_conversion_factor   inside=True
+    VERDICT: SPLIT_OUTSIDE
+    The interface note decomposes sigma into exactly two factors: a dimensionless constant of the `1/(4 pi)` class, and a unit conversion.  The primitive's admit clause covers exactly one dimensionFUL reference, so the unit-conversion factor IS a consumption of the already-approved primitive -- that factor is not a new purchase.  But the primitive's own text excludes the other factor twice, and its exclusion list names `coupling` explicitly.  sigma therefore does NOT fall inside the approved primitive's scope: its dimensionless residue is exactly the content the primitive refuses to supply.
+    The lane's accounting improves by one NAMED DIMENSION but not by one SUPPLIED SCALAR: the unit-conversion half of sigma is discharged onto the existing approved primitive, so no new dimensionful reference is bought; the dimensionless half remains one supplied scalar, and it is the lane's terminal one.
+
+(c) STRUCTURAL ARGUMENT
+    forced properties byte-present: True (additivity, locality, uniformity, linearity_in_the_normalization)
+    residual dimension: 1 (param dim 2 - group dim 1)
+    six pairs with product 6/1 give identical exact actions: True; off-orbit control differs: True
+    INVOLUTION CENSUS: searched 625 monomial maps, found 22 involutions
+      action-preserving: 4
+      STERILE              4
+      WRONG                4
+      WRONG_AND_STERILE    14
+      cell (action-preserving AND pins sigma) empty: True
+    THEOREM (census sterility).  If iota preserves the bridge action then M^T (1,1) = (1,1), so (1,1) is an eigenvector of M^T with eigenvalue 1; since M^2 = I and M != I, M - I has rank 1 and its kernel is spanned by a vector v with f(v) != 0.  sigma therefore VARIES along the fixed line, and the involution pins only the SPLIT of sigma between lambda and strength -- which is gauge.  Conversely an involution whose fixed set is an isolated point has M - I invertible, hence 1 is not an eigenvalue of M, hence M^T (1,1) != (1,1), hence iota does not preserve the action and is not a bridge symmetry.  The census cell (action-preserving AND pins sigma) is therefore EMPTY as a matter of linear algebra, not of search depth.
+
+>>> QUESTION A VERDICT: TERMINAL_SUPPLIED_SCALAR
+
+------------------------------------------------------------------------------
+QUESTION B -- THE THETA-INCIDENCE AS A FUNCTION OF THE BARRIER
+------------------------------------------------------------------------------
+window convention: window = shell_of(barrier): the outer shell of the barrier.  This is the COVARIANT reading -- window and barrier are disjoint by construction, which is the relation Cycle 885's model needs, and at k = 0 it reproduces Cycle 885's window = shell_of(supp) exactly.
+
+  barrier         containment  incidence  configs
+  dilate_k0              True       7/12  ['single', 'pair', 'Lshape', 'plane_square', 'chain', 'sparse_a', 'sparse_b']
+  dilate_k1              True       1/12  ['Lshape']
+  dilate_k2              True       0/12  []
+  closing_1              True       7/12  ['single', 'pair', 'Lshape', 'plane_square', 'chain', 'sparse_a', 'sparse_b']
+  opening_1             False       0/12  []
+
+(b) MECHANISM
+    A window site contributes theta-dependence to Z iff it is reached by TWO OR MORE distinct path lengths within the step budget.  A site reached at a single length l contributes |c_l u^l|^2 = c_l^2, which is theta-free because |u| = 1; only a cross term between distinct lengths survives as a function of theta.
+    Z^3 is bipartite, so all walks from a fixed source to a fixed site share a parity and distinct realised lengths differ by at least 2.  With the pinned budget MAX_STEPS = 4, an interfering site must therefore be reachable at some length <= 2.  Dilating the barrier by k pushes the whole window outward, raising the minimum path length; once that minimum exceeds 2 the site is FROZEN and its Z is theta-free.
+    integer interference predicate vs exact Z: 60/60 exact=True
+    frozen count by k: {'k=0': 5, 'k=1': 11, 'k=2': 12}
+
+(c) INVARIANT CORE
+    containment barriers: ['closing_1', 'dilate_k0', 'dilate_k1', 'dilate_k2']
+    incidence nested in k: True (strictly: True), chain sizes [7, 1, 0]
+    INVARIANT CORE = []  (0/12)
+    N-certificate row survives on core: False
+    The barrier-independent theta-coupling incidence is 0/12, not 7/12.  Cycle 885's 7/12 is a correct measurement AT the identification barrier B(R) = supp(R) and at no other declared containment barrier: the incidence sets form a strictly decreasing chain 7 > 1 > 0 as the barrier thickens, so their intersection is empty.  A consumer that wants barrier-independence must read 0/12 and therefore MUST NOT cite theta-coupling as a barrier-free property of Z.  A consumer that pins the barrier may cite the exact row for that barrier from the incidence map.
+    The N-certificate row 'N is record-determined only relative to a fixed theta' does NOT survive on the invariant core: on the core there is no theta-dependence to couple through, so the row is barrier-conditional.  Consumers must either (i) pin the barrier to the identification barrier and inherit its 7/12 together with that pin as a named premise, or (ii) drop the theta coupling entirely.  The cross-block WINDOW-to-KERNEL coupling that Cycle 885 exposed is real at the identification barrier and is not a barrier-free obstruction.
+
+FALSIFIER VISIBILITY (Question B)
+    planted_slit   containment=True  incidence=6/12  mechanism=12/12
+    planted_far    containment=True  incidence=7/12  mechanism=12/12
+    slit design met: True; core survives plants: True
+
+------------------------------------------------------------------------------
+GATES
+  PASS  A_PINS_AND_871_LINEAGE
+  PASS  B_GATEB_ROWS_BYTE_VERIFIED
+  PASS  C_FIDELITY_SWEEP
+  PASS  D_SCALE_PRIMITIVE_ADJUDICATION
+  PASS  E_FORCED_FORM_AND_RESIDUAL
+  PASS  F_INVOLUTION_CENSUS
+  PASS  G_INCIDENCE_MAP
+  PASS  H_RESTRICTION_GATE_885
+  PASS  I_MECHANISM
+  PASS  J_INVARIANT_CORE
+  PASS  K_PLANTED_BARRIER_FALSIFIER
+  PASS  L_DETERMINISM
+  PASS  M_CONTROLS
+  determinism: True   firewall hits: 0   blocklisted loaded: []
+
+ALL GATES PASS: True
+elapsed_sec: 2.839
+receipt: outputs/sigma_theta_cycle903_receipt_2026_07_28.json

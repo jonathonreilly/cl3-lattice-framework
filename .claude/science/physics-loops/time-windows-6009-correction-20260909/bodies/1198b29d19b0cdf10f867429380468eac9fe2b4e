@@ -1,0 +1,402 @@
+{
+  "agreement_with_primary": {
+    "cells": true,
+    "corroborates": true,
+    "outcome": true,
+    "planted": true,
+    "survivors": true
+  },
+  "boundary": "this checker selects no weighting and supplies no probability rule; it recomputes and attacks",
+  "bridge_hunt": {
+    "BRIDGE_A_configuration_block": {
+      "construction": "partition E into one block per record configuration (the 68 monitor-phase world-orbits supply far more blocks than the 12 configurations need) and read the configuration off the event; each block measure may be an ARBITRARY non-negative rational set function",
+      "fails_on": [
+        "single",
+        "pair",
+        "Lshape",
+        "plane_square",
+        "chain",
+        "sparse_a",
+        "sparse_b"
+      ],
+      "per_config": [
+        {
+          "bridge_A_succeeds": false,
+          "config": "single",
+          "min_theta_varying_windows": 4,
+          "reference_windows_available": 9
+        },
+        {
+          "bridge_A_succeeds": false,
+          "config": "pair",
+          "min_theta_varying_windows": 4,
+          "reference_windows_available": 9
+        },
+        {
+          "bridge_A_succeeds": true,
+          "config": "shell1",
+          "min_theta_varying_windows": 0,
+          "reference_windows_available": 7
+        },
+        {
+          "bridge_A_succeeds": true,
+          "config": "ball1",
+          "min_theta_varying_windows": 0,
+          "reference_windows_available": 9
+        },
+        {
+          "bridge_A_succeeds": true,
+          "config": "annulus_1_4",
+          "min_theta_varying_windows": 0,
+          "reference_windows_available": 8
+        },
+        {
+          "bridge_A_succeeds": true,
+          "config": "hollow_annulus",
+          "min_theta_varying_windows": 0,
+          "reference_windows_available": 8
+        },
+        {
+          "bridge_A_succeeds": false,
+          "config": "Lshape",
+          "min_theta_varying_windows": 4,
+          "reference_windows_available": 7
+        },
+        {
+          "bridge_A_succeeds": false,
+          "config": "plane_square",
+          "min_theta_varying_windows": 5,
+          "reference_windows_available": 9
+        },
+        {
+          "bridge_A_succeeds": false,
+          "config": "chain",
+          "min_theta_varying_windows": 5,
+          "reference_windows_available": 9
+        },
+        {
+          "bridge_A_succeeds": false,
+          "config": "sparse_a",
+          "min_theta_varying_windows": 5,
+          "reference_windows_available": 8
+        },
+        {
+          "bridge_A_succeeds": false,
+          "config": "sparse_b",
+          "min_theta_varying_windows": 6,
+          "reference_windows_available": 9
+        },
+        {
+          "bridge_A_succeeds": true,
+          "config": "offcentre_ball",
+          "min_theta_varying_windows": 0,
+          "reference_windows_available": 9
+        }
+      ],
+      "succeeds_on": [
+        "shell1",
+        "ball1",
+        "annulus_1_4",
+        "hollow_annulus",
+        "offcentre_ball"
+      ],
+      "verdict": "REFUTED",
+      "what_it_defeats": "C894-T1 exactly: this bridge manufactures the record-configuration arity whose absence C894-T1 rests on, so C894-T1 no longer bites",
+      "why": "the bridge is defeated on 7 of 12 configurations by C894-T2 and NOT by C894-T1: even with the configuration argument granted for free, each block measure is still theta-free, which forces every holding-window ratio to be theta-free, and it is not"
+    },
+    "BRIDGE_B_theta_as_observable": {
+      "construction": "enlarge the event space to E x Theta and weight the product, which is what 892's IF3 means by declaring the kernel coordinate an observable",
+      "fails_on": [
+        "single",
+        "pair",
+        "Lshape",
+        "plane_square",
+        "chain",
+        "sparse_a",
+        "sparse_b"
+      ],
+      "per_config": [
+        {
+          "bridge_B_succeeds": false,
+          "config": "single",
+          "theta_dependence_is_one_common_scale": false
+        },
+        {
+          "bridge_B_succeeds": false,
+          "config": "pair",
+          "theta_dependence_is_one_common_scale": false
+        },
+        {
+          "bridge_B_succeeds": true,
+          "config": "shell1",
+          "theta_dependence_is_one_common_scale": true
+        },
+        {
+          "bridge_B_succeeds": true,
+          "config": "ball1",
+          "theta_dependence_is_one_common_scale": true
+        },
+        {
+          "bridge_B_succeeds": true,
+          "config": "annulus_1_4",
+          "theta_dependence_is_one_common_scale": true
+        },
+        {
+          "bridge_B_succeeds": true,
+          "config": "hollow_annulus",
+          "theta_dependence_is_one_common_scale": true
+        },
+        {
+          "bridge_B_succeeds": false,
+          "config": "Lshape",
+          "theta_dependence_is_one_common_scale": false
+        },
+        {
+          "bridge_B_succeeds": false,
+          "config": "plane_square",
+          "theta_dependence_is_one_common_scale": false
+        },
+        {
+          "bridge_B_succeeds": false,
+          "config": "chain",
+          "theta_dependence_is_one_common_scale": false
+        },
+        {
+          "bridge_B_succeeds": false,
+          "config": "sparse_a",
+          "theta_dependence_is_one_common_scale": false
+        },
+        {
+          "bridge_B_succeeds": false,
+          "config": "sparse_b",
+          "theta_dependence_is_one_common_scale": false
+        },
+        {
+          "bridge_B_succeeds": true,
+          "config": "offcentre_ball",
+          "theta_dependence_is_one_common_scale": true
+        }
+      ],
+      "succeeds_on": [
+        "shell1",
+        "ball1",
+        "annulus_1_4",
+        "hollow_annulus",
+        "offcentre_ball"
+      ],
+      "verdict": "REFUTED",
+      "what_it_defeats": "the naive reading of IF3: it does give the weight a kernel argument",
+      "why": "a PRODUCT measure contributes one common theta scale to every window, and on 7 of 12 configurations Z's theta-dependence is NOT one common scale -- it differs window by window.  Only a COUPLED measure on E x Theta would do, and no such object is among 878's five"
+    },
+    "both_bridges_refuted": true,
+    "refinement_of_the_primary": "The primary proves C894-T1 and C894-T2 and lists its residual properties P1 (configuration arity) and P2 (kernel arity) side by side, without ranking them: it never tests what happens if P1 alone is supplied.  This checker does.  BRIDGE-A grants the record-configuration arity for free -- defeating C894-T1 outright -- and the composition STILL fails, on exactly the seven configurations where C894-T2 bites.  BRIDGE-B grants a kernel argument in the only form 878's inventory can express it, a product measure, and fails on the same seven.  So the two properties are NOT co-equal: P1 is necessary but not sufficient, P2 is the irreducible obstruction, and the five configurations on which both bridges succeed are precisely the frozen walks, where Z is theta-constant and there is nothing left to obstruct.  The primary's verdict is right and its property sheet is complete; what this refines is the ORDERING of the residual -- a campaign that supplies P1 first buys nothing, and one that supplies P2 first buys the whole theta-moving two-thirds of the family."
+  },
+  "checker_verdict": "CORROBORATES WITH A REFINEMENT",
+  "cycle": 894,
+  "elapsed_sec": 10.793,
+  "independence": {
+    "amplitude_route": "path-length correlator -> Chebyshev M_d, reassembled; cross-checked against direct squaring",
+    "firewall_hits": [],
+    "route_cross_checks": 648,
+    "route_disagreements": [],
+    "weightings": "re-implemented from their AST-read definitions, then cross-checked against the vendored build_candidates (tooth 8)"
+  },
+  "machinery_sound": true,
+  "recomputed_outcome": "NO-GO",
+  "recomputed_planted": {
+    "P1_PLANTED_SURVIVOR": {
+      "IF1": "PASS",
+      "IF3": "PASS",
+      "IF4": "PASS",
+      "IF5": "PASS",
+      "IF6": "PASS"
+    },
+    "P2_PLANTED_NEAR_MISS": {
+      "IF1": "PASS",
+      "IF3": "FAIL",
+      "IF4": "PASS",
+      "IF5": "PASS",
+      "IF6": "FAIL"
+    }
+  },
+  "recomputed_survivors": [],
+  "recomputed_table": {
+    "M1_COUNTING": {
+      "IF1": "FAIL",
+      "IF3": "FAIL",
+      "IF4": "FAIL",
+      "IF5": "FAIL",
+      "IF6": "FAIL"
+    },
+    "M2_PER_WORLD_UNIFORM": {
+      "IF1": "FAIL",
+      "IF3": "FAIL",
+      "IF4": "FAIL",
+      "IF5": "FAIL",
+      "IF6": "FAIL"
+    },
+    "M3_OCCUPATION_WEIGHTED": {
+      "IF1": "FAIL",
+      "IF3": "FAIL",
+      "IF4": "FAIL",
+      "IF5": "FAIL",
+      "IF6": "FAIL"
+    },
+    "M4_FORMATION_LIFETIME": {
+      "IF1": "FAIL",
+      "IF3": "FAIL",
+      "IF4": "FAIL",
+      "IF5": "FAIL",
+      "IF6": "FAIL"
+    },
+    "M5_FORMATION_MOMENT": {
+      "IF1": "FAIL",
+      "IF3": "FAIL",
+      "IF4": "FAIL",
+      "IF5": "FAIL",
+      "IF6": "FAIL"
+    }
+  },
+  "restriction_gate_878": {
+    "admissible": {
+      "match": true,
+      "pinned": 5,
+      "recomputed": 5
+    },
+    "atoms_singleton": {
+      "match": true,
+      "pinned": true,
+      "recomputed": true
+    },
+    "discriminating_pairs": {
+      "match": true,
+      "pinned": 10,
+      "recomputed": 10
+    },
+    "event_cardinality": {
+      "match": true,
+      "pinned": 92260,
+      "recomputed": 92260
+    },
+    "rebuilt_zero_counts": {
+      "match": true,
+      "pinned": {
+        "M1_COUNTING": 0,
+        "M2_PER_WORLD_UNIFORM": 0,
+        "M3_OCCUPATION_WEIGHTED": 73088,
+        "M4_FORMATION_LIFETIME": 73088,
+        "M5_FORMATION_MOMENT": 76184
+      },
+      "recomputed": {
+        "M1_COUNTING": 0,
+        "M2_PER_WORLD_UNIFORM": 0,
+        "M3_OCCUPATION_WEIGHTED": 73088,
+        "M4_FORMATION_LIFETIME": 73088,
+        "M5_FORMATION_MOMENT": 76184
+      }
+    },
+    "surrogate_in_range": {
+      "match": true,
+      "pinned": true,
+      "recomputed": true
+    },
+    "tag_ordinal_cells": {
+      "match": true,
+      "pinned": 129,
+      "recomputed": 129
+    },
+    "worlds": {
+      "match": true,
+      "pinned": 748,
+      "recomputed": 748
+    }
+  },
+  "restriction_gate_892": {
+    "amplitude_inside_support": {
+      "match": true,
+      "pinned": 8,
+      "recomputed": 8
+    },
+    "amplitude_outside_support": {
+      "match": true,
+      "pinned": 844,
+      "recomputed": 844
+    },
+    "cells": {
+      "match": true,
+      "pinned": 648,
+      "recomputed": 648
+    },
+    "frozen_configs": {
+      "match": true,
+      "pinned": 5,
+      "recomputed": 5
+    },
+    "holding_windows": {
+      "match": true,
+      "pinned": 9,
+      "recomputed": 9
+    },
+    "max_kernel_degree": {
+      "match": true,
+      "pinned": 4,
+      "recomputed": 4
+    },
+    "theta_dependent_configs_885_grid": {
+      "match": true,
+      "pinned": 7,
+      "recomputed": 7
+    },
+    "vanishing_cells": {
+      "match": true,
+      "pinned": 42,
+      "recomputed": 42
+    }
+  },
+  "role": "independent check, specified to refute",
+  "self_sha256": "0cd8759a7efe5f25f7b471e6a722a6f0b608dbeb87c456af7a2089aa5d11510a",
+  "teeth": [
+    {
+      "detected": true,
+      "how": "flip one byte of the vendored receipt and re-digest",
+      "tooth": "tampered vendored 878 pin"
+    },
+    {
+      "detected": true,
+      "how": "drop M3 -> 20 cells, completeness gate expects 25",
+      "tooth": "dropped weighting"
+    },
+    {
+      "detected": true,
+      "how": "force M2/IF5 to PASS; independent recomputation says FAIL",
+      "tooth": "hardcoded verdict cell"
+    },
+    {
+      "detected": true,
+      "how": "assert a selected weighting; the recomputed survivor set is []",
+      "tooth": "leaked selection"
+    },
+    {
+      "detected": true,
+      "how": "drop IF6; the pinned 892 primary declares ['IF1', 'IF2', 'IF3', 'IF4', 'IF5', 'IF6'], so the owed set must be exactly ['IF1', 'IF3', 'IF4', 'IF5', 'IF6']",
+      "tooth": "skipped requirement"
+    },
+    {
+      "detected": true,
+      "how": "the planted survivor must pass all five; under the conjunctive misreading of IF3 it would not, and that difference is what makes the blindness visible",
+      "tooth": "planted-survivor blindness"
+    },
+    {
+      "detected": true,
+      "how": "perturb Z by 1/7; the independent squaring route disagrees",
+      "tooth": "tampered Z value"
+    },
+    {
+      "detected": true,
+      "how": "the five weightings re-implemented from their definitions must agree numerator-for-numerator with the vendored build_candidates",
+      "tooth": "weighting reimplementation drift"
+    }
+  ],
+  "teeth_bit": 8,
+  "teeth_total": 8
+}

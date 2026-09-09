@@ -1,53 +1,177 @@
 {
-  "audit": "unset",
+  "audit_policy": "deferred until a solid TOE exists",
+  "audit_status": "unset",
+  "author_base": "e95f5d76d7d2a0595b6e5ef0d5782ee84fe48daa",
   "authority": "none",
-  "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); worker's first hypothesis corrected mid-block from measurement; checker's first run HONEST_FAILed its own coverage gate \u2014 both disclosed; supervisor line-by-line review",
-  "block": "toe-time-blockT5-20260802",
-  "campaign": "toe-time-expansion-20260802",
-  "certificates": {
-    "checker": "10/10 gates PASS, 577s; findings_the_primary_did_not_report EMPTY; 2,553 law-attack cells 0 mismatches; 7/7 teeth",
-    "primary": "10/10 gates PASS, deterministic double-build, 299s; seal computed and printed before any holdout corpus existed"
+  "checker_direct_inputs": {
+    "logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt": "52b66a293720bef213c9f1bcba52c348f4b6dbfe233ee7794b150f33c5019e14",
+    "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": "6e5c58df6a9c75244c64141b5a1405a6413110e685ccd802530956e920b6563d"
   },
   "claim_type": "bounded_theorem",
-  "cluster_cap_evaluation": "OPEN \u2014 5th T-family PR: closes both named open questions of its parent with a sealed-holdout mechanism derivation and a strictly-generalizing exact law; the partial carrier miss is reported as data; nothing corollary",
-  "cycles": [
-    891
-  ],
-  "files": {
+  "current_claim": {
+    "bank_edge_scope": "N=8B-5, delta=8B-13-8e, b=B-2-e, and N-delta=8(e+1)=8(B-1-b), exhaustively swept over B=3..8 in the primary and B=3..60 in the checker.",
+    "evidence_scope": "The primary checks 3000 seeded cells and a breaking perturbation; the checker uses a distinct 2500-cell seed and single-pass ground truth. The original reviewer separately exhausted all 3586 binary-word/period cells for N=1..8.",
+    "headline": "Exact finite bank/edge identity algebra and the cyclic k-run alignment law survive the correction.",
+    "independence_boundary": "The checker reads exact pinned primary source/cache and selected CLAIMS_JSON fields; its wide identity sweep and k-run ground truth are separate implementations. It does not reconstruct or compare the complete primary digest.",
+    "krun_scope": "For declared finite cyclic words, the longest P-aligned run equals the maximum cyclic gap of W symmetric-difference (W-P) minus one, with the empty-set and parity cases explicitly handled."
+  },
+  "current_evidence_files": {
+    ".claude/science/physics-loops/complement-5951-correction-20260909/.gitattributes": {
+      "git_blob": "2508f5d0bac28c2fa451ed6d9f40fe9e30f8d8e6",
+      "mode": "100644",
+      "sha256": "a78f97f8012390cb73f7dded566f68a6d50ff508c8d293efdc4ad85122f6e346"
+    },
+    ".claude/science/physics-loops/complement-5951-correction-20260909/CORRECTION_HISTORY.md": {
+      "git_blob": "f5ad0346ac028e90017a7048e46b3ba8013d3d3b",
+      "mode": "100644",
+      "sha256": "08c0e89dd67d88e94a61777f98b0f6de33cd4a6cd3ea898ce6d1ac8784037aa3"
+    },
+    ".claude/science/physics-loops/complement-5951-correction-20260909/SOURCE_PRESERVATION.json": {
+      "git_blob": "a737bb94f4bae8f7ad5a089fb7df59d5c9b97520",
+      "mode": "100644",
+      "sha256": "e60e63224eae9f6bbb0f9da27a514be645118879038032ce89f33279457de144"
+    },
     "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
-      "git_blob": "235965affc47ce7745327ef194e7c0ae31e6a6c8",
-      "sha256": "5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c"
+      "git_blob": "051e13f0fe5861f8aa1dcf43122332412a52c07b",
+      "mode": "100644",
+      "sha256": "a50f781aefbbf8571ff5169af929be5f21642813b5bd6edb12243417952e14fb"
     },
     "logs/runner-cache/frontier_cycle891_complement_independent_check_2026_07_28.txt": {
-      "git_blob": "7f2f15677a906c638d526389318568dec33360f8",
-      "sha256": "2372d2d55c386ff05af6cee8126469ca5baad6d49fc3a60bbf93b6c064df1061"
+      "git_blob": "35e13d2df7a85946c3e0ddd78db6045314c5d529",
+      "mode": "100644",
+      "sha256": "319df715c16265882e8fe8864ef378a939478e73855138136ff69c01a494893f"
     },
     "logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt": {
-      "git_blob": "7099e5ece90f4b59acec9bf27af29468c4e6b746",
-      "sha256": "47b07a1f1428e50bab41890dff77345130cfa9456b887bafbb00df360027409c"
+      "git_blob": "f4c5525b34507325c5ffa1662a1d38779f1c22be",
+      "mode": "100644",
+      "sha256": "52b66a293720bef213c9f1bcba52c348f4b6dbfe233ee7794b150f33c5019e14"
     },
     "outputs/complement_independent_check_cycle891_receipt_2026_07_28.json": {
-      "git_blob": "478f19642c1d66a6e1575798f9974b645c9f9a18",
-      "sha256": "cb2f6badda7315725f5f33c5aad89e7e37cf9201472362e0af3a16c4225fae8f"
+      "git_blob": "87f66cea48d4d7103ca3f8ed887f25fb34cbe8b9",
+      "mode": "100644",
+      "sha256": "679d08d42ff29659d2935954f004f43f1061646af6f4f3d46e9692f232c778de"
     },
     "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json": {
-      "git_blob": "f537715a927b00b817f8de2569953d78929c86db",
-      "sha256": "f8e30d50a50e39a13f8f968b2ae21991885b6c858c6c96439ed733fc8514bacd"
+      "git_blob": "5dec2cc9312257d6bd8f8d61ed78a5ddd262909d",
+      "mode": "100644",
+      "sha256": "c76115e2414efee6b0104611999f1df800f3a75af889031f4cb0d1cbda594b21"
     },
     "scripts/frontier_cycle891_complement_independent_check_2026_07_28.py": {
-      "git_blob": "53f5cf560f6dfad20dc6b4b91b0c003c848c6bea",
-      "sha256": "f2e9ca32b7d3f863822126c05fbf6a3b637164e8969e5ec7c6c04f15cd89e568"
+      "git_blob": "f41e6c4b12c92a92ef22ef39d88f1aa315a39131",
+      "mode": "100644",
+      "sha256": "543cd97b19cb04a699c743cf495aaff1fd30e0ae0e7cec24d9649be7dae1aec6"
     },
     "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": {
-      "git_blob": "a1bbd49ffbe970193cc79054fb7219732f7c9873",
-      "sha256": "3d260f6641d05a22aee092145ea3e5c3b29f3a6882b4cbd9ae966424458afbb7"
+      "git_blob": "e196bbc11932163035d57b522af3b0a6067f00d6",
+      "mode": "100644",
+      "sha256": "6e5c58df6a9c75244c64141b5a1405a6413110e685ccd802530956e920b6563d"
     }
   },
-  "headline": "Both 889 open questions CLOSED: the complement mechanism derived (transport = the four rows of an incident edge incl. HANDOFF; three shapes; DELTA is an EDGE property, its complement a BANK property b=B-2-e) with a SEALED B=4/5-derive B=6/7-holdout (B=6 exact; B=7 value-level 4/4, carrier-level 3/4 \u2014 the P=32 carrier miss reported; 40/48 residuals 2 episodes each, anatomized); the k-run law derived exactly (I_max = max cyclic gap of W sym-diff (W-P) minus 1, + finite form): 6,148 cells zero mismatches, 889's law recovered as the k=2 sub-case, all four B=7 anomalies resolved as stretch-local readings with the honest boundary stated (which word a stretch carries is dynamical, not derived)",
-  "independence": "cross-context and algorithmic (interval-algebra detector, bitmask never formed; independent program reconstruction; second tick generator; holdout audited from the rule's stated text alone; 7/7 teeth)",
-  "note": "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-  "runtime_seconds": {
-    "checker": 577,
-    "primary": 299
+  "cycle": 891,
+  "formal_audit_performed": false,
+  "generated_at_utc": "2026-09-09T09:18:26.278435+00:00",
+  "history_preservation": {
+    "archive_root": ".claude/science/physics-loops/complement-5951-correction-20260909/review-packet",
+    "original_review_receipt_sha256": "f12fcab0208c322dfa9e58db19f889e2c23c3ee52111a5033a3e0727064cf0d0",
+    "original_review_report_sha256": "b9f37f462e4b1f25ede9542fbbac25209d8a17ace85b308c7d3cfe1f755cf544",
+    "preserved_reviewer_exhaustive_control": {
+      "path": ".claude/science/physics-loops/complement-5951-correction-20260909/review-packet/decisive-controls/exhaustive-law.json",
+      "result": "3586 cells, zero mismatches; preserved without replay",
+      "sha256": "1f11bb58b0773fe655cc00010544dfeecabf3bbe493e440fcf9dc77aacb6d3e6"
+    },
+    "preserved_reviewer_unchanged_checker_failure": {
+      "path": ".claude/science/physics-loops/complement-5951-correction-20260909/review-packet/decisive-controls/current-checker-as-is.json",
+      "result": "PASS=1 FAIL=5, exit 1; preserved without replay",
+      "sha256": "116ab8a32f00d7d2b58e6698b561a957cb4d2073ac4f3f82d91c6ba526917f1e"
+    },
+    "source_preservation_manifest": {
+      "path": ".claude/science/physics-loops/complement-5951-correction-20260909/SOURCE_PRESERVATION.json",
+      "sha256": "e60e63224eae9f6bbb0f9da27a514be645118879038032ce89f33279457de144"
+    }
+  },
+  "process": {
+    "audit_output_mutation": false,
+    "github_or_main_mutation": false,
+    "historical_corpus_replay": false,
+    "original_reviewer_confirmation": "pending same-session review; author does not grade own science",
+    "post_source_freeze_changes": "checker cache, checker runner receipt, this current evidence receipt, and one history-only Git attribute that preserves raw patch bytes while excluding their intentional trailing whitespace from diff checks",
+    "runner_order": [
+      "primary once",
+      "checker repinned to primary source and fresh cache",
+      "checker once"
+    ],
+    "shared_planning_mutation": false
+  },
+  "ready_for_original_reviewer_confirmation": true,
+  "runner_results": {
+    "checker": {
+      "attempts_in_this_repair": 1,
+      "resource_receipt": {
+        "cache_runner_elapsed_seconds": 0.08,
+        "cache_runner_exit_code": 0,
+        "cache_runner_status": "ok",
+        "cache_sha256": "319df715c16265882e8fe8864ef378a939478e73855138136ff69c01a494893f",
+        "elapsed_wall_seconds": 0.14976445800857618,
+        "memory_limit_bytes": 2147483648,
+        "memory_limit_exceeded": false,
+        "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-complement-5951-fixes/runs/checker-final/receipt.json",
+        "peak_process_group_rss_bytes": 48381952,
+        "runner_sha256": "543cd97b19cb04a699c743cf495aaff1fd30e0ae0e7cec24d9649be7dae1aec6",
+        "runner_timeout_seconds": 30,
+        "sha256": "b2b7f1614098b4529479dbd21f3eaf6d6ca3dabfcf923802a446900f09aa8934",
+        "thread_environment": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "timed_out": false
+      },
+      "total_fail": 0,
+      "total_pass": 6,
+      "verdict": "PRIMARY_SURVIVES_THIS_CHECK"
+    },
+    "primary": {
+      "attempts_in_this_repair": 1,
+      "resource_receipt": {
+        "cache_runner_elapsed_seconds": 0.08,
+        "cache_runner_exit_code": 0,
+        "cache_runner_status": "ok",
+        "cache_sha256": "52b66a293720bef213c9f1bcba52c348f4b6dbfe233ee7794b150f33c5019e14",
+        "elapsed_wall_seconds": 0.1482010839972645,
+        "memory_limit_bytes": 2147483648,
+        "memory_limit_exceeded": false,
+        "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-complement-5951-fixes/runs/primary-final/receipt.json",
+        "peak_process_group_rss_bytes": 49004544,
+        "runner_sha256": "6e5c58df6a9c75244c64141b5a1405a6413110e685ccd802530956e920b6563d",
+        "runner_timeout_seconds": 30,
+        "sha256": "3bbff5e8c682c461a90abce74c5048af9228e62893a55d81d721da7a25c50fda",
+        "thread_environment": {
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "timed_out": false
+      },
+      "science_digest": "60516263d8119dbc57ab2e29b1f354011f5e030441a1c520bcc80650b0f4d872",
+      "total_fail": 0,
+      "total_pass": 4,
+      "verdict": "PASS"
+    }
+  },
+  "schema": "cycle891-bounded-current-evidence-receipt-v1",
+  "source_freeze": {
+    "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-complement-5951-fixes/FINAL_SOURCE_FREEZE.json",
+    "sha256": "7cf16e5e5f52c60ea9dc0733b333fa0d32b7a8b8951aca056d5f615a866c0bf7"
+  },
+  "source_freeze_head": "74968a1728d2ddd724a902b36d2520b2f781c68d",
+  "withdrawn_or_historical_scope": {
+    "corpus_mechanism": "Transport anatomy, incidence/co-occurrence tables, carrier classifications, P=32 carrier miss, 40/48 residuals, and the recorded B=6/7 exercise remain attributed uncertified history because their former inputs are absent.",
+    "old_runtime_artifacts": "Old 299-second and 577-second corpus-era outputs are preserved as history and were not executed or treated as current evidence.",
+    "physical_or_toe_claim": "None. This packet changes no axiom or physical law and does not close the TOE or the historical corpus mechanism.",
+    "preregistration": "The former runtime-digest holdout framing is withdrawn; an in-process order guard does not establish external preregistration."
   }
 }

@@ -1,0 +1,26 @@
+tree 43ab9821ba2197c6fcdf87c51cfde59037794168
+parent 2d3f825736e57b0dda2e9ee619064cbbc94d739b
+author Claude <noreply@anthropic.com> 1785829080 -0400
+committer Claude <noreply@anthropic.com> 1785829080 -0400
+
+physics: Cycle 891 primary -- the complement mechanism and the k-run alignment law
+
+Derives what physical event structure realises a period of N - DELTA rather
+than DELTA, from the interleaved program plus a per-station attributed kernel
+trace, and generalises Cycle 889's two-run alignment law to k runs in both a
+ring and a finite form.
+
+- transport fact: inside a closed quiescent stretch only the four ordered rows
+  of an incident edge (h_f = f-2, f, r, h_r = r+2) move a bank's dirt, and a
+  pointer-carrying crossing is an exchange across that edge
+- bookkeeping identity s2 - s1 = Delta_t + (p2 - p1) classifies every readable
+  period: RELAY_EDGE_DELTA / RELAY_EDGE_COMPLEMENT / RELAY_ENTRY_GAP /
+  TOKEN_SEPARATION / MIXED
+- the complement 8(e+1) is the ENTRY GAP r(b) - f(b-1) = 8(B-1-b) of the single
+  bank b = B-2-e; DELTA belongs to an edge, its complement to a bank
+- k-run law I_max(P) = (max cyclic gap of W SYMDIFF (W-P)) - 1, verified on a
+  declared randomised grid and recovering all 580 of 889's own cells
+- derivation at B=4/5, holdout at B=6/7 behind a printed seal computed before
+  any holdout corpus exists
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

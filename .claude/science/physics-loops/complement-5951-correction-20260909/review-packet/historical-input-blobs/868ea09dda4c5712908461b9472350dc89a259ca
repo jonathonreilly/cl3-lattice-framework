@@ -1,0 +1,46 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec (substitution disclosed); supervisor review",
+ "block": "toe-time-blockT3-20260802",
+ "campaign": "toe-time-expansion-20260802",
+ "certificates": {
+  "checker": "PASS 104s; cap-free sweep of all 6,480 clocks, zero misses/phantoms; B=5 stress matches",
+  "primary": "PASS 34s"
+ },
+ "claim_type": "bounded_theorem",
+ "cluster_cap_evaluation": "OPEN \u2014 3rd T-family PR: mechanism derivation + horizon repricing + exception adjudication; none a corollary of #5925/#5936",
+ "cycles": [
+  881
+ ],
+ "files": {
+  "docs/P11_RELAY_MECHANISM_CYCLE881_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "5fc180d32ae94b54188e5661984ad8dad205502b",
+   "sha256": "0c4783f5fdd6621933bb6bf038698977f4666527e576fba7f27872fd6333c7e7"
+  },
+  "logs/runner-cache/frontier_cycle881_p11_characterization_2026_07_28.txt": {
+   "git_blob": "a3bb9edc20236928ea27b02d75663478d087063a",
+   "sha256": "2cc8891de863d3554c4b8fae3f8aebe920fb6cd7675da67b0cf229b9725f0973"
+  },
+  "logs/runner-cache/frontier_cycle881_p11_independent_check_2026_07_28.txt": {
+   "git_blob": "3a4e816703e40bfe5958a02d4db0e32098a6de70",
+   "sha256": "05677189ed2799accae3681b7d38aba45c74aceb5887f645b329c0bb2af8794c"
+  },
+  "scripts/frontier_cycle881_p11_characterization_2026_07_28.py": {
+   "git_blob": "4b7297890a822184914bace90f60b47dc09f8305",
+   "sha256": "7cc1c8984869d824f33d83ccf6599c6ef9e166766015979d204309c3e820ed35"
+  },
+  "scripts/frontier_cycle881_p11_independent_check_2026_07_28.py": {
+   "git_blob": "adafafd031e9f980b9c3a0c5b03e9679e5c1cde3",
+   "sha256": "d95698707eb2c86d14789fc5a48d37219605bd214ef9bf432425950d86e27310"
+  }
+ },
+ "headline": "P=11 = the relay-swap gap DELTA(B,e)=8B-13-8e on N=8B-5 stations (never a whole orbit); block structure derived from the sigma=5 gating duty cycle; 879's BREAKS_AT_B4 and 869's all-orbits are both HORIZON-CONTINGENT (mechanism fires at B=3 and B=5 but abuts the horizon); both leg-(ii) exception rows DISCHARGED_AT_SCOPE \u2014 zero exceptions open",
+ "independence": "cross-context (independent replay without phase-mask assumption; cap-free bitmask detector; B=5 stress the primary never ran)",
+ "note": "docs/P11_RELAY_MECHANISM_CYCLE881_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+ "repricing": "869/879 period labels horizon-contingent; 879's second B=4 class (DELTA=3) disclosed as missed by its detector caps",
+ "runtime_seconds": {
+  "checker": 104,
+  "primary": 34
+ }
+}

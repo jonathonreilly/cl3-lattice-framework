@@ -1,26 +1,33 @@
 # Bank/edge identity algebra and the cyclic k-run alignment law; the corpus mechanism and holdout story as stipulated history — Cycle 891
 
-Date: 2026-08-04 (revised 2026-08-08, review loop iteration 1)
+**Date:** 2026-08-04; corrected 2026-09-09
 
-Authority: none
+**Type:** bounded_theorem
 
-Audit: unset
+**Authority:** none
 
-Status: bounded worked result, SELF-CONTAINED after review. The
+**Audit:** unset; formal audit is deferred until the TOE is solid.
+
+**Status:** bounded-support, self-contained after review. The
 identity algebra and the k-run alignment law are recomputed from
 scratch in-file; the corpus-scoped mechanism census and the
 derive/holdout story are provenance context only — their inputs
 (Cycle-879/881/889 artifacts) are not landed on origin/main and are
 absent from this tree.
 
-Claim type: bounded_theorem
+**Claim type:** bounded_theorem
 
 Runners:
 
 - [`frontier_cycle891_complement_mechanism_2026_07_28.py`](../scripts/frontier_cycle891_complement_mechanism_2026_07_28.py)
 - [`frontier_cycle891_complement_independent_check_2026_07_28.py`](../scripts/frontier_cycle891_complement_independent_check_2026_07_28.py)
 
-Receipt:
+Cached evidence:
+
+- [`frontier_cycle891_complement_mechanism_2026_07_28.txt`](../logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt)
+- [`frontier_cycle891_complement_independent_check_2026_07_28.txt`](../logs/runner-cache/frontier_cycle891_complement_independent_check_2026_07_28.txt)
+
+Runner receipts:
 
 - [`complement_mechanism_cycle891_receipt_2026_07_28.json`](../outputs/complement_mechanism_cycle891_receipt_2026_07_28.json)
 - [`complement_independent_check_cycle891_receipt_2026_07_28.json`](../outputs/complement_independent_check_cycle891_receipt_2026_07_28.json)
@@ -81,6 +88,9 @@ different seed (checker); a `-2` perturbation of the formula breaks on
 every applicable control cell. This is the law of which the recorded
 two-run law is the `k = 2` special case — that historical
 correspondence (the 580 recorded cells) is provenance context below.
+The checker reads only the selected `CLAIMS_JSON` fields used by its
+identity and k-run predicates; it does not reconstruct or compare the
+primary's complete science digest field for field.
 
 ## Provenance context (non-load-bearing)
 

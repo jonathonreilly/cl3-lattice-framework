@@ -1,0 +1,600 @@
+{
+  "C6_strengthening": {
+    "configs_where_the_disjoint_window_is_forced_empty": 12,
+    "of": 12,
+    "rows": [
+      {
+        "box_sites": 729,
+        "config": "single",
+        "sites_excluded_by_disjointness_itself": 1,
+        "sites_excluded_by_one_site_extension": 728,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "pair",
+        "sites_excluded_by_disjointness_itself": 2,
+        "sites_excluded_by_one_site_extension": 727,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "shell1",
+        "sites_excluded_by_disjointness_itself": 6,
+        "sites_excluded_by_one_site_extension": 723,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "ball1",
+        "sites_excluded_by_disjointness_itself": 7,
+        "sites_excluded_by_one_site_extension": 722,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "annulus_1_4",
+        "sites_excluded_by_disjointness_itself": 32,
+        "sites_excluded_by_one_site_extension": 697,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "hollow_annulus",
+        "sites_excluded_by_disjointness_itself": 31,
+        "sites_excluded_by_one_site_extension": 698,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "Lshape",
+        "sites_excluded_by_disjointness_itself": 5,
+        "sites_excluded_by_one_site_extension": 724,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "plane_square",
+        "sites_excluded_by_disjointness_itself": 9,
+        "sites_excluded_by_one_site_extension": 720,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "chain",
+        "sites_excluded_by_disjointness_itself": 5,
+        "sites_excluded_by_one_site_extension": 724,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "sparse_a",
+        "sites_excluded_by_disjointness_itself": 9,
+        "sites_excluded_by_one_site_extension": 720,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "sparse_b",
+        "sites_excluded_by_disjointness_itself": 9,
+        "sites_excluded_by_one_site_extension": 720,
+        "window_forced_empty_inside_box": true
+      },
+      {
+        "box_sites": 729,
+        "config": "offcentre_ball",
+        "sites_excluded_by_disjointness_itself": 7,
+        "sites_excluded_by_one_site_extension": 722,
+        "window_forced_empty_inside_box": true
+      }
+    ],
+    "statement": "REQ4 (permanence monotonicity under arbitrary R subset R', which is how the primary DECLARES it) plus barrier-disjointness force W(R) = empty, and the empty map fails REQ5.  So the landed barrier/window separation has no record-determined realization at all -- not merely none among the three candidates the primary swept.  Caveat, stated exactly: the primary only TESTS REQ4 on depth-truncation chains, and this argument uses the declared single-site-extension form of REQ4."
+  },
+  "certificate_pass": {
+    "A_PIN_INTEGRITY": true,
+    "B_GROUP": true,
+    "C_FAMILY": true,
+    "D_ATTACK_A_EQUIVARIANCE": true,
+    "E_ATTACK_B_FILTRATION_AND_FILTER_PROVENANCE": true,
+    "F_ATTACK_C_CENTRE": true,
+    "G_ATTACK_D": true,
+    "H_ATTACK_E_DEPTH_GAUGE": true,
+    "I_ATTACK_F_IMPOSTORS": true,
+    "J_ATTACK_G_STRESS": true,
+    "K_ATTACK_H_RECEIPT": true,
+    "L_VERDICTS": true,
+    "M_COVERAGE": true,
+    "N_SELF_AUDIT": true,
+    "Y_TEETH": true,
+    "Z_CONTROLS": true
+  },
+  "checker_integrity_clean": true,
+  "claims": {
+    "C1": "barrier DERIVED: B(R)=supp(R) equivariant 0/1440, landed fixed central barrier refuted 1152/1440",
+    "C2": "D GAUGE: depth-indexed readout non-decreasing and stationary above the last formation depth on 12/12",
+    "C3": "a/b EXISTENCE_DERIVED_UNIQUENESS_OPEN; W1b refuted by REQ4 24/35; the ONLY surviving split is the centre convention; annulus fill 7/12",
+    "C4": "N SUPPLIED / GBW1 mis-scoped: Z theta-dependent on 7/12 at the boundary locus, theta-independent 12/12 on the support locus",
+    "C5": "centre exposed, EXISTENCE_DERIVED_UNIQUENESS_OPEN, splits on 4/12",
+    "C6": "0 of 3 swept window candidates is both admissible and barrier-disjoint"
+  },
+  "comparison_rows": [
+    {
+      "attack": "A",
+      "claim": "C1",
+      "claimed": 1440,
+      "comparable": true,
+      "key": "barrier_equivariance_checks",
+      "matches": true,
+      "note": "",
+      "observed": 1440
+    },
+    {
+      "attack": "A",
+      "claim": "C1",
+      "claimed": 0,
+      "comparable": true,
+      "key": "barrier_equivariance_failures",
+      "matches": true,
+      "note": "",
+      "observed": 0
+    },
+    {
+      "attack": "A",
+      "claim": "C1",
+      "claimed": 1152,
+      "comparable": true,
+      "key": "landed_impostor_failures",
+      "matches": true,
+      "note": "",
+      "observed": 1152
+    },
+    {
+      "attack": "A",
+      "claim": "C1",
+      "claimed": 1440,
+      "comparable": true,
+      "key": "landed_impostor_checks",
+      "matches": true,
+      "note": "",
+      "observed": 1440
+    },
+    {
+      "attack": "A",
+      "claim": "C1",
+      "claimed": 0,
+      "comparable": true,
+      "key": "barrier_req4_failures",
+      "matches": true,
+      "note": "",
+      "observed": 0
+    },
+    {
+      "attack": "A",
+      "claim": "C3",
+      "claimed": 0,
+      "comparable": true,
+      "key": "w1_equivariance_failures",
+      "matches": true,
+      "note": "",
+      "observed": 0
+    },
+    {
+      "attack": "A",
+      "claim": "C3",
+      "claimed": 12,
+      "comparable": true,
+      "key": "w1_distinct_values",
+      "matches": true,
+      "note": "",
+      "observed": 12
+    },
+    {
+      "attack": "B",
+      "claim": "C3",
+      "claimed": 35,
+      "comparable": true,
+      "key": "req4_nested_pairs",
+      "matches": true,
+      "note": "",
+      "observed": 35
+    },
+    {
+      "attack": "B",
+      "claim": "C3",
+      "claimed": 0,
+      "comparable": true,
+      "key": "w1_req4_failures",
+      "matches": true,
+      "note": "",
+      "observed": 0
+    },
+    {
+      "attack": "B",
+      "claim": "C3",
+      "claimed": 24,
+      "comparable": true,
+      "key": "w1b_req4_failures",
+      "matches": true,
+      "note": "",
+      "observed": 24
+    },
+    {
+      "attack": "C",
+      "claim": "C5",
+      "claimed": 4,
+      "comparable": true,
+      "key": "centre_splits",
+      "matches": true,
+      "note": "",
+      "observed": 4
+    },
+    {
+      "attack": "C",
+      "claim": "C5",
+      "claimed": [
+        "hollow_annulus",
+        "Lshape",
+        "sparse_a",
+        "sparse_b"
+      ],
+      "comparable": true,
+      "key": "centre_split_configs",
+      "matches": true,
+      "note": "",
+      "observed": [
+        "hollow_annulus",
+        "Lshape",
+        "sparse_a",
+        "sparse_b"
+      ]
+    },
+    {
+      "attack": "C",
+      "claim": "C3",
+      "claimed": 4,
+      "comparable": true,
+      "key": "disagreements_counted",
+      "matches": true,
+      "note": "",
+      "observed": 4
+    },
+    {
+      "attack": "D",
+      "claim": "C4",
+      "claimed": 7,
+      "comparable": true,
+      "key": "boundary_locus_theta_dependent_primary_thetas",
+      "matches": true,
+      "note": "",
+      "observed": 7
+    },
+    {
+      "attack": "D",
+      "claim": "C4",
+      "claimed": 0,
+      "comparable": true,
+      "key": "support_locus_theta_dependent",
+      "matches": true,
+      "note": "",
+      "observed": 0
+    },
+    {
+      "attack": "E",
+      "claim": "C2",
+      "claimed": 12,
+      "comparable": true,
+      "key": "configs_stationary",
+      "matches": true,
+      "note": "",
+      "observed": 12
+    },
+    {
+      "attack": "E",
+      "claim": "C2",
+      "claimed": 12,
+      "comparable": true,
+      "key": "configs_nondecreasing",
+      "matches": true,
+      "note": "",
+      "observed": 12
+    },
+    {
+      "attack": "F",
+      "claim": "C3",
+      "claimed": null,
+      "comparable": false,
+      "key": "admissible_rivals_beyond_centre_convention",
+      "matches": null,
+      "note": "",
+      "observed": 2
+    },
+    {
+      "attack": "G",
+      "claim": "C3",
+      "claimed": 0,
+      "comparable": true,
+      "key": "stress_w1_wrongly_accepted",
+      "matches": true,
+      "note": "",
+      "observed": 0
+    },
+    {
+      "attack": "G",
+      "claim": "C1",
+      "claimed": 0,
+      "comparable": true,
+      "key": "stress_w4_wrongly_accepted",
+      "matches": true,
+      "note": "",
+      "observed": 0
+    },
+    {
+      "attack": "G",
+      "claim": "C1",
+      "claimed": 12,
+      "comparable": true,
+      "key": "stress_displacement_control",
+      "matches": true,
+      "note": "",
+      "observed": 12
+    },
+    {
+      "attack": "H",
+      "claim": "C1",
+      "claimed": 2,
+      "comparable": true,
+      "key": "receipt_count_determined",
+      "matches": true,
+      "note": "",
+      "observed": 2
+    },
+    {
+      "attack": "H",
+      "claim": "C3",
+      "claimed": 2,
+      "comparable": true,
+      "key": "receipt_count_existence_only",
+      "matches": true,
+      "note": "",
+      "observed": 2
+    },
+    {
+      "attack": "H",
+      "claim": "C4",
+      "claimed": 1,
+      "comparable": true,
+      "key": "receipt_count_supplied",
+      "matches": true,
+      "note": "",
+      "observed": 1
+    },
+    {
+      "attack": "H",
+      "claim": "C6",
+      "claimed": 3,
+      "comparable": true,
+      "key": "receipt_residual_len",
+      "matches": true,
+      "note": "",
+      "observed": 3
+    },
+    {
+      "attack": "H",
+      "claim": "C1",
+      "claimed": 15,
+      "comparable": true,
+      "key": "receipt_certificates",
+      "matches": true,
+      "note": "",
+      "observed": 15
+    }
+  ],
+  "cycle": 885,
+  "exit_code_policy": "the exit code reports the INTEGRITY of this checker, never the direction of its verdicts: a REFUTED claim with a clean run is still exit 0",
+  "family_digest": "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e",
+  "filter_rule_provenance": "NOT OUTCOME-MOTIVATED.  REQ4 is a DECLARED requirement of the interrupted draft (draft requirement keys: ['REQ1_content_only', 'REQ2_translation_equivariance', 'REQ3_rotation_equivariance', 'REQ4_permanence_monotone', 'REQ5_separating']), its wording is byte-identical to the landed one (identical=True; whole requirement set identical=True), and the draft's own harness already computed it.  None of the filter's symbols ([] found) existed in the draft, so what the repair added was the FILTER acting on an already-declared, already-computed requirement -- not the requirement.  Two caveats stated exactly: the draft's PROSE asserted both rivals satisfied every requirement including permanence-monotonicity (observed=True) while its own harness said otherwise, and the draft capped the retraction count at 6, so the 24/35 figure only became visible once the cap was lifted.",
+  "impostor_battery": {
+    "i_lexicographic_tiebreak_centre": {
+      "REQ2_REQ3_equivariant": false,
+      "REQ4": true,
+      "REQ5": true,
+      "admissible_REQ2_REQ5": false,
+      "declared_failure_mode": "REQ3_rotation_equivariance",
+      "distinct_sets": 12,
+      "equivariance_failures": 1015,
+      "radii_differ_from_W1_on_configs": 11,
+      "req4_failures": 0,
+      "rotation_only_checks": 288,
+      "rotation_only_failures": 203,
+      "set_differs_from_W1_on_configs": 0,
+      "translation_only_checks": 60,
+      "translation_only_failures": 0
+    },
+    "ii_rotation_ok_translation_broken_barrier": {
+      "REQ2_REQ3_equivariant": false,
+      "REQ4": true,
+      "REQ5": true,
+      "admissible_REQ2_REQ5": false,
+      "declared_failure_mode": "REQ2_translation_equivariance",
+      "distinct_sets": 11,
+      "equivariance_failures": 1084,
+      "radii_differ_from_W1_on_configs": 12,
+      "req4_failures": 0,
+      "rotation_only_checks": 288,
+      "rotation_only_failures": 0,
+      "set_differs_from_W1_on_configs": 6,
+      "translation_only_checks": 60,
+      "translation_only_failures": 45
+    },
+    "iii_content_blind_constant_window": {
+      "REQ2_REQ3_equivariant": false,
+      "REQ4": true,
+      "REQ5": false,
+      "admissible_REQ2_REQ5": false,
+      "declared_failure_mode": "REQ5_nonconstancy",
+      "distinct_sets": 1,
+      "equivariance_failures": 1152,
+      "radii_differ_from_W1_on_configs": 11,
+      "req4_failures": 0,
+      "rotation_only_checks": 288,
+      "rotation_only_failures": 0,
+      "set_differs_from_W1_on_configs": 11,
+      "translation_only_checks": 60,
+      "translation_only_failures": 48
+    },
+    "iv_dilated_support_NOT_SWEPT_BY_PRIMARY": {
+      "REQ2_REQ3_equivariant": true,
+      "REQ4": true,
+      "REQ5": true,
+      "admissible_REQ2_REQ5": true,
+      "declared_failure_mode": null,
+      "distinct_sets": 11,
+      "equivariance_failures": 0,
+      "radii_differ_from_W1_on_configs": 12,
+      "req4_failures": 0,
+      "rotation_only_checks": 288,
+      "rotation_only_failures": 0,
+      "set_differs_from_W1_on_configs": 12,
+      "translation_only_checks": 60,
+      "translation_only_failures": 0
+    },
+    "v_twice_dilated_support_NOT_SWEPT_BY_PRIMARY": {
+      "REQ2_REQ3_equivariant": true,
+      "REQ4": true,
+      "REQ5": true,
+      "admissible_REQ2_REQ5": true,
+      "declared_failure_mode": null,
+      "distinct_sets": 11,
+      "equivariance_failures": 0,
+      "radii_differ_from_W1_on_configs": 12,
+      "req4_failures": 0,
+      "rotation_only_checks": 288,
+      "rotation_only_failures": 0,
+      "set_differs_from_W1_on_configs": 12,
+      "translation_only_checks": 60,
+      "translation_only_failures": 0
+    }
+  },
+  "mismatched_rows": [],
+  "narrowings": {
+    "C3": "the declared requirement set admits 2 further admissible maps this checker built (the k-fold dilated supports), each disagreeing with W1 as a SET on 12/12 configs, so the surviving uniqueness split is NOT the centre convention alone",
+    "C6": "C6 is understated: under REQ4 AS DECLARED, no non-empty window can be barrier-disjoint at all, so the negative is a theorem rather than an exhausted 3-candidate sweep"
+  },
+  "overall": "OVERALL: 4 corroborated, 2 narrowed, 0 refuted of 6 headline claims; checker integrity=CLEAN.",
+  "requirement_set_verdict": "TOO WEAK.  REQ2-REQ5 as declared and as tested admit an INFINITE family of window maps: for every k >= 0 the k-fold lattice dilation of supp(R) is content-only, translation- and rotation-equivariant, permanence-monotone (A subset B implies dil_k(A) subset dil_k(B)) and non-constant.  Each disagrees with the support window as a SET on every configuration and induces a different (a, b).  The dilation radius k is exactly a runner-chosen constant, which is the thing GBW1 was supposed to forbid -- and REQ1 (content-only) does not exclude it, because dil_k IS a function of R.  Nothing in the declared requirement set pins k.",
+  "role": "independent adversarial checker",
+  "target_primary": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+  "target_primary_sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32",
+  "target_receipt": "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json",
+  "target_receipt_sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997",
+  "teeth": {
+    "all_bite": true,
+    "count": 7,
+    "finding": "7/7 self-mutations flipped their named certificate to FAIL and exited nonzero.",
+    "mutations": [
+      {
+        "exit_code": 2,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "A_PIN_INTEGRITY"
+        ],
+        "mutation": "tampered_pin_digest",
+        "mutation_applied": true,
+        "target_certificate": "A_PIN_INTEGRITY",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "C_FAMILY"
+        ],
+        "mutation": "dropped_family_member",
+        "mutation_applied": true,
+        "target_certificate": "C_FAMILY",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "L_VERDICTS"
+        ],
+        "mutation": "hardcoded_classification",
+        "mutation_applied": true,
+        "target_certificate": "L_VERDICTS",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "N_SELF_AUDIT"
+        ],
+        "mutation": "leaked_expected_count",
+        "mutation_applied": true,
+        "target_certificate": "N_SELF_AUDIT",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "J_ATTACK_G_STRESS",
+          "M_COVERAGE",
+          "N_SELF_AUDIT"
+        ],
+        "mutation": "skipped_attack",
+        "mutation_applied": true,
+        "target_certificate": "M_COVERAGE",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "G_ATTACK_D"
+        ],
+        "mutation": "wrong_locus_swap",
+        "mutation_applied": true,
+        "target_certificate": "G_ATTACK_D",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "Z_CONTROLS"
+        ],
+        "mutation": "firewall_removed",
+        "mutation_applied": true,
+        "target_certificate": "Z_CONTROLS",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      }
+    ],
+    "pass": true
+  },
+  "verdicts": {
+    "C1": "CORROBORATED",
+    "C2": "CORROBORATED",
+    "C3": "NARROWED",
+    "C4": "CORROBORATED",
+    "C5": "CORROBORATED",
+    "C6": "NARROWED"
+  },
+  "verdicts_independent_recheck": {
+    "C1": "CORROBORATED",
+    "C2": "CORROBORATED",
+    "C3": "NARROWED",
+    "C4": "CORROBORATED",
+    "C5": "CORROBORATED",
+    "C6": "NARROWED"
+  }
+}

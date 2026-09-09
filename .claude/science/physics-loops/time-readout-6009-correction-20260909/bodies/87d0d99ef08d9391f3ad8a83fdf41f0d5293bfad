@@ -1,0 +1,522 @@
+{
+  "blocklisted_loaded": [],
+  "census_bound_attack": {
+    "affine_extension": {
+      "argument": "An affine involution x -> Mx + k has fixed set {x : (M-I)x = -k}, an affine subspace whose DIRECTION space is ker(M - I), independent of k.  Whether sigma is constant on the fixed set depends only on whether f vanishes on that direction space, so no choice of translation part k can turn a sterile involution into one that pins sigma.  The translation only moves WHERE the gauge is fixed, never WHETHER the orbit label is fixed.",
+      "translation_can_change_verdict": false
+    },
+    "bounds_swept": {
+      "bound_2": {
+        "action_preserving": 4,
+        "involutions": 22,
+        "witnesses": [],
+        "would_pin_sigma": 0
+      },
+      "bound_3": {
+        "action_preserving": 6,
+        "involutions": 38,
+        "witnesses": [],
+        "would_pin_sigma": 0
+      },
+      "bound_5": {
+        "action_preserving": 10,
+        "involutions": 70,
+        "witnesses": [],
+        "would_pin_sigma": 0
+      }
+    },
+    "cell_empty_at_every_bound": true,
+    "pass": true,
+    "reading": "Enlarging the bound from 2 to 5 multiplies the involution count but leaves the pinning cell empty, and the affine extension is ruled out structurally rather than by search.  The primary's bound was not hiding a witness.",
+    "refutation_found": false,
+    "reproduces_primary_at_bound_2": true
+  },
+  "claim_survival": {
+    "A1_no_sentence_grounds_sigma": true,
+    "A2_sigma_outside_scale_primitive": true,
+    "A3_involution_census_sterile": true,
+    "B1_incidence_map": true,
+    "B2_invariant_core_empty": true
+  },
+  "claims": {
+    "A1_no_sentence_grounds_sigma": {
+      "checker": true,
+      "primary": true
+    },
+    "A2_sigma_outside_scale_primitive": {
+      "checker": "SPLIT_OUTSIDE",
+      "primary": "SPLIT_OUTSIDE"
+    },
+    "A3_involution_census_sterile": {
+      "checker": true,
+      "primary": true
+    },
+    "B1_incidence_map": {
+      "checker": {
+        "closing_1": "7/12",
+        "dilate_k0": "7/12",
+        "dilate_k1": "1/12",
+        "dilate_k2": "0/12",
+        "opening_1": "0/12"
+      },
+      "primary": {
+        "closing_1": "7/12",
+        "dilate_k0": "7/12",
+        "dilate_k1": "1/12",
+        "dilate_k2": "0/12",
+        "opening_1": "0/12"
+      }
+    },
+    "B2_invariant_core_empty": {
+      "checker": true,
+      "primary": true
+    }
+  },
+  "claims_surviving": 5,
+  "claims_total": 5,
+  "cycle": 903,
+  "elapsed_sec": 1.445,
+  "firewall_hits": [],
+  "independent_adjudication": {
+    "ablations": [
+      {
+        "ablated": "exclusion_clause_1",
+        "fragment_present_in_pinned_bytes": true,
+        "verdict_after_ablation": "SPLIT_OUTSIDE",
+        "verdict_moved": false
+      },
+      {
+        "ablated": "exclusion_clause_2",
+        "fragment_present_in_pinned_bytes": true,
+        "verdict_after_ablation": "SPLIT_OUTSIDE",
+        "verdict_moved": false
+      },
+      {
+        "ablated": "admit_clause",
+        "fragment_present_in_pinned_bytes": true,
+        "verdict_after_ablation": "OUTSIDE",
+        "verdict_moved": true
+      }
+    ],
+    "both_exclusions_removed_verdict": "INSIDE",
+    "checker_verdict": "SPLIT_OUTSIDE",
+    "detail": {
+      "admits_dimensionful": true,
+      "excl_clause_1": true,
+      "excl_clause_2": true,
+      "excludes_dimensionless": true,
+      "has_dimensionless_component": true,
+      "has_unit_component": true,
+      "inside": [
+        "unit_conversion_factor"
+      ],
+      "outside": [
+        "dimensionless_factor"
+      ],
+      "verdict": "SPLIT_OUTSIDE"
+    },
+    "exclusions_are_load_bearing": true,
+    "pass": true,
+    "primary_verdict": "SPLIT_OUTSIDE",
+    "reading": "The verdict is genuinely a function of the pinned bytes: with both exclusion clauses deleted the same code returns INSIDE, so the OUTSIDE half of the split is being read off the primitive's text and not asserted.",
+    "refutation_found": false,
+    "verdicts_agree": true
+  },
+  "independent_incidence": {
+    "all_barriers_agree": true,
+    "disagreements": [],
+    "doubling_the_theta_sample_changed_nothing": true,
+    "machinery": "integer path-count polynomials, phase applied after propagation; six thetas vs the primary's three",
+    "pass": true,
+    "refutation_found": false,
+    "rows": [
+      {
+        "agrees_with_primary": true,
+        "barrier": "dilate_k0",
+        "checker_set": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "incidence_3_thetas": "7/12",
+        "incidence_6_thetas": "7/12",
+        "primary_incidence": "7/12",
+        "primary_set": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "sample_size_changes_answer": false
+      },
+      {
+        "agrees_with_primary": true,
+        "barrier": "dilate_k1",
+        "checker_set": [
+          "Lshape"
+        ],
+        "incidence_3_thetas": "1/12",
+        "incidence_6_thetas": "1/12",
+        "primary_incidence": "1/12",
+        "primary_set": [
+          "Lshape"
+        ],
+        "sample_size_changes_answer": false
+      },
+      {
+        "agrees_with_primary": true,
+        "barrier": "dilate_k2",
+        "checker_set": [],
+        "incidence_3_thetas": "0/12",
+        "incidence_6_thetas": "0/12",
+        "primary_incidence": "0/12",
+        "primary_set": [],
+        "sample_size_changes_answer": false
+      },
+      {
+        "agrees_with_primary": true,
+        "barrier": "closing_1",
+        "checker_set": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "incidence_3_thetas": "7/12",
+        "incidence_6_thetas": "7/12",
+        "primary_incidence": "7/12",
+        "primary_set": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "sample_size_changes_answer": false
+      },
+      {
+        "agrees_with_primary": true,
+        "barrier": "opening_1",
+        "checker_set": [],
+        "incidence_3_thetas": "0/12",
+        "incidence_6_thetas": "0/12",
+        "primary_incidence": "0/12",
+        "primary_set": [],
+        "sample_size_changes_answer": false
+      }
+    ]
+  },
+  "independent_sweep": {
+    "agrees_on_EXACT_count": true,
+    "checker_EXACT_count": 0,
+    "checker_EXACT_rows": [],
+    "grader": "clause-scoped (grounding triple must share one clause)",
+    "note": "A stricter grader can only ever find FEWER groundings than a looser one, so agreement at zero is the strong reading: neither a permissive nor a restrictive rule finds a sentence in the pinned corpus that would discharge sigma.",
+    "pass": true,
+    "primary_EXACT_count": 0,
+    "primary_sentences_swept": 770,
+    "refutation_found": false,
+    "sentences_swept": 770,
+    "tally": {
+      "EXACT": 0,
+      "NONE": 24,
+      "OUT_OF_SCOPE": 736,
+      "PARTIAL": 10
+    }
+  },
+  "invariant_core_attack": {
+    "barriers_outside_declared_family": 8,
+    "claimed_core": [],
+    "configs_theta_dependent_under_every_tested_barrier": [],
+    "containment_barriers_tested": 12,
+    "core_confirmed": true,
+    "core_refuted": false,
+    "pass": true,
+    "reading": "12 containment barriers were tested, 8 of them outside the primary's declared family.  No configuration is theta-dependent under all of them, so the empty invariant core survives the attack.  The claim is not fragile to the family choice: it is already killed by the k=2 dilation alone, and every additional barrier only shrinks the intersection further.",
+    "tested": [
+      {
+        "barrier": "declared::dilate_k0",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "incidence": "7/12"
+      },
+      {
+        "barrier": "declared::dilate_k1",
+        "configs": [
+          "Lshape"
+        ],
+        "incidence": "1/12"
+      },
+      {
+        "barrier": "declared::dilate_k2",
+        "configs": [],
+        "incidence": "0/12"
+      },
+      {
+        "barrier": "declared::closing_1",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "incidence": "7/12"
+      },
+      {
+        "barrier": "slit_rank0",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_b"
+        ],
+        "incidence": "6/12"
+      },
+      {
+        "barrier": "slit_rank1",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a"
+        ],
+        "incidence": "6/12"
+      },
+      {
+        "barrier": "slit_rank2",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "chain",
+          "sparse_b"
+        ],
+        "incidence": "5/12"
+      },
+      {
+        "barrier": "halfspace_dilate",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "incidence": "5/12"
+      },
+      {
+        "barrier": "far_site",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "incidence": "7/12"
+      },
+      {
+        "barrier": "intermediate_seed11",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "incidence": "7/12"
+      },
+      {
+        "barrier": "intermediate_seed97",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "incidence": "7/12"
+      },
+      {
+        "barrier": "intermediate_seed313",
+        "configs": [
+          "single",
+          "pair",
+          "Lshape",
+          "plane_square",
+          "chain",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "incidence": "7/12"
+      }
+    ]
+  },
+  "pins": {
+    "all_ok": true,
+    "pass": true,
+    "primary_receipt_sha256": "e0465028fa576e3e60e4ba24ca9540dddf0302f8a18edd8e696ad3101735b863",
+    "primary_sha256": "4dccf702456a972f35b83262d470e63456b6d98f0eeb2a0fad3393b3f1d4afe4",
+    "rows": [
+      {
+        "ok": true,
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+      },
+      {
+        "ok": true,
+        "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+        "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+      },
+      {
+        "ok": true,
+        "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+        "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+      },
+      {
+        "ok": true,
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "ok": true,
+        "path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+        "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32"
+      },
+      {
+        "ok": true,
+        "path": "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json",
+        "sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997"
+      }
+    ]
+  },
+  "refutations_found": [],
+  "role": "independent check, spec'd to refute",
+  "runner": "scripts/frontier_cycle903_sigma_theta_independent_check_2026_07_28.py",
+  "runner_sha256": "6c5c3d9e3fede36e7b10be23c493f69002ee6093b9d6d1feafc03dbe9827bcaa",
+  "teeth": {
+    "all_bit": true,
+    "holes": [],
+    "pass": true,
+    "rows": [
+      {
+        "corruption": "flip 'one dimensionful reference' in the scale note",
+        "detected": true,
+        "tooth": "T1_tampered_pin",
+        "why": "the primary hard-fails exit 2 on any sha256 mismatch before any science runs"
+      },
+      {
+        "both_fragments_present_in_pinned_bytes": true,
+        "corruption": "delete both exclusion clauses from the scale note",
+        "detected": true,
+        "tooth": "T2_dropped_sentence",
+        "verdict_with_bytes": "SPLIT_OUTSIDE",
+        "verdict_without_bytes": "INSIDE",
+        "why": "the OUTSIDE verdict is a function of those two clauses; deleting them flips it, so the adjudication is reading the bytes rather than reciting a conclusion.  The tooth also asserts both fragments were actually present, so a mis-quoted fragment cannot pass as a no-op deletion"
+      },
+      {
+        "corruption": "look for `verdict = <literal>` inside the primary's adjudication",
+        "detected": true,
+        "hardcoded_assignments_found": [],
+        "tooth": "T3_hardcoded_adjudication",
+        "why": "the verdict is assigned from a conditional over computed vote lists, not from a string constant; a literal here would mean the adjudication was decided before the bytes were read"
+      },
+      {
+        "corruption": "check whether any incidence figure is assigned as a string constant instead of being built from computed set sizes",
+        "detected": true,
+        "distinct_incidence_values_in_receipt": 3,
+        "keys_built_by_fstring": [
+          "barrier_independent_incidence",
+          "incidence"
+        ],
+        "keys_stated_as_constants": [],
+        "tooth": "T4_leaked_verdict",
+        "why": "every incidence key is an f-string over len() of a computed set, and one code path yields several distinct values, so no figure could have been pre-stated.  A substring test would have been unfair here: the primary's prose quotes 885's 7/12 precisely in order to contrast it with the correction"
+      },
+      {
+        "corruption": "compare the barriers declared in the primary's AST with the barriers present in its receipt",
+        "declared_in_source": [
+          "closing_1",
+          "dilate_k0",
+          "dilate_k1",
+          "dilate_k2",
+          "opening_1"
+        ],
+        "detected": true,
+        "mapped_in_receipt": [
+          "closing_1",
+          "dilate_k0",
+          "dilate_k1",
+          "dilate_k2",
+          "opening_1"
+        ],
+        "tooth": "T5_skipped_barrier",
+        "why": "a barrier declared but not mapped -- or mapped but never declared -- would show as a set difference here"
+      },
+      {
+        "corruption": "feed the checker's own stricter grader two sentences that WOULD ground sigma, and one that only constrains it",
+        "detected": true,
+        "plant_1_grade": "EXACT",
+        "plant_2_grade": "EXACT",
+        "plant_3_grade": "PARTIAL",
+        "tooth": "T6_planted_grounding_blindness",
+        "why": "a grader that returns zero groundings on the real corpus is worthless unless it returns EXACT on a planted one; both plants are caught by the stricter clause-scoped rule"
+      },
+      {
+        "configs": [
+          "single",
+          "pair",
+          "Lshape"
+        ],
+        "corruption": "a containment barrier with a designed open channel along +x, which must readmit short paths and so must be strictly richer than dilate_k1",
+        "detected": true,
+        "incidence": "3/12",
+        "is_containment": true,
+        "tooth": "T7_planted_barrier_designed_incidence",
+        "why": "the mapper reports the designed enrichment rather than returning the declared family's answer by reflex"
+      },
+      {
+        "corruption": "re-parse the 885 N-certificate row from the pinned receipt and compare with the primary's gate",
+        "detected": true,
+        "parsed_from_885_receipt": "7/12",
+        "primary_gate_passed": true,
+        "tooth": "T8_restriction_gate_integrity",
+        "why": "the correction only has standing because the same machinery reproduces the pinned number at the pinned barrier"
+      }
+    ],
+    "teeth_bit": 8,
+    "teeth_count": 8
+  }
+}

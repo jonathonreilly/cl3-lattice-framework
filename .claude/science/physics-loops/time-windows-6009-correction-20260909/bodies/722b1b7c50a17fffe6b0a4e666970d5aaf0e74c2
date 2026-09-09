@@ -1,0 +1,188 @@
+{
+  "Q1_annular_chart_sees_it": true,
+  "Q1_configs_that_separate": [
+    "Lshape",
+    "annulus_1_4",
+    "chain",
+    "hollow_annulus",
+    "pair",
+    "plane_square",
+    "shell1",
+    "single",
+    "sparse_a",
+    "sparse_b"
+  ],
+  "Q1_linear_classes": 1,
+  "Q1_pairs_compared": 36,
+  "Q1_pairs_that_separate": 35,
+  "Q1_partition": [
+    [
+      "axis_segment_closure"
+    ],
+    [
+      "bounding_box"
+    ],
+    [
+      "minkowski_S_ball1__885_checker_dilation_k1"
+    ],
+    [
+      "minkowski_S_ball2__885_checker_dilation_k2"
+    ],
+    [
+      "minkowski_S_far_shell__origin_present"
+    ],
+    [
+      "minkowski_S_zero__the_885_support_window"
+    ],
+    [
+      "readout_keyed_inflation",
+      "size_keyed_inflation"
+    ],
+    [
+      "union_box_with_dilation"
+    ]
+  ],
+  "Q1_quadratic_classes": 8,
+  "Q1_structural_proof_status": "PROVED, with hypotheses, in the NEGATIVE direction.  C892_T1 and C892_T2 are structural: they follow from the barrier rule and the definition of Z, and both are verified with zero violations on every cell.  What they prove is that the collapse CANNOT hold once any admissible containment-holding window reaches into the reachable set, and the support window -- the inclusion-minimum of the class -- reaches none of it.  The witness is exhibited, so the verdict is not catalogue-only.  The catalogue's residual role is only to show that admissible windows of BOTH kinds exist in 887's own space; the scope limit is that no claim is made about window maps outside that space.",
+  "Q1_verdict": "NOT GAUGE -- the extent is LOAD-BEARING at quadratic order",
+  "all_certificates_pass": true,
+  "amplitude_confinement": "On 12/12 configurations the reachable set is DISJOINT from the support (0 meet it), and on 12/12 the amplitude inside the support is exactly the seed (0 exceed it).  5 configurations freeze the walk entirely: their source's every neighbour is a record, so amplitude never leaves the seed.",
+  "certificate_pass": {
+    "A_PINS": true,
+    "B_RESTRICTION_GATE": true,
+    "C_FAMILY": true,
+    "D_CATALOGUE": true,
+    "E_AMPLITUDE_CONFINEMENT": true,
+    "F_BOTH_ORDERS": true,
+    "G_Q1_VERDICT": true,
+    "H_KERNEL_STRUCTURE": true,
+    "I_EVENT_SPACE_ABSENCE": true,
+    "J_INTERFACE": true,
+    "K_STRESS": true,
+    "L_OBLIGATION_MAP": true,
+    "M_HONESTY": true,
+    "N_CONTROLS": true
+  },
+  "cycle": 892,
+  "deterministic_double_build": true,
+  "elapsed_sec": 20.902,
+  "event_space_scan_hits": 0,
+  "family_digest": "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e",
+  "interface_requirements": [
+    "IF1",
+    "IF2",
+    "IF3",
+    "IF4",
+    "IF5",
+    "IF6"
+  ],
+  "kernel_structure": "648 exact identity checks with 0 violations: Z(theta) is a degree-4 polynomial in cos phi on every window and configuration.  Interference orders actually present: [0, 1, 2, 3, 4].  The parity theorem predicts the odd orders from the source parity alone with 0 mispredictions.  On the fine grid of 27 thetas, 5 of 12 configurations are exactly theta-CONSTANT -- these are the frozen walks -- and the rest move.",
+  "obligation_components": [
+    {
+      "component": "(a) WINDOW",
+      "dimensions": 1,
+      "verdict": "LOAD-BEARING -- does not collapse"
+    },
+    {
+      "component": "(b) KERNEL",
+      "dimensions": 1,
+      "verdict": "LOAD-BEARING, but exactly one scalar"
+    },
+    {
+      "component": "(c) INTERFACE",
+      "dimensions": 5,
+      "verdict": "ABSENT FROM THIS LINEAGE -- priced as a named import"
+    },
+    {
+      "component": "(d) RESIDUAL",
+      "dimensions": 7,
+      "verdict": "computed below"
+    }
+  ],
+  "obligation_map_headline": "GBW1b prices at 7 dimensions: 1 window convention + 1 kernel scalar + 5 owed interface properties.",
+  "question": "GBW1b: is the window extent still gauge at QUADRATIC order, and what does the joint kernel-window obligation price at?",
+  "residual_scenarios": [
+    {
+      "if_supplied": "nothing",
+      "residual_dimension": 7,
+      "what_remains": "one window convention, one kernel scalar, and 5 interface properties"
+    },
+    {
+      "if_supplied": "the kernel scalar cos phi alone",
+      "residual_dimension": 6,
+      "what_remains": "the window convention and the interface -- and note that supplying theta does NOT collapse the window, because certificate G separates windows at EVERY theta in the grid"
+    },
+    {
+      "if_supplied": "the event-space interface alone",
+      "residual_dimension": 2,
+      "what_remains": "the window convention and the kernel scalar"
+    },
+    {
+      "if_supplied": "the event-space interface AND the kernel scalar",
+      "residual_dimension": 1,
+      "what_remains": "exactly the window convention -- which before this cycle was believed to be gauge"
+    },
+    {
+      "if_supplied": "a window convention AND the kernel scalar",
+      "residual_dimension": 5,
+      "what_remains": "the interface only"
+    }
+  ],
+  "restriction_gate": "8/8 restriction checks reproduce.  885's 12 boundary-shell rows match value-for-value with 0 mismatches, its theta-dependence is 7/12 and its degenerate control 0/12; 887's readout gauge recomputes as 9 of 12; the family digest is 30edaa3d5ca03c24.",
+  "science_digest": "3fcc52b659c7cb35579b029380ba93acd4c19290166d2da393afb4b77c37a0ff",
+  "scope": "One 12-configuration family (digest 30edaa3d5ca03c24) in a box of radius 4 with walk depth 4; one catalogue of 17 named window maps AST-extracted from the pinned 887 primary; one theta grid of 6 values plus a 27-value fine grid used only for the structure characterization; exact arithmetic throughout.",
+  "self_sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f",
+  "source_pins": [
+    {
+      "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",
+      "path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+      "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32"
+    },
+    {
+      "git_blob": "553bba1fbd427f27c5606b6f27bd592a91e9c3c0",
+      "path": "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json",
+      "sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997"
+    },
+    {
+      "git_blob": "00e66110f74051e13af8952d2cb79af214570474",
+      "path": "scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py",
+      "sha256": "d98c0b43c0efa9ef33727180b109e74ffd34c4f805bf498f8cf3babb819c86b1"
+    },
+    {
+      "git_blob": "4bb8982beb2b9d3eeeaa15aa459fa9e1df461a5e",
+      "path": "logs/runner-cache/frontier_cycle885_gbw1_record_window_2026_07_28.txt",
+      "sha256": "1e45cb05ace173b01506d57019fb5017e1ea59f65b006c9a741df9fd5489bd82"
+    },
+    {
+      "git_blob": "0fbcf92fc98b0d88d436a05efdc33449c52473db",
+      "path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py",
+      "sha256": "139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83"
+    },
+    {
+      "git_blob": "643fb824665d967f770c8939977a0f4010839564",
+      "path": "outputs/window_freedom_cycle887_receipt_2026_07_28.json",
+      "sha256": "d1807305098ae995224118f93b301fc822ef0d6efc9e49c4a16e90d694592f86"
+    },
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+      "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+      "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+    },
+    {
+      "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+      "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+    }
+  ],
+  "theorems": [
+    "C892-T1 AMPLITUDE EXPULSION: with barrier B(R) = supp(R) and a walk blocked ON the barrier, every site reachable in one or more steps lies outside supp(R); amplitude inside supp(R) is exactly the seed.  Verified on 12/12 configurations with 0 exceptions.",
+    "C892-T2 WINDOW MONOTONICITY: for containment-holding W subset W', Z(W') - Z(W) equals the amplitude mass on W' \\ W, so Z is monotone and the extent is gauge at quadratic order IFF every admissible containment-holding window carries the same amplitude mass on the reachable set.  0 violations on every nested pair.",
+    "C892-T3 PATH-LENGTH INTERFERENCE SPECTRUM: Z(theta) = sum_d M_d T_d(cos phi) with cos phi = (1-theta^2)/(1+theta^2), d <= the walk depth, and M_d rational and theta-free.  Verified exactly on every (window, config, theta) cell.",
+    "C892-T4 BIPARTITE PARITY SELECTION: odd interference orders can appear only when the source set spans both lattice parities; predicted from the source parity alone with 0 mispredictions."
+  ]
+}

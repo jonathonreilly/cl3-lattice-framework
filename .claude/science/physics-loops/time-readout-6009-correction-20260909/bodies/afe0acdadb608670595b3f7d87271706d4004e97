@@ -1,0 +1,281 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle898_escape_census_2026_07_28.py
+runner_sha256: 83c797501c6216700518618d91bfd35bb32dbea92dfc825ef592a9397423b0c6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.507
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 898 -- THE M2 / M4 ESCAPE CENSUS
+==============================================================================
+
+[PASS] A_PINS
+       All 8 cited artifacts matched their pinned SHA-256 and git blob, and all
+       31 verbatim needles resolved character for character.
+
+[PASS] B_RESTRICTION_GATE
+       882's T1 dichotomy reproduces on all 14 reparsed homogeneous rows, 882's
+       T7 closed-library wall reproduces at 42 primary / 200 receipt libraries,
+       883's normal-form row reproduces, and 3 * 2/27 = 2/9 exactly. Cycle 897 is
+       ABSENT from this branch (13768 entries scanned), so 882's original T7
+       scope is the one cited.
+
+[PASS] C_DISJOINTNESS_SWEEP
+       The memo contains exactly 2 occurrence(s) of 'disjoint' (lines 71, 151),
+       exactly 1 occurrence(s) of an adjacency word (line 38, section ### Lattice
+       / Physical Locality), 0 explicit definition(s) of record disjointness, and
+       0 'disjoint' sentence(s) carrying any adjacency or separation qualifier.
+
+[PASS] D_M4_ADJUDICATION
+       Adjudicated reading: SITE_SET_DISJOINTNESS. A record's support is a single
+       site (E2+E3), so 'pairwise-disjoint' is automatically satisfied by any
+       finite collection of distinct records and the additivity clause covers
+       ADJACENT records. The memo defines record disjointness nowhere (0 hits),
+       no 'disjoint' sentence carries an adjacency qualifier (0 hits), and the
+       memo's sole adjacency word sits in the Lattice section, not in Record.
+       Verdict ROUTE_DIES: any nonzero adjacency gluing defect contradicts the
+       axiom, and the content-alone sentence kills it a second time under every
+       reading.
+
+[PASS] E_M4_ENUMERATION_AND_COUNTERFACTUAL
+       The M4 adjacency route dies a third, geometry-only death: the target C3
+       orbit [[1, 0, 0], [0, 1, 0], [0, 0, 1]] has 0 adjacency interfaces (all
+       pairwise squared distances are 2), so no adjacency defect can reach it.
+       The counterfactual enumeration over all 343 members of the forbidden
+       family leaves the induced solution set at Z in every case: the axiom
+       clause buys zero selection power. The purchased-modulus branch shows the
+       whole singleton rests on odd_part(M) = 27, hit by 4 moduli in the scanned
+       range with odd parts [27].
+
+[PASS] F_M4_INGREDIENT_DERIVABILITY
+       Every M4 ingredient is a purchase or is derived for a different object.
+       The axiom memo contains 0 'integer' hits, 0 'integral/integrality' hits, 4
+       'least/minimal' hits and 0 'discrete' hits -- and not one of them is a
+       statement about readout VALUES. 3 named purchases, plus the field scope
+       and the 883 binding gap. Sweep covered 3888 retained docs.
+
+[PASS] G_M2_INVOLUTION_CENSUS
+       Census of 10 entries. Degree-1: every one is {0} or the whole line, and
+       C898-T4 upgrades that from an enumeration to a theorem over ALL linear
+       maps. Degree-2: two irrational scales (Pontryagin and DFT, both 1/sqrt(3),
+       irrational because v_3(1/3) = -1 is odd), one further irrational (the
+       Fourier involution normalization) with an EMPTY unit-exchange reading, and
+       two rational-but-wrong scales (Laplacian trace duality w = 1/3 with
+       per-vertex trace 2/3; the Q[C3] primitive idempotent 1/3). 0 entries pin
+       the target.
+
+[PASS] H_M3_ALONE
+       Order alone selects nothing: the exhibited chain 2/27 > 1/27 > ... >
+       1/1728 stays positive forever inside 882's symmetry-only survivor set, and
+       the scaling action is transitive on the positive rationals so no
+       representative is canonical. With M4's (1/108)Z in hand the same condition
+       lands exactly on 2/27. M3 is an amplifier, not an escape.
+
+[PASS] I_COVERAGE_THEOREM
+       5 regions CLOSED, 5 OPEN. The single unpriced open shape is non-involution
+       mixed-degree M2.
+
+[PASS] J_FALSIFIER_VISIBILITY
+       Falsifier visibility holds: the planted Gram is detected and pins exactly
+       2/27; the irrational control is not reported as a rational selector; the
+       rational-but-wrong control is detected as a selector and correctly not as
+       the target; and no degree-1 plant can exist by theorem.
+
+[PASS] K_NO_GO_GATE
+       14 routes carry a marker: 11 attacked here, 2 ruled out by pinned prior
+       art, 1 declared open and not attacked. The steelman against the M4
+       adjudication is stated rather than rebutted, and answered on three
+       independent grounds of which the third -- the target orbit has no
+       adjacency interfaces -- is not an interpretive question at all.
+
+[PASS] L_OUTCOME_AND_PRICE
+       The block returns the exhaustive negative it was specified to return, plus
+       more coverage than expected: M4's adjacency mechanism dies three
+       independent deaths (one of them pure geometry, so it is immune to the
+       interpretive dispute), the M2 involution census closes at degree 1 by
+       theorem rather than by enumeration, and the single unpriced open shape in
+       the whole four-shape classification is a non-involution mixed-degree
+       relation.
+
+------------------------------------------------------------------------------
+EVERY 'disjoint' OCCURRENCE IN THE PINNED AXIOM MEMO
+------------------------------------------------------------------------------
+  line   71  col  45  byte   2452  section ### Record / Fixed Reality
+        "For any finite collection of pairwise-disjoint records, scalar readout
+        `I` is additive, with `I(empty)=0`."
+  line  151  col  18  byte   6433  section ## Relation To The 2026-06-05 Record Wording
+        "- Record names the fixed locking of one admissible local possibility,
+        one-record-per-site uniqueness, permanence, and finite scalar readout
+        additivity over disjoint record collections."
+
+  adjacency-word occurrences: 1 (line 38, section ### Lattice / Physical Locality)
+  explicit definitions of record disjointness: 0
+  'disjoint' sentences carrying an adjacency qualifier: 0
+
+------------------------------------------------------------------------------
+THE M4 ADJUDICATION
+------------------------------------------------------------------------------
+  adjudicated reading : SITE_SET_DISJOINTNESS
+  covers adjacent     : True
+  VERDICT             : ROUTE_DIES
+
+  contradicting instance: records at [0, 0, 0] and [1, 0, 0], squared distance 1 (adjacent=True),
+    supports disjoint=True, contents ['1/1', '1/1']
+    axiom requires I = 4/27; with a nonzero defect D=1, I = 31/27
+    difference 1/1 != 0  ->  CONTRADICTION
+
+  second, reading-independent kill: identical contents ['1/1', '1/1'] at squared distance 1 vs 9
+    readouts 31/27 vs 4/27  ->  content-alone violated: True
+
+------------------------------------------------------------------------------
+M4 ENUMERATION AND COUNTERFACTUAL
+------------------------------------------------------------------------------
+  target C3 orbit [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+  pairwise squared distances: [2, 2, 2]
+  adjacency interfaces inside the target orbit: 0
+  counterfactual family size 343, all enumerated: True
+  induced constraint on alpha, every member: {'Z': 343}
+
+  purchased-modulus ideal sweep (least positive member with v_2 = 1):
+    M      ideal        v2(M)  odd(M)  least v2=1   target?
+    9      (1/9)Z       0      9       2/9          .
+    12     (1/12)Z      2      3       2/3          .
+    27     (1/27)Z      0      27      2/27         YES
+    36     (1/36)Z      2      9       2/9          .
+    54     (1/54)Z      1      27      2/27         YES
+    81     (1/81)Z      0      81      2/81         .
+    108    (1/108)Z     2      27      2/27         YES
+    216    (1/216)Z     3      27      2/27         YES
+    324    (1/324)Z     2      81      2/81         .
+
+  moduli in [1,400] hitting 2/27: [27, 54, 108, 216]
+  their odd parts: [27]
+
+------------------------------------------------------------------------------
+THE M2 INVOLUTION CENSUS
+------------------------------------------------------------------------------
+  id                     deg  fixed scale over Q     verdict
+  M2-01                  2    NONE (+/- sqrt(1/3))   IRRATIONAL
+  M2-02                  2    1/3                    FINITE
+  M2-03                  1    NONE (every alpha is fixed) ALL_Q
+  M2-04a                 2    NONE (+/- sqrt(1/3))   IRRATIONAL
+  M2-04b                 0    1/3                    FINITE
+  M2-05                  2    NONE (+/- sqrt(1/3))   IRRATIONAL
+  M2-06[1/1,0/1,0/1]     1    NONE (every alpha is fixed) ALL_Q
+  M2-06[-1/1,0/1,0/1]    1    0/1                    ZERO_ONLY
+  M2-06[-1/3,2/3,2/3]    1    NONE (every alpha is fixed) ALL_Q
+  M2-06[1/3,-2/3,-2/3]   1    0/1                    ZERO_ONLY
+
+  selectors found: ['M2-02', 'M2-04b']
+  selectors hitting the target: []
+  VERDICT: NO native involution pins alpha = 2/27 (equivalently the orbit to 2/9)
+
+  coverage bound (complete, no bound needed):
+    - every Q-linear invariance/self-duality condition (C898-T4)
+    - every C3-commuting Q-linear involution (closed-form, 4 of them)
+    - the entire C3-normalizing involution family J = iota q
+    (permutation-matrix row-sum argument)
+    - every C3-invariant symmetric quadratic normalization (2-parameter
+    family, closed form 3p + 6q)
+  NOT covered (declared open):
+    - non-linear (degree >= 3) self-duality conditions
+    - non-C3-invariant quadratic normalizations
+    - involutions acting on structure not supplied here (extra marked points,
+    external anchors, larger content spaces)
+    - mixed-degree M2 relations that are not involution-derived -- this census
+    closes the INVOLUTION subfamily of M2, not all of M2
+
+------------------------------------------------------------------------------
+FALSIFIER VISIBILITY
+------------------------------------------------------------------------------
+  planted selector detected : True
+  planted selector pins 2/27: True
+  irrational control flagged: False (expected False)
+  wrong-value control flagged as selector: True, as target: False
+  degree-1 plant impossible : True
+
+------------------------------------------------------------------------------
+THE COVERAGE THEOREM: CLOSED vs OPEN
+------------------------------------------------------------------------------
+  CLOSED:
+    [C882-T1 (homogeneous dichotomy), restated and reproduced here]
+    single-degree scaling-covariant constraint systems -- solution set is {0}
+    or all of Q; never a nonzero singleton
+    [C882-T7 (the identity obstruction)] M1, a marked point supplied by a
+    multiplicatively closed anchor library -- every multiplicatively closed
+    library contains 1, so alpha = 1/3 survives beside the target and no
+    library selects uniquely
+    [this block's census (G)] M2 restricted to involution / self-duality
+    structures built from the supplied structure -- NO native involution pins
+    alpha = 2/27 (equivalently the orbit to 2/9)
+    [this block's adjudication (D) and enumeration (E)] M4 via a two-record
+    adjacency gluing defect -- dies three independent deaths: (1) the
+    additivity clause covers adjacent site-distinct records, so a nonzero
+    defect contradicts the axiom; (2) the content-alone clause forbids a
+    position-dependent defect under EVERY reading of 'pairwise-disjoint'; (3)
+    the target C3 orbit contains zero adjacency interfaces, so no defect can
+    reach it
+    [this block's C898-T6] M3 alone (an order / fundamental-domain condition)
+    -- a Q-line has no least positive element and the scaling action is
+    transitive on it, so an order condition alone selects nothing
+  OPEN:
+    [OPEN but EQUIVALENT to the obligation, not a route] M1 with a
+    NON-multiplicatively-closed anchor library -- T7's wall is multiplicative
+    closure, and 882's H_ANCHOR_BIJECTION shows a singleton anchor DOES pin. A
+    non-closed library is therefore exactly a marked point, i.e. the license
+    restated -- 882's LEMMA-882, classified EQUIVALENT to the obligation
+    [OPEN -- the honest residual of Q2] M2 outside involutions: general
+    mixed-degree relations -- this census closes the involution/self-duality
+    subfamily. A mixed-degree relation that is not involution-derived is
+    untouched by it, and remains outside T1's scope
+    [OPEN] M2 at degree >= 3, and non-C3-invariant quadratic normalizations --
+    declared outside the census's construction space
+    [OPEN but fully PRICED: 3 named purchases] M4 via a NON-adjacency
+    integrality mechanism -- the census kills the adjacency-defect mechanism
+    only. Any other route to a fractional ideal is untouched -- but
+    certificate F prices every ingredient the known worked singleton uses, and
+    all of them are purchases
+    [OPEN as a PURCHASE, closed as a DERIVATION] M3 + M4 as a package -- the
+    package does produce {2/9} cleanly, but only after buying the modulus (odd
+    part 27), the v_2 = 1 filter and the order condition
+
+  The selection question now has exactly ONE derivational shape left that is
+  not either (a) proved impossible or (b) a named purchase: a mixed-degree
+  M2 relation that is not involution-derived. Everything else in the
+  four-shape classification is closed by theorem (T1, T7, C898-T3/T4/T6, the
+  M4 adjudication) or priced (M4's ingredients, the M3+M4 package). M1 with
+  a non-closed library is not a route -- it is the obligation restated.
+
+------------------------------------------------------------------------------
+OUTCOME
+------------------------------------------------------------------------------
+  class: EXHAUSTIVE_NO_GO_PLUS_COMPLETED_COVERAGE
+  M4: ROUTE_DIES (3 independent kills); ingredients PRICED with 3 named purchases
+  M2: NO native involution pins alpha = 2/27 (equivalently the orbit to 2/9) over 10 census entries
+  M3: amplifier, not an escape
+  coverage: 5 closed / 5 open
+
+  new theorems:
+    - C898-T1 the disjointness adjudication: 'pairwise-disjoint' reads as
+    disjoint site supports, so Record additivity covers adjacent records and a
+    nonzero gluing defect contradicts the axiom
+    - C898-T2 the content-alone kill: a position-dependent gluing defect
+    contradicts 'a readout value is determined by record content alone' under
+    every reading of the disjointness qualifier
+    - C898-T3 geometric vacuity: the target free C3 orbit contains zero
+    adjacency interfaces, so no adjacency defect can constrain alpha
+    - C898-T4 the linear dichotomy: for EVERY Q-linear map the self-duality
+    condition is homogeneous in alpha, so the whole involution/self-duality
+    shape is degree-1 sterile
+    - C898-T5 the quadratic free parameter: C3-invariant quadratic
+    normalizations form a 2-parameter family, so they select nothing without a
+    further purchase
+    - C898-T6 order alone selects nothing: a Q-line has no least positive
+    element and its scaling action is transitive
+
+==============================================================================
+CYCLE 898 CERTIFICATES: ALL PASS
+==============================================================================
+
+controls: deterministic=True runtime_under_limit=True stdout=15129B receipt=d202848b8c3025d6

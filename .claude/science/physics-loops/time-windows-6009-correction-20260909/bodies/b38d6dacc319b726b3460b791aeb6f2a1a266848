@@ -1,0 +1,730 @@
+{
+ "A1_minimality_attack": {
+  "attack": "A1_MINIMALITY",
+  "family_wide_smaller_degree_subset": null,
+  "independent_family_rank_monomial_basis": 5,
+  "minimality_claim_refuted": false,
+  "primary_claim": 5,
+  "ranks_agree": true,
+  "reading": "No proper degree subset carries the whole realized family (family-wide hunt returned None), and the smallest truncated fibre that still serves all 12 configurations has dimension 5.  The primary's family-wide claim of 5 therefore STANDS.  It does NOT stand as a claim about the surviving sub-grid: there the rank is only 2, carried by degrees [0, 2], so the constructed interface object is over-provisioned by the family-minimal fibre.  The primary discloses this; the distinction is load-bearing and is recorded here as a SCOPE limit on the minimality theorem, not as a refutation.",
+  "smallest_fibre_serving_the_whole_family": 5,
+  "surviving_subgrid": [
+   "single"
+  ],
+  "surviving_subgrid_rank": 2,
+  "surviving_subgrid_smaller_degree_subset": [
+   0,
+   2
+  ],
+  "truncated_fibre_configs_served": {
+   "1": 5,
+   "2": 5,
+   "3": 9,
+   "4": 10,
+   "5": 12
+  }
+ },
+ "A2_opposite_direction_attack": {
+  "attack": "A2_OPPOSITE_DIRECTION",
+  "inconsistencies_found_in_the_exhibited_solution": [],
+  "no_direction": [
+   {
+    "config": "Lshape",
+    "consistent": true,
+    "gap": "7/1",
+    "kernel_dimension": 10,
+    "nu_can_be_nonzero": false,
+    "rank": 31,
+    "readout_I": "7/1",
+    "seed_mass": "0/1"
+   },
+   {
+    "config": "annulus_1_4",
+    "consistent": true,
+    "gap": "46/1",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 36,
+    "readout_I": "46/1",
+    "seed_mass": "0/1"
+   },
+   {
+    "config": "ball1",
+    "consistent": true,
+    "gap": "12/1",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 26,
+    "readout_I": "13/1",
+    "seed_mass": "1/1"
+   },
+   {
+    "config": "chain",
+    "consistent": true,
+    "gap": "6/1",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 21,
+    "readout_I": "7/1",
+    "seed_mass": "1/1"
+   },
+   {
+    "config": "hollow_annulus",
+    "consistent": true,
+    "gap": "45/1",
+    "kernel_dimension": 15,
+    "nu_can_be_nonzero": false,
+    "rank": 36,
+    "readout_I": "45/1",
+    "seed_mass": "0/1"
+   },
+   {
+    "config": "offcentre_ball",
+    "consistent": true,
+    "gap": "12/1",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 26,
+    "readout_I": "13/1",
+    "seed_mass": "1/1"
+   },
+   {
+    "config": "pair",
+    "consistent": true,
+    "gap": "5/2",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 21,
+    "readout_I": "3/1",
+    "seed_mass": "1/2"
+   },
+   {
+    "config": "plane_square",
+    "consistent": true,
+    "gap": "12/1",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 21,
+    "readout_I": "13/1",
+    "seed_mass": "1/1"
+   },
+   {
+    "config": "shell1",
+    "consistent": true,
+    "gap": "12/1",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 31,
+    "readout_I": "12/1",
+    "seed_mass": "0/1"
+   },
+   {
+    "config": "sparse_a",
+    "consistent": true,
+    "gap": "15/1",
+    "kernel_dimension": 25,
+    "nu_can_be_nonzero": false,
+    "rank": 36,
+    "readout_I": "15/1",
+    "seed_mass": "0/1"
+   },
+   {
+    "config": "sparse_b",
+    "consistent": true,
+    "gap": "12/1",
+    "kernel_dimension": 25,
+    "nu_can_be_nonzero": false,
+    "rank": 36,
+    "readout_I": "13/1",
+    "seed_mass": "1/1"
+   }
+  ],
+  "reading": "The exhibited solution survives direct substitution on every requirement row and every grid point, and its IF1 equality (readout = seed mass) recomputes here.  On the 11 configurations the primary calls obstructed, an independent solution attempt under this checker's own parameterization finds 0.  The gap column shows why: the linear readout and the confined seed mass simply differ, and no kernel coordinate can close a difference that is the same at every fibre point.",
+  "solutions_found_where_the_primary_says_none": [],
+  "verdict_refuted": false,
+  "yes_direction": [
+   {
+    "IF1_holds": true,
+    "config": "single",
+    "grid_points": 54,
+    "grid_violations": 0,
+    "readout_I": "1/1",
+    "row_violations": 0,
+    "seed_mass": "1/1"
+   }
+  ]
+ },
+ "A3_bridge_attack": {
+  "attack": "A3_BRIDGE",
+  "every_point_visited": true,
+  "grid_points_declared": 648,
+  "grid_points_visited": 648,
+  "negative_atom_masses": 0,
+  "violation_exhibits": [],
+  "violations": 0,
+  "z_source": "recomputed from the amplitude field, never a spectrum"
+ },
+ "all_claims_agree": true,
+ "all_teeth_bite": true,
+ "blocklist_hits": 0,
+ "checker_verdict": "CORROBORATES",
+ "claim_agreement": [
+  {
+   "agree": true,
+   "checker": 5,
+   "claim": "minimal fibre dimension",
+   "primary": 5
+  },
+  {
+   "agree": true,
+   "checker": 12,
+   "claim": "bridge-only satisfiable configs",
+   "primary": 12
+  },
+  {
+   "agree": true,
+   "checker": 5,
+   "claim": "theta-free (894 regime) satisfiable configs",
+   "primary": 5
+  },
+  {
+   "agree": true,
+   "checker": [
+    "single"
+   ],
+   "claim": "joint satisfiable configs",
+   "primary": [
+    "single"
+   ]
+  },
+  {
+   "agree": true,
+   "checker": 648,
+   "claim": "bridge grid points",
+   "primary": 648
+  },
+  {
+   "agree": true,
+   "checker": 0,
+   "claim": "bridge violations",
+   "primary": 0
+  }
+ ],
+ "cycle": 902,
+ "elapsed_sec": 6.373,
+ "independence": "monomial basis against the primary's Chebyshev basis; fraction-free integer elimination with content removal against its rational reduced row echelon form; nu indexed first and atoms/degrees reversed, so pivot order differs throughout; window-lattice atoms built by iterative block refinement rather than signature bucketing; path-length spectra accumulated in this checker's own loop; every Z re-derived from the amplitude field rather than from a spectrum.",
+ "per_config_ranks_and_kernels": {
+  "ALL_FIVE": [
+   {
+    "config": "single",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "pair",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 21
+   },
+   {
+    "config": "shell1",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 31
+   },
+   {
+    "config": "ball1",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 26
+   },
+   {
+    "config": "annulus_1_4",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 36
+   },
+   {
+    "config": "hollow_annulus",
+    "kernel_dimension": 15,
+    "nu_can_be_nonzero": false,
+    "rank": 36
+   },
+   {
+    "config": "Lshape",
+    "kernel_dimension": 10,
+    "nu_can_be_nonzero": false,
+    "rank": 31
+   },
+   {
+    "config": "plane_square",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 21
+   },
+   {
+    "config": "chain",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 21
+   },
+   {
+    "config": "sparse_a",
+    "kernel_dimension": 25,
+    "nu_can_be_nonzero": false,
+    "rank": 36
+   },
+   {
+    "config": "sparse_b",
+    "kernel_dimension": 25,
+    "nu_can_be_nonzero": false,
+    "rank": 36
+   },
+   {
+    "config": "offcentre_ball",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 26
+   }
+  ],
+  "BRIDGE_ONLY": [
+   {
+    "config": "single",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "pair",
+    "kernel_dimension": 6,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "shell1",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 30
+   },
+   {
+    "config": "ball1",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 25
+   },
+   {
+    "config": "annulus_1_4",
+    "kernel_dimension": 6,
+    "nu_can_be_nonzero": true,
+    "rank": 35
+   },
+   {
+    "config": "hollow_annulus",
+    "kernel_dimension": 16,
+    "nu_can_be_nonzero": true,
+    "rank": 35
+   },
+   {
+    "config": "Lshape",
+    "kernel_dimension": 11,
+    "nu_can_be_nonzero": true,
+    "rank": 30
+   },
+   {
+    "config": "plane_square",
+    "kernel_dimension": 6,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "chain",
+    "kernel_dimension": 6,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "sparse_a",
+    "kernel_dimension": 26,
+    "nu_can_be_nonzero": true,
+    "rank": 35
+   },
+   {
+    "config": "sparse_b",
+    "kernel_dimension": 26,
+    "nu_can_be_nonzero": true,
+    "rank": 35
+   },
+   {
+    "config": "offcentre_ball",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 25
+   }
+  ],
+  "BRIDGE_PLUS_IF1": [
+   {
+    "config": "single",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "pair",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 21
+   },
+   {
+    "config": "shell1",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 31
+   },
+   {
+    "config": "ball1",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 26
+   },
+   {
+    "config": "annulus_1_4",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 36
+   },
+   {
+    "config": "hollow_annulus",
+    "kernel_dimension": 15,
+    "nu_can_be_nonzero": false,
+    "rank": 36
+   },
+   {
+    "config": "Lshape",
+    "kernel_dimension": 10,
+    "nu_can_be_nonzero": false,
+    "rank": 31
+   },
+   {
+    "config": "plane_square",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 21
+   },
+   {
+    "config": "chain",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 21
+   },
+   {
+    "config": "sparse_a",
+    "kernel_dimension": 25,
+    "nu_can_be_nonzero": false,
+    "rank": 36
+   },
+   {
+    "config": "sparse_b",
+    "kernel_dimension": 25,
+    "nu_can_be_nonzero": false,
+    "rank": 36
+   },
+   {
+    "config": "offcentre_ball",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 26
+   }
+  ],
+  "BRIDGE_PLUS_IF5": [
+   {
+    "config": "single",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "pair",
+    "kernel_dimension": 6,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "shell1",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 30
+   },
+   {
+    "config": "ball1",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 25
+   },
+   {
+    "config": "annulus_1_4",
+    "kernel_dimension": 6,
+    "nu_can_be_nonzero": true,
+    "rank": 35
+   },
+   {
+    "config": "hollow_annulus",
+    "kernel_dimension": 16,
+    "nu_can_be_nonzero": true,
+    "rank": 35
+   },
+   {
+    "config": "Lshape",
+    "kernel_dimension": 11,
+    "nu_can_be_nonzero": true,
+    "rank": 30
+   },
+   {
+    "config": "plane_square",
+    "kernel_dimension": 6,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "chain",
+    "kernel_dimension": 6,
+    "nu_can_be_nonzero": true,
+    "rank": 20
+   },
+   {
+    "config": "sparse_a",
+    "kernel_dimension": 26,
+    "nu_can_be_nonzero": true,
+    "rank": 35
+   },
+   {
+    "config": "sparse_b",
+    "kernel_dimension": 26,
+    "nu_can_be_nonzero": true,
+    "rank": 35
+   },
+   {
+    "config": "offcentre_ball",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 25
+   }
+  ],
+  "C894_THETA_FREE": [
+   {
+    "config": "single",
+    "kernel_dimension": 0,
+    "nu_can_be_nonzero": false,
+    "rank": 21
+   },
+   {
+    "config": "pair",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": false,
+    "rank": 25
+   },
+   {
+    "config": "shell1",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 30
+   },
+   {
+    "config": "ball1",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 25
+   },
+   {
+    "config": "annulus_1_4",
+    "kernel_dimension": 2,
+    "nu_can_be_nonzero": true,
+    "rank": 39
+   },
+   {
+    "config": "hollow_annulus",
+    "kernel_dimension": 4,
+    "nu_can_be_nonzero": true,
+    "rank": 47
+   },
+   {
+    "config": "Lshape",
+    "kernel_dimension": 2,
+    "nu_can_be_nonzero": false,
+    "rank": 39
+   },
+   {
+    "config": "plane_square",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": false,
+    "rank": 25
+   },
+   {
+    "config": "chain",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": false,
+    "rank": 25
+   },
+   {
+    "config": "sparse_a",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 56
+   },
+   {
+    "config": "sparse_b",
+    "kernel_dimension": 5,
+    "nu_can_be_nonzero": false,
+    "rank": 56
+   },
+   {
+    "config": "offcentre_ball",
+    "kernel_dimension": 1,
+    "nu_can_be_nonzero": true,
+    "rank": 25
+   }
+  ]
+ },
+ "pins": [
+  {
+   "exists": true,
+   "matches": true,
+   "path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py",
+   "sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f"
+  },
+  {
+   "exists": true,
+   "matches": true,
+   "path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json",
+   "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae"
+  },
+  {
+   "exists": true,
+   "matches": true,
+   "path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+   "sha256": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b"
+  },
+  {
+   "exists": true,
+   "matches": true,
+   "path": "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+   "sha256": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c"
+  },
+  {
+   "exists": true,
+   "matches": true,
+   "path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+   "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32"
+  },
+  {
+   "exists": true,
+   "matches": true,
+   "path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py",
+   "sha256": "139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83"
+  },
+  {
+   "exists": true,
+   "matches": true,
+   "path": "outputs/window_freedom_cycle887_receipt_2026_07_28.json",
+   "sha256": "d1807305098ae995224118f93b301fc822ef0d6efc9e49c4a16e90d694592f86"
+  },
+  {
+   "exists": true,
+   "matches": true,
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+  }
+ ],
+ "primary_checked": {
+  "blocklisted_from_import": true,
+  "path": "scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py",
+  "receipt_sha256": "91c5631415d0231390fedbd0174f074de45cfa33b6dd4f706ed6fcdbf4dfd1d8",
+  "sha256": "46d46db10258731b986f3c639eedcf1ad3f968021f1efe30c88cc3e5e17b46c2"
+ },
+ "role": "independent check, specified to refute",
+ "self_sha256": "e7d6c611a3a4ca1c8c893eae0a1fd17215179d080a173ec985b4030552ff3a40",
+ "teeth": [
+  {
+   "detected": true,
+   "exit_if_live": 2,
+   "planted": "one byte flipped in the pinned 892 primary",
+   "tooth": "T1_TAMPERED_PIN"
+  },
+  {
+   "configs_with_IF1": 1,
+   "configs_without_IF1": 12,
+   "detected": true,
+   "exit_if_live": 1,
+   "planted": "IF1 removed from the joint system",
+   "tooth": "T2_DROPPED_REQUIREMENT"
+  },
+  {
+   "detected": true,
+   "exit_if_live": 1,
+   "expected": [
+    2,
+    1,
+    0,
+    3
+   ],
+   "observed": [
+    2,
+    1,
+    0,
+    3
+   ],
+   "planted": "rank probes of known rank 2, 1, 0, 3",
+   "tooth": "T3_HARDCODED_RANK"
+  },
+  {
+   "detected": true,
+   "exit_if_live": 1,
+   "note": "the checker reads the primary's surviving-config list only to AIM its attacks; every number it reports is recomputed",
+   "planted": "the primary's verdict string used as a branch",
+   "primary_verdict": "PARTIAL",
+   "tooth": "T4_LEAKED_VERDICT",
+   "verdict_strings_branched_on": []
+  },
+  {
+   "declared_points": 648,
+   "detected": true,
+   "exit_if_live": 1,
+   "planted": "a single grid point's value shifted by 1/7",
+   "tooth": "T5_SKIPPED_GRID_POINT"
+  },
+  {
+   "configs_satisfiable_under_the_plant": 12,
+   "configs_satisfiable_without_it": 1,
+   "detected": true,
+   "exit_if_live": 1,
+   "planted": "IF1's readout replaced by the seed mass",
+   "tooth": "T6_PLANTED_SATISFIABILITY_BLINDNESS"
+  },
+  {
+   "detected": true,
+   "exit_if_live": 1,
+   "monomial_rank": 5,
+   "planted": "rank recomputed in the monomial basis",
+   "primary_chebyshev_rank": 5,
+   "tooth": "T7_BASIS_ARTIFACT"
+  },
+  {
+   "detected": true,
+   "exit_if_live": 1,
+   "mismatched_configs": [],
+   "planted": "atoms rebuilt by signature bucketing and compared against this checker's iterative refinement",
+   "tooth": "T8_LATTICE_ALGORITHM_ARTIFACT"
+  },
+  {
+   "detected": true,
+   "exit_if_live": 1,
+   "mismatches": [],
+   "note": "this tooth exists because a rank routine whose divisions are not exact reports a SMALLER rank and silently manufactures kernel dimensions; probes of small known-rank matrices do not catch it",
+   "planted": "every real system matrix ranked twice, by this checker's fraction-free elimination and by an independent rational RREF route",
+   "systems_cross_ranked": 24,
+   "tooth": "T9_SOLVER_SELF_VALIDATION"
+  }
+ ],
+ "teeth_detected": 9,
+ "teeth_total": 9
+}

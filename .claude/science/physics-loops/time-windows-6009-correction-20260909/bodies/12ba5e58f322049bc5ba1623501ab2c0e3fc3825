@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle894_interface_independent_check_2026_07_28.py
+runner_sha256: 0cd8759a7efe5f25f7b471e6a722a6f0b608dbeb87c456af7a2089aa5d11510a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 10.836
+status: ok
+----- stdout -----
+==========================================================================
+CYCLE 894 -- INDEPENDENT CHECK (specified to refute)
+==========================================================================
+
+INDEPENDENCE
+  amplitude rebuilt by the path-length CORRELATOR route (Chebyshev M_d), cross-checked against direct squaring on all 648 cells: 0 disagreements
+  the five weightings re-implemented from their definitions, not by calling the vendored build_candidates
+  windows, containment filter and family re-derived from 885/887
+  firewall hits: []
+
+RESTRICTION GATE -- 892 (independent)
+  [ok ] holding_windows: recomputed=9 pinned=9
+  [ok ] cells: recomputed=648 pinned=648
+  [ok ] vanishing_cells: recomputed=42 pinned=42
+  [ok ] frozen_configs: recomputed=5 pinned=5
+  [ok ] theta_dependent_configs_885_grid: recomputed=7 pinned=7
+  [ok ] amplitude_inside_support: recomputed=8 pinned=8
+  [ok ] amplitude_outside_support: recomputed=844 pinned=844
+  [ok ] max_kernel_degree: recomputed=4 pinned=4
+RESTRICTION GATE -- 878 (independent)
+  [ok ] event_cardinality: recomputed=92260 pinned=92260
+  [ok ] worlds: recomputed=748 pinned=748
+  [ok ] atoms_singleton: recomputed=True pinned=True
+  [ok ] tag_ordinal_cells: recomputed=129 pinned=129
+  [ok ] admissible: recomputed=5 pinned=5
+  [ok ] discriminating_pairs: recomputed=10 pinned=10
+  [ok ] rebuilt_zero_counts: recomputed={'M1_COUNTING': 0, 'M2_PER_WORLD_UNIFORM': 0, 'M3_OCCUPATION_WEIGHTED': 73088, 'M4_FORMATION_LIFETIME': 73088, 'M5_FORMATION_MOMENT': 76184} pinned={'M1_COUNTING': 0, 'M2_PER_WORLD_UNIFORM': 0, 'M3_OCCUPATION_WEIGHTED': 73088, 'M4_FORMATION_LIFETIME': 73088, 'M5_FORMATION_MOMENT': 76184}
+  [ok ] surrogate_in_range: recomputed=True pinned=True
+
+RECOMPUTED VERDICT TABLE
+  weighting                     IF1    IF3    IF4    IF5    IF6
+  M1_COUNTING                  FAIL   FAIL   FAIL   FAIL   FAIL
+  M2_PER_WORLD_UNIFORM         FAIL   FAIL   FAIL   FAIL   FAIL
+  M3_OCCUPATION_WEIGHTED       FAIL   FAIL   FAIL   FAIL   FAIL
+  M4_FORMATION_LIFETIME        FAIL   FAIL   FAIL   FAIL   FAIL
+  M5_FORMATION_MOMENT          FAIL   FAIL   FAIL   FAIL   FAIL
+  P1_PLANTED_SURVIVOR          PASS   PASS   PASS   PASS   PASS   [PLANTED]
+  P2_PLANTED_NEAR_MISS         PASS   FAIL   PASS   PASS   FAIL   [PLANTED]
+  survivors []   outcome NO-GO
+
+THE BRIDGE HUNT -- two constructions the primary never built
+  BRIDGE_A_configuration_block: REFUTED
+    construction: partition E into one block per record configuration (the 68 monitor-phase world-orbits supply far more blocks than the 12 configurations need) and read the configuration off the event; each block measure may be an ARBITRARY non-negative rational set function
+    what it defeats: C894-T1 exactly: this bridge manufactures the record-configuration arity whose absence C894-T1 rests on, so C894-T1 no longer bites
+    succeeds on 5 configs ['shell1', 'ball1', 'annulus_1_4', 'hollow_annulus', 'offcentre_ball']
+    fails on    7 configs ['single', 'pair', 'Lshape', 'plane_square', 'chain', 'sparse_a', 'sparse_b']
+    why: the bridge is defeated on 7 of 12 configurations by C894-T2 and NOT by C894-T1: even with the configuration argument granted for free, each block measure is still theta-free, which forces every holding-window ratio to be theta-free, and it is not
+  BRIDGE_B_theta_as_observable: REFUTED
+    construction: enlarge the event space to E x Theta and weight the product, which is what 892's IF3 means by declaring the kernel coordinate an observable
+    what it defeats: the naive reading of IF3: it does give the weight a kernel argument
+    succeeds on 5 configs ['shell1', 'ball1', 'annulus_1_4', 'hollow_annulus', 'offcentre_ball']
+    fails on    7 configs ['single', 'pair', 'Lshape', 'plane_square', 'chain', 'sparse_a', 'sparse_b']
+    why: a PRODUCT measure contributes one common theta scale to every window, and on 7 of 12 configurations Z's theta-dependence is NOT one common scale -- it differs window by window.  Only a COUPLED measure on E x Theta would do, and no such object is among 878's five
+  REFINEMENT: The primary proves C894-T1 and C894-T2 and lists its residual properties P1 (configuration arity) and P2 (kernel arity) side by side, without ranking them: it never tests what happens if P1 alone is supplied.  This checker does.  BRIDGE-A grants the record-configuration arity for free -- defeating C894-T1 outright -- and the composition STILL fails, on exactly the seven configurations where C894-T2 bites.  BRIDGE-B grants a kernel argument in the only form 878's inventory can express it, a product measure, and fails on the same seven.  So the two properties are NOT co-equal: P1 is necessary but not sufficient, P2 is the irreducible obstruction, and the five configurations on which both bridges succeed are precisely the frozen walks, where Z is theta-constant and there is nothing left to obstruct.  The primary's verdict is right and its property sheet is complete; what this refines is the ORDERING of the residual -- a campaign that supplies P1 first buys nothing, and one that supplies P2 first buys the whole theta-moving two-thirds of the family.
+
+TEETH
+  [bit ] tampered vendored 878 pin: flip one byte of the vendored receipt and re-digest
+  [bit ] dropped weighting: drop M3 -> 20 cells, completeness gate expects 25
+  [bit ] hardcoded verdict cell: force M2/IF5 to PASS; independent recomputation says FAIL
+  [bit ] leaked selection: assert a selected weighting; the recomputed survivor set is []
+  [bit ] skipped requirement: drop IF6; the pinned 892 primary declares ['IF1', 'IF2', 'IF3', 'IF4', 'IF5', 'IF6'], so the owed set must be exactly ['IF1', 'IF3', 'IF4', 'IF5', 'IF6']
+  [bit ] planted-survivor blindness: the planted survivor must pass all five; under the conjunctive misreading of IF3 it would not, and that difference is what makes the blindness visible
+  [bit ] tampered Z value: perturb Z by 1/7; the independent squaring route disagrees
+  [bit ] weighting reimplementation drift: the five weightings re-implemented from their definitions must agree numerator-for-numerator with the vendored build_candidates
+  teeth 8/8
+
+AGAINST THE PRIMARY'S CLAIMS
+  all 25 cells agree:        True
+  outcome class agrees:      True (NO-GO vs NO-GO)
+  survivor set agrees:       True
+  planted controls agree:    True
+
+==========================================================================
+  CHECKER VERDICT: CORROBORATES WITH A REFINEMENT
+  machinery sound: True   elapsed 10.793s
+==========================================================================
+receipt: outputs/interface_independent_check_cycle894_receipt_2026_07_28.json

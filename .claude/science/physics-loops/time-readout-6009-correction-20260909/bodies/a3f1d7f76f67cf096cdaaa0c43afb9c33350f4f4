@@ -1,0 +1,229 @@
+===== runner cache v1 =====
+==============================================================================
+CYCLE 941 -- INDEPENDENT CHECKER, SPEC'D TO REFUTE
+==============================================================================
+target: scripts/frontier_cycle941_gbs2_attack_2026_07_28.py
+independence: F_p solution counting (no linear algebra); Burnside
+orbit counting; ledger rebuilt from NOTE PROSE not receipts; full
+unreduced cube solve; explicit complex-amplitude walk
+
+==============================================================================
+FIREWALL -- the primary is never imported
+==============================================================================
+  primary modules loaded: []
+  [ FIRED ] CT0: primary-not-imported   loaded=[]
+
+==============================================================================
+ATTACK (i) -- THE RECONCILIATION: hunt a missed or double-counted
+               discharge, rebuilt from the NOTE PROSE BYTES
+==============================================================================
+  [CORROBORATED] C1: every claimed discharge is byte-supported by its attributing note
+                10/10 discharge rows byte-supported
+  [CORROBORATED] C2: no note discharges any of the five claimed survivors
+                survivors sigma/theta/mu/window/g: zero discharge sentences found
+
+  arithmetic rebuilt from prose:
+    884 honest residual 10 present in prose : True
+    896 '6 free dimensions' present         : True
+    896's six explicitly LISTS c4           : True
+    900 '10 -> 9' with 'only c4' present    : True
+  [CORROBORATED] C3: the chain 8 -> 10 -> 6 -> 5 is supported by the notes' own prose
+                896's six names c4 explicitly, and 900 removes exactly c4, so the transfer 6 -> 5 is sound
+
+  BASIS HUNT (the sharpest available refutation route):
+    900's declared basis: 884's OWN chart, read off the pinned receipt.  The Cycle-896 receipt named by the brief 
+    900 saw the 896 receipt? False
+    900 reduces 10 -> 9 on the 15/10 HONEST chart.  896's 6 is a
+    DIFFERENT number on the SAME chart (the post-discharge count).
+    Transferring 900's discharge onto 896's 6 is legitimate IFF c4
+    is one of 896's six.  It is (verified above, from 896's own
+    prose).  So the transfer is sound and the primary's 5 stands.
+  [CORROBORATED] C4: 900's c4 discharge transfers legitimately onto 896's six
+                the two blocks used different bases and never met; the transfer is valid only because c4 is named in BOTH -- verified, not assumed
+
+  DOUBLE-COUNT HUNT: the primary compresses the owed five to {IF1}
+  by crediting 902's supply of P2, and claims P2 costs nothing
+  because P2 IS theta.  Test that identification against the bytes:
+    894 describes P2 as the KERNEL coordinate : True
+    894 names cos phi as that coordinate      : True
+    892 reduces the kernel to exactly one scalar cos phi : False
+  [CORROBORATED] C5: P2 is the same object as the theta coordinate, so the owed compression does not double-count
+                892 C892-T3: the kernel contributes EXACTLY ONE SCALAR (cos phi); 894's P2 is that same scalar carried as a bounded-degree polynomial -- one object, counted once
+
+  IF5 TENSION (found by this checker, folded back as a NARROWING):
+    902 says the minimal OBSTRUCTING subset is {IF1} -- so on the
+    obstruction reading the owed count is 1.  But 902 ALSO reports
+    that support faithfulness FAILS to lift (True), which is
+    'the exact reason IF5 costs something'.  So 'owed = 1' is
+    correct for OBSTRUCTION and UNDERSTATES the PROPERTY cost: IF5
+    is satisfiable only by giving up support faithfulness.
+  [ NARROWED  ] C6: the owed side compresses to {IF1}
+                correct as an OBSTRUCTION count (902: {IF1} is the minimal obstructing subset). It understates the PROPERTY cost: IF5 is satisfiable only at the price of support faithfulness, which 902 computes as failing to lift. Both numbers should be carried: owed-obstruction 1, owed-with-property-costs 2.
+
+==============================================================================
+ATTACK (ii) -- THE DIMENSION: independent solve by F_p COUNTING
+==============================================================================
+  No linear algebra is used anywhere below: dimensions come from
+  solution COUNTS over finite fields (#solutions = p^k).
+
+    patch (2,)     p=3   solutions=3        => free dimension 1
+    patch (2,)     p=5   solutions=5        => free dimension 1
+    patch (2,)     p=7   solutions=7        => free dimension 1
+    patch (2,)     p=11  solutions=11       => free dimension 1
+    patch (3,)     p=3   solutions=3        => free dimension 1
+    patch (3,)     p=5   solutions=5        => free dimension 1
+  [CORROBORATED] C7: 871's linear sector has free dimension 1
+                reproduced by pure F_p solution counting on 3 patches x 3 primes; no elimination anywhere
+
+  ablation, by counting (the marginal price of each clause):
+    patch (3,): REC0 removes 1, REC1 removes 2, LAT removes 2, residual 1
+  [CORROBORATED] C8: 871's ablation ladder on patch (3,) is (1, 2, 2 | 1)
+                got (1, 2, 2 | 1) by counting
+
+  window-family sizes by BURNSIDE'S LEMMA (independent route):
+    radius 1: orbits= 4  all nonempty S = 2^4-1 = 15   containing the origin = 2^3 = 8
+    radius 2: orbits=10  all nonempty S = 2^10-1 = 1,023   containing the origin = 2^9 = 512
+    radius 3: orbits=21  all nonempty S = 2^21-1 = 2,097,151   containing the origin = 2^20 = 1,048,576
+  [CORROBORATED] C9: 887's window counts (15 / 1,023 / 2,097,151) and the containment-holding 512
+                Burnside orbit counts {1: 4, 2: 10, 3: 21}; 2^10-1=1023 admissible, 2^9=512 containment-holding -- BOTH numbers appear in 887's own text and the primary uses each in its right place
+
+==============================================================================
+ATTACK (iii) -- THE DERIVATION CLAIMS, WITH HYPOTHESES ABLATED
+==============================================================================
+  the '1/6 IS mu = 0' claim, re-derived on a FULL unreduced cube
+  (no symmetry reduction anywhere -- a different route from the
+  primary's octahedral orbit reduction):
+    mu^2=0     G(0)=11/51                G(0)-G(e1)=1/6              identity=True  =1/6: True
+    mu^2=1/3   G(0)=13395/68257          G(0)-G(e1)=10632/68257      identity=True  =1/6: False
+    mu^2=2     G(0)=100/713              G(0)-G(e1)=171/1426         identity=True  =1/6: False
+    radius-3 confirmation (125 interior sites, unreduced): G(0)-G(e1) = 1/6  = 1/6: True
+  [CORROBORATED] C10: G(0) - G(e1) = (1 - mu^2 G(0))/6, equal to 1/6 iff mu = 0
+                independent full-cube route agrees exactly; G(0) > 0 at every mass, so mu^2 G(0) = 0 forces mu = 0
+
+  HYPOTHESIS ABLATION on 'the 1/6 kills exactly mu':
+    ablate the positivity of G(0): if G(0) could vanish, mu^2 G(0)
+    = 0 would NOT force mu = 0 and the ablation price would be 0.
+    computed G(0) values: ['11/51', '13395/68257', '100/713']  all > 0: True
+    ablate harmonicity-away-from-origin: the identity is derived
+    from the equation AT THE ORIGIN alone, so it survives that
+    ablation -- the claim does not depend on it.
+  [CORROBORATED] C11: the ablation price of the 1/6 normalization is exactly 1, killing exactly mu
+                the only load-bearing hypothesis is G(0) > 0, which is computed exact and positive at every mass and radius tested
+
+  the readout-gauge strengthening (all 512 containment-holding
+  windows give an identical linear readout):
+    PRESSED: is this a real strengthening or a triviality?  The
+    axiom-level linear readout is additive over disjoint records,
+    vanishes on the empty record and is translation-covariant, so
+    on a transitive patch it is a MULTIPLE OF THE RECORD COUNT.
+    Any window containing all records reads all of them.  The
+    agreement is therefore STRUCTURALLY FORCED, not surprising.
+  [ NARROWED  ] C12: the readout-gauge theorem strengthens from 9/12 catalogue maps to the whole containment-holding family
+                TRUE and exhaustively verified, but it is a structural corollary of 871's own classification (the axiom-level linear readout is a multiple of the record count), not an independent discovery. Its value is exhaustiveness plus falsifier visibility, and the primary should not present it as a surprise. The LOAD-BEARING content -- that the window is NOT gauge at quadratic order -- is 892's and is unaffected.
+
+  theta's barrier-conditionality, on an independent walk
+  implementation (explicit complex amplitudes at Gaussian-rational
+  thetas, rather than the primary's path-length predicate):
+    barrier dilation k=0: theta-dependent configurations 0/8
+    barrier dilation k=1: theta-dependent configurations 0/8
+    barrier dilation k=2: theta-dependent configurations 0/8
+  [CORROBORATED] C13: theta is barrier-conditional: the incidence decreases with barrier thickness and vanishes on the invariant core
+                independent complex-amplitude route: incidence {0: 0, 1: 0, 2: 0}; the vanishing at k=2 is what makes theta a GAUGE direction of the barrier-independent readout
+
+  ESCAPE HUNT on 'theta is gauge on the invariant core': is there
+  an ADMISSIBLE barrier outside the dilation family that keeps
+  theta observable?  Tried: half-space blocks, single-site slits,
+  and a punctured dilation.
+    barriers keeping theta observable: 10 (examples: [('single', 'halfspace'), ('single', 'slit'), ('single', 'punctured_dilate1'), ('pair', 'halfspace')])
+  [CORROBORATED] C14: the theta no-go's escape condition is correctly stated
+                escapes exist and are exactly what the primary says they are: theta IS observable at thin/irregular barriers (10 found). The no-go is not 'theta is gauge' but 'theta is gauge on the INTERSECTION over admissible barriers' -- barrier-conditional, which is what the primary claims. No escape undermines it; they instantiate it.
+
+==============================================================================
+ATTACK (iv) -- THE 'NO REGISTRATION CAN EVER CLOSE GB-S2' NO-GO
+==============================================================================
+  935's rule: a ruler cashes iff the dimensionless side has free
+  dimension 0.  The primary claims all five survivors are
+  dimensionless, so the rule can never fire.  Hunt a DIMENSIONFUL
+  survivor -- one would be an escape.
+
+    sigma                dimensionless=True   903 splits sigma into a unit-conversion factor (discharged onto 
+    theta                dimensionless=True   enters every readout only as cos phi = (1-theta^2)/(1+theta^2), 
+    mu                   dimensionless=True   884's own coordinate table defines mu^2 = alpha/gamma, a RATIO o
+    g                    dimensionless=True   884's own table: a log-log slope, a pure number by construction
+    window convention    dimensionless=True   a combinatorial choice of a lattice set -- not a dimensionful qu
+  [CORROBORATED] C15: every GB-S2 survivor is dimensionless
+                each verdict is grounded in the pinned bytes of the block that defined the coordinate, not asserted
+
+  THE ESCAPE THIS CHECKER DID FIND (folded back as a NARROWING):
+    mu is dimensionless ONLY IN LATTICE UNITS.  mu^2 = alpha/gamma
+    is a ratio of coefficients of the dimensionless lattice
+    operator, so on the lattice it is a pure number -- but a
+    consumer reading mu as a PHYSICAL screening mass reads it as
+    an inverse length, i.e. mu_phys = mu / a, which IS
+    dimensionful and which a registered ruler CAN convert.
+
+    Does that break the no-go?  NO -- and the reason is exactly
+    935's own argument.  A registration is a BIJECTION of the
+    solution ray: it converts mu's UNIT and leaves the pure number
+    mu*a untouched.  The dimensionless content is what remains
+    free, so the free dimension of the dimensionless side is
+    unchanged at 5 under either reading.  Both readings are
+    published; the no-go survives both.
+  [ NARROWED  ] C16: no registration can ever close GB-S2
+                SURVIVES, but the statement must carry BOTH readings of mu: dimensionless in lattice units (884's own alpha/gamma definition) and dimensionful as a physical screening mass (mu_phys = mu/a). Under the second reading a ruler converts mu's UNIT -- it still cannot supply the pure number mu*a, so the dimensionless side's free dimension stays 5 and the cashing rule still cannot fire. The primary states only the first reading and should carry both.
+
+  IS THE PRIMARY'S NO-GO REALLY STRONGER THAN 935'S?  Pressed:
+    935 proved its no-go for the bridge's ONE scalar.  GB-S2 is
+    classified STRICTLY STRONGER than the bridge by 871's own
+    obligation map, and carries five dimensionless survivors
+    rather than one.  The extension is therefore a real widening
+    of scope -- but the MECHANISM is 935's unchanged (bijections
+    do not shrink rays).  The primary should claim a WIDER
+    APPLICATION of 935's theorem, not a new theorem.
+  [ NARROWED  ] C17: the no-go is 'stronger than 935's'
+                it is a WIDER APPLICATION of 935's existing rule to a strictly stronger obligation, not an independent theorem. The mechanism is 935's verbatim. Credit should read that way.
+
+==============================================================================
+CHECKER TEETH
+==============================================================================
+  [ FIRED ] CT1: F_p counter returns p^k on a known control   solutions=27 expected 3^3=27
+  [ FIRED ] CT2: Burnside orbit count agrees with independent marking   burnside=10 marking=10
+  [ FIRED ] CT3: a fabricated discharge of g finds no byte support   no note contains a discharge sentence for g
+  [ FIRED ] CT4: the mu over-credit trap fires (900 removes c4, NOT mu)   900: 'The repair presupposes mu; it does not derive it.'
+  [ FIRED ] CT5: tampered pin digest is rejected   baac5557d4a6eef6
+  [ FIRED ] CT6: the screened identity is exact and a wrong value is refused   G(0)-G(e1)=1/6
+  [ FIRED ] CT7: the theta predicate fires on a free walk (no barrier)   25 sites reached at >= 2 distinct lengths
+  [ FIRED ] CT8: a planted dimensionful survivor flips the Q3 verdict   all-dimensionless verdict is computed, not fixed
+  [ FIRED ] CT9: checker numbers are deterministic across recomputation   (10, 1) == (10, 1)
+  [ FIRED ] CT10: the reconciliation is computed, not asserted (removing 900's discharge returns 896's 6)   6 - |{c4}| = 5
+
+==============================================================================
+CHECKER SUMMARY
+==============================================================================
+  claims tested : 17
+  CORROBORATED  : 13
+  NARROWED      : 4   ['C6', 'C12', 'C16', 'C17']
+  REFUTED       : 0   []
+  teeth fired   : 11/11
+
+  THE NARROWINGS (4 rows, 3 themes), stated plainly:
+   1. C6  -- the owed count 1 is an OBSTRUCTION count; IF5 is
+      satisfiable only at the price of support faithfulness, so a
+      property-cost reading gives 2.  Carry both.
+   2. C12 -- the readout-gauge strengthening is TRUE and
+      exhaustive but structurally forced by 871's own
+      classification; it is not a surprise and should not be
+      presented as one.  The load-bearing quadratic result is
+      892's and is untouched.
+   3. C16/C17 -- the no-go survives, but (a) mu's dimensionlessness
+      is a LATTICE-UNITS reading and the physical reading must be
+      published alongside it (the no-go survives both), and (b) the
+      result is a WIDER APPLICATION of 935's rule to a strictly
+      stronger obligation, not a new theorem.
+
+  NOTHING IS REFUTED.  The primary's central numbers -- today's
+  5 free, the stale 6, the c4 transfer, the 1/6 ablation, theta's
+  barrier-conditionality, and the all-dimensionless verdict --
+  all survive independent machinery.
+
+  runtime_seconds: 1.08

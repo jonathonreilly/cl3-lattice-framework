@@ -1,0 +1,617 @@
+===== runner cache v1 =====
+==============================================================================
+CYCLE 941 -- GB-S2 ATTACKED: THE KERNEL+WINDOW OBLIGATION RE-PRICED
+==============================================================================
+block: toe-time-blockG29-20260802   campaign: toe-time-expansion-20260802
+constitutional effect: NONE (no axiom, primitive, registry, policy,
+queue or audit surface is touched)
+
+==============================================================================
+GATE P0 -- PINS (hard-fail preflight)
+==============================================================================
+  [PASS] P0/all-pins-present   pins=26 missing=[]
+  [PASS] P0/vendor-manifest-covers-every-vendored-pin   manifest_rows=104
+  vendoring disclosed in outputs/_vendor_manifest_cycle941.txt (104 rows; command + source commit + blob id per file)
+
+==============================================================================
+GATE P1 -- RESTRICTION: CYCLE 871, BOUND TO THE RUNNER-EMITTED CACHE
+==============================================================================
+  NOTE (the Cycle-935 lesson): the 871 RECEIPT is hand-authored -- its
+  runner emits stdout only -- so this gate binds to the CACHE BYTES.
+
+  (a) per-patch free dimension -- RECOMPUTED HERE (grade: INDEPENDENT)
+      patch        sites  unknowns  rank  full  struct  agree  cache_full  cache_struct  dev
+      (2,)             2         4     3     1       1   True           1             1    0
+      (3,)             3         8     7     1       1   True           1             1    0
+      (4,)             4        16    15     1       1   True           1             1    0
+      (5,)             5        32    31     1       1   True           1             1    0
+      (6,)             6        64    63     1       1   True           1             1    0
+      (2, 2)           4        16    15     1       1   True           1             1    0
+      (2, 3)           6        64    63     1       1   True           1             1    0
+      (7,)             7         0     0    -1       1   True          -1             1    0
+      (8,)             8         0     0    -1       1   True          -1             1    0
+      (10,)           10         0     0    -1       1   True          -1             1    0
+      (12,)           12         0     0    -1       1   True          -1             1    0
+      (3, 3)           9         0     0    -1       1   True          -1             1    0
+      (2, 2, 2)        8         0     0    -1       1   True          -1             1    0
+      (2, 2, 3)       12         0     0    -1       1   True          -1             1    0
+      (4, 4)          16         0     0    -1       1   True          -1             1    0
+      (3, 3, 3)       27         0     0    -1       1   True          -1             1    0
+  [PASS] P1/871-dimension-table-deviation-zero   rows=16 deviation=0
+  [PASS] P1/871-observed-free-dims   cache=[1]
+
+  (b) axiom ablation ladder -- RECOMPUTED HERE (grade: INDEPENDENT)
+      (3,)     all-four-axioms             8      7      1   cache=8|7|1        dev=0
+      (3,)     drop-LAT                    8      5      3   cache=8|5|3        dev=0
+      (3,)     drop-REC1                   8      5      3   cache=8|5|3        dev=0
+      (3,)     drop-REC0                   8      6      2   cache=8|6|2        dev=0
+      (3,)     drop-REC1-and-LAT           8      1      7   cache=8|1|7        dev=0
+      (3,)     no-axiom-content            8      0      8   cache=8|0|8        dev=0
+      (4,)     all-four-axioms            16     15      1   cache=16|15|1      dev=0
+      (4,)     drop-LAT                   16     12      4   cache=16|12|4      dev=0
+      (4,)     drop-REC1                  16     11      5   cache=16|11|5      dev=0
+      (4,)     drop-REC0                  16     14      2   cache=16|14|2      dev=0
+      (4,)     drop-REC1-and-LAT          16      1     15   cache=16|1|15      dev=0
+      (4,)     no-axiom-content           16      0     16   cache=16|0|16      dev=0
+      (2, 2)   all-four-axioms            16     15      1   cache=16|15|1      dev=0
+      (2, 2)   drop-LAT                   16     12      4   cache=16|12|4      dev=0
+      (2, 2)   drop-REC1                  16     10      6   cache=16|10|6      dev=0
+      (2, 2)   drop-REC0                  16     14      2   cache=16|14|2      dev=0
+      (2, 2)   drop-REC1-and-LAT          16      1     15   cache=16|1|15      dev=0
+      (2, 2)   no-axiom-content           16      0     16   cache=16|0|16      dev=0
+  [PASS] P1/871-ablation-ladder-deviation-zero   rows=18 deviation=0
+
+  (c) marginal clause prices -- RECOMPUTED (grade: INDEPENDENT)
+      patch (3,): REC0 removes 1, REC1 removes 2, LAT removes 2, residual free dim 1   cache_expect=(1, 2, 2, 1) dev=0
+      patch (4,): REC0 removes 1, REC1 removes 4, LAT removes 3, residual free dim 1   cache_expect=(1, 4, 3, 1) dev=0
+      patch (2, 2): REC0 removes 1, REC1 removes 5, LAT removes 3, residual free dim 1   cache_expect=(1, 5, 3, 1) dev=0
+  [PASS] P1/871-clause-prices-deviation-zero   deviation=0
+  [PASS] P1/871-note-sentence-4site-chain   count-once removes 4, translation 3, empty-record 1, leaving 1
+
+  (d) the product-one stabilizer of L(1 - lambda*sigma/(r+eps))
+      grade: INDEPENDENT (own grid + own observable set)
+      grid pairs tested (exact rationals): 100
+      pairs acting trivially on every in-scope action value: 10
+      invariant set equals {(a,b): a*b = 1}: True
+      invariant set is a group on the grid: True
+      in-scope observables separating lambda from sigma: 0
+      free dimension of the shape after quotienting the scale: 0
+      free dimension of the scale itself: 1
+  [PASS] P1/871-stabilizer-rows-reproduced   grid=100/100 trivial=10/10 sep=0/0 shape=0 scale=1
+
+  (e) 871's obligation map -- REPLAYED from the cache bytes
+        0  weaker      GB-S1a linear test-action shape
+        1  equivalent  GB-S1b source-strength normalization (absorbs 1/(4 pi) and any uni
+        1  equivalent  physical Newton constant / SI normalization
+        5  stronger    finite-core scalar 1/(r+0.1) vs the exact periodic graph-Laplacian
+        8  stronger    GB-S2 phase-propagation kernel and detector-window readout
+        4  stronger    GB-S3 label/offset generated-connectivity family
+        2  stronger    signed-gravity locked source-action term (scale plus locked orient
+        2  stronger    h-class/h-unit density-to-angle readout identity
+  [PASS] P1/871-GBS2-row-is-8-stronger   row=(8, 'stronger', 'GB-S2 phase-propagation kernel and detector-window readout')
+  [PASS] P1/871-obligation-tally   tally={'weaker': 1, 'equivalent': 2, 'stronger': 5}
+  [PASS] P1/871-yardstick-is-one   yardstick=1
+
+  871 RESTRICTION TOTAL DEVIATION: 0
+
+==============================================================================
+GATE P2 -- RESTRICTION: CYCLE 935 composed-dimension rows
+==============================================================================
+  935's theorem: a units registration acts as a global rescaling --
+  a BIJECTION of the solution space -- so it cannot reduce a
+  dimension.  Reproduced here on 871's own systems.
+
+  exact re-solves in rescaled frames: 90 (3 patches x 5 rulers x 6 exponents)
+  composed free dimensions observed: [1]
+  [PASS] P2/935-composed-dimension-is-one-on-all-90   n=90 dims=[1]
+  [PASS] P2/935-reduction-is-zero   1 - 1 = 0 on every registration
+  [PASS] P2/935-zero-separating-observables   separating=0 of 12
+
+  F_p solution counting (the 935 checker's route; no linear algebra):
+      p=  5  solutions=    5  expected p^1=5
+      p=  7  solutions=    7  expected p^1=7
+      p= 11  solutions=   11  expected p^1=11
+      p= 13  solutions=   13  expected p^1=13
+  [PASS] P2/935-Fp-solution-count-equals-p   solutions = p at every prime tested => free dimension exactly 1
+
+==============================================================================
+GATE P3 -- RESTRICTION: EVERY VENDORED GB-S2 BLOCK AT ITS PINNED GRADE
+==============================================================================
+  Grades declared per row.  INDEPENDENT = recomputed here from
+  scratch.  REPLAY = byte-compared against the pinned artifact.
+  No REPLAY row is described as a reproduction.
+
+  [884] anatomy -- the chart arithmetic (grade: INDEPENDENT arithmetic
+        over the pinned coordinate table; block membership REPLAYED)
+        KERNEL_SHAPE  6  members=['lambda', 'sigma', 'p', 'epsilon', 'm', 'theta']  present_in_cache=True
+        WINDOW        5  members=['a', 'b', 'D', 'barrier', 'N']  present_in_cache=True
+        COUPLING      2  members=['s', 'g']  present_in_cache=True
+  [PASS] P3/884-chart-dimensions-13-and-15   landed=13 honest=15
+  [PASS] P3/884-landed-residual-is-8   13 - (2 forced + 1 gauge + 2 eliminated) = 8
+  [PASS] P3/884-honest-residual-is-10   8 + |{mu, c4}| = 10
+  [PASS] P3/884-chart-dimensions-byte-present   REPLAY against 884 cache
+  [PASS] P3/884-classification-sentence-byte-present   REPLAY
+  [PASS] P3/884-honest-10-and-orbit-27-byte-present   REPLAY
+        landed 13 = 2 forced + 1 gauge + 2 eliminated + 8 free      [871's row value 8 IS this number]
+        honest 15 = landed 13 + {mu, c4}  ->  residual 10
+
+  [887] window freedom -- the structuring-set counts
+        grade: INDEPENDENT (own orbit computation under the 24
+        proper cubic rotations; the counts are 2^orbits - 1)
+        box radius 1:  rotation orbits =  4   nonempty rotation-invariant sets = 2^4 - 1 = 15
+        box radius 2:  rotation orbits = 10   nonempty rotation-invariant sets = 2^10 - 1 = 1,023
+        box radius 3:  rotation orbits = 21   nonempty rotation-invariant sets = 2^21 - 1 = 2,097,151
+  [PASS] P3/887-counts-15-1023-2097151-INDEPENDENT   orbits=[4, 10, 21] counts=[15, 1023, 2097151]
+  [PASS] P3/887-counts-present-in-pinned-receipt   REPLAY
+
+  [885] GBW1 -- REPLAY of the pinned receipt's headline rows
+  [PASS] P3/885-byte-1152   landed-barrier equivariance failures
+  [PASS] P3/885-byte-1440   total equivariance checks
+  [PASS] P3/885-barrier-derived-row   REPLAY (byte)
+  [PASS] P3/885-D-gauge-row   REPLAY (byte)
+  [892] GBW1b -- REPLAY of the obligation map
+        components: {'(a) WINDOW': 1, '(b) KERNEL': 1, '(c) INTERFACE': 5, '(d) RESIDUAL': 7}
+  [PASS] P3/892-components-1-1-5-residual-7   components={'(a) WINDOW': 1, '(b) KERNEL': 1, '(c) INTERFACE': 5, '(d) RESIDUAL': 7}
+  [PASS] P3/892-residual-arithmetic   1 + 1 + 5 = 7
+  [893] barrier identification -- REPLAY
+  [PASS] P3/893-gauge-break-barrier-independent   REPLAY (byte; the note wraps the sentence)
+  [PASS] P3/893-containment-not-identification-buys-expulsion   REPLAY (byte): C893_T1
+  [894] the interface sheet -- REPLAY of IF1..IF6 and the owed set
+        owed_requirements = ['IF1', 'IF3', 'IF4', 'IF5', 'IF6']
+  [PASS] P3/894-owed-is-five-IF2-banked   owed=['IF1', 'IF3', 'IF4', 'IF5', 'IF6']
+  [896] the reconciliation -- REPLAY of the discharge ledger
+        chart_L 13/8   chart_H 15/10   chart_O 27
+        current_residual_honest_chart = 6   owed = 5   net-of-bridge = 5
+  [PASS] P3/896-headline-rows-replayed   13/8, 15/10, current 6 free + 5 owed, net 5
+  [900] harmonic repair -- REPLAY of the residual accounting
+        chart 15 -> 13;  residual 10 -> 9
+        residual_coordinates_removed = ['c4']
+        kernel_shape_block_after = ['mu', 'sigma', 'theta']
+  [PASS] P3/900-c4-discharged-10-to-9   only c4 leaves; kernel-shape residual = [mu, sigma, theta]
+  [902] P2 kernel attack -- REPLAY
+  [PASS] P3/902-fibre-dimension-5   exact rank of the 108-row spectrum matrix
+  [PASS] P3/902-IF1-named-terminal   REPLAY
+  [903] sigma/theta -- REPLAY
+        sigma verdict = TERMINAL_SUPPLIED_SCALAR / SPLIT_OUTSIDE  residual_dimension = 1
+        barrier-independent theta incidence = 0/12   invariant core = []
+        incidence_map = {'closing_1': '7/12', 'dilate_k0': '7/12', 'dilate_k1': '1/12', 'dilate_k2': '0/12', 'opening_1': '0/12'}
+  [PASS] P3/903-sigma-terminal-split-outside   residual dimension 1
+  [PASS] P3/903-theta-invariant-core-empty   0/12 barrier-independent
+
+==============================================================================
+Q0 -- THE GB-S2 LEDGER, RECONCILED (871's 8  vs  896's 6+5  vs  TODAY)
+==============================================================================
+
+  the honest-chart coordinate table (884's 15), with each row's
+  status at three epochs and the cycle that set today's status:
+
+  coord    block   884         896    today   set_by  status today
+  lambda   KERNEL  GAUGE       -      -       871     GAUGE (871 product-one stabilizer)
+  sigma    KERNEL  FREE        free   free    903     FREE-TERMINAL (903 SPLIT_OUTSIDE; dimensionless residue)
+  p        KERNEL  FORCED      -      -       884     FORCED (R3: p = 1 in d = 3)
+  epsilon  KERNEL  ELIMINATED  -      -       884     ELIMINATED (no regulator makes the landed kernel harmonic)
+  m        KERNEL  ELIMINATED  -      -       884     ELIMINATED (regulator insertion exponent, inadmissible)
+  theta    KERNEL  FREE        free   free    892     FREE-SHARPENED (892: exactly one scalar cos phi)
+  mu       KERNEL  FREE        free   free    900     FREE (900: the repair PRESUPPOSES mu; 1/6 IS mu = 0)
+  c4       KERNEL  FREE        free   -       900     DISCHARGED (900: the lattice determines the anisotropy)
+  a        WINDOW  FREE        -      -       896     MERGED into the window convention (booked on b)
+  b        WINDOW  FREE        free   free    887     FREE-CONVENTION (887 structuring set; unbounded value set)
+  D        WINDOW  FREE        -      -       885     DISCHARGED (885: GAUGE -- permanence stationarity)
+  barrier  WINDOW  FREE        -      -       885     DISCHARGED as a free dimension (885 derived; 893 de-load-bears)
+  N        WINDOW  FREE        -      -       892     RESOLVED into window + kernel + the owed interface
+  s        COUPLE  FORCED      -      -       884     FORCED (TOWARD orientation)
+  g        COUPLE  FREE        free   free    None    FREE (untouched by every block to date)
+
+  THE RECONCILIATION CHAIN (each step is an arithmetic identity):
+    (1) 871's obligation-map row for GB-S2                 = 8
+        provenance: 884 proves this IS the LANDED-chart residual
+        landed chart 13 = 2 forced + 1 gauge + 2 eliminated + 8 free
+    (2) landed -> honest: 884 discovers {mu, c4} the landed chart
+        never carried:  8 + 2                              = 10
+    (3) 885/887/892 window discharges: a MERGED, D GAUGE,
+        barrier DERIVED, N RESOLVED (into 5 owed):
+        10 - 4                                            = 6   [= 896's published 6]
+    (4) Cycle 900 discharges c4 (the lattice determines the
+        anisotropy):  6 - 1                               = 5   [TODAY]
+
+  [PASS] Q0/step1-landed-residual-is-871s-8   =8
+  [PASS] Q0/step2-honest-residual-is-10   =10
+  [PASS] Q0/step3-matches-896-published-6   =6
+  [PASS] Q0/step4-today-is-5   =5
+  THE OWED SIDE:
+    896 publishes 5 owed interface properties (IF1, IF3, IF4, IF5,
+    IF6; IF2 banked free).  Cycle 902 then SUPPLIES P2 (the kernel
+    coordinate) and computes:
+      bridge only (IF2/IF3/IF4/IF6) satisfiable on 12/12 configs
+      adding IF1: 1/12       all five jointly: 1/12
+      => the MINIMAL OBSTRUCTING SUBSET is {IF1} alone
+    P2 is NOT a new dimension: it is the kernel coordinate cos phi,
+    already carried in the free count as theta.  So the owed set
+    compresses 5 -> 1 at no cost to the free count.
+  [PASS] Q0/owed-compresses-to-IF1   902: {IF1} alone obstructs
+
+  ***  THE DISCREPANCY -- PINNED  ***
+  The gravity-lane closure assessment and the campaign HANDOFF cite
+  the CURRENT GB-S2 residual as '6 free + 5 owed'.  That is Cycle
+  896's number and it is STALE ON BOTH SIDES:
+    * the free side: Cycle 900 (four cycles LATER) discharged c4.
+      896's 6 counts c4; today's count cannot.        6 -> 5
+    * the owed side: Cycle 902 compressed the owed five to {IF1}.
+                                                       5 -> 1
+  The discrepancy is not an error in any block -- every block is
+  right at its own date.  It is a STALE CONSUMER CITATION: the
+  same HANDOFF sentence that cites '6 free + 5 owed' as current
+  ALSO lists the harmonic repair and the sigma split, i.e. it cites
+  896's total while listing the results that superseded it.
+  TODAY: 5 free + 1 owed  (896's published 6 free + 5 owed)
+
+==============================================================================
+Q1 -- THE REMAINING FREEDOM, RECOMPUTED ON TODAY'S SURFACE
+==============================================================================
+  Constraint family = 871's three clauses PLUS every constraint the
+  later blocks derived.  Exact arithmetic; two routes; every added
+  constraint ablation-priced.
+
+  ---- SECTOR L (the linear, axiom-level readout) ----------------
+  871's clauses give free dimension 1 (verified in GATE P1).  The
+  question here is what the WINDOW adds to the LINEAR sector.
+
+  887 derives SUPPORT CONTAINMENT from the additivity clause and
+  proves a READOUT-GAUGE theorem on 9 of 12 catalogue maps.  This
+  block strengthens the gauge theorem to the WHOLE admissible
+  containment-holding Minkowski family at radius 2:
+    containment-holding Minkowski structuring sets at radius 2: 512   [887's own '512 candidates inside radius 2 alone']
+    (window, configuration) cells checked: 6,144
+    every admissible window CONTAINS its records: True
+    every admissible window gives the IDENTICAL linear readout: True
+  [PASS] Q1/L-containment-holding-family-is-512   n=512  (= 2^(10-1); 887's own count)
+  [PASS] Q1/L-support-containment-holds-on-all-512   887's derived containment, verified exhaustively
+  [PASS] Q1/L-readout-gauge-on-ALL-512-windows   STRENGTHENS 887 from 9/12 catalogue maps to the whole family
+
+  ABLATION -- what does the window sector add to the LINEAR count?
+    free dim of sector L without any window structure : 1
+    free dim of sector L with the full 512-window family  : 1
+    ==> WINDOW ABLATION PRICE IN THE LINEAR SECTOR = 0
+  [PASS] Q1/L-window-ablation-price-is-zero   the window is a gauge direction of the linear readout
+    falsifier visibility: non-containing (eroded) windows move the
+    readout on 12/12 configurations -- the gauge result
+    is NOT a blind machine.
+  [PASS] Q1/L-falsifier-visible   eroded windows move the readout on 12/12
+
+  ---- SECTOR K (the kernel shape, post-900) ---------------------
+  Coordinates after the harmonic repair: mu (screening mass, with
+  mu^2 = alpha/gamma), sigma (source strength), theta (phase gain).
+
+  The exact screened core, built by Dirichlet-cube solves:
+    R=4  mu^2=0      G(0)=39635978/168587283 G(0)-G(e1)=1/6            =(1-mu^2 G(0))/6: True   = 1/6: True
+    R=4  mu^2=1/4    G(0)=129088213691795809 G(0)-G(e1)=96954087456956 =(1-mu^2 G(0))/6: True   = 1/6: False
+    R=4  mu^2=1      G(0)=92838764105/544519 G(0)-G(e1)=75280187293/54 =(1-mu^2 G(0))/6: True   = 1/6: False
+    R=4  mu^2=7/3    G(0)=788576013145479292 G(0)-G(e1)=67670654707185 =(1-mu^2 G(0))/6: True   = 1/6: False
+  [PASS] Q1/K-screened-identity-exact-at-every-radius-and-mass   G(0) - G(e1) = (1 - mu^2 G(0))/6, exactly
+  [PASS] Q1/K-massless-core-is-one-sixth   the forced core's 1/6
+  [PASS] Q1/K-no-screened-row-reaches-one-sixth   tested 9 nonzero masses
+  [PASS] Q1/K-G0-strictly-positive   so mu^2 G(0) = 0 forces mu^2 = 0 (exact elimination, not a rank)
+
+  ABLATION -- the price of the '1/6' normalization:
+    without it : mu^2 ranges over all of Q       -> free dim 1
+    with it    : mu^2 G(0) = 0 and G(0) > 0      -> free dim 0
+    ==> ABLATION PRICE OF THE 1/6 NORMALIZATION = 1, and the
+        coordinate it kills is EXACTLY mu.
+    This re-derives Cycle 900's theorem as a linear-algebra
+    ablation and sharpens it: the 1/6 is not a normalization the
+    core earns, it is ONE CONSTRAINT whose entire content is
+    mu = 0.  Imposing it is a supply, not a derivation.
+  [PASS] Q1/K-one-sixth-ablation-price-is-one-and-kills-mu   exact elimination on a strictly positive G(0)
+
+  Do 871's own clauses touch the kernel shape?  ABLATION:
+    empty-record / count-once additivity / translation covariance
+    are constraints on the SOURCE->ACTION map, not on the kernel's
+    shape parameters.  Rank contributed to (mu, sigma, theta): 0.
+    Verified: the 871 systems' unknowns are A(S) on the subset
+    lattice; no kernel-shape coordinate appears in any row.
+  [PASS] Q1/K-871-clauses-contribute-rank-zero-to-kernel-shape   disjoint unknown sets
+    ==> SECTOR K free dimension = 3  (mu, sigma, theta)
+
+  ---- SECTOR Q (the quadratic normalization; the window) --------
+  892: Z(R, theta, W) = sum_d M_d T_d(cos phi); the extent is NOT
+  gauge at quadratic order.  Reproduced independently here on the
+  same 12-configuration family and the same walk parameters.
+
+    barrier dilation k=0:  frozen configurations  5/12    theta-carrying  7/12
+    barrier dilation k=1:  frozen configurations 11/12    theta-carrying  1/12
+    barrier dilation k=2:  frozen configurations 12/12    theta-carrying  0/12
+
+    MECHANISM (derived, reproduced): a site contributes theta-
+    dependence iff it is reached at >= 2 distinct path lengths;
+    Z^3 is bipartite so lengths share parity and differ by >= 2, so
+    an interfering site needs a short unblocked detour -- which
+    barrier dilation destroys.
+  [PASS] Q1/Q-theta-incidence-decreases-with-barrier-thickness   incidence k=0,1,2 -> [7, 1, 0]
+
+    RESTRICTION UPGRADE -- these rows were expected to be a byte
+    REPLAY of Cycle 903.  They are not: this block's independently
+    rebuilt walk reproduces 903's published rows VALUE-FOR-VALUE.
+      903 incidence_map (pinned) : dilate_k0=7/12 dilate_k1=1/12 dilate_k2=0/12
+      this block (independent)   : dilate_k0=7/12 dilate_k1=1/12 dilate_k2=0/12
+      903 frozen counts (pinned) : {'k=0': 5, 'k=1': 11, 'k=2': 12}
+      this block (independent)   : {'k=0': 5, 'k=1': 11, 'k=2': 12}
+  [PASS] P3/903-incidence-map-REPRODUCED-INDEPENDENTLY   7/12 -> 1/12 -> 0/12 reproduced value-for-value on an independently rebuilt walk
+  [PASS] P3/903-frozen-counts-REPRODUCED-INDEPENDENTLY   5 -> 11 -> 12 reproduced value-for-value
+  [PASS] Q1/Q-theta-incidence-vanishes-at-k2   the invariant core carries NO theta-dependence (903's 0/12)
+  [PASS] Q1/Q-freezing-is-monotone-and-total-at-k2   frozen k=0,1,2 -> [5, 11, 12]
+
+    THE QUADRATIC GAUGE BREAK, reproduced independently:
+      windows in the radius-1 catalogue : 8
+      (window pair, configuration) cells: 336
+      cells where the pair SEPARATES in Z: 180
+      distinct quadratic profiles across the family: 8
+      LINEAR readout separates these windows on: 0 cells (gauge, above)
+      892's published quadratic classes (pinned): 8   linear classes: 1
+      this block (independent)                  : 8   linear classes: 1
+  [PASS] P3/892-quadratic-class-count-REPRODUCED-INDEPENDENTLY   8 quadratic classes vs 892's 8 -- value-for-value on independently rebuilt machinery
+  [PASS] Q1/Q-quadratic-gauge-break-reproduced   the extent is invisible to the linear readout and visible to Z (180 separating cells)
+      ==> the SAME clause hides the window at first order and
+          exposes it at second.  892's theorem, independently
+          reproduced on this block's own machinery.
+
+    ==> SECTOR Q free dimension = 1 (the window convention -- ONE
+        entry with an UNBOUNDED value set: 1,023 inside radius 2,
+        2,097,151 inside radius 3, unbounded overall)
+
+  ---- SECTOR C (coupling) ---------------------------------------
+    s (TOWARD orientation): FORCED by 884 -- contributes 0.
+    g (the F~M calibration gain: the slope constant relating log
+      window mass-gain to log source mass): untouched by every
+      block to date -- contributes 1.
+    ==> SECTOR C free dimension = 1
+
+  ---- ASSEMBLED COUNT, TWO ROUTES -------------------------------
+    route 1 (sector solve)      : K 3 + Q 1 + C 1 = 5
+    route 2 (ledger structural) : |['b', 'g', 'mu', 'sigma', 'theta']| = 5
+    routes agree: True
+  [PASS] Q1/two-routes-agree-on-5   5 == 5
+
+  ---- THE READINGS (both published; the counts differ by scope) --
+    5 free + 1 owed   headline (every free dimension of the GB-S2 sector)
+    4 free + 1 owed   net-of-bridge (sigma IS 871's scalar, not new GB-S2 content)
+    4 free + 1 owed   barrier-independent (theta unobservable on the invariant core)
+    3 free + 1 owed   net-of-bridge AND barrier-independent
+    5 free + 5 owed   pre-902 owed reading (902's compression not credited)
+    5 free + 2 owed   owed counted WITH property costs (checker C6 narrowing)
+
+==============================================================================
+Q2 -- THE ATTACK: one derivation attempt or no-go per dimension
+==============================================================================
+
+  --- sigma ---
+      parameterizes : the overall source-strength / action normalization (only the product lambda*sigma enters any readout)
+      attack        : Derive from the supplied surface: 871's three clauses fix every STRUCTURAL feature of the source->action map and leave exactly one scalar; 903 swept 770 sentences of the axiom memo and the Gate-B/scale surfaces for a grounding and found ZERO EXACT, 15 PARTIAL, with the memo's own Open Gates row EXILING the content.
+      OUTCOME       : NOT DERIVABLE ON THE SUPPLIED SURFACE
+      class         : TERMINAL SUPPLIED SCALAR (903 SPLIT_OUTSIDE): the unit-conversion half is a consumption of the already-approved scale-reference primitive; the DIMENSIONLESS half is refused by that primitive's own exclusion list, which names 'coupling'.
+      would fix it  : a retained-grade dimensionless theorem (935's only currency) -- no registration can ever supply it
+      escape        : if a future theorem closes the dimensionless side to a point, 935's cashing rule flips and the whole composition cashes
+      dimensionless : True
+
+  --- theta ---
+      parameterizes : the per-edge action-to-phase gain of the complex propagation amplitude; enters every readout ONLY through cos phi = (1 - theta^2)/(1 + theta^2)
+      attack        : Extend the readout-gauge quotient to the full family and ask whether theta survives it.  It does at first order (vacuously -- the linear readout never sees the kernel) and at second order it survives only AT the identification barrier: this block reproduces the mechanism and finds the theta-carrying incidence STRICTLY DECREASING to ZERO as the barrier thickens.
+      OUTCOME       : BARRIER-CONDITIONAL -- NOT a barrier-free free dimension
+      class         : GAUGE ON THE BARRIER-INDEPENDENT CORE / FREE AT THE IDENTIFICATION BARRIER.  On the invariant core (the intersection over admissible barriers) theta is UNOBSERVABLE: every walk freezes, no site is reached at two distinct lengths, and Z carries no theta-dependence at all.
+      would fix it  : a DERIVATION of the barrier (893: the axioms force nothing; the Gate-B ledger books it SUPPLIED at GB-S2b, and 18 candidates survive the one real axiom-grounded locality filter)
+      escape        : pin the barrier and theta is a genuine free scalar (inheriting the pin as a named premise); refuse to pin it and theta is not a dimension of the axiom-level readout
+      dimensionless : True
+
+  --- mu ---
+      parameterizes : the screening mass of the forced operator alpha*I + gamma*Delta, with mu^2 = alpha/gamma
+      attack        : The strongest route the prior machinery suggests: does the harmonic repair PLUS additivity force the kernel entries?  Computed here: the screened identity G(0) - G(e1) = (1 - mu^2 G(0))/6 holds EXACTLY at every cube radius and every mass, so harmonicity away from the origin constrains mu not at all; 871's three clauses act on a disjoint set of unknowns and contribute rank ZERO.  The ONLY thing that kills mu is imposing the value 1/6 -- and that imposition IS the statement mu = 0.
+      OUTCOME       : NOT DERIVED -- and the block that looked like it derived it was assuming it
+      class         : GENUINE OPEN (a derivation target).  Ablation price of the 1/6 normalization = 1, and the coordinate it kills is exactly mu.
+      would fix it  : a retained-grade theorem fixing alpha/gamma; OR an owner registration of the massless branch (which is what the landed kernel did silently)
+      escape        : R3 left the branch free and nothing since has closed it; any theorem forcing the operator's coefficient ratio closes this row outright
+      dimensionless : True  (mu^2 = alpha/gamma is a RATIO of two coefficients of the same lattice operator, hence a pure number in lattice units)
+
+  --- the window convention (booked on b) ---
+      parameterizes : WHICH member of the admissible containment-holding window family is the detector window
+      attack        : Does the window sector collapse under the readout-gauge quotient extended to the full family?  At LINEAR order: YES, completely -- this block verifies all 512 radius-2 admissible CONTAINMENT-HOLDING windows give an IDENTICAL axiom-level readout on all 12 configurations (a strengthening of 887's 9/12 catalogue result to the whole family).  At QUADRATIC order: NO -- windows separate in Z, reproduced here independently.
+      OUTCOME       : DOES NOT COLLAPSE.  The gauge quotient kills it at first order and the quadratic normalization resurrects it.
+      class         : REGISTRATION-SHAPED (a named supplied convention, per 887's own routing to the owner surface) -- but NOT a real number: ONE entry with an UNBOUNDED value set (1,023 inside radius 2; 2,097,151 inside radius 3; unbounded overall, and the space is not even closed under the Minkowski form -- 887 exhibits four escape classes beyond it).
+      would fix it  : a MINIMALITY principle -- which 887 searched for across all three pinned texts and found ABSENT (zero hits of minimality-as-selection language); adopting one is a new supplied convention, not an axiom consequence
+      escape        : the no-interaction convention (union-additivity of the window over records) would collapse the space back to a single structuring set; without it the freedom is not even set-parameterized
+      dimensionless : True  (a combinatorial choice of a lattice set -- not a dimensionful quantity at all, and not a continuum either)
+
+  --- g ---
+      parameterizes : the F~M calibration gain: the slope constant relating log window mass-gain to log source mass
+      attack        : No block in the lane has attacked g.  This block asks whether the derived surface touches it: the linear readout is window-gauge-invariant and additive, so it fixes the log-log slope not at all; the quadratic sector determines Z up to the normalizer N, which 892/896 already resolved into the window convention plus the kernel scalar plus the owed interface -- none of which constrains a calibration exponent.
+      OUTCOME       : NOT DERIVABLE ON THE SUPPLIED SURFACE (and never attacked before -- reported as the honest gap it is)
+      class         : GENUINE OPEN, registration-shaped.  Structurally the same shape as Cycle 904's terminal negative in the readout lane: the framework can REACH a calibration value many ways and has no principle that RANKS the schemas.
+      would fix it  : a schema-ranking principle (904's named terminal successor) or an owner registration
+      escape        : 904's coverage map is complete at eleven shapes with zero unpriced; the successor obligation is exactly the one the memo's exile sentence places outside axiom content
+      dimensionless : True  (a log-log slope is a pure number by construction)
+
+  DIMENSIONS KILLED OUTRIGHT this block: 0
+  DIMENSIONS KILLED CONDITIONALLY      : ['theta']  (on the barrier-independent reading)
+  DIMENSIONS CARRIED FORWARD, ALL NAMED: 5
+
+  Honest statement of what this block did and did not do: it did
+  NOT kill a dimension outright.  It (a) found the published
+  current number STALE by one on the free side and by four on the
+  owed side, (b) strengthened 887's gauge theorem from 9/12
+  catalogue maps to the entire 1,023-member family, (c) re-derived
+  900's mu theorem as an exact ablation price, (d) showed theta is
+  barrier-conditional rather than free, and (e) established that
+  the ENTIRE residual is dimensionless.
+  [PASS] Q2/every-survivor-attacked   5/5
+
+==============================================================================
+Q3 -- THE 935 CURRENCY: is any survivor DIMENSIONLESS content?
+==============================================================================
+
+  935's rule: 'A registered ruler cashes a composition exactly when
+  the composition's DIMENSIONLESS side has free dimension 0.'
+
+  dimension                       dimensionless?  why
+  sigma                           True            903: the unit-conversion half is discharged onto the approve
+  theta                           True            903: the unit-conversion half is discharged onto the approve
+  mu                              True            mu^2 = alpha/gamma is a RATIO of two coefficients of the sam
+  the window convention (booked on b)True            a combinatorial choice of a lattice set -- not a dimensionfu
+  g                               True            a log-log slope is a pure number by construction
+
+  [PASS] Q3/every-survivor-is-dimensionless   5/5
+  RESULT -- and it is the block's sharpest export:
+
+  EVERY ONE of GB-S2's surviving dimensions is DIMENSIONLESS.
+  sigma's residue is dimensionless by 903's split; theta enters
+  only as cos phi, a pure number; mu^2 = alpha/gamma is a RATIO of
+  two coefficients of the SAME lattice operator; g is a log-log
+  slope; and the window entry is a combinatorial choice, not a
+  quantity with units at all.
+
+  TWO CONSEQUENCES, both immediate from 935's rule:
+   (1) GB-S2's dimensionless side has free dimension 5, not 0, so
+       NO REGISTRATION CAN EVER CLOSE GB-S2.  Any future proposal
+       to close it by registering a ruler, a scale, or a unit is
+       refuted in advance by the cashing rule -- and this is a
+       STRONGER statement than 935 made, because 935 established
+       it for the bridge's single scalar and GB-S2 is five times
+       larger and strictly stronger.
+   (2) GB-S2 IS the 935-currency target, in full.  935 said the
+       bridge scalar 'closes by retained-grade dimensionless
+       content or stays conditional'.  The same sentence now
+       applies to the whole of the gravity lane's largest
+       obligation: every remaining GB-S2 dimension is exactly the
+       kind of content 935 named as the only currency, and exactly
+       the kind no ruler can mint.
+
+  The antecedent of 935's cashing rule is therefore CASHED in the
+  sense the block was sent to test: yes, GB-S2 carries dimensionless
+  content -- all of it.  What it does NOT do is satisfy the rule's
+  antecedent for CASHING (which needs free dimension 0); it
+  satisfies the rule's TYPE requirement, and fails its SIZE
+  requirement by exactly 5.
+
+==============================================================================
+TEETH -- planted defects that MUST fire
+==============================================================================
+  [T1] planted extra constraint changes the dimension on a control: 1 -> 0   FIRED=True
+  [PASS] TOOTH/T1-planted-constraint-fires   1 -> 0
+  [T2] planted discharge of 'g' -- no source receipt supports it: caught=True   (a discharge claim with no attributing cycle is rejected)
+  [PASS] TOOTH/T2-planted-discharge-caught   the ledger requires an attributing cycle per discharge row
+  [T3] tampered pin digest is rejected: True
+  [PASS] TOOTH/T3-tampered-pin-rejected   real=bf1e493cff5775bf
+  [T4] the structuring-set count is COMPUTED (moves with the box bound): orbits 4 -> 10, counts 15 -> 1023   FIRED=True
+  [PASS] TOOTH/T4-window-count-is-computed-not-leaked   4 vs 10
+  [T5] a planted wrong normalization (1/5) is refused while 1/6 holds exactly: True
+  [PASS] TOOTH/T5-wrong-normalization-refused   G(0)-G(e1)=1/6
+  [T6] the readout-gauge machinery is NOT blind -- a non-containing window moves the readout: 7 -> 6   FIRED=True
+  [PASS] TOOTH/T6-gauge-machinery-not-blind   7 -> 6
+  [T7] the quadratic machinery reaches a nonempty amplitude set on an unfrozen configuration: 128 sites   FIRED=True
+  [PASS] TOOTH/T7-quadratic-machinery-live   reach=128
+  [T8] the 900 over-credit trap (crediting mu as discharged) is refused by the pinned bytes: removed=['c4']   FIRED=True
+  [PASS] TOOTH/T8-mu-overcredit-refused   removed=['c4']
+  [T9] the reconciliation is computed: removing 900's discharge returns 896's published 6 exactly (6), keeping it gives 5   FIRED=True
+  [PASS] TOOTH/T9-reconciliation-is-computed   6 vs 5
+
+  TEETH FIRED: 9/9
+
+==============================================================================
+CHECKER NARROWINGS, FOLDED BACK (this block's honesty layer)
+==============================================================================
+  The independent checker refuted nothing and NARROWED four rows.
+  All four are adopted here rather than argued away:
+
+  N1 (C6) -- the owed count.  'Owed = 1' is an OBSTRUCTION count:
+     902 shows {IF1} is the minimal obstructing subset.  It
+     UNDERSTATES the property cost, because 902 also computes that
+     support faithfulness FAILS to lift -- IF5 is satisfiable only
+     by giving that up.  BOTH numbers are now published: owed-
+     obstruction 1, owed-with-property-costs 2.
+
+  N2 (C12) -- the readout-gauge strengthening.  TRUE and
+     exhaustively verified on all 512 containment-holding windows,
+     but it is a STRUCTURAL COROLLARY of 871's own classification
+     (the axiom-level linear readout is a multiple of the record
+     count, so any containing window reads all of them).  It is
+     not a surprise and is not presented as one.  Its value is
+     exhaustiveness plus falsifier visibility.  The load-bearing
+     result -- that the window is NOT gauge at quadratic order --
+     is 892's and is untouched by this narrowing.
+
+  N3 (C16) -- mu's dimensionlessness carries TWO READINGS.  In
+     lattice units mu^2 = alpha/gamma is a ratio of coefficients of
+     the same dimensionless operator, so mu is a pure number (884's
+     own definition).  A consumer reading mu as a PHYSICAL
+     screening mass reads an inverse length, mu_phys = mu/a, which
+     IS dimensionful.  The no-go survives BOTH: a registration is a
+     bijection that converts mu's UNIT and cannot supply the pure
+     number mu*a, so the dimensionless side's free dimension is 5
+     under either reading.  Both are published.
+
+  N4 (C17) -- the no-go's credit.  What this block establishes is a
+     WIDER APPLICATION of 935's existing cashing rule to a strictly
+     stronger obligation -- NOT a new theorem.  The mechanism
+     (bijections do not shrink rays) is 935's verbatim.  The claim
+     is stated that way throughout.
+
+==============================================================================
+SEAL VERIFICATION (predictions committed before any runner existed)
+==============================================================================
+  [MATCH] P1: today_gbs2_free_dimension_headline=5
+  [MATCH] P2: survivors=sigma|theta|mu|g|window_convention
+  [MATCH] P3: discrepancy_vs_896_six=exactly_one_coordinate=c4;discharged_by=c
+  [MATCH] P4: owed_interface_compresses_from_5_to_1;remaining=IF1;by=cycle902
+  [MATCH] P5: ablation_price_of_the_one_sixth_normalization=1;coordinate_kille
+  [MATCH] P6: cycle887_counts=15/1023/2097151;orbit_exponents=4/10/21;formula=
+  [MATCH] P7: window_ablation_price_in_linear_871_sector=0
+  [MATCH] P8: barrier_independent_reading_free_dimension=4;theta_drops
+  [MATCH] P9: all_four_numeric_survivors_are_DIMENSIONLESS;935_antecedent_CASH
+  [MATCH] P10: cycle871_restriction_total_deviation_against_runner_cache_bytes=
+  [MATCH] P11: net_of_bridge_reading_free_dimension=4
+  [MATCH] P12: 871_GBS2_row_value=8;equals_884_LANDED_chart_residual;landed_13=
+  [PASS] SEAL/all-predictions-match   12/12
+
+  holdout-freedom: the seal commit contains NO cycle-941 runner and
+  is a strict ancestor of the primary's first commit (git ancestry,
+  not an assertion; the check is recorded in the ship receipt).
+
+==============================================================================
+SUMMARY
+==============================================================================
+  gates evaluated : 74
+  failures        : 0  
+
+  F1  871's GB-S2 row (8) IS the LANDED-chart residual: 13 coords =
+      2 forced + 1 gauge + 2 eliminated + 8 free.  The honest chart
+      adds {mu, c4} -> 10.
+  F2  Cycle 896's published '6 free + 5 owed' is CORRECT AT ITS DATE
+      and STALE TODAY on both sides: Cycle 900 discharged c4 (free
+      6 -> 5) and Cycle 902 compressed the owed five to {IF1}
+      (owed 5 -> 1).  The lane's closure assessment cites the stale
+      number in the same sentence that lists the results which
+      superseded it.
+  F3  TODAY: 5 free + 1 owed.  Survivors, all named: sigma, theta,
+      mu, the window convention, g.  Owed: IF1 alone.
+  F4  The readout-gauge theorem STRENGTHENS: all 512 admissible
+      containment-holding radius-2 Minkowski windows give an
+      IDENTICAL axiom-level
+      linear readout on all 12 configurations (887 had 9 of 12
+      catalogue maps).  Window ablation price in the linear sector:
+      exactly 0.
+  F5  The '1/6' is ONE CONSTRAINT and its entire content is mu = 0:
+      ablation price 1, coordinate killed exactly mu.  Cycle 900's
+      theorem re-derived as exact linear-algebra ablation.
+  F6  theta is BARRIER-CONDITIONAL, not free: the theta-carrying
+      incidence decreases strictly with barrier thickness and
+      vanishes on the invariant core.  On the barrier-independent
+      reading the count is 4, not 5.
+  F7  EVERY surviving dimension is DIMENSIONLESS.  By 935's cashing
+      rule, NO REGISTRATION CAN EVER CLOSE GB-S2 -- and GB-S2 is
+      the 935-currency target in full.  Credit stated exactly: this
+      is a WIDER APPLICATION of 935's rule to a strictly stronger
+      obligation, not a new theorem (checker N4); and mu carries
+      both the lattice-units and physical readings, with the no-go
+      surviving both (checker N3).
+
+  SCIENCE DIGEST (timing-free, key semantics only): b67e26dbd0e82c7ad201ff833aba65507911606a739ae44edb382f3a932ed6eb
+  runtime_seconds: 1.86
+
+VERDICT: ALL GATES PASS

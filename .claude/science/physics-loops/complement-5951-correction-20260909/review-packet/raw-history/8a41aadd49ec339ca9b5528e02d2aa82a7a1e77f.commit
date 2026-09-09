@@ -1,0 +1,16 @@
+tree 01481ffcb105cf3332c2d960183a75901fe32abb
+parent 13d13fae283ec3d2dbebae865f789293ea64055f
+author Claude <noreply@anthropic.com> 1785830260 -0400
+committer Claude <noreply@anthropic.com> 1785830260 -0400
+
+physics: Cycle 891 checker -- calibrate the attack coverage gate and the
+register-level comparison
+
+First full run exited HONEST_FAIL on F_KRUN_ATTACK's own coverage threshold
+(1337 cells against a declared 1500) with ZERO mismatches, and the register-level
+comparison was reading the primary's SOURCE-only trace rows, which carry no bank
+movement this checker records.  Attack trials raised to 4200; the register
+comparison is now over the rows both instruments can see, is counted, and is
+gated; the rule-text determinacy flag is computed rather than asserted.
+
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>

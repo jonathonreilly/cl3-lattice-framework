@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle903_sigma_theta_independent_check_2026_07_28.py
+runner_sha256: 6c5c3d9e3fede36e7b10be23c493f69002ee6093b9d6d1feafc03dbe9827bcaa
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.496
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 903 INDEPENDENT CHECK -- spec'd to refute
+==============================================================================
+
+pins verified: True  primary sha256 4dccf702456a972f...
+
+------------------------------------------------------------------------------
+1. INDEPENDENT SWEEP (clause-scoped grader)
+   sentences: checker 770 vs primary 770
+   EXACT: checker 0 vs primary 0  agree=True
+   A stricter grader can only ever find FEWER groundings than a looser one, so agreement at zero is the strong reading: neither a permissive nor a restrictive rule finds a sentence in the pinned corpus that would discharge sigma.
+
+2. INDEPENDENT ADJUDICATION (by ablation)
+   checker verdict SPLIT_OUTSIDE vs primary SPLIT_OUTSIDE  agree=True
+     ablate exclusion_clause_1     present=True  -> SPLIT_OUTSIDE  moved=False
+     ablate exclusion_clause_2     present=True  -> SPLIT_OUTSIDE  moved=False
+     ablate admit_clause           present=True  -> OUTSIDE  moved=True
+   exclusions load-bearing: True
+
+3. INDEPENDENT PROPAGATION (path-count polynomials, six thetas)
+   dilate_k0    checker(6t)   7/12  primary(3t)   7/12  agree=True
+   dilate_k1    checker(6t)   1/12  primary(3t)   1/12  agree=True
+   dilate_k2    checker(6t)   0/12  primary(3t)   0/12  agree=True
+   closing_1    checker(6t)   7/12  primary(3t)   7/12  agree=True
+   opening_1    checker(6t)   0/12  primary(3t)   0/12  agree=True
+   doubling the theta sample changed nothing: True
+
+4. ATTACK ON THE INVARIANT CORE
+   containment barriers tested: 12 (8 outside the declared family)
+     declared::dilate_k0        7/12
+     declared::dilate_k1        1/12
+     declared::dilate_k2        0/12
+     declared::closing_1        7/12
+     slit_rank0                 6/12
+     slit_rank1                 6/12
+     slit_rank2                 5/12
+     halfspace_dilate           5/12
+     far_site                   7/12
+     intermediate_seed11        7/12
+     intermediate_seed97        7/12
+     intermediate_seed313       7/12
+   survivors under EVERY tested barrier: []
+   core refuted: False   core confirmed: True
+
+5. ATTACK ON THE CENSUS BOUNDS
+   bound_2    involutions   22  action-preserving   4  would-pin 0
+   bound_3    involutions   38  action-preserving   6  would-pin 0
+   bound_5    involutions   70  action-preserving  10  would-pin 0
+   cell empty at every bound: True
+   affine extension ruled out structurally: True
+
+------------------------------------------------------------------------------
+TEETH
+   BIT   T1_tampered_pin
+          flip 'one dimensionful reference' in the scale note
+   BIT   T2_dropped_sentence
+          delete both exclusion clauses from the scale note
+   BIT   T3_hardcoded_adjudication
+          look for `verdict = <literal>` inside the primary's adjudication
+   BIT   T4_leaked_verdict
+          check whether any incidence figure is assigned as a string constant instead of being built from computed set sizes
+   BIT   T5_skipped_barrier
+          compare the barriers declared in the primary's AST with the barriers present in its receipt
+   BIT   T6_planted_grounding_blindness
+          feed the checker's own stricter grader two sentences that WOULD ground sigma, and one that only constrains it
+   BIT   T7_planted_barrier_designed_incidence
+          a containment barrier with a designed open channel along +x, which must readmit short paths and so must be strictly richer than dilate_k1
+   BIT   T8_restriction_gate_integrity
+          re-parse the 885 N-certificate row from the pinned receipt and compare with the primary's gate
+   teeth bit: 8/8  holes: []
+
+------------------------------------------------------------------------------
+CLAIM SURVIVAL
+   SURVIVES  A1_no_sentence_grounds_sigma
+   SURVIVES  A2_sigma_outside_scale_primitive
+   SURVIVES  A3_involution_census_sterile
+   SURVIVES  B1_incidence_map
+   SURVIVES  B2_invariant_core_empty
+   5/5 claims survive independent attack
+
+elapsed_sec: 1.445
+receipt: outputs/sigma_theta_independent_check_cycle903_receipt_2026_07_28.json

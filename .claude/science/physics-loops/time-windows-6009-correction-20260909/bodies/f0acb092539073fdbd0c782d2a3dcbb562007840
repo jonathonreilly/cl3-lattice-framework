@@ -1,0 +1,2047 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py
+runner_sha256: d98c0b43c0efa9ef33727180b109e74ffd34c4f805bf498f8cf3babb819c86b1
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 13.915
+status: ok
+----- stdout -----
+CYCLE 885 GBW1 -- INDEPENDENT ADVERSARIAL CHECK
+
+[PASS] A_PIN_INTEGRITY
+
+[PASS] B_GROUP
+    finding: O_h^+ rebuilt independently: order 24, all determinants +1, closed under composition, order profile {'1': 1, '2': 9, '3': 8, '4': 6}.
+
+[PASS] C_FAMILY
+    finding: The 12-configuration family was built twice -- once by an independent reimplementation and once by AST-extracting the primary's own NEIGHBOURS, _lcg, make_config, build_family and executing only those nodes -- and the two agree site-for-site (True); family digest 30edaa3d5ca03c24.  The primary was never imported.
+
+[PASS] D_ATTACK_A_EQUIVARIANCE
+    finding: B(R)=supp(R): 0 failures on 1440 rotation x shift x config checks, and 0/35 permanence retractions.  The landed fixed central barrier fails 1152/1440; two independent routes (the explicit loop and the structural count |F|x|O_h^+|x|shifts!=0| = 1152) agree.  Every one of those failures is a TRANSLATION failure: the impostor's rotation-only failure count is 0/288, so the refutation is by 'no site is privileged' under translations exactly as claimed.
+
+[PASS] E_ATTACK_B_FILTRATION_AND_FILTER_PROVENANCE
+    finding: The permanence filtration rebuilds to 35 nested pairs.  W1 retracts on 0; the boundary-shell rival W1b retracts on 24.  Provenance: REQ4_declared_in_wip_requirements=True, filter symbols present in the draft=[].
+
+[PASS] F_ATTACK_C_CENTRE
+    finding: The two equivariant centre conventions differ as POINTS on 4/12 configurations (hollow_annulus, Lshape, sparse_a, sparse_b) and induce different (a, b) on 4/12.  They are not always equal, so the centre class is not vacuous.
+
+[PASS] G_ATTACK_D
+    finding: Boundary locus: Z moves with theta on 7/12 configurations at the primary's thetas, 7/12 at the three NEW thetas (1/7, 3/8, 5/6) and 7/12 over all six.  Support locus (= the barrier): 0/12 theta-dependent, i.e. theta-INDEPENDENT on 12/12 at every theta tested.  Both routes (integer path counts x exact unit-circle powers, and a direct exact Gaussian-rational DP) agree on 48/48 cross-checks.
+
+[PASS] H_ATTACK_E_DEPTH_GAUGE
+    finding: D is stationary at every depth above the last formation depth on 12/12 configurations and the depth-readout is non-decreasing on 12/12.
+
+[PASS] I_ATTACK_F_IMPOSTORS
+    finding: Impostor (i) lexicographic-tiebreak centre: 1015 equivariance failures, of which 203/288 are rotation-only -- fails as required.  Impostor (ii) supp(R) u {origin}: 0 rotation-only failures (passes rotations) but 45/60 translation-only failures -- fails as required.  Impostor (iii) constant annulus: REQ5 = False -- fails as required.  Impostors (iv)/(v), the once- and twice-dilated supports, PASS EVERY DECLARED REQUIREMENT and disagree with the support window on 12/12 configurations: the requirement set does not pin the window.
+
+[PASS] J_ATTACK_G_STRESS
+    finding: W1 accepted 0/58 wrong windows and passed 12/12 displacement controls; W4 accepted 0/34 and passed 12/12.  Each wrong window was checked against the map's output on the configuration and on all 120 group images.
+
+[PASS] K_ATTACK_H_RECEIPT
+    finding: The receipt's own classification re-partitions to 2 determined / 2 existence-only / 1 supplied, its residual list has 3 items and 15/15 certificates are true.  The primary's preflight hard-fail probe exited 2 (expected 2) and named the missing pin: True.
+
+[PASS] L_VERDICTS
+    finding: C1=CORROBORATED; C2=CORROBORATED; C3=NARROWED; C4=CORROBORATED; C5=CORROBORATED; C6=NARROWED
+
+[PASS] M_COVERAGE
+    finding: 8/8 mandatory attacks ran, 26 evidence rows recorded.
+
+[PASS] N_SELF_AUDIT
+    finding: 8 attack functions; 0 of them reference the primary's claimed numbers (must be 0); 8/8 mandatory attack calls are present in run().
+
+[PASS] Y_TEETH
+    finding: 7/7 self-mutations flipped their named certificate to FAIL and exited nonzero.
+
+[PASS] Z_CONTROLS
+    finding: firewall installed=True, firewall hits=0, blocked modules loaded=0, runtime 13.88s.
+
+PER-CLAIM VERDICTS
+  C1: CORROBORATED -- barrier DERIVED: B(R)=supp(R) equivariant 0/1440, landed fixed central barrier refuted 1152/1440
+  C2: CORROBORATED -- D GAUGE: depth-indexed readout non-decreasing and stationary above the last formation depth on 12/12
+  C3: NARROWED -- a/b EXISTENCE_DERIVED_UNIQUENESS_OPEN; W1b refuted by REQ4 24/35; the ONLY surviving split is the centre convention; annulus fill 7/12
+      narrowing: the declared requirement set admits 2 further admissible maps this checker built (the k-fold dilated supports), each disagreeing with W1 as a SET on 12/12 configs, so the surviving uniqueness split is NOT the centre convention alone
+  C4: CORROBORATED -- N SUPPLIED / GBW1 mis-scoped: Z theta-dependent on 7/12 at the boundary locus, theta-independent 12/12 on the support locus
+  C5: CORROBORATED -- centre exposed, EXISTENCE_DERIVED_UNIQUENESS_OPEN, splits on 4/12
+  C6: NARROWED -- 0 of 3 swept window candidates is both admissible and barrier-disjoint
+      narrowing: C6 is understated: under REQ4 AS DECLARED, no non-empty window can be barrier-disjoint at all, so the negative is a theorem rather than an exhausted 3-candidate sweep
+
+OVERALL: 4 corroborated, 2 narrowed, 0 refuted of 6 headline claims; checker integrity=CLEAN.
+
+{
+  "A_PIN_INTEGRITY": {
+    "pass": true,
+    "rows": [
+      {
+        "bytes": 113653,
+        "exists": true,
+        "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",
+        "git_blob_matches": true,
+        "path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+        "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32",
+        "sha256_matches": true
+      },
+      {
+        "bytes": 16399,
+        "exists": true,
+        "git_blob": "553bba1fbd427f27c5606b6f27bd592a91e9c3c0",
+        "git_blob_matches": true,
+        "path": "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json",
+        "sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997",
+        "sha256_matches": true
+      }
+    ]
+  },
+  "B_GROUP": {
+    "closed": true,
+    "determinants": [
+      1
+    ],
+    "finding": "O_h^+ rebuilt independently: order 24, all determinants +1, closed under composition, order profile {'1': 1, '2': 9, '3': 8, '4': 6}.",
+    "group_elements_per_config": 120,
+    "identity_present": true,
+    "order_profile": {
+      "1": 1,
+      "2": 9,
+      "3": 8,
+      "4": 6
+    },
+    "pass": true,
+    "rotation_count": 24,
+    "translation_shifts": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -2,
+        0
+      ],
+      [
+        3,
+        1,
+        -2
+      ],
+      [
+        -1,
+        -1,
+        -1
+      ]
+    ]
+  },
+  "C_FAMILY": {
+    "ast_extracted_family_size": 12,
+    "ast_extracted_nodes": [
+      "NEIGHBOURS",
+      "_lcg",
+      "make_config",
+      "build_family"
+    ],
+    "ast_extracted_source_sha256": "0a0017ce2c934d92246e5206dda433c5361edc09050d4c5ae57599b30a6b3c78",
+    "families_identical": true,
+    "family_digest_ast_extracted": "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e",
+    "family_digest_mine": "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e",
+    "family_digests_match": true,
+    "finding": "The 12-configuration family was built twice -- once by an independent reimplementation and once by AST-extracting the primary's own NEIGHBOURS, _lcg, make_config, build_family and executing only those nodes -- and the two agree site-for-site (True); family digest 30edaa3d5ca03c24.  The primary was never imported.",
+    "my_family_size": 12,
+    "pass": true,
+    "primary_module_imported": false,
+    "rows": [
+      {
+        "boundary_shell_size": 6,
+        "depth_levels": 1,
+        "name": "single",
+        "readout_I": 1,
+        "records": 1
+      },
+      {
+        "boundary_shell_size": 10,
+        "depth_levels": 1,
+        "name": "pair",
+        "readout_I": 3,
+        "records": 2
+      },
+      {
+        "boundary_shell_size": 19,
+        "depth_levels": 1,
+        "name": "shell1",
+        "readout_I": 12,
+        "records": 6
+      },
+      {
+        "boundary_shell_size": 18,
+        "depth_levels": 2,
+        "name": "ball1",
+        "readout_I": 13,
+        "records": 7
+      },
+      {
+        "boundary_shell_size": 55,
+        "depth_levels": 4,
+        "name": "annulus_1_4",
+        "readout_I": 46,
+        "records": 32
+      },
+      {
+        "boundary_shell_size": 55,
+        "depth_levels": 10,
+        "name": "hollow_annulus",
+        "readout_I": 45,
+        "records": 31
+      },
+      {
+        "boundary_shell_size": 21,
+        "depth_levels": 3,
+        "name": "Lshape",
+        "readout_I": 7,
+        "records": 5
+      },
+      {
+        "boundary_shell_size": 30,
+        "depth_levels": 3,
+        "name": "plane_square",
+        "readout_I": 13,
+        "records": 9
+      },
+      {
+        "boundary_shell_size": 22,
+        "depth_levels": 3,
+        "name": "chain",
+        "readout_I": 7,
+        "records": 5
+      },
+      {
+        "boundary_shell_size": 43,
+        "depth_levels": 8,
+        "name": "sparse_a",
+        "readout_I": 15,
+        "records": 9
+      },
+      {
+        "boundary_shell_size": 37,
+        "depth_levels": 9,
+        "name": "sparse_b",
+        "readout_I": 13,
+        "records": 9
+      },
+      {
+        "boundary_shell_size": 18,
+        "depth_levels": 2,
+        "name": "offcentre_ball",
+        "readout_I": 13,
+        "records": 7
+      }
+    ]
+  },
+  "D_ATTACK_A_EQUIVARIANCE": {
+    "W1_support": {
+      "REQ2_REQ3": true,
+      "REQ4": true,
+      "REQ5": true,
+      "admissible_REQ2_REQ5": true,
+      "distinct_sets": 12,
+      "equivariance_checks": 1440,
+      "equivariance_exhibits": [],
+      "equivariance_failures": 0,
+      "req4_checks": 35,
+      "req4_exhibits": [],
+      "req4_failures": 0,
+      "rotation_only_checks": 288,
+      "rotation_only_failures": 0,
+      "translation_only_checks": 60,
+      "translation_only_failures": 0
+    },
+    "barrier_B_eq_supp": {
+      "REQ2_REQ3": true,
+      "REQ4": true,
+      "REQ5": true,
+      "admissible_REQ2_REQ5": true,
+      "distinct_sets": 12,
+      "equivariance_checks": 1440,
+      "equivariance_exhibits": [],
+      "equivariance_failures": 0,
+      "req4_checks": 35,
+      "req4_exhibits": [],
+      "req4_failures": 0,
+      "rotation_only_checks": 288,
+      "rotation_only_failures": 0,
+      "translation_only_checks": 60,
+      "translation_only_failures": 0
+    },
+    "finding": "B(R)=supp(R): 0 failures on 1440 rotation x shift x config checks, and 0/35 permanence retractions.  The landed fixed central barrier fails 1152/1440; two independent routes (the explicit loop and the structural count |F|x|O_h^+|x|shifts!=0| = 1152) agree.  Every one of those failures is a TRANSLATION failure: the impostor's rotation-only failure count is 0/288, so the refutation is by 'no site is privileged' under translations exactly as claimed.",
+    "landed_fixed_central_barrier": {
+      "REQ2_REQ3": false,
+      "REQ4": true,
+      "REQ5": false,
+      "admissible_REQ2_REQ5": false,
+      "distinct_sets": 1,
+      "equivariance_checks": 1440,
+      "equivariance_exhibits": [
+        {
+          "config": "single",
+          "kind": "set",
+          "shift": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "config": "single",
+          "kind": "set",
+          "shift": [
+            0,
+            -2,
+            0
+          ]
+        },
+        {
+          "config": "single",
+          "kind": "set",
+          "shift": [
+            3,
+            1,
+            -2
+          ]
+        },
+        {
+          "config": "single",
+          "kind": "set",
+          "shift": [
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "equivariance_failures": 1152,
+      "req4_checks": 35,
+      "req4_exhibits": [],
+      "req4_failures": 0,
+      "rotation_only_checks": 288,
+      "rotation_only_failures": 0,
+      "translation_only_checks": 60,
+      "translation_only_failures": 48
+    },
+    "pass": true,
+    "structural_agrees_with_loop": true,
+    "structural_predicted_impostor_failures": 1152
+  },
+  "E_ATTACK_B_FILTRATION_AND_FILTER_PROVENANCE": {
+    "W1_support": {
+      "req4_checks": 35,
+      "req4_failures": 0
+    },
+    "W1b_boundary_shell": {
+      "exhibits": [
+        {
+          "config": "ball1",
+          "level": 2,
+          "lost": 6
+        },
+        {
+          "config": "annulus_1_4",
+          "level": 2,
+          "lost": 12
+        },
+        {
+          "config": "annulus_1_4",
+          "level": 3,
+          "lost": 8
+        },
+        {
+          "config": "annulus_1_4",
+          "level": 4,
+          "lost": 6
+        }
+      ],
+      "req4_checks": 35,
+      "req4_failures": 24
+    },
+    "filter_rule_provenance_audit": {
+      "REQ4_declared_in_wip_requirements": true,
+      "REQ4_evaluated_by_wip_harness": true,
+      "filter_symbols_in_wip": [],
+      "git_show_ok": true,
+      "landed_REQUIREMENTS_keys": [
+        "REQ1_content_only",
+        "REQ2_translation_equivariance",
+        "REQ3_rotation_equivariance",
+        "REQ4_permanence_monotone",
+        "REQ5_separating"
+      ],
+      "method": "git show f4533dd7bd:scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+      "requirement_keys_identical_wip_vs_landed": true,
+      "requirement_texts_identical_wip_vs_landed": true,
+      "verdict": "NOT OUTCOME-MOTIVATED.  REQ4 is a DECLARED requirement of the interrupted draft (draft requirement keys: ['REQ1_content_only', 'REQ2_translation_equivariance', 'REQ3_rotation_equivariance', 'REQ4_permanence_monotone', 'REQ5_separating']), its wording is byte-identical to the landed one (identical=True; whole requirement set identical=True), and the draft's own harness already computed it.  None of the filter's symbols ([] found) existed in the draft, so what the repair added was the FILTER acting on an already-declared, already-computed requirement -- not the requirement.  Two caveats stated exactly: the draft's PROSE asserted both rivals satisfied every requirement including permanence-monotonicity (observed=True) while its own harness said otherwise, and the draft capped the retraction count at 6, so the 24/35 figure only became visible once the cap was lifted.",
+      "wip_REQ4_declaration_text": "Record: 'A site never carries more than one record; records are permanent.'  Under R subset R' the map's set-valued output must not retract: W(R) subset W(R').",
+      "wip_REQ4_text_identical_to_landed": true,
+      "wip_REQUIREMENTS_keys": [
+        "REQ1_content_only",
+        "REQ2_translation_equivariance",
+        "REQ3_rotation_equivariance",
+        "REQ4_permanence_monotone",
+        "REQ5_separating"
+      ],
+      "wip_blob_pin_matches": true,
+      "wip_blob_sha1": "15041c150eb33d8fcb575ab5f61ae60404f5c404",
+      "wip_capped_req4_count_at": 6,
+      "wip_prose_called_both_rivals_monotone": true,
+      "wip_sha256": "4631d7abc44db20be9dba93268c743d35342d7c6ba416f31bc79074949abb263"
+    },
+    "finding": "The permanence filtration rebuilds to 35 nested pairs.  W1 retracts on 0; the boundary-shell rival W1b retracts on 24.  Provenance: REQ4_declared_in_wip_requirements=True, filter symbols present in the draft=[].",
+    "pass": true,
+    "per_config": [
+      {
+        "config": "single",
+        "levels": 1,
+        "nested_pairs": 0,
+        "w1b_retractions": 0
+      },
+      {
+        "config": "pair",
+        "levels": 1,
+        "nested_pairs": 0,
+        "w1b_retractions": 0
+      },
+      {
+        "config": "shell1",
+        "levels": 1,
+        "nested_pairs": 0,
+        "w1b_retractions": 0
+      },
+      {
+        "config": "ball1",
+        "levels": 2,
+        "nested_pairs": 1,
+        "w1b_retractions": 1
+      },
+      {
+        "config": "annulus_1_4",
+        "levels": 4,
+        "nested_pairs": 3,
+        "w1b_retractions": 3
+      },
+      {
+        "config": "hollow_annulus",
+        "levels": 10,
+        "nested_pairs": 9,
+        "w1b_retractions": 7
+      },
+      {
+        "config": "Lshape",
+        "levels": 3,
+        "nested_pairs": 2,
+        "w1b_retractions": 2
+      },
+      {
+        "config": "plane_square",
+        "levels": 3,
+        "nested_pairs": 2,
+        "w1b_retractions": 2
+      },
+      {
+        "config": "chain",
+        "levels": 3,
+        "nested_pairs": 2,
+        "w1b_retractions": 2
+      },
+      {
+        "config": "sparse_a",
+        "levels": 8,
+        "nested_pairs": 7,
+        "w1b_retractions": 2
+      },
+      {
+        "config": "sparse_b",
+        "levels": 9,
+        "nested_pairs": 8,
+        "w1b_retractions": 4
+      },
+      {
+        "config": "offcentre_ball",
+        "levels": 2,
+        "nested_pairs": 1,
+        "w1b_retractions": 1
+      }
+    ]
+  },
+  "F_ATTACK_C_CENTRE": {
+    "centre_split_configs": [
+      "hollow_annulus",
+      "Lshape",
+      "sparse_a",
+      "sparse_b"
+    ],
+    "centre_split_count": 4,
+    "finding": "The two equivariant centre conventions differ as POINTS on 4/12 configurations (hollow_annulus, Lshape, sparse_a, sparse_b) and induce different (a, b) on 4/12.  They are not always equal, so the centre class is not vacuous.",
+    "pass": true,
+    "radii_split_configs": [
+      "hollow_annulus",
+      "Lshape",
+      "sparse_a",
+      "sparse_b"
+    ],
+    "rows": [
+      {
+        "barycentre": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "centres_differ": false,
+        "config": "single",
+        "extremal_shell_barycentre": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "radii_differ": false
+      },
+      {
+        "barycentre": [
+          "1/2",
+          "0/1",
+          "0/1"
+        ],
+        "centres_differ": false,
+        "config": "pair",
+        "extremal_shell_barycentre": [
+          "1/2",
+          "0/1",
+          "0/1"
+        ],
+        "radii_differ": false
+      },
+      {
+        "barycentre": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "centres_differ": false,
+        "config": "shell1",
+        "extremal_shell_barycentre": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "radii_differ": false
+      },
+      {
+        "barycentre": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "centres_differ": false,
+        "config": "ball1",
+        "extremal_shell_barycentre": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "radii_differ": false
+      },
+      {
+        "barycentre": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "centres_differ": false,
+        "config": "annulus_1_4",
+        "extremal_shell_barycentre": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "radii_differ": false
+      },
+      {
+        "barycentre": [
+          "-2/31",
+          "0/1",
+          "0/1"
+        ],
+        "centres_differ": true,
+        "config": "hollow_annulus",
+        "extremal_shell_barycentre": [
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "radii_differ": true
+      },
+      {
+        "barycentre": [
+          "3/5",
+          "3/5",
+          "0/1"
+        ],
+        "centres_differ": true,
+        "config": "Lshape",
+        "extremal_shell_barycentre": [
+          "1/1",
+          "1/1",
+          "0/1"
+        ],
+        "radii_differ": true
+      },
+      {
+        "barycentre": [
+          "1/1",
+          "1/1",
+          "0/1"
+        ],
+        "centres_differ": false,
+        "config": "plane_square",
+        "extremal_shell_barycentre": [
+          "1/1",
+          "1/1",
+          "0/1"
+        ],
+        "radii_differ": false
+      },
+      {
+        "barycentre": [
+          "2/1",
+          "0/1",
+          "0/1"
+        ],
+        "centres_differ": false,
+        "config": "chain",
+        "extremal_shell_barycentre": [
+          "2/1",
+          "0/1",
+          "0/1"
+        ],
+        "radii_differ": false
+      },
+      {
+        "barycentre": [
+          "-4/3",
+          "2/9",
+          "-4/9"
+        ],
+        "centres_differ": true,
+        "config": "sparse_a",
+        "extremal_shell_barycentre": [
+          "0/1",
+          "-2/1",
+          "2/1"
+        ],
+        "radii_differ": true
+      },
+      {
+        "barycentre": [
+          "-13/9",
+          "-4/9",
+          "-7/9"
+        ],
+        "centres_differ": true,
+        "config": "sparse_b",
+        "extremal_shell_barycentre": [
+          "-2/1",
+          "2/1",
+          "-2/1"
+        ],
+        "radii_differ": true
+      },
+      {
+        "barycentre": [
+          "2/1",
+          "-1/1",
+          "1/1"
+        ],
+        "centres_differ": false,
+        "config": "offcentre_ball",
+        "extremal_shell_barycentre": [
+          "2/1",
+          "-1/1",
+          "1/1"
+        ],
+        "radii_differ": false
+      }
+    ]
+  },
+  "G_ATTACK_D": {
+    "boundary_dependent_on_all_six": 7,
+    "boundary_dependent_on_new_thetas": 7,
+    "boundary_dependent_on_primary_thetas": 7,
+    "boundary_locus_rows": [
+      {
+        "Z": {
+          "1/2": "11544/25",
+          "1/3": "13056/25",
+          "1/7": "364416/625",
+          "2/5": "418200/841",
+          "3/8": "2699736/5329",
+          "5/6": "1455000/3721"
+        },
+        "config": "single",
+        "dep_all_thetas": true,
+        "dep_new_thetas": true,
+        "dep_primary_thetas": true
+      },
+      {
+        "Z": {
+          "1/2": "30084/25",
+          "1/3": "7258/5",
+          "1/7": "5334906/3125",
+          "2/5": "32896740/24389",
+          "3/8": "539642212/389017",
+          "5/6": "198569780/226981"
+        },
+        "config": "pair",
+        "dep_all_thetas": true,
+        "dep_new_thetas": true,
+        "dep_primary_thetas": true
+      },
+      {
+        "Z": {
+          "1/2": "1/1",
+          "1/3": "1/1",
+          "1/7": "1/1",
+          "2/5": "1/1",
+          "3/8": "1/1",
+          "5/6": "1/1"
+        },
+        "config": "shell1",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "0/1",
+          "1/3": "0/1",
+          "1/7": "0/1",
+          "2/5": "0/1",
+          "3/8": "0/1",
+          "5/6": "0/1"
+        },
+        "config": "ball1",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "1/1",
+          "1/3": "1/1",
+          "1/7": "1/1",
+          "2/5": "1/1",
+          "3/8": "1/1",
+          "5/6": "1/1"
+        },
+        "config": "annulus_1_4",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "1/1",
+          "1/3": "1/1",
+          "1/7": "1/1",
+          "2/5": "1/1",
+          "3/8": "1/1",
+          "5/6": "1/1"
+        },
+        "config": "hollow_annulus",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "2168199/625",
+          "1/3": "2362799/625",
+          "1/7": "1642559679/390625",
+          "2/5": "2573458983/707281",
+          "3/8": "104773808471/28398241",
+          "5/6": "44929917863/13845841"
+        },
+        "config": "Lshape",
+        "dep_all_thetas": true,
+        "dep_new_thetas": true,
+        "dep_primary_thetas": true
+      },
+      {
+        "Z": {
+          "1/2": "30016/25",
+          "1/3": "32984/25",
+          "1/7": "899224/625",
+          "2/5": "1068352/841",
+          "3/8": "6867392/5329",
+          "5/6": "3950912/3721"
+        },
+        "config": "plane_square",
+        "dep_all_thetas": true,
+        "dep_new_thetas": true,
+        "dep_primary_thetas": true
+      },
+      {
+        "Z": {
+          "1/2": "67792/25",
+          "1/3": "72608/25",
+          "1/7": "1936288/625",
+          "2/5": "2375632/841",
+          "3/8": "15211856/5329",
+          "5/6": "9251792/3721"
+        },
+        "config": "chain",
+        "dep_all_thetas": true,
+        "dep_new_thetas": true,
+        "dep_primary_thetas": true
+      },
+      {
+        "Z": {
+          "1/2": "4237222/625",
+          "1/3": "4585122/625",
+          "1/7": "3140720962/390625",
+          "2/5": "5013915622/707281",
+          "3/8": "203861296134/28398241",
+          "5/6": "87366618342/13845841"
+        },
+        "config": "sparse_a",
+        "dep_all_thetas": true,
+        "dep_new_thetas": true,
+        "dep_primary_thetas": true
+      },
+      {
+        "Z": {
+          "1/2": "58926/25",
+          "1/3": "63574/25",
+          "1/7": "1706214/625",
+          "2/5": "2074062/841",
+          "3/8": "13295422/5329",
+          "5/6": "7961422/3721"
+        },
+        "config": "sparse_b",
+        "dep_all_thetas": true,
+        "dep_new_thetas": true,
+        "dep_primary_thetas": true
+      },
+      {
+        "Z": {
+          "1/2": "0/1",
+          "1/3": "0/1",
+          "1/7": "0/1",
+          "2/5": "0/1",
+          "3/8": "0/1",
+          "5/6": "0/1"
+        },
+        "config": "offcentre_ball",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      }
+    ],
+    "dual_method_agreement": true,
+    "dual_method_checks": 48,
+    "finding": "Boundary locus: Z moves with theta on 7/12 configurations at the primary's thetas, 7/12 at the three NEW thetas (1/7, 3/8, 5/6) and 7/12 over all six.  Support locus (= the barrier): 0/12 theta-dependent, i.e. theta-INDEPENDENT on 12/12 at every theta tested.  Both routes (integer path counts x exact unit-circle powers, and a direct exact Gaussian-rational DP) agree on 48/48 cross-checks.",
+    "loci_are_distinct_computations": true,
+    "mechanism": "|u(theta)| = 1 exactly, so a window site reachable by paths of a SINGLE length has |A|^2 independent of theta; theta-dependence is purely interference between path lengths of different parity/length.  That is why the rounded configurations (shell1, ball1, annulus_1_4, hollow_annulus, offcentre_ball) are theta-flat on the boundary locus while the low-symmetry ones are not -- a mechanism the primary reported as a bare count.",
+    "pass": true,
+    "support_dependent_on_all_six": 0,
+    "support_locus_rows": [
+      {
+        "Z": {
+          "1/2": "1/1",
+          "1/3": "1/1",
+          "1/7": "1/1",
+          "2/5": "1/1",
+          "3/8": "1/1",
+          "5/6": "1/1"
+        },
+        "config": "single",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "1/2",
+          "1/3": "1/2",
+          "1/7": "1/2",
+          "2/5": "1/2",
+          "3/8": "1/2",
+          "5/6": "1/2"
+        },
+        "config": "pair",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "0/1",
+          "1/3": "0/1",
+          "1/7": "0/1",
+          "2/5": "0/1",
+          "3/8": "0/1",
+          "5/6": "0/1"
+        },
+        "config": "shell1",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "1/1",
+          "1/3": "1/1",
+          "1/7": "1/1",
+          "2/5": "1/1",
+          "3/8": "1/1",
+          "5/6": "1/1"
+        },
+        "config": "ball1",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "0/1",
+          "1/3": "0/1",
+          "1/7": "0/1",
+          "2/5": "0/1",
+          "3/8": "0/1",
+          "5/6": "0/1"
+        },
+        "config": "annulus_1_4",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "0/1",
+          "1/3": "0/1",
+          "1/7": "0/1",
+          "2/5": "0/1",
+          "3/8": "0/1",
+          "5/6": "0/1"
+        },
+        "config": "hollow_annulus",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "0/1",
+          "1/3": "0/1",
+          "1/7": "0/1",
+          "2/5": "0/1",
+          "3/8": "0/1",
+          "5/6": "0/1"
+        },
+        "config": "Lshape",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "1/1",
+          "1/3": "1/1",
+          "1/7": "1/1",
+          "2/5": "1/1",
+          "3/8": "1/1",
+          "5/6": "1/1"
+        },
+        "config": "plane_square",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "1/1",
+          "1/3": "1/1",
+          "1/7": "1/1",
+          "2/5": "1/1",
+          "3/8": "1/1",
+          "5/6": "1/1"
+        },
+        "config": "chain",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "0/1",
+          "1/3": "0/1",
+          "1/7": "0/1",
+          "2/5": "0/1",
+          "3/8": "0/1",
+          "5/6": "0/1"
+        },
+        "config": "sparse_a",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "1/1",
+          "1/3": "1/1",
+          "1/7": "1/1",
+          "2/5": "1/1",
+          "3/8": "1/1",
+          "5/6": "1/1"
+        },
+        "config": "sparse_b",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      },
+      {
+        "Z": {
+          "1/2": "1/1",
+          "1/3": "1/1",
+          "1/7": "1/1",
+          "2/5": "1/1",
+          "3/8": "1/1",
+          "5/6": "1/1"
+        },
+        "config": "offcentre_ball",
+        "dep_all_thetas": false,
+        "dep_new_thetas": false,
+        "dep_primary_thetas": false
+      }
+    ],
+    "support_locus_theta_independent_configs": 12,
+    "thetas_new": [
+      "1/7",
+      "3/8",
+      "5/6"
+    ],
+    "thetas_primary": [
+      "1/2",
+      "1/3",
+      "2/5"
+    ]
+  },
+  "H_ATTACK_E_DEPTH_GAUGE": {
+    "configs_nondecreasing": 12,
+    "configs_stationary_at_every_depth": 12,
+    "exactness_argument": "Stationarity above the last formation depth is verified for EVERY depth, not sampled: the depth-truncation set is shown to equal the full support for every lv >= d_form, so the readout is literally the same number on the whole upper ray.  The primary only evaluated three depths above d_form; the conclusion survives, but its evidence was a sample and this one is not.",
+    "finding": "D is stationary at every depth above the last formation depth on 12/12 configurations and the depth-readout is non-decreasing on 12/12.",
+    "pass": true,
+    "rows": [
+      {
+        "config": "single",
+        "depths_checked": 41,
+        "last_formation_depth": 1,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "pair",
+        "depths_checked": 41,
+        "last_formation_depth": 1,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "shell1",
+        "depths_checked": 41,
+        "last_formation_depth": 1,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "ball1",
+        "depths_checked": 42,
+        "last_formation_depth": 2,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          1,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "annulus_1_4",
+        "depths_checked": 44,
+        "last_formation_depth": 4,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          12,
+          24,
+          40,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "hollow_annulus",
+        "depths_checked": 50,
+        "last_formation_depth": 10,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          2,
+          10,
+          12,
+          16,
+          20,
+          24,
+          32,
+          40,
+          41,
+          45,
+          45,
+          45
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "Lshape",
+        "depths_checked": 43,
+        "last_formation_depth": 3,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          4,
+          5,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "plane_square",
+        "depths_checked": 43,
+        "last_formation_depth": 3,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          1,
+          9,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "chain",
+        "depths_checked": 43,
+        "last_formation_depth": 3,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          1,
+          5,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "sparse_a",
+        "depths_checked": 48,
+        "last_formation_depth": 8,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          1,
+          3,
+          5,
+          7,
+          8,
+          12,
+          14,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "sparse_b",
+        "depths_checked": 49,
+        "last_formation_depth": 9,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          1,
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          13,
+          13,
+          13
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      },
+      {
+        "config": "offcentre_ball",
+        "depths_checked": 42,
+        "last_formation_depth": 2,
+        "nondecreasing": true,
+        "readout_by_depth_first_12": [
+          1,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "stationary_at_every_depth_above": true,
+        "truncation_saturates_at_last_formation_depth": true
+      }
+    ]
+  },
+  "I_ATTACK_F_IMPOSTORS": {
+    "battery": {
+      "i_lexicographic_tiebreak_centre": {
+        "REQ2_REQ3_equivariant": false,
+        "REQ4": true,
+        "REQ5": true,
+        "admissible_REQ2_REQ5": false,
+        "declared_failure_mode": "REQ3_rotation_equivariance",
+        "distinct_sets": 12,
+        "equivariance_failures": 1015,
+        "radii_differ_from_W1_on_configs": 11,
+        "req4_failures": 0,
+        "rotation_only_checks": 288,
+        "rotation_only_failures": 203,
+        "set_differs_from_W1_on_configs": 0,
+        "translation_only_checks": 60,
+        "translation_only_failures": 0
+      },
+      "ii_rotation_ok_translation_broken_barrier": {
+        "REQ2_REQ3_equivariant": false,
+        "REQ4": true,
+        "REQ5": true,
+        "admissible_REQ2_REQ5": false,
+        "declared_failure_mode": "REQ2_translation_equivariance",
+        "distinct_sets": 11,
+        "equivariance_failures": 1084,
+        "radii_differ_from_W1_on_configs": 12,
+        "req4_failures": 0,
+        "rotation_only_checks": 288,
+        "rotation_only_failures": 0,
+        "set_differs_from_W1_on_configs": 6,
+        "translation_only_checks": 60,
+        "translation_only_failures": 45
+      },
+      "iii_content_blind_constant_window": {
+        "REQ2_REQ3_equivariant": false,
+        "REQ4": true,
+        "REQ5": false,
+        "admissible_REQ2_REQ5": false,
+        "declared_failure_mode": "REQ5_nonconstancy",
+        "distinct_sets": 1,
+        "equivariance_failures": 1152,
+        "radii_differ_from_W1_on_configs": 11,
+        "req4_failures": 0,
+        "rotation_only_checks": 288,
+        "rotation_only_failures": 0,
+        "set_differs_from_W1_on_configs": 11,
+        "translation_only_checks": 60,
+        "translation_only_failures": 48
+      },
+      "iv_dilated_support_NOT_SWEPT_BY_PRIMARY": {
+        "REQ2_REQ3_equivariant": true,
+        "REQ4": true,
+        "REQ5": true,
+        "admissible_REQ2_REQ5": true,
+        "declared_failure_mode": null,
+        "distinct_sets": 11,
+        "equivariance_failures": 0,
+        "radii_differ_from_W1_on_configs": 12,
+        "req4_failures": 0,
+        "rotation_only_checks": 288,
+        "rotation_only_failures": 0,
+        "set_differs_from_W1_on_configs": 12,
+        "translation_only_checks": 60,
+        "translation_only_failures": 0
+      },
+      "v_twice_dilated_support_NOT_SWEPT_BY_PRIMARY": {
+        "REQ2_REQ3_equivariant": true,
+        "REQ4": true,
+        "REQ5": true,
+        "admissible_REQ2_REQ5": true,
+        "declared_failure_mode": null,
+        "distinct_sets": 11,
+        "equivariance_failures": 0,
+        "radii_differ_from_W1_on_configs": 12,
+        "req4_failures": 0,
+        "rotation_only_checks": 288,
+        "rotation_only_failures": 0,
+        "set_differs_from_W1_on_configs": 12,
+        "translation_only_checks": 60,
+        "translation_only_failures": 0
+      }
+    },
+    "finding": "Impostor (i) lexicographic-tiebreak centre: 1015 equivariance failures, of which 203/288 are rotation-only -- fails as required.  Impostor (ii) supp(R) u {origin}: 0 rotation-only failures (passes rotations) but 45/60 translation-only failures -- fails as required.  Impostor (iii) constant annulus: REQ5 = False -- fails as required.  Impostors (iv)/(v), the once- and twice-dilated supports, PASS EVERY DECLARED REQUIREMENT and disagree with the support window on 12/12 configurations: the requirement set does not pin the window.",
+    "impostors_passing_every_declared_requirement": [
+      "iv_dilated_support_NOT_SWEPT_BY_PRIMARY",
+      "v_twice_dilated_support_NOT_SWEPT_BY_PRIMARY"
+    ],
+    "pass": true,
+    "requirement_set_verdict": "TOO WEAK.  REQ2-REQ5 as declared and as tested admit an INFINITE family of window maps: for every k >= 0 the k-fold lattice dilation of supp(R) is content-only, translation- and rotation-equivariant, permanence-monotone (A subset B implies dil_k(A) subset dil_k(B)) and non-constant.  Each disagrees with the support window as a SET on every configuration and induces a different (a, b).  The dilation radius k is exactly a runner-chosen constant, which is the thing GBW1 was supposed to forbid -- and REQ1 (content-only) does not exclude it, because dil_k IS a function of R.  Nothing in the declared requirement set pins k."
+  },
+  "J_ATTACK_G_STRESS": {
+    "finding": "W1 accepted 0/58 wrong windows and passed 12/12 displacement controls; W4 accepted 0/34 and passed 12/12.  Each wrong window was checked against the map's output on the configuration and on all 120 group images.",
+    "pass": true,
+    "results": {
+      "W1_support": {
+        "acceptance_exhibits": [],
+        "displacement_control_passed": 12,
+        "displacement_control_tested": 12,
+        "group_images_per_perturbation": 120,
+        "perturbation_kinds": {
+          "a_plus_1": 12,
+          "add_site": 12,
+          "b_minus_1": 12,
+          "drop_site": 11,
+          "move_site": 11
+        },
+        "wrong_windows_tested": 58,
+        "wrongly_accepted": 0
+      },
+      "W4_barrier": {
+        "acceptance_exhibits": [],
+        "displacement_control_passed": 12,
+        "displacement_control_tested": 12,
+        "group_images_per_perturbation": 120,
+        "perturbation_kinds": {
+          "add_site": 12,
+          "drop_site": 11,
+          "move_site": 11
+        },
+        "wrong_windows_tested": 34,
+        "wrongly_accepted": 0
+      }
+    }
+  },
+  "K_ATTACK_H_RECEIPT": {
+    "finding": "The receipt's own classification re-partitions to 2 determined / 2 existence-only / 1 supplied, its residual list has 3 items and 15/15 certificates are true.  The primary's preflight hard-fail probe exited 2 (expected 2) and named the missing pin: True.",
+    "pass": true,
+    "preflight_hard_fail_probe": {
+      "attempted": true,
+      "committed_primary_untouched": true,
+      "exit_code": 2,
+      "exit_code_is_2": true,
+      "missing_pin_named_in_stderr": true,
+      "receipt_unchanged_by_the_failed_run": true,
+      "scratch_copy": ".gbw1_check_scratch/primary_missing_pin.py",
+      "stderr_head": [
+        "FATAL: pinned input(s) missing; refusing to run.",
+        "  MISSING PIN: docs/PIN_THAT_DOES_NOT_EXIST_gbw1_independent_check.md"
+      ]
+    },
+    "receipt_internal_consistency": {
+      "all_certificates_pass_field": true,
+      "certificate_count": 15,
+      "certificates_all_true": true,
+      "classification_partitions_five": true,
+      "count_determined_matches_classification": true,
+      "count_existence_only_matches_classification": true,
+      "count_supplied_matches_classification": true,
+      "residual_named_exactly_len": 3,
+      "source_pin_count": 7
+    },
+    "recomputed_partition": {
+      "determined": [
+        "D",
+        "barrier"
+      ],
+      "partial": [
+        "a",
+        "b"
+      ],
+      "supplied": [
+        "N"
+      ]
+    }
+  },
+  "L_VERDICTS": {
+    "claims": {
+      "C1": "barrier DERIVED: B(R)=supp(R) equivariant 0/1440, landed fixed central barrier refuted 1152/1440",
+      "C2": "D GAUGE: depth-indexed readout non-decreasing and stationary above the last formation depth on 12/12",
+      "C3": "a/b EXISTENCE_DERIVED_UNIQUENESS_OPEN; W1b refuted by REQ4 24/35; the ONLY surviving split is the centre convention; annulus fill 7/12",
+      "C4": "N SUPPLIED / GBW1 mis-scoped: Z theta-dependent on 7/12 at the boundary locus, theta-independent 12/12 on the support locus",
+      "C5": "centre exposed, EXISTENCE_DERIVED_UNIQUENESS_OPEN, splits on 4/12",
+      "C6": "0 of 3 swept window candidates is both admissible and barrier-disjoint"
+    },
+    "comparison_rows": [
+      {
+        "attack": "A",
+        "claim": "C1",
+        "claimed": 1440,
+        "comparable": true,
+        "key": "barrier_equivariance_checks",
+        "matches": true,
+        "note": "",
+        "observed": 1440
+      },
+      {
+        "attack": "A",
+        "claim": "C1",
+        "claimed": 0,
+        "comparable": true,
+        "key": "barrier_equivariance_failures",
+        "matches": true,
+        "note": "",
+        "observed": 0
+      },
+      {
+        "attack": "A",
+        "claim": "C1",
+        "claimed": 1152,
+        "comparable": true,
+        "key": "landed_impostor_failures",
+        "matches": true,
+        "note": "",
+        "observed": 1152
+      },
+      {
+        "attack": "A",
+        "claim": "C1",
+        "claimed": 1440,
+        "comparable": true,
+        "key": "landed_impostor_checks",
+        "matches": true,
+        "note": "",
+        "observed": 1440
+      },
+      {
+        "attack": "A",
+        "claim": "C1",
+        "claimed": 0,
+        "comparable": true,
+        "key": "barrier_req4_failures",
+        "matches": true,
+        "note": "",
+        "observed": 0
+      },
+      {
+        "attack": "A",
+        "claim": "C3",
+        "claimed": 0,
+        "comparable": true,
+        "key": "w1_equivariance_failures",
+        "matches": true,
+        "note": "",
+        "observed": 0
+      },
+      {
+        "attack": "A",
+        "claim": "C3",
+        "claimed": 12,
+        "comparable": true,
+        "key": "w1_distinct_values",
+        "matches": true,
+        "note": "",
+        "observed": 12
+      },
+      {
+        "attack": "B",
+        "claim": "C3",
+        "claimed": 35,
+        "comparable": true,
+        "key": "req4_nested_pairs",
+        "matches": true,
+        "note": "",
+        "observed": 35
+      },
+      {
+        "attack": "B",
+        "claim": "C3",
+        "claimed": 0,
+        "comparable": true,
+        "key": "w1_req4_failures",
+        "matches": true,
+        "note": "",
+        "observed": 0
+      },
+      {
+        "attack": "B",
+        "claim": "C3",
+        "claimed": 24,
+        "comparable": true,
+        "key": "w1b_req4_failures",
+        "matches": true,
+        "note": "",
+        "observed": 24
+      },
+      {
+        "attack": "C",
+        "claim": "C5",
+        "claimed": 4,
+        "comparable": true,
+        "key": "centre_splits",
+        "matches": true,
+        "note": "",
+        "observed": 4
+      },
+      {
+        "attack": "C",
+        "claim": "C5",
+        "claimed": [
+          "hollow_annulus",
+          "Lshape",
+          "sparse_a",
+          "sparse_b"
+        ],
+        "comparable": true,
+        "key": "centre_split_configs",
+        "matches": true,
+        "note": "",
+        "observed": [
+          "hollow_annulus",
+          "Lshape",
+          "sparse_a",
+          "sparse_b"
+        ]
+      },
+      {
+        "attack": "C",
+        "claim": "C3",
+        "claimed": 4,
+        "comparable": true,
+        "key": "disagreements_counted",
+        "matches": true,
+        "note": "",
+        "observed": 4
+      },
+      {
+        "attack": "D",
+        "claim": "C4",
+        "claimed": 7,
+        "comparable": true,
+        "key": "boundary_locus_theta_dependent_primary_thetas",
+        "matches": true,
+        "note": "",
+        "observed": 7
+      },
+      {
+        "attack": "D",
+        "claim": "C4",
+        "claimed": 0,
+        "comparable": true,
+        "key": "support_locus_theta_dependent",
+        "matches": true,
+        "note": "",
+        "observed": 0
+      },
+      {
+        "attack": "E",
+        "claim": "C2",
+        "claimed": 12,
+        "comparable": true,
+        "key": "configs_stationary",
+        "matches": true,
+        "note": "",
+        "observed": 12
+      },
+      {
+        "attack": "E",
+        "claim": "C2",
+        "claimed": 12,
+        "comparable": true,
+        "key": "configs_nondecreasing",
+        "matches": true,
+        "note": "",
+        "observed": 12
+      },
+      {
+        "attack": "F",
+        "claim": "C3",
+        "claimed": null,
+        "comparable": false,
+        "key": "admissible_rivals_beyond_centre_convention",
+        "matches": null,
+        "note": "",
+        "observed": 2
+      },
+      {
+        "attack": "G",
+        "claim": "C3",
+        "claimed": 0,
+        "comparable": true,
+        "key": "stress_w1_wrongly_accepted",
+        "matches": true,
+        "note": "",
+        "observed": 0
+      },
+      {
+        "attack": "G",
+        "claim": "C1",
+        "claimed": 0,
+        "comparable": true,
+        "key": "stress_w4_wrongly_accepted",
+        "matches": true,
+        "note": "",
+        "observed": 0
+      },
+      {
+        "attack": "G",
+        "claim": "C1",
+        "claimed": 12,
+        "comparable": true,
+        "key": "stress_displacement_control",
+        "matches": true,
+        "note": "",
+        "observed": 12
+      },
+      {
+        "attack": "H",
+        "claim": "C1",
+        "claimed": 2,
+        "comparable": true,
+        "key": "receipt_count_determined",
+        "matches": true,
+        "note": "",
+        "observed": 2
+      },
+      {
+        "attack": "H",
+        "claim": "C3",
+        "claimed": 2,
+        "comparable": true,
+        "key": "receipt_count_existence_only",
+        "matches": true,
+        "note": "",
+        "observed": 2
+      },
+      {
+        "attack": "H",
+        "claim": "C4",
+        "claimed": 1,
+        "comparable": true,
+        "key": "receipt_count_supplied",
+        "matches": true,
+        "note": "",
+        "observed": 1
+      },
+      {
+        "attack": "H",
+        "claim": "C6",
+        "claimed": 3,
+        "comparable": true,
+        "key": "receipt_residual_len",
+        "matches": true,
+        "note": "",
+        "observed": 3
+      },
+      {
+        "attack": "H",
+        "claim": "C1",
+        "claimed": 15,
+        "comparable": true,
+        "key": "receipt_certificates",
+        "matches": true,
+        "note": "",
+        "observed": 15
+      }
+    ],
+    "dual_path_agreement": true,
+    "finding": "C1=CORROBORATED; C2=CORROBORATED; C3=NARROWED; C4=CORROBORATED; C5=CORROBORATED; C6=NARROWED",
+    "mismatched_rows": [],
+    "narrowings": {
+      "C3": "the declared requirement set admits 2 further admissible maps this checker built (the k-fold dilated supports), each disagreeing with W1 as a SET on 12/12 configs, so the surviving uniqueness split is NOT the centre convention alone",
+      "C6": "C6 is understated: under REQ4 AS DECLARED, no non-empty window can be barrier-disjoint at all, so the negative is a theorem rather than an exhausted 3-candidate sweep"
+    },
+    "pass": true,
+    "verdicts": {
+      "C1": "CORROBORATED",
+      "C2": "CORROBORATED",
+      "C3": "NARROWED",
+      "C4": "CORROBORATED",
+      "C5": "CORROBORATED",
+      "C6": "NARROWED"
+    },
+    "verdicts_independent_recheck": {
+      "C1": "CORROBORATED",
+      "C2": "CORROBORATED",
+      "C3": "NARROWED",
+      "C4": "CORROBORATED",
+      "C5": "CORROBORATED",
+      "C6": "NARROWED"
+    }
+  },
+  "M_COVERAGE": {
+    "evidence_rows_recorded": 26,
+    "finding": "8/8 mandatory attacks ran, 26 evidence rows recorded.",
+    "mandatory": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "missing": [],
+    "pass": true,
+    "ran": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ]
+  },
+  "N_SELF_AUDIT": {
+    "all_mandatory_attacks_called_in_run": true,
+    "attack_functions_found": [
+      "attack_A",
+      "attack_B",
+      "attack_C",
+      "attack_D",
+      "attack_E",
+      "attack_F",
+      "attack_G",
+      "attack_H"
+    ],
+    "attack_functions_referencing_PRIMARY_CLAIMS": [],
+    "finding": "8 attack functions; 0 of them reference the primary's claimed numbers (must be 0); 8/8 mandatory attack calls are present in run().",
+    "mandatory_attack_calls_present_in_run": [
+      "attack_A",
+      "attack_B",
+      "attack_C",
+      "attack_D",
+      "attack_E",
+      "attack_F",
+      "attack_G",
+      "attack_H"
+    ],
+    "mandatory_attacks": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "pass": true,
+    "quarantine_holds": true
+  },
+  "Y_TEETH": {
+    "all_bite": true,
+    "count": 7,
+    "finding": "7/7 self-mutations flipped their named certificate to FAIL and exited nonzero.",
+    "mutations": [
+      {
+        "exit_code": 2,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "A_PIN_INTEGRITY"
+        ],
+        "mutation": "tampered_pin_digest",
+        "mutation_applied": true,
+        "target_certificate": "A_PIN_INTEGRITY",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "C_FAMILY"
+        ],
+        "mutation": "dropped_family_member",
+        "mutation_applied": true,
+        "target_certificate": "C_FAMILY",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "L_VERDICTS"
+        ],
+        "mutation": "hardcoded_classification",
+        "mutation_applied": true,
+        "target_certificate": "L_VERDICTS",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "N_SELF_AUDIT"
+        ],
+        "mutation": "leaked_expected_count",
+        "mutation_applied": true,
+        "target_certificate": "N_SELF_AUDIT",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "J_ATTACK_G_STRESS",
+          "M_COVERAGE",
+          "N_SELF_AUDIT"
+        ],
+        "mutation": "skipped_attack",
+        "mutation_applied": true,
+        "target_certificate": "M_COVERAGE",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "G_ATTACK_D"
+        ],
+        "mutation": "wrong_locus_swap",
+        "mutation_applied": true,
+        "target_certificate": "G_ATTACK_D",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      },
+      {
+        "exit_code": 1,
+        "exit_nonzero": true,
+        "failing_certificates_observed": [
+          "Z_CONTROLS"
+        ],
+        "mutation": "firewall_removed",
+        "mutation_applied": true,
+        "target_certificate": "Z_CONTROLS",
+        "target_certificate_failed": true,
+        "tooth_bites": true
+      }
+    ],
+    "pass": true
+  },
+  "Z_CONTROLS": {
+    "C6_strengthening": {
+      "configs_where_the_disjoint_window_is_forced_empty": 12,
+      "of": 12,
+      "rows": [
+        {
+          "box_sites": 729,
+          "config": "single",
+          "sites_excluded_by_disjointness_itself": 1,
+          "sites_excluded_by_one_site_extension": 728,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "pair",
+          "sites_excluded_by_disjointness_itself": 2,
+          "sites_excluded_by_one_site_extension": 727,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "shell1",
+          "sites_excluded_by_disjointness_itself": 6,
+          "sites_excluded_by_one_site_extension": 723,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "ball1",
+          "sites_excluded_by_disjointness_itself": 7,
+          "sites_excluded_by_one_site_extension": 722,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "annulus_1_4",
+          "sites_excluded_by_disjointness_itself": 32,
+          "sites_excluded_by_one_site_extension": 697,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "hollow_annulus",
+          "sites_excluded_by_disjointness_itself": 31,
+          "sites_excluded_by_one_site_extension": 698,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "Lshape",
+          "sites_excluded_by_disjointness_itself": 5,
+          "sites_excluded_by_one_site_extension": 724,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "plane_square",
+          "sites_excluded_by_disjointness_itself": 9,
+          "sites_excluded_by_one_site_extension": 720,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "chain",
+          "sites_excluded_by_disjointness_itself": 5,
+          "sites_excluded_by_one_site_extension": 724,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "sparse_a",
+          "sites_excluded_by_disjointness_itself": 9,
+          "sites_excluded_by_one_site_extension": 720,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "sparse_b",
+          "sites_excluded_by_disjointness_itself": 9,
+          "sites_excluded_by_one_site_extension": 720,
+          "window_forced_empty_inside_box": true
+        },
+        {
+          "box_sites": 729,
+          "config": "offcentre_ball",
+          "sites_excluded_by_disjointness_itself": 7,
+          "sites_excluded_by_one_site_extension": 722,
+          "window_forced_empty_inside_box": true
+        }
+      ],
+      "statement": "REQ4 (permanence monotonicity under arbitrary R subset R', which is how the primary DECLARES it) plus barrier-disjointness force W(R) = empty, and the empty map fails REQ5.  So the landed barrier/window separation has no record-determined realization at all -- not merely none among the three candidates the primary swept.  Caveat, stated exactly: the primary only TESTS REQ4 on depth-truncation chains, and this argument uses the declared single-site-extension form of REQ4."
+    },
+    "blocked_modules_loaded": [],
+    "exit_code_policy": "the exit code reports the INTEGRITY of this checker, never the direction of its verdicts: a REFUTED claim with a clean run is still exit 0",
+    "finding": "firewall installed=True, firewall hits=0, blocked modules loaded=0, runtime 13.88s.",
+    "firewall_hits": [],
+    "firewall_installed": true,
+    "floating_point_in_certified_quantities": false,
+    "is_child_process": false,
+    "pass": true,
+    "primary_read_as": "text / AST / JSON only",
+    "runtime_limit_seconds": 900,
+    "runtime_seconds": 13.875,
+    "runtime_under_limit": true
+  }
+}
+
+check receipt: outputs/gbw1_independent_check_cycle885_receipt_2026_07_28.json sha256=703a579b250ae655
+stdout_bytes=59405 under_limit=True

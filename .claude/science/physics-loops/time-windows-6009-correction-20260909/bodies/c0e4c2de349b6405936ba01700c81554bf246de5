@@ -1,0 +1,310 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle894_interface_attack_2026_07_28.py
+runner_sha256: 9ac694b1b42bd134d5de331ffbb489a7029dedb5521a706ad1f33dda75682625
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.122
+status: ok
+----- stdout -----
+==========================================================================
+CYCLE 894 -- THE INTERFACE ATTACK
+does gravity's Z constrain the Born selection?
+==========================================================================
+
+A: PINS
+  OK  scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py
+      sha256 6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b
+      blob   af2e27c4a01b02b68c319e3a572eaeb2217e04e7  bytes 47315
+  OK  outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json
+      sha256 4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c
+      blob   565faf0be5e6930b08f585fea1c30b2ceaa41a91  bytes 7169
+  OK  scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py
+      sha256 76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f
+      blob   360eed9e17eab1af19ca03d7ea1161dafaf56da0  bytes 101417
+  OK  outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json
+      sha256 1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae
+      blob   722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2  bytes 8816
+  OK  scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py
+      sha256 daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32
+      blob   7fbd35a66859e8b888e71d7305e8cacc32a8b8ef  bytes 113653
+  OK  scripts/frontier_cycle887_window_freedom_2026_07_28.py
+      sha256 139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83
+      blob   0fbcf92fc98b0d88d436a05efdc33449c52473db  bytes 94389
+  OK  docs/MINIMAL_AXIOMS_2026-06-29.md
+      sha256 fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697
+      blob   4a863da1f3f255354839277271a3a69a5c205133  bytes 8846
+  vendored 878 primary blob == its own receipt's record: True
+  firewall hits: []  forbidden stems imported: []
+  AST nodes missing: {'885': [], '887': [], '892': [], '878': []}
+  A_PINS pass: True
+
+B: RESTRICTION GATE -- 878 (the vendored event space)
+  [ok ] events_by_tag sums to the event cardinality
+        recomputed=92260  pinned=92260
+  [ok ] F_ATOM cells == event cardinality (atoms are singletons)
+        recomputed=92260  pinned=92260
+  [ok ] atoms_are_singletons flag
+        recomputed=True  pinned=True
+  [ok ] F_WORLD cells == worlds carrying an event
+        recomputed=748  pinned=748
+  [ok ] F_TAG cells == 3 (F, B0, B1)
+        recomputed=3  pinned=3
+  [ok ] F_TAG_ORDINAL == 1 (F,0) + REGISTER_CAP per bank
+        recomputed=129  pinned=129
+  [ok ] world orbits x orbit size == worlds
+        recomputed=748  pinned=748
+  [ok ] orbit histogram is uniform at the group order
+        recomputed={'11': 68}  pinned={'11': 68}
+  [ok ] M3 and M4 vanish on the SAME worlds (occ>0 iff formed)
+        recomputed=73088  pinned=73088
+  [ok ] M5 zero-set contains M4's (moment-0 worlds also vanish)
+        recomputed=True  pinned=True
+  [ok ] mean events per world lies inside the certified range
+        recomputed=True  pinned=True
+  [ok ] F-tag events == worlds that ever form (one F write per world)
+        recomputed=True  pinned=True
+  [ok ] event cardinality
+        recomputed=92260  pinned=92260
+  [ok ] worlds
+        recomputed=748  pinned=748
+  [ok ] events by tag
+        recomputed={'B0': 47872, 'B1': 44224, 'F': 164}  pinned={'B0': 47872, 'B1': 44224, 'F': 164}
+  [ok ] F_WORLD_TAG cells
+        recomputed=1603  pinned=1603
+  [ok ] per-world event count range
+        recomputed=[64, 129]  pinned=[64, 129]
+  [ok ] five admissible weightings
+        recomputed=5  pinned=5
+  [ok ] admissible set == the AST-read candidate names
+        recomputed=['M1_COUNTING', 'M2_PER_WORLD_UNIFORM', 'M3_OCCUPATION_WEIGHTED', 'M4_FORMATION_LIFETIME', 'M5_FORMATION_MOMENT']  pinned=['M1_COUNTING', 'M2_PER_WORLD_UNIFORM', 'M3_OCCUPATION_WEIGHTED', 'M4_FORMATION_LIFETIME', 'M5_FORMATION_MOMENT']
+  [ok ] the declared control is NOT admissible
+        recomputed=False  pinned=False
+  [ok ] all ten pairs discriminate
+        recomputed=10  pinned=10
+  [ok ] C(5,2) == the discriminating-pair count
+        recomputed=10  pinned=10
+  [ok ] no indistinguishable pairs
+        recomputed=0  pinned=0
+  [ok ] AST: build_candidates reads only event field 0
+        recomputed=True  pinned=True
+  [ok ] surrogate world count
+        recomputed=748  pinned=748
+  [ok ] surrogate event total
+        recomputed=92260  pinned=92260
+  [ok ] surrogate per-world counts inside the certified range
+        recomputed=True  pinned=True
+  [ok ] surrogate supported worlds
+        recomputed=748  pinned=748
+  [ok ] REBUILT zero-weight counts reproduce 878's certified row
+        recomputed={'M1_COUNTING': 0, 'M2_PER_WORLD_UNIFORM': 0, 'M3_OCCUPATION_WEIGHTED': 73088, 'M4_FORMATION_LIFETIME': 73088, 'M5_FORMATION_MOMENT': 76184}  pinned={'M1_COUNTING': 0, 'M2_PER_WORLD_UNIFORM': 0, 'M3_OCCUPATION_WEIGHTED': 73088, 'M4_FORMATION_LIFETIME': 73088, 'M5_FORMATION_MOMENT': 76184}
+  [ok ] REBUILT support-faithfulness reproduces 878's certified row
+        recomputed={'M1_COUNTING': True, 'M2_PER_WORLD_UNIFORM': True, 'M3_OCCUPATION_WEIGHTED': False, 'M4_FORMATION_LIFETIME': False, 'M5_FORMATION_MOMENT': False}  pinned={'M1_COUNTING': True, 'M2_PER_WORLD_UNIFORM': True, 'M3_OCCUPATION_WEIGHTED': False, 'M4_FORMATION_LIFETIME': False, 'M5_FORMATION_MOMENT': False}
+  [ok ] REBUILT all-pairs discrimination
+        recomputed=10  pinned=10
+  [ok ] REBUILT normalizability: every candidate has positive total mass
+        recomputed=True  pinned=True
+  checks 32, failed 0
+  The Cycle-863 dependency of the 878 primary is ABSENT from this branch, so 878's trajectory is not re-run here.  The surrogate is exact on the four inputs the AST proves the weightings read, and is CONSTRAINED, not fitted: its per-world multiset is forced by 878's certified totals, formation count and range.  It is a consistency rebuild of the weighting layer, not an independent re-derivation of the event space; the event space itself enters through the certified receipt rows checked above.
+  B pass: True
+
+C: RESTRICTION GATE -- 892 (Z, recomputed live)
+  [ok ] 885 family digest
+        recomputed=30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e  pinned=30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e
+  [ok ] family size
+        recomputed=12  pinned=12
+  [ok ] containment-holding window names
+        recomputed=['axis_segment_closure', 'bounding_box', 'minkowski_S_ball1__885_checker_dilation_k1', 'minkowski_S_ball2__885_checker_dilation_k2', 'minkowski_S_far_shell__origin_present', 'minkowski_S_zero__the_885_support_window', 'readout_keyed_inflation', 'size_keyed_inflation', 'union_box_with_dilation']  pinned=['axis_segment_closure', 'bounding_box', 'minkowski_S_ball1__885_checker_dilation_k1', 'minkowski_S_ball2__885_checker_dilation_k2', 'minkowski_S_far_shell__origin_present', 'minkowski_S_zero__the_885_support_window', 'readout_keyed_inflation', 'size_keyed_inflation', 'union_box_with_dilation']
+  [ok ] holding window count
+        recomputed=9  pinned=9
+  [ok ] cell count = windows x configs x thetas
+        recomputed=648  pinned=648
+  [ok ] vanishing cells
+        recomputed=42  pinned=42
+  [ok ] negativity violations
+        recomputed=0  pinned=0
+  [ok ] finite-additivity checks
+        recomputed=72  pinned=72
+  [ok ] finite-additivity violations
+        recomputed=0  pinned=0
+  [ok ] total mass theta-dependent configs
+        recomputed=7  pinned=7
+  [ok ] box-normalized ratio still theta-dependent configs
+        recomputed=7  pinned=7
+  [ok ] amplitude sites inside supp(R), family total
+        recomputed=8  pinned=8
+  [ok ] amplitude sites outside supp(R), family total
+        recomputed=844  pinned=844
+  [ok ] configs whose reachable set meets supp(R)
+        recomputed=0  pinned=0
+  [ok ] frozen walks
+        recomputed=5  pinned=5
+  [ok ] kernel identity checks
+        recomputed=648  pinned=648
+  [ok ] kernel identity violations
+        recomputed=0  pinned=0
+  [ok ] kernel max degree
+        recomputed=4  pinned=4
+  [ok ] interference orders present
+        recomputed=[0, 1, 2, 3, 4]  pinned=[0, 1, 2, 3, 4]
+  checks 19, failed 0
+  C pass: True
+
+D: Q1 -- THE COMPOSITION SURFACE
+  substrate level -- TYPE MISMATCH, computed:
+    878 index set: E, the realized record-write events, |E| = 92260, atom arity 5 ['world', 'moment', 'tag', 'ordinal', 'content']
+      record-configuration argument: False   kernel argument: False
+    892 index set: (record configuration R, kernel theta, window W subset of the box)
+      12 configs x 9 holding windows x 6 thetas over 729 sites
+      record-configuration argument: True   kernel argument: True
+    cardinality: a fibre-uniform surjection E -> BOX would need 729 | 92260; the remainder is 406
+    symmetry: |Z_11| = 11, |cubic rotations| = 24, gcd = 1
+      by Lagrange the image of any homomorphism Z_11 -> the cubic rotation group has order dividing gcd(11,24) = 1, so the ONLY such homomorphism is trivial.  The single symmetry credential 878 was able to award -- covariance of ['M2_PER_WORLD_UNIFORM'] under the landed monitor-phase group -- is therefore invisible on the 892 side: it cannot be transported across any bridge.
+    arity: Z has 8 quadratic classes over the family; every 878 weighting has 1
+
+  category level -- THEY DO MEET:
+    finitely additive non-negative Q-valued set functions on a finite Boolean algebra
+    bridge: A BRIDGE is a pair (phi, N) with phi: E -> BOX u {bottom} any map and N(R, theta) > 0 any positive normalizer, such that for every record configuration R, every theta and every containment-holding admissible window W        mu(phi^{-1}(W)) = Z(R, theta, W) / N(R, theta).  phi and mu carry NO record-configuration argument and NO kernel argument; that is not an assumption, it is an AST-verified fact about build_candidates, whose signature and body are reproduced in certificate B.
+    Because the left side of the bridge equation is INDEPENDENT of (R, theta) while the right side is not, every requirement can be tested WITHOUT constructing phi: any property of Z that varies with (R, theta) is a property no bridge can deliver, for any phi and any N.  The verdicts below are therefore bridge-independent -- they are not statements about one chosen identification that failed.
+
+  C894-T1 CONFIG-FREE BRIDGE OBSTRUCTION  holds=True
+    If some containment-holding admissible window W has Z(R,theta,W) = 0 for one (R,theta) and Z(R',theta',W) > 0 for another, then no config-free weighting can satisfy the bridge equation on W for ANY phi and ANY positive normalizer: phi^{-1}(W) is one fixed event set, so mu(phi^{-1}(W)) is one fixed number, which cannot be both zero and positive after division by a positive N.
+      witness: axis_segment_closure vanishes on 1 and is positive on 11 (config,theta) cells; vanishing configs ['Lshape']
+      witness: minkowski_S_far_shell__origin_present vanishes on 1 and is positive on 11 (config,theta) cells; vanishing configs ['shell1']
+      witness: minkowski_S_zero__the_885_support_window vanishes on 5 and is positive on 7 (config,theta) cells; vanishing configs ['Lshape', 'annulus_1_4', 'hollow_annulus', 'shell1', 'sparse_a']
+  C894-T2 NO WINDOW-RATIO NORMALIZER ABSORBS THETA  holds=True
+    For a theta-free mu the ratio mu(phi^{-1}(W)) / mu(phi^{-1}(W')) is theta-free, so a bridge requires Z(R,theta,W)/Z(R,theta,W') to be theta-free on every pair of holding windows.  This STRICTLY STRENGTHENS 892's IF3, which tested only the box-mass normalizer: here every one of the 36 holding pairs is tested on every configuration.
+      single: theta-varying window pairs 25/36  absorbable=False
+      pair: theta-varying window pairs 25/36  absorbable=False
+      shell1: theta-varying window pairs 0/36  absorbable=True
+      ball1: theta-varying window pairs 0/36  absorbable=True
+      annulus_1_4: theta-varying window pairs 0/36  absorbable=True
+      hollow_annulus: theta-varying window pairs 0/36  absorbable=True
+      Lshape: theta-varying window pairs 18/36  absorbable=False
+      plane_square: theta-varying window pairs 27/36  absorbable=False
+      chain: theta-varying window pairs 27/36  absorbable=False
+      sparse_a: theta-varying window pairs 25/36  absorbable=False
+      sparse_b: theta-varying window pairs 33/36  absorbable=False
+      offcentre_ball: theta-varying window pairs 0/36  absorbable=True
+  D finding: BOTH answers are true and they are not in tension.  At the SUBSTRATE level the lineages do NOT meet: the index sets, the symmetry groups (coprime orders 11 and 24) and the arities differ, and the mismatch is computed above rather than asserted.  At the CATEGORY level they DO meet: both objects are finitely additive non-negative rational set functions on finite Boolean algebras, and the bridge equation above is the honest composition surface.  The table of Q2 is therefore buildable, and -- because the 878 side is provably free of both the record-configuration and the kernel argument -- every verdict in it holds for EVERY bridge, not merely for some canonical one.
+
+E: Q2 -- THE VERDICT TABLE (5 weightings x 5 owed requirements)
+
+  weighting                     IF1    IF3    IF4    IF5    IF6   passed
+  ----------------------------------------------------------------------
+  M1_COUNTING                  FAIL   FAIL   FAIL   FAIL   FAIL   0/5
+  M2_PER_WORLD_UNIFORM         FAIL   FAIL   FAIL   FAIL   FAIL   0/5
+  M3_OCCUPATION_WEIGHTED       FAIL   FAIL   FAIL   FAIL   FAIL   0/5
+  M4_FORMATION_LIFETIME        FAIL   FAIL   FAIL   FAIL   FAIL   0/5
+  M5_FORMATION_MOMENT          FAIL   FAIL   FAIL   FAIL   FAIL   0/5
+  ----------------------------------------------------------------------
+  P1_PLANTED_SURVIVOR          PASS   PASS   PASS   PASS   PASS   5/5   [PLANTED]
+  P2_PLANTED_NEAR_MISS         PASS   FAIL   PASS   PASS   FAIL   3/5   [PLANTED]
+
+  cells computed 25/25   complete=True
+  survivors: []
+  OUTCOME CLASS: NO-GO
+
+  every cell, with its witness:
+    M1_COUNTING
+      IF1 FAIL: the weighting places a FIXED fraction 4793/23065 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one
+      IF3 FAIL: the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations
+      IF4 FAIL: the failure is NOT resolution -- the weighting has 92261 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built
+      IF5 FAIL: sub-test (a) already fails: the weighting is strictly positive on every atom, so mu(A) = 0 only for the empty set, and it can never match a vanishing Z on a non-empty window.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive
+      IF6 FAIL: the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant
+    M2_PER_WORLD_UNIFORM
+      IF1 FAIL: the weighting places a FIXED fraction 41/187 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one
+      IF3 FAIL: the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations
+      IF4 FAIL: the failure is NOT resolution -- the weighting has 92261 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built
+      IF5 FAIL: sub-test (a) already fails: the weighting is strictly positive on every atom, so mu(A) = 0 only for the empty set, and it can never match a vanishing Z on a non-empty window.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive
+      IF6 FAIL: the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant
+    M3_OCCUPATION_WEIGHTED
+      IF1 FAIL: the weighting places a FIXED fraction 1/1 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one
+      IF3 FAIL: the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations
+      IF4 FAIL: the failure is NOT resolution -- the weighting has 19173 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built
+      IF5 FAIL: sub-test (a) PASSES -- the weighting has 73088 zero-weight atoms, so it CAN vanish on a non-empty set.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive
+      IF6 FAIL: the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant
+    M4_FORMATION_LIFETIME
+      IF1 FAIL: the weighting places a FIXED fraction 1/1 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one
+      IF3 FAIL: the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations
+      IF4 FAIL: the failure is NOT resolution -- the weighting has 19173 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built
+      IF5 FAIL: sub-test (a) PASSES -- the weighting has 73088 zero-weight atoms, so it CAN vanish on a non-empty set.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive
+      IF6 FAIL: the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant
+    M5_FORMATION_MOMENT
+      IF1 FAIL: the weighting places a FIXED fraction 1/1 of its mass on the record locus, while Z's on-record fraction is a function of the configuration and of theta; a single fixed fraction cannot track a varying one
+      IF3 FAIL: the weighting has kernel arity 0 and theta survives every window-ratio normalizer on 7 of 12 configurations
+      IF4 FAIL: the failure is NOT resolution -- the weighting has 16077 distinct values available along a maximal nested chain, far more than the 7 window classes Z ever needs.  The failure is arity: the weighting has no window argument at all, so the window would have to come from the bridge map, which is exactly the object nobody has built
+      IF5 FAIL: sub-test (a) PASSES -- the weighting has 76184 zero-weight atoms, so it CAN vanish on a non-empty set.  sub-test (b) fails by C894-T1: 3 holding windows both vanish and are positive across the family, and this weighting has record-configuration arity 0, so it assigns ONE fixed number to each window's preimage -- which cannot be both zero and positive
+      IF6 FAIL: the weighting is degree 0 in cos phi -- a constant -- while Z reaches degree 4 on 7 of 12 configurations; a constant can match a non-constant polynomial only where that polynomial is itself constant
+
+  the requirements verbatim from the pinned 892 primary:
+    IF1: The event-space step must supply a map rho from record configurations to amplitude fields whose SUPPORT overlaps supp(R).
+    IF2: rho must be such that Z is a FINITELY ADDITIVE set function over disjoint window pieces.
+    IF3: rho must supply a NORMALIZER that is theta-invariant, or else declare theta as an observable.
+    IF4: rho must fix the WINDOW, because Z is not window-invariant.
+    IF5: rho must tolerate VANISHING Z on admissible windows, or exclude the configurations where it vanishes.
+    IF6: rho must respect the interference structure: any identification must be with a degree-D polynomial in cos phi, not with an arbitrary function of the kernel.
+
+F: FALSIFIER VISIBILITY
+  planted survivor passes: ['IF1', 'IF3', 'IF4', 'IF5', 'IF6']
+  planted near-miss passes ['IF1', 'IF4', 'IF5'], fails ['IF3', 'IF6']
+  The table SEES the planted survivor: P1 passes all 5 owed requirements.  It is not a rubber stamp: the planted near-miss P2, which differs from P1 only in freezing the kernel coordinate, passes 3 and fails 2 (['IF3', 'IF6']) -- exactly the two requirements that reference the kernel.  A table that returns all-FAIL on the real candidates while returning all-PASS on a designed survivor and a split verdict on a designed near-miss is discriminating, not degenerate.
+  F pass: True
+
+G: NEEDLE GATE
+  vocabulary: ['born rule', "born's rule", 'probability amplitude squared', '|psi|^2', 'wavefunction', 'hilbert space', 'unitary evolution', 'quantum probability', 'measurement postulate']
+  leaked into derived content: []
+  axiom exclusion list present in the pinned md: True
+  G pass: True
+
+H: Q3 -- THE RESIDUAL, SIZED
+  P1 RECORD-CONFIGURATION ARITY
+    requires: the weight must be a FAMILY of set functions indexed by the record configuration, not one set function on one event space
+    derived from: Z splits the 12-configuration family into 8 distinct classes at quadratic order against 1 at linear order (892 certificate G, recomputed here as the distinct-Z-class rows); each 878 weighting supplies exactly 1 class because its construction has no configuration argument (AST-verified in certificate B)
+    deficit: {'required_classes': 8, 'supplied_classes': 1}
+    closes: ['IF1', 'IF5']
+  P2 KERNEL ARITY WITH BOUNDED POLYNOMIAL ORDER
+    requires: the weight must carry the kernel coordinate cos phi as a polynomial of degree at most the walk depth
+    derived from: C894-T2 computed here: on 7 of 12 configurations theta survives EVERY window-ratio normalizer over all 36 holding pairs, so no theta-free normalizer removes it; and 892's certificate H, recomputed here, fixes the order at 4 with orders [0, 1, 2, 3, 4] realized
+    deficit: {'required_degree': 4, 'supplied_degree': 0, 'coefficients_per_cell': 5}
+    closes: ['IF3', 'IF6']
+  P3 CONFIGURATION-DEPENDENT ZERO SET
+    requires: the weight must vanish on exactly the cells where Z vanishes and be positive on the rest, with the zero set depending on the configuration
+    derived from: 42 of 648 cells vanish, and 3 holding windows (['axis_segment_closure', 'minkowski_S_far_shell__origin_present', 'minkowski_S_zero__the_885_support_window']) both vanish and are positive across the family -- the exact obstruction of C894-T1
+    deficit: {'required_vanishing_cells': 42, 'supplied_by_the_best_878_candidate': 'a configuration-independent zero set'}
+    closes: ['IF5']
+  P4 OFF-RECORD LOCUS
+    requires: the weight must place mass off supp(R), and its on-record fraction must be able to reach 0 and 1
+    derived from: 844 amplitude sites lie outside supp(R) against 8 inside, and the inside sites are exactly the seed (892 certificate E, recomputed here); the on-record mass fraction reaches 0 on 5 configurations (['Lshape', 'annulus_1_4', 'hollow_annulus', 'shell1', 'sparse_a']) and 1 on 2 (['ball1', 'offcentre_ball'])
+    deficit: {'required_fraction_classes': 32, 'supplied_fraction_classes': 1}
+    closes: ['IF1']
+  P5 WINDOW ARGUMENT
+    requires: the weight must take the window as an argument
+    derived from: Z separates the holding windows into [1, 2, 4, 6, 7] classes depending on the configuration; the 878 weightings have ample resolution but no window argument
+    deficit: {'required': 'a set function on box windows', 'supplied': 'a set function on record-write events'}
+    closes: ['IF4']
+  bridging object: a map Phi from record configurations to event-space measures.  Every 878 weighting is Phi evaluated at a single unnamed configuration; the 892 side needs Phi itself.
+    size by window: 12 configs x 9 holding windows x 5 Chebyshev coefficients = 540 rationals
+    size by site:   4260 rationals if specified site-wise on the amplitude support (additivity then determines every window)
+  next door sized: 5 properties, of which P1 (configuration arity) and P2 (kernel arity) are the only two that cannot be read off the pinned artifacts -- they must be CONSTRUCTED.  P3, P4 and P5 are then forced by rows this cycle already computed.  The construction target is a 4260-rational object, or 540 if specified window-wise.
+
+==========================================================================
+  A_PINS               PASS
+  B_RESTRICTION_878    PASS
+  C_RESTRICTION_892    PASS
+  D_COMPOSITION        PASS
+  E_TABLE              PASS
+  F_FALSIFIER          PASS
+  G_NEEDLE             PASS
+  H_RESIDUAL           PASS
+  I_DOUBLE_BUILD       PASS
+  J_RUNTIME            PASS
+  science digest (build 1): 7ed3b4f5c1368f7497685d7d2c043e317e0207664d356a81ed7ea8845247cdec
+  science digest (build 2): 7ed3b4f5c1368f7497685d7d2c043e317e0207664d356a81ed7ea8845247cdec
+  deterministic double build: True
+  elapsed 8.079s (cap 900s)
+  ALL CERTIFICATES: PASS
+  OUTCOME: NO-GO
+==========================================================================
+
+BOUNDARY: this block supplies no occurrence rule, no probability, no update law and selects no weighting as physical; it computes whether the pinned gravity-side structure EXCLUDES the pinned record-side candidates, and reports exclusion as the negative result it is
+receipt: outputs/interface_attack_cycle894_receipt_2026_07_28.json

@@ -1,0 +1,179 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle904_mixed_degree_independent_check_2026_07_28.py
+runner_sha256: 5b7e283bdc3e39adee478957f6482915f81b1489a28a1205849480072c3841f5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.619
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 904 INDEPENDENT CHECK -- SPEC'D TO REFUTE
+==============================================================================
+
+[PASS] CA_PINS   PINS AGREE
+[PASS] CB_INDEPENDENT_GENERATORS   BOUND REFUTED -- the primary's declared native space is strictly smaller than a justifiable reading of the same supplied structure
+[PASS] CC_INDEPENDENT_REACHABLE_SET   NOT REFUTED -- an independent algorithm reproduces the count and the target membership exactly
+[PASS] CD_HEIGHT_BOUND_ATTACK   H REFUTED AS A UNIVERSAL BOUND -- native evaluations above H exist at higher matrix powers and they reach values the primary's set does not contain
+[PASS] CE_V3_ATTACK   V3 CLAIMS NOT REFUTED -- the core claims survive and every numeric gap disagreement falls on a row the primary correctly marked bound-relative
+[PASS] CF_FIDELITY_AUDIT   FIDELITY ADJUDICATION UPHELD -- the hit survives two extra scopes (n = 5, 6), the competing-family count survives with a different alphabet, and no target literal appears anywhere in the census machinery outside the declared constants and the declared plants
+[PASS] CG_MINIMALITY_ATTACK   MINIMALITY CLAIMS NOT REFUTED -- every one recomputed to the primary's published value
+[PASS] CH_TEETH   8/8 teeth bit
+[PASS] CI_LEDGER
+
+------------------------------------------------------------------------------
+CB  INDEPENDENT GENERATOR ENUMERATION
+------------------------------------------------------------------------------
+  primary atoms 119 (18 distinct values)
+  checker atoms 913 (70 distinct values) from 61 matrices x 15 functionals
+  primary atoms reproduced by checker code: 119
+  values the primary does not have: 52
+    -2/1, -2/3, -4/1, 4/3, 5/1, 5/3, -6/1, -8/1, 8/3, -9/1, -4/9, 2/9, 4/9, -12/1, -15/1, 15/1
+  carried by e.g.: charpoly_c0(A), charpoly_c0(A.Cyc), charpoly_c0(A.Deg), charpoly_c0(A.Id), charpoly_c0(A^2), charpoly_c0(A^3), charpoly_c0(A^4), charpoly_c0(Cyc.Deg)
+    Nothing in the four axioms privileges a matrix power over a product of
+    two distinct supplied maps, or a determinant over a permanent, or a
+    trace over a characteristic-polynomial coefficient. Each is a scalar
+    functional of the same supplied linear structure. The primary DECLARED
+    its cap rather than hiding it, which is why this is a bound refutation
+    and not a fidelity finding.
+
+------------------------------------------------------------------------------
+CC  INDEPENDENT REACHABLE SET (exponent lattice)
+------------------------------------------------------------------------------
+  checker count 558   primary count 558   agree=True
+  target reachable: checker=True  primary=True
+
+------------------------------------------------------------------------------
+CD  THE HEIGHT-BOUND ATTACK
+------------------------------------------------------------------------------
+  smallest power cap that breaks H: 5
+    permanent(J^5)             =      3188646/1 (height 3188646)
+    permanent(L^5)             =      6377292/1 (height 6377292)
+  new values reachable: 2738
+    The widened set is a strict SUPERSET of the primary's. It adds reachable
+    values and therefore adds competitors to the target; it cannot make the
+    target uniquely reachable. The checker confirms the direction of the
+    effect by computation, not by citing the primary's lemma: 2738 values
+    added, 0 removed.
+    The primary's H_justification says H is slack at W = 3 and invites
+    exactly this attack by telling the checker to raise W rather than H. The
+    attack succeeds on the letter of the bound -- H is not universal -- and
+    fails on its substance. The primary should state H as a bound on the
+    DECLARED alphabet rather than on structurally arising coefficients in
+    general.
+
+------------------------------------------------------------------------------
+CE  THE v3 ATTACK
+------------------------------------------------------------------------------
+  checker atom v3 range [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 10]   primary [-1, 0, 1, 2, 3]
+  brief premise {-1,0,1} holds under checker reading: False
+  checker witnesses for 2/27: 3627  (primary published 19)
+    gap 1: v3 range [-12, 12]  -3=True  target=True
+    gap 2: v3 range [-6, 6]  -3=True  target=True
+    gap 3: v3 range [-4, 4]  -3=True  target=True
+    gap 4: v3 range [-3, 3]  -3=True  target=True
+  disagreements: [{'gap': 3, 'primary': False, 'checker': True}, {'gap': 3, 'item': 'target', 'primary': False, 'checker': True}]
+  WHAT SURVIVES:
+    Both core claims survive and get harder under the checker's reading:
+    the atom v3 range widens to [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 10],
+    so the brief's {-1, 0, 1} premise is not merely false but badly false,
+    and v3 = -3 is reachable at word length 1 with many witnesses.
+  THE NUMERIC DISAGREEMENT:
+    The primary's gap-3 row reports the target NOT reachable at degree gap
+    3 and v3 = -3 out of reach there. Under the checker's wider atom set
+    both become reachable: alpha^3 = (2/27)^3 needs a coefficient of
+    valuation -9, which the wider set supplies. This is the expected
+    direction: widening only adds reachable values. It is a REFUTATION
+    only if the primary stated the row as structural rather than
+    bound-relative -- which is exactly what the `bound_relative` flag on
+    each gap row is checked for. On the primary's first draft the flag was
+    absent and this checker logged a statement error; the primary now
+    marks every gap row bound-relative and names the negative rows as the
+    fragile ones.
+  RESIDUAL NEGATIVE:
+    For every gap g the constraint v3(alpha) = v3(c)/g with v3(c) bounded
+    by the alphabet still bounds the reachable valuations, and the bound
+    tightens as 1/g. That is the only part of the 3-adic route with
+    structural content, and it never isolates a single value.
+
+------------------------------------------------------------------------------
+CF  THE FIDELITY AUDIT
+------------------------------------------------------------------------------
+  scopes [2, 3, 4, 5, 6]  families 8177 (primary 442 at 3 scopes)
+  alpha family (n-1)/n^3 survives n = 5, 6: True
+      diag(Deg.Qp) / totalsum(A.J)
+      diag(Deg.Qp) / totalsum(Deg.J)
+      diag(Id.Qp) / frobenius_sq(Cyc.J)
+      diag(Id.Qp) / frobenius_sq(Id.J)
+      diag(Id.Qp) / frobenius_sq(J)
+      diag(Id.Qp) / frobenius_sq(J.P)
+  F_dim family survives: True (1274 schemas)
+  target literals smuggled into census machinery: []
+
+------------------------------------------------------------------------------
+CG  THE MINIMALITY ATTACK
+------------------------------------------------------------------------------
+  [held] minimal word length to the target is 1
+  [held] target witness count = 19
+  [held] the target is NOT itself a native atom (word length 0)
+  [held] |K| is monotone in W
+  [held] |R| is monotone in W
+
+------------------------------------------------------------------------------
+CH  TEETH
+------------------------------------------------------------------------------
+  exit 0  [BIT] T1_TAMPERED_PIN
+          flip the declared word bound inside a copy of the primary
+  exit 0  [BIT] T2_DROPPED_GENERATOR
+          delete the atom totalsum(J^2) (v3 = 3, the atom that carries the
+          target's 27) from the declared space
+  exit 0  [BIT] T3_HARDCODED_REACHABLE_SET
+          replace the published reachable count 558 with a literal 565
+  exit 0  [BIT] T4_LEAKED_VERDICT
+          hold the relation fixed and vary only the alphabet size
+  exit 0  [BIT] T5_NARROWED_BOUND_UNDISCLOSED
+          compare every bound the receipt declares against the value the
+          primary's module-level AST assigns, and hunt any reassignment of a
+          declared bound inside a function body -- a bound that moves at
+          runtime is a bound that is not declared
+  exit 0  [BIT] T6_PLANTED_NATIVE_BLINDNESS
+          three plants the primary never saw, including one that falsifies the
+          F3 input
+  exit 0  [BIT] T7_SCOPE_FAMILY_FAKE
+          a family that agrees with (n-1)/n^3 at n = 3 and disagrees at every
+          other scope
+  exit 0  [BIT] T8_NONDETERMINISM
+          recompute the checker's own reachable set twice
+
+------------------------------------------------------------------------------
+CI  REFUTATION LEDGER
+------------------------------------------------------------------------------
+  CA_PIN_AGREEMENT                       PINS AGREE
+  CB_GENERATOR_BOUND                     BOUND REFUTED -- the primary's declared native space is strictly smaller than a justifiable reading of the same supplied structure
+  CC_REACHABLE_SET                       NOT REFUTED -- an independent algorithm reproduces the count and the target membership exactly
+  CD_HEIGHT_BOUND                        H REFUTED AS A UNIVERSAL BOUND -- native evaluations above H exist at higher matrix powers and they reach values the primary's set does not contain
+  CE_V3_THEOREM                          V3 CLAIMS NOT REFUTED -- the core claims survive and every numeric gap disagreement falls on a row the primary correctly marked bound-relative
+  CF_FIDELITY                            FIDELITY ADJUDICATION UPHELD -- the hit survives two extra scopes (n = 5, 6), the competing-family count survives with a different alphabet, and no target literal appears anywhere in the census machinery outside the declared constants and the declared plants
+  CG_MINIMALITY                          MINIMALITY CLAIMS NOT REFUTED -- every one recomputed to the primary's published value
+  CH_TEETH                               8/8 teeth bit
+
+  2 claim(s) REFUTED and the central verdict is not. The primary's declared
+  generator space is strictly smaller than a justifiable reading of the same
+  supplied structure (913 atoms against 119, 52 values it does not have),
+  and its height bound H is not universal: native evaluations above H exist
+  at higher matrix powers and reach values outside its set. BOTH refutations
+  widen the reachable set, and the census's verdict -- reaches but does not
+  select -- is monotone in exactly that direction, so both STRENGTHEN it.
+  The checker verified that direction by computation rather than by citing
+  the primary's lemma. The fidelity adjudication survives two extra scopes:
+  diag(Qp)/totalsum(J) is (n-1)/n^3 at n = 2, 3, 4, 5 and 6, so the hit is
+  not an n = 3 coincidence and the primary is right to report the brief's
+  target-tuning prediction as contradicted. One real methodological weakness
+  is recorded: F3's alphabet size is an unverified INPUT to the adjudicator,
+  so a relation that lies about it is graded GENUINE SELECTION; the
+  checker's independent recount is what closes that hole.
+
+==============================================================================
+CHECKER COMPLETE -- exit 0 regardless of claim survival
+==============================================================================
+
+controls: refuted=2 teeth_bit=8/8 stdout=10944B receipt=e2dbba1f92d32a34

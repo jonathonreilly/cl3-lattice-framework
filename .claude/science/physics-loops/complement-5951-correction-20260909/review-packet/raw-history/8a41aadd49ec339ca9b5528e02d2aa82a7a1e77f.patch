@@ -1,0 +1,79 @@
+diff --git a/scripts/frontier_cycle891_complement_independent_check_2026_07_28.py b/scripts/frontier_cycle891_complement_independent_check_2026_07_28.py
+index e554bfbdb6..53f5cf560f 100644
+--- a/scripts/frontier_cycle891_complement_independent_check_2026_07_28.py
++++ b/scripts/frontier_cycle891_complement_independent_check_2026_07_28.py
+@@ -1089,7 +1089,11 @@ def main():
+             "text_reproduces_the_primary_prediction": from_text == primary_predicted,
+             "text_reproduces_the_primary_carriers": (carriers_from_text
+                                                      == primary_carriers),
+-            "text_is_determinate": True,
++            "text_is_determinate": (
++                len(from_text) == len(set(from_text))
++                and len(carriers_from_text) == len(from_text)
++                and all(1 <= b <= bank_count - 2
++                        for b in carriers_from_text.values())),
+             "primary_published_observed": claim.get("OBSERVED"),
+             "checker_spot_complements": spot["complements_observed"],
+             "spot_lane_rule": "every %dth lane (declared, %d of %d lanes)" % (
+@@ -1133,7 +1137,8 @@ def main():
+             not seal_touched
+             and blocks_891["G_HOLDOUT_B67"]["seal_unchanged"]
+             and rule_source_sha == seal_block["rule_source_sha256"]),
+-        "rule_text_underdetermines_the_prediction": False,
++        "rule_text_underdetermines_the_prediction": not all(
++            row["text_is_determinate"] for row in holdout_audit),
+         "seal_payload_shape_reconstructed": sorted(seal_payload),
+     }
+     e_pass = (
+@@ -1146,7 +1151,7 @@ def main():
+     # ------------------------------------------------ F  THE k-RUN LAW ATTACK
+     attack_rng = random.Random(777891)
+     attack_cells, attack_bad, unbounded = 0, [], 0
+-    for _trial in range(2200):
++    for _trial in range(4200):
+         stations = attack_rng.choice(
+             [7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
+              12, 16, 20, 24, 30, 36, 45, 50, 56, 60])
+@@ -1257,17 +1262,23 @@ def main():
+         _l, _f, sigma = leader_and_sigma(positions, stations7)
+         published = traces.get(witness["period"])
+         register_agrees = None
++        register_rows_compared = 0
+         if published is not None:
+             replay = attributed_trace(box7, witness["event"],
+                                       tuple(witness["token_positions"]),
+                                       max(1, low - 2), min(high + 2, HORIZON))
+-            claimed = published["register_events"]
+-            register_agrees = all(
++            # the primary also publishes SOURCE-only rows, which carry no bank
++            # movement; this checker records bank movement only, so the
++            # comparison is over the rows that both instruments can see.
++            claimed = [item for item in published["register_events"]
++                       if item["banks_raised"] or item["banks_lowered"]]
++            register_agrees = bool(claimed) and all(
+                 any(row["tick"] == item["tick"] and row["station"] == item["station"]
+                     and row["banks_raised"] == item["banks_raised"]
+                     and row["banks_lowered"] == item["banks_lowered"]
+                     for row in replay)
+                 for item in claimed)
++            register_rows_compared = len(claimed)
+         anatomy_rows.append({
+             "period": witness["period"], "clock": name, "lane": lane,
+             "token_positions": witness["token_positions"],
+@@ -1285,6 +1296,8 @@ def main():
+             "detector_row_checker": list(detector.get(witness["period"], ())),
+             "detector_row_primary": witness["detector"],
+             "register_events_reproduced": register_agrees,
++            "register_rows_compared": (register_rows_compared
++                                       if published is not None else 0),
+             "anatomy_agrees": (
+                 len(dirty_runs) == witness["dirty_runs_in_the_stretch"]
+                 and starts[:12] == witness["run_start_ticks"]
+@@ -1325,6 +1338,7 @@ def main():
+         len(anatomy_rows) > 0
+         and len(shuffle_rows) > 0
+         and all(row["identical_to_3000"] for row in shuffle_rows)
++        and all(row["register_rows_compared"] > 0 for row in anatomy_rows)
+     )
+     lines.append(("PASS" if g_pass else "FAIL") + " G_ANATOMY :: "
+                  + json.dumps(anatomy_block, **dumps))

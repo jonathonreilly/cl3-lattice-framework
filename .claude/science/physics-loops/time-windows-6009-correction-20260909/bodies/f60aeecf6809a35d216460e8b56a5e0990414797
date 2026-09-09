@@ -1,0 +1,143 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py
+runner_sha256: 46d46db10258731b986f3c639eedcf1ad3f968021f1efe30c88cc3e5e17b46c2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 6.314
+status: ok
+----- stdout -----
+==========================================================================
+CYCLE 902 -- THE P2 ATTACK: minimal kernel-argument extension
+==========================================================================
+
+[A] PINS  8 artifacts, sha256 + git blob
+    OK  76100068829f2143 scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py
+    OK  1a8c220959038a7f outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json
+    OK  6661955d91bd7321 scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py
+    OK  4ef57b09238ed7b9 outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json
+    OK  daee8bbfefde80a3 scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py
+    OK  139ed9e2fce1775d scripts/frontier_cycle887_window_freedom_2026_07_28.py
+    OK  d1807305098ae995 outputs/window_freedom_cycle887_receipt_2026_07_28.json
+    OK  fc4d60cce8154cec docs/MINIMAL_AXIOMS_2026-06-29.md
+    firewall hits: 0   AST nodes missing: 0
+
+[B] RESTRICTION GATE
+    OK  c878_admissible_weightings         computed=5                  target=5
+    OK  c878_atoms_are_singletons          computed=True               target=True
+    OK  c878_discriminating_pairs          computed=10                 target=10
+    OK  c878_event_cardinality             computed=92260              target=92260
+    OK  c878_indistinguishable_pairs       computed=0                  target=0
+    OK  c892_family_digest_prefix          computed=30edaa3d5ca03c24   target=30edaa3d5ca03c24
+    OK  c892_family_size                   computed=12                 target=12
+    OK  c892_identity_checks               computed=648                target=648
+    OK  c892_identity_violations           computed=0                  target=0
+    OK  c892_negative_Z_cells              computed=0                  target=0
+    OK  c892_theta_moving_configs          computed=7                  target=7
+    OK  c892_unit_modulus_failures         computed=0                  target=0
+    OK  c892_vanishing_cells               computed=42                 target=42
+    13/13 restriction gates reproduce.  892's 648 kernel identities recompute value-for-value with 0 violations, its 42 vanishing cells and its 7/12 theta-dependence both land exactly; 878's 92260 events, 5 admissible weightings and 10 discriminating pairs are read from the vendored artifacts.
+
+[C] Q1(a) THE MINIMAL FIBRE -- COMPUTED
+    walk depth D                    = 4
+    realized spectrum rows          = 108
+    exact rank of the spectra       = 5
+    MINIMAL FIBRE DIMENSION         = 5  (= D+1 = 5)
+    nonzero rows per degree         = {0: 101, 1: 4, 2: 43, 3: 4, 4: 12}
+    per-config rank range           = 1..4   (disclosed: sub-families need less)
+    theta grid separates degree-D   = True (Vandermonde rank 5)
+
+[D] Q1(b) THE EXTENDED WEIGHTING SPACE
+    construction: E x Theta, fibre dimension 5
+    878 admissible generators       = 5  ['M1_COUNTING', 'M2_PER_WORLD_UNIFORM', 'M3_OCCUPATION_WEIGHTED', 'M4_FORMATION_LIFETIME', 'M5_FORMATION_MOMENT']
+    exact generator relation        : a4 + a5 = (boundaries+1) * [formed]
+    Cycle-863 census in worktree    = False  -> base rank bounded [2..5], not measured
+    dim (generous base)             = 461300  = 92260 x 5
+    dim (878 span)                  = 10..25
+    PROPERTY LIFT:
+      LIFTS  finite additivity over disjoint pieces
+      LIFTS  normalizability (total mass > 0)
+      FAILS  support faithfulness (every atom carries mass > 0)
+      LIFTS  covariance under the landed monitor-phase group
+      LIFTS  covariance under the bank-label swap
+      LIFTS  admissibility (additive AND normalizable)
+    failed to lift: ['support faithfulness (every atom carries mass > 0)']
+
+[F] Q2 WHAT P2 BUYS -- exact systems, ranks and kernels
+    subset                 configs admitting the interface
+    BRIDGE_ONLY            12/12  ['single', 'pair', 'shell1', 'ball1', 'annulus_1_4', 'hollow_annulus', 'Lshape', 'plane_square', 'chain', 'sparse_a', 'sparse_b', 'offcentre_ball']
+    BRIDGE_PLUS_IF1         1/12  ['single']
+    BRIDGE_PLUS_IF5        12/12  ['single', 'pair', 'shell1', 'ball1', 'annulus_1_4', 'hollow_annulus', 'Lshape', 'plane_square', 'chain', 'sparse_a', 'sparse_b', 'offcentre_ball']
+    ALL_FIVE                1/12  ['single']
+    C894_THETA_FREE         5/12  ['shell1', 'ball1', 'annulus_1_4', 'hollow_annulus', 'offcentre_ball']
+
+    per-config ranks / kernels (ALL_FIVE):
+      config           atoms  unk  rank  ker  nu!=0
+      single               4   21    20    1   True
+      pair                 5   26    21    5  False
+      shell1               6   31    31    0  False
+      ball1                5   26    26    0  False
+      annulus_1_4          8   41    36    5  False
+      hollow_annulus      10   51    36   15  False
+      Lshape               8   41    31   10  False
+      plane_square         5   26    21    5  False
+      chain                5   26    21    5  False
+      sparse_a            12   61    36   25  False
+      sparse_b            12   61    36   25  False
+      offcentre_ball       5   26    26    0  False
+
+    per-requirement:
+      IF1   1/12  P2 changes it: False
+      IF2  12/12  P2 changes it: False
+      IF3  12/12  P2 changes it: True
+      IF4  12/12  P2 changes it: False
+      IF5  12/12  P2 changes it: False
+      IF6  12/12  P2 changes it: True
+
+    894 reproduction: theta-free weighting passes on 5/12 = ['shell1', 'ball1', 'annulus_1_4', 'hollow_annulus', 'offcentre_ball']
+    P2 repairs exactly 7: ['Lshape', 'chain', 'pair', 'plane_square', 'single', 'sparse_a', 'sparse_b']
+    sibling checker claim (P2-supplied composition passes IF3 on the theta-moving 7/12): CONFIRMED and sharpened
+    IF1 weak reading 7/12, strong reading 1/12
+    JOINT: 1/12  ['single']
+    obstructed: ['Lshape', 'annulus_1_4', 'ball1', 'chain', 'hollow_annulus', 'offcentre_ball', 'pair', 'plane_square', 'shell1', 'sparse_a', 'sparse_b']
+    minimal obstructing subset: ['IF1']
+
+[G] Q3 THE BRIDGE
+    DEAD, as 894 predicted.  894 could leave (phi, N) free because its wei...
+    grid points checked             = 648
+    bridge violations               = 0
+    negative atom masses            = 0
+    EXHIBITED on 'single': 4 atoms, 50 rows, 0 violations
+        atom0 sites=12 in supp(R)=False c = ['15600/1', '0/1', '1728/1', '0/1', '0/1']
+        atom1 sites= 6 in supp(R)=False c = ['2910/1', '0/1', '264/1', '0/1', '0/1']
+        atom2 sites= 6 in supp(R)=False c = ['492/1', '0/1', '108/1', '0/1', '0/1']
+        atom3 sites= 1 in supp(R)=True  c = ['1/1', '0/1', '0/1', '0/1', '0/1']
+        solution space dim 1 -> residual freedom beyond N: 0
+    boundary: the surviving sub-grid is ['single']: exactly the configuration(s) whose linear readout equals the seed mass that C892-T1 confines inside supp(R).  The boundary is NOT the frozen/moving split -- it is the readout-versus-seed-mass match, which is a property of the barrier, not of the kernel.
+
+[H] FALSIFIERS
+    PLANT-SAT       12/12 satisfiable, as designed: True
+    PLANT-OBSTRUCT  2/12 obstructed ['Lshape', 'sparse_a'], as designed: True
+
+==========================================================================
+THEOREMS
+  - C902-T1 MINIMAL KERNEL FIBRE.  The realized interference spectra of the pinned 12-configuration family over its 9 containment-holding windows span a space of exact rank 5 = D+1 = 5.  The minimal kernel-coordinate fibre is therefore FINITE with exactly 5 points, not a continuum, and the bound is tight: truncating it by one obstructs exactly the 2 configurations that realize the top degree.
+  - C902-T2 THE EXTENSION BUYS THE BRIDGE.  Over the extension E x Theta the coefficient-matching system c_d(phi^-1(W)) = M_d(W)/N is consistent with N != 0 on 12/12 configurations, so IF2, IF3, IF4 and IF6 are jointly satisfiable on the whole family.  Against the same system a theta-FREE weighting -- the 894 regime -- succeeds only on the 5 frozen walks, so P2's purchase is exactly the 7 theta-moving configurations.
+  - C902-T3 IF1 IS P2-INVARIANT.  The kernel fibre re-weights path lengths and cannot move a site, so the amplitude's site support is identical at every fibre point.  The IF1 rows for a record atom read c_0(atom) = nu * I(atom) against a seed mass fixed by C892-T1, and they force nu = 0 on 11 of 12 configurations.  Supplying P2 therefore does NOT dissolve 894's residual: it relocates it entirely onto IF1.
+  - C902-T4 PARTIAL INTERFACE, PRICED.  On 1 of 12 configurations all five requirements are jointly satisfiable and an explicit (weighting, bridge) pair reproduces Z on every grid point.  Its solution space is one-dimensional -- the overall normalizer -- so the constructed interface object is UNIQUE once N is fixed: residual freedom 0.
+
+VERDICT: PARTIAL
+==========================================================================
+  PASS  A_PINS
+  PASS  B_RESTRICTION_GATE
+  PASS  C_MINIMAL_FIBRE
+  PASS  D_EXTENSION
+  PASS  F_SATISFIABILITY
+  PASS  G_BRIDGE
+  PASS  H_FALSIFIERS
+  PASS  I_DOUBLE_BUILD
+  PASS  J_RUNTIME
+
+science digest        b8329024527396587613e10d3f5f7d0c4ec77e3c27b45de726d16e121f1f345b
+double build          True
+elapsed               6.255s
+receipt               outputs/p2_kernel_attack_cycle902_receipt_2026_07_28.json

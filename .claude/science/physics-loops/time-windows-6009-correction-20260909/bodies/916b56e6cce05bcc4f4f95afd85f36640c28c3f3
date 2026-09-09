@@ -1,0 +1,302 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle892_gbw1b_independent_check_2026_07_28.py
+runner_sha256: 140342fea4c183814ae12bf4c7938b5813d711e517158ececad7b537adc07625
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 11.611
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 892 INDEPENDENT CHECK -- attacking the GBW1b pricing
+==============================================================================
+
+[A_PINS]  pass=True
+    pins:
+      - {"path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py", "sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f", "git_blob": "360eed9e17eab1af19ca03d7ea1161dafaf56da0", "brief_match": null}
+      - {"path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json", "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae", "git_blob": "722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2", "brief_match": null}
+      - {"path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py", "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32", "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef", "brief_match": true}
+      - {"path": "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json", "sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997", "git_blob": "553bba1fbd427f27c5606b6f27bd592a91e9c3c0", "brief_match": true}
+      - {"path": "scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py", "sha256": "d98c0b43c0efa9ef33727180b109e74ffd34c4f805bf498f8cf3babb819c86b1", "git_blob": "00e66110f74051e13af8952d2cb79af214570474", "brief_match": null}
+      - {"path": "logs/runner-cache/frontier_cycle885_gbw1_record_window_2026_07_28.txt", "sha256": "1e45cb05ace173b01506d57019fb5017e1ea59f65b006c9a741df9fd5489bd82", "git_blob": "4bb8982beb2b9d3eeeaa15aa459fa9e1df461a5e", "brief_match": null}
+      - {"path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py", "sha256": "139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83", "git_blob": "0fbcf92fc98b0d88d436a05efdc33449c52473db", "brief_match": true}
+      - {"path": "outputs/window_freedom_cycle887_receipt_2026_07_28.json", "sha256": "d1807305098ae995224118f93b301fc822ef0d6efc9e49c4a16e90d694592f86", "git_blob": "643fb824665d967f770c8939977a0f4010839564", "brief_match": true}
+      - {"path": "docs/MINIMAL_AXIOMS_2026-06-29.md", "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697", "git_blob": "4a863da1f3f255354839277271a3a69a5c205133", "brief_match": null}
+      - {"path": "docs/GATE_B_DYNAMICS_NOTE.md", "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271", "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43", "brief_match": null}
+      - {"path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md", "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116", "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c", "brief_match": null}
+    pin_count: 11
+    brief_digests_checked: 4
+    brief_digests_all_match: true
+    self_sha256: "140342fea4c183814ae12bf4c7938b5813d711e517158ececad7b537adc07625"
+    firewall_hits: 0
+    ast_nodes_missing:
+
+    independence_statement: "The amplitude machinery in this file (STEPS, GRID, centroid, emitters, path_tally, circle_point, raise_power, field, norm_on) is written from scratch and enumerates paths by depth-first search.  The primary uses a length-layered dynamic program.  No primary function is imported, executed or AST-extracted; the primary is read as text and JSON only."
+    primary_ast_nodes_borrowed: 0
+    finding: "11 pins by path + sha256 + git blob; 4 brief-supplied digests all match; 0 firewall hits; 0 primary nodes borrowed."
+    pass: true
+
+[B_RESTRICTION]  pass=True
+    role: "The pinned 885 and 887 rows recomputed with the INDEPENDENT path-enumeration machinery.  If the primary's reproduction were an artifact of sharing code with 885, it fails here."
+    checks:
+      c885_rows_value_for_value: true
+      c885_theta_dependence_7_of_12: true
+      c885_degenerate_control_0_of_12: true
+      c887_readout_gauge_9_of_12: true
+      c887_admissible_set: true
+      family_digest: true
+      primary_family_digest_agrees: true
+    mismatch_exhibits:
+
+    independent_theta_dependence: "7/12"
+    independent_degenerate_control: "0/12"
+    independent_readout_gauge: "9/12"
+    family_digest: "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e"
+    finding: "7/7 checks reproduce under independent machinery: 885's rows match value for value (0 mismatches), theta-dependence 7/12, degenerate control 0/12, readout gauge 9/12."
+    pass: true
+
+[C_PARTITION]  pass=True
+    admissible:
+      - "axis_segment_closure"
+      - "bounding_box"
+      - "erosion_by_N6"
+      - "erosion_by_ball1"
+      - "minkowski_S_N6__origin_absent"
+      - "minkowski_S_ball1__885_checker_dilation_k1"
+      - "minkowski_S_ball2__885_checker_dilation_k2"
+      - "minkowski_S_far_shell__origin_present"
+      - "minkowski_S_zero__the_885_support_window"
+      - "readout_keyed_inflation"
+      - "size_keyed_inflation"
+      - "union_box_with_dilation"
+    containment_holding:
+      - "axis_segment_closure"
+      - "bounding_box"
+      - "minkowski_S_ball1__885_checker_dilation_k1"
+      - "minkowski_S_ball2__885_checker_dilation_k2"
+      - "minkowski_S_far_shell__origin_present"
+      - "minkowski_S_zero__the_885_support_window"
+      - "readout_keyed_inflation"
+      - "size_keyed_inflation"
+      - "union_box_with_dilation"
+    independent_linear_classes: 1
+    independent_quadratic_classes: 8
+    independent_partition:
+      - ["axis_segment_closure"]
+      - ["bounding_box"]
+      - ["minkowski_S_ball1__885_checker_dilation_k1"]
+      - ["minkowski_S_ball2__885_checker_dilation_k2"]
+      - ["minkowski_S_far_shell__origin_present"]
+      - ["minkowski_S_zero__the_885_support_window"]
+      - ["readout_keyed_inflation", "size_keyed_inflation"]
+      - ["union_box_with_dilation"]
+    primary_partition:
+      - ["axis_segment_closure"]
+      - ["bounding_box"]
+      - ["minkowski_S_ball1__885_checker_dilation_k1"]
+      - ["minkowski_S_ball2__885_checker_dilation_k2"]
+      - ["minkowski_S_far_shell__origin_present"]
+      - ["minkowski_S_zero__the_885_support_window"]
+      - ["readout_keyed_inflation", "size_keyed_inflation"]
+      - ["union_box_with_dilation"]
+    partitions_agree: true
+    primary_linear_classes: 1
+    primary_quadratic_classes: 8
+    class_counts_agree: true
+    linear_readout_matches_full_readout: true
+    finding: "Independently, 9 containment-holding windows give 1 LINEAR class(es) and 8 QUADRATIC classes.  Partition agreement with the primary: True."
+    pass: true
+
+[D_NEW_WINDOWS]  pass=True
+    role: "Three windows the primary never evaluated, built here from 887's wider families: a rank/threshold filter, a morphological closing, and a union map.  Each admissible containment-holding one gets a SHARP prediction from C892-T2 recorded BEFORE Z is computed.  A misprediction refutes the structural proof."
+    windows:
+      - {"window": "NEW_rank_threshold_filter_k3", "in_the_primary_catalogue": false, "independent_harness": {"equivariance_checks": 1440, "equivariance_failures": 0, "permanence_checks": 35, "permanence_failures": 0, "distinct_values": 11, "admissible": true}, "pinned_887_harness_admissible": true, "harnesses_agree": true, "contains_support_on": 12, "of": 12, "containment_holds": true, "C892_T2_prediction_made_before_computing_Z": "forms a NEW class", "prediction_rule": "C892-T2 says Z(W) is the amplitude mass on W intersect supp(A).  So the class is a function of W intersect (src union Reach) ALONE.  Windows with an equal such intersection must share a class; windows with an unequal one must not.", "actually_lands_with": "a NEW class", "prediction_correct": true, "difference_formula_violations_against_the_support_window": 0, "Z_sample_at_theta_1_2": {"single": "1/1", "pair": "1/2", "shell1": " ...[truncated]
+      - {"window": "NEW_morphological_closing_ball1", "in_the_primary_catalogue": false, "independent_harness": {"equivariance_checks": 1440, "equivariance_failures": 0, "permanence_checks": 35, "permanence_failures": 0, "distinct_values": 11, "admissible": true}, "pinned_887_harness_admissible": true, "harnesses_agree": true, "contains_support_on": 12, "of": 12, "containment_holds": true, "C892_T2_prediction_made_before_computing_Z": "forms a NEW class", "prediction_rule": "C892-T2 says Z(W) is the amplitude mass on W intersect supp(A).  So the class is a function of W intersect (src union Reach) ALONE.  Windows with an equal such intersection must share a class; windows with an unequal one must not.", "actually_lands_with": "a NEW class", "prediction_correct": true, "difference_formula_violations_against_the_support_window": 0, "Z_sample_at_theta_1_2": {"single": "1/1", "pair": "1/2", "shell1" ...[truncated]
+      - {"window": "NEW_union_rank_with_axis_closure", "in_the_primary_catalogue": false, "independent_harness": {"equivariance_checks": 1440, "equivariance_failures": 0, "permanence_checks": 35, "permanence_failures": 0, "distinct_values": 11, "admissible": true}, "pinned_887_harness_admissible": true, "harnesses_agree": true, "contains_support_on": 12, "of": 12, "containment_holds": true, "C892_T2_prediction_made_before_computing_Z": "joins the class of axis_segment_closure", "prediction_rule": "C892-T2 says Z(W) is the amplitude mass on W intersect supp(A).  So the class is a function of W intersect (src union Reach) ALONE.  Windows with an equal such intersection must share a class; windows with an unequal one must not.", "actually_lands_with": ["axis_segment_closure"], "prediction_correct": true, "difference_formula_violations_against_the_support_window": 0, "Z_sample_at_theta_1_2": {"singl ...[truncated]
+    count_built: 3
+    count_admissible_and_containment_holding: 3
+    count_predicted_correctly: 3
+    mispredictions:
+
+    C892_T2_refuted_by_the_new_windows: false
+    finding: "3 new windows built; 3 are admissible AND containment-holding and therefore testable; 3 of those land exactly where C892-T2 predicted BEFORE Z was computed.  0 mispredictions."
+    pass: true
+
+[E_ADVERSARIAL]  pass=True
+    attack_1_amplitude_free_enlargement:
+      claim_under_test: "C892-T2 says adding sites that carry NO amplitude cannot change Z.  If Z moves, the theorem is false."
+      rows:
+        - {"config": "single", "dead_sites_added": 40, "thetas_where_Z_moved": []}
+        - {"config": "pair", "dead_sites_added": 40, "thetas_where_Z_moved": []}
+        - {"config": "shell1", "dead_sites_added": 40, "thetas_where_Z_moved": []}
+        - {"config": "ball1", "dead_sites_added": 40, "thetas_where_Z_moved": []}
+        - {"config": "annulus_1_4", "dead_sites_added": 40, "thetas_where_Z_moved": []}
+        - {"config": "hollow_annulus", "dead_sites_added": 40, "thetas_where_Z_moved": []}
+      configs_where_Z_moved:
+
+      theorem_survives: true
+    attack_2_amplitude_bearing_enlargement:
+      claim_under_test: "C892-T2 says adding sites that DO carry amplitude must strictly increase Z.  If Z fails to rise, the theorem is false."
+      rows:
+        - {"config": "single", "live_sites_added": 128, "thetas_where_Z_failed_to_rise": []}
+        - {"config": "pair", "live_sites_added": 167, "thetas_where_Z_failed_to_rise": []}
+        - {"config": "shell1", "live_sites_added": 1, "thetas_where_Z_failed_to_rise": []}
+        - {"config": "annulus_1_4", "live_sites_added": 1, "thetas_where_Z_failed_to_rise": []}
+        - {"config": "hollow_annulus", "live_sites_added": 1, "thetas_where_Z_failed_to_rise": []}
+        - {"config": "Lshape", "live_sites_added": 109, "thetas_where_Z_failed_to_rise": []}
+      configs_where_Z_failed_to_rise:
+
+      theorem_survives: true
+    attack_3_generated_window_sweep:
+      windows_generated: 7192
+      violations:
+
+      violation_count: 0
+      distinct_intersection_classes: 2101
+      Z_signature_collisions_within_a_configuration: 193
+      collision_exhibits:
+        - {"config": "single", "distinct_intersections_sharing_a_Z_signature": 2}
+        - {"config": "single", "distinct_intersections_sharing_a_Z_signature": 4}
+        - {"config": "single", "distinct_intersections_sharing_a_Z_signature": 2}
+        - {"config": "single", "distinct_intersections_sharing_a_Z_signature": 2}
+        - {"config": "single", "distinct_intersections_sharing_a_Z_signature": 2}
+        - {"config": "single", "distinct_intersections_sharing_a_Z_signature": 8}
+      reading: "Every generated window contains supp(R), so every one is containment-holding by construction.  The sweep looks for any window whose Z falls below the support window's, and for any two windows with the SAME amplitude intersection but different Z -- either would refute C892-T2."
+      theorem_survives: true
+    attack_4_amplitude_inside_the_barrier:
+      claim_under_test: "C892-T1 says the only amplitude inside supp(R) is the seed and the reachable set never meets supp(R)."
+      counterexamples:
+
+      theorem_survives: true
+    attack_5_the_collapse_hypothesis_directly:
+      hypothesis: "the extent would be gauge at quadratic order if every containment-holding window carried the same amplitude mass"
+      per_config_distinct_masses:
+        - {"config": "single", "distinct_masses": 4}
+        - {"config": "pair", "distinct_masses": 4}
+        - {"config": "shell1", "distinct_masses": 2}
+        - {"config": "ball1", "distinct_masses": 1}
+        - {"config": "annulus_1_4", "distinct_masses": 2}
+        - {"config": "hollow_annulus", "distinct_masses": 2}
+        - {"config": "Lshape", "distinct_masses": 6}
+        - {"config": "plane_square", "distinct_masses": 4}
+        - {"config": "chain", "distinct_masses": 4}
+        - {"config": "sparse_a", "distinct_masses": 7}
+        - {"config": "sparse_b", "distinct_masses": 7}
+        - {"config": "offcentre_ball", "distinct_masses": 1}
+      collapse_possible: false
+      reading: "The collapse is tested at its stated condition rather than through the partition, so the two routes to the verdict are independent."
+    adversarial_verdict: "SURVIVES every adversarial construction"
+    finding: "Four structural attacks and one direct test of the collapse condition.  Amplitude-free enlargement moved Z on 0 configurations; amplitude-bearing enlargement failed to raise Z on 0; a sweep of 7192 generated containment-holding windows produced 0 violations; the hunt for amplitude inside the barrier beyond the seed produced 0 counterexamples; and the collapse condition itself holds on 2/12 configurations."
+    pass: true
+
+[F_KERNEL]  pass=True
+    claim_C892_T3: "Z = sum_d M_d T_d(cos phi), degree <= walk depth"
+    identity_checks: 648
+    identity_violations: 0
+    violation_exhibits:
+
+    interference_orders_present:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    primary_reported_orders: null
+    unit_modulus_failures: 0
+    claim_C892_T4: "odd orders iff the emitter set spans both parities"
+    parity_mispredictions:
+
+    C892_T3_survives: true
+    C892_T4_survives: true
+    finding: "C892-T3 re-derived independently from explicit path tallies: 648 checks, 0 violations, orders [0, 1, 2, 3, 4]; |u| = 1 with 0 failures.  C892-T4: 0 parity mispredictions."
+    pass: true
+
+[G_INTERFACE]  pass=True
+    role: "The interface requirements must be DERIVED from Z's computed structure, not imported from what a probability rule looks like.  Every fact they cite is recomputed here independently, and the requirement source is needle-checked."
+    requirement_ids:
+      - "IF1"
+      - "IF2"
+      - "IF3"
+      - "IF4"
+      - "IF5"
+      - "IF6"
+    requirement_count: 6
+    born_needle_counts_in_the_requirement_source:
+      born rule: 0
+      born's rule: 0
+      probability amplitude squared: 0
+      |psi|^2: 0
+      wavefunction: 0
+      hilbert space: 0
+      unitary evolution: 0
+      quantum probability: 0
+      measurement postulate: 0
+    born_vocabulary_leaked:
+
+    cited_facts_recomputed:
+      finite_additivity_violations:
+        independent: 0
+        expected_by_IF2: 0
+        agrees: true
+      non_negativity_violations:
+        independent: 0
+        expected_by_IF5: 0
+        agrees: true
+      vanishing_cells_exist:
+        independent: 42
+        IF5_requires_nonzero: true
+        agrees: true
+      total_mass_theta_dependent_configs:
+        independent: 7
+        IF3_requires_nonzero: true
+        agrees: true
+      normalized_ratio_still_theta_dependent:
+        independent: 7
+        agrees: true
+      amplitude_inside_vs_outside_support:
+        inside: 8
+        outside: 844
+        IF1_requires_essentially_disjoint: true
+        agrees: true
+    all_cited_facts_agree: true
+    finding: "6 requirements; 0 Born-rule needles in the requirement source; 6/6 of the computed facts they cite reproduce under independent machinery."
+    pass: true
+
+[H_TEETH]  pass=True
+    teeth:
+      - {"tooth": "T1_tampered_pin", "injury": "flip one byte of the pinned 885 primary in memory", "caught": true, "how": "the sha256 pin no longer matches the brief-supplied digest"}
+      - {"tooth": "T2_dropped_window", "injury": "drop union_box_with_dilation from the containment-holding set", "caught": true, "how": "the catalogue-completeness count falls from 9 to 8"}
+      - {"tooth": "T3_hardcoded_partition", "injury": "replace the computed partition with a literal", "caught": true, "how": "the independent partition is rebuilt from Z signatures and disagrees with the literal"}
+      - {"tooth": "T4_leaked_verdict", "injury": "assert the verdict instead of computing it from the class count", "caught": true, "how": "the verdict function maps 8 classes to 'NOT GAUGE' and 1 class to 'COLLAPSED': it tracks the computation, so a hardcoded verdict would be visible"}
+      - {"tooth": "T5_skipped_theta", "injury": "run the grid at 3 thetas instead of 6", "caught": true, "how": "the grid-completeness gate requires the six brief-named thetas; a short grid fails it", "note": "separation is visible on the full grid: True"}
+      - {"tooth": "T6_planted_difference_blindness", "injury": "add 1/1000 to one live amplitude and ask whether Z moves", "caught": true, "how": "Z is recomputed from the mutated field and differs"}
+      - {"tooth": "T7_tampered_family", "injury": "add a site to the first configuration", "caught": true, "how": "the family digest no longer matches the one 887 published"}
+      - {"tooth": "T8_blind_structural_predictor", "injury": "a predictor that always answers 'same class'", "caught": true, "how": "the amplitude-intersection fingerprint takes 8 distinct values over the 9 containment-holding windows, so a constant predictor is refuted by the data it claims to predict", "_always_same": true}
+    count: 8
+    bit: 8
+    all_bite: true
+    finding: "8/8 teeth bite."
+    pass: true
+
+[I_VERDICT]  pass=True
+    claims:
+      - {"claim": "the restriction gate reproduces 885 and 887", "survives": true, "evidence": "7/7 checks reproduce under independent machinery: 885's rows match value for value (0 mismatches), theta-dependence 7/12, degenerate control 0/12, readout gauge 9/12."}
+      - {"claim": "the containment-holding catalogue splits into 8 Z classes while collapsing to 1 class at linear order", "survives": true, "evidence": "Independently, 9 containment-holding windows give 1 LINEAR class(es) and 8 QUADRATIC classes.  Partition agreement with the primary: True."}
+      - {"claim": "C892-T1 amplitude expulsion", "survives": true, "evidence": "0 counterexamples"}
+      - {"claim": "C892-T2 window monotonicity and the exact difference formula", "survives": true, "evidence": "Four structural attacks and one direct test of the collapse condition.  Amplitude-free enlargement moved Z on 0 configurations; amplitude-bearing enlargement failed to raise Z on 0; a sweep of 7192 generated containment-holding windows produced 0 violations; the hunt for amplitude inside the barrier beyond the seed produced 0 counterexamples; and the collapse condition itself holds on 2/12 configurations."}
+      - {"claim": "C892-T3 the path-length interference spectrum", "survives": true, "evidence": "C892-T3 re-derived independently from explicit path tallies: 648 checks, 0 violations, orders [0, 1, 2, 3, 4]; |u| = 1 with 0 failures.  C892-T4: 0 parity mispredictions."}
+      - {"claim": "C892-T4 bipartite parity selection", "survives": true, "evidence": "0 mispredictions"}
+      - {"claim": "the interface requirements are derived from Z, not from Born's rule", "survives": true, "evidence": "6 requirements; 0 Born-rule needles in the requirement source; 6/6 of the computed facts they cite reproduce under independent machinery."}
+      - {"claim": "the three windows the primary never evaluated land where C892-T2 predicts", "survives": true, "evidence": "3 new windows built; 3 are admissible AND containment-holding and therefore testable; 3 of those land exactly where C892-T2 predicted BEFORE Z was computed.  0 mispredictions."}
+    claim_count: 8
+    survived: 8
+    refuted:
+
+    overall: "ALL CLAIMS SURVIVE"
+    what_this_checker_could_not_break: "The verdict rests on the barrier identification B(R) = supp(R), which this checker inherits from the pinned 885 construction and does not test.  If a different barrier were adopted, amplitude would relocate and Q1 could invert.  That is a scope limit the primary already names, and it is the one route to the collapse that neither cycle closes."
+    scope_of_this_check: "12 configurations, 17 catalogue maps plus 3 new ones, 6 thetas, plus a sweep of 7192 generated containment-holding windows.  Exact arithmetic throughout; independent path-enumeration machinery."
+    pass: true
+
+receipt: outputs/gbw1b_independent_check_cycle892_receipt_2026_07_28.json
+overall: ALL CLAIMS SURVIVE
+teeth: 8/8 bite
+elapsed_sec: 11.568

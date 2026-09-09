@@ -1,0 +1,291 @@
+{
+  "bounds_attack_escapees": [
+    {
+      "count_found": 3,
+      "description": "a proper cubic rotation that swaps the two free C3 orbits of the 6-neighbour shell; it acts on the 6-dimensional shell readout space, not on the primary's 3-dimensional single-orbit space",
+      "example": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "kind": "involution outside the declared construction space"
+    }
+  ],
+  "claims_attacked": 6,
+  "claims_refuted": 0,
+  "claims_surviving": 6,
+  "cycle": 898,
+  "exit_policy": "exit 0 independent of claim survival",
+  "fixed_scales_recomputed": [
+    {
+      "agrees": true,
+      "id": "M2-01",
+      "primary_claim": [
+        "NONE",
+        "+/- sqrt(1/3)"
+      ],
+      "rational": false,
+      "reason": "v_3 = -1 is odd",
+      "recomputed_alpha_squared": "1/3",
+      "recomputed_scale_over_Q": "NONE"
+    },
+    {
+      "agrees": true,
+      "id": "M2-05",
+      "primary_claim": [
+        "NONE",
+        "+/- sqrt(1/3)"
+      ],
+      "rational": false,
+      "reason": "v_3 = -1 is odd",
+      "recomputed_alpha_squared": "1/3",
+      "recomputed_scale_over_Q": "NONE"
+    },
+    {
+      "agrees": true,
+      "id": "M2-04a",
+      "primary_claim": [
+        "NONE",
+        "+/- sqrt(1/3)"
+      ],
+      "rational": false,
+      "reason": "v_3 = -1 is odd",
+      "recomputed_alpha_squared": "1/3",
+      "recomputed_scale_over_Q": "NONE"
+    },
+    {
+      "agrees": true,
+      "equals_target_alpha": false,
+      "id": "M2-02",
+      "per_vertex_equals_target_orbit": false,
+      "primary_claim": [
+        "1/3",
+        null
+      ],
+      "recomputed_edge_weight": "1/3",
+      "recomputed_per_vertex_trace": "2/3"
+    },
+    {
+      "agrees": true,
+      "equals_target_alpha": false,
+      "id": "M2-04b",
+      "idempotent_verified": true,
+      "primary_claim": [
+        "1/3",
+        null
+      ],
+      "recomputed_scale_over_Q": "1/3"
+    }
+  ],
+  "geometric_vacuity_strengthened": {
+    "checker_finds": "NO three sites anywhere in Z^3 are pairwise adjacent, so the vacuity holds for EVERY 3-record collection, not only for the target orbit",
+    "direction": "ADOPTED -- the primary under check already states and verifies the bipartiteness form, and this checker reproduces it independently",
+    "primary_carries_the_universal_form": true
+  },
+  "novel_disjointness_reading": null,
+  "novel_reading_consequence": {
+    "net_effect": "the content reading does not rescue M4 -- it makes the selection question strictly WORSE by adding a free parameter where the site reading had one constraint",
+    "rows": [
+      {
+        "E": "0/1",
+        "I_orbit": "2/9",
+        "alpha_needed_for_this_E": "2/27",
+        "hits_target": true
+      },
+      {
+        "E": "1/1",
+        "I_orbit": "11/9",
+        "alpha_needed_for_this_E": "-7/27",
+        "hits_target": false
+      },
+      {
+        "E": "-1/9",
+        "I_orbit": "1/9",
+        "alpha_needed_for_this_E": "1/9",
+        "hits_target": false
+      },
+      {
+        "E": "2/9",
+        "I_orbit": "4/9",
+        "alpha_needed_for_this_E": "0/1",
+        "hits_target": false
+      }
+    ],
+    "selects_the_target": false,
+    "solution_shape": "one linear equation 3*alpha + E = 2/9 in TWO unknowns (alpha, E): a line, not a point",
+    "target_configuration_is_equal_content": true,
+    "unconstrained_class_contains_the_target": true
+  },
+  "refutations_landed": [
+    "NONE outstanding. This checker's two standing objections -- that the disjointness adjudication was a two-way procedure missing content disjointness, and that the M4 CLOSED region's grounds therefore needed a third clause -- are both DISCHARGED by the primary under check, which tests 3 readings, adjudicates on three discriminants, and computes the content reading to be an anti-escape."
+  ],
+  "role": "independent check, specified to refute",
+  "secret_leaks": [],
+  "source_pins": [
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "b22293b74ae8a0670e796f337a62a53a2f21fefb",
+      "path": "logs/runner-cache/frontier_cycle882_readout_identity_2026_07_28.txt",
+      "sha256": "7f485527189864c79d927376c686a4cab5d3ad25551b16283851a9acc5a9462d"
+    },
+    {
+      "git_blob": "6f085fc042330dae1d3eec8540a2942b1a3cf32f",
+      "path": "logs/runner-cache/frontier_cycle883_record_weight_pair_2026_07_28.txt",
+      "sha256": "560f368d9d23144cb23a93e72a398d92f6fcb536c3363179b7853c09615211bb"
+    },
+    {
+      "git_blob": "dc33b23a7fd462cc1d9db90c9c11db7f8f1fa654",
+      "path": "scripts/frontier_cycle898_escape_census_2026_07_28.py",
+      "sha256": "a319372d897c832c2e5156749c0b7dc2ec48bdd6f5f6e6c3f12fe9ce4c2bd312"
+    },
+    {
+      "git_blob": "c7f9e18b19e107f602972465bf02ba315b389795",
+      "path": "outputs/escape_census_cycle898_receipt_2026_07_28.json",
+      "sha256": "477b0a78f5bd28126711437f648e88b1a7a291cc106fbd1c3bfda7aaf74bf3ca"
+    },
+    {
+      "git_blob": "7af33df588e0e20e578cf6660e0c3ec147d8fd86",
+      "path": "logs/runner-cache/frontier_cycle898_escape_census_2026_07_28.txt",
+      "sha256": "0cda960a8d953a4729493c7ed19ab32703a9ab33f479f29d68013ddf5a76c2c0"
+    }
+  ],
+  "strengthenings_found": [
+    "geometric vacuity is UNIVERSAL, not orbit-specific: Z^3's nearest-neighbour graph is bipartite, so no three sites anywhere are pairwise adjacent and no 3-record collection can carry three adjacency interfaces. Independently reproduced here; the primary under check carries it: True"
+  ],
+  "survivals": [
+    {
+      "claim": "K1/K2 the M4 adjudication and ROUTE_DIES verdict",
+      "qualification": "the completeness objection is DISCHARGED: the primary tests all three byte-supported readings and computes the verdict to be reading-independent",
+      "survives": true
+    },
+    {
+      "claim": "K3/K5 the M2 census verdict and every fixed scale",
+      "qualification": "recomputed independently, Laplacian by spectral projection",
+      "survives": true
+    },
+    {
+      "claim": "geometric vacuity of the target orbit",
+      "qualification": "the checker's bipartiteness strengthening is CARRIED by the primary: the universal form is stated and verified there",
+      "survives": true
+    },
+    {
+      "claim": "the counterfactual leaves the induced set at Z, and the modulus condition is odd_part(M) = 27",
+      "qualification": "brute force agreed with the closed form on all 400 moduli",
+      "survives": true
+    },
+    {
+      "claim": "the declared construction space is honestly bounded",
+      "qualification": "one escapee found, declared out of scope by the primary, and non-selecting",
+      "survives": true
+    },
+    {
+      "claim": "the coverage map's CLOSED/OPEN partition",
+      "qualification": "0 undeclared leak in the M4 region's grounds; outcome unchanged",
+      "survives": true
+    }
+  ],
+  "teeth": [
+    {
+      "certificate_flipped": true,
+      "detail": [
+        "sha256 mismatch docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "git blob mismatch docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "expected": "A_PINS fails",
+      "mutation": "one byte-string flipped in the pinned axiom memo",
+      "tooth": "T1_tampered_pin"
+    },
+    {
+      "certificate_flipped": true,
+      "detail": {
+        "dropped": 9,
+        "full": 10
+      },
+      "expected": "the entry-count cross-check fails",
+      "mutation": "one census entry removed from the claim list",
+      "tooth": "T2_dropped_involution"
+    },
+    {
+      "certificate_flipped": true,
+      "detail": {
+        "with_forced_evidence": "UNRESOLVED_COMPOSITION_CLASS",
+        "with_real_evidence": "SITE_SET_DISJOINTNESS"
+      },
+      "expected": "the adjudicated reading flips",
+      "mutation": "evidence input 'the memo defines disjointness as non-adjacency' forced TRUE",
+      "tooth": "T3_hardcoded_adjudication"
+    },
+    {
+      "certificate_flipped": true,
+      "detail": {
+        "at_1_over_3": [
+          "M2-02",
+          "M2-04b"
+        ],
+        "at_2_over_27": []
+      },
+      "expected": "'selectors hitting the target' becomes non-empty",
+      "mutation": "the census target replaced by 1/3, a value two native entries DO pin",
+      "tooth": "T4_leaked_verdict"
+    },
+    {
+      "certificate_flipped": true,
+      "detail": {
+        "disclosed": "(1/1)Z",
+        "narrowed": "(1/2)Z"
+      },
+      "expected": "the induced solution set changes",
+      "mutation": "chain-length bound silently narrowed to [2,4,6]",
+      "tooth": "T5_narrowed_bound_undisclosed"
+    },
+    {
+      "certificate_flipped": true,
+      "detail": {
+        "blinded_detector_sees_plant": false,
+        "honest_detector_sees_plant": true
+      },
+      "expected": "the planted-Gram check fails",
+      "mutation": "the selector detector hardwired to False",
+      "tooth": "T6_planted_selector_blindness"
+    },
+    {
+      "certificate_flipped": true,
+      "detail": {
+        "receipt": "ROUTE_DIES",
+        "recomputed": "ROUTE_DIES",
+        "tampered": "ROUTE_LIVES"
+      },
+      "expected": "the claim-vs-recompute comparison flags a mismatch",
+      "mutation": "the receipt's M4 verdict rewritten to ROUTE_LIVES",
+      "tooth": "T7_tampered_receipt_claim"
+    },
+    {
+      "certificate_flipped": true,
+      "detail": {
+        "actually_pairwise_adjacent": false,
+        "claimed_pairwise_adjacent": true
+      },
+      "expected": "the bipartiteness test rejects it",
+      "mutation": "a fabricated 'pairwise-adjacent' triple submitted to the vacuity check",
+      "tooth": "T8_fabricated_adjacent_orbit"
+    }
+  ],
+  "teeth_that_bit": 8,
+  "teeth_total": 8
+}

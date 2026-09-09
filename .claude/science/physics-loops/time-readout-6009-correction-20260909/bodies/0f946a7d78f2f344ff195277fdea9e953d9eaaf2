@@ -1,0 +1,196 @@
+{
+  "block": "toe-time-blockG29-20260802",
+  "claims": [
+    {
+      "detail": "10/10 discharge rows byte-supported",
+      "id": "C1",
+      "statement": "every claimed discharge is byte-supported by its attributing note",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "survivors sigma/theta/mu/window/g: zero discharge sentences found",
+      "id": "C2",
+      "statement": "no note discharges any of the five claimed survivors",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "896's six names c4 explicitly, and 900 removes exactly c4, so the transfer 6 -> 5 is sound",
+      "id": "C3",
+      "statement": "the chain 8 -> 10 -> 6 -> 5 is supported by the notes' own prose",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "the two blocks used different bases and never met; the transfer is valid only because c4 is named in BOTH -- verified, not assumed",
+      "id": "C4",
+      "statement": "900's c4 discharge transfers legitimately onto 896's six",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "892 C892-T3: the kernel contributes EXACTLY ONE SCALAR (cos phi); 894's P2 is that same scalar carried as a bounded-degree polynomial -- one object, counted once",
+      "id": "C5",
+      "statement": "P2 is the same object as the theta coordinate, so the owed compression does not double-count",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "correct as an OBSTRUCTION count (902: {IF1} is the minimal obstructing subset). It understates the PROPERTY cost: IF5 is satisfiable only at the price of support faithfulness, which 902 computes as failing to lift. Both numbers should be carried: owed-obstruction 1, owed-with-property-costs 2.",
+      "id": "C6",
+      "statement": "the owed side compresses to {IF1}",
+      "verdict": "NARROWED"
+    },
+    {
+      "detail": "reproduced by pure F_p solution counting on 3 patches x 3 primes; no elimination anywhere",
+      "id": "C7",
+      "statement": "871's linear sector has free dimension 1",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "got (1, 2, 2 | 1) by counting",
+      "id": "C8",
+      "statement": "871's ablation ladder on patch (3,) is (1, 2, 2 | 1)",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "Burnside orbit counts {1: 4, 2: 10, 3: 21}; 2^10-1=1023 admissible, 2^9=512 containment-holding -- BOTH numbers appear in 887's own text and the primary uses each in its right place",
+      "id": "C9",
+      "statement": "887's window counts (15 / 1,023 / 2,097,151) and the containment-holding 512",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "independent full-cube route agrees exactly; G(0) > 0 at every mass, so mu^2 G(0) = 0 forces mu = 0",
+      "id": "C10",
+      "statement": "G(0) - G(e1) = (1 - mu^2 G(0))/6, equal to 1/6 iff mu = 0",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "the only load-bearing hypothesis is G(0) > 0, which is computed exact and positive at every mass and radius tested",
+      "id": "C11",
+      "statement": "the ablation price of the 1/6 normalization is exactly 1, killing exactly mu",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "TRUE and exhaustively verified, but it is a structural corollary of 871's own classification (the axiom-level linear readout is a multiple of the record count), not an independent discovery. Its value is exhaustiveness plus falsifier visibility, and the primary should not present it as a surprise. The LOAD-BEARING content -- that the window is NOT gauge at quadratic order -- is 892's and is unaffected.",
+      "id": "C12",
+      "statement": "the readout-gauge theorem strengthens from 9/12 catalogue maps to the whole containment-holding family",
+      "verdict": "NARROWED"
+    },
+    {
+      "detail": "independent complex-amplitude route: incidence {0: 0, 1: 0, 2: 0}; the vanishing at k=2 is what makes theta a GAUGE direction of the barrier-independent readout",
+      "id": "C13",
+      "statement": "theta is barrier-conditional: the incidence decreases with barrier thickness and vanishes on the invariant core",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "escapes exist and are exactly what the primary says they are: theta IS observable at thin/irregular barriers (10 found). The no-go is not 'theta is gauge' but 'theta is gauge on the INTERSECTION over admissible barriers' -- barrier-conditional, which is what the primary claims. No escape undermines it; they instantiate it.",
+      "id": "C14",
+      "statement": "the theta no-go's escape condition is correctly stated",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "each verdict is grounded in the pinned bytes of the block that defined the coordinate, not asserted",
+      "id": "C15",
+      "statement": "every GB-S2 survivor is dimensionless",
+      "verdict": "CORROBORATED"
+    },
+    {
+      "detail": "SURVIVES, but the statement must carry BOTH readings of mu: dimensionless in lattice units (884's own alpha/gamma definition) and dimensionful as a physical screening mass (mu_phys = mu/a). Under the second reading a ruler converts mu's UNIT -- it still cannot supply the pure number mu*a, so the dimensionless side's free dimension stays 5 and the cashing rule still cannot fire. The primary states only the first reading and should carry both.",
+      "id": "C16",
+      "statement": "no registration can ever close GB-S2",
+      "verdict": "NARROWED"
+    },
+    {
+      "detail": "it is a WIDER APPLICATION of 935's existing rule to a strictly stronger obligation, not an independent theorem. The mechanism is 935's verbatim. Credit should read that way.",
+      "id": "C17",
+      "statement": "the no-go is 'stronger than 935's'",
+      "verdict": "NARROWED"
+    }
+  ],
+  "counts": {
+    "claims": 17,
+    "corroborated": 13,
+    "narrowed": 4,
+    "refuted": 0,
+    "teeth_fired": 11,
+    "teeth_total": 11
+  },
+  "cycle": 941,
+  "independence": "F_p solution counting (zero linear algebra); Burnside orbit counting; ledger rebuilt from note prose rather than receipts; full unreduced cube solve; explicit complex-amplitude walk; primary never imported (firewall verified)",
+  "narrowings": [
+    "C6",
+    "C12",
+    "C16",
+    "C17"
+  ],
+  "refutations": [],
+  "role": "independent_checker",
+  "runtime_seconds": 1.08,
+  "target": "scripts/frontier_cycle941_gbs2_attack_2026_07_28.py",
+  "teeth": [
+    {
+      "description": "primary-not-imported",
+      "detail": "loaded=[]",
+      "fired": true,
+      "id": "CT0"
+    },
+    {
+      "description": "F_p counter returns p^k on a known control",
+      "detail": "solutions=27 expected 3^3=27",
+      "fired": true,
+      "id": "CT1"
+    },
+    {
+      "description": "Burnside orbit count agrees with independent marking",
+      "detail": "burnside=10 marking=10",
+      "fired": true,
+      "id": "CT2"
+    },
+    {
+      "description": "a fabricated discharge of g finds no byte support",
+      "detail": "no note contains a discharge sentence for g",
+      "fired": true,
+      "id": "CT3"
+    },
+    {
+      "description": "the mu over-credit trap fires (900 removes c4, NOT mu)",
+      "detail": "900: 'The repair presupposes mu; it does not derive it.'",
+      "fired": true,
+      "id": "CT4"
+    },
+    {
+      "description": "tampered pin digest is rejected",
+      "detail": "baac5557d4a6eef6",
+      "fired": true,
+      "id": "CT5"
+    },
+    {
+      "description": "the screened identity is exact and a wrong value is refused",
+      "detail": "G(0)-G(e1)=1/6",
+      "fired": true,
+      "id": "CT6"
+    },
+    {
+      "description": "the theta predicate fires on a free walk (no barrier)",
+      "detail": "25 sites reached at >= 2 distinct lengths",
+      "fired": true,
+      "id": "CT7"
+    },
+    {
+      "description": "a planted dimensionful survivor flips the Q3 verdict",
+      "detail": "all-dimensionless verdict is computed, not fixed",
+      "fired": true,
+      "id": "CT8"
+    },
+    {
+      "description": "checker numbers are deterministic across recomputation",
+      "detail": "(10, 1) == (10, 1)",
+      "fired": true,
+      "id": "CT9"
+    },
+    {
+      "description": "the reconciliation is computed, not asserted (removing 900's discharge returns 896's 6)",
+      "detail": "6 - |{c4}| = 5",
+      "fired": true,
+      "id": "CT10"
+    }
+  ],
+  "verdict": "CORROBORATES WITH THREE NARROWINGS"
+}

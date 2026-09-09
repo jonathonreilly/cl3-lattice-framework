@@ -1,0 +1,179 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle896_audit_reconciliation_independent_check_2026_07_28.py
+runner_sha256: d3d98d6cdfbdf1cd8369f51ed678df22a1dcbde6f76f2a7214ea85a31de0170d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.149
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 896 INDEPENDENT CHECK -- refutation attempt on the audit-lane
+                              reconciliation of Flags A and B
+==============================================================================
+
+INDEPENDENT REBUILDS
+  rotation group by generator closure: 24 elements
+  nearest-neighbour orbits: 2   window orbits (|x|^2 <= 16): 16
+  harmonic tower from polynomial-invariant counts (P_d = H_d + r^2 P_(d-2)):
+    nonzero degrees d=0:1, d=4:1, d=6:1, d=8:1, d=9:1, d=10:1, d=12:2  -> 7 free above the monopole
+  readout-half nullspace from scratch: dimension 1 (I_alpha(x) = alpha (x0 + x1 + x2))
+  obligation by sentence segmentation: 2 provision clauses, 2 disjuncts, 1 manner clause
+
+CLAIMS UNDER ATTACK
+  [SURVIVES] A1  the 880 pin records free dimension 1 and its own bytes label
+             re-extracted by raw-byte regex, no ast module used
+  [SURVIVES] A2  the 882 flag labels the SAME number under a DIFFERENT clause
+             the label mismatch is the primary's claimed root cause
+  [SURVIVES] A3  the landed obligation's closure criterion has exactly 2 prov
+             re-parsed by sentence segmentation, a different method
+  [SURVIVES] A4  the readout clause's own free dimension is 1, so 1 + 1 = 2 a
+             ADJUDICATED INDEPENDENTLY: the 3-variable C3-covariance nullspace is
+             recomputed here, not read out of Cycle 882
+  [SURVIVES] B1  the landed chart is 13-dimensional with residual 8
+             rebuilt by regex off the 884 primary text and cross-checked against
+             the 884 runner receipt
+  [SURVIVES] B2  the honest chart is 15-dimensional with residual 10
+             same route
+  [SURVIVES] B3  the orbit-indexed chart's residual is 27 with components 1 /
+             group rebuilt by GENERATOR CLOSURE; harmonic tower rebuilt from
+             polynomial-invariant counts via P_d = H_d (+) r^2 P_{d-2}
+  [SURVIVES] B4  the O -> H map accounts for all 27 orbit coordinates with no
+             DOUBLE-COUNT HUNT: every honest coordinate appearing in the map is
+             counted, and every orbit block size is recomputed here
+  [SURVIVES] B5  exactly 3 honest free coordinates (D, barrier, sigma) have n
+             this is a NARROWING of Cycle 884's checker: its 27 is not a
+             refinement of the whole honest 10
+  [SURVIVES] B6  the 10 -> 8 collapse is exactly the deletion of {c4, mu} and
+             DIMENSION-BY-DIMENSION: set differences recomputed from the chart
+             text, not read from the primary
+  [SURVIVES] B7  the composition O -> H -> L is consistent with O -> L
+             the composite is recomputed here from the rebuilt charts
+  [SURVIVES] B8  epsilon and m are charted in L and H, ELIMINATED in both, in
+             the two eliminated-inadmissible coordinates are located in all three
+             charts independently
+  [NARROWED] B9  the O -> H operator-block assignment (1 orbit constant -> mu
+             NARROWED, not refuted: the 884 checker's OWN inline comment on that
+             field reads 'amplitude, screening', so the block admits a
+             scale-absorbed reading in which the one free constant covers {sigma,
+             mu} jointly. Under it the orbit chart's own honest total is 29, not
+             30. The primary publishes both readings, so the conclusion (O
+             strictly exceeds H) is unaffected; any consumer must state which
+             reading it uses.
+  [SURVIVES] C1  every discharge the primary credits is supported by the sour
+             DISCHARGE AUDIT: each row is checked against the cited receipt's own
+             classification field
+  [SURVIVES] C2  Cycle 887 discharged NOTHING -- the primary must not credit 
+             the campaign summary's 'a/b extent = convention family' is NOT what
+             the 887 receipt says
+  [SURVIVES] C3  Cycle 893 is credited with nothing, because it has no artifa
+             an absent cycle credited with a discharge would be a refutation
+  [SURVIVES] C4  the current GB-S2 residual is 6 free dimensions plus 5 owed 
+             the post-discharge arithmetic is re-summed here from the ledger and
+             the checker's own angular tower
+  [SURVIVES] C5  the {a, b} pair contributes exactly 892's WINDOW dimension (
+             the pair is booked 0 + 1 rather than 1 + 0; the arithmetic is what
+             matters and it closes
+  [NARROWED] C6  the headline current residual of 6 is GB-S2's own NEW conten
+             NARROWED: the 884 primary's own witness for sigma says it is the
+             SAME scalar the source-action bridge was already priced to. The
+             audit lane's number is 6 for GB-S2 as stated, but 5 for GB-S2's
+             content NOT already owed by GB-S1. Both should be quoted; the
+             primary states the sharing in its sigma row but headlines only the
+             larger number.
+  [NARROWED] C7  the window contributes ONE dimension in the ordinary sense
+             NARROWED: 887 computes the admissible containment-holding window
+             space at 1023 distinct members inside a radius-2 box (113 under the
+             annular chart) and unbounded overall. The current residual's window
+             entry is therefore ONE CONVENTION with an unbounded value set, not a
+             one-parameter continuum. Counting it as 1 is right for a dimension
+             tally and wrong for anyone who reads '1 dimension' as 'one real
+             number to fix'.
+
+  17/20 claims survive unchanged; refuted: none; narrowed: ['B9', 'C6', 'C7']
+
+DOUBLE-COUNT HUNT (attack 1)
+  orbit-side sum recomputed here: 27
+  duplicated honest coordinates:  none
+  silently dropped honest free:   none
+  targets not in the honest chart: none
+    operator_constants_left_free                   primary  1  checker  1  agree=True
+    angular_coefficients_free_up_to_degree_12      primary  7  checker  7  agree=True
+    window_parameters_as_orbit_indicators          primary 16  checker 16  agree=True
+    phase_and_calibration_free                     primary  2  checker  2  agree=True
+    normalization_free                             primary  1  checker  1  agree=True
+
+DISCHARGE-ACCOUNTING AUDIT (attack 2)
+  sigma    cycles=[]                 supported=True
+           no cycle credited; nothing to support
+  theta    cycles=[892]              supported=True
+           ; 892 KERNEL = 1
+  mu       cycles=[]                 supported=True
+           no cycle credited; nothing to support
+  c4       cycles=[]                 supported=True
+           no cycle credited; nothing to support
+  a        cycles=[885, 887, 892]    supported=True
+           885 receipt classifies a as EXISTENCE_DERIVED_UNIQUENESS_OPEN; 892
+           WINDOW = 1
+  b        cycles=[885, 887, 892]    supported=True
+           885 receipt classifies b as EXISTENCE_DERIVED_UNIQUENESS_OPEN; 892
+           WINDOW = 1
+  D        cycles=[885]              supported=True
+           885 receipt classifies D as GAUGE
+  barrier  cycles=[885]              supported=True
+           885 receipt classifies barrier as DERIVED, residual premise one
+           identification: the PROPAGATION barrier is read off the
+  N        cycles=[885, 892]         supported=True
+           885 receipt classifies N as SUPPLIED; 892 INTERFACE = 5 vs ledger
+           owed 5
+  g        cycles=[]                 supported=True
+           no cycle credited; nothing to support
+  unsupported discharges: none
+
+TEETH
+  [BITES] T1  tampered pin: a single-field edit to a pinned receipt must
+           tampered digest e984f9e71c0f87aa != pinned 5d5c669ebc7c5861
+  [BITES] T2  dropped coordinate: deleting one block from the O -> H map
+           map sum falls to 26 against the required 27
+  [BITES] T3  hardcoded correspondence: substituting the annulus's 2 for
+           hardcoded 2 against the geometrically computed 16; total would fall
+           from 27 to 13
+  [BITES] T4  leaked reconciliation: if the checker's window count were 
+           the checker's count moves 16 -> 9, so it is computed, not leaked
+  [BITES] T5  skipped discharge: removing the 885 D row must break the c
+           ledger falls to 9 rows against the 10 honest free coordinates
+  [BITES] T6  double-count blindness: making one honest coordinate appea
+           injected duplicate(s) detected: ['N']
+  [BITES] T7  fabricated absence: the named Cycle-871 primary must be re
+           
+           scripts/frontier_cycle871_source_action_bridge_pricing_2026_07_28.py
+           exists on disk: False
+  [BITES] T8  tampered angular tower: perturbing one degree's invariant 
+           perturbed angular count 8 against the computed 7; the total would
+           read 28
+
+  8/8 teeth bite; blunt: none
+
+------------------------------------------------------------------------------
+CHECKER VERDICT
+  claims: 17/20 survive unchanged, 3 narrowed, 0 refuted
+  teeth:  8/8 bite
+
+  No claim is refuted. Three are NARROWED, and a consumer of the
+  reconciliation must carry all three:
+   (B9) the orbit chart's operator block admits a second reading --
+        the 884 checker's own comment says 'amplitude, screening' --
+        under which its honest total is 29, not 30.
+   (C6) sigma is the SAME scalar the source-action bridge was
+        already priced to, so GB-S2's NEW content is 5, not 6.
+   (C7) the window's '1' is one CONVENTION drawn from an unbounded
+        family (887: 1023 distinct members inside radius 2), not a
+        one-parameter continuum.
+
+  Two prior-art corrections the checker CONFIRMS: Cycle 884's
+  checker's 27 is not a refinement of the whole honest 10 (it never
+  charts sigma, D or barrier), and Cycle 887 discharged nothing --
+  its receipt records a NO-GO on the window extent and a WIDENING
+  of Cycle 885's pricing.
+  exit code is 0 regardless of claim survival
+receipt: outputs/audit_reconciliation_independent_check_cycle896_receipt_2026_07_28.json
+elapsed_sec: 0.109

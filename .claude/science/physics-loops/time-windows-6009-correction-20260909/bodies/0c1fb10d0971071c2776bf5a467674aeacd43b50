@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle902_p2_kernel_independent_check_2026_07_28.py
+runner_sha256: e7d6c611a3a4ca1c8c893eae0a1fd17215179d080a173ec985b4030552ff3a40
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 6.432
+status: ok
+----- stdout -----
+==========================================================================
+CYCLE 902 -- INDEPENDENT CHECK (specified to refute)
+==========================================================================
+
+primary   scripts/frontier_cycle902_p2_kernel_attack_2026_07_28.py
+          sha256 46d46db10258731b986f3c639eedcf1ad3f968021f1efe30c88cc3e5e17b46c2
+          blocklisted from import; blocklist hits 0
+
+INDEPENDENCE
+  monomial basis against the primary's Chebyshev basis; fraction-free integer elimination with content removal against its rational reduced row echelon form; nu indexed first and atoms/degrees reversed, so pivot order differs throughout; window-lattice atoms built by iterative block refinement rather than signature bucketing; path-length spectra accumulated in this checker's own loop; every Z re-derived from the amplitude field rather than from a spectrum.
+
+CLAIM AGREEMENT (every checker number recomputed)
+  OK  minimal fibre dimension                    primary=5  checker=5
+  OK  bridge-only satisfiable configs            primary=12  checker=12
+  OK  theta-free (894 regime) satisfiable configs primary=5  checker=5
+  OK  joint satisfiable configs                  primary=['single']  checker=['single']
+  OK  bridge grid points                         primary=648  checker=648
+  OK  bridge violations                          primary=0  checker=0
+
+PER-CONFIG RANKS / KERNELS (fraction-free, monomial basis)
+  config              BRIDGE rank/ker   ALL_FIVE rank/ker   nu!=0
+  single                 20/1                20/1            True
+  pair                   20/6                21/5           False
+  shell1                 30/1                31/0           False
+  ball1                  25/1                26/0           False
+  annulus_1_4            35/6                36/5           False
+  hollow_annulus         35/16               36/15          False
+  Lshape                 30/11               31/10          False
+  plane_square           20/6                21/5           False
+  chain                  20/6                21/5           False
+  sparse_a               35/26               36/25          False
+  sparse_b               35/26               36/25          False
+  offcentre_ball         25/1                26/0           False
+
+[A1] MINIMALITY ATTACK
+  independent family rank (monomial)   = 5
+  primary claim                        = 5
+  family-wide smaller degree subset    = None
+  truncated fibre -> configs served    = {1: 5, 2: 5, 3: 9, 4: 10, 5: 12}
+  smallest fibre serving the family    = 5
+  surviving sub-grid rank              = 2 (degrees [0, 2])
+  minimality REFUTED                   = False
+  No proper degree subset carries the whole realized family (family-wide hunt returned None), and the smallest truncated fibre that still serves all 12 configurations has dimension 5.  The primary's family-wide claim of 5 therefore STANDS.  It does NOT stand as a claim about the surviving sub-grid: there the rank is only 2, carried by degrees [0, 2], so the constructed interface object is over-provisioned by the family-minimal fibre.  The primary discloses this; the distinction is load-bearing and is recorded here as a SCOPE limit on the minimality theorem, not as a refutation.
+
+[A2] OPPOSITE-DIRECTION ATTACK
+  YES 'single': rows viol 0, grid 0/54, I=1/1 seed=1/1 IF1 holds True
+  NO direction -- independent solution attempts:
+    config            rank  ker  nu!=0      I    seed     gap
+    Lshape              31   10  False    7/1     0/1     7/1
+    annulus_1_4         36    5  False   46/1     0/1    46/1
+    ball1               26    0  False   13/1     1/1    12/1
+    chain               21    5  False    7/1     1/1     6/1
+    hollow_annulus      36   15  False   45/1     0/1    45/1
+    offcentre_ball      26    0  False   13/1     1/1    12/1
+    pair                21    5  False    3/1     1/2     5/2
+    plane_square        21    5  False   13/1     1/1    12/1
+    shell1              31    0  False   12/1     0/1    12/1
+    sparse_a            36   25  False   15/1     0/1    15/1
+    sparse_b            36   25  False   13/1     1/1    12/1
+  solutions found where the primary says none: []
+  inconsistencies in the exhibited solution:   []
+  verdict REFUTED = False
+
+[A3] BRIDGE ATTACK
+  grid points visited/declared = 648/648  (every point: True)
+  violations                   = 0
+  negative atom masses         = 0
+  Z source                     = recomputed from the amplitude field, never a spectrum
+
+TEETH  9/9 bite
+  BITES   T1_TAMPERED_PIN                          exit_if_live=2
+          planted: one byte flipped in the pinned 892 primary
+  BITES   T2_DROPPED_REQUIREMENT                   exit_if_live=1
+          planted: IF1 removed from the joint system
+  BITES   T3_HARDCODED_RANK                        exit_if_live=1
+          planted: rank probes of known rank 2, 1, 0, 3
+  BITES   T4_LEAKED_VERDICT                        exit_if_live=1
+          planted: the primary's verdict string used as a branch
+  BITES   T5_SKIPPED_GRID_POINT                    exit_if_live=1
+          planted: a single grid point's value shifted by 1/7
+  BITES   T6_PLANTED_SATISFIABILITY_BLINDNESS      exit_if_live=1
+          planted: IF1's readout replaced by the seed mass
+  BITES   T7_BASIS_ARTIFACT                        exit_if_live=1
+          planted: rank recomputed in the monomial basis
+  BITES   T8_LATTICE_ALGORITHM_ARTIFACT            exit_if_live=1
+          planted: atoms rebuilt by signature bucketing and compared against this checker's iterative refinement
+  BITES   T9_SOLVER_SELF_VALIDATION                exit_if_live=1
+          planted: every real system matrix ranked twice, by this checker's fraction-free elimination and by an independent rational RREF route
+
+==========================================================================
+CHECKER VERDICT: CORROBORATES
+  all claims agree   True
+  minimality refuted False
+  verdict refuted    False
+  all teeth bite     True
+  elapsed            6.374s
+  receipt            outputs/p2_kernel_independent_check_cycle902_receipt_2026_07_28.json
+==========================================================================

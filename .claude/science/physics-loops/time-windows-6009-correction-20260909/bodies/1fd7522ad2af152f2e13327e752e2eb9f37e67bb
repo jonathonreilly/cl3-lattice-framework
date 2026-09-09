@@ -1,0 +1,479 @@
+{
+ "Q1_extension_dimension_878_span": {
+  "formula": "rank(admissible span) * fibre dimension",
+  "lower_bound": 10,
+  "upper_bound": 25
+ },
+ "Q1_extension_dimension_generous_base": {
+  "events": 92260,
+  "formula": "|E| * fibre dimension (atoms are singletons, so the space of finitely additive weightings on E has dimension |E|)",
+  "value": 461300
+ },
+ "Q1_fibre_rank_computed_from_rows": 108,
+ "Q1_minimal_fibre_dimension": 5,
+ "Q1_per_config_fibre_rank": {
+  "Lshape": 3,
+  "annulus_1_4": 1,
+  "ball1": 1,
+  "chain": 2,
+  "hollow_annulus": 1,
+  "offcentre_ball": 1,
+  "pair": 4,
+  "plane_square": 2,
+  "shell1": 1,
+  "single": 2,
+  "sparse_a": 3,
+  "sparse_b": 2
+ },
+ "Q1_properties_that_fail_to_lift": [
+  "support faithfulness (every atom carries mass > 0)"
+ ],
+ "Q1_properties_that_lift": [
+  "finite additivity over disjoint pieces",
+  "normalizability (total mass > 0)",
+  "covariance under the landed monitor-phase group",
+  "covariance under the bank-label swap",
+  "admissibility (additive AND normalizable)"
+ ],
+ "Q2_IF1_two_readings": {
+  "note": "892's IF1 text is a SUPPORT condition and its 'what fails without it' is the pointwise-identification condition.  Both readings are computed.  The strong reading is the one the linear system enforces, because it is the one that can be written as equations; the weak reading is reported so the gap between them is visible rather than assumed away",
+  "strong_count": 1,
+  "strong_pointwise_identification_consistent": [
+   "single"
+  ],
+  "weak_count": 7,
+  "weak_support_overlap_nonempty": [
+   "single",
+   "pair",
+   "ball1",
+   "plane_square",
+   "chain",
+   "sparse_b",
+   "offcentre_ball"
+  ]
+ },
+ "Q2_c894_reproduction": {
+  "P2_repairs_exactly": [
+   "Lshape",
+   "chain",
+   "pair",
+   "plane_square",
+   "single",
+   "sparse_a",
+   "sparse_b"
+  ],
+  "claim_verdict": "CONFIRMED and sharpened",
+  "count": 5,
+  "repair_count": 7,
+  "sharpening": "P2 repairs EXACTLY the 7 theta-moving configurations and nothing else: the 5 frozen walks already satisfied IF3 without it, because a theta-constant Z needs no kernel argument.  So P2's IF3 purchase is 7/12, not 12/12",
+  "sibling_checker_claim": "P2-supplied composition passes IF3 on the theta-moving 7/12",
+  "theta_free_weighting_passes_on": [
+   "shell1",
+   "ball1",
+   "annulus_1_4",
+   "hollow_annulus",
+   "offcentre_ball"
+  ],
+  "theta_moving_configs_on_the_fine_grid": [
+   "Lshape",
+   "chain",
+   "pair",
+   "plane_square",
+   "single",
+   "sparse_a",
+   "sparse_b"
+  ]
+ },
+ "Q2_joint_satisfiable_configs": [
+  "single"
+ ],
+ "Q2_jointly_obstructed_configs": [
+  "Lshape",
+  "annulus_1_4",
+  "ball1",
+  "chain",
+  "hollow_annulus",
+  "offcentre_ball",
+  "pair",
+  "plane_square",
+  "shell1",
+  "sparse_a",
+  "sparse_b"
+ ],
+ "Q2_minimal_obstructing_subset": [
+  "IF1"
+ ],
+ "Q2_per_requirement": [
+  {
+   "P2_changes_it": false,
+   "id": "IF1",
+   "of_configs": 12,
+   "requirement": "amplitude support must overlap supp(R) so that the linear readout and the quadratic weight can be identified",
+   "satisfiable_after_P2": 1,
+   "why": "the kernel fibre re-weights path lengths; it cannot move a site.  The amplitude's SITE support is identical at every fibre point, so the barrier B(R) = supp(R) keeps the two loci disjoint exactly as before.  The equations for a record atom read c_0 = nu * I(atom) against a seed mass that is fixed by C892-T1, and they are inconsistent for nu != 0 on every configuration whose readout differs from its seed mass"
+  },
+  {
+   "P2_changes_it": false,
+   "id": "IF2",
+   "of_configs": 12,
+   "requirement": "finite additivity over disjoint window pieces",
+   "satisfiable_after_P2": 12,
+   "why": "banked before P2 and lifts unchanged (certificate D)"
+  },
+  {
+   "P2_changes_it": true,
+   "id": "IF3",
+   "of_configs": 12,
+   "requirement": "a theta-invariant normalizer, or theta declared observable",
+   "satisfiable_after_P2": 12,
+   "why": "with a theta-FREE weighting the bridge forces M_d = 0 for every d >= 1, which holds only on the 5 frozen configurations; the extension carries those coefficients, so a CONSTANT normalizer now works on all 12"
+  },
+  {
+   "P2_changes_it": false,
+   "id": "IF4",
+   "of_configs": 12,
+   "requirement": "the window must be an argument of the weight",
+   "satisfiable_after_P2": 12,
+   "why": "distinct windows carry distinct spectra, so distinct preimages carry distinct extended mass; the window is an argument by construction of the bridge"
+  },
+  {
+   "P2_changes_it": false,
+   "id": "IF5",
+   "of_configs": 12,
+   "requirement": "vanishing Z on admissible windows must be tolerated",
+   "satisfiable_after_P2": 12,
+   "why": "satisfiable, but only by giving up support faithfulness (certificate D): the extension must assign zero mass on the vanishing cells, which excludes the two support-faithful members of the 878 five"
+  },
+  {
+   "P2_changes_it": true,
+   "id": "IF6",
+   "of_configs": 12,
+   "requirement": "the identification must be with a degree-<= D polynomial in cos phi",
+   "satisfiable_after_P2": 12,
+   "why": "the extension IS the degree-<= D coefficient space, so IF6 holds by construction; certificate C shows the bound is tight and the planted truncation shows it is load-bearing"
+  }
+ ],
+ "Q2_subset_tables": {
+  "ALL_FIVE": {
+   "configs": [
+    "single"
+   ],
+   "count": 1
+  },
+  "BRIDGE_ONLY": {
+   "configs": [
+    "single",
+    "pair",
+    "shell1",
+    "ball1",
+    "annulus_1_4",
+    "hollow_annulus",
+    "Lshape",
+    "plane_square",
+    "chain",
+    "sparse_a",
+    "sparse_b",
+    "offcentre_ball"
+   ],
+   "count": 12
+  },
+  "BRIDGE_PLUS_IF1": {
+   "configs": [
+    "single"
+   ],
+   "count": 1
+  },
+  "BRIDGE_PLUS_IF5": {
+   "configs": [
+    "single",
+    "pair",
+    "shell1",
+    "ball1",
+    "annulus_1_4",
+    "hollow_annulus",
+    "Lshape",
+    "plane_square",
+    "chain",
+    "sparse_a",
+    "sparse_b",
+    "offcentre_ball"
+   ],
+   "count": 12
+  },
+  "C894_THETA_FREE": {
+   "configs": [
+    "shell1",
+    "ball1",
+    "annulus_1_4",
+    "hollow_annulus",
+    "offcentre_ball"
+   ],
+   "count": 5
+  }
+ },
+ "Q3_boundary": "the surviving sub-grid is ['single']: exactly the configuration(s) whose linear readout equals the seed mass that C892-T1 confines inside supp(R).  The boundary is NOT the frozen/moving split -- it is the readout-versus-seed-mass match, which is a property of the barrier, not of the kernel.",
+ "Q3_bridge_independence_status": "DEAD, as 894 predicted.  894 could leave (phi, N) free because its weighting side was (R, theta)-free, so no choice of bridge could ever match a moving Z.  Once the weighting carries the kernel argument the bridge is fully determined degree by degree: c_d(phi^-1(W)) = M_d(W)/N.  Bridge choice now MATTERS and is solved for here rather than quantified away.",
+ "Q3_bridge_violations": 0,
+ "Q3_exhibited_objects": [
+  {
+   "coefficient_table": [
+    {
+     "atom": 0,
+     "c_by_degree": [
+      "15600/1",
+      "0/1",
+      "1728/1",
+      "0/1",
+      "0/1"
+     ],
+     "meets_supp_R": false,
+     "sites": 12
+    },
+    {
+     "atom": 1,
+     "c_by_degree": [
+      "2910/1",
+      "0/1",
+      "264/1",
+      "0/1",
+      "0/1"
+     ],
+     "meets_supp_R": false,
+     "sites": 6
+    },
+    {
+     "atom": 2,
+     "c_by_degree": [
+      "492/1",
+      "0/1",
+      "108/1",
+      "0/1",
+      "0/1"
+     ],
+     "meets_supp_R": false,
+     "sites": 6
+    },
+    {
+     "atom": 3,
+     "c_by_degree": [
+      "1/1",
+      "0/1",
+      "0/1",
+      "0/1",
+      "0/1"
+     ],
+     "meets_supp_R": true,
+     "sites": 1
+    }
+   ],
+   "config": "single",
+   "normalizer_N": "1 (nu = 1; the solution space is a single ray)",
+   "pricing": "the solution space is 1-dimensional and that dimension is entirely the overall scale nu, so once the normalizer N is fixed the interface object is UNIQUE: residual freedom 0",
+   "residual_freedom_beyond_the_normalizer": 0,
+   "row_violations": 0,
+   "rows_checked": 50,
+   "solution_space_dimension": 1
+  }
+ ],
+ "Q3_grid_points": 648,
+ "VERDICT": "PARTIAL",
+ "all_certificates_pass": true,
+ "certificate_pass": {
+  "A_PINS": true,
+  "B_RESTRICTION_GATE": true,
+  "C_MINIMAL_FIBRE": true,
+  "D_EXTENSION": true,
+  "F_SATISFIABILITY": true,
+  "G_BRIDGE": true,
+  "H_FALSIFIERS": true,
+  "I_DOUBLE_BUILD": true,
+  "J_RUNTIME": true
+ },
+ "cycle": 902,
+ "deterministic_double_build": true,
+ "elapsed_sec": 6.254,
+ "falsifiers": {
+  "planted_obstructed": {
+   "configs_obstructed": 2,
+   "configs_realizing_degree_D": [
+    "Lshape",
+    "sparse_a"
+   ],
+   "designed_outcome": "obstructed exactly where degree D is realized",
+   "modification": "the fibre is truncated to dimension 4 (degree <= 3) -- a modification designed to obstruct",
+   "observed_as_designed": true,
+   "obstructed_configs": [
+    "Lshape",
+    "sparse_a"
+   ],
+   "reading": "the computed minimal fibre dimension is load-bearing: removing the top coefficient breaks exactly the configurations that realize it"
+  },
+  "planted_satisfiable": {
+   "configs_satisfiable": 12,
+   "designed_outcome": "satisfiable on every configuration",
+   "modification": "IF1's readout is replaced by the SEED MASS the record atom actually carries -- a modification designed to make the joint system satisfiable",
+   "observed_as_designed": true,
+   "of_configs": 12,
+   "reading": "the joint no-go is NOT an artifact of the solver: changing exactly the one quantity IF1 compares flips every configuration to satisfiable"
+  }
+ },
+ "family_digest": "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e",
+ "firewall_hits": 0,
+ "question": "Cycle 902 -- the P2 attack: construct the minimal kernel-argument extension of the Cycle-878 event space and compute exactly what it buys against the Cycle-892 interface sheet.",
+ "restriction_gate": "13/13 restriction gates reproduce.  892's 648 kernel identities recompute value-for-value with 0 violations, its 42 vanishing cells and its 7/12 theta-dependence both land exactly; 878's 92260 events, 5 admissible weightings and 10 discriminating pairs are read from the vendored artifacts.",
+ "restriction_gate_rows": [
+  {
+   "computed": "5",
+   "gate": "c878_admissible_weightings",
+   "match": true,
+   "target": "5"
+  },
+  {
+   "computed": "True",
+   "gate": "c878_atoms_are_singletons",
+   "match": true,
+   "target": "True"
+  },
+  {
+   "computed": "10",
+   "gate": "c878_discriminating_pairs",
+   "match": true,
+   "target": "10"
+  },
+  {
+   "computed": "92260",
+   "gate": "c878_event_cardinality",
+   "match": true,
+   "target": "92260"
+  },
+  {
+   "computed": "0",
+   "gate": "c878_indistinguishable_pairs",
+   "match": true,
+   "target": "0"
+  },
+  {
+   "computed": "30edaa3d5ca03c24",
+   "gate": "c892_family_digest_prefix",
+   "match": true,
+   "target": "30edaa3d5ca03c24"
+  },
+  {
+   "computed": "12",
+   "gate": "c892_family_size",
+   "match": true,
+   "target": "12"
+  },
+  {
+   "computed": "648",
+   "gate": "c892_identity_checks",
+   "match": true,
+   "target": "648"
+  },
+  {
+   "computed": "0",
+   "gate": "c892_identity_violations",
+   "match": true,
+   "target": "0"
+  },
+  {
+   "computed": "0",
+   "gate": "c892_negative_Z_cells",
+   "match": true,
+   "target": "0"
+  },
+  {
+   "computed": "7",
+   "gate": "c892_theta_moving_configs",
+   "match": true,
+   "target": "7"
+  },
+  {
+   "computed": "0",
+   "gate": "c892_unit_modulus_failures",
+   "match": true,
+   "target": "0"
+  },
+  {
+   "computed": "42",
+   "gate": "c892_vanishing_cells",
+   "match": true,
+   "target": "42"
+  }
+ ],
+ "science_digest": "b8329024527396587613e10d3f5f7d0c4ec77e3c27b45de726d16e121f1f345b",
+ "scope": "One 12-configuration family (digest 30edaa3d5ca03c24) in a box of radius 4 with walk depth 4; 9 containment-holding admissible windows AST-extracted from the pinned 887 primary; 6 thetas plus a 27-value fine grid used only for the theta-dependence gate; the Cycle-878 event space entering through its vendored artifacts.  Exact rational arithmetic throughout.",
+ "self_sha256": "46d46db10258731b986f3c639eedcf1ad3f968021f1efe30c88cc3e5e17b46c2",
+ "source_pins": [
+  {
+   "bytes": 101417,
+   "git_blob": "360eed9e17eab1af19ca03d7ea1161dafaf56da0",
+   "git_blob_matches_brief": true,
+   "path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py",
+   "sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f",
+   "sha256_matches_brief": true
+  },
+  {
+   "bytes": 8816,
+   "git_blob": "722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2",
+   "git_blob_matches_brief": true,
+   "path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json",
+   "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae",
+   "sha256_matches_brief": true
+  },
+  {
+   "bytes": 47315,
+   "git_blob": "af2e27c4a01b02b68c319e3a572eaeb2217e04e7",
+   "git_blob_matches_brief": true,
+   "path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+   "sha256": "6661955d91bd7321804c534c041fbcbc6ac6bd338aeef89c6bb1faf47b69093b",
+   "sha256_matches_brief": true
+  },
+  {
+   "bytes": 7169,
+   "git_blob": "565faf0be5e6930b08f585fea1c30b2ceaa41a91",
+   "git_blob_matches_brief": true,
+   "path": "outputs/event_space_groundwork_cycle878_receipt_2026_07_28.json",
+   "sha256": "4ef57b09238ed7b92ac1bf8113d45aff0093d2c8deb54ce717f87a2e6d42d17c",
+   "sha256_matches_brief": true
+  },
+  {
+   "bytes": 113653,
+   "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",
+   "git_blob_matches_brief": true,
+   "path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+   "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32",
+   "sha256_matches_brief": true
+  },
+  {
+   "bytes": 94389,
+   "git_blob": "0fbcf92fc98b0d88d436a05efdc33449c52473db",
+   "git_blob_matches_brief": true,
+   "path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py",
+   "sha256": "139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83",
+   "sha256_matches_brief": true
+  },
+  {
+   "bytes": 156438,
+   "git_blob": "643fb824665d967f770c8939977a0f4010839564",
+   "git_blob_matches_brief": true,
+   "path": "outputs/window_freedom_cycle887_receipt_2026_07_28.json",
+   "sha256": "d1807305098ae995224118f93b301fc822ef0d6efc9e49c4a16e90d694592f86",
+   "sha256_matches_brief": true
+  },
+  {
+   "bytes": 8846,
+   "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+   "git_blob_matches_brief": true,
+   "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+   "sha256_matches_brief": true
+  }
+ ],
+ "theorems": [
+  "C902-T1 MINIMAL KERNEL FIBRE.  The realized interference spectra of the pinned 12-configuration family over its 9 containment-holding windows span a space of exact rank 5 = D+1 = 5.  The minimal kernel-coordinate fibre is therefore FINITE with exactly 5 points, not a continuum, and the bound is tight: truncating it by one obstructs exactly the 2 configurations that realize the top degree.",
+  "C902-T2 THE EXTENSION BUYS THE BRIDGE.  Over the extension E x Theta the coefficient-matching system c_d(phi^-1(W)) = M_d(W)/N is consistent with N != 0 on 12/12 configurations, so IF2, IF3, IF4 and IF6 are jointly satisfiable on the whole family.  Against the same system a theta-FREE weighting -- the 894 regime -- succeeds only on the 5 frozen walks, so P2's purchase is exactly the 7 theta-moving configurations.",
+  "C902-T3 IF1 IS P2-INVARIANT.  The kernel fibre re-weights path lengths and cannot move a site, so the amplitude's site support is identical at every fibre point.  The IF1 rows for a record atom read c_0(atom) = nu * I(atom) against a seed mass fixed by C892-T1, and they force nu = 0 on 11 of 12 configurations.  Supplying P2 therefore does NOT dissolve 894's residual: it relocates it entirely onto IF1.",
+  "C902-T4 PARTIAL INTERFACE, PRICED.  On 1 of 12 configurations all five requirements are jointly satisfiable and an explicit (weighting, bridge) pair reproduces Z on every grid point.  Its solution space is one-dimensional -- the overall normalizer -- so the constructed interface object is UNIQUE once N is fixed: residual freedom 0."
+ ]
+}

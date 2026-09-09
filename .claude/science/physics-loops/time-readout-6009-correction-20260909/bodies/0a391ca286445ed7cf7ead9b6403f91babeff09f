@@ -1,0 +1,932 @@
+{
+ "claims": [
+  {
+   "checker_independent_value": {
+    "dim": 1,
+    "label": "source-action bridge"
+   },
+   "id": "A1",
+   "note": "re-extracted by raw-byte regex, no ast module used",
+   "primary_value": {
+    "dim": 1,
+    "label": "source-action bridge"
+   },
+   "statement": "the 880 pin records free dimension 1 and its own bytes label the clause 'source-action bridge'",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "flag_label": "readout",
+    "quotes_pin_at": 1,
+    "reports": 2
+   },
+   "id": "A2",
+   "note": "the label mismatch is the primary's claimed root cause",
+   "primary_value": {
+    "flag_label": "readout"
+   },
+   "statement": "the 882 flag labels the SAME number under a DIFFERENT clause name",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "disjuncts": 2,
+    "manner": 1,
+    "provision": 2
+   },
+   "id": "A3",
+   "note": "re-parsed by sentence segmentation, a different method",
+   "primary_value": {
+    "provision": 2
+   },
+   "statement": "the landed obligation's closure criterion has exactly 2 provision clauses and 1 manner clause",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "readout_clause_dimension": 1,
+    "sum": 2
+   },
+   "id": "A4",
+   "note": "ADJUDICATED INDEPENDENTLY: the 3-variable C3-covariance nullspace is recomputed here, not read out of Cycle 882",
+   "primary_value": {
+    "counter_supported": false,
+    "sum": 2
+   },
+   "statement": "the readout clause's own free dimension is 1, so 1 + 1 = 2 and the 'readout clause alone at dimension 2' counter-hypothesis fails",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "dim": 13,
+    "residual": 8
+   },
+   "id": "B1",
+   "note": "rebuilt by regex off the 884 primary text and cross-checked against the 884 runner receipt",
+   "primary_value": {
+    "dim": 13,
+    "residual": 8
+   },
+   "statement": "the landed chart is 13-dimensional with residual 8",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "dim": 15,
+    "residual": 10
+   },
+   "id": "B2",
+   "note": "same route",
+   "primary_value": {
+    "dim": 15,
+    "residual": 10
+   },
+   "statement": "the honest chart is 15-dimensional with residual 10",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "components": {
+     "angular_coefficients_free_up_to_degree_12": 7,
+     "normalization_free": 1,
+     "operator_constants_left_free": 1,
+     "phase_and_calibration_free": 2,
+     "window_parameters_as_orbit_indicators": 16
+    },
+    "first_anisotropic_degree": 4,
+    "rotations": 24,
+    "total": 27
+   },
+   "id": "B3",
+   "note": "group rebuilt by GENERATOR CLOSURE; harmonic tower rebuilt from polynomial-invariant counts via P_d = H_d (+) r^2 P_{d-2}",
+   "primary_value": {
+    "receipt_total": 27,
+    "total": 27
+   },
+   "statement": "the orbit-indexed chart's residual is 27 with components 1 / 7 / 16 / 2 / 1",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "dropped_honest_free": [],
+    "duplicates": [],
+    "orbit_side_sum": 27,
+    "per_block": [
+     {
+      "agree": true,
+      "checker": 1,
+      "component": "operator_constants_left_free",
+      "primary": 1
+     },
+     {
+      "agree": true,
+      "checker": 7,
+      "component": "angular_coefficients_free_up_to_degree_12",
+      "primary": 7
+     },
+     {
+      "agree": true,
+      "checker": 16,
+      "component": "window_parameters_as_orbit_indicators",
+      "primary": 16
+     },
+     {
+      "agree": true,
+      "checker": 2,
+      "component": "phase_and_calibration_free",
+      "primary": 2
+     },
+     {
+      "agree": true,
+      "checker": 1,
+      "component": "normalization_free",
+      "primary": 1
+     }
+    ],
+    "spurious_targets": []
+   },
+   "id": "B4",
+   "note": "DOUBLE-COUNT HUNT: every honest coordinate appearing in the map is counted, and every orbit block size is recomputed here",
+   "primary_value": {
+    "orbit_total": 27
+   },
+   "statement": "the O -> H map accounts for all 27 orbit coordinates with no honest coordinate double-counted and none silently dropped",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "orbit_own_total": 30,
+    "uncovered": [
+     "D",
+     "barrier",
+     "sigma"
+    ]
+   },
+   "id": "B5",
+   "note": "this is a NARROWING of Cycle 884's checker: its 27 is not a refinement of the whole honest 10",
+   "primary_value": {
+    "orbit_own_total": 30,
+    "uncovered": [
+     "D",
+     "barrier",
+     "sigma"
+    ]
+   },
+   "statement": "exactly 3 honest free coordinates (D, barrier, sigma) have no image in the orbit chart, so the orbit chart's own honest total is 30",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "H_minus_L": [
+     "c4",
+     "mu"
+    ],
+    "arithmetic": "10 - 2 = 8",
+    "free_delta": [
+     "c4",
+     "mu"
+    ],
+    "reclassified": []
+   },
+   "id": "B6",
+   "note": "DIMENSION-BY-DIMENSION: set differences recomputed from the chart text, not read from the primary",
+   "primary_value": {
+    "H_minus_L": [
+     "c4",
+     "mu"
+    ],
+    "free_delta": [
+     "c4",
+     "mu"
+    ]
+   },
+   "statement": "the 10 -> 8 collapse is exactly the deletion of {c4, mu} and no shared coordinate changes class",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "L_free_covered": [
+     "N",
+     "a",
+     "b",
+     "g",
+     "theta"
+    ],
+    "L_free_uncovered": [
+     "D",
+     "barrier",
+     "sigma"
+    ],
+    "closes": true,
+    "dropped_with_H_only": 8,
+    "surviving_to_L": 19
+   },
+   "id": "B7",
+   "note": "the composite is recomputed here from the rebuilt charts",
+   "primary_value": {
+    "dropped": 8,
+    "surviving": 19
+   },
+   "statement": "the composition O -> H -> L is consistent with O -> L",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "appear_in_O_map": [],
+    "eliminated": [
+     "epsilon",
+     "m"
+    ],
+    "in_any_residual": [
+     false,
+     false
+    ],
+    "in_landed": [
+     true,
+     true
+    ]
+   },
+   "id": "B8",
+   "note": "the two eliminated-inadmissible coordinates are located in all three charts independently",
+   "primary_value": {
+    "eliminated": [
+     "epsilon",
+     "m"
+    ]
+   },
+   "statement": "epsilon and m are charted in L and H, ELIMINATED in both, in neither residual, and absent from the orbit chart",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "884_checker_source_comment": "amplitude, screening",
+    "scale_absorbed_orbit_total": 29,
+    "scale_absorbed_uncovered": [
+     "D",
+     "barrier"
+    ],
+    "second_reading_exists": true
+   },
+   "id": "B9",
+   "note": "NARROWED, not refuted: the 884 checker's OWN inline comment on that field reads 'amplitude, screening', so the block admits a scale-absorbed reading in which the one free constant covers {sigma, mu} jointly. Under it the orbit chart's own honest total is 29, not 30. The primary publishes both readings, so the conclusion (O strictly exceeds H) is unaffected; any consumer must state which reading it uses.",
+   "primary_value": {
+    "primary_alt_total": 29,
+    "primary_emitted_both_readings": true
+   },
+   "statement": "the O -> H operator-block assignment (1 orbit constant -> mu alone) is the only reading",
+   "verdict": "NARROWED"
+  },
+  {
+   "checker_independent_value": {
+    "rows": [
+     {
+      "coordinate": "sigma",
+      "cycles": [],
+      "evidence": "no cycle credited; nothing to support",
+      "supported_by_source_receipt": true
+     },
+     {
+      "coordinate": "theta",
+      "cycles": [
+       892
+      ],
+      "evidence": "; 892 KERNEL = 1",
+      "supported_by_source_receipt": true
+     },
+     {
+      "coordinate": "mu",
+      "cycles": [],
+      "evidence": "no cycle credited; nothing to support",
+      "supported_by_source_receipt": true
+     },
+     {
+      "coordinate": "c4",
+      "cycles": [],
+      "evidence": "no cycle credited; nothing to support",
+      "supported_by_source_receipt": true
+     },
+     {
+      "coordinate": "a",
+      "cycles": [
+       885,
+       887,
+       892
+      ],
+      "evidence": "885 receipt classifies a as EXISTENCE_DERIVED_UNIQUENESS_OPEN; 892 WINDOW = 1",
+      "supported_by_source_receipt": true
+     },
+     {
+      "coordinate": "b",
+      "cycles": [
+       885,
+       887,
+       892
+      ],
+      "evidence": "885 receipt classifies b as EXISTENCE_DERIVED_UNIQUENESS_OPEN; 892 WINDOW = 1",
+      "supported_by_source_receipt": true
+     },
+     {
+      "coordinate": "D",
+      "cycles": [
+       885
+      ],
+      "evidence": "885 receipt classifies D as GAUGE",
+      "supported_by_source_receipt": true
+     },
+     {
+      "coordinate": "barrier",
+      "cycles": [
+       885
+      ],
+      "evidence": "885 receipt classifies barrier as DERIVED, residual premise one identification: the PROPAGATION barrier is read off the ",
+      "supported_by_source_receipt": true
+     },
+     {
+      "coordinate": "N",
+      "cycles": [
+       885,
+       892
+      ],
+      "evidence": "885 receipt classifies N as SUPPLIED; 892 INTERFACE = 5 vs ledger owed 5",
+      "supported_by_source_receipt": true
+     },
+     {
+      "coordinate": "g",
+      "cycles": [],
+      "evidence": "no cycle credited; nothing to support",
+      "supported_by_source_receipt": true
+     }
+    ],
+    "unsupported": []
+   },
+   "id": "C1",
+   "note": "DISCHARGE AUDIT: each row is checked against the cited receipt's own classification field",
+   "primary_value": {
+    "ledger_size": 10
+   },
+   "statement": "every discharge the primary credits is supported by the source receipt it cites",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "887_Q2_outcome": "NO-GO on the enumerated derivation routes for the window EXTENT; DERIVED for support containment; PRICED overall",
+    "contains_NO_GO_on_extent": true,
+    "primary_credits_887_with": 0
+   },
+   "id": "C2",
+   "note": "the campaign summary's 'a/b extent = convention family' is NOT what the 887 receipt says",
+   "primary_value": {
+    "claimed": false
+   },
+   "statement": "Cycle 887 discharged NOTHING -- the primary must not credit it with a free-dimension reduction",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "893_hits": {
+     "on_disk_hits": 0,
+     "tracked_files_scanned": 20950,
+     "tracked_hits": 0
+    },
+    "893_in_any_ledger_row": false
+   },
+   "id": "C3",
+   "note": "an absent cycle credited with a discharge would be a refutation",
+   "primary_value": {
+    "disclosed": true
+   },
+   "statement": "Cycle 893 is credited with nothing, because it has no artifact here",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "free": 6,
+    "orbit_chart": 12,
+    "owed": 5
+   },
+   "id": "C4",
+   "note": "the post-discharge arithmetic is re-summed here from the ledger and the checker's own angular tower",
+   "primary_value": {
+    "free": 6,
+    "orbit_chart": 12,
+    "owed": 5
+   },
+   "statement": "the current GB-S2 residual is 6 free dimensions plus 5 owed interface properties, and 12 on the orbit-indexed chart",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "892_WINDOW": 1,
+    "ledger_contribution_from_a_and_b": 1
+   },
+   "id": "C5",
+   "note": "the pair is booked 0 + 1 rather than 1 + 0; the arithmetic is what matters and it closes",
+   "primary_value": {
+    "booked_on": [
+     "b"
+    ]
+   },
+   "statement": "the {a, b} pair contributes exactly 892's WINDOW dimension (1) to the current residual",
+   "verdict": "SURVIVES"
+  },
+  {
+   "checker_independent_value": {
+    "residual_net_of_the_shared_bridge_scalar": 5,
+    "sigma_is_shared_with_the_bridge": true,
+    "sigma_witness_from_the_884_receipt": "the surviving product lambda*sigma; this is the SAME single scalar the source-action bridge was priced to, so it is shared with GB-S1 and not new to GB-S2"
+   },
+   "id": "C6",
+   "note": "NARROWED: the 884 primary's own witness for sigma says it is the SAME scalar the source-action bridge was already priced to. The audit lane's number is 6 for GB-S2 as stated, but 5 for GB-S2's content NOT already owed by GB-S1. Both should be quoted; the primary states the sharing in its sigma row but headlines only the larger number.",
+   "primary_value": {
+    "headline": 6
+   },
+   "statement": "the headline current residual of 6 is GB-S2's own NEW content",
+   "verdict": "NARROWED"
+  },
+  {
+   "checker_independent_value": {
+    "887_says_the_family_is_unbounded_overall": true,
+    "distinct_admissible_windows_inside_radius_2": 1023,
+    "distinct_annular_readings": 113
+   },
+   "id": "C7",
+   "note": "NARROWED: 887 computes the admissible containment-holding window space at 1023 distinct members inside a radius-2 box (113 under the annular chart) and unbounded overall. The current residual's window entry is therefore ONE CONVENTION with an unbounded value set, not a one-parameter continuum. Counting it as 1 is right for a dimension tally and wrong for anyone who reads '1 dimension' as 'one real number to fix'.",
+   "primary_value": {
+    "counted_as": 1
+   },
+   "statement": "the window contributes ONE dimension in the ordinary sense",
+   "verdict": "NARROWED"
+  }
+ ],
+ "claims_narrowed": [
+  "B9",
+  "C6",
+  "C7"
+ ],
+ "claims_refuted": [],
+ "claims_surviving": 17,
+ "claims_total": 20,
+ "cycle": 896,
+ "discharge_audit": {
+  "rows": [
+   {
+    "coordinate": "sigma",
+    "cycles": [],
+    "evidence": "no cycle credited; nothing to support",
+    "supported_by_source_receipt": true
+   },
+   {
+    "coordinate": "theta",
+    "cycles": [
+     892
+    ],
+    "evidence": "; 892 KERNEL = 1",
+    "supported_by_source_receipt": true
+   },
+   {
+    "coordinate": "mu",
+    "cycles": [],
+    "evidence": "no cycle credited; nothing to support",
+    "supported_by_source_receipt": true
+   },
+   {
+    "coordinate": "c4",
+    "cycles": [],
+    "evidence": "no cycle credited; nothing to support",
+    "supported_by_source_receipt": true
+   },
+   {
+    "coordinate": "a",
+    "cycles": [
+     885,
+     887,
+     892
+    ],
+    "evidence": "885 receipt classifies a as EXISTENCE_DERIVED_UNIQUENESS_OPEN; 892 WINDOW = 1",
+    "supported_by_source_receipt": true
+   },
+   {
+    "coordinate": "b",
+    "cycles": [
+     885,
+     887,
+     892
+    ],
+    "evidence": "885 receipt classifies b as EXISTENCE_DERIVED_UNIQUENESS_OPEN; 892 WINDOW = 1",
+    "supported_by_source_receipt": true
+   },
+   {
+    "coordinate": "D",
+    "cycles": [
+     885
+    ],
+    "evidence": "885 receipt classifies D as GAUGE",
+    "supported_by_source_receipt": true
+   },
+   {
+    "coordinate": "barrier",
+    "cycles": [
+     885
+    ],
+    "evidence": "885 receipt classifies barrier as DERIVED, residual premise one identification: the PROPAGATION barrier is read off the ",
+    "supported_by_source_receipt": true
+   },
+   {
+    "coordinate": "N",
+    "cycles": [
+     885,
+     892
+    ],
+    "evidence": "885 receipt classifies N as SUPPLIED; 892 INTERFACE = 5 vs ledger owed 5",
+    "supported_by_source_receipt": true
+   },
+   {
+    "coordinate": "g",
+    "cycles": [],
+    "evidence": "no cycle credited; nothing to support",
+    "supported_by_source_receipt": true
+   }
+  ],
+  "unsupported": []
+ },
+ "double_count_hunt": {
+  "dropped_honest_free": [],
+  "duplicates": [],
+  "orbit_side_sum": 27,
+  "per_block": [
+   {
+    "agree": true,
+    "checker": 1,
+    "component": "operator_constants_left_free",
+    "primary": 1
+   },
+   {
+    "agree": true,
+    "checker": 7,
+    "component": "angular_coefficients_free_up_to_degree_12",
+    "primary": 7
+   },
+   {
+    "agree": true,
+    "checker": 16,
+    "component": "window_parameters_as_orbit_indicators",
+    "primary": 16
+   },
+   {
+    "agree": true,
+    "checker": 2,
+    "component": "phase_and_calibration_free",
+    "primary": 2
+   },
+   {
+    "agree": true,
+    "checker": 1,
+    "component": "normalization_free",
+    "primary": 1
+   }
+  ],
+  "spurious_targets": []
+ },
+ "elapsed_sec": 0.108,
+ "firewall_hits": [],
+ "independent_rebuilds": {
+  "angular_free_up_to_degree_12": 7,
+  "charts_by_text": {
+   "blocks": {
+    "D": "WINDOW",
+    "N": "WINDOW",
+    "a": "WINDOW",
+    "b": "WINDOW",
+    "barrier": "WINDOW",
+    "c4": "KERNEL_SHAPE",
+    "epsilon": "KERNEL_SHAPE",
+    "g": "COUPLING",
+    "lambda": "KERNEL_SHAPE",
+    "m": "KERNEL_SHAPE",
+    "mu": "KERNEL_SHAPE",
+    "p": "KERNEL_SHAPE",
+    "s": "COUPLING",
+    "sigma": "KERNEL_SHAPE",
+    "theta": "KERNEL_SHAPE"
+   },
+   "classes": {
+    "D": "FREE",
+    "N": "FREE",
+    "a": "FREE",
+    "b": "FREE",
+    "barrier": "FREE",
+    "c4": "FREE",
+    "epsilon": "ELIMINATED",
+    "g": "FREE",
+    "lambda": "GAUGE",
+    "m": "ELIMINATED",
+    "mu": "FREE",
+    "p": "FORCED",
+    "s": "FORCED",
+    "sigma": "FREE",
+    "theta": "FREE"
+   },
+   "discovered_coordinates": [
+    "mu",
+    "c4"
+   ],
+   "eliminated": [
+    "epsilon",
+    "m"
+   ],
+   "honest_coordinates": [
+    "lambda",
+    "sigma",
+    "p",
+    "epsilon",
+    "m",
+    "theta",
+    "a",
+    "b",
+    "D",
+    "barrier",
+    "N",
+    "s",
+    "g",
+    "mu",
+    "c4"
+   ],
+   "honest_dimension": 15,
+   "honest_free": [
+    "D",
+    "N",
+    "a",
+    "b",
+    "barrier",
+    "c4",
+    "g",
+    "mu",
+    "sigma",
+    "theta"
+   ],
+   "landed_coordinates": [
+    "lambda",
+    "sigma",
+    "p",
+    "epsilon",
+    "m",
+    "theta",
+    "a",
+    "b",
+    "D",
+    "barrier",
+    "N",
+    "s",
+    "g"
+   ],
+   "landed_dimension": 13,
+   "landed_free": [
+    "D",
+    "N",
+    "a",
+    "b",
+    "barrier",
+    "g",
+    "sigma",
+    "theta"
+   ],
+   "method": "regex over the 884 primary source text (no ast)"
+  },
+  "harmonic_tower": [
+   {
+    "degree": 0,
+    "invariant_harmonics": 1,
+    "invariant_polynomials": 1
+   },
+   {
+    "degree": 1,
+    "invariant_harmonics": 0,
+    "invariant_polynomials": 0
+   },
+   {
+    "degree": 2,
+    "invariant_harmonics": 0,
+    "invariant_polynomials": 1
+   },
+   {
+    "degree": 3,
+    "invariant_harmonics": 0,
+    "invariant_polynomials": 0
+   },
+   {
+    "degree": 4,
+    "invariant_harmonics": 1,
+    "invariant_polynomials": 2
+   },
+   {
+    "degree": 5,
+    "invariant_harmonics": 0,
+    "invariant_polynomials": 0
+   },
+   {
+    "degree": 6,
+    "invariant_harmonics": 1,
+    "invariant_polynomials": 3
+   },
+   {
+    "degree": 7,
+    "invariant_harmonics": 0,
+    "invariant_polynomials": 0
+   },
+   {
+    "degree": 8,
+    "invariant_harmonics": 1,
+    "invariant_polynomials": 4
+   },
+   {
+    "degree": 9,
+    "invariant_harmonics": 1,
+    "invariant_polynomials": 1
+   },
+   {
+    "degree": 10,
+    "invariant_harmonics": 1,
+    "invariant_polynomials": 5
+   },
+   {
+    "degree": 11,
+    "invariant_harmonics": 0,
+    "invariant_polynomials": 1
+   },
+   {
+    "degree": 12,
+    "invariant_harmonics": 2,
+    "invariant_polynomials": 7
+   }
+  ],
+  "method_harmonic_tower": "polynomial-invariant trace counts + P_d = H_d (+) r^2 P_{d-2}",
+  "method_rotation_group": "generator closure on R_z(90), R_x(90)",
+  "nearest_neighbour_orbits": 2,
+  "obligation_by_sentences": {
+   "closure_sentences": 3,
+   "disjunct_count": 2,
+   "manner_clause_count": 1,
+   "manner_sentence": "It must derive the density-to-angle equality instead of packaging it as a convention or target-fitted readout.",
+   "method": "sentence segmentation + connective count",
+   "provision_clause_count": 2,
+   "provision_sentence": "A closing theorem must provide a physical carrier/source-action bridge and either a native eta/holonomy identity or a genuinely inhomogeneous Record-facing normalization theorem."
+  },
+  "pin_by_raw_bytes": {
+   "clause_label": "source-action bridge",
+   "free_dimension": 1,
+   "method": "raw-byte regex over the 880 source (no ast import used)",
+   "recovered": "sibling branch PR #5926 (source-action bridge free dimension 1: the overall normalisation scalar)"
+  },
+  "readout_half_nullspace": {
+   "covariance_rows": [
+    [
+     -1,
+     1,
+     0
+    ],
+    [
+     0,
+     -1,
+     1
+    ],
+    [
+     1,
+     0,
+     -1
+    ]
+   ],
+   "family": "I_alpha(x) = alpha (x0 + x1 + x2)",
+   "free_dimension_of_the_readout_clause": 1,
+   "nullspace_dimension": 1,
+   "rank": 2
+  },
+  "rotation_group_size": 24,
+  "window_orbits": 16
+ },
+ "role": "independent adversarial check of the Cycle-896 reconciliation",
+ "source_pins": [
+  {
+   "git_blob": "9a449956422a5687b5b1346f428c9e4e35489038",
+   "path": "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
+   "sha256": "4d742bcc68a1e7cdb154b366e671f576e9b719b3206445b97666c812a790e58c"
+  },
+  {
+   "git_blob": "db0472a8fe3e9e93f3f31f8e0b5ac0fd5c6630f8",
+   "path": "scripts/frontier_cycle880_visible_point_physics_2026_07_28.py",
+   "sha256": "e9d6f8a1483b87f7b0520ebe04356fcf4910bc5a25d1f7af97555644892d6ee4"
+  },
+  {
+   "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
+   "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+   "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a"
+  },
+  {
+   "git_blob": "9d70fdf701b3ad9619d7dffd4425fadd88eedbeb",
+   "path": "outputs/readout_identity_cycle882_receipt_2026_07_28.json",
+   "sha256": "85657e5afc72c510f3f9b8d631a282d6a2af0f04aecce257c5b4b59a915ccf31"
+  },
+  {
+   "git_blob": "7b244a7ce3a4d61589bea0f222cca5d847ab0200",
+   "path": "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+   "sha256": "685973be36ac89a9632d8ac4113a6e49e9db32e98c9977ec5965a3bb6bff6aeb"
+  },
+  {
+   "git_blob": "6166dae8afab56ac3f4fb1a8528afcf8b8fee101",
+   "path": "scripts/frontier_cycle884_gbs2_independent_check_2026_07_28.py",
+   "sha256": "6c32a50be08d22c90a93cdbf9a4b3380bc500381c9ac88009f43f6a3732db2be"
+  },
+  {
+   "git_blob": "5a3c9db3ff688f26a70cc9b82aed53ec0ff41bb8",
+   "path": "logs/runner-cache/gbs2_kernel_window_cycle884_receipt_2026_07_28.json",
+   "sha256": "5d5c669ebc7c58613892425745b09c35eb94dc216e8c38fe0f161e4f53541f98"
+  },
+  {
+   "git_blob": "3a5409a6b5e863e397a3e036f1b34c20bc24e5c3",
+   "path": "outputs/gbs2_kernel_window_cycle884_receipt_2026_07_28.json",
+   "sha256": "56adc1d58cd2c940de3047f65c9a9d10402a3c643d23fbb30434f583bcd392cd"
+  },
+  {
+   "git_blob": "0024ec4d8c147d875d30cded463dab1e25cedb48",
+   "path": "logs/runner-cache/gbs2_independent_check_cycle884_receipt_2026_07_28.json",
+   "sha256": "568baee25284bf79c26085705f40bf0d702b5361f94d4fca9668d4664a60dadb"
+  },
+  {
+   "git_blob": "553bba1fbd427f27c5606b6f27bd592a91e9c3c0",
+   "path": "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json",
+   "sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997"
+  },
+  {
+   "git_blob": "643fb824665d967f770c8939977a0f4010839564",
+   "path": "outputs/window_freedom_cycle887_receipt_2026_07_28.json",
+   "sha256": "d1807305098ae995224118f93b301fc822ef0d6efc9e49c4a16e90d694592f86"
+  },
+  {
+   "git_blob": "722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2",
+   "path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json",
+   "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae"
+  },
+  {
+   "git_blob": "1380746618125eb8abee84e56e5d957badd905b7",
+   "path": "scripts/frontier_cycle896_audit_reconciliation_2026_07_28.py",
+   "sha256": "0adb0a4051c6b880dff005c0a378e237eccc39c341952d34f49011eb746fd05a"
+  },
+  {
+   "git_blob": "7f12cdd83e05ce37e1b4c909cf78305909aa7bf3",
+   "path": "outputs/audit_reconciliation_cycle896_receipt_2026_07_28.json",
+   "sha256": "91164b75038f90cbff9ce861867adda938fc968625a28c159a2b8a3a68051680"
+  }
+ ],
+ "teeth": [
+  {
+   "bites": true,
+   "detail": "tampered digest e984f9e71c0f87aa != pinned 5d5c669ebc7c5861",
+   "id": "T1",
+   "tooth": "tampered pin: a single-field edit to a pinned receipt must break its sha256 gate"
+  },
+  {
+   "bites": true,
+   "detail": "map sum falls to 26 against the required 27",
+   "id": "T2",
+   "tooth": "dropped coordinate: deleting one block from the O -> H map must break the 27-coordinate coverage check"
+  },
+  {
+   "bites": true,
+   "detail": "hardcoded 2 against the geometrically computed 16; total would fall from 27 to 13",
+   "id": "T3",
+   "tooth": "hardcoded correspondence: substituting the annulus's 2 for the computed orbit-indicator count must change the total"
+  },
+  {
+   "bites": true,
+   "detail": "the checker's count moves 16 -> 9, so it is computed, not leaked",
+   "id": "T4",
+   "tooth": "leaked reconciliation: if the checker's window count were read from the primary instead of computed, moving the shell bound from |x|^2 <= 16 to <= 9 would leave it unchanged"
+  },
+  {
+   "bites": true,
+   "detail": "ledger falls to 9 rows against the 10 honest free coordinates",
+   "id": "T5",
+   "tooth": "skipped discharge: removing the 885 D row must break the completeness gate"
+  },
+  {
+   "bites": true,
+   "detail": "injected duplicate(s) detected: ['N']",
+   "id": "T6",
+   "tooth": "double-count blindness: making one honest coordinate appear in two orbit blocks must be caught"
+  },
+  {
+   "bites": true,
+   "detail": "scripts/frontier_cycle871_source_action_bridge_pricing_2026_07_28.py exists on disk: False",
+   "id": "T7",
+   "tooth": "fabricated absence: the named Cycle-871 primary must be reported absent, never reconstructed"
+  },
+  {
+   "bites": true,
+   "detail": "perturbed angular count 8 against the computed 7; the total would read 28",
+   "id": "T8",
+   "tooth": "tampered angular tower: perturbing one degree's invariant dimension must move the 27 total"
+  }
+ ],
+ "teeth_biting": 8,
+ "teeth_not_biting": [],
+ "teeth_total": 8
+}

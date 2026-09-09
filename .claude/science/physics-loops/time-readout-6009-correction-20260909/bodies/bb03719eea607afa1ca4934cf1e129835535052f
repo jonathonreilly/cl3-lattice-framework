@@ -1,0 +1,199 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle896_audit_reconciliation_2026_07_28.py
+runner_sha256: 0adb0a4051c6b880dff005c0a378e237eccc39c341952d34f49011eb746fd05a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.598
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 896 -- AUDIT-LANE RECONCILIATION: the 871 pin discrepancy and
+             the GB-S2 chart counts (8 / 10 / 27)
+==============================================================================
+
+[PASS] A_PINS
+       12 artifacts pinned by full path + sha256 + git blob, all matching. The
+       two same-basename Cycle-884 receipts
+       (gbs2_kernel_window_cycle884_receipt_2026_07_28.json) are certified
+       DISTINCT: the logs/runner-cache copy is the runner receipt (25 keys,
+       carrying the chart counts) and the outputs copy is the block-note receipt
+       (14 keys). Cycle 871 artifacts on this branch: 0 tracked / 0 on disk.
+       Cycle 893: 0 tracked / 0 on disk. Nothing is reconstructed for either.
+
+[PASS] B_FLAG_A_STATEMENTS
+       Statement 1 (on branch, AST): the Cycle-880 pin reads 'sibling branch PR
+       #5926 (source-action bridge free dimension 1: the overall normalisation
+       scalar)' -- free dimension 1, and its OWN bytes label the clause
+       'source-action bridge'. Statement 2 (on branch, text): the Cycle-882
+       receipt reads '871 readout dimension: report says 2, on-branch BRANCH_PINS
+       says 1; flagged for audit-lane reconciliation, nothing depends on it' --
+       it labels the clause 'readout' and quotes the branch pin at 1. The two
+       statements label DIFFERENT clauses (source-action bridge vs readout):
+       same_clause=False.
+
+[PASS] C_FLAG_A_OBLIGATION
+       The landed obligation's closure criterion is a CONJUNCTION of 2 provision
+       clauses -- clause 1 'a physical carrier/source-action bridge' and clause
+       2, itself a disjunction of 2 branches -- plus 1 manner clause ('It must
+       derive the density-to-angle equality instead of pack...') that supplies no
+       parameter. The obligation's own clause dimension is therefore 2.
+
+[PASS] D_FLAG_A_MAP
+       SAME OBJECT, TWO BOOKKEEPINGS -- BIJECTION EXHIBITED. 1 + 1 = 2, the
+       complement is exactly Cycle 882's computed readout residual, and the
+       obligation's own clause count (2) matches the wider bookkeeping.
+
+[PASS] E_FLAG_B_CHARTS
+       Three charts rebuilt from pinned bytes. LANDED: 13 coordinates, residual
+       8. HONEST: 15 coordinates, residual 10. ORBIT-INDEXED: residual 27 = 1
+       operator + 7 angular (first anisotropic degree 4) + 16 window orbits + 2
+       phase/calibration + 1 normalization. The angular tower is computed twice
+       -- exact character sum and brute monomial averaging -- and the two agree
+       (True).
+
+[PASS] F_FLAG_B_MAPS
+       O -> H: all 27 orbit coordinates are accounted for across 5 blocks with no
+       honest coordinate double-counted; the refinements are the angular tower
+       (7:1) and the window (16:2). 3 honest coordinates (D, barrier, sigma) are
+       NOT carried by the orbit chart at all, so the orbit chart's own honest
+       total is 30, not 27. H -> L: L is a coordinate SUBSET of H and the 10 -> 8
+       collapse is exactly the deletion of the two discovered coordinates ['c4',
+       'mu']; no shared coordinate changes class. The two eliminated-inadmissible
+       coordinates ['epsilon', 'm'] sit in BOTH L and H, in NEITHER residual, and
+       have no image in O.
+
+[PASS] G_DISCHARGES
+       Discharge accounting over the 10 honest free coordinates, complete and
+       per-cycle attributed. 885 discharges D (gauge) and barrier (derived,
+       modulo one identification premise) and re-scopes N. 887 discharges NOTHING
+       -- its own receipt reads 'NO-GO on the enumerated derivation routes for
+       the window EXTENT; DERIVED for support containment; PRICED overall' and it
+       WIDENS 885's pricing. 892 collapses the window locus to 1 convention,
+       sharpens theta to 1 scalar, and prices the N-interface at 5 owed
+       properties. Cycle 893 is absent from this branch and is attributed
+       nothing.
+
+[PASS] H_CURRENT_RESIDUAL
+       The number the audit lane needs today is 6 on the honest chart (+5 owed
+       interface properties), or 5 if it wants GB-S2 content not already owed by
+       the priced bridge; 12 on the orbit-indexed chart. The conversion
+       dictionary is a single rule now: everything except the angular tower is
+       chart-invariant. The window entry is one CONVENTION drawn from an
+       unbounded family, not a one-parameter continuum.
+
+[PASS] N_HONESTY
+       16/16 honesty checks hold. The gate is outcome-neutral: it verifies that
+       both flags' statements were rebuilt, that all three charts were rebuilt,
+       that the maps close in both directions, and that non-discharges and
+       absences are reported -- not that any particular verdict landed.
+
+------------------------------------------------------------------------------
+FLAG A -- RESOLUTION
+------------------------------------------------------------------------------
+  verdict: SAME OBJECT, TWO BOOKKEEPINGS -- BIJECTION EXHIBITED
+  A CLAUSE-LABEL SLIP, computed not asserted. The Cycle-880 pin's own bytes
+  say 'source-action bridge' -- it prices the obligation's FIRST provision
+  clause (the physical carrier/source-action bridge). The Cycle-882 flag
+  files that same number under the label 'readout' -- the obligation's
+  SECOND provision clause. The two numbers were never about the same clause,
+  so they were never in conflict.
+
+  The AC R-eta readout-derivation obligation carries 2 provision clauses and
+  total free dimension 2 on this branch's computations: 1 on the
+  carrier/source-action bridge clause (the overall normalisation scalar, per
+  the Cycle-880 pin) plus 1 on the Record-facing readout normalization
+  clause (the anchor constant k, alpha = k/3, per Cycle 882's exact
+  nullspace computation). The on-branch pin's 1 is the BRIDGE clause and is
+  correct at its own scope; the report's 2 is the OBLIGATION-WIDE total and
+  is correct at its scope. Both are right; the flag was a clause-label slip.
+
+  exact arithmetic: 1 + 1 = 2
+  bookkeeping A (1, provision clause 1 only (the physical carrier/source-action bridge)): ['bridge_clause_overall_normalisation_scalar']
+  bookkeeping B (2, both provision clauses of the obligation (bridge + readout normalization)): ['bridge_clause_overall_normalisation_scalar', 'readout_clause_anchor_constant_k']
+  injective=True no_double_count=True covers_B=True
+  counter-hypothesis supported: False
+
+------------------------------------------------------------------------------
+FLAG B -- RECONCILED DIMENSION STATEMENT + CONVERSION DICTIONARY
+------------------------------------------------------------------------------
+  chart L (landed)        dim  13  residual 8
+  chart H (honest)        dim  15  residual 10
+  chart O (orbit-indexed) dim   -  residual 27  (own honest total 30)
+
+  conversion dictionary  O -> H:
+     1 operator_constants_left_free                 ->   1:1  ['mu']
+     7 angular_coefficients_free_up_to_degree_12    ->   7:1  ['c4']
+    16 window_parameters_as_orbit_indicators        ->  16:2  ['a', 'b']
+     2 phase_and_calibration_free                   ->   2:2  ['theta', 'g']
+     1 normalization_free                           ->   1:1  ['N']
+    -- not carried by O: ['D', 'barrier', 'sigma']
+  conversion dictionary  H -> L:
+    delete ['c4', 'mu']  (10 - 2 = 8); no shared coordinate changes class: True
+  eliminated-inadmissible coordinates sit in L and H, in no residual, and have no image in O: ['epsilon', 'm']
+
+  CURRENT (post-discharge) GB-S2 residual:
+    CURRENT GB-S2 RESIDUAL = 6 free dimensions on the honest chart at the
+    landed angular truncation (sigma, theta, mu, c4, g, and ONE window
+    convention), PLUS 5 owed interface properties (IF1, IF3, IF4, IF5, IF6)
+    as a single named import, PLUS 3 named conventions/premises (of which 1
+    -- the barrier identification -- is what discharged a coordinate). On
+    the orbit-indexed chart the same residual reads 12, the difference being
+    exactly the angular tower (7 coefficients up to degree 12 against the
+    landed chart's 1). Without an angular cutoff the residual is unbounded
+    on both charts. The pre-discharge honest residual was 10: the discharges
+    moved 4 free dimensions out and 5 owed interface dimensions in, so the
+    PRICED size went UP by 1, not down.
+
+    angular-cutoff table:
+      cutoff    4  angular         1  residual         6  HONEST / LANDED (the 884 primary's c4 truncation)
+      cutoff   12  angular         7  residual        12  ORBIT-INDEXED (the 884 checker's truncation)
+      cutoff None  angular unbounded  residual unbounded  no angular cutoff declared
+
+  THE NUMBER THE AUDIT LANE NEEDS TODAY: 6 free dimensions (+5 owed interface properties)
+    ... or 5 for GB-S2 content NOT already owed by the priced bridge scalar (sigma is shared: True)
+    ... and the window entry is ONE CONVENTION from an unbounded family (1023 distinct members inside radius 2), not a continuum
+
+------------------------------------------------------------------------------
+PER-CYCLE DISCHARGE ATTRIBUTION
+------------------------------------------------------------------------------
+  sigma    free_now=1 owed_import=0 premises=0 cycles=[]
+      UNTOUCHED -- still free (and shared with the GB-S1 bridge scalar, so
+      it is not new GB-S2 content)
+  theta    free_now=1 owed_import=0 premises=0 cycles=[892]
+      SHARPENED, NOT DISCHARGED -- exactly one scalar, cos phi =
+      (1-theta^2)/(1+theta^2)
+  mu       free_now=1 owed_import=0 premises=0 cycles=[]
+      UNTOUCHED -- still free
+  c4       free_now=1 owed_import=0 premises=0 cycles=[]
+      UNTOUCHED -- still free
+  a        free_now=0 owed_import=0 premises=0 cycles=[885, 887, 892]
+      MERGED -- absorbed into the joint window convention, which is
+      counted once on the pair {a, b} (booked on b below)
+  b        free_now=1 owed_import=0 premises=0 cycles=[885, 887, 892]
+      MERGED -- carries the ONE window convention for the pair {a, b}:
+      which member of 887's admissible containment-holding window space is
+      the detector window
+  D        free_now=0 owed_import=0 premises=0 cycles=[885]
+      DISCHARGED -- determined as a GAUGE CLASS
+  barrier  free_now=0 owed_import=0 premises=1 cycles=[885]
+      DISCHARGED as a free dimension -- DERIVED B(R) = supp(R), modulo one
+      named identification premise
+  N        free_now=0 owed_import=5 premises=0 cycles=[885, 892]
+      RESOLVED -- not an independent free scalar; it decomposes into the
+      window convention (already counted), the kernel scalar (already
+      counted), and the owed event-space interface
+  g        free_now=1 owed_import=0 premises=0 cycles=[]
+      UNTOUCHED -- still free
+
+  887 claimed effect: 'a/b extent = convention family'
+  887 receipt supports it: False
+    887 receipt actually says: NO-GO on the enumerated derivation routes for
+    the window EXTENT; DERIVED for support containment; PRICED overall
+
+  893 present on this branch: False
+
+------------------------------------------------------------------------------
+deterministic double build: True  digest 260db5d56ec1e58a
+all certificates pass: True
+receipt: outputs/audit_reconciliation_cycle896_receipt_2026_07_28.json
+elapsed_sec: 1.555

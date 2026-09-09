@@ -14,8 +14,9 @@ R2  the k-run law, on its OWN random seed and with a DIFFERENT ground
     truth implementation (single pass with explicit wrap handling, no
     array doubling), including the all-good edge case and the even-parity
     fact for the mismatch set;
-R3  the CLAIMS_JSON line parsed from the primary's pinned cache must match
-    field for field;
+R3  the selected CLAIMS_JSON fields consumed by R1/R2 must have the expected
+    values; this checker does not reconstruct or compare the complete primary
+    science digest field for field;
 R4  an overclaim scan on the primary's emitted output: the withdrawn
     wording ("SEALED", "sealed holdout", "cryptographically sealed") must
     not be asserted.
@@ -47,7 +48,7 @@ EXPECTED_SHA256 = {
     PRIMARY_PATH:
         "6e5c58df6a9c75244c64141b5a1405a6413110e685ccd802530956e920b6563d",
     PRIMARY_CACHE:
-        "e47d1c8f2dd3724d734f852ad2bf399a923ed2f1a056002ed451184fe64af347",
+        "52b66a293720bef213c9f1bcba52c348f4b6dbfe233ee7794b150f33c5019e14",
 }
 
 WITHDRAWN_WORDING = ("SEALED", "sealed holdout", "cryptographically sealed")

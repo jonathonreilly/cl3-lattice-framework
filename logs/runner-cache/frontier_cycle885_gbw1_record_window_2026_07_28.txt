@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py
+runner_sha256: d2186088808624275d698d32d12306d90bb8936fc2c4cce0965964dbed16671c
+input_fingerprint_sha256: 8483ad179ce9f8c0c4fbf02c5a0826bda18d6c14a6bee9454d99d7ce12c1b2ac
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 1.38
+status: ok
+----- stdout -----
+{"boundary_theta_moving": ["single", "pair", "Lshape", "plane_square", "chain", "sparse_a", "sparse_b"], "centre_disagreement_configurations": ["hollow_annulus", "Lshape", "sparse_a", "sparse_b"], "finite_map_checks": {"boundary_shell": {"distinct": 12, "equivariance_checks": 1440, "equivariance_failures": 0, "finite_filter": false, "monotonicity_failures": 24, "monotonicity_pairs": 35, "rotation_only_failures": 0}, "constant_cube": {"distinct": 1, "equivariance_checks": 1440, "equivariance_failures": 1152, "finite_filter": false, "monotonicity_failures": 0, "monotonicity_pairs": 35, "rotation_only_failures": 0}, "dilation1": {"distinct": 11, "equivariance_checks": 1440, "equivariance_failures": 0, "finite_filter": true, "monotonicity_failures": 0, "monotonicity_pairs": 35, "rotation_only_failures": 0}, "dilation2": {"distinct": 11, "equivariance_checks": 1440, "equivariance_failures": 0, "finite_filter": true, "monotonicity_failures": 0, "monotonicity_pairs": 35, "rotation_only_failures": 0}, "support": {"distinct": 12, "equivariance_checks": 1440, "equivariance_failures": 0, "finite_filter": true, "monotonicity_failures": 0, "monotonicity_pairs": 35, "rotation_only_failures": 0}}, "orbit_counts": {"1": 4, "2": 10, "3": 21}, "support_seed_rows": [{"configuration": "single", "positive_length_landings_on_support": 0, "seed_mass_on_support": "1", "support_mass": "1"}, {"configuration": "pair", "positive_length_landings_on_support": 0, "seed_mass_on_support": "1/2", "support_mass": "1/2"}, {"configuration": "shell1", "positive_length_landings_on_support": 0, "seed_mass_on_support": "0", "support_mass": "0"}, {"configuration": "ball1", "positive_length_landings_on_support": 0, "seed_mass_on_support": "1", "support_mass": "1"}, {"configuration": "annulus_1_4", "positive_length_landings_on_support": 0, "seed_mass_on_support": "0", "support_mass": "0"}, {"configuration": "hollow_annulus", "positive_length_landings_on_support": 0, "seed_mass_on_support": "0", "support_mass": "0"}, {"configuration": "Lshape", "positive_length_landings_on_support": 0, "seed_mass_on_support": "0", "support_mass": "0"}, {"configuration": "plane_square", "positive_length_landings_on_support": 0, "seed_mass_on_support": "1", "support_mass": "1"}, {"configuration": "chain", "positive_length_landings_on_support": 0, "seed_mass_on_support": "1", "support_mass": "1"}, {"configuration": "sparse_a", "positive_length_landings_on_support": 0, "seed_mass_on_support": "0", "support_mass": "0"}, {"configuration": "sparse_b", "positive_length_landings_on_support": 0, "seed_mass_on_support": "1", "support_mass": "1"}, {"configuration": "offcentre_ball", "positive_length_landings_on_support": 0, "seed_mass_on_support": "1", "support_mass": "1"}]}
+[PASS] nonempty disjoint shell violates all-superset monotonicity
+[PASS] DFS reproduces actual depth-four seed and walk counts
+[PASS] all twelve support spectra match DFS
+[PASS] original support equivariance
+[PASS] original fixed-cube translation failures
+[PASS] original boundary retractions
+[PASS] original centre and boundary theta counts
+[PASS] support mass is exact zero-step seed mass
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+
