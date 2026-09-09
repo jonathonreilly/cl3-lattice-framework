@@ -1,0 +1,33 @@
+========================================================================
+GATE-R-HALF: diagonal weight conventions vs r = 1/2
+========================================================================
+PASS C is the forward 3-cycle, C^3 = I
+PASS HS norm ||aI||^2 = 3 a^2
+PASS HS norm ||bC + b̄C^2||^2 = 6 |b|^2
+PASS equipartition ||aI||^2 = ||bC+b̄C^2||^2  <=>  3a^2 = 6|b|^2  <=>  r = 1/2
+PASS Koide Q = 1/3 + (2/3)r gives Q=0.333 at r=0.0
+PASS Koide Q = 1/3 + (2/3)r gives Q=0.667 at r=0.5
+PASS Koide Q = 1/3 + (2/3)r gives Q=1.000 at r=1.0
+PASS spectral cross-check: r=1/2, δ=0 gives Koide Q = 2/3
+PASS spectral cross-check: r=1 gives Q = 1 (det/Born default lane)
+PASS triangle geometry: each generation vertex has 1 stay + 2 face-diagonal neighbors
+PASS the (1,2) sector multiplicity matches the I-term vs {C,C^2}-terms split
+PASS candidate [geometric 1/L (inverse length)]: |b|/a=0.7071 -> r=0.5000, Q=0.6667  (rests on a=1 (stay normalized) + inverse-length; both unforced) :: r=1/2
+PASS candidate [geometric 1/L^2 (propagator)]: |b|/a=0.5000 -> r=0.2500, Q=0.5000
+PASS candidate [path-count (2 NN paths -> weight 2)]: |b|/a=2.0000 -> r=4.0000, Q=3.0000  (r=4, Q=3 unphysical)
+PASS candidate [inverse path-count (weight 1/2)]: |b|/a=0.5000 -> r=0.2500, Q=0.5000
+PASS candidate [group orbit-size ratio 12/6 = 2]: |b|/a=2.0000 -> r=4.0000, Q=3.0000
+PASS candidate [group stabilizer ratio 4/8 = 1/2]: |b|/a=0.5000 -> r=0.2500, Q=0.5000
+PASS candidate [K_0-real block-counting (equipartition)]: |b|/a=0.7071 -> r=0.5000, Q=0.6667  (= the admitted AC_phi_lambda block-counting measure; NOT new) :: r=1/2
+PASS candidate [Born / dimension measure (a=|b|)]: |b|/a=1.0000 -> r=1.0000, Q=1.0000  (the r=1 default)
+PASS exactly the block-counting and the (unforced) geometric-1/L conventions give r=1/2
+PASS the ONLY r=1/2 convention forced by retained machinery is block-counting = the admitted AC_phi_lambda
+PASS VERDICT: no NEW forced convention derives r=1/2; GATE-R-HALF not closed by diagonal weighting
+PASS geometry explains the (1,2) sector multiplicity but NOT the equal-power measure (Born gives r=1)
+PASS source-note firewall present: 'does not change axioms'
+PASS source-note firewall present: 'not forced'
+PASS source-note firewall present: 'does not close'
+PASS source-note firewall present: 'AC_phi_lambda'
+========================================================================
+SUMMARY: PASS=27 FAIL=0
+========================================================================

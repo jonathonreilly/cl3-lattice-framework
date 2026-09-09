@@ -1,0 +1,33 @@
+========================================================================
+GATE-CHIRALITY: face-diagonal coupling on the hw=1 generation orbit
+========================================================================
+PASS R is the cyclic 3-shift with R^3 = I
+PASS Γ_χ = (2/3)J − I
+PASS Γ_χ = (-1/3)I + (2/3)(R + R^2) is a circulant
+PASS Γ_χ^2 = I
+PASS Γ_χ eigenvalues are {+1, -1, -1}
+PASS trace Γ_χ = -1
+PASS [Γ_χ, R] = 0 (Γ_χ commutes with the C_3 shift)
+PASS hw=1 generations are pairwise face-diagonal (Hamming distance 2)
+PASS C_3 shift R cycles the three generations (single orbit)
+PASS Sym(R^3) basis has dimension 6
+PASS symmetric circulants {I, R+R^2} span comm(R)∩Sym (dim 2)
+PASS RETAINED NO-GO reproduced: comm(R)∩anticomm(Γ_χ)∩Sym = {0} :: dim=0
+PASS full chiral family anticomm(Γ_χ)∩Sym has dimension 2 (chiral operators exist) :: dim=2
+PASS every nonzero chiral operator breaks C_3-equivariance ([M,R] ≠ 0)
+PASS equal-weight face-diagonal coupling M_sym = R+R^2 = J−I is a circulant
+PASS equal-weight (C_3-symmetric) face-diagonal coupling is NOT chiral ({M_sym,Γ_χ} ≠ 0)
+PASS pure face-diagonal (zero-diagonal symmetric) chiral slice dimension computed :: dim=0
+PASS NO pure face-diagonal coupling is chiral (any weights): chirality needs on-site terms not supplied by links
+PASS the C_3-symmetric equal-weight direction (1,1,1) on the three face-diagonals is never chiral
+PASS escape (II): qubit-factor grading I_3⊗σ_z differs from the gate's Γ_χ⊗I_2
+PASS escape (II): the two gradings commute (live on different tensor factors)
+PASS escape (II) is a different (open) construction, not Γ_χ on the generation factor
+PASS VERDICT: face-diagonal coupling does NOT escape the chirality no-go natively
+PASS source-note firewall present: 'does not change axioms'
+PASS source-note firewall present: 'relocates the gap'
+PASS source-note firewall present: 'external input'
+PASS source-note firewall present: 'does NOT escape'
+========================================================================
+SUMMARY: PASS=27 FAIL=0
+========================================================================

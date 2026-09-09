@@ -1,0 +1,35 @@
+========================================================================
+L2 face connection-algebra dimension audit
+========================================================================
+PASS face Hilbert space (C^2)^{(x)4} has complex dimension 16
+PASS Embedding A, NN-only face: Lie algebra dimension = 13 :: 13
+PASS Embedding A, NN+2 diagonals: Lie algebra dimension = 13 :: 13
+PASS Embedding A: the 2 face-diagonals add 0 dimensions
+PASS Embedding A: i*I_16 is in the algebra
+PASS Embedding A: i*I_16 is central (commutes with all generators)
+PASS Embedding A: derived algebra [g,g] has dimension 12 :: 12
+PASS Embedding A: each site triple {i*sigma} closes as su(2)
+PASS Embedding A: su(2)'s on different sites commute
+PASS Embedding A: the 12 site-su(2) generators all lie in g
+PASS Embedding A: the 4 site-su(2)'s span the 12-dim derived algebra
+PASS Embedding A: g = derived(12) + center(1) = 13
+PASS Embedding A: each site su(2) is an ideal of g (semisimple part = 4 commuting su(2))
+PASS Embedding A: largest simple ideal has dim 3 (su(2)); 3 < 8 = dim su(3) -> NO faithful su(3)
+PASS Embedding A: raw generators 6 links x 3 + phase collapse from 18+ to 13 (connected-graph collapse)
+PASS Embedding B, 4-label face NN (C4): closure = su(4), dim 15 :: 15
+PASS Embedding B, 4-label face NN+diag (K4): closure = su(4), dim 15 :: 15
+PASS Embedding B, face: diagonals add 0 (NN 4-cycle already connected)
+PASS Embedding B, face: su(4) (dim 15) is NOT su(3) (dim 8)
+PASS Generation triangle (face-diagonals), tight-binding: closure = su(3), dim 8 :: 8
+PASS the su(3) acts faithfully on the 3-dim generation fundamental
+PASS generations are NOT nearest neighbors: NN-only gives 0 coupling generators
+PASS the face-diagonals ADD the entire su(3) here (the one place diagonals matter)
+PASS a 'color' generator maps generation-1 onto generation-2 (mixes generations)
+PASS identifying generation-su(3) with QCD color is excluded: 3 generations x 3 colors = 9 != 3
+PASS source-note firewall present: 'does not change axioms'
+PASS source-note firewall present: 'NO faithful su(3)'
+PASS source-note firewall present: 'horizontal'
+PASS source-note firewall present: 'embedding'
+========================================================================
+SUMMARY: PASS=29 FAIL=0
+========================================================================

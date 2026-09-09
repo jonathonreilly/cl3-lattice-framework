@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/diagonal_gate_chirality_hw1_orbit_test.py
+runner_sha256: f691f17abb3d39771434bbc52d201139bbd9b1ae8b7d941585cfc5f705f9e8fe
+input_fingerprint_sha256: 18fff2390b5703404121831f8aff23ff378dd732e3ab61bfdb40b6106aec4e0e
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+========================================================================
+GATE-CHIRALITY: face-diagonal coupling on the abstract hw=1 label orbit
+========================================================================
+PASS R is the cyclic 3-shift with R^3 = I
+PASS Γ_χ = (2/3)J − I
+PASS Γ_χ = (-1/3)I + (2/3)(R + R^2) is a circulant
+PASS Γ_χ^2 = I
+PASS Γ_χ eigenvalues are {+1, -1, -1}
+PASS trace Γ_χ = -1
+PASS [Γ_χ, R] = 0 (Γ_χ commutes with the C_3 shift)
+PASS hw=1 labels are pairwise face-diagonal (Hamming distance 2)
+PASS C_3 shift R cycles the three labels (single orbit)
+PASS Sym(R^3) basis has dimension 6
+PASS symmetric circulants {I, R+R^2} span comm(R)∩Sym (dim 2)
+PASS finite real-symmetric intersection reproduced: comm(R)∩anticomm(Γ_χ)∩Sym = {0} :: dim=0
+PASS full chiral family anticomm(Γ_χ)∩Sym has dimension 2 (chiral operators exist) :: dim=2
+PASS computed nonzero real-symmetric basis representatives break C_3-equivariance
+PASS equal-weight face-diagonal coupling M_sym = R+R^2 = J−I is a circulant
+PASS equal-weight (C_3-symmetric) face-diagonal coupling is NOT chiral ({M_sym,Γ_χ} ≠ 0)
+PASS D2: real symmetric zero-diagonal anticommuting slice has required dimension 0 :: dim=0
+PASS D2: the real pure-hop anticommutator map has full column rank 3
+PASS D2: nonzero complex Hermitian zero-diagonal hop anticommutes with Gamma and breaks C3 :: H=[[0j, (-0-2j), (-0-1j)], [2j, 0j, 1j], [1j, (-0-1j), 0j]]
+PASS the C_3-symmetric equal-weight direction (1,1,1) on the three face-diagonals is never chiral
+PASS escape (II): qubit-factor grading I_3⊗σ_z differs from the gate's Γ_χ⊗I_2
+PASS escape (II): the two gradings commute (live on different tensor factors)
+PASS escape (II) is a different (open) construction, not Γ_χ on the label factor
+PASS the tested simultaneous real equivariance/anticommutation slice remains zero
+PASS publication text check: 'does not change axioms'
+PASS publication text check: 'real symmetric'
+PASS publication text check: 'Complex Hermitian counterexample'
+PASS publication text check: 'Physical chirality'
+========================================================================
+SUMMARY: PASS=28 FAIL=0
+TOTAL: 28 passed, 0 failed
+========================================================================
+
+----- stderr -----
+

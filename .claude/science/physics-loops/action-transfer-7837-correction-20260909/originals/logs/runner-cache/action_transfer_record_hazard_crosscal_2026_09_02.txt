@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/action_transfer_record_hazard_crosscal_2026_09_02.py
+runner_sha256: e98821f43950f047d4889039791df4aa85f4e7db73d99f53b1022f5057d3e9be
+input_fingerprint_sha256: 8e875619b3416578769629b4b7999ee8d1398b5252a127de7a8b549ecc9372a0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.22
+status: ok
+----- stdout -----
+PASS frozen preregistration, amendment, axioms, closest prior surfaces, and open heads are pinned :: prereg=True amendment=True sources=True open_heads=12/12
+PASS finite cubic 2-design turns one positive transfer into normalized marked flux and its Bloch content :: first=(0, 0, 0) second_diag=(1/3, 1/3, 1/3) Gamma=5/4 r=(0, 0, 3/5) mean=(0, 0, 1/5)
+PASS constant determinant is exactly the rate-polarization law; traceless exponentiation is sufficient, not unique :: det=alpha^2(1-|r|^2) directions=4 witness_r=3/5 Gamma/Gamma0=5/4
+PASS traceless action fixes the transfer determinant while context-dependent scalar shifts preserve content and change races :: W_eigs=(2, 1/2) det=1 scaled_hazard=3/2 same_r=True
+PASS same-qubit Kraus step is complete only in its time-step domain and its no-jump branch filters the unique neutral blank :: dt=1/4 complete=True first_weights=True blank=I/2:True no_jump_filters=True postjump_rejump=True; external stop required
+PASS continuous same-qubit survival is a two-exponential mixture and eventual Record marks lose the action bias :: S(t)=[exp(-2t)+exp(-t/2)]/2 curvature_gap=9/16 integrated_marks={1}
+PASS orthogonal blank/Record Kraus family is basis-independent, memoryless, complete, and absorbing :: Gamma=5/4 kraus=12 total=True basis=True finite=True absorbing=True
+PASS one Kraus qubit cannot host blank plus a fully absorbing Record orbit; a three-qubit even block is the finite algebraic escape :: L_zero=True even_dims=(2, 4) three_qubit_jump_even=True; composite placement remains open
+PASS memoryless two-site race obeys the determinant/content odds law and gives the exact 4/9 witness :: r2=3/5 Gamma2/Gamma0=5/4 P(site1)=4/9 odds=4/5 mean_mark2=(0, 0, 1/5)
+PASS same-qubit survival filtering predicts 1/2 at the separating race and competitor-dependent winner content :: P_filter(site1)=1/2 versus memoryless=4/9; r2|win=1/3 or 9/35 by competitor
+PASS winner and content residuals form a Record-filtration calibration with no duration or unread-absence observable :: required Records=context, eligibility, order, winner, formed content, fresh-target id; absolute duration unused
+PASS N1-N8, current-axiom custody, owner decision, prior-art boundary, and zero-closure accounting pass :: two positive architectures retained; event-flux and history law remain physical inputs; no audit or axiom action
+N5_rhetoric: PASS narrow Kraus-carrier and conditional-entailment boundaries; no universal formation no-go or TOE-closure claim
+per_element: positive qubit transfers, POVM effects, branch weights, and determinant identities are checked exactly
+per_site: same-qubit filtering and one orthogonal-blank absorbing Record writer are both executed
+per_mode: six cubic marks and three parity-safe logical basis vectors are checked without a continuum assumption
+per_block: two co-enabled sites supply the clock-free 4/9 versus 1/2 Record-race discriminator
+lattice_wide: checked and not executed — covariant block allocation, overlap arbitration, and infinite-volume existence remain open
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

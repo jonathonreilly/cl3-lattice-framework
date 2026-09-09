@@ -1,0 +1,32 @@
+========================================================================
+L1 diagonal = Wilson-line composite of NN connections
+========================================================================
+PASS NN link U_x is in SU(2)
+PASS NN link U_y is in SU(2)
+PASS NN link U_z is in SU(2)
+PASS sample U_x and U_y do NOT commute (curved background)
+PASS face-diagonal path-A holonomy U_y U_x is in SU(2)
+PASS face-diagonal path-B holonomy U_x U_y is in SU(2)
+PASS the two diagonal paths disagree (path-dependent holonomy)
+PASS W_B W_A^{-1} equals the plaquette P_xy = U_x U_y U_x^-1 U_y^-1 (field strength)
+PASS P_xy is in SU(2)
+PASS the diagonal holonomy carries no parameter beyond {U_x,U_y}: W_A is exactly U_y@U_x
+PASS both face-diagonal holonomies are words in NN links only (no new DOF)
+PASS abelian sample V_x, V_y commute
+PASS abelian plaquette P_xy is trivial (identity)
+PASS with trivial plaquette the two face-diagonal paths AGREE (no DOF, path-independent)
+PASS log(plaquette) = -a^2 [A_x,A_y] + O(a^3): leading term is the field strength :: resid=5.00e-10 vs a^3=1.00e-09
+PASS the field strength [A_x,A_y] is nonzero (genuine curvature data)
+PASS body-diagonal has 3! = 6 NN path orderings
+PASS all 6 body-diagonal holonomies are in SU(2)
+PASS curved background: the 6 body-diagonal holonomies are not all identical :: 6 distinct
+PASS swapping first two body-diagonal steps multiplies holonomy by plaquette P (=field strength)
+PASS flat background: all 6 body-diagonal holonomies coincide (zero new DOF)
+PASS flat background: face-plaquettes P_xy,P_yz,P_xz all trivial
+PASS L1 diagonal degrees of freedom added = 0 (holonomy is a word in NN links)
+PASS source-note firewall present: 'L1 adds zero new content'
+PASS source-note firewall present: 'fully determined by the NN connection variables'
+PASS source-note firewall present: 'does not change axioms'
+========================================================================
+SUMMARY: PASS=26 FAIL=0
+========================================================================

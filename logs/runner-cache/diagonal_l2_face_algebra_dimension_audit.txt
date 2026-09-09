@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/diagonal_l2_face_algebra_dimension_audit.py
+runner_sha256: 501e1dfb8653fcebd03455bbdd09a0dc47908154f9158655a2e6523277ee3bbc
+input_fingerprint_sha256: 5c2c58f6308b939ef8ae6a654411e61aa01593aba0600911a3c948e629577926
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+========================================================================
+L2 stipulated face operator-algebra checks
+========================================================================
+PASS face Hilbert space (C^2)^{(x)4} has complex dimension 16
+PASS Embedding A, NN-only face: Lie algebra dimension = 13 :: 13
+PASS Embedding A, NN+2 diagonals: Lie algebra dimension = 13 :: 13
+PASS Embedding A: the 2 face-diagonals add 0 dimensions
+PASS Embedding A: i*I_16 is in the algebra
+PASS Embedding A: i*I_16 is central (commutes with all generators)
+PASS Embedding A: derived algebra [g,g] has dimension 12 :: 12
+PASS Embedding A: each site triple {i*sigma} closes as su(2)
+PASS Embedding A: su(2)'s on different sites commute
+PASS Embedding A: the 12 site-su(2) generators all lie in g
+PASS Embedding A: the 4 site-su(2)'s span the 12-dim derived algebra
+PASS Embedding A: g = derived(12) + center(1) = 13
+PASS Embedding A: each site su(2) is an ideal of g (semisimple part = 4 commuting su(2))
+PASS Embedding A: largest simple ideal has dim 3 (su(2)); 3 < 8 = dim su(3) -> NO faithful su(3)
+PASS Embedding A: raw generators 6 links x 3 + phase collapse from 18+ to 13 (this four-cycle endpoint-sum family)
+PASS Embedding B, 4-label face NN (C4): closure = su(4), dim 15 :: 15
+PASS Embedding B, 4-label face NN+diag (K4): closure = su(4), dim 15 :: 15
+PASS Embedding B, face: diagonals add 0 (NN 4-cycle already connected)
+PASS Embedding B, face: su(4) (dim 15) is NOT su(3) (dim 8)
+PASS Abstract three-label triangle (face-diagonals), tight-binding: closure = su(3), dim 8 :: 8
+PASS the su(3) acts faithfully on the 3-dim label fundamental
+PASS the selected labels have no Hamming-distance-one pairs: NN-only gives 0 coupling generators
+PASS the supplied distance-two pairs generate su(3) on this label space
+PASS a supplied generator maps label-1 onto label-2
+PASS if independent three-by-three factors are supplied, their product dimension is 9 != 3
+PASS D1: X -> diag(X,0) is a faithful trace/adjoint/bracket-preserving su(3) embedding :: image rank=8
+PASS D1: all eight embedded basis matrices lie in the computed su(4)
+PASS publication text check: 'does not change axioms'
+PASS publication text check: 'NO faithful su(3)'
+PASS publication text check: 'horizontal'
+PASS publication text check: 'embedding'
+========================================================================
+SUMMARY: PASS=31 FAIL=0
+TOTAL: 31 passed, 0 failed
+========================================================================
+
+----- stderr -----
+

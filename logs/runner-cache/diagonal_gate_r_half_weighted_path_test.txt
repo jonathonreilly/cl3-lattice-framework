@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/diagonal_gate_r_half_weighted_path_test.py
+runner_sha256: 9f716fa8eea84e0cb40879cd6278731c65a8dfc729fc13c5a56870f3761e960c
+input_fingerprint_sha256: 13cd7ee0063dfc56f298dc9bba46c882c0276dbb227e64d83f56fde881925104
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+========================================================================
+GATE-R-HALF: diagonal weight conventions vs r = 1/2
+========================================================================
+PASS C is the forward 3-cycle, C^3 = I
+PASS HS norm ||aI||^2 = 3 a^2
+PASS HS norm ||bC + b̄C^2||^2 = 6 |b|^2
+PASS equipartition ||aI||^2 = ||bC+b̄C^2||^2  <=>  3a^2 = 6|b|^2  <=>  r = 1/2
+PASS signed Q_H = 1/3 + (2/3)r gives Q=0.333 at r=0.0
+PASS signed Q_H = 1/3 + (2/3)r gives Q=0.667 at r=0.5
+PASS signed Q_H = 1/3 + (2/3)r gives Q=1.000 at r=1.0
+PASS spectral cross-check: r=1/2, δ=0 gives signed Q_H = 2/3
+PASS spectral cross-check: r=1 gives Q_+ = 1 (supplied nonnegative spectrum)
+PASS triangle geometry: each abstract label has 1 stay + 2 face-diagonal neighbors
+PASS the (1,2) coefficient-direction count matches the I-term vs {C,C^2}-terms split
+PASS supplied rule [geometric inverse length with stay normalized]: abs(b)/a=0.7071 -> r=0.5000, Q_H=0.6667 :: r=1/2
+PASS supplied rule [inverse squared length]: abs(b)/a=0.5000 -> r=0.2500, Q_H=0.5000
+PASS supplied rule [path count]: abs(b)/a=2.0000 -> r=4.0000, Q_H=3.0000
+PASS supplied rule [inverse path count]: abs(b)/a=0.5000 -> r=0.2500, Q_H=0.5000
+PASS supplied rule [displacement orbit-size ratio 12/6]: abs(b)/a=2.0000 -> r=4.0000, Q_H=3.0000
+PASS supplied rule [displacement stabilizer ratio 4/8]: abs(b)/a=0.5000 -> r=0.2500, Q_H=0.5000
+PASS supplied rule [coefficient HS balance]: abs(b)/a=0.7071 -> r=0.5000, Q_H=0.6667 :: r=1/2
+PASS supplied rule [equal amplitudes a=abs(b)]: abs(b)/a=1.0000 -> r=1.0000, Q_H=1.0000
+PASS exactly two of these eight supplied rules have r=1/2
+PASS D3: true central projectors give unequal powers at coefficient balance :: coefficient powers=[3.0, 2.999999999999999]; central powers=(5.828427124746189, 0.17157287525381004)
+PASS D5: signed Q_H=3 differs from Q_+=27/49 for eigenvalues 5,-1,-1
+PASS D3: equal-amplitude rule gives r=1, not coefficient HS balance
+PASS D5: r rejects zero a
+PASS publication text check: 'does not change axioms'
+PASS publication text check: 'not forced'
+PASS publication text check: 'does not close'
+PASS publication text check: 'AC_phi_lambda'
+========================================================================
+SUMMARY: PASS=28 FAIL=0
+TOTAL: 28 passed, 0 failed
+========================================================================
+
+----- stderr -----
+

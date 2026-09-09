@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/diagonal_l1_wilson_line_composite_demonstration.py
+runner_sha256: 4582453b0c66a1e2cd7e2d7b68c5ac61062eb05b07130835ec4ec9d6d806a4c6
+input_fingerprint_sha256: 8dc1f71448c84340deb44bdf886ef65471f48c71e91d21dd48fd1e3d16a85852
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+========================================================================
+L1 diagonal = Wilson-line composite of NN connections
+========================================================================
+PASS NN link U_x is in SU(2)
+PASS NN link U_y is in SU(2)
+PASS NN link U_z is in SU(2)
+PASS sample U_x and U_y do NOT commute (curved background)
+PASS face-diagonal path-A holonomy U_y U_x is in SU(2)
+PASS face-diagonal path-B holonomy U_x U_y is in SU(2)
+PASS the two diagonal paths disagree (path-dependent holonomy)
+PASS W_B W_A^{-1} equals the plaquette P_xy = U_x U_y U_x^-1 U_y^-1 (field strength)
+PASS P_xy is in SU(2)
+PASS the diagonal holonomy carries no parameter beyond {U_x,U_y}: W_A is exactly U_y@U_x
+PASS both face-diagonal holonomies are words in NN links only (no independent word variable)
+PASS abelian sample V_x, V_y commute
+PASS abelian plaquette P_xy is trivial (identity)
+PASS with trivial plaquette the two face-diagonal paths AGREE (the tested paths agree)
+PASS one a=1e-3 diagnostic of log(plaquette) + a^2 [A_x,A_y] = O(a^3) :: resid=5.00e-10 vs a^3=1.00e-09
+PASS the supplied plaquette commutator [A_x,A_y] is nonzero
+PASS body-diagonal has 3! = 6 NN path orderings
+PASS all 6 body-diagonal holonomies are in SU(2)
+PASS curved background: the 6 body-diagonal holonomies are not all identical :: 6 distinct
+PASS swapping first two body-diagonal steps multiplies holonomy by plaquette P (=field strength)
+PASS flat background: all 6 body-diagonal holonomies coincide (the tested paths agree)
+PASS flat background: face-plaquettes P_xy,P_yz,P_xz all trivial
+PASS changing kappa changes kappa Re Tr(W_A) while W_A stays fixed
+PASS publication text check: 'fixed Wilson word adds no independent connection variable'
+PASS publication text check: 'fully determined by the NN connection variables'
+PASS publication text check: 'does not change axioms'
+========================================================================
+SUMMARY: PASS=26 FAIL=0
+TOTAL: 26 passed, 0 failed
+========================================================================
+
+----- stderr -----
+
