@@ -50,7 +50,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W40 lands five corrected shear and readout PRs. Fixed backlog: 56 open; 127 reviewed science scopes landed plus eight partial Maxwell scopes with explicit holds. 57 earlier closures remain pending at four open successors. Fermion-response corrections and generation-count review continue; formal audit deferred.
+1. W41 lands three corrected fermion/generation PRs and fixes claim-type metadata on two existing readout notes. Fixed backlog: 53 open; 130 reviewed science scopes landed plus eight partial Maxwell scopes with explicit holds. 57 earlier closures remain pending at four open successors. KCPT confirmation, cutting repair and functional-Record review continue; formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

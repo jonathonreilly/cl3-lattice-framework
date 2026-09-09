@@ -1,0 +1,11 @@
+# Same-session affected confirmation: #7948
+
+PASS for the bounded corrected source unit on base `eaa413deea794f2f2b1f4fbfc55106ef5fd3a91e`, author tree `9ab8c98c9c34ce84441edb721c6d9b08c8c36ad5`. No consequential finding remains in G1–G3. Root owns exact unchanged-unit integration and its graph/gates.
+
+The complete affected note, runner changes, final cache and correction history were read against the original review. G1 now separates the exact corner-restricted binomial spectrum from named ambient samples. The actual QR complement preserves colliding noncorner states at 2/5 and 2/3; neither a continuous isolation window nor a through-1 triplet claim survives. G2 correctly constructs the finite translation-average central corner projector, rank 3 inside the 15-dimensional K0 level, and names the lambda=2 scalar exception. Its existence carries no physical selection. G3 withdraws physical generation/species and kinetic-order promotions while retaining all six finite claim families and their numerical tables, including the actual d=4 size domain.
+
+The four actual source mutations fail the changed checks for the intended reasons: restored eigenvalue masking hides both zero clearances; zero or wrong-power projectors fail rank/selection; replacing the noncorner witness fails its operator identities. The recorded input drift/removal controls reject before science and invalidate cached input identity. Primary absence is rejected by source readiness even though the low-level cache API alone calls its cache fresh; that limitation is explicitly preserved.
+
+Verified all 50 sealed author artifacts, all seven final paths, three exact raw-original archives, and every actual source/input SHA256. The final once-only run is 26/0, 2.990 seconds, 430336 KiB with stable pre/post identities; stdout matches the final cache evidence. No primary or control was replayed for this confirmation. The own note and unchanged memo are the only declared inputs; no scientific helper or former kinetic/generation premise is imported. Original recovery/disposition remains in the immutable original receipt.
+
+This is focused landing confirmation for the corrected finite scope, not formal audit or retained status. Reservations #6379/#6858/#6859 and physical suppliers remain held. Prior reports and receipts are unchanged.

@@ -1,0 +1,17 @@
+# Fermion-response author correction
+
+Both original scopes are corrected and ready for the original reviewer. This is an author handoff, not a scientific acceptance verdict.
+
+The frozen candidate is `3ba6911172941ceb9b32085e795ba22d8c4e0c02` on `06b09a9a5642a4753936044531db5ccad0a48953`: six active note/runner/cache paths, six exact original archives and one dated history record. `FINAL_INVENTORY.json` binds all 13 paths and recovery provenance. Every base leaf remains unchanged. Current main `eaa413deea794f2f2b1f4fbfc55106ef5fd3a91e` changes no actual input or helper; root will compose these additions there.
+
+All eleven material groups are addressed in `FINDINGS_DISPOSITION.json`; all eight original claim groups are retained in `CLAIM_DISPOSITIONS.json`. The corrected notes preserve finite algebra, census, response and sampled numerical results. They withdraw the old rate/clock/unique-background/readout/induced-stiffness/global-limit inferences and distinguish conditional models from physical Record formation.
+
+The actual corrected runs completed once: **7974: 25/0 in 3.763 seconds; 7985: 21/0 in 156.692 seconds**. All 41 old check IDs and predicates remain, with five added finite boundary controls. Limits were 120/240 seconds, BLAS1 and a 2-GiB combined-descendant RSS watchdog; observed peaks were 151,264/805,120 KiB. The real cache child and descendant observation were tested first. Source and complete declared inputs match before/after execution. Both caches and actual cached-row readiness are fresh/clean.
+
+The five small GFMC C mutants reject terminal Gauss, collinear, applicability, Fourier and missing-coverage faults with dumps disabled. Missing diagnostics, incomplete bins and NaN data reject; the actual required-compiler branch exits unsuccessfully after four incomplete groups. Fourteen representative source/input drift/removal cases reject through the appropriate cache/live/source-readiness paths. The low-level cache API can report fresh for a missing primary; the actual readiness consumer rejects that case. No false success is used.
+
+Actual GFMC checks cover all initialized/final walkers and complete evolved/resampled populations every 64 steps, not every intervening state. Each of five small-torus protocols checked 3,404,800 Gauss equations; each L4 protocol checked 3,200,000, with zero invariant failures. Full actual runtime C, geometry, bins and executables are preserved externally. The finite-component census and required diagnostic guards ran for both coupling values. No quoted larger production campaign was executed, and same-seed error units remain descriptive.
+
+The actual filename-derived consumers resolve the existing R4 helper for 7974 and zero helpers for 7985; complete declared primary inputs are 7/4 and actual note citations are 5/3. R4 is unchanged, source-ready and its existing cache is fresh; only its finite construction functions are imported, with no local grandchildren. No registry, axiom, reserved supplier, main/planning/GitHub or audit state changed.
+
+The complete original-to-final correction is `author-correction.patch`; root's early immutable reading is `intermediate-correction.patch`. `post-intermediate-source.patch` contains the final prose/label/pin refinements, and `final-cache.patch` contains only genuine cache results. Two exact historical cache EOF blanks are intentionally preserved. No full primary failed or was repeated. Original reviewer `/root/backlog_draft_triage` owns affected confirmation against root's eventual source-plus-manifest composition.

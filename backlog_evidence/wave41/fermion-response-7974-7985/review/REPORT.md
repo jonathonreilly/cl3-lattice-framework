@@ -1,0 +1,43 @@
+# Original landing review: #7974 / #7985
+
+**CHANGES REQUIRED for each constituent.** The supplied finite calculations contain useful results, but the original conclusions exceed them, and #7985 has a reproducible false-green Gauss diagnostic. This is a focused landing review, not a formal claim audit.
+
+## Source and execution boundary
+
+The raw heads are #7974 `710701c6a90fb5a5725ac5342eae20d60a3b4705` and #7985 `04b385bf8680edde2affe27923dac4790475ff79`. Both actual immediate parents and merge bases are `e249016f759f224d9b429932cd0d1db4d452dc1a`. Each has exactly three authored additions, with no deletion. All six note/runner/cache bodies were read completely and remain byte- and mode-exact in the isolated overlay, tree `464234272120cbd94e4fc1fefca38a043aa0658e`, on base `e4d8bd11df12559138543a3129ea4e7b38f23ebf`.
+
+`PREPARATION.json`, `PRESERVATION.json` and the complete compressed endpoint maps account for originals, parents, inherited differences, selected source and current main. Unselected inherited science was neither imported nor accepted. The only actual local runtime helper is #7974's R4 module; its complete source was read, its needed finite construction is self-contained, and its wider historical gravity claims were not adopted. No reserved source is needed for the reviewed local calculations.
+
+The unchanged #7974 primary ran once through the real cache launcher: **23/0 in 3.874 seconds**, with the actual pre/post identity guard, 120-second ceiling and 2 GiB RSS watchdog. Its full output and original historical cache are preserved. Both actual note-derived dependency APIs agree: one R4 helper for #7974, zero for #7985. Original cache readiness is clear; an actual R4 input drift changes the original cache from `fresh` to `input_mismatch`.
+
+The complete #7985 primary was **not replayed**. Its historical 18/0, 166.24-second receipt remains original evidence, not a new successful review run. The source includes 23,063,296-state enumeration, a 1,551,976-state component and Monte Carlo. Its material defects can be resolved using bounded actual-code controls without repeating that production. No shortened execution is presented as a full baseline.
+
+## Material findings
+
+`FINDINGS.json` gives the source locations and narrow repair for each group.
+
+- **F1, #7974:** The retained potential-norm fraction is `Theta(L^-4)=Theta(N^-4/3)`, not `1/N`. On centered lattice indices, `khat²` is bounded above and below by constants times `|n|²/L²`; the three-dimensional sum of `|n|^-4` converges. Thus the denominator scales as `L^4`. The three printed finite fractions are correct. Keep the distinct adjacent-difference ratio separate; the unnormalized class indicator map is a scaled isometry.
+- **F2, #7974:** Singleton and class-minus-one stationary-branch failures do not classify every smaller unit or exclude weak event-rate modulation. A rate-independent conditional disturbance can occur with probability epsilon and produce only an `O(epsilon)` change in the averaged law. Current tick results also distinguish sufficient eigen-set conditions from necessary conditions for arbitrary final laws. Preserve the actual successful/failed fixtures and narrow the exhaustive and approximate-rate claims.
+- **F3, #7974:** Preserve the S1 endpoint-mean arithmetic and finite Regge/source comparisons, but remove the claimed unique physical reconciliation, exact gravity/bending and global TT authority. Current W38 explicitly keeps clock, source, metric interpretation and formation supplied; the bending value is an optional scalar-symbol coefficient. Permanent single records do not supply repeated same-site record formation. The old Poisson sign correction is useful historical provenance and is already reflected in current main.
+- **F4, #7985:** Even coordination constrains charge parity; it does not uniquely select a staggered background. The actual tiny torus admits a half-filled, non-staggered fixed background with uniform links and zero Gauss residual. Keep the conclusion relative to the two originally compared conventions.
+- **F5, #7985:** Fixed joint-Z statistics cannot determine the off-diagonal plaquette/current/hop observables. Two actual Gauss-valid ice configurations connected by a face give equal/opposite superpositions with identical complete Z probabilities and plaquette expectations `+1/-1`. An additional readout protocol is required.
+- **F6, #7985:** Three finite response rows do not prove logarithmic running, `c² -> 4`, a Lorentz-covariant limit or Drude `1/L³` decay. The stated fixed-k values differ, and off-axis transverse eigenvalues split. Preserve finite tensors and Ward checks; scope the limits honestly.
+- **F7, #7985:** Reciprocal screening of a supplied positive bare stiffness does not prove that the fermion generates no transverse stiffness. With no bare inertia, the same quadratic Lagrangian has canonical Hamiltonian `p²/(2 kappa_E)`. Conversely, that canonical identification is itself supplied and does not derive a microscopic link operator. The single-link square identity does not exclude multi-link effective terms; the finite pole proxy and old P2 physical stiffness law cannot close that gap.
+- **F8, #7985:** Four positive coupling samples support their numerical energy ordering, not a theorem for every `t>0` or physical selection of lambda. The largest-weight 80-step Lanczos pole remains a finite Ritz diagnostic. Preserve the sign-frustration and energy witnesses with their domains.
+- **F9, #7985:** The GFMC Gauss diagnostic only counts dumped states, while every wrapper call disables dumps. An actual terminal-state bit flip gives residual **2**, but the real wrapper returns **Gauss 0** and every returned numeric value is unchanged. Require real counted state/equation checks independently of dumping and reject violations or missing diagnostics.
+- **F10, #7985:** Missing/failed required compilation skips four conjunctive groups but exits zero when the other groups succeed. The actual branch and final exit reproduce this policy defect. Required compiler/engine/data failure must leave the unit incomplete and non-successful.
+- **F11, #7985:** Preserve all larger-volume quoted values and the failed population-control row, but label unbound production as historical arithmetic. Finite lazy-correlator ratios are not certified limiting frequencies or universal upper bounds. Same-seed paired bin errors do not establish independence; printed sigma values omit covariance and other finite-protocol biases. None establishes a phase, crossover or photon verdict.
+
+## Decisive evidence and useful results
+
+The independent finite Peierls energy derivative reproduces the original 216-site axial response: `0.1015477856` versus `0.1015478539`, absolute discrepancy `6.83e-8` at step `.001`. The actual off-axis pair is `0.1099583, 0.1510688`. These support the finite response calculation without proving its limiting interpretation.
+
+The original embedded GFMC was genuinely compiled and run on a 16-walker tiny fixture through the actual Python wrapper. The preserved terminal-state mutant isolates the missing Gauss check. A separate source harness executes **1,000 actual applicable face flips**, checking each full Gauss residual, collinear sum and applicable-face count; all agree. The engine's useful update arithmetic survives, while its success diagnostic does not.
+
+`DECISIVE_CONTROLS.json`, `ADDITIONAL_CONTROLS.json` and `FINITE_RESPONSE_CONTROL.json` bind the raw source, actual commands, output, witnesses and limits. No parent campaign or original large production was run. The compiler-unavailable control executes the real branch/exit nodes with preceding successes explicitly assumed; it is not a synthetic full-primary PASS.
+
+## Current integration and handoff
+
+Current main `06b09a9a5642a4753936044531db5ccad0a48953` changes no actual runtime helper or used premise in this unit. Its two consumer files add only three unrelated Record checker mappings each; all prior entries and function ASTs remain exact, and both current APIs return the same helper closure. The new Record/sandwich results supply neither the missing physical clock nor the Maxwell interpretation.
+
+`REVIEW_RECORD.json` gives complete grouped constituent/claim dispositions and read boundaries. All original 23 and 18 check IDs, numeric source payloads, failure history and recovery heads remain available unchanged. A separate author can make narrow corrections; this same original reviewer session remains available for affected-source confirmation. No formal audit, science-source edit, main/GitHub/planning mutation or landing was performed.
