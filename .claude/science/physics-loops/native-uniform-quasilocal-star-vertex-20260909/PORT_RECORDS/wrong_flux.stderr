@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt", line 68, in <module>
+    signal.alarm(180);print(json.dumps(check(),indent=2))
+                                       ^^^^^^^
+  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt", line 53, in check
+    fs=frozenset(ef[a]|ef[b]);req(len(fs) in (6,8),'pair face size');req(fs not in seen,'distinct pair flux');seen.add(fs)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-uniform-quasilocal-star-vertex-20260909/.claude/science/physics-loops/native-uniform-quasilocal-star-vertex-20260909/PORT_RECORDS/wrong_flux.txt", line 9, in req
+    if not ok:raise ValueError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: pair face size

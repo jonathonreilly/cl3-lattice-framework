@@ -1,0 +1,68 @@
+"""Small exact Gaussian-dyadic controls; all matrix entries stay exact dyadics <2**20."""
+from fractions import Fraction as F
+from itertools import combinations,product
+
+def check():
+ count=0
+ def req(ok,msg):
+  nonlocal count
+  if not ok:raise ValueError(msg)
+  count+=1
+ n=3;d=1<<n
+ def mm(a,b):return [[sum(a[i][k]*b[k][j] for k in range(d)) for j in range(d)] for i in range(d)]
+ I=[[complex(i==j) for j in range(d)] for i in range(d)];gam=[]
+ for mode in range(n):
+  for kind in range(2):
+   a=[[0j]*d for _ in range(d)]
+   for x in range(d):a[x^(1<<mode)][x]=(-1)**((x&((1<<mode)-1)).bit_count())*(1 if kind==0 else 1j*(1-2*((x>>mode)&1)))
+   gam.append(a)
+ for length in (1,3,5):
+  for inds in combinations(range(6),length):
+   a=I
+   for j in inds:a=mm(a,gam[j])
+   for scalar in (1,complex(1,2)/2):
+    y=[[scalar*z for z in row] for row in a]
+    coefficients=[(mm(g,y)[0][0]+mm(y,g)[0][0])/2 for g in gam]
+    for x in range(d):
+     expected=y[x][0] if x.bit_count()==1 else 0
+     actual=sum(c*g[x][0] for c,g in zip(coefficients,gam))
+     req(actual==expected,'complex Gaussian extraction')
+ # beta0+i beta1 has norm2, while coefficient l2 squared is2.
+ a=[[gam[0][i][j]+1j*gam[1][i][j] for j in range(d)] for i in range(d)]
+ norm2=max(sum(abs(a[i][j])**2 for i in range(d)) for j in range(d))
+ req(norm2==4 and norm2==2*2,'complex CAR factor')
+ geometry={}
+ for L in (4,6):
+  vs=list(product(range(L),repeat=3));ix={v:i for i,v in enumerate(vs)};edges=[]
+  for v in vs:
+   for axis in range(3):
+    w=list(v);w[axis]=(w[axis]+1)%L;edges.append(tuple(sorted((ix[v],ix[tuple(w)]))))
+  ei={e:i for i,e in enumerate(edges)};faces=[]
+  for v in vs:
+   for a,b in combinations(range(3),2):
+    u=list(v);u[a]=(u[a]+1)%L;w=list(v);w[b]=(w[b]+1)%L;z=u.copy();z[b]=(z[b]+1)%L
+    cycle=[ix[v],ix[tuple(u)],ix[tuple(z)],ix[tuple(w)]]
+    faces.append({ei[tuple(sorted((cycle[j],cycle[(j+1)%4])))] for j in range(4)})
+  ef=[set() for _ in edges];stars=[[] for _ in vs]
+  for j,face in enumerate(faces):
+   for e in face:ef[e].add(j)
+  for e,(v,w) in enumerate(edges):stars[v].append(e);stars[w].append(e)
+  seen=set();through=[[0,0] for _ in faces]
+  for star in stars:
+   for a,b in combinations(star,2):
+    fs=frozenset(ef[a]|ef[b]);req(len(fs) in (6,8),'pair face size');req(fs not in seen,'distinct pair flux');seen.add(fs)
+    for face in fs:through[face][len(fs)==8]+=1
+  for row in through:req(row==[24,8],'face incidence')
+  geometry[str(L)]={'faces':len(faces),'pairs':len(seen)}
+ req((F(24,36)+F(8,64))/4==F(19,96),'local coefficient')
+ for L in range(4,130,2):
+  total=F(0)
+  for j in range(L//2):
+   shell=(2*j+2)**3-(2*j)**3
+   req(shell<=24*(j+1)**2,'shifted shell count')
+   total+=F(shell,L)*F(1,1)/F(2*j+1,2)**2
+  req(total<=48,'inverse square shell bound')
+ return {'status':'PASS','checks':count,'geometry':geometry,'coefficient':'19/96','matrix_scope':'exact small Gaussian dyadics; no eigensolver','physical_runs':0}
+if __name__=='__main__':
+ import json,signal
+ signal.alarm(180);print(json.dumps(check(),indent=2))
