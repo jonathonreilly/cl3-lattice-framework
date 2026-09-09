@@ -1,0 +1,5 @@
+# Affected canonical review: PASS
+
+Reviewed SOURCE d659fcd5ab49dd33c003802fc15ea619f33e82e34ed570fa162ccc1351864d23 against preserved eead. All48 frozen file hashes match. Parent additions explicitly supply the required conditional-support/trace fields; no scientific formula changes. Runner now rejects wrong per-orbit cardinality/scope and independently ties selected POST to selected root/result, and generalized POST to original result/worker/root freezes. These checks complement the existing exact original-copy hashes and compact input manifest. The retained coherently rehashed wrong-POST adversary is meaningful because it reaches a relationship check rather than only a stale hash. No native arithmetic or unchanged tests rerun.
+
+Authorship: I authored the earlier canonical assembly; parent authored this narrow delta. This is an affected review, not an independent review of my earlier assembly. Remote11241 blob/hash verification is parent evidence, not newly executed by this review. No blocker.
