@@ -50,7 +50,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. Wave 59 landed corrected full-Fock #7871. Fixed backlog: 19 open, 174 reviewed science scopes landed (one own scope in still-open #7827), eight partial Maxwell scopes held, and 47 transferred scopes pending. Eta lineage, spin2 and safe-front corrections are active. Formal audit deferred.
+1. Wave 60 landed nine corrected Eta lineage/spin2 scopes. Fixed backlog: 19 open, 183 reviewed science scopes landed (one own scope in still-open #7827), eight partial Maxwell scopes held, and 38 transferred scopes pending. Five safe-front corrections remain at #7827. Formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

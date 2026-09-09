@@ -1,6 +1,6 @@
 # Backlog review and landing — current handoff
 
-Updated after wave59. Main is `8bb429a53d8df04502a06d6d8b09f6db320b533b`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
+Updated after wave60. Main is `e95797cc80b69815fadd300f431b3461f2449161`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
@@ -9,15 +9,15 @@ Updated after wave59. Main is `8bb429a53d8df04502a06d6d8b09f6db320b533b`. The or
 | Still open, including three owner reservations | 19 |
 | Original membership | 254 |
 
-174 reviewed original science scopes landed: 121 direct closed science, 52 consolidated science, and the own Block 38 scope of still-open #7827. Eight additional original scopes have corrected Maxwell portions on main with broader scope held. The 125 direct original closures include 121 science, one partial Maxwell, one meta, one process, and one historical archive recovery. The earlier 110 other closures include 47 scopes still pending at four successors.
+183 reviewed original science scopes landed: 121 direct closed science, 61 consolidated science, and the own Block 38 scope of still-open #7827. Eight additional original scopes have corrected Maxwell portions on main with broader scope held. The 125 direct original closures include 121 science, one partial Maxwell, one meta, one process, and one historical archive recovery. The earlier 110 other closures include 38 scopes still pending at four successors.
 
-Zero original drafts remain. The 110 other closures comprise 52 corrected scopes landed, 47 pending at four successors, seven partial Maxwell scopes, two starting-main supersessions, one empty PR and one unexecuted plan. Reservations apply transitively to actual used science.
+Zero original drafts remain. The 110 other closures comprise 61 corrected scopes landed, 38 pending at four successors, seven partial Maxwell scopes, two starting-main supersessions, one empty PR and one unexecuted plan. Reservations apply transitively to actual used science.
 
-Including pre-cutoff #8003–#8009, the session has 132 direct closures, 59 science/source batches and 216 new source documents; 57 batches passed one combined gate. Earlier failures and pre-gate rebuilds remain preserved. Main's ledger has 4,668 rows: 4,293 unaudited science and 375 meta. Twenty-three new notes await mechanical refresh. No audit verdict has been applied by this campaign.
+Including pre-cutoff #8003–#8009, the session has 132 direct closures, 60 science/source batches and 225 new source documents; 58 batches passed one combined gate. Earlier failures and pre-gate rebuilds remain preserved. Main's ledger has 4,668 rows: 4,293 unaudited science and 375 meta. Thirty-two new notes await mechanical refresh. No audit verdict has been applied by this campaign.
 
-Wave 59 lands corrected full-Fock #7871 as conditional finite label algebra. Its physical two-source auxiliary lift remains open. All seven original local checks remain; the independent checker uses an analytic signed-star exponential and actual edge fault. Both final producers passed 7/0 in under one second each. All 281 authored versions and 316 total recovery rows remain preserved; current token science is untouched. Original reviewer confirmed all corrections. The combined gate passed once in 264.316 seconds; #7871 closed with its branch preserved. See [evidence](backlog_evidence/wave59/INDEX.json).
+Wave 60 lands nine corrected original Eta lineage/spin2 scopes, already consolidated at #7827. Both original reviewers confirmed their corrections; root checked full source disposition, proof-critical changes and current-main interactions. Eighteen final bounded producer/checker runs passed. The two genuine first-attempt failures are preserved, and successful unchanged science was reused. One combined integration gate passed in 260.999 seconds. See [evidence](backlog_evidence/wave60/INDEX.json).
 
-The only unheld open original PR is #7827, pending fourteen older transferred scopes. Its own Block 38 science is already separately recorded in accepted_open_scopes. Eta lineage and spin2/causal originals have complete reviews and active corrections. Safe-front/caps original review is complete and corrections are active. See NEXT_REVIEW_UNITS.json for exact worker ownership and source identities.
+The only unheld open original PR is #7827, pending five older safe-front/caps scopes (#7867/#7862–#7865). Its own Block 38 science remains separately recorded in accepted_open_scopes. Safe-front's original review is complete; narrow author corrections and incremental root reads are active. See NEXT_REVIEW_UNITS.json for exact ownership. No PR was closed in this batch.
 
 Eighteen open PRs retain verified owner-reservation or actual transitive holds, alongside 33 pending closed scopes at those held successors. These holds are not adverse mathematical verdicts. Preserve actual used-premise routes, recovery handles and eight Maxwell partial-scope holds. Astra low remains the focused reviewer default; escalate unresolved consequential mathematics to Astra xhigh. Formal audit remains deferred.
 
@@ -403,3 +403,5 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Eta affine/repeat, Schur-pole science and historical recovery | `6eb96ee9c9f05d960dbbefab0e99f4fe90a25f02` | `backlog_evidence/wave58` |
 
 | Conditional finite Fock source algebra | `8bb429a53d8df04502a06d6d8b09f6db320b533b` | `backlog_evidence/wave59` |
+
+| Nine conditional Eta lineage and spin2 scopes | `e95797cc80b69815fadd300f431b3461f2449161` | `backlog_evidence/wave60` |
