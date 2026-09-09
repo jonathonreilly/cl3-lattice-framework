@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/directed_formation_sweep_direction_of_motion_not_handedness_check_2026_09_05.py
+runner_sha256: caa98053dc7e514c49d08aa01b944848ab8d68091983432f5572c17753beb69a
+timeout_sec: 200
+exit_code: 0
+elapsed_sec: 62.86
+status: ok
+----- stdout -----
+PASS A1 [1e-14] string 12x12x24, open plane, periodic axis, M0 0.7, xi 2: V 3456, Herm 0e+00, anti = conj(h) 0e+00, sea 1728, resid 4.8e-15, bound 7.0353
+PASS A2 [1e-14] core R doublet p +pi/6: E +0.51019, v +0.8809, core 0.619, ring 0.164; ring L p -pi/6: v -0.8809, ring 0.876; the core hole at -pi/6 also has v +0.8809: no core left-mover on one string; conj(psi_R) on the anti-string 4.6e-15
+PASS A3 [1e-14] point group, 16 elements: s_x h = D h D+ 1e-16; inversion, C2(x) -> anti-string 1e-16, 0e+00; s_z h = -eps h eps 0e+00; s_y h = D(-eps h_a eps)D+ 0e+00, D real True; R doublet D s_x unitary 5e-15, eigs [-1.0, -1.0]
+PASS A4 [exact / 1e-15] sweeps by (z-slice, quadrant), steps 24/27/30/33/42: s_x(screw+) = screw- True, s_z(screw+, +z) = screw- swept -z True, s_x(plane+) = plane+, s_z(plane+) = plane- True; Chebyshev vs expm 3e-16
+PASS B1 [exact] under plane+, anti-string+conj(psi_R) at +tau and string+psi_R at -tau register identically site by site, 0.0e+00: D = O(+tau)-O(-tau) is core R vs its T-partner
+PASS B2 [1e-4] plane+ tau 0.5: core odds 0.1366 vs the T-partner's 0.6048, D_core -0.46825, D_ring +0.54803; plane- exactly the negative +0.46825; pitch 4/8/12/24 at +z: -0.43744, -0.39396, -0.32929, -0.25016
+PASS B3 [1e-4] D_core(plane+), tau 0.05/0.1/0.25/0.5/1/2: -0.0109, -0.0529, -0.2021, -0.4683, -0.4982, -0.2307; D/tau -0.22, -0.53, -0.81 at the first three, falling as tau -> 0: small-tau growth faster than linear, saturating near -0.5
+PASS B4 [1e-4] N_s 8/12/16: -0.4352, -0.4683, -0.4507; L_z 24/48/96 at p pi/6: -0.4683, -0.5031, -0.5264; p pi/24, pi/12, pi/6: -0.5444, -0.5270, -0.4683 (pi/8 quoted)
+PASS C1 [exact] screw sense registers nothing: D(screw+)-D(screw-) <= 1.7e-16 in core, bulk, ring at every pitch and direction; densities pointwise s_x images to 3.6e-17
+PASS C2 [1e-5] core off the mirror plane, screw difference at N_s 8/12/16: -4.0e-03 (0.551), -7.8e-04 (0.181), +2.1e-04 (0.057) (N_s 20 quoted); directed bias -0.459, -0.478, -0.456
+PASS D1 [exact] C2(x) o T: mu_R(S, +tau) = C2(x) mu_R(C2(x)S, -tau) 6.9e-17, D(S) = -D(C2(x)S) 2.8e-16, every C2(x)-closed family averages exactly zero; reversal-closed screw families keep the seam, +0.002, +0.003, +0.006, +0.006, plane +0.00000
+PASS D2 [exact] mu_R(S, +tau) = s_z mu_hole(s_z S, -tau) 6.6e-17 (plane), 5.7e-17 (screw): the kernel is even under s_z x particle-hole x tau reversal; under plane+ core R keeps 0.1366 of the core, ring L 0.8540 of the ring
+PASS D3 [1e-5] 2x2x4 column+sea, 65536 patterns: static TV 0.01523, |Sigma_R| 32020, mass 0.48078; plane+ tau 0.5: D -0.01548, TV(R+,R-) 0.01892 vs sea 0.00645; screw chi_2 +0.02367/-0.02367, chi_3 +0.05728/-0.05728, A_x 0.04437 vs plane 0.00000
+PASS D4 [1e-14] pattern level: (i) anti+conj(psi_R) at +0.5 vs string+psi_R at -0.5, TV 0.0e+00; (ii) screw+ vs s_x screw- 1.9e-15; (iii) R at (plane+,+0.5) vs hole at (plane-,-0.5), s_z-relabelled, complemented, 9.4e-15
+PASS E1 [1e-15] many-body: 2x2x2 (max|Im h| 0.133, dim 56), one order on 2x2x3 (dim 792); Lueders tree over all 2^V leaves, 4 orders, tau 0.5 and 2.0: vs one-particle kernel 3.2e-16, invisible-formation formula 4.5e-17, K^2-K 1.0e-15; 2x2x3 8.1e-17
+PASS E2 [exact] T-pair many-body, 2x2x2 screw+: tree law of conj(h)+conj(state) at +0.5 = tree law of h at -0.5, 0.0e+00; against h at +0.5 the laws differ by TV 0.393394
+PASS F1 [exact] PR #7935 vortex, N 16, Cl(7), M 0.8, p (0.1pi,0,0), dim 2048, sea 1024: anti-vortex = C conj(H) C+, site-indep C = s2 x a2a3a4, 0.0e+00, monomial True; light modes |E| 0.309017, CHI +1 core 0.965, -1 edge 0.991, both +x, v +0.9511
+PASS F2 [1e-14] vortex registration exactly time-even: both modes, plane sweep and outward spirals p 2/4/8, both senses, tau 0.1/0.5/2.0, O(+tau) = O(-tau) to 2.2e-15 core, 4.4e-16 edge; T-partner 5.6e-17
+PASS F3 [exact] mechanism at N 12, both momenta: helicity site-diagonal, [H, hel] 5.6e-17, [H_R, hel] 5.6e-17; U = a1a4 gives U conj(h_lam) U+ = h_lam at 0.0e+00 full and restricted, both lam; light modes have |<phi|U conj phi>| 1.0000
+PASS F4 [1e-4] record-time mirror of the Wilson vortex = m1 -> -m1 up to G2G4 (4.7e-16), not the vortex (1.6) or anti-vortex (1.6); spiral+/spiral- core odds 0.9196/0.9469, 0.9473/0.9605, 0.8979/0.9459 at pitch 2/4/8, edge 0.9909/0.9909
+PASS G1 [exact] 729 profiles give 57 proper and 56 full orbits, so one chiral pair; Burnside: 7140 chiral pairs on the 12-offset window, 7960311 on 18-offset, 52932198249 on the 26-shell, none constructed here
+PASS G2 [exact] cube 2x2x2, 6561 cfgs, Xi(screw+/-/raster) +1.0/-1.0/+0.0: R0/R1/R2/R2m each give 10321920 complete paths = 8! x 2^8, 0 dead, mean Xi +0.000e+00, asymmetry 0e+00; R3/R3m/R4 give 0 complete, 1636608 dead
+PASS G3 [exact] slab 2x2x3, 531441 cfgs, Xi(screw+/-) +6.0/-6.0: R0 1961990553600 = 12! x 2^12, 0 dead; R1, R2 1771922718720; R3 1405870080 with 19345547712 dead; R4 0; mean Xi +0.000e+00 for all; mirror asymmetry 0e+00, 6.845e-02, 5.154e-01
+PASS G4 [exact] under R2 all 4096 value assignments complete screw+, screw- and raster alike on the slab, all 256 on the cube; under R3/R3m none completes any, 0/0/0 and 0/0/0
+PASS G5 [exact] value flip fixes A and B (2 of 2 chiral orbits at NN); slab middle-corner combinations split A 2, B 2, achiral 12, z-pair reversal maps A to B at every one (True); 12-offset: 23355 orbits, 14280 chiral, 128 F-fixed, 14144 moved
+SUMMARY: a directed sweep separates a mover from its T-partner at order one and is blind to screw sense.  [62.3 s]
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

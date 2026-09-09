@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/continuum_alphabet_winding_phase_echo_law_fair_coin_check_2026_09_04.py
+runner_sha256: c1e275b33cbd72882b3433d4566e8bd5631049778720eb12b9c4843fdac6b154
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 20.46
+status: ok
+----- stdout -----
+PASS A1 [exact] L_CONT rebuilt (PR #7926): {m}->binary; {m1,m2,m3}->ternary, weights (3/4,5/8,5/8), sum 2, weighted sum 0; {m1,m2}->coin (1/5,4/5); {m,m}, 6 equal, empty, I-only -> {I}
+PASS A2 [exact] L_CONT covariance S(g.n) = g.S(n) on 37056 checks (24 rotations x every slot pattern with 1-3 records from 4 directions): 0 mismatches
+PASS A3 [exact] the register: (cos phi, sin phi) = (n.e_1, n.e_2) on the declared circle, exact at 7 rational points, same at c = 1 and c = 1/2, none for cI; the C_4 sends (3/5,4/5) to (-4/5,3/5), phi -> phi + pi/2
+PASS A4 [1e-12] the H2 mass couples covariantly: for a uniform phase phi = 0, 0.7, 2.0 the node spectrum is +-M_0 = +-0.7 fourfold, max dev 8.9e-16
+PASS A5 [1e-14] the Dirac mass is the cell average of the record-read mass: tr(eps D)/8 = 0.250000 = the cell average 0.250000, so density d gives Dirac mass d M_0
+PASS B1 [exact] complete census over all 8^6 = 262144 conditions (slots blank, I or P(d), 6 directions): a rank-one effect is supported for 1152/1152 of kP = 1 and 960 of kP = 3 (the positively spanning triples), never for kP = 0, 2, 4, 5, 6
+PASS B2 [exact] ECHO LEMMA: every rank-one direction in a support is a neighbour's or its antipode, 262144 of 262144; a fully recorded bulk site (kP = 6, 46656) is an I record
+PASS B3 [exact] Gibbs census, 3x3 periodic plane, 7 letters: 64 of 7^9 = 40353607 supported everywhere, direction degrees {1: 108, 3: 216}, at most 6 of 9 directional
+PASS B4 [exact] 2x2x2 open cube: 19 of 7^8 = 5764801, degrees {1: 72}, at most 4 of 8 -- dimers only
+PASS B5 [exact] from NO seed, every order and pick on the 2x2x2 cube: all 8! = 40320 form only I records, 0 directions ever offered
+PASS B6 [exact] from seeds it only echoes them: one seed -> 57264 leaves offering only {m_1, -m_1}; three seeds -> 2880 leaves, nothing beyond the seeds and antipodes
+PASS C1 [1e-9] supercell Bloch scan (16^3) of the 3D matter law: the uniform control is gapped at 0.7000 and 1.5000, every dimer superlattice (densities 1/6, 1/3, 1/8, both M_0, phases 0 and pi/2) is GAPLESS, max 5.8e-16 over 12
+PASS C2 [numerical] the dilute winding, 48x48 plane (M_0 = 1.5, 768 sites at density 1/6, 0 violations): 7 states below |E| = 0.1, smallest 0.0008, uniform gap 1.5027
+PASS C3 [numerical] the same field in H1's operator (M = 0.8, r_s = 1, hard ends, density 1/3, 0 violations) is GAPPED at 0.267204 (N = 24), 0.246455 (N = 32); M/3 = 0.2667
+PASS C4 [numerical] and carries the index: N = 32, cut 0.12 -> 2 light states, max|E| 2.364e-03 (next 0.22978), interior +0.951637036, edge -0.828326136
+PASS D1 [1e-13] L_HYB (this note's variant, not landed) supports the smooth vortex as its own fixed point: residual 9.9e-15/1.0e-14/1.1e-14 over 960/1792/4224 unpinned sites (N = 24/32/48), min n.vhat +1.000000, winding +1 on loops 2, 4, 6
+PASS D2 [numerical] the string carries 2n co-moving modes: 2 core modes at E = +0.09983 +0.09983, <V_z> = +0.995 +0.995, v = 0.998; the cut keeps 4 states
+PASS D3 [numerical] bulk net handedness (cut 0.3): h = +1.9983 at R = 14, +1.9983 at R = 18 on 48x48, +1.9864 at R = 11 on 32x32; whole plane 7.2e-16, -2.4e-15, 2.1e-15 -- the -2n is on the ring
+PASS D4 [numerical] the core pair decouples exponentially: p = 0 splitting 3.125e-03, 3.991e-04, 7.748e-06 at N = 24, 32, 48
+PASS D5 [numerical] torus: the pair forces a 2 pi winding along the cycle between them -- relaxed at 9.8e-15/9.9e-15, y-cycle windings [0.0, 1.0], exactly 2/2 vortex plaquettes, 4 light states carrying +1.9767/-1.9767 (48x24), +1.9836/-1.9836 (64x32) at r < 11, torus 2.7e-15
+PASS D6 [numerical] H1's geometry: the relaxed field is an L_HYB fixed point (residual 9.5e-15) giving interior +0.999991511 at N = 32, edge ring -0.997255565, net 1.1e-11 over 2 light states (max|E| 5.9e-10, next 0.31023)
+PASS D7 [exact] a site-centred core is registered I by BOTH laws (neighbours at 0, 90, 180, 270 deg, |v_core| = 6.5e-22, relaxed 25x25): the mass zero there is the law's
+PASS E1 [exact] the dipole class map sends a fully recorded condition to lambda = (0, 0, 0); the only Bloch vector fixed by all 24 rotations is 0 (rank 3), so rho = I/2 and the bulk menu has odds 1/2, 1/2 -- a fair coin
+PASS E2 [exact] a dimer with its phase circle normal to the axis (lambda = e_z, t = 2/3) gives 1/2, 1/2; tilted onto the x-z circle 23/30, 7/30; ternary odds in the invariant fibre 3/8, 5/16, 5/16 = c_k/2
+PASS E3 [exact] one class tick re-registers the vortex unflipped with odds 2^-N^2 = 10^-173.4, 10^-308.3, 10^-693.6 (N = 24, 32, 48); with tilt 2/3, (5/6)^N^2 = 10^-45.6, 10^-81.1, 10^-182.4
+PASS E4a [numerical] a coin-signed field has no string mode: density 1/2 (mean sign +0.000) leaves 0 core modes on the 24x24 vortex; none (+1.000) keeps 2 at E = +0.09988 +0.09988, 1/9 (+0.778) keeps 2, ~1/6 (+0.663) keeps 2
+PASS E4b [numerical] the coin fills H1's gap: density 1/2 -> 18 light states (max|E| 0.289, next 0.318), interior -0.059; none -> 2, +0.999951757; 1/9 -> 2, +0.998770616; ~1/6 -> 2, +0.997107900
+PASS E5 [1e-3] a record-value class map with a supplied tilt t: at t = 0 the flip density is 0.3724, I-density 0.2553, mean mass +0.0000 (a director with a coin); t = 2/3 keeps +0.6217, t = 9/10 +0.8979
+PASS F1 [1e-9] solver certificate: sparse shift-invert agrees with dense LAPACK on a 12x12 record-time square to 9.5e-15 over the 20 nearest zero; largest dense 1152; no seed
+SUMMARY: a register; no field under the landed law; a field under a variant; a fair-coin sign.  [19.4 s]
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+
