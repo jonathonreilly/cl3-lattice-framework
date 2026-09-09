@@ -11,3 +11,5 @@ Ellipticoracle6d85facf +root01425910, source30da0d02/root02170225 PASS: fixeds0,
 Directnativeinfraredproof08471be1 independentlypassedrooteb9afcca: A'(0+)=-1/(4pi), B0-B(s)~s²log(1/s)/(2pi²), withexplicitremainders andcorrecthscaling. Noellipticimportneededforthesecoefficients. Btransformfull1e-6 designisprospectivependingactualoraclecost. Infinitealpha remainsunknown.
 
 Alloldphysicalprotocols staycompleted.50inactiveWTsremoved afterusefulremote preservation;58GiBfree. Originaldirty/otherworkercheckoutsuntouched.
+
+Snapshot files:74.

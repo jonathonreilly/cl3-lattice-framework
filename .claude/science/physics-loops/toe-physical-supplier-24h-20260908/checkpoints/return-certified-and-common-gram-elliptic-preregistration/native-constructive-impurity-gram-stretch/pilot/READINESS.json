@@ -1,0 +1,47 @@
+{
+  "freeze_sha256": "e7290f225c0887395444cc2559338ecb193bc4f331e9cb97a247bae6813427b9",
+  "rows": [
+    {
+      "flags": [
+        "-I",
+        "-B",
+        "-S"
+      ],
+      "args": [
+        "readiness",
+        "/private/tmp/toe-24h-probes-20260908/native-common-gram-unlaunched-readiness-output"
+      ],
+      "exit": 0,
+      "stdout": "{\"status\": \"PASS\", \"physical_integrals\": 0, \"physical_gram_calls\": 0, \"actual_parser\": true}\n",
+      "stderr": ""
+    },
+    {
+      "flags": [
+        "-I",
+        "-B"
+      ],
+      "args": [
+        "readiness",
+        "/private/tmp/toe-24h-probes-20260908/native-common-gram-unlaunched-readiness-output"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-constructive-impurity-gram-stretch/pilot/run.py\", line 5, in <module>\n    if not(sys.flags.isolated and sys.dont_write_bytecode and sys.flags.no_site):raise ValueError('-I -B -S required')\n                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: -I -B -S required\n"
+    },
+    {
+      "flags": [
+        "-I",
+        "-B",
+        "-S"
+      ],
+      "args": [
+        "unknown",
+        "/private/tmp/toe-24h-probes-20260908/native-common-gram-unlaunched-readiness-output"
+      ],
+      "exit": 2,
+      "stdout": "",
+      "stderr": "usage: run.py [-h] {readiness,gram} output\nrun.py: error: argument mode: invalid choice: 'unknown' (choose from readiness, gram)\n"
+    }
+  ],
+  "physical_calls": 0
+}

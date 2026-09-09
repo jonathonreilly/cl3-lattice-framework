@@ -1,0 +1,9 @@
+# UNLAUNCHED fixed elliptic A/A' pilot
+
+Five ordered s values0,1e-9,1/2,1,2 in h1 units. Exactly96 positive elliptic-series terms,160-bit outward dyadic operations and root brackets. Fixed target both interval widths<=1e-12; otherwise INDETERMINATE, no tuning/retry. Derivative at0 is right-sided. Actual source uses the stable rationalized Joyce formula; mathematical bridge is explicitly imported from arXiv1004.1435 section1.2, independently source-checked by root b3148f1d. No physical oracle called during preparation.
+
+The normalized elliptic series coefficients are binom(2n,n)^2/16^n in parameter m=k². Remainder bounds are m^96/(1-m) and derivative96m^95/(1-m)+m^96/(1-m)^2, evaluated at the interval upper endpoint. Dual propagation includes this derivative tail multiplied by the interval m derivative, with either sign. Every operation rounds outward to160bits; numerical parameter errors are included. Root errors use exact integer square comparisons. No unproved libm accuracy.
+
+Three overlap comparisons use the copied/pinned completed return-series intervals at1/2,1,2,target1e-12, with both A and A' required to intersect. This is an independent normalization check, not a complete proof of the imported special-function identity. No physical value is inserted in code. Returned enclosures at0/tiny s have no return-series comparator in this pilot.
+
+Prospective one attempt30seconds startup inclusive,384MiB sampled root+worker, root29.5-second kill; worker secondary29-second alarm. Strict -I-B-S runtime and verified source bytes. All completed rows and failures preserved. Independent source review and root remote preregistration precede physical calls. No alpha/Gram/physical selection claim. The formula is valid for nonnegative s but only these five fixed points are benchmarked; finite160-bit arithmetic at arbitrary extreme s may fail a guard or width target honestly.

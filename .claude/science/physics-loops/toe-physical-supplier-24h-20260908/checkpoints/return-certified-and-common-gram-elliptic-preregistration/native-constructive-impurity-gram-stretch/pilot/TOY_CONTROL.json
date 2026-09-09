@@ -1,0 +1,23 @@
+[
+  {
+    "source": "core.py",
+    "sha256": "ecb821b57d19821994d4724e3b68d8b6ff442a0e0de718d8875cf2ecea0d54cb",
+    "exit": 0,
+    "stdout": "{\"status\": \"PASS\", \"predicates\": 863, \"scope\": \"synthetic rational vectors and dual-number moment functions; no physical inputs\"}\n",
+    "stderr": ""
+  },
+  {
+    "source": "missing_partner.py",
+    "sha256": "97256e4500e1e849d0a17dbd6a5a64f5f6239667e0f881889cf5fd2b4a997643",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-constructive-impurity-gram-stretch/pilot/toy.py\", line 20, in <module>\n    for l in range(5):test(contains(Gn[k][l],dot(w[k],w[l])));test(contains(Jn[k][l],dot(w[k],gamma(w[l]))))\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-constructive-impurity-gram-stretch/pilot/toy.py\", line 9, in test\n    if not b:raise ValueError('test '+str(count))\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: test 13\n"
+  },
+  {
+    "source": "wrong_confluent.py",
+    "sha256": "448710b712d1db6f225080d310ea5f59903a90639f875e89df112a4be9fa378f",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/toe-24h-probes-20260908/native-constructive-impurity-gram-stretch/pilot/toy.py\", line 56, in <module>\n    test(contains(G[i][j],g));test(contains(J[i][j],q))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/toe-24h-probes-20260908/native-constructive-impurity-gram-stretch/pilot/toy.py\", line 9, in test\n    if not b:raise ValueError('test '+str(count))\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: test 66\n"
+  }
+]
