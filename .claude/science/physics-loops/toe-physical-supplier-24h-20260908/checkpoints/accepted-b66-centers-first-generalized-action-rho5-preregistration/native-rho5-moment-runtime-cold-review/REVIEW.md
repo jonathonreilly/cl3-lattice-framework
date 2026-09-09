@@ -1,0 +1,9 @@
+# Rho5 moment full runtime/root cold review — PASS
+
+Parent independently read core, worker, dispatcher, full root monitor and final retention schema at worker166563/root26451. Mathematical core prior independent reviewccf383 remains unchanged. Saved panel interval radii are inherited from full-node POSTs; original low/high/Machin/output are reconstructed and only analytic rho is replaced. No rescaling of old widths or native-node replay is claimed.
+
+Initial finding: original root accepted arbitrary payloads in415 of416 event files and loose bool aliases; worker initial emit was outside failure retention. Whole predecessors preserved. Final repair validates every load/panel/component/final event against exact bound sources and output, enforces canonical scalar syntax and typed counts, and retains original exception on serialization failure. Root receipt schema is provenance/retention, not independent component arithmetic. Source math and original-order directed192 operations were cross-read against both original producer compute sources; all consistent.
+
+Fifteen independent tiny canonical/index predicates pass. Author six full worker-generated synthetic fixtures and strict worker/root readiness were inspected, not rerun. Toy tails explicitly replace native moments there. All6684 input hashes and full root pins pass. Compact accepted status/result/freeze metadata matches both real source families; no original result values, panels, geometry, selected IDs or scalar endpoints parsed during this review.
+
+One30s inclusive/29.5root/29worker,384MiB proposed. Forecast23.62s is inference, not demonstrated fit; failure remains failure. Full final hash checks run on success/failure, root schema peak is included, exclusive marker/output prevents retry. Metadata activation and exact remote preregistration still required. Source PASS does not assert any new final width, actual execution, integration readiness or formal audit.
