@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
-Verified source/status snapshot: 2026-09-09T04:25:24.404932+00:00, main
-`06b09a9a5642a4753936044531db5ccad0a48953`. This is a planning map, not
+Verified source/status snapshot: 2026-09-09T05:08:29.648776+00:00, main
+`eaa413deea794f2f2b1f4fbfc55106ef5fd3a91e`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -22,7 +22,7 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 62 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 67 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
@@ -100,3 +100,5 @@ W37 adds nine finite Maxwell diagnostic notes. Shared-zero/RK covariance, strict
 W38 adds five conditional gravity/Regge notes. Qualified projector/pinching identities and finite spectra survive; gauge readouts, sign, constant-mode selection and surrogate susceptibility claims are corrected. Physical carrier/source/clock/metric/graviton/cosmology and global completion remain open. No audit grade.
 
 W39 adds four supplied-model record-matter notes and two finite sandwich constructions. Fixed-half flux, quench energy/overlap and shared-battery arguments survive focused review; missing checker registrations are repaired. Sandwich results describe fresh initializations and actual candidate occupancy. Physical formation, apparatus/clock and seed selection remain open. No audit grade.
+
+W40 adds five corrected finite shear and conditional readout notes. Endpoint rank exceptions, uniform-pattern versus momentum-dependent coupling, full occupied-event conditioning and axis cross-mode loss are explicit. Fixed Hartree and continuum-coordinate readouts retain supplied-model limits; physical gravity and clock identification remain open. No audit grade.

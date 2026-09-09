@@ -1,0 +1,677 @@
+{
+  "type": "bounded author correction handoff; independent confirmation pending",
+  "base": "e4d8bd11df12559138543a3129ea4e7b38f23ebf",
+  "tree": "c76a81b17c5bec9bc05b0d70e79a8751ae06ad65",
+  "current_main_interaction": "06b09a9a5642a4753936044531db5ccad0a48953",
+  "paths": 19,
+  "originals": 9,
+  "base_leaves_preserved": 29460,
+  "finding_groups": 10,
+  "original_theorem_scopes": 18,
+  "original_check_ids": 41,
+  "final_checks": 49,
+  "executions": [
+    {
+      "pr": 7951,
+      "terminal_total": "TOTAL: PASS=18 FAIL=0",
+      "elapsed_sec": 64.24980306625366,
+      "peak_rss_KiB": 261856,
+      "timeout": 150,
+      "input_identity_equal": true,
+      "cache_sha256": "6fc783b8014b7dec25d7c70ee2c43bcc29774bedf94b474196488950576b272d"
+    },
+    {
+      "pr": 7970,
+      "terminal_total": "TOTAL: PASS=14 FAIL=0",
+      "elapsed_sec": 48.43304800987244,
+      "peak_rss_KiB": 276800,
+      "timeout": 150,
+      "input_identity_equal": true,
+      "cache_sha256": "070e67410eff8477053c11919c36a1017037de4d1683baffec3552228852c5d8"
+    },
+    {
+      "pr": 7987,
+      "terminal_total": "TOTAL: PASS=17 FAIL=0",
+      "elapsed_sec": 96.1583800315857,
+      "peak_rss_KiB": 452192,
+      "timeout": 150,
+      "input_identity_equal": true,
+      "cache_sha256": "004dc88f24c45c6788a63ef3ff4749ce59d05e1e1355ba4f82f10f7e2d8d666b"
+    }
+  ],
+  "attempt_history": "Three first corrected primaries succeeded; only 7970 then refreshed after three label-only changes. Prior successful source/cache/receipt and every preparation/control failure retained. No original baseline replay.",
+  "input_edges": 26,
+  "helpers_per_primary": [
+    0,
+    0,
+    1
+  ],
+  "semantic_source_mutants": 6,
+  "input_source_cases": 58,
+  "low_level_cache_limit": "Missing primary may read fresh in low-level API; actual source readiness rejects it.",
+  "candidate_patch_sha256": "6f35ef4b50e1367d2b846bd31218fbc634b77d1345c68adc0464384fc68b1111",
+  "author_correction_sha256": "abd9285f39bf0f9f446fdcb40b291cd607e1a0a5b78656cd03110273d49fc5bb",
+  "post_5793_source_sha256": "a78e75db2f4ff8eacc37949a4b351ef3f853e11afa92dc65dfa2a274395c249c",
+  "post_5793_final_sha256": "a6ba002070bebc6b1247dcb833d4f8d57be4f00ef971497d642ddd2a2972134c",
+  "report_sha256": "7919baff8e40e65e4b9bd2606882e270d5c459fe62a21ba60fc01e4e5f1ea640",
+  "handoff_sha256": "f7d37474d21cd1fe198c0aab610602eb1cb69b30501fa8db75b70800ab2ded1b",
+  "style": "Only three exact historical cache EOF blank warnings; active correction clean.",
+  "original_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-shear-7951-7970-7987-review/ORIGINAL_REVIEW.md",
+      "sha256": "91c2eadcb23fbeeec75f66c50889be7ea67c3830dd3b90c8b9492274b03e5583"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-shear-7951-7970-7987-review/FINAL_RECEIPT.json",
+      "sha256": "ea98d96f6139ee07d0e90df09b348e037f07acd93baa796e49aef926854488e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-shear-7951-7970-7987-review/SOURCE_AND_PREMISE_CLOSURE.json",
+      "sha256": "fbb4c908f8329f94a17dfbc7f8b03155847e5ad0566f2afb6966d25f3f70415b"
+    }
+  ],
+  "artifact_count": 120,
+  "artifacts": [
+    {
+      "path": "7987-control-attempt1-source.py",
+      "sha256": "0d47377c157bc2de00178a3a946fdc606e5347d64fc7237bbc67cd2f36250488",
+      "bytes": 57859
+    },
+    {
+      "path": "CHILD_CAPTURE_PREFLIGHT.json",
+      "sha256": "9ede00d36d3a6c3afd84a1b00ca25cb5ec183a61693b61cf08fc71150a4addd2",
+      "bytes": 1175
+    },
+    {
+      "path": "COMPUTATION_PRESERVATION.json",
+      "sha256": "c2db9fb4df4036b1fc8a84eb16c96e19680baef40c51bc125920a25c6a03f3c4",
+      "bytes": 1405
+    },
+    {
+      "path": "CONTROL_REUSE_BINDING.json",
+      "sha256": "0d194a1160632a72e8110f42ae11d4122c0d4510a216c573c21dc561175ded64",
+      "bytes": 1915
+    },
+    {
+      "path": "CURRENT_MAIN_INTERACTION.json",
+      "sha256": "8e1819179a6614dc26075a2e93ed7e56c49fc6af15f269d162aee23516f86df4",
+      "bytes": 4768
+    },
+    {
+      "path": "DISPOSITIONS.json",
+      "sha256": "2e7e307b988031ec8d1d4d42f947f5dfb76509329fe84d489c1b960f99d81b07",
+      "bytes": 14849
+    },
+    {
+      "path": "FINAL_ACTIVE_STYLE_CHECK.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "FINAL_EXECUTION_7951.json",
+      "sha256": "bc445a93da4ef1468c9a5ceb7d7df3ae98a81e43bbffe3c0b11e0d1919e0b2df",
+      "bytes": 14184
+    },
+    {
+      "path": "FINAL_EXECUTION_7970.json",
+      "sha256": "a47847b7b613a6acb720257524538992d8fa0e3d44b15d61d4297123117fa673",
+      "bytes": 17401
+    },
+    {
+      "path": "FINAL_EXECUTION_7987.json",
+      "sha256": "9a39247143aa98af8f5a1bb96397784ae1dd1e742681b7876ebbbf5f24d3d6af",
+      "bytes": 21309
+    },
+    {
+      "path": "FINAL_EXECUTION_BINDING.json",
+      "sha256": "19aad5844bbdbc4d33aaec6055d952d7935cc30755f2d1f9959f61c82df842ba",
+      "bytes": 5997
+    },
+    {
+      "path": "FINAL_INVENTORY.json",
+      "sha256": "54ff8277ff16f90ea0a9b81fc515e0e86038d5eab6f6c1d5474b979a0e3c0028",
+      "bytes": 18105
+    },
+    {
+      "path": "FINAL_LABEL_AND_CONTROL_REUSE.json",
+      "sha256": "10c8b78100c92bcacd971eb4a4c79c792e18647bfd6799a4c757d9f02356f5a6",
+      "bytes": 1597
+    },
+    {
+      "path": "FINAL_SOURCE_PREFLIGHT.json",
+      "sha256": "3678748b72f2322b76e67b0bb12a17bc788d80b53c7e78dc2f4a80bbf9e3cf66",
+      "bytes": 19338
+    },
+    {
+      "path": "FINAL_STYLE_CHECK.log",
+      "sha256": "468f95c90ce8f7bc27d1f5a483bab7d38c286d162ec4dceca926cd0378b0e8cd",
+      "bytes": 595
+    },
+    {
+      "path": "FOCUSED_CONTROLS.json",
+      "sha256": "bea3657d81888d1fcbee5ae2bb266e0dc32d610601c35405c104d7ec2f0e7f32",
+      "bytes": 3136
+    },
+    {
+      "path": "FOCUSED_CONTROLS_7987_corrected.json",
+      "sha256": "61a85cabd42592124c8167ae81ba8be2518005c0502b052131d1181108e3b7c8",
+      "bytes": 883
+    },
+    {
+      "path": "FOCUSED_CONTROLS_attempt1.json",
+      "sha256": "bea3657d81888d1fcbee5ae2bb266e0dc32d610601c35405c104d7ec2f0e7f32",
+      "bytes": 3136
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "f7d37474d21cd1fe198c0aab610602eb1cb69b30501fa8db75b70800ab2ded1b",
+      "bytes": 1751
+    },
+    {
+      "path": "INPUT_CONTROLS.json",
+      "sha256": "d7edcd9d86eebf1c51a315a897ff55c0089cf746b12b6c9e2a31e59ebf202997",
+      "bytes": 68877
+    },
+    {
+      "path": "INPUT_UNIONS.json",
+      "sha256": "2e6778072b82611b5fd9da66f1fc6889b96cc2636efd9f9bfcf31ac172b148f1",
+      "bytes": 4000
+    },
+    {
+      "path": "INTERMEDIATE_RECEIPT.json",
+      "sha256": "214644389b6122c6a49376e97cd4dbdedb40adae452bb8c0643abebbfe32341b",
+      "bytes": 358
+    },
+    {
+      "path": "LABEL_REFRESH_BINDING.json",
+      "sha256": "775da3b32a40f626e5b59e8b5f81d91d44c0c5f336473b7163a3e56498d0bfc7",
+      "bytes": 651
+    },
+    {
+      "path": "MAIN_PRESERVATION.json",
+      "sha256": "1d82cfd17671d836ac46a4303214b89e6c62e5dff15b792ba45fb527b8e1c0d6",
+      "bytes": 7202
+    },
+    {
+      "path": "PREPARATION.json",
+      "sha256": "06e3c106692ba38bcf7dea5fed765534e422ae55c519fddf6ca2f2c53dac1d51",
+      "bytes": 10044
+    },
+    {
+      "path": "PREPARATION_INCIDENTS.md",
+      "sha256": "748a075769a1020f2f9b9e5808e0ceda23a02840a7a6a63f90ea1bf074a1a28d",
+      "bytes": 1395
+    },
+    {
+      "path": "READ_RECORD.json",
+      "sha256": "c5db97c366493e99d3abfb369aedfd1ca874373a3917fc5f2f661340fc52f58e",
+      "bytes": 2327
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "7919baff8e40e65e4b9bd2606882e270d5c459fe62a21ba60fc01e4e5f1ea640",
+      "bytes": 5914
+    },
+    {
+      "path": "SEMANTIC_MUTANTS.json",
+      "sha256": "5f71bf374d003e47da4929e98a900b0ebfb61c103555a0a02b6355923e56330c",
+      "bytes": 6217
+    },
+    {
+      "path": "SOURCE_FREEZE.json",
+      "sha256": "c3af89e9dd11f889b70a943ec6364ba0a53e2c893f3af58e0410eee0f87ae2a3",
+      "bytes": 358
+    },
+    {
+      "path": "SOURCE_PREFLIGHT.json",
+      "sha256": "702482edf622187f8137f2d542d72c761b1040d94203fac0301162031b471dbd",
+      "bytes": 19338
+    },
+    {
+      "path": "actual-mutants/axis-cross-replaced-by-plus.py",
+      "sha256": "12bc33ebafdcb5918f7e0189215c7957c9966bd54748999b51beca47709fd10e",
+      "bytes": 62852
+    },
+    {
+      "path": "actual-mutants/axis-cross-replaced-by-plus.stdout",
+      "sha256": "fc01d6c018b48c83ab5fda9b2ac5ede1ee6d6b5d4f67e9dff7a4773d12deb821",
+      "bytes": 581
+    },
+    {
+      "path": "actual-mutants/curl-disabled.py",
+      "sha256": "e8a843e189f94c8fdda545ce0c0840548afb38d479961618461961f5d559fe87",
+      "bytes": 39992
+    },
+    {
+      "path": "actual-mutants/curl-disabled.stdout",
+      "sha256": "888b7b756d63e82c1a0262a5b7e6945605d9eab8baf8dedd4344bced1d109dc5",
+      "bytes": 542
+    },
+    {
+      "path": "actual-mutants/endpoint-denominator-unchecked.py",
+      "sha256": "211c3981c28072891a63694dd85cf302b98a36f2c0c3163f3322c9e17e1b3f82",
+      "bytes": 62823
+    },
+    {
+      "path": "actual-mutants/endpoint-denominator-unchecked.stdout",
+      "sha256": "b24a9cf7f796f9f7603b5542b87c9710f2571ea64818289c96224e1a9c3e1d93",
+      "bytes": 564
+    },
+    {
+      "path": "actual-mutants/impossible-event-zero-fill.py",
+      "sha256": "b5caddd778d7071106f75b511162f38967e938d8023752a1a9c3f737d15f017a",
+      "bytes": 62845
+    },
+    {
+      "path": "actual-mutants/impossible-event-zero-fill.stdout",
+      "sha256": "7dfc1e64c89340f8adcdae4af6c9a69200c25a81bcfa064ac76240f6279138d7",
+      "bytes": 564
+    },
+    {
+      "path": "actual-mutants/reduced-palm-full-set.py",
+      "sha256": "5f1d38a911e0f6fb92b4774ed0274528c5c8e94a6a1d3b8dd620e697f8269d17",
+      "bytes": 62853
+    },
+    {
+      "path": "actual-mutants/reduced-palm-full-set.stdout",
+      "sha256": "afccc9dd8c2765524f62bc974e4ab026bd109118bfa0c263fc5c41e3c8e61691",
+      "bytes": 542
+    },
+    {
+      "path": "actual-mutants/relative-only-rank.py",
+      "sha256": "85a8afb38da99f5062680a22aabde3630f8dea66763bb8c164b7cfc2ca03a829",
+      "bytes": 39953
+    },
+    {
+      "path": "actual-mutants/relative-only-rank.stdout",
+      "sha256": "6348f137d82daa8a75e596b8a74fa3a6dd4ebb3b3216aab25438556c70845ef7",
+      "bytes": 560
+    },
+    {
+      "path": "add_controls.py",
+      "sha256": "81cf8795f9fc56529842fbfc59779633d65d4534b79acdf78cc96bd9f83be343",
+      "bytes": 6136
+    },
+    {
+      "path": "author-correction.patch",
+      "sha256": "abd9285f39bf0f9f446fdcb40b291cd607e1a0a5b78656cd03110273d49fc5bb",
+      "bytes": 279033
+    },
+    {
+      "path": "before-final-label/FINAL_EXECUTION_7970.json",
+      "sha256": "175185cb5e1444871959d3228a5cfc82c7df4e52de44a481ad04162a62518591",
+      "bytes": 17383
+    },
+    {
+      "path": "before-final-label/FINAL_SOURCE_PREFLIGHT.json",
+      "sha256": "ed58ebe61eba63471b4a5c9a85d581beebc677400f08c9d511da4335037459e0",
+      "bytes": 19338
+    },
+    {
+      "path": "before-final-label/INPUT_CONTROLS.json",
+      "sha256": "d7edcd9d86eebf1c51a315a897ff55c0089cf746b12b6c9e2a31e59ebf202997",
+      "bytes": 68877
+    },
+    {
+      "path": "before-final-label/SOURCE_FREEZE.json",
+      "sha256": "c3af89e9dd11f889b70a943ec6364ba0a53e2c893f3af58e0410eee0f87ae2a3",
+      "bytes": 358
+    },
+    {
+      "path": "before-final-label/final-stdout-7970.txt",
+      "sha256": "4293699d5427761ad7c3a155a1adf223689d9282c5e79a6f3f5dbf2f9d9fb9b6",
+      "bytes": 7353
+    },
+    {
+      "path": "before-final-label/logs/runner-cache/generated_mass_no_shear_even_sum_translations_forbid_nn_t2_check_2026_09_04.txt",
+      "sha256": "1d8c0f0de77137365897e1ef7303761ff7921ff00db6c45cbbb32e26194db372",
+      "bytes": 7747
+    },
+    {
+      "path": "before-final-label/scripts/generated_mass_no_shear_even_sum_translations_forbid_nn_t2_check_2026_09_04.py",
+      "sha256": "9d80703a550417bb64be287a229684dac663ccbee89db2a1f975d98fd01b57c6",
+      "bytes": 55740
+    },
+    {
+      "path": "candidate.patch",
+      "sha256": "6f35ef4b50e1367d2b846bd31218fbc634b77d1345c68adc0464384fc68b1111",
+      "bytes": 545231
+    },
+    {
+      "path": "capture-probe/scripts/probe.py",
+      "sha256": "a144f825d11976a30d8b51fc0b86725c02b566f50850058f7099b5d9557643be",
+      "bytes": 166
+    },
+    {
+      "path": "cold-correction-added-context.txt",
+      "sha256": "c2dbbcbfc283e3b68d05e311c3a106fbd7d7cfd581db8fd2d0d2253ba1f9334d",
+      "bytes": 81636
+    },
+    {
+      "path": "correct_notes.py",
+      "sha256": "4abc915a43216aa1912e42d1301caa76ebb1b67cf548478385760932e664fbe1",
+      "bytes": 26421
+    },
+    {
+      "path": "correct_runners.py",
+      "sha256": "96d6c4a451c2fc802c186bda2c6bd11d09b39019ba18d612897ec0318eea5ec1",
+      "bytes": 13489
+    },
+    {
+      "path": "current-main-tools/audit_packet_script_deps.py",
+      "sha256": "63d1a788f6d572655a14a6d6b25a1c469553ca13548b0eeb9446612b419dea57",
+      "bytes": 33567
+    },
+    {
+      "path": "current-main-tools/build_citation_graph.py",
+      "sha256": "334bb6f922be503b0155397a46e5ca0d268ba61b20b34a9a61c76b9896a61fee",
+      "bytes": 68456
+    },
+    {
+      "path": "current_main_bind.py",
+      "sha256": "03e832293a6d313fa70a4da910f595f2eb8f5ede4a743010dbe3c72de0957d79",
+      "bytes": 2886
+    },
+    {
+      "path": "dispositions.py",
+      "sha256": "2f626f84584e9a8ac33b00187fa230f708ffef7f98b5e87cc28d4dfad4f25d70",
+      "bytes": 7769
+    },
+    {
+      "path": "execute_final.py",
+      "sha256": "ae6f2b982e7436a895a82a268c5d059d7022df67bcd4dbb7ad4db5e3347846b0",
+      "bytes": 3614
+    },
+    {
+      "path": "execute_label_refresh.py",
+      "sha256": "4cbddc5bfe1f0e2a5eca0c07c1216e3acb39e4d67cf34ca5b89472465a298dec",
+      "bytes": 2943
+    },
+    {
+      "path": "final-cache/generated_mass_no_shear_even_sum_translations_forbid_nn_t2_check_2026_09_04.txt",
+      "sha256": "070e67410eff8477053c11919c36a1017037de4d1683baffec3552228852c5d8",
+      "bytes": 7765
+    },
+    {
+      "path": "final-cache/no_readable_shear_diagonal_pairs_frozen_read_shear_slaved_check_2026_09_05.txt",
+      "sha256": "004dc88f24c45c6788a63ef3ff4749ce59d05e1e1355ba4f82f10f7e2d8d666b",
+      "bytes": 7835
+    },
+    {
+      "path": "final-cache/tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04.txt",
+      "sha256": "6fc783b8014b7dec25d7c70ee2c43bcc29774bedf94b474196488950576b272d",
+      "bytes": 6470
+    },
+    {
+      "path": "final-cache-delta.patch",
+      "sha256": "a6ba002070bebc6b1247dcb833d4f8d57be4f00ef971497d642ddd2a2972134c",
+      "bytes": 39220
+    },
+    {
+      "path": "final-label-source.patch",
+      "sha256": "d34739fad46a9531f2ed6bd1229a8731928d38172a6cf1d955c781e30e98d5dc",
+      "bytes": 2313
+    },
+    {
+      "path": "final-preflight-style.log",
+      "sha256": "468f95c90ce8f7bc27d1f5a483bab7d38c286d162ec4dceca926cd0378b0e8cd",
+      "bytes": 595
+    },
+    {
+      "path": "final-source-style.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "final-stdout-7951.txt",
+      "sha256": "f19c5aefa2bdd895f9cb825c1465aaffe078a6febc2cd62a0b3ef88e5ac197b5",
+      "bytes": 6068
+    },
+    {
+      "path": "final-stdout-7970.txt",
+      "sha256": "04d6232281da65257f63691688153b54ebba1b5891982c9b069fa8088567bdb5",
+      "bytes": 7371
+    },
+    {
+      "path": "final-stdout-7987.txt",
+      "sha256": "b3e718852dee268bbe488e405fab1a8d7f20e97b8d38095901d5ef4346eb590b",
+      "bytes": 7442
+    },
+    {
+      "path": "final_preflight.py",
+      "sha256": "f6330b5a13be7b91e34778aa27d6a82d61e8b19957024321b7d192bad8a4c6f1",
+      "bytes": 5849
+    },
+    {
+      "path": "finalize_source.py",
+      "sha256": "01b6e0e7289a892e5248c24a6b53aab3210c73bd959fcecec804f4e6176acbcb",
+      "bytes": 2448
+    },
+    {
+      "path": "focused_7987_corrected.py",
+      "sha256": "fd387230b2da1fe06efd70b36306756c2318d171ef5e48de310c15b62b9628b9",
+      "bytes": 1529
+    },
+    {
+      "path": "focused_controls.py",
+      "sha256": "40a1f7a8c324e514c483098ca63d76dad86682adae338f22ecd392d6f04d89ec",
+      "bytes": 1497
+    },
+    {
+      "path": "input-controls/docs/A_FORMATION_RATE_RULER_EVADES_THE_SEAS_SUBLATTICE_CANCELLATION_AND_THE_BRIDGES_CONSTANT_MODE_FIXES_KAPPA_R_EQUALS_ONE_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "4576cd5d09f50e4d194ec9ae625ed4cd0df812c204da5cf5aa2e77ef9c4ea514",
+      "bytes": 10715
+    },
+    {
+      "path": "input-controls/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "input-controls/docs/NO_READABLE_SHEAR_WITHOUT_A_SUPPLIED_COUPLING_THE_LENGTH_DRESSED_LAW_IS_A_FUNCTION_OF_AXIS_LENGTHS_ONLY_THE_NEAREST_DIAGONAL_PAIR_STATISTICS_ARE_FROZEN_ON_THE_VACUUM_AND_THE_READ_SHEAR_IS_SLAVED_BOUNDED_NOTE_2026-09-05.md",
+      "sha256": "2b11550850c51d44d0d9fdeb7aa6a400d578bd8624522b632e75a6e90ee4183d",
+      "bytes": 11848
+    },
+    {
+      "path": "input-controls/docs/RECORD_STATISTICS_OF_THE_HALF_FILLED_SEA_ARE_DETERMINANTAL_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "fe618bf5815ead9df4195aa8e9e55a8734b01b32340ec52e3f3350cb1d56f25c",
+      "bytes": 38043
+    },
+    {
+      "path": "input-controls/docs/THE_FORMATION_RATE_DEFINES_THE_STATIC_REGGE_EDGE_LENGTHS_EXACTLY_REGGE_IS_THE_LATTICE_POISSON_EQUATION_AND_FORCES_NU_R_EQUAL_ONE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "45105f11c6691355252339d7886f842cf2d49288cff0dfd39d0f1beb7b042fd6",
+      "bytes": 12303
+    },
+    {
+      "path": "input-controls/docs/THE_GENERATED_STAGGERED_MASS_RESPONDS_TO_THE_DIAGONAL_METRIC_AND_TO_NO_SHEAR_A_LENGTH_DRESSED_NN_LAW_IS_SHEAR_BLIND_AND_THE_VACUUMS_EVEN_SUM_TRANSLATIONS_FORBID_ANY_NN_T2_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "102f379e9e79149b3f69582326248edc5139bd367f47717edec4af9cc6c22837",
+      "bytes": 9455
+    },
+    {
+      "path": "input-controls/docs/THE_INTERACTION_GENERATES_THE_STAGGERED_MASS_AT_HARTREE_LEVEL_AND_NO_TERM_IN_THE_LAW_FIXES_ITS_SIGN_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "0f54f7f4c5825d8b7b7451d210d5a114dd4cbc50bebb674f55cfebb1fce979fe",
+      "bytes": 26212
+    },
+    {
+      "path": "input-controls/docs/THE_RECORD_DENSITY_RULER_IS_ONE_PRODUCT_KAPPA_NU_EQUALS_ONE_AND_THE_HALF_FILLED_SEA_SUPPLIES_ZERO_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "b825a35dcb4f73488ddd06d4607eb40f8a6e87b34ca0f44c6098bd963cf10b99",
+      "bytes": 9823
+    },
+    {
+      "path": "input-controls/docs/THE_REGGE_SECOND_VARIATION_ON_THE_4D_CUBIC_COXETER_COMPLEX_CARRIES_A_NATIVE_LINEARISED_GRAVITON_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "aad9fa7b70fe00a18ea627248270c4d47250ff214e98d2ae2466760ad2084bf8",
+      "bytes": 8744
+    },
+    {
+      "path": "input-controls/docs/THE_STAR_TICKS_RECORD_LAW_IS_EXACTLY_DETERMINANTAL_WITH_A_ROTATED_KERNEL_THE_SECOND_READING_KEEPS_THE_RULER_THE_BORN_STRUCTURE_AND_THE_TT_READING_AND_COSTS_THE_SEA_AS_VACUUM_BOUNDED_NOTE_2026-09-05.md",
+      "sha256": "700ae72e5801e0d45121d852b7c4a5659ed529cfa47f8ecf80b8ec1c6c3953de",
+      "bytes": 12104
+    },
+    {
+      "path": "input-controls/docs/THE_TWO_TT_GRAVITON_POLARISATIONS_ARE_READ_BY_THE_AXIS_BOND_PAIR_RECORD_STATISTICS_OF_THE_PI_FLUX_SEA_OFF_THE_COORDINATE_PLANES_THE_SHEAR_SECTOR_NEEDS_ONE_PERIOD_2_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "d7726760833f4e0c42a06e46a270818aa15e2ed4b4e0f4089d15d47b54057801",
+      "bytes": 11283
+    },
+    {
+      "path": "input-controls/logs/runner-cache/generated_mass_no_shear_even_sum_translations_forbid_nn_t2_check_2026_09_04.txt",
+      "sha256": "1d8c0f0de77137365897e1ef7303761ff7921ff00db6c45cbbb32e26194db372",
+      "bytes": 7747
+    },
+    {
+      "path": "input-controls/logs/runner-cache/no_readable_shear_diagonal_pairs_frozen_read_shear_slaved_check_2026_09_05.txt",
+      "sha256": "004dc88f24c45c6788a63ef3ff4749ce59d05e1e1355ba4f82f10f7e2d8d666b",
+      "bytes": 7835
+    },
+    {
+      "path": "input-controls/logs/runner-cache/tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04.txt",
+      "sha256": "6fc783b8014b7dec25d7c70ee2c43bcc29774bedf94b474196488950576b272d",
+      "bytes": 6470
+    },
+    {
+      "path": "input-controls/scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+      "sha256": "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+      "bytes": 30353
+    },
+    {
+      "path": "input-controls/scripts/generated_mass_no_shear_even_sum_translations_forbid_nn_t2_check_2026_09_04.py",
+      "sha256": "9d80703a550417bb64be287a229684dac663ccbee89db2a1f975d98fd01b57c6",
+      "bytes": 55740
+    },
+    {
+      "path": "input-controls/scripts/no_readable_shear_diagonal_pairs_frozen_read_shear_slaved_check_2026_09_05.py",
+      "sha256": "71015772a249b44903f27d6feae5fb9a065cdfd67240a808ce84df0da9b4d1b4",
+      "bytes": 62953
+    },
+    {
+      "path": "input-controls/scripts/tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04.py",
+      "sha256": "b4ebafbdae8efaa9deaeab407c2da0c67de644b68703caa89331ced6270415b8",
+      "bytes": 39964
+    },
+    {
+      "path": "input_controls.py",
+      "sha256": "c6cc50f66847d92f454f0727f8b494007dfee71c0c19a1557bb9ab326cebb88d",
+      "bytes": 2239
+    },
+    {
+      "path": "intermediate-correction.patch",
+      "sha256": "b183bb932b46e72d82254ee4c0199c0e5050f72b9c818c897936836740028a85",
+      "bytes": 239889
+    },
+    {
+      "path": "label_refresh.py",
+      "sha256": "f1385f43b5febd584bae6e80f1c5a7495294401f4d9188c753c25b534782f096",
+      "bytes": 3010
+    },
+    {
+      "path": "originals/docs/NO_READABLE_SHEAR_WITHOUT_A_SUPPLIED_COUPLING_THE_LENGTH_DRESSED_LAW_IS_A_FUNCTION_OF_AXIS_LENGTHS_ONLY_THE_NEAREST_DIAGONAL_PAIR_STATISTICS_ARE_FROZEN_ON_THE_VACUUM_AND_THE_READ_SHEAR_IS_SLAVED_BOUNDED_NOTE_2026-09-05.md",
+      "sha256": "04dbe3c1570448f6fcd916d9dfe1bf78796b63822078663a19aebb446ecf8a69",
+      "bytes": 48582
+    },
+    {
+      "path": "originals/docs/THE_GENERATED_STAGGERED_MASS_RESPONDS_TO_THE_DIAGONAL_METRIC_AND_TO_NO_SHEAR_A_LENGTH_DRESSED_NN_LAW_IS_SHEAR_BLIND_AND_THE_VACUUMS_EVEN_SUM_TRANSLATIONS_FORBID_ANY_NN_T2_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "0c7740a5d863471805d3367cbb25e5024f8af63a32d86741c27099498d9f7f44",
+      "bytes": 46216
+    },
+    {
+      "path": "originals/docs/THE_TWO_TT_GRAVITON_POLARISATIONS_ARE_READ_BY_THE_AXIS_BOND_PAIR_RECORD_STATISTICS_OF_THE_PI_FLUX_SEA_OFF_THE_COORDINATE_PLANES_THE_SHEAR_SECTOR_NEEDS_ONE_PERIOD_2_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "1711211f0d3c0e7b04d119a33b31f9d9b2f3e2adb101af0178ad3639bc8a4954",
+      "bytes": 38212
+    },
+    {
+      "path": "originals/logs/runner-cache/generated_mass_no_shear_even_sum_translations_forbid_nn_t2_check_2026_09_04.txt",
+      "sha256": "ca190ed71c4df34ab1fb6e102e61862dc6fdb3b2c043c51008e18e65411154a6",
+      "bytes": 7257
+    },
+    {
+      "path": "originals/logs/runner-cache/no_readable_shear_diagonal_pairs_frozen_read_shear_slaved_check_2026_09_05.txt",
+      "sha256": "dc740bf55282f772f721d9973169c56b7552b50c0e0fc70014f2f294a6aae36f",
+      "bytes": 6963
+    },
+    {
+      "path": "originals/logs/runner-cache/tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04.txt",
+      "sha256": "e8e3f3a71a88873a31a5aeedcecf09a2301eafaaad7fb4017508ff6c28eb4504",
+      "bytes": 5722
+    },
+    {
+      "path": "originals/scripts/generated_mass_no_shear_even_sum_translations_forbid_nn_t2_check_2026_09_04.py",
+      "sha256": "7d917115be51a49e52bb9a76ff558edc14726a962a1039cc1c9ba6a8a6d56ba4",
+      "bytes": 57714
+    },
+    {
+      "path": "originals/scripts/no_readable_shear_diagonal_pairs_frozen_read_shear_slaved_check_2026_09_05.py",
+      "sha256": "254f856525f679dc50b8cb0bbb93bef0052118aad1e2536ffa4f30f11d82482f",
+      "bytes": 59422
+    },
+    {
+      "path": "originals/scripts/tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04.py",
+      "sha256": "66c65f374769b8d9a0e28b43a7c2efe1a933ef49a8e3e2e2871b93912bb8321a",
+      "bytes": 39745
+    },
+    {
+      "path": "package_final.py",
+      "sha256": "1c89878ffc7061110d3633c1ece7f6009778c62ce70e0c8447f15966d21ec00d",
+      "bytes": 13388
+    },
+    {
+      "path": "pin_inputs.py",
+      "sha256": "d89ec5033d4b14bf77a3665f905c2235ecb7bd13b17c81b363177d2421af9be6",
+      "bytes": 1758
+    },
+    {
+      "path": "post-5793-final.patch",
+      "sha256": "a6ba002070bebc6b1247dcb833d4f8d57be4f00ef971497d642ddd2a2972134c",
+      "bytes": 39220
+    },
+    {
+      "path": "post-5793-source.patch",
+      "sha256": "a78e75db2f4ff8eacc37949a4b351ef3f853e11afa92dc65dfa2a274395c249c",
+      "bytes": 2373
+    },
+    {
+      "path": "post-intermediate-final.patch",
+      "sha256": "3f8752ce562b2f0fc62dc96c5092e9d53947428ee86e1033e1b93f36a5a161a3",
+      "bytes": 53791
+    },
+    {
+      "path": "post-intermediate-source.patch",
+      "sha256": "15e73c1485ebfb6bc7d6931bd2e590c96790cf01db3a49e32c0823fb4d8d48f1",
+      "bytes": 14802
+    },
+    {
+      "path": "pre-execution-author-correction.patch",
+      "sha256": "5a066e63269c6a3b655d70a6743b48f3dbc9b178267f47df97df009d1c4a6e11",
+      "bytes": 241399
+    },
+    {
+      "path": "preflight.py",
+      "sha256": "815755bcbf618ff806d629bee604a1b4eae8f8b9eeb75697ac3ea05ba7cb3fd4",
+      "bytes": 6426
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "8b43022daff6d1357ff719ccdef76ba8c224d914a0f4011ba9363ff0fab09a59",
+      "bytes": 2656
+    },
+    {
+      "path": "probe-cache/probe.txt",
+      "sha256": "3b3545bcc970c5c33e16a9066f49845cb73fc679fc62a02d7e13f9a8fa947953",
+      "bytes": 252
+    },
+    {
+      "path": "seal_source.py",
+      "sha256": "7c5d61a26982daabacac191d8d908fac25160e744efb0f6c049bc5bd8d5c1ec8",
+      "bytes": 6242
+    },
+    {
+      "path": "semantic_mutants.py",
+      "sha256": "dccbea9ba52683526f8fd71497e5cc932dcc0458fc305f640855f7ac796898dc",
+      "bytes": 3134
+    },
+    {
+      "path": "style-preflight.log",
+      "sha256": "468f95c90ce8f7bc27d1f5a483bab7d38c286d162ec4dceca926cd0378b0e8cd",
+      "bytes": 595
+    }
+  ],
+  "governance": "Author only. Original reviewer retains independent confirmation; root owns source-plus-manifest integration and gate. No formal audit or main/GitHub/planning mutation."
+}
