@@ -18,7 +18,7 @@ W36 lands #7935/#7949 after original-reviewer confirmation of eight corrected fi
 
 Astra low remains the focused landing-review default; consequential unresolved mathematics escalates to Astra xhigh. Reuse original reviews and same-session correction confirmation. See [one-workload reviewer pilot](REVIEWER_MODEL_PILOT.md); detailed certification waits for audit.
 
-Maxwell #7966 and seven consolidated scopes remain under author repair; long production runs are explicitly held and historical receipts are not current production evidence. Gravity #7925/#7929/#7938 has completed original review with eleven correction groups; backlog_vortex_repairs owns repairs. Regge #7910/#7940 remains under focused original review. Neither pending unit nor held production receives acceptance.
+Maxwell #7966 and seven consolidated scopes remain under author repair; long production runs are explicitly held and historical receipts are not current production evidence. Gravity #7925/#7929/#7938 has completed original review with eleven correction groups; backlog_vortex_repairs owns repairs. Regge #7910/#7940 has completed original review with seven correction groups; backlog_batch_contract owns repairs. Neither pending unit nor held production receives acceptance.
 
 ## Landed source history
 
