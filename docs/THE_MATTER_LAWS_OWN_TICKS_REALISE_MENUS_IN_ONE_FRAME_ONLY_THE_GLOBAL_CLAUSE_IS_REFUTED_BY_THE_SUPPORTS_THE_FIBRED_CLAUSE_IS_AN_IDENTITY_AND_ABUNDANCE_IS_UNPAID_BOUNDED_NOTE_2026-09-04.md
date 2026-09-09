@@ -8,6 +8,8 @@ runner: scripts/matter_law_ticks_realise_menus_in_one_frame_only_check_2026_09_0
 
 # Static conditional readout in one record frame and its finite menu systems
 
+**Type:** bounded_theorem
+
 Original date: 2026-09-04. Correction: 2026-09-09.
 **Author status:** conditional finite support; no audit grade.
 **Audit:** formal audit deferred by the owner.

@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/ruler_rate_is_star_tick_rate_class_tick_no_newtonian_potential_check_2026_09_04.py
+runner_sha256: 5ac38c34e3e0003ff57b543d6ed75b35b82e7aefef76800f686b24aba1133bf3
+input_fingerprint_sha256: cec3f5a6b9ad7fd7a67b1078117b3bb09d3c98db51239d7d7f20e2357d41c034
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.73
+status: ok
+----- stdout -----
+[PASS] A1 provenance: the copied Q_grid and M_grid('line') ARE the landed bloch_Q and metric_map
+       max|Q_grid-bloch_Q| 9.2e-16, |M_line-metric_map| 2.2e-16
+[PASS] A2a sharing S1 IS the endpoint-mean rule identically: r_e/(2 r_S0) - 1 = (Phi_x + Phi_{x+e_a})/2 at every record site
+       max deviation 1.6e-16 over 1536 record sites
+[PASS] A2b (C1,S1): the star-rate edge field, built in position space, IS G1's M_AM(k) h_1 Phi(k)
+       max|dl_star - dl_G1| 5.9e-15 (|dl| up to 2.732)
+[PASS] A2c (C1,S1): linearised Regge IS the lattice Poisson equation on the temporal edges, (Q dl)_tau(x) = 2M(delta_x0 - 1/N), the other 14 classes 0
+       E_tau(0) = +1.996094 = 2 - 2/N; dev 1.1e-15 and 1.7e-15
+[PASS] A3 (C2,S1): the corner count is 6 r_S + sum_nn r_S, so Phi_t(k) = K(k) Phi(k) with K = (1 + c)/2 = 1 - khat^2/12 exactly and K(pi,pi,pi) = 0
+       position 2.5e-16, Bloch 1.3e-14, |K - (1 - khat^2/12)| 2.2e-16, min K 0.0e+00
+   declared momenta, khat^2/K: 0.80455/0.93295, 6.137/0.48858, 11.73/0.02250, 0.00061798/0.99995
+[PASS] A4 the tt (Poisson) slot is -khat^2 Phi under BOTH clocks (A_t,tt = 0); the C2 spatial residual is exactly (khat^2/12)(A_s + khat^2 e_tt), nonzero at all 4 momenta
+       C1, C2 tt, A_t,tt and prediction <= 4.3e-15; residual 0.3377-0.4871 khat^4/12
+[PASS] A5 no constant exponent puts C2 on shell: the spatial residual of (-2nu I_3, +2K) vanishes iff nu = K(k), momentum-dependent
+       spatial residual at nu = K(k) <= 3.7e-15
+[PASS] A6 at |k| = 0.05 the C2 residual is (khat^2/12) times G1's continuum tidal pattern with tt exactly 0: the star average costs a tidal stress, not a source term
+       axis yy = +1.04e-04, zz = +1.04e-04; face xx = +5.21e-05, zz = +1.04e-04, xy = -1.04e-04
+[PASS] A7 (C1,S1) keeps every G1 selection: nu != 1 needs a tidal stress at every momentum, so nu_r = 1 and alpha/beta = 1 + kappa_r nu_r = 2, and the TT overlap is still zero
+       smallest spatial slot 0.338; overlaps 0, 0; under C2 it is 1 + 1/K = 2.0719, 3.0467, 45.4520, 2.0001
+[PASS] B1 under S2 the record site is the endpoint mean plus a staggered bond gradient (eps_x/2)(Phi_x - Phi_{x+e_a}), and the C2 clock is Newtonian at EVERY corner off the source
+       8^3, 12^3 dev <= 2.5e-16; staggered term 0.588, 0.553 of the mean
+[PASS] B2 the endpoint-mean part alone is exactly on shell; the staggered term has Bloch amplitude (1 + e^{i k_a})/2 Phi(k + Q), the potential at the partner momentum
+       8^3, 12^3 dev <= 2.9e-14
+[PASS] B3 under V2 the residual is EXACTLY A_s(k) Phi(k + Q) and the source the even cover sees carries the inverse kernel 2M/K(k)
+       dev <= 5.1e-14; tt excess 5.1321e-02, 2.2839e-02
+[PASS] B4 the even cover is NOT a vacuum solution: under V1 the residual is order one at every momentum, and under both variants several times the source near Q
+       ||R||/||src|| / max|R|/2M at min khat^2 / near Q: 8^3 V1 1.633/0.601/1.96, V2 3.394/5.132e-02/19.49; 12^3 V1 1.652/0.595/2.90, V2 4.305/2.284e-02/43.78
+[PASS] C1 the class tick's edge field has Fourier support exactly {0, pi}^3, 7 nonzero Bloch amplitudes on each torus: a class has no extent, it is the whole lattice mod 2
+       max amplitude off {0, pi}^3 <= 4.2e-17
+[PASS] C2 it keeps only the closed-form fraction (3/16 + 3/64 + 1/144)/sum_k khat^-4 of ||Phi_N||^2, falling like 1/N
+       6^3/8^3/12^3: 1.522e-02/4.953e-03/1.011e-03 = 0.241319 over 15.856, 48.719, 238.77
+[PASS] C3 it misses the point source: the Regge residual exceeds 1.001 of the source, and the equation it does satisfy has the mass spread over a whole class of N/8 corners
+       residual 6^3/8^3/12^3: 1.0080/1.0034/1.0010
+[PASS] C4 the clock difference between two corners of one class is EXACTLY 0 at every separation; the adjacent-corner difference is a small fraction of the Newtonian one
+       adjacent/Newtonian, 6^3/8^3/12^3: 2.79e-02/1.17e-02/3.47e-03
+[PASS] C5 it sees the unit mass only as eight class totals, uniform within each class and summing to zero: a class-uniform rate carries eight numbers, no 1/r potential
+       8^3 class totals: +1.8750, -0.1250, -0.1250, -0.6250, -0.1250, -0.6250, -0.6250, +0.3750
+[PASS] D1 the C2 map (I + A/6)/2 and the S1 incidence map both have the staggered (pi,pi,pi) mode as EXACT kernel on even tori (rank N - 1; none on odd L); the spectra match their symbols
+       dense dev <= 5.3e-15; cond(C2)/cond(inc) 6^3 12.00/3.464, 7^3 20.20/4.494 (odd L: no kernel), 8^3 20.49/4.526, 12^3 44.78/6.692
+[PASS] D2 G1's record-site profile lies in the incidence range and least squares recovers the star rates modulo that mode: a (pi,pi,pi) clock modulation changes no record site
+       range residual 1.1e-14; recovery 1.2e-14; rank 511 = N - 1
+[PASS] D3 the class map R^8 -> R^N is an isometric embedding (Gram = (N/8) I, condition 1, rank 8) whose left inverse is the class mean; it loses everything but eight means
+       ||Phi - P_class Phi||/||Phi|| = 0.99752 on 8^3; lost N - 8 = 504
+[PASS] E1 the 4^3 torus in its declared (1,1,1) sector is flat, h^2 = 6I, so a single corner IS its own class: the one place where star = class, an L = 4 cancellation
+       |h^2 - 6I| 0.0e+00; single-corner residual 1.8e-14
+[PASS] E2 the star tick's price is order one and carries no rate: a single corner and a class minus one corner have the same residual, the whole class is exact
+       6^3 corner 0.3572, class (27 corners) 5.0e-14, class minus one 0.3572; 8^3 corner 0.3798, class (64 corners) 1.1e-13, class minus one 0.3798
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

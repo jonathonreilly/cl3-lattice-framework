@@ -8,6 +8,8 @@ runner: scripts/when_the_odds_are_an_energy_rank_one_detailed_balance_check_2026
 
 # Attainable proposal odds, rectangular factorization and finite reversibility checks
 
+**Type:** bounded_theorem
+
 Original date: 2026-09-03. Correction: 2026-09-09.
 **Author status:** conditional finite support; no audit grade.
 **Audit:** formal audit deferred by the owner.
