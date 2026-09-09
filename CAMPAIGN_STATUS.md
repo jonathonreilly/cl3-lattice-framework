@@ -56,7 +56,8 @@ joint-law selection remain open.
    Born five-paper final evidence and original Astra-low source confirmation are complete;
    final integration confirmation remains;
    backlog_8001_review repairs the three gravity papers. The actual Born phrase-gate
-   failure and narrow correction are preserved. Formal audit remains deferred.
+   failure and narrow correction are preserved. The next focused chirality review
+   covers #7973/#7989/#7991 with backlog_ticks_review. Formal audit remains deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
