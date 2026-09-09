@@ -1,0 +1,3 @@
+# Prospective synthetic arithmetic fixture
+
+Exactly1024 interval integrand pairs, in integer index order. Synthetic one-atom Stieltjes measure X=1, never native data. s=2^(i mod11-7)*(17+i mod7)/16, t=2^((7i)mod67-64)/3; small160-bit relative brackets. Exact one-atom A,A' and G,H references permit actual containment checks. No physical oracle, catalog, A66 output, or native integral is read. Includes one deliberately colliding interval refusal. Internal29-second alarm and384MiB RSS guard; the fixture is bounded30 seconds. Time is candidate arithmetic throughput only, not physical contraction measurement. Freeze this protocol/source before running once. No tuning or replacement fixture after its result.

@@ -1,0 +1,26 @@
+--- 
++++ 
+@@ -14,7 +14,7 @@
+ 
+ ## Precise imports
+ 
+-The parent pair-chart theorem supplies the real reference polar-frame matrix D=S−2ub^T, where S is bounded, positive and injective but gapless. The local vectors a=S^-1/2u and d=S^-1/2b exist and satisfy a^T d=1/3 and 2||a||||d||<=33/25. It also supplies a positive reference overlap for the actual impurity vacuum, a real stationary pairing of operator norm <=sqrt(347/349), and squared Hilbert–Schmidt norm <87. The finite-excitation Ward theorem identifies D_A with the actual reference-normal-ordered quadratic operator, including its finite scalar E_A. These are load-bearing supplied-model results, not newly selected microscopic axioms.
++The parent pair-chart theorem supplies the real reference polar-frame matrix D=S−2ub^T, where S is bounded, positive and injective but gapless. The local vectors a=S^-1/2u and d=S^-1/2b exist and satisfy a^T d=1/3 and 2||a||||d||<=33/25. It also supplies a positive reference overlap for the actual impurity vacuum, a real stationary pairing of operator norm <=sqrt(347/349), and squared Hilbert–Schmidt norm <87. The finite-excitation Ward theorem identifies D_A with the actual reference-normal-ordered quadratic operator, including its finite reference-normal-ordering scalar c_A. The separate impurity-ground-energy shift is denoted E_A below; these two constants are not identified. These are load-bearing supplied-model results, not newly selected microscopic axioms.
+ 
+ The load-bearing canonical imports are [the pair-vacuum chart](NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md) and [the finite-excitation Ward theorem](NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md). The exact research proofs and independent reviews are preserved in the paired inputs provenance directory; their historical prospective statements do not override this note's present analytical scope.
+ 
+@@ -67,11 +67,11 @@
+ 
+ Therefore W_m=W0+span{h_A^jP_+U:0<=j<m} contains all degree-m polynomial images of W0 and has dimension at most dim W0+7m, per impurity. Exact positive-band membership is essential: uncontrolled negative-band leakage invalidates contraction estimates.
+ 
+-For an exact isometry V into that space, A=V†h_AV>=0 and R=(I−VV†)h_AV satisfy R†R=V†h_A²V−A². Duhamel bounds vector error by the integral of ||R e^-sA x|| and pairing Hilbert–Schmidt error by twice the integral of ||R e^-sA Z||HS. Initial truncation, frame uncertainty and arithmetic error must be added.
++For an exact isometry V onto W_m (or an enlarged exact positive-band space containing all the required polynomial images), A=V†h_AV>=0 and R=(I−VV†)h_AV satisfy R†R=V†h_A²V−A². Duhamel bounds vector error by the integral of ||R e^-sA x|| and pairing Hilbert–Schmidt error by twice the integral of ||R e^-sA Z||HS. Initial truncation, frame uncertainty and arithmetic error must be added.
+ 
+-At t<=100/h, mapping [0,6h] to [-1,1] and using Bernstein ellipse rho=3/2 bounds the degree-m exponential tail by delta_m<=6e^25(2/3)^(m+1). The exact rational upper bound 6*3^25*(2/3)^129<10^-10 proves that degree128 suffices. Galerkin polynomial equality on W0 then gives semigroup error <=2delta_128 and pairing error <=4delta_128||Z_A||HS<4*10^-9, with at most 896 added seed directions per impurity.
++At t<=100/h, mapping [0,6h] to [-1,1] and using Bernstein ellipse rho=3/2 bounds the degree-m exponential tail by delta_m<=6e^25(2/3)^(m+1). The exact rational upper bound 6*3^25*(2/3)^129<10^-10 proves that degree128 suffices. For an initial pairing supported in W0, Galerkin polynomial equality on W0 then gives semigroup error <=2delta_128 and pairing error <=4delta_128||Z_A||HS<4*10^-9, with at most 896 added seed directions per impurity.
+ 
+-These last numbers describe only polynomial truncation under exact positive-band, Gram and moment data. They are not total achieved errors. For real pairings in a common positive-anchor frame, normalized Fock-vector error is at most ||Delta Z||HS/sqrt(2), from the Gaussian differential metric. Separately approximated vacua, phases and the scalar energy require their own bounds.
++Any initial pairing tail outside W0 is a separate error. These last numbers describe only polynomial truncation under exact positive-band, Gram and moment data. They are not total achieved errors. For real pairings in a common positive-anchor frame, normalized Fock-vector error is at most ||Delta Z||HS/sqrt(2), from the Gaussian differential metric. Separately approximated vacua, phases and the scalar energy require their own bounds.
+ 
+ ## Evidence and unresolved numerical obligations
+ 

@@ -1,0 +1,1 @@
+One saved-input binding check; no B contraction/oracle. Source hash frozen before execution. 30 seconds/384MiB; failure retained. Verify actual previous/new freeze delta, every6226pin, all scalar gates and root acceptances. No runtime launch verdict without separate monitor and remote preregistration.

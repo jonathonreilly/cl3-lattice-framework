@@ -1,0 +1,3 @@
+# Prospective exact controls
+
+Fixed four synthetic2/4-mode real rational skew pairs, including opposite99/100 pairings and noncommuting4-mode matrices. Construct actual Fock vectors by the finite creation-exponential series, independently of the covariance formulas. Check ordered f/fdag blocks, positive overlap/determinant square, all Majorana pair signs,64 ordered four-insertion words per fixture, and the exact2048-step Neumann tail inequality. Direct wrong-F-sign alternatives must disagree on nonzero entries; these are algebraic adverse comparisons, not executed source mutants. Internal29-second alarm and384MiB RSS guard. No physical evolution, impurity matrix or oracle. Freeze source before one bounded exact run.

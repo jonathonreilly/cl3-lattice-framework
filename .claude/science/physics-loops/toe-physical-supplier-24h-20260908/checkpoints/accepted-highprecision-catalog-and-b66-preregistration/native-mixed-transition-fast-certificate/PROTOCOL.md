@@ -1,0 +1,1 @@
+One exact synthetic2x2 doubling/residual and scalar inequality check, under30s384MiB, source frozen before execution. No native input, physical matrix or floating LU. Preserve output/failure. These controls support identities, not a production runtime claim.

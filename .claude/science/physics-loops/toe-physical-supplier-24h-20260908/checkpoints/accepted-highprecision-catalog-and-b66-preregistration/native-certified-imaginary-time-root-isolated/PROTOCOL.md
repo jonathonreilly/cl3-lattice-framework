@@ -1,0 +1,1 @@
+One actual -I-B-S canonical supporting algebra execution in a clean10file source freeze. No native physical calculation. External5s timeout,384MiB RSS acceptance. Source has11 previously reviewed exactsyntheticCAR/Lyapunov predicates plus4rationalbudget/adversecomparisons. Preserve output and error.
