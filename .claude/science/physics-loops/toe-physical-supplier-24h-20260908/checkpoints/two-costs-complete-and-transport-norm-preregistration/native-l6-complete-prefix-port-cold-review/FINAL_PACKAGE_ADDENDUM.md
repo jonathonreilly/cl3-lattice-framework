@@ -1,0 +1,7 @@
+# Final cost package: PASS
+
+Reviewed final freeze ac4b8624724610a0002389b4606a23866bcc19cde92c9c5a54e4c9372c3bc5d2. Complete run.py, verify.py, preflight.py and protocol were read; all frozen local hashes and71 external runtime hashes were verified. Strict-I-B, recursive executable membership, runtime origins, fresh external output and loaded-module checks are present. Only cost mode exists. Root must still supply the external30-second/384-MiB process-tree wrapper and checkpoint before any execution. The29-second inner alarm is supplementary; whole external time must price final serialization and overhead.
+
+One actual predata defect was found and repaired: equality/floor failures originally omitted the offending rational. The final exact diff now appends and persists the actual rational, denominator, elapsed and predicate flags before requiring equality and floor. Originalf219 is preserved. This reviewer executed only the extracted actual retention block with wrong-positive and negative synthetic rationals; both fail while preserving the exact offending row. No baseline, gap, spectrum or physical source call was made. Arithmetic and geometric25-case selection are unchanged; prior math review ab7b remains applicable.
+
+The planned full replay is not authorized by this verdict. Its forecast must use maximum observed rank4/rank6 costs, all baseline/I/O/overhead and explicit headroom as stated in the protocol. No source or resource blocker remains for the fixed25-case cost contract after root's external-wrapper review.

@@ -1,0 +1,9 @@
+# Exact complex norm and particle scanner
+
+For binary64 exponent field e and fraction f, the value in units2^-1074 is signed f for e=0, or signed(2^52+f)*2^(e-1) for1<=e<=2046. Squaring removes sign, including signed zero. Each square is therefore an integer in units2^-2148. Infinity/NaN exponent2047 is rejected before arithmetic. Python integers are unbounded; no unsigned accumulator overflow assumption enters. A complex norm adds real and imaginary squares. Buckets are exact nonnegative integers; sum and projected sum introduce no roundoff.
+
+For a compressed fixed-parity m-mode vector, entry index contains lower m-1 bits. If their population is k, the implicit top bit is parity XOR(k mod2). The full particle count is k plus that bit. Each index contributes once to its bucket. Input is explicitly little-endian interleaved real/imag binary64,16bytes per complex entry. Exact file length and finite inputs are checked. This is not .npy parsing and must be paired with a bound lossless format conversion if used on .npy outputs.
+
+The largest square has at most4196bits. Summing2^21 real components adds at most21bits;22 particle bucket integers are negligible memory. A4096-entry block is64KiB. The scanner uses scalar struct decoding and Python integer arithmetic: no NumPy dot, BLAS or floating reduction. This simple fallback is the initial implementation; no bucket/limb optimization is assumed necessary before cost.
+
+A Euclidean norm enclosure follows by integer square-root bounds on numerator/2^2148. This package reports exact squared quantities only. It does not certify that a supplied residual vector equals the true operator residual; coefficient/action errors remain the separate9e489 arithmetic obligation. Projected weights certify the supplied candidate's particle distribution, not an unknown exact solution without its total error bound.
