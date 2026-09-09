@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T11:44:06.924207+00:00; main `0c52eb31300559f4d9e733b3a852b196f1fdc897`.
+Updated 2026-09-09T14:49:38.680690+00:00; main `efa96a44eac1a154dc6dd8a5e68e148cfefb9403`.
 
-156 reviewed original science scopes landed: 113 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 116 direct original closures include 113 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+158 reviewed original science scopes landed: 115 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 118 direct original closures include 115 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
@@ -25,7 +25,9 @@ Updated 2026-09-09T11:44:06.924207+00:00; main `0c52eb31300559f4d9e733b3a852b196
 | #6017 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `0d4a8bb96b7956390e7f43c1bdeaf51cfc2adb6d` |
 | #6104 | draft_disposition | superseded_by_preexisting_main_science | superseded_by_preexisting_main_science |
 | #6113 | draft_disposition | superseded_by_preexisting_main_science | superseded_by_preexisting_main_science |
+| #6266 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `efa96a44eac1a154dc6dd8a5e68e148cfefb9403` |
 | #6269 | source_consolidation_exact | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |
+| #6275 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `efa96a44eac1a154dc6dd8a5e68e148cfefb9403` |
 | #6280 | source_consolidation_exact | reviewed_corrected_scope_on_main | `06816d119cd73ad40d4ef332a6e6e7b2e61af0db` |
 | #6281 | source_consolidation_exact | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |
 | #6282 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |

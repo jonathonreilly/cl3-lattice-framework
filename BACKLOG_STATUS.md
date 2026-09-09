@@ -1,23 +1,23 @@
 # Backlog review and landing — current handoff
 
-Updated after wave 53. Main is `0c52eb31300559f4d9e733b3a852b196f1fdc897`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
+Updated after wave 54. Main is `efa96a44eac1a154dc6dd8a5e68e148cfefb9403`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 116 |
+| Closed directly after reviewed landing | 118 |
 | Closed through draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner reservations | 28 |
+| Still open, including three owner reservations | 26 |
 | Original membership | 254 |
 
-156 reviewed original science scopes landed: 113 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 116 direct original closures include 113 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+158 reviewed original science scopes landed: 115 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 118 direct original closures include 115 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 Zero original drafts remain. The 110 other closures comprise 43 corrected scopes landed, 56 pending at four successors, seven partial Maxwell scopes, two starting-main supersessions, one empty PR and one unexecuted plan. Reservations apply transitively.
 
-Including pre-cutoff #8003–#8009, the session has 123 direct closures, 53 science/source batches and 198 new source documents; 51 batches passed one combined gate. Earlier actual failures and pre-gate rebuilds remain preserved. Main's ledger has 4,668 rows: 4,293 unaudited science and 375 meta. Five new notes await mechanical refresh. No audit verdict has been applied by this campaign.
+Including pre-cutoff #8003–#8009, the session has 125 direct closures, 54 science/source batches and 200 new source documents; 52 batches passed one combined gate. Earlier actual failures and pre-gate rebuilds remain preserved. Main's ledger has 4,668 rows: 4,293 unaudited science and 375 meta. Seven new notes await mechanical refresh. No audit verdict has been applied by this campaign.
 
-Wave 53 lands corrected #5957 affine support and conditional response mathematics and #6000 finite station/detector mathematics. Both retain exact original histories and explicitly limit historical/physical claims. The missing 6000 checker registrations were corrected before integration; every other registry mapping remains unchanged. All frozen hashes were verified on remote main. The combined gate passed once in 238.014 seconds. See [evidence](backlog_evidence/wave53/INDEX.json).
+Wave 54 lands corrected #6266/#6275 finite Record refinement, exact probability-domain and canonical-basis channel mathematics. The original reviewer confirmed both corrected notes. All126 source/recovery additions preserve current main, including historical source surfaces; both actual helper consumers and three genuine source-bound caches passed readiness. The combined gate passed once in 255.711 seconds. See [evidence](backlog_evidence/wave54/INDEX.json).
 
-Gauge owns #6347's narrow Markov repair. The corrected #6266/#6275 probability-domain and basis-order defects have original-session confirmation and await integration. The original #7047 review is complete; Vortex repairs its fixture/input closure, publication wiring and unsupported independence claims. The original Eta pair reviewer is sealing the completed six-note review and repair handoff; the separate Eta affine-repeat unit is still unreviewed. Original reviewers confirm affected corrections. See NEXT_REVIEW_UNITS.json.
+Gauge owns #6347's narrow Markov repair; Vortex owns #7047's fixture/input closure, publication wiring and independence-rhetoric correction. The original Eta reviewer is sealing the complete six-note handoff; the separate Eta affine-repeat unit remains unreviewed. Original sessions confirm affected corrections. See NEXT_REVIEW_UNITS.json.
 
 Verified source dependencies hold #6844/#7332 and additionally #7333/#7334 on owner-reserved science. Their branches remain open; this is no adverse mathematical verdict. The latter [preferred-parent routes](backlog_evidence/reserved_routing_7333_7334/PREFERRED_PARENT_IMPORT_RESERVATIONS.json) exclude exception-handler/else fallback shortcuts. No static reservation was found for #7335/#7338, which still require full review.
 
@@ -392,3 +392,5 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Corrected pointer symmetry and conditional sampled-star protocol | `eb105e8c374ea286c9b7705d1f5e0c546f0a1b44` | `backlog_evidence/wave52` |
 
 | Corrected affine support and finite station detector science | `0c52eb31300559f4d9e733b3a852b196f1fdc897` | `backlog_evidence/wave53` |
+
+| Corrected finite Record refinement and exact channel bridge science | `efa96a44eac1a154dc6dd8a5e68e148cfefb9403` | `backlog_evidence/wave54` |

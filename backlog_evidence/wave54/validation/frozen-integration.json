@@ -1,0 +1,552 @@
+{
+  "base": "0c52eb31300559f4d9e733b3a852b196f1fdc897",
+  "head": "efa96a44eac1a154dc6dd8a5e68e148cfefb9403",
+  "tree": "7ef615f653f604c0eef98071ecedf9008c5e9a53",
+  "frozen_utc": "2026-09-09T14:44:02.960697+00:00",
+  "original_prs": [
+    {
+      "baseRefName": "physics-loop/toe-axiom-closure-block66-cycle713-record-intertwiner-20260812",
+      "baseRefOid": "52d6c9b5d19b51a3bf74957c7f3f7a9c65981c64",
+      "headRefName": "physics-loop/toe-axiom-closure-block67-record-source-gravity-20260813",
+      "headRefOid": "dbb6d88029f0a6d0e3c7267ac5a3a7d92010abf6",
+      "isDraft": false,
+      "number": 6266,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "physics-loop/toe-axiom-closure-block69-cycle713-same-m2-record-cut-20260813",
+      "baseRefOid": "5372dc950808ff9df62c4b16143b17f63aea882c",
+      "headRefName": "physics-loop/toe-axiom-closure-block70-lphys-record-law-tournament-20260813",
+      "headRefOid": "8fea8ea313df6a93922ae36d8ec993ff39faf9d9",
+      "isDraft": false,
+      "number": 6275,
+      "state": "OPEN"
+    }
+  ],
+  "source_paths": {
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/.gitattributes": {
+      "sha256": "33b413d989f1f65f25b0d63a36422dabaad7764f8806e67b913c3dbf834ad545",
+      "blob": "f96a774063f14f14958f2973850309ab54f3999d"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/HISTORY.md": {
+      "sha256": "186972d5af2e1606952d3748122810ab60124f6deadf32c24f6b1623e00086b0",
+      "blob": "7356755d1f7d15d4340b76b89cec2c09da32d476"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/RECOVERY.json": {
+      "sha256": "0b9c121e6e4de4139b3d2a079c4f32db1aa781cdcb95aa631db3bfb51e6e0c82",
+      "blob": "5ad1f140956a5f2564900c456da1b17e8df6dd3c"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/00b5be167117ec4204c1e51e14f96e987be259a7": {
+      "sha256": "105d4a2e38304d5413b88cd24dc44bb25a27b220981bbd5152827443dd08214c",
+      "blob": "00b5be167117ec4204c1e51e14f96e987be259a7"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/0427cf49484a312fb2ebe2fcd35430be2dad01b5": {
+      "sha256": "b42ea07c1ed671b9cbab38bc38eba6f8166fe65be52295941a95e3ed75049abf",
+      "blob": "0427cf49484a312fb2ebe2fcd35430be2dad01b5"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/04ac052c8f8d17c4d3605fd50d25ae43e9ea810f": {
+      "sha256": "c2599377d0627d701589185f942a1a42d2861c6e05136a4790c4f107c0121af1",
+      "blob": "04ac052c8f8d17c4d3605fd50d25ae43e9ea810f"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/06245a52d585fa221fe8df3a817fc7564aedd53a": {
+      "sha256": "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8",
+      "blob": "06245a52d585fa221fe8df3a817fc7564aedd53a"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/06c3ff816f50238f3de007aa412a49d9ec18db6a": {
+      "sha256": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+      "blob": "06c3ff816f50238f3de007aa412a49d9ec18db6a"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/09c30f104bcd53b36326cecf46c4951ca4bc8eb4": {
+      "sha256": "2986bbefd1467983f4ee4af994a4778936f51f4ff2bac14c983e0b8ff3cd3a21",
+      "blob": "09c30f104bcd53b36326cecf46c4951ca4bc8eb4"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/0be8d83ec8ed874ff12e2092dc47121b8030a5bc": {
+      "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "blob": "0be8d83ec8ed874ff12e2092dc47121b8030a5bc"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/0d6d936df9e9e73ef942e3bdd2f82671f1c66831": {
+      "sha256": "f7bf243c4738315c2e54eb9af0222f5de11848d50be5bebb74ba8eaeb7a899ea",
+      "blob": "0d6d936df9e9e73ef942e3bdd2f82671f1c66831"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/120171655190446cc6e20e4107e94f2496887272": {
+      "sha256": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+      "blob": "120171655190446cc6e20e4107e94f2496887272"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/120507a83cab610e42aab743b6d7071b9fce3aeb": {
+      "sha256": "e17ade6c1e443565586ecb7513415c583730568c27518095aca2f933f37bd1d1",
+      "blob": "120507a83cab610e42aab743b6d7071b9fce3aeb"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/1439ed046d5369bf85ce140ad0ca3bc3837c59bb": {
+      "sha256": "c656fd3e96379568bd4132583a93766a7e9296694a23b6c44f7a3284f15195a9",
+      "blob": "1439ed046d5369bf85ce140ad0ca3bc3837c59bb"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/163fdee9535525435e7aec6c88eee36a732d0129": {
+      "sha256": "2fe6dac9b19d20ab0e28ccc6114e0dd0385ef80cb68e9ebec2306dbabb094d61",
+      "blob": "163fdee9535525435e7aec6c88eee36a732d0129"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/1bb451682f609fc3340c5c4a337ebdcf6f1d8583": {
+      "sha256": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+      "blob": "1bb451682f609fc3340c5c4a337ebdcf6f1d8583"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/1c959eafcfe155ac1ed9d3cb4a6a6d976a62c88c": {
+      "sha256": "42293c9224683c28fd32aa16b4e9702a719b98303c0b514695febfeb7a9bc393",
+      "blob": "1c959eafcfe155ac1ed9d3cb4a6a6d976a62c88c"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/1e36cd2e9780b1bf7aa294e221a09167e40a01f2": {
+      "sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "blob": "1e36cd2e9780b1bf7aa294e221a09167e40a01f2"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/1e55a8e47d13a323de6d63b85faeb52e3edc13ff": {
+      "sha256": "64f73efb404f2acacb1a4e5e392aa8c6ac139eafb3e5f05380af9a3b3cc91826",
+      "blob": "1e55a8e47d13a323de6d63b85faeb52e3edc13ff"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/1f7d9e9482ec819d3d73cba7ea3623db22cc484b": {
+      "sha256": "bfa42111b8e79184a61e6b1bbd1fbd11c4003fa0e1e90cbcce86c5bbfe35cc9a",
+      "blob": "1f7d9e9482ec819d3d73cba7ea3623db22cc484b"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/2266e5bb08ca34c3c4646b93cd01cc21e064513f": {
+      "sha256": "67aa2435d66fb34b6734cc564a82ac839525139fdc9e8c347dc1b2277d08b40b",
+      "blob": "2266e5bb08ca34c3c4646b93cd01cc21e064513f"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/2530f4cb44c9f585854f5cd84d1b2132da87d37f": {
+      "sha256": "07e3da5d0e333ab7bb542378557f1f717950d860ccc4a8ec2245a7ec54323a1e",
+      "blob": "2530f4cb44c9f585854f5cd84d1b2132da87d37f"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/2d26869f13975d07469d0e4dc9602bcdcee31729": {
+      "sha256": "ef6805e691a1ddd303a96f7cabd7000517e0cf33d5b1c577b20c2cbbf29aca23",
+      "blob": "2d26869f13975d07469d0e4dc9602bcdcee31729"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/2f5fdd26898f62c17fcabc846761f7785c2eadb1": {
+      "sha256": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+      "blob": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/30257f2417a05f256bc959fd81917c0791cefc9b": {
+      "sha256": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480",
+      "blob": "30257f2417a05f256bc959fd81917c0791cefc9b"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/313a3d4960620cf28cfc9022d5fe36d0c9922e1e": {
+      "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
+      "blob": "313a3d4960620cf28cfc9022d5fe36d0c9922e1e"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/31f55640fc664fdecd4a8d013dca6934524eff54": {
+      "sha256": "8bf982ca5486740e255d71eaffd7f8699a8156ea77982b33aa597a591e1d0405",
+      "blob": "31f55640fc664fdecd4a8d013dca6934524eff54"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/32343682999c37f5df634152973a6475b7244d28": {
+      "sha256": "0091b57d1d8e4859d94917b2bfd5c88b34f536851f64601fb2ddaa86aeefa4c2",
+      "blob": "32343682999c37f5df634152973a6475b7244d28"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/32ac57251d4bad32d8185eb943a763be47215453": {
+      "sha256": "4a4dce8a459102124696e9449fb28e9cfee576645d22ab20da52624642047158",
+      "blob": "32ac57251d4bad32d8185eb943a763be47215453"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/32f5f6584fce98b197165a39ef27d38fbca7f385": {
+      "sha256": "70c0cbe91e079e20111875b26589556dd21c197ade4638512ecd5070bb3e073e",
+      "blob": "32f5f6584fce98b197165a39ef27d38fbca7f385"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/33aa40c6696ad1889de916193e616aa28ed260a5": {
+      "sha256": "f345b15ca8ea1cb24dd395fa8a98b4966da7e74328337ac7228026dd8c0156af",
+      "blob": "33aa40c6696ad1889de916193e616aa28ed260a5"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/381e946175b5c0a3d3085657137aecb290253917": {
+      "sha256": "12e8160149c114beb804f09baee78a588eeee7573e24b6b05ea06c409cfce03b",
+      "blob": "381e946175b5c0a3d3085657137aecb290253917"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/422a7873b064d8f74efec3c408368408105bb757": {
+      "sha256": "b52d939a514eaee6a314936dea50b9ef2a7ba7139351a68eb3d53e8a44c6b9a8",
+      "blob": "422a7873b064d8f74efec3c408368408105bb757"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/431acbd3906f70c6bc3c7f47d45df4eaff5c6d48": {
+      "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0",
+      "blob": "431acbd3906f70c6bc3c7f47d45df4eaff5c6d48"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/489af9e3bbb22d6803527494a567f3c78dc16688": {
+      "sha256": "e626f1fc64415538b6a38b974688609848da05cc465e9fdf5b2f8edeb8e74d66",
+      "blob": "489af9e3bbb22d6803527494a567f3c78dc16688"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/494ed4d1be589e7f2a37cf79f65997504de4579c": {
+      "sha256": "aec5700bca3f148c67ff27948e045afaa0ca861d7b29ae16608e890c08b89235",
+      "blob": "494ed4d1be589e7f2a37cf79f65997504de4579c"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/4df5caa52e2b8b7da187d286edab26ea8f88c2e6": {
+      "sha256": "0272a14eb5a1283ac0fb7edb05a0a08e68b9ced428020943d81364cad0033f03",
+      "blob": "4df5caa52e2b8b7da187d286edab26ea8f88c2e6"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/4f53c00be333427b111bf7b129826e5474c4b9be": {
+      "sha256": "3aa964a6eaca559048a53de580f39d9295a3e4b41ef9d4ff9dcdd4d3ff7444a7",
+      "blob": "4f53c00be333427b111bf7b129826e5474c4b9be"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/5254571dd02f24affb18dd087d58c3755bc5761d": {
+      "sha256": "d74fb32e21879b2a843eae822c8e71b950729d9dc295eaf336911f174cceee3a",
+      "blob": "5254571dd02f24affb18dd087d58c3755bc5761d"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/539421fb6bc963b17b0a5b9c669effeb784b0c49": {
+      "sha256": "c2e7f261c47092f11e445b16bde703330ccfd3e3af06bec0dac078ba64cf2297",
+      "blob": "539421fb6bc963b17b0a5b9c669effeb784b0c49"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/54f104bca5fa994e16cb56ff62d4631ade6d5c10": {
+      "sha256": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+      "blob": "54f104bca5fa994e16cb56ff62d4631ade6d5c10"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/5762deccd63319693364f13ed780eb47dab3ee85": {
+      "sha256": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb",
+      "blob": "5762deccd63319693364f13ed780eb47dab3ee85"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/5e34cee568688461ea1be5745f0ec636d0d17744": {
+      "sha256": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+      "blob": "5e34cee568688461ea1be5745f0ec636d0d17744"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/62142e3ef3459227513af02d3c50134eb24e53f5": {
+      "sha256": "7a7dbd855675f358b0a15b9c856f7df82b440594bd17054dea3bec12628c3997",
+      "blob": "62142e3ef3459227513af02d3c50134eb24e53f5"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/629cb69cb9b80e0a747cb20296b7f29f02628fba": {
+      "sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+      "blob": "629cb69cb9b80e0a747cb20296b7f29f02628fba"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/63b3f04d8fc8a0159a9be3d2ff7069949a2954b4": {
+      "sha256": "3198df874fe72b180fc995a8038a536e976d4538e91f126585221102869c8540",
+      "blob": "63b3f04d8fc8a0159a9be3d2ff7069949a2954b4"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6536d702043f637aa7ff2dc666499b37c867abcc": {
+      "sha256": "747dc860a2c571210ea71cab9629dccac17d7ea4c8829ce3a94818fc23d04949",
+      "blob": "6536d702043f637aa7ff2dc666499b37c867abcc"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6802b7c6fdab9553f3ef7ac17c54863cbb9c413d": {
+      "sha256": "3b657f6bc332ee4b1bb2722cbbc7a5972c205db9c769868e6d9f7837b687ae98",
+      "blob": "6802b7c6fdab9553f3ef7ac17c54863cbb9c413d"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6812b259f96f4aa8833e855d6f72cd02a2534470": {
+      "sha256": "c26a6f488521b7d138321a5ad23ff42905adec2197c5011d454ae6693c4b9b7e",
+      "blob": "6812b259f96f4aa8833e855d6f72cd02a2534470"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6825dcce2b27728a9c786f47c457891054e7f332": {
+      "sha256": "52e6fe20cd162921322e18e794621499674c965cac7260ab2813fbefc0d25750",
+      "blob": "6825dcce2b27728a9c786f47c457891054e7f332"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6888957c7ff0bff6d73e5c4e17236009152b601b": {
+      "sha256": "602cd4f5342deb44f064001e1fbc4d8902194d8a4929473e65e295ce10c1eafd",
+      "blob": "6888957c7ff0bff6d73e5c4e17236009152b601b"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6928dd48a4f1180c9c9bb0a90bbde8f46c664488": {
+      "sha256": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b",
+      "blob": "6928dd48a4f1180c9c9bb0a90bbde8f46c664488"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6a58331ff33fc0bcf9a4f61965e4b87ccef5d6da": {
+      "sha256": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3",
+      "blob": "6a58331ff33fc0bcf9a4f61965e4b87ccef5d6da"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6a5991a223f8e3b8e91bf78ae0e7d2db25bfc09e": {
+      "sha256": "5b6e1b1a98eb09ce4b347394a83a51a1264bc1d7749a7810ab6105c17c147e43",
+      "blob": "6a5991a223f8e3b8e91bf78ae0e7d2db25bfc09e"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6bcca990308cacc2ec32c3c7a8547089cb8bc133": {
+      "sha256": "cbeb0a7d080d419d8bfab901f73fa0e93d09bac63e4a3d462b4112033c5c918c",
+      "blob": "6bcca990308cacc2ec32c3c7a8547089cb8bc133"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6e4cf833d410d2296521adf074286a2c43b3a6e9": {
+      "sha256": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+      "blob": "6e4cf833d410d2296521adf074286a2c43b3a6e9"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6e74c19b5aaf757c2a6de490b162120d246bd793": {
+      "sha256": "55d06b1a13f21a6e235571b4547320859da2a5194617d2247d3a5c1c8c80ef9b",
+      "blob": "6e74c19b5aaf757c2a6de490b162120d246bd793"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6f9a1cbd439b2dffd11c13d8c8ef3194041f9ebb": {
+      "sha256": "781823cf744be93de73f5e86e4e4cc988e0e7fe19c9c88a264b6f58169c07b0e",
+      "blob": "6f9a1cbd439b2dffd11c13d8c8ef3194041f9ebb"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/7160fbaaec2519494541cc966bd6aed7d9bd4e4b": {
+      "sha256": "9da9a9b4fe10611942b7b2c2bf8213229e9681faa9d219f04bd03f648cd03d66",
+      "blob": "7160fbaaec2519494541cc966bd6aed7d9bd4e4b"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/7298796a595ed344f061b9efb9b369943837a675": {
+      "sha256": "4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a",
+      "blob": "7298796a595ed344f061b9efb9b369943837a675"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/784ce0ef4198292e4b6201909880a17a9582e963": {
+      "sha256": "05ec3b4f04f3d8c0fffe20086a974eecbadfed995bf4f03b850483f84807febe",
+      "blob": "784ce0ef4198292e4b6201909880a17a9582e963"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/7defc370317e7baa3c1e7dcef4d7a18478aa9852": {
+      "sha256": "314b7af4d25dbba9038ced26291f01924352e9500bb4fe994fe2902b00edc098",
+      "blob": "7defc370317e7baa3c1e7dcef4d7a18478aa9852"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/7e9aa844b665d3e1d06334ddb2c4e2bd632228b7": {
+      "sha256": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+      "blob": "7e9aa844b665d3e1d06334ddb2c4e2bd632228b7"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/7f07c00dba3e5f89b4c2bea4b34e74bb43a117d0": {
+      "sha256": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+      "blob": "7f07c00dba3e5f89b4c2bea4b34e74bb43a117d0"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/8157b3f68cf5a30ab5591ca3e6a4af0c3133b285": {
+      "sha256": "30f720926d56841a753bf686cf9bc06b3e95978dd7829bb79215684a62165e40",
+      "blob": "8157b3f68cf5a30ab5591ca3e6a4af0c3133b285"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/81767d3a60d792b5b5d8d2c8ebc1969def4677a9": {
+      "sha256": "6d2ef241bf243405a31867eea3e3491e4c254bf1afb43a6e57ce87c58a04e6f1",
+      "blob": "81767d3a60d792b5b5d8d2c8ebc1969def4677a9"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/82f84bb9a5e9458dff1691bb8b3f6cef0644bb65": {
+      "sha256": "c98229820459939d6e48296984c53869070ee82762a345cfa903fa38c977122c",
+      "blob": "82f84bb9a5e9458dff1691bb8b3f6cef0644bb65"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/8511a1b04c74241f310186860fa0040142204964": {
+      "sha256": "3179f81553c6d5f16dca06f83984195ef137cba46417dda5981de0e70a8afd5e",
+      "blob": "8511a1b04c74241f310186860fa0040142204964"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/85397bad07b4e85692e077facabbe919977b352f": {
+      "sha256": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+      "blob": "85397bad07b4e85692e077facabbe919977b352f"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/85b4d03ebf9b18798da754f83b14b6e326244821": {
+      "sha256": "ea6f38f8b768dafcb937921a15c56c82d9e94df607640180aba3d303f73a627d",
+      "blob": "85b4d03ebf9b18798da754f83b14b6e326244821"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/8654b61da61f6e0155b9a626140688a0fa532684": {
+      "sha256": "8bad9b409f9e5448c628be4c228cc30bead6a58074defc724fbe8b63f8fea8e0",
+      "blob": "8654b61da61f6e0155b9a626140688a0fa532684"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/8692942aad43ca3ac661bf0d1998f6cab6dd68c0": {
+      "sha256": "2547ec6c698f836efc5a29854ef214456b0df88ed60c38b8719fefec88c23255",
+      "blob": "8692942aad43ca3ac661bf0d1998f6cab6dd68c0"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/8a991399d0d4ebc9abd2fb30bc99451f1664354c": {
+      "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
+      "blob": "8a991399d0d4ebc9abd2fb30bc99451f1664354c"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/8b3d7997d8fd6f20bd0ac31269e64b1e3fc732d3": {
+      "sha256": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69",
+      "blob": "8b3d7997d8fd6f20bd0ac31269e64b1e3fc732d3"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/8d0a65e4941252d84740f431e6925a06bf9463b3": {
+      "sha256": "3c4143c243836d278bbe209aea915830d597122a7a76b466880258c70d9e8c9b",
+      "blob": "8d0a65e4941252d84740f431e6925a06bf9463b3"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/8e274a4b32db86c3add8e0c5011246b866cabc57": {
+      "sha256": "b84605a9f0506b387e3d5de8540c7028242f0e1ed8495e97b308e8b7768d885e",
+      "blob": "8e274a4b32db86c3add8e0c5011246b866cabc57"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/9354a54806bccc1c79d579aaabf413013ebb1de0": {
+      "sha256": "3c1051b5c69d3482c14105e7b09a901b1be63b7ba5cfae460272b463081870a7",
+      "blob": "9354a54806bccc1c79d579aaabf413013ebb1de0"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/95d20c503d97663d72850474b55eb56918321168": {
+      "sha256": "e9945d7c6374972798ac9e069a1b6f5cfe2ff8ddbe5618bd2b0fbbca9ff446b1",
+      "blob": "95d20c503d97663d72850474b55eb56918321168"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/9654ced9bfb17172f66f5351b5d1bab254562577": {
+      "sha256": "d42e416d15e227c61597bac6db96536105017084494d6714c95e50fe78bedaed",
+      "blob": "9654ced9bfb17172f66f5351b5d1bab254562577"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/9753fe17f67389f4d03bbf55b5c12d0af2f43aac": {
+      "sha256": "05cb2f6083cf6c4307c04284632e991b7fd7378cbd2a4eb08a52d5e3c7ae6b99",
+      "blob": "9753fe17f67389f4d03bbf55b5c12d0af2f43aac"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/97eac3a0928d73db14ce58c2342b41ed5b0fc3bd": {
+      "sha256": "b13c6129238619d54187c2169831b47c219ffa4a7fd4ff084dad4802a0a10ac8",
+      "blob": "97eac3a0928d73db14ce58c2342b41ed5b0fc3bd"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/99b595ec21cf29b2347348d1cb0fc0e4fcc1b438": {
+      "sha256": "ab927f3b088b8e355e2f55dc9b1841e23fe03b8866b29875ac0ac89d8f8a95d1",
+      "blob": "99b595ec21cf29b2347348d1cb0fc0e4fcc1b438"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/9c0cddc040c89313b604e7f32c8d7edef58dcf29": {
+      "sha256": "edf6e5df91f11896b35b242c51f53bc191330e0fefc55d3cd239a801016de912",
+      "blob": "9c0cddc040c89313b604e7f32c8d7edef58dcf29"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/9c50fd7351d270f450b5a021e618c3dadc0dd5c0": {
+      "sha256": "bacf6ead9b800668e615b68585fe6ee7af4106e472de69fd2afb46a52a23ef74",
+      "blob": "9c50fd7351d270f450b5a021e618c3dadc0dd5c0"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/aa4ab2a26da22c713686ac0038270f88d6ba99c1": {
+      "sha256": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+      "blob": "aa4ab2a26da22c713686ac0038270f88d6ba99c1"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/aa54d0b83f46216faa39f8098cc84bbeffe95474": {
+      "sha256": "963989762943c2f1c022393d34bc69a31eece3d01b07933998b6f2646b2e2b5b",
+      "blob": "aa54d0b83f46216faa39f8098cc84bbeffe95474"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/ab9a192961ffcbbf284ca20ce085d199bcd17d4a": {
+      "sha256": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+      "blob": "ab9a192961ffcbbf284ca20ce085d199bcd17d4a"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/ac21478c0a61774283a83daadb94fb6fff765548": {
+      "sha256": "11ada87e561421ff563e234536d085fe4b44bce04024638f6f7adb725cb3b5c4",
+      "blob": "ac21478c0a61774283a83daadb94fb6fff765548"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/af7f57394c40c32a3a8f6651002dee311947b714": {
+      "sha256": "4ef60441d31d62b1fc61c9b5e09ff3bc8f7f32d1b68bc3c548834431d24302f6",
+      "blob": "af7f57394c40c32a3a8f6651002dee311947b714"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/b077f2f556eba501b5cafcce5085907c10f38e69": {
+      "sha256": "97176997001b6f3e5588e840c7148b3d3076e47c43ee99233929141fb9e55bb8",
+      "blob": "b077f2f556eba501b5cafcce5085907c10f38e69"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/b2645e3f2f48775d36cd580a56a16a762060b7ae": {
+      "sha256": "81e16e6eab06ade811d53f3149a81427e60aa91cfa2bfd1f71c1a2fd7d899618",
+      "blob": "b2645e3f2f48775d36cd580a56a16a762060b7ae"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/b67d07f0dc0b4fa36a7d46b028e114a668a364b3": {
+      "sha256": "63241ec60d7dddc2226378f8708551736de5db5311a94706bfe35a4d341f2be0",
+      "blob": "b67d07f0dc0b4fa36a7d46b028e114a668a364b3"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/b812a139544863decdba42b728778bc16863abb7": {
+      "sha256": "e1c8cb6c29f62866d4b088f204494a590e23e7218c2ecb811a1147ab18aa22e8",
+      "blob": "b812a139544863decdba42b728778bc16863abb7"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/bd445e4ed6fd212f289b0f2740d0d600507bbe0f": {
+      "sha256": "f25441ace48d2b850aa6ac5b03601d4e71de4821775ee21c7dc6dc8414169fbd",
+      "blob": "bd445e4ed6fd212f289b0f2740d0d600507bbe0f"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/c7506bd703cdfda066b604a97c669cea81f2589b": {
+      "sha256": "0125b15b655d036e11006e1db6c34a67a98873bc935a066dc7620c196736b843",
+      "blob": "c7506bd703cdfda066b604a97c669cea81f2589b"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/ca4324c74dc8ac4cf679c164ea34519eaf961a12": {
+      "sha256": "a773ef431321a8477d332f1f04295ddf18b960cc27c0637153561496cb87fa17",
+      "blob": "ca4324c74dc8ac4cf679c164ea34519eaf961a12"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/cf96bbf1e95a0a8f413da9eb90d47df5c3574206": {
+      "sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
+      "blob": "cf96bbf1e95a0a8f413da9eb90d47df5c3574206"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/d331d1ef704e2c935925da8e13fbe425a88569e8": {
+      "sha256": "ff9df187cb6817a4bd2a19cfa2fd7714be3b4efb6733c8c882c1c3f41eb8bd09",
+      "blob": "d331d1ef704e2c935925da8e13fbe425a88569e8"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/d4f7202ebfc72704ea205e5cfa78d159d3dee5c0": {
+      "sha256": "fc15560d81fb295119aedc241a355968d9c01fe66c569267c692d6a8724ac104",
+      "blob": "d4f7202ebfc72704ea205e5cfa78d159d3dee5c0"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/d826b317c10584cf5bfc4b4cf318f485d4810567": {
+      "sha256": "fcef8f6f965d1649741acc19302c4cdf4cb48286f9f969ff5d2ad250320f8c06",
+      "blob": "d826b317c10584cf5bfc4b4cf318f485d4810567"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/d913c3c7f53884b0d61b8c62a587fe11ff69c552": {
+      "sha256": "1851b00670be98cf4a5f22536ee1f95fd73c7066f5693d4209f43aa439b89ae2",
+      "blob": "d913c3c7f53884b0d61b8c62a587fe11ff69c552"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/dd3cb8138d1136efef4947d639143268847547dc": {
+      "sha256": "44b1b7439b7162c6b1815bea3ba4049931b9e01cea464ce4e98af2992a8fe19c",
+      "blob": "dd3cb8138d1136efef4947d639143268847547dc"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/de2d33ef647fc3e0acaf8acfc10e56d3b858afb0": {
+      "sha256": "d55c408ad59e508dfb02e2e5790d1a92250b049b0d05c6eb7ca1526ef7ff1751",
+      "blob": "de2d33ef647fc3e0acaf8acfc10e56d3b858afb0"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/dfb84e402861d57f84a9a968ebb98ba59bab4845": {
+      "sha256": "f57df7fb23fa2be384cd174162490a1b38a8bee5c300547822e42ee8d6a9ce7b",
+      "blob": "dfb84e402861d57f84a9a968ebb98ba59bab4845"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/e1566f84c2245a70c016fb67d178fe6a73d6d972": {
+      "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44",
+      "blob": "e1566f84c2245a70c016fb67d178fe6a73d6d972"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/e82d7f676dd1aa5da70259dcbe6a34ee101b893b": {
+      "sha256": "59d4af0ceb728bcd769df13dda8dd8e8f7ab3651bbd438ae0caf8fb880f96d2c",
+      "blob": "e82d7f676dd1aa5da70259dcbe6a34ee101b893b"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/ea8e3a3102e1eab0cc7c06192d6fa67947ba5b15": {
+      "sha256": "6808c57bcc4be599900980594e41c0cd1bb125e29e113a3b9b47d01a73b87a25",
+      "blob": "ea8e3a3102e1eab0cc7c06192d6fa67947ba5b15"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/edd4df6c16cf7537e88f0e328fff21c97f472bb5": {
+      "sha256": "cafd8eb1bb2bb13e2c066f0ffd3043c1b97286ce401bcee26eb29454f0eb4970",
+      "blob": "edd4df6c16cf7537e88f0e328fff21c97f472bb5"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/ee3b97b2e211e903c8c669a6401e26265499a57c": {
+      "sha256": "d4cb1fe7ba27dcf534d37e413d12dc50531ce17f2ca097a6c8b632644c260027",
+      "blob": "ee3b97b2e211e903c8c669a6401e26265499a57c"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/f01d3be864f682584d50eede8b3abe6671bb4719": {
+      "sha256": "56fde9133eb35f4c5ad8c38829904737771242d7c0188b55b7c03b4d6eb9b535",
+      "blob": "f01d3be864f682584d50eede8b3abe6671bb4719"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/f0ca2cc21dd14c681e7d8cbde77394522473f224": {
+      "sha256": "a9786cf68a9c669e7e7fe310a00ab9912aa404689651682ccfe3045a06e357f1",
+      "blob": "f0ca2cc21dd14c681e7d8cbde77394522473f224"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/f284f9ec776fabb463e894130db93acc8ce29fd3": {
+      "sha256": "5d49d85ddbc4daddfc0b24737dc569eaa9f32a050f5fccf48f048fe0fdd74b40",
+      "blob": "f284f9ec776fabb463e894130db93acc8ce29fd3"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/f8c35b6d4435a62efd08457de8ee768ae60cb37e": {
+      "sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195",
+      "blob": "f8c35b6d4435a62efd08457de8ee768ae60cb37e"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/fc01b779ab2994e816bed6059c1f701ad45a7a25": {
+      "sha256": "3b0695ef261e6704b071e7efe593d8c467d43d77ceb9b0fc1c1f5078dd76a3c2",
+      "blob": "fc01b779ab2994e816bed6059c1f701ad45a7a25"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/ff72b30cca72069edf8b046ebba3292c54ef9754": {
+      "sha256": "07a2c6fcb9ba91d1f95bba58786301335e0e799e2085a60a41c89e03157cb29e",
+      "blob": "ff72b30cca72069edf8b046ebba3292c54ef9754"
+    },
+    ".claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/ffbad2078dfe97fa7959fe6c0d0af68c8cdd79ef": {
+      "sha256": "e64e84edb6f3571281525ead288e8cabf0581bea01dfc3c003b6dc4c3439db0d",
+      "blob": "ffbad2078dfe97fa7959fe6c0d0af68c8cdd79ef"
+    },
+    "docs/RECORD_LAW_EXACT_DOMAIN_AND_CHANNEL_BRIDGE_6275_BOUNDED_THEOREM_NOTE_2026-09-09.md": {
+      "sha256": "ccf6f8215c5f82898a31d0972d878a7f00ddecef0724fe50ca713ba492242006",
+      "blob": "492af747768acb8642f043ad1dd6c5daa6507f6f"
+    },
+    "docs/SIGNED_RECORD_FINITE_REFINEMENT_AND_CONDITIONAL_SOURCE_6266_BOUNDED_THEOREM_NOTE_2026-09-09.md": {
+      "sha256": "4923f614fe704b87f54d1549f3f77900ced51d47cb3f2350bb012347741b4aa0",
+      "blob": "8ccc5236d640c1da16cfa509d3b6934afa3fb220"
+    },
+    "logs/runner-cache/law_tournament_6266_6275_independent_check_2026_09_09.txt": {
+      "sha256": "08d694786b1ae30ec8844ff7580ae79827957e1356612fe87cf52e0d0be8f316",
+      "blob": "f954a2ab0c45f162f54119e6d333dbce7ef8253e"
+    },
+    "logs/runner-cache/law_tournament_6266_finite_2026_09_09.txt": {
+      "sha256": "3a7f8ac0f87d7d9912a976e4159e26efa4f7362140d85b6a79a7716b0d581d03",
+      "blob": "772dfc41d92c5f8f637702a3be97a97639c85a45"
+    },
+    "logs/runner-cache/law_tournament_6275_finite_2026_09_09.txt": {
+      "sha256": "0079966b9b616cc711bd4639b0e3e887f06aa47312c0199ebfb0ebc9aa350108",
+      "blob": "bb297ab6c52f549ea4a4771819ba7156dc0e6375"
+    },
+    "scripts/law_tournament_6266_6275_independent_check_2026_09_09.py": {
+      "sha256": "6feaefeae301068fe1c62ecb76a41bdd0e66b397ec67ebffdcfa28a092ad09ed",
+      "blob": "5cfe2759b455bc95e8edcab0b0e90b18788dc172"
+    },
+    "scripts/law_tournament_6266_6275_model.py": {
+      "sha256": "3e5f858d6e0c37bdb57798fca398883330017b17c26498208a357939d8233077",
+      "blob": "1bf1966314f2cf55c12a862c0a27ec30664d57ed"
+    },
+    "scripts/law_tournament_6266_finite_2026_09_09.py": {
+      "sha256": "84f3fe0c714fd38d739d5965d2666e69017dcdea67602be2f687fce9f3532a76",
+      "blob": "610c01822527cca3f45b7f37c9956ebd0058f9a8"
+    },
+    "scripts/law_tournament_6275_finite_2026_09_09.py": {
+      "sha256": "6ecb1e5d95c566414eedfd4c3edcfa0f49b2710a7b22c06301a48f4f8465b10a",
+      "blob": "1eee38c709c1780b828e744128678187791d876c"
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "sha256": "cd65c786328054e714ddd5b7bdbb75369b5db57ac3de9ee57929e21e7951c9b2",
+      "blob": "02f4668ac93a61d5000b764d18aec374c9d4592c"
+    }
+  },
+  "science_review_reports": {
+    "backlog-law-tournament-6266-6275-root-verification/CURRENT_MAIN_INTEGRATION_BINDING.json": "53e6be886491a1b315036d655b68d2aba32810d911cbcaf149dd5ad541ec0068",
+    "backlog-law-tournament-6266-6275-fixes/FINAL_RECEIPT.json": "eb4dbd49c61ae19299e8b57d83bbe5f54f93ac27e670acb0b61b350933df81f4",
+    "backlog-law-tournament-6266-6275-fixes/REPORT.md": "5a46f84505f79f8357a0a60aeddeb4c2ab48d30d7415a0bd1398978ad9e8a260",
+    "backlog-law-tournament-6266-6275-review/confirmation/FINAL_RECEIPT.json": "ca8f5289b52d7ebcfd2fbe62da8f0aaeb705bda343cbffe2e940f24991703543",
+    "backlog-law-tournament-6266-6275-review/confirmation/REPORT.md": "87fff504c6858bf225d44e637b44c55e7516c852a55c1f1425afd5b27b256de6",
+    "backlog-law-tournament-6266-6275-root-verification/ORIGINAL_SOURCE_VERIFICATION.json": "53218f5a30e546ada07cc001ecfa5d3d4da28d65452f4c3bc6e0fef196d45726",
+    "backlog-law-tournament-6266-6275-root-verification/EARLY_SOURCE_READ.json": "044518fe2281f3d0ad2ee0796cfa182a1054c29c1f184aee38b00b72d5768672",
+    "backlog-law-tournament-6266-6275-root-verification/FINAL_AUTHOR_DELTA_VERIFICATION.json": "2db274aef948657b218e662b1306c90992c25fce697974b9c2a8eece62706392"
+  },
+  "full_validation_runs": 1,
+  "integration_retries": 0,
+  "audit_requested_or_invoked": false,
+  "units": [
+    "law_tournament_6266_6275"
+  ]
+}
