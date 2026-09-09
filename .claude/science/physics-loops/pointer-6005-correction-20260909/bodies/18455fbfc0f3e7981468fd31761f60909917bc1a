@@ -1,0 +1,224 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle932_persistence_razor_2026_07_28.py
+cycle: 932  block: toe-time-blockM12-20260802  head: eb84b40272
+
+-- THE FROZEN DEFINITIONS, quoted from pinned bytes --
+  sample grid:  T_EXEC = [round(0.1 * i, 10) for i in range(13)] # Jt = 0.0 .. 1.2, 13 points
+                Jt = 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2
+  run rule:     persistence flag requires three consecutive certification samples
+                "persists": bool(run >= PERSIST_N) with run counted as the number of CONSECUTIVE samples from the first sample with R_ind >= 2, on the grid T_EXEC
+  persist_n:    PERSIST_N = 3 # CHECK-03 persistence
+  deadline:     DEADLINE_JT = 1.0   (memo: The headline onset deadline remains `Jt <= 1`)
+  indep gate:   INDEP_MAX = 0.02 # condition 4: C_ab <= 0.02 bit   (memo: every pair has `C_ab <= 0.02 bit`)
+  C_ab:         `C_ab = sum_z p_z [S(rho_Fa^z)+S(rho_Fb^z)-S(rho_FaFb^z)]`
+
+-- RESTRICTION GATES (all before any new number) --
+  pins verified: 25
+  21/21 frozen constants byte-verified; quote-identical to the 917, 919,
+  921, 926, 927, 929 AND 931 receipts (SEVEN-way): True
+  statistic definition from memo bytes: `C_ab = sum_z p_z [S(rho_Fa^z)+S(rho_Fb^z)-S(rho_FaFb^z)]`
+  route P = 33 functions executed VERBATIM from the pinned 919 bytes
+  partition rule reproduces the memo's six cube lists: True
+  919 ladder: 30 cells / 390 rows reproduced, max abs deviation 0.0
+  919 persistence profiles: 71 samples reproduced, max abs deviation 0.0
+  919 C_ab certification-window table: 24 values, max abs deviation 0.0
+  926 persistence + deadline axes: 288 verdicts reproduced exactly
+  926 gate-segment ladder: 12 segments reproduced (YES sets, thresholds and clean-cut flags)
+  926 C_ab-gate band for the threshold [0.0191673144510688, 0.0207834634227803): boundary values attained exactly, threshold 5 inside
+  927 per-degree pair-tax minima (stars, degrees 3,4,5,6,8): 5 rows, max abs deviation 0.0
+  931 pair-complement identity C_ab = 2 s(1,t) - s(2,t) on the certified star cells: max dev 4.02e-15
+  route N (Kronecker + SVD + branch-first) vs route P (pinned Chebyshev): max abs deviation 9.83e-14 over 7 geometries x 3 fields
+  gate runtime: 3.60 s
+
+-- PRE-REGISTRATION (candidates + discriminants, before any curve) --
+  prereg_id:  cycle932-persistence-razor-prereg-1
+  prereg sha256: 2ff839868a41005272b70b4e084405f0e9723195b3145d3834ecbb1f23eb91ea
+
+-- Q1: the continuous window behind the discrete flag (DIAGNOSTIC-GRADE) --
+     resolution: dense scan dt = 0.0025 (n <= 11) / 0.0050 (n > 11); every EDGE is located by bisection on the frozen predicate to 1e-12, so no edge depends on the scan step
+
+  cell  lam    t_open    t_close   W        open gate      close gate     W/0.1  run   verdict
+  S2    0.05   0.598981  0.966298  0.367317 content_chi    content_chi    3.67   4     YES
+  S2    0.075  0.601251  0.784582  0.183331 content_chi    independence   1.83   1     NO
+  S2    0.1    0.604359  0.685588  0.081229 content_chi    independence   0.81   0     NO
+  S3    0.05   0.599440  0.966864  0.367423 content_chi    content_chi    3.67   4     YES
+  S3    0.075  0.602213  0.959877  0.357664 content_chi    content_chi    3.58   3     YES
+  S3    0.1    0.606006  0.823508  0.217502 content_chi    independence   2.18   2     NO
+  S4    0.05   0.599568  0.967180  0.367612 content_chi    content_chi    3.68   4     YES
+  S4    0.075  0.602471  0.960510  0.358039 content_chi    content_chi    3.58   3     YES
+  S4    0.1    0.606430  0.885849  0.279419 content_chi    independence   2.79   2     NO
+  S5    0.05   0.599575  0.967587  0.368012 content_chi    content_chi    3.68   4     YES
+  S5    0.075  0.602477  0.961324  0.358847 content_chi    content_chi    3.59   3     YES
+  S5    0.1    0.606421  0.933023  0.326602 content_chi    independence   3.27   3     YES
+  S6    0.05   0.599537  0.967932  0.368395 content_chi    content_chi    3.68   4     YES
+  S6    0.075  0.602388  0.962022  0.359633 content_chi    content_chi    3.60   3     YES
+  S6    0.1    0.606255  0.954555  0.348300 content_chi    content_chi    3.48   3     YES
+  S7    0.05   0.599482  0.968236  0.368755 content_chi    content_chi    3.69   4     YES
+  S7    0.075  0.602266  0.962641  0.360375 content_chi    content_chi    3.60   3     YES
+  S7    0.1    0.606033  0.955593  0.349559 content_chi    content_chi    3.50   3     YES
+  S8    0.05   0.599421  0.968502  0.369080 content_chi    content_chi    3.69   4     YES
+  S8    0.075  0.602135  0.963182  0.361048 content_chi    content_chi    3.61   3     YES
+  S8    0.1    0.605798  0.956503  0.350705 content_chi    content_chi    3.51   3     YES
+  G3a   0.05   0.599625  0.964763  0.365139 content_chi    content_chi    3.65   4     YES
+  G3a   0.075  0.602652  0.955170  0.352519 content_chi    content_chi    3.53   3     YES
+  G3a   0.1    0.606850  0.822706  0.215857 content_chi    independence   2.16   2     NO
+  G3b   0.05   0.599768  0.965203  0.365435 content_chi    content_chi    3.65   4     YES
+  G3b   0.075  0.602947  0.956070  0.353122 content_chi    content_chi    3.53   3     YES
+  G3b   0.1    0.607347  0.884952  0.277605 content_chi    independence   2.78   2     NO
+  H2    0.05   0.599786  0.965678  0.365892 content_chi    content_chi    3.66   4     YES
+  H2    0.075  0.602979  0.957019  0.354040 content_chi    content_chi    3.54   3     YES
+  H2    0.1    0.607383  0.930579  0.323196 content_chi    independence   3.23   3     YES
+  H3    0.05   0.599575  0.967574  0.367999 content_chi    content_chi    3.68   4     YES
+  H3    0.075  0.602478  0.961264  0.358786 content_chi    content_chi    3.59   3     YES
+  H3    0.1    0.606425  0.930662  0.324237 content_chi    independence   3.24   3     YES
+  G1    0.05   0.599057  0.964746  0.365689 content_chi    content_chi    3.66   4     YES
+  G1    0.075  0.601430  0.784589  0.183159 content_chi    independence   1.83   1     NO
+  G1    0.1    0.604700  0.685593  0.080893 content_chi    independence   0.81   0     NO
+  G2    0.05   0.599537  0.967932  0.368395 content_chi    content_chi    3.68   4     YES
+  G2    0.075  0.602388  0.962022  0.359633 content_chi    content_chi    3.60   3     YES
+  G2    0.1    0.606255  0.954555  0.348300 content_chi    content_chi    3.48   3     YES
+  G4    0.05   0.599694  0.965294  0.365599 content_chi    content_chi    3.66   4     YES
+  G4    0.075  0.602773  0.922124  0.319350 content_chi    independence   3.19   3     YES
+  G4    0.1    0.607015  0.886621  0.279607 content_chi    independence   2.80   2     NO
+  G5    0.05   0.599537  0.967915  0.368378 content_chi    content_chi    3.68   4     YES
+  G5    0.075  0.602389  0.961947  0.359559 content_chi    content_chi    3.60   3     YES
+  G5    0.1    0.606256  0.954345  0.348090 content_chi    content_chi    3.48   3     YES
+  H1    0.05   0.599575  0.967587  0.368012 content_chi    content_chi    3.68   4     YES
+  H1    0.075  0.602477  0.961324  0.358847 content_chi    content_chi    3.59   3     YES
+  H1    0.1    0.606421  0.933023  0.326602 content_chi    independence   3.27   3     YES
+
+  window-edge prediction vs the frozen sample-grid verdict+run: 48/48 cells agree, 0 mismatches
+  monotonicity census over 33 curve cells:
+    C_ab strictly rising on [0.4,1.3]: 33/33
+    exactly ONE contiguous certifiable block: 33/33
+    binding-pair identity constant (or the eligible pairs degenerate): 30/33
+    cells with genuinely non-degenerate eligible pairs: 3/33
+    sampling bracket floor(W/h) <= run <= floor(W/h)+1 holds on 48/48 cells
+
+  the 931 lens -- s(1,t), s(2,t) and the SHAPE question (lambda = 0.10):
+    C_ab(d,t) strictly DECREASING in d at every probe time: True
+    normalised profiles C(d,t)/C(d,0.80) collapse, d = 3..8: max spread 0.0255
+    same including d = 2: max spread 0.1759
+    log-space rank-1 fraction d>=3: 0.999985 ; d>=2: 0.999768
+    => between d = 4 and d = 5 the s(k,t) SHAPE is the same to 1.62%; only the AMPLITUDE moves
+
+-- Q2: the candidates, discriminated on the pre-registered computations --
+  (a) WINDOW WIDTH: W(d) at lambda=0.10 = d2:0.0812, d3:0.2175, d4:0.2794, d5:0.3266, d6:0.3483, d7:0.3496, d8:0.3507
+      monotone increasing in d: True ; smallest d with W >= 0.30: 5 ; frozen threshold: 5
+      -> SUPPORTED (width is the carrier and the 3x-spacing crossing coincides with the frozen threshold)
+  (b) OSCILLATION/TROUGH: multi-block cells 0, non-monotone cells 0, max dC/dt sign changes 0
+      -> REFUTED -- C_ab is strictly monotone rising through the whole window on every curve cell and there is exactly one contiguous certifiable block everywhere; there is no trough to swallow a sample
+  (c) EARLY CLOSURE: t_open spread across d = 2.07e-03 (essentially d-independent); t_close = d2:0.6856(indep), d3:0.8235(indep), d4:0.8858(indep), d5:0.9330(indep), d6:0.9546(conte), d7:0.9556(conte), d8:0.9565(conte)
+      -> SUPPORTED AND SHARPENED -- the window closes EARLY at low d, the closure is monotone (not oscillatory), and the CLIP IDENTITY switches: the independence gate closes it for d <= 5 and the content gate closes it for d >= 6, at which point t_close saturates
+  (d) CEILING CHURN: 3 curve cells show churn; cells whose content-pass set changes during the certified run: G4@0.05, G5@0.05, G5@0.1
+      -> REAL BUT NOT THE RAZOR -- churn happens exactly where the arms are NOT pairwise isomorphic (H3, and among the non-curve anchors G4 and G5): there the binding pair moves and the content-pass set moves with it.  On every star and every isomorphic-arm tree the eligible pairs are exactly degenerate (spread < 1e-12), so 'which pair binds' is not even a well-posed question.  Decisively: the certification predicate is R_ind >= 2, and the window-edge prediction reproduces every frozen run and verdict on all 48 anchor cells and all 29 sealed cells WITHOUT any reference to pair identity -- so churn cannot be the razor
+  (e) [NOT a supervisor candidate -- followed under the minimal-premise rule]
+      GRID PHASE: with h = 0.1 and persist_n = 3, W >= 0.3 certifies at EVERY phase and W < 0.2 fails at every phase; in between the verdict is a phase fact.
+      class by degree at lambda=0.10: d2:robust-NO, d3:phase-dependent, d4:phase-dependent, d5:robust-YES, d6:robust-YES, d7:robust-YES, d8:robust-YES
+      phase-invariant content: degrees <= 2 fail at every phase; degrees >= 5 certify at every phase; degrees [3, 4] are decided by the phase.
+
+-- SEAL (pre-registered BEFORE the frozen machinery touches these cells) --
+  seal_id:     cycle932-persistence-razor-seal-1
+  seal sha256: 84577358c9429b9243f704fd05049615b97dbdfb35c14d8b70d635e04181e32d
+  sealed cells: 29 (3 new fields x 7 stars, 2 new degrees, 4 tree anchors at the 919 extension field); frozen-machinery evaluations of them at seal time: 0
+  SEAL RESULT: 29/29 sealed cells verified (run AND verdict)
+  grid-offset map (DIAGNOSTIC-GRADE, NOT a re-grading of the frozen verdicts):
+    offset -0.0500 Jt -> runs 1233444  threshold 4   [full-machinery check: threshold 4]
+    offset -0.0300 Jt -> runs 1233333  threshold 4
+    offset -0.0200 Jt -> runs 1233333  threshold 4   [full-machinery check: threshold 4]
+    offset -0.0100 Jt -> runs 0223333  threshold 5
+    offset -0.0050 Jt -> runs 0223333  threshold 5
+    offset +0.0000 Jt -> runs 0223333  threshold 5   [full-machinery check: threshold 5]
+    offset +0.0050 Jt -> runs 1223333  threshold 5
+    offset +0.0075 Jt -> runs 1334444  threshold 3
+    offset +0.0100 Jt -> runs 1334444  threshold 3   [full-machinery check: threshold 3]
+    offset +0.0200 Jt -> runs 1334444  threshold 3
+    offset +0.0250 Jt -> runs 1234444  threshold 4
+    offset +0.0300 Jt -> runs 1234444  threshold 4
+    offset +0.0500 Jt -> runs 1233444  threshold 4   [full-machinery check: threshold 4]
+    offset +0.0700 Jt -> runs 1233333  threshold 4
+
+-- FALSIFIER TEETH (all must fire) --
+  12/12 teeth fired
+
+-- Q3: THE VERDICT --
+  MECHANISM (measured law, derived from the frozen predicate's own preimage):
+    The frozen certification predicate R_ind >= 2 holds on a SINGLE CONTIGUOUS
+    real interval [t_open, t_close] in every one of the 48 curve cells.
+    t_open is set by the CONTENT gate and is essentially degree-independent
+    (spread 2.07e-03 across degrees 2..8 at lambda = 0.10); it moves only with the
+    field.  t_close is set by whichever of two gates bites first: the
+    INDEPENDENCE gate (C_ab crossing 0.02), strongly degree-dependent through
+    927's arity dilution, or the CONTENT gate again, degree-independent.  So
+    the window WIDTH W(d, lambda) rises monotonically with degree and then
+    SATURATES at a content-limited ceiling.  The persistence flag is a
+    COUNT OF GRID POINTS INSIDE THAT INTERVAL.  Nothing about the dynamics
+    changes between degree 4 and degree 5: the normalised time profiles
+    collapse onto one curve to 2.55% (log-space rank-1 fraction 0.999985) --
+    only the AMPLITUDE moves, exactly as arity dilution says it should.
+    In 931's language: s(1,t) and s(2,t) keep their shape and lose height as
+    degree grows, so C_ab = 2s(1,t) - s(2,t) crosses the gate later, and the
+    window's right edge slides right until the content gate catches it.
+
+  (i) THE PERSISTENCE COUNT'S LOAD-BEARING STATUS (926):
+      HONESTLY SPLIT, and the split is exact.  With spacing h = 0.1, an
+      interval of width W contains at least floor(W/h) grid points at every
+      phase.  Therefore persist_n = 3 has PRINCIPLED content at the two ends
+      -- W >= 0.3 certifies at every grid phase, W < 0.2 fails at every grid
+      phase -- and NO phase-invariant content in between.  At lambda = 0.10
+      the degrees fall out as: d2 robust-NO, d3 phase-dependent, d4 phase-dependent, d5 robust-YES, d6 robust-YES, d7 robust-YES, d8 robust-YES
+      Degrees 3 and 4 are in the ambiguous band: their windows (0.2175, 0.2794)
+      are WIDER than the 0.2 span three samples need, and they fail only
+      because the window opens 0.0060 / 0.0064 AFTER the grid point at Jt = 0.6.
+      Shifting the sample grid by +0.010 in Jt -- one tenth of one spacing --
+      moves the threshold from 5 to 3.
+      And the frozen phase is NOT a typical one: over a 401-point sweep of
+      two full grid periods the threshold is 5 on 20.7% of phases, 4 on
+      61.8% and 3 on 17.5% -- the frozen grid's answer is the LEAST common
+      of the three outcomes, and the modal outcome is threshold 4.
+      SCOPE QUALIFIER, stated and not softened: the 919/926 threshold
+      'degree >= 5 certifies at lambda = 0.10' is correct AT THE FROZEN SAMPLE
+      GRID Jt = 0.0(0.1)1.2 AT PHASE 0.  Its phase-invariant content is
+      weaker and is exactly this: degrees <= 2 fail at every phase, degrees
+      >= 5 certify at every phase, and degrees 3 and 4 are decided by the
+      grid's phase rather than by the dynamics.  The frozen phase happens to
+      resolve the ambiguous band entirely to NO, which is why the frozen
+      threshold COINCIDES with the phase-invariant certifying threshold -- a
+      favourable accident, not a derivation.  This block does NOT re-grade the
+      frozen verdicts; it qualifies their scope.
+
+  (ii) IS THE d-CONJUNCT DERIVABLE FROM THE CURVE FAMILY?  YES.
+      run(geometry, lambda) = #{k : t_open <= 0.1k <= t_close} and the frozen
+      verdict is YES iff that count >= 3 and the first such k is <= 1.
+      This predicate, evaluated from the continuous edges alone, reproduces
+      the run AND the verdict on all 48 curve+anchor cells and on all 29
+      SEALED cells, including three fields never measured before, degrees 9
+      and 10, and the four tree anchors.  926's persistence axis and deadline
+      axis also come out of the same two edges: persist_n = 4 kills every
+      lambda = 0.10 cell because no window there holds four grid points, and
+      the deadline is robust over 0.7..1.2 because every event starts at the
+      first grid point after t_open and no window reaches past 0.96.
+
+  (iii) SEAL: 29/29 verified.  Predictions were built from window edges only and digested before the frozen machinery ran on any sealed cell.
+
+  WHAT REMAINS EMPIRICAL: the AMPLITUDE law C_ab(d, lambda) itself -- 927's
+  arity dilution -- and the shape of the one universal time profile.  This
+  block explains the razor GIVEN that amplitude law; it does not derive it.
+
+-- CAVEATS AND DECLARED NON-CLAIMS --
+  * The supervisor's four candidates were declared non-premises.  Candidate (b) is REFUTED and candidate (d) is REAL BUT NOT THE RAZOR; the structure that actually decides the frozen verdicts is a FIFTH one -- grid PHASE against window width -- and it is followed under the minimal-premise rule.
+  * The spec asks whether the razor is 'W crossing 3x the sample spacing'.  Both readings are reported: W >= 3h is exactly the phase-INVARIANT certifying condition (and at lambda = 0.10 its threshold is degree 5, the frozen answer), while the frozen verdict itself is decided by W AND phase, which is why degrees 3 and 4 -- whose W already exceeds the 2h that three samples span -- still fail.
+  * The grid-offset diagnostic run through the full frozen machinery has to choose a t = 0 baseline for the excess gate; the shifted-grid construction is declared in the receipt and is not the frozen protocol.
+  * Cells with n > 11 use the marching route and a 0.005 scan step (declared capped grid); their window EDGES are still bisected to 1e-12.
+  * The seal fields 0.0625, 0.0875 and 0.09375 and the degrees 9 and 10 are DECLARED NON-CLAIM extensions; only lambda in {0.05, 0.10} carries the frozen claim, and 0.075 is 919's inherited declared extension.
+  * Every window edge, width and offset number is DIAGNOSTIC-GRADE.
+  * Stars of degree 7..10 are abstract spiders; whether the lattice and the frozen labelling can realise them at degree >= 7 was answered negatively by 929 and is not revisited.
+  * The amplitude law that makes the window widen with degree is imported from 927 and is not derived here.
+  * The runtime limit 900 s is declared by the supervisor; the measured runtime is published in runtime_seconds and is deliberately excluded from the timing-free digest.
+
+runtime: 210.6 s (limit 900 s)
+timing-free digest: 36b433fb095f41148c3acce529f8b2077db6dd09d454e83ae2731cd28317175c
+receipt: outputs/persistence_razor_cycle932_receipt_2026_07_28.json
+receipt sha256: a82b93d79b8b4f5b768b94ff5376abc4f6c28cda43dde7d7d7b263c4bb1d6f14
+Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. No formation rule. Sets no audit status.
+===== runner cache v1 =====

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle934_pointer_gates_independent_check_2026_07_28.py
+runner_sha256: 5b218ccbf96690278740d24f63cda4933314ee9c7edc3d7b4708fabb7492a70e
+input_fingerprint_sha256: 1bdcbbbae9e22eb7ae029d95dff8727ade33410476423224a544be6a6079bda9
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+{"C5_actual_blocks": [{"hi": 0.9, "lo": 0.6000000000000001, "width": 0.29999999999999993}, {"hi": 2.1, "lo": 1.8, "width": 0.30000000000000004}], "abstract_two_interval_run": {"first_time": 0.2, "run": 4, "verdict": "YES"}, "counter_fault_was_rejected": true, "full_bit_rows": [{"d": 2, "field": 0.1, "full": {"C_ab": 0.02168212599398686, "H_Z": 1.0, "chi1": 0.9670278221027065, "global_flip_commutator_max": 0.0, "s1": 0.01084106299699351}, "max_difference": 1.4363510381087963e-15, "t": 0.7}, {"d": 3, "field": 0.1, "full": {"C_ab": 0.012620718014015715, "H_Z": 1.0000000000000004, "chi1": 0.9653800899868982, "global_flip_commutator_max": 0.0, "s1": 0.012620718014015639}, "max_difference": 5.4990734188464785e-15, "t": 0.7}, {"d": 3, "field": 0.0, "full": {"C_ab": 4.805139755722377e-16, "H_Z": 1.0, "chi1": 0.9790596014837317, "global_flip_commutator_max": 0.0, "s1": 3.2034265038149176e-16}, "max_difference": 1.4460930755288164e-14, "t": 0.7}, {"d": 2, "field": 2.0, "full": {"C_ab": 0.31690064048687777, "H_Z": 0.9999999999999998, "chi1": 0.03661311464783823, "global_flip_commutator_max": 0.0, "s1": 0.1584503202434389}, "max_difference": 6.661338147750939e-16, "t": 0.7}], "missing_control_results": {"commutator_ordering_ok": {"first_time": 0.2, "run": 4, "verdict": "NO"}, "drift_ok": {"first_time": 0.2, "run": 4, "verdict": "NO"}, "x_control_ok": {"first_time": 0.2, "run": 4, "verdict": "NO"}}, "periods": [{"chi_t": 0.9790596014837246, "chi_t_plus_pi_over_2": 0.9790596014837321, "difference": 7.438494264988549e-15, "field": 0.0}, {"chi_t": 0.9653800899868984, "chi_t_plus_pi_over_2": 0.9600693843305574, "difference": 0.005310705656340953, "field": 0.1}]}
+[PASS] actual_full_bit_partial_trace_agreement
+[PASS] period_exact_only_zero_field_in_control
+[PASS] actual_C5_two_blocks_detected_and_counter_fault_rejected
+[PASS] union_grid_counter_keeps_four_consecutive_samples
+[PASS] full_protocol_control_clauses_are_required
+[PASS] actual_wrong_input_rejected
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

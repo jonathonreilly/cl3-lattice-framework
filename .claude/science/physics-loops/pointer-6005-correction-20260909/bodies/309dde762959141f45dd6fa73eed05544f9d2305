@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner   : frontier_cycle934_pointer_gates_independent_check_2026_07_28.py
+cycle    : 934   block: blockM14   role: INDEPENDENT CHECKER (to refute)
+under test: scripts/frontier_cycle934_pointer_gates_2026_07_28.py  c0c85424eb70a0a0
+
+A0 reduction rebuilt by symmetrisation: closure 1.1e-16, hand-written matrix elements dev 4.4e-16
+A1 pointer-side expressions: routeX vs routeW 3.6e-14 | vs 260 pinned values 1.1e-14  [SUPPORTED]
+A2 t_open vs primary 2.3e-14 | 50-digit spread(0.10) 2.070553e-03 vs primary 2.070553e-03 (agree 1.7e-14) | flatter normalisation: lambda^2
+A3 composed table: 36 cells recomputed full-space, 1404 samples, 0 verdict / 0 run / 0 flag disagreements  [SUPPORTED]; 50-digit row agrees: True
+    50-digit edge S5@0.10: 0.606421496682635  (primary dev 7.1e-15, 932 dev 1.1e-13)
+A4 seal: digest recomputes True | never-used fields clean True | 10 cells verified full-space, 0 verdict / 0 flag mismatches  [SUPPORTED]
+A5 overreach audit: arm-chi spread 0.0e+00 | extra windows inside horizon 0 | LATER LOBES 8 (holding 0 grid points) | excess binds 0 | drift 2.8e-15 | r_ind mismatches 0
+RIVALS  chi peaks at 0.985307 (<1 bit, no saturation); pointer field moves t_open 20.7x more than the arm field
+
+TEETH  15/15 fire
+  C01_matrix_element_sensitivity                     FIRED
+  C02_site_convention_guard                          FIRED
+  C03_propagator_cross_validation                    FIRED
+  C04_planted_seal_verdict_flip                      FIRED
+  C05_planted_degree_drift_at_50_digits              FIRED
+  C06_H_Z_lemma_hunted                               FIRED
+  C07_zero_pointer_field_degree_independence         FIRED
+  C08_zero_field_closed_form_at_60_digits            FIRED
+  C09_seal_tamper_evidence                           FIRED
+  C10_grid_phase_reproduced                          FIRED
+  C11_arm_degeneracy_probe_has_teeth                 FIRED
+  C12_entropy_route_cross_check                      FIRED
+  C13_primary_timing_free_digest_recomputes          FIRED
+  C14_checker_determinism                            FIRED
+  C15_composed_table_flip_rejected                   FIRED
+
+REFUTATIONS  0
+FINDINGS  2
+  A2_order_normalisation: over the probed decade the plain lambda^2 normalisation is at least as flat as lambda^2 log(1/lambda) (drift 1.56 vs 1.84), so 'O(lambda^2) up to a log' is conservative rather than sharp.  I raised this; the primary replaced the log language with the VERIFIED BOUND spread <= 0.3150 lambda^2 and published both drift factors.  Re-checked on my own route: no violation.
+  A5bc_content_lobes_are_periodic: the certifiable set is one interval PER CONTENT LOBE, not one interval outright: 8 of the probed star cells carry a later certifiable interval near Jt ~ 2.17-2.53, which is exactly pi/2 past the first.  It holds zero frozen grid points, so no verdict changes; the primary adopted the correction as L4b.
+
+VERDICT  SUPPORTED WITH FINDINGS
+  Every load-bearing claim of the Cycle-934 primary survives attack on machinery that shares nothing with it.  The collective Hamiltonian's hand-written Dicke matrix elements were rebuilt from scratch by symmetrising full-space basis vectors and agree to 4.4e-16; the pointer-side expressions reproduce a spectrum-free sparse full-space route to 3.6e-14 and 260 pinned star values to 1.1e-14; t_open agrees to 2.3e-14 and its degree spread reproduces at FIFTY DIGITS (2.070553e-03 at lambda = 0.10 against the primary's 2.070553e-03); the composed verdict table was recomputed full-space on 36 cells and 1404 samples with zero disagreements, including one verdict row and one window edge carried end-to-end in 50-digit arithmetic; and every sealed cell verifies on the checker's own route with the never-used fields independently confirmed absent from all nine pinned receipts.  The overreach audit hunted six specific unstated assumptions and discharged all six, including a window-count scan 12.5x finer than the primary's and a revival hunt to Jt = 3.0.
+
+receipt outputs/pointer_gates_independent_check_cycle934_receipt_2026_07_28.json
+runtime 11.46 s (limit 900 s)
+timing-free digest 50ddcfe2327d577d42290003911b6cbb54ef370a9c6e0533ee96270210eac2be
+===== runner cache v1 =====

@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle932_persistence_razor_independent_check_2026_07_28.py
+cycle: 932 (independent check)  block: toe-time-blockM12-20260802  head: eb84b40272
+primary receipt sha256: a82b93d79b8b4f5b768b94ff5376abc4f6c28cda43dde7d7d7b263c4bb1d6f14
+posture: SPECIFIED TO REFUTE.  Independent machinery: scipy.sparse CSR Hamiltonian, self-written Lanczos Krylov exponential cross-checked against expm_multiply, tensordot reductions, scipy eigvalsh, brentq roots, one cell at 50 decimal digits in mpmath, reversed iteration order throughout.
+
+-- attack 0: can this machinery see the pinned facts at all? --
+  the 919 star anchors (G2 = S6, H1 = S5) at both frozen fields reproduce on this machinery: verdict and run exact, C_ab max deviation 3.28e-15
+
+-- attack (i): the resolution claim --
+  S5@0.1  open 0.606421496683 vs 0.606421496683 (d=9.5e-14)   close 0.933023280947 vs 0.933023280947 (d=1.0e-13)
+  S4@0.1  open 0.606429698938 vs 0.606429698938 (d=2.8e-13)   close 0.885848609654 vs 0.885848609654 (d=1.9e-13)
+  S3@0.1 closing edge at FIFTY DIGITS (mpmath, exact eigendecomposition, exact entropies): 0.823507781547246418815649653661
+           published (float64, bisection): 0.823507781547087    deviation 1.60e-13
+
+-- attack (vi): a hazard the primary did not test -- revivals out to Jt = 3 --
+  S6@0.1 over Jt in [0,3]: 1 certifiable block(s) [0.6063,0.9546]
+  S5@0.1 over Jt in [0,3]: 1 certifiable block(s) [0.6064,0.9330]
+  S4@0.1 over Jt in [0,3]: 1 certifiable block(s) [0.6064,0.8858]
+  S3@0.1 over Jt in [0,3]: 1 certifiable block(s) [0.6060,0.8235]
+  S2@0.1 over Jt in [0,3]: 1 certifiable block(s) [0.6044,0.6856]
+  no revival block found out to Jt = 3.0 on any degree tested; the primary's single-block claim survives a 2.3x range extension.
+
+-- attack (ii): can a rival reading fit the discriminating cells? --
+  rival A  AMPLITUDE-ONLY  C(d,t) = A(d) f(t)      rms log residual 0.006351
+  rival B  TIME-RESCALING  C(d,t) = f(t/tau(d))    rms log residual 0.131871
+      (same statistic, same cells d = 4..8, same one free constant per degree; ratio B/A = 20.8)
+  rival C  'C_ab(0.9) vs 0.02'  agrees on both frozen fields (high True, low True) but FAILS on 2 of 18 declared probe cells
+      FAILS S2@0.062     C_ab(0.9)=0.022380 -> rival says NO, truth is YES (run 3)
+      FAILS S2@0.06      C_ab(0.9)=0.021137 -> rival says NO, truth is YES (run 3)
+      and on a grid shifted by +0.010 it fails on 2 of 2 cells (it names a sample time that shifted grid does not contain)
+  rival D  'W >= 2h, no phase'  reproduces the frozen verdicts: False (it predicts YES at degrees [3, 4], which the frozen grid says NO)
+
+-- attack (iii): the width/phase law on geometries and fields the primary never built --
+  S6@0.06      deg 6  W=0.36521  robust-YES      predicted 3/YES  measured 3/YES  OK
+  S3@0.06      deg 3  W=0.36388  robust-YES      predicted 3/YES  measured 3/YES  OK
+  S5@0.0825    deg 5  W=0.35557  robust-YES      predicted 3/YES  measured 3/YES  OK
+  S4@0.0825    deg 4  W=0.35461  robust-YES      predicted 3/YES  measured 3/YES  OK
+  XASYM@0.1    deg 5  W=0.32547  robust-YES      predicted 3/YES  measured 3/YES  OK
+  XBROOM@0.1   deg 4  W=0.27928  phase-dependent predicted 2/NO  measured 2/NO  OK
+  X6L2@0.1     deg 6  W=0.34235  robust-YES      predicted 3/YES  measured 3/YES  OK
+  X5L2@0.1     deg 5  W=0.32480  robust-YES      predicted 3/YES  measured 3/YES  OK
+  X4L2@0.1     deg 4  W=0.27862  phase-dependent predicted 2/NO  measured 2/NO  OK
+  X3L2@0.1     deg 3  W=0.21679  phase-dependent predicted 2/NO  measured 2/NO  OK
+
+-- attack (iv): the seal --
+  sealed predictions recomputed from the published window edges alone: 29/29 reproduce
+  sealed cells that also appear in the pinned 919 ladder (i.e. not holdouts): none
+  primary reports pre-seal frozen-machinery evaluations of sealed cells: 0
+  7 sealed cells re-measured on the independent engine: 0 disagreements
+
+-- attack (v): does the scope qualifier overreach or underreach? --
+  401-point offset sweep over TWO full grid periods (-0.1 .. +0.1): thresholds observed [3, 4, 5]
+     threshold 3 on 70 of 401 offsets (17.5% of phases; first -0.0935, last 0.0235)
+     threshold 4 on 248 of 401 offsets (61.8% of phases; first -0.0760, last 0.0855)
+     threshold 5 on 83 of 401 offsets (20.7% of phases; first -0.1000, last 0.1000)
+  primary publishes a phase histogram: True
+  CONFIRMED INDEPENDENTLY: the primary's phase histogram {'3': 0.1746, '4': 0.6185, '5': 0.207} reproduces on this engine to 0.00e+00; the frozen phase's threshold 5 is the LEAST common outcome (20.7%) and the modal outcome is 4 (61.8%).  This checker raised that sharpening and the primary adopted it mid-block; it is re-verified here rather than re-asserted.
+  robust-class violations over the sweep: none
+  full-machinery threshold at offset 0.000: 5 ; at offset +0.010: 3
+  scope qualifier names the grid: True ; names the phase: True ; names the spacing: True
+
+-- extra attack: the 'only the amplitude moves' claim, by a second statistic --
+  curvature of log C_ab(t): d=3..8 relative spread 0.0449 ; including d=2 0.0607
+  degree 4 vs degree 5 curvature differs by 0.0462 relative -- the shape statistic agrees with the primary that the profiles are the same family
+  d=2 isolation ratio: normalised-profile statistic 6.9x, curvature statistic 1.4x
+  the d = 2 exception is statistic-dependent (6.9x vs 1.4x) and the primary DISCLOSES this; the load-bearing d=4/d=5 sameness is robust across both statistics.  Raised by this checker and adopted mid-block.
+-- extra attack: is the receipt internally consistent? --
+  0 internal inconsistencies over 48 published cells
+
+-- CHECKER VERDICT: SUPPORTED --
+  17/17 teeth fired; 0 refutation(s); 0 scope finding(s)
+
+  What survived, stated flatly:
+   * the window edges are resolution-independent (10x scan, different root finder, and one edge at 50 decimal digits);
+   * the window-edge predicate reproduces run and verdict on 10 out-of-sample cells including two-site-arm spiders, a broom, an asymmetric spider and two new fields;
+   * the amplitude-only reading beats the time-rescaling rival, and a second, independent shape statistic agrees;
+   * the two cheap restatements of the razor -- 'C_ab(0.9) vs 0.02' and 'width alone' -- both fail, so the window+phase machinery is doing work;
+   * the seal is holdout-free and its cells re-measure correctly on this engine;
+   * the scope qualifier neither overreaches (the +0.010 shift is real on full machinery) nor underreaches (the robust classes survive a full-period sweep).
+
+runtime: 46.9 s (limit 900 s)
+timing-free digest: 1329ae484ad3d679a2b993752d871a8ec9764c206cf468fd14890a69b50453be
+receipt: outputs/persistence_razor_independent_check_cycle932_receipt_2026_07_28.json
+receipt sha256: 023065d9c0fff428fa26bbf4b0cd6a69f0147fbef19e2f7c87c67499c7bfd032
+Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. No formation rule. Sets no audit status.
+===== runner cache v1 =====

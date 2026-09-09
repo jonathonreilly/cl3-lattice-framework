@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner   : frontier_cycle934_pointer_gates_2026_07_28.py
+cycle    : 934   block: blockM14   campaign: toe-time-expansion-20260802
+question : the POINTER-SIDE gates (chi, excess, H_Z, t_open) and the composed star certification theorem
+
+PINS  21 artefacts | VENDORED 932: 7 files digest-verified against the SOURCE-BRANCH ship receipt (48fced2fce)
+CONSTANTS  21/21 byte-verified, quote-identical NINE-way (917/919/921/926/927/929/931/932/933); statistic definitions 5/5
+RG1 917/919 star rows: 2262 values, max dev 0.0
+RG2 927 star rows: 8606 values, max dev 0.0
+RG3 926 star frozen point: max dev 0.0
+RG5 932 window edges: 42 edges, max dev 2.547e-13 (grade 1e-12)
+RG6 932 sealed star windows: 25 cells, max dev 7.129e-13
+RG7 collective vs pinned rows: 988 values, max dev 2.127e-13
+Q1 done: leakage 2.2e-16, routeS-vs-N 1.0e-14, profiles 21 cells
+Q2 done: H_Z dev 1.1e-16, L3 spread 1.2e-14, t_open vs 932 3.0e-13, exponent 1.839
+Q3 composed table: 40 cells, 78 delta rows, verdict agreement True
+SEAL 10 cells, prereg bb198cc842f741a1, verification holds (edge dev 2.91e-13)
+teeth: 15/15 fired
+
+THE DERIVATION
+  L0  H(Z_S) = 1 bit EXACTLY: P = prod_i X_i commutes with H ([P,H] max abs 0.0) and fixes the frozen preparation (defect 0.0e+00); P Z_0 P = -Z_0 so <Z_0(t)> = 0 identically.
+      measured over 240 (degree, field, time) probes incl. lambda = 2.0 and Jt = 5.0: max |H_Z - 1| = 1.11e-16
+  L1  chi(0) = 0 (max 7.47e-15, frozen anchor tolerance 1e-9) for ANY product preparation across the pointer/arm cut => excess == chi.
+  L2  the content gate is EXACTLY chi_1 >= (1-delta): the H(Z_S) >= 0.05 clause is unconditional and the excess clause is implied (margin 0.88 bit); it binds at 0 of the probed points.
+  L3  at lambda_pointer = 0 the content gate is EXACTLY degree-independent for ANY arm field: chi spread over d = 2..12 is 1.20e-14 (the double-precision floor), against ~2e-3 with the pointer field on -- ELEVEN orders.  Two-level closed form agrees to 1.19e-14.
+  L4  zero-field closed form: c* = 0.367961307353, t_open = 0.596990388538, t_close = 0.973805938257, W = 0.376815549720  (932 measured W ~ 0.37 at lambda = 0.05)
+  L4b CHECKER FINDING ADOPTED: the content gate is PERIODIC with period pi/2, so there is one window PER LOBE.  8 of 15 probed cells carry a second lobe near Jt ~ 2.168-2.190; the zero-field prediction for its onset is 2.167787.  It holds 0 frozen grid points -- the grid ends at 1.2 and the deadline is 1.0 -- so NO verdict anywhere is affected.
+  L5  the residual is the POINTER's back-action: spread(0.05) = 5.937e-04, spread(0.10) = 2.071e-03 -- 932 reported 2.1e-3, reproduced to 2.9e-05.  VERIFIED BOUND spread <= 0.3150 lambda^2 on [0.0125, 0.20]; the log-log slope is 1.839 but PLAIN lambda^2 is the flatter normalisation (drift 1.56 vs 1.84), so 'up to a log' is conservative -- checker finding A2, adopted.
+  L6  t_close = min(content, independence); the clip switch matches 932 on 21/21 cells with zero mismatches; content first clips at degree 6 at lambda = 0.10 (932 reported 6).
+
+RESTRICTION GATES
+  917/919 star rows (route P919)  : 2262 values, max abs dev 0.0
+  927 star rows (route P927)      : 8606 values, max abs dev 0.0
+  926 star frozen point           : max abs dev 0.0
+  932 window edges (re-DERIVED)   : 42 edges, max dev 2.547e-13 (pinned grade 1e-12), 0 gate-label and 0 verdict mismatches
+  932 sealed star windows         : 25 cells, max dev 7.129e-13
+  collective route vs pinned rows : 988 values, max dev 2.127e-13 (2.0e-14 over degrees <= 8)
+  Sym^d leakage / route S vs N    : 2.2e-16 / 1.0e-14
+
+COMPOSED THEOREM  40 pinned star cells x 3 deltas = 78 verdict rows
+  exact verdict agreement        : True
+  exact run agreement            : True
+  exact per-sample gate agreement: True (741 samples compared)
+  edge-count law == direct count : True
+  H10 (one window per cell)      : True on every cell and delta
+  drift clause is vacuous on stars (max 1.5e-15) -- a consequence of L0
+
+SEAL  bb198cc842f741a1   (10 cells: d in {9,10} x {0.05, 0.10, 0.0413, 0.0687, 0.1137})
+  holdout class (never-used fields) : 6 cells, 0 pre-evaluated
+  corpus-reproduction class         : 4 cells at the FROZEN fields -- NOT claimed as holdouts (927 STk10 and 932's S9/S10 seal already published full-space answers there)
+  route N touched 0 sealed cells before the digest was fixed
+SEAL VERIFICATION  all_hold=True   verdict+run mismatches 0 | per-sample flag mismatches 0 | max edge dev 2.91e-13
+
+TEETH  15/15 fire
+  T01_planted_degree_dependent_t_open                  FIRED
+  T02_planted_verdict_flip                             FIRED
+  T03_euler_guard_on_chi_and_C_ab_not_H_Z              FIRED
+  T04_int8_underflow_guard                             FIRED
+  T05_tampered_vendored_932_pin                        FIRED
+  T06_planted_almost_fitting_content_constant          FIRED
+  T07_wall_clock_leak_scan                             FIRED
+  T08_broken_X_flip_symmetry_control                   FIRED
+  T09_pointer_transverse_term_ablation                 FIRED
+  T10_sym_d_membership_control                         FIRED
+  T11_excess_equals_chi_needs_a_product_preparation    FIRED
+  T12_grid_phase_threshold_shift                       FIRED
+  T13_tampered_seal_digest                             FIRED
+  T14_deadline_clause_is_load_bearing                  FIRED
+  T15_route_perturbation_guard                         FIRED
+
+ROUTES  P919 (pinned bytes) | P927 (pinned bytes) | N (own 2^(d+1)) | S (collective 2(d+1)) -- S and N are structurally disjoint
+DETERMINISM  in-process core repeat identical: True
+TIMING-FREE PAYLOAD SCAN  numeric clock readings found: 0 (hard guard)
+
+VERDICT
+  THE POINTER-SIDE GATES ARE DERIVED, AND THE STAR CERTIFICATION THEOREM IS COMPOSED.  H(Z_S) = 1 bit EXACTLY on every star at every field and time (global X-flip symmetry -- 932's 'symmetry-pinned' disclosure promoted to a lemma); chi(0) = 0 so the excess gate is IMPLIED; hence the content gate is EXACTLY the single-arm Holevo threshold chi_1 >= (1-delta).  At zero pointer field that threshold is EXACTLY degree-independent for any arm field -- so t_open's degree-independence is not a regularity but a theorem, and its residual (2.07e-3 at 0.10, reproducing 932's 2.1e-3; 5.9e-4 at 0.05) is the pointer's own back-action, bounded by 0.3150 lambda^2 over [0.0125, 0.20] (the log-log slope is 1.839, but plain lambda^2 is the flatter normalisation -- the checker's finding, adopted).  At zero field the whole window is closed form: t_open = (1/2)arccos(c*) = 0.596990388538, t_close = pi/2 - t_open, W = 0.376815549720 -- which is 932's measured W ~ 0.37 at the low field.  Composed with 933's s(k) for the independence side and 932's counting law for the grid, EVERY EDGE and EVERY VERDICT of the star lane follows from the 2(d+1) reduction: exact verdict, run and per-sample gate agreement on all 40 pinned star cells across all three deltas.
+
+receipt outputs/pointer_gates_cycle934_receipt_2026_07_28.json
+runtime 20.42 s (limit 900 s)
+timing-free digest 3d6bed0e660ccd078c16a0755d0c5b746f45156f73a91d66f0ff8e7767f3f5da
+===== runner cache v1 =====

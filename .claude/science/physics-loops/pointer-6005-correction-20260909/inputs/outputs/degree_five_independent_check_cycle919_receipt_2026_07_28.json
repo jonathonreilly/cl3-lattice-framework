@@ -1,0 +1,1820 @@
+{
+ "boundary_sentences": [
+  "Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction.",
+  "No formation rule.",
+  "Sets no audit status."
+ ],
+ "checker": "scripts/frontier_cycle919_degree_five_independent_check_2026_07_28.py",
+ "claims": [
+  {
+   "claim": "C1 pins + the recovered d=1 note's provenance re-derive",
+   "detail": {
+    "d1_matches_917_receipt": true,
+    "d1_sha256_rederived": "41b4f26af908a7b910fbb5683f9d50432f36328bced7cf107585f7f70771df04",
+    "mismatches": [],
+    "pins_checked": 12
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C2 all 21 frozen gate constants are verbatim memo bytes, and quote-identical to the pinned 917 receipt",
+   "detail": {
+    "checked": 21,
+    "differs_from_917": [],
+    "not_found_in_memo": []
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C3 the partition rule reproduces the frozen memo's own cube lists",
+   "detail": {
+    "per_label_identical": {
+     "+x": true,
+     "+y": true,
+     "+z": true,
+     "-x": true,
+     "-y": true,
+     "-z": true
+    },
+    "tie_break_clauses_read_from_bytes": {
+     "clause2": "2. assign an edge with `x != 0` to `F_(sign(x)x)`;",
+     "clause3": "3. for an edge with `x=0` and for every corner, ignore the corner's `x` sign and map `(sign(y),sign(z))` by `(+,+)->+y`, `(-,+)->+z`, `(-,-)->-y`, and `(+,-)->-z`.",
+     "map": {
+      "-1|-1": "-y",
+      "-1|1": "+z",
+      "1|-1": "-z",
+      "1|1": "+y"
+     }
+    }
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C4 the four published degree-5 geometries ARE the block specification's, their partitions ARE the scout's principle, and every one really has pointer degree 5",
+   "detail": {
+    "geometry_mismatches": {},
+    "not_degree_five": {},
+    "note": "ties arise only on the cube-coordinate geometry H4, where the memo's clause applies verbatim; the star and the trees have no ties",
+    "partition_mismatches": {},
+    "pointer_degree_recomputed": {
+     "H1": 5,
+     "H2": 5,
+     "H3": 5,
+     "H4": 5
+    },
+    "statistic_mismatches": {},
+    "ties_encountered": {
+     "H1": 0,
+     "H2": 0,
+     "H3": 0,
+     "H4": 4
+    }
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C5 every one of the twelve degree-5 cells reproduces on independent machinery",
+   "detail": {
+    "cells": 12,
+    "disagreements": [],
+    "max_abs_deviation": {
+     "C": 4.037547206292569e-14,
+     "chi": 1.9739765377835283e-13,
+     "theta": 4.3520742565306136e-14
+    },
+    "route": "sparse Pauli kron + expm_multiply(interval) + tensordot reductions + scipy eigvalsh('ev') + bitmask MIS"
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C6 the primary's restriction gate is real: Cycle 917's twelve frozen-field cells reproduce on THIS checker's machinery too, and match what the primary reported",
+   "detail": {
+    "cells": 12,
+    "mismatches": [],
+    "primary_claimed_row_deviation": {
+     "C_ab": 0.0,
+     "H_Z": 0.0,
+     "chi": 0.0,
+     "theta_A": 0.0
+    },
+    "primary_claimed_rows_compared": 156
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C7 the 0.075 design-extension column agrees three ways: this checker, the primary, and the pinned 917 checker's own probe",
+   "detail": {
+    "mismatches": [],
+    "per_geometry": {
+     "G1": {
+      "pinned_917_checker": "NO",
+      "primary": "NO",
+      "this_checker": "NO"
+     },
+     "G2": {
+      "pinned_917_checker": "YES",
+      "primary": "YES",
+      "this_checker": "YES"
+     },
+     "G3a": {
+      "pinned_917_checker": "YES",
+      "primary": "YES",
+      "this_checker": "YES"
+     },
+     "G3b": {
+      "pinned_917_checker": "YES",
+      "primary": "YES",
+      "this_checker": "YES"
+     },
+     "G4": {
+      "pinned_917_checker": "YES",
+      "primary": "YES",
+      "this_checker": "YES"
+     },
+     "G5": {
+      "pinned_917_checker": "YES",
+      "primary": "YES",
+      "this_checker": "YES"
+     }
+    },
+    "status": "lambda = 0.075 is NOT a frozen certified field; all three sources report it as a declared extension"
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C8 the star/tree control holds: at every executed field the degree-5 star and both degree-5 trees return the SAME verdict, so the degree-5 answer is not a depth or system-size artefact",
+   "detail": {
+    "per_field": {
+     "0.05": {
+      "H1_star": "YES",
+      "H2_tree16": "YES",
+      "H3_tree10d5": "YES"
+     },
+     "0.075": {
+      "H1_star": "YES",
+      "H2_tree16": "YES",
+      "H3_tree10d5": "YES"
+     },
+     "0.1": {
+      "H1_star": "YES",
+      "H2_tree16": "YES",
+      "H3_tree10d5": "YES"
+     }
+    },
+    "splits": []
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C9 pointer degree is the only declared feature that moves the lambda = 0.10 verdict: it moves it at fixed n, and at fixed loop number, while nothing else moves it at fixed degree",
+   "detail": {
+    "same_degree_different_everything": {
+     "agree": true,
+     "verdicts": {
+      "H1": "YES",
+      "H2": "YES",
+      "H3": "YES",
+      "H4": "YES"
+     }
+    },
+    "same_loops_different_degree": {
+     "loops_identical": true,
+     "pair": [
+      "H4 (loops 4, deg 5)",
+      "G4 (loops 4, deg 4)"
+     ],
+     "reading": "loop number cannot explain the split either: two 4-loop geometries differing only in pointer degree land on opposite sides",
+     "verdict_moves_with_degree": true,
+     "verdicts": [
+      "YES",
+      "NO"
+     ]
+    },
+    "same_n_different_degree": {
+     "n_sites_identical": true,
+     "pair": [
+      "H3 (n=10, deg 5)",
+      "G3a (n=10, deg 3)"
+     ],
+     "reading": "system size cannot explain the lambda = 0.10 split: two 10-site geometries differing only in pointer degree land on opposite sides",
+     "verdict_moves_with_degree": true,
+     "verdicts": [
+      "YES",
+      "NO"
+     ]
+    }
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C10 the R_ind ceiling law at degree 5: max R_ind over the window = 5 on every loop-free degree-5 cell and on the loopy one at the low field, and falls below 5 on the loopy one above it -- the 917 law survives at the new points",
+   "detail": {
+    "loop_free_cells_all_equal_5": true,
+    "loopy_cell_equals_5_at_0.05": true,
+    "loopy_cells_below_5_above_0.05": [
+     "H4@0.075",
+     "H4@0.1"
+    ],
+    "loopy_values": {
+     "H4@0.05": 5,
+     "H4@0.075": 3,
+     "H4@0.1": 3
+    },
+    "per_cell": {
+     "H1@0.05": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": true,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H1@0.075": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": true,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H1@0.1": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": true,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H2@0.05": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": true,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H2@0.075": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": true,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H2@0.1": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": true,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H3@0.05": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": true,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H3@0.075": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": true,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H3@0.1": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": true,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H4@0.05": {
+      "agrees": true,
+      "equals_pointer_degree": true,
+      "loop_free": false,
+      "published": 5,
+      "recomputed_max_r_ind": 5
+     },
+     "H4@0.075": {
+      "agrees": true,
+      "equals_pointer_degree": false,
+      "loop_free": false,
+      "published": 3,
+      "recomputed_max_r_ind": 3
+     },
+     "H4@0.1": {
+      "agrees": true,
+      "equals_pointer_degree": false,
+      "loop_free": false,
+      "published": 3,
+      "recomputed_max_r_ind": 3
+     }
+    },
+    "recompute_mismatches": []
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C11 the located bracket (4, 5] is independently reproduced, and it rests ENTIRELY on the two FROZEN certified fields -- the 0.075 design extension is not load-bearing for it",
+   "detail": {
+    "bracket_uses_only_frozen_fields": true,
+    "degree_4_at_0.10": {
+     "G3b": "NO",
+     "G4": "NO"
+    },
+    "degree_5_at_0.10": {
+     "H1": "YES",
+     "H2": "YES",
+     "H3": "YES",
+     "H4": "YES"
+    },
+    "degree_6_at_0.10": {
+     "G2": "YES",
+     "G5": "YES"
+    },
+    "note": "the bracket is decided at lambda = 0.10, a frozen certified field, against 917's degree-4 NO cells at the same frozen field",
+    "published_bracket": [
+     4,
+     5
+    ],
+    "recomputed_bracket": [
+     4,
+     5
+    ]
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C12 the softness numbers survive: the located threshold is a PERSISTENCE boundary whose two sides are separated by ~1e-3 bits of C_ab, exactly as the primary reports",
+   "detail": {
+    "mismatches": [],
+    "one_sample_misses": [
+     "G3a",
+     "G3b",
+     "G4"
+    ],
+    "reading": "the degree-4 tree misses its third certification sample by 0.000783463422774 bits and the tightest degree-5 geometry clears the same sample by 0.000832685548934 bits.  The bracket is located and it is that narrow; a reader who wants a robust threshold should ask for a wider persistence window, not a different geometry set.",
+    "recomputed": {
+     "G1": {
+      "clears_by_one": false,
+      "deficit_at_first_bad": null,
+      "margin_at_third": null,
+      "misses_by_one": false,
+      "persists": false,
+      "run": 0
+     },
+     "G2": {
+      "clears_by_one": true,
+      "deficit_at_first_bad": null,
+      "first_bad_binding_gate": "content",
+      "first_jt": 0.7,
+      "margin_at_third": 0.002865629229,
+      "misses_by_one": false,
+      "persists": true,
+      "run": 3
+     },
+     "G3a": {
+      "clears_by_one": false,
+      "deficit_at_first_bad": 0.004701932355,
+      "first_bad_binding_gate": "independence",
+      "first_jt": 0.7,
+      "margin_at_third": null,
+      "misses_by_one": true,
+      "persists": false,
+      "run": 2
+     },
+     "G3b": {
+      "clears_by_one": false,
+      "deficit_at_first_bad": 0.000783463423,
+      "first_bad_binding_gate": "independence",
+      "first_jt": 0.7,
+      "margin_at_third": null,
+      "misses_by_one": true,
+      "persists": false,
+      "run": 2
+     },
+     "G4": {
+      "clears_by_one": false,
+      "deficit_at_first_bad": 0.015452819254,
+      "first_bad_binding_gate": "independence",
+      "first_jt": 0.7,
+      "margin_at_third": null,
+      "misses_by_one": true,
+      "persists": false,
+      "run": 2
+     },
+     "G5": {
+      "clears_by_one": true,
+      "deficit_at_first_bad": null,
+      "first_bad_binding_gate": "content",
+      "first_jt": 0.7,
+      "margin_at_third": 0.002743932419,
+      "misses_by_one": false,
+      "persists": true,
+      "run": 3
+     },
+     "H1": {
+      "clears_by_one": true,
+      "deficit_at_first_bad": null,
+      "first_bad_binding_gate": "content",
+      "first_jt": 0.7,
+      "margin_at_third": 0.001424678287,
+      "misses_by_one": false,
+      "persists": true,
+      "run": 3
+     },
+     "H2": {
+      "clears_by_one": true,
+      "deficit_at_first_bad": null,
+      "first_bad_binding_gate": "content",
+      "first_jt": 0.7,
+      "margin_at_third": 0.001346663954,
+      "misses_by_one": false,
+      "persists": true,
+      "run": 3
+     },
+     "H3": {
+      "clears_by_one": true,
+      "deficit_at_first_bad": null,
+      "first_bad_binding_gate": "content",
+      "first_jt": 0.7,
+      "margin_at_third": 0.001347080716,
+      "misses_by_one": false,
+      "persists": true,
+      "run": 3
+     },
+     "H4": {
+      "clears_by_one": true,
+      "deficit_at_first_bad": null,
+      "first_bad_binding_gate": "content",
+      "first_jt": 0.7,
+      "margin_at_third": 0.000832685549,
+      "misses_by_one": false,
+      "persists": true,
+      "run": 3
+     }
+    },
+    "tightest_NO_deficit_bits": 0.000783463422774227,
+    "tightest_YES_margin_bits": 0.0008326855489341374
+   },
+   "verdict": "SURVIVES"
+  },
+  {
+   "claim": "C13 the graded field ceiling reproduces on this checker's machinery, is non-decreasing in pointer degree, and its degree-5 entry is 0.10",
+   "detail": {
+    "by_pointer_degree": {
+     "2": [
+      0.05
+     ],
+     "3": [
+      0.075
+     ],
+     "4": [
+      0.075
+     ],
+     "5": [
+      0.1
+     ],
+     "6": [
+      0.1
+     ]
+    },
+    "grade": {
+     "finding": "the CEILING statement (degree 2 -> 0.05, 3 -> 0.075, 4 -> 0.075, 5 -> 0.10, 6 -> 0.10) is DIAGNOSTIC-GRADE: the values 0.075 and 0.125 that give it its resolution are outside the frozen certified field set.  The BRACKET statement is FROZEN-GRADE.  The primary flags the 0.075 column and the wider probe as extensions/non-claims, which is correct, but a reader should not carry the ceiling table at the same grade as the bracket.",
+     "frozen_cells_in_the_ceiling_table": [
+      "0.05",
+      "0.10"
+     ],
+     "non_frozen_cells_the_ceiling_table_depends_on": [
+      "0.02",
+      "0.075",
+      "0.125",
+      "0.15",
+      "0.20"
+     ],
+     "refutes_the_measurement": false
+    },
+    "mismatches_vs_primary": [],
+    "per_geometry": {
+     "H1": {
+      "bracket": [
+       0.1,
+       0.125
+      ],
+      "certifies_up_to": 0.1,
+      "probe": {
+       "0.02": "YES",
+       "0.05": "YES",
+       "0.075": "YES",
+       "0.1": "YES",
+       "0.125": "NO",
+       "0.15": "NO",
+       "0.2": "NO"
+      }
+     },
+     "H2": {
+      "bracket": [
+       0.1,
+       0.125
+      ],
+      "certifies_up_to": 0.1,
+      "probe": {
+       "0.02": "YES",
+       "0.05": "YES",
+       "0.075": "YES",
+       "0.1": "YES",
+       "0.125": "NO",
+       "0.15": "NO",
+       "0.2": "NO"
+      }
+     },
+     "H3": {
+      "bracket": [
+       0.1,
+       0.125
+      ],
+      "certifies_up_to": 0.1,
+      "probe": {
+       "0.02": "YES",
+       "0.05": "YES",
+       "0.075": "YES",
+       "0.1": "YES",
+       "0.125": "NO",
+       "0.15": "NO",
+       "0.2": "NO"
+      }
+     },
+     "H4": {
+      "bracket": [
+       0.1,
+       0.125
+      ],
+      "certifies_up_to": 0.1,
+      "probe": {
+       "0.02": "YES",
+       "0.05": "YES",
+       "0.075": "YES",
+       "0.1": "YES",
+       "0.125": "NO",
+       "0.15": "NO",
+       "0.2": "NO"
+      }
+     }
+    }
+   },
+   "verdict": "SURVIVES"
+  }
+ ],
+ "claims_refuted": [],
+ "claims_survived": 13,
+ "claims_total": 13,
+ "cross_degree_controls": {
+  "same_degree_different_everything": {
+   "agree": true,
+   "verdicts": {
+    "H1": "YES",
+    "H2": "YES",
+    "H3": "YES",
+    "H4": "YES"
+   }
+  },
+  "same_loops_different_degree": {
+   "loops_identical": true,
+   "pair": [
+    "H4 (loops 4, deg 5)",
+    "G4 (loops 4, deg 4)"
+   ],
+   "reading": "loop number cannot explain the split either: two 4-loop geometries differing only in pointer degree land on opposite sides",
+   "verdict_moves_with_degree": true,
+   "verdicts": [
+    "YES",
+    "NO"
+   ]
+  },
+  "same_n_different_degree": {
+   "n_sites_identical": true,
+   "pair": [
+    "H3 (n=10, deg 5)",
+    "G3a (n=10, deg 3)"
+   ],
+   "reading": "system size cannot explain the lambda = 0.10 split: two 10-site geometries differing only in pointer degree land on opposite sides",
+   "verdict_moves_with_degree": true,
+   "verdicts": [
+    "YES",
+    "NO"
+   ]
+  }
+ },
+ "cycle": 919,
+ "date": "2026-07-28",
+ "degree_confound_control": {
+  "0.05": {
+   "all_four_agree": true,
+   "loopy_agrees_with_loop_free": true,
+   "star_tree_agree": true,
+   "star_tree_control": {
+    "H1_star": "YES",
+    "H2_tree16": "YES",
+    "H3_tree10d5": "YES"
+   },
+   "varied_while_degree_held_at_5": {
+    "depth": {
+     "H1": 1,
+     "H2": 2,
+     "H3": 2,
+     "H4": 2
+    },
+    "fragment_sizes": {
+     "H1": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "H2": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "H3": [
+      1,
+      1,
+      1,
+      3,
+      3
+     ],
+     "H4": [
+      1,
+      1,
+      1,
+      3,
+      3
+     ]
+    },
+    "loops": {
+     "H1": 0,
+     "H2": 0,
+     "H3": 0,
+     "H4": 4
+    },
+    "n_sites": {
+     "H1": 6,
+     "H2": 16,
+     "H3": 10,
+     "H4": 10
+    }
+   },
+   "verdicts": {
+    "H1": "YES",
+    "H2": "YES",
+    "H3": "YES",
+    "H4": "YES"
+   }
+  },
+  "0.075": {
+   "all_four_agree": true,
+   "loopy_agrees_with_loop_free": true,
+   "star_tree_agree": true,
+   "star_tree_control": {
+    "H1_star": "YES",
+    "H2_tree16": "YES",
+    "H3_tree10d5": "YES"
+   },
+   "varied_while_degree_held_at_5": {
+    "depth": {
+     "H1": 1,
+     "H2": 2,
+     "H3": 2,
+     "H4": 2
+    },
+    "fragment_sizes": {
+     "H1": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "H2": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "H3": [
+      1,
+      1,
+      1,
+      3,
+      3
+     ],
+     "H4": [
+      1,
+      1,
+      1,
+      3,
+      3
+     ]
+    },
+    "loops": {
+     "H1": 0,
+     "H2": 0,
+     "H3": 0,
+     "H4": 4
+    },
+    "n_sites": {
+     "H1": 6,
+     "H2": 16,
+     "H3": 10,
+     "H4": 10
+    }
+   },
+   "verdicts": {
+    "H1": "YES",
+    "H2": "YES",
+    "H3": "YES",
+    "H4": "YES"
+   }
+  },
+  "0.1": {
+   "all_four_agree": true,
+   "loopy_agrees_with_loop_free": true,
+   "star_tree_agree": true,
+   "star_tree_control": {
+    "H1_star": "YES",
+    "H2_tree16": "YES",
+    "H3_tree10d5": "YES"
+   },
+   "varied_while_degree_held_at_5": {
+    "depth": {
+     "H1": 1,
+     "H2": 2,
+     "H3": 2,
+     "H4": 2
+    },
+    "fragment_sizes": {
+     "H1": [
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "H2": [
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "H3": [
+      1,
+      1,
+      1,
+      3,
+      3
+     ],
+     "H4": [
+      1,
+      1,
+      1,
+      3,
+      3
+     ]
+    },
+    "loops": {
+     "H1": 0,
+     "H2": 0,
+     "H3": 0,
+     "H4": 4
+    },
+    "n_sites": {
+     "H1": 6,
+     "H2": 16,
+     "H3": 10,
+     "H4": 10
+    }
+   },
+   "verdicts": {
+    "H1": "YES",
+    "H2": "YES",
+    "H3": "YES",
+    "H4": "YES"
+   }
+  }
+ },
+ "design_extension_correction": {
+  "all_degree_ge_3_agree_at_0.075": true,
+  "corrects_the_primary_presentation": true,
+  "effect_on_the_claim": "strengthens it -- the located bracket turns out to rest on frozen fields only, so the design extension can be dropped from the claim surface entirely and the bracket survives",
+  "finding": "the 0.075 column does NOT discriminate: every geometry of pointer degree 3 or more certifies there, degree 3, 4, 5 and 6 alike.  It is the LAST field at which degrees 3 and 4 still pass, not the first at which they fail.  The cell that locates the bracket is lambda = 0.10.",
+  "primary_rationale_quoted": "0.075 is exactly where the 917 diagnostic puts the degree-3 and degree-4 ceiling, so a degree-5 verdict there is the discriminating cell",
+  "refutes_the_measurement": false,
+  "verdicts_at_0.075": {
+   "G1": "NO",
+   "G2": "YES",
+   "G3a": "YES",
+   "G3b": "YES",
+   "G4": "YES",
+   "G5": "YES",
+   "H1": "YES",
+   "H2": "YES",
+   "H3": "YES",
+   "H4": "YES"
+  }
+ },
+ "field_ceiling_recomputed": {
+  "by_pointer_degree": {
+   "2": [
+    0.05
+   ],
+   "3": [
+    0.075
+   ],
+   "4": [
+    0.075
+   ],
+   "5": [
+    0.1
+   ],
+   "6": [
+    0.1
+   ]
+  },
+  "grade": {
+   "finding": "the CEILING statement (degree 2 -> 0.05, 3 -> 0.075, 4 -> 0.075, 5 -> 0.10, 6 -> 0.10) is DIAGNOSTIC-GRADE: the values 0.075 and 0.125 that give it its resolution are outside the frozen certified field set.  The BRACKET statement is FROZEN-GRADE.  The primary flags the 0.075 column and the wider probe as extensions/non-claims, which is correct, but a reader should not carry the ceiling table at the same grade as the bracket.",
+   "frozen_cells_in_the_ceiling_table": [
+    "0.05",
+    "0.10"
+   ],
+   "non_frozen_cells_the_ceiling_table_depends_on": [
+    "0.02",
+    "0.075",
+    "0.125",
+    "0.15",
+    "0.20"
+   ],
+   "refutes_the_measurement": false
+  },
+  "per_geometry": {
+   "H1": {
+    "bracket": [
+     0.1,
+     0.125
+    ],
+    "certifies_up_to": 0.1,
+    "probe": {
+     "0.02": "YES",
+     "0.05": "YES",
+     "0.075": "YES",
+     "0.1": "YES",
+     "0.125": "NO",
+     "0.15": "NO",
+     "0.2": "NO"
+    }
+   },
+   "H2": {
+    "bracket": [
+     0.1,
+     0.125
+    ],
+    "certifies_up_to": 0.1,
+    "probe": {
+     "0.02": "YES",
+     "0.05": "YES",
+     "0.075": "YES",
+     "0.1": "YES",
+     "0.125": "NO",
+     "0.15": "NO",
+     "0.2": "NO"
+    }
+   },
+   "H3": {
+    "bracket": [
+     0.1,
+     0.125
+    ],
+    "certifies_up_to": 0.1,
+    "probe": {
+     "0.02": "YES",
+     "0.05": "YES",
+     "0.075": "YES",
+     "0.1": "YES",
+     "0.125": "NO",
+     "0.15": "NO",
+     "0.2": "NO"
+    }
+   },
+   "H4": {
+    "bracket": [
+     0.1,
+     0.125
+    ],
+    "certifies_up_to": 0.1,
+    "probe": {
+     "0.02": "YES",
+     "0.05": "YES",
+     "0.075": "YES",
+     "0.1": "YES",
+     "0.125": "NO",
+     "0.15": "NO",
+     "0.2": "NO"
+    }
+   }
+  }
+ },
+ "independent_917_recompute": {
+  "G1@0.05": {
+   "max_r_ind": 2,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.009502307766297725,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G1@0.075": {
+   "max_r_ind": 2,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": 0.001394454478235576,
+    "first_bad_binding_gate": "independence",
+    "first_jt": 0.7,
+    "margin_at_third": null,
+    "misses_by_one": false,
+    "persists": false,
+    "run": 1
+   },
+   "verdict": "NO",
+   "xi_reg": 1
+  },
+  "G1@0.1": {
+   "max_r_ind": 1,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "margin_at_third": null,
+    "misses_by_one": false,
+    "persists": false,
+    "run": 0
+   },
+   "verdict": "NO",
+   "xi_reg": 1
+  },
+  "G2@0.05": {
+   "max_r_ind": 6,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.016133984196396608,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G2@0.075": {
+   "max_r_ind": 6,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.009494105920318617,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G2@0.1": {
+   "max_r_ind": 6,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.002865629228796591,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G3a@0.05": {
+   "max_r_ind": 3,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.01445244549852518,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G3a@0.075": {
+   "max_r_ind": 3,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.004934214879371363,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G3a@0.1": {
+   "max_r_ind": 3,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": 0.0047019323545316495,
+    "first_bad_binding_gate": "independence",
+    "first_jt": 0.7,
+    "margin_at_third": null,
+    "misses_by_one": true,
+    "persists": false,
+    "run": 2
+   },
+   "verdict": "NO",
+   "xi_reg": 1
+  },
+  "G3b@0.05": {
+   "max_r_ind": 4,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.015378888496731111,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G3b@0.075": {
+   "max_r_ind": 4,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.007292468398183996,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G3b@0.1": {
+   "max_r_ind": 4,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": 0.000783463422774227,
+    "first_bad_binding_gate": "independence",
+    "first_jt": 0.7,
+    "margin_at_third": null,
+    "misses_by_one": true,
+    "persists": false,
+    "run": 2
+   },
+   "verdict": "NO",
+   "xi_reg": 1
+  },
+  "G4@0.05": {
+   "max_r_ind": 4,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.01755708950547099,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G4@0.075": {
+   "max_r_ind": 2,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.014134088108968847,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G4@0.1": {
+   "max_r_ind": 2,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": 0.015452819253911187,
+    "first_bad_binding_gate": "independence",
+    "first_jt": 0.7,
+    "margin_at_third": null,
+    "misses_by_one": true,
+    "persists": false,
+    "run": 2
+   },
+   "verdict": "NO",
+   "xi_reg": 1
+  },
+  "G5@0.05": {
+   "max_r_ind": 6,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.01808240151250577,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G5@0.075": {
+   "max_r_ind": 4,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.015477851116815936,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "G5@0.1": {
+   "max_r_ind": 4,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.002743932418621916,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  }
+ },
+ "independent_degree_five_ladder": {
+  "H1@0.05": {
+   "info": {
+    "C": {
+     "a1|a2": 0.0016172913497850144,
+     "a1|a3": 0.0016172913497850144,
+     "a1|a4": 0.0016172913497850144,
+     "a1|a5": 0.0016172913497850144,
+     "a2|a3": 0.0016172913497850144,
+     "a2|a4": 0.0016172913497850144,
+     "a2|a5": 0.0016172913497850144,
+     "a3|a4": 0.0016172913497850144,
+     "a3|a5": 0.0016172913497850144,
+     "a4|a5": 0.0016172913497850144
+    },
+    "jt": 0.6,
+    "r_ind": 5,
+    "run": 4,
+    "theta": 0.4998930022411095,
+    "witness": [
+     "a1",
+     "a2",
+     "a3",
+     "a4",
+     "a5"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.015834112569215485,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H1@0.075": {
+   "info": {
+    "C": {
+     "a1|a2": 0.005680439397843928,
+     "a1|a3": 0.005680439397843928,
+     "a1|a4": 0.005680439397843928,
+     "a1|a5": 0.005680439397843928,
+     "a2|a3": 0.005680439397843928,
+     "a2|a4": 0.005680439397843928,
+     "a2|a5": 0.005680439397843928,
+     "a3|a4": 0.005680439397843928,
+     "a3|a5": 0.005680439397843928,
+     "a4|a5": 0.005680439397843928
+    },
+    "jt": 0.7,
+    "r_ind": 5,
+    "run": 3,
+    "theta": 0.5002818948046512,
+    "witness": [
+     "a1",
+     "a2",
+     "a3",
+     "a4",
+     "a5"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.008620415296963849,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H1@0.1": {
+   "info": {
+    "C": {
+     "a1|a2": 0.009396140996004637,
+     "a1|a3": 0.009396140996004637,
+     "a1|a4": 0.009396140996004637,
+     "a1|a5": 0.009396140996004637,
+     "a2|a3": 0.009396140996004637,
+     "a2|a4": 0.009396140996004637,
+     "a2|a5": 0.009396140996004637,
+     "a3|a4": 0.009396140996004637,
+     "a3|a5": 0.009396140996004637,
+     "a4|a5": 0.009396140996004637
+    },
+    "jt": 0.7,
+    "r_ind": 5,
+    "run": 3,
+    "theta": 0.5004938925020737,
+    "witness": [
+     "a1",
+     "a2",
+     "a3",
+     "a4",
+     "a5"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.001424678286735901,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H2@0.05": {
+   "info": {
+    "C": {
+     "b0|b1": 0.0016173601551857588,
+     "b0|b2": 0.0016173601551630456,
+     "b0|b3": 0.0016173601551741949,
+     "b0|b4": 0.001617360155183752,
+     "b1|b2": 0.0016173601551741608,
+     "b1|b3": 0.0016173601551734578,
+     "b1|b4": 0.0016173601551918658,
+     "b2|b3": 0.0016173601551820638,
+     "b2|b4": 0.0016173601551902803,
+     "b3|b4": 0.0016173601551592357
+    },
+    "jt": 0.6,
+    "r_ind": 5,
+    "run": 4,
+    "theta": 0.5004069147350527,
+    "witness": [
+     "b0",
+     "b1",
+     "b2",
+     "b3",
+     "b4"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.015832094674768163,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H2@0.075": {
+   "info": {
+    "C": {
+     "b0|b1": 0.005682576096668776,
+     "b0|b2": 0.0056825760966763336,
+     "b0|b3": 0.005682576096679895,
+     "b0|b4": 0.005682576096656168,
+     "b1|b2": 0.0056825760966724955,
+     "b1|b3": 0.005682576096657958,
+     "b1|b4": 0.005682576096671066,
+     "b2|b3": 0.0056825760966754514,
+     "b2|b4": 0.0056825760966633075,
+     "b3|b4": 0.005682576096672597
+    },
+    "jt": 0.7,
+    "r_ind": 5,
+    "run": 3,
+    "theta": 0.502210009329308,
+    "witness": [
+     "b0",
+     "b1",
+     "b2",
+     "b3",
+     "b4"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.008593248974590639,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H2@0.1": {
+   "info": {
+    "C": {
+     "b0|b1": 0.009402378668119379,
+     "b0|b2": 0.00940237866813054,
+     "b0|b3": 0.009402378668122349,
+     "b0|b4": 0.009402378668130974,
+     "b1|b2": 0.009402378668132184,
+     "b1|b3": 0.009402378668131223,
+     "b1|b4": 0.009402378668120309,
+     "b2|b3": 0.00940237866812245,
+     "b2|b4": 0.00940237866811073,
+     "b3|b4": 0.009402378668126503
+    },
+    "jt": 0.7,
+    "r_ind": 5,
+    "run": 3,
+    "theta": 0.5039067436293603,
+    "witness": [
+     "b0",
+     "b1",
+     "b2",
+     "b3",
+     "b4"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.001346663954271278,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H3@0.05": {
+   "info": {
+    "C": {
+     "b0|b1": 0.0016174890303166406,
+     "b0|b2": 0.001617506923682505,
+     "b0|b3": 0.001617506923682505,
+     "b0|b4": 0.001617506923682505,
+     "b1|b2": 0.0016175069236825375,
+     "b1|b3": 0.0016175069236825375,
+     "b1|b4": 0.0016175069236825375,
+     "b2|b3": 0.0016174264992377676,
+     "b2|b4": 0.0016174264992377676,
+     "b3|b4": 0.0016174264992377676
+    },
+    "jt": 0.6,
+    "r_ind": 5,
+    "run": 4,
+    "theta": 0.5000985768840831,
+    "witness": [
+     "b0",
+     "b1",
+     "b2",
+     "b3",
+     "b4"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.015831769561590506,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H3@0.075": {
+   "info": {
+    "C": {
+     "b0|b1": 0.005683929197132841,
+     "b0|b2": 0.005684447620529981,
+     "b0|b3": 0.005684447620529981,
+     "b0|b4": 0.005684447620529981,
+     "b1|b2": 0.005684447620530801,
+     "b1|b3": 0.005684447620530801,
+     "b1|b4": 0.005684447620530801,
+     "b2|b3": 0.005683736500912366,
+     "b2|b4": 0.005683736500912366,
+     "b3|b4": 0.005683736500912366
+    },
+    "jt": 0.7,
+    "r_ind": 5,
+    "run": 3,
+    "theta": 0.5010534853437925,
+    "witness": [
+     "b0",
+     "b1",
+     "b2",
+     "b3",
+     "b4"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.008593546569045344,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H3@0.1": {
+   "info": {
+    "C": {
+     "b0|b1": 0.009406358291522147,
+     "b0|b2": 0.009407820074978457,
+     "b0|b3": 0.009407820074978457,
+     "b0|b4": 0.009407820074978457,
+     "b1|b2": 0.009407820074976495,
+     "b1|b3": 0.009407820074976495,
+     "b1|b4": 0.009407820074976495,
+     "b2|b3": 0.009405770173054733,
+     "b2|b4": 0.009405770173054733,
+     "b3|b4": 0.009405770173054733
+    },
+    "jt": 0.7,
+    "r_ind": 5,
+    "run": 3,
+    "theta": 0.5018601113313845,
+    "witness": [
+     "b0",
+     "b1",
+     "b2",
+     "b3",
+     "b4"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.0013470807159980981,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H4@0.05": {
+   "info": {
+    "C": {
+     "+x|+z": 0.0016771478246377825,
+     "+x|-x": 0.002614996693204226,
+     "-x|+z": 0.0016771478246377781
+    },
+    "jt": 0.6,
+    "r_ind": 3,
+    "run": 4,
+    "theta": 0.5002722046782841,
+    "witness": [
+     "+x",
+     "-x",
+     "+z"
+    ]
+   },
+   "max_r_ind": 5,
+   "persistence": {
+    "clears_by_one": false,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.6,
+    "margin_at_third": 0.01788125157709388,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 4
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H4@0.075": {
+   "info": {
+    "C": {
+     "+x|+z": 0.005863657373310269,
+     "+x|-x": 0.0093586376302922,
+     "-x|+z": 0.0058636573733102555
+    },
+    "jt": 0.7,
+    "r_ind": 3,
+    "run": 3,
+    "theta": 0.5016614608241526,
+    "witness": [
+     "+x",
+     "-x",
+     "+z"
+    ]
+   },
+   "max_r_ind": 3,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.014959306471898656,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  },
+  "H4@0.1": {
+   "info": {
+    "C": {
+     "+x|+z": 0.009730114753960909,
+     "+x|-x": 0.015970574623709894,
+     "-x|+z": 0.009730114753960902
+    },
+    "jt": 0.7,
+    "r_ind": 3,
+    "run": 3,
+    "theta": 0.5029376439201353,
+    "witness": [
+     "+x",
+     "-x",
+     "+z"
+    ]
+   },
+   "max_r_ind": 3,
+   "persistence": {
+    "clears_by_one": true,
+    "deficit_at_first_bad": null,
+    "first_bad_binding_gate": "content",
+    "first_jt": 0.7,
+    "margin_at_third": 0.0008326855489341374,
+    "misses_by_one": false,
+    "persists": true,
+    "run": 3
+   },
+   "verdict": "YES",
+   "xi_reg": 1
+  }
+ },
+ "numerics": {
+  "max_abs_deviation_vs_primary": {
+   "C": 4.037547206292569e-14,
+   "chi": 1.9739765377835283e-13,
+   "theta": 4.3520742565306136e-14
+  },
+  "numpy": "2.4.1",
+  "peak_rss_gib": 0.298980712890625,
+  "python": "3.12.8",
+  "route": "sparse Pauli-kron Hamiltonians + scipy expm_multiply over the whole time interval + tensordot reductions + scipy eigvalsh('ev') + bitmask maximum-independent-set",
+  "wall_s": 8.917416167008923
+ },
+ "r_ind_ceiling_law_recomputed": {
+  "H1@0.05": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": true,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H1@0.075": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": true,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H1@0.1": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": true,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H2@0.05": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": true,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H2@0.075": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": true,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H2@0.1": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": true,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H3@0.05": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": true,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H3@0.075": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": true,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H3@0.1": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": true,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H4@0.05": {
+   "agrees": true,
+   "equals_pointer_degree": true,
+   "loop_free": false,
+   "published": 5,
+   "recomputed_max_r_ind": 5
+  },
+  "H4@0.075": {
+   "agrees": true,
+   "equals_pointer_degree": false,
+   "loop_free": false,
+   "published": 3,
+   "recomputed_max_r_ind": 3
+  },
+  "H4@0.1": {
+   "agrees": true,
+   "equals_pointer_degree": false,
+   "loop_free": false,
+   "published": 3,
+   "recomputed_max_r_ind": 3
+  }
+ },
+ "schema": "degree-five-independent-check-cycle919-v1",
+ "teeth": [
+  {
+   "detail": "a four-byte edit of the frozen memo changes its sha256 and fails pin verification",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "tampered-pin"
+  },
+  {
+   "detail": "removing one degree-5 cell leaves ['H2@0.1'] uncovered against the declared field set",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "dropped-cell"
+  },
+  {
+   "detail": "an all-YES ladder disagrees with the independent recompute on ['G1@0.075', 'G1@0.1', 'G3a@0.1', 'G3b@0.1', 'G4@0.1']",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "hardcoded-verdict"
+  },
+  {
+   "detail": "claims that loops, depth or system size separate the lambda=0.10 YES/NO sets are all refuted: {\"cyclomatic_number_loops\": {\"NO\": [0, 4], \"YES\": [0, 4], \"separates\": false}, \"depth_eccentricity_from_pointer\": {\"NO\": [2, 4], \"YES\": [1, 2], \"separates\": false}, \"n_sites\": {\"NO\": [9, 10, 13], \"YES\": [6, 7, 10, 11, 16], \"separates\": false}}",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "leaked-threshold"
+  },
+  {
+   "detail": "all three executed fields are present on all four degree-5 geometries; a dropped field would leave the coverage set short (checked: ['0.05', '0.075', '0.1'])",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "skipped-field"
+  },
+  {
+   "detail": "a deliberately first-order (Euler) propagator on the degree-5 star at lambda = 0.10 gives verdict NO against the converged YES -- the degree-5 result is propagator-sensitive and the check detects it",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "planted-under-converged-propagator"
+  },
+  {
+   "detail": "moving site (1, 1, 0) between two H4 fragments breaks agreement with the scout's principle re-derived from the memo bytes",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "tampered-partition"
+  },
+  {
+   "detail": "a doctored pointer_degree = 6 on H3 is refuted by the checker's own adjacency recompute (which gives 5)",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "fabricated-degree"
+  },
+  {
+   "detail": "a claimed tightest-YES margin of 0.1 bits is refuted by the independent persistence recompute (which gives 0.0008326855489341374)",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "tampered-persistence-margin"
+  },
+  {
+   "detail": "the alternative reading -- threshold in (5, 6], i.e. degree 5 behaves like degree 4 -- is refuted by the independent degree-5 verdicts at lambda = 0.10: {\"H1\": \"YES\", \"H2\": \"YES\", \"H3\": \"YES\", \"H4\": \"YES\"}",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "wrong-bracket"
+  },
+  {
+   "detail": "a claimed max R_ind = 5 on the LOOPY degree-5 geometry at lambda = 0.10 is refuted by the independent recompute (which gives 3): loops still cost redundancy",
+   "detected": true,
+   "exit": "FIRES",
+   "tooth": "tampered-max-r-ind"
+  }
+ ],
+ "teeth_fired": 11,
+ "teeth_total": 11
+}

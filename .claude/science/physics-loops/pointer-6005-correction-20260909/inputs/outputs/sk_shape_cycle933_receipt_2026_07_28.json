@@ -1,0 +1,2321 @@
+{
+ "Q1_structure": {
+  "a_product_vs_entangled": {
+   "arm_field_is_a_correction_not_the_source": "with the ARM field switched off and only lambda X_0 kept, s(k) moves by ~1e-3 relative at lambda=0.05 and ~5e-3 at lambda=0.10.",
+   "field_ablations": [
+    {
+     "ARM_field_off_max_rel_change": 0.0009834556551596763,
+     "POINTER_field_off_max_|s(k)|": 2.864555482649036e-15,
+     "cell": "d3@0.05",
+     "d": 3,
+     "field": 0.05,
+     "split_route_vs_pinned_max_abs_dev": 4.580103657447765e-15,
+     "verdict": "the pointer's own transverse term is the ONLY source"
+    },
+    {
+     "ARM_field_off_max_rel_change": 0.0038561848352552646,
+     "POINTER_field_off_max_|s(k)|": 3.2034265038149176e-16,
+     "cell": "d3@0.1",
+     "d": 3,
+     "field": 0.1,
+     "split_route_vs_pinned_max_abs_dev": 6.938893903907228e-16,
+     "verdict": "the pointer's own transverse term is the ONLY source"
+    },
+    {
+     "ARM_field_off_max_rel_change": 0.001058465689961007,
+     "POINTER_field_off_max_|s(k)|": 5.759191894126088e-15,
+     "cell": "d4@0.05",
+     "d": 4,
+     "field": 0.05,
+     "split_route_vs_pinned_max_abs_dev": 4.355023286439774e-15,
+     "verdict": "the pointer's own transverse term is the ONLY source"
+    },
+    {
+     "ARM_field_off_max_rel_change": 0.004149596580615016,
+     "POINTER_field_off_max_|s(k)|": 1.0073308315660235e-14,
+     "cell": "d4@0.1",
+     "d": 4,
+     "field": 0.1,
+     "split_route_vs_pinned_max_abs_dev": 5.6430554673525535e-15,
+     "verdict": "the pointer's own transverse term is the ONLY source"
+    },
+    {
+     "ARM_field_off_max_rel_change": 0.0011850670801277726,
+     "POINTER_field_off_max_|s(k)|": 1.016139676661493e-14,
+     "cell": "d5@0.05",
+     "d": 5,
+     "field": 0.05,
+     "split_route_vs_pinned_max_abs_dev": 5.833875049710002e-15,
+     "verdict": "the pointer's own transverse term is the ONLY source"
+    },
+    {
+     "ARM_field_off_max_rel_change": 0.004646627221646661,
+     "POINTER_field_off_max_|s(k)|": 9.448861735503853e-15,
+     "cell": "d5@0.1",
+     "d": 5,
+     "field": 0.1,
+     "split_route_vs_pinned_max_abs_dev": 3.174543961037557e-15,
+     "verdict": "the pointer's own transverse term is the ONLY source"
+    },
+    {
+     "ARM_field_off_max_rel_change": 0.0013414603370225835,
+     "POINTER_field_off_max_|s(k)|": 8.429173986862787e-15,
+     "cell": "d6@0.05",
+     "d": 6,
+     "field": 0.05,
+     "split_route_vs_pinned_max_abs_dev": 8.686627805953862e-15,
+     "verdict": "the pointer's own transverse term is the ONLY source"
+    },
+    {
+     "ARM_field_off_max_rel_change": 0.005261420353955007,
+     "POINTER_field_off_max_|s(k)|": 1.3086528764372515e-14,
+     "cell": "d6@0.1",
+     "d": 6,
+     "field": 0.1,
+     "split_route_vs_pinned_max_abs_dev": 2.2811613709095013e-15,
+     "verdict": "the pointer's own transverse term is the ONLY source"
+    }
+   ],
+   "mechanism": "THE POINTER'S OWN TRANSVERSE TERM, lambda X_0.  Conditioned on a fixed Z_0 the arm Hamiltonian is sum_j (-/+ Z_j - lambda X_j), a sum of single-arm terms, so every pointer-flip history in the Dyson series carries an IDENTICAL PRODUCT state across the arms; the branch is a superposition of such product states and its entanglement is exactly their non-collinearity.  Switch lambda X_0 off and Z_0 is conserved: the branch is an exact product and s(k) collapses to 0 at every k.  Higher-order paths are NOT the mechanism -- the effect is already O(lambda) in the amplitude and O(lambda^2) in the entropy.",
+   "product_ansatz_table": [
+    {
+     "cell": "d3@0.05",
+     "concavity_2s(1)-s(2)": 0.0037318860836424166,
+     "d": 3,
+     "field": 0.05,
+     "measured_max_s(k)": 0.003731886083642174,
+     "min(k,d-k)+1_at_k=2": 2,
+     "orders_of_magnitude_above_the_numerical_floor": 11.571928378375459,
+     "product_ansatz_absolute_error": 0.003731886083642174,
+     "product_ansatz_prediction_for_every_s(k)": 0.0,
+     "s_of_1": 0.003731886083642174,
+     "schmidt_rank_at_k=2": 2
+    },
+    {
+     "cell": "d3@0.1",
+     "concavity_2s(1)-s(2)": 0.01262071801401388,
+     "d": 3,
+     "field": 0.1,
+     "measured_max_s(k)": 0.012620718014015826,
+     "min(k,d-k)+1_at_k=2": 2,
+     "orders_of_magnitude_above_the_numerical_floor": 12.10108406335935,
+     "product_ansatz_absolute_error": 0.012620718014015826,
+     "product_ansatz_prediction_for_every_s(k)": 0.0,
+     "s_of_1": 0.012620718014014853,
+     "schmidt_rank_at_k=2": 2
+    },
+    {
+     "cell": "d4@0.05",
+     "concavity_2s(1)-s(2)": 0.003072684005653541,
+     "d": 4,
+     "field": 0.05,
+     "measured_max_s(k)": 0.004483861451054877,
+     "min(k,d-k)+1_at_k=2": 3,
+     "orders_of_magnitude_above_the_numerical_floor": 11.65165218466068,
+     "product_ansatz_absolute_error": 0.004483861451054877,
+     "product_ansatz_prediction_for_every_s(k)": 0.0,
+     "s_of_1": 0.003778272728354209,
+     "schmidt_rank_at_k=2": 3
+    },
+    {
+     "cell": "d4@0.1",
+     "concavity_2s(1)-s(2)": 0.010420913156724491,
+     "d": 4,
+     "field": 0.1,
+     "measured_max_s(k)": 0.015122713903452656,
+     "min(k,d-k)+1_at_k=2": 3,
+     "orders_of_magnitude_above_the_numerical_floor": 12.179629736107618,
+     "product_ansatz_absolute_error": 0.015122713903452656,
+     "product_ansatz_prediction_for_every_s(k)": 0.0,
+     "s_of_1": 0.012771813530088574,
+     "schmidt_rank_at_k=2": 3
+    },
+    {
+     "cell": "d5@0.05",
+     "concavity_2s(1)-s(2)": 0.0027679946421504016,
+     "d": 5,
+     "field": 0.05,
+     "measured_max_s(k)": 0.0046316450696328145,
+     "min(k,d-k)+1_at_k=2": 3,
+     "orders_of_magnitude_above_the_numerical_floor": 11.665735271313952,
+     "product_ansatz_absolute_error": 0.0046316450696328145,
+     "product_ansatz_prediction_for_every_s(k)": 0.0,
+     "s_of_1": 0.003699819855890893,
+     "schmidt_rank_at_k=2": 3
+    },
+    {
+     "cell": "d5@0.1",
+     "concavity_2s(1)-s(2)": 0.009396140996005673,
+     "d": 5,
+     "field": 0.1,
+     "measured_max_s(k)": 0.015619717643631924,
+     "min(k,d-k)+1_at_k=2": 3,
+     "orders_of_magnitude_above_the_numerical_floor": 12.193673178906138,
+     "product_ansatz_absolute_error": 0.015619717643631924,
+     "product_ansatz_prediction_for_every_s(k)": 0.0,
+     "s_of_1": 0.01250792931981861,
+     "schmidt_rank_at_k=2": 3
+    },
+    {
+     "cell": "d6@0.05",
+     "concavity_2s(1)-s(2)": 0.002576548905703074,
+     "d": 6,
+     "field": 0.05,
+     "measured_max_s(k)": 0.0048560210613421174,
+     "min(k,d-k)+1_at_k=2": 3,
+     "orders_of_magnitude_above_the_numerical_floor": 11.686280561676103,
+     "product_ansatz_absolute_error": 0.0048560210613421174,
+     "product_ansatz_prediction_for_every_s(k)": 0.0,
+     "s_of_1": 0.0035888049828829943,
+     "schmidt_rank_at_k=2": 3
+    },
+    {
+     "cell": "d6@0.1",
+     "concavity_2s(1)-s(2)": 0.008747378393079416,
+     "d": 6,
+     "field": 0.1,
+     "measured_max_s(k)": 0.016378081050221267,
+     "min(k,d-k)+1_at_k=2": 3,
+     "orders_of_magnitude_above_the_numerical_floor": 12.21426301597627,
+     "product_ansatz_absolute_error": 0.016378081050221267,
+     "product_ansatz_prediction_for_every_s(k)": 0.0,
+     "s_of_1": 0.012135216393543067,
+     "schmidt_rank_at_k=2": 3
+    }
+   ],
+   "verdict": "ENTANGLED ACROSS ARMS.  The pointer-conditioned branch is a PURE state on the d arms (Cycle 931, 1.4e-15).  A pure PRODUCT branch has s(k) = 0 for EVERY k -- the product ansatz does not merely mispredict the concavity, it predicts the whole sequence is zero.  Measured s(k) reaches 1.6e-2 bit, twelve orders of magnitude above the numerical floor.  The spec's phrasing 'k*s(1) truncated by purity' is the ansatz for a MIXED branch; for the pure branch actually certified the product prediction is identically 0."
+  },
+  "b_symmetric_subspace": {
+   "rows": [
+    {
+     "cell": "d3@0.05",
+     "d": 3,
+     "field": 0.05,
+     "max|arm-swap invariance|": 0.0,
+     "max|branch - P_sym branch|": 6.206335383118183e-17,
+     "min(k,d-k)+1_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "3": 1
+     },
+     "schmidt_ranks_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "3": 1
+     }
+    },
+    {
+     "cell": "d3@0.1",
+     "d": 3,
+     "field": 0.1,
+     "max|arm-swap invariance|": 6.206335383118183e-17,
+     "max|branch - P_sym branch|": 6.206335383118183e-17,
+     "min(k,d-k)+1_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "3": 1
+     },
+     "schmidt_ranks_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 2,
+      "3": 1
+     }
+    },
+    {
+     "cell": "d4@0.05",
+     "d": 4,
+     "field": 0.05,
+     "max|arm-swap invariance|": 0.0,
+     "max|branch - P_sym branch|": 2.8609792490763984e-17,
+     "min(k,d-k)+1_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 2,
+      "4": 1
+     },
+     "schmidt_ranks_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 2,
+      "4": 1
+     }
+    },
+    {
+     "cell": "d4@0.1",
+     "d": 4,
+     "field": 0.1,
+     "max|arm-swap invariance|": 0.0,
+     "max|branch - P_sym branch|": 5.551115123125783e-17,
+     "min(k,d-k)+1_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 2,
+      "4": 1
+     },
+     "schmidt_ranks_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 2,
+      "4": 1
+     }
+    },
+    {
+     "cell": "d5@0.05",
+     "d": 5,
+     "field": 0.05,
+     "max|arm-swap invariance|": 0.0,
+     "max|branch - P_sym branch|": 3.1031676915590914e-17,
+     "min(k,d-k)+1_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 3,
+      "4": 2,
+      "5": 1
+     },
+     "schmidt_ranks_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 3,
+      "4": 2,
+      "5": 1
+     }
+    },
+    {
+     "cell": "d5@0.1",
+     "d": 5,
+     "field": 0.1,
+     "max|arm-swap invariance|": 2.8609792490763984e-17,
+     "max|branch - P_sym branch|": 5.594315114139762e-17,
+     "min(k,d-k)+1_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 3,
+      "4": 2,
+      "5": 1
+     },
+     "schmidt_ranks_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 3,
+      "4": 2,
+      "5": 1
+     }
+    },
+    {
+     "cell": "d6@0.05",
+     "d": 6,
+     "field": 0.05,
+     "max|arm-swap invariance|": 2.8609792490763984e-17,
+     "max|branch - P_sym branch|": 2.7809732887839817e-17,
+     "min(k,d-k)+1_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 4,
+      "4": 3,
+      "5": 2,
+      "6": 1
+     },
+     "schmidt_ranks_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 4,
+      "4": 3,
+      "5": 2,
+      "6": 1
+     }
+    },
+    {
+     "cell": "d6@0.1",
+     "d": 6,
+     "field": 0.1,
+     "max|arm-swap invariance|": 3.1031676915590914e-17,
+     "max|branch - P_sym branch|": 3.227937720230791e-17,
+     "min(k,d-k)+1_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 4,
+      "4": 3,
+      "5": 2,
+      "6": 1
+     },
+     "schmidt_ranks_by_k": {
+      "0": 1,
+      "1": 2,
+      "2": 3,
+      "3": 4,
+      "4": 3,
+      "5": 2,
+      "6": 1
+     }
+    }
+   ],
+   "spin_representation_form": "Write the branch as sum_{c in {0,1}^d} x_{|c|} |c> (Dicke amplitude c_n = x_n sqrt(C(d,n))).  Then the k | (d-k) Schmidt matrix is the binomially weighted HANKEL matrix T^(k)_{m,q} = sqrt(C(k,m) C(d-k,q)) x_{m+q}, and s(k) is the Shannon entropy of its normalised squared singular values.  The k-arm state lives on Sym^k (dimension k+1) and its Schmidt rank is min(k,d-k)+1.",
+   "verdict": "YES -- EXACTLY, to 1.3e-15.  The frozen preparation is arm-symmetric and the frozen Hamiltonian couples every arm to the pointer identically, so the state never leaves C^2 (x) Sym^d.  The whole problem is a spin j = d/2 problem of dimension 2(d+1), not 2^(d+1).",
+   "what_this_derives_for_free": [
+    "s(k) = s(d-k): T^(d-k) = (T^(k))^T identically (L3) -- reflection is TRANSPOSITION, true for ANY symmetric branch state, no dynamics used;",
+    "s(0) = s(d) = 0: T^(0) is a single row, rank 1;",
+    "Schmidt rank min(k,d-k)+1, verified cell by cell;",
+    "the whole 931 pair-complement collapse C(m_a,m_b) = s(m_a)+s(m_b)-s(m_a+m_b), since only block SIZES enter T^(k)."
+   ]
+  },
+  "c_small_field_expansion": {
+   "derived_form": "eps_k := 1 - (largest Schmidt weight) = lambda^2 sum_i mu_i^(k) + O(lambda^4), with {mu_i^(k)} the squared singular values of the doubly projected first-order Hankel perturbation; and\n  s(k) = lambda^2 sum_i mu_i^(k) log2( e / (mu_i^(k) lambda^2) ) + O(lambda^4 log lambda).\nThe SUM has the closed form E_k = sum_i mu_i^(k) = 2^-d [A + D - B_k - B_{d-k}] with A = sum_n C(d,n) phi_n^2, D = 2^-d |sum_n C(d,n) wbar^n phi_n|^2, B_k = 2^-k sum_q C(d-k,q) |sum_m C(k,m) wbar^m phi_{m+q}|^2, phi_n = sin((d-2n)t)/(d-2n), wbar = e^{2 i t}.",
+   "k_dependence_at_leading_order": "NOT k(d-k).  The naive product-truncation argument (which would give eps_k proportional to k(d-k)) is REFUTED: it needs the overlap deficit between pointer-flip histories to be small, and at the frozen time it is O(1).  Measured departure of E_k from k(d-k): 10.7% at d=4 rising to 76.2% at d=10.",
+   "leading_order": "lambda^2 -- and NOT analytic: s(k) carries a lambda^2 log(1/lambda).",
+   "rows": [
+    {
+     "d": 3,
+     "lambda": 0.01,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 6.0788322216997294e-05
+    },
+    {
+     "d": 3,
+     "lambda": 0.002,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 2.431745117809436e-06
+    },
+    {
+     "d": 3,
+     "lambda": 0.0005,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 1.5062495897273504e-07
+    },
+    {
+     "E_k": {
+      "0": -1.3877787807814457e-17,
+      "1": 0.11296325755452921,
+      "2": 0.11296325755452918,
+      "3": 0.0
+     },
+     "E_k_over_E_1": {
+      "1": 1.0,
+      "2": 0.9999999999999998
+     },
+     "d": 3,
+     "k(d-k)_over_(d-1)": {
+      "1": 1.0,
+      "2": 1.0
+     }
+    },
+    {
+     "d": 4,
+     "lambda": 0.01,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 6.360066881670349e-05
+    },
+    {
+     "d": 4,
+     "lambda": 0.002,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 2.5441932228337446e-06
+    },
+    {
+     "d": 4,
+     "lambda": 0.0005,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 1.6064891326258665e-07
+    },
+    {
+     "E_k": {
+      "0": -2.7755575615628914e-17,
+      "1": 0.11454857215558324,
+      "2": 0.13792442391303017,
+      "3": 0.11454857215558323,
+      "4": -5.551115123125783e-17
+     },
+     "E_k_over_E_1": {
+      "1": 1.0,
+      "2": 1.2040693420926902,
+      "3": 0.9999999999999999
+     },
+     "d": 4,
+     "k(d-k)_over_(d-1)": {
+      "1": 1.0,
+      "2": 1.3333333333333333,
+      "3": 1.0
+     }
+    },
+    {
+     "d": 5,
+     "lambda": 0.01,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 6.899549972262779e-05
+    },
+    {
+     "d": 5,
+     "lambda": 0.002,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 2.7598628665218216e-06
+    },
+    {
+     "d": 5,
+     "lambda": 0.0005,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 1.7374794613296132e-07
+    },
+    {
+     "E_k": {
+      "0": -1.3877787807814457e-17,
+      "1": 0.11189743699596867,
+      "2": 0.14240904030200538,
+      "3": 0.14240904030200535,
+      "4": 0.11189743699596869,
+      "5": 0.0
+     },
+     "E_k_over_E_1": {
+      "1": 1.0,
+      "2": 1.272674728976464,
+      "3": 1.2726747289764637,
+      "4": 1.0000000000000002
+     },
+     "d": 5,
+     "k(d-k)_over_(d-1)": {
+      "1": 1.0,
+      "2": 1.5,
+      "3": 1.5,
+      "4": 1.0
+     }
+    },
+    {
+     "d": 6,
+     "lambda": 0.01,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 7.580035731925337e-05
+    },
+    {
+     "d": 6,
+     "lambda": 0.002,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 3.0320964234350073e-06
+    },
+    {
+     "d": 6,
+     "lambda": 0.0005,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 1.8868042263295735e-07
+    },
+    {
+     "E_k": {
+      "0": -1.3877787807814457e-17,
+      "1": 0.10815574567155212,
+      "2": 0.1408980711393863,
+      "3": 0.14909339863643084,
+      "4": 0.1408980711393863,
+      "5": 0.10815574567155212,
+      "6": 0.0
+     },
+     "E_k_over_E_1": {
+      "1": 1.0,
+      "2": 1.3027331120000432,
+      "3": 1.3785065019957274,
+      "4": 1.3027331120000432,
+      "5": 1.0
+     },
+     "d": 6,
+     "k(d-k)_over_(d-1)": {
+      "1": 1.0,
+      "2": 1.6,
+      "3": 1.8,
+      "4": 1.6,
+      "5": 1.0
+     }
+    },
+    {
+     "d": 8,
+     "lambda": 0.01,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 9.189254378984351e-05
+    },
+    {
+     "d": 8,
+     "lambda": 0.002,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 3.6758995766702495e-06
+    },
+    {
+     "d": 8,
+     "lambda": 0.0005,
+     "max_rel_dev_of_eps_k_over_lambda2_from_E_k": 2.2997917533397458e-07
+    },
+    {
+     "E_k": {
+      "0": 4.163336342344337e-17,
+      "1": 0.10056191705030347,
+      "2": 0.1334442159513051,
+      "3": 0.14659985721985294,
+      "4": 0.1502877927470262,
+      "5": 0.14659985721985294,
+      "6": 0.1334442159513051,
+      "7": 0.10056191705030348,
+      "8": 2.7755575615628914e-17
+     },
+     "E_k_over_E_1": {
+      "1": 1.0,
+      "2": 1.3269856011650327,
+      "3": 1.4578069066296757,
+      "4": 1.4944801884777978,
+      "5": 1.4578069066296757,
+      "6": 1.3269856011650327,
+      "7": 1.0000000000000002
+     },
+     "d": 8,
+     "k(d-k)_over_(d-1)": {
+      "1": 1.0,
+      "2": 1.7142857142857142,
+      "3": 2.142857142857143,
+      "4": 2.2857142857142856,
+      "5": 2.142857142857143,
+      "6": 1.7142857142857142,
+      "7": 1.0
+     }
+    }
+   ],
+   "where_concavity_enters": "TWICE.  (i) E_k itself is concave in k -- it is A + D minus two positive binomial transforms B_k, B_{d-k} that grow with k; (ii) the -x log x of the entropy is concave in eps.  Neither alone gives the measured shape; the product of the two does."
+  },
+  "hamiltonian_quoted": "`H_lambda = - sum_<ij> Z_i Z_j - lambda sum_i X_i`",
+  "preparation_as_implemented": "prep_state(n, set([g['S']] + g['recording'])) -- the pointer AND every recording site (= every arm of a star) start in +X; all deeper sites start in +Z.  On a star K_{1,d} that is |+>^(x)(d+1).",
+  "preparation_quoted": {
+   "prep_center": "center: `n_center=(1,0,0)`, the `+X` state",
+   "prep_corner": "every corner: `n_corner=(0,0,1)`, the `+Z` state",
+   "prep_edge": "every edge: `n_edge=(0,0,1)`, the `+Z` state",
+   "prep_face": "every axial face: `n_face=(1,0,0)`, the `+X` state"
+  },
+  "star_hamiltonian_in_collective_form": "H_lambda = -2 Z_0 Jz - lambda X_0 - 2 lambda Jx  on C^2 (x) Sym^d, Jz = (1/2) sum_{j>=1} Z_j, Jx = (1/2) sum_{j>=1} X_j",
+  "statistic_definition_from_the_frozen_memo_bytes": {
+   "C_ab_definition": "`C_ab = I(F_a:F_b | Z_S)`",
+   "C_ab_dephasing": "Zero the off-diagonal `S` blocks before evaluating the formula",
+   "C_ab_formula": "`C_ab = sum_z p_z [S(rho_Fa^z)+S(rho_Fb^z)-S(rho_FaFb^z)]`",
+   "C_ab_tensor_order": "The joint tensor order is `(S,F_a,F_b)`",
+   "chi_definition": "`chi_Z(S:F) = S(sum_z p_z rho_F^z) - sum_z p_z S(rho_F^z)`."
+  }
+ },
+ "Q2_candidates": {
+  "A_collective_spin_symmetric_reduction": {
+   "grade_demanded": 1e-11,
+   "max_abs_residual_over_the_pinned_grid": 1.21617126092044e-14,
+   "max_rel_residual_over_the_pinned_grid": 3.3887917195744435e-12,
+   "name": "collective-spin / Schur-Weyl closed form",
+   "note": "s(k) = H(normalised sigma^2 of the binomially weighted Hankel matrix built from the 2(d+1)-dimensional branch amplitudes).  NO 2^(d+1) vector is built anywhere in this candidate.",
+   "rows": [
+    {
+     "cell": "d3@0.05",
+     "max_abs_residual": 3.5822039778921066e-16,
+     "max_rel_residual": 9.598910303274897e-14,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.003731886083641816,
+      "2": 0.003731886083642074,
+      "3": 0.0
+     }
+    },
+    {
+     "cell": "d3@0.1",
+     "max_abs_residual": 7.494005416219807e-16,
+     "max_rel_residual": 5.937859801556444e-14,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012620718014015602,
+      "2": 0.012620718014015606,
+      "3": 0.0
+     }
+    },
+    {
+     "cell": "d4@0.05",
+     "max_abs_residual": 4.5510470392251534e-15,
+     "max_rel_residual": 1.2045311089022976e-12,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.0037782727283540967,
+      "2": 0.0044838614510544555,
+      "3": 0.0037782727283540984,
+      "4": 0.0
+     }
+    },
+    {
+     "cell": "d4@0.1",
+     "max_abs_residual": 7.4593109467002705e-16,
+     "max_rel_residual": 4.9325213677402445e-14,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012771813530088053,
+      "2": 0.01512271390345191,
+      "3": 0.012771813530088057,
+      "4": 0.0
+     }
+    },
+    {
+     "cell": "d5@0.05",
+     "max_abs_residual": 3.907898310506752e-15,
+     "max_rel_residual": 1.0562401583631553e-12,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.003699819855892018,
+      "2": 0.004631645069629671,
+      "3": 0.004631645069629667,
+      "4": 0.003699819855892106,
+      "5": 0.0
+     }
+    },
+    {
+     "cell": "d5@0.1",
+     "max_abs_residual": 3.0375008064353892e-15,
+     "max_rel_residual": 2.428460162164297e-13,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012507929319818704,
+      "2": 0.015619717643631943,
+      "3": 0.015619717643631948,
+      "4": 0.012507929319818714,
+      "5": 0.0
+     }
+    },
+    {
+     "cell": "d6@0.05",
+     "max_abs_residual": 1.21617126092044e-14,
+     "max_rel_residual": 3.3887917195744435e-12,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.003588804982883525,
+      "2": 0.004601061060061175,
+      "3": 0.004856021061339611,
+      "4": 0.0046010610600611766,
+      "5": 0.0035888049828835234,
+      "6": 0.0
+     }
+    },
+    {
+     "cell": "d6@0.1",
+     "max_abs_residual": 4.803449304979779e-15,
+     "max_rel_residual": 3.9582724767353425e-13,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012135216393540461,
+      "2": 0.015523054394006822,
+      "3": 0.016378081050221864,
+      "4": 0.015523054394006829,
+      "5": 0.012135216393540472,
+      "6": 0.0
+     }
+    }
+   ],
+   "verdict": "EXACT at the pinned grade"
+  },
+  "B_elementary_pointer_only_closed_form": {
+   "grade_demanded": 1e-11,
+   "max_abs_residual_over_the_pinned_grid": 7.330018747520733e-05,
+   "max_rel_residual_over_the_pinned_grid": 0.005261420353447636,
+   "name": "elementary closed form (arm field dropped)",
+   "note": "x_n = [cos(R t) + i(lambda + sigma(d-2n)) sin(R t)/R]/sqrt2, R = sqrt((d-2n)^2 + lambda^2).  Fully elementary in (d,k,lambda,t).",
+   "rows": [
+    {
+     "cell": "d3@0.05",
+     "max_abs_residual": 3.6701444697463843e-06,
+     "max_rel_residual": 0.0009834556541888616,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.00373555622811177,
+      "2": 0.003735556228111678,
+      "3": 0.0
+     }
+    },
+    {
+     "cell": "d3@0.1",
+     "max_abs_residual": 4.866782141325042e-05,
+     "max_rel_residual": 0.003856184835062994,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012669385835428103,
+      "2": 0.012669385835428124,
+      "3": 0.0
+     }
+    },
+    {
+     "cell": "d4@0.05",
+     "max_abs_residual": 4.378328278723843e-06,
+     "max_rel_residual": 0.0010584656901089621,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.0037822719004050463,
+      "2": 0.004488239779333601,
+      "3": 0.00378227190040513,
+      "4": 0.0
+     }
+    },
+    {
+     "cell": "d4@0.1",
+     "max_abs_residual": 5.7874594612986746e-05,
+     "max_rel_residual": 0.004149596580572784,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012824811403840718,
+      "2": 0.015180588498065643,
+      "3": 0.012824811403840715,
+      "4": 0.0
+     }
+    },
+    {
+     "cell": "d5@0.05",
+     "max_abs_residual": 4.905773403401578e-06,
+     "max_rel_residual": 0.001185067079401497,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.003704204390601825,
+      "2": 0.004636550843034786,
+      "3": 0.004636550843034786,
+      "4": 0.0037042043906018365,
+      "5": 0.0
+     }
+    },
+    {
+     "cell": "d5@0.1",
+     "max_abs_residual": 6.482937894020276e-05,
+     "max_rel_residual": 0.004646627221629521,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012566049004682297,
+      "2": 0.01568454702257175,
+      "3": 0.015684547022571677,
+      "4": 0.012566049004682386,
+      "5": 0.0
+     }
+    },
+    {
+     "cell": "d6@0.05",
+     "max_abs_residual": 5.547587921619218e-06,
+     "max_rel_residual": 0.0013414603375059542,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.0035936192224265756,
+      "2": 0.0046065097474877114,
+      "3": 0.004861568649263737,
+      "4": 0.00460650974748763,
+      "5": 0.0035936192224265773,
+      "6": 0.0
+     }
+    },
+    {
+     "cell": "d6@0.1",
+     "max_abs_residual": 7.330018747520733e-05,
+     "max_rel_residual": 0.005261420353447636,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012199064868069546,
+      "2": 0.015595084858514737,
+      "3": 0.016451381237696475,
+      "4": 0.015595084858514735,
+      "5": 0.01219906486806947,
+      "6": 0.0
+     }
+    }
+   ],
+   "verdict": "REFUTED AT GRADE -- approximation only"
+  },
+  "B_error_law": {
+   "at_the_certified_fields": {
+    "lambda=0.05": 0.001708441889160651,
+    "lambda=0.10": 0.006706015220770184
+   },
+   "law": "max_k relative error = c(d) lambda^2 + O(lambda^4), c(d) growing roughly linearly in d (0.41 at d=3 to 1.06 at d=12)",
+   "rows": [
+    {
+     "d": 3,
+     "lambda": 0.2,
+     "max_rel_error": 0.015055650751266119,
+     "rel_over_lambda2": 0.3763912687816529
+    },
+    {
+     "d": 3,
+     "lambda": 0.1,
+     "max_rel_error": 0.0038561848350047597,
+     "rel_over_lambda2": 0.3856184835004759
+    },
+    {
+     "d": 3,
+     "lambda": 0.05,
+     "max_rel_error": 0.0009834556542445564,
+     "rel_over_lambda2": 0.3933822616978225
+    },
+    {
+     "d": 3,
+     "lambda": 0.0125,
+     "max_rel_error": 6.316974943935684e-05,
+     "rel_over_lambda2": 0.4042863964118837
+    },
+    {
+     "d": 3,
+     "lambda": 0.003125,
+     "max_rel_error": 4.015902811630938e-06,
+     "rel_over_lambda2": 0.411228447911008
+    },
+    {
+     "d": 5,
+     "lambda": 0.2,
+     "max_rel_error": 0.018137739794692083,
+     "rel_over_lambda2": 0.453443494867302
+    },
+    {
+     "d": 5,
+     "lambda": 0.1,
+     "max_rel_error": 0.0046466272216282335,
+     "rel_over_lambda2": 0.4646627221628233
+    },
+    {
+     "d": 5,
+     "lambda": 0.05,
+     "max_rel_error": 0.0011850670790970763,
+     "rel_over_lambda2": 0.4740268316388304
+    },
+    {
+     "d": 5,
+     "lambda": 0.0125,
+     "max_rel_error": 7.611719808168653e-05,
+     "rel_over_lambda2": 0.4871500677227937
+    },
+    {
+     "d": 5,
+     "lambda": 0.003125,
+     "max_rel_error": 4.838894978996181e-06,
+     "rel_over_lambda2": 0.49550284584920884
+    },
+    {
+     "d": 8,
+     "lambda": 0.2,
+     "max_rel_error": 0.026254518787078587,
+     "rel_over_lambda2": 0.6563629696769645
+    },
+    {
+     "d": 8,
+     "lambda": 0.1,
+     "max_rel_error": 0.006706015220770184,
+     "rel_over_lambda2": 0.6706015220770183
+    },
+    {
+     "d": 8,
+     "lambda": 0.05,
+     "max_rel_error": 0.001708441889160651,
+     "rel_over_lambda2": 0.6833767556642603
+    },
+    {
+     "d": 8,
+     "lambda": 0.0125,
+     "max_rel_error": 0.00010965078728428676,
+     "rel_over_lambda2": 0.7017650386194352
+    },
+    {
+     "d": 8,
+     "lambda": 0.003125,
+     "max_rel_error": 6.968626486435884e-06,
+     "rel_over_lambda2": 0.7135873522110344
+    }
+   ]
+  },
+  "C_error_law": {
+   "law": "max_k relative error proportional to lambda^2 (verified over four field decades)",
+   "rows": [
+    {
+     "d": 4,
+     "lambda": 0.1,
+     "max_rel_error": 0.005634897543436405,
+     "rel_over_lambda2": 0.5634897543436403
+    },
+    {
+     "d": 4,
+     "lambda": 0.05,
+     "max_rel_error": 0.0014333216542768128,
+     "rel_over_lambda2": 0.573328661710725
+    },
+    {
+     "d": 4,
+     "lambda": 0.01,
+     "max_rel_error": 5.892841745618835e-05,
+     "rel_over_lambda2": 0.5892841745618834
+    },
+    {
+     "d": 4,
+     "lambda": 0.001,
+     "max_rel_error": 6.019169978358954e-07,
+     "rel_over_lambda2": 0.6019169978358954
+    },
+    {
+     "d": 6,
+     "lambda": 0.1,
+     "max_rel_error": 0.006705623523290072,
+     "rel_over_lambda2": 0.6705623523290071
+    },
+    {
+     "d": 6,
+     "lambda": 0.05,
+     "max_rel_error": 0.001705690895920301,
+     "rel_over_lambda2": 0.6822763583681203
+    },
+    {
+     "d": 6,
+     "lambda": 0.01,
+     "max_rel_error": 7.014438111788371e-05,
+     "rel_over_lambda2": 0.701443811178837
+    },
+    {
+     "d": 6,
+     "lambda": 0.001,
+     "max_rel_error": 7.167384852786158e-07,
+     "rel_over_lambda2": 0.7167384852786158
+    }
+   ]
+  },
+  "C_leading_order_lambda2_log": {
+   "grade_demanded": 1e-11,
+   "max_abs_residual_over_the_pinned_grid": 9.186965257666074e-05,
+   "max_rel_residual_over_the_pinned_grid": 0.006705623523073922,
+   "name": "derived leading-order form",
+   "note": "s(k) = lambda^2 sum_i mu_i log2(e/(mu_i lambda^2)); error O(lambda^4 log lambda).",
+   "rows": [
+    {
+     "cell": "d3@0.05",
+     "max_abs_residual": 5.115186891346997e-06,
+     "max_rel_residual": 0.0013706706948447653,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.003737001270533279,
+      "2": 0.0037370012705332787,
+      "3": 0.0
+     }
+    },
+    {
+     "cell": "d3@0.1",
+     "max_abs_residual": 6.80219170276792e-05,
+     "max_rel_residual": 0.005389702626438789,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012688739931042532,
+      "2": 0.01268873993104253,
+      "3": 0.0
+     }
+    },
+    {
+     "cell": "d4@0.05",
+     "max_abs_residual": 5.858566455061755e-06,
+     "max_rel_residual": 0.0014333216542470415,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.00378368820847141,
+      "2": 0.004489720017509939,
+      "3": 0.0037836882084714084,
+      "4": 0.0
+     }
+    },
+    {
+     "cell": "d4@0.1",
+     "max_abs_residual": 7.767768832649298e-05,
+     "max_rel_residual": 0.0056348975433972055,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012843781390773974,
+      "2": 0.015200391591779149,
+      "3": 0.012843781390773969,
+      "4": 0.0
+     }
+    },
+    {
+     "cell": "d5@0.05",
+     "max_abs_residual": 6.341633079306845e-06,
+     "max_rel_residual": 0.001553682711635617,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.0037055682020371568,
+      "2": 0.004637986702710691,
+      "3": 0.00463798670271069,
+      "4": 0.0037055682020371568,
+      "5": 0.0
+     }
+    },
+    {
+     "cell": "d5@0.1",
+     "max_abs_residual": 8.404836117110841e-05,
+     "max_rel_residual": 0.006107705476844734,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012584324068229253,
+      "2": 0.015703766004802656,
+      "3": 0.015703766004802652,
+      "4": 0.012584324068229253,
+      "5": 0.0
+     }
+    },
+    {
+     "cell": "d6@0.05",
+     "max_abs_residual": 6.933607539519326e-06,
+     "max_rel_residual": 0.0017056908960679806,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.0035949263748700612,
+      "2": 0.004607892889515052,
+      "3": 0.004862954668881637,
+      "4": 0.004607892889515055,
+      "5": 0.0035949263748700612,
+      "6": 0.0
+     }
+    },
+    {
+     "cell": "d6@0.1",
+     "max_abs_residual": 9.186965257666074e-05,
+     "max_rel_residual": 0.006705623523073922,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012216590586049202,
+      "2": 0.015613610135272484,
+      "3": 0.016469950702797928,
+      "4": 0.015613610135272493,
+      "5": 0.012216590586049202,
+      "6": 0.0
+     }
+    }
+   ],
+   "verdict": "REFUTED AT GRADE -- approximation only"
+  },
+  "D_E_F_one_line_k_laws": {
+   "degeneracy_warning": "reflection makes only floor(d/2) of the d-1 values independent, so d=3 leaves ONE independent value (any 1-parameter law fits it exactly) and d=4,5 leave TWO (any 2-parameter law fits them exactly). The first cell that actually tests a 2-parameter law is d=6; the d=8/10/12 rows are added from the DERIVED form for that reason.",
+   "note": "three one-line laws in k, each fitted deterministically (Nelder-Mead on the max relative residual, fixed start, no randomness) SEPARATELY ON EVERY CELL -- i.e. given every advantage, refitted per cell, with no requirement to predict across cells at all.",
+   "rows": [
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 3.277109812982471e-14,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 3.242246942631593e-14,
+     "F_quadratic_in_k(d-k)_best_max_rel": 3.253867899415219e-14,
+     "cell": "d3@0.05",
+     "fitted_q": 0.4789171885801137,
+     "n_independent_values": 1
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 3.903593017689583e-14,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 3.8073776968313304e-14,
+     "F_quadratic_in_k(d-k)_best_max_rel": 3.8623578801787776e-14,
+     "cell": "d3@0.1",
+     "fitted_q": 0.3237396480062762,
+     "n_independent_values": 1
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.04233418791875613,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 5.876881339412773e-13,
+     "F_quadratic_in_k(d-k)_best_max_rel": 5.876881339412773e-13,
+     "cell": "d4@0.05",
+     "fitted_q": 0.29243332011495154,
+     "n_independent_values": 2
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.0406001608796888,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 1.086594928364746e-15,
+     "F_quadratic_in_k(d-k)_best_max_rel": 1.086594928364746e-15,
+     "cell": "d4@0.1",
+     "fitted_q": 0.29702868093804213,
+     "n_independent_values": 2
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.06792827706941565,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 6.920477077989201e-13,
+     "F_quadratic_in_k(d-k)_best_max_rel": 6.92516574809624e-13,
+     "cell": "d5@0.05",
+     "fitted_q": 0.31593081039489207,
+     "n_independent_values": 2
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.06512068189912495,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 1.2551436018042492e-13,
+     "F_quadratic_in_k(d-k)_best_max_rel": 1.2565305008114523e-13,
+     "cell": "d5@0.1",
+     "fitted_q": 0.32110707266016514,
+     "n_independent_values": 2
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.10977173512006702,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 0.0020526041224566516,
+     "F_quadratic_in_k(d-k)_best_max_rel": 0.007743028469449952,
+     "cell": "d6@0.05",
+     "fitted_q": 0.34012053519355595,
+     "n_independent_values": 3
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.10522395927197697,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 0.0019702878702032313,
+     "F_quadratic_in_k(d-k)_best_max_rel": 0.007980379845089099,
+     "cell": "d6@0.1",
+     "fitted_q": 0.3458140785056862,
+     "n_independent_values": 3
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.17335297519566223,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 0.007029331212926202,
+     "F_quadratic_in_k(d-k)_best_max_rel": 0.024511922745056307,
+     "cell": "d8@0.05",
+     "fitted_q": 0.3767038725518236,
+     "n_independent_values": 4,
+     "source": "DERIVED (abstract star, declared non-claim for certification; a mathematical test of the k-law only)"
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.16620683126005042,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 0.0067933595665659215,
+     "F_quadratic_in_k(d-k)_best_max_rel": 0.024972879513173032,
+     "cell": "d8@0.1",
+     "fitted_q": 0.38337451653138166,
+     "n_independent_values": 4,
+     "source": "DERIVED (abstract star, declared non-claim for certification; a mathematical test of the k-law only)"
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.22913067359646225,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 0.012596183169145491,
+     "F_quadratic_in_k(d-k)_best_max_rel": 0.04216332906606306,
+     "cell": "d10@0.05",
+     "fitted_q": 0.4051308505231766,
+     "n_independent_values": 5,
+     "source": "DERIVED (abstract star, declared non-claim for certification; a mathematical test of the k-law only)"
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.21982366859450012,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 0.012221813848452992,
+     "F_quadratic_in_k(d-k)_best_max_rel": 0.042678064899817944,
+     "cell": "d10@0.1",
+     "fitted_q": 0.41264901576380963,
+     "n_independent_values": 5,
+     "source": "DERIVED (abstract star, declared non-claim for certification; a mathematical test of the k-law only)"
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.27758981221473117,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 0.017789018999377196,
+     "F_quadratic_in_k(d-k)_best_max_rel": 0.05799402988032065,
+     "cell": "d12@0.05",
+     "fitted_q": 0.42767325455753047,
+     "n_independent_values": 6,
+     "source": "DERIVED (abstract star, declared non-claim for certification; a mathematical test of the k-law only)"
+    },
+    {
+     "D_parabola_H2(K k(d-k))_best_max_rel": 0.2665312215402993,
+     "E_geometric_H2(A(1-q^k)(1-q^{d-k}))_best_max_rel": 0.01731192982513004,
+     "F_quadratic_in_k(d-k)_best_max_rel": 0.05846071169125009,
+     "cell": "d12@0.1",
+     "fitted_q": 0.4359475817505217,
+     "n_independent_values": 6,
+     "source": "DERIVED (abstract star, declared non-claim for certification; a mathematical test of the k-law only)"
+    }
+   ],
+   "verdict": "ALL THREE REFUTED AT GRADE (best-case relative residuals are 8-11 orders of magnitude above the 1e-11 identity grade even with per-cell refitting).",
+   "worst_over_grid": {
+    "D_parabola": 0.27758981221473117,
+    "E_geometric": 0.017789018999377196,
+    "F_quadratic": 0.05846071169125009
+   }
+  },
+  "G_renormalised_elementary_form": {
+   "grade_demanded": 1e-11,
+   "max_abs_residual_over_the_pinned_grid": 0.00013686140693673458,
+   "max_rel_residual_over_the_pinned_grid": 0.010844185472233427,
+   "name": "elementary form with M -> M sqrt(1+lambda^2)",
+   "note": "the natural 'dress the arm splitting' repair of candidate B.",
+   "rows": [
+    {
+     "cell": "d3@0.05",
+     "max_abs_residual": 1.0348313423637606e-05,
+     "max_rel_residual": 0.0027729446161279207,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.003742234397065571,
+      "2": 0.0037422343970655693,
+      "3": 0.0
+     }
+    },
+    {
+     "cell": "d3@0.1",
+     "max_abs_residual": 0.00013686140693673458,
+     "max_rel_residual": 0.010844185472233427,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012757579420951588,
+      "2": 0.012757579420951574,
+      "3": 0.0
+     }
+    },
+    {
+     "cell": "d4@0.05",
+     "max_abs_residual": 9.179577554977152e-06,
+     "max_rel_residual": 0.0024295698629928485,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.003787452305909186,
+      "2": 0.004492934444330398,
+      "3": 0.0037874523059091753,
+      "4": 0.0
+     }
+    },
+    {
+     "cell": "d4@0.1",
+     "max_abs_residual": 0.00012131924231194649,
+     "max_rel_residual": 0.009498983212222438,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012893132772400485,
+      "2": 0.015242646034324299,
+      "3": 0.012893132772400492,
+      "4": 0.0
+     }
+    },
+    {
+     "cell": "d5@0.05",
+     "max_abs_residual": 8.623079969955708e-06,
+     "max_rel_residual": 0.002330675629037978,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.0037084429358608486,
+      "2": 0.004639840075062955,
+      "3": 0.004639840075062949,
+      "4": 0.0037084429358609375,
+      "5": 0.0
+     }
+    },
+    {
+     "cell": "d5@0.1",
+     "max_abs_residual": 0.00011403200308062779,
+     "max_rel_residual": 0.009116777059168853,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012621961322899238,
+      "2": 0.015728364376057763,
+      "3": 0.01572836437605769,
+      "4": 0.012621961322899247,
+      "5": 0.0
+     }
+    },
+    {
+     "cell": "d6@0.05",
+     "max_abs_residual": 8.428236846164637e-06,
+     "max_rel_residual": 0.002348480033427167,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.003597233219729159,
+      "2": 0.0046089413040637725,
+      "3": 0.004863582439775455,
+      "4": 0.004608941304063685,
+      "5": 0.0035972332197292444,
+      "6": 0.0
+     }
+    },
+    {
+     "cell": "d6@0.1",
+     "max_abs_residual": 0.00011155318683760129,
+     "max_rel_residual": 0.009192517316539717,
+     "s_pred": {
+      "0": 0.0,
+      "1": 0.012246769580380668,
+      "2": 0.01562777801294323,
+      "3": 0.016478797476245723,
+      "4": 0.01562777801294332,
+      "5": 0.012246769580380661,
+      "6": 0.0
+     }
+    }
+   ],
+   "verdict": "REFUTED AT GRADE -- approximation only"
+  }
+ },
+ "Q3_consequences": {
+  "becomes_derived": {
+   "the_0.02_gate_crossing_for_STAR_geometries": "T(d) crosses INDEP_MAX = 0.02 bit between d = 2 and d = 3 at lambda = 0.10 and the crossing field lambda*(d) is now solvable from the reduction (sealed, S6)",
+   "the_929_multiplicity_ladder": {
+    "claim": "G_d(m) = s(m) + s(1) - s(m+1) with s from the reduction",
+    "max_abs_residual": 8.35616298378028e-14,
+    "rungs": 28
+   },
+   "the_T(d)_baseline_table": {
+    "claim": "T(d) = 2 s(1) - s(2) at every degree in the pinned 927/929 table, computed from the 2(d+1)-dimensional reduction with no 2^(d+1) vector anywhere",
+    "max_abs_residual": 2.9676348184404233e-14,
+    "n_rows": 16,
+    "rows": {
+     "d10@0.05": {
+      "derived": 0.0021503985543843227,
+      "pinned": 0.0021503985543903014,
+      "residual": -5.978724459954066e-15
+     },
+     "d10@0.1": {
+      "derived": 0.007291295046015122,
+      "pinned": 0.007291295046010926,
+      "residual": 4.196296088387896e-15
+     },
+     "d12@0.05": {
+      "derived": 0.0020175420572986344,
+      "pinned": 0.0020175420573283107,
+      "residual": -2.9676348184404233e-14
+     },
+     "d12@0.1": {
+      "derived": 0.006834357350868375,
+      "pinned": 0.006834357350845646,
+      "residual": 2.2729214343986115e-14
+     },
+     "d2@0.05": {
+      "derived": 0.006391471799024732,
+      "pinned": 0.00639147179902211,
+      "residual": 2.622034533938944e-15
+     },
+     "d2@0.1": {
+      "derived": 0.02168212599398566,
+      "pinned": 0.021682125993982747,
+      "residual": 2.914335439641036e-15
+     },
+     "d3@0.05": {
+      "derived": 0.003731886083641558,
+      "pinned": 0.0037318860836412773,
+      "residual": 2.8059152223924855e-16
+     },
+     "d3@0.1": {
+      "derived": 0.012620718014015599,
+      "pinned": 0.012620718014014907,
+      "residual": 6.92154666914746e-16
+     },
+     "d4@0.05": {
+      "derived": 0.003072684005653738,
+      "pinned": 0.003072684005653732,
+      "residual": 6.071532165918825e-18
+     },
+     "d4@0.1": {
+      "derived": 0.010420913156724197,
+      "pinned": 0.010420913156725112,
+      "residual": -9.159339953157541e-16
+     },
+     "d5@0.05": {
+      "derived": 0.0027679946421543646,
+      "pinned": 0.002767994642150348,
+      "residual": 4.016752208624297e-15
+     },
+     "d5@0.1": {
+      "derived": 0.009396140996005465,
+      "pinned": 0.009396140996005975,
+      "residual": -5.100087019371813e-16
+     },
+     "d6@0.05": {
+      "derived": 0.0025765489057058754,
+      "pinned": 0.002576548905706226,
+      "residual": -3.5041414214731503e-16
+     },
+     "d6@0.1": {
+      "derived": 0.008747378393074101,
+      "pinned": 0.00874737839307383,
+      "residual": 2.706168622523819e-16
+     },
+     "d8@0.05": {
+      "derived": 0.0023240388889417367,
+      "pinned": 0.002324038888942355,
+      "residual": -6.184289191857317e-16
+     },
+     "d8@0.1": {
+      "derived": 0.007886341392383525,
+      "pinned": 0.007886341392383513,
+      "residual": 1.214306433183765e-17
+     }
+    }
+   },
+   "the_arity_dilution_law": "a corollary of the ladder once s(k) is a function, since G_d(m) is built from it",
+   "the_reflection_and_boundary_conditions": "s(k)=s(d-k) and s(0)=s(d)=0 are now THEOREMS about one Hankel matrix (L3), not measurements"
+  },
+  "explicit_non_overreach": "s(k) alone does NOT decide 926's conjunction.  It gives every C_ab on an isomorphic-arm spider; the conjunction also needs the content gate chi_Z(S:F) >= (1-delta) H(Z_S) and the excess gate, which are pointer-side quantities this block does not derive.",
+  "stays_empirical_or_imported": [
+   "the frozen Hamiltonian, preparation, partition rule and comparison time -- all imported from the memo bytes, none derived here;",
+   "everything on geometries whose arms are NOT pairwise isomorphic: the collective reduction needs the arm-permutation symmetry, so chains, loop-carrying geometries, mixed-arm spiders and the deeper cube shells are untouched;",
+   "926's conjunction where it is decided on non-star controls -- the A-family (coordinate stars K_{1,5}, K_{1,6}) IS covered, the B/C/D/E controls are NOT, so 'the gate crossings are derived' would OVERREACH if stated without that restriction;",
+   "the persistence razor (931's named successor) -- untouched;",
+   "the chi / excess / H(Z_S) side of the certification, which is a pointer-marginal statistic, not an arm-entropy statistic."
+  ],
+  "the_no_go": "There is NO elementary closed form for d >= 4.  The Z2 symmetry splits the collective Hamiltonian into two irreducible blocks of dimension d+1; at both frozen fields their Galois groups are S3 (d=2) and D4 (d=3) -- solvable -- and S5 (d=4) -- NOT solvable by radicals.  So the branch amplitudes, hence s(k), are non-radical algebraic-transcendental functions of the frozen data for every certified degree except d = 3.  The correct closed form is STRUCTURAL (candidate A), not elementary."
+ },
+ "authorship": {
+  "constitutional_effect": "none",
+  "independent_audit_required": true,
+  "worker": "Claude Opus 5 (substitution disclosed)"
+ },
+ "block": "blockM13",
+ "campaign": "toe-time-expansion-20260802",
+ "caps_declared": [
+  "no axiom, primitive, registry, policy, queue or audit surface is touched",
+  "degrees 7..15 are ABSTRACT stars; lattice constructibility at d>=7 was already answered negatively by Cycle 929 -- these carry no certification",
+  "the off-grid fields (0.0375, 0.1625) and times (Jt=0.45, 1.1) are DECLARED NON-CLAIM diagnostics",
+  "the collective reduction requires PAIRWISE ISOMORPHIC ARMS; nothing here applies to chains, loops or mixed-arm spiders",
+  "the Galois no-go is computed at the two frozen fields as exact rationals (1/20 and 1/10) for d in {2,3,4}; it is not a proof for every d, it is a proof that solvability FAILS already at d=4",
+  "s(k) does not by itself decide 926's conjunction -- the content and excess gates are pointer-side statistics this block does not derive"
+ ],
+ "cycle": 933,
+ "date": "2026-07-28",
+ "frozen_constants_byte_verified": {
+  "content_H_min": {
+   "byte_verified": true,
+   "code_value": 0.05,
+   "memo_value": 0.05,
+   "quote": "1. `H(Z_S) >= 0.05 bit`;"
+  },
+  "content_gate": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "2. `chi_Z(S:F) >= (1-delta) H(Z_S)`;"
+  },
+  "deadline": {
+   "byte_verified": true,
+   "code_value": 1.0,
+   "memo_value": 1.0,
+   "quote": "The headline onset deadline remains `Jt <= 1`"
+  },
+  "deltas": {
+   "byte_verified": true,
+   "code_value": 0.1,
+   "memo_value": 0.1,
+   "quote": "Use `delta in {0.05,0.10,0.20}`, with headline `delta=0.10`"
+  },
+  "drift": {
+   "byte_verified": true,
+   "code_value": 0.1,
+   "memo_value": 0.1,
+   "quote": "center-Z total-variation drift from `t=0` at most `0.10`"
+  },
+  "excess_min": {
+   "byte_verified": true,
+   "code_value": 0.02,
+   "memo_value": 0.02,
+   "quote": "`chi_Z(S:F)(t) - chi_Z(S:F)(0) >= 0.02 bit`"
+  },
+  "hamiltonian": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "`H_lambda = - sum_<ij> Z_i Z_j - lambda sum_i X_i`"
+  },
+  "indep_max": {
+   "byte_verified": true,
+   "code_value": 0.02,
+   "memo_value": 0.02,
+   "quote": "every pair has `C_ab <= 0.02 bit`"
+  },
+  "memo_lambdas": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "with `lambda in {0.05,0.10,0.20}` and open boundaries"
+  },
+  "persistence": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "persistence flag requires three consecutive certification samples"
+  },
+  "prep_center": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "center: `n_center=(1,0,0)`, the `+X` state"
+  },
+  "prep_corner": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "every corner: `n_corner=(0,0,1)`, the `+Z` state"
+  },
+  "prep_edge": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "every edge: `n_edge=(0,0,1)`, the `+Z` state"
+  },
+  "prep_face": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "every axial face: `n_face=(1,0,0)`, the `+X` state"
+  },
+  "r_ind_def": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "`R_ind` is the largest pairwise-independent certifying subset"
+  },
+  "t0_anchor_tol": {
+   "byte_verified": true,
+   "code_value": 1e-09,
+   "memo_value": 1e-09,
+   "quote": "value verified at most `1e-9 bit`"
+  },
+  "theta_A": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "`theta(t) = (1/6) sum_a ([1-Tr rho_(S,a)(t)^2] - [1-Tr rho_(S,a)(0)^2])`"
+  },
+  "tiebreak_1": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "1. assign each axial face site to its own signed-axis fragment;"
+  },
+  "tiebreak_2": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "2. assign an edge with `x != 0` to `F_(sign(x)x)`;"
+  },
+  "tiebreak_3": {
+   "byte_verified": true,
+   "code_value": null,
+   "memo_value": null,
+   "quote": "3. for an edge with `x=0` and for every corner, ignore the corner's `x` sign and map `(sign(y),sign(z))` by `(+,+)->+y`, `(-,+)->+z`, `(-,-)->-y`, and `(+,-)->-z`."
+  },
+  "xi_reg_def": {
+   "byte_verified": true,
+   "code_value": 0.02,
+   "memo_value": 0.02,
+   "quote": "`xi_reg`, defined as the largest Manhattan shell whose one-site reduction has excess at least `0.02 bit` at that maximizer"
+  }
+ },
+ "frozen_constants_cross_check": {
+  "all_seven_receipts_agree": true,
+  "count": 21,
+  "identical_to_917_receipt": true,
+  "identical_to_919_receipt": true,
+  "identical_to_921_receipt": true,
+  "identical_to_926_receipt": true,
+  "identical_to_927_receipt": true,
+  "identical_to_929_receipt": true,
+  "identical_to_931_receipt": true,
+  "n_constants_917": 21,
+  "n_constants_919": 21,
+  "n_constants_921": 21,
+  "n_constants_926": 21,
+  "n_constants_927": 21,
+  "n_constants_929": 21,
+  "n_constants_931": 21,
+  "n_receipts_cross_checked": 7
+ },
+ "git_head": "6ffdd84aa6",
+ "pins": {
+  "docs/ARITY_IS_DEGREE_MULTIPLICITY_TAX_CYCLE929_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "blob": "0b316a500c4c6768b36651d71eb8702731d19f9e",
+   "bytes": 14573,
+   "sha256": "b45a3f9014850af577a27c4206504f6935abaccd676166d58e4e8f4f966ed4a0",
+   "verified": true
+  },
+  "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": {
+   "blob": "5dff1d8b1692099cd86b53959834b6bcb5865a71",
+   "bytes": 49165,
+   "sha256": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e",
+   "verified": true
+  },
+  "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md": {
+   "blob": "5f056aa69d1cc06dbfa2dc9ed6804df40c7b39fe",
+   "bytes": 6705,
+   "sha256": "74a0a4c0e40e78ec042824ba706389e53e8bde22443964388987557a1819552c",
+   "verified": true
+  },
+  "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md": {
+   "blob": "d5b36708949d06bf619b2452e8f2897468e51194",
+   "bytes": 9340,
+   "sha256": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad",
+   "verified": true
+  },
+  "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+   "blob": "4a863da1f3f255354839277271a3a69a5c205133",
+   "bytes": 8846,
+   "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+   "verified": true
+  },
+  "docs/PAIR_COMPLEMENT_THEOREM_ADDITIVITY_DERIVED_CYCLE931_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "blob": "d5d9776fe023143d465d4da039730e431acf84ca",
+   "bytes": 12819,
+   "sha256": "f9d9a3cf0051182c9608d94af37737e59735780c63a6dd0ae813891a654cfb76",
+   "verified": true
+  },
+  "outputs/additivity_identity_block_cycle931_ship_receipt_2026_07_28.json": {
+   "blob": "0d32835e3ab332941aae9f1f04b31b6802c09708",
+   "bytes": 4866,
+   "sha256": "2cc09b5be0c45472ea07d96177361c1d788a02f8f23879e559508927f024625c",
+   "verified": true
+  },
+  "outputs/additivity_identity_cycle931_receipt_2026_07_28.json": {
+   "blob": "d3894ad5792018b541eda7185399c7c979ec09cf",
+   "bytes": 155135,
+   "sha256": "89699b750d39e6bbf1b953e4abc34a71784344b89012be31226acb6ccfd97b46",
+   "verified": true
+  },
+  "outputs/additivity_identity_independent_check_cycle931_receipt_2026_07_28.json": {
+   "blob": "1999a83750e2c54798e947d18adbf76b55f6af6f",
+   "bytes": 130634,
+   "sha256": "56e6e5badeae9fc8ce8a70ac11347d26474a30962497da78cd759944728814b2",
+   "verified": true
+  },
+  "outputs/arity_variable_block_cycle929_ship_receipt_2026_07_28.json": {
+   "blob": "0d21f07314fd362ae38cdea3fe8ba163a5db7710",
+   "bytes": 4929,
+   "sha256": "18fd68bfc6913b8d16fbb6afd7c7216506304bfb62d376f2ceb60290bf57da3f",
+   "verified": true
+  },
+  "outputs/arity_variable_cycle929_receipt_2026_07_28.json": {
+   "blob": "fc0080cc4c283d6dc440ac20a614ae187f7e488b",
+   "bytes": 2565134,
+   "sha256": "40440237f0af14882b06331a054c19f3da52f34e6e7b2cde846a0b390a3679a3",
+   "verified": true
+  },
+  "outputs/arity_variable_independent_check_cycle929_receipt_2026_07_28.json": {
+   "blob": "7598212188d1ba5de6d42ae982ea70ea16c13207",
+   "bytes": 81193,
+   "sha256": "c2825fab5490afc0528c3a45e28d390a112d5319f369c4da6d0e463e7605eb6d",
+   "verified": true
+  },
+  "outputs/comparator_recovery_cycle915_receipt_2026_07_28.json": {
+   "blob": "9931c298a5917eb90de290cbb82c237508c9e692",
+   "bytes": 97093,
+   "sha256": "d7d27ce19d231624415db1e71ee77eae16b5175dd403b403c254b38fb171b0a7",
+   "verified": true
+  },
+  "outputs/degree_five_cycle919_receipt_2026_07_28.json": {
+   "blob": "587349db8b77c31d20f0aa04e6e69a1bb206a6d0",
+   "bytes": 580379,
+   "sha256": "cf85c74b62f1e6a83287a824f56315f3b1cf4b9387056d94906bb0195aae04f5",
+   "verified": true
+  },
+  "outputs/gate_sweep_separation_cycle926_receipt_2026_07_28.json": {
+   "blob": "67f39ff8875def945e32e7dccc653423a8c4fc79",
+   "bytes": 1857913,
+   "sha256": "59d24f68b7bdd3ba8fa2e446a2e381c4c5dd97443915bf38b0823556369a4c07",
+   "verified": true
+  },
+  "outputs/geometry_ladder_cycle917_receipt_2026_07_28.json": {
+   "blob": "11e336cf0a86c46492f6ccf03b13963357840b71",
+   "bytes": 447403,
+   "sha256": "37568809db0d5f319b6fe9a41962cc58c8215ade2c4b9acb24eab4b665535240",
+   "verified": true
+  },
+  "outputs/loop_cost_cycle921_receipt_2026_07_28.json": {
+   "blob": "01e9689639dee1dc6f73c6a2834a84da3dc9f6cc",
+   "bytes": 3685637,
+   "sha256": "86e58837349baa719d116948c67a166b922cb6b21fefe6108ec41fa08727df6f",
+   "verified": true
+  },
+  "outputs/size_channel_cycle927_receipt_2026_07_28.json": {
+   "blob": "12edc846cdb31c19e5f9bb709533ee18d5d5a092",
+   "bytes": 4991816,
+   "sha256": "2dd871f70c6486a20babb7b74048befb51a108a0feea57aee86ba3ff7f2fe51c",
+   "verified": true
+  },
+  "scripts/frontier_cycle927_size_channel_2026_07_28.py": {
+   "blob": "fe2e0f14d1762e44c00b028ca40c5ead851fb48a",
+   "bytes": 185245,
+   "sha256": "caa3becbd2bfc97afc106e998e5f2b9ee23cb46efd8c673d04ee69ed554314a9",
+   "verified": true
+  },
+  "scripts/frontier_cycle929_arity_variable_2026_07_28.py": {
+   "blob": "1d629b43c4be15f4ffd7a2ac562ce8538088414e",
+   "bytes": 154338,
+   "sha256": "626be10a174d9ff41f72daa97a7eddc403e5ce191aff56791b38d0cea740c08a",
+   "verified": true
+  },
+  "scripts/frontier_cycle929_arity_variable_independent_check_2026_07_28.py": {
+   "blob": "429212195446c2b1213e54a9f0c6ebadf838f39a",
+   "bytes": 75603,
+   "sha256": "5a47544dbbc56ec4d128f1999f85746eaffea370279dcef2e6a28a3ef4ad5f14",
+   "verified": true
+  },
+  "scripts/frontier_cycle931_additivity_identity_2026_07_28.py": {
+   "blob": "a0cd5b6fa01ad6b262c18b0e69c57600d1979367",
+   "bytes": 121481,
+   "sha256": "9ec41f8cc7562026e86a5332819b56b860b1ee3f4a4ca21540f129623ec80371",
+   "verified": true
+  },
+  "scripts/frontier_cycle931_additivity_identity_independent_check_2026_07_28.py": {
+   "blob": "79da7a69645ab172b1bfd661a250011814a2dfdf",
+   "bytes": 64857,
+   "sha256": "8dac281aab983cb647dc7989f3ded009e08a6062656047675c277dc8c24b5315",
+   "verified": true
+  }
+ },
+ "propagator_calls": {
+  "A": 183,
+  "B": 16,
+  "C": 16,
+  "S": 1360
+ },
+ "recovered_d1_note": {
+  "blob": "dd247a8494f171d4dcaf9a532a09491202b1f512",
+  "bytes": 5230,
+  "in_tree_at_head": false,
+  "path": "docs/REGISTRATION_REDUNDANCY_ONSET_BOUNDED_NOTE_2026-07-09.md",
+  "sha256": "41b4f26af908a7b910fbb5683f9d50432f36328bced7cf107585f7f70771df04",
+  "sha256_matches_917_receipt": true,
+  "sha256_matches_919_receipt": true,
+  "sha256_matches_921_receipt": true,
+  "sha256_matches_926_receipt": true,
+  "sha256_matches_927_receipt": true,
+  "sha256_matches_929_receipt": true,
+  "sha256_matches_931_receipt": true
+ },
+ "restriction_gate_seconds": 0.4536784579977393,
+ "restriction_gates": {
+  "T_of_degree_table": {
+   "max_abs_deviation": 0.0,
+   "rows": 16
+  },
+  "additivity_residuals": {
+   "max_abs_deviation": 0.0
+  },
+  "c931_identity_residuals": {
+   "max_abs_deviation": 0.0,
+   "rows": 28
+  },
+  "c931_s_of_k_table": {
+   "max_abs_deviation": 0.0,
+   "reflection_max_abs_deviation": 0.0,
+   "values_reproduced": 44
+  },
+  "deviation_exactly_zero_everywhere": true,
+  "gate_order": "pins -> frozen constants (21/21, SEVEN-way) -> statistic definition bytes -> partition rule -> structural lemma -> 929 ladder -> 929 additivity + last step -> 927/929 T(d) table -> 931 s(k) table -> 931 identity residuals -> SEAL -> any new number",
+  "ladder": {
+   "cells": 8,
+   "max_abs_deviation": 0.0,
+   "rungs_reproduced": 28
+  },
+  "last_step_relation": {
+   "max_abs_deviation": 0.0
+  }
+ },
+ "runner": "frontier_cycle933_sk_shape_2026_07_28.py",
+ "runner_sha256": "29ab80e096df2e62362a837426cbda0705f5c4f04726a237f092df1d740e966e",
+ "runtime_limit_seconds": 900.0,
+ "runtime_seconds": 4.962556291982764,
+ "runtime_within_limit": true,
+ "schema": "frontier_cycle933_sk_shape_v1",
+ "seal": {
+  "built_from": "the derived collective-spin reduction ONLY (dimension 2(d+1)); no full-space vector at any sealed cell existed when this digest was fixed",
+  "full_space_evaluations_at_sealed_cells_before_seal": 0,
+  "n_sealed_cells": 9,
+  "predictions": {
+   "S1_T_of_degree_13_14_15": {
+    "d13@0.05": 0.00196130203203806,
+    "d13@0.1": 0.006640427681878443,
+    "d14@0.05": 0.0019102686007796618,
+    "d14@0.1": 0.006464155592147662,
+    "d15@0.05": 0.0018636172246691328,
+    "d15@0.1": 0.006302747854169784
+   },
+   "S2_full_ladder_d13": {
+    "d13@0.05": {
+     "0": 0.0,
+     "1": 0.0029164694365084384,
+     "10": 0.004340224807344271,
+     "11": 0.0038716368409786608,
+     "12": 0.0029164694365084315,
+     "13": 0.0,
+     "2": 0.003871636840978817,
+     "3": 0.004340224807344351,
+     "4": 0.004604249764895279,
+     "5": 0.004752555085971132,
+     "6": 0.004820141509458282,
+     "7": 0.004820141509458283,
+     "8": 0.004752555085971124,
+     "9": 0.004604249764895199
+    },
+    "d13@0.1": {
+     "0": 0.0,
+     "1": 0.009863093766936941,
+     "10": 0.014679051843214563,
+     "11": 0.013085759851995369,
+     "12": 0.00986309376693693,
+     "13": 0.0,
+     "2": 0.013085759851995438,
+     "3": 0.014679051843214545,
+     "4": 0.015582152972296988,
+     "5": 0.016091341393388303,
+     "6": 0.016323868957063715,
+     "7": 0.01632386895706371,
+     "8": 0.01609134139338829,
+     "9": 0.015582152972296991
+    }
+   },
+   "S3_off_grid_cells": {
+    "d7@0.0375@Jt0.45": {
+     "0": 0.0,
+     "1": 0.0005443042195019033,
+     "2": 0.000817601327791851,
+     "3": 0.0009377098297056016,
+     "4": 0.0009377098297056817,
+     "5": 0.0008176013277919293,
+     "6": 0.0005443042195018989,
+     "7": 0.0
+    },
+    "d7@0.1625@Jt0.45": {
+     "0": 0.0,
+     "1": 0.007521313770046277,
+     "2": 0.011148439309235494,
+     "3": 0.012726891243000596,
+     "4": 0.012726891243000603,
+     "5": 0.01114843930923558,
+     "6": 0.007521313770046278,
+     "7": 0.0
+    },
+    "d9@0.1@Jt1.1": {
+     "0": 0.0,
+     "1": 0.02454376843696801,
+     "2": 0.029944633925176514,
+     "3": 0.031978064203251715,
+     "4": 0.032766267472837826,
+     "5": 0.032766267472837826,
+     "6": 0.03197806420325172,
+     "7": 0.02994463392517649,
+     "8": 0.024543768436968004,
+     "9": 0.0
+    }
+   },
+   "S4_pointer_field_off_gives_zero": {
+    "claim": "max_k |s(k)| < 1e-12 with lambda_pointer = 0 and the arm field kept",
+    "derived_route_values": {
+     "d10@0.05": 0.0,
+     "d10@0.1": 0.0,
+     "d9@0.05": 0.0,
+     "d9@0.1": 0.0
+    }
+   },
+   "S5_leading_coefficients_d9": {
+    "0": 2.0816681711721685e-17,
+    "1": 0.09710917267041488,
+    "2": 0.1293823453009178,
+    "3": 0.14322610974949973,
+    "4": 0.14878383973495907,
+    "5": 0.14878383973495907,
+    "6": 0.14322610974949976,
+    "7": 0.1293823453009178,
+    "8": 0.09710917267041488,
+    "9": 2.7755575615628914e-17
+   },
+   "S6_gate_crossing_field_lambda_star": {
+    "d2": 0.09546375831478487,
+    "d3": 0.13069237320358773,
+    "d4": 0.14615223367256347,
+    "d5": 0.15536390475593748,
+    "d6": 0.16217296818049676,
+    "d8": 0.17280979261600748
+   }
+  },
+  "seal_id": "cycle933-sk-shape-seal-v1",
+  "seal_sha256": "843b97b6e30bfdca45872d926ac33471b22c23324eb11ee8b2bca95d5f55b48c"
+ },
+ "seal_all_predictions_hold": true,
+ "seal_verification": {
+  "S1_T_of_degree_13_14_15": {
+   "holds": true,
+   "max_abs_residual": 9.681630497304639e-13,
+   "rows": {
+    "d13@0.05": {
+     "full_space": 0.0019613020323667294,
+     "residual": 3.2866938337594576e-13,
+     "sealed": 0.00196130203203806
+    },
+    "d13@0.1": {
+     "full_space": 0.0066404276817461135,
+     "residual": -1.3232991091793878e-13,
+     "sealed": 0.006640427681878443
+    },
+    "d14@0.05": {
+     "full_space": 0.0019102686010626568,
+     "residual": 2.829949816152144e-13,
+     "sealed": 0.0019102686007796618
+    },
+    "d14@0.1": {
+     "full_space": 0.006464155591687056,
+     "residual": -4.606055120648378e-13,
+     "sealed": 0.006464155592147662
+    },
+    "d15@0.05": {
+     "full_space": 0.0018636172250843302,
+     "residual": 4.151973903576689e-13,
+     "sealed": 0.0018636172246691328
+    },
+    "d15@0.1": {
+     "full_space": 0.0063027478551379475,
+     "residual": 9.681630497304639e-13,
+     "sealed": 0.006302747854169784
+    }
+   }
+  },
+  "S2_full_ladder_d13": {
+   "holds": true,
+   "max_abs_residual": 1.5284041393615055e-13,
+   "rows": {
+    "d13@0.05": {
+     "max_abs_residual": 1.5284041393615055e-13,
+     "n_values": 14
+    },
+    "d13@0.1": {
+     "max_abs_residual": 8.300998777244217e-14,
+     "n_values": 14
+    }
+   }
+  },
+  "S3_off_grid_cells": {
+   "holds": true,
+   "max_abs_residual": 3.9794556538907955e-15,
+   "rows": {
+    "d7@0.0375@Jt0.45": {
+     "max_abs_residual": 3.176929205817025e-15
+    },
+    "d7@0.1625@Jt0.45": {
+     "max_abs_residual": 1.7572748811645056e-15
+    },
+    "d9@0.1@Jt1.1": {
+     "max_abs_residual": 3.9794556538907955e-15
+    }
+   },
+   "status": "DECLARED NON-CLAIM (fields and times off every frozen grid)"
+  },
+  "S4_pointer_field_off_gives_zero": {
+   "holds": true,
+   "max_over_all_cells": 7.614150241225924e-14,
+   "rows": {
+    "d10@0.05": {
+     "full_space_max_|s(k)|": 2.2678346311008278e-14,
+     "sealed_derived_max_|s(k)|": 0.0
+    },
+    "d10@0.1": {
+     "full_space_max_|s(k)|": 7.614150241225924e-14,
+     "sealed_derived_max_|s(k)|": 0.0
+    },
+    "d9@0.05": {
+     "full_space_max_|s(k)|": 9.61892249675921e-15,
+     "sealed_derived_max_|s(k)|": 0.0
+    },
+    "d9@0.1": {
+     "full_space_max_|s(k)|": 9.653477759002606e-15,
+     "sealed_derived_max_|s(k)|": 0.0
+    }
+   }
+  },
+  "S5_leading_coefficients_d9": {
+   "holds": true,
+   "max_rel_residual": 4.1212352134201584e-07,
+   "rows": {
+    "1": {
+     "E_k_sealed": 0.09710917267041488,
+     "full_space_s(k)": 3.047515243639411e-08,
+     "leading_form": 3.047515833180069e-08,
+     "rel_residual": 1.934496174403929e-07,
+     "sum_mu": 0.09710917267041487
+    },
+    "2": {
+     "E_k_sealed": 0.1293823453009178,
+     "full_space_s(k)": 4.0376338157699203e-08,
+     "leading_form": 4.037632151766055e-08,
+     "rel_residual": 4.121235211781217e-07,
+     "sum_mu": 0.12938234530091777
+    },
+    "3": {
+     "E_k_sealed": 0.14322610974949973,
+     "full_space_s(k)": 4.4662345406938306e-08,
+     "leading_form": 4.4662345818864933e-08,
+     "rel_residual": 9.223130221571282e-09,
+     "sum_mu": 0.14322610974949976
+    },
+    "4": {
+     "E_k_sealed": 0.14878383973495907,
+     "full_space_s(k)": 4.63959956537229e-08,
+     "leading_form": 4.639599625679173e-08,
+     "rel_residual": 1.2998294827826931e-08,
+     "sum_mu": 0.14878383973495923
+    },
+    "5": {
+     "E_k_sealed": 0.14878383973495907,
+     "full_space_s(k)": 4.63959956537229e-08,
+     "leading_form": 4.6395996256791716e-08,
+     "rel_residual": 1.2998294542567619e-08,
+     "sum_mu": 0.14878383973495915
+    },
+    "6": {
+     "E_k_sealed": 0.14322610974949976,
+     "full_space_s(k)": 4.4662345406938306e-08,
+     "leading_form": 4.466234581886494e-08,
+     "rel_residual": 9.223130369737367e-09,
+     "sum_mu": 0.14322610974949979
+    },
+    "7": {
+     "E_k_sealed": 0.1293823453009178,
+     "full_space_s(k)": 4.0376338157699203e-08,
+     "leading_form": 4.037632151766054e-08,
+     "rel_residual": 4.1212352134201584e-07,
+     "sum_mu": 0.12938234530091777
+    },
+    "8": {
+     "E_k_sealed": 0.09710917267041488,
+     "full_space_s(k)": 3.047515243639411e-08,
+     "leading_form": 3.047515833180069e-08,
+     "rel_residual": 1.934496174403929e-07,
+     "sum_mu": 0.09710917267041487
+    }
+   }
+  },
+  "S6_gate_crossing_field_lambda_star": {
+   "holds": true,
+   "max_abs_residual_from_the_gate": 6.602357549567728e-15,
+   "rows": {
+    "d2": {
+     "T_at_lambda_star_full_space": 0.019999999999999934,
+     "lambda_star_sealed": 0.09546375831478487,
+     "residual_from_0.02": -6.591949208711867e-17
+    },
+    "d3": {
+     "T_at_lambda_star_full_space": 0.020000000000000503,
+     "lambda_star_sealed": 0.13069237320358773,
+     "residual_from_0.02": 5.030698080332741e-16
+    },
+    "d4": {
+     "T_at_lambda_star_full_space": 0.0199999999999993,
+     "lambda_star_sealed": 0.14615223367256347,
+     "residual_from_0.02": -7.008282842946301e-16
+    },
+    "d5": {
+     "T_at_lambda_star_full_space": 0.02000000000000287,
+     "lambda_star_sealed": 0.15536390475593748,
+     "residual_from_0.02": 2.869232629265639e-15
+    },
+    "d6": {
+     "T_at_lambda_star_full_space": 0.02000000000000106,
+     "lambda_star_sealed": 0.16217296818049676,
+     "residual_from_0.02": 1.0581813203458523e-15
+    },
+    "d8": {
+     "T_at_lambda_star_full_space": 0.019999999999993398,
+     "lambda_star_sealed": 0.17280979261600748,
+     "residual_from_0.02": -6.602357549567728e-15
+    }
+   }
+  }
+ },
+ "statistic_definition_byte_verified": {
+  "C_ab_definition": "`C_ab = I(F_a:F_b | Z_S)`",
+  "C_ab_dephasing": "Zero the off-diagonal `S` blocks before evaluating the formula",
+  "C_ab_formula": "`C_ab = sum_z p_z [S(rho_Fa^z)+S(rho_Fb^z)-S(rho_FaFb^z)]`",
+  "C_ab_tensor_order": "The joint tensor order is `(S,F_a,F_b)`",
+  "chi_definition": "`chi_Z(S:F) = S(sum_z p_z rho_F^z) - sum_z p_z S(rho_F^z)`."
+ },
+ "symbolic_derivation": {
+  "galois_no_go": {
+   "d2@1/10": {
+    "factor_degrees": [
+     3,
+     3
+    ],
+    "galois_groups": [
+     "S3",
+     "S3"
+    ],
+    "solvable_by_radicals": [
+     true,
+     true
+    ]
+   },
+   "d2@1/20": {
+    "factor_degrees": [
+     3,
+     3
+    ],
+    "galois_groups": [
+     "S3",
+     "S3"
+    ],
+    "solvable_by_radicals": [
+     true,
+     true
+    ]
+   },
+   "d3@1/10": {
+    "factor_degrees": [
+     4,
+     4
+    ],
+    "galois_groups": [
+     "D4",
+     "D4"
+    ],
+    "solvable_by_radicals": [
+     true,
+     true
+    ]
+   },
+   "d3@1/20": {
+    "factor_degrees": [
+     4,
+     4
+    ],
+    "galois_groups": [
+     "D4",
+     "D4"
+    ],
+    "solvable_by_radicals": [
+     true,
+     true
+    ]
+   },
+   "d4@1/10": {
+    "factor_degrees": [
+     5,
+     5
+    ],
+    "galois_groups": [
+     "S5",
+     "S5"
+    ],
+    "solvable_by_radicals": [
+     false,
+     false
+    ]
+   },
+   "d4@1/20": {
+    "factor_degrees": [
+     5,
+     5
+    ],
+    "galois_groups": [
+     "S5",
+     "S5"
+    ],
+    "solvable_by_radicals": [
+     false,
+     false
+    ]
+   }
+  },
+  "lemmas_verified": {
+   "L1_collective_reduction_exact": true,
+   "L2_hankel_schmidt_form_exact": true,
+   "L3_reflection_is_transposition": true,
+   "L4_elementary_amplitudes": true,
+   "L5_frobenius_double_projection": true,
+   "L6_no_radical_form_for_d_ge_4": true,
+   "L7_E0_and_Ed_vanish": true
+  },
+  "sympy_version": "1.14.0",
+  "transcript": [
+   "L1  W is an isometry (W^T W - 1 = 0), W^T H W - H_collective = 0, and H W - W (W^T H W) = 0 for d=3 with symbolic lambda: the frozen star Hamiltonian LEAVES the symmetric subspace invariant and acts on it EXACTLY as -2 Z_0 Jz - lambda X_0 - 2 lambda Jx, a 2(d+1)-dimensional operator.  VERIFIED=True",
+   "L2  rho_k = V (T^(k) T^(k)^T) V^T with V the Dicke isometry (V^T V = 1) and T^(k)_{m,q} = sqrt(C(k,m) C(d-k,q)) x_{m+q}, verified as an exact matrix identity in symbolic amplitudes for (d,k) in {(4,2),(5,2),(5,3),(6,3)}.  Because V is an isometry the NONZERO spectra coincide, so s(k) is the entropy of the squared singular values of the binomially weighted HANKEL matrix, and the k-arm state is supported on Sym^k.  VERIFIED=True",
+   "L3  T^(d-k) = (T^(k))^T IDENTICALLY in the amplitudes, for every d in {4,5,6,7} and every k: s(k) = s(d-k) is TRANSPOSITION of one matrix -- true for ANY symmetric branch state whatever the Hamiltonian, the field or the time.  VERIFIED=True",
+   "L4  U(t) = cos(Rt) 1 + i sin(Rt)(M Z + lambda X)/R solves dU/dt = -i h_M U with U(0) = 1 for h_M = -(M Z + lambda X), R = sqrt(M^2 + lambda^2), so <z|U|+> = [cos(Rt) + i(lambda + sigma M) sin(Rt)/R]/sqrt2.  With the ARM field absent every Z_j is conserved and M = d-2n is a good quantum number, so this IS the exact elementary branch amplitude sequence.  VERIFIED=True",
+   "L5  With alpha = a.a and beta = b.b, the sqrt-free identity ||(alpha 1 - a a^T) M (beta 1 - b b^T)||_F^2 = alpha beta [ alpha beta ||M||^2 - beta |a^T M|^2 - alpha |M b|^2 + (a^T M b)^2 ] holds as a POLYNOMIAL identity for p = 2,3,4; setting alpha = beta = 1 gives the unit-vector form ||P_perp M Q_perp||_F^2 = ||M||^2 - ||a*M||^2 - ||Mb||^2 + |a*Mb|^2, which is the step that turns the first-order perturbation of the Hankel matrix into the closed form E_k = 2^-d [A + D - B_k - B_{d-k}].  VERIFIED=True",
+   "L6  NO-GO.  The Z2 symmetry Pi = X_0 exp(i pi (Jx - j)) splits the collective Hamiltonian into two blocks of dimension d+1.  At BOTH frozen fields the characteristic polynomial factors into exactly two irreducible degree-(d+1) factors, with Galois group S3 (d=2) and D4 (d=3) -- SOLVABLE -- and S5 (d=4) -- NOT SOLVABLE BY RADICALS.  So for d >= 4 the branch amplitudes are not radical functions of the frozen data and no elementary closed form for s(k) can exist.  VERIFIED=True  detail={\"d2@1/10\": {\"factor_degrees\": [3, 3], \"galois_groups\": [\"S3\", \"S3\"], \"solvable_by_radicals\": [true, true]}, \"d2@1/20\": {\"factor_degrees\": [3, 3], \"galois_groups\": [\"S3\", \"S3\"], \"solvable_by_radicals\": [true, true]}, \"d3@1/10\": {\"factor_degrees\": [4, 4], \"galois_groups\": [\"D4\", \"D4\"], \"solvable_by_radicals\": [true, true]}, \"d3@1/20\": {\"factor_degrees\": [4, 4], \"galois_groups\": [\"D4\", \"D4\"], \"solvable_by_radicals\": [true, true]}, \"d4@1/10\": {\"factor_degrees\": [5, 5], \"galois_groups\": [\"S5\", \"S5\"], \"solvable_by_radicals\": [false, false]}, \"d4@1/20\": {\"factor_degrees\": [5, 5], \"galois_groups\": [\"S5\", \"S5\"], \"solvable_by_radicals\": [false, false]}}",
+   "L7  E_0 = E_d = 0 identically (B_0 = A and B_d = D), so the leading-order law reproduces s(0) = s(d) = 0 without imposing them.  VERIFIED=True"
+  ],
+  "transcript_sha256": "b42623a54c65d2aa948baf1f8e966623d1d1e528ed08beac7a5abe16f7d55658"
+ },
+ "symbolic_lemma_seconds": {
+  "L1": 0.025634249992435798,
+  "L2": 0.02658170901122503,
+  "L3": 0.005697083019185811,
+  "L4": 0.38261679201968946,
+  "L5": 1.5742677500238642,
+  "L6": 0.05515029199887067,
+  "L7": 0.00014462502440437675
+ },
+ "teeth": {
+  "T10_unsigned_underflow_guard": {
+   "disclosure": "Cycle 931 warned that the pinned runner casts to int8 before forming 1 - 2*bit; an UNSIGNED dtype underflows -1 to 255 and silently corrupts every Z operator.",
+   "fires": true,
+   "guard": "this runner asserts the signed dtype and reproduces the pinned T(d) table at deviation exactly 0, which the corrupted build cannot do",
+   "int8_min": -1,
+   "uint8_max_if_unguarded": 255
+  },
+  "T11_t0_anchor": {
+   "fires": true,
+   "max_|s(k)|_at_Jt=0": 0.0,
+   "tolerance": 1e-09
+  },
+  "T12_zero_field_anchor": {
+   "fires": true,
+   "max_|s(k)|_at_lambda=0": 0.0,
+   "meaning": "at lambda = 0 the branch is an exact product state, so the whole shape is a field effect."
+  },
+  "T13_seal_is_holdout_free_and_tamper_evident": {
+   "discipline": "the seal is built from the DERIVED reduction only; the independent full 2^(d+1) route was not run at ANY sealed cell until after the digest was fixed (enforced by a set intersection that hard-fails).",
+   "fires": true,
+   "full_space_evaluations_at_sealed_cells_before_the_digest": 0,
+   "seal_recomputes": true,
+   "sealed_cells": 9,
+   "tampered_seal_digest_differs": true
+  },
+  "T14_symmetric_subspace_test_has_teeth": {
+   "clean_branch_deviation": 7.076311083754595e-16,
+   "fires": true,
+   "kick": "add 1e-6 to a single computational-basis amplitude",
+   "kicked_branch_deviation": 8.000001127383971e-07
+  },
+  "T15_error_law_exponent_has_teeth": {
+   "fires": true,
+   "reading": "the lambda^2 law is flat to 6.0% across the fields while a lambda^3 law wanders by 748%: the exponent is measured, not assumed.",
+   "spread_of_rel/lambda^2_over_four_fields": 0.06032208961546314,
+   "spread_of_rel/lambda^3_over_four_fields": 7.482576716923704
+  },
+  "T1_planted_almost_fitting_form_is_caught": {
+   "caught": true,
+   "fires": true,
+   "plant": "multiply the derived s(k) by 1 + 1e-9",
+   "residual_on_planted_data": 1.6378679662532036e-11,
+   "tolerance": 1e-11
+  },
+  "T2_planted_product_branch_flips_the_verdict": {
+   "fires": true,
+   "planted_product_branch_max_s(k)": -0.0,
+   "reading": "a genuine product branch built from the SAME one-arm state gives s(k) = 0 at every k; the test therefore sees the difference and the Q1(a) verdict is not an artefact.",
+   "separation_orders_of_magnitude": 298.21426301597626,
+   "true_branch_max_s(k)": 0.016378081050221864
+  },
+  "T3_ablation_has_teeth": {
+   "detection_margin_over_the_numerical_floor": 55924.795956801994,
+   "fires": true,
+   "lambda_pointer=0_max_|s(k)|": 0.0,
+   "lambda_pointer=1e-5_max_|s(k)|": 5.592479595680199e-10,
+   "reading": "a pointer field of 1e-5 -- five decades below the certified fields -- already lifts s(k) to 5.6e-10, four and a half decades above the 1e-14 floor, while lambda_pointer = 0 gives exactly 0.0.  'It vanishes' is therefore a measurement with a measured resolution, not a tautology."
+  },
+  "T4_euler_guard": {
+   "fires": true,
+   "norm_error": 0.0066529403996555825,
+   "s(k)_deviation": 0.000540931891953823,
+   "state_deviation_from_route_A": 0.0038949206424897416,
+   "under_converged_integrator": "explicit Euler, 200 steps",
+   "would_be_visible": true
+  },
+  "T5_route_cross_validation": {
+   "fires": true,
+   "max_abs_s(k)_dev_A_vs_S": 1.21617126092044e-14,
+   "max_abs_state_dev_A_vs_B": 2.1544120232613906e-16,
+   "max_abs_state_dev_A_vs_C": 9.909022322596828e-16,
+   "route_A": "Chebyshev / Bessel, full 2^(d+1) space",
+   "route_B": "adaptive Taylor march, full space",
+   "route_C": "dense eigendecomposition, full space",
+   "route_S": "COLLECTIVE SPIN -- dense eigendecomposition in 2(d+1) dimensions, no 2^(d+1) object ever built"
+  },
+  "T6_determinism_in_process_repeat": {
+   "bitwise_identical": true,
+   "core_payload_sha256": "aa599fe2396835a068d5863434d52bfdf999310f3ef03fcf373b8c1c07b9557c",
+   "fires": true,
+   "repeated_cells": 8
+  },
+  "T7_tampered_frozen_constant_is_caught": {
+   "caught": true,
+   "constant": "indep_max",
+   "fires": true,
+   "tampered_to": "0.03"
+  },
+  "T8_tampered_pin_is_caught": {
+   "fires": true,
+   "perturbation": "one byte flipped",
+   "sha256_changes": true,
+   "target": "outputs/additivity_identity_cycle931_receipt_2026_07_28.json"
+  },
+  "T9_tampered_statistic_definition_is_caught": {
+   "caught": true,
+   "fires": true,
+   "removed": "the C_ab formula line"
+  }
+ },
+ "teeth_summary": {
+  "all_fire": true,
+  "n_firing": 15,
+  "n_teeth": 15
+ },
+ "timing_free_digest": "c111eae86bf1c381ff990d4376e97be3fd2186d9b72f927efd82c9df9abac5bc",
+ "verdict": "The shape of s(k) IS derived -- structurally, not elementarily.  The frozen star's arm-permutation symmetry is EXACT (6.2e-17), so the pointer-conditioned branch is a pure state of one collective spin j = d/2 and the k | (d-k) Schmidt matrix is the binomially weighted Hankel matrix T^(k)_{m,q} = sqrt(C(k,m)C(d-k,q)) x_{m+q} built from a single (d+1)-term amplitude sequence solving a 2(d+1)-dimensional linear problem.  s(k) is the entropy of its squared singular values; this reproduces the pinned ladder, the pinned s(k) table and the whole 927/929 T(d) baseline table at 1.2e-14, i.e. AT their precision, with no 2^(d+1) object anywhere.  Reflection stops being a measurement: T^(d-k) = (T^(k))^T identically.  The mechanism is named and ablated -- the pointer's OWN transverse term lambda X_0 is the entire source (turn it off and s(k) = 0 to 1e-14 at every d and every field), while the arm field only shifts the values by ~1e-3 relative.  What does NOT exist is an elementary closed form: the Z2-split blocks are quintics with Galois group S5 for d >= 4, so no radical expression can exist, and every one-line k-law offered (k(d-k), A(1-q^k)(1-q^{d-k}), quadratic) is refuted at grade even when refitted per cell.  Two error-controlled approximations survive with derived and verified error laws: the elementary arm-field-free form (relative error c(d) lambda^2, c growing with d) and the leading-order lambda^2 log(1/lambda) form -- both REFUTED AT THE PINNED GRADE and reported as approximations, never rounded up.  The seal reached three degrees past the measured table and called T(13), T(14), T(15), a full d=13 ladder, three off-grid cells, the mechanism at two new degrees and six gate-crossing fields from the reduction alone, all verified afterwards by the untouched full-space route."
+}
