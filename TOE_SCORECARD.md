@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
-Verified source/status snapshot: 2026-09-09T01:11:51.824085+00:00, main
-`1aef37f622bf0078f2898e4131c45414b018e946`. This is a planning map, not
+Verified source/status snapshot: 2026-09-09T01:46:08.622783+00:00, main
+`917c9a26c8c8b963ea0d773b32b057bcc33a3e6d`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -22,7 +22,7 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 26 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 29 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
@@ -84,3 +84,5 @@ W29 adds three reviewed conditional role/support notes. Static catalog assumptio
 W30 adds five reviewed conditional finite notes spanning nonabelian readout, representation multiplicity and quadratic windows. Physical formation and selection suppliers remain explicit; 25 newer notes await mechanical ledger refresh. No audit grade. See MAIN_STATUS_SNAPSHOT.json.
 
 W31 adds a reviewed conditional finite SU3 note. Triality necessity, diagonal invariant algebra and finite singlet dimensions remain distinct from physical Record realization and arbitrary-state tomography. No audit grade.
+
+W32 adds three conditional finite tick notes: positive preserving units, fixed outcome-independent schedule DPP structure and static response are distinct from physical formation, rates, gravity and universal exclusion claims. No audit grade.

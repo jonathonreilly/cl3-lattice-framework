@@ -1,0 +1,228 @@
+[
+  {
+    "id": "F1",
+    "pr": 7947,
+    "author_disposition": "corrected or narrowed; independent confirmation pending",
+    "disposition": "Restrict the negative to six declared greedy policies, 24 fixed orders, declared dwells and tree depths. Eigenvectors remain sufficient, not necessary; the actual first eigenvector site is step 9. The factor 1.6 is confined to the tau=.5 fixed-order range. No positive rate law or universal impossibility is inferred.",
+    "anchors": [
+      {
+        "path": "docs/NO_SITE_WISE_FORMATION_RULE_PRESERVES_THE_SEA_UNDER_TICK_EVOLUTION_THE_EIGENVECTOR_CONDITION_IS_PER_STEP_AND_SET_WISE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+        "line": 108,
+        "text": "## T5: eigenvectors, invariant diagonals and the scanned domain",
+        "line_sha256_including_newline": "c0e68b39870b97d58ed87e590fa3c63c0f87d7f1faf584bd29e412a374cdc14e",
+        "source_sha256": "cfd19a54506f347d27b43fd09e3d569d647f81a5a707ef7e53ef1128b4e5a6c6"
+      },
+      {
+        "path": "scripts/no_site_wise_formation_rule_preserves_the_sea_check_2026_09_03.py",
+        "line": 829,
+        "text": "check(\"A8 rule E on the cube, best-site residual (min over all branches): tau=0.5 %s at steps 1-7 (min %.3f), first eigenvector site at step \"",
+        "line_sha256_including_newline": "48ac559959d63d77faa08a1698502f3fb17b77ec9b614cfeef7c5a712933beef",
+        "source_sha256": "b2a98e28c8e0d2ccd8d4a02d7d9033c12c6b571e03bf9d185ed0cfbcf5b07d2b"
+      },
+      {
+        "path": "scripts/no_site_wise_formation_rule_preserves_the_sea_check_2026_09_03.py",
+        "line": 999,
+        "text": "check(\"Q1 all actual 24 fixed-order census rows at all four declared dwells\", order_census_ok)",
+        "line_sha256_including_newline": "459fd57f9a1f80b26b7452036f945c8e794e436b5fd62c0ddff9088cfc106224",
+        "source_sha256": "b2a98e28c8e0d2ccd8d4a02d7d9033c12c6b571e03bf9d185ed0cfbcf5b07d2b"
+      },
+      {
+        "path": "scripts/no_site_wise_formation_rule_preserves_the_sea_check_2026_09_03.py",
+        "line": 1006,
+        "text": "check(\"Q2 unrestricted non-eigenvector constant-diagonal witness: residual %.6f, change %.2e\"",
+        "line_sha256_including_newline": "8ddd631688c151675534161d850ea099cb8b5a856b1054379f24055cd4064bf5",
+        "source_sha256": "b2a98e28c8e0d2ccd8d4a02d7d9033c12c6b571e03bf9d185ed0cfbcf5b07d2b"
+      }
+    ],
+    "controls": "Actual 96 fixed-order/dwell census rows are gated, and a non-eigenvector constant-diagonal construction is evaluated. All original sixteen checks remain."
+  },
+  {
+    "id": "F2",
+    "pr": 7968,
+    "author_disposition": "corrected or narrowed; independent confirmation pending",
+    "disposition": "Restore occupied-row rank before liveness and use gauge rank V-1 at full closure. The probability is a complete occupied/empty pattern probability with the rank-based fibre factor; small probabilities are below the cutoff, not floating underflow.",
+    "anchors": [
+      {
+        "path": "docs/THE_FORMATION_UNIT_THAT_PRESERVES_THE_SEA_IS_A_WHOLE_CLASS_OF_THE_SUPERLATTICE_ROLE_PATTERN_THE_EIGEN_SET_CRITERION_IS_ONE_PARTICLE_AND_ITS_MINIMAL_SETS_ARE_THE_PARITY_CLASSES_BOUNDED_NOTE_2026-09-04.md",
+        "line": 44,
+        "text": "## Definitions and exact regular-set criterion",
+        "line_sha256_including_newline": "a92350259565512b32dd8c8b2ffe9745edcc4b62766a4e88614b94f127abedeb",
+        "source_sha256": "60f8bb7819810c64216e556f69de9b900599783451849c2ecf91da32d6600e8a"
+      },
+      {
+        "path": "scripts/formation_unit_preserving_the_sea_is_a_whole_superlattice_class_check_2026_09_04.py",
+        "line": 305,
+        "text": "def regular_record_factor(n_records, closed_vertices, total_vertices):",
+        "line_sha256_including_newline": "b3322fd9c0fd4bbfc5ef35160323a2eb06a3c09f743586357ee37e2bddb019bf",
+        "source_sha256": "b8209026f962c3e8398d87fdd0c606e1e2f7cfde976786a931051c490efb33c5"
+      },
+      {
+        "path": "scripts/formation_unit_preserving_the_sea_is_a_whole_superlattice_class_check_2026_09_04.py",
+        "line": 1510,
+        "text": "check(\"Q1 occupied-row rank rejects zero contraction; regular full-cube fibre is 1/32\",",
+        "line_sha256_including_newline": "ad574f25c8df3de727db2b307b966fa55461f154a7edc61dc649142657cc5159",
+        "source_sha256": "b8209026f962c3e8398d87fdd0c606e1e2f7cfde976786a931051c490efb33c5"
+      }
+    ],
+    "controls": "Actual dead-contraction example and full-cube 1/32 factor; changing V-1 to V is rejected."
+  },
+  {
+    "id": "F3",
+    "pr": 7968,
+    "author_disposition": "corrected or narrowed; independent confirmation pending",
+    "disposition": "Distinguish signed T2 from its nonzero-support graph and from parity classes. State antiperiodic 8-cube signs, coincident +2 paths, full antiperiodic 4-cube cancellation and 32 size-three components on 4x4x6. Restrict minimality and screen claims to the evaluated domain.",
+    "anchors": [
+      {
+        "path": "docs/THE_FORMATION_UNIT_THAT_PRESERVES_THE_SEA_IS_A_WHOLE_CLASS_OF_THE_SUPERLATTICE_ROLE_PATTERN_THE_EIGEN_SET_CRITERION_IS_ONE_PARTICLE_AND_ITS_MINIMAL_SETS_ARE_THE_PARITY_CLASSES_BOUNDED_NOTE_2026-09-04.md",
+        "line": 109,
+        "text": "## T2: signed two-step operator and support components",
+        "line_sha256_including_newline": "6f57a4fa28a14677da2f42a81f6e40842e02b6493a9ba7871ff9743f921886a5",
+        "source_sha256": "60f8bb7819810c64216e556f69de9b900599783451849c2ecf91da32d6600e8a"
+      },
+      {
+        "path": "docs/THE_FORMATION_UNIT_THAT_PRESERVES_THE_SEA_IS_A_WHOLE_CLASS_OF_THE_SUPERLATTICE_ROLE_PATTERN_THE_EIGEN_SET_CRITERION_IS_ONE_PARTICLE_AND_ITS_MINIMAL_SETS_ARE_THE_PARITY_CLASSES_BOUNDED_NOTE_2026-09-04.md",
+        "line": 132,
+        "text": "## T3: finite accepted screens, not a global minimality theorem",
+        "line_sha256_including_newline": "41f283fabd0177c422e532bf88932d3600c9cc73355627e8f25641b21479edf9",
+        "source_sha256": "60f8bb7819810c64216e556f69de9b900599783451849c2ecf91da32d6600e8a"
+      },
+      {
+        "path": "scripts/formation_unit_preserving_the_sea_is_a_whole_superlattice_class_check_2026_09_04.py",
+        "line": 311,
+        "text": "def signed_two_step_paths(C):",
+        "line_sha256_including_newline": "f860d933f9fc932de5ef6ba4f6745aef592a7ea3694287ea75cf84e5f39587ce",
+        "source_sha256": "b8209026f962c3e8398d87fdd0c606e1e2f7cfde976786a931051c490efb33c5"
+      }
+    ],
+    "controls": "Independent coordinate assembly agrees with actual signed edge-path accumulation on four fixtures. The absolute-sign mutation fails; D4 now requires actual signed values."
+  },
+  {
+    "id": "F4",
+    "pr": 7968,
+    "author_disposition": "corrected or narrowed; independent confirmation pending",
+    "disposition": "The irregular criterion is only sufficient; the 547-set screening count is not a complete many-body exclusion. Retain the actual 21-set many-body witness family, checking every set rather than its maximum alone. The observed minimum of per-set maximum residuals is .489319205, maximum .827436476.",
+    "anchors": [
+      {
+        "path": "docs/THE_FORMATION_UNIT_THAT_PRESERVES_THE_SEA_IS_A_WHOLE_CLASS_OF_THE_SUPERLATTICE_ROLE_PATTERN_THE_EIGEN_SET_CRITERION_IS_ONE_PARTICLE_AND_ITS_MINIMAL_SETS_ARE_THE_PARITY_CLASSES_BOUNDED_NOTE_2026-09-04.md",
+        "line": 93,
+        "text": "## T1: exact comparisons and the unresolved irregular domain",
+        "line_sha256_including_newline": "53cce07b9bc84364e3dd91b5cd8908ef34bc4578d77973c211efd4d11df69d3d",
+        "source_sha256": "60f8bb7819810c64216e556f69de9b900599783451849c2ecf91da32d6600e8a"
+      },
+      {
+        "path": "scripts/formation_unit_preserving_the_sea_is_a_whole_superlattice_class_check_2026_09_04.py",
+        "line": 328,
+        "text": "def all_irregular_witnesses_fail(rows, expected_count):",
+        "line_sha256_including_newline": "190f103ea0f8f1d0b79bbab2b5634b403a6a877f6be3ec241f267ef3a809f7ef",
+        "source_sha256": "b8209026f962c3e8398d87fdd0c606e1e2f7cfde976786a931051c490efb33c5"
+      },
+      {
+        "path": "scripts/formation_unit_preserving_the_sea_is_a_whole_superlattice_class_check_2026_09_04.py",
+        "line": 1514,
+        "text": "check(\"Q2 every one of 21 actual irregular slab sets has a nonzero many-body outcome: min %.9f max %.9f\"",
+        "line_sha256_including_newline": "114c47dd0f64bba667c2e602ff30874e0240b500df7fe017691b6b43c89c79fc",
+        "source_sha256": "b8209026f962c3e8398d87fdd0c606e1e2f7cfde976786a931051c490efb33c5"
+      }
+    ],
+    "controls": "The final executed 21-row data reject zero, missing and duplicate witnesses. The all-to-any source-function mutation admits a zero witness and is rejected by the control. B1 retains its old predicates plus the complete family gate."
+  },
+  {
+    "id": "F5",
+    "pr": 7968,
+    "author_disposition": "corrected or narrowed; independent confirmation pending",
+    "disposition": "Replace no-sea claims by a nonunique zero-mode ground sea. Periodic 4-cube has 28 negative and eight zero modes; filling four zero modes gives rank-32 ground Slaters.",
+    "anchors": [
+      {
+        "path": "docs/THE_FORMATION_UNIT_THAT_PRESERVES_THE_SEA_IS_A_WHOLE_CLASS_OF_THE_SUPERLATTICE_ROLE_PATTERN_THE_EIGEN_SET_CRITERION_IS_ONE_PARTICLE_AND_ITS_MINIMAL_SETS_ARE_THE_PARITY_CLASSES_BOUNDED_NOTE_2026-09-04.md",
+        "line": 169,
+        "text": "## T5: zero modes and the chosen sea",
+        "line_sha256_including_newline": "8151d55391840b0bb0cd078d277aa067edbb151ffc68bfa4dbdf0ee129eb37f4",
+        "source_sha256": "60f8bb7819810c64216e556f69de9b900599783451849c2ecf91da32d6600e8a"
+      },
+      {
+        "path": "scripts/formation_unit_preserving_the_sea_is_a_whole_superlattice_class_check_2026_09_04.py",
+        "line": 1534,
+        "text": "check(\"Q3 periodic 4-cube +2 paths, antiperiodic cancellation and two distinct rank-32 zero-mode ground Slaters\", q3)",
+        "line_sha256_including_newline": "55b1c97eb2e91016ca1164eed41892f2ba6e7adce282ccf29a97d2017d2f88a2",
+        "source_sha256": "b8209026f962c3e8398d87fdd0c606e1e2f7cfde976786a931051c490efb33c5"
+      }
+    ],
+    "controls": "Two distinct actual rank-32 zero-mode fillings have equal energy and commute with the supplied hopping matrix. The continuous choice is retained, not reduced to 70 preferred physical states."
+  },
+  {
+    "id": "F6",
+    "pr": 7986,
+    "author_disposition": "corrected or narrowed; independent confirmation pending",
+    "disposition": "Restrict the exact rotated-kernel theorem to fixed outcome-independent schedules. A five-start fit gives attained upper bounds, not an exclusion of all DPP/Pfaffian laws. Full recording is an explicit preserving unit; 28 slab orders and failed prefix residuals do not prove a universal or necessary condition.",
+    "anchors": [
+      {
+        "path": "docs/THE_STAR_TICKS_RECORD_LAW_IS_EXACTLY_DETERMINANTAL_WITH_A_ROTATED_KERNEL_THE_SECOND_READING_KEEPS_THE_RULER_THE_BORN_STRUCTURE_AND_THE_TT_READING_AND_COSTS_THE_SEA_AS_VACUUM_BOUNDED_NOTE_2026-09-05.md",
+        "line": 44,
+        "text": "## T1: exact fixed-schedule record law",
+        "line_sha256_including_newline": "2998df198a24a5df38453b59625253ae8fde582d966eccc9c000632122815bb7",
+        "source_sha256": "700ae72e5801e0d45121d852b7c4a5659ed529cfa47f8ecf80b8ec1c6c3953de"
+      },
+      {
+        "path": "docs/THE_STAR_TICKS_RECORD_LAW_IS_EXACTLY_DETERMINANTAL_WITH_A_ROTATED_KERNEL_THE_SECOND_READING_KEEPS_THE_RULER_THE_BORN_STRUCTURE_AND_THE_TT_READING_AND_COSTS_THE_SEA_AS_VACUUM_BOUNDED_NOTE_2026-09-05.md",
+        "line": 109,
+        "text": "## T5: disturbed kernels and mixture fits",
+        "line_sha256_including_newline": "99816dda697cb2f064af34434627aba1f5ea2d311c6aedc988e41473ff96f293",
+        "source_sha256": "700ae72e5801e0d45121d852b7c4a5659ed529cfa47f8ecf80b8ec1c6c3953de"
+      },
+      {
+        "path": "scripts/star_tick_record_law_rotated_kernel_second_reading_priced_check_2026_09_05.py",
+        "line": 1013,
+        "text": "def prefix_residual(order):",
+        "line_sha256_including_newline": "91821b06a4d883d4e400c1c1f0a49caf1bee9160089c74958e63cc05f2baafb0",
+        "source_sha256": "618227378defb69f10b61bb8e312985a8779c326a04d87bff8879c702ab48d22"
+      },
+      {
+        "path": "scripts/star_tick_record_law_rotated_kernel_second_reading_priced_check_2026_09_05.py",
+        "line": 1918,
+        "text": "check(\"Q1 full recording is a preserving unit: actual h_R=0 and G=I\",",
+        "line_sha256_including_newline": "644086fb16ac25977ada0c7258061155bf026b65d99720e6794002244e77210d",
+        "source_sha256": "618227378defb69f10b61bb8e312985a8779c326a04d87bff8879c702ab48d22"
+      }
+    ],
+    "controls": "The exact final prefix contraction uses occupied-row rank. Actual full recording gives h_R=0 and G=I. All original twelve checks and their numerical payload expressions remain."
+  },
+  {
+    "id": "F7",
+    "pr": 7986,
+    "author_disposition": "corrected or narrowed; independent confirmation pending",
+    "disposition": "Use finite 400-point grid means and sampled small-time diagnostics. No Cesaro limit, asymptotic convergence, every-positive-time support or all-time nonpreservation follows from these scans.",
+    "anchors": [
+      {
+        "path": "docs/THE_STAR_TICKS_RECORD_LAW_IS_EXACTLY_DETERMINANTAL_WITH_A_ROTATED_KERNEL_THE_SECOND_READING_KEEPS_THE_RULER_THE_BORN_STRUCTURE_AND_THE_TT_READING_AND_COSTS_THE_SEA_AS_VACUUM_BOUNDED_NOTE_2026-09-05.md",
+        "line": 79,
+        "text": "## T3: finite time and slab diagnostics",
+        "line_sha256_including_newline": "23fc9668fbaa35dd66a1927d6374151cbb3d8a1ef944cb86124ce95d957d5225",
+        "source_sha256": "700ae72e5801e0d45121d852b7c4a5659ed529cfa47f8ecf80b8ec1c6c3953de"
+      }
+    ],
+    "controls": "The original grid, small-time values, finite-order censuses and fit data remain unchanged; labels and current claims carry their finite domains."
+  },
+  {
+    "id": "F8",
+    "pr": 7986,
+    "author_disposition": "corrected or narrowed; independent confirmation pending",
+    "disposition": "State static response under a supplied massless hopping dressing and continuum TT basis. The 4-cube rank pattern changes from [1,1,2,1,1] to [1,1,2,2,2]. No event-time distribution, physical rate ruler, massive-response transfer, propagation or exhaustive two-horn choice is derived. The unbound 1296-order quotation is historical only.",
+    "anchors": [
+      {
+        "path": "docs/THE_STAR_TICKS_RECORD_LAW_IS_EXACTLY_DETERMINANTAL_WITH_A_ROTATED_KERNEL_THE_SECOND_READING_KEEPS_THE_RULER_THE_BORN_STRUCTURE_AND_THE_TT_READING_AND_COSTS_THE_SEA_AS_VACUUM_BOUNDED_NOTE_2026-09-05.md",
+        "line": 125,
+        "text": "## T6: massless static response to a supplied dressing",
+        "line_sha256_including_newline": "5518a5eaaae0136e6749869642e84f9c7c144adf0e8fc7212332e12cddcbb854",
+        "source_sha256": "700ae72e5801e0d45121d852b7c4a5659ed529cfa47f8ecf80b8ec1c6c3953de"
+      },
+      {
+        "path": "scripts/star_tick_record_law_rotated_kernel_second_reading_priced_check_2026_09_05.py",
+        "line": 1937,
+        "text": "check(\"Q2 actual schedule Frechet derivative vs central difference %.2e; bipartite kernel identity %.2e\"",
+        "line_sha256_including_newline": "c0c165d06d1375b64e0cfef4332396174f7b528825cb19fbfa99f4aff14d4cc0",
+        "source_sha256": "618227378defb69f10b61bb8e312985a8779c326a04d87bff8879c702ab48d22"
+      }
+    ],
+    "controls": "Actual Frechet derivative agrees with two central differences to 1.18e-9; doubling its coefficient fails. The bipartite kernel identity holds at the declared finite witness. Supplied energy and response comparisons retain all original arrays."
+  }
+]
