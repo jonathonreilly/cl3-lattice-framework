@@ -18,7 +18,7 @@ W42 lands #7882 and the corrected finite scope of already-closed #7028, transfer
 
 Astra low remains the focused landing-review default; unresolved consequential mathematics escalates to Astra xhigh. Reuse original review and same-session correction confirmation. Detailed certification waits for audit; the [pilot](REVIEWER_MODEL_PILOT.md) is one workload, not a general cost guarantee.
 
-Functional-Record #7852 and transaction #7845 author repairs are active; gauge-effect #7841 original review is active. The other 32 transferred scopes at #7315/#7359 have actual reserved dependencies and remain held; both full successors stay open. Original [routing evidence](backlog_evidence/successor-routing-20260909/INDEX.json) is preserved, with #7028's later landing recorded separately. No pending unit receives acceptance. Maxwell's production and broader physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
+Functional-Record #7852, transaction #7845 and gauge-effect #7841 author repairs are active; all three original reviews are complete. The other 32 transferred scopes at #7315/#7359 have actual reserved dependencies and remain held; both full successors stay open. Original [routing evidence](backlog_evidence/successor-routing-20260909/INDEX.json) is preserved, with #7028's later landing recorded separately. No pending unit receives acceptance. Maxwell's production and broader physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
 
 ## Landed source history
 
