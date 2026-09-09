@@ -1,0 +1,9 @@
+# Canonical full-star infrared confirmation
+
+PASS at SOURCE_FREEZE78b9cc5b341164afb4bb2ee030ae9b39e58c796091ce189b649ed1568832168c, note2dd3be9a3eeb1f95c5379043e2be88396e4ddaf019ec3013a50e4733d15a97ca. Read complete canonical note and both supporting source files; all six frozen input hashes match. The complete58b analytical proof is unchanged apart from canonical framing and execution tense, so prior independent review d175d582 applies. Pure Gaussian/AP, uniform quasi-locality and same-reference wrong-flux premises remain explicit; no finite-L6 positivity or interacting conclusion is imported.
+
+The four-mode helper performs actual complex odd-CAR, unitary Walsh-mode, full occupation, inverse-moment, rational tail and graded-Gram checks. All complex arithmetic uses small integers/dyadic values, hence is exact in these fixtures; Fraction handles spectral sums. The748 count is guarded explicitly under -OO. These are finite supporting controls, not an enumeration proof of the thermodynamic theorem.
+
+The four adverse statements are honestly labelled EXHIBITED COUNTEREXAMPLES: nonzero ordinary commutator outside odd support; a three-particle state omitted by a one-particle projector; a dyadic endpoint series with nondecaying increments; and identical unit vectors whose row norms grow with family size. They are not actual mutated native solver executions. The last two finite comparisons illustrate the displayed scalable mathematical families; they do not by themselves numerically prove divergence.
+
+The six-file isolated -I-B-S-OO receipt records matched scientific payload. The initial output-redirection failure occurred before worker execution and is preserved, so the subsequent run is not a hidden numerical retry. This reviewer performed no execution or physical computation. Source-bound canonical scope is coherent and no blocker found; graph/delivery remain with root.
