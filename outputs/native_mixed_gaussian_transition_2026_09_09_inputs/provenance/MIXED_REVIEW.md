@@ -1,0 +1,19 @@
+# Mixed Gaussian overlap independent review
+
+Main theorem and CAR/fixed-degree bounds PASS. Full source DERIVATION6558f66b58310ae13142d26cb073f473bf8f5e2756e05ac47254c34eeda74042 and FIXED_DEGREE_BOUND820244d6208e5a2dcd0a856d05bc16660150dd5c8b8fe85899520d1bed256ec9 read, together with literal control source/receipt and the reviewed Riccati premise. No physical call or repeated toy run.
+
+One narrow clarification is required in the input-error subsection: q_* must bound BOTH the actual and approximating products, namely q_*>=max(||Z_A||||Z_C||,||hat Z_A||||hat Z_C||). Taking max(r²,approximate product) suffices. The current wording can be read as bounding only the approximate pairings. The trace-log line-segment estimate uses both endpoints. This does not affect the exact-overlap theorem or inverse formula, whose denominator already displays both endpoint bounds.
+
+For real skew pairings, Z_A*=-Z_A, so the determinant overlap is det(I−Z_AZ_C) with the claimed sign. Norm<1 prevents a zero along the simultaneous scaling path from the reference vacuum. The finite-dimensional real overlap therefore selects the positive square root. In infinite dimension HS compression gives trace-norm convergence of the products, and the logarithm series converges in trace norm with bound ||W||1/(1−q). The limiting logarithm is a finite real number, so its exponential is strictly positive, rather than merely a limit of positive numbers that might vanish. Gaussian vectors and anchors converge under the same HS approximation. No orientation/determinant branch is assumed without this argument.
+
+The lower bound uses the positive anchor log estimate and the trace-log bound correctly. It depends on actual HS quantities; opposite2-mode blocks demonstrate that the disk alone has no volume-independent amplitude floor. The result concerns normalized states in one common real reference CAR frame, not independently rephased native frames or inserted kernels.
+
+The ket/bra annihilator relations give the four ordered contractions as displayed. In particular C=-Z_A A Z_C has the stated index order and satisfies A+C^T=I. Direct2-mode algebra gives F12=−z_C/(1+z_Az_C) and B12=z_A/(1+z_Az_C). Wick's4-term signs and repeated-index contacts are consistent. Neumann bounds give10000/199 and the r/r²-scaled blocks. A normalized real Majorana has annihilation/creation coefficient norms1, giving the two-insertion ratio199 and four-insertion ratio118803. These bounds apply even when the positive overlap is extremely small because they are algebraic transition ratios, not division-error estimates based on an amplitude floor.
+
+The inverse and log series tail powers and constants are correct. The input inverse-error telescoping formula is correct; the log-anchor factors1/4 follow positive trace-log Lipschitz continuity, and the mixed term uses trace-class log continuity on the common q_* ball specified above. Operator error alone is insufficient for determinant/log error; the source correctly requires HS tails. Combining multiplicative overlap error with inserted-kernel absolute error does not prove the sign of a Ward sum or alpha.
+
+The716 literal synthetic checks support finite CAR/sign identities only. No physical overlap, native evolution, phase selection, or cost result is inferred. Reviewer authored related parent finite-excitation material and independently reviewed the Riccati theorem; this new mixed-overlap proof was not authored by the reviewer.
+
+## Affected-only final confirmation
+
+DERIVATION5f4154dbd35271c5d1588d2f6ac35656b975fa7d563978d0777357fdb0ea9acd explicitly makes q_* bound both actual and approximate products and gives the correct max example. This closes the sole wording finding. Final mathematical disposition PASS; no other source or control execution was repeated.
