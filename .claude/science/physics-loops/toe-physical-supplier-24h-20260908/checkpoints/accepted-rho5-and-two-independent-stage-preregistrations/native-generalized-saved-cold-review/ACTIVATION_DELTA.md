@@ -1,0 +1,3 @@
+# Generalized saved activation affected review
+
+PASS workerdb5ee13c9fbb3e270a4bbadbb35753ea13c95d269393d165547570edc9553e9d/root06f3f3aee214e158e209dbfbb5fdbe9811fb1ce68b70e27b38a4daf47774f84b. Exact predecessor comparison: worker only BINDING/RUNTIME_FREEZE; root only auth/protocol/freezepins and two receipt/marker label replacements to saved_generalized_stage_replay. No guard or arithmetic change. Both actual strict-I-B-S source-readiness CLIs passed; receipts alongside review. No saved computation/scientific values loaded. Reuse full015e8b42 source review. Parent once-launch/preregistration remains separate.
