@@ -1,0 +1,134 @@
+{
+  "all_certificates_pass": true,
+  "audit": "unset",
+  "authority": "none",
+  "certificates": {
+    "LITERAL_ENDPOINT_DISTINCTION": {
+      "detail": "last-clean detector accepts; whole-stretch terminal feature rejects",
+      "pass": true
+    },
+    "MODULAR_STATION_ENUMERATION": {
+      "detail": "cells=253 disagreements=0 odd_exceptions=11 even_exceptions=11",
+      "pass": true
+    },
+    "PERIODIC_RUN_TRANSLATIONS": {
+      "detail": "translations=2568 failures=0",
+      "pass": true
+    },
+    "PINNED_PRIMARY_AND_CACHE": {
+      "detail": "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt:MATCH",
+      "pass": true
+    },
+    "PRIMARY_CLAIMS_INTERFACE": {
+      "detail": "claims_dict=True primary_total_present=True",
+      "pass": true
+    },
+    "PRIMARY_SELECTED_CLAIMS_AGREE": {
+      "detail": "selected finite values and open-boundary fields match independent routes",
+      "pass": true
+    },
+    "RUNTIME_BOUND": {
+      "detail": "elapsed_s=0.004909 budget_s=30",
+      "pass": true
+    },
+    "WIDENING_ONLY_CONTROL": {
+      "detail": "extension=true/true; separated intervening start=true/false",
+      "pass": true
+    },
+    "WIDTH_COUNTEREXAMPLES": {
+      "detail": "synthetic detector-domain witnesses give [1,1] rejected and [1,2] accepted",
+      "pass": true
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 930,
+  "declared_inputs": [
+    "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py",
+    "logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt"
+  ],
+  "files": {
+    "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py": "696a9487d004467836868ed98a38281ad628866f0547eeb40453dce91dad0876"
+  },
+  "formal_audit": false,
+  "historical_campaign_replayed": false,
+  "independent_results": {
+    "detector": {
+      "endpoint": {
+        "decision": {
+          "accepted": true,
+          "events": 8,
+          "last_clean": 14,
+          "reason": "accepted",
+          "residue_count": 1,
+          "transient": 0
+        },
+        "whole_stretch_tail_exact": false
+      },
+      "equal_width_insufficient": {
+        "decision": {
+          "accepted": false,
+          "last_clean": 17,
+          "reason": "last_clean_tail_not_period_exact"
+        },
+        "widths": [
+          1,
+          1
+        ]
+      },
+      "unequal_width_accepted": {
+        "decision": {
+          "accepted": true,
+          "events": 24,
+          "last_clean": 39,
+          "reason": "accepted",
+          "residue_count": 4,
+          "transient": 11
+        },
+        "widths": [
+          1,
+          2
+        ]
+      }
+    },
+    "periodic_run_width": {
+      "failures": [],
+      "translations": 2568
+    },
+    "station": {
+      "cells": 253,
+      "disagreements": [],
+      "even_exception_cells": 11,
+      "odd_exception_cells": 11
+    },
+    "widening": {
+      "historical_extension_target_strict": true,
+      "historical_extension_target_wide": true,
+      "separated_is_wide_only": true,
+      "separated_target_strict": false,
+      "separated_target_wide": true,
+      "station_fixture": {
+        "B": 5,
+        "N": 35,
+        "P": 8,
+        "b": 3,
+        "run_start_pair": [
+          18,
+          26
+        ],
+        "token_zero_station_pair": [
+          17,
+          25
+        ]
+      }
+    }
+  },
+  "input_sha256": {
+    "logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt": "5af28199dffa2a1e1b6cbcb689d5e37c11fd9cedacf4e0e1524accaa12fb3385",
+    "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": "7c87b96a8b0367d36258f3a275856fbcc2a17533900c2d6ec7bf446c12aea2c5"
+  },
+  "physical_interpretation_checked": false,
+  "runtime_limit_seconds": 30,
+  "runtime_seconds": 0.004909,
+  "schema": "third-pair-cycle930-corrected-independent-check-receipt-v1",
+  "verdict": "CURRENT_FINITE_CLAIMS_MATCH_INDEPENDENT_ROUTES"
+}

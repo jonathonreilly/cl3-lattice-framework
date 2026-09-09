@@ -1,0 +1,167 @@
+{
+  "third_pair_rc3_block_cycle930_ship_receipt_2026_07_28.json": {
+    "runtime_seconds": {
+      "checker": 678,
+      "primary": 458
+    },
+    "runtime_cap": null,
+    "gate_results": null,
+    "exit_codes": null,
+    "selected_file_hash_matches": {
+      "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md": true,
+      "logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt": true,
+      "logs/runner-cache/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.txt": true,
+      "outputs/third_pair_rc3_cycle930_receipt_2026_07_28.json": true,
+      "outputs/third_pair_rc3_independent_check_cycle930_receipt_2026_07_28.json": true,
+      "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": true,
+      "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py": true
+    },
+    "status": "Historical receipt only; no original producer execution in this review."
+  },
+  "third_pair_rc3_cycle930_receipt_2026_07_28.json": {
+    "runtime_seconds": 458.2,
+    "runtime_cap": 900,
+    "gate_results": {
+      "A_PINS": "PASS",
+      "B_GEOMETRY_AND_TP": "PASS",
+      "C_DETECTOR": "PASS",
+      "D_RESTRICTION_922_891": "PASS",
+      "E_THIRD_PAIR": "PASS",
+      "F_TP_SEAL": "PASS",
+      "G_RC3_MEASURED": "PASS",
+      "H_FAILING_CELLS": "PASS",
+      "J_TEETH": "PASS",
+      "K_VERDICT": "PASS"
+    },
+    "exit_codes": {
+      "primary": 0
+    },
+    "selected_file_hash_matches": {
+      "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": true
+    },
+    "status": "Historical receipt only; no original producer execution in this review."
+  },
+  "third_pair_rc3_independent_check_cycle930_receipt_2026_07_28.json": {
+    "runtime_seconds": 678.2,
+    "runtime_cap": 900,
+    "gate_results": {
+      "A_PINS": "PASS",
+      "B_GENERATOR": "PASS",
+      "C_DETECTOR": "PASS",
+      "D_RULE_FROM_TEXT": "PASS",
+      "E_THIRD_PAIR_HUNT": "PASS",
+      "F_RC3_DEGENERACY": "PASS",
+      "G_SEAL": "PASS",
+      "H_RESTRICTION": "PASS",
+      "J_TEETH": "PASS",
+      "K_VERDICT": "PASS"
+    },
+    "exit_codes": {
+      "checker": 0
+    },
+    "selected_file_hash_matches": {
+      "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py": true
+    },
+    "status": "Historical receipt only; no original producer execution in this review.",
+    "pooled_scores": {
+      "always_true": {
+        "accuracy": 0.0203,
+        "f1": 0.0397,
+        "fn": 0,
+        "fp": 139264,
+        "precision": 0.0203,
+        "recall": 1.0,
+        "tn": 0,
+        "tp": 2881
+      },
+      "both_widths_le_3": {
+        "accuracy": 0.9796,
+        "f1": 0.5642,
+        "fn": 1003,
+        "fp": 1898,
+        "precision": 0.4974,
+        "recall": 0.6519,
+        "tn": 137366,
+        "tp": 1878
+      },
+      "equal_width": {
+        "accuracy": 0.9696,
+        "f1": 0.5574,
+        "fn": 156,
+        "fp": 4172,
+        "precision": 0.3951,
+        "recall": 0.9459,
+        "tn": 135092,
+        "tp": 2725
+      },
+      "first_width_le_Pm1": {
+        "accuracy": 0.0203,
+        "f1": 0.0397,
+        "fn": 0,
+        "fp": 139264,
+        "precision": 0.0203,
+        "recall": 1.0,
+        "tn": 0,
+        "tp": 2881
+      },
+      "pair_in_last_2P": {
+        "accuracy": 0.3771,
+        "f1": 0.0569,
+        "fn": 208,
+        "fp": 88329,
+        "precision": 0.0294,
+        "recall": 0.9278,
+        "tn": 50935,
+        "tp": 2673
+      },
+      "tail_window_P_exact": {
+        "accuracy": 0.8617,
+        "f1": 0.1347,
+        "fn": 1351,
+        "fp": 18306,
+        "precision": 0.0771,
+        "recall": 0.5311,
+        "tn": 120958,
+        "tp": 1530
+      }
+    },
+    "tooth9": {
+      "fires": true,
+      "note": "the widened hunt is strictly weaker, so this tooth proves the widening is live rather than vacuous",
+      "strict_definition_also_sees_it": true,
+      "tooth": "widened_hunt_sees_a_planted_non_consecutive_third_pair"
+    }
+  },
+  "frontier_cycle930_third_pair_rc3_2026_07_28.txt": {
+    "gate_lines": [
+      "PASS A_PINS",
+      "PASS B_GEOMETRY_AND_TP",
+      "PASS C_DETECTOR",
+      "PASS D_RESTRICTION_922_891",
+      "PASS E_THIRD_PAIR",
+      "PASS F_TP_SEAL",
+      "PASS G_RC3_MEASURED",
+      "PASS H_FAILING_CELLS",
+      "PASS J_TEETH",
+      "PASS K_VERDICT"
+    ],
+    "sha256": "55f0c16f7da54056e1b1bc5e0661b75e6486c65b0c470062563ef24369d4c666",
+    "status": "Original complete cache retained verbatim; input_mismatch under current real API."
+  },
+  "frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.txt": {
+    "gate_lines": [
+      "PASS A_PINS",
+      "PASS B_GENERATOR",
+      "PASS C_DETECTOR",
+      "PASS D_RULE_FROM_TEXT",
+      "PASS E_THIRD_PAIR_HUNT",
+      "PASS F_RC3_DEGENERACY",
+      "PASS G_SEAL",
+      "PASS H_RESTRICTION",
+      "PASS J_TEETH",
+      "PASS K_VERDICT"
+    ],
+    "sha256": "437fec1f8d8d5f45ab95818d6edeb5d4cd2276d7e2b71f86cde9d0702adc87fe",
+    "status": "Original complete cache retained verbatim; input_mismatch under current real API."
+  }
+}

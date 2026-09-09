@@ -1,0 +1,1287 @@
+{
+  "all_certificates_pass": true,
+  "audit": "unset",
+  "authority": "none",
+  "certificates": {
+    "AFFINE_SHIFT_SOLUTION": {
+      "detail": "three general P-shifts and exactly the odd/even reverse-row exceptions",
+      "pass": true
+    },
+    "COMPLETE_PERIODIC_RUN_WIDTHS": {
+      "detail": "translations=2568 clipped=[2,3,2]",
+      "pass": true
+    },
+    "DETERMINISTIC_SCIENCE_PAYLOAD": {
+      "detail": "complete finite payload recomputed in-process",
+      "pass": true
+    },
+    "ENDPOINT_CONVENTIONS_DIFFER": {
+      "detail": "whole-stretch endpoint 17 fails because clean(14) != clean(16)",
+      "pass": true
+    },
+    "EQUAL_WIDTH_NOT_NECESSARY": {
+      "detail": "synthetic detector-domain pair widths [1,2] with accepted period 5",
+      "pass": true
+    },
+    "EQUAL_WIDTH_NOT_SUFFICIENT": {
+      "detail": "equal widths [1,1], decision=last_clean_tail_not_period_exact",
+      "pass": true
+    },
+    "GENUINE_WIDENING_ONLY_TOOTH": {
+      "detail": "t1+3 is wide/strict true/true; separated t1+4 is true/false",
+      "pass": true
+    },
+    "LAST_CLEAN_DETECTOR_WITNESS": {
+      "detail": "length=18 period=2 accepted through last clean tick 14",
+      "pass": true
+    },
+    "ROW_GAP_AND_PAIR_STRUCTURE": {
+      "detail": "eight-row ordering, sole unit gap, and three P-separated pairs",
+      "pass": true
+    },
+    "RUNTIME_BOUND": {
+      "detail": "elapsed_s=0.009845 budget_s=30",
+      "pass": true
+    },
+    "STATION_GRID_REGRESSION": {
+      "detail": "cells=253 disagreements=0",
+      "pass": true
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 930,
+  "external_scientific_inputs": [],
+  "files": {
+    "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": "7c87b96a8b0367d36258f3a275856fbcc2a17533900c2d6ec7bf446c12aea2c5"
+  },
+  "formal_audit": false,
+  "headline": "Exact affine station structure and finite detector-domain distinctions for the supplied Cycle-930 formulas.",
+  "historical_campaign_replayed": false,
+  "package_local_integrity_reads": [
+    "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py"
+  ],
+  "results": {
+    "claim_boundary": {
+      "B8_and_B9_blind_holdouts": false,
+      "B_greater_or_equal_10_controller_corpus": "not built",
+      "TOE_closure": false,
+      "clean_mask_is_a_Record_readout": "not supplied",
+      "formal_audit": false,
+      "globally_best_arithmetic_or_width_selector": "not classified",
+      "historical_RC3_closed": false,
+      "historical_controller_campaign_replayed": false,
+      "historical_counts_are_current_evidence": false,
+      "station_ordinal_is_physical_time": "not supplied",
+      "unit_gap_causes_zero_episodes": "not established"
+    },
+    "claim_type": "bounded_theorem",
+    "detector": {
+      "endpoint_conventions": {
+        "detector": "last clean tick mask.bit_length()-1",
+        "historical_score_feature": "end of supplied stretch length-1"
+      },
+      "endpoint_witness": {
+        "clean_ticks": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14
+        ],
+        "detector": {
+          "accepted": true,
+          "events": 8,
+          "last_clean": 14,
+          "reason": "accepted",
+          "residue_count": 1,
+          "transient": 0
+        },
+        "distinguishing_bits": {
+          "tick_14": 1,
+          "tick_16": 0
+        },
+        "length": 18,
+        "period": 2,
+        "whole_stretch_tail_exact": false
+      },
+      "equal_width_not_necessary_for_this_detector": {
+        "decision": {
+          "accepted": true,
+          "events": 24,
+          "last_clean": 39,
+          "reason": "accepted",
+          "residue_count": 4,
+          "transient": 11
+        },
+        "dirty_runs": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "length": 40,
+        "period": 5,
+        "scope": "synthetic detector-domain witness; no bank, controller, or physical realization is claimed",
+        "selected_pair_widths": [
+          1,
+          2
+        ]
+      },
+      "equal_width_not_sufficient_for_this_detector": {
+        "decision": {
+          "accepted": false,
+          "last_clean": 17,
+          "reason": "last_clean_tail_not_period_exact"
+        },
+        "dirty_runs": [
+          [
+            2,
+            2
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "length": 18,
+        "period": 4,
+        "selected_pair_widths": [
+          1,
+          1
+        ]
+      }
+    },
+    "periodic_run_width": {
+      "clipped_boundary_example": {
+        "global_slice": "ticks 1..11 of period 5, dirty residues {0,1,2}",
+        "unequal_widths_are_boundary_clipping": true,
+        "visible_run_widths": [
+          2,
+          3,
+          2
+        ]
+      },
+      "complete_run_translations_checked": 2568,
+      "failures": [],
+      "finite_regression_periods": "2..8, all binary base words, five repeats",
+      "statement": "translation by P preserves every complete maximal run whose run and translated image lie in the supplied P-periodic region"
+    },
+    "station": {
+      "affine_shift_analysis": {
+        "expected_general_pairs": [
+          [
+            "f(b)",
+            "hr(b-1)"
+          ],
+          [
+            "f(b-1)",
+            "r(b)"
+          ],
+          [
+            "hf(b)",
+            "r(b-1)"
+          ]
+        ],
+        "general_pairs": [
+          [
+            "f(b-1)",
+            "r(b)"
+          ],
+          [
+            "hf(b)",
+            "r(b-1)"
+          ],
+          [
+            "f(b)",
+            "hr(b-1)"
+          ]
+        ],
+        "general_pairs_exact": true,
+        "nonwrap_outside": [
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              8
+            ],
+            "exclusion": "equation requires B-b=8/8; the domain has integer B-b>=2",
+            "source": "hf(b-1)",
+            "target": "hf(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              10
+            ],
+            "exclusion": "equation requires B-b=10/8; the domain has integer B-b>=2",
+            "source": "hf(b-1)",
+            "target": "f(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              13
+            ],
+            "exclusion": "equation requires B-b=13/8; the domain has integer B-b>=2",
+            "source": "hf(b-1)",
+            "target": "hf(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              15
+            ],
+            "exclusion": "equation requires B-b=15/8; the domain has integer B-b>=2",
+            "source": "hf(b-1)",
+            "target": "f(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              2
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "hf(b-1)",
+            "target": "r(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              4
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "hf(b-1)",
+            "target": "hr(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              5
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "hf(b-1)",
+            "target": "r(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              7
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "hf(b-1)",
+            "target": "hr(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              6
+            ],
+            "exclusion": "equation requires B-b=6/8; the domain has integer B-b>=2",
+            "source": "f(b-1)",
+            "target": "hf(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              8
+            ],
+            "exclusion": "equation requires B-b=8/8; the domain has integer B-b>=2",
+            "source": "f(b-1)",
+            "target": "f(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              11
+            ],
+            "exclusion": "equation requires B-b=11/8; the domain has integer B-b>=2",
+            "source": "f(b-1)",
+            "target": "hf(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              13
+            ],
+            "exclusion": "equation requires B-b=13/8; the domain has integer B-b>=2",
+            "source": "f(b-1)",
+            "target": "f(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              2
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "f(b-1)",
+            "target": "hr(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              3
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "f(b-1)",
+            "target": "r(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              5
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "f(b-1)",
+            "target": "hr(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              3
+            ],
+            "exclusion": "equation requires B-b=3/8; the domain has integer B-b>=2",
+            "source": "hf(b)",
+            "target": "hf(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              5
+            ],
+            "exclusion": "equation requires B-b=5/8; the domain has integer B-b>=2",
+            "source": "hf(b)",
+            "target": "f(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              8
+            ],
+            "exclusion": "equation requires B-b=8/8; the domain has integer B-b>=2",
+            "source": "hf(b)",
+            "target": "hf(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              10
+            ],
+            "exclusion": "equation requires B-b=10/8; the domain has integer B-b>=2",
+            "source": "hf(b)",
+            "target": "f(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              -3
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "hf(b)",
+            "target": "r(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              -1
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "hf(b)",
+            "target": "hr(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              2
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "hf(b)",
+            "target": "hr(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              1
+            ],
+            "exclusion": "equation requires B-b=1/8; the domain has integer B-b>=2",
+            "source": "f(b)",
+            "target": "hf(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              3
+            ],
+            "exclusion": "equation requires B-b=3/8; the domain has integer B-b>=2",
+            "source": "f(b)",
+            "target": "f(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              6
+            ],
+            "exclusion": "equation requires B-b=6/8; the domain has integer B-b>=2",
+            "source": "f(b)",
+            "target": "hf(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              8
+            ],
+            "exclusion": "equation requires B-b=8/8; the domain has integer B-b>=2",
+            "source": "f(b)",
+            "target": "f(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              -5
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "f(b)",
+            "target": "r(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              -3
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "f(b)",
+            "target": "hr(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              0,
+              0,
+              -2
+            ],
+            "exclusion": "nonzero constant equation",
+            "source": "f(b)",
+            "target": "r(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              14
+            ],
+            "exclusion": "equation requires B-b=14/16; the domain has integer B-b>=2",
+            "source": "r(b)",
+            "target": "hf(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              16
+            ],
+            "exclusion": "equation requires B-b=16/16; the domain has integer B-b>=2",
+            "source": "r(b)",
+            "target": "f(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              19
+            ],
+            "exclusion": "equation requires B-b=19/16; the domain has integer B-b>=2",
+            "source": "r(b)",
+            "target": "hf(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              21
+            ],
+            "exclusion": "equation requires B-b=21/16; the domain has integer B-b>=2",
+            "source": "r(b)",
+            "target": "f(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              8
+            ],
+            "exclusion": "equation requires B-b=8/8; the domain has integer B-b>=2",
+            "source": "r(b)",
+            "target": "r(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              10
+            ],
+            "exclusion": "equation requires B-b=10/8; the domain has integer B-b>=2",
+            "source": "r(b)",
+            "target": "hr(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              11
+            ],
+            "exclusion": "equation requires B-b=11/8; the domain has integer B-b>=2",
+            "source": "r(b)",
+            "target": "r(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              13
+            ],
+            "exclusion": "equation requires B-b=13/8; the domain has integer B-b>=2",
+            "source": "r(b)",
+            "target": "hr(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              12
+            ],
+            "exclusion": "equation requires B-b=12/16; the domain has integer B-b>=2",
+            "source": "hr(b)",
+            "target": "hf(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              14
+            ],
+            "exclusion": "equation requires B-b=14/16; the domain has integer B-b>=2",
+            "source": "hr(b)",
+            "target": "f(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              17
+            ],
+            "exclusion": "equation requires B-b=17/16; the domain has integer B-b>=2",
+            "source": "hr(b)",
+            "target": "hf(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              19
+            ],
+            "exclusion": "equation requires B-b=19/16; the domain has integer B-b>=2",
+            "source": "hr(b)",
+            "target": "f(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              6
+            ],
+            "exclusion": "equation requires B-b=6/8; the domain has integer B-b>=2",
+            "source": "hr(b)",
+            "target": "r(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              8
+            ],
+            "exclusion": "equation requires B-b=8/8; the domain has integer B-b>=2",
+            "source": "hr(b)",
+            "target": "hr(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              9
+            ],
+            "exclusion": "equation requires B-b=9/8; the domain has integer B-b>=2",
+            "source": "hr(b)",
+            "target": "r(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              11
+            ],
+            "exclusion": "equation requires B-b=11/8; the domain has integer B-b>=2",
+            "source": "hr(b)",
+            "target": "hr(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              11
+            ],
+            "exclusion": "equation requires B-b=11/16; the domain has integer B-b>=2",
+            "source": "r(b-1)",
+            "target": "hf(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              13
+            ],
+            "exclusion": "equation requires B-b=13/16; the domain has integer B-b>=2",
+            "source": "r(b-1)",
+            "target": "f(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              16
+            ],
+            "exclusion": "equation requires B-b=16/16; the domain has integer B-b>=2",
+            "source": "r(b-1)",
+            "target": "hf(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              18
+            ],
+            "exclusion": "equation requires B-b=18/16; the domain has integer B-b>=2",
+            "source": "r(b-1)",
+            "target": "f(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              5
+            ],
+            "exclusion": "equation requires B-b=5/8; the domain has integer B-b>=2",
+            "source": "r(b-1)",
+            "target": "r(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              7
+            ],
+            "exclusion": "equation requires B-b=7/8; the domain has integer B-b>=2",
+            "source": "r(b-1)",
+            "target": "hr(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              8
+            ],
+            "exclusion": "equation requires B-b=8/8; the domain has integer B-b>=2",
+            "source": "r(b-1)",
+            "target": "r(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              10
+            ],
+            "exclusion": "equation requires B-b=10/8; the domain has integer B-b>=2",
+            "source": "r(b-1)",
+            "target": "hr(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              9
+            ],
+            "exclusion": "equation requires B-b=9/16; the domain has integer B-b>=2",
+            "source": "hr(b-1)",
+            "target": "hf(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              11
+            ],
+            "exclusion": "equation requires B-b=11/16; the domain has integer B-b>=2",
+            "source": "hr(b-1)",
+            "target": "f(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              14
+            ],
+            "exclusion": "equation requires B-b=14/16; the domain has integer B-b>=2",
+            "source": "hr(b-1)",
+            "target": "hf(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -16,
+              16,
+              16
+            ],
+            "exclusion": "equation requires B-b=16/16; the domain has integer B-b>=2",
+            "source": "hr(b-1)",
+            "target": "f(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              3
+            ],
+            "exclusion": "equation requires B-b=3/8; the domain has integer B-b>=2",
+            "source": "hr(b-1)",
+            "target": "r(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              5
+            ],
+            "exclusion": "equation requires B-b=5/8; the domain has integer B-b>=2",
+            "source": "hr(b-1)",
+            "target": "hr(b)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              6
+            ],
+            "exclusion": "equation requires B-b=6/8; the domain has integer B-b>=2",
+            "source": "hr(b-1)",
+            "target": "r(b-1)",
+            "wrap": false
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              8,
+              8
+            ],
+            "exclusion": "equation requires B-b=8/8; the domain has integer B-b>=2",
+            "source": "hr(b-1)",
+            "target": "hr(b-1)",
+            "wrap": false
+          }
+        ],
+        "nonwrap_outside_count": 61,
+        "range_argument": "0<=x,y<N and 0<P<N leave only y-x-P in {0,-N}",
+        "unexpected_equations": [],
+        "wrap_excluded_count": 62,
+        "wrap_viable": [
+          {
+            "equation_coefficients": [
+              -8,
+              16,
+              16
+            ],
+            "only_integer_solution": "B even, b=(B-2)/2",
+            "source": "r(b)",
+            "target": "f(b)",
+            "wrap": true
+          },
+          {
+            "equation_coefficients": [
+              -8,
+              16,
+              8
+            ],
+            "only_integer_solution": "B odd, b=(B-1)/2",
+            "source": "r(b-1)",
+            "target": "f(b-1)",
+            "wrap": true
+          }
+        ],
+        "wrap_viable_exact": true
+      },
+      "bounded_regression_domain": "3<=B<=24",
+      "cells_checked": 253,
+      "cyclic_gap_formula": [
+        "2",
+        "3",
+        "2",
+        "8(B-b)-13",
+        "2",
+        "1",
+        "2",
+        "8b-4"
+      ],
+      "disagreements": [],
+      "examples": [
+        {
+          "B": 5,
+          "N": 35,
+          "P": 16,
+          "P_shift_fixed_rows": [
+            "f(b-1)",
+            "hf(b)",
+            "f(b)",
+            "r(b-1)"
+          ],
+          "all_pairs_span_P": true,
+          "b": 2,
+          "expected_extra_P_shift_fixed_rows": [
+            "r(b-1)"
+          ],
+          "expected_gaps": [
+            2,
+            3,
+            2,
+            11,
+            2,
+            1,
+            2,
+            12
+          ],
+          "extra_P_shift_fixed_rows": [
+            "r(b-1)"
+          ],
+          "gaps": [
+            2,
+            3,
+            2,
+            11,
+            2,
+            1,
+            2,
+            12
+          ],
+          "hr_b_has_no_P_preimage": true,
+          "hr_b_minus_P": 11,
+          "hr_b_minus_P_expected": 11,
+          "ordered_values": [
+            7,
+            9,
+            12,
+            14,
+            25,
+            27,
+            28,
+            30
+          ],
+          "pair_first_has_row_predecessor": {
+            "handoff_swap": false,
+            "swap_handoff": false,
+            "swap_swap": false
+          },
+          "pair_terminal_has_row_predecessor": {
+            "handoff_swap": true,
+            "swap_handoff": false,
+            "swap_swap": false
+          },
+          "pairs": {
+            "handoff_swap": [
+              12,
+              28
+            ],
+            "swap_handoff": [
+              14,
+              30
+            ],
+            "swap_swap": [
+              9,
+              25
+            ]
+          },
+          "rows": {
+            "f(b)": 14,
+            "f(b-1)": 9,
+            "hf(b)": 12,
+            "hf(b-1)": 7,
+            "hr(b)": 27,
+            "hr(b-1)": 30,
+            "r(b)": 25,
+            "r(b-1)": 28
+          },
+          "sole_unit_gap": true,
+          "unit_gap_lower_and_upper": [
+            "hr(b)",
+            "r(b-1)"
+          ]
+        },
+        {
+          "B": 6,
+          "N": 43,
+          "P": 24,
+          "P_shift_fixed_rows": [
+            "f(b-1)",
+            "hf(b)",
+            "f(b)",
+            "r(b)"
+          ],
+          "all_pairs_span_P": true,
+          "b": 2,
+          "expected_extra_P_shift_fixed_rows": [
+            "r(b)"
+          ],
+          "expected_gaps": [
+            2,
+            3,
+            2,
+            19,
+            2,
+            1,
+            2,
+            12
+          ],
+          "extra_P_shift_fixed_rows": [
+            "r(b)"
+          ],
+          "gaps": [
+            2,
+            3,
+            2,
+            19,
+            2,
+            1,
+            2,
+            12
+          ],
+          "hr_b_has_no_P_preimage": true,
+          "hr_b_minus_P": 11,
+          "hr_b_minus_P_expected": 11,
+          "ordered_values": [
+            7,
+            9,
+            12,
+            14,
+            33,
+            35,
+            36,
+            38
+          ],
+          "pair_first_has_row_predecessor": {
+            "handoff_swap": false,
+            "swap_handoff": false,
+            "swap_swap": false
+          },
+          "pair_terminal_has_row_predecessor": {
+            "handoff_swap": true,
+            "swap_handoff": false,
+            "swap_swap": false
+          },
+          "pairs": {
+            "handoff_swap": [
+              12,
+              36
+            ],
+            "swap_handoff": [
+              14,
+              38
+            ],
+            "swap_swap": [
+              9,
+              33
+            ]
+          },
+          "rows": {
+            "f(b)": 14,
+            "f(b-1)": 9,
+            "hf(b)": 12,
+            "hf(b-1)": 7,
+            "hr(b)": 35,
+            "hr(b-1)": 38,
+            "r(b)": 33,
+            "r(b-1)": 36
+          },
+          "sole_unit_gap": true,
+          "unit_gap_lower_and_upper": [
+            "hr(b)",
+            "r(b-1)"
+          ]
+        },
+        {
+          "B": 7,
+          "N": 51,
+          "P": 24,
+          "P_shift_fixed_rows": [
+            "f(b-1)",
+            "hf(b)",
+            "f(b)",
+            "r(b-1)"
+          ],
+          "all_pairs_span_P": true,
+          "b": 3,
+          "expected_extra_P_shift_fixed_rows": [
+            "r(b-1)"
+          ],
+          "expected_gaps": [
+            2,
+            3,
+            2,
+            19,
+            2,
+            1,
+            2,
+            20
+          ],
+          "extra_P_shift_fixed_rows": [
+            "r(b-1)"
+          ],
+          "gaps": [
+            2,
+            3,
+            2,
+            19,
+            2,
+            1,
+            2,
+            20
+          ],
+          "hr_b_has_no_P_preimage": true,
+          "hr_b_minus_P": 16,
+          "hr_b_minus_P_expected": 16,
+          "ordered_values": [
+            12,
+            14,
+            17,
+            19,
+            38,
+            40,
+            41,
+            43
+          ],
+          "pair_first_has_row_predecessor": {
+            "handoff_swap": false,
+            "swap_handoff": false,
+            "swap_swap": false
+          },
+          "pair_terminal_has_row_predecessor": {
+            "handoff_swap": true,
+            "swap_handoff": false,
+            "swap_swap": false
+          },
+          "pairs": {
+            "handoff_swap": [
+              17,
+              41
+            ],
+            "swap_handoff": [
+              19,
+              43
+            ],
+            "swap_swap": [
+              14,
+              38
+            ]
+          },
+          "rows": {
+            "f(b)": 19,
+            "f(b-1)": 14,
+            "hf(b)": 17,
+            "hf(b-1)": 12,
+            "hr(b)": 40,
+            "hr(b-1)": 43,
+            "r(b)": 38,
+            "r(b-1)": 41
+          },
+          "sole_unit_gap": true,
+          "unit_gap_lower_and_upper": [
+            "hr(b)",
+            "r(b-1)"
+          ]
+        }
+      ],
+      "quantified_domain": "integers B>=3 and 1<=b<=B-2",
+      "variable_gap_lower_bounds": [
+        3,
+        4
+      ]
+    },
+    "widening": {
+      "corrected_t1_plus_4_separated_run": {
+        "consecutive_pairs": [],
+        "starts": [
+          18,
+          22,
+          26
+        ],
+        "target_consecutive": false,
+        "target_widened": true,
+        "wide_only": true,
+        "widened_pairs": [
+          [
+            18,
+            26
+          ]
+        ]
+      },
+      "fixture": {
+        "B": 5,
+        "N": 35,
+        "P": 8,
+        "b": 3,
+        "target_pair_run_starts": [
+          18,
+          26
+        ],
+        "target_pair_stations_for_token_at_zero": [
+          17,
+          25
+        ]
+      },
+      "historical_t1_plus_3_extension": {
+        "consecutive_pairs": [
+          [
+            18,
+            26
+          ]
+        ],
+        "starts": [
+          18,
+          26
+        ],
+        "target_consecutive": true,
+        "target_widened": true,
+        "widened_pairs": [
+          [
+            18,
+            26
+          ]
+        ]
+      },
+      "strict_substitution_rejected": true
+    }
+  },
+  "runtime_limit_seconds": 30,
+  "runtime_seconds": 0.009845,
+  "schema": "third-pair-cycle930-corrected-primary-receipt-v1",
+  "science_digest": "fd779402ecccd5f909ab5468a5d3a96408084e8da493c91ab8944df3f5b3a932"
+}

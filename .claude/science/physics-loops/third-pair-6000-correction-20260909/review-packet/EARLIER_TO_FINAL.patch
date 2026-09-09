@@ -1,0 +1,257 @@
+--- 39bd7dea4ddadc8c9dfdaeefb4e53ddf5b49d462
++++ scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py
+@@ -1914,9 +1914,33 @@
+         "teeth": teeth, "count": len(teeth), "declared_minimum": 8,
+         "all_fire": all(t["fires"] for t in teeth)})
+ 
++    # ---------------------------------------------------- determinism probe
++    probe_a = build_corpus(3, 64)
++    probe_b = build_corpus(3, 64)
++    corpus_digest = digest([probe_a["clean_planes"], probe_a["source_clean"]])
++    corpus_digest_b = digest([probe_b["clean_planes"], probe_b["source_clean"]])
++    program_digest = digest([list(K.interleaved_program(bc))
++                             for bc in range(3, 9)])
++    program_digest_b = digest([list(K.interleaved_program(bc))
++                               for bc in range(3, 9)])
++    determinism = {
++        "corpus_double_build_digest": corpus_digest,
++        "corpus_double_build_deterministic": corpus_digest == corpus_digest_b,
++        "program_double_build_digest": program_digest,
++        "program_double_build_deterministic": program_digest == program_digest_b,
++        "double_run_protocol":
++            "the runner is executed twice cold; the two stdouts are compared "
++            "after normalising the two runtime fields and the trailing RECEIPT "
++            "digest line (which embeds the runtime).  Everything else -- all "
++            "ten gate lines and the SEAL line -- must be byte identical.",
++    }
++    del probe_a, probe_b
++
+     # ------------------------------------------------------------ gate K
+     runtime = time.monotonic() - started
+-    k_ok = all(results.values()) and runtime <= RUNTIME_LIMIT_SECONDS
++    k_ok = (all(results.values()) and runtime <= RUNTIME_LIMIT_SECONDS
++            and determinism["corpus_double_build_deterministic"]
++            and determinism["program_double_build_deterministic"])
+     headline = (
+         "THE THIRD PAIR IS NOT ABSENT, IT IS NEVER READ.  (h_f(b), r(b-1)) "
+         "occurs %d times as a consecutive same-token P-separated run-start pair "
+@@ -1937,6 +1961,7 @@
+     results["K_VERDICT"] = gate("K_VERDICT", k_ok, {
+         "headline": headline,
+         "gates": {k: ("PASS" if v else "FAIL") for k, v in results.items()},
++        "determinism": determinism,
+         "runtime_s": round(runtime, 1),
+         "runtime_limit_s": RUNTIME_LIMIT_SECONDS,
+         "build_log": list(BUILD_LOG),
+@@ -2002,6 +2027,7 @@
+                  "build_log_at_seal_time_is_holdout_free": holdout_free,
+                  "blind_from_bank_count": 10},
+         "teeth": teeth,
++        "determinism": determinism,
+         "restriction_gate": {"total_failed_checks": len(failures),
+                              "tier_rows": d_rows,
+                              "pinned_cells_compared": len(pinned_fit) + 6},
+--- e79d0655b9b92f50c6740eff74b681f71a0736b6
++++ scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py
+@@ -975,13 +975,31 @@
+             "statistic on the pooled population, so it is not separating on "
+             "equality -- it is riding a width statistic that needs no equality "
+             "at all.")
+-    if best == "tail_window_P_exact":
++    if best and best != "equal_width":
+         findings.append(
+-            "The best rival discriminator on the pooled population is "
+-            "tail_window_P_exact (F1 %.4f), which is the primary's own R3 "
+-            "component -- confirming the primary's reading that the binding "
+-            "constraint is the TAIL, not the width."
+-            % pooled_scores[best]["f1"])
++            "RANKING THE PRIMARY DID NOT REPORT: its named statistic is not the "
++            "best simple discriminator on this population.  '%s' scores F1 "
++            "%.4f against equal_width's %.4f.  equal_width has high recall "
++            "(%.4f -- most reading stretches really do carry an equal-width "
++            "entry-gap pair) but low precision (%.4f: %d stretches carry one "
++            "and do NOT read P).  This strengthens the primary's 'RC-3 does "
++            "not close' verdict rather than weakening it, but the ranking "
++            "belongs on the record."
++            % (best, pooled_scores[best]["f1"], eq.get("f1", 0),
++               eq.get("recall", 0), eq.get("precision", 0), eq.get("fp", 0)))
++    tail = pooled_scores.get("tail_window_P_exact", {})
++    if tail and tail.get("f1", 1) < 0.5:
++        findings.append(
++            "QUALIFICATION ON THE PRIMARY'S 'BINDING COMPONENT'.  The primary "
++            "calls R3 (the terminal 2P+1 ticks failing to be P-exact) the "
++            "binding component.  As a REFUSAL DECOMPOSITION that survives this "
++            "check untouched.  It is NOT the claim that tail-exactness "
++            "PREDICTS a reading: measured as a predictor over this "
++            "%d-stretch population, tail_window_P_exact scores F1 %.4f with "
++            "precision %.4f.  Both statements are true and they are different; "
++            "the primary's wording can be read as the stronger one, and only "
++            "the weaker one is supported."
++            % (len(pooled), tail["f1"], tail["precision"]))
+     f_ok = len(pooled) > 0 and best is not None
+     results["F_RC3_DEGENERACY"] = gate("F_RC3_DEGENERACY", f_ok, {
+         "attack": "score five rival stretch-configuration discriminators plus a "
+--- e7b6ad1ce2353c66e9eed2582ed1f083e612724e
++++ scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py
+@@ -66,6 +66,12 @@
+     "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py")
+ 
+ PINS = {
++    PRIMARY_930: ("afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92",
++                  "1b163d8cf59d6143fa3bfd83a170e805f3e7d0c0"),
++    CACHE_930: ("55f0c16f7da54056e1b1bc5e0661b75e6486c65b0c470062563ef24369d4c666",
++                "d4e9755853b526a486471edf5bf015e11b1987e3"),
++    RECEIPT_930: ("a865ebc7c9ce2a03306c33a636f7583cadc0f3bc9ec3abfea0cac0491ae902a2",
++                  "0aaf4442470dac362d490adf5f093bb512e30b89"),
+     PRIMARY_922: ("9e1a8de7190188a89cd4449300ab56cc053d6a63eec328265fa80f9955ce3a83",
+                   "fdd77d879b142d1bafa1f76926c494bbc4480b1c"),
+     CHECKER_922: ("fb7acd4bfe5fa1dcc8f22373861da2038dfdb169371c53d283ae65325d44b118",
+@@ -82,7 +88,7 @@
+         "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
+         "3add288d1b7de5bcc45f5ef8f88f3cfb98105b8f"),
+ }
+-AUDIT_INPUT_PATHS = tuple(sorted(PINS)) + (PRIMARY_930, CACHE_930, RECEIPT_930)
++AUDIT_INPUT_PATHS = tuple(sorted(PINS))
+ DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+ AUDIT_TIMEOUT_SEC = 900
+ 
+@@ -703,28 +709,60 @@
+     return None
+ 
+ 
++_MACHINE_CACHE = {}
++
++
++def cached_machine(bank_count):
++    if bank_count not in _MACHINE_CACHE:
++        _MACHINE_CACHE[bank_count] = machine(bank_count)
++    return _MACHINE_CACHE[bank_count]
++
++
+ def tp_predicates_from_text(text):
+-    """Re-derive the rule from the primary's stated words alone."""
++    """Re-derive the rule from the primary's stated words alone.
++
++    Every predicate is checked against the MACHINE -- the rows the kernel's own
++    emitted program puts on the ring -- not against the algebraic identity the
++    sentence happens to contain, so a true-by-construction sentence cannot pass.
++    """
+     found = {}
+     if "r(b-1) - h_r(b) = (8B-6-3b) - (8B-7-3b) = 1" in text:
+-        found["adjacency_closed_form"] = lambda bc, b: (
+-            ((8 * bc - 6 - 3 * b) - (8 * bc - 7 - 3 * b)) % (8 * bc - 5) == 1)
++        def adjacency(bc, b):
++            mac = cached_machine(bc)
++            n = mac["stations"]
++            return (mac["swap_r"][b - 1] - mac["hand_r"][b]) % n == 1
++        found["third_pair_terminal_sits_one_above_h_r_b"] = adjacency
+     if "h_r(b) - P = 5b+1" in text:
+-        found["h_r_preimage_is_5b_plus_1"] = lambda bc, b: (
+-            ((8 * bc - 7 - 3 * b) - 8 * (bc - 1 - b)) % (8 * bc - 5)
+-            == (5 * b + 1) % (8 * bc - 5))
++        def no_preimage(bc, b):
++            mac = cached_machine(bc)
++            n = mac["stations"]
++            period = mac["entry"][b]
++            return ((mac["hand_r"][b] - period) % n not in mac["own"][b]
++                    and (mac["hand_r"][b] - period) % n == (5 * b + 1) % n)
++        found["h_r_b_has_no_P_preimage_and_equals_5b_plus_1"] = no_preimage
+     if "exactly one" in text.lower() or "ONE consecutive gap equal to 1" in text:
+         def one_unit_gap(bc, b):
+-            n = 8 * bc - 5
+-            f = lambda e: (4 + 5 * e) % n
+-            r = lambda e: (8 * bc - 9 - 3 * e) % n
+-            rows = sorted({(f(b - 1) - 2) % n, f(b - 1), r(b - 1),
+-                           (r(b - 1) + 2) % n, (f(b) - 2) % n, f(b), r(b),
+-                           (r(b) + 2) % n})
++            mac = cached_machine(bc)
++            n = mac["stations"]
++            rows = sorted(mac["own"][b])
+             gaps = [(rows[(i + 1) % len(rows)] - rows[i]) % n
+                     for i in range(len(rows))]
+-            return gaps.count(1) == 1
+-        found["exactly_one_unit_gap"] = one_unit_gap
++            return len(rows) == 8 and gaps.count(1) == 1
++        found["exactly_one_unit_gap_among_the_eight_rows"] = one_unit_gap
++    if "unique entry-gap pair whose second run-start is shadowed" in text:
++        def only_third_pair_shadowed(bc, b):
++            mac = cached_machine(bc)
++            n = mac["stations"]
++            rows = sorted(mac["own"][b])
++            gaps = [(rows[(i + 1) % len(rows)] - rows[i]) % n
++                    for i in range(len(rows))]
++            shadow = {rows[(i + 1) % len(rows)]
++                      for i, g in enumerate(gaps) if g == 1}
++            pairs = entry_pair_stations(mac, b)
++            return (pairs["handoff_swap"][1] in shadow
++                    and pairs["swap_swap"][1] not in shadow
++                    and pairs["swap_handoff"][1] not in shadow)
++        found["only_the_third_pair_has_a_shadowed_terminal"] = only_third_pair_shadowed
+     return found
+ 
+ 
+@@ -833,17 +871,24 @@
+     # ------------------------------------------------------------ gate D
+     tp_text = literal_from_primary("TP_STATEMENT")
+     preds = tp_predicates_from_text(tp_text or "")
+-    determinacy, disagree = 0, 0
+-    for bc in range(3, 21):
++    determinacy, disagree, failed = 0, 0, []
++    for bc in range(3, 13):     # the kernel's emitted program tops out at B=12
+         for b in range(1, bc - 1):
+             determinacy += 1
+             vals = {name: bool(fn(bc, b)) for name, fn in preds.items()}
+             if not all(vals.values()):
+                 disagree += 1
++                failed.append({"banks": bc, "bank": b,
++                               "failed": [k for k, v in vals.items() if not v]})
+     d_ok = len(preds) >= 3 and disagree == 0 and determinacy > 0
+     results["D_RULE_FROM_TEXT"] = gate("D_RULE_FROM_TEXT", d_ok, {
+         "phrasings_found": sorted(preds),
+         "cells_checked": determinacy, "disagreements": disagree,
++        "failed_cells": failed,
++        "scope_note": "every predicate is evaluated against the KERNEL'S OWN "
++                      "emitted program, which tops out at B=12; the primary's "
++                      "own B=3..24 sweep uses closed forms and validates them "
++                      "against the kernel exactly where the kernel exists",
+         "note": "the primary's TP text is re-read as an AST literal and its "
+                 "closed forms re-derived here; every phrasing must hold on "
+                 "every cell independently of the primary's own code",
+@@ -930,13 +975,31 @@
+             "statistic on the pooled population, so it is not separating on "
+             "equality -- it is riding a width statistic that needs no equality "
+             "at all.")
+-    if best == "tail_window_P_exact":
++    if best and best != "equal_width":
+         findings.append(
+-            "The best rival discriminator on the pooled population is "
+-            "tail_window_P_exact (F1 %.4f), which is the primary's own R3 "
+-            "component -- confirming the primary's reading that the binding "
+-            "constraint is the TAIL, not the width."
+-            % pooled_scores[best]["f1"])
++            "RANKING THE PRIMARY DID NOT REPORT: its named statistic is not the "
++            "best simple discriminator on this population.  '%s' scores F1 "
++            "%.4f against equal_width's %.4f.  equal_width has high recall "
++            "(%.4f -- most reading stretches really do carry an equal-width "
++            "entry-gap pair) but low precision (%.4f: %d stretches carry one "
++            "and do NOT read P).  This strengthens the primary's 'RC-3 does "
++            "not close' verdict rather than weakening it, but the ranking "
++            "belongs on the record."
++            % (best, pooled_scores[best]["f1"], eq.get("f1", 0),
++               eq.get("recall", 0), eq.get("precision", 0), eq.get("fp", 0)))
++    tail = pooled_scores.get("tail_window_P_exact", {})
++    if tail and tail.get("f1", 1) < 0.5:
++        findings.append(
++            "QUALIFICATION ON THE PRIMARY'S 'BINDING COMPONENT'.  The primary "
++            "calls R3 (the terminal 2P+1 ticks failing to be P-exact) the "
++            "binding component.  As a REFUSAL DECOMPOSITION that survives this "
++            "check untouched.  It is NOT the claim that tail-exactness "
++            "PREDICTS a reading: measured as a predictor over this "
++            "%d-stretch population, tail_window_P_exact scores F1 %.4f with "
++            "precision %.4f.  Both statements are true and they are different; "
++            "the primary's wording can be read as the stronger one, and only "
++            "the weaker one is supported."
++            % (len(pooled), tail["f1"], tail["precision"]))
+     f_ok = len(pooled) > 0 and best is not None
+     results["F_RC3_DEGENERACY"] = gate("F_RC3_DEGENERACY", f_ok, {
+         "attack": "score five rival stretch-configuration discriminators plus a "

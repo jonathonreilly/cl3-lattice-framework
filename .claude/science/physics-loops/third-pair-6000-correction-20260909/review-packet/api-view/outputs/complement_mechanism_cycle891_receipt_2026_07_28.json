@@ -1,0 +1,950 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec; supervisor review",
+ "block": "toe-time-blockT5-20260802",
+ "boundary": "The general law is exact for ANY dirty-run structure, but it is a law about a WORD.  What it does not derive is which word a given quiescent stretch carries: the incompleteness of the orbit-periodic run pattern inside a short stretch is a dynamical fact, measured here per witness, not derived.",
+ "campaign": "toe-time-expansion-20260802",
+ "claim_type": "mechanism derivation + bounded structure theorem",
+ "complement_rule": "THE GENERIC COMPLEMENT RULE (derived at B = 4 and B = 5; B = 6 and B = 7 are the declared holdout).  At bank count B, with N = 8B - 5, f(e) = 4 + 5e and r(e) = 8B - 9 - 3e, the ring-complement period P = 8(e+1) = N - DELTA(B,e) is GENERICALLY readable if and only if BOTH: (a) ENTRY-GAP EXISTENCE -- P is the entry gap of some bank, i.e. P = r(b) - f(b-1) = 8(B-1-b) for a bank b with 1 <= b <= B-2 (equivalently 0 <= e <= B-3, with carrier bank b = B-2-e); and (b) RING ALIGNMENT -- with G = (2P) mod N the two forbidden zones of width w >= 1 leave an arc long enough for two repeats, i.e. max(G, N-G) - w >= P + 1 for some w >= 1, equivalently max(G, N-G) >= P + 2. The CARRIER PREDICTION is that the ENTRY_GAP source of P is realised on bank b = B-2-e and on no other bank clock (pair clocks inherit it from the bank they contain).  DEGENERATE STRETCHES -- closed quiescent stretches in which the generic orbit-periodic run pattern is incomplete, so that fewer runs are present than the ring word carries -- are OUTSIDE this rule by construction and are reported as residuals with their episode counts, never absorbed.",
+ "cooccurrence_answer": {
+  "clocks_carrying_both_by_bank_count": {
+   "4": 6,
+   "5": 153
+  },
+  "holdout_tiers": {
+   "6": 247,
+   "7": 306
+  },
+  "question": "can a complement and a DELTA period be read on ONE clock at different stretches?",
+  "witnesses": [
+   {
+    "banks": 4,
+    "clock": "pair23",
+    "complement_periods": [
+     16
+    ],
+    "delta_periods": [
+     11
+    ],
+    "event": 0,
+    "lane": 45,
+    "sigma": 4
+   },
+   {
+    "banks": 4,
+    "clock": "pair23",
+    "complement_periods": [
+     16
+    ],
+    "delta_periods": [
+     11
+    ],
+    "event": 0,
+    "lane": 69,
+    "sigma": 4
+   },
+   {
+    "banks": 4,
+    "clock": "pair23",
+    "complement_periods": [
+     16
+    ],
+    "delta_periods": [
+     11
+    ],
+    "event": 0,
+    "lane": 92,
+    "sigma": 4
+   },
+   {
+    "banks": 4,
+    "clock": "pair23",
+    "complement_periods": [
+     16
+    ],
+    "delta_periods": [
+     11
+    ],
+    "event": 1,
+    "lane": 369,
+    "sigma": 4
+   },
+   {
+    "banks": 4,
+    "clock": "pair23",
+    "complement_periods": [
+     16
+    ],
+    "delta_periods": [
+     11
+    ],
+    "event": 1,
+    "lane": 393,
+    "sigma": 4
+   },
+   {
+    "banks": 4,
+    "clock": "pair23",
+    "complement_periods": [
+     16
+    ],
+    "delta_periods": [
+     11
+    ],
+    "event": 1,
+    "lane": 416,
+    "sigma": 4
+   },
+   {
+    "banks": 5,
+    "clock": "bank4",
+    "complement_periods": [
+     16
+    ],
+    "delta_periods": [
+     19
+    ],
+    "event": 0,
+    "lane": 14,
+    "sigma": 16
+   },
+   {
+    "banks": 5,
+    "clock": "bank4",
+    "complement_periods": [
+     16
+    ],
+    "delta_periods": [
+     19
+    ],
+    "event": 0,
+    "lane": 17,
+    "sigma": 16
+   }
+  ]
+ },
+ "cycles": [
+  891
+ ],
+ "derivation_tiers": {
+  "4": {
+   "clocks_swept": 6480,
+   "closed_quiescent_stretches": 208786,
+   "complement_source_classes": {
+    "16|RELAY_EDGE_COMPLEMENT": 520,
+    "16|RELAY_ENTRY_GAP": 14,
+    "8|RELAY_EDGE_COMPLEMENT": 294,
+    "8|RELAY_ENTRY_GAP": 500
+   },
+   "complements_observed": [
+    8,
+    16
+   ],
+   "completeness_ledger": {
+    "both_delta_and_complement": 6,
+    "complement_only": 266,
+    "delta_only": 342,
+    "no_reading": 5528,
+    "other_periods_only": 338
+   },
+   "cooccurrence_clocks": 6,
+   "cooccurrence_patterns": {
+    "(11,)|(16,)": 6
+   },
+   "entry_gap_carrier_banks_measured": {
+    "16": {
+     "1": 14
+    },
+    "8": {
+     "0": 8,
+     "2": 500
+    }
+   },
+   "entry_gap_table": {
+    "1": 16,
+    "2": 8
+   },
+   "every_clock_classified": true,
+   "reproduces_pinned_889_episode_spectrum": true
+  },
+  "5": {
+   "clocks_swept": 16800,
+   "closed_quiescent_stretches": 283690,
+   "complement_source_classes": {
+    "16|RELAY_EDGE_COMPLEMENT": 104,
+    "16|RELAY_ENTRY_GAP": 319,
+    "8|RELAY_EDGE_COMPLEMENT": 2070,
+    "8|RELAY_ENTRY_GAP": 2960
+   },
+   "complements_observed": [
+    8,
+    16
+   ],
+   "completeness_ledger": {
+    "both_delta_and_complement": 153,
+    "complement_only": 470,
+    "delta_only": 1365,
+    "no_reading": 13650,
+    "other_periods_only": 1162
+   },
+   "cooccurrence_clocks": 153,
+   "cooccurrence_patterns": {
+    "(11, 19)|(16,)": 91,
+    "(11,)|(16,)": 20,
+    "(19,)|(16,)": 40,
+    "(27,)|(8,)": 2
+   },
+   "entry_gap_carrier_banks_measured": {
+    "16": {
+     "2": 319,
+     "4": 24
+    },
+    "8": {
+     "0": 8,
+     "1": 54,
+     "2": 1532,
+     "3": 2960
+    }
+   },
+   "entry_gap_table": {
+    "1": 24,
+    "2": 16,
+    "3": 8
+   },
+   "every_clock_classified": true,
+   "reproduces_pinned_889_episode_spectrum": true
+  }
+ },
+ "disclosed_deviations": [
+  "PERIOD CEILING.  Inherited verbatim from Cycle 889: every P in [2, max(64, 2N(B))] is tried, which strictly contains the pinned Cycle-881 checker's [2, 64] and every DELTA(B,e) and every ring complement.  A non-orbit period above 2N(B) would be missed; the ceiling is disclosed per B and is never narrowed to the predicted set.",
+  "HORIZON.  H = 16384 ticks per substrate, identical to Cycle 889's top horizon, so the episode census here is directly comparable with the pinned 889 receipt.  No horizon ladder is re-run: 889 already published it and the episode instrument is horizon-robust by construction (a longer horizon adds closed stretches, it does not move the answer on stretches already closed).",
+  "NO SAMPLING IN THE CENSUS.  Every clock of every corpus is swept at every bank count in 3,4,5,6,7 -- all bank clocks and all pair clocks, every closed quiescent stretch.  The clock count is gated against lanes * (B + C(B,2)).",
+  "ANATOMY SUBSET.  Run-level anatomy and station attribution are extracted ONLY for episodes in which a DELTA or a ring-complement period actually fires (that is the population the questions are about).  The count of such episodes is reported in full and is never sampled; the remaining episodes contribute to the spectrum and to the completeness ledger only.",
+  "REGISTER-LEVEL TRACES.  The per-station attributed trace is a single-lane replay and is run on the witness lanes named in the output plus the involution audit lanes; the audit lane set is declared, exhaustive over the B=4 placement classes it names, and its size is reported."
+ ],
+ "exit_codes": {
+  "primary": 0
+ },
+ "falsifier_visibility_control": {
+  "B4_complement_set": [
+   8,
+   16,
+   24
+  ],
+  "B4_delta_set": [
+   3,
+   11,
+   19
+  ],
+  "detector_output": [
+   23,
+   46,
+   69,
+   92
+  ],
+  "note": "A period outside BOTH named sets is detected by the same code path, so an out-of-set falsifier cannot be invisible.",
+  "planted_period": 23,
+  "planted_period_detected": true,
+  "planted_period_in_either_named_set": false
+ },
+ "files": {
+  "logs/runner-cache/frontier_cycle891_complement_mechanism_2026_07_28.txt": {
+   "git_blob": "7099e5ece90f4b59acec9bf27af29468c4e6b746",
+   "sha256": "47b07a1f1428e50bab41890dff77345130cfa9456b887bafbb00df360027409c"
+  },
+  "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": {
+   "git_blob": "a1bbd49ffbe970193cc79054fb7219732f7c9873",
+   "sha256": "3d260f6641d05a22aee092145ea3e5c3b29f3a6882b4cbd9ae966424458afbb7"
+  }
+ },
+ "headline": "THE COMPLEMENT MECHANISM IS DERIVED, not fitted.  RELAY_SWAP(e) is an involutive exchange of the local register across edge e; inside a closed quiescent stretch the only movers of bank dirt are an incident edge's four ordered rows (h_f = f-2, f, r, h_r = r+2), 0 exceptions in the attributed trace.  The bookkeeping identity s2 - s1 = Delta_t + (p2 - p1) then classifies EVERY readable period, and the ring complement 8(e+1) = N - DELTA(B,e) has a sigma-independent geometric source: the ENTRY GAP r(b) - f(b-1) = 8(B-1-b) of the single bank b = B-2-e.  DELTA is a property of one EDGE; the complement the census carries is a property of one BANK.  Rule derived at B=4/5, SEALED, then held out: B=6 predicted {8,16,24} = observed exactly; B=7 predicted {8,16,24,32} all present with 2 residuals (40 and 48, 2 episodes each of 3711).  Cycle 889's alignment law is generalised EXACTLY to k runs -- I_max(P) = (max cyclic gap of W SYMDIFF (W-P)) - 1 -- verified on 2996 randomised ring cells, 599 finite cells and all 580 of 889's own cells, and its FINITE form resolves 889's named open row: the B=7 out-of-law periods 35, 40, 43 and 48 are stretch-local readings whose segment does not carry the whole orbit-periodic run pattern; the finite form is exact on every witness (50/50, 45/45, 51/51, 66/66) where the ring form refuses all four.",
+ "holdout": {
+  "SEAL_sha256": "ac87a262ec2ec761eda869fabd3c38c919712e41476dd8cbf7a5d9fd7b4e7135",
+  "build_log_at_seal_time": [
+   {
+    "banks": 3,
+    "horizon": 64,
+    "lanes": 304,
+    "stations": 19
+   },
+   {
+    "banks": 3,
+    "horizon": 64,
+    "lanes": 304,
+    "stations": 19
+   },
+   {
+    "banks": 4,
+    "horizon": 16384,
+    "lanes": 648,
+    "stations": 27
+   },
+   {
+    "banks": 3,
+    "horizon": 16384,
+    "lanes": 304,
+    "stations": 19
+   },
+   {
+    "banks": 5,
+    "horizon": 16384,
+    "lanes": 1120,
+    "stations": 35
+   }
+  ],
+  "rows": {
+   "6": {
+    "OBSERVED": [
+     8,
+     16,
+     24
+    ],
+    "PREDICTED": [
+     8,
+     16,
+     24
+    ],
+    "PREDICTED_carriers": {
+     "16": 3,
+     "24": 2,
+     "8": 4
+    },
+    "carrier_verification": {
+     "16": {
+      "measured_entry_gap_banks": {
+       "2": 880,
+       "3": 1166,
+       "5": 104
+      },
+      "predicted_carrier_bank": 3,
+      "predicted_carrier_is_the_top_entry_gap_bank": true,
+      "predicted_carrier_present": true
+     },
+     "24": {
+      "measured_entry_gap_banks": {
+       "2": 152,
+       "5": 76
+      },
+      "predicted_carrier_bank": 2,
+      "predicted_carrier_is_the_top_entry_gap_bank": true,
+      "predicted_carrier_present": true
+     },
+     "8": {
+      "measured_entry_gap_banks": {
+       "2": 68,
+       "4": 572
+      },
+      "predicted_carrier_bank": 4,
+      "predicted_carrier_is_the_top_entry_gap_bank": true,
+      "predicted_carrier_present": true
+     }
+    },
+    "cooccurrence_clocks": 247,
+    "observed_episode_counts": {
+     "16": 3808,
+     "24": 854,
+     "32": 0,
+     "40": 0,
+     "8": 572
+    },
+    "predicted_all_present": true,
+    "reproduces_pinned_889_episode_spectrum": true,
+    "residual_episode_counts": {},
+    "residuals_observed_but_not_predicted": []
+   },
+   "7": {
+    "OBSERVED": [
+     8,
+     16,
+     24,
+     32,
+     40,
+     48
+    ],
+    "PREDICTED": [
+     8,
+     16,
+     24,
+     32
+    ],
+    "PREDICTED_carriers": {
+     "16": 4,
+     "24": 3,
+     "32": 2,
+     "8": 5
+    },
+    "carrier_verification": {
+     "16": {
+      "measured_entry_gap_banks": {
+       "0": 12,
+       "1": 20,
+       "2": 22,
+       "4": 372,
+       "6": 114
+      },
+      "predicted_carrier_bank": 4,
+      "predicted_carrier_is_the_top_entry_gap_bank": true,
+      "predicted_carrier_present": true
+     },
+     "24": {
+      "measured_entry_gap_banks": {
+       "2": 222,
+       "3": 598,
+       "4": 2,
+       "6": 226
+      },
+      "predicted_carrier_bank": 3,
+      "predicted_carrier_is_the_top_entry_gap_bank": true,
+      "predicted_carrier_present": true
+     },
+     "32": {
+      "measured_entry_gap_banks": {},
+      "predicted_carrier_bank": 2,
+      "predicted_carrier_is_the_top_entry_gap_bank": false,
+      "predicted_carrier_present": false
+     },
+     "8": {
+      "measured_entry_gap_banks": {
+       "0": 6,
+       "1": 2,
+       "2": 90,
+       "3": 2,
+       "5": 108
+      },
+      "predicted_carrier_bank": 5,
+      "predicted_carrier_is_the_top_entry_gap_bank": true,
+      "predicted_carrier_present": true
+     }
+    },
+    "cooccurrence_clocks": 306,
+    "observed_episode_counts": {
+     "16": 1850,
+     "24": 1252,
+     "32": 276,
+     "40": 2,
+     "48": 2,
+     "8": 331
+    },
+    "predicted_all_present": true,
+    "reproduces_pinned_889_episode_spectrum": true,
+    "residual_episode_counts": {
+     "40": 2,
+     "48": 2
+    },
+    "residuals_observed_but_not_predicted": [
+     40,
+     48
+    ]
+   }
+  },
+  "seal_predates_every_holdout_corpus": true,
+  "seal_unchanged_across_the_holdout": true
+ },
+ "independence": "primary only -- see the independent-check receipt",
+ "krun_law": "THE k-RUN ALIGNMENT LAW.  Let W be the dirty phase set on Z_N of a clock in the quiescent regime (any number k of runs, any widths).  For a candidate period P put Fbad(P) = W SYMDIFF (W - P) mod N.  Then the maximal run of consecutive shift-exact indices is EXACTLY  I_max(P) = (max cyclic gap between consecutive members of Fbad) - 1, with I_max = N - 1 when |Fbad| = 1 and I_max UNBOUNDED when Fbad is empty (P is then a true period of the phase word).  A 2-repeat reading needs I_max >= P + 1 and an enclosing closed quiescent stretch of length >= 2P + 1.  FINITE FORM: a bounded stretch does not see the whole ring word, so on a segment of length L with dirty tick set D the exact failure set is (D SYMDIFF (D - P)) INTERSECT [0, L-P-1] and I_max is the longest gap in its complement; the ring form is the special case in which the segment carries the full orbit-periodic run pattern.  Cycle 889's law is the sub-case k = 2 with equal widths sigma at separation D: Fbad is then two zones of width sigma separated by G = (2D) mod N and I_max = max(G - sigma, N - G - sigma).",
+ "krun_law_verification": {
+  "cycle889_special_case_cells": 580,
+  "cycle889_special_case_mismatches": 0,
+  "finite_form_cells": 599,
+  "finite_form_mismatches": 0,
+  "randomised_ring_cells": 2996,
+  "randomised_ring_mismatches": 0,
+  "recovers_the_pinned_889_law": true,
+  "unbounded_cells": 116
+ },
+ "mechanism": "THE COMPLEMENT MECHANISM.  (1) TRANSPORT.  Inside a closed quiescent stretch the ONLY stations that move a bank's dirt are the four ordered rows of an edge incident to it -- HANDOFF_FORWARD h_f(e) = f(e) - 2, RELAY_SWAP forward f(e) = 4 + 5e, RELAY_SWAP reverse r(e) = 8B - 9 - 3e, and HANDOFF_RETURN h_r(e) = r(e) + 2 -- and a pointer-carrying crossing is an EXCHANGE across that edge: one of the two banks is raised and the other lowered.  Machine-verified per station, per tick, on the attributed kernel trace inside closed quiescent stretches (transitions charged to a non-transport station = 0), with the contrast measured OUTSIDE quiescence, where source/finalizer stations inject and retire packets and of course do move bank dirt.  (2) BOOKKEEPING.  Each transport station is crossed twice per orbit -- by the leader and, sigma ticks later, by the follower -- so two dirty-run starts separated by Delta_t satisfy the exact identity s2 - s1 = Delta_t + (p2 - p1) mod N for transport stations s1, s2 and token positions p1, p2.  That classifies every readable period into RELAY_EDGE_DELTA (f(e) -> r(e), same token, P = DELTA(B,e)), RELAY_EDGE_COMPLEMENT (r(e) -> f(e), same token, P = N - DELTA(B,e)), RELAY_ENTRY_GAP (f(b-1) -> r(b), same token, P = 8(B-1-b)), TOKEN_SEPARATION (same station, different tokens, P = sigma or N - sigma), or MIXED -- and nothing is dropped.  (3) THE ANSWER.  Among ordered pairs of RELAY_SWAP stations on the edges incident to bank b, the separations that equal a ring complement are exactly three shapes, verified exhaustively for B = 3..8 and every bank: the same-edge (r(e), f(e)) pair with value N - DELTA(B,e); the ENTRY-GAP pair (f(b-1), r(b)) with value 8(B-1-b); and the (r(b-1), r(b)) pair with value 8(B-1) = N - 3, which the alignment condition forbids at every B.  The ENTRY GAP is the only one of the three that belongs to a BANK rather than to an edge -- it is the distance from the station that hands the pointer UP into bank b on the ascending pass to the station that hands it BACK DOWN into bank b on the descending pass -- and it is the sigma-independent source of the complement family.  DELTA is a property of ONE EDGE; the complement the census actually carries is a property of ONE BANK, the bank b = B - 2 - e.",
+ "non_two_run_dirt_B7": {
+  "finite_form_exact_on_every_witness": true,
+  "krun_law_on_the_witnesses": [
+   {
+    "clock": "bank5",
+    "finite_I_max_law": 50,
+    "finite_I_max_measured": 50,
+    "finite_form_admits": true,
+    "finite_form_exact": true,
+    "lane": 1257,
+    "period": 35,
+    "ring_form_I_max": 21,
+    "ring_form_admits": false,
+    "ring_form_would_have_refused": true,
+    "two_repeats_need": 36
+   },
+   {
+    "clock": "bank4",
+    "finite_I_max_law": 45,
+    "finite_I_max_measured": 45,
+    "finite_form_admits": true,
+    "finite_form_exact": true,
+    "lane": 1265,
+    "period": 40,
+    "ring_form_I_max": 16,
+    "ring_form_admits": false,
+    "ring_form_would_have_refused": true,
+    "two_repeats_need": 41
+   },
+   {
+    "clock": "bank6",
+    "finite_I_max_law": 51,
+    "finite_I_max_measured": 51,
+    "finite_form_admits": true,
+    "finite_form_exact": true,
+    "lane": 284,
+    "period": 43,
+    "ring_form_I_max": 32,
+    "ring_form_admits": false,
+    "ring_form_would_have_refused": true,
+    "two_repeats_need": 44
+   },
+   {
+    "clock": "bank6",
+    "finite_I_max_law": 66,
+    "finite_I_max_measured": 66,
+    "finite_form_admits": true,
+    "finite_form_exact": true,
+    "lane": 1267,
+    "period": 48,
+    "ring_form_I_max": 42,
+    "ring_form_admits": false,
+    "ring_form_would_have_refused": true,
+    "two_repeats_need": 49
+   }
+  ],
+  "named_open_periods": [
+   35,
+   40,
+   43,
+   48
+  ],
+  "reading": "The B=7 out-of-law periods do not need a new alignment law: they need the FINITE form of the one stated here.  A closed quiescent stretch does not carry the full orbit-periodic run pattern; where the pattern is incomplete the segment's dirty set has fewer runs than the ring word, the ring-form forbidden zones that would have killed the period are simply not present inside the segment, and the reading is exact on the segment.  The k-run law is verified exactly in BOTH forms; the ring form is the sub-case in which the stretch carries the whole pattern.",
+  "runs_per_episode_histogram": {
+   "35|2": 10,
+   "35|4": 2,
+   "40|5": 2,
+   "43|2": 23,
+   "43|3": 17,
+   "48|2": 2
+  },
+  "source_class_histogram": {
+   "35|RELAY_EDGE_DELTA": 12,
+   "40|RELAY_EDGE_COMPLEMENT": 2,
+   "43|RELAY_EDGE_DELTA": 40,
+   "48|RELAY_EDGE_COMPLEMENT": 2
+  },
+  "witnesses": [
+   {
+    "clock": "bank5",
+    "consecutive_gaps": [
+     8,
+     27,
+     8
+    ],
+    "detector": [
+     1,
+     69,
+     27
+    ],
+    "dirty_runs_in_the_stretch": 4,
+    "episodes_in_census": 12,
+    "episodes_with_anatomy_captured": 12,
+    "event": 1,
+    "is_the_pure_two_run_pattern": false,
+    "lane": 1257,
+    "leader": 0,
+    "period": 35,
+    "period_kind": "DELTA",
+    "run_start_ticks": [
+     8966,
+     8974,
+     9001,
+     9009
+    ],
+    "run_widths": [
+     5,
+     3,
+     5,
+     3
+    ],
+    "sigma": 16,
+    "source_class": "RELAY_EDGE_DELTA",
+    "source_classes_available": [
+     "MIXED",
+     "RELAY_EDGE_DELTA",
+     "TOKEN_SEPARATION"
+    ],
+    "station_witness": [
+     {
+      "edge1": 0,
+      "edge2": 4,
+      "kind1": "handoff_forward",
+      "kind2": "handoff_return",
+      "label": "MIXED",
+      "p1": 0,
+      "p2": 0,
+      "s1": 2,
+      "s2": 37
+     },
+     {
+      "edge1": 1,
+      "edge2": 1,
+      "kind1": "forward",
+      "kind2": "reverse",
+      "label": "RELAY_EDGE_DELTA",
+      "p1": 0,
+      "p2": 0,
+      "s1": 9,
+      "s2": 44
+     },
+     {
+      "edge1": 2,
+      "edge2": 0,
+      "kind1": "handoff_forward",
+      "kind2": "reverse",
+      "label": "MIXED",
+      "p1": 0,
+      "p2": 0,
+      "s1": 12,
+      "s2": 47
+     }
+    ],
+    "stretch": [
+     8941,
+     9026
+    ],
+    "stretch_len": 86,
+    "token_positions": [
+     0,
+     35
+    ]
+   },
+   {
+    "clock": "bank4",
+    "consecutive_gaps": [
+     11,
+     27,
+     16,
+     40
+    ],
+    "detector": [
+     68,
+     69,
+     32
+    ],
+    "dirty_runs_in_the_stretch": 5,
+    "episodes_in_census": 2,
+    "episodes_with_anatomy_captured": 2,
+    "event": 1,
+    "is_the_pure_two_run_pattern": false,
+    "lane": 1265,
+    "leader": 0,
+    "period": 40,
+    "period_kind": "RING_COMPLEMENT",
+    "run_start_ticks": [
+     7989,
+     8000,
+     8027,
+     8043,
+     8083
+    ],
+    "run_widths": [
+     3,
+     3,
+     5,
+     8,
+     8
+    ],
+    "sigma": 8,
+    "source_class": "RELAY_EDGE_COMPLEMENT",
+    "source_classes_available": [
+     "MIXED",
+     "RELAY_EDGE_COMPLEMENT"
+    ],
+    "station_witness": [
+     {
+      "edge1": 0,
+      "edge2": 1,
+      "kind1": "forward",
+      "kind2": "reverse",
+      "label": "MIXED",
+      "p1": 0,
+      "p2": 0,
+      "s1": 4,
+      "s2": 44
+     },
+     {
+      "edge1": 0,
+      "edge2": 3,
+      "kind1": "handoff_return",
+      "kind2": "reverse",
+      "label": "MIXED",
+      "p1": 0,
+      "p2": 0,
+      "s1": 49,
+      "s2": 38
+     },
+     {
+      "edge1": 1,
+      "edge2": 0,
+      "kind1": "handoff_forward",
+      "kind2": "reverse",
+      "label": "MIXED",
+      "p1": 0,
+      "p2": 0,
+      "s1": 7,
+      "s2": 47
+     }
+    ],
+    "stretch": [
+     7964,
+     8116
+    ],
+    "stretch_len": 153,
+    "token_positions": [
+     0,
+     43
+    ]
+   },
+   {
+    "clock": "bank6",
+    "consecutive_gaps": [
+     43
+    ],
+    "detector": [
+     0,
+     88,
+     40
+    ],
+    "dirty_runs_in_the_stretch": 2,
+    "episodes_in_census": 588,
+    "episodes_with_anatomy_captured": 40,
+    "event": 0,
+    "is_the_pure_two_run_pattern": true,
+    "lane": 284,
+    "leader": 14,
+    "period": 43,
+    "period_kind": "DELTA",
+    "run_start_ticks": [
+     5226,
+     5269
+    ],
+    "run_widths": [
+     3,
+     3
+    ],
+    "sigma": 8,
+    "source_class": "RELAY_EDGE_DELTA",
+    "source_classes_available": [
+     "MIXED",
+     "RELAY_EDGE_DELTA",
+     "TOKEN_SEPARATION"
+    ],
+    "station_witness": [
+     {
+      "edge1": 0,
+      "edge2": 0,
+      "kind1": "forward",
+      "kind2": "reverse",
+      "label": "RELAY_EDGE_DELTA",
+      "p1": 6,
+      "p2": 6,
+      "s1": 4,
+      "s2": 47
+     },
+     {
+      "edge1": 0,
+      "edge2": 2,
+      "kind1": "handoff_return",
+      "kind2": "reverse",
+      "label": "MIXED",
+      "p1": 6,
+      "p2": 6,
+      "s1": 49,
+      "s2": 41
+     },
+     {
+      "edge1": 1,
+      "edge2": 3,
+      "kind1": "handoff_return",
+      "kind2": "reverse",
+      "label": "MIXED",
+      "p1": 6,
+      "p2": 6,
+      "s1": 46,
+      "s2": 38
+     }
+    ],
+    "stretch": [
+     5196,
+     5289
+    ],
+    "stretch_len": 94,
+    "token_positions": [
+     6,
+     14
+    ]
+   },
+   {
+    "clock": "bank6",
+    "consecutive_gaps": [
+     48
+    ],
+    "detector": [
+     39,
+     108,
+     45
+    ],
+    "dirty_runs_in_the_stretch": 2,
+    "episodes_in_census": 2,
+    "episodes_with_anatomy_captured": 2,
+    "event": 1,
+    "is_the_pure_two_run_pattern": true,
+    "lane": 1267,
+    "leader": 0,
+    "period": 48,
+    "period_kind": "RING_COMPLEMENT",
+    "run_start_ticks": [
+     8346,
+     8394
+    ],
+    "run_widths": [
+     3,
+     3
+    ],
+    "sigma": 6,
+    "source_class": "RELAY_EDGE_COMPLEMENT",
+    "source_classes_available": [
+     "MIXED",
+     "RELAY_EDGE_COMPLEMENT"
+    ],
+    "station_witness": [
+     {
+      "edge1": 0,
+      "edge2": 1,
+      "kind1": "reverse",
+      "kind2": "reverse",
+      "label": "MIXED",
+      "p1": 0,
+      "p2": 0,
+      "s1": 47,
+      "s2": 44
+     },
+     {
+      "edge1": 0,
+      "edge2": 1,
+      "kind1": "handoff_return",
+      "kind2": "handoff_return",
+      "label": "MIXED",
+      "p1": 0,
+      "p2": 0,
+      "s1": 49,
+      "s2": 46
+     },
+     {
+      "edge1": 1,
+      "edge2": 0,
+      "kind1": "handoff_forward",
+      "kind2": "forward",
+      "label": "MIXED",
+      "p1": 0,
+      "p2": 0,
+      "s1": 7,
+      "s2": 4
+     }
+    ],
+    "stretch": [
+     8262,
+     8414
+    ],
+    "stretch_len": 153,
+    "token_positions": [
+     0,
+     45
+    ]
+   }
+  ],
+  "witnesses_the_ring_form_would_have_refused": [
+   35,
+   40,
+   43,
+   48
+  ]
+ },
+ "note": "none -- this block ships scripts, caches and receipts only",
+ "pinned_inputs": {
+  "logs/runner-cache/frontier_cycle881_p11_characterization_2026_07_28.txt": {
+   "git_blob": "a3bb9edc20236928ea27b02d75663478d087063a",
+   "sha256": "2cc8891de863d3554c4b8fae3f8aebe920fb6cd7675da67b0cf229b9725f0973"
+  },
+  "logs/runner-cache/frontier_cycle881_p11_independent_check_2026_07_28.txt": {
+   "git_blob": "3a4e816703e40bfe5958a02d4db0e32098a6de70",
+   "sha256": "05677189ed2799accae3681b7d38aba45c74aceb5887f645b329c0bb2af8794c"
+  },
+  "logs/runner-cache/frontier_cycle889_delta_spectrum_2026_07_28.txt": {
+   "git_blob": "a1ac91d1ce89275f7034756fbb3b527a564e9738",
+   "sha256": "48c0bc663d2a5254947087003ece0b34dd730a291ccef2f1b007a5043ec2a5be"
+  },
+  "logs/runner-cache/frontier_cycle889_delta_spectrum_independent_check_2026_07_28.txt": {
+   "git_blob": "d46f2982b9a80688271e50caf321bb705242badd",
+   "sha256": "f28a427b70791f25f31dada9c46b6d535fefa6f31b37a096e4e1521ced91596e"
+  },
+  "outputs/delta_spectrum_cycle889_receipt_2026_07_28.json": {
+   "git_blob": "2191d809ff5b4b9f082d9f703969e05638e6e33e",
+   "sha256": "10840d84d3110fa192c28667334152da815f535f131d59e763dc64bf0aef3a72"
+  },
+  "outputs/delta_spectrum_independent_check_cycle889_receipt_2026_07_28.json": {
+   "git_blob": "ca6f8b2a18fab2b327f08fb1548de17943c8efbb",
+   "sha256": "1ef593d7fab537900eeef3a31bd97370791b9ba3715bf2fbb7646646a08a0ded"
+  },
+  "outputs/p11_characterization_cycle881_receipt_2026_07_28.json": {
+   "git_blob": "868ea09dda4c5712908461b9472350dc89a259ca",
+   "sha256": "eeb3b18c7677fb9e0e4901d0d3118111f76d1214c290e47d3febc91387d1d390"
+  },
+  "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py": {
+   "git_blob": "3add288d1b7de5bcc45f5ef8f88f3cfb98105b8f",
+   "sha256": "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691"
+  },
+  "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": {
+   "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  "scripts/frontier_cycle879_b4_clock_relation_2026_07_28.py": {
+   "git_blob": "c2147a99c1a6879508fbf250051f87115b0b9d35",
+   "sha256": "40bf65b88db19a7872d3dd5de50c7746bbecd98ce87c2b1176ce18ec9e5f7b2f"
+  },
+  "scripts/frontier_cycle881_p11_characterization_2026_07_28.py": {
+   "git_blob": "4b7297890a822184914bace90f60b47dc09f8305",
+   "sha256": "7cc1c8984869d824f33d83ccf6599c6ef9e166766015979d204309c3e820ed35"
+  },
+  "scripts/frontier_cycle881_p11_independent_check_2026_07_28.py": {
+   "git_blob": "adafafd031e9f980b9c3a0c5b03e9679e5c1cde3",
+   "sha256": "d95698707eb2c86d14789fc5a48d37219605bd214ef9bf432425950d86e27310"
+  },
+  "scripts/frontier_cycle889_delta_spectrum_2026_07_28.py": {
+   "git_blob": "f1bdf1f789a85213a0a854ab0bed45e6bf250fed",
+   "sha256": "c18ed0c49281fd2d54ad013ba12264b181d1720349ee002b144c028b521dd826"
+  },
+  "scripts/frontier_cycle889_delta_spectrum_independent_check_2026_07_28.py": {
+   "git_blob": "0f946f44c431c997410a08ec3e03ae2d26d89b8a",
+   "sha256": "19b38fb116bb8cb79cbb925df91456c5d08d899d4b56de301a9a673ec7dc3ec3"
+  }
+ },
+ "residue_fold_equivalence": {
+  "cases": 4000,
+  "failures": 0
+ },
+ "runtime_seconds": {
+  "primary": 299.045
+ },
+ "transport_audit": {
+  "bank_dirt_transitions_inside_closed_quiescent_stretches": 26,
+  "complement_valued_incident_pair_rows": 33,
+  "contrast_outside_quiescence_non_transport_transitions": 26,
+  "crossings_that_are_a_clean_edge_exchange": 12,
+  "crossings_that_set_a_local_flag_only": {
+   "handoff0": 2
+  },
+  "crossings_that_touched_a_bank_off_the_edge": 0,
+  "rows_disagreeing_with_the_derivation": 0,
+  "transitions_not_caused_by_a_transport_station": 0
+ }
+}

@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py
+runner_sha256: 7c87b96a8b0367d36258f3a275856fbcc2a17533900c2d6ec7bf446c12aea2c5
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS AFFINE_SHIFT_SOLUTION :: three general P-shifts and exactly the odd/even reverse-row exceptions
+PASS STATION_GRID_REGRESSION :: cells=253 disagreements=0
+PASS ROW_GAP_AND_PAIR_STRUCTURE :: eight-row ordering, sole unit gap, and three P-separated pairs
+PASS LAST_CLEAN_DETECTOR_WITNESS :: length=18 period=2 accepted through last clean tick 14
+PASS ENDPOINT_CONVENTIONS_DIFFER :: whole-stretch endpoint 17 fails because clean(14) != clean(16)
+PASS EQUAL_WIDTH_NOT_SUFFICIENT :: equal widths [1,1], decision=last_clean_tail_not_period_exact
+PASS EQUAL_WIDTH_NOT_NECESSARY :: synthetic detector-domain pair widths [1,2] with accepted period 5
+PASS COMPLETE_PERIODIC_RUN_WIDTHS :: translations=2568 clipped=[2,3,2]
+PASS GENUINE_WIDENING_ONLY_TOOTH :: t1+3 is wide/strict true/true; separated t1+4 is true/false
+PASS DETERMINISTIC_SCIENCE_PAYLOAD :: complete finite payload recomputed in-process
+PASS RUNTIME_BOUND :: elapsed_s=0.009845 budget_s=30
+CLAIMS_JSON: {"claim_boundary":{"B8_and_B9_blind_holdouts":false,"B_greater_or_equal_10_controller_corpus":"not built","TOE_closure":false,"clean_mask_is_a_Record_readout":"not supplied","formal_audit":false,"globally_best_arithmetic_or_width_selector":"not classified","historical_RC3_closed":false,"historical_controller_campaign_replayed":false,"historical_counts_are_current_evidence":false,"station_ordinal_is_physical_time":"not supplied","unit_gap_causes_zero_episodes":"not established"},"claim_type":"bounded_theorem","endpoint_witness":{"clean_ticks":[0,2,4,6,8,10,12,14],"detector":{"accepted":true,"events":8,"last_clean":14,"reason":"accepted","residue_count":1,"transient":0},"distinguishing_bits":{"tick_14":1,"tick_16":0},"length":18,"period":2,"whole_stretch_tail_exact":false},"equal_width_insufficient":{"decision":{"accepted":false,"last_clean":17,"reason":"last_clean_tail_not_period_exact"},"dirty_runs":[[2,2],[6,6],[16,16]],"length":18,"period":4,"selected_pair_widths":[1,1]},"equal_width_unnecessary":{"decision":{"accepted":true,"events":24,"last_clean":39,"reason":"accepted","residue_count":4,"transient":11},"dirty_runs":[[2,2],[7,8],[15,15],[20,20],[25,25],[30,30],[35,35]],"length":40,"period":5,"scope":"synthetic detector-domain witness; no bank, controller, or physical realization is claimed","selected_pair_widths":[1,2]},"general_shift_pairs":[["f(b-1)","r(b)"],["hf(b)","r(b-1)"],["f(b)","hr(b-1)"]],"periodic_translation_checks":2568,"science_digest":"fd779402ecccd5f909ab5468a5d3a96408084e8da493c91ab8944df3f5b3a932","station_cells_checked":253,"station_disagreements":0,"widening":{"corrected_t1_plus_4_separated_run":{"consecutive_pairs":[],"starts":[18,22,26],"target_consecutive":false,"target_widened":true,"wide_only":true,"widened_pairs":[[18,26]]},"fixture":{"B":5,"N":35,"P":8,"b":3,"target_pair_run_starts":[18,26],"target_pair_stations_for_token_at_zero":[17,25]},"historical_t1_plus_3_extension":{"consecutive_pairs":[[18,26]],"starts":[18,26],"target_consecutive":true,"target_widened":true,"widened_pairs":[[18,26]]},"strict_substitution_rejected":true}}
+RECEIPT: outputs/third_pair_rc3_cycle930_receipt_2026_07_28.json
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

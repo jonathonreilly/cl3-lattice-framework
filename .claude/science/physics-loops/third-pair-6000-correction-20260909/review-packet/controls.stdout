@@ -1,0 +1,69 @@
+{
+  "scope": "Exact AST-lifted pure component checks, not execution of original producers or validation of controller reachability/campaign counts. No original pin bypass is represented as a full run.",
+  "source_bindings": {
+    "frontier_cycle930_third_pair_rc3_2026_07_28.py": {
+      "sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92",
+      "exact_lifted_functions": [
+        "reference_tail_periods",
+        "reject_reason",
+        "tail_periods"
+      ]
+    },
+    "frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py": {
+      "sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab",
+      "exact_lifted_functions": [
+        "clean_intervals",
+        "dirty_intervals",
+        "interval_detector",
+        "iv_clip",
+        "iv_len",
+        "iv_sub",
+        "literal_detector"
+      ]
+    }
+  },
+  "tail_witness": {
+    "length": 18,
+    "clean_ticks": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "period": 2,
+    "primary": {
+      "2": [
+        0,
+        8,
+        1
+      ]
+    },
+    "checker": {
+      "2": [
+        0,
+        8,
+        1
+      ]
+    },
+    "actual_rejection": "ACCEPT",
+    "whole_stretch_tail_exact": false
+  },
+  "widening_original_tooth": {
+    "tooth": "widened_hunt_sees_a_planted_non_consecutive_third_pair",
+    "fires": true,
+    "strict_definition_also_sees_it": true,
+    "note": "the widened hunt is strictly weaker, so this tooth proves the widening is live rather than vacuous"
+  },
+  "widening_separated_run_control": {
+    "tooth": "widened_hunt_sees_a_planted_non_consecutive_third_pair",
+    "fires": true,
+    "strict_definition_also_sees_it": false,
+    "note": "the widened hunt is strictly weaker, so this tooth proves the widening is live rather than vacuous"
+  },
+  "widening_block_sha256": "1721e1b987d1af824846e5a1a2c1815319850b4823f4fbd11b47cdf419d2b679",
+  "station_cells_checked": 253
+}

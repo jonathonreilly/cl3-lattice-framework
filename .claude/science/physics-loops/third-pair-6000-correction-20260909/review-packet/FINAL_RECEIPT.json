@@ -1,0 +1,751 @@
+{
+  "verdict": "CHANGES_REQUIRED",
+  "review_kind": "Original same-session focused landing review; not formal audit",
+  "pr": 6000,
+  "head": "ad6ff6b310dfe356656110375a174e4410b28ea9",
+  "raw_base": "f65501b1ac77ff1cfdefc899a115e6da48af870a",
+  "reviewed_current_main": "e97ff2fd204611f4091c4b664664dba7c263da65",
+  "authored_commits": [
+    "39d6f096e84613ab5295c43c27b93e3a636ab2f9",
+    "8a562196145d5d44c2e458cb49f4e6ac05fe06f3",
+    "ba09a1a46fee89e829487e0b92553a182a503497",
+    "ad6ff6b310dfe356656110375a174e4410b28ea9"
+  ],
+  "original_source_paths": 8,
+  "earlier_versions": 3,
+  "original_source_binding_sha256": "1e4b9f746c5ffb7b7cbd4cbe796de9a73382df4c047396d4ce0fb3e9579e0e72",
+  "source_disposition_sha256": "d66f5e277d4235289b0cc83b78777f40f49934d03571bb945078646b9bf19081",
+  "full_maps_sha256": "71b8f228e664ea430992580e2dc43fec123848aa6601617fde3196794c7dde3b",
+  "findings_sha256": "bc4f8ca36e1ae115ab00ea17d5ce7fc85af59345758ae7b7ab61533536f32954",
+  "report_sha256": "e5b726d46233e903ee9fdd6667c3f90e731b7a16f094e71e966611173b25224b",
+  "proof_sha256": "d6942352d9fa0abdeee8a3f5c7f69294d83224534895c04db9e0b5c515083fc0",
+  "claim_dispositions_sha256": "d5582ebd32e4bab47d15b49bd6be82f9fee3cb3075aea94d5c4f767c022595d3",
+  "execution": "One bounded component-control run; no original producer or parent campaign. Historical900-second producers not authorized by the30-second review cap.",
+  "same_original_reviewer_available_for_corrections": true,
+  "artifacts": {
+    "ACTUAL_CONSUMERS.json": {
+      "sha256": "ec81b25ffa4b89f5729f58a24305455dee8ac6b55edbacb66f14cdc11458633c",
+      "bytes": 922
+    },
+    "ACTUAL_CONSUMERS_COMPLETE_OVERLAY.json": {
+      "sha256": "ef89f9507fe7e7173f74a37b83a2a4a854d2cab3cdc1e4567ed09ddc087337ce",
+      "bytes": 17038
+    },
+    "CLAIM_DISPOSITIONS.json": {
+      "sha256": "d5582ebd32e4bab47d15b49bd6be82f9fee3cb3075aea94d5c4f767c022595d3",
+      "bytes": 1921
+    },
+    "CONTROL_EXECUTION.json": {
+      "sha256": "cf35a9b438ea9a0595df87be3353c939b6db1038e98c2deff2635569a544c65c",
+      "bytes": 1126
+    },
+    "CONTROL_PREFLIGHT.json": {
+      "sha256": "05d591e03dde82d9b064002deb59f2205a380ebcd4d5ae1ba1eb1450d1db4ca2",
+      "bytes": 626
+    },
+    "EARLIER_TO_FINAL.patch": {
+      "sha256": "8eddcaf8e99ac73899e05e7633451acd78eb2919a4db1baf3e9d5e68eba0b103",
+      "bytes": 14002
+    },
+    "ENDPOINT_MAPS.json.gz": {
+      "sha256": "71b8f228e664ea430992580e2dc43fec123848aa6601617fde3196794c7dde3b",
+      "bytes": 2975230
+    },
+    "FINAL_CURRENT_MAIN_BINDING.json": {
+      "sha256": "eb136b58664a4a84703f0ff985a0c246c7ad032446d6bc49217069162d4d35b2",
+      "bytes": 5398
+    },
+    "FINAL_INPUT_CLOSURE.json": {
+      "sha256": "b9058ceb6cc7ddb0a521b0163b4e375ef19c5d26aff668ddae153786aa18b3c6",
+      "bytes": 27920
+    },
+    "FINAL_SOURCE_DISPOSITION.json": {
+      "sha256": "d66f5e277d4235289b0cc83b78777f40f49934d03571bb945078646b9bf19081",
+      "bytes": 5770
+    },
+    "FINDINGS.json": {
+      "sha256": "bc4f8ca36e1ae115ab00ea17d5ce7fc85af59345758ae7b7ab61533536f32954",
+      "bytes": 9091
+    },
+    "HANDOFF.md": {
+      "sha256": "af4e9b54fc5b0cc293d533b13bebbf4abdcb6956553a62e6ab1ee66e11c5ccaa",
+      "bytes": 576
+    },
+    "HISTORICAL_EVIDENCE_SUMMARY.json": {
+      "sha256": "f0df8a262ece14c8db8ae1bf06b16b9bb5ae858c47d458e2100198e33999e3d8",
+      "bytes": 5055
+    },
+    "LIVE_PR.json": {
+      "sha256": "c475f024502f1f1088ecffc16f75e69424bef3f68ad971c0df4534db9c082cbb",
+      "bytes": 7113
+    },
+    "PIN_CLOSURE.json": {
+      "sha256": "308eb1f2d165e25cfb107457c3f0b1fa05c8bfb07d7f9cc4538c59cf91c6ca4b",
+      "bytes": 11663
+    },
+    "PREPARED_UNIT.json": {
+      "sha256": "783cec63263f8bcb6fe0eaa797cb8478f8c9a023751ab36ce78bab1ee2df5d3d",
+      "bytes": 11926
+    },
+    "PROOF_REVIEW.md": {
+      "sha256": "d6942352d9fa0abdeee8a3f5c7f69294d83224534895c04db9e0b5c515083fc0",
+      "bytes": 4137
+    },
+    "READ_AND_CONTEXT.json": {
+      "sha256": "bcaa74a7e96085f0d233a2e4666a1cb004267635ae622d6dfc4178fde60cd61e",
+      "bytes": 2318
+    },
+    "REPORT.md": {
+      "sha256": "e5b726d46233e903ee9fdd6667c3f90e731b7a16f094e71e966611173b25224b",
+      "bytes": 5055
+    },
+    "REVIEW_INCIDENTS.md": {
+      "sha256": "9cee8c148bb17ab94369c9aa0706ab18df5ff7d910ddb92828262f039b3a75d1",
+      "bytes": 633
+    },
+    "SOURCE_BINDING.json": {
+      "sha256": "1e4b9f746c5ffb7b7cbd4cbe796de9a73382df4c047396d4ce0fb3e9579e0e72",
+      "bytes": 6330
+    },
+    "STATIC_RUNTIME_CLOSURE.json": {
+      "sha256": "3b3675b8ba4004b092e5de31869b09948c30ee879882c519c8b869d03d8f0b8e",
+      "bytes": 16807
+    },
+    "api-view/docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "sha256": "22715b6bf2deadac3e441b032bc45cccd251ad4321db5ec45670f9abf923409c",
+      "bytes": 8005
+    },
+    "api-view/docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e",
+      "bytes": 12692
+    },
+    "api-view/logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt": {
+      "sha256": "55f0c16f7da54056e1b1bc5e0661b75e6486c65b0c470062563ef24369d4c666",
+      "bytes": 81685
+    },
+    "api-view/logs/runner-cache/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.txt": {
+      "sha256": "437fec1f8d8d5f45ab95818d6edeb5d4cd2276d7e2b71f86cde9d0702adc87fe",
+      "bytes": 33308
+    },
+    "api-view/outputs/complement_independent_check_cycle891_receipt_2026_07_28.json": {
+      "sha256": "cb2f6badda7315725f5f33c5aad89e7e37cf9201472362e0af3a16c4225fae8f",
+      "bytes": 15831
+    },
+    "api-view/outputs/complement_mechanism_cycle891_receipt_2026_07_28.json": {
+      "sha256": "f8e30d50a50e39a13f8f968b2ae21991885b6c858c6c96439ed733fc8514bacd",
+      "bytes": 28244
+    },
+    "api-view/outputs/third_pair_rc3_block_cycle930_ship_receipt_2026_07_28.json": {
+      "sha256": "362fd3ea487540387b29682c37e119561889d466d87a672cdf0f2a356167eee4",
+      "bytes": 4452
+    },
+    "api-view/outputs/third_pair_rc3_cycle930_receipt_2026_07_28.json": {
+      "sha256": "a865ebc7c9ce2a03306c33a636f7583cadc0f3bc9ec3abfea0cac0491ae902a2",
+      "bytes": 72477
+    },
+    "api-view/outputs/third_pair_rc3_independent_check_cycle930_receipt_2026_07_28.json": {
+      "sha256": "a05795d4d902bf9d1261dd2d448fff8f0bd2de1d6d38023d72a35ea66c562955",
+      "bytes": 46930
+    },
+    "api-view/scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": {
+      "sha256": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+      "bytes": 39426
+    },
+    "api-view/scripts/active_cubic_source_response_cycle211_2026_07_16.py": {
+      "sha256": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+      "bytes": 11463
+    },
+    "api-view/scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": {
+      "sha256": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+      "bytes": 20516
+    },
+    "api-view/scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": {
+      "sha256": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+      "bytes": 23941
+    },
+    "api-view/scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": {
+      "sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "bytes": 9484
+    },
+    "api-view/scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": {
+      "sha256": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+      "bytes": 15919
+    },
+    "api-view/scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": {
+      "sha256": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+      "bytes": 27453
+    },
+    "api-view/scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py": {
+      "sha256": "781823cf744be93de73f5e86e4e4cc988e0e7fe19c9c88a264b6f58169c07b0e",
+      "bytes": 27451
+    },
+    "api-view/scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py": {
+      "sha256": "4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a",
+      "bytes": 31179
+    },
+    "api-view/scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py": {
+      "sha256": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69",
+      "bytes": 52179
+    },
+    "api-view/scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py": {
+      "sha256": "b42ea07c1ed671b9cbab38bc38eba6f8166fe65be52295941a95e3ed75049abf",
+      "bytes": 10351
+    },
+    "api-view/scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py": {
+      "sha256": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3",
+      "bytes": 17316
+    },
+    "api-view/scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py": {
+      "sha256": "3aa964a6eaca559048a53de580f39d9295a3e4b41ef9d4ff9dcdd4d3ff7444a7",
+      "bytes": 38764
+    },
+    "api-view/scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py": {
+      "sha256": "5d49d85ddbc4daddfc0b24737dc569eaa9f32a050f5fccf48f048fe0fdd74b40",
+      "bytes": 34366
+    },
+    "api-view/scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py": {
+      "sha256": "d74fb32e21879b2a843eae822c8e71b950729d9dc295eaf336911f174cceee3a",
+      "bytes": 21640
+    },
+    "api-view/scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py": {
+      "sha256": "d4cb1fe7ba27dcf534d37e413d12dc50531ce17f2ca097a6c8b632644c260027",
+      "bytes": 21571
+    },
+    "api-view/scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py": {
+      "sha256": "c2e7f261c47092f11e445b16bde703330ccfd3e3af06bec0dac078ba64cf2297",
+      "bytes": 63376
+    },
+    "api-view/scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py": {
+      "sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
+      "bytes": 41365
+    },
+    "api-view/scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py": {
+      "sha256": "357e52e75d014cdab338f2655e8b1d2b18e64915a7826fd93a10a2ac3fd03347",
+      "bytes": 21455
+    },
+    "api-view/scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py": {
+      "sha256": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a",
+      "bytes": 31457
+    },
+    "api-view/scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py": {
+      "sha256": "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
+      "bytes": 57069
+    },
+    "api-view/scripts/frontier_cycle718_carrier_return_core_2026_07_26.py": {
+      "sha256": "c9196fdfe2ed6101f7f62ac3552c9fb4944276b67f9f82fe326c89f8c21e23d7",
+      "bytes": 23632
+    },
+    "api-view/scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py": {
+      "sha256": "ca13b7064a17c14d6efe752879e2dd6e04fc9426bcd8c5dd930866df4d97ccac",
+      "bytes": 12473
+    },
+    "api-view/scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py": {
+      "sha256": "a53df4dfe108bb3ca206ce882130f7fc3705d4f54604d896ed9028eb2d94a92f",
+      "bytes": 34830
+    },
+    "api-view/scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py": {
+      "sha256": "6a8c8f8600289c49bff2a20ef22d59f10572b29e7122f016b8fbbb7265bd86f6",
+      "bytes": 51928
+    },
+    "api-view/scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py": {
+      "sha256": "116ae065c9f7ebc6d584c93a8a7ddbfe1874e7187370284a025d0dad24833a1b",
+      "bytes": 15752
+    },
+    "api-view/scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py": {
+      "sha256": "110827f5d018a60df61ad82ae29c36ca1b861ce428cba347a7dd64b04e9bdc88",
+      "bytes": 17751
+    },
+    "api-view/scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py": {
+      "sha256": "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
+      "bytes": 23044
+    },
+    "api-view/scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py": {
+      "sha256": "b8afe7e4697b0838715a079203930fb37bc7a6fc133e092f02a22141049aad8c",
+      "bytes": 39270
+    },
+    "api-view/scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py": {
+      "sha256": "bd99157a8c4050f3493c0311ca85315226de833b70f6a2e8833a166ec775f20d",
+      "bytes": 22121
+    },
+    "api-view/scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py": {
+      "sha256": "b514b0e20197bb0ce5e5440b4b0c1f2a0f74a1962b127e8a4e4a2e97c8f86a1a",
+      "bytes": 22627
+    },
+    "api-view/scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": {
+      "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+      "bytes": 26046
+    },
+    "api-view/scripts/frontier_cycle879_b4_clock_relation_2026_07_28.py": {
+      "sha256": "5ed813c21b22a8076a48a279f606f0099c9426b6375b0972d80b5cc4fec48f90",
+      "bytes": 127603
+    },
+    "api-view/scripts/frontier_cycle891_complement_independent_check_2026_07_28.py": {
+      "sha256": "8961886a0e10da3368bc572f592c98d63f2fa08233e68af307e940b1383641d1",
+      "bytes": 7981
+    },
+    "api-view/scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": {
+      "sha256": "6e5c58df6a9c75244c64141b5a1405a6413110e685ccd802530956e920b6563d",
+      "bytes": 10185
+    },
+    "api-view/scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": {
+      "sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92",
+      "bytes": 101626
+    },
+    "api-view/scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py": {
+      "sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab",
+      "bytes": 59378
+    },
+    "api-view/scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": {
+      "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
+      "bytes": 32492
+    },
+    "api-view/scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py": {
+      "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0",
+      "bytes": 29115
+    },
+    "api-view/scripts/frontier_full128_code_projectors_2026_07_24.py": {
+      "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44",
+      "bytes": 14150
+    },
+    "api-view/scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py": {
+      "sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195",
+      "bytes": 38220
+    },
+    "api-view/scripts/frontier_full128_cycle_encoder_2026_07_24.py": {
+      "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
+      "bytes": 36632
+    },
+    "api-view/scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py": {
+      "sha256": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb",
+      "bytes": 30748
+    },
+    "api-view/scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py": {
+      "sha256": "05cb2f6083cf6c4307c04284632e991b7fd7378cbd2a4eb08a52d5e3c7ae6b99",
+      "bytes": 8149
+    },
+    "api-view/scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py": {
+      "sha256": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480",
+      "bytes": 37673
+    },
+    "api-view/scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": {
+      "sha256": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+      "bytes": 29998
+    },
+    "api-view/scripts/local_generator_source_tournament_cycle228_2026_07_17.py": {
+      "sha256": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+      "bytes": 41039
+    },
+    "api-view/scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": {
+      "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "bytes": 26218
+    },
+    "api-view/scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": {
+      "sha256": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+      "bytes": 27499
+    },
+    "api-view/scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": {
+      "sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+      "bytes": 35105
+    },
+    "api-view/scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": {
+      "sha256": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+      "bytes": 13815
+    },
+    "check_actual_consumers.py": {
+      "sha256": "f05f47d97ecb3f884beca6a4817fcad60cf31f0927c1bc04a2420eb4abfb189f",
+      "bytes": 2569
+    },
+    "consumer-result-before-cache-root.json": {
+      "sha256": "26282790bd65f5bd2e522b67758203003c924e5763d228c9f5875344530a07b9",
+      "bytes": 17024
+    },
+    "controls.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "controls.stdout": {
+      "sha256": "d023345e707a2a12138fe0a5bcfb4c96cfb4410739c279a7136b87b45972dd09",
+      "bytes": 1963
+    },
+    "decisive_controls.py": {
+      "sha256": "5f4d0192b54a367c43ff1c436157b021f0cee17a6ebf096340e21b8efceaa22c",
+      "bytes": 4032
+    },
+    "earlier-versions/39bd7dea4ddadc8c9dfdaeefb4e53ddf5b49d462": {
+      "sha256": "278b9e663a1490c39c4a34a898d9e50717917722d03df7f4288bf47d8e385586",
+      "bytes": 100218
+    },
+    "earlier-versions/e79d0655b9b92f50c6740eff74b681f71a0736b6": {
+      "sha256": "f8e7cafabfb62448d1759bb767fd164b0cb9a56828f48a4eae2c6f346ab7aa94",
+      "bytes": 58128
+    },
+    "earlier-versions/e7b6ad1ce2353c66e9eed2582ed1f083e612724e": {
+      "sha256": "878728d3a11fc1231cd3f0ad2974fd3359b146db765ca4df01f584cc980c2428",
+      "bytes": 55840
+    },
+    "failed-consumer-check-missing-docs-root.py": {
+      "sha256": "01cd8e01ce6a68d99e4911f30d8fac857154db77463544a48680e51e071de5e1",
+      "bytes": 2513
+    },
+    "historical-inputs/docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "sha256": "5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c",
+      "bytes": 10211
+    },
+    "historical-inputs/docs/P32_CARRIER_SHORT_ARC_LABEL_THEFT_CYCLE922_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "sha256": "420c162b2530c7329c21915ff2eee8d91689a5f97688c1df29752841b6af949d",
+      "bytes": 14750
+    },
+    "historical-inputs/logs/runner-cache/frontier_cycle922_p32_carrier_2026_07_28.txt": {
+      "sha256": "256d8422a4d379062d6dc0163dc748b2063e6d0f7533598a90971030428eede1",
+      "bytes": 67849
+    },
+    "historical-inputs/logs/runner-cache/frontier_cycle922_p32_carrier_independent_check_2026_07_28.txt": {
+      "sha256": "add02c024c5f008e17fe135a103bb674fdca5d3c25be0a8fc39f653be7d7ec75",
+      "bytes": 18635
+    },
+    "historical-inputs/logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt": {
+      "sha256": "55f0c16f7da54056e1b1bc5e0661b75e6486c65b0c470062563ef24369d4c666",
+      "bytes": 81685
+    },
+    "historical-inputs/outputs/complement_independent_check_cycle891_receipt_2026_07_28.json": {
+      "sha256": "cb2f6badda7315725f5f33c5aad89e7e37cf9201472362e0af3a16c4225fae8f",
+      "bytes": 15831
+    },
+    "historical-inputs/outputs/complement_mechanism_cycle891_receipt_2026_07_28.json": {
+      "sha256": "f8e30d50a50e39a13f8f968b2ae21991885b6c858c6c96439ed733fc8514bacd",
+      "bytes": 28244
+    },
+    "historical-inputs/outputs/p32_carrier_block_cycle922_ship_receipt_2026_07_28.json": {
+      "sha256": "9df9f38530b6d8bb8e4ebc9f76d5683ac065bf06f4edcfb2db9f3e70ef28ad76",
+      "bytes": 4624
+    },
+    "historical-inputs/outputs/p32_carrier_cycle922_receipt_2026_07_28.json": {
+      "sha256": "ab40677256009a0b1ecdf841766aa055a113aeb93827dc1d1da21a9e1cb97954",
+      "bytes": 58453
+    },
+    "historical-inputs/outputs/p32_carrier_independent_check_cycle922_receipt_2026_07_28.json": {
+      "sha256": "e609eafcb6ef33c22ec0aa4481cc29ea5be46f5be1312a9ccd4822b154ff059e",
+      "bytes": 27566
+    },
+    "historical-inputs/outputs/third_pair_rc3_cycle930_receipt_2026_07_28.json": {
+      "sha256": "a865ebc7c9ce2a03306c33a636f7583cadc0f3bc9ec3abfea0cac0491ae902a2",
+      "bytes": 72477
+    },
+    "historical-inputs/scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py": {
+      "sha256": "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
+      "bytes": 23044
+    },
+    "historical-inputs/scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": {
+      "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+      "bytes": 26046
+    },
+    "historical-inputs/scripts/frontier_cycle879_b4_clock_relation_2026_07_28.py": {
+      "sha256": "40bf65b88db19a7872d3dd5de50c7746bbecd98ce87c2b1176ce18ec9e5f7b2f",
+      "bytes": 101259
+    },
+    "historical-inputs/scripts/frontier_cycle881_p11_characterization_2026_07_28.py": {
+      "sha256": "7cc1c8984869d824f33d83ccf6599c6ef9e166766015979d204309c3e820ed35",
+      "bytes": 66956
+    },
+    "historical-inputs/scripts/frontier_cycle889_delta_spectrum_2026_07_28.py": {
+      "sha256": "c18ed0c49281fd2d54ad013ba12264b181d1720349ee002b144c028b521dd826",
+      "bytes": 60838
+    },
+    "historical-inputs/scripts/frontier_cycle891_complement_independent_check_2026_07_28.py": {
+      "sha256": "f2e9ca32b7d3f863822126c05fbf6a3b637164e8969e5ec7c6c04f15cd89e568",
+      "bytes": 70887
+    },
+    "historical-inputs/scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": {
+      "sha256": "3d260f6641d05a22aee092145ea3e5c3b29f3a6882b4cbd9ae966424458afbb7",
+      "bytes": 107915
+    },
+    "historical-inputs/scripts/frontier_cycle922_p32_carrier_2026_07_28.py": {
+      "sha256": "9e1a8de7190188a89cd4449300ab56cc053d6a63eec328265fa80f9955ce3a83",
+      "bytes": 92462
+    },
+    "historical-inputs/scripts/frontier_cycle922_p32_carrier_independent_check_2026_07_28.py": {
+      "sha256": "fb7acd4bfe5fa1dcc8f22373861da2038dfdb169371c53d283ae65325d44b118",
+      "bytes": 57817
+    },
+    "historical-inputs/scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": {
+      "sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92",
+      "bytes": 101626
+    },
+    "originals/docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+      "sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e",
+      "bytes": 12692
+    },
+    "originals/logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt": {
+      "sha256": "55f0c16f7da54056e1b1bc5e0661b75e6486c65b0c470062563ef24369d4c666",
+      "bytes": 81685
+    },
+    "originals/logs/runner-cache/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.txt": {
+      "sha256": "437fec1f8d8d5f45ab95818d6edeb5d4cd2276d7e2b71f86cde9d0702adc87fe",
+      "bytes": 33308
+    },
+    "originals/outputs/third_pair_rc3_block_cycle930_ship_receipt_2026_07_28.json": {
+      "sha256": "362fd3ea487540387b29682c37e119561889d466d87a672cdf0f2a356167eee4",
+      "bytes": 4452
+    },
+    "originals/outputs/third_pair_rc3_cycle930_receipt_2026_07_28.json": {
+      "sha256": "a865ebc7c9ce2a03306c33a636f7583cadc0f3bc9ec3abfea0cac0491ae902a2",
+      "bytes": 72477
+    },
+    "originals/outputs/third_pair_rc3_independent_check_cycle930_receipt_2026_07_28.json": {
+      "sha256": "a05795d4d902bf9d1261dd2d448fff8f0bd2de1d6d38023d72a35ea66c562955",
+      "bytes": 46930
+    },
+    "originals/scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": {
+      "sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92",
+      "bytes": 101626
+    },
+    "originals/scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py": {
+      "sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab",
+      "bytes": 59378
+    },
+    "raw-commits/39d6f096e84613ab5295c43c27b93e3a636ab2f9.patch": {
+      "sha256": "cae5f4641ac97c6cec9f985041d3edb8b4243f231249334b24510f71551c68ad",
+      "bytes": 161725
+    },
+    "raw-commits/8a562196145d5d44c2e458cb49f4e6ac05fe06f3.patch": {
+      "sha256": "944cf18fa91b7dee53087ea2943ff4d127170d69f4c9b8613066dfd55d9b72a2",
+      "bytes": 168176
+    },
+    "raw-commits/ad6ff6b310dfe356656110375a174e4410b28ea9.patch": {
+      "sha256": "ebe465e0d48598bc1a849a05520fda017b7546c3d57d38b9ccd016c543cf6844",
+      "bytes": 18456
+    },
+    "raw-commits/ba09a1a46fee89e829487e0b92553a182a503497.patch": {
+      "sha256": "7dc4c8fe7cdd098036114aa37e36b27130a3e16249ced715889c92d30dfef092",
+      "bytes": 88091
+    },
+    "runtime-declared-only/scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py": {
+      "sha256": "15db2200b08bc4a5d7669975806fe51e9b8a55049f0660969d427332602bf9e8",
+      "bytes": 19945
+    },
+    "runtime-declared-only/scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py": {
+      "sha256": "67aa2435d66fb34b6734cc564a82ac839525139fdc9e8c347dc1b2277d08b40b",
+      "bytes": 67190
+    },
+    "runtime-declared-only/scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py": {
+      "sha256": "ef6805e691a1ddd303a96f7cabd7000517e0cf33d5b1c577b20c2cbbf29aca23",
+      "bytes": 47631
+    },
+    "runtime-declared-only/scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py": {
+      "sha256": "4ef60441d31d62b1fc61c9b5e09ff3bc8f7f32d1b68bc3c548834431d24302f6",
+      "bytes": 75427
+    },
+    "runtime-declared-only/scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py": {
+      "sha256": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+      "bytes": 44098
+    },
+    "runtime-declared-only/scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py": {
+      "sha256": "a9786cf68a9c669e7e7fe310a00ab9912aa404689651682ccfe3045a06e357f1",
+      "bytes": 58272
+    },
+    "runtime-declared-only/scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py": {
+      "sha256": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b",
+      "bytes": 15292
+    },
+    "runtime-source/scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": {
+      "sha256": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+      "bytes": 39426
+    },
+    "runtime-source/scripts/active_cubic_source_response_cycle211_2026_07_16.py": {
+      "sha256": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+      "bytes": 11463
+    },
+    "runtime-source/scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": {
+      "sha256": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+      "bytes": 20516
+    },
+    "runtime-source/scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": {
+      "sha256": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+      "bytes": 23941
+    },
+    "runtime-source/scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": {
+      "sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "bytes": 9484
+    },
+    "runtime-source/scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": {
+      "sha256": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+      "bytes": 15919
+    },
+    "runtime-source/scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": {
+      "sha256": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+      "bytes": 27453
+    },
+    "runtime-source/scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py": {
+      "sha256": "781823cf744be93de73f5e86e4e4cc988e0e7fe19c9c88a264b6f58169c07b0e",
+      "bytes": 27451
+    },
+    "runtime-source/scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py": {
+      "sha256": "4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a",
+      "bytes": 31179
+    },
+    "runtime-source/scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py": {
+      "sha256": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69",
+      "bytes": 52179
+    },
+    "runtime-source/scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py": {
+      "sha256": "b42ea07c1ed671b9cbab38bc38eba6f8166fe65be52295941a95e3ed75049abf",
+      "bytes": 10351
+    },
+    "runtime-source/scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py": {
+      "sha256": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3",
+      "bytes": 17316
+    },
+    "runtime-source/scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py": {
+      "sha256": "3aa964a6eaca559048a53de580f39d9295a3e4b41ef9d4ff9dcdd4d3ff7444a7",
+      "bytes": 38764
+    },
+    "runtime-source/scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py": {
+      "sha256": "5d49d85ddbc4daddfc0b24737dc569eaa9f32a050f5fccf48f048fe0fdd74b40",
+      "bytes": 34366
+    },
+    "runtime-source/scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py": {
+      "sha256": "d74fb32e21879b2a843eae822c8e71b950729d9dc295eaf336911f174cceee3a",
+      "bytes": 21640
+    },
+    "runtime-source/scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py": {
+      "sha256": "d4cb1fe7ba27dcf534d37e413d12dc50531ce17f2ca097a6c8b632644c260027",
+      "bytes": 21571
+    },
+    "runtime-source/scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py": {
+      "sha256": "c2e7f261c47092f11e445b16bde703330ccfd3e3af06bec0dac078ba64cf2297",
+      "bytes": 63376
+    },
+    "runtime-source/scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py": {
+      "sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
+      "bytes": 41365
+    },
+    "runtime-source/scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py": {
+      "sha256": "357e52e75d014cdab338f2655e8b1d2b18e64915a7826fd93a10a2ac3fd03347",
+      "bytes": 21455
+    },
+    "runtime-source/scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py": {
+      "sha256": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a",
+      "bytes": 31457
+    },
+    "runtime-source/scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py": {
+      "sha256": "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
+      "bytes": 57069
+    },
+    "runtime-source/scripts/frontier_cycle718_carrier_return_core_2026_07_26.py": {
+      "sha256": "c9196fdfe2ed6101f7f62ac3552c9fb4944276b67f9f82fe326c89f8c21e23d7",
+      "bytes": 23632
+    },
+    "runtime-source/scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py": {
+      "sha256": "ca13b7064a17c14d6efe752879e2dd6e04fc9426bcd8c5dd930866df4d97ccac",
+      "bytes": 12473
+    },
+    "runtime-source/scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py": {
+      "sha256": "a53df4dfe108bb3ca206ce882130f7fc3705d4f54604d896ed9028eb2d94a92f",
+      "bytes": 34830
+    },
+    "runtime-source/scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py": {
+      "sha256": "6a8c8f8600289c49bff2a20ef22d59f10572b29e7122f016b8fbbb7265bd86f6",
+      "bytes": 51928
+    },
+    "runtime-source/scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py": {
+      "sha256": "116ae065c9f7ebc6d584c93a8a7ddbfe1874e7187370284a025d0dad24833a1b",
+      "bytes": 15752
+    },
+    "runtime-source/scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py": {
+      "sha256": "110827f5d018a60df61ad82ae29c36ca1b861ce428cba347a7dd64b04e9bdc88",
+      "bytes": 17751
+    },
+    "runtime-source/scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py": {
+      "sha256": "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
+      "bytes": 23044
+    },
+    "runtime-source/scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py": {
+      "sha256": "b8afe7e4697b0838715a079203930fb37bc7a6fc133e092f02a22141049aad8c",
+      "bytes": 39270
+    },
+    "runtime-source/scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py": {
+      "sha256": "bd99157a8c4050f3493c0311ca85315226de833b70f6a2e8833a166ec775f20d",
+      "bytes": 22121
+    },
+    "runtime-source/scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py": {
+      "sha256": "b514b0e20197bb0ce5e5440b4b0c1f2a0f74a1962b127e8a4e4a2e97c8f86a1a",
+      "bytes": 22627
+    },
+    "runtime-source/scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": {
+      "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+      "bytes": 26046
+    },
+    "runtime-source/scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": {
+      "sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92",
+      "bytes": 101626
+    },
+    "runtime-source/scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py": {
+      "sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab",
+      "bytes": 59378
+    },
+    "runtime-source/scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": {
+      "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
+      "bytes": 32492
+    },
+    "runtime-source/scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py": {
+      "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0",
+      "bytes": 29115
+    },
+    "runtime-source/scripts/frontier_full128_code_projectors_2026_07_24.py": {
+      "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44",
+      "bytes": 14150
+    },
+    "runtime-source/scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py": {
+      "sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195",
+      "bytes": 38220
+    },
+    "runtime-source/scripts/frontier_full128_cycle_encoder_2026_07_24.py": {
+      "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
+      "bytes": 36632
+    },
+    "runtime-source/scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py": {
+      "sha256": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb",
+      "bytes": 30748
+    },
+    "runtime-source/scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py": {
+      "sha256": "05cb2f6083cf6c4307c04284632e991b7fd7378cbd2a4eb08a52d5e3c7ae6b99",
+      "bytes": 8149
+    },
+    "runtime-source/scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py": {
+      "sha256": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480",
+      "bytes": 37673
+    },
+    "runtime-source/scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": {
+      "sha256": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+      "bytes": 29998
+    },
+    "runtime-source/scripts/local_generator_source_tournament_cycle228_2026_07_17.py": {
+      "sha256": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+      "bytes": 41039
+    },
+    "runtime-source/scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": {
+      "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "bytes": 26218
+    },
+    "runtime-source/scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": {
+      "sha256": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+      "bytes": 27499
+    },
+    "runtime-source/scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": {
+      "sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+      "bytes": 35105
+    },
+    "runtime-source/scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": {
+      "sha256": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+      "bytes": 13815
+    },
+    "seal_review.py": {
+      "sha256": "2f2ebb61340535c751ee1ae2003427b01e865762a8a11107ae192355ab44931c",
+      "bytes": 18987
+    },
+    "watchdog.py": {
+      "sha256": "73613fbcbacee169a6c9ac57aefd5d41716474c4b8d216d6e964a69dabb1b389",
+      "bytes": 1781
+    }
+  }
+}

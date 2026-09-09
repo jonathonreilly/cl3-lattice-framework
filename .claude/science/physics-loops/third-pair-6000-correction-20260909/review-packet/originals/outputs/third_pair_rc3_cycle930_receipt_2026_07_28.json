@@ -1,0 +1,2023 @@
+{
+ "RC3_statement": "RC-3, MEASURED (the verdict Cycle 922 declined to force).  922 named the discriminating measurement -- 'some closed quiescent stretch presents the two P-separated runs with EQUAL width w <= P-1 and at least MIN_STABLE_EVENTS clean ticks in the stable region' -- without taking it.  The measurement admits two readings and BOTH are reported.  READING A (the discriminator has content): 'the two P-separated runs' are the consecutive same-token P-separated run-start pair that the clock-local taxonomy attributes to one of the three entry-gap shapes.  Measured over B=4..8 this statistic is NEITHER NECESSARY NOR SUFFICIENT.  Not necessary: at B=7, b=3 the cell fires 20 bank-owned entry-gap episodes while every one of the 548 stretches carrying an equal-width entry-gap pair is rejected by the detector -- the firing episodes carry only UNEQUAL-width entry-gap pairs, so 'every firing episode has equal-width runs' is false.  Not sufficient: the configuration is presented and refused wholesale -- B=7 b=5 presents it 542 times and fires 8; B=6 b=3 presents it 268 times through the handoff pair and fires 52; and the third pair presents it 30 times at B=5 b=2 and 4 times at B=6 b=4 and fires never.  READING B (the discriminator is true): 'the two P-separated runs' are the two runs of the P-exact STABLE REGION.  Then equal width is a THEOREM of the detector, not a criterion: on the stable region S[t] = S[t+P] for transient <= t <= last-P, so a run starting at t with t+w <= last-P has an identical-width image at t+P; the only exceptions are runs whose image is truncated by the end of the stretch.  Under reading B the statistic is implied BY the reading and can therefore never imply it.  THE VERDICT: RC-3 DOES NOT CLOSE.  The discriminator separates but does not close, in exactly the sense the spec allowed for, and its stated form is additionally falsified as a necessary condition.  WHAT THE MEASUREMENT DOES BUY.  Decomposing the detector's refusal on every stretch that presents the configuration gives the binding component, and it is not width and not clean-tick count: it is R3, the requirement that the TERMINAL 2P+1 ticks of the closed quiescent stretch be P-exact.  The detector is a TAIL detector; a stretch may present the configuration anywhere and still be refused because the P-periodic structure does not survive to the stretch's end.  Which word a stretch carries at its end is Cycle 891's declared dynamical boundary, and RC-3 is now measured to sit exactly on it.",
+ "TP_statement": "THE THIRD-PAIR RULE (TP).  Fix B, N = 8B-5, a bank b with 1 <= b <= B-2, and P = 8(B-1-b).  Bank b's eight incident transport rows are, for each incident edge e in {b-1, b}, h_f(e) = 4+5e-2, f(e) = 4+5e, r(e) = 8B-9-3e and h_r(e) = 8B-9-3e+2.  RC-1 (Cycle 922, derived) realises P by exactly the three ordered same-token pairs (f(b-1), r(b)), (f(b), h_r(b-1)) and (h_f(b), r(b-1)).  TP-1 SHADOWING (derived station arithmetic).  Sorted by station index the eight rows have exactly ONE consecutive gap equal to 1, namely r(b-1) - h_r(b) = (8B-6-3b) - (8B-7-3b) = 1; every other consecutive gap is at least 2.  A token advances exactly one station per tick, so every crossing of r(b-1) by a token is immediately preceded, one tick earlier and BY THAT SAME TOKEN, by that token's crossing of h_r(b), which is also a row of bank b.  r(b-1) is therefore the unique own row of bank b that can open a dirty run only when the own-row crossing one tick before it leaves the bank clean.  TP-2 UNIQUENESS AMONG THE THREE PAIRS (derived).  Of the three RC-1 pairs exactly one terminates on r(b-1) -- the third, (h_f(b), r(b-1)).  The other two terminate on r(b) and on h_r(b-1), whose predecessors r(b)-1 = 8B-10-3b and h_r(b-1)-1 = 8B-5-3b are never rows of bank b for 1 <= b <= B-2.  The third pair is therefore the unique entry-gap pair whose second run-start is shadowed, and the three pairs' first stations f(b-1), h_f(b), f(b) are all unshadowed.  TP-3 THE SHIFT PICTURE (derived).  Writing R for the eight rows, the three first stations f(b-1), h_f(b), f(b) are always P-shift-fixed (s in R and s+P in R).  They are the ONLY such rows except on the cells where the entry-gap value coincides with the bank's own edge complement, b = floor((B-1)/2), where exactly one reverse row becomes a fourth one -- r(b-1) at odd B (r(b-1) + P = f(b-1)) and r(b) at even B (r(b) + P = f(b)) -- and those are precisely Cycle 922's b = (B-1)/2 or (B-2)/2 label-theft cells, arriving here from the geometry side.  At odd B the fourth fixed row is the THIRD PAIR'S OWN TERMINAL.  Separately and without exception, h_r(b) has NO P-preimage in R: h_r(b) - P = 5b+1, which is never a row of bank b for 1 <= b <= B-2.  So h_r(b) is a row no P-shift can reach, and it sits exactly one station below r(b-1), the one entry-gap terminal that has to open a run.  TP-4 THE MEASURED FACT (exhaustive, B=4..8, every bank clock, every closed quiescent stretch).  The third pair is NOT geometrically absent: it occurs as a consecutive same-token P-separated run-start pair in every tier and at most cells.  What is exactly zero is its coincidence with a reading: in no stretch that the detector reads at period P does the third pair occur.  Wherever the third pair reaches the full stretch configuration at all, the detector's rejection is R3 -- the terminal 2P+1 ticks of the closed quiescent stretch are not P-exact.  STATUS.  TP-1, TP-2 and TP-3 are DERIVED pure station arithmetic, exhaustively verified.  TP-4's zero is MEASURED and SEALED at B=9..12, NOT derived: the shadowing asymmetry explains why the third pair is the fragile one, it does not prove the count is zero.",
+ "audit": "unset",
+ "authority": "none",
+ "authorship": "one Claude Opus 5 worker-authored primary and checker under supervisor spec; supervisor review",
+ "block": "toe-time-blockT7-20260802",
+ "bookkeeping_identity": "THE CLOCK-LOCAL BOOKKEEPING IDENTITY (Cycle 922, inherited).  A dirty-run start of clock C at tick t is the crossing of station (p + t - 1) mod N by some token p, and that station must be one of C's OWN incident transport rows.  Two run starts separated by Delta_t are rows s1, s2 of C with s2 - s1 == Delta_t + (p2 - p1) (mod N).",
+ "build_log": [
+  {
+   "banks": 4,
+   "horizon": 16384,
+   "lanes": 648,
+   "stations": 27
+  },
+  {
+   "banks": 5,
+   "horizon": 16384,
+   "lanes": 1120,
+   "stations": 35
+  },
+  {
+   "banks": 6,
+   "horizon": 16384,
+   "lanes": 1720,
+   "stations": 43
+  },
+  {
+   "banks": 7,
+   "horizon": 16384,
+   "lanes": 2448,
+   "stations": 51
+  },
+  {
+   "banks": 8,
+   "horizon": 16384,
+   "lanes": 3304,
+   "stations": 59
+  },
+  {
+   "banks": 3,
+   "horizon": 64,
+   "lanes": 304,
+   "stations": 19
+  },
+  {
+   "banks": 3,
+   "horizon": 64,
+   "lanes": 304,
+   "stations": 19
+  }
+ ],
+ "campaign": "toe-time-expansion-20260802",
+ "claim_text_numbers": {
+  "B5_b2_third_pair_full_configurations": 30,
+  "B6_b3_swap_handoff_episodes": 52,
+  "B6_b3_swap_handoff_full_configurations": 268,
+  "B6_b4_third_pair_full_configurations": 4,
+  "B7_b3_bank_owned_entry_gap_episodes": 20,
+  "B7_b3_equal_width_entry_gap_stretches": 548,
+  "B7_b3_equal_width_entry_gap_stretches_accepted": 0,
+  "B7_b5_swap_handoff_episodes": 8,
+  "B7_b5_swap_handoff_full_configurations": 542
+ },
+ "claim_text_numbers_measured": {
+  "B5_b2_third_pair_full_configurations": 30,
+  "B6_b3_swap_handoff_episodes": 52,
+  "B6_b3_swap_handoff_full_configurations": 268,
+  "B6_b4_third_pair_full_configurations": 4,
+  "B7_b3_bank_owned_entry_gap_episodes": 20,
+  "B7_b3_equal_width_entry_gap_stretches": 548,
+  "B7_b3_equal_width_entry_gap_stretches_accepted": 0,
+  "B7_b5_swap_handoff_episodes": 8,
+  "B7_b5_swap_handoff_full_configurations": 542
+ },
+ "claim_type": "bounded structure theorem + measured negative",
+ "cycles": [
+  930
+ ],
+ "derivation_status": {
+  "RC_3": "MEASURED NEGATIVE -- does not close.  Neither necessary nor sufficient under reading A; a theorem of the detector under reading B.  Both readings reported; nothing forced.",
+  "TP_1_shadowing": "derived -- pure station arithmetic, exhaustive over B=3..16, zero disagreeing cells",
+  "TP_2_uniqueness_among_the_three_pairs": "derived -- same gate",
+  "TP_3_shift_picture": "derived -- same gate",
+  "TP_4_the_zero": "MEASURED and SEALED, not derived.  Exhaustive over B=4..8 (every bank clock, every closed quiescent stretch); predictions at B=9..12 behind a printed seal with a holdout-free build log; only B>=10 is genuinely blind and that is disclosed."
+ },
+ "detector": "THE DETECTOR (Cycle 889/891/922 semantics, reimplemented).  A clock's clean ticks inside one closed quiescent stretch become a bitmask S; for a period P the bits of (S ^ (S >> P)) below last - P + 1 are exactly the ticks where t in S <=> t+P in S fails, so the highest such bit + 1 is the LEAST transient.  A reading is kept only if the terminal 2P window is P-exact, last - transient >= 2P, the stable stretch carries >= 8 clean ticks, and the stable clean residues modulo P are not all of them.",
+ "determinism": {
+  "corpus_double_build_deterministic": true,
+  "corpus_double_build_digest": "3a900a415474122d5652070a7091fec090fa6d4b94d4aa500a34e89efd26134a",
+  "double_run_protocol": "the runner is executed twice cold; the two stdouts are compared after normalising the two runtime fields and the trailing RECEIPT digest line (which embeds the runtime).  Everything else -- all ten gate lines and the SEAL line -- must be byte identical.",
+  "program_double_build_deterministic": true,
+  "program_double_build_digest": "b26ce9f9ee823a4f654561806f2b7f2f73e9062c3ee34d1a1b96bd82b55d7c65"
+ },
+ "disclosed_deviations": [
+  "TIER SCOPING, DECLARED.  B=4,5,6,7 are built with EVERY clock (all bank clocks and all pair clocks), which is what the pinned Cycle-891/922 class-level rows are computed over, so the restriction gate can compare those rows value for value.  B=8 is built with BANK CLOCKS ONLY.  Every Cycle-922 B=8 quantity this cycle restricts against -- the six RC_rows (episodes_on_the_bank_clock, bank_owned_entry_gap_episodes, by_shape) and local_shape_counts_at_the_complement_values -- is a bank-clock quantity by construction in the pinned runner (they are gated on len(member_banks)==1), so the comparison is exact and complete for them.  The B=8 class_counts_891 and spectrum rows, which need pair clocks, are NOT recomputed here and are NOT restricted against; that is stated, not hidden.",
+  "B=9 AND UP ARE NEVER BUILT BY THIS RUNNER.  The third-pair rule's B=9..12 rows are pure-function predictions behind a printed seal.  This makes them holdout-free by construction and hands B=9 to the independent checker, exactly as Cycle 922 did.",
+  "PERIOD CEILING and HORIZON inherited verbatim from Cycles 889/891/922: every P in [2, max(64, 2N(B))] is swept and H = 16384 for every tier, so every tier is directly comparable with the pinned receipts.",
+  "ANATOMY DUMPS are capped at 6 stored rows per (bank, shape); every occurrence is COUNTED and every aggregate is exhaustive.  The stored rows are a sample and are labelled as one.",
+  "THE THIRD-PAIR ZERO IS MEASURED, NOT DERIVED.  The station asymmetry TP-1..TP-3 is derived arithmetic; that it forces zero EPISODES is not derived from it.  The rule is fitted-then-sealed at B=9..12 and the runner says so in the claim text, the seal and the receipt.",
+  "RC-3 IS NOT FORCED.  Cycle 922 declined to force it and so does this runner.  The verdict is a measured negative, reported under both readings of the spec's discriminator."
+ ],
+ "exit_codes": {
+  "primary": 0
+ },
+ "failing_cells": [
+  {
+   "FULL_CONFIGURATIONS_PRESENTED": {
+    "ENTRY_GAP_handoff_swap": 0,
+    "ENTRY_GAP_swap_handoff": 6,
+    "ENTRY_GAP_swap_swap": 2
+   },
+   "P": 8,
+   "bank_is_B_minus_2": true,
+   "cell": "B8.b6",
+   "episodes_on_the_bank_clock": 0,
+   "of_those_equal_width": {
+    "ENTRY_GAP_handoff_swap": 0,
+    "ENTRY_GAP_swap_handoff": 6,
+    "ENTRY_GAP_swap_swap": 2
+   },
+   "of_those_equal_width_le_Pm1": {
+    "ENTRY_GAP_handoff_swap": 0,
+    "ENTRY_GAP_swap_handoff": 6,
+    "ENTRY_GAP_swap_swap": 2
+   },
+   "of_those_with_8_clean_ticks": {
+    "ENTRY_GAP_handoff_swap": 0,
+    "ENTRY_GAP_swap_handoff": 6,
+    "ENTRY_GAP_swap_swap": 2
+   },
+   "refusal_component_of_every_full_configuration": {
+    "ENTRY_GAP_handoff_swap": {},
+    "ENTRY_GAP_swap_handoff": {
+     "R3_tail_window_not_P_exact": 6
+    },
+    "ENTRY_GAP_swap_swap": {
+     "R6_all_residues_clean": 2
+    }
+   },
+   "stretches_presenting_the_pair": {
+    "ENTRY_GAP_handoff_swap": 2,
+    "ENTRY_GAP_swap_handoff": 2782,
+    "ENTRY_GAP_swap_swap": 20752
+   }
+  }
+ ],
+ "files": {
+  "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py": {
+   "git_blob": "1b163d8cf59d6143fa3bfd83a170e805f3e7d0c0",
+   "sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92"
+  }
+ },
+ "gate_results": {
+  "A_PINS": "PASS",
+  "B_GEOMETRY_AND_TP": "PASS",
+  "C_DETECTOR": "PASS",
+  "D_RESTRICTION_922_891": "PASS",
+  "E_THIRD_PAIR": "PASS",
+  "F_TP_SEAL": "PASS",
+  "G_RC3_MEASURED": "PASS",
+  "H_FAILING_CELLS": "PASS",
+  "J_TEETH": "PASS",
+  "K_VERDICT": "PASS"
+ },
+ "headline": "THE THIRD PAIR IS NOT ABSENT, IT IS NEVER READ.  (h_f(b), r(b-1)) occurs 2698 times as a consecutive same-token P-separated run-start pair over B=4..8 and reaches the full stretch configuration 34 times, yet appears in ZERO stretches that the detector reads at period P; the derived asymmetry is that r(b-1) is the unique entry-gap terminal whose immediately preceding station is another own row of the same bank (r(b-1) - h_r(b) = 1), and h_r(b) is a row no P-shift can reach.  AND RC-3 DOES NOT CLOSE: the equal-width discriminator is not necessary (B=7 b=3 fires 20 episodes with only unequal-width entry-gap pairs) and not sufficient (the B=8 b=6 failing cell PRESENTS the full configuration 8 times and is refused every time); the binding component everywhere is R3, the terminal 2P+1 ticks failing to be P-exact -- a tail fact, which is 891's declared dynamical boundary.",
+ "independence": "primary only -- see the independent-check receipt",
+ "note": "none -- this block ships scripts, caches and receipts only",
+ "open": [
+  "the third-pair zero is measured, not derived",
+  "RC-3 sufficiency remains open and is measured to be a tail fact",
+  "B>=10 is the first blind tier for TP"
+ ],
+ "per_cell_rows": {
+  "4": [
+   {
+    "bank": 1,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 4,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 16,
+    "episodes_on_the_bank_clock": 14,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 158
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 534
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 1523,
+      "S2_equal_width": 10,
+      "S3_equal_width_le_Pm1": 10,
+      "S4_and_8_clean_ticks": 10,
+      "S5_FULL_CONFIGURATION": 2,
+      "reject_R3_tail_window_not_P_exact": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 158,
+     "ENTRY_GAP_swap_handoff": 534,
+     "ENTRY_GAP_swap_swap": 1613
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 14,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 27,
+    "two_P": 32
+   },
+   {
+    "bank": 2,
+    "bank_owned_entry_gap_episodes": 492,
+    "banks": 4,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 490,
+     "ENTRY_GAP_swap_swap": 2
+    },
+    "entry_gap_period": 8,
+    "episodes_on_the_bank_clock": 492,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 492,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 16
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1706,
+      "S2_equal_width": 636,
+      "S3_equal_width_le_Pm1": 636,
+      "S4_and_8_clean_ticks": 636,
+      "S5_FULL_CONFIGURATION": 636,
+      "S6_and_the_stretch_reads_P": 490,
+      "reject_ACCEPT": 490,
+      "reject_R3_tail_window_not_P_exact": 146
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 4494,
+      "S2_equal_width": 2,
+      "S3_equal_width_le_Pm1": 2,
+      "S4_and_8_clean_ticks": 2,
+      "S5_FULL_CONFIGURATION": 2,
+      "S6_and_the_stretch_reads_P": 2,
+      "reject_ACCEPT": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 16,
+     "ENTRY_GAP_swap_handoff": 1850,
+     "ENTRY_GAP_swap_swap": 4542
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 492,
+    "stable_region_pairs_unequal_width": 2,
+    "stable_region_unequal_explained_by_tail_truncation": 2,
+    "stations": 27,
+    "two_P": 16
+   }
+  ],
+  "5": [
+   {
+    "bank": 1,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 5,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 24,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 426
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 424
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 3732
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 426,
+     "ENTRY_GAP_swap_handoff": 424,
+     "ENTRY_GAP_swap_swap": 3792
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 35,
+    "two_P": 48
+   },
+   {
+    "bank": 2,
+    "bank_owned_entry_gap_episodes": 295,
+    "banks": 5,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 295
+    },
+    "entry_gap_period": 16,
+    "episodes_on_the_bank_clock": 295,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 159,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 136,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 104,
+      "S2_equal_width": 30,
+      "S3_equal_width_le_Pm1": 30,
+      "S4_and_8_clean_ticks": 30,
+      "S5_FULL_CONFIGURATION": 30,
+      "reject_R3_tail_window_not_P_exact": 30
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1466,
+      "S2_equal_width": 12,
+      "S3_equal_width_le_Pm1": 12,
+      "S4_and_8_clean_ticks": 12,
+      "S5_FULL_CONFIGURATION": 12,
+      "reject_R3_tail_window_not_P_exact": 12
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 7545,
+      "S2_equal_width": 354,
+      "S3_equal_width_le_Pm1": 354,
+      "S4_and_8_clean_ticks": 354,
+      "S5_FULL_CONFIGURATION": 325,
+      "S6_and_the_stretch_reads_P": 295,
+      "reject_ACCEPT": 159,
+      "reject_R2_stretch_shorter_than_2P": 58,
+      "reject_R3_tail_window_not_P_exact": 108
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 104,
+     "ENTRY_GAP_swap_handoff": 1466,
+     "ENTRY_GAP_swap_swap": 7966
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 295,
+    "stable_region_pairs_unequal_width": 136,
+    "stable_region_unequal_explained_by_tail_truncation": 136,
+    "stations": 35,
+    "two_P": 32
+   },
+   {
+    "bank": 3,
+    "bank_owned_entry_gap_episodes": 1368,
+    "banks": 5,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 1364,
+     "ENTRY_GAP_swap_swap": 4
+    },
+    "entry_gap_period": 8,
+    "episodes_on_the_bank_clock": 1366,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 1366,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 18
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 3137,
+      "S2_equal_width": 1960,
+      "S3_equal_width_le_Pm1": 1960,
+      "S4_and_8_clean_ticks": 1960,
+      "S5_FULL_CONFIGURATION": 1960,
+      "S6_and_the_stretch_reads_P": 1364,
+      "reject_ACCEPT": 1364,
+      "reject_R3_tail_window_not_P_exact": 596
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 7113,
+      "S2_equal_width": 2,
+      "S3_equal_width_le_Pm1": 2,
+      "S4_and_8_clean_ticks": 2,
+      "S5_FULL_CONFIGURATION": 2,
+      "S6_and_the_stretch_reads_P": 4,
+      "reject_ACCEPT": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 18,
+     "ENTRY_GAP_swap_handoff": 3711,
+     "ENTRY_GAP_swap_swap": 7411
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 1366,
+    "stable_region_pairs_unequal_width": 2,
+    "stable_region_unequal_explained_by_tail_truncation": 2,
+    "stations": 35,
+    "two_P": 16
+   }
+  ],
+  "6": [
+   {
+    "bank": 1,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 6,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 32,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 240
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 211
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 5130
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 240,
+     "ENTRY_GAP_swap_handoff": 211,
+     "ENTRY_GAP_swap_swap": 5174
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 43,
+    "two_P": 64
+   },
+   {
+    "bank": 2,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 6,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 24,
+    "episodes_on_the_bank_clock": 76,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 36
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1326,
+      "S2_equal_width": 72,
+      "S3_equal_width_le_Pm1": 72,
+      "S4_and_8_clean_ticks": 72
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 5643,
+      "S2_equal_width": 14,
+      "S3_equal_width_le_Pm1": 14,
+      "S4_and_8_clean_ticks": 14,
+      "S5_FULL_CONFIGURATION": 2,
+      "reject_R3_tail_window_not_P_exact": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 36,
+     "ENTRY_GAP_swap_handoff": 1380,
+     "ENTRY_GAP_swap_swap": 6004
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 76,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 43,
+    "two_P": 48
+   },
+   {
+    "bank": 3,
+    "bank_owned_entry_gap_episodes": 182,
+    "banks": 6,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 52,
+     "ENTRY_GAP_swap_swap": 130
+    },
+    "entry_gap_period": 16,
+    "episodes_on_the_bank_clock": 182,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 182,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 212
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 2270,
+      "S2_equal_width": 268,
+      "S3_equal_width_le_Pm1": 268,
+      "S4_and_8_clean_ticks": 268,
+      "S5_FULL_CONFIGURATION": 268,
+      "S6_and_the_stretch_reads_P": 52,
+      "reject_ACCEPT": 52,
+      "reject_R3_tail_window_not_P_exact": 216
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 11958,
+      "S2_equal_width": 437,
+      "S3_equal_width_le_Pm1": 437,
+      "S4_and_8_clean_ticks": 146,
+      "S5_FULL_CONFIGURATION": 146,
+      "S6_and_the_stretch_reads_P": 130,
+      "reject_ACCEPT": 130,
+      "reject_R2_stretch_shorter_than_2P": 14,
+      "reject_R3_tail_window_not_P_exact": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 212,
+     "ENTRY_GAP_swap_handoff": 2322,
+     "ENTRY_GAP_swap_swap": 12364
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 182,
+    "stable_region_pairs_unequal_width": 104,
+    "stable_region_unequal_explained_by_tail_truncation": 104,
+    "stations": 43,
+    "two_P": 32
+   },
+   {
+    "bank": 4,
+    "bank_owned_entry_gap_episodes": 506,
+    "banks": 6,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 504,
+     "ENTRY_GAP_swap_swap": 2
+    },
+    "entry_gap_period": 8,
+    "episodes_on_the_bank_clock": 504,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 504,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 24,
+      "S2_equal_width": 4,
+      "S3_equal_width_le_Pm1": 4,
+      "S4_and_8_clean_ticks": 4,
+      "S5_FULL_CONFIGURATION": 4,
+      "reject_R3_tail_window_not_P_exact": 4
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1959,
+      "S2_equal_width": 650,
+      "S3_equal_width_le_Pm1": 650,
+      "S4_and_8_clean_ticks": 650,
+      "S5_FULL_CONFIGURATION": 650,
+      "S6_and_the_stretch_reads_P": 504,
+      "reject_ACCEPT": 504,
+      "reject_R3_tail_window_not_P_exact": 146
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 17345,
+      "S6_and_the_stretch_reads_P": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 24,
+     "ENTRY_GAP_swap_handoff": 2035,
+     "ENTRY_GAP_swap_swap": 20105
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 504,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 43,
+    "two_P": 16
+   }
+  ],
+  "7": [
+   {
+    "bank": 1,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 7,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 40,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 30
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 132
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 4292,
+      "S2_equal_width": 2,
+      "S3_equal_width_le_Pm1": 2,
+      "S4_and_8_clean_ticks": 2,
+      "S5_FULL_CONFIGURATION": 2,
+      "reject_R3_tail_window_not_P_exact": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 30,
+     "ENTRY_GAP_swap_handoff": 132,
+     "ENTRY_GAP_swap_swap": 4460
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 51,
+    "two_P": 80
+   },
+   {
+    "bank": 2,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 7,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 32,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 270
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1174
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 7642,
+      "S2_equal_width": 196,
+      "S3_equal_width_le_Pm1": 196,
+      "S4_and_8_clean_ticks": 196
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 270,
+     "ENTRY_GAP_swap_handoff": 1174,
+     "ENTRY_GAP_swap_swap": 8210
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 51,
+    "two_P": 64
+   },
+   {
+    "bank": 3,
+    "bank_owned_entry_gap_episodes": 20,
+    "banks": 7,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 20
+    },
+    "entry_gap_period": 24,
+    "episodes_on_the_bank_clock": 148,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 20,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 176
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 832
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 14135,
+      "S2_equal_width": 548,
+      "S3_equal_width_le_Pm1": 548,
+      "S4_and_8_clean_ticks": 548,
+      "S5_FULL_CONFIGURATION": 548,
+      "S6_and_the_stretch_reads_P": 20,
+      "reject_R2_stretch_shorter_than_2P": 70,
+      "reject_R3_tail_window_not_P_exact": 478
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 176,
+     "ENTRY_GAP_swap_handoff": 840,
+     "ENTRY_GAP_swap_swap": 15141
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 148,
+    "stable_region_pairs_unequal_width": 20,
+    "stable_region_unequal_explained_by_tail_truncation": 20,
+    "stations": 51,
+    "two_P": 48
+   },
+   {
+    "bank": 4,
+    "bank_owned_entry_gap_episodes": 204,
+    "banks": 7,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 72,
+     "ENTRY_GAP_swap_swap": 132
+    },
+    "entry_gap_period": 16,
+    "episodes_on_the_bank_clock": 204,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 204,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 516
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 3313,
+      "S2_equal_width": 350,
+      "S3_equal_width_le_Pm1": 350,
+      "S4_and_8_clean_ticks": 350,
+      "S5_FULL_CONFIGURATION": 350,
+      "S6_and_the_stretch_reads_P": 72,
+      "reject_ACCEPT": 72,
+      "reject_R3_tail_window_not_P_exact": 278
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 16680,
+      "S2_equal_width": 674,
+      "S3_equal_width_le_Pm1": 674,
+      "S4_and_8_clean_ticks": 400,
+      "S5_FULL_CONFIGURATION": 400,
+      "S6_and_the_stretch_reads_P": 132,
+      "reject_ACCEPT": 132,
+      "reject_R3_tail_window_not_P_exact": 268
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 516,
+     "ENTRY_GAP_swap_handoff": 3313,
+     "ENTRY_GAP_swap_swap": 18014
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 204,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 51,
+    "two_P": 32
+   },
+   {
+    "bank": 5,
+    "bank_owned_entry_gap_episodes": 8,
+    "banks": 7,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 8,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 8,
+    "episodes_on_the_bank_clock": 8,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 8,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 44
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1655,
+      "S2_equal_width": 542,
+      "S3_equal_width_le_Pm1": 542,
+      "S4_and_8_clean_ticks": 542,
+      "S5_FULL_CONFIGURATION": 542,
+      "S6_and_the_stretch_reads_P": 8,
+      "reject_ACCEPT": 8,
+      "reject_R3_tail_window_not_P_exact": 438,
+      "reject_R6_all_residues_clean": 96
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 25560,
+      "S2_equal_width": 2,
+      "S3_equal_width_le_Pm1": 2,
+      "S4_and_8_clean_ticks": 2,
+      "S5_FULL_CONFIGURATION": 2,
+      "reject_R3_tail_window_not_P_exact": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 44,
+     "ENTRY_GAP_swap_handoff": 1657,
+     "ENTRY_GAP_swap_swap": 29060
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 8,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 51,
+    "two_P": 16
+   }
+  ],
+  "8": [
+   {
+    "bank": 1,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 8,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 48,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 2
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 154
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 6390
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 2,
+     "ENTRY_GAP_swap_handoff": 154,
+     "ENTRY_GAP_swap_swap": 6390
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 59,
+    "two_P": 96
+   },
+   {
+    "bank": 2,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 8,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 40,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 114
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1206
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 6096,
+      "S2_equal_width": 132,
+      "S3_equal_width_le_Pm1": 132,
+      "S4_and_8_clean_ticks": 132
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 114,
+     "ENTRY_GAP_swap_handoff": 1206,
+     "ENTRY_GAP_swap_swap": 6294
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 59,
+    "two_P": 80
+   },
+   {
+    "bank": 3,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 8,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 32,
+    "episodes_on_the_bank_clock": 22,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {},
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1188,
+      "S2_equal_width": 106,
+      "S3_equal_width_le_Pm1": 106,
+      "S4_and_8_clean_ticks": 106,
+      "S5_FULL_CONFIGURATION": 106,
+      "reject_R3_tail_window_not_P_exact": 106
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 9727,
+      "S2_equal_width": 160,
+      "S3_equal_width_le_Pm1": 160,
+      "S4_and_8_clean_ticks": 160,
+      "S5_FULL_CONFIGURATION": 152,
+      "reject_R3_tail_window_not_P_exact": 152
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 1188,
+     "ENTRY_GAP_swap_swap": 10166
+    },
+    "short_arc_2P_lt_N": false,
+    "stable_region_pairs_equal_width": 22,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 59,
+    "two_P": 64
+   },
+   {
+    "bank": 4,
+    "bank_owned_entry_gap_episodes": 4,
+    "banks": 8,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 4
+    },
+    "entry_gap_period": 24,
+    "episodes_on_the_bank_clock": 4,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 4,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 222
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1486,
+      "S2_equal_width": 204,
+      "S3_equal_width_le_Pm1": 204,
+      "S4_and_8_clean_ticks": 204,
+      "S5_FULL_CONFIGURATION": 204,
+      "reject_R3_tail_window_not_P_exact": 204
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 13219,
+      "S2_equal_width": 138,
+      "S3_equal_width_le_Pm1": 138,
+      "S4_and_8_clean_ticks": 138,
+      "S5_FULL_CONFIGURATION": 138,
+      "S6_and_the_stretch_reads_P": 4,
+      "reject_ACCEPT": 4,
+      "reject_R2_stretch_shorter_than_2P": 110,
+      "reject_R3_tail_window_not_P_exact": 24
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 222,
+     "ENTRY_GAP_swap_handoff": 1486,
+     "ENTRY_GAP_swap_swap": 13515
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 4,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 59,
+    "two_P": 48
+   },
+   {
+    "bank": 5,
+    "bank_owned_entry_gap_episodes": 392,
+    "banks": 8,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 286,
+     "ENTRY_GAP_swap_swap": 106
+    },
+    "entry_gap_period": 16,
+    "episodes_on_the_bank_clock": 392,
+    "fires": true,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 392,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 88
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 1454,
+      "S2_equal_width": 386,
+      "S3_equal_width_le_Pm1": 386,
+      "S4_and_8_clean_ticks": 386,
+      "S5_FULL_CONFIGURATION": 386,
+      "S6_and_the_stretch_reads_P": 286,
+      "reject_ACCEPT": 286,
+      "reject_R3_tail_window_not_P_exact": 100
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 15264,
+      "S2_equal_width": 112,
+      "S3_equal_width_le_Pm1": 112,
+      "S4_and_8_clean_ticks": 112,
+      "S5_FULL_CONFIGURATION": 112,
+      "S6_and_the_stretch_reads_P": 106,
+      "reject_ACCEPT": 106,
+      "reject_R3_tail_window_not_P_exact": 6
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 88,
+     "ENTRY_GAP_swap_handoff": 1564,
+     "ENTRY_GAP_swap_swap": 15710
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 392,
+    "stable_region_pairs_unequal_width": 2,
+    "stable_region_unequal_explained_by_tail_truncation": 2,
+    "stations": 59,
+    "two_P": 32
+   },
+   {
+    "bank": 6,
+    "bank_owned_entry_gap_episodes": 0,
+    "banks": 8,
+    "by_shape": {
+     "ENTRY_GAP_handoff_swap": 0,
+     "ENTRY_GAP_swap_handoff": 0,
+     "ENTRY_GAP_swap_swap": 0
+    },
+    "entry_gap_period": 8,
+    "episodes_on_the_bank_clock": 0,
+    "fires": false,
+    "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+    "firing_episodes_with_no_P_separated_pair_at_all": 0,
+    "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+    "ladder": {
+     "ENTRY_GAP_handoff_swap": {
+      "S1_stretches_with_the_pair": 2
+     },
+     "ENTRY_GAP_swap_handoff": {
+      "S1_stretches_with_the_pair": 2782,
+      "S2_equal_width": 6,
+      "S3_equal_width_le_Pm1": 6,
+      "S4_and_8_clean_ticks": 6,
+      "S5_FULL_CONFIGURATION": 6,
+      "reject_R3_tail_window_not_P_exact": 6
+     },
+     "ENTRY_GAP_swap_swap": {
+      "S1_stretches_with_the_pair": 20752,
+      "S2_equal_width": 2,
+      "S3_equal_width_le_Pm1": 2,
+      "S4_and_8_clean_ticks": 2,
+      "S5_FULL_CONFIGURATION": 2,
+      "reject_R6_all_residues_clean": 2
+     }
+    },
+    "register_level_pair_occurrences": {
+     "ENTRY_GAP_handoff_swap": 2,
+     "ENTRY_GAP_swap_handoff": 2888,
+     "ENTRY_GAP_swap_swap": 22628
+    },
+    "short_arc_2P_lt_N": true,
+    "stable_region_pairs_equal_width": 0,
+    "stable_region_pairs_unequal_width": 0,
+    "stable_region_unequal_explained_by_tail_truncation": 0,
+    "stations": 59,
+    "two_P": 16
+   }
+  ]
+ },
+ "pinned_inputs": {
+  "docs/COMPLEMENT_MECHANISM_KRUN_LAW_CYCLE891_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "235965affc47ce7745327ef194e7c0ae31e6a6c8",
+   "sha256": "5b20f90a643e890492d65907050e31772b85f1b00e1ee5581f5132f45f6a700c"
+  },
+  "docs/P32_CARRIER_SHORT_ARC_LABEL_THEFT_CYCLE922_BOUNDED_THEOREM_NOTE_2026-07-28.md": {
+   "git_blob": "572090165a4e6ef876f1eb9a291795fba11118fc",
+   "sha256": "420c162b2530c7329c21915ff2eee8d91689a5f97688c1df29752841b6af949d"
+  },
+  "logs/runner-cache/frontier_cycle922_p32_carrier_2026_07_28.txt": {
+   "git_blob": "4cd970d8261c5d705a2b02f909f97907a0ccb0d3",
+   "sha256": "256d8422a4d379062d6dc0163dc748b2063e6d0f7533598a90971030428eede1"
+  },
+  "logs/runner-cache/frontier_cycle922_p32_carrier_independent_check_2026_07_28.txt": {
+   "git_blob": "0f7c892f555538c95a2fd1b86a47c30f4b59ee2c",
+   "sha256": "add02c024c5f008e17fe135a103bb674fdca5d3c25be0a8fc39f653be7d7ec75"
+  },
+  "outputs/complement_independent_check_cycle891_receipt_2026_07_28.json": {
+   "git_blob": "478f19642c1d66a6e1575798f9974b645c9f9a18",
+   "sha256": "cb2f6badda7315725f5f33c5aad89e7e37cf9201472362e0af3a16c4225fae8f"
+  },
+  "outputs/complement_mechanism_cycle891_receipt_2026_07_28.json": {
+   "git_blob": "f537715a927b00b817f8de2569953d78929c86db",
+   "sha256": "f8e30d50a50e39a13f8f968b2ae21991885b6c858c6c96439ed733fc8514bacd"
+  },
+  "outputs/p32_carrier_block_cycle922_ship_receipt_2026_07_28.json": {
+   "git_blob": "a39abd45b40897d872ecbccf2f5ee962ce66dc54",
+   "sha256": "9df9f38530b6d8bb8e4ebc9f76d5683ac065bf06f4edcfb2db9f3e70ef28ad76"
+  },
+  "outputs/p32_carrier_cycle922_receipt_2026_07_28.json": {
+   "git_blob": "4497a88d3d2cf7ca058ff759c8f3ecea8c042481",
+   "sha256": "ab40677256009a0b1ecdf841766aa055a113aeb93827dc1d1da21a9e1cb97954"
+  },
+  "outputs/p32_carrier_independent_check_cycle922_receipt_2026_07_28.json": {
+   "git_blob": "a1fcadfd795d08c9705722f7165349e361778b65",
+   "sha256": "e609eafcb6ef33c22ec0aa4481cc29ea5be46f5be1312a9ccd4822b154ff059e"
+  },
+  "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py": {
+   "git_blob": "3add288d1b7de5bcc45f5ef8f88f3cfb98105b8f",
+   "sha256": "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691"
+  },
+  "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": {
+   "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+   "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  "scripts/frontier_cycle879_b4_clock_relation_2026_07_28.py": {
+   "git_blob": "c2147a99c1a6879508fbf250051f87115b0b9d35",
+   "sha256": "40bf65b88db19a7872d3dd5de50c7746bbecd98ce87c2b1176ce18ec9e5f7b2f"
+  },
+  "scripts/frontier_cycle881_p11_characterization_2026_07_28.py": {
+   "git_blob": "4b7297890a822184914bace90f60b47dc09f8305",
+   "sha256": "7cc1c8984869d824f33d83ccf6599c6ef9e166766015979d204309c3e820ed35"
+  },
+  "scripts/frontier_cycle889_delta_spectrum_2026_07_28.py": {
+   "git_blob": "f1bdf1f789a85213a0a854ab0bed45e6bf250fed",
+   "sha256": "c18ed0c49281fd2d54ad013ba12264b181d1720349ee002b144c028b521dd826"
+  },
+  "scripts/frontier_cycle891_complement_independent_check_2026_07_28.py": {
+   "git_blob": "53f5cf560f6dfad20dc6b4b91b0c003c848c6bea",
+   "sha256": "f2e9ca32b7d3f863822126c05fbf6a3b637164e8969e5ec7c6c04f15cd89e568"
+  },
+  "scripts/frontier_cycle891_complement_mechanism_2026_07_28.py": {
+   "git_blob": "a1bbd49ffbe970193cc79054fb7219732f7c9873",
+   "sha256": "3d260f6641d05a22aee092145ea3e5c3b29f3a6882b4cbd9ae966424458afbb7"
+  },
+  "scripts/frontier_cycle922_p32_carrier_2026_07_28.py": {
+   "git_blob": "fdd77d879b142d1bafa1f76926c494bbc4480b1c",
+   "sha256": "9e1a8de7190188a89cd4449300ab56cc053d6a63eec328265fa80f9955ce3a83"
+  },
+  "scripts/frontier_cycle922_p32_carrier_independent_check_2026_07_28.py": {
+   "git_blob": "faae396e9801cfac4c8f6baa80d022397bed3f64",
+   "sha256": "fb7acd4bfe5fa1dcc8f22373861da2038dfdb169371c53d283ae65325d44b118"
+  }
+ },
+ "rc3": {
+  "reading_A": {
+   "cells": [
+    {
+     "P": 16,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B4.b1",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 2,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 8,
+     "bank_owned_entry_gap_episodes": 492,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 490,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 636,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B4.b2",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 492,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 638,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 24,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "cell": "B5.b1",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 0,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 16,
+     "bank_owned_entry_gap_episodes": 295,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 295
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 30,
+      "ENTRY_GAP_swap_handoff": 12,
+      "ENTRY_GAP_swap_swap": 325
+     },
+     "cell": "B5.b2",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 159,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 136,
+     "full_configurations_presented": 367,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 8,
+     "bank_owned_entry_gap_episodes": 1368,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 1364,
+      "ENTRY_GAP_swap_swap": 4
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 1960,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B5.b3",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 1366,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 1962,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 32,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "cell": "B6.b1",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 0,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 24,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B6.b2",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 2,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 16,
+     "bank_owned_entry_gap_episodes": 182,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 52,
+      "ENTRY_GAP_swap_swap": 130
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 268,
+      "ENTRY_GAP_swap_swap": 146
+     },
+     "cell": "B6.b3",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 182,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 414,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 8,
+     "bank_owned_entry_gap_episodes": 506,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 504,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 4,
+      "ENTRY_GAP_swap_handoff": 650,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "cell": "B6.b4",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 504,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 654,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 40,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B7.b1",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 2,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 32,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "cell": "B7.b2",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 0,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 24,
+     "bank_owned_entry_gap_episodes": 20,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 20
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 548
+     },
+     "cell": "B7.b3",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 20,
+     "full_configurations_presented": 548,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 16,
+     "bank_owned_entry_gap_episodes": 204,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 72,
+      "ENTRY_GAP_swap_swap": 132
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 350,
+      "ENTRY_GAP_swap_swap": 400
+     },
+     "cell": "B7.b4",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 204,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 750,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 8,
+     "bank_owned_entry_gap_episodes": 8,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 8,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 542,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B7.b5",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 8,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 544,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 48,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "cell": "B8.b1",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 0,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 40,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "cell": "B8.b2",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 0,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 32,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 106,
+      "ENTRY_GAP_swap_swap": 152
+     },
+     "cell": "B8.b3",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 258,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 24,
+     "bank_owned_entry_gap_episodes": 4,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 4
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 204,
+      "ENTRY_GAP_swap_swap": 138
+     },
+     "cell": "B8.b4",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 4,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 342,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 16,
+     "bank_owned_entry_gap_episodes": 392,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 286,
+      "ENTRY_GAP_swap_swap": 106
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 386,
+      "ENTRY_GAP_swap_swap": 112
+     },
+     "cell": "B8.b5",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 392,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 498,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 8,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 6,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B8.b6",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 8,
+     "short_arc_2P_lt_N": true
+    }
+   ],
+   "necessity_counterexamples": [
+    {
+     "P": 16,
+     "bank_owned_entry_gap_episodes": 295,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 295
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 30,
+      "ENTRY_GAP_swap_handoff": 12,
+      "ENTRY_GAP_swap_swap": 325
+     },
+     "cell": "B5.b2",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 159,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 136,
+     "full_configurations_presented": 367,
+     "short_arc_2P_lt_N": true
+    },
+    {
+     "P": 24,
+     "bank_owned_entry_gap_episodes": 20,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 20
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 548
+     },
+     "cell": "B7.b3",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 20,
+     "full_configurations_presented": 548,
+     "short_arc_2P_lt_N": true
+    }
+   ],
+   "sufficiency_counterexamples": [
+    {
+     "P": 16,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B4.b1",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 2,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 24,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B6.b2",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 2,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 40,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B7.b1",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 2,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 32,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 106,
+      "ENTRY_GAP_swap_swap": 152
+     },
+     "cell": "B8.b3",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 258,
+     "short_arc_2P_lt_N": false
+    },
+    {
+     "P": 8,
+     "bank_owned_entry_gap_episodes": 0,
+     "by_shape_episodes": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 0,
+      "ENTRY_GAP_swap_swap": 0
+     },
+     "by_shape_full_configurations": {
+      "ENTRY_GAP_handoff_swap": 0,
+      "ENTRY_GAP_swap_handoff": 6,
+      "ENTRY_GAP_swap_swap": 2
+     },
+     "cell": "B8.b6",
+     "firing_episodes_with_an_equal_width_entry_gap_pair": 0,
+     "firing_episodes_with_only_unequal_width_entry_gap_pairs": 0,
+     "full_configurations_presented": 8,
+     "short_arc_2P_lt_N": true
+    }
+   ]
+  },
+  "reading_B": {
+   "claim": "on the P-exact stable region equal width is a THEOREM of the detector, not a criterion: S[t] = S[t+P] for transient <= t <= last-P, so a run starting at t inside the stable region has an identical-width image at t+P unless the image is truncated by the end of the stretch.",
+   "stable_region_P_separated_pairs_equal_width": 3707,
+   "stable_region_P_separated_pairs_unequal_width": 266,
+   "unequal_ones_explained_by_tail_truncation": 266,
+   "unexplained_violations": 0
+  }
+ },
+ "rc3_binding_component": "R3_tail_window_not_P_exact",
+ "rc3_refusal_components": {
+  "ACCEPT": 3311,
+  "R2_stretch_shorter_than_2P": 252,
+  "R3_tail_window_not_P_exact": 3328,
+  "R6_all_residues_clean": 98
+ },
+ "restriction_gate": {
+  "pinned_cells_compared": 20,
+  "tier_rows": [
+   {
+    "banks": 4,
+    "checks": {
+     "class_counts_891": true,
+     "clocks_swept": true,
+     "clocks_swept_equals_expected": true,
+     "closed_quiescent_stretches": true,
+     "complements_observed": true,
+     "completeness_ledger": true,
+     "cooccurrence_clocks": true,
+     "entry_gap_table": true,
+     "longest_closed_stretch": true,
+     "substrate_failures_zero": true
+    }
+   },
+   {
+    "banks": 5,
+    "checks": {
+     "class_counts_891": true,
+     "clocks_swept": true,
+     "clocks_swept_equals_expected": true,
+     "closed_quiescent_stretches": true,
+     "complements_observed": true,
+     "completeness_ledger": true,
+     "cooccurrence_clocks": true,
+     "entry_gap_table": true,
+     "longest_closed_stretch": true,
+     "substrate_failures_zero": true
+    }
+   },
+   {
+    "banks": 6,
+    "checks": {
+     "class_counts_891": true,
+     "clocks_swept": true,
+     "clocks_swept_equals_expected": true,
+     "closed_quiescent_stretches": true,
+     "complements_observed": true,
+     "completeness_ledger": true,
+     "cooccurrence_clocks": true,
+     "entry_gap_table": true,
+     "longest_closed_stretch": true,
+     "substrate_failures_zero": true
+    }
+   },
+   {
+    "banks": 7,
+    "checks": {
+     "class_counts_891": true,
+     "clocks_swept": true,
+     "clocks_swept_equals_expected": true,
+     "closed_quiescent_stretches": true,
+     "complements_observed": true,
+     "completeness_ledger": true,
+     "cooccurrence_clocks": true,
+     "entry_gap_table": true,
+     "longest_closed_stretch": true,
+     "substrate_failures_zero": true
+    }
+   }
+  ],
+  "total_failed_checks": 0
+ },
+ "runtime_limit_seconds": 900,
+ "runtime_seconds": 458.2,
+ "seal": {
+  "SEAL_sha256": "d4f8f058b13f3063227b415a4f25be7211ea7a63d8aec09ff3722293499303e8",
+  "blind_from_bank_count": 10,
+  "build_log_at_seal_time": [
+   {
+    "banks": 4,
+    "horizon": 16384,
+    "lanes": 648,
+    "stations": 27
+   },
+   {
+    "banks": 5,
+    "horizon": 16384,
+    "lanes": 1120,
+    "stations": 35
+   },
+   {
+    "banks": 6,
+    "horizon": 16384,
+    "lanes": 1720,
+    "stations": 43
+   },
+   {
+    "banks": 7,
+    "horizon": 16384,
+    "lanes": 2448,
+    "stations": 51
+   },
+   {
+    "banks": 8,
+    "horizon": 16384,
+    "lanes": 3304,
+    "stations": 59
+   }
+  ],
+  "build_log_at_seal_time_is_holdout_free": true,
+  "payload": {
+   "TP_STATEMENT": "THE THIRD-PAIR RULE (TP).  Fix B, N = 8B-5, a bank b with 1 <= b <= B-2, and P = 8(B-1-b).  Bank b's eight incident transport rows are, for each incident edge e in {b-1, b}, h_f(e) = 4+5e-2, f(e) = 4+5e, r(e) = 8B-9-3e and h_r(e) = 8B-9-3e+2.  RC-1 (Cycle 922, derived) realises P by exactly the three ordered same-token pairs (f(b-1), r(b)), (f(b), h_r(b-1)) and (h_f(b), r(b-1)).  TP-1 SHADOWING (derived station arithmetic).  Sorted by station index the eight rows have exactly ONE consecutive gap equal to 1, namely r(b-1) - h_r(b) = (8B-6-3b) - (8B-7-3b) = 1; every other consecutive gap is at least 2.  A token advances exactly one station per tick, so every crossing of r(b-1) by a token is immediately preceded, one tick earlier and BY THAT SAME TOKEN, by that token's crossing of h_r(b), which is also a row of bank b.  r(b-1) is therefore the unique own row of bank b that can open a dirty run only when the own-row crossing one tick before it leaves the bank clean.  TP-2 UNIQUENESS AMONG THE THREE PAIRS (derived).  Of the three RC-1 pairs exactly one terminates on r(b-1) -- the third, (h_f(b), r(b-1)).  The other two terminate on r(b) and on h_r(b-1), whose predecessors r(b)-1 = 8B-10-3b and h_r(b-1)-1 = 8B-5-3b are never rows of bank b for 1 <= b <= B-2.  The third pair is therefore the unique entry-gap pair whose second run-start is shadowed, and the three pairs' first stations f(b-1), h_f(b), f(b) are all unshadowed.  TP-3 THE SHIFT PICTURE (derived).  Writing R for the eight rows, the three first stations f(b-1), h_f(b), f(b) are always P-shift-fixed (s in R and s+P in R).  They are the ONLY such rows except on the cells where the entry-gap value coincides with the bank's own edge complement, b = floor((B-1)/2), where exactly one reverse row becomes a fourth one -- r(b-1) at odd B (r(b-1) + P = f(b-1)) and r(b) at even B (r(b) + P = f(b)) -- and those are precisely Cycle 922's b = (B-1)/2 or (B-2)/2 label-theft cells, arriving here from the geometry side.  At odd B the fourth fixed row is the THIRD PAIR'S OWN TERMINAL.  Separately and without exception, h_r(b) has NO P-preimage in R: h_r(b) - P = 5b+1, which is never a row of bank b for 1 <= b <= B-2.  So h_r(b) is a row no P-shift can reach, and it sits exactly one station below r(b-1), the one entry-gap terminal that has to open a run.  TP-4 THE MEASURED FACT (exhaustive, B=4..8, every bank clock, every closed quiescent stretch).  The third pair is NOT geometrically absent: it occurs as a consecutive same-token P-separated run-start pair in every tier and at most cells.  What is exactly zero is its coincidence with a reading: in no stretch that the detector reads at period P does the third pair occur.  Wherever the third pair reaches the full stretch configuration at all, the detector's rejection is R3 -- the terminal 2P+1 ticks of the closed quiescent stretch are not P-exact.  STATUS.  TP-1, TP-2 and TP-3 are DERIVED pure station arithmetic, exhaustively verified.  TP-4's zero is MEASURED and SEALED at B=9..12, NOT derived: the shadowing asymmetry explains why the third pair is the fragile one, it does not prove the count is zero.",
+   "predicted_other_two_pairs_terminals_unshadowed": {
+    "10": true,
+    "11": true,
+    "12": true,
+    "9": true
+   },
+   "predicted_third_pair_episodes": {
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "9": 0
+   },
+   "predicted_third_pair_exists_geometrically": {
+    "10": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "11": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "12": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "9": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   },
+   "predicted_third_pair_terminal_is_shadowed_everywhere": {
+    "10": true,
+    "11": true,
+    "12": true,
+    "9": true
+   }
+  }
+ },
+ "teeth": [
+  {
+   "fires": true,
+   "mismatched": [
+    "scripts/frontier_cycle922_p32_carrier_2026_07_28.py"
+   ],
+   "tooth": "tampered_pin_is_caught"
+  },
+  {
+   "cell": "B5.b3",
+   "detector_reads_P": true,
+   "equal_widths": true,
+   "fires": true,
+   "note": "a REAL third-pair episode of exactly this form would be reported by the same code path that reports zero over the corpus, so the zero is not an instrument blind spot",
+   "period": 8,
+   "shapes_seen": [
+    "ENTRY_GAP_handoff_swap",
+    "ENTRY_GAP_swap_handoff",
+    "ENTRY_GAP_swap_swap"
+   ],
+   "stations": [
+    17,
+    25
+   ],
+   "tooth": "planted_third_pair_episode_is_caught"
+  },
+  {
+   "counterexamples_after": 6,
+   "counterexamples_before": 5,
+   "fires": true,
+   "planted_into": "B5.b1",
+   "tooth": "planted_configuration_flips_the_RC3_verdict"
+  },
+  {
+   "cells_broken": 20,
+   "fires": true,
+   "tooth": "perturbed_station_formula_breaks_TP"
+  },
+  {
+   "cells_classified_by_the_crippled_classifier": 0,
+   "cells_classified_by_the_true_classifier": 20,
+   "fires": true,
+   "tooth": "dropping_the_third_shape_is_detectable"
+  },
+  {
+   "failures_raised": 1,
+   "fires": true,
+   "tooth": "restriction_comparison_actually_compares"
+  },
+  {
+   "clean_ticks_in_the_planted_mask": 81,
+   "fires": true,
+   "tooth": "detector_min_events_constant_is_load_bearing"
+  },
+  {
+   "fires": true,
+   "tampered_digest": "afad34d54cb3a6436260062f2c446d69f7fd2bc7b8603e85e3450be464ca1251",
+   "tooth": "tampered_seal_is_caught"
+  },
+  {
+   "disagreements": 98,
+   "fires": true,
+   "tooth": "crippled_rejection_decomposer_is_detectable"
+  },
+  {
+   "fires": true,
+   "measured_unexplained_violations": 0,
+   "note": "a single unexplained unequal-width pair inside a P-exact stable region would break gate G; the gate asserts zero and the corpus delivers zero",
+   "tooth": "stable_region_equal_width_theorem_is_load_bearing"
+  }
+ ],
+ "third_pair": {
+  "episodes_over_all_cells": 0,
+  "full_configurations": {
+   "B4.b1": 0,
+   "B4.b2": 0,
+   "B5.b1": 0,
+   "B5.b2": 30,
+   "B5.b3": 0,
+   "B6.b1": 0,
+   "B6.b2": 0,
+   "B6.b3": 0,
+   "B6.b4": 4,
+   "B7.b1": 0,
+   "B7.b2": 0,
+   "B7.b3": 0,
+   "B7.b4": 0,
+   "B7.b5": 0,
+   "B8.b1": 0,
+   "B8.b2": 0,
+   "B8.b3": 0,
+   "B8.b4": 0,
+   "B8.b5": 0,
+   "B8.b6": 0
+  },
+  "refusal_components": {
+   "R3_tail_window_not_P_exact": 34
+  },
+  "register_level_occurrences": {
+   "B4.b1": 158,
+   "B4.b2": 16,
+   "B5.b1": 426,
+   "B5.b2": 104,
+   "B5.b3": 18,
+   "B6.b1": 240,
+   "B6.b2": 36,
+   "B6.b3": 212,
+   "B6.b4": 24,
+   "B7.b1": 30,
+   "B7.b2": 270,
+   "B7.b3": 176,
+   "B7.b4": 516,
+   "B7.b5": 44,
+   "B8.b1": 2,
+   "B8.b2": 114,
+   "B8.b3": 0,
+   "B8.b4": 222,
+   "B8.b5": 88,
+   "B8.b6": 2
+  }
+ }
+}

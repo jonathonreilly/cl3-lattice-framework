@@ -1,0 +1,199 @@
+{
+  "pr": {
+    "baseRefName": "physics-loop/toe-time-blockT6-20260802",
+    "baseRefOid": "f65501b1ac77ff1cfdefc899a115e6da48af870a",
+    "commits": [
+      {
+        "authoredDate": "2026-08-05T05:35:37Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude Opus"
+          }
+        ],
+        "committedDate": "2026-08-05T05:35:37Z",
+        "messageBody": "\u2026ir and RC-3\n\nQ1 the third pair (h_f(b), r(b-1)): anatomised at register level.  The\nabsence is NOT geometric -- the pair occurs as a consecutive same-token\nP-separated run-start pair in every tier and reaches the full stretch\nconfiguration; what is exactly zero is its coincidence with a detector\nreading of P.  TP-1/TP-2/TP-3 are derived station arithmetic (the single\nunit gap r(b-1) - h_r(b) = 1; the third pair is the unique entry-gap pair\nwith a shadowed terminal; h_r(b) has no P-preimage), exhaustive B=3..24.\nThe zero itself is measured and sealed, not derived, and says so.\n\nQ2 RC-3: 922's named measurement is taken.  Both readings of the\ndiscriminator are reported.  Under the reading with content it is neither\nnecessary nor sufficient; under the reading that is true it is a theorem of\nthe detector.  RC-3 does not close; the binding component is the P-exact\nTAIL.\n\nRestriction gate hard-fails against the pinned 922/891 bytes value for\nvalue before any new number.  Checker is spec'd to refute: own generator\nfrom the kernel's crossing identity validated against the kernel's own\napply_controller_step, own interval-algebra detector, own station-identity\nattribution, a deliberately WIDENED third-pair hunt, and rival-discriminator\nscoring for RC-3 model degeneracy.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "cycle930: primary + independent checker for the never-firing third pa\u2026",
+        "oid": "39d6f096e84613ab5295c43c27b93e3a636ab2f9"
+      },
+      {
+        "authoredDate": "2026-08-05T06:08:06Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude Opus"
+          }
+        ],
+        "committedDate": "2026-08-05T06:08:06Z",
+        "messageBody": "\u2026inistic double run)\n\nRestriction gate D against the pinned Cycle-922/891 bytes: ZERO failed checks\n(B=4..7 class_counts_891, clock counts, stretch counts, ledgers, cooccurrence,\nlongest stretch, entry-gap tables, complements; the 14 pinned per-cell rows and\nthe 6 pinned B=8 holdout rows value for value; the B=8 clock-local shape counts;\nthe B=7 40/48 residuals and the whole P=32 anatomy).\n\nQ1: the third pair occurs 2698 times at register level over B=4..8 and reaches\nthe full stretch configuration 34 times, with ZERO episodes -- every refusal is\nR3, the terminal 2P+1 ticks not being P-exact.  TP-1..TP-3 derived over 253\ncells, B=3..24, zero disagreements.  Gate B failed the worker's FIRST TP-3 on\nall 105 cells of an earlier run (it over-claimed uniqueness); the withdrawn\nclaim and its correction are carried in the gate payload, and the exceptions\nturn out to be exactly Cycle 922's label-theft cells b = floor((B-1)/2).\n\nQ2: RC-3 does not close.  Not necessary (B=5 b=2 and B=7 b=3 fire with only\nunequal-width entry-gap pairs); not sufficient (B=8 b=6 presents the full\nconfiguration 8 times and is refused every time).  Equal width inside a P-exact\nstable region is a theorem of the detector: 3707 equal, 266 unequal, all 266\nexplained by tail truncation, zero unexplained.\n\n10/10 teeth fire.  Seal d4f8f058... over B=9..12 with a holdout-free build log.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "cycle930: primary run cache + receipt (10/10 gates PASS, 458s, determ\u2026",
+        "oid": "8a562196145d5d44c2e458cb49f4e6ac05fe06f3"
+      },
+      {
+        "authoredDate": "2026-08-05T06:43:23Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude Opus"
+          }
+        ],
+        "committedDate": "2026-08-05T06:44:04Z",
+        "messageBody": "\u2026678s, SUPPORTED_WITH_FINDINGS)\n\nIndependence: own generator from the kernel's crossing identity, validated\ntick-for-tick against the kernel's OWN apply_controller_step (320 lanes, 63320\ntick snapshots, zero mismatches); own interval-algebra detector -- a fourth\nroute, no bitmask shift and no tick-index walk -- validated against a literal\nper-tick oracle on 1300 randomised cases with zero mismatches; own\nstation-identity attribution; the rule re-derived from the primary's stated\ntext as an AST literal, four phrasings, 55 cells, zero disagreements.\n\nAttack (i) THIRD PAIR: the corpus is rebuilt at B=5,6,7 and at the blind tier\nB=9, and the hunt is run twice per tier -- the primary's consecutive definition\nAND a deliberately WIDER one it never used.  Zero firing third-pair episodes\nunder BOTH, on all 19 cells, while the pair itself occurs 2692 times strictly\nand 4576 times widened.  The zero survives the widening.\n\nAttack (ii) RC-3: six discriminators scored on 142145 stretches (2881 read P).\nTWO FINDINGS THE PRIMARY DID NOT REPORT are carried on the verdict block: the\nprimary's equal-width statistic is NOT the best simple discriminator\n(both_widths_le_3 F1 0.5642 vs 0.5574; equal_width recall 0.9459, precision\n0.3951), and the primary's \"binding component\" wording survives only in its\nweaker refusal-decomposition reading, since tail_window_P_exact scores F1\n0.1347 as a predictor.\n\nAttack (iii) SEAL: recomputed independently to d4f8f058..., build log\nholdout-free, B=9 measured at zero.\n\nRestriction: 12 primary cells at B=5/6/7 recounted independently, zero\ndisagreements; all 7 B=9 rows agree with the pinned Cycle-922 checker.\n10/10 teeth fire.  Deterministic double run.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "cycle930: independent checker run cache + receipt (10/10 gates PASS, \u2026",
+        "oid": "ba09a1a46fee89e829487e0b92553a182a503497"
+      },
+      {
+        "authoredDate": "2026-08-05T06:47:35Z",
+        "authors": [
+          {
+            "email": "noreply@anthropic.com",
+            "id": "MDQ6VXNlcjgxODQ3",
+            "login": "claude",
+            "name": "Claude Opus"
+          }
+        ],
+        "committedDate": "2026-08-05T06:47:35Z",
+        "messageBody": "\u2026ceipt)\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "messageHeadline": "physics: certify the third-pair/RC-3 block (Cycle 930, note + ship re\u2026",
+        "oid": "ad6ff6b310dfe356656110375a174e4410b28ea9"
+      }
+    ],
+    "headRefName": "physics-loop/toe-time-blockT7-20260802",
+    "headRefOid": "ad6ff6b310dfe356656110375a174e4410b28ea9",
+    "isDraft": false,
+    "number": 6000,
+    "state": "OPEN",
+    "title": "[physics-loop][review-loop] toe-time blockT7 (STACKED on #5996) \u2014 Cycle 930: bounded theorem \u2014 the third pair's shadow derived; RC-3 measured open on the dynamical boundary"
+  },
+  "raw_boundary": "f65501b1ac77ff1cfdefc899a115e6da48af870a",
+  "selected": [
+    {
+      "path": "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c12a05079f0b8c691a726c017edb817329efc499",
+        "sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e",
+        "bytes": 12692,
+        "recovery": "blobs/c12a05079f0b8c691a726c017edb817329efc499"
+      },
+      "current_main": null
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "d4e9755853b526a486471edf5bf015e11b1987e3",
+        "sha256": "55f0c16f7da54056e1b1bc5e0661b75e6486c65b0c470062563ef24369d4c666",
+        "bytes": 81685,
+        "recovery": "blobs/d4e9755853b526a486471edf5bf015e11b1987e3"
+      },
+      "current_main": null
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.txt",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "bc4f2d09eca25163de24ff8d177bb6234bd76f0f",
+        "sha256": "437fec1f8d8d5f45ab95818d6edeb5d4cd2276d7e2b71f86cde9d0702adc87fe",
+        "bytes": 33308,
+        "recovery": "blobs/bc4f2d09eca25163de24ff8d177bb6234bd76f0f"
+      },
+      "current_main": null
+    },
+    {
+      "path": "outputs/third_pair_rc3_block_cycle930_ship_receipt_2026_07_28.json",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "ead9dee1660abb5a7f7fe84dd604a3b065049fd9",
+        "sha256": "362fd3ea487540387b29682c37e119561889d466d87a672cdf0f2a356167eee4",
+        "bytes": 4452,
+        "recovery": "blobs/ead9dee1660abb5a7f7fe84dd604a3b065049fd9"
+      },
+      "current_main": null
+    },
+    {
+      "path": "outputs/third_pair_rc3_cycle930_receipt_2026_07_28.json",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "0aaf4442470dac362d490adf5f093bb512e30b89",
+        "sha256": "a865ebc7c9ce2a03306c33a636f7583cadc0f3bc9ec3abfea0cac0491ae902a2",
+        "bytes": 72477,
+        "recovery": "blobs/0aaf4442470dac362d490adf5f093bb512e30b89"
+      },
+      "current_main": null
+    },
+    {
+      "path": "outputs/third_pair_rc3_independent_check_cycle930_receipt_2026_07_28.json",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "4dfac9cb9ee9d5f68ebb28d28e4a81755de3101c",
+        "sha256": "a05795d4d902bf9d1261dd2d448fff8f0bd2de1d6d38023d72a35ea66c562955",
+        "bytes": 46930,
+        "recovery": "blobs/4dfac9cb9ee9d5f68ebb28d28e4a81755de3101c"
+      },
+      "current_main": null
+    },
+    {
+      "path": "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "1b163d8cf59d6143fa3bfd83a170e805f3e7d0c0",
+        "sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92",
+        "bytes": 101626,
+        "recovery": "blobs/1b163d8cf59d6143fa3bfd83a170e805f3e7d0c0"
+      },
+      "current_main": null
+    },
+    {
+      "path": "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py",
+      "raw": null,
+      "head": {
+        "mode": "100644",
+        "blob": "4ddfe42be4993593d328b13fe375225f4a0fa976",
+        "sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab",
+        "bytes": 59378,
+        "recovery": "blobs/4ddfe42be4993593d328b13fe375225f4a0fa976"
+      },
+      "current_main": null
+    }
+  ],
+  "intermediate_versions": [
+    {
+      "path": "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py",
+      "mode": "100644",
+      "blob": "39bd7dea4ddadc8c9dfdaeefb4e53ddf5b49d462",
+      "sha256": "278b9e663a1490c39c4a34a898d9e50717917722d03df7f4288bf47d8e385586",
+      "bytes": 100218,
+      "recovery": "blobs/39bd7dea4ddadc8c9dfdaeefb4e53ddf5b49d462"
+    },
+    {
+      "path": "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py",
+      "mode": "100644",
+      "blob": "e79d0655b9b92f50c6740eff74b681f71a0736b6",
+      "sha256": "f8e7cafabfb62448d1759bb767fd164b0cb9a56828f48a4eae2c6f346ab7aa94",
+      "bytes": 58128,
+      "recovery": "blobs/e79d0655b9b92f50c6740eff74b681f71a0736b6"
+    },
+    {
+      "path": "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py",
+      "mode": "100644",
+      "blob": "e7b6ad1ce2353c66e9eed2582ed1f083e612724e",
+      "sha256": "878728d3a11fc1231cd3f0ad2974fd3359b146db765ca4df01f584cc980c2428",
+      "bytes": 55840,
+      "recovery": "blobs/e7b6ad1ce2353c66e9eed2582ed1f083e612724e"
+    }
+  ]
+}

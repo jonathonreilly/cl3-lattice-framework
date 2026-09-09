@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle895_t_retirement_independent_check_2026_07_28.py
+runner_sha256: 6adb500642d6cff89046f66b1b43927275562a8581247d514c92ae702b0fd893
+input_fingerprint_sha256: e93ba03e4514bfc48b160e955f81c719bd18fc3e6c168f7014913b88e566cb7e
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.84
+status: ok
+----- stdout -----
+{"details": {"actual_receipt_controls": {"baseline": true, "changed_classification_rejected": true, "changed_count_rejected": true, "changed_state_rejected": true}, "actual_terminal_controls": {"clean": true, "empty": false, "failed": false, "refuted": false}, "partition_counts": {"all": 6, "never": 1146}, "root_counts": {"-1": 30, "0": 84, "1": 30}, "threshold_rows": [{"above_0_7": true, "deleted_norm2": "8", "full_norm2": "0", "nonzero": true, "t": "0"}, {"above_0_7": false, "deleted_norm2": "1/125000", "full_norm2": "0", "nonzero": true, "t": "999/1000"}, {"above_0_7": false, "deleted_norm2": "0", "full_norm2": "0", "nonzero": false, "t": "1"}, {"above_0_7": true, "deleted_norm2": "8", "full_norm2": "0", "nonzero": true, "t": "2"}]}, "refutations": []}
+[PASS] independent_s_coordinate_matches_all_supports
+[PASS] exact_partition_counts
+[PASS] actual_threshold_differs_from_nonzero
+[PASS] clean_baseline_and_changed_operands
+[PASS] actual_terminal_rejects_failure_empty_refutation
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

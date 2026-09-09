@@ -1,0 +1,153 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "title": "Current source and independent-checker closure is not a valid packet",
+    "anchors": [
+      {
+        "path": "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py",
+        "line": 119,
+        "line_text": "AUDIT_INPUT_PATHS = tuple(sorted(PINS))",
+        "source_sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92"
+      },
+      {
+        "path": "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py",
+        "line": 91,
+        "line_text": "AUDIT_INPUT_PATHS = tuple(sorted(PINS))",
+        "source_sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab"
+      },
+      {
+        "path": "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "line": 181,
+        "line_text": "### Imports",
+        "source_sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e"
+      }
+    ],
+    "finding": "Both producers declare tuple(sorted(PINS)), rejected by the actual literal input parser. With all surviving current inputs present, both source checks return runner_declared_inputs_invalid and both original copied caches return input_mismatch. Both real helper APIs find46 inherited static modules but omit the named independent checker. The21 union pins include absent922/889/881 inputs and superseded891/879 bytes; own-note and current memo are not bound.",
+    "repair": "Preserve original inputs and historical results, retain only explicitly justified current execution/proof closure, declare literal complete inputs and guard own note/current premises. Include the independent checker through both actual note-derived consumers. Do not overwrite corrected main parents or make a historical controller campaign active authority merely to satisfy old pins. A self-contained finite station/detector packet is a possible narrow repair.",
+    "evidence": [
+      "ACTUAL_CONSUMERS_COMPLETE_OVERLAY.json",
+      "PIN_CLOSURE.json",
+      "FINAL_INPUT_CLOSURE.json"
+    ]
+  },
+  {
+    "id": "F2",
+    "priority": "P2",
+    "title": "Last-clean detector tail is conflated with whole-stretch tail",
+    "anchors": [
+      {
+        "path": "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py",
+        "line": 561,
+        "line_text": "    for period in periods:",
+        "source_sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92"
+      },
+      {
+        "path": "scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py",
+        "line": 638,
+        "line_text": "    need = MIN_PERIOD_REPEATS * period",
+        "source_sha256": "afe78fdfe466724686b4a42d50893e1a0c5b41dc6c58aea27a765f5c8576cb92"
+      },
+      {
+        "path": "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py",
+        "line": 479,
+        "line_text": "    for period in periods:",
+        "source_sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab"
+      },
+      {
+        "path": "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py",
+        "line": 650,
+        "line_text": "                    last = length - 1",
+        "source_sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab"
+      },
+      {
+        "path": "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "line": 111,
+        "line_text": "cell) presents the full configuration 8 times \u2014 width equality,",
+        "source_sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e"
+      },
+      {
+        "path": "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py",
+        "line": 990,
+        "line_text": "    tail = pooled_scores.get(\"tail_window_P_exact\", {})",
+        "source_sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab"
+      }
+    ],
+    "finding": "The detector and R3 refusal use last=mask.bit_length()-1 (last clean tick); the checker predictor uses last=length-1 (whole stretch end). Its F1=.1347 and recall=.5311 therefore do not qualify the same R3 component. The note repeatedly describes terminal ticks of the stretch. Exact original component functions accept period2 for clean ticks0,2,...,14 in length18, while that stretch terminal five-tick window is not period2-exact.",
+    "repair": "Define and name the original last-clean convention explicitly. Separate the historical whole-stretch feature and score from R3, or recompute only a genuinely matching score on justified retained data. Preserve original numeric evidence rather than silently relabeling it as a different operand. R2 is likewise distance to last clean, not simply declared stretch length; refusal counts are shape-incidence counts.",
+    "evidence": [
+      "controls.stdout",
+      "CONTROL_EXECUTION.json",
+      "HISTORICAL_EVIDENCE_SUMMARY.json"
+    ]
+  },
+  {
+    "id": "F3",
+    "priority": "P2",
+    "title": "Finite failures do not prove an arithmetic impossibility or the cause of zero episodes",
+    "anchors": [
+      {
+        "path": "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "line": 30,
+        "line_text": "rather than being any function of (B, b).",
+        "source_sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e"
+      },
+      {
+        "path": "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "line": 204,
+        "line_text": "  arithmetic can close it;",
+        "source_sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e"
+      },
+      {
+        "path": "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "line": 214,
+        "line_text": "because its terminal station lives one tick downstream of another",
+        "source_sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e"
+      },
+      {
+        "path": "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "line": 221,
+        "line_text": "discriminator fails in both directions, the best statistic anyone",
+        "source_sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e"
+      },
+      {
+        "path": "docs/THIRD_PAIR_SHADOW_DERIVED_RC3_OPEN_CYCLE930_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "line": 225,
+        "line_text": "lane ends its window where honest lanes end: everything arithmetic",
+        "source_sha256": "9d0f2cfcebc84ded27c26f329d1c7aa82e2e1b2314ec691a5807536959fda31e"
+      }
+    ],
+    "finding": "The note concludes no function of(B,b)/nothing in the lane arithmetic can close RC3, that the best statistic anyone can build from widths is mediocre, and that the shadow causes the zero. Only six specified features and finite supplied-controller corpora were tested; the text itself correctly labels TP4 measured, not derived. Station crossing of another row is not by itself an actual earlier Record/readout.",
+    "repair": "Retain TP1\u2013TP3 station geometry, historical finite counts, the tested equal-width counterexamples and stable-periodicity identity. Withdraw unrestricted arithmetic-exhaustiveness, causal-zero and physical realization/clock implications absent a further proof. Explicitly separate this finite controller/detector from current Record formation/readout and kinetic-isotropy primitive authority. Keep B8/B9 nonblind and B>=10 unbuilt. Carry the odd/even extra-row exception consistently in active summaries.",
+    "evidence": [
+      "PROOF_REVIEW.md",
+      "controls.stdout",
+      "HISTORICAL_EVIDENCE_SUMMARY.json"
+    ]
+  },
+  {
+    "id": "F4",
+    "priority": "P2",
+    "title": "The claimed nonconsecutive widening tooth does not exercise that distinction",
+    "anchors": [
+      {
+        "path": "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py",
+        "line": 1244,
+        "line_text": "    inject = t1 + 3",
+        "source_sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab"
+      },
+      {
+        "path": "scripts/frontier_cycle930_third_pair_rc3_independent_check_2026_07_28.py",
+        "line": 1265,
+        "line_text": "        \"fires\": wide_hit,",
+        "source_sha256": "ac3982f96335427dfa3c65870cc064eaea92be99c320bbc265a652dbd3ab8dab"
+      }
+    ],
+    "finding": "The plant adds t1+3 to an existing dirty run at t1,t1+1,t1+2, extending that run. The original receipt explicitly records strict_definition_also_sees_it=true; fires only checks wide_hit. The actual statement block reproduces that false-positive control.",
+    "repair": "Use an actually separated intervening dirty run and require wide_hit AND NOT strict_hit. The bounded t1+4 control already witnesses this distinction; a widened-to-strict source fault must fail the relevant test. Preserve the original all-green result as historical flawed validation.",
+    "evidence": [
+      "controls.stdout",
+      "HISTORICAL_EVIDENCE_SUMMARY.json"
+    ]
+  }
+]

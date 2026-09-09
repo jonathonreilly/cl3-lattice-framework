@@ -1,0 +1,521 @@
+{
+  "AUDIT_INPUT_PATHS": [
+    "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py",
+    "outputs/tracelessness_provenance_cycle873_receipt_2026_07_28.json",
+    "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py",
+    "outputs/unit_grading_provenance_cycle876_receipt_2026_07_28.json",
+    "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py",
+    "outputs/unit_grading_independent_check_cycle876_receipt_2026_07_28.json",
+    "scripts/frontier_cycle880_visible_point_physics_2026_07_28.py",
+    "outputs/visible_point_physics_cycle880_receipt_2026_07_28.json",
+    "scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py",
+    "scripts/full_fock_unit_weight_two_source_cycle325_2026_07_18.py",
+    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
+    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "backlog_rows": [
+    {
+      "classification": "BROKEN_OFF_UNIT",
+      "exact_truth_set": null,
+      "id": "BK316_NAIVE_DIRECTION_SUM_RECOIL_FAILS",
+      "script": "scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "BK325_UNIT_WEIGHT_VECTOR_LEDGER_IS_EXACT",
+      "script": "scripts/full_fock_unit_weight_two_source_cycle325_2026_07_18.py"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "the lawful line minus {1}",
+      "id": "BK325_DELETING_THE_AUXILIARY_BREAKS_BALANCE",
+      "script": "scripts/full_fock_unit_weight_two_source_cycle325_2026_07_18.py"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "BK876C_R9_FORCES_A_UNIQUE_GRADING",
+      "script": "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "BK876C_R9_SOLUTION_IS_NOT_THE_UNIT_GRADING",
+      "script": "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "{0}",
+      "id": "BK876C_LAWFUL_AT_UNIT_GRADING",
+      "script": "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "BK876C_ONSET_BY_ROOT_EXTRACTION",
+      "script": "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py"
+    }
+  ],
+  "branch_pins": {
+    "cycle868_block_commit": "9506d38958",
+    "cycle868_runner_commit": "3363c73f64",
+    "cycle872_block_commit_sibling_branch": "da7e6d05cb",
+    "cycle872_checker_commit_sibling_branch": "48e70ceb56",
+    "cycle872_present_in_this_worktree": false,
+    "cycle872_runner_commit_sibling_branch": "4cb64e4792",
+    "cycle873_block_commit": "d38a5ae809",
+    "cycle873_checker_commit": "35e52e8ad7",
+    "cycle873_runner_commit": "4ff7db1e1b",
+    "decision_surface_pr": "#5931 (Cycle 876, blockG5)",
+    "owner_directive": "RETIRE-BY-GENERALISATION is to be executed as a derivation; no decision is to be asked"
+  },
+  "broken_count": 1,
+  "census_hit_row_digest": "201fc93f460a9f8b7d34ebf123c418c17acb9e8b6f2ef3de37827abf7d522a86",
+  "class_sizes": {
+    "NEVER": 1146,
+    "ONSET": 60,
+    "U": 6,
+    "Z": 84
+  },
+  "classification_counts": {
+    "CONSUMER": 108,
+    "MENTION_ONLY": 5133,
+    "NON_CONSUMER": 3249
+  },
+  "classification_table": [
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C873_TRACE_IS_THE_CONSERVATION_DEFECT",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "the lawful line minus {-1, 1}",
+      "id": "C873_EVERY_LAWFUL_SUPPORT_IS_TRACELESS",
+      "residue_shape": "REQUIRES_AN_EXCLUSION_NOT_A_CHOICE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C873_LAWFUL_GRADINGS_ARE_A_SEGMENT",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C873_WITNESS_IS_TRACE_BEARING",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "the lawful line minus {-1, 1}",
+      "id": "C873_SIGN_WALL_UNQUALIFIED",
+      "residue_shape": "REQUIRES_AN_EXCLUSION_NOT_A_CHOICE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C876_RESIDUE_IS_ONE_RATIONAL",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C876_SIGMA_ONSET_IS_EXACTLY_PLUS_MINUS_ONE",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C876_UNIT_IS_THE_UNIQUE_MAXIMISER",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C876_TRACE_IS_GRADING_INDEPENDENT",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "{0}",
+      "id": "C876_LAWFUL_COUNT_IS_NINETY",
+      "residue_shape": "REQUIRES_AN_EXACT_CHOICE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C876_SIGMA_VISIBILITY_TRACKS_THE_TRACE",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C876_O3_IS_SIGMA_TIMES_THE_CONFORMAL_CHANNEL",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C880_LANDED_FAMILY_SIZE",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C880_LANDED_FAMILY_HAS_ZERO_CONFORMAL_CHANNEL",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C880_ALL_SIX_OBJECTS_BLIND_ON_THE_LANDED_FAMILY",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "the lawful line minus {-1, 1}",
+      "id": "C880_RESPONSE_SURFACE_CANNOT_SEE_SIGMA_UNQUALIFIED",
+      "residue_shape": "REQUIRES_AN_EXCLUSION_NOT_A_CHOICE"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "the lawful line minus {0}",
+      "id": "C880_BLIND_LOCUS_IS_EXACTLY_THE_LANDED_FAMILY",
+      "residue_shape": "REQUIRES_AN_EXCLUSION_NOT_A_CHOICE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C880_LANDED_320_IDENTITIES",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "{1}",
+      "id": "C880_318_TWO_SECTOR_SUPPORT_LAWFUL",
+      "residue_shape": "REQUIRES_AN_EXACT_CHOICE"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "{1}",
+      "id": "C880_873_WITNESS_ON_SHELL",
+      "residue_shape": "REQUIRES_AN_EXACT_CHOICE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C880_LOCUS_IS_A_SEGMENT_NOT_A_POINT",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_UNIFORM",
+      "exact_truth_set": "the whole lawful line",
+      "id": "C880_TOP_SIGMA_DEGREE",
+      "residue_shape": "HOLDS_EVERYWHERE"
+    },
+    {
+      "classification": "T_SENSITIVE",
+      "exact_truth_set": "the lawful line minus {0}",
+      "id": "C880_BLIND_LOCUS_SIZE_MATCHES_THE_LANDED_FAMILY",
+      "residue_shape": "REQUIRES_AN_EXCLUSION_NOT_A_CHOICE"
+    }
+  ],
+  "classification_table_digest": "69d4b5457160d9983c998d3205110013a0aa2b620eb365ab14ebe90b72e9a2c9",
+  "consumer_count": 108,
+  "consumer_paths_sorted": [
+    "scripts/ROUTE1_DIRECT_CAR_COMPILER_CYCLE231_2026_07_17.py",
+    "scripts/ROUTE3_STAGGERED_CAR_COMPILER_CYCLE233_2026_07_17.py",
+    "scripts/acphilambda_occupancy_grain_rule_class_universality_2026_07_11.py",
+    "scripts/audit_companion_qubit_link_u2_connection_algebra_bounded_2026_06_04.py",
+    "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py",
+    "scripts/bare_metal_record_minimum_viable_probes_2026_07_13.py",
+    "scripts/berezin_detc_detr_fork_2026_06_04.py",
+    "scripts/blind_residual_atom_packing_one_law_schema_probe_2026_07_14.py",
+    "scripts/carried_internal_species_source_field_ledger_repair_2026_07_17.py",
+    "scripts/carried_relative_extended_green_branch_hunt_2026_07_17.py",
+    "scripts/carried_site_reservoir_interface_mapping_2026_07_17.py",
+    "scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py",
+    "scripts/carried_source_retarded_lattice_execution_2026_07_17.py",
+    "scripts/cl3_a3_r5_hostile_review_2026_05_08_r5hr.py",
+    "scripts/cl3_a3_route3_anomaly_inflow_2026_05_08_r3.py",
+    "scripts/cl3_closure_c_l1c_2026_05_10_cL1c.py",
+    "scripts/cl3_koide_bae_probe_f1_canonical_functional_2026_05_09_probe18.py",
+    "scripts/coherent_even_odd_sector_join_cycle252_2026_07_17.py",
+    "scripts/common_acoustic_cone_mass_cycle218_2026_07_16.py",
+    "scripts/complete_candidate_lstar_assembly_cycle41_2026_07_14.py",
+    "scripts/constructive_constitutional_delta_audit_cycle83_2026_07_14.py",
+    "scripts/contact_close_typed_record_dag_cycle287_2026_07_17.py",
+    "scripts/cycle67_endpoint_bdh_composition_cycle73_2026_07_14.py",
+    "scripts/cycle67_terminal_bdh_rebind_cycle72_2026_07_14.py",
+    "scripts/distinguishable_antisymmetric_fock_compiler_cycle239_2026_07_17.py",
+    "scripts/distributed_phase_field_car_compiler_cycle263_2026_07_17.py",
+    "scripts/exact_law_irreducible_content_independence_tournament_2026_07_14.py",
+    "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py",
+    "scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py",
+    "scripts/frontier_companion_bank_even_exchange_port_2026_07_28.py",
+    "scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle716_same_code_six_port_admission_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py",
+    "scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py",
+    "scripts/frontier_cycle749_response_harness_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle803_decoder_derivation_2026_07_28.py",
+    "scripts/frontier_cycle803_decoder_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py",
+    "scripts/frontier_cycle873_provenance_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py",
+    "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py",
+    "scripts/frontier_cycle880_visible_point_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle880_visible_point_physics_2026_07_28.py",
+    "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+    "scripts/frontier_cycle895_t_retirement_2026_07_28.py",
+    "scripts/frontier_depth_weight_distribution_2026_06_12.py",
+    "scripts/frontier_finite_flat_link_even_car_support_census_2026_07_23.py",
+    "scripts/frontier_hw1_second_order_return_shape_theorem.py",
+    "scripts/frontier_koide_equivariant_channel_space_holomorphy_2026_06_11.py",
+    "scripts/frontier_koide_faithfulness_rotation_scalar_excluded.py",
+    "scripts/frontier_koide_matter_attachment_reduces_to_ks.py",
+    "scripts/frontier_poisson_exhaustive_uniqueness.py",
+    "scripts/frontier_proton_lifetime_derived.py",
+    "scripts/frontier_s2_breaking_primitive_survey.py",
+    "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+    "scripts/frontier_teleportation_apparatus_dynamics_closure.py",
+    "scripts/frontier_teleportation_axiom_closure_checks.py",
+    "scripts/frontier_teleportation_native_axioms_scope_split_2026-05-16.py",
+    "scripts/frontier_teleportation_native_record_apparatus.py",
+    "scripts/frontier_teleportation_native_record_apparatus_scope_split_2026-05-16.py",
+    "scripts/frontier_teleportation_record_field_closure.py",
+    "scripts/frontier_two_star_qutrit_physical_update_integration_2026_07_25.py",
+    "scripts/frontier_yt_class_3_susy_2hdm.py",
+    "scripts/full_fock_unit_weight_two_source_cycle325_2026_07_18.py",
+    "scripts/genuine_staggered_parity_shuttle_cycle260_2026_07_17.py",
+    "scripts/gl_f_multiloop_cocycle_check_2026_06_10.py",
+    "scripts/global_q2_simultaneous_two_source_cycle328_2026_07_18.py",
+    "scripts/guided_cycle67_bdh_rebind_cycle76_2026_07_14.py",
+    "scripts/haegeman_parity_sector_gauging_cycle245_2026_07_17.py",
+    "scripts/hardcore_global_q2_mediator_cycle331_2026_07_18.py",
+    "scripts/joint_endpoint_bdh_rebind_cycle63_2026_07_14.py",
+    "scripts/kinetic_isotropy_3d_simultaneous_tick_2026_06_10.py",
+    "scripts/kinetic_isotropy_primitive_irreducibility_support_2026_06_09.py",
+    "scripts/minimum_constitutional_content_exhaustion_ledger_2026_07_14.py",
+    "scripts/official_seed_to_rail_nucleation_cycle53_2026_07_14.py",
+    "scripts/p_flux_finite_species_density_check_2026_06_10.py",
+    "scripts/p_flux_point_zero_set_check_2026_06_10.py",
+    "scripts/p_flux_selection_check_2026_06_10.py",
+    "scripts/parity_doubling_spectator_compiler_cycle248_2026_07_17.py",
+    "scripts/per_site_su2_spin_half_check.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18.py",
+    "scripts/physical_cycle269_four_cell_star_cycle324_2026_07_18.py",
+    "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+    "scripts/physical_event_to_append_commit_candidate_cycle326_2026_07_18.py",
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_source_insertion_selection_backreaction_cycle572_carrier_support_2026_07_22.py",
+    "scripts/poisson_self_gravity_loop.py",
+    "scripts/post_cycle105_constitutional_minimality_smuggle_audit_cycle110_2026_07_15.py",
+    "scripts/post_cycle94_operational_completeness_audit_cycle96_2026_07_15.py",
+    "scripts/probe_grassmann_forcing_dependency_chain.py",
+    "scripts/proper_cubic_local_admission_relations_conditional_port_finite_grade_block_2026_07_23.py",
+    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py",
+    "scripts/protected_matter_transport_cycle44_2026_07_14.py",
+    "scripts/qca_isometry_square_pyramid_cycle241_2026_07_17.py",
+    "scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py",
+    "scripts/shared_qab_open_commit_comb_conditional_scratch_2026_07_14.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py",
+    "scripts/stationary_dressed_carried_source_relative_mode_2026_07_17.py",
+    "scripts/stationary_local_first_event_history_cycle224_2026_07_17.py",
+    "scripts/strict_compiler_toe_ledger_cycle107_2026_07_15.py",
+    "scripts/strict_nn_record_law_compiler_cycle43_2026_07_14.py",
+    "scripts/three_escape_state_compiler_tournament_cycle242_2026_07_17.py",
+    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py"
+  ],
+  "cycle": 895,
+  "decision_surface_dissolves": true,
+  "decision_surface_state": "DISSOLVED_ON_THE_CHOICE_CRITERION_ONLY",
+  "exceptional_set": [
+    "-1",
+    "0",
+    "1"
+  ],
+  "expected_git_blobs": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "4a863da1f3f255354839277271a3a69a5c205133",
+    "outputs/tracelessness_provenance_cycle873_receipt_2026_07_28.json": "cc4059a3050e2cbe7a00f1f449f05fa8f0dd758a",
+    "outputs/unit_grading_independent_check_cycle876_receipt_2026_07_28.json": "4345656b18b6958f536b1b593ecf9889a127d6a5",
+    "outputs/unit_grading_provenance_cycle876_receipt_2026_07_28.json": "bb49938e1fa9552b2d8d55f62032e710b454f58b",
+    "outputs/visible_point_physics_cycle880_receipt_2026_07_28.json": "4cd1d247523da5ee69713244f8f2022149983252",
+    "scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py": "7a3c24a5fe82001886aa00afa20a87cc06c5817e",
+    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py": "c64dd97a3034ccbedc2603db4dacc1c80acfd952",
+    "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py": "0c5893f9b0c277fe864ed71efb38ba2c59d52d04",
+    "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py": "f61f0d2b7869672d66d346ffb7679e697c6d8940",
+    "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py": "58a709ebc3cd2f6a5a2220fdaebd970c4694495f",
+    "scripts/frontier_cycle880_visible_point_physics_2026_07_28.py": "db0472a8fe3e9e93f3f31f8e0b5ac0fd5c6630f8",
+    "scripts/full_fock_unit_weight_two_source_cycle325_2026_07_18.py": "fcf14f39b53ec77cd0d3e0d3f22de6b7a6df6e0d",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "0be8d83ec8ed874ff12e2092dc47121b8030a5bc",
+    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py": "7672380148d79f22a4ab9b2700121aac1b097004",
+    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "c95eb9738409c3ffe20f8b90a7ab25e6dc5843a0"
+  },
+  "expected_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697",
+    "outputs/tracelessness_provenance_cycle873_receipt_2026_07_28.json": "e666bc548393e629aee3e865e188487eb7ac08071c6033fce3fa0202964cbfae",
+    "outputs/unit_grading_independent_check_cycle876_receipt_2026_07_28.json": "9fff8cf30d152f91abea56ce6d91568ee3d7a19cf7c6d03269cff198a0578ce6",
+    "outputs/unit_grading_provenance_cycle876_receipt_2026_07_28.json": "338f7e085473e87192acf9b881978939b08a5a52d3d63442e3647b022ea18b78",
+    "outputs/visible_point_physics_cycle880_receipt_2026_07_28.json": "2046a4d73a6bab85d829abe11b41c15c3efb6cc77bea6ff253df749035d6fd83",
+    "scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py": "87830a6aa8d05787d8e4f81bdf21ef1d92a8ad0252b9498000fb27c7ff700d65",
+    "scripts/frontier_cycle868_response_sign_census_2026_07_28.py": "e09226e35a58cd52e2d4f61516f6e2a64cdebb7f4c20893307a1f3d2ff3f4ebb",
+    "scripts/frontier_cycle873_tracelessness_provenance_2026_07_28.py": "08e92fde118415f32043c4fc154f8cc5aaca66af18704c024f89cde5445662de",
+    "scripts/frontier_cycle876_grading_independent_check_2026_07_28.py": "95acbb56e2c2e3d54fd04c80d444716c4620734849d8048c008b9d582722ce1f",
+    "scripts/frontier_cycle876_unit_grading_provenance_2026_07_28.py": "1e13e4c6332c7d6c7798fb4d7366db8a94037eefba6e77ac1c3dd0d269cf7b39",
+    "scripts/frontier_cycle880_visible_point_physics_2026_07_28.py": "e9d6f8a1483b87f7b0520ebe04356fcf4910bc5a25d1f7af97555644892d6ee4",
+    "scripts/full_fock_unit_weight_two_source_cycle325_2026_07_18.py": "32ee958fe9dc5f5c5aa41b5593cb66a529d7ae07ca8b556cff2b45f7f33374dc",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py": "3c1575c99622c0874ab42730494d615fbe1a2b867975e5bf048fd2a4a8af9d56",
+    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"
+  },
+  "falsifier_recovered": true,
+  "files_scanned": 14190,
+  "finer_criterion_dissolves": true,
+  "load_bearing_residue": [
+    "C880_BLIND_LOCUS_IS_EXACTLY_THE_LANDED_FAMILY",
+    "C880_BLIND_LOCUS_SIZE_MATCHES_THE_LANDED_FAMILY"
+  ],
+  "needle_count": 67,
+  "needle_hit_files": 8490,
+  "needles": [
+    "(1, 1 + t, 1 - t)",
+    "(1, 1, 1)",
+    "(1, 2, 0)",
+    "auxiliary",
+    "auxiliary direction",
+    "auxiliary direction has",
+    "auxiliary law",
+    "auxiliary_weights",
+    "coefficient",
+    "coefficients",
+    "coefficients per",
+    "coefficients per sector",
+    "disclaims weighting",
+    "explicitly disclaims weighting",
+    "free coefficients",
+    "free coefficients per",
+    "grading",
+    "grading appears",
+    "grading exactly",
+    "grading w",
+    "gradings",
+    "lawful grading",
+    "lawful gradings",
+    "matter",
+    "matter carrier",
+    "mediator_weight",
+    "p weight",
+    "p_matter",
+    "p_matter uses",
+    "p_matter uses unit",
+    "p_mediator",
+    "p_mediator uses",
+    "p_mediator uses twice",
+    "per sector",
+    "r sector",
+    "relative coefficient",
+    "s zero sector",
+    "sector",
+    "sector grading",
+    "sector grading w",
+    "sector index",
+    "sector sum",
+    "sector trace",
+    "sectors",
+    "supplied auxiliary",
+    "supplied auxiliary law",
+    "supplied sectors",
+    "unit grading",
+    "unit p weight",
+    "unit sector",
+    "unit sector grading",
+    "unit weight",
+    "unit-weight",
+    "unit_mediator_weight_p_commutator",
+    "unit_weights",
+    "vector p_matter",
+    "w_matter",
+    "w_matter d",
+    "weight",
+    "weight operator",
+    "weight operator q",
+    "weight vector",
+    "weight vector p_matter",
+    "weighting",
+    "wrong_weight_commutator",
+    "zero sector",
+    "zero sector trace"
+  ],
+  "off_grid_sensitivity_recovered": true,
+  "onset_values": [
+    "-1",
+    "1"
+  ],
+  "r9_selects_t": "1",
+  "residue_dispositions": {
+    "ABOUT_A_ROUTE_THE_LADDER_DOES_NOT_USE": [
+      "C880_318_TWO_SECTOR_SUPPORT_LAWFUL",
+      "C880_873_WITNESS_ON_SHELL"
+    ],
+    "A_CONSTANT_THAT_RESTATES_NOT_A_CLAIM_THAT_FAILS": [
+      "C876_LAWFUL_COUNT_IS_NINETY",
+      "BK876C_LAWFUL_AT_UNIT_GRADING"
+    ],
+    "A_NEGATIVE_CONTROL_NOT_A_LADDER_RESULT": [
+      "BK325_DELETING_THE_AUXILIARY_BREAKS_BALANCE"
+    ],
+    "LOAD_BEARING_RESIDUE": [
+      "C880_BLIND_LOCUS_IS_EXACTLY_THE_LANDED_FAMILY",
+      "C880_BLIND_LOCUS_SIZE_MATCHES_THE_LANDED_FAMILY"
+    ],
+    "SUPERSEDED_BY_A_T_UNIFORM_ROW_WITH_ITS_SCOPE_KEPT": [
+      "C873_EVERY_LAWFUL_SUPPORT_IS_TRACELESS",
+      "C873_SIGN_WALL_UNQUALIFIED",
+      "C880_RESPONSE_SURFACE_CANNOT_SEE_SIGMA_UNQUALIFIED"
+    ]
+  },
+  "restriction_rows_agreeing": 11,
+  "restriction_rows_disagreeing": [],
+  "retired_count": 19,
+  "retirement_statement": "The gravity ladder's grading-consuming content splits cleanly. Everything it asserts about the LANDED family -- the Cycle-320 balance identities, the trace-equals-defect identity, the zero conformal channel, the six-object blindness census with its scope qualifier kept, the exact instrument law O3 = sigma C[Pe], the sigma-degree bound, the family size, and Cycle 325's unit-weight operator ledger -- holds at EVERY point of the lawful line, because the landed support family is exactly the set of configurations with A = 0 and B = 0, which is lawful for every t. Those results need no t-choice and are retired. What moves is of four kinds, none of which is a choice the ladder has to make: statements about the UNQUALIFIED lawful set (repaired by keeping the scope qualifier the T_UNIFORM row already carries); constants that restate with a different number; statements about the competing Cycle-318 two-sector route, which is on shell only at t = +1; and statements whose subject IS the parameter t.",
+  "rows_requiring_an_exact_choice_of_t": [],
+  "rows_requiring_only_an_exclusion": [
+    {
+      "exact_truth_set": "the lawful line minus {0}",
+      "id": "C880_BLIND_LOCUS_IS_EXACTLY_THE_LANDED_FAMILY"
+    },
+    {
+      "exact_truth_set": "the lawful line minus {0}",
+      "id": "C880_BLIND_LOCUS_SIZE_MATCHES_THE_LANDED_FAMILY"
+    }
+  ],
+  "sensitive_count": 10,
+  "sharpest_single_row": "C880_BLIND_LOCUS_IS_EXACTLY_THE_LANDED_FAMILY. Cycle 880 stated it AT t* = +1 and it is true there; generalised to the whole line it holds at every t EXCEPT t = 0. The reason is exact: the blind locus is the lift over the TRACELESS lawful supports, and traceless-and-lawful means A = 0 and tB = 0, so at t = 0 it is every A = 0 configuration and away from t = 0 it is exactly the landed six. The one load-bearing result that is still t-conditional is therefore conditional on the grading NOT being the unit grading -- the opposite of a choice that has to be made.",
+  "strict_criterion_dissolves": false,
+  "t_grid": [
+    "-1",
+    "0",
+    "1",
+    "1/2",
+    "-1/2",
+    "2",
+    "-3",
+    "7/13",
+    "-5/17",
+    "101/103",
+    "-1000/999",
+    "3/2"
+  ]
+}
