@@ -34,3 +34,15 @@ Sixthround: originalcommoncarrierproofcoldPASS442e3b3e plusrootliteralPauli/geom
 Checkpoint40:8064 complete canonical PASS6cc71e85; source4365a7cb,1217 isolated controls.8065 root full source review PASS after clarified exact frame/trace scope; sourcee2626b48. Node/Laplace PASSd1a4aa10 after explicit adjacent-swap gauge correction. Infinite gap PASS17d56392. Gaussian commutator and actual pilot source review pending; archived relative/locality partials are not promoted.
 
 Checkpoint42:8066 complete6cf94d32 and quarterconfirmation3c7721a6 PASS. Ward57b3407c, covariance8c310172, stationarytraceclass041748c1 andrank e30b6088 PASS attheirboundsource. Gaussian45rowpilot independently rootaccepted andauthorpostverified. Newquench/moment synthesis remains provisional.
+
+# Physics campaign — current SSH status
+
+Updated 2026-09-09T16:13:09.845622+00:00. Campaign active until September10 10:27:17UTC, subject usable quota. Thirty-three science PRs #8036–#8068 are delivered; none merged or formally audited by this campaign. PR8068 is OPEN/MERGEABLE at35cebc55, all70changedremote blobs verified. It proves a quantitative native pair-vacuum chart and positive reference anchor; alpha remains unknown. The erroneous coordination monitor remains paused.
+
+The B/Bprime positive-transform attempt completed ONCE: all four fixed s1,2 intervals meet1e-6 targets, actual widths1.4–1.8e-8. External10.41s, sampled whole-tree68,632,576B, all746oracles and31panels retained. Independent saved-data reconstructiona53c038a verified8940predicates plus36savedGauss checks, exactly matching all panels/tails/results without rerunning an oracle or integral. The full catalog is in this checkpoint. Uniform shared-node batch bounds and their independent review are also preserved; future poles still require collision and width certification.
+
+The sharper raw common-Gram test is UNLAUNCHED at preregistration. Worker a1558ad2 and root fc655302 have source and monitor PASS. Same28columns,168null checks, paired-pivot cap28 and conditional operator-error target<=.5; accepted sharper8scalarintervals replace the old coarse inputs. Resource contract: one inclusive30s384MiB attempt, root29.5s,worker29s, all partials/failure retained. Root independently verified metadata-only repair and all1921pins. Exact remote preregistration verification must precede launch. This is not an actual weighted impurity projector.
+
+The rational-time bridge independently passed: exact positive-band columns need at most7m shared extra seed directions per impurity; degree128 gives a polynomial truncation bound below1e-10 for time<=100/h. Actual certified projected moments, common signed contractions and total errors are not yet achieved. New hard work targets an inverse-free square-root carrier for the actual projector and a stronger stable reference Riccati chart. The fixed Green scalar milestone is under canonical review.
+
+All completed physical protocols stay completed. Fifty-two inactive worktrees removed after useful evidence preservation;58GiBfree. Original dirty and other-worker checkouts untouched. Lock expires17:24UTC; heartbeat active.

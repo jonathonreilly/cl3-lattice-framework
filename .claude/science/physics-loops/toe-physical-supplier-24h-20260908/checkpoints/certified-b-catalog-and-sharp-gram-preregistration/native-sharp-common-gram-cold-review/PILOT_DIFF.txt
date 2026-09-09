@@ -1,0 +1,52 @@
+--- 
++++ 
+@@ -3,26 +3,30 @@
+ from pathlib import Path
+ from core import Iv,assemble,compress
+ P=Path(__file__).resolve().parent
+-BASE=P.parents[1]
+-INPUT=BASE/'native-star-local-green-gram-run-41ebe'/'RESULT.json'
+-ACCEPTANCE=BASE/'native-star-local-green-gram-root-review'/'ROOT_ACCEPTANCE.json'
+-WORKER=BASE/'native-star-local-green-gram-run-41ebe'/'WORKER_COMPLETE.json'
+ def validate_inputs():
+- d=json.loads(INPUT.read_text());a=json.loads(ACCEPTANCE.read_text());w=json.loads(WORKER.read_text());h=hashlib.sha256(INPUT.read_bytes()).hexdigest()
+- if a['status']!='ACCEPTED_COMPLETE_FIXED_PILOT' or w['status']!='COMPLETE' or a['result_sha256']!=h or w['result_sha256']!=h:raise ValueError('accepted scalar binding')
+- if not d['all_width_targets_met'] or d['gram_matrix_computed'] or d['alpha_computed']:raise ValueError('input scope')
+- if [(r['s'],r['kind']) for r in d['rows']]!=[('1','A'),('1','B'),('2','A'),('2','B')]:raise ValueError('fixed rows')
+- data={}
+- for s in (1,2):
+-  rr=d['rows'][2*(s-1):2*s];values=[]
+-  for r in rr:
+-   if r['status']!='CERTIFIED_TARGET':raise ValueError('scalar status')
+-   for lo,hi in r['bounds']:
+-    v=Iv(lo,hi)
+-    if v.hi-v.lo>F(1,32):raise ValueError('scalar width')
+-    values.append(v)
+-  data[s]=tuple(values)
+- return data
++ manifest=json.loads((P/'ACCEPTED_INPUTS.json').read_text())
++ if manifest['status']!='BOUND_ACCEPTED_SCALARS':raise ValueError('unaccepted input manifest')
++ data={s:[] for s in (1,2)}
++ for kind,keys,target in [('A',('A','Aprime'),F(1,10**12)),('B',('B','Bprime'),F(1,10**6))]:
++  spec=manifest[kind];path=Path(spec['result']);raw=path.read_bytes();h=hashlib.sha256(raw).hexdigest()
++  if h!=spec['result_sha256']:raise ValueError('result pin')
++  acceptance=Path(spec['acceptance']);worker=Path(spec['worker'])
++  if hashlib.sha256(acceptance.read_bytes()).hexdigest()!=spec['acceptance_sha256'] or hashlib.sha256(worker.read_bytes()).hexdigest()!=spec['worker_sha256']:raise ValueError('receipt pin')
++  a=json.loads(acceptance.read_text());w=json.loads(worker.read_text());d=json.loads(raw)
++  if a['status']!=spec['accepted_status'] or a['result_sha256']!=h or w['result_sha256']!=h or w['status']!='COMPLETE':raise ValueError('accepted binding')
++  if d['alpha_computed'] is not False:raise ValueError('input scope')
++  for s in (1,2):
++   rows=[r for r in d['rows'] if r['s']==str(s)]
++   if len(rows)!=1:raise ValueError('pole membership')
++   row=rows[0]
++   if row['status']!='CERTIFIED_TARGET':raise ValueError('uncertified scalar')
++   for key in keys:
++    if len(row[key])!=2:raise ValueError('interval shape')
++    v=Iv(*row[key])
++    if v.hi-v.lo>target:raise ValueError('scalar width')
++    if row[key]!=spec['intervals'][str(s)][key]:raise ValueError('explicit interval binding')
++    data[s].append(v)
++ return {s:tuple(v) for s,v in data.items()}
+ 
+ def run(out):
+  out.mkdir();start=time.monotonic();stage='validate';rows=[]

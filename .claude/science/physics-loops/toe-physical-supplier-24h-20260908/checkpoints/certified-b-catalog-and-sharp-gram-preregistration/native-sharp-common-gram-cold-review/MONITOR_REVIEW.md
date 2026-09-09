@@ -1,0 +1,7 @@
+# Final sharp-Gram monitor cold review
+
+PASS for run_once.pyfc655302c1b00fa2ada11aea682524662b17bcf3ba4912b9b9aaf36308f6e26d and ROOT_FREEZEffc2863cc9de21022f6245aee0c2045f1b1b959d4f4272f5df948b4fb2357a41. Full monitor source was read at its preceding44b binding; final delta changes only worker freeze/output suffix to reviewed a1558. Actual final hashes match. No launch or matrix call performed by this reviewer.
+
+One root plus one childless stdlib worker is monitored with startup-inclusive29.5s timer, fresh output and exclusive STARTED/stdout/stderr. Source and loaded-origin pins are checked before/after. Bounded ps calls include root/worker descendants in sampled384MiB; failure kills the worker process group and waits, preserving logs/partial output. The known set is not separately killed, but the reviewed worker creates no subprocesses. This is not a generic escaped-descendant guarantee. External shell receipt reconciliation is still required after final receipt writing, as marked pending.
+
+Acceptance verifies completion/result hash, declared scope,168 null checks, initial trace ordering/positivity, sequential pair counts, positive lower bounds for used pivots, exact error-square formula and honest target/stall/cap status. It checks all28x28 interval shapes and symmetric/skew identities and finite positive nested times. It does not independently recompute the full physical Gram or greedy pivot arithmetic; those are source-bound operations and subsequent data review responsibilities. No false actual-projector claim appears.
