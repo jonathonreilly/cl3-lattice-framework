@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/regge_tt_observable_refinement_independent_check_2026_09_09.py
+runner_sha256: d4a5e5bd0c74c99abd074edaf3bfcd73f0cc32d335e3653ec88c77522e2af0c9
+input_fingerprint_sha256: 429a1ef6b6e26b32b71f95636165e85ea55a28ed84c3abd0eadf4e79c8f8e9c1
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 3.10
+status: ok
+----- stdout -----
+PASS literal-input-closure: inputs=6
+PASS independent-negative-fixed-schur: identity=1.80e-16; generalized=1.57e-16
+PASS shared-definition-affine-lift-fiber: fixtures=32; target=1.97e-15; gauge=5.41e-15
+PASS shared-definition-raw-versus-metric-refinement: comparisons=12; raw=3.00e-15; metric=5.12e-02
+PASS primary-cache-and-scope-binding: primary=8/0; bounded finite scope; physical/audit authority absent
+CHECKER_JSON: {"audit_status": "unset", "claim_type": "bounded_theorem", "metric_gauge_fixtures": 32, "negative_fixed_schur": true, "physical_law_selected": false, "refinement_comparisons": 12}
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

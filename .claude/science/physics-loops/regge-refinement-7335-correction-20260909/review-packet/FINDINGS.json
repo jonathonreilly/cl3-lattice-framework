@@ -1,0 +1,35 @@
+{
+  "recommendation": "NEEDS_NARROW_REPAIR",
+  "findings": [
+    {
+      "id": "7335-input-closure",
+      "severity": "material",
+      "status": "open",
+      "anchors": [
+        "primary:25-26,37-50",
+        "block62:18-22,91-98"
+      ],
+      "fix": "Extract actual finite helper closure and bind all runtime inputs; archive excluded campaigns."
+    },
+    {
+      "id": "7335-plan-history",
+      "severity": "material",
+      "status": "open",
+      "anchors": [
+        "primary:34-47,489-493,636-647",
+        "note:27-31,214-221,279-285,330-347"
+      ],
+      "fix": "Remove active inherited plan/history dependency; preserve originals and clearly distinguish historical route discussion."
+    },
+    {
+      "id": "7335-wall-independence",
+      "severity": "narrow overclaim",
+      "status": "open",
+      "anchors": [
+        "note:260-265"
+      ],
+      "fix": "Describe distinct possibly interacting obligations rather than proved independent walls."
+    }
+  ],
+  "finite_science": "survives focused review; not landing PASS"
+}

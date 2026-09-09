@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "description": "Allowlist of canonical axiom and explicitly approved primitive premise nodes. These are the only supplied physics premise types. Each entry binds a stable un-dated claim_id to the current source-doc path. build_citation_graph.py canonicalizes listed paths to stable ids, so inbound citation edges and premise status survive re-dating. The structural guard enforces that each listed document contains only approved premise content. These premises chain-satisfy without bounding downstream rows; every other scientific input must be retained-grade or remain conditional/open.",
+  "canonical_ids": [
+    "minimal_axioms",
+    "scale_reference_primitive",
+    "kinetic_isotropy_primitive",
+    "realized_state_primitive"
+  ],
+  "nodes": {
+    "minimal_axioms": {
+      "current_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "aliased_paths": [
+        "docs/MINIMAL_AXIOMS_2026-05-20.md",
+        "docs/MINIMAL_AXIOMS_2026-06-04.md",
+        "docs/MINIMAL_AXIOMS_2026-06-05.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "legacy_claim_ids": [
+        "minimal_axioms_2026-05-20",
+        "minimal_axioms_2026-06-04",
+        "minimal_axioms_2026-06-05",
+        "minimal_axioms_2026-06-29"
+      ],
+      "note": "Canonical Lattice+Qubit+Admissibility+Record axiom node. The source path may be re-dated; on re-date, update current_path and append the old path to aliased_paths so existing markdown links keep resolving to this stable id. The older observable_principle_from_axiom_note is not an axiom-premise node and must not be laundered as the Record axiom. The 2026-06-29 foundation reset, as clarified on 2026-07-02, 2026-07-03, and 2026-07-04, names physical sites as the cubic lattice Z^3 with nearest-neighbor adjacency, standard translations, and proper cubic rotations about each site, with no site privileged and sites distinguished by the supplied lattice structure alone; the domain of local possibilities and its full one-site algebraic presentation, with no possibility privileged and possibilities distinguished by the supplied algebraic structure alone; a fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations, for which: For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions. This is the 2026-08-05 owner-approved revision under policy section 6, with availability as the distribution's support; and fixed record readout: records form; when present, a record locks exactly one admissible local possibility; a site never carries more than one record; records are permanent; only records are readable, a readout value is determined by record content alone, and a site with no record cannot be read. Further physical structure requires a retained derivation or bridge, or explicit approved-primitive registration, before use as a premise. A choice not fixed by the supplied structure remains a named conditional or open dependency. A state is a configuration of records. A law privileges no states; its domain is a supplied condition, and at every state where the condition holds it gives exactly one answer. It still supplies no context-selection rule, specific distribution form or values, realized-outcome selection, formation-site or formation-rate rule, update law, measurement/decoherence dynamics, record-production process, physical persistence dynamics, K/CPT structure, central-sector decomposition, source/action bridge, physical observable bridge, state-selection rule, law-domain derivation, law-level dependence on an unfixed choice, or downstream theory consequence."
+    },
+    "scale_reference_primitive": {
+      "current_path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "aliased_paths": [
+        "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"
+      ],
+      "legacy_claim_ids": [],
+      "note": "Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows."
+    },
+    "kinetic_isotropy_primitive": {
+      "current_path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "aliased_paths": [
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+      ],
+      "legacy_claim_ids": [],
+      "note": "Explicitly approved framework primitive for the space-time kinetic-form isotropy c_t=c_s (OS0 graining isotropy): the emergent tick is grained on the same footing as the spatial edge. A dimensionless STRUCTURAL premise, the time-direction analogue of the Lattice axiom's spatial cubic adjacency; carries no dimensionless DYNAMICAL content (no mass ratio, coupling, mixing angle, phase, selector, readout bridge, or fit) and does not re-axiomatize emergent time. This primitive supplies only the kinetic form ratio, not an absolute scale, spacing-ratio theorem, dynamics, or downstream Lorentz theorem. Dependencies on this primitive chain-satisfy without bounding downstream rows."
+    },
+    "realized_state_primitive": {
+      "current_path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "aliased_paths": [
+        "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+      ],
+      "legacy_claim_ids": [],
+      "note": "Explicitly approved framework primitive for the realized-state interface: the axioms select no state; a physical history fixes one law-admissible realized state, and derivations may evaluate at it POINTWISE only. Supplies the slot, never the content: no state, state-selection rule, measure, typicality/genericity assumption, weighting, probability rule, preferred/default state, or state-contingent value. Policing clauses: no averaging over alternatives; 'typical'/'generic' banned as specialization predicates; the counterfactual test (a quoted number must be invariant over the law-admissible family, else it is registered data); law admissibility. The past hypothesis is explicitly NOT housed here (a strictly stronger specialness input; anchored at the arrow note). Dependencies on this primitive chain-satisfy without bounding downstream rows; the primitive itself carries no contingent content, and rows quoting data of a particular realized state remain conditional on that supplied data as supplied inputs always are."
+    }
+  }
+}

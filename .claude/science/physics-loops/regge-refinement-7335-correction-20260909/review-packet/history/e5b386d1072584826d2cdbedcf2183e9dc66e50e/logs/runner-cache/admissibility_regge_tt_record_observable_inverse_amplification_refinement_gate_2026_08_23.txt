@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_regge_tt_record_observable_inverse_amplification_refinement_gate_2026_08_23.py
+runner_sha256: 5cd8a2fcdbf717d43be5bd37e7ce237bd00511bb7c6f684bf3e55e9a85e8b3d6
+input_fingerprint_sha256: 0e3c060a2fd25b5a692e1663153d265f43a844d5c0a66dbb2dddba6b04769f26
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 14.56
+status: ok
+----- stdout -----
+RESULT: the fixed-average finite Schur identity is valid, but current physical premises justify neither a TT/Record readout representative nor a physical refinement norm
+INTERPRETATION: the Moore-Penrose susceptibility is a convention-scoped diagnostic, not a physical covariance and not a gravity verdict
+branch: source=static L=5 residual=4.58e-13 metric=1.000e-04 ranks=49+16+10=75 raw_asym=3.90e-15 Schur=10-/6+/0zero gap=1.11e-08 cond=1.27e+03
+branch: source=null L=5 residual=3.95e-13 metric=1.000e-04 ranks=49+16+10=75 raw_asym=4.52e-15 Schur=10-/6+/0zero gap=1.52e-09 cond=6.93e+03
+lift_fiber: source=static m=1 name=tt_plus ker=5 projected_edge=0 projection_norm=4.553e-01 ratios[0,1,10]=5.045e-07,3.469e-02,2.409e+00 spread=4.77e+06 least_squares=2.565e-11 dress_fraction=8.73e-04
+lift_fiber: source=static m=1 name=tt_cross ker=5 projected_edge=0 projection_norm=4.553e-01 ratios[0,1,10]=4.479e-02,1.846e-01,1.786e+00 spread=3.99e+01 least_squares=8.773e-10 dress_fraction=1.38e-04
+lift_fiber: source=static m=1 name=density_tensor_candidate ker=5 projected_edge=0 projection_norm=4.553e-01 ratios[0,1,10]=1.870e-02,1.623e-02,2.012e+00 spread=1.24e+02 least_squares=5.624e-09 dress_fraction=2.58e-03
+lift_fiber: source=static m=2 name=tt_plus ker=5 projected_edge=0 projection_norm=4.179e-01 ratios[0,1,10]=7.500e-05,1.044e-01,1.990e+00 spread=2.65e+04 least_squares=3.252e-13 dress_fraction=7.73e-05
+lift_fiber: source=static m=2 name=tt_cross ker=5 projected_edge=0 projection_norm=4.179e-01 ratios[0,1,10]=1.582e-01,9.057e-01,1.656e+00 spread=1.05e+01 least_squares=9.498e-06 dress_fraction=2.47e-03
+lift_fiber: source=static m=2 name=density_tensor_candidate ker=5 projected_edge=0 projection_norm=4.179e-01 ratios[0,1,10]=2.571e-01,3.460e-02,1.761e+00 spread=5.09e+01 least_squares=5.031e-03 dress_fraction=3.13e-01
+lift_fiber: source=null m=1 name=tt_plus ker=5 projected_edge=0 projection_norm=4.553e-01 ratios[0,1,10]=2.976e-02,1.090e-01,2.080e+00 spread=6.99e+01 least_squares=7.269e-09 dress_fraction=6.59e-04
+lift_fiber: source=null m=1 name=tt_cross ker=5 projected_edge=0 projection_norm=4.553e-01 ratios[0,1,10]=1.030e-02,7.767e-02,1.143e+00 spread=1.11e+02 least_squares=7.575e-10 dress_fraction=2.66e-04
+lift_fiber: source=null m=1 name=record_tensor_candidate ker=5 projected_edge=0 projection_norm=4.553e-01 ratios[0,1,10]=2.583e-01,3.885e-01,9.634e+00 spread=3.73e+01 least_squares=8.526e-09 dress_fraction=7.45e-04
+lift_fiber: source=null m=2 name=tt_plus ker=5 projected_edge=0 projection_norm=4.179e-01 ratios[0,1,10]=1.151e-01,1.724e-01,2.606e+00 spread=2.26e+01 least_squares=4.057e-02 dress_fraction=5.78e-01
+lift_fiber: source=null m=2 name=tt_cross ker=5 projected_edge=0 projection_norm=4.179e-01 ratios[0,1,10]=9.918e-02,8.592e-01,2.152e+00 spread=2.17e+01 least_squares=7.091e-05 dress_fraction=1.51e-02
+lift_fiber: source=null m=2 name=record_tensor_candidate ker=5 projected_edge=0 projection_norm=4.179e-01 ratios[0,1,10]=3.224e-01,4.700e-01,3.100e+00 spread=9.61e+00 least_squares=4.944e-02 dress_fraction=6.79e-01
+refinement: sources=static,null m=1 L=5->7 raw_iso=1.7e-15 Gram=[1.000000,1.067986] metric_defect=1.432e-01
+refinement: sources=static,null m=1 L=7->9 raw_iso=1.3e-15 Gram=[1.000000,1.027178] metric_defect=8.017e-02
+refinement: sources=static,null m=1 L=9->11 raw_iso=9.6e-16 Gram=[1.000000,1.013610] metric_defect=5.115e-02
+refinement: sources=static,null m=2 L=5->7 raw_iso=3.0e-15 Gram=[1.000000,1.324554] metric_defect=2.744e-01
+refinement: sources=static,null m=2 L=7->9 raw_iso=2.2e-15 Gram=[1.000000,1.117372] metric_defect=1.576e-01
+refinement: sources=static,null m=2 L=9->11 raw_iso=2.9e-15 Gram=[1.000000,1.056776] metric_defect=1.014e-01
+[PASS] fixed-average-raw-Hessian-and-Schur: both sourced L=5 branches have unsymmetrized-Hessian and resolved fixed-average Schur gu...
+       max raw asymmetry=4.521e-15
+[PASS] unselected-five-dimensional-edge-lift-fiber: every named conserved tensor target has a five-dimensional edge-lift fiber preserving ta...
+       max metric=3.356e-14; max gauge=1.643e-15
+[PASS] inverse-response-depends-on-unselected-lift: deterministic representatives of the same metric covector give materially inequivalent i...
+       TT minimum spread=10.470; sub/dominant flips=8/8
+[PASS] least-squares-lift-nonselection-witness: a target-preserving kernel solve reduces the dressed overlap without being promoted to a...
+       strong reductions=9/12; max fraction=0.679
+[PASS] raw-Parseval-versus-metric-refinement-mismatch: raw Fourier injection is isometric but does not preserve the momentum-dependent metric e...
+       Gram deviation=[1.361e-02,3.246e-01]; axis diff=1.3e-15
+[PASS] phasewise-generalized-Schur-identity: phasewise generalized responses obey the exact finite block-inverse identity on every te...
+       max identity=3.481e-08; max solve=4.732e-15
+[PASS] scope-no-go-discipline-and-axiom-boundary: the theorem note keeps the blocker narrow, preserves live routes, and makes no gravity o...
+N5_CERTIFICATE: 2 sourced fixed-average Hessians; 8 TT and 4 source-tensor-candidate lift fibers; 48 shifted/cancelled phase-paired responses; 12 directed refinement comparisons
+BOUNDARY: no branch-dependent gauge generator, relational nonlinear observable, matter/source Hessian, Lorentzian covariance, physical quotient norm, or state/update refinement law is supplied
+SELECTOR_VERDICT: BLOCKED_BY_UNSELECTED_PHYSICAL_QUOTIENT_REFINEMENT_DATA
+ROUTE_VERDICT: INCONCLUSIVE
+TOE_MOVEMENT: obligations=0 percentages=0 axioms_amended=0
+elapsed_sec=10.09
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+
