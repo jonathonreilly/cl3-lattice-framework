@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/continuum_alphabet_lifts_abundance_no_go_fibred_born_check_2026_09_04.py
+runner_sha256: 9c268bb2213b7727f810b3a945368232d9541071616a6f0457aea4b092a73acd
+input_fingerprint_sha256: 12effe6c8b12a795504487143cfe242e2e89ed4b3b5a8b2f4b5b17dcf954b3a9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 14.77
+status: ok
+----- stdout -----
+external_scientific_inputs: the axiom file and the 2026-08-09 parent are read for source gates
+package_local_integrity_reads: the source note is read for claim-surface consistency
+standard_theorem_boundary: the dimension-three frame-function theorem is named, not recomputed
+arithmetic_boundary: every stage is exact rational or exact symbolic, no floats
+PASS: T0-rotations 24 proper cubic rotations, determinant one
+PASS: T0-directions 80 declared rational unit Bloch directions
+PASS: T0-planes 14 declared rational plane frames from quaternions
+PASS: T0-ternary-family 1764 exact rank-one ternary resolutions of I_2
+PASS: T0-ternary-effects every weight has 0 < c_k <= 1, so each c_k P(n_k) is an effect
+PASS: T0-ternary-coplanar det[n_1 n_2 n_3] = 0 on all: the family is 5-dimensional
+PASS: T1-closed-alphabet 78 record values closed under the 24 rotations
+PASS: T1-declared-conditions 1740 conditions by declared index arithmetic, no seed
+PASS: T1-covariance S(g.n) = g.S(n) on 41760 exact checks, 0 mismatches
+PASS: T1-resolutions all 228 distinct realised supports resolve I_2
+PASS: T1-multiset-only the support reads the record values only, never the slots
+ARG: T1-nearest-neighbour the rule reads the six neighbour record values and nothing else
+PASS: T1-abundance-binary every binary resolution is a support: 80/80 declared directions
+PASS: T1-abundance-ternary every non-collinear rank-one ternary is a support: 1200/1200
+PASS: T1-abundance-coin coin supports at 77 distinct exact a; a = (1+m_1.m_2)/2 sweeps (0,1)
+PASS: T1-abundance L_CONT has full menu abundance: the finite-alphabet no-go is lifted
+PASS: T2-dipole-equivariant lambda(g.n) = g lambda(n) on 41760 exact checks, 0 mismatches
+ARG: T2-dipole-decoupled lambda reads the slots, the menu the values: they are decoupled
+PASS: T2-fibre-abundance the fibre lambda = e_x realises every binary and 1200/1200 ternaries
+PASS: T2-fibred-law-normalised L_FIB at rho_l = (I + (2/3) l.sigma)/2 sums to 1 on every support
+PASS: T2-fibred-law-positive and is non-negative on every realised support
+PASS: T2-fibred-law-covariant p_(g.n)(g.v) = p_n(v) on 83520 per-possibility checks, 0 mismatches
+PASS: T2-non-vacuous one fibre holds two supports sharing the possibility (8/9)P(e_z)
+PASS: T2-normal-form degree-five sector: 36 monomials, 21 when odd
+PASS: T2-rank-certificate the law-realised family: 1764 by 21, rank 18, nullity 3, exact over Q
+PASS: T2-kernel-is-born the kernel is exactly span{x, y, z}, the Born family tr(rho, cP(u))
+PASS: T2-rank-certificate-36 without oddness: 36 columns, rank 33, nullity 3
+ARG: T2-fibred-theorem abundance in fibre and a grading shared there give p_n(E) = tr(rho_lambda(n) E) by the imported frame theorem
+PASS: T3-density-normalised (1 + r.u) dOmega/4pi integrates to exactly 1, exact symbolic
+PASS: T3-continuum-resolution int 2P(u) dmu = I exactly: the continuum family resolves the identity
+PASS: T3-hemisphere hemisphere A: mu(A) = 1/2 and int_A u dmu = (1/4) e_z, the maximiser
+PASS: T3-factor-of-two the Born value needs int_A u dmu = e_z/2, the maximum is 1/4: short by two
+ARG: T3-per-condition a support carries one menu, so abundance is across conditions
+ARG: T3-lueders Lueders conditioning on a locked pure state is defined off one antipode
+ARG: T3-zero-singleton reading note (3) is met: a singleton has zero measure while 1 + r.u stays positive
+PASS: T4-coin-law-covariant L_COIN is covariant on 9600 exact checks, 0 mismatches
+PASS: T4-coin-law-no-rank-one and realises no rank-one support at all
+PASS: T4-binary-law-covariant L_BIN is equivariant on 9600 exact checks, 0 mismatches
+PASS: T4-binary-law-binary-only and realises only antipodal binary supports, never a ternary
+PASS: T4-grading-odd f(u) = u_z^3 is odd: normalised on every binary and coin support
+PASS: T4-grading-non-born and non-Born: f(3/5,0,4/5) = 64/125 against 4/5, with |f| <= 1
+PASS: T5-stabiliser Stab(e_x) has order 4, the C_4 about the x axis
+PASS: T5-fibre-state-free its invariant Bloch space is the x axis: rho = (I + t sigma_x)/2, t free
+PASS: T5-invariant-fibre-forced the invariant Bloch space is {0}: an invariant class forces rho = I/2
+PASS: T5-scalar-labels-invariant record count and pairwise record dots are rotation invariant
+PASS: T6-plane the identity quaternion's plane is the great circle z = 0
+PASS: T6-circle-global-nullity all 2470 in-circle ternaries leave global nullity 17
+PASS: T6-circle-on-circle on the circle at modes 1,3,5: rank 4, nullity 2
+PASS: T6-circle-kernel modes 3 and 5 are annihilated, so f is a cos t + b sin t: Born odds there
+PASS: T6-grading-blind-in-plane u_z^3 has residual exactly zero on all 2470 in-circle ternaries
+PASS: T6-grading-fails-out-of-plane but fails 1506 of 1764 over 14 planes
+ARG: T6-two-circles two non-parallel circles agree at +-e_x, so one r covers their union
+ARG: T6-price the price stays three items: abundance moves from unpayable to payable
+PASS: source-qubit Qubit: the one-site possibility domain has presentation M_2(C)
+PASS: source-admissibility Admissibility: the distribution is nearest-neighbor determined and varying
+PASS: source-admissibility-continuum reading note (3): a supported point may have zero singleton measure
+PASS: source-record Record: a record locks one admissible possibility; only records are readable
+PASS: source-parent-frame-import the 2026-08-09 parent names the dimension-three frame theorem
+PASS: surface-status the note keeps its conditional surface and independent audit explicit
+per_element: every direction, plane, resolution, support and rank row is declared
+per_site: one M_2(C) site under a Z^3 nearest-neighbour law; no wider carrier
+per_mode: sphere polynomials through degree five and circle Fourier modes 1, 3 and 5
+per_block: the law, the fibration, the fibred law, the certificates, the counterexamples
+lattice_wide: one condition family for covariance only; no lattice-wide Born claim
+runtime_seconds: 14.4
+recorded_arguments: 8 printed, none counted as verified
+TOTAL: PASS=51 FAIL=0
+
+----- stderr -----
+

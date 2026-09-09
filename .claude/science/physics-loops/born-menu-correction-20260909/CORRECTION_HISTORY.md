@@ -1,0 +1,11 @@
+# Born-menu correction, 2026-09-09
+
+The five original scopes #7912/#7919/#7926/#7931/#7950 remain recoverable at their exact heads. All15 original note/runner/cache bytes and modes plus the initial7926/7931 note versions are retained in originals/. Historical claims, source counts and caches are provenance, not current authority.
+
+B1: homogeneous rank matrices remain; missing scale/all-fibre premises are explicit. B2: the mixed/coin comparison is abstract, absent from the existing unit fibre. B3: two-circle positivity is an additional compatibility condition. B4: bare-input/ indexed-menu compiler and unindexed pushforward are distinct from a physical Record law. B5: singleton-I rogue value and beta=0 range restriction corrected. B6: the import-free all-scale/measurable proof is unestablished; A has a self-contained homogeneous proof. B7: the hemisphere obstruction is only round affine density/fixed-cell; the sign-density alternative is retained. B8: actual finite sea map, invariant-key groups and a spectral bare-action witness replace any-law and exact-symbolic claims. B9: coplanarity, conditional synthetic event maps and supplied cube scope are corrected. B10: all five current notes carry their own scoped N1–N8 answers and cache-resolution statements.
+
+Every original check ID is preserved. T1-parent-reproduces in7912 is historical and non-counted, since replaying the old parent campaign is outside this bounded unit. No fresh parent PASS is inferred. Four other original primaries were already executed by the independent reviewer; those successful originals are not repeated. Genuine corrected caches bind the final source/input union.
+
+The original reviewer overlay lost executable mode on7926 and7931, without losing bytes; corrected live scripts and historical originals use the raw100755 modes. The bounded author quote preflight also found two swapped historical source names; that failed attempt and exact fix are preserved externally. No scientific computation or source data was altered for the fix.
+
+Current memo governs; historical Record-additivity/parent audit labels are not proof. Formal audit is deferred until a solid TOE. The author grants no independent verdict, physical bridge, new primitive, or status. Root owns final composition, independent confirmation and the one combined mechanical gate.

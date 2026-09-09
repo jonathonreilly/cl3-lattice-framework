@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/born_form_from_balanced_ternaries_without_frame_import_check_2026_09_03.py
+runner_sha256: d18cdc8b6d1514372c5c283cabcbfa332bead6dbe49e0bd34bbf1cd0715e264e
+input_fingerprint_sha256: 776a26739bdb8e1e486f364c0bf323ac0a99e9e690f8a0ae4ef60eb06adb10aa
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.48
+status: ok
+----- stdout -----
+arithmetic_boundary: exact rational only, fractions.Fraction; no float, no seed
+grid_boundary: 52 and 68 circle points, 12 rational great circles, radii j/24
+truncation_boundary: circle modes 0..8, sphere degree <= 6; Lemmas 1-2 need neither
+import_boundary: no frame theorem, no ancilla lift, no Gleason; the parent is read as text
+PASS: T1-grid 52 rational unit directions, each exactly on the circle
+PASS: T1-count 5200 non-collinear balanced ternaries on that grid
+PASS: T1-resolution each has sum c_i = 2 and sum c_i n_i = 0, so sum c_i P(n_i) = I
+PASS: T1-perimeter the sides v_i = c_i n_i close a triangle of perimeter 2
+PASS: T1-interior every weight is in (1/21, 696/697), so c_i <= 1 is automatic
+PASS: T1-strict |c2 n2 + c3 n3| < c2 + c3 unless n2 = n3, on all 1326 grid pairs
+PASS: T1-no-projector no non-collinear balanced ternary contains a projector
+ARG: T1-degenerate a side of length 1 forces the other two to sum to 1, hence n2 = n3
+PASS: T2-lemma1-pairs no two members of a balanced triple are antipodal
+PASS: T2-circle-free 52 free values, 5200 rows, rank 50, nullity 2: no truncation
+PASS: T2-circle-free-kernel that kernel is exactly the restriction of span{x, y}
+PASS: T2-circle-modes modes 0..8, 17 unknowns, 400 triples, rank 15, nullity 2
+PASS: T2-circle-kernel that kernel is exactly {cos t, sin t}
+PASS: T2-frames 4 rational orthonormal frames give 12 exact great circles
+PASS: T2-sphere degree <= 6, 49 unknowns, 168 triples, rank 46, nullity 3
+PASS: T2-sphere-kernel that kernel is exactly span{x, y, z}
+PASS: T2-range |beta| = 1/2 keeps 1/2 + beta.n in [0,1] and sums to 1; |beta| = 1 does not
+ARG: T2-lemma1 chaining balanced pairs round the circle carries one beta to every point
+ARG: T2-lemma2 a form linear on every great circle is linear on the sphere, by gluing
+PASS: T3-realised 5271 menus M_CONT realises: 5200 ternaries, 52 binaries, 19 coins
+PASS: T3-rogue the counting rogue is normalised on every one of them
+PASS: T3-not-born it is not Born: w(P)/1 = 1/2 against w(P/2)/(1/2) = 2/3
+PASS: T3-family (1/2+lam)|v| - 2lam/3 + beta.v sums to 1 on all 5200, in lam and beta
+PASS: T3-family-range its range is in [0,1] exactly for lam in [-3/2, 0]
+PASS: T3-collinear the collinear ternary {aP(n),(1-a)P(n),P(-n)} at a = 1/4 sums to 7/6
+PASS: T3-mixed the mixed coin ternary {cP(n),cP(-n),(1-c)I} at c = 1/2 sums to 7/6
+PASS: T3-unrealised neither is a coplanar positively spanning rank-one triple
+ARG: T3-arity on M_CONT arity is a function of the effect, so 1/arity is menu-independent
+PASS: T4-coin coin rows on the grid j/24: 144 rows, rank 23, nullity 1, kernel u(c) = c
+PASS: T4-odd the mixed coin menu then gives W(cn) + W(-cn) = 1 - u(1-c) = c: K is odd
+PASS: T4-additive sum |v_i| = 2 on all 5200, so sum W = 1 is K(v1)+K(v2)+K(v3) = 0
+PASS: T4-triangles 44 perimeter-2 triangles have sides on the grid j/24
+PASS: T4-sines sin A_i / c_i is one number per triangle, exactly: mode 1 is Born
+PASS: T4-cont-nullity M_CONT: nullity 3 at k = 0 and 1, nullity 2 at k = 3, 5, 7; 1/24 uncovered
+PASS: T4-cont-k0 at k = 0 the covered interior carries the rogue (c - 2/3) and h(1) is free
+PASS: T4-cont-k1 at k = 1 the covered interior carries Born c and h(1) is free
+PASS: T4-cont-high at k = 3, 5, 7 the interior is killed by the non-collinear ternaries alone
+PASS: T4-all-even M_all: rank 24 and nullity 0 at k = 0, 3, 5, 7
+PASS: T4-all-k1 M_all: nullity 1 at k = 1, the vector h_1(c) = c with h_1(1) = 1
+ARG: T4-modes sin kA_1 = 0 with sin kA_2 nonzero kills h_k on an interval, then everywhere
+ARG: T4-ae an integrable direction profile gives the Born form a.e. in direction per scale
+PASS: gate-parent-family the 2026-08-09 note's low-arity family M_all, verbatim
+PASS: gate-parent-lift its ancilla frame lift, verbatim
+PASS: gate-parent-gleason its dimension-three frame step, verbatim
+PASS: gate-axiom-domain the axiom file's one-site M_2(C) presentation
+PASS: gate-correction the note records the homogeneous-ansatz correction, quoted
+PASS: gate-surface the note keeps its conditional surface and its audit line
+recorded_arguments: 6 printed, none counted
+TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+
