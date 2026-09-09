@@ -1,0 +1,99 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_l4_full_center_unlock_dim76_wedderburn_2026_09_03.py
+runner_sha256: a2c2bae085a807aa230fbccdf3ff292b92d07f13bb551c01bcffff2eb537ca5e
+input_fingerprint_sha256: f73e98250cf50a7cf31bd79d23fb43f8ca94f9b25e741c2b72858610008ff855
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 24.93
+status: ok
+----- stdout -----
+BEGIN CAPTURED PARENT OUTPUT (bounded numerical protocol)
+[parent] [INFO] reach omega(g) := overlap^2(<A_nat, g>, sep); matrix residuals are Frobenius unless a singular value is named; every SVD is economy (full_matrices=False)
+[parent] [PASS] NATIVE-D2-ALGEBRA: dim<D2f>=7 (=7) closed=True  [C[D2]: spectrum {0, +-2i sqrt m}]
+[parent] [PASS] NATIVE-DIRAC-PAIR: dim<D2f,Jfull>=8 (=8) closed=True  [adds only the kernel complex structure]
+[parent] [PASS] NATIVE-FRAME-DIM: dim A_nat=<D2f,Jfull,Seps>=16 (=16) closed=True
+[parent] [PASS] NATIVE-COMPLEX-STRUCTURE: complex structure ||Jfull^2+I||_F=1.954309572552e-15 (<1e-12)
+[parent] [PASS] NATIVE-PARITY-INVOLUTION: involution ||Seps^2-I||_F=0.000000000000e+00 (<1e-12)
+[parent] [PASS] NATIVE-GRADING-ANTICOMMUTATION: anticommutation ||Jfull.Seps+Seps.Jfull||_F=0.000000000000e+00 (<1e-12)
+[parent] [PASS] NATIVE-SHELL-BLOCKS: per-shell restriction dims of A_nat=[4, 4, 4, 4] (=[4,4,4,4])
+[parent] [PASS] NATIVE-CENTER-DIM: dim Z(A_nat)=4 (=4)
+[parent] [PASS] NATIVE-CENTER-GAP: center SVD margin: largest null=2.010984436557e-15 (<1.0e-08); smallest kept=2.000000000000e+00 (>1.0e-04)
+[parent] [PASS] NATIVE-CENTER-CM: Z(A_nat) numerically matches C[M]: max_m resid(Pf[m], null-span)=1.202734933519e-15 (<1e-10)
+[parent] [PASS] NATIVE-SEPARATOR-ORTHOGONALITY: sep non-membership: overlap^2(A_nat, sep)=0.000000000000e+00 (|overlap^2|<=1e-10 at the stated tolerance)
+[parent] [PASS] STABILITY-PARITY-OUTSIDE-AMBIENT: S_eps not in G_amb (in G_amb=False, must be False: H strictly enlarges G_amb)
+[parent] [PASS] STABILITY-AMBIENT-NORMALITY: conj by H maps G_amb -> G_amb: all 5x4 spot conjugates land in G_amb=True
+[parent] [PASS] STABILITY-NATIVE-FRAME: conj by H maps {D2f,Jfull,Seps} into A_nat: max_h,X resid(A_nat, h X h^T)=3.818797423440e-15 (<1e-10) => conj by H preserves A_nat
+[parent] [PASS] STABILITY-SEPARATOR: conj by H fixes the separator: max_h ||h sep h^T - sep||_F=4.481785164435e-13 (<1e-10) => with native-frame stability, omega is numerically H-class invariant
+[parent] [PASS] CENSUS-CLASS-COUNT: number of H-classes=36 (=36)
+[parent] [PASS] CENSUS-ELEMENT-COUNT: class sizes sum=768 (=768, partition of G_amb)
+[parent] [PASS] CENSUS-TRUE-CLOSURE: every class rep TRUE-closes below cap 350: all_closed=True, max closed dim=96
+[parent] [PASS] CENSUS-REACH-SPECTRUM: every class omega matches one of {0, 1/9, 1/3, 1} within 1e-9: max match residual=3.885780586188e-16; observed labels=['0', '1', '1/3', '1/9']
+[parent] [PASS] CENSUS-REACH-COUNTS: element counts by omega {0:528, 1/9:12, 1/3:96, 1:132} (={528, 12, 96, 132})
+[parent] [INFO] refined (dim, omega) census histogram [element counts]:
+[parent]        (dim= 16, omega=   0): 4
+[parent]        (dim= 24, omega=   0): 12
+[parent]        (dim= 28, omega= 1/9): 12
+[parent]        (dim= 28, omega=   1): 4
+[parent]        (dim= 32, omega=   0): 96
+[parent]        (dim= 48, omega=   0): 320
+[parent]        (dim= 76, omega=   1): 128
+[parent]        (dim= 88, omega=   0): 96
+[parent]        (dim= 96, omega= 1/3): 96
+[parent] [PASS] CENSUS-DIM-REACH-HISTOGRAM: refined (dim, omega) histogram has 9 cells (=9) and matches expected element counts
+[parent] [PASS] CENSUS-THIRD-ORDERS: order census: omega=1/3 -> 4 classes size 24 all order 8 (ok=True)
+[parent] [PASS] CENSUS-FULL-REACH-ORDERS: order census: omega=1 -> (size,order) multiset=[(4, 4), (64, 12), (64, 12)] (=[(4,4),(64,12),(64,12)], ok=True)
+[parent] [PASS] CHARACTER-SPECTRUM: every Delta-chi(g)=Re(tr(Pa g)-tr(Pb g)) in {0, +-4 sqrt2} within 1e-9: max match residual=2.664535259100e-15; observed values=[-5.656854, 0.0, 5.656854] (4 sqrt2=5.65685424949)
+[parent] [PASS] CHARACTER-THIRD-INVERSION: inversion: {Delta-chi != 0} == {omega=1/3}=True (4 classes, |Delta-chi!=0 classes|=4, 96 elements; both nonempty)
+[parent] [PASS] CHARACTER-FULL-BLINDNESS: every fully-reaching (omega=1) class is character-blind (Delta-chi=0)=True; reaching set nonempty=True
+[parent] [PASS] UNLOCK-MINIMAL-ELEMENT-MEMBERSHIP: g1=diag((-1)^{x2}).T(1,1,1) in G_amb (by matrix equality)=True
+[parent] [PASS] UNLOCK-MINIMAL-ELEMENT-ORDER: order(g1)=4 (=4: a sign-dressed body-diagonal unit translation)
+[parent] [PASS] UNLOCK-MINIMAL-ELEMENT-ORBIT: H-orbit of g1 == {g1, g1^3, -g1, -g1^3} exactly (size 4=4, match=True)
+[parent] [PASS] UNLOCK-MINIMAL-CLASS: g1's class is the unique smallest reaching class: omega=1 class sizes=[4, 64, 64] (=[4,64,64], every other omega=1 class has size 64)
+[parent] [PASS] UNLOCK-ALGEBRA-DIM: dim A28=<A_nat,g1>=28 (=28) TRUE-closed=True
+[parent] [PASS] UNLOCK-FULL-REACH: omega(g1)=1.000000000000e+00 (|omega-1|=0.000e+00<1e-9, sep in A28)
+[parent] [PASS] UNLOCK-SHELL-DIMS: per-shell restriction dims of A28=[4, 8, 8, 8] (=[4,8,8,8])
+[parent] [PASS] UNLOCK-CENTER-DIM: dim Z(A28)=commutant nullspace=7 (=7, center refines C^4 -> C^7)
+[parent] [PASS] UNLOCK-CENTER-GAP: center SVD margin: largest null=4.536067649810e-15 (<1.0e-08); smallest kept=2.000000000000e+00 (>1.0e-04)
+[parent] [PASS] UNLOCK-CENTER-CLUSTERS-PRIMARY: central sampling seed=20260725: clusters=7 (=7); max intra=2.886579864025e-15 (<1.0e-08); min inter=2.767883896792e-02 (>1.0e-04)
+[parent] [PASS] UNLOCK-CENTER-CLUSTERS-CONTRAST: central sampling seed=42: clusters=7 (=7); max intra=2.442490654175e-15 (<1.0e-08); min inter=4.673990524794e-02 (>1.0e-04)
+[parent] [PASS] UNLOCK-WEDDERBURN-BLOCKS: A28 numerically resolves M2(C)^7: spectral-idempotent blockdims=[4, 4, 4, 4, 4, 4, 4] (all =4)
+[parent] [PASS] UNLOCK-IDEMPOTENT-RANKS: idempotent rank multiset=[4, 4, 8, 12, 12, 12, 12] (=[4,4,8,12,12,12,12])
+[parent] [PASS] UNLOCK-SHELL-SUPPORTS: (rank,shell-support) multiset matches {(8,{0}):1,(12,{1}):2,(12,{2}):2,(4,{3}):2} -> True (shell 0 does not split; shells 1,2,3 split in two)
+[parent] [PASS] UNLOCK-SHELL2-IDEMPOTENTS: the two shell-2 minimal central idempotents match {Pa,Pb}: min-matching max||E-P||_F=3.159562559164e-13 (<1e-8)
+[parent] [PASS] UNLOCK-SEPARATOR-IDEMPOTENTS: sep = e_a - e_b: ||sep-(Ea-Eb)||_F=3.259795005464e-13 (<1e-8) => sep is a difference of minimal central idempotents of A28
+[parent] [PASS] SHIFT-REACH-NINTH: g_ninth in G_amb=True; dim<A_nat,g_ninth>=28 (=28) closed=True; omega=1.111111111111e-01 (|omega-1/9|=3.886e-16<1e-9)
+[parent] [PASS] SHIFT-REACH-ZERO: g_zero in G_amb=True; dim<A_nat,g_zero>=48 (=48) closed=True; omega=0.000000000000e+00 (|omega|<=1e-10)
+[parent] [PASS] SHIFT-DIMENSION-CONTRAST: g_ninth and g1 extension dims are both 28 (28, 28): extension dimension does NOT determine reach
+[parent] [PASS] ROTATION-FULL-REACH: g_ur1,g_ur3 in G_amb; orders=12,12 (=12); dims=76,76 (=76) closed=True,True; omega=1.000000000000e+00,1.000000000000e+00 (=1); H-class sizes=64,64 (=64)
+[parent] [PASS] REACH-IN-FRAME-CONTROL: membership detector sanity: overlap^2(A_nat, Pf[0]-Pf[3])=1.000000000000e+00 (=1 within 1e-9: an in-frame central difference IS seen by the same resid machinery)
+[parent] [PASS] REACH-DIAL-CONTRAST: wrong-value rejector: |omega(g1)-1/3|=0.666667 (>0.5) and |omega(g_zero)-1|=1 (>0.9): the reach contrast is nonconstant
+[parent] [PASS] REACH-SIGNFIELD-PERTURBATION: perturbation rejector: gp=diag((-1)^{x1}).T(1,1,1) is NOT in G_amb (gp in G_amb=False): a wrong sign field is not even an admissible extension, so it cannot reproduce the unlock
+[parent] TOTAL: PASS=49 FAIL=0
+END CAPTURED PARENT OUTPUT
+[PASS] PARENT-REEXECUTION: unchanged U22 finite construction reran with PASS=49 FAIL=0 exit_codes=[0] (expected 49/0/[0])
+[PASS] FULL-CENTER-BASIS: dim span(P_0,P_1,P_2,P_3,sep)=5 (=5)
+[PASS] FULL-CENTER-CENTRALITY: maximum Frobenius commutator with generators of A=9.148e-14 (<1e-8)
+[PASS] CENTER-INTERSECTION-HISTOGRAM: class counts by dim(C_g intersection Z(A))={4: 33, 5: 3} (expected {4:33,5:3})
+[PASS] CENTER-MEMBERSHIP-SEPARATION: max full residual=0.000e+00 (<1e-8); min non-full residual=0.816497 (>0.5)
+[PASS] FULL-CENTER-CLASS-IDS: zero-based H-class ids with full center=[14, 25, 27] (expected [14,25,27])
+[PASS] FULL-CENTER-CLASS-METADATA: (id,size,algebra-dim,order)=[(14, 4, 28, 4), (25, 64, 76, 12), (27, 64, 76, 12)]
+[PASS] CENTER-REACH-EQUIVALENCE: full-center classes equal omega=1 classes: [14, 25, 27] == [14, 25, 27]
+[PASS] ONE-ELEMENT-CENTER-UNLOCK: A_nat center dim=4; one added representative reaches dim 5 in 3 classes
+[PASS] DIM76-CLASS-COUNT: dimension-76 full-center class ids=[25, 27] (expected [25,27])
+[PASS] DIM76-TRUE-CLOSURE: all two-class/two-seed profiles closed with algebra dims=[76, 76, 76, 76]
+[PASS] DIM76-CENTER-DIMENSIONS: center dimensions by class/seed=[[19, 19], [19, 19]] (=19)
+[PASS] DIM76-CENTER-SVD-GAPS: max null=4.619e-14; min kept=2.000000
+[PASS] DIM76-TWO-SEED-CENTER-CLUSTERS: clusters=[19, 19, 19, 19]; max intra=6.217e-15; min inter=0.001347
+[PASS] DIM76-WEDDERBURN-TYPE: every minimal central corner has complex dimension 4, resolving M2(C)^19 for both classes and seeds
+[PASS] DIM76-REPRESENTATION-RANKS: central-idempotent ranks are six 2s and thirteen 4s for all profiles=True
+[PASS] DIM76-SHELL-PROFILE: common (corner-dim,rank,shell)->count profile recovered=True
+[PASS] DIM76-CENTRAL-IDEMPOTENTS: max partition/idempotent/Hermitian/orthogonality/central residual=1.911e-12
+[PASS] DIM76-SEPARATOR-SIX-ATOM-SPLIT: (shell-2,+,-,assigned)=[(6, 3, 3, 6), (6, 3, 3, 6), (6, 3, 3, 6), (6, 3, 3, 6)]
+[PASS] DIM76-SEPARATOR-RECONSTRUCTION: max ||sep-(sum three plus atoms - sum three minus atoms)||_F=7.658e-13
+[PASS] DIM76-COMMON-ABSTRACT-PROFILE: the two generator H-classes have the same numerical M2(C)^19 representation profile; ambient-unitary equivalence follows if that exact profile holds
+[PASS] CONTROL-DROP-SEPARATOR: omitting sep collapses the proposed center basis from 5 to 4
+[PASS] CONTROL-A28-IS-DIFFERENT: same machinery resolves A28 as M2(C)^7 (center 7), not M2(C)^19
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

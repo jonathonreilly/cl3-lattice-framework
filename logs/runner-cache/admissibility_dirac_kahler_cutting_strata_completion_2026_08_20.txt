@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_cutting_strata_completion_2026_08_20.py
+runner_sha256: 99373afeff8324fcd9f7cd872b561ec959faa1f2e5bf9af893f05337f89081c4
+input_fingerprint_sha256: 7cdc483f6f6067c7c2197adfc33307bb0f0dcc502859e3e2e843f7db6f47a259
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.60
+status: ok
+----- stdout -----
+INPUT_BINDING: own note and current c726 literal-witness source verified before parsing
+SCOPE: supplied finite corner-simplex/pair-count model; no physical charge identification; no higher-stratum/minimum search
+PASS finite cells: 2672 unit-determinant cells; volume spectrum=((0, 1360), (1, 2672), (2, 320), (3, 16)); C4 spectrum=[(6, 400), (7, 1216), (8, 864), (9, 192)]
+PASS finite facet catalogue: dissection counts=[180, 180, 180, 180, 180, 180, 180, 180]; tick=((18, 16), (19, 72), (20, 84), (21, 8)); mixed=((8, 12), (9, 64), (10, 104))
+PASS boundary incidences: 3584
+PASS original witness (36, 55): {"C4_TC_MC": [149, 36, 55], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS original witness (41, 53): {"C4_TC_MC": [156, 41, 53], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS original witness (37, 53): {"C4_TC_MC": [152, 37, 53], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS original witness (41, 48): {"C4_TC_MC": [163, 41, 48], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS original witness (37, 48): {"C4_TC_MC": [165, 37, 48], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS original witness 156: {"C4_TC_MC": [156, 36, 60], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS original witness 152: {"C4_TC_MC": [152, 36, 60], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS same-cost differences: {156: (5, -7), 152: (1, -7)}; no local reversible-move claim
+PASS existing supplier witness W1: {"C4_TC_MC": [165, 37, 48], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS existing supplier witness W3: {"C4_TC_MC": [168, 39, 49], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS existing supplier witness W4: {"C4_TC_MC": [168, 42, 60], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS existing supplier witness W5: {"C4_TC_MC": [159, 36, 55], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS existing supplier witness W6: {"C4_TC_MC": [169, 41, 48], "charge_trace_agrees": true, "distinct_cells": 24, "eight_valid_facet_traces": true, "pairs": 276, "separated_pairs": 276}
+PASS direct per-piece bound counterexample: min(C4-TC+MC)=3 at (0, 1, 6, 10, 14); histogram=((3, 48), (4, 304), (5, 192), (6, 304), (7, 48), (8, 336), (9, 672), (10, 624), (11, 96), (12, 48)); only the uniform lower bound 7 is refuted
+PASS incompatible boundary diagonals: {(0, 0): (((1, 4, 5, 6, 8), (2, 5, 6, 7, 10)), ((4, 5, 6), (5, 6, 7)), (5, 6)), (1, 1): (((4, 5, 7, 8, 13), (4, 6, 7, 8, 12)), ((4, 5, 7), (4, 6, 7)), (4, 7))}; cost 156 partner is geometrically verified above
+PASS overlap control: identical simplex has no nonzero separating normal
+HISTORICAL_UNVERIFIED: higher-stratum censuses, exact minima/exclusions, law sweep, CSP count and checker narratives are archived; none supplies a passing predicate here
+per_element: all 2672 supplied unit-determinant cells enumerated with integer charge formulas
+per_site: checked and not executed — physical sites are not defined by this finite corner-simplex model
+per_mode: checked and not executed — no physical momentum or mode decomposition is claimed
+per_block: seven original and five supplier dissections checked by exact separation and boundary traces
+lattice_wide: checked and not executed — no infinite lattice, physical realization or exhaustive higher-stratum search is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+
