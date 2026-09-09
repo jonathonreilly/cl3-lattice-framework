@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/no_site_wise_formation_rule_preserves_the_sea_check_2026_09_03.py
+runner_sha256: b08ab37f22ba19e7560d8360cb31f71b380fe75081f4e6ba9cd051220cab35bb
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 35.78
+status: ok
+----- stdout -----
+PASS A1 [exact; 1e-12] cube: R0-R4 True, k=5, code 128, D=4096, flux {-1} x6; sea E=-6.928203230276=-4sqrt3 (0.0e+00), resid 5.4e-15, gap 3.464102; support 1984, zeros 2112=1856 charge+256 cancellation; eps_q(sea)=-0.577350 x12 (spread 3e-16); residual one edge 0.577350=1/sqrt3 x12 (spread 3e-15), star(0) 1.4e-14.
+PASS A2 [1e-12] T1 tau=0: every rule (A1 A1v A2 A2v B E, D, all 24 orders) reproduces the sea: max TV 8.2e-17 / 0.0e+00, support 1984, 1856/1856 charge + 256/256 cancellation zeros kept; margerr <= 4.1e-17 at every node; A1 contrast at steps 1-5 = 1.0000/1.0000/1.0000/1.0000/1.0000.
+PASS A3 [1e-12] T2 tau=0.5 TV(sea): A1 0.337565692 A1v 0.320717027 A2 0.422413255 A2v 0.449953329 B 0.453896665 E 0.362827766; each support 2240, 1856/1856 charge, 0/256 cancellation kept; D (stars 0,3,5,6) TV 6.8e-16, 256/256, node residual <= 1.4e-14, diagonal displaced <= 1.1e-15.
+PASS A4 T2 24 orders tau=0.5: per-order TV min 0.289380397 (order 12 = reverse) max 0.456208220 mean 0.379401338, identity 0.324925161, each support 2240, 0/256 cancellation; their average law TV 0.239288631 with support 2240, not 1984.
+PASS A5 T2 TV(sea) at tau 0.1: A1 0.2603 A1v 0.1298 A2 0.0704 A2v 0.2679 B 0.1527 E 0.1203, orders 0.0459-0.2990, D 3.2e-16; tau 2.0: A1 0.4691 A1v 0.3604 A2 0.4662 A2v 0.3263 B 0.3698 E 0.4149, orders 0.3272-0.5243, D 1.2e-15; every site-wise law support 2240 with 0/256 cancellation at both; D 256/256 at both.
+PASS A6 [1e-12] T4 cube A1 tau=0.5 forms (0,1)(2,3)(4,5)(6,7) (the z-matching): contrast 1.00/5.50/6.85/9.00, greedy odds 0.083/0.500/0.685/1.000, margerr 0e+00/6e-15/1e-15 then 0.189 at step 4; residual 0.58/0.85/0.84/0.45, diagonal displaced 0.125/0.140/0.129/0.056. A1v: star(0) then star(4) in 5 records ((0,1)(0,2)(0,4)(4,5)(4,6)), residual 0.671 after its 3rd.
+PASS A7 T5 sea conditioned on two edges of one star 0.577350, two parallel z-edges 1.000000, two far edges 0.816497=sqrt(2/3), a whole star 1.4e-14, three edges not a star 1.290994, the z-matching 1.323435. Scan of 12 trees (A1, identity, A1v, B x tau 0.5/0.1/2.0; 5246-5822 nodes): non-eigenvector nodes (res > 1e-6) with invariant diagonal (< 1e-9) 0 of 27848; eigenvector nodes displaced 0 of 40672; min displacement among non-eigenvector nodes 7.1e-05/8.2e-04/3.6e-03 at tau 0.1/0.5/2.0.
+PASS A8 rule E on the cube, best-site residual (min over all branches): tau=0.5 0.577/0.685/0.671/0.643/0.552/0.512/0.496 at steps 1-7 (min 0.496), first eigenvector site at step 9 (4 free edges left); tau=0 0.577/0.577/0.000/0.577 -- the third record completes star(0) exactly, but after one tau=0.5 tick that completion leaves 0.671; E's final law at tau=0.5: TV 0.362828, 0/256 cancellation.
+PASS B1 [exact; 1e-10] slab 2x2x3 open in z: degrees 343343343343, 20 edges, 11 faces, R0-R4 True, k=9, code 2048, flux {-1} x11, |J|=473088; sea by Lanczos + 20 polish steps: E=-10.828427124746=-(8+2sqrt2) (0.0e+00; the sequential Rayleigh quotient is off by 3.8e-12), resid 2.5e-15, support 411648; eps(sea) -0.500000 x12 / -0.603553=-(1+sqrt2)/4 x8; corner -1.0000 (deg 4) / -0.8536 (deg 3); one-edge residual 0.612372=sqrt(3/8) / 0.563792.
+PASS B2 [1e-10] T3 6 records, tau=0.5, full 20-edge law vs the sea (A1/A1v/A2/A2v/B/E/C): after one 0.1148/0.1148/0.1259/0.1387/0.1259/0.1259/0.1148 (support 436224-458752 > 411648), after six 0.3727/0.2116/0.3895/0.4089/0.3431/0.3167/0.3156; order: A1 (0,1)(3,4)(6,7)(9,10)(5,11)(2,8) A1v (0,1)(0,3)(0,6)(6,7)(6,9)(3,9) A2v (1,4)(7,10)(1,7)(0,3)(5,11)(2,8) E (0,3)(0,6)(6,9)(1,7)(0,1)(6,7). tau=2.0: A1/C 0.0268/0.0268 after one, 0.353/0.347 after six.
+PASS B3 [1e-10] T3 leaf-TV on the formed sites is blind: <= 7.2e-14 at three records for every rule while the full law is 0.207-0.314 away; A2/A2v stay at 2.6e-14/2.1e-14 through six (full law 0.389/0.409); A1 0.000/0.152/0.152/0.152 at records 3-6, A1v 0.118 at 5, B/E/C 0.079/0.146/0.023 at 6 only.
+PASS B4 [1e-9] rule E on the slab: best-site residual 0.5638/0.6358/0.6389/0.6943/0.6829/0.7354 at records 1-6, identical across a level's branches (spread <= 1.3e-15), never 0, ending above where it began; residual along every path 0.50-1.37, diagonal displaced per tick 0.078-0.291.
+PASS B5 T4 slab A1: contrast 1.000000 at step 1, then 8.4/8.4/10.4/5.0/8.7 with greedy odds 0.440/0.466/0.611/0.311/0.579 at steps 2-6, the parallel z-edges (0,1)(3,4)(6,7)(9,10) first (a matching); A2v forms the degree-4 corners' middle edges (1,4)(7,10)(1,7) first and is worst at six records (0.4089 = max of 0.373/0.212/0.389/0.409/0.343/0.317/0.316).
+PASS B6 [1e-11] T6 tau=0: rule E on the sea forms (0,3)(0,6)(0,1)(1,2)(2,5)(2,8) = star(0) then star(2), best residuals 0.5638/0.5210/0.2071/0.5210/0.5638/0.0000; each degree-3 star alone leaves 0.207107=(sqrt2-1)/2 (0.207107/0.207107); the pair star(0) u star(2) restores the eigenvector property exactly: residual max 2.1e-15 over its 64 outcomes; control full-law TV <= 0.0e+00.
+PASS B7 [1e-11] T6 the six-record JOINT tick on star(0) u star(2) at tau=0.5: residual max 2.1e-15 (64 outcomes), diagonal displaced max 4.0e-16, full-law TV 3.6e-16, support 411648; the same six sites one at a time with tau=0.5 ticks (rule C): 0.3156. D star(4) then star(7): full-law TV 2.4e-16/3.3e-16 at 4/8 records, residual max 2.7e-15/3.9e-15, support 411648.
+PASS B8 [timing] cube 124 trees 2 s, slab sea 12 s, nine slab trees to 6 records 19 s, total 35 s < 180 s; no dense object above 4096 x 4096, no seed.
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+
