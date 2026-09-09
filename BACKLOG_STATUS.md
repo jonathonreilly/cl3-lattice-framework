@@ -18,7 +18,7 @@ W39 lands #7954/#7956/#7971/#7975/#7978/#7979 after same-session confirmations. 
 
 Astra low remains the focused landing-review default; unresolved consequential mathematics escalates to Astra xhigh. Reuse original review and same-session correction confirmation. Detailed certification waits for audit; the [pilot](REVIEWER_MODEL_PILOT.md) is one workload, not a general cost guarantee.
 
-Shear #7951/#7970/#7987 is under author correction after ten material finding groups. Original reviews are active for readout #7901/#7969 and fermion response #7974/#7985. No pending unit receives acceptance. Maxwell's production and broader physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
+Shear #7951/#7970/#7987 corrections are in final execution; the coordinator has read their complete correction view and final source delta. Readout #7901/#7969 original review is complete with six material findings and author correction assigned. Fermion response #7974/#7985 remains in original review. No pending unit receives acceptance. Maxwell's production and broader physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
 
 ## Landed source history
 

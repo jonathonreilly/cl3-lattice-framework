@@ -50,7 +50,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W39 lands six record-matter/sandwich PRs. Fixed backlog: 61 open; 122 reviewed science scopes landed plus eight partial Maxwell scopes with explicit holds. 57 earlier closures remain pending at four open successors. Shear corrections and readout/fermion-response reviews continue; formal audit deferred.
+1. W39 lands six record-matter/sandwich PRs. Fixed backlog: 61 open; 122 reviewed science scopes landed plus eight partial Maxwell scopes with explicit holds. 57 earlier closures remain pending at four open successors. Shear final corrected runs, readout author corrections and fermion-response original review continue; formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
