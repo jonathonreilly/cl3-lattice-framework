@@ -1,6 +1,6 @@
 # Claim Status Certificate
 
-Scope: real scalar node, five pair classes, bounded soft/resolvent/Laplace identities, infinite pair gap h/6, and complete improved tail. No node value, finite-size h/6 threshold, or interacting phase.
+Scope: real scalar node, five pair classes, bounded soft/resolvent/Laplace identities, infinite pair gap h/4, and complete improved tail. No node value, finite-size h/4 threshold, or interacting phase.
 
 actual_current_surface_status: conditional-support
 trace_class: frontier_discovery

@@ -21,8 +21,8 @@ for pair,expected in zip(reps,[6,12,12,12,48]):
  for element in orbit:req(element in pairs,'actual disjoint pair')
  seen|=orbit;sizes.append(len(orbit))
 req(seen==pairs and len(pairs)==90,'complete ordered coverage')
-# Exact Taylor lower bound exp(delta*T), fixed h=1, delta=1/4, beta upper=3.
-delta=F(1,4);T=F(100);beta=F(3);x=delta*T;term=F(1);lower=term
+# Exact Taylor lower bound exp(delta*T), fixed h=1, delta=1/6, beta upper=3.
+delta=F(1,6);T=F(160);beta=F(3);x=delta*T;term=F(1);lower=term
 for n in range(1,161):term=term*x/n;lower+=term
 tail=F(90,8)*(2/delta**2+beta*T/delta**2+2*beta/delta**3)/lower
 req(tail<F(1,10**6),'complete improved tail')

@@ -23,12 +23,4 @@ for n in range(1,13):
  power=mul(power,z);integral+=sum(v/F(i+1) for i,v in enumerate(power))/n
 lower=F(7,44)*integral
 if not lower>F(1,6):raise ValueError('gap comparison')
-opposite=F(3,8)*(F(4,7)+F(40,343))
-if not opposite>F(1,4):raise ValueError('opposite quarter gap')
-tail=F(0)
-for j in range(16,320):
- left=F(j,16);right=F(j+1,16)
- tail+=F(7,44*16)*(24-8/left**2)/(right**2+7)**2
-if not tail>0:raise ValueError('positive perpendicular tail')
-if not lower+tail>F(1,4):raise ValueError('perpendicular quarter gap')
-print(json.dumps({'return_cutoff':N,'return_partial_exact':str(s),'return_partial_less_than':'3/2','tail_upper':'1/5','A0_upper':'17/60','log_terms':12,'gap_lower_exact':str(lower),'gap_lower_exceeds_1_6':True,'opposite_lower_exact':str(opposite),'perpendicular_tail_exact':str(tail),'tail_intervals':304,'perpendicular_quarter_lower_exact':str(lower+tail),'both_gap_lower_exceed_1_4':True,'seconds':time.monotonic()-start,'physical_runs':0},indent=2))
+print(json.dumps({'return_cutoff':N,'return_partial_exact':str(s),'return_partial_less_than':'3/2','tail_upper':'1/5','A0_upper':'17/60','log_terms':12,'gap_lower_exact':str(lower),'gap_lower_exceeds_1_6':True,'seconds':time.monotonic()-start,'physical_runs':0},indent=2))

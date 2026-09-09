@@ -1,7 +1,7 @@
 ---
 claim_id: native_infinite_star_node_reduction_note_2026-09-09
 claim_type: bounded_theorem
-claim_scope: "Supplied canonical infinite Gaussian reference: real scalar native star node, exact soft-resolvent and Laplace representation, and infinite two-link impurity gap h/4. The scalar remains unevaluated."
+claim_scope: "Supplied canonical infinite Gaussian reference: real scalar native star node, exact soft-resolvent and Laplace representation, and infinite two-link impurity gap h/6. The scalar remains unevaluated."
 upstream_dependencies:
   - native_star_thermodynamic_limit_note_2026-09-09
   - native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08
@@ -18,9 +18,9 @@ Use the [thermodynamic star theorem](NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-0
 
 Put \(h=2|t_{\rm hop}|>0\). For a two-edge star subset \(A\), let \(B_A\) reverse precisely those two real nearest-neighbor Majorana couplings and write \(H_A=H+B_A\). Initially the parent supplies \(D_A=H_A-E_0\ge\delta I\), \(\delta=6\kappa>0\). The present theorem strengthens the **infinite** inequality to
 \[
-D_A\ge \frac h4 I.
+D_A\ge \frac h6 I.
 \]
-It also identifies a unique real number \(\alpha\) at the folded Dirac node and expresses it through bounded impurity resolvents, with an explicit imaginary-time tail. Neither a finite-\(L\) threshold for \(h/4\), a value of \(\alpha\), a free effective interacting model, nor a bulk phase follows.
+It also identifies a unique real number \(\alpha\) at the folded Dirac node and expresses it through bounded impurity resolvents, with an explicit imaginary-time tail. Neither a finite-\(L\) threshold for \(h/6\), a value of \(\alpha\), a free effective interacting model, nor a bulk phase follows.
 
 ## 1. The actual star transition and its unique node value
 
@@ -140,12 +140,8 @@ For \(X=4h^2\sum\sin^2k_a\), \(\mathbb EX=6h^2\) and \(\mathbb EX^2=42h^4\). Cau
 \[
 1-z=\mathbb E\frac X{s^2+X}\ge\frac{6h^2}{s^2+7h^2}. \tag{5}
 \]
-For opposite pairs put \(g=(8/9)(1-z)^2\ge32h^4/(s^2+7h^2)^2\). Retaining two positive logarithmic terms, \(-\log(1-g)\ge g+g^2/2\), gives
-\[
-\frac{\Delta E_O}{h}\ge\frac1{\sqrt7}\left(\frac47+\frac{40}{343}\right)
->\frac38\left(\frac47+\frac{40}{343}\right)=\frac{177}{686}>\frac14.
-\]
-The integrals are \(\int_0^\infty(s^2+a^2)^{-2}ds=\pi/(4a^3)\) and \(\int_0^\infty(s^2+a^2)^{-4}ds=5\pi/(32a^7)\), from \(s=a\tan\theta\) and the cosine-power recursion. The energy prefactor remains \(1/(2\pi)\); \(\sqrt7<8/3\) supplies the rational bound.
+For opposite pairs, \(-\log d_O\ge1-d_O\) gives
+\(\Delta E_O\ge4h/(7\sqrt7)>h/5\).
 
 For perpendicular pairs write \(u=s^2/h^2\). Monotonicity in \(A\) and (5) give
 \(d_P\le1-(24-8/u)/(u+7)^2\le1\) when \(u\ge1/3\).
@@ -161,18 +157,7 @@ This increasing polynomial satisfies \(P(1)<1\), proving \(d_P\le1\) on the rema
 \]
 Here \(1/(2\pi)>7/44\); the rational comparison is computed directly, not fitted to a physical spectrum.
 
-Retaining the previously omitted positive tail strengthens (6). In units \(h=1\), for \(s\ge1\),
-\[
--\log d_P(s)\ge1-d_P(s)\ge\frac{24-8/s^2}{(s^2+7)^2}\ge0.
-\]
-For \(a_j=j/16\), \(b_j=(j+1)/16\), \(j=16,\ldots,319\), a lower rectangle on \([a_j,b_j]\) uses the increasing numerator at \(a_j\) and denominator at \(b_j\). Thus the contribution over \([1,20]\) is at least
-\[
-c_{\rm tail}=\frac7{44}\sum_{j=16}^{319}\frac1{16}
-\frac{24-8/a_j^2}{(b_j^2+7)^2}.
-\]
-Adding this exact rational number to the right side of (6) gives more than \(1/4\). No monotonicity of their ratio is assumed. The omitted contribution beyond 20 is nonnegative. Therefore \(\Delta E_P>h/4\) as well. The earlier \(h/6\) proof and source are preserved in the packet; this improvement uses the same Green-function bound and adds positive contributions.
-
-For every \(s>0\), AP Riemann sums give \(A_L(s)\to A(s)\). The parent's shifted-grid inverse-square bound controls \(A_L(0)\) uniformly; together with \(d_{F,L}\ge1/9\) it bounds the logarithms near zero. The unchanged \(\operatorname{Tr}K^2\), or direct expansion of (2), gives a uniform \(O(s^{-4})\) logarithmic tail. Dominated convergence identifies the limit of (3). Finite inequalities \(H_L+B_A-E_{0,L}\ge\Delta E_{A,L}\) then pass on local polynomial vectors to the infinite GNS quadratic form. The parent's local core and bounded perturbation extend this to \(D_A\ge h/4\). No impurity ground vector, Bogoliubov implementability, or explicit finite-size threshold is needed.
+For every \(s>0\), AP Riemann sums give \(A_L(s)\to A(s)\). The parent's shifted-grid inverse-square bound controls \(A_L(0)\) uniformly; together with \(d_{F,L}\ge1/9\) it bounds the logarithms near zero. The unchanged \(\operatorname{Tr}K^2\), or direct expansion of (2), gives a uniform \(O(s^{-4})\) logarithmic tail. Dominated convergence identifies the limit of (3). Finite inequalities \(H_L+B_A-E_{0,L}\ge\Delta E_{A,L}\) then pass on local polynomial vectors to the infinite GNS quadratic form. The parent's local core and bounded perturbation extend this to \(D_A\ge h/6\). No impurity ground vector, Bogoliubov implementability, or explicit finite-size threshold is needed.
 
 ## 5. Laplace target and explicit tail
 
@@ -186,13 +171,13 @@ Expanding the negative inverses in (1) gives
 \left\langle E_C(t)E_A(s)+\frac12Z_C(t)\gamma_vE_A(s)
 -\frac12E_C(t)\gamma_vZ_A(s)\right\rangle. \tag{7}
 \]
-The minus sign in \(Z_A\) is essential. For \(\delta=h/4\), the absolute integrand is at most
+The minus sign in \(Z_A\) is essential. For \(\delta=h/6\), the absolute integrand is at most
 \(e^{-\delta(t+s)}[1+\beta(t+s)/2]\). Consequently the complete 90-term error outside \([0,T]^2\) is at most
 \[
 \frac{90}{8}e^{-\delta T}
 \left(\frac2{\delta^2}+\frac{\beta T}{\delta^2}+\frac{2\beta}{\delta^3}\right). \tag{8}
 \]
-Using \(\beta<3h\), the fixed choice \(T=100/h\) makes (8) less than \(10^{-6}/h^2\). The supporting runner verifies this with an exact rational lower Taylor bound on the exponential. This is a tail certificate, not a pointwise Gaussian arithmetic, quadrature, or finite-box certificate.
+Using \(\beta<3h\), the fixed choice \(T=160/h\) makes (8) less than \(10^{-6}/h^2\). The supporting runner verifies this with an exact rational lower Taylor bound on the exponential. This is a tail certificate, not a pointwise Gaussian arithmetic, quadrature, or finite-box certificate.
 
 ## 6. Evidence and remaining obligation
 

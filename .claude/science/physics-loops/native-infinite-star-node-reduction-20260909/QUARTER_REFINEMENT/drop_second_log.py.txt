@@ -23,7 +23,7 @@ for n in range(1,13):
  power=mul(power,z);integral+=sum(v/F(i+1) for i,v in enumerate(power))/n
 lower=F(7,44)*integral
 if not lower>F(1,6):raise ValueError('gap comparison')
-opposite=F(3,8)*(F(4,7)+F(40,343))
+opposite=F(3,8)*(F(4,7))
 if not opposite>F(1,4):raise ValueError('opposite quarter gap')
 tail=F(0)
 for j in range(16,320):

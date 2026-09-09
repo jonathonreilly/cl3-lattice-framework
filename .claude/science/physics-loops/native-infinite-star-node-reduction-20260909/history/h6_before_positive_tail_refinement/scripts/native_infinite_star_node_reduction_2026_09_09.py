@@ -21,8 +21,8 @@ def main():
   with contextlib.redirect_stdout(capture):exec(compile(data,str(file),'exec'),ns)
   groups[Path(path).stem]=json.loads(capture.getvalue())
  node,shift,gap,tail=groups.values()
- if node['status']!='PASS' or shift['status']!='PASS' or tail['status']!='PASS' or not gap['both_gap_lower_exceed_1_4']:raise ValueError('helper status')
- counts={'little_group':node['checks'],'shift_entries_and_vacuum':shift['entry_checks']+shift['two_inverse_vacuum_check'],'return_and_gap':5,'orbits_and_tail':tail['checks']}
+ if node['status']!='PASS' or shift['status']!='PASS' or tail['status']!='PASS' or not gap['gap_lower_exceeds_1_6']:raise ValueError('helper status')
+ counts={'little_group':node['checks'],'shift_entries_and_vacuum':shift['entry_checks']+shift['two_inverse_vacuum_check'],'return_and_gap':2,'orbits_and_tail':tail['checks']}
  rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
  if rss>384*1048576:raise ValueError('memory cap')
  out={'status':'PASS','checks':sum(counts.values()),'predicate_groups':counts,'groups':groups,'input_sha256':hashes,'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'elapsed_seconds':time.monotonic()-start,'peak_rss_bytes':rss,'physical_runs':0,'actual_current_surface_status':'conditional-support','alpha_evaluated':False}

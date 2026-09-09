@@ -1,3 +1,3 @@
-# Delivery ownership
+# Review delivery
 
-Root integrates after full canonical review; author has not built graph, committed, pushed, or opened a PR.
+PR8066 is open, stacked on8063. The h/4 refinement is independently confirmed and queued for the same branch update. No main merge or audit performed.
