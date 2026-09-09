@@ -1,0 +1,11 @@
+# Prospective direct worker runtime package, unauthorized
+
+Baseline c019 remains unchanged. This sibling adds the single-worker wrapper and fixed prospective CONTRACT. ROOT_AUTHORIZATION is absent. No native matrix, candidate, action or vector execution has occurred. Baseline implementation-only descriptions are retained as history.
+
+Actual-I-B parser, loaded-source origin guards, lateNPY/compression imports and fixed2x2 non-native SVD readiness passed at a1b. The wrapper streams runtime hashes, compiles verified local bytes, and requires matching contract/source authorization before worker entry. Mathematical helpers and worker remain c019 copies. Failure retains STAGES/PARTIAL and no replacement is possible.
+
+The contract fixes four direct candidates once, maximum164Spin passes each, four fresh cert actions, nine scans,27transports and11NPY saves including certificate duplicates. Thresholds unchanged. Production180/internal175; replay150/internal145; prior14; combined360;384MiB sampled whole-tree and perworker highwater. Only one root supervisor plus one worker may be resident. Separate outer receipt includes startup/checking/post; worker COMPLETE is production-only pending independent replay.
+
+Exact rational cost forecast uses maximum measured plane time from12 fixed cases, maximum new/old action and norm costs, oldtransport0.05441, new savebridge. Three times all counted work plus60 seconds for four small SVDs, diagonal passes, source sums/center actions, startup/FP/error arithmetic/hashing and unallocated work is111.81240035188482s<180. Adding150 replay reserve+14 prior gives275.81240035188483<360. Fixed stagecaps+prior344 leave16 seconds of overall supervisory reserve. These are planning estimates, not runtime guarantees or convergence claims. Whole topology cost9ee passed; its nine banks conservatively cover source-level live arrays, not arbitrary future modifications.
+
+Independent replay2956446e has matching150/145caps and unchanged scientific kernel. Root must bind final replay and exact source/contract in the independent supervisor, review complete source and checkpoint before authorization. No auth is generated here. Failure closes the new fixed attempt; old CG remains closed separately.

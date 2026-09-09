@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Thirty-fourth campaign checkpoint
 
 Updated 2026-09-09T02:15:17.146481+00:00. The 48-hour campaign continues through 2026-09-10 10:27:17 UTC, subject to available account usage. No reset credits, main landings or formal audit verdicts. 25 open science PRs, latest8060, provide conditional support within supplied models; no TOE closure.
 
