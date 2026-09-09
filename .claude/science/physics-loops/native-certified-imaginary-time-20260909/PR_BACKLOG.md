@@ -1,3 +1,1 @@
-# PR_BACKLOG
-
-Await root source review and independent canonical review before supporting execution and delivery.
+Prepared for one conditional-support science PR againstcodex/native-certified-local-green-scalars-20260909. No merge.
