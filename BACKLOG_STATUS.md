@@ -1,24 +1,24 @@
 # Backlog review and landing — current handoff
 
-Updated after wave38 at 2026-09-09T03:56:07.313678+00:00. Main is `e4d8bd11df12559138543a3129ea4e7b38f23ebf`.
+Updated after wave39 at 2026-09-09T04:25:24.404932+00:00. Main is `06b09a9a5642a4753936044531db5ccad0a48953`.
 Fixed original 254 cutoff; new arrivals excluded. Formal audit deferred until a solid TOE.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 77 |
+| Closed directly after reviewed landing | 83 |
 | Closed by draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner reservations | 67 |
+| Still open, including three owner reservations | 61 |
 | Original membership | 254 |
 
-116 corrected original science scopes landed: 74 direct + 42 consolidated. **Eight additional original scopes have corrected Maxwell portions on main while broader production/physical claims remain held.** They are not complete original scientific acceptance. Of 110 other closures: 42 corrected scopes landed, 57 pending at four open successors, seven partial landings with explicit holds, two starting-main supersessions, one empty, one unexecuted plan. Zero original drafts; reservations apply transitively.
+122 reviewed original science scopes landed: 80 direct + 42 consolidated. **Eight additional original scopes have corrected Maxwell portions on main while broader production/physical claims remain held.** They are not complete original scientific acceptance. Of 110 other closures: 42 corrected scopes landed, 57 pending at four open successors, seven partial landings with explicit holds, two starting-main supersessions, one empty, one unexecuted plan. Zero original drafts; reservations apply transitively.
 
-Including seven pre-cutoff arrivals #8003–#8009, session 84 direct closures, 38 science/source batches and 151 new source documents. 37 batches passed one combined gate; W14's actual repaired retry is preserved. Main ledger 4,570 = 4,198 unaudited science + 372 meta; 56 notes await mechanical refresh. Generated validation preserved and stripped; no formal auditor or verdict.
+Including seven pre-cutoff arrivals #8003–#8009, session 90 direct closures, 39 science/source batches and 157 new source documents. 38 batches passed one combined gate; W14's actual repaired retry is preserved. Main ledger 4,570 = 4,198 unaudited science + 372 meta; 62 notes await mechanical refresh. Generated validation preserved and stripped; no formal auditor or verdict.
 
-W38 lands #7925/#7929/#7938/#7910/#7940 after original-session confirmations of 18 finding groups and 27 source scopes. Five genuine final primaries total 95/0; all 81 original primary predicates remain. All 15 original bodies are preserved. The same 4,096-state Fock fixture uses a checked sparse computation. All 33 source/manifest hashes were verified on remote main. One combined gate passed in 237.652 seconds. Corrected conditional finite model results only: uniform response, occupation pinching, surrogate feedback, numerical Regge spectra/static response and conditional algebra. Physical source/carrier/clock/metric/graviton/curvature/cosmology, global spectral/torus classification and nonlinear completion remain open. See [wave38 evidence](backlog_evidence/wave38/INDEX.json).
+W39 lands #7954/#7956/#7971/#7975/#7978/#7979 after same-session confirmations. Record-matter's 85 original files are unchanged; six registry lines attach the three missing independent checkers. Its eight actual original runs passed 96 checks. Sandwich's two corrected primaries passed 67 checks; all 59 original predicates and six exact historical originals remain. All 101 source/manifest hashes were verified on remote main. One combined gate passed in 241.480 seconds. Supplied-model Slater factorization, fixed-half repulsive-flux comparison, quench energy/overlap and shared-battery apparatus results; finite fresh-seed sandwich census. Physical formation, clock, apparatus compilation, seed/sign selection and TOE identification remain open. See [wave39 evidence](backlog_evidence/wave39/INDEX.json).
 
 Astra low remains the focused landing-review default; unresolved consequential mathematics escalates to Astra xhigh. Reuse original review and same-session correction confirmation. Detailed certification waits for audit; the [pilot](REVIEWER_MODEL_PILOT.md) is one workload, not a general cost guarantee.
 
-W39 combines six PRs: sandwich #7954/#7956 corrections are independently confirmed, and record-matter #7971/#7975/#7978/#7979 awaits final confirmation of three checker registrations. Shear #7951/#7970/#7987 has ten material finding groups under author repair. Readout #7901/#7969 original review is active. No pending unit receives acceptance; Maxwell production and broader physical holds remain explicit in reconciliation.
+Shear #7951/#7970/#7987 is under author correction after ten material finding groups. Original reviews are active for readout #7901/#7969 and fermion response #7974/#7985. No pending unit receives acceptance. Maxwell's production and broader physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
 
 ## Landed source history
 
@@ -359,3 +359,5 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Corrected finite Maxwell portions and preserved production history | `26e73b727db1732dd89f74461114e4873c4ddef9` | `backlog_evidence/wave37` |
 
 | Conditional finite gravity response and Regge source | `e4d8bd11df12559138543a3129ea4e7b38f23ebf` | `backlog_evidence/wave38` |
+
+| Supplied-model record matter and corrected finite sandwich science | `06b09a9a5642a4753936044531db5ccad0a48953` | `backlog_evidence/wave39` |

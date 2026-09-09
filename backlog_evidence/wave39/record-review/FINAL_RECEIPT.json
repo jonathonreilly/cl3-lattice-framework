@@ -1,0 +1,704 @@
+{
+  "verdict": "CHANGES_REQUIRED",
+  "review_kind": "focused original independent landing review; no formal audit",
+  "created_utc": "2026-09-09T04:08:22.608116+00:00",
+  "base": "fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8",
+  "selected_tree": "aff98b6aec1083141fcc67d567eca70c9331e3ef",
+  "latest_main": "e4d8bd11df12559138543a3129ea4e7b38f23ebf",
+  "constituent_heads": {
+    "7971": "2f63762523c76b349e0daee90cc09239e38f5030",
+    "7975": "b75f756e0d98ebaffde99b1a2e66abc3ab326cba",
+    "7978": "c2555295e9f0211d7e04d7229d72e741c1c1f9ad",
+    "7979": "2ddf1137394d7794160b67130fb59cbfe05e6e68"
+  },
+  "source_paths": 85,
+  "scientific_files_completely_read": 20,
+  "history_preserved": 65,
+  "original_successful_executions_once": 8,
+  "passing_original_checks": 96,
+  "material_findings": 3,
+  "material_mathematical_residuals": 0,
+  "source_edited": false,
+  "artifacts": [
+    {
+      "path": "ACTUAL_CONSUMERS.json",
+      "sha256": "22a0a2612a955dc23c8863ed84f46f0c14ee3283ecfda4c304f271d1f1b818d7",
+      "bytes": 4976
+    },
+    {
+      "path": "CURRENT_MAIN_BINDING.json",
+      "sha256": "5e3dc5ed9c33e26e82d9e47681f9a7d852748d05568ada8d85a099cf8b108356",
+      "bytes": 21081
+    },
+    {
+      "path": "CUTOFF_ENTRIES.json",
+      "sha256": "4c0d06a8d639561c3e6ec837871b26d51e3ea8062a6446022e140e732e06ffd7",
+      "bytes": 11711
+    },
+    {
+      "path": "DECISIVE_CONTROLS.json",
+      "sha256": "a68689cfd754b8afbea9ce19ad16bcd7916dca39da8c3f63721bf7301eeeee99",
+      "bytes": 6049
+    },
+    {
+      "path": "EXECUTION_PRESERVATION.json",
+      "sha256": "e20ac47c41a9a3f0feb79f1b13072dd4d2805ae80f30b9647faccf15b9ad0e09",
+      "bytes": 4800
+    },
+    {
+      "path": "FINAL_ENDPOINT_MAP.json.gz",
+      "sha256": "f68e5e8dadab2f064159020c157fb23e9a2696a5808d251bc56bf8be3473f875",
+      "bytes": 2831531
+    },
+    {
+      "path": "FINDINGS.json",
+      "sha256": "e08cc83dd1ad345c2a6776dc462a7c68b2edf453bea1b17757913bcff28f286c",
+      "bytes": 4455
+    },
+    {
+      "path": "FULL_ENDPOINT_MAP.json.gz",
+      "sha256": "37c55c946b166d02cf5b9db615641be8cdb4912c9ee4b40dca1bbdcc841f0a05",
+      "bytes": 2262882
+    },
+    {
+      "path": "LAUNCH_PROBE.json",
+      "sha256": "d25e63bd2ae72e760f32d68289d14878b740844d6e4108581aec18cbacd756db",
+      "bytes": 835
+    },
+    {
+      "path": "ORIGINAL_EXECUTIONS.json",
+      "sha256": "88fbabb011c5b177bc65e764e52dc21a6100b49db299a9d9f72173852ce2d499",
+      "bytes": 41030
+    },
+    {
+      "path": "PREPARATION.json",
+      "sha256": "177744ebb0fe446fddcf140219ee49be3c9a603a451b4b6980ed7471649afa0a",
+      "bytes": 82231
+    },
+    {
+      "path": "PREPARATION_INCIDENTS.md",
+      "sha256": "c6f2acd4b982fb15253e2c3bccb922894938f40564fac32021e041bc39dee723",
+      "bytes": 1024
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "eebab29d56ce4f93ad8e4655bdc0cd3f6faaa7c7518a52ee2b9b9210d2fc97d5",
+      "bytes": 7423
+    },
+    {
+      "path": "RESOURCE_PREFLIGHT.json",
+      "sha256": "71ae3d1002f859b1796cf832c939f7256ebcb13c3b73ee4b754d9f4236a6556c",
+      "bytes": 4274
+    },
+    {
+      "path": "REVIEW_RECORD.json",
+      "sha256": "94d96874ea0667d899b803a5681ebc6e98d92b18f08803e361168f03c9245d4b",
+      "bytes": 114700
+    },
+    {
+      "path": "context-KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "context-MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "context-PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427
+    },
+    {
+      "path": "context-REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "context-axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "decisive_controls.mutation-selection-failed.py",
+      "sha256": "f886445d525c03585e7b6e6ff6b9b7d6817d7af8c6a12266b25b72a72ab88e5b",
+      "bytes": 6801
+    },
+    {
+      "path": "decisive_controls.py",
+      "sha256": "4e39d24f9d02ee1bbf024137de863b0b22bc6eed5b208ac89d7023f3a02e9c91",
+      "bytes": 6895
+    },
+    {
+      "path": "inspect_consumers.py",
+      "sha256": "a6350a78f24b048bd94e29533730c6fa80a60cc37ac5fcc7acc397295cfbffbf",
+      "bytes": 1475
+    },
+    {
+      "path": "launch-probe/scripts/probe.py",
+      "sha256": "8789cfc6583be34a6e1942f44c9ffc13861df16a9ee22f25ad896e778f15b61d",
+      "bytes": 147
+    },
+    {
+      "path": "original-executions/cubic_repulsive_flux_fixed_half_2026_09_04.txt",
+      "sha256": "f42a2e02a1cbc1fd76efec5c848883292df514573c67d49a16fff8d8d307b3d0",
+      "bytes": 1576
+    },
+    {
+      "path": "original-executions/cubic_repulsive_flux_fixed_half_independent_check_2026_09_04.txt",
+      "sha256": "642165e203f558a5a3a9605a4d9d8032f7c8450398ecbe8c9b30d1624defd3b8",
+      "bytes": 1022
+    },
+    {
+      "path": "original-executions/local_record_quench_energy_and_ground_overlap_2026_09_04.txt",
+      "sha256": "0c171c6840203b6717b3bfeeac2cd2658f3b95c7e2e26e64804b1e2a44078989",
+      "bytes": 2750
+    },
+    {
+      "path": "original-executions/local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04.txt",
+      "sha256": "abe6710121816ede73cc9a13f2cd7c1a34b5e817fcca79910e66a1951a06ac19",
+      "bytes": 1113
+    },
+    {
+      "path": "original-executions/record_formation_partial_class_dispersion_2026_09_04.txt",
+      "sha256": "3df1df5d166709bcdffc7730f06f4bbc03dab9c409c5691b96361c250880b5b6",
+      "bytes": 4145
+    },
+    {
+      "path": "original-executions/record_formation_partial_class_dispersion_independent_check_2026_09_04.txt",
+      "sha256": "319ad73565f36ff653477947839fed150402f43b358a26aedfd928e5240b5eae",
+      "bytes": 2779
+    },
+    {
+      "path": "original-executions/repeated_record_matter_energy_apparatus_2026_09_05.txt",
+      "sha256": "3ef7ad319d12018437b6a8796f42c940b8a751ae6f9cfb30cf518287f7d511a4",
+      "bytes": 5573
+    },
+    {
+      "path": "original-executions/repeated_record_matter_energy_apparatus_independent_check_2026_09_05.txt",
+      "sha256": "41d76c9443ba12a0495bd5d489e1cd964dd965d012ca463f9d1b2c4d9abf6ff5",
+      "bytes": 1792
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/APPROACH_REGISTRY.md",
+      "sha256": "474807ffebfd679a09e94db77a54b570e160aa4f84b1629a9ca09a03b4cab2d8",
+      "bytes": 1185
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/ARTIFACT_PLAN.md",
+      "sha256": "4132034480d35ad4a4fc1904da1c39be355d150c3fe967013c3e87e0155405d7",
+      "bytes": 891
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "acbf651dcb0e69080b084f5dddeb404daa3f5265e1550cf9540a39b60b6b503f",
+      "bytes": 1155
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "874ea0cd00381e5637439fbac30b2c114fb627cf9f227870a6f19a7373e6e6d8",
+      "bytes": 1223
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/GOAL.md",
+      "sha256": "bf52cf91da29ebf3c6e7608c98896d6faa53d3cc83016a08f79ed987a580bb17",
+      "bytes": 952
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/HANDOFF.md",
+      "sha256": "5a651a77721f8ed6711dfb9ecfb82304208ebe133a84cfec2fb13e9c285190bc",
+      "bytes": 1312
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/LITERATURE_BRIDGES.md",
+      "sha256": "82067be3a3ae36cc9fb3be0324e6a4d8b50194f81d980c3908ad986ea4920f03",
+      "bytes": 1257
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/MUTATION_CHECKS.md",
+      "sha256": "8b0bedf94739bc009c07e4a444ec1b58a9d7d85c0241906baadf15148e2d8651",
+      "bytes": 11318
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/NO_GO_LEDGER.md",
+      "sha256": "a98f47c583f38489e0d6d2797219ebe86127ecdb40600198aa4d83c9adfe4b04",
+      "bytes": 610
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/OPEN_PR_HEADS.json",
+      "sha256": "59dafc6bc80629f3188701d2b97e3fba8f04aebd30aaa4fccd5428f41e257765",
+      "bytes": 53005
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/OPEN_PR_INTAKE.md",
+      "sha256": "5dfe5c71276c15eda400feb2900a3eb62427967245614dc4063efe26548a4965",
+      "bytes": 3134
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/OPPORTUNITY_QUEUE.md",
+      "sha256": "84861b8f5fb8ed4bfe017437c1fed4508ef8622ad65822a8985f9ceef32bbed7",
+      "bytes": 1281
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/PR_BACKLOG.md",
+      "sha256": "36a237d5cea0b6616dedb9bbfb366992ac0d29d01abecdec58845d0840f3dd77",
+      "bytes": 481
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/REVIEW_HISTORY.md",
+      "sha256": "45ad0f2aa74005004580b97b23c8d50ebe4dfc0a05df954ac99ed7b39bd60c7f",
+      "bytes": 8807
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/ROUTE_PORTFOLIO.md",
+      "sha256": "09d43c06a972d10ac2126ebd843abee81f616bedecce62388cb23e0f5bbb0710",
+      "bytes": 842
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/STATE.yaml",
+      "sha256": "0cb572a3f044fc1d8be979ee8ebd6e93c9f9ef1d34db109d38559e160cd6c9b0",
+      "bytes": 1177
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block02-20260904/TRACE_GATE.md",
+      "sha256": "9bf20469c4a50620ebb27a73e0c51071da453df3c614b1c0f91fa2ae927d94aa",
+      "bytes": 1239
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/APPROACH_REGISTRY.md",
+      "sha256": "5343b6c90f60d4f5df5355adf91349e49951df18b9c931ebf26a77206055d26c",
+      "bytes": 1207
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/ARTIFACT_PLAN.md",
+      "sha256": "899e3133b86b2a1642c281d358d500f9fd5e2e13d10c98516bfb21ba7ca673c7",
+      "bytes": 1021
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "d6d565d6aac42f43ccac65699e76280b609d4bc3a3dabea7b39e5874fd8bd1a9",
+      "bytes": 1663
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "0ee4a3da481f1406d9aa0d80239e7d3ab2237d0b15b72d83cffb4375ccb73278",
+      "bytes": 1449
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/GOAL.md",
+      "sha256": "9c1415be6e530a487b7c6a1b7f544979994f1b3555bc8e77b1a14b52cf4a8d0b",
+      "bytes": 988
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/HANDOFF.md",
+      "sha256": "98778be0a5b620972ca62895f9c05a566e2ad5777e8eabc43cec298752c58dee",
+      "bytes": 2052
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/LITERATURE_BRIDGES.md",
+      "sha256": "5af5253f62079c4f84bfadf307efd80b7eb5cbfaa6c644f8905f7622aeeddf98",
+      "bytes": 1132
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/MUTATION_CHECKS.md",
+      "sha256": "c28330305e2fd54d0e286af96f0f36afe296adef711669c9b6f55697bc49a030",
+      "bytes": 7800
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/NO_GO_LEDGER.md",
+      "sha256": "f39414f7cd539e1a5febb8ea8b24595c6d6eebf613fb574106d943ed7a1bb6d9",
+      "bytes": 608
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/OPEN_PR_HEADS.json",
+      "sha256": "fdae2fc34a91b2ab386b10b6fed84b3bf8c4736dc27c3a5e3d110095530d104c",
+      "bytes": 53735
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/OPEN_PR_INTAKE.md",
+      "sha256": "a337de778f03ce714f6ded3434802023514bbe49970f81bae438aee8cb80b4a6",
+      "bytes": 2420
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/OPPORTUNITY_QUEUE.md",
+      "sha256": "ce62e79e0ebf46c222390bd007162cab8590df9ecf8516f7ec47193618385b77",
+      "bytes": 1546
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/PR_BACKLOG.md",
+      "sha256": "c82538f67556e02a1af215e9d20471decf6c9f9dd4f8d9d68d058ed9a43d6786",
+      "bytes": 493
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/REVIEW_HISTORY.md",
+      "sha256": "b1b9ee078803fece0ab8f6ce949c3c4da2e73f273623bde497984c6909b5404f",
+      "bytes": 7027
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/ROUTE_PORTFOLIO.md",
+      "sha256": "49e371bd00502cce8bccdf0f2149be3087b9b93673ea7ca677fd1cb131c9f49a",
+      "bytes": 765
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/STATE.yaml",
+      "sha256": "a607cacbd0a395ebd0f20f7e315c87f8308b179d559152fe49f3d826d49a9a03",
+      "bytes": 2158
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block03-20260904/TRACE_GATE.md",
+      "sha256": "890b5c192cc5e5e16c2f52a22dcbc7edcb2a430735c793dd38e14a93a2485abb",
+      "bytes": 1146
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/APPROACH_REGISTRY.md",
+      "sha256": "464d5a5886959bf180e11eb7fbfc7936c08509ca2edcd27f044b4d46c0ad8d16",
+      "bytes": 1741
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/ARTIFACT_PLAN.md",
+      "sha256": "bdd6c677b8c23c9e8eac47b1e8e00e73198a7e6b4ecf967767c57206066b9276",
+      "bytes": 851
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "7087e4d19d577b68d1ed08a6a69a27113ce08081942041ee0d7e168e07f2aa41",
+      "bytes": 2897
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "63218288818e187be49128df64647e190d1a88549fddfc368c63726128ebe8e2",
+      "bytes": 1508
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/GOAL.md",
+      "sha256": "3685ee294d5578f97303eff73d20e3e9b9c41f93b99a0c082f3f844d7cf09a10",
+      "bytes": 1962
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/HANDOFF.md",
+      "sha256": "1ca8d632bda3d090c64891cca72fc13ec83b76c9864faf7297c083bd19fe4955",
+      "bytes": 2745
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/LITERATURE_BRIDGES.md",
+      "sha256": "8cf0d5410c301150e829c9a6b7c9052d04f01fe4afed1cb93426fb65d0eabddf",
+      "bytes": 1563
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/MUTATION_CHECKS.md",
+      "sha256": "16c5a113c8e5fb4c6ca23b2fcaec1dbe5ce945f597e36130cbb60984649be6dd",
+      "bytes": 14914
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/NO_GO_LEDGER.md",
+      "sha256": "1c541de2bdb5fea992bc2de6826ca2ddce7360cde874abeace07542a414beaf5",
+      "bytes": 743
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/OPEN_PR_HEADS.json",
+      "sha256": "e8964f5c4bb037eed6ce81275b91db5360e2c295a77ddafff4442550303f0c24",
+      "bytes": 53925
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/OPEN_PR_INTAKE.md",
+      "sha256": "dc38a549dad2587176b94ade4865ed5d5696f9a1a72e918312355a2176f0bf75",
+      "bytes": 1981
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/OPPORTUNITY_QUEUE.md",
+      "sha256": "3dd444d82524d7cc05ad4324da944caabf00266702d5e4aeef8551a2227616d5",
+      "bytes": 1014
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/PR_BACKLOG.md",
+      "sha256": "7b759a3177dbf2e067728423766e531219bbf1b718741dcc6d1bf3b62d959932",
+      "bytes": 602
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/REVIEW_HISTORY.md",
+      "sha256": "ae3e2c15b1c26e226c239a8bf31dd955276cd881c07b068563c84ce10cd4812b",
+      "bytes": 8357
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/ROUTE_PORTFOLIO.md",
+      "sha256": "1f63b325ca53e0be78ebc0d334346d96bb7a78f6b159c180336fde1ec7535060",
+      "bytes": 1572
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/STATE.yaml",
+      "sha256": "756c08d06ab39cd89c1a552f06dc0280fd9392e00e4651e97eab0b8ba4cd985e",
+      "bytes": 2138
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-block04-20260905/TRACE_GATE.md",
+      "sha256": "9a1f34f9dcc321cf6676012a10318d3cbb4bd530b47690bde6d85ddb62938b58",
+      "bytes": 987
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/APPROACH_REGISTRY.md",
+      "sha256": "9fab005696b6eaddb31d924f0abd60246225ee41253e29ebc92e407c0d1d3b68",
+      "bytes": 1174
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/ARTIFACT_PLAN.md",
+      "sha256": "84040e783ae73442d8736bc209debb743daef591513b34e82726fc94cce7c47b",
+      "bytes": 1368
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "5d5057d611a6f9699e0d8602233befe5fbdc217998091265e2342a3cc4370399",
+      "bytes": 1618
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "7c417de013f7e1afb702d1dd9471c50efeb2dcf7b7468bbb7ef51f70e8eb8ad7",
+      "bytes": 775
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/GOAL.md",
+      "sha256": "97c9ab1ad436d476507868f84fa6a00f176420ee77b04ceb4108871132529c1b",
+      "bytes": 1433
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/HANDOFF.md",
+      "sha256": "66fc6e440d6b209386ea06ef881ae2cacde53a22f8c04624e23f3eb5e9334787",
+      "bytes": 3380
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/LITERATURE_BRIDGES.md",
+      "sha256": "bc56da4220300c9639c1d6d3b9f4e3daf76822afff0f82edb6052af5fcaffebf",
+      "bytes": 373
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/NO_GO_LEDGER.md",
+      "sha256": "81d00de0bd7e7503fca1dcccea91f2b47189f888d24b4c17521a087f231f169a",
+      "bytes": 712
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/OPPORTUNITY_QUEUE.md",
+      "sha256": "96cfea56d3e4e382b2d91e70fa85eba7ae7cf7dd9adb60d53797dc34be4e01b7",
+      "bytes": 1341
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/PR_BACKLOG.md",
+      "sha256": "b22c59d1f58c379ee4af806363be28f8a2126cfc03405b173362bdf428529342",
+      "bytes": 836
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/REVIEW_HISTORY.md",
+      "sha256": "ed655f4d7cf27c30dd654c6ad75c9efa7bb59e3186b3f82f84108839b5aac5e1",
+      "bytes": 3184
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/ROUTE_PORTFOLIO.md",
+      "sha256": "265a846218532e760ea1de706bece9736d244409fd3aa2faac1d9cf6da13a2b5",
+      "bytes": 1759
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/STATE.yaml",
+      "sha256": "b101f7a6fd2189e0e79842ef1482f95b07a43c685528138ac0bcd54cde9bac53",
+      "bytes": 1438
+    },
+    {
+      "path": "original-source/.claude/science/physics-loops/record-matter-frontier-20260904/TRACE_GATE.md",
+      "sha256": "d724692016299b4d4fe42564a55f0f4997dcb99ef1b2655d20f507c8d593a444",
+      "bytes": 598
+    },
+    {
+      "path": "original-source/docs/CUBIC_REPULSIVE_FLUX_FIXED_HALF_AND_CANONICAL_TWISTS_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "4a7d8b26250f7f3ff0f508fc443d055bafbbadf18c3a59b192a631323b927556",
+      "bytes": 20965
+    },
+    {
+      "path": "original-source/docs/LOCAL_RECORD_QUENCH_FINITE_ENERGY_AND_GROUND_OVERLAP_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "53b4b1750eb56dc14341655989b95084877ce2988b61ae6e811fed2fef0ff1c5",
+      "bytes": 21640
+    },
+    {
+      "path": "original-source/docs/RECORD_FORMATION_PARTIAL_CLASS_DISPERSION_AND_ZERO_MODE_FACTORIZATION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "2ebc534250ebc8e307d6999de3466ae337a43699e3a16b9b503c92ca72a59eb0",
+      "bytes": 17577
+    },
+    {
+      "path": "original-source/docs/REPEATED_RECORD_MATTER_AND_ENERGY_CONSERVING_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "sha256": "9f572fe7baa96e6c2fe2f9432a5dac96959d7c2ba635fc7c2365059939f8b056",
+      "bytes": 36721
+    },
+    {
+      "path": "original-source/logs/runner-cache/cubic_repulsive_flux_fixed_half_2026_09_04.txt",
+      "sha256": "bda3f40ffb48b81e13a7ea36d7439e01367e85af07f8e7945a446db3d110bdf7",
+      "bytes": 1576
+    },
+    {
+      "path": "original-source/logs/runner-cache/cubic_repulsive_flux_fixed_half_independent_check_2026_09_04.txt",
+      "sha256": "ffaa1e928fb088ec0726cd2736b85f2892f7889c2b8e12ccddc41f8525f4e172",
+      "bytes": 1022
+    },
+    {
+      "path": "original-source/logs/runner-cache/local_record_quench_energy_and_ground_overlap_2026_09_04.txt",
+      "sha256": "e8f3c9271726870c1f3e837716c9486f64aacfec9eef11ea16190d26ce66ecbb",
+      "bytes": 2750
+    },
+    {
+      "path": "original-source/logs/runner-cache/local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04.txt",
+      "sha256": "cbc136313500c61b2e37e2ac5e1244f210db58eaf222fb94d9ffb7d2f173de9b",
+      "bytes": 1113
+    },
+    {
+      "path": "original-source/logs/runner-cache/record_formation_partial_class_dispersion_2026_09_04.txt",
+      "sha256": "9a7da332985c905bc0872df7cbde7f5284a4c003e915d516a724dead69a47344",
+      "bytes": 4145
+    },
+    {
+      "path": "original-source/logs/runner-cache/record_formation_partial_class_dispersion_independent_check_2026_09_04.txt",
+      "sha256": "f8a613b99f00c411dbcbe9ce603750268d476a1c3961803c95dff76c1b3e20db",
+      "bytes": 2779
+    },
+    {
+      "path": "original-source/logs/runner-cache/repeated_record_matter_energy_apparatus_2026_09_05.txt",
+      "sha256": "61b776aad92ec78d884a8765082b188daae091655866580beb11291a872393b5",
+      "bytes": 5573
+    },
+    {
+      "path": "original-source/logs/runner-cache/repeated_record_matter_energy_apparatus_independent_check_2026_09_05.txt",
+      "sha256": "3463f45e3bd566ca07bf2fa6076c2cbf0605a47c47194514477bef7f5e5d1a37",
+      "bytes": 1792
+    },
+    {
+      "path": "original-source/scripts/cubic_repulsive_flux_fixed_half_2026_09_04.py",
+      "sha256": "46de4dbe218d9e847c5697b866707237741e4155c3b02d408aafe85446ee1dd3",
+      "bytes": 19063
+    },
+    {
+      "path": "original-source/scripts/cubic_repulsive_flux_fixed_half_independent_check_2026_09_04.py",
+      "sha256": "4773f060f980ac3fe680894637d25f990000479491ba2a7e526610ede2e49c78",
+      "bytes": 15045
+    },
+    {
+      "path": "original-source/scripts/local_record_quench_energy_and_ground_overlap_2026_09_04.py",
+      "sha256": "331ff5335e1dd99000a04dbaf21420cb3979fdb12aadcbf53b6d6508dc256394",
+      "bytes": 41582
+    },
+    {
+      "path": "original-source/scripts/local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04.py",
+      "sha256": "4c5069df7249ef613ee87a661884db3f5ef6e9ea8245a59344ea17c8f6222201",
+      "bytes": 26208
+    },
+    {
+      "path": "original-source/scripts/record_formation_partial_class_dispersion_2026_09_04.py",
+      "sha256": "23e1d1dadea86f78a8a40fc4f58755253705ab642f8ecf270b8193ac955b3633",
+      "bytes": 21440
+    },
+    {
+      "path": "original-source/scripts/record_formation_partial_class_dispersion_independent_check_2026_09_04.py",
+      "sha256": "2263f15f2765fc0093be95cca5f96163a871ae939b991081b64c63e84ce94ab8",
+      "bytes": 18823
+    },
+    {
+      "path": "original-source/scripts/repeated_record_matter_energy_apparatus_2026_09_05.py",
+      "sha256": "a4da79a46cf490e67b50d5ccddb0a4c72493437d185516d91dc1795fb8fd5c0d",
+      "bytes": 71004
+    },
+    {
+      "path": "original-source/scripts/repeated_record_matter_energy_apparatus_independent_check_2026_09_05.py",
+      "sha256": "d9674872004070379c21a819496e0426b9fbede7080b81ef392dbdcc712ab40f",
+      "bytes": 61559
+    },
+    {
+      "path": "planning-AGENTS.md",
+      "sha256": "4ac16955fb68639322d6d34c35b6ad97a1c4c9244fb26c5223112de984b695b5",
+      "bytes": 9967
+    },
+    {
+      "path": "planning-BACKLOG_STATUS.md",
+      "sha256": "c4109c9d8c3a8228862ce8daaa761e4000a5c436f5698d79ea483501daf35ae1",
+      "bytes": 32900
+    },
+    {
+      "path": "planning-CAMPAIGN_STATUS.md",
+      "sha256": "12ef10fde90b86185e6b2dcb27d5e3b4002f479535306a37b9d0b9878c120ac4",
+      "bytes": 4136
+    },
+    {
+      "path": "planning-TOE_SCORECARD.md",
+      "sha256": "606fb71da590cd92fd9776192ed144c0368d1ef34f956b7ec698a2101ffc1499",
+      "bytes": 8534
+    },
+    {
+      "path": "planning-revision.txt",
+      "sha256": "26ce3b4f1128f64e426bbf618bb760375af7a0a0d2a09b99bbce34608325bac5",
+      "bytes": 41
+    },
+    {
+      "path": "pr-7971.json",
+      "sha256": "e279eb3c44c01ad659ea5121a5bae7f2d96874c3338e01b27a0339d502797504",
+      "bytes": 4557
+    },
+    {
+      "path": "pr-7975.json",
+      "sha256": "8ef40353763cc246b6d32d110e996356aba9f73615d7472a14c80bd351009293",
+      "bytes": 5184
+    },
+    {
+      "path": "pr-7978.json",
+      "sha256": "3fbf8ebf454a532a37e541327e9ed8dd3e644511f86aeeb2f6326a368cd35247",
+      "bytes": 4767
+    },
+    {
+      "path": "pr-7979.json",
+      "sha256": "3cec53e09c1e8f4bdaba879d16ba3b9eafad2dbc4575780517cf1b1778b3cdff",
+      "bytes": 3651
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "07d7e468bb55abebb67f1003e615789a9a5cb6709ce54402057067af11978589",
+      "bytes": 4519
+    },
+    {
+      "path": "probe-cache/probe.txt",
+      "sha256": "8dd1a9606f9e440f5de86dde3161ce01dc689e03ef07cd92410aa84482ad8883",
+      "bytes": 259
+    },
+    {
+      "path": "run_originals.preflight-failed.py",
+      "sha256": "533c939207a077d19892b2ac6bf72ef03ba0a17c232765e7348972f1099c4ccc",
+      "bytes": 4038
+    },
+    {
+      "path": "run_originals.py",
+      "sha256": "0c63b86db58fc454fde9225c984bcbd25905b7ad41aead4ad2ad80d1e684d4ed",
+      "bytes": 4117
+    },
+    {
+      "path": "scientific-mutants/cubic_repulsive_flux_fixed_half_2026_09_04.py",
+      "sha256": "c868bf9e90ccce9ba561a3c56ce44842283925141bc744949fcc22141c2471c6",
+      "bytes": 19070
+    },
+    {
+      "path": "scientific-mutants/local_record_quench_energy_and_ground_overlap_2026_09_04.py",
+      "sha256": "d378f4fc982588de57f492fd8ffa1bdcaf0c328bec335947beae88f4d29a8b05",
+      "bytes": 41582
+    },
+    {
+      "path": "scientific-mutants/record_formation_partial_class_dispersion_2026_09_04.py",
+      "sha256": "b2b0da75c35c9d62eaef14f6e8336c15ea3485fda83bddd593d344b1ed06683e",
+      "bytes": 21433
+    },
+    {
+      "path": "scientific-mutants/repeated_record_matter_energy_apparatus_2026_09_05.py",
+      "sha256": "d4cfb54be784a998b22c04d47ccd61e3b8435fc6ba03957de368a52f83737e6d",
+      "bytes": 71004
+    },
+    {
+      "path": "seal_review.context-path-failed.py",
+      "sha256": "8a3848c657658edd43ff5083c28d1163cd13fcd95897bcc61d1c0c3eb2f362af",
+      "bytes": 10232
+    },
+    {
+      "path": "seal_review.py",
+      "sha256": "31e861cebf889ad417c35382829f17a8bb576ee1a86c04cc89719dd234e9881f",
+      "bytes": 10243
+    }
+  ]
+}

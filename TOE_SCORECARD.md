@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
-Verified source/status snapshot: 2026-09-09T03:56:07.313678+00:00, main
-`e4d8bd11df12559138543a3129ea4e7b38f23ebf`. This is a planning map, not
+Verified source/status snapshot: 2026-09-09T04:25:24.404932+00:00, main
+`06b09a9a5642a4753936044531db5ccad0a48953`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -22,7 +22,7 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 56 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 62 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
@@ -98,3 +98,5 @@ W36 adds two conditional finite vortex notes. Corrected profiled-mass algebra, c
 W37 adds nine finite Maxwell diagnostic notes. Shared-zero/RK covariance, strict sampling bounds, receipt identity, actual source parity and conditional kernel scope are corrected. Original production/complete health and physical source, flux sector, thermodynamic/causal/clock/Maxwell conclusions remain unaccepted. No audit grade.
 
 W38 adds five conditional gravity/Regge notes. Qualified projector/pinching identities and finite spectra survive; gauge readouts, sign, constant-mode selection and surrogate susceptibility claims are corrected. Physical carrier/source/clock/metric/graviton/cosmology and global completion remain open. No audit grade.
+
+W39 adds four supplied-model record-matter notes and two finite sandwich constructions. Fixed-half flux, quench energy/overlap and shared-battery arguments survive focused review; missing checker registrations are repaired. Sandwich results describe fresh initializations and actual candidate occupancy. Physical formation, apparatus/clock and seed selection remain open. No audit grade.
