@@ -1,0 +1,11 @@
+# Coordinate-free leakage core and adapter review
+
+PASS source-only mathematics and scaffold. Full final proof3dc, core eb667 and adapter f95d0c source/design read. This reviewer authored related selected-frame/action source and discloses those reused premises. No native binder or execution contract exists here.
+
+The exact Schur residual is D+JG^-1J; the plus sign follows skew J and is essential. Preconditioning keeps the same span. The core proves H positive via e<1, bounds inverse error by||I-HX||/(1-e), and uses symmetric interval radius plus||A||²epsilon. Gershgorin upper and diagonal generalized-Rayleigh lower are valid; positive Hii denominators follow e<1. Negative upper or inconsistent lower are refused, not clipped to artificial success. Exact symmetric X need not be a good inverse; its error is checked. Three independent exact2D fixtures pass: leakage1, exact zero, and inconsistent negative PSD input rejection.
+
+Adapter half-seed signs match original a29; Gamma columns and rawlabels preserve selected order. Free pole action has signed s and−2sqrt(alpha) boundary source, insertion maps center→qD and Ward→qA/qC. Impurity+8/−8 uses actual M rows only on untransformed source positions, so Gamma noncommutation is respected. H=C*MC, A=C*MB and Z=B*MB enclose the same exact preconditioned columns even if intermediate products round outward. Symmetry intersections use proved identities. Midpoint Neumann X is only a candidate and is explicitly symmetrized before residual verification.
+
+Full U<=104 DATA, not selected G alone, is required for Z. The p48 dense products remain below the declared4million adapter multiplication cap, with each block below the core per-product million cap; final certificate adds3p³. Endpoint4096-bit and scalar65536 limits are distinct from wider multiplication temporaries. These finite counts are not a runtime/memory guarantee. Missing native provenance, physical h scaling, exact midpoint family/pole/alpha binding and prospective resource/retention contract remain explicit obligations. No entrywise C gate or Gaussian coordinate/state result is claimed.
+
+No actual T, histories, Gram/index/entries or native action loaded. No material mathematical blocker found. The scaffold is not ready for native execution; original coefficient-gate failure remains unchanged.

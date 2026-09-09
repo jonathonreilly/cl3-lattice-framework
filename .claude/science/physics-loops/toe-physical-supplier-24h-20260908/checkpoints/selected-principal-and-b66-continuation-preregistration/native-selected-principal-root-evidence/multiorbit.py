@@ -1,0 +1,8 @@
+import types,pathlib,tempfile,json,hashlib,sys
+es=types.ModuleType('events_schema');es.validate=lambda *a:None;sys.modules['events_schema']=es
+s=types.ModuleType('schema');exec(pathlib.Path('/private/tmp/toe-24h-probes-20260908/native-selected-principal-root-review/schema.py').read_bytes(),s.__dict__)
+with tempfile.TemporaryDirectory()as td:
+ p=pathlib.Path(td);o=p/'out';o.mkdir();write=lambda p,x:p.write_text(json.dumps(x));h=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();hist=[];pins={};rows=[]
+ for i in range(5):
+  hp=p/f'h{i}';write(hp,{'history':[{'index':j}for j in range(24)]});hist.append(str(hp));pins[str(hp)]=h(hp);d=o/f'ORBIT_{i}';d.mkdir();write(d/'SELECTED.json',list(range(24)));write(d/'CANDIDATE.json',[]);a={'status':'CERTIFIED_ENCLOSURE','center':[['0']*48],'radius':'0','e':'0','width_pass':True,'l1_pass':True};write(d/'RESULT.json',a);(d/'EVENTS.ndjson').write_text(json.dumps({'sequence':0,'stage':'coefficient_box'})+'\n');rows.append({'orbit':i,'status':a['status']})
+ bp=p/'binding';write(bp,{'histories':hist,'inputs':pins});rf={'binding_path':str(bp),'authorization':{},'worker_freeze':'x'};write(o/'STARTED.json',{});write(o/'RESULT.json',{'status':'COMPLETE_SELECTED_PRINCIPAL_ATTEMPT','seconds':1,'orbits':rows});write(o/'PARTIAL.json',{'current':{'stage':'complete'},'rows':rows});write(o/'WORKER_COMPLETE.json',{'status':'COMPLETE_SELECTED_PRINCIPAL','runtime_sha256':'x','binding_sha256':'y','result_sha256':h(o/'RESULT.json'),'seconds':2,'rss_bytes':100});rf['authorization']['binding_sha256']='y';write(o/'STARTED.json',rf['authorization']);s.check(o,rf,3);print('PASS five certified-first metadata iterations; event validator stubbed ONLY for variable-shadow regression; no native data')

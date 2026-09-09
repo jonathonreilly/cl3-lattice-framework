@@ -1,0 +1,9 @@
+# New remaining65 width diagnostic — UNLAUNCHED
+
+Original3dcd/root15ad failed after1742 pole0 records and before POLE_00 serialization. Original source/output/root bytes remain untouched. This is a separately authorized successor: authenticate/copy and sum only the saved pole0 radii/cumulatives, recover its scalar low/high/total, then evaluate node formulas ONLY for poles1..65. No pole0 node formula rerun.1742 recovered records +113230 new node checks =114972 total coverage. No moments, integrand centers or oracles.
+
+Python decimal integer conversion is deliberately set to10000 digits before parsing. Stored Fraction32768-bit integers need at most9865 decimal digits, so numerator and denominator fit separately. Existing mathematical caps remain; decimal formatting is not unlimited. Future root parser must use the same bounded10000 setting. This does not change any radius formula or scientific target. Original4300-digit failure is binding evidence, not erased.
+
+120 external119.5root119worker seconds384MiB proposed. Old failed whole internal1.5971571669797413 seconds included load plus one pole, so a deliberately loose66*that+10=115.41237302066293 seconds is an inference, NOT a measured fulljob bound.65 remaining poles may differ; failure is final and retained. Parent must choose/approve fixed resource contract, independent source review and remote preregistration before one launch. Root monitor is intentionally not implemented here.
+
+Completed pole0 stream is hash-authenticated, literal ordered1742 records/grid/cumulative reconstructed without node equations; exact stream copy retained. New pole files are saved before final classification; separation failure remains INDETERMINATE. Full old acceptedphysicalclosure plus oldfailedreceipts/source/log and newsource/runtime pinned. Final fullsource/inputrehash remains in dispatcher. This prep performs metadata/hash access only; no saved sums, actual node formula or high-K production was invoked.

@@ -1,0 +1,1 @@
+UNLAUNCHED source-only prospective monitor. Worker binding remains NOT_READY. No launch authorized; requires independent review and remote preregistration. 120 external /119.5 root/119 worker seconds,384MiB sampled whole tree; external teardown reconciliation. Schema verifies retained results and flags, not independent matrix arithmetic.

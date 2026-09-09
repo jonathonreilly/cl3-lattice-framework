@@ -1,0 +1,9 @@
+# Final affected source review — PASS
+
+Worker freeze `9797ffbde9f7d8d85d15bcb2e274d93292c8275b6457d97b6723c9fb06b0605e`; root freeze `786dc6580660044d7730dd490a686105b6ba56397e8b42b20eedcc3254f69972`.
+
+The previous source/math review is retained. The final affected schema fixes close the reported blockers: exact selected-history order and hash, typed finite result timing, full ordered event-stage coverage, matching retained coefficient/error data, candidate reconstruction from inverse-entry events, named failure prefixes and last-stage equality. The radius variable no longer overwrites the binding. A legitimate Limit after the coefficient-box write is accepted with 2705 events. Worker failure-kind retention and descriptor cleanup remain explicit. Root local source pins and worker local source pins match their freezes.
+
+`final_controls.py` exercises the actual schema and events_schema without stubbing either validator. A fabricated five-orbit certified fixture contains 13,525 events. It passes with five coefficient flags. The complete post-box Limit and residual e=1 cases pass honestly with four flags. Eight adverses reject: empty events, malformed result time, residual e=0, wrong selected order, mismatched box radius, mismatched error, mismatched inverse candidate, and wrong failure stage. Eleven cases completed in under one second. The fixtures use dummy histories created in a temporary directory; no accepted histories, native indexes, Gram entries, or numerical worker were loaded.
+
+These are schema/retention controls, not independent native arithmetic or mathematical containment verification. Prior reviewed arithmetic is reused explicitly. The original adverse evidence remains preserved. No frozen producer/root files were edited by this review. Both packages remain NOT_READY; this verdict does not activate or launch them. No remaining blocker found in the affected source scope.

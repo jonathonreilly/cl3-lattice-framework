@@ -1,0 +1,17 @@
+# Selected-principal frame independent review
+
+The construction and perturbation estimate are sound, subject to one narrow opening-premise clarification. Source reviewed: DERIVATION ea2f1677 in native-selected-principal-frame-stretch. No actual history, Gram, entry, coefficient diagnostic or native numerical input was loaded. I authored related historical interval-C implementation; James authored this new proof. This is an independent source proof review, not a new numerical certificate.
+
+Required clarification: independence of s1,...,sk as written does not alone imply positive definiteness of the interleaved S=(s1,Gamma s1,...). For example s2=Gamma s1 can be independent of s1 but duplicates its paired span. Say the paired S has full column rank, or that every ordered paired pivot is positive. The later a posteriori delta<1 condition itself proves positive definiteness, so this does not obstruct the proposed certificate method. Root/author notified before completion.
+
+With that premise, ordinary positive ordered Cholesky gives exactly the ordered GS gauge: V=S L^{-T}. Prior paired spans are Gamma invariant, and each residual pair is b,Gamma b with equal positive norm and zero cross product. Thus interleaving reproduces the historical paired convention, rather than choosing an arbitrary isometry. The selected Gram commutes with the index complex structure. An arbitrary candidate upper triangular T need not itself preserve that structure: the exact positive triangular correction uniquely restores the same ordered frame.
+
+For H=T^TGT=I+D and upper R with H=R^TR, U=TR^{-1} is upper triangular positive and U^TGU=I. Therefore U^{-1} is the unique upper positive Cholesky factor of G. The derivative algebra is correct: X=R'R^{-1}, X^T+X=R^{-T}DR^{-1}; Phi's Frobenius norm is at most1/sqrt2 times the symmetric norm. Combining ||R^{-1}||2<=(1−t delta)^−1/2 with ||D||F<=e yields the stated derivative bound and its integrated expression. The rational e/(1−delta)^2 bound is safe. Delta=0 means the true correction vanishes even if e was an unnecessarily loose bound.
+
+The residual certificate needs a Frobenius bound on D for e and an operator bound for delta. The displayed eta_G formula supplies that correctly, provided its arithmetic is certified. Then ||ET(R^{-1}−I)||F<=||ET||2 B bounds all coefficient entries; the unchanged width threshold and separate l1/rounding tests are sufficient. A midpoint is never an isometry. Fixed physical scalar uncertainty cannot be removed by increasing arithmetic precision.
+
+The dependency example and reciprocal-root obstruction are appropriately limited: the admitted set of a historical r interval is not automatically the admitted set of the new direct selected Gram. Consequently the fresh failed width diagnostic is neither invalidated nor a no-go for this method. No claim of native passing width or convergence is present.
+
+Counts k² independent real paired-Gram parameters,4k² raw requests and p(p+1)/2 unstructured entries are correct. O(p³) arithmetic does not imply a bit-complexity or runtime guarantee; the proof says so. Original-family embedding has at most4k raw/Gamma labels. Selected Gram alone cannot certify action; matching R-Q/Q-Q data and a correlation-aware or conservatively boxed action certificate remain required.
+
+27 exact small rational gauge/Phi/count controls passed. No physical matrix or historical coefficients were evaluated. Final source PASS awaits only the explicit paired-independence wording correction; no other mathematical blocker found.

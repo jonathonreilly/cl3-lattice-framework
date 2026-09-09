@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-rho4-b66-width-root-review/run_once.py", line 60, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-rho4-b66-width-root-review/run_once.py", line 59, in main
+    req(failure is None,'fixed width-only B66 verification failed '+str(failure));print(json.dumps({'status':'PASS_EXTERNAL_PENDING','seconds':time.monotonic()-START}))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-rho4-b66-width-root-review/run_once.py", line 8, in req
+    if not x:raise ValueError(m)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: fixed width-only B66 verification failed ValueError('worker exit 1')
+real 1.61
+user 1.36
+sys 0.60
+           106004480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               54224  page reclaims
+                  39  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  41  voluntary context switches
+                 828  involuntary context switches
+          3400824684  instructions retired
+          1069289047  cycles elapsed
+            15286872  peak memory footprint
