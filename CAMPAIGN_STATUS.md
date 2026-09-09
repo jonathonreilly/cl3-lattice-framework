@@ -50,7 +50,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W44lands corrected transaction #7845. Fixed backlog:50open;134reviewed science scopes landed plus8partial Maxwell scopes held.56earlier closures pending at4successors. Gauge/occupancy confirmations and C3response correction continue; audit deferred.
+1. W45lands corrected gauge7841, occupancy7838 and C3response7839. Fixed backlog47open;137reviewed scopes landed plus8partial Maxwell scopes held;56prior closures pending4successors. Next original reviews7837/7836/7870; formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

@@ -1,0 +1,649 @@
+{
+  "base": "c664f7795757c070c9d195f10038ed7663f9bc36",
+  "head": "a917b8f7422bb420e599b37e3562505e77de1da5",
+  "tree": "95cbaeac77861c96fbd274112c3a54b88c01db23",
+  "frozen_utc": "2026-09-09T07:05:54.073755+00:00",
+  "original_prs": [
+    {
+      "baseRefName": "main",
+      "baseRefOid": "36fe57a7a784df31bc2178c4b94dfc7caaa5d094",
+      "headRefName": "physics-loop/toe-gauge-instrument-generator-closure-block54-20260902",
+      "headRefOid": "c76726c0fbf2df7c628685b74fc6fadacc4009e7",
+      "isDraft": false,
+      "number": 7841,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "main",
+      "baseRefOid": "36fe57a7a784df31bc2178c4b94dfc7caaa5d094",
+      "headRefName": "physics-loop/toe-ac-occupancy-grain-kill-or-close-block51-20260902",
+      "headRefOid": "420581abef9ab6587fcdd539b3de0937a3512081",
+      "isDraft": false,
+      "number": 7838,
+      "state": "OPEN"
+    },
+    {
+      "baseRefName": "main",
+      "baseRefOid": "36fe57a7a784df31bc2178c4b94dfc7caaa5d094",
+      "headRefName": "physics-loop/toe-reta-c3-source-response-block52-20260902",
+      "headRefOid": "63e9b5b6d778e56b0451de53641514b212c05ff9",
+      "isDraft": false,
+      "number": 7839,
+      "state": "OPEN"
+    }
+  ],
+  "source_paths": {
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "sha256": "7a122c397b3e70d8a013eb80fafac202c61657bb3f2d7209e7a90de5a29655ff",
+      "blob": "46e68d38c9866573337d3039bf4b9b28ab6bd4fc"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/REVIEW_HISTORY.md": {
+      "sha256": "7daec18b3998f98d3246530da70587983f31a700658d3cc8f02498045420621c",
+      "blob": "e917bbdf0e44ee7d4be7f9eed0beaf1de7487168"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/APPROACH_REGISTRY.md": {
+      "sha256": "fa362953137aa5fc11ee607b9962d39513e928a27534eb33fc631933a2575c8b",
+      "blob": "e132132c3f126438eb4586f4f03b58b6621702b4"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/ARTIFACT_PLAN.md": {
+      "sha256": "8147915bb9bcad9cc83b1c0d92c14e07b8504f00aa77c255eeb32c63f61c6eb5",
+      "blob": "aee0a961cd61460c897b987af66710e6e949b30c"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "2b327d5b96871726902020aefd43ed96446ee66d422d1acf06630c7afc7d4977",
+      "blob": "c905f3305322a16b90696587bcb5cb0a3cfc4be9"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "012210c75ecbbca9a04f21d4bb63e22607ad0d722acd7ed621ca1f793206c8bd",
+      "blob": "c2e9eb75989e01d33631ba6ce162a137b0a8fa5c"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/EXACT_TARGET_CONTRACT.md": {
+      "sha256": "37985645b378414cd3035c97194abc1c8bf2520ee7ca7e2fc0340cf11cd9754d",
+      "blob": "9f0d776ba12b096739e500893a8fa54631c7cde5"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/GOAL.md": {
+      "sha256": "d6f5b7110efee34660c597f84813b5e8c82bec3c5f2d1dcaefc1486dba83f6d2",
+      "blob": "83810612328744ad95eae42421c5972c90e13990"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/HANDOFF.md": {
+      "sha256": "763ac1ceb061df1830f849dd3582135473a3d2a0e0de311ba1476d5c04377bd0",
+      "blob": "944beec7e594164a570ffc4b3d6508790fbf4e8a"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/MUTATION_PLAN.md": {
+      "sha256": "16cd381c423e3af98df9e0bdca07711bcab0c982e2fdb816c58dc53a822de017",
+      "blob": "77a463e7a851d07769efcd115fac13f7026c8750"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "sha256": "c343a2290c9274a58594db718ac35ae4f03a35310aec9d87c53ead367cd7d3f0",
+      "blob": "304829b057d985b1274af27908b64d22215691c0"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/NO_GO_LEDGER.md": {
+      "sha256": "1a59642fb622a99a5e3c2c6102e592e2fc2661a0b5c59990cad6db1a991df05e",
+      "blob": "dcdf981f769abdee5ba76210bb173ed70977a1e2"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/OPPORTUNITY_QUEUE.md": {
+      "sha256": "8e4ab9885692e6fc2a6ab3bd9841c6daafebf4432dded9e0f85ac4248a620a02",
+      "blob": "b77822b8e13915834a7633ae0d0425dd793deeb3"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/PANEL_RETURN.md": {
+      "sha256": "7950466d696d57c7c3d30b4bf14b784af4eca69d2fc246853c51d9f6240df11a",
+      "blob": "b29d313a11b8f4941d67b76986c019d9a5fe1abe"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/POSTEXECUTION_DECISION.md": {
+      "sha256": "3cb1284c7d4c9b0fc990d43069f0aa2554ebc70b36b64a070ffcb005f8e39894",
+      "blob": "e504efa4e02e79c36c39c79e6f06eae6eaa55ed7"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/POSTEXECUTION_NO_GO_AUDIT.md": {
+      "sha256": "567e03de96e0f20a925258ca3d29e9c10cc7dd64ef1f272cf8e0e0f53dd5010c",
+      "blob": "663db8595036bcc384f51e3eac481d5a6f0a6293"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/POSTEXECUTION_VALIDATION.md": {
+      "sha256": "7e061f3da6c1c803a3968b9ba2fca42a841ab78b350d9a63af5071c9f3c1d4a2",
+      "blob": "2530416ed7b0190d7e219c413cfb480978cf8e4f"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/POSTEXECUTION_VALUE_AUDIT.md": {
+      "sha256": "424b38621f2ba9247c7f85b153cc5572aac337cf6b17f0ea73219fc10b9780ac",
+      "blob": "3fd9ac3f7f2297cbfc1eb7c0b7f9e84d814a3858"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/PRIOR_ART_SEARCH.md": {
+      "sha256": "660a316be335a458a9b4b52a7b27db6c2c85c6366fcae859bd5b7e2e635b104a",
+      "blob": "1a592560845dc3e7ef3f93f19c842c75f674840b"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/PR_BACKLOG.md": {
+      "sha256": "ac07a440073bfb9eb4cf5751286fdbc88d4e5be377d27d7a9d9a7f6509b920bd",
+      "blob": "793b98c0702caeb22f6a8ed15cc5c9324f40e4ec"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/REVIEW_HISTORY.md": {
+      "sha256": "1e676c810dfeacfaca078a109b60ee7268fbba6d178555abe36bb988bab05d89",
+      "blob": "b12b3107d84a87f969a8eb9abab209162a4b68b7"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/STATE.yaml": {
+      "sha256": "640d932dcc80539212e05a6780775852be74edf34ca5098789bdd3524a16fe9e",
+      "blob": "90b26727c2f52c934a3be7708730798ac11e8c64"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/campaign/TRACE_GATE.md": {
+      "sha256": "8c01d696c4355f188aee82162853499db80db4bc2a516c44b3bc9e90f1870791",
+      "blob": "9bd77b0274d9ab5137106c96c7ab7e6cee11c66d"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/docs/GAUGE_INVARIANT_EFFECT_INSTRUMENT_AND_WILSON_GENERATOR_NORMALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-02.md": {
+      "sha256": "f04504a1a5233da589dfa3fe33067762cc89a3124748a2fea355ec332a6d90a3",
+      "blob": "525064aadaef9cd0d297f6f68851b8697f963853"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/logs/runner-cache/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.txt": {
+      "sha256": "2cb83048ef44954e6d67ba25deaaf9494c6665c83065ac965088ce7f040f6eb7",
+      "blob": "c77d763d3b4e04f3e9a13c843d69aa8c9fee7649"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/raw-commits/c76726c0fbf2df7c628685b74fc6fadacc4009e7.patch": {
+      "sha256": "d156f94b2e66459cf40a111a19a4c15f2720cef1d1bade3d1a9d1f0704bb6437",
+      "blob": "b250201054d963cf8e414de872e4be9c08fd3b20"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/raw-commits/e4e2bf405652b93718e9a1f34770e51ab19a5eeb.patch": {
+      "sha256": "1cea3a7eb6e38fa60e5748bc5965b80a8784c483778e6c0cd0be598c826d64fe",
+      "blob": "c402188b5b7ba3a7549672ba39ef19781bb8de38"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/raw-commits/f9625bd037395e746340d5ce1b577da23f94aaab.patch": {
+      "sha256": "a215fb05934ba8b7e58c0f290474ca3579bac69899c43047d5043b6a4b8d528c",
+      "blob": "4a3fab469839b0778195a10830fb2150f7d46046"
+    },
+    ".claude/science/physics-loops/gauge-effect-7841-correction-20260909/originals/scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py": {
+      "sha256": "0ef00a96da747344c57676dfe09357f9817732439cf83408fcf67abcf03c85ef",
+      "blob": "ac57bfdd4a6b84247a98a9772b274ba7386be699"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/APPROACH_REGISTRY.md": {
+      "sha256": "9eb091ff379f6e93cab88ea2544c18b89ba13f3f9f305cec8badb915ede7fc54",
+      "blob": "2c5ffa6517af7d32cc8d412c48a85f65e44f28a1"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/ARTIFACT_PLAN.md": {
+      "sha256": "88086f69f4ce3c346f82b87f79b673118a7db67780664bccd3a3e1e82704f3a0",
+      "blob": "b3018d38d1772f6bbaa0f8c5317abb35b6b87eeb"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "fc896f8f72e459f235b059c3a2a2d367c244ea1537420e17e73ace22af21fe8c",
+      "blob": "07e69e66309ce51a31c7e288cbcb926500365e0e"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "22c56b0c3554825364b5e15ebe2edde55ca305de0b136c62cd897af7b013ed05",
+      "blob": "39046e2a0f6c5ad4bcadbef65b04ae8ebefdb442"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/EXACT_TARGET_CONTRACT.md": {
+      "sha256": "381a4d59256b94dce1668d985989d074f543b203dc2d3faabd36f1880a33d662",
+      "blob": "f64b3673469df3f0a57ffaa2dc93406917b3e3cc"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/GOAL.md": {
+      "sha256": "938a73248ee35b33cd4b3a198854a3c86062795093af3f021d2647a71197c909",
+      "blob": "06a7df3babde2942e2bf125751c4900501556f0c"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/HANDOFF.md": {
+      "sha256": "a18f6897f32d41e198fa9d3f8904ddcf4913df3b3e6e15ef53f1485ce1944784",
+      "blob": "055c39f06f8c10e50ba0161947a6ffeb02fb5dcb"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/MUTATION_PLAN.md": {
+      "sha256": "276d5f79db7ca267ae166fac47b592d4dee7b9689944d2ae53487ac731360919",
+      "blob": "47a2d73e4730914c97046267067b6bdd4735193d"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "sha256": "aa5290d960e3441d3f052a9d0ebaee3004b1c999ce4b0897cb95e22136378e54",
+      "blob": "f84c44fcd5f4ae699b0909bc6589cdca66b61291"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_LEDGER.md": {
+      "sha256": "3a6098de668f71f775ab937e3cf857658d78b06368ed8869a83501a9f5433b16",
+      "blob": "6141704a2cf4ffa8668a898776ce926e61da3d28"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/OPPORTUNITY_QUEUE.md": {
+      "sha256": "95497528ec564531a3f1d4efb4e10e5e316f4746b632a216ade89e7edb9153c4",
+      "blob": "62a9a6f9648a18fa26f65a6eec9fe502a45c945a"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PANEL_RETURN.md": {
+      "sha256": "18664e5edafdf1c5034c5c0de2925c2a2c3e44ca75dba7e225f2a959d9cc1405",
+      "blob": "6d15ee307ea7ca47b2e0941e2fe28b21e2dcf68e"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_DECISION.md": {
+      "sha256": "a50c7a08096677c6fa2049bc518df6eda2d5c86e6494ed82d7eb18f17fdc59e9",
+      "blob": "c9e119ed5612665b9640784d5f58d63237187741"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_NO_GO_AUDIT.md": {
+      "sha256": "671646901f7d285c0e1261cb2163e2b2090b7224fadeefaa9d54304c0301c8e7",
+      "blob": "b070205f4f9bf0f30fc1362a0101889ae6f4799f"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALIDATION.md": {
+      "sha256": "ed9ba44cf42ac9a298fc520414b19ca98e6b9b8ed050a235fff6e4e65f729e4c",
+      "blob": "63a0d4f1ab9c8631f489a5b388660254b50e5834"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALUE_AUDIT.md": {
+      "sha256": "ed0940cf4d59d4d730e7b1983b45fb6a672a73624f32ba567b2f51c00dbeae70",
+      "blob": "da9498038bdcc63876eaba098fb5087d5fd068c5"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PRIOR_ART_SEARCH.md": {
+      "sha256": "98ec4ffe3b28248f97a091007eb8e9a1452749c8099e5d3ae597cbcb18893e8d",
+      "blob": "e30f07a2ee0a05b197372bb21211e79db229a333"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PR_BACKLOG.md": {
+      "sha256": "b3afbd7f2d350506e0728664463646e1c3857279999ca53bea8742e1421d2450",
+      "blob": "1b1b5f30b20a27dd46fe20cdc072c344936e342c"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/REVIEW_HISTORY.md": {
+      "sha256": "6840290b6864a387de620c82718ba6279885d39540564bb3ce48ee4629059b0c",
+      "blob": "f8cbf583cbb4743ea35c105eafff6d5f1f49b014"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/STATE.yaml": {
+      "sha256": "44c8fcf9170c11a0c987ebb5aa080bdf501736cb689c3e01b269d698d6fc0bf2",
+      "blob": "175b7bde02cc5626662c178cc655876d40541749"
+    },
+    ".claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/TRACE_GATE.md": {
+      "sha256": "74e274022f302b46d96303893b86ee37604fbd9e598fef7ea96acfc83b3a0fba",
+      "blob": "19f47dd8adfd5b68bb92dc3ffd58b2791f862c9c"
+    },
+    "docs/GAUGE_INVARIANT_EFFECT_INSTRUMENT_AND_WILSON_GENERATOR_NORMALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-02.md": {
+      "sha256": "8099c34d8f9ee6fbba22d70b826c98a7ccbc1f524cdb83827029e2b448264db0",
+      "blob": "df69b2ddb59e8befd5f6bd960e55415d29aa741e"
+    },
+    "logs/runner-cache/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.txt": {
+      "sha256": "00c0e5c41dd52286724cf9bbf04e5d7b8dfe80a220a1eb1c72f08ef013059b91",
+      "blob": "8dcf27c303c55fc6bf99b4dad63e803958097d2c"
+    },
+    "scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py": {
+      "sha256": "9e1b7b76e074b6f5852e427639dc781259def0a086739c9714cb8d7e3be8cb32",
+      "blob": "d99499e52b73cdc0839f9fdddc8cca6978deee75"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/HISTORY.md": {
+      "sha256": "e84f9d79f210ed5b46e241ed546c7ef8bd1b7a78ec446a13b2403d5dac3e04c4",
+      "blob": "3c9b0a0485edacf7d3668bce9ef0bb866bf3ec79"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/0bedc3901ce2c9388e4f199d8e0145f3774498bf/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/APPROACH_REGISTRY.md": {
+      "sha256": "7e52f3b1e43e1820b500b2a58e5be8401cad27b8737f6856dbd1fcefb1e6d511",
+      "blob": "3e583e936caf2c321f5bc735434212a15aaf7a40"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/0bedc3901ce2c9388e4f199d8e0145f3774498bf/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/EXACT_TARGET_CONTRACT.md": {
+      "sha256": "9eaad3d6dd758e0e5c2c0a823a6820fcd8dd118cb330461b870546df3e05bcc1",
+      "blob": "9e3bebfcc66c4693d6d09b34e01a036129604e88"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/0bedc3901ce2c9388e4f199d8e0145f3774498bf/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/NO_GO_LEDGER.md": {
+      "sha256": "67fbed3c672fdd5e90afddc25c9fa40a4eb5c79ab6cf9f6f7f6d81c10c145571",
+      "blob": "389ab2e52b71cc5b7f5ee0d2f654de65eefea4de"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/0bedc3901ce2c9388e4f199d8e0145f3774498bf/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/PRIOR_ART_SEARCH.md": {
+      "sha256": "8cdaee2f2c57d876b6e07f6e9db5780d985944cf510596e46acfe28a48718596",
+      "blob": "927b9a7059ea91fd10342cc5de74a65dd867809b"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/0bedc3901ce2c9388e4f199d8e0145f3774498bf/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/PR_BACKLOG.md": {
+      "sha256": "95a6506581780ff6320fab0b052ec805c01adecd3602dcdd8a250c2acd6de39f",
+      "blob": "31c3325e1ce0e6e104ae182fc583a08e23b27cba"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/0bedc3901ce2c9388e4f199d8e0145f3774498bf/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/REVIEW_HISTORY.md": {
+      "sha256": "b8b0d95b5e8c37a8b6a0b3667873ac02ddd7e420e65af183d0f2da8877e29d4d",
+      "blob": "17881ad243333c77010adea6dec2eb5569e2dff1"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/0bedc3901ce2c9388e4f199d8e0145f3774498bf/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/STATE.yaml": {
+      "sha256": "9baa1e2ef36ec9e8f4acd52baf5a0635bac52e35d97d370ada73f188648e6884",
+      "blob": "5478fbbb3cc8eaa3dfc79851a15611aa9f8b589f"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/83e5b609bbf983ab0db534652df28f6dd2b7bf34/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/APPROACH_REGISTRY.md": {
+      "sha256": "7e52f3b1e43e1820b500b2a58e5be8401cad27b8737f6856dbd1fcefb1e6d511",
+      "blob": "3e583e936caf2c321f5bc735434212a15aaf7a40"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/83e5b609bbf983ab0db534652df28f6dd2b7bf34/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/NO_GO_LEDGER.md": {
+      "sha256": "67fbed3c672fdd5e90afddc25c9fa40a4eb5c79ab6cf9f6f7f6d81c10c145571",
+      "blob": "389ab2e52b71cc5b7f5ee0d2f654de65eefea4de"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/83e5b609bbf983ab0db534652df28f6dd2b7bf34/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/PR_BACKLOG.md": {
+      "sha256": "95a6506581780ff6320fab0b052ec805c01adecd3602dcdd8a250c2acd6de39f",
+      "blob": "31c3325e1ce0e6e104ae182fc583a08e23b27cba"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/83e5b609bbf983ab0db534652df28f6dd2b7bf34/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/REVIEW_HISTORY.md": {
+      "sha256": "2a6668b35d1c3d540c913348d5213c56b6c7074f622716be9bb40dd2eefce581",
+      "blob": "0252586ff02fb306a34a4a5b214781ff492efd04"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/earlier_versions/83e5b609bbf983ab0db534652df28f6dd2b7bf34/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/STATE.yaml": {
+      "sha256": "37ee088c719fb0478327e903418c7b8ddf91356e7db58447ec40ad53a9b554dd",
+      "blob": "f8b5db38b2a50544a36d7d2d47d9a7bfc75def62"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/AC_OCCUPANCY_GRAIN_TARGET_REPAIR_DECISION_MEMO.md": {
+      "sha256": "e93be4305a83d36a340c0a43d8fabd9faf1a5c203d2a3f99a660f82d006055cf",
+      "blob": "38f4117352e9c7e733e4054d89c5aa0a2acd606d"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/APPROACH_REGISTRY.md": {
+      "sha256": "660d206e6c090d3e49e6e260334b8099065c4b52931d2b4cb7d4402628c4c104",
+      "blob": "4ed7f1785daf3a006816f96fb4a53ed9d261d3b2"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/ARTIFACT_PLAN.md": {
+      "sha256": "61624c48baa0fff7fa1dd33596bf2333da44f1de2c0c1615a63b85541acfac5a",
+      "blob": "4c3216d3b801e53799553d745bdf5ef3a6fe58a4"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "1a3db3d119124e0d792ce4b3586ad1d94c2c1d23273c729fbee49217e703e633",
+      "blob": "2984d1f18ac8f8be7f371fed2a82c40d052c32a8"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "23f0286062e1c1612c3a2b62a17253c9dead8a7b0f66a3a2ba8763f39d278e64",
+      "blob": "9e3c8ba0416d030601940cb8a73700993ce91743"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/EXACT_TARGET_CONTRACT.md": {
+      "sha256": "886cbb9e7bb6c9e8baa2ee7a4343438db4c978dfabfc98cdec30905deb43d5ba",
+      "blob": "f479bea38b48e436db55c4ae7580c1ccc293acb8"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/GOAL.md": {
+      "sha256": "e8c5e1173d3f54884197baadb3df0ea78ee0772e107d7353348399326f7a913c",
+      "blob": "26196bf2eb81a95a980d1d96d9fe14973a79b757"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/HANDOFF.md": {
+      "sha256": "eb7578754a3256b8464d8d945f269eada6344bac5bf4436ef2f589985dfa6baa",
+      "blob": "4fac3b4daa4e9c84c091b8b800bd10f0f569bf31"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/MUTATION_PLAN.md": {
+      "sha256": "9da134b48e86bac303f848da899352bed8714a0ead6dd043595ae3f0971735b0",
+      "blob": "688e9f301c0565436f3a71c09c826eb88ea50aad"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/NO_GO_LEDGER.md": {
+      "sha256": "638ee67ed31f5ffcf45746c8ecd6df2f6691e2d4f2935f9a6282320bd49a890f",
+      "blob": "69178013e913495fb121b67cad6486d64b916c88"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/OPPORTUNITY_QUEUE.md": {
+      "sha256": "63ccaa32a7978ee7816fa091d7a5549c41f7daa37b9d00b6f5c39803d87bf147",
+      "blob": "8831918e29f199251c92cd74942ffaaf0555559c"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/PANEL_RETURN.md": {
+      "sha256": "404ae5c4db143a38b6d1ae5c95ad3369f4da879ce360fda69942a51be45c1c0e",
+      "blob": "59acf64213ebc9f3649c6f326fa0e05d8d6a300f"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/POSTEXECUTION_APPROACH_RERANK.md": {
+      "sha256": "ef377bb450c381ccad136a8ceeabaa9d3bfee1b31bf869c0a4a9a9201ca4dc3f",
+      "blob": "8ea51b374cf2de915a49de48cc9841c2c56d8a27"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/POSTEXECUTION_MUTATION_AUDIT.md": {
+      "sha256": "8beb3375fb3d834221003dd9e57f82bddfd6eb4843a4c0f31114ab2e05477261",
+      "blob": "f46c9257eaa0dd1c9523520e344d03900c37bee2"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/POSTEXECUTION_NO_GO_AUDIT.md": {
+      "sha256": "e69d944ef733de60f5eb8819fa578801d1b6ec601f4c4125933c37189ecb8edf",
+      "blob": "39b0e31b0708f1704452294d3747e0b99ad1a2c7"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/POSTEXECUTION_PR_CHECK.md": {
+      "sha256": "c1c23b4798e0ab5267715ed7f82029560b2dcd11b9f585c94ac364a103810e60",
+      "blob": "fa5cc854c02822795c7b6bdd481d84450cc59751"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/POSTEXECUTION_TRACE_AUDIT.md": {
+      "sha256": "bbd33c19527a00aea24572230ab46bf5556379dd55aefef8b650b1eab25d9a42",
+      "blob": "0fb8c135ea4fe62131ddbc23abff274d911a1a05"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/POSTEXECUTION_VALIDATION.md": {
+      "sha256": "25423c42ba8e936ec107a503a77a723e7fa62542810bf0ecc25976bbfda7a588",
+      "blob": "4a0a8d1564db371815b534bfa2ecb549385d342c"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/POSTEXECUTION_VALUE_AUDIT.md": {
+      "sha256": "c378083c7e108bc68d382e19e3c36ed0d6832af5865e308320558f6fd20ec054",
+      "blob": "1b90d901471dab268051b75420e32ff031d9178d"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/PREEXECUTION_PANEL_AMENDMENT.md": {
+      "sha256": "354b6c405d64466812d37ff18a35f58a7315d5e96c5825589050524430ea6b2d",
+      "blob": "aef3f6ab83585c08debb1f430270ecf8168c01ec"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/PRIOR_ART_SEARCH.md": {
+      "sha256": "ada0dd1e10b8446d68d152fe80bbb31f62fda33871f8f0d35de0bf10f73327dc",
+      "blob": "26bbb4b3c9976a05452d3e4559c375f28760f58c"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/PR_BACKLOG.md": {
+      "sha256": "f48eca6cca077c31742c3df1fe97f74d22e5ec990261b5fc4a7daaf256db678b",
+      "blob": "ae75fdd135de4a5f0ac11211686b1ef5d6849309"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/REVIEW_HISTORY.md": {
+      "sha256": "a56b12f9cfd6cca07f398c6805d0002b2992b024942d245b7000c18f3099b503",
+      "blob": "626ae43fdd4ad092e2c89600f4701ff454e0c745"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/STATE.yaml": {
+      "sha256": "20de5099a7bd6d6ecce6d2de371e3761dbbea360f81c207efc59aaa71b9a9070",
+      "blob": "c661c1fa19ef71ea301149224f0ce8001df2bb96"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/.claude/science/physics-loops/toe-ac-occupancy-grain-target-correctness-block51-20260902/TRACE_GATE.md": {
+      "sha256": "50d270fe8b1268620c1d9fff3450b09d16d95e97cf054b332ba3f2b639741085",
+      "blob": "85a9d6686d7e4905486f36b4e012f4f412e10ff5"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/docs/AC_OCCUPANCY_GRAIN_SUPPORT_TYPED_FORMAL_TARGET_REPAIR_BOUNDED_THEOREM_NOTE_2026-09-02.md": {
+      "sha256": "2c8a4438ce1f9517b79a0ff193a2e83bfd940ea93b55f2723a5ae10557809dcb",
+      "blob": "8a08f3b385198f45617e016ca74a5dfc6610bb4c"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/logs/runner-cache/ac_occupancy_grain_support_typed_target_repair_2026_09_02.txt": {
+      "sha256": "a4bd8546d657dbce9fd0f2d9c9c157fe3a98add523f6429217c9d4b9b6703b1f",
+      "blob": "5bd75bfa6e74c3f6a6de46559b72cd1ee6832412"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/logs/runner-cache/independent_ac_occupancy_grain_support_typed_target_repair_2026_09_02.txt": {
+      "sha256": "cccedc1580492c98841bbc184a300714fe0ccee82928343cf94dd73970921297",
+      "blob": "258861661a2808cc3c13a87fb515b230d7b6ed00"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/scripts/ac_occupancy_grain_support_typed_target_repair_2026_09_02.py": {
+      "sha256": "85501abb22c10eeb209e4ee88f2661f095334e1b16a0c88b23e0f0cfba739a63",
+      "blob": "f4b116727e0623850a4b4274e11b5026b169999b"
+    },
+    ".claude/science/physics-loops/occupancy-grain-7838-correction-20260909/originals/scripts/independent_ac_occupancy_grain_support_typed_target_repair_2026_09_02.py": {
+      "sha256": "6cf9e329a2f07464f9b4a4a46a7e748e7c9d90b4323d44d765bc4920e9dc424c",
+      "blob": "a7c8962c0b3e7d32f9c7cc7462c71bf498095233"
+    },
+    "docs/AC_OCCUPANCY_GRAIN_SUPPORT_TYPED_FORMAL_TARGET_REPAIR_BOUNDED_THEOREM_NOTE_2026-09-02.md": {
+      "sha256": "44a9d2154373d8b4f74ba4e66a5159d285471132200c558d3329dcd1ab4c2393",
+      "blob": "d8b711ce6e5383f3a1add71dd915df94812b56dd"
+    },
+    "logs/runner-cache/ac_occupancy_grain_support_typed_target_repair_2026_09_02.txt": {
+      "sha256": "b27011a3f8a18e29f0ff829a51a98caad8c9adc8662d9f6159d30cc3083a9313",
+      "blob": "0f0efa5642f714fb1ceb24f2b1b511a96ef27e14"
+    },
+    "logs/runner-cache/independent_ac_occupancy_grain_support_typed_target_repair_2026_09_02.txt": {
+      "sha256": "a5dc38de1a4445724a1a0b9d50135b501beb181ae5af3c10811f8cc44defabfd",
+      "blob": "79dea69700698f1555421b346a9e238c81e6607a"
+    },
+    "scripts/ac_occupancy_grain_support_typed_target_repair_2026_09_02.py": {
+      "sha256": "a2fc4084a2256779b7d54d8e0d5c2ec04455d2cc850bca1d14b859935234972f",
+      "blob": "a8f71f6736c754ecd39bce20c03ed126b0a94309"
+    },
+    "scripts/independent_ac_occupancy_grain_support_typed_target_repair_2026_09_02.py": {
+      "sha256": "1d24b5eaa2f41048498b8a7af6116a594349a63e9555b65040e724272fb43747",
+      "blob": "5c3a2df81b2a7331fccf9a3d46a79725b9eafe1d"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/CORRECTION_HISTORY.md": {
+      "sha256": "a83698d4c6c1904c6935205bb99930c487959fce583027a5c771c294edc8e1e8",
+      "blob": "f69b7d0bc99e98538410ee958c6e11d8133105a6"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/originals/docs/AC_RETA_C3_SOURCE_RESPONSE_SPECTRAL_IDENTITY_TYPE_REPAIR_BOUNDED_THEOREM_NOTE_2026-09-02.md": {
+      "sha256": "8508ac026f342aec003a79f83592e87c65df443ccdca0ec5a4476a5725747fef",
+      "blob": "620c6cd33f19d7cc0de46852c8e687d2ce06ac67"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/originals/logs/runner-cache/reta_c3_source_response_independent_check_2026_09_02.txt": {
+      "sha256": "269cadd64895c946af63679e6c79bef42e9be4d4849033c0e811cddb0480f097",
+      "blob": "7d2be8b16cd8297c3812ee171e7d59d8c1728634"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/originals/logs/runner-cache/reta_c3_source_response_mutation_check_2026_09_02.txt": {
+      "sha256": "4b5c5227dee199af7174413558bbdc1aacb1cf934e87209b16d0241206c46cd6",
+      "blob": "82b845154801bd068242f93e174ae93030275d4e"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/originals/logs/runner-cache/reta_c3_source_response_spectral_identity_2026_09_02.txt": {
+      "sha256": "f51e81df3c4515387a9425185f94da1beb6b33a577471e6a3f5d5bc88535d0a3",
+      "blob": "50c64da54908ebade0a0a458dccd93ace8178c9a"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/originals/scripts/reta_c3_source_response_independent_check_2026_09_02.py": {
+      "sha256": "5cd0edff88cf4f32082710c8d54e6497b45781a203274ba3368dc0faef0f9d53",
+      "blob": "0dfac31477c50fd5fe3108b1e7615731fcb292c2"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/originals/scripts/reta_c3_source_response_mutation_check_2026_09_02.py": {
+      "sha256": "0dc4654d5b62f0f278f408d1f950cdd0bea416e8bc2bb2cb98d206237109a672",
+      "blob": "cbf4ebe2e73ce2b9baffd5d0d71fd28bd44cef46"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/originals/scripts/reta_c3_source_response_spectral_identity_2026_09_02.py": {
+      "sha256": "ac07609d22317aa453648a786e41ddc36de866cf7ffaa4445095961d9afb0cf3",
+      "blob": "997817b33d3a9d8647d363ca3995e8606f8901b5"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/APPROACH_REGISTRY.md": {
+      "sha256": "02087034c1819eb7e8168a389366d72b351b7ee02e1f24949f8205f2b26035a2",
+      "blob": "0b09a0e52e6b0c106aca5bb3c1ff8cc4dafe4b79"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/ARTIFACT_PLAN.md": {
+      "sha256": "154aa7c04e3613b013ced62d7dc238da1eddf47b361793e1ae4833241d5596e8",
+      "blob": "d29033fa52e031fda1ef261076c68b7a2fc0069f"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "a13323b614c1b9f316e673104c4f58818a6bbc4749eb08803e03bfb667f78c0f",
+      "blob": "119f747041f3c9709d9234459080511e8b56e5af"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/EXACT_TARGET_CONTRACT.md": {
+      "sha256": "b587792bb6a0ee089ca167f38cb772922cf9830e20dacfd4f88e74fb0df7437c",
+      "blob": "f1aeea194ed73947b0e9bc14591e876b617e38cf"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/MUTATION_PLAN.md": {
+      "sha256": "fadcf069074950f012c40cd10054cc033491e619da1c0c83fc7a1d92f4f51c46",
+      "blob": "e47badeaf320fb92444acfefe1243bd14960ad48"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/NO_GO_LEDGER.md": {
+      "sha256": "4b691d7c9ecf7320f88871aba353baa24fae045a62f50c74beecffd940ea2df1",
+      "blob": "925c2601eca3196cef1ea8b20cd25fa46c07e68f"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/OPPORTUNITY_QUEUE.md": {
+      "sha256": "a7bda7612a4a7d3669e32a0321a8ed3e6f90efef026d2412e8c25dc85e30fb59",
+      "blob": "9d3177d2f8348216cc0b183133ca341d9efe6596"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/PRIOR_ART_SEARCH.md": {
+      "sha256": "1473d4557568d25a6bb0ddf26b13929393d8cacb42cb72cc9f0fe8be66832a1e",
+      "blob": "a6cf9333f70b9131759a6b89c91fed931a69bcd6"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/PR_BACKLOG.md": {
+      "sha256": "31d09441e53f4935a3cfc916138c97d37b239e373ad52b71120a555315fef2b2",
+      "blob": "1d7fb3b90f0d0bb26421bf82701e0e25ee81838f"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/REVIEW_HISTORY.md": {
+      "sha256": "bc4b6ea48a25ffff13870e57fe02e5823e5be690dd6ee9a2da5811514ef6a2ec",
+      "blob": "729e337e0fc3af6f8f925f77d161228dfd750534"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/STATE.yaml": {
+      "sha256": "2dbece3f8fc493aa1f2c204edcf71cafaf688e0d9ddd28e7e671007d9e88d8b4",
+      "blob": "902e1712369f7d4e7f6e6f871094d37eb4bc6fcd"
+    },
+    ".claude/science/physics-loops/c3-response-7839-correction-20260909/preregistered/.claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/TRACE_GATE.md": {
+      "sha256": "2e356d9e83838ca84596330194c4db13dc145ec621dca20d1288b85873bc642e",
+      "blob": "fe2d984619f68a60d4faee39f78c02e4c9f70468"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/APPROACH_REGISTRY.md": {
+      "sha256": "64bab128b7e329cc1cf5260bd69aa10f6d8a119caceec40f073e70c790eb0fb2",
+      "blob": "fbbf4f161ffee3146c8050b07c6121b089694e55"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/ARTIFACT_PLAN.md": {
+      "sha256": "5955f97f5c3b5260ff946ca4db9fb39a852e0cd40fe739478514a278fbc3efc0",
+      "blob": "5f7d9939c952eea171de60c53e32cb87ec628f09"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "58f1ef0a68a66eb9e8d273c05799fc7c371775fd8cdab60c5ecdd30609bf4bcf",
+      "blob": "b376232fd1d4b74ff71281a4dd6e753a7e59f0c2"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/EXACT_TARGET_CONTRACT.md": {
+      "sha256": "64227e626ea8f6fbe98bbf020f90a098993514838d5f5381a23d12c98bb25daf",
+      "blob": "bf9c232aba5e41fd801a79beadfc9c91af4a2728"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/GOAL.md": {
+      "sha256": "c34e36a9654c7f3bb82a0802211dc1265508da4c72388534b99a96e279bba378",
+      "blob": "a5778d9f097384606e8767e815b5921ed60f8de0"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/MUTATION_PLAN.md": {
+      "sha256": "ffebe7631094324dd2caf8f2e2dadabae2be0646292589dcf7ed01e3d0e25917",
+      "blob": "05cadcabb5c673fef6e242790cf9090409b3ea2c"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/NO_GO_LEDGER.md": {
+      "sha256": "e33480dff273299da245e3cab918a3066bfa1536e7df9ee561fe2b41bd0f1f23",
+      "blob": "d28c3f0db5878e592c685a80d024ede3f15ccaf9"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/OPPORTUNITY_QUEUE.md": {
+      "sha256": "d3e8589cf8152112e91af3e3c31523127bfb5d77b129991e4e9942abe09caaad",
+      "blob": "3fa1e2f1b61f1ee19f3da815def7ff80a77508d2"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/POSTEXECUTION_DECISION.md": {
+      "sha256": "3e999c45d45bf57d882c19b6f0f3052c5e9b3084f404db1999e1f620fa822bca",
+      "blob": "33a694f4534e8230cfa356690430ef302482fbff"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/PREEXECUTION_PANEL.md": {
+      "sha256": "afabe89a8a313a231f1e85e15119f183b550617e1961b3532391c7741cbc6933",
+      "blob": "122f2356503d5435892edd4809a7d76d8ffb7ab8"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/PRIOR_ART_SEARCH.md": {
+      "sha256": "19f24dd75d53310faa1b93dd847bc4f01f4ddd5c486715dec20996ead9af1017",
+      "blob": "882c305c9c502ab88f4282bc5bf67ed0b6347a32"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/PR_BACKLOG.md": {
+      "sha256": "fee2b291f486114957ec82db8dd711b8407397a1de40a986d95a3ec2b06bb375",
+      "blob": "db23499b07ec074802ba37819ade2d42ab3939f1"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/REVIEW_HISTORY.md": {
+      "sha256": "8c49cf95d3cf70fc192af0cbf8b27fb03c8ca046cab084e2f3a5312ff5df4678",
+      "blob": "9ed5479382431c9bc8d6fe0fa4d71d9d500d50df"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/STATE.yaml": {
+      "sha256": "0728a0dc2d4f34bd9b55e043de12b49c340fad2fe7bda6884d6bd9ae71dcb3a7",
+      "blob": "1c6e71e8e97ebc710f694ff16b1d8769f067d468"
+    },
+    ".claude/science/physics-loops/toe-reta-c3-source-response-block52-20260902/TRACE_GATE.md": {
+      "sha256": "7a8d513bf30dc783be833f93b58fd2e30ac61b32dc31f69f7a8774f58f1a76f2",
+      "blob": "52a1978533d6d774bc7abcd0f3e3e638474c56af"
+    },
+    "docs/AC_RETA_C3_SOURCE_RESPONSE_SPECTRAL_IDENTITY_TYPE_REPAIR_BOUNDED_THEOREM_NOTE_2026-09-02.md": {
+      "sha256": "8bb07f6e65a9e146d94504798bbb01175429ee78fac971588600fb417cb86530",
+      "blob": "3085964ded9c6035e8eca1b4618a115a19ea5f42"
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "b047127629c1f371a1d4ce10dfc23068717944c3f1502dad9293e0a0ba3e170f",
+      "blob": "3b6d207872533ebaa399264ae77218c3449dbc81"
+    },
+    "logs/runner-cache/reta_c3_source_response_independent_check_2026_09_02.txt": {
+      "sha256": "269cadd64895c946af63679e6c79bef42e9be4d4849033c0e811cddb0480f097",
+      "blob": "7d2be8b16cd8297c3812ee171e7d59d8c1728634"
+    },
+    "logs/runner-cache/reta_c3_source_response_mutation_check_2026_09_02.txt": {
+      "sha256": "422608e80bffd48e32ad57e5fd5ea3c6c0b704e4d7433eb885369bc74936839d",
+      "blob": "47dbe1c8b01e019c33287d5407f82bc2cdf41161"
+    },
+    "logs/runner-cache/reta_c3_source_response_spectral_identity_2026_09_02.txt": {
+      "sha256": "067484f8f7c6e5a0c1d55fc48bfad71cd181dd9af0e889b0959b36512cdc0ce4",
+      "blob": "0cbff7abd13e17e0267e6fa66f7eb0f937659519"
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "4cf990725f93055b97bc9b9262ed51fbd17e393e2d45b8aded975ec4fbb038d7",
+      "blob": "22c2c7719441e5a3c2f283e3609ee8fe81a932c9"
+    },
+    "scripts/reta_c3_source_response_independent_check_2026_09_02.py": {
+      "sha256": "5cd0edff88cf4f32082710c8d54e6497b45781a203274ba3368dc0faef0f9d53",
+      "blob": "0dfac31477c50fd5fe3108b1e7615731fcb292c2"
+    },
+    "scripts/reta_c3_source_response_mutation_check_2026_09_02.py": {
+      "sha256": "b746d728a3fc3763ab461c98c05a3ce6f58df684bde229a4e6d64da2bd5a0668",
+      "blob": "7276bca937ec1aa55986e0d62ff1bce74008c216"
+    },
+    "scripts/reta_c3_source_response_spectral_identity_2026_09_02.py": {
+      "sha256": "2b9f946d685f46fbd9f23e5e50e20b89731fd6f964daedf5f584721be20bf293",
+      "blob": "a0cd5171a7ac6091115227dbb14976ecde859aff"
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "sha256": "a2e5d0ba804e7f0878f0f58478d2f2ed0c7e7a248fc51635f7c34214dea47453",
+      "blob": "d11c9e22e833b70c0516c7c09da228970568551e"
+    }
+  },
+  "science_review_reports": {
+    "backlog-gauge-effect-7841-fixes/FINAL_RECEIPT.json": "9cb5c874401240a87948beb5b27739d898b9aed9ca835bc82bdda657401df5e7",
+    "backlog-gauge-effect-7841-fixes/REPORT.md": "5a30142835294358e3566c6b8ac912e775c28904d84ddfecd7e2e6fcac397239",
+    "backlog-gauge-effect-7841-review/confirmation/FINAL_RECEIPT.json": "1bffd3057490657813da0f5bcd27eccb56bf6f43f2c85f5e92c3ad29a551a816",
+    "backlog-gauge-effect-7841-review/confirmation/REPORT.md": "f279a8d3919ffaf49f38155c9e536d88f0011c595b80071abbc65cdae6233816",
+    "backlog-gauge-effect-7841-root-verification/ORIGINAL_SOURCE_VERIFICATION.json": "a1af5a5786d040f07a14bb681860fdedacf6f14c6590283e9fff53b1c0e6481e",
+    "backlog-gauge-effect-7841-root-verification/FINAL_AUTHOR_DELTA_VERIFICATION.json": "db7f291f207f5e9747f41437ca4fe25a11c1117affe4d6c2ad75627db0770fd8",
+    "backlog-occupancy-grain-7838-fixes/FINAL_RECEIPT.json": "9f83d0500b2c79036086f2bc1dbd2f2ea63f9c5009685d677b283f3ef554156a",
+    "backlog-occupancy-grain-7838-fixes/REPORT.md": "c8b7661b49fab1a3d26e40a8b5e4bcc125337b8ddbfaaf3055f9e6cedbb5119b",
+    "backlog-occupancy-grain-7838-review/confirmation/FINAL_RECEIPT.json": "714e4ee026276fc82dab842bfe49ddb9bb98977bb45f6ecafa56580ed93f1603",
+    "backlog-occupancy-grain-7838-review/confirmation/REPORT.md": "bf92b6f1bc93980c7110c73f41d3586b9473f8727a7a54e61f32d4a65253991f",
+    "backlog-occupancy-grain-7838-root-verification/ORIGINAL_SOURCE_VERIFICATION.json": "599336b5d3dc0e3b35f4ad016c6aa7162e8a064f3d9518761a8ed753ac6dfe3f",
+    "backlog-occupancy-grain-7838-root-verification/FINAL_AUTHOR_DELTA_VERIFICATION.json": "47166ed0fd966a596a8498f0b4bc79aedc60b4ca8a0655ace31fa5a5b1bded8c",
+    "backlog-c3-response-7839-fixes/FINAL_RECEIPT.json": "d259044151fc285a63a5b3d38c4f50b8b8897fa9c59fd48333c66fbf98ea58d0",
+    "backlog-c3-response-7839-fixes/REPORT.md": "1fd28d926df11df3992f16edf48d70ad334d2347255b596d08f6a22ee8cc2624",
+    "backlog-c3-response-7839-review/confirmation/FINAL_RECEIPT.json": "3db1e2643fb736424d58300bd69bab2aa320ff3588c05026213684327991348d",
+    "backlog-c3-response-7839-review/confirmation/REPORT.md": "129b76ea898ebde4613a2766ad5d866146541375d824e91aceba924f249d4880",
+    "backlog-c3-response-7839-root-verification/ORIGINAL_SOURCE_VERIFICATION.json": "1524e0136fd2def086d0aa6a5d289b55de153e75245b4b73758114977494a17b",
+    "backlog-c3-response-7839-root-verification/FINAL_AUTHOR_DELTA_VERIFICATION.json": "ba952498b6c105ac83102a9edf67c149e5e15eccf5343517506d82fc79ba353f"
+  },
+  "full_validation_runs": 1,
+  "integration_retries": 0,
+  "audit_requested_or_invoked": false,
+  "units": [
+    "gauge-effect-7841",
+    "occupancy-grain-7838",
+    "c3-response-7839"
+  ]
+}
