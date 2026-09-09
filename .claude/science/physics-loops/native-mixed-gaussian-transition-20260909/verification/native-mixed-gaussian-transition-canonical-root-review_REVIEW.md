@@ -1,0 +1,9 @@
+# Canonical mixed Gaussian transition review
+
+PASS for the assembled conditional-support theorem and synthetic certificate. Root read the full168-line theorem, primary/helper sources, status/import boundary, original source-bound mathematical reviews and final pins. Root suggested exploring binary doubling earlier but did not author the underlying proof; Primary authored it and Zeno independently reviewed it. No formal audit verdict is applied.
+
+The real common-frame, norm disk, HS product and phase continuation hypotheses are explicit. Ordered CAR signs and transpose conventions agree with the original independent literal Fock checks; repeated insertions retain contact terms. The input log bound uses q_* for both actual and approximate products and includes HS tails. LU sign/real homotopy, dimension-dependent residual and scalar log enclosures retain their limits. The approximate-anchor upper norm clarification is correct. Native evolution/alpha and physical-model selection are explicitly absent.
+
+A narrow introductory clarification now states unit real Majorana combinations for the199/118803 bounds, matching the full fixed-degree theorem. The original note/manifest/freeze are retained. No equation or implementation changed. Canonical source helpers use explicit raise guards and remain effective under-OO.716 Fock controls include a resource predicate;16 fast controls are finite exact comparisons. These do not certify a native matrix, a full physics simulation, or current-main integration. The source-freeze/manifest bind all actual script and note inputs; immutable research snapshots are explanatory provenance.
+
+Root isolated execution pending in its separate frozen protocol. Graph build and final metadata must follow that check; one serialized graph refresh, no authority surfaces or audit. Source PASS is separate from eventual integration of unlanded parents.
