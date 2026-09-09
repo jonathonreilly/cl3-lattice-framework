@@ -1,0 +1,15 @@
+# Proposed root supervisor, UNAUTHORIZED
+
+This is a standalone sequential production/replay proposal. Root must review source and final replay closure, replace the explicit unauthorized replay placeholder in a new preserved revision, and freeze before a separately bound authorization. No authorization is shipped or written by this package. Productionf9b and its contract are fixed; no mathematical source is imported by the supervisor.
+
+Invocation after final review only: root wraps `python -I -B supervise.py AUTHORIZATION.json FRESH_OUTPUT` in its independent external1790-second process-group watchdog and `/usr/bin/time -lp`. The10-second prior charge gives1800 aggregate. This external clock includes supervisor interpreter startup and final teardown; supervisor COMPLETE remains provisional until root reconciles the outer shell receipt. Internal aggregate alarm1785 and each stage caps1390/400 apply concurrently. Worker internal caps1380/390 stay separate. Preflight, posthashes, output checks and serialization consume the aggregate budget; stage maxima do not promise room for all overhead.
+
+Each child is launched in a fresh process group with `/usr/bin/time -lp`, log files and STARTED before execution. Poll `/bin/ps` with0.3-second timeout every0.02 seconds; sum supervisor and descendants including the child and time process, stop above384MiB. Track previously observed descendants and kill the process group plus known descendants on any exception or resource failure. Polled RSS is an observed bound, not an OS allocation ceiling. Each child external high-water receipt is separately parsed and required positive, finite and within384MiB. An independent outer shell high-water check remains mandatory.
+
+Require exact source/runtime pins before and after each stage. Require production success/Echi and seven final NPY/raw hashes, snapshot all production files before replay and compare membership/hashes afterward. Require replay source/input/result bindings and identical Echi/particle intervals. All stage receipts, logs, available failures and partials remain. No retries or replacements. A failure prevents the next stage.
+
+The draft follows the inspected native-independent-dyadic-norm-root-review/run_once.py whole-tree/group cleanup pattern. Source membership and runtime pins inside the respective workers remain mandatory; installed Python cache assumptions are inherited, while production local verified-byte loader is fixed. The supervisor itself is stdlib-only; its final runtime closure must be supplied/reviewed by root before execution. This draft cannot launch because replay hash is explicitly unauthorized.
+
+## Final replay binding amendment
+
+Replay170aa5b4 is now pinned prospectively. Before replay, the supervisor writes a binding of RESULT, WORKER_COMPLETE, production freeze and contract hashes and passes it as the fourth replay argument. Final receipt must echo all binding hashes. Prior unauthorized-placeholder revision is preserved. No authorization is present, no launch occurred; root review remains required.

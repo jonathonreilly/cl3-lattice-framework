@@ -1,0 +1,5 @@
+# Root fixedvector pass cost authorization — UNLAUNCHED
+
+Read full fixedmicro/dispatcher/protocol and reusednativecolded2f/final528f. Exactly16groups of2dots+3multiplies+3add/subtracts+finitechecks onfixedreal1048576-entryvectors. One losslessrealNPY/rawcomplexconversion+verification andoneactualexactreal particle/normpass; noHaction,CGsolve,transport oroptimization. Maximumgroup timepricesCGcandidatevectorwork; meansnotused. Perphasepartialhashes/exactbuckets/total anderrors retained. Initialzlibpreflightfailure ispreserved; current3f97binds2317actualfiles, strict-I-B/allfive threadflags1 andactualparser/lateimports guard preflight.
+
+One30second384MiB whole-tree attempt afterremotesource/rootpreregistration. Rootkill29.5/internal29, /usr/bin/time -lp allstartup/hash/parser/import/init/16groups/partialI/O/conversion/norm/finalguard+serialization included. Freshoutput, noretry. Rootchecks exact3f97hash andchildactualsource/runtimeguards; abruptfailure retainedexternally. Fullfour-solve1800budget isnotlicensedbythiscostcontract; rootmustcombineallmeasuredmaxima/passcounts/independentreplayreserves separately.

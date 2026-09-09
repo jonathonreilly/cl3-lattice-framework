@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Thirty-first campaign checkpoint
 
 Updated 2026-09-09T01:11:33.906921+00:00. The48-hour campaign continues until2026-09-10 10:27:17UTC or usable quota exhaustion.24 science PRs8036-8059 remain open; none merged or formally audited. Last checked free disk62GiB.47 inactive worktrees and705MB of duplicate raw files already removed with useful evidence verified remotely. User dirty and other-worker checkouts remain untouched.
 

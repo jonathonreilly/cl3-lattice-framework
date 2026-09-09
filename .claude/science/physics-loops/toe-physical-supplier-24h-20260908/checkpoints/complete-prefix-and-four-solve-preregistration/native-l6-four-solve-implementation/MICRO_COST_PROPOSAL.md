@@ -1,0 +1,5 @@
+# Additional vector-pass cost gate required, UNLAUNCHED
+
+A separate fixed30s384MiB single attempt should price sixteen CG dot/axpy update groups on predetermined real dyadic2^20 arrays, plus one realNPY→rawcomplex lossless export/verify and one real exact norm scan. No H action,CGsolve or candidate optimization. Preserve alltimings,arrays/hashes and failurepartials; same-process FPguard and full runtime closure required. The sixteen groups are a fixed sample, not an iteration-success claim. This micro source is not yet frozen or authorized.
+
+Known maxima: action0.508979791; normcomplexscan0.571442791; transportcomplex0.05441. Worst fixed schedule action1088*max=553.770..., norm128*max=73.144..., transport27*max=1.469... before headroom and other work. These are planning proxies: real scanadapter andrealtransport may differ; do not silently substitute empirical equivalence. Use2xmainarithmetic headroom provisionally, reserve independent replay at least400s pending its exact scope, allCGupdate/I/O/startup/priorcost extra.1800s target is not yet demonstrated. Full contract remains absent until measured passcost and final independent review.

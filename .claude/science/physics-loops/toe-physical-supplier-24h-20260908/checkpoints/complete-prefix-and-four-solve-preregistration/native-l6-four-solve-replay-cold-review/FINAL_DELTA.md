@@ -1,0 +1,7 @@
+# Final replay guard delta
+
+PASS at FREEZE170aa5b4f6e7276f3c9de625d343338a7d48088dbc4ceff41e89ef0de58d8f73. Complete changed run.py and exact review.py diff read against preserved558c; the gather arithmetic is unchanged. All pinned inputs and recursive executable membership verified. Read the actual28 tiny-control source and captured CLI/readiness receipt; no native or large-vector calls, no test rerun.
+
+The four certificate checks now enforce saved decimal-string iteration in16..256 by16, nonnegative exact rho and the appropriate stage threshold. This matches the producer's string serialization. The physical global i is required. External binding pins both RESULT and WORKER_COMPLETE before replay; completion must bind the same result, producer freeze, contract and PRODUCTION_ONLY_COMPLETE status. All three binding/result/completion files are hashed again afterward. The root-created binding remains the authority for matching the approved production contract, rather than a self-selected replay input.
+
+Per-vector bridge, per-residual and source/final stages now persist; completed fresh certificates are retained and FAILED identifies last stage. Source loading compiles exactly the verified bytes, closing local pyc substitution. The post-loaded origin check and external400s/384MiB resource contract remain required. No remaining source blocker identified in the requested delta. This readiness does not claim an actual replay has passed or approve changed future bytes.

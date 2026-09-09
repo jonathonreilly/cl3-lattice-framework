@@ -1,0 +1,38 @@
+{
+  "status": "AUTHORIZED_FOR_ONE_ATTEMPT_AFTER_REMOTE_PREREGISTRATION",
+  "aggregate_seconds": 1800,
+  "prior_seconds": 10,
+  "production_external": 1390,
+  "production_internal": 1380,
+  "replay_external": 400,
+  "replay_internal": 390,
+  "supervisor_internal": 1785,
+  "outer_watchdog": 1789,
+  "root_shell_acceptance_less_than_seconds": 1790,
+  "rss_bytes": 402653184,
+  "scientific_target": "Four residual-certified native L6 third-order star representative solves, independent full saved-vector replay and all odd-particle weight intervals.",
+  "thresholds": {
+    "first": "1e-10",
+    "second": "1e-9",
+    "Echi": "1e-6"
+  },
+  "output": "/private/tmp/toe-24h-probes-20260908/native-l6-four-solve-run-f9b-a8b",
+  "outer_logs": "/private/tmp/toe-24h-probes-20260908/native-l6-four-solve-run-f9b-a8b-outer",
+  "authorization_sha256": "0945e5bd608b3dbc7f59ac62b2ce3a700fc1cd0b90b01e025dfc7418033d169c",
+  "production_authorization_sha256": "6828f384a1ce0b8dae12d36d7a0ce0e637ce8b136a7a91911fe8e2d85fd40f00",
+  "bindings": {
+    "authorized": true,
+    "supervisor_freeze": "2f3f1d33cf65d995a496b1e16571aa2897aa5a84143dd9131ffd667f762220d9",
+    "outer_freeze": "8858f54e0a648993e0cc0c0a74c0f3094c5f4fcf243a8b156fcbc1df0ec0b5e9",
+    "production_source_freeze": "f9bdb802ea9ab651979432e5edc52fb966b811febb248b461f739821f38db41b",
+    "production_contract_sha256": "98b6115a239719e09ca562944643e348c34eac5769ebae4346ffdac71de7c86f",
+    "replay_source_freeze": "a8b7635d212cd99fef66cb16f6fa5356631882c9c99cc37d5fc142e29d2d4855",
+    "root_condition": "Launch only after exact remote preregistration verification; one attempt, no retries."
+  },
+  "reviews": [
+    "native-l6-cg-certificate-cold-review/CACHE_FINAL_DELTA.md",
+    "native-l6-four-solve-replay-cold-review/CHUNK_ORDER_ADDENDUM.md"
+  ],
+  "sampling_boundary": "RSS is observed process-tree peak and external high-water, not an OS allocation ceiling.",
+  "failure_policy": "Any breakdown, cap, input drift or mismatching certificate fails attempt; retain all partials, no retry."
+}

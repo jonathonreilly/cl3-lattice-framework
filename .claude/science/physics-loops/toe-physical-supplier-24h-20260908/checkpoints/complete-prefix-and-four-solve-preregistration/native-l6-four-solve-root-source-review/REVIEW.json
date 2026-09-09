@@ -1,0 +1,30 @@
+{
+  "status": "PASS production source math/data flow for fixed conditional finite model",
+  "source_freeze": "f9bdb802ea9ab651979432e5edc52fb966b811febb248b461f739821f38db41b",
+  "reviewed_files": {
+    "worker.py": "9ba417ccc179b933e446016544bd72ea3fec0fb7ec6f3d3f5ca0218a8913540d",
+    "cg_candidate.py": "c0f0287d49ba8769b4dfcad9176e1b9f2bf2abe702b143b2e5bd2b86f6b316ae",
+    "envelope.py": "590a6605ec2bf59de6b07aa522a2c201b6588b9fbd35fae6e8b0068fae324944",
+    "norms.py": "3487114294c78b2889aff6d65c60f851efa0642c4cc32dcde347351ceb7d80b2",
+    "exact_square.py": "9deff90875d57c6ad47a9bab338eca2817686817275d78fbf6a8dad39da61c80",
+    "formats.py": "bf0fe9632811f6a9cd02c4f99fd04849a0d424427af763d8bdc95682f5fa4055",
+    "validate_coefficients.py": "eb703b1a339af76efd2d8f47dfdc5abf010faceb27e9f70e9fdc80c096a687e1",
+    "run.py": "1f121e857ef71fb5aee1162e8d93c821b84c31fc787875801147638fe38f6b19",
+    "real_kernel.py": "c2071d88375f42652b727c275245484ad9d15517b230504c0cb52b5ba9be5979",
+    "transport.py": "eb2eb65f7901ad858830d349a273abed8dddba1eafb7e23a55a1b795b2074bc1",
+    "CONTRACT.json": "98b6115a239719e09ca562944643e348c34eac5769ebae4346ffdac71de7c86f",
+    "FULL_PROTOCOL.md": "233118bfcf92dd231530a07791ca10ef9e5c724f046be8a1e037900d205f00f8"
+  },
+  "points": [
+    "Four zero-start unpreconditioned CG solves, max256, fresh exact-envelope certificates each16, thresholds1e-10 and1e-9; recursive residual is not acceptance.",
+    "Exact binary64 norm scan and 100-bit dyadic sqrt upper bound; residual includes operator and subtraction roundoff, inherited source bound enters solution bound once.",
+    "Full six predecessor vectors per representative; 15 final transports and /8; all odd21-mode particle weights with global physical phase i.",
+    "Hash-verified local source bytes compiled directly, stale-pyc discrimination separately reviewed.",
+    "All math remains conditional on declared supplied native model, 1/3 gap and explicit IEEE/ufunc assumptions."
+  ],
+  "open_launch_conditions": [
+    "Final independent replay must resolve cross-chunk scatter/gather accumulation ordering for exact comparison.",
+    "Root supervisor, runtime closure, source/auth bindings and remote preregistration still required."
+  ],
+  "physical_calls": 0
+}
