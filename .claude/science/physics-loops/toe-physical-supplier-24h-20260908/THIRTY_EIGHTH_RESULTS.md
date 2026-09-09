@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Thirty-eighth campaign checkpoint
 
 Updated 2026-09-09T02:57:22.773220+00:00. The campaign has delivered27 open science PRs,8036–8062. None were merged or formally audit-ratified. The user-authorized deadline is September10 at10:27:17UTC, but only1% of weekly account usage remains. No reset credits are authorized. Work continues on the final coherent result while quota permits; no numerical jobs are running.
 
