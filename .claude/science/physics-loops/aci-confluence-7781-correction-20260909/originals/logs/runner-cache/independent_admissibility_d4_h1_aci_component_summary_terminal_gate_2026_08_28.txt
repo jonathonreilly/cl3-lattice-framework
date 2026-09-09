@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_h1_aci_component_summary_terminal_gate_2026_08_28.py
+runner_sha256: 0e6b7967a4158d8b66bcf017ecaa8d24e12e5ca9788ef6e325744ffa0f15aede
+input_fingerprint_sha256: 123f19752caaac38e6a6c8795cdf6fdccbe5bf2fdb681fba5aba76ada88047c7
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS the landing note and N1-N8 sidecar bind the independent run
+PASS the independent 1,024-row table reproduces the frozen digest
+PASS all 32,768 associativity triples pass independently
+PASS the literal translated quotient patterns have 20/87 states and 15 common successors
+PASS the all-alpha-phi six-site state is a common quotient normal
+PASS the unguarded typed Y independently has 51 states, 70 transitions, and 19 normals
+PASS the exact terminal-versus-merge peak is reachable and unjoinable
+PASS the all-neighbor guard independently gives 33 states, 52 transitions, and one correct normal
+PASS scope stays finite and leaves labelled, CP, absorption, Record-law, axiom, and TOE claims unexecuted
+ALGEBRA products=1024 associative=32768/32768 sha256=5e7bfc1cb5c5d43ec8df382bfe491c4e12ce7cb1e6d6929d8358148812be5c18
+QUOTIENT branch_a=20 branch_t=87 common=15 normal=(18, 18, 18, 18, 18, 18)
+FROZEN_Y states=51 transitions=70 normals=19 correct=1
+PEAK source=(15, 3, 7, 15) terminal=(-1, 3, 7, 15) merge01=(15, 15, 7, 15) common_descendants=0
+GUARDED_Y states=33 transitions=52 normals=((-1, 15, 15, 15),)
+DECISION scoped-summary-rank-or-confluence-failure broad_no_go_demoted
+AUDIT_INPUT_SHA256 52e38db9f0be4c2621403665e72f6055b948cb8bb089a425694f4a79e24b6599
+per_element: checked — the independent oracle reconstructs every Boolean-union product and every associativity triple.
+per_site: checked — the exact center terminal-versus-edge-merge peak has disjoint descendant sets.
+per_mode: checked and not executed — no primary, carrier isometry, labelled projector, or Lindblad mode is imported.
+per_block: checked — complete unguarded and neighbor-guarded four-site Y graphs are independently enumerated.
+lattice_wide: checked and not executed — the finite counterexample narrows one compiler and leaves broader routes live.
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+
