@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py
+runner_sha256: b33240c4575531738a01ca14e4d43d9687432c7eee27e434d389c24b0ee1986c
+input_fingerprint_sha256: 7190f6cfee0e07b5f2dfc9c75b4cf4baf3e8724f1e6624e5bb7cf788b7c9af74
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+[PASS] 01 all fourteen historical gap values and sixteen old checks are preserved
+[PASS] 02 detuning -0.10 retains finite separate diagnostic fits, with no cross-response model selection
+HISTORICAL_FIT_REANALYSIS delta=-0.10 excess_c2=0.03268271 excess_chi2=4.266709 unsubtracted_pure_losses=(239.62025205265104, 49.13919663315856) losses_comparable=False
+[PASS] 03 detuning -0.05 retains finite separate diagnostic fits, with no cross-response model selection
+HISTORICAL_FIT_REANALYSIS delta=-0.05 excess_c2=0.02716205 excess_chi2=0.189582 unsubtracted_pure_losses=(102.79736560682316, 30.75955777860741) losses_comparable=False
+[PASS] 04 joint detuning fit includes the common RK reference covariance
+CORRECTED_SHARED_RK_FIT coefficient=0.36885150 error=0.04964682 chi2=7.79967530 nominal_delta_method_only=True
+[PASS] 05 final returned-control health aggregation rejects a later sector failure
+[PASS] 06 finite supplied-component Green normalization is retained
+SCOPE: finite supplied Green/observable definitions and historical fits; late-control health not reconstructed; long production, asymptotic pole, physical clock and Maxwell matching held
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

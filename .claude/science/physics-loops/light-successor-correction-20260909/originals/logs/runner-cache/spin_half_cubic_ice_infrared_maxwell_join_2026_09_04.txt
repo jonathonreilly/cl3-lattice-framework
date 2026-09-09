@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py
+runner_sha256: fdb9e0d0de5d10282c782cd888a9e3823c76a9c2a253887e76ae8a686de8da1f
+input_fingerprint_sha256: b208829151cfe904ddf7921cb12a9203d71de619a6d6578a144f660773f1c1f4
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.65
+status: nonzero_exit
+----- stdout -----
+Traceback (most recent call last):
+  File "/private/tmp/u1-aux-face-law.QDrXtj/worktree/scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py", line 552, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/private/tmp/u1-aux-face-law.QDrXtj/worktree/scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py", line 255, in main
+    infrared_detuned, infrared_rk = parse_ladder_cache(
+                                    ~~~~~~~~~~~~~~~~~~^
+        "spin_half_cubic_ice_infrared_ladder_2026_09_04.txt",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        (16, 18),
+        ^^^^^^^^^
+    )
+    ^
+  File "/private/tmp/u1-aux-face-law.QDrXtj/worktree/scripts/spin_half_cubic_ice_infrared_maxwell_join_2026_09_04.py", line 123, in parse_ladder_cache
+    raise RuntimeError(f"unclean or incomplete cache: {cache_name}")
+RuntimeError: unclean or incomplete cache: spin_half_cubic_ice_infrared_ladder_2026_09_04.txt
+
+----- stderr -----
+

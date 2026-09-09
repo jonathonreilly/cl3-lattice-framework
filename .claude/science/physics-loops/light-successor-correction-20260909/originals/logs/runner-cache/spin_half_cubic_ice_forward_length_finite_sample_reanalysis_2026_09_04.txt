@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_forward_length_finite_sample_reanalysis_2026_09_04.py
+runner_sha256: 421cd0399b35947d90f208ddab78b38b2caf7e7cd5f593613ff53af300aaf434
+input_fingerprint_sha256: eb90332d52d2a882ec0aefa0e85e7972c74c03edb9539d0b04874d39ac0edc44
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.99
+status: ok
+----- stdout -----
+[PASS] 01 the preserved nonzero-exit receipt supplies its complete data matrix
+[PASS] 02 the detuned covariance is usable and the RK rank-one identity is exact
+[PASS] 03 both raw long-F ladders pass the finite-sample Hotelling threshold
+[PASS] 04 both fixed F=6 raw contrasts pass the finite-sample Student threshold
+[PASS] 05 both excess long-F ladders pass the finite-sample Hotelling threshold
+[PASS] 06 both fixed F=6 excess contrasts pass the finite-sample Student threshold
+[PASS] 07 finite-sample thresholds are strictly wider than the failed asymptotic thresholds
+FINITE_SAMPLE_FORWARD window=2-6 gap=0.22892247+/-0.00102170 Hotelling_stat=7.2998 Hotelling95=17.3607 F6_equal_mean_delta=0.00033809+/-0.00176281 Student_stat=0.1918 Student95=2.5706
+FINITE_SAMPLE_FORWARD_EXCESS window=2-6 squared_gap_excess=0.02015321+/-0.00052018 Hotelling_stat=7.3535 F6_equal_mean_delta=0.00015331+/-0.00080375 Student_stat=0.1907
+FINITE_SAMPLE_FORWARD window=8-14 gap=0.24162657+/-0.01076229 Hotelling_stat=0.1386 Hotelling95=17.3607 F6_equal_mean_delta=-0.00929659+/-0.00747478 Student_stat=1.2437 Student95=2.5706
+FINITE_SAMPLE_FORWARD_EXCESS window=8-14 squared_gap_excess=0.02538939+/-0.00533941 Hotelling_stat=0.1366 F6_equal_mean_delta=-0.00443843+/-0.00377874 Student_stat=1.1746
+CERTIFICATE: original_failed_receipts_preserved=True outer_populations=6 covariance_estimated=True Hotelling_F_calibration=True fixed_contrast_Student_t=True fixed_L=8 thermodynamic_limit=False
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

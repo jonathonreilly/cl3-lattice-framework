@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_off_axis_maxwell_isotropy_join_2026_09_04.py
+runner_sha256: fef6248c3b90c88c1038af037cd152b8e3d33577dcc31286328bdffe6cdfa0ec
+input_fingerprint_sha256: b00f997962b24ed8c0cbb11cd49fcac5203e52bd5259ee072973964fcde82735
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 1.26
+status: nonzero_exit
+----- stdout -----
+[PASS] 01 proper cubic covariance and gauge transversality uniquely force the quadratic Maxwell kernel
+[PASS] 02 the source-pinned cache supplies all eight finite gap vectors
+[PASS] 03 every parsed four-family covariance is symmetric, positive definite, and full rank
+[PASS] 04 every covariance block remains below the declared conditioning ceiling
+[PASS] 05 the covariance-aware common off-axis q-squared coefficient is positive at two errors
+[FAIL] 06 the common dynamical coefficient is compatible with independent U K
+[PASS] 07 four independent leading coefficients do not cross the nominal three-parameter improvement threshold
+[FAIL] 08 fixed U K with its common uncertainty passes the nominal five-percent eight-dof threshold
+[PASS] 09 face-diagonal in-plane and out-of-plane leading coefficients are compatible
+[PASS] 10 a common mass term is unresolved and does not significantly improve the fit
+[PASS] 11 family q-eighth terms do not significantly improve or destabilize the leading coefficient
+[PASS] 12 the common coefficient survives removal of L=8 and of the body-diagonal family
+[PASS] 13 dropping within-volume off-diagonal covariances leaves the leading coefficient compatible
+QUADRATIC_KERNEL proper_rotations=24 cubic_only_dimension=3 transverse_only_dimension=6 joint_dimension=1 basis=q2_delta_minus_qiqj
+ISOTROPY_JOIN common_c2=0.04925297+/-0.00550993 UK=0.01228909+/-0.00116899 compatibility_sigma=6.5625 common_chi2=5.0507 independent_chi2=1.7081 common_delta_chi2=3.3427 fixed_target_chi2=48.1174
+DIRECTION_COEFFICIENTS axis=0.04574098+/-0.00754318 face_out=0.05275869+/-0.01928791 face_in=0.01940114+/-0.02047108 body=0.07537659+/-0.03164461 face_difference_sigma=0.9770
+MODEL_CONTROLS mass2=0.00099964+/-0.00197994 mass_delta_chi2=0.2549 q8_c2=0.01701638+/-0.02754231 q8_delta_chi2=4.3218
+INFLUENCE_CONTROLS L10plus_c2=0.03158315+/-0.01502095 L10plus_difference_sigma=1.1044 without_body_c2=0.04716525+/-0.00619362 without_body_difference_sigma=0.2518 diagonal_c2=0.04938386+/-0.00720708 diagonal_difference_sigma=0.0144
+COVARIANCE observation_rank=16 common_design_rank=9 independent_design_rank=12 max_block_condition=2.4591e+02
+CERTIFICATE: complete_cubic_orbits=True outer_population_covariance=True family_q4_q6=True mass_control=True q8_control=True static_target_source_pinned=True finite_volume=True thermodynamic_limit=False
+TOTAL: PASS=11 FAIL=2
+
+----- stderr -----
+

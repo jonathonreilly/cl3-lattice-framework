@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_infrared_maxwell_health_reanalysis_2026_09_04.py
+runner_sha256: 9b4fbd65bc089f160e90fef8d2e95b3eaaedb276fd582c9b4697ed393abd0eae
+input_fingerprint_sha256: e7b66d574cb6b77217ee8b3c68db3658a6c39228c5f65342946acddc606f9488
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.66
+status: nonzero_exit
+----- stdout -----
+POST_RESULT_INPUT_CLASSIFICATION min_ess=0.939055 min_origin_tau16=18 min_forward=92 conditional_join=True
+[PASS] 01 the two source-pinned receipts join into matched six-volume ladders
+[PASS] 02 the imported infrared helper is the declared long-run source
+[PASS] 03 every declared infrared fit is finite
+[PASS] 04 both target-window q-sixth fits retain a positive infrared coefficient
+[PASS] 05 both target-window infrared coefficients are compatible with independent U K
+[PASS] 06 fixed central U K plus q-fourth and q-sixth passes the nominal four-dof fit and one-parameter penalty tests
+[PASS] 07 a constant squared-mass term is unresolved and does not significantly improve either target fit
+[PASS] 08 a q-eighth extension neither significantly improves nor destabilizes the infrared coefficient
+[PASS] 09 the coefficient survives the lower-q subset and either infrared volume removal
+[FAIL] 10 direct detuned spectra carry U K-compatible q-squared weight while the RK control does not
+[PASS] 11 the early and primary-late infrared coefficients are compatible
+INFRARED_JOIN window=2-6 two_c2=0.03080984+/-0.00256796 two_chi2=7.4873 q6_c2=0.02086578+/-0.00613427 q6_chi2=4.3010 fixed_UK_chi2=6.2559 fixed_delta_chi2=1.9548 L12plus_c2=-0.02440725+/-0.03456037 without_L18_c2=0.02412701+/-0.00761187 without_L16_c2=0.01542554+/-0.00761080
+DIRECT_SPECTRUM window=2-6 detuned_c2=0.01978718+/-0.00602777 detuned_chi2=4.0862 RK_c2=-0.00192094+/-0.00049902 RK_chi2=2.1371
+INFRARED_JOIN window=6-12 two_c2=0.03181078+/-0.00298064 two_chi2=3.4202 q6_c2=0.02493498+/-0.00746873 q6_chi2=2.4121 fixed_UK_chi2=5.2790 fixed_delta_chi2=2.8669 L12plus_c2=-0.00668175+/-0.02299768 without_L18_c2=0.03330310+/-0.01031478 without_L16_c2=0.02381165+/-0.00783001
+DIRECT_SPECTRUM window=6-12 detuned_c2=0.02485604+/-0.00736827 detuned_chi2=2.2945 RK_c2=0.00007516+/-0.00051839 RK_chi2=0.3697
+INFRARED_JOIN window=8-14 two_c2=0.02611035+/-0.00411523 two_chi2=11.1186 q6_c2=0.00143067+/-0.00919872 q6_chi2=2.1193 fixed_UK_chi2=3.5127 fixed_delta_chi2=1.3934 L12plus_c2=-0.02625617+/-0.02601540 without_L18_c2=0.00618925+/-0.01553405 without_L16_c2=0.00183443+/-0.00949805
+DIRECT_SPECTRUM window=8-14 detuned_c2=0.00107589+/-0.00914656 detuned_chi2=1.8997 RK_c2=-0.00001313+/-0.00077901 RK_chi2=1.0781
+INFRARED_JOIN window=10-16 two_c2=0.03240562+/-0.00516049 two_chi2=11.1053 q6_c2=0.00025721+/-0.01212239 q6_chi2=2.5157 fixed_UK_chi2=3.5008 fixed_delta_chi2=0.9851 L12plus_c2=-0.03676655+/-0.02966342 without_L18_c2=0.01166442+/-0.01999044 without_L16_c2=0.00218426+/-0.01260183
+DIRECT_SPECTRUM window=10-16 detuned_c2=0.00015514+/-0.01203532 detuned_chi2=1.8031 RK_c2=0.00033588+/-0.00115100 RK_chi2=3.6278
+MODEL_EXTENSION window=2-6 mass2=0.00132101+/-0.00345865 mass_c2=0.00593188+/-0.03957813 mass_chi2=4.1552 mass_delta_chi2=0.1459 q8_c2=0.03580900+/-0.01773659 q8=-0.44665453+/-0.49743231 q8_chi2=3.4948 q8_delta_chi2=0.8063
+MODEL_EXTENSION window=8-14 mass2=-0.00184519+/-0.00495484 mass_c2=0.02597400+/-0.06654429 mass_chi2=1.9806 mass_delta_chi2=0.1387 q8_c2=-0.00061007+/-0.02311009 q8=0.09390352+/-0.97553066 q8_chi2=2.1100 q8_delta_chi2=0.0093
+MAXWELL_TARGET UK=0.01228909+/-0.00116899
+CERTIFICATE: parent_receipts_source_pinned=True new_lower_momenta=L16,L18 mass_control=True q8_control=True static_target_source_pinned=True finite_volume=True thermodynamic_limit=False
+TOTAL: PASS=10 FAIL=1
+
+----- stderr -----
+

@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_forward_length_convergence_join_2026_09_04.py
+runner_sha256: aaa07511fdd1650fe317bd8fe03e4826beaa7f7cf5659c475b7b53e4a6b30733
+input_fingerprint_sha256: 88b87aed52495ef2fa58a4ba1c431e625af76e509e8c5a1674730d7182817ab5
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.15
+status: nonzero_exit
+----- stdout -----
+[PASS] 01 the source-pinned receipt supplies the complete positive gap matrix
+[PASS] 02 the detuned paired-F covariance blocks are symmetric and usable for GLS
+[PASS] 03 uniform RK projector weights make every forward length exactly identical
+[FAIL] 04 detuned F=8,10,12 pass the nominal two-dof raw-gap plateau test
+[PASS] 05 the paired detuned F=6 gaps are compatible with the long-F plateaus
+[PASS] 06 each detuned long-F raw-gap span is below five percent
+[FAIL] 07 the matched squared-gap excess passes the nominal long-F plateau test
+[PASS] 08 the paired F=6 excess is compatible with each long-F plateau
+FORWARD_PLATEAU V=0.95 window=2-6 gap=0.22892247+/-0.00102170 chi2=7.2998 F6_delta=-0.00074976+/-0.00263148 F6_sigma=0.2849 long_span_fraction=0.009592
+FORWARD_PLATEAU V=0.95 window=8-14 gap=0.24162657+/-0.01076229 chi2=0.1386 F6_delta=-0.00764711+/-0.00966822 F6_sigma=0.7910 long_span_fraction=0.012223
+RK_FORWARD_IDENTITY window=2-6 gap=0.17954199 all_forward_lengths_exactly_equal=True covariance_rank=1
+RK_FORWARD_IDENTITY window=8-14 gap=0.18153808 all_forward_lengths_exactly_equal=True covariance_rank=1
+FORWARD_EXCESS_PLATEAU window=2-6 squared_gap_excess=0.02015321+/-0.00052018 chi2=7.3535 F6_delta=-0.00032575+/-0.00120300 F6_sigma=0.2708 long_span_fraction=0.049687
+FORWARD_EXCESS_PLATEAU window=8-14 squared_gap_excess=0.02538939+/-0.00533941 chi2=0.1366 F6_delta=-0.00359908+/-0.00453547 F6_sigma=0.7935 long_span_fraction=0.056540
+CERTIFICATE: fixed_L=8 paired_forward_lengths=2,4,6,8,10,12 failed_rank_gate_preserved=True GLS_covariance=True RK_forward_identity=True long_forward_set=8,10,12 paired_RK_excess=True thermodynamic_limit=False
+TOTAL: PASS=6 FAIL=2
+
+----- stderr -----
+

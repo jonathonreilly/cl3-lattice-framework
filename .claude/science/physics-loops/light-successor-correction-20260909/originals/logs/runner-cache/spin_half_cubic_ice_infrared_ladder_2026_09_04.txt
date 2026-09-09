@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_infrared_ladder_2026_09_04.py
+runner_sha256: 80108851a3d3a77e8e2593502abfa17ee72eab7174ad7043f039afe2e5133867
+input_fingerprint_sha256: 535d78a5839e9248fddf6f57407fa898e16f5b6bb4362f041776b0e2c93b9672
+timeout_sec: 21600
+exit_code: 1
+elapsed_sec: 26040.72
+status: nonzero_exit
+----- stdout -----
+ROW_DONE V=0.95 L=16 gaps=2-6:0.084514+/-0.003244,6-12:0.086122+/-0.004536,8-14:0.081119+/-0.004585,10-16:0.077796+/-0.007371
+ROW_DONE V=0.95 L=18 gaps=2-6:0.066003+/-0.004320,6-12:0.068902+/-0.003290,8-14:0.065730+/-0.003097,10-16:0.064071+/-0.004577
+ROW_DONE V=1.00 L=16 gaps=2-6:0.046070+/-0.000380,6-12:0.046677+/-0.000399,8-14:0.046648+/-0.000423,10-16:0.047072+/-0.000347
+ROW_DONE V=1.00 L=18 gaps=2-6:0.036044+/-0.000274,6-12:0.037248+/-0.000252,8-14:0.037106+/-0.000337,10-16:0.037170+/-0.000372
+[PASS] 01 every infrared population preserves exact counts, Gauss charge, and zero electric flux
+[FAIL] 02 infrared populations retain the declared weight and genealogy floors
+[PASS] 03 every infrared correlator remains positive through tau=16 with bounded imaginary residual
+INFRARED_HEALTH min_ess=0.939055 min_origin_tau16=18 min_forward=92
+CERTIFICATE: lower_momenta=L16,L18 outer_populations=True finite_population=True finite_imaginary_time=True thermodynamic_limit=False
+TOTAL: PASS=2 FAIL=1
+
+----- stderr -----
+RECOVERY_PROVENANCE: complete live stdout preserved before the cache wrapper rejected changed parent-directory stat tokens; launch and completion runner/input content identities were identical. Elapsed time is derived from live-log timestamps.

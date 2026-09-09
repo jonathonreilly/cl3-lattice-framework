@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py
+runner_sha256: 8cea10e54e91b643a39d2a757eb120ee992197defdf45dce4cac98e36d5197cd
+input_fingerprint_sha256: 9b6a38f0f540e8d85aaa89948de6e23724f6cf104375d98e08670fe33935cf36
+timeout_sec: 10800
+exit_code: 0
+elapsed_sec: 8850.46
+status: ok
+----- stdout -----
+ROW_DONE V=0.95 L=8 gaps=2-6:0.227459+/-0.002105,6-12:0.225571+/-0.005920,8-14:0.212142+/-0.013521,10-16:0.200953+/-0.015134
+ROW_DONE V=0.95 L=10 gaps=2-6:0.166280+/-0.001541,6-12:0.165382+/-0.003382,8-14:0.175927+/-0.007154,10-16:0.170540+/-0.012352
+ROW_DONE V=0.95 L=12 gaps=2-6:0.122942+/-0.002131,6-12:0.123095+/-0.004222,8-14:0.127920+/-0.004748,10-16:0.127187+/-0.004562
+ROW_DONE V=0.95 L=14 gaps=2-6:0.103678+/-0.004344,6-12:0.103133+/-0.001913,8-14:0.105330+/-0.002852,10-16:0.104357+/-0.002551
+ROW_DONE V=1.00 L=8 gaps=2-6:0.177175+/-0.001295,6-12:0.175196+/-0.000501,8-14:0.173903+/-0.003220,10-16:0.175827+/-0.005392
+ROW_DONE V=1.00 L=10 gaps=2-6:0.116420+/-0.000780,6-12:0.115841+/-0.001432,8-14:0.115427+/-0.001709,10-16:0.114165+/-0.001761
+ROW_DONE V=1.00 L=12 gaps=2-6:0.082318+/-0.000478,6-12:0.081900+/-0.000480,8-14:0.082161+/-0.000786,10-16:0.082688+/-0.001188
+ROW_DONE V=1.00 L=14 gaps=2-6:0.060838+/-0.000154,6-12:0.060587+/-0.000435,8-14:0.060326+/-0.000346,10-16:0.059544+/-0.000840
+[PASS] 01 every late-time population preserves exact flippability, Gauss charge, and zero electric flux
+[PASS] 02 late-time populations retain effective weight and at least forty independent genealogy labels
+[PASS] 03 every cubic-average correlator remains positive through tau=16 with a bounded imaginary residual
+[PASS] 04 both early and late transverse excess fits retain a positive q-squared coefficient
+[PASS] 05 late-time projection leaves the two-term infrared coefficient statistically unchanged
+[PASS] 06 the q-squared plus q-fourth truncation rejects fixed c-squared=U K at late time
+[PASS] 07 free q-sixth fits at both late windows are compatible with the independent U K prediction
+[PASS] 08 fixed c-squared=U K plus q-fourth and q-sixth fits every projection window without a significant penalty
+[PASS] 09 fixed-U K late fits resolve positive q-fourth and negative q-sixth corrections
+[PASS] 10 the terminal and primary late-time windows give compatible infrared coefficients
+[PASS] 11 the exact L=2 Green correlator retains positive early and late decay scales
+EXCESS_FIT window=2-6 c2=0.03268505+/-0.00323266 q4=0.00549301+/-0.00765140 chi2=5.1505 fixed_UK_q4=0.05162424+/-0.00225498 fixed_chi2=44.9584 fixed_delta_chi2=39.8079
+EXCESS_FIT window=6-12 c2=0.03455281+/-0.00370799 q4=0.00113067+/-0.01176775 chi2=1.0403 fixed_UK_q4=0.06607307+/-0.00463601 fixed_chi2=37.0914 fixed_delta_chi2=36.0511
+EXCESS_FIT window=8-14 c2=0.04011421+/-0.00648317 q4=-0.00995362+/-0.02345506 chi2=3.1486 fixed_UK_q4=0.08415560+/-0.00832706 fixed_chi2=21.5690 fixed_delta_chi2=18.4204
+EXCESS_FIT window=10-16 c2=0.04554496+/-0.00667277 q4=-0.04051973+/-0.02625616 chi2=1.4603 fixed_UK_q4=0.08285248+/-0.00875200 fixed_chi2=26.2987 fixed_delta_chi2=24.8384
+HIGHER_GRADIENT_FIT window=2-6 c2=0.01524209+/-0.01192865 q4=0.09523790+/-0.05957030 q6=-0.10526357+/-0.06929243 chi2=2.8427 fixed_UK_q4=0.10980592+/-0.01090123 fixed_UK_q6=-0.12177535+/-0.01988332 fixed_chi2=2.9040 fixed_delta_chi2=0.0613
+HIGHER_GRADIENT_FIT window=6-12 c2=0.03335328+/-0.01183785 q4=0.00887585+/-0.07353607 q6=-0.01051084+/-0.09850836 chi2=1.0289 fixed_UK_q4=0.13756763+/-0.01509577 fixed_UK_q6=-0.17697496+/-0.03220922 fixed_chi2=4.1951 fixed_delta_chi2=3.1662
+HIGHER_GRADIENT_FIT window=8-14 c2=0.01488249+/-0.02148720 q4=0.15557378+/-0.13642424 q6=-0.22958916+/-0.18640501 chi2=1.6316 fixed_UK_q4=0.17183688+/-0.02256032 fixed_UK_q6=-0.25103881+/-0.05706755 fixed_chi2=1.6462 fixed_delta_chi2=0.0146
+HIGHER_GRADIENT_FIT window=10-16 c2=0.02667354+/-0.02425021 q4=0.08420992+/-0.15631409 q6=-0.17053766+/-0.21068521 chi2=0.8051 fixed_UK_q4=0.17612503+/-0.02187288 fixed_UK_q6=-0.29068512+/-0.05878938 fixed_chi2=1.1570 fixed_delta_chi2=0.3518
+MAXWELL_TARGET UK=0.012289+/-0.001169 early_c2=0.032685+/-0.003233 late_c2=0.040114+/-0.006483 terminal_c2=0.045545+/-0.006673
+GENEALOGY min_ess=0.972682 min_origin_tau16=91 min_forward=352
+CERTIFICATE: exact_positive_green=True paired_RK_control=True finite_population=True finite_imaginary_time=True thermodynamic_limit=False
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+RECOVERY_PROVENANCE: complete live stdout preserved before the cache wrapper rejected changed parent-directory stat tokens; launch and completion runner/input content identities were identical. Elapsed time is derived from live-log timestamps.

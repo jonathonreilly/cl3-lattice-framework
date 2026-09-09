@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_late_time_maxwell_join_2026_09_04.py
+runner_sha256: d6a2de72f209ad75b5395eec921a4203cdc092553c178b14dbb2913d8892ce84
+input_fingerprint_sha256: 8bb88c197ca8cd6baad0f03ae1ddeba0a59189a5c9662bcaae79ffef82a0ebab
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+[PASS] 01 all thirty-two historical window estimates and original eleven checks are preserved
+[PASS] 02 nested polynomial fits use the same historical response at window (2, 6)
+FINITE_WINDOW_FIT window=2-6 q4_c2=0.03268734 q6_c2=0.01524703 q4_loss=5.149774 q6_loss=2.842363 fixed_number_loss=2.903861
+[PASS] 03 nested polynomial fits use the same historical response at window (6, 12)
+FINITE_WINDOW_FIT window=6-12 q4_c2=0.03455361 q6_c2=0.03335432 q4_loss=1.039869 q6_loss=1.028489 fixed_number_loss=4.195170
+[PASS] 04 nested polynomial fits use the same historical response at window (8, 14)
+FINITE_WINDOW_FIT window=8-14 q4_c2=0.04011365 q6_c2=0.01488279 q4_loss=3.148780 q6_loss=1.631753 fixed_number_loss=1.646325
+[PASS] 05 nested polynomial fits use the same historical response at window (10, 16)
+FINITE_WINDOW_FIT window=10-16 q4_c2=0.04554565 q6_c2=0.02667614 q4_loss=1.460145 q6_loss=0.805122 fixed_number_loss=1.157073
+FIXED_NUMBER 0.012289089918 physical_target=False measured_target_error=unavailable fixed_scenario_variance=0
+SCOPE: conditional arithmetic on rounded historical windows; overlapping-window significance uncalibrated; no projection-limit or physical-cause conclusion; long production held
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

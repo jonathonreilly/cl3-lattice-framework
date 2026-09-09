@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_finite_delta_charge_coulomb_join_2026_09_03.py
+runner_sha256: 97881c8721ee3177aeaa610a59f139ef44be809b49bc9c6ed9f0490fe6b10418
+input_fingerprint_sha256: 8c73f95d6cbc4086e5243f01b3bf9c82bf3811f2add654e12ed6844b1b2fcb0e
+timeout_sec: 480
+exit_code: 0
+elapsed_sec: 313.19
+status: ok
+----- stdout -----
+[PASS] 01 axial and off-axis directed paths leave exactly one positive and one negative unit charge
+[PASS] 02 the periodic Coulomb plus harmonic coordinate is cubic- and inversion-invariant
+[PASS] 03 the complete 508-state charged L=2 orbit obeys the mixed-estimator identity at both detunings
+[PASS] 04 the charged projector reproduces both exact L=2 finite-detuning ground energies
+[PASS] 05 every projector population preserves its exact charge pattern and local flippability count
+[PASS] 06 all charged populations retain effective weight and final-state diversity
+[PASS] 07 every separated charge pair has a resolved positive creation energy above its vacuum component
+[PASS] 08 opposite-charge energy rises from one-link separation to the half-box endpoint on every volume
+[PASS] 09 the periodic Coulomb coordinate has a resolved positive coefficient at both detunings
+[PASS] 10 periodic and raw 1/R Coulomb forms remain near-degenerate and beat confining or constant controls
+[PASS] 11 charge-response and topological-flux determinations of U agree within twenty-five percent
+[PASS] 12 the raw 1/R amplitude tracks the independently fixed U/(4 pi) normalization within thirty percent
+[PASS] 13 off-axis charge geometries keep a positive flux-matched Coulomb coefficient and reject string growth
+[PASS] 14 path-order and cubic-rotation controls reproduce equal charge energies within four errors
+[PASS] 15 doubled L=8 populations reproduce the positive long-distance charge-energy rise
+EXACT_CHARGE V=0.95 orbit=508 E0=-0.349861309 projector=-0.350107486+/-0.000109301
+EXACT_CHARGE V=0.90 orbit=508 E0=-0.706280403 projector=-0.706326091+/-0.000283532
+AXIAL_FIT V=0.95 U_charge=0.160609+/-0.015345 U_flux=0.162638 A_1overR=0.016382 U_flux/(4pi)=0.012942 rss=coulomb:0.00003535,inverse_distance:0.00003263,linear_distance:0.00010862,quadratic_distance:0.00015186,constant:0.00018761
+AXIAL_FIT V=0.90 U_charge=0.301440+/-0.026769 U_flux=0.321114 A_1overR=0.030903 U_flux/(4pi)=0.025553 rss=coulomb:0.00022624,inverse_distance:0.00019146,linear_distance:0.00047988,quadratic_distance:0.00070220,constant:0.00100906
+OFF_AXIS_FIT U_charge=0.272689+/-0.029369 U_flux=0.321114 rss_coulomb=0.00032930 rss_linear=0.00047687
+POPULATION_CONTROL primary_rise=0.028208333 doubled_rise=0.026075000
+CERTIFICATE: fixed_opposite_unit_charges=True finite_population=True finite_imaginary_time=True component_complete=False thermodynamic_limit=False real_time_spectrum=False
+RESOLUTION: per_element=directed path and square flips; per_site=two fixed charges and exact Gauss; per_mode=periodic Coulomb kernel plus harmonic sector; per_block=L2 exact and L4,6,8 projector; lattice_wide=finite-volume static response, not an infinite-volume potential theorem
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

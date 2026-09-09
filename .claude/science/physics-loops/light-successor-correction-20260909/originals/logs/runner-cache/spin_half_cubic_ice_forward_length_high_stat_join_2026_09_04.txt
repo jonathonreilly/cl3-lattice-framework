@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_forward_length_high_stat_join_2026_09_04.py
+runner_sha256: 1aa54dbb1b298ee8064603b89e97470d541900d7affb61bf329f269908a2ceca
+input_fingerprint_sha256: a51300efaba1ec4072fb0aebc6f302cfc43526c8d65a231d7b1af97a0800727c
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+[PASS] 01 the source-pinned extension supplies the complete positive gap matrix
+[PASS] 02 both seven-forward covariance matrices are symmetric and full rank
+[PASS] 03 F=12,14,16,20 pass the finite-sample Hotelling raw-gap plateau test
+[PASS] 04 each fixed earlier detuned contrast passes its finite-sample Student threshold
+[PASS] 05 each long-F raw-gap span is below five percent
+[PASS] 06 the matched squared-gap excess passes the finite-sample Hotelling plateau test
+[PASS] 07 each fixed earlier excess contrast passes its finite-sample Student threshold
+[PASS] 08 the larger-population high-statistics F=6 gaps reproduce the first paired receipt
+HIGH_STAT_FORWARD_JOIN window=2-6 gap=0.23008033+/-0.00141187 chi2=5.2394 held_out_sigma=F6:0.6464,F8:1.0587,F10:0.1631 long_span_fraction=0.010415 Hotelling95=16.7663 Student95=2.2622
+HIGH_STAT_FORWARD_EXCESS window=2-6 squared_gap_excess=0.02067952+/-0.00068834 chi2=5.2643 held_out_sigma=F6:0.6471,F8:1.0591,F10:0.1621 long_span_fraction=0.053130
+HIGH_STAT_FORWARD_JOIN window=8-14 gap=0.23221616+/-0.00521946 chi2=2.0449 held_out_sigma=F6:0.8464,F8:0.0590,F10:0.5866 long_span_fraction=0.023452 Hotelling95=16.7663 Student95=2.2622
+HIGH_STAT_FORWARD_EXCESS window=8-14 squared_gap_excess=0.02086046+/-0.00271006 chi2=2.0757 held_out_sigma=F6:0.8412,F8:0.0569,F10:0.5850 long_span_fraction=0.120414
+CERTIFICATE: fixed_L=8 high_statistics=True paired_forward_lengths=6,8,10,12,14,16,20 long_forward_set=12,14,16,20 GLS_covariance=True finite_sample_calibration=True paired_RK_identity=True thermodynamic_limit=False
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

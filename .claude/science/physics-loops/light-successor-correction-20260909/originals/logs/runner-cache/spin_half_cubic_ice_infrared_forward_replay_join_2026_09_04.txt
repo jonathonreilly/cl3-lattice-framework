@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_infrared_forward_replay_join_2026_09_04.py
+runner_sha256: b0556cf80af1a4515ca1a134c435dd40c011f0dfb058acd743c2948522e12af8
+input_fingerprint_sha256: fdcc14ffc3c6858b50f31961b5d5e16abf15ac74af70d21e0dd3f02a0d6904f9
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 0.80
+status: nonzero_exit
+----- stdout -----
+[FAIL] 01 the upstream replay receipt is green (diagnostic mode keeps this gate visible)
+[PASS] 02 the source-pinned parent and replay provide matched six-volume ladders
+[PASS] 03 every new F=6 primary gap reproduces the independent earlier infrared receipt
+[FAIL] 04 both detuned infrared volumes pass the paired primary-window forward plateau
+[PASS] 05 every paired forward endpoint gives a positive U K-compatible primary coefficient
+[PASS] 06 fixed central U K plus q-fourth and q-sixth passes at every forward endpoint
+[PASS] 07 mass and q-eighth extensions neither improve nor destabilize the primary fits
+[PASS] 08 primary direct detuned spectra carry U K-compatible weight while RK does not
+REPLAY_COMPARISON V=0.95 L=16 F6_z=0.8216
+REPLAY_COMPARISON V=0.95 L=18 F6_z=1.4836
+REPLAY_COMPARISON V=1.00 L=16 F6_z=1.3550
+REPLAY_COMPARISON V=1.00 L=18 F6_z=0.2304
+FORWARD_CONTROL V=0.95 L=16 window=8-14 hotelling=1.5660 max_contrast=1.2486 span=0.058093
+FORWARD_CONTROL V=0.95 L=18 window=8-14 hotelling=4.4771 max_contrast=0.8982 span=0.134976
+PRIMARY_MAXWELL F=6 c2=0.01987277+/-0.01062092 fixed_chi2=2.3749 fixed_delta_chi2=0.5098 mass2=0.00412205+/-0.00595380 q8_delta_chi2=0.8242 detuned_c2=0.01838359+/-0.01055544 RK_c2=-0.00014255+/-0.00068158
+EARLY_DIAGNOSTIC F=6 c2=0.03774352+/-0.00420894 RK_c2=-0.00064555+/-0.00042919 acceptance_role=none
+PRIMARY_MAXWELL F=12 c2=0.02398295+/-0.01465051 fixed_chi2=2.8177 fixed_delta_chi2=0.6371 mass2=0.00485274+/-0.00728856 q8_delta_chi2=1.1004 detuned_c2=0.02247244+/-0.01456585 RK_c2=-0.00014255+/-0.00068158
+EARLY_DIAGNOSTIC F=12 c2=0.02703654+/-0.00462002 RK_c2=-0.00064555+/-0.00042919 acceptance_role=none
+PRIMARY_MAXWELL F=20 c2=0.02821253+/-0.01666132 fixed_chi2=3.6057 fixed_delta_chi2=0.9134 mass2=0.01312812+/-0.00948377 q8_delta_chi2=2.4884 detuned_c2=0.02638221+/-0.01655280 RK_c2=-0.00014255+/-0.00068158
+EARLY_DIAGNOSTIC F=20 c2=0.03121580+/-0.00582742 RK_c2=-0.00064555+/-0.00042919 acceptance_role=none
+MAXWELL_TARGET UK=0.01228909+/-0.00116899
+CERTIFICATE: result_thresholds_predeclared=True new_lower_momenta=L16,L18 paired_forward_lengths=6,12,20 primary_window=8-14 early_window_diagnostic_only=True finite_volume=True thermodynamic_limit=False
+TOTAL: PASS=6 FAIL=2
+
+----- stderr -----
+RECOVERY_PROVENANCE: diagnostic join run after canonical replay cache reconstruction; --diagnostic keeps the upstream non-green gate visible and evaluates downstream controls for localization.

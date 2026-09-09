@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_off_axis_high_q_localization_2026_09_04.py
+runner_sha256: 1415afd162ba06b8ee9c00d918d51c3dbb9acfbb2b2ef2999739da682e9e41f7
+input_fingerprint_sha256: c82eb93a81b508714ed4f5942f57d03fba6bfd1ad20dc2840c7aa9a0f03781e6
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 0.89
+status: ok
+----- stdout -----
+[PASS] 01 both historical target failures and all thirteen original decisions are preserved
+[PASS] 02 all eight complete cubic-family historical data blocks are present
+[PASS] 03 nested common/family models compare the same sixteen observations and covariance
+COMMON_FAMILY_DIAGNOSTIC common_c2=0.04925297 common_loss=5.05071586 family_loss=1.70805461 nominal_three_parameter_cut=7.815
+[PASS] 04 finite leave-one-volume diagnostic omits exactly L=8
+FINITE_VOLUME_INFLUENCE omitted=8 c2=0.03158315 reported_error=0.01502095 cross_subset_significance=unavailable
+[PASS] 05 finite leave-one-volume diagnostic omits exactly L=10
+FINITE_VOLUME_INFLUENCE omitted=10 c2=0.03944477 reported_error=0.00888682 cross_subset_significance=unavailable
+[PASS] 06 finite leave-one-volume diagnostic omits exactly L=12
+FINITE_VOLUME_INFLUENCE omitted=12 c2=0.05317577 reported_error=0.00610452 cross_subset_significance=unavailable
+[PASS] 07 finite leave-one-volume diagnostic omits exactly L=14
+FINITE_VOLUME_INFLUENCE omitted=14 c2=0.06351182 reported_error=0.01283450 cross_subset_significance=unavailable
+[PASS] 08 one nested higher-order fit retains the same response without causal localization
+REFERENCE_STATUS {"U_charge": 0.160609, "U_charge_reported_error": 0.015345, "U_flux": 0.162638, "U_flux_error": null, "central_product": 0.012289089918, "historical_response_reported_error": 0.000915, "occupation_sign_response": 0.075561, "physical_Maxwell_target": false, "product_error": null, "reason": "U_flux has no matched uncertainty here; magnetic summary omits shared-zero covariance and its producer has the disclosed sampling bug", "response_error": null}
+SCOPE: supplied finite-family covariance and model diagnostics only; no physical UK target, inferred cause, isotropy limit or off-axis forward-limit certificate
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

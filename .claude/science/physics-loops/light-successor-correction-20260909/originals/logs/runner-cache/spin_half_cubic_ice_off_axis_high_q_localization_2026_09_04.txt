@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_off_axis_high_q_localization_2026_09_04.py
+runner_sha256: 8be752a7b03f7db990958e4813c7e029e85e06736a7cc6644db712452ceddf96
+input_fingerprint_sha256: 968081a81914c71c37dce20e8801925745b460830dd02ef96f37718e6dff07e0
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.99
+status: ok
+----- stdout -----
+[PASS] 01 the preregistered target failures are preserved verbatim
+[PASS] 02 the exact proper-cubic transverse quadratic kernel remains unique
+[PASS] 03 the unchanged production receipt supplies eight usable covariance blocks
+[PASS] 04 the full q-sixth matrix retains one positive common leading coefficient
+[PASS] 05 the original full-matrix q-sixth U K mismatch is reproduced
+[PASS] 06 removing only L=8 makes the q-sixth coefficient U K-compatible
+[PASS] 07 the lower-q matrix accepts fixed U K with family q-fourth and q-sixth terms
+[PASS] 08 removing L=10, L=12, or L=14 does not reproduce the L=8 localization
+[PASS] 09 the lower-q target compatibility survives removal of the body family
+[PASS] 10 a full family q-eighth diagnostic also leaves fixed U K acceptable
+[PASS] 11 the q-eighth diagnostic is not selected and leaves c-squared unresolved
+HIGH_Q_LOCALIZATION full_q6_c2=0.04925297+/-0.00550993 full_target_sigma=6.5625 full_fixed_chi2=48.1174 L10plus_q6_c2=0.03158315+/-0.01502095 L10plus_target_sigma=1.2806 L10plus_fixed_chi2=2.7628
+HIGHER_ORDER_DIAGNOSTIC full_q8_c2=0.01701638+/-0.02754231 full_q8_target_sigma=0.1715 full_q8_chi2=0.7289 full_fixed_q8_chi2=0.7583 q8_delta_chi2=4.3218
+INFLUENCE_CONTROL L10plus_without_body_c2=0.02916306+/-0.01689901 L10plus_without_body_target_sigma=0.9961 L10plus_without_body_fixed_chi2=2.0174 other_removals=L10:target_sigma=3.0296:fixed_chi2=11.0385,L12:target_sigma=6.5782:fixed_chi2=44.7594,L14:target_sigma=3.9746:fixed_chi2=15.8132
+CERTIFICATE: original_failures_preserved=True highest_q_volume=L8 lower_q_set=L10,L12,L14 family_q4_q6=True q8_diagnostic_not_selected=True static_target_source_pinned=True finite_volume=True thermodynamic_limit=False
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

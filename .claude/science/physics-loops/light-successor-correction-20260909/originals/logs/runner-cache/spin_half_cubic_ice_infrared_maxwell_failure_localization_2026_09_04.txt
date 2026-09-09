@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_infrared_maxwell_failure_localization_2026_09_04.py
+runner_sha256: 756173baab1c9966bf8c2cdd03860f7736710e17edb7b453fe9e69bf2e328dfb
+input_fingerprint_sha256: 2a70437eae0013e78cb7922c96c92e63740fe0daeb65d9cbcbfc2b2598cdeb1f
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+POST_RESULT_INPUT_CLASSIFICATION min_ess=0.939055 min_origin_tau16=18 min_forward=92 conditional_join=True
+[PASS] 01 the classified RK receipt supplies the complete six-volume ladder
+RK_WINDOW_LOCALIZATION window=2-6 q6_c2=-0.00192094+/-0.00049902 q6_z=-3.8494 q6_chi2=2.1371 zero_c2_delta_chi2=14.8180 q8_c2=-0.00328434+/-0.00113686 q8_z=-2.8889 q8_chi2=0.3557 q8_zero_c2_delta_chi2=8.3460
+RK_WINDOW_LOCALIZATION window=6-12 q6_c2=0.00007516+/-0.00051839 q6_z=0.1450 q6_chi2=0.3697 zero_c2_delta_chi2=0.0210 q8_c2=0.00090529+/-0.00181064 q8_z=0.5000 q8_chi2=0.1407 q8_zero_c2_delta_chi2=0.2500
+RK_WINDOW_LOCALIZATION window=8-14 q6_c2=-0.00001313+/-0.00077901 q6_z=-0.0169 q6_chi2=1.0781 zero_c2_delta_chi2=0.0003 q8_c2=0.00121096+/-0.00201432 q8_z=0.6012 q8_chi2=0.6438 q8_zero_c2_delta_chi2=0.3614
+RK_WINDOW_LOCALIZATION window=10-16 q6_c2=0.00033588+/-0.00115100 q6_z=0.2918 q6_chi2=3.6278 zero_c2_delta_chi2=0.0852 q8_c2=-0.00057420+/-0.00257815 q8_z=-0.2227 q8_chi2=3.4721 q8_zero_c2_delta_chi2=0.0496
+RK_EARLY_LEAVE_ONE_OUT removed_L=8 c2=-0.00256840+/-0.00069627 z=-3.6888 chi2=0.3591
+RK_EARLY_LEAVE_ONE_OUT removed_L=10 c2=-0.00206007+/-0.00051327 z=-4.0136 chi2=0.7956
+RK_EARLY_LEAVE_ONE_OUT removed_L=12 c2=-0.00201126+/-0.00053441 z=-3.7635 chi2=1.9141
+RK_EARLY_LEAVE_ONE_OUT removed_L=14 c2=-0.00160660+/-0.00055654 z=-2.8868 chi2=0.5096
+RK_EARLY_LEAVE_ONE_OUT removed_L=16 c2=-0.00185480+/-0.00051656 z=-3.5907 chi2=1.8917
+RK_EARLY_LEAVE_ONE_OUT removed_L=18 c2=-0.00142927+/-0.00091471 z=-1.5625 chi2=1.7258
+[PASS] 02 all four windows and all six early-window volume removals are reported
+[PASS] 03 every post-result localization diagnostic is finite
+CERTIFICATE: post_result_localization=True stochastic_work=False acceptance_thresholds=False thermodynamic_limit=False
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

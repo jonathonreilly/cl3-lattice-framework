@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_infrared_forward_replay_2026_09_04.py
+runner_sha256: 84f6b259e7f9391dac9a8aec58d0b0258eaedb80abd674e5320d52d59e3b706f
+input_fingerprint_sha256: b1cd22788317ffddb1e4871ce8449a8ee59165e90cc4ea57fd30f2e9154e0aab
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+[PASS] 01 the original failed three/one replay remains failed historical production
+[PASS] 02 four historical health rows retain the actual thirty-six-below-forty failure
+[PASS] 03 historical primary forward span still fails the unchanged five-percent rule at L=16
+PAIRED_HISTORICAL_DIAGNOSTIC L=16 quadratic_statistic=1.56596744 max_contrast=1.24859509 span=0.058092711679 nominal_thresholds=17.361,2.571 no_exact_coverage=True
+[PASS] 04 historical primary forward span still fails the unchanged five-percent rule at L=18
+PAIRED_HISTORICAL_DIAGNOSTIC L=18 quadratic_statistic=4.47710736 max_contrast=0.89815654 span=0.134975963234 nominal_thresholds=17.361,2.571 no_exact_coverage=True
+[PASS] 05 legitimate RK rank-one forward identity is retained for (1.0, 16, (2, 6))
+[PASS] 06 legitimate RK rank-one forward identity is retained for (1.0, 16, (8, 14))
+[PASS] 07 legitimate RK rank-one forward identity is retained for (1.0, 18, (2, 6))
+[PASS] 08 legitimate RK rank-one forward identity is retained for (1.0, 18, (8, 14))
+[PASS] 09 the old target's unmatched uncertainty cannot promote the failed replay
+SCOPE: authenticated finite failed attempt and paired arithmetic; higher-population/longer-time/alternative-estimator routes remain open; no new production or physical no-go
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

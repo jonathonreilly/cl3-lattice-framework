@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py
+runner_sha256: 14db2a2e3ea88b82b778f54b912789bfacbda7733633cfee08df89ec9941078c
+input_fingerprint_sha256: 678bc54218c114e138eda4ec628e1082587365785861eb7b32b27dfd2e478791
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 2.74
+status: ok
+----- stdout -----
+[PASS] 01 old thirteen-check artifact is preserved without validating its unsafe sample execution
+[PASS] 02 compiled post-burn core returns exactly 1 samples at burn 0
+[PASS] 03 compiled post-burn core returns exactly 2 samples at burn 1
+[PASS] 04 compiled post-burn core returns exactly 3 samples at burn 3
+[PASS] 05 actual plaquette 2 follows the Cartesian electric-update convention
+[PASS] 06 actual plaquette 3 follows the Cartesian electric-update convention
+[PASS] 07 actual plaquette 4 follows the Cartesian electric-update convention
+[PASS] 08 actual plaquette 5 follows the Cartesian electric-update convention
+[PASS] 09 occupation-sign source differs at opposite root parities from a uniform Cartesian source
+[PASS] 10 continuation-radius combination retains the actual shared-zero covariance
+[PASS] 11 the supplied real-angle occupation-sign matrix is Hermitian on the finite component
+SOURCE_RESPONSE {"U_charge": 0.160609, "U_charge_reported_error": 0.015345, "U_flux": 0.162638, "U_flux_error": null, "central_product": 0.012289089918, "historical_response_reported_error": 0.000915, "occupation_sign_response": 0.075561, "physical_Maxwell_target": false, "product_error": null, "reason": "U_flux has no matched uncertainty here; magnetic summary omits shared-zero covariance and its producer has the disclosed sampling bug", "response_error": null}
+SCOPE: corrected tiny sampler and finite source algebra only; long magnetic production held; uniform stiffness, magnetic-sector energy and physical UK unavailable
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

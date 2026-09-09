@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_finite_delta_transverse_pole_2026_09_03.py
+runner_sha256: 5bb190ef328d095d83eacf927e2c3964499f178e6f41254368047957a893227d
+input_fingerprint_sha256: f357389341d5aefa00a8496e8b3088fcd0aad3589f2a47bc188700c04732534b
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 1386.14
+status: ok
+----- stdout -----
+[PASS] 01 forward walking reproduces the exact L=2 normalized transverse correlator through tau=4
+[PASS] 02 the independent L=2 populations reproduce the exact finite-detuning ground energy
+[PASS] 03 every dynamical population preserves local counts, Gauss charge, and zero electric flux
+[PASS] 04 effective weights and absolute fitted-time descendant counts remain above the declared genealogy controls
+[PASS] 05 every fitted correlation remains positive and its cubic-average imaginary residual stays below six percent
+[PASS] 06 the Hamiltonian orientations, symmetric start, and six measured transverse modes close under every axis permutation
+[PASS] 07 every decay is resolved and stable across three predeclared imaginary-time windows
+[PASS] 08 the RK control selects quadratic q^2 decay with no resolved linear infrared term
+[PASS] 09 both finite detunings resolve a positive q^2 term in omega squared after subtracting the RK control
+[PASS] 10 the linear-plus-quadratic crossover beats pure linear and pure quadratic dispersions at both detunings
+[PASS] 11 adding a mass term gives no two-sigma mass and no significant one-parameter fit improvement
+[PASS] 12 the infrared coefficient grows monotonically and a common coefficient times |delta V| fits both ladders
+[PASS] 13 c^2/U is positive at both detunings and the weak-detuning value is consistent within forty-five percent with the independent RK flux response
+[PASS] 14 zero-, two-, four-, and six-sweep forward projections give the same L=8 gap within twelve percent
+[PASS] 15 doubling the population and lengthening equilibration reproduce the L=8 gap
+[PASS] 16 three nonlocal zero-flux starts reproduce the primary L=8 decay within twenty percent
+GAP V=1.00 L=6 q=1.000000 omega=0.305382+/-0.005596 windows=0.296845,0.305382,0.312063 pol_spread=0.1017 pol_chi2=8.1927 imag=0.0039
+GAP V=1.00 L=8 q=0.765367 omega=0.177396+/-0.003236 windows=0.177850,0.177396,0.178763 pol_spread=0.0268 pol_chi2=0.5790 imag=0.0087
+GAP V=1.00 L=10 q=0.618034 omega=0.115131+/-0.001273 windows=0.115531,0.115131,0.115640 pol_spread=0.0445 pol_chi2=4.2869 imag=0.0059
+GAP V=1.00 L=12 q=0.517638 omega=0.082160+/-0.000745 windows=0.082880,0.082160,0.081101 pol_spread=0.0498 pol_chi2=6.1465 imag=0.0049
+GAP V=1.00 L=14 q=0.445042 omega=0.060182+/-0.000455 windows=0.059842,0.060182,0.059939 pol_spread=0.0883 pol_chi2=1.7204 imag=0.0016
+GAP V=0.95 L=6 q=1.000000 omega=0.348953+/-0.009472 windows=0.343864,0.348953,0.348099 pol_spread=0.1528 pol_chi2=6.0727 imag=0.0062
+GAP V=0.95 L=8 q=0.765367 omega=0.219052+/-0.004497 windows=0.223351,0.219052,0.223606 pol_spread=0.2037 pol_chi2=25.9792 imag=0.0086
+GAP V=0.95 L=10 q=0.618034 omega=0.157502+/-0.007376 windows=0.165726,0.157502,0.154589 pol_spread=0.1469 pol_chi2=7.6637 imag=0.0108
+GAP V=0.95 L=12 q=0.517638 omega=0.118248+/-0.004007 windows=0.127226,0.118248,0.119199 pol_spread=0.1833 pol_chi2=4.6878 imag=0.0082
+GAP V=0.90 L=6 q=1.000000 omega=0.414570+/-0.006725 windows=0.397772,0.414570,0.403850 pol_spread=0.2002 pol_chi2=2.4092 imag=0.0110
+GAP V=0.90 L=8 q=0.765367 omega=0.256693+/-0.007673 windows=0.262707,0.256693,0.253112 pol_spread=0.1783 pol_chi2=2.0794 imag=0.0065
+GAP V=0.90 L=10 q=0.618034 omega=0.203678+/-0.016318 windows=0.195814,0.203678,0.199255 pol_spread=0.5069 pol_chi2=5.1611 imag=0.0154
+GAP V=0.90 L=12 q=0.517638 omega=0.152398+/-0.010326 windows=0.148184,0.152398,0.151999 pol_spread=0.4034 pol_chi2=8.3642 imag=0.0173
+GAP V=0.90 L=14 q=0.445042 omega=0.106267+/-0.004225 windows=0.124281,0.106267,0.106366 pol_spread=0.7917 pol_chi2=14.3077 imag=0.0085
+RK_FIT c2=0.00013786+/-0.00067356 a2=0.09200213+/-0.00265770 chi2=1.5452
+EXCESS_FIT V=0.95 c2=0.02716169+/-0.00532235 q2_slope=0.00182928+/-0.01033190 chi2=0.1896 Kdyn=0.167007 mass2=-0.000022+/-0.005503 mass_delta_chi2=0.0000
+EXCESS_FIT V=0.90 c2=0.03268255+/-0.00548929 q2_slope=0.04660911+/-0.00964695 chi2=4.2663 Kdyn=0.101779 mass2=-0.004345+/-0.004963 mass_delta_chi2=0.7664
+DETUNING_JOIN c2_per_abs_delta=0.372286+/-0.048788 chi2=7.7208
+FORWARD_CONTROL F=0:0.234663,F=2:0.214491,F=4:0.219052,F=6:0.240189
+POPULATION_CONTROL primary=0.219052 doubled=0.226187
+COMPONENT_CONTROL axis=0:0.234065,axis=1:0.236852,axis=2:0.233717
+GENEALOGY_CONTROL min_ess_fraction=0.873750 min_forward_count=42 min_origin_tau6_count=19
+SMALL_EXACT E0=-0.810822412 C=1.000000,0.217357,0.056982,0.015641,0.004339,0.001207,0.000336,0.000093,0.000026
+SMALL_PROJECTOR C=1.000000,0.216085,0.060794,0.017117,0.005632,0.006347,0.001923,0.005414,0.006799
+per_mode: the first transverse momentum has a fitted finite-volume decay; no thermodynamic pole is claimed
+per_block: exact L=2 calibration and projector L=6,8,10,12,14 populations are checked
+lattice_wide: finite-volume forward walking is executed; continuum light identification remains open
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

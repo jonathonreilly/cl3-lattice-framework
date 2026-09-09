@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/spin_half_cubic_ice_finite_delta_magnetic_twist_2026_09_04.py
+runner_sha256: a61b5ca89ea5b39ac932744b12e3af46167d81fd4ed5eb52acdb08644f74b28b
+input_fingerprint_sha256: 1660a34646f70428d69a0109352991d6656c1fe479c7cec7d9d6f3665c22447a
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 1139.22
+status: ok
+----- stdout -----
+[PASS] 01 exact L=2 analytic continuation reproduces the positive Hermitian twist curvature
+[PASS] 02 every finite-volume imaginary-twist pair resolves positive physical magnetic curvature
+[PASS] 03 two continuation radii reproduce the zero-angle curvature within twenty percent
+[PASS] 04 the stochastic L=2 twist curvatures reproduce exact diagonalization
+[PASS] 05 the L=4,6,8,10 magnetic response is volume-stable at both detunings
+[PASS] 06 the relaxed RK twist curvature is positive and stable across L=4,6,8,10
+[PASS] 07 the relaxed RK stiffness is strictly below the older flippability variational upper cost
+[PASS] 08 the relaxed magnetic stiffness changes by less than ten percent across the two finite detunings
+[PASS] 09 three independently sampled cubic orientations reproduce one magnetic response
+[PASS] 10 doubled L=8 populations reproduce the primary magnetic response within eight percent
+[PASS] 11 the same-detuning Maxwell comparison localizes a weak-detuning spectral-normalization tension while the stronger detuning remains statistically compatible
+[PASS] 12 every twisted projector preserves exact local weights, Gauss charge, flux, and valid transition probabilities
+[PASS] 13 every twisted population retains the declared weight and diversity floors
+EXACT_CONTINUATION V=1.00 K_real=0.105119698 K_imag=0.105123106
+EXACT_CONTINUATION V=0.95 K_real=0.107537604 K_imag=0.107540619
+EXACT_CONTINUATION V=0.90 K_real=0.109733090 K_imag=0.109735755
+TWIST V=0.90 L=2 eta=0.10 K=0.120745+/-0.016791
+TWIST V=0.90 L=2 eta=0.16 K=0.115056+/-0.008840
+TWIST V=0.90 L=4 eta=0.10 K=0.085277+/-0.006352
+TWIST V=0.90 L=4 eta=0.16 K=0.078927+/-0.002422
+TWIST V=0.90 L=6 eta=0.10 K=0.073549+/-0.004170
+TWIST V=0.90 L=6 eta=0.16 K=0.075582+/-0.001913
+TWIST V=0.90 L=8 eta=0.10 K=0.078774+/-0.003241
+TWIST V=0.90 L=8 eta=0.16 K=0.076419+/-0.001540
+TWIST V=0.90 L=10 eta=0.10 K=0.073076+/-0.002947
+TWIST V=0.90 L=10 eta=0.16 K=0.074934+/-0.001525
+TWIST V=0.95 L=2 eta=0.10 K=0.082390+/-0.017101
+TWIST V=0.95 L=2 eta=0.16 K=0.094147+/-0.008488
+TWIST V=0.95 L=4 eta=0.10 K=0.080811+/-0.003702
+TWIST V=0.95 L=4 eta=0.16 K=0.075051+/-0.002509
+TWIST V=0.95 L=6 eta=0.10 K=0.078690+/-0.002839
+TWIST V=0.95 L=6 eta=0.16 K=0.076810+/-0.001539
+TWIST V=0.95 L=8 eta=0.10 K=0.071645+/-0.001754
+TWIST V=0.95 L=8 eta=0.16 K=0.073934+/-0.001054
+TWIST V=0.95 L=10 eta=0.10 K=0.074463+/-0.001492
+TWIST V=0.95 L=10 eta=0.16 K=0.074956+/-0.000948
+SUMMARY V=0.95 K=0.075561+/-0.000915 K_L=4:0.076864,6:0.077237,8:0.073327,10:0.074815
+SUMMARY V=0.90 K=0.076589+/-0.001155 K_L=4:0.079733,6:0.075228,8:0.076852,10:0.074541
+RK_RELAXED K=0.073357+/-0.000881 K_L=4:0.075488,6:0.072042,8:0.072466,10:0.073433 variational_upper=0.259800
+ORIENTATION_CONTROL axis=0:0.077130,axis=1:0.073878,axis=2:0.075619
+POPULATION_CONTROL V=0.95 primary=0.073327 doubled=0.076116+/-0.000736
+MAXWELL_JOIN V=0.95 UK=0.012289+/-0.001169 c2_dynamic=0.027162+/-0.005322 difference_sigma=2.729
+POPULATION_CONTROL V=0.90 primary=0.076852 doubled=0.075662+/-0.000900
+MAXWELL_JOIN V=0.90 UK=0.024594+/-0.002083 c2_dynamic=0.032683+/-0.005489 difference_sigma=1.378
+HEALTH min_ess=0.946030 min_unique=0.705078
+CERTIFICATE: exact_L2_real_twist=True imaginary_twist_positive_projector=True finite_population=True finite_imaginary_time=True thermodynamic_limit=False
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+
