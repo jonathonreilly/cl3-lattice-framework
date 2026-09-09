@@ -18,7 +18,7 @@ W46 lands #7870/#7836/#7837 after original reviews and same-session correction c
 
 Historical recovery must sit outside actual note discovery. docs/work_history is discovered; check the actual API. Astra low remains the focused reviewer default; unresolved consequential mathematics escalates to Astra xhigh. Reuse complete reviews and same-session affected confirmations. [Pilot](REVIEWER_MODEL_PILOT.md) is one workload, not a general cost guarantee.
 
-Next reviews: the eight-original #6009 older time family and #7781 ACI terminal-confluence packet. #6009 contains exact tip sources from seven smaller originals, but additional878artifacts and nonfinal historical versions still require full disposition and durable recovery. Findings include removed finite-additivity imports and overbroad window/barrier claims; no new family closure or acceptance yet. #5957 is excluded from that family. Assignments and immutable evidence are in NEXT_REVIEW_UNITS.json.
+Active repairs: original review of all fourteen notes in the eight-original #6009 family is complete. All150original/intermediate bodies are recoverable; A884/900 corrections are active, B/C repairs queued, and existing878/887/892/904 stay intact. #7781 has a frozen corrected finite-confluence packet under original-reviewer final confirmation. No additional acceptance or closure yet; #5957 remains outside the family. Assignments and evidence are in NEXT_REVIEW_UNITS.json.
 
 Actual reserved-dependent #7315/#7359 successors and #7753 remain held, along with the curved7unit and standing reservations.56closed scopes remain pending at four successors. All Maxwell production/physical holds remain in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json). No existing hold is removed by W46.
 
