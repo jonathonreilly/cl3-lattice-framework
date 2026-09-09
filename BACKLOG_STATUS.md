@@ -20,6 +20,10 @@ Astra low remains the focused landing-review default; unresolved consequential m
 
 Fermion response #7974/#7985 author corrections and generation-count #7948 original review continue. No pending unit receives acceptance. Maxwell's production and broader physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
 
+The original reviewer confirmed both fermion-response corrections. Root found and is fixing canonical claim-type header parsing before W41; the affected evidence refresh is running. Generation #7948 author fixes and KCPT #7882 original review are active. Cutting #7028 is now in separate original review within #7315.
+
+[Successor dependency routing](backlog_evidence/successor-routing-20260909/REPORT.md) accounts for all 33 transferred scopes at #7315/#7359. Thirty-two currently require reserved science in actual calculations; #7028 has a separable cutting path. Both full successors remain held and open. No pending scope was counted as landed or dropped. The missing b171 profile-table input is also recorded.
+
 ## Landed source history
 
 | Landed unit | Main commit | Evidence |
