@@ -7,7 +7,7 @@ def main():
  ap=argparse.ArgumentParser();ap.add_argument('--json',action='store_true');ap.parse_args();signal.alarm(30);start=time.monotonic();root=Path(__file__).resolve().parents[1]
  hashes={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
  helper=root/AUDIT_INPUT_PATHS[-1];data=helper.read_bytes();ns={'__name__':'controls','__file__':str(helper)};exec(compile(data,str(helper),'exec'),ns);out=ns['record']
- if out['FAIL'] or out['PASS']!=748:raise ValueError('supporting control count')
+ if out['FAIL'] or out['PASS']!=1217:raise ValueError('supporting control count')
  rss=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
  if rss>384*1048576:raise ValueError('memory cap')
  out.update(status='PASS',input_sha256=hashes,source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),elapsed_seconds=time.monotonic()-start,peak_rss_bytes=rss,actual_current_surface_status='conditional-support')

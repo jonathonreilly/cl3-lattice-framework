@@ -113,4 +113,74 @@ for size in [2,4,8]:
  check(size>1,'missing_Bessel_counterexample')
 counterexamples['individual_inverse_norm_implies_uniform_row']=8>1
 for name,rejected in counterexamples.items():check(rejected,'counterexample_'+name)
+# The actual one-particle-subtracted creator has only three-particle vacuum content.
+Z=plus(Y,scale(gamma[0],2),-1);zchi=mv(Z,vac)
+zweights=[F(inner(v,zchi).real)**2+F(inner(v,zchi).imag)**2 for v in states]
+check(all(w==0 for w,n in zip(zweights,numbers) if n<3),'exact_linear_subtraction')
+check(sum(zweights)==2,'exact_linear_subtraction')
+triple_vectors={}
+for i,j,k in itertools.permutations(range(N),3):
+ direct=mv(a_modes[k],mv(a_modes[j],mv(a_modes[i],zchi)))
+ c1=plus(mm(a_modes[i],Z),mm(Z,a_modes[i]))
+ c2=plus(mm(a_modes[j],c1),mm(c1,a_modes[j]),-1)
+ c3=plus(mm(a_modes[k],c2),mm(c2,a_modes[k]))
+ check(direct==mv(c3,vac),'triple_graded_identity')
+ # ||Z||<=2 and each physical Majorana coefficient has modulus1/4.
+ check(norm2(direct)<=F(1,2)**6*len(support)**6*2**2,'triple_local_bound')
+ triple_vectors[i,j,k]=direct
+for eps in sorted(set(energies+[F(1,8),F(4)])):
+ if eps<=0:continue
+ low=sum((w for E,w in zip(energies,zweights) if 0<E<=eps),F(0))
+ ordered=sum((F(norm2(v)) for inds,v in triple_vectors.items() if all(omega[j]<=eps for j in inds)),F(0))
+ factorial=F(0)
+ for mask,E,w,n in zip(range(D),energies,zweights,numbers):
+  q=sum(omega[j]<=eps for j in range(N) if mask>>j&1)
+  choose=F(q*(q-1)*(q-2),6)
+  check(int(n>=3 and 0<E<=eps)<=choose,'factorial_occupation_bound')
+  factorial+=choose*w
+ check(ordered/6==factorial,'factorial_annihilation_identity')
+ check(low<=factorial,'higher_odd_low_energy')
+# Each summand below has one-particle content although their sum is the actual Z.
+Dfirst=plus(Z,gamma[0]);Dsecond=scale(gamma[0],-1)
+check(plus(Dfirst,Dsecond)==Z,'shell_cancellation')
+counterexamples['one_particle_free_shells_required']=all(norm2([mv(x,vac)[m] if m.bit_count()==1 else 0 for m in range(D)])>0 for x in [Dfirst,Dsecond])
+# Nine-power toy tail; the endpoint inverse moment s9 remains unsupported.
+for power in [2,4,8]:
+ exact=F(511,512)/(1-F(2)**(power-9))
+ for J in range(1,16):
+  head=sum((F(511,512)*F(2)**((power-9)*j) for j in range(J)),F(0))
+  tail=F(511,512)*F(2)**((power-9)*J)/(1-F(2)**(power-9))
+  check(head+tail==exact,'nine_power_inverse_moment')
+  check(tail<=F(9,9-power)*F(2)**(-(9-power)*J),'nine_power_low_energy_tail')
+counterexamples['endpoint_s9_integrability']=20*F(511,512)>10*F(511,512)
+for name in ['one_particle_free_shells_required','endpoint_s9_integrability']:
+ check(counterexamples[name],'counterexample_'+name)
+# Finite spectral filter in the exact Fock energy basis. Gaussian rational pairs
+# preserve the non-dyadic inverse-frequency coefficients exactly.
+def rat(z):return F(z.real),F(z.imag)
+def rscale(z,a):return z[0]*a,z[1]*a
+Zbasis=[[rat(inner(v,mv(Z,u))) for u in states] for v in states]
+eps=F(1,2)
+def filter_matrix(onesided):
+ out=[]
+ for i in range(D):
+  row=[]
+  for j in range(D):
+   gap=energies[i]-energies[j]
+   f=1/gap if (gap>=eps if onesided else abs(gap)>=eps) else F(0)
+   row.append(rscale(Zbasis[i][j],f))
+  out.append(row)
+ return out
+Xp=filter_matrix(True);Xboth=filter_matrix(False)
+check(all(x==(0,0) for x in Xp[0]),'positive_filter_adjoint_vacuum')
+check(any(x!=(0,0) for x in [row[0] for row in Xp]),'positive_filter_nonzero_creator')
+counterexamples['arbitrary_inverse_filter_adjoint_kills_vacuum']=any(x!=(0,0) for x in Xboth[0])
+check(counterexamples['arbitrary_inverse_filter_adjoint_kills_vacuum'],'counterexample_one_sided_filter')
+# All Z-vacuum excitations in this fixture lie above the filter cutoff.
+for i in range(1,D):
+ check(Xp[i][0]==rscale(Zbasis[i][0],1/energies[i]),'filtered_inverse_vacuum')
+a=F(7,8);pwr=32
+exponents=[F(7,2)*a,F(pwr)-a,F(pwr)-(pwr+1)*a]
+check(exponents==[F(49,16),F(249,8),F(25,8)],'summable_power_balance')
+check(min(exponents)>3,'three_dimensional_summability')
 record={'scope':'Tiny exact CAR/occupation/dyadic controls only; no native physical computation or numerical proof of infinite theorem','PASS':count,'FAIL':0,'groups':groups,'counterexamples_exhibited':counterexamples,'fixture_particle_weights':{'one':str(sum((w for w,n in zip(weights,numbers) if n==1),F(0))),'three':str(sum((w for w,n in zip(weights,numbers) if n==3),F(0)))},'full_inverse_moments':{str(s):str(sum((w/E**s for E,w in zip(energies,weights) if E),F(0))) for s in [1,2]}}
