@@ -1,0 +1,7 @@
+# Frozen unlaunched energy-bin wrapper
+
+Run this wrapper only after root review and remote checkpoint, with the pinned Python interpreter and `-I -B -S`. A single root monitor launches the stdlib worker via `/usr/bin/time -lp`; no second Python monitor is used. The total cap is 30 seconds, including startup and teardown, with a 29.5-second root kill threshold and the unchanged worker 29-second alarm. Whole sampled process-tree RSS must remain at most 384 MiB. External shell timing must reconcile root startup/teardown before final acceptance. Sampling is not a continuous-memory guarantee.
+
+BINDING.json names the accepted production, worker completion, independent replay and root acceptance. ROOT_FREEZE pins these immutable receipts, candidate freeze, wrapper and binding. The raw chi digest is pinned by the accepted manifest and checked during the worker's one scan; preparation does not scan it. The worker reads all 2^20 records once, writes exact bins before summary, and retains failures. This is energy binning only: no Hamiltonian action, solver or new physical input.
+
+Fresh output: native-l6-vertex-energy-bins-v2-run-4b771. Exclusive LAUNCH_STARTED prevents repetition. OUTER is provisional resource acceptance; root must inspect RESULT, reconcile external shell cost and issue a separate acceptance. No execution has been performed by this preparation. READINESS records actual parser/import and accepted-receipt validation only.

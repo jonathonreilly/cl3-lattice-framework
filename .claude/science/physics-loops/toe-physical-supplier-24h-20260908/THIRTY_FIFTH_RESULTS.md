@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Thirty-fifth campaign checkpoint
 
 Updated 2026-09-09T02:25:11.198587+00:00. Campaign continues to2026-09-10 10:27:17UTC subject to usable quota. No main landings, formal audit or reset credits.25 sciencePRs open; next nonlinear-vertex milestone is being prepared.
 

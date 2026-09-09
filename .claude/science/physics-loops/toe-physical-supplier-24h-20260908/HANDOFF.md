@@ -423,3 +423,17 @@ Production final cold38d5dc41 and replay cap-delta cold41963fa9 pass. Mathematic
 The follow-up spectral energy-bin tool108f was caught before use: a synthetic686-bin fixture exceeded Python integer serialization length. Its failed diagnostic is preserved, and a separate corrected candidate is being prepared with outward dyadic bounds, streaming hashes and bindings to the new accepted production/replay. No full scan has run.
 
 Useful unique evidence is retained on remote science branches/PRs before cleanup.48 inactive worktrees and earlier705MB redundant raw copies have been removed; approximately62GiB remains free. Original dirty and other-worker checkouts are untouched. Snapshot contains139 files. Read STATE.yaml for the exact next action; continue after this checkpoint.
+
+# Thirty-fifth campaign checkpoint
+
+Updated 2026-09-09T02:25:11.198587+00:00. Campaign continues to2026-09-10 10:27:17UTC subject to usable quota. No main landings, formal audit or reset credits.25 sciencePRs open; next nonlinear-vertex milestone is being prepared.
+
+The new direct Gaussian full L6 star calculation and independent reconstruction both PASS. Root external21.85s, total35.85 including14prior; observed whole-tree338542592B (about323MiB), below384MiB. All2335production and2322replay input hashes remain unchanged;30 production files are immutable through replay. Four single candidates, four fresh original-H residuals,27transports,nine exact norm scans and all seven raw/NPY bitbridges agree. Production11.71s/replay7.70s external. No retry/refinement. Root acceptancef37c65f44b9e9edb851ce701dc0c29115e65360dba22e574edddd7327f365c15.
+
+The certified total-vector norm error is approximately4.824862988009334e-11. Higher-particle squared weight lies strictly between0.001921920169366968 and0.001921920177827792 (displayed decimals are approximations, exact rational endpoints in evidence). Three-, five- and seven-particle sectors each have positive lower bounds; nine and above are unresolved below the common error ceiling. One-particle weight is approximately36.96919163. These fixed predeclared complete projectors were not selected after observing the result.
+
+The independent projection theorem gives the exact best squared distance to all108-mode linearMajorana vacuumactions as the higher-particle weight. Its positive lower bound proves this finite nativeL6 star vacuumtransition cannot be reproduced by a linearoperator. Floating-operation assumptions and the supplied Hamiltonian/canonicalvacuum remain explicit. This does not compute the full sixth-order coefficient, prove a bulk phase or close TOE. The failed oldCG attempt remains separately archived and closed.
+
+Canonical note/source/evidence packaging is underway on a clean branch stacked on8059. The optional energy-bin tool has been repaired prospectively: original108f synthetic686-bin serialization failure is preserved, v2 uses exact accumulation and outward100bit dyadic intervals. Independentcold12281695 passes actual686scalar regression and742checks. Its exactaccepted-input binding and single-root30s384MiB protocol are included UNLAUNCHED in this snapshot. No new solve is required; remote verification must precede the single scan.
+
+Useful evidence is remote before worktree deletion.48 inactive worktrees and705MB redundant raw copies have been removed, about62GiB remains. This snapshot preserves95 files including all accepted rawvectors and receipts. Read STATE.yaml for next action and continue the campaign after delivery.

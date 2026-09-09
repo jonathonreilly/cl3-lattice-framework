@@ -1,0 +1,13 @@
+# Energy bins v2: independent cold PASS
+
+Reviewed full core.py, binding.py, run.py, controls.py and protocol at freeze4b7714ad6290c898845dc8a3921e614728d1e55c898b571d8e60abe809b32059. All declared pins verify. The original108f failed686-bin serialization remains preserved in its original review folder; no source/data was overwritten here. No physical scan or native operation was performed.
+
+Occupation groups6/6/6/3 and odd implicit top bit give energy(2n12+4n48)sqrt3+2n24sqrt6+6n36, matching baseline frequencies sqrt12,sqrt24,sqrt36,sqrt48. Exact square accumulation in2^-2148 units includes finite binary64 subnormals and signed zero. The raw scan insists the real slot is positive-zero bits and hashes exactly the scanned i-phase bytes.
+
+Energy lower/upper enclosures are positive for every odd bin. Dividing stored nonnegative weights by energy upper/lower reverses bounds correctly. The total/one projected inverse norm uses1/(2sqrt3); higher uses1/(6sqrt3). Per-specific odd-count rows use the weaker first constant, which remains safe. For projected candidate norm n and total vector error e, quadratic functional error<=e(2n+e)/minimum_energy. Norm upper and outward rounding make this conservative; the true-weight lower bound subtracts the100-bit square-root width and e, clipping only the mathematically nonnegative lower endpoint. No signed estimate is silently replaced by an empirical positive value.
+
+The repair rounds interval endpoints outward with exact integer floor and ceiling onto2^-100 dyadics. Negative endpoints are handled by up(x)=-down(-x). It changes serialization precision, not exact bin weights or their accumulated rational inverse-energy calculation. A source-executed686-bin synthetic regression with nonzero e serialized successfully;742 additional count/ordering/dyadic/positive-energy checks passed. No vector fixture or scan was generated. This directly exercises the original failure class.
+
+Binding validates supplied root acceptance, production algorithm/Echi/phase, completion/source/contract, replay PASS AND scientific_pass, replay input/completion hashes and matching Echi, and raw chi hash. The root must freeze the actual binding paths/hashes against accepted4060/295 receipts; the validator does not manufacture acceptance. Receipt hashes are checked again after the scan. Streaming loader/hash, actual CLI readiness, source-byte compilation and external30s/384MiB requirements are consistent. BINS are retained before costly rational summary; abrupt failure remains externally recorded.
+
+Verdict PASS for the unlaunched saved-vector postprocessing source. No coefficient, susceptibility or physical result is inferred before an accepted input binding and fixed scan. No correction requested.

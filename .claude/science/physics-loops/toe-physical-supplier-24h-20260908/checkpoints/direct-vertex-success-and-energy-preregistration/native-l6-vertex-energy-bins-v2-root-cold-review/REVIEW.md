@@ -1,0 +1,9 @@
+# Energy-bin v2 root supervisor cold review
+
+**PASS** for final ROOT_FREEZE d79f4a831b598c2b5b3e328ff25512a3646d002810b03d268501d8d27db83cfe, candidate 4b7714ad6290c898845dc8a3921e614728d1e55c898b571d8e60abe809b32059. Read complete supervisor, worker entry point and binding validator; verified all 1,888 candidate source/runtime pins, final root file pins, and four accepted input hashes without scanning candidate vectors. Reuse primary's independent mathematical/source review of the unchanged binning kernel explicitly; I authored related upstream norm/certificate work.
+
+The fixed binding identifies accepted production, completion, independent replay and root acceptance f37c65f4, and ties chi's raw hash and global-i phase to the accepted manifest. The worker checks that raw digest during its sole scan. Root pins the binding and receipts before/after execution; no new vector or inverse is introduced. Exclusive marker and fresh output disallow replacement, and the fixed command has no retry path.
+
+Single-root monitoring includes root and worker descendants in sampled RSS. The 29.5-second root threshold, 29-second worker alarm, process-group and known-descendant cleanup, finite positive shell receipt checks, and final elapsed-under-30 check match the declared contract. Startup before START and final receipt-writing overhead still require the explicitly mandated external root shell reconciliation. Sampling is not a continuous-memory guarantee. OUTER is correctly only provisional resource acceptance; separate root result inspection is required.
+
+Final delta adds strict actual --readiness handling before the exclusive marker and rejects other arguments. Recorded root and child parser/import readiness and accepted-binding validation pass with no marker or scan; the previous stdin readiness failure remains preserved. I did not execute the supervisor or physical scan. No blocker found; remote preregistration and launch remain with root.
