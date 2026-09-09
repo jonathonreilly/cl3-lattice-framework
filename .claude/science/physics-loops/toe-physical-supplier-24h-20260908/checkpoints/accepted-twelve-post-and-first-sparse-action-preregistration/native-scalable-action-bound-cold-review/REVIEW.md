@@ -1,0 +1,11 @@
+# Scalable source bound independent review — PASS
+
+Full proof663f965cba921803954f0a7e67c18b30880ee1260fe42711b5ca9bc06b554da1 read. Reuse/disclose my coefficient and original-domain first-action proofs and prior52502 review. This new bound is James's work. No saved C, entries or physical matrix loaded.
+
+Exact V=F_R C and P=VV* imply (I-P)F_R C Z=0 for every fixed candidate Z, including arbitrary rounded matrices chosen from midpoints. Subtraction before norms is valid and can capture cancellation; interval induction must enclose the exact X with the chosen Z. It does not assume midpoint C is an isometry. Free Lambda preserves the Gamma bit; the impurity correction uses untransformed source rows and does not commute DeltaK through Gamma.
+
+Half-column reconstruction is correct: f_-=(zplus+chi*zminus)/2, f_+=(zplus-chi*zminus)/2; opposite chiral residuals are orthogonal for the ideal paired projector, so either raw squared residual is d_-+d_+. Gamma gives equal diagonal. This fails for a generic unpaired or midpoint projector, properly excluded. Saved upper endpoints suffice; there is no claim new Gram evaluations are unnecessary for Q.
+
+The row triangle a1 and weighted Frobenius/operator factor a2 follow directly from rank-one norms and factorization. Positive rational weights avoid zero denominators. Candidate choice may depend on numerical estimates without invalidating final certified upper bounds, provided selection cost is budgeted. G_Q=M_QQ-A*A with A=C*M_RQ is exactly Q*(I-P)Q for the SAME original V; source trace Tr(Y*G_QY) is the squared Frobenius norm, hence an operator bound. Complex variants require conjugate adjoints and complex modulus bounds. Negative upper trace is inconsistent, not a successful zero clip. Dropped cross-term cancellation makes failure inconclusive, not a lower bound.
+
+Thirteen independent exact rational controls passed: nontrivial rational isometry/null shift for three different Z, projected source Gram and Frobenius trace, request and contraction counts. Counts8s+36 and k24 values are correct arithmetic ceilings, not runtime guarantees. Coefficient conditioning, accepted physical inflation and actual source errors remain load-bearing. No scope or mathematical correction requested.

@@ -1,0 +1,1 @@
+First metadata preparation treated POST post_runtime/post_root hashes as filesystem paths and failed before any binder/native load. Corrected to explicit saved checker/root paths and verified their hashes against POST. No physical attempt.
