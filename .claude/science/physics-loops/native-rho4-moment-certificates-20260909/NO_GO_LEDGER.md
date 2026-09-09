@@ -1,0 +1,1 @@
+Never shrink an old cache radius around an unchanged old scalar midpoint without translating its affine dependence. Do not treat a fixed precision gate failure as a physical no-go. Do not relabel old failed mu input/monitor protocols as passed.

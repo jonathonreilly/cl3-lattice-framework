@@ -1,0 +1,1 @@
+One note, one compact stdlib runner, exact source/result/review snapshots and checkpoint65-69 recovery metadata. No raw catalog is copied and no oracle/full-node arithmetic is rerun. Root owns serialized graph and integration; no commits or PR yet.

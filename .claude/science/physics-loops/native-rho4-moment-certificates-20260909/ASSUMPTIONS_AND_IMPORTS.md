@@ -1,0 +1,1 @@
+Supplied infinite pi-flux dispersion and normalized Gaussian reference; A0<=17/60; prior checked elliptic mathematical identity; exact authenticated Gauss/root/weight and A endpoint intervals. Model selection remains supplied. New node derivative bound is proved in the note. Scalar intervals alone do not supply downstream frame/leakage/alpha.
