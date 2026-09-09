@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/taste_singlet_second_mass_body_diagonal_hop_vortex_strings_check_2026_09_03.py
+runner_sha256: 006bc4b3cb8b6f97fde4ae756277735e271e0c551a7f51b98e5e72a63fb971a6
+input_fingerprint_sha256: 1b42a8bf7f5afd50df27d1799e6421be510f3b79ff6f0b50b517ab1d09450c61
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 11.67
+status: ok
+----- stdout -----
+PASS SOURCE current own-note/memo/context hashes match (4 inputs)
+GROUPS A=T1 B=T2 C=T3 D=T4/T5 E=T6 F=T7 G=T8, S=solver; planes 24x24, 16/24/32, 40x24; M0 = 0.7, xi = 2, Bloch q_z = pi + p, window |E| < 0.686, R_c = 5
+PASS A1 [exact] Cl(6) 0.0e+00; eps anticommutes with all six 0.0e+00; real-space cell rules == landed H(q) at three momenta 0.0e+00
+PASS A2 [exact] over the complete set of 64 Pauli strings, those anticommuting with Gamma_1,2,3 and eps are XII XYX ZXI ZZX (count 4, nullity 4); bit flips 1,3,1,1; the one commuting with all three tastes (the singlet) is XYX
+PASS A3 [exact] M2 = X1Y2X3 = i Xi1Xi2Xi3, hermitian involution 0.0e+00; {M2,eps} = {M2,Gamma_a} = [M2,Xi_a] = 0 at 0.0e+00; X = -Y1X2Y3 commutes with Gamma_a, anticommutes with eps and M2 0.0e+00; X M2 = i eps 0.0e+00 -> (X,M2,eps) = (tau_3,tau_1,tau_2) at the node; taste s_b commute with all 0.0e+00; Xi_b = M2 (s1,-s2,s3)_b 0.0e+00
+PASS A4 [1e-14] node spectrum +-sqrt(m1^2+m2^2), fourfold each, for (m1,m2) = (0.3,0.4), (0.7,0), (0,0.7), (0.5,-0.5): max dev 4.4e-16
+PASS B1 [exact] M2: 8 nonzero entries, each between a cell corner b and its complement (bit distance [3] = Manhattan length 3, the body diagonal), amplitude i(-1)^{b_2} at 0.0e+00, max|Re M2| 0.0e+00
+PASS B2 [exact] a hop of displacement d gives the strings flipping the bits where d is odd: all 32 even-flip strings commute with eps (0.0e+00), all 32 odd-flip strings anticommute (0.0e+00), so no even-length hop is a mass; the anticommutant elements with fewer than 3 flips are XII ZXI ZZX, the nearest-neighbour triplet: no nearest-neighbour or face-diagonal term gives the singlet
+PASS B3 [exact] M2* = -M2 (complex-conjugation odd) 0.0e+00; eps M2 eps = -M2 (eps-conjugation odd) 0.0e+00; eps is real and the bare symbol obeys H(q)*=H(-q) 0.0e+00: physical spatial parity and gauge charge are not identified
+PASS B4 [exact] real space, 8x8 plane: {diag(eps_v), M2} = 0.0e+00 (weighted M1 needs a separate condition), while a face-diagonal (1,1,0) hop commutes with diag(eps_v): 0.0e+00
+PASS C1 [1e-14] H(pi+p)^2 = [sum_a(2-2cos p_a) + m1^2 + m2^2] 1 + 2 m2 sum_a (1-cos p_a) M2 Xi_a, M2 Xi_a = (s1,-s2,s3)_a: max residual 8.9e-16 over 3 momenta x 2 mass pairs -- the node gap is exact, the second mass splits the taste velocities at O(m2)
+PASS D1 [numerical] 24x24 (dim 1152), n = +1, p = +0.1: 16 in-gap states, 2 core modes E = +0.09990,+0.09990, core w >= 0.845, ring <= 0.013, <V_z> = +0.994,+0.994, <-G3> = +0.999,+0.999, |<X>| <= 6.9e-17, |<eps>| <= 1.0e-16; net core +2, ring -2, mixed +0
+PASS D2 [numerical] taste-projected eigenvalues on the n = +1 core pair: s1 -0.961,+0.961; s2 -0.985,+0.985; s3 -0.946,+0.946 -- two approximate opposite taste labels, both positive-velocity
+PASS D3 [numerical] n = -1, p = +0.1: 2 core modes, E = -0.09990,-0.09990, <V_z> = -0.994,-0.994, <-Gamma_3> = -0.999,-0.999, s3-projected -0.946,+0.946: two left-movers; net core -2, ring +2
+PASS D4 [numerical] n = +2, p = +0.1: 4 core modes E = +0.10020,+0.10020,+0.10022,+0.10022, core w >= 0.712, <V_z> >= +0.991, <-G3> >= +0.996; X on the core subspace -0.338,-0.338,+0.338,+0.338 (trace -4.1e-04); s3 -0.951,-0.950,+0.950,+0.951: four right-movers, two per taste; net core +4, ring -4
+PASS D5 [numerical] n = +1 core-pair finite secant (E(+0.1) - E(-0.1))/0.2, both branches equal: N=16 (dim 512) 1.0379; N=24 (dim 1152) 0.9990; N=32 (dim 2048) 0.9983; p = 0 core/ring splitting min|E| = 2.834e-02, 3.682e-03, 4.706e-04, falling by 7.7 then 7.8 per Delta N = 8
+PASS D6 [numerical] |<X>| <= 6.9e-17 on every n = +-1 string mode, X has approximately zero trace on the n = 2 core subspace (-4.1e-04), <-G3> = +0.999,+0.999,-0.999,-0.999: -Gamma_3 is approximately polarized; no sharp eigenvalue or Jackiw-Rossi index is established
+PASS E1 [numerical] M2 -> Xi_3 = M2 s_3 (z-bond dimerisation), n = +1, p = +0.1: 2 core modes (E,<V_z>,<s3>) = (-0.13082,-0.759,-0.718) (+0.13082,+0.759,+0.718), s3 -0.941,+0.941: one right- and one left-mover of opposite taste, net +0; at p = 0 they hybridise into a gap 2 x 0.08455
+PASS E2 [numerical] mixed a M2 + b Xi_3, n = +1, p = +0.1: (a, b, core net, core modes) = (1,0.5,+2,2) (0.5,1,+0,2) (0.8,0.8,+1,1), against n [sgn(a+b) + sgn(a-b)] = +2,+0,+1
+PASS F1 [numerical] 40x24 (dim 1920), cores (9.5,11.5,+1) and (29.5,11.5,-1), p = +0.15: core0 2 modes E = +0.14948 <V_z> = +0.988; core1 2 modes E = -0.14948 <V_z> = -0.988 (both modes equal per core); ring 16 states, net +0; at p = -0.15 net core0 +2, core1 -2, ring +0; v = 0.997: +2 on the string, -2 on the anti-string, the ring vector-like
+PASS G1 [numerical] 24x24, Gaussian flux tube (sigma_B = 2) of the link field, real mass m1 = 0.7, no vortex: (n_phi, plaquette sum/2pi, in-gap count at p = -0.1,0,+0.1, nearest |E|) = (1, 1.0002, [0, 0, 0], 0.702) (2, 2.0004, [0, 0, 0], 0.700): no in-gap state; massless control n_phi = 1, p = +0.1: 12 states with |E| < 0.3 in +-E pairs, the two nearest zero E = -0.1155,+0.1155, <V_z> = -0.864,+0.864, net +0: vector-like
+PASS S1 [1e-9] solver certificate over all 26 transverse windows: |dense LAPACK count - sparse count| max 0, max |dE| 1.4e-14, max eigenpair residual 2.1e-14; the k-th eigenvalue nearest zero lay outside every window
+SUMMARY: the taste-singlet second mass is the body-diagonal imaginary hop X1Y2X3; its declared finite fixtures have core counts 2|n|, signed velocity census 2n and compensating ring/anti-string census; approximate labels are not a global index.  [11.3 s]
+PASS R1 arbitrary-profile anticommutation fails: max 0.140173976408; exact entry formula residual 2.776e-17
+PASS R2 eps conjugation is not full-symbol spatial inversion: residual 0.157878011994
+PASS R3 complete core subspace: X eigenvalues [-5.547745015740786e-17, 1.4450400104562384e-16]; -Gamma3 eigenvalues [0.9993072555083922, 0.9993072555083953]; +1-eigenstate residuals [0.03722215715423615, 0.03722215715423704]
+PASS R4 uniform bipartite gap square residual 2.776e-16, min|E| 1.22458830819 >= |m| 0.700
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+
