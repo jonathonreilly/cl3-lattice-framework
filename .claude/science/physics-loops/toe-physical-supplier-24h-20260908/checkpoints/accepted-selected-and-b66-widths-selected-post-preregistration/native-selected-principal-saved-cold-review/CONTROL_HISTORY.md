@@ -1,0 +1,1 @@
+Initial independent 2x2 expected entry was mistyped 4119; direct hand expansion gives 111*13+158*17=4129. Earlier six predicates passed. This was a synthetic reviewer expectation error, not a scientific execution. Corrected expectation only, with original script preserved.

@@ -1,0 +1,7 @@
+# Root complete dual-node source/monitor review
+
+PASS source-only worker3b865/rootda9f. Primary independentchecksource4a092 read the full worker arithmetic and actual accepted binding, no savednativecontraction. Root additionally read allcheck.py andfullschema; dispatcher diff to acceptednu4f has only the timer message; monitor diff to45b4 has only exactnewpaths/message. Full6396runtime and6384scientific pins plusroot hashes verified. Root source-readiness was executed by author under strict-I-B-S with0savedcalls;4fabricated67-panel metadata fixtures discriminatevalid/boolcount/wrongcount/nonliteralflag. No repeated actualarithmetic.
+
+The independent JSON reader and Fraction/divmod path reconstruct both A and1-t²A values for1742nodes,67dualpanels,41moments M0..M40,40tailterms,newmonotonicfirstnode lowc anddirectedMachin intervals. It imports no originalproducer. FullacceptedrawAandgeometry premises inherited, not independentlyrederived. All savedpanelvalues retained beforecomparison; globalfinalpins rehashed. Root matches bothactualacceptedintervals/unchanged2e-28targets, typedcounts, exactlastPARTIAL andoutputmembership/failureabsence. Structuralguards are explicitreuse ofnu, not freshindependentphysics.
+
+30/29.5/29s384MiB onceguard andprocessgroupcleanup inheritedunchanged; finalexternalwhole-shell receipt remainsrequired. This saved-onlyjob checks the NEWrho4certificate, not an oldphysicalrerun. Allcurrentfailuresandpartialhistorymustremain ifthecheckfails. No downstreamGram/conditioning/leakage/propagation success is inferred.

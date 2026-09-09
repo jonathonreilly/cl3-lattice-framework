@@ -1,0 +1,1 @@
+Selected route: same catalog with stronger ellipse,40 exact tail terms and a new monotone low cminus bound. Original lower-precision protocols remain immutable. New oracle calculation is unnecessary for this block.

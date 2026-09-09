@@ -1,0 +1,5 @@
+# Fixed192 rounding count
+
+The contraction uses seven rounded operations per node: t², t⁴, t⁴A, two additions forming Q, weighted multiply, panel add. This is12194 operations;67 cumulative adds and fewer than20 final interval operations give<13000. Each primitive rounds two endpoints by at most2^-192. Propagating local node errors conservatively by2^20 per primitive and summing13000 yields endpoint error<13000*2^20*2^-192<1e-45; twice this also<1e-45. Bounds t<=8,A<1, mapped weights<=9 and total panel length<8 justify this very loose amplification. Exact Fraction moments and tail sums introduce no rounding. Machin bounds are exact alternating rational sums; final interval primitives are already counted. Inputs' interval widths are separately propagated; no precision is inferred from rounding alone. Actual middle width gate2e-25 remains mandatory.
+
+The40 positive moments M2..M41 are exact local combinatorics, not oracle values. No evaluation beyond tiny M0..M2 occurs in readiness/tests. Moment computation cost is an unmeasured part of the proposed27.7s forecast; timeout/failure retains the completed67 panels. TAIL.json is saved before final target comparison.

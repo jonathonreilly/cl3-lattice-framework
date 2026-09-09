@@ -1,0 +1,1 @@
+Prior certified-local-Green note supplies the explicitly imported Joyce/Guttmann elliptic identity and independent return-series normalization comparisons. No new literature value or empirical scalar input is introduced here.

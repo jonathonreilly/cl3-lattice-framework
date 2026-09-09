@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic schema fixtures only; real events_schema, no native data or arithmetic replay.",
+  "seconds": 0.9179239160148427,
+  "tests": [
+    {
+      "name": "five certified real validator",
+      "accepted": true,
+      "expected": true,
+      "detail": {
+        "status": "PASS_SELECTED_PRINCIPAL_SCHEMA",
+        "coefficient_gate_passes": 5,
+        "arithmetic_independently_replayed": false
+      }
+    },
+    {
+      "name": "terminal 2705 Limit",
+      "accepted": true,
+      "expected": true,
+      "detail": {
+        "status": "PASS_SELECTED_PRINCIPAL_SCHEMA",
+        "coefficient_gate_passes": 4,
+        "arithmetic_independently_replayed": false
+      }
+    },
+    {
+      "name": "2704 residual e1",
+      "accepted": true,
+      "expected": true,
+      "detail": {
+        "status": "PASS_SELECTED_PRINCIPAL_SCHEMA",
+        "coefficient_gate_passes": 4,
+        "arithmetic_independently_replayed": false
+      }
+    },
+    {
+      "name": "empty events",
+      "accepted": false,
+      "expected": false,
+      "detail": "ValueError('full certificate stages')"
+    },
+    {
+      "name": "wrong result time",
+      "accepted": false,
+      "expected": false,
+      "detail": "ValueError('result time')"
+    },
+    {
+      "name": "residual e0",
+      "accepted": false,
+      "expected": false,
+      "detail": "ValueError('residual failure evidence')"
+    },
+    {
+      "name": "wrong selected labels",
+      "accepted": false,
+      "expected": false,
+      "detail": "ValueError('exact selected order')"
+    },
+    {
+      "name": "retained box mismatch",
+      "accepted": false,
+      "expected": false,
+      "detail": "ValueError('retained certificate equality')"
+    },
+    {
+      "name": "retained error mismatch",
+      "accepted": false,
+      "expected": false,
+      "detail": "ValueError('retained certificate equality')"
+    },
+    {
+      "name": "inverse candidate mismatch",
+      "accepted": false,
+      "expected": false,
+      "detail": "ValueError('candidate delta equality')"
+    },
+    {
+      "name": "wrong failure stage",
+      "accepted": false,
+      "expected": false,
+      "detail": "ValueError('failure last stage')"
+    }
+  ]
+}
