@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T06:37:18.099657+00:00; main `b6684a480dadd7c9010efbe265760f3d4682e21d`.
+Updated 2026-09-09T06:51:52.045561+00:00; main `c664f7795757c070c9d195f10038ed7663f9bc36`.
 
-133 reviewed original science scopes landed: 90 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The 93 direct original closures include 90 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+134 reviewed original science scopes landed: 91 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The94direct original closures include91science, one partial Maxwell, one meta and one process landing. Of the earlier110closures,56scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
@@ -75,6 +75,7 @@ Updated 2026-09-09T06:37:18.099657+00:00; main `b6684a480dadd7c9010efbe265760f3d
 | #7825 | source_consolidation_exact | pending_on_open_successor | #7827 |
 | #7826 | source_consolidation_exact | pending_on_open_successor | #7827 |
 | #7840 | draft_disposition | reviewed_corrected_scope_on_main | `16c2d6860e168ec8e5e8f66296410265e5d7226d` |
+| #7845 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `c664f7795757c070c9d195f10038ed7663f9bc36` |
 | #7846 | draft_disposition | reviewed_corrected_scope_on_main | `2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f` |
 | #7847 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f` |
 | #7848 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `d81f3c22117522411c20fb6c38eef5874c4765ae` |
