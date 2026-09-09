@@ -1,0 +1,1 @@
+One clean isolated portable synthetic supporting execution under-I-B-S-OO. Exact16fileclosure copied beforelaunch and frozen.30s384MiB budget; subprocess external/usr/bin/time and30s caller timeout. No physical oracle/overlap/matrix run. Compare logical output to author except intended refreshed inputhashes after unit-vector clarification.

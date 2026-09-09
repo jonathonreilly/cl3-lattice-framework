@@ -1,0 +1,7 @@
+# Reviewer-authored source repair, before saved replay
+
+Root explicitly assigned orbital checker to make narrow guards/runtime/retention changes while Primary packages another canonical block. Original492c checker folder remains unchanged; this is a new v2. Original mathematical replay and fixed precision thresholds are unchanged. Source author/reviewer roles are disclosed: Primary authored original arithmetic, orbital checker reviewed and authored this guard layer, root independently reviews the delta before execution.
+
+Added strict row/target/worker/summary/source bindings, declared reads, failure stage and completed-row partials, source/runtime byte guards and fresh execution output. Bound study, root receipts and worker receipts are historical accepted physical inputs; no contraction is called. Directed26-term tail reconstruction remains the original exact same-formula consistency check, not an independently computed physical moment integral. The original formula and containment proof remain load-bearing.
+
+Proposed one saved-only pass30s384MiB,25s startup-adjusted secondary signal, external /usr/bin/time -lp receipt required. Source/readiness is allowed separately but does not invoke main/replay. RUSAGE_SELF records actual peak and must pass384MiB for acceptance; this is not a continuous OS memory limiter. Root must independently delta-review and authorize the saved replay; no authority is created here. All failures remain in the output and no physical/worker retry is permitted.

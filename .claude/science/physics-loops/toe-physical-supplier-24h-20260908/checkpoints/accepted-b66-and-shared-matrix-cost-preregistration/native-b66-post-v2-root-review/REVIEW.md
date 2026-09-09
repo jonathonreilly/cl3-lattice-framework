@@ -1,0 +1,7 @@
+# Root independent saved-postchecker v2 delta review
+
+PASS after reading the original arithmetic checker, full source diff, new strict runtime, protocol, actual binding and acceptance schemas. All7125 runtime pins verify. The reviewer-authored repair is disclosed; root did not author this source. Original492c/85fef arithmetic review remains load-bearing.
+
+All directed arithmetic,26term tail moments/recurrences, exactMachin32/10, low/middle remainder and finalendpoint formulas are unchanged. New guards reject extra/missing6rows, wrongIDs/targets/workerfreeze/binding/status, undeclared reads, mismatchedscope and missingretainedfiles. The actual output and root schemas match; originalB66 rootacceptance explicitlyawaits this savedpostcheck. Failure/partial output is retained. The runtime uses strict source/byte/origin membership and a freshoutput/once marker;25s startup-adjusted signal and30s external caller budget apply. PeakRSS acceptance is measured, not an OS hardmemory guarantee.
+
+Approved scientific scope is savedpanel cumulative/tail arithmetic only, not recomputation of114972integrands. The moment formula is the same combinatorial coefficient formula, not an alternative physical integral derivation. No oracle/worker rerun. One external/time savedreplay is now review-ready with exact runtimefa00951a andpostbinding2f4e566a. All original physical failures/acceptances remain untouched.

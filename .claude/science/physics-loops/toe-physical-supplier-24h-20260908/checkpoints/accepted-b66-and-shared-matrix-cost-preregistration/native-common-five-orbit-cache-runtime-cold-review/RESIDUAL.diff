@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -15,7 +15,7 @@
+     for n,s in enumerate(poles):
+      signed,det,res=core.woodbury(s,values[n],kind)
+      row={'kind':kind,'id':n,'signed':signed,'det':det,'residual':res};f.write(json.dumps(row)+'\n');f.flush();progress['coefficients']+=1;save()
+-     if max(iv.width(x) for r in signed for x in r)>iv.S//2**40 or max(abs(t) for r in res for x in r for t in x)>iv.S//2**40:raise ValueError('coefficient arithmetic')
++     if max(iv.width(x) for r in signed for x in r)>iv.S//2**40 or 2*max(abs(t) for r in res for x in r for t in x)>iv.S//2**40:raise ValueError('coefficient arithmetic')
+   stage='cache';progress['stage']=stage;save();traces={t:iv.ZERO for t in ('cc','P','O')}
+   with (out/'CACHE.ndjson').open('x') as f:
+    def write(row):
