@@ -1,25 +1,27 @@
 # Backlog review and landing — current handoff
 
-Updated after wave 51. Main is `0d4a8bb96b7956390e7f43c1bdeaf51cfc2adb6d`. Original 254-PR cutoff remains fixed; later arrivals excluded. Formal audit waits until a solid TOE is ready.
+Updated after wave 52. Main is `eb105e8c374ea286c9b7705d1f5e0c546f0a1b44`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 113 |
+| Closed directly after reviewed landing | 114 |
 | Closed through draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner reservations | 31 |
+| Still open, including three owner reservations | 30 |
 | Original membership | 254 |
 
-153 reviewed original science scopes landed: 110 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 113 direct original closures include 110 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+154 reviewed original science scopes landed: 111 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 114 direct original closures include 111 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
-Zero original drafts remain. The 110 other closures comprise 43 corrected scopes landed, 56 pending at four successors, 7 partial Maxwell scopes, 2 starting-main supersessions, 1 empty PR and 1 unexecuted plan. Reservations apply transitively.
+Zero original drafts remain. The 110 other closures comprise 43 corrected scopes landed, 56 pending at four successors, seven partial Maxwell scopes, two starting-main supersessions, one empty PR and one unexecuted plan. Reservations apply transitively.
 
-Including pre-cutoff #8003–#8009, this session has 120 direct closures, 51 science/source batches and 195 new source documents; 49 batches passed one combined gate. W14/W50 actual gate repairs and W43/W51 pre-gate rebuilds remain preserved. Main's stored ledger has 4,668 rows: 4,293 unaudited science and 375 meta. The external nightly refresh added the previous 98 pending rows without changing audit verdicts; 2 new notes await mechanical refresh. No formal audit has been run by this campaign.
+Including pre-cutoff #8003–#8009, the session has 121 direct closures, 52 science/source batches and 196 new source documents; 50 batches passed one combined gate. W14/W50 actual gate repairs and W43/W51 pre-gate rebuilds remain preserved. Main's ledger has 4,668 rows: 4,293 unaudited science and 375 meta. Three new notes await mechanical refresh. No audit verdict has been applied by this campaign.
 
-Wave 51 lands corrected #6017 and #6008. The first supplies finite counterexamples clarifying the limits of packed-lane, choice-law, causal-graph, gate-order and subgroup-symmetry inferences. The second retains conditional identical-arm Hamiltonian/Hankel mathematics and the stated zero-arm-field preparation lemma, with finite comparisons and genuine adverse controls. Physical identification, full symmetry, asymptotic laws and TOE completion remain open. All 160 source/manifest hashes were verified on remote main; all 30,490 prior main leaves except the regenerated manifest remains exact. One combined gate passed in 256.454 seconds. Initial composition was preserved and rebuilt before any full gate after nightly main advanced; original-reviewer current-main addenda confirmed unchanged science and input closure. See [evidence](backlog_evidence/wave51/INDEX.json).
+Wave 52 lands corrected #6005: exact supplied pointer symmetry, collective/Hankel and zero-pointer-field product-branch results; finite sampled comparisons; explicit missing full-protocol hypotheses; and an actual revival-counter falsification control. All 59 source/manifest hashes were verified on remote main, preserving all prior main leaves except the regenerated manifest. The combined gate passed once in 239.115 seconds. All original 15 tips, three earlier versions and 31 historical input entries remain exact recovery; the absent Cycle932 note and whole sibling #6001 are not implicitly accepted. See [evidence](backlog_evidence/wave52/INDEX.json).
 
-Author backlog_gauge_effect_repairs handles #6000. Original reviewer backlog_draft_triage is confirming the sealed #6005 correction. Author backlog_vortex_repairs takes #5957 next; its original review found four material correction groups. Reviewer backlog_ticks_review now handles #6347. See NEXT_REVIEW_UNITS.json. The complete corrected #6009 family remains landed from W49/W50; existing 878/887/892/904 remains preserved.
+#5957 is sealed and with its original reviewer for confirmation; #6000 is finishing its correction. #6347 awaits narrow parent-binding, mutation-credit and historical-prose repairs. The completed #6266/#6275 review requires an exact density-domain repair, a tensor-order bridge, honest mutation evidence and current input bindings. See NEXT_REVIEW_UNITS.json.
 
-Astra low is the focused-review default; unresolved consequential mathematical questions escalate to Astra xhigh. Reuse complete original reviews and confirm affected corrections; preserve source recovery outside actual note discovery. All reservations and Maxwell production/physical holds remain in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json). The [model pilot](REVIEWER_MODEL_PILOT.md) covers one workload.
+Actual source inspection additionally holds #6844 on reserved #6379 and #7332 transitively on all three reservations. [Routing evidence](backlog_evidence/reserved_routing_6844_7332.json) binds the imported source identities. This is a scope hold, not an adverse mathematical verdict; both PRs remain open.
+
+Astra low remains the focused reviewer default; unresolved consequential mathematical questions escalate to Astra xhigh. Reuse complete original reviews and confirm affected corrections. Preserve source recovery outside note discovery. Standing reservations and Maxwell production/physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json). The [model pilot](REVIEWER_MODEL_PILOT.md) covers one workload.
 
 ## Landed source history
 
@@ -386,3 +388,5 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Corrected time family and complement evidence | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` | `backlog_evidence/wave50` |
 
 | Corrected finite H0 implications and supplied spider symmetry | `0d4a8bb96b7956390e7f43c1bdeaf51cfc2adb6d` | `backlog_evidence/wave51` |
+
+| Corrected pointer symmetry and conditional sampled-star protocol | `eb105e8c374ea286c9b7705d1f5e0c546f0a1b44` | `backlog_evidence/wave52` |

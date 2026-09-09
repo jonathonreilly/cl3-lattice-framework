@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T10:45:13.852656+00:00; main `0d4a8bb96b7956390e7f43c1bdeaf51cfc2adb6d`.
+Updated 2026-09-09T11:08:46.762512+00:00; main `eb105e8c374ea286c9b7705d1f5e0c546f0a1b44`.
 
-153 reviewed original science scopes landed: 110 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 113 direct original closures include 110 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+154 reviewed original science scopes landed: 111 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 114 direct original closures include 111 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
@@ -17,6 +17,7 @@ Updated 2026-09-09T10:45:13.852656+00:00; main `0d4a8bb96b7956390e7f43c1bdeaf51c
 | #5964 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
 | #5965 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
 | #5966 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `1ef2db7a87038b5d8e26a84aa2a3157e347190c2` |
+| #6005 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `eb105e8c374ea286c9b7705d1f5e0c546f0a1b44` |
 | #6008 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `0d4a8bb96b7956390e7f43c1bdeaf51cfc2adb6d` |
 | #6009 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` |
 | #6017 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `0d4a8bb96b7956390e7f43c1bdeaf51cfc2adb6d` |

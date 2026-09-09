@@ -1,0 +1,18 @@
+# #6005 affected confirmation — PASS
+
+The corrected source resolves F1–F4 at its declared conditional finite scope. No material residual was found. This confirms source suitability for integration; it grants no formal audit grade, physical Record/clock supplier, whole sibling #6001 acceptance or fresh validation of the old parent campaigns.
+
+Confirmed final commit `3980ccea7c67275d38adeb14c93aba582261a963`, tree `57c5d5831eeb694437bdb905a444dfe48cc314bc`, on base `2f8ad9eb9e01b834a7d89243106379c326b2fa35`. The complete 782-line active correction was read, including the note, both producers, model and history. The original complete argument/used-premise review is reused from receipt `6cf062ce44974e628752d60999701f62341502ee9740a32638bf1dc9022a3482`. Nine copied mathematical definitions match that reviewed source by AST, ignoring documentation changes only.
+
+- **F1:** The actual note ID, bounded type, memo citation and both dependency APIs resolve correctly. The companion is a real producer; the model is a source-only helper. All actual inputs are bound, both caches are fresh, and recovered history is outside note discovery.
+- **F2:** All 49 original field/degree opening values are retained and reproduced. The maximum-ratio envelope and fitted slopes now describe seven samples; no continuous or asymptotic theorem is inferred.
+- **F3:** The complete corrected argument keeps the exact symmetric-space/Hankel and product-branch results. Exact periodicity is limited to zero total field. Window counting carries its exhaustion hypothesis, and the actual union rule preserves four consecutive samples across an unsampled gap. X-control and commutator ordering remain explicit hypotheses; the fresh YES rows do not claim that those physical/protocol suppliers were derived.
+- **F4:** The actual Cycle 932 interval counter executes the planted two-window example. Its empty-counter fault fails. The original literal-True tooth and its historical output remain recoverable.
+
+The author genuinely ran each final producer once after source freeze: primary 11/0 in .795 seconds and companion 6/0 in .353 seconds, both under 30 seconds/2 GiB/BLAS1. Pre/post execution identities agree, the raw stdout/stderr and cache hashes match, and only two caches changed after freeze. No producer was repeated in this confirmation. Selective actual affected controls took .994 seconds and 81.3 MB: counter fault, union count, omitted/non-boolean/false control clauses, terminal failure/refutation cases, live note guard and real note/model cache-input drifts all behaved as required.
+
+All 35 author artifacts, 58 added paths, 49 recovery entries (15 original tips, three prior versions, 31 historical inputs) and all 30,392 base leaves verify against actual Git/bytes. The complete original scope dispositions remain preserved; restoration does not endorse broader inherited claims. Current remote main `0d4a8bb96b7956390e7f43c1bdeaf51cfc2adb6d` changes no selected path, required input or consumer tool. Its spider note shares supplied symmetry/Hankel mathematics but is neither imported nor a physical protocol premise here; the H0 addition likewise supplies no missing authority.
+
+One external binding assertion initially expected the full stdout inside the cache. The existing cache writer deliberately retains the last 200,000 characters; that exact tail and the separately preserved full stdout now verify. This was a reviewer-tool correction, not a source failure or rerun. Details are retained in INCIDENTS.md.
+
+Root owns the composed manifest, exact integration gate and landing. This frozen source verdict remains valid absent a changed input or consequential integration interaction. Reservations and deferred audit remain unchanged.
