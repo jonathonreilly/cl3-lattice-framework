@@ -1,0 +1,1 @@
+Initial synthetic control reached JSON serialization after all mathematical comparisons, then failed: TypeError: Object of type int64 is not JSON serializable. Source and empty output preserved. Convert the two NumPy-derived mismatch counters to Python int; no formula or fixture change.

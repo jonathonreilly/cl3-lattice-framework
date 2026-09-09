@@ -515,3 +515,15 @@ Updated 2026-09-09T14:25:50.116865+00:00. Forty-five fixed finite L4 Gaussian-ve
 This tests short-time normalization and hardware cost only. Infinite node alpha, long-time conditioning and quantitative finite-box errors remain unresolved. The soft-commutator proof now passes independent reviewea85464b. Conservative filter/time bounds and covariance-midpoint/Krylov-compression approaches are archived as provisional analytic work; they do not supply a practical infinite calculation. Canonical node/gap milestone packaging continues in parallel.
 
 Checkpoint40 ef547cda7170332fccea681473ed1ef0bc614a40 has113 verified snapshot blobs;30 science PRs remain proposals and50 inactive worktrees removed. Campaign remains active through originaldeadline, without reset credit use or main merge.
+
+# Physics campaign — current SSH status
+
+Updated 2026-09-09T14:56:29.981501+00:00. The48hour campaign is active through September10 10:27:17UTC, subject to usable quota. Current usage7%,remaining93%; noresetredeemed. Science heartbeat active; mistaken coordination monitor paused. Lock refreshed to16:50:56UTC.
+
+Thirty-one science PRs #8036–#8066 are open proposals; no main merge or formal audit was performed. Latest8066 head64c1efc6984b16cf95c61e7ac148add85d741606 proves a unique real node scalar, five symmetry classes, exact soft/Laplace formula, stronger INFINITE pair gap h/4 and time-tail<1e-6/h² at100/h. Independent complete review and affected refinement confirmation pass;223isolated exact controls,134changed remote blobs verified. Alpha remains unevaluated.
+
+The fixed Gaussian/Fock pilot completed ONCE:45comparisons, maximum absolute discrepancy1.8324e-14, external0.53seconds and82,395,136B sampled whole-tree RSS. This is finite short-time normalization/cost only. All earlier numerical protocols also remain completed; do not rerun them.
+
+Current hard work targets an affordable infinite calculation. An independently checked Ward identity removes one inverse while retaining all bounded spatial tails. Gaussian covariance response now has polynomial dimension bounds, and a mixed-reference Pfaffian formula retains signs without dividing by overlaps. The actual stationary impurity projector differs by a trace-class operator; an independently checked constructive approximation has polylogarithmic rank/error bounds. Rank2352 is BEFORE rounding, whoseerror doubles andchangedcarrier canbe4704. None of this alone establishes affordable finite-time dynamics. The next route combines finite-excitation Fock approximation with unnormalized semigroup contraction, avoiding normalized-state conditioning; certified Gram data and phase/energy control remain necessary. New localGreen/Gram work is analytic and UNLAUNCHED.
+
+All new pilot data and proof/partial snapshots are being preserved remotely in thischeckpoint. Fiftyinactive worktrees were safely removed, roughly58GiBfree. Original dirty and other-worker checkouts remain untouched. Read STATE.yaml and source-bound reviews; provisional extensions are not passing theorems merely because adjacent lemmas passed.

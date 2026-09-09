@@ -1,0 +1,13 @@
+# Author post-verification of the fixed Gaussian kernel pilot
+
+Verdict: PASS for the frozen finite normalization/cost scope. I authored the worker and Gaussian formulas; this is author post-verification alongside root's separate acceptance, not an additional independent mathematical review. No physical fixture or eigensolver was rerun. The new checker uses only standard-library receipt/hash and saved-row arithmetic.
+
+The exact frozen worker 49f78f7f and all 2317 bound files still match. Root wrapper source and review pins match ROOT_FREEZE. WORKER_COMPLETE binds the actual RESULT; root acceptance binds all three output files. The one-attempt marker, successful wrapper receipt, external time receipt and final root acceptance are consistent. The wrapper's intermediate 'external shell pending' flag is historical and is discharged by the later acceptance, not treated as a failure or silently rewritten.
+
+All 45 rows occur exactly once in the fixed five-case/three-time/three-kernel order, with the declared time values. Saved PARTIAL includes all final rows. All five actual reductions report ten real modes, and their source performs the literal square, invariance, Gram, reference orientation and defect-support checks. These geometry checks were source-read and evidenced by completion; I did not independently rebuild physical matrices after the run.
+
+Recomputed saved-array discrepancies agree exactly with the stored values. Maximum absolute difference is 1.832402900850536e-14, below every declared scaled threshold. Maximum chart distance is 0.1796138599218779, below the fixed 0.75 gate; all skew residuals pass. This compares two floating implementations and is not an interval certificate.
+
+Summed Gaussian call time is 0.005179205851163715 seconds; summed literal call time is 0.038894126657396555 seconds. These omit other worker work and must not replace external cost. The worker reports 0.2383655839948915 seconds; root wrapper reports 0.5182255839463323 seconds; external elapsed is 0.53 seconds. External maximum single-process RSS is 47,415,296 bytes; the sampled whole-tree peak is 82,395,136 bytes. All are within the 60-second/384-MiB contract. Sampling does not prove the exact continuous-time peak, and this receipt does not establish costs for long-time or large-carrier kernels.
+
+This result supports the short-time pure-state Gaussian phase/normalization implementation on the fixed L4 AP invariant carrier. It does not validate replacing the infinite bath covariance by sign(K_m), mixed-state trace formulas, long-time chart changes, spatial compression, quadrature, the infinite gap at finite L4, or any value/sign of alpha. All original outputs remain unchanged.

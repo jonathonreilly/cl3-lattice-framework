@@ -32,3 +32,5 @@ Sixthround: originalcommoncarrierproofcoldPASS442e3b3e plusrootliteralPauli/geom
 
 
 Checkpoint40:8064 complete canonical PASS6cc71e85; source4365a7cb,1217 isolated controls.8065 root full source review PASS after clarified exact frame/trace scope; sourcee2626b48. Node/Laplace PASSd1a4aa10 after explicit adjacent-swap gauge correction. Infinite gap PASS17d56392. Gaussian commutator and actual pilot source review pending; archived relative/locality partials are not promoted.
+
+Checkpoint42:8066 complete6cf94d32 and quarterconfirmation3c7721a6 PASS. Ward57b3407c, covariance8c310172, stationarytraceclass041748c1 andrank e30b6088 PASS attheirboundsource. Gaussian45rowpilot independently rootaccepted andauthorpostverified. Newquench/moment synthesis remains provisional.
