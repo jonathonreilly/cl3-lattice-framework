@@ -1,0 +1,231 @@
+{
+  "verdict": "PASS",
+  "scope": "same-session affected corrected source confirmation; conditional finite scope only",
+  "original_prs": [
+    7813,
+    7819,
+    7820,
+    7821,
+    7822,
+    7823
+  ],
+  "successor": 7827,
+  "whole_successor_accepted": false,
+  "source_base": "efa96a44eac1a154dc6dd8a5e68e148cfefb9403",
+  "final_commit": "0b84be0569a71a35efbd40b86744fa69ba6f0a18",
+  "final_tree": "3d95bdaef46d5dc3ad381898dfd79f31a4bff9cf",
+  "current_main": "6952b95754210bf25d14ad45bb21dba103e7eea3",
+  "current_main_tree": "6c7dc1cd8a11f77a1571d65effa088efddd7d69b",
+  "original_review_receipt_sha256": "33b94f7ee12caa4f040c059494e33e1707cead16f5f3df3472f1142e00a9e2a7",
+  "author_receipts": [
+    "0b49851967543dc1585ca66431063eac5369a128f3e23a14c047be983b050d01",
+    "769d8dfbdb1769432531b13f77ec176d82082e764492ba529e33d7749e9e45ca"
+  ],
+  "findings": {
+    "F1": "resolved",
+    "F2": "resolved",
+    "F3": "resolved",
+    "F4": "resolved",
+    "additional_exact_debit_control": "resolved by iteration2; failed first control preserved"
+  },
+  "source_paths": 226,
+  "input_edges": 48,
+  "distinct_input_paths": 14,
+  "report_sha256": "4030dce9970388c99753f5910acfc40c27bd0c394175232c672e35d5fa0ba9da",
+  "proof_confirmation_sha256": "f03268122194c15668309ce840d25a47d4b38d2d610495e3bcabb36259330ce9",
+  "source_inventory_reference": "backlog-eta-pair-process-fixes-iteration2/FINAL_SOURCE_INVENTORY.json",
+  "source_inventory_sha256": "68d38f6c410be0854762e8cfe2e92d9ccefe000cddf7ef59e927f29edd7dc4c4",
+  "original_or_corrected_primary_science_replays": 0,
+  "formal_audit": false,
+  "integration": "Root owns exact composition, manifest and combined gate; no whole-successor closure authorized.",
+  "artifacts": {
+    "CONTROL_EXECUTION.json": {
+      "sha256": "c13298fa40c71c5c28323878001fc0c8f4b4aebe9a49e124c9943e70abb50f0f",
+      "bytes": 422
+    },
+    "DEBIT_RESIDUAL.json": {
+      "sha256": "e1a9743ddfaf686ad9c8eb8b2070aead0408332fa533dabe3ec4355ceb11f3a2",
+      "bytes": 840
+    },
+    "FINAL_BINDING.json": {
+      "sha256": "f459814b40ac381ade0807d83faec34b1ed07f8db33b2b30ddc9bed09aed1308",
+      "bytes": 16682
+    },
+    "INCIDENTS.json": {
+      "sha256": "af9d4af4831201b7d4c5e13c14ed97155ff93e31f31763a635527ff10a9fa60f",
+      "bytes": 1457
+    },
+    "ITERATION2_CONTROLS.json": {
+      "sha256": "ea7438fa634dbabee6e5a30566b5fa35b52f6b92295f5b6a10ae0a128a88ddab",
+      "bytes": 4015
+    },
+    "ITERATION2_EXECUTION.json": {
+      "sha256": "e36f75faab417dfff9e15ea140b039b88f0cd18bf428aa6b781aee56f28ff15c",
+      "bytes": 425
+    },
+    "PRE_ITERATION2_REVIEW.md": {
+      "sha256": "fe21e947d1c235b1d1a77f9aa12726a24508834253f933d4603f01724a171497",
+      "bytes": 5845
+    },
+    "PROOF_CONFIRMATION.md": {
+      "sha256": "f03268122194c15668309ce840d25a47d4b38d2d610495e3bcabb36259330ce9",
+      "bytes": 3785
+    },
+    "RECEIPT_VERIFICATION.json": {
+      "sha256": "2ece3c0134603aeb52cf6186f86ac7a1c2fe13c80133a880662b9777a86e2ddf",
+      "bytes": 515
+    },
+    "REPORT.md": {
+      "sha256": "4030dce9970388c99753f5910acfc40c27bd0c394175232c672e35d5fa0ba9da",
+      "bytes": 4877
+    },
+    "SOURCE_BINDING.json": {
+      "sha256": "1743281d178168602798606c8778b36ac0d177f90c717c9e302e22d8776bff99",
+      "bytes": 16202
+    },
+    "affected-runtime-source.txt": {
+      "sha256": "be6dce700318ea99121d7133785b00bb448969ccef5237cc02094ed175da4bb9",
+      "bytes": 40824
+    },
+    "affected_controls.py": {
+      "sha256": "c1c5548c2d2db4d2687e0298f2cb92c0b1a2f9cc2f0b5804b562530b886a13ec",
+      "bytes": 6894
+    },
+    "controls.stderr": {
+      "sha256": "4fa3d52deb0dbe08b37b5d1b387ba8667d30ac67aeb29fde9a7eb6fcc2d8a3bb",
+      "bytes": 305
+    },
+    "controls.stdout": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "debit-source-mutant.py.txt": {
+      "sha256": "ba7cb824d5a84250deea9b0cb7feb90acaa0a332deac72efe1491b1b42e9fdcd",
+      "bytes": 563
+    },
+    "debit_residual_probe.py": {
+      "sha256": "60b11571430327f9931e4fdf497bc1fbb8eae475ada17002535e7bc88940503c",
+      "bytes": 2065
+    },
+    "final_binding.py": {
+      "sha256": "8ad59edd1dcdb73e8468181fd045b28e46600b3c896ebbdce7773c2707e25a0b",
+      "bytes": 5938
+    },
+    "input-fixture/docs/ADMISSIBILITY_D4_CLASSICAL_SCREENING_CAUSE_PERSISTENCE_RENEWAL_LOCUS_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+      "sha256": "157ed95dea5226b3b3bfb97cf41e3315a0f26dde3d9ea02b56ee6e5dbb398518",
+      "bytes": 11311
+    },
+    "input-fixture/docs/ADMISSIBILITY_D4_NORMALIZED_RECORD_PAIR_SOURCE_GRAVITY_PINCER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+      "sha256": "d850a387515e06f684191e06ac7750551f69c132c3d1b852fcfbe498042129e0",
+      "bytes": 13304
+    },
+    "input-fixture/docs/ADMISSIBILITY_D4_OUTPUT_CONDITIONED_PAIR_SUCCESSOR_COMMON_TWO_USE_CYLINDER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+      "sha256": "655f7bc858b859dd84580ed9eb446f74ecfb1cfb87bfd1d9a00cc2339b9c7e6b",
+      "bytes": 8083
+    },
+    "input-fixture/docs/ADMISSIBILITY_D4_OUTPUT_STATUS_NN_ORDERED_PAIR_TRANSDUCER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+      "sha256": "1e853ac20bfdd4fc9e13e07304ee5051cbe67eb9389606bbc3a3555a5be96d6a",
+      "bytes": 5413
+    },
+    "input-fixture/docs/ADMISSIBILITY_D4_RETURNED_TIP_SUPPLIED_Q_CONDITIONAL_PAIR_INSTRUMENT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-30.md": {
+      "sha256": "86913d27c2f428d8d510ea374541b017ac4daa380574fe3486756374e7112320",
+      "bytes": 15074
+    },
+    "input-fixture/docs/ADMISSIBILITY_D4_SYMBOLIC_LAMBDA_GUARDED_FINITE_SUCCESSOR_TRANSACTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-31.md": {
+      "sha256": "70514e46d9d3f136f00b83817aafe49ca89d54d4f8bd684094f3a9fdc75cdd8a",
+      "bytes": 9431
+    },
+    "input-fixture/docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    "input-fixture/docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    "input-fixture/logs/runner-cache/admissibility_d4_classical_screening_cause_renewal_locus_gate_2026_08_31.txt": {
+      "sha256": "7f258a8cc45e937b838206241617079ff552b61ab74ccfe4ef264eb2fbf55f7c",
+      "bytes": 827
+    },
+    "input-fixture/logs/runner-cache/admissibility_d4_nn_record_relation_transducer_dispatch_gate_2026_08_31.txt": {
+      "sha256": "3e9f997ad960ec4dae0500dd218113892e7aa78842344e4250b6ed20c18dd139",
+      "bytes": 809
+    },
+    "input-fixture/logs/runner-cache/admissibility_d4_normalized_record_pair_source_gravity_pincer_gate_2026_08_31.txt": {
+      "sha256": "751f4b3f6d86a7d539f9f784bb86cd1407d08dd880dc9ab9aeea20f24d0ed63b",
+      "bytes": 713
+    },
+    "input-fixture/logs/runner-cache/admissibility_d4_output_conditioned_pair_successor_handoff_gate_2026_08_31.txt": {
+      "sha256": "c37ff1a551e7832714dd5da8992ae0716ae71dcc2d9464d36867ce6df9f7bfaf",
+      "bytes": 607
+    },
+    "input-fixture/logs/runner-cache/admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30.txt": {
+      "sha256": "3318a88cd67b196f795803955f5f820d3e53ebc6c41305b0ee6f238dcd2d3531",
+      "bytes": 687
+    },
+    "input-fixture/logs/runner-cache/admissibility_d4_symbolic_lambda_guarded_state_carrier_successor_gate_2026_08_31.txt": {
+      "sha256": "5a9a0691d4087b9603e61ce38cfc543f9aab1e7b18ac39946d005abad1b61a99",
+      "bytes": 760
+    },
+    "input-fixture/scripts/admissibility_d4_classical_screening_cause_renewal_locus_gate_2026_08_31.py": {
+      "sha256": "b2b1335c7ceafefef2b52b15bb21b98eeb399ee138980e8e57fe012e6d7ad0a8",
+      "bytes": 37189
+    },
+    "input-fixture/scripts/admissibility_d4_nn_record_relation_transducer_dispatch_gate_2026_08_31.py": {
+      "sha256": "2a0651c82f4d0416bc400c9b444d0ea65e388cfa18c3b02e78d24963f1379c22",
+      "bytes": 41035
+    },
+    "input-fixture/scripts/admissibility_d4_normalized_record_pair_source_gravity_pincer_gate_2026_08_31.py": {
+      "sha256": "2c0ea06929e8d784b8879296630010ec4724f7570582e6502efbf498670d028b",
+      "bytes": 24210
+    },
+    "input-fixture/scripts/admissibility_d4_output_conditioned_pair_successor_handoff_gate_2026_08_31.py": {
+      "sha256": "62721ae1b16c8b5bbbdc7cb5356513367997fbb6a1de1cb771348e172bdd20ba",
+      "bytes": 35465
+    },
+    "input-fixture/scripts/admissibility_d4_prior_record_live_preparation_two_event_prefix_2026_08_30.py": {
+      "sha256": "a454b4ce47af92bbf55550ebae068ff4a419b141d916b0c4fcdc1678bf283a7e",
+      "bytes": 10556
+    },
+    "input-fixture/scripts/admissibility_d4_returned_tip_strict_support_analytic_coupling_gate_2026_08_30.py": {
+      "sha256": "54b5d7faac7d6bc3484619d09e30b4b8f27efc84677142a48a5fe24f995d105d",
+      "bytes": 57800
+    },
+    "input-fixture/scripts/admissibility_d4_self_delimiting_forward_record_append_history_2026_08_30.py": {
+      "sha256": "5eb733c3a50da1f7c1bb8a46b547b1b91fd85c27856e425d8040305b3d009d6c",
+      "bytes": 21284
+    },
+    "input-fixture/scripts/admissibility_d4_symbolic_lambda_guarded_state_carrier_successor_gate_2026_08_31.py": {
+      "sha256": "1a35ad599d70e52b8296df13e3c1b18b210d7a35082728fee6e87ee3a9b09987",
+      "bytes": 93308
+    },
+    "iteration2.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "iteration2.stdout": {
+      "sha256": "ea7438fa634dbabee6e5a30566b5fa35b52f6b92295f5b6a10ae0a128a88ddab",
+      "bytes": 4015
+    },
+    "iteration2_controls.py": {
+      "sha256": "93174b88b4243022d14344f6f86eb44395c8f3b41c4334f5408ffd3028fe192c",
+      "bytes": 3770
+    },
+    "note-correction.diff": {
+      "sha256": "d28e93024201f1b178d994a8dd9b31a632c6d0895228a5c5fe8a4f33937e5f44",
+      "bytes": 57654
+    },
+    "run_controls.py": {
+      "sha256": "9356d5b6119d294be6dceb88c41e8bf0b21f2f38e07698afa307a293b434db55",
+      "bytes": 1371
+    },
+    "run_iteration2.py": {
+      "sha256": "54866b991d1bb38c6792a8b39805cfed882b502de0d4cde10a3c5dc621443eb7",
+      "bytes": 1386
+    },
+    "verify_source.py": {
+      "sha256": "ae82b70f89903e9e25b9b4ad379bbce5bd80dbdeace6ce48a07b8e06f68d4f96",
+      "bytes": 4781
+    }
+  }
+}

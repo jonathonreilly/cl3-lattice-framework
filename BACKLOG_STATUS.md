@@ -1,6 +1,6 @@
 # Backlog review and landing — current handoff
 
-Updated after wave 55. Main is `6952b95754210bf25d14ad45bb21dba103e7eea3`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
+Updated after wave56. Main is `e48b8ed97fb909245b722a8ca9a59b078efdae9c`. The original254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
@@ -9,17 +9,17 @@ Updated after wave 55. Main is `6952b95754210bf25d14ad45bb21dba103e7eea3`. The o
 | Still open, including three owner reservations | 24 |
 | Original membership | 254 |
 
-160 reviewed original science scopes landed: 117 direct and 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 120 direct original closures include 117 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+166 reviewed original science scopes landed: 117 direct and 49 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 120 direct original closures include 117 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 50 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
-Zero original drafts remain. The 110 other closures comprise 43 corrected scopes landed, 56 pending at four successors, seven partial Maxwell scopes, two starting-main supersessions, one empty PR and one unexecuted plan. Reservations apply transitively.
+Zero original drafts remain. The110 other closures comprise49 corrected scopes landed,50 pending at four successors,seven partial Maxwell scopes,two starting-main supersessions,one empty PR and one unexecuted plan. Reservations apply transitively.
 
-Including pre-cutoff #8003–#8009, the session has 127 direct closures, 55 science/source batches and 202 new source documents; 53 batches passed one combined gate. Earlier actual failures and pre-gate rebuilds remain preserved. Main's ledger has 4,668 rows: 4,293 unaudited science and 375 meta. Nine new notes await mechanical refresh. No audit verdict has been applied by this campaign.
+Including pre-cutoff #8003–#8009, the session has127 direct closures,56 science/source batches and208 new source documents;54 batches passed one combined gate. Earlier actual failures and pre-gate rebuilds remain preserved. Main's ledger has4,668 rows:4,293 unaudited science and375 meta. Fifteen new notes await mechanical refresh. No audit verdict has been applied by this campaign.
 
-Wave 55 lands corrected #6347 finite-state Markov and #7047 terminal-channel science. Both original reviewers confirmed the corrected source; final caches and actual helper/input consumers are bound. All prior main science is preserved. The Markov first producer timeout remains recorded; one changed-source retry reused the unchanged parent covariance evidence and passed. The combined integration gate passed once in 249.975 seconds. See [evidence](backlog_evidence/wave55/INDEX.json).
+Wave56 lands six original Eta pair-process results (#7813/#7819–#7823), previously consolidated at #7827. The original reviewer confirmed every correction, including a debit-count control that now rejects a missing write. Root verified all355 recovery rows/198 bodies and preservation of current main. The combined gate passed once in 245.092 seconds. See [evidence](backlog_evidence/wave56/INDEX.json). These six acceptances do not close #7827:17 transferred original scopes plus its own remaining science still need disposition.
 
-The six-note Eta pair correction is sealed after one additional exact-debit predicate finding; its original reviewer is binding final confirmation. The separate Eta affine-repeat unit remains unreviewed. The original #7335 review found three narrow repairs and no finite mathematical refutation. The #7326 original review found missing transitive cache inputs and a rank-three fixture described as spanning; Vortex owns those narrow corrections. Original sessions confirm affected corrections. See NEXT_REVIEW_UNITS.json.
+Gaussian #7326 has sealed author fixes and original-reviewer PASS with bounded claims; integration is pending. Regge #7335 is completing the same-session fixes and final evidence. Root has read both correction diffs. The separate Eta affine-repeat review is active; #7338 and archive packets remain queued. See NEXT_REVIEW_UNITS.json.
 
-Verified source dependencies hold #6844/#7332 and additionally #7333/#7334 on owner-reserved science. Their branches remain open; this is no adverse mathematical verdict. The latter [preferred-parent routes](backlog_evidence/reserved_routing_7333_7334/PREFERRED_PARENT_IMPORT_RESERVATIONS.json) exclude exception-handler/else fallback shortcuts. No static reservation was found for #7335/#7338, which still require full review.
+Verified source dependencies hold #6844/#7332 and #7333/#7334 on owner-reserved science. Their branches remain open; this is no adverse mathematical verdict. The [preferred-parent routes](backlog_evidence/reserved_routing_7333_7334/PREFERRED_PARENT_IMPORT_RESERVATIONS.json) exclude exception-handler/else fallback shortcuts. Other verified reserved-dependent units retain their explicit holds.
 
 Astra low remains the focused reviewer default; unresolved consequential mathematical questions escalate to Astra xhigh. Reuse complete original reviews and confirm affected corrections. Preserve source recovery outside note discovery. Standing reservations and Maxwell production/physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json). The [model pilot](REVIEWER_MODEL_PILOT.md) covers one workload.
 
@@ -396,3 +396,5 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Corrected finite Record refinement and exact channel bridge science | `efa96a44eac1a154dc6dd8a5e68e148cfefb9403` | `backlog_evidence/wave54` |
 
 | Corrected finite Markov and terminal channel science | `6952b95754210bf25d14ad45bb21dba103e7eea3` | `backlog_evidence/wave55` |
+
+| Six corrected conditional Eta pair-process results | `e48b8ed97fb909245b722a8ca9a59b078efdae9c` | `backlog_evidence/wave56` |
