@@ -1,0 +1,1 @@
+Small mean density does not imply joint-event decay: the actual-carrier two-flux mixture is an inference counterexample, not a ground-state counterexample. Doubling only a spanning tree misses cycles; corrected control proof doubles all edges. No global active gap imported.

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-joint-mutant-wrong_periodic_seam/scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py", line 21, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-joint-mutant-wrong_periodic_seam/scripts/native_weak_electric_joint_defect_bounds_2026_09_09.py", line 15, in main
+    path=root/AUDIT_INPUT_PATHS[-1];data=path.read_bytes();ns={'__name__':'local_controls','__file__':str(path)};exec(compile(data,str(path),'exec'),ns);result=ns['check']()
+                                                                                                                                                                ^^^^^^^^^^^^^
+  File "/private/tmp/toe-joint-mutant-wrong_periodic_seam/scripts/native_weak_electric_joint_defect_controls_2026_09_09.py", line 26, in check
+    require(len(incidence[v])==6,'geometry')
+  File "/private/tmp/toe-joint-mutant-wrong_periodic_seam/scripts/native_weak_electric_joint_defect_controls_2026_09_09.py", line 12, in require
+    if not ok:raise ValueError('mathematical predicate: '+group)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: mathematical predicate: geometry

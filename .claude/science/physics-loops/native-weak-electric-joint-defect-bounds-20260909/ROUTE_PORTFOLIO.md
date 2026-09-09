@@ -1,0 +1,1 @@
+Executed: ground-eigen-equation recursion plus actual compressed energy bounds. Finite-volume positivity gives1/N window; statewise quadratic inequality gives extensive cutoff. Open: volume-uniform local compression; no chosen route currently proves it.

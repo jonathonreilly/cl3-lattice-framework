@@ -1,0 +1,1 @@
+Canonical note and one primary/one helper, exact geometry/algebra controls, source freeze, isolated stdout/stderr and paired JSON, semantic mutants, source reviews and handoff. No full pipeline per this unit.
