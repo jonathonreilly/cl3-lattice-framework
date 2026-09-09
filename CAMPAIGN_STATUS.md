@@ -57,7 +57,8 @@ joint-law selection remain open.
    final integration confirmation remains;
    backlog_8001_review repairs the three gravity papers. The actual Born phrase-gate
    failure and narrow correction are preserved. The next focused chirality review
-   covers #7973/#7989/#7991 with backlog_ticks_review. Formal audit remains deferred.
+   covers #7973/#7989/#7991 with backlog_ticks_review. backlog_draft_triage
+   reviews #7966 and its seven pending consolidated scopes. Formal audit remains deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
