@@ -1,0 +1,3 @@
+# Saved local Green scalar certificate checks
+
+Status: conditional-support. The isolated checker passed 215 predicates on the accepted fixed scalar records. Six independent altered-data executions rejected missing widths, wrong targets, positive derivatives, disjoint method intervals, incomplete receipts and duplicate poles after synthetic rehashing. These are bookkeeping controls, not new physical computations. The final status-only note/manifest correction passed an affected-file recheck with unchanged scientific payload. Original physical attempt costs and enclosures remain in the paired input files. No alpha, stationary projector, formal audit or current-main integration pipeline result is claimed.
