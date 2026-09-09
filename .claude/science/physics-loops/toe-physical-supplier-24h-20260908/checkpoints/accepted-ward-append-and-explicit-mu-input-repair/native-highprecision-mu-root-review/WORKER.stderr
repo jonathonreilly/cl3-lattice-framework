@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-catalog-design/run.py", line 40, in <module>
+    catalog=sys.modules['loader'].load(b);sys.modules['compute'].run(out,catalog);guard()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-catalog-design/loader.py", line 36, in load
+    if not 0<lo<hi<=8 or hi-lo>F(1,2**140) or wu-wl>F(1,2**140) or at[0]>at[1] or not 0<wl<=wu:raise ValueError('node enclosure')
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: node enclosure

@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-root-review/run_once.py", line 53, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-root-review/run_once.py", line 52, in main
+    req(failure is None,'fixed highprecision mu integral attempt failed '+str(failure));print(json.dumps({'status':'PASS_EXTERNAL_PENDING','seconds':time.monotonic()-START}))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-highprecision-mu-root-review/run_once.py", line 8, in req
+    if not x:raise ValueError(m)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: fixed highprecision mu integral attempt failed ValueError('worker exit 1')
+real 1.58
+user 1.00
+sys 0.53
+           103858176  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               44333  page reclaims
+                  27  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                4732  voluntary context switches
+                 743  involuntary context switches
+          3349964287  instructions retired
+          1106540874  cycles elapsed
+            51413616  peak memory footprint

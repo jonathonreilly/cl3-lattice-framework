@@ -683,3 +683,15 @@ A useful new theorem passedindependentreview: root40d03/4549 uses the Poisson op
 Fixed192pairedcompression source109d passed72independent4Dtoy/adverse checks, including a wrong-J source mutant. Truephysicalentry inflation/reader and oncecost/runtime remainunimplemented. Resourcecap198 isnotrankexhaustion;2pole-half/1appendresidualweighting andcoordinateerror areexplicit. No nativepivotrun.
 
 Lastdisk56GiBfree; cleanupinventory underway for completedremotepreservedworktrees. Originaldirty/otherworkercheckout untouched. Continue science; checkpoint isnotstop.
+
+# Physics campaign current SSH status
+
+Updated 2026-09-09T18:35:37.739774+00:00. Active throughSeptember10 10:27:17UTC subject usablequota.36sciencePRs delivered; canonicalgenerator/Poisson correctedsource5cecfca1 pendingfinalreview/graph/PR. No coordinationPR/resetredemption/nativealpha/lawselectionconclusion.
+
+Wardappend completedONCE after7d346981 prereg:5970entries1995rows,5orbits399raw798closed, result82d18d8a,1.66s external92487680B/sampledtree124780544B. Allshape/order/combinedradius/selftrace gatespassed. ROOT_ACCEPTANCE midpointarithmeticonly; purestate/timegeneratoruncomputed. IndependentALL5970-entrysavedcheckerf919/root5a95 isUNLAUNCHED here, bound/reviewed8d63,30s384MiB. Oldf958/core andguardhistorypreserved. No physicalappendreplay.
+
+Originalmu f9e4 FAILED beforecompute.run atunsupportedweightwidthgate2^-140. OnlySTARTED+DISPATCH_FAILURE; noPANELS/RESULT/integral.1.58s external103858176B/tree177930240B. Originalsource/root/receiptstayFAILED. Saveddiagnosisverified3484rawhashes/all1742nodes:130weightwidthsoldgatefail, allt/positivity/orderpass,maxweightwidth1.64757e-39. Separateexplicitrepair9d21/root774d UNLAUNCHED: soleexecutablegate1e-38; dc86review provesmiddleuncertainty<2e-27<unchanged1e-25,target2e-19/arithmeticunchanged. New30s384MiB plusprior1.58=31.58scumulativeallowance. Rootdelta3ab6passedunchangedschema/newpaths. Remoteverificationbeforethisnewprotocol; oldfrozenprotocolneverretry. Mu savedcheckerremainspendingactualresult. Checkpointassemblyinitiallyomittedtwo differentlynamed reviewfolders; precommitassertioncaughtit,bothcopiedandallreviewhashesnowverified.
+
+Canonicalreviewclarifiesfirst-actionGram certifiesleakage forVinside ORIGINALpole/WardF (V=FC). IfVspansnewbarelocalactionvectors, actingagainneedsdistance-twoinputdata. GeneralPoissontheoremanyexactVunchanged. Originalresearchproofbytes/historicalcanonicalversionspreserved. Actualdelta/alphauncomputed. Fixed192readerf436sourcecandidate hasimmutableindex/LRU,k2/Jtranspose,actualscalarinflationand399half/appendlabels; noentry/index/pivotrun,binderNOTREADY.
+
+FourinactivecompletedWTs8070/8069/8068/8067removedafterclean/exactremoteheadverification;onlyignoredregenerablegraph/lock/bytecode. Allremotebrancheskept.56totalremoved,58GiBfree. Currentphysicalclosurezeroabsoluteinputreferences there; originaldirty/otherworker/currentcanonicalWTuntouched. Main e95797cc80 fetched; inspectedfiniteFocknoteandselectedEta/spin2supplierboundaries, stillconditionalsource/action/encoding. No changednativeGaussianpremiseidentified; notfullmainaudit. Lockexpires20:27UTC. Continuephysics.

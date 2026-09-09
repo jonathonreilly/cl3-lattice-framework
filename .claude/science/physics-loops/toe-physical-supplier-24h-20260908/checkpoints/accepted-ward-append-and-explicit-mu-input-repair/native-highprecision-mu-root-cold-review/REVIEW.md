@@ -1,0 +1,11 @@
+# High-precision mu monitor and cost-delta review
+
+PASS prospective monitor/cost/source-schema compatibility. Root freeze65d1196abda77a0b28c7a48590299924fa9421040c0889ae142c08c10d7d9b30 and all6248 worker inputs verified against actual files. Full monitor/schema and actual compute source read. The separately reviewed physical containment theorem is reused, not claimed independently tested by this monitor check. No catalog loader, actual mu integral or native matrix evaluation.
+
+Cost metadata binds the actual accepted cminus receipt hash. Exact rational comparison verifies23.9=10*1.39+10<30. This is explicitly prospective allowance for changed arithmetic and source startup, not a native mu timing. Worker/root30/29/29.5 caps,384MiB, once attempt and absent scientific execution claim agree. Root launches only one childless worker; strict-I-B-S flags, source-byte schema loading, pre/post source/origin pins and ps.3s timeout present. Root clock starts before imports; cleanup kills current worker process group and preserves failure logs/receipt. Whole shell acceptance is separately required.
+
+Schema matches compute's actual67panel/1742node output. It checks the observable mu=E_sqrt_X, M27 bound12^27/(53*8^53), low2^-64 and radius(20/3)(4+4800/961)(4/25)^26. Full saved panel cumulative and middle/partial equality are checked. The middle-width boolean must equal the exact saved width<=1e-25 predicate; final classification requires both this gate and final width<=2e-19. Result time precedes final partial time, then worker and root; all must be finite positive and ordered. INDETERMINATE remains an honest completed output.
+
+Compatibility control uses the actual compute function with synthetic t=1,A=0,unit weights and stub moment0/pi[3,4]. It writes actual67panel/result/partial formats and passes actual root schema (including an INDETERMINATE interval, not a physical value). NaN partial timing is rejected. Stub source and outputs retained here; no native catalog, real moment or physical integral was evaluated. This confirms field accesses and timeline compatibility, not full scientific arithmetic independence.
+
+No material correction requested. Physical source proof remains load-bearing for panel values and final containment; monitor schema is not an independent integrand replay. No launch performed.

@@ -1,0 +1,11 @@
+# Prospective saved mu checker cold review
+
+PASS source-only, runtime35eef089 (full hash in READ_HASHES). Disclosure: this reviewer authored the new mu producer/proof; Zeno authored this checker independently from the reviewed cminus saved-check skeleton. This review does not claim wholly independent physics authorship. No actual saved integral/postcheck or producer call ran.
+
+Complete check/run/protocol/binding read; all runtime pins verified. The three binomial convolutions implement addition of three independent coordinate moments via the exponential-generating product and correctly yield27 values M0..M26. High partial selects M1..M26, with positive M27 upper remainder12^27/(53*8^53). No M27 numerical moment is needed. Ellipse sum4+4800/961,20/3 factor,.16^26, low2^-64, Machin32/10 and final192-bit rounding match the reviewed producer. Full67 cumulative sums, middlewidth gate1e-25 and targetclassification are reconstructed; INDETERMINATE remains an honest classification.
+
+Source proof remains load-bearing for each saved panel: this checker adds its saved values, not independently re-evaluating1742 integrands. The source correctly states that boundary. Currentpanel is saved before parsing/reconstruction; failures retain completed panels/stage/current. Strict flags, verified-byte import, loaded origins, fresh output, exclusive attempt, startup-adjusted29-second signal and outer30/384 proposal are sound. Source readiness cannot call check.run. Binding is genuinely PENDING.
+
+Final actual binding must match literal root acceptance format and include external shell acceptance, result/worker/partial/all67 panels, fullsource/runtime/rawcatalog closure. The current checks cover sampled/root and worker resource records; external shell interpretation is a separate root acceptance premise and must be verified at the affected binding review. It does not presently parse that external receipt itself. Final partial stage/completed-panels semantics can also be bound against the actual producer. These are expected postdata binding tasks, not an execution approval.
+
+Eleven tiny controls passed: degree0..4 convolution versus separate multinomial coefficients, outward rational rounding and malformed interval rejection. No full27-moment native calculation or saved output replay.
