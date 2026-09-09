@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_block38_transaction_grant_total_collision_2026_09_01.py
+runner_sha256: 43314610e0a309f7e6864466b76c98d08ee13fcee03f3facb87f0afd8522ca85
+input_fingerprint_sha256: 15f9b7f4b5a68114d96e1b5269d2ab5cc0580497e1be1dc14be2d51aed6647a0
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 962.26
+status: ok
+----- stdout -----
+CHECK source_and_prereg_binding: PASS — 7/7 frozen source/prereg blobs match
+CHECK singleton_literal_equivalence: PASS — states=652 rows=852 terminals=48
+CHECK clean_footprint_pair_census: PASS — pairs=70200 sameT=312 distinctT=69888 turns=69480 frame_pairs=576
+CHECK post_grant_exclusion: PASS — ordinary T grant disables every intersecting ungranted footprint
+CHECK winner_literal_transcript: PASS — both distinct-trigger winner branches reproduce 96 terminal transcript rows
+CHECK owner_filter: PASS — continuations use one granted head/footprint; absorbed heads cannot form hybrid parents
+CHECK abstract_clean_component_grant_kernel: PASS — 1100 graphs through n=5; 3726 exact maximal-independent-set outcomes
+CHECK disjoint_tensorization: PASS — 2 separated grant terms equal the union of component terms
+CHECK registered_W3_boundary_detected: PASS — aliased H/T histories share one continuation; mutual heads and overlapping pregrants have terms=0/0, absorbed=2, literal/valid pregrants=2/0
+CHECK covariance: PASS — 2976 footprint/inherited-row frame and translation cases
+CHECK permanence: PASS — 1 old Records preserved and exactly one append per jump
+CHECK normalized_embedded_kernel: PASS — terms=1 total_rate=1 branch_rate=1
+CHECK atomless_kernel_preserved: PASS — 5 source-bound rows; atomless source point binds through F->M->B2 without a first-Record parent
+CHECK linear_rate_nonexplosion: PASS — Gamma=1 <= 19|C| bound=19; LV<=19V
+CHECK lambda_nonselection: PASS — clean-sector transaction law preserves four exact response values across 2200 states
+CHECK absorptive_scope: PASS — winner footprints proceed; losing heads remain permanent Records; elastic survival not claimed
+CHECK governance_scope: PASS — candidate-law collision choice; zero audit, obligation, source/gravity, or TOE promotion
+CHECK hostile_mutations: PASS — 20/20 designated semantic mutations reject
+METRICS singleton_states=652 overlap_pairs=70200 graphs=1100 covariance_cases=2976 fingerprint=c01a970601b0603d2958fa468543b5c9541475e1cf25e40e3c2ca008bd643288
+N5_EXECUTION per_element: literal grant/continuation row masses and owner carriers checked
+N5_EXECUTION per_site: ordinary T grants, no-overwrite, and absorbed-head visibility checked
+N5_EXECUTION per_block: complete 18-write footprints and all frame/displacement overlaps checked
+N5_EXECUTION per_mode: RND/DIR, atomless Haar, lambda family, singleton/conflict modes checked
+N5_EXECUTION lattice_wide: analytic finite-support reachable-sector generator/nonexplosion proved; arbitrary-preloaded productive collision totality, homogeneous infinite-density, elastic scattering, source, and gravity NOT EXECUTED
+HARD_IMPACT_GATE: FAIL — the clean-sector census excludes mutual-head and pregrant counterexamples, and ordinary H/T Records do not encode write order
+DECISION: BACKLOG — transaction grants preserve the literal Block38 kernel on the reachable clean sector but do not retire registered W3
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+
