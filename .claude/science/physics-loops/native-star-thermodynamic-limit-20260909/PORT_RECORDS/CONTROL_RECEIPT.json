@@ -1,0 +1,28 @@
+{
+  "checks": 267,
+  "isolated_files": 7,
+  "payload_equal": true,
+  "actual_negative_controls": [
+    {
+      "name": "bad_commutator",
+      "returncode": 1
+    },
+    {
+      "name": "drop_volume_weight",
+      "returncode": 1
+    },
+    {
+      "name": "wrong_local_hop",
+      "returncode": 1
+    },
+    {
+      "CLI": "--bad",
+      "returncode": 2
+    },
+    {
+      "CLI": "bad",
+      "returncode": 2
+    }
+  ],
+  "physical_runs": 0
+}

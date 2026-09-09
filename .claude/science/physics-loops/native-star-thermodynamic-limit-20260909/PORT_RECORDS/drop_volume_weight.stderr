@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt", line 51, in <module>
+    signal.alarm(180);print(json.dumps(check(),indent=2))
+                                       ^^^^^^^
+  File "/private/tmp/toe-native-star-thermodynamic-limit-20260909/.claude/science/physics-loops/native-star-thermodynamic-limit-20260909/PORT_RECORDS/drop_volume_weight.txt", line 46, in check
+    finite=sum(r**n for n in range(start,start+20));tail=r**start/(1-r)
+                                                         ~~~~~~~~^^~~~~
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/fractions.py", line 615, in forward
+    return monomorphic_operator(a, b)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/fractions.py", line 763, in _div
+    raise ZeroDivisionError('Fraction(%s, 0)' % db)
+ZeroDivisionError: Fraction(1, 0)

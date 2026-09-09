@@ -1,0 +1,5 @@
+# Canonical source delta
+
+PASS at SOURCE_FREEZE13c0755ea3a17209c6b558f86a2fb4a5416aff2f11aabc6612e394dad21b67db, note1453b9a02572ac7ac8782e90989005398590ad5757a2638d959af6d8d38e2fdc. Complete canonical note and both runner sources read, seven input hashes verified. The full89fc proof and prior7bdc cold review apply without mathematical change; the explicit canonical domain preserves pure Gaussian AP reference, same-E0 full-active gap, local rather than whole-torus embedding, and unprojected-symbol smoothness.
+
+The267 supporting predicates decompose as15 finite-hop boundary checks,144 exact Clifford commutator entries and108 dyadic tail identities. Gaussian integer arithmetic here is exact for these tiny values despite using complex literals. These controls support specific lemmas and are correctly not presented as a proof of the infinite theorem. Seven-file isolation receipt and three actual semantic/two CLI rejection receipts are retained. Short portable runner emits source/input hashes and preserves conditional-support; no new physical computation by reviewer. Root owns independent isolated replay, graph and final delivery. No source/math blocker found.
