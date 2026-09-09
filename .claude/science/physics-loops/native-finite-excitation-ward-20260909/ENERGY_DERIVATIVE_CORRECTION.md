@@ -1,0 +1,1 @@
+Canonical proof replaces the regularized absolute-value endpoint argument by trace-norm differentiability of the sign-resolvent integral and off-diagonal P derivative. Root requested this before final freeze; original research and pre-correction canonical bytes are preserved. No physical output existed or changed.
