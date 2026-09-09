@@ -1,0 +1,11 @@
+# Return-series root monitor cold review
+
+PASS for run_once.py4013a6034fc0c9a1599015112fb399c25031cd88cc2eb6e8c235b4492208b213 and ROOT_FREEZE44bfe85850c6e9a064805de863a7aa194c5ffba53cbb4061917fd6e8634a8c2d. Complete source read; actual source hash matches inventory. Worker freeze is the reviewed4ec2098e. No launch or physical series was run by this reviewer.
+
+The root uses a startup clock created before bulk imports and subtracts startup from its29.5s timer. One fresh output and exclusive STARTED/stdout/stderr prevent a second attempt. It launches one pinned stdlib worker in a new process group with-I-B-S. Source and runtime hashes/actual loaded origins are checked before and after execution; worker source performs its own reviewed membership/verified-byte loading. Failure and timeout paths kill the worker process group and wait, preserving stdout/stderr, prior partials and failure receipt. The known-PID set is recorded but not individually killed; for this reviewed worker, which creates no children, process-group cleanup suffices. This is not a generic daemonized-descendant supervisor.
+
+Whole-tree RSS includes the root, worker and discovered descendants, converted from ps KiB to bytes, with bounded0.3s ps calls. The gate is sampled384MiB rather than an unsampled memory guarantee. Receipt writing follows timer cancellation; final acceptance must still reconcile the actual external shell time against30s, as explicitly marked pending. The source alone does not establish external receipt acceptance.
+
+The new six-row acceptance is correct: exact fixed s/target/term triples55,101,15,29,232,408; two signed intervals each; exact Fraction width subtraction; positivity of A and negativity of A'; target attainment; no Gram/alpha promotion. Worker completion pins the current result. All row/result/worker times must be finite positive and nested; worker memory and sampled peak must be positive and within budget. The current code does not independently recompute physical series coefficients; that remains a subsequent independent mathematical replay requirement, not a monitor responsibility.
+
+No new source issue found for this fixed contract. Root's reported readiness is not rerun here. No source changes made.

@@ -1,0 +1,23 @@
+--- 
++++ 
+@@ -18,7 +18,7 @@
+ 
+ # Finite-excitation approximation of the native Ward node target
+ 
+-**Status:** conditional-support. Final assembled independent mathematical review is pending. Exact supporting controls are not an audit verdict.
++**Status:** conditional-support. Independent source review passed at the frozen assembled proof; see the packet review history. Exact supporting controls are not an audit verdict.
+ 
+ Use the [infinite node and h/4 gap theorem](NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md), [thermodynamic reference](NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md), [full native dictionary](NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md), and [canonical dispersion](NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md). The model, Hamiltonian and pure Gaussian reference remain supplied. All new gap uses are infinite-volume; no finite-L threshold is inferred.
+ 
+
+--- 
++++ 
+@@ -18,7 +18,7 @@
+     result=namespace['run']();result['input_hashes']=pins
+     result['claim_id']='native_finite_excitation_ward_note_2026-09-09'
+     result['actual_current_surface_status']='conditional-support'
+-    result['review_status']='assembled independent review pending'
++    result['review_status']='source review passed; formal audit deferred'
+     result['elapsed_seconds']=time.monotonic()-start
+     print(json.dumps(result,sort_keys=True,indent=2) if args.json else str(result))
+ if __name__=='__main__': main()

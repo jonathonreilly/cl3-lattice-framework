@@ -9,3 +9,5 @@ LocalGreen interval pilot41ebe completed ONCE. All4fixedjobs attainedwidth1/32 f
 The next positive exactreturnseries pilot4ec2098e is UNLAUNCHED atpreregistration. Fixeds1,2,1/2 eachtarget1e-6,1e-12; plannedterms55,101,15,29,232,408. Sourcec8ee2bd1 and rootmonitor4013a603 review6fb32dd7 pass; actualrootreadinesszero series. Inclusive30s,root29.5s,384MiB sampledwhole-tree,oneattempt,no retry. Every16terms retains actualpartialrationalenclosures. Exactremote verification precedeslaunch. TensorGaussalternative remainsunlaunched.
 
 Analytic commonGram balancedpaired-pivot construction and scalar-to-Gram errorledger pass focusedrootproofreview; actualGram conditioning/residual and Spinphases remainopen. PositiveBtransform reducesdimension prospectively; tightAsmallparameter oracle stillneeded. Allpriorphysicalprotocols remaincompleted.50inactiveWTs removed after usefulremote preservation;58GiBfree. Originaldirty andotherworkercheckouts untouched.
+
+Snapshot files: 75.

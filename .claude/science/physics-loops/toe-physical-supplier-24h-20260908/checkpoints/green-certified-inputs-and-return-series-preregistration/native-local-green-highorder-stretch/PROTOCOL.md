@@ -1,0 +1,7 @@
+# UNLAUNCHED fixed high-order scalar pilot
+
+Exactly four cases in pilot.py, sequential in one stdlib worker, no retry or adaptive redesign. External total30seconds including startup/pins/I/O/postchecks and sampled whole-tree384MiB; prospective root kill29.5s. Root monitor/runtime dispatcher remains to be prepared and independently reviewed before execution. This freeze is implementation/design, not executable launch authority. No physical high-order case has been called.
+
+Each completed case and row progress are persisted. Timeout is a closed failed attempt; targets/cases may not be replaced. Positive-weight interval contributions are rounded outward to64 fractional bits before summation, avoiding rational denominator explosion. Root isolation must use -I-B-S, verified source-byte module loading and pinned actual interpreter/stdlib origins, following the existing coarse pilot contract. The source here has no physical auto-execution on import.
+
+Projected work: N8 or4; even p selected deterministically from analytic error<=target/4. At p12 andN8 this is9216 integrand enclosures, not a measured runtime. Exact root isolation4096 grid checks per rule and rational80bit bisection are included. Existing coarse timings are context only; no speedup or30second completion is promised. Readiness may execute only parser/import and nonphysical controls. Root must freeze actual dispatcher/runtime before a physical call.
