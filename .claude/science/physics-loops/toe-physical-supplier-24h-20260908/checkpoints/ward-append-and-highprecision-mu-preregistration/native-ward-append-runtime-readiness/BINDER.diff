@@ -1,0 +1,26 @@
+--- 
++++ 
+@@ -13,13 +13,22 @@
+   return json.loads(Path(path).read_text())
+  for path,h in pins.items():
+   if sha(path)!=h:raise ValueError('input closure')
++ # Actual combined acceptance requirements, independently fixed after completion.
++ expected={'common_cache':'ACCEPTED_COMMON_CACHE_EXECUTION_AND_FIXED_SAVED_SAMPLES','cminus':'ACCEPTED_CMINUS_EXECUTION_AND_SAVED_RECONCILIATION','a0':'ACCEPTED_EXECUTION_COMPLETE'}
+  # Future reviewed descriptors bind literal acceptance status and its result-hash field.
+  # They may only be populated after actual formats and acceptances exist.
+  for role in ROLES:
+   d=plan['roles'][role]
+-  if not d['accepted_status'] or not d['result_hash_key']:raise ValueError('missing reviewed acceptance descriptor')
++  if d['accepted_status']!=expected[role] or d['result_hash_key']!='result_sha256':raise ValueError('missing reviewed acceptance descriptor')
+   accept=read(d['acceptance']);result=read(d['result'])
+   if accept.get('status')!=d['accepted_status'] or accept.get(d['result_hash_key'])!=sha(d['result']):raise ValueError('accepted '+role)
++  if role in ('common_cache','cminus'):
++   root=read(d['root_acceptance']);post_result=read(accept['post_result_path'])
++   if sha(d['root_acceptance'])!=accept['original_root_acceptance_sha256'] or root['result_sha256']!=sha(d['result']) or sha(accept['post_result_path'])!=accept['post_result_sha256']:raise ValueError('combined post binding')
++   if root['worker_freeze']!=d['worker_freeze']:raise ValueError('reviewed worker source')
++  if role=='a0':
++   if result['rows'][0]['s']!='0' or accept['worker_freeze']!=d['worker_freeze']:raise ValueError('a0 normalization/source')
++  if role=='cminus' and result['status']!='CERTIFIED_TARGET':raise ValueError('cminus precision')
+   if role!='common_cache':
+    obj=result
+    for key in d['interval_path']:obj=obj[key]

@@ -1,0 +1,11 @@
+# Independent Ward root monitor/schema review
+
+PASS ROOT7916c0c7599623089a6cad69d681349a16f1d1d9a9c45d7c92025e20b28aafe3, worker331b603d. Root authored monitor/schema; reviewer authored original append core/worker and previously reviewed actual runtime. That reuse is disclosed. Full root source/schema/authorization read against actual worker output; source pins agree.
+
+The schema independently enumerates1995 row descriptors and5970 entry indices in the same minus/plus/pole/source order as the worker. Each integer interval, self J zero, diagonal sign, accumulated self trace, maximal width, per-row width gate and old-cache-plus-append arithmetic radius is reconciled. The bound old cache is used only as saved input, not recomputed. All five399/798 orbits and exact physical-radius metadata match worker emission. Crucially final PARTIAL stage is gates, not complete, matching unchanged worker; current descriptor is the last self row and orbit_gates matches RESULT.
+
+An actual unchanged worker was invoked with a fabricated binder and stream stub, in a temporary review-only folder. No actual source data or cross formulas were invoked. Its1995 synthetic rows pass the complete root schema. Seven adverse result/partial changes reject (wrong entries,rows,width,radius,pure-state flag,boolean time and wrong partial stage): eight schema cases total. This is a schema/worker compatibility fixture, not a physical Gram mock or arithmetic check.
+
+The launcher uses native intentionally for this new append, with bound runtime/contract/authorization; it does not rerun the old cache. Strict flags, verified schema bytes, source pins before/after, fresh output, once marker, child-group kill/finally,29.5s inclusive root deadline, sampled whole-tree384MiB and zero exit remain correct. Worker29s fits external30s. Result timing inequalities and strict positive RSS are checked; external whole-shell reconciliation remains pending. Hashes/source dependencies are inherited from the independently reviewed331b runtime.
+
+No material source/schema mismatch found. Acceptance will support complete midpoint append-schema reconciliation, not independent recomputation of every cross formula, not a physical pure state and not a time generator. No actual append, binder load or native/fullphysical mock was executed.

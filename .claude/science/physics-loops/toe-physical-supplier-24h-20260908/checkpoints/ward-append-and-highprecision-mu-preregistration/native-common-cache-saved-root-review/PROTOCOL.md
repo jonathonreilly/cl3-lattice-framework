@@ -1,0 +1,1 @@
+One saved-only common-cache schema reconciliation plus128 fixed independent arithmetic samples selected before native output. Fullschema is explicitly reused.30s external/29.5s root/29s worker,384MiB sampled whole-tree/external RSS; source-bound original child-group monitor, once markers/freshoutput/allfailures retained. No cachebuilder or oracle rerun.
