@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "scope": "compact verifier synthetic altered claims only, no native calls",
+  "cases": [
+    {
+      "case": "isolation",
+      "pass": true,
+      "returncode": 0,
+      "seconds": 0.03498866700101644,
+      "stdout": "per_element: compact saved scalar witnesses and ten diagonal lower bounds checked; original numerical arithmetic not re-executed\nper_site: checked and not executed \u2014 no sitewise physical assertion in this block\nper_mode: checked and not executed \u2014 no full-band mode or propagation computation\nper_block: five fixed compression orbits and ten four-pair action outcomes checked against immutable receipts\nlattice_wide: checked and not executed \u2014 supplied-model implementation boundary, no physical no-go\n{\"checks\": 539, \"fresh_first_pairs\": [7, 8, 8, 8, 9], \"native_calls\": 0, \"remote_forensic_retrieval_required\": true, \"saved_physics_replays\": 0, \"status\": \"PASS_COMPACT_BOUNDARY_EVIDENCE\"}\nTOTAL: PASS=539 FAIL=0\n",
+      "stderr": ""
+    },
+    {
+      "case": "leakage_flag",
+      "pass": true,
+      "returncode": 1,
+      "seconds": 0.032964667014312,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-boundary-tiny-40sob7u4/scripts/native_compression_action_boundary_2026_09_09.py\", line 72, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-boundary-tiny-40sob7u4/scripts/native_compression_action_boundary_2026_09_09.py\", line 34, in main\n    require(a['leakage_pass'] is False and a['certified_diagonal_exceeds_optional_target'] is True,'all ten leakage outcomes false')\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-boundary-tiny-40sob7u4/scripts/native_compression_action_boundary_2026_09_09.py\", line 11, in require\n    if not x:raise ValueError(message)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: all ten leakage outcomes false\n"
+    },
+    {
+      "case": "diagonal_lower",
+      "pass": true,
+      "returncode": 1,
+      "seconds": 0.033989125047810376,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-boundary-tiny-zyqcy43q/scripts/native_compression_action_boundary_2026_09_09.py\", line 72, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-boundary-tiny-zyqcy43q/scripts/native_compression_action_boundary_2026_09_09.py\", line 35, in main\n    require(F(a['delta_squared_lower_from_diagonal'])>F(3,10)>F(1,10**12),'certified trial-space diagonal lower')\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-boundary-tiny-zyqcy43q/scripts/native_compression_action_boundary_2026_09_09.py\", line 11, in require\n    if not x:raise ValueError(message)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: certified trial-space diagonal lower\n"
+    },
+    {
+      "case": "fresh_witness",
+      "pass": true,
+      "returncode": 1,
+      "seconds": 0.03400841698748991,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-boundary-tiny-51b8xw6j/scripts/native_compression_action_boundary_2026_09_09.py\", line 72, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-boundary-tiny-51b8xw6j/scripts/native_compression_action_boundary_2026_09_09.py\", line 54, in main\n    require(F(x['exact_image_width_lower_bound'])>F(1,2**39),'exact image obstruction')\n  File \"/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/native-boundary-tiny-51b8xw6j/scripts/native_compression_action_boundary_2026_09_09.py\", line 11, in require\n    if not x:raise ValueError(message)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: exact image obstruction\n"
+    },
+    {
+      "case": "unknown_cli",
+      "pass": true,
+      "returncode": 2,
+      "seconds": 0.02669025002978742,
+      "stdout": "",
+      "stderr": "usage: native_compression_action_boundary_2026_09_09.py [-h] [--verify]\nnative_compression_action_boundary_2026_09_09.py: error: unrecognized arguments: --unknown\n"
+    },
+    {
+      "case": "positional_cli",
+      "pass": true,
+      "returncode": 2,
+      "seconds": 0.026119832997210324,
+      "stdout": "",
+      "stderr": "usage: native_compression_action_boundary_2026_09_09.py [-h] [--verify]\nnative_compression_action_boundary_2026_09_09.py: error: unrecognized arguments: unexpected\n"
+    }
+  ]
+}
