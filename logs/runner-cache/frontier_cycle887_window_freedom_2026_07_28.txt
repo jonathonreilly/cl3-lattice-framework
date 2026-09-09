@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle887_window_freedom_2026_07_28.py
+runner_sha256: 5445ee7a06c066132652a9726147e76b07721edad295c87a007c36551df833bd
+input_fingerprint_sha256: 415dad1bc0e0fe69cb37858df2d04a289d28219bce127a3c4d84fd9c0cd4ad98
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 70.73
+status: ok
+----- stdout -----
+CYCLE 887 -- GBW1 RESIDUAL: THE TRUE SIZE OF THE WINDOW FREEDOM,
+               AND WHETHER ANY AXIOM CLAUSE SELECTS INSIDE IT
+
+[PASS] A_PINS
+    finding: 12 inputs pinned by full path + sha256 + git blob; the two digests named by the block spec (.claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/docs/GATE_B_DYNAMICS_NOTE.md, .claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md, .claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/docs/GBW1_RECORD_WINDOW_CYCLE885_BOUNDED_THEOREM_NOTE_2026-07-28.md, .claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/docs/MINIMAL_AXIOMS_2026-06-29.md, .claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/logs/runner-cache/frontier_cycle885_gbw1_independent_check_2026_07_28.txt, .claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/logs/runner-cache/frontier_cycle885_gbw1_record_window_2026_07_28.txt, .claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json, .claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py.txt, .claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py.txt, docs/GBW1B_PRICED_QUADRATIC_GAUGE_BREAK_CYCLE892_BOUNDED_THEOREM_NOTE_2026-07-28.md, docs/MINIMAL_AXIOMS_2026-06-29.md, scripts/multiplicity_cycle885_configuration_fixture_2026_09_08.py) both match; the Cycle-885 artifacts are read as text/AST/JSON behind an import firewall and are never imported.
+
+[PASS] B_FAMILY
+    finding: The 12-configuration family is rebuilt twice -- independently and by AST-extracting the pinned 885 primary's own NEIGHBOURS, _lcg, build_family, make_config -- and the two agree site-for-site (digest 30edaa3d5ca03c24).  All 8 fields of all 12 per-configuration rows in the pinned 885 runner cache are recomputed and matched (0 mismatches); the digest the 885 CHECKER published for the same family is reproduced (True); and all 7 headline numbers the 885 RECEIPT states about this family are reproduced exactly (True).  Results therefore compose with Cycle 885.
+
+[PASS] C_GROUP
+    finding: O_h^+ rebuilt as the determinant-one signed permutation matrices: order 24, closed, cyclic-order profile {'1': 1, '2': 9, '3': 8, '4': 6}.  The [-1,1]^3 box splits into 4 rotation orbits [1, 6, 8, 12] and the [-2,2]^3 box into 10 orbits [1, 6, 6, 8, 8, 12, 12, 24, 24, 24]; those orbit counts are what sizes the surviving structuring-set freedom below.
+
+[PASS] D_MINKOWSKI_SUFFICIENCY
+    finding: The Minkowski sufficiency theorem is proved structurally and verified exhaustively: all 15 nonempty rotation-invariant structuring sets inside [-1,1]^3 pass REQ1-REQ5 through the full harness (True), and all 1023 inside [-2,2]^3 are certified rotation-invariant on all 24 rotations (1023/1023) with the injectivity lemma verified on every one.  So the surviving freedom already contains 1023 DISTINCT admissible window maps inside a radius-2 box, growing to 2097151 at radius 3 -- not a single dilation scale.  Cycle 885's k-fold dilations are the three members S = ball_0, ball_1, ball_2 of those 1023.
+
+[PASS] E_ESCAPES
+    finding: The fixed-S Minkowski family is a PROPER sub-family.  7 constructions pass every declared requirement and are provably NOT of fixed-S form (erosion_by_ball1, erosion_by_N6, bounding_box, axis_segment_closure, size_keyed_inflation, readout_keyed_inflation, union_box_with_dilation); 1 are refused (depth_keyed_inflation).  The escapes are of three different kinds -- erosions (windows inside the support), variable inflations keyed on a monotone content invariant (record count, scalar readout), and non-Minkowski geometric closures (bounding box, segment closure) -- so the surviving space is not parameterized by a set at all, let alone by one integer.
+
+[PASS] F_ANNULAR_COARSENESS
+    finding: Complete, uncapped: all 1023 radius-2 Minkowski maps give 1023 DISTINCT set-valued behaviours on the 12 configurations but only 113 distinct annular (a, b) behaviours.  The annular chart is strictly coarser by a factor of 1023/113: it collapses 910 genuinely different admissible windows onto readings it cannot tell apart.  So a cycle that prices the residual in (a, b) is pricing a QUOTIENT of the real freedom, and Cycle 885's observation that the annular chart is weaker than the set is here given its exact index.
+
+[PASS] G_CONTAINMENT
+    finding: The actual dilation/erosion witnesses show that the supplied REQ1-REQ5 alone do not force containment. Containment is an additional explicit filter; scalar additivity alone also fails on the typed-label counterexample.
+
+[PASS] H_SELECTORS
+    finding: C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+
+[PASS] I_READOUT_GAUGE
+    finding: 9 of 12 admissible maps are EXACTLY indistinguishable from the support window through the supplied scalar readout: identical I_W on all 12 configurations.  This re-frames the residual.  It is not that a dilation scale must be chosen and then measured; it is that the scale is invisible to this supplied scalar functional. The annular chart does move with it; no physical readout or current axiom consequence follows from that comparison.
+
+[PASS] J_STRESS
+    finding: All 4 impostors are refused by the declared requirements and none is wrongly admitted (0): the non-equivariant inflation fails on 240/288 rotation-only checks, the two shrinking maps fail permanence on 26 and 24 nested pairs, and the constant window has 1 distinct value.  The positive displacement control transports 36/36 windows exactly under a nontrivial rigid motion and detects the one-step decoy on 36/36, so the clean equivariance sheets above are evidence rather than blindness.
+
+[PASS] K_VERDICT
+
+[PASS] L_HONESTY
+    finding: 10/10 honesty checks hold.  The gate is outcome-neutral: it verifies that the cycle reports refutations and absences, not that any particular verdict landed.
+
+---- VERDICT ----
+Q1: PRICED -- freedom sized, closure claim REFUTED
+    SUFFICIENCY holds and is exhaustively verified: every nonempty rotation-invariant structuring set S gives an admissible W_S(R) = supp(R) (+) S, and S |-> W_S is injective on this family, so the count of distinct admissible Minkowski windows is exactly the count of such S: 15 inside a radius-1 box, 1023 inside radius 2, 2097151 inside radius 3, unbounded overall.  NECESSITY FAILS: 7 admissible constructions are provably outside the fixed-S family (erosion_by_ball1, erosion_by_N6, bounding_box, axis_segment_closure, size_keyed_inflation, readout_keyed_inflation, union_box_with_dilation).  The surviving space is therefore NOT the monoid of fixed inflations; it is at least the union of (a) fixed Minkowski inflations, (b) erosions, (c) variable inflations keyed on any inclusion-monotone content invariant, and (d) non-Minkowski monotone equivariant closures, and it is closed under union and under composition with any fixed inflation.
+    Cycle 885 priced the residual as 'a dilation scale + a centre convention'.  A scale is ONE integer.  The computed residual inside a radius-2 box alone is 1023 distinct admissible windows, of which the k-fold dilations are 3.  Even after the only explicit containment filter, the residual is every rotation-invariant S containing the origin -- 512 of them inside radius 2.  The 885 pricing is an undercount, not a wrong sign.
+Q2: Historical selector diagnostics; no global derivation exclusion; Containment explicitly supplied; no derivation from additivity
+    support containment: NO -- REFUTED BY EXPLICIT WITNESS
+    derived: C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+    residual: one no-interaction convention (union-additivity of the window); without it the surviving space is not parameterized by a set
+    residual: one structuring set S with 0 in S; the explicit containment convention bounds it below (containment, supplied) and not above
+    residual: one centre convention, needed only by the annular (a, b) chart
+    gauge: 9 of 12 admissible maps give an identical supplied scalar readout on every configuration.  The window extent is a GAUGE direction of the supplied readout.
+
+---- SELECTOR SHEET ----
+  count_once / no-phantom-registration
+    outcome : C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+    fidelity: C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+  only-records-are-readable + additivity over disjoint records
+    outcome : C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+    fidelity: C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+  minimality / economy
+    outcome : C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+    fidelity: C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+  no privileged site / supplied lattice structure only
+    outcome : C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+    fidelity: C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+  qualification clause (unfixed choices are named conditionals)
+    outcome : C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+    fidelity: C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+  union-additivity of the window (no interaction between records)
+    outcome : C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+    fidelity: C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+  Gate-B dynamics / weak-field texts
+    outcome : C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+    fidelity: C09 correction: containment is an explicit filter here. Additivity alone does not force it for typed records: selecting label-1 sites gives additive 2*#label1 while omitting label-0 sites. Faithful positive calibration of every singleton label would suffice. Fixed-S follows from a supplied union-preserving rule on untyped support sets; lexical phrase guards are historical provenance only.
+
+deterministic_double_build: True
+science_digest: f6b569c8a607e6ac007679e613080f7c64adf9975427cb9024b22fa2856344c8
+receipt: outputs/window_freedom_cycle887_receipt_2026_07_28.json
+elapsed_sec: 70.648
+ALL CERTIFICATES PASS: True
+
+----- stderr -----
+

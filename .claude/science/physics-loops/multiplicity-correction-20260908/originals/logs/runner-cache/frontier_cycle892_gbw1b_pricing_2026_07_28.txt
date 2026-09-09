@@ -1,0 +1,1111 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py
+runner_sha256: 76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 20.963
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 892 -- GBW1b PRICING: is the window extent gauge at quadratic order?
+==============================================================================
+
+[A_PINS]  pass=True
+    pins:
+      - {"path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py", "exists": true, "bytes": 113653, "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32", "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef", "brief_sha256_match": true}
+      - {"path": "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json", "exists": true, "bytes": 16399, "sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997", "git_blob": "553bba1fbd427f27c5606b6f27bd592a91e9c3c0", "brief_sha256_match": true}
+      - {"path": "scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py", "exists": true, "bytes": 80201, "sha256": "d98c0b43c0efa9ef33727180b109e74ffd34c4f805bf498f8cf3babb819c86b1", "git_blob": "00e66110f74051e13af8952d2cb79af214570474", "brief_sha256_match": null}
+      - {"path": "logs/runner-cache/frontier_cycle885_gbw1_record_window_2026_07_28.txt", "exists": true, "bytes": 86705, "sha256": "1e45cb05ace173b01506d57019fb5017e1ea59f65b006c9a741df9fd5489bd82", "git_blob": "4bb8982beb2b9d3eeeaa15aa459fa9e1df461a5e", "brief_sha256_match": null}
+      - {"path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py", "exists": true, "bytes": 94389, "sha256": "139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83", "git_blob": "0fbcf92fc98b0d88d436a05efdc33449c52473db", "brief_sha256_match": true}
+      - {"path": "outputs/window_freedom_cycle887_receipt_2026_07_28.json", "exists": true, "bytes": 156438, "sha256": "d1807305098ae995224118f93b301fc822ef0d6efc9e49c4a16e90d694592f86", "git_blob": "643fb824665d967f770c8939977a0f4010839564", "brief_sha256_match": true}
+      - {"path": "docs/MINIMAL_AXIOMS_2026-06-29.md", "exists": true, "bytes": 8846, "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697", "git_blob": "4a863da1f3f255354839277271a3a69a5c205133", "brief_sha256_match": null}
+      - {"path": "docs/GATE_B_DYNAMICS_NOTE.md", "exists": true, "bytes": 28116, "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271", "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43", "brief_sha256_match": null}
+      - {"path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md", "exists": true, "bytes": 4679, "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116", "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c", "brief_sha256_match": null}
+    pin_count: 9
+    all_exist: true
+    brief_supplied_digests_checked: 4
+    brief_supplied_digests_all_match: true
+    self_sha256: "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f"
+    import_firewall_hits: 0
+    import_firewall_hit_names:
+
+    read_mode: "TEXT / AST / JSON only; no pinned module is imported"
+    ast_nodes_from_885:
+      - "NEIGHBOURS"
+      - "_lcg"
+      - "build_family"
+      - "make_config"
+    ast_nodes_missing_from_885:
+
+    ast_nodes_from_887:
+      - "CONST_CUBE"
+      - "ESCAPE_CATALOGUE"
+      - "EXHIBIT_CAP"
+      - "IDENTITY3"
+      - "NEIGHBOURS"
+      - "ROT24"
+      - "S_BALL1"
+      - "S_BALL2"
+      - "S_FAR"
+      - "S_N6"
+      - "S_NOT_ROT_INV"
+      - "S_ZERO"
+      - "TEST_SHIFTS"
+      - "WEIGHTS"
+      - "_TRUNC_CACHE"
+      - "apply_mat"
+      - "apply_mat_frac"
+      - "axis_segment_closure"
+      - "barycentre"
+      - "bounding_box"
+      - "containment_profile"
+      - "det3"
+      - "erosion"
+      - "evaluate_map"
+      ... 23 more
+    ast_nodes_missing_from_887:
+
+    finding: "9 inputs pinned by full path + sha256 + git blob; the 4 digests the block brief supplies verbatim all match; 4 nodes AST-extracted from the 885 primary and 47 from the 887 primary with 0 missing; firewall hits 0."
+    pass: true
+
+[B_RESTRICTION_GATE]  pass=True
+    role: "888-style RESTRICTION GATE.  Nothing downstream is issued unless this cycle first reproduces the pinned results it is extending: 885's N-certificate rows VALUE FOR VALUE (not merely its 7/12 headline), 885's degenerate-window control, 887's readout-gauge row and admissible set, and the family digest."
+    checks:
+      c885_boundary_rows_value_for_value:
+        pinned_rows: 12
+        mismatches: 0
+        exhibits: []
+        match: true
+      c885_theta_dependent_count:
+        pinned: 7
+        recomputed: 7
+        match: true
+      c885_receipt_witness_states_7_of_12:
+        witness: "Z moves with the kernel phase gain theta on 7/12 configurations, and separating pairs share an additive record readout while differing in Z"
+        recomputed: "7/12"
+        match: true
+      c885_degenerate_control:
+        pinned: 0
+        recomputed: 0
+        match: true
+      c887_admissible_count:
+        pinned: ["axis_segment_closure", "bounding_box", "erosion_by_N6", "erosion_by_ball1", "minkowski_S_N6__origin_absent", "minkowski_S_ball1__885_checker_dilation_k1", "minkowski_S_ball2__885_checker_dilation_k2", "minkowski_S_far_shell__origin_present", "minkowski_S_zero__the_885_support_window", "readout_keyed_inflation", "size_keyed_inflation", "union_box_with_dilation"]
+        recomputed: ["axis_segment_closure", "bounding_box", "erosion_by_N6", "erosion_by_ball1", "minkowski_S_N6__origin_absent", "minkowski_S_ball1__885_checker_dilation_k1", "minkowski_S_ball2__885_checker_dilation_k2", "minkowski_S_far_shell__origin_present", "minkowski_S_zero__the_885_support_window", "readout_keyed_inflation", "size_keyed_inflation", "union_box_with_dilation"]
+        match: true
+      c887_readout_gauge_row:
+        pinned_count: 9
+        recomputed_count: 9
+        pinned_members: ["axis_segment_closure", "bounding_box", "minkowski_S_ball1__885_checker_dilation_k1", "minkowski_S_ball2__885_checker_dilation_k2", "minkowski_S_far_shell__origin_present", "minkowski_S_zero__the_885_support_window", "readout_keyed_inflation", "size_keyed_inflation", "union_box_with_dilation"]
+        recomputed_members: ["axis_segment_closure", "bounding_box", "minkowski_S_ball1__885_checker_dilation_k1", "minkowski_S_ball2__885_checker_dilation_k2", "minkowski_S_far_shell__origin_present", "minkowski_S_zero__the_885_support_window", "readout_keyed_inflation", "size_keyed_inflation", "union_box_with_dilation"]
+        match: true
+      c887_full_readout_per_config:
+        pinned: [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13]
+        recomputed: [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13]
+        match: true
+      family_digest:
+        pinned_887: "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e"
+        literal_cross_check: "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e"
+        recomputed: "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e"
+        match: true
+    all_reproduced: true
+    finding: "8/8 restriction checks reproduce.  885's 12 boundary-shell rows match value-for-value with 0 mismatches, its theta-dependence is 7/12 and its degenerate control 0/12; 887's readout gauge recomputes as 9 of 12; the family digest is 30edaa3d5ca03c24."
+    pass: true
+
+[C_FAMILY]  pass=True
+    source: "AST-extracted from the pinned 885 primary: only its NEIGHBOURS, _lcg, make_config and build_family nodes are executed, in a bare namespace.  No 885 code path other than those four runs."
+    family_size: 12
+    family_digest: "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e"
+    family_digest_matches_887: true
+    rows:
+      - {"name": "single", "records": 1, "readout_I": 1, "barycentre": ["0/1", "0/1", "0/1"], "source_sites": 1, "source_inside_support": 1}
+      - {"name": "pair", "records": 2, "readout_I": 3, "barycentre": ["1/2", "0/1", "0/1"], "source_sites": 2, "source_inside_support": 2}
+      - {"name": "shell1", "records": 6, "readout_I": 12, "barycentre": ["0/1", "0/1", "0/1"], "source_sites": 1, "source_inside_support": 0}
+      - {"name": "ball1", "records": 7, "readout_I": 13, "barycentre": ["0/1", "0/1", "0/1"], "source_sites": 1, "source_inside_support": 1}
+      - {"name": "annulus_1_4", "records": 32, "readout_I": 46, "barycentre": ["0/1", "0/1", "0/1"], "source_sites": 1, "source_inside_support": 0}
+      - {"name": "hollow_annulus", "records": 31, "readout_I": 45, "barycentre": ["-2/31", "0/1", "0/1"], "source_sites": 1, "source_inside_support": 0}
+      - {"name": "Lshape", "records": 5, "readout_I": 7, "barycentre": ["3/5", "3/5", "0/1"], "source_sites": 1, "source_inside_support": 0}
+      - {"name": "plane_square", "records": 9, "readout_I": 13, "barycentre": ["1/1", "1/1", "0/1"], "source_sites": 1, "source_inside_support": 1}
+      - {"name": "chain", "records": 5, "readout_I": 7, "barycentre": ["2/1", "0/1", "0/1"], "source_sites": 1, "source_inside_support": 1}
+      - {"name": "sparse_a", "records": 9, "readout_I": 15, "barycentre": ["-4/3", "2/9", "-4/9"], "source_sites": 1, "source_inside_support": 0}
+      - {"name": "sparse_b", "records": 9, "readout_I": 13, "barycentre": ["-13/9", "-4/9", "-7/9"], "source_sites": 1, "source_inside_support": 1}
+      - {"name": "offcentre_ball", "records": 7, "readout_I": 13, "barycentre": ["2/1", "-1/1", "1/1"], "source_sites": 1, "source_inside_support": 1}
+    distinct_support_sizes:
+      - 1
+      - 2
+      - 5
+      - 6
+      - 7
+      - 9
+      - 31
+      - 32
+    finding: "12 configurations, digest 30edaa3d5ca03c24, identical to the digest 887 published for the same AST extraction.  Results compose with both pinned cycles."
+    pass: true
+
+[D_CATALOGUE]  pass=True
+    source: "AST-extracted from the pinned 887 primary: its structuring sets, morphological maps, impostors, REQ1-REQ5 harness and containment profile are executed as nodes, never imported."
+    catalogue_size: 17
+    every_named_map_evaluated: true
+    per_map:
+      minkowski_S_zero__the_885_support_window:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 12
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [1, 2, 6, 7, 32, 31, 5, 9, 5, 9, 9, 7]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      minkowski_S_ball1__885_checker_dilation_k1:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 11
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [7, 12, 25, 25, 87, 86, 26, 39, 27, 52, 46, 25]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+      minkowski_S_ball2__885_checker_dilation_k2:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 11
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [25, 38, 63, 63, 177, 176, 72, 97, 77, 135, 119, 63]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 1]
+      minkowski_S_N6__origin_absent:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 12
+        contains_support_on: 8
+        of_configs: 12
+        containment_holds: false
+        window_sizes: [6, 12, 19, 25, 87, 86, 26, 39, 27, 47, 45, 25]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+      minkowski_S_far_shell__origin_present:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 12
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [7, 14, 36, 43, 153, 151, 30, 51, 29, 58, 56, 43]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1]
+      erosion_by_ball1:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 3
+        contains_support_on: 0
+        of_configs: 12
+        containment_holds: false
+        window_sizes: [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      erosion_by_N6:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 3
+        contains_support_on: 0
+        of_configs: 12
+        containment_holds: false
+        window_sizes: [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      bounding_box:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 10
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [1, 2, 27, 27, 125, 100, 9, 9, 5, 75, 40, 27]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      axis_segment_closure:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 11
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [1, 2, 7, 7, 33, 32, 5, 9, 5, 13, 12, 7]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      size_keyed_inflation:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 11
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [1, 2, 25, 25, 87, 86, 26, 39, 27, 52, 46, 25]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+      readout_keyed_inflation:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 11
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [1, 2, 25, 25, 87, 86, 26, 39, 27, 52, 46, 25]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+      depth_keyed_inflation:
+        admissible_REQ1_REQ5: false
+        equivariance_failures: 0
+        permanence_failures: 2
+        distinct_set_values: 12
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [1, 2, 6, 7, 87, 86, 26, 39, 27, 52, 46, 7]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+      union_box_with_dilation:
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        distinct_set_values: 11
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [7, 12, 33, 33, 131, 114, 27, 39, 27, 88, 57, 33]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+      IMPOSTOR_nonequivariant_inflation:
+        admissible_REQ1_REQ5: false
+        equivariance_failures: 1200
+        permanence_failures: 0
+        distinct_set_values: 11
+        contains_support_on: 12
+        of_configs: 12
+        containment_holds: true
+        window_sizes: [2, 3, 12, 12, 46, 45, 8, 12, 6, 17, 16, 12]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+      IMPOSTOR_extremal_shell_nonmonotone:
+        admissible_REQ1_REQ5: false
+        equivariance_failures: 0
+        permanence_failures: 26
+        distinct_set_values: 11
+        contains_support_on: 3
+        of_configs: 12
+        containment_holds: false
+        window_sizes: [1, 2, 6, 6, 6, 4, 2, 4, 2, 1, 1, 6]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      IMPOSTOR_boundary_shell_885_W1b:
+        admissible_REQ1_REQ5: false
+        equivariance_failures: 0
+        permanence_failures: 24
+        distinct_set_values: 12
+        contains_support_on: 0
+        of_configs: 12
+        containment_holds: false
+        window_sizes: [6, 10, 19, 18, 55, 55, 21, 30, 22, 43, 37, 18]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+      IMPOSTOR_constant_cube:
+        admissible_REQ1_REQ5: false
+        equivariance_failures: 1152
+        permanence_failures: 0
+        distinct_set_values: 1
+        contains_support_on: 4
+        of_configs: 12
+        containment_holds: false
+        window_sizes: [27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27]
+        sites_outside_the_box: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    admissible:
+      - "axis_segment_closure"
+      - "bounding_box"
+      - "erosion_by_N6"
+      - "erosion_by_ball1"
+      - "minkowski_S_N6__origin_absent"
+      - "minkowski_S_ball1__885_checker_dilation_k1"
+      - "minkowski_S_ball2__885_checker_dilation_k2"
+      - "minkowski_S_far_shell__origin_present"
+      - "minkowski_S_zero__the_885_support_window"
+      - "readout_keyed_inflation"
+      - "size_keyed_inflation"
+      - "union_box_with_dilation"
+    containment_holding:
+      - "axis_segment_closure"
+      - "bounding_box"
+      - "minkowski_S_ball1__885_checker_dilation_k1"
+      - "minkowski_S_ball2__885_checker_dilation_k2"
+      - "minkowski_S_far_shell__origin_present"
+      - "minkowski_S_zero__the_885_support_window"
+      - "readout_keyed_inflation"
+      - "size_keyed_inflation"
+      - "union_box_with_dilation"
+    excluded_by_the_containment_filter:
+      - "erosion_by_N6"
+      - "erosion_by_ball1"
+      - "minkowski_S_N6__origin_absent"
+    refused_as_non_admissible:
+      - "IMPOSTOR_boundary_shell_885_W1b"
+      - "IMPOSTOR_constant_cube"
+      - "IMPOSTOR_extremal_shell_nonmonotone"
+      - "IMPOSTOR_nonequivariant_inflation"
+      - "depth_keyed_inflation"
+    windows_clipped_by_the_box:
+      - "minkowski_S_ball1__885_checker_dilation_k1"
+      - "minkowski_S_ball2__885_checker_dilation_k2"
+      - "minkowski_S_far_shell__origin_present"
+      - "readout_keyed_inflation"
+      - "size_keyed_inflation"
+      - "union_box_with_dilation"
+    clipping_note: "Z sums only over window sites inside the amplitude box |x|_inf <= 4, exactly as the pinned 885 primary does.  Any window site beyond the box carries no computed amplitude and is reported per map so the clipping is visible rather than silent."
+    finding: "17 named maps evaluated, 12 admissible under REQ1-REQ5, 9 of those hold containment on all 12 configurations.  3 admissible maps are EXCLUDED by the containment filter (erosion_by_N6, erosion_by_ball1, minkowski_S_N6__origin_absent) and 5 maps are refused as non-admissible."
+    pass: true
+
+[E_AMPLITUDE_CONFINEMENT]  pass=True
+    question: "Where does the propagated amplitude actually live?  The collapse of GBW1b's window half would follow if amplitude were CONFINED to the barrier, because then every containment-holding window would read the same amplitude set.  That is a computation, not an assumption, and it is run here before the partition."
+    theorem_C892_T1: "AMPLITUDE EXPULSION.  The propagation barrier is B(R) = supp(R) and the walk may not step ONTO a blocked site.  Therefore every site reachable in one or more steps lies OUTSIDE supp(R), and the only amplitude that can sit inside supp(R) is the SEED, carried by whichever source sites happen to be records.  Formally: supp(A_{R,theta}) is contained in src(R) union (Box \\ supp(R)), and supp(A) intersect supp(R) is contained in src(R).  The hypotheses are exactly: a finite box, a barrier equal to supp(R), and a walk blocked ON the barrier rather than at it."
+    computed_on_all_configs:
+      configs: 12
+      configs_where_reach_meets_support: 0
+      configs_where_amplitude_inside_support_exceeds_the_seed: 0
+      configs_whose_walk_is_frozen_at_the_seed: 5
+    rows:
+      - {"config": "single", "support_size": 1, "source_sites": 1, "source_inside_support": 1, "reachable_sites": 128, "reach_meets_support": 0, "amplitude_sites_total": 129, "amplitude_sites_inside_support": 1, "amplitude_sites_outside_support": 128, "walk_is_frozen": false}
+      - {"config": "pair", "support_size": 2, "source_sites": 2, "source_inside_support": 2, "reachable_sites": 167, "reach_meets_support": 0, "amplitude_sites_total": 169, "amplitude_sites_inside_support": 2, "amplitude_sites_outside_support": 167, "walk_is_frozen": false}
+      - {"config": "shell1", "support_size": 6, "source_sites": 1, "source_inside_support": 0, "reachable_sites": 0, "reach_meets_support": 0, "amplitude_sites_total": 1, "amplitude_sites_inside_support": 0, "amplitude_sites_outside_support": 1, "walk_is_frozen": true}
+      - {"config": "ball1", "support_size": 7, "source_sites": 1, "source_inside_support": 1, "reachable_sites": 0, "reach_meets_support": 0, "amplitude_sites_total": 1, "amplitude_sites_inside_support": 1, "amplitude_sites_outside_support": 0, "walk_is_frozen": true}
+      - {"config": "annulus_1_4", "support_size": 32, "source_sites": 1, "source_inside_support": 0, "reachable_sites": 0, "reach_meets_support": 0, "amplitude_sites_total": 1, "amplitude_sites_inside_support": 0, "amplitude_sites_outside_support": 1, "walk_is_frozen": true}
+      - {"config": "hollow_annulus", "support_size": 31, "source_sites": 1, "source_inside_support": 0, "reachable_sites": 0, "reach_meets_support": 0, "amplitude_sites_total": 1, "amplitude_sites_inside_support": 0, "amplitude_sites_outside_support": 1, "walk_is_frozen": true}
+      - {"config": "Lshape", "support_size": 5, "source_sites": 1, "source_inside_support": 0, "reachable_sites": 109, "reach_meets_support": 0, "amplitude_sites_total": 109, "amplitude_sites_inside_support": 0, "amplitude_sites_outside_support": 109, "walk_is_frozen": false}
+      - {"config": "plane_square", "support_size": 9, "source_sites": 1, "source_inside_support": 1, "reachable_sites": 92, "reach_meets_support": 0, "amplitude_sites_total": 93, "amplitude_sites_inside_support": 1, "amplitude_sites_outside_support": 92, "walk_is_frozen": false}
+      - {"config": "chain", "support_size": 5, "source_sites": 1, "source_inside_support": 1, "reachable_sites": 116, "reach_meets_support": 0, "amplitude_sites_total": 117, "amplitude_sites_inside_support": 1, "amplitude_sites_outside_support": 116, "walk_is_frozen": false}
+      - {"config": "sparse_a", "support_size": 9, "source_sites": 1, "source_inside_support": 0, "reachable_sites": 117, "reach_meets_support": 0, "amplitude_sites_total": 117, "amplitude_sites_inside_support": 0, "amplitude_sites_outside_support": 117, "walk_is_frozen": false}
+      - {"config": "sparse_b", "support_size": 9, "source_sites": 1, "source_inside_support": 1, "reachable_sites": 112, "reach_meets_support": 0, "amplitude_sites_total": 113, "amplitude_sites_inside_support": 1, "amplitude_sites_outside_support": 112, "walk_is_frozen": false}
+      - {"config": "offcentre_ball", "support_size": 7, "source_sites": 1, "source_inside_support": 1, "reachable_sites": 0, "reach_meets_support": 0, "amplitude_sites_total": 1, "amplitude_sites_inside_support": 1, "amplitude_sites_outside_support": 0, "walk_is_frozen": true}
+    consequence_for_the_collapse: "The collapse hypothesis is REFUTED at its root.  Amplitude is not confined to the barrier; it is EXPELLED from it.  Containment-holding windows all contain supp(R), where there is (almost) no amplitude, and they differ exactly on the non-record sites, where ALL of the propagated amplitude lives.  So the window extent cannot be gauge at quadratic order unless every admissible containment-holding window happens to miss the reachable set entirely -- which certificate G tests directly."
+    finding: "On 12/12 configurations the reachable set is DISJOINT from the support (0 meet it), and on 12/12 the amplitude inside the support is exactly the seed (0 exceed it).  5 configurations freeze the walk entirely: their source's every neighbour is a record, so amplitude never leaves the seed."
+    pass: true
+
+[F_BOTH_ORDERS]  pass=True
+    theta_grid:
+      - "1/2"
+      - "1/3"
+      - "2/5"
+      - "1/7"
+      - "3/8"
+      - "5/6"
+    theta_grid_size: 6
+    theta_grid_contains_the_six_required: true
+    windows_evaluated:
+      - "axis_segment_closure"
+      - "bounding_box"
+      - "minkowski_S_ball1__885_checker_dilation_k1"
+      - "minkowski_S_ball2__885_checker_dilation_k2"
+      - "minkowski_S_far_shell__origin_present"
+      - "minkowski_S_zero__the_885_support_window"
+      - "readout_keyed_inflation"
+      - "size_keyed_inflation"
+      - "union_box_with_dilation"
+    cells_computed: 648
+    LINEAR_order:
+      quantity: "I_W(R) -- the axiom-level windowed scalar readout"
+      full_readout_per_config:
+        - 1
+        - 3
+        - 12
+        - 13
+        - 46
+        - 45
+        - 7
+        - 13
+        - 7
+        - 15
+        - 13
+        - 13
+      per_map:
+        axis_segment_closure: {"I_W_per_config": [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13], "equals_full_readout": true}
+        bounding_box: {"I_W_per_config": [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13], "equals_full_readout": true}
+        minkowski_S_ball1__885_checker_dilation_k1: {"I_W_per_config": [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13], "equals_full_readout": true}
+        minkowski_S_ball2__885_checker_dilation_k2: {"I_W_per_config": [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13], "equals_full_readout": true}
+        minkowski_S_far_shell__origin_present: {"I_W_per_config": [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13], "equals_full_readout": true}
+        minkowski_S_zero__the_885_support_window: {"I_W_per_config": [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13], "equals_full_readout": true}
+        readout_keyed_inflation: {"I_W_per_config": [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13], "equals_full_readout": true}
+        size_keyed_inflation: {"I_W_per_config": [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13], "equals_full_readout": true}
+        union_box_with_dilation: {"I_W_per_config": [1, 3, 12, 13, 46, 45, 7, 13, 7, 15, 13, 13], "equals_full_readout": true}
+      classes: 1
+      class_members:
+        - ["axis_segment_closure", "bounding_box", "minkowski_S_ball1__885_checker_dilation_k1", "minkowski_S_ball2__885_checker_dilation_k2", "minkowski_S_far_shell__origin_present", "minkowski_S_zero__the_885_support_window", "readout_keyed_inflation", "size_keyed_inflation", "union_box_with_dilation"]
+      all_identical: true
+    QUADRATIC_order:
+      quantity: "Z(cfg, theta, W) = sum_{x in W} |A(x)|^2"
+      classes: 8
+      class_members:
+        - ["axis_segment_closure"]
+        - ["bounding_box"]
+        - ["minkowski_S_ball1__885_checker_dilation_k1"]
+        - ["minkowski_S_ball2__885_checker_dilation_k2"]
+        - ["minkowski_S_far_shell__origin_present"]
+        - ["minkowski_S_zero__the_885_support_window"]
+        - ["readout_keyed_inflation", "size_keyed_inflation"]
+        - ["union_box_with_dilation"]
+      all_identical: false
+    Z_table:
+      axis_segment_closure:
+        single: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        pair: {"1/2": "1/2", "1/3": "1/2", "2/5": "1/2", "1/7": "1/2", "3/8": "1/2", "5/6": "1/2"}
+        shell1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        ball1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        annulus_1_4: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        hollow_annulus: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        Lshape: {"1/2": "0/1", "1/3": "0/1", "2/5": "0/1", "1/7": "0/1", "3/8": "0/1", "5/6": "0/1"}
+        plane_square: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        chain: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        sparse_a: {"1/2": "32966/25", "1/3": "35234/25", "2/5": "1153766/841", "1/7": "937874/625", "3/8": "7385558/5329", "5/6": "4511846/3721"}
+        sparse_b: {"1/2": "7617/25", "1/3": "8233/25", "2/5": "268401/841", "1/7": "221313/625", "3/8": "1721017/5329", "5/6": "1026481/3721"}
+        offcentre_ball: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+      bounding_box:
+        single: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        pair: {"1/2": "1/2", "1/3": "1/2", "2/5": "1/2", "1/7": "1/2", "3/8": "1/2", "5/6": "1/2"}
+        shell1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        ball1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        annulus_1_4: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        hollow_annulus: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        Lshape: {"1/2": "2230549/625", "1/3": "2427949/625", "2/5": "2645877493/707281", "1/7": "1685038429/390625", "3/8": "107701166725/28398241", "5/6": "46238630773/13845841"}
+        plane_square: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        chain: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        sparse_a: {"1/2": "9906072/625", "1/3": "10561272/625", "2/5": "11633219736/707281", "1/7": "7068974712/390625", "3/8": "471792768792/28398241", "5/6": "204988447896/13845841"}
+        sparse_b: {"1/2": "111192/25", "1/3": "119508/25", "2/5": "3904728/841", "1/7": "3196788/625", "3/8": "25016280/5329", "5/6": "15102168/3721"}
+        offcentre_ball: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+      minkowski_S_ball1__885_checker_dilation_k1:
+        single: {"1/2": "11569/25", "1/3": "13081/25", "2/5": "419041/841", "1/7": "365041/625", "3/8": "2705065/5329", "5/6": "1458721/3721"}
+        pair: {"1/2": "60193/50", "1/3": "14521/10", "2/5": "65817869/48778", "1/7": "10672937/6250", "3/8": "1079673441/778034", "5/6": "397366541/453962"}
+        shell1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        ball1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        annulus_1_4: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        hollow_annulus: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        Lshape: {"1/2": "2168199/625", "1/3": "2362799/625", "2/5": "2573458983/707281", "1/7": "1642559679/390625", "3/8": "104773808471/28398241", "5/6": "44929917863/13845841"}
+        plane_square: {"1/2": "30041/25", "1/3": "33009/25", "2/5": "1069193/841", "1/7": "899849/625", "3/8": "6872721/5329", "5/6": "3954633/3721"}
+        chain: {"1/2": "67817/25", "1/3": "72633/25", "2/5": "2376473/841", "1/7": "1936913/625", "3/8": "15217185/5329", "5/6": "9255513/3721"}
+        sparse_a: {"1/2": "4237222/625", "1/3": "4585122/625", "2/5": "5013915622/707281", "1/7": "3140720962/390625", "3/8": "203861296134/28398241", "5/6": "87366618342/13845841"}
+        sparse_b: {"1/2": "58951/25", "1/3": "63599/25", "2/5": "2074903/841", "1/7": "1706839/625", "3/8": "13300751/5329", "5/6": "7965143/3721"}
+        offcentre_ball: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+      minkowski_S_ball2__885_checker_dilation_k2:
+        single: {"1/2": "18415/1", "1/3": "19591/1", "2/5": "16067623/841", "1/7": "519343/25", "3/8": "102781087/5329", "5/6": "63404263/3721"}
+        pair: {"1/2": "178543/25", "1/3": "197981/25", "2/5": "185446571/24389", "1/7": "27099161/3125", "3/8": "3004167983/389017", "5/6": "1369695299/226981"}
+        shell1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        ball1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        annulus_1_4: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        hollow_annulus: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        Lshape: {"1/2": "7615999/625", "1/3": "8119999/625", "2/5": "8944007071/707281", "1/7": "5435289679/390625", "3/8": "362732153551/28398241", "5/6": "157600339231/13845841"}
+        plane_square: {"1/2": "51299/25", "1/3": "55051/25", "2/5": "1799795/841", "1/7": "1470611/625", "3/8": "11528011/5329", "5/6": "6982195/3721"}
+        chain: {"1/2": "188073/25", "1/3": "201177/25", "2/5": "6585561/841", "1/7": "5358897/625", "3/8": "42161121/5329", "5/6": "25711641/3721"}
+        sparse_a: {"1/2": "10313022/625", "1/3": "10984322/625", "2/5": "12104440446/707281", "1/7": "7343500962/390625", "3/8": "490825942430/28398241", "5/6": "213586599806/13845841"}
+        sparse_b: {"1/2": "252813/25", "1/3": "269837/25", "2/5": "8840829/841", "1/7": "7173957/625", "3/8": "56580773/5329", "5/6": "34665149/3721"}
+        offcentre_ball: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+      minkowski_S_far_shell__origin_present:
+        single: {"1/2": "70927/25", "1/3": "74623/25", "2/5": "2458975/841", "1/7": "1958503/625", "3/8": "15703063/5329", "5/6": "9913375/3721"}
+        pair: {"1/2": "148697/125", "1/3": "161859/125", "2/5": "30547745/24389", "1/7": "21782359/15625", "3/8": "493475237/389017", "5/6": "234456801/226981"}
+        shell1: {"1/2": "0/1", "1/3": "0/1", "2/5": "0/1", "1/7": "0/1", "3/8": "0/1", "5/6": "0/1"}
+        ball1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        annulus_1_4: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        hollow_annulus: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        Lshape: {"1/2": "53622/25", "1/3": "56478/25", "2/5": "1860246/841", "1/7": "1483758/625", "3/8": "11881542/5329", "5/6": "7483926/3721"}
+        plane_square: {"1/2": "17883/25", "1/3": "18667/25", "2/5": "617067/841", "1/7": "486387/625", "3/8": "3935875/5329", "5/6": "2525227/3721"}
+        chain: {"1/2": "34117/25", "1/3": "36133/25", "2/5": "1187509/841", "1/7": "954013/625", "3/8": "7591069/5329", "5/6": "4727029/3721"}
+        sparse_a: {"1/2": "192138/25", "1/3": "202862/25", "2/5": "6675306/841", "1/7": "5341182/625", "3/8": "42651386/5329", "5/6": "26730986/3721"}
+        sparse_b: {"1/2": "96439/25", "1/3": "102711/25", "2/5": "3368071/841", "1/7": "2725471/625", "3/8": "21548415/5329", "5/6": "13262151/3721"}
+        offcentre_ball: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+      minkowski_S_zero__the_885_support_window:
+        single: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        pair: {"1/2": "1/2", "1/3": "1/2", "2/5": "1/2", "1/7": "1/2", "3/8": "1/2", "5/6": "1/2"}
+        shell1: {"1/2": "0/1", "1/3": "0/1", "2/5": "0/1", "1/7": "0/1", "3/8": "0/1", "5/6": "0/1"}
+        ball1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        annulus_1_4: {"1/2": "0/1", "1/3": "0/1", "2/5": "0/1", "1/7": "0/1", "3/8": "0/1", "5/6": "0/1"}
+        hollow_annulus: {"1/2": "0/1", "1/3": "0/1", "2/5": "0/1", "1/7": "0/1", "3/8": "0/1", "5/6": "0/1"}
+        Lshape: {"1/2": "0/1", "1/3": "0/1", "2/5": "0/1", "1/7": "0/1", "3/8": "0/1", "5/6": "0/1"}
+        plane_square: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        chain: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        sparse_a: {"1/2": "0/1", "1/3": "0/1", "2/5": "0/1", "1/7": "0/1", "3/8": "0/1", "5/6": "0/1"}
+        sparse_b: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        offcentre_ball: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+      readout_keyed_inflation:
+        single: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        pair: {"1/2": "1/2", "1/3": "1/2", "2/5": "1/2", "1/7": "1/2", "3/8": "1/2", "5/6": "1/2"}
+        shell1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        ball1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        annulus_1_4: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        hollow_annulus: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        Lshape: {"1/2": "2168199/625", "1/3": "2362799/625", "2/5": "2573458983/707281", "1/7": "1642559679/390625", "3/8": "104773808471/28398241", "5/6": "44929917863/13845841"}
+        plane_square: {"1/2": "30041/25", "1/3": "33009/25", "2/5": "1069193/841", "1/7": "899849/625", "3/8": "6872721/5329", "5/6": "3954633/3721"}
+        chain: {"1/2": "67817/25", "1/3": "72633/25", "2/5": "2376473/841", "1/7": "1936913/625", "3/8": "15217185/5329", "5/6": "9255513/3721"}
+        sparse_a: {"1/2": "4237222/625", "1/3": "4585122/625", "2/5": "5013915622/707281", "1/7": "3140720962/390625", "3/8": "203861296134/28398241", "5/6": "87366618342/13845841"}
+        sparse_b: {"1/2": "58951/25", "1/3": "63599/25", "2/5": "2074903/841", "1/7": "1706839/625", "3/8": "13300751/5329", "5/6": "7965143/3721"}
+        offcentre_ball: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+      size_keyed_inflation:
+        single: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        pair: {"1/2": "1/2", "1/3": "1/2", "2/5": "1/2", "1/7": "1/2", "3/8": "1/2", "5/6": "1/2"}
+        shell1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        ball1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        annulus_1_4: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        hollow_annulus: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        Lshape: {"1/2": "2168199/625", "1/3": "2362799/625", "2/5": "2573458983/707281", "1/7": "1642559679/390625", "3/8": "104773808471/28398241", "5/6": "44929917863/13845841"}
+        plane_square: {"1/2": "30041/25", "1/3": "33009/25", "2/5": "1069193/841", "1/7": "899849/625", "3/8": "6872721/5329", "5/6": "3954633/3721"}
+        chain: {"1/2": "67817/25", "1/3": "72633/25", "2/5": "2376473/841", "1/7": "1936913/625", "3/8": "15217185/5329", "5/6": "9255513/3721"}
+        sparse_a: {"1/2": "4237222/625", "1/3": "4585122/625", "2/5": "5013915622/707281", "1/7": "3140720962/390625", "3/8": "203861296134/28398241", "5/6": "87366618342/13845841"}
+        sparse_b: {"1/2": "58951/25", "1/3": "63599/25", "2/5": "2074903/841", "1/7": "1706839/625", "3/8": "13300751/5329", "5/6": "7965143/3721"}
+        offcentre_ball: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+      union_box_with_dilation:
+        single: {"1/2": "11569/25", "1/3": "13081/25", "2/5": "419041/841", "1/7": "365041/625", "3/8": "2705065/5329", "5/6": "1458721/3721"}
+        pair: {"1/2": "60193/50", "1/3": "14521/10", "2/5": "65817869/48778", "1/7": "10672937/6250", "3/8": "1079673441/778034", "5/6": "397366541/453962"}
+        shell1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        ball1: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        annulus_1_4: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        hollow_annulus: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+        Lshape: {"1/2": "3142699/625", "1/3": "3393299/625", "2/5": "3713454667/707281", "1/7": "2321822179/390625", "3/8": "150939340475/28398241", "5/6": "65067389387/13845841"}
+        plane_square: {"1/2": "30041/25", "1/3": "33009/25", "2/5": "1069193/841", "1/7": "899849/625", "3/8": "6872721/5329", "5/6": "3954633/3721"}
+        chain: {"1/2": "67817/25", "1/3": "72633/25", "2/5": "2376473/841", "1/7": "1936913/625", "3/8": "15217185/5329", "5/6": "9255513/3721"}
+        sparse_a: {"1/2": "9912947/625", "1/3": "10568147/625", "2/5": "11640999827/707281", "1/7": "7073271587/390625", "3/8": "472105149443/28398241", "5/6": "205140752147/13845841"}
+        sparse_b: {"1/2": "115991/25", "1/3": "124559/25", "2/5": "4071143/841", "1/7": "3329399/625", "3/8": "26079071/5329", "5/6": "15772583/3721"}
+        offcentre_ball: {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1", "1/7": "1/1", "3/8": "1/1", "5/6": "1/1"}
+    both_orders_computed: true
+    finding: "Both orders are computed and reported.  At LINEAR order the 9 containment-holding windows fall into 1 class(es); at QUADRATIC order the same windows fall into 8 class(es) over 648 exactly computed cells."
+    pass: true
+
+[G_Q1_VERDICT]  pass=True
+    question: "Q1.  Is the window EXTENT still gauge at quadratic order?  The linear readout cannot see it (887).  Z is quadratic."
+    verdict: "NOT GAUGE -- the extent is LOAD-BEARING at quadratic order"
+    linear_classes: 1
+    quadratic_classes: 8
+    gauge_breaks_between_the_orders: true
+    partition:
+      - ["axis_segment_closure"]
+      - ["bounding_box"]
+      - ["minkowski_S_ball1__885_checker_dilation_k1"]
+      - ["minkowski_S_ball2__885_checker_dilation_k2"]
+      - ["minkowski_S_far_shell__origin_present"]
+      - ["minkowski_S_zero__the_885_support_window"]
+      - ["readout_keyed_inflation", "size_keyed_inflation"]
+      - ["union_box_with_dilation"]
+    pairs_compared: 36
+    pairs_that_separate: 35
+    pairs_that_do_not_separate: 1
+    window_pairs_that_are_SET_IDENTICAL_on_this_family:
+      - ["readout_keyed_inflation", "size_keyed_inflation"]
+    separations:
+      axis_segment_closure | bounding_box:
+        separating_cells: 18
+        configs: ["Lshape", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "Lshape", "theta": "1/2", "Z_axis_segment_closure": "0/1", "Z_bounding_box": "2230549/625"}, {"config": "Lshape", "theta": "1/3", "Z_axis_segment_closure": "0/1", "Z_bounding_box": "2427949/625"}, {"config": "Lshape", "theta": "2/5", "Z_axis_segment_closure": "0/1", "Z_bounding_box": "2645877493/707281"}, {"config": "Lshape", "theta": "1/7", "Z_axis_segment_closure": "0/1", "Z_bounding_box": "1685038429/390625"}, {"config": "Lshape", "theta": "3/8", "Z_axis_segment_closure": "0/1", "Z_bounding_box": "107701166725/28398241"}, {"config": "Lshape", "theta": "5/6", "Z_axis_segment_closure": "0/1", "Z_bounding_box": "46238630773/13845841"}]
+      axis_segment_closure | minkowski_S_ball1__885_checker_dilation_k1:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "11569/25"}, {"config": "single", "theta": "1/3", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "13081/25"}, {"config": "single", "theta": "2/5", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "419041/841"}, {"config": "single", "theta": "1/7", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "365041/625"}, {"config": "single", "theta": "3/8", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2705065/5329"}, {"config": "single", "theta": "5/6", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "1458721/3721"}]
+      axis_segment_closure | minkowski_S_ball2__885_checker_dilation_k2:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "18415/1"}, {"config": "single", "theta": "1/3", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "19591/1"}, {"config": "single", "theta": "2/5", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "16067623/841"}, {"config": "single", "theta": "1/7", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "519343/25"}, {"config": "single", "theta": "3/8", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "102781087/5329"}, {"config": "single", "theta": "5/6", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "63404263/3721"}]
+      axis_segment_closure | minkowski_S_far_shell__origin_present:
+        separating_cells: 48
+        configs: ["Lshape", "chain", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_far_shell__origin_present": "70927/25"}, {"config": "single", "theta": "1/3", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_far_shell__origin_present": "74623/25"}, {"config": "single", "theta": "2/5", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_far_shell__origin_present": "2458975/841"}, {"config": "single", "theta": "1/7", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_far_shell__origin_present": "1958503/625"}, {"config": "single", "theta": "3/8", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_far_shell__origin_present": "15703063/5329"}, {"config": "single", "theta": "5/6", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_far_shell__origin_present": "9913375/3721"}]
+      axis_segment_closure | minkowski_S_zero__the_885_support_window:
+        separating_cells: 30
+        configs: ["annulus_1_4", "hollow_annulus", "shell1", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "shell1", "theta": "1/2", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "1/3", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "2/5", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "1/7", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "3/8", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "5/6", "Z_axis_segment_closure": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}]
+      axis_segment_closure | readout_keyed_inflation:
+        separating_cells: 30
+        configs: ["Lshape", "chain", "plane_square", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "Lshape", "theta": "1/2", "Z_axis_segment_closure": "0/1", "Z_readout_keyed_inflation": "2168199/625"}, {"config": "Lshape", "theta": "1/3", "Z_axis_segment_closure": "0/1", "Z_readout_keyed_inflation": "2362799/625"}, {"config": "Lshape", "theta": "2/5", "Z_axis_segment_closure": "0/1", "Z_readout_keyed_inflation": "2573458983/707281"}, {"config": "Lshape", "theta": "1/7", "Z_axis_segment_closure": "0/1", "Z_readout_keyed_inflation": "1642559679/390625"}, {"config": "Lshape", "theta": "3/8", "Z_axis_segment_closure": "0/1", "Z_readout_keyed_inflation": "104773808471/28398241"}, {"config": "Lshape", "theta": "5/6", "Z_axis_segment_closure": "0/1", "Z_readout_keyed_inflation": "44929917863/13845841"}]
+      axis_segment_closure | size_keyed_inflation:
+        separating_cells: 30
+        configs: ["Lshape", "chain", "plane_square", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "Lshape", "theta": "1/2", "Z_axis_segment_closure": "0/1", "Z_size_keyed_inflation": "2168199/625"}, {"config": "Lshape", "theta": "1/3", "Z_axis_segment_closure": "0/1", "Z_size_keyed_inflation": "2362799/625"}, {"config": "Lshape", "theta": "2/5", "Z_axis_segment_closure": "0/1", "Z_size_keyed_inflation": "2573458983/707281"}, {"config": "Lshape", "theta": "1/7", "Z_axis_segment_closure": "0/1", "Z_size_keyed_inflation": "1642559679/390625"}, {"config": "Lshape", "theta": "3/8", "Z_axis_segment_closure": "0/1", "Z_size_keyed_inflation": "104773808471/28398241"}, {"config": "Lshape", "theta": "5/6", "Z_axis_segment_closure": "0/1", "Z_size_keyed_inflation": "44929917863/13845841"}]
+      axis_segment_closure | union_box_with_dilation:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_axis_segment_closure": "1/1", "Z_union_box_with_dilation": "11569/25"}, {"config": "single", "theta": "1/3", "Z_axis_segment_closure": "1/1", "Z_union_box_with_dilation": "13081/25"}, {"config": "single", "theta": "2/5", "Z_axis_segment_closure": "1/1", "Z_union_box_with_dilation": "419041/841"}, {"config": "single", "theta": "1/7", "Z_axis_segment_closure": "1/1", "Z_union_box_with_dilation": "365041/625"}, {"config": "single", "theta": "3/8", "Z_axis_segment_closure": "1/1", "Z_union_box_with_dilation": "2705065/5329"}, {"config": "single", "theta": "5/6", "Z_axis_segment_closure": "1/1", "Z_union_box_with_dilation": "1458721/3721"}]
+      bounding_box | minkowski_S_ball1__885_checker_dilation_k1:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_bounding_box": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "11569/25"}, {"config": "single", "theta": "1/3", "Z_bounding_box": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "13081/25"}, {"config": "single", "theta": "2/5", "Z_bounding_box": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "419041/841"}, {"config": "single", "theta": "1/7", "Z_bounding_box": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "365041/625"}, {"config": "single", "theta": "3/8", "Z_bounding_box": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2705065/5329"}, {"config": "single", "theta": "5/6", "Z_bounding_box": "1/1", "Z_minkowski_S_ball1__885_checker_dilation_k1": "1458721/3721"}]
+      bounding_box | minkowski_S_ball2__885_checker_dilation_k2:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_bounding_box": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "18415/1"}, {"config": "single", "theta": "1/3", "Z_bounding_box": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "19591/1"}, {"config": "single", "theta": "2/5", "Z_bounding_box": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "16067623/841"}, {"config": "single", "theta": "1/7", "Z_bounding_box": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "519343/25"}, {"config": "single", "theta": "3/8", "Z_bounding_box": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "102781087/5329"}, {"config": "single", "theta": "5/6", "Z_bounding_box": "1/1", "Z_minkowski_S_ball2__885_checker_dilation_k2": "63404263/3721"}]
+      bounding_box | minkowski_S_far_shell__origin_present:
+        separating_cells: 48
+        configs: ["Lshape", "chain", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_bounding_box": "1/1", "Z_minkowski_S_far_shell__origin_present": "70927/25"}, {"config": "single", "theta": "1/3", "Z_bounding_box": "1/1", "Z_minkowski_S_far_shell__origin_present": "74623/25"}, {"config": "single", "theta": "2/5", "Z_bounding_box": "1/1", "Z_minkowski_S_far_shell__origin_present": "2458975/841"}, {"config": "single", "theta": "1/7", "Z_bounding_box": "1/1", "Z_minkowski_S_far_shell__origin_present": "1958503/625"}, {"config": "single", "theta": "3/8", "Z_bounding_box": "1/1", "Z_minkowski_S_far_shell__origin_present": "15703063/5329"}, {"config": "single", "theta": "5/6", "Z_bounding_box": "1/1", "Z_minkowski_S_far_shell__origin_present": "9913375/3721"}]
+      bounding_box | minkowski_S_zero__the_885_support_window:
+        separating_cells: 36
+        configs: ["Lshape", "annulus_1_4", "hollow_annulus", "shell1", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "shell1", "theta": "1/2", "Z_bounding_box": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "1/3", "Z_bounding_box": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "2/5", "Z_bounding_box": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "1/7", "Z_bounding_box": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "3/8", "Z_bounding_box": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}, {"config": "shell1", "theta": "5/6", "Z_bounding_box": "1/1", "Z_minkowski_S_zero__the_885_support_window": "0/1"}]
+      bounding_box | readout_keyed_inflation:
+        separating_cells: 30
+        configs: ["Lshape", "chain", "plane_square", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "Lshape", "theta": "1/2", "Z_bounding_box": "2230549/625", "Z_readout_keyed_inflation": "2168199/625"}, {"config": "Lshape", "theta": "1/3", "Z_bounding_box": "2427949/625", "Z_readout_keyed_inflation": "2362799/625"}, {"config": "Lshape", "theta": "2/5", "Z_bounding_box": "2645877493/707281", "Z_readout_keyed_inflation": "2573458983/707281"}, {"config": "Lshape", "theta": "1/7", "Z_bounding_box": "1685038429/390625", "Z_readout_keyed_inflation": "1642559679/390625"}, {"config": "Lshape", "theta": "3/8", "Z_bounding_box": "107701166725/28398241", "Z_readout_keyed_inflation": "104773808471/28398241"}, {"config": "Lshape", "theta": "5/6", "Z_bounding_box": "46238630773/13845841", "Z_readout_keyed_inflation": "44929917863/13845841"}]
+      bounding_box | size_keyed_inflation:
+        separating_cells: 30
+        configs: ["Lshape", "chain", "plane_square", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "Lshape", "theta": "1/2", "Z_bounding_box": "2230549/625", "Z_size_keyed_inflation": "2168199/625"}, {"config": "Lshape", "theta": "1/3", "Z_bounding_box": "2427949/625", "Z_size_keyed_inflation": "2362799/625"}, {"config": "Lshape", "theta": "2/5", "Z_bounding_box": "2645877493/707281", "Z_size_keyed_inflation": "2573458983/707281"}, {"config": "Lshape", "theta": "1/7", "Z_bounding_box": "1685038429/390625", "Z_size_keyed_inflation": "1642559679/390625"}, {"config": "Lshape", "theta": "3/8", "Z_bounding_box": "107701166725/28398241", "Z_size_keyed_inflation": "104773808471/28398241"}, {"config": "Lshape", "theta": "5/6", "Z_bounding_box": "46238630773/13845841", "Z_size_keyed_inflation": "44929917863/13845841"}]
+      bounding_box | union_box_with_dilation:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_bounding_box": "1/1", "Z_union_box_with_dilation": "11569/25"}, {"config": "single", "theta": "1/3", "Z_bounding_box": "1/1", "Z_union_box_with_dilation": "13081/25"}, {"config": "single", "theta": "2/5", "Z_bounding_box": "1/1", "Z_union_box_with_dilation": "419041/841"}, {"config": "single", "theta": "1/7", "Z_bounding_box": "1/1", "Z_union_box_with_dilation": "365041/625"}, {"config": "single", "theta": "3/8", "Z_bounding_box": "1/1", "Z_union_box_with_dilation": "2705065/5329"}, {"config": "single", "theta": "5/6", "Z_bounding_box": "1/1", "Z_union_box_with_dilation": "1458721/3721"}]
+      minkowski_S_ball1__885_checker_dilation_k1 | minkowski_S_ball2__885_checker_dilation_k2:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball1__885_checker_dilation_k1": "11569/25", "Z_minkowski_S_ball2__885_checker_dilation_k2": "18415/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball1__885_checker_dilation_k1": "13081/25", "Z_minkowski_S_ball2__885_checker_dilation_k2": "19591/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball1__885_checker_dilation_k1": "419041/841", "Z_minkowski_S_ball2__885_checker_dilation_k2": "16067623/841"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball1__885_checker_dilation_k1": "365041/625", "Z_minkowski_S_ball2__885_checker_dilation_k2": "519343/25"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2705065/5329", "Z_minkowski_S_ball2__885_checker_dilation_k2": "102781087/5329"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball1__885_checker_dilation_k1": "1458721/3721", "Z_minkowski_S_ball2__885_checker_dilation_k2": "63404263/3721"}]
+      minkowski_S_ball1__885_checker_dilation_k1 | minkowski_S_far_shell__origin_present:
+        separating_cells: 48
+        configs: ["Lshape", "chain", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball1__885_checker_dilation_k1": "11569/25", "Z_minkowski_S_far_shell__origin_present": "70927/25"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball1__885_checker_dilation_k1": "13081/25", "Z_minkowski_S_far_shell__origin_present": "74623/25"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball1__885_checker_dilation_k1": "419041/841", "Z_minkowski_S_far_shell__origin_present": "2458975/841"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball1__885_checker_dilation_k1": "365041/625", "Z_minkowski_S_far_shell__origin_present": "1958503/625"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2705065/5329", "Z_minkowski_S_far_shell__origin_present": "15703063/5329"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball1__885_checker_dilation_k1": "1458721/3721", "Z_minkowski_S_far_shell__origin_present": "9913375/3721"}]
+      minkowski_S_ball1__885_checker_dilation_k1 | minkowski_S_zero__the_885_support_window:
+        separating_cells: 60
+        configs: ["Lshape", "annulus_1_4", "chain", "hollow_annulus", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball1__885_checker_dilation_k1": "11569/25", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball1__885_checker_dilation_k1": "13081/25", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball1__885_checker_dilation_k1": "419041/841", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball1__885_checker_dilation_k1": "365041/625", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2705065/5329", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball1__885_checker_dilation_k1": "1458721/3721", "Z_minkowski_S_zero__the_885_support_window": "1/1"}]
+      minkowski_S_ball1__885_checker_dilation_k1 | readout_keyed_inflation:
+        separating_cells: 12
+        configs: ["pair", "single"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball1__885_checker_dilation_k1": "11569/25", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball1__885_checker_dilation_k1": "13081/25", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball1__885_checker_dilation_k1": "419041/841", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball1__885_checker_dilation_k1": "365041/625", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2705065/5329", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball1__885_checker_dilation_k1": "1458721/3721", "Z_readout_keyed_inflation": "1/1"}]
+      minkowski_S_ball1__885_checker_dilation_k1 | size_keyed_inflation:
+        separating_cells: 12
+        configs: ["pair", "single"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball1__885_checker_dilation_k1": "11569/25", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball1__885_checker_dilation_k1": "13081/25", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball1__885_checker_dilation_k1": "419041/841", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball1__885_checker_dilation_k1": "365041/625", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2705065/5329", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball1__885_checker_dilation_k1": "1458721/3721", "Z_size_keyed_inflation": "1/1"}]
+      minkowski_S_ball1__885_checker_dilation_k1 | union_box_with_dilation:
+        separating_cells: 18
+        configs: ["Lshape", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "Lshape", "theta": "1/2", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2168199/625", "Z_union_box_with_dilation": "3142699/625"}, {"config": "Lshape", "theta": "1/3", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2362799/625", "Z_union_box_with_dilation": "3393299/625"}, {"config": "Lshape", "theta": "2/5", "Z_minkowski_S_ball1__885_checker_dilation_k1": "2573458983/707281", "Z_union_box_with_dilation": "3713454667/707281"}, {"config": "Lshape", "theta": "1/7", "Z_minkowski_S_ball1__885_checker_dilation_k1": "1642559679/390625", "Z_union_box_with_dilation": "2321822179/390625"}, {"config": "Lshape", "theta": "3/8", "Z_minkowski_S_ball1__885_checker_dilation_k1": "104773808471/28398241", "Z_union_box_with_dilation": "150939340475/28398241"}, {"config": "Lshape", "theta": "5/6", "Z_minkowski_S_ball1__885_checker_dilation_k1": "44929917863/13845841", "Z_union_box_with_dilation": "65067389387/13845841"}]
+      minkowski_S_ball2__885_checker_dilation_k2 | minkowski_S_far_shell__origin_present:
+        separating_cells: 48
+        configs: ["Lshape", "chain", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball2__885_checker_dilation_k2": "18415/1", "Z_minkowski_S_far_shell__origin_present": "70927/25"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball2__885_checker_dilation_k2": "19591/1", "Z_minkowski_S_far_shell__origin_present": "74623/25"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball2__885_checker_dilation_k2": "16067623/841", "Z_minkowski_S_far_shell__origin_present": "2458975/841"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball2__885_checker_dilation_k2": "519343/25", "Z_minkowski_S_far_shell__origin_present": "1958503/625"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball2__885_checker_dilation_k2": "102781087/5329", "Z_minkowski_S_far_shell__origin_present": "15703063/5329"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball2__885_checker_dilation_k2": "63404263/3721", "Z_minkowski_S_far_shell__origin_present": "9913375/3721"}]
+      minkowski_S_ball2__885_checker_dilation_k2 | minkowski_S_zero__the_885_support_window:
+        separating_cells: 60
+        configs: ["Lshape", "annulus_1_4", "chain", "hollow_annulus", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball2__885_checker_dilation_k2": "18415/1", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball2__885_checker_dilation_k2": "19591/1", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball2__885_checker_dilation_k2": "16067623/841", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball2__885_checker_dilation_k2": "519343/25", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball2__885_checker_dilation_k2": "102781087/5329", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball2__885_checker_dilation_k2": "63404263/3721", "Z_minkowski_S_zero__the_885_support_window": "1/1"}]
+      minkowski_S_ball2__885_checker_dilation_k2 | readout_keyed_inflation:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball2__885_checker_dilation_k2": "18415/1", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball2__885_checker_dilation_k2": "19591/1", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball2__885_checker_dilation_k2": "16067623/841", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball2__885_checker_dilation_k2": "519343/25", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball2__885_checker_dilation_k2": "102781087/5329", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball2__885_checker_dilation_k2": "63404263/3721", "Z_readout_keyed_inflation": "1/1"}]
+      minkowski_S_ball2__885_checker_dilation_k2 | size_keyed_inflation:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball2__885_checker_dilation_k2": "18415/1", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball2__885_checker_dilation_k2": "19591/1", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball2__885_checker_dilation_k2": "16067623/841", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball2__885_checker_dilation_k2": "519343/25", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball2__885_checker_dilation_k2": "102781087/5329", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball2__885_checker_dilation_k2": "63404263/3721", "Z_size_keyed_inflation": "1/1"}]
+      minkowski_S_ball2__885_checker_dilation_k2 | union_box_with_dilation:
+        separating_cells: 42
+        configs: ["Lshape", "chain", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_ball2__885_checker_dilation_k2": "18415/1", "Z_union_box_with_dilation": "11569/25"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_ball2__885_checker_dilation_k2": "19591/1", "Z_union_box_with_dilation": "13081/25"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_ball2__885_checker_dilation_k2": "16067623/841", "Z_union_box_with_dilation": "419041/841"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_ball2__885_checker_dilation_k2": "519343/25", "Z_union_box_with_dilation": "365041/625"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_ball2__885_checker_dilation_k2": "102781087/5329", "Z_union_box_with_dilation": "2705065/5329"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_ball2__885_checker_dilation_k2": "63404263/3721", "Z_union_box_with_dilation": "1458721/3721"}]
+      minkowski_S_far_shell__origin_present | minkowski_S_zero__the_885_support_window:
+        separating_cells: 54
+        configs: ["Lshape", "annulus_1_4", "chain", "hollow_annulus", "pair", "plane_square", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_far_shell__origin_present": "70927/25", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_far_shell__origin_present": "74623/25", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_far_shell__origin_present": "2458975/841", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_far_shell__origin_present": "1958503/625", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_far_shell__origin_present": "15703063/5329", "Z_minkowski_S_zero__the_885_support_window": "1/1"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_far_shell__origin_present": "9913375/3721", "Z_minkowski_S_zero__the_885_support_window": "1/1"}]
+      minkowski_S_far_shell__origin_present | readout_keyed_inflation:
+        separating_cells: 48
+        configs: ["Lshape", "chain", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_far_shell__origin_present": "70927/25", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_far_shell__origin_present": "74623/25", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_far_shell__origin_present": "2458975/841", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_far_shell__origin_present": "1958503/625", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_far_shell__origin_present": "15703063/5329", "Z_readout_keyed_inflation": "1/1"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_far_shell__origin_present": "9913375/3721", "Z_readout_keyed_inflation": "1/1"}]
+      minkowski_S_far_shell__origin_present | size_keyed_inflation:
+        separating_cells: 48
+        configs: ["Lshape", "chain", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_far_shell__origin_present": "70927/25", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_far_shell__origin_present": "74623/25", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_far_shell__origin_present": "2458975/841", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_far_shell__origin_present": "1958503/625", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_far_shell__origin_present": "15703063/5329", "Z_size_keyed_inflation": "1/1"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_far_shell__origin_present": "9913375/3721", "Z_size_keyed_inflation": "1/1"}]
+      minkowski_S_far_shell__origin_present | union_box_with_dilation:
+        separating_cells: 48
+        configs: ["Lshape", "chain", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_far_shell__origin_present": "70927/25", "Z_union_box_with_dilation": "11569/25"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_far_shell__origin_present": "74623/25", "Z_union_box_with_dilation": "13081/25"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_far_shell__origin_present": "2458975/841", "Z_union_box_with_dilation": "419041/841"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_far_shell__origin_present": "1958503/625", "Z_union_box_with_dilation": "365041/625"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_far_shell__origin_present": "15703063/5329", "Z_union_box_with_dilation": "2705065/5329"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_far_shell__origin_present": "9913375/3721", "Z_union_box_with_dilation": "1458721/3721"}]
+      minkowski_S_zero__the_885_support_window | readout_keyed_inflation:
+        separating_cells: 48
+        configs: ["Lshape", "annulus_1_4", "chain", "hollow_annulus", "plane_square", "shell1", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "shell1", "theta": "1/2", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_readout_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "1/3", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_readout_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "2/5", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_readout_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "1/7", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_readout_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "3/8", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_readout_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "5/6", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_readout_keyed_inflation": "1/1"}]
+      minkowski_S_zero__the_885_support_window | size_keyed_inflation:
+        separating_cells: 48
+        configs: ["Lshape", "annulus_1_4", "chain", "hollow_annulus", "plane_square", "shell1", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "shell1", "theta": "1/2", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_size_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "1/3", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_size_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "2/5", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_size_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "1/7", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_size_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "3/8", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_size_keyed_inflation": "1/1"}, {"config": "shell1", "theta": "5/6", "Z_minkowski_S_zero__the_885_support_window": "0/1", "Z_size_keyed_inflation": "1/1"}]
+      minkowski_S_zero__the_885_support_window | union_box_with_dilation:
+        separating_cells: 60
+        configs: ["Lshape", "annulus_1_4", "chain", "hollow_annulus", "pair", "plane_square", "shell1", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_minkowski_S_zero__the_885_support_window": "1/1", "Z_union_box_with_dilation": "11569/25"}, {"config": "single", "theta": "1/3", "Z_minkowski_S_zero__the_885_support_window": "1/1", "Z_union_box_with_dilation": "13081/25"}, {"config": "single", "theta": "2/5", "Z_minkowski_S_zero__the_885_support_window": "1/1", "Z_union_box_with_dilation": "419041/841"}, {"config": "single", "theta": "1/7", "Z_minkowski_S_zero__the_885_support_window": "1/1", "Z_union_box_with_dilation": "365041/625"}, {"config": "single", "theta": "3/8", "Z_minkowski_S_zero__the_885_support_window": "1/1", "Z_union_box_with_dilation": "2705065/5329"}, {"config": "single", "theta": "5/6", "Z_minkowski_S_zero__the_885_support_window": "1/1", "Z_union_box_with_dilation": "1458721/3721"}]
+      readout_keyed_inflation | union_box_with_dilation:
+        separating_cells: 30
+        configs: ["Lshape", "pair", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_readout_keyed_inflation": "1/1", "Z_union_box_with_dilation": "11569/25"}, {"config": "single", "theta": "1/3", "Z_readout_keyed_inflation": "1/1", "Z_union_box_with_dilation": "13081/25"}, {"config": "single", "theta": "2/5", "Z_readout_keyed_inflation": "1/1", "Z_union_box_with_dilation": "419041/841"}, {"config": "single", "theta": "1/7", "Z_readout_keyed_inflation": "1/1", "Z_union_box_with_dilation": "365041/625"}, {"config": "single", "theta": "3/8", "Z_readout_keyed_inflation": "1/1", "Z_union_box_with_dilation": "2705065/5329"}, {"config": "single", "theta": "5/6", "Z_readout_keyed_inflation": "1/1", "Z_union_box_with_dilation": "1458721/3721"}]
+      size_keyed_inflation | union_box_with_dilation:
+        separating_cells: 30
+        configs: ["Lshape", "pair", "single", "sparse_a", "sparse_b"]
+        thetas: ["1/2", "1/3", "1/7", "2/5", "3/8", "5/6"]
+        exhibits: [{"config": "single", "theta": "1/2", "Z_size_keyed_inflation": "1/1", "Z_union_box_with_dilation": "11569/25"}, {"config": "single", "theta": "1/3", "Z_size_keyed_inflation": "1/1", "Z_union_box_with_dilation": "13081/25"}, {"config": "single", "theta": "2/5", "Z_size_keyed_inflation": "1/1", "Z_union_box_with_dilation": "419041/841"}, {"config": "single", "theta": "1/7", "Z_size_keyed_inflation": "1/1", "Z_union_box_with_dilation": "365041/625"}, {"config": "single", "theta": "3/8", "Z_size_keyed_inflation": "1/1", "Z_union_box_with_dilation": "2705065/5329"}, {"config": "single", "theta": "5/6", "Z_size_keyed_inflation": "1/1", "Z_union_box_with_dilation": "1458721/3721"}]
+    configs_that_ever_separate:
+      - "Lshape"
+      - "annulus_1_4"
+      - "chain"
+      - "hollow_annulus"
+      - "pair"
+      - "plane_square"
+      - "shell1"
+      - "single"
+      - "sparse_a"
+      - "sparse_b"
+    thetas_that_ever_separate:
+      - "1/2"
+      - "1/3"
+      - "1/7"
+      - "2/5"
+      - "3/8"
+      - "5/6"
+    structural_theorem_C892_T2: "WINDOW MONOTONICITY AND THE EXACT DIFFERENCE.  For containment-holding windows W subset W', Z(W') - Z(W) = sum over x in (W' \\ W) intersect Box of |A(x)|^2 >= 0, with EQUALITY if and only if (W' \\ W) carries no amplitude.  Combined with C892_T1 (amplitude is expelled from the barrier), the seed contribution is COMMON to every containment-holding window -- each contains supp(R) and hence src(R) intersect supp(R) -- so the entire difference between two containment-holding windows is carried by the REACHABLE set, which lies wholly outside supp(R).  Hence: THE EXTENT IS GAUGE AT QUADRATIC ORDER IF AND ONLY IF EVERY ADMISSIBLE CONTAINMENT-HOLDING WINDOW MEETS THE REACHABLE SET IN THE SAME AMPLITUDE MASS.  This is a theorem on the stated hypotheses, and it is what makes the catalogue result below a verdict rather than a sweep: the catalogue exhibits the witness the theorem needs."
+    structural_theorem_tested:
+      nested_ordered_pairs: 26
+      monotonicity_violations: 0
+      monotonicity_exhibits:
+
+      support_window_is_the_minimum_violations: 0
+      exact_difference_formula_checks: 1872
+      exact_difference_formula_violations: 0
+      exact_difference_exhibits:
+
+    structural_proof_status: "PROVED, with hypotheses, in the NEGATIVE direction.  C892_T1 and C892_T2 are structural: they follow from the barrier rule and the definition of Z, and both are verified with zero violations on every cell.  What they prove is that the collapse CANNOT hold once any admissible containment-holding window reaches into the reachable set, and the support window -- the inclusion-minimum of the class -- reaches none of it.  The witness is exhibited, so the verdict is not catalogue-only.  The catalogue's residual role is only to show that admissible windows of BOTH kinds exist in 887's own space; the scope limit is that no claim is made about window maps outside that space."
+    annular_chart:
+      distinct_annular_profiles: 8
+      annular_classes:
+        - ["axis_segment_closure"]
+        - ["bounding_box"]
+        - ["minkowski_S_ball1__885_checker_dilation_k1"]
+        - ["minkowski_S_ball2__885_checker_dilation_k2"]
+        - ["minkowski_S_far_shell__origin_present"]
+        - ["minkowski_S_zero__the_885_support_window"]
+        - ["readout_keyed_inflation", "size_keyed_inflation"]
+        - ["union_box_with_dilation"]
+      Z_separated_pairs_the_annular_chart_cannot_see:
+
+      annular_separated_pairs_Z_cannot_see:
+
+      annular_partition_equals_Z_partition: true
+      but_the_annulus_does_NOT_determine_Z:
+        witnesses: 51
+        exhibits: [{"window": "axis_segment_closure", "config": "Lshape", "theta": "1/2", "Z_of_the_set": "0/1", "Z_of_the_same_annulus_filled": "9384/5"}, {"window": "axis_segment_closure", "config": "plane_square", "theta": "1/2", "Z_of_the_set": "1/1", "Z_of_the_same_annulus_filled": "28841/25"}, {"window": "axis_segment_closure", "config": "chain", "theta": "1/2", "Z_of_the_set": "1/1", "Z_of_the_same_annulus_filled": "177973/25"}, {"window": "axis_segment_closure", "config": "sparse_a", "theta": "1/2", "Z_of_the_set": "32966/25", "Z_of_the_same_annulus_filled": "354459/25"}, {"window": "axis_segment_closure", "config": "sparse_b", "theta": "1/2", "Z_of_the_set": "7617/25", "Z_of_the_same_annulus_filled": "267313/25"}, {"window": "bounding_box", "config": "Lshape", "theta": "1/2", "Z_of_the_set": "2230549/625", "Z_of_the_same_annulus_filled": "6640149/625"}]
+        reading: "Replacing a window by the FILLED annulus with the same (a^2, b^2) and the same centre changes Z.  So the annular chart happens to SEPARATE this catalogue's classes while being unable to COMPUTE Z: it is a strictly coarser chart that is accidentally injective here, which is exactly the weakness 885 already measured when it found the support fills its own annulus on only 7 of 12 configurations."
+    finding: "The window extent is NOT gauge at quadratic order.  The 9 containment-holding admissible windows collapse to 1 class under the LINEAR readout and split into 8 classes under Z, separating on 35 of 36 pairs.  The single non-separating pair is SET-IDENTICAL on this family, so Z is as fine as the window set itself: it separates every genuinely distinct containment-holding window.  The gauge therefore breaks exactly between the linear and the quadratic order, and the window convention becomes load-bearing precisely at the Born interface."
+    pass: true
+
+[H_KERNEL_STRUCTURE]  pass=True
+    component: "GBW1b (b) -- the KERNEL contribution"
+    what_theta_is: "theta enters ONLY as the per-edge gain u(theta) = ((1-theta^2)/(1+theta^2), 2theta/(1+theta^2)), the exact rational point on the unit circle.  |u(theta)|^2 = 1 exactly on every tested theta (27 values, 0 failures), so theta contributes NO gain in modulus: it is a pure phase."
+    structure_theorem_C892_T3: "PATH-LENGTH INTERFERENCE SPECTRUM.  Because every edge carries the SAME unit phase, the amplitude at a site decomposes exactly by path length, A(x) = sum_L (n_L(x)/|src|) u^L with n_L(x) the INTEGER count of admissible L-step walks.  Hence Z(theta) = sum_{d=0}^{D} M_d T_d(cos phi) with cos phi = (1-theta^2)/(1+theta^2), T_d the Chebyshev polynomial, D = the walk depth, and M_d = sum_{x in W} sum_{L-L'=d} c_L c_L' a RATIONAL, theta-FREE, record-and-window-determined coefficient. Z is therefore a POLYNOMIAL OF DEGREE AT MOST D IN cos phi, i.e. a rational function of theta with denominator (1+theta^2)^D -- not an arbitrary function.  This is checked, not asserted."
+    identity_checks: 648
+    identity_violations: 0
+    identity_exhibits:
+
+    walk_depth_D: 4
+    interference_orders_actually_present:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+    spectra_on_the_k1_dilation:
+      - {"config": "single", "M_by_order": ["493/1", "0/1", "108/1", "0/1", "0/1"], "highest_order_present": 2}
+      - {"config": "pair", "M_by_order": ["1807/2", "680/1", "117/1", "80/1", "0/1"], "highest_order_present": 3}
+      - {"config": "shell1", "M_by_order": ["1/1", "0/1", "0/1", "0/1", "0/1"], "highest_order_present": 0}
+      - {"config": "ball1", "M_by_order": ["1/1", "0/1", "0/1", "0/1", "0/1"], "highest_order_present": 0}
+      - {"config": "annulus_1_4", "M_by_order": ["1/1", "0/1", "0/1", "0/1", "0/1"], "highest_order_present": 0}
+      - {"config": "hollow_annulus", "M_by_order": ["1/1", "0/1", "0/1", "0/1", "0/1"], "highest_order_present": 0}
+      - {"config": "Lshape", "M_by_order": ["3699/1", "0/1", "556/1", "0/1", "88/1"], "highest_order_present": 4}
+      - {"config": "plane_square", "M_by_order": ["1261/1", "0/1", "212/1", "0/1", "0/1"], "highest_order_present": 2}
+      - {"config": "chain", "M_by_order": ["2809/1", "0/1", "344/1", "0/1", "0/1"], "highest_order_present": 2}
+      - {"config": "sparse_a", "M_by_order": ["7154/1", "0/1", "994/1", "0/1", "114/1"], "highest_order_present": 4}
+      - {"config": "sparse_b", "M_by_order": ["2451/1", "0/1", "332/1", "0/1", "0/1"], "highest_order_present": 2}
+      - {"config": "offcentre_ball", "M_by_order": ["1/1", "0/1", "0/1", "0/1", "0/1"], "highest_order_present": 0}
+    parity_theorem_C892_T4: "BIPARTITE PARITY SELECTION.  Z^3 is bipartite, so all walks from a FIXED site to a fixed site have a fixed length parity and only EVEN interference orders can survive; odd orders can appear only when the source SET spans both parities.  Predicted from the source parity alone and checked per configuration."
+    parity_rows:
+      - {"config": "single", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "pair", "source_parities": [0, 1], "odd_orders_present": true, "predicted_by_bipartiteness": true, "consistent": true}
+      - {"config": "shell1", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "ball1", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "annulus_1_4", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "hollow_annulus", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "Lshape", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "plane_square", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "chain", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "sparse_a", "source_parities": [1], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "sparse_b", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+      - {"config": "offcentre_ball", "source_parities": [0], "odd_orders_present": false, "predicted_by_bipartiteness": false, "consistent": true}
+    parity_mispredictions: 0
+    fine_grid_size: 27
+    fine_grid_rows:
+      - {"config": "single", "distinct_Z_over_the_fine_grid": 27, "constant_in_theta": false}
+      - {"config": "pair", "distinct_Z_over_the_fine_grid": 27, "constant_in_theta": false}
+      - {"config": "shell1", "distinct_Z_over_the_fine_grid": 1, "constant_in_theta": true}
+      - {"config": "ball1", "distinct_Z_over_the_fine_grid": 1, "constant_in_theta": true}
+      - {"config": "annulus_1_4", "distinct_Z_over_the_fine_grid": 1, "constant_in_theta": true}
+      - {"config": "hollow_annulus", "distinct_Z_over_the_fine_grid": 1, "constant_in_theta": true}
+      - {"config": "Lshape", "distinct_Z_over_the_fine_grid": 27, "constant_in_theta": false}
+      - {"config": "plane_square", "distinct_Z_over_the_fine_grid": 27, "constant_in_theta": false}
+      - {"config": "chain", "distinct_Z_over_the_fine_grid": 27, "constant_in_theta": false}
+      - {"config": "sparse_a", "distinct_Z_over_the_fine_grid": 27, "constant_in_theta": false}
+      - {"config": "sparse_b", "distinct_Z_over_the_fine_grid": 27, "constant_in_theta": false}
+      - {"config": "offcentre_ball", "distinct_Z_over_the_fine_grid": 1, "constant_in_theta": true}
+    configs_constant_in_theta_on_the_fine_grid: 5
+    exact_role_of_theta_priced: "theta supplies exactly the D coefficients' WEIGHTING, nothing else.  It cannot change which sites carry amplitude (that is the barrier's job), it cannot change the integer walk counts, and it cannot change the total number of interference orders.  What it CAN do is move Z continuously along a degree-D polynomial in cos phi.  So the kernel contribution to GBW1b is exactly ONE scalar convention -- the value of cos phi -- and it is a genuine dimension only where some M_d with d >= 1 is non-zero."
+    finding: "648 exact identity checks with 0 violations: Z(theta) is a degree-4 polynomial in cos phi on every window and configuration.  Interference orders actually present: [0, 1, 2, 3, 4].  The parity theorem predicts the odd orders from the source parity alone with 0 mispredictions.  On the fine grid of 27 thetas, 5 of 12 configurations are exactly theta-CONSTANT -- these are the frozen walks -- and the rest move."
+    pass: true
+
+[I_EVENT_SPACE_ABSENCE]  pass=True
+    census_is_idempotent: true
+    own_artifacts_excluded_by_exact_path:
+      - "logs/runner-cache/frontier_cycle892_gbw1b_independent_check_2026_07_28.txt"
+      - "logs/runner-cache/frontier_cycle892_gbw1b_pricing_2026_07_28.txt"
+      - "outputs/gbw1b_independent_check_cycle892_receipt_2026_07_28.json"
+      - "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json"
+      - "scripts/frontier_cycle892_gbw1b_independent_check_2026_07_28.py"
+      - "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py"
+    own_artifacts_seen_and_excluded_this_run: 6
+    idempotency_note: "Without this exclusion the census would count the cycle's own scripts, receipts and run caches once they land, so a re-run would report a different total and the science digest would drift with no physics changing.  The exclusion list is by exact path and is printed in full."
+    role: "883-discipline tracked-file scan.  The Cycle-878 composed-record event-space artifacts are the named import GBW1b's interface component depends on.  Their presence is COMPUTED and their content is NEVER reconstructed: a cycle that invented an event-space would be inventing the very thing it is pricing."
+    scan_globs:
+      - "scripts/*"
+      - "outputs/*"
+      - "logs/runner-cache/*"
+      - "docs/*"
+    scanned:
+      - {"glob": "scripts/*", "tracked_files": 5506, "own_artifacts_excluded": 2}
+      - {"glob": "outputs/*", "tracked_files": 384, "own_artifacts_excluded": 2}
+      - {"glob": "logs/runner-cache/*", "tracked_files": 3943, "own_artifacts_excluded": 2}
+      - {"glob": "docs/*", "tracked_files": 8714, "own_artifacts_excluded": 0}
+    tracked_files_scanned_total: 18547
+    probes:
+      - "cycle878_composed_record_event_space"
+      - "composed_record_event_space"
+      - "event_space"
+      - "cycle867_composed_record_event_model"
+      - "born_measure"
+    hits_by_probe:
+
+    hit_count: 0
+    artifacts_absent: true
+    finding: "18547 tracked paths scanned over 4 globs against 5 probes: 0 hits.  The Cycle-878 event-space artifacts are ABSENT from this lineage, reproducing the 885 receipt's own record of their absence.  The interface is therefore priced as a NAMED IMPORT, not evaluated."
+    pass: true
+
+[J_INTERFACE]  pass=True
+    component: "GBW1b (c) -- the INTERFACE"
+    obligation: "The composed-record event-space step must supply the map from RECORDS to AMPLITUDES.  This lineage does not carry it (see the absence scan), so it is priced as a named import."
+    the_gap_in_one_sentence: "The axiom-level readout I(R) is LINEAR in record content and supported on supp(R); Z is QUADRATIC in amplitudes and supported off supp(R); nothing in the four axioms connects them."
+    computed_facts_Z_has:
+      finite_additivity_checks: 72
+      finite_additivity_violations: 0
+      non_negativity_violations: 0
+      vanishing_cells: 42
+      vanishing_exhibits:
+        - {"window": "axis_segment_closure", "config": "Lshape", "theta": "1/2"}
+        - {"window": "axis_segment_closure", "config": "Lshape", "theta": "1/3"}
+        - {"window": "axis_segment_closure", "config": "Lshape", "theta": "2/5"}
+        - {"window": "axis_segment_closure", "config": "Lshape", "theta": "1/7"}
+        - {"window": "axis_segment_closure", "config": "Lshape", "theta": "3/8"}
+        - {"window": "axis_segment_closure", "config": "Lshape", "theta": "5/6"}
+      total_mass_theta_dependent_configs: 7
+      total_mass_rows:
+        - {"config": "single", "total_mass_by_theta": {"1/2": "23203/1", "1/3": "24379/1", "2/5": "20094331/841"}, "theta_invariant": false}
+        - {"config": "pair", "total_mass_by_theta": {"1/2": "911247/100", "1/3": "997399/100", "2/5": "939131139/97556"}, "theta_invariant": false}
+        - {"config": "shell1", "total_mass_by_theta": {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1"}, "theta_invariant": true}
+        - {"config": "ball1", "total_mass_by_theta": {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1"}, "theta_invariant": true}
+        - {"config": "annulus_1_4", "total_mass_by_theta": {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1"}, "theta_invariant": true}
+        - {"config": "hollow_annulus", "total_mass_by_theta": {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1"}, "theta_invariant": true}
+        - {"config": "Lshape", "total_mass_by_theta": {"1/2": "9111849/625", "1/3": "9646649/625", "2/5": "10657246857/707281"}, "theta_invariant": false}
+        - {"config": "plane_square", "total_mass_by_theta": {"1/2": "55199/25", "1/3": "58951/25", "2/5": "1930991/841"}, "theta_invariant": false}
+        - {"config": "chain", "total_mass_by_theta": {"1/2": "231073/25", "1/3": "244177/25", "2/5": "8032081/841"}, "theta_invariant": false}
+        - {"config": "sparse_a", "total_mass_by_theta": {"1/2": "10774897/625", "1/3": "11446197/625", "2/5": "12627121105/707281"}, "theta_invariant": false}
+        - {"config": "sparse_b", "total_mass_by_theta": {"1/2": "296613/25", "1/3": "313637/25", "2/5": "10314261/841"}, "theta_invariant": false}
+        - {"config": "offcentre_ball", "total_mass_by_theta": {"1/2": "1/1", "1/3": "1/1", "2/5": "1/1"}, "theta_invariant": true}
+      normalized_ratio_still_theta_dependent_configs: 7
+      linear_readout_locus: "supp(R): the linear readout sums record content site by site"
+      amplitude_sites_inside_support_total: 8
+      amplitude_sites_outside_support_total: 844
+    required_properties_of_the_import:
+      - {"id": "IF1", "requirement": "The event-space step must supply a map rho from record configurations to amplitude fields whose SUPPORT overlaps supp(R).", "derived_from": "Certificate E computes that the propagated amplitude has 8 site(s) inside supp(R) across the whole family, against 844 outside it -- and the inside sites are exactly the seed.  The linear readout I lives entirely on supp(R).  So as the lineage currently stands the two quantities are supported on ESSENTIALLY DISJOINT sets and no identification between them can be pointwise.", "what_fails_without_it": "Any identification of I with Z is a statement about two functions on disjoint loci; the barrier B(R) = supp(R) is what makes them disjoint, so IF1 forces either a different barrier or an explicitly non-local identification."}
+      - {"id": "IF2", "requirement": "rho must be such that Z is a FINITELY ADDITIVE set function over disjoint window pieces.", "derived_from": "Computed: Z(A) + Z(B) = Z(A union B) on 72 disjoint pairs with 0 violations.  Z ALREADY has this property because it is a site-wise sum of |A|^2.  The requirement is therefore SATISFIED by the current construction and costs the interface nothing -- it is banked, not owed.", "what_fails_without_it": "Nothing; this is the one Born-shaped property the computation supplies for free."}
+      - {"id": "IF3", "requirement": "rho must supply a NORMALIZER that is theta-invariant, or else declare theta as an observable.", "derived_from": "Computed: the total amplitude mass over the whole box moves with theta on 7/12 configurations, and dividing the window mass by the box mass still leaves 7/12 configurations theta-dependent.  So the obvious normalization does NOT quotient theta out.  The walk accumulates amplitude across path lengths and leaks at the barrier and the box wall, so it is not norm-preserving; that is a computed property of the pinned construction, not a modelling choice made here.", "what_fails_without_it": "Z cannot be read as a weight of anything: its scale is a free function of a kernel coordinate."}
+      - {"id": "IF4", "requirement": "rho must fix the WINDOW, because Z is not window-invariant.", "derived_from": "Certificate G computes that the containment-holding admissible windows split into more than one Z class and that Z is strictly monotone in the window along every nested pair.  The window is therefore an argument of the weight, not a gauge choice.", "what_fails_without_it": "The weight is defined only up to the whole 887 inflation freedom, which certificate G shows is not a null direction at this order."}
+      - {"id": "IF5", "requirement": "rho must tolerate VANISHING Z on admissible windows, or exclude the configurations where it vanishes.", "derived_from": "Computed: Z is non-negative on every one of the 648 cells (0 negatives) but VANISHES exactly on 42 (window, config, theta) triples of containment-holding admissible windows -- the frozen walks, where every neighbour of the source is a record.  A weight that must be positive is therefore not available on this family without an extra hypothesis.", "what_fails_without_it": "Normalization by Z is undefined on those configurations."}
+      - {"id": "IF6", "requirement": "rho must respect the interference structure: any identification must be with a degree-D polynomial in cos phi, not with an arbitrary function of the kernel.", "derived_from": "Certificate H proves and checks Z = sum_d M_d T_d(cos phi) with d <= 4 on 648 cells and 0 violations.  The M_d are rational, theta-free and record-and-window-determined.", "what_fails_without_it": "An identification could be satisfied by tuning theta pointwise, which the polynomial structure forbids."}
+    requirement_count: 6
+    requirements_owed:
+      - "IF1"
+      - "IF3"
+      - "IF4"
+      - "IF5"
+      - "IF6"
+    requirements_already_banked:
+      - "IF2"
+    derivation_discipline: "Every requirement above cites a COMPUTED fact of Z from this run -- its additivity count, its vanishing cells, its total-mass movement, its polynomial order, its support locus.  None is derived from what a probability rule is supposed to look like.  The needle check below is the mechanical guard."
+    born_vocabulary_needle_check:
+      born rule:
+        in_requirements: false
+        in_file: 1
+      born's rule:
+        in_requirements: false
+        in_file: 2
+      probability amplitude squared:
+        in_requirements: false
+        in_file: 1
+      |psi|^2:
+        in_requirements: false
+        in_file: 1
+      wavefunction:
+        in_requirements: false
+        in_file: 1
+      hilbert space:
+        in_requirements: false
+        in_file: 1
+      unitary evolution:
+        in_requirements: false
+        in_file: 1
+      quantum probability:
+        in_requirements: false
+        in_file: 1
+      measurement postulate:
+        in_requirements: false
+        in_file: 1
+    born_vocabulary_leaked_into_requirements:
+
+    finding: "6 interface requirements, all derived from Z's computed structure; 5 are OWED by the event-space step and 1 (finite additivity) is already supplied by the construction.  The sharpest owed requirement is IF1: the barrier B(R) = supp(R) puts the linear readout and the quadratic weight on essentially disjoint loci (8 amplitude sites inside the support against 844 outside), so no pointwise identification exists until the event-space step either moves the barrier or supplies a non-local map.  0 Born-rule needles leaked."
+    pass: true
+
+[K_STRESS]  pass=True
+    stress_1_containment_breakers_excluded:
+      admissible_maps_that_break_containment:
+        - {"map": "erosion_by_N6", "contains_support_on": 0, "of": 12, "in_the_partition": false}
+        - {"map": "erosion_by_ball1", "contains_support_on": 0, "of": 12, "in_the_partition": false}
+        - {"map": "minkowski_S_N6__origin_absent", "contains_support_on": 8, "of": 12, "in_the_partition": false}
+      all_excluded_from_the_partition: true
+      planted_breaker:
+        construction: "supp(R) dilated by the 12 face-diagonal offsets (rotation-invariant, origin absent)"
+        admissible_REQ1_REQ5: true
+        equivariance_failures: 0
+        permanence_failures: 0
+        contains_support_on: 4
+        of: 12
+        excluded_by_the_containment_filter: true
+        why_this_construction: "it is deliberately ADMISSIBLE, so only the containment filter can catch it; a breaker that REQ1-REQ5 already refuses would not test the containment filter at all"
+    stress_2_non_admissible_refused:
+      maps:
+        - {"map": "IMPOSTOR_boundary_shell_885_W1b", "equivariance_failures": 0, "permanence_failures": 24, "distinct_set_values": 12, "entered_the_partition": false}
+        - {"map": "IMPOSTOR_constant_cube", "equivariance_failures": 1152, "permanence_failures": 0, "distinct_set_values": 1, "entered_the_partition": false}
+        - {"map": "IMPOSTOR_extremal_shell_nonmonotone", "equivariance_failures": 0, "permanence_failures": 26, "distinct_set_values": 11, "entered_the_partition": false}
+        - {"map": "IMPOSTOR_nonequivariant_inflation", "equivariance_failures": 1200, "permanence_failures": 0, "distinct_set_values": 11, "entered_the_partition": false}
+        - {"map": "depth_keyed_inflation", "equivariance_failures": 0, "permanence_failures": 2, "distinct_set_values": 12, "entered_the_partition": false}
+      none_entered_the_partition: true
+    stress_3_falsifier_visibility:
+      planted_amplitude_perturbation: "1/1000 added at one window site that already carries amplitude, so the plant is guaranteed to be inside the quantity under test"
+      per_window:
+        - {"window": "axis_segment_closure", "window_carries_amplitude_somewhere": true, "planted_difference_detected": true, "detection_required": true}
+        - {"window": "bounding_box", "window_carries_amplitude_somewhere": true, "planted_difference_detected": true, "detection_required": true}
+        - {"window": "minkowski_S_ball1__885_checker_dilation_k1", "window_carries_amplitude_somewhere": true, "planted_difference_detected": true, "detection_required": true}
+        - {"window": "minkowski_S_ball2__885_checker_dilation_k2", "window_carries_amplitude_somewhere": true, "planted_difference_detected": true, "detection_required": true}
+        - {"window": "minkowski_S_far_shell__origin_present", "window_carries_amplitude_somewhere": true, "planted_difference_detected": true, "detection_required": true}
+        - {"window": "minkowski_S_zero__the_885_support_window", "window_carries_amplitude_somewhere": true, "planted_difference_detected": true, "detection_required": true}
+        - {"window": "readout_keyed_inflation", "window_carries_amplitude_somewhere": true, "planted_difference_detected": true, "detection_required": true}
+        - {"window": "size_keyed_inflation", "window_carries_amplitude_somewhere": true, "planted_difference_detected": true, "detection_required": true}
+        - {"window": "union_box_with_dilation", "window_carries_amplitude_somewhere": true, "planted_difference_detected": true, "detection_required": true}
+      windows_where_detection_was_required: 9
+      windows_that_MISSED_a_planted_difference:
+
+      planted_difference_DETECTED_by_the_partition: true
+      null_control_invents_a_difference: false
+      set_identical_window_pairs:
+        - ["readout_keyed_inflation", "size_keyed_inflation"]
+      set_identical_pairs_land_in_the_same_class: true
+      reading: "Three-way control.  The partition SEES a planted difference on every window that carries any amplitude; it does NOT invent one on an unperturbed re-read; and it puts windows that really are the same set into the same class rather than keying on the map's name.  A partition that could only ever report 'all the same' -- or only ever 'all different' -- would make Q1's verdict vacuous; both failure modes are ruled out."
+    finding: "3 admissible catalogue maps break containment and 0 of them entered the partition; the independently planted breaker is admissible=True, contains the support on 4/12 configurations and is excluded=True.  5 non-admissible maps are refused and 0 entered. A planted amplitude difference is detected on every window that carries amplitude (0 misses), the null control raises no false alarm (False), and set-identical pairs share a class (True)."
+    pass: true
+
+[L_OBLIGATION_MAP]  pass=True
+    lemma: "GBW1b: the terminal detector-distribution normalization N is a JOINT kernel-window obligation.  Formalized: N is the map (R, theta, W) -> Z(R, theta, W) = sum_{x in W} |A_{R,theta}(x)|^2 on the record configuration R, the kernel phase gain theta, and an admissible containment-holding window W, together with the identification of Z with a weight on the axiom-level readout."
+    components:
+      - {"component": "(a) WINDOW", "statement": "which admissible containment-holding window W is read", "verdict": "LOAD-BEARING -- does not collapse", "dimensions": 1, "computed_evidence": "9 containment-holding admissible windows fall into 1 class at LINEAR order and 8 classes under Z; 35 of 36 pairs separate; the only non-separating pair is set-identical.", "named_convention_if_load_bearing": "ONE window convention: which member of 887's admissible containment-holding space is the detector window.  It is NOT reducible to a scale: the classes include a Minkowski dilation family, a bounding box, a hull-like axis closure and a union map, and Z separates all of them.", "discharged_by": "nothing available in this lineage.  887 tested seven axiom-grounded selectors and exactly one bit, and it fixed only the LOWER bound (containment).  Nothing in the four axioms selects among the containment-holding windows, and this cycle shows the choice is not free at quadratic order."}
+      - {"component": "(b) KERNEL", "statement": "the phase gain theta", "verdict": "LOAD-BEARING, but exactly one scalar", "dimensions": 1, "computed_evidence": "|u(theta)| = 1 exactly, so theta is pure phase; Z = sum_d M_d T_d(cos phi) with d <= 4, verified on 648 cells with 0 violations; interference orders present [0, 1, 2, 3, 4]; 7/12 configurations actually move with theta on the fine grid.", "named_convention_if_load_bearing": "ONE scalar: the value of cos phi = (1-theta^2)/(1+theta^2).  Not a function, not a family -- Z depends on theta only through this single number, polynomially, at degree at most the walk depth.", "discharged_by": "a kernel-block premise.  It is outside GBW1a entirely, which is the whole reason 885 re-scoped GBW1: theta is a KERNEL_SHAPE coordinate of the 884 chart."}
+      - {"component": "(c) INTERFACE", "statement": "the linear-readout / quadratic-amplitude identification the composed-record event-space step must supply", "verdict": "ABSENT FROM THIS LINEAGE -- priced as a named import", "dimensions": 5, "computed_evidence": "tracked-file scan over 18547 paths and 5 probes returns 0 hits; 6 required properties are derived from Z's computed structure, of which 5 are owed and 1 already banked.", "named_convention_if_load_bearing": "the import 'composed-record event space (Cycle 878 lineage)', with required properties IF1, IF3, IF4, IF5, IF6 as stated in certificate J.  IF1 is the sharpest: the barrier puts I and Z on essentially disjoint loci.", "discharged_by": "the event-space step, which this worktree does not carry."}
+      - {"component": "(d) RESIDUAL", "statement": "GBW1b's residual dimension given each import", "verdict": "computed below", "dimensions": 7, "computed_evidence": "sum of the three rows above", "named_convention_if_load_bearing": null, "discharged_by": null}
+    residual_scenarios:
+      - {"if_supplied": "nothing", "residual_dimension": 7, "what_remains": "one window convention, one kernel scalar, and 5 interface properties"}
+      - {"if_supplied": "the kernel scalar cos phi alone", "residual_dimension": 6, "what_remains": "the window convention and the interface -- and note that supplying theta does NOT collapse the window, because certificate G separates windows at EVERY theta in the grid"}
+      - {"if_supplied": "the event-space interface alone", "residual_dimension": 2, "what_remains": "the window convention and the kernel scalar"}
+      - {"if_supplied": "the event-space interface AND the kernel scalar", "residual_dimension": 1, "what_remains": "exactly the window convention -- which before this cycle was believed to be gauge"}
+      - {"if_supplied": "a window convention AND the kernel scalar", "residual_dimension": 5, "what_remains": "the interface only"}
+    headline: "GBW1b prices at 7 dimensions: 1 window convention + 1 kernel scalar + 5 owed interface properties."
+    what_changed_versus_the_885_pricing: "885 priced N as SUPPLIED and named two obstructions: the theta-coupling and the linear/quadratic identification.  887 then made it plausible that the window half was free, because the whole inflation freedom is invisible to the linear readout.  This cycle CLOSES that question in the negative: the window half does NOT collapse.  GBW1b therefore has three live components, not two, and the window convention -- which GBW1a had reduced to a centre convention on the annular chart -- is re-armed at quadratic order as a choice among distinct Z classes."
+    pass: true
+
+[M_HONESTY]  pass=True
+    what_this_cycle_does_NOT_do:
+      - "It does not close GBW1b and does not close Gate B.  It PRICES GBW1b and answers one question inside it."
+      - "It does not construct the composed-record event space.  The absence scan is a scan; nothing is reconstructed."
+      - "It does not prove that NO window map anywhere gives a collapsing Z.  C892_T2 states the exact condition under which a collapse would hold, and the catalogue exhibits a witness that violates it; window maps outside 887's space are not covered."
+      - "It does not derive the barrier B(R) = supp(R); that is the identification 885 already named, and every result here is conditional on it.  A different barrier would relocate the amplitude and could change Q1's answer -- that dependence is the single largest scope limit."
+      - "It does not certify the amplitude construction as physics.  The walk, the box radius 4 and the depth 4 are the pinned 885 construction, reproduced exactly; the results are about THAT construction."
+    steelman_against_this_cycle: "The strongest objection is that Q1's answer is an artifact of the barrier: because propagation is blocked ON supp(R), all amplitude sits outside it, so of course a bigger window catches more.  That objection is correct and it is exactly what certificates E and G prove -- and it is the finding, not a defect.  The window's invisibility at linear order came from the SAME axiom clause ('only records are readable') that makes it visible at quadratic order once the barrier expels amplitude from the records.  Two reasonable answers therefore existed a priori, and the computation picks one.  The residual force of the objection is that a different barrier convention could invert the result, which is why the barrier is carried explicitly as a hypothesis of C892_T1 and named in the scope limits."
+    load_bearing_positives:
+      - "C892_T1 amplitude expulsion: reach is disjoint from supp(R) on 12/12 configurations, so amplitude inside the support is exactly the seed."
+      - "C892_T2 window monotonicity with the exact difference formula, verified with zero violations on every nested pair and cell."
+      - "C892_T3 the path-length interference spectrum: Z is a degree-4 polynomial in cos phi, checked exactly on every cell."
+      - "C892_T4 bipartite parity selection predicts which interference orders can appear from the source parity alone."
+      - "Z is finitely additive over disjoint window pieces -- the one Born-shaped property the construction supplies for free."
+    load_bearing_negatives:
+      - "The window extent is NOT gauge at quadratic order: the 887 readout-gauge theorem does not extend past the linear order."
+      - "Normalizing Z by the total box mass does NOT remove theta."
+      - "Z VANISHES on containment-holding admissible windows for the frozen-walk configurations, so a strictly positive weight is not available on this family without an extra hypothesis."
+      - "The linear readout and the quadratic weight are supported on essentially disjoint loci, so no pointwise identification exists under the current barrier."
+    exact_scope: "One 12-configuration family (digest 30edaa3d5ca03c24) in a box of radius 4 with walk depth 4; one catalogue of 17 named window maps AST-extracted from the pinned 887 primary; one theta grid of 6 values plus a 27-value fine grid used only for the structure characterization; exact arithmetic throughout."
+    pass: true
+
+[N_CONTROLS]  pass=True
+    checks:
+      exact_arithmetic_only: true
+      no_floating_point_in_certified_values: true
+      deterministic_double_build: true
+      runtime_within_cap: true
+      firewall_hits_zero: true
+      theta_grid_complete: true
+      catalogue_complete: true
+      both_orders_present: true
+      restriction_gate_reproduced: true
+      family_digest_matches_887: true
+    elapsed_sec_at_gate: 20.902
+    runtime_cap_sec: 900
+    outcome_neutrality: "None of these gates requires a particular answer to Q1.  They require the pinned results to be reproduced, the catalogue to be complete, BOTH orders to be computed, the theta grid to be complete, and the build to be deterministic."
+    finding: "10/10 controls hold."
+    pass: true
+
+receipt: outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json
+all_certificates_pass: True
+elapsed_sec: 20.902

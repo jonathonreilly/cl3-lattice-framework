@@ -1,0 +1,224 @@
+{
+  "adversarial_verdict": "SURVIVES every adversarial construction",
+  "born_vocabulary_leaked": [],
+  "certificate_pass": {
+    "A_PINS": true,
+    "B_RESTRICTION": true,
+    "C_PARTITION": true,
+    "D_NEW_WINDOWS": true,
+    "E_ADVERSARIAL": true,
+    "F_KERNEL": true,
+    "G_INTERFACE": true,
+    "H_TEETH": true,
+    "I_VERDICT": true
+  },
+  "claims": [
+    {
+      "claim": "the restriction gate reproduces 885 and 887",
+      "evidence": "7/7 checks reproduce under independent machinery: 885's rows match value for value (0 mismatches), theta-dependence 7/12, degenerate control 0/12, readout gauge 9/12.",
+      "survives": true
+    },
+    {
+      "claim": "the containment-holding catalogue splits into 8 Z classes while collapsing to 1 class at linear order",
+      "evidence": "Independently, 9 containment-holding windows give 1 LINEAR class(es) and 8 QUADRATIC classes.  Partition agreement with the primary: True.",
+      "survives": true
+    },
+    {
+      "claim": "C892-T1 amplitude expulsion",
+      "evidence": "0 counterexamples",
+      "survives": true
+    },
+    {
+      "claim": "C892-T2 window monotonicity and the exact difference formula",
+      "evidence": "Four structural attacks and one direct test of the collapse condition.  Amplitude-free enlargement moved Z on 0 configurations; amplitude-bearing enlargement failed to raise Z on 0; a sweep of 7192 generated containment-holding windows produced 0 violations; the hunt for amplitude inside the barrier beyond the seed produced 0 counterexamples; and the collapse condition itself holds on 2/12 configurations.",
+      "survives": true
+    },
+    {
+      "claim": "C892-T3 the path-length interference spectrum",
+      "evidence": "C892-T3 re-derived independently from explicit path tallies: 648 checks, 0 violations, orders [0, 1, 2, 3, 4]; |u| = 1 with 0 failures.  C892-T4: 0 parity mispredictions.",
+      "survives": true
+    },
+    {
+      "claim": "C892-T4 bipartite parity selection",
+      "evidence": "0 mispredictions",
+      "survives": true
+    },
+    {
+      "claim": "the interface requirements are derived from Z, not from Born's rule",
+      "evidence": "6 requirements; 0 Born-rule needles in the requirement source; 6/6 of the computed facts they cite reproduce under independent machinery.",
+      "survives": true
+    },
+    {
+      "claim": "the three windows the primary never evaluated land where C892-T2 predicts",
+      "evidence": "3 new windows built; 3 are admissible AND containment-holding and therefore testable; 3 of those land exactly where C892-T2 predicted BEFORE Z was computed.  0 mispredictions.",
+      "survives": true
+    }
+  ],
+  "claims_refuted": [],
+  "claims_survived": 8,
+  "cycle": 892,
+  "elapsed_sec": 11.568,
+  "firewall_hits": 0,
+  "generated_windows_swept": 7192,
+  "independence": "The amplitude machinery in this file (STEPS, GRID, centroid, emitters, path_tally, circle_point, raise_power, field, norm_on) is written from scratch and enumerates paths by depth-first search.  The primary uses a length-layered dynamic program.  No primary function is imported, executed or AST-extracted; the primary is read as text and JSON only.",
+  "independent_linear_classes": 1,
+  "independent_partition": [
+    [
+      "axis_segment_closure"
+    ],
+    [
+      "bounding_box"
+    ],
+    [
+      "minkowski_S_ball1__885_checker_dilation_k1"
+    ],
+    [
+      "minkowski_S_ball2__885_checker_dilation_k2"
+    ],
+    [
+      "minkowski_S_far_shell__origin_present"
+    ],
+    [
+      "minkowski_S_zero__the_885_support_window"
+    ],
+    [
+      "readout_keyed_inflation",
+      "size_keyed_inflation"
+    ],
+    [
+      "union_box_with_dilation"
+    ]
+  ],
+  "independent_quadratic_classes": 8,
+  "kernel_identity_checks": 648,
+  "kernel_identity_violations": 0,
+  "new_windows": [
+    {
+      "admissible": true,
+      "containment_holds": true,
+      "landed_with": "a NEW class",
+      "prediction": "forms a NEW class",
+      "prediction_correct": true,
+      "window": "NEW_rank_threshold_filter_k3"
+    },
+    {
+      "admissible": true,
+      "containment_holds": true,
+      "landed_with": "a NEW class",
+      "prediction": "forms a NEW class",
+      "prediction_correct": true,
+      "window": "NEW_morphological_closing_ball1"
+    },
+    {
+      "admissible": true,
+      "containment_holds": true,
+      "landed_with": [
+        "axis_segment_closure"
+      ],
+      "prediction": "joins the class of axis_segment_closure",
+      "prediction_correct": true,
+      "window": "NEW_union_rank_with_axis_closure"
+    }
+  ],
+  "overall": "ALL CLAIMS SURVIVE",
+  "partitions_agree": true,
+  "restriction_gate": "7/7 checks reproduce under independent machinery: 885's rows match value for value (0 mismatches), theta-dependence 7/12, degenerate control 0/12, readout gauge 9/12.",
+  "role": "independent check, spec'd to refute",
+  "runtime_cap_sec": 900,
+  "scope": "12 configurations, 17 catalogue maps plus 3 new ones, 6 thetas, plus a sweep of 7192 generated containment-holding windows.  Exact arithmetic throughout; independent path-enumeration machinery.",
+  "self_sha256": "140342fea4c183814ae12bf4c7938b5813d711e517158ececad7b537adc07625",
+  "source_pins": [
+    {
+      "git_blob": "360eed9e17eab1af19ca03d7ea1161dafaf56da0",
+      "path": "scripts/frontier_cycle892_gbw1b_pricing_2026_07_28.py",
+      "sha256": "76100068829f2143bc629610954858875a1ad6569246d43e59d5502c883b5c1f"
+    },
+    {
+      "git_blob": "722b1b7c50a17fffe6b0a4e666970d5aaf0e74c2",
+      "path": "outputs/gbw1b_pricing_cycle892_receipt_2026_07_28.json",
+      "sha256": "1a8c220959038a7f09e0576e745d8497841c7cd102307834be8684af513b5fae"
+    },
+    {
+      "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",
+      "path": "scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py",
+      "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32"
+    },
+    {
+      "git_blob": "553bba1fbd427f27c5606b6f27bd592a91e9c3c0",
+      "path": "outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json",
+      "sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997"
+    },
+    {
+      "git_blob": "00e66110f74051e13af8952d2cb79af214570474",
+      "path": "scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py",
+      "sha256": "d98c0b43c0efa9ef33727180b109e74ffd34c4f805bf498f8cf3babb819c86b1"
+    },
+    {
+      "git_blob": "4bb8982beb2b9d3eeeaa15aa459fa9e1df461a5e",
+      "path": "logs/runner-cache/frontier_cycle885_gbw1_record_window_2026_07_28.txt",
+      "sha256": "1e45cb05ace173b01506d57019fb5017e1ea59f65b006c9a741df9fd5489bd82"
+    },
+    {
+      "git_blob": "0fbcf92fc98b0d88d436a05efdc33449c52473db",
+      "path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py",
+      "sha256": "139ed9e2fce1775d41e5d46bf2d6b43063c47f4a3a0cf2c55edf4d8ce2f4fc83"
+    },
+    {
+      "git_blob": "643fb824665d967f770c8939977a0f4010839564",
+      "path": "outputs/window_freedom_cycle887_receipt_2026_07_28.json",
+      "sha256": "d1807305098ae995224118f93b301fc822ef0d6efc9e49c4a16e90d694592f86"
+    },
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+      "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+      "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+    },
+    {
+      "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+      "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+    }
+  ],
+  "teeth": [
+    {
+      "caught": true,
+      "tooth": "T1_tampered_pin"
+    },
+    {
+      "caught": true,
+      "tooth": "T2_dropped_window"
+    },
+    {
+      "caught": true,
+      "tooth": "T3_hardcoded_partition"
+    },
+    {
+      "caught": true,
+      "tooth": "T4_leaked_verdict"
+    },
+    {
+      "caught": true,
+      "tooth": "T5_skipped_theta"
+    },
+    {
+      "caught": true,
+      "tooth": "T6_planted_difference_blindness"
+    },
+    {
+      "caught": true,
+      "tooth": "T7_tampered_family"
+    },
+    {
+      "caught": true,
+      "tooth": "T8_blind_structural_predictor"
+    }
+  ],
+  "teeth_bit": 8,
+  "teeth_count": 8,
+  "what_this_checker_could_not_break": "The verdict rests on the barrier identification B(R) = supp(R), which this checker inherits from the pinned 885 construction and does not test.  If a different barrier were adopted, amplitude would relocate and Q1 could invert.  That is a scope limit the primary already names, and it is the one route to the collapse that neither cycle closes."
+}

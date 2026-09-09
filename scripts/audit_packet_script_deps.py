@@ -45,6 +45,9 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    'multiplicity_freeness_terminal_clause_cycle890_bounded_theorem_note_2026-07-28': ['scripts/frontier_cycle890_multiplicity_freeness_independent_check_2026_07_28.py'],
+    'gbw1b_priced_quadratic_gauge_break_cycle892_bounded_theorem_note_2026-07-28': ['scripts/frontier_cycle892_gbw1b_independent_check_2026_07_28.py', 'scripts/frontier_cycle887_window_freedom_2026_07_28.py', 'scripts/multiplicity_cycle885_configuration_fixture_2026_09_08.py'],
+    'mixed_degree_reaches_not_selects_cycle904_bounded_theorem_note_2026-07-28': ['scripts/frontier_cycle904_mixed_degree_independent_check_2026_07_28.py'],
     "admissibility_sharp_qubit_record_writer_orientation_axiom_decision_bounded_theorem_note_2026-09-01": [
         "scripts/admissibility_random_axis_m2_matter_repeat_selector_local_compiler_2026_09_01.py",
         "scripts/admissibility_block36_specific_nn_active_cut_record_front_2026_09_01.py",

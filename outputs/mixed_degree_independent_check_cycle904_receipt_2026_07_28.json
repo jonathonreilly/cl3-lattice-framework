@@ -1,0 +1,305 @@
+{
+  "claims_refuted": [
+    "CB_GENERATOR_BOUND",
+    "CD_HEIGHT_BOUND"
+  ],
+  "controls": {
+    "blocked_modules_loaded": [],
+    "blocklisted_modules": [
+      "frontier_cycle904_mixed_degree_census_2026_07_28",
+      "mixed_degree_census_cycle904_receipt_2026_07_28",
+      "frontier_cycle882_readout_identity_2026_07_28.py",
+      "readout_identity_cycle882_receipt_2026_07_28",
+      "readout_identity_cycle882_independent_check_2026_07_28",
+      "frontier_cycle883_record_weight_pair_2026_07_28.py",
+      "MINIMAL_AXIOMS_2026-06-29",
+      "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION",
+      "MIXED_DEGREE_REACHES_NOT_SELECTS_CYCLE904_BOUNDED_THEOREM_NOTE_2026-07-28",
+      "MINIMAL_AXIOMS_2026-06-29"
+    ],
+    "exit_policy": "Exit nonzero on failed required consistency/control checks; legitimate wider-protocol disagreements remain reported data.",
+    "firewall_hits": [],
+    "floating_point_in_certified_quantities": false,
+    "independence": "The numerical comparisons use separate matrix routines, Faddeev-LeVerrier determinants and exponent-lattice reachable sets. Independence is limited to those numerical algorithms: T4 intentionally executes the actual primary adjudicator and its seven-function AST closure; other declared plant controls use the companion's own adjudicator.",
+    "pass": true,
+    "runtime_limit_seconds": 120,
+    "runtime_seconds": 3.456022,
+    "runtime_under_limit": true,
+    "stdout_bytes": 9755,
+    "stdout_under_limit": true
+  },
+  "cycle": 904,
+  "fidelity_audit": {
+    "alpha_family_survives": true,
+    "checker_families": 8793,
+    "fdim_family_survives": true,
+    "scopes": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "smuggling_found": false
+  },
+  "generator_disagreement": {
+    "checker_atoms": 925,
+    "primary_atoms": 119,
+    "sample": [
+      "-2/1",
+      "-2/3",
+      "-4/1",
+      "4/3",
+      "5/1",
+      "5/3",
+      "-6/1",
+      "-8/1",
+      "8/3",
+      "-9/1",
+      "-4/9",
+      "2/9",
+      "4/9",
+      "-12/1",
+      "-15/1",
+      "15/1",
+      "-16/1",
+      "16/1",
+      "16/9",
+      "-27/1"
+    ],
+    "values_the_primary_lacks": 52
+  },
+  "height_bound_attack": {
+    "broken_at_power_cap": 5,
+    "coefficients_above_H": [
+      {
+        "atom": "permanent(J^5)",
+        "height": 3188646,
+        "power_cap": 5,
+        "value": "3188646/1"
+      },
+      {
+        "atom": "permanent(L^5)",
+        "height": 6377292,
+        "power_cap": 5,
+        "value": "6377292/1"
+      }
+    ],
+    "new_values": 2738,
+    "verdict_moved": false
+  },
+  "methodological_finding_for_the_primary": "F3's alphabet size is an INPUT the adjudicator cannot verify; a relation that misreports it is graded GENUINE SELECTION. The method is sound only when the alphabet is independently recounted, which this checker does.",
+  "minimality_attack": [
+    {
+      "checker_finds": 19,
+      "claim": "minimal word length to the target is 1",
+      "holds": true
+    },
+    {
+      "checker_finds": 19,
+      "claim": "target witness count = 19",
+      "holds": true
+    },
+    {
+      "checker_finds": false,
+      "claim": "the target is NOT itself a native atom (word length 0)",
+      "holds": true
+    },
+    {
+      "checker_finds": true,
+      "claim": "|K| is monotone in W",
+      "holds": true
+    },
+    {
+      "checker_finds": true,
+      "claim": "|R| is monotone in W",
+      "holds": true
+    }
+  ],
+  "reachable_set_agreement": {
+    "agree": true,
+    "checker": 558,
+    "primary": 558
+  },
+  "refutation_ledger": {
+    "CA_PIN_AGREEMENT": "PINS AGREE",
+    "CB_GENERATOR_BOUND": "BOUND REFUTED -- the primary's declared native space is strictly smaller than a justifiable reading of the same supplied structure",
+    "CC_REACHABLE_SET": "NOT REFUTED -- an independent algorithm reproduces the count and the target membership exactly",
+    "CD_HEIGHT_BOUND": "H REFUTED AS A UNIVERSAL BOUND -- native evaluations above H exist at higher matrix powers and they reach values the primary's set does not contain",
+    "CE_V3_THEOREM": "V3 CLAIMS NOT REFUTED -- the core claims survive and every numeric gap disagreement falls on a row the primary correctly marked bound-relative",
+    "CF_FIDELITY": "FIDELITY ADJUDICATION UPHELD -- the hit survives two extra scopes (n = 5, 6), the competing-family count survives with a different alphabet, and no target literal appears anywhere in the census machinery outside the declared constants and the declared plants",
+    "CG_MINIMALITY": "MINIMALITY CLAIMS NOT REFUTED -- every one recomputed to the primary's published value",
+    "CH_TEETH": "8/8 teeth bit"
+  },
+  "role": "independent check, spec'd to refute",
+  "source_pins": [
+    {
+      "git_blob": "631e7044423f798c32ba4e6d160eff50b63f6508",
+      "path": "scripts/frontier_cycle904_mixed_degree_census_2026_07_28.py",
+      "sha256": "73fe5d7b7fc4109dfb46d17d18600b50d44944fec8f6c6c1a9b618feb51b6a1d"
+    },
+    {
+      "git_blob": "a9f96f3ddc86b924a4019ce12098d31c7a50c595",
+      "path": "outputs/mixed_degree_census_cycle904_receipt_2026_07_28.json",
+      "sha256": "f15f47c1aa67a2a3321fd9a250d78ba4679fb32f0a7ff5cdb17021d1a33ea432"
+    },
+    {
+      "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/scripts/frontier_cycle882_readout_identity_2026_07_28.py.txt",
+      "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a"
+    },
+    {
+      "git_blob": "9d70fdf701b3ad9619d7dffd4425fadd88eedbeb",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/outputs/readout_identity_cycle882_receipt_2026_07_28.json",
+      "sha256": "85657e5afc72c510f3f9b8d631a282d6a2af0f04aecce257c5b4b59a915ccf31"
+    },
+    {
+      "git_blob": "33c99a99178316b1eee2414bcbfafa8298088b57",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/outputs/readout_identity_cycle882_independent_check_2026_07_28.json",
+      "sha256": "3f595f40771eb6b01717c69a5bac275cb933ead7169b5fb6b3b98c841c3a2e88"
+    },
+    {
+      "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/scripts/frontier_cycle883_record_weight_pair_2026_07_28.py.txt",
+      "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c"
+    },
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "9a449956422a5687b5b1346f428c9e4e35489038",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
+      "sha256": "4d742bcc68a1e7cdb154b366e671f576e9b719b3206445b97666c812a790e58c"
+    },
+    {
+      "git_blob": "c316af72eb74eceabe90f54289ffa96555987016",
+      "path": "docs/MIXED_DEGREE_REACHES_NOT_SELECTS_CYCLE904_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "d364eb166bb24588f219d4e43b364b4897551bac8ddb93b1a586c28a58f40e4b"
+    },
+    {
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    }
+  ],
+  "summary": "Current consistency is determined by all required computed checks. Wider-alphabet and height disagreements are explicitly different supplied protocols. Exact inclusion preserves the original candidates only when the full-set tests succeed; finite profiles and competing formulas imply no physical no-go or probability.",
+  "teeth": [
+    {
+      "detected": true,
+      "exit": 0,
+      "tooth": "T1_TAMPERED_PIN"
+    },
+    {
+      "detected": true,
+      "exit": 0,
+      "tooth": "T2_DROPPED_GENERATOR"
+    },
+    {
+      "detected": true,
+      "exit": 0,
+      "tooth": "T3_HARDCODED_REACHABLE_SET"
+    },
+    {
+      "detected": true,
+      "exit": 0,
+      "tooth": "T4_LEAKED_VERDICT"
+    },
+    {
+      "detected": true,
+      "exit": 0,
+      "tooth": "T5_NARROWED_BOUND_UNDISCLOSED"
+    },
+    {
+      "detected": true,
+      "exit": 0,
+      "tooth": "T6_PLANTED_NATIVE_BLINDNESS"
+    },
+    {
+      "detected": true,
+      "exit": 0,
+      "tooth": "T7_SCOPE_FAMILY_FAKE"
+    },
+    {
+      "detected": true,
+      "exit": 0,
+      "tooth": "T8_NONDETERMINISM"
+    }
+  ],
+  "teeth_that_bit": 8,
+  "v3_attack": {
+    "checker_range": [
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10
+    ],
+    "disagreements": [
+      {
+        "checker": true,
+        "gap": 3,
+        "primary": false
+      },
+      {
+        "checker": true,
+        "gap": 3,
+        "item": "target",
+        "primary": false
+      }
+    ],
+    "gap_table": [
+      {
+        "gap": 1,
+        "minus_three_reachable": true,
+        "target_at_this_gap": true,
+        "v3_values": [
+          -12,
+          12
+        ]
+      },
+      {
+        "gap": 2,
+        "minus_three_reachable": true,
+        "target_at_this_gap": true,
+        "v3_values": [
+          -6,
+          6
+        ]
+      },
+      {
+        "gap": 3,
+        "minus_three_reachable": true,
+        "target_at_this_gap": true,
+        "v3_values": [
+          -4,
+          4
+        ]
+      },
+      {
+        "gap": 4,
+        "minus_three_reachable": true,
+        "target_at_this_gap": true,
+        "v3_values": [
+          -3,
+          3
+        ]
+      }
+    ],
+    "primary_range": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/non_abelian_gauss_law_no_record_pattern_solutions_check_2026_09_03.py
+runner_sha256: 3044065787660ae0af2ced03c69ab5976f14b979a608c1074cbe4fb0bac19ca8
+input_fingerprint_sha256: 3530c9752a2c94c611db1c048ea7b4e2de0da1278d5b10fab7f5789384c5bb70
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 1.01
+status: ok
+----- stdout -----
+SOURCE_INPUTS: exact own-note and current-memo pins verified; quantum/readout suppliers conditional
+declared: 4 corners, a fermion doublet each (8 JW modes); 4 minimal u(2) quantum links, 4-dim = 2 designed records each; G_v^a = rho_v^a + sum_{e at v} E^a_{e,v}
+PASS A1 [exact] the declared block: a fermion doublet at each of 4 corners (8 Jordan-Wigner modes, exact anticommutators) and 4 minimal quantum links; dim = 2^8 x 4^4 = 65536 = 2^16 record patterns; H_hop Hermitian with 131072 nonzeros; every entry of the law and the generators is a dyadic rational of magnitude <= 4, so every [exact] zero test below is exact
+PASS A2 [exact] the designed link: P_i + P_j = I (one rishon per link), the 4-dim space factorises as (orientation record) x (colour record), U^{ab} = c_{i,a} c^dag_{j,b} is truncated with U U = 0 in all 16 colour pairings and sum_{ab} (U^dag U + U U^dag) = 2 I in place of unitarity, and the two ends carry commuting su(2)s
+PASS A3 [exact] the plaquette holonomy U_p^{ad} = sum U_{01}^{ab} U_{12}^{bc} U_{23}^{cx} U_{30}^{xd} has 32 nonzero entries and its traceless su(2) colour part 48: the designed link carries a colour holonomy, which the native-hop scalar-holonomy result of 2026-05-23 does not cover
+PASS B1 [exact] [G_v^a, H_hop] = 0 for all 12 pairs (v, a): the covariant hop is exactly gauge invariant under the local su(2)
+PASS B2 [exact] [Q_v, H_hop] = 0 at all 4 corners: the u(1) summand is conserved by the same law
+PASS B3 [exact] closure [G_v^a, G_v^b] = i eps^{abc} G_v^c on all 36 same-corner pairs: an exact su(2) at each corner
+PASS B4 [exact] [G_v^a, G_w^b] = 0 on all 108 cross-corner pairs, the two ends of a shared link annihilating each other
+PASS B5 [exact] [Q_v, G_w^a] = 0 on all 48 pairs: the u(1) is central, so each corner carries an exact u(2) = su(2) + u(1) in the supplied representation as a gauge algebra
+PASS B6 [exact] genuinely non-abelian: max |[G_v^1, G_v^2]| = 1.5 over the corners, every G_v^3 nonzero as an operator
+PASS C1 [exact] the record basis is the joint Z eigenbasis of the 8 fermion records and the 4 x 2 link records; G_v^3 and Q_v are pure Z at every corner, so both are record-diagonal
+PASS C2 [exact] G_v^1 and G_v^2 are not: 393216 off-diagonal entries each, summed over the corners. G_v^1 is the Cartan generator of the same su(2) in a rotated colour frame, so G_v^3's readability is an artefact of aligning the record basis with tau^3
+PASS C3 [exact] the corner Gauss Casimir sum_a (G_v^a)^2 is NOT record-diagonal: 98304 off-diagonal entries summed. Gauge invariance and record-diagonality are independent here
+PASS C4 [exact] the matter-only Casimir sum_a (rho_v^a)^2 IS record-diagonal and equals (3/4) n_v (2 - n_v) exactly at all 65536 patterns and every corner: whether the matter at a corner is colourless registers, as whether n_v is even
+PASS C5 [exact] the centre parity Q_v even is record-diagonal, integer-valued and colour-frame-free, holding on 4096 of the 65536 patterns: necessary for a singlet, but not sufficient; matter occupation and link-end data also give invariant diagonal content
+PASS C5a [exact] patterns16125/16384 have the same centre parities but different matter occupancy
+PASS D1 [exact] the abelian Cartan cut: exactly 544 of the 65536 record patterns have G_v^3 = 0 at every corner, and all 544 also have Q_v even
+PASS D2 [exact] ZERO of the 65536 record patterns is Gauss-invariant: a pattern lies in the joint kernel exactly when G_v^3 x = 0 for all v and the Gram diagonal sum_v ||G_v^+ x||^2 vanishes; 0 pass both, by exact equality on quarter-integer entries, no tolerance
+PASS D2a [exact] actual total Gauss Casimir diagonals equal the positive transverse bound plus full Cartan square, including cross terms, on every pattern; minimum at least2
+PASS D3 [numerical, 1e-09] the singlet sector -- the joint kernel of the twelve G_v^a -- is 82-dimensional inside the 544-dimensional Cartan cut, the smallest nonzero raising-Gram eigenvalue on that cut being 2.0000
+PASS D4 [exact] independent cross-check by the SU(2)^4 Haar character integral dim = int prod_v dg_v prod_v (2 + chi_v) prod_e (chi_i + chi_j), c(p) = 2 M(p) + M(p+1) = [2, 1, 2, 2, 4, 5]: exact integer arithmetic gives 82
+PASS D5 [numerical, 1e-9] the singlet projector is not record-diagonal: largest off-diagonal 0.25, largest diagonal 0.2500, record hull exactly the 544-pattern Cartan cut, so 82 <= 544 <= 544 and the step from 544 to 82 additionally requires phase-sensitive information; fixed-basis joint record probabilities alone do not certify singlet membership
+PASS D5b [negative control, 1e-9] adding I/8 fails the actual projector idempotence/trace gate
+PASS D5a [numerical, 1e-12] an actual singlet and a single-bit phase flip have identical complete record probabilities but different joint-Gauss membership
+PASS D6 [exact] abelian control on the SAME carrier: the u(1) Gauss law Q_v = q0 at every corner has 1312 record-pattern solutions at q0 = 2, 32 at q0 = 1 and 3, none at 0 and 4 -- a nonempty condition on record values on the very block where the non-abelian law has none: 1312 against 0
+PASS E1 [numerical, 1e-10] one corner alone, the 16-dim block (matter doublet Fock space x one link end): the corner singlet space is 5-dimensional, and inside the 4 record patterns with one matter quantum and the rishon at this end exactly 1 singlet state survives
+PASS E2 [numerical, 1e-12] that forced state is (|1>_m |0>_L - |0>_m |1>_L)/sqrt 2: Schmidt spectrum (0.707107, 0.707107) across the two colour records, rank 2, reduced state maximally mixed. Schmidt rank is basis invariant within this occupied matter/link sector; actual Gauss annihilation is checked
+PASS E2c [negative control, 1e-12] the relative-phase-removed triplet is not in the Gauss kernel
+PASS E2a [numerical, 1e-12] the full auxiliary rank-five projector has partial-transpose eigenvalue -1/2 across matter-Fock(4) versus link(4), excluding a product-basis diagonalization across that partition; this is not by itself a theorem about arbitrary physical site encodings
+PASS E2d [exact certificate plus 1e-12 comparison] full rank-five projector is four spectators plus the occupied singlet; exact Hermitian idempotent kernel projector
+PASS E2e [exact] local64D axes match actual full-carrier G_0 with outgoing i/incoming j and the stated matter-coordinate permutation
+PASS E2b [numerical, 1e-12] the actual two-link corner has dimension64 and singlet rank14; its incoming-i-orientation (absent local j end) compression is the auxiliary projector tensor I2
+PASS C5b [exact] an actual local integer-spin state has Casimir2 and Q0=2: even centre parity does not certify singlet membership
+PASS F1 [exact] the symmetric electric term sum_e sum_ends sum_a (E^a)^2 is the c-number 3.0 on the one-rishon sector -- an occupied end holds a doublet (3/4), an empty end a singlet (0), one end of each link occupied -- so g is inert and E_0(g) = E_0 + (3/2) g^2
+PASS F2 [numerical, 1e-10] in the 82-dim singlet sector the hop ground energy at t = 1 is E_0 = -5.830951894845, agreeing numerically with -sqrt 34; the full spectrum is symmetric about zero within tolerance with a 40-fold numerical zero
+PASS F2a [negative control, 1e-10] changing an interior eigenvalue by1/8 fails full reflection
+PASS F3 [numerical, 1e-10] the DECLARED one-sided variant sum_e sum_a (E^a_{e,i})^2, supplied only because the symmetric term is inert, is nonconstant and commutes with all twelve G_v^a exactly; it gives E_0 = -5.126268164739 at g^2 = 1. It breaks link-reversal symmetry: a supplied crutch, not a result
+per_element: checked exact sparse generator entries and nonzero supports on this supplied finite carrier
+per_site: checked local matter/link factors in the supplied model; physical site encoding and formation not derived
+per_mode: checked eight declared Jordan-Wigner modes; no universal claim about alternative mode or readout encodings
+per_block: checked one four-corner plaquette and its specified Gauss/readable algebra; numerical cuts labelled separately
+lattice_wide: checked and not executed — no larger-block, infinite-lattice, SU(3), continuum or confinement claim tested
+SUMMARY: on one plaquette with a designed fermion doublet per corner and the minimal u(2) quantum link, the gauge algebra is exact and the holonomy carries a colour part, while the non-abelian Gauss law has no record-pattern solutions: 0 of 65536, against 1312 for the abelian law on the same supplied carrier and basis. Invariant diagonal data include occupations, Casimirs and centre parity; fixed-basis probabilities do not determine singlet membership. No physical readout is derived.
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

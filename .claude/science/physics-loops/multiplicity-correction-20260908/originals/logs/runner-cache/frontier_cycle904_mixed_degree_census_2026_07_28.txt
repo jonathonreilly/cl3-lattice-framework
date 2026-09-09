@@ -1,0 +1,387 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle904_mixed_degree_census_2026_07_28.py
+runner_sha256: f1f20266fafac80686310630933a7a0e78d97740152086b009053599460818f6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.29
+status: ok
+----- stdout -----
+==============================================================================
+CYCLE 904 -- THE MIXED-DEGREE CENSUS: PRICING THE LAST SHAPE
+==============================================================================
+
+[PASS] A_PINS
+       Every cited artifact matched its pinned SHA-256 and git blob and contained
+       each required quotation character for character.
+
+[PASS] B_RESTRICTION_GATES
+       Both restriction gates reproduce the pinned values exactly: the
+       single-degree dichotomy never produced a nonzero singleton in 144
+       recomputed rows, and alpha^2 = c alpha returned {0, c} on every c tested,
+       including the target.
+
+[PASS] C_GENERATOR_SPACE
+       119 native atoms enumerated with provenance, 17 distinct nonzero values,
+       degree-graded coefficient sets M_0..M_3 published, and the atom v3 range
+       computed as [-1, 0, 1, 2, 3].
+
+[PASS] D_CLOSURE_AND_BOUNDS
+       Closure rules published; the height bound is slack at the declared word
+       bound (max word height 262144 << H = 1000000), so the census's real bound
+       is the word bound W, and its growth is tabulated.
+
+[PASS] E_MIXED_DEGREE_SOLUTION_SETS
+       600 native two-term mixed-degree relations solved exactly; 116 of them
+       have a NONZERO SINGLETON solution set and 300 retain the zero member;
+       claims (i) and (iii) held on every row.
+
+[PASS] F_REACHABLE_SET
+       Reachable set computed exactly: 558 values at W = 1 and 1474 at W = 2.
+       Target reachable: True already at W = 1.
+
+[PASS] G_V3_CENSUS
+       Atom v3 range computed as [-1, 0, 1, 2, 3]; v3 = -3 is reachable already
+       at word bound 1; the brief's premise is refuted with an explicit two-atom
+       witness.
+
+[PASS] H_TARGET_ADJUDICATION
+       2/27 is reachable at word length 1 by 19 distinct
+       single-atom-over-single-atom witness(es); the best of them is
+       scope-uniform with family (n-1)/n^3; it fails only the discrimination
+       test, with selection power 1/442.
+
+[PASS] I_FAMILY_TEST
+       119 scope-uniform atoms give 14161 schema pairs and 442 distinct uniform
+       families; both named target families are among them; 115 distinct values
+       arise at n = 3.
+
+[PASS] J_FIDELITY_METHOD
+       Three-test fidelity method published and applied; the target hit passes
+       provenance and scope uniformity and fails discrimination, which is the
+       verdict-determining test.
+
+[PASS] K_MONOTONICITY
+       Monotonicity verified computationally: R grew 558 -> 1474 under W, and 558
+       -> 974 under a larger atom set, with containment holding in both
+       directions tested.
+
+[PASS] L_FALSIFIER_PLANTS
+       4 relations planted to pin 2/27 -- including one whose coefficients are
+       inflated past any divisor-search cap -- were every one detected as pinning
+       it and every one flagged by the test its defect belongs to; the near-miss
+       control was correctly NOT reported as pinning the target; none escaped as
+       a genuine selection.
+
+[PASS] M_COVERAGE_MAP
+       11 shapes in the assembled map, 0 unpriced; the sibling map is disclosed
+       as cross-branch with 19221 files and 265821962 bytes scanned and zero
+       sibling-artifact hits.
+
+[PASS] N_NO_GO_GATE
+       10 routes enumerated with markers; three negatives the block wanted FAILED
+       and are reported as failures; the steelman is answered by the
+       ranking-principle gap.
+
+------------------------------------------------------------------------------
+NATIVE ATOMS (value, v3, provenance)
+------------------------------------------------------------------------------
+  cubic_group_order            24/1  v3=   1  order of the proper cubic rotation
+  det(A)                        2/1  v3=   0  orbit-graph adjacency, 0/1 (Lattic
+  det(A^2)                      4/1  v3=   0  declared power closure: A to the p
+  det(Cyc)                      1/1  v3=   0  the C_n generator's permutation ac
+  det(Cyc^2)                    1/1  v3=   0  declared power closure: Cyc to the
+  det(Deg)                      8/1  v3=   0  degree matrix of the orbit graph
+  det(Deg^2)                   64/1  v3=   0  declared power closure: Deg to the
+  det(Id)                       1/1  v3=   0  identity on the orbit coefficient 
+  det(Id^2)                     1/1  v3=   0  declared power closure: Id to the 
+  det(J)                        0/1  v3=None  all-ones = the un-normalised group
+  det(J^2)                      0/1  v3=None  declared power closure: J to the p
+  det(L)                        0/1  v3=None  graph Laplacian Deg - A (the 2, -1
+  det(L^2)                      0/1  v3=None  declared power closure: L to the p
+  det(P)                        0/1  v3=None  group-averaging (Reynolds) project
+  det(P^2)                      0/1  v3=None  declared power closure: P to the p
+  det(Qp)                       0/1  v3=None  Id - P: projector onto the non-inv
+  det(Qp^2)                     0/1  v3=None  declared power closure: Qp to the 
+  diag(A)                       0/1  v3=None  orbit-graph adjacency, 0/1 (Lattic
+  diag(A^2)                     2/1  v3=   0  declared power closure: A to the p
+  diag(Cyc)                     0/1  v3=None  the C_n generator's permutation ac
+  diag(Cyc^2)                   0/1  v3=None  declared power closure: Cyc to the
+  diag(Deg)                     2/1  v3=   0  degree matrix of the orbit graph
+  diag(Deg^2)                   4/1  v3=   0  declared power closure: Deg to the
+  diag(Id)                      1/1  v3=   0  identity on the orbit coefficient 
+  diag(Id^2)                    1/1  v3=   0  declared power closure: Id to the 
+  diag(J)                       1/1  v3=   0  all-ones = the un-normalised group
+  diag(J^2)                     3/1  v3=   1  declared power closure: J to the p
+  diag(L)                       2/1  v3=   0  graph Laplacian Deg - A (the 2, -1
+  diag(L^2)                     6/1  v3=   1  declared power closure: L to the p
+  diag(P)                       1/3  v3=  -1  group-averaging (Reynolds) project
+  diag(P^2)                     1/3  v3=  -1  declared power closure: P to the p
+  diag(Qp)                      2/3  v3=  -1  Id - P: projector onto the non-inv
+  diag(Qp^2)                    2/3  v3=  -1  declared power closure: Qp to the 
+  isotype_invariant_dim         1/1  v3=   0  dimension of the invariant isotype
+  lattice_dim                   3/1  v3=   1  the 3 of Z^3 (Lattice axiom)
+  n                             3/1  v3=   1  orbit length = |C_n| = number of o
+  n_minus_1                     2/1  v3=   0  dimension of the non-invariant iso
+  neighbours                    6/1  v3=   1  nearest neighbours of a site in Z^
+  offdiag(A)                    1/1  v3=   0  orbit-graph adjacency, 0/1 (Lattic
+  offdiag(A^2)                  1/1  v3=   0  declared power closure: A to the p
+  offdiag(Cyc)                  1/1  v3=   0  the C_n generator's permutation ac
+  offdiag(Cyc^2)                0/1  v3=None  declared power closure: Cyc to the
+  offdiag(Deg)                  0/1  v3=None  degree matrix of the orbit graph
+  offdiag(Deg^2)                0/1  v3=None  declared power closure: Deg to the
+  offdiag(Id)                   0/1  v3=None  identity on the orbit coefficient 
+  offdiag(Id^2)                 0/1  v3=None  declared power closure: Id to the 
+  offdiag(J)                    1/1  v3=   0  all-ones = the un-normalised group
+  offdiag(J^2)                  3/1  v3=   1  declared power closure: J to the p
+  offdiag(L)                   -1/1  v3=   0  graph Laplacian Deg - A (the 2, -1
+  offdiag(L^2)                 -3/1  v3=   1  declared power closure: L to the p
+  offdiag(P)                    1/3  v3=  -1  group-averaging (Reynolds) project
+  offdiag(P^2)                  1/3  v3=  -1  declared power closure: P to the p
+  offdiag(Qp)                  -1/3  v3=  -1  Id - P: projector onto the non-inv
+  offdiag(Qp^2)                -1/3  v3=  -1  declared power closure: Qp to the 
+  one                           1/1  v3=   0  the empty product / unit of the re
+  rank(A)                       3/1  v3=   1  orbit-graph adjacency, 0/1 (Lattic
+  rank(A^2)                     3/1  v3=   1  declared power closure: A to the p
+  rank(Cyc)                     3/1  v3=   1  the C_n generator's permutation ac
+  rank(Cyc^2)                   3/1  v3=   1  declared power closure: Cyc to the
+  rank(Deg)                     3/1  v3=   1  degree matrix of the orbit graph
+  rank(Deg^2)                   3/1  v3=   1  declared power closure: Deg to the
+  rank(Id)                      3/1  v3=   1  identity on the orbit coefficient 
+  rank(Id^2)                    3/1  v3=   1  declared power closure: Id to the 
+  rank(J)                       1/1  v3=   0  all-ones = the un-normalised group
+  rank(J^2)                     1/1  v3=   0  declared power closure: J to the p
+  rank(L)                       2/1  v3=   0  graph Laplacian Deg - A (the 2, -1
+  rank(L^2)                     2/1  v3=   0  declared power closure: L to the p
+  rank(P)                       1/1  v3=   0  group-averaging (Reynolds) project
+  rank(P^2)                     1/1  v3=   0  declared power closure: P to the p
+  rank(Qp)                      2/1  v3=   0  Id - P: projector onto the non-inv
+  rank(Qp^2)                    2/1  v3=   0  declared power closure: Qp to the 
+  rowsum(A)                     2/1  v3=   0  orbit-graph adjacency, 0/1 (Lattic
+  rowsum(A^2)                   4/1  v3=   0  declared power closure: A to the p
+  rowsum(Cyc)                   1/1  v3=   0  the C_n generator's permutation ac
+  rowsum(Cyc^2)                 1/1  v3=   0  declared power closure: Cyc to the
+  rowsum(Deg)                   2/1  v3=   0  degree matrix of the orbit graph
+  rowsum(Deg^2)                 4/1  v3=   0  declared power closure: Deg to the
+  rowsum(Id)                    1/1  v3=   0  identity on the orbit coefficient 
+  rowsum(Id^2)                  1/1  v3=   0  declared power closure: Id to the 
+  rowsum(J)                     3/1  v3=   1  all-ones = the un-normalised group
+  rowsum(J^2)                   9/1  v3=   2  declared power closure: J to the p
+  rowsum(L)                     0/1  v3=None  graph Laplacian Deg - A (the 2, -1
+  rowsum(L^2)                   0/1  v3=None  declared power closure: L to the p
+  rowsum(P)                     1/1  v3=   0  group-averaging (Reynolds) project
+  rowsum(P^2)                   1/1  v3=   0  declared power closure: P to the p
+  rowsum(Qp)                    0/1  v3=None  Id - P: projector onto the non-inv
+  rowsum(Qp^2)                  0/1  v3=None  declared power closure: Qp to the 
+  totalsum(A)                   6/1  v3=   1  orbit-graph adjacency, 0/1 (Lattic
+  totalsum(A^2)                12/1  v3=   1  declared power closure: A to the p
+  totalsum(Cyc)                 3/1  v3=   1  the C_n generator's permutation ac
+  totalsum(Cyc^2)               3/1  v3=   1  declared power closure: Cyc to the
+  totalsum(Deg)                 6/1  v3=   1  degree matrix of the orbit graph
+  totalsum(Deg^2)              12/1  v3=   1  declared power closure: Deg to the
+  totalsum(Id)                  3/1  v3=   1  identity on the orbit coefficient 
+  totalsum(Id^2)                3/1  v3=   1  declared power closure: Id to the 
+  totalsum(J)                   9/1  v3=   2  all-ones = the un-normalised group
+  totalsum(J^2)                27/1  v3=   3  declared power closure: J to the p
+  totalsum(L)                   0/1  v3=None  graph Laplacian Deg - A (the 2, -1
+  totalsum(L^2)                 0/1  v3=None  declared power closure: L to the p
+  totalsum(P)                   3/1  v3=   1  group-averaging (Reynolds) project
+  totalsum(P^2)                 3/1  v3=   1  declared power closure: P to the p
+  totalsum(Qp)                  0/1  v3=None  Id - P: projector onto the non-inv
+  totalsum(Qp^2)                0/1  v3=None  declared power closure: Qp to the 
+  trace(A)                      0/1  v3=None  orbit-graph adjacency, 0/1 (Lattic
+  trace(A^2)                    6/1  v3=   1  declared power closure: A to the p
+  trace(Cyc)                    0/1  v3=None  the C_n generator's permutation ac
+  trace(Cyc^2)                  0/1  v3=None  declared power closure: Cyc to the
+  trace(Deg)                    6/1  v3=   1  degree matrix of the orbit graph
+  trace(Deg^2)                 12/1  v3=   1  declared power closure: Deg to the
+  trace(Id)                     3/1  v3=   1  identity on the orbit coefficient 
+  trace(Id^2)                   3/1  v3=   1  declared power closure: Id to the 
+  trace(J)                      3/1  v3=   1  all-ones = the un-normalised group
+  trace(J^2)                    9/1  v3=   2  declared power closure: J to the p
+  trace(L)                      6/1  v3=   1  graph Laplacian Deg - A (the 2, -1
+  trace(L^2)                   18/1  v3=   2  declared power closure: L to the p
+  trace(P)                      1/1  v3=   0  group-averaging (Reynolds) project
+  trace(P^2)                    1/1  v3=   0  declared power closure: P to the p
+  trace(Qp)                     2/1  v3=   0  Id - P: projector onto the non-inv
+  trace(Qp^2)                   2/1  v3=   0  declared power closure: Qp to the 
+
+  atom v3 range: [-1, 0, 1, 2, 3]   brief premise {-1,0,1} holds: False
+
+------------------------------------------------------------------------------
+DEGREE-GRADED COEFFICIENT SETS M_d
+------------------------------------------------------------------------------
+  d = 0  (|M_d| = 18)
+        -3/1, -1/1, -1/3, 0/1, 1/1, 1/3, 2/1, 2/3, 3/1, 4/1, 6/1, 8/1, 9/1, 12/1, 18/1, 24/1 ...
+  d = 1  (|M_d| = 7)
+        0/1, 1/1, 2/1, 3/1, 4/1, 6/1, 9/1
+  d = 2  (|M_d| = 6)
+        0/1, 3/1, 6/1, 9/1, 12/1, 27/1
+  d = 3  (|M_d| = 6)
+        0/1, 1/1, 2/1, 4/1, 8/1, 64/1
+
+------------------------------------------------------------------------------
+DECLARED BOUNDS AND CLOSURE GROWTH
+------------------------------------------------------------------------------
+  D_degree_cap           = 3
+  H_height_bound         = 1000000
+  T_sum_arity            = 2
+  W_word_bound           = 3
+  matrix_power_cap       = 2
+  words                         |K|   maxheight
+  W = 1                       115         192
+  W = 2                       559       36864
+  W = 3                      1249      995328
+
+------------------------------------------------------------------------------
+MIXED-DEGREE SOLUTION SETS (sample)
+------------------------------------------------------------------------------
+  (-1/3) alpha^1 = (-1/3) alpha^0              -> {1/1}  <== NONZERO SINGLETON
+  (-1/3) alpha^2 = (-1/3) alpha^0              -> {-1/1, 1/1}
+  (-1/3) alpha^2 = (-1/3) alpha^1              -> {0/1, 1/1}
+  (-1/3) alpha^3 = (-1/3) alpha^1              -> {-1/1, 0/1, 1/1}
+  (-1/3) alpha^3 = (-1/3) alpha^0              -> {1/1}  <== NONZERO SINGLETON
+  (-1/3) alpha^3 = (-1/3) alpha^2              -> {0/1, 1/1}
+  (-1/3) alpha^1 = (1/3) alpha^0               -> {-1/1}  <== NONZERO SINGLETON
+  (-1/3) alpha^2 = (1/3) alpha^0               -> {}
+  (-1/3) alpha^2 = (1/3) alpha^1               -> {-1/1, 0/1}
+  (-1/3) alpha^3 = (1/3) alpha^1               -> {0/1}
+  (-1/3) alpha^3 = (1/3) alpha^0               -> {-1/1}  <== NONZERO SINGLETON
+  (-1/3) alpha^3 = (1/3) alpha^2               -> {-1/1, 0/1}
+
+------------------------------------------------------------------------------
+REACHABLE VALUE SET
+------------------------------------------------------------------------------
+  W = 1:    558 nonzero values; 2/27 reachable = True; 2/9 reachable = True
+  W = 2:   1474 nonzero values; 2/27 reachable = True; 2/9 reachable = True
+  primes appearing at W=1: [2, 3]
+  gap g = 1: 558 values as exact g-th roots; target at this gap = True
+  gap g = 2: 154 values as exact g-th roots; target at this gap = True
+  gap g = 3: 70 values as exact g-th roots; target at this gap = False
+
+------------------------------------------------------------------------------
+v3 CENSUS  (the -3 question)
+------------------------------------------------------------------------------
+  atom v3 values          : [-1, 0, 1, 2, 3]
+  brief predicted         : [-1, 0, 1]
+  brief prediction holds  : False
+  W = 1: v3 reach [-4, 4]  -3 reachable = True
+  W = 2: v3 reach [-8, 8]  -3 reachable = True
+  W = 3: v3 reach [-12, 12]  -3 reachable = True
+  gap g = 1: v3(alpha) in [-8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8]  -3 = True
+  gap g = 2: v3(alpha) in [-4, -3, -2, -1, 0, 1, 2, 3, 4]  -3 = True
+  gap g = 3: v3(alpha) in [-2, -1, 0, 1, 2]  -3 = False
+  witness: det(A) = 2/1 over totalsum(J^2) = 27/1
+
+------------------------------------------------------------------------------
+THE 2/27 ADJUDICATION
+------------------------------------------------------------------------------
+  reachable: YES   minimal word length: 1
+    det(A) = 2/1  /  totalsum(J^2) = 27/1
+    diag(A^2) = 2/1  /  totalsum(J^2) = 27/1
+    diag(Deg) = 2/1  /  totalsum(J^2) = 27/1
+    diag(L) = 2/1  /  totalsum(J^2) = 27/1
+    diag(Qp) = 2/3  /  rowsum(J^2) = 9/1
+    diag(Qp) = 2/3  /  totalsum(J) = 9/1
+    diag(Qp) = 2/3  /  trace(J^2) = 9/1
+    diag(Qp^2) = 2/3  /  rowsum(J^2) = 9/1
+    diag(Qp^2) = 2/3  /  totalsum(J) = 9/1
+    diag(Qp^2) = 2/3  /  trace(J^2) = 9/1
+    n_minus_1 = 2/1  /  totalsum(J^2) = 27/1
+    rank(L) = 2/1  /  totalsum(J^2) = 27/1
+    rank(L^2) = 2/1  /  totalsum(J^2) = 27/1
+    rank(Qp) = 2/1  /  totalsum(J^2) = 27/1
+    rank(Qp^2) = 2/1  /  totalsum(J^2) = 27/1
+    rowsum(A) = 2/1  /  totalsum(J^2) = 27/1
+    rowsum(Deg) = 2/1  /  totalsum(J^2) = 27/1
+    trace(Qp) = 2/1  /  totalsum(J^2) = 27/1
+    trace(Qp^2) = 2/1  /  totalsum(J^2) = 27/1
+  test_1_provenance:
+      PASS -- both ingredients are single evaluations of declared
+      functionals on declared matrices; no free rational multiplier
+      appears anywhere.
+  test_2_scope_uniformity:
+      PASS -- diag(Qp)/totalsum(J) evaluates to (n-1)/n^3 at every n
+      tested, which is exactly the general-scope readout scale. The hit is
+      NOT scope-tuned. This CONTRADICTS the brief's prediction that any
+      hit would be target-tuned, and it is reported as a contradiction.
+  test_3_discrimination:
+      FAIL -- the same alphabet produces 442 distinct uniform-in-n value
+      families and 115 distinct values at n = 3. Selection power 1/442.
+      Choosing THIS schema out of that alphabet is the purchase.
+  VERDICT: REACHES -- UNIFORMLY -- BUT DOES NOT SELECT
+
+------------------------------------------------------------------------------
+FAMILY TEST across n = [2, 3, 4]
+------------------------------------------------------------------------------
+  scope-uniform atoms   : 119
+  schema pairs          : 14161
+  distinct uniform fams : 442
+  distinct values at n=3: 115
+  F_dim_family_(n-1)/n^2: values ['1/4', '2/9', '3/16'] reachable=True schemas=59
+      diag(Qp) / diag(J^2)
+      diag(Qp) / n
+      diag(Qp) / offdiag(J^2)
+      diag(Qp) / rank(Cyc)
+      diag(Qp) / rank(Cyc^2)
+      diag(Qp) / rank(Deg)
+  alpha_family_(n-1)/n^3: values ['1/8', '2/27', '3/64'] reachable=True schemas=13
+      diag(Qp) / rowsum(J^2)
+      diag(Qp) / totalsum(J)
+      diag(Qp) / trace(J^2)
+      diag(Qp^2) / rowsum(J^2)
+      diag(Qp^2) / totalsum(J)
+      diag(Qp^2) / trace(J^2)
+
+------------------------------------------------------------------------------
+PLANTED FALSIFIERS
+------------------------------------------------------------------------------
+  [OK] PLANT_A_hardcoded_target     pins2/27=True verdict=SMUGGLED COEFFICIENT
+  [OK] PLANT_B_height_inflated_target pins2/27=True verdict=SMUGGLED COEFFICIENT
+  [OK] PLANT_C_scope_tuned_word     pins2/27=True verdict=SCOPE-TUNED
+  [OK] PLANT_D_honest_native_hit    pins2/27=True verdict=REACHES BUT DOES NOT SELECT
+  [OK] PLANT_E_near_miss_false_positive_control pins2/27=False verdict=SMUGGLED COEFFICIENT
+
+------------------------------------------------------------------------------
+COMPLETED COVERAGE MAP
+------------------------------------------------------------------------------
+  CLOSED                           single-degree homogeneous (scaling covaria
+  CLOSED                           degree-0 rational functionals (ratios / co
+  CLOSED                           subdivision-intensive readouts
+  CLOSED                           multiplicative anchor libraries
+  PRICED                           mixed-degree, zero constant term (the {0, 
+  PRICED                           bilinear record-size relation I(R1) I(R2) 
+  CROSS-BRANCH HANDOFF             M4
+  CROSS-BRANCH HANDOFF             M2 involutions
+  CROSS-BRANCH HANDOFF             M3
+  CROSS-BRANCH HANDOFF             non-involution mixed-degree (handoff row: 
+  PRICED -- CLOSED FOR SELECTION   non-involution mixed-degree (the last unpr
+
+  Every enumerated shape of the readout-scale selection question is now
+  closed or priced. No native structure of any enumerated shape SELECTS a
+  nonzero readout scale. The terminal form of the 882 wall is therefore not
+  'the target is unreachable' -- it is reachable, uniformly in scope, by an
+  honest native relation -- but 'nothing in the supplied structure
+  discriminates the target from its competitors'. Every escape is a
+  purchase, and after this census the purchase has a precise location: the
+  choice of which native schema to write down.
+
+------------------------------------------------------------------------------
+SIBLING (CYCLE 898) HANDOFF -- CROSS-BRANCH, NOT VERIFIED HERE
+------------------------------------------------------------------------------
+  files scanned 19221, bytes 265821962
+    needle F_dim                hits 9
+    needle blockG21             hits 0
+    needle cycle897             hits 0
+    needle cycle898             hits 0
+    needle cycle899             hits 0
+    needle cycle901             hits 0
+    needle cycle_898            hits 0
+    needle frontier_cycle898    hits 0
+    needle non-involution       hits 0
+    needle toe-time-blockG21    hits 0
+
+==============================================================================
+CYCLE 904 CERTIFICATES: ALL PASS
+==============================================================================
+
+controls: deterministic=True runtime_under_limit=True stdout=22156B cache=eca423d5358ea518

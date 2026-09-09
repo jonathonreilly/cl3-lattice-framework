@@ -1,0 +1,203 @@
+{
+  "Q1_annular_chart_sees_it": true,
+  "Q1_configs_that_separate": [
+    "Lshape",
+    "annulus_1_4",
+    "chain",
+    "hollow_annulus",
+    "pair",
+    "plane_square",
+    "shell1",
+    "single",
+    "sparse_a",
+    "sparse_b"
+  ],
+  "Q1_linear_classes": 1,
+  "Q1_pairs_compared": 36,
+  "Q1_pairs_that_separate": 35,
+  "Q1_partition": [
+    [
+      "axis_segment_closure"
+    ],
+    [
+      "bounding_box"
+    ],
+    [
+      "minkowski_S_ball1__885_checker_dilation_k1"
+    ],
+    [
+      "minkowski_S_ball2__885_checker_dilation_k2"
+    ],
+    [
+      "minkowski_S_far_shell__origin_present"
+    ],
+    [
+      "minkowski_S_zero__the_885_support_window"
+    ],
+    [
+      "readout_keyed_inflation",
+      "size_keyed_inflation"
+    ],
+    [
+      "union_box_with_dilation"
+    ]
+  ],
+  "Q1_quadratic_classes": 8,
+  "Q1_structural_proof_status": "C10-C12: the original finite 648-cell partition is retained. For nested windows the exact difference is nonnegative full amplitude mass on added sites, including exterior zero-step seeds. Equality requires zero added mass. The support is an inclusion-minimum, not a unique mass minimizer. Equal sets suffice for equal mass; unequal sets need not separate. The finite split is conditional on the supplied walk, barrier, source and window catalogue.",
+  "Q1_verdict": "NOT GAUGE -- the extent is LOAD-BEARING at quadratic order",
+  "all_certificates_pass": true,
+  "amplitude_confinement": "On 12/12 configurations the reachable set is DISJOINT from the support (0 meet it), and on 12/12 the amplitude inside the support is exactly the seed (0 exceed it).  5 configurations freeze the walk entirely: their source's every neighbour is a record, so amplitude never leaves the seed.",
+  "certificate_pass": {
+    "A_PINS": true,
+    "B_RESTRICTION_GATE": true,
+    "C_FAMILY": true,
+    "D_CATALOGUE": true,
+    "E_AMPLITUDE_CONFINEMENT": true,
+    "F_BOTH_ORDERS": true,
+    "G_Q1_VERDICT": true,
+    "H_KERNEL_STRUCTURE": true,
+    "I_EVENT_SPACE_ABSENCE": true,
+    "J_INTERFACE": true,
+    "K_STRESS": true,
+    "L_OBLIGATION_MAP": true,
+    "M_HONESTY": true,
+    "N_CONTROLS": true
+  },
+  "cycle": 892,
+  "deterministic_double_build": true,
+  "elapsed_sec": 30.392,
+  "event_space_scan_hits": 0,
+  "family_digest": "30edaa3d5ca03c2492a772a3eeec2c360b70e0e742ba4889bf3e0c5e4180b25e",
+  "interface_requirements": [
+    "IF1",
+    "IF2",
+    "IF3",
+    "IF4",
+    "IF5",
+    "IF6"
+  ],
+  "kernel_structure": "C13-C14: use M_d=sum_{x,L,L'}[|L-L'|=d]c_L(x)c_L'(x), including both cross terms. Z is a degree-at-most-D polynomial in cos(phi). Both source parities are necessary for odd orders; sufficiency requires measured odd-length coarrival, checked separately. Potential path support is phase-independent but coherent support may cancel. No physical kernel selection follows.",
+  "obligation_components": [
+    {
+      "component": "(a) WINDOW",
+      "dimensions": 1,
+      "verdict": "LOAD-BEARING -- does not collapse"
+    },
+    {
+      "component": "(b) KERNEL",
+      "dimensions": 1,
+      "verdict": "LOAD-BEARING, but exactly one scalar"
+    },
+    {
+      "component": "(c) INTERFACE",
+      "dimensions": 5,
+      "verdict": "historical absence label only; physical event law not established by this selected finite model"
+    },
+    {
+      "component": "(d) RESIDUAL",
+      "dimensions": 7,
+      "verdict": "computed below"
+    }
+  ],
+  "obligation_map_headline": "C17: seven labels and the original arithmetic scenarios are historical bookkeeping, not independent dimensions or necessary physical requirements. Barrier, source, window, kernel, readout and event law remain supplied/open and potentially dependent. No sole remaining route is established.",
+  "question": "GBW1b: is the window extent still gauge at QUADRATIC order, and what does the joint kernel-window obligation price at?",
+  "residual_scenarios": [
+    {
+      "if_supplied": "nothing",
+      "residual_dimension": 7,
+      "what_remains": "one window convention, one kernel scalar, and 5 interface properties"
+    },
+    {
+      "if_supplied": "the kernel scalar cos phi alone",
+      "residual_dimension": 6,
+      "what_remains": "the window convention and the interface -- and note that supplying theta does NOT collapse the window, because certificate G separates windows at EVERY theta in the grid"
+    },
+    {
+      "if_supplied": "the event-space interface alone",
+      "residual_dimension": 2,
+      "what_remains": "the window convention and the kernel scalar"
+    },
+    {
+      "if_supplied": "the event-space interface AND the kernel scalar",
+      "residual_dimension": 1,
+      "what_remains": "exactly the window convention -- which before this cycle was believed to be gauge"
+    },
+    {
+      "if_supplied": "a window convention AND the kernel scalar",
+      "residual_dimension": 5,
+      "what_remains": "the interface only"
+    }
+  ],
+  "restriction_gate": "8/8 restriction checks reproduce.  885's 12 boundary-shell rows match value-for-value with 0 mismatches, its theta-dependence is 7/12 and its degenerate control 0/12; 887's readout gauge recomputes as 9 of 12; the family digest is 30edaa3d5ca03c24.",
+  "science_digest": "46136d12b3c3f4fa5caa414f4dbae4d05751cf7abdafda5184b2865b26ded97c",
+  "scope": "One 12-configuration family (digest 30edaa3d5ca03c24) in a box of radius 4 with walk depth 4; one catalogue of 17 named window maps AST-extracted from the pinned 887 primary; one theta grid of 6 values plus a 27-value fine grid used only for the structure characterization; exact arithmetic throughout.",
+  "self_sha256": "d8f8d0f1d8c0f4aec57147a214c72a54b2d4bfd957f1d8696d085c007af8d781",
+  "source_pins": [
+    {
+      "git_blob": "1acc11b411c793dc5e05dd1d6fe34ce0143ee956",
+      "path": "scripts/multiplicity_cycle885_configuration_fixture_2026_09_08.py",
+      "sha256": "835bac0b66b84778d958e98c41531bc1538448dec18a9cb3da09c0bcb38401b6"
+    },
+    {
+      "git_blob": "7fbd35a66859e8b888e71d7305e8cacc32a8b8ef",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/scripts/frontier_cycle885_gbw1_record_window_2026_07_28.py.txt",
+      "sha256": "daee8bbfefde80a351bf82a3028d96baf447493d3add8cdc85f4eb63fc114f32"
+    },
+    {
+      "git_blob": "553bba1fbd427f27c5606b6f27bd592a91e9c3c0",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/outputs/gbw1_record_window_cycle885_receipt_2026_07_28.json",
+      "sha256": "3561cc4e62ba55a9f2aed377122dec795103a6f424a39a907e866f53665da997"
+    },
+    {
+      "git_blob": "00e66110f74051e13af8952d2cb79af214570474",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/scripts/frontier_cycle885_gbw1_independent_check_2026_07_28.py.txt",
+      "sha256": "d98c0b43c0efa9ef33727180b109e74ffd34c4f805bf498f8cf3babb819c86b1"
+    },
+    {
+      "git_blob": "4bb8982beb2b9d3eeeaa15aa459fa9e1df461a5e",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/logs/runner-cache/frontier_cycle885_gbw1_record_window_2026_07_28.txt",
+      "sha256": "1e45cb05ace173b01506d57019fb5017e1ea59f65b006c9a741df9fd5489bd82"
+    },
+    {
+      "git_blob": "7a61b5a6c293a57ea39f7f31ee05739a80d96643",
+      "path": "scripts/frontier_cycle887_window_freedom_2026_07_28.py",
+      "sha256": "5445ee7a06c066132652a9726147e76b07721edad295c87a007c36551df833bd"
+    },
+    {
+      "git_blob": "d5690311ba062ee67523446404d2244aed21369e",
+      "path": "outputs/window_freedom_cycle887_receipt_2026_07_28.json",
+      "sha256": "548acca5237f2bacbcd13f76d6249f2964f0d4f5e5be885a7fbccdb31386dfa5"
+    },
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/docs/GATE_B_DYNAMICS_NOTE.md",
+      "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+    },
+    {
+      "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+      "path": ".claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+    },
+    {
+      "git_blob": "ed1d6e423c21d294a19d0c0708b561aa781a2405",
+      "path": "docs/GBW1B_PRICED_QUADRATIC_GAUGE_BREAK_CYCLE892_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "ff0c9c990de319a35e5b122afec809caf54cfc60c218db3c43865f16946a01e8"
+    },
+    {
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    }
+  ],
+  "theorems": [
+    "C892-T1 AMPLITUDE EXPULSION: with barrier B(R) = supp(R) and a walk blocked ON the barrier, every site reachable in one or more steps lies outside supp(R); amplitude inside supp(R) is exactly the seed.  Verified on 12/12 configurations with 0 exceptions.",
+    "C892-T2 WINDOW MONOTONICITY: for containment-holding W subset W', Z(W') - Z(W) equals the amplitude mass on W' \\ W, so Z is monotone and the extent is gauge at quadratic order IFF every admissible containment-holding window carries the same amplitude mass outside the support, including exterior zero-step seeds. 0 violations on every nested pair.",
+    "C892-T3 PATH-LENGTH INTERFERENCE SPECTRUM: Z(theta) = sum_d M_d T_d(cos phi) with cos phi = (1-theta^2)/(1+theta^2), d <= the walk depth, and M_d rational and theta-free.  Verified exactly on every (window, config, theta) cell.",
+    "C892-T4 BIPARTITE PARITY SELECTION: odd interference orders can appear only when the source set spans both lattice parities; the original finite family has 0 source-parity mispredictions, while general sufficiency requires measured odd coarrival."
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "agreement_checks": [
+    {
+      "agree": true,
+      "checker": "2/27",
+      "item": "target_alpha",
+      "primary": "2/27"
+    },
+    {
+      "agree": true,
+      "checker": [
+        "0/1",
+        "1/9",
+        "1/3",
+        "1/1",
+        "2/27"
+      ],
+      "item": "pinned_witnesses",
+      "primary": [
+        "0/1",
+        "1/9",
+        "1/3",
+        "1/1",
+        "2/27"
+      ]
+    },
+    {
+      "agree": true,
+      "checker": 1,
+      "item": "residual_free_dimension",
+      "primary": 1
+    },
+    {
+      "agree": true,
+      "checker": "EQUIVALENT",
+      "item": "terminal_lemma_strength",
+      "primary": "EQUIVALENT"
+    },
+    {
+      "agree": true,
+      "checker": {
+        "0/1": "0/1",
+        "1/1": "1/3",
+        "1/3": "1/9",
+        "2/9": "2/27",
+        "3/1": "1/1"
+      },
+      "item": "anchor_library_map",
+      "primary": {
+        "0/1": "0/1",
+        "1/1": "1/3",
+        "1/3": "1/9",
+        "2/9": "2/27",
+        "3/1": "1/1"
+      }
+    },
+    {
+      "agree": true,
+      "checker": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "3/1"
+      ],
+      "item": "axiom_available_anchor_constants",
+      "primary": [
+        "0/1",
+        "1/1",
+        "1/3",
+        "3/1"
+      ]
+    },
+    {
+      "agree": true,
+      "checker": [
+        "K4_ANCHOR_FIXED_LOCUS_DENSITY"
+      ],
+      "item": "only_the_fixed_locus_anchor_row_keeps_the_target_alone",
+      "primary": [
+        "K4_ANCHOR_FIXED_LOCUS_DENSITY"
+      ]
+    },
+    {
+      "agree": true,
+      "checker": 1,
+      "item": "two_adic_valuation_of_the_target",
+      "primary": 1
+    },
+    {
+      "agree": true,
+      "checker": true,
+      "item": "no_multiplicative_library_selects",
+      "primary": true
+    }
+  ],
+  "checker_alphas": [
+    "27/7",
+    "-53/45",
+    "36/43",
+    "45/17",
+    "38/23",
+    "19/15",
+    "-53/7",
+    "-5/33",
+    "-48/7",
+    "-53/49",
+    "43/7",
+    "-23/5",
+    "-54/23",
+    "-38/27",
+    "-5/1",
+    "-56/11",
+    "-4/11",
+    "-46/31",
+    "3/53",
+    "18/13",
+    "-11/25",
+    "43/55",
+    "-60/53",
+    "-9/19",
+    "-19/29",
+    "-4/1",
+    "15/11",
+    "-57/35",
+    "-21/37",
+    "-45/19",
+    "-16/3",
+    "4/55",
+    "-31/5",
+    "-37/7",
+    "-23/13",
+    "-14/27",
+    "-46/53",
+    "3/47",
+    "-12/5",
+    "13/59",
+    "-3/17",
+    "-30/7",
+    "60/37",
+    "36/19",
+    "2000027/27000000",
+    "1/14",
+    "11/27"
+  ],
+  "checker_alphas_disjoint_from_primary": true,
+  "cycle": 882,
+  "new_route": {
+    "name": "bilinear Record relation I(R1) I(R2) = I(R3)",
+    "selects": false,
+    "target_reachable": true,
+    "target_record_sizes": "s1=1, s2=27, s3=2",
+    "verdict": "REACHES BUT DOES NOT SELECT"
+  },
+  "refutation_ledger": {
+    "CD_DEGREE_HOMOGENEOUS_REFUTATION": "NOT REFUTED",
+    "CE_NONLINEAR_SCOPE_REFUTATION": "REFUTED AT THE LOOSE READING",
+    "CF_BILINEAR_RECORD_ROUTE": "REACHES BUT DOES NOT SELECT",
+    "CG_IDENTITY_OBSTRUCTION_REFUTATION": "NOT REFUTED",
+    "CH_TWO_ADIC_SCOPE_BOUNDARY": "NOT REFUTED",
+    "CI_INTENSIVITY_REFUTATION": "NOT REFUTED",
+    "CJ_TERMINAL_EQUIVALENCE_REFUTATION": "NOT REFUTED"
+  },
+  "role": "independent checker spec'd to refute",
+  "scope_correction_demanded": "C882-T1 must be stated for constraint systems that are homogeneous OF A SINGLE DEGREE (equivalently scaling-covariant, F(lambda a) = lambda^d F(a)), not merely for systems with zero constant term. Mixed-degree zero-constant-term relations such as alpha^2 = c alpha have solution set {0, c} and DO reach a nonzero member.",
+  "source_pins": [
+    {
+      "git_blob": "c13380757eae27bdee05bc0d4be65a40c2865585",
+      "path": "scripts/frontier_cycle882_readout_identity_2026_07_28.py",
+      "sha256": "cd8126381cca2bf2a852de4daf14ef6955a3af122d2781acd400ebe674efbf2a"
+    },
+    {
+      "git_blob": "753990b65511ec3dcbc48d9cf265d151a4c423e9",
+      "path": "outputs/readout_identity_cycle882_receipt_2026_07_28.json",
+      "sha256": "52de25f7fc144ecdc877d9322233ae94bd0eb5c61ad47c93ea478de31f0ffca7"
+    },
+    {
+      "git_blob": "9a449956422a5687b5b1346f428c9e4e35489038",
+      "path": "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
+      "sha256": "4d742bcc68a1e7cdb154b366e671f576e9b719b3206445b97666c812a790e58c"
+    },
+    {
+      "git_blob": "e2ca96d22c95e991b76d9ec999f12726398bc3df",
+      "path": "docs/ACPHILAMBDA_R_ETA_HCLASS_FIRST_PRINCIPLES_STRETCH_NO_GO_NOTE_2026-07-04.md",
+      "sha256": "08c15bdc0c2fc2ccd750ca2752260ae02ec2521a70bc0307103c42058a63ed09"
+    },
+    {
+      "git_blob": "92553eb71833303c5d5f0fa74af6511108a8e54b",
+      "path": "docs/ACPHILAMBDA_R_ETA_ANGLE_NATIVE_FRONTIER_NO_GO_NOTE_2026-07-04.md",
+      "sha256": "83f4ab11435b7f5224c1013768dc56c28dfb56f0ab3fdd5811f9b06251dde665"
+    }
+  ],
+  "two_adic_scope_boundary": {
+    "note": "The obstruction dissolves the moment record COPY multiplicities are admitted as generators, because a multiplicity of 2 supplies v_2 = 1.",
+    "smallest_extra_generator_that_reaches_the_target": 2,
+    "target_reachable_once_copy_multiplicities_are_generators": true
+  }
+}

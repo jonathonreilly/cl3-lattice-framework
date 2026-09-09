@@ -1,0 +1,172 @@
+{
+  "GBW1_status": "NOT CLOSED, and RE-PRICED.  GBW1 was declared over the five WINDOW coordinates.  One of those five (N) is computed here to depend on a KERNEL coordinate, so GBW1 as stated cannot be proved or disproved inside the window block: it must be re-split into GBW1a (the window LOCUS: centre, a, b, D, barrier -- attacked here) and GBW1b (the terminal normalization, which is a kernel-window joint obligation).",
+  "all_certificates_pass": true,
+  "candidate_outcomes": {
+    "W1_support_extent": "W1 EXISTS: the support reading is equivariant on 1440 group elements x configurations with 0 failures, permanence-monotone on 35 nested pairs with 0 failures, and non-constant with 12 distinct values.  Of the two rivals, 1 is REFUTED (W1b_boundary_shell: the boundary shell retracts under permanence, 24 failures) and 1 survives (W1c_alternate_centre).  Uniqueness still FAILS, but only through the centre convention: 4 surviving disagreements on 4/12 configurations.  And the support fills its own annulus in only 7 of 12 configurations, so the (a, b) parameterization is strictly weaker than the set.",
+    "W2_payload_projection": "W2 collapses into W1: set-equality holds on 12/12 configurations.  The payload projection is the readable set, and the readable set is the record support.  W2 therefore adds ZERO window coordinates.",
+    "W3_formation_edges": "The formation filtration is a G-invariant of the configuration (0 invariance failures), and it does yield a record-determined COUNT.  But the count collides: 5 pairs of configurations share a formation-moment count while differing in additive readout, so the moment count does not even determine the record readout, let alone the amplitude normalization.",
+    "W4_barrier": "The barrier is the one window coordinate the axioms name outright: B(R) = supp(R), equivariant on 1440 tests with 0 failures and monotone under permanence.  The landed fixed central barrier fails equivariance on 1152 of 1440 checks and is refuted.  The cost: the axiom-forced barrier and the axiom-forced readable set coincide (0/12 disjoint), and 0 of the three swept window candidates is both admissible and barrier-disjoint, so the landed barrier/window separation needs one named identification."
+  },
+  "certificate_pass": {
+    "A_PINS": true,
+    "B_FORMALIZATION": true,
+    "C_LINEAGE_PRESENCE": true,
+    "D_GROUP": true,
+    "E_CONFIG_FAMILY": true,
+    "F_W1_SUPPORT_EXTENT": true,
+    "G_W2_PAYLOAD_PROJECTION": true,
+    "H_W3_FORMATION_EDGES": true,
+    "I_W4_BARRIER": true,
+    "J_DEPTH_UNDER_PERMANENCE": true,
+    "K_N_TERMINAL_NORMALIZATION": true,
+    "L_WRONG_WINDOW_STRESS": true,
+    "M_VERDICT": true,
+    "N_HONESTY_GATE": true,
+    "O_CONTROLS": true
+  },
+  "classification": {
+    "D": {
+      "class": "GAUGE",
+      "residual_premise": "none; D is determined as a gauge class",
+      "witness": "permanence makes the depth-indexed readout non-decreasing and stationary above the last formation depth; Cycle 884 R1's b <= D bounds the class from below"
+    },
+    "N": {
+      "class": "SUPPLIED",
+      "residual_premise": "N couples the WINDOW block to the KERNEL block through theta, and additionally needs the linear-record-readout / quadratic-amplitude identification (the composed-record event-space step, absent from this worktree)",
+      "witness": "Z moves with the kernel phase gain theta on 7/12 configurations, and separating pairs share an additive record readout while differing in Z"
+    },
+    "a": {
+      "class": "EXISTENCE_DERIVED_UNIQUENESS_OPEN",
+      "residual_premise": "one centre convention (barycentre vs extremal-shell barycentre); the annular (a, b) reading additionally needs the support to fill its own annulus, which holds on 7/12 configurations",
+      "witness": "Record's content-only clause FORCES the window to be a function of R; supp(R) is admissible on every declared requirement, while the boundary-shell rival is refuted by REQ4 (permanence retraction) -- refuted rivals: ['W1b_boundary_shell'], surviving rivals: ['W1c_alternate_centre']"
+    },
+    "b": {
+      "class": "EXISTENCE_DERIVED_UNIQUENESS_OPEN",
+      "residual_premise": "one centre convention (barycentre vs extremal-shell barycentre); the annular (a, b) reading additionally needs the support to fill its own annulus, which holds on 7/12 configurations",
+      "witness": "Record's content-only clause FORCES the window to be a function of R; supp(R) is admissible on every declared requirement, while the boundary-shell rival is refuted by REQ4 (permanence retraction) -- refuted rivals: ['W1b_boundary_shell'], surviving rivals: ['W1c_alternate_centre']"
+    },
+    "barrier": {
+      "class": "DERIVED",
+      "residual_premise": "one identification: the PROPAGATION barrier is read off the REGISTRATION-blocked set (the two coincide with the readable set, which the landed model needs disjoint)",
+      "witness": "B(R) = supp(R) from count-once + permanence; equivariant and monotone on every test; the landed fixed central barrier is refuted by translation equivariance"
+    },
+    "centre": {
+      "class": "EXISTENCE_DERIVED_UNIQUENESS_OPEN",
+      "residual_premise": "one centre convention",
+      "witness": "'No site is privileged' forbids a supplied centre and forces an equivariant one; the barycentre and the extremal-shell barycentre are both equivariant and both belong to admissible maps, and they differ as points on 4/12 configurations (hollow_annulus, Lshape, sparse_a, sparse_b)"
+    }
+  },
+  "count_determined_of_five": 2,
+  "count_existence_only_of_five": 2,
+  "count_supplied_of_five": 1,
+  "cycle": 885,
+  "cycle884_GBW1_statement": "the detector window (its boundaries, its readout depth, its barrier, and its normalization) is determined by record content rather than chosen by the runner",
+  "each_remaining_dimension_vs_GBW1": {
+    "D": "inside GBW1a and GAUGE",
+    "N": "OUTSIDE GBW1a; belongs to a joint kernel-window lemma GBW1b",
+    "a": "inside GBW1a; residual is one centre convention (barycentre vs extremal-shell barycentre)",
+    "b": "inside GBW1a; residual is one centre convention (barycentre vs extremal-shell barycentre)",
+    "barrier": "inside GBW1a and DERIVED, modulo one identification",
+    "centre": "inside GBW1a; newly exposed; residual is one convention"
+  },
+  "exact_gaps": {
+    "D": "NONE for the readout.  D is determined as a GAUGE CLASS, not as a number.  A cycle that wanted a numerical D would have to name a convention inside the gauge class, and that convention would change no readout -- which is the definition of gauge.",
+    "N": "theta is a KERNEL_SHAPE coordinate in Cycle 884's chart, not a WINDOW coordinate.  The computed theta-dependence of Z means N cannot be closed inside the window block: GBW1 as stated -- a lemma over the five WINDOW coordinates -- is MIS-SCOPED, because one of its five coordinates couples to the kernel block.  The second, independent obstruction is that even at fixed theta the additive record readout is LINEAR in content while Z is QUADRATIC in amplitudes; identifying them is the composed-record event-space / Born-measure step, which is not in this worktree.",
+    "W2": "NONE at axiom level -- and that is the finding: W2 is not an independent source of window data.  At axiom level the live projection's footprint is set-equal to W1's support on every configuration in the family, so W2 supplies no coordinate that W1 does not already supply.  Any EXTRA structure the landed 147-wire projection carries (wire count, shard layout) is runner data, not axiom content, and the 867 primary is not in this worktree to be pinned; a window coordinate read off a wire count would be supplied under a different name.",
+    "W3_N": "N is not the record-count normalization.  N normalizes the TERMINAL DETECTOR DISTRIBUTION, which is a quadratic functional of propagation amplitudes, while the additive readout is a LINEAR functional of record content.  Two obstructions, both computed: (i) certificate K exhibits configurations on which the amplitude normalization moves while the additive readout is fixed, and moves again when the kernel's phase gain theta moves -- so N is not a function of record content alone; (ii) the pinned Cycle 883 reading of the axiom memo's Open Gates section excludes formation weights and rates from axiom content, which is exactly the content a rate-shaped normalization would need.",
+    "a_b": "Uniqueness is decided ONLY against rivals that themselves satisfy every declared requirement.  Admissible rivals: ['W1c_alternate_centre'].  Refuted rivals (and the requirement each fails): {'W1b_boundary_shell': ['REQ4_permanence_monotone']}.  4 disagreement(s) survive that filter and 12 are discarded as disagreements with a refuted map.  The surviving split is the CENTRE convention (barycentre vs extremal-shell barycentre), which differs as a point on 4/12 configurations.  Existence is derived; uniqueness is not, but the residual is one convention, not a menu.",
+    "barrier": "The two axiom-forced identifications COINCIDE: the blocked set is supp(R) by count-once, and the readable set is supp(R) by 'only records are readable'.  The landed Gate-B model needs a barrier that blocks propagation and a window that reads, DISJOINT from each other.  So the landed disjointness is not axiom content; it is an extra identification -- a PROPAGATION barrier read off the REGISTRATION-blocked set."
+  },
+  "exact_scope": "One lemma's attempt, on a 12-configuration family in a bounded box, against the four axioms plus the pinned Cycle 883 weight pair.  Equivariance is verified on the full rotation group and a finite shift set, not on all of Z^3; the conclusion that a record-independent map fails equivariance is exact (one counterexample suffices), while the conclusion that a map IS equivariant is verified on the tested set and proved structurally in the forcing chains.",
+  "exposed_sixth_coordinate": "centre",
+  "load_bearing_negatives": [
+    "the landed fixed central barrier privileges sites and fails translation equivariance",
+    "the landed window chart is scalar-only, so it cannot even state GBW1's covariance requirement",
+    "the axiom-forced barrier and the axiom-forced readable set COINCIDE, while the landed model needs them disjoint -- and no swept window candidate is both admissible and barrier-disjoint, so the separation has no record-determined realization here",
+    "GBW1 as declared by Cycle 884 cannot be settled inside the window block",
+    "with the window taken to BE the barrier the terminal distribution is degenerate (theta-independent seed only), which is the computed cost of that collision"
+  ],
+  "load_bearing_positives": [
+    "GBW1 existence is forced by Record's content-only clause",
+    "barrier = supp(R) is DERIVED from count-once + permanence",
+    "D is GAUGE by permanence",
+    "W2 (the payload projection) adds no window coordinate: it is set-equal to the record support",
+    "permanence SELECTS the support window over the boundary-shell window: the boundary shell retracts under the filtration and is refuted, removing the binary locus choice from the residual"
+  ],
+  "outcome_class": "GBW1_repriced_two_coordinates_removed_one_shown_misscoped",
+  "question": "GBW1: is the Gate-B detector window record-determined?  Formalize the map from record configurations to (centre, a, b, D, barrier, N), sweep the landed record-facing structures for window-shaped data, and classify every window coordinate DERIVED or SUPPLIED with its exact gap.",
+  "record_facing_primaries_absent_from_this_worktree": [
+    "cycle867_composed_record_event_model_v3",
+    "cycle874_copy_redundancy_content",
+    "cycle877_sharded_content_survival",
+    "cycle878_composed_record_event_space"
+  ],
+  "residual_named_exactly": [
+    "one centre convention, needed only by the ANNULAR reading of the window; the SET-valued window needs no centre",
+    "one cross-block coupling: N depends on the kernel phase gain theta, so it cannot be closed inside the window block",
+    "one identification premise: propagation barrier = registration-blocked set"
+  ],
+  "source_pins": [
+    {
+      "git_blob": "4a863da1f3f255354839277271a3a69a5c205133",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    {
+      "git_blob": "40b0b4cd552cc41b55e4f3c59f9cabf621b3296b",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5"
+    },
+    {
+      "git_blob": "5594d74e38a84d95c806449a305a16e1f1db8c43",
+      "path": "docs/GATE_B_DYNAMICS_NOTE.md",
+      "sha256": "0031e5ddcb2e1408db1bca3d738669b5463e672cfdbecc81b859b0fc609dc271"
+    },
+    {
+      "git_blob": "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+      "path": "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
+      "sha256": "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116"
+    },
+    {
+      "git_blob": "7b244a7ce3a4d61589bea0f222cca5d847ab0200",
+      "path": "scripts/frontier_cycle884_gbs2_kernel_window_2026_07_28.py",
+      "sha256": "685973be36ac89a9632d8ac4113a6e49e9db32e98c9977ec5965a3bb6bff6aeb"
+    },
+    {
+      "git_blob": "5a3c9db3ff688f26a70cc9b82aed53ec0ff41bb8",
+      "path": "logs/runner-cache/gbs2_kernel_window_cycle884_receipt_2026_07_28.json",
+      "sha256": "5d5c669ebc7c58613892425745b09c35eb94dc216e8c38fe0f161e4f53541f98"
+    },
+    {
+      "git_blob": "d563c2b9c2a261f44d7304baa51fdd3596188930",
+      "path": "scripts/frontier_cycle883_record_weight_pair_2026_07_28.py",
+      "sha256": "2d96422d30f169a1c4b3215db373e4bffd7b1ef20056ea337ff4ae3f86d9511c"
+    }
+  ],
+  "steelman": "The strongest case against this cycle is that 'derived' for the barrier is cheap: B(R) = supp(R) makes the barrier whatever the records are, which feels like relabelling rather than deriving.  The answer is the declared theorem shape -- GBW1 is a map FROM record configurations, so a coordinate that reduces to record content is exactly what it asks for -- but the cost is stated openly in the barrier/readable-set collision: the landed model needs those two sets disjoint and the axioms make them equal.",
+  "theorems": [
+    "C885-T1 Record's content-only clause FORCES the detector window to be a function of the record configuration: a windowed readout whose window is not record-determined is not determined by record content alone.  GBW1's EXISTENCE half is therefore an axiom consequence, not a conjecture.",
+    "C885-T2 the barrier is DERIVED: B(R) = supp(R) is equivariant, permanence-monotone and non-constant on every test here, its uniqueness is argued in the stated forcing chain (B smaller than supp(R) contradicts count-once, B larger blocks an unoccupied site and needs a law), and the landed fixed central barrier is refuted by translation equivariance on 1152 computed collisions.",
+    "C885-T3 the readout depth D is GAUGE: permanence makes the depth-indexed readout stationary above the last formation depth, so every admissible D gives the identical readout.",
+    "C885-T4 permanence REFUTES the boundary-shell window: it retracts under the filtration on 24 of 35 nested pairs and so cannot witness non-uniqueness.  GBW1's UNIQUENESS half still FAILS, but through exactly one surviving split -- the equivariant CENTRE convention (barycentre vs extremal-shell barycentre), which differs as a point on 4/12 configurations.",
+    "C885-T5 the landed 5-coordinate window chart is scalar-only and cannot state the equivariance requirement; a constant annulus passes it.  The honest window chart carries a sixth coordinate, the centre.",
+    "C885-T6 GBW1 is MIS-SCOPED: N depends on the kernel phase gain, so the terminal normalization is a joint kernel-window obligation and must be split out as GBW1b."
+  ],
+  "uniqueness_filter": {
+    "admissible_rivals": [
+      "W1c_alternate_centre"
+    ],
+    "disagreements_counted": 4,
+    "disagreements_discarded": 12,
+    "refuted_rivals": [
+      "W1b_boundary_shell"
+    ],
+    "rival_failed_requirements": {
+      "W1b_boundary_shell": [
+        "REQ4_permanence_monotone"
+      ],
+      "W1c_alternate_centre": []
+    },
+    "rule": "a rival can witness non-uniqueness only if it satisfies every declared requirement; a rival that fails one is REFUTED and its disagreements are discarded"
+  }
+}
