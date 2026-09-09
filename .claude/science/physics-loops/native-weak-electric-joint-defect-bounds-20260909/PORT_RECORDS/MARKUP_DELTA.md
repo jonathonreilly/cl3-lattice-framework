@@ -1,0 +1,1 @@
+Only canonical note inline math delimiters changed. Prior2212 source/note/output/receipts preserved under history/BEFORE_MARKUP_2212. All42595 predicates unchanged; actual isolated output refreshed. Helper/primary bytes unchanged, so three actual semantic and two CLI negative controls retain their original execution receipts without rerunning unchanged mutants.

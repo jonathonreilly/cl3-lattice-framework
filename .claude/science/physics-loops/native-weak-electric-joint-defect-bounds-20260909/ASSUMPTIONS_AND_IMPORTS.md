@@ -1,0 +1,1 @@
+Supplied H_U=H0+UD, full native carrier, U>=0; upstream positive stiffnessκ, canonical trial energy, exact electric expansion and statewise bound. Finite-dimensional projection/resolvent norm, Young inequality, union bound. No uniform active gap. Uniform local compression at fixed U is unproved and excluded from actual theorem claims.
