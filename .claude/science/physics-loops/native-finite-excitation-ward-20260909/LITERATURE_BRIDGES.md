@@ -1,0 +1,1 @@
+No external numerical values. Principal-angle product, scalar-generator and relative trace arguments are supplied explicitly. Spectral theorem, CAR and elementary complex analysis are mathematical tools.
