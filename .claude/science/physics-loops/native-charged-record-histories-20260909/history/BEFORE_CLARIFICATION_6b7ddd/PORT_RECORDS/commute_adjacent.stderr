@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-charged-record-histories-20260909/.claude/science/physics-loops/native-charged-record-histories-20260909/PORT_RECORDS/commute_adjacent.py", line 61, in <module>
+    if __name__=='__main__':check()
+                            ^^^^^^^
+  File "/private/tmp/toe-native-charged-record-histories-20260909/.claude/science/physics-loops/native-charged-record-histories-20260909/PORT_RECORDS/commute_adjacent.py", line 56, in check
+    a=(x>>edges.index(e))&1;b=(x>>edges.index(f))&1;u,y=seq(n,edges.copy(),orders,x,[e,f]);v,z=seq(n,edges.copy(),orders,x,[f,e]);sign=1;ck(y==z and u==sign*v,'history cocycle');history+=1
+                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-charged-record-histories-20260909/.claude/science/physics-loops/native-charged-record-histories-20260909/PORT_RECORDS/commute_adjacent.py", line 10, in ck
+    if not x:raise ValueError(s)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: history cocycle
