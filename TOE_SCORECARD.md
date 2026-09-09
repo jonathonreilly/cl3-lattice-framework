@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
-Verified source/status snapshot: 2026-09-09T03:09:06.639929+00:00, main
-`fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8`. This is a planning map, not
+Verified source/status snapshot: 2026-09-09T03:48:13.247592+00:00, main
+`26e73b727db1732dd89f74461114e4873c4ddef9`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -22,7 +22,7 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 42 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 51 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
@@ -39,7 +39,7 @@ all source has been reviewed. The campaign record tracks actual inspection.
 |---|---|---|
 | Local admissibility and formation | #7998/#7999/#8000/#8002/#8003 corrected source now on main; campaign formation checkpoint remains unlanded | A supplied iid-priority Z3 formation process and static/formation discriminator are now independently checked. Which law/mechanism physics supplies remains open. |
 | Record matter and energy apparatus | #7983/#7996/#8001/#8004/#8005/#8006 reviewed source now on main; campaign finite-patch note remains a checkpoint | Finite-patch approximation now has explicit conditional channel, boundary-energy and cap bounds. Supply spatial battery communication, preparation and autonomous occurrence. |
-| Finite-spin electromagnetic response | #7966 preserves the consolidated field chain; standalone source/receipt and selected finite-projector corrections are independently reviewed and landed | Independent checks confirm a source mismatch. Repair the uniform-K/UK interpretation, define the flux-sector target, then resolve estimator and infrared control. |
+| Finite-spin electromagnetic response | #7966 corrected finite portions are on main with all54originals preserved; original production and physical Maxwell conclusions remain held | Independent checks confirm a source mismatch. Repair the uniform-K/UK interpretation, define the flux-sector target, then resolve estimator and infrared control. |
 | Conditional Maxwell dynamics | #7984/#7980 corrected conditional dynamics/support source is on main; #7976 historical meta synthesis is separately reviewed on main | Which dynamics-class, payload, support and conservation clauses are derived, and which supplied? |
 | Gravity and source/action | #7981/#7988/#7992/#7993/#7994/#7995/#7997 and predecessors | Connect the conditional finite-carrier kernel to a sourced physical field and action; larger benches alone do not establish that identification. |
 | Native transfer and spatial gauge models | #8007/#8008/#8009 corrected mathematical source is on main; later spatial successors are outside this backlog cleanup | Keep exact discrete-saddle and continuum-limit coefficients distinct. Supply the physical action, coupling identification and volume/continuum bridges before inferring a physical mass gap. |
@@ -94,3 +94,5 @@ W34 adds three conditional gravity notes. A complete uniform-toy one-eighth boun
 W35 adds three conditional indexed-formation/chirality notes. A full-menu counterexample refutes universal slab impossibility; finite record-law results survive. Physical formation, clock, Born instrument and chirality bridges remain open. No audit grade.
 
 W36 adds two conditional finite vortex notes. Corrected profiled-mass algebra, complete spectral census, compressed boundary observables and uniform gap proofs survive; physical history/species and global/asymptotic index bridges remain open. No audit grade.
+
+W37 adds nine finite Maxwell diagnostic notes. Shared-zero/RK covariance, strict sampling bounds, receipt identity, actual source parity and conditional kernel scope are corrected. Original production/complete health and physical source, flux sector, thermodynamic/causal/clock/Maxwell conclusions remain unaccepted. No audit grade.

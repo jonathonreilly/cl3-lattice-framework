@@ -1,10 +1,10 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T03:09:06.639929+00:00; main `fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8`.
+Updated 2026-09-09T03:48:13.247592+00:00; main `26e73b727db1732dd89f74461114e4873c4ddef9`.
 
-111 science scopes newly landed: 69 direct + 42 consolidated. One meta and one process scope separate. 181 originals closed, 73 open; 64 earlier-closed scopes pending at five open successors. No audit grade.
+111 original science scopes previously landed plus8 original scopes with corrected portions now landed and broader production/physical scope held.72 direct original closures include69 prior science,1 partial Maxwell,1meta,1process.57 earlier-closed scopes pending at4open successors;7other earlier closures now have corrected portions on main and explicit holds.
 
-| Original PR | Closure action | Current scope status | Accepted main or successor |
+| Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
 | #5950 | source_consolidation_exact | reviewed_corrected_scope_on_main | `1ef2db7a87038b5d8e26a84aa2a3157e347190c2` |
 | #5952 | source_consolidation_exact | reviewed_corrected_scope_on_main | `1ef2db7a87038b5d8e26a84aa2a3157e347190c2` |
@@ -157,17 +157,18 @@ Updated 2026-09-09T03:09:06.639929+00:00; main `fbc1dfb0a4cc9699d22576d5d67d1ca0
 | #7939 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `e4b4fd46dbdc075a218387a0c23a1a2739f4f01c` |
 | #7941 | source_consolidation_exact | reviewed_corrected_scope_on_main | `60b98160bdab0a4aed2069da47bb8e1ed674c29d` |
 | #7942 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `d81f3c22117522411c20fb6c38eef5874c4765ae` |
-| #7943 | source_consolidation_exact | pending_on_open_successor | #7966 |
-| #7945 | source_consolidation_exact | pending_on_open_successor | #7966 |
-| #7946 | source_consolidation_exact | pending_on_open_successor | #7966 |
+| #7943 | source_consolidation_exact | corrected_portions_on_main_original_broader_scope_held | `26e73b727db1732dd89f74461114e4873c4ddef9` |
+| #7945 | source_consolidation_exact | corrected_portions_on_main_original_broader_scope_held | `26e73b727db1732dd89f74461114e4873c4ddef9` |
+| #7946 | source_consolidation_exact | corrected_portions_on_main_original_broader_scope_held | `26e73b727db1732dd89f74461114e4873c4ddef9` |
 | #7947 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `917c9a26c8c8b963ea0d773b32b057bcc33a3e6d` |
 | #7949 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8` |
 | #7950 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `27dd1b2199c4a5973eb1a97af25eb7c5b9b8efc0` |
-| #7952 | source_consolidation_exact | pending_on_open_successor | #7966 |
-| #7953 | source_consolidation_exact | pending_on_open_successor | #7966 |
-| #7955 | source_consolidation_exact | pending_on_open_successor | #7966 |
+| #7952 | source_consolidation_exact | corrected_portions_on_main_original_broader_scope_held | `26e73b727db1732dd89f74461114e4873c4ddef9` |
+| #7953 | source_consolidation_exact | corrected_portions_on_main_original_broader_scope_held | `26e73b727db1732dd89f74461114e4873c4ddef9` |
+| #7955 | source_consolidation_exact | corrected_portions_on_main_original_broader_scope_held | `26e73b727db1732dd89f74461114e4873c4ddef9` |
 | #7959 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `eed3c68fffdd8f912a6a4b4bc2e0098184fb3b2b` |
-| #7963 | source_consolidation_exact | pending_on_open_successor | #7966 |
+| #7963 | source_consolidation_exact | corrected_portions_on_main_original_broader_scope_held | `26e73b727db1732dd89f74461114e4873c4ddef9` |
+| #7966 | closed_directly_after_landing | corrected_portions_on_main_original_broader_scope_held | `26e73b727db1732dd89f74461114e4873c4ddef9` |
 | #7968 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `917c9a26c8c8b963ea0d773b32b057bcc33a3e6d` |
 | #7972 | closed_directly_after_landing | reviewed_process_scope_on_main | `47da12268436ee1843e822386477aa2c829d95a9` |
 | #7973 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `7f21e7f06e2d1b5e55f230a030b0cce537dd3d89` |

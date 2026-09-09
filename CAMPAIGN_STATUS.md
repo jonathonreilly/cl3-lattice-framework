@@ -50,7 +50,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W36 lands two corrected conditional vortex papers. Shared reconciliation records 73 open originals and 111 newly landed science scopes; 64 earlier-closed scopes remain pending at five open successors. Maxwell repair and next gravity/Regge reviews remain active. Formal audit stays deferred.
+1. W37 lands corrected Maxwell portions:72open originals;111prior science scopes plus8partial original scopes with explicit production/physical holds.57earlier closures remain pending at4open successors. W38gravity/Regge integration and record-matter review active. Formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
