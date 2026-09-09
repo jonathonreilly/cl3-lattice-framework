@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/repeated_record_matter_energy_apparatus_2026_09_05.py
+runner_sha256: a4da79a46cf490e67b50d5ccddb0a4c72493437d185516d91dc1795fb8fd5c0d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.38
+status: ok
+----- stdout -----
+PASS G0 deterministic p=0/1 branches omit null outcomes: outcome_mask=3 count=2 no_zero_division=yes
+PASS G1 complex repeated Gaussian branches and uniform-live means: live=5 max_res=7.105e-15 max_branch_selection=0.457561
+PASS G1 phase-rotated uniform-live E, N, and H^2 laws after previous Records: phases=3 live=5 prior_records=2 max_res=6.661e-16 H2_res=4.441e-16 star_square_bound=1.046806
+PASS G2 L6 pi-flux carrier and filled sea: sites=216 particles=108 gap=1.732050808 geometry=0.000e+00 projector=9.992e-16
+PASS G2 special initial-sea single-event control: p1=0.500000000 Epre=-258.857539956 Epost0=-256.460710883 Epost1=-256.460710883 mean_system_energy_change=+2.396829074
+PASS G2 repeated ideal Gaussian occupation/deletion events tau=0: events=432 invariant_max=2.842e-14 identity_max=5.684e-14 min_excess=5.432e-02 p1_range=[0.3261,0.7425]
+PASS G3 repeated ideal Gaussian occupation/deletion events tau=0.5: events=432 invariant_max=2.558e-13 identity_max=1.705e-13 min_excess=5.432e-02 p1_range=[0.3409,0.6903]
+PASS G3 all-live-vertex energy and live-number expectations: live=209 E=-242.655272787 enumerated=-240.333212760 (1-2/live)E=-240.333212760 residual=5.684e-14 Nlive=104.000000->103.502392 max_branch_selection=0.430075
+PASS G3 regular half-filled finite-density arithmetic: E0/M=-1.198414537 K=27 EmeanK/M=-0.916926471 bound=-0.382558140 E[Nlive]/live=0.500000 variance_increment_bound=162.000
+INFO seeds: site=2026090400..2026090415 outcome=2026091400..2026091415 trajectories=16 events=27 site stream separate from outcome stream
+INFO ledger: D=Tr[(H_before-H_after)C_before], S_n=Tr[H_after C_n]-Tr[H_after C_before], DeltaE_sys,n=Epost_n-Epre=S_n-D; sum_n p_n S_n=0
+MC step exact_Emean tau0_mean tau0_SE tau05_mean tau05_SE exact_Nlive tau05_Nlive tau05_Nlive_SE (ideal-instrument finite-sample comparator; not a deterministic gate)
+MC 01 -256.460711 -256.460711 0.000000 -256.460711 0.000000 107.5000 107.5000 0.1291
+MC 02 -254.075030 -254.065937 0.001701 -254.068309 0.003670 107.0000 107.0625 0.1434
+MC 05 -246.984875 -246.928487 0.041382 -246.935413 0.031762 105.5000 105.8125 0.2453
+MC 10 -235.390911 -235.381283 0.098577 -235.395930 0.091199 103.0000 102.9375 0.4422
+MC 18 -217.420267 -217.404050 0.196831 -217.440279 0.130931 99.0000 98.8125 0.5182
+MC 27 -198.056118 -198.351462 0.279467 -198.124831 0.194630 94.5000 95.4375 0.7414
+LEDGER tau step Epre Epost deleted_star selection delta_system_energy cumulative_delta_system_energy fixedN_ground excess/live surviving_bonds
+LEDGER 0 01 -258.857540 -256.460711 -2.396829 +0.000000 +2.396829 +2.396829 -256.515035 0.00025267 642.00
+LEDGER 0.5 01 -258.857540 -256.460711 -2.396829 +0.000000 +2.396829 +2.396829 -256.515035 0.00025267 642.00
+LEDGER 0 10 -237.684727 -235.381283 -2.274882 +0.028563 +2.303444 +23.476257 -236.790313 0.00683995 589.25
+LEDGER 0.5 10 -237.675442 -235.395930 -2.275335 +0.004177 +2.279513 +23.461610 -236.793425 0.00678396 589.25
+LEDGER 0 27 -200.423403 -198.351462 -2.114239 -0.042298 +2.071941 +60.506078 -203.192972 0.02561646 495.62
+LEDGER 0.5 27 -200.224922 -198.124831 -2.112007 -0.011916 +2.100091 +60.732709 -203.182953 0.02676255 495.62
+SUMMARY tau=0 final_cumulative_delta_system_energy=+60.506078+/-0.279467 final_ground=-203.192972+/-0.297098 final_excess/live=0.02561646+/-0.00101492 sample_selection_mean=-0.012765 sample_deleted_star_mean=-2.253731
+SUMMARY tau=0.5 final_cumulative_delta_system_energy=+60.732709+/-0.194630 final_ground=-203.182953+/-0.275482 final_excess/live=0.02676255+/-0.00087239 sample_selection_mean=-0.005340 sample_deleted_star_mean=-2.254700
+PASS G4 four-mode N=2 finite apparatus energy and CP completion: max_res=1.038e-15 refusal=0.250000 kappa=1.000000 C=1.000000 bound=4.000000
+PASS G4 explicit status readout removes success-refusal coherence: coherent_vs_read=0.144338 read_cross=0.000e+00 normalized_choi_distance=0.349349 (not_diamond_bound)
+PASS G5 two events reuse one correlated battery and telescope to total lift: max_res=1.421e-14 Schmidt_rank=3 support_margin=22 declared_margin=24 levels=57
+PASS G5 intermediate and final matter-plus-battery ledger: matter=-1.583929->-0.791965->+0.000000 battery=28.000000->27.208035->26.416071 normalized_choi_distance=0.133631 (not_diamond_bound)
+PASS G6 sine, margins, and fresh/shared error-budget arithmetic probes: max_res=1.819e-12 overlap=0.159154943 fresh=(err=0.080,ref=0.040) shared=(err=0.080,meanE=8493.470)
+PROBE generic_continuity_bound epsilon=0.08 broad_history_ground_excess_difference/M<=0.960; arithmetic_only=no_proof
+SCOPE 216-mode Gaussian rows use the ideal occupation/deletion instrument; energy-conserving battery lifts run only in separate four-mode dimer fixtures
+SCOPE MC +/- are trajectory standard errors, not pass windows; dimer spectra are commensurate; normalized Choi distances are not diamond bounds; sine/scaling rows are arithmetic probes, not continuum proofs
+SCOPE no physical clock/rate, Record compiler, local spectral-gate compiler, battery preparation/renewal, scheduler-memory bound, stationary matter, gravity source, thermodynamic convergence, or photon result is inferred
+PASS G7 execution envelope: elapsed=5.24s limit=180s rss=55.1MiB limit=180MiB BLAS_threads=1
+PASS G7 concise stdout: projected_chars=5317 limit=6000
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/dest_hop_face_plant_occupies_holding_sandwich_cubes_check_2026_09_04.py
+runner_sha256: 95c4e6c6578b1afaef1ac9442110921811fe5eb0500f5d84d406755e35f00e0f
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.29
+status: ok
+----- stdout -----
+r=4 |geom_y0|=32 inherit=32 hop+e2=32 hop-e2=32 face=64 perpL=32 geom_x0=32
+PASS r=4 dest=hop +e2 cubes == geometric y=0 sandwich
+PASS r=4 HOLDING inherit cubes == geometric y=0 sandwich
+PASS r=4 dest=hop -e2 cubes == geometric y=-1 sandwich
+PASS r=4 y=0 and y=-1 sandwiches disjoint
+PASS r=4 face ±e2 cubes == disjoint union of ±e2 sandwiches
+PASS r=4 dest=perpL cubes == geometric x=0 slab
+r=6 |geom_y0|=88 inherit=88 hop+e2=88 hop-e2=88 face=176 perpL=88 geom_x0=88
+PASS r=6 dest=hop +e2 cubes == geometric y=0 sandwich
+PASS r=6 HOLDING inherit cubes == geometric y=0 sandwich
+PASS r=6 dest=hop -e2 cubes == geometric y=-1 sandwich
+PASS r=6 y=0 and y=-1 sandwiches disjoint
+PASS r=6 face ±e2 cubes == disjoint union of ±e2 sandwiches
+PASS r=6 dest=perpL cubes == geometric x=0 slab
+r=8 |geom_y0|=164 inherit=164 hop+e2=164 hop-e2=164 face=328 perpL=164 geom_x0=164
+PASS r=8 dest=hop +e2 cubes == geometric y=0 sandwich
+PASS r=8 HOLDING inherit cubes == geometric y=0 sandwich
+PASS r=8 dest=hop -e2 cubes == geometric y=-1 sandwich
+PASS r=8 y=0 and y=-1 sandwiches disjoint
+PASS r=8 face ±e2 cubes == disjoint union of ±e2 sandwiches
+PASS r=8 dest=perpL cubes == geometric x=0 slab
+PASS r=6 dest=hop occupancy set != HOLDING inherit occupancy set
+PASS r=6 every y=0 sandwich vertex occupied by dest=hop
+PASS r=6 every y=0 sandwich vertex occupied by HOLDING inherit
+r=6 dest agree on sandwich vertices 26/218
+PASS r=6 dests on sandwich vertices are not identical
+PASS r=6 dests on sandwich vertices agree somewhere
+PASS r=6 1-seed curl occupies no 8/8 cube
+PASS r=6 dest=copy plant +e2 occupies no 8/8 cube
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

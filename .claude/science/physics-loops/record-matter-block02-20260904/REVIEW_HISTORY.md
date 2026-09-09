@@ -1,0 +1,44 @@
+# Review history
+
+1. Root completed all 224 open-PR intake at the declared note/evidence/discussion scope and integrated all three worker syntheses. Full runner auditing was not claimed. Two receipt-order inversions and a filename-only #7906 correction are preserved with explicit provenance.
+2. Root read the two primary flux papers and relevant repo notes. Source-only independent review identified the fixed-N ensemble gap and incomplete D-versus-D-1 winding shorthand.
+3. Root derived a polar inequality preserving Q=0 after right particle-hole transformation, plus an all-winding-loop reflection set and canonical free-gap formula. Two scratch checks tested matrix-state and direct-CAR phase conventions; these are not certified runner evidence.
+4. Separate-context same-family reviewer rederived the core proof and an independent canonical absolute-ground-state route. Root read every line. The note now explicitly distinguishes the raw transpose from the adjoint used only for real K, and makes no general strict-inequality claim for noncanonical Wilson twists.
+5. Root reviewed all primary and checker source lines. The primary's actual flux residual is now printed instead of a literal zero, and domain checks are wired into actual constructors. Checker review found a missing declared timeout and raw stdout in place of the required machine cache; these were returned for repair before publication. Mutation and final gate evidence will be recorded below.
+
+## Publication value and policy scope
+
+This block is an applicability repair and a nonperturbative supplied-model extension, not a claim to promote framework physics to retained grade. The promotion-specific V1/V3 requirements cannot honestly be used to certify it: the targeted residual is in open PR #7878 rather than an audit verdict, and established external mathematics is essential. No audit verdict or primitive-based novelty is invented to satisfy those fields.
+
+The campaign's user-authorized science value is concrete: replace the stated finite-cluster/perturbative torus limit with a fixed-number global comparison over every compatible even rectangular torus and V>=0, so work can move to preparation and coupled dynamics. The technical work is the ensemble-preserving polar argument, CAR/particle-hole convention checks, and the complete winding-cycle geometry. It is not a one-step consequence of block01's free conditional sea factorization. The closest prior proposals are #7874 and #7878, whose actual notes were read at the intake heads; neither supplies this interacting fixed-half torus argument. The source literature is explicitly credited, so no novelty over Lieb or Macris–Nachtergaele is claimed.
+
+The general dramatic-step requirement is met as a hard-premise applicability test of those open-PR limitations. Treating every known-theorem application as valueless would retain a scientific error here; the user's instruction to improve evolving workflows supports correcting it. This narrowly documented judgment does not amend repository policy or authorize retained-grade claims.
+
+## Execution review
+
+Primary final source SHA-256: `46de4dbe218d9e847c5697b866707237741e4155c3b02d408aafe85446ee1dd3`; checker: `4773f060f980ac3fe680894637d25f990000479491ba2a7e526610ede2e49c78`. Root reviewed the final repair diffs and both machine envelopes: exit 0, status ok, 180-second declared timeout, 15/0 and 6/0 terminals. Six scratch mutations per runner all exited 1 and failed their intended check families. Exact changes and emitted excerpts are in MUTATION_CHECKS.md. The checker did not read or import primary artifacts.
+
+Primitive registry and all three approved primitive source notes were reread at this base. Units, kinetic isotropy and pointwise realized-state specialization are approved premises, not walls. Specific Hamiltonian, filling, preparation and event dynamics remain separate scientific inputs.
+
+## Restricted helper verification
+
+On a disposable worktree at c36d60b30c plus exactly the note-declared helper mapping, rebuilt the citation graph, seeded the local ledger and ran `python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main --json`: one affected row, forensic_evidence_ready true, both runner source paths in changed_surfaces, checker present in helper_runner_paths, zero failures. The mapping remains an explicit hard landing condition; no extraction policy or registry change ships on this author branch.
+
+## Conformance sections 1–12
+
+Validation was performed on science commit `4051140cd2` with the same final note, runner and cache bytes. The following additions record those completed results; they change only campaign bookkeeping.
+
+1. Self-containment: passed. Both runner sources and paired caches are in this branch; no rejected, unlanded or ignored artifact is a scientific input. External mathematical authority is explicitly cited and the sector bridge is reconstructed here.
+2. Cache discipline: passed after repair. Both declared timeouts are 180 seconds, both machine envelopes bind final source SHA-256, exit 0 and status ok; neither depends on an external scientific file. The checker's own-source AST inspection is an integrity read.
+3. Scope honesty: passed. Arbitrary-volume scope belongs to the proof, finite numerical scope to the fixtures. The Hamiltonian, filling and background-phase comparison remain conditional; no interacting uniqueness or preparation dynamics is claimed.
+4. Negative claims: not applicable. This is a positive theorem on explicit hypotheses. Excluded hypotheses and contrasting controls are not universal impossibility results; N1–N8 and negative-claim N5 certificates are not required for this packet.
+5. Proof obligations: passed. The note gives the exact target, centering, charge-preserving polar proof, physical transformations, full winding-cycle set and compact minimizer argument. The strongest missing physical obligation is common preparation/Record dynamics, rather than a disguised terminal mathematical lemma.
+6. Runner validity: passed. Root checked every source line and central mathematics; primary direct bit-CAR and checker Pauli-tensor and exact matrix-contraction construction disagree under the recorded bad conventions. All twelve scratch mutations exited 1 with intended FAIL groups. The checker imports only ast, time, numpy and sympy.
+7. Packet completeness: passed at the reviewed hard landing condition. Both sources/caches land here; the note declares the exact checker mapping. A disposable proposed tree plus that mapping is forensic-ready with both source paths and helper_runner_paths populated. The literal registry carve-out is present at this base; the registry itself is not edited here.
+8. Links and graph: passed. Every added local Markdown target is a tracked regular file. The intended graph delta is exactly one new zero-dependency note node, 4760 to 4761 nodes, with 11859 edges unchanged. The regenerated manifest co-lands. No other generated audit output ships.
+9. Note structure: passed. Required machine-status, trace, import, proof-boundary and Review record surfaces are present. No proposed axiom or primitive is used as an approved premise.
+10. Propose/ratify: passed. No audit application, auditor verdict, effective status or registry/policy edit is authored. Independent audit remains required for the new bounded_theorem row.
+11. Facts and counts: passed. Numeric evidence was checked against the final machine caches. Initial 224-PR intake and the separately read #7973 addendum have distinct provenance; all 225 matching receipts concern reading scope, not correctness. Older PR applicability language is checked against actual notes and primary papers.
+12. Pre-review gates: passed. Full pipeline exited 0 (`block02-pipeline-frozen.txt`, checkpoint `208792648404`); subsequent strict lint exited 0 with no errors; changed-evidence exited 0 and marked the primary row forensic-ready; the separate helper-tree check marked both runners ready. Vocabulary and Python compilation passed. The final whitespace pass removed two Markdown hard-break trailing spaces from the mutation report; the committed merge-base delta is checked again before push. The final metadata-only report additions receive vocabulary and whitespace checks before commit.
+
+Two earlier preflight attempts were not passes: one reached the graph gate before its manifest was staged; a second caught bookkeeping edits during source capture. Both were corrected before the successful frozen-tree run. An early concurrent strict-lint snapshot also saw incomplete generated statuses; only the subsequent post-pipeline strict-lint result above is accepted. Generated validation residue was restored to this branch's own HEAD, and the seven newly generated ledger shards were removed explicitly.

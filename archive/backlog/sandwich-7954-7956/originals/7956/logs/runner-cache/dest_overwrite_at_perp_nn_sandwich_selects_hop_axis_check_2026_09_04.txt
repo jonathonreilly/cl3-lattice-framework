@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/dest_overwrite_at_perp_nn_sandwich_selects_hop_axis_check_2026_09_04.py
+runner_sha256: 3792a2273f4b56c5f25b5c5ccc709245d3f23c4d5b364d14fdf4fcc7a45ae1c2
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.36
+status: ok
+----- stdout -----
+PASS e1 × e2 is +e3
+PASS r=4 1-seed occupies +e2
+PASS r=4 1-seed dest at +e2 is +e3
+PASS r=4 1-seed does not occupy +e1
+r=4 overwrite dest=(1, 0, 0) n8=0 fills_y0=0
+PASS r=4 overwrite dest=(1, 0, 0) fills no 8/8 cube
+r=4 overwrite dest=(-1, 0, 0) n8=0 fills_y0=0
+PASS r=4 overwrite dest=(-1, 0, 0) fills no 8/8 cube
+r=4 overwrite dest=(0, 1, 0) n8=32 fills_y0=1
+PASS r=4 overwrite dest=(0, 1, 0) fills geometric y=0 sandwich
+r=4 overwrite dest=(0, -1, 0) n8=32 fills_y0=1
+PASS r=4 overwrite dest=(0, -1, 0) fills geometric y=0 sandwich
+r=4 overwrite dest=(0, 0, 1) n8=0 fills_y0=0
+PASS r=4 overwrite dest=(0, 0, 1) fills no 8/8 cube
+r=4 overwrite dest=(0, 0, -1) n8=0 fills_y0=0
+PASS r=4 overwrite dest=(0, 0, -1) fills no 8/8 cube
+PASS r=4 +hop and -hop overwrite occupancy sets equal
+PASS r=4 +e2 is not occupancy-extra vs 1-seed
+PASS r=6 1-seed occupies +e2
+PASS r=6 1-seed dest at +e2 is +e3
+PASS r=6 1-seed does not occupy +e1
+r=6 overwrite dest=(1, 0, 0) n8=0 fills_y0=0
+PASS r=6 overwrite dest=(1, 0, 0) fills no 8/8 cube
+r=6 overwrite dest=(-1, 0, 0) n8=0 fills_y0=0
+PASS r=6 overwrite dest=(-1, 0, 0) fills no 8/8 cube
+r=6 overwrite dest=(0, 1, 0) n8=88 fills_y0=1
+PASS r=6 overwrite dest=(0, 1, 0) fills geometric y=0 sandwich
+r=6 overwrite dest=(0, -1, 0) n8=88 fills_y0=1
+PASS r=6 overwrite dest=(0, -1, 0) fills geometric y=0 sandwich
+r=6 overwrite dest=(0, 0, 1) n8=0 fills_y0=0
+PASS r=6 overwrite dest=(0, 0, 1) fills no 8/8 cube
+r=6 overwrite dest=(0, 0, -1) n8=0 fills_y0=0
+PASS r=6 overwrite dest=(0, 0, -1) fills no 8/8 cube
+PASS r=6 +hop and -hop overwrite occupancy sets equal
+PASS r=6 +e2 is not occupancy-extra vs 1-seed
+PASS r=8 1-seed occupies +e2
+PASS r=8 1-seed dest at +e2 is +e3
+PASS r=8 1-seed does not occupy +e1
+r=8 overwrite dest=(1, 0, 0) n8=0 fills_y0=0
+PASS r=8 overwrite dest=(1, 0, 0) fills no 8/8 cube
+r=8 overwrite dest=(-1, 0, 0) n8=0 fills_y0=0
+PASS r=8 overwrite dest=(-1, 0, 0) fills no 8/8 cube
+r=8 overwrite dest=(0, 1, 0) n8=164 fills_y0=1
+PASS r=8 overwrite dest=(0, 1, 0) fills geometric y=0 sandwich
+r=8 overwrite dest=(0, -1, 0) n8=164 fills_y0=1
+PASS r=8 overwrite dest=(0, -1, 0) fills geometric y=0 sandwich
+r=8 overwrite dest=(0, 0, 1) n8=0 fills_y0=0
+PASS r=8 overwrite dest=(0, 0, 1) fills no 8/8 cube
+r=8 overwrite dest=(0, 0, -1) n8=0 fills_y0=0
+PASS r=8 overwrite dest=(0, 0, -1) fills no 8/8 cube
+PASS r=8 +hop and -hop overwrite occupancy sets equal
+PASS r=8 +e2 is not occupancy-extra vs 1-seed
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

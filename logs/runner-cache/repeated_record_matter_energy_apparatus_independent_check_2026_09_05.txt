@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/repeated_record_matter_energy_apparatus_independent_check_2026_09_05.py
+runner_sha256: d9674872004070379c21a819496e0426b9fbede7080b81ef392dbdcc712ab40f
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+PASS source_contract: sha256=d967487200407037 imports=ast,hashlib,itertools,math,numpy,os,pathlib,scipy,sys self-read-only BLAS=1 dense<=600
+PASS fixed_number_process: E0=-0.400000000 E1mean=0.028289713 <V0>=-0.428289713 paths=00:0.610349,01:0.174264,10:0.168401,11:0.046986 spreadE2=0.437966580
+PASS uniform_clock_laws: Ek=-0.400000,-0.200000,-0.066667,0.000000,0.000000 Nlive=2.000000,1.500000,1.000000,0.500000,0.000000 NhypErr=2.22e-16 gamma=0.63 t=0.79 Et=-0.147830234 target=-0.147830234
+PASS uniform_fibre_identities: histories=0000,0001,0101 taus=0.137,0.491,1.031 cases=9 maxResidual(E=2.12e-15,H2=1.14e-14,N=2.93e-15,n1=1.03e-15) FourierPurity=0.437869822 correlated(E=0.051282051,H2=0.908460872,N=1.051282051)
+PASS local_defects: kappa=2.449489743 sectors=0.000000,2.449490,2.449490,2.449490,0.000000 ||r||=4.898979486 ||K2||=8.648694762 C=7.324347381
+PASS shared_battery_two_events: q1=(-1, 0, 1) q2=(-1, 0, 1) q12=(-2, 0, 2) purityB1=0.864386720 Etot=8.885281374 Emat=0.400000,0.600000,0.000000 Ebat=8.485281,8.285281,8.885281 normalizedChoi(sharpW=0.666667,broadW=0.098500) statusCopyDim=468
+PASS stationary_input_statistics: betaShiftOverlap=0.707106781 jointErr=5.55e-17 condExcessErr=1.50e-16 historyErr=1.11e-16 firstDistance(ground=1.41e-16,zero=0.375000000) zeroNoncomm=1.500000000 finalStateErr=1.45e-16
+PASS status_readout_correction: p=0.040 coherent=0.216977156 readout=0.040000000 sineOverlap=0.159154943092=1/(2pi); fixture_status_readout_distance=p
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

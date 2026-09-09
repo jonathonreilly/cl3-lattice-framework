@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04.py
+runner_sha256: 4c5069df7249ef613ee87a661884db3f5ef6e9ea8245a59344ea17c8f6222201
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.86
+status: ok
+----- stdout -----
+PASS source_import_firewall: sha256=4c5069df7249ef61 imports=ast,hashlib,itertools,math,numpy,pathlib,scipy,sympy,sys reads=self-only
+PASS exact_fock_projection: P(n=0)=P(n=1)=1/2 Epost=-2 zero_occ=(9/10,1/10)
+PASS fixed_number_energy_trace: Delta_multi=0.471523237834 jump_multi=6 diagonal=(jump=1,Delta=0) empty=(0,0) full=(12,0)
+PASS leakage_squared_overlap: alpha=1/5 L=0.105572809000 ell=0.102786404500 F=0.897213595500
+PASS resolvent_scalar_quadrature: g=(s+5)/((s+1)(s+9)) quadrature=0.236067977500 direct=0.236067977500
+PASS canonical_integer_grids: L=4:D=0.000000000,ell=0.000000000 L=6:D=0.054323624,ell=0.023587620 L=8:D=0.072903415,ell=0.038888899
+PASS continuum_constants_shells: twist_N=2..5 ok shell_count<=32r^2 near_sum<=delta/pi+2/N g_inf<=0.589048623 liminfF>=0.116427066
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

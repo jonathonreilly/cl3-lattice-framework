@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/local_record_quench_energy_and_ground_overlap_2026_09_04.py
+runner_sha256: 331ff5335e1dd99000a04dbaf21420cb3979fdb12aadcbf53b6d6508dc256394
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.01
+status: ok
+----- stdout -----
+PASS G0 constructor domains: rejections=10/10
+PASS G1 complex eigensea and polar comparator: max_res=2.788e-15 ImU=1.526 nonreducing=1.292
+PASS G1 all iterative occupation branches: max_res=7.105e-15 subsets=empty/full/nonreducing outcomes=21
+DATA G1 p=[0.062500,1.000000] N=[0.0,4.0] Epost=[-6.600000,+0.000000] Eground=[-6.600000,+0.000000]
+PASS G2 branch energy and fixed-N ground subtraction: max_res=7.105e-15
+PASS G2 bounds and diagonal-K control: max_violation=7.105e-15 diagonal_jump=1.300000 diagonal_delta=2.665e-15
+PASS G3 staggered cubic geometry: max_res=0.000e+00 boundary_twists=-1,+1,-1
+PASS G3 canonical spectra and direct deleted energies: spectrum_max=1.510e-14 energy_max=2.274e-13
+DATA G3 L  gap       Epost        Eground      Delta       jump
+DATA G3 4 2.449490 -75.934182 -75.934182 0.000000000 2.449489743
+DATA G3 6 1.732051 -256.460711 -256.515035 0.054323624 2.396829074
+DATA G3 8 1.325654 -609.421879 -609.494782 0.072903415 2.389889720
+PASS G4 singleton resolvent quadrature: max_abs=7.827e-14 values=0.000000000,0.054323624,0.072903415
+PASS G5 particles holes zero mode and leakage: max_res=7.118e-14
+PASS G5 fixed-N Slater overlap and g0 bound: definition_max=8.799e-13 bound_max=1.532e-14 minF=0.961111 maxell=0.038889
+PASS G5 scalar integral for L: max_abs=3.797e-14 bound_source=g0_not_gap
+DATA G5 L n  Nplus      Nholes     zero_occ   overlap    leakage
+DATA G5 4 0 0.000000000 0.000000000 1.000000000 1.000000000 0.000000000
+DATA G5 4 1 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000
+DATA G5 6 0 0.023587620 0.000142907 0.976555287 0.976412406 0.023587620
+DATA G5 6 1 0.000142907 0.023587620 0.023444713 0.976412406 0.023587620
+DATA G5 8 0 0.038888899 0.000398024 0.961509125 0.961111349 0.038888899
+DATA G5 8 1 0.000398024 0.038888899 0.038490875 0.961111349 0.038888899
+PASS G6 scalar momentum and finite-grid quadratures: identity_max=1.776e-15 actual_max=7.819e-14 diagnostic_only=no_limit_proof
+DATA G6 L  Delta       Lscalar     g0
+DATA G6  4 0.000000000 0.000000000 0.166666667
+DATA G6  6 0.054323624 0.023730527 0.200617284
+DATA G6  8 0.072903415 0.039286924 0.215686275
+DATA G6 12 0.084495567 0.056333247 0.228956229
+DATA G6 16 0.088115241 0.065381944 0.235106571
+DATA G6 24 0.090556253 0.074870243 0.241072439
+DATA G6 32 0.091378861 0.079813600 0.244010169
+PASS G7 execution envelope: elapsed=0.48s timeout=180s rss=161.0MiB max_sites=512
+PASS G7 stdout envelope: chars=2467 limit=6000
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

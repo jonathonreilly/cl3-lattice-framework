@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/cubic_repulsive_flux_fixed_half_2026_09_04.py
+runner_sha256: 46de4dbe218d9e847c5697b866707237741e4155c3b02d408aafe85446ee1dd3
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.65
+status: ok
+----- stdout -----
+fixed-half cubic repulsive-flux finite diagnostics
+PASS polar direct/trace/vectorization: cases=240 max_residual=8.882e-16
+PASS polar roots preserve norm and charge: max_residual=1.554e-15
+PASS polar fixed-half q=0 inequality: cases=120 min_margin=0.00347261903
+PASS polar q=+-1 algebraic observation: cases=120 min_margin=0.0039729331; no off-half flux claim
+PASS mutation requires complex conjugation: seed=415 cases=200 wrong_min_margin=-1.26463224
+PASS CAR crossing gauge and Hermiticity: fields=12 cross=2.24e-16 herm=5.89e-16 gauge=4.26e-14
+PASS CAR fixed-half reflection inequality: cases=48 dim=70 min_margin=0.00480984757
+PASS CAR centered/uncentered N=4 shift: shift=-3V max_matrix_residual=0.00e+00
+PASS KS plaquettes and Wilson loops: fields=18 plaquettes=7584 loops=1416 residual=0.000e+00
+PASS KS direct/Bloch spectra: all8twists=4^3,6^3 max_residual=1.643e-14
+PASS canonical finite-volume gap: sizes=4^3,4x4x6,6^3,4x6x8 min_gap=1.73205081 formula_res=8.88e-15
+PASS mutation rejects all-periodic 4^3: zero_modes=8 E_periodic-E_canonical=6.58613981
+PASS finite reflection/cycle geometry: sizes=4 cycles=2028 cut_cycles=1620
+PASS fixed-N versus full-Fock centering: cube shifts N=2:0, N=4:-3 max_res=0.00e+00
+PASS domain guards: rejected=5/5 (KS/geometry odd,length2; V<0)
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

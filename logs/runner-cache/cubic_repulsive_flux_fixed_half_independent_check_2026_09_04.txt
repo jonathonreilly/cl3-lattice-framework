@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/cubic_repulsive_flux_fixed_half_independent_check_2026_09_04.py
+runner_sha256: 4773f060f980ac3fe680894637d25f990000479491ba2a7e526610ede2e49c78
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+PASS pauli_car_centering CAR=0.0e+00 centering_N2,4,6=1.8e-15 dimN4=70
+PASS exact_polar_mutations local=-8/5 drop_bar_margin=-8/5 polar_margin=2 KT=-1 Kdag=1 q_to_Q0=True
+PASS fixed_half_reflection cases=12 spec=3.4e-14 herm=0.0e+00 N/Q=0.0e+00 polar_Q0=1.2e-15 norm=2.2e-15 margins=(1.098e-01,2.461e-01)
+PASS centered_ground_diagnostic diagnostic_only centered_full_vs_N4=1.6e-14 plaquette=0.0e+00
+PASS canonical_torus bandgaps=(4, 4, 4):4.898979/(-1, -1, -1);(4, 4, 6):4.472136/(-1, -1, 1);(6, 6, 6):3.464102/(1, 1, 1) formula=8.9e-15 h2=0.0e+00 clifford=0.0e+00 herm=0.0e+00 wrong4_gap=6.1e-17
+PASS guards_import_firewall domain_rejections=3/3 imports=ast,numpy,sympy,time local_imports=0
+RUNTIME_SECONDS=0.422
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

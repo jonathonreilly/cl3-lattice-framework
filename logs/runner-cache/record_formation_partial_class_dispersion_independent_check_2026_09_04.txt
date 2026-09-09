@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/record_formation_partial_class_dispersion_independent_check_2026_09_04.py
+runner_sha256: 2263f15f2765fc0093be95cca5f96163a871ae939b991081b64c63e84ce94ab8
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.34
+status: ok
+----- stdout -----
+PASS L=4: real-space torus construction
+PASS L=4: all 16 deleted-class spectra and zero counts
+SPECTRUM L=4 N=2 subsets=16 nodes=[1] max_error=7.327e-15 worst_mask=0000 max_dimension=64
+PASS L=6: real-space torus construction
+PASS L=6: all 16 deleted-class spectra and zero counts
+SPECTRUM L=6 N=3 subsets=16 nodes=[0] max_error=1.199e-14 worst_mask=0000 max_dimension=216
+PASS L=8: real-space torus construction
+PASS L=8: all 16 deleted-class spectra and zero counts
+SPECTRUM L=8 N=4 subsets=16 nodes=[1] max_error=2.442e-14 worst_mask=0000 max_dimension=512
+PASS complex one-fermion state fixes the covariance index convention
+PASS open-cube direct-Fock conditional factorization over all 81 cases
+PASS wrong fermion signs and a different remaining Hamiltonian are rejected
+FOCK cases=81 even_vertices=(0, 3, 5, 6) probability_maxerr=3.886e-16 spectral_counts_ok=True hermitian_maxerr=0.000e+00 projector_maxerr=1.091e-15 commutator_max=1.647e-15 zero_support_maxerr=2.702e-15 delta_projector_maxerr=1.524e-15 rank_maxerr=2.331e-15
+FOCK_CONTROLS wrong_sign_density_gap=1.247219e+00 wrong_h_bond=(1, 3) wrong_h_commutator=1.632993e+00
+PASS single physical-bond sign twist changes the spectrum
+MUTATION L=6 R=000 bond=(0,1,1)-(1,1,1) changed_entries=2 max_spectral_distance=6.980787124e-01 fourth_moment_change=64.000000
+PASS omitting generic zero branches fails spectral cardinality
+OMITTED_ZERO L=6 N=3 nodes=0 live_dimension=189 wrong_count=162 missing=27
+PASS L=6 conditioned even-site propagation and zero-space control
+PROP_SETUP L=6 R=000 initial=(0,1,1) N=3 exact_nodes=0 zero_dim=27 zero_projection=3.119e-31 degree=6 kernel_per_neighbor=1.0 graph_max_distance=9 exact_krylov_sites=108 max_occupied_distance=7
+PROP t=0.2 norm_error=2.220e-16 outside_probability=2.207156346e-01 nearest_probability=2.184556440e-01 nearest_over_t2=5.461391099e+00 max_distance_probability=1.077973493e-14
+PROP t=0.5 norm_error=2.220e-16 outside_probability=8.757575024e-01 nearest_probability=8.115824305e-01 nearest_over_t2=3.246329722e+00 max_distance_probability=3.365646009e-09
+PROP t=1.0 norm_error=2.220e-16 outside_probability=5.841317326e-01 nearest_probability=2.623770138e-01 nearest_over_t2=2.623770138e-01 max_distance_probability=2.874624092e-05
+PASS resource limits
+RESOURCES seconds=0.213 peak_MiB=38.7 global_spectrum_max_error=2.442e-14
+SCOPE finite tori and cube; supplied hopping/deletion/occupation instrument; physical record mapping and clock open
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+
