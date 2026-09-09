@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/frontier_admissibility_finite_state_markov_completion_2026_08_14.py
+runner_sha256: 35688e244494e32d41414aa3d72df79c4913cfa8b2986ac179d719f9541020c8
+input_fingerprint_sha256: f1df0cadd7992a3f4a67e5f196fac1a8384fd57aea4e1ad25452910c21e52377
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 6.82
+status: ok
+----- stdout -----
+PASS A-current-axiom-and-Block84-authority: origin/main axiom=93af34cf6fcf; live four-node premise registry has no Record-law primitive; exact Block84 note/runner receipt
+PASS B-finite-frontier-and-state-space-type: 128 domains satisfy |F(R)|<=6|R|; full finite-M2 state space is standard-Borel, generated 27-symbol subspace is countable
+PASS C-normalized-finite-atomic-transition-kernel: 26 local directions and 32 arbitrary domains normalize; seed transition has 64 atoms; linear/cubic and product/correlated twins remain distinct
+PASS D-content-blind-formation-supported-append-and-permanence: 31 domains with two distinct content tables have identical formation kernels; old contents persist and new locks are supported
+PASS E-arbitrary-domain-translation-and-proper-cubic-covariance: 32 domains x 24 rotations plus two translations transport frontiers, directions, probabilities, and projectors
+PASS F-finite-propagation-and-no-nonempty-finite-full-lattice-halt: 127 nonempty domains expose an extreme-site growth witness; 15 histories obey speed<=1 and the seed gives six exact balls
+PASS G-synchronous-prestate-atomicity-and-hostile-dynamic-recompute: six frozen writes commute, but one in-place write exposes 5 extra same-tick candidates
+PASS H-two-cube-halt-is-not-a-full-lattice-horizon: the restricted 12-site patch halts after waves 3,4,3,1, while its full-lattice embedding has 32 eligible outside sites and the seed law has shell-5 size 102
+PASS I-standard-Borel-time-homogeneous-Markov-history-interface: two-step mass=1; finite-atomic Borel kernel recursively defines normalized cylinders, but no physical duration
+PASS J-N1-N8-law-source-time-gravity-and-TOE-boundary: the note keeps candidate selection, scheduler/independence, action, seed, physical time, source/energy, gravity, retention, and scores open
+METRICS state_domains=128 local_directions=26 seed_atoms=64 rotations=24 nonempty_growth_cases=127 patch_outside_frontier=32
+BOUNDARY: the displayed Block84 Record-only member extends to a normalized covariant finite-atomic Markov kernel on every finite Record configuration, with permanent content-blind append, finite propagation, and no nonempty finite full-Z3 halt; the exact law/linear response, spatial-Pauli action, synchronous scheduler, conditional independence, seed, physical duration, source/energy map, gravity, adoption, audit retention, obligation retirement, and TOE percentage movement remain open
+per_element: checked all 26 nonzero neighbour directions, both spectral outcomes, linear/cubic normalized response pairs, the 27-symbol generated alphabet, projector transport, and exact append contents
+per_site: checked 128 finite domains, six-neighbour frontier bounds, 127 extreme-site growth witnesses, old Record contents, two translations, and 24 proper-cubic rotations
+per_mode: checked empty, nonempty, single-seed, asymmetric multi-seed, linear/cubic response, product/common-sign correlation, frozen synchronous, dynamic recomputation, finite-patch, and full-lattice modes
+per_block: checked live axiom and four-node primitive registry, exact Block84 receipt, arbitrary-state transition normalization, permanence, standard-Borel Markov cylinders, scheduler dependence, and the two-cube boundary artifact
+lattice_wide: checked the exact local formula and finite-state full-Z3 transition for every finite input type, plus general proofs encoded in the note; checked and not executed — no arbitrary infinite initial configuration, physical clock, typed energy/source, Ward identity, or gravity coupling is claimed
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

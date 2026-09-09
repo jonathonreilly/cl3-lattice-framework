@@ -45,6 +45,9 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    "admissibility_finite_state_markov_completion_bounded_theorem_note_2026-08-14": [
+        "scripts/frontier_admissibility_finite_state_markov_completion_independent_check_2026_09_09.py",
+    ],
     'ac_reta_c3_source_response_spectral_identity_type_repair_bounded_theorem_note_2026-09-02': [
         'scripts/reta_c3_source_response_independent_check_2026_09_02.py',
         'scripts/reta_c3_source_response_mutation_check_2026_09_02.py',
