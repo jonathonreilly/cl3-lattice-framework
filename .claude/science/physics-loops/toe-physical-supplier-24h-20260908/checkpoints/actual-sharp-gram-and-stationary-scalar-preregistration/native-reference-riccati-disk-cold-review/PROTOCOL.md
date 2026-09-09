@@ -1,0 +1,1 @@
+One stdlib exact Fraction control run, synthetic 2/4 modes only, under 30 seconds and 384 MiB. Checks independent ordered CAR Hamiltonian decomposition and arbitrary-skew Lyapunov identity; no native physical matrices or evolution. Preserve failure/output. Mathematical review remains separate from controls.

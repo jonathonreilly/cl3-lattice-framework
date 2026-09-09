@@ -1,0 +1,7 @@
+# Scalar root monitor review
+
+Final source83c92ef2fdb986bc1795296a1d5ef3ef4fcfcb55d5679d77f6a1808f80512270: PASS for prospective single-attempt monitor. Worker e46bcdb1 unchanged. Complete original89a1 source was read; it accepted empty input_hashes and checked only role names. This was a real receipt-integrity gap, reported before launch. The final delta now requires exact roles from frozen INPUTS.json and compares every value with the actual file SHA. This closes the finding; original source remains preserved by root.
+
+The monitor includes its own process and worker/descendants in sampled RSS, uses a .3-second bounded ps call, kills the worker group on failure, and retains logs/peak/final receipts. Its first-statement clock and29.5-second timer charge imports and pins; external shell acceptance is still explicitly pending and must enforce the inclusive30-second final receipt. Exclusive STARTED and fresh fixed output prevent replacement attempts. Worker source/runtime are checked before and after. Result checks cover fixed31 panels, exact tails, target/width, cA relation, no-oracle scope, source/result hashes and finite-positive nested timings. The source's childless worker topology is load-bearing for group cleanup; no arbitrary detached descendants are authorized.
+
+Root reports actual strict readiness PASS after the delta. I inspected the changed lines and updated ROOT_FREEZE; no launch or physical integration was executed by this review.

@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -22,7 +22,7 @@
+  out=[]
+  for a,b in brackets:
+   fa=val(n,a)
+-  while b-a>F(1,2**80):
++  while b-a>F(1,2**160):
+    c=(a+b)/2;fc=val(n,c)
+    if fc==0:a=b=c;break
+    if fa*fc<0:b=c

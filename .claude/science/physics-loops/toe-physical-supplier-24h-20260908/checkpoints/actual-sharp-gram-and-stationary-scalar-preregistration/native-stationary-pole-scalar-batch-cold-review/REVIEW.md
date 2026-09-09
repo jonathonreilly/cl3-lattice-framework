@@ -1,0 +1,13 @@
+# Independent 66-pole source review
+
+Disposition: PASS for the fixed 66-A/Aprime source proposal, freeze9845c5473716c7477c0833e9741b531dda4f80ff74ece0c0f16a8e515a7c043d. External monitor not yet supplied or reviewed; this is not execution authorization or a B/matrix cost approval.
+
+Read complete PROTOCOL, geometry, highorder, pilot, dispatcher, uniform-transform proof and ledger; reused my prior complete B76350 elliptic source/proof/postreview coverage. The actual elliptic and interval helpers are byte-identical; highorder differs only80→160 root refinement. Independent saved-data checks used the explicit degree-six Legendre polynomial, not the author's generator: all66 brackets sign-change, fixed IDs/panels and midpoint inflation agree, and all24552 catalogue comparisons are strictly disjoint. All2655 source/input pins match. Total27609 explicit checks; no oracle/integral call.
+
+The derivative bound follows X>=4|theta|²/pi² and integration of the positive continuum resolvent: |A'|<=pi²/32<1/3. Direct differentiation gives A''=E[(6s²−2X)/(X+s²)^3], so |A''|<=6/slo^4 throughout a bracket. Midpoint radius inflation therefore correctly equals width/6 for A and3width/slo^4 for A'. It encloses the full bracket rather than only its midpoint. Six disjoint sign-changing degree-six brackets prove complete root coverage. Separation does not certify later divided-difference accuracy.
+
+The pilot makes one oracle call per pinned row, writes each actual raw result and timing before comparing its width, inflates both intervals, then saves again. Caught failures preserve current stage and all accumulated rows. The dispatcher binds the actual source bytes, strict-I-B-S interpreter, membership and loaded origins; existing output is rejected. Worker29-second alarm and30-second/RSS postcheck are secondary; the proposed one-root tree monitor must enforce total startup-inclusive resources. Readiness is parser/import-only, honestly reported. It does not claim to execute geometry/oracles.
+
+The exact fixed ledger and prior746 timing entries imply forecast10+3*66*.01228104199981317=12.431646315963008 seconds. This is conservative pricing, not a runtime guarantee. Every prior timing is finite positive. No independent new cost fixture was run.
+
+Scope limitation: the later B uniform-envelope discussion uses Cminus<7/15; its pair-vacuum proof is not presently pinned, but this premise is not used by the66-A worker. Bind that proof before any B execution. The66-oracle forecast does not price24552 B pairs or a matrix/projector job. Readiness and acceptance guards should remain source-bound to this exact frozen pole ledger.

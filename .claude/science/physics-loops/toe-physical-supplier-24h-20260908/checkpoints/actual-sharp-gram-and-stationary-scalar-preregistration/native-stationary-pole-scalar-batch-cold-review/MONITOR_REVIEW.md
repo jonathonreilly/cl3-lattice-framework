@@ -1,0 +1,9 @@
+# Independent root-monitor cold review
+
+PASS for run_once.py b3d851804aa7745874c32a32f4d6aedec36c6653f73efaab97bbeaf4dca58e52, worker9845c547. Full source read and diff against previously reviewed fc655302 common-Gram monitor. Changes are fixed source/output identities and the appropriate66-pole acceptance block. No launch or readiness execution by this reviewer.
+
+The root starts its clock before imports, sets29.5-second alarm, validates its own freeze and worker2655 pins/interpreter/loaded origins, requires fresh output and exclusive STARTED marker, and starts one childless worker in a separate process group. Sampled RSS includes root and child descendants. ps has.3-second timeout; monitor/acceptance exceptions reach process-group kill and receipt retention. This is the reviewed childless topology, not a generic detached-process supervisor. Worker source contains no spawning path. External shell receipt remains explicitly pending and must reconcile the full30-second campaign after final writes; sampled RSS is not claimed continuous.
+
+Acceptance binds result to COMPLETE hash/freeze and requires66 rows matching every pinned pole dictionary. Both raw widths are checked exactly against1e-30, both whole-bracket endpoints must equal raw endpoints plus/minus the prescribed inflation, signs and parameter160 are checked, and the final partial must retain all rows. Timings must nest positively below finite positive result/worker times; thus NaN/infinite row times cannot pass. Output scope explicitly excludes B,matrix,alpha. Fraction imports are followed by another loaded-origin check. No scientific value is accepted from timing alone.
+
+No blocker found. This review is source/contract evidence only; root still owns authorization, external shell reconciliation and the single execution.

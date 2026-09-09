@@ -1,0 +1,7 @@
+# Independent sharp common-Gram saved-arithmetic replay
+
+PASS on fixed result d3244c6f39bc072fd108f48039c6a703952f97b5680cf0d17c70d5aab9348518. Disclosure: reviewer authored the new scalar-input binder, but not the original paired-pivot arithmetic core. The postchecker uses its separate tuple/Fraction implementation, not an import of the worker. It was frozen before this one execution.
+
+All11202 predicates passed:28-by28 G/J symmetry, independently constructed three null vectors and168 containment checks, every48bit rounded update, selected positive pivots, trace/error identities and the final conditional target. Twelve pairs were used. Exact residual upper is2201845429989/281474976710656. Error squared upper is1204633529746080080371137063/9903520314283042199192993792, below1/4; hence the conditional norm error is below1/2 (about0.348765). Result and WORKER_COMPLETE hashes agree with the explicitly preselected result.
+
+Replay took0.276seconds and20,447,232bytes reported process RSS. It performs no scalar oracle, integral or physical Gram builder. This confirms the saved computation and its narrower scope: for the common raw columns Y and coefficient operator norm<=1, the certified compression error meets the fixed half-error target. It does not establish a specific weighted PA approximation, a physical stationary covariance, an alpha value or a phase conclusion. The source Gram formula and accepted scalar containment rely on their separate reviewed inputs; this is not a new independent derivation of those premises.
