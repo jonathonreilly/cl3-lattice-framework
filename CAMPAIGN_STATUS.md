@@ -50,7 +50,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W38 lands five corrected gravity/Regge PRs. Fixed backlog: 67 open; 116 corrected science scopes landed plus eight partial Maxwell scopes with explicit production/physical holds. 57 earlier closures remain pending at four open successors. Record-matter, shear and sandwich reviews active; formal audit deferred.
+1. W38 lands five corrected gravity/Regge PRs. Fixed backlog: 67 open; 116 corrected science scopes landed plus eight partial Maxwell scopes with explicit production/physical holds. 57 earlier closures remain pending at four open successors. W39 record-matter/sandwich integration, shear corrections and readout review active; formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

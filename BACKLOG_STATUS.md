@@ -18,7 +18,7 @@ W38 lands #7925/#7929/#7938/#7910/#7940 after original-session confirmations of 
 
 Astra low remains the focused landing-review default; unresolved consequential mathematics escalates to Astra xhigh. Reuse original review and same-session correction confirmation. Detailed certification waits for audit; the [pilot](REVIEWER_MODEL_PILOT.md) is one workload, not a general cost guarantee.
 
-Original Astra-low reviews are active for record-matter #7971/#7975/#7978/#7979 and shear/readout #7951/#7970/#7987. Sandwich-cube #7954/#7956 has completed original review; author corrections address two material findings before same-reviewer confirmation. No pending unit receives acceptance. Maxwell's production and broader physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
+W39 combines six PRs: sandwich #7954/#7956 corrections are independently confirmed, and record-matter #7971/#7975/#7978/#7979 awaits final confirmation of three checker registrations. Shear #7951/#7970/#7987 has ten material finding groups under author repair. Readout #7901/#7969 original review is active. No pending unit receives acceptance; Maxwell production and broader physical holds remain explicit in reconciliation.
 
 ## Landed source history
 
