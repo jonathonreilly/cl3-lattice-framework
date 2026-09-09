@@ -1,0 +1,768 @@
+{
+  "role": "author correction; original reviewer backlog_ticks_review must confirm affected final source",
+  "base": "a917b8f7422bb420e599b37e3562505e77de1da5",
+  "final_tree": "711184ae356eeff61b1d48833ba3d0e425d8d260",
+  "source_freeze_tree": "9b1e4127c5a43f9326173e04956652873333483d",
+  "paths": 33,
+  "candidate_patch_sha256": "e64770ac128bfcbe93858e24a106edfa1e3bfbbcefa6fce34a9594e318184ebc",
+  "correction_patch_sha256": "1d63c868077c5d41929f0ddd57f41d5b4f317793ee5410b135980a3f7ee50204",
+  "report_sha256": "8ed8f3f2f5129ba19a9c5106111843296523868923849c834057fe8fa30c410e",
+  "original_receipt_sha256": "2381e998ecd68e31459e2d65c002a069f768d4e7f78d77c635d88c9bdd8c32b3",
+  "original_report_sha256": "306849d9c65391c75ed13245ccf28fa1d8375a4942c388e7ab83eb3fde29b0b9",
+  "finding_groups": 6,
+  "constituents": 6,
+  "original_paths": 16,
+  "declared_input_edges": 14,
+  "final_checks": [
+    31,
+    26,
+    31,
+    28,
+    28
+  ],
+  "final_failures": 0,
+  "scientific_mutants_rejected": 7,
+  "input_source_controls": 43,
+  "artifacts": [
+    {
+      "path": "ACTUAL_FINAL_READINESS.json",
+      "sha256": "bf1db3342b6254c7d91a46e5ced4ec89f0e053759518f8fca52e1b61db902a74",
+      "bytes": 22796
+    },
+    {
+      "path": "ACTUAL_SCIENTIFIC_CONTROLS.json",
+      "sha256": "25154620f5816e28860191e9b98fffb770bdd585137fed9d0ca9cf35c7d2bfaa",
+      "bytes": 32536
+    },
+    {
+      "path": "CHILD_CAPTURE_PREFLIGHT.json",
+      "sha256": "ac732b79b36aca32a83834dd316ece43e3b67cf10e9efd06a5becd81fa6b39de",
+      "bytes": 1234
+    },
+    {
+      "path": "CODE_DISPOSITION.json",
+      "sha256": "10482a30528783f041c45d215544f2e3cc65548c74b7515ccf2b6ec4ef0d54dc",
+      "bytes": 2348
+    },
+    {
+      "path": "CONSTITUENT_DISPOSITIONS.json",
+      "sha256": "e1e09290387c6510c285f0e274793a7143be05326103d0685cf658321140d053",
+      "bytes": 2677
+    },
+    {
+      "path": "EXECUTION_SUMMARY.json",
+      "sha256": "53fcc2dca494a59f73e4f47d0d81362c47edd834765271e13c316e56a1279321",
+      "bytes": 12182
+    },
+    {
+      "path": "FINAL_EXECUTION_ch.json",
+      "sha256": "7387e285a86d5f2fa7c2854f943e33dfa0c11e8ff5b94c79dc8a9dcfa9bbde3d",
+      "bytes": 7274
+    },
+    {
+      "path": "FINAL_EXECUTION_l1.json",
+      "sha256": "03510252c01c890e2596b72115496249d5f519a7de56f00fbf1701eaafb10ade",
+      "bytes": 6226
+    },
+    {
+      "path": "FINAL_EXECUTION_l2.json",
+      "sha256": "4e62710855f409a6d52e0985a0775ab9af9a4e27490cc3ac3815ff3f0c3f1945",
+      "bytes": 7412
+    },
+    {
+      "path": "FINAL_EXECUTION_r.json",
+      "sha256": "ea229909bb272f4517d642103e48925b00e90a5d268083e816f5c421dcf1e415",
+      "bytes": 7247
+    },
+    {
+      "path": "FINAL_EXECUTION_scope.json",
+      "sha256": "f8142b7082c94d92ed72e8f27d9c21f2b3d133ff07931627e49eb7894aa06af4",
+      "bytes": 7135
+    },
+    {
+      "path": "FINAL_INVENTORY.json",
+      "sha256": "070fbf48e6bf90ad04c65ed262d95d9f765518778fc5e02bc7b5082693cc3851",
+      "bytes": 18399
+    },
+    {
+      "path": "FINAL_SOURCE_PREFLIGHT.json",
+      "sha256": "a0e443e402ac4724f750592f0ae73748a13a4c41cb79db1045090f8c37a85bbb",
+      "bytes": 13154
+    },
+    {
+      "path": "FINDING_DISPOSITIONS.json",
+      "sha256": "6acc166a19c5561b4b4eae99627fc847af0358021bf159f490be456b7ddd1ba2",
+      "bytes": 1836
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "bd30192573cf60a05c2e7b7925fba0e6f373b9adb4d45476eecb08b0ed386f51",
+      "bytes": 1075
+    },
+    {
+      "path": "INPUT_PLAN.json",
+      "sha256": "eeb554a130df7f626f762608c210272ec8bc9924cc98682678fdda4101ce4c35",
+      "bytes": 1836
+    },
+    {
+      "path": "INTERMEDIATE_FREEZE.json",
+      "sha256": "1d39cff7eb33dd9f5de18b7ab9bfdef5e70d26c0ec81bbd9de4e139a2352a946",
+      "bytes": 5997
+    },
+    {
+      "path": "NOTE_PLAN.json",
+      "sha256": "c5a5a14d2443a79cd9e7e45bd661ce35f61f6dd11e0a7df20ab7a53e5e2c456e",
+      "bytes": 734
+    },
+    {
+      "path": "PREPARATION.json",
+      "sha256": "c60df9dd40c9622191af60846c1364465da292a505e6d7b97bf1c7385968d60a",
+      "bytes": 11858
+    },
+    {
+      "path": "PRESERVATION_AND_CONTEXT.json",
+      "sha256": "c294c9536f85ea7cd13beb76c4d11e43445e1a46a54b1e4341efa4810cd42b1d",
+      "bytes": 4985
+    },
+    {
+      "path": "READ_LEDGER.json",
+      "sha256": "c6abba87f3f69e9a593961febaf8ddfca6e19096c41d0812c5a1f1e4ec11ab7c",
+      "bytes": 1117
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "8ed8f3f2f5129ba19a9c5106111843296523868923849c834057fe8fa30c410e",
+      "bytes": 4357
+    },
+    {
+      "path": "SOURCE_FREEZE.json",
+      "sha256": "a072ff33664dc65ede260c86a5bcc6b220f68beabfcf9b7e83f109e6e4ce49dd",
+      "bytes": 6130
+    },
+    {
+      "path": "author-correction.patch",
+      "sha256": "1d63c868077c5d41929f0ddd57f41d5b4f317793ee5410b135980a3f7ee50204",
+      "bytes": 136118
+    },
+    {
+      "path": "candidate.patch",
+      "sha256": "e64770ac128bfcbe93858e24a106edfa1e3bfbbcefa6fce34a9594e318184ebc",
+      "bytes": 211190
+    },
+    {
+      "path": "capture-probe/scripts/probe.py",
+      "sha256": "3e4618301118bdba45f6e08f86aac3db3c5b7e686e879521577204e3eab0cfdd",
+      "bytes": 260
+    },
+    {
+      "path": "controls.py",
+      "sha256": "25edd69912630c1110d6c7ac5294b4fcbd94761c9fb47e6bd5231a7bfb00a805",
+      "bytes": 6381
+    },
+    {
+      "path": "edit_runners.py",
+      "sha256": "108385fb653ca170c40cdfab1c6ff5d207c57076a8a76d9fbe2591aac70d31ed",
+      "bytes": 13985
+    },
+    {
+      "path": "execute_final.py",
+      "sha256": "98d9f137e5f54af0ea35a98a62d345a68b86b1ecc1bb158c158d1f23293d89dd",
+      "bytes": 4320
+    },
+    {
+      "path": "final-cache/diagonal_gate_chirality_hw1_orbit_test.txt",
+      "sha256": "41b3c26fb7c714d1794a3b91d784a5601d666ff5030876348b6a39b3b75a6db0",
+      "bytes": 2652
+    },
+    {
+      "path": "final-cache/diagonal_gate_r_half_weighted_path_test.txt",
+      "sha256": "402c9b1a6b9ed47e3ab18b1cce158e523555dd8dbd6f25ffa28208ce7f60e458",
+      "bytes": 2730
+    },
+    {
+      "path": "final-cache/diagonal_l1_wilson_line_composite_demonstration.txt",
+      "sha256": "de8aed4354fbf51a6ee15eb1bfbcd7b711821fa8a0b3b9847aa67e6c4ac2c62d",
+      "bytes": 2434
+    },
+    {
+      "path": "final-cache/diagonal_l2_face_algebra_dimension_audit.txt",
+      "sha256": "3ea781ca2fbdeb07342305830dddc8089863b6dd141ccddc4d1cce990f0674fd",
+      "bytes": 2866
+    },
+    {
+      "path": "final-cache/diagonal_lattice_scoping_enumerator.txt",
+      "sha256": "7f25185e28ce1a2f49dd47340495ab1da062e24fa145a6439fa3f4ce5ad5ab13",
+      "bytes": 2627
+    },
+    {
+      "path": "final-cache-only.patch",
+      "sha256": "98d9f7c9d29f08ac78251a2e098f4af427a62a5efc2c8f015320f6b59bf80b99",
+      "bytes": 18787
+    },
+    {
+      "path": "final-stdout-ch.txt",
+      "sha256": "c9432d97f1b472e36a44c96834de99aa6c1adff0246d1f02f675705f3953e01a",
+      "bytes": 2296
+    },
+    {
+      "path": "final-stdout-l1.txt",
+      "sha256": "50e0d2fcf13d3be7708bc8379b6aeacff942fd8e2f2e83fca5e5f11529f8b340",
+      "bytes": 2069
+    },
+    {
+      "path": "final-stdout-l2.txt",
+      "sha256": "46b034b5eef1a0368c2a9d88227098ea582eb816d83ec6e2520ff445a8008811",
+      "bytes": 2508
+    },
+    {
+      "path": "final-stdout-r.txt",
+      "sha256": "fa4272d6ecf18a4d031e34296a2bbde2e1755c53df73823df5f89a0a0c5eb8eb",
+      "bytes": 2373
+    },
+    {
+      "path": "final-stdout-scope.txt",
+      "sha256": "b416edc54b7b18f25de0d97777e86262d783e383dc4fafc70c6b8343bb99fae1",
+      "bytes": 2274
+    },
+    {
+      "path": "final-style.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "finalize_source.py",
+      "sha256": "132f29d5e148fce553c704d8b8bc3f069a602ac916bbbc89cf1f2e984a057010",
+      "bytes": 3727
+    },
+    {
+      "path": "incidents/cache_status_name/INCIDENT.json",
+      "sha256": "a558b719d361a18d9a4ad3b1244d329f5a93e052c9ef968356e0e9c4b14157c7",
+      "bytes": 437
+    },
+    {
+      "path": "incidents/cache_status_name/controls.py",
+      "sha256": "d57f1a1608c4ca892001860680e7bfd0b0bd5c61e7f571e93dccef1275138172",
+      "bytes": 6189
+    },
+    {
+      "path": "incidents/cache_status_name/scope/docs/DIAGONAL_LATTICE_SCOPING_NOTE_2026-06-04.md",
+      "sha256": "21c2d74cb090553302a464967daf0b43b8190a83439bf8556edb051d600f87c3",
+      "bytes": 4874
+    },
+    {
+      "path": "incidents/cache_status_name/scope/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "incidents/cache_status_name/scope/docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "sha256": "8fa106e931925f399e95762be1360d31ffe5958e29e8c1e46bd5c0420b680911",
+      "bytes": 24392
+    },
+    {
+      "path": "incidents/cache_status_name/scope/logs/runner-cache/diagonal_lattice_scoping_enumerator.txt",
+      "sha256": "7f25185e28ce1a2f49dd47340495ab1da062e24fa145a6439fa3f4ce5ad5ab13",
+      "bytes": 2627
+    },
+    {
+      "path": "incidents/cache_status_name/scope/scripts/diagonal_lattice_scoping_enumerator.py",
+      "sha256": "00a234083cbff2415eb2358a7b8b81d408dae9043ce918167c96fd0b01404188",
+      "bytes": 10654
+    },
+    {
+      "path": "incidents/control_harness_name_collision/INCIDENT.json",
+      "sha256": "1c5921789d11e88c3af927171799bcd7fd2fc6d20b49aaa2b3faa64b0943b9a4",
+      "bytes": 409
+    },
+    {
+      "path": "incidents/control_harness_name_collision/controls.py",
+      "sha256": "8ca81c5a882220cad175732e26a52af19b7965bc95cf1fbd75c5b905259b0771",
+      "bytes": 6154
+    },
+    {
+      "path": "incidents/control_harness_name_collision/mutant-cache/diagonal_l2_face_algebra_dimension_audit.txt",
+      "sha256": "6126b359dc4082da9e70d938f612e61fdd48123072bc8dc281672119461244a2",
+      "bytes": 430
+    },
+    {
+      "path": "input-controls/ch/docs/DIAGONAL_GATE_CHIRALITY_HW1_ORBIT_TEST_NOTE_2026-06-04.md",
+      "sha256": "122370d871e55fc4a83a3976e5540c23b62dcd922011d088283f4479d80c4cda",
+      "bytes": 3692
+    },
+    {
+      "path": "input-controls/ch/docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md",
+      "sha256": "246d2896378034c89fc472a61cb9dbcdec59a733bb4ee8e6a1a6b80b2e73b3ab",
+      "bytes": 12657
+    },
+    {
+      "path": "input-controls/ch/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "input-controls/ch/logs/runner-cache/diagonal_gate_chirality_hw1_orbit_test.txt",
+      "sha256": "41b3c26fb7c714d1794a3b91d784a5601d666ff5030876348b6a39b3b75a6db0",
+      "bytes": 2652
+    },
+    {
+      "path": "input-controls/ch/scripts/diagonal_gate_chirality_hw1_orbit_test.py",
+      "sha256": "f691f17abb3d39771434bbc52d201139bbd9b1ae8b7d941585cfc5f705f9e8fe",
+      "bytes": 9577
+    },
+    {
+      "path": "input-controls/l1/docs/DIAGONAL_AS_WILSON_LINE_COMPOSITE_L1_NEGATIVE_NOTE_2026-06-04.md",
+      "sha256": "61452036375917b5b1f589df65d306a3c01e776703f88c63c4c6f6fd3cbaed20",
+      "bytes": 3863
+    },
+    {
+      "path": "input-controls/l1/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "input-controls/l1/logs/runner-cache/diagonal_l1_wilson_line_composite_demonstration.txt",
+      "sha256": "de8aed4354fbf51a6ee15eb1bfbcd7b711821fa8a0b3b9847aa67e6c4ac2c62d",
+      "bytes": 2434
+    },
+    {
+      "path": "input-controls/l1/scripts/diagonal_l1_wilson_line_composite_demonstration.py",
+      "sha256": "4582453b0c66a1e2cd7e2d7b68c5ac61062eb05b07130835ec4ec9d6d806a4c6",
+      "bytes": 8862
+    },
+    {
+      "path": "input-controls/l2/docs/DIAGONAL_L2_INDEPENDENT_CONNECTION_DIMENSION_AUDIT_NOTE_2026-06-04.md",
+      "sha256": "05a1cfeb3b492228238ae21250699bcc2406ec7631f3667083881c5ae54b3069",
+      "bytes": 5087
+    },
+    {
+      "path": "input-controls/l2/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "input-controls/l2/docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md",
+      "sha256": "44eb3dc0d58dedb72d9e34b95c2bcf75ece68adaac39c440d50a3c7ba9949ac8",
+      "bytes": 4398
+    },
+    {
+      "path": "input-controls/l2/logs/runner-cache/diagonal_l2_face_algebra_dimension_audit.txt",
+      "sha256": "3ea781ca2fbdeb07342305830dddc8089863b6dd141ccddc4d1cce990f0674fd",
+      "bytes": 2866
+    },
+    {
+      "path": "input-controls/l2/scripts/diagonal_l2_face_algebra_dimension_audit.py",
+      "sha256": "501e1dfb8653fcebd03455bbdd09a0dc47908154f9158655a2e6523277ee3bbc",
+      "bytes": 12100
+    },
+    {
+      "path": "input-controls/r/docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
+      "sha256": "0ea38efea33028a1382071ca0a98bb1b8bc0863edb62518e1e23f45edd069da3",
+      "bytes": 14147
+    },
+    {
+      "path": "input-controls/r/docs/DIAGONAL_GATE_R_HALF_WEIGHTED_PATH_TEST_NOTE_2026-06-04.md",
+      "sha256": "acf17db3932eddb7a1ffd8ee2ca2e58421706fb7c15f50ce052ddba248914f75",
+      "bytes": 4357
+    },
+    {
+      "path": "input-controls/r/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "input-controls/r/logs/runner-cache/diagonal_gate_r_half_weighted_path_test.txt",
+      "sha256": "402c9b1a6b9ed47e3ab18b1cce158e523555dd8dbd6f25ffa28208ce7f60e458",
+      "bytes": 2730
+    },
+    {
+      "path": "input-controls/r/scripts/diagonal_gate_r_half_weighted_path_test.py",
+      "sha256": "9f716fa8eea84e0cb40879cd6278731c65a8dfc729fc13c5a56870f3761e960c",
+      "bytes": 7835
+    },
+    {
+      "path": "input-controls/scope/docs/DIAGONAL_LATTICE_SCOPING_NOTE_2026-06-04.md",
+      "sha256": "21c2d74cb090553302a464967daf0b43b8190a83439bf8556edb051d600f87c3",
+      "bytes": 4874
+    },
+    {
+      "path": "input-controls/scope/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "input-controls/scope/docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "sha256": "8fa106e931925f399e95762be1360d31ffe5958e29e8c1e46bd5c0420b680911",
+      "bytes": 24392
+    },
+    {
+      "path": "input-controls/scope/logs/runner-cache/diagonal_lattice_scoping_enumerator.txt",
+      "sha256": "7f25185e28ce1a2f49dd47340495ab1da062e24fa145a6439fa3f4ce5ad5ab13",
+      "bytes": 2627
+    },
+    {
+      "path": "input-controls/scope/scripts/diagonal_lattice_scoping_enumerator.py",
+      "sha256": "efda13c9cfed314b8e99d641e8e78eb6d2755dc939b09c61ecc10d0645af7b15",
+      "bytes": 10631
+    },
+    {
+      "path": "intermediate-correction.patch",
+      "sha256": "afba1ad6451b3789fa47917b371281315f796b160b4e83bbfda958d5ed55b60d",
+      "bytes": 117873
+    },
+    {
+      "path": "mutant-cache/D1_zero_embedding/diagonal_l2_face_algebra_dimension_audit.txt",
+      "sha256": "8aa9aa85f4ee1635e08d301cbded904c684c93eac7715c984e105a13532735d9",
+      "bytes": 2876
+    },
+    {
+      "path": "mutant-cache/D2_omit_imaginary_factor/diagonal_gate_chirality_hw1_orbit_test.txt",
+      "sha256": "118575a5cc26445a2bcf3ba8ea6177258fbb615b3ff492175e47860e2337c8d2",
+      "bytes": 2674
+    },
+    {
+      "path": "mutant-cache/D2_wrong_real_slice/diagonal_gate_chirality_hw1_orbit_test.txt",
+      "sha256": "bcf755414923aa4ea2624c05e9ba830071039fc5372415b59a9d851e871d9c08",
+      "bytes": 2662
+    },
+    {
+      "path": "mutant-cache/D3_coefficient_as_projector/diagonal_gate_r_half_weighted_path_test.txt",
+      "sha256": "d0c92f3ac3541e54728e0b99b95d44fbb9679c315c332178f608c43f113a6175",
+      "bytes": 2710
+    },
+    {
+      "path": "mutant-cache/D4_no_coefficient_change/diagonal_l1_wilson_line_composite_demonstration.txt",
+      "sha256": "55cef75045815eaeb1cb5bd5bb489d1d8cded9355bdf5950ccddadc2825c96e3",
+      "bytes": 2444
+    },
+    {
+      "path": "mutant-cache/D4_position_defect/diagonal_lattice_scoping_enumerator.txt",
+      "sha256": "dade3fbfc7e9d6941bd3688192262445842589d6b8e3ee2a3cd6c0697704d59c",
+      "bytes": 2637
+    },
+    {
+      "path": "mutant-cache/D5_signed_as_positive/diagonal_gate_r_half_weighted_path_test.txt",
+      "sha256": "39b59f7f43d6204818d9c81500f3fa9fa2fc51b870396b9b4f80bb5f32d62e50",
+      "bytes": 2740
+    },
+    {
+      "path": "mutants/D1_zero_embedding/docs/DIAGONAL_L2_INDEPENDENT_CONNECTION_DIMENSION_AUDIT_NOTE_2026-06-04.md",
+      "sha256": "05a1cfeb3b492228238ae21250699bcc2406ec7631f3667083881c5ae54b3069",
+      "bytes": 5087
+    },
+    {
+      "path": "mutants/D1_zero_embedding/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "mutants/D1_zero_embedding/docs/QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md",
+      "sha256": "44eb3dc0d58dedb72d9e34b95c2bcf75ece68adaac39c440d50a3c7ba9949ac8",
+      "bytes": 4398
+    },
+    {
+      "path": "mutants/D1_zero_embedding/scripts/diagonal_l2_face_algebra_dimension_audit.py",
+      "sha256": "a5ca6a7c1827027e4badd89571750a7e8cdf2206af29df4f7490b52ff69ec557",
+      "bytes": 12104
+    },
+    {
+      "path": "mutants/D2_omit_imaginary_factor/docs/DIAGONAL_GATE_CHIRALITY_HW1_ORBIT_TEST_NOTE_2026-06-04.md",
+      "sha256": "122370d871e55fc4a83a3976e5540c23b62dcd922011d088283f4479d80c4cda",
+      "bytes": 3692
+    },
+    {
+      "path": "mutants/D2_omit_imaginary_factor/docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md",
+      "sha256": "246d2896378034c89fc472a61cb9dbcdec59a733bb4ee8e6a1a6b80b2e73b3ab",
+      "bytes": 12657
+    },
+    {
+      "path": "mutants/D2_omit_imaginary_factor/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "mutants/D2_omit_imaginary_factor/scripts/diagonal_gate_chirality_hw1_orbit_test.py",
+      "sha256": "1e975d23eeac186c666238082a06c0d04a9c144566a38417a63324d38bb807c8",
+      "bytes": 9572
+    },
+    {
+      "path": "mutants/D2_wrong_real_slice/docs/DIAGONAL_GATE_CHIRALITY_HW1_ORBIT_TEST_NOTE_2026-06-04.md",
+      "sha256": "122370d871e55fc4a83a3976e5540c23b62dcd922011d088283f4479d80c4cda",
+      "bytes": 3692
+    },
+    {
+      "path": "mutants/D2_wrong_real_slice/docs/KOIDE_Z3_EQUIVARIANT_ANTICOMMUTING_NO_GO_NOTE_2026-05-16.md",
+      "sha256": "246d2896378034c89fc472a61cb9dbcdec59a733bb4ee8e6a1a6b80b2e73b3ab",
+      "bytes": 12657
+    },
+    {
+      "path": "mutants/D2_wrong_real_slice/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "mutants/D2_wrong_real_slice/scripts/diagonal_gate_chirality_hw1_orbit_test.py",
+      "sha256": "ae71051392f623f30a78fe5f9f48055dd3ed901ab2e6e4a327c8dcb3c69d0741",
+      "bytes": 9605
+    },
+    {
+      "path": "mutants/D3_coefficient_as_projector/docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
+      "sha256": "0ea38efea33028a1382071ca0a98bb1b8bc0863edb62518e1e23f45edd069da3",
+      "bytes": 14147
+    },
+    {
+      "path": "mutants/D3_coefficient_as_projector/docs/DIAGONAL_GATE_R_HALF_WEIGHTED_PATH_TEST_NOTE_2026-06-04.md",
+      "sha256": "acf17db3932eddb7a1ffd8ee2ca2e58421706fb7c15f50ce052ddba248914f75",
+      "bytes": 4357
+    },
+    {
+      "path": "mutants/D3_coefficient_as_projector/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "mutants/D3_coefficient_as_projector/scripts/diagonal_gate_r_half_weighted_path_test.py",
+      "sha256": "ebd425a58fdd090f71521451dbffc9164a8e8479edd7d385fd67d941212889f3",
+      "bytes": 7810
+    },
+    {
+      "path": "mutants/D4_no_coefficient_change/docs/DIAGONAL_AS_WILSON_LINE_COMPOSITE_L1_NEGATIVE_NOTE_2026-06-04.md",
+      "sha256": "61452036375917b5b1f589df65d306a3c01e776703f88c63c4c6f6fd3cbaed20",
+      "bytes": 3863
+    },
+    {
+      "path": "mutants/D4_no_coefficient_change/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "mutants/D4_no_coefficient_change/scripts/diagonal_l1_wilson_line_composite_demonstration.py",
+      "sha256": "3bd8e1e86eb3860ddd566c1a4ce783381a0c2cd30ddd83c7f9fc14e3cde41277",
+      "bytes": 8862
+    },
+    {
+      "path": "mutants/D4_position_defect/docs/DIAGONAL_LATTICE_SCOPING_NOTE_2026-06-04.md",
+      "sha256": "21c2d74cb090553302a464967daf0b43b8190a83439bf8556edb051d600f87c3",
+      "bytes": 4874
+    },
+    {
+      "path": "mutants/D4_position_defect/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "mutants/D4_position_defect/docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "sha256": "8fa106e931925f399e95762be1360d31ffe5958e29e8c1e46bd5c0420b680911",
+      "bytes": 24392
+    },
+    {
+      "path": "mutants/D4_position_defect/scripts/diagonal_lattice_scoping_enumerator.py",
+      "sha256": "cfd0abb1721b22e627a654c7d01022f16c94b7331efebb388782cb3a9b47775b",
+      "bytes": 10654
+    },
+    {
+      "path": "mutants/D5_signed_as_positive/docs/CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md",
+      "sha256": "0ea38efea33028a1382071ca0a98bb1b8bc0863edb62518e1e23f45edd069da3",
+      "bytes": 14147
+    },
+    {
+      "path": "mutants/D5_signed_as_positive/docs/DIAGONAL_GATE_R_HALF_WEIGHTED_PATH_TEST_NOTE_2026-06-04.md",
+      "sha256": "acf17db3932eddb7a1ffd8ee2ca2e58421706fb7c15f50ce052ddba248914f75",
+      "bytes": 4357
+    },
+    {
+      "path": "mutants/D5_signed_as_positive/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "mutants/D5_signed_as_positive/scripts/diagonal_gate_r_half_weighted_path_test.py",
+      "sha256": "48169932a3181d4f2fe2511a1cff170187e9f6722885899e63c74386f0795ed2",
+      "bytes": 7827
+    },
+    {
+      "path": "originals/docs/DIAGONAL_AS_WILSON_LINE_COMPOSITE_L1_NEGATIVE_NOTE_2026-06-04.md",
+      "sha256": "12032fe8043dc58f6e49ce737a687ccad19551dfa4d74ed7dc66cb18f01e60d1",
+      "bytes": 5189
+    },
+    {
+      "path": "originals/docs/DIAGONAL_GATE_CHIRALITY_HW1_ORBIT_TEST_NOTE_2026-06-04.md",
+      "sha256": "fe888c69977689e8e23e6e56203f1e91f8d96b45e1954663111d97a2ff77843e",
+      "bytes": 6611
+    },
+    {
+      "path": "originals/docs/DIAGONAL_GATE_R_HALF_WEIGHTED_PATH_TEST_NOTE_2026-06-04.md",
+      "sha256": "92218c226ed8102910c59ce67f47400780da2d9028e6e4543aff678f47c02f2f",
+      "bytes": 6209
+    },
+    {
+      "path": "originals/docs/DIAGONAL_L2_INDEPENDENT_CONNECTION_DIMENSION_AUDIT_NOTE_2026-06-04.md",
+      "sha256": "70c1de654a7ec877384c426740302dd4b280699a3990f9288150fc4dc378c0f6",
+      "bytes": 8678
+    },
+    {
+      "path": "originals/docs/DIAGONAL_LATTICE_SCOPING_NOTE_2026-06-04.md",
+      "sha256": "54a3b6abdbacd0be779d3d7b24042cdd8fdc465ea0897e02b2969870b4860547",
+      "bytes": 10747
+    },
+    {
+      "path": "originals/docs/DIAGONAL_THINKING_SYNTHESIS_NOTE_2026-06-04.md",
+      "sha256": "43db4c4740f5f6290d82c45884d99dec1a88a2fc4c55efe72f93372dba71ba4c",
+      "bytes": 7761
+    },
+    {
+      "path": "originals/logs/runner-cache/diagonal_gate_chirality_hw1_orbit_test.txt",
+      "sha256": "b385f1d0e6e27a208fb5452b19cad53f23fcaca70814d17a595e7ee40da7de94",
+      "bytes": 2146
+    },
+    {
+      "path": "originals/logs/runner-cache/diagonal_gate_r_half_weighted_path_test.txt",
+      "sha256": "fb694dc44c4bb866c62c04c69f53ca03df3816329d69066b7789342ea9422016",
+      "bytes": 2487
+    },
+    {
+      "path": "originals/logs/runner-cache/diagonal_l1_wilson_line_composite_demonstration.txt",
+      "sha256": "127fa2dedd6da4fcb5401cd4fb0b262be195f97c73d68ef60c3416a1287c488f",
+      "bytes": 2035
+    },
+    {
+      "path": "originals/logs/runner-cache/diagonal_l2_face_algebra_dimension_audit.txt",
+      "sha256": "4bfa09e9553f1b93829778b050e9070366ace15e34f8d6f31e6192de13beb1c3",
+      "bytes": 2345
+    },
+    {
+      "path": "originals/logs/runner-cache/diagonal_lattice_scoping_enumerator.txt",
+      "sha256": "c54099d944cd28d57762c4ee0805c60033dc7e2a547bdb50f2f962a59ee83ac6",
+      "bytes": 2156
+    },
+    {
+      "path": "originals/scripts/diagonal_gate_chirality_hw1_orbit_test.py",
+      "sha256": "4ea9c6c97e7b348d602ea4f2895ad56584af6cf78333e0022a1505ab0704db87",
+      "bytes": 8612
+    },
+    {
+      "path": "originals/scripts/diagonal_gate_r_half_weighted_path_test.py",
+      "sha256": "77b493d7827d3e585d00f88e151ea3d849c5514d5998a0b31a0161608f27b904",
+      "bytes": 7270
+    },
+    {
+      "path": "originals/scripts/diagonal_l1_wilson_line_composite_demonstration.py",
+      "sha256": "26eeeaddcbf507cdcef112499954c7349b5d863d118ca7974856624d1d915ced",
+      "bytes": 8307
+    },
+    {
+      "path": "originals/scripts/diagonal_l2_face_algebra_dimension_audit.py",
+      "sha256": "2bcb21dcdcc650f004895d86546242a39a542fc6d0f95257db0d6b98c5c653e8",
+      "bytes": 10960
+    },
+    {
+      "path": "originals/scripts/diagonal_lattice_scoping_enumerator.py",
+      "sha256": "7788508ffc2482bba829e61dbf38737df1ef67c0bce5a32d1ca19853c9fefc20",
+      "bytes": 8757
+    },
+    {
+      "path": "package.py",
+      "sha256": "65e9f7952129ab48f67d9b85342721434630de8a4147f63f38a20bd490eafa60",
+      "bytes": 18572
+    },
+    {
+      "path": "post-intermediate-source.patch",
+      "sha256": "f9eb98dba7abf0d4dfb7a212c0a6617f76e0fa215478517d6785be1b7be75eb2",
+      "bytes": 11475
+    },
+    {
+      "path": "preflight.py",
+      "sha256": "114cc25bd6978b4f4869633710b6b40cb27a7cfe6d6bec2149f9cab2e08cac85",
+      "bytes": 4765
+    },
+    {
+      "path": "prepare.py",
+      "sha256": "495d2d9f3de91ecf5f707e99582023f1c3062fe1615749dde42da388fa1e3379",
+      "bytes": 3236
+    },
+    {
+      "path": "preseal-metadata/FINAL_SOURCE_PREFLIGHT.json",
+      "sha256": "54be4fd879b7c721d9408cfdea105be58379cd30ddb44153bd84bba7f5a8d5e2",
+      "bytes": 12901
+    },
+    {
+      "path": "preseal-metadata/NOTE.md",
+      "sha256": "1c6234c21abf07878d103b4147a5a80383e61528e8f7da10ec7f794c632d3af6",
+      "bytes": 332
+    },
+    {
+      "path": "probe-cache/probe.txt",
+      "sha256": "65a68b7e535184d749361091acc851a309118734872c7b15a21af25ae3db6a87",
+      "bytes": 252
+    },
+    {
+      "path": "raw-history/05064966deadaa7c799b77709caaecf8e311b2cf.commit",
+      "sha256": "5280b5dcc6849127eefcd0ae6ade5957a5b962b7923a60be56549d02ecb1f203",
+      "bytes": 1109
+    },
+    {
+      "path": "raw-history/05064966deadaa7c799b77709caaecf8e311b2cf.patch",
+      "sha256": "9458738e519aed2b91bd06fff6955dcebf1f674af04ca6d897688b2c6e0efc7a",
+      "bytes": 23336
+    },
+    {
+      "path": "raw-history/2bc71e99eff954d9edd600c0e7d59ac4faaba789.commit",
+      "sha256": "e884539ca2f93ca17793f2579fb44e1df69449b00a13d2f48906c56aaebc44d3",
+      "bytes": 1221
+    },
+    {
+      "path": "raw-history/2bc71e99eff954d9edd600c0e7d59ac4faaba789.patch",
+      "sha256": "879c48e152eb5e0b1468c88e5694913d3f700da2adaab759dbe9e451890841a1",
+      "bytes": 8163
+    },
+    {
+      "path": "raw-history/58563d3c4e9cab737b8697b09feae524166c943b.commit",
+      "sha256": "6b184101ee4c0566ec27a4a8912e7ecdc4db47ac5454cd9f7e5dbc8011e3e04b",
+      "bytes": 795
+    },
+    {
+      "path": "raw-history/58563d3c4e9cab737b8697b09feae524166c943b.patch",
+      "sha256": "df7f364b40cf091242fe40e068a0140cfa8f18748c16ac512e992740823519db",
+      "bytes": 22922
+    },
+    {
+      "path": "raw-history/5aef1f811da30d779302ef0626aac29a5c862595.commit",
+      "sha256": "ae6c561de0c3937733538e49b64848f0ba5d37aa244a82e212c0729e349350c0",
+      "bytes": 959
+    },
+    {
+      "path": "raw-history/5aef1f811da30d779302ef0626aac29a5c862595.patch",
+      "sha256": "cd6b030a76efbe7ee55404c6f7f12f536b6e3e6694daa36ee352709cbfedf1f1",
+      "bytes": 17131
+    },
+    {
+      "path": "raw-history/6f69756b3af729597d333d0373e65d282d920a88.commit",
+      "sha256": "d7fc47cf9833eb934addfccfb5e016a6945fffa20d4537f88441c824855522fa",
+      "bytes": 971
+    },
+    {
+      "path": "raw-history/6f69756b3af729597d333d0373e65d282d920a88.patch",
+      "sha256": "94feade22db89619d4556c1d4b2791db634539ca7c3fe6a25ae603c54cb71d82",
+      "bytes": 16800
+    },
+    {
+      "path": "raw-history/71a857bc3edb6acf6bb1748789e33a0da0663a13.commit",
+      "sha256": "5b6c4bd03e8ceb350c851e9408321b9c56422cca8c494a5181f9953de4ef374f",
+      "bytes": 1175
+    },
+    {
+      "path": "raw-history/71a857bc3edb6acf6bb1748789e33a0da0663a13.patch",
+      "sha256": "6b079041f5d1d3e0c374e5a2149878a264ce1ab547409821cf9c54ab1ca527b7",
+      "bytes": 18547
+    },
+    {
+      "path": "style-preflight.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "write_notes.py",
+      "sha256": "6fc38b590f86ad6f4813fa1f70b164516d05c250becf2ddb7c23199c9136b9b2",
+      "bytes": 23748
+    }
+  ]
+}

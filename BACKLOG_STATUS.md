@@ -1,30 +1,26 @@
 # Backlog review and landing — current handoff
 
-Updated after wave45 at 2026-09-09T07:11:16.475411+00:00. Main is `a917b8f7422bb420e599b37e3562505e77de1da5`.
+Updated after wave46 at 2026-09-09T07:58:00.398368+00:00. Main is `13046c38aa1fb57767af5e4cdfe14c879351956d`.
 Fixed original254 cutoff; new arrivals excluded. Formal audit deferred until a solid TOE.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 97 |
+| Closed directly after reviewed landing | 100 |
 | Closed by draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner reservations | 47 |
+| Still open, including three owner reservations | 44 |
 | Original membership | 254 |
 
-137 reviewed original science scopes landed: 94 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The97direct original closures include94science, one partial Maxwell, one meta and one process landing. Of the earlier110closures,56scopes remain pending at four open successors and seven have corrected portions on main with explicit holds. Zero original drafts; reservations apply transitively. The110other closures comprise43corrected scopes landed,56pending at four successors,7partial Maxwell,2starting-main supersessions,1empty and1unexecuted plan.
+140 reviewed original science scopes landed: 97 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The 100 direct original closures include 97 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds. Zero original drafts; reservations apply transitively. The 110 other closures comprise43corrected scopes landed,56pending at four successors,7partial Maxwell,2starting-main supersessions,1empty and1unexecuted plan.
 
-Including pre-cutoff #8003–#8009: session104direct closures,45science/source batches,172new source documents.44batches passed one combined gate; W14actual gate repair and W43pre-gate composition rebuild remain documented. Main ledger4,570=4,198unaudited science+372meta;77notes await mechanical refresh. No audit or grade.
+Including pre-cutoff #8003–#8009: session107direct closures,46science/source batches,180new source documents.45batches passed one combined gate; W14actual gate repair and W43pre-gate composition rebuild remain documented. Main ledger4,570=4,198unaudited science+372meta;85notes await mechanical refresh. No audit or grade.
 
-W45lands #7841/#7838/#7839 after complete original reviews and original-session correction confirmations. All76original source bodies,24earlier versions and three raw commit patches remain recoverable. Corrections repair a missing full-carrier operator argument, remove unsupported physical-wall independence, add a discriminating nonunit Jacobian control, correct Hodge operator order and distinguish the logarithmic determinant response. Actual operand controls replace forced mutation verdicts. Conditional mathematical results survive; physical suppliers remain open. All146source/manifest hashes verified on remote main after one combined gate in 253.813seconds. See [evidence](backlog_evidence/wave45/INDEX.json).
+W46 lands #7870/#7836/#7837 after original reviews and same-session correction confirmations. All71original source bodies,5earlier versions and3rawcommit patches remain recoverable. Eight notes retain bounded finite algebra, supplied Haar-process calibration and a conditional action/Record architecture comparison. Corrections separate real from complex chirality, repair the su3 embedding and central-power interpretation, restore boundary normalization and proper conditional histories, and test full complex channels. Physical suppliers remain open. Both action-entrypoint first attempts failed a SymPy API spelling; those failures and the narrow correction are preserved, followed by one successful affected attempt each. All132source/manifest hashes verified on remote main after one combined gate in 237.523seconds. See [evidence](backlog_evidence/wave46/INDEX.json).
 
-Historical recovery must sit outside actual note discovery. docs/work_history is discovered; check the actual API, not a directory name. Astra low remains the focused reviewer default; unresolved consequential mathematics escalates to Astra xhigh. Reuse complete reviews and same-session affected confirmations. [Pilot](REVIEWER_MODEL_PILOT.md) is one workload, not a general cost guarantee.
+Historical recovery must sit outside actual note discovery. docs/work_history is discovered; check the actual API. Astra low remains the focused reviewer default; unresolved consequential mathematics escalates to Astra xhigh. Reuse complete reviews and same-session affected confirmations. [Pilot](REVIEWER_MODEL_PILOT.md) is one workload, not a general cost guarantee.
 
-Next original reviews: #7837 action/transfer/Record hazards; #7836 records-first Haar/jump; #7870 six-phase diagonal adjacency. Current unit paths and outputs are in NEXT_REVIEW_UNITS.json; source findings are not acceptance. Actual reserved-dependent scopes at #7315/#7359 and both full successors remain held.56closed scopes remain pending at four successors. Maxwell production/physical holds remain in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
+Next reviews: the eight-original #6009 older time family and #7781 ACI terminal-confluence packet. #6009 contains exact tip sources from seven smaller originals, but additional878artifacts and nonfinal historical versions still require full disposition and durable recovery. Findings include removed finite-additivity imports and overbroad window/barrier claims; no new family closure or acceptance yet. #5957 is excluded from that family. Assignments and immutable evidence are in NEXT_REVIEW_UNITS.json.
 
-Older-stack routing: #6009 contains eight exact authored paths from each of #5964/#5963/#5961/#5959/#5954 and eight of ten from #5965/#5955. The latter two also carry an event-space helper/receipt absent at that head; preserve and review those extras. #5957 is not covered. This is a proposed review family, not a closure or science verdict. Exact routing is in `backlog_evidence/next-routing-20260909`.
-
-#7753 is held at its current scope: actual Block171 calls and41byte-matched downstream sources reach all three reserved PRs. The source remains open/intact; this dependency routing is not a mathematical rejection or acceptance. Action7837, records-Haar7836 and diagonal-adjacency7870 are now in bounded author correction with original reviewers retained.
-
-Current work update 2026-09-09T07:45:00.429861+00:00: #7836 and #7870 have final original-reviewer source PASS. #7837 has a narrow SymPy API repair after two preserved failed executions; final evidence/confirmation pending. The eight-original #6009 family is now assigned to Astra low for one shared-source review, with complete constituent disposition still required. No additional PR has landed yet.
+Actual reserved-dependent #7315/#7359 successors and #7753 remain held, along with the curved7unit and standing reservations.56closed scopes remain pending at four successors. All Maxwell production/physical holds remain in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json). No existing hold is removed by W46.
 
 ## Landed source history
 
@@ -379,3 +375,5 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Corrected transaction grants and history discovery | `c664f7795757c070c9d195f10038ed7663f9bc36` | `backlog_evidence/wave44` |
 
 | Corrected gauge, occupancy and C3 response | `a917b8f7422bb420e599b37e3562505e77de1da5` | `backlog_evidence/wave45` |
+
+| Corrected diagonal adjacency, Haar jumps and action/Record architectures | `13046c38aa1fb57767af5e4cdfe14c879351956d` | `backlog_evidence/wave46` |

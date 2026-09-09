@@ -1,0 +1,79 @@
+{
+  "task": "bounded author repair for original PR #7837",
+  "author_disposition": "READY_FOR_ORIGINAL_REVIEWER_CONFIRMATION",
+  "audit_status": "unset",
+  "formal_audit_run": false,
+  "landing_base": "a917b8f7422bb420e599b37e3562505e77de1da5",
+  "original_pr_head": "07bf3d389b1ef4f271b59ea22f10752d0ca210e4",
+  "reconstructed_original_tip": "9bfe7e559920288b1f0052ce71e3e5f4b54ca9e3",
+  "source_commits": [
+    "fc25c707e830e9daa54ef6029d2c0d74e3fc7afe",
+    "a51bb2abb9098e2c803508cce780a7b9131600d3"
+  ],
+  "cache_only_commit": "5313a517460f6ac43c00b91cddab25103ca784f9",
+  "final_commit": "5313a517460f6ac43c00b91cddab25103ca784f9",
+  "final_tree": "a153373d5edcf1b05bfc10691ad48c61d862a547",
+  "worktree_clean": true,
+  "changed_path_count_from_landing_base": 63,
+  "original_archive": {
+    "selected_exact": "29/29",
+    "raw_patches_exact": "3/3"
+  },
+  "attempts": {
+    "primary": [
+      {
+        "attempt": 1,
+        "status": "nonzero_exit",
+        "cause": "SymPy .column API typo",
+        "preserved": true
+      },
+      {
+        "attempt": 2,
+        "status": "ok",
+        "result": "PASS=8 FAIL=0",
+        "elapsed_sec": 0.64,
+        "max_rss_bytes": 68911104
+      }
+    ],
+    "helper": [
+      {
+        "attempt": 1,
+        "status": "nonzero_exit",
+        "cause": "SymPy .column API typo",
+        "preserved": true
+      },
+      {
+        "attempt": 2,
+        "status": "ok",
+        "result": "PASS=9 FAIL=0",
+        "elapsed_sec": 0.66,
+        "max_rss_bytes": 67928064
+      }
+    ]
+  },
+  "cache_status": {
+    "primary": "fresh",
+    "helper": "fresh"
+  },
+  "claim_type": "bounded_theorem",
+  "obligation_retirement": 0,
+  "toe_percentage_movement": 0,
+  "artifacts_sha256": {
+    "REPORT.md": "607cfa54916e1887508c710f803a4654a6df6787e52d1ea6d9364f77fef4c7e3",
+    "SOURCE_FREEZE.json": "db73ac4dc36f138bb266b70965e4241b5b4bbe0b84e1f0982ac215ba9b3b95ae",
+    "ORIGINAL_ARCHIVE_VERIFICATION.json": "b745493bd05513633ea825f10dfd0df54484cc29f73b203aa68dfefff5c5e673",
+    "FINAL_SOURCE_INVENTORY.json": "d4215aa53fe45199eea137e31c06378c542f8e27d8d53513aee747217a2d8bc7",
+    "SUBSTANTIVE_CORRECTION.patch": "572f2a0c329e8e14ad50bf9db7577c7d97b541daa0cc7e5fb5c652104d3da26a",
+    "FINAL_DELTA.patch": "0a8f4e15d665fc4dee10092b9e12a72619b5f074c62830a526de2fba4ca5f9f9",
+    "API_FIX_DELTA.patch": "5aff374da46d31e1f29737cb5ed7593ae65deb596ab9712bb99b6d1631697c9c",
+    "CACHE_ONLY_DELTA.patch": "5b7c45e0d8ed2bc3dcde019394cd7f73fa42b94cc407710dd6c0af8068d48698",
+    "PRIMARY_FAILED_RUN_1.stdout": "bd9dac132b7a13129dda4204f69993f64af9de7652832da0d13a4c1ba70da5da",
+    "PRIMARY_FAILED_RUN_1.stderr": "b0c68efc55db0d9920a117387916e8bbd5e4e4e2d3d1524fc440f417f9525ad6",
+    "HELPER_FAILED_RUN_1.stdout": "1a77e206dbc77484c11d98a1919bef7ed3ba5adcacbcdc4cc1259e529fddbf03",
+    "HELPER_FAILED_RUN_1.stderr": "e4bc1186de1a0189068f93d0bd2966a3d0d5012c459611df4e1b8647b77dbe45",
+    "PRIMARY_FINAL_RUN.stdout": "d55aef2ed04c84c72baec166414856b537501314674d4631dad8bfb1a966ff2b",
+    "PRIMARY_FINAL_RUN.stderr": "8b45ce875339fac6799fe9fa5aaab1fd7640b0289b34811f09a1c0eef875adb1",
+    "HELPER_FINAL_RUN.stdout": "c9c3ee858c74944e2dfe299868b7dce5d2cd922db719a2d9f60bb5153de91ddc",
+    "HELPER_FINAL_RUN.stderr": "bfa9f7e682f23514e3c9eb694015c0468e4d211b9c6cb4229798969c3b57693c"
+  }
+}

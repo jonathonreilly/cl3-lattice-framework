@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T07:11:16.475411+00:00; main `a917b8f7422bb420e599b37e3562505e77de1da5`.
+Updated 2026-09-09T07:58:00.398368+00:00; main `13046c38aa1fb57767af5e4cdfe14c879351956d`.
 
-137 reviewed original science scopes landed: 94 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The97direct original closures include94science, one partial Maxwell, one meta and one process landing. Of the earlier110closures,56scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+140 reviewed original science scopes landed: 97 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The 100 direct original closures include 97 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
@@ -74,6 +74,8 @@ Updated 2026-09-09T07:11:16.475411+00:00; main `a917b8f7422bb420e599b37e3562505e
 | #7824 | source_consolidation_exact | pending_on_open_successor | #7827 |
 | #7825 | source_consolidation_exact | pending_on_open_successor | #7827 |
 | #7826 | source_consolidation_exact | pending_on_open_successor | #7827 |
+| #7836 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `13046c38aa1fb57767af5e4cdfe14c879351956d` |
+| #7837 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `13046c38aa1fb57767af5e4cdfe14c879351956d` |
 | #7838 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `a917b8f7422bb420e599b37e3562505e77de1da5` |
 | #7839 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `a917b8f7422bb420e599b37e3562505e77de1da5` |
 | #7840 | draft_disposition | reviewed_corrected_scope_on_main | `16c2d6860e168ec8e5e8f66296410265e5d7226d` |
@@ -101,6 +103,7 @@ Updated 2026-09-09T07:11:16.475411+00:00; main `a917b8f7422bb420e599b37e3562505e
 | #7866 | draft_disposition | pending_on_open_successor | #7827 |
 | #7867 | draft_disposition | pending_on_open_successor | #7827 |
 | #7869 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `7517b4a95f860fec43251c0281a981e6bb1f34d6` |
+| #7870 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `13046c38aa1fb57767af5e4cdfe14c879351956d` |
 | #7872 | draft_disposition | empty_no_unique_result | empty_no_unique_result |
 | #7873 | draft_disposition | unexecuted_plan_preserved | unexecuted_plan_preserved |
 | #7874 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `ebe2142cbace4d05def434c0b9cd1969e34443b9` |
