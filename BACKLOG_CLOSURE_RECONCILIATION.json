@@ -1,21 +1,21 @@
 {
   "checked_utc": "2026-09-07T21:23:22.013652+00:00",
-  "current_main": "e4b4fd46dbdc075a218387a0c23a1a2739f4f01c",
+  "current_main": "1ef2db7a87038b5d8e26a84aa2a3157e347190c2",
   "initial_snapshot_commit": "8eb102f8fe545b458ede8f1a63121d9bfde103a4",
   "summary": {
     "original_snapshot": 254,
-    "original_closed": 161,
-    "original_open": 93,
+    "original_closed": 164,
+    "original_open": 90,
     "original_drafts": 0,
-    "original_direct_landing_closures": 51,
-    "original_scientific_scopes_reviewed_and_newly_landed": 89,
-    "closed110_scientific_scopes_newly_landed": 40,
-    "closed110_scientific_scopes_pending": 66,
+    "original_direct_landing_closures": 54,
+    "original_scientific_scopes_reviewed_and_newly_landed": 94,
+    "closed110_scientific_scopes_newly_landed": 42,
+    "closed110_scientific_scopes_pending": 64,
     "closed110_preexisting_main_supersessions": 2,
     "closed110_empty": 1,
     "closed110_unexecuted_plan": 1,
     "closures_requiring_reopening": 0,
-    "pending_closed_scopes_open_successors": 6,
+    "pending_closed_scopes_open_successors": 5,
     "original_process_scopes_reviewed_and_landed": 1,
     "original_meta_synthesis_scopes_reviewed_and_landed": 1
   },
@@ -190,13 +190,12 @@
     6377,
     7939,
     7977,
-    7982
+    7982,
+    7908,
+    7914,
+    5966
   ],
   "pending_closed_scope_transfer": {
-    "5966": [
-      5950,
-      5952
-    ],
     "6515": [
       6485
     ],
@@ -280,7 +279,7 @@
       "original_head": "be17159a6bc95c1451763dbf89bd6eaa6d747257",
       "original_branch": "physics-loop/toe-time-blockG14-20260802",
       "closure_action": "source_consolidation_exact",
-      "scientific_status": "pending_on_open_successor",
+      "scientific_status": "reviewed_corrected_scope_on_main",
       "original_branch_preserved": true,
       "successor_chain": [
         5950,
@@ -288,24 +287,26 @@
       ],
       "final_successor": 5966,
       "successor_head": "c099d9d215ff7e45821f5019d408faff2935a0c6",
-      "successor_state": "OPEN",
-      "accepted_landing_commit": null,
-      "accepted_unit": null,
-      "remaining_obligations": "All original and inherited source, theorem, runner, physical premise, input and evidence obligations transfer through the recorded successor chain. Routing supplies no scientific acceptance.",
+      "successor_state": "CLOSED",
+      "accepted_landing_commit": "1ef2db7a87038b5d8e26a84aa2a3157e347190c2",
+      "accepted_unit": "multiplicity_5950_5952_5966",
+      "remaining_obligations": "Finite supplied nonabelian/quantum, representation, scalar readout, window and polynomial models. Mathematical classifications, bounded witnesses and corrected counterexamples retained; no physical Record/formation/Born bridge, global selection exclusion, independent-wall count, broader parent campaign or audit grade.",
       "additional_original_obligations": "FROZEN_64.json",
       "historical_context_only": null,
       "reopen_required": false,
       "evidence_group": "exact",
       "detailed_row_sha256": "bf706d94f4fb105072bda60e8c0f3795185464e799c56954d26d7f7576798752",
       "initial_snapshot_head": "be17159a6bc95c1451763dbf89bd6eaa6d747257",
-      "closure_review_head": "be17159a6bc95c1451763dbf89bd6eaa6d747257"
+      "closure_review_head": "be17159a6bc95c1451763dbf89bd6eaa6d747257",
+      "current_acceptance_evidence": "backlog_evidence/wave30/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T00:48:10.413510+00:00"
     },
     {
       "pr": 5952,
       "original_head": "33d72586f4fcf8ac85e07b736fd9fbb4c7772b46",
       "original_branch": "physics-loop/toe-time-blockG15-20260802",
       "closure_action": "source_consolidation_exact",
-      "scientific_status": "pending_on_open_successor",
+      "scientific_status": "reviewed_corrected_scope_on_main",
       "original_branch_preserved": true,
       "successor_chain": [
         5952,
@@ -313,17 +314,40 @@
       ],
       "final_successor": 5966,
       "successor_head": "c099d9d215ff7e45821f5019d408faff2935a0c6",
-      "successor_state": "OPEN",
-      "accepted_landing_commit": null,
-      "accepted_unit": null,
-      "remaining_obligations": "All original and inherited source, theorem, runner, physical premise, input and evidence obligations transfer through the recorded successor chain. Routing supplies no scientific acceptance.",
+      "successor_state": "CLOSED",
+      "accepted_landing_commit": "1ef2db7a87038b5d8e26a84aa2a3157e347190c2",
+      "accepted_unit": "multiplicity_5950_5952_5966",
+      "remaining_obligations": "Finite supplied nonabelian/quantum, representation, scalar readout, window and polynomial models. Mathematical classifications, bounded witnesses and corrected counterexamples retained; no physical Record/formation/Born bridge, global selection exclusion, independent-wall count, broader parent campaign or audit grade.",
       "additional_original_obligations": "FROZEN_64.json",
       "historical_context_only": null,
       "reopen_required": false,
       "evidence_group": "exact",
       "detailed_row_sha256": "61d7d2cc81ee85af142b42b08133248a5b59269841f239e0158fd9d0bffbd2fa",
       "initial_snapshot_head": "33d72586f4fcf8ac85e07b736fd9fbb4c7772b46",
-      "closure_review_head": "33d72586f4fcf8ac85e07b736fd9fbb4c7772b46"
+      "closure_review_head": "33d72586f4fcf8ac85e07b736fd9fbb4c7772b46",
+      "current_acceptance_evidence": "backlog_evidence/wave30/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T00:48:10.413510+00:00"
+    },
+    {
+      "pr": 5966,
+      "original_head": "c099d9d215ff7e45821f5019d408faff2935a0c6",
+      "initial_snapshot_head": "c099d9d215ff7e45821f5019d408faff2935a0c6",
+      "closure_review_head": "c099d9d215ff7e45821f5019d408faff2935a0c6",
+      "original_branch": "physics-loop/toe-time-blockG27-20260802",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "1ef2db7a87038b5d8e26a84aa2a3157e347190c2",
+      "accepted_unit": "multiplicity_5950_5952_5966",
+      "remaining_obligations": "Finite supplied nonabelian/quantum, representation, scalar readout, window and polynomial models. Mathematical classifications, bounded witnesses and corrected counterexamples retained; no physical Record/formation/Born bridge, global selection exclusion, independent-wall count, broader parent campaign or audit grade.",
+      "reopen_required": false,
+      "evidence_group": "wave30",
+      "current_acceptance_evidence": "backlog_evidence/wave30/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T00:48:10.413510+00:00"
     },
     {
       "pr": 6104,
@@ -3545,6 +3569,27 @@
       "closure_review_head": "53ac72ce49cbb12ed4faa26755301f9afa71f877"
     },
     {
+      "pr": 7908,
+      "original_head": "f79547bc2a20ee006dc73341d572bfb4b1547610",
+      "initial_snapshot_head": "f79547bc2a20ee006dc73341d572bfb4b1547610",
+      "closure_review_head": "f79547bc2a20ee006dc73341d572bfb4b1547610",
+      "original_branch": "physics-loop/non-abelian-gauss-law-no-record-pattern-solutions",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "1ef2db7a87038b5d8e26a84aa2a3157e347190c2",
+      "accepted_unit": "nonabelian_7908_7914",
+      "remaining_obligations": "Finite supplied nonabelian/quantum, representation, scalar readout, window and polynomial models. Mathematical classifications, bounded witnesses and corrected counterexamples retained; no physical Record/formation/Born bridge, global selection exclusion, independent-wall count, broader parent campaign or audit grade.",
+      "reopen_required": false,
+      "evidence_group": "wave30",
+      "current_acceptance_evidence": "backlog_evidence/wave30/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T00:48:10.413510+00:00"
+    },
+    {
       "pr": 7909,
       "original_head": "ff9bd69261f6771055427d3a1f7bb1fd855640a9",
       "initial_snapshot_head": "ff9bd69261f6771055427d3a1f7bb1fd855640a9",
@@ -3611,6 +3656,27 @@
       "detailed_row_sha256": "5510532ef6665d9eee501288069de664a1a2653fe3527708db49c937c6ee287e",
       "initial_snapshot_head": "a46da5be561a47c44f01f74cff88ae98a6613967",
       "closure_review_head": "a46da5be561a47c44f01f74cff88ae98a6613967"
+    },
+    {
+      "pr": 7914,
+      "original_head": "86259649a7db10af3db7934cd4f1bec02eda764b",
+      "initial_snapshot_head": "86259649a7db10af3db7934cd4f1bec02eda764b",
+      "closure_review_head": "86259649a7db10af3db7934cd4f1bec02eda764b",
+      "original_branch": "physics-loop/record-readable-gauge-invariant-algebra-colour-blind",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "successor_chain": null,
+      "final_successor": null,
+      "successor_head": null,
+      "successor_state": null,
+      "accepted_landing_commit": "1ef2db7a87038b5d8e26a84aa2a3157e347190c2",
+      "accepted_unit": "nonabelian_7908_7914",
+      "remaining_obligations": "Finite supplied nonabelian/quantum, representation, scalar readout, window and polynomial models. Mathematical classifications, bounded witnesses and corrected counterexamples retained; no physical Record/formation/Born bridge, global selection exclusion, independent-wall count, broader parent campaign or audit grade.",
+      "reopen_required": false,
+      "evidence_group": "wave30",
+      "current_acceptance_evidence": "backlog_evidence/wave30/INDEX.json",
+      "acceptance_update_utc": "2026-09-09T00:48:10.413510+00:00"
     },
     {
       "pr": 7915,
@@ -4622,5 +4688,5 @@
       }
     }
   ],
-  "last_scientific_disposition_update_utc": "2026-09-08T15:03:12.035702+00:00"
+  "last_scientific_disposition_update_utc": "2026-09-09T00:48:10.413510+00:00"
 }

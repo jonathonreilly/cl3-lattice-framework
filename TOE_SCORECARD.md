@@ -80,3 +80,5 @@ by BACKLOG_STATUS.md; previous per-wave narratives remain archived in history.
 W28 adds fifteen reviewed conditional support/readout and DK/OS source notes. Their finite/model/physical-law limits remain explicit. The 17 pending mechanical ledger entries confer no formal audit grade; see MAIN_STATUS_SNAPSHOT.json.
 
 W29 adds three reviewed conditional role/support notes. Static catalog assumptions, physical formation and encoding remain distinct; 20 newer source notes await mechanical ledger refresh, with no audit grade. See MAIN_STATUS_SNAPSHOT.json.
+
+W30 adds five reviewed conditional finite notes spanning nonabelian readout, representation multiplicity and quadratic windows. Physical formation and selection suppliers remain explicit; 25 newer notes await mechanical ledger refresh. No audit grade. See MAIN_STATUS_SNAPSHOT.json.
