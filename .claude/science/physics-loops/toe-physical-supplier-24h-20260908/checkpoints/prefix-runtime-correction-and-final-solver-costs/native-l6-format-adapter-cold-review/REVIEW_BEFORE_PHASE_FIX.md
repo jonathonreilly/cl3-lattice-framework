@@ -1,0 +1,11 @@
+# Adapter and retention review, pending narrow phase guard
+
+Prior84b mathematical worker review is reused. This reviewer authored the independent ratio-based norm helper; primary authored the format adapter and worker additions. No physical-size vector was created or scanned.
+
+On sixteen explicitly prescribed binary64 values, including signed zero, subnormal, least normal, maximum finite and ordinary signed values, the actual export produces exactly the independently constructed little-endian bytes. Real phase places the original bits in real and positive zero in imaginary; phase i places the original bits in imaginary and positive zero in real. This is a representation choice preserving all source bits and norms, not floating complex multiplication. Both native bitfield and independent as_integer_ratio scanners agree on every particle bucket and total for both parities. Inactive-channel corruption is rejected.
+
+One narrow blocker to the verifier API was reported: export rejects an invalid phase, but verify currently treats anything other than real as i. Fixed worker phases are valid, so this does not invalidate the successful tiny examples; an explicit identical phase guard is required before final adapter disposition.
+
+The current worker writes each completed NPY/hash into PARTIAL before later steps and writes the full failed-Echi result before raising. The wrapper preserves FAILURE on exceptions. Thus ordinary return cannot silently turn a false Echi diagnostic into PASS. These are useful readiness fixes; they do not supply the unfinished complete runtime/budget contract or independent physical norm cost. The STATUS document explicitly retains those limitations. The format adapter can bridge saved NPY to the raw replay format, but no physical independent replay has yet occurred.
+
+NPY schema checks require the expected one-dimensional float64 shape and finite data. Raw verifier checks exact length, selected-channel bit identity and inactive positive-zero bits. Array formats therefore agree within the declared little-endian host/file boundary. New worker validation changes were still pending while this snapshot was read; they need a changed-source review. No launch PASS is issued.

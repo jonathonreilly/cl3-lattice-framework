@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-l6-prefix-full-port-root-review/child.py", line 36, in <module>
+    sys.argv=[str(I/c['primary']),'--json'];primary['main']();guard()
+                                                              ^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-l6-prefix-full-port-root-review/child.py", line 31, in guard
+    elif path not in f['runtime'] or sha(path)!=f['runtime'][path]:raise ValueError('loaded runtime '+path)
+                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: loaded runtime /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload/zlib.cpython-312-darwin.so

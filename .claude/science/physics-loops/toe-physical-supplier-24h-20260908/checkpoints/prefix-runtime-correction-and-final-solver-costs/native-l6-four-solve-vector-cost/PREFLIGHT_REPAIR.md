@@ -1,0 +1,1 @@
+First import-only preflight rejected unpinned zlib extension before anyfixture. Preserved failure and pre-fixfreeze. Merged complete stdlibsource/extension/Pythonframework pins; identicalguard thenPASS with actualparserandlateimports. No costattempt occurred.

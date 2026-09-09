@@ -1,0 +1,1 @@
+The first independent PLAN comparison omitted the redundant mask field from its reconstructed key dictionaries and consequently raised ValueError('membership') before checking the remaining cases. Actual PLAN includes mask inside each key. This reviewer schema omission is corrected by retaining that field; no author source or scientific data changed.

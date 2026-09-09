@@ -1,0 +1,5 @@
+# Root real adapted two-action cost authorization — UNLAUNCHED
+
+Root read exact adaptedframe/real-star proof, actualkernel/driver/coefficient interface/protocol, and source-bound independente2ecacc review. Directwhite-r/black-Kr frame: Gamma0=iBreal, neighborAreal, each changededge+K B0Av withneighborfirst. Fourcenter and15neighborcoefficients give38real scatterterms; unequal21frequencies preserved. Actualsamekernel56tinybothparity CAR checks andsignmutants, rational100bit coefficient enclosures independently checked. Oldcomplexpilot remainsdistinct; no arrayconversion presumed.
+
+Exactlytwofixed even-parity actual-length actions, one30second384MiB whole-tree attempt afterremotecheckpoint. Allinit/hash/import/action/write-read-hash/partial/finalization costs included. Strict-I-B/allfive threadflags1, rootkill29.5 andchildalarm29, /usr/bin/time -lp. Exactsourcefreeze checkedbeforelaunch; preservepartial/failure, noretry. This measures candidatearithmeticonly. A separatelyreviewedIEEEguard, coefficient/errorenvelope andfullnorm residualcertifier are needed forscience; tinytests/finiteoutputs do not license a residualclaim.

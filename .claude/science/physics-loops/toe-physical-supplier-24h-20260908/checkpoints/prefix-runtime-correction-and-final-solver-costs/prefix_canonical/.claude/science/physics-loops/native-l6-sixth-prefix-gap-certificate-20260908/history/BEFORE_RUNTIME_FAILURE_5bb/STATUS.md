@@ -1,0 +1,1 @@
+All 6489 mathematical rows PASS. Post-loaded-runtime guard failed on unbound zlib. This invocation is QUALIFIED mathematical completion / runtime closure FAILED, not a clean portable PASS. Charged prior is 47.09 + 0.50 = 47.59 seconds. Original output and failure receipts preserved unchanged.

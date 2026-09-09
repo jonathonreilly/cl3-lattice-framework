@@ -1,0 +1,7 @@
+# Fixed small semantic controls — UNLAUNCHED
+
+Run only after root authorization, with an external process-group watchdog of 30 seconds and 384 MiB. Driver alarm 28 seconds supplements that watchdog. No full certificate replay. Fixed cases are the first numerically ordered noncut and singleton in frozen TARGETS; no outcome selection.
+
+Three subprocesses each construct the same rational baseline and evaluate one fixed noncut: unchanged helper must pass; doubling the native vacuum normalization and reversing the Newton inverse-trace term must fail exact source equality. Mutated bytes are preserved before execution. These are arithmetic mutations, not hash guard failures. Actual primary singleton branch statements are extracted by AST and executed unchanged, then with unrestricted zero gap substituted; the latter must fail the fixed-parity source comparison. Two malformed CLI invocations must exit 2 before arithmetic. The branch controls support the actual primary branch, not the all-size parity theorem. All outputs and failed rows are persisted, including unexpected outcomes. No old source or evidence is modified; no live 12-file source changes.
+
+Expected work: three baselines and three gaps, based on the fixed25 cost below 2 seconds plus process startup; 30-second cap is an execution limit, not permission for full replay. Record actual resource receipts externally. No controls executed during preparation.
