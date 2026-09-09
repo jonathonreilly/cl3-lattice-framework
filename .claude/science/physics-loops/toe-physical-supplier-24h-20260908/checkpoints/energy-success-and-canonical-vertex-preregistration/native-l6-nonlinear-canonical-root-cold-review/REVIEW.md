@@ -1,0 +1,7 @@
+# Canonical replay root cold review
+
+PASS for ROOT_FREEZE98668ca3ef3f4e2a375604b69c8ee83556f722a95c6ee42f85da7cea557a164d, bound to canonical4d625869. Read complete worker/monitor/contract and readiness receipts; independently verified all2301 runtime and47 isolated science hashes plus root file pins. No execution or physical replay by reviewer.
+
+The worker executes the verified canonical primary in its own process, sets __main__/input paths correctly, and imports the pinned NumPy origin. Source membership and loaded origins are checked before and after; late NPY imports are actually exercised by readiness. Root starts one worker, includes itself and descendants in sampled RSS, retains per-process/aggregate peaks, and kills group plus known descendants on monitor failures. Exclusive marker, output and logs exclude hidden retries. Completion binds canonical source freeze and output digest, whose PASS/replay fields are checked.
+
+The179.5-second kill threshold and180-second total/root postcheck align with the stated single timer arrangement; no independent175-second timer is claimed. Primary alarm and self RSS are secondary. Actual external root startup/finalization remains subject to separate shell reconciliation, and sampled RSS is not continuous memory assurance. Five synthetic receipt checks and actual readiness are correctly distinguished from a full replay. No blocker found for the frozen prospective contract. Prior canonical source/math review887cc470 is reused; this is the narrow runtime/topology review only.
