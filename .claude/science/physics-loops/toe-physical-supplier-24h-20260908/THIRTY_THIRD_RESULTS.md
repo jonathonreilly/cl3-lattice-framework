@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Thirty-third campaign checkpoint
 
 Updated 2026-09-09T01:53:32.738560+00:00. Campaign continues until2026-09-10 10:27:17UTC or usable quota exhaustion. Latestusage93%weeklyused/7%remaining; no reset redemption.25sciencePRs8036-8060 open, none merged/formallyaudited. Lock refreshed through03:39:57UTC. SSHreadSTATUS/STATE.
 

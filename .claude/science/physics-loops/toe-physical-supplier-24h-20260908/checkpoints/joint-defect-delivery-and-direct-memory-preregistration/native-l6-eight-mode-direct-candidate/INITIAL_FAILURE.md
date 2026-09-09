@@ -1,0 +1,1 @@
+Initial synthetic fixture used negative a*b vacuum shift and failed the positive-denominator guard before any solve returned. This was a fixture sign error, not candidate acceptance; source preserved. No native calls.

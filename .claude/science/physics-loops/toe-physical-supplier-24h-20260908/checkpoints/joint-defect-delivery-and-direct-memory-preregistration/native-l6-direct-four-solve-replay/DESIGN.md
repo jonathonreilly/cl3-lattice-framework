@@ -1,0 +1,11 @@
+# Unlaunched independent direct four-solve replay
+
+Adapted from frozen a8b7635d independent CG evidence replay without changing its chunk-corrected gather action, exact as_integer_ratio norm scanner, source-error propagation, all27 transports, seven bit bridges, or eleven odd/all_ge3 intervals. This is a separate algorithm contract; the closed CG source remains untouched. The author-specific iteration gate is replaced by algorithm direct_gaussian_once and exactlyone candidate attempt per stage. First/second rho and finalEchi thresholds are unchanged.
+
+The new checks require allfour candidate records, actualJ8/13spectator partition, eight finite signed singular values, oriented signs±1, finite positive minimum denominator, finite delta, mapped active planes and paired opposite-sign alignment planes within their blocks, and exact plane/pass counts. These are diagnostic schema checks, not a second SVD or a claim its candidates are exact. The original-H fresh residual remains decisive. No eigenvalue or inverse candidate is regenerated.
+
+The wrapper streams hashes, executes verified local source bytes, checks recursive executable membership and actual loaded runtime origins, and retains stage failures. External root binding of RESULT/WORKER_COMPLETE/source/contract is required. The provisional CLI remains run.py replay INPUT OUTPUT BINDING_JSON under-I-B with five numerical thread variables1. Current400/390second384MiB limits are ceilings only; a future direct production/shared-budget contract must be frozen by root. No execution authorization is included.
+
+Reuse/authorship: this agent authored portions of the prior envelope/transport/FP and independent norm theory. These are reused reviewed premises, not newly independent discoveries. The direct worker/candidate is primary-authored. Complete saved-coordinate replay and independently indexed gather action remain distinct from its candidate implementation. The preserved predecessor design documents originalcostinputs; no direct physicalcost has been measured here.
+
+Tiny38predicate controls include both-parity CAR/gather chunk cancellation and new oneattempt/diagnostic mutants. Actual readiness loads onlysource/imports. No physical vector, action, scan, or CG/SVD call is performed.

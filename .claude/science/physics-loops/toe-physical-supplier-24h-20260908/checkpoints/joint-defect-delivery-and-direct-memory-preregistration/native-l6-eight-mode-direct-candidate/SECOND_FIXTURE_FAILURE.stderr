@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-l6-eight-mode-direct-candidate/test.py", line 23, in <module>
+    idx=[i|((i.bit_count()%2^sec)<<(n-1)) for i in range(1<<(n-1))];h=H[np.ix_(idx,idx)];rhs=np.array([math.sin(i+.3) for i in idx]);old=rhs.copy();x,r=active.solve(omega,a,b,groups,rhs,sec);truth=np.linalg.solve(h,rhs);err=float(np.max(np.abs(x-truth)));worst=max(worst,err)
+                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-l6-eight-mode-direct-candidate/active.py", line 35, in solve
+    if not np.isfinite(den).all() or np.any(den<=minimum_denominator):raise ValueError('denominator')
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: denominator

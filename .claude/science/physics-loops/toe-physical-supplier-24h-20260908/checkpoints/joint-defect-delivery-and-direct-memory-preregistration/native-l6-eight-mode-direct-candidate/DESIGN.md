@@ -1,0 +1,13 @@
+# Active/spectator direct candidate; tiny controls only
+
+This is a separate algorithm version; genericb16, workerf9b and replaya8b are unchanged. It implements c17 alignment and active signed SVD without invoking actual native coefficients. Tests only use4..8 synthetic modes. No native M/SVD, physical2^20 arrays, H action or cost run.
+
+Each equal-frequency block has center a supported at its first coordinate. Real left Givens R align b's perpendicular part to its second coordinate while fixing the center. The simultaneous A/B rotation has original-basis O=R^T, with opposite AA/BB angles. Hence original H=W_align H_aligned W_align^T. Active indices are the first two of every block, in original increasing order; spectators are all others. The active M is diag(omega_J)-2a_J b_J^T, handled by generic oriented SO/SO signed SVD. Small alignment remainder checks are candidate diagnostics, not exact projection certification.
+
+Inverse applies W_align^T, then active W^T, divides by delta_active+sum(active sigma*n)+sum(spectator omega*n), then applies active W and W_align. Active planes use their actual noncontiguous original mode indices, so JW signs include occupied intervening spectators automatically. There is no packed bit permutation or projection to spectator vacuum. The native21-mode layout would give8 active and13 spectators; this implementation makes no first-vacuum128 optimization.
+
+At most13 alignment Givens for6+6+6+3, represented by26 Spin planes per direction. Active SO8/SO8 adds56 planes per direction. Thus at most164 Spin passes plus diagonal for a generic full inverse. Memory is source plus one working full vector and bounded plane/diagonal scratch, with only small coefficient/SVD arrays. No physical process RSS or timing acceptance is asserted.
+
+Tiny dense CAR reconstruction tests both parities with occupied spectator amplitudes and noncontiguous active indices.10 cases pass, all with negative signed singular values.10 actual source mutants omitting spectator energy fail fresh dense residual comparison. Source bits remain unchanged; zero/below-floor denominators reject. The fresh residual is a tiny dense numeric check, not the eventual certified native residual.
+
+Two preliminary synthetic fixtures failed the positivity guard: first used a negative vacuum shift; second made unnormalized shared rank-one couplings grow across blocks. Both test sources and the available failure stderr are preserved. Final fixtures normalize the block coupling prospectively within this deterministic test repair, giving the intended positive Hamiltonians. No failed result is hidden and no physical data was selected. Candidate code itself was unchanged by these fixture repairs.
