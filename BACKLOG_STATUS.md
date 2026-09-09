@@ -20,6 +20,8 @@ Historical recovery must sit outside actual note discovery. docs/work_history is
 
 Next original reviews: #7837 action/transfer/Record hazards; #7836 records-first Haar/jump; #7870 six-phase diagonal adjacency. Current unit paths and outputs are in NEXT_REVIEW_UNITS.json; source findings are not acceptance. Actual reserved-dependent scopes at #7315/#7359 and both full successors remain held.56closed scopes remain pending at four successors. Maxwell production/physical holds remain in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json).
 
+Older-stack routing: #6009 contains eight exact authored paths from each of #5964/#5963/#5961/#5959/#5954 and eight of ten from #5965/#5955. The latter two also carry an event-space helper/receipt absent at that head; preserve and review those extras. #5957 is not covered. This is a proposed review family, not a closure or science verdict. Exact routing is in `backlog_evidence/next-routing-20260909`.
+
 ## Landed source history
 
 | Landed unit | Main commit | Evidence |
