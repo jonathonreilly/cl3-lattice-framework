@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/free_fall_universality_light_bending_factor_check_2026_09_03.py
+runner_sha256: c966fb821f93d10ddab2dc2f84a0936b89cd6c9370571802d6dce47a4a446a95
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 75.12
+status: ok
+----- stdout -----
+PASS A1 [exact + 1e-12] hop and record-native mass: KS signs eta_1 = 1, eta_2 = (-1)^{v_1}, eta_3 = (-1)^{v_1+v_2}; {M, Eps} = 0 to 0.0e+00 on the 8^3 torus, so (M + m Eps)^2 = M^2 + m^2 to 0.0e+00 and E^2 = 6 + 2 sum_a cos q_a + m^2 to 2.8e-14 at m = 0, 0.5, 2
+PASS A2 [exact] THE COUPLING REGROUPED. H_Phi = H0 + sum_v Phi_v eps^tot_v, eps^tot = the parent's hop plus the mass density m eps_v n_v, IS the bond-scaled M_vj (1 + (Phi_v + Phi_j)/2) with diagonal m eps_v (1 + Phi_v): residual 0.0e+00; the densities sum to <M>, <H0>, 1 to 6.7e-16
+PASS A3 [numerical] the CONJUGATED form A H0 A, A = sqrt(1 + Phi) -- geometric not arithmetic mean of the same endpoint factors -- differs only at O(g^2): max|H_A - H_B|/g^2 = +0.129/+0.133/+0.143 at g = 1e-3/2e-3/4e-3; the dynamics agree, -3.51795 against -3.51795 at m = 0.5, p_y = 0.3
+PASS A4 [exact] c_L = 2 IN COARSE-SITE UNITS. The magnetic cell is 2 coarse sites, q = 2k, so xdot_a = 2 dE/dp_a and the massless speed 2 sin p/E -> 2.000000 as p -> 0 (+1.9378/+1.7552/+1.4634 at p = 0.5/1/1.5). The Lorentz note's v = 1 is in cell units; the universal value is a/g = -4
+PASS B1 [exact, lattice] THE DERIVED LAW. From H_eff = E(q) + Phi(x) w(q), q = 2k: a_x/g = -4 w E''_xx + 4 E'_x w'_x, weight w = E (energy), E_0^2/E (the parent's eps_v verbatim) or 1 (count). The closed forms hold to 1.8e-07 over 162 (p, m)
+PASS B2 [exact, lattice] TRANSVERSE FREE FALL IS EXACT. At p_x = 0 the energy coupling gives a_x/g = -4 for EVERY m, p_y, p_z, E: deviation 0.0e+00 over 31 rows. The only lattice input, d^2E/dp_x^2 = 1/E at p_x = 0, the exact dispersion satisfies identically
+PASS B3 [exact, lattice] MASSLESS LONGITUDINAL IS +4. For m = 0, p_y = p_z = 0 the law gives a_x/g = +4 at every p_x, deviation 2.7e-15 (sin^2 p/E_0^2 = cos^2(p/2)): the coordinate light speed is c (1 + Phi) = c sqrt(g_00), the proper speed unchanged
+PASS C1 [numerical] THE ONE SYSTEMATIC, AND ITS REMOVAL. An x-localised packet has delta p_x ~ 2/sigma_x and the same law says those add +8 g sin^2 p_x/E^2: at sigma_x = 8/16/32/44 (m = 0.5, p_y = 0.1) a/g = -3.42079/-3.78916/-3.94085/-3.96805 against its own -3.37182/-3.78448/-3.94194/-3.96867, to 1.2 per cent. Richardson from 32, 44: -3.9986
+PASS C2 [extrapolated] UNIVERSALITY OF FREE FALL. Transverse, sharp p_y, Richardson in 1/sigma_x^2 from sigma_x = 32, 44: over m = 0.25 to 2.0 and v/c = 0 to 0.82 the extrapolated a/g is -4.000 to 1.5e-03 in every row with E >= 0.5, and to 1.3e-02 at the two lowest-E rows, where the packet is not monochromatic
+PASS C2b [numerical] the m-dependence at FIXED width is that artefact, not physics: y-localised packets at sigma_x = 32, v/c = 0.010 to 0.028 give a/g = -3.8006/-3.9398/-3.9800/-3.9906 at m = 0.25/0.5/1/2, a 5 per cent spread that is exactly C1's +8 sin^2 p_x/E^2, largest at the smallest E
+PASS C4 [extrapolated] THE COMPOSITION TEST. Three bodies of energy E = 1.0486/1.0669/1.0657 -- a rest mass, a massless packet, a relativistic body at v/c = 0.152/0.827/0.736 -- fall at a/g = -3.999107/-3.999031/-3.999111, to 8.0e-05. Under the count source they differ by 8 per cent
+PASS C3 [extrapolated] THE LIGHT-BENDING FACTOR IS 1, HALF OF GENERAL RELATIVITY'S 2. Massless packets at v_y = +1.955/+1.846/+1.662 bend at a/g = -3.99671/-3.99908/-3.99903 against the slow massive body's -3.99911: factor 0.9998 +- 0.0006
+PASS C5 [numerical] THE COUNT SOURCE FAILS, TWO WAYS. n_v gives a/g = -16.388/-6.788/-4.005/-1.863 at m = 0.25/0.5/1/2, i.e. -c^2 grad Phi/E: heavy bodies fall slower: inertia E, no matching force. And its deflection is CHROMATIC, a E/(-4) = +0.936/+0.962/+0.996 at the three energies
+PASS C6 [numerical] THE TEST-BODY LAW, DYNAMICALLY. Longitudinally d<H0>/dt = -0.8034/-1.3482/-1.6746/-0.9502 against the parent's F.v = -E g v_x = -0.8023/-1.3481/-1.6751/-0.9497, to 0.14 per cent; a/g = +0.3431/+2.4076/+2.5794/-2.0680 tracks the law at the packet's own (E, p_x) to 0.7 per cent. F = -E_test grad Phi_N is a law of MOTION here
+PASS D1 [numerical] THE FORK IN eps_v, A FINDING. The parent's eps_v = sum_{j~v} M_vj (P''-P)_vj VERBATIM is a HOP density, weight E_0^2/E = E v^2/c^2, vanishing at rest: at m = 2, v/c = 0.010 it gives a/g = -0.0282 against -3.9906 with the mass density included -- no free fall for slow matter
+PASS D2 [exact] and the gap is invisible in the parent note because that note carries no mass term: at m = 0 the two densities are identically equal, 0.0e+00, so everything about light here is fork-independent. eps_v needs its mass density wherever a mass term is present
+PASS E1 [exact + numerical] TRANSVERSE ACCELERATION CARRIES NO (1 + v^2). a_perp/g = -4 at v/c = 0.002 and at v/c = 1 alike (C3's rows), B2's law carrying no v: found -3.9352/-3.9574/-3.9879 at v/c = +0.002/+0.578/+0.665, ratio +0.9839/+0.9894/+0.9970. GR's (1 + v^2), value 2 at v = c, needs the SPATIAL metric
+PASS E2 [exact + numerical] LONGITUDINAL CARRIES (1 - 2 v^2/c^2), NOT GR'S (1 - 3 v^2/c^2). Exactly a_long/g = -4 (cos p_x - 2 v^2/c^2), sign change at v/c = 1/sqrt2: found -2.8583/+0.1515/+2.6691 at v/c = +0.358/+0.677/+0.778 against -2.8310/+0.2056/+2.6828. In general a = -c^2 grad Phi + 2 v (v.grad Phi), GR's 4 v
+SUMMARY: coupled to the TOTAL energy density this gravity is universal -- a/g = -4.000 for every mass, momentum and composition, exact transversely, verified as F = -E grad Phi_N -- while light bends with factor 1, HALF of general relativity's 2: a g_00-only coupling, missing the spatial metric.
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

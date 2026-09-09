@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/free_fall_universality_light_bending_factor_check_2026_09_03.py
+runner_sha256: 5f048a1622eb6268502977c815279ab9e1ac456d42d93e57b524069e530b8344
+input_fingerprint_sha256: 45b6f415e530218ca337b306aafb81432bec678135722420ae714e6869c87d89
+timeout_sec: 150
+exit_code: 0
+elapsed_sec: 75.73
+status: ok
+----- stdout -----
+INPUT_GUARD: all declared current note/definition/memo bytes match
+PASS Q1 [actual symbol/speed control] Hop fraction versus actual speed and finite ray curvature: {'chi': 0.33333333333333304, 'speed_squared': 0.24999999999217332, 'curvature': [np.float64(1.0395661299045615), np.float64(1.1715728752696115), np.float64(1.446462692160591)], 'target': [np.float64(1.0395661298965801), np.float64(1.17157287525381), np.float64(1.4464626921716894)], 'pass': np.True_}
+PASS Q2 [readout and error counterexamples] {'energies': [0.9999999999999998, -0.9999999999999998], 'finite_difference': 1.01, 'pass': True}
+PASS A1 [finite algebra] Supplied KS hop and staggered mass on the 8^3 torus: anticommutator 0.0e+00, square residual 0.0e+00, dispersion residual 2.8e-14 at m=0,.5,2. This does not construct the fine-site carrier.
+PASS A2 [exact regrouping] Supplied total-energy endpoint coupling: operator residual 0.0e+00; hop, total and occupation densities sum to their defined observables within 6.7e-16. Off-diagonal energy needs its own readout.
+PASS A3 [finite comparison] Positive A=sqrt(1+Phi): geometric and arithmetic endpoint couplings differ at O(g^2); entry differences/g^2 +0.129/+0.133/+0.143 and packet coefficients -3.51795/-3.51795. Not equality at finite field.
+PASS A4 [unit convention] Two coarse sites per cell: actual group velocity is 2 sin(p)/E; small-p massless speed 2.000000, finite-p speeds +1.9378/+1.7552/+1.4634. The transverse scalar-symbol coefficient is -4.
+PASS B1 [scalar-symbol identity] At E>0, Hamilton equations give a_x/g=-4 w E_xx+4 E_x w_x. Finite-difference versus closed forms for 162 momentum/mass/weight comparisons: 1.8e-07. Quantum packets require separate band/field approximations.
+PASS B2 [scalar-symbol identity] At p_x=0 and E>0, total-energy weight gives a_x/g=-4 independent of the remaining supplied parameters; max deviation 0.0e+00 in 31 rows. Not an all-packet theorem.
+PASS B3 [scalar-symbol identity] Nonzero-energy massless longitudinal modes give a_x/g=+4; max deviation 2.7e-15. No physical proper-speed or geodesic interpretation is supplied.
+PASS C1 [finite width diagnostic] Widths8/16/32/44: measured -3.42079/-3.78916/-3.94085/-3.96805 versus momentum-law averages -3.37182/-3.78448/-3.94194/-3.96867; maximum relative mismatch 1.2 percent. Two-width Richardson -3.9986 assumes a leading width error and has no certified remainder.
+PASS C2 [finite extrapolation] Declared masses/packets reach measured v/c 0.82; deviations from transverse symbol value -4 are 1.5e-03 for E>=.5 and 1.3e-02 at lower energies. These finite rows do not prove universal packet dynamics.
+PASS C2b [finite width dependence] At width32 the measured speed range is 0.010 to 0.028; mass-dependent coefficients -3.8006/-3.9398/-3.9800/-3.9906 remain actual finite packet data, not a proof that one width correction exhausts the physics.
+PASS C4 [finite composition comparison] Nominally similar energies 1.0486/1.0669/1.0657, measured speeds 0.152/0.827/0.736 and coefficients -3.999107/-3.999031/-3.999111 have spread 8.0e-05; count-coupling spread 8 percent. Energies are not exactly equal; no physical universality is inferred.
+PASS C3 [finite acceleration ratio] Massless speeds +1.955/+1.846/+1.662, acceleration coefficients -3.99671/-3.99908/-3.99903, massive reference -3.99911: ratio 0.9998 with spread 0.0006. This is not ray curvature or a light-bending factor.
+PASS C5 [finite count-coupling contrast] Mass rows -16.388/-6.788/-4.005/-1.863 and massless normalized coefficients aE/(-4) +0.936/+0.962/+0.996. The supplied count and total-energy couplings differ; no physical source is selected.
+PASS C6 [finite supplied dynamics] (d<H0>/dt)/g is -0.8034/-1.3482/-1.6746/-0.9502 versus -E v_x -0.8023/-1.3481/-1.6751/-0.9497, relative difference 0.14 percent; acceleration coefficients +0.3431/+2.4076/+2.5794/-2.0680 track the packet-symbol comparison within 0.7 percent. This does not derive a physical test-body law.
+PASS D1 [finite energy fork] Hop weight is E0^2/E; chi=E0^2/E^2 is not actual speed squared. At m=2, measured v/c 0.010, hop-only coefficient -0.0282 versus total-energy -3.9906 near the Dirac rest point.
+PASS D2 [operator identity] At m=0, hop and total-energy operators coincide, residual 0.0e+00; the supplied mass term otherwise distinguishes their densities.
+PASS E1 [finite transverse comparison] Low measured v/c 0.002 and further coefficients -3.9352/-3.9574/-3.9879 at speeds +0.002/+0.578/+0.665 give ratios +0.9839/+0.9894/+0.9970 to the scalar-symbol value. The exact transverse symbol is speed independent; finite rays also involve v_y^2.
+PASS E2 [finite longitudinal comparison] Coefficients -2.8583/+0.1515/+2.6691 at measured speeds +0.358/+0.677/+0.778 versus exact lattice-symbol targets -2.8310/+0.2056/+2.6828. Sign threshold is cos(p_x)=2 sin^2(p_x)/E^2; the 1/sqrt(2) speed threshold is only a small-momentum limit.
+SUMMARY: exact nonzero-energy scalar-band identities and finite packet diagnostics for a supplied total-energy coupling. Momentum, speed, acceleration ratio and ray curvature remain distinct; source/readout/clock and physical gravity are open.
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+
