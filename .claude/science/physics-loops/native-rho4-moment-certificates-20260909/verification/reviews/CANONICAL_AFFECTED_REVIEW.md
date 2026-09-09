@@ -1,0 +1,4 @@
+Affected-only PASS. Canonical author reviewing coordinator repairs, not claiming independent review of own original assembly. Compared complete note/runner differences to native-rho4-canonical-before-wording-bc195. Literal Claim type and explicit conditional Status preserve scope; narrower interval wording removes ambiguity. SCALARS exact row equality closes displayed-file binding. String endpoint requirement rejects bool/int ambiguity; added boolean mutant exercises it. No mathematical formula or target changed. Canonical source-review status link points to actual root review; integration/audit remain NOT RUN. No supporting runner or physical/saved calculation rerun.
+
+Note SHA256 a1b4cd3f13eb874b2aedbb36805178f22f6fa1a7d0550cd7c07c1a20cc404d82
+Runner SHA256 8dbbee813b68b5117f212a91e182a4d20e1e8fa17e15a5845fbbd07bbf849dc0

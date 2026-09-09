@@ -1,0 +1,3 @@
+Executed once: `python3 -I -B -S scripts/native_rho4_moment_certificates_2026_09_09.py --json`. Exact stdout is OUTPUT.json. 268 compact identities/bindings passed, with five rejected alternatives. No catalog or full-node arithmetic ran. git diff --check passed. Integration/audit NOT RUN. FAILURE_RECOVERY was subsequently added as recovery-only metadata; the executed SOURCE_MANIFEST and output remain unchanged.
+
+After explicit SCALARS equality and boolean-endpoint guard edits, one new compact run produced OUTPUT_CURRENT.json:269 checks and six rejected alternatives. No physical or full-node replay. Later source-review status prose is checked by final hash walk; unchanged arithmetic is not repeated.

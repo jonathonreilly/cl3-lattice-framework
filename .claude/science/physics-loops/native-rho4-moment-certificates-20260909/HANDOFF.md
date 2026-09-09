@@ -1,0 +1,3 @@
+Based on exact PR8074 head77411cfb9d526622ea259c50ab0d66996fededb7; latest fetched main was named e957 by coordinator, no generated moving-main state imported. Completed new scalar certificates and independent full-node posts are preserved. Canonical runner only checks compact identities and saved bindings. Root must independently review, run required integration/graph milestone, and deliver; do not execute physical/saved calculations. Full runtime/raw input reproduction remains remotely recoverable and requires a distinct contract.
+
+Source and affected reviews complete. Root graph completed once; citation manifest included. Delivery retains conditional supplied-model scope and compact-versus-full-forensic distinction. Integration/audit NOT_RUN; no merge authorized.

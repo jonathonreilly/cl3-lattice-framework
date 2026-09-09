@@ -1,0 +1,1 @@
+Certify the supplied-model moments cminus, mu and nu from the existing authenticated A catalog, with explicit rho4 quadrature,40-term tails and full saved-node reconciliation. This canonical task packages completed results; no physical computation is repeated.

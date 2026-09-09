@@ -1,0 +1,1 @@
+Canonical root review PASS, copied in verification/reviews/CANONICAL_ROOT_REVIEW.md. Root fixes strengthen only local record binding/schema and metadata wording. Original bc195 package preserved in the campaign archive. Independent affected confirmation pending. Integration and formal audit NOT RUN.
