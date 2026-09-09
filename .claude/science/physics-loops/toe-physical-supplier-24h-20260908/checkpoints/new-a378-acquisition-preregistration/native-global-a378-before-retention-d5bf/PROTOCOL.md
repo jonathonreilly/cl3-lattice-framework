@@ -1,0 +1,15 @@
+# New378 A-only acquisition proposal
+
+NOT_READY. No Gauss rule or oracle has been evaluated. The frozen a580 precision pilot remains unlaunched and is unnecessary for this A-only target.
+
+Use exactly one new p21 Gauss rule on[-1,1],18 ratio-four panels[-16,1],378 nodes. The exact center root is explicitly handled; the old even-degree generator cannot be reused unchanged because it rejects grid zeros. New code certifies ten positive sign-change brackets, mirrors them and includes zero. Degree21 and21 distinct roots prove completeness. Fixed224-bit bisection brackets feed exact interval Legendre derivative weights. Actual mapped pole and weight widths must be<=2^-160 before any A acquisition. Failure stops before any oracle and retains root progress. No looser width is silently substituted.
+
+At each exact rational midpoint acquire the reviewed192-bit160-term A/A' oracle once,378calls. Require actual full A width<=1e-30. Aprime is retained but not part of the A-only operator gate. Exact physical quadrature poles differ from their midpoint by at most half the certified bracket width; the operator sensitivity ledger explicitly charges that displacement. No claim midpoint equals an algebraic Gauss root is made.
+
+Primary's provisional operator bound is2^27 eta_A+2^42 pole_radius+2^13 weight_radius+5 T_operator_rounding_radius+2^12 reciprocal_pi_radius. Use eta_A<=5e-31, root/weightradius<=2^-161,Tround<=2^-80,pi<=2^-180. The last two are later operator assembly obligations, not outputs of this scalar acquisition. No B,C,cminus or projected Gram is needed to define the A-only finite resolvent operator. The completed old66/3484 protocols remain immutable.
+
+The proposed acquisition has378same-precision oracle calls versus1742 in the prior43.21s study. Count scaling is an inference only. Exact root generation entails2048grid evaluations plus at most2250bisection evaluations, each degree21, and21interval derivative weights; it is new overhead not included automatically in an oracle-only forecast. Parent must approve a conservative inclusive cap after source review, with retained geometry failure and no automatic retries. No performance test is run here.
+
+Required final package: independently reviewed sensitivity proof and quadrature proof hashes; original Joyce proof/source/reviews; strict runtime closure; worker output ROOT_PROGRESS/NODES/each raw scalar/PARTIAL/RESULT; all records saved before next operation; root monitor treeRSS/caps/finalpins and exact schema. Source-only preparation is not launch authorization. Current directory is incomplete until those components are frozen.
+
+Parent prospective cap180s external/179.5 root/179worker,384MiB. The same-oracle count-scaled inference is43.21*378/1742<9.38s, but geometry is unmeasured separate overhead. A conservative planning allowance170s (10s scalar plus160s geometry/verification) is an inference, not a measured completion prediction; the180s cap bounds the experiment even if this estimate fails. No automatic continuation or retry.

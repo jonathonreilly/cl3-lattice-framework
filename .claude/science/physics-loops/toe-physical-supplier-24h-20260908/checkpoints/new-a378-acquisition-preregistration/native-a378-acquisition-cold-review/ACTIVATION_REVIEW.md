@@ -1,0 +1,3 @@
+# Activation-only affected review: PASS
+
+Worker1fe63b6774115f859832594d9c3e63856756e52d5f14c572a63349649e7af022 and rootd57ca77fea16e3ee44f92cfc238e423b0b0e2f2ba54ff361193809778414f924 bind exact once outputnative-global-a378-run-prospective, limits180/179.5/179s and384MiB. Worker1904 source pins include stable73036 A-only budget and ea3e independent review. Root executable/schema remain fcc959/50d70, all rootfile hashes match, and exact authorization links worker freeze/output. Reviewed scientific/runtime source remains unchanged; only activation/budget provenance metadata changed. No unchanged tests, source readiness or native calculations rerun in this affected check. Parent remote preregistration and external watchdog remain required before the one attempt.
