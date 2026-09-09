@@ -1,0 +1,13 @@
+# #7882 author correction
+
+K1 and K2 are repaired or narrowed in seven paths on `eaa413deea794f2f2b1f4fbfc55106ef5fd3a91e`. Final source tree `c43ad92a0e5f8883a4e925aa7324290fa65f0639`. This is a source handoff for the original reviewer's affected confirmation, not an author PASS or audit grade.
+
+The two proof links now resolve to their exact archived bytes. The full-center upper bound is explicitly conditional on the archived finite commutant argument; five commuting directions alone establish only a lower bound. All original numerical center/intersection/Wedderburn/rank/shell/contrast results remain. The equal represented profile correctly implies ambient-unitary conjugacy if the exact finite *-algebra classification holds. Specified lattice/normalizer conjugacy and subalgebra H-orbits remain separate questions.
+
+One genuine final invocation ran the unchanged parent and primary: parent 49/0 and primary 23/0, 24.927 seconds total, peak RSS 678400 KiB, under 150 s/2 GiB/BLAS1. The complete parent transcript is retained in the final cache. All 23 original primary numerical rows are unchanged except two labels. All original gate predicates remain. Four actual loader-failure injections abort before derived science; all six input drift/removal pairs fail live and invalidate the cache. Source drift and absent-primary readiness are also checked, with the low-level missing-primary cache limitation disclosed.
+
+Both actual filename-derived consumers recover the same one-helper closure. The helper is self-contained, unchanged and has no local grandchildren or repository input reads. Six declared inputs cover own note, memo, actual parent, both archived proof notes and the separate relevant proof-code identity. The primary and helper source readiness and final cached-row readiness are clean. The separate cap runner is not executed; no other parent campaign is invoked. Only the memo appears as an active parsed citation; archive links are recoverable pinned proof context.
+
+All 29590 existing main leaves retain exact modes/blobs. Three exact original science bodies/modes are archived outside active docs discovery; the old generated manifest is preserved externally and not restored. The complete original source map is reused by hash. Root owns integration and gates; reservations and audit deferral remain unchanged. Full source, finite numerical and physical supplier boundaries are recorded in DISPOSITIONS.json.
+
+The 248-line intermediate correction and full final evidence were cold-read. Only the cache changed after `c24de40570df48d1a09c06efd2b3390b8eab3b63`. No science retry or source change after freeze occurred.

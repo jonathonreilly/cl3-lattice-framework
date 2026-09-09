@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T05:44:13.466506+00:00; main `6f99df6576ea8a3bf3e122f0e556f10d9418b8b3`.
+Updated 2026-09-09T06:03:07.499532+00:00; main `f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79`.
 
-130 reviewed original science scopes landed: 88 direct + 42 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The 91 direct original closures include 88 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 closures, 57 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+132 reviewed original science scopes landed: 89 direct + 43 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production/physical scope held. The 92 direct original closures include 89 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 closures, 56 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
@@ -36,7 +36,7 @@ Updated 2026-09-09T05:44:13.466506+00:00; main `6f99df6576ea8a3bf3e122f0e556f10d
 | #7015 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7016 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7021 | source_consolidation_semantic | pending_on_open_successor | #7315 |
-| #7028 | source_consolidation_semantic | pending_on_open_successor | #7315 |
+| #7028 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79` |
 | #7029 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7032 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7042 | source_consolidation_semantic | pending_on_open_successor | #7315 |
@@ -103,6 +103,7 @@ Updated 2026-09-09T05:44:13.466506+00:00; main `6f99df6576ea8a3bf3e122f0e556f10d
 | #7879 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2838092d748d11791ddb420acf8c1a4d7da30400` |
 | #7880 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `7517b4a95f860fec43251c0281a981e6bb1f34d6` |
 | #7881 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2838092d748d11791ddb420acf8c1a4d7da30400` |
+| #7882 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79` |
 | #7883 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `4276fe9ee228848ee1d3d53d0824acdcd217b2ce` |
 | #7884 | source_consolidation_exact | reviewed_corrected_scope_on_main | `16c2d6860e168ec8e5e8f66296410265e5d7226d` |
 | #7885 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2838092d748d11791ddb420acf8c1a4d7da30400` |

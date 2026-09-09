@@ -1,7 +1,7 @@
 # TOE status and next obligations
 
-Verified source/status snapshot: 2026-09-09T05:44:13.466506+00:00, main
-`6f99df6576ea8a3bf3e122f0e556f10d9418b8b3`. This is a planning map, not
+Verified source/status snapshot: 2026-09-09T06:03:07.499532+00:00, main
+`f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -22,7 +22,7 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 70 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 72 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
@@ -104,3 +104,5 @@ W39 adds four supplied-model record-matter notes and two finite sandwich constru
 W40 adds five corrected finite shear and conditional readout notes. Endpoint rank exceptions, uniform-pattern versus momentum-dependent coupling, full occupied-event conditioning and axis cross-mode loss are explicit. Fixed Hartree and continuum-coordinate readouts retain supplied-model limits; physical gravity and clock identification remain open. No audit grade.
 
 W41 adds three corrected finite fermion/formation and one-particle algebra notes. Gauss and canonical-inertia qualifications, actual spectral collisions and a central corner selector are explicit. Physical clock, gravity and species selection remain open. Two existing readout notes now parse as bounded_theorem; no scientific conclusion or audit status changes.
+
+W42 adds a finite conditional KCPT algebra classification and a separated corner-simplex construction/trace package. The full-center cap is explicit; represented-profile equivalence has correct ambient-unitary scope. Concrete cutting witnesses survive, while old minimum/census/search claims remain unverified. No physical model-selection or Record/clock bridge, full successor acceptance or audit grade.
