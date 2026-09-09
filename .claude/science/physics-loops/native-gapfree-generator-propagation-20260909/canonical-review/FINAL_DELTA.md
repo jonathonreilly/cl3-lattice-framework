@@ -1,0 +1,5 @@
+# Final canonical affected-source confirmation
+
+PASS SOURCE_FREEZE5cecfca1f93549e3ae166c9452efb7fbb56e2f22f702d4c98f2187e0451d216b. The section3 correction explicitly restricts the native seven-star leakage construction to rangeV within the ORIGINAL pole/e0/Ward/Gamma span, e.g.V=FC with certified coefficients. Enlarging the trial frame to bareL requires further action data reaching distance two. Nearby/dilated frame action errors are bounded separately by6h times frame error. This resolves the only finding in initial24a071dc without changing the abstract Poisson theorem.
+
+All final frozen source paths match. Original research proof and historical f7d note/freezes/output remain preserved. Claim status retains conditional-support with certified leakage/state-identification obligations, no retained proposal; trace gate remains upstream theorem support. No native calculation or controls were rerun by reviewer. Root's same-byte isolated44-support/15-discrimination check and serialized graph work are separate verification, not additional physical evidence. No remaining canonical math/scope blocker.
