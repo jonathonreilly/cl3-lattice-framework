@@ -1,0 +1,26 @@
+{
+  "status": "FAILED_RESOURCE_CLOSED_NO_RETRY",
+  "utc": "2026-09-09T01:18:56.087636+00:00",
+  "external_seconds": 1.86,
+  "prior_seconds": 10,
+  "total_charged_seconds": 11.86,
+  "outer_process_external_rss": 51003392,
+  "observed_whole_tree_rss": 406568960,
+  "limit_bytes": 402653184,
+  "failure": "MemoryError('aggregate sampled RSS')",
+  "saved_production_files": [],
+  "scientific_result": null,
+  "no_completed_solution_or_residual_claim": true,
+  "source_checks": {
+    "native-l6-four-solve-implementation": {
+      "freeze": "f9bdb802ea9ab651979432e5edc52fb966b811febb248b461f739821f38db41b",
+      "all_pins_unchanged": 2354
+    },
+    "native-l6-four-solve-independent-replay": {
+      "freeze": "a8b7635d212cd99fef66cb16f6fa5356631882c9c99cc37d5fc142e29d2d4855",
+      "all_pins_unchanged": 2320
+    }
+  },
+  "preregistration_remote": "49c363a7b2309a0ccac3641a79d7a5ea0bda14cb",
+  "interpretation": "Runtime process-tree memory exceeded the unchanged fixed limit before any saved checkpoint. No completed CG iteration count is available. This failed attempt is closed; original input/source/protocol and all available diagnostics are preserved."
+}

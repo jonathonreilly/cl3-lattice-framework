@@ -1,4 +1,4 @@
-# Physics campaign — current SSH status
+# Thirty-second campaign checkpoint
 
 Updated 2026-09-09T01:22:25.936493+00:00. Campaign continues to2026-09-10 10:27:17UTC or usable quota exhaustion.24 open science PRs8036-8059, none merged/formallyaudited. Previous preregistration49c363a7b2309a0ccac3641a79d7a5ea0bda14cb was verified against all212 actual Git blobs before launch.
 
