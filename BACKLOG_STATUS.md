@@ -1,66 +1,64 @@
 # Backlog review and landing — current handoff
 
-Updated after wave57. Main is `fdfa10937a5bd0fad3e9ad73a65174aec10c534e`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
+Updated after wave 58. Main is `6eb 96ee 9c 9f 05d 960dbbefab 0e 99f 4fe 90a 25f 02`. The original 254-PR cutoff remains fixed; later arrivals are excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 122 |
+| Closed directly after reviewed landing | 124 |
 | Closed through draft cleanup or source-preserving consolidation | 110 |
-| Still open, including three owner reservations | 22 |
+| Still open, including three owner reservations | 20 |
 | Original membership | 254 |
 
-168 reviewed original science scopes landed:119 direct and 49 consolidated. Eight additional original scopes have corrected Maxwell portions on main with broader production or physical scope held. The 122 direct original closures include119 science, one partial Maxwell, one meta and one process landing. Of the earlier 110 other closures,50 scopes remain pending at four open successors and seven have corrected portions on main with explicit holds.
+173 reviewed original science scopes landed: 120 direct closed science, 52 consolidated science, and the own Block 38 scope of still-open #7827. Eight additional original scopes have corrected Maxwell portions on main with broader scope held. The 124 direct original closures include 120 science, one partial Maxwell, one meta, one process, and one historical archive recovery. The earlier 110 other closures include 47 scopes still pending at four successors.
 
-Zero original drafts remain. The 110 other closures comprise 49 corrected scopes landed,50 pending at four successors, seven partial Maxwell scopes, two starting-main supersessions, one empty PR and one unexecuted plan. Reservations apply transitively.
+Zero original drafts remain. The 110 other closures comprise 52 corrected scopes landed, 47 pending at four successors, seven partial Maxwell scopes, two starting-main supersessions, one empty PR and one unexecuted plan. Reservations apply transitively to actual used science.
 
-Including pre-cutoff #8003–#8009, the session has 129 direct closures,57 science/source batches and 210 new source documents;55 batches passed one combined gate. Earlier actual failures and pre-gate rebuilds remain preserved. Main's ledger has 4,668 rows:4,293 unaudited science and 375 meta. Seventeen new notes await mechanical refresh. No audit verdict has been applied by this campaign.
+Including pre-cutoff #8003–#8009, the session has 131 direct closures, 58 science/source batches and 215 new source documents; 56 batches passed one combined gate. Earlier failures and pre-gate rebuilds remain preserved. Main's ledger has 4, 668 rows: 4, 293 unaudited science and 375 meta. Twenty-two new notes await mechanical refresh. No audit verdict has been applied by this campaign.
 
-Wave 57 lands corrected Gaussian #7326 and finite Regge #7335 science. Original reviewers confirmed every correction; root verified exact original source/history, corrected arguments and preservation of current main. The combined gate passed once in 246.330 seconds. Both PRs are closed with branches preserved. See [evidence](backlog_evidence/wave57/INDEX.json). Gaussian tests now include the missing imaginary Hermitian direction; Regge narrows the all-fiber range and distinguishes shared-definition checks from the independent Schur control.
+Wave 58 lands four corrected Eta affine/repeat notes and the finite Schur-pole result #7338. Archive #7875 lands exact historical recovery with unsupported raw conclusions explicitly marked; it adds no accepted science. Original reviewers confirmed all corrections. Root checked source recovery, complete corrections, actual input identities, current-main preservation and cross-unit interactions. The combined gate passed once in 267.121 seconds; #7338/#7875 closed with branches preserved. See [evidence](backlog_evidence/wave 58/INDEX.json).
 
-The separate Eta affine-repeat unit and #7338 Schur-pole result have active author repairs. Their original reviewers retain confirmation ownership. The remaining 14 older Eta transfers have three explicit source-routed units (lineage/successor, spin2/causal, safe-front/caps); related mentions did not count as acceptance. Archive packet #7875 is in focused independent review; #7871 remains queued. See NEXT_REVIEW_UNITS.json.
+#7827 stays open for fourteen older transferred originals. Its own Block 38 science and #7824/#7825/#7826 now land; the explicit accepted_open_scopes entry prevents confusing its accepted own result with the pending transfers. Eta lineage #7853–#7856 review and narrow repairs are active; spin 2/causal and safe-front/caps follow. Full-Fock #7871 review found useful local algebra with an unsupported physical-lift completion claim; correction is active. See NEXT_REVIEW_UNITS.json.
 
-#7827 remains open:17 transferred original scopes and its own remaining science need disposition. Verified reserved-dependent units retain their holds, including #6844/#7332 and #7333/#7334. Their open state is not an adverse mathematical verdict. Preserve the [preferred-parent routes](backlog_evidence/reserved_routing_7333_7334/PREFERRED_PARENT_IMPORT_RESERVATIONS.json) and all original recovery handles.
-
-Astra low remains the focused reviewer default; unresolved consequential mathematical questions escalate to Astra xhigh. Reuse complete original reviews and confirm affected corrections. Preserve source recovery outside note discovery. Standing reservations and Maxwell production/physical holds remain explicit in [reconciliation](BACKLOG_CLOSURE_RECONCILIATION.json). The [model pilot](REVIEWER_MODEL_PILOT.md) covers one workload.
+Eighteen open PRs retain verified owner-reservation or transitive holds. The other two are #7827 and #7871. Held scope is not an adverse mathematical verdict. Preserve actual used-premise routes, all recovery handles and the eight Maxwell partial-scope holds. Astra low remains the focused reviewer default; escalate unresolved consequential mathematics to Astra xhigh. Formal audit remains deferred.
 
 ## Landed source history
 
 | Landed unit | Main commit | Evidence |
 | --- | --- | --- |
-| Record instrument, transport and shared battery; revised review process | `2d0f551dcd8bd444daee85b97811cda53da0661e` | `backlog_evidence/wave1` |
-| Four admissibility results | `a8f84aaad75fdcb790ba6ba094e4275e237d9a5a` | `backlog_evidence/wave2` |
-| Eleven light-germ/local-dynamics results | `16c2d6860e168ec8e5e8f66296410265e5d7226d` | `backlog_evidence/wave3` |
-| Monotone formation/corner result | `e6a50983b4d4b40ff4faf63a6d5edb0545a769ac` | `backlog_evidence/wave4` |
-| Four autonomous Record/apparatus results | `12d9c77c0605276b82eb9fcb8cf05cdaf3e40f56` | `backlog_evidence/wave5` |
-| Six charged-source/current/work/backreaction results | `e043c95b37bd46d80e97c39f36c8b3cb7643c62f` | `backlog_evidence/wave6` |
-| Two finite ice and three finite Record collision/control results | `94e90cbf928cb35fa1b50e894cd897c94b73077f` | `backlog_evidence/wave7` |
-| Finite Record clock and chain-support obstruction | `b9653d0ead5bbd2058beaa4d7ceb3785f1cfac92` | `backlog_evidence/wave8` |
-| Cartesian field source and historical-receipt diagnostic | `b0f7089ea5dd6e26e0d58a8a36a77d36c50a8e7a` | `backlog_evidence/wave9` |
-| Five native transfer corrections and finite projector evidence | `60b98160bdab0a4aed2069da47bb8e1ed674c29d` | `backlog_evidence/wave10` |
-| Finite Wilson cube-slab character mixing | `7887b4481feae2800c04c7c42ddac9554f2c2b9f` | `backlog_evidence/wave11` |
-| Conditional real-linear U1 dynamics and extended Gauss support | `66b1b4f8a964f4011a3f4e7876369b7daf8e1834` | `backlog_evidence/wave12` |
-| Conditional local Gibbs/cube and homogeneous parity Record results; optional coverage helper | `47da12268436ee1843e822386477aa2c829d95a9` | `backlog_evidence/wave13` |
-| Conditional calibration and even Record code; historical light-lane meta synthesis | `2dfd8e4c664afa48e6b22e1ee6806d24c3b7fa4f` | `backlog_evidence/wave14` |
-| Conditional finite U1 matter, Gauss support and code/Fock link models | `848bd31acd49e5ced43f6fa576aa9fc254be36d3` | `backlog_evidence/wave15` |
-| Finite pure-link corrections and conditional indexed-menu Born gradings | `eed3c68fffdd8f912a6a4b4bc2e0098184fb3b2b` | `backlog_evidence/wave16` |
-| Conditional Record selector, channel and resource bounds | `4369a77fc1dcd37fbc1fe2102afba21b9e4bd406` | `backlog_evidence/wave17` |
-| Finite Record instruments, archive routing and joint-law bounds | `06816d119cd73ad40d4ef332a6e6e7b2e61af0db` | `backlog_evidence/wave18` |
-| Conditional finite Noether/Gram constructions and link pair-update bounds | `d81f3c22117522411c20fb6c38eef5874c4765ae` | `backlog_evidence/wave19` |
-| Conditional finite Dirac/taste and staggered-mass corrections | `0221e4865fd37cad773137467dc42af92d655ba9` | `backlog_evidence/wave20` |
-| Conditional shifting-record lifts, loop sectors and finite support models | `efa1126d20be562976ef8e06a6be16a4e22575e9` | `backlog_evidence/wave21` |
-| Conditional discrete-symmetry domains and Hartree/finite-field results | `162584a3e9e009877147c42c3717c214453bc006` | `backlog_evidence/wave22` |
-| Conditional finite spatial and record-coordinate wall corrections | `29cd159477d0a603eb59c931af6ad70a8c3c2473` | `backlog_evidence/wave23` |
-| Conditional finite sea statistics and corner criteria | `4276fe9ee228848ee1d3d53d0824acdcd217b2ce` | `backlog_evidence/wave24` |
-| Conditional finite flux selection and relaxation models | `ebe2142cbace4d05def434c0b9cd1969e34443b9` | `backlog_evidence/wave25` |
-| Conditional finite vacuum and energy response | `2838092d748d11791ddb420acf8c1a4d7da30400` | `backlog_evidence/wave26` |
-| Conditional finite cubic carriers and role marking | `7517b4a95f860fec43251c0281a981e6bb1f34d6` | `backlog_evidence/wave27` |
-| Conditional support/readout and twelve DK/OS scopes; review overlap process | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` | `backlog_evidence/wave28` |
-| Conditional finite role laws and static matter readout | `e4b4fd46dbdc075a218387a0c23a1a2739f4f01c` | `backlog_evidence/wave29` |
-| Conditional nonabelian, multiplicity and quadratic-window science | `1ef2db7a87038b5d8e26a84aa2a3157e347190c2` | `backlog_evidence/wave30` |
-| Conditional finite SU3 triality and singlet algebra | `1aef37f622bf0078f2898e4131c45414b018e946` | `backlog_evidence/wave31` |
-| Conditional finite tick schedules and sea preservation | `917c9a26c8c8b963ea0d773b32b057bcc33a3e6d` | `backlog_evidence/wave32` |
-| Conditional indexed menus and homogeneous Born proof | `27dd1b2199c4a5973eb1a97af25eb7c5b9b8efc0` | `backlog_evidence/wave33` |
-| Conditional finite gravity coupling and density-ruler science | `fb834956cf781eeb9d7760337e71661772810e29` | `backlog_evidence/wave34` |
+| Record instrument, transport and shared battery; revised review process | `2d 0f 551dcd 8bd 444daee 85b 97811cda 53da 0661e` | `backlog_evidence/wave 1` |
+| Four admissibility results | `a 8f 84aaad 75fdcb 790ba 6ba 094e 4275e 237d 9a 5a` | `backlog_evidence/wave 2` |
+| Eleven light-germ/local-dynamics results | `16c 2d 6860e 168ec 8e 5e 8f 66296410265e 5d 7226d` | `backlog_evidence/wave 3` |
+| Monotone formation/corner result | `e 6a 50983b 4d 4b 40ff 4faf 63a 6d 5edb 0545a 769ac` | `backlog_evidence/wave 4` |
+| Four autonomous Record/apparatus results | `12d 9c 77c 0605276b 82eb 9fcb 8cf 05cdaf 3e 40f 56` | `backlog_evidence/wave 5` |
+| Six charged-source/current/work/backreaction results | `e 043c 95b 37bd 46d 80e 97c 39f 36c 8b 3cb 7643c 62f` | `backlog_evidence/wave 6` |
+| Two finite ice and three finite Record collision/control results | `94e 90cbf 928cb 35fa 1b 50e 894cd 897c 94b 73077f` | `backlog_evidence/wave 7` |
+| Finite Record clock and chain-support obstruction | `b 9653d 0ead 5bbd 2058beaa 4d 7ceb 3785f 1cfac 92` | `backlog_evidence/wave 8` |
+| Cartesian field source and historical-receipt diagnostic | `b 0f 7089ea 5dd 6e 26e 0d 58a 8a 36a 77d 36c 50a 8e 7a` | `backlog_evidence/wave 9` |
+| Five native transfer corrections and finite projector evidence | `60b 98160bdab 0a 4aed 2069da 47bb 8e 1ed 674c 29d` | `backlog_evidence/wave 10` |
+| Finite Wilson cube-slab character mixing | `7887b 4481feae 2800c 04c 7c 42ddac 9554f 2c 2b 9f` | `backlog_evidence/wave 11` |
+| Conditional real-linear U1 dynamics and extended Gauss support | `66b 1b 4f 8a 964f 4011a 3f 4e 7876369b 7daf 8e 1834` | `backlog_evidence/wave 12` |
+| Conditional local Gibbs/cube and homogeneous parity Record results; optional coverage helper | `47da 12268436ee 1843e 822386477aa 2c 829d 95a 9` | `backlog_evidence/wave 13` |
+| Conditional calibration and even Record code; historical light-lane meta synthesis | `2dfd 8e 4c 664afa 48e 6b 22e 1ee 6806d 24c 3b 7fa 4f` | `backlog_evidence/wave 14` |
+| Conditional finite U1 matter, Gauss support and code/Fock link models | `848bd 31acd 49e 5ced 43f 6fa 576aa 9fc 254be 36d 3` | `backlog_evidence/wave 15` |
+| Finite pure-link corrections and conditional indexed-menu Born gradings | `eed 3c 68fffdd 8f 912a 6a 4b 4bc 2e 0098184fb 3b 2b` | `backlog_evidence/wave 16` |
+| Conditional Record selector, channel and resource bounds | `4369a 77fc 1dcd 37fbc 1fe 2102afba 21b 9e 4bd 406` | `backlog_evidence/wave 17` |
+| Finite Record instruments, archive routing and joint-law bounds | `06816d 119cd 73ad 40d 4ef 332a 6e 6e 7b 2e 61af 0db` | `backlog_evidence/wave 18` |
+| Conditional finite Noether/Gram constructions and link pair-update bounds | `d 81f 3c 22117522411c 20fb 6c 38eef 5874c 4765ae` | `backlog_evidence/wave 19` |
+| Conditional finite Dirac/taste and staggered-mass corrections | `0221e 4865fd 37cad 773137467dc 42af 92d 655ba 9` | `backlog_evidence/wave 20` |
+| Conditional shifting-record lifts, loop sectors and finite support models | `efa 1126d 20be 562976ef 8e 06a 6be 16a 4e 22575e 9` | `backlog_evidence/wave 21` |
+| Conditional discrete-symmetry domains and Hartree/finite-field results | `162584a 3e 9e 009877147c 42c 3717c 214453bc 006` | `backlog_evidence/wave 22` |
+| Conditional finite spatial and record-coordinate wall corrections | `29cd 159477d 0a 603eb 59c 931af 6ad 70a 8c 3c 2473` | `backlog_evidence/wave 23` |
+| Conditional finite sea statistics and corner criteria | `4276fe 9ee 228848ee 1d 3d 53d 0824acdcd 217b 2ce` | `backlog_evidence/wave 24` |
+| Conditional finite flux selection and relaxation models | `ebe 2142cbace 4d 05def 434c 0b 9cd 1969e 34443b 9` | `backlog_evidence/wave 25` |
+| Conditional finite vacuum and energy response | `2838092d 748d 11791ddb 420acf 8c 1a 4d 7da 30400` | `backlog_evidence/wave 26` |
+| Conditional finite cubic carriers and role marking | `7517b 4a 95f 860fec 43251c 0281a 981e 6bb 1f 34d 6` | `backlog_evidence/wave 27` |
+| Conditional support/readout and twelve DK/OS scopes; review overlap process | `8257bddfc 97ab 763d 208b 43e 9bdc 8677fe 89b 1e 8` | `backlog_evidence/wave 28` |
+| Conditional finite role laws and static matter readout | `e 4b 4fd 46dbdc 075a 218387a 0c 23a 1a 2739f 4f 01c` | `backlog_evidence/wave 29` |
+| Conditional nonabelian, multiplicity and quadratic-window science | `1ef 2db 7a 87038b 5d 8e 26a 84aa 2a 3157e 347190c 2` | `backlog_evidence/wave 30` |
+| Conditional finite SU3 triality and singlet algebra | `1aef 37f 622bf 0078f 2898e 4131c 45414b 018e 946` | `backlog_evidence/wave 31` |
+| Conditional finite tick schedules and sea preservation | `917c 9a 26c 8c 8b 963ea 0d 773b 32b 057bcc 33a 3e 6d` | `backlog_evidence/wave 32` |
+| Conditional indexed menus and homogeneous Born proof | `27dd 1b 2199c 4a 5973eb 1a 97af 25eb 7c 5b 9b 8efc 0` | `backlog_evidence/wave 33` |
+| Conditional finite gravity coupling and density-ruler science | `fb 834956cf 781eeb 9d 7760337e 71661772810e 29` | `backlog_evidence/wave 34` |
 
 Wave 14 lands the complete corrected #7846/#7847 scientific scopes and the separate
 #7976 meta synthesis. Calibration-domain and joint-trial premises are explicit;
@@ -82,7 +80,7 @@ checks reject nine semantic mutants and match all four complete Fock/code matric
 All 11 final source/manifest hashes were verified on remote main before closure.
 The actual graph needed six citation links added before final review; YAML alone
 did not publish those dependencies. One combined validation then passed. All
-1,527 generated outputs were preserved and stripped, leaving applied status unchanged.
+1, 527 generated outputs were preserved and stripped, leaving applied status unchanged.
 
 Wave 16 lands #7911/#7959/#7990 after separate original reviewers confirm all
 corrected source and the combined tree. Actual final runs pass 29/0, 28/0 (no skips)
@@ -94,12 +92,12 @@ only the affected Born cache. All 18 source/manifest hashes were verified on rem
 main before the three closures; one combined validation passed without an audit.
 
 Wave 17 lands #6371 together with the corrected scientific scopes of #6339/#6368
-and the required Block84 supplier. All nine original findings are closed; the
+and the required Block 84 supplier. All nine original findings are closed; the
 race is explicitly restricted, probability/content/resource checks reject the
 original scientific mutants, and historical status no longer supplies authority.
 Four actual final runs pass 26/0, 29/0, 8/0 and 8/0; all 70 original check IDs
 remain. The independent reviewer confirmed the exact 16-path composition and
-all 120,020 original/current/final map rows. Four bounded nodes and 13 edges were
+all 120, 020 original/current/final map rows. Four bounded nodes and 13 edges were
 verified, then one combined gate passed. All source hashes were checked on remote
 main before #6371 closed. The two constituent rows now record landed science.
 
@@ -116,7 +114,7 @@ closed constituents now have reviewed corrected science on main. No audit ran.
 Wave 19 lands #7848/#7849/#7942 after the original reviewer confirms the complete
 58-path composition. All 49 original checks remain, with genuine 15/0, 13/0 and
 21/0 caches. Independent checks cover current signs, instruments, Gram algebra,
-all 9,600 finite states and spectra, actual compiler/Gauss failures and mutable
+all 9, 600 finite states and spectra, actual compiler/Gauss failures and mutable
 inputs. All 46 Noether historical bodies remain exact. One combined validation
 passed and all 58 hashes were verified on remote main before the three closures.
 The sampler's positive-lag implementation and general mixing remain unvalidated;
@@ -145,7 +143,7 @@ modulo-sum proxy, finite code sectors and stated n<=6 domains remain distinct;
 physical formation, general limits and support-selected probabilities remain open.
 No audit ran; the procedural route quota remains explicitly unresolved.
 
-Assignments refreshed 2026-09-08T05:45:23.799387+00:00; queue counts below now include landed wave23. [Handoff evidence](backlog_evidence/wave22-assignments/INDEX.json).
+Assignments refreshed 2026-09-08T05: 45: 23.799387+00: 00; queue counts below now include landed wave 23. [Handoff evidence](backlog_evidence/wave 22-assignments/INDEX.json).
 
 Wave 22 lands #7894/#7897 after the original independent reviewer confirms the
 exact corrected source and manifest. Genuine final caches 37/0 and 28/0 preserve
@@ -156,7 +154,7 @@ positive results remain; no physical CPT, spontaneous order, sign registration,
 critical-point estimate or joint readout law is supplied. One combined validation
 passed, all 8 hashes were verified on remote main before closure, and no audit ran.
 
-Assignment refresh 2026-09-08T06:52:41.923491+00:00: [sealed author, composition and original review evidence](backlog_evidence/wave23-handoff/INDEX.json). The pre-landing assignment record is preserved; counts above now include wave23.
+Assignment refresh 2026-09-08T06: 52: 41.923491+00: 00: [sealed author, composition and original review evidence](backlog_evidence/wave 23-handoff/INDEX.json). The pre-landing assignment record is preserved; counts above now include wave 23.
 
 Wave 23 lands #7896/#7909 after original-reviewer confirmation of the exact
 seven-source and manifest composition. Genuine final caches 28/0 and 30/0 retain
@@ -204,8 +202,8 @@ on remote main before three closures. No formal audit or grade was applied.
 
 Wave 27 lands #7869/#7880 after the original reviewer confirms all twelve findings
 and twelve complete claim groups on the actual newest-main composition. Genuine
-final runs pass 22/0 and 24/0; all 37 original predicates and 2,713 captured arrays,
-including 2,560 unwanted configurations and both extracted vectors, remain exact.
+final runs pass 22/0 and 24/0; all 37 original predicates and 2, 713 captured arrays,
+including 2, 560 unwanted configurations and both extracted vectors, remain exact.
 Mixed carriers, complete intended-orbit and period checks, product junk, the
 positive one-dimensional exception and actual compressed-projector kernel relation are explicit.
 Five actual semantic mutation families and nine independent algebra/domain controls
@@ -221,11 +219,11 @@ no formal audit or grade was applied.
 | Landed | #7847 including #7846 | Complete corrected paired science and exact archived parent-context boundary accepted; broader parent claims remain on #7827. |
 | Landed | #7972 process helper | 15 tests pass; reviewed optional coverage helper and selective prior-art skill guidance landed. Counted as process, not science. |
 | Landed | #7976 landing-core synthesis | Complete corrected meta synthesis accepted separately; quoted members retain their own dispositions. |
-| Landed | #7892/#7893/#7903 matter and U1 links | Complete corrected conditional science accepted; all original source scopes preserved. [Final evidence](backlog_evidence/wave15/INDEX.json). |
+| Landed | #7892/#7893/#7903 matter and U1 links | Complete corrected conditional science accepted; all original source scopes preserved. [Final evidence](backlog_evidence/wave 15/INDEX.json). |
 | Landed | #7911/#7959 pure-link ring and cubic projector | Complete corrected finite-model scope accepted; historical phase/parent claims remain explicitly unaccepted. |
 | Landed | #7990 Born-price wordings | Complete indexed-menu/probability correction and self-contained conditional proof accepted; physical law and joint-law selection remain open. |
 | Landed | #6358 including #6280/#6345/#6352/#6354 | Complete corrected finite source and four required suppliers accepted; physical law, global scheduling and wider compiler/parent claims remain open. |
-| Landed | #6371 including #6339/#6368 and Block84 supplier | Complete corrected conditional scope accepted on main; full-lattice race, physical probability/time/energy and broader parent claims remain unestablished. |
+| Landed | #6371 including #6339/#6368 and Block 84 supplier | Complete corrected conditional scope accepted on main; full-lattice race, physical probability/time/energy and broader parent claims remain unestablished. |
 | Held | #6515 including #6485 dressing/sector signature | Actual proof chain reaches reserved #6379 through Blocks 110/109/108/107/106/105. Eight original additions and all obligations preserved; keep #6515 open. No execution or full science verdict. |
 | Landed | #7942 pair-update parity/winding | Complete corrected finite scope accepted. Positive-lag validation, general mixing and physical identification remain open; procedural packet pending. |
 | Landed | #7848/#7849 finite Noether and transfer results | Complete conditional algebra and Gram/instrument boundaries accepted with all 46 histories preserved. No physical dynamics or Record law supplied. |
@@ -242,7 +240,7 @@ no formal audit or grade was applied.
 | Landed | #7939/#7977/#7982 role laws and matter readout | Complete corrected conditional source and exact original history landed in W29; physical law and formation remain open. |
 | Landed in W30 | #5966 including #5950/#5952 | Corrected supplied finite science and exact original history on main. |
 | Landed in W30 | #7908/#7914 nonabelian plaquette | All twelve findings resolved in bounded source; 52 original IDs and exact history preserved. No physical Record or confinement bridge granted. |
-| Completed | Same frozen #7908/#7914 original source | Astra low4.98min,$2.29 API-equivalent; Sol xhigh26.53min,$3.65. Focused Astra-low policy landed and installed. Both missed material findings; one trial is not general sufficiency. |
+| Completed | Same frozen #7908/#7914 original source | Astra low 4.98min,$2.29 API-equivalent; Sol xhigh 26.53min,$3.65. Focused Astra-low policy landed and installed. Both missed material findings; one trial is not general sufficiency. |
 | Author backlog_batch_contract; original reviewer backlog_draft_triage | #7933 SU3 | Correcting seven material finding groups from the sealed original review. |
 | Reconciliation complete | 54 direct landings and 110 other closures | 164 closed originals; 64 pending closed scopes at five open successors. |
 | Deferred by owner cutoff | New submissions including #8013/#8023/#8024/#8025 | Partial review/preparation is preserved without new verdicts. No intake, draft triage or landing in this cleanup. |
@@ -252,42 +250,42 @@ no formal audit or grade was applied.
 | Open | #7966 field remainder | Preserve failed production and exact source/sector/estimator distinctions. Review actual remaining closure before further computation. |
 
 The #5966/#5950/#5952 original review is complete: 26 original source paths,
-91,482 endpoint-map rows and thirteen material findings. The correction preserves
+91, 482 endpoint-map rows and thirteen material findings. The correction preserves
 exact original history and isolates the actual four-definition fixture from
 historical parent campaigns. Final corrected executions and confirmation remain.
-[Preparation evidence](backlog_evidence/wave15/5966-preparation/REPORT.md).
+[Preparation evidence](backlog_evidence/wave 15/5966-preparation/REPORT.md).
 
 The pre-landing #6358 composed-tree binding is preserved in
-[the wave18 review handoff](backlog_evidence/wave18-handoff/INDEX.json).
-Final #6358 review, landing, the next Noether composition and current assignments are recorded in the wave18 evidence below.
+[the wave 18 review handoff](backlog_evidence/wave 18-handoff/INDEX.json).
+Final #6358 review, landing, the next Noether composition and current assignments are recorded in the wave 18 evidence below.
 
 The #6515/#6485 dependency hold is supported by seven proof edges and eleven
 exact source anchors independently checked by the coordinator. Its current axiom
 memo and main registry match main exactly. Historical authority and missing input
 issues are separate; no removed-Record-premise hold is asserted here.
-[Verified hold and original joint review](backlog_evidence/wave17-handoff/INDEX.json).
+[Verified hold and original joint review](backlog_evidence/wave 17-handoff/INDEX.json).
 
 Reservations **#6379, #6858 and #6859** apply to inherited content too. Preserve
 original branches, dirty author worktrees and historical receipts. Shallow-history
 gaps remain unknown rather than empty deltas.
 
 The pre-landing combined #7848/#7849/#7942 target and source-bound evidence are in
-[the wave19 handoff](backlog_evidence/wave19-handoff/INDEX.json). All 57 selected source
+[the wave 19 handoff](backlog_evidence/wave 19-handoff/INDEX.json). All 57 selected source
 paths retain their frozen author bytes; the manifest adds only three bounded nodes
-and three current-memo edges. Final independent PASS, validation, landing and updated counts are recorded in the wave19 evidence.
+and three current-memo edges. Final independent PASS, validation, landing and updated counts are recorded in the wave 19 evidence.
 
 The pre-landing matter composition and original shifting-record review are bound in
-[the wave20 handoff](backlog_evidence/wave20-handoff/INDEX.json). Its two new bounded
-nodes have four contextual memo/gate links; all 4,837 existing nodes are unchanged.
-Final matter review and landing are recorded in wave20 evidence; the counts above include that landing.
+[the wave 20 handoff](backlog_evidence/wave 20-handoff/INDEX.json). Its two new bounded
+nodes have four contextual memo/gate links; all 4, 837 existing nodes are unchanged.
+Final matter review and landing are recorded in wave 20 evidence; the counts above include that landing.
 
 The exact #7889/#7891 composition and sealed author corrections are bound in
-[the wave21 handoff](backlog_evidence/wave21-handoff/INDEX.json). The seven authored
+[the wave 21 handoff](backlog_evidence/wave 21-handoff/INDEX.json). The seven authored
 paths are unchanged, the manifest adds only two bounded nodes and two current-memo
 boundary links, and all existing main source and graph nodes are preserved.
-Final same-session review and landing are recorded in wave21 evidence; counts include that landing.
+Final same-session review and landing are recorded in wave 21 evidence; counts include that landing.
 
-The composed symmetry/Hartree source and current assignments are bound in [the wave22 handoff](backlog_evidence/wave22-handoff/INDEX.json). Final independent confirmation, validation and landing are bound in wave22 evidence; current counts include that landing.
+The composed symmetry/Hartree source and current assignments are bound in [the wave 22 handoff](backlog_evidence/wave 22-handoff/INDEX.json). Final independent confirmation, validation and landing are bound in wave 22 evidence; current counts include that landing.
 
 ## Avoid recurring work
 
@@ -334,75 +332,72 @@ progress. Incoming submissions are outside this cleanup; they do not expand its 
 assignments; `BACKLOG_CONSOLIDATIONS.json` records complete transferred obligations.
 `MAIN_STATUS_SNAPSHOT.json` records the current unaudited ledger. New generated
 rows and all other generated audit/status output were preserved externally and
-stripped. `backlog_evidence/wave23/INDEX.json` binds final reviews, validation and
+stripped. `backlog_evidence/wave 23/INDEX.json` binds final reviews, validation and
 closures. Source counts and unaudited planning records are not TOE completion.
 
-Current assignments and frozen pending sources are bound in [the wave26 handoff](backlog_evidence/wave26-handoff/INDEX.json). This assignment update changes no landing count, closure disposition or audit grade.
+Current assignments and frozen pending sources are bound in [the wave 26 handoff](backlog_evidence/wave 26-handoff/INDEX.json). This assignment update changes no landing count, closure disposition or audit grade.
 
-The wave26 handoff is a historical preparation snapshot; final independent confirmation, landing and current counts are bound in [wave26 evidence](backlog_evidence/wave26/INDEX.json).
+The wave 26 handoff is a historical preparation snapshot; final independent confirmation, landing and current counts are bound in [wave 26 evidence](backlog_evidence/wave 26/INDEX.json).
 
-The [wave27 handoff](backlog_evidence/wave27-handoff/INDEX.json) preserves the earlier preparation snapshot. Final landing and current assignments supersede that snapshot below.
+The [wave 27 handoff](backlog_evidence/wave 27-handoff/INDEX.json) preserves the earlier preparation snapshot. Final landing and current assignments supersede that snapshot below.
 
-Final carrier review, validation, landing and current counts are bound in [wave27 evidence](backlog_evidence/wave27/INDEX.json). Earlier handoffs remain historical preparation snapshots.
+Final carrier review, validation, landing and current counts are bound in [wave 27 evidence](backlog_evidence/wave 27/INDEX.json). Earlier handoffs remain historical preparation snapshots.
 
-Next repair findings are shared in the [support/readout original review](backlog_evidence/wave27/next-original-reviews/backlog-support-readout-7918-7928-7934-review/REPORT.md) and [cumulative #6377 original review](backlog_evidence/wave27/next-original-reviews/backlog-dk-os-6377-review/REPORT.md), with its [separate read-count addendum](backlog_evidence/wave27/next-original-reviews/backlog-dk-os-6377-read-metadata-addendum/ADDENDUM.md). These are changes-required reviews, not landing approvals.
+Next repair findings are shared in the [support/readout original review](backlog_evidence/wave 27/next-original-reviews/backlog-support-readout-7918-7928-7934-review/REPORT.md) and [cumulative #6377 original review](backlog_evidence/wave 27/next-original-reviews/backlog-dk-os-6377-review/REPORT.md), with its [separate read-count addendum](backlog_evidence/wave 27/next-original-reviews/backlog-dk-os-6377-read-metadata-addendum/ADDENDUM.md). These are changes-required reviews, not landing approvals.
 
-Focused Astra-low process maintenance is landed on main at `92e6a67702049166df69faad176b6b46d59d2090`; both
+Focused Astra-low process maintenance is landed on main at `92e 6a 67702049166df 69faad 176b 6b 46d 59d 2090`; both
 installed review skills match that revision. Seventy contract tests passed. The
 full mechanical pipeline required one manifest-acknowledgement repair and retry,
 then strict lint and changed-evidence checks passed. This closes no science PR
 and changes no backlog count or audit verdict. See [process evidence](backlog_evidence/astra-low-policy-20260908/INDEX.json).
 
-| Conditional indexed formation and chirality diagnostics | `7f21e7f06e2d1b5e55f230a030b0cce537dd3d89` | `backlog_evidence/wave35` |
+| Conditional indexed formation and chirality diagnostics | `7f 21e 7f 06e 2d 1b 5e 55f 230a 030b 0cce 537dd 3d 89` | `backlog_evidence/wave 35` |
 
 Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7938, covering formation rate, vacuum and readout. #7940/#7910 forms a separate Regge unit. No new acceptance.
 
-| Conditional finite vortex and second-mass science | `fbc1dfb0a4cc9699d22576d5d67d1ca0259870f8` | `backlog_evidence/wave36` |
+| Conditional finite vortex and second-mass science | `fbc 1dfb 0a 4cc 9699d 22576d 5d 67d 1ca 0259870f 8` | `backlog_evidence/wave 36` |
 
-| Corrected finite Maxwell portions and preserved production history | `26e73b727db1732dd89f74461114e4873c4ddef9` | `backlog_evidence/wave37` |
+| Corrected finite Maxwell portions and preserved production history | `26e 73b 727db 1732dd 89f 74461114e 4873c 4ddef 9` | `backlog_evidence/wave 37` |
 
-| Conditional finite gravity response and Regge source | `e4d8bd11df12559138543a3129ea4e7b38f23ebf` | `backlog_evidence/wave38` |
+| Conditional finite gravity response and Regge source | `e 4d 8bd 11df 12559138543a 3129ea 4e 7b 38f 23ebf` | `backlog_evidence/wave 38` |
 
-| Supplied-model record matter and corrected finite sandwich science | `06b09a9a5642a4753936044531db5ccad0a48953` | `backlog_evidence/wave39` |
+| Supplied-model record matter and corrected finite sandwich science | `06b 09a 9a 5642a 4753936044531db 5ccad 0a 48953` | `backlog_evidence/wave 39` |
 
-| Corrected finite shear, occupied-condition response and conditional readout | `eaa413deea794f2f2b1f4fbfc55106ef5fd3a91e` | `backlog_evidence/wave40` |
+| Corrected finite shear, occupied-condition response and conditional readout | `eaa 413deea 794f 2f 2b 1f 4fbfc 55106ef 5fd 3a 91e` | `backlog_evidence/wave 40` |
 
-| Corrected finite fermion and generation science; readout claim typing | `6f99df6576ea8a3bf3e122f0e556f10d9418b8b3` | `backlog_evidence/wave41` |
+| Corrected finite fermion and generation science; readout claim typing | `6f 99df 6576ea 8a 3bf 3e 122f 0e 556f 10d 9418b 8b 3` | `backlog_evidence/wave 41` |
 
-| Corrected finite KCPT algebra and separable cutting constructions | `f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79` | `backlog_evidence/wave42` |
+| Corrected finite KCPT algebra and separable cutting constructions | `f 4be 2a 0ab 39423ee 8bd 3fa 2d 75b 8806b 608fbd 79` | `backlog_evidence/wave 42` |
 
-| Corrected conditional Record frequencies and finite local laws | `b6684a480dadd7c9010efbe265760f3d4682e21d` | `backlog_evidence/wave43` |
+| Corrected conditional Record frequencies and finite local laws | `b 6684a 480dadd 7c 9010efbe 265760f 3d 4682e 21d` | `backlog_evidence/wave 43` |
 
-| Corrected transaction grants and history discovery | `c664f7795757c070c9d195f10038ed7663f9bc36` | `backlog_evidence/wave44` |
+| Corrected transaction grants and history discovery | `c 664f 7795757c 070c 9d 195f 10038ed 7663f 9bc 36` | `backlog_evidence/wave 44` |
 
-| Corrected gauge, occupancy and C3 response | `a917b8f7422bb420e599b37e3562505e77de1da5` | `backlog_evidence/wave45` |
+| Corrected gauge, occupancy and C3 response | `a 917b 8f 7422bb 420e 599b 37e 3562505e 77de 1da 5` | `backlog_evidence/wave 45` |
 
-| Corrected diagonal adjacency, Haar jumps and action/Record architectures | `13046c38aa1fb57767af5e4cdfe14c879351956d` | `backlog_evidence/wave46` |
+| Corrected diagonal adjacency, Haar jumps and action/Record architectures | `13046c 38aa 1fb 57767af 5e 4cdfe 14c 879351956d` | `backlog_evidence/wave 46` |
 
-| Corrected finite ACI terminal confluence | `e95f5d76d7d2a0595b6e5ef0d5782ee84fe48daa` | `backlog_evidence/wave47` |
+| Corrected finite ACI terminal confluence | `e 95f 5d 76d 7d 2a 0595b 6e 5ef 0d 5782ee 84fe 48daa` | `backlog_evidence/wave 47` |
 
-| Corrected conditional symmetric action crossing | `08fb1e00f51dc3600f64976fc1907ee63ffa87af` | `backlog_evidence/wave48` |
+| Corrected conditional symmetric action crossing | `08fb 1e 00f 51dc 3600f 64976fc 1907ee 63ffa 87af` | `backlog_evidence/wave 48` |
 
-| Corrected finite kernel and Dirichlet identities | `e97ff2fd204611f4091c4b664664dba7c263da65` | `backlog_evidence/wave49` |
+| Corrected finite kernel and Dirichlet identities | `e 97ff 2fd 204611f 4091c 4b 664664dba 7c 263da 65` | `backlog_evidence/wave 49` |
 
-| Corrected time family and complement evidence | `2f8ad9eb9e01b834a7d89243106379c326b2fa35` | `backlog_evidence/wave50` |
+| Corrected time family and complement evidence | `2f 8ad 9eb 9e 01b 834a 7d 89243106379c 326b 2fa 35` | `backlog_evidence/wave 50` |
 
-| Corrected finite H0 implications and supplied spider symmetry | `0d4a8bb96b7956390e7f43c1bdeaf51cfc2adb6d` | `backlog_evidence/wave51` |
+| Corrected finite H0 implications and supplied spider symmetry | `0d 4a 8bb 96b 7956390e 7f 43c 1bdeaf 51cfc 2adb 6d` | `backlog_evidence/wave 51` |
 
-| Corrected pointer symmetry and conditional sampled-star protocol | `eb105e8c374ea286c9b7705d1f5e0c546f0a1b44` | `backlog_evidence/wave52` |
+| Corrected pointer symmetry and conditional sampled-star protocol | `eb 105e 8c 374ea 286c 9b 7705d 1f 5e 0c 546f 0a 1b 44` | `backlog_evidence/wave 52` |
 
-| Corrected affine support and finite station detector science | `0c52eb31300559f4d9e733b3a852b196f1fdc897` | `backlog_evidence/wave53` |
+| Corrected affine support and finite station detector science | `0c 52eb 31300559f 4d 9e 733b 3a 852b 196f 1fdc 897` | `backlog_evidence/wave 53` |
 
-| Corrected finite Record refinement and exact channel bridge science | `efa96a44eac1a154dc6dd8a5e68e148cfefb9403` | `backlog_evidence/wave54` |
+| Corrected finite Record refinement and exact channel bridge science | `efa 96a 44eac 1a 154dc 6dd 8a 5e 68e 148cfefb 9403` | `backlog_evidence/wave 54` |
 
-| Corrected finite Markov and terminal channel science | `6952b95754210bf25d14ad45bb21dba103e7eea3` | `backlog_evidence/wave55` |
+| Corrected finite Markov and terminal channel science | `6952b 95754210bf 25d 14ad 45bb 21dba 103e 7eea 3` | `backlog_evidence/wave 55` |
 
-| Six corrected conditional Eta pair-process results | `e48b8ed97fb909245b722a8ca9a59b078efdae9c` | `backlog_evidence/wave56` |
+| Six corrected conditional Eta pair-process results | `e 48b 8ed 97fb 909245b 722a 8ca 9a 59b 078efdae 9c` | `backlog_evidence/wave 56` |
 
-| Corrected Gaussian event and finite Regge results | `fdfa10937a5bd0fad3e9ad73a65174aec10c534e` | `backlog_evidence/wave57` |
+| Corrected Gaussian event and finite Regge results | `fdfa 10937a 5bd 0fad 3e 9ad 73a 65174aec 10c 534e` | `backlog_evidence/wave 57` |
 
-## Active work after wave57
 
-Wave58 combines independently confirmed Eta affine/repeat, Schur-pole science and historical archive recovery: 407 source paths, five bounded science notes. Integration gates are pending; current counts above do not yet credit this candidate. Original #7827 remains open for fourteen older transferred scopes after its own affine/repeat partition lands.
-
-Original full-Fock #7871 review and finding-scoped repairs are active. Eta lineage #7853–#7856 review is active. Early findings require narrowing unsupported physical-lift and covariance claims; no pending original scope is accepted by these assignments. Shared exact worker assignments are in NEXT_REVIEW_UNITS.json.
+| Eta affine/repeat, Schur-pole science and historical recovery | `6eb 96ee 9c 9f 05d 960dbbefab 0e 99f 4fe 90a 25f 02` | `backlog_evidence/wave 58` |
