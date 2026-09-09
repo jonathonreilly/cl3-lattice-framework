@@ -1,0 +1,417 @@
+{
+  "base": "fb834956cf781eeb9d7760337e71661772810e29",
+  "source_tree": "e1653155d4af978a5127cea409c82790ba68d950",
+  "integration_tree": "27be39548c70177b8e50957cc9c4d4a255c05399",
+  "author_tree": "7f77aed195433f09f006116a8241383a7b643018",
+  "original_verification": {
+    "receipt_sha256": "3b78fa2d61eb46eeb7ae520a3f02a89371917b6204c25bf5a16344fda6fe44cd",
+    "report_sha256": "156174045c9853d51209c0ea363617957d902426603057fa9c9fffae1b5631f8",
+    "original_base": "917c9a26c8c8b963ea0d773b32b057bcc33a3e6d",
+    "selected_tree": "3a9f40544a046a8201d5be4817361986ded5892b",
+    "verified_artifacts": 45,
+    "preserved_base_leaves": 29247,
+    "source_paths": 9,
+    "verified_inputs": 11,
+    "constituents": [
+      {
+        "pr": 7991,
+        "head": "c7957b62e50a276bb56c71a202d96e7e201d8cee",
+        "parent": "4407b6a0e0a38074d9b38710da6ed3a83c9e5e56",
+        "paths": [
+          "docs/A_TIME_DIRECTED_FORMATION_SWEEP_REGISTERS_THE_DIRECTION_OF_MOTION_AT_ORDER_ONE_AND_ITS_SCREW_SENSE_REGISTERS_NOTHING_THE_RECORD_SIDE_IMAGE_OF_A_CURRENT_NOT_A_CHIRALITY_BOUNDED_NOTE_2026-09-05.md",
+          "logs/runner-cache/directed_formation_sweep_direction_of_motion_not_handedness_check_2026_09_05.txt",
+          "scripts/directed_formation_sweep_direction_of_motion_not_handedness_check_2026_09_05.py"
+        ],
+        "complete_map_rows": 29250,
+        "source_map_sha256": "ea7fe93abc9586aa1716facf228f50913204d2415cf1b19aba3a100b9f058b47"
+      },
+      {
+        "pr": 7989,
+        "head": "3770308f1e00d980f6419dd9ab7bb95df9fdd34a",
+        "parent": "e249016f759f224d9b429932cd0d1db4d452dc1a",
+        "paths": [
+          "docs/A_MIRROR_ASYMMETRIC_ADMISSIBILITY_RULE_REGISTERS_ITS_OWN_PARITY_ODD_TEXTURE_AND_NOTHING_ELSE_THE_EMERGENT_FERMIONS_MOVERS_ARE_TIME_REVERSAL_IMAGES_WITH_IDENTICAL_RECORD_LAWS_BOUNDED_NOTE_2026-09-05.md",
+          "logs/runner-cache/mirror_asymmetric_rule_registers_own_texture_movers_t_blind_check_2026_09_05.txt",
+          "scripts/mirror_asymmetric_rule_registers_own_texture_movers_t_blind_check_2026_09_05.py"
+        ],
+        "complete_map_rows": 29695,
+        "source_map_sha256": "907cf318cc498f305f20da8db8419e7dd0c4445c1c9b78316474b2abc0832684"
+      },
+      {
+        "pr": 7973,
+        "head": "5b080fca1ebaee23ea4d4e1eccfd08a8b001e60b",
+        "parent": "e249016f759f224d9b429932cd0d1db4d452dc1a",
+        "paths": [
+          "docs/THE_CONTINUUM_RECORD_ALPHABET_KEEPS_THE_WINDING_PHASE_AS_RECORD_CONTENT_THE_ECHO_LAW_DOES_NOT_SUPPORT_IT_AS_A_FIELD_AND_THE_FIBRED_ODDS_REGISTER_ITS_SIGN_AS_A_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+          "logs/runner-cache/continuum_alphabet_winding_phase_echo_law_fair_coin_check_2026_09_04.txt",
+          "scripts/continuum_alphabet_winding_phase_echo_law_fair_coin_check_2026_09_04.py"
+        ],
+        "complete_map_rows": 29695,
+        "source_map_sha256": "c5fa49f2f6c42d55cb1fcd3f4bbf052bb8b8dc4b813347293b147a686954f2c1"
+      }
+    ],
+    "root_full_report_read": true,
+    "scope": "Complete original endpoint/source maps verified against Git. Independent full source review reused. All ten findings and fifteen constituent dispositions read; author correction and integration pending.",
+    "formal_audit": false
+  },
+  "complete_root_correction_read": {
+    "patch_sha256": "b198b5c8f5d905ac83f430e14316f98f2fe5c9ea7793f0e3e23143d3b6f0ff09",
+    "bytes": 229639,
+    "characters": 229263,
+    "complete_read_character_intervals": [
+      [
+        0,
+        229263
+      ]
+    ],
+    "remaining_character_interval": null,
+    "complete_read": true,
+    "material_root_findings": [
+      "NaN eigenvectors/Gram/residual rejection missing in intermediate validation; author reports fixed in post-intermediate delta, pending root read."
+    ],
+    "additional_complete_reads": [
+      {
+        "path": "post-intermediate-source.patch",
+        "sha256": "95abefa9e0932ff03d4a38a5e921d53f9e578e84112a6a58ebd7aca049771e48",
+        "bytes": 10565
+      },
+      {
+        "path": "ROOT_FINAL_CACHE_DELTA.patch",
+        "sha256": "0fdba20a26079fd4dbe562d4eb76427defcbad77d98de848c5fc58ecaf7aee0f",
+        "bytes": 41541
+      },
+      {
+        "path": "CLAIM_DISPOSITIONS.json",
+        "sha256": "5b74d9a7f9ddde7b083012c90f19a4322a9aa1bf0e353ce4b96195ad2658dc42",
+        "bytes": 3173
+      },
+      {
+        "path": "FINDING_DISPOSITIONS.json",
+        "sha256": "756ae738522c5bfeeadaebd715424bf9e89579f38e0213f6c4389a21a85c7d98",
+        "bytes": 2503
+      }
+    ],
+    "root_finding_resolution": "Finite vector, Gram and residual rejection plus actual NaN control implemented in fully read post-intermediate delta. Final33/0 stream includes control; final execution identities pending mechanical verification."
+  },
+  "findings": {
+    "F1": "7973 T3/T4 now distinguishes six directional records from six arbitrary records, retains both hybrid signs, separates aligned pinned static subset from formation and removes densest/iff claims; actual mixed-menu/antipode checks added.",
+    "F2": "7973 T5 states explicit supplied equivariant Born and auxiliary independent product-resampling assumptions; exact shared-coin counterexample preserves winding. Deterministic sign texture and scalar closure remain finite supplied examples.",
+    "F3": "7973 spectra are finite returned-subspace diagnostics with deterministic ARPACK start, QR/Ritz orthogonalization, finite/Gram/residual guards and consequential cut bracketing. No larger completeness, general index or exponential limit is claimed. Torus harmonic twist fixes absolute winding separately.",
+    "F4": "7989 slab state is the actual projected-current wavepacket with nonzero energy residual; E/p is a phase secant and NN current is named separately from the full-H derivative.",
+    "F5": "7989 current note distinguishes fixed-basis DPP conjugation, global static weighting, conditional prefix/dead completion, fixed-background stabilizer and supplied wall M2 observation from physical T/covariance/helicity claims.",
+    "F6": "7991 full 57 nonempty-menu table and mirrored orders are executed (1272/1320); actual DP checks 622965054368 complete paths, zero dead and nonzero mean Xi. Original zero rows are the named family only; allowed-order set and unweighted order multiplicity/probability are separate.",
+    "F7": "7991 symmetry cancellation requires invariant weights; actual asymmetric-weight and component-swap controls added. Vortex statement uses site-summed observables and antiunitary-invariant mode/projector with transformed events.",
+    "F8": "7991 d.J is even when both polar quantities transform; x-mirror and full inversion are distinct. Tau/size/displacement observations remain finite, with no weak-sector identification or boundary/asymptotic theorem.",
+    "F9": "All three own notes/current memo and the actually used corrected7926 scope are literal input pins and actual cache declarations. Genuine corrected caches replace active historical receipts; exact original nine bodies remain outside discovery. No helper or tool changes, no audit/retained authority.",
+    "F10": "7973 explicitly supplies the equivariant Bloch/Born assignment, distinguishes indexed/payload probabilities, and pins corrected current7926 limitations; no abundance/MI forcing is inherited."
+  },
+  "constituent_claims": [
+    {
+      "pr": 7973,
+      "claim": "T1",
+      "disposition": "Exact representation/algebra retained; mass/readout are supplied.",
+      "findings": [
+        "F3",
+        "F10"
+      ]
+    },
+    {
+      "pr": 7973,
+      "claim": "T2",
+      "disposition": "Finite dimer and spectral observations retained with returned-window bounds, not a universal gap/index.",
+      "findings": [
+        "F3"
+      ]
+    },
+    {
+      "pr": 7973,
+      "claim": "T3",
+      "disposition": "Local support and finite Gibbs/seed censuses retained; fully-recorded and formation/density overclaims removed.",
+      "findings": [
+        "F1"
+      ]
+    },
+    {
+      "pr": 7973,
+      "claim": "T4",
+      "disposition": "Aligned unpinned subset, fixed pins/core and finite regional/splitting data retained; hybrid reverse implication and absolute torus winding narrowed.",
+      "findings": [
+        "F1",
+        "F3"
+      ]
+    },
+    {
+      "pr": 7973,
+      "claim": "T5",
+      "disposition": "Conditional local fair odds retained; independent resampling auxiliary and shared-coin counterexample explicit.",
+      "findings": [
+        "F2",
+        "F10"
+      ]
+    },
+    {
+      "pr": 7989,
+      "claim": "T1",
+      "disposition": "57/56 and10/10 orbit/table census retained within supplied alphabet/classes.",
+      "findings": [
+        "F5"
+      ]
+    },
+    {
+      "pr": 7989,
+      "claim": "T2",
+      "disposition": "Finite medium/role/gauge symmetries retained; fixed background stabilizer distinguished from transforming background.",
+      "findings": [
+        "F5"
+      ]
+    },
+    {
+      "pr": 7989,
+      "claim": "T3",
+      "disposition": "Fixed-basis conjugation, finite order and parity statistics retained; no physical T or unspecified order weighting.",
+      "findings": [
+        "F5"
+      ]
+    },
+    {
+      "pr": 7989,
+      "claim": "T4",
+      "disposition": "All finite static/tick registration rows retained with wavepacket/E-over-p/NN-current and completion conditions.",
+      "findings": [
+        "F4",
+        "F5"
+      ]
+    },
+    {
+      "pr": 7989,
+      "claim": "T5",
+      "disposition": "Finite wall energies/observables retained; no general handed-mode exclusion.",
+      "findings": [
+        "F5"
+      ]
+    },
+    {
+      "pr": 7991,
+      "claim": "T1",
+      "disposition": "Finite directed response and scans retained; no physical or asymptotic interpretation.",
+      "findings": [
+        "F8"
+      ]
+    },
+    {
+      "pr": 7991,
+      "claim": "T2",
+      "disposition": "Specified mirror response identity retained for invariant regions/apparatus; finite displaced examples not a limit.",
+      "findings": [
+        "F8"
+      ]
+    },
+    {
+      "pr": 7991,
+      "claim": "T3",
+      "disposition": "Conditional antiunitary paired identity retained; invariant weights required.",
+      "findings": [
+        "F7",
+        "F8"
+      ]
+    },
+    {
+      "pr": 7991,
+      "claim": "T4",
+      "disposition": "Full finite Fock/tree and site-summed vortex controls retained; correct actual tau/order grid and component permutation.",
+      "findings": [
+        "F7"
+      ]
+    },
+    {
+      "pr": 7991,
+      "claim": "T5",
+      "disposition": "Original exact named rule counts retained as historical/current finite examples; universal exclusion refuted by actual full-table counterexample.",
+      "findings": [
+        "F6"
+      ]
+    }
+  ],
+  "current_main_leaves_preserved": 29299,
+  "exact_original_history_paths": 9,
+  "total_source_paths": 19,
+  "manifest_only_additional_delta": true,
+  "manifest_full_root_read": true,
+  "actual_consumers": [
+    {
+      "note": "docs/A_TIME_DIRECTED_FORMATION_SWEEP_REGISTERS_THE_DIRECTION_OF_MOTION_AT_ORDER_ONE_AND_ITS_SCREW_SENSE_REGISTERS_NOTHING_THE_RECORD_SIDE_IMAGE_OF_A_CURRENT_NOT_A_CHIRALITY_BOUNDED_NOTE_2026-09-05.md",
+      "unit": "chirality_7973_7989_7991",
+      "actual_claim_id": "a_time_directed_formation_sweep_registers_the_direction_of_motion_at_order_one_and_its_screw_sense_registers_nothing_the_record_side_image_of_a_current_not_a_chirality_bounded_note_2026-09-05",
+      "actual_primary": "scripts/directed_formation_sweep_direction_of_motion_not_handedness_check_2026_09_05.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "citation_dependencies": [
+        "minimal_axioms"
+      ],
+      "input_count": 2,
+      "input_fingerprint": "6092152f0b40647cbd3c9f7676df8c5f2ea3af4c3783e7c5bc2a38ab10b5cfd0",
+      "complete_input_union": [
+        {
+          "path": "docs/A_TIME_DIRECTED_FORMATION_SWEEP_REGISTERS_THE_DIRECTION_OF_MOTION_AT_ORDER_ONE_AND_ITS_SCREW_SENSE_REGISTERS_NOTHING_THE_RECORD_SIDE_IMAGE_OF_A_CURRENT_NOT_A_CHIRALITY_BOUNDED_NOTE_2026-09-05.md",
+          "sha256": "451d256a5fd039c0bd5c7d9b3519f06db87bc6b8029f4702260f71b877221fea"
+        },
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        }
+      ],
+      "actual_registered_module_input_bindings": {
+        "scripts/directed_formation_sweep_direction_of_motion_not_handedness_check_2026_09_05.py": [
+          {
+            "path": "docs/A_TIME_DIRECTED_FORMATION_SWEEP_REGISTERS_THE_DIRECTION_OF_MOTION_AT_ORDER_ONE_AND_ITS_SCREW_SENSE_REGISTERS_NOTHING_THE_RECORD_SIDE_IMAGE_OF_A_CURRENT_NOT_A_CHIRALITY_BOUNDED_NOTE_2026-09-05.md",
+            "sha256": "451d256a5fd039c0bd5c7d9b3519f06db87bc6b8029f4702260f71b877221fea"
+          },
+          {
+            "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+          }
+        ]
+      },
+      "claim_type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    },
+    {
+      "note": "docs/A_MIRROR_ASYMMETRIC_ADMISSIBILITY_RULE_REGISTERS_ITS_OWN_PARITY_ODD_TEXTURE_AND_NOTHING_ELSE_THE_EMERGENT_FERMIONS_MOVERS_ARE_TIME_REVERSAL_IMAGES_WITH_IDENTICAL_RECORD_LAWS_BOUNDED_NOTE_2026-09-05.md",
+      "unit": "chirality_7973_7989_7991",
+      "actual_claim_id": "a_mirror_asymmetric_admissibility_rule_registers_its_own_parity_odd_texture_and_nothing_else_the_emergent_fermions_movers_are_time_reversal_images_with_identical_record_laws_bounded_note_2026-09-05",
+      "actual_primary": "scripts/mirror_asymmetric_rule_registers_own_texture_movers_t_blind_check_2026_09_05.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "citation_dependencies": [
+        "minimal_axioms"
+      ],
+      "input_count": 2,
+      "input_fingerprint": "af7704b670d9473984f565c9b987ffa47983a369aceeec15e7aa8d8d6049f004",
+      "complete_input_union": [
+        {
+          "path": "docs/A_MIRROR_ASYMMETRIC_ADMISSIBILITY_RULE_REGISTERS_ITS_OWN_PARITY_ODD_TEXTURE_AND_NOTHING_ELSE_THE_EMERGENT_FERMIONS_MOVERS_ARE_TIME_REVERSAL_IMAGES_WITH_IDENTICAL_RECORD_LAWS_BOUNDED_NOTE_2026-09-05.md",
+          "sha256": "b13856ad88d4bd4c2773525bcd22dcd8ebb98c18c0e1f48279013c596833ac19"
+        },
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        }
+      ],
+      "actual_registered_module_input_bindings": {
+        "scripts/mirror_asymmetric_rule_registers_own_texture_movers_t_blind_check_2026_09_05.py": [
+          {
+            "path": "docs/A_MIRROR_ASYMMETRIC_ADMISSIBILITY_RULE_REGISTERS_ITS_OWN_PARITY_ODD_TEXTURE_AND_NOTHING_ELSE_THE_EMERGENT_FERMIONS_MOVERS_ARE_TIME_REVERSAL_IMAGES_WITH_IDENTICAL_RECORD_LAWS_BOUNDED_NOTE_2026-09-05.md",
+            "sha256": "b13856ad88d4bd4c2773525bcd22dcd8ebb98c18c0e1f48279013c596833ac19"
+          },
+          {
+            "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+          }
+        ]
+      },
+      "claim_type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    },
+    {
+      "note": "docs/THE_CONTINUUM_RECORD_ALPHABET_KEEPS_THE_WINDING_PHASE_AS_RECORD_CONTENT_THE_ECHO_LAW_DOES_NOT_SUPPORT_IT_AS_A_FIELD_AND_THE_FIBRED_ODDS_REGISTER_ITS_SIGN_AS_A_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "unit": "chirality_7973_7989_7991",
+      "actual_claim_id": "the_continuum_record_alphabet_keeps_the_winding_phase_as_record_content_the_echo_law_does_not_support_it_as_a_field_and_the_fibred_odds_register_its_sign_as_a_fair_coin_bounded_theorem_note_2026-09-04",
+      "actual_primary": "scripts/continuum_alphabet_winding_phase_echo_law_fair_coin_check_2026_09_04.py",
+      "helpers": [],
+      "citations": [
+        "docs/A_CONTINUUM_RECORD_ALPHABET_LIFTS_THE_ABUNDANCE_NO_GO_A_FIBRED_BORN_THEOREM_AND_A_FACTOR_OF_TWO_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "citation_dependencies": [
+        "a_continuum_record_alphabet_lifts_the_abundance_no_go_a_fibred_born_theorem_and_a_factor_of_two_obstruction_bounded_theorem_note_2026-09-04",
+        "minimal_axioms"
+      ],
+      "input_count": 3,
+      "input_fingerprint": "2aa886f6f2201a65fcbb7d6f073e0fa5a06f79a9b79c03537f318d98413c8131",
+      "complete_input_union": [
+        {
+          "path": "docs/THE_CONTINUUM_RECORD_ALPHABET_KEEPS_THE_WINDING_PHASE_AS_RECORD_CONTENT_THE_ECHO_LAW_DOES_NOT_SUPPORT_IT_AS_A_FIELD_AND_THE_FIBRED_ODDS_REGISTER_ITS_SIGN_AS_A_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+          "sha256": "71ea3f9e7b1ef24c6aa4c96365fb6ffbd4ca14b2bf6e361cd430040e3881582b"
+        },
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "path": "docs/A_CONTINUUM_RECORD_ALPHABET_LIFTS_THE_ABUNDANCE_NO_GO_A_FIBRED_BORN_THEOREM_AND_A_FACTOR_OF_TWO_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+          "sha256": "53c0d982aca5fab6aba0fa9fb6edf3fbf9f19d5d6f1cdcf3ac913dc5d0264041"
+        }
+      ],
+      "actual_registered_module_input_bindings": {
+        "scripts/continuum_alphabet_winding_phase_echo_law_fair_coin_check_2026_09_04.py": [
+          {
+            "path": "docs/THE_CONTINUUM_RECORD_ALPHABET_KEEPS_THE_WINDING_PHASE_AS_RECORD_CONTENT_THE_ECHO_LAW_DOES_NOT_SUPPORT_IT_AS_A_FIELD_AND_THE_FIBRED_ODDS_REGISTER_ITS_SIGN_AS_A_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+            "sha256": "71ea3f9e7b1ef24c6aa4c96365fb6ffbd4ca14b2bf6e361cd430040e3881582b"
+          },
+          {
+            "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+            "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+          },
+          {
+            "path": "docs/A_CONTINUUM_RECORD_ALPHABET_LIFTS_THE_ABUNDANCE_NO_GO_A_FIBRED_BORN_THEOREM_AND_A_FACTOR_OF_TWO_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+            "sha256": "53c0d982aca5fab6aba0fa9fb6edf3fbf9f19d5d6f1cdcf3ac913dc5d0264041"
+          }
+        ]
+      },
+      "claim_type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    }
+  ],
+  "execution_verification": [
+    {
+      "pr": 7973,
+      "runner": "scripts/continuum_alphabet_winding_phase_echo_law_fair_coin_check_2026_09_04.py",
+      "checks": 33,
+      "elapsed_sec": 19.56498098373413,
+      "peak_rss_KiB": 595856,
+      "source_and_input_identity_equal": true,
+      "raw_stdout_matches_cache": true
+    },
+    {
+      "pr": 7989,
+      "runner": "scripts/mirror_asymmetric_rule_registers_own_texture_movers_t_blind_check_2026_09_05.py",
+      "checks": 29,
+      "elapsed_sec": 8.874578952789307,
+      "peak_rss_KiB": 290176,
+      "source_and_input_identity_equal": true,
+      "raw_stdout_matches_cache": true
+    },
+    {
+      "pr": 7991,
+      "runner": "scripts/directed_formation_sweep_direction_of_motion_not_handedness_check_2026_09_05.py",
+      "checks": 30,
+      "elapsed_sec": 36.64696407318115,
+      "peak_rss_KiB": 807712,
+      "source_and_input_identity_equal": true,
+      "raw_stdout_matches_cache": true
+    }
+  ],
+  "current_main_semantic_interactions": "Current7926 conditional indexed compiler/Born assumptions explicitly supplied and pinned; current tick results do not derive a physical formation instrument or schedule. Vortex sources are redeclared conditional operators, not imported parent conclusions. Gravity and Maxwell updates have no actual premise/runtime intersection. False general slab exclusion removed; fixed-basis conjugation remains distinct from inserted sweep evolution.",
+  "remaining": "Original-reviewer narrow confirmation then one combined gate.",
+  "formal_audit": false,
+  "additional_correction": {
+    "finding": "Reviewer found factor10 transcription error in7989T5; correct .00289 to .0289, preserve actual E3 result/predicates. Own-note pin and genuine affected cache renewed.",
+    "patch_sha256": "e39e2252425512b1750aca73dd4b60e30e68305a8150d9c13d9d866d13019b83",
+    "source_delta_root_read": true,
+    "full_delta_root_read": true,
+    "affected_checks": 29,
+    "elapsed_sec": 9.021043062210083,
+    "other_primaries_replayed": false
+  },
+  "author_receipt_wording_correction": "CURRENT_7926_AFTER_BORN_LANDING is an actual pinned current premise for7973; it is not merely historical context. Actual hash and bounded source interpretation unchanged."
+}
