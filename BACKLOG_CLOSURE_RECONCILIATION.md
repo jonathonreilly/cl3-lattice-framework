@@ -1,10 +1,10 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-09T17:05:30.814197+00:00; main `6eb96ee9c9f05d960dbbefab0e99f4fe90a25f02`.
+Updated 2026-09-09T17:33:08.455437+00:00; main `8bb429a53d8df04502a06d6d8b09f6db320b533b`.
 
-173 reviewed original science scopes landed:120 direct closed science,52 consolidated science, and the own Block 38 scope of still-open #7827. Eight additional original scopes have corrected Maxwell portions on main with broader scope held. The 124 direct original closures include 120 science, one partial Maxwell, one meta, one process, and one historical archive recovery. The earlier 110 other closures include 47 scopes still pending at four successors.
+174 reviewed original science scopes landed: 121 direct closed science, 52 consolidated science, and the own Block 38 scope of still-open #7827. Eight additional original scopes have corrected Maxwell portions on main with broader scope held. The 125 direct original closures include 121 science, one partial Maxwell, one meta, one process, and one historical archive recovery. The earlier 110 other closures include 47 scopes still pending at four successors.
 
-Open #7827 has one independently accepted own science scope; its fourteen transferred scopes remain pending. See accepted_open_scopes in the JSON for its exact boundary.
+Open #7827 has one independently accepted own science scope; its fourteen transferred scopes remain pending. See accepted_open_scopes in the JSON.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
@@ -129,6 +129,7 @@ Open #7827 has one independently accepted own science scope; its fourteen transf
 | #7867 | draft_disposition | pending_on_open_successor | #7827 |
 | #7869 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `7517b4a95f860fec43251c0281a981e6bb1f34d6` |
 | #7870 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `13046c38aa1fb57767af5e4cdfe14c879351956d` |
+| #7871 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `8bb429a53d8df04502a06d6d8b09f6db320b533b` |
 | #7872 | draft_disposition | empty_no_unique_result | empty_no_unique_result |
 | #7873 | draft_disposition | unexecuted_plan_preserved | unexecuted_plan_preserved |
 | #7874 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `ebe2142cbace4d05def434c0b9cd1969e34443b9` |
