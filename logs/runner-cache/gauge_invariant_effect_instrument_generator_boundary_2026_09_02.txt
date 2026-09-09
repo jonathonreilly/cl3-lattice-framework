@@ -1,0 +1,111 @@
+===== runner cache v1 =====
+runner: scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py
+runner_sha256: 9e1b7b76e074b6f5852e427639dc781259def0a086739c9714cb8d7e3be8cb32
+input_fingerprint_sha256: cf6c8a1821c81910b874f62dc6389cad859a4bc8804ec3c613262cf5e5db836d
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+PASS empty-edge domain admits the identity electric-magnetic exchange
+PASS zero-magnetic family collapses under common clock rescaling
+PASS canonical half-trace Gram
+PASS 3+1 SU3 commutant has dimension two :: nullity=2
+PASS P3 and P1 commute with all generators
+PASS unsharp invariant effect (0.2,0.8)
+PASS binary complement (0.2,0.8)
+PASS unsharp invariant effect (0.5,0.5)
+PASS binary complement (0.5,0.5)
+PASS unsharp invariant effect (0.9,0.1)
+PASS binary complement (0.9,0.1)
+PASS all invariant sharp effects are four commutant corners :: [(0, 0), (0, 1), (1, 0), (1, 1)]
+PASS unique nontrivial invariant PVM up to labels
+PASS triplet instrument CP lambda=0.0
+PASS singlet instrument CP lambda=0.0
+PASS instrument trace complete lambda=0.0 seed=1
+PASS triplet outcome repeatable lambda=0.0 seed=1
+PASS singlet outcome repeatable lambda=0.0 seed=1
+PASS instrument trace complete lambda=0.0 seed=2
+PASS triplet outcome repeatable lambda=0.0 seed=2
+PASS singlet outcome repeatable lambda=0.0 seed=2
+PASS instrument trace complete lambda=0.0 seed=3
+PASS triplet outcome repeatable lambda=0.0 seed=3
+PASS singlet outcome repeatable lambda=0.0 seed=3
+PASS triplet instrument gauge covariance lambda=0.0 seed=4
+PASS triplet instrument gauge covariance lambda=0.0 seed=5
+PASS instrument continuum changes post-state lambda=0.0 :: purity=0.333333333
+PASS triplet instrument CP lambda=0.25
+PASS singlet instrument CP lambda=0.25
+PASS instrument trace complete lambda=0.25 seed=1
+PASS triplet outcome repeatable lambda=0.25 seed=1
+PASS singlet outcome repeatable lambda=0.25 seed=1
+PASS instrument trace complete lambda=0.25 seed=2
+PASS triplet outcome repeatable lambda=0.25 seed=2
+PASS singlet outcome repeatable lambda=0.25 seed=2
+PASS instrument trace complete lambda=0.25 seed=3
+PASS triplet outcome repeatable lambda=0.25 seed=3
+PASS singlet outcome repeatable lambda=0.25 seed=3
+PASS triplet instrument gauge covariance lambda=0.25 seed=4
+PASS triplet instrument gauge covariance lambda=0.25 seed=5
+PASS instrument continuum changes post-state lambda=0.25 :: purity=0.375000000
+PASS triplet instrument CP lambda=0.75
+PASS singlet instrument CP lambda=0.75
+PASS instrument trace complete lambda=0.75 seed=1
+PASS triplet outcome repeatable lambda=0.75 seed=1
+PASS singlet outcome repeatable lambda=0.75 seed=1
+PASS instrument trace complete lambda=0.75 seed=2
+PASS triplet outcome repeatable lambda=0.75 seed=2
+PASS singlet outcome repeatable lambda=0.75 seed=2
+PASS instrument trace complete lambda=0.75 seed=3
+PASS triplet outcome repeatable lambda=0.75 seed=3
+PASS singlet outcome repeatable lambda=0.75 seed=3
+PASS triplet instrument gauge covariance lambda=0.75 seed=4
+PASS triplet instrument gauge covariance lambda=0.75 seed=5
+PASS instrument continuum changes post-state lambda=0.75 :: purity=0.708333333
+PASS triplet instrument CP lambda=1.0
+PASS singlet instrument CP lambda=1.0
+PASS instrument trace complete lambda=1.0 seed=1
+PASS triplet outcome repeatable lambda=1.0 seed=1
+PASS singlet outcome repeatable lambda=1.0 seed=1
+PASS instrument trace complete lambda=1.0 seed=2
+PASS triplet outcome repeatable lambda=1.0 seed=2
+PASS singlet outcome repeatable lambda=1.0 seed=2
+PASS instrument trace complete lambda=1.0 seed=3
+PASS triplet outcome repeatable lambda=1.0 seed=3
+PASS singlet outcome repeatable lambda=1.0 seed=3
+PASS triplet instrument gauge covariance lambda=1.0 seed=4
+PASS triplet instrument gauge covariance lambda=1.0 seed=5
+PASS instrument continuum changes post-state lambda=1.0 :: purity=1.000000000
+PASS E/B product blind at g2=1/4
+PASS coefficient equality iff g2=1 at g2=1/4
+PASS E/B product blind at g2=1
+PASS coefficient equality iff g2=1 at g2=1
+PASS E/B product blind at g2=4
+PASS coefficient equality iff g2=1 at g2=4
+PASS E/B product blind at g2=9
+PASS coefficient equality iff g2=1 at g2=9
+PASS nondegenerate coefficient pairs resist common clock rescaling
+PASS SU3 electric Casimir sequence strictly increasing
+PASS SU3 electric Casimir is unbounded by formula :: C2(100,0)=10300/3
+PASS one Wilson plaquette multiplier is nonzero and nonconstant
+PASS sampled Wilson deficits respect the analytic magnetic bound
+PASS Wilson tangent Hessian beta=6 :: coef=1
+PASS Wilson tangent Hessian beta=24 :: coef=4
+PASS supplied unit Hessian condition locates beta=2Nc=6
+SUMMARY
+COMMUTANT_NULLITY=2
+INVARIANT_EFFECT_CONE={(a,b): 0<=a,b<=1}
+SHARP_NONTRIVIAL_EFFECTS={P3,P1} up to labels
+REPEATABLE_COVARIANT_INSTRUMENTS=continuum(lambda in [0,1])
+HAMILTONIAN_RELATIVE_COEFFICIENT=free(g^2>0) on the stated nondegenerate full-L2 domain
+RAW_EB_SAME_CARRIER_DUALITY=excluded with at least one edge on full L2
+WILSON_UNIT_HESSIAN_CONDITION=>beta=2Nc=6 (supplied condition, not a derived tick law)
+per_element: checked — canonical generator Gram, invariant effects, Choi positivity, center bound, and identity-tangent Wilson Hessian
+per_site: checked — the supplied 3+1 carrier instrument was tested for completeness, repeatability, covariance, and distinct post-states
+per_mode: checked and not executed — no momentum-space mode or continuum spectral claim is made by this finite-carrier packet
+per_block: checked — exact coefficient algebra, degenerate-domain controls, and spectral witnesses support the stated nondegenerate lift
+lattice_wide: checked and not executed — no reduced/truncated physical carrier, thermodynamic, continuum, confinement, mass-gap, or full Standard Model claim was simulated
+TOTAL: PASS=85 FAIL=0
+
+----- stderr -----
+

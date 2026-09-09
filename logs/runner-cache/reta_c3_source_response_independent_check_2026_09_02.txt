@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/reta_c3_source_response_independent_check_2026_09_02.py
+runner_sha256: 5cd0edff88cf4f32082710c8d54e6497b45781a203274ba3368dc0faef0f9d53
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+PASS c3.characters.enumerated  three distinct exact homomorphisms
+PASS c3.characters.orthogonality  exact Q(w) inner products
+PASS c3.projectors.spectral  C P_r = w^r P_r
+PASS c3.projectors.resolution  three rank-one orthogonal idempotents
+PASS c3.projectors.star_and_K  K fixes P0 and swaps P1,P2
+PASS c3.projections.character_subsets  all 2^3 spectral projections
+PASS c3.projections.K_even  0, P_s, P_d, I
+PASS c3.projections.doublet_unique  unique P_d
+PASS response.mode_product_family  48 exact (a_s,a_d,c) triples
+PASS response.unit_member  h=2/9, Phi=2/3
+PASS response.trace_then_density_typed  tau(A^-1 P_d)=2/3; stipulated density gives 2/9
+PASS response.true_conjugation_average  invariant P_d is returned unchanged, not divided by three
+PASS response.statistics_change_determinant_power  det^-1/2, det^-1, det
+PASS response.source_scale_counterfamily  c=(1,2,-3/2) changes h linearly
+PASS response.action_scale_counterfamily  a_d=(1/2,1,3) changes h inversely
+PASS cyclic.p2.local_vs_lens  F=1/8 E=0 E-F=-1/8
+PASS cyclic.p3.local_vs_lens  F=2/9 E=2/9 E-F=0
+PASS cyclic.p4.local_vs_lens  F=5/16 E=1/2 E-F=3/16
+PASS cyclic.p5.local_vs_lens  F=2/5 E=4/5 E-F=2/5
+PASS cyclic.p6.local_vs_lens  F=35/72 E=10/9 E-F=5/8
+PASS cyclic.p7.local_vs_lens  F=4/7 E=10/7 E-F=6/7
+PASS cyclic.p8.local_vs_lens  F=21/32 E=7/4 E-F=35/32
+PASS cyclic.p9.local_vs_lens  F=20/27 E=56/27 E-F=4/3
+PASS cyclic.p10.local_vs_lens  F=33/40 E=12/5 E-F=63/40
+PASS cyclic.p11.local_vs_lens  F=10/11 E=30/11 E-F=20/11
+PASS cyclic.p12.local_vs_lens  F=143/144 E=55/18 E-F=33/16
+PASS cyclic.gap_polynomial_identity  12p(E-F)=3(p-1)(p-3)
+PASS cyclic.p3.crossing_value  F_3=E_3=2/9
+PASS cyclic.lens_weight_orientation_sign  weights (1,1) and (1,-1) differ by orientation/sign
+PASS cyclic.raw_vs_reduced_eta  h_B=1; reduced eta is 11/18 or 7/18
+PASS cyclic.p3.unique_nontrivial_integer  exact roots {1,3}; p>=2 leaves p=3
+PASS torsion.Z3_characters_enumerated  generator values {0,1/3,2/3}
+PASS torsion.two_ninths_invalid_character  3*(2/9)=2/3 mod 1, not 0
+PASS harness.expected_check_count  declared=34
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,16 @@
+# Trace gate
+
+```yaml
+target_claim_id: ac_orbit_occupancy_statistical_grain_derivation_obligation
+target_blocker_text: derive the physical charged-lepton occupancy statistical grain
+source_of_blocker_text: docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md
+trace_class: formal_target_correctness_then_positive_selector_search
+reachability_to_target: direct
+formal_criticality: critical
+live_transitive_descendants_preexecution: 108
+positive_success: retained physical action_measure_event_grain derivation
+bounded_success: exact proof current closure criterion is mis-aimed plus repair text
+obligation_retirement_required_for_toe_movement: true
+review_loop_allowed: false
+gravity_paths_touched: false
+```

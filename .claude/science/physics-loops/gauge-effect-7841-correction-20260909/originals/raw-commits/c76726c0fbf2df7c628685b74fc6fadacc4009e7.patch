@@ -1,0 +1,1198 @@
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/APPROACH_REGISTRY.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/APPROACH_REGISTRY.md
+index 52386232b0..e132132c3f 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/APPROACH_REGISTRY.md
+@@ -4,12 +4,12 @@
+ |---|---|---|---|
+ | R1 | One reconstructed Hamiltonian ties native electric and magnetic quadratic forms | attempted / open on new law | `g^2 H_E+g^-2 H_B` survives every current structural predicate for all `g>0` |
+ | R2 | Exact electric/magnetic duality on the actual nonabelian carrier | excluded on same Wilson carrier | `H_E` unbounded while `H_B` bounded; no unitary/antiunitary exchange |
+-| R3 | Complete gauge-equivariant binary Record-instrument cone | attempted / non-singleton | sharp effect unique only after sharpness; unsharp effects and repeatable covariant instruments remain continuous |
++| R3 | Complete invariant binary-effect cone plus repeatable-instrument uniqueness test | completed / instrument nonunique | sharp effect unique only after sharpness; an explicit repeatable covariant non-Lueders family remains continuous; no complete instrument-cone classification is claimed |
+ | R4 | Full operator-extension model pair | not promoted | stronger-than-prior-art full Record extension was not completed and is unnecessary for the positive decision |
+ | R5 | Record inference of beta from a plaquette statistic | prior art / not selected | empirical identifiability does not derive the law |
+ | R6 | beta=6 versus beta=24 Wilson discriminator | rejected duplicate | fails V1, V2, V3, and V5 |
+ | R7 | Wilson-to-Maxwell continuum expansion | rejected at Block 53 value gate | conditional standard consequence; no framework selector |
+ 
+-Routes R1-R3 are positive-search-first.  R4 may ship only after the
+-`no-go-discipline` gate and only if it is structurally stronger than the existing
+-split-redundancy and rate-dial results.
++Routes R1-R3 were positive-search-first. The bounded negative statement passed
++the `no-go-discipline` gate and now ships with its positive classifications in
++draft PR #7841. R4 remains outside the claim.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/ARTIFACT_PLAN.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/ARTIFACT_PLAN.md
+index d4bb255ed0..aee0a961cd 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/ARTIFACT_PLAN.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/ARTIFACT_PLAN.md
+@@ -5,7 +5,13 @@
+ 2. Test whether any current premise removes the relative coefficient or unsharp
+    instrument parameters.
+ 3. Test the nonabelian electric/magnetic-duality stretch against the actual carrier.
+-4. Only after a decisive result, draft one source note, one primary runner, and one
+-   source-bound cache.
+-5. Package a PR only if V1-V5 all pass.  Otherwise record the failed value gate in
+-   the loop pack, delete payload, rerank, and continue.
++4. The decisive result is preserved as one source note, one primary runner, and
++   one source-bound cache.
++5. V1-V5 classify TOE-promotion value; they do not veto remote preservation.
++   Draft PR #7841 holds the packet for scientific review/classification.
++
++Recovered packet:
++
++- `docs/GAUGE_INVARIANT_EFFECT_INSTRUMENT_AND_WILSON_GENERATOR_NORMALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-02.md`;
++- `scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py`;
++- `logs/runner-cache/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.txt`.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/CLAIM_STATUS_CERTIFICATE.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/CLAIM_STATUS_CERTIFICATE.md
+index b57b114e44..c2e9eb7598 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/CLAIM_STATUS_CERTIFICATE.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/CLAIM_STATUS_CERTIFICATE.md
+@@ -1,6 +1,6 @@
+ # Claim Status Certificate
+ 
+-status: executed checkpoint / no promotion proposal
++status: draft classification PR / no TOE-promotion proposal
+ 
+ obligation_retirement: 0
+ 
+@@ -13,12 +13,13 @@ audit_required_before_effective_retained: true
+ | Gate | Initial state |
+ |---|---|
+ | V1 closes an exact registered parent obligation | **FAIL** — no current premise fixes the relative coefficient or tick normalization |
+-| V2 materially new against main and open heads | **PASS, narrow** — full invariant-effect/repeatable-instrument cone and same-carrier boundedness obstruction were absent from inspected heads |
++| V2 materially new against main and open heads | **PASS, narrow** — the full invariant-effect cone, explicit repeatable-instrument nonuniqueness family, and same-carrier boundedness obstruction were absent from inspected heads |
+ | V3 retained framework structure is essential | **PASS, narrow** — the `3+1` carrier, canonical trace, and Wilson operator typing determine the exact cone/obstruction |
+ | V4 theorem difficulty or lattice-wide leverage is substantial | **FAIL** — the decisive Schur, Choi, and boundedness steps are short once the carrier is supplied |
+ | V5 mechanism is structurally distinct from prior art | **PASS, narrow** — the non-Lueders repeatable family and bounded/unbounded duality rejector are new mechanisms, but the terminal free normalization is prior art |
+ 
+-Disposition: **NO PR / NO SOURCE PAYLOAD**.  The scratch probe passed `81/81`, but
+-V1 and V4 fail.  The scoped negative wording passed N1-N8 in
+-`POSTEXECUTION_NO_GO_AUDIT.md`; it remains a loop checkpoint rather than a promoted
+-claim.
++Disposition: **PRESERVE IN DRAFT PR #7841**. The recovered original runner passes
++`81/81`, and the bounded source note preserves both the positive classifications
++and the exact sufficient-law cut. V1 and V4 still fail for TOE promotion. The
++scoped negative wording passed N1-N8 in `POSTEXECUTION_NO_GO_AUDIT.md`; neither the
++PR nor this certificate applies an audit verdict.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/HANDOFF.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/HANDOFF.md
+index cbfae123dd..944beec7e5 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/HANDOFF.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/HANDOFF.md
+@@ -6,9 +6,10 @@ and the active general Record/Born work.
+ The current premise surface does not force the relative electric/magnetic coefficient.
+ Gauge invariance plus supplied sharpness uniquely selects the nontrivial `P_3/P_1`
+ effect partition on the `3+1` carrier, but unsharp effects remain allowed without
+-sharpness and repeatable gauge-covariant instruments remain a continuous non-Lueders
+-family even with sharp effects.  Exact same-carrier electric/magnetic duality is
+-excluded by operator boundedness.
++sharpness and an explicit continuous non-Lueders family of repeatable
++gauge-covariant instruments remains even with sharp effects. No complete
++instrument-cone classification is claimed. Exact raw same-carrier
++electric/magnetic exchange is excluded by operator boundedness.
+ 
+ The smallest sufficient owner decision inside the fixed Wilson family is a
+ downstream one-tick fluctuation law:
+@@ -19,6 +20,7 @@ Because `-Hess_e log K_beta = (beta/(2 N_c)) g_can`, this yields `beta=2 N_c=6`
+ exactly, followed by same-slot under W-PHYS.  It is not derived from the current
+ foundation and must not be added silently to Minimal Axioms.
+ 
+-No axiom edit, obligation retirement, percentage movement, PR, or audit verdict was
+-made.  V1 and V4 failed.  The campaign is reranking the next unowned nonfermionic
+-positive target.
++The full packet is preserved in draft PR #7841 with the recovered original runner,
++a bounded source note, and a fresh `81/81` cache. No axiom edit, obligation
++retirement, percentage movement, or audit verdict was made. V1 and V4 still fail
++for TOE promotion; they do not veto preservation.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_DISCIPLINE_CHECKLIST.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_DISCIPLINE_CHECKLIST.md
+new file mode 100644
+index 0000000000..304829b057
+--- /dev/null
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_DISCIPLINE_CHECKLIST.md
+@@ -0,0 +1,158 @@
++# No-Go Discipline Checklist
++
++## Exact bounded sentence
++
++> The enumerated current structural premises do not select the Wilson
++> same-slot point on the supplied carrier.
++
++This is a current-premise counterfamily statement. It is not a universal
++impossibility claim, not a claim that no future law can select the point, and
++not a claim that an axiom amendment is required.
++
++## N1 — Alternative route enumeration
++
++The families below differ in primary object, mechanism, or terminal
++obligation under the proof-search governance tuple.
++
++| Family | Marker | Attempt and terminal result | Evidence |
++|---|---|---|---|
++| Same-operator coefficient reconstruction | `ATTEMPTED` | Put canonical electric and magnetic forms in one self-adjoint Hamiltonian and ask whether the named structural predicates fix their ratio. The exact family `H_g=g^2H_E+g^-2H_B` survives for every `g>0`, so those predicates do not fix the ratio. | Source note Theorem H1 and the primary runner's exact coefficient controls. |
++| Invariant-effect selection | `ATTEMPTED` | Ask gauge covariance to choose the binary registration effect. Schur decomposition gives the full square `aP_3+bP_1`; sharpness is an additional condition. | Source note Theorem E1 and commutant/effect checks. |
++| Repeatable-instrument selection | `ATTEMPTED` | Fix the sharp `P_3/P_1` effects, then ask covariance and repeatability to choose the state update. The explicit `lambda` family supplies distinct CP, complete, covariant, repeatable maps. | Source note Theorem I1 and Choi/covariance/purity checks. |
++| Exact same-carrier electric/magnetic duality | `ATTEMPTED` | Try to force equal coefficients through a unitary or antiunitary exchange of the raw electric and magnetic operators. The unbounded Casimir and bounded Wilson multiplier cannot be conjugate. | Source note Theorem D1 and Casimir/center controls. |
++| Identity-tangent fluctuation law | `ATTEMPTED` | Ask an independently fixed one-tick kernel law to set the canonical negative log-Hessian. This route succeeds conditionally: `-Hess_e log K_tick=g_can` implies `beta=2N_c`; the campaign did not derive the law. | Source note Theorem W1 and independently evaluated matrix Hessians. |
++| Minimal-axiom/Record rate selection | `RULED OUT BY PRIOR` for the named foundation alone | Ask Admissibility or Record to supply the Hamiltonian, step rate, or normalization. The approved foundation explicitly withholds Hamiltonians, transition weights, dynamics, source/action, and `g_bare=1`; a downstream law remains allowed. | `docs/MINIMAL_AXIOMS_2026-06-29.md:114-145,181-190`, registered as the canonical premise node. |
++| Convention or meta-identification | `ATTEMPTED` | Declare the Wilson and link scalars to occupy one slot. This closes bookkeeping and locates `beta=6`, but it does not provide the requested physical derivation; the bounded claim explicitly leaves this route open as convention-level handling. | `docs/G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md:4-19,39-62`. |
++
++There are at least five normalized route families. One route remains
++constructively open and is displayed as the positive continuation, which is
++why the packet ships only the narrow current-premise sentence.
++
++## N2 — Wall-independence audit
++
++The collapsed open-condition set is:
++
++- `W_S`: sharpness, needed only to reduce the invariant effect square to the
++  nontrivial `P_3/P_1` PVM;
++- `W_U`: an update-law selector conditional on fixed sharp effects;
++- `W_N`: an independently fixed one-tick dimensionless fluctuation
++  normalization, needed to select a Wilson coefficient;
++- `W_A`: physical selection/identification of the Wilson action surface,
++  outside the supplied-action theorem.
++
++| Pair | Closing first closes second? | Closing second closes first? | Independent? |
++|---|---|---|---|
++| `W_S`, `W_U` | no; sharp effects retain the `lambda` family | no; an update rule conditional on an effect need not derive sharpness | yes |
++| `W_S`, `W_N` | no; effect sharpness fixes no gauge stiffness | no; a fluctuation coefficient fixes no POVM effect | yes |
++| `W_S`, `W_A` | no; a sharp registration does not select an action | no; an action does not force a sharp effect | yes |
++| `W_U`, `W_N` | no; repeatable update selection need not fix a tick rate | no; a Hessian law need not choose a measurement update | yes |
++| `W_U`, `W_A` | no; a state-update law does not select Wilson dynamics | no; Wilson dynamics does not select the instrument | yes |
++| `W_N`, `W_A` | no; the displayed law is conditional on a named kernel and does not physically identify that kernel | no; choosing the Wilson form leaves `beta` free | yes |
++
++No wall is duplicated or downstream of another as defined. The conditional
++Wilson coefficient theorem uses `W_A` as a supplied surface and isolates
++`W_N`; it does not claim to close the full four-condition set.
++
++## N3 — Hidden-wall scan
++
++The source note was searched for the required phrases and close variants.
++
++| Hit | Classification | Treatment |
++|---|---|---|
++| `supplied` carrier/action/kernel/tick-law, source note lines 17-35 and 40-86 | explicit conditions `W_A`/`W_N`, not hidden | Kept in Claim scope and Supplied carriers; every conclusion is conditional on them. |
++| `canonical` Casimir/half-trace/metric, lines 67-70 and 241-272 | explicit normalization convention inside the named carrier | Kept with the defining equation `Tr(T_aT_b)=delta_ab/2`; no physical selection is inferred from the word. |
++| `current structural premises`, lines 301-307 | quantified reference to Theorem H1's enumerated predicates | Narrowed to the exact quoted sentence; no claim about all possible premises. |
++| `we assume`, `by construction`, `as is standard`, `the framework provides`, `bridge context`, `background`, `naturally`, `obviously`, `standard QFT`, or status-style `registered` | no load-bearing hit | No hidden condition found. `registration carrier` is an object name, not a claim of registered authority. |
++
++Result: no new hidden condition was discovered; the explicit wall count remains
++unchanged.
++
++## N4 — Residual matching
++
++The new proof is self-contained and does not require any prior negative row as
++a witness. Nearby rows were nevertheless checked so their residuals are not
++conflated.
++
++| Prior surface | Prior residual | Current residual | Match? / use |
++|---|---|---|---|
++| `docs/G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026-06-18.md:225-235,283-290` | derive same-slot identity from an operator/Hamiltonian surface | select the electric/magnetic relative coefficient on the supplied Wilson carrier | yes, target identity only; current ledger status is unaudited, so it is not proof support |
++| `docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md:119-131,195-199` | unit leading generator point is located but not selected | exact identity-tangent unit Hessian law is sufficient but not derived | yes in selection shape; current ledger status is unaudited, so context only |
++| `docs/GAUGE_LINK_PER_RECORD_STEP_RATE_DIAL_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md:97-149,207-224` | heat-kernel per-step rate remains free | Wilson electric/magnetic coefficient ratio | no; rate is a possible bridge, not the same residual; dropped as proof support |
++| `docs/GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md:71-113,209-233` | binary pointer capacity and informative fraction | POVM sharpness and state-update uniqueness | no; cardinality does not establish sharpness or a unique instrument; dropped as proof support |
++| `docs/GAUGE_LINK_CENTRAL_REGISTRATION_INDUCED_BI_INVARIANT_STEP_KERNEL_THEOREM_NOTE_2026-07-02.md:183-224,264-312` | consequences inside a supplied positive-Lueders subclass | whether covariance/repeatability select Lueders | no as a negative witness; its supplied restriction is precisely what this packet varies |
++| `docs/MINIMAL_AXIOMS_2026-06-29.md:114-145,181-190` | the approved foundation supplies no Hamiltonian, dynamics, source/action, update law, or `g_bare=1` | whether the named foundation alone supplies the missing law | yes; used only at that exact premise-boundary scope |
++
++Dropping the mismatched nearby rows leaves the packet's analytic theorems and
++runner as the proof. No witness-count claim depends on them.
++
++## N5 — Rhetoric and resolution audit
++
++| Resolution | What is actually tested or proved | Scope of negative wording |
++|---|---|---|
++| per-element | `4x4` commutant/effects, Choi matrices, Gell-Mann Gram, Wilson center bound, and identity Hessian | Supports the local effect, instrument, and plane-weight statements only. |
++| per-site | One supplied `3+1` representation carrier, including deterministic state and covariance controls | Supports nonuniqueness on this carrier, not every possible site representation. |
++| per-mode | Peter--Weyl Casimir growth is used analytically; no momentum-space or continuum-mode computation is made | No all-mode dispersion or continuum-spectrum negative is claimed. |
++| per-block | The coefficient counterfamily and bounded/unbounded operator types lift analytically to each fixed finite Wilson lattice | Excludes only raw exact exchange and selection by the enumerated predicates on that finite carrier. |
++| lattice-wide | Finite-lattice boundedness holds for every fixed finite plaquette set; no thermodynamic or continuum computation is executed | No infinite-volume, continuum Yang--Mills, confinement, or mass-gap no-go is claimed. |
++
++The source wording was narrowed accordingly: it says neither that beta is
++impossible to derive nor that all dualities fail. The primary runner prints
++all five resolution-certificate lines, and its cache lands in this PR.
++
++## N6 — Partial-closure paths and primitive registry
++
++The primitive registry and every relevant registered primitive source were
++read directly.
++
++| Candidate path | Current status | What it could close |
++|---|---|---|
++| `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` | approved primitive | Supplies OS0 kinetic-form isotropy `c_t=c_s`; explicitly supplies no dynamics, coupling, or selector, so it does not close `W_N`. |
++| `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` | approved primitive | Supplies units only; no dimensionless coefficient. |
++| `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` | approved primitive | Permits pointwise evaluation at the realized state; supplies no law or state-contingent normalization. |
++| `docs/G_BARE_SAME_SLOT_BETA6_CONVENTION_NOTE_2026-07-11.md` | meta convention | Can close label bookkeeping by definition, not the requested physical-law derivation. This remains an honest alternative disposition. |
++| `-Hess_e log K_tick=g_can` | unapproved downstream law isolated by this packet | Would close `W_N` inside the supplied Wilson family and give `beta=6`; it needs an independently fixed tick and must not be smuggled into the axioms. |
++| empirical calibration plus held-out predictions | open scientific route | Could fix a supplied kernel coefficient observationally without pretending it was premise-free. |
++| open PRs #7277 and #7314 | open, supplied-`beta=6` gauge calculations | They test other finite-Wilson interfaces and do not propose or derive the one-tick Hessian law. |
++
++No current open PR found by the fresh normalization/Hessian search closes
++`W_N`. The packet does not say a new axiom is required: convention,
++downstream-law, empirical, and changed-carrier routes all remain explicit.
++
++## N7 — Strongest steelman
++
++A hostile reviewer should object that the coefficient family proves only that
++the predicates chosen so far are insufficient. A reflection-positive transfer
++construction tied to an independently derived Record clock could produce a
++normalised one-tick fluctuation theorem; Theorem W1 would then turn that new
++mechanism directly into `beta=2N_c`. The concrete terminal obligation is to
++derive both the tick independently of gauge diffusion and
++`-Hess_e log K_tick=g_can`, not to declare either. The approved minimal-axiom
++boundary leaves downstream dynamics open rather than forbidding it, and the
++operator-side leading-point discussion in
++`docs/WILSON_TEMPORAL_KERNEL_CASIMIR_GENERATOR_BETA_GBARE_TRANSPORT_THEOREM_NOTE_2026-07-01.md:195-199`
++points at the same route, although that row is currently unaudited.
++
++This is a convincing objection to a universal no-go. Therefore the universal
++claim is rejected. The shipped claim is demoted to the exact current-premise
++counterfamily statement, which the steelman does not contradict.
++
++## N8 — Cross-cycle echo
++
++Repository searches covered the prescribed broad phrases, all Block 54 nearby
++notes, and current open PRs.
++
++| Similar earlier wall | Later mechanism/disposition | Application here |
++|---|---|---|
++| finite-link/Wilson same-slot ambiguity | separated into exact split algebra plus a meta convention | Keep the convention route available; do not relabel it a physical derivation. |
++| gauge per-step rate dial | rate can be supplied/calibrated after a kernel class is chosen | An independently fixed tick plus fluctuation law may close `W_N`; current packet does not foreclose it. |
++| spatial/temporal kinetic-form ambiguity | owner-approved `kinetic_isotropy_primitive` registered a structural choice | Shows an explicit primitive is a possible governance mechanism, but that primitive's own boundary excludes dimensionless dynamical couplings; a new proposal would require explicit approval. |
++| prior broad `requires new axiom` walls | later operational, convention, or bounded-import reframings narrowed them | This packet says neither “requires new axiom” nor “no retained primitive”; it lists the reframe and import-retirement paths. |
++
++The same mechanisms have been considered rather than silently excluded.
++
++## Gate verdict
++
++`PASS` for the quoted narrow current-premise sentence and raw same-carrier
++boundedness obstruction. `FAIL` for any universal statement that beta cannot
++be derived, that all electric/magnetic dualities fail, or that an axiom is
++required. The source note uses only the passing scope.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_LEDGER.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_LEDGER.md
+index 0567910342..dcdf981f76 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_LEDGER.md
+@@ -15,5 +15,7 @@ Existing scoped boundaries that must not be broadened:
+ If R1-R3 fail, N1-N8 will be run against the exact proposed negative wording before
+ any source note is drafted.
+ 
+-The completed gate is in `POSTEXECUTION_NO_GO_AUDIT.md`.  It authorizes only the
+-scoped non-entailment sentence above.  No negative source payload is promoted.
++The completed gate is in `POSTEXECUTION_NO_GO_AUDIT.md`. It authorizes only the
++scoped non-entailment sentence above. That boundary now appears inside the
++preserved bounded theorem packet in draft PR #7841; no broad no-go or retained
++promotion is asserted.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/OPPORTUNITY_QUEUE.md
+index bbb56b10af..b77822b8e1 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/OPPORTUNITY_QUEUE.md
+@@ -5,7 +5,7 @@ Scores are `0..3`; higher is better except imports and collision.
+ | Rank | Target | Positive chance | Blast radius | Imports | Collision | Disposition |
+ |---:|---|---:|---:|---:|---:|---|
+ | 1 | same-operator electric/magnetic normalization bridge | 0 on current premises | 3 | 3 | 0 | exhausted; exact missing law isolated |
+-| 2 | complete gauge-equivariant Record-instrument/generator cone | 0 for uniqueness on current premises | 1 | 2 | 1 | non-singleton cone proved in scratch |
++| 2 | invariant effect cone and Record-instrument uniqueness | 0 for uniqueness on current premises | 1 | 2 | 1 | effect cone classified; explicit non-Lueders family disproves uniqueness |
+ | 3 | exact SU(3) electric/magnetic duality stretch | 0 on same Wilson carrier | 3 | 3 | 0 | boundedness mismatch excludes route |
+ | 4 | downstream Wilson unit-Hessian law | 3 if owner-selected | 3 | 1 | 0 | science-level decision; not silently adopted |
+ | 5 | next unowned nonfermionic positive campaign | pending panel | 3 | pending | 0 | active rerank |
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PANEL_RETURN.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PANEL_RETURN.md
+index b919ce675f..b29d313a11 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PANEL_RETURN.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PANEL_RETURN.md
+@@ -18,8 +18,8 @@ Three initial conclusions agree:
+ The completed five-lens return is unanimous on the route decision:
+ 
+ 4. On the same finite Wilson carrier, the electric Casimir operator is unbounded
+-   while the magnetic plaquette multiplier is bounded.  Exact unitary or antiunitary
+-   exchange is impossible.  Peter-Weyl dualization changes to representation/spin-foam
++   while the magnetic plaquette multiplier is bounded. Exact unitary or antiunitary
++   exchange of those raw operators is impossible. Peter-Weyl dualization changes to representation/spin-foam
+    data; the exact `Z_3` center fixed point is approximately `0.670035`, not `6`, and
+    is not the full `SU(3)` theory.
+ 5. The smallest sufficient selector inside the fixed Wilson family is the
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALIDATION.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALIDATION.md
+index a9171ed516..2530416ed7 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALIDATION.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALIDATION.md
+@@ -12,10 +12,19 @@ Validated surfaces:
+ - invariant binary effect cone `E=aP_3+bP_1`, `0<=a,b<=1`;
+ - unique nontrivial invariant sharp PVM up to outcome labels;
+ - a continuous `lambda in [0,1]` family of CP, trace-complete, repeatable,
+-  gauge-covariant triplet/singlet instruments with different post-states;
++  gauge-covariant triplet/singlet instruments with different post-states
++  (an explicit nonuniqueness witness, not a complete instrument classification);
+ - positive two-coefficient electric/magnetic family with fixed product and free ratio;
+ - unbounded `SU(3)` Casimir sequence versus bounded Wilson plaquette multiplier;
+ - exact Wilson tangent-Hessian coefficients `1` at beta `6` and `4` at beta `24`.
+ 
+-The scratch script remains outside the repository because the promotion-value gate
+-failed.  No evidence cache or citation-graph mutation is needed.
++Recovery rerun:
++
++`python3 scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py`
++
++Result: `TOTAL: PASS=81 FAIL=0`.
++
++The original scratch script survived with SHA-256
++`2f80aa2cd4eafacc2d25dcb0848a61649514294b1a183cd751c1d1f77bb920e1`.
++Its scientific body is now preserved with a source note and fresh cache in draft
++PR #7841.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALUE_AUDIT.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALUE_AUDIT.md
+index 8e9a554a1e..3fd9ac3f7f 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALUE_AUDIT.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/POSTEXECUTION_VALUE_AUDIT.md
+@@ -3,12 +3,15 @@
+ The result is correct but does not retire the 945-descendant parent.
+ 
+ - V1: fail.  The one-tick Hessian normalization is isolated, not derived.
+-- V2: narrow pass.  The complete finite `3+1` effect/instrument witness and
+-  boundedness duality obstruction are new against inspected current surfaces.
++- V2: narrow pass. The complete finite `3+1` invariant-effect cone, explicit
++  repeatable-instrument nonuniqueness witness, and boundedness duality
++  obstruction are new against inspected current surfaces.
+ - V3: narrow pass.  Framework-native carrier and trace structure are essential to
+   the exact classification.
+ - V4: fail.  The decisive mathematics is short after the carrier is supplied.
+ - V5: narrow pass.  New rejectors sharpen the route but terminate at the already
+   known physical-law residual.
+ 
+-Any failure forbids a PR.  Disposition: checkpoint the route and pivot.
++Historical disposition: the failed gates were treated as forbidding a PR. Under
++the owner's preservation rule they instead forbid a TOE-promotion claim and guide
++priority. The science is preserved for review/classification in draft PR #7841.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PR_BACKLOG.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PR_BACKLOG.md
+index 20c7d24ce3..793b98c070 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PR_BACKLOG.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/PR_BACKLOG.md
+@@ -1,9 +1,11 @@
+ # PR Backlog
+ 
+-No PR is authorized at preregistration.
++Preservation PR opened:
++
++- Draft PR #7841 contains the campaign packet.
++- The original runner, bounded source note, and fresh `81/81` cache are now on
++  the branch.
++- V1-V5 govern classification and TOE-promotion value, not remote preservation.
+ 
+-- Open only if V1-V5 all pass on a coherent positive theorem.
+-- A decision memo or failed route remains branch-local/checkpoint-only unless it
+-  contains material new science and passes the same value gate.
+ - Do not stack on or modify #7277, #7314, the gravity stack, or active matter/Record
+   heads.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/REVIEW_HISTORY.md b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/REVIEW_HISTORY.md
+index cd20de28bb..b12b3107d8 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/REVIEW_HISTORY.md
+@@ -10,3 +10,7 @@
+ - 2026-09-02: five-lens panel rejected same-carrier self-duality and located the
+   smallest sufficient downstream law.  Direct self-review and N1-N8 passed at the
+   scoped wording.  V1 and V4 failed, so no science payload or PR was prepared.
++- 2026-09-02: owner preservation policy superseded the PR veto. Draft PR #7841
++  opened; the surviving original scratch runner was recovered by hash, rerun at
++  `81/81`, and paired with a bounded source note and fresh cache. Classification
++  remains separate from retention and TOE movement.
+diff --git a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/STATE.yaml b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/STATE.yaml
+index 3728363b1c..90b26727c2 100644
+--- a/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/STATE.yaml
++++ b/.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/STATE.yaml
+@@ -13,7 +13,7 @@ lock_mode: cooperative
+ lock_owner: codex-root-toe-gauge-normalization-block54
+ lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
+ goal: derive the pure-gauge same-operator normalization bridge or the minimal physical-law cut
+-active_route: post-Block54 nonfermionic portfolio rerank
++active_route: block54_remote_preservation_and_classification
+ hard_residual: the current foundation supplies neither a gauge action nor the one independent dimensionless fluctuation normalization needed to select its coupling
+ target_contract_status: executed_no_positive_closure
+ trace_gate_classification: registered_parent_obligation
+@@ -22,5 +22,9 @@ obligation_retirement: 0
+ toe_percentage_movement: 0
+ files_touched:
+   - .claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/
+-next_exact_action: select the highest-probability unowned nonfermionic positive target from the refreshed panel
++  - docs/GAUGE_INVARIANT_EFFECT_INSTRUMENT_AND_WILSON_GENERATOR_NORMALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-02.md
++  - scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py
++  - logs/runner-cache/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.txt
++pr_status: draft_pr_7841_open
++next_exact_action: independently review and classify the preserved Block 54 packet while keeping the one-tick fluctuation law open
+ stop_condition: runtime exhausted, a promotion-grade positive theorem is packaged, or the refreshed nonconflicting queue is globally exhausted
+diff --git a/docs/GAUGE_INVARIANT_EFFECT_INSTRUMENT_AND_WILSON_GENERATOR_NORMALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-02.md b/docs/GAUGE_INVARIANT_EFFECT_INSTRUMENT_AND_WILSON_GENERATOR_NORMALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-02.md
+new file mode 100644
+index 0000000000..525064aada
+--- /dev/null
++++ b/docs/GAUGE_INVARIANT_EFFECT_INSTRUMENT_AND_WILSON_GENERATOR_NORMALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-02.md
+@@ -0,0 +1,350 @@
++# Gauge-Invariant Effect, Instrument, and Wilson-Generator Normalization Boundary
++
++**Date:** 2026-09-02
++**Claim type:** bounded_theorem
++**Status authority:** independent audit only. This note sets no audit verdict,
++retires no obligation, and changes no TOE percentage.
++**Primary runner:**
++[`scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py`](../scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py)
++**Cached receipt:**
++[`logs/runner-cache/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.txt`](../logs/runner-cache/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.txt)
++
++## Claim scope
++
++This packet proves four finite-carrier statements and locates one exact
++sufficient-law cut.
++
++1. On the supplied `3+1` representation carrier
++   `H=C^3 direct_sum C`, the complete `SU(3)`-invariant binary-effect cone is
++   `E=a P_3+b P_1`, with `0<=a,b<=1`.
++2. If sharpness is separately supplied, the only nontrivial invariant binary
++   PVM is `{P_3,P_1}`, up to exchanging outcome labels. Even then, covariance,
++   trace completeness, and repeatability do not select the Lueders update: an
++   explicit continuous non-Lueders family has those same effects.
++3. On a supplied finite Wilson gauge Hilbert space, the positive same-carrier
++   Hamiltonians `H_g=g^2 H_E+g^-2 H_B`, `g>0`, preserve the enumerated
++   gauge, positivity, isotropy, and coefficient-product properties while
++   retaining a free relative coefficient. Moreover, an exact unitary or
++   antiunitary exchange of raw `H_E` and `H_B` on this carrier is impossible:
++   `H_E` is unbounded and `H_B` is bounded.
++4. For the supplied Wilson plane weight, the identity-tangent negative
++   log-Hessian is exactly `(beta/(2 N_c)) g_can`. Therefore the separately
++   supplied one-tick fluctuation law
++   `-Hess_e log K_tick=g_can` selects `beta=2 N_c`, hence `beta=6` for
++   `N_c=3`.
++
++The fourth item is a sufficient conditional law, not a derivation from the
++current axioms. The first three items show why the structural inputs tested in
++this campaign do not themselves supply that law.
++
++## 1. Supplied carriers and notation
++
++### 1.1 Registration carrier
++
++Let
++
++```text
++H = C^3 direct_sum C,
++R(U) = U direct_sum 1,       U in SU(3),
++P_3 = diag(1,1,1,0),
++P_1 = diag(0,0,0,1).
++```
++
++The `C^3` fundamental representation and the trivial representation are
++irreducible and inequivalent. This is the supplied `3+1` carrier used here;
++the theorem does not derive that carrier from the minimal axioms.
++
++### 1.2 Finite Wilson gauge carrier
++
++On a finite lattice with edge set `E` and plaquette set `P`, take
++
++```text
++K = L^2(SU(3)^E),
++H_E = sum_edges Delta_edge,
++H_B = sum_plaquettes [1-(1/3) Re Tr U_p],
++```
++
++where `Delta_edge` is the nonnegative canonical Casimir/Laplacian in the
++half-trace normalization
++
++```text
++Tr(T_a T_b)=delta_ab/2.
++```
++
++Boundary conditions and the finite cell complex are fixed. The electric and
++magnetic operators are supplied Wilson/Kogut--Susskind objects, not outputs of
++Admissibility or Record.
++
++### 1.3 Wilson plane weight
++
++For `SU(N_c)`, define the supplied one-plane weight
++
++```text
++K_beta(U)=Z_beta^-1 exp[(beta/N_c) Re Tr U],       beta>0.
++```
++
++The scalar `Z_beta` is independent of the tangent coordinate and therefore
++drops out of its log-Hessian.
++
++## 2. Complete invariant binary-effect cone
++
++### Theorem E1
++
++An operator commutes with every `R(U)` if and only if it has the form
++
++```text
++X=x_3 P_3+x_1 P_1.
++```
++
++Consequently, every invariant binary POVM is `{E,I-E}` with
++
++```text
++E=a P_3+b P_1,       0<=a,b<=1.
++```
++
++The invariant effect set is therefore a square, not a single point. Its
++projection-valued corners are `0`, `P_3`, `P_1`, and `I`; after the two trivial
++effects are removed, `{P_3,P_1}` is the unique nontrivial invariant sharp
++binary PVM up to outcome labels.
++
++### Proof
++
++Schur's lemma makes the commutant scalar on each irreducible summand. The
++summands are inequivalent, so no off-diagonal intertwiner survives. Hermiticity
++makes the two coefficients real, and `0<=E<=I` is exactly
++`0<=a,b<=1`. Idempotence imposes `a,b in {0,1}`. The runner independently
++computes the commutant nullity from all eight embedded Gell-Mann generators and
++checks the effect and projection conditions.
++
++Sharpness is load-bearing. Gauge invariance alone permits every interior point
++of the square, including the completely uninformative `E=I/2`.
++
++## 3. Repeatability does not select the update map
++
++### Theorem I1
++
++For every `lambda in [0,1]`, define the two outcome operations
++
++```text
++I_3^lambda(rho)
++  = lambda P_3 rho P_3
++    +(1-lambda) Tr(P_3 rho) P_3/3,
++
++I_1(rho)=P_1 rho P_1.
++```
++
++Then:
++
++- both maps are completely positive;
++- `Tr[I_3^lambda(rho)+I_1(rho)]=Tr rho`;
++- their effects are exactly `P_3` and `P_1`;
++- each outcome is repeatable under the same sharp PVM;
++- the instrument is `SU(3)`-covariant; and
++- different `lambda` give different post-measurement states.
++
++Only `lambda=1` is the Lueders instrument. Thus even supplied sharpness,
++covariance, effect identity, trace completeness, and outcome repeatability do
++not uniquely select the state-update law.
++
++### Proof
++
++Compression by `P_3` and `P_1` is completely positive. The map
++`rho -> Tr(P_3 rho)P_3/3` is a prepare-after-effect channel and is completely
++positive; convexity proves complete positivity for the full interval. The
++trace identity follows from `P_3+P_1=I`. Both outputs lie entirely in their
++named sectors, which proves repeatability. Since `P_3/3` is invariant under
++the fundamental `SU(3)` action, covariance is immediate.
++
++For a pure state in the triplet sector, output purity varies from `1/3` at
++`lambda=0` to `1` at `lambda=1`, so the family is not an alternative Kraus
++description of one channel. The runner checks Choi positivity, trace
++completeness, repeatability, covariance, and this purity witness at four
++values of `lambda`.
++
++This theorem exhibits a nonunique family; it does not claim to classify every
++repeatable covariant instrument.
++
++## 4. Same-carrier coefficient counterfamily
++
++### Theorem H1
++
++For each `g>0`, let
++
++```text
++H_g=g^2 H_E+g^-2 H_B.
++```
++
++Every `H_g` is nonnegative, gauge invariant, and self-adjoint on the domain of
++`H_E`. If the edge and plaquette sums use the same coefficient on symmetry
++related cells, each is spatially isotropic on the fixed lattice. The product
++of the displayed electric and magnetic coefficients is one for every `g`,
++while their ratio is `g^4` and they are equal only at `g=1`.
++
++A common clock rescaling `H_g -> c H_g`, `c>0`, multiplies both coefficients
++and leaves their ratio unchanged. Thus positivity, gauge invariance, spatial
++isotropy, the coefficient-product constraint, and a common clock choice do not
++select `g=1` on this supplied family.
++
++### Proof
++
++`H_E` is a nonnegative self-adjoint finite sum of commuting edge Casimirs.
++`H_B` is a bounded nonnegative multiplication operator on a finite lattice.
++The bounded-perturbation theorem therefore makes `H_g` self-adjoint on
++`Dom(H_E)` for every `g>0`. Gauge invariance and lattice isotropy hold term by
++term. The coefficient statements are exact scalar algebra.
++
++This is a counterfamily only to the enumerated premises. A separately derived
++electric/magnetic equality, fluctuation law, calibrated tick, or other physical
++condition could select one member.
++
++## 5. Exact same-carrier exchange obstruction
++
++### Theorem D1
++
++There is no unitary or antiunitary operator on the supplied finite-lattice
++Hilbert space that exactly exchanges the raw electric Casimir operator `H_E`
++with a finite nonzero affine rescaling of the Wilson multiplication operator
++`H_B`.
++
++### Proof
++
++The `SU(3)` irreducible representations `(p,0)` have
++
++```text
++C_2(p,0)=(p^2+3p)/3,
++```
++
++which is unbounded as `p` grows. Peter--Weyl sectors carrying this sequence
++occur in `L^2(SU(3))`, so `H_E` is unbounded.
++
++For every `U in SU(3)`,
++
++```text
++-3/2 <= Re Tr U <= 3,
++0 <= 1-(1/3)Re Tr U <= 3/2.
++```
++
++On a finite lattice, `0<=H_B<=3|P|/2`; it is bounded. Unitary and antiunitary
++conjugation preserve boundedness. An unbounded operator therefore cannot be
++conjugate to a finite affine rescaling of `H_B`.
++
++This excludes only a raw exact electric/magnetic exchange on this Hilbert
++space. It does not exclude dual formulations on enlarged or different
++carriers, representation/spin-foam transforms, continuum or infrared
++dualities, or a new theory that reduces back to Wilson observables by a proved
++bridge.
++
++## 6. Exact Wilson tangent Hessian and the sufficient law
++
++### Theorem W1
++
++Write `U(x)=exp(i x^a T_a)` near the identity. Canonical half-trace
++normalization gives
++
++```text
++Re Tr U(x)
++  = N_c-(1/4) delta_ab x^a x^b+O(|x|^4).
++```
++
++Hence
++
++```text
++-Hess_e log K_beta
++  = [beta/(2N_c)] g_can.
++```
++
++This is an exact tangent-Hessian identity for every positive `beta`, not the
++large-`beta` heat-kernel generator asymptotic.
++
++Therefore, inside the supplied Wilson family, the one-scalar physical law
++
++```text
++-Hess_e log K_tick=g_can
++```
++
++is sufficient to imply
++
++```text
++beta=2N_c,
++beta=6 when N_c=3.
++```
++
++At `beta=24` the Hessian coefficient is four, providing an explicit off-target
++control. The tick in the law must be fixed independently of gauge diffusion;
++otherwise a time or rate convention can insert the desired normalization and
++the argument is circular.
++
++### Proof
++
++Expand the exponential to second order. Tracelessness removes the linear term,
++and
++
++```text
++Re Tr[-(x^a T_a)(x^b T_b)/2]
++  =-(1/4) delta_ab x^a x^b.
++```
++
++Multiplication by `beta/N_c` and taking the negative Hessian gives the stated
++coefficient. Equality with `g_can` is equivalent to
++`beta/(2N_c)=1`.
++
++## 7. What the packet decides
++
++The positive decisions are:
++
++- the full invariant binary-effect cone on the supplied `3+1` carrier is
++  known exactly;
++- sharpness selects the effect partition but not the repeatable covariant
++  update;
++- raw same-carrier electric/magnetic exchange is not a valid normalization
++  selector;
++- within the Wilson family, the missing physical input is compressed to the
++  exact one-tick Hessian law above.
++
++The bounded negative statement is only:
++
++> The enumerated current structural premises do not select the Wilson
++> same-slot point on the supplied carrier.
++
++Alternative routes remain live: derive an independent physical tick and its
++fluctuation law; derive another action or kernel; calibrate a supplied law and
++make held-out predictions; construct a duality on a different carrier with an
++exact Wilson reduction; or adopt explicit convention-level bookkeeping.
++
++## 8. Boundaries and falsifiers
++
++This packet does not:
++
++- derive the `3+1` representation carrier, Wilson action, Wilson plane weight,
++  electric Hamiltonian, Record instrument, or occurrence law from the minimal
++  axioms;
++- claim a complete classification of repeatable instruments;
++- rule out all electric/magnetic dualities;
++- derive the one-tick Hessian law or recommend silently adding it to the
++  minimal axioms;
++- establish same-slot physical identification, continuum Yang--Mills, a mass
++  gap, confinement, Standard Model identification, or TOE closure;
++- apply an audit verdict or move a retained score.
++
++The packet is falsified if the commutant contains another independent block,
++an invariant effect lies outside the displayed square, one of the instrument
++maps loses complete positivity/completeness/repeatability/covariance, all
++`lambda` produce the same channel, a tested structural premise fixes the
++relative coefficient in the displayed operator family, `H_E` is bounded,
++`H_B` is unbounded on a finite carrier, or the Wilson negative log-Hessian
++differs from `beta/(2N_c)` in the named normalization.
++
++The current N1--N8 stress test is preserved in the committed
++[No-Go Discipline checklist](../.claude/science/physics-loops/toe-gauge-instrument-generator-closure-block54-20260902/NO_GO_DISCIPLINE_CHECKLIST.md).
++The earlier prose pass remains in the campaign directory as historical state.
++
++## 9. Recovery provenance
++
++The original scratch runner survived at `/private/tmp/gauge54_probe.py` with
++SHA-256
++`2f80aa2cd4eafacc2d25dcb0848a61649514294b1a183cd751c1d1f77bb920e1`.
++The repository runner preserves its scientific body. Repository-facing
++metadata and final `TOTAL:` punctuation were normalized, and the Wilson
++Hessian and center-bound checks were strengthened to derive their tested
++matrices independently. It was executed again after recovery and reports
++`TOTAL: PASS=81 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index edcc55f832..6e4eb8cf7c 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+  "edge_count": 15752,
+- "node_count": 5558,
++ "node_count": 5559,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -5658,6 +5658,10 @@
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+   },
++  "gauge_invariant_effect_instrument_and_wilson_generator_normalization_boundary_bounded_theorem_note_2026-09-02": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "gauge_link_binary_registration_capacity_step_kernel_pin_theorem_note_2026-07-02": {
+    "deps_hash": "e925351a8aaf",
+    "out_degree": 5
+diff --git a/logs/runner-cache/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.txt b/logs/runner-cache/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.txt
+new file mode 100644
+index 0000000000..c77d763d3b
+--- /dev/null
++++ b/logs/runner-cache/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.txt
+@@ -0,0 +1,106 @@
++===== runner cache v1 =====
++runner: scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py
++runner_sha256: 0ef00a96da747344c57676dfe09357f9817732439cf83408fcf67abcf03c85ef
++timeout_sec: 120
++exit_code: 0
++elapsed_sec: 0.14
++status: ok
++----- stdout -----
++PASS canonical half-trace Gram
++PASS 3+1 SU3 commutant has dimension two :: nullity=2
++PASS P3 and P1 commute with all generators
++PASS unsharp invariant effect (0.2,0.8)
++PASS binary complement (0.2,0.8)
++PASS unsharp invariant effect (0.5,0.5)
++PASS binary complement (0.5,0.5)
++PASS unsharp invariant effect (0.9,0.1)
++PASS binary complement (0.9,0.1)
++PASS all invariant sharp effects are four commutant corners :: [(0, 0), (0, 1), (1, 0), (1, 1)]
++PASS unique nontrivial invariant PVM up to labels
++PASS triplet instrument CP lambda=0.0
++PASS singlet instrument CP lambda=0.0
++PASS instrument trace complete lambda=0.0 seed=1
++PASS triplet outcome repeatable lambda=0.0 seed=1
++PASS singlet outcome repeatable lambda=0.0 seed=1
++PASS instrument trace complete lambda=0.0 seed=2
++PASS triplet outcome repeatable lambda=0.0 seed=2
++PASS singlet outcome repeatable lambda=0.0 seed=2
++PASS instrument trace complete lambda=0.0 seed=3
++PASS triplet outcome repeatable lambda=0.0 seed=3
++PASS singlet outcome repeatable lambda=0.0 seed=3
++PASS triplet instrument gauge covariance lambda=0.0 seed=4
++PASS triplet instrument gauge covariance lambda=0.0 seed=5
++PASS instrument continuum changes post-state lambda=0.0 :: purity=0.333333333
++PASS triplet instrument CP lambda=0.25
++PASS singlet instrument CP lambda=0.25
++PASS instrument trace complete lambda=0.25 seed=1
++PASS triplet outcome repeatable lambda=0.25 seed=1
++PASS singlet outcome repeatable lambda=0.25 seed=1
++PASS instrument trace complete lambda=0.25 seed=2
++PASS triplet outcome repeatable lambda=0.25 seed=2
++PASS singlet outcome repeatable lambda=0.25 seed=2
++PASS instrument trace complete lambda=0.25 seed=3
++PASS triplet outcome repeatable lambda=0.25 seed=3
++PASS singlet outcome repeatable lambda=0.25 seed=3
++PASS triplet instrument gauge covariance lambda=0.25 seed=4
++PASS triplet instrument gauge covariance lambda=0.25 seed=5
++PASS instrument continuum changes post-state lambda=0.25 :: purity=0.375000000
++PASS triplet instrument CP lambda=0.75
++PASS singlet instrument CP lambda=0.75
++PASS instrument trace complete lambda=0.75 seed=1
++PASS triplet outcome repeatable lambda=0.75 seed=1
++PASS singlet outcome repeatable lambda=0.75 seed=1
++PASS instrument trace complete lambda=0.75 seed=2
++PASS triplet outcome repeatable lambda=0.75 seed=2
++PASS singlet outcome repeatable lambda=0.75 seed=2
++PASS instrument trace complete lambda=0.75 seed=3
++PASS triplet outcome repeatable lambda=0.75 seed=3
++PASS singlet outcome repeatable lambda=0.75 seed=3
++PASS triplet instrument gauge covariance lambda=0.75 seed=4
++PASS triplet instrument gauge covariance lambda=0.75 seed=5
++PASS instrument continuum changes post-state lambda=0.75 :: purity=0.708333333
++PASS triplet instrument CP lambda=1.0
++PASS singlet instrument CP lambda=1.0
++PASS instrument trace complete lambda=1.0 seed=1
++PASS triplet outcome repeatable lambda=1.0 seed=1
++PASS singlet outcome repeatable lambda=1.0 seed=1
++PASS instrument trace complete lambda=1.0 seed=2
++PASS triplet outcome repeatable lambda=1.0 seed=2
++PASS singlet outcome repeatable lambda=1.0 seed=2
++PASS instrument trace complete lambda=1.0 seed=3
++PASS triplet outcome repeatable lambda=1.0 seed=3
++PASS singlet outcome repeatable lambda=1.0 seed=3
++PASS triplet instrument gauge covariance lambda=1.0 seed=4
++PASS triplet instrument gauge covariance lambda=1.0 seed=5
++PASS instrument continuum changes post-state lambda=1.0 :: purity=1.000000000
++PASS E/B product blind at g2=1/4
++PASS coefficient equality iff g2=1 at g2=1/4
++PASS E/B product blind at g2=1
++PASS coefficient equality iff g2=1 at g2=1
++PASS E/B product blind at g2=4
++PASS coefficient equality iff g2=1 at g2=4
++PASS E/B product blind at g2=9
++PASS coefficient equality iff g2=1 at g2=9
++PASS SU3 electric Casimir sequence strictly increasing
++PASS SU3 electric Casimir is unbounded by formula :: C2(100,0)=10300/3
++PASS single Wilson magnetic plaquette bounded
++PASS Wilson tangent Hessian beta=6 :: coef=1
++PASS Wilson tangent Hessian beta=24 :: coef=4
++PASS unit canonical Hessian uniquely returns beta=2Nc
++SUMMARY
++COMMUTANT_NULLITY=2
++INVARIANT_EFFECT_CONE={(a,b): 0<=a,b<=1}
++SHARP_NONTRIVIAL_EFFECTS={P3,P1} up to labels
++REPEATABLE_COVARIANT_INSTRUMENTS=continuum(lambda in [0,1])
++HAMILTONIAN_RELATIVE_COEFFICIENT=free(g^2>0)
++RAW_EB_SAME_CARRIER_DUALITY=excluded(boundedness mismatch)
++WILSON_UNIT_HESSIAN_LAW=>beta=2Nc=6 (supplied law, not derived)
++per_element: checked — canonical generator Gram, invariant effects, Choi positivity, center bound, and identity-tangent Wilson Hessian
++per_site: checked — the supplied 3+1 carrier instrument was tested for completeness, repeatability, covariance, and distinct post-states
++per_mode: checked and not executed — no momentum-space mode or continuum spectral claim is made by this finite-carrier packet
++per_block: checked — exact coefficient algebra and bounded/unbounded spectral witnesses support the analytic finite-lattice lift
++lattice_wide: checked and not executed — no thermodynamic, continuum, confinement, mass-gap, or full Standard Model claim was simulated
++TOTAL: PASS=81 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py b/scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py
+new file mode 100644
+index 0000000000..ac57bfdd4a
+--- /dev/null
++++ b/scripts/gauge_invariant_effect_instrument_generator_boundary_2026_09_02.py
+@@ -0,0 +1,286 @@
++#!/usr/bin/env python3
++"""Executable checks for the Block 54 gauge-instrument/generator boundary.
++
++Recovered from the original scratch runner (SHA-256
++2f80aa2cd4eafacc2d25dcb0848a61649514294b1a183cd751c1d1f77bb920e1).
++The original checks are preserved, with the Wilson Hessian and boundedness
++checks strengthened to derive their tested matrices independently.
++"""
++
++from __future__ import annotations
++
++import itertools
++import math
++from fractions import Fraction
++
++import numpy as np
++
++
++TOL = 5e-10
++passes = 0
++fails = 0
++
++
++def check(name: str, condition: bool, detail: str = "") -> None:
++    global passes, fails
++    if condition:
++        passes += 1
++        print(f"PASS {name}" + (f" :: {detail}" if detail else ""))
++    else:
++        fails += 1
++        print(f"FAIL {name}" + (f" :: {detail}" if detail else ""))
++
++
++def gell_mann_half() -> list[np.ndarray]:
++    z = 0.0j
++    i = 1.0j
++    mats = [
++        [[0, 1, 0], [1, 0, 0], [0, 0, 0]],
++        [[0, -i, 0], [i, 0, 0], [0, 0, 0]],
++        [[1, 0, 0], [0, -1, 0], [0, 0, 0]],
++        [[0, 0, 1], [0, 0, 0], [1, 0, 0]],
++        [[0, 0, -i], [0, 0, 0], [i, 0, 0]],
++        [[0, 0, 0], [0, 0, 1], [0, 1, 0]],
++        [[0, 0, 0], [0, 0, -i], [0, i, 0]],
++        [[1 / math.sqrt(3), 0, 0], [0, 1 / math.sqrt(3), 0], [0, 0, -2 / math.sqrt(3)]],
++    ]
++    return [np.asarray(m, dtype=complex) / 2 for m in mats]
++
++
++def embedded_generators() -> list[np.ndarray]:
++    out = []
++    for t in gell_mann_half():
++        x = np.zeros((4, 4), dtype=complex)
++        x[:3, :3] = t
++        out.append(x)
++    return out
++
++
++def commutant_nullity(gens: list[np.ndarray]) -> tuple[int, np.ndarray]:
++    # vec(XG-GX) = (G^T tensor I - I tensor G) vec(X), column convention.
++    ident = np.eye(4, dtype=complex)
++    constraints = []
++    for g in gens:
++        constraints.append(np.kron(g.T, ident) - np.kron(ident, g))
++    a = np.vstack(constraints)
++    _, s, vh = np.linalg.svd(a)
++    rank = int(np.sum(s > 1e-10))
++    return 16 - rank, vh[rank:].conj().T
++
++
++def choi(phi, d: int = 4) -> np.ndarray:
++    c = np.zeros((d * d, d * d), dtype=complex)
++    for i in range(d):
++        for j in range(d):
++            e = np.zeros((d, d), dtype=complex)
++            e[i, j] = 1
++            c += np.kron(e, phi(e))
++    return c
++
++
++def random_density(seed: int) -> np.ndarray:
++    rng = np.random.default_rng(seed)
++    x = rng.normal(size=(4, 4)) + 1j * rng.normal(size=(4, 4))
++    rho = x @ x.conj().T
++    return rho / np.trace(rho)
++
++
++def random_su3(seed: int) -> np.ndarray:
++    rng = np.random.default_rng(seed)
++    x = rng.normal(size=(3, 3)) + 1j * rng.normal(size=(3, 3))
++    q, r = np.linalg.qr(x)
++    phases = np.diag(r)
++    q = q @ np.diag(np.conj(phases) / np.abs(phases))
++    q = q / np.linalg.det(q) ** (1 / 3)
++    return q
++
++
++def casimir_su3(p: int, q: int) -> Fraction:
++    return Fraction(p * p + q * q + p * q + 3 * p + 3 * q, 3)
++
++
++def wilson_log_plane(beta: int, coordinates: np.ndarray) -> float:
++    """Unnormalised log plane weight along canonical SU(3) tangents."""
++    generators = gell_mann_half()
++    tangent = sum((coordinates[a] * generators[a] for a in range(8)), np.zeros((3, 3), dtype=complex))
++    eigenvalues = np.linalg.eigvalsh(tangent)
++    return beta / 3.0 * float(np.sum(np.cos(eigenvalues)))
++
++
++def finite_difference_negative_hessian(beta: int, step: float = 1.0e-3) -> np.ndarray:
++    """Independent central-difference Hessian of -log K_beta at the identity."""
++    origin = np.zeros(8)
++    f0 = wilson_log_plane(beta, origin)
++    result = np.zeros((8, 8))
++    for a in range(8):
++        plus = origin.copy()
++        minus = origin.copy()
++        plus[a] = step
++        minus[a] = -step
++        result[a, a] = -(wilson_log_plane(beta, plus) - 2.0 * f0 + wilson_log_plane(beta, minus)) / step**2
++        for b in range(a + 1, 8):
++            pp = origin.copy()
++            pm = origin.copy()
++            mp = origin.copy()
++            mm = origin.copy()
++            pp[a], pp[b] = step, step
++            pm[a], pm[b] = step, -step
++            mp[a], mp[b] = -step, step
++            mm[a], mm[b] = -step, -step
++            value = -(
++                wilson_log_plane(beta, pp)
++                - wilson_log_plane(beta, pm)
++                - wilson_log_plane(beta, mp)
++                + wilson_log_plane(beta, mm)
++            ) / (4.0 * step**2)
++            result[a, b] = result[b, a] = value
++    return result
++
++
++def main() -> None:
++    gens = embedded_generators()
++    gram = np.array([[np.trace(a @ b).real for b in gens] for a in gens])
++    check("canonical half-trace Gram", np.max(np.abs(gram - 0.5 * np.eye(8))) < TOL)
++
++    nullity, basis = commutant_nullity(gens)
++    check("3+1 SU3 commutant has dimension two", nullity == 2, f"nullity={nullity}")
++
++    p3 = np.diag([1, 1, 1, 0]).astype(complex)
++    p1 = np.diag([0, 0, 0, 1]).astype(complex)
++    check("P3 and P1 commute with all generators", all(np.linalg.norm(p3 @ g - g @ p3) < TOL and np.linalg.norm(p1 @ g - g @ p1) < TOL for g in gens))
++
++    # A continuum of invariant binary effects survives gauge symmetry.
++    for a, b in [(0.2, 0.8), (0.5, 0.5), (0.9, 0.1)]:
++        e = a * p3 + b * p1
++        ev = np.linalg.eigvalsh(e)
++        check(f"unsharp invariant effect ({a},{b})", ev.min() >= -TOL and ev.max() <= 1 + TOL)
++        check(f"binary complement ({a},{b})", np.linalg.norm(e + (np.eye(4) - e) - np.eye(4)) < TOL)
++
++    sharp = []
++    for a, b in itertools.product([0, 1], repeat=2):
++        e = a * p3 + b * p1
++        if np.linalg.norm(e @ e - e) < TOL:
++            sharp.append((a, b))
++    check("all invariant sharp effects are four commutant corners", sharp == [(0, 0), (0, 1), (1, 0), (1, 1)], str(sharp))
++    check("unique nontrivial invariant PVM up to labels", set(sharp[1:3]) == {(0, 1), (1, 0)})
++
++    # Even after sharp effects and repeatability are supplied, the covariant
++    # instrument is not unique: lambda interpolates Lueders and depolarization.
++    for lam in [0.0, 0.25, 0.75, 1.0]:
++        def phi3(rho, lam=lam):
++            block = p3 @ rho @ p3
++            return lam * block + (1 - lam) * np.trace(block) * p3 / 3
++
++        def phi1(rho):
++            return p1 @ rho @ p1
++
++        c3 = choi(phi3)
++        c1 = choi(phi1)
++        check(f"triplet instrument CP lambda={lam}", np.linalg.eigvalsh(c3).min() > -TOL)
++        check(f"singlet instrument CP lambda={lam}", np.linalg.eigvalsh(c1).min() > -TOL)
++
++        for seed in [1, 2, 3]:
++            rho = random_density(seed)
++            out3 = phi3(rho)
++            out1 = phi1(rho)
++            check(f"instrument trace complete lambda={lam} seed={seed}", abs(np.trace(out3 + out1) - 1) < TOL)
++            check(f"triplet outcome repeatable lambda={lam} seed={seed}", np.linalg.norm(p3 @ out3 @ p3 - out3) < TOL)
++            check(f"singlet outcome repeatable lambda={lam} seed={seed}", np.linalg.norm(p1 @ out1 @ p1 - out1) < TOL)
++
++        for seed in [4, 5]:
++            u = random_su3(seed)
++            r = np.zeros((4, 4), dtype=complex)
++            r[:3, :3] = u
++            r[3, 3] = 1
++            rho = random_density(seed + 10)
++            lhs = phi3(r @ rho @ r.conj().T)
++            rhs = r @ phi3(rho) @ r.conj().T
++            check(f"triplet instrument gauge covariance lambda={lam} seed={seed}", np.linalg.norm(lhs - rhs) < 2e-9)
++
++        pure = np.zeros((4, 4), dtype=complex)
++        pure[0, 0] = 1
++        purity = float(np.trace(phi3(pure) @ phi3(pure)).real)
++        expected = lam * lam + 2 * lam * (1 - lam) / 3 + (1 - lam) ** 2 / 3
++        check(f"instrument continuum changes post-state lambda={lam}", abs(purity - expected) < TOL, f"purity={purity:.9f}")
++
++    # Exact coefficient algebra: all g pass the isotropic product constraint;
++    # only an extra coefficient-equality condition selects g=1.
++    for g2 in [Fraction(1, 4), Fraction(1, 1), Fraction(4, 1), Fraction(9, 1)]:
++        a_e = g2
++        a_b = 1 / g2
++        check(f"E/B product blind at g2={g2}", a_e * a_b == 1)
++        check(f"coefficient equality iff g2=1 at g2={g2}", (a_e == a_b) == (g2 == 1))
++
++    # Raw same-carrier E/B swap is impossible at finite lattice volume:
++    # electric Casimirs are unbounded while every compact plaquette deficit is bounded.
++    c2 = [casimir_su3(p, 0) for p in range(21)]
++    check("SU3 electric Casimir sequence strictly increasing", all(c2[i + 1] > c2[i] for i in range(len(c2) - 1)))
++    check("SU3 electric Casimir is unbounded by formula", casimir_su3(100, 0) > 3000, f"C2(100,0)={casimir_su3(100,0)}")
++    # Re Tr U >= -3/2 for SU3, with the lower endpoint attained at a
++    # nontrivial center element, so 0 <= 1-ReTr(U)/3 <= 3/2.
++    center = np.exp(2j * math.pi / 3.0) * np.eye(3)
++    center_deficit = 1.0 - np.trace(center).real / 3.0
++    sampled_deficits = [1.0 - np.trace(random_su3(seed)).real / 3.0 for seed in range(20, 40)]
++    check(
++        "single Wilson magnetic plaquette bounded",
++        abs(center_deficit - 1.5) < TOL
++        and all(-TOL <= value <= 1.5 + TOL for value in sampled_deficits)
++        and Fraction(3, 2) < casimir_su3(3, 0),
++    )
++
++    # Exact tangent Hessian of the Wilson plane kernel.
++    nc = 3
++    tangent_generators = gell_mann_half()
++    symmetrized_gram = np.array(
++        [
++            [np.trace(a @ b + b @ a).real for b in tangent_generators]
++            for a in tangent_generators
++        ]
++    )
++    for beta in [6, 24]:
++        hessian_coefficient = Fraction(beta, 2 * nc)
++        analytic_hessian = beta / (2.0 * nc) * symmetrized_gram
++        finite_hessian = finite_difference_negative_hessian(beta)
++        expected_hessian = float(hessian_coefficient) * np.eye(8)
++        check(
++            f"Wilson tangent Hessian beta={beta}",
++            np.max(np.abs(analytic_hessian - expected_hessian)) < TOL
++            and np.max(np.abs(finite_hessian - expected_hessian)) < 2.0e-6,
++            f"coef={hessian_coefficient}",
++        )
++    check("unit canonical Hessian uniquely returns beta=2Nc", 2 * nc == 6)
++
++    print("SUMMARY")
++    print(f"COMMUTANT_NULLITY={nullity}")
++    print("INVARIANT_EFFECT_CONE={(a,b): 0<=a,b<=1}")
++    print("SHARP_NONTRIVIAL_EFFECTS={P3,P1} up to labels")
++    print("REPEATABLE_COVARIANT_INSTRUMENTS=continuum(lambda in [0,1])")
++    print("HAMILTONIAN_RELATIVE_COEFFICIENT=free(g^2>0)")
++    print("RAW_EB_SAME_CARRIER_DUALITY=excluded(boundedness mismatch)")
++    print("WILSON_UNIT_HESSIAN_LAW=>beta=2Nc=6 (supplied law, not derived)")
++    print(
++        "per_element: checked — canonical generator Gram, invariant effects, "
++        "Choi positivity, center bound, and identity-tangent Wilson Hessian"
++    )
++    print(
++        "per_site: checked — the supplied 3+1 carrier instrument was tested "
++        "for completeness, repeatability, covariance, and distinct post-states"
++    )
++    print(
++        "per_mode: checked and not executed — no momentum-space mode or "
++        "continuum spectral claim is made by this finite-carrier packet"
++    )
++    print(
++        "per_block: checked — exact coefficient algebra and bounded/unbounded "
++        "spectral witnesses support the analytic finite-lattice lift"
++    )
++    print(
++        "lattice_wide: checked and not executed — no thermodynamic, continuum, "
++        "confinement, mass-gap, or full Standard Model claim was simulated"
++    )
++    print(f"TOTAL: PASS={passes} FAIL={fails}")
++    raise SystemExit(1 if fails else 0)
++
++
++if __name__ == "__main__":
++    main()

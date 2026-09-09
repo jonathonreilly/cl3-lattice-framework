@@ -151,6 +151,10 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    'ac_reta_c3_source_response_spectral_identity_type_repair_bounded_theorem_note_2026-09-02': [
+        'scripts/reta_c3_source_response_independent_check_2026_09_02.py',
+        'scripts/reta_c3_source_response_mutation_check_2026_09_02.py',
+    ],
     'cubic_repulsive_flux_fixed_half_and_canonical_twists_bounded_theorem_note_2026-09-04': ['scripts/cubic_repulsive_flux_fixed_half_independent_check_2026_09_04.py'],
     'local_record_quench_finite_energy_and_ground_overlap_bounded_theorem_note_2026-09-04': ['scripts/local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04.py'],
     'repeated_record_matter_and_energy_conserving_apparatus_bounded_theorem_note_2026-09-05': ['scripts/repeated_record_matter_energy_apparatus_independent_check_2026_09_05.py'],
