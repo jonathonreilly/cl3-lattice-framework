@@ -1,0 +1,5 @@
+# Adaptive spectral affected source review
+
+PASS for workere92a5b3056d6dc847a0c2d36ff12230a99c88267aa5b07a2486550c6b4164d6d. Whole prior d444 is preserved. The imported proposal is identical to independently reviewed280781. The caller catches bounded proposal refusal, records it, falls back to fixed one, then always re-evaluates the original interval moments with the signed coefficient. Midpoint cap refusal never discards the original five candidates or gap bound. No moment, p/q, nominal or inverse operator factor changes.
+
+Reviewer-authored root preserves724c predecessor and adds independent bounded candidate reproduction, correct variable event grammar and directed recertification. Full synthetic adaptive fixture reconciled without Wick rerun; coherent false posterior rejected. Three additional tiny cases check both cancellation-avoiding branches (exact atom1/2 and2), and4096-bit refusal/fallback. No accepted values parsed. Parent/Primary affected root review and preregistration remain required.

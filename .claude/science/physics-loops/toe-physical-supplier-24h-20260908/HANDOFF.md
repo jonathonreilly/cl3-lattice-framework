@@ -1087,3 +1087,17 @@ Checkpoint85 preregisters a NEW continuation of the failed coarse quantum-state 
 A spectral inverse-residual estimator is being improved prospectively with one bounded positive dyadic tau candidate selected from moment midpoints and then reevaluated against full directed intervals. Its proof and independent synthetic checks pass; implementation/review and a separate preregistration remain pending. It computes only missing inner s3/s4 moments and reuses saved lower moments. No new spectral runtime has executed.
 
 Alpha and physical model selection remain open. Continue physics after checkpoint.
+
+# Physics campaign SSH status
+
+Updated 2026-09-10T02:50:11.416091+00:00. The campaign continues until 2026-09-10 10:27:17 UTC subject to usable quota.44 science PRs delivered, latest8079 remotely verified. Main remains e95797cc.64 inactive worktrees removed;55GiB free. Quota83% consumed at02:44UTC; no reset redeemed. No coordination PR or main merge. Formal audit remains unrun.
+
+The new composite coarse witness completed successfully once in113.57 seconds,87,408,640B external RSS and133,922,816B whole-tree peak. Result d69b839f; root acceptance af8f9d1e. It retains three original cases and76 events verbatim, resumes the original case3 panel, and adds2436 nodes. All15 output files and205 events passed root validation, including independent final high/mixed assembly and49-entry norm/radius arithmetic. The original299.83s protocol remains a preserved failure. Raw adapter contractions and native selected-frame/scalar truth remain inherited.
+
+All ten coarse witness exclusions are FALSE. The certified local norm lower bounds range approximately9.79e-9 to1.20e-5, below the required0.022 threshold; all numerical radii are small. This is an inconclusive witness, not evidence that the true global state error is small, not a no-go, and not a fine-consumer certificate. The seven local rows and conservative omitted-tail/metric charges limit this route. Stateweighted control remains open.
+
+The completed posterior estimates remain inconclusive: degree20 residual error6778.5093 around576.3565 and variational error7979.7212 around644.0920. Their saved results and accepted roots are already remote85. The error reduction is real but alpha still has no certified sign.
+
+Checkpoint86 preregisters the NEW spectral inverse-residual estimator. Worker9d8a5730/root2ed13e39;30s external/29.5s root/29s worker,384MiB. It reuses existing vacuum and lower source moments, computes only eight missing s3/s4 source moments across the two classes and two choices, and tests five fixed positive tau values plus one bounded dyadic proposal per residual. Midpoints only propose a parameter; all certified bounds use original directed intervals, including the negative coefficient of the first moment. Proposal cap failure is retained and falls back to fixed1; a negative certified upper bound refuses arithmetic. No p/q coefficients or nominal values change. All9098 full input hashes and source-only readiness pass. Independent worker/root review covers the adaptive candidate and580–588 successful events. Exact remote86 verification is required before launch.
+
+A first-principles dual-residual identity and sharp Kneser-spectrum remainder are under source-only derivation. They are prospective and have no native values. The stronger-estimator milestone is being packaged as one coherent support PR after the spectral outcome. Continue physics; alpha and physical model selection remain open.
