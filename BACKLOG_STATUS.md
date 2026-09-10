@@ -15,7 +15,7 @@ Zero drafts remain. Including pre-cutoff #8003–#8009, the session has134 direc
 
 Wave62 lands #6379 after three source corrections and same-session independent confirmation. Its producer passed9 checks in1.48 seconds; seven actual input tamper controls failed closed. An initial cache-wrapper directory-stat rejection is preserved, not treated as mathematical failure or PASS. The combined gate passed once in 254.605 seconds. All five original source/metadata bodies remain recoverable. [Evidence](backlog_evidence/wave62/INDEX.json).
 
-Next: reflection #6858/#6859 and curved-carrier #6844 corrections; seam/signature #6515+#6485 review. The complete12-unit routing preserves33 transferred scopes and8 partial Maxwell scientific obligations. Release removes owner reservations, not mathematical or physical obligations. Astra low is the focused reviewer default, with specific unresolved material questions escalated; formal audit stays deferred.
+Active W63: #6844 is independently confirmed and integrated. Reflection #6858/#6859 and seam #6515+#6485 have corrected source and fresh passing producers; final composition confirmation and the combined gate are pending. #7753 corrections and #7981→#7988 preparation run in parallel. Counts above remain actual landed/closed counts. The complete12-unit routing preserves33 transferred scopes and8 partial Maxwell scientific obligations. Release removes owner reservations, not mathematical or physical obligations. Astra low is the focused reviewer default, with specific unresolved material questions escalated; formal audit stays deferred.
 
 ## Landed source history
 

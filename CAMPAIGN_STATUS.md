@@ -52,7 +52,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. Wave62 landed #6379. Remaining17 original PRs are released for review, with33 transferred scopes retained. Reflection and curved-carrier repairs and seam-signature review are active;189 original science scopes landed. Formal audit deferred.
+1. Wave62 landed #6379. W63 is composing corrected #6844, #6858/#6859 and #6515+#6485; final review and combined gate remain pending. #7753 repairs and #7981→#7988 preparation are active. Still17 open originals and33 transferred scopes pending until actual landing;189 original science scopes landed. Formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
