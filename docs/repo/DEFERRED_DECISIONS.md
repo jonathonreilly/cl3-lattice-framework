@@ -173,7 +173,7 @@ review train) — the terminal's four computed legs plus the proposal.
    theorem's scope).
 4. The flavor/Koide program resumes on the owner's direction.
 
-## 6. The OS-closure owner-bar residue (b141/b142/b143, e_x = −1) — PARKED 2026-09-05
+## 6. The OS-closure owner-bar residue (b141/b142/b143, e_x = −1) — PICKED UP 2026-09-10
 
 **The question:** disposition of the three reserved OS-closure-era PRs —
 #6379 (origin-covariant shifted Hodge), #6858 (block-142 carrier
@@ -181,9 +181,18 @@ reflection blocker certification), #6859 (block-143 staggered pairing and
 skew-obstruction localization) — including the e_x = −1 class item the
 owner reserved.
 
-**Standing default:** the PRs stay open in the FRONT keep set; nothing
-lands or closes them without the owner; no live lane is blocked on them
-(the landed OS spine, blocks 153–173, did not consume them).
+**Owner direction, 2026-09-10:** review, correct and land all 18 remaining
+backlog PRs, including #6379, #6858 and #6859. This releases their owner
+reservation and permits review of their dependent original scopes. It does
+not accept their mathematics, adopt an action or primitive, or assign an
+audit verdict. Focused independent review and combined integration validation
+remain required; formal audit is deferred until a solid TOE is ready.
+The exact target heads, assignments and dispositions are maintained on the
+separate `ai/execution` planning branch in `BACKLOG_STATUS.md` and
+`backlog_evidence/released18-20260910/RELEASED_TARGETS.json`.
+
+The earlier standing default kept these PRs open pending owner direction.
+Wake condition 3 below has now occurred.
 
 **Wake conditions (any one):**
 1. The gravity mainline / source-action program cites or needs one of

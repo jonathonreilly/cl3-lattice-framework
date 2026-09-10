@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py
+runner_sha256: 5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445
+input_fingerprint_sha256: 0fc62f270b5f3eaa7d155281c5bc923273d0fb972c0e6e9197a17caeef010fe0
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 1.48
+status: ok
+----- stdout -----
+[PASS] A-current-authority-and-Block104-parent: current authority and conditional parent files match the reviewed filesystem bytes
+       SHA-256 bindings: 7 actual files; no moving-ref or ancestry gate
+[PASS] B-projective-one-site-lifts-and-honest-adjoint-action: the exact staggered one-site lifts anticommute while their operator conjugations form Z2...
+       Rt=Y tensor I, Rx=Z tensor Y; RxRt=-RtRx but Ad_Rx Ad_Rt=Ad_Rt Ad_Rx
+[PASS] C-fixed-origin-physical-Hodge-and-grading-obstruction: no nonzero physical Hodge tangent is fixed and the shear orbit exits the fixed degree-pr...
+       the Axt orbit adds A02; every fixed-frame Reynolds average vanishes
+[PASS] D-covariant-frame-degree-differential-Hodge-and-action: co-transforming N, d, and H gives exact nilpotent degree and same-action covariance in a...
+       N_o=R_o^dag N0 R_o, d_o=R_o^dag d0 R_o, H_o=R_o^dag H0 R_o
+[PASS] E-nonuniform-onsite-overlap-boundary: a single onsite shear Hodge is not block-onsite in shifted charts and the four physical ...
+       tangent-space intersection dimensions=[12, 4, 2, 2]
+[PASS] F-positive-translation-covariant-overlap-Hodge-repair: averaging over all anchors gives a positive flat-normalized bounded-local one-mode Hodge...
+       4x4 exact rational witness; cross-block residual ranks 16/16/16/12
+[PASS] G-overlap-degree-and-naive-differential-averaging-boundary: the positive overlap Hodge breaks every canonical grading and naive frame averaging dest...
+       Nbar=I; trivial dbar is invertible; character ranks are 4/4/0
+[PASS] H-constant-positive-metric-Clifford-and-reflection-parity: the H-normalized matter operator has the metric Clifford shell and the ADM shear is time...
+       (H^-1 M)^2=(s^T g^-1 s)I; P_t H(c) P_t=H(-c)
+[PASS] I-scope-no-go-discipline-and-TOE-firewall: N1-N8 preserve the common-d, Ward, ADM, OS, gravity, audit, axiom, and TOE obligations
+INPUT_BINDINGS: {'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/audit/data/axiom_premise_nodes.json': '615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37', 'docs/ADMISSIBILITY_DIRAC_KAHLER_COCHAIN_HODGE_QUADRATIC_WARD_SHELL_LOCALITY_OS_REENTRY_BOUNDED_THEOREM_NOTE_2026-08-14.md': '7173568478b913a58fd91fc0f07e36d3c81ddbe3ef716769572385b046afb5b2', 'docs/ADMISSIBILITY_DIRAC_KAHLER_WICK_PHASE_FINE_SITE_STAGGERED_OS_LORENTZ_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md': 'b88922df2f67dd1b57eca8cc2c95cb633c55f73c46dd5a927e4b624340d51b8f', 'scripts/admissibility_dirac_kahler_wick_phase_fine_site_staggered_os_lorentz_boundary_2026_08_14.py': '7028005ee1879740ea86fe4d92501b63e13cd85a8748ea595267f906dd257f8f', 'logs/runner-cache/admissibility_dirac_kahler_wick_phase_fine_site_staggered_os_lorentz_boundary_2026_08_14.txt': '909e4a4cac03609b2351a911e80f0b78ecaf61f7fcc976be5892dbcfa9ea51b4', '.claude/science/physics-loops/toe-axiom-closure-block105-shifted-origin-frame-gauge-20260814/NO_GO_LEDGER.md': 'e92c85ac05cd969ce0f35cf4d0892f5a144f59a98b975586002aefe2e57747c7'}
+per_element: exact projective shift lifts, Hodge tangents, metric Clifford identity, and reflection parity are checked
+per_site: one fine Grassmann mode is retained at each of the 16 torus sites; no anchor copy is added
+per_mode: the zero-coarse-momentum shear orbit adds the degree-changing A02 direction; fixed physical tangent invariants are zero
+per_block: onsite nonuniform shear has shifted-chart cross rank 8; overlap repair cross ranks are 16/16/16/12
+lattice_wide: checked and not executed — a uniformly finite-range signed-shift common d/Ward action, ADM/history common link, OS positivity, joint gravity, Records, selection, audit retention, and TOE closure remain open
+RESULT: fixed-origin curved shear is not translation-closed; an all-anchor positive overlap Hodge restores exact passive and active translation covariance without extra site modes
+DECISION_CUT: advance only the overlap/frame-gauge carrier to the common-d and ADM reflection-link test; reject a physical fixed blocking origin
+TOE: zero obligation retirement, zero retained-positive end-to-end theories, and no percentage movement
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+
