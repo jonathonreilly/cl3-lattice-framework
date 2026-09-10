@@ -1,0 +1,1 @@
+UNLAUNCHED. Saved-only1742 dual nodes67panels,41 moments40 tails checked by separately reviewed worker. Monitor requires exact paired targets/panels/finalPARTIAL and failure absence; no independent integrands in monitor.30/29.5/29s384MiB whole sampled tree; external teardown accounting and remote preregistration required. No launch during source readiness.
