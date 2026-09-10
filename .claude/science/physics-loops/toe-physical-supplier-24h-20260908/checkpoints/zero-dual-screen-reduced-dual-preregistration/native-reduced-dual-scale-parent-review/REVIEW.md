@@ -1,0 +1,5 @@
+# Parent independent scale proof review
+
+PASS for baf4f584. Complete source read and independent coefficient derivation from the arbitrary-dual residual identity. Uniform scaling multiplies y and z together, so the four-form coefficients are(1,-lambda*s,-lambda*t,+lambda*s*t); the final term has only one lambda. The two-form coefficients and signed correction scale consistently. No commutation of H with the channel graph or g is used.
+
+All five fixed real scales are admissible polynomial duals, including values above one. The same exact native scalar/Gram packet can support all interval evaluations. Nonnegative upper norm bounds, signed interval correction and nonempty intersection remain required; an arithmetic refusal is not a certificate. Lambda0 andlambda1 are retained; the zero-dual positivity screen cannot exclude the nonzero signed-correction candidates. The1950/450/20 term/root counts follow from13 and3 entries across15channels,5scales,2choices. No native or synthetic execution was performed for this parent proof read; the author's24 exact controls are separate evidence. No material defect or physical-sufficiency claim.

@@ -1,0 +1,1 @@
+Post-hoc design after disclosed root timing-schema failure. Freeze this source before running saved66-row validation. No worker/oracle imports or calls. Cap30s384MiB,25s internal alarm. Original scientific gates unchanged, actual row seconds replace nonexistent raw seconds. Original failure retained.

@@ -1,0 +1,11 @@
+# Reduced dual runtime review
+
+Full proof/core/worker/loader/dispatcher read. The covariance table implements the reviewed native polarized dots and antisymmetric imaginary covariance, including <a,Kf>=-sum f and kappa(Kf,h)=3c n+(nu/6-3c)m. Operator word order and imaginary phases match the reduced H/J identities; s uses +4iqw(d-k), equivalent to the source -4iqw(k-d). Dagger reversal is explicit in the finite Wick evaluator. Only at most six-letter words are evaluated under fixed product/cache caps.
+
+Cache reuse authenticates the complete interval covariance and operator payload, not class labels alone. Each channel recomputes its signature; disagreement within P/O refuses. The bounded operation count labels684 actual expanded inner-product words versus5130 uncached logical words, not684 distinct Wick-recursion states. Fixed five scales use lambda*s*t, not lambda squared*s*t. Proposals use exact dyadic clamped midpoint ratios solely to choose coefficients; full original intervals determine all certificates. Negative norms or empty final intersections refuse.
+
+Original spectral source and original degree10 family are bound explicitly. Existing nominals and coefficients are matched before new calculations. No old moments or error estimator is recomputed. Strict isolated verified-byte imports, initial immutable runtime hash, full input/origin/membership validation at entry and exit, fixed29-second inclusive worker alarm and fresh once markers are retained. Whole-tree384MiB/30seconds require the external root, not just this worker.
+
+The first8d6 directory contained an author-generated __pycache__; preserved whole source history and subsequent membership restoration retain this preparation issue. The successor adds raw_channel_forms before nonnegative gates and aggregate_scale_forms before roots; failed forms remain useful.23 independent synthetic proposal/scale/negative-form tests pass without any Wick or native call. Author73 tiny controls were inspected/reused, not replayed. Reviewer authored the scale extension and earlier underlying implementation portions, but not this new runtime.
+
+Final disposition awaits the literal conservative transient-count wording correction requested from the author; no arithmetic change is requested.

@@ -1,0 +1,9 @@
+# Reduced degree10 dual proof — independent PASS
+
+Read the complete625f proof and the author's40 exact Clifford/complement controls. Manually differentiated every reduced representative using H0Omega=0, [H0,gamma(f)]=i gamma(Kf), and left multiplication by i g gamma(d). Equations2–7 retain the coupling sign C=-J, C*=J. In particular HJu has +4U and +4i gW, while the inner residual's linear d/k combination has the stated sign. These vacuum-vector identities do not replace arbitrary H action by a commutator.
+
+The original six disjoint neighbors give the stated P/O coefficients and seven/five vector banks. Polarized dots and covariance cover a, neighbor combinations and their single K images; no extra omega5 is needed for these new Gram entries. Existing E/F still inherits its original scalar provenance. The monomial-count triangles are128 and19 words, with24 signed-cross words:171 per channel and5130 across both choices. This excludes runtime and rational overhead and is not a measured cost guarantee.
+
+For channel-dependent exact dyadic t,s, the coefficient vectors (1,-s,-t,st) and(-1,t) and correction s*c0-s*t*c1-t*c2 follow directly from the general dual identity. No channel mixing or symmetry collapse is required. The midpoint proposal's positivity is not a premise: fall back/clamp/round produces a definite real choice, then the full original interval forms must certify all norms and corrections. Exact H>=delta implies the unconstrained nonzero-vector ratio is positive and at most1/delta. The sequential scheme does not optimize the final bound and cannot guarantee improvement.
+
+Added15 independent exact nonnative finite-vector checks of residual/correction signs and sequential ratios. No actual coefficients, moments or saved arrays read. The result is a source proof PASS, with physical scalar provenance, interval implementation and full runtime/cost review remaining future gates. No narrow correction required.
