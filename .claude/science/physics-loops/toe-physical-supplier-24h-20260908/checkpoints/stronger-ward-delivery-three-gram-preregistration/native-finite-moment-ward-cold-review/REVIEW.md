@@ -1,0 +1,9 @@
+# Independent finite-moment Ward certificate review
+
+PASS for e8588a26 source, as a convergent conditional certificate mechanism, not a sign result or practical complexity bound. Four tiny rational predicates use two noncommuting diagonal-D/skew-J fixtures to check the nested residual estimates. No actual moments or data parsed.
+
+The two negative resolvents give v=D^-1 J D^-1 Omega. Insert D^-1 J uhat to obtain f=(j e+t)/delta, without commuting J. The direct quadratic error is6E(2X+E); the mixed error is6[EV+(X+E)F]. Thus the stated full Ward number and error bracket are correct. The common-center rewrite has the minus sign from the anti-Hermitian commutator and requires reversed ordered edges; it does not turn the mixed term positive.
+
+Finite-particle cutoff increases by at most2 for each bounded quadratic perturbation, while H0 on cutoff m has norm<=6hm. Therefore the product bound yields ||D^n psi||<=C R^n n! times a fixed polynomial in n, sufficient for a nonzero exponential spectral moment. A fixed polynomial of D on Omega followed by linear J is again in finite particle sectors. For weighted measure nu=x²mu, Cauchy-Schwarz and that exponential moment make the Laplace transform of any L2(nu) function analytic near zero; orthogonality to all monomials gives a zero transform and hence zero measure. Polynomials are dense in L2(nu). Since x>=delta,1/x belongs to it. Choosing p first, then q for its fixed source, makes E,F arbitrarily small.
+
+This abstract existence does not give an affordable degree, an implementable supplier from the existing scalar catalog, or termination when alpha=0. When alpha is nonzero it gives mathematical eventual certification assuming the required ordered moments can be rigorously enclosed. Full mixed native covariance/moment acquisition remains open.

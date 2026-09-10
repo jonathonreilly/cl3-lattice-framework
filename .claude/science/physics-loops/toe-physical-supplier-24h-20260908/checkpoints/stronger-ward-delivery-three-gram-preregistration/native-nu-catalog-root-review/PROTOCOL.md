@@ -1,0 +1,4 @@
+# Nu root supervisor — unlaunched
+One root plus childless worker.30s inclusive external/root29.5/worker29,384MiB sampled tree. Repaired mu774d topology, streaming hashes and explicit executable membership. Strict source/runtime/accepted catalog pins, fresh outputs/once markers, current group kill, failure/log retention, shell externalpending. No old f9 weight gate.
+
+Schema verifies67panel cumulatives1742nodes, exact40M2..M41 by independent binomial convolution, M42upper tail, exact low subtraction/rho4 radius, Machin final outward192 result, width2e-19 andmiddle2e-25, honest CERTIFIED_TARGET/INDETERMINATE. This saved reconciliation is part of the future monitored job; no panel integrands recomputed. Tiny tests substitute synthetic moments and fabricatedpanels, no native integral/catalog calls. Root independent review and remote preregistration required before sole launch.

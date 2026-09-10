@@ -1,0 +1,11 @@
+# Independent closed three-Gram source review — PASS
+
+Reviewed full DERIVATION, gram.py, source.py, worker.py, interval.py, run.py, protocol and frozen binding. Source-only review; no accepted scalar/event arrays parsed and no production loader or worker called. Reviewer authored earlier spectral implementation portions, but not this new closed-kernel worker or its zero-dual proof.
+
+The conjugate-first Pauli derivation independently confirms X, Y and ordered Z, including the minus sign and asymmetric q_A orientation. The common g moves through channel T, giving G0, G1 and -4G2 in the gradient norm. T squared has weights6/1/3, exactly225 ordered pairs per mode. Intersecting kernels explicitly use the overlap; the disjoint-only table is not reused. Literal J B=4a is used only for native d squared2.
+
+The imported sharp L theorem is pinned, including its independent review. L is nonincreasing in both errors; using authenticated upper E,F is safe. The necessary screen upper W0+L<=0 excludes only this chosen zero-dual strictly positive lower certificate. No unknown physical alpha exclusion follows. The code returns the original accepted interval and computes no kernels in this branch. Positive screen branches subtract G2 with its lower interval endpoint, refuse negative norm uppers and empty final intersections, and preserve both fixed choices without optimization.
+
+Binding ties accepted spectral E/F and nominal to the exact original degree10 binding, coefficients and chronology. Strict hashes, original statuses, typed resource limits, fixed mode identities and full input closure are checked. Dispatcher uses verified-byte imports under -I-B-S, immutable initial freeze, membership/origin checks, fresh once output, inclusive19-second alarm, retained exceptions and final full hashes/resource gates. External20-second whole-tree enforcement remains the separately reviewed root responsibility. No authorization is installed.
+
+Independent synthetic controls:18 Pauli matrix kernel checks,225 literal graph-square entries and one screened branch (244 total). These use fabricated quarter-valued covariance, not native data. All full frozen input hashes independently match. No material source correction required. This review establishes source correctness, not numerical sufficiency or a measured runtime.
