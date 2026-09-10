@@ -1,0 +1,15 @@
+# Independent source-only review — PASS, conditional supplier design
+
+Reviewed complete DERIVATION.md 776d56bbd514528cbfc87faecfcf12406a0460abe1c66433568881a2076f0f1b, plan.py, PREDATA_BUDGET.json, FREEZE.json, REUSE_EXTENSION.md and EXTENSION_FREEZE.json; also the pinned repaired-mu proof. I authored the earlier second-action moment diagnostic and repaired-mu supplier, so those are disclosed reused premises. This nu proposal and rho4 extension were authored independently by Primary. No catalog was read, integral contracted, or oracle invoked.
+
+The rho4 ellipse has center3a/2 and semiaxes17a/16,15a/16. The 31/128 quantity is precisely c²−a_axis²−b_axis²; the source does not call it min Re(z²). Cauchy–Schwarz bounds u−|v| below by a(3/2−sqrt514/16)>0, including the interior. Hence Re(z²)>0 and |X+z²|>=X. Dominated holomorphy gives |E X²/(X+z²)|<=EX=6. There is no unjustified positivity assertion about complex Q.
+
+Independent polynomial approximation gives error radius4aM rho^-52/(1−rho^-1), because both positive Gauss26 and integration have norm a and agree through degree51. Summed panel lengths are below8. Thus256*4^-52 is valid. The source correctly distinguishes exact-node quadrature error from interval node/weight arithmetic.
+
+The low interval follows Q=6−t²+t⁴A with 0<=A<=17/60. Forty alternating high terms use M2 through M41, with positive X42/[t80(X+t²)] remainder and integral bound12^42/(81*8^81). The multinomial central-binomial formula is correct for three independent4sin² variables; independent tiny enumeration verifies M0..M3=1,6,42,324. Forty terms, not26, are essential to the supplied tight budget.
+
+Endpoint A widths1e-30 and monotone-node inflation below3e-30, mapped weight widths1e-38, and summed weights<=9 are explicit conditional gates. The t sensitivity holding A fixed is below600 on[0,8]; 4096 A amplification and positive-weight propagation justify the stated2e-25 middle gate. A future worker must actually count/bound fixed192 operations and enforce this gate. The proof does not substitute nominal precision for those checks. Machin uncertainty and its integral<64 multiplier are harmless at the explicit1e-35 allowance. Independent rational budgets certify full width<2e-19 (indeed<7.1e-26 under the sharper displayed predata bound).
+
+The reuse extension constants544/45,128/3,128 follow the same ellipse and A0 or derivative bounds. The positive expectation formula removes the analytic B divided-difference singularity, but does not control near-coincident finite-precision division; that limitation is explicitly retained. The approximate A/mu/nu width ceilings are sufficient prospective upper budgets after improved tails, not precision lower bounds, achieved certificates, or optimal floors. No new B conditioning result follows.
+
+Sixteen independently authored tiny exact predicates passed. They support algebra and rational budget arithmetic, not actual accepted-catalog applicability. Runtime, full accepted input closure, implementation operation count, once-only integral execution, and independent saved reconciliation remain future gates. No correction is required in the reviewed source.

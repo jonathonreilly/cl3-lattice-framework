@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-24h-probes-20260908/native-coarse-witness-root-review/run_once.py", line 74, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-coarse-witness-root-review/run_once.py", line 73, in main
+    req(failure is None,'new coarse witness attempt failed '+str(failure));print(json.dumps({'status':'PASS_ROOT_SCHEMA_EXTERNAL_PENDING','seconds':time.monotonic()-START}))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-24h-probes-20260908/native-coarse-witness-root-review/run_once.py", line 9, in req
+    if not x:raise ValueError(m)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: new coarse witness attempt failed ValueError('root deadline'); post pins ValueError('final inclusive root deadline')
+      299.83 real       313.51 user        65.10 sys
+           106774528  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             8920682  page reclaims
+                7767  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               14269  voluntary context switches
+              154061  involuntary context switches
+        116270190499  instructions retired
+         47362057243  cycles elapsed
+            21611216  peak memory footprint

@@ -1,0 +1,1 @@
+Constituent mathematical and runtime reviews are copied and pinned with exact source provenance. Canonical assembly review remains pending. Compact58 support checks ran before review-file pins were appended; mathematical checks unchanged, no rerun. Source/input identity validation and remote completed-output recovery remain delivery obligations.

@@ -1,0 +1,3 @@
+# Parent posterior-degree20 root review: PASS
+
+The root reads the frozen255-event grammar, extracts the original class source norm and constant second-polynomial coefficient, authenticates saved nominal copies, independently derives directed trial-state norm bounds and the new posterior error/alpha interval. The formula is the independently reviewed P bound; it does not reuse the older all-q exclusion. Exact type-aware copies, worker/root time hierarchy,10-file membership, immutable inputs and once-only markers are present. Source Wick/moment truth is inherited, not recomputed. No accepted numerical values were parsed for this review. Prior11913e6 source and synthetic controls are valid; integration/formal audit remain unrun.

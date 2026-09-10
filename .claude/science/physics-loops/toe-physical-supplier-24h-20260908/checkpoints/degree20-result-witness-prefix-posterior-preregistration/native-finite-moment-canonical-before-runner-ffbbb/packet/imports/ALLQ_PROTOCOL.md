@@ -1,0 +1,9 @@
+# NEW saved-degree10 all-q scheduling screen
+
+Fixed two modes, reading only original205 accepted EVENTS to extract E and s0P/s0O. Authenticate exact event hash, result672ce/root3dab, original source/runtime/receipt/resources and complete immutable source/output closure. No source moment, signed word, covariance or original polynomial evaluation is repeated. This new small rational diagnostic has not run during preparation.
+
+Compute C_lower=E_lower(2X_lower+E_lower+V_lower), a2_upper=(12s0P_upper+3s0O_upper)/8, threshold_upper=a2_upper(1+8sqrt2_upper). Exact outward128-bit roots and canonical bounded rational intervals. C_lower>=threshold_upper excludes strict positive OR negative sign certification for all second polynomials retaining the same original first polynomial and e858 error functional. A failed screen is inconclusive. It does not prove a physical alpha no-go or exclude another error estimator.
+
+Root-selected10s external inclusive, root9.5s kill, worker9s inclusive startup/import/hash/read/arithmetic/finalhash,384MiB sampled whole tree. Fixed205 bounded event reads, two small scalar screens, no native subprocess. Cost inference6.44s=3*accepted degree10 execution1.48s+2s; not a measured fit. No scientific source values were parsed in preparation; only source and compact acceptance/resource metadata plus hashes.
+
+Persist current source sequence BEFORE every saved event parse, extracted source intervals BEFORE arithmetic, both per-mode results before subsequent chronology and completion checks, and all prefix/failure state. Strict immutable startup freeze, verified byte imports/origins, once marker/fresh output, final pins/resources on success/failure. Execution disabled until independent review and new preregistration. Actual new metadata arithmetic may run only once under that contract.
