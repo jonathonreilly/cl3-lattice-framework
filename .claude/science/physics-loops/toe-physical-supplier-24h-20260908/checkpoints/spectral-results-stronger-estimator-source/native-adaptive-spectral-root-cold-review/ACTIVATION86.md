@@ -1,0 +1,3 @@
+# Activation 86 affected review — PASS
+
+Worker 9d8a57304de0591f168ccb164e935ddb74a27862ccf61fc39568bb55a6a908f6; root 2ed13e39e3ddb0bc681a71e8355111e359efe51da47639456bf71dee28900482. Compared entire folders against preserved e92a/90c0 predecessors: all Python, protocol, binding and scientific inputs are byte-identical. Worker changes only execution_enabled; root changes enablement, exact authorization and corresponding hashes. Exact no-retry/output/runtime/binding authorization verified. All 9098 full worker input hashes and every root source/authorization pin independently verified. Unchanged source-readiness evidence is reused; no scientific values parsed, no worker or numerical certificate executed. Prior independent adaptive source/schema review remains applicable.
