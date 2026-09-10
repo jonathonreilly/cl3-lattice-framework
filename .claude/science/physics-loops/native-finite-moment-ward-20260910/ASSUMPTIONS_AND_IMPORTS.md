@@ -1,0 +1,1 @@
+Supplied infinite native Hamiltonian, original Gaussian reference, CAR convention and gap h/4 are inherited from8078 and its explicit parents. Scalar moment certificates use the accepted A catalog and analytic quadrature bounds. No empirical admission or framework primitive is added.

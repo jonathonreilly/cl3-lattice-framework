@@ -1,0 +1,1 @@
+All-q exclusion applies only to each of the two fixed degree-one first polynomials with the unchanged e858 residual estimator. It does not exclude other first polynomials, sharper estimators, or the physical sign of alpha.
