@@ -1,0 +1,3 @@
+# Exact remote recovery
+
+Every one of the57 copied source-draft files is byte-identical to its remote87 archive path in RECOVERY_MAP.json. Commitfe9f53c9c8c6b7d6fb2788aaeb2d8358b61382f9 has all197 archived SHA256 and Git blob identities independently matched through the GitHub tree API. The verification receipt is preserved locally. This covers complete portable results, accepted roots, proof imports and runtime/binding snapshots. Runtime snapshots also identify original transitive scientific inputs: their full closures were separately archived and verified at the original preregistration checkpoints83–86. Recovery does not imply independent replay of inherited native Wick/scalar truth.

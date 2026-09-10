@@ -1,0 +1,9 @@
+# Adaptive spectral root affected review
+
+PASS for root90c0dc46e30400faad8878d84e7cebf3debca83485ef4506d049286f614fafff against preserved724c, binding workere92a5b3056d6dc847a0c2d36ff12230a99c88267aa5b07a2486550c6b4164d6d. Scope is the affected proposal/schema/event changes; prior root review coverage is reused. Reviewer authored the spectral worker integration, not this independent root reconstruction.
+
+Root reproduces the32768-bit midpoint operation followed by the4096-bit proposal cap, the65536-bit guarded radical/branch arithmetic,256-bit upward square root, ratio clamp and upward2^-32 grid. Both cancellation branches and fallback statuses match the worker. Proposed tau is checked as a choice only; all original moment intervals are then used in the signed quadratic majorant. The original five alternatives and gap bound remain. Deduplication and fallback refusal records are validated.
+
+The event grammar permits three legal alternatives per inverse-bound block: five repeated fixed candidates, six including a new proposal, or refusal plus five fixed candidates. The completed body53–57 and total580–588 counts are consistent; arithmetic-failure prefixes remain explicitly indeterminate. The previous worker/root29/29.5/external30-second and384MiB contract is unchanged, and run_once.py is byte-identical to the preserved predecessor. No resource or precision gate is weakened.
+
+Seven independent synthetic point-mass, cap-fallback and grammar checks pass. The author's full synthetic saved-output and coherently false-posterior rejection fixture was read and reused without a Wick rerun. All9098 full worker input hashes, root source hashes and worker authorization hashes match. Root remains disabled with authorization pending. No actual scientific value, scalar moment or saved native arithmetic was evaluated. No material affected defect found.

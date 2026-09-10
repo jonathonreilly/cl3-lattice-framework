@@ -1,0 +1,3 @@
+# Premises and imports
+
+The supplied infinite native Gaussian model, common vacuum, CAR convention, local-polynomial form core, D_A>=h/4 gap, signed fifteen-channel Ward identity, and c,nu,omega5 enclosures are inherited. These are scoped conditions, not new framework axioms. Prior PR8079 supplies the finite-moment hierarchy and omega5 certificate. The new posterior proof and spectral calculus require only their stated norm/domain premises. The signed nominal, original p/q and saved moments remain authenticated imports. Native Wick truth is inherited where the original root receipt says so. No empirical input is fitted or physical branch selected.
