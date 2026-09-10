@@ -1,6 +1,6 @@
 {
   "captured_utc": "2026-09-07T14:42:45.091662+00:00",
-  "main_sha": "a054a95018285b108d9f257ecffc59dbfac9a172",
+  "main_sha": "1157173587fde42555d36659954e71c544e23312",
   "units": [
     {
       "unit_id": "eta_affine_repeat",
@@ -7073,11 +7073,11 @@
       "final_evidence": "backlog_evidence/wave59/INDEX.json"
     }
   ],
-  "current_main": "a054a95018285b108d9f257ecffc59dbfac9a172",
-  "current_assignment_update_utc": "2026-09-10T20:16:11.147340+00:00",
+  "current_main": "1157173587fde42555d36659954e71c544e23312",
+  "current_assignment_update_utc": "2026-09-10T22:57:17.748262+00:00",
   "cleanup_scope": "original 254_only",
   "owner_cutoff_file": "BACKLOG_CUTOFF.json",
-  "immediate_priority": "Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. The 33 transferred scopes remain pending review; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred.",
+  "immediate_priority": "W62 landed6379. Review and correct remaining17 released originals plus33 transferred scopes; reflection/curved-carrier repairs and seam-signature review active. New arrivals excluded; audit deferred.",
   "closure_reconciliation_file": "BACKLOG_CLOSURE_RECONCILIATION.json",
   "next_routing_evidence": "backlog_evidence/next-routing-20260909",
   "next_routing_note": "Routing only, no acceptance/closure:6009exactly contains8paths each from5964/5963/5961/5959/5954 and8of10from5965/5955; preserve their extra878helper+receipt separately.5957is not covered. Review the complete coherent gravity-family argument once with all original recovery. Next small units7803/7781/7753 have actual full6/2/1commit boundaries, not tip-only assumptions.",
@@ -7085,16 +7085,27 @@
   "owner_release_evidence": "backlog_evidence/released18-20260910/RELEASED_TARGETS.json",
   "released18_assignments": {
     "6379": {
-      "reviewer": "/root/released6379_review",
-      "status": "original_review_active"
+      "status": "landed_closed",
+      "commit": "1157173587fde42555d36659954e71c544e23312",
+      "evidence": "backlog_evidence/wave62/INDEX.json"
     },
     "6858_6859": {
       "reviewer": "/root/released6858_6859_review",
-      "status": "original_review_active"
+      "status": "source_repairs_active",
+      "author": "/root/released_reflection_fixes"
     },
     "remaining_routing": {
-      "worker": "/root/released18_routing",
-      "status": "actual_dependency_and_transfer_mapping_active"
+      "status": "complete_routing_only",
+      "evidence": "backlog_evidence/wave62/routing/ROUTING.json"
+    },
+    "6844": {
+      "status": "source_repairs_active",
+      "author": "/root/released18_routing",
+      "reviewer": "/root/released6379_review"
+    },
+    "6515": {
+      "status": "original_review_active",
+      "reviewer": "/root/released6858_6859_review"
     }
   }
 }

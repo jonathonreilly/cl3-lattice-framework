@@ -2,8 +2,8 @@
 
 Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. The 33 transferred scopes remain pending review; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
 
-Verified source/status snapshot: 2026-09-10T22:57:17.748262+00:00, main
-`1157173587fde42555d36659954e71c544e23312`. This is a planning map, not
+Verified source/status snapshot: 2026-09-10T20:16:11.147340+00:00, main
+`a054a95018285b108d9f257ecffc59dbfac9a172`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -24,10 +24,10 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 6 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 5 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
-The overnight metadata refresh at `8a33b91a16fe95c76a357cadae6874f1a25c782b` materialized the 32 formerly pending notes. It changed no scientific source or audit verdict; the five W61 notes and one W62 note now await the next mechanical refresh.
+The overnight metadata refresh at `8a33b91a16fe95c76a357cadae6874f1a25c782b` materialized the 32 formerly pending notes. It changed no scientific source or audit verdict; the five remaining pending notes are the new W61 source documents.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
 reviewed integration. Do not start an audit drain from a PR review or
@@ -148,5 +148,3 @@ Wave 59 preserves finite Fock number/vector algebra and explicitly leaves indepe
 Wave 60 adds conditional finite lineage, representation, source-image and channel results. The enlarged-register spatial/readout bridge remains open, its proposed whole-stencil covariance fails, and the static-law germ is only local. These do not establish physical formation, gravity or TOE closure.
 
 Wave 61 adds conditional finite safe-front, local-cap and covariant instrument results. Physical readout, preparation/target selection, microscopic control, concurrency, occurrence/time and sourced gravity remain open. Unheld fixed-cutoff cleanup is complete; the 18 reserved/dependency-held original PRs and 33 transferred scopes remain pending. No physical TOE or audit grade is claimed.
-
-W62 accepts #6379 as conditional finite shifted-origin/overlap-Hodge mathematics, with flat-only tightness and no established wall-independence count. Main `1157173587fde42555d36659954e71c544e23312`; source/review evidence `backlog_evidence/wave62/INDEX.json`.
