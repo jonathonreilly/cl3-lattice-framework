@@ -1,0 +1,3 @@
+Under the supplied native Gaussian model and channel-gap/Ward assumptions, this adds the sharp norm-only quadratic remainder, a fixed zero-dual certificate exclusion, and reduced signed-dual certificates for the same two trials. The signed corrections narrow both retained intervals; both still contain zero, so no alpha sign or nonvanishing claim follows.
+
+The packet preserves exact accepted receipts, constituent reviews and remote90 recovery mappings. The portable checker passed241 receipt/synthetic checks; independent source review reconciled68 frozen files and48 recovery blobs. Compact checks do not replay native Wick arithmetic. Full pipeline, current-main combined verification, changed-audit readiness and formal audit remain UNRUN.

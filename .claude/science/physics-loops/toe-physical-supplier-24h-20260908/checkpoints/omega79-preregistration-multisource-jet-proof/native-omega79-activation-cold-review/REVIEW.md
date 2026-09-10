@@ -1,0 +1,3 @@
+# Activation-only PASS
+
+Bound to worker e7b3aa0412b7f3370e27559789c5f9ec74cae9d42fddcd2df477919fdcb0ce85 and root ae90377953e05bd39f3e4d8da06efc305be67dfe2612a9a15d56e0539d140539. Worker change versus preserved bd0c is exactly execution_enabled false->true; all scientific code, protocol, binding and8243 input pins are unchanged. Every pin was independently rehashed. Root changes versus preserved f8c are activation flag, exact successor worker hash and corresponding authorization/hash records only; four file pins and both authorization digests match. Fixed output/no_retry unchanged. No execution or scientific input parsing. Reviewer originally authored supplier; this affected metadata audit does not replace independent parent/root source reviews.

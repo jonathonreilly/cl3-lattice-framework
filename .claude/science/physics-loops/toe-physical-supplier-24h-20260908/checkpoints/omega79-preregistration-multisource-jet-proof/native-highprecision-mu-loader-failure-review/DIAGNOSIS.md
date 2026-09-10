@@ -1,0 +1,11 @@
+# Failed highprecision mu loader: saved-only diagnosis
+
+The once-only f9e4 attempt is FAILED before compute, not an inaccurate mu result. No retry or source mutation was performed. All original root/output bytes remain untouched.
+
+Exact saved geometry e00df1c6 inventory:1742 nodes/3484 endpoints.130 nodes fail ONLY weight full-width<=2^-140; first id1430. Every t positivity/order, t<=8, t-width<=2^-140, and positive ordered weight test passes. Maximum weight width is approximately1.647573350957e-39, while2^-140≈7.174648e-43. Root bracket160-bit width does not imply the rational interval-evaluated Gauss weight width has140 accurate bits; weight formula sensitivity/dependency widened these certificates. This was the producer author's unsupported representation assumption, not a bad accepted catalog or failed complex quadrature proof.
+
+All3484 raw endpoint hashes and literal geometry/s identities were independently read/verified; all1742 monotone combined A interval orders pass. No integrand or producer loader was called. All actual saved weight widths are exactly<2^-128 and sum upper weights<9. Thus the stronger original width premise is false for the accepted dataset. The conditional analytic theorem remains correct under its premise, but its original advertised dataset-level width guarantee was not established.
+
+A potentially useful NEW source-only route is to reprove the middle uncertainty allowance using actual certified weight widths, or the exact verified2^-128 upper bound. Even the coarse sum1742*2*2^-128 is much smaller than1e-25. The analytic ellipse/high/low bounds do not change; the width target may remain feasible. This is a prospective proof repair, NOT permission to loosen the old gate or retry. A new immutable source/proof/cost contract and root decision are required before any physical computation. No new result or forecast is claimed here.
+
+The diagnostic itself initially hit Python's4300-digit conversion limit while serializing huge rational weight widths. That failure is preserved; only the saved-geometry diagnostic was repeated with integer-string conversion limit disabled. This did not run a numerical integral and did not alter the study environment or files.
