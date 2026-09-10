@@ -1,0 +1,31 @@
+{
+  "status": "all_corrected_and_confirmed",
+  "findings": [
+    {
+      "id": "SF_API_1",
+      "finder": "original reviewer",
+      "scope": "B12 independent current source and B13 downstream callers",
+      "finding": "Shared quadrupole local_distribution returns a dictionary, whereas original tuple-valued probability consumers use slicing, integer indexing, scalar sum, and zip. B13 also calls a probabilities attribute absent from extracted joint helper.",
+      "required_correction": "Narrow explicit OUTCOMES-ordered numeric probability adapter; preserve dictionary-valued distribution_moment input; inspect all downstream calls.",
+      "resolved": true,
+      "resolved_in_working_source": true,
+      "cheap_actual_contract_checks_pass": true,
+      "final_science_evidence_pending": false
+    },
+    {
+      "id": "SF_KIND_1",
+      "finder": "original reviewer",
+      "scope": "B14 independent close_threshold_interval",
+      "finding": "Only toggles computed threshold_interval boolean; advertised changed_object classification is incorrect.",
+      "required_correction": "Classify as assertion_guard, preserve real changed-object controls.",
+      "resolved": true,
+      "resolved_in_working_source": true,
+      "cheap_actual_contract_checks_pass": true,
+      "final_science_evidence_pending": false
+    }
+  ],
+  "root_note": "Initial root correction reads missed these contract/category defects. Original same-session reviewer found them before producer execution; do not treat prior root read receipts as final acceptance.",
+  "preflight_sha256": "a2c5d3afd9bd5e7f7c198ee08efa5945b4f45d5279287182db933677519e2aef",
+  "final_source_commit": "ae41fff2d59e3409732a8aa93abf908235ca656f",
+  "final_confirmation_sha256": "4a64c073dc619536810cb8a594fee873f259123fcd92e1abce3ec085da3ab40e"
+}

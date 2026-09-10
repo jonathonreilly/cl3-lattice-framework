@@ -1,10 +1,10 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-10T20:16:11.147340+00:00; main `a054a95018285b108d9f257ecffc59dbfac9a172`.
+Updated 2026-09-09T18:14:22.547299+00:00; main `e95797cc80b69815fadd300f431b3461f2449161`.
 
-188 reviewed original science scopes landed: 122 direct closed science and 66 consolidated science. The 126 direct closures also include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader holds. The 110 other closures include 33 pending scopes at three held successors. No accepted science remains in an open-scope counting bucket; own #7827 Block38 retains its W58 landing.
+183 reviewed original science scopes landed: 121 direct closed science, 61 consolidated science, and the own Block 38 scope of still-open #7827. Eight additional original scopes have corrected Maxwell portions on main with broader scope held. The 125 direct original closures include 121 science, one partial Maxwell, one meta, one process, and one historical archive recovery. The earlier 110 other closures include 38 scopes still pending at four successors.
 
-All #7827 own/transferred scopes have recorded acceptance; the PR is closed. Its own Block38 keeps the original W58 acceptance commit. No open accepted-scope bucket remains.
+Open #7827 has one independently accepted own science scope; five transferred safe-front scopes remain pending. See accepted_open_scopes in the JSON.
 
 | Original PR | Closure action | Current scope status | Main or successor |
 | --- | --- | --- | --- |
@@ -121,12 +121,12 @@ All #7827 own/transferred scopes have recorded acceptance; the PR is closed. Its
 | #7859 | draft_disposition | reviewed_corrected_scope_on_main | `e95797cc80b69815fadd300f431b3461f2449161` |
 | #7860 | draft_disposition | reviewed_corrected_scope_on_main | `e95797cc80b69815fadd300f431b3461f2449161` |
 | #7861 | draft_disposition | reviewed_corrected_scope_on_main | `e95797cc80b69815fadd300f431b3461f2449161` |
-| #7862 | draft_disposition | reviewed_corrected_scope_on_main | `a054a95018285b108d9f257ecffc59dbfac9a172` |
-| #7863 | draft_disposition | reviewed_corrected_scope_on_main | `a054a95018285b108d9f257ecffc59dbfac9a172` |
-| #7864 | draft_disposition | reviewed_corrected_scope_on_main | `a054a95018285b108d9f257ecffc59dbfac9a172` |
-| #7865 | draft_disposition | reviewed_corrected_scope_on_main | `a054a95018285b108d9f257ecffc59dbfac9a172` |
+| #7862 | draft_disposition | pending_on_open_successor | #7827 |
+| #7863 | draft_disposition | pending_on_open_successor | #7827 |
+| #7864 | draft_disposition | pending_on_open_successor | #7827 |
+| #7865 | draft_disposition | pending_on_open_successor | #7827 |
 | #7866 | draft_disposition | reviewed_corrected_scope_on_main | `e95797cc80b69815fadd300f431b3461f2449161` |
-| #7867 | draft_disposition | reviewed_corrected_scope_on_main | `a054a95018285b108d9f257ecffc59dbfac9a172` |
+| #7867 | draft_disposition | pending_on_open_successor | #7827 |
 | #7869 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `7517b4a95f860fec43251c0281a981e6bb1f34d6` |
 | #7870 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `13046c38aa1fb57767af5e4cdfe14c879351956d` |
 | #7871 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `8bb429a53d8df04502a06d6d8b09f6db320b533b` |
@@ -243,4 +243,3 @@ All #7827 own/transferred scopes have recorded acceptance; the PR is closed. Its
 | #8000 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `a8f84aaad75fdcb790ba6ba094e4275e237d9a5a` |
 | #8001 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `2d0f551dcd8bd444daee85b97811cda53da0661e` |
 | #8002 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `a8f84aaad75fdcb790ba6ba094e4275e237d9a5a` |
-| #7827 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `6eb96ee9c9f05d960dbbefab0e99f4fe90a25f02` |
