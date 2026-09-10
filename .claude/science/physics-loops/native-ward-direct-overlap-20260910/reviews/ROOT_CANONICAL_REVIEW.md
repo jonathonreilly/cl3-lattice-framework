@@ -1,0 +1,11 @@
+# Independent canonical direct-overlap review — PASS
+
+Root read complete final note, changed exact runner, canonical premise/import map and source-bound independent reviews. The exact third-moment proof86c870 and cold7b2da fix the native perturbation convention, covariance sign and P/O neighbor measures. The h=1 formulas give M3P=10c and M3O=4c+nu/3. EX=6/EX²=42 give mu>=6/sqrt7 and nu<=6sqrt7, hence3/4<c<49/60 and both third moments<43/5. The moment-majorant inverse formula is the exact2x2 Cauchy optimization. Its denominator is positive on this interval and derivative negative. The cited rational m1 and Kneser lower bound>160 follow with no acquired scalar values.
+
+The variance step uses the actual common-vacuum gapD>=1/4, not a free-bath gap. T+3I is positive semidefinite with row sum9; substituting nonuniformm>=m1 leaves nonnegative correction, so no false equal-geometry inverse assumption enters. Dimensions restoreQ>160/h². Finite-particle support justifies the moment domains. The earlier >3 proof is preserved and superseded only in its quantitative direct bound.
+
+The complete Ward term retains the boundary signs, the negative channel and all six squared norms. Scalar cubic symmetry does not eliminate vector-valued excitation channels. No alpha positivity, nonvanishing, occupied-tail or physical-law selection follows. Parent inspected the revised inline markup after the original escaped-command corruption was repaired. Displayed arguments now read correctly.
+
+All36 frozen source hashes agree. The final author's exact39-predicate supporting result includes90 synthetic Ward words and two semantic mutants; these are not native evaluations or independent proofs of imported physics. Root did not repeat the completed supporting run or native calculations. Only a stale current-status count35 was found in STATUS.md; corrected to39 while retaining historical35 receipt. No mathematical change was needed.
+
+This is conditional-support/upstream-support, proposal_allowed:false. Full integration pipeline, changed-audit-evidence readiness and formal audit remain unrun. Citation graph/manifest and exact remote delivery follow separately. No main or authority status change is authorized by this review.
