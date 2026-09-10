@@ -1,0 +1,1 @@
+Independent canonical source review PASS on356023bc. Exact39-predicate supporting result,90 synthetic Ward words and two semantic mutants passed; old35 receipt remains historical. DirectQ>160/h² only; fullalpha remains open. No native rerun. Graph/delivery pending; integration pipeline, changed-audit readiness and formal audit unrun.
