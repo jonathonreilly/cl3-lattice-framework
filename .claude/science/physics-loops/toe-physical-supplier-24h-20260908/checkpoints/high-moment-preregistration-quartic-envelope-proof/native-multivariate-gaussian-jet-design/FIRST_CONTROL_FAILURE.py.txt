@@ -1,0 +1,84 @@
+"""Exact rational 4-Majorana synthetic Fock comparison. No native inputs."""
+import json
+from fractions import Fraction as F
+from math import factorial
+import core as c
+import arithmetic as a
+class Q:
+ def __init__(self,r=0,i=0):self.r=F(r);self.i=F(i)
+ def __add__(x,y):
+  y=asq(y);return Q(x.r+y.r,x.i+y.i)
+ __radd__=__add__
+ def __neg__(x):return Q(-x.r,-x.i)
+ def __sub__(x,y):return x+-asq(y)
+ def __rsub__(x,y):return asq(y)+-x
+ def __mul__(x,y):
+  y=asq(y);return Q(x.r*y.r-x.i*y.i,x.r*y.i+x.i*y.r)
+ __rmul__=__mul__
+ def __truediv__(x,y):
+  y=F(y);return Q(x.r/y,x.i/y)
+ def conj(x):return Q(x.r,-x.i)
+ def __eq__(x,y):
+  y=asq(y);return x.r==y.r and x.i==y.i
+ def __repr__(x):return str((str(x.r),str(x.i)))
+def asq(x):return x if isinstance(x,Q)else Q(x)
+def zeros(n):return [[Q()for _ in range(n)]for _ in range(n)]
+def eye(n):return [[Q(i==j)for j in range(n)]for i in range(n)]
+def add(A,B):return [[x+y for x,y in zip(r,s)]for r,s in zip(A,B)]
+def scale(A,q):return [[x*q for x in r]for r in A]
+def mm(A,B):return [[sum((A[i][k]*B[k][j]for k in range(len(B))),Q())for j in range(len(B[0]))]for i in range(len(A))]
+def power(A,n):
+ R=eye(len(A))
+ for _ in range(n):R=mm(R,A)
+ return R
+def kron(A,B):return [[A[i][j]*B[k][l]for j in range(len(A))for l in range(len(B))]for i in range(len(A))for k in range(len(B))]
+def box(q):return a.ri(q.r.numerator,q.r.denominator),a.ri(q.i.numerator,q.i.denominator)
+def enclosed(z,q):return all(F(lo,a.S)<=v<=F(hi,a.S)for(lo,hi),v in zip(z,(q.r,q.i)))
+I=Q(0,1);X=[[Q(),Q(1)],[Q(1),Q()]];Y=[[Q(),-I],[I,Q()]];Z=[[Q(1),Q()],[Q(),Q(-1)]]
+gamma=[kron(X,eye(2)),kron(Y,eye(2)),kron(Z,X),kron(Z,Y)]
+K=zeros(4);K[0][1]=Q(1);K[1][0]=Q(-1);K[2][3]=Q(2);K[3][2]=Q(-2)
+h=scale(K,I);P=scale(add(eye(4),scale(h,-1)),F(1,2))
+# Different free energies require sign(h) independently blockwise.
+P[2][3]=-I/2;P[3][2]=I/2
+H=zeros(4)
+for i in range(4):
+ for j in range(4):H=add(H,scale(mm(gamma[i],gamma[j]),I*K[i][j]/4))
+H=add(H,scale(eye(4),F(3,2)))
+a0=[Q(1),Q(),Q(),Q()];d=[Q(),Q(1),Q(1),Q()];e=[Q(),Q(1),Q(-1),Q()]
+def cliff(v):
+ R=zeros(4)
+ for q,g in zip(v,gamma):R=add(R,scale(g,q))
+ return R
+def perturb(v):return scale(mm(cliff(a0),cliff(v)),I)
+DA=add(H,perturb(d));DC=add(H,perturb(e));DP=scale(mm(mm(cliff(d),DA),cliff(d)),F(1,2))
+def gram(sources,projected):
+ def query(n,i,j):
+  op=mm(power(h,n),P)if projected else power(h,n)
+  val=sum((sources[i][u].conj()*op[u][v]*sources[j][v]for u in range(4)for v in range(4)),Q())
+  return box(val)
+ return query
+J1={(0,1):a.imaginary(2),(1,0):a.imaginary(-2)}
+J2={(0,2):a.imaginary(2),(2,0):a.imaginary(-2)}
+Jr={(0,1):a.imaginary(-2),(1,0):a.imaginary(2),(1,2):a.point(-1),(2,1):a.point(-1)}
+checks=0;counts={}
+for kind in ('pair','reflected'):
+ sources=[a0,d,e]if kind=='pair'else[a0,d,[sum((h[i][j]*d[j]for j in range(4)),Q())for i in range(4)]]
+ got,count=c.jet(kind,{1:J1,2:J2 if kind=='pair'else Jr},gram(sources,False),gram(sources,True))
+ for alpha,value in got.items():
+  i,j,k=alpha
+  if kind=='pair':direct=mm(mm(power(DA,i),power(perturb(e),k)),power(DC,j));q=F((-1)**(i+j)*2**k,factorial(i)*factorial(j)*factorial(k))
+  else:direct=mm(mm(power(DA,i),power(DP,k)),power(DA,j));q=F((-1)**sum(alpha),factorial(i)*factorial(j)*factorial(k))
+  expected=direct[0][0]*q
+  assert enclosed(value,expected),(kind,alpha,value,expected)
+  checks+=1
+ counts[kind]=count
+# Independent endpoint-shift/cap and pure-word cancellation controls.
+seen=[];s=c.shifted_table(lambda n,i,j:seen.append((n,i,j))or a.ZERO)
+s(6,2,2);assert seen==[(8,1,1)];checks+=1
+try:s(7,2,2)
+except a.Refused:checks+=1
+else:raise AssertionError('degree cap')
+for kind in c.MASKS:
+ w=c.words(kind);assert len(w)==(32 if kind=='pair'else48);checks+=1
+assert len(c.words('pair')[(0,0,1)])==1;checks+=1
+print(json.dumps({'status':'PASS_SYNTHETIC_ONLY','checks':checks,'exact_fock_coefficients':80,'counts':counts,'native_inputs':0,'native_moments':0},indent=2))

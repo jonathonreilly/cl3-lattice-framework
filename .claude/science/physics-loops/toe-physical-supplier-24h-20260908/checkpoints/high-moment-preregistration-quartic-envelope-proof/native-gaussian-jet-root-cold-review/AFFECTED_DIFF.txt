@@ -1,0 +1,8 @@
+--- 
++++ 
+@@ -75,4 +75,5 @@
+  need(result['seconds']<=partial['seconds']<=done['seconds']<=elapsed<59.5,'time ordering');need(type(done['rss_bytes'])is int and 0<done['rss_bytes']<=384*1048576,'RSS');eq(partial['current'],events[-1],'final partial');M,low=source_packet(binding);count=reconcile(packet,events,result,M,low,progress)
+  hashes={name:hashlib.sha256(data).hexdigest()for name,data in raw.items()}
+  for name,h in hashes.items():need(sha(out/name)==h,'final output hash')
++ need({p.name for p in out.iterdir()}==names and all(p.is_file()for p in out.iterdir()),'final exact six files')
+  return {'status':'PASS_INDEPENDENT_HIGH_JET_ARITHMETIC','count':count,'events':len(events),'result_sha256':hashes['RESULT.json'],'output_hashes':hashes,'lower_native_replay':False,'new_jet_arithmetic_reconciled':True,'raw_scalar_truth_inherited':True}

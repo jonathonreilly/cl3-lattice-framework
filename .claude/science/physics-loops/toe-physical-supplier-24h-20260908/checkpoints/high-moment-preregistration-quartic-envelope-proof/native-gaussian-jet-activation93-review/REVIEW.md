@@ -1,0 +1,3 @@
+# Activation 93 affected review — PASS
+
+Worker 2500da35 and root 7d6247b6 compared with preserved 077015fc/f0d189e2. The worker changes only execution_enabled. Root changes only enablement, worker hash and corresponding authorization hashes. All scientific Python files, binding, targets, output path and resource limits are unchanged. All 10,932 full source/input hashes passed; actual strict root CLI readiness passed with zero accepted loads. No native values parsed or calculation launched. This metadata verdict does not authorize a bypass of parent remote preregistration or imply execution acceptance.
