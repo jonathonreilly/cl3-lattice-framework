@@ -1,0 +1,5 @@
+# Accepted saved-A sensitivity, without a B evaluation
+
+Use only bcf9237a accepted A66 and its explicit6590c0d0 root acceptance after the original monitor KeyError was independently reconciled. For the26-term tail polynomial, dependence on A is exactly -R_A(s) A, where R_A=sum_(n=0)^25 s^(2n+2)/[(2n+1)8^(2n+1)]. Its negative derivative therefore depends on A and A' with coefficients R_A' and R_A. Actual interval widths w_A,w_A' contribute at most (2/3)R_A w_A and (2/3)(R_A' w_A+R_A w_A'), using2/pi<2/3. All quantities in the check are exact fractions; decimal summaries are presentation only.
+
+All66 saved inputs pass1e-30 tail-input width. Maxima are B6.35498e-43, Bprime3.23085e-38, and R_A3.989081e14. These values demonstrate why the actual saved widths, rather than only the loose1e-30 acceptance target, matter. This screening neither computes B nor bounds all panel/cancellation/arithmetic effects. Midpoint inputs are used; physical Gauss-pole displacement is charged separately by the weighted construction ledger.

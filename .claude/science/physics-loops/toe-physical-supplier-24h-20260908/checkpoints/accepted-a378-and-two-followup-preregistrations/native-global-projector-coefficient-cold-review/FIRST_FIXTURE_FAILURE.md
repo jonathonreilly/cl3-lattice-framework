@@ -1,0 +1,1 @@
+First full synthetic fixture rejected STARTED authorization because tempfile /var path was not canonicalized to /private/var. Fixture corrected to resolved output path; schema/source unchanged. No actual input or producer assembly.

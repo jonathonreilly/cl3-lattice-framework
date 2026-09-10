@@ -1,0 +1,3 @@
+# Independent parent saved-T root source review
+
+PASS for the stated source and schema boundary. Seven independent fabricated diagonal2 controls verify the normalizedgain arithmetic, canonical values, typed dimensions, consumer-scope firewall and worker limit. The root checks norm-record relations and exact normalized budgets; it does not independently reconstruct original T norms. That inherited worker arithmetic is explicit. The five-candidate bindings, exact13-file outputs, immutable source/freeze, once-only group cleanup, finalresource/source guards and20/19.5/19second384MiB limits are coherent. No actualT was parsed. No completeconsumerprecision or physicalsmallness is claimed.

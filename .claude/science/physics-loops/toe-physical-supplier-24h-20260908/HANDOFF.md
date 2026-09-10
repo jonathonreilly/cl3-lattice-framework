@@ -985,3 +985,15 @@ Checkpoint77 preregisters one NEW378-point A acquisition, worker1fe63b67/rootd57
 Source review checked oddGaussgeometry using n3/n5 toys, originaloracle containment path, output/source guards and explicit50000-bit/20000-decimaldigitserialization limits. Parentroot has exact37geometryevent schedule,378typedraw/summary/interval/hash bindings, positiveworker-timebounds and source/resourcefinalguards;19parentplus6reviewersyntheticcontrols. RootdoesnotreplayJoyceorindependentlyevaluateactualGaussroots. This acquisition will not claim a completedprojector:2x2coefficient/pi assembly is a distinct nextprotocol. Source-only coefficientmath now exists andisbeingreviewed.
 
 A separateoccupied-state targetledger gives sufficienttau<=1e-9 andweightedresidualr²<=1e-16h² for propagationerror<1/3000 over t<=100/h, withothererrors<=2/3000 neededfor1e-3 total. Actualobjectivevalues andjointkernelprecisionremainunknown. Improvedprojectorerroralone is insufficient. No scientificrun occurs before exactremote77verification.
+
+# Physics campaign SSH status
+
+Updated 2026-09-10T00:04:35.654741+00:00. Active48-hour campaign through2026-09-10 10:27:17UTC subjectusablequota.41sciencePRsdelivered; no coordinationPR, mainmerge or formalaudit. Alpha, physicalmodel/lawselection andactualconsumeraccuracyremainopen.
+
+NEW378A acquisitioncompletedonce after exactremote77: result1c84f2d9/root1351a67c, all378actualAwidthgatesPASS,16.49seconds externalwall,76,922,880-byte externalRSS,113,934,336-byte sampledwhole-treepeak. Exact21Gauss/18panel geometry andmidpointAvaluesaresaved. Scalarcontainment andGaussmathematics inheritreviewedsource; noindependentfullnativeoraclereplay. No higherprecisionpilotran.
+
+Checkpoint78preregisterstwoindependentfollowups. Coefficientassembly ed9215bb/rootfded66be constructs756positive-band4x4 blocks andthelow/highdescriptors, with3407durableevents andanindependentroot2x2/Machin/weight/ledgercheck. Newweightsareexplicitlyoutwardroundedto2^-192 beforemidpointselection, avoidingheterogeneousdenominatorgrowth; root/Aargumentsremainunchanged andactualweightdisplacementischarged. Limits120/119.5/119seconds384MiB. SavedTnormcensus6eb9a5e0/root8ad0b0b2 computesexactnormsandnormalizedunit-traceprecisionthresholdsforfivefixedspaces;20/19.5/19seconds384MiB. ItdoesnotrecomputeoldGram/pivots/leakageanddoesnotclaimthefulloccupiedconsumerisaccurate. Bothareunexecuteduntilremote78verified; failuresremainimmutable.
+
+TheanalyticphysicsstretchisrevisitingthefullWardexpressionforalphausingKneserchannelsandnativeO/Pvacuum symmetry, retainingallboundaryterms. ThismayisolateananalyticshortcutaroundtheGaussianconsumer; itisnotyetacertificate. Aseparateconditionalmetric/inverseprecisioncompanionprovidesexplicitgatesfromtheupcomingsavedTnormswithoutinventingcrossnorms; actualphysicalsmallnessremainsunmeasured.
+
+Diskcleanupremovedtwoadditionalcleaninactiveworktrees8075/8076afterexactremoteevidenceandactive-referencechecks;62removedtotal,about57GiBfree. Lockrenewedthrough02:02:15UTC. Continuephysicsafterthischeckpoint.

@@ -1,0 +1,7 @@
+# Saved T sensitivity: mathematics PASS, parser repair requested
+
+Runtime4cbccf11 source-only review. For any matrix, ||T||²<=min(||T||F²,||T||1||T||infinity); entrywise Gram perturbation eta has operator norm<=n eta, yielding gain n*b. A PSD test with trace<=1 has trace error bounded by this gain. The cross-error Frobenius bound b*n*m*eta² follows from ||E||F²<=nm eta². These are normalized conditional budgets, not values of physical tau or residual, and the source correctly makes that distinction.
+
+Nine independent synthetic vector inequalities validate the norm upper bound on three2D matrices. Parser currently accepts2/2, and Fraction also accepts exponential/underscore forms; protocol requests exact canonical rational strings. Requested str(q)==x and exact producer2^-256 grid validation to bound denominator growth. Producer candidate source BITS256/CAP2048 supplies a much smaller rigorous summation domain than arbitrary32768bit coprime denominators. No actual candidate parsed.
+
+Runtime verifies source bytes, immutable freeze and full pins at both endpoints; each norm output precedes derived budgets and failure retains current orbit. Completion true physical interpretation still requires fixedfive authenticated matrices and final external schema. Suggested explicit list census5 in worker; constant pinned binding already supplies order, so this is a contract enforcement improvement rather than a demonstrated native mismatch. No actual execution or output read.
