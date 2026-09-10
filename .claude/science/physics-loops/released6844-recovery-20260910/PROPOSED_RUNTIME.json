@@ -1,0 +1,52 @@
+{
+  "schema": "released6844-proposed-runtime-v1",
+  "status": "PROPOSED_NOT_EXECUTED",
+  "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released6844-20260910",
+  "source_base": "41f814ac102f9225a1c1553efd849e199168bb17",
+  "runner": "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py",
+  "preflight_step": "mkdir -p logs/runner-cache/.in-progress before freezing input hashes",
+  "command": [
+    "python3",
+    "scripts/cached_runner_output.py",
+    "--timeout-sec",
+    "60",
+    "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py"
+  ],
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "runner_timeout_seconds": 60,
+  "outer_watchdog_seconds": 70,
+  "process_group_rss_cap_bytes": 1073741824,
+  "frozen_paths": [
+    "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py",
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md",
+    ".claude/science/physics-loops/toe-axiom-closure-block128-curved-carrier-dependency-20260817/NO_GO_LEDGER.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+    "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+    ".claude/science/physics-loops/toe-axiom-closure-block105-shifted-origin-frame-gauge-20260814/NO_GO_LEDGER.md",
+    ".claude/science/physics-loops/released6844-recovery-20260910/BLOCK127_ROADMAP_CONTEXT.json",
+    ".claude/science/physics-loops/released6844-recovery-20260910/CITATION_SCOPE.json"
+  ],
+  "expected_cache": "logs/runner-cache/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.txt",
+  "required_outcomes": [
+    "process exit 0",
+    "no resource failure",
+    "frozen source/input hashes unchanged",
+    "cache contains TOTAL: PASS=8 FAIL=0",
+    "cache contains all five honest N5 resolution lines",
+    "cache records the exact 9/80 grouped-map counterexample"
+  ],
+  "forbidden_work": [
+    "do not run Block127 producer/cache",
+    "do not update audit/generated ledgers or citation manifests",
+    "do not use moving main or ancestry gates"
+  ],
+  "historical_runtime_seconds": 3.56,
+  "independent_grouped_check_seconds": 4.386983500036877,
+  "primary_execution_performed_in_author_slice": false
+}

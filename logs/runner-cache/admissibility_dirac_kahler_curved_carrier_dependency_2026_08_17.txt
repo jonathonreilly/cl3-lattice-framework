@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py
+runner_sha256: 4299d645f687bec12d945598cca1df5c13a73c871a9e6ad1459e7e6b17c5bab5
+input_fingerprint_sha256: 70dda245383bdba7c8f049ff16149b1bb82d4ff66af052ff73ebe1d8cde020af
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 4.20
+status: ok
+----- stdout -----
+[PASS] A-source-inputs: literal filesystem inputs and the loaded Block105 module match frozen SHA-256 bindings
+       paths=9; moving refs=0; ancestry gates=0
+[PASS] B-displayed-matrix-facts: two exact displayed matrices are unequal by -89/140 and retain five time bands
+       matrix inequality is not a transition-equivalence or global-action test
+[PASS] C-spatial-shift-sector-control: both displayed alternating matrices have doubled-shift commutator rank 32
+       only this spatial-shift eigenspace reduction is excluded
+[PASS] D-raw-distance-two-blocks: eight framed raw 4x4 Q[j,j±2] blocks have rank 3 and coordinate kernel e2
+       no Schur elimination or complete next-state equation is computed
+[PASS] E-full-grouped-control: sixteen complete 8x8 maps have ranks 3/4 and disprove universal embedded-e2 survival
+       embedded witness: zero=10, nonzero=6; exact counterexample component=9/80
+[PASS] F-bounded-census: finite support, shift, raw-block, and full-group results are kept without a pipeline theorem
+       legacy underdetermination mutation is guard-only; no next-state family is claimed
+[PASS] G-open-construction-boundary: transition, common descent, descriptors, direct Gram OS, and other fixtures remain open
+       Block127 is roadmap history; no independent wall count is claimed
+[PASS] H-scope-and-no-go-discipline: the original W1 no-go fails; the live result is a finite partial narrowing
+       no audit status, premise adoption, obligation retirement, or TOE movement
+INPUT_BINDINGS: {".claude/science/physics-loops/released6844-recovery-20260910/BLOCK127_ROADMAP_CONTEXT.json": "18035ecd1d1a0e976350cbc73a6fdff8972c3ac719b2e033654b68fb889c2d86", ".claude/science/physics-loops/released6844-recovery-20260910/CITATION_SCOPE.json": "cc236bef1535e04ce457b5034782687e5daebb79de435e741a73e8898bcbc0fb", ".claude/science/physics-loops/toe-axiom-closure-block105-shifted-origin-frame-gauge-20260814/NO_GO_LEDGER.md": "e92c85ac05cd969ce0f35cf4d0892f5a144f59a98b975586002aefe2e57747c7", ".claude/science/physics-loops/toe-axiom-closure-block128-curved-carrier-dependency-20260817/NO_GO_LEDGER.md": "49687a033f2f388bf35ef8de90f9ae73310e2ce9436ae40ad027d40ce7bae8f6", "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md": "b3e42b85ff4bd29edd2d3c65bb1685503560af6b512013e062a93601c8661990", "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md": "9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33", "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753", "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37", "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445"}
+FIXTURE: cover=(time8,space4); quotient=time4 antiperiodic; origins=((1,0),(1,1)); mass=2/7; weights=(3/5,4/5); directions=(+2,-2); steps=(1,3)
+DISPLAYED_MATRICES: unequal entry difference=-89/140; time_bands=(-2,-1,0,1,2); transition_equivalence=NOT_TESTED
+TRANSLATION: rank[Q_alt,Sx⊕Sx]=(32,32); only this shift-sector reduction is excluded
+RAW_DISTANCE_TWO: count=8; shape=4x4; ranks=3; framed_kernel=e2; Schur_elimination=NOT_PERFORMED
+GROUPED_FULL: count=16; shape=8x8; rank3=4; rank4=12; embedded_e2_zero=10; embedded_e2_nonzero=6
+COUNTEREXAMPLE: origin=(1,0); direction=+2; step=1; start=1; G*(e2,0)=(0,0,0,0,9/80,0,0,0)
+N5: per_element: checked — two displayed 16x16 physical matrices differ at entry (10,11) by exact -89/140; no transition equivalence is tested
+per_site: checked — the doubled alternating form represents one complex Grassmann mode and its conjugate at each of 16 physical sites, not two site modes
+per_mode: checked — rank[Q_alt,Sx⊕Sx]=32 for each displayed matrix, so this spatial-shift eigenspace reduction is not invariant; other spectral descriptions are open
+per_block: checked — eight raw framed distance-two 4x4 blocks have rank3 and kernel e2; sixteen full adjacent 8x8 maps have ranks3/4, and the embedded e2 witness fails in six
+lattice_wide: checked and not executed — no common differential, transition law, true Schur elimination, descriptor evolution, direct Gram OS proof, ADM/history transporter, joint gravity, Records, or TOE closure is constructed
+RESULT: exact finite matrix boundary only; no transition inequivalence, global-action no-go, evolution no-go, or universal dependency order
+OPEN: common descent; transition law; true Schur or descriptor formulation; constraints; enlarged state; direct Gram OS; other groupings; other curved fixtures
+AUDIT: none; formal audit deferred; zero obligation retirement; no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+
