@@ -1,0 +1,3 @@
+# Handoff
+
+This block derives the sharp quadratic remainder, excludes the fixed zero-dual positive certificate, and evaluates reduced signed corrections for the same two trials. Both alpha intervals still contain zero. The accepted result is a narrowing, not a sign theorem. The source_draft/INVENTORY.json records exact original and compressed recovery hashes. Base PR8080 atac7bc8d614a67cec5a86d59253be17bf04b98f34; current origin/main e95797cc80b69815fadd300f431b3461f2449161. Main scientific premises are unchanged. Full integration/current-main combined/changed-audit-evidence/formal audit remain UNRUN.
