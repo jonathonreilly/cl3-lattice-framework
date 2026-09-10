@@ -1,0 +1,3 @@
+# Parent independent B378 root review
+
+Source and mathematical scope pass. The original 658476 integrands and cumulative panel sums are inherited from the separately reviewed worker. The checker independently reconciles original endpoint provenance, outward mappings, all 41 moments by binomial convolution, low/high tails, Machin interval, final B intervals and every radius flag. Parent added completion time bounded by root elapsed; original root retained in full. Independent one-atom/core controls are separately recorded in native-b378-parent-cold-review. Fabricated schema controls stub high moments and never load native inputs. Integration readiness/formal audit remain unrun.

@@ -1035,3 +1035,15 @@ Thedegree(1,1)analytichierarchyalsopassedindependentreview: onlynewomega5momenti
 Historicalcostcorrection:1742outerGaussnodes require3484endpointoraclecalls; eachcallreturnsAandA-prime. Earlier1742-callinterpretationwaswrong, asconfirmedbyactualpilotloopandacceptedRESULToracle_count3484.43.21sexternalcatalogtimebelongsto3484calls. No acquirednumericalresultchanged orreran.
 
 Continuephysicsafterthischeckpoint; do notstanddown.
+
+# Physics campaign SSH status
+
+Updated 2026-09-10T01:43:49.970101+00:00. Campaign continues through 2026-09-10 10:27:17 UTC subject usable quota. 43 source science PRs delivered, 64 inactive worktrees removed with remote preservation. About 56 GiB free. Full alpha and physical model/law selection remain open.
+
+The once-only degree-(1,0) full Ward certificate finished in 1.48 s (50,642,944 B external RSS;91,127,808 B tree peak), ROOT3dab/result672ce. Both fixed choices are INDETERMINATE: residual nominal365.53/error24345.03; variational nominal610.08/error30483.50. Positive central estimates do not establish alpha's sign. Exact retained events and complete independent root reconciliation archived here.
+
+Checkpoint82 preregisters three NEW protocols after independent source reviews and synthetic adversarial controls: B378 eb24e79e/root e7160e3e,300/299.5/299s384MiB; omega5 102768f7/root7c20325f,30/29.5/29s384MiB; all-q saved screen e8986492/rootb8adc602,10/9.5/9s384MiB. Do not execute before exact remote verification. Every output is fresh and once-only. B378 uses the old endpoint catalog to acquire378 new B intervals, checks actual widths against geometry targets, and does not compute an occupied witness. Its root independently reconciles mappings/moments/tails/final intervals; original658476 integrands and panel sums remain inherited. Omega5 independently reconciles all1742 new integrands and41 tail moments, targeting width1e-24; original catalog enclosure truth remains inherited. The saved all-q screen reads205 immutable degree10 events and checks a certificate-only obstruction for every second polynomial with the same first polynomial; it is not a no-go for alpha.
+
+The next stronger degree-(2,0) approximation has independent algebra PASS, using only c,nu,omega5 and a correctly daggered quadratic source. Its implementation is prospective. The separate coarse occupied witness is being repaired before any execution: independent review caught an omitted mu O/6 constant in local-to-Gamma-pole entries and incomplete input receipt checks. Its 300s schedule also needs deliberate cost scrutiny. No native witness arrays were loaded during this review.
+
+Continue physics after this checkpoint. No coordination PR, main merge or formal audit. Source-review PASS is not integration readiness.

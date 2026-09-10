@@ -1,0 +1,5 @@
+# Independent all-q saved screen review
+
+Source PASS for proof/compute and receipt-repaired runtime3b6703e2. J*J=8h² implies exact a²=(12s0P+3s0O)/(8h²). For arbitrary second candidate gap coercivity bounds ||vhat|| by(ja+T)/delta. Componentwise nonnegative residuals imply F>=T/delta, and a<=X+E cancels the T-dependent term in nominal-minus-error. Therefore C>=a²(1+j/delta) excludes both strict gates for this unchanged first polynomial/error functional. It is not an alpha no-go. Directed lower C and upper threshold make the implemented sufficient screen conservative.
+
+Worker retains source chronology before parse and extracted intervals before arithmetic; original result rows and accepted immutable source bind the205-event selection. Receipt repair uses original19worker/19.5root/20external caps and strict workerRSS; immutable startup/final source and resource lifecycle preserved. No accepted E/s0/events or native data read. Independent full205-event fabricated two-mode fixture passes, coherently changed screen flag rejects under the newly authored separate root. That root awaits parent review.

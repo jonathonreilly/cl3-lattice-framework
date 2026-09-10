@@ -1,0 +1,7 @@
+# Independent full-node nu saved checker — source-only NOT_READY
+Explicit structural reuse of397 mu saved guard architecture. New independent raw JSON reader reconstructs3484accepted endpoints1742mapped26-node contributions67panels using Fraction/divmod directed192 rounding. No import of producer compute/interval/loader/catalog functions and no oracle. Recomputes all40tailmoments by binomial convolution,low/M42bound/rho4/Machin final interval. Current raw endpoint/node and independent panel saved before comparison, failures retained.
+
+Original mu checker preserved as provenance, never executed/imported. Final acceptednu input/root/worker/source/catalog closure and status must be bound only after actualacceptance. No runtime authorization yet. Proposed30s/384MiB saved-only, subject review and conservativecost justification:3484smallraw reads1742rationalnode evaluations40smallmomentconvolutions; no measured fit asserted. If budget uncertain root may choose a larger new contract before preregistration. No actualsaved arithmetic run in preparation.
+
+## Accepted binding successor
+50f whole precursor preserved. Now exact actualnu acceptedb1f/result5c0root, source3ac/root366 andfullraw closure bound; no savedexecution.30s384MiB worker29/root29.5once, forecast27.5=10*actual2.25+5seconds inference, not measured fit. Runtime only imports independent checker; oldmu is provenance only. Finalallinputhash recheck added. Root monitor separately prepared.

@@ -1,0 +1,5 @@
+# New saved geometry gain ledger root monitor
+
+One new census under120 external/119.5root/119worker seconds and384MiB. The root checks immutable source and accepted metadata, exact membership, fresh once markers, process-tree sampled memory, inclusive deadlines and final input hashes. It retains stderr/stdout, schema and external time receipts; it never reruns completed native protocols.
+
+Schema checks all2947 ordered progress records,378 gain/budget rows and66 old-pole budgets, exact original/record/final relationships, and independently reconstructs scalar allocations from reported integer gains. Original683424 geometry divisions remain producer arithmetic under the reviewed source; this is not an independent numerical replay. Catalog analytic errors, B containment, remaining scalar allocations and witness values remain unsatisfied obligations. Accepted maxA radius applies to original raw box midpoints/full boxes only. Failures and partials persist; no retry within this protocol. Root activation and remote preregistration required.

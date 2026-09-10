@@ -1,0 +1,15 @@
+# New B378 and coarse49 witness source implementation
+
+UNLAUNCHED, binder now binds accepted coarse geometry gain ledger; execution remains NOT_READY pending independent cold review and new preregistration. This is a distinct B-only method:1742sharedaccepted outer A enclosures plus378newA midpoint boxes; no oracle and no B66 rerun. Fixed40moment high correction, rho4p26 bound, and low subtraction are implemented. The Bprime supplier is deliberately absent because the geometry ledger must prove all actual cross denominators nonzero; a failed separation stops, without adding a confluent branch opportunistically.
+
+bcore.one persists beforeeachnode and eachhighmoment, every26-node cumulative interval, and finalinterval before a future widthgate. All arithmetic is192-bit outward using the unchanged reviewed interval primitive. The final B target is supplied perpoint from the accepted coarse ledger, not guessed from nominal precision. Positiveintegrand cancellation can widen interval arithmetic; target failure is a retained complete/indeterminate result, never grounds for an automatic retry.
+
+Witness core contracts the explicit node/local/selected overlap blocks and includes the leading high localterm. Y=I is intentional and its certified.00213 Frobenius error remains in the coarsecontract. The remaining .019 operator tail and scalar/rounding budgets are likewise externalcertificate fields. Its fixed Frobenius gate is(.022)², withINDETERMINATE otherwise. No physicalvalue or smalltail is assumed.
+
+The actual seven-star/half/Gamma adapter is not yet bound: it must implement all literal signs and scales from6b4d and use the same exactselected T, localimpurityV and acceptednodecoefficients. This package's finite block API is not a claim those inputs have already been acquired or authenticated. Runtime must refuse until the fulladapter/binder exists; a source-only core is not a launchable witness.
+
+Prospective acquisition cap300s inclusive root/schema/hash/worker,384MiB sampledtree; no separate512MiB allowance. Pure count inference378/66*32.92~189s leaves111s overhead but doesnotprove completion with40terms anddifferent arithmetic. A rootwatchdog must terminate and retain partials atcap; no retry. All oldoutputs immutable. No actual scalar, node, selectedT or matrix has been parsed during this source implementation.
+
+The local-to-GammaWard and Gamma-center blocks require existing acceptedmu as well: high-s limits of the reviewedappend formulas give <wk,Gamma e_v>=c Nkv−mu Okv/6 and <e0,Gamma e_v>=−mu T0v/6. dictionary.local_append includes the reversed skew signs and the appendedfactor1/2. Mu is an existing supplier, not a new acquisition; its exactacceptedbinding remains required.
+
+Cost units correction: the old catalog used 3484 oracle calls at 3484 endpoints of 1742 outer nodes; every call returns both A and A-prime. The historical 1742-call interpretation is superseded. B-only cost uses the observed 56.78-second two-channel B66 run only as an inference, with a prospective 300-second inclusive cap, not a completion promise.

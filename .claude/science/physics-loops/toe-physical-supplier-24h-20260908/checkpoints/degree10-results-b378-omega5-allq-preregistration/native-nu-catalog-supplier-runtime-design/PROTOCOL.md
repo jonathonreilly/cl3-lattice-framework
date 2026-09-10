@@ -1,0 +1,6 @@
+# New nu catalog contraction, unlaunched
+Target fullwidth2e-19/radius1e-19. Same accepted1742Gauss26 nodes67panels,3484A endpoints160bit. Exact successful9d21 loader copied byte-for-byte (weightwidth1e-38, never failed f9gate); no new oracle. New integrand6−t²+t⁴A. rho4radius256*4^-52; low exact6eps−eps³/3 with positive A0eps^5/5;40tailterms M2..M41, positive M42 bound12^42/(81*8^81).
+
+Every panel is saved before progression; exact tail moments/partial/remainder saved before final interval and target gates. Middle fullwidth<=2e-25 required. Result may be INDETERMINATE; no refinement/retry. Source-only readiness never calls loader or contraction. Copied arithmetic is outward192. Below100000 elementary operations, maximum interval intermediates bounded by2^20; propagated absolute roundoff allowance1e-45 is dominated by middle gate. Endpointwidth/nodeweight premises are actual loader gates.
+
+Prospective once-only30s/384MiB,worker29/root29.5inclusive; inferred27.7s=10*acceptedmu1.77+10, not measured performance. Full root monitor/review/preregistration and exact authorization remain prerequisites. Originalmu/cminus sources/failures/results unchanged. This computes a NEW physical quantity and no leakage/alpha result.
