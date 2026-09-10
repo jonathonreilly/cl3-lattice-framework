@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 4668 |
+| Ledger rows | 4700 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
@@ -39,12 +39,12 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
 | Open gates | 0 |
-| Unaudited rows | 4293 |
+| Unaudited rows | 4325 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
 | Audited numerical-match rows | 0 |
-| Citation cycles detected | 59 |
+| Citation cycles detected | 60 |
 
 Source: tracked shards under `docs/audit/data/ledger/` and
 [`docs/audit/data/effective_status_summary.json`](../audit/data/effective_status_summary.json).
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 4293 |
-| Ready rows | 1628 |
-| Cycle-break targets | 59 |
+| Total pending rows | 4325 |
+| Ready rows | 1644 |
+| Cycle-break targets | 60 |
 | Critical pending | 711 |
 | High pending | 303 |
-| Medium pending | 1067 |
-| Leaf pending | 2212 |
+| Medium pending | 1074 |
+| Leaf pending | 2237 |
 
 Next ready rows by queue order:
 
@@ -88,7 +88,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest state | ok |
 | Manifest pending additions | 0 |
 | Manifest pending removals | 0 |
-| Unmanifested candidates (need pending entries) | 1 |
+| Unmanifested candidates (need pending entries) | 2 |
 | Admitted ids absent from lane candidates | 565 |
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 0 |
@@ -98,6 +98,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Non-lane rows deferred by simulated interleave | 0 |
 
 Unmanifested candidates (visible gaming surface; need review-landed pending entries before admission):
+- `record_law_exact_domain_and_channel_bridge_6275_bounded_theorem_note_2026-09-09`
 - `route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30`
 
 Admitted ids currently absent from lane candidates:
@@ -687,19 +688,19 @@ Source: deferred package (`archive/publication/ci3_z3/`).
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4954 |
+| Citation-graph nodes | 4986 |
 | Critical nodes | 742 |
 | High nodes | 316 |
-| Medium nodes | 1205 |
-| Leaf nodes | 2691 |
+| Medium nodes | 1212 |
+| Leaf nodes | 2716 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2119 descendants; score 320.550
-- `three_generation_observable_theorem_note` - critical; 1123 descendants; score 57.134
+- `minimal_axioms` - critical; 2145 descendants; score 332.567
+- `three_generation_observable_theorem_note` - critical; 1124 descendants; score 57.136
 - `observable_principle_from_axiom_note` - critical; 1002 descendants; score 53.970
-- `graph_first_su3_integration_note` - critical; 1475 descendants; score 52.027
-- `plaquette_self_consistency_note` - critical; 1151 descendants; score 47.670
+- `graph_first_su3_integration_note` - critical; 1476 descendants; score 52.028
+- `plaquette_self_consistency_note` - critical; 1152 descendants; score 47.671
 - `kinetic_isotropy_primitive` - critical; 819 descendants; score 47.179
 - `minimal_axioms_2026-05-03` - critical; 1030 descendants; score 43.510
-- `key_terminology` - critical; 1193 descendants; score 43.222
+- `key_terminology` - critical; 1194 descendants; score 43.223
