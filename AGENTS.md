@@ -147,8 +147,11 @@ records duplicate closures and transferred obligations, not landed science.
 The owner explicitly authorized the coordinator to manage review, fixes and
 landing of the backlog on main. All 37 draft PRs are included for actual
 ready-or-close triage under the latest owner direction. Ready is a queue
-state, not acceptance, and a still-draft PR does not land. Preserve the three
-standing owner reservations. Reviewers do not perform GitHub mutations.
+state, not acceptance, and a still-draft PR does not land. On 2026-09-10 the
+owner released the three reservations and requested review and landing of all
+18 remaining originals; see backlog_evidence/released18-20260910/RELEASED_TARGETS.json.
+Release grants no scientific acceptance or premise adoption. Reviewers do not
+perform GitHub mutations.
 
 - `TOE_SCORECARD.md`: as-of target map; check its revision before relying on it.
 - `CAMPAIGN_STATUS.md`: common campaign assignments and current evidence.

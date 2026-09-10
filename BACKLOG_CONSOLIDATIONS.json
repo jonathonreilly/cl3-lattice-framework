@@ -4930,11 +4930,7 @@
   ],
   "scientific_pass": false,
   "landing_authorized_by_this_map": false,
-  "reserved_prs": [
-    6379,
-    6858,
-    6859
-  ],
+  "reserved_prs": [],
   "live_after_actions": {
     "captured_at": "2026-09-07T15:00:08.801066+00:00",
     "open_count": 204,
@@ -13936,7 +13932,16 @@
       "formal_audit": false
     }
   },
-  "current_reserved_successor_routing": {
+  "historical_owner_reservations": [
+    6379,
+    6858,
+    6859
+  ],
+  "owner_release": {
+    "evidence": "backlog_evidence/released18-20260910/RELEASED_TARGETS.json",
+    "instruction": "Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. The 33 transferred scopes remain pending review; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred."
+  },
+  "historical_reserved_successor_routing": {
     "evidence": "backlog_evidence/successor-routing-20260909/INDEX.json",
     "original_scopes_mapped": 33,
     "original_scopes_actual_reserved_dependency_held": 32,
@@ -13949,5 +13954,15 @@
     "separable_corrected_scope_landed": 7028,
     "separable_landing_commit": "f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79",
     "remaining_transferred_scopes_at_these_successors": 32
+  },
+  "current_released_successor_routing": {
+    "evidence": "backlog_evidence/released18-20260910/RELEASED_TARGETS.json",
+    "pending_scopes": 33,
+    "successors": [
+      6515,
+      7315,
+      7359
+    ],
+    "disposition": "released_for_review_not_yet_accepted"
   }
 }
