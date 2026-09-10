@@ -1,0 +1,17 @@
+# New omega7 and omega9 from the accepted A catalog
+
+Source-only conditional supplied native model, h=1, X=6-2 sum cos(theta),0<=X<=12. Define Mj=E X^j and omega(2r+1)=E X^(r+1/2). Tonelli yields omega=(2/pi) integral Qr(t)dt, Qr=E[X^(r+1)/(X+t²)]. Polynomial division gives
+ Qr=sum(j=0..r)(-1)^j M(r-j)t^(2j)+(-1)^(r+1)t^(2r+2)A(t).
+Use r=3,4 only. Thus Q7=M3-42t²+6t4-t6+t8 A and Q9=M4-M3t²+42t4-6t6+t8-t10 A. The opposite signs of their final terms and low remainders are essential.
+
+Use the existing1742 Gauss26 nodes in67 dyadic panels [2^j,2^(j+1)],j=-64..2. There were3484 actual endpoint oracle calls, each returning A and A'. No new oracle is needed. On the reviewed rho4 ellipse Re z²>0, so |Qr(z)|<=Mr. The quadrature error radius is at most(128/3)Mr4^-52; retain the reviewed slack Rr=(136/3)Mr4^-52. This is a new pair of integral certificates, not a recomputation of omega5.
+
+For epsilon=2^-64 let Lr=sum(j=0..r)(-1)^j M(r-j)epsilon^(2j+1)/(2j+1). The low integral is in[L3,L3+(17/60)epsilon9/9] for r3 and[L4-(17/60)epsilon11/11,L4] for r4. For t>=8, the even40-term geometric expansion gives high partial sum(n=0..39)(-1)^n M(n+r+1)/[(2n+1)8^(2n+1)], with positive remainder at most M(r+41)/(81*8^81). Hence omega7 uses M4..M43 and remainder M44; omega9 uses M5..M44 and remainder M45. Reuse authenticated exact M3..M43 from the accepted omega5 TAIL, alongside supplied exact M0=1,M1=6,M2=42. Only M44 and M45 are new computations. The multinomial central-binomial moment formula is unchanged; the new routine rejects all other indices, avoiding silent recomputation of completed moments.
+
+The accepted scalar envelope widths are at most3e-30, node widths2^-140, mapped weight widths1e-38+2*2^-192, sum of weight upper bounds<=9. Exact Gauss integration of t8 and t10 gives weighted powers<8^9/9 and<8^11/11. Perturbing roots/weights with the declared widths changes each upper sum by<1. Thus fixed predata/runtime bounds 15,000,000 and800,000,000 are sufficient. Scalar uncertainty contributes at most4.5e-23 and2.4e-21 to the respective unscaled widths. These are the dominant conservative terms.
+
+A common bound2^32 on the derivative of the separated polynomial terms follows by Mr<=12^r, t<=8 and A<=1/3; the root width charge is <=9*2^32*2^-140. Computed integrand magnitudes stay below12^r+1 after these width bounds, so the weight charge is<=1742*(12^4+1)*(1e-38+2*2^-192). A conservative100,000 rounded primitive count, amplification2^32 and two192-bit ulps contributes<1e-40. The actual middle width gates remain mandatory:1e-22 for omega7,1e-20 for omega9. Final widths are tested against the same targets, rather than assumed from precision settings.
+
+Using Mr<=12^r, M(r+41)<=12^(r+41), pi>3 and the exact inherited Machin32/10 interval, sufficient final width bounds are (2/3)*(target+2Rr+low_remainder+12^(r+41)/(81*8^81))+1e-32<target for the two targets. The loose reciprocal-pi charge1e-32 follows from total integral<=8*12^r+12^(r+1)/8<200000 and the Machin remainder. Synthetic rational controls verify these inequalities without evaluating high moments or catalog data.
+
+The prospective downstream determinant-jet degree audit asks for omega7/omega9 through moment10. This supplier alone proves no Ward sign or downstream moment accuracy. The infinite Gaussian bridge, projected table, cancellation in jet arithmetic and future cost/width gates remain separately reviewed dependencies.
