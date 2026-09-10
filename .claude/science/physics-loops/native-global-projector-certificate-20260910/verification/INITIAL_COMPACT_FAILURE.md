@@ -1,0 +1,1 @@
+Initial compact check stopped at KeyError once: A acquisition receipt records once in its exact status field, unlike the later coefficient receipt boolean. Fixed to exact status/378points/allwidthgates. No native arithmetic was run or repeated.
