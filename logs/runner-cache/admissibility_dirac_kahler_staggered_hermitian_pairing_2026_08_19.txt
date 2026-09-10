@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.py
+runner_sha256: 7862571f0d8fd1974ff13c1029961c430aab1a52274e692d7fe947d63db28411
+input_fingerprint_sha256: 2f3dc33a7754b0e7baf4b7b0f90bdc6604d556e32212e8c7c1ce2caf03f3a043
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 77.41
+status: ok
+----- stdout -----
+[PASS] A-authority: every literal audit input is present and bound to its actual filesystem SHA-256, without a moving ref or ancestry premise
+[PASS] B-skew-split: on the primary fixture every healed edge action splits as Q_ij=m*H_q+K_ij with K_ij real antisymmetric and m-free on 16/16; the measured J_ij=H_q^{-1}K_ij characteristic polynomials are even, invertible and squarefree on 16/16, while only purely imaginary semisimple spectrum in conjugate plus/minus pairs and an even characteristic polynomial are structural
+[PASS] C-staggered-involution: on the primary fixture the staggered site parity X_0=diag((-1)^(t+x)) is H_q-self-adjoint, anticommutes with all 16 J_ij and makes X_0^dagger*Q_ij Hermitian on all 16 edges; its common anticommutant is one-dimensional, so uniqueness up to sign is fixture-level
+[PASS] D-adapted-scout-and-half-exchange: the specified metric-adapted scout is a rational H_q-isometry of eigendimensions 8/8 and fails the fixture Hermiticity test with rank 16; the primary-fixture block-antidiagonal anticommutation system has rank 128, so no half-exchanging operator in that tested space anticommutes with J
+[PASS] E-positivity-obstruction: Q_ij[-,+]=beta*(m*I+R_ij) on 16/16; for a real H-isometric half exchange with symmetric physical block, S=W^T*beta obeys S*R=R^T*S, while P(m)=S*(m*I+R) is separately checked symmetric and also symmetrizes R; the primary census bounds positive index by 6, two probes attain (6,0,2), explicit zero and nonzero PSD algebraic S counterexamples refute a generic no-PSD inference, and the real symmetric symmetrizer spaces have dimensions 16 and 8 on the nilpotent and split probes
+[PASS] F-weight-robustness: at the second tested weight assignment the chart-indexed census shifts to 14 split plus 2 nilpotent, exactly the new zero-dressing cover-time-even locus, while X_0 remains Hermitian on 16/16 and the positive-index-at-most-6 bound reproduces; no all-weight theorem is claimed
+[PASS] G-metric-complement-and-corners: H_q[+,+] and H_q[-,-] are positive definite with det H_q[+,-]=1/26542080 exactly; at the two tested shear corners the spectral census still excludes positive-definite symmetrizers, without excluding singular PSD symmetrizers or deciding P(m)=S*(m*I+R)
+[PASS] H-note-scope: the note states fixture and structural scopes separately, distinguishes S from P(m), records the PSD counterexamples and 16/8 symmetrizer dimensions, proves the polar construction, preserves the firewalls, and contains the exact N5 fence
+GATES A-authority=PASS B-skew-split=PASS C-staggered-involution=PASS D-adapted-scout-and-half-exchange=PASS E-positivity-obstruction=PASS F-weight-robustness=PASS G-metric-complement-and-corners=PASS H-note-scope=PASS
+N5: per_element: on the primary displayed fixture Q_ij=m H_q+K_ij with K_ij real antisymmetric and m-free on all sixteen edges; H_q-skewness of J_ij structurally gives purely imaginary semisimple spectrum in conjugate plus/minus pairs and an even characteristic polynomial, while invertibility and squarefreeness are separate sixteen-edge fixture computations and are not structural consequences
+per_site: the fixed staggered site parity X_0 is H_q-self-adjoint, anticommutes with all sixteen primary-fixture J_ij, and makes X_0^dagger Q_ij Hermitian on all 16 primary-fixture edges; the one-dimensional common anticommutant proves uniqueness up to sign on the primary fixture only
+per_mode: the specified adapted scout fails the primary-fixture Hermiticity test and the primary block-antidiagonal system excludes a half-exchanging anticommutant; on the +1 eigenspace the mass contribution is m H and is positive only for m>0, while the paired polar-decomposition construction proves the unique positive-cross-block H-isometric half exchange from the stated A,B,C hypotheses
+per_block: for a real H-isometric half exchange whose physical block is symmetric, S=W^T beta is a real symmetric symmetrizer satisfying S R=R^T S, whereas the physical block is P(m)=S(m I+R); P(m) also symmetrizes R, so the positive index of either form is at most 6 on every primary edge, but zero and nonzero PSD algebraic S exist for the nilpotent Jordan form, whose real symmetric symmetrizer space has dimension 16 rather than 8, while the tested split probe has dimension 8 and two probes attain (6,0,2)
+lattice_wide: the chart-indexed census is 4 nilpotent plus 12 split at the primary weights and 2 plus 14 at the second tested weights; the two assignments and the s_t=0 and s_x=0 corner fixtures retain only the no-positive-definite bound, and neither an all-weight claim nor positivity of P(m) follows
+RESULT: the displayed primary fixture has a staggered Hermitian pairing and excludes positive-definite symmetrizers through the measured R spectra and positive-index bound; it does not exclude positive-semidefinite symmetrizers, does not turn S into P(m), and does not establish reflection positivity or a curved OS result
+DECISION_CUT: test the physical block P(m), admissible involution constraints, other weights and carriers, completions, the forced self-edges, coboundary admissibility, and the joint-lane program; no premise or audit disposition is adopted here
+TOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+
