@@ -1,0 +1,11 @@
+# Separate fixed coarse occupied witness stage
+
+Execution disabled pending accepted NEWB378 output/root overlay and independent full source review. This folder is separate from immutable Bstage6311. No geometry, T, scalar, coefficient or other physical array was parsed while preparing it.
+
+Exactly five fixed orbit pairs, both impurities per orbit, seven fixed site rows/columns,10cases. The adapter uses the actual rational midpoint oldfamily, literal half/Gamma seed map and exact savedT. Store -i times the positive projector difference, with accepted positive_imaginary nodecoefficients; both node and localhigh terms use that same convention. Include leading positiveV/(16pi); omittedlow/high charge.019 and oldmetricFrobenius.00213 are retained. Fixed .022 lowernorm gate and scalar/rounding intervalradiusgate.00011; failing them producesINDETERMINATE, not a retry.
+
+Accepted oldB66center, oldA66, cminus,mu, selectedROOT+POST, actualnodecoefficients+ROOT and newA378 all require immutable hashes. PendingB378acceptance must prove allrowtargets; this stage never acquires B or reruns a nativeinverse. Existingmu enters localGammaWard with literal signs. Cached pole7x7 blocks are bounded to900 entries and cleared percase; interval endpoints and all finite arithmetic use the copied reviewed192bit primitive. This changes evaluation reuse only, not the supplied matrix expressions.
+
+Prospective once300s external/299.5root/299worker384MiB sampledtree for all10cases including source/inputhashing/outputschema. There is no measured performanceclaim: this is a bounded new contraction attempt, and a source-reviewed cost adjustment may be needed before activation. Panels retain block intermediate sums; no millions of scalar files. Failure records currentcase and previouscompletedcases. Finalsource rehash andresourcechecks bothpaths are mandatory. Parent externalmonitor/preregistration required.
+
+Full source containment: nodeblock arithmetic is an interval evaluation around the accepted coefficient and scalar enclosures. Exact P is not replaced by VV* without the separately chargedmetric error. The accepted coarse witness mathematical contract remains authoritative; this stage does not establish a fine occupation consumer or physicalalpha.

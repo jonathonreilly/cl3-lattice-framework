@@ -1,0 +1,43 @@
+--- 
++++ 
+@@ -33,6 +33,7 @@
+  for t in x:
+   req(type(t)is list and len(t)==2 and type(t[0])is list and len(t[0])<=6 and all(type(j)is int and 0<=j<6 for j in t[0]),'operator word');complex_box(t[1])
+ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
++def same(a,b):return json.dumps(a,sort_keys=True)==json.dumps(b,sort_keys=True)
+ def check(O,rf,elapsed,progress):
+  O=Path(O);req(set(p.name for p in O.iterdir())=={'STARTED.json','EVENTS.ndjson','PARTIAL.json','RESULT.json','WORKER_COMPLETE.json','residual.json','variational.json'},'output census')
+  r=json.loads((O/'RESULT.json').read_text());done=json.loads((O/'WORKER_COMPLETE.json').read_text());part=json.loads((O/'PARTIAL.json').read_text());ev=[json.loads(l)for l in(O/'EVENTS.ndjson').read_text().splitlines()]
+@@ -40,7 +41,7 @@
+  for k in('oracle_calls','new_covariance_calls'):req(type(r[k])is int and r[k]==0,'scope')
+  req(done['status']=='COMPLETE_NEW_DEGREE20_ONLY'and done['runtime_sha256']==rf['worker_freeze']and done['result_sha256']==sha(O/'RESULT.json'),'completion pins')
+  req(type(done['rss_bytes'])is int and 0<done['rss_bytes']<=384*1048576,'worker RSS')
+- req(type(done['seconds'])in(int,float)and type(r['seconds'])in(int,float)and isfinite(done['seconds'])and 0<r['seconds']<=done['seconds']<19,'worker times')
++ req(type(done['seconds'])in(int,float)and type(r['seconds'])in(int,float)and isfinite(done['seconds'])and 0<r['seconds']<=done['seconds']<19 and done['seconds']<=elapsed<19.5,'worker times')
+  P=Path(rf['worker_path']);bh=sha(P/'BINDING.json');req(r['binding_sha256']==done['binding_sha256']==bh,'binding copies');auth=json.loads((Path(__file__).parent/'WORKER_AUTHORIZATION.json').read_text());req(json.loads((O/'STARTED.json').read_text())==auth,'start authorization')
+  for i,e in enumerate(ev):req(type(e['sequence'])is int and e['sequence']==i+1 and set(e)=={'sequence','choice','stage','data'},'event structure')
+  req(type(r['events'])is int and r['events']==len(ev)and 7<=len(ev)<=255,'event count')
+@@ -59,10 +60,10 @@
+   stages.append('ordered_word')
+  stages.append('gate_inputs')
+  for mode,row in zip(('residual','variational'),r['rows']):
+-  req(row==json.loads((O/(mode+'.json')).read_text())and row['mode']==mode,'choice copy')
++  req(same(row,json.loads((O/(mode+'.json')).read_text()))and row['mode']==mode,'choice copy')
+   req(ev[idx]['choice']==mode and ev[idx]['stage']=='choice_start'and ev[idx]['data']=={'mode':mode},'choice start');idx+=1;body=[]
+   while idx<len(ev)and ev[idx]['stage']!='choice_complete':body.append(ev[idx]);idx+=1
+-  req(idx<len(ev)and ev[idx]['choice']==mode and ev[idx]['data']=={'row':row},'choice complete');idx+=1
++  req(idx<len(ev)and ev[idx]['choice']==mode and same(ev[idx]['data'],{'row':row}),'choice complete');idx+=1
+   req(all(e['choice']==mode for e in body)and[e['stage']for e in body]==stages[:len(body)],'choice stage prefix')
+   for event in body:
+    d=event['data'];st=event['stage']
+@@ -116,8 +117,8 @@
+   for k,v in orbits.items():
+    for obj in(row['orbits'][k],gate['orbits'][k]):req(type(obj['count'])is int and obj['count']==v['count']and box(obj['sum'])==v['sum'],'orbit sums')
+   progress({'stage':'schema_choice','mode':mode,'status':status})
+- req(idx==len(ev)-1 and ev[-1]['choice']is None and ev[-1]['stage']=='complete'and ev[-1]['data']=={'rows':r['rows']},'completion event')
++ req(idx==len(ev)-1 and ev[-1]['choice']is None and ev[-1]['stage']=='complete'and same(ev[-1]['data'],{'rows':r['rows']}),'completion event')
+  req(type(part['seconds'])in(int,float)and isfinite(part['seconds'])and 0<part['seconds']<=r['seconds'],'partial time')
+- req(part['stage']=='complete'and type(part['sequence'])is int and part['sequence']==len(ev)and part['choice']is None and part['rows']==r['rows']and part['event']==ev[-1],'partial final')
++ req(part['stage']=='complete'and type(part['sequence'])is int and part['sequence']==len(ev)and part['choice']is None and same(part['rows'],r['rows'])and same(part['event'],ev[-1]),'partial final')
+  req(not('POSITIVE_CERTIFICATE'in statuses and'NEGATIVE_CERTIFICATE'in statuses),'contradictory signs');req(type(r['sign_certified'])is bool and r['sign_certified']==any(x in('POSITIVE_CERTIFICATE','NEGATIVE_CERTIFICATE')for x in statuses),'sign summary')
+  return {'status':'ACCEPTED_DEGREE20_WARD_SCHEMA','count':2,'events':len(ev),'result_sha256':sha(O/'RESULT.json'),'events_sha256':sha(O/'EVENTS.ndjson'),'choice_statuses':statuses,'sign_certified':r['sign_certified'],'independent_word_accumulation_and_error_reconciliation':True,'native_wick_and_word_arithmetic_inherited':True,'native_moment_identities_inherited':True,'native_oracle_calls':0}

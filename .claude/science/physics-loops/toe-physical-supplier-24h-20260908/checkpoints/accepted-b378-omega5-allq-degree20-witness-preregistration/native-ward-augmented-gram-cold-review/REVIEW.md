@@ -1,0 +1,9 @@
+# Ward augmented ledger/API cold review
+
+PASS prospective mathematical ledger/API, not achieved scalar/matrix/compression precision. Read complete derivation, API, controls and source222f insertion/common396-frame/paired-compression premises. Source formulas retain actual w_A=(B^T)^-1 b_A and their positive chiral sublattice; c_minus and a0 are explicitly future bound inputs.
+
+Three real sources scaled1/2 add raw3/closed6 dimensions:399/798. Their exact overlaps include1/12 center-Ward and signed k(1/6-a0)/4; appended J vanishes by sublattice. Added closed trace16/15 gives total<531. Extending coefficients by zero preserves norm1; W=12gamma(x) and gamma(e0)=2gamma(x0), so insertion residual factors are12sqrt(r) and2sqrt(r), not absorbed into the operator budget.
+
+API signs agree with imported G/J formula including the minus in Ward G and plus in the c-B J term. Both center and Ward raw pole formulas scale by1/2 times balance. Sensitivities hold on the fixed pole range:2/s+s/3 is convex and its endpoint maximum<257; c sensitivity<=256. Balancing at most2 gives514/512. A bound88 unbalanced and a0 half after scaling are conservative. Adding the new-row perturbation to the old block gives48985020e-19<5e-12; no extra whole-old-block dimension scaling. Exact squared comparisons confirm factor budgets .00412 and2e-6 twice, plus displacement/coefficient reserves below.0042.
+
+The raw residual threshold1/1062000000 uses531/2. Dilation insertion error2sqrt(2epsilon) (or12sqrt(2epsilon) for W) must be added separately. An interval adapter, accepted c/a0 binding, coordinate/root error and time generator remain open. Source has no native loader and native_append rejects. Independent tiny exact sensitivity tests used formal scalar changes, not bath samples;408 predicates passed. No native evaluation or source mutation.

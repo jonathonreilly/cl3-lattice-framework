@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -27,7 +27,7 @@
+  read=lambda p:json.loads(p.read_text());result=read(O/'RESULT.json');done=read(O/'WORKER_COMPLETE.json');part=read(O/'PARTIAL.json');binding=read(Path(rf['worker_path'])/'BINDING.json')
+  req(done['status']=='COMPLETE'and done['freeze_sha256']==rf['worker_freeze']and done['result_sha256']==sha(O/'RESULT.json'),'worker receipt relation')
+  for x in [result['seconds'],done['seconds'],elapsed]:req(type(x)in(int,float)and isfinite(x)and x>0,'finite time')
+- req(result['seconds']<=done['seconds']<=elapsed<299.5,'time ordering');req(type(done['rss_bytes'])is int and 0<done['rss_bytes']<=384*1048576,'worker RSS')
++ req(result['seconds']<=done['seconds']<299 and done['seconds']<=elapsed<299.5,'time ordering');req(type(done['rss_bytes'])is int and 0<done['rss_bytes']<=384*1048576,'worker RSS')
+  req(result['status']=='COMPLETE_FIXED_COARSE_WITNESS'and type(result['cases'])is int and result['cases']==10 and result['native_Gaussian_solve']is False and result['fine_consumer_certified']is False,'scope')
+  req(type(result['rows'])is list and len(result['rows'])==10,'result census');req(same(part,{'current':{'stage':'complete','case':10},'completed':10}),'terminal partial')
+  summaries=[];events=0

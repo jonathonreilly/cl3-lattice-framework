@@ -1,0 +1,5 @@
+# Prospective saved-catalog postcheck
+
+No physical endpoint/oracle call. Source prepared before output completion. Final execution freeze must bind the disclosed actual result SHA; do not execute before root completion and signal. One saved-data pass30s384MiB,25-second internal alarm, preserve errors. The full3484 rows and1742 node geometries are checked, all sources/poles/widths/rawhashes/times/partial/external receipts retained.
+
+Independent native checks use Jensen and positiveStieltjes bounds, plus direct08471 infrared A/Aprime bounds and accepted A0. They require nonempty interval intersection (consistency); a slightly broader valid oracle enclosure need not be wholly contained in a theorem enclosure. These checks can detect contradictions but do not prove the full oracle's containment. Pi uses an exact64-term Machin alternating enclosure. No small-s subtraction is performed in floating arithmetic. Any conflict is retained, not clipped or retuned. Original elliptic proof and source review remain necessary.

@@ -1,0 +1,1 @@
+Accepted omega5 overlay bound by hashes. Execution remains disabled. No degree20 calculation or supplier-result arithmetic occurred. During initial metadata inspection, ROOT_ACCEPTANCE displayed its embedded schema interval/width; those values were not used or evaluated. Subsequent preparation only authenticates files and copies named provenance fields. Prior42f8 whole preserved.
