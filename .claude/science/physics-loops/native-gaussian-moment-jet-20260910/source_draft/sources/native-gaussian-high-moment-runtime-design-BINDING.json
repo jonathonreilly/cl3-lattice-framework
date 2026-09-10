@@ -1,0 +1,86 @@
+{
+  "status": "BOUND_ACCEPTED_INPUTS_DISABLED",
+  "execution_enabled": false,
+  "first_order": 7,
+  "new_orders": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "target_full_width": "1/1000000",
+  "degree20": {
+    "files": {
+      "acceptance": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-root-review/ROOT_ACCEPTANCE.json",
+        "sha256": "1e7489c2e4b6db4ec1fb2dab9b81aef7925ee7cb80ba502f51a32903734e9b86"
+      },
+      "worker": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-run-prospective/WORKER_COMPLETE.json",
+        "sha256": "0430702c4cdf65a718e685716e17860b32e65b092629bcfa2a9e798fc5586ab4"
+      },
+      "receipt": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-root-review/RECEIPT.json",
+        "sha256": "f2eb1f46a9a4b6a073f77d6622a7793b6043cca092aafaa8d7dd0fe2cff75da3"
+      },
+      "root_freeze": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-root-review/ROOT_FREEZE.json",
+        "sha256": "ad1caebb0a04e3173c40581da84a26c1a096c9f6ff7892732910c4141aca5112"
+      },
+      "result": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-run-prospective/RESULT.json",
+        "sha256": "c7cba5a4488aba7eba7c61517fe3637dc97e4abc9e29a961b3dbbb9de612fa1a"
+      },
+      "events": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-degree20-ward-run-prospective/EVENTS.ndjson",
+        "sha256": "a1934b94b505b8a9671306430795b246c4318bfa94d57e3a957296369f9522de"
+      }
+    },
+    "worker_freeze": "83a9a3d4ab49c382ee0bc63891474d17d2f51eb842e27c4343cfb12840fe05ea",
+    "expected": {
+      "accepted_status": "ACCEPTED_NEW_NATIVE_DEGREE20_WARD_ROOT_REVIEW_ONCE",
+      "worker_status": "COMPLETE_NEW_DEGREE20_ONLY",
+      "result_status": "COMPLETE_FIXED_DEGREE20_CERTIFICATE",
+      "worker_seconds": 19,
+      "root_seconds": 19.5,
+      "external_seconds": 20
+    }
+  },
+  "omega79": {
+    "files": {
+      "acceptance": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-omega79-root-review/ROOT_ACCEPTANCE.json",
+        "sha256": "a03991147f31f5da750746f226207e9d98141ec2c0688495b43e9a5fd28f1262"
+      },
+      "worker": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-omega79-catalog-supplier-run-prospective/WORKER_COMPLETE.json",
+        "sha256": "20319feae996f1b8b3b5e7994ce5025deb1748545a7613c4fd1742d7bd0bd9a1"
+      },
+      "receipt": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-omega79-root-review/RECEIPT.json",
+        "sha256": "dc3fe80c92db83dce304b3157fefb115e414b66780da1cb0a909710581bfe547"
+      },
+      "root_freeze": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-omega79-root-review/ROOT_FREEZE.json",
+        "sha256": "ae90377953e05bd39f3e4d8da06efc305be67dfe2612a9a15d56e0539d140539"
+      },
+      "result": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-omega79-catalog-supplier-run-prospective/RESULT.json",
+        "sha256": "32952a5c24c679d23326688a114e7213fb3f2a8c6da58daf435acc9fa2a88df9"
+      },
+      "reused": {
+        "path": "/private/tmp/toe-24h-probes-20260908/native-omega79-catalog-supplier-run-prospective/REUSED_MOMENTS.json",
+        "sha256": "25a9a867ad4b696b27b0370bd510e09b157ecdb833d2ef07ed61ad7fa9ab11d4"
+      }
+    },
+    "worker_freeze": "e7b3aa0412b7f3370e27559789c5f9ec74cae9d42fddcd2df477919fdcb0ce85",
+    "expected": {
+      "accepted_status": "ACCEPTED_NEW_OMEGA79_ONCE",
+      "worker_status": "COMPLETE_NEW_OMEGA79_ONLY",
+      "result_status": "COMPLETE_NEW_OMEGA79",
+      "worker_seconds": 29,
+      "root_seconds": 29.5,
+      "external_seconds": 30
+    }
+  }
+}
