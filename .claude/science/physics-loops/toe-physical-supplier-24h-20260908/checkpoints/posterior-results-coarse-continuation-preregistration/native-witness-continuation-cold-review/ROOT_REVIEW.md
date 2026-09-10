@@ -1,0 +1,9 @@
+# Continuation root cold review
+
+PASS for ROOT_FREEZE 401f2017c29ee09fc4df8c0262c05458c3d6ab1db4ca99dec5260a88bf3079bc and reviewed worker4eba1dcb722ac8a8457e05d5bf68db97b208586b6f3d0576b22098bcc9821f19.
+
+Complete monitor/schema read. Exact300/299.5/299-second startup-inclusive root/external bounds and384MiB tree sampling, root postprocess memory/time checks, strict isolated worker invocation, frozen source/import union, exact authorization and once/fresh outputs are consistent. Final closure occurs on both success/failure; cleanup targets only the current worker process group. External shell acceptance remains separate. Full source and authorization pins match.
+
+Schema authenticates all15 output files, original failure identity and resource receipt, five original prefix files, byte-identical76-line prefix and three original cases. It checks all205 event positions and completed21-step panel counts, five mapped T source hashes, ten case labels and independent final high/projected/mixed assembly. It independently derives49-entry interval norm/radius predicates and retains honest false/indeterminate outcomes. It does not recompute new or old raw adapter contractions; native scalar and selected-frame truth are inherited explicitly. Successful composition does not relabel the failed original protocol.
+
+The scalar interval multiply sign branches agree with outward four-product extrema; the author's790 synthetic checks and complete ten-case fixture were inspected and reused without unchanged rerun. Additional independent nonzero-local matrix tests verify490 final assembly entries against an exact rational expression H−HLLᵀ across all ten literal impurity cases. These tests exercise the projected high term that is zero in the author's basic fixture. No actual prefix, selected IDs/T, node or scalar values were parsed. No continuation was launched. No material defect found.

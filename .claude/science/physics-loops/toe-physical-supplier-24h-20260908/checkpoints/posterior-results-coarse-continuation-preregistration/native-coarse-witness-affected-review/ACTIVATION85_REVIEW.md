@@ -1,0 +1,3 @@
+# Witness-only activation85 delta
+
+PASS for the single declared worker97e9a8ba/rootdd8fe4b9 pair. Compared with preserved4eba1dcb/401f2017, Python files are byte-identical; changes are worker status, root enable and dependent once authorization digests. Current root file and worker authorization pins match. No scientific values or saved prefix were parsed and no execution performed. This affected confirmation inherits the parent full continuation source review; it is not an independent review of the continuation arithmetic. Parent source-only readiness/fullhash receipt remains identified in ACTIVATION85.json.

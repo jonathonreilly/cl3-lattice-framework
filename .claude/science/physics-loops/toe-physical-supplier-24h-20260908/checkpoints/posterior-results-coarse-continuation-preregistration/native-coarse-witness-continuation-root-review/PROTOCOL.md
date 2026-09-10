@@ -1,0 +1,7 @@
+# Disabled independent continuation root
+
+Author: Orbital, also author of the continuation worker; independent implementation of final scalar checks does not replace external source review. Reuses the original reviewed300/299.5/299 second,384MiB root lifecycle with full source hashes in precheck and final closure, current-child cleanup, inclusive schema RSS/time guards and once marker. Execution disabled pending independent review and preregistration.
+
+Success requires exactly15 files,205 events, the original76-event prefix verbatim and three byte-identical completed cases. It preserves the failed original receipt and verifies its time/resource/source relation. All ten final49-entry lower norms and radii are independently evaluated. The high correction and mixed final subtraction are independently rebuilt with Fraction sign-case multiplication and dyadic rounding using saved local/direct/mixed and the authenticated reciprocal-pi interval. Raw native contractions, mappedT truth and the partial panel accumulations remain inherited reviewed interfaces, not independently replayed. The complete second run certifies a composite result, never success of the old failed run.
+
+Synthetic tests and readiness do not read actual scientific arrays. Launch mode requires a separately installed exact worker authorization and enabled freeze. Fixed output native-coarse-witness-continuation-run-prospective. External /usr/bin/time receipt remains required for acceptance.

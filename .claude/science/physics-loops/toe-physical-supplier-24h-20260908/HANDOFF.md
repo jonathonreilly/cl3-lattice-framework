@@ -1075,3 +1075,15 @@ Checkpoint84 preregisters two new saved-data tests of a tighter posterior error 
 The next spectral residual protocol has independent source review and a parent-reviewed root. It reuses saved moments, computes only two missing inner moments per class and choice, and tests five fixed inverse-square majorants. Its new source arithmetic has not run. A separate continuation uses three scalar coefficients to reduce the witness's repeated matrix work. Both remain prospective until their own preregistration.
 
 Full alpha and physical model selection remain open. Continue physics after this checkpoint.
+
+# Physics campaign SSH status
+
+Updated 2026-09-10T02:43:14.256984+00:00. Campaign continues until 2026-09-10 10:27:17 UTC subject to usable quota.44 science PRs delivered; latest8079 open and remotely verified. Main remains e95797cc.64 inactive worktrees removed; last disk check55GiB free. No coordination PR or main merge. Formal audit remains unrun.
+
+Both new posterior error protocols completed once after remote84 preregistration. Degree10:1.62s,64,159,744B external RSS,108,937,216B tree; root6ffe2e82. Degree20:1.81s,60,473,344B RSS,116,326,400B tree; rootf8b13f71. Original native moment arithmetic was not replayed. All four results remain INDETERMINATE_SIGN. The improved degree20 residual error is6778.5093 around nominal576.3565, giving alpha[-775.2691,919.3582]. Its variational error7979.7212 around644.0920 gives[-916.9536,1077.9766]. This roughly halves the preceding degree20 error but does not establish a sign. A postprocessing helper missing-key error was repaired without repeating either scientific protocol; the already accepted degree10 record was skipped.
+
+Checkpoint85 preregisters a NEW continuation of the failed coarse quantum-state witness. Worker97e9a8ba, rootdd8fe4b9;300s external/299.5s root/299s worker,384MiB. Independent source review passed for prior disabled4eba1dcb/401f2017; activation changes only status and exact authorizations. All8640 input hashes pass. It reuses three byte-identical completed cases and76 event lines from the failed original; resumes case3 at node210 and computes2436 remaining nodes. Faster I/O/T scalar contractions avoid repeated matrix reconstruction. The original failed run remains failed. Complete composition, if successful, requires15 files,205 events and independent final norm/radius/high projection checks. Exact remote85 verification is required before launch.
+
+A spectral inverse-residual estimator is being improved prospectively with one bounded positive dyadic tau candidate selected from moment midpoints and then reevaluated against full directed intervals. Its proof and independent synthetic checks pass; implementation/review and a separate preregistration remain pending. It computes only missing inner s3/s4 moments and reuses saved lower moments. No new spectral runtime has executed.
+
+Alpha and physical model selection remain open. Continue physics after checkpoint.

@@ -1,0 +1,13 @@
+# Accepted-binding amendment
+
+Actual twelve-pair POST1972e266/result3fa37eb1 is now pinned with all transitive sources, root/worker receipts and saved output. Original bd6a NOTREADY version is preserved whole. Dispatcher still requires exact root authorization; no authorization or launch exists here. Native entry is enabled only through that guarded route. Source-readiness remains installed runtime/local source only. The previous future-binding discussion below is historical design intent, now discharged by these pins and runtime checks; no native history was loaded during amendment.
+
+# Twelve-to24 continuation — source-only NOTREADY
+
+Separate new fixed contract; previous1509 source/results/failures remain immutable. Native execution requires the final exact authorization. Actual twelve-pair saved POST was pending in the preserved predecessor and must be bound with exact result/root/worker/source, histories, context, restored prefix and terminal12 diagonal/checkpoint evidence before enabling any native mode. No arbitrary file existence or guessed acceptance status qualifies. The same accepted cache/Ward F and radius/balancing inputs must be retained.
+
+The reviewed recurrence is unchanged except cumulative/native cap guards12→24. Restore twelve saved rows and terminal12 diagonals/gates; initial old native diagonal and coordinate evaluations are skipped. Only new selected rows at steps12..23 execute, with diagonals and coordinates for resulting steps13..24. Previous completed rows are not recomputed. Binder proposal verifies saved terminal scalar gates with exact2/1 weights and concatenates original restored4 rows with the eight emitted rows to validate the12 history. This is saved metadata restoration, not old native Gram replay.
+
+Across five399-label orbits, at most12*399*2*5=47880 original calls,191520 underlying raw requests. History-update count is399*5*(sum12..23 + sum13..24)=432*399*5=861840. Coordinate count is2*399*5*sum13..24=222*399*2*5=885780. All sources/checkpoints remain failure-retained; conditional precision stall/target status unchanged. Cost is inferred99.775=7.5*11.97+10, with history ratio3.375 relative to4→12, not measured or guaranteed. Inclusive120 external/119.5 root/119 worker and384MiB, prior physical17.94 separately recorded. One attempt only; no automatic retries.
+
+Only source-readiness/tiny thirteen-seed continuation checks are authorized here, zero accepted history/index/entry/fullmock. Full accepted transitive/runtime closure and independent review must be finalized after actual POST; current runtime now pins accepted input closure separately from source-only readiness.

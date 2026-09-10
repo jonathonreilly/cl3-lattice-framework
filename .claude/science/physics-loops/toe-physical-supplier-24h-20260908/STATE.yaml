@@ -14,7 +14,7 @@
   "lock_owner": "physics-loop",
   "lock_holder": "toe-physical-supplier-24h-20260908-root",
   "lock_expires_utc": "2026-09-10T02:02:15.950444+00:00",
-  "cycle": 84,
+  "cycle": 85,
   "actual_current_surface_status": "open",
   "target_claim_type": "open_gate",
   "active_route": "Infinite native node via exact Ward reduction and finite-excitation Gaussian compression",
@@ -25,12 +25,12 @@
   },
   "worker_model": "GPT-6-Astra low (existing workers)",
   "capacity": "four total concurrent agents including root",
-  "next_action": "Verify remote84, then run both new posterior error protocols once in parallel. Prepare the spectral residual test and witness continuation, reusing the failed witness prefix.",
+  "next_action": "Verify exact remote85 then run NEW coarse witness continuation once300s384MiB, reusing original76event prefix and3cases. Prepare independently reviewed spectral residual protocol with new positive dyadic tau proposal. No original protocol reruns. Continue physics after checkpoint.",
   "provisional_dependencies": "Earlier ab176f9 research checkpoint is conditional, unlanded, independently checked at its frozen source; revalidate changed premises before reuse.",
   "audit_verdict": null,
   "stop_condition": "Deadline, explicit user stop, or documented global useful-route/tooling exhaustion; local blockers trigger checkpoint and pivot.",
   "next_milestone": "Reviewed node reduction and stronger infinite pair gap, with independently verified Gaussian computation bridge",
-  "last_checkpoint_utc": "2026-09-10T02:26:32.354106+00:00",
+  "last_checkpoint_utc": "2026-09-10T02:43:14.256984+00:00",
   "research_checkpoint_commit": "f10d8b00d0314ba7151d867b5f5f11c77574a755",
   "milestone_worktree": "/private/tmp/toe-native-product-to-gibbs-20260908",
   "milestone_branch": "codex/native-product-to-gibbs-20260908",
@@ -410,7 +410,7 @@
   "spectral_cost_status": "COMPLETE after remote2f34568d.96spectra, full shell0.26s69,861,376B, observedtree91,521,024B; independent postreviewe38ab884 PASS870checks without new eigensolver. Rough fivepositive differences are notintegralcertificates.",
   "weekly_usage_used_percent": 85,
   "new_analytic_lead": "Reviewed Clifford64to16fourfold and semiconvex productquadrature difference bound3pi\u00b2/(8n\u00b2), validatzero modes/arbitraryshifts. If futurefivepositive densitycertificates succeed, finite strictness+shiftuniformbound givesuniformcubic localdefectcost. Densitycertificatestillunexecuted.",
-  "last_progress_utc": "2026-09-10T02:26:32.354106+00:00",
+  "last_progress_utc": "2026-09-10T02:43:14.256984+00:00",
   "certified_D16_cost_status": "COMPLETE PASS afterremote11ab7211. Fixed96 certificates, fullshell0.50s72,515,584B, tree93,519,872B. Frozenindependent96FractionreplayfirstPASS3.60s63,029,248B; maximumdensityintervalwidth~6.91e-14. Frozenforecast9.5375s/job289.4003aggregatePASS.",
   "full_certified_grid_status": "COMPLETE PASS0255f6ed: all24576nodes and24independent exact replays. External984.06s+prior40=1024.06<3600; max sampled tree188841984B<384MiB. Exact common density>=17/1000; delta_inf>=3/50.",
   "thermal_status": "Positive density premise discharged. Uniform cubic local stiffness and native annealed joint-defect bound within supplied U0 model. M>=32,beta*h>=200 gives kappa>=3h/800; beta*h>=14000 gives connected-tail min(1,4*(3/4)^ell). No phase/nonzeroU/Hamiltonian-selection closure.",
@@ -1880,5 +1880,38 @@
     "changed_blobs": 73,
     "bytes": 8845516,
     "receipt": "60a065fd5bee9d030003b052feac62e917388d8cb99760f9451b0c99bc006587"
+  },
+  "checkpoint85_preregistrations": [
+    {
+      "worker": "native-coarse-witness-continuation-design",
+      "worker_freeze_file": "FREEZE.json",
+      "root": "native-coarse-witness-continuation-root-review",
+      "prior_worker": "4eba1dcb722ac8a8457e05d5bf68db97b208586b6f3d0576b22098bcc9821f19",
+      "prior_root": "401f2017c29ee09fc4df8c0262c05458c3d6ab1db4ca99dec5260a88bf3079bc",
+      "worker_freeze": "97e9a8baebe39d87d3661e4824da94afc7367c6cbed66034d4b738ec5c7c65e2",
+      "root_freeze": "dd8fe4b90f7cd48997693852c72676328ffd13e69d8715b93a96e386aac7242a",
+      "readiness": {
+        "status": "PASS_SOURCE_ONLY",
+        "root_sha256": "dd8fe4b90f7cd48997693852c72676328ffd13e69d8715b93a96e386aac7242a",
+        "witness_certificates": 0,
+        "accepted_loads": 0
+      },
+      "full_input_hashes_pass": 8640,
+      "launch_performed": false
+    }
+  ],
+  "degree10_posterior_completed": {
+    "result_sha256": "558386b34c7e48d7b40236b76c624e5c9af3851c9f8ed64f0424adc4f0a1c287",
+    "external_seconds": 1.62,
+    "external_rss_bytes": 64159744,
+    "sampled_whole_tree_peak": 108937216,
+    "root_acceptance_sha256": "6ffe2e82063ddbc83f9619b0e1dd23d795871a0515e2ce322650c4f5c28b5990"
+  },
+  "degree20_posterior_completed": {
+    "result_sha256": "a6ccab2d9dee70944808ed3750d310b2022e5c9cbd58a43d28b3de43f3d24c6e",
+    "external_seconds": 1.81,
+    "external_rss_bytes": 60473344,
+    "sampled_whole_tree_peak": 116326400,
+    "root_acceptance_sha256": "f8b13f71769530299b3e43288d7d0d01d046a06ed74866e772b35b4b51654000"
   }
 }
