@@ -1,0 +1,3 @@
+# Formatting affected confirmation
+
+PASS. Compared the entire preserved bfdb979c draft with successor 764cfa0357e85a8ebd8937c4fcc00f8dfb26950a37bcfc11df711c052a7edede. Exactly NOTE.md and SOURCE_FREEZE.json differ. The note change is exactly the requested opening inline-math delimiter and removal of the trailing space after “approximately”; note SHA256 c76557eca6e5cf34d6c8eca06e63478d266cb00c3042b33290a0b20c0e7074b5. All 55 current source pins verify. Original review 05243c7b is preserved; mathematics, checker and evidence bytes are unchanged. Archive97 recovery remains a later delivery obligation. No arithmetic rerun, native work or git writes.
