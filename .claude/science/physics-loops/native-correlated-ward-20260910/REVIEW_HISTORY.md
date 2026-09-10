@@ -1,0 +1,3 @@
+# Review History
+
+Original proof/worker/root reviews and independent synthetic evidence are preserved. Parent read the complete draft argument and runner. Canonical independent source review1453df502b1b5e7e8b6f134f54dffbd807484612b735dd258857680333220c92 passed all68 frozen files,48 recovery entries and the full changed argument. Reviewer constituent authorship is disclosed; worker/root arithmetic separately received independent source reviews. Graph built once4898nodes12206edges, portable241checksPASS, vocab0; full pipeline, combined current-main validation, changed-audit-evidence and formal audit are UNRUN.
