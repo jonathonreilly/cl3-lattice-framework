@@ -1,0 +1,3 @@
+# Activation affected confirmation
+
+PASS for worker2ae9420b/root9cf17af8. Worker three executable sources byte-identical to870cd7 predecessor; root executable/schema byte-identical to reviewed1fb0. Activation status, exact once authorization/output and120s384MiB contract agree; no scientific source change. Parent source-only readiness is retained; no unchanged readiness replay or geometry parse by reviewer. Remote preregistration remains required before the parent once launch. Initial metadata-only comparison search used too narrow predecessor basename; corrected to actual preserved folder, with no scientific work.

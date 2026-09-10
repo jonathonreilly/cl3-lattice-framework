@@ -1,0 +1,3 @@
+# Fixed nonphysical CAR algebra control
+
+One exact rational three-pair matching with four Majoranas (three used explicitly, one zero-mode partner implicit). u=-3/5,z=4/5,t=(1/5,2/5,3/5). Evaluate only finite Clifford polynomial identities and matching Ward scalar via the algebraic Gaussian expectation. This is NOT the native six-neighbor/pi-flux bath and cannot evaluate native alpha. It tests only whether matching Wsum and cross-commutator relations force Ward correction cancellation. Fixed small dictionaries, <1s expected,30s384MiB ceiling, no spectra/oracle/matrix/input loading. Original channel proof freeze stays unchanged.

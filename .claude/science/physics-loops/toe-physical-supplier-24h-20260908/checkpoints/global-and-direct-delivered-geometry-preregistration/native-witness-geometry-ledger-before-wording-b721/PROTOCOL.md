@@ -1,0 +1,13 @@
+# Complete geometry-only precision ledger
+
+NEW source-only protocol, no scalar acquisition. Actual geometry parsing is forbidden until parent preregistration. Fixed378new nodes,66old poles,1742outer catalog nodes:24948old-pole comparisons and658476outer comparisons. No adaptive selection, no originalT/Gram/physics.
+
+All positive rational brackets are outward rounded to grid2^-192; weights use their upper bound. Products/squared separations remain integer; gains round upward on2^-64 grid per term. This is conservative even when a bracket loses separation: unresolved/zero overlap fails, preserving the current node and all completed records. It never treats an approximate coincidence as exact or shifts a pole.
+
+Use the reviewed literal witness source conditional entry/operator bound2^40 with an additional factor7, conservatively converting49 entry bounds to Frobenius. Each newB_j receives radius1e-5/[7*2^40*378*g_j], g_j=max_old(128*w_j/gap(s_j,t))+w_j(6+2/s_j). Each oldB receives1e-5/[7*2^40*66*sum_j128w_j/gap(s_j,t)]. Commonc receives1e-5/[7*2^40*sum_j2w_j/s_j]. These three allocations together cost at most3e-5 of the1e-4 scalar block radius; remaining7e-5 is explicitly reserved for metric/inverse, directA, coefficient and rounding errors. This ledger does not prove those remaining gates.
+
+For each proposed new B integral, calculate upper gain sums sum wt*s²/|t²-s²| and sum wt*t²/|t²-s²|. As radius uses one quarter of the allocated B radius; catalog assumed radius1e-49 gets an explicit reserve. Low subtraction, analytic quadrature/high-tail errors and moment arithmetic must use the remaining B budget in a future contraction. No target-pass flag claims these analytic errors fit. The existing catalog actualwidth must be authenticated against its separately accepted certificate; geometry alone does not verify it.
+
+Prospective once cap120s external/119.5root/119worker384MiB, because roughly0.7million bounded integer divisions plus parsing can cost materially more than a few scalar reads. No measured completion forecast. This is cheaper in oracle count (zero), not a promised walltime improvement. Runtimepins initial/final, outputfresh/once, currentbeforeparse/node, pernode durable event beforeadvance, exactfinalcensus. Parent rootmonitor and independent source review required before launch. No scalar values are opened by the worker.
+
+Coarse successor implements318a contract scalar allocation only; totalmetric/tail/witnessgate remains separate. Before every normalization record is durable; events flush/fsync and PARTIAL writes use fsync plus atomic replacement. Outputdirectory metadata persistence across powerloss is not claimed.

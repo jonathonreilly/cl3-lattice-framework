@@ -1,0 +1,3 @@
+# Assumptions And Imports
+
+The supplied native infinite free model, local rank-two perturbation, positive-band convention and absence of zero atoms are imported from the named canonical notes. Scalar containment uses the explicit Joyce/Guttmann elliptic formula already documented in the certified local Green note, reviewed interval oracle and authenticated Gauss21 geometry. The original A arithmetic is not independently replayed. Operator tails, Banach-valued quadrature and sensitivity proofs are copied under imports with original review sources. Their historical prospective statuses are superseded only for the specifically bound coefficient/acquisition runs; no unexecuted Gaussian or Gram claim changes.

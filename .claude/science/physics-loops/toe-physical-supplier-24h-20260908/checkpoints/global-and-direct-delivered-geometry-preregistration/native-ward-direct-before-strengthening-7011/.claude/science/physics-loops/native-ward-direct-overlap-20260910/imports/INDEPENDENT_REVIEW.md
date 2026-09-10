@@ -1,0 +1,15 @@
+# Native Ward channels and direct positivity: PASS
+
+Reviewed DERIVATION257712bc430db2a6f80676e751bf171d269aded55c5dd49d94930b2b2fa4a330, FREEZE7fe93b6d and actual Ward/scaling/reference-scalar/gap imports. No native state, scalar acquisition or Gaussian calculation. Earlier moment/pair controls and a new exact90word nonphysical2x2 Ward comparison are retained.
+
+Using [W,R]=−RJR, v=(RW−WR)Omega=RJR Omega. Anti-Hermitian J makes RJR anti-Hermitian; with gamma self-adjoint, the two reversed ordered boundary corrections combine with the MINUS real cross term in equation1. Independent synthetic2x2 R/W fields satisfying {W,gamma}=4 reproduce the complete corrected Ward expression exactly. No impurity-vacuum annihilation was used. Completing the square x−p/2 gives all six norm terms and their stated signs. The15pair incidence projector formulas and eigenvalues6,−3,1 pass exact independent matrix checks;90ordered pairs and15matchings each sixwords are correct.
+
+The source convention DeltaK=2(e0 d^T−d e0^T) gives the many-body perturbation i gamma0 gamma(d), so B²=||d||²=2. The separately imported reference expectation c=mu/3 and EX6 imply c<49/60 without observed scalar values. Infinite gapD>=1/4 gives c>=1/4. A quadratic bounded local field applied to a pure Gaussian vacuum has vacuum/two-particle support; bounded free one-particle norm6 therefore gives energy cutoff12. This establishes the third-moment domain and <D³>=<BOmega,H0BOmega>+2c<=24+2c<26. No extensive or active free-fermion gap is introduced.
+
+The inverse moment Cauchy inequality is valid on these domains. Replacing thirdmoment by26 adds a nonnegative b² term. Matrix[[c,2],[2,26]] is strictly positive on c>=1/4, and its inverse against(1,c) gives exactly(26−4c+c³)/(26c−4). Its derivative numerator is strictly negative on the declared interval. Exact m0=5028049/3722400 and direct lower326063949601/102638976000>3 agree with independent rational arithmetic.
+
+For nonuniform m_A>=m0, negative excited channels are bounded by−3 times their squared norms; D^-2<=4D^-1 is valid by the supplied gap. K+3I PSD with row sum9 proves the remaining nonnegative correction. Thus direct positivity does not assume full negative-channel annihilation. Cubic O/P invariance kills only scalar vacuum projection in that channel, as correctly stated.
+
+For a perfect matching, sum b_A=B0^T e0 and the actual square-summable inverse implies sum w_A=e0, giving sumW=6gamma0. V_A=W_A−2gamma0 has zero center coefficient and white-sublattice support. It anticommutes with center and every black-neighbor Majorana, hence commutes with their quadratic product B_C; [V_A,D_C]=[V_A,H0] follows on the common finite-particle core and bounded commutator extension. It does not commute with R_C. No cancellation of noncommuting resolvent products is inferred.
+
+The result is strictly positive direct overlap Q>3/h², not alpha positivity/nonzero. The full signed Ward correction and its six norm quantities remain uncomputed and uncontrolled. No mathematical blocker found.

@@ -1009,3 +1009,15 @@ New saved T norm census completed for five selected spaces, 3.16 seconds externa
 A source-only native proof now gives direct ninety-pair overlap Q>3/h^2. Independent exact algebra review passed; canonical delivery is underway. The full Ward correction and alpha sign remain open. New centered-source moments and stricter native matching Clifford algebra are being investigated. A separate particle-hole tail lower-bound proof proposes a cheap finite local witness to exclude an inadequate selected span before expensive high-precision consumer work; no actual witness data were evaluated.
 
 Disk cleanup has removed62 inactive worktrees after remote evidence verification; about57GiB free. Lock through02:02:15UTC. Continue physics after this checkpoint.
+
+# Physics campaign SSH status
+
+Updated 2026-09-10T00:55:37.371195+00:00. Active48-hour campaign through2026-09-10 10:27:17UTC subjectusablequota.43 sciencePRs delivered. No coordinationPR, mainmerge orformal audit. Main remains e95797cc80b6; planning38e835569f4a, fetched00:50UTC.55GiB free;62 inactiveworktrees removed sofar.
+
+PR8077 head5a94383097a5 delivers the finite native positive-band projector descriptor with accepted nuclear error1.6655044211761766e-13, full low/high corrections and378nodes.77changedblobs827819bytes verifiedexactremote. PR8078 head4600d22d4705 delivers the independently reviewed direct90-pair overlapQ>160/h² fromexactCARthirdmoments, EX6/EX²42 andKneserpositivity.46changedblobs720703bytes verifiedexactremote. BothsourcePASS, OPEN/MERGEABLE, stacked on8076; fullpipeline/readiness/audit unrun. Fullalpha andlawselection remainopen.
+
+Checkpoint80 preregisters NEW geometrygaincensus worker2ae9420b/root9cf17af8:378newnodes×66oldpoles and1742outerpoints,683424exactboundedintegercomparisons. Itusesacceptedcoefficientledger maxA-radius metadata, notnominal1e-30, toavoidunnecessaryreacquisition.120external/119.5root/119worker seconds384MiB, once; all2947events retained, originalgeometryarithmetic inheritedreviewsource, root independentlychecksreportednew-B/Aquarter/catalogbudgets. OldB/c allocations inheritproducerarithmetic. No B scalar orwitness iscomputed. Earlynestedledger KeyError andfloatcensusacceptance gapswerecaughtsyntheticallybeforelaunch, preservedandfixed. Awaitexactremote80 beforeexecution.
+
+Acompletecoarseoccupied-tail test nowchargesomittedlow/higherror<.019 plusoldmetricFrobeniuserror<.00213,scalar1e-4andfinitearithmetic1e-5. Fixed7×7normlower.022 wouldexclude tau<=1e-9; otherwiseINDETERMINATE. DifferentDbar=acceptednodes+leadinghighV/(16pi), notthefullhighaccuracyDhat withtermssilentlyomitted. NewB378 andwitnessruntime sourcesarebeingpreparedseparately; neitherhasrun. Realrepresentationstripsacommoni consistently.
+
+Anewfinite-momentWardhierarchyhasindependentsourcePASS forconvergence andexplicitresidualerror. Concrete degree(1,0) formulas useonlyexistingmu/nu suppliers; independentmu4/mixedsignreviewPASS. Anewboundedaccepted-scalar gateisinpreparation andnotpreregisteredbythischeckpoint. Degreezero provablydoesnotclose; degreeone signunknown. Continuephysicsaftercheckpoint.

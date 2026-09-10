@@ -1,0 +1,3 @@
+# Third fixed nonnative algebra fixture
+
+Eight Majoranas, four white and three active black plus one zero-mode partner. Free4x3 coupling is the first three columns of the rational Hadamard4/2 matrix. Three matching defects reverse one center coupling each, so their B_i anticommute and square I. Exact rational Clifford polynomial inverses and vacuum expectations only; no matrix diagonalization/native bath/nodes/oracle. The center inverse-source convention w0=1/3 is fixed explicitly. One fixed fixture,30s384MiB ceiling. Tests cancellation under the stronger Clifford-triple identities; it cannot establish the native alpha or infinite h/4 gap. Original failed and successful weaker toys remain unchanged.
