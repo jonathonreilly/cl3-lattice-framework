@@ -1,0 +1,5 @@
+# New degree-(1,0) Ward gate root contract
+
+One20external/19.5root/19worker-second384MiB attempt, two fixed polynomial choices residual/variational, no scalar oracle or new covariance. The root pins sources and accepted scalar lineage, exact authorization/fresh markers, inclusive resources and final closure. It preserves every partial and failure. No rerun of completed scalar or scientific protocols.
+
+Schema accepts full205-event success or a precise retained prefix for an arithmetic-indeterminate choice. It independently verifies all90 ordered pair words and orbit sums, final nonnegative residual copies, propagation error assembly, alpha intervals and sign decision for each completed numerical choice. Source-native moment identities and accepted scalar containment remain inherited from independently reviewed sources. An indeterminate gate is scientific nonclosure, not successful alpha sign. Input/dispatch/schema failure is separate. Remote preregistration and independent final review required before execution.

@@ -1,0 +1,1 @@
+One tiny source-only four-Majorana algebra invocation,20s alarm; no actual native geometry, scalar or covariance. Three rational source coefficient pairs, degree2 at most. No spectral calculation. The engine enforces2million products/262144terms but actual fixture is tiny. This is not a native cost measurement or physical job.
