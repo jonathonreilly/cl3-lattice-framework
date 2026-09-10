@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_frozen_h2_common_action_source_image_2026_08_29.py
+runner_sha256: ea5c0d390728285d96f0ceb2c4aa110712a49075d09b63380f33a28292ecbce1
+input_fingerprint_sha256: 2cdf490d5462822cede76a3982391c38f24333e2522381f8ef0c7be13307ff2e
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 64.23
+status: ok
+----- stdout -----
+PASS A_frozen_authority: preregistered parent, main, axiom, Block-03/191/193 runners, and Block-06 note identities match
+PASS B_exact_h2_fixture: column 1 coefficients=(0, sqrt(3)/4 + 3/4, -sqrt(3)/4 - 1/4, -1/2, 0, 0, 0, -sqrt(3)/2, 0, 1); nonzero slots=(1, 2, 3, 7, 9)
+PASS C_frozen_source_domain_nonmembership: H1 slots (7,9,8) have rank 3; adjoining exact H2 column raises coefficient-domain rank to 4
+PASS D_all64_eta_no_member: no exact eta preimage; nearest masks 17 and 33 each retain one nonzero shear residual
+PASS E_forward_reverse_source_nonmembership: universal source terms=195/195; full ranks=10/10; no exact universal or fixed-H2 forward/reverse match
+PASS F_complete_cubic_reflection_orbit: all 24 proper and 24 reflected cubic images preserve rank-3 H1 domain and rank-4 H2 augmentation
+PASS G_preregistered_adjudication_and_scope: verdict is NO-MEMBER only for the frozen H1 family; Stage B/C, broad no-go, axiom, retention, obligation, and TOE claims are not made
+MUTATIONS: rejected=21/21
+H2: coefficients=(0,(sqrt(3)+3)/4,-(sqrt(3)+1)/4,-1/2,0,0,0,-sqrt(3)/2,0,1); outside_H1_slots=(1,2,3); normalized_shear=(-sqrt(6)/4,sqrt(2)/2,0).
+SOURCE: terms=195/195; ranks=full:10,H1:3,H1+H2:4; best_residual_rows=((155, 1212, 155, 1212, 17), (155, 1212, 155, 1212, 33)).
+ORBIT: proper=24; reflected=24; every transformed H1 domain rank=3; every H1+H2 augmentation rank=4.
+ADJUDICATION: NO-MEMBER; positive_stage_B=false; positive_stage_C=false; larger_common_source_law=open.
+ACCOUNTING: axiom_update=false; obligation_retirement=0; TOE_movement=0; retained=false.
+per_element: checked all ten exact H2 TT coefficients, ten universal source columns, and every nonzero coefficient and source residual.
+per_site: checked all 64 frozen eta inputs and their exact candidate source images; no H2-specific site label or decoder was admitted.
+per_mode: checked the fixed H2 column-1 fixture and all 24 proper plus 24 reflected cubic coefficient-domain images.
+per_block: checked coefficient, universal Laurent forward/reverse, fixed-H2 forward/reverse, injective-rank, preregistered stop, and scope gates.
+lattice_wide: checked and not executed — no alternative action, enlarged source representation, generated substrate, arbitrary history, rate/clock, gravity, axiom, or retained TOE law is supplied.
+SCORECARD PASS=7 FAIL=0; MUTATIONS=21/21
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

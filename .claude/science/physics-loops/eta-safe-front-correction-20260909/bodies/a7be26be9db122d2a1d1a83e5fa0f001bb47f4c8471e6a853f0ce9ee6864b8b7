@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_wick_phase_fine_site_staggered_os_lorentz_boundary_2026_08_14.py
+runner_sha256: 2e60ced6fddc2f5167e25df43f4d640653e80eddf12f67479d88863b3e8341b3
+input_fingerprint_sha256: 150e9675da13bcd25fc62495ff5e52a7fb72acbd02b1fb98a22c1815bafc4685
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.91
+status: ok
+----- stdout -----
+[PASS] A-current-authority-Block103-parent-and-OS-source: current axioms, exact Block103 parent, and reflected-Gram source triple are content-bound
+       origin/main=43ba558794; parent=99cee0a6c9; OS=2847b93b9c
+[PASS] B-Wick-phase-selection-and-naive-kernel-obstruction: scalar covariance and time reflection select phi=+/-pi/2 while the naive Hermitian kerne...
+       det D_bad=(m^2-sx^2-st^2)^2; det D_E=(m^2+sx^2+st^2)^2; phi=+/-pi/2
+[PASS] C-same-Hodge-action-Ward-and-skew-KD-equivalence: the mass plus i-times-Hodge kinetic obeys the same Ward law and is degree-phase equivale...
+       Q_E=mH+i(Hd+d^dag H); Q_degree^dag Q_E Q_degree=mH+Hd-d^dag H
+[PASS] D-exact-2d-and-4d-fine-site-staggered-equivalence: the reduced-cell placement phase and Koszul phase map one fine-site staggered field exac...
+       component/fine-offset counts d=2/4: 4/16
+[PASS] E-source-time-cell-symbol-pole-and-taste-census: the same-action time cell equals the source symbol with the correct inside pole and spat...
+       d=2 has lambda=+/-r once; d=4 has lambda=+/-r fourfold
+[PASS] F-exact-same-action-reflected-Gram-and-multiplicity: the two-line and eight-spatial-line Grams factor exactly with ranks two and eight
+       same-D residue and open-chain inverse; worst Nt=24 residual 5.0e-15; d=2/4 ranks 2/8
+[PASS] G-induced-Dirac-Kahler-OS-reflection: transporting the raw Osterwalder-Seiler reflection produces the exact time-gamma DK refl...
+       Theta_DK psi=Gamma_t (bar psi at theta(t))^T for d=2 and d=4
+[PASS] H-polynomial-Wick-link-and-finite-spacing-Lorentz-boundary: Euclidean and Lorentz determinants are polynomial continuations while OS energy and cent...
+       sinh^2 E=r^2; sin^2 omega=r^2; omega-E=r^3/3+O(r^7)
+[PASS] I-scope-no-go-discipline-and-TOE-firewall: N1-N8 preserve curved histories, ADM transport, finite-spacing Lorentz, zero-mode, axiom...
+AXIOM_AUTHORITY: origin/main=43ba5587944ffe0f43df10864c8348a99c17517b axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71; Block103 parent=99cee0a6c962b382a3ca1a8497d589ffa280dfe8
+per_element: exact Clifford phases, Hodge Ward response, time-cell pole, reflected-Gram factors, and induced reflection are checked
+per_site: one staggered Grassmann mode per fine site is exactly relabeled into 2^d exterior components on each even 2^d cell
+per_mode: the reduced-BZ d=2 two-line Gram has rank two and the d=4 eight-spatial-line Gram has rank eight
+per_block: the full flat free 2^4 carrier placement, same-action Euclidean kernel, and two-slice OS quotient are exact
+lattice_wide: checked and not executed — curved histories, actual ADM cross-links, joint gravity, exact finite-spacing Lorentz reconstruction, zero-mode choice, energy, Records, selection, and retention remain open
+RESULT: flat mI+iM0 is phase-selected and exactly fine-site equivalent to the free staggered OS action in d=2,4; Q_E(H)=mH+iM(H) is its Ward-compatible degree-preserving extension
+DECISION_CUT: advance Q_E to curved Hodge histories and the actual ADM transporter; do not identify flat mI+M0 with the July massive Euclidean OS kernel
+TOE: zero obligation retirement, zero retained-positive end-to-end theories, and no percentage movement
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

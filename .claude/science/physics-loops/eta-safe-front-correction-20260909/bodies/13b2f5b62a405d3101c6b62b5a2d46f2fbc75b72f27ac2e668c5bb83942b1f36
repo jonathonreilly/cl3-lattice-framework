@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_gapped_record_cap_safe_front_2026_08_29.py
+runner_sha256: d05cc05a443d4881176e0813c150ebda6beb01ebbb6eae31f79def1125ceb68b
+input_fingerprint_sha256: 08719ca7fe1842c794bb89f5dd0f5ff06a9cd9bc0140ed4cabda2428bba0f955
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 42.01
+status: ok
+----- stdout -----
+PASS A_frozen_independent_surface: registered goal/preflight blobs match and imports are standard-library only
+PASS B_flag_only_gapped_seed_census: 193536 content-labelled seeds and 8709120 complete-frontier evaluations agree with edge extrapolation
+PASS C_rotated_translated_covariance: 6912 seed/footprint transforms and 71424 identity-mapped obstacle transforms are exact
+PASS D_disjoint_controller_census: all 37632 cases derive the front internally and perform five swaps or exact blocked identity
+PASS E_complete_blocked_frontier: 2976 components and 171936 frontier sites have zero restart; both restart mutations are live
+PASS F_probability_and_runtime_surface: 2688 exact fourteen-way groups conserve CONTINUE-or-STOP mass on a content-blind oracle-free surface
+PASS G_narrow_terminal_and_limits: terminal is limited to a supplied cap/seed in one effective single-front flag sector
+MUTATIONS: rejected=44/44
+TERMINAL: GAPPED-CAP-SAFE-FRONT — supplied asymmetric gapped Record cap/seed only
+COUNTS: seed_components=193536; seed_frontier=8709120; controller=37632; blocked_components=2976; blocked_frontier=171936; probability_groups=2688
+LIMITS: effective single conditioned flag-sector front; no cap generation, chosen physical arrow, microscopic sensor/controller, simultaneous fronts, occurrence/rate/time, gravity, axiom change, obligation retirement, retained status, or TOE movement
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+
