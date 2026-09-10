@@ -1,0 +1,3 @@
+# Final coefficient activation delta: PASS
+
+ROOTfded66be959ca78f2cf13dbb2eb5501c876b54376ff8d047dd93b33ad29c85b3 binds worker ed9215bb4c4b56c3b899719d71558a04d433c97a24fb39e300889f251b095ab9 and exact AUTHc2745363. All rootfile pins match. All worker.py bytes match preserved15d2; source changes are activation metadata/protocol/membership only. Monitor a490 corrects readiness label and verifies exact worker authorization hash on initial/final pins, complementing literal freeze/output/once equality. Schema2e0f unchanged. Limits remain120/119.5/119s384 and independent root review c1f52 is explicitly pinned. No scientific/test/readiness rerun in this affected check. Parent remote preregistration still precedes the one new assembly.

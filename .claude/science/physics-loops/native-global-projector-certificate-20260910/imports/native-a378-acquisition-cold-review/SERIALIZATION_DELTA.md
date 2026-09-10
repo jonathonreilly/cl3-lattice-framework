@@ -1,0 +1,3 @@
+# Serialization and final guard delta: PASS
+
+Runtime9a89c3aa128210987b5529799204d788291edd8843058b64fe7c8959be3b538e caps serialized geometry numerator/denominator at50000bits and raises Python digit cap to20000;50000log10(2)<15052, so the stated operands fit. Inert boundary controls accept50000bits and reject50001bits before stringify; no geometry generation. Local executable pins match. Initial freeze digest is immutable; completion binds NODES and RESULT hashes; completion writing and final source/resource checks are within exception retention. The previous serialization item is discharged. Remaining prerequisite is the stable A-only sensitivity proof; no operator-input precision is inferred from scalar width alone. No native oracle or N21 run.

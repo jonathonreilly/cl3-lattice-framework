@@ -1,0 +1,7 @@
+# Independent low-tail proof review — PASS
+
+Read complete proof811ca636 and exact controls, with original rank-two Green/determinant and projector-integral conventions. V=i beta[[0,1],[-1,0]] and G0 with offdiagonal−i sqrt2/6,+i sqrt2/6 multiply to−2I/3, hence K0=3I. Local resolvent identity bounds Gs−G0 by sL² using only l2 inverse columns. The Neumann denominator,3840/1229<25/8 and85/6144 omitted-tail bound are sound.
+
+The spectral identity for ||Xs−X0||HS² equals A0−As plus the geometry's corresponding term, not a derivative assumption. Woodbury with X_-s* and three-factor telescoping yields the displayed sqrt(s) and s constants5439/160 and867/32. Integrating the Hermitian projector difference gives the stated2/9 and1/6 coefficients after pi>3. Rank-two endpoint correction has the correct negative-projector sign; positive projector reverses it. No finite gap or bounded global inverse is introduced. The H0^-2 domain obstruction is correctly restricted to the local inverse derivative in3D.
+
+No defect found. The improved low bound and rank-two correction are distinct certificate options; they do not change the old computation, supply missing inverse-column crossGrams, or improve the unchanged quadrature bound. Source-only review; no native/scalar/integral evaluations or reruns. Reviewer authored the separate high-tail extension, disclosed here; low proof independently authored by Primary.

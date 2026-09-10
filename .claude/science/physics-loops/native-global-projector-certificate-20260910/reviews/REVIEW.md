@@ -1,0 +1,7 @@
+# Independent canonical source review
+
+PASS, source-only, for frozen45179 global projector certificate. Read complete note and compact runner, assumption boundary and packet layout; checked all65 source pins. No native scalar, descriptor, coefficient-stage or compact runner replay. Prior independent Woodbury/rounding/runtime reviews remain the arithmetic basis; the canonical note preserves their positive-band sign and exact midpoint-family convention.
+
+The Woodbury block minus sign, low correction and alternating high correction agree with the reviewed resolvent representation. The rank upper1572 is conservative:1512 middle columns,2 inverse columns,58 high-power support columns. Input sensitivity charges the changed192-grid weight enclosure and84-grid coefficient rounding. The exact total ledger is separated from approximate prose values. Source columns are mathematical vectors, not acquired wavefunctions or a numerical orthonormal frame.
+
+The runner ties result, root and independent schema hashes/counts/errors, validates analytic sum and event recovery, and explicitly inherits original elliptic containment. It is correctly described as compact evidence verification, not an independent native oracle replay. Remote checkpoint verification is evidence inherited through copied receipts; local checks do not themselves contact remote storage. The note makes no occupation-tail, Gaussian evolution, node-sign, model-selection or retained-grade claim. Canonical dependencies and source-support statuses are coherent. No correction requested.
