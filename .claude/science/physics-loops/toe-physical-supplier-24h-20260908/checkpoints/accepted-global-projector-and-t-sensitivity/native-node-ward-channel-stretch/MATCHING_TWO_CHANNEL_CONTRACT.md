@@ -1,0 +1,3 @@
+# Second fixed algebra fixture
+
+A new nonnative six-Majorana Clifford algebra with two orthonormal rational free bath columns and one zero-mode partner. Columns=(3/5,4/5,0) and(12/25,-9/25,4/5) on the three white modes; two black modes. One matching uses b1=g/3+(1/100,0),b2=g/3+(0,1/100),b3=g/3-(1/100,1/100). Evaluate exact polynomial inverse residuals and Ward/matching identities once. Positive defect inverses follow rational two-singular-value inequalities checked in source. No diagonalization, native bath, Gaussian numerical library, scalar catalog, oracle or data. This separately tests whether the first toy's centerless-tail cancellation persists in a two-channel bath. Under30s384MiB; tiny finite dictionaries only.
