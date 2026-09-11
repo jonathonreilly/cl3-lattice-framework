@@ -1,6 +1,6 @@
 {
   "captured_utc": "2026-09-07T14:42:45.091662+00:00",
-  "main_sha": "1157173587fde42555d36659954e71c544e23312",
+  "main_sha": "2491ff70e921098fbb9130765458926c57c82364",
   "units": [
     {
       "unit_id": "eta_affine_repeat",
@@ -7073,11 +7073,11 @@
       "final_evidence": "backlog_evidence/wave59/INDEX.json"
     }
   ],
-  "current_main": "1157173587fde42555d36659954e71c544e23312",
-  "current_assignment_update_utc": "2026-09-10T23:53:18.798624+00:00",
+  "current_main": "2491ff70e921098fbb9130765458926c57c82364",
+  "current_assignment_update_utc": "2026-09-11T00:16:07.105237+00:00",
   "cleanup_scope": "original 254_only",
   "owner_cutoff_file": "BACKLOG_CUTOFF.json",
-  "immediate_priority": "W63: finish final composition confirmation and one combined gate for6844,6858,6859,6515 plus6485 transferred scope. Four reflection/seam producers pass33checks;6844alreadyindependentlyconfirmed. Remaining17 stillopen until actual mainlanding/closure.7753correction and7981\u21927988 authorpreparation active. No audits or postcutoff enrollment.",
+  "immediate_priority": "W63 landed4originals plus6485 transfer. Remaining13 originals and32 transfers;7753 corrections and7981\u21927988 overlapping original review/correction active. New arrivals excluded; formal audit deferred.",
   "closure_reconciliation_file": "BACKLOG_CLOSURE_RECONCILIATION.json",
   "next_routing_evidence": "backlog_evidence/next-routing-20260909",
   "next_routing_note": "Routing only, no acceptance/closure:6009exactly contains8paths each from5964/5963/5961/5959/5954 and8of10from5965/5955; preserve their extra878helper+receipt separately.5957is not covered. Review the complete coherent gravity-family argument once with all original recovery. Next small units7803/7781/7753 have actual full6/2/1commit boundaries, not tip-only assumptions.",
@@ -7091,22 +7091,28 @@
     },
     "6858_6859": {
       "reviewer": "/root/released6858_6859_review",
-      "status": "fresh_producers_pass_final_composition_pending",
-      "author": "/root/released_reflection_fixes"
+      "status": "landed_closed",
+      "author": "/root/released_reflection_fixes",
+      "commit": "2491ff70e921098fbb9130765458926c57c82364",
+      "evidence": "backlog_evidence/wave63/INDEX.json"
     },
     "remaining_routing": {
       "status": "complete_routing_only",
       "evidence": "backlog_evidence/wave62/routing/ROUTING.json"
     },
     "6844": {
-      "status": "source_confirmed_integrated_pending_combined_gate",
+      "status": "landed_closed",
       "author": "/root/released18_routing",
-      "reviewer": "/root/released6379_review"
+      "reviewer": "/root/released6379_review",
+      "commit": "2491ff70e921098fbb9130765458926c57c82364",
+      "evidence": "backlog_evidence/wave63/INDEX.json"
     },
     "6515": {
-      "status": "fresh_producers_pass_final_composition_pending",
+      "status": "landed_closed",
       "reviewer": "/root/released6858_6859_review",
-      "author": "/root/released6515_fixes"
+      "author": "/root/released6515_fixes",
+      "commit": "2491ff70e921098fbb9130765458926c57c82364",
+      "evidence": "backlog_evidence/wave63/INDEX.json"
     },
     "7753": {
       "status": "focused_review_found_four_material_groups_correction_active",
@@ -7114,9 +7120,10 @@
       "reviewer": "/root/released6379_review"
     },
     "7981_7988": {
-      "status": "author_preparation_from_partial_review_no_final_PASS",
+      "status": "original_review_and_evidenced_correction_active",
       "author": "/root/released6515_fixes",
-      "boundary": "full unit review remains required; exact source closure and original packet versions preserved"
+      "boundary": "full unit review remains required; exact source closure and original packet versions preserved",
+      "reviewer": "/root/released6858_6859_review"
     }
   }
 }

@@ -1,0 +1,43 @@
+{
+  "after_sha256": {
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_GLOBAL_DRESSING_INVOLUTION_POSITIVITY_BOUNDED_THEOREM_NOTE_2026-08-15.md": "f00a31dfffb5f02f1ed7e6e4e8990f23eea7bf4e60437d95a5948520d8361bf3",
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_SEAM_DRESSING_SECTOR_SIGNATURE_BOUNDED_THEOREM_NOTE_2026-08-15.md": "a79274bac18ed0071e52fba1e91f673e22e8c0ecc6c2c1e645101bc3235d2ed0",
+    "scripts/admissibility_dirac_kahler_global_dressing_involution_positivity_2026_08_15.py": "75482929c76a154eb21899022926b7e93f0d6bee990bd9ccab2d003c2f424987",
+    "scripts/admissibility_dirac_kahler_seam_dressing_sector_signature_2026_08_15.py": "6122f98192c94927c0096837e8d2ebbab88039188d2a650c5fcbf7f255113ffa"
+  },
+  "before_sha256": {
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_GLOBAL_DRESSING_INVOLUTION_POSITIVITY_BOUNDED_THEOREM_NOTE_2026-08-15.md": "f00a31dfffb5f02f1ed7e6e4e8990f23eea7bf4e60437d95a5948520d8361bf3",
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_SEAM_DRESSING_SECTOR_SIGNATURE_BOUNDED_THEOREM_NOTE_2026-08-15.md": "a79274bac18ed0071e52fba1e91f673e22e8c0ecc6c2c1e645101bc3235d2ed0",
+    "scripts/admissibility_dirac_kahler_global_dressing_involution_positivity_2026_08_15.py": "75482929c76a154eb21899022926b7e93f0d6bee990bd9ccab2d003c2f424987",
+    "scripts/admissibility_dirac_kahler_seam_dressing_sector_signature_2026_08_15.py": "6122f98192c94927c0096837e8d2ebbab88039188d2a650c5fcbf7f255113ffa"
+  },
+  "block": "110",
+  "canonical_cache_exists": true,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-c",
+    "import json,sys; from scripts.runner_cache import execute_and_write_cache,runner_timeout_for; runner=sys.argv[1]; timeout=runner_timeout_for(runner); assert timeout==180, timeout; result,path=execute_and_write_cache(runner,timeout); print(json.dumps({'status':result.get('status'),'exit_code':result.get('exit_code'),'timeout_sec':result.get('timeout_sec'),'cache_path':str(path) if path else None},sort_keys=True)); raise SystemExit(0 if result.get('status')=='ok' and path is not None else 1)",
+    "scripts/admissibility_dirac_kahler_seam_dressing_sector_signature_2026_08_15.py"
+  ],
+  "elapsed_sec": 42.68128387501929,
+  "environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "identity_unchanged": true,
+  "limit_kill": null,
+  "memory_enforcement": "sampled ps RSS; no RLIMIT_AS",
+  "outer_wall_sec": 195,
+  "rss_cap_bytes": 2147483648,
+  "rss_scope": "sum of every process in the producer process group",
+  "runner_timeout_sec": 180,
+  "sampled_peak_process_group_rss_bytes": 115310592,
+  "stderr_path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-released18-20260910/6515/fixes/PRODUCER_110.stderr",
+  "stdout_path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-released18-20260910/6515/fixes/PRODUCER_110.stdout",
+  "watchdog_sha256": "8cdd94e2813d7a33330e5c062a4404eca917e3822b77dbf3fb73f3d4104abb68"
+}

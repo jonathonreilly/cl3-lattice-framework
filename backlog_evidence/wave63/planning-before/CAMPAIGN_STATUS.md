@@ -52,7 +52,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. Wave63 landed #6515/#6844/#6858/#6859 plus transferred #6485. Of18 released originals,5 are now closed and13 remain;32 transferred scopes remain pending. #7753 repairs and #7981→#7988 overlapping review/corrections are active.194 original science scopes landed; formal audit deferred.
+1. Wave62 landed #6379. W63 is composing corrected #6844, #6858/#6859 and #6515+#6485; final review and combined gate remain pending. #7753 repairs and #7981→#7988 preparation are active. Still17 open originals and33 transferred scopes pending until actual landing;189 original science scopes landed. Formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

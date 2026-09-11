@@ -1,21 +1,21 @@
 # Backlog review and landing — current handoff
 
-Updated after wave63. Main is `2491ff70e921098fbb9130765458926c57c82364`. Of the18 released originals,5 are now landed and closed;13 remain. The original254 cutoff stays fixed; later arrivals remain excluded. Formal audit waits until a solid TOE is ready.
+Updated after wave62. Main is `1157173587fde42555d36659954e71c544e23312`. The owner released all18 remaining PRs for focused review on 2026-09-10. The original254 cutoff stays fixed; later arrivals remain excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 131 |
+| Closed directly after reviewed landing | 127 |
 | Closed through draft cleanup or source-preserving consolidation | 110 |
-| Still open, all released for review | 13 |
+| Still open, all released for review | 17 |
 | Original membership | 254 |
 
-194 reviewed original science scopes landed: 127 direct science and 67 consolidated science. The 131 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 32 pending scopes at successors #7315 and #7359.
+189 reviewed original science scopes landed: 123 direct science and 66 consolidated science. The 127 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 33 pending scopes at three successors now released for review.
 
-Zero drafts remain. Including pre-cutoff #8003–#8009, the session has138 direct closures,63 science/source batches and236 new source documents;61 batches passed one combined gate. The tracked ledger remains4700 rows:4325 unaudited science and375 meta;11 notes await mechanical refresh. No audit verdict has been applied.
+Zero drafts remain. Including pre-cutoff #8003–#8009, the session has134 direct closures,62 science/source batches and231 new source documents;60 batches passed one combined gate. The tracked ledger remains4700 rows:4325 unaudited science and375 meta; six notes await mechanical refresh. No audit verdict has been applied.
 
-Wave63 lands #6515, #6844, #6858 and #6859 plus transferred #6485 after source corrections and original-reviewer confirmation. Five fresh producers passed41 checks in total. The initial #6485 producer input-hash failure is preserved; its literal-only correction was rerun successfully. Curved-carrier mathematics also has an independent Fraction reconstruction and preserved failed checker control. The shared integration gate passed once in 267.952 seconds. Every original source remains recoverable. [Evidence](backlog_evidence/wave63/INDEX.json).
+Wave62 lands #6379 after three source corrections and same-session independent confirmation. Its producer passed9 checks in1.48 seconds; seven actual input tamper controls failed closed. An initial cache-wrapper directory-stat rejection is preserved, not treated as mathematical failure or PASS. The combined gate passed once in 254.605 seconds. All five original source/metadata bodies remain recoverable. [Evidence](backlog_evidence/wave62/INDEX.json).
 
-Next: #7753 joint-pin corrections and #7981→#7988 weighted-kernel original review/corrections are active. Remaining routing preserves32 transferred scopes at #7315/#7359 and8 partial Maxwell obligations. Astra low remains the focused reviewer default; unresolved material questions escalate specifically. No physical TOE conclusion or audit grade follows from landing these finite results.
+Active W63: #6844 is independently confirmed and integrated. Reflection #6858/#6859 and seam #6515+#6485 have corrected source and fresh passing producers; final composition confirmation and the combined gate are pending. #7753 corrections and #7981→#7988 preparation run in parallel. Counts above remain actual landed/closed counts. The complete12-unit routing preserves33 transferred scopes and8 partial Maxwell scientific obligations. Release removes owner reservations, not mathematical or physical obligations. Astra low is the focused reviewer default, with specific unresolved material questions escalated; formal audit stays deferred.
 
 ## Landed source history
 
@@ -405,5 +405,3 @@ Active next review: backlog_gravity_ruler_review (Astra low) owns #7925/#7929/#7
 | Five conditional Eta safe-front/cap scopes; complete #7827 closure | `a054a95018285b108d9f257ecffc59dbfac9a172` | `backlog_evidence/wave61` |
 
 Wave62: corrected shifted-origin Hodge source and owner-release metadata landed at `1157173587fde42555d36659954e71c544e23312`; evidence `backlog_evidence/wave62/INDEX.json`.
-
-Wave63: corrected finite carrier/reflection/seam source landed at `2491ff70e921098fbb9130765458926c57c82364`; evidence `backlog_evidence/wave63/INDEX.json`.

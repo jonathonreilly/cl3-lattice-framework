@@ -1,26 +1,26 @@
 {
   "checked_utc": "2026-09-07T21:23:22.013652+00:00",
-  "current_main": "1157173587fde42555d36659954e71c544e23312",
+  "current_main": "2491ff70e921098fbb9130765458926c57c82364",
   "initial_snapshot_commit": "8eb102f8fe545b458ede8f1a63121d9bfde103a4",
   "summary": {
     "original_snapshot": 254,
-    "original_closed": 237,
-    "original_open": 17,
+    "original_closed": 241,
+    "original_open": 13,
     "original_drafts": 0,
-    "original_direct_landing_closures": 127,
-    "original_scientific_scopes_reviewed_and_newly_landed": 189,
-    "closed110_scientific_scopes_newly_landed": 66,
-    "closed110_scientific_scopes_pending": 33,
+    "original_direct_landing_closures": 131,
+    "original_scientific_scopes_reviewed_and_newly_landed": 194,
+    "closed110_scientific_scopes_newly_landed": 67,
+    "closed110_scientific_scopes_pending": 32,
     "closed110_preexisting_main_supersessions": 2,
     "closed110_empty": 1,
     "closed110_unexecuted_plan": 1,
     "closures_requiring_reopening": 0,
-    "pending_closed_scopes_open_successors": 3,
+    "pending_closed_scopes_open_successors": 2,
     "original_process_scopes_reviewed_and_landed": 1,
     "original_meta_synthesis_scopes_reviewed_and_landed": 1,
     "original_scopes_with_corrected_portions_landed_and_broader_scope_held": 8,
     "closed110_corrected_portions_landed_broader_scope_held": 7,
-    "original_closed_scientific_scopes_reviewed_and_newly_landed": 189,
+    "original_closed_scientific_scopes_reviewed_and_newly_landed": 194,
     "original_open_scientific_scopes_reviewed_and_newly_landed": 0,
     "original_historical_archive_recovery_scopes_landed_without_new_science": 1
   },
@@ -272,12 +272,13 @@
     7875,
     7871,
     7827,
-    6379
+    6379,
+    6515,
+    6844,
+    6858,
+    6859
   ],
   "pending_closed_scope_transfer": {
-    "6515": [
-      6485
-    ],
     "7315": [
       7011,
       7015,
@@ -1641,7 +1642,7 @@
       "original_head": "ad84cfcc857a65285389ba93b47cd7b718589be5",
       "original_branch": "physics-loop/toe-axiom-closure-block109-global-dressing-involution-positivity-20260815",
       "closure_action": "source_consolidation_exact",
-      "scientific_status": "pending_on_open_successor",
+      "scientific_status": "reviewed_corrected_scope_on_main",
       "original_branch_preserved": true,
       "successor_chain": [
         6485,
@@ -1649,24 +1650,94 @@
       ],
       "final_successor": 6515,
       "successor_head": "d6761278fca9cac617200792473a8f4da3a6cfff",
-      "successor_state": "OPEN",
-      "accepted_landing_commit": null,
-      "accepted_unit": null,
-      "remaining_obligations": "All original and inherited source, theorem, runner, physical premise, input and evidence obligations transfer through the recorded successor chain. Routing supplies no scientific acceptance.",
+      "successor_state": "CLOSED",
+      "accepted_landing_commit": "2491ff70e921098fbb9130765458926c57c82364",
+      "accepted_unit": "wave63_seam_6485_6515",
+      "remaining_obligations": "Corrected finite dressing/sector science from6515 and transferred6485 landed with complete original recovery. Full involution-positivity variety, physical seam selection and OS/transport bridge remain open; no audit grade.",
       "additional_original_obligations": "FROZEN_64.json",
       "historical_context_only": null,
       "reopen_required": false,
-      "evidence_group": "exact",
+      "evidence_group": "wave63",
       "detailed_row_sha256": "114ce9fec35f5e943ad56ad74358bcd3c0ceb3e35741d107572fb4e4ea613639",
       "initial_snapshot_head": "ad84cfcc857a65285389ba93b47cd7b718589be5",
       "closure_review_head": "ad84cfcc857a65285389ba93b47cd7b718589be5",
-      "dependency_hold": {
+      "historical_dependency_hold": {
         "reserved_pr": 6379,
         "successor": 6515,
         "verified_utc": "2026-09-08T02:23:06.347527+00:00",
         "evidence": "backlog_evidence/wave17-handoff/root-hold/ROOT_HOLD_CONFIRMATION.json",
         "scope": "Actual proof dependency through Blocks 110/109/108/107/106/105. Full science remains pending; retain all original and inherited obligations."
-      }
+      },
+      "current_acceptance_evidence": "backlog_evidence/wave63/INDEX.json",
+      "acceptance_update_utc": "2026-09-11T00:16:07.105237+00:00"
+    },
+    {
+      "pr": 6515,
+      "original_head": "d6761278fca9cac617200792473a8f4da3a6cfff",
+      "initial_snapshot_head": "d6761278fca9cac617200792473a8f4da3a6cfff",
+      "closure_review_head": "d6761278fca9cac617200792473a8f4da3a6cfff",
+      "original_branch": "physics-loop/toe-axiom-closure-block110-sector-signature-theorem-20260815",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "accepted_landing_commit": "2491ff70e921098fbb9130765458926c57c82364",
+      "accepted_unit": "wave63_finite_carrier_and_seam",
+      "remaining_obligations": "Corrected finite dressing/sector science from6515 and transferred6485 landed with complete original recovery. Full involution-positivity variety, physical seam selection and OS/transport bridge remain open; no audit grade.",
+      "reopen_required": false,
+      "evidence_group": "wave63",
+      "current_acceptance_evidence": "backlog_evidence/wave63/INDEX.json",
+      "acceptance_update_utc": "2026-09-11T00:16:07.105237+00:00"
+    },
+    {
+      "pr": 6844,
+      "original_head": "f6b0cf59e2cc588ebd3e34b96e730574cb485db2",
+      "initial_snapshot_head": "f6b0cf59e2cc588ebd3e34b96e730574cb485db2",
+      "closure_review_head": "f6b0cf59e2cc588ebd3e34b96e730574cb485db2",
+      "original_branch": "physics-loop/toe-axiom-closure-block128-curved-carrier-dependency-20260817",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "accepted_landing_commit": "2491ff70e921098fbb9130765458926c57c82364",
+      "accepted_unit": "wave63_finite_carrier_and_seam",
+      "remaining_obligations": "Corrected finite curved-carrier matrix and complete adjacent-block certificates landed with original recovery and independent Fraction reconstruction. Physical evolution/descent remains open; no audit grade.",
+      "reopen_required": false,
+      "evidence_group": "wave63",
+      "current_acceptance_evidence": "backlog_evidence/wave63/INDEX.json",
+      "acceptance_update_utc": "2026-09-11T00:16:07.105237+00:00"
+    },
+    {
+      "pr": 6858,
+      "original_head": "503cf8dabdfca5d6adc962cdc047846d1d417a77",
+      "initial_snapshot_head": "503cf8dabdfca5d6adc962cdc047846d1d417a77",
+      "closure_review_head": "503cf8dabdfca5d6adc962cdc047846d1d417a77",
+      "original_branch": "physics-loop/toe-axiom-closure-block142-carrier-reflection-blocker-20260819",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "accepted_landing_commit": "2491ff70e921098fbb9130765458926c57c82364",
+      "accepted_unit": "wave63_finite_carrier_and_seam",
+      "remaining_obligations": "Corrected finite Hodge/reflection-family and nonzero-mass minor results landed with original recovery. Global Hodge invariance is not necessary for compressed Hermiticity; physical OS remains open.",
+      "reopen_required": false,
+      "evidence_group": "wave63",
+      "current_acceptance_evidence": "backlog_evidence/wave63/INDEX.json",
+      "acceptance_update_utc": "2026-09-11T00:16:07.105237+00:00"
+    },
+    {
+      "pr": 6859,
+      "original_head": "275f1bd78201b0d9f440099536d3f602106caf29",
+      "initial_snapshot_head": "275f1bd78201b0d9f440099536d3f602106caf29",
+      "closure_review_head": "275f1bd78201b0d9f440099536d3f602106caf29",
+      "original_branch": "physics-loop/toe-axiom-closure-block143-staggered-hermitian-pairing-20260819",
+      "closure_action": "closed_directly_after_landing",
+      "scientific_status": "reviewed_corrected_scope_on_main",
+      "original_branch_preserved": true,
+      "accepted_landing_commit": "2491ff70e921098fbb9130765458926c57c82364",
+      "accepted_unit": "wave63_finite_carrier_and_seam",
+      "remaining_obligations": "Corrected finite staggered Hermiticity, no-positive-definite symmetrizer bound and polar metric construction landed with original recovery. Singular PSD and constrained physical positivity remain distinct/open; no audit grade.",
+      "reopen_required": false,
+      "evidence_group": "wave63",
+      "current_acceptance_evidence": "backlog_evidence/wave63/INDEX.json",
+      "acceptance_update_utc": "2026-09-11T00:16:07.105237+00:00"
     },
     {
       "pr": 7011,
@@ -7015,7 +7086,7 @@
       }
     }
   ],
-  "last_scientific_disposition_update_utc": "2026-09-10T22:57:17.748262+00:00",
+  "last_scientific_disposition_update_utc": "2026-09-11T00:16:07.105237+00:00",
   "partial_landing_holds": {
     "7943": {
       "landed_commit": "26e73b727db1732dd89f74461114e4873c4ddef9",
@@ -7059,5 +7130,5 @@
     }
   },
   "accepted_open_scopes": {},
-  "accepted_scope_count_definition": "189 original scientific scopes =123 direct closed science +66 consolidated science. Eight partial Maxwell scopes remain excluded."
+  "accepted_scope_count_definition": "194 original scientific scopes =127 direct closed science +67 consolidated science. Eight partial Maxwell scopes remain excluded."
 }
