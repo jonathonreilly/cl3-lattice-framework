@@ -1,0 +1,11 @@
+# Root focused correction read
+
+The complete replacement helper, complete new argument/ledger and complete primary correction diff were read. Original whole-primary coverage remains the original Astra reviewer’s read. No new science producer ran in this check.
+
+Independent derivations: the local Hodge cell is diag(v,*,*,1/v)/4 with the 2x2 middle block v[[1,-s],[-s,1]]/[4(1-s²)]; its eigenvalues are v/[4(1+s)] and v/[4(1-s)], positive for the displayed carriers. Every site is covered, so the assembled quadratic form is positive. Time-six periodicity of both H and selected differential makes the half-cover fold the antiperiodic restriction: for J=(-I,I)^T, Hq=J†HJ/2. This preserves positivity and adjoints. Thus K=i(Hd+d†H) is skew-Hermitian, herm(Q)=H for m=1; Qx=0 would imply x†Hx=0, proving invertibility. Multiplying (Q^-1+Q^-†)/2 by Q† on the left and Q on the right gives herm(Q), establishing positive W9 diagonal entries independently of the helper inverse implementation.
+
+For real A, choosing linearly independent pivot columns C gives uᵀCᵀCu=||Cu||²>0, so CᵀC is invertible. Raw AᵀA has the same kernel as A and is invertible exactly at the full-column-rank rung. With r=b-C(CᵀC)^-1Cᵀb, Aᵀr=0 and rᵀb=||r||². Rank augmentation proves nonzero residual, not a physics interpretation. Each context normalization contributes a relation involving its four rows and the common affine row; disjoint context supports make all six relations independent and imply rank≤25−6=19. Nested column spaces mean the largest residual annihilates every smaller one’s columns, despite nonproportional separately chosen Euclidean representatives.
+
+Rank(A)=rank([A|b]) establishes real-affine solutions; inequality of dimensions alone does not. Probability/simplex feasibility stays open. Exact l1 inequalities do not imply component-magnitude inequalities or bound ||r_joint−r_single||. The replacement argument keeps these distinct.
+
+Pre-producer corrections sent author: explicit paired-runner/type/current105 citation discovery, modest honest N1–N8 section; remove ambiguous retained-grade wording; correct output’s component-magnitude wording, obsolete draft fallback and single-readout universal exclusion rhetoric. Must recheck actual input hashes, helper graph and source discovery after the small final delta.
