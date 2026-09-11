@@ -1,0 +1,32 @@
+{
+  "before_sha256": {
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md": "9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33",
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_WEIGHTED_KERNEL_DISPERSION_BOUNDED_THEOREM_NOTE_2026-09-05.md": "6eb45758067a92f7bc44f2ffbc5fec9999c2930e2b2c924dfa6dfa67ca5db5ae",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445",
+    "scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py": "d80ce0e3168968fcc1a887e6737681e4cdfc31c82813813415f008a68507088d",
+    "scripts/admissibility_dirac_kahler_weighted_kernel_released7981_7988_fixtures_2026_09_10.py": "082c88ae8d05df21874e90cef3a8a0784116a1eb6957d119709ef6838486a9ef"
+  },
+  "block": "213",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-c",
+    "import json,sys; from scripts.runner_cache import execute_and_write_cache,runner_timeout_for; runner=sys.argv[1]; timeout=runner_timeout_for(runner); assert timeout==180, timeout; result,path=execute_and_write_cache(runner,timeout); print(json.dumps({'status':result.get('status'),'exit_code':result.get('exit_code'),'timeout_sec':result.get('timeout_sec'),'cache_path':str(path) if path else None},sort_keys=True)); raise SystemExit(0 if result.get('status')=='ok' and path is not None else 1)",
+    "scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py"
+  ],
+  "environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "memory_enforcement": "sampled ps RSS; no RLIMIT_AS",
+  "outer_wall_sec": 195,
+  "rss_cap_bytes": 2147483648,
+  "rss_scope": "sum of every process in the producer process group",
+  "runner_timeout_sec": 180,
+  "watchdog_sha256": "65964c52f03f45ff894a430ebbdad90738f121b094108b6e169306def4df7aab"
+}

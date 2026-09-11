@@ -1,21 +1,21 @@
 # Backlog review and landing — current handoff
 
-Updated after wave65. Main is `09dafe5bf6fb030249b368987fff091ef339c78a`. Of the 18 released originals, 8 are landed and closed; 10 remain. The original 254 cutoff stays fixed; later arrivals remain excluded. Formal audit waits until a solid TOE is ready.
+Updated after wave64. Main is `eb0fe5cae19cb8cf813182e8ccaddc4a0408faf3`. Of the 18 released originals, 6 are landed and closed; 12 remain. The original 254 cutoff stays fixed; later arrivals remain excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 134 |
+| Closed directly after reviewed landing | 132 |
 | Closed through draft cleanup or source-preserving consolidation | 110 |
-| Still open, all released for review | 10 |
+| Still open, all released for review | 12 |
 | Original membership | 254 |
 
-197 reviewed original science scopes landed: 130 direct science and 67 consolidated science. The 134 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 32 pending scopes at successors #7315 and #7359.
+195 reviewed original science scopes landed: 128 direct science and 67 consolidated science. The 132 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 32 pending scopes at successors #7315 and #7359.
 
-Zero original-backlog drafts remain. Including pre-cutoff #8003–#8009, the session has 141 direct closures, 65 science/source batches and 239 new source documents; 63 batches passed one combined gate. The tracked ledger remains 4700 rows: 4325 unaudited science and 375 meta; 14 notes await mechanical refresh. No audit verdict has been applied.
+Zero original-backlog drafts remain. Including pre-cutoff #8003–#8009, the session has 139 direct closures, 64 science/source batches and 237 new source documents; 62 batches passed one combined gate. The tracked ledger remains 4700 rows: 4325 unaudited science and 375 meta; 12 notes await mechanical refresh. No audit verdict has been applied.
 
-Wave65 lands corrected #7981/#7988 finite weighted-kernel and duality calculations. Nine original-review finding groups are resolved by corrected determinant prefactors, a scalar counterexample, honest parameter scopes, valid radical certificates and a bounded declared helper closure. The two producers passed 36/0 and 33/0 in 64.033 and 178.572 seconds, once each, with source/input identity unchanged. All 34 original delta occurrences across 28 paths, including six shared versions, and four historical helpers remain exactly recoverable. The original reviewer confirmed final composition. The combined integration gate passed once in 250.211 seconds. [Evidence](backlog_evidence/wave65/INDEX.json).
+Wave64 lands #7753 after correcting rank, norm, Gram-matrix and interpretation claims, extracting the bounded fixture helper and confirming the result with the original reviewer. The final producer passed 29 checks in 54.834 seconds; its source/input hashes stayed unchanged. The earlier successful 52.607-second run remains preserved for the superseded source, before a formatting and wording correction. Four original package bodies and six historical helper bodies remain exactly recoverable. The integration gate passed once in 247.289 seconds. [Evidence](backlog_evidence/wave64/INDEX.json).
 
-Next: #7992→#7993→#7994 author corrections follow seven original-review finding groups. The first six transferred scopes at #7315 (#7011/#7015/#7016/#7021/#7029/#7032) have eleven original-review finding groups; the author is correcting them. The other fourteen remain pending. Original review of #7995/#7997 is also active. Remaining routing preserves 32 transferred scopes at #7315/#7359 and eight partial Maxwell obligations. Focused review remains required; no physical TOE conclusion or audit grade follows from these finite results.
+Next: #7981→#7988 corrected sources have reviewer confirmation and their two bounded producers are authorized. #7992→#7993→#7994 original review is complete with seven finding groups; /root/released18_routing is applying corrections in fix-released7992-7994-20260910. Astra low is reviewing the first six transferred scopes at #7315 (#7011/#7015/#7016/#7021/#7029/#7032); the other fourteen remain pending. Remaining routing preserves 32 transferred scopes at #7315/#7359 and eight partial Maxwell obligations. Astra low remains the focused reviewer default; unresolved material questions escalate specifically. No physical TOE conclusion or audit grade follows from these finite results.
 
 ## Landed source history
 
@@ -409,5 +409,3 @@ Wave62: corrected shifted-origin Hodge source and owner-release metadata landed 
 Wave63: corrected finite carrier/reflection/seam source landed at `2491ff70e921098fbb9130765458926c57c82364`; evidence `backlog_evidence/wave63/INDEX.json`.
 
 Wave64: corrected joint-pin source landed at `eb0fe5cae19cb8cf813182e8ccaddc4a0408faf3`; evidence `backlog_evidence/wave64/INDEX.json`.
-
-Wave65: corrected weighted-kernel and duality source landed at `09dafe5bf6fb030249b368987fff091ef339c78a`; evidence `backlog_evidence/wave65/INDEX.json`.

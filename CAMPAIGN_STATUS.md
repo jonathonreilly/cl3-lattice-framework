@@ -52,7 +52,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. Wave64 landed #7753. Six of 18 released originals are now closed and 12 remain; 32 transferred scopes remain pending. Weighted-kernel and covariance corrections follow completed original reviews. 195 original science scopes landed; formal audit deferred.
+1. Wave65 landed #7981/#7988. Eight of 18 released originals are closed and 10 remain; 32 transferred scopes remain pending. Covariance and first six #7315 author corrections active; #7995/#7997 original review active. 197 original science scopes landed; formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.
