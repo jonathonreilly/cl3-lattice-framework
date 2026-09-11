@@ -1,6 +1,6 @@
 # TOE campaign — 2026-09-07
 
-Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. The 33 transferred scopes remain pending review; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
+Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. The 32 transferred scopes remain pending review; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
 
 The active work is cleanup of the fixed original 254 PR backlog. New arrivals are
 excluded by the owner cutoff in BACKLOG_CUTOFF.json. Read
