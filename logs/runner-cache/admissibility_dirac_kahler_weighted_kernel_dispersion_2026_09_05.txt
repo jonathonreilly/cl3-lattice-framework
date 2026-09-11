@@ -1,0 +1,338 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py
+runner_sha256: d80ce0e3168968fcc1a887e6737681e4cdfc31c82813813415f008a68507088d
+input_fingerprint_sha256: 017fc6165dab5e76aa6c23ab488235d2b7319aa02ff11dc7fc68abe47838ce28
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 63.85
+status: ok
+----- stdout -----
+MEASURED
+  elapsed: 63s
+  correction source base 1157173587fde42555d36659954e71c544e23312
+  authority AuthorityCertificate(source_base='1157173587fde42555d36659954e71c544e23312', fixed_source_inputs=True, machinery_import_available=True, inputs_readable=5, inputs_missing=(), input_hashes=(('docs/ADMISSIBILITY_DIRAC_KAHLER_WEIGHTED_KERNEL_DISPERSION_BOUNDED_THEOREM_NOTE_2026-09-05.md', '6eb45758067a92f7bc44f2ffbc5fec9999c2930e2b2c924dfa6dfa67ca5db5ae'), ('scripts/admissibility_dirac_kahler_weighted_kernel_released7981_7988_fixtures_2026_09_10.py', '082c88ae8d05df21874e90cef3a8a0784116a1eb6957d119709ef6838486a9ef'), ('docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md', '9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33'), ('scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py', '5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445'), ('docs/MINIMAL_AXIOMS_2026-06-29.md', '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753'), ('docs/audit/data/axiom_premise_nodes.json', '615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37')))
+  imposed 6, registered 0, adopted 0, gravity structures NOT SUPPLIED 9, readings 7, scoped headline words 4
+  historical checker record: RECOVERED-SUPPORT-NOT-CURRENT-AUTHORITY
+  THE CONSTRUCTION
+    2D lane kernel = Block 201's True, nnz 64, spin-nonscalar 0, site-sign-equivalent True, raising part = Block 201's on (8,4) True, K = d - d^T True, d^2 = 0 True
+    3D lane kernel: 48 links scanned, 0 bad, shadow = eta/2 True, nnz 32, x/y links absent on extent 2 True, K = d - d^T True, d^2 = 0 True
+    assemblers: fork_hodge True, onsite_hodge True, overlap_hodge True, rules = bench assembly True
+    flat: H = I True, K_H = K True
+    witness flat: moduli (v0, g0, v1, g1) = (1, 0, 1, 0), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(0, 1) True
+      leading minors (1, 1, 1, 1, 1, 1, 1, 1), PD True
+      G1 = D1/D0 = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
+      G2 = D3 E D2^-1 E = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
+      G1 ~ G2 True; Hodge-consistency defects: D0 D3 - 1 = 0, nnz(D1 E D2 E - D0 D3 I) = 0
+    witness W1: moduli (v0, g0, v1, g1) = (15/16, 1/4, 1, 1/4), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(1/4, 15/16) True
+      leading minors (15/16, 15/16, 225/256, 15/16, 25/32, 25/32, 25/36, 25/36), PD True
+      G1 = D1/D0 = ((16/15, -4/15, -4/15), (-4/15, 16/15, -4/15), (-4/15, -4/15, 16/15))
+      G2 = D3 E D2^-1 E = ((9/8, -3/8, 3/8), (-3/8, 9/8, -3/8), (3/8, -3/8, 9/8))
+      G1 ~ G2 False; Hodge-consistency defects: D0 D3 - 1 = -1/16, nnz(D1 E D2 E - D0 D3 I) = 9
+    witness W2: moduli (v0, g0, v1, g1) = (7/16, 3/4, 1, 3/4), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(3/4, 7/16) True
+      leading minors (7/16, 7/16, 49/256, 7/16, 5/32, 5/32, 25/196, 25/196), PD True
+      G1 = D1/D0 = ((16/7, -12/7, -12/7), (-12/7, 16/7, 12/7), (-12/7, 12/7, 16/7))
+      G2 = D3 E D2^-1 E = ((49/40, -21/40, 21/40), (-21/40, 49/40, 21/40), (21/40, 21/40, 49/40))
+      G1 ~ G2 False; Hodge-consistency defects: D0 D3 - 1 = -9/16, nnz(D1 E D2 E - D0 D3 I) = 9
+    witness W3: moduli (v0, g0, v1, g1) = (12/25, 3/5, 3/4, 4/5), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(3/5, 12/25) True
+      leading minors (12/25, 9/25, 108/625, 9/25, 297/2000, 891/8000, 429/6400, 143/1600), PD True
+      G1 = D1/D0 = ((25/16, -15/16, -15/16), (-15/16, 25/16, 15/16), (-15/16, 15/16, 25/16))
+      G2 = D3 E D2^-1 E = ((144/65, -64/65, 64/65), (-64/65, 144/65, 64/65), (64/65, 64/65, 144/65))
+      G1 ~ G2 False; Hodge-consistency defects: D0 D3 - 1 = -9/25, nnz(D1 E D2 E - D0 D3 I) = 9
+    witness mixed: moduli (v0, g0, v1, g1) = (15/16, 1/4, 1, 1/4), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(1/4, 15/16) True
+      leading minors (15/16, 15/16, 225/256, 15/16, 25/32, 25/32, 3/4, 3/4), PD True
+      G1 = D1/D0 = ((16/15, -4/15, -4/15), (-4/15, 16/15, -4/15), (-4/15, -4/15, 16/15))
+      G2 = D3 E D2^-1 E = ((25/24, -5/24, 5/24), (-5/24, 25/24, 5/24), (5/24, 5/24, 25/24))
+      G1 ~ G2 False; Hodge-consistency defects: D0 D3 - 1 = -1/16, nnz(D1 E D2 E - D0 D3 I) = 9
+    witness near_boundary: moduli (v0, g0, v1, g1) = (7599/10000, 49/100, 1, 49/100), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(49/100, 7599/10000) True
+      leading minors (7599/10000, 7599/10000, 57744801/100000000, 7599/10000, 22201/500000, 22201/500000, 22201/6502500, 22201/6502500), PD True
+      G1 = D1/D0 = ((10000/7599, -4900/7599, -4900/7599), (-4900/7599, 10000/7599, -4900/7599), (-4900/7599, -4900/7599, 10000/7599))
+      G2 = D3 E D2^-1 E = ((2601/200, -2499/200, 2499/200), (-2499/200, 2601/200, -2499/200), (2499/200, -2499/200, 2601/200))
+      G1 ~ G2 False; Hodge-consistency defects: D0 D3 - 1 = -2401/10000, nnz(D1 E D2 E - D0 D3 I) = 9
+    witness boundary: moduli (v0, g0, v1, g1) = (3/4, 1/2, 1, 1/2), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(1/2, 3/4) True
+      leading minors (3/4, 3/4, 9/16, 3/4, 0, 0, 0, 0), PD False
+      G1 = D1/D0 = ((4/3, -2/3, -2/3), (-2/3, 4/3, -2/3), (-2/3, -2/3, 4/3))
+      G2 = D3 E D2^-1 E = ('UNDEFINED: det D2 = 0',)
+      G1 ~ G2 None; Hodge-consistency defects: D0 D3 - 1 = -1/4, nnz(D1 E D2 E - D0 D3 I) = 9
+    witness honest_face: moduli (v0, g0, v1, g1) = (3/5, 4/5, 5/3, 0), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(4/5, 3/5) True
+      leading minors (3/5, 1, 3/5, 1, 13/27, 65/81, 325/243, 65/81), PD True
+      G1 = D1/D0 = ((25/9, -20/9, -20/9), (-20/9, 25/9, 20/9), (-20/9, 20/9, 25/9))
+      G2 = D3 E D2^-1 E = ((9/25, 0, 0), (0, 9/25, 0), (0, 0, 9/25))
+      G1 ~ G2 False; Hodge-consistency defects: D0 D3 - 1 = -16/25, nnz(D1 E D2 E - D0 D3 I) = 9
+    witness L+-: moduli (v0, g0, v1, g1) = (sqrt(6)/3, 1/3, 3*sqrt(6)/8, 1/2), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(1/3, sqrt(6)/3) True
+      leading minors (sqrt(6)/3, 3/4, sqrt(6)/4, 3/4, 3*sqrt(6)/16, 27/64, 9*sqrt(6)/64, 3/8), PD True
+      G1 = D1/D0 = ((9/8, -3/8, -3/8), (-3/8, 9/8, -3/8), (-3/8, -3/8, 9/8))
+      G2 = D3 E D2^-1 E = ((4/3, -4/9, -4/9), (-4/9, 4/3, -4/9), (-4/9, -4/9, 4/3))
+      G1 ~ G2 True; Hodge-consistency defects: D0 D3 - 1 = -1/9, nnz(D1 E D2 E - D0 D3 I) = 3
+    witness L-+: moduli (v0, g0, v1, g1) = (sqrt(6)/3, 1/2, 4*sqrt(6)/9, 1/3), ranks (32, 32), free ('D07', 'D16', 'D25', 'D34'), blocks = formulas True, cross-degree zero True, origin tx face = shear_hodge(1/2, sqrt(6)/3) True
+      leading minors (sqrt(6)/3, 8/9, 8*sqrt(6)/27, 8/9, 64*sqrt(6)/243, 512/729, 512*sqrt(6)/2187, 128/243), PD True
+      G1 = D1/D0 = ((4/3, -2/3, 2/3), (-2/3, 4/3, -2/3), (2/3, -2/3, 4/3))
+      G2 = D3 E D2^-1 E = ((9/8, -9/16, 9/16), (-9/16, 9/8, -9/16), (9/16, -9/16, 9/8))
+      G1 ~ G2 True; Hodge-consistency defects: D0 D3 - 1 = -1/4, nnz(D1 E D2 E - D0 D3 I) = 3
+  THE R5 CONTROL
+    flat symbol identity 2D True, 3D True; (4,4) multiset ((0, 4), (1, 8), (2, 4)) expected ((0, 4), (1, 8), (2, 4)); (4,2,2) multiset ((0, 8), (1, 8)) expected ((0, 8), (1, 8)); Bloch = direct True
+  THE EXACT SPECTRA (factored charpoly of the 16 x 16 bench -K^2; 'agree' = Bloch union equals direct bench)
+    [flat (4, 4) onsite form] agree True multiset ((0, 4), (1, 8), (2, 4))
+      lam**4*(lam - 2)**4*(lam - 1)**8
+    [flat (4, 4) onsite pencil] agree True multiset ((0, 4), (1, 8), (2, 4))
+      lam**4*(lam - 2)**4*(lam - 1)**8
+    [flat (4, 4) overlap form] agree True multiset ((0, 4), (1, 8), (2, 4))
+      lam**4*(lam - 2)**4*(lam - 1)**8
+    [flat (4, 4) overlap pencil] agree True multiset ((0, 4), (1, 8), (2, 4))
+      lam**4*(lam - 2)**4*(lam - 1)**8
+    [flat (4, 2, 2) onsite form] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [flat (4, 2, 2) onsite pencil] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [flat (4, 2, 2) overlap form] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [flat (4, 2, 2) overlap pencil] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [W1 (4, 4) onsite form] agree True
+      lam**4*(8*lam - 9)**2*(225*lam - 512)**2*(3600*lam**2 - 7921*lam + 4096)**4/544195584000000000000
+    [W1 (4, 4) onsite pencil] agree True multiset ((0, 4), (16/15, 4), (256/225, 4), (8/5, 2), (128/75, 2))
+      lam**4*(5*lam - 8)**2*(15*lam - 16)**4*(75*lam - 128)**2*(225*lam - 256)**4/18245578765869140625
+    [W1 (4, 4) overlap form] agree True
+      lam**4*(921600*lam - 923521)**8*(212336640000*lam**2 - 758109081600*lam + 653188856401)**2/23463327920443900734737608470952059032165154816000000000000000000000000
+    [W1 (4, 4) overlap pencil] agree True multiset ((0, 4), (1, 8), (1922/1081, 4))
+      lam**4*(lam - 1)**8*(1081*lam - 1922)**4/1365534810721
+    [W1 (4, 2, 2) onsite form] agree True
+      lam**8*(lam - 1)**2*(9*lam - 16)**2*(1800*lam**2 - 3433*lam + 1152)**2/262440000
+    [W1 (4, 2, 2) onsite pencil] agree True multiset ((0, 8), (16/15, 4), (9/8, 2), (32/25, 2))
+      lam**8*(8*lam - 9)**2*(15*lam - 16)**4*(25*lam - 32)**2/2025000000
+    [W1 (4, 2, 2) overlap form] agree True multiset ((0, 8), (116281/147456, 4), (4844401/3686400, 4))
+      lam**8*(147456*lam - 116281)**4*(3686400*lam - 4844401)**4/87309122741611403792360904482602195353600000000
+    [W1 (4, 2, 2) overlap pencil] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [W2 (4, 4) onsite form] agree True
+      lam**4*(8*lam - 1)**2*(49*lam - 512)**2*(784*lam**2 - 5321*lam + 4096)**4/58054566272303104
+    [W2 (4, 4) onsite pencil] agree True multiset ((0, 4), (8/7, 2), (16/7, 4), (128/49, 2), (256/49, 4))
+      lam**4*(7*lam - 16)**4*(7*lam - 8)**2*(49*lam - 256)**4*(49*lam - 128)**2/1628413597910449
+    [W2 (4, 4) overlap form] agree True
+      lam**4*(200704*lam - 279841)**8*(10070523904*lam**2 - 43992911872*lam + 36469158961)**2/267025264114921925707976017494600585196289137988168464702898176
+    [W2 (4, 4) overlap pencil] agree True multiset ((0, 4), (1, 8), (1058/697, 4))
+      lam**4*(lam - 1)**8*(697*lam - 1058)**4/236010384481
+    [W2 (4, 2, 2) onsite form] agree True
+      lam**8*(lam - 1)**2*(49*lam - 16)**2*(392*lam**2 - 9409*lam + 6272)**2/368947264
+    [W2 (4, 2, 2) onsite pencil] agree True multiset ((0, 8), (49/40, 2), (16/7, 4), (32/5, 2))
+      lam**8*(5*lam - 32)**2*(7*lam - 16)**4*(40*lam - 49)**2/96040000
+    [W2 (4, 2, 2) overlap form] agree True multiset ((0, 8), (508369/802816, 4), (3301489/802816, 4))
+      lam**8*(802816*lam - 3301489)**4*(802816*lam - 508369)**4/172555240996445312059316339412827644581375901696
+    [W2 (4, 2, 2) overlap pencil] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [W3 (4, 4) onsite form] agree True
+      lam**4*(50*lam - 9)**2*(72*lam - 625)**2*(57600*lam**2 - 294064*lam + 140625)**4/142657607172096000000000000
+    [W3 (4, 4) onsite pencil] agree True multiset ((0, 4), (5/4, 2), (25/16, 4), (125/36, 2), (625/144, 4))
+      lam**4*(4*lam - 5)**2*(16*lam - 25)**4*(36*lam - 125)**2*(144*lam - 625)**4/584325558976905216
+    [W3 (4, 4) overlap form] agree True
+      lam**4*(1440000*lam - 1485961)**8*(518400000000*lam**2 - 1770812640000*lam + 1338257962561)**2/4968552950211927758340096000000000000000000000000000000000000000000000000
+    [W3 (4, 4) overlap pencil] agree True multiset ((0, 4), (1, 8), (2438/1489, 4))
+      lam**4*(lam - 1)**8*(1489*lam - 2438)**4/4915625528641
+    [W3 (4, 2, 2) onsite form] agree True
+      lam**8*(144*lam - 25)**2*(19200*lam**3 - 429376*lam**2 + 724899*lam - 270000)**2/7644119040000
+    [W3 (4, 2, 2) onsite pencil] agree True multiset ((0, 8), (25/18, 2), (25/16, 2), (144/65, 2), (125/22, 2))
+      lam**8*(16*lam - 25)**2*(18*lam - 25)**2*(22*lam - 125)**2*(65*lam - 144)**2/169612185600
+    [W3 (4, 2, 2) overlap form] agree True multiset ((0, 8), (361/625, 4), (1190281/360000, 4))
+      lam**8*(625*lam - 361)**4*(360000*lam - 1190281)**4/2562890625000000000000000000000000
+    [W3 (4, 2, 2) overlap pencil] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [mixed (4, 4) onsite form] agree True
+      lam**4*(8*lam - 9)**2*(225*lam - 512)**2*(3600*lam**2 - 7921*lam + 4096)**4/544195584000000000000
+    [mixed (4, 4) onsite pencil] agree True multiset ((0, 4), (16/15, 4), (256/225, 4), (8/5, 2), (128/75, 2))
+      lam**4*(5*lam - 8)**2*(15*lam - 16)**4*(75*lam - 128)**2*(225*lam - 256)**4/18245578765869140625
+    [mixed (4, 4) overlap form] agree True
+      lam**4*(921600*lam - 923521)**8*(212336640000*lam**2 - 758109081600*lam + 653188856401)**2/23463327920443900734737608470952059032165154816000000000000000000000000
+    [mixed (4, 4) overlap pencil] agree True multiset ((0, 4), (1, 8), (1922/1081, 4))
+      lam**4*(lam - 1)**8*(1081*lam - 1922)**4/1365534810721
+    [mixed (4, 2, 2) onsite form] agree True
+      lam**8*(lam - 1)**2*(25*lam - 16)**2*(1800*lam**2 - 5481*lam + 3200)**2/2025000000
+    [mixed (4, 2, 2) onsite pencil] agree True multiset ((0, 8), (16/25, 2), (25/24, 2), (16/15, 2), (32/15, 2))
+      lam**8*(15*lam - 32)**2*(15*lam - 16)**2*(24*lam - 25)**2*(25*lam - 16)**2/18225000000
+    [mixed (4, 2, 2) overlap form] agree True multiset ((0, 8), (151321/147456, 4), (3845521/3686400, 4))
+      lam**8*(147456*lam - 151321)**4*(3686400*lam - 3845521)**4/87309122741611403792360904482602195353600000000
+    [mixed (4, 2, 2) overlap pencil] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [near_boundary (4, 4) onsite form] agree True
+      lam**4*(5000*lam - 2601)**2*(57744801*lam - 200000000)**2*(577448010000*lam**2 - 1716093277201*lam + 1000000000000)**4/9268668354548770320567322395208844305273017200250000000000000000000000
+    [near_boundary (4, 4) onsite pencil] agree True multiset ((0, 4), (10000/7599, 4), (200/149, 2), (100000000/57744801, 4), (2000000/1132251, 2))
+      lam**4*(149*lam - 200)**2*(7599*lam - 10000)**4*(1132251*lam - 2000000)**2*(57744801*lam - 100000000)**4/1055201249476755683705784578216196429114343364572774499488778001
+    [near_boundary (4, 4) overlap form] agree True
+      lam**4*(92391681600000000*lam - 95929452354489601)**8*(2134055707218944640000000000000000*lam**2 - 7244431307736186652742721600000000*lam + 5309189379798400912285477686478801)**2/24181012272179195502108113002012317321322411948429408497270860324375170855429943484246788271829144112726016000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    [near_boundary (4, 4) overlap pencil] agree True multiset ((0, 4), (1, 8), (619449602/384195001, 4))
+      lam**4*(lam - 1)**8*(384195001*lam - 619449602)**4/21787471837434733075119289686780001
+    [near_boundary (4, 2, 2) onsite form] agree True
+      lam**8*(lam - 1)**2*(2601*lam - 10000)**2*(288724005000*lam**2 - 797519272201*lam + 130050000000)**2/563957648614582480370025000000
+    [near_boundary (4, 2, 2) onsite pencil] agree True multiset ((0, 8), (10000/7599, 4), (2601/200, 2), (500000/22201, 2))
+      lam**8*(200*lam - 2601)**2*(7599*lam - 10000)**4*(22201*lam - 500000)**2/65740173059577556546160040000
+    [near_boundary (4, 2, 2) overlap form] agree True multiset ((0, 8), (239350494815629201/369566726400000000, 4), (695847932293350001/369566726400000000, 4))
+      lam**8*(369566726400000000*lam - 695847932293350001)**4*(369566726400000000*lam - 239350494815629201)**4/347970882060756862816199199479876376123532952137738532177284345722944681410560000000000000000000000000000000000000000000000000000000000000000
+    [near_boundary (4, 2, 2) overlap pencil] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [boundary (4, 4) onsite form] agree True
+      lam**4*(2*lam - 1)**2*(9*lam - 32)**2*(36*lam**2 - 109*lam + 64)**4/544195584
+    [boundary (4, 4) onsite pencil] agree True multiset ((0, 4), (4/3, 6), (16/9, 6))
+      lam**4*(3*lam - 4)**6*(9*lam - 16)**6/387420489
+    [boundary (4, 4) overlap form] agree True
+      lam**4*(2304*lam - 2401)**8*(1327104*lam**2 - 4508928*lam + 3286969)**2/1398523325946563526078320054468635262976
+    [boundary (4, 4) overlap pencil] agree True multiset ((0, 4), (1, 8), (98/61, 4))
+      lam**4*(lam - 1)**8*(61*lam - 98)**4/13845841
+    [boundary (4, 2, 2) onsite form] agree True multiset ((0, 8), (1/6, 2), (1, 2), (8/3, 2), (4, 2))
+      lam**8*(lam - 4)**2*(lam - 1)**2*(3*lam - 8)**2*(6*lam - 1)**2/324
+    [boundary (4, 2, 2) onsite pencil] agree True
+      UNDEFINED: det H = 0
+    [boundary (4, 2, 2) overlap form] agree True multiset ((0, 8), (5929/9216, 4), (17689/9216, 4))
+      lam**8*(9216*lam - 17689)**4*(9216*lam - 5929)**4/52040292466647269602037015248896
+    [boundary (4, 2, 2) overlap pencil] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    [honest_face (4, 4) onsite form] agree True
+      lam**4*(9*lam - 50)**2*(9*lam - 2)**2*(81*lam**2 - 594*lam + 625)**4/282429536481
+    [honest_face (4, 4) onsite pencil] agree True multiset ((0, 4), (10/9, 4), (25/9, 8))
+      lam**4*(9*lam - 25)**8*(9*lam - 10)**4/282429536481
+    [honest_face (4, 4) overlap form] agree True
+      lam**4*(25*lam - 49)**8*(5625*lam**2 - 33100*lam + 23716)**2/4827976226806640625
+    [honest_face (4, 4) overlap pencil] agree True multiset ((0, 4), (1, 8), (42/31, 4))
+      lam**4*(lam - 1)**8*(31*lam - 42)**4/923521
+    [honest_face (4, 2, 2) onsite form] agree True
+      lam**8*(9*lam - 25)**2*(25*lam - 9)**2*(81*lam**2 - 738*lam + 625)**2/332150625
+    [honest_face (4, 2, 2) onsite pencil] agree True multiset ((0, 8), (9/25, 2), (25/13, 2), (25/9, 2), (5, 2))
+      lam**8*(lam - 5)**2*(9*lam - 25)**2*(13*lam - 25)**2*(25*lam - 9)**2/8555625
+    [honest_face (4, 2, 2) overlap form] agree True multiset ((0, 8), (256/225, 4), (676/225, 4))
+      lam**8*(225*lam - 676)**4*(225*lam - 256)**4/6568408355712890625
+    [honest_face (4, 2, 2) overlap pencil] agree True multiset ((0, 8), (1, 8))
+      lam**8*(lam - 1)**8
+    translation covariance at W1, nnz([-K_H^2, T_mu]): (((4, 4), 'onsite', (128, 128)), ((4, 4), 'overlap', (64, 0)), ((4, 2, 2), 'onsite', (128, 128, 128)), ((4, 2, 2), 'overlap', (0, 0, 0)))
+    boundary: onsite H singular on (4,4) False, on (4,2,2) True; overlap H regular True
+  THE PRINCIPAL PART AND THE CONE
+    onsite lemma 3D True, 2D True, D0 absent True, block-diagonal True, 0-form branch True, top-form branch True, transverse product True, expansion K_H,B = i eps (H0 D + D^T H0) + O(eps^2) measured True
+    overlap H0 form True, overlap cone 3D True, 2D True
+    2D (c, v): onsite branches True, onsite pencil scalar generically False, on the locus v^2 = 1 - c^2 True, onsite form scalar False; overlap pencil scalar True, matches True, cone matches True, form scalar False, effective shear True, discrepancy True
+    2D onsite exact 0-form H-pencil symbol: (-c*zt**4*zx**2 + c*zt**4 - c*zt**2*zx**4 + 2*c*zt**2*zx**2 - c*zt**2 + c*zx**4 - c*zx**2 + zt**4*zx**2 + zt**2*zx**4 - 4*zt**2*zx**2 + zt**2 + zx**2)/(4*c**2*zt**2*zx**2 - 4*zt**2*zx**2)
+    2D onsite exact 2-form H-pencil symbol: (c*zt**4*zx**2 - c*zt**4 + c*zt**2*zx**4 - 2*c*zt**2*zx**2 + c*zt**2 - c*zx**4 + c*zx**2 - zt**4*zx**2 - zt**2*zx**4 + 4*zt**2*zx**2 - zt**2 - zx**2)/(4*v**2*zt**2*zx**2)
+    2D overlap exact H-pencil scalar symbol: 961*(841*zt**4*zx**2 + 120*zt**4 + 841*zt**2*zx**4 - 3604*zt**2*zx**2 + 841*zt**2 + 120*zx**4 + 841*zx**2)/(4*(60*zt**2 - 961*zt*zx + 60*zx**2)*(60*zt**2 + 961*zt*zx + 60*zx**2))
+    [flat onsite] parity-preserving H0 True; det B factors ('(kt**2 + kx**2 + ky**2)^2 [hessian rank 3]',)
+      pencil branches (quadratic-form eigenvalues, multiplicity) (('kt**2 + kx**2 + ky**2', 4),); remaining factor degrees (); scalar True
+      form branches (('kt**2 + kx**2 + ky**2', 4),); remaining (); scalar True
+      k^T G1 k = kt**2 + kx**2 + ky**2; k^T G2 k = kt**2 + kx**2 + ky**2; cones are G1, G2 None; branches include G1, G2 None
+    [flat overlap] parity-preserving H0 True; det B factors ('(kt**2 + kx**2 + ky**2)^2 [hessian rank 3]',)
+      pencil branches (quadratic-form eigenvalues, multiplicity) (('kt**2 + kx**2 + ky**2', 4),); remaining factor degrees (); scalar True
+      form branches (('kt**2 + kx**2 + ky**2', 4),); remaining (); scalar True
+      k^T G1 k = kt**2 + kx**2 + ky**2; k^T G2 k = kt**2 + kx**2 + ky**2; cones are G1, G2 None; branches include G1, G2 None
+    [W1 onsite] parity-preserving H0 True; det B factors ('(2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2)^1 [hessian rank 3]', '(3*kt**2 - 2*kt*kx + 2*kt*ky + 3*kx**2 - 2*kx*ky + 3*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (('9*kt**2/8 - 3*kt*kx/4 + 3*kt*ky/4 + 9*kx**2/8 - 3*kx*ky/4 + 9*ky**2/8', 1), ('16*kt**2/15 - 8*kt*kx/15 - 8*kt*ky/15 + 16*kx**2/15 - 8*kx*ky/15 + 16*ky**2/15', 1)); remaining factor degrees ((2, 1),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 16*kt**2/15 - 8*kt*kx/15 - 8*kt*ky/15 + 16*kx**2/15 - 8*kx*ky/15 + 16*ky**2/15; k^T G2 k = 9*kt**2/8 - 3*kt*kx/4 + 3*kt*ky/4 + 9*kx**2/8 - 3*kx*ky/4 + 9*ky**2/8; cones are G1, G2 True; branches include G1, G2 True
+    [W1 overlap] parity-preserving H0 True; det B factors ('(55*kt**2 - 16*kt*kx - 16*kt*ky + 55*kx**2 - 16*kx*ky + 55*ky**2)^1 [hessian rank 3]', '(55*kt**2 - 16*kt*kx + 16*kt*ky + 55*kx**2 - 16*kx*ky + 55*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (); remaining factor degrees ((2, 2),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 16*kt**2/15 - 8*kt*kx/15 - 8*kt*ky/15 + 16*kx**2/15 - 8*kx*ky/15 + 16*ky**2/15; k^T G2 k = 9*kt**2/8 - 3*kt*kx/4 + 3*kt*ky/4 + 9*kx**2/8 - 3*kx*ky/4 + 9*ky**2/8; cones are G1, G2 False; branches include G1, G2 False
+    [W2 onsite] parity-preserving H0 True; det B factors ('(2*kt**2 - 3*kt*kx - 3*kt*ky + 2*kx**2 + 3*kx*ky + 2*ky**2)^1 [hessian rank 3]', '(7*kt**2 - 6*kt*kx + 6*kt*ky + 7*kx**2 + 6*kx*ky + 7*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (('16*kt**2/7 - 24*kt*kx/7 - 24*kt*ky/7 + 16*kx**2/7 + 24*kx*ky/7 + 16*ky**2/7', 1), ('49*kt**2/40 - 21*kt*kx/20 + 21*kt*ky/20 + 49*kx**2/40 + 21*kx*ky/20 + 49*ky**2/40', 1)); remaining factor degrees ((2, 1),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 16*kt**2/7 - 24*kt*kx/7 - 24*kt*ky/7 + 16*kx**2/7 + 24*kx*ky/7 + 16*ky**2/7; k^T G2 k = 49*kt**2/40 - 21*kt*kx/20 + 21*kt*ky/20 + 49*kx**2/40 + 21*kx*ky/20 + 49*ky**2/40; cones are G1, G2 True; branches include G1, G2 True
+    [W2 overlap] parity-preserving H0 True; det B factors ('(79*kt**2 - 48*kt*kx - 48*kt*ky + 79*kx**2 + 48*kx*ky + 79*ky**2)^1 [hessian rank 3]', '(79*kt**2 - 48*kt*kx + 48*kt*ky + 79*kx**2 + 48*kx*ky + 79*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (); remaining factor degrees ((2, 2),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 16*kt**2/7 - 24*kt*kx/7 - 24*kt*ky/7 + 16*kx**2/7 + 24*kx*ky/7 + 16*ky**2/7; k^T G2 k = 49*kt**2/40 - 21*kt*kx/20 + 21*kt*ky/20 + 49*kx**2/40 + 21*kx*ky/20 + 49*ky**2/40; cones are G1, G2 False; branches include G1, G2 False
+    [W3 onsite] parity-preserving H0 True; det B factors ('(5*kt**2 - 6*kt*kx - 6*kt*ky + 5*kx**2 + 6*kx*ky + 5*ky**2)^1 [hessian rank 3]', '(9*kt**2 - 8*kt*kx + 8*kt*ky + 9*kx**2 + 8*kx*ky + 9*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (('25*kt**2/16 - 15*kt*kx/8 - 15*kt*ky/8 + 25*kx**2/16 + 15*kx*ky/8 + 25*ky**2/16', 1), ('144*kt**2/65 - 128*kt*kx/65 + 128*kt*ky/65 + 144*kx**2/65 + 128*kx*ky/65 + 144*ky**2/65', 1)); remaining factor degrees ((2, 1),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 25*kt**2/16 - 15*kt*kx/8 - 15*kt*ky/8 + 25*kx**2/16 + 15*kx*ky/8 + 25*ky**2/16; k^T G2 k = 144*kt**2/65 - 128*kt*kx/65 + 128*kt*ky/65 + 144*kx**2/65 + 128*kx*ky/65 + 144*ky**2/65; cones are G1, G2 True; branches include G1, G2 True
+    [W3 overlap] parity-preserving H0 True; det B factors ('(1091*kt**2 - 635*kt*kx - 635*kt*ky + 1091*kx**2 + 635*kx*ky + 1091*ky**2)^1 [hessian rank 3]', '(1091*kt**2 - 635*kt*kx + 635*kt*ky + 1091*kx**2 + 635*kx*ky + 1091*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (); remaining factor degrees ((2, 2),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 25*kt**2/16 - 15*kt*kx/8 - 15*kt*ky/8 + 25*kx**2/16 + 15*kx*ky/8 + 25*ky**2/16; k^T G2 k = 144*kt**2/65 - 128*kt*kx/65 + 128*kt*ky/65 + 144*kx**2/65 + 128*kx*ky/65 + 144*ky**2/65; cones are G1, G2 False; branches include G1, G2 False
+    [mixed onsite] parity-preserving H0 True; det B factors ('(2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2)^1 [hessian rank 3]', '(5*kt**2 - 2*kt*kx + 2*kt*ky + 5*kx**2 + 2*kx*ky + 5*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (('16*kt**2/15 - 8*kt*kx/15 - 8*kt*ky/15 + 16*kx**2/15 - 8*kx*ky/15 + 16*ky**2/15', 1), ('25*kt**2/24 - 5*kt*kx/12 + 5*kt*ky/12 + 25*kx**2/24 + 5*kx*ky/12 + 25*ky**2/24', 1)); remaining factor degrees ((2, 1),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 16*kt**2/15 - 8*kt*kx/15 - 8*kt*ky/15 + 16*kx**2/15 - 8*kx*ky/15 + 16*ky**2/15; k^T G2 k = 25*kt**2/24 - 5*kt*kx/12 + 5*kt*ky/12 + 25*kx**2/24 + 5*kx*ky/12 + 25*ky**2/24; cones are G1, G2 True; branches include G1, G2 True
+    [mixed overlap] parity-preserving H0 True; det B factors ('(762829*kt**2 - 192944*kt*kx - 192944*kt*ky + 750541*kx**2 - 18352*kx*ky + 750541*ky**2)^1 [hessian rank 3]', '(762829*kt**2 - 192944*kt*kx + 192944*kt*ky + 750541*kx**2 - 18352*kx*ky + 750541*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (); remaining factor degrees ((2, 2),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 16*kt**2/15 - 8*kt*kx/15 - 8*kt*ky/15 + 16*kx**2/15 - 8*kx*ky/15 + 16*ky**2/15; k^T G2 k = 25*kt**2/24 - 5*kt*kx/12 + 5*kt*ky/12 + 25*kx**2/24 + 5*kx*ky/12 + 25*ky**2/24; cones are G1, G2 False; branches include G1, G2 False
+    [near_boundary onsite] parity-preserving H0 True; det B factors ('(50*kt**2 - 49*kt*kx - 49*kt*ky + 50*kx**2 - 49*kx*ky + 50*ky**2)^1 [hessian rank 3]', '(51*kt**2 - 98*kt*kx + 98*kt*ky + 51*kx**2 - 98*kx*ky + 51*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (('2601*kt**2/200 - 2499*kt*kx/100 + 2499*kt*ky/100 + 2601*kx**2/200 - 2499*kx*ky/100 + 2601*ky**2/200', 1), ('10000*kt**2/7599 - 9800*kt*kx/7599 - 9800*kt*ky/7599 + 10000*kx**2/7599 - 9800*kx*ky/7599 + 10000*ky**2/7599', 1)); remaining factor degrees ((2, 1),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 10000*kt**2/7599 - 9800*kt*kx/7599 - 9800*kt*ky/7599 + 10000*kx**2/7599 - 9800*kx*ky/7599 + 10000*ky**2/7599; k^T G2 k = 2601*kt**2/200 - 2499*kt*kx/100 + 2499*kt*ky/100 + 2601*kx**2/200 - 2499*kx*ky/100 + 2601*ky**2/200; cones are G1, G2 True; branches include G1, G2 True
+    [near_boundary overlap] parity-preserving H0 True; det B factors ('(27799*kt**2 - 19600*kt*kx - 19600*kt*ky + 27799*kx**2 - 19600*kx*ky + 27799*ky**2)^1 [hessian rank 3]', '(27799*kt**2 - 19600*kt*kx + 19600*kt*ky + 27799*kx**2 - 19600*kx*ky + 27799*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (); remaining factor degrees ((2, 2),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 10000*kt**2/7599 - 9800*kt*kx/7599 - 9800*kt*ky/7599 + 10000*kx**2/7599 - 9800*kx*ky/7599 + 10000*ky**2/7599; k^T G2 k = 2601*kt**2/200 - 2499*kt*kx/100 + 2499*kt*ky/100 + 2601*kx**2/200 - 2499*kx*ky/100 + 2601*ky**2/200; cones are G1, G2 False; branches include G1, G2 False
+    [boundary onsite] parity-preserving H0 True; det B factors ('(kt - kx + ky)^2 [hessian rank 0]', '(kt**2 - kt*kx - kt*ky + kx**2 - kx*ky + ky**2)^1 [hessian rank 2]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (); remaining factor degrees (); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 4*kt**2/3 - 4*kt*kx/3 - 4*kt*ky/3 + 4*kx**2/3 - 4*kx*ky/3 + 4*ky**2/3; k^T G2 k = None; cones are G1, G2 None; branches include G1, G2 None
+    [boundary overlap] parity-preserving H0 True; det B factors ('(11*kt**2 - 8*kt*kx - 8*kt*ky + 11*kx**2 - 8*kx*ky + 11*ky**2)^1 [hessian rank 3]', '(11*kt**2 - 8*kt*kx + 8*kt*ky + 11*kx**2 - 8*kx*ky + 11*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (); remaining factor degrees ((2, 2),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 4*kt**2/3 - 4*kt*kx/3 - 4*kt*ky/3 + 4*kx**2/3 - 4*kx*ky/3 + 4*ky**2/3; k^T G2 k = None; cones are G1, G2 None; branches include G1, G2 None
+    [honest_face onsite] parity-preserving H0 True; det B factors ('(kt**2 + kx**2 + ky**2)^1 [hessian rank 3]', '(5*kt**2 - 8*kt*kx - 8*kt*ky + 5*kx**2 + 8*kx*ky + 5*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (('5*kt**2 + 5*kx**2 + 5*ky**2', 1), ('25*kt**2/9 - 40*kt*kx/9 - 40*kt*ky/9 + 25*kx**2/9 + 40*kx*ky/9 + 25*ky**2/9', 1), ('25*kt**2/13 - 40*kt*kx/13 - 40*kt*ky/13 + 25*kx**2/13 + 40*kx*ky/13 + 25*ky**2/13', 1), ('9*kt**2/25 + 9*kx**2/25 + 9*ky**2/25', 1)); remaining factor degrees (); scalar False
+      form branches (('25*kt**2/9 + 25*kx**2/9 + 25*ky**2/9', 1), ('9*kt**2/25 + 9*kx**2/25 + 9*ky**2/25', 1)); remaining ((2, 1),); scalar False
+      k^T G1 k = 25*kt**2/9 - 40*kt*kx/9 - 40*kt*ky/9 + 25*kx**2/9 + 40*kx*ky/9 + 25*ky**2/9; k^T G2 k = 9*kt**2/25 + 9*kx**2/25 + 9*ky**2/25; cones are G1, G2 True; branches include G1, G2 True
+    [honest_face overlap] parity-preserving H0 True; det B factors ('(13*kt**2 - 5*kt*kx - 5*kt*ky + 13*kx**2 + 5*kx*ky + 13*ky**2)^1 [hessian rank 3]', '(13*kt**2 - 5*kt*kx + 5*kt*ky + 13*kx**2 + 5*kx*ky + 13*ky**2)^1 [hessian rank 3]')
+      pencil branches (quadratic-form eigenvalues, multiplicity) (); remaining factor degrees ((2, 2),); scalar False
+      form branches (); remaining ((4, 1),); scalar False
+      k^T G1 k = 25*kt**2/9 - 40*kt*kx/9 - 40*kt*ky/9 + 25*kx**2/9 + 40*kx*ky/9 + 25*ky**2/9; k^T G2 k = 9*kt**2/25 + 9*kx**2/25 + 9*ky**2/25; cones are G1, G2 False; branches include G1, G2 False
+    W1 graded exact 0-form H-pencil symbol: -(2*zt**4*zx**2*zy**2 + zt**4*zx**2 + zt**4*zy**2 + 2*zt**2*zx**4*zy**2 + zt**2*zx**4 + 2*zt**2*zx**2*zy**4 - 18*zt**2*zx**2*zy**2 + 2*zt**2*zx**2 + zt**2*zy**4 + 2*zt**2*zy**2 + zx**4*zy**2 + zx**2*zy**4 + 2*zx**2*zy**2)/(15*zt**2*zx**2*zy**2)
+    W1 cones onsite True, overlap True; onsite cones = G1, G2 everywhere True; branches everywhere True; overlap cones never G1, G2 at the listed witnesses True; scalar at a listed curved 3D witness False; explicit curved overlap scalar counterexample True; transverse pair splits at ('honest_face',)
+    G1 ~ G2 on the chart: Groebner bases (('t*(u**2 + 1)', 'u*(u**2 + 1)'), ('t*(u**2 + 1)', 'u*(u**2 + 1)'), ('t*(u**2 + 1)', 'u*(u**2 + 1)'), ('t*(u**2 + 1)', 'u*(u**2 + 1)')) (all equal True), real solutions ((0, 0),) over 4 classes
+    THE SIXTY-FOUR-CELL CENSUS (64 cells): (('(g0*g1 + g0 + g1,)', 4, ((-1, -1),)), ('(g0*g1 + g0 - g1,)', 4, ((1, -1),)), ('(g0*g1 - g0 + g1,)', 4, ((-1, 1),)), ('(g0*g1 - g0 - g1,)', 4, ((1, 1),)), ('(g0, g1)', 48, ((-1, -1), (-1, 1), (1, -1), (1, 1))))
+      rule-A cells (S1 = -E S0 E) 8, rule-B cells (S1 = +E S0 E) 8, rules cover the curve cells True, closed form of M1 E M2 E verified True, curves solved True
+    THE LOCUS WITNESSES ('L+-', 'L-+'): PD True, G2 = mu G1 True with mu (32/27, 27/32), graded det B is proportional to (k^T G1 k)^2 True with prefactors (8/9, 3/4), branch constants ((1, 32/27, 4/3, 4/3), (27/32, 1, 9/8, 9/8)), transverse split True, overlap factor counts (2, 2), overlap never G1 True
+    THE LOCUS SYMBOLICALLY: one quadric squared True, branches k-free True, tied constants (('1', '-(2*g1 + 1)/((g1 - 1)*(g1 + 1)**3)', '-1/((g1 - 1)*(g1 + 1))', '-1/((g1 - 1)*(g1 + 1))'), ('1', '(2*g1 - 1)/((g1 - 1)**3*(g1 + 1))', '-1/((g1 - 1)*(g1 + 1))', '-1/((g1 - 1)*(g1 + 1))')) match True, mu - 1 = ('-g1**3*(g1 + 2)/((g1 - 1)*(g1 + 1)**3)', '-g1**3*(g1 - 2)/((g1 - 1)**3*(g1 + 1))') matches True
+  SHEAR REGISTRATION
+    onsite: shear moves the cone True, volumes do not True, branch scales ('v1/v0', 'v0/v1')
+    overlap: Bloch H at zero shear = h0 I True, zero-shear pencil = R5 True, zero-shear form = h0^2 times R5, shear moves the cone True, sign class moves the cone True
+    KERNEL-SIDE SHEAR REGISTRATION: YES in both assemblies (the cone moves with g0, g1 exactly); DIAGONAL-METRIC REGISTRATION: branch scales only (graded) or through h0 and the h_f sums (overlap), and invisible to the overlap pencil symbol at zero shear.  MATTER SIDE (PR #7970, conditional): responds to the diagonal metric and to NO shear.  NAMED TENSION -- recorded, not resolved here.
+  READINGS, AND EACH IS A READING
+    R1: that the characteristic cone is a light cone or a causal structure.  Measured: the zero set of det B(kappa), a homogeneous polynomial in three formal variables attached to a finite antisymmetric matrix.  No time, no signal, no causality.  Reading.
+    R2: that the H-pencil reading is the physical propagator.  Measured: one of two declared squared-symbol readings of the same antisymmetric form; neither reading is selected by any premise.  Reading.
+    R3: that the assembly is decided.  Measured: the fixed Block 105 source defines BOTH onsite and overlap, the recovered completion uses overlap, and no premise here chooses; the two give different cones and both are reported.  Reading.
+    R4: that kernel-side shear registration is a gravitational shear response.  Measured: exact nonzero derivatives of a polynomial with respect to two rational parameters of one cell form.  The matter-side result it stands in tension with is itself conditional (PR #7970).  Reading.
+    R5: that the recovered Block 201 completion is physically selected.  Measured: its fork Hodge is reproduced exactly and its overlap assembly is one of the two supplied assemblies run here.  Reading.
+    R6: that any of it generalises past this instance.  Measured: two periodic benches, one cell family, ten witnesses, two assemblies, two readings, one rule.  Reading.
+    R7: that the coincidence locus is selected, preferred or physical.  Measured: a codimension-one algebraic locus in eight of sixty-four sign cells on which two DECLARED readings of one cell form agree; no premise here prefers it, the overlap assembly does not see it, and the symbol is not scalar on it.  Reading.
+  nsimplify calls in this source: 0; float literals: 0; float call sites: 0
+  NOT CLAIMED: NO GRAVITY. NO DYNAMICS. NO SPACETIME CONE. NO PROPAGATOR. NO ASSEMBLY DECIDED. NO HODGE READING SELECTED. NO CONTINUUM. THE READINGS ARE READINGS.
+
+[PASS] A-1: the correction source base is 1157173587fde42555d36659954e71c544e23312; all non-self runtime and citation inputs match fixed SHA-256 literals; the runner cap is 180s
+[PASS] A-2: the bounded recovery helper and current Block 105 import; the complete declared source/citation closure is readable; 5 of 5 audit inputs other than the self note are readable
+[PASS] B-1: 6 imposed objects, 0 registered, 0 adopted
+[PASS] B-2: NO GRAVITY IS SUPPLIED: gravity_supplied = False and 9 gravity structures are enumerated as NOT SUPPLIED
+[PASS] B-3: THE WORD *SYMBOL* IS SCOPED BEFORE THE FIRST NUMERAL: it names the exact 2^d x 2^d Bloch matrix of a finite antisymmetric kernel on a periodic bench and its eigenvalue branches; symbol_is_dynamics = False, propagator = False
+[PASS] B-4: THE WORD *CONE* IS SCOPED: it names the zero set of det B(kappa), a homogeneous polynomial in three formal variables, and NO light cone, NO causal structure and NO spacetime; cone_is_spacetime_cone = False, and 4 headline words ('SYMBOL', 'CONE', 'METRIC', 'DISPERSION') are scoped before any number, the words ('SPACETIME', 'LIGHT CONE', 'PROPAGATOR', 'EINSTEIN') naming NOTHING established here
+[PASS] B-5: THE ASSEMBLY IS NOT SELECTED BY THIS BLOCK: the fixed Block 105 source defines BOTH the onsite and the overlap assembly and the recovered completion uses the overlap one; both are run and both are reported; assembly_selected = False
+[PASS] B-6: NO GENERIC-PARAMETER THEOREM AND NO CONTINUUM LIMIT, AND THE READINGS ARE READINGS: 7 of them are enumerated, readings_licensed = False, and EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY -- the cycle-913 caution, carried verbatim, with nothing registered and nothing adopted
+[PASS] C-1: THE 2D LANE KERNEL IS BLOCK 201's: on (4,4) the eta-staggered rules give Block 201's lane_kernel exactly (True) with 64 nonzero entries, it is site-sign-equivalent to Block 201's spin-diagonalised covariant kernel (True) which has 0 non-scalar blocks, the graded raising part equals Block 201's raising_part on its (8,4) fork extent (True), and K = d - d^T with d^2 = 0 (True, True)
+[PASS] C-2: THE 3D LANE KERNEL IS BLOCK 209's SHADOW, LINK BY LINK: on (4,2,2) all 48 directed links scalarise under Omega = G1^t G2^x G3^y with 0 bad links and every scalar equal to the rule's eta_d / 2 (True); the bench kernel has 32 nonzero entries because the extent-2 directions carry NO antisymmetric link (True) -- R5's (4,2,2) structure -- and K = d - d^T, d^2 = 0 (True, True)
+[PASS] C-3: THE ASSEMBLERS REPRODUCE THE FIXED SOURCE HODGES DIGIT FOR DIGIT: Block 201's fork_hodge on (8,4) at c = 5/13 (True), Block 105's onsite_hodge (True) and overlap_hodge (True), and the rule-based onsite and overlap assemblies equal the bench assemblies of a uniform cell (True)
+[PASS] C-4: THE CELL FORMS ARE BLOCK 211's, RECONCILED: all 10 witnesses solve at ranks (32, 32) with free names D07, D16, D25, D34, the degree blocks equal Block 211's formulas [v0], v1 M1, M2/v0, [1/v1] with zero cross-degree entries, the origin tx face equals Block 105's shear_hodge(s_tx0 g0, v0), and PD holds exactly at ('flat', 'W1', 'W2', 'W3', 'mixed', 'near_boundary', 'honest_face', 'L+-', 'L-+') -- the two QQ(sqrt 6) locus witnesses included -- and fails at the boundary
+[PASS] C-5: THE FLAT CELL IS THE CONTROL'S CELL: at (c, v) = (0, 1) and at Block 211's flat point both assemblies give H = I on both benches (True) and K_H = K exactly (True)
+[PASS] D-1: R5's FLAT SYMBOL IS AN EXACT POLYNOMIAL IDENTITY: -K_B(z)^2 = (sum_d sin^2 k_d = sum_d -(z_d - 1/z_d)^2 / 4) times the identity in two (True) and three (True) directions
+[PASS] D-2: AND THE BENCH MULTISETS ARE R5's, WITH MULTIPLICITIES: on (4,4) ((0, 4), (1, 8), (2, 4)) and on (4,2,2) ((0, 8), (1, 8)), equal to {sum_d sin^2(2 pi m_d / N_d)} computed exactly, from the direct bench charpoly and from the Bloch union alike (True)
+[PASS] E-1: BLOCH UNION = DIRECT BENCH, EVERY TIME: 63 (witness, bench, assembly, reading) charpolys of degree 16 agree exactly between the product of 2^d x 2^d Bloch charpolys at exact roots of unity and the direct 16 x 16 bench matrix (True); translation covariance of -K_H^2 at W1, as nnz([-K_H^2, T_mu]) per direction: (((4, 4), 'onsite', (128, 128)), ((4, 4), 'overlap', (64, 0)), ((4, 2, 2), 'onsite', (128, 128, 128)), ((4, 2, 2), 'overlap', (0, 0, 0)))
+[PASS] E-2: W1's OWN (4,4) SPECTRUM, DECLARED: the overlap H-pencil reading has the exact multiset ((0, 4), (1, 8), (1922/1081, 4)) against R5's ((0, 4), (1, 8), (2, 4)) -- only the (pi/2, pi/2)-type momenta move; every other witness spectrum is printed as its factored charpoly above
+[PASS] E-3: THE PD BOUNDARY IS A THREE-DIRECTION EDGE CASE, MEASURED: at gamma0 = gamma1 = 1/2 all-plus the onsite H is SINGULAR on (4,2,2) (True; the triangle determinant (1 + g)^2 (1 - 2g) vanishes) so the H-pencil reading is undefined there while the form reading stays defined, and REGULAR on (4,4) (False singular; the origin tx face is Block 105's shear_hodge at c = 1/2 with 2 x 2 block determinant v0^2/(1 - c^2), the two-direction PD condition being |c| < 1); the overlap H stays regular on both (True)
+[PASS] F-1: THE ONSITE CONE LEMMA, AT FULLY SYMBOLIC D: det B = +D3 * (k^T D1 k) * (k^T E adj(D2) E k) (True) and in two directions det B = -D2 * (k^T D1 k) (True); D0 is absent from det B (True); B = [[k^T D1, 0], [D2 W, D3 E k]] with W k = 0 and (E k)^T W = 0 so the pencil principal block is block-diagonal by form degree (True) with the 0-form branch k^T D1 k / D0 (True) and the eigenvector adj(D2) E k at eigenvalue D3 k^T E D2^-1 E k (True), all as fraction-free polynomial identities in the seventeen symbols; and on the symbolic Block 211 family the transverse product is det(D2)/det(D1) (k^T D1 k)(k^T E D2^-1 E k) (True); and the expansion K_H,B(z) = i eps M + O(eps^2), M = H0 D + D^T H0 symmetric, is MEASURED from the composed rules at the symbolic cell under both assemblies (True)
+[PASS] F-2: THE OVERLAP CONE, AT SYMBOLIC h: the folded overlap H0 is h0 I + 2 h_f on the two-flip pairs, h0 = (v0 + 3 v1 + 3/v0 + 1/v1)/8, h_f = -(s_f0 v1 g0 + s_f1 g1 / v0)/8 (True); det B = +Q+ Q- exactly, sign pinned, with Q+ = h0**2*kt**2 + h0**2*kx**2 + h0**2*ky**2 + 4*h0*htx*kt*kx + 4*h0*hty*kt*ky + 4*h0*hxy*kx*ky - 4*htx**2*ky**2 - 8*htx*hty*kx*ky - 8*htx*hxy*kt*ky - 4*hty**2*kx**2 - 8*hty*hxy*kt*kx - 4*hxy**2*kt**2 and Q- = h0**2*kt**2 + h0**2*kx**2 + h0**2*ky**2 + 4*h0*htx*kt*kx - 4*h0*hty*kt*ky + 4*h0*hxy*kx*ky - 4*htx**2*ky**2 - 8*htx*hty*kx*ky + 8*htx*hxy*kt*ky - 4*hty**2*kx**2 - 8*hty*hxy*kt*kx - 4*hxy**2*kt**2 (True), and in two directions det B = -h0 (h0*(kt**2 + kx**2) + 4*htx*kt*kx) (True)
+[PASS] F-3: TWO DIRECTIONS AT SYMBOLIC (c, v), BLOCK 105's OWN CELL FORM: the graded H-pencil principal symbol has EXACTLY the branches ('(kt**2 - 2*c*kt*kx + kx**2)/(1 - c**2)', '(kt**2 - 2*c*kt*kx + kx**2)/v**2') (True) -- the Hodge reading's cone k^T (D1/D0) k and det(g)/v^2 times it -- so the cone IS the cell metric's cone there; the overlap H-pencil principal symbol is the scalar (c**2*(v**2 + 1) - 3*v**2 - 1)*((c**2*(v**2 + 1) - 3*v**2 - 1)*(kt**2 + kx**2) + 4*c*v**2*kt*kx)/((c**2 - 1)*(c**2*(v**2 + 1)**2 - (3*v**2 + 1)**2)) times the identity (True, True) with cone h0(kt^2+kx^2)+4 htx kt kx
+[PASS] F-4: AND THE OVERLAP CONE DIFFERS FROM THE DECLARED HODGE READING AT POSITIVE NONZERO SHEAR: its effective shear is 2*c*v**2/(3*v**2 + 1 - c**2*(v**2 + 1)) (True), the same sign as the Hodge reading's c but never its magnitude, with the exact discrepancy c_K - c = -c*(1 - c**2)*(v**2 + 1)/(3*v**2 + 1 - c**2*(v**2 + 1)) (True), nonzero in the stated positive-definite c != 0 range
+[PASS] F-5: THREE DIRECTIONS AT EACH LISTED CURVED WITNESS: under the graded assembly det B factors EXACTLY into the two Hodge readings' cones k^T G1 k and k^T G2 k (True) and both are exact H-pencil branches (True); at W1 the cones are ('2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2', '3*kt**2 - 2*kt*kx + 2*kt*ky + 3*kx**2 - 2*kx*ky + 3*ky**2') (True) and under the overlap assembly ('55*kt**2 - 16*kt*kx - 16*kt*ky + 55*kx**2 - 16*kx*ky + 55*ky**2', '55*kt**2 - 16*kt*kx + 16*kt*ky + 55*kx**2 - 16*kx*ky + 55*ky**2') (True); the overlap cones are proportional to NEITHER reading at any curved rational witness (True)
+[PASS] F-6: SCALARITY IS RESOLVED ONLY ON THE DECLARED MATRICES: none of the listed curved three-direction witness matrices is scalar (principal_scalar_at_listed_curved_3d = False), while the exact opposite-offset-sign point g0=3/8, g1=1/3, v0=sqrt(110)/12, v1=16 sqrt(110)/165 is positive definite and has overlap pencil (kt^2+kx^2+ky^2) I (True); the transverse 2-form pair splits into two quadratic-form branches at exactly the curved rational witnesses ('honest_face',) -- honest_face, offset-1 shear zero, D2 isotropic -- and is an irreducible quadratic at the other five (measured ('honest_face',)); ON the coincidence locus the cone is one quadric but the symbol is STILL not scalar, because mu - 1 = pi0 g1^3 (2 + pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3) is a nonzero rational function of g1 (True; measured ('-g1**3*(g1 + 2)/((g1 - 1)*(g1 + 1)**3)', '-g1**3*(g1 - 2)/((g1 - 1)**3*(g1 + 1))')), locus_symbol_scalar = False; in two directions the graded symbol is scalar exactly on v**2 = 1 - c**2 (True) and not as a generic symbolic identity (False); the two symbolic form matrices are likewise not scalar identities (False, False); special parameter values are not excluded
+[PASS] F-7: THE COINCIDENCE THEOREM: on the four class representatives' (t, u) chart the proportionality ideal of (G1, G2) has the lex Groebner basis ('t*(u**2 + 1)', 'u*(u**2 + 1)') in every class (True) with real zeros EXACTLY ((0, 0),) -- the flat point -- taken fail-closed over 4 classes; BUT the weighted kernel is not corner-sign-gauge invariant, and the census over all 64 sign cells at symbolic moduli is (('(g0, g1)', 48, ((-1, -1), (-1, 1), (1, -1), (1, 1))), ('(g0*g1 + g0 - g1,)', 4, ((1, -1),)), ('(g0*g1 - g0 + g1,)', 4, ((-1, 1),)), ('(g0*g1 - g0 - g1,)', 4, ((1, 1),)), ('(g0*g1 + g0 + g1,)', 4, ((-1, -1),))): 48 cells coincide only at flat and 16 carry a curve, exactly the 8 rule-A cells [S1 = -E S0 E (so pi1 = -pi0): g0 (1 + pi0 g1) = g1, i.e. g0 = g1/(1 + pi0 g1), positive on the magnitude domain] and the 8 rule-B cells [S1 = +E S0 E (so pi1 = pi0): g0 + g1 = pi0 g0 g1, i.e. g0 = -g1/(1 - pi0 g1) < 0 on the family's magnitude domain |g1| < 1: no positive point there] (True), with the closed form of M1 E M2 E verified in each (True) and both curves solved exactly (True); 8 cells carry a positive-definite-solvable coincidence curve; coincidence_only_at_flat_everywhere = False, cone_is_one_metric_cone_everywhere = False
+[PASS] F-8: THE LOCUS, WITNESSED AND THEN PROVED ALONG THE CURVE: the two QQ(sqrt 6) witnesses ('L+-', 'L-+') are on the family and positive definite (True); G2 = mu G1 EXACTLY with mu = (32/27, 27/32) (True); the graded det B is proportional to (k^T G1 k)^2 with respective prefactors (8/9, 3/4) ((8/9, 3/4)) and one quadratic zero set (True) -- with all four H-pencil branches constant multiples ((1, 32/27, 4/3, 4/3), (1, 27/32, 9/8, 9/8)) of k^T G1 k and the transverse pair SPLIT (True), while the overlap cone stays a non-Hodge pair with factor counts (2, 2) (True); symbolically along g0 = g1/(1 + pi0 g1) with free volumes det B is one quadric squared (True), every branch is k-free times k^T G1 k (True), and with the ties the constants are ('1', '(1 + 2 pi0 g1)/((1 - pi0 g1)(1 + pi0 g1)^3)', '1/(1 - g1^2)', '1/(1 - g1^2)') (True); cone_is_one_metric_cone_on_locus = True
+[PASS] G-1: THE SHEAR ENTERS THE CONE, EXACTLY: under the graded assembly d(k^T G1 k)/dg0 and d(k^T G2 k)/dg1 are nonzero and det B is not proportional to its zero-shear value (True); under the overlap assembly likewise (True) and the sign class moves the cone at fixed magnitudes (True)
+[PASS] G-2: THE DIAGONAL METRIC DOES NOT: under the graded assembly det B is proportional to its unit-volume value (True) and the volumes enter only the branch scales ('v1/v0', 'v0/v1'); under the overlap assembly the Bloch H at zero shear is h0 times the identity (True), the zero-shear H-pencil symbol is R5's for EVERY volume pair (True) and the zero-shear form symbol is h0^2 times R5; volume_enters_onsite_cone = False
+[PASS] G-3: THE #7970 TENSION IS RECORDED AND NOT RESOLVED: KERNEL-SIDE SHEAR REGISTRATION: YES in both assemblies (the cone moves with g0, g1 exactly); DIAGONAL-METRIC REGISTRATION: branch scales only (graded) or through h0 and the h_f sums (overlap), and invisible to the overlap pencil symbol at zero shear.  MATTER SIDE (PR #7970, conditional): responds to the diagonal metric and to NO shear.  NAMED TENSION -- recorded, not resolved here. (tension_recorded = True)
+[PASS] H-1: FENCE ONE -- 'scout-grade finite exact linear algebra on one cell form, not a spacetime and not a dynamics', BLOCK 211's FENCE INHERITED VERBATIM: scout_grade_only = True, physical_content = False
+[PASS] H-2: FENCE TWO -- THE ASSEMBLY IS A SUPPLIED FORK, NOT A RESULT: Block 105's onsite and overlap assemblies give DIFFERENT cones and this block decides between them nowhere; assembly_decided = False
+[PASS] H-3: FENCE THREE -- NO HODGE READING IS SELECTED: G1 = D1/D0 and G2 = D3 E D2^-1 E are both realised as exact branches and neither is named 'the' metric; hodge_reading_selected = False
+[PASS] H-4: FENCE FOUR -- THE INSTANCE SCOPE, ENUMERATED: 6 restrictions (("two periodic benches, (4,4) with Block 105's 2D face form and (4,2,2) with Block 211's 3D cell form, and no other extent", "one cell family, Block 211's per-offset-isotropic variety at the degree-diagonal representative, eight rational witnesses and two QQ(sqrt 6) locus witnesses, with the sixty-four-cell census taken on the degree-block formulas at symbolic moduli", "two assemblies, Block 105's onsite and overlap, and two squared-symbol readings, the Euclidean form and the H-pencil", "one rule, Block 201's A = sx, B = -sz shadow and its Block 209 three-direction shadow, at the periodic closure and m = 0", 'the principal part at k = 0 of the eight-fold degenerate zero; no continuum limit, no lattice-spacing statement', "the two Hodge readings G1 and G2 as declared candidates; which, if either, is 'the' metric is not decided here"))
+[PASS] I-1: the note is present at ADMISSIBILITY_DIRAC_KAHLER_WEIGHTED_KERNEL_DISPERSION_BOUNDED_THEOREM_NOTE_2026-09-05.md and the N5 fence appears in it VERBATIM as a single line
+[PASS] I-2: sp.nsimplify appears 0 times in this runner's own source -- MEASURED, not promised -- so no rational tolerance can turn the nonzero discrepancy polynomial into a zero and manufacture the identity this block refutes
+[PASS] I-3: and 0 float literals appear in that same source with EXACTLY 0 float call sites, both MEASURED by an AST walk -- Block 211's strict form
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
+N5: NOTHING HERE IS REGISTERED OR ADOPTED. SYMBOL means an exact finite Bloch matrix; CONE means the zero set of a homogeneous determinant; METRIC means one of two declared degree-block readings; DISPERSION means exact matrix branches. The live runtime inputs are the bounded recovered 201/209/211 construction helper, the current Block 105 assembly helper, the paired note, axioms, and registry; historical parent bodies and caches are preserved only as recovery evidence. At the degree-diagonal representative, the graded onsite determinant factorizes into the two reading quadrics. On the coincidence curve it is proportional to (k^T G1 k)^2, with factors 8/9 at L+- and 3/4 at L-+. None of the listed curved witness matrices is scalar, but this finite fact is not universal: the positive-definite opposite-sign point g0=3/8, g1=1/3, v0=sqrt(110)/12, v1=16sqrt(110)/165 has overlap pencil (kt^2+kx^2+ky^2) I. In two dimensions the overlap pencil is generically scalar, while the graded pencil is scalar on v^2=1-c^2; the form matrices are not scalar as symbolic identities but may be scalar at special values such as zero shear. No assembly, metric reading, action, propagator, continuum, spacetime cone, dynamics, or gravity is selected or supplied. Every negative is confined to the displayed formal family, exact identities, and named finite witnesses.
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

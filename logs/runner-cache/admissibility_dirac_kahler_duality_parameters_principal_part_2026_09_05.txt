@@ -1,0 +1,147 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_duality_parameters_principal_part_2026_09_05.py
+runner_sha256: f0d70c67c5a13a53995698752276a10183dc77e46e7446617e10817603a74b91
+input_fingerprint_sha256: 6a450e183f05b54f4b4136ab5e1edb621146cc88fda29079f10366e6d94710da
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 178.45
+status: ok
+----- stdout -----
+[phase] authority: 0 ms
+[phase] construction: 688 ms
+[phase] control: 410 ms
+[phase] bench: 139 ms
+[phase] mechanism: 87 ms
+[cone] W1 onsite
+[cone] W1 slices
+[cone] W1 overlap
+[cone] L+- onsite
+[cone] L-+ onsite
+[phase] cone: 16092 ms
+[phase] branches: 21768 ms
+[phase] registration: 138732 ms
+== BLOCK 214: the duality parameters and the principal part -- measured facts ==
+authority: AuthorityCertificate(source_base='1157173587fde42555d36659954e71c544e23312', fixed_source_inputs=True, machinery_import_available=True, inputs_readable=7, inputs_missing=(), input_hashes=(('docs/ADMISSIBILITY_DIRAC_KAHLER_DUALITY_PARAMETERS_PRINCIPAL_PART_BOUNDED_THEOREM_NOTE_2026-09-05.md', 'fe5e7a659bf56af3d0a002ec56ecfc9ab52a1fc8a20a87174f33db8ce9fac745'), ('docs/ADMISSIBILITY_DIRAC_KAHLER_WEIGHTED_KERNEL_DISPERSION_BOUNDED_THEOREM_NOTE_2026-09-05.md', '6eb45758067a92f7bc44f2ffbc5fec9999c2930e2b2c924dfa6dfa67ca5db5ae'), ('scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py', 'd80ce0e3168968fcc1a887e6737681e4cdfc31c82813813415f008a68507088d'), ('scripts/admissibility_dirac_kahler_weighted_kernel_released7981_7988_fixtures_2026_09_10.py', '082c88ae8d05df21874e90cef3a8a0784116a1eb6957d119709ef6838486a9ef'), ('docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md', '9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33'), ('scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py', '5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445'), ('docs/MINIMAL_AXIOMS_2026-06-29.md', '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753'), ('docs/audit/data/axiom_premise_nodes.json', '615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37')))
+construction: free=('D07', 'D16', 'D25', 'D34') carriers=((0, 7), (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1), (7, 0)) reconciled=True onsite_h0_is_cell=True overlap_h0_structure=True
+onsite H_eo (rows even 0,3,5,6; cols odd 1,2,4,7): (('0', '0', '0', 'D07'), ('0', '0', 'D34', '0'), ('0', 'D25', '0', '0'), ('D16', '0', '0', '0'))
+control flat_D07_form_agree: True
+control flat_D07_form_multiset: None
+control flat_D07_h_is_identity: False
+control flat_D07_pencil_agree: True
+control flat_D07_pencil_multiset: ((0, 8), (1, 6), (16/15, 2))
+control flat_D16_form_agree: True
+control flat_D16_form_multiset: None
+control flat_D16_h_is_identity: False
+control flat_D16_pencil_agree: True
+control flat_D16_pencil_multiset: ((0, 8), (1, 6), (16/15, 2))
+control flat_d07_absent: True
+control flat_det_shape: ((4, 2),)
+control flat_plane_restores_norm4: True
+control flat_quartic: D16**2*kt**2*ky**2 + D16**2*kx**2*ky**2 + 2*D16*D25*kx**2*ky**2 - 2*D16*D34*kt**2*ky**2 + D25**2*kt**2*kx**2 + D25**2*kx**2*ky**2 + 2*D25*D34*kt**2*kx**2 + D34**2*kt**2*kx**2 + D34**2*kt**2*ky**2 - kt**4 - 2*kt**2*kx**2 - 2*kt**2*ky**2 - kx**4 - 2*kx**2*ky**2 - ky**4
+control flat_quartic_minus_norm4: D16**2*kt**2*ky**2 + D16**2*kx**2*ky**2 + 2*D16*D25*kx**2*ky**2 - 2*D16*D34*kt**2*ky**2 + D25**2*kt**2*kx**2 + D25**2*kx**2*ky**2 + 2*D25*D34*kt**2*kx**2 + D34**2*kt**2*kx**2 + D34**2*kt**2*ky**2
+control flat_quartic_zero_is_norm4: True
+control flat_zero_form_agree: True
+control flat_zero_form_multiset: ((0, 8), (1, 8))
+control flat_zero_h_is_identity: True
+control flat_zero_is_identity: True
+control flat_zero_pencil_agree: True
+control flat_zero_pencil_multiset: ((0, 8), (1, 8))
+bench ('D07', 'onsite', 'form'): (True, None)
+bench ('D07', 'onsite', 'pencil'): (True, ((0, 8), (16/15, 2), (9/8, 2), (8/7, 2), (32/25, 2)))
+bench ('D07', 'overlap', 'form'): (True, ((0, 8), (116281/147456, 4), (4844401/3686400, 4)))
+bench ('D07', 'overlap', 'pencil'): (True, ((0, 8), (1, 8)))
+bench ('D16', 'onsite', 'form'): (True, None)
+bench ('D16', 'onsite', 'pencil'): (True, None)
+bench ('D16', 'overlap', 'form'): (True, ((0, 8), (116281/147456, 4), (4844401/3686400, 4)))
+bench ('D16', 'overlap', 'pencil'): (True, ((0, 8), (1, 8)))
+mechanism ('onsite', 'M_ee'): (('0', 'kt*(D07 + D34)', '-kx*(D07 - D25)', 'ky*(D07 + D16)'), ('kt*(D07 + D34)', '0', '0', '0'), ('-kx*(D07 - D25)', '0', '0', '0'), ('ky*(D07 + D16)', '0', '0', '0'))
+mechanism ('onsite', 'M_oo'): (('0', 'kt*(D16 + D25)', '-kx*(D16 - D34)', '0'), ('kt*(D16 + D25)', '0', '-ky*(D25 + D34)', '0'), ('-kx*(D16 - D34)', '-ky*(D25 + D34)', '0', '0'), ('0', '0', '0', '0'))
+mechanism ('onsite', 'M_eo_parameter_free'): True
+mechanism ('onsite', 'diagonal_blocks_vanish_at_zero'): True
+mechanism ('overlap', 'M_ee'): (('0', 'kt*(D07 + D16 + D25 + D34)/2', '0', 'ky*(D07 + D16 + D25 + D34)/2'), ('kt*(D07 + D16 + D25 + D34)/2', '0', '0', '0'), ('0', '0', '0', '0'), ('ky*(D07 + D16 + D25 + D34)/2', '0', '0', '0'))
+mechanism ('overlap', 'M_oo'): (('0', 'kt*(D07 + D16 + D25 + D34)/2', '0', '0'), ('kt*(D07 + D16 + D25 + D34)/2', '0', '-ky*(D07 + D16 + D25 + D34)/2', '0'), ('0', '-ky*(D07 + D16 + D25 + D34)/2', '0', '0'), ('0', '0', '0', '0'))
+mechanism ('overlap', 'M_eo_parameter_free'): True
+mechanism ('overlap', 'diagonal_blocks_vanish_at_zero'): True
+mechanism onsite_M_oo_entries: ('kt*(D16 + D25)', '-kx*(D16 - D34)', '-ky*(D25 + D34)')
+mechanism onsite_M_oo_zero_on_plane: True
+mechanism onsite_M_oo_row7_zero: True
+mechanism onsite_M_ee_vector: ('kt*(D07 + D34)', '-kx*(D07 - D25)', 'ky*(D07 + D16)')
+mechanism onsite_M_ee_2form_block_zero: True
+mechanism d07_congruence_M: True
+mechanism d07_congruence_H0_shift: -D07**2*v1
+mechanism d07_congruence_H0_rest_zero: True
+mechanism d07_shift_is_minus_a2_over_D3: True
+mechanism d07_mixed_counterexample_pd: True
+mechanism d07_mixed_counterexample_candidate: 224/15
+mechanism d07_mixed_counterexample_residual: 528724036/455625
+mechanism d07_mixed_counterexample_charpoly: True
+mechanism block_det_sign_n1: True
+mechanism block_det_sign_n4: True
+mechanism overlap_sum_only: True
+cone ('W1', 'onsite'): union_basis_raw=(D16**2 - 2*D16*D34 + D34**2, D16*D25 + D16*D34 - D25*D34 - D34**2, D25**2 + 2*D25*D34 + D34**2) union_radical_target=(D16 - D34, D25 + D34) union_radical_power_witnesses=((D16 - D34, 2), (D25 + D34, 2)) union_radical_certificate=True shape=((4, 2),) is_square_of_quartic=True quartic_parameter_degree=2 quartic_even_in_parameters=True single_quadric_locus=(1,) two_quadric_slices=(('D16', (s**2,)), ('D25', (s**2,)), ('D34', (s**2,)), ('diag', (s**2,))) union_iff_plane=True d07_absent=True
+cone ('W1', 'overlap'): union_basis_raw=(D07**2,) union_radical_target=(D07,) union_radical_power_witnesses=((D07, 2),) union_radical_certificate=True shape=((4, 2),) is_square_of_quartic=True quartic_parameter_degree=2 quartic_even_in_parameters=True single_quadric_locus=(1,) union_iff_plane=True d07_absent=False
+cone ('L+-', 'onsite'): union_basis_raw=(D16**2 - 2*D16*D34 + D34**2, D16*D25 + D16*D34 - D25*D34 - D34**2, D25**2 + 2*D25*D34 + D34**2, r**2 - 6) union_radical_target=(D16 - D34, D25 + D34) union_radical_power_witnesses=((D16 - D34, 2), (D25 + D34, 2)) union_radical_certificate=True plane_is_single_quadric=True single_quadric_locus=(1,) shape=('NOT-FACTORED-OVER-QQ(sqrt6)',) is_square_of_quartic=None union_iff_plane=True d07_absent=True
+cone ('L-+', 'onsite'): union_basis_raw=(D16**2 - 2*D16*D34 + D34**2, D16*D25 + D16*D34 - D25*D34 - D34**2, D25**2 + 2*D25*D34 + D34**2, r**2 - 6) union_radical_target=(D16 - D34, D25 + D34) union_radical_power_witnesses=((D16 - D34, 2), (D25 + D34, 2)) union_radical_certificate=True plane_is_single_quadric=True single_quadric_locus=(1,) shape=('NOT-FACTORED-OVER-QQ(sqrt6)',) is_square_of_quartic=None union_iff_plane=True d07_absent=True
+branches ('W1 D16', 'pencil'): ((), ((4, 2),))
+branches ('W1 D16', 'form'): ((), ((8, 1),))
+branches ('W1 D07', 'pencil'): ((('4*(2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2)/7', 2), ('3*(3*kt**2 - 2*kt*kx + 2*kt*ky + 3*kx**2 - 2*kx*ky + 3*ky**2)/8', 2)), ((2, 2),))
+branches ('W1 D07', 'form'): ((), ((8, 1),))
+branches ('W1 plane', 'pencil'): ((('8*(2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2)/15', 2),), ((3, 2),))
+branches ('W1 plane', 'form'): ((), ((8, 1),))
+branches ('W1 zero', 'pencil'): ((('3*(3*kt**2 - 2*kt*kx + 2*kt*ky + 3*kx**2 - 2*kx*ky + 3*ky**2)/8', 2), ('8*(2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2)/15', 2)), ((2, 2),))
+branches ('W1 zero', 'form'): ((), ((4, 2),))
+branches ('L+- D07', 'pencil'): ((('4*(3*kt**2 - 2*kt*kx - 2*kt*ky + 3*kx**2 - 2*kx*ky + 3*ky**2)/9', 2), ('48*(3*kt**2 - 2*kt*kx - 2*kt*ky + 3*kx**2 - 2*kx*ky + 3*ky**2)/119', 2), ('(3*kt**2 - 2*kt*kx - 2*kt*ky + 3*kx**2 - 2*kx*ky + 3*ky**2)/2', 4)), ())
+branches ('L+- D16', 'pencil'): ((), ((4, 2),))
+branches d07_rescaled_zero_form: 4*(2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2)/7
+branches zero_form_branch: 8*(2*kt**2 - kt*kx - kt*ky + 2*kx**2 - kx*ky + 2*ky**2)/15
+branches locus_d07_rescale_constant: 128/119
+branches locus_tuning_a2: 5/36
+registration shear_slice_volumes: (15/16, 1)
+registration volume_slice_shears: (1/4, 1/4)
+registration shear_g0_registers: True
+registration shear_g0_cancelling_parameters: (1,)
+registration shear_g1_registers: True
+registration shear_g1_cancelling_parameters: (1,)
+registration volume_blind_with_parameters: False
+registration volume_blind_at_zero_parameters: True
+registration volume_derivative_with_parameters: True
+timings_ms: {'authority': 0, 'construction': 688, 'control': 410, 'bench': 139, 'mechanism': 87, 'cone': 16092, 'branches': 21768, 'registration': 138732}  elapsed_ms: 177920
+[PASS] A-1: THE CORRECTION SOURCE BASE IS FIXED AND EVERY NON-SELF RUNTIME OR CITATION INPUT MATCHES ITS SHA-256 LITERAL
+[PASS] A-2: BLOCK 213 AND ITS COMPLETE TRANSITIVE HELPER/ASSEMBLY CLOSURE IMPORT; ALL DECLARED INPUTS ARE READABLE
+[PASS] B-1: NOTHING REGISTERED, NOTHING ADOPTED: six imposed objects, zero registered, zero adopted
+[PASS] B-2: NO GRAVITY IS SUPPLIED: nine structures enumerated as not supplied
+[PASS] B-3: NO PARAMETER VALUE IS SELECTED: the four parameter points are declared probes, not a choice
+[PASS] B-4: THE WORDS PARAMETER, PARITY, CONE, LOCUS AND BRANCH ARE SCOPED; SYMBOL NAMES NO DYNAMICS, CONE NO SPACETIME CONE
+[PASS] B-5: THE READINGS ARE READINGS: six enumerated, none licensed
+[PASS] C-1: THE FREE PARAMETERS ARE EXACTLY D07, D16, D25, D34 at all eight cells and they carry exactly the eight antidiagonal entries
+[PASS] C-2: THE CELL AT ZERO PARAMETERS IS BLOCK 213's DEGREE-DIAGONAL CELL (solve_witness) at every witness
+[PASS] C-3: ONSITE: the folded H0 IS the cell, so H_eo carries the four parameters on the antidiagonal; OVERLAP: H0 = H0(0) + (s/4) P111
+[PASS] C-4: THE FOUR INDIVIDUAL PAIRWISE BOUNDS ARE NECESSARY ONLY: the W1 point (0,3/4,3/4,3/4) obeys them but has a restricted 2x2 determinant -71/240, so pencil claims require actual positive definiteness
+[PASS] D-1: THE CONTROL IS R5's: the flat cell at zero parameters is the identity, H = I on (4,2,2), multisets {0x8, 1x8} form and pencil, Bloch = direct
+[PASS] D-2: THE FLAT CELL WITH A PARAMETER ON IS NOT THE IDENTITY: det M = Q^2 with Q = -|k|^4 + Q2_flat, Q2_flat the declared even quadratic in (D16, D25, D34), D07 absent, Q2_flat = 0 on the plane D16 = D34 = -D25
+[PASS] D-3: THE DEFORMED FLAT BENCH: the (4,2,2) multisets with D16 = 1/4 and with D07 = 1/4 are the declared literals, Bloch = direct
+[PASS] E-1: BLOCH UNION = DIRECT BENCH on (4,2,2) at W1 with D16 = 1/4 and with D07 = 1/4, both assemblies, both readings
+[PASS] E-2: THE W1 BENCH MULTISETS WITH A PARAMETER ON are the declared literals
+[PASS] F-1: THE PARITY MECHANISM (onsite, symbolic moduli and parameters): M_eo is parameter-free; M_ee couples corner 0 to the 2-forms by u = ((D07+D34)kt, (D25-D07)kx, (D07+D16)ky); M_oo is the zero-diagonal 3x3 [(D16+D25)kt, (D34-D16)kx, -(D25+D34)ky] on the 1-forms with corner 7 empty
+[PASS] F-2: THE GENERAL D07 CONGRUENCE: U = I - (D07/D3) E_70 gives U^T M U = M|D07=0 and shifts only D0 in U^T H0 U; it preserves det M and inertia but does not isolate a rescaled 0-form branch when other duality entries are on
+[PASS] F-3: OVERLAP: M sees only the sum s = D07 + D16 + D25 + D34 and its M_eo is parameter-free
+[PASS] F-4: THE UNION LOCUS AT THE RUN WITNESSES: raw coefficient-ideal bases certify radical (D16-D34,D25+D34) onsite and (s) overlap by containment and power membership; no generic factor-splitting rule is used
+[PASS] F-5: THE GENERIC W1 FACTORIZATION TYPE over the stated rational-function fields: det M is one irreducible quartic squared under both assemblies, with quartic parameter degree 2 and even parameter dependence; this does not classify every specialization
+[PASS] F-6: AT W1 ONLY, the full modeled onsite parameter system and the effective overlap-sum system have inconsistent single-quadric equations (basis (1,)); no conclusion is drawn for every other witness
+[PASS] F-7: AT L+- AND L-+ ONSITE: the old single-quadric zero set persists along the plane (s,-s,s), for any D07 because det M is D07-free; at the one declared off-plane point D16=1/4 the single-quadric system is inconsistent. The rest of the off-plane locus is open
+[PASS] F-8: ON FOUR DECLARED W1 ONSITE SLICES ONLY, the two-quadric eliminant is s^2, excluding a product of two quadrics away from s=0; linear-times-cubic factors and unsampled parameter directions remain open
+[PASS] F-9: THE SELECTED W1 BRANCH STRUCTURES are the declared literals; on the D07-only star line (D16=D25=D34=0), the 0-form branch is k^T D1 k/(D0-D07^2/D3) and the other branches are Block 213's
+[PASS] F-10: ON THE L+- D07-ONLY STAR LINE: at D07=1/4 the 0-form constant becomes 128/119 while the other three stay 32/27,4/3,4/3; this selected pencil is not scalar
+[PASS] G-1: ON THE FORMAL SLICE (v0,v1)=(15/16,1), neither shear derivative is the zero polynomial in momentum and symbolic shears for any fixed (D16,D25,D34), as certified by coefficient ideal (1)
+[PASS] G-2: ON THE DISTINCT FORMAL SLICE (g0,g1)=(1/4,1/4), det M is proportional to its unit-volume value at zero duality parameters and not proportional with symbolic D16,D25,D34
+[PASS] H-1: SCOUT-GRADE FENCE, inherited verbatim from Blocks 211 and 213
+[PASS] H-2: THE ASSEMBLY IS NOT DECIDED AND NO HODGE READING IS SELECTED
+[PASS] H-3: THE INSTANCE SCOPE IS ENUMERATED: six restrictions
+[PASS] I-1: THE NOTE IS PRESENT AND CARRIES THE N5 FENCE BYTE-IDENTICALLY
+[PASS] I-2: NO nsimplify, NO float literal, NO float call in this runner's source
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS
+N5: NOTHING HERE IS REGISTERED OR ADOPTED. PARAMETER names a free coordinate of the supplied finite cell system; CONE is a determinant zero set; BRANCH is an exact matrix eigenvalue. The open positive-definite duality region is contained in, but is not equal to, the separate pairwise-bound box; pencil statements require actual positive definiteness. The general D07 unipotent congruence preserves det M and inertia and shifts D0 by -D07^2/D3. Its simple zero-form branch rescaling is established only on the D07-only degree-diagonal/star line: the positive-definite mixed D07=1/4,D16=1/3 example has candidate 224/15 residual 528724036/455625. For the actual n=4 block, det[[0,B],[B^T,0]]=det(B)^2; the general sign is (-1)^n. Raw coefficient-ideal bases certify the old det-B union locus at W1 and L+-/L-+ by containment and power membership, without generic factor splitting. The generic W1 determinant is an irreducible quartic squared over the stated rational-function fields; four named W1 slices exclude a product of two quadrics away from their origin, while linear-times-cubic and other specializations remain open. At L+- and L-+ the old single-quadric zero set persists on the declared plane and is excluded only at the tested off-plane D16=1/4 point; the remaining off-plane locus is open. Shear registration fixes (v0,v1)=(15/16,1); volume registration separately fixes (g0,g1)=(1/4,1/4). No action, parameter selector, assembly, physical metric, propagation law, continuum, spacetime cone, dynamics, or gravity is selected or supplied.
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+
