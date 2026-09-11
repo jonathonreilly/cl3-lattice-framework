@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-11T02:12:28.192458+00:00; main `4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac`.
+Updated 2026-09-11T01:27:51.777053+00:00; main `09dafe5bf6fb030249b368987fff091ef339c78a`.
 
-200 reviewed original science scopes landed: 133 direct science and 67 consolidated science. The 137 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 32 pending scopes at successors #7315 and #7359.
+197 reviewed original science scopes landed: 130 direct science and 67 consolidated science. The 134 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 32 pending scopes at successors #7315 and #7359.
 
 All #7827 own/transferred scopes have recorded acceptance; the PR is closed. Its own Block38 keeps the original W58 acceptance commit. No open accepted-scope bucket remains.
 
@@ -257,9 +257,3 @@ W63 also accepts the corrected transferred #6485 scope; its old pending dependen
 | #7981 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `09dafe5bf6fb030249b368987fff091ef339c78a` |
 
 | #7988 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `09dafe5bf6fb030249b368987fff091ef339c78a` |
-
-| #7992 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac` |
-
-| #7993 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac` |
-
-| #7994 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac` |

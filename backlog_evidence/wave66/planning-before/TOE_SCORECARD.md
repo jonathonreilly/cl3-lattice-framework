@@ -2,8 +2,8 @@
 
 Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. After W63, 32 transferred scopes remain pending review; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
 
-Verified source/status snapshot: 2026-09-11T02:12:28.192458+00:00, main
-`4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac`. This is a planning map, not
+Verified source/status snapshot: 2026-09-11T01:27:51.777053+00:00, main
+`09dafe5bf6fb030249b368987fff091ef339c78a`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -24,10 +24,10 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 17 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 14 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
-The overnight metadata refresh at `8a33b91a16fe95c76a357cadae6874f1a25c782b` materialized the 32 formerly pending notes. It changed no scientific source or audit verdict; the five W61 notes, one W62 note, five W63 notes, one W64 note, two W65 notes and three W66 notes now await the next mechanical refresh.
+The overnight metadata refresh at `8a33b91a16fe95c76a357cadae6874f1a25c782b` materialized the 32 formerly pending notes. It changed no scientific source or audit verdict; the five W61 notes, one W62 note, five W63 notes, one W64 note and two W65 notes now await the next mechanical refresh.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
 reviewed integration. Do not start an audit drain from a PR review or
@@ -156,5 +156,3 @@ W63 accepts five corrected finite carrier, reflection and seam results. Physical
 W64 accepts the corrected finite joint-pin and alphabet calculation, with real-affine consistency distinguished from untested nonnegative weights and norm comparisons distinguished from component comparisons. Main `eb0fe5cae19cb8cf813182e8ccaddc4a0408faf3`; no audit grade.
 
 W65 accepts corrected finite weighted-kernel and duality algebra with explicit parameter scopes and counterexamples. Physical assembly, metric, action selection and gravity remain open. Main `09dafe5bf6fb030249b368987fff091ef339c78a`; no audit grade.
-
-W66 accepts corrected finite covariance, curved-cell cone and overlap algebra. Physical assembly, universal covariance, action selection and gravity remain open. Main `4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac`; no audit grade.

@@ -1,6 +1,6 @@
 {
   "captured_utc": "2026-09-07T14:42:45.091662+00:00",
-  "main_sha": "09dafe5bf6fb030249b368987fff091ef339c78a",
+  "main_sha": "4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac",
   "units": [
     {
       "unit_id": "eta_affine_repeat",
@@ -7073,11 +7073,11 @@
       "final_evidence": "backlog_evidence/wave59/INDEX.json"
     }
   ],
-  "current_main": "09dafe5bf6fb030249b368987fff091ef339c78a",
-  "current_assignment_update_utc": "2026-09-11T01:27:51.777053+00:00",
+  "current_main": "4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac",
+  "current_assignment_update_utc": "2026-09-11T02:12:28.192458+00:00",
   "cleanup_scope": "original 254_only",
   "owner_cutoff_file": "BACKLOG_CUTOFF.json",
-  "immediate_priority": "W65 landed #7981/#7988. Eight of 18 released originals landed; 10 originals and 32 transferred scopes remain. Covariance author corrections active; first six of twenty transferred #7315 scopes in author correction after eleven finding groups; #7995/#7997 original review active. Formal audit deferred; later arrivals excluded.",
+  "immediate_priority": "W66 landed #7992/#7993/#7994. Eleven of 18 released originals landed; seven originals and 32 transferred scopes remain. First six #7315 transfers in source correction confirmation; next seven original review complete with fixes needed. #7995/#7997 author active. Formal audit deferred; later arrivals excluded.",
   "closure_reconciliation_file": "BACKLOG_CLOSURE_RECONCILIATION.json",
   "next_routing_evidence": "backlog_evidence/next-routing-20260909",
   "next_routing_note": "Routing only, no acceptance/closure:6009exactly contains8paths each from5964/5963/5961/5959/5954 and8of10from5965/5955; preserve their extra878helper+receipt separately.5957is not covered. Review the complete coherent gravity-family argument once with all original recovery. Next small units7803/7781/7753 have actual full6/2/1commit boundaries, not tip-only assumptions.",
@@ -7131,14 +7131,16 @@
       "evidence": "backlog_evidence/wave65/INDEX.json"
     },
     "7992_7994": {
-      "status": "draft003_source_confirmed_bounded_producers_active",
+      "status": "landed_closed",
       "reviewer": "/root/released7992_7994_review",
-      "boundary": "Seven source finding groups resolved; one-shot bounded execution active. Fresh receipts, final original-reviewer composition confirmation and combined gate remain.",
+      "boundary": "Corrected finite covariance, cone and overlap scope landed; all 50 original occurrences recoverable. Physical interpretation and all-moduli extrapolation remain unaccepted.",
       "author": "/root/released18_routing",
-      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7992-7994-20260910"
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7992-7994-20260910",
+      "commit": "4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac",
+      "evidence": "backlog_evidence/wave66/INDEX.json"
     },
     "7315_A": {
-      "status": "original_review_needs_fix_A01_A11_author_active",
+      "status": "source_corrections_original_reviewer_confirmation",
       "reviewer": "/root/released6379_review",
       "scopes": [
         7011,
@@ -7149,23 +7151,25 @@
         7032
       ],
       "source_head": "3c4d52bdb9d3d2e1211799db7232b91b561bf0e1",
-      "boundary": "Six of twenty transferred scopes only. No full7315acceptance;7028alreadyacceptedexcluded;14othertransferspending.",
+      "boundary": "Six transferred scopes only; source fixes in progress before bounded execution. No full #7315 acceptance; #7028 already accepted and excluded.",
       "author": "/root/released6515_fixes",
       "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7315-a-20260910",
       "review_evidence": "backlog_evidence/wave65/next-review/7315-A-REPORT.md"
     },
     "7995_7997": {
-      "status": "original_review_complete_four_finding_groups_author_pending",
+      "status": "author_corrections_active",
       "reviewer": "/root/released6858_6859_review",
       "scopes": [
         7995,
         7997
       ],
       "boundary": "Blocks218\u2013219 finite bench witnesses; no scientific acceptance yet.",
-      "review_evidence": "backlog_evidence/released18-20260910/7995-7997-original-review-REPORT.md"
+      "review_evidence": "backlog_evidence/released18-20260910/7995-7997-original-review-REPORT.md",
+      "author": "/root/released18_routing",
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7995-7997-20260910"
     },
     "7315_B": {
-      "status": "original_focused_review_active",
+      "status": "original_review_complete_B01_B11_author_pending",
       "reviewer": "/root/released6379_review",
       "scopes": [
         7042,
@@ -7177,7 +7181,8 @@
         7083
       ],
       "source_head": "3c4d52bdb9d3d2e1211799db7232b91b561bf0e1",
-      "boundary": "Seven transferred scopes only; provisional findings not final coverage or acceptance. Other seven transfers pending after A and B."
+      "boundary": "Seven transferred scopes reviewed with material fixes required; remaining seven transfers after A and B unreviewed.",
+      "review_evidence": "backlog_evidence/wave66/next-review/7315-B-REPORT.md"
     }
   }
 }
