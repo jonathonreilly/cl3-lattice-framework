@@ -1,0 +1,5 @@
+# Blocks 167–170 historical recovery
+
+This packet preserves all twenty original changed-path bodies from #7104, #7106, #7136, and #7146, including their four historical caches and four generated manifest states. Each body in `ORIGINAL_BODIES_GZIP_BASE64.json` is independently gzip-compressed and base64-encoded, with its original Git revision, relative path, size, and SHA-256. Decode base64, decompress gzip, and verify the length and SHA-256 before recovery. Archived manifests and caches do not replace live evidence or grant scientific acceptance.
+
+`FINDING_DISPOSITIONS.json` records the complete reviewed family map at the frozen source stage. Families marked historical and unreproduced remain unverified; no exhaustive, physical, or TOE conclusion is implied. In particular, the Block 167 support dictionary and Block 168 diagnostic/blindness families are preserved without current acceptance. The canonical notes and corrected producer outputs provide the separately reviewed finite scope. Formal audit remains deferred.
