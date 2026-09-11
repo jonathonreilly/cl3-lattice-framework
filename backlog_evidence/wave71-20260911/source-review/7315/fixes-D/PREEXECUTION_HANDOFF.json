@@ -1,0 +1,88 @@
+{
+  "author_cold_read_path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-released18-20260910/7315/fixes-D/AUTHOR_COLD_READ.json",
+  "author_cold_read_sha256": "7c9aa7fac96341bd422ad02c7cc59bed1dedbd355954a691d91b562057b9809f",
+  "automatic_retry": false,
+  "base": "762664127493a8858ac58fa0fc6387e1ac56d7f7",
+  "branch": "fix/released7315-d-20260910",
+  "canonical_caches_present": false,
+  "execution_proposal": {
+    "automatic_retry": false,
+    "historical_elapsed_sec": {
+      "block171": 66.48,
+      "block172": 62.94,
+      "block173": 24.16
+    },
+    "memory_enforcement": "sampled process-group RSS watchdog; macOS RLIMIT_AS is not used",
+    "mode": "proposal_only_no_execution_authorized",
+    "runs": [
+      {
+        "child_timeout_sec": 180,
+        "expected_total": "TOTAL: PASS=7 FAIL=0",
+        "name": "block171",
+        "outer_timeout_sec": 195,
+        "rss_cap_bytes": 2147483648,
+        "runner": "scripts/admissibility_dirac_kahler_generator_trilemma_kernel_2026_08_21.py"
+      },
+      {
+        "child_timeout_sec": 180,
+        "expected_total": "TOTAL: PASS=8 FAIL=0",
+        "name": "block172",
+        "outer_timeout_sec": 195,
+        "rss_cap_bytes": 2147483648,
+        "runner": "scripts/admissibility_dirac_kahler_refinement_census_stationary_kernel_2026_08_21.py"
+      },
+      {
+        "child_timeout_sec": 180,
+        "expected_total": "TOTAL: PASS=9 FAIL=0",
+        "name": "block173",
+        "outer_timeout_sec": 195,
+        "rss_cap_bytes": 2147483648,
+        "runner": "scripts/admissibility_dirac_kahler_stationary_kernel_characterization_2026_08_21.py"
+      }
+    ],
+    "sequence": [
+      "block171",
+      "block172",
+      "block173"
+    ],
+    "stop_on_first_failure": true
+  },
+  "formal_audit": "deferred",
+  "recovery": {
+    "archive_sha256": "c7c687286e6303931f9dc07801e37aaf7f577d979d2f86beded5a829a974d1f7",
+    "decoded_hashes_verified": true,
+    "historical_manifest_occurrences": 3,
+    "original_occurrences": 15
+  },
+  "review_packet": {
+    "dispositions_sha256": "0c448cc7e30f9584809d382ac68038d3af3538652001b27f0197c1177e98b42b",
+    "input_closure_bindings_sha256": "d33e4fd69d204d1dd90226dcc54166371539e1c5bdd38bc30d8f9b614b68edab",
+    "input_closure_file_count": 43,
+    "receipt_sha256": "e239fc6b054fb0c7985ccdcf94221bdf4404e7129452bb6a9e3ecaf2137c06de",
+    "report_sha256": "ca6fd532946b6f85623c0e5772b87fc71c223bf121646ac0bbd1912c1f566285",
+    "source_bindings_sha256": "11096cb0a7997ca8379e17674ac65d7f7b2f30ff4dadbe6238b884662778826c"
+  },
+  "schema": "released7315-d-preexecution-handoff-v1",
+  "science_or_diagnostic_execution": "NONE",
+  "source_snapshot": {
+    "cost_proposal_sha256": "e86c384888339f980795ee26cefe1d88d36393bf100c792c9ea210687369121e",
+    "dispositions_sha256": "c61e9d8d77c8e31ca8c44d28db1ec2d3786a82516bc47679a5ec418d3a57accd",
+    "input_bindings_sha256": "ca532b60a02861c851a6ca105a3734f708ada81b4f44d67a3579a2c74a0d655c",
+    "original_diff_sha256": "f5d3c89ac8b3b8e5207890c50d4c822d584933eef1cf7ea5ff1ce84aafc1c7fa",
+    "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-released18-20260910/7315/fixes-D/snapshot001",
+    "source_count": 16,
+    "source_freeze_sha256": "6f453fa9b67cadbd458d3cf39044884697171d31bc49083ffeb5c57f021768bf",
+    "static_preflight_sha256": "a6e42300ad7d43e82f674f9e6d1e84846febe85b0d88d027e92bf143f421d1a5"
+  },
+  "status": "SOURCE_READY_PENDING_SAME_ORIGINAL_REVIEWER_AND_ROOT_PRODUCER_GO",
+  "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7315-d-20260910",
+  "wrapper": {
+    "authorized": false,
+    "invoked": false,
+    "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-released18-20260910/7315/fixes-D/PROPOSED_PRODUCER_WATCHDOG.py",
+    "sha256": "9b9943e652dba714768e99f46c9f24d56fd87dbd00d2ba0562cbe2bfcb09c52f",
+    "static_preflight_pass": true,
+    "static_preflight_path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-released18-20260910/7315/fixes-D/WRAPPER_STATIC_PREFLIGHT.json",
+    "static_preflight_sha256": "1f770d4360f0ea79500b1a9612777492f2b68f3742798219162e5ec52291eeb1"
+  }
+}

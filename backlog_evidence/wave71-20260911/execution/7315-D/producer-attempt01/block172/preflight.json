@@ -1,0 +1,48 @@
+{
+  "before_sha256": {
+    ".claude/science/physics-loops/toe-axiom-closure-block172-refinement-census-stationary-kernel-20260821/NO_GO_LEDGER.md": "a87f9c75dae0fc6e673e7b937f891d525233df2c0113f44a8413ff3c4c068328",
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_GENERATOR_TRILEMMA_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-21.md": "081ea39bb4ba0dcebc8c533d9257ad394c1f8087d66b87392a6137ee522ce71c",
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_REFINEMENT_CENSUS_STATIONARY_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-21.md": "97f1e0ddc7df9af5ab0f315e1da69a88292f7d710ca91dc860aff71b6e7196e5",
+    "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md": "9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "scripts/admissibility_dirac_kahler_generator_trilemma_kernel_2026_08_21.py": "5721a7184ab9ff36b423db33a0c475e060cb732aad0a5b9ba14384f2ab9d25db",
+    "scripts/admissibility_dirac_kahler_refinement_census_stationary_kernel_2026_08_21.py": "6081a60ac3a7ce151721cf77c715bf4d32efd3b9ed56f618efe4e3da47649262",
+    "scripts/admissibility_dirac_kahler_reflection_fixture_helpers_2026_09_10.py": "0974a71bab3c753e66692740e303ea8062bfa7b6bd88fdc4a2c665d61ac95f87",
+    "scripts/admissibility_dirac_kahler_released7315_d_fixture_helpers_2026_09_11.py": "04ef3fdfe36d7328b827fe448a19ca432f4a8ecefd8b833b0905a9e38c52bbbf",
+    "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445"
+  },
+  "child_timeout_sec": 180,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-c",
+    "import json,sys; from scripts.runner_cache import execute_and_write_cache; runner=sys.argv[1]; timeout=int(sys.argv[2]); result,path=execute_and_write_cache(runner,timeout); print(json.dumps({'status':result.get('status'),'exit_code':result.get('exit_code'),'timeout_sec':result.get('timeout_sec'),'cache_path':str(path) if path else None},sort_keys=True)); raise SystemExit(0 if result.get('status')=='ok' and result.get('exit_code')==0 and path is not None else 1)",
+    "scripts/admissibility_dirac_kahler_refinement_census_stationary_kernel_2026_08_21.py",
+    "180"
+  ],
+  "environment": {
+    "BLIS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "expected_cache_identity": {
+    "input_fingerprint_sha256": "7687490b633ae2b8c978f417c39ed3c0de6bce53a19504b9242cbd3af9c7d385",
+    "runner_sha256": "6081a60ac3a7ce151721cf77c715bf4d32efd3b9ed56f618efe4e3da47649262"
+  },
+  "expected_total": "TOTAL: PASS=8 FAIL=0",
+  "head_before": "762664127493a8858ac58fa0fc6387e1ac56d7f7",
+  "memory_enforcement": "sampled ps RSS; no macOS RLIMIT_AS",
+  "name": "block172",
+  "outer_timeout_sec": 195,
+  "rss_cap_bytes": 2147483648,
+  "rss_scope": "sum of every process in the producer process group",
+  "runner": "scripts/admissibility_dirac_kahler_refinement_census_stationary_kernel_2026_08_21.py",
+  "snapshot_manifest_sha256": "6f453fa9b67cadbd458d3cf39044884697171d31bc49083ffeb5c57f021768bf",
+  "source_input_count": 11,
+  "wrapper_sha256": "9b9943e652dba714768e99f46c9f24d56fd87dbd00d2ba0562cbe2bfcb09c52f"
+}

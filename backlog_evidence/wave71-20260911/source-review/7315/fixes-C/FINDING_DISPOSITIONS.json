@@ -1,0 +1,269 @@
+{
+  "schema": "released7315-c-finding-dispositions-v1",
+  "status": "SOURCE_SNAPSHOT005_FROZEN_NEW_EXECUTION_PENDING",
+  "source_snapshot": {
+    "path": "snapshot005/SOURCE_FREEZE.json",
+    "sha256": "f93a4165cf4a7e2752b0082d1df399931a1d89829c9fa8199eac81b196f5915e",
+    "snapshot004_delta_sha256": "ddbd45ea2d0614199add82801c09d8fef479d9e51c6b53f103e19f1b3e60d092"
+  },
+  "scope_prs": [
+    7104,
+    7106,
+    7136,
+    7146
+  ],
+  "scope_blocks": [
+    167,
+    168,
+    169,
+    170
+  ],
+  "review_binding": {
+    "report": "../review-C/REPORT.md",
+    "report_sha256": "c61c4fa2f97cec004044b8ed543a764451f0e039e6f0816a85f0c8ff1689ffe3",
+    "receipt_sha256": "2014ca018893b64156585c57a7756c27f6c0d7b73bf00a3032662b4b86ef4af9",
+    "original_dispositions_sha256": "e524455a87b6f16f83e6c45881c76a9bf113c8f04385741fe6cc01078700ff69"
+  },
+  "findings": {
+    "C01": {
+      "status": "RESOLVED_BY_COUNTEREXAMPLE_AND_NARROWING",
+      "resolution": "Block167 uses the actual cross C=herm(U). At m=2,s_t=0 the imposed U is anti-Hermitian unitary, so C=0 and positive B gives PSD at 8x4 and 12x4 while temporal coupling is nonzero and inter-slice transport is full rank. No graph connectivity is asserted. The universal exclusion is withdrawn.",
+      "affected_blocks": [
+        167
+      ]
+    },
+    "C02": {
+      "status": "RESOLVED_BY_HYPOTHESIS_REPAIR",
+      "resolution": "The hollow-block equivalence is P PSD iff C=0 and B PSD. Full-rank anti-Hermitian transport witnesses are restricted to invertible V; zero and singular members are not called full-rank.",
+      "affected_blocks": [
+        167,
+        168
+      ]
+    },
+    "C03": {
+      "status": "RESOLVED_BY_FINITE_SCOPE",
+      "resolution": "The hop-free 2J3 row is explicit with C1 rank zero and PSD. Hop-carrying conclusions are finite rows only. The action control trace is recomputed from its own outgoing block.",
+      "affected_blocks": [
+        167
+      ]
+    },
+    "C04": {
+      "status": "RESOLVED_BY_SIZE_DOMAIN_AND_UNIFORMITY_SPLIT",
+      "resolution": "The Schur identity is 12x4 only, with B>0 and s_t nonzero. The s_t=0 boundary is g2-independent. The 8x6 homogeneous displacement-two map is zero rank. General P uses a generalized eigenvalue; k4/k6 are pointwise and nonuniform near zero.",
+      "affected_blocks": [
+        168
+      ]
+    },
+    "C05": {
+      "status": "RESOLVED_BY_QUANTIFIER_NARROWING",
+      "resolution": "The mass-only map is connection-off and requires nonzero mass. The x-homogeneous unit-volume solve is a selected two-variable map. Block169 couplings are spatially constant on each time slice. Connection cancellation and more general link couplings remain open.",
+      "affected_blocks": [
+        168,
+        169
+      ]
+    },
+    "C06": {
+      "status": "RESOLVED_BY_ALGEBRA_REPAIR",
+      "resolution": "The imposed d2 is invertible for nonzero g2 but d2 squared is nonzero, so it supplies no chain complex, cohomology, or acyclicity claim. Seven rows per fixture remain pointwise signs; the corrected check compares zero negative-eigenvalue count with the expected PSD boolean. Endpoint laws and monotonicity are withdrawn.",
+      "affected_blocks": [
+        169
+      ]
+    },
+    "C07": {
+      "status": "RESOLVED_BY_SUPPORT_ONLY_LABEL",
+      "resolution": "The x-trivial forbidden-support obstruction is retained. Zero forbidden entries for x-reflecting rows are called support compatibility only; coefficient relations and positive-cone preservation remain unproved.",
+      "affected_blocks": [
+        169
+      ]
+    },
+    "C08": {
+      "status": "RESOLVED_BY_OBJECT_AND_BASIS_NARROWING",
+      "resolution": "Raw moment matrices are separated from their Hermitian parts. Hermitian-part PSD is not called raw-functional positivity. The third family is selected coefficient powers, not the full bilinear-generated star algebra. Rational brackets are endpoint signs only. The ordinary Toeplitz flag compares signed diagonal offsets.",
+      "affected_blocks": [
+        170
+      ]
+    },
+    "C09": {
+      "status": "RESOLVED_BY_FIXED_BENCHMARK_AND_FINITE_SCOPE",
+      "resolution": "Support connectivity is tied to the substituted benchmark. Global +I and -I are both legitimate involutive commuting twists and -r negates the pairing. Four exchange-map failures do not prove reflection-positivity independence.",
+      "affected_blocks": [
+        170
+      ]
+    },
+    "C10": {
+      "status": "RESOLVED_BY_WITHDRAWAL_OF_GLOBAL_PHYSICAL_CLOSURE",
+      "resolution": "Only finite no-supply and exact block identities remain. Traceless nonzero principal blocks, selected structure flags, fixed-carrier families, and finite censuses are not promoted to all-transport, all-variant, physical, or Hilbert-space claims.",
+      "affected_blocks": [
+        167,
+        168,
+        169,
+        170
+      ]
+    },
+    "C11": {
+      "status": "RESOLVED_AT_SOURCE_STAGE",
+      "resolution": "The 40-script historical theorem chain is replaced by an extracted C helper with AST provenance and one accepted A-helper import. Literal current input hashes are bound. Four historical caches and four historical manifest occurrences remain archive-only; any corrected evidence is separately identity-bound, reviewed, and accepted.",
+      "affected_blocks": [
+        167,
+        168,
+        169,
+        170
+      ]
+    }
+  },
+  "claim_family_dispositions": {
+    "167": {
+      "groups": {
+        "A": "replace stale authority/cache claims with current literal bindings",
+        "B": "retain finite constructors and explicit inertia order",
+        "C": "retain eight unitary rows; withdraw universal exclusion; add anti-Hermitian-unitary counterexample",
+        "D": "historical preserved/unreproduced support dictionary; no current acceptance from this reduced producer",
+        "E": "repair hollow-block lemma and restrict rank-four family to invertible V",
+        "F": "preserve loophole census historically; do not reproduce or classify exhaustively",
+        "G": "retain named finite generator table and explicit hop-free row",
+        "H": "withdraw incompatibility, all-carrier, physical-wall, and TOE conclusions"
+      },
+      "fresh_candidate_pending_execution": [
+        "direct hollow-block controls for B PSD and B non-PSD",
+        "invertible anti-Hermitian rank-four witnesses",
+        "m=2,s_t=0 PSD QCA counterexample with nonzero temporal coupling and full-rank inter-slice transport at 8x4 and 12x4",
+        "eight reference-QCA unitarity/full-rank rows at both sizes",
+        "named generator table with hop label, C1 rank, and inertia",
+        "recomputed off-region outgoing-action control trace"
+      ],
+      "historical_preserved_unreproduced": [
+        "fully generic 192/288 and 384/576 parameter corner families",
+        "all displacement-two and wider-support loophole tables",
+        "32-direction symbolic/numeric generator-rank settlement",
+        "kernel-ratio witnesses and historical mutation/N5 families",
+        "group D site/link support dictionary with displacement, reflection-parity and finite-extent hypotheses"
+      ],
+      "withdrawn": [
+        "positivity iff disconnection without B PSD",
+        "reference-unitary forced failure at every parameter",
+        "all named generators fail at nonzero s_t",
+        "framework/QCA physical incompatibility and global closure"
+      ],
+      "open": [
+        "other carriers, generators, extents, reflection supports, and physical interpretations"
+      ]
+    },
+    "168": {
+      "groups": {
+        "A": "replace stale authority/cache claims",
+        "B": "retain two named finite anchors",
+        "C": "narrow cancellation to connection-off nonzero-mass and x-homogeneous maps",
+        "D": "retain 12x4 Schur identity with domain/profile qualifiers",
+        "E": "retain selected zero-diagonal identities only",
+        "F": "historical preserved/unreproduced operational diagnostic/blindness family; no current acceptance from this reduced producer",
+        "G": "split 12x4 identity from 8x6 zero-rank wrap control",
+        "H": "withdraw all-cone, empty-locus, physical, and TOE closure"
+      },
+      "fresh_candidate_pending_execution": [
+        "12x4 exact block identity and kappa=57/160 at m=1",
+        "s_t=0 boundary and nonzero-s_t rank split",
+        "one nonidentity positive-corner generalized-threshold control",
+        "k2/k4/k6 pointwise rows and near-zero limits",
+        "8x6 homogeneous displacement-two zero-rank control",
+        "12x4 mass-only incident-shear and x-homogeneous ranks"
+      ],
+      "historical_preserved_unreproduced": [
+        "six-carrier kappa grid and broad coupling census",
+        "inhomogeneous displacement-two and diagnostic sweeps",
+        "historical mutation/N5/solver-defect families",
+        "group F operational diagnostic/blindness family"
+      ],
+      "withdrawn": [
+        "same Schur formula at 8x6",
+        "rank C=Lx at s_t=0",
+        "k4/k6 fixed finite uniform feasibility near zero",
+        "mass-only injectivity excludes connection cancellation",
+        "all-cone or physical-route closure"
+      ],
+      "open": [
+        "general positive corner profiles, other carriers, and cancellation with nonzero connection"
+      ]
+    },
+    "169": {
+      "groups": {
+        "A": "replace stale authority/cache claims",
+        "B": "retain finite anchors and exact inertia order",
+        "C": "retain two-fixture link dictionary and Lx=2 five-row index census",
+        "D": "narrow to spatially constant time-slice couplings",
+        "E": "retain imposed-shift algebra; reject differential/complex/acyclic language",
+        "F": "retain fourteen point signs; withdraw endpoint functions",
+        "G": "retain x-trivial support obstruction and label x-reflecting rows support-compatible only",
+        "H": "withdraw all-reflection/all-coupling wall and physical closure"
+      },
+      "fresh_candidate_pending_execution": [
+        "five T rows of the link liveness formula at Lx=2",
+        "fully non-Hermitian link block dictionary at 8x4 and 12x4",
+        "24 selected zero-diagonal cells for g[t] and k[t]",
+        "d2 nonnilpotency, scaled-permutation invertibility, and fourteen point signs",
+        "metric forbidden-support table and selected shear-map ranks"
+      ],
+      "historical_preserved_unreproduced": [
+        "broad link transport/alternation/mass-parity census",
+        "full displacement/support and calibration tables",
+        "holonomy, negative-orientation, and large sweep families",
+        "historical mutation/N5/closure panels"
+      ],
+      "withdrawn": [
+        "d2 differential, chain complex, cohomology, or acyclicity",
+        "g-minus proportional to s_t squared over m and g-plus proportional to m",
+        "x-reflecting metric-class or positive-cone preservation",
+        "all-coupling, wall-independence, or physical closure"
+      ],
+      "open": [
+        "per-spatial-link couplings, exact endpoint functions, coefficient-class preservation, and other reflection classes"
+      ]
+    },
+    "170": {
+      "groups": {
+        "A": "replace stale authority/cache claims",
+        "B": "retain finite instrument and explicit inertia order",
+        "C": "narrow cones to selected subspaces and coefficient powers",
+        "D": "retain recipe anti-Hermiticity and finite sign identities only",
+        "E": "preserve small-T family historically pending a future scoped producer",
+        "F": "retain endpoint signs, selected structure flags, and principal-submatrix persistence",
+        "G": "retain fixed-benchmark twist and finite axis tables, including global +/-I",
+        "H": "withdraw all-variant, transfer-exhaustion, physical-wall, and TOE closure"
+      },
+      "fresh_candidate_pending_execution": [
+        "raw Hermiticity flags for connected/full matrices and separately named Hermitian-part inertias of connected/full/reflected matrices",
+        "two endpoint signs per primary fixture without bisection",
+        "four-family leading-principal relation to one six-family extension",
+        "selected {G_t,G_t^2} coefficient-power tables at two masses",
+        "recipe-level anti-Hermiticity identity",
+        "fixed-benchmark support components, eight twist rows, and global +/-I sign identity",
+        "four direct exchange-map failures at square 8x4 and five spatial samples per primary fixture"
+      ],
+      "historical_preserved_unreproduced": [
+        "record-blind and sector-kernel cone constructions",
+        "12-sample dressed-curvature and small-T grids",
+        "12-family enlargement, sign-quench, channel split, H3 moment, and gauge-repair families",
+        "historical mutation/N5/closure panels"
+      ],
+      "withdrawn": [
+        "Hermitian-part PSD implies raw positive state",
+        "coefficient powers form the full bilinear-generated star algebra",
+        "unique monotone critical mass",
+        "no legitimate global negative twist",
+        "four failed maps prove spatial/temporal RP independence",
+        "selected non-Hankel/non-Toeplitz rows exclude every transfer",
+        "all-five/all-variant or physical closure"
+      ],
+      "open": [
+        "raw-functional positivity, full observable algebra, other bases, changing support graphs, other exchange maps, and transfer reconstructions"
+      ]
+    }
+  },
+  "occurrence_dispositions": {
+    "path": "snapshot005/ORIGINAL_OCCURRENCE_DISPOSITIONS.json",
+    "count": 20,
+    "corrected_replacements": 12,
+    "historical_only": 8
+  },
+  "science_executed": false,
+  "formal_audit": false
+}
