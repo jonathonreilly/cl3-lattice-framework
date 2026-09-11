@@ -1,8 +1,8 @@
 # TOE campaign — 2026-09-07
 
-Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. The remaining 12 transferred scopes are pending acceptance; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
+Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. All twelve formerly pending transferred scopes now have corrected landing dispositions; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
 
-The active work is cleanup of the fixed original 254 PR backlog. New arrivals are
+The fixed original 254 PR backlog now has complete review and closure dispositions. New arrivals are
 excluded by the owner cutoff in BACKLOG_CUTOFF.json. Read
 [BACKLOG_STATUS.md](BACKLOG_STATUS.md) for current main, queue counts and assignments,
 [NEXT_REVIEW_UNITS.json](NEXT_REVIEW_UNITS.json) for exact units, and
@@ -23,8 +23,7 @@ Its common packet is `.claude/science/physics-loops/toe-campaign-20260907/`;
 `RESULTS.md` indexes the notes and `REVIEW_HISTORY.md` binds the independent
 checks to their exact source hashes. The three blocks share the frozen main
 premises; they do not assume one another or close a physical TOE by assembly.
-Active work has moved to the explicitly authorized review/landing backlog,
-including all draft PRs; see [BACKLOG_STATUS.md](BACKLOG_STATUS.md).
+The explicitly authorized review/landing backlog, including all original drafts, is complete; see [BACKLOG_STATUS.md](BACKLOG_STATUS.md).
 
 - Formation: for the supplied six-content local rule and iid priorities,
   permanent formation exists on Z3 with factorial ancestry/error tails.
@@ -52,7 +51,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W71 landed seven corrected #7315 transferred scopes and completed its process/archive disposition without new #7315 science. Seventeen of 18 released originals are landed and closed. #7359 remains with twelve pending transferred scopes and its own scope: A and B have final source confirmation with 39 and 31 fresh PASS respectively but are not on main; C correction authoring is active. Formal audit is deferred and later arrivals remain excluded. 225 original science scopes landed.
+1. The requested 18 PRs and fixed 254 PR backlog are complete. 238 reviewed original science scopes landed: 139 direct science and 99 consolidated science. The 144 direct closures also include one partial Maxwell, one meta, two process scopes and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. No transferred scope remains pending on an open successor; historical and unproved scientific obligations remain recorded. Resume discovery from these corrected boundaries; formal audit remains deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

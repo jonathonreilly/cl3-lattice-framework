@@ -1,9 +1,9 @@
 # TOE status and next obligations
 
-Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. After W71, 12 transferred scopes remain pending acceptance; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
+Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. After W72, no transferred scope remains pending on an open successor; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
 
-Verified source/status snapshot: 2026-09-11T05:40:46.726828+00:00, main
-`f87e3bb1f1c404613afc2c15e31d46fc0fefcf72`. This is a planning map, not
+Verified source/status snapshot: 2026-09-11T06:21:52.172575+00:00, main
+`b657ae9a1b9431c046db2be217d6fbc11afada1a`. This is a planning map, not
 scientific authority or a percentage of TOE completion. Read
 [CAMPAIGN_STATUS.md](CAMPAIGN_STATUS.md) for assignments and
 [BATCH_REVIEW_PLAN.md](BATCH_REVIEW_PLAN.md) for backlog integration planning.
@@ -24,10 +24,10 @@ source and applied no audit verdicts. Every tracked science row has audit_status
 and effective_status `unaudited`. Counts were computed from every tracked shard;
 see [MAIN_STATUS_SNAPSHOT.json](MAIN_STATUS_SNAPSHOT.json). Unaudited source may
 contain useful proofs; neither a heading nor a planning summary restores a grade.
-There are 42 newer reviewed notes on main awaiting mechanical ledger refresh.
+There are 55 newer reviewed notes on main awaiting mechanical ledger refresh.
 The exact note list is in MAIN_STATUS_SNAPSHOT.json; no grade is supplied.
 
-The overnight metadata refresh at `8a33b91a16fe95c76a357cadae6874f1a25c782b` materialized the 32 formerly pending notes. It changed no scientific source or audit verdict; the five W61 notes, one W62 note, five W63 notes, one W64 note, two W65 notes, three W66 notes, two W68 notes, six W67 notes, one W69 note, nine W70 notes and seven W71 notes now await the next mechanical refresh.
+The overnight metadata refresh at `8a33b91a16fe95c76a357cadae6874f1a25c782b` materialized the 32 formerly pending notes. It changed no scientific source or audit verdict; the five W61 notes, one W62 note, five W63 notes, one W64 note, two W65 notes, three W66 notes, two W68 notes, six W67 notes, one W69 note, nine W70 notes, seven W71 notes and thirteen W72 notes now await the next mechanical refresh.
 
 **Owner direction, 2026-09-07:** formal audit is deferred until a solid TOE is ready. Continue discovery, focused independent checks and
 reviewed integration. Do not start an audit drain from a PR review or
@@ -35,8 +35,7 @@ planning refresh. Candidate dependencies retain their open conditions.
 
 ## Current open-work interfaces
 
-The complete [open-PR inventory](OPEN_PR_INVENTORY.json) pins the current open heads and
-changed-file sets; counts and assignments are in [BACKLOG_STATUS.md](BACKLOG_STATUS.md). These entries locate evidence; they do not assert that
+The [original-backlog inventory](OPEN_PR_INVENTORY.json) records zero remaining in-scope open PRs and identifies later arrivals excluded from this cleanup; counts and assignments are in [BACKLOG_STATUS.md](BACKLOG_STATUS.md). These entries locate evidence; they do not assert that
 all source has been reviewed. The campaign record tracks actual inspection.
 
 | Interface | Open evidence to inspect | Exact next question |
@@ -168,3 +167,5 @@ W69 accepts the supplied finite Gaussian compiler and routing certificates. Phys
 W70 accepts nine corrected finite reflection, scalar transport and source-functional scopes. General carrier classification, physical selector, action/measure choice and full positivity remain open. Main `08986aee8ae358cc05c8424d4e048aa7019f1231`; no audit grade.
 
 W71 accepts seven corrected finite #7315 scopes and separately completes its process/archive disposition. Arbitrary carriers and histories, global classifications, limits, physical selection and process interpretations remain open. Main `f87e3bb1f1c404613afc2c15e31d46fc0fefcf72`; no audit grade.
+
+W72 completes backlog disposition with 13 corrected finite carrier/reflection/positivity notes. Physical action and measure selection, global positivity/reconstruction, unreproduced historical alternatives and the eight broader Maxwell obligations remain open. Main `b657ae9a1b9431c046db2be217d6fbc11afada1a`; no audit grade.

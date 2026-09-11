@@ -1,21 +1,14 @@
-# Backlog review and landing — current handoff
+# Backlog review and landing — complete
 
-Updated after W71. Main is `f87e3bb1f1c404613afc2c15e31d46fc0fefcf72`. Of the 18 released originals, 17 are landed and closed; #7359 remains. The original 254 cutoff stays fixed; later arrivals remain excluded. Formal audit waits until a solid TOE is ready.
+Updated 2026-09-11T06:21:52.172575+00:00; main `b657ae9a1b9431c046db2be217d6fbc11afada1a`. All 18 requested PRs are landed and closed. The fixed 254 PR backlog has 144 direct landing closures and 110 documented cleanup/consolidation closures; zero original PRs or drafts remain open.
 
-| Disposition | Original PRs |
-| --- | ---: |
-| Closed directly after reviewed landing | 143 |
-| Closed through draft cleanup or source-preserving consolidation | 110 |
-| Still open, all released for review | 1 |
-| Original membership | 254 |
+238 reviewed original science scopes landed: 139 direct science and 99 consolidated science. The 144 direct closures also include one partial Maxwell, one meta, two process scopes and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. No transferred scope remains pending on an open successor; historical and unproved scientific obligations remain recorded.
 
-225 reviewed original science scopes landed: 138 direct science and 87 consolidated science. The 143 direct closures additionally include one partial Maxwell, one meta, two process scopes and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 12 pending scopes at successor #7359.
+Including the seven pre-cutoff arrivals, the session has 151 direct closures, 72 science/source batches, 280 new documents and 70 batches with one combined gate. The tracked ledger remains 4700 rows (4325 unaudited science, 375 meta); 55 notes await mechanical refresh. No audit verdict was applied.
 
-Zero original-backlog drafts remain. Including pre-cutoff #8003–#8009, the session has 150 direct closures, 71 completed science/source batches and 267 new source documents; 69 batches passed one combined gate. The tracked ledger remains 4700 rows: 4325 unaudited science and 375 meta; 42 notes await mechanical refresh. No audit verdict has been applied.
+W72 lands 13 corrected notes covering #7359 and its 12 transfers. The three units report 110 current passing checks and zero current failures. Block179's first failed symbolic-zero check and C's first helper conversion failure are preserved with the independently reviewed corrections and affected reruns. The combined gate passed once in 258.334 seconds. Original branches and all original bodies remain recoverable. [Evidence](backlog_evidence/wave72-20260911/INDEX.json).
 
-W71 lands seven corrected #7315 transfers. The final C005 and D002 runs passed 57 assertions with zero failures in 31.319539252 seconds. Successful C004 and D001 evidence (27.944175959 and 2.975136083 seconds) remains preserved after source/input changes. The first precommit diff check found only archive and Markdown whitespace; no science failed, and the combined gate ran once and passed in 248.184 seconds. The 46-path landing includes seven canonical notes and closes #7315's process/archive scope without accepting new #7315 science. [Evidence](backlog_evidence/wave71-20260911/INDEX.json).
-
-Seventeen of 18 released originals are landed and closed. #7359 remains with twelve pending transferred scopes and its own scope: A and B have final source confirmation with 39 and 31 fresh PASS respectively but are not on main; C correction authoring is active. Formal audit is deferred and later arrivals remain excluded.
+Formal audit waits until a solid TOE. Later PR arrivals remain outside this completed cutoff. Continue science using corrected source boundaries and the unresolved obligations in the scorecard.
 
 ## Landed source history
 
@@ -423,3 +416,5 @@ W69: #7333 finite Gaussian compiler and routing certificates; main `762664127493
 W70: seven corrected #7315 transfers and #7332/#7334 landed; main `08986aee8ae358cc05c8424d4e048aa7019f1231`; evidence `backlog_evidence/wave70/INDEX.json`.
 
 W71: seven corrected #7315 transfers and its process/archive completion landed; main `f87e3bb1f1c404613afc2c15e31d46fc0fefcf72`; evidence `backlog_evidence/wave71-20260911/INDEX.json`.
+
+W72: final #7359 science and transferred scopes landed; main `b657ae9a1b9431c046db2be217d6fbc11afada1a`; evidence `backlog_evidence/wave72-20260911/INDEX.json`.
