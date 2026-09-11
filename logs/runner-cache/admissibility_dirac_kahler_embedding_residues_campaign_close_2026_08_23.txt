@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_embedding_residues_campaign_close_2026_08_23.py
+runner_sha256: 49acec09338edbf18c11a704138dcd84745187957d5b97d61241a1b740e7a483
+input_fingerprint_sha256: dc68c7fb497b0a666e752871ef3fb605a6f70b04e3625694878acac5d8f391f8
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 3.20
+status: ok
+----- stdout -----
+PASS: finite three-cycle orbit :: U E=E P3 on the chosen three-site orbit
+PASS: conjugate-character scalar indifference :: betas=(3193/2240,3193/2240), restriction=Matrix([[3193/2240, 0, 0], [0, 3193/2240, 0], [0, 0, 3193/2240]])
+PASS: commutation differs from metric preservation :: 2I is invertible and commutes with cI but is not an R-isometry; P3 is unitary
+PASS: historical matrix witness is not a basis change :: rank(e0 e1^T)=1
+PASS: twelve-copy finite ledger :: levels={0: 3193/2240, 1: 43/35, 2: 3193/2240, 3: 1817/1120, 4: 1817/1120, 5: 1817/1120}, offdiagonal_gram_entries=36
+PASS: supplied additive count leaves multiplicity open :: one selected copy and all twelve copies give different supplied arithmetic
+PASS: literal input closure and pending-fiber fence :: float_literals=0, inputs_bound=True, open_obligations=6
+per_element: a scalar orbit metric commutes with every matrix but is preserved only by unitary basis changes
+per_site: one chosen three-site orbit carries an exact C3 module map
+per_mode: conjugate characters have different translation eigenvalues and equal values only for the tested scalar restriction
+per_block: multiplicity, six bridge supplies, and the historical fiber-response interpretation remain open
+lattice_wide: no physical carrier equivalence, orientation elimination, campaign-close theorem, premise, axiom, audit, or TOE conclusion follows
+TOTAL: 7/7 PASS
+
+----- stderr -----
+

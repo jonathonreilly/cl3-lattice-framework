@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_conditional_symmetric_power_theorem_2026_08_23.py
+runner_sha256: 3c7bc370b678bc571877daf5090cfeceb728f83d02522940f6ddc9d4a38fac9f
+input_fingerprint_sha256: b8c82dc0474b016bb3854fa7b691c005fcb013aba0bc27185a9b8b6b37be98c5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.88
+status: ok
+----- stdout -----
+PASS: degree-2 permanent minor :: det=-2*p**2*(a**2 + b**2 + p*qq)
+PASS: degree-3 permanent minor :: det=-12*p**4*(a**2 + b**2 + p*qq)
+PASS: degree-4 permanent minor :: det=-144*p**6*(a**2 + b**2 + p*qq)
+PASS: 8x4 dial 0 exact candidate construction :: action_inertia=(4, 0, 4), covariance_inertia=(6, 2, 0), raw_covariance_hermitian=False
+PASS: 8x4 dial 1/4 exact candidate construction :: action_inertia=(5, 3, 0), covariance_inertia=(6, 2, 0), raw_covariance_hermitian=False
+PASS: 12x4 dial 0 exact candidate construction :: action_inertia=(4, 0, 4), covariance_inertia=(4, 4, 0), raw_covariance_hermitian=False
+PASS: 12x4 dial 1/4 exact candidate construction :: action_inertia=(4, 4, 0), covariance_inertia=(4, 4, 0), raw_covariance_hermitian=False
+PASS: finite action-side inertia ledger :: measured={('8x4', 0): (4, 0, 4), ('8x4', 1/4): (5, 3, 0), ('12x4', 0): (4, 0, 4), ('12x4', 1/4): (4, 4, 0)}
+PASS: finite covariance-side inertia ledger :: measured={('8x4', 0): (6, 2, 0), ('8x4', 1/4): (6, 2, 0), ('12x4', 0): (4, 4, 0), ('12x4', 1/4): (4, 4, 0)}
+PASS: 8x4 action region is PSD :: inertia=(4, 0, 4)
+PASS: 12x4 action region is PSD :: inertia=(4, 0, 4)
+PASS: normalized symmetric vacuum :: Sym^0 coefficient is one; an unnormalized Gaussian prefactor is separate
+PASS: literal input closure and bounded note :: float_literals=0, inputs_bound=True
+per_element: the permanent minor uses |r|^2 and is negative only under its mixed-kernel hypotheses
+per_site: action-side and covariance-side candidates are reconstructed on two supplied covers
+per_mode: at s_t=0 the action-side form is PSD while the covariance candidate remains mixed
+per_block: the normalized vacuum is one; any dial-sensitive Gaussian prefactor is an extra convention
+lattice_wide: no physical source grading, unique readout, continuum theorem, premise, axiom, audit, or TOE conclusion follows
+TOTAL: 13/13 PASS
+
+----- stderr -----
+

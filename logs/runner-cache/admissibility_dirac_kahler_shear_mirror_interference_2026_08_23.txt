@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_shear_mirror_interference_2026_08_23.py
+runner_sha256: 9673a4f51b942149a78bdc27aaee0677c8221bf35655f6c181dff907c814a09c
+input_fingerprint_sha256: 0da2e1a2875310a73945a74068a09793eaea91736d16465bbbe5eb6e614668b2
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.66
+status: ok
+----- stdout -----
+PASS: 8x4 flat mirror control :: zero shear and unit volume pass both finite tests
+PASS: 8x4 non-flat volume control :: repeating_diagonal=(25/16, 3/2, 17/8, 17/6)
+PASS: 8x4 tested shear profiles :: ambient=64, pinned=32
+PASS: 8x4 single-level accounting :: pure_b=16, physical_profile=24
+PASS: 12x4 flat mirror control :: zero shear and unit volume pass both finite tests
+PASS: 12x4 non-flat volume control :: repeating_diagonal=(25/16, 3/2, 17/8, 17/6)
+PASS: 12x4 tested shear profiles :: ambient=96, pinned=64
+PASS: 12x4 single-level accounting :: pure_b=16, physical_profile=24
+PASS: 8x4 exact transport family :: commutator=(16, 64, 72), transpose=(16, 64, 72)
+PASS: 8x4 finite candidate-family contrast :: 1/det Herm(Q) and a constant are dial-blind; determinant modulus changes
+PASS: 12x4 exact transport family :: commutator=(32, 96, 112), transpose=(24, 104, 116)
+PASS: 12x4 finite candidate-family contrast :: 1/det Herm(Q) and a constant are dial-blind; determinant modulus changes
+PASS: literal input closure and historical-interference fence :: float_literals=0, inputs_bound=True
+per_element: rQr=Q^T is the antiunitary condition; the commutator test is retained only as a comparison
+per_site: flat and one non-flat volume profile pass, while the separately tested shear profiles fail
+per_mode: transport support counts are exact for two finite extents and differ across them
+per_block: candidate function families do not select a unique readout; interference brackets remain historical
+lattice_wide: no carrier classification, OS no-go, physical interference theorem, premise, axiom, audit, or TOE conclusion follows
+TOTAL: 13/13 PASS
+
+----- stderr -----
+

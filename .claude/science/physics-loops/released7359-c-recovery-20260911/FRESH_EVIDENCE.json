@@ -1,0 +1,595 @@
+{
+  "axiom_or_premise_adoption": false,
+  "base": "08986aee8ae358cc05c8424d4e048aa7019f1231",
+  "claim_scope": "bounded finite computations for Blocks 184-188 only",
+  "elapsed_sec": 44.425807457068,
+  "execution_history": {
+    "producer01": {
+      "canonical_cache_sha256_at_attempt_end": {
+        "logs/runner-cache/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.txt": "2858225b608d0ec394ce101ff9a9df82c2d9aa32e1cafd09b484b67728a74716",
+        "logs/runner-cache/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.txt": "8fbcfd2d7b26f160084892013887363c71216410cca329b7b23084e911ac5729",
+        "logs/runner-cache/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.txt": "e40ba5ff711e0a4ea1167f8a9469d786b4d022bc88b3aa3d5d547ebef1a7114c"
+      },
+      "completed_successful_runs": [
+        "block184",
+        "block185"
+      ],
+      "failed_run": "block186",
+      "failure_disposition": "The exact SymPy comparison returned BooleanFalse; converting the decidable SymPy boolean explicitly to Python bool repaired only the sign-counter runtime boundary. Because the shared helper changed, all five runners were rebound and freshly executed in producer02.",
+      "not_run": [
+        "block187",
+        "block188"
+      ],
+      "preserved_cache_snapshots": {
+        "bytes": 1136,
+        "path": "7359/fixes-C/producer-01/cache-snapshots/RECEIPT.json",
+        "sha256": "a50dfae0cad93b38b7de271feb269fb6d671480d3184abf268f53d3fa4e50be7"
+      },
+      "status": "stopped_on_block186_runtime_type_error",
+      "summary": {
+        "bytes": 6717,
+        "path": "7359/fixes-C/producer-01/SUMMARY.json",
+        "sha256": "44736837322279d4eb1f82855dfb3e0970a51b76438db6fb73b4a0ac1061a369"
+      }
+    },
+    "producer02": {
+      "automatic_retry": false,
+      "canonical_cache_sha256": {
+        "logs/runner-cache/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.txt": "bfa4c7fd16844f24020731e3d7e8d4dbc5d9f05e25a388e5d9e6254d9001e674",
+        "logs/runner-cache/admissibility_dirac_kahler_positivity_window_characterization_2026_08_24.txt": "8ed2192cb0e693da880cc81ef71d3188433e54b767d1d09fd6b6047b1d8eb431",
+        "logs/runner-cache/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.txt": "a0c27b98373d4d7449d01d4b90747b0f6d95de2b377af97968728aab0e63c800",
+        "logs/runner-cache/admissibility_dirac_kahler_site_os_positivity_2026_08_24.txt": "b45e1896f66bd47ac9575a7bf0088e0d9109dc119c39b5279c19017c6d34ea89",
+        "logs/runner-cache/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.txt": "c311af526845c8a3219b2dd6f2d965b5ca7042c91a37bc2d124eec13f79cbff5"
+      },
+      "status": "pass_40_fail_0",
+      "summary": {
+        "bytes": 13080,
+        "path": "7359/fixes-C/producer-02/SUMMARY.json",
+        "sha256": "1d031ca11ae17ca406cf02f1ef8b332f56a39fd0a933d650864ba7bcf73f51fb"
+      }
+    }
+  },
+  "fail": 0,
+  "formal_audit": false,
+  "fresh_execution": {
+    "automatic_retry": false,
+    "failure": null,
+    "runs": [
+      {
+        "automatic_retry": false,
+        "cache_exists": true,
+        "cache_header": {
+          "exit_code": "0",
+          "input_fingerprint_sha256": "adebb76dbd24281527e96addcd4a6f7b1bc87381ed124bb7fb736a4c85ec43c7",
+          "runner_path": "scripts/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.py",
+          "runner_sha256": "1835a1d8452ade43a10fd1dad845b4ada0e544dfa514141a80c1039001827c50",
+          "status": "ok"
+        },
+        "cache_path": "logs/runner-cache/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.txt",
+        "cache_path_matches": true,
+        "cache_sha256": "c311af526845c8a3219b2dd6f2d965b5ca7042c91a37bc2d124eec13f79cbff5",
+        "command": [
+          "python3",
+          "scripts/cached_runner_output.py",
+          "--refresh",
+          "--timeout-sec",
+          "120",
+          "scripts/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.py"
+        ],
+        "cwd": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7359-c-20260911",
+        "declared_runner_timeout_seconds": 120,
+        "elapsed_seconds": 2.0421815830050036,
+        "expected_fresh_cache_identity": {
+          "input_fingerprint_sha256": "adebb76dbd24281527e96addcd4a6f7b1bc87381ed124bb7fb736a4c85ec43c7",
+          "runner_sha256": "1835a1d8452ade43a10fd1dad845b4ada0e544dfa514141a80c1039001827c50"
+        },
+        "expected_total": "TOTAL: PASS=8 FAIL=0",
+        "expected_total_present": true,
+        "forced_refresh": true,
+        "formal_audit": false,
+        "head": "08986aee8ae358cc05c8424d4e048aa7019f1231",
+        "header_execution_ok": true,
+        "header_identity_matches": true,
+        "inputs_unchanged": true,
+        "max_process_group_rss_bytes": 96223232,
+        "monitor_failure": null,
+        "name": "block184",
+        "outer_timeout_seconds": 150,
+        "preexisting_cache": true,
+        "prior_cache_header": {
+          "exit_code": "0",
+          "input_fingerprint_sha256": "12abbdace3c07ef63bfe19c661ebdae6bdbd7fc139f6faca461ce66c8b260186",
+          "runner_path": "scripts/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.py",
+          "runner_sha256": "c018774c3b317fd3b5788d89ee49bc3ac7c4ad1cf601ae80c93e2f9d5a195492",
+          "status": "ok"
+        },
+        "prior_cache_sha256_actual": "e40ba5ff711e0a4ea1167f8a9469d786b4d022bc88b3aa3d5d547ebef1a7114c",
+        "prior_cache_sha256_expected": "e40ba5ff711e0a4ea1167f8a9469d786b4d022bc88b3aa3d5d547ebef1a7114c",
+        "prior_cache_snapshot": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-released18-20260910/7359/fixes-C/producer-01/cache-snapshots/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.txt",
+        "resource_failure": null,
+        "rss_limit_bytes": 2147483648,
+        "runner_cache_status": "fresh",
+        "source_input_count": 10,
+        "timeout_override_seconds": 120,
+        "wrapper_cli_exit_code": 0
+      },
+      {
+        "automatic_retry": false,
+        "cache_exists": true,
+        "cache_header": {
+          "exit_code": "0",
+          "input_fingerprint_sha256": "e8b816ef28c39191082ae06dbb1f797daca42735d6a6448c3acd9dd869d96329",
+          "runner_path": "scripts/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.py",
+          "runner_sha256": "f2c48488caeb65d7e1d35cb40c523ba725e4357ebf462ebae8aaade0283a989d",
+          "status": "ok"
+        },
+        "cache_path": "logs/runner-cache/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.txt",
+        "cache_path_matches": true,
+        "cache_sha256": "bfa4c7fd16844f24020731e3d7e8d4dbc5d9f05e25a388e5d9e6254d9001e674",
+        "command": [
+          "python3",
+          "scripts/cached_runner_output.py",
+          "--refresh",
+          "--timeout-sec",
+          "120",
+          "scripts/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.py"
+        ],
+        "cwd": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7359-c-20260911",
+        "declared_runner_timeout_seconds": 120,
+        "elapsed_seconds": 4.118013500003144,
+        "expected_fresh_cache_identity": {
+          "input_fingerprint_sha256": "e8b816ef28c39191082ae06dbb1f797daca42735d6a6448c3acd9dd869d96329",
+          "runner_sha256": "f2c48488caeb65d7e1d35cb40c523ba725e4357ebf462ebae8aaade0283a989d"
+        },
+        "expected_total": "TOTAL: PASS=8 FAIL=0",
+        "expected_total_present": true,
+        "forced_refresh": true,
+        "formal_audit": false,
+        "head": "08986aee8ae358cc05c8424d4e048aa7019f1231",
+        "header_execution_ok": true,
+        "header_identity_matches": true,
+        "inputs_unchanged": true,
+        "max_process_group_rss_bytes": 96354304,
+        "monitor_failure": null,
+        "name": "block185",
+        "outer_timeout_seconds": 150,
+        "preexisting_cache": true,
+        "prior_cache_header": {
+          "exit_code": "0",
+          "input_fingerprint_sha256": "b98e42802fc687601347af6c9fc0acbcc6c81261a5f00b00efe6ee38f2d41952",
+          "runner_path": "scripts/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.py",
+          "runner_sha256": "635bbb6659c3f1ddde03c89d4f9fd564e0f1747dbb3bbaa2f97fe0b338511a60",
+          "status": "ok"
+        },
+        "prior_cache_sha256_actual": "2858225b608d0ec394ce101ff9a9df82c2d9aa32e1cafd09b484b67728a74716",
+        "prior_cache_sha256_expected": "2858225b608d0ec394ce101ff9a9df82c2d9aa32e1cafd09b484b67728a74716",
+        "prior_cache_snapshot": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-released18-20260910/7359/fixes-C/producer-01/cache-snapshots/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.txt",
+        "resource_failure": null,
+        "rss_limit_bytes": 2147483648,
+        "runner_cache_status": "fresh",
+        "source_input_count": 11,
+        "timeout_override_seconds": 120,
+        "wrapper_cli_exit_code": 0
+      },
+      {
+        "automatic_retry": false,
+        "cache_exists": true,
+        "cache_header": {
+          "exit_code": "0",
+          "input_fingerprint_sha256": "e3f270aed17b4e7c0da18eba234bbc9a24a67b3827e56bff5084b67f0d6a31e9",
+          "runner_path": "scripts/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.py",
+          "runner_sha256": "8f81d9184e2fdc1985a558f4021af88ff3b0a5ed27f53392113f454a68ba1e04",
+          "status": "ok"
+        },
+        "cache_path": "logs/runner-cache/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.txt",
+        "cache_path_matches": true,
+        "cache_sha256": "a0c27b98373d4d7449d01d4b90747b0f6d95de2b377af97968728aab0e63c800",
+        "command": [
+          "python3",
+          "scripts/cached_runner_output.py",
+          "--refresh",
+          "--timeout-sec",
+          "180",
+          "scripts/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.py"
+        ],
+        "cwd": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7359-c-20260911",
+        "declared_runner_timeout_seconds": 120,
+        "elapsed_seconds": 13.014887791010551,
+        "expected_fresh_cache_identity": {
+          "input_fingerprint_sha256": "e3f270aed17b4e7c0da18eba234bbc9a24a67b3827e56bff5084b67f0d6a31e9",
+          "runner_sha256": "8f81d9184e2fdc1985a558f4021af88ff3b0a5ed27f53392113f454a68ba1e04"
+        },
+        "expected_total": "TOTAL: PASS=8 FAIL=0",
+        "expected_total_present": true,
+        "forced_refresh": true,
+        "formal_audit": false,
+        "head": "08986aee8ae358cc05c8424d4e048aa7019f1231",
+        "header_execution_ok": true,
+        "header_identity_matches": true,
+        "inputs_unchanged": true,
+        "max_process_group_rss_bytes": 97992704,
+        "monitor_failure": null,
+        "name": "block186",
+        "outer_timeout_seconds": 220,
+        "preexisting_cache": true,
+        "prior_cache_header": {
+          "exit_code": "1",
+          "input_fingerprint_sha256": "50a7e1ccb6f93323d05eda627e69189675909aff0fb88591ffb17633ee587b86",
+          "runner_path": "scripts/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.py",
+          "runner_sha256": "693bd57dfe0c89ceaa4352165406584e3f1af0ae2bf4b22bc67951ed2fd8e3b4",
+          "status": "nonzero_exit"
+        },
+        "prior_cache_sha256_actual": "8fbcfd2d7b26f160084892013887363c71216410cca329b7b23084e911ac5729",
+        "prior_cache_sha256_expected": "8fbcfd2d7b26f160084892013887363c71216410cca329b7b23084e911ac5729",
+        "prior_cache_snapshot": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-released18-20260910/7359/fixes-C/producer-01/cache-snapshots/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.txt",
+        "resource_failure": null,
+        "rss_limit_bytes": 2147483648,
+        "runner_cache_status": "fresh",
+        "source_input_count": 11,
+        "timeout_override_seconds": 180,
+        "wrapper_cli_exit_code": 0
+      },
+      {
+        "automatic_retry": false,
+        "cache_exists": true,
+        "cache_header": {
+          "exit_code": "0",
+          "input_fingerprint_sha256": "62c5c6424be21ab1e81041b623f7a8a9291409c8b81446264c9b39362ea63d94",
+          "runner_path": "scripts/admissibility_dirac_kahler_positivity_window_characterization_2026_08_24.py",
+          "runner_sha256": "88ef28dc39ad4ab6fdb2aa1a58c173ae2267607dc9d0737cd77b6ff52b3ab14f",
+          "status": "ok"
+        },
+        "cache_path": "logs/runner-cache/admissibility_dirac_kahler_positivity_window_characterization_2026_08_24.txt",
+        "cache_path_matches": true,
+        "cache_sha256": "8ed2192cb0e693da880cc81ef71d3188433e54b767d1d09fd6b6047b1d8eb431",
+        "command": [
+          "python3",
+          "scripts/cached_runner_output.py",
+          "--refresh",
+          "--timeout-sec",
+          "240",
+          "scripts/admissibility_dirac_kahler_positivity_window_characterization_2026_08_24.py"
+        ],
+        "cwd": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7359-c-20260911",
+        "declared_runner_timeout_seconds": 120,
+        "elapsed_seconds": 21.549129208025988,
+        "expected_fresh_cache_identity": {
+          "input_fingerprint_sha256": "62c5c6424be21ab1e81041b623f7a8a9291409c8b81446264c9b39362ea63d94",
+          "runner_sha256": "88ef28dc39ad4ab6fdb2aa1a58c173ae2267607dc9d0737cd77b6ff52b3ab14f"
+        },
+        "expected_total": "TOTAL: PASS=8 FAIL=0",
+        "expected_total_present": true,
+        "forced_refresh": true,
+        "formal_audit": false,
+        "head": "08986aee8ae358cc05c8424d4e048aa7019f1231",
+        "header_execution_ok": true,
+        "header_identity_matches": true,
+        "inputs_unchanged": true,
+        "max_process_group_rss_bytes": 97665024,
+        "monitor_failure": null,
+        "name": "block187",
+        "outer_timeout_seconds": 300,
+        "preexisting_cache": false,
+        "prior_cache_header": null,
+        "prior_cache_sha256_actual": null,
+        "prior_cache_sha256_expected": null,
+        "prior_cache_snapshot": null,
+        "resource_failure": null,
+        "rss_limit_bytes": 2147483648,
+        "runner_cache_status": "fresh",
+        "source_input_count": 11,
+        "timeout_override_seconds": 240,
+        "wrapper_cli_exit_code": 0
+      },
+      {
+        "automatic_retry": false,
+        "cache_exists": true,
+        "cache_header": {
+          "exit_code": "0",
+          "input_fingerprint_sha256": "dbdbb806f88977493280e9ea76eb82b0f3d94d7732ab326514cf02ab3c86fe77",
+          "runner_path": "scripts/admissibility_dirac_kahler_site_os_positivity_2026_08_24.py",
+          "runner_sha256": "2d957b5afc28cb9576067a4019f62abf041c95751cc2ab94a5f9fee0922bed02",
+          "status": "ok"
+        },
+        "cache_path": "logs/runner-cache/admissibility_dirac_kahler_site_os_positivity_2026_08_24.txt",
+        "cache_path_matches": true,
+        "cache_sha256": "b45e1896f66bd47ac9575a7bf0088e0d9109dc119c39b5279c19017c6d34ea89",
+        "command": [
+          "python3",
+          "scripts/cached_runner_output.py",
+          "--refresh",
+          "--timeout-sec",
+          "180",
+          "scripts/admissibility_dirac_kahler_site_os_positivity_2026_08_24.py"
+        ],
+        "cwd": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7359-c-20260911",
+        "declared_runner_timeout_seconds": 120,
+        "elapsed_seconds": 3.7015953750233166,
+        "expected_fresh_cache_identity": {
+          "input_fingerprint_sha256": "dbdbb806f88977493280e9ea76eb82b0f3d94d7732ab326514cf02ab3c86fe77",
+          "runner_sha256": "2d957b5afc28cb9576067a4019f62abf041c95751cc2ab94a5f9fee0922bed02"
+        },
+        "expected_total": "TOTAL: PASS=8 FAIL=0",
+        "expected_total_present": true,
+        "forced_refresh": true,
+        "formal_audit": false,
+        "head": "08986aee8ae358cc05c8424d4e048aa7019f1231",
+        "header_execution_ok": true,
+        "header_identity_matches": true,
+        "inputs_unchanged": true,
+        "max_process_group_rss_bytes": 107921408,
+        "monitor_failure": null,
+        "name": "block188",
+        "outer_timeout_seconds": 220,
+        "preexisting_cache": false,
+        "prior_cache_header": null,
+        "prior_cache_sha256_actual": null,
+        "prior_cache_sha256_expected": null,
+        "prior_cache_snapshot": null,
+        "resource_failure": null,
+        "rss_limit_bytes": 2147483648,
+        "runner_cache_status": "fresh",
+        "source_input_count": 12,
+        "timeout_override_seconds": 180,
+        "wrapper_cli_exit_code": 0
+      }
+    ],
+    "summary": {
+      "bytes": 13080,
+      "path": "7359/fixes-C/producer-02/SUMMARY.json",
+      "sha256": "1d031ca11ae17ca406cf02f1ef8b332f56a39fd0a933d650864ba7bcf73f51fb"
+    }
+  },
+  "pass": 40,
+  "producer_attempts": 2,
+  "producer_runs": 5,
+  "recovery_status": {
+    "immutable_recovery_freeze": {
+      "path": ".claude/science/physics-loops/released7359-c-recovery-20260911/RECOVERY_FREEZE.json",
+      "sha256": "b47e4fef0465c2f98cb47ac2f9308864a20f4141e6536b20ad4cba82dfcfa2a8"
+    },
+    "interpretation": "Null or pending execution/cache fields in the immutable recovery packet describe its preexecution freeze. This record binds the final source004 bytes to producer02 fresh PASS evidence and the final reviewer confirmation.",
+    "original_occurrences": 26,
+    "original_unique_paths": 22,
+    "preexecution_pending_fields_superseded": true,
+    "superseding_record": ".claude/science/physics-loops/released7359-c-recovery-20260911/FRESH_EVIDENCE.json"
+  },
+  "review_binding": {
+    "fresh_output_confirmation": {
+      "bytes": 14015,
+      "path": "7359/review-C/output-confirmation-002/RECEIPT.json",
+      "sha256": "ed35e3cbbb21963c57d42021111d6ba5e6f660e78f7b77b73a47c3ce0d48f461"
+    },
+    "reviewer_science_execution": false,
+    "source_stage_confirmation": {
+      "bytes": 1206,
+      "path": "7359/review-C/source-stage-confirmation-004/RECEIPT.json",
+      "sha256": "7f1dbd6e14ce52d7e3130f4773a35c33ae460060f27cd1cdd6673e87aab49af8"
+    }
+  },
+  "root_validation": {
+    "C_ROOT_PREFLIGHT002.json": {
+      "bytes": 6838,
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave72-validation/C_ROOT_PREFLIGHT002.json",
+      "sha256": "a6647e0e7ea013db17928b45298fc060d54cee25a30f51275f0189e5ea972b55"
+    },
+    "C_ROOT_PREFLIGHT003.json": {
+      "bytes": 870,
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave72-validation/C_ROOT_PREFLIGHT003.json",
+      "sha256": "017550a2ceb3ff5a08bb6675f4bb4512d6fa112b9d64311a62c6b1b7aff6afa6"
+    },
+    "C_ROOT_PREFLIGHT004.json": {
+      "bytes": 997,
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave72-validation/C_ROOT_PREFLIGHT004.json",
+      "sha256": "640cd10a175bc0f97c59d40fb546024498b14e8391f6bc34dedd4404d3f1f7ef"
+    },
+    "C_ROOT_PRODUCER01_GO.json": {
+      "bytes": 3359,
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave72-validation/C_ROOT_PRODUCER01_GO.json",
+      "sha256": "bb3ee3dd230d332fe8c675b4d7d4b739286b93734c565f3af54641c0f0100698"
+    },
+    "C_ROOT_PRODUCER02_GO.json": {
+      "bytes": 4629,
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave72-validation/C_ROOT_PRODUCER02_GO.json",
+      "sha256": "9aeef68ccdefeee69b93612aec468700a98b4afbbde8e537624faef74df280c1"
+    },
+    "C_ROOT_PRODUCER02_READ.json": {
+      "bytes": 381,
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave72-validation/C_ROOT_PRODUCER02_READ.json",
+      "sha256": "64c42118bfc273f44aad74391f34a58a6758e1add3a38409528ae0f005274fc6"
+    },
+    "C_ROOT_WATCHDOG_READ.json": {
+      "bytes": 3262,
+      "path": "/Users/jonreilly/Documents/Codex/toe-campaign-2026-09-07/backlog-wave72-validation/C_ROOT_WATCHDOG_READ.json",
+      "sha256": "9b286761b7d21f91c0223cf6d2c5497f28a46df55cd319f2f4748a0fcc7f0a71"
+    }
+  },
+  "runtime_binding": {
+    "input_maps": {
+      "bytes": 14456,
+      "path": "7359/fixes-C/runtime-draft-003/EXECUTION_SOURCE_INPUT_MAPS.json",
+      "sha256": "e709bd1035ecef82cdad5facbc603acdbfddb4a38b016047a5044604b5b78d98"
+    },
+    "maps": {
+      "scripts/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.py": {
+        "paths": [
+          "scripts/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_OS_SEAM_GLUED_GRAM_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          ".claude/science/physics-loops/toe-axiom-closure-block185-curved-os-seam-glued-gram-20260824/NO_GO_LEDGER.md",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_TEMPORAL_LINK_EXTRACTION_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "docs/audit/data/axiom_premise_nodes.json"
+        ],
+        "sha256": {
+          ".claude/science/physics-loops/toe-axiom-closure-block185-curved-os-seam-glued-gram-20260824/NO_GO_LEDGER.md": "eb3acc2666213a58dfc6088f7a7eb6159cf7dd953a85da57e371a2b30450fea7",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md": "b3e42b85ff4bd29edd2d3c65bb1685503560af6b512013e062a93601c8661990",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_OS_SEAM_GLUED_GRAM_BOUNDED_THEOREM_NOTE_2026-08-24.md": "f2ea677ea996a69b018d1f910e962669fd4938968e67bd03b1854826b4fb5a36",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md": "9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_TEMPORAL_LINK_EXTRACTION_BOUNDED_THEOREM_NOTE_2026-08-24.md": "660ae4597d0f7eb0ea24347bc189020f772c330afa4fb11fcc921e1b6ea62776",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py": "4299d645f687bec12d945598cca1df5c13a73c871a9e6ad1459e7e6b17c5bab5",
+          "scripts/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.py": "f2c48488caeb65d7e1d35cb40c523ba725e4357ebf462ebae8aaade0283a989d",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py": "98531485267696a626892d55abf52938c49d2a6f9c870175362d01ddd287aa20",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445"
+        }
+      },
+      "scripts/admissibility_dirac_kahler_positivity_window_characterization_2026_08_24.py": {
+        "paths": [
+          "scripts/admissibility_dirac_kahler_positivity_window_characterization_2026_08_24.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_POSITIVITY_WINDOW_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          ".claude/science/physics-loops/toe-axiom-closure-block187-positivity-window-characterization-20260824/NO_GO_LEDGER.md",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_OS_SEAM_GLUED_GRAM_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "docs/audit/data/axiom_premise_nodes.json"
+        ],
+        "sha256": {
+          ".claude/science/physics-loops/toe-axiom-closure-block187-positivity-window-characterization-20260824/NO_GO_LEDGER.md": "2cee9a946362159c299ada77c47838a263ba12bae2351ff0c2b9036787a3225d",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md": "b3e42b85ff4bd29edd2d3c65bb1685503560af6b512013e062a93601c8661990",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_OS_SEAM_GLUED_GRAM_BOUNDED_THEOREM_NOTE_2026-08-24.md": "f2ea677ea996a69b018d1f910e962669fd4938968e67bd03b1854826b4fb5a36",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_POSITIVITY_WINDOW_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-08-24.md": "1376e61157e96d3d2aeecde42d4244f36a73655dba560dce1eb27af0cef3e38a",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md": "9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py": "4299d645f687bec12d945598cca1df5c13a73c871a9e6ad1459e7e6b17c5bab5",
+          "scripts/admissibility_dirac_kahler_positivity_window_characterization_2026_08_24.py": "88ef28dc39ad4ab6fdb2aa1a58c173ae2267607dc9d0737cd77b6ff52b3ab14f",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py": "98531485267696a626892d55abf52938c49d2a6f9c870175362d01ddd287aa20",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445"
+        }
+      },
+      "scripts/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.py": {
+        "paths": [
+          "scripts/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SECTION_FRAME_INERTIA_WALL_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          ".claude/science/physics-loops/toe-axiom-closure-block186-section-frame-inertia-wall-20260824/NO_GO_LEDGER.md",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_TEMPORAL_LINK_EXTRACTION_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "docs/audit/data/axiom_premise_nodes.json"
+        ],
+        "sha256": {
+          ".claude/science/physics-loops/toe-axiom-closure-block186-section-frame-inertia-wall-20260824/NO_GO_LEDGER.md": "1df18679f45cc677ae463b23917636e53cb2a9ee7585270180a63f832c0bc981",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md": "b3e42b85ff4bd29edd2d3c65bb1685503560af6b512013e062a93601c8661990",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SECTION_FRAME_INERTIA_WALL_BOUNDED_THEOREM_NOTE_2026-08-24.md": "7bdbb9c44680e1386fad37246a8598221c47c59fd6bd6bbc844764567a596160",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md": "9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_TEMPORAL_LINK_EXTRACTION_BOUNDED_THEOREM_NOTE_2026-08-24.md": "660ae4597d0f7eb0ea24347bc189020f772c330afa4fb11fcc921e1b6ea62776",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py": "4299d645f687bec12d945598cca1df5c13a73c871a9e6ad1459e7e6b17c5bab5",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py": "98531485267696a626892d55abf52938c49d2a6f9c870175362d01ddd287aa20",
+          "scripts/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.py": "8f81d9184e2fdc1985a558f4021af88ff3b0a5ed27f53392113f454a68ba1e04",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445"
+        }
+      },
+      "scripts/admissibility_dirac_kahler_site_os_positivity_2026_08_24.py": {
+        "paths": [
+          "scripts/admissibility_dirac_kahler_site_os_positivity_2026_08_24.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SITE_OS_POSITIVITY_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          ".claude/science/physics-loops/toe-axiom-closure-block188-site-os-positivity-20260824/NO_GO_LEDGER.md",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_POSITIVITY_WINDOW_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_OS_SEAM_GLUED_GRAM_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "docs/audit/data/axiom_premise_nodes.json"
+        ],
+        "sha256": {
+          ".claude/science/physics-loops/toe-axiom-closure-block188-site-os-positivity-20260824/NO_GO_LEDGER.md": "9594254818453d592b5c55b7e4cc90b6af95d1bf7f411ce7c340048584fd4a6e",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md": "b3e42b85ff4bd29edd2d3c65bb1685503560af6b512013e062a93601c8661990",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_OS_SEAM_GLUED_GRAM_BOUNDED_THEOREM_NOTE_2026-08-24.md": "f2ea677ea996a69b018d1f910e962669fd4938968e67bd03b1854826b4fb5a36",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_POSITIVITY_WINDOW_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-08-24.md": "1376e61157e96d3d2aeecde42d4244f36a73655dba560dce1eb27af0cef3e38a",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md": "9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SITE_OS_POSITIVITY_BOUNDED_THEOREM_NOTE_2026-08-24.md": "baae64a776dca68fbf3ff242b04a985364e89afe33d0e0b26716ea73d74381ce",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py": "4299d645f687bec12d945598cca1df5c13a73c871a9e6ad1459e7e6b17c5bab5",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py": "98531485267696a626892d55abf52938c49d2a6f9c870175362d01ddd287aa20",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445",
+          "scripts/admissibility_dirac_kahler_site_os_positivity_2026_08_24.py": "2d957b5afc28cb9576067a4019f62abf041c95751cc2ab94a5f9fee0922bed02"
+        }
+      },
+      "scripts/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.py": {
+        "paths": [
+          "scripts/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_TEMPORAL_LINK_EXTRACTION_BOUNDED_THEOREM_NOTE_2026-08-24.md",
+          ".claude/science/physics-loops/toe-axiom-closure-block184-temporal-link-extraction-20260824/NO_GO_LEDGER.md",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "docs/audit/data/axiom_premise_nodes.json"
+        ],
+        "sha256": {
+          ".claude/science/physics-loops/toe-axiom-closure-block184-temporal-link-extraction-20260824/NO_GO_LEDGER.md": "402961732a2d4bc701591331b0a69dedf04fa5fa09641b0d27a03f6aabf6cefb",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_CARRIER_DEPENDENCY_BOUNDED_THEOREM_NOTE_2026-08-17.md": "b3e42b85ff4bd29edd2d3c65bb1685503560af6b512013e062a93601c8661990",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md": "9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33",
+          "docs/ADMISSIBILITY_DIRAC_KAHLER_TEMPORAL_LINK_EXTRACTION_BOUNDED_THEOREM_NOTE_2026-08-24.md": "660ae4597d0f7eb0ea24347bc189020f772c330afa4fb11fcc921e1b6ea62776",
+          "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+          "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+          "scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py": "4299d645f687bec12d945598cca1df5c13a73c871a9e6ad1459e7e6b17c5bab5",
+          "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py": "98531485267696a626892d55abf52938c49d2a6f9c870175362d01ddd287aa20",
+          "scripts/admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_2026_08_14.py": "5499cc2c1a75f19e07b717aeb6c9ef7779c45e1c5757d84701c5d88ca92bf445",
+          "scripts/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.py": "1835a1d8452ade43a10fd1dad845b4ada0e544dfa514141a80c1039001827c50"
+        }
+      }
+    },
+    "wrapper": {
+      "bytes": 14944,
+      "path": "7359/fixes-C/runtime-draft-003/execute_once.py",
+      "sha256": "149e385fb3f99cd1d0b990bbf6f9b39cb09e52716b2961f7240c3ac982c700cb"
+    }
+  },
+  "schema": "released7359_c_fresh_evidence_v1",
+  "source_binding": {
+    "files": {
+      ".claude/science/physics-loops/toe-axiom-closure-block184-temporal-link-extraction-20260824/NO_GO_LEDGER.md": "402961732a2d4bc701591331b0a69dedf04fa5fa09641b0d27a03f6aabf6cefb",
+      ".claude/science/physics-loops/toe-axiom-closure-block185-curved-os-seam-glued-gram-20260824/NO_GO_LEDGER.md": "eb3acc2666213a58dfc6088f7a7eb6159cf7dd953a85da57e371a2b30450fea7",
+      ".claude/science/physics-loops/toe-axiom-closure-block186-section-frame-inertia-wall-20260824/NO_GO_LEDGER.md": "1df18679f45cc677ae463b23917636e53cb2a9ee7585270180a63f832c0bc981",
+      ".claude/science/physics-loops/toe-axiom-closure-block187-positivity-window-characterization-20260824/NO_GO_LEDGER.md": "2cee9a946362159c299ada77c47838a263ba12bae2351ff0c2b9036787a3225d",
+      ".claude/science/physics-loops/toe-axiom-closure-block188-site-os-positivity-20260824/NO_GO_LEDGER.md": "9594254818453d592b5c55b7e4cc90b6af95d1bf7f411ce7c340048584fd4a6e",
+      "docs/ADMISSIBILITY_DIRAC_KAHLER_CURVED_OS_SEAM_GLUED_GRAM_BOUNDED_THEOREM_NOTE_2026-08-24.md": "f2ea677ea996a69b018d1f910e962669fd4938968e67bd03b1854826b4fb5a36",
+      "docs/ADMISSIBILITY_DIRAC_KAHLER_POSITIVITY_WINDOW_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-08-24.md": "1376e61157e96d3d2aeecde42d4244f36a73655dba560dce1eb27af0cef3e38a",
+      "docs/ADMISSIBILITY_DIRAC_KAHLER_SECTION_FRAME_INERTIA_WALL_BOUNDED_THEOREM_NOTE_2026-08-24.md": "7bdbb9c44680e1386fad37246a8598221c47c59fd6bd6bbc844764567a596160",
+      "docs/ADMISSIBILITY_DIRAC_KAHLER_SITE_OS_POSITIVITY_BOUNDED_THEOREM_NOTE_2026-08-24.md": "baae64a776dca68fbf3ff242b04a985364e89afe33d0e0b26716ea73d74381ce",
+      "docs/ADMISSIBILITY_DIRAC_KAHLER_TEMPORAL_LINK_EXTRACTION_BOUNDED_THEOREM_NOTE_2026-08-24.md": "660ae4597d0f7eb0ea24347bc189020f772c330afa4fb11fcc921e1b6ea62776",
+      "scripts/admissibility_dirac_kahler_curved_os_seam_glued_gram_2026_08_24.py": "f2c48488caeb65d7e1d35cb40c523ba725e4357ebf462ebae8aaade0283a989d",
+      "scripts/admissibility_dirac_kahler_positivity_window_characterization_2026_08_24.py": "88ef28dc39ad4ab6fdb2aa1a58c173ae2267607dc9d0737cd77b6ff52b3ab14f",
+      "scripts/admissibility_dirac_kahler_released7359_c_fixtures_2026_09_11.py": "98531485267696a626892d55abf52938c49d2a6f9c870175362d01ddd287aa20",
+      "scripts/admissibility_dirac_kahler_section_frame_inertia_wall_2026_08_24.py": "8f81d9184e2fdc1985a558f4021af88ff3b0a5ed27f53392113f454a68ba1e04",
+      "scripts/admissibility_dirac_kahler_site_os_positivity_2026_08_24.py": "2d957b5afc28cb9576067a4019f62abf041c95751cc2ab94a5f9fee0922bed02",
+      "scripts/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.py": "1835a1d8452ade43a10fd1dad845b4ada0e544dfa514141a80c1039001827c50"
+    },
+    "source_and_inputs_unchanged_during_final_execution": true,
+    "source_freeze": {
+      "bytes": 522,
+      "path": "7359/fixes-C/source-draft-004/FROZEN",
+      "sha256": "6bc84999886429c043534ee1800fc7d0d34d66cf69784a4f20b0250599da44cb"
+    },
+    "source_snapshot": {
+      "bytes": 2788,
+      "path": "7359/fixes-C/source-draft-004/SOURCE_SHA256.json",
+      "sha256": "bdaddd303f27863d4b4b57e3e3772ec1f6092382a617cd78030eea826bcc7eb8"
+    }
+  },
+  "status": "fresh_pass",
+  "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7359-c-20260911"
+}

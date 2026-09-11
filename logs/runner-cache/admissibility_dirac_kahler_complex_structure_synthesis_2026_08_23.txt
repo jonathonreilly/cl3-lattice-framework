@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_complex_structure_synthesis_2026_08_23.py
+runner_sha256: 4900833a3ba0ba4c7da00387418f7394d004750d4fc98dba9226ecba9f2315f0
+input_fingerprint_sha256: bdac719f212fb6cd8c90b248442f1e545af721c55b602b227fadcc9b35b7e2df
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.07
+status: ok
+----- stdout -----
+PASS: 12x6 finite orbit and complex characters :: restriction=Matrix([[3193/2240, 0, 0], [0, 3193/2240, 0], [0, 0, 3193/2240]]), betas=(3193/2240,3193/2240), antilinear=(0, 0)
+PASS: realification has the positive determinant power :: det_R=1059725808475991023249/126324651851776000000, |det_C|^2=1059725808475991023249/126324651851776000000
+PASS: paired Gaussian uses reciprocal realified determinant :: Z(Q)Z(Q^dagger)=pi^(2N)/det Real(Q) for N=3
+PASS: supplied complex structure :: J^2=Matrix([[-1, 0], [0, -1]])
+PASS: supplied slot comparison :: (r1,q1,r2,q2)=(1/2, 2/3, 1, 1); this map is supplied, not derived
+PASS: literal input closure and bounded note :: float_literals=0, inputs_bound=True
+per_element: determinant realification and the reciprocal Gaussian normalization are distinguished exactly
+per_site: one supplied 12x6 orbit has the displayed scalar sesquilinear restriction
+per_mode: the one-complex-slot arithmetic is a supplied comparison, not a physical derivation
+per_block: the historical role reading remains interpretive and no holonomy arm is executed here
+lattice_wide: no probability law, carrier selector, all-lattice theorem, premise, axiom, audit, or TOE conclusion follows
+TOTAL: 6/6 PASS
+
+----- stderr -----
+
