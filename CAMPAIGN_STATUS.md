@@ -1,6 +1,6 @@
 # TOE campaign — 2026-09-07
 
-Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. The 32 transferred scopes remain pending review; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
+Owner update 2026-09-10: review, correct and land all 18 remaining original PRs. The prior owner reservations on #6379/#6858/#6859 are released for this task, including dependent original scopes. Source acceptance still requires focused independent review and combined validation. The remaining 26 transferred scopes are pending acceptance; eight partial Maxwell scopes retain their scientific obligations. New arrivals remain excluded and formal audit stays deferred. See [release and frozen heads](backlog_evidence/released18-20260910/RELEASED_TARGETS.json). Counts below remain the last completed landing snapshot.
 
 The active work is cleanup of the fixed original 254 PR backlog. New arrivals are
 excluded by the owner cutoff in BACKLOG_CUTOFF.json. Read
@@ -52,7 +52,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W67 landed six #7315 transfers after W68. Thirteen of 18 released originals are closed and five remain; 26 transferred scopes are pending. B and #7333 corrections active; C and D corrections needed. 208 original science scopes landed; formal audit deferred.
+1. W69 landed #7333. Fourteen of 18 released originals are landed and closed; four remain. #7315 B corrections and #7332/#7334 corrections are active; C and D corrections remain. #7359 A original review is active, with its remaining eight transfers and own scope still to review. All 26 transferred scopes and eight partial Maxwell obligations remain accounted for. Formal audit is deferred and later arrivals excluded. 209 original science scopes landed.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

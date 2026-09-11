@@ -1,21 +1,21 @@
 # Backlog review and landing — current handoff
 
-Updated after W69. Main is `762664127493a8858ac58fa0fc6387e1ac56d7f7`. Of the 18 released originals, 14 are landed and closed; four remain. The original 254 cutoff stays fixed; later arrivals remain excluded. Formal audit waits until a solid TOE is ready.
+Updated after W67, which landed after W68. Main is `d4e3025ca131b2ec8e349c13641b83e86c4c8c08`. Of the 18 released originals, 13 are landed and closed; five remain. The original 254 cutoff stays fixed; later arrivals remain excluded. Formal audit waits until a solid TOE is ready.
 
 | Disposition | Original PRs |
 | --- | ---: |
-| Closed directly after reviewed landing | 140 |
+| Closed directly after reviewed landing | 139 |
 | Closed through draft cleanup or source-preserving consolidation | 110 |
-| Still open, all released for review | 4 |
+| Still open, all released for review | 5 |
 | Original membership | 254 |
 
-209 reviewed original science scopes landed: 136 direct science and 73 consolidated science. The 140 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 26 pending scopes at successors #7315 and #7359.
+208 reviewed original science scopes landed: 135 direct science and 73 consolidated science. The 139 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 26 pending scopes at successors #7315 and #7359.
 
-Zero original-backlog drafts remain. Including pre-cutoff #8003–#8009, the session has 147 direct closures, 69 completed science/source batches and 251 new source documents; 67 batches passed one combined gate. The tracked ledger remains 4700 rows: 4325 unaudited science and 375 meta; 26 notes await mechanical refresh. No audit verdict has been applied.
+Zero original-backlog drafts remain. Including pre-cutoff #8003–#8009, the session has 146 direct closures, 68 completed science/source batches and 250 new source documents; 66 batches passed one combined gate. The tracked ledger remains 4700 rows: 4325 unaudited science and 375 meta; 25 notes await mechanical refresh. No audit verdict has been applied.
 
-W69 lands the corrected #7333 finite Gaussian compiler and routing certificates. The actual construction uses a small reviewed helper and current input bindings; the first fresh execution passed 9/0 in 52.233 seconds. All six original bodies remain recoverable. The original reviewer confirmed the final 11-path composition, and one combined gate passed in 249.843 seconds. Fixed-density scaling, physical selector, action/measure choice and full compiler covariance remain open. [Evidence](backlog_evidence/wave69/INDEX.json).
+W67 lands six corrected #7315 transfers: #7011, #7015, #7016, #7021, #7029 and #7032. The finite character, completion, rank, quotient and curvature results now carry their actual domains. Eleven original finding groups are resolved, including the corrected generic rank census and distinct descent predicates. Two failed execution attempts remain preserved; successful 153/154 outputs were reused, and four affected producers passed 7/0 each. All 31 original occurrences and two distinct successor bodies remain recoverable. The original reviewer confirmed the final 31-path composition. One combined integration gate passed in 251.803 seconds. [Evidence](backlog_evidence/wave67/INDEX.json).
 
-Fourteen of 18 released originals are landed and closed; four remain. #7315 B corrections and #7332/#7334 corrections are active; C and D corrections remain. #7359 A original review is active, with its remaining eight transfers and own scope still to review. All 26 transferred scopes and eight partial Maxwell obligations remain accounted for. Formal audit is deferred and later arrivals excluded.
+Next: #7315 B corrections are assigned; C and D original reviews identify needed repairs. #7333 narrow corrections are active. #7332/#7334 original review is active; all twelve #7359 transfers await original review. #7315 remains open for its remaining 14 transfers and own hygiene delta. All 26 pending transferred scopes and eight partial Maxwell obligations remain accounted for. No physical TOE conclusion or audit grade follows from these finite results.
 
 ## Landed source history
 
@@ -417,5 +417,3 @@ Wave66: corrected covariance, cone and overlap source landed at `4271a1b1ea09f25
 W68: corrected two- and three-direction spectra landed at `07f0e842d7e283213c8f480b1380a6addae36d2b`; evidence `backlog_evidence/wave68/INDEX.json`.
 
 W67: six corrected #7315 transfers landed at `d4e3025ca131b2ec8e349c13641b83e86c4c8c08`; evidence `backlog_evidence/wave67/INDEX.json`.
-
-W69: #7333 finite Gaussian compiler and routing certificates; main `762664127493a8858ac58fa0fc6387e1ac56d7f7`; evidence `backlog_evidence/wave69/INDEX.json`.
