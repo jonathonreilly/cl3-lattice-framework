@@ -1,8 +1,8 @@
 # Backlog closure and scientific-content reconciliation
 
-Updated 2026-09-11T03:20:38.709093+00:00; main `d4e3025ca131b2ec8e349c13641b83e86c4c8c08`.
+Updated 2026-09-11T02:52:42.341013+00:00; main `07f0e842d7e283213c8f480b1380a6addae36d2b`.
 
-208 reviewed original science scopes landed: 135 direct science and 73 consolidated science. The 139 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 26 pending scopes at successors #7315 and #7359.
+202 reviewed original science scopes landed: 135 direct science and 67 consolidated science. The 139 direct closures additionally include one partial Maxwell, one meta, one process and one historical archive recovery. Eight original Maxwell scopes retain broader scientific obligations. The 110 other closures include 32 pending scopes at successors #7315 and #7359.
 
 All #7827 own/transferred scopes have recorded acceptance; the PR is closed. Its own Block38 keeps the original W58 acceptance commit. No open accepted-scope bucket remains.
 
@@ -51,13 +51,13 @@ All #7827 own/transferred scopes have recorded acceptance; the PR is closed. Its
 | #6376 | source_consolidation_exact | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |
 | #6377 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `8257bddfc97ab763d208b43e9bdc8677fe89b1e8` |
 | #6485 | source_consolidation_exact | reviewed_corrected_scope_on_main | `2491ff70e921098fbb9130765458926c57c82364` |
-| #7011 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `d4e3025ca131b2ec8e349c13641b83e86c4c8c08` |
-| #7015 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `d4e3025ca131b2ec8e349c13641b83e86c4c8c08` |
-| #7016 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `d4e3025ca131b2ec8e349c13641b83e86c4c8c08` |
-| #7021 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `d4e3025ca131b2ec8e349c13641b83e86c4c8c08` |
+| #7011 | source_consolidation_semantic | pending_on_open_successor | #7315 |
+| #7015 | source_consolidation_semantic | pending_on_open_successor | #7315 |
+| #7016 | source_consolidation_semantic | pending_on_open_successor | #7315 |
+| #7021 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7028 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `f4be2a0ab39423ee8bd3fa2d75b8806b608fbd79` |
-| #7029 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `d4e3025ca131b2ec8e349c13641b83e86c4c8c08` |
-| #7032 | source_consolidation_semantic | reviewed_corrected_scope_on_main | `d4e3025ca131b2ec8e349c13641b83e86c4c8c08` |
+| #7029 | source_consolidation_semantic | pending_on_open_successor | #7315 |
+| #7032 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7042 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7046 | source_consolidation_semantic | pending_on_open_successor | #7315 |
 | #7047 | closed_directly_after_landing | reviewed_corrected_scope_on_main | `6952b95754210bf25d14ad45bb21dba103e7eea3` |

@@ -1,0 +1,13 @@
+# Affected-source confirmation: snapshot006
+
+SOURCE_READY_PENDING_FRESH_EVIDENCE. This confirms the six-file scientific/pin delta from snapshot004 through005 and the five-file formatting/pin overlay006. Prior complete A source and premise coverage remains applicable outside those deltas. This is not whole-7315 acceptance or an audit verdict.
+
+Block155 now requires the exact generic symbolic census: fourteen pairs (16,10), with (16,8) at precisely edge keys (2,2) and (3,3). The note and ledger match this result and exclude a claim at every specialization. Every generic rank strictly drops, so invertible similarity is excluded for each such pair by rank invariance. The completion construction and helper are unchanged. The historical gate checked one rank-10 probe plus sixteen strict drops; it did not establish the earlier uniform rank-10 prose.
+
+Read the constructor recreation and the actual original7015 constructor at commit32ca4768145a1de8609cde5ad2195ca9c68b52a1, lines1029–1090: support-multiplier equations, dead/live constraints, free parameters set to zero, and completed entries agree in construction. The supplied comparison reports all sixteen edges equal across eight returned fields and reproduces the census. This uses common extracted primitives; it is constructor-equivalence diagnostic evidence, not an independent physical theorem or canonical producer. The remaining-target diagnostic has fifty true comparisons; it likewise does not substitute for fresh canonical execution.
+
+Independently rehashed all nineteen frozen sources and checked seventy literal input hashes against snapshot006 or current-main4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac. Exactly six source paths differ from004; 156/158/159 have only dependent pin changes. The006 overlay is notation and pins only. Source bindings are recorded separately.
+
+Blocks153/154, their helper and all declared inputs remain byte-identical to the already reviewed successful attempt02 closure. Their successful caches remain reusable:153 SHA4d42d077b877440493e9f6b01646fc2f68ec2ba7704702190241771f44ac34f0;154 SHAf7be13ea6282b32149341b885874fa49febba6d1a8dd69667fa2ff3b56acbbec. Do not rerun them. Preserve both prior failures and diagnostics. Block155's failed cache is not success evidence.
+
+No new material source finding remains in this affected delta. Original source/recovery dispositions and prior correction confirmations remain unchanged. Outstanding: root-approved bounded execution of155/156/158/159, review of actual fresh outputs and final composition/source/input/recovery bindings. No producer or science calculation was executed by this reviewer for this confirmation.

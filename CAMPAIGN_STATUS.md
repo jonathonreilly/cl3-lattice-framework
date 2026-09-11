@@ -52,7 +52,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W68 landed #7995/#7997. Thirteen of 18 released originals are closed and five remain; 32 transferred scopes pending. W67A corrections continue; B and C original reviews require fixes; #7333 narrow corrections assigned. 202 original science scopes landed; formal audit deferred.
+1. W67 landed six #7315 transfers after W68. Thirteen of 18 released originals are closed and five remain; 26 transferred scopes are pending. B and #7333 corrections active; C and D corrections needed. 208 original science scopes landed; formal audit deferred.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

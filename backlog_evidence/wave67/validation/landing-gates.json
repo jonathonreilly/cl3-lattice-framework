@@ -1,0 +1,85 @@
+{
+  "head": "d4e3025ca131b2ec8e349c13641b83e86c4c8c08",
+  "tree": "394ac9f9edf78e2f405af3dd7b8667b6daa00dbd",
+  "base": "07f0e842d7e283213c8f480b1380a6addae36d2b",
+  "gates": [
+    {
+      "name": "pipeline",
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 247.299,
+      "log_sha256": "8a046e586f16d17350f87654c92d590246ea7f44fa081d2f79640dbd7bc8fd45"
+    },
+    {
+      "name": "strict-lint",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/audit_lint.py",
+        "--strict"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 3.39,
+      "log_sha256": "2d324ac0aecb39c7a866c624b964e9daa0c938eb2e8e85a52d4fa47e45f7489f"
+    },
+    {
+      "name": "changed-evidence",
+      "command": [
+        "python3",
+        "-B",
+        "docs/audit/scripts/check_changed_audit_evidence.py",
+        "--base",
+        "07f0e842d7e283213c8f480b1380a6addae36d2b"
+      ],
+      "exit_code": 0,
+      "elapsed_sec": 1.114,
+      "log_sha256": "2c37800fa520952df1a78a6e15fc9a90edca8f2f1a822286af44091276b63985"
+    }
+  ],
+  "full_validation_runs": 1,
+  "integration_retries": 0,
+  "generated_paths_preserved_and_stripped": 60,
+  "generated_untracked_paths": 25,
+  "generated_patch_sha256": "e03c05428b039d0151aff407a5a86692ad0f1481f753f0b96094e96a8bd1fd2f",
+  "source_hashes_unchanged": true,
+  "clean_after": true,
+  "formal_audit_invoked": false,
+  "audit_verdict_applied": false,
+  "complete_final_clean_checks": [
+    {
+      "name": "committed",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "07f0e842d7e283213c8f480b1380a6addae36d2b..d4e3025ca131b2ec8e349c13641b83e86c4c8c08"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "working",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "index",
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}
