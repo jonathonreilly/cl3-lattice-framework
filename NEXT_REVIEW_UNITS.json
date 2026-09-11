@@ -1,6 +1,6 @@
 {
   "captured_utc": "2026-09-07T14:42:45.091662+00:00",
-  "main_sha": "4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac",
+  "main_sha": "07f0e842d7e283213c8f480b1380a6addae36d2b",
   "units": [
     {
       "unit_id": "eta_affine_repeat",
@@ -7073,11 +7073,11 @@
       "final_evidence": "backlog_evidence/wave59/INDEX.json"
     }
   ],
-  "current_main": "4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac",
-  "current_assignment_update_utc": "2026-09-11T02:12:28.192458+00:00",
+  "current_main": "07f0e842d7e283213c8f480b1380a6addae36d2b",
+  "current_assignment_update_utc": "2026-09-11T02:52:42.341013+00:00",
   "cleanup_scope": "original 254_only",
   "owner_cutoff_file": "BACKLOG_CUTOFF.json",
-  "immediate_priority": "W66 landed #7992/#7993/#7994. Eleven of 18 released originals landed; seven originals and 32 transferred scopes remain. First six #7315 transfers in source correction confirmation; next seven original review complete with fixes needed. #7995/#7997 author active. Formal audit deferred; later arrivals excluded.",
+  "immediate_priority": "W68 landed #7995/#7997: 13 of 18 released originals landed; five originals and 32 transferred scopes remain. W67 A source006 confirmed pending four fresh producer outputs; two successful outputs preserved. B and C original reviews require corrections. D review and #7333 narrow corrections assigned. All twelve #7359 transfers and #7332/#7334 remain for review. Formal audit deferred; later arrivals excluded.",
   "closure_reconciliation_file": "BACKLOG_CLOSURE_RECONCILIATION.json",
   "next_routing_evidence": "backlog_evidence/next-routing-20260909",
   "next_routing_note": "Routing only, no acceptance/closure:6009exactly contains8paths each from5964/5963/5961/5959/5954 and8of10from5965/5955; preserve their extra878helper+receipt separately.5957is not covered. Review the complete coherent gravity-family argument once with all original recovery. Next small units7803/7781/7753 have actual full6/2/1commit boundaries, not tip-only assumptions.",
@@ -7140,7 +7140,7 @@
       "evidence": "backlog_evidence/wave66/INDEX.json"
     },
     "7315_A": {
-      "status": "source_corrections_original_reviewer_confirmation",
+      "status": "source006_confirmed_remaining_producer_wrapper_pending",
       "reviewer": "/root/released6379_review",
       "scopes": [
         7011,
@@ -7151,22 +7151,24 @@
         7032
       ],
       "source_head": "3c4d52bdb9d3d2e1211799db7232b91b561bf0e1",
-      "boundary": "Six transferred scopes only; source fixes in progress before bounded execution. No full #7315 acceptance; #7028 already accepted and excluded.",
+      "boundary": "Six transferred scopes only. Source006 corrections confirmed; successful 153/154 outputs reusable unchanged. Fresh 155/156/158/159 execution and final composition remain pending. No full #7315 acceptance.",
       "author": "/root/released6515_fixes",
       "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7315-a-20260910",
       "review_evidence": "backlog_evidence/wave65/next-review/7315-A-REPORT.md"
     },
     "7995_7997": {
-      "status": "author_corrections_active",
+      "status": "landed_closed",
       "reviewer": "/root/released6858_6859_review",
       "scopes": [
         7995,
         7997
       ],
-      "boundary": "Blocks218\u2013219 finite bench witnesses; no scientific acceptance yet.",
+      "boundary": "Corrected finite two- and three-direction spectra; all25original occurrences recoverable. No universal branch theorem or physical interpretation adopted.",
       "review_evidence": "backlog_evidence/released18-20260910/7995-7997-original-review-REPORT.md",
       "author": "/root/released18_routing",
-      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7995-7997-20260910"
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7995-7997-20260910",
+      "commit": "07f0e842d7e283213c8f480b1380a6addae36d2b",
+      "evidence": "backlog_evidence/wave68/INDEX.json"
     },
     "7315_B": {
       "status": "original_review_complete_B01_B11_author_pending",
@@ -7181,8 +7183,37 @@
         7083
       ],
       "source_head": "3c4d52bdb9d3d2e1211799db7232b91b561bf0e1",
-      "boundary": "Seven transferred scopes reviewed with material fixes required; remaining seven transfers after A and B unreviewed.",
+      "boundary": "Seven transferred scopes reviewed with material fixes required. C four reviewed with fixes required; D three original reviews now assigned.",
       "review_evidence": "backlog_evidence/wave66/next-review/7315-B-REPORT.md"
+    },
+    "7315_C": {
+      "status": "original_review_complete_C01_C11_author_pending",
+      "original_prs": [
+        7104,
+        7106,
+        7136,
+        7146
+      ],
+      "reviewer": "/root/released6379_review",
+      "evidence": "backlog_evidence/wave68/next-review/7315-C/REPORT.md",
+      "boundary": "Four transferred scopes only; false universal exclusions, domain errors and Hermitian-part/positive-state confusion require repairs."
+    },
+    "7333": {
+      "status": "original_review_complete_R7333_1_to_3_author_assigned",
+      "reviewer": "/root/released6858_6859_review",
+      "boundary": "Finite local record dilation source, actual constructor closure and normalized Gaussian identities; no whole-parent theorem acceptance.",
+      "author": "/root/released18_routing",
+      "review_evidence": "backlog_evidence/wave68/next-review/7333/REPORT.md"
+    },
+    "7315_D": {
+      "status": "original_review_assigned",
+      "original_prs": [
+        7202,
+        7203,
+        7204
+      ],
+      "reviewer": "/root/released6379_review",
+      "boundary": "Three remaining original transfers; A final confirmation takes priority when ready. No acceptance."
     }
   }
 }

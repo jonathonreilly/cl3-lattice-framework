@@ -1,0 +1,41 @@
+# PR7333 focused original-source review
+
+Disposition: **corrections required before source-bound landing confirmation**. No contradiction was found in the finite Gaussian compiler identities or the explicit finite routing construction. The historical 8/0 cache is not evidence for a corrected current-main input closure. This is a focused science review, not a formal audit verdict.
+
+## Bound and coverage
+
+Original head `99eb197a00381db400e4ef6765ec65fe3497e8ac`, base `2217593abfd469ea610a52040595f4a825062a8d`; current authority `4271a1b1ea09f25dcedb19a92d5a4d133f3b25ac`. The accompanying inventory binds all six actual Git delta paths and their frozen bytes: complete note, all three runners, the explicit-certificate cache, and the actual manifest delta. The manifest adds one node and two edges; its historical whole-file replacement is not a current-main landing artifact.
+
+The static import graph contains 51 scripts. Their identities are provenance, not acceptance of 51 mathematical narratives. Necessary definitions were traced through Blocks 43, 41, 175, 174, 171, 170, 166 and 165, with Block42 serving the forwarding namespace. Relevant definitions include `arm_bundle`, `edge_union`, `signed_edge_factor`, `positive_completion`, the actual Fixture/Bench constructions, Hodge assembly, anti-periodic quotient, carrier substitution, sparse matrix helpers and exact inversion. The current Block105 finite shift/Clifford inputs are applicable; inherited reflection, physical interpretation and parent theorem labels are not premises accepted here. The five already-corrected main scripts in the inventory must remain unchanged.
+
+## Material findings and minimal repairs
+
+**R7333-1 — Actual executable input closure is not bound.** The explicit primary imports the historical Block43 chain but declares no complete input fingerprint or content guards. Its cache binds its own runner SHA only. The supporting runner's `AUDIT_INPUT_PATHS` and its check near line 891 bind existence, not content or the full runtime closure; the independent checker similarly supplies only partial existence checks. Consequently the historical execution cannot establish that the proposed current-main composition executes the same mathematical fixture. Preserve the originals and historical cache. Extract only the actual finite constructors/helpers into a bounded, provenance-labelled supplier, or otherwise close the actual imports without replacing corrected main science. Bind retained sources, notes and actual suppliers by exact hashes, then obtain owner-authorized fresh evidence. Importing old modules does not authorize their physical premises.
+
+**R7333-2 — Anticipated audit status.** Note line 21 says `audited_conditional expected`. Remove the predicted verdict and state the present finite conditional candidate status. Formal audit is deferred. The note's existing restrictions to two disclosed backgrounds, finite cover, growing route resources, exceptional S0, and unsupplied full-map covariance are appropriate and should remain.
+
+**R7333-3 — Supporting predicate overstates its evidence.** Supporting runner lines 739–746 label a check as entry-by-entry reproduction of the Block42 arm/projector table, but the predicate checks total normalization, positivity and arm marginals of the constructed table; it does not compare all entries with an independently specified table. Relabel this as table consistency, with preservation justified by the actual marginal/covariance derivation, or supply the missing comparison. No additional large Gaussian elimination is needed. Also distinguish the full four-complex-coordinate codec's real Jacobian 16 from the tagged three-complex-payload support: fixed central tags describe a lower-dimensional support, whose measure is the already-supplied decoded-coordinate pushforward. The determinant calculation is valid for the full codec; it is not an ambient Lebesgue Jacobian for the tagged support.
+
+## Independent decisive checks
+
+For α=3, β=3/2 and C=9/2, α+β=C and αβ/C=1. Completing the square gives
+
+`α|u−y|² + β|v+y|² = C|y−(αu−βv)/C|² + |u+v|²`.
+
+Integration with `(C/π)d²y` therefore recovers the original row exactly. Zero coefficients do not alter this normalization. Recursive compiler elimination has one pivot C per hidden scalar; the same roster across arms prevents an arm-dependent normalization advantage.
+
+The Record bridge has endpoint diagonal blocks `2ℓ*ℓ` and `2r*r`, unit hidden pivot and coupling `(ℓ*,−r*)`. Its Schur complement is `(ℓ+r)*(ℓ+r)`. Combining this with the preceding identity recovers the original row; the intermediate pivots are 1 and C.
+
+For a Hermitian cross-edge with coefficient k, use the extended matrix with rows `(1,0,1)`, `(0,|k|²,−conj(k))`, `(1,−k,1)`. Eliminating the final unit pivot leaves precisely the two-by-two cross-edge matrix with off-diagonals k and conjugate(k). The edge by itself need not be positive. Applied as a replacement in the full positive precision, the unit pivot and congruence preserve positivity. Repeated subdivision, eliminated in reverse insertion order, proves the long-route identity and unit normalization without constructing a million-variable dense matrix. Endpoint diagonal increments include previously inserted hidden variables. Geometric route intersections do not identify scalar mediators: separate payload slots supply distinct variables, subject to the checked occupancy bound. Private route layers alone would not justify this distinction; the actual slot assignment does.
+
+For the actual inherited fixture, each local Hodge block has positive eigenvalues ν, 1/ν and ν/(1±σ), with the assembly factor 1/4. In the declared xgraded fixture ν lies in [5/6,13/6] and σ in [0,3/5]; the constant fixture has ν=1. A conservative assembled diagonal-dominance margin is `(5/6 + 6/13 + 2(5/6)/(1+3/5))/4 > 1/2`. The stated anti-periodic quotient has no short-extent alias collision invalidating this bound. Thus both disclosed innovation fractions c=1/2 and c=1/3 leave a positive residual for the signed-edge Gram construction. This check concerns the declared fixtures, not all possible backgrounds.
+
+The actual parent constructs `q=H+i(Hd+d†H)` at mass one. Hence `Herm(q)=H>0`, q is invertible, and `q⁻¹Hq⁻†=(q⁻¹+q⁻†)/2`. With `BB†+cI=H`, the innovation action yields exactly that covariance. The variable substitution has Jacobian `|det q|²`; its common c-dependent normalization cancels in arm ratios, leaving the stated determinant weighting. These identities support covariance/table preservation under the supplied construction, without deriving an action or physical selection law from the primitives.
+
+Pauli trace orthogonality verifies payload decoding. The full four-coordinate complex map has column norms squared two and real Jacobian 16. Finite frame/code injectivity and supplied tag action do not imply equivariance of the full spatial compiler. The route height grows with the edge roster, so the two finite backgrounds do not establish fixed-density scaling. The note already leaves those bridges open.
+
+## Evidence and remaining work
+
+The original explicit cache reports 8/0, elapsed 56.88 seconds, under a 180-second timeout, with the recorded runner hash matching the source. It records the width-four xgraded and width-eight constant fixtures and concrete route digests/counts. It contains no input fingerprint. The supporting and independent runners have no execution cache in the six-path original delta. No science execution or producer rerun was performed during this review.
+
+After the narrow repairs, review the affected source and actual closure, then bind fresh cache evidence and the final composition in this same reviewer session. The existing primary already materializes roughly a million route objects; source cost inspection supports a bounded producer plan, not a dense Gaussian rerun. If retained, a single primary execution with an explicit wall-time and process-group RSS cap is sufficient to target its finite certificate; root should set the authorized limits after the supplier extraction. Additional supporting/independent executions should correspond to retained evidence claims rather than indiscriminate historical module runs. Preserve all six original delta bodies and regenerate the current graph with its owning tool.
