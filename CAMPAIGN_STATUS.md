@@ -52,7 +52,7 @@ joint-law selection remain open.
 
 ## Next scientific decisions
 
-1. W69 landed #7333. Fourteen of 18 released originals are landed and closed; four remain. #7315 B corrections and #7332/#7334 corrections are active; C and D corrections remain. #7359 A original review is active, with its remaining eight transfers and own scope still to review. All 26 transferred scopes and eight partial Maxwell obligations remain accounted for. Formal audit is deferred and later arrivals excluded. 209 original science scopes landed.
+1. W69 landed #7333. Fourteen of 18 released originals are landed and closed; four remain. #7315 B and C corrections and #7332/#7334 corrections are active; D corrections remain. #7359 A original review is complete with repairs required; its remaining eight transfers and own scope still need original review. All 26 transferred scopes and eight partial Maxwell obligations remain accounted for. Formal audit is deferred and later arrivals excluded. 209 original science scopes landed.
 2. For field response, choose the actual physical source/sector and estimator
    target before another large computation. Finite fits do not resolve population,
    component, thermodynamic or physical-identification questions.

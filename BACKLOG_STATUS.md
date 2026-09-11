@@ -15,7 +15,7 @@ Zero original-backlog drafts remain. Including pre-cutoff #8003–#8009, the ses
 
 W69 lands the corrected #7333 finite Gaussian compiler and routing certificates. The actual construction uses a small reviewed helper and current input bindings; the first fresh execution passed 9/0 in 52.233 seconds. All six original bodies remain recoverable. The original reviewer confirmed the final 11-path composition, and one combined gate passed in 249.843 seconds. Fixed-density scaling, physical selector, action/measure choice and full compiler covariance remain open. [Evidence](backlog_evidence/wave69/INDEX.json).
 
-Fourteen of 18 released originals are landed and closed; four remain. #7315 B corrections and #7332/#7334 corrections are active; C and D corrections remain. #7359 A original review is active, with its remaining eight transfers and own scope still to review. All 26 transferred scopes and eight partial Maxwell obligations remain accounted for. Formal audit is deferred and later arrivals excluded.
+Fourteen of 18 released originals are landed and closed; four remain. #7315 B and C corrections and #7332/#7334 corrections are active; D corrections remain. #7359 A original review is complete with repairs required; its remaining eight transfers and own scope still need original review. All 26 transferred scopes and eight partial Maxwell obligations remain accounted for. Formal audit is deferred and later arrivals excluded.
 
 ## Landed source history
 

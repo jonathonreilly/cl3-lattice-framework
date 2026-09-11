@@ -7074,10 +7074,10 @@
     }
   ],
   "current_main": "762664127493a8858ac58fa0fc6387e1ac56d7f7",
-  "current_assignment_update_utc": "2026-09-11T03:43:16.297263+00:00",
+  "current_assignment_update_utc": "2026-09-11T03:52:12.434015+00:00",
   "cleanup_scope": "original 254_only",
   "owner_cutoff_file": "BACKLOG_CUTOFF.json",
-  "immediate_priority": "Fourteen of 18 released originals are landed and closed; four remain. #7315 B corrections and #7332/#7334 corrections are active; C and D corrections remain. #7359 A original review is active, with its remaining eight transfers and own scope still to review. All 26 transferred scopes and eight partial Maxwell obligations remain accounted for. Formal audit is deferred and later arrivals excluded.",
+  "immediate_priority": "14 of 18 landed; four original PRs open, 26 transferred scopes pending. #7315 B source002 corrections, C correction author, and #7332/#7334 correction author active. D original review complete awaiting correction author. #7359 A original review complete with U01\u2013U11 repairs required; B/C and own scope await original review. Formal audit deferred; newer arrivals excluded.",
   "closure_reconciliation_file": "BACKLOG_CLOSURE_RECONCILIATION.json",
   "next_routing_evidence": "backlog_evidence/next-routing-20260909",
   "next_routing_note": "Routing only, no acceptance/closure:6009exactly contains8paths each from5964/5963/5961/5959/5954 and8of10from5965/5955; preserve their extra878helper+receipt separately.5957is not covered. Review the complete coherent gravity-family argument once with all original recovery. Next small units7803/7781/7753 have actual full6/2/1commit boundaries, not tip-only assumptions.",
@@ -7173,7 +7173,7 @@
       "evidence": "backlog_evidence/wave68/INDEX.json"
     },
     "7315_B": {
-      "status": "correction_author_active",
+      "status": "snapshot001_source_review_complete_narrow_corrections_active",
       "reviewer": "/root/released6379_review",
       "scopes": [
         7042,
@@ -7187,10 +7187,11 @@
       "source_head": "3c4d52bdb9d3d2e1211799db7232b91b561bf0e1",
       "boundary": "Seven transferred scopes; B01\u2013B11 corrections required. No scientific acceptance yet.",
       "review_evidence": "backlog_evidence/wave66/next-review/7315-B-REPORT.md",
-      "author": "/root/released6515_fixes"
+      "author": "/root/released6515_fixes",
+      "source_review_evidence": "backlog_evidence/released18-progress-20260911/7315-B-source001/REPORT.md"
     },
     "7315_C": {
-      "status": "original_review_complete_C01_C11_author_pending",
+      "status": "correction_author_active",
       "original_prs": [
         7104,
         7106,
@@ -7199,7 +7200,9 @@
       ],
       "reviewer": "/root/released6379_review",
       "evidence": "backlog_evidence/wave68/next-review/7315-C/REPORT.md",
-      "boundary": "Four transferred scopes only; false universal exclusions, domain errors and Hermitian-part/positive-state confusion require repairs."
+      "boundary": "Four transferred scopes only; false universal exclusions, domain errors and Hermitian-part/positive-state confusion require repairs.",
+      "author": "/root/released7315_c_fixes",
+      "worktree": "/Users/jonreilly/Projects/Physics-worktrees/fix-released7315-c-20260910"
     },
     "7333": {
       "status": "landed_closed",
@@ -7233,7 +7236,7 @@
       "evidence": "backlog_evidence/wave69/next-review/7332-7334/REPORT.md"
     },
     "7359_A": {
-      "status": "independent_original_review_active",
+      "status": "original_review_complete_U01_U11_corrections_required",
       "scopes": [
         7330,
         7331,
@@ -7241,7 +7244,8 @@
         7337
       ],
       "reviewer": "/root/released6379_review",
-      "boundary": "Four transferred scopes only; no source acceptance yet."
+      "boundary": "Four transferred scopes only; no source acceptance yet.",
+      "evidence": "backlog_evidence/released18-progress-20260911/7359-A/REPORT.md"
     }
   }
 }
