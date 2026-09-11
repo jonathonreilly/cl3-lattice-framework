@@ -1,0 +1,25 @@
+{
+  "utc": "2026-09-11T04:02:56.386989+00:00",
+  "source_snapshot": "snapshot002",
+  "wrapper_sha256": "3e93f679bb39c1fb4b31d79d24587110097ea7ae2c02422540138a1a7d52d616",
+  "source_manifest_sha256": "ec4744fe011c94aa25fae45b31ee0e669a4b496db4b723fd0faea5b211e87d02",
+  "review_receipt_sha256": "9e900d633409d9ff79c982a395a741e8b5d997f6d8429a8fd7bc9a3158d96510",
+  "root_reads": [
+    "complete22snapshot001 sources",
+    "complete7original ledger differences",
+    "complete001to002delta",
+    "complete002claimfamilydispositions",
+    "completewrapperlogic",
+    "96actual ordered source/input occurrences and literal guards verified",
+    "original36archive Git verification reused"
+  ],
+  "command": [
+    "python3",
+    "PROPOSED_PRODUCER_WATCHDOG.py",
+    "--run-authorized-once"
+  ],
+  "limits": "frozen sequential seven; per-child60/90/90/60/90/120/90s; outer75/105/105/75/105/135/105s; first4 1.5GiB,last3 2GiB sampled group RSS",
+  "automatic_retry": false,
+  "formal_audit": false,
+  "status": "GO_ONE_ATTEMPT"
+}
