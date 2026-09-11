@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_rank_two_scalar_transport_counterexample_2026_08_23.py
+runner_sha256: 78e7d1b6c08254d69be48cef396ee661c009b2042d34b7ed9f5f08a35926475f
+input_fingerprint_sha256: a59cb812750dec089757bf1e99663be30ad48453feb3b8fabc297d1fd288750f
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+PASS: 8x4 committed row map :: rows=(4, 5, 6, 7, 8, 9, 10, 11), form_shape=(8, 8)
+PASS: 8x4 exact rank-two scalar compression :: X^H F X=Matrix([[171*s_t/250 + 114/125, 0], [0, 171*s_t/250 + 114/125]])
+PASS: 8x4 positive and transport-sensitive :: slope=171/250, gap=513/2000, det=3249*(3*s_t + 4)**2/62500, endpoints=(399/400,627/500)
+PASS: 12x4 committed row map :: rows=(4, 5, 6, 7, 8, 9, 10, 11), form_shape=(8, 8)
+PASS: 12x4 exact rank-two scalar compression :: X^H F X=Matrix([[171*s_t/250 + 114/125, 0], [0, 171*s_t/250 + 114/125]])
+PASS: 12x4 positive and transport-sensitive :: slope=171/250, gap=513/2000, det=3249*(3*s_t + 4)**2/62500, endpoints=(399/400,627/500)
+PASS: rank-two isometry :: X^H X=Matrix([[1, 0], [0, 1]]), rank=2
+PASS: extent-independent compressed law :: the exact 2x2 law agrees at the two disclosed cover extents
+PASS: quantified affine admixture response :: for d!=0, d+epsilon*q has at most one tuned root
+PASS: normalized nonzero-orthogonal rank-two witness :: rank=2, raw=1/2, normalized=2/5, epsilon=1/4
+PASS: finite rank-two union effect :: rank=2, Tr(C E_12)=439357412910769360932538655107114128554155761811678874279976303924187781349/894555786619317339421650665156104028453509785664333673843970497575127328208
+PASS: source/input binding and bounded-note surface :: float_literals=0, N_sections=8/8, inputs_bound=True
+per_element: the displayed compression and the quantified affine-response lemma are exact; nonlinear readout categories remain open
+per_site: the selected eight-row finite reflection form is reconstructed at the disclosed 8x4 and 12x4 covers
+per_mode: the displayed rank-two scalar compression changes with the supplied s_t dial; no physical carrier identification follows
+per_block: the finite rank-one-only successor fails for standard isometric compression on these two fixtures
+lattice_wide: no all-lattice, continuum, physical-selector, probability-law, axiom, obligation, or TOE conclusion is licensed
+TOTAL: 12/12 PASS
+
+----- stderr -----
+
